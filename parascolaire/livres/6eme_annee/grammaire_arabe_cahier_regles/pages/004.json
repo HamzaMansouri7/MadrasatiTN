@@ -1,0 +1,158 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 4,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "المعارف: ضمائر الجر المتصلة (les pronoms compléments suffixes de l'annexion et du génitif en arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "حروف الجر: من ، إلى ، عن، على،في، بـ، لـ، كـ تدخل على الاسم فتجره بالكسرة ونسمي العنصرين مركب جر متكون من جار ومجرور.\nفي حرف جر — المدرسة اسم معرفة — في المدرسة مركب بالجر",
+      "figureDesc": "Exemple d'analyse en ligne : « في » (حرف جر), « المدرسة » (اسم معرفة), « في المدرسة » (مركب بالجر). Les mots clés sont en gras.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p004_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: تسمى الضمائر التي تشغل محل المضاف إليه ضمائر جر",
+      "body": "أخذ منها / عاد إليك / سألت عنكم / شارك فيه / التقى بهم",
+      "figureDesc": "Tableau d'une ligne et de cinq cellules avec des exemples de verbes suivis d'une préposition et d'un pronom suffixe. Les pronoms (ها، ك، كم، ه، هم) sont en gras.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p004_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "كما تسمى الضمائر التي تشغل محل المجرور ضمائر جر",
+      "body": "للمتكلم: مدرستي، مدرستنا\nللمخاطب: معلمك، معلمك، معلمكما، معلمكم، معلمكن\nللغائب: بيته، بيتها، بيتهما، بيتهم، بيتهن",
+      "figureDesc": "Tableau à 3 lignes (للمتكلم، للمخاطب، للغائب) présentant les pronoms suffixes de la 1re, 2e et 3e personne. Les suffixes sont en gras.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p004_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أهم وظائف ضمائر الجر المتصلة",
+      "body": "مضاف إليه: لعبتي جديدة\nمجرور: لي إخوة أذكياء\nضمائر الجر جميعها متصلة بالاسم أو الحرف الذي قبلها",
+      "figureDesc": "Tableau à 2 colonnes (مضاف إليه / مجرور) avec un exemple dans chacune. Le pronom « ي » est en gras.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p004_i4",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "التوسع: أضف إلى معلوماتك — يمكن أن تكون الضمائر المتصلة كذلك في محل رفع إذا كانت وظيفتها",
+      "body": "فاعل: قرأنا قصة\nنائب فاعل: دعيت إلى حفل الافتتاح\nاسم ناسخ حرفي: أصبحوا مشهورين في العالم",
+      "figureDesc": "Tableau à 3 colonnes (فاعل، نائب فاعل، اسم ناسخ حرفي) avec un exemple pour chaque fonction. Les pronoms (نا، ت، وا) sont en gras.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p004_i5",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m4",
+    "confidence": 0.3
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite des pronoms suffixes de l'annexion et du génitif en arabe (règle de grammaire), mais aucun chapitre officiel ne correspond clairement : les unités 1 à 6 portent sur la narration (structure, description, dialogue, explication, prescription) et non sur cette notion grammaticale.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Pronoms suffixes de annexion et génitif",
+    "skill": "Identifier et employer les pronoms suffixes compléments (جر) après un nom ou une préposition, et reconnaître leur fonction.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "pronoms suffixes",
+      "génitif",
+      "prépositions",
+      "complément d'annexion",
+      "grammaire arabe",
+      "fonctions"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau des pronoms par personne et les exemples courts (nom ou préposition + pronom suffixe) se prêtent à des exercices d'identification, de transformation d'un nom en pronom, de texte à trous et de repérage des fonctions (complément d'annexion, complément de préposition, sujet).",
+    "themeGroup": "Les pronoms"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre « المعارف ضمائر الجر المتصلة » absent de la transcription (en haut de la page)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أصبحوا » : l'image est correcte, mais la transcription indique « اسم ناسخ حرفي » alors que l'exemple est un verbe (fidèle à l'image, pas d'erreur de copie)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ligne du المخاطب : « معلمك، معلمك » répété deux fois ; l'image porte « معلمكِ معلمكَ » (deux formes distinctes, féminin/masculin), la distinction n'est pas rendue."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« في حرف جر — المدرسة اسم معرفة — في المدرسة مركب بالجر » : l'ordre visuel est correct mais les séparateurs sont inventés ; le « . » après « ومجرور » est ajouté."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les mots avec tatwil (منها، إليك، عنكم، فيه، بهم) sont transcrits sans allongement, ce qui est acceptable."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La structure en tableaux (3 colonnes, colonnes المتكلم/المخاطب/الغائب) n'est pas conservée ; le mot « التوسع » et « أضف » sont présents."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« لي إخوة أذكياء » et « لعبتي جديدة » corrects ; la phrase « يمكن أن تكون ... وظيفتها » est correcte."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

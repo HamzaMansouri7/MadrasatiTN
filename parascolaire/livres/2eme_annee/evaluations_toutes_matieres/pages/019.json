@@ -1,0 +1,210 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 19,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التعبير الشفوي والكتابي: وصف مشاهد عن يوم ممطر وتوظيف الجمل المنتجة سابقًا (تقييم الإنتاج الكتابي وجدول إسناد الأعداد)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعَبِّرُ عَنِ الْمَشَاهِدِ مُسْتَعِينًا بِالْجُمَلِ الَّتِي أَنْتَجْتُهَا سَابِقًا.",
+      "body": "ثلاث صور، بجانب كل صورة أسطر منقطة للكتابة. الصورة 1: كُتب على المبنى «مدرسة»، وتظهر فتاة ترتدي معطفًا وتحمل محفظة على ظهرها وتمسك مظلة تحت المطر أمام المدرسة. الصورة 2: فتاة تحت مطر غزير وريح قوية، تمسك مظلة منقلبة، وبجانبها شجرة تميل بفعل الريح. الصورة 3: فتاة مستلقية في السرير، وامرأة جالسة بجانبها تضع يدها على جبينها وتمسك بيدها الأخرى قطعة قماش (منشفة). في الهامش الأيسر نقاط الإسناد بجانب الأسطر المنقطة، بالترتيب من الأعلى إلى الأسفل: 0,5 0,5 0,5 / 0,5 0,5 0,5 / 0,5 0,5 0,5 / 1 1 1 / 2 2 1. على اليمين خانات تقييم مربعة، بالترتيب من الأعلى إلى الأسفل: معـ1أ (خانة)، معـ1ب (خانة)، معـ2ب (خانة)، معـ1أ (خانة)، معـ1ب (خانة)، معـ2ب (خانة)، معـ1أ (خانة)، معـ1ب (خانة)، معـ2ب (خانة)، معـ3ب (ثلاث خانات)، معـ4 (ثلاث خانات).",
+      "figureDesc": "ثلاث صور بالأبيض والأسود والرمادي: فتاة بمعطف ومظلة وحقيبة أمام مدرسة تحت المطر؛ فتاة تواجه مطرًا غزيرًا وريحًا ومظلتها منقلبة وشجرة تميل؛ امرأة جالسة بجانب فتاة مستلقية في السرير تضع يدها على جبينها. أسطر منقطة وخانات تقييم مربعة على الجانب.",
+      "answer": null,
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p019_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الخانة القطرية: الْمَعَايِيرُ / مُسْتَوَيَاتُ التَّمَلُّكِ. مَعَايِيرُ الْحَدِّ الْأَدْنَى (من اليمين إلى اليسار): معـ1أ، معـ1ب، معـ1ج، معـ2أ، معـ2ب، معـ2ج، معـ3، معـ3ب. مِعْيَارُ التَّمَيُّزِ: معـ4. إِنْعِدَامُ التَّمَلُّكِ (- - -): 0 في كل الخانات. التَّمَلُّكُ دُونَ الْأَدْنَى (+ - -): 0,5 لكل من معـ1أ، معـ1ب، معـ1ج، معـ2أ، معـ2ب، معـ2ج؛ 1 لمعـ3 ولمعـ3ب؛ 1 - 2 لمعـ4. التَّمَلُّكُ الْأَدْنَى (+ + -): 1 لكل من معـ1أ إلى معـ2ج؛ 2 لمعـ3 ولمعـ3ب؛ 3 - 4 لمعـ4. التَّمَلُّكُ الْأَقْصَى (+ + +): 1,5 لكل من معـ1أ إلى معـ2ج؛ 3 لمعـ3 ولمعـ3ب؛ 5 لمعـ4. على اليسار مربع صغير فيه نقطة (.) وتحته مربع فيه 20 (المجموع). رقم الصفحة: 18.",
+      "figureDesc": "جدول إسناد الأعداد بمستويات التمَلُّك والمعايير، مع مربع للمجموع (نقطة / 20) على اليسار. رقم الصفحة 18.",
+      "answer": null,
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p019_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-2-u8",
+  "topicTitle": "Unité 8 : Fêtes nationales, religieuses et célébrations",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u1",
+    "confidence": 0.37
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page propose une production écrite à partir d'images, en réutilisant des phrases déjà produites, avec un tableau de notation par critères (معـ1 à معـ4). Cela correspond à un bilan de production d'écrit, ce que l'unité 8 (« bilan de production d'écrit ») indique le mieux. Le thème de la pluie ne relève clairement d'aucune autre unité, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description d'une journée pluvieuse",
+    "skill": "Décrire oralement et par écrit une série d'images en réutilisant les phrases produites auparavant, avec une grille d'évaluation de la production écrite.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "expression orale",
+      "expression écrite",
+      "description d'images",
+      "jour de pluie",
+      "grille d'évaluation",
+      "critères de maîtrise"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une séquence de trois images racontant une histoire (fille sous la pluie, parapluie retourné par le vent, fille malade au lit) permet de réinvestir des phrases déjà produites; la grille de notation par critères (minimum et excellence) peut aussi servir de modèle d'évaluation.",
+    "themeGroup": "Description de scènes et d'images"
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Points d'attribution de la zone d'écriture: la transcription dit 0,5 ×3 pour image 1 et ×3 pour image 2, puis 0,5 ×3, 1×3, 2,2,1. L'image montre 0,5 ×3, 0,5 ×3, 0,5 ×3 (neuf valeurs de 0,5), puis 1,1,1 puis 2,2,1; la structure est décrite de façon confuse/incohérente (0,5 en fait 9 fois, pas 6+3 ambigu)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Cases de critères à droite: l'image montre معـ1أ، معـ1ب، معـ2ب، معـ1أ، معـ1ب، معـ2ب، معـ1أ، معـ1ب، معـ2ب، معـ3ب (3 cases)، معـ4 (3 cases). La transcription écrit « معـ1أ، معـ1ب، معـ2ب (مكررة ثلاث مرات)، معـ3ب، معـ4 », sans préciser les cases multiples; acceptable mais imprécis."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Tableau: la transcription écrit « معـ1ج » et « معـ2أ » dans l'ordre des colonnes, mais l'ordre réel de droite à gauche est معـ1أ، معـ1ب، معـ1ج، معـ2أ، معـ2ب، معـ2ج، معـ3أ، معـ3ب، معـ4 ; بعد معـ1ب vient معـ1ج (ok). Cependant معـ3 est écrit « معـ3 » (sans أ) dans l'image, pas « معـ3أ »."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ligne « التمَلُّك دون الأدنى »: معـ3 = 1 et معـ3ب = 1 corrects; la transcription ajoute des « + - - » inversés par rapport à l'image (« - - + » à droite du libellé), signes lisibles dans l'image comme « + - - » dans le sens RTL; douteux."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Description des images: « مظلتها انقلبت وتضررت »، « تبدو قلقة » et « شجرة منحنية » sont des interprétations; la fille de l'image 1 porte aussi un imperméable, l'image 3 montre la mère touchant le front avec une serviette/compresse (non mentionné)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« التمَلُّك » transcrit avec fatha partielle; l'image porte « التَّمَلُّكِ » (avec shadda sur التَّ) ; « مستويات » et « المعايير » avaient des voyelles dans l'image; « الحد الأدنى » avait « الْحَدُّ الْأَدْنَى » absent dans la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 18 n'est pas transcrit; le mot « مُسْتَوَيَاتُ » et la case « 20 » avec un point au-dessus (case de total) sont à peine mentionnés."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.78,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Les points de la marge gauche sont mal structurés. L'image montre neuf valeurs 0,5 consécutives (3+3+3), puis 1, 1, 1, puis 2, 2, 1, soit 15 valeurs. Elles ne correspondent pas image par image : les 0,5 s'étendent du niveau de l'image 1 jusqu'à celui de l'image 2, et les 1 et 2 se trouvent entre les images 2 et 3. La transcription les attribue à tort à « l'image 1 (3 lignes), l'image 2 (3 lignes), l'image 3 (0,5, 0,5, 0,5, puis 1 1 1, puis 2 2 1) »."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Cases de critères à droite : l'image montre trois séries identiques (معـ1أ، معـ1ب، معـ2ب), soit 9 cases, chacune avec une case vide. Viennent ensuite معـ3ب avec 3 cases, puis معـ4 avec 3 cases. La transcription (« مكررة ثلاث مرات ») est imprécise et ne mentionne pas les cases multiples."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'en-tête du tableau, l'image porte « معـ3 » (sans أ) et non « معـ3أ ». La transcription écrit معـ3أ dans l'en-tête et dans chaque ligne."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les voyelles de l'en-tête et des libellés du tableau sont omises ou partielles. L'image porte : الْمَعَايِيرُ، مُسْتَوَيَاتُ التَّمَلُّكِ، مَعَايِيرُ الْحَدِّ الْأَدْنَى، مِعْيَارُ التَّمَيُّزِ، إِنْعِدَامُ التَّمَلُّكِ، التَّمَلُّكُ دُونَ الْأَدْنَى، التَّمَلُّكُ الْأَدْنَى، التَّمَلُّكُ الْأَقْصَى. La transcription écrit « التمَلُّك » avec une fatha partielle, sans la shadda."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La description des images contient des interprétations : « مظلتها انقلبت وتضررت » (déduite du dessin), « تبدو قلقة », « شجرة منحنية ». Elle omet aussi l'imperméable de la fille de l'image 1 et la serviette ou compresse que la mère tient près du front dans l'image 3."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 18 n'apparaît que dans figureDesc. La case du total contient un point au-dessus de « 20 » (deux petites cases superposées), ce qui n'est pas précisé. Le mot « مُسْتَوَيَاتُ » de la cellule diagonale est à peine mentionné."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعَبِّرُ عَنِ الْمَشَاهِدِ مُسْتَعِينًا بِالْجُمَلِ الَّتِي أَنْتَجْتُهَا سَابِقًا.",
+      "body": "ثلاث صور، بجانب كل صورة أسطر منقطة للكتابة. الصورة 1: كُتب على المبنى «مدرسة»، وتظهر فتاة ترتدي معطفًا وتحمل محفظة على ظهرها وتمسك مظلة تحت المطر أمام المدرسة. الصورة 2: فتاة تحت مطر غزير وريح قوية، تمسك مظلة منقلبة، وبجانبها شجرة تميل بفعل الريح. الصورة 3: فتاة مستلقية في السرير، وامرأة جالسة بجانبها تضع يدها على جبينها وتمسك بيدها الأخرى قطعة قماش (منشفة). في الهامش الأيسر نقاط الإسناد بجانب الأسطر المنقطة، بالترتيب من الأعلى إلى الأسفل: 0,5 0,5 0,5 / 0,5 0,5 0,5 / 0,5 0,5 0,5 / 1 1 1 / 2 2 1. على اليمين خانات تقييم مربعة، بالترتيب من الأعلى إلى الأسفل: معـ1أ (خانة)، معـ1ب (خانة)، معـ2ب (خانة)، معـ1أ (خانة)، معـ1ب (خانة)، معـ2ب (خانة)، معـ1أ (خانة)، معـ1ب (خانة)، معـ2ب (خانة)، معـ3ب (ثلاث خانات)، معـ4 (ثلاث خانات).",
+      "figureDesc": "ثلاث صور بالأبيض والأسود والرمادي: فتاة بمعطف ومظلة وحقيبة أمام مدرسة تحت المطر؛ فتاة تواجه مطرًا غزيرًا وريحًا ومظلتها منقلبة وشجرة تميل؛ امرأة جالسة بجانب فتاة مستلقية في السرير تضع يدها على جبينها. أسطر منقطة وخانات تقييم مربعة على الجانب.",
+      "answer": null,
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p019_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الخانة القطرية: الْمَعَايِيرُ / مُسْتَوَيَاتُ التَّمَلُّكِ. مَعَايِيرُ الْحَدِّ الْأَدْنَى (من اليمين إلى اليسار): معـ1أ، معـ1ب، معـ1ج، معـ2أ، معـ2ب، معـ2ج، معـ3، معـ3ب. مِعْيَارُ التَّمَيُّزِ: معـ4. إِنْعِدَامُ التَّمَلُّكِ (- - -): 0 في كل الخانات. التَّمَلُّكُ دُونَ الْأَدْنَى (+ - -): 0,5 لكل من معـ1أ، معـ1ب، معـ1ج، معـ2أ، معـ2ب، معـ2ج؛ 1 لمعـ3 ولمعـ3ب؛ 1 - 2 لمعـ4. التَّمَلُّكُ الْأَدْنَى (+ + -): 1 لكل من معـ1أ إلى معـ2ج؛ 2 لمعـ3 ولمعـ3ب؛ 3 - 4 لمعـ4. التَّمَلُّكُ الْأَقْصَى (+ + +): 1,5 لكل من معـ1أ إلى معـ2ج؛ 3 لمعـ3 ولمعـ3ب؛ 5 لمعـ4. على اليسار مربع صغير فيه نقطة (.) وتحته مربع فيه 20 (المجموع). رقم الصفحة: 18.",
+      "figureDesc": "جدول إسناد الأعداد بمستويات التمَلُّك والمعايير، مع مربع للمجموع (نقطة / 20) على اليسار. رقم الصفحة 18.",
+      "answer": null,
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p019_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعَبِّرُ عَنِ الْمَشَاهِدِ مُسْتَعِينًا بِالْجُمَلِ الَّتِي أَنْتَجْتُهَا سَابِقًا.",
+      "body": "ثلاث صور، تحت كل صورة أسطر منقطة للكتابة. الصورة 1: كُتب على المبنى «مدرسة»، وتظهر فتاة تحمل محفظة على ظهرها وتمسك مظلة تحت المطر أمام المدرسة. الصورة 2: فتاة في مطر غزير وريح قوية، مظلتها انقلبت وتضررت، وشجرة منحنية بفعل الريح. الصورة 3: فتاة مريضة مستلقية في السرير، وأمها جالسة بجانبها تضع يدها على جبينها وتبدو قلقة. بجانب الأسطر نقاط الإسناد: 0,5 لكل سطر في الصورة الأولى (ثلاثة أسطر) ثم 0,5 لكل سطر في الصورة الثانية (ثلاثة أسطر)، وفي الصورة الثالثة 0,5 و0,5 و0,5 ثم 1 و1 و1 ثم 2 و2 و1. على اليمين خانات تقييم: معـ1أ، معـ1ب، معـ2ب (مكررة ثلاث مرات)، معـ3ب، معـ4.",
+      "figureDesc": "ثلاث صور بالأبيض والأسود والرمادي: فتاة بمظلة أمام المدرسة تحت المطر؛ فتاة تواجه عاصفة ومظلتها منقلبة وشجرة تميل؛ أم تلمس جبين طفلة مريضة في السرير. أسطر منقطة وخانات تقييم مربعة على الجانب.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p019_i1",
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الصف الأول: المعايير / مستويات التمَلُّك. معايير الحد الأدنى: معـ1أ، معـ1ب، معـ1ج، معـ2أ، معـ2ب، معـ2ج، معـ3أ، معـ3ب. معيار التمَيُّز: معـ4. انعدام التمَلُّك (- - -): 0 في كل الخانات. التمَلُّك دون الأدنى (+ - -): 0,5 لمعـ1أ، معـ1ب، معـ1ج، معـ2أ، معـ2ب، معـ2ج؛ 1 لمعـ3أ ومعـ3ب؛ 1 - 2 لمعـ4. التمَلُّك الأدنى (+ + -): 1 لمعـ1أ إلى معـ2ج؛ 2 لمعـ3أ ومعـ3ب؛ 3 - 4 لمعـ4. التمَلُّك الأقصى (+ + +): 1,5 لمعـ1أ إلى معـ2ج؛ 3 لمعـ3أ ومعـ3ب؛ 5 لمعـ4. في الخانة اليسرى: 20 (المجموع).",
+      "figureDesc": "جدول إسناد الأعداد بمستويات التمَلُّك والمعايير، مع مربع للمجموع من 20 على اليسار. رقم الصفحة 18.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p019_i2",
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.78
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

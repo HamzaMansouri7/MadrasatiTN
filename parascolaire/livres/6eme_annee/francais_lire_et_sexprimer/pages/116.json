@@ -1,0 +1,134 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 116,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – B) Compréhension de l'écrit (conte du jaguar et du chef du village Talokoé)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "B-1-a",
+      "instruction": "Coche la bonne réponse :",
+      "body": "Pourquoi le jaguar accepte-t-il d'aider le chef du village ?\n* Le jaguar est d'accord pour aider Talokoé car :\n[....] il n'aime pas les enfants capricieux.\n[....] c'est la première fois qu'il travaille pour un homme et il espère être bien payé.\n[....] c'est la première fois qu'il travaille pour un homme et il ne veut pas perdre sa réputation.",
+      "figureDesc": "Trois cases à cocher précédant chaque proposition.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p116_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-1-b",
+      "instruction": "Justifie ta réponse :",
+      "body": "(Deux lignes pointillées pour écrire la réponse)",
+      "figureDesc": "Lignes pointillées à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p116_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-2-a",
+      "instruction": "À la fin de l'histoire, que comprend le chef du village à propos du jaguar ?",
+      "body": "Pour résoudre le problème de son fils,\n[....] il suffit que le jaguar soit rusé.\n[....] il suffit que le jaguar prépare de bons plats.\n[....] il suffit de faire comme le jaguar, c'est-à-dire d'inventer une ruse.",
+      "figureDesc": "Trois cases à cocher précédant chaque proposition.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p116_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-2-b",
+      "instruction": "Relève, dans le texte, le détail qui le montre :",
+      "body": "(Deux lignes pointillées pour écrire la réponse)",
+      "figureDesc": "Lignes pointillées à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p116_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-3",
+      "instruction": "Fais un petit résumé de l'histoire :",
+      "body": "(Cinq lignes pointillées pour rédiger le résumé)",
+      "figureDesc": "Lignes pointillées à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p116_i5",
+      "topicId": "fr-6-m1",
+      "formatGuess": "text_production",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-ch2",
+    "confidence": 0.32
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de compréhension de l'écrit en français sur un conte (le jaguar travaille pour le chef du village), ce qui rappelle le Module 1 « Travailler pour s'épanouir », mais le lien avec ce module n'est pas certain et la page n'est pas clairement rattachée à un seul chapitre.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un conte",
+    "skill": "Comprendre un conte écrit en identifiant les motivations d'un personnage et la morale, puis en justifier ses réponses et résumer l'histoire.",
+    "pageType": "exercise",
+    "formats": [
+      "qcm",
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "conte",
+      "justification",
+      "relevé d'indice",
+      "résumé",
+      "jaguar"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable pour évaluer la lecture d'un conte : QCM sur la motivation d'un personnage, justification, relevé d'un indice dans le texte pour étayer la morale, puis résumé guidé en quelques lignes.",
+    "themeGroup": "Contes et récits légendaires"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« Les évaluations », « Sagesse », « 6 ème année de base ») et le pied de page (« Lire et s'exprimer », « 115 », « 6 ème année de base ») ne sont pas transcrits ; « B) Compréhension : » est aussi omis, la transcription ne reprenant que les identifiants B-1-a, etc."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "La question 1-a est notée « 1) a- Coche la bonne réponse » dans l'image ; la transcription la code en « B-1-a », ce qui est une reformulation de la numérotation, pas du texte."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

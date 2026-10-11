@@ -1,0 +1,115 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 56,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الاسم الموصول (الأسماء الموصولة: الذي، التي، اللذان، اللتان، الذين، اللائي/اللواتي، من، ما) وإعرابه ووظائفه في الجملة",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: الأسماء الموصولة",
+      "body": "جدول الأسماء الموصولة الخاصة. المفرد: المذكر الذي، المؤنث التي. المثنى: المذكر اللذان، المؤنث اللتان. الجمع: المذكر الذين، المؤنث اللائي اللاتي اللواتي. المشترك: من للعاقل، ما لغير العاقل.",
+      "figureDesc": "جدول من ثلاثة أعمدة (المذكر، المؤنث، وعمود الصفوف) وثلاثة صفوف: المفرد والمثنى والجمع، يليه سطر للموصول المشترك",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p056_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: يعرب الاسم الموصول للمثنى بالحركات",
+      "body": "فيرفع بالألف: اللذان، اللتان. أمثلة: الولدان اللذان تحصلا على الجائزة ناشطان. / قدمت الفتاتان اللتان نجحتا بامتياز. وينصب بالياء: اللذين، اللتين. أمثلة: شكر المهندس الفلاحين اللذين حسنا انتاجهما. / استقبلت الطبيبة المواطنتين اللتين تبرعتا بدمهما. ويجر بالياء: اللذين، اللتين. أمثلة: رحبت بالسائحين الذين قدما من فرنسا. / التقيت باللاعبتين اللتين تحصلتا على البطولة.",
+      "figureDesc": "جداول صغيرة تضم أمثلة الرفع والنصب والجر",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p056_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "يشغل المركب الموصولي وظائف مختلفة في الجملة",
+      "body": "مبتدأ: الذي يغرس الشوك لا يجني العنب. خبر: أنتم الذين أثق بهم. مفعول به: الجائع يأكل ما حضر. فاعل: نجحت التي سهرت الليالي. اسم ناسخ: إن من يعمل بجدية ينجح.",
+      "figureDesc": "جدول من عمودين: الوظيفة النحوية والمثال، مع إبراز المركب الموصولي بالخط الغليظ",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p056_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أضف إلى معلوماتك",
+      "body": "تحذف النون وتعوض بالإدغام في: من من، ممن، عن ما، عما، عما لا يكون ما من أسماء الموصول حين تفيد النفي والاستفهام والتعجب والاستغراب. لا يكون من، من أسماء الموصول حين تفيد الاستفهام لأنها تكون في العادة مبتدأ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "grammaire_arabe_cahier_regles_p056_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع في إطار الأسماء الموصولة الواردة في النص التالي",
+      "body": "الذي يغرس الشوك يجني الجراح. ليس كل ما يتمناه المرء يدركه. إن الذين أمنوا وعملوا الصالحات لهم أجر غير ممنون. الصبر والمثابرة هما اللذان سيجعلانك من الناجحين.",
+      "figureDesc": "نص داخل إطار مستطيل",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p056_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite des pronoms relatifs (الأسماء الموصولة), une leçon de grammaire arabe, mais aucun des chapitres officiels d'arabe (narration, description, dialogue, explicatif, prescriptif) ne porte clairement sur ce point, donc aucune correspondance exacte.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Les pronoms relatifs en arabe",
+    "skill": "Identifier les pronoms relatifs (الذي، التي، اللذان، من، ما…), les décliner et reconnaître leur fonction dans la phrase.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "pronoms relatifs",
+      "الاسم الموصول",
+      "déclinaison du duel",
+      "fonction grammaticale",
+      "اللذان واللتان",
+      "من وما"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau récapitulatif (genre, nombre, sens humain ou non) et la liste de fonctions illustrées par des phrases-modèles se prêtent à des exercices de classement, d'identification en contexte et de transformation du singulier au duel ou au pluriel.",
+    "themeGroup": "Les pronoms relatifs"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

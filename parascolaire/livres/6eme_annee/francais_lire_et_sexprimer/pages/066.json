@@ -1,0 +1,144 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 66,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : le petit Indien et le cheval sauvage (B) Compréhension)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "L'enfant prend sa couverture chaude et il sort. Pourquoi ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p066_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "a- Réponds par « oui » ou « non » : - Chef Soleil Levant a grondé le petit indien. ........",
+      "body": "a- Réponds par « oui » ou « non » : - Chef Soleil Levant a grondé le petit indien. (case en pointillés pour la réponse)\nb- Relève, dans le texte, la phrase qui le montre : (deux lignes de pointillés)",
+      "figureDesc": "Un cadre ovale arrondi entoure l'espace de réponse oui/non.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p066_i2",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Le cheval ne se sauve pas quand le petit Indien s'approche de lui. Pourquoi ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p066_i3",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Entoure la bonne réponse : « Il t'appartient de droit. » veut dire :",
+      "body": "-Si un Indien trouve un cheval sauvage, il n'a pas le droit de le capturer.\n-Si un Indien capture un cheval sauvage, il doit le tuer.\n-Si un Indien trouve un cheval sauvage et le soigne, ce cheval lui appartient.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p066_i4",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Le petit Indien est content. Dis pourquoi. Cite deux raisons.",
+      "body": "- La première raison : ..........\n- La deuxième raison : ..........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p066_i5",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Que penses-tu de ce petit Indien ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p066_i6",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Complète ce passage avec les mots du cadre :",
+      "body": "Mots du cadre : tentes – nomades – Lapons – faire – troupeaux\nLes ........ sont les habitants du pôle nord. Ils sont ........ Ils suivent leurs ........ de pâturage en pâturage. Ils ........ parfois plus de cent kilomètres pour trouver la nourriture de leurs bêtes. Et c'est pour cela qu'ils emportent toujours avec eux leurs ........ en peau de renne.",
+      "figureDesc": "Les mots à utiliser sont dans un cadre ovale.",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p066_i7",
+      "topicId": "fr-6-m3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.34
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une compréhension de lecture en français (le petit Indien et le cheval sauvage, avec un passage sur les Lapons nomades) ; le module 3 (Accepter les autres) ou le module 8 (Découvrir d'autres modes de vie) pourraient convenir, mais rien ne permet de trancher clairement, d'où une confiance faible.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte narratif",
+    "skill": "Comprendre un récit en justifiant ses réponses par le texte, donner son avis et compléter un passage avec le vocabulaire donné.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "qcm",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "récit",
+      "petit Indien",
+      "cheval sauvage",
+      "justification",
+      "texte à trous"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement progressif de questions de compréhension (pourquoi, oui/non avec relevé de la phrase-preuve, QCM sur une expression, deux raisons, avis personnel), suivi d'un texte à trous documentaire sur un autre peuple, réutilisable pour d'autres récits.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

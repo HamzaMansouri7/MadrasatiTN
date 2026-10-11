@@ -1,0 +1,105 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 29,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الجملة الفعلية: المفعول فيه للزّمان (page de langue arabe, et non de mathématiques malgré l'intitulé du livre)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الجملة الفعليّة – المفعول فيه للزّمان: حدّه",
+      "body": "المفعول فيه للزّمان مكوّن من المكوّنات المتمّمة للجملة يُحَدِّدُ زمان وُقوع الفعل مثل: هَبَّ أَحْمَدُ مِنَ النَّوْمِ صَبَاحًا",
+      "figureDesc": "Titre encadré d'une bordure décorative de cercles dorés. Le mot « صَبَاحًا » est surligné en bleu.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p029_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أنواعه: يكون المفعول فيه للزّمان",
+      "body": "مفردة: سَأَخْرج الآنَ\nمركّب جرّ: رَجَعْت فِي الْمَسَاءِ\nمركّبا إضافيّا المضاف فيه ظرف: قبل، بعد، عند، حين\nأو كلّ و بعض مضافتين إلى ما يدلّ على الزّمان: بعض الوقت، كلّ يوم\nمثل: اسْتَيْقَظْتُ قَبْلَ الشُّروقِ\nأعود إِلَى الْبَيْتِ كل مَسَاءٍ\nأو اسم عدد و المعدود اسم يدلّ على الزّمان: دَرَسْت خَمْسَ سَنَوَاتٍ\nمركّبا تمييزيّا: اسم عدد + تمييز عدد: انْتَظَرْته عِشْرِينَ يَوْمًا",
+      "figureDesc": "Les exemples sont surlignés en couleurs (bleu clair, rose, vert, violet, orange, bleu).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p029_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "حكمه: حكم المفعول فيه للزّمان النّصب،",
+      "body": "و تظهر علامة النّصب على المفعول فيه مفردة: أعود إِلَى الْبَيْتِ مَسَاءً\nعلى المضاف إذا كان المفعول فيه للزّمان مركّبا إضافيّا و لم يكن المضاف ظرفا مبنيّا: اِسْتَرَحْتُ بَعْضَ الْوَقْتِ\nأَرْكَبُ الْحَافِلَةَ كل يَوْمٍ",
+      "figureDesc": "« مَسَاءً » surligné en rose, « بَعْضَ الْوَقْتِ » en bleu clair, « كل يَوْمٍ » en orange.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p029_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ملاحظة",
+      "body": "نسأل عن المفعول فيه للزّمان باستعمال اسمِ الاستفهام مَتَى\nاسم الاستفهام مَتَى في الجملة الفعلية وظيفته مفعول فيه للزّمان",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p029_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u3",
+    "confidence": 0.24
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite d'une leçon de grammaire arabe (complément circonstanciel de temps, المفعول فيه للزّمان), mais aucun des chapitres officiels d'arabe de 5ème année (récit, description, explicatif, injonctif) ne porte sur ce point de langue, et le chapitre fr-5-m5 concerne le français, donc aucune correspondance claire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Complément circonstanciel de temps",
+    "skill": "Identifier le complément circonstanciel de temps (المفعول فيه للزمان) dans une phrase verbale, reconnaître ses formes et son accusatif, et le questionner avec « متى ».",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "جملة فعلية",
+      "مفعول فيه للزمان",
+      "complément de temps",
+      "نصب",
+      "متى",
+      "ظرف"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le cours structuré (définition, formes : mot simple, groupe prépositionnel, annexion, numéral, règle de l'accusatif, question avec « متى ») se prête à des exercices d'identification, de transformation de phrases, de questions avec « متى » et de texte à trous sur la marque casuelle.",
+    "themeGroup": "Le complément circonstanciel de temps"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

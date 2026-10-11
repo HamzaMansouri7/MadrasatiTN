@@ -1,0 +1,133 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 51,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "علوم الحياة: تنقّل الحيوانات (وسط التنقل وطريقة التنقل) وتكاثرها (التكاثر بالبيض والولادة) – ملاحظة: الصفحة تتعلق بمراجعة العلوم ضمن امتحان",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "بِدَايَةُ الْعَمَلِ / نِهَايَةُ مُرَاجَعَةِ الْفِيزِيَاءِ",
+      "body": "بِدَايَةُ الْعَمَلِ : ساعة تشير إلى التاسعة (9:00)، وإطار فارغ لكتابة الوقت: ............. : ............. ; نِهَايَةُ مُرَاجَعَةِ الْفِيزِيَاءِ : ساعة تشير إلى الواحدة (1:00) تقريبًا، وإطار فارغ لكتابة الوقت: ............. : .............",
+      "figureDesc": "ساعتان جداريتان وإطاران لكتابة الوقت (ساعة البداية وساعة نهاية مراجعة الفيزياء)",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p051_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "السَّنَدُ 3 : وَاصَلَ الْفَرِيقُ عَمَلَهُ مُنْجِزًا التَّدْرِيبَاتِ التَّالِيَةَ فِي عِلْمِ الْأَحْيَاءِ. التَّعْلِيمَةُ 5 : أَعْمُرُ الْجَدْوَلَ بِمَا يُنَاسِبُ.",
+      "body": "الجدول بأعمدة: (الحيوان) – وَسَطُ التَّنَقُّلِ – طَرِيقَةُ التَّنَقُّلِ – الْأَعْضَاءُ الْمُسَاعِدَةُ عَلَى التَّنَقُّلِ. الصفوف: الْفِيلُ : الْبَرُّ ; السَّمَكَةُ : الْمَاءُ ; الْأَرْنَبُ : الْبَرُّ. خانات طريقة التنقل والأعضاء المساعدة فارغة.",
+      "figureDesc": "جدول من ثلاثة صفوف وأربعة أعمدة، عمودا وسط التنقل والحيوان معبآن، والعمودان الآخران فارغان",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p051_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : لِمَاذَا تَعُودُ طُيُورُ الْخُطَّافِ إِلَى بِلَادِنَا فِي فَصْلِ الرَّبِيعِ؟",
+      "body": "سطر منقّط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p051_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "التَّعْلِيمَةُ 7 : أَكْتُبُ «صَوَابٌ» أَوْ «خَطَأٌ».",
+      "body": "• ذَكَرُ الْحَمَامِ لَا يَبِيضُ وَيَحْضُنُ الْبَيْضَ : .............\n• الدَّجَاجَةُ لَا تَرْعَى صِغَارَهَا : .............\n• تَرْعَى الْأَسْمَاكُ الْبَيُوضَةُ صِغَارَهَا : .............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p051_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "السَّنَدُ 4 : خَتَمَ الْأَطْفَالُ أَنْشِطَتَهُمْ بِاللُّعْبَةِ التَّالِيَةِ : التَّعْلِيمَةُ 8 : أُحِيطُ بِخَطٍّ مُغْلَقٍ الْإِجَابَاتِ الصَّحِيحَةَ.",
+      "body": "• حَيَوَانَاتٌ تَتَكَاثَرُ بِالْبَيْضِ : دَجَاجٌ - سَمَكٌ - دَلَافِينٌ - نَعَامٌ\n• حَيَوَانَاتٌ تَتَكَاثَرُ بِالْوِلَادَةِ : فِيلٌ - ثُعْبَانٌ - بَقَرَةٌ - مِعْزَاتٌ",
+      "figureDesc": "كلمات مبعثرة بشكل متفرق داخل السطرين",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p051_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "عنوان جدول إسناد الأعداد ومعيار التميّز (مقطوع في أسفل الصفحة).",
+      "figureDesc": "جدول تنقيط مقطوع جزئيًا",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "examens_toutes_matieres_p051_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-3-u3",
+    "confidence": 0.33
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est une évaluation de révision (physique puis sciences de la vie) qui mélange la locomotion (instruction 5, migration des hirondelles en 6) et la reproduction ovipare/vivipare (instructions 7 et 8), donc elle couvre plusieurs chapitres (sci-3-u1 et sci-3-u3) sans qu'un seul ne s'impose.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Déplacement et reproduction des animaux",
+    "skill": "Identifier le milieu et le mode de déplacement des animaux et distinguer les animaux ovipares des animaux vivipares.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "vrai_faux",
+      "qcm",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "déplacement des animaux",
+      "milieu de vie",
+      "reproduction",
+      "ovipares",
+      "vivipares",
+      "migration des oiseaux"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une séquence d'évaluation en équipe où l'on remplit un tableau animal/milieu/mode de déplacement, répond à une question de justification sur la migration, fait un vrai/faux sur les soins aux petits, puis un jeu final qui consiste à entourer les animaux selon leur mode de reproduction.",
+    "themeGroup": "Reproduction des animaux"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

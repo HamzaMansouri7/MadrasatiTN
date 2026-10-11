@@ -1,0 +1,78 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 34,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Les Carthaginois : activités économiques (commerce, agriculture, artisanat) – texte documentaire (page sans contenu mathématique)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "وصيدا وأثينا وروما ومساليا ومالقا ورسعون والرباط، حتى وصلوا المحيط الأطلسي فكانوا يتاجرون مع دول المتوسط في الفضة والنحاس والحديد والخزف الرفيع والصباغ والبخور والأقمشة ومع دول المحيط الأطلسي في الذهب والعاج والفيلة\nبالإضافة إلى التجارة، اهتم القرطاجيون بالفلاحة، ويتجلى ذلك مثلا من خلال الهيمنة على منطقة الوطن القبلي حاليا التي كانت بها جنات وبساتين ترويها عيون وقنوات، وبها كروم وزياتين، وأشجار مثمرة كثيرة، وبها سهول ترعى فيها الأبقار والأغنام والخيول كما اهتم العلماء بالفلاحة وبحثوا فيها وألفوا فيها عديد المؤلفات نذكر من أهمها موسوعة ماغون وهو عالم فلاحي قرطاجي",
+      "figureDesc": "Page encadrée d'une bordure décorative de cercles jaunes avec un chevron ; texte arabe centré, sans voyelles (tashkeel).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p034_i1",
+      "topicId": "hg-5-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "اعتنى القرطاجيون بصناعة الأقمشة وصبغها باستعمال الصباغ المجلوبة من الشرق، وكذلك ازدهرت صناعة الفخار مثل صناعة الجرار",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p034_i2",
+      "topicId": "hg-5-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "hg-5-u3",
+  "topicTitle": "Unité 3 : Histoire - Carthage, Rome et conquête arabo-musulmane",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u7",
+    "confidence": 0.17
+  },
+  "topicSubject": "Histoire & Géographie",
+  "topicReason": "La page traite de la civilisation punique de Carthage (commerce maritime, agriculture au Cap Bon, artisanat des tissus et de la poterie), ce qui correspond à l'unité 3 d'Histoire sur Carthage et la civilisation punique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Histoire-Géographie",
+    "theme": "Activités économiques des Carthaginois",
+    "skill": "Identifier et décrire les principales activités économiques de Carthage (commerce, agriculture, artisanat) à partir d'un texte documentaire.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension",
+      "schema_tableau",
+      "appariement"
+    ],
+    "keywords": [
+      "Carthage",
+      "commerce maritime",
+      "agriculture",
+      "artisanat",
+      "teinture des tissus",
+      "poterie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le texte documentaire liste les routes commerciales et les produits échangés selon les régions (Méditerranée, Atlantique) ainsi que les métiers artisanaux : idéal pour une carte des échanges, un tableau produits/zones ou un appariement produit-activité.",
+    "themeGroup": "Activités économiques de Carthage"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Histoire-Géographie"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

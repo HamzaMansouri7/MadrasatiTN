@@ -1,0 +1,113 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 39,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الأعداد من 10 إلى 19: قراءتها، كتابتها وحسابها / جدول بيتاغور للجمع",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "10",
+      "instruction": "الْأَعْدَادُ مِنْ 10 إِلَى 19: قِرَاءَتُهَا، كِتَابَتُهَا وَحِسَابُهَا:",
+      "body": "10 ⟵ عَشْرَةٌ\n11 ⟵ إِحْدَى عَشَرَ\n12 ⟵ اِثْنَا عَشَرَ\n13 ⟵ ثَلَاثَةَ عَشَرَ\n14 ⟵ أَرْبَعَةَ عَشَرَ\n15 ⟵ خَمْسَةَ عَشَرَ\n16 ⟵ سِتَّةَ عَشَرَ\n17 ⟵ سَبْعَةَ عَشَرَ\n18 ⟵ ثَمَانِيَةَ عَشَرَ\n19 ⟵ تِسْعَةَ عَشَرَ\n\nتفكيك وحساب:\nالعدد 12:\n(1+6+5) = 12\n(6+6) = 12\n(3+9) = 12\n(4+8) = 12\nجدول المنازل: آحَادٌ: 2 | عَشَرَاتٌ: 1 ⟵ اِثْنَا عَشَرَ\n\nالعدد 18:\n(9+9) = 18\n(8+10) = 18\n(1+17) = 18\n(6+12) = 18\nجدول المنازل: آحَادٌ: 8 | عَشَرَاتٌ: 1 ⟵ ثَمَانِيَةَ عَشَرَ",
+      "figureDesc": "مخططان شجريان لتفكيك العددين 12 و18 إلى مجاميع مختلفة، يليهما جدولا منازل للأحاد والعشرات.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p039_i1",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "11",
+      "instruction": "جَدْوَلُ بِيْتاغُور لِلْجَمْعِ :",
+      "body": "جدول الجمع (بيتاغور) للأعداد من 0 إلى 9:\n+ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9\n0 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9\n1 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10\n2 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11\n3 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12\n4 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13\n5 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14\n6 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15\n7 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16\n8 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17\n9 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18",
+      "figureDesc": "جدول بيتاغور للجمع على شكل لوحة صفية خشبية يوضح تقاطع الأعداد من 0 إلى 9 ومجاميعها.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p039_i2",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "math-1-p4",
+  "topicTitle": "Période 4 : Nombres de 11 à 19, tables d'addition et soustraction",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p4",
+    "confidence": 0.69
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite des nombres de 10 à 19 (lecture, écriture, décomposition, dizaine et unités) et du tableau de Pythagore pour l'addition, ce qui correspond à la Période 4 : nombres de 11 à 19 et tables d'addition.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres de 10 à 19 et addition",
+    "skill": "Lire, écrire et décomposer les nombres de 10 à 19, puis utiliser la table d'addition de Pythagore pour calculer des sommes.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "calcul"
+    ],
+    "keywords": [
+      "nombres 10 à 19",
+      "décomposition additive",
+      "table de Pythagore",
+      "addition",
+      "lecture des nombres en arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Faire décomposer un même nombre en plusieurs sommes (par exemple 12) et faire compléter un tableau à double entrée pour mémoriser les additions. Cela peut servir de base à des jeux de cartes, à des coloriages codés ou à des tableaux à compléter.",
+    "themeGroup": "Nombres de 10 à 20"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "13-19: l'image montre « عَشَرَ » après le nombre (ثَلَاثَةَ عَشَرَ, etc.); la transcription est correcte sur ce point, mais « إِحْدَى » est écrit avec hamza sous alif alors que l'image montre « اِحْدَى » (alif wasla); écart mineur"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ajout de titres/étiquettes absents de la page: « تفكيك وحساب: », « العدد 12: », « العدد 18: », « جدول المنازل: » et les « = 12 » / « = 18 » après chaque décomposition (les nombres 12 et 18 sont au centre du diagramme, pas dans les expressions)"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« جدول الجمع (بيتاغور) للأعداد من 0 إلى 9: » est une phrase inventée, absente de l'image"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre 11: « بِيْتاغُور » – l'image montre « بِيتَاغُور » (fatha sur le tā' et non sur le ghayn, damma différente): voyelles mal placées"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le tableau de la page est en ordre RTL (colonne + à droite, 9 à gauche); la transcription le présente en LTR, ce qui est acceptable mais l'ordre visuel diffère"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Non transcrits: la mention de bas de page « الرياضيات », le numéro de page 63, « السنة 1 », « جسر النجاح - الثلاثي الثاني » (éléments de mise en page)"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

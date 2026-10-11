@@ -1,0 +1,123 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 56,
+  "grade": "3ème Année",
+  "subject": "التربية الإسلامية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول، عدد 3 – التربية الإسلامية، السنة الثالثة (الكون والمحيط، النظافة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : أَسْتَخْرِجُ مِنَ النَّصِّ ثَلَاثَةَ مَظَاهِرَ مِنَ الْكَوْنِ تَدُلُّ عَلَى عَظَمَةِ اللَّهِ.",
+      "body": "السَّنَدُ 1 : نَظَّمَتْ جَمْعِيَّةُ الْبِيئَةِ يَوْمًا لِتَشْجِيرِ الْجَبَلِ. وَصَلَ الْمُشَارِكُونَ مِنْ كُلِّ الْأَعْمَارِ، وَكَمْ كَانَ الْمَنْظَرُ رَائِعًا : هَوَاءٌ عَلِيلٌ صَافٍ وَشَمْسٌ تُرْسِلُ أَشِعَّةً مُعْتَدِلَةً.\n• ................ • ................ • ................",
+      "figureDesc": "ثلاث نقاط للإجابة (0,5 لكل واحدة)، المعيار معـ1أ",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p056_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أُكْمِلُ الْآيَةَ الَّتِي تَدُلُّ عَلَى قُدْرَةِ اللَّهِ وَإِحْكَامِ صُنْعِهِ.",
+      "body": "قَالَ اللَّهُ تَعَالَى :« أَلَمْ تَرَ أَنَّ اللَّهَ ............ مِنَ ............ مَاءً فَأَخْرَجْنَا بِهِ ثَمَرَاتٍ ............ أَلْوَانُهَا وَمِنَ الْجِبَالِ ............ وَ............ مُخْتَلِفٌ أَلْوَانُهَا وَ............ سُودٌ وَمِنَ النَّاسِ وَالدَّوَابِّ وَالْأَنْعَامِ مُخْتَلِفٌ أَلْوَانُهُ» (سورة فاطر 27 - 28)",
+      "figureDesc": "فراغات للإكمال، 0,25 لكل فراغ، المعيار معـ2أ",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p056_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : أَذْكُرُ فَائِدَةً لِكُلِّ مُكَوِّنٍ مِنْ مُكَوِّنَاتِ الْمُحِيطِ.",
+      "body": "• الْهَوَاءُ : ................\n• الْجِبَالُ : ................\n• الْأَمْطَارُ : ................",
+      "figureDesc": "أسطر للإجابة (0,5 لكل واحدة)، المعيار معـ ب",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p056_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : هَلْ تُشَجِّعُ عَلَى غِرَاسَةِ الْأَشْجَارِ ؟ لِمَاذَا ؟",
+      "body": "السَّنَدُ 2 : أَحْضَرَ أَعْضَاءُ الْجَمْعِيَّةِ أَنْوَاعًا عَدِيدَةً مِنْ شَتْلَاتِ الْأَشْجَارِ. فَغَرَسَهَا الْمُشَارِكُونَ وَسَقَوْهَا وَاتَّفَقُوا عَلَى الْعِنَايَةِ بِهَا.",
+      "figureDesc": "أربعة أسطر للإجابة، المعيار معـ4",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p056_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : أُجِيبُ بِـ «نَعَمْ» أَوْ «لَا».",
+      "body": "السَّنَدُ 3 : رَجَعَ خَلِيلٌ إِلَى الْمَنْزِلِ وَقَدْ تَعَفَّرَتْ مَلَابِسُهُ بَعْدَ حَفْرِ الْحُفَرِ وَغِرَاسَةِ الْأَشْجَارِ. فَاسْتَحَمَّ وَلَبِسَ ثِيَابًا نَظِيفَةً.\n• النَّظَافَةُ تَقِي الْإِنْسَانَ مِنَ الْأَمْرَاضِ. ........\n• أَعْتَنِي بِنَظَافَةِ كَامِلِ جِسْمِي. ........\n• أُولِي أَهَمِّيَّةً لِنَظَافَةِ مَلَابِسِي فَقَطْ. ........",
+      "figureDesc": "المعيار معـ2ب",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p056_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p3",
+    "confidence": 0.23
+  },
+  "topicSubject": "Éducation islamique",
+  "topicReason": "La page est un test de fin de trimestre en Éducation islamique (univers, environnement, propreté, sourate Fâtir), matière absente de la liste des chapitres officiels, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Création, environnement et propreté",
+    "skill": "Reconnaître les signes de la grandeur de Dieu dans la nature et adopter des comportements de protection de l'environnement et de propreté.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "production_ecrite",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "grandeur de Dieu",
+      "environnement",
+      "reboisement",
+      "propreté",
+      "verset coranique",
+      "bienfaits de la nature"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation concrète de journée de reboisement organisée par une association sert de fil conducteur : relever des signes de la création dans un texte, compléter un verset, citer l'utilité des éléments de la nature, donner son avis sur la plantation d'arbres et répondre par oui/non sur l'hygiène après l'effort.",
+    "themeGroup": "Création, environnement et propreté"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

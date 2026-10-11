@@ -1,0 +1,150 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 47,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "إعراب جمع المذكر السالم (الإعراب والمثنى والمضاف) – langue arabe, 6ème année",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الثاني",
+      "instruction": "استخرج من النص العناصر الواقعة في صيغة المثنى وأعين وظيفتها وعلامة إعرابها في الجدول",
+      "body": "حضرت الدجاجتان فأخذ الضيف الرأسين فقطعهما وناولنا إياهما وقال: الرأسان للأب والأم ، وقطع الجناحين وقال: إن الجناحين للإبنين ، ثم أشار إلى ما تركه وقال: والآن أصبح الزوران من حق الزائرين",
+      "figureDesc": "جدول فارغ من ثلاثة أعمدة: العنصر المثنى، الوظيفة، علامة الاعراب، للتعمير من قبل التلميذ",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p047_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الثالث",
+      "instruction": "ثن الأسماء المضافة التي تحتها سطر",
+      "body": "تبت يد أبي لهب\nاشتريت كتاب النحو والصرف\nفتحنا نافذة قاعة التعليم\nإن ولد جارنا ضعيف البدن",
+      "figureDesc": "إطار فارغ للإجابة. الأسطر التي تحت الأسماء المضافة غير ظاهرة في النص الممسوح",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p047_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الرابع",
+      "instruction": "أعوض التلميذ بالتلميذين والمعلم بالمعلمين وأغير ما يجب تغييره في النص التالي",
+      "body": "سأل المعلم التلميذ: هل أنجزت واجباتك ؟ فاصفر وجه التلميذ وطأطأ رأسه وأجاب: نسيت يا سيدي. غضب المعلم من التلميذ وقال له: سأعاقبك أيها التلميذ الكسول ثم خاطبنا بقوله: إن التلميذ المتهاون لا مكان له بيننا",
+      "figureDesc": "إطار فارغ للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p047_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "إعراب جمع المذكر السالم – المراجعة",
+      "body": "المراجعة\nالجمع اسم دالة على أكثر من اثنين\nالضمائر المستعملة للجمع المذكر هي:\nنحن: جمع المذكر والمؤنث المتكلم",
+      "figureDesc": "جدول صغير من عمودين: «نحن» | «جمع المذكر والمؤنث المتكلم»",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p047_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u6",
+    "confidence": 0.38
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de grammaire arabe (dual, noms annexés, pluriel masculin sain), un contenu de langue qui ne correspond à aucune des six unités officielles, centrées sur la narration et ses types de passages.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Le duel et le pluriel masculin sain",
+    "skill": "Identifier les noms au duel et au pluriel masculin sain, puis déterminer leur fonction, leur marque d'inflexion et leur transformation.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "duel",
+      "pluriel masculin sain",
+      "analyse grammaticale",
+      "annexion",
+      "marques d'inflexion",
+      "conjugaison des pronoms"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les exercices partent d'un court texte narratif (un repas partagé) où l'on relève les duels dans un tableau, d'une mise au duel de noms en annexion, et d'une transformation de texte (singulier vers duel et pluriel) qui oblige à accorder verbes, pronoms et adjectifs. Cette progression est réutilisable pour d'autres points de grammaire.",
+    "themeGroup": "Le duel"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre « التمرين الثاني » est transcrit « [الثاني] » : « التمرين » manque (idem pour الثالث et الرابع)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau du premier exercice est omis : colonnes « العنصر المثنى », « الوظيفة », « علامة الاعراب »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الإبنين » : l'image montre « للإبنين » ; la transcription est correcte, mais « الرأسين » et « الزوران » sont conformes au texte (aucune erreur)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أصبح الزوران من حق الزائرين » : l'image montre bien « الزوران » ; ok."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الجمع اسم دالة » : l'image indique « دالة », la transcription est fidèle. Le titre « إعراب جمع المذكر السالم » est fusionné avec « المراجعة » par un tiret inventé « – »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ponctuation ajoutée : « : » après « وقال », « نسيت يا سيدي. » avec un point, « هي: » avec deux-points. Ils n'apparaissent pas dans l'image (espaces uniquement)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « إعراب جمع المذكر السالم » est placé avant « المراجعة » comme un seul bloc ; l'image les présente comme un titre puis un sous-titre."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« نحن: جمع المذكر والمؤنث المتكلم » : c'est une ligne de tableau à deux cellules (نحن | جمع المذكر والمؤنث المتكلم), présentée comme du texte simple."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

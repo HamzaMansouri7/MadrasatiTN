@@ -1,0 +1,104 @@
+{
+  "book": "exercices_mathematiques_corriges",
+  "page": 2,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Addition des nombres décimaux et problème de multiplication (calcul d'un montant sur trois semaines)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الخامس",
+      "instruction": "ضع العمليات ثم أحسب :",
+      "body": "1509.56 + 233.68 ؛ 195.33 + 0.86 ؛ 359 + 32.88 ؛ 100 + 0.514",
+      "figureDesc": "Tableau de 4 cases (2 lignes × 2 colonnes) vides, destinées à poser et calculer chaque addition : en haut 1509.56 + 233.68 et 195.33 + 0.86 ; en bas 359 + 32.88 et 100 + 0.514.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "exercices_mathematiques_corriges_p002_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "السادس",
+      "instruction": "يتقاضى حارس ليلي مبلغ 2500 دينار عن كل ليلة حراسة .",
+      "body": "ماهو المبلغ الذي يتقاضاه في ثلاث أسابيع ؟",
+      "figureDesc": "Six lignes pointillées pour écrire la solution.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "exercices_mathematiques_corriges_p002_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-5-ch2",
+  "topicConfidencePrev": 0.4444444444444444,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.83
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des additions de nombres décimaux (Période 2), mais aussi un problème de multiplication (2500 × 21 nuits) qui pourrait relever de la Période 3 ; l'addition des décimaux domine, d'où le choix de math-5-ch2.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition des nombres décimaux",
+    "skill": "Poser et effectuer des additions de nombres décimaux, puis résoudre un problème de multiplication à une étape en contexte de la vie courante.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "addition",
+      "nombres décimaux",
+      "opérations posées",
+      "multiplication",
+      "problème",
+      "montant d'argent"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Réutilisable : série d'additions posées avec décimaux de longueurs différentes (entier + décimal, partie décimale courte) et problème de salaire journalier à étendre sur plusieurs semaines, avec conversion jours/semaines comme difficulté cachée.",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les mots « التمرين » sont omis dans les deux titres : l'image indique « التمرين الخامس » et « التمرين السادس », la transcription ne garde que « الخامس » et « السادس »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le signe « = » après les titres des exercices (« التمرين الخامس = ضع… » et « التمرين السادس = يتقاضى… ») est absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La signature « الأستاذ هاشمي زروال » en bas de page n'est pas transcrite."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête et le pied de page (date 22/12/2024 14:23, WWW.EDUSET.TN, URL, pagination 3/15) sont omis ; acceptable s'il s'agit de métadonnées."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices corrigés"
+}

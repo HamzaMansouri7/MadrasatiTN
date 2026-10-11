@@ -1,0 +1,252 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 22,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "التَّغْذِيَةُ : الوَجْبَةُ الغِذَائِيَّةُ المُتَوَازِنَةُ حَسَبَ السِّنِّ وَالنَّشَاطِ",
+  "items": [
+    {
+      "kind": "title",
+      "number": null,
+      "instruction": "التَّغْذِيَةُ :",
+      "body": "الوَجْبَةُ الغِذَائِيَّةُ المُتَوَازِنَةُ حَسَبَ السِّنِّ وَالنَّشَاطِ",
+      "figureDesc": "رسم صغير لمجموعة من المواد الغذائية (قارورات، عنب، خضر وأغذية أخرى) بجانب العنوان. رقم الصفحة: 54.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p022_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) إِلَى أَيَّةِ مَجْمُوعَةٍ مِنْ مَجْمُوعَاتِ الأَطْعِمَةِ يَنْتَمِي كُلُّ طَعَامٍ مِنْ أَطْعِمَةِ الوَجْبَةِ الغِذَائِيَّةِ المُتَوَازِنَةِ ؟",
+      "body": "ب) مَاهِيَ الوَجْبَةُ الغِذَائِيَّةُ المُتَوَازِنَةُ ؟ (يوجد سطر فارغ لكتابة الإجابة)",
+      "figureDesc": "رسم لمائدة عليها وجبة: قارورة ماء، طبق سلطة، خبز، فاكهة، كأس، وطبق لحم مع شوكة وسكين.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p022_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لَاحِظِ الشَّكْلَ :",
+      "body": "- هَلْ يُمَثِّلُ وَجْبَةً غِذَائِيَّةً مُتَوَازِنَةً ؟\n- كَيْفَ عَرَفْتَ ؟\n(يوجد سطر فارغ بعد كل سؤال)",
+      "figureDesc": "رسم لمائدة عليها طبق فيه شواء وبطاطس مع شوكة وسكين، وطبق خضر وسلطة، وصحن أبيض، وفاكهة.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p022_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكْتُبْ « صَوَاب » أَوْ « خَطَأ » :",
+      "body": "- السَّمَكَةُ تَحْتَوِي عَلَى قِيمَةٍ زُلَالِيَّةٍ تُعَادِلُ اللَّحْمَ.\n- تَسْتَطِيعُ أَنْ تُعَوِّضَ 100 غ مِنَ اللَّحْمِ بِبَيْضَةٍ وَاحِدَةٍ.\n- القِيمَةُ الغِذَائِيَّةُ لِلسَّمَكِ الصَّغِيرِ مِثْلُ السَّمَكِ الكَبِيرِ.\n(يوجد سطر فارغ بجانب كل عبارة)",
+      "figureDesc": "سلسلة تعادلات بالرسوم قبل التعليمة، تُقرأ من اليمين إلى اليسار: سمكة زرقاء (100 غ من السمك) = قطعة لحم (100 غ من اللحم) = بيضتان (بيضتان) = قطعة جبن (60 غ من الجبن) = علبة حليب (نصف لتر من الحليب).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "eveil_scientifique_cours_exercices_p022_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.42
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page, rédigée en arabe, porte sur la nutrition : repas équilibré, groupes d'aliments et équivalences nutritionnelles (poisson, viande, œuf, fromage, lait). Cela correspond à l'unité 3 d'Éveil Scientifique, qui inclut la nutrition équilibrée, et non à la matière de langue arabe.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Repas équilibré selon âge et activité",
+    "skill": "Identifier les groupes d'aliments d'un repas équilibré et justifier l'équilibre d'une ration alimentaire à partir d'une image et d'équivalences nutritionnelles.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "vrai_faux",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "alimentation",
+      "repas équilibré",
+      "groupes d'aliments",
+      "équivalences alimentaires",
+      "protéines",
+      "nutrition"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : classer les aliments d'un plateau-repas par groupe, juger l'équilibre d'un repas illustré en justifiant, et utiliser des équivalences de poids (poisson, viande, œuf) pour des affirmations vrai/faux.",
+    "themeGroup": "Énergie, besoins et troubles alimentaires"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de la page est absent : « التَّغْذِيَةُ : » et le sous-titre « الوَجْبَةُ الغِذَائِيَّةُ المُتَوَازِنَةُ حَسَبَ السِّنِّ وَالنَّشَاطِ »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 54 n'est pas transcrit."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« لَاحِظ الشَّكْلَ » : l'image montre « لَاحِظِ » avec une voyelle sur la dernière lettre. Dans la question 1, « الوَجْبَةِ الغِذَائِيَّةِ » et « المُتَوَازِنَةِ » sont transcrits avec des voyelles différentes de celles de l'image, et « مَاهِيَ » est écrit « مَاهِيَ » alors que l'image montre « مَاهِيَ » sans cette forme exacte."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les équations alimentaires sont placées à la fin de l'exercice 3 alors qu'elles apparaissent avant la consigne « أكتب صواب أو خطأ ». Les légendes sont aussi inversées : l'image va de gauche à droite, du lait au poisson."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "La légende « نصف لتر من الحليب » est transcrite « تصف لتر » dans l'image (OCR) ; à vérifier. La légende « 100 غ من السمك » est correcte, mais les équations sont écrites sans symboles ni images."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les images (tables avec repas, poisson, viande, œufs, fromage, lait) ne sont pas décrites. Elles sont nécessaires aux questions 1 et 2."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre « التَّغْذِيَةُ : » et le sous-titre « الوَجْبَةُ الغِذَائِيَّةُ المُتَوَازِنَةُ حَسَبَ السِّنِّ وَالنَّشَاطِ » figurent en tête de page, avec une petite illustration de produits alimentaires. Ils sont absents de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 54 (en bas, dans un cartouche bleu) n'est pas transcrit."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'image montre « لَاحِظِ الشَّكْلَ : », avec une kasra sous la lettre ظ. La transcription écrit « لَاحِظ » sans cette voyelle."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 3 : la chaîne d'équivalences (poisson = viande = œufs = fromage = lait) se trouve avant la consigne « أكتب صواب أو خطأ ». La transcription la place à la fin du corps, après les trois affirmations. Elle est déplacée dans figureDesc, avec les légendes."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "title",
+      "number": null,
+      "instruction": "التَّغْذِيَةُ :",
+      "body": "الوَجْبَةُ الغِذَائِيَّةُ المُتَوَازِنَةُ حَسَبَ السِّنِّ وَالنَّشَاطِ",
+      "figureDesc": "رسم صغير لمجموعة من المواد الغذائية (قارورات، عنب، خضر وأغذية أخرى) بجانب العنوان. رقم الصفحة: 54.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p022_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) إِلَى أَيَّةِ مَجْمُوعَةٍ مِنْ مَجْمُوعَاتِ الأَطْعِمَةِ يَنْتَمِي كُلُّ طَعَامٍ مِنْ أَطْعِمَةِ الوَجْبَةِ الغِذَائِيَّةِ المُتَوَازِنَةِ ؟",
+      "body": "ب) مَاهِيَ الوَجْبَةُ الغِذَائِيَّةُ المُتَوَازِنَةُ ؟ (يوجد سطر فارغ لكتابة الإجابة)",
+      "figureDesc": "رسم لمائدة عليها وجبة: قارورة ماء، طبق سلطة، خبز، فاكهة، كأس، وطبق لحم مع شوكة وسكين.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p022_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لَاحِظِ الشَّكْلَ :",
+      "body": "- هَلْ يُمَثِّلُ وَجْبَةً غِذَائِيَّةً مُتَوَازِنَةً ؟\n- كَيْفَ عَرَفْتَ ؟\n(يوجد سطر فارغ بعد كل سؤال)",
+      "figureDesc": "رسم لمائدة عليها طبق فيه شواء وبطاطس مع شوكة وسكين، وطبق خضر وسلطة، وصحن أبيض، وفاكهة.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p022_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكْتُبْ « صَوَاب » أَوْ « خَطَأ » :",
+      "body": "- السَّمَكَةُ تَحْتَوِي عَلَى قِيمَةٍ زُلَالِيَّةٍ تُعَادِلُ اللَّحْمَ.\n- تَسْتَطِيعُ أَنْ تُعَوِّضَ 100 غ مِنَ اللَّحْمِ بِبَيْضَةٍ وَاحِدَةٍ.\n- القِيمَةُ الغِذَائِيَّةُ لِلسَّمَكِ الصَّغِيرِ مِثْلُ السَّمَكِ الكَبِيرِ.\n(يوجد سطر فارغ بجانب كل عبارة)",
+      "figureDesc": "سلسلة تعادلات بالرسوم قبل التعليمة، تُقرأ من اليمين إلى اليسار: سمكة زرقاء (100 غ من السمك) = قطعة لحم (100 غ من اللحم) = بيضتان (بيضتان) = قطعة جبن (60 غ من الجبن) = علبة حليب (نصف لتر من الحليب).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "al_mounir_eveil_scientifique_6eme_p022_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) إِلَى أَيَّةِ مَجْمُوعَةٍ مِنْ مَجْمُوعَاتِ الأَطْعِمَةِ يَنْتَمِي كُلُّ طَعَامٍ مِنْ أَطْعِمَةِ الوَجْبَةِ الغِذَائِيَّةِ المُتَوَازِنَةِ ؟",
+      "body": "ب) مَاهِيَ الوَجْبَةُ الغِذَائِيَّةُ المُتَوَازِنَةُ ؟ (يوجد سطر فارغ لكتابة الإجابة)",
+      "figureDesc": "رسم لمائدة عليها وجبة: قارورة ماء، طبق سلطة، خبز، فاكهة، كأس، وطبق لحم مع شوكة وسكين.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p022_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لَاحِظ الشَّكْلَ :",
+      "body": "- هَلْ يُمَثِّلُ وَجْبَةً غِذَائِيَّةً مُتَوَازِنَةً ؟\n- كَيْفَ عَرَفْتَ ؟\n(يوجد سطر فارغ بعد كل سؤال)",
+      "figureDesc": "رسم لمائدة عليها طبق فيه شواء وبطاطس مع شوكة وسكين، وطبق خضر وسلطة، وصحن أبيض، وفاكهة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p022_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكْتُبْ « صَوَاب » أَوْ « خَطَأ » :",
+      "body": "- السَّمَكَةُ تَحْتَوِي عَلَى قِيمَةٍ زُلَالِيَّةٍ تُعَادِلُ اللَّحْمَ.\n- تَسْتَطِيعُ أَنْ تُعَوِّضَ 100 غ مِنَ اللَّحْمِ بِبَيْضَةٍ وَاحِدَةٍ.\n- القِيمَةُ الغِذَائِيَّةُ لِلسَّمَكِ الصَّغِيرِ مِثْلُ السَّمَكِ الكَبِيرِ.\nالمعادلات: 100 غ من السمك = 100 غ من اللحم = بيضتان = 60 غ من الجبن = نصف لتر من الحليب",
+      "figureDesc": "سلسلة تعادلات بالرسوم: سمكة = قطعة لحم = بيضتان = قطعة جبن = علبة حليب، مع تسميات تحت كل رسم.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p022_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

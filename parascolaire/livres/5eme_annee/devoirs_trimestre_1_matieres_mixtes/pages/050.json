@@ -1,0 +1,109 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 50,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "حقوق وواجبات التلميذ في المدرسة (page de règlement scolaire, hors contenu mathématique)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "إلى المدرسة",
+      "body": "إلى المدرسة",
+      "figureDesc": "Illustration colorée sur fond orangé : trois rangées d'enfants de différentes origines se tenant par la main, avec le titre « إلى المدرسة » en lettres colorées. Page encadrée d'une bordure de cercles jaunes à motif de coche.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p050_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحقوق التي يتمتع بها التلميذ في المدرسة",
+      "body": "أن تصان كرامة التلميذ و لا يتعرض للإهانة أو التفرقة بينه و بين زميل له لأسباب تتعلق بالدين أو الجنس أو اللون أو الإنتماء العائلي\nأن يحصل على مواد تعليمية موافقة لمعايير الجودة\nو يكون من حقه أن يسأل عن التفاصيل التي لم يفهمها جيداً أثناء الحصص ، و يكون من حقه المشاركة في العملية التعليمية و التعبير عن أفكاره و مشاعره و يكون من حق الطالب المشاركة في الأنشطة المختلفة التي تنظمها المدرسة ، و تقديم آراؤه و إقتراحاته بخصوص ما يراه أفضل للنشاط الطلابي",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p050_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الواجبات التي يجب على التلميذ التقيد بها",
+      "body": "أن يلتزم التلميذ بالحضور اليومي في موعد المدرسة ،\nو في حالات الغياب يقدم عذر للمدرسة و يجب عليه أن يعرف ما فاته من دروس و يقوم بتحصيلها و يلتزم الطالب بالآداب العامة داخل المدرسة مع المعلمين و زملائه على السواء ،",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p050_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-5-m8",
+    "confidence": 0.3
+  },
+  "topicSubject": "Français / Éducation civique (droits et devoirs de l'élève, page en arabe)",
+  "topicReason": "La page présente les droits et devoirs de l'élève à l'école, un règlement scolaire qui ne correspond clairement à aucun chapitre officiel ; le module fr-5-m8 (droits de l'enfant, citoyenneté) est le plus proche, mais il est enseigné en français et la page est en arabe.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation civique",
+    "theme": "Droits et devoirs de l'élève",
+    "skill": "Identifier les droits de l'élève à l'école et les devoirs à respecter (assiduité, respect, règles de vie scolaire).",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "droits de l'élève",
+      "devoirs de l'élève",
+      "règlement scolaire",
+      "assiduité",
+      "respect",
+      "dignité"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La présentation en deux colonnes droits/devoirs se prête à un exercice d'appariement ou de classement, à des mises en situation (absence, discrimination, question au maître) ou à une affiche de règlement de classe.",
+    "themeGroup": "Droits et devoirs de l'élève"
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre 'إلى المدرسة' est transcrit comme élément distinct et dupliqué ; c'est du texte décoratif dans l'image, mais il est correct."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La structure sépare les titres du corps, ce qui est acceptable. Les retours à la ligne sont différents de l'image, sans conséquence sur le contenu."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "labels": {
+    "pageSubject": "Éducation civique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

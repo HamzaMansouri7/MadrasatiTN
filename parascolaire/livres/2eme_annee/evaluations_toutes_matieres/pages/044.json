@@ -1,0 +1,381 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 44,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إيقاظ علمي – اختبار نهاية الثلاثي الثاني عدد 1 (السنة الثانية) – الرياضة وسلامة الجسم",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "السند 1",
+      "instruction": "",
+      "body": "نَظَّمَتْ إدارَةُ مَدْرَسَةٍ سِبَاقًا رِياضِيًّا بَيْنَ مَجْمُوعَةٍ مِنَ التَّلامِيذِ وَهَذَا تَرْتِيبُ الأَرْبَعِ الأَوائِلِ. الْمَرْتَبَةُ الأُولَى : سَلِيمٌ. الْمَرْتَبَةُ الثَّانِيَةُ : كَرِيمٌ. الْمَرْتَبَةُ قَبْلَ الأَخِيرَةِ : مُرَادٌ. مُبَاشَرَةً بَعْدَ كَرِيمٍ : إِيَادٌ. الْمَرْتَبَةُ الأَخِيرَةُ : ذَاكِرٌ. مُبَاشَرَةً بَعْدَ إِيَادٍ : سَامِي.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p044_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُرَتِّبُ الْمُتَسَابِقِينَ مِنَ الأَبْطَإِ إِلَى الأَسْرَعِ.",
+      "body": "ست خانات مرقمة من 1 إلى 6 (من اليمين إلى اليسار) لكتابة أسماء المتسابقين على نقاط. النقاط المسندة: 0,5 لكل خانة. المعيار: معـ1أ",
+      "figureDesc": "ستة مستطيلات بحواف مدورة مرقمة 1 إلى 6 بها نقاط للكتابة، ومربعات تقييم المعيار معـ1أ على اليمين",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p044_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَشْطُبُ السُّلُوكَ الْمُضِرَّ أَثْنَاءَ السِّبَاقِ.",
+      "body": "قُوَّةُ الْعَضَلاتِ / الْعُنْفُ ؛ السُّرْعَةُ / التَّسَرُّعُ ؛ النِّظَامُ / التَّدَافُعُ. (1 نقطة لكل عنصر؛ المعيار معـ3)",
+      "figureDesc": "ثلاثة إطارات مستديرة الحواف، كل واحد يحوي كلمتين تفصل بينهما شرطة مائلة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p044_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُعَلِّلُ إِجَابَتِي.",
+      "body": "السطر 1: يَتَسَبَّبُ ........ وَ ........ وَ ........ فِي وُقُوعِ ........\nالسطر 2: وَ ........ وَ ........\n(0,5 لكل فراغ؛ المعيار معـ2أ)",
+      "figureDesc": "سطران منقطان للإكمال (ستة فراغات) ومربعات تقييم المعيار معـ2أ",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p044_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَكْتُبُ ثَلاثَةَ سُلُوكَاتٍ نُحَافِظُ بِهَا عَلَى سَلامَةِ الْجِسْمِ.",
+      "body": "الانْتِظَامُ فِي مُمَارَسَةِ ........ ؛ الْمُوَاظَبَةُ عَلَى ........ ؛ تَنَاوُلُ ........ (1 نقطة لكل سلوك؛ المعيار معـ1ب)",
+      "figureDesc": "ثلاثة أسطر منقطة وثلاثة مربعات تقييم",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p044_i5"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 2",
+      "instruction": "",
+      "body": "يَسْتَعْمِلُ الرِّيَاضِيُّونَ أَثْنَاءَ تَدْرِيبَاتِهِمْ عَضَلاتِهِمْ وَمَفَاصِلَهُمْ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p044_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَرْبُطُ كُلَّ مِفْصَلٍ بِمَكَانِهِ فِي الْجِسْمِ.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p044_i7"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p6",
+    "confidence": 0.24
+  },
+  "topicSubject": "Éveil scientifique",
+  "topicReason": "La page est une évaluation de fin de trimestre en éveil scientifique (sport et santé du corps, muscles et articulations), matière absente de la liste des chapitres officiels (arabe et mathématiques uniquement), donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Sport et santé du corps",
+    "skill": "Identifier les comportements qui préservent la santé du corps et expliquer le rôle des muscles et des articulations pendant l'effort.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "appariement",
+      "lecture_comprehension",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "sport",
+      "santé",
+      "muscles",
+      "articulations",
+      "course",
+      "comportements nuisibles"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "À partir d'une situation de course scolaire avec un classement à reconstituer par déduction, on enchaîne des consignes variées : barrer les comportements dangereux, expliquer les causes et les conséquences par des phrases à trous, citer des habitudes saines, relier des articulations à leur place sur un schéma du corps.",
+    "themeGroup": "Sport et santé"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "التعليمة 1: « الأَبْطَإِ » au lieu de « الأَبْطَإِ » : l'image porte « الْأَبْطَإِ » (الأبطإ), mais le mot doit être lu tel quel ; la transcription « أُرَتِّبُ » est fausse, l'image porte « أُرَتِّبُ » avec la vraie forme « أُرَتِّبُ ». À vérifier."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« نَظَّمَتْ » : l'image porte « نَظَّمَتْ » ; « سِبَاقًا » transcrit avec kasra, ok ; « الأَوائِلِ » : l'image porte « الْأَوَائِلِ » (voyelles partiellement différentes)"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le السند 1 est reproduit dans l'ordre logique (Première, Deuxième, Avant-dernière, après Karim, Dernière, après Iyad) alors que l'image a deux colonnes : la ligne « مباشرة بعد كريم : إياد » est à la même hauteur que « المرتبة الأولى »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "التعليمة 3 : l'image montre deux lignes : « يتسبب ... و ... و ... في وقوع ... » puis « و ... و ... ». La transcription les fusionne en 3 + 3 blancs, ce qui est approximatif (le nombre de blancs ne correspond pas)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau des points et les critères (معـ1أ, معـ3, معـ2أ, معـ1ب) sont mis dans la transcription avec des valeurs inventées : 0,5 par case pour التعليمة 1 correct, mais التعليمة 4 vaut 1 par ligne seulement dans la colonne du bas ; le tout est correct, mais l'en-tête (امتحانات جسر النجاح, اختبار نهاية الثلاثي الثاني, عدد 1, المادة إيقاظ علمي, المستوى السنة الثانية, الاسم/اللقب/القسم, page 43) est absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Pour التعليمة 5, l'image du corps humain avec les articulations n'est pas décrite (la transcription est vide)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "التعليمة 3 : l'image montre deux lignes. Ligne 1 : « يتسبب … و … و … في وقوع … ». Ligne 2 : « و … و … ». La transcription met tout sur une seule ligne. Le total de 6 blancs est correct, donc le signalement « le nombre de blancs ne correspond pas » est infondé. Seule la coupure de ligne est perdue."
+      },
+      {
+        "type": "invented_text",
+        "severity": "minor",
+        "detail": "التعليمة 5 : le figureDesc affirme que « l'exercice continue à la page suivante ». Rien dans l'image ne le montre. La page s'arrête après la consigne et aucun dessin n'est visible. Il faut le laisser vide."
+      },
+      {
+        "type": "missing",
+        "severity": "minor",
+        "detail": "L'en-tête n'est pas transcrit : « امتحانات جسر النجاح », « المادة : إيقاظ علمي », « المستوى : السنة الثانية », « اختبار نهاية الثلاثي الثاني », « عدد : 1 », les champs الاسم / اللقب / القسم, et le numéro de page 43. C'est une métadonnée de page, pas un exercice, donc le défaut est léger."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "السند 1",
+      "instruction": "",
+      "body": "نَظَّمَتْ إدارَةُ مَدْرَسَةٍ سِبَاقًا رِياضِيًّا بَيْنَ مَجْمُوعَةٍ مِنَ التَّلامِيذِ وَهَذَا تَرْتِيبُ الأَرْبَعِ الأَوائِلِ. الْمَرْتَبَةُ الأُولَى : سَلِيمٌ. الْمَرْتَبَةُ الثَّانِيَةُ : كَرِيمٌ. الْمَرْتَبَةُ قَبْلَ الأَخِيرَةِ : مُرَادٌ. مُبَاشَرَةً بَعْدَ كَرِيمٍ : إِيَادٌ. الْمَرْتَبَةُ الأَخِيرَةُ : ذَاكِرٌ. مُبَاشَرَةً بَعْدَ إِيَادٍ : سَامِي.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُرَتِّبُ الْمُتَسَابِقِينَ مِنَ الأَبْطَإِ إِلَى الأَسْرَعِ.",
+      "body": "ست خانات مرقمة من 1 إلى 6 (من اليمين إلى اليسار) لكتابة أسماء المتسابقين على نقاط. النقاط المسندة: 0,5 لكل خانة. المعيار: معـ1أ",
+      "figureDesc": "ستة مستطيلات بحواف مدورة مرقمة 1 إلى 6 بها نقاط للكتابة، ومربعات تقييم المعيار معـ1أ على اليمين",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَشْطُبُ السُّلُوكَ الْمُضِرَّ أَثْنَاءَ السِّبَاقِ.",
+      "body": "قُوَّةُ الْعَضَلاتِ / الْعُنْفُ ؛ السُّرْعَةُ / التَّسَرُّعُ ؛ النِّظَامُ / التَّدَافُعُ. (1 نقطة لكل عنصر؛ المعيار معـ3)",
+      "figureDesc": "ثلاثة إطارات مستديرة الحواف، كل واحد يحوي كلمتين تفصل بينهما شرطة مائلة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُعَلِّلُ إِجَابَتِي.",
+      "body": "السطر 1: يَتَسَبَّبُ ........ وَ ........ وَ ........ فِي وُقُوعِ ........\nالسطر 2: وَ ........ وَ ........\n(0,5 لكل فراغ؛ المعيار معـ2أ)",
+      "figureDesc": "سطران منقطان للإكمال (ستة فراغات) ومربعات تقييم المعيار معـ2أ",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَكْتُبُ ثَلاثَةَ سُلُوكَاتٍ نُحَافِظُ بِهَا عَلَى سَلامَةِ الْجِسْمِ.",
+      "body": "الانْتِظَامُ فِي مُمَارَسَةِ ........ ؛ الْمُوَاظَبَةُ عَلَى ........ ؛ تَنَاوُلُ ........ (1 نقطة لكل سلوك؛ المعيار معـ1ب)",
+      "figureDesc": "ثلاثة أسطر منقطة وثلاثة مربعات تقييم",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i5"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 2",
+      "instruction": "",
+      "body": "يَسْتَعْمِلُ الرِّيَاضِيُّونَ أَثْنَاءَ تَدْرِيبَاتِهِمْ عَضَلاتِهِمْ وَمَفَاصِلَهُمْ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَرْبُطُ كُلَّ مِفْصَلٍ بِمَكَانِهِ فِي الْجِسْمِ.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "السند 1",
+      "instruction": "",
+      "body": "نَظَّمَتْ إدارَةُ مَدْرَسَةٍ سِبَاقًا رِياضِيًّا بَيْنَ مَجْمُوعَةٍ مِنَ التَّلامِيذِ وَهَذَا تَرْتِيبُ الأَرْبَعِ الأَوائِلِ. الْمَرْتَبَةُ الأُولَى : سَلِيمٌ. الْمَرْتَبَةُ الثَّانِيَةُ : كَرِيمٌ. الْمَرْتَبَةُ قَبْلَ الأَخِيرَةِ : مُرَادٌ. مُبَاشَرَةً بَعْدَ كَرِيمٍ : إِيَادٌ. الْمَرْتَبَةُ الأَخِيرَةُ : ذَاكِرٌ. مُبَاشَرَةً بَعْدَ إِيَادٍ : سَامِي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُرَتِّبُ الْمُتَسَابِقِينَ مِنَ الأَبْطَإِ إِلَى الأَسْرَعِ.",
+      "body": "ست خانات مرقمة من 1 إلى 6 (من اليمين إلى اليسار) لكتابة أسماء المتسابقين على نقاط. النقاط المسندة: 0,5 لكل خانة. المعيار: معـ1أ",
+      "figureDesc": "ستة مستطيلات بحواف مدورة مرقمة 1 إلى 6 بها نقاط للكتابة، ومربعات تقييم المعيار معـ1أ على اليمين",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَشْطُبُ السُّلُوكَ الْمُضِرَّ أَثْنَاءَ السِّبَاقِ.",
+      "body": "قُوَّةُ الْعَضَلاتِ / الْعُنْفُ ؛ السُّرْعَةُ / التَّسَرُّعُ ؛ النِّظَامُ / التَّدَافُعُ. (1 نقطة لكل عنصر؛ المعيار معـ3)",
+      "figureDesc": "ثلاثة إطارات مستديرة الحواف، كل واحد يحوي كلمتين تفصل بينهما شرطة مائلة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُعَلِّلُ إِجَابَتِي.",
+      "body": "يَتَسَبَّبُ ........ وَ ........ وَ ........ فِي وُقُوعِ ........ وَ ........ وَ ........ (0,5 لكل فراغ؛ المعيار معـ2أ)",
+      "figureDesc": "أسطر منقطة للإكمال ومربعات تقييم",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَكْتُبُ ثَلاثَةَ سُلُوكَاتٍ نُحَافِظُ بِهَا عَلَى سَلامَةِ الْجِسْمِ.",
+      "body": "الانْتِظَامُ فِي مُمَارَسَةِ ........ ؛ الْمُوَاظَبَةُ عَلَى ........ ؛ تَنَاوُلُ ........ (1 نقطة لكل سلوك؛ المعيار معـ1ب)",
+      "figureDesc": "ثلاثة أسطر منقطة وثلاثة مربعات تقييم",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 2",
+      "instruction": "",
+      "body": "يَسْتَعْمِلُ الرِّيَاضِيُّونَ أَثْنَاءَ تَدْرِيبَاتِهِمْ عَضَلاتِهِمْ وَمَفَاصِلَهُمْ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَرْبُطُ كُلَّ مِفْصَلٍ بِمَكَانِهِ فِي الْجِسْمِ.",
+      "body": "",
+      "figureDesc": "التمرين يستمر في الصفحة الموالية (رسم جسم ومفاصل غير ظاهر)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p044_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

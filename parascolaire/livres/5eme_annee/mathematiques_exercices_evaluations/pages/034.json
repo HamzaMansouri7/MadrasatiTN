@@ -1,0 +1,115 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 34,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 18: أُكَوِّنُ الأعدادَ الكسريّةَ وأكتبُها وأقرؤُها (ملاحظة : le contenu est mathématique, il s'agit des nombres fractionnaires)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس 18 : أُكَوِّنُ الأعدادَ الكسريّةَ وأكتبُها وأقرؤُها",
+      "body": "عنوان الدرس في أعلى الصفحة (السنة 5). رقم الصفحة 35 في أسفلها.",
+      "figureDesc": "Bandeau décoratif de titre avec le chiffre 5 à gauche",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p034_i1",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ - لَوِّنْ ما تَناوَلَ طاهِرٌ مِنَ الجُبْنِ. ب - اكْتُبْ عَدَدَ الأجْزاءِ الَّتي تَناوَلَها. ج - اِقْرَأ السَّنَدَ وأَكْمِلْ بِعِبارَةٍ لَفْظِيَّةٍ.",
+      "body": "شَرَى طاهِرٌ عُلْبَةَ جُبْنٍ كَالْبي حانِبًا وَجَعَلَ يَأْكُلُ مِنْها في كُلِّ يَوْمٍ جُزْءًا. بَعْدَ ثَلاثَةِ أيّامٍ نَظَرَ في العُلْبَةِ...\nب - ......./8\nج - نَظَرَ في العُلْبَةِ فَوَجَدَ أنَّهُ تَناوَلَ: ..................................",
+      "figureDesc": "Cercle (boîte de fromage) divisé en 8 parts égales à colorier",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p034_i2",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اكْتُبِ العَدَدَ الكَسْرِيَّ المُوافِقَ لِكُلِّ وَضْعِيَّةٍ.",
+      "body": "- الوَضْعِيَّةُ الأولى: شَرَى والِدُكَ خُبْزَةً وقَسَّمَها كَما هُوَ مُبَيَّنٌ في الرَّسْمِ. تَناوَلْتَ أنْتَ مِنْها جُزْءًا واحِدًا أيْ ............... الخُبْزَةِ.\n- الوَضْعِيَّةُ الثّانِيَةُ: يَمْلِكُ جَزّارٌ سِتَّةَ خِرْفانٍ ذَبَحَ مِنْها خَمْسَةً أيْ ذَبَحَ .............. الخِرْفانِ.\n- الوَضْعِيَّةُ الثّالِثَةُ: قَطَعَتْ سَيّارَةٌ 100 كم فاسْتَهْلَكَتْ 10ل مِنَ البَنْزينِ فَمُعَدَّلُ اسْتِهْلاكِها ..............\n- الوَضْعِيَّةُ الرّابِعَةُ: جَمَعَ فَلّاحٌ صابَةَ القَمْحِ فَتَجَمَّعَتْ لَدَيْهِ 10 أكْياسٍ. تَصَدَّقَ بِكيسٍ واحِدٍ مِنَ القَمْحِ عَلَى الفُقَراءِ أيْ تَصَدَّقَ بِـ ..............",
+      "figureDesc": "Cercle (pain) divisé en 4 parts égales",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p034_i3",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "كَوِّنْ بِهَذِهِ المُعْطَياتِ أعْدادًا كَسْرِيَّةً يَكونُ مَقامُ كُلِّ واحِدٍ مِنْها العَدَدَ الجُمْلِيَّ لِلكُتُبِ.",
+      "body": "تَسَلَّمَ كُتُبِيٌّ 80 كِتابًا باعَ مِنْها 50 كِتابًا وأبْقى عِنْدَهُ 5 كُتُبٍ وأرْجَعَ الباقِيَةَ إلى صاحِبِها.\n(سطران للإجابة منقّطان)",
+      "figureDesc": "Deux lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p034_i4",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اكْتُبِ العَدَدَ الكَسْرِيَّ بِالحُروفِ:",
+      "body": "2/3 ؛ 17/20 ؛ 9/10 ؛ 80/100 ؛ 5/1000 ؛ 25/300 (بعد كل كسر نقاط للكتابة)",
+      "figureDesc": "Deux colonnes de fractions avec lignes pointillées",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p034_i5",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p5",
+  "topicTitle": "Période 5 : Fractions, pourcentages, proportionnalité et solides",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.25
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la formation, de l'écriture et de la lecture des nombres fractionnaires (fractions), ce qui correspond à la Période 5 consacrée aux fractions, la seule période du programme qui porte sur les fractions.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres fractionnaires : former, écrire, lire",
+    "skill": "Former une fraction à partir d'une situation de partage, puis l'écrire en chiffres et en lettres, et la lire.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "fractions",
+      "nombres fractionnaires",
+      "partage",
+      "numérateur",
+      "dénominateur",
+      "écriture en lettres"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes de la vie quotidienne (fromage consommé chaque jour, pain partagé, moutons abattus, livres vendus) pour introduire la fraction par coloriage, complétion de phrases et écriture en lettres. Un exercice où le dénominateur est le total d'un stock avec des données superflues est particulièrement original.",
+    "themeGroup": "Fractions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

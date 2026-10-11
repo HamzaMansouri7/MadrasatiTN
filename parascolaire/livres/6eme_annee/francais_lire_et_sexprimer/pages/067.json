@@ -1,0 +1,102 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 67,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Dans une maison chinoise",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Dans une maison chinoise\nAprès le coucher du soleil, il faisait sombre dans la petite maison de Moui-li. Il n'y avait qu'une petite fenêtre où, à la place de la vitre habituelle, il y avait une feuille de papier blanc transparent.\nEn Chine, on ne voyait de vitres que dans les maisons riches. Dans un coin, il y a une grande caisse en bois, recouverte d'une natte et qui servait de lit. Dans un autre coin se trouvait un grand coffre en bois également où les vêtements de la famille étaient rangés.\nAu milieu de la maisonnette était placée une petite table très basse sur laquelle on voyait deux assiettes en bois, l'une remplie de riz cuit, l'autre de légumes coupés très fins.\nMoui-Li, sa femme Théou-li et leur fils s'assirent par terre autour de la petite table et commencèrent leur repas.\nTenant entre les doigts de la main deux baguettes de bois avec lesquelles ils attrapaient de petites quantités de riz et de légumes, ils les portaient à leurs bouches avec une grande habilité. Les baguettes se heurtaient l'une contre l'autre avec un bruit sec et volaient en avant et en arrière. Le riz et les légumes disparaissaient en un clin d'œil et le repas fut terminé en quelques minutes.\nD'après N. Dmitrieva",
+      "figureDesc": "Texte encadré avec en-tête décoratif « Lecture - Compréhension », « Sagesse », « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p067_i1",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1",
+      "instruction": "Compréhension : 1) Où trouve-t-on les vitres en Chine ?",
+      "body": "Ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p067_i2",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2a",
+      "instruction": "2) a- Réponds par « oui » ou « non » :",
+      "body": "- Monsieur Miou-Li est un homme pauvre. (réponse dans une case ovale pointillée)",
+      "figureDesc": "Ovale pointillé pour écrire oui/non.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p067_i3",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2b",
+      "instruction": "b- Relève, dans le texte, deux détails qui le montrent :",
+      "body": "Le premier détail : ............\n(deuxième ligne pointillée pour le second détail)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p067_i4",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m8",
+  "topicTitle": "Module 8 : Découvrir d'autres modes de vie",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.37
+  },
+  "topicSubject": "Français",
+  "topicReason": "Le texte « Dans une maison chinoise » fait découvrir un mode de vie d'une autre culture (la Chine), ce qui correspond au Module 8 « Découvrir d'autres modes de vie ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    125
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte descriptif",
+    "skill": "Lire un texte sur une maison chinoise, y repérer des informations explicites et justifier une réponse par des détails relevés dans le texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "maison chinoise",
+      "relevé d'indices",
+      "justification",
+      "Chine"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un texte de découverte culturelle suivi de questions graduées (localiser une information, répondre par oui/non, puis justifier en relevant deux détails du texte), format transposable à d'autres lieux ou cultures.",
+    "themeGroup": "Textes descriptifs et biographiques"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

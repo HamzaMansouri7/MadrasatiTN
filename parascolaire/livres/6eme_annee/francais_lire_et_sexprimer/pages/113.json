@@ -1,0 +1,242 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 113,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Conjugaison : passé composé, présent et futur (Lire et s'exprimer)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": null,
+      "instruction": "",
+      "body": "Hier, la paysanne...........................................................................................................\nHier, nous...................................................................................................................\nDemain, elles..............................................................................................................\n- La fermière va au poulailler. Elle nourrit sa poule.\nLa semaine dernière, tu................................................................................................\nLa semaine dernière, vous............................................................................................\n- Le berger veut se reposer un instant dans l'auberge.\nJe................................................................................................................................\nNous.............................................................................................................................\nLes passagers............................................................................................................\n- Le vieux dit des bêtises.\nHier, le voyageur........................................................................................................\nHier, j'..........................................................................................................................\nHier, vous...................................................................................................................\n- Je lis l'histoire du paysan et je fais un résumé.\nL'année dernière, nous................................................................................................\nL'année prochaine, les élèves....................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p113_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "5) a-",
+      "instruction": "Complète ce passage avec les verbes du cadre au temps qui convient :",
+      "body": "bondir- apprendre - prendre - aller – vouloir -se mettre\n\nHier, Fatma...................ses leçons et a rangé ses livres dans son armoire. Aujourd'hui, elle .................. s'amuser un peu. Elle .................. à jouer avec ses deux chiens. Les deux bêtes se laissent caresser sans bouger. Ensuite, la fillette .................. dans ses petites mains des robots en plastique et les lance dans le jardin. Les deux chiens .................... et .................. ramener les jouets. Elle s'amuse bien avec ses animaux.",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p113_i2",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "5) b-",
+      "instruction": "Réécris ce passage en remplaçant «Fatma » par « nous » et « deux chiens » par «un chien » :",
+      "body": "....................................................................................................................................\n....................................................................................................................................\n....................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p113_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.55
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page d'évaluation de conjugaison mêlant passé composé, présent et futur, sans lien clair avec un seul module (M1 présent, M2 passé composé, M3 futur), donc aucun chapitre ne correspond exactement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127,
+    128
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Conjugaison : passé composé, présent, futur",
+    "skill": "Conjuguer des verbes au passé composé, au présent et au futur en changeant le sujet et les repères temporels.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "conjugaison",
+      "passé composé",
+      "présent",
+      "futur",
+      "repères temporels",
+      "transformation de phrases"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Transformer des phrases en changeant le sujet et le temps selon des indicateurs temporels (hier, demain, la semaine dernière) est réutilisable, tout comme compléter un passage narratif avec des verbes d'un cadre, puis le réécrire en changeant le sujet et le nombre. Le contexte rural (ferme, animaux) est facile à transposer.",
+    "themeGroup": "Conjugaison"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le début « [4 (suite)] Consigne non visible… transformer les phrases en changeant le sujet et le temps (passé composé / futur) » est une interprétation inventée. Aucune consigne n'apparaît sur l'image, seulement des phrases à compléter."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « Sagesse », « Les évaluations », « 6ème année de base », ainsi que le pied de page « Lire et s'exprimer », « 112 »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les deux lignes de pointillés sous 5-b ne sont pas toutes signalées. La transcription indique « trois lignes », ce qui est correct, mais une quatrième ligne en bas est coupée et partiellement visible."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le « Cadre : » est présenté comme un contenu séparé et la mention « réponse: None » est ajoutée. Ce n'est pas du texte de la page."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "« Hier, la paysanne » est précédé d'un texte inventé. Les phrases « Je », « Nous », « Les passagers » n'ont pas de repère temporel visible, ce qui est correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.72,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "L'exercice du haut de page a un numéro « 4 (suite) » et une consigne (« transformer les phrases en changeant le sujet et le temps… selon les repères temporels ») qui n'existent pas sur l'image. La page commence directement par « Hier, la paysanne…… ». Le numéro et la consigne ne sont pas visibles et doivent rester vides. Le texte estompé qu'on devine en transparence (verso) ne doit pas être transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête n'est pas transcrit : « Sagesse », « Les évaluations », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page n'est pas transcrit : « Lire et s'exprimer », « 112 », « 6ème année de base »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Pour l'exercice 5-a, « Cadre : » est ajouté comme préfixe de la liste des verbes. Ce mot n'apparaît pas sur l'image : les verbes sont seulement entourés d'un cadre arrondi. Le champ « answer: None » est un ajout qui ne vient pas de la page."
+      },
+      {
+        "type": "forme",
+        "severity": "minor",
+        "detail": "Pour 5-b, le corps contient une phrase descriptive (« Trois lignes pointillées… ») au lieu de la page. Cette description doit aller dans figureDesc. Je compte bien trois lignes pointillées lisibles. Je ne vois pas de quatrième ligne nette, donc je ne confirme pas ce point du contrôle rapide."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "",
+      "body": "Sagesse | Les évaluations | 6ème année de base",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "Hier, la paysanne ........\nHier, nous ........\nDemain, elles ........\n- La fermière va au poulailler. Elle nourrit sa poule.\nLa semaine dernière, tu ........\nLa semaine dernière, vous ........\n- Le berger veut se reposer un instant dans l'auberge.\nJe ........\nNous ........\nLes passagers ........\n- Le vieux dit des bêtises.\nHier, le voyageur ........\nHier, j' ........\nHier, vous ........\n- Je lis l'histoire du paysan et je fais un résumé.\nL'année dernière, nous ........\nL'année prochaine, les élèves ........",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "5-a",
+      "instruction": "Complète ce passage avec les verbes du cadre au temps qui convient :",
+      "body": "bondir – apprendre - prendre - aller – vouloir - se mettre\nHier, Fatma ........ ses leçons et a rangé ses livres dans son armoire. Aujourd'hui, elle ........ s'amuser un peu. Elle ........ à jouer avec ses deux chiens. Les deux bêtes se laissent caresser sans bouger. Ensuite, la fillette ........ dans ses petites mains des robots en plastique et les lance dans le jardin. Les deux chiens ........ et ........ ramener les jouets. Elle s'amuse bien avec ses animaux.",
+      "figureDesc": "Les verbes à utiliser sont dans un cadre arrondi.",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "5-b",
+      "instruction": "Réécris ce passage en remplaçant « Fatma » par « nous » et « deux chiens » par « un chien » :",
+      "body": "",
+      "figureDesc": "Trois lignes pointillées pour écrire la réponse.",
+      "answer": null
+    },
+    {
+      "kind": "footer",
+      "number": "",
+      "instruction": "",
+      "body": "Lire et s'exprimer | 112 | 6ème année de base",
+      "figureDesc": "",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "4 (suite)",
+      "instruction": "Consigne non visible (suite d'un exercice commencé plus haut) : transformer les phrases en changeant le sujet et le temps (passé composé / futur), selon les repères temporels indiqués.",
+      "body": "Hier, la paysanne ........\nHier, nous ........\nDemain, elles ........\n- La fermière va au poulailler. Elle nourrit sa poule.\nLa semaine dernière, tu ........\nLa semaine dernière, vous ........\n- Le berger veut se reposer un instant dans l'auberge.\nJe ........\nNous ........\nLes passagers ........\n- Le vieux dit des bêtises.\nHier, le voyageur ........\nHier, j' ........\nHier, vous ........\n- Je lis l'histoire du paysan et je fais un résumé.\nL'année dernière, nous ........\nL'année prochaine, les élèves ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "sagesse_6eme_complet_p113_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5-a",
+      "instruction": "Complète ce passage avec les verbes du cadre au temps qui convient :",
+      "body": "Cadre : bondir – apprendre - prendre - aller – vouloir -se mettre\nHier, Fatma ........ ses leçons et a rangé ses livres dans son armoire. Aujourd'hui, elle ........ s'amuser un peu. Elle ........ à jouer avec ses deux chiens. Les deux bêtes se laissent caresser sans bouger. Ensuite, la fillette ........ dans ses petites mains des robots en plastique et les lance dans le jardin. Les deux chiens ........ et ........ ramener les jouets. Elle s'amuse bien avec ses animaux.",
+      "figureDesc": "Les verbes à utiliser sont encadrés dans un cadre arrondi.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p113_i2",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5-b",
+      "instruction": "Réécris ce passage en remplaçant « Fatma » par « nous » et « deux chiens » par « un chien » :",
+      "body": "Trois lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p113_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

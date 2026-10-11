@@ -1,0 +1,107 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 49,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : « Rex a-t-il la rage ? »",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Rex a-t-il la rage ?\nDepuis trois jours, le chien Rex ne sort plus de sa niche. Il hurle, il gratte, il tousse. Il est assis comme suspendu, sans boire ni manger…Malgré son inquiétude, Stéphanie, décide d'aller voir de près ce qu'il a…\nStéphanie s'agenouille puis passe la tête dans la niche de Rex. Elle sait que si Rex veut la mordre, elle n'aura pas le temps de ressortir.\n« Rex, mon petit Rex, me voilà, mon toutou ! Te souviens-tu de nos courses dans le parc dès cinq heures du matin, quand personne ne pouvait nous voir ? Te souviens-tu de l'os miraculeusement tombé de la fenêtre, quand ton menu ne te suffisait pas ? …Rex, tu n'es sûrement pas enragé !»\nLe chien secoue faiblement sa chaîne…Il s'efforce de pencher sa grosse tête rousse vers Stéphanie. Et il bave ! … Et il tousse ! La fillette commence à s'inquiéter. Elle se souvient avoir entendu la maîtresse d'école dire que le chien enragé a cette singulière toux rauque.\nPourtant Rex avance une patte péniblement. Il voudrait bien rejoindre Stéphanie.\n« Pourquoi ne se déplace –t-il pas ? se demande la fillette. Ah ! Mon Dieu ! Je vois, je comprends. Il frémit de joie parce que je me suis risquée dans l'ombre de la niche. »\nCe qu'il y a ?... c'est la plus simple aventure du monde. Le collier de Rex s'est accroché à un énorme clou qui dépasse les planches de la niche.\nStéphanie enfonce le clou à coup de marteau et libère le chien.\nDélivré, Rex dévore toute sa soupe. Il engloutit toute son eau.\nD'après Rachilde.\nLa rage : c'est une très grave maladie des chiens.",
+      "figureDesc": "Texte encadré avec titre en italique ; bandeau « Lecture - Compréhension » et mention « 6ème année de base » ; au verso, du texte d'une autre page transparaît en filigrane.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p049_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Que fait le chien dans son niche ?",
+      "body": "B) Compréhension :\n1) Que fait le chien dans son niche ?\n……………………………………………………………\n……………………………………………………………",
+      "figureDesc": "Deux lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p049_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.4
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension en français (récit sur le chien Rex et Stéphanie) dont le thème, la peur de la rage et l'inquiétude pour un animal, ne correspond clairement à aucun des modules 1 à 8, même si le module 5 sur la nature ou le module 6 sur la santé pourraient s'en approcher.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Lire un court récit et répondre par écrit à des questions de compréhension en repérant les informations explicites.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "texte narratif",
+      "chien",
+      "questions-réponses"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de suspense autour d'un animal domestique malade, qui sert de support à des questions de repérage; le schéma texte suivi de questions à réponse libre est réutilisable pour d'autres récits.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : « Sagesse », « Lecture - Compréhension », « 6ème année de base » et le pied de page « Lire et s'exprimer », « 48 », « 6ème année de base »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est placé après la question 1 dans le bloc [1], alors qu'il la précède. La question 1 est aussi dupliquée (bloc [1] puis répétée)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La question « 1) Que fait le chien dans son niche ? » apparaît deux fois. Les doublons ne figurent qu'une fois sur la page."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Rex, tu n'es sûrement pas enragé !» : le « … » initial est bien présent, mais le texte original est « …Rex, tu n'es sûrement pas enragé !» après un retour à la ligne. La ponctuation est fusionnée dans le même paragraphe, ce qui est acceptable."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Du texte à peine visible en transparence (verso de la page, contenu d'un autre exercice) n'est pas transcrit. C'est correct, car ce n'est pas du contenu de la page."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

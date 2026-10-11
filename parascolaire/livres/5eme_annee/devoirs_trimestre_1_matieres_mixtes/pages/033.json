@@ -1,0 +1,116 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 33,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Histoire (التاريخ) : قرطاج — توسع قرطاج من مرفأ تجاري إلى إمبراطورية شاسعة، مكونات المجتمع القرطاجي والمؤسسات السياسية. La page ne contient pas de contenu mathématique ; elle ne correspond pas à la matière indiquée.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تمر منه ومراقبة المرافئ التجارية",
+      "body": "تمر منه\nومراقبة المرافئ التجارية\nالبحرية الفينيقية بالحوض الغربي للمتوسط\nموضعها ساحلي على هضبة بيرصة محصنة\nمن الأخطار الداخلية والخارجية",
+      "figureDesc": "Page encadrée d'une bordure décorative de cercles jaunes ornés de chevrons.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p033_i1",
+      "topicId": "hg-5-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "توسع قرطاج من مرفأ تجاري إلى إمبراطورية شاسعة",
+      "body": "مكن النشاط التجاري البحري الفنيقيين من تأسيس مستوطنات ساحلية عديدة تحولت تدريجيا إلى إمبراطورية شاسعة\nتعاظمت مكانة قرطاج تدريجيا بعد سقوط المدينة الأم وهي صور الفينيقية في أيدي ملوك بابل سنة ق م\nوأصبحت قرطاج عاصمة الدولة القرطاجية الممتدة على سواحل الحوض الغربي للمتوسط",
+      "figureDesc": "Titre en rouge. Dans le texte, l'année après « سنة » est laissée vide.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p033_i2",
+      "topicId": "hg-5-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "مكونات المجتمع القرطاجي",
+      "body": "ينقسم المجتمع القرطاجي إلى صنفين هما\nالمواطنون يعيشون داخل مدينة قرطاج ويتمتعون بحق المساهمة في الحياة السياسية ولا يدفعون الضرائب\nغير المواطنين يقيمون خارج المدينة ولا يساهمون في الحياة السياسية ويدفعون الضرائب",
+      "figureDesc": "Sous-titre en rouge foncé.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p033_i3",
+      "topicId": "hg-5-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المؤسسات السياسية",
+      "body": "الأشفاط\nمجلس الشيوخ\nمجلس العامة\nمحكمة المائة",
+      "figureDesc": "Liste de quatre institutions, chacune soulignée.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p033_i4",
+      "topicId": "hg-5-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "لقد شهدت التجارة القرطاجية توسعا كبيرا وانتشارا هائلا فبلغت القوافل التجارية إفريقيا الاستوائية أما البحارة فقد انتشروا على كامل الدول المطلة على البحر الأبيض المتوسط مثل سرقوسة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p033_i5",
+      "topicId": "hg-5-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "hg-5-u3",
+  "topicTitle": "Unité 3 : Histoire - Carthage, Rome et conquête arabo-musulmane",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-5-u3",
+    "confidence": 0.24
+  },
+  "topicSubject": "Histoire & Géographie",
+  "topicReason": "La page traite de Carthage : son expansion d'un port commercial à un empire, la société carthaginoise et ses institutions politiques (suffètes, Sénat, assemblée du peuple, tribunal des Cent), ce qui correspond à l'Unité 3 d'Histoire (Carthage, civilisation punique).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Histoire-Géographie",
+    "theme": "Carthage : expansion et institutions",
+    "skill": "Décrire l'expansion de Carthage, la composition de sa société et ses institutions politiques.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "Carthage",
+      "Phéniciens",
+      "empire maritime",
+      "citoyens et non-citoyens",
+      "institutions politiques",
+      "commerce"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable pour une frise chronologique de l'expansion carthaginoise, un tableau comparatif citoyens/non-citoyens (droits, impôts), un schéma des institutions (suffètes, Sénat, assemblée du peuple, tribunal des Cent) ou une carte des routes commerciales à compléter.",
+    "themeGroup": "Expansion et institutions de Carthage"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Histoire-Géographie"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

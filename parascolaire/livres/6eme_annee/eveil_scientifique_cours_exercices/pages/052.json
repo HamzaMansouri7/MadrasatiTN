@@ -1,0 +1,419 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 52,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "Corrigés d'« إيقاظ علمي – السنة السادسة – الصفحة » nos 51 à 57 : l'alimentation (aliments de croissance, d'énergie et de protection, pyramide alimentaire, repas équilibré, besoins alimentaires)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "51",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 51 :",
+      "body": "Tableau (colonnes) : أغذية حيوانية | مشتقات الحليب | بقول جافة | مشتقات الحبوب | خضروات | فواكه.\nأغذية حيوانية : السمك، البيض، اللحم، الحليب.\nمشتقات الحليب : الجبن، الياغورت، اللبن، الزبدة.\nبقول جافة : اللوبيا، الفول، الجلبان، [illisible].\nمشتقات الحبوب : الفارينة، السميد، المقرونة، الدقيق.\nخضروات : الجزر، الطماطم، البسباس، القنارية.\nفواكه : البندق، اللوز، الفستق، الجوز.",
+      "figureDesc": "Tableau à 6 colonnes classant des aliments : produits animaux, dérivés du lait, légumes secs, dérivés des céréales, légumes, fruits (4 aliments par colonne).",
+      "answer": "Le contenu du tableau est lui-même le corrigé (classement des aliments par groupe).",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p052_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "52",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 52 :",
+      "body": "1) يتمثل دور البناء في نمو الجسم وتجديد ما يتلف من الأنسجة فمثلا عندما تجرح اليد يتمزق الجلد وينزف الدم، فإذا عولج الجرح التأم وشفي بعدها ما يدل على أن الجلد ينمو. وكذلك نلاحظ أن أظافر الإنسان وشعره تنمو باستمرار مما يستوجب قصها كلما تجاوز طولها حدا معينا.\nب) تجعل الأغذية الطاقية الجسم قادرا على الحركة والنشاط حتى في حالات الراحة التامة، لأن الجسم يحتاج إلى الطاقة والحرارة للعمليات المستمرة التي تحدث فيها كحركة القلب والتنفس، وحفظ حرارة الجسم.\nج) أغذية بانية : بقول جافة، ألبان، بيض، عدس، لحوم.\nأغذية طاقية : زبدة، بطاطا، دقيق، زيت، خبز، فستق.\nأغذية واقية : برتقال، خس، قنارية، فلفل، بسباس، مندرين، طماطم.",
+      "figureDesc": "",
+      "answer": "Aliments bâtisseurs : légumes secs, laitages, œufs, lentilles, viandes. Aliments énergétiques : beurre, pommes de terre, farine, huile, pain, pistaches. Aliments protecteurs : orange, laitue, artichaut, piment, etc.",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p052_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "53",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 53 :",
+      "body": "للاستجابة لحاجات جسمنا يجب تحتوي مأكولاتنا على أطعمة النمو، أطعمة الطاقة وأطعمة الوقاية.\nالخبز والشكولاطة يقرن النشاط فقط.\nضع علامة (×) أمام : أ ـ ج ـ د ـ هـ.\n1) الغذاء الذي يمد الجسم بأكثر طاقة : قطعة المرطبات.\nب) استنتج أن هذه الأغذية السكرية والدهنية هي التي يحرقها الجسم لتوليد الطاقة والحرارة، وأنه كلما ازداد مجهود الإنسان كما هو الحال في المشي والعدو ازدادت حاجة الجسم إلى الطاقة.",
+      "figureDesc": "",
+      "answer": "قطعة المرطبات ; علامة (×) أمام : أ، ج، د، هـ",
+      "topicId": "sci-6-u3",
+      "formatGuess": "qcm",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p052_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "54",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 54 :",
+      "body": "ب) الوجبة الغذائية المتزنة هي الوجبة التي تحتوي على طعام واحد على الأقل من كل مجموعة من مجموعات الهرم الغذائي الست.\nالسمك يحتوي على قيمة زلالية تعادل اللحم : صواب.\nتستطيع أن تعوض 100 غرام من اللحم ببيضة واحدة : خطأ.\nالقيمة الغذائية للسمك الصغير مثل السمك الكبير : صواب.",
+      "figureDesc": "",
+      "answer": "السمك يحتوي على قيمة زلالية تعادل اللحم : صواب ; تعويض 100 غرام لحم ببيضة واحدة : خطأ ; القيمة الغذائية للسمك الصغير مثل الكبير : صواب",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p052_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "55",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 55 :",
+      "body": "1) يحترق الوقود في السيارات ليولد المحرك الطاقة الميكانيكية التي تحرك السيارة.\nب) للعمليات المستمرة التي تحدث فيه كحركة القلب والتنفس وحفظ حرارة الجسم.\nكلما ازداد مجهود الإنسان ازدادت حاجة الجسم إلى الطاقة : صواب.\nالفيتامينات تستعمل جميعها لتوليد الطاقة والحرارة اللازمة للجسم : خطأ.\nالطعام بالنسبة للإنسان كالوقود بالنسبة للسيارة : صواب.\nالشيخ يحتاج إلى وجبة غذائية تتوفر فيها الخضروات.\nالرياضي يحتاج إلى وجبة غذائية تتوفر فيها النشويات والسكريات.\nالطفل يحتاج إلى وجبة غذائية تتوفر فيها الزلاليات (البروتينات).",
+      "figureDesc": "",
+      "answer": "صواب / خطأ كما هو مبين في النص",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p052_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "56",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 56 :",
+      "body": "200 غرام من السمك تعوض 100 غرام من لحم الضأن : خطأ.\nلحم الدجاج يوفر أكثر قيمة حرارية من لحم الضأن : خطأ.\n100 غرام من لحم الدجاج تعوض 200 غرام من السمك : صواب.\nملاحظة : كل غرام من المواد الدسمة المحترقة في الجسم يعطي 9 حريرات.\n1) الذي يحتاج طعاما أكثر هو الطفل الذي عمره 15 سنة.\nب) الغذاء الذي يأكله طفل عمره سنتين على قدر ما يأكل طفل عمره 4 سنوات : خطأ.\nتحتاج المرأة المرضعة يوميا إلى نفس القيمة الغذائية التي تحتاجها المرأة الحامل : صواب.\nتختلف الوجبة الغذائية باختلاف السن : صواب.\nتختلف الوجبة الغذائية باختلاف الجنس : صواب.\nملاحظة : تحتاج المرأة الحامل يوميا إلى غرام ونصف من الزلاليات لكل كيلو غرام من وزن جسمها في حين يحتاج الإنسان المكتمل نموه يوميا إلى غرام واحد من الزلاليات لكل كيلو غرام من وزن جسمه.",
+      "figureDesc": "",
+      "answer": "خطأ، خطأ، صواب ; الطفل الذي عمره 15 سنة ; خطأ، صواب، صواب، صواب",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p052_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "57",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 57 :",
+      "body": "التغذية المتنوعة والمتزنة وبكميات كافية تجنبنا سوء التغذية ومشاكلها.\nهذه المشاكل هي : شحوب الوجه، تأخر في نمو الجسم، الخمول وقلة النشاط، تشويه الهيكل العظمي، ضعف الذاكرة، تآكل اللثة وعدم القدرة على مقاومة الأمراض.",
+      "figureDesc": "",
+      "answer": "التغذية المتنوعة والمتزنة وبكميات كافية تجنبنا سوء التغذية ومشاكلها.",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p052_i7"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "sci-6-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u6",
+    "confidence": 0.39
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page corrige des exercices d'éveil scientifique sur l'alimentation (aliments de croissance, d'énergie et de protection, pyramide alimentaire, repas équilibré, besoins énergétiques), ce qui correspond à la partie « nutrition équilibrée » de l'Unité 3 (système circulatoire, nutrition, immunité et microbes).",
+  "linkFlags": [
+    "low_ocr_confidence"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "L'alimentation équilibrée",
+    "skill": "Classer les aliments selon leur rôle (croissance, énergie, protection) et composer un repas équilibré selon la pyramide alimentaire.",
+    "pageType": "correction",
+    "formats": [
+      "vrai_faux",
+      "schema_tableau",
+      "qcm",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "aliments de croissance",
+      "aliments d'énergie",
+      "pyramide alimentaire",
+      "repas équilibré",
+      "besoins énergétiques",
+      "malnutrition"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : tableaux de classement des aliments par groupe, séries d'affirmations vrai/faux sur les équivalences nutritionnelles (viande, poisson, œuf), analogies concrètes (carburant de voiture et énergie du corps, cicatrisation et croissance des ongles) et liste des signes de malnutrition.",
+    "themeGroup": "Les groupes d'aliments et l'alimentation équilibrée"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "[56] 'لحم الفاجاج' est faux; l'image donne 'لحم الدجاج' (100 غرام من لحم الدجاج تعوض 200 غرام من السمك)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[53] 'الغذاء الذي يمد الجسم بأكثر طاقة : قطعة المرطبات' : la phrase est correcte mais la sous-question est marquée '1)' alors que l'image montre un marqueur de puce; de même 'أ)' au début de [52] est inséré à la place de '1)' (l'image affiche '1)')."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "[52] l'en-tête '1) 2) ب) ج)' est ajouté dans le titre et ne figure pas dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "[51] le titre '(تصنيف الأغذية حسب أصلها)' est inventé; il n'est pas dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[53] 'يقرن النشاط فقط' : l'image donne 'يقرن' ≈ 'بقرأن/يقترن' ambigu; 'ضع علامة' correct. 'أن تحتوي مأكولاتنا' : le mot 'أن' ne figure pas dans l'image ('يجب تحتوي' / 'يجب أن' douteux)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[55] b) 'للعمليات المستمرة التي تحدث فيه' : correct selon l'image, mais 'ب) ... فيه' fait suite à une phrase de a) sans lien; le texte du corrigé est partiel."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[52] 'قنارية' (image: 'قنارية/فنارية'), 'بسباس', 'مندرين' : lecture incertaine, 'خس' correct; 'عدس' correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "[51] le contenu du tableau n'est pas transcrit (aliments : السمك، البيض، اللحم، الحليب ; الجبن، الياغورت، اللبن، الزبدة ; اللوبيا، الفول، الجلبان، الحمص ; الفارينة، السميد، المعكرونة، الدقيق ; الجزر، الطماطم، البسباس، القنارية ; البنقش، التفاح، الليمون...) alors que lisible en partie."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "[54] le premier point 'ب) الوجبة...' est présent mais la ligne 'تستطيع أن تعوض 100 غرام من اللحم ببيضة واحدة' est correcte; en revanche la ligne [55] 'ب)' de l'ordre est mal placée: la page 55 commence par '1)' (أ) et la mention '[54]' de la page apparaît dans l'image en bas de la colonne droite après [53]; ordre OK mais [56] 'صواب' de 'تحتاج المرأة المرضعة' correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel visible dans l'image (ex. السَّادسة، الصَّفحة، الطَّاقة، السَّيَّارة) est absent partout dans la transcription."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[56] 'لحم الفاجاج' est faux : l'image donne 'لحم الدجاج'."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "[51] Le titre '(تصنيف الأغذية حسب أصلها)' n'est pas dans l'image. L'en-tête est seulement 'إيقاظ علمي السنة السادسة الصفحة 51 :'."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "[52] L'ajout '1) 2) ب) ج)' dans le titre n'est pas dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[52] Le marqueur 'أ)' est faux, l'image affiche '1)'. De plus 'فمثلا عندما تجرح اليد' est transcrit 'مثلا' sans le 'ف'."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[54] 'المتوازنة' est faux : l'image donne 'الوجبة الغذائية المتزنة'."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "[57] Le dernier élément de la liste est remplacé par '...' alors que l'image montre 'تآكل اللثة'."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[53] 'أن' est ajouté dans 'يجب أن تحتوي' alors que l'image donne 'يجب تحتوي'. 'أستنتج' est écrit 'استنتج' dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "[51] Le contenu du tableau est mal transcrit et en partie inventé. Il y a trois colonnes erronées : dérivés des céréales (القاروصة, المشروبة), légumes (الكبوس) et fruits (البلح، الموز، التين). L'image donne pour les fruits : البندق، اللوز، الفستق، الجوز. Le corps indique à tort que le scan est de faible qualité et ne contient pas le tableau. Le tableau est lisible et doit être transcrit."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "51",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 51 :",
+      "body": "Tableau (colonnes) : أغذية حيوانية | مشتقات الحليب | بقول جافة | مشتقات الحبوب | خضروات | فواكه.\nأغذية حيوانية : السمك، البيض، اللحم، الحليب.\nمشتقات الحليب : الجبن، الياغورت، اللبن، الزبدة.\nبقول جافة : اللوبيا، الفول، الجلبان، [illisible].\nمشتقات الحبوب : الفارينة، السميد، المقرونة، الدقيق.\nخضروات : الجزر، الطماطم، البسباس، القنارية.\nفواكه : البندق، اللوز، الفستق، الجوز.",
+      "figureDesc": "Tableau à 6 colonnes classant des aliments : produits animaux, dérivés du lait, légumes secs, dérivés des céréales, légumes, fruits (4 aliments par colonne).",
+      "answer": "Le contenu du tableau est lui-même le corrigé (classement des aliments par groupe).",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "52",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 52 :",
+      "body": "1) يتمثل دور البناء في نمو الجسم وتجديد ما يتلف من الأنسجة فمثلا عندما تجرح اليد يتمزق الجلد وينزف الدم، فإذا عولج الجرح التأم وشفي بعدها ما يدل على أن الجلد ينمو. وكذلك نلاحظ أن أظافر الإنسان وشعره تنمو باستمرار مما يستوجب قصها كلما تجاوز طولها حدا معينا.\nب) تجعل الأغذية الطاقية الجسم قادرا على الحركة والنشاط حتى في حالات الراحة التامة، لأن الجسم يحتاج إلى الطاقة والحرارة للعمليات المستمرة التي تحدث فيها كحركة القلب والتنفس، وحفظ حرارة الجسم.\nج) أغذية بانية : بقول جافة، ألبان، بيض، عدس، لحوم.\nأغذية طاقية : زبدة، بطاطا، دقيق، زيت، خبز، فستق.\nأغذية واقية : برتقال، خس، قنارية، فلفل، بسباس، مندرين، طماطم.",
+      "figureDesc": "",
+      "answer": "Aliments bâtisseurs : légumes secs, laitages, œufs, lentilles, viandes. Aliments énergétiques : beurre, pommes de terre, farine, huile, pain, pistaches. Aliments protecteurs : orange, laitue, artichaut, piment, etc.",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "53",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 53 :",
+      "body": "للاستجابة لحاجات جسمنا يجب تحتوي مأكولاتنا على أطعمة النمو، أطعمة الطاقة وأطعمة الوقاية.\nالخبز والشكولاطة يقرن النشاط فقط.\nضع علامة (×) أمام : أ ـ ج ـ د ـ هـ.\n1) الغذاء الذي يمد الجسم بأكثر طاقة : قطعة المرطبات.\nب) استنتج أن هذه الأغذية السكرية والدهنية هي التي يحرقها الجسم لتوليد الطاقة والحرارة، وأنه كلما ازداد مجهود الإنسان كما هو الحال في المشي والعدو ازدادت حاجة الجسم إلى الطاقة.",
+      "figureDesc": "",
+      "answer": "قطعة المرطبات ; علامة (×) أمام : أ، ج، د، هـ",
+      "topicId": "sci-6-u3",
+      "formatGuess": "qcm",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "54",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 54 :",
+      "body": "ب) الوجبة الغذائية المتزنة هي الوجبة التي تحتوي على طعام واحد على الأقل من كل مجموعة من مجموعات الهرم الغذائي الست.\nالسمك يحتوي على قيمة زلالية تعادل اللحم : صواب.\nتستطيع أن تعوض 100 غرام من اللحم ببيضة واحدة : خطأ.\nالقيمة الغذائية للسمك الصغير مثل السمك الكبير : صواب.",
+      "figureDesc": "",
+      "answer": "السمك يحتوي على قيمة زلالية تعادل اللحم : صواب ; تعويض 100 غرام لحم ببيضة واحدة : خطأ ; القيمة الغذائية للسمك الصغير مثل الكبير : صواب",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "55",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 55 :",
+      "body": "1) يحترق الوقود في السيارات ليولد المحرك الطاقة الميكانيكية التي تحرك السيارة.\nب) للعمليات المستمرة التي تحدث فيه كحركة القلب والتنفس وحفظ حرارة الجسم.\nكلما ازداد مجهود الإنسان ازدادت حاجة الجسم إلى الطاقة : صواب.\nالفيتامينات تستعمل جميعها لتوليد الطاقة والحرارة اللازمة للجسم : خطأ.\nالطعام بالنسبة للإنسان كالوقود بالنسبة للسيارة : صواب.\nالشيخ يحتاج إلى وجبة غذائية تتوفر فيها الخضروات.\nالرياضي يحتاج إلى وجبة غذائية تتوفر فيها النشويات والسكريات.\nالطفل يحتاج إلى وجبة غذائية تتوفر فيها الزلاليات (البروتينات).",
+      "figureDesc": "",
+      "answer": "صواب / خطأ كما هو مبين في النص",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "56",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 56 :",
+      "body": "200 غرام من السمك تعوض 100 غرام من لحم الضأن : خطأ.\nلحم الدجاج يوفر أكثر قيمة حرارية من لحم الضأن : خطأ.\n100 غرام من لحم الدجاج تعوض 200 غرام من السمك : صواب.\nملاحظة : كل غرام من المواد الدسمة المحترقة في الجسم يعطي 9 حريرات.\n1) الذي يحتاج طعاما أكثر هو الطفل الذي عمره 15 سنة.\nب) الغذاء الذي يأكله طفل عمره سنتين على قدر ما يأكل طفل عمره 4 سنوات : خطأ.\nتحتاج المرأة المرضعة يوميا إلى نفس القيمة الغذائية التي تحتاجها المرأة الحامل : صواب.\nتختلف الوجبة الغذائية باختلاف السن : صواب.\nتختلف الوجبة الغذائية باختلاف الجنس : صواب.\nملاحظة : تحتاج المرأة الحامل يوميا إلى غرام ونصف من الزلاليات لكل كيلو غرام من وزن جسمها في حين يحتاج الإنسان المكتمل نموه يوميا إلى غرام واحد من الزلاليات لكل كيلو غرام من وزن جسمه.",
+      "figureDesc": "",
+      "answer": "خطأ، خطأ، صواب ; الطفل الذي عمره 15 سنة ; خطأ، صواب، صواب، صواب",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "57",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 57 :",
+      "body": "التغذية المتنوعة والمتزنة وبكميات كافية تجنبنا سوء التغذية ومشاكلها.\nهذه المشاكل هي : شحوب الوجه، تأخر في نمو الجسم، الخمول وقلة النشاط، تشويه الهيكل العظمي، ضعف الذاكرة، تآكل اللثة وعدم القدرة على مقاومة الأمراض.",
+      "figureDesc": "",
+      "answer": "التغذية المتنوعة والمتزنة وبكميات كافية تجنبنا سوء التغذية ومشاكلها.",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "51",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 51 : (تصنيف الأغذية حسب أصلها)",
+      "body": "Tableau de classement des aliments selon leurs groupes (la lecture est partielle car le scan est de faible qualité). Colonnes : أغذية حيوانية / مشتقات الحليب / بقول جافة / مشتقات الحبوب / خضروات / فواكه.",
+      "figureDesc": "Tableau à 6 colonnes classant des aliments par groupe : produits animaux (السمك، البيض، اللحم، الحليب), dérivés du lait (الجبن، الياغورت، اللبن، الزبدة), légumes secs (اللوبيا، الفول، الجلبان، العدس), dérivés des céréales (القاروصة، السميد، المشروبة...), légumes (الكبوس، الطماطم، البسباس...), fruits (البلح، الموز، التين...).",
+      "answer": "Le contenu du tableau est lui-même le corrigé (classement des aliments par groupe).",
+      "confidence": 0.5,
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "52",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 52 : 1) 2) ب) ج)",
+      "body": "أ) يتمثل دور البناء في نمو الجسم وتجديد ما يتلف من الأنسجة. مثلا عندما تجرح اليد يتمزق الجلد وينزف الدم، فإذا عولج الجرح التأم وشفي بعدها، ما يدل على أن الجلد ينمو. وكذلك نلاحظ أن أظافر الإنسان وشعره تنمو باستمرار مما يستوجب قصها كلما تجاوز طولها حدا معينا.\nب) تجعل الأغذية الطاقية الجسم قادرا على الحركة والنشاط حتى في حالات الراحة التامة، لأن الجسم يحتاج إلى الطاقة والحرارة للعمليات المستمرة التي تحدث فيها كحركة القلب والتنفس، وحفظ حرارة الجسم.\nج) أغذية بانية : بقول جافة، ألبان، بيض، عدس، لحوم.\nأغذية طاقية : زبدة، بطاطا، دقيق، زيت، خبز، فستق.\nأغذية واقية : برتقال، خس، قنارية، فلفل، بسباس، مندرين، طماطم.",
+      "figureDesc": "",
+      "answer": "Aliments bâtisseurs : légumes secs, laitages, œufs, lentilles, viandes. Aliments énergétiques : beurre, pommes de terre, farine, huile, pain, pistaches. Aliments protecteurs : orange, laitue, artichaut, piment, etc.",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "53",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 53 :",
+      "body": "للاستجابة لحاجات جسمنا يجب أن تحتوي مأكولاتنا على أطعمة النمو، أطعمة الطاقة وأطعمة الوقاية.\nالخبز والشكولاطة يقرن النشاط فقط.\nضع علامة (×) أمام : أ ـ ج ـ د ـ هـ.\n1) الغذاء الذي يمد الجسم بأكثر طاقة : قطعة المرطبات.\nب) أستنتج أن هذه الأغذية السكرية والدهنية هي التي يحرقها الجسم لتوليد الطاقة والحرارة، وأنه كلما ازداد مجهود الإنسان كما هو الحال في المشي والعدو ازدادت حاجة الجسم إلى الطاقة.",
+      "figureDesc": "",
+      "answer": "قطعة المرطبات ; علامة (×) أمام : أ، ج، د، هـ",
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "qcm",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "54",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 54 :",
+      "body": "ب) الوجبة الغذائية المتوازنة هي الوجبة التي تحتوي على طعام واحد على الأقل من كل مجموعة من مجموعات الهرم الغذائي الست.\nالسمك يحتوي على قيمة زلالية تعادل اللحم : صواب.\nتستطيع أن تعوض 100 غرام من اللحم ببيضة واحدة : خطأ.\nالقيمة الغذائية للسمك الصغير مثل السمك الكبير : صواب.",
+      "figureDesc": "",
+      "answer": "السمك يحتوي على قيمة زلالية تعادل اللحم : صواب ; تعويض 100 غرام لحم ببيضة واحدة : خطأ ; القيمة الغذائية للسمك الصغير مثل الكبير : صواب",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "55",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 55 :",
+      "body": "أ) يحترق الوقود في السيارات ليولد المحرك الطاقة الميكانيكية التي تحرك السيارة.\nب) للعمليات المستمرة التي تحدث فيه كحركة القلب والتنفس وحفظ حرارة الجسم.\nكلما ازداد مجهود الإنسان ازدادت حاجة الجسم إلى الطاقة : صواب.\nالفيتامينات تستعمل جميعها لتوليد الطاقة والحرارة اللازمة للجسم : خطأ.\nالطعام بالنسبة للإنسان كالوقود بالنسبة للسيارة : صواب.\nالشيخ يحتاج إلى وجبة غذائية تتوفر فيها الخضروات.\nالرياضي يحتاج إلى وجبة غذائية تتوفر فيها النشويات والسكريات.\nالطفل يحتاج إلى وجبة غذائية تتوفر فيها الزلاليات (البروتينات).",
+      "figureDesc": "",
+      "answer": "صواب / خطأ كما هو مبين في النص",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i5",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "56",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 56 :",
+      "body": "200 غرام من السمك تعوض 100 غرام من لحم الضأن : خطأ.\nلحم الدجاج يوفر أكثر قيمة حرارية من لحم الضأن : خطأ.\n100 غرام من لحم الفاجاج تعوض 200 غرام من السمك : صواب.\nملاحظة : كل غرام من المواد الدسمة المحترقة في الجسم يعطي 9 حريرات.\n1) الذي يحتاج طعاما أكثر هو الطفل الذي عمره 15 سنة.\nب) الغذاء الذي يأكله طفل عمره سنتين على قدر ما يأكل طفل عمره 4 سنوات : خطأ.\nتحتاج المرأة المرضعة يوميا إلى نفس القيمة الغذائية التي تحتاجها المرأة الحامل : صواب.\nتختلف الوجبة الغذائية باختلاف السن : صواب.\nتختلف الوجبة الغذائية باختلاف الجنس : صواب.\nملاحظة : تحتاج المرأة الحامل يوميا إلى غرام ونصف من الزلاليات لكل كيلو غرام من وزن جسمها في حين يحتاج الإنسان المكتمل نموه يوميا إلى غرام واحد من الزلاليات لكل كيلو غرام من وزن جسمه.",
+      "figureDesc": "",
+      "answer": "خطأ، خطأ، صواب ; الطفل الذي عمره 15 سنة ; خطأ، صواب، صواب، صواب",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i6",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "57",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 57 :",
+      "body": "التغذية المتنوعة والمتزنة وبكميات كافية تجنبنا سوء التغذية ومشاكلها.\nهذه المشاكل هي : شحوب الوجه، تأخر في نمو الجسم، الخمول وقلة النشاط، تشويه الهيكل العظمي، ضعف الذاكرة، ... وعدم القدرة على مقاومة الأمراض.",
+      "figureDesc": "",
+      "answer": "التغذية المتنوعة والمتزنة وبكميات كافية تجنبنا سوء التغذية ومشاكلها.",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p052_i7",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

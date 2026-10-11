@@ -1,0 +1,116 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 48,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الرياضيات: الأعداد العشرية (القراءة والكتابة) وحلّ مسائل القياس (السعات والمساحات)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4-ب",
+      "instruction": "إِذَا كَانَتِ الْمَسَافَةُ الْمُقَرَّرَةُ لِلسِّبَاقِ 5 كم، كَمْ بَقِيَ لِهَذَا الْعَدَّاءِ لِيُنْهِيَ السِّبَاقَ ؟",
+      "body": "إِذَا كَانَتِ الْمَسَافَةُ الْمُقَرَّرَةُ لِلسِّبَاقِ 5 كم، كَمْ بَقِيَ لِهَذَا الْعَدَّاءِ لِيُنْهِيَ السِّبَاقَ ؟ (سطر منقط لكتابة الإجابة). تتمة لتمرين 4 الذي يوجد نصه في الصفحة السابقة.",
+      "figureDesc": "سطر منقط للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p048_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَكْمِلْ بِالْأَرْقَامِ أَوْ بِاللَّفْظِ.",
+      "body": "- خَمْسَةٌ وَسَبْعُونَ فَاصِلٌ تِسْعَةٌ.\n- مِائَتَانِ وَثَمَانُونَ فَاصِلٌ صِفْرٌ أَرْبَعَةٌ.\n- 104,15\n- 2000,96",
+      "figureDesc": "جدول من عمودين: عمود «العدد باللفظ» وعمود «العدد بالأرقام» (عنوانا العمودين غير واضحين في الصورة). الصف الأول: خمسة وسبعون فاصل تسعة ← المطلوب كتابته بالأرقام. الصف الثاني: العدد 104,15 ← المطلوب كتابته باللفظ. الصف الثالث: مائتان وثمانون فاصل صفر أربعة ← المطلوب كتابته بالأرقام. الصف الرابع: العدد 2000,96 ← المطلوب كتابته باللفظ.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p048_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "احْسُبْ مَا تُعْطِيهِ هَذِهِ الْبَقَرَةُ فِي الْيَوْمِ بِالصل ثُمَّ بِالدسل ثُمَّ بِاللِّتْرِ.",
+      "body": "لِفَلَّاحٍ بَقَرَةٌ تُعْطِي 20 ل وَ 5 دسل مِنَ الْحَلِيبِ فِي الصَّبَاحِ وَ 140 دسل وَ 5 صل فِي الْمَسَاءِ.\n* احْسُبْ مَا تُعْطِيهِ هَذِهِ الْبَقَرَةُ فِي الْيَوْمِ بِالصل ثُمَّ بِالدسل ثُمَّ بِاللِّتْرِ.",
+      "figureDesc": "أربعة أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p048_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7-أ",
+      "instruction": "احْسُبْ مِسَاحَةَ الْأَرْضِ بِالصآ ثُمَّ بِالهآ",
+      "body": "لِجَارِنَا أَرْضٌ بُعْدَاهَا 40 م وَ 90 م يُرِيدُ أَنْ يَبْنِيَ عَلَيْهَا 3 عِمَارَاتٍ تَحْتَلُّ الْعِمَارَةُ الْوَاحِدَةُ 300 صآ.\nأ- احْسُبْ مِسَاحَةَ الْأَرْضِ بِالصآ ثُمَّ بِالهآ",
+      "figureDesc": "سطر منقط للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p048_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7-ب",
+      "instruction": "مَاهُوَ قَيْسُ الْمِسَاحَةِ الْبَاقِيَةِ دُونَ بِنَاءٍ بِالصآ ثُمَّ بِالآرِ ثُمَّ بِالهآ.",
+      "body": "ب- مَاهُوَ قَيْسُ الْمِسَاحَةِ الْبَاقِيَةِ دُونَ بِنَاءٍ بِالصآ ثُمَّ بِالآرِ ثُمَّ بِالهآ.",
+      "figureDesc": "ستة أسطر منقطة للإجابة، رقم الصفحة 49 في أسفل الصفحة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p048_i5",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p6",
+    "confidence": 0.41
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la lecture et l'écriture des nombres décimaux, des mesures de capacité (cl, dl, l) et des aires (ca, a, ha); les décimaux correspondent à la Période 2, mais les mesures agraires relèvent de la Période 1, ce qui rend la page à cheval sur deux chapitres.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres décimaux et mesures",
+    "skill": "Lire et écrire des nombres décimaux, convertir des mesures de capacité et d'aire, et résoudre des problèmes de mesure.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "capacités",
+      "aires",
+      "conversions",
+      "problèmes de mesure",
+      "lecture et écriture de nombres"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des situations concrètes (production de lait d'une vache, terrain à bâtir avec des immeubles, reste d'une course) servent à travailler les conversions d'unités de capacité et d'aire (ares, hectares). L'exercice alternant écriture en chiffres et en lettres des décimaux est aussi réutilisable.",
+    "themeGroup": "Nombres décimaux : notions et comparaison"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

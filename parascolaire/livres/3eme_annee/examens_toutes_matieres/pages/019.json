@@ -1,0 +1,150 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 19,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إسناد الأفعال في الماضي إلى الضمائر، إنتاج فقرة مختصرة بأفعال ماضية، وإملاء (الإملاء المملاة: فقرة عن الفراغ/الوقت)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُسْنِدُ الْأَفْعَالَ فِي الْمَاضِي إِلَى الضَّمَائِرِ الْمُقْتَرَحَةِ.",
+      "body": "• سَاعَدَ الشَّيْخُ الْمُسِنَّ. أَنْتُمَا ..................\n• قَطَفَ زَهْرَةً فَوَّاحَةً. نَحْنُ ..................\n• بَلَغَ السَّادِسَةَ مِنَ الْعُمُرِ. أَنْتُمْ ..................",
+      "figureDesc": "Trois lignes pointillées pour écrire les réponses, une par phrase.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p019_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُحَوِّلُ الْأَفْكَارَ التَّالِيَةَ إِلَى فِقْرَةٍ مُخْتَصَرَةٍ مُسْتَعْمِلًا أَفْعَالًا فِي الْمَاضِي.",
+      "body": "إِنْجَازُ الْأَطْفَالِ لِلْأَنْشِطَةِ الْمُبَرْمَجَةِ - تَوْزِيعُ الْأَطْفَالِ لِلْأَدْوَارِ بَيْنَهُمْ - إِعْدَادُ وَسَائِلِ الْعَمَلِ - تَخْطِيطُ الْأَطْفَالِ لِمَشْرُوعٍ تَرْبَوِيٍّ.",
+      "figureDesc": "Encadré gris arrondi contenant les idées à transformer; en dessous 6 lignes pointillées pour rédiger la production. Filigrane MOURAJAA.COM.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p019_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْمِلُ فَرَاغَاتِ الْفِقْرَةِ بِالْمُفْرَدَاتِ الْمُمْلَاةِ عَلَيَّ ثُمَّ أَتَثَبَّتُ مِنْ صِحَّةِ رَسْمِهَا بِوَثِيقَةِ الْإِصْلَاحِ (ص 4).",
+      "body": "(إِمْلَاءٌ) ................. بِهَا ................. مَعَارِفَكَ وَ................. بِأَخْلَاقِكَ ................. فِيهَا ................. وَ................. إِذَا ................. لَهَا جُزْءًا مِنَ ................. الْفَرَاغِ.",
+      "figureDesc": "Titre « إِمْلَاءٌ » dans un cartouche arrondi gris; texte à trous avec points de suspension.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p019_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "Début d'un tableau coupé en bas de page (en-tête partiellement visible, ex. « الْفِعْلُ لَاقُ... »).",
+      "figureDesc": "Tableau d'attribution des nombres/conjugaison, tronqué, illisible.",
+      "answer": null,
+      "confidence": 0.4,
+      "id": "examens_toutes_matieres_p019_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u1",
+    "confidence": 0.31
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est de la langue arabe (conjugaison du passé avec pronoms, production d'un paragraphe, dictée, tableau d'attribution), mais ces exercices de langue ne correspondent clairement à aucune des unités officielles (centrées sur personnages, temps, espace, etc.), donc aucun chapitre n'est identifiable avec certitude.",
+  "linkFlags": [
+    "low_ocr_confidence",
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison du passé et pronoms",
+    "skill": "Conjuguer des verbes au passé selon les pronoms, rédiger un court paragraphe au passé et orthographier des mots dictés.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "dictee",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "conjugaison du passé",
+      "pronoms personnels",
+      "production de paragraphe",
+      "dictée à trous",
+      "orthographe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : conjuguer des verbes à partir de phrases courtes selon des pronoms donnés, transformer une liste d'idées en paragraphe au passé (projet éducatif d'enfants), et dictée à trous sur le thème du temps libre avec autocorrection grâce à un document de correction.",
+    "themeGroup": "Conjugaison : le passé et les pronoms"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 6 : le tiret après « الْعَمَلِ » est présent dans l'image, mais surtout « إِعْدَادُ وَسَائِلِ الْعَمَلِ » est transcrit sans « الْعَمَلِ » correctement lié ; la transcription écrit « إِعْدَادُ وَسَائِلِ الْعَمَلِ », ce qui est correct, donc aucune erreur de mot ici."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5 : l'image montre « سَاعَدَ الشَّيْخُ الْمُسِنَّ » avec « الْمُسِنَّ » ; correspond bien. Pas de faute."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَتَثَبَّتُ » : l'image porte « أَتَثَبَّتُ » ; correct, mais « أُسْنِدُ » et « أُحَوِّلُ » sont bien vocalisés, ok."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans la dictée, l'ordre des fragments à trous est celui de la lecture RTL mais la ligne 1 de l'image se termine par « بِأَخْلَاقِكَ » puis la ligne 2 commence par « فِيهَا » ; ordre conforme."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les mots « الْفَرَاغِ. » sont sur une 3e ligne isolée dans l'image ; la transcription les rattache à « مِنَ ... » : acceptable."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane « MOURAJAA.COM » et les numéros « ج2 » / « 5 - » ne sont pas transcrits ; le numéro de l'exercice 6 est bien noté."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Pour le tableau, la transcription propose « الْفِعْلُ لَاقُ... » ; le texte réellement visible est trop partiel (« الْأَفْعَالُ ؟ »), formulation incertaine."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

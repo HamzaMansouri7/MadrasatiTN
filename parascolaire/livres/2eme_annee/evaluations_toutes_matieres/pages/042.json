@@ -1,0 +1,177 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 42,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التقييم: حساب المبالغ المالية بالمليم (القطع النقدية) وحل وضعية مشكلة (شراء قطعة شكولاطة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "التَّعْلِيمَةُ 9 : - أُرَتِّبُ الْأَثْمَانَ حَسَبَ اخْتِيَارِي وَأَضَعُ الْعَلَامَةَ :",
+      "body": "سطر منقّط لكتابة الترتيب (معيار التقييم: معـ2أ، التنقيط: 0,5)",
+      "figureDesc": "سطر منقّط فارغ ومربع صغير للعلامة بجانب معـ2أ",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p042_i1",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 6",
+      "instruction": "",
+      "body": "أَثْنَاءَ الرِّحْلَةِ تَغَدَّيْنَا بِأَحَدِ الْمَطَاعِمِ، وَبَعْدَ أَنْ نَقَدَتْ أُمِّي صَاحِبَهُ الْمَالَ، أَعَادَ إِلَيْهَا الْقِطَعَ النَّقْدِيَّةَ التَّالِيَةَ :",
+      "figureDesc": "إطار يحتوي سبع قطع نقدية تونسية: 5 مي، 20 مي، 50 مي، 200 مي، 50 مي، 100 مي، 50 مي",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p042_i2",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "التَّعْلِيمَةُ 10 : - أَحْسُبُ الْمَبْلَغَ الَّذِي أَعَادَهُ صَاحِبُ الْمَطْعَمِ إِلَى أُمِّي.",
+      "body": "الْمَبْلَغُ الَّذِي أَعَادَهُ صَاحِبُ الْمَطْعَمِ إِلَى أُمِّي هُوَ ................................ مي. (معيار: معـ3، التنقيط: 1)",
+      "figureDesc": "مربع صغير للعلامة بجانب معـ3",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p042_i3",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 7",
+      "instruction": "",
+      "body": "- أَعْطَتْنِي أُمِّي مِنْهُ 370 مي اشْتَرَيْتُ بِهَا قِطْعَةَ شُكُولَاطَةٍ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p042_i4",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "- التَّعْلِيمَةُ 11 : - أُكَمِّلُ بِالْقِطَعِ النَّقْدِيَّةِ الْمُنَاسِبَةِ لِأَتَحَصَّلَ عَلَى 370 مي.",
+      "body": "(معيار: معـ3، التنقيط: 1)",
+      "figureDesc": "إطار فيه قطع نقدية: 100 مي، 20 مي، 50 مي، ودائرتان فارغتان لإكمالهما",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p042_i5",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "التَّعْلِيمَةُ 12 : - أَحْسُبُ الْمَبْلَغَ الَّذِي تَبَقَّى لِلْأُمِّ بَعْدَ شِرَاءِ قِطْعَةِ الشُّكُولَاطَةِ.",
+      "body": "الْمَبْلَغُ الَّذِي تَبَقَّى لِلْأُمِّ بَعْدَ شِرَاءِ قِطْعَةِ الشُّكُولَاطَةِ. الْعَمَلِيَّةُ : ................................ (معيار: معـ2ج، التنقيط: 0,5)",
+      "figureDesc": "مربع كبير فارغ لإجراء العملية الحسابية ومربع صغير للعلامة بجانب معـ2ج",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p042_i6",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-2-p3",
+  "topicTitle": "Période 3 : Nombres jusqu'à 500, soustraction et monnaie (Millimes/Dinar)",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p3",
+    "confidence": 0.49
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur le calcul de sommes en millimes avec des pièces de monnaie, le rangement de prix et un achat avec calcul du reste (soustraction), ce qui correspond à la Période 3 (nombres jusqu'à 500, soustraction et monnaie).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie : calcul de sommes en millimes",
+    "skill": "Calculer et composer des montants en millimes à partir de pièces de monnaie, puis résoudre une situation-problème de reste après un achat.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "monnaie",
+      "millimes",
+      "pièces",
+      "achat",
+      "reste",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Scénario de la vie quotidienne (rendu de monnaie au restaurant puis achat d'une friandise) enchaînant trois tâches : totaliser des pièces, composer un montant donné avec des pièces, calculer le reste, avec barème et critères d'évaluation par consigne.",
+    "themeGroup": "Monnaie : les millimes"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Instruction 7 : l'image indique « أَعْطَتْنِي أُمِّي مِنْهُ » ; la transcription donne bien « أَعْطَتْنِي », mais l'image montre « أَعْطَتْنِي » avec un « - » initial ; rien de grave. Le mot « نَقَدَتْ » est correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les images des pièces ne sont pas décrites : série du Support 6 (5, 20, 50, 200, 50, 100, 50 millimes) indispensable pour l'exercice 10 ; la transcription n'en dit rien."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Support de l'instruction 11 non transcrit : pièces 100, 20, 50 et deux cercles vides à compléter."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Case carrée vide pour la réponse à l'instruction 12 non mentionnée ; cases de critères vides (معـ2أ, معـ3, معـ2ج) non signalées comme cases."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'instruction 12, la phrase « الْمَبْلَغُ الَّذِي تَبَقَّى... » et « الْعَمَلِيَّةُ » apparaissent ; l'image place le carré avant ces lignes. Barème 0,5 correspond à la case carrée, pas seulement à « العملية » ; ordre des critères plausible mais mal associé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« مي » après les pointillés de l'instruction 10 est présent ; OK. Dans l'instruction 12 « تَبَقَّى لِلْأُمِّ » : l'image indique « لِلْأُمِّ » avec shadda, OK."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.96,
+    "verdict": "ok",
+    "confirmedErrors": []
+  },
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.96
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "examTrimester": 2,
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

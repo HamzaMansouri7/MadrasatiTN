@@ -1,0 +1,194 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 11,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الوحدة 3 - المستوى 6: حجم المكعب ومتوازي المستطيلات، وحدات الحجم والسعة، العمليات على الكسور، قراءة المبيان",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أحسب حجم المكعب جانبه.",
+      "body": "مكعب طول كل حرف من أحرفه 10cm.",
+      "figureDesc": "رسم مكعب أحرفه 10cm × 10cm × 10cm، يليه سطران منقطان للإجابة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p011_i1",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2 أ",
+      "instruction": "نعتبر متوازي المستطيلات التالي: أ) أحسب حجمه بـ cm³ ثم بـ l.",
+      "body": "أبعاد متوازي المستطيلات: الطول 30cm، العرض 10cm، الارتفاع 5cm.",
+      "figureDesc": "متوازي مستطيلات وردي اللون أبعاده 30cm و10cm و5cm، يليه أسطر منقطة للإجابة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p011_i2",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2 ب",
+      "instruction": "هل تكفي 1 000 ml من الماء لملء هذا المتوازي المستطيلات ؟ إذا كان الجواب بـ \"لا\" فكم ستملأ هذه الكمية من الماء ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p011_i3",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "انجز التحويلات التالية مستعينا بجدول تحويل الوحدات أسفله :",
+      "body": "383 dm³ = ........ m³ = ........ Cl\n15,6 cm³ = ........ l = ........ mm³\n0,8 m³ = ........ dl = ........ cl\n156,2 ml = ........ dm³ = ........ l\n9 187 ml = ........ mm³ = ........ cm³\n0,5 dm³ 15 dal 204 ml = ........ cl",
+      "figureDesc": "جدول تحويل الوحدات: أعمدة m³ (ثلاثة)، dm³ (hl, dal, l)، cm³ (dl, cl, ml)، mm³ (ثلاثة)، مع 7 أسطر فارغة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p011_i4",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4 أ",
+      "instruction": "أحسب كم يمثل 2/3 من كمية الإنتاج اليومي.",
+      "body": "تقع كوباك بإقليم تارودانت والمعروفة بعلامتها التجارية \"جودة\". تعمل هذه التعاونية على انتاج الحليب ومشتقاته وعصير الفواكه واللحوم والأعلاف. وسجل انتاج الحليب لهذه التعاونية ارتفاعا سنة 2016/2017 حيث وصل الى 948 طن يوميا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p011_i5",
+      "topicId": "math-6-p5",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4 ب",
+      "instruction": "أحسب كمية الإنتاج الشهري \"30 يوما\".",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p011_i6",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أحسب ما يلي :",
+      "body": "5/4 + 1/6 =\n12/7 - 11/8 =\n27/13 × 12/9 =\n88/17 ÷ 2/15 =",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p011_i7",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6 أ",
+      "instruction": "نظم معطيات المبيان في الجدول أسفله :",
+      "body": "يمثل المبيان أسفله توضيحا لعدد التلاميذ الحاصلين على المعدل وعدد المتعثرين بمستوى السادس ابتدائي في بعض المواد الدراسية، والبالغ عددهم 32 تلميذا :",
+      "figureDesc": "مبيان بالأعمدة (المحور: عدد التلاميذ من 0 إلى 35) للمواد: اللغة الفرنسية، الرياضيات، النشاط العلمي. الحاصلون على المعدل (أزرق غامق): تقريبا 9 و24 و31. المتعثرون (برتقالي): تقريبا 23 و8 و1. يليه جدول فارغ بأعمدة النشاط العلمي، الرياضيات، اللغة الفرنسية وسطرين: الحاصلين على المعدل، المتعثرين.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p011_i8",
+      "topicId": "math-6-p5",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6 ب",
+      "instruction": "ما هي المادة التي حصل فيها جل التلاميذ على المعدل ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p011_i9",
+      "topicId": "math-6-p5",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6 ج",
+      "instruction": "ما هو عدد التلاميذ الذين حصلوا على المعدل في مادة الرياضيات ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p011_i10",
+      "topicId": "math-6-p5",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6 د",
+      "instruction": "ما عدد التلاميذ الذين لم يحصلوا على المعدل في مادة اللغة الفرنسية ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p011_i11",
+      "topicId": "math-6-p5",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p5",
+  "topicTitle": "Période 5 : Volumes, capacités, temps et diagrammes statistiques",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-6-p5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p5",
+    "confidence": 0.78
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte surtout sur le volume du cube et du parallélépipède, les conversions volume/capacité et la lecture d'un diagramme, ce qui correspond à la Période 5. Les exercices sur les fractions (opérations, 2/3 d'une quantité) relèvent de la Période 2, mais ils restent minoritaires dans la page.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Volumes, capacités, fractions et lecture de graphique",
+    "skill": "Calculer des volumes et convertir les unités, effectuer des opérations sur les fractions et lire un diagramme statistique.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "volume du cube",
+      "parallélépipède rectangle",
+      "conversion d'unités",
+      "opérations sur les fractions",
+      "diagramme"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : lien entre volume en cm³ et capacité en litres avec une question de contenance (1 litre suffit-il à remplir ?), problème de production laitière d'une coopérative avec fraction puis total mensuel, et organisation des données d'un diagramme sur les élèves ayant ou non la moyenne dans un tableau.",
+    "themeGroup": "Volumes et capacités"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

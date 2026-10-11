@@ -1,0 +1,134 @@
+{
+  "book": "exercices_mathematiques_corriges",
+  "page": 3,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأعداد العشرية: المقارنة والترتيب والحصر",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "التمرين التاسع",
+      "instruction": "رتب الأعداد التالية ترتيبا تصاعديا :",
+      "body": "0.9 - 0.115 - 0.89 - 0.30 - 0.78\n............... ‹ ........... ‹ .......... ‹ ........... ‹ .........",
+      "figureDesc": "خط من النقاط مفصول برموز ‹ لكتابة الترتيب التصاعدي",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "exercices_mathematiques_corriges_p003_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التمرين العاشر",
+      "instruction": "أكمل بالرمز المناسب ( ‹ ، › ، = ) :",
+      "body": "17.06 .... 17.6 / 25.135 .... 25.2\n7.99 .... 7.899 / 0.9 ..... 0.900",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "exercices_mathematiques_corriges_p003_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التمرين الحادي عشر",
+      "instruction": "1) رتب الأطوال ترتيبا تنازليا\n2) من الأطول من بين هؤلاء الأطفال ؟",
+      "body": "طول أميرة 1.35 m وطول أحمد 1.60 m وطول سليم 1.498 m",
+      "figureDesc": "أسطر منقطة لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "exercices_mathematiques_corriges_p003_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التمرين الثاني عشر",
+      "instruction": "أحصر كل عدد عشري بين عددين طبيعيين متتاليين",
+      "body": "....... ‹ 0.38 ‹ ..... ، ..... ‹ 13.95 ‹ ....\n...... ‹ 105.6 ‹ ...... ، ......... ‹ 3545.86 ‹ ......",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "exercices_mathematiques_corriges_p003_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-5-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.88
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la comparaison, le rangement et l'encadrement des nombres décimaux, ce qui correspond à la Période 2 (Nombres décimaux), même si l'intitulé met l'accent sur les opérations et le temps.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres décimaux : comparaison, rangement, encadrement",
+    "skill": "Comparer, ranger et encadrer des nombres décimaux entre deux entiers consécutifs.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "comparaison",
+      "ordre croissant",
+      "ordre décroissant",
+      "encadrement",
+      "entiers consécutifs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série graduée d'exercices sur les décimaux : ranger en ordre croissant ou décroissant, comparer avec les symboles <, > et =, encadrer entre entiers consécutifs. Les pièges réutilisables sont 0.9 et 0.900, 17.06 et 17.6, et une situation de tailles d'enfants en mètres.",
+    "themeGroup": "Nombres décimaux : notions et comparaison"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 10: le symbole de comparaison est « › » (ou « ‹ ») dans l'image, la transcription donne « ‹ ، › » avec un ordre/signes ambigus; l'image montre « ( ‹ ، › ، = ) » proche mais à vérifier."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le nom de l'auteur « الأستاذ هاشمي زروال » en bas de page n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de pointillés pour la réponse de l'exercice 11 (deux lignes) ne sont pas transcrites."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 11: l'énoncé (طول أميرة 1.35 m وطول أحمد 1.60 m وطول سليم 1.498 m) vient avant les questions 1) et 2) dans l'image, mais est placé après dans la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête/pied de page (WWW.EDUSET.TN - تمارين في الرياضيات السنة الخامسة مع الإصلاح, date 22/12/2024 14:23, page 5/15) non transcrits."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices corrigés"
+}

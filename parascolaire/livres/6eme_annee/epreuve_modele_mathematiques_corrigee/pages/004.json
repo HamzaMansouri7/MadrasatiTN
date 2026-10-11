@@ -1,0 +1,204 @@
+{
+  "book": "epreuve_modele_mathematiques_corrigee",
+  "page": 4,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Concours d'entrée aux collèges pilotes – Session 2023 (essai) – Problème 1 : fractions, pourcentages et partage d'un montant",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "المسألة رقم 1 (6 نقاط) - 1",
+      "instruction": "ما هو المبلغ المجمّع لدى العائلة ؟",
+      "body": "جمّعت عائلة مبلغا ماليًا لتأثيث منزلها و ذلك بشراء تلفاز و مكيف هوائي و ثلاجة. الجدول التالي يوضّح مساهمات أفراد العائلة: مساهمة الأب: 1/3 المبلغ. مساهمة الأم: 40 % من المبلغ. مساهمة البنت الكبرى: أقلّ من مساهمة الأب بـ 287,4 د.",
+      "figureDesc": "En-tête : وزارة التربية ***** ; المعلم: نبيل ثابتي ; مناظرة الدخول إلى المدارس الإعدادية النموذجية ; دورة 2023 (تجريبي) / الإصلاح ; الاختبار: رياضيات ; التوقيت: 60 دقيقة ; الضارب: 1. Titre : المسألة رقم 1 : ( 6 نقاط ). Tableau à 3 colonnes : مساهمة الأب = 1/3 المبلغ ; مساهمة الأم = 40 % من المبلغ ; مساهمة البنت الكبرى = أقلّ من مساهمة الأب بـ 287,4 د. Filigrane '6' en arrière-plan.",
+      "answer": "مساهمة الأب: 1/3 المبلغ = 5/15. مساهمة الأم: 40 % من المبلغ = 2/5 = 6/15. مساهمة البنت الكبرى: 15/15 − (6/15 + 5/15) = 4/15. الكسر الممثّل للفرق بين مساهمة الأب و مساهمة البنت الكبرى: 5/15 − 4/15 = 1/15. المبلغ المجمّع لدى العائلة: 287,4 × 15 = 4311 د.",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_mathematiques_corrigee_p004_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة رقم 1 - 2",
+      "instruction": "ما هو ثمن شراء المكيف إذا علمت أنّ ثمن التلفاز يمثّل 85 % من ثمن الثلاّجة.",
+      "body": "تبيّن للعائلة أنّ المبلغ المجمّع لديهم يمكّنهم من شراء تلفاز و مكيف فقط أو أن يضيفوا 405 د ليتمكّنوا من شراء الثلاّجة و المكيف فقط.",
+      "figureDesc": "",
+      "answer": "النّسبة المائويّة الممثّلة للفرق بين ثمن التلفاز و ثمن الثلاّجة: 100 % − 85 % = 15 %. 15 % = 405 د. ثمن الثلاّجة: (405 : 15) × 100 = 2700 د. ثمن المكيف: (4311 + 405) − 2700 = 2016 د. أو: ثمن التلفاز: (405 : 15) × 85 = 2295 د. ثمن المكيف: 4311 − 2295 = 2016 د.",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_mathematiques_corrigee_p004_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-6-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.56
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit d'un problème de concours d'entrée aux collèges pilotes (session 2023) à plusieurs étapes qui combine fractions, pourcentages et partage d'un montant, ce qui correspond à la période de synthèse et de résolution de situations-problèmes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Fractions, pourcentages et partage",
+    "skill": "Résoudre un problème à étapes en combinant fractions, pourcentages et comparaison de montants pour retrouver un total puis un prix.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "fractions",
+      "pourcentages",
+      "contributions familiales",
+      "montant total",
+      "concours pilote",
+      "équation de partage"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation réutilisable : plusieurs personnes financent un achat avec des parts exprimées en fraction, en pourcentage et en écart absolu, puis on déduit des prix d'appareils à partir de deux scénarios d'achat (avec ou sans ajout d'argent).",
+    "themeGroup": "Pourcentages et proportionnalité"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête est absent : وزارة التربية، المعلم: نبيل ثابتي، الاختبار: رياضيات، التوقيت: 60 دقيقة، الضارب: 1، مناظرة الدخول إلى المدارس الإعدادية النموذجية، دورة 2023 (تجريبي) / الإصلاح."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'image, l'énoncé (جمّعت عائلة...) et le tableau précèdent la question 1. La transcription place la question 1 en premier, avant l'énoncé. Le texte 'تبيّن للعائلة...' précède bien la question 2, ce qui est correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "مالِيًا : l'image montre مالياً sans kasra visible ; les voyelles ajoutées ne sont pas dans l'original. Même chose pour مكيّف, الثلاّجة, يمكّنهم, ليتمكّنوا : les shadda sont ajoutées, alors que l'image écrit مكيَف, الثلاّجة, يمكّنهم avec des marques variables."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'énoncé, 'مكيف هوائي' et 'ثلاجة' portent des marques dans l'image (مكيّف هوائيّ، ثلاّجة) ; la transcription les rend de façon incohérente."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "النسبة المائوية : l'image écrit النّسبة المائويّة (avec ة finale), pas المائوية sans marque ; différence mineure de vocalisation."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane '6' n'est pas transcrit (négligeable). Le tableau n'est pas signalé comme tel (en-têtes : مساهمة الأب، مساهمة الأم، مساهمة البنت الكبرى)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros des questions '1-' et '2-' sont absents ou mal placés."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "chiffres/calcul",
+        "severity": "major",
+        "detail": "Dans la réponse à la question 2, 'ثمن المكيّف: 2700 − (405 + 4311) = 2016' est faux (2700 − 4716 est négatif). L'image donne (4311 + 405) − 2700 = 2016, soit 4716 − 2700. L'ordre des termes a été inversé lors de la transcription de l'expression RTL."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "'مالِيًا' : la kasra sous le lam ajoutée n'est pas dans l'image, qui montre seulement 'مالياً/ماليًا'. Sa suppression est justifiée."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "'مكيّف' (item 2) et 'المكيّف' : les marques sont irrégulières et peu nettes dans l'image (écrit 'مكيَف'). La shadda ajoutée n'est pas clairement visible. 'النسبة المائوية' porte dans l'image les marques 'النّسبة المائويّة'."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "L'en-tête n'est pas absent : il figure dans figureDesc. Il est cependant mélangé à la description du tableau. Je le sépare pour plus de clarté. Les numéros '1-' et '2-' des questions ne sont pas rendus proprement dans le champ number."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le signalement d'un problème d'ordre est à nuancer. L'énoncé et le tableau sont bien dans le body de l'item 1 et la question 1 dans instruction. L'ordre de lecture reste correct, seul l'ordre des champs diffère de la page. Le texte 'تبيّن للعائلة...' précède bien la question 2."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "المسألة رقم 1 (6 نقاط) - 1",
+      "instruction": "ما هو المبلغ المجمّع لدى العائلة ؟",
+      "body": "جمّعت عائلة مبلغا ماليًا لتأثيث منزلها و ذلك بشراء تلفاز و مكيف هوائي و ثلاجة. الجدول التالي يوضّح مساهمات أفراد العائلة: مساهمة الأب: 1/3 المبلغ. مساهمة الأم: 40 % من المبلغ. مساهمة البنت الكبرى: أقلّ من مساهمة الأب بـ 287,4 د.",
+      "figureDesc": "En-tête : وزارة التربية ***** ; المعلم: نبيل ثابتي ; مناظرة الدخول إلى المدارس الإعدادية النموذجية ; دورة 2023 (تجريبي) / الإصلاح ; الاختبار: رياضيات ; التوقيت: 60 دقيقة ; الضارب: 1. Titre : المسألة رقم 1 : ( 6 نقاط ). Tableau à 3 colonnes : مساهمة الأب = 1/3 المبلغ ; مساهمة الأم = 40 % من المبلغ ; مساهمة البنت الكبرى = أقلّ من مساهمة الأب بـ 287,4 د. Filigrane '6' en arrière-plan.",
+      "answer": "مساهمة الأب: 1/3 المبلغ = 5/15. مساهمة الأم: 40 % من المبلغ = 2/5 = 6/15. مساهمة البنت الكبرى: 15/15 − (6/15 + 5/15) = 4/15. الكسر الممثّل للفرق بين مساهمة الأب و مساهمة البنت الكبرى: 5/15 − 4/15 = 1/15. المبلغ المجمّع لدى العائلة: 287,4 × 15 = 4311 د.",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_math_6eme_corrigee_p004_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة رقم 1 - 2",
+      "instruction": "ما هو ثمن شراء المكيف إذا علمت أنّ ثمن التلفاز يمثّل 85 % من ثمن الثلاّجة.",
+      "body": "تبيّن للعائلة أنّ المبلغ المجمّع لديهم يمكّنهم من شراء تلفاز و مكيف فقط أو أن يضيفوا 405 د ليتمكّنوا من شراء الثلاّجة و المكيف فقط.",
+      "figureDesc": "",
+      "answer": "النّسبة المائويّة الممثّلة للفرق بين ثمن التلفاز و ثمن الثلاّجة: 100 % − 85 % = 15 %. 15 % = 405 د. ثمن الثلاّجة: (405 : 15) × 100 = 2700 د. ثمن المكيف: (4311 + 405) − 2700 = 2016 د. أو: ثمن التلفاز: (405 : 15) × 85 = 2295 د. ثمن المكيف: 4311 − 2295 = 2016 د.",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_math_6eme_corrigee_p004_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "المسألة رقم 1 (6 نقاط) - السؤال 1",
+      "instruction": "ما هو المبلغ المجمّع لدى العائلة ؟",
+      "body": "جمّعت عائلة مبلغا مالِيًا لتأثيث منزلها و ذلك بشراء تلفاز و مكيف هوائي و ثلاجة. الجدول التالي يوضّح مساهمات أفراد العائلة: مساهمة الأب: 1/3 المبلغ. مساهمة الأم: 40 % من المبلغ. مساهمة البنت الكبرى: أقلّ من مساهمة الأب بـ 287,4 د.",
+      "figureDesc": "En-tête officiel : وزارة التربية، المعلم: نبيل ثابتي، الاختبار: رياضيات، التوقيت: 60 دقيقة، الضارب: 1, مناظرة الدخول إلى المدارس الإعدادية النموذجية، دورة 2023 (تجريبي) / الإصلاح. Tableau à 3 colonnes : مساهمة الأب = 1/3 المبلغ ; مساهمة الأم = 40 % من المبلغ ; مساهمة البنت الكبرى = أقلّ من مساهمة الأب بـ 287,4 د.",
+      "answer": "مساهمة الأب: 1/3 المبلغ = 5/15. مساهمة الأم: 40 % من المبلغ = 2/5 = 6/15. مساهمة البنت الكبرى: 15/15 − (6/15 + 5/15) = 4/15. الكسر الممثّل للفرق بين مساهمة الأب و مساهمة البنت الكبرى: 5/15 − 4/15 = 1/15. المبلغ المجمّع لدى العائلة: 287,4 × 15 = 4311 د.",
+      "confidence": 0.93,
+      "id": "epreuve_modele_math_6eme_corrigee_p004_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هو ثمن شراء المكيّف إذا علمت أنّ ثمن التلفاز يمثّل 85 % من ثمن الثلاّجة.",
+      "body": "تبيّن للعائلة أنّ المبلغ المجمّع لديهم يمكّنهم من شراء تلفاز و مكيّف فقط أو أن يضيفوا 405 د ليتمكّنوا من شراء الثلاّجة و المكيّف فقط.",
+      "figureDesc": "",
+      "answer": "النسبة المائوية الممثّلة للفرق بين ثمن التلفاز و ثمن الثلاّجة: 100 % − 85 % = 15 %. 15 % = 405 د. ثمن الثلاّجة: (405 : 15) × 100 = 2700 د. ثمن المكيّف: 2700 − (405 + 4311) = 2016 د. أو: ثمن التلفاز: (405 : 15) × 85 = 2295 د. ثمن المكيّف: 4311 − 2295 = 2016 د.",
+      "confidence": 0.9,
+      "id": "epreuve_modele_math_6eme_corrigee_p004_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "self_contained",
+  "examScope": "full_year",
+  "bookTitle": "Épreuve modèle 6ème année — Mathématiques (corrigée)"
+}

@@ -1,0 +1,281 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 76,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "حل مسائل باستعمال القسمة (القسمة الإقليدية) – تقديم الحل على جدول",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَكْمِلْ مَا بَدَأَتْهُ دُرَّةُ :",
+      "body": "يُريدُ تاجِرٌ وَضْعَ 155 قَارُورَةَ زَيْتٍ في صَناديقَ، يَتَّسِعُ كُلُّ صُنْدُوقٍ لِـ 6 قَوارِيرَ فَقَطْ. مَا هُوَ عَدَدُ الصَّناديقِ الَّتي يَحْتاجُها هَذَا التَّاجِرُ؟\nقَدَّمَتْ دُرَّةُ حَلاًّ لِهذِهِ المَسْأَلَةِ عَلى الجَدْوَلِ.\nالجدول (الأعمدة من اليمين إلى اليسار: عدد الصناديق | عدد القوارير التي وُضعت في الصناديق | عدد القوارير الباقية):\nالسطر 1: 10 | 10 × 6 = 60 | 155 - 60 = 95\nالسطر 2: 10 | 10 × 6 = 60 | . - . = .\nالسطر 3: 5 | . × 5 = . | . - . = .\nعَدَدُ الصَّناديقِ هُوَ ...... صُنْدُوقًا.\nعَدَدُ القَوارِيرِ الباقِيَةِ هُوَ ...... قَوارِير.",
+      "figureDesc": "Tableau à 3 colonnes (عدد الصناديق، عدد القوارير التي وُضعت في الصناديق، عدد القوارير الباقية) et 3 lignes de calcul; la première ligne est complétée, les deux autres sont à compléter avec des points.",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p076_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "واصِلْ كِتابَةَ النَّتائِجِ في الجَدْوَلِ.",
+      "body": "لِإقامَةِ حَفْلِ نِهايَةِ السَّنَةِ الدِّراسِيَّةِ وُضِعَ في سَاحَةِ المَدْرَسَةِ 228 كُرْسِيًّا مُوَزَّعَةً عَلى صُفُوفٍ في كُلٍّ مِنْهَا 8 كَراسِي. مَا هُوَ عَدَدُ الصُّفُوفِ؟\nالجدول (الأعمدة من اليمين إلى اليسار: عدد الصفوف | عدد الكراسي | ما بقي من الكراسي):\nالسطر 1: 5 | 8 × 5 = 40 | 228 - 40 = 188\nالسطر 2: 20 | . = . × 8 | . = . - 188\nالسطر 3: 3 | . = . × 8 | . = . - .",
+      "figureDesc": "Tableau à 3 colonnes (عدد الصفوف، عدد الكراسي، ما بقي من الكراسي) et 3 lignes; la première ligne est complétée, les autres sont à compléter.",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p076_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَقْسِمُ 237 عَلى 9 وَأُنْجِزُ الحِسابَ ثُمَّ أَكْتُبُ الأَعْدادَ المُناسِبَةَ في البِطاقاتِ.",
+      "body": "[ ] + ( [ ] × [ ] ) = [ ]",
+      "figureDesc": "Quatre cartes (cadres vides) pointillées disposées dans l'équation : carte + ( carte × carte ) = carte.",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p076_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أَكْتُبُ مَسْأَلَةً تَتَضَمَّنُ سُؤالاً جَوابُهُ هُوَ :",
+      "body": ". + ( . × 7 ) = 58",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p076_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أَكْمِلْ بِكِتابَةِ الأَعْدادِ المُناسِبَةِ :",
+      "body": "يَتَكَوَّنُ الأُسْبُوعُ مِنْ سَبْعَةِ أَيَّامٍ. مَا هُوَ عَدَدُ أَسابِيعِ سَنَةٍ عَدَدُ أَيَّامِها 365 يَوْمًا.\n. + ( . × 7 ) = ......",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p076_i5",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "",
+      "body": "رَسَمَتْ آمِنَةُ عَلى وَرَقَةِ كُرَّاسَتِها شَبَكَةَ تَرْبِيعَاتٍ في شَكْلِ مُسْتَطِيلٍ عَرْضُهُ 6 تَرْبِيعَاتٍ. العَدَدُ الجُمْلِيُّ لِتَرْبِيعَاتِ الشَّبَكَةِ 90. كَمْ عَدَدُ التَّرْبِيعَاتِ عَلى طُولِ الشَّبَكَةِ ؟",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p076_i6",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "72 (numéro de page imprimé au bas de la page)",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p076_i7",
+      "topicId": "math-4-ch3",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.9
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch3",
+  "topicTitle": "Période 3 : Division euclidienne, fractions et périmètres",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.95
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la résolution de problèmes par la division euclidienne (155 ÷ 6, 228 ÷ 8, 237 ÷ 9, 365 ÷ 7) présentée dans un tableau de soustractions successives, ce qui correspond à la Période 3 sur la division euclidienne par un chiffre.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division euclidienne et problèmes",
+    "skill": "Résoudre des problèmes de partage et de groupement par la division euclidienne en présentant la solution dans un tableau et sous la forme a + (b × c) = n.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "division euclidienne",
+      "problème",
+      "tableau",
+      "reste et quotient",
+      "multiplication"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes de rangement ou de groupement (bouteilles en caisses, chaises en rangées, jours en semaines) liées à l'écriture a + (b × c) = n, avec un exercice inversé où l'élève invente un énoncé à partir d'une égalité et un autre où il retrouve une dimension à partir d'une aire quadrillée.",
+    "themeGroup": "Division euclidienne"
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 6 : le tableau est absent (colonnes عدد الصناديق / عدد القوارير التي وُضعت في الصناديق / عدد القوارير الباقية, avec 10 | 10×6=60 | 155-60=95 ; 10 | 10×6=60 | .-.=. ; 5 | .=5×. | .-.=.)"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 7 : le tableau est absent (عدد الصفوف / عدد الكراسي / ما بقي من الكراسي, avec 5 | 8×5=40 | 228-40=188 ; 20 | .=.×8 | .=.-188 ; 3 | .=.×8 | .=.-.)"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 6 : l'ordre est faux. L'énoncé (يريد تاجر...) et le cadre « قدمت درة حلاً... » viennent avant « أكمل ما بدأته درة »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 7 : l'énoncé (لإقامة حفل...) vient avant la consigne « واصل كتابة النتائج في الجدول »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 11 : la question « كم عدد التربيعات على طول الشبكة؟ » doit venir à la fin, après l'énoncé."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 10 : la consigne « أكمل بكتابة الأعداد المناسبة » vient après la question et non avant l'énoncé. L'équation est aussi placée à tort avant la consigne."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 7 : « لِإقامَةِ » et « وُضِعَ » sont transcrits avec une vocalisation différente de l'image. L'image montre « لإقامة » et « وُضع »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Plusieurs mots portent un tashkeel complet alors que l'image n'en montre que partiellement ou pas du tout (ex. : أَقْسِمُ, الحِسابَ, أَسابِيعِ). Vocalisation ajoutée ou inexacte."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 8 : le signe « ( » est mal placé. L'image montre [ ] + ( [ ] × [ ] ) = [ ] avec la parenthèse après le +, ce qui est conforme. Mais les cases vides ne sont pas décrites comme des cartes."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 10 : « عدد أيامها 365 يوماً » est en fait « سنة عدد أيامها 365 يومًا ». La structure de la phrase est correcte, mais le trait pointillé de réponse et les parenthèses sont approximatifs."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.9,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَكْمِلْ مَا بَدَأَتْهُ دُرَّةُ :",
+      "body": "يُريدُ تاجِرٌ وَضْعَ 155 قارورَةَ زَيْتٍ في صَناديقَ، يَتَّسِعُ كُلُّ صُنْدُوقٍ لِـ 6 قَوارِيرَ فَقَطْ. ما هُوَ عَدَدُ الصَّناديقِ الَّتي يَحْتاجُها هذا التّاجِرُ؟ قَدَّمَتْ دُرَّةُ حَلاً لِهذِهِ المَسْأَلَةِ عَلى الجَدْوَلِ. عَدَدُ الصَّناديقِ هُوَ ........ صُنْدُوقًا. عَدَدُ القَوارِيرِ الباقِيَةِ هُوَ ........ قَوارِير.",
+      "figureDesc": "جدول بثلاثة أعمدة: عدد الصناديق، عدد القوارير التي وُضعت في الصناديق، عدد القوارير الباقية. السطر 1: 10 ؛ 10 × 6 = 60 ؛ 155 − 60 = 95. السطر 2: 10 ؛ 10 × 6 = 60 ؛ ... = ... − ... (فارغ). السطر 3: 5 ؛ ... = 5 × ... ؛ ... = ... − ... (فارغ).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p076_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "واصِلْ كِتابَةَ النَّتائِجِ في الجَدْوَلِ.",
+      "body": "لِإقامَةِ حَفْلِ نِهايَةِ السَّنَةِ الدِّراسِيَّةِ وُضِعَ في ساحَةِ المَدْرَسَةِ 228 كُرْسِيًّا مُوَزَّعَةً عَلى صُفُوفٍ في كُلٍّ مِنْها 8 كَراسِي. ما هُوَ عَدَدُ الصُّفُوفِ؟",
+      "figureDesc": "جدول: عدد الصفوف، عدد الكراسي، ما بقي من الكراسي. السطر 1: 5 ؛ 8 × 5 = 40 ؛ 228 − 40 = 188. السطر 2: 20 ؛ ... = ... × 8 ؛ ... = ... − 188. السطر 3: 3 ؛ ... = ... × 8 ؛ ... = ... − ... (فارغة).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p076_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَقْسِمُ 237 عَلى 9 وَأُنْجِزُ الحِسابَ ثُمَّ أَكْتُبُ الأَعْدادَ المُناسِبَةَ في البِطاقاتِ.",
+      "body": "[ ] + ( [ ] × [ ] ) = [ ]",
+      "figureDesc": "أربع بطاقات فارغة في المعادلة: بطاقة + ( بطاقة × بطاقة ) = بطاقة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p076_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أَكْتُبُ مَسْأَلَةً تَتَضَمَّنُ سُؤالاً جَوابُهُ هُوَ :",
+      "body": ". + ( . × 7 ) = 58",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p076_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أَكْمِلْ بِكِتابَةِ الأَعْدادِ المُناسِبَةِ :",
+      "body": "يَتَكَوَّنُ الأُسْبُوعُ مِنْ سَبْعَةِ أَيّامٍ. ما هُوَ عَدَدُ أَسابِيعِ سَنَةٍ عَدَدُ أَيّامِها 365 يَوْمًا. . + ( . × 7 ) = ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p076_i5",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "كَمْ عَدَدُ التَّرْبِيعاتِ عَلى طُولِ الشَّبَكَةِ ؟",
+      "body": "رَسَمَتْ آمِنَةُ عَلى وَرَقَةِ كُرّاسَتِها شَبَكَةَ تَرْبِيعاتٍ في شَكْلِ مُسْتَطِيلٍ عَرْضُهُ 6 تَرْبِيعاتٍ. العَدَدُ الجُمْلِيُّ لِتَرْبِيعاتِ الشَّبَكَةِ 90.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p076_i6",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "linkStatus": "clean",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

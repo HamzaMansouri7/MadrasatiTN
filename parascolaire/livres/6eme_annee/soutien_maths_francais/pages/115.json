@@ -1,0 +1,151 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 115,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Évaluation : Nombres décimaux et fractions (comparaison et rangement), échelle et aire, construction et bissectrice d'un angle, somme des angles d'un triangle rectangle",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أرتب الأعداد الآتية تزايديا باستعمال الرمز المناسب (2 ن)",
+      "body": "6,032 ; 6,23 ; 31/5 ; 25/4 ; 6 ; 6,3 ........................................",
+      "figureDesc": "Au-dessus de l'exercice se trouve un cadre gris portant la mention « لا يكتب شيء داخل هذا الإطار » (ne rien écrire dans ce cadre). Sous la liste de nombres, une ligne de pointillés sert à écrire la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p115_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مسألة (3 ن) - أحدد ثمن شراء هذه البقعة.",
+      "body": "بقعة أرضية على شكل مستطيل بعداه على تصميم بسلم 1/100 هما 12 سنتيمتر و9 سنتيمترات. اشترى مقاول هذه البقعة الأرضية بثمن 4200 درهما للمتر المربع. • أحدد ثمن شراء هذه البقعة.",
+      "figureDesc": "Quatre lignes de pointillés pour la réponse.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p115_i2",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "المجال الثاني: الهندسة (11 نقطة) - أرسم الزاوية [JÎK] قياسها °115، ثم أنشئ [IT) منصفا لها باستعمال الأدوات الهندسية المناسبة (3 ن)",
+      "body": "",
+      "figureDesc": "Espace vide pour la construction géométrique.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p115_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "ألاحظ الشكل الهندسي وأحسب قياس الزاوية [QP̂R] (2 ن)",
+      "body": "",
+      "figureDesc": "Triangle PQR rectangle en Q (angle droit marqué). L'angle en R mesure 55°. P est le sommet en haut, Q en bas à gauche, R en bas à droite. Cinq lignes de pointillés pour la réponse.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p115_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch1",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation générale de mathématiques qui couvre plusieurs chapitres (décimaux et fractions, échelle et aire, construction de bissectrice, angles du triangle), donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Évaluation : décimaux, géométrie et aires",
+    "skill": "Comparer et ranger des nombres décimaux et fractions, calculer une aire à partir d'une échelle, construire une bissectrice et calculer un angle.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "rangement de décimaux",
+      "fractions",
+      "échelle",
+      "aire du rectangle",
+      "bissectrice",
+      "angles du triangle rectangle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le problème du terrain rectangulaire dessiné à l'échelle puis acheté au prix du m² relie échelle, aire et coût dans une situation concrète. Le rangement mêle décimaux et fractions. L'évaluation est barémée et combine construction géométrique à la règle et au compas avec calcul d'angle.",
+    "themeGroup": "Problèmes de synthèse et révisions"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le cadre grisé « لا يكتب شيء داخل هذا الإطار » en haut de la page n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros de question sont écrits « [5] » alors que l'image montre « -5 » ; de même pour 6, 7 et 8. Le titre « مسألة » est écrit avec « - » mal placé."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Question 6 : « بعداه على تصميم بسلم » est un mélange ; l'image indique « بعداه على تصميم بسلم 1/100 هما ». La phrase est correcte mais « أحدد ثمن شراء هذه البقعة » est répété en tant que titre de la question 6 alors qu'il n'est présent qu'une fois, sous forme de puce."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Question 6 : « - أحدد ثمن شراء هذه البقعة » est dupliqué dans l'en-tête ; texte ajouté qui ne figure pas à cet endroit."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Question 7 : « °115 » devrait être « 115° » (le degré se place après le nombre). « [IT) » devrait être « [IT] » (crochet fermant)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Question 8 : la figure du triangle PQR (angle droit en Q, angle de 55° en R) n'est pas décrite, ni les lignes de pointillés. Le titre de la question 5 contient aussi des pointillés non transcrits fidèlement."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 2 » et le filigrane « www.escuila.info » ne sont pas transcrits."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

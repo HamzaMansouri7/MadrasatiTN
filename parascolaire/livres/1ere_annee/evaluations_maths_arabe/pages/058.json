@@ -1,0 +1,136 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 58,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "تفكيك وتركيب العدد 10 ومسائل جمعية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُلَوِّنُ الْعَمَلِيَّاتِ الَّتِي مَجْمُوعُهَا الْعَدَدُ 10.",
+      "body": "0+2+4+4 | 5+7 | 4+3+3 | 4+5+5 | 2+8 | 3+3+5\n1+3+3+3 | 7+1+2 | 5+4+9 | 6+4 | 3+1+2 | 0+1+1+8",
+      "figureDesc": "مجموعات من بطاقات العمليات الحسابية للأعداد في إطارات بيضاوية للتلوين",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p058_i1",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَكْتُبُ الأَعْدَادَ التَّالِيَةَ فِي مَكَانِهَا مِنْ كُلِّ عَمَلِيَّةٍ لِأَحْصُلَ عَلَى الْمَجْمُوعِ : 2 ، 5 ، 3 ، 1 ، 4 ، 8 .",
+      "body": "10 = 2 + ..... + 7\n10 = 6 + .....\n10 = 2 + 3 + .....\n\n10 = ..... + 2 + 5\n10 = ..... + 3 + 4 + 1\n10 = ..... + 1 + 1",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p058_i2",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُكَمِّلُ بِالأَعْدَادِ الْمُنَاسِبَةِ :",
+      "body": "طَالَعَ نَادِرٌ يَوْمَ الْجُمُعَةِ 4 صَفَحَاتٍ مِنْ قِصَّتِهِ الَّتِي تَحْتَوِي 10 صَفَحَاتٍ.\nوَقَرَّرَ أَنْ يُطَالِعَ بِالتَّسَاوِي مَا بَقِيَ لَهُ مِنْهَا يَوْمَيِ السَّبْتِ وَالأَحَدِ.\n\nأ- عَدَدُ الصَّفَحَاتِ الَّتِي لَمْ يُطَالِعْهَا نَادِرٌ : [   ]\nب- عَدَدُ الصَّفَحَاتِ الَّتِي سَيُطَالِعُهَا يَوْمَ السَّبْتِ : [   ]\nج- عَدَدُ الصَّفَحَاتِ الَّتِي سَيُطَالِعُهَا يَوْمَ الأَحَدِ : [   ]",
+      "figureDesc": "ثلاث خانات بيضاوية لكتابة الأعداد المناسبة",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p058_i3",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "أُنْجِزُ وَأَتَمَيَّزُ",
+      "instruction": "التَّعْلِيمَة : أَطْرَحُ السُّؤَالَ الْمُنَاسِبَ لِلْوَضْعِيَّةِ وَأُجِيبُ عَلَيْهِ.",
+      "body": "يَحْتَاجُ مَنْزِلُنَا الْجَدِيدُ لِمَجْمُوعَةٍ مِنَ النَّوَافِذِ، صَنَعَ مِنْهَا النَّجَّارُ أَرْبَعَةً وَاشْتَرَى وَالِدِي نَافِذَتَيْنِ جَاهِزَتَيْنِ وَقَرَّرَتْ أُمِّي الْمُسَاهَمَةَ بِشِرَاءِ النَّوَافِذِ الْبَاقِيَةِ.\n\nالسُّؤَالُ : ...................................\nالْعَمَلِيَّةُ : ...................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p058_i4",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "topicId": "math-1-p3",
+  "topicTitle": "Période 3 : Le nombre 10, notion d'addition et formes géométriques",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p3",
+    "confidence": 0.47
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la décomposition et la composition du nombre 10 (compléments à 10, sommes égales à 10) et sur des problèmes additifs simples, ce qui correspond à la Période 3 : le nombre 10 et la notion d'addition.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Décomposition du nombre 10",
+    "skill": "Décomposer et recomposer le nombre 10 par addition de plusieurs termes et résoudre des problèmes additifs simples.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "nombre 10",
+      "décomposition",
+      "addition",
+      "complément à 10",
+      "problème additif",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : colorier les additions dont la somme vaut 10 parmi des distracteurs, compléter des égalités à trous avec une banque de nombres, problème de lecture de pages partagées en parts égales sur deux jours, et situation ouverte où l'élève formule lui-même la question (fenêtres d'une maison).",
+    "themeGroup": "Décomposition des nombres jusqu'à 10"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Dans l'exercice 6, la transcription met 'أُكَمِّلُ بِالأَعْدَادِ الْمُنَاسِبَةِ' en en-tête, avant le texte de l'énoncé. Dans l'image, l'énoncé (طَالَعَ نَادِرٌ… وَالأَحَدِ) vient d'abord et la consigne 'أُكَمِّلُ…' apparaît ensuite, précédée d'une puce."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "'يَحْتَاجُ' : l'image montre 'يَحْتَاجُ', mais 'أَتَمَيَّزُ' est transcrit sans la shadda/forme exacte de l'image, qui porte 'وَأَتَمَيَّزُ' (la lecture 'أَتَمَيَّزُ' est correcte, mais l'image montre 'أَتَـمَيَّزُ' avec un tatwil)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5 : la liste des nombres est transcrite 'التَّالِيَةَ' et 'الْمَجْمُوعِ : 2 ، 5 ، 3 ، 1 ، 4 ، 8', mais l'image affiche les nombres en ordre visuel inversé ('2، 5، 3، 1، 4، 8'). L'ordre de lecture est conservé, c'est correct ; il n'y a pas d'erreur réelle."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page (الرياضيات، جسر النجاح – الثلاثي الثاني (السنة 1)، page 82) n'est pas transcrit."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "'يَوْمَيِ' et 'صَفَحَاتٍ' : l'image montre 'صَفْحَاتٍ' (avec sukun sur le fa) ; la transcription a 'صَفَحَاتٍ'. Même remarque pour 'الصَّفَحَاتِ' qui devrait être 'الصَّفْحَاتِ'."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

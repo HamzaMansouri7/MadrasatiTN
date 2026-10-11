@@ -1,0 +1,134 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 2,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مسألة (عدد 3) : مساحة قطعة أرض (مثلث ونصف دائرة)، النسبة المائوية، المحيط والكلفة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "المسألة عدد 3 : (8 نقاط)",
+      "body": "يملك محمد قطعة أرض على شكل مثلث أبعاده مبيّنة على الرسم حسب السلّم 1/2000. بعد مدّة شرى قطعة مجاورة لأرضه محدودة بنصف دائرة بحساب 63 د المتر المربّع فكانت كلفتها 269529.750 د. أحاط كامل الأرض بجدار تاركا مدخلا عرضه 2.5 م بحساب 48 د المتر الواحد.",
+      "figureDesc": "مثلث أ ب ج قائم الزاوية في أ، الضلع [أج] = 4 صم، [أب] = 1.5 صم. ه هي المسقط العمودي للنقطة أ على [ب ج] مع [أه] = 1.2 صم (زاوية قائمة عند ه). الضلع [ب ج] قطر لنصف دائرة مرسوم على الجهة الأخرى من المثلث، مركزه منتصف [ب ج] (مشار إليه بعلامة x).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "concours_mathematiques_corriges_p002_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-1",
+      "instruction": "أحسب النسبة المائوية للمصاريف بالنسبة لثمن الشراء.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "concours_mathematiques_corriges_p002_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-2",
+      "instruction": "أحسب الكلفة الجملية للسّياج علما وأن ثمن الباب يبلغ 15 % من كلفة البناء.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "concours_mathematiques_corriges_p002_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p3",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Problème de synthèse à plusieurs étapes (échelle, aire du triangle et du demi-disque, coût au m², pourcentage, périmètre, coût de la clôture) typique de la préparation au concours d'entrée aux collèges pilotes, mobilisant plusieurs chapitres dont la Période 3.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    3,
+    4
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problème de géométrie et pourcentages",
+    "skill": "Résoudre un problème multi-étapes combinant aire, échelle, pourcentage, périmètre et coût.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "aire du triangle",
+      "demi-cercle",
+      "échelle",
+      "pourcentage",
+      "périmètre",
+      "coût de clôture"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation concrète d'un propriétaire qui agrandit son terrain (triangle plus demi-cercle) puis le clôture en laissant une entrée. Elle enchaîne échelle, aire, prix d'achat, pourcentage des dépenses et coût d'un mur avec porte, et peut être adaptée à d'autres figures composées ou à d'autres budgets.",
+    "themeGroup": "Pourcentages et proportionnalité"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Le titre de l'image indique « المسألة عــدد: (8 نقاط) » avec le chiffre 3 en surbrillance verte, ce qui est cohérent avec la transcription ; pas d'erreur réelle sur ce point."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les données du schéma ne sont pas transcrites : triangle avec côtés 4 سم (أج), 1.5 سم (أب), hauteur أهـ = 1.2 سم, points أ، ب، ج، هـ, et le demi-cercle de diamètre بج."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المائوية » : l'image montre « المائوية » ; la forme est correcte, sans erreur. « مبيّنة » correct, « السلّم » correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أحسب » : dans l'image, la question 1 est précédée de « 1 / » et la question 2 de « 2/ », numérotation absente du texte (mise en structure seulement)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 2 » en bas de page n'est pas transcrit."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« السّياج » : l'image montre « للسّيّاج / للسيّاج » avec le préfixe « لـ » ; la transcription « للسّياج » est acceptable, mais la shadda sur le ياء est discutable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« 63 د المتر المربّع » et « 48 د المتر الواحد » correspondent à l'image ; « كلفتها » correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

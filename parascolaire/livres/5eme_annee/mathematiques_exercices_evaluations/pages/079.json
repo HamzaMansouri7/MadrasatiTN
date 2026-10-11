@@ -1,0 +1,112 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 79,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مراجعة ودعم: أتصرف في وحدات القيس الفلاحية (الرياضيات - قيس المساحات: الصّا، الآر، الهكتار، المتر المربع)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَجْرِ العَمَلِيّاتِ التّالِيَةَ:",
+      "body": "• 1985 م² + 32 آ + 115 صـا = ................................ آ\n• 6 هـ - (9500 صـا + 188 آ) = ................................ صـا\n• (98 م × 74 م) - 47 آ = ................................ صـا\n• (145 م² + 19855 صـا) - (45 آ × 4) = ................................ - ................................ صـا = ................................ آ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p079_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لِفَلّاحٍ قِطْعَتا أَرْضٍ يُمَثِّلُهُمَا الرَّسْمُ جانِبًا:",
+      "body": "• القِطْعَةُ الأُولَى (أ) مُسْتَطِيلَةُ الشَّكْلِ بُعْدَاها 163 م و 102 م والقِطْعَةُ الثّانِيَةُ (ب) مُرَبَّعَةٌ طُولُ مُحِيطِها 536 م.\n- اُحْسُبْ قِيسَ مِساحَةِ كُلِّ قِطْعَةٍ.\n- اُحْسُبِ الفارِقَ بَيْنَ المِساحَتَيْنِ بالصّا والآرِ.",
+      "figureDesc": "رسم لمستطيل كبير (أ) ملاصق من جهته السفلى اليمنى لمربع أصغر (ب)؛ تليه أسطر منقطة لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p079_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.48
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une révision sur les mesures agraires (ca, a, ha, m²) avec conversions et calculs d'aires de parcelles, ce qui correspond à la Période 1 : Grands nombres, opérations et mesures agraires.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures de surfaces agraires",
+    "skill": "Convertir et calculer avec les unités agraires (centiare, are, hectare, m²) et résoudre un problème de superficie de parcelles.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "centiare",
+      "are",
+      "hectare",
+      "conversion d'unités",
+      "aire du rectangle",
+      "périmètre du carré"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation d'un agriculteur possédant deux parcelles (rectangulaire et carrée, la seconde donnée par son périmètre) dont on compare les superficies avec expression du écart en deux unités, ainsi que des séries de calculs à unités mixtes à compléter.",
+    "themeGroup": "Mesures d'aires et unités agraires"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (bandeau « مراجعة ودعم: أتصرف في وحدات القيس الفلاحية », numéro 5) n'est pas transcrit."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« قِيسَ » dans « اُحْسُبْ قِيسَ مِساحَةِ كُلِّ قِطْعَةٍ » : l'image montre « قيس » (mot du manuel), la transcription le reproduit mais la vocalisation « قِيسَ » est douteuse ; elle est visible comme « قِيسَ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَجْرِ » : l'image montre « أَجْرِ » mais la fin « التّالِيَةَ » porte un fatha final visible ; plusieurs voyelles ajoutées, comme « بالصّا » et « والآرِ », sont sans tashkeel dans l'image alors qu'elles sont vocalisées dans la transcription."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans la 4e opération, la ligne de réponse « ... - ... صـا = ... آ » est conforme dans l'ensemble, mais l'ordre RTL des termes (« صـا » avant « = ») est difficile à vérifier ; l'ordre visuel semble inversé dans la 2e opération."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans « والقِطْعَةُ الثّانِيَةُ (ب) » la lettre ب est entourée dans l'image ; la transcription ne signale pas les cercles autour de (أ) et (ب), ce qui est négligeable."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le schéma (rectangle أ et carré ب) et les lignes pointillées de réponse ne sont pas mentionnés."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

@@ -1,0 +1,88 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 12,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "تصريف المضاعف في الأمر (conjugaison du verbe sourd/doublé à l'impératif) – cours d'arabe, bien que la matière soit indiquée comme Français",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "الأمر هو طلب القيام بالفعل بعد زمن التكلم ويكون في العادة موجها للمخاطب مع الضمائر.",
+      "figureDesc": "Tableau de révision à 5 colonnes (أنتَ، أنتِ، أنتما، أنتم، أنتن) et 2 lignes de verbes à l'impératif. Ligne 1 : قف، تعلمي، خاطبا، سافروا، تكلمن. Ligne 2 : اسمع، انطلقي، استقبلا، اقتربوا، انتظرن.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p012_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "تصريف المضاعف في الأمر. المخاطب: أنت: مد / أمد / استمد ؛ أنت (مؤنث): مدي / أمدي / استمدي ؛ أنتما: مدا / أمدا / استمدا ؛ أنتم: مدوا / أمدوا / استمدوا ؛ أنتن: امددن / أمددن / استمددن.",
+      "figureDesc": "Tableau de conjugaison à l'impératif de trois verbes doublés : مد، أمد، استمد, pour أنتَ، أنتِ، أنتما، أنتم، أنتن (colonne المخاطب à droite).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p012_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "للحصول على الأمر من المضارع نحذف حرف المضارع المجزوم ونعوض السكون في الأمر بالفتحة: مدّ  يمدّ  لم يمدّ  مدّ. ",
+      "figureDesc": "Tableau de déduction : jussif (لم + مضارع) puis impératif pour trois verbes. أنتَ: لم تكفّ ← كفّ ؛ لم تتردد ← تردد ؛ لم تستهل ← استهل. أنتِ: لم تكفي ← كفي ؛ لم تترددي ← ترددي ؛ لم تستهلي ← استهلي. أنتما: لم تكفا ← كفا ؛ لم تترددا ← ترددا ؛ لم تستهلا ← استهلا. أنتم: لم تكفوا ← كفوا ؛ لم تترددوا ← تردّدوا ؛ لم تستهلوا ← استهلوا. أنتن: لم تكففن ← اكففن ؛ لم تتردددن ← تردددن ؛ لم تستهللن ← استهللن.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p012_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.27
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la conjugaison du verbe sourd (مضاعف) à l'impératif, c'est-à-dire de l'arabe ; seul ar-6-ch1 mentionne la conjugaison des verbes (défectifs) dans sa compétence, mais aucun chapitre ne couvre explicitement le verbe sourd, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Impératif du verbe doublé",
+    "skill": "Conjuguer le verbe doublé (مضاعف) à l'impératif à toutes les personnes de l'interlocuteur et former l'impératif à partir de l'inaccompli apocopé.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "impératif",
+      "verbe doublé",
+      "conjugaison",
+      "arabe",
+      "inaccompli apocopé",
+      "6ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau de conjugaison à trois paradigmes (verbe simple, forme dérivée en أ, forme en است) et la règle de passage de l'inaccompli apocopé à l'impératif peuvent servir de base à des exercices de transformation, de complétion de tableau ou à une infographie de synthèse.",
+    "themeGroup": "L'impératif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

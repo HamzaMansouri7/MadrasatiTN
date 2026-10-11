@@ -1,0 +1,114 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 12,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La respiration chez l'être humain : volume d'air inspiré, rôle de l'oxygène et échanges d'énergie (comparaison homme / voiture)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "لاَحِظِ المَعْلُومَاتِ الوَارِدَةَ بِالجَدْوَلِ ثُمَّ أَجِبْ :",
+      "body": "تتغيَّرُ كمِّيَّةُ الهواءِ التي تدخل إلى الرِّئتينِ من إنسان إلى آخر ولكن معدّل الكمِّيَّةِ أثناء الزفير العادي والشهيق العادي هي نصف لتر وهو الهواء الجاري.\nأ) مَا هُوَ حَجْمُ الهَوَاءِ الَّذِي يَدْخُلُ رِئَتَيْ طِفْلٍ عُمْرُهُ 12 سنة في حالة راحة لمدّة يوم كامل ؟\nب) ما هو حجم الاكسيجين الَّذي يدخل رِئَتَيْ كَهْلٍ فِي حَالَةِ رَاحَةٍ لِمدّةِ يَومٍ كَامِلٍ ؟",
+      "figureDesc": "جدول بعنوان «عدد الحركات التنفسية عند الإنسان في الدقيقة وأثناء الراحة»: إثر الولادة: من 40 إلى 50؛ 5 سنوات: 50 (كما في الصورة)؛ 12 سنة: 20؛ الكهل: 16. ملاحظتان: عدد الحركات التنفسية يزيد أثناء القيام بحركات مجهدة؛ عدد الحركات التنفسية تنقص أثناء النوم. يلي كل سؤال سطر للإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p012_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أ) أكتب «صواب» أو «خطأ» :",
+      "body": "- الأكسيجين ضروري لعملية الاحتراق.\n- خلايا أعضاء الجسم تمتص ثاني أكسيد الكربون.\n- الأكسيجين ضروري لعملية حرق المواد الغذائية التي تم هضمها وقام الدم بامتصاصها.\n- يَحْتَرِقُ الوَقُودُ في السَّيَّارَةِ لِتُعْطِيَ الحَرَارَةَ الَّتِي تُحَرِّكُهَا.\nب) مَا هُوَ مَصْدَرُ الطَّاقَةِ بالنِّسْبَةِ للإِنْسَانِ ؟\n- مَا هُوَ مصدر الطاقة بالنسبة للسَّيَّارَةِ ؟\n- في كلا الحالتين ما هي أهمِّيَّةُ الاكسيجين ؟",
+      "figureDesc": "رسم لسيارة زرقاء وطفل يمشي مع جداول: السيارة — دخول: وقود، أكسيجين؛ خروج: ثاني أكسيد الكربون، ماء؛ إنتاج: طاقة ميكانيكية، حرارة. الإنسان — دخول: غذاء، أكسيجين؛ خروج: ثاني أكسيد الكربون، ماء؛ إنتاج: طاقة عضلية، طاقة تحتاجها العضلات، حرارة. أسطر فارغة للإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p012_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.6
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite du volume d'air inspiré, du rôle de l'oxygène dans la combustion des aliments et de la comparaison entre l'énergie de l'homme et celle de la voiture, ce qui correspond à l'unité sur l'air, la respiration et la combustion.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La respiration chez l'humain",
+    "skill": "Interpréter un tableau de volumes d'air respiré, calculer un volume journalier et expliquer le rôle de l'oxygène dans la combustion des aliments, en le comparant à une voiture.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "vrai_faux",
+      "probleme"
+    ],
+    "keywords": [
+      "respiration",
+      "volume d'air",
+      "oxygène",
+      "combustion",
+      "énergie",
+      "comparaison homme-voiture"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : calculer le volume d'air respiré sur une journée à partir d'un tableau, enchaîner des affirmations vrai/faux sur l'oxygène et la combustion, et comparer le corps humain à un moteur de voiture pour expliquer la production d'énergie.",
+    "themeGroup": "La respiration"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de l'exercice 7 est absent : titre «عدد الحركات التنفسية عند الإنسان في الدقيقة وأثناء الراحة», colonnes (إثر الولادة: من 40 إلى 50 ; 5 سنوات: 50 ; 12 سنة: 20 ; الكهل: 16) et notes sur l'effort et le sommeil."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le schéma de l'exercice 8 est absent : voiture et personne avec les cadres دخول (وقود، أكسيجين / غذاء، أكسيجين), إنتاج (طاقة ميكانيكية، حرارة / طاقة عضلية، طاقة تحتاجها العضلات، حرارة), خروج (ثاني أكسيد الكربون، ماء)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'exercice 7, le paragraphe «تتغيَّرُ كمِّيَّةُ…» vient avant la consigne «لاحظ المعلومات…» dans l'image ; la transcription les inverse."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Vocalisation incohérente : certains mots sont voyellés (مَا هُوَ حَجْمُ…) et d'autres non, alors que l'image montre des voyelles partielles, par ex. «ضَرُورِيٌّ», «لِعَمَلِيَّةِ», «تَمْتَصُّ», «ثَانِي أَكْسِيدِ الكَرْبُونِ», «خَلَايَا أَعْضَاءِ الجِسْمِ»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الاكسيجين» et «الأكسيجين» sont écrits de façon inégale ; l'image écrit «الأكسيجين» dans les phrases de l'exercice 8 (le texte lu «الاكسيجين» en 7-ب est proche de l'image)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de réponse et les tirets pour écrire صواب/خطأ ne sont pas indiqués ; le numéro de page 32 est absent."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

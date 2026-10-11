@@ -1,0 +1,143 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 35,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 8 : اختبار تقويمي للتثبيت والدعم (النقود، الكتل، المستقيم والقطع، مسائل الأثمان)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ما هو المبلغ الذي يملكه أمين بالمِلّيم؟",
+      "body": "يوجد بحافظة نقود أمين ما يلي :\n* 15 قطعة نقدية من فئة 10 مي.\n* 7 قطع نقدية من فئة 100 مي.\n* 3 قطع نقدية من فئة 1 000 مي.\nما هو المبلغ الذي يملكه أمين بالمِلّيم؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p035_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هي كتلة الوعاء ملآنا عسلا ؟",
+      "body": "كتلة وعاء فارغ 6 هغ. ملأناه إلى النّصف عسلا فصارت كتلته 1050 غ. ما هي كتلة الوعاء ملآنا عسلا ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p035_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارسم النّقط \"أ\" \"ب\" \"ج\" \"د\" على المستقيم (ص) بحيث : - \"أ\" تنتمي إلى [ج د] و \"ج\" تنتمي إلى [أ ب] - أكتب أسماء القطع المتحصّل عليها.",
+      "body": "ارسم النّقط \"أ\" \"ب\" \"ج\" \"د\" على المستقيم (ص) بحيث :\n- \"أ\" تنتمي إلى [ج د] و \"ج\" تنتمي إلى [أ ب]\n- أكتب أسماء القطع المتحصّل عليها.",
+      "figureDesc": "مستقيم مائل (ص) مرسوم في أسفل يسار الإطار لوضع النقط عليه.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p035_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ابحث عن قيمة هذه المشتريات. ما هو ثمن الكغ الواحد من البرتقال؟",
+      "body": "ذهبت فاطمة إلى بائع الخضر واشترت 2 كغ من البطاطا و 3 كغ من الجزر و 1 كغ من البصل. اِبحث عن قيمة هذه المشتريات إذا علمت أن تعريفة الأثمان للكغ الواحد هي الآتية : [بطاطا بـ 450 مي] [بصل بـ 380 مي] [جزر بـ 250 مي]\nتذكّرت فاطمة أنّ أمّها أَوْصَتها بشراء بعض الغلال فطلبت من الخضّار أن يَزِن لها كيلوغرامَيْن من البرتقال وأعطتهُ ورقة مالية ذات 5 دنانير لِيَسْتَخْلِصَ ثمنَ جميع البضائع ونظرا لانعدام الصّرف لديْه طلب البائع من فاطمة أن تزيده 30 مِلّيما وأرجع لها دينارَيْن. ما هو ثمن الكغ الواحد من البرتقال؟",
+      "figureDesc": "تعريفة الأثمان في ثلاثة مستطيلات: بطاطا بـ 450 مي، بصل بـ 380 مي، جزر بـ 250 مي.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p035_i4",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.17
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de consolidation (semaine 8) mêlant monnaie, masses, droites et segments, et problèmes de prix : elle couvre plusieurs chapitres, sans correspondance claire avec un seul chapitre officiel.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie, masses, droite et problèmes de prix",
+    "skill": "Résoudre des problèmes sur la monnaie (millimes), les masses et les achats, et placer des points sur une droite en nommant les segments.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "monnaie",
+      "millimes",
+      "masse",
+      "segments",
+      "droite",
+      "prix"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation de révision en quatre exercices courts : dénombrer le contenu d'un porte-monnaie, trouver une masse à partir d'un récipient à moitié rempli, placer des points sur une droite selon des appartenances, calculer le total d'achats à partir d'un tarif au kilo.",
+    "themeGroup": "Monnaie"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 2 : « 6 هغ » est transcrit correctement, mais la structure [2] commence par la question répétée avant l'énoncé (duplication/ordre : la question est placée en tête puis répétée)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Pour chaque exercice, la question finale est dupliquée en tête du bloc avant l'énoncé ; cela n'existe pas dans l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« المِلّيم » : l'image affiche « بالمليم » avec une marque partielle (المَلِيم), pas de shadda sur le lam ; « مِلّيما » également sans shadda dans l'image (مليما)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَوْصَتها », « يَزِن », « لِيَسْتَخْلِصَ », « كيلوغرامَيْن », « دينارَيْن » : voyelles visibles dans l'image mais « أَوْصَتها » correspond à « أَوْصَتْها » (sukun sur le ta) ; « اِبحث » et « النّقط » écrits avec des marques légèrement différentes."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "« 1 000 مي » dans l'image est écrit « 1 000 1 مي » (ordre inversé dû au RTL) ; la transcription 1 000 est acceptable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « كيلوغرامَيْن » est écrit dans l'image « كيلوغرامَيْن » ; ok. « 5 دنانير » ok. Les phrases du paragraphe sont toutes présentes."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

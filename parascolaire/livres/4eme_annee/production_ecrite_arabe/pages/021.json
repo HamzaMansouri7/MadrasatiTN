@@ -1,0 +1,82 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 21,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التعبير عن مشاعر الحزن والخوف: نصوص داعمة لوصف الحالة النفسية (الحزن والخوف)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "منكسرة\nوعلى فمه ابتسامة ترقرقت على شفتيه الكالحتين كما تترقرق الدمعة في العين المهمومة\nآلمني أن يحل بيني وبينه الجفاء محل الألفة والصداقة\nكان المتضررون منتصبين هنا وهناك يعانون آثار النكبة ويقدرون الموقف في صمت\nاستحالت الابتسامة إلى زفرة عقبها متنهدا\nاستبد بي اليأس والكآبة والحزن فعدت إلى المنزل أجر خطى الخيبة وعيون أترابي ترمقني في شفقة\nأحست بالحسرة والندم وانهمرت الدموع مدرارا فغسلت وجهها وبللت جسمها\nضرب صدره ذاهلا وصرخ صرخة اليائس المصروع وراح يجهش بالبكاء\nبكت بكاء مرا حتى تورمت عيناها وامتنعت عن الطعام والشراب حزنا حتى أوشكت على الهلاك لشدة ضعفها",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p021_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الخوف",
+      "body": "ارتعدت أوصالي\nعقل الخوف لساني\nذاب قلبي\nغاب صوتي\nتبددت أحشائي\nتسمرت في مكاني\nجمد الدم في عروقي\nجف حلقي\nاصطكت أسناني\nترقرقت عيناي دموعا\nذهلت مما رأيت\nتملكني الخوف\nتسمرت في مكاني لا أقوى على الحركة\nوضعت يدي على فمي لأكتم الصرخة التي أحسست أنها ستنطلق",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "production_ecrite_arabe_p021_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-4-m8",
+    "confidence": 0.28
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur l'expression des sentiments de tristesse et de peur (vocabulaire et phrases d'appui pour décrire l'état psychologique), ce qui relève de l'arabe mais ne correspond clairement à aucune des huit unités officielles, centrées sur les personnages, la chronologie, les indices, le schéma narratif et la cohérence textuelle.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Expression de la tristesse et de la peur",
+    "skill": "Employer un lexique et des expressions imagées pour décrire un état psychologique de tristesse ou de peur dans une production d'expression écrite.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "expression écrite",
+      "tristesse",
+      "peur",
+      "lexique des sentiments",
+      "description psychologique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banques de phrases et d'images pour décrire des réactions physiques et émotionnelles (peur, chagrin), réutilisables pour des exercices de rédaction guidée, de classement des expressions par sentiment ou de complétion de phrases.",
+    "themeGroup": "Expression des sentiments et émotions"
+  },
+  "audit": {
+    "accuracy": 0.99,
+    "errors": [],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.99
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

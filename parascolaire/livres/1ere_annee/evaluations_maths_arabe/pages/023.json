@@ -1,0 +1,165 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 23,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قراءة وفهم وتفكيك وتركيب - حرف الطاء",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُعَمِّرُ الْفَرَاغَ بِالْكَلِمَةِ الْمُنَاسِبَةِ : تَعْبُرَانِ - تُقَاوِمَانِ - تَحْمِلَانِ",
+      "body": "• أَخَذَتِ الْأُمُّ وَابْنَتُهَا ................................... الرِّيحَ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p023_i1",
+      "topicId": "ar-1-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَكْتُبُ « أُوَافِقُ » / « لَا أُوَافِقُ » / « لِأَنَّ ابْنَتَهَا تَسْتَطِيعُ السَّيْرَ » / « لِكَيْ لَا تُعَرِّضَ ابْنَتَهَا لِلْخَطَرِ ».",
+      "body": "• حَمَلَتِ الْأُمُّ ابْنَتَهَا، وَعَبَرَتِ الطَّرِيقَ.\n..................................................................................................\n..................................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p023_i2",
+      "topicId": "ar-1-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَكْتُبُ «أُوَافِقُ» / « لَا أُوَافِقُ» / «لِأَنَّ الْأُمَّ تَعِبَتْ مِنْ أَجْلِهَا» / «لِأَنَّهُ يَجِبُ عَلَى الْأُمِّ أَنْ تُسَاعِدَ ابْنَتَهَا».",
+      "body": "• شَكَرَتْ إِينَاسُ أُمَّهَا.\n..................................................................................................\n..................................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p023_i3",
+      "topicId": "ar-1-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَقْرَأُ الْجُمَلَ وَأُكَمِّلُ بِالْمَقْطَعِ الْمُنَاسِبِ .",
+      "body": "[ طًّا * طَا * طٍ ]\n• مَحَا ........ رِقٌ خَـ........ بِمِكْشَـ........ كَبِيرٍ.\n\n[ طًا * طْ * طَ ]\n• شَاهَدَ ........لَالٌ شَرِيـ........ ........رِيقًا.\n\n[ طَا * طٌ ]\n• اِشْتَرَتْ فَـ........مَةُ قُرْ........",
+      "figureDesc": "ثلاث رسوم توضيحية مرافقة للجمل: 1. طفل يمسح بالمكشطة على طاولة. 2. طفل يشاهد شريط بطريق على التلفاز. 3. فتاة ووالدها يشتريان قرطاً من بائع المجوهرات.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p023_i4",
+      "topicId": "ar-1-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَرْبِطُ الصُّورَةَ بِالْمَقْطَعِ الَّذِي يَحْتَوِي عَلَيْهِ اسْمُهَا.",
+      "body": "• الصُّورَةُ 1 (قُطَيْطٌ / قِطٌّ): [ طُ | طِ | طَ ]\n• الصُّورَةُ 2 (سَوْطٌ): [ طُ | طِ | طَ ]\n• الصُّورَةُ 3 (وَطْوَاطٌ): [ طُ | طِ | طَ ]\n• الصُّورَةُ 4 (مِلْقَطٌ): [ طُ | طِ | طَ ]",
+      "figureDesc": "أربع صور تمثل: قط صغير (قُطَيْط)، سوط، وطواط، ملقط، وتحت كل صورة جدول يضم الحركات القصيرة لحرف الطاء: طُ، طِ، طَ للربط بينها.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p023_i5",
+      "topicId": "ar-1-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "ar-1-u5",
+  "topicTitle": "Unité 5 : Mon compagnon dans le monde des métiers",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-1-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u2",
+    "confidence": 0.52
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la lettre arabe ط (Ṭā') avec lecture, compréhension et exercices de syllabes, ce qui correspond à l'Unité 5 (lettres Ayn, Ghayn, Ta, Dha) en arabe de 1ère année, même si le programme indique 'Ta' et 'Dha' sans nommer explicitement ط.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Lettre ṭāʾ (ط) : lecture et graphie",
+    "skill": "Lire et comprendre de courtes phrases, puis reconnaître et écrire la lettre ṭāʾ avec ses voyelles et sa position dans le mot.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "appariement",
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "lettre ṭāʾ",
+      "lecture arabe",
+      "syllabes",
+      "voyelles brèves",
+      "compréhension de phrases",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Mélange de compréhension d'un récit (une mère et sa fille face au vent) avec prise de position justifiée (je suis d'accord / pas d'accord), de phrases à compléter par la bonne syllabe selon la position de la lettre, et d'appariement image-syllabe : format transposable à d'autres lettres.",
+    "themeGroup": "Lettres et sons: ف ق ط"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.4 : 'أُعَمِّرُ' alors que l'image montre 'أُعْمُرُ' (أَعْمُرُ)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.5 : 'تُعَرِّضَ' alors que l'image montre 'تُعَرِّضَ' avec 'تُعَرِّضُ' ; l'image porte 'تُعَرِّضَ ابْنَتَهَا' : voyelles à vérifier. 'أَكْتُبُ' correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.7 : 'أُكَمِّلُ' alors que l'image montre 'أُكْمِلُ' (أُكَمِّلُ / أُكْمِلُ)"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.7 phrase 2 : choix '[ طًا * طْ * طَ ]' faux ; l'image montre 'طًّا * طَ * طٌ' (avec chadda sur le premier, et 'طٌ' à la fin)"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.7 phrase 1 : choix '[ طًّا * طَا * طٍ ]' : l'image montre 'طًّا * طَا * طٍ' ; la transcription 'مَحَا ........ رِقٌ' : le mot est 'مَحَا ... رِقٌ' OK mais 'خَـ........' a un tiret/tatwil mal placé"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.7 phrase 3 : choix '[ طَا * طٌ ]' faux ; l'image montre 'طٍ * طًا' (طِ * طًا)"
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Ex.8 : les noms des images (قُطَيْطٌ/قِطٌّ, سَوْطٌ, وَطْوَاطٌ, مِلْقَطٌ) sont inventés/ordre incorrect ; image 1 chaton, 2 fouet, 3 chauve-souris, 4 pince"
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Ex.8 : les cases de syllabes ne sont pas identiques pour chaque image ; l'image montre des variantes (طُ طِ طٌّ / طَ طٌ طْ / طٍ طٌ طْ / طٍ طَ طٌّ), pas 'طُ|طِ|طَ' répété"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

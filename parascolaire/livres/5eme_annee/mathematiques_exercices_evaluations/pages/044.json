@@ -1,0 +1,150 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 44,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 24: أتدرّب على حل مسائل تتضمن أسئلة تستوجب الإجابة عن كل سؤال مرحلتين (ملاحظة: الصفحة تتعلق بمسائل الرياضيات، وهي مرقمة 45 على الصفحة)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "24",
+      "instruction": "",
+      "body": "الدّرس 24 : أَتدرّب على حل مسائل تتضمن أسئلة تستوجب الإجابة عن كل سؤال مرحلتين",
+      "figureDesc": "عنوان الدرس داخل إطار مزخرف، مع الرقم 5 في الزاوية",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p044_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة عدد 1 - أ",
+      "instruction": "اشْطُبْ السُّؤَالَ الَّذِي لاَ يَسْتَوْجِبُ الإِجَابَةَ عَنْ مَرْحَلَتَيْنِ. ثُمَّ أُجِبْ.",
+      "body": "أ- يَسْلُكُ أَحَدُ العُمَّالِ لِنَقْلِ الْبَضَائِعِ شَاحِنَةً كُتْلَتُهَا فَارِغَةً 4 ط و 5 ق. شُحِنَ عَلَيْهَا 3 ط و 5 ق مِنَ الإِسْمَنْتِ وَ 1 ط و 750 كغ مِنَ الْجِيرِ.\nالسُّؤَالُ: أ- مَا هِيَ كُتْلَةُ الْبِضَاعَةِ الْمَشْحُونَةِ ؟\nب- كَمْ تُصْبِحُ كُتْلَةُ الشَّاحِنَةِ وَهِيَ مُحَمَّلَةٌ ؟\nالإِجَابَةُ: ........",
+      "figureDesc": "سطران منقّطان لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p044_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة عدد 1 - ب",
+      "instruction": "اِطْرَحْ سُؤَالاً وَأَجِبْ عَنْهُ.",
+      "body": "ب- تُعْتَبَرُ هَذِهِ الشَّاحِنَةُ جِسْرًا فِي حُدُودِ الْمَدِينَةِ عَلَيْهِ اللاَّفِتَةُ الْمُحَدِّدَةُ لِلْحُمُولَةِ الْقُصْوَى.\nالسُّؤَالُ: ........\nالإِجَابَةُ: ........",
+      "figureDesc": "صورة جسر معلّق بأسلاك مع لافتة تحديد الحمولة",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p044_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة عدد 2",
+      "instruction": "أَيُّ القُرُوضِ اخْتَارَ هَذَا الشَّابُّ ؟ / اخْتَارَ الشَّابُّ الْقَرْضَ الْمُنَاسِبَ لاعْتِدَالِ فَائِضِهِ، هَلْ تَرَاهُ مُصِيبًا فِي تَقْدِيرِهِ؟ عَلِّلْ رَأْيَكَ. / كَمْ يَرْجِعُ الشَّابُّ لِلْبَنْكِ بَعْدَ 5 سَنَوَاتٍ ؟",
+      "body": "أَرَادَ أَحَدُ الشَّبَابِ اقْتِرَاضَ مَبْلَغٍ مَالِيٍّ مِنَ الْبَنْكِ لِتَدْعِيمِ وَتَطْوِيرِ مَشْرُوعِهِ. فَعَرَضَ عَلَيْهِ الْبَنْكُ قِيمَةَ الْقُرُوضِ وَالْفَوَائِضِ كَمَا هُوَ مُبَيَّنٌ بِالْجَدْوَلِ.\nاخْتَارَ الشَّابُّ قَرْضًا لاَ يَتَجَاوَزُ تِسْعَةَ آلاَفِ دِينَارٍ وَلاَ يَقِلُّ عَنْ سِتَّةِ آلاَفِ دِينَارٍ.\n* أَيُّ الْقُرُوضِ اخْتَارَ هَذَا الشَّابُّ ؟ ........\n* اخْتَارَ الشَّابُّ الْقَرْضَ الْمُنَاسِبَ لاعْتِدَالِ فَائِضِهِ، هَلْ تَرَاهُ مُصِيبًا فِي تَقْدِيرِهِ؟ عَلِّلْ رَأْيَكَ.\n* كَمْ يَرْجِعُ الشَّابُّ لِلْبَنْكِ بَعْدَ 5 سَنَوَاتٍ ؟",
+      "figureDesc": "جدول: القرض بالدينار: 5000، 7500، 10000، 15000؛ الفائض السنوي: 3/100، 5/100، 8/100، 12/100. تليه أسطر منقّطة للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p044_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.18
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des problèmes à deux étapes sur des masses (tonnes, quintaux, kg) avec la charge d'un camion, ce qui correspond à la Période 4 (quintal/tonne), même si le second problème sur les prêts bancaires est plus général.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes à deux étapes",
+    "skill": "Résoudre des problèmes dont chaque question nécessite deux étapes de calcul, en repérant les questions qui n'en demandent qu'une.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "problèmes à deux étapes",
+      "masses",
+      "tonnes et quintaux",
+      "prêt bancaire",
+      "intérêts",
+      "tableau de données"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Contextes concrets réutilisables : camion chargé face à un panneau de limite de charge, et choix d'un prêt bancaire à partir d'un tableau de taux. Formats utiles : barrer la question à une seule étape, formuler soi-même une question, justifier un choix.",
+    "themeGroup": "Problèmes de synthèse et vie courante"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.78
+  },
+  "audit": {
+    "accuracy": 0.78,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de la moyenne 2 est absent : prêt en dinars (5000, 7500, 10000, 15000) et intérêt annuel (3/100, 5/100, 8/100, 12/100)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« يَسْلُكُ » doit être « يَمْلِكُ » (l'image porte « يَمْلِكُ أحدُ العمّال لنقل البضائع شاحنة »)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« شَاحِنَةً كُتْلَتُهَا فَارِغَةً » : formulation proche de l'image, mais « تُصْبِحُ » et « الْبِضَاعَةِ » doivent être « تُصبحُ » / « الْبَضَاعَةِ » (« مَاهِيَ كُتْلَةُ الْبِضَاعَةِ »)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« تِسْعَةَ آلاَفِ » est correct dans l'image, mais « سِتَّةِ آلاَفِ » : OK. Aucune erreur ici ; en revanche « اخْتَارَ الشَّابُّ الْقَرْضَ الْمُنَاسِبَ لاعْتِدَالِ فَائِضِهِ » doit être « لاعتدال فائضه » : acceptable."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les lignes « اخْتَارَ الشَّابُّ... » et « كَمْ يَرْجِعُ... » sont dupliquées dans l'en-tête de la moyenne 2 (répétition dans le champ des consignes)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le mot « المسألة عدد 2 » et le numéro de page 45 ainsi que le numéro « 5 » (en-tête) sont absents ou non indiqués ; l'image du pont n'est pas signalée."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La consigne « اشطب السؤال... » apparaît avant l'énoncé de la moyenne 1 alors que l'énoncé vient en premier dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الْجِيرِ » : l'image porte « الْجِير » (chaux), correct ; « 5 ق » correct ; « الإِسْمَنْتِ » correct. « تُعْتَبَرُ » : l'image porte « تُعتبرُ » (OK)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

@@ -1,0 +1,180 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 26,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension (Lire et s'exprimer) : portrait de Brice, compréhension d'un texte et remise en ordre de paragraphes",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Brice s'est assis au fond, à côté de Julien. Pourquoi ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p026_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- En classe, Brice est calme. (……………)",
+      "figureDesc": "Case arrondie à compléter après la phrase.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p026_i2",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5b",
+      "instruction": "Écris la phrase qui le montre :",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p026_i3",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5c",
+      "instruction": "Complète avec des adjectifs du texte :",
+      "body": "- Brice est ……………………, ……………………, et …………………… .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p026_i4",
+      "topicId": "fr-6-m3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Le narrateur est impressionné par Brice. Relève, dans le texte, le détail qui le montre :",
+      "body": "Une ligne pointillée pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p026_i5",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Que penses-tu de Yannick, Jean-Raoul et leur bande ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p026_i6",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Remets ces trois paragraphes en ordre pour former un texte :",
+      "body": "Les deux amis\n* Ils s'aiment bien tous les deux. Ils sont tout le temps ensemble.\n* La porte de l'école s'ouvre toute grande et les enfants sortent en criant joyeusement.\n* À l'école, on les appelle « les inséparables ».\n* Yann est Gilou prennent le même chemin pour rentrer à la maison.\n(Quatre lignes pointillées pour récrire le texte dans l'ordre.)",
+      "figureDesc": "Encadré contenant le texte désordonné ; en dessous, quatre lignes pointillées.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p026_i7",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.65
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français (portrait de Brice, amitié entre Brice et Julien, mise en ordre de paragraphes) ; le thème de l'amitié et de l'acceptation des autres se rapproche le plus du Module 3, mais rien dans la page ne le confirme sans ambiguïté.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    121
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Comprendre un texte portrait en relevant des informations et des adjectifs, puis remettre des paragraphes dans l'ordre.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "vrai_faux",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "portrait",
+      "adjectifs",
+      "relevé d'indices",
+      "remise en ordre",
+      "paragraphes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable de questions sur un portrait de personnage (justifier, répondre par oui/non puis citer la phrase preuve, relever des adjectifs, donner son avis) suivi d'une remise en ordre de phrases ou paragraphes sur le thème de l'amitié à l'école.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : « Lecture - Compréhension », « Sagesse », « 6 ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page n'est pas transcrit : « Lire et s'exprimer », numéro de page 25, « 6 ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 8 : « Yann est Gilou » est conforme à l'image (la faute d'origine est conservée), donc pas d'erreur de transcription. Le titre « Les deux amis » est bien transcrit."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le nombre de lignes pointillées est décrit entre parenthèses (« Deux lignes pointillées… »). Ce sont des descriptions ajoutées, pas du texte de la page. Pour la question 8, il y a 4 lignes, ce qui est correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 5a : la transcription omet l'encadré arrondi autour des pointillés (réponse oui/non). Le contenu est correct, mais la forme n'est pas indiquée."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

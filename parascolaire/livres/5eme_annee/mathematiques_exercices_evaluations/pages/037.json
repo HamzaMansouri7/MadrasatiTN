@@ -1,0 +1,140 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 37,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قيس المساحات (وحدات قيس المساحة وتحويلها) وحل مسائل حول مساحة المربع والمستطيل. Note : la page porte le numéro 38 et son contenu relève des mathématiques, pas de la langue arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "عَوِّضِ الكِتَابَةَ الجَمْعِيَّةَ بِقَيْسٍ وَاحِدٍ:",
+      "body": "★ 3 م² + 560 دسم² + 14 صمم² = ............... صمم²\n★ 750 صمم² + 250 صمم² + 90 دسم² = ............... م²\n★ 60750 مم² + 4250 مم² + 45 صمم² = ............... صمم²\n★ 1400 مم² + 760 صمم² + 1826 صمم² = ............... دسم²",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p037_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أ – أَيُّ الصَّفِيحَتَيْنِ أَكْبَرُ؟",
+      "body": "صَفِيحَتَانِ مِنَ الزُّجَاجِ إِحْدَاهُمَا مُرَبَّعَةٌ قَيْسُ ضِلْعِهَا 30 دسم وَالثَّانِيَةُ مُسْتَطِيلَةٌ قَيْسُ بُعْدَيْهَا 20 دسم و45 دسم.",
+      "figureDesc": "أربعة أسطر منقطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p037_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "احْسُبْ قَيْسَ مِسَاحَةِ الأَرْضِ المُرَبَّعَةِ بِطَرِيقَتَيْنِ مُخْتَلِفَتَيْنِ.",
+      "body": "لِطَاهِرٍ قِطْعَةُ أَرْضٍ مُسْتَطِيلَةُ الشَّكْلِ طُولُهَا ضِعْفُ عَرْضِهَا وَقَيْسُ عَرْضِهَا 25 م. قَسَّمَهَا صَاحِبُهَا إِلَى قِطْعَتَيْنِ مُتَقَايِسَتَيْنِ مُرَبَّعَتَيْنِ.",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p037_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أ – احْسُبْ قَيْسَ مِسَاحَةِ القِطْعَةِ الوَاحِدَةِ؟\nب – احْسُبْ ثَمَنَ شِرَاءِ الجُزْءِ الوَاحِدِ مِنْ قِطْعَةِ الخَشَبِ؟",
+      "body": "لِنَجَّارٍ وَرَقَةٌ مِنَ الخَشَبِ المَضْغُوطِ طُولُهَا 4 م وَعَرْضُهَا 15 دسم. قَسَّمَهَا إِلَى 12 قِطْعَةً مُتَقَايِسَةً شِرَاهَا بِـ 5 د المِتْرِ الوَاحِدِ.",
+      "figureDesc": "أسطر منقطة لكتابة الحل بعد كل سؤال",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p037_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.27
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite des unités d'aire (m², dm², cm², mm²), de leurs conversions et de l'aire du carré et du rectangle, ce qui est bien des mathématiques, mais aucun des chapitres officiels ne correspond clairement : math-5-ch1 porte sur les mesures agraires (ha, a, ca) et math-5-p6 sur les aires latérales et totales des solides.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Aires du carré et du rectangle",
+    "skill": "Convertir des unités d'aire et résoudre des problèmes de calcul d'aire du carré et du rectangle.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "unités d'aire",
+      "conversions",
+      "aire du carré",
+      "aire du rectangle",
+      "problème de partage",
+      "comparaison de surfaces"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : comparer deux plaques de verre de formes différentes, découper un terrain rectangulaire en deux carrés (aire calculée de deux façons), partager une planche en pièces égales avec calcul de prix ; les conversions additives d'unités d'aire sont de bons exercices d'entraînement.",
+    "themeGroup": "Mesures d'aires et unités agraires"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 5, 1re ligne : '14 صمم²' est correct, mais l'image indique '14 صم²' (et non صمم²). Toutes les unités 'صمم²' de l'exercice 5 sont à corriger en 'صم²'."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 5, 3e ligne : l'image montre '60750 مم² + 4250 مم² + 45 صم²', la transcription a 'صمم²' (à corriger en 'صم²')."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 5, 4e ligne : l'image montre '1400 مم² + 760 صم² + 1826 صم²' ; il se peut que la première unité soit 'مم²' ou 'هم²' (lecture incertaine) ; 'صمم²' est à corriger en 'صم²'."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 6 : l'énoncé (صفيحتان...) doit précéder la question 'أ – أي الصفيحتين أكبر؟'. Même problème pour 7 (énoncé avant la consigne) et 8 (énoncé avant les questions أ et ب)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 6 : 'ضِلْعِهَا' correct selon l'image, mais 'ضِعْفُ' (ex. 7) est bien lu ; OK. En 8 : 'شِرَاهَا بِـ 5 د' : l'image montre 'شراؤها' / 'شِرَاهَا' ; vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 8 : 'وَعَرْضُهَا' dans la transcription, l'image porte 'و عرضها' sans voyelles ; voyelles ajoutées non visibles (ex. 'لِنَجَّارٍ' avec tashkeel partiel)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

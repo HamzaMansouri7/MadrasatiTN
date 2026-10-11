@@ -1,0 +1,117 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 47,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 25: أكوّن الأعداد العشرية وأكتبها وأقرؤها (ملاحظة: الصفحة تتضمن محتوى رياضيات: الأعداد العشرية وتحويل وحدات الأطوال والسعات والكتل)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "25",
+      "instruction": "الدَّرس 25: أُكَوِّنُ الأعداد العشرية وأكتبها وأقرؤها",
+      "body": "عنوان الدرس في رأس الصفحة (الصفحة 48).",
+      "figureDesc": "عنوان داخل إطار زخرفي، وفي الجهة اليسرى رقم 5 (السنة الخامسة).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p047_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لاحِظِ الْجَدَاوِلَ ثُمَّ اكْتُبِ الْوِحْدَةَ الْمُنَاسِبَةَ :",
+      "body": "125 ............... أو 12,5 ...............\n607 ............... أو 60,7 ...............\n8105 ............... أو 810,5 ...............",
+      "figureDesc": "ثلاثة جداول للوحدات. الأول (أطوال): مم، صم، دسم، م، دكم، هم، كم؛ المعبأ: دسم=5، م=2، دكم=1. الثاني (سعات): مل، صل، دسل، ل، دكل، هل؛ المعبأ: ل=7، دكل=0، هل=6. الثالث (كتل): مغ، صغ، دسغ، غ، دكغ، هغ، كغ؛ المعبأ: مغ=5، صغ=0، دسغ=1، غ=8.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p047_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حَوِّلْ إِلَى الْوِحْدَةِ الْمَطْلُوبَةِ :",
+      "body": "2036 صم = ............... دسم = ............... م = ............... دكم.\n8379 م = ............... هم = ............... كم.\n1540 ل = ............... دكل = ............... هل.\n64530 دسغ = ............... دكغ = ............... كغ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p047_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "حَوِّلِ الأَقْيِسَةَ إِلَى عَدَدٍ عَشْرِيٍّ أَوْ عَدَدٍ صَحِيحٍ طَبِيعِيٍّ :",
+      "body": "45 م و 65 صم = ............... صم = ............... م.\n25 صل و 71 ل = ............... صل = ............... ل.\n15 هغ و 13 غ = ............... غ = ............... هغ.\n9 كغ و 27 دسغ = ............... دسغ = ............... كغ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p047_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ- احْسُبْ طُولَ الْمَسَافَةِ الْمَقْطُوعَةِ بالمِ وَالكم.",
+      "body": "تَنَارَبَ ثَلَاثَةُ عَدَّائِينَ عَلَى قَطْعِ مَسَافَةِ السِّبَاقِ فَقَطَعَ الأَوَّلُ 1,750 كم وَحَرَى الثَّانِي 1700 م وَلَكِنَّ الثَّالِثَ سَقَطَ بَعْدَ أَنْ قَطَعَ 15 هم.",
+      "figureDesc": "سطران منقطان لكتابة الإجابة.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_evaluations_p047_i5",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.37
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la formation, l'écriture et la lecture des nombres décimaux avec conversions d'unités de longueur, capacité et masse, ce qui correspond à la Période 2 (nombres décimaux), même si les conversions de masses touchent aussi la Période 4.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres décimaux et conversions d'unités",
+    "skill": "Former, écrire et lire des nombres décimaux, et convertir des mesures de longueur, capacité et masse en utilisant les tableaux de conversion.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "conversion d'unités",
+      "longueurs",
+      "capacités",
+      "masses",
+      "tableau de conversion"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : associer l'écriture décimale à l'unité adaptée grâce à un tableau, enchaîner des conversions sur plusieurs unités, transformer des mesures composées en décimal, et résoudre un problème contextualisé (course de coureurs) qui oblige à comparer des distances exprimées en unités différentes.",
+    "themeGroup": "Nombres décimaux : notions et comparaison"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

@@ -1,0 +1,119 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 45,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Note : cette page ne contient aucun contenu mathématique. Il s'agit d'un texte d'éducation islamique : « بر الوالدين » (la piété filiale envers les parents)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "بر الوالدين",
+      "body": "المقصود ببر الوالدين\nحسن المعاملة والاهتمام بأمرهم،\nوالعناية بشأنهم، والإحسان إليهم، والامتثال لأمرهم،\nخاصة في كبر السن والشيخوخة\nو بر الوالدين واجب على كل مسلم له أبوين على قيد الحياة،\nوعكسه العقوق، وهو حرام ومعصية، وكبيرة من الكبائر",
+      "figureDesc": "Page encadrée d'une bordure décorative de cercles dorés ornés d'un chevron. Titre en rouge.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p045_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "فضل بر الوالدين",
+      "body": "لأهمية الوالدين قرن الله سبحانه وتعالى بين عبادته وبر الوالدين، في عدة آيات من سور القرآن الكريم،\nمنها قال تعالى  واعبدوا الله ولا تشركوا به شيئاً وبالوالدين إحساناً\nوقال تعالى  وقضى ربك أن لا تعبدوا إلا إياه وبالوالدين إحساناً",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p045_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "بر الوالدين من أحب العبادات والأعمال إلى الله تعالى بعد الصلاة،\nوقدمه النبي على الجهاد في سبيل الله، وفي الحديث أن رجلا سأل النبي صلى الله عليه وسلم أي العمل أحب إلى الله ؟ قال  الصلاة على وقتها قال  ثم أي ؟ قال  ثم بر الوالدين  قال  ثم أي ؟ قال  الجهاد في سبيل الله",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p045_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "بر الوالدين سبب لمرضاة الله تعالى وفي الحديث  رضا الرب تبارك وتعالى في رضا الوالدين، وسخط الله تبارك وتعالى في سخط الوالدين",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p045_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "بر الوالدين سبب لدخول الجنة\nو سبب لتفريج الكروب والهموم والاحزان",
+      "figureDesc": "Texte en gras, police différente.",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p045_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u1",
+    "confidence": 0.12
+  },
+  "topicSubject": "Éducation islamique",
+  "topicReason": "La page traite de la piété filiale envers les parents (بر الوالدين), un sujet d'éducation islamique, matière absente de la liste des chapitres officiels (arabe, français, maths, sciences, histoire-géographie), donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "pageType": "exercise",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "La piété filiale envers les parents",
+    "skill": "Comprendre la définition et la valeur du bien envers les parents à partir de versets coraniques et de hadiths, et en tirer les bienfaits.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "piété filiale",
+      "parents",
+      "Coran",
+      "hadith",
+      "désobéissance",
+      "satisfaction d'Allah"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Leçon structurée en rubriques (définition, mérite, bienfaits) avec versets et hadith, réutilisable pour des QCM, des appariements verset/idée, des textes à trous ou des mises en situation de comportements envers les parents.",
+    "themeGroup": "Les parents et la famille"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

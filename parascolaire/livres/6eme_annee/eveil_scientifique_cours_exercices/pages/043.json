@@ -1,0 +1,125 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 43,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "L'air : compressibilité et expansion de l'air (l'air occupe un espace, se comprime et se détend)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَحْضِرْ كِيساً بلاَستيكِيّاً وَاُرْبُطْ فُوَّهَتَهُ بِأُنْبُوبٍ ثُمَّ انْفُخْ بِهِ كَمِّيَّةً مِنَ الهَوَاءِ.",
+      "body": "- أَغْلِقِ الطَّرَفَ الخَارِجِيَّ لِلأُنْبُوبِ بِسَدَادَةٍ مُنَاسِبَةٍ.\n- أَدْخِلِ الطَّرَفَ الخَارِجِيَّ لِلأُنْبُوبِ إِلَى كِيسٍ بَلاَستيكِيٍّ آخَرَ، وَاُرْبُطْ فُوَّهَتَهُ بِالأُنْبُوبِ.\n- انْزَعِ السَّدَادَةَ عَنْ طَرَفِ الأُنْبُوبِ وَاضْغَطْ عَلَى الكِيسِ الأَوَّلِ.\n- مَاذَا تَسْتَنْتِجُ ؟",
+      "figureDesc": "Dessin de trois étapes : un sac plastique gonflé et attaché à un tube ; une main pressant le premier sac relié par un tube à un second sac (bleu) ; l'air passe du premier sac au second qui se gonfle.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p043_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "سُدَّ فُوَّهَةَ المِحْقَنَةِ بِأُصْبُعِكَ، وَاضْغَطِ المِكْبَسَ بِشِدَّةٍ ثُمَّ اتْرُكْهُ. مَاذَا تُلاَحِظُ ؟",
+      "body": "- سُدَّ فُوَّهَةَ المِحْقَنَةِ بِأُصْبُعِكَ وَاجْذِبِ المِكْبَسَ ثُمَّ اتْرُكْهُ. مَاذَا تُلاَحِظُ ؟\n- مَاذَا يُمْكِنُكَ أَنْ تَسْتَنْتِجَ مِنَ التَّجْرِبَتَيْنِ السَّابِقَتَيْنِ ؟",
+      "figureDesc": "Photographie : mains d'un élève tenant une seringue, un doigt bouchant l'embout, et poussant/tirant le piston.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p043_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "ثَبِّتْ بِالْوَنِ المَطَّاطِ عَلَى فُوَّهَةِ القِنِّينَةِ البلاَستيكِيَّةِ.",
+      "body": "- صُبَّ المَاءَ فِي الوِعَاءِ.\n- حَاوِلْ تَغْطِيسَ القِنِّينَةِ المَنْزُوعَةِ القَعْرِ عُمُودِيّاً فِي المَاءِ، وَالقَعْرُ إِلَى الأَسْفَلِ.\n- مَاذَا تُلاَحِظُ ؟ اشْرَحْ",
+      "figureDesc": "Deux photographies : une main plongeant une bouteille plastique sans fond, surmontée d'un ballon de baudruche, dans une bassine bleue remplie d'eau ; le ballon se gonfle.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p043_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.27
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page présente des expériences (sac plastique, seringue, bouteille dans l'eau) sur la compressibilité et l'expansion de l'air, ce qui relève de l'unité sur l'air, même si cette unité insiste surtout sur la composition, la respiration et la combustion.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Compressibilité et expansion de l'air",
+    "skill": "Mettre en évidence par l'expérience que l'air se comprime, se détend et occupe un espace.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "air",
+      "compressibilité",
+      "expansion",
+      "seringue",
+      "expérience",
+      "ballon"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Trois expériences de manipulation avec du matériel simple (sacs plastiques reliés par un tube, seringue bouchée, bouteille sans fond plongée dans l'eau avec un ballon) qui amènent à observer, expliquer et conclure sur les propriétés de l'air ; elles se réutilisent facilement en activités d'investigation ou en fiches d'expérimentation.",
+    "themeGroup": "L'air et ses propriétés"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 7: «كَمِّيَّةً» transcrit avec shadda sur le mim; l'image montre «كَمِيَّةً» (pas de shadda sur le mim)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 7: «بلاَستيكِيّاً» sans voyelles complètes; l'image porte «بَلاَستيكِيّاً» (fatha manquante sur le ba)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Bloc 7: «تَسْتَنْتِجُ» dans l'image (damma finale); la transcription a «تَسْتَنْتِجُ» mais avec un ت+س+ت+ن+ت ordre correct; vérifier. Image: «تَسْتَنْتِجُ ؟»."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Bloc 9: «بِالْوَنِ» transcrit avec كسرة et ثَبِّتْ; l'image montre «ثَبِّتْ بِالْوَنِ المَطَّاطِ» avec le mot «بِالْوَنِ» (par le ballon) – correct; pas d'erreur confirmée, mais dans l'image il y a un double espace, sans importance."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Bloc 8: «المِحْقَنَةِ» et «المِكْبَسَ» corrects; «تَسْتَنْتِجَ» correct. Dans l'image «التَّجْرِبَتَيْنِ» est écrit «التَّجْرِبَتَيْنِ» avec ب sans shadda, la transcription est conforme."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Bloc 7: «وَاُرْبُطْ» (image: وَاُرْبُطْ avec alif wasla et damma) — la transcription est conforme au 1er cas mais utilise «وَاُرْبُطْ» alors que le 2e cas est écrit «وَاُرْبُطْ»; cohérent."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

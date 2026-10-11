@@ -1,0 +1,213 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 123,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Épreuve de français (hors mathématiques) : la pollution de l'air - lexique, grammaire, conjugaison (B1-B3)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "Donne deux mots de la même famille de « composition » en ajoutant un préfixe ou un suffixe convenable : (1pt)",
+      "body": "",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p123_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "Cherche dans le texte le mot « étiquette » correspondant à cette série de mots : (1pt)",
+      "body": "Camion- Voiture- Autocar- Bus- Automobile- Train- Avion- Moto.",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p123_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "B2- Grammaire (6 points) : Remplis le tableau suivant à partir de cette phrase : (1pt)",
+      "body": "A notre époque, les gens qui vivent en ville, souffrent gravement des facteurs polluants.",
+      "figureDesc": "Tableau vide à 3 colonnes : CCL, CCM, CCT, avec une ligne de réponse",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p123_i3",
+      "topicId": "fr-6-m5",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "Remplace le mot souligné par un pronom personnel complément convenable :",
+      "body": "Les polluants présents dans l'air contaminent l'alimentation. (1pt)  [le mot souligné : « l'alimentation »]",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p123_i4",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "Transforme la phrase déclarative suivante en une phrase interrogative : 1(pt)",
+      "body": "L'air pollué cause des maladies cardiovasculaires.",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p123_i5",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "Transforme la phrase affirmative suivante en une phrase négative : (1pt)",
+      "body": "Ils utilisaient encore des appareils de chauffage polluants.",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p123_i6",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "Transforme la phrase suivante à la voix passive : (1pt)",
+      "body": "Les polluants de l'air endommagent notre appareil respiratoire.",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p123_i7",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "17",
+      "instruction": "Transforme la phrase suivante au discours indirect : (1pt)",
+      "body": "Mon père affirme : « Je ne brule plus les déchets verts dans la nature. »",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p123_i8",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "18",
+      "instruction": "B3- Conjugaison (6 points) : Conjugue les verbes entre parenthèses aux temps demandés : (Présent de l'indicatif). (1pt)",
+      "body": "Nous (préférer) les transports communs car ils (être) moins polluants.",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p123_i9",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "19",
+      "instruction": "Conjugue le verbe entre parenthèses au temps demandé : (Futur simple) (1pt)",
+      "body": "Tu (réduire) les exercices sportifs à l'extérieur si l'air devient très pollué.",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p123_i10",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "20",
+      "instruction": "Conjugue le verbe entre parenthèses au temps demandé : (Passé composé) (1pt)",
+      "body": "Leila (prendre) son vélo pour aller à l'école.",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p123_i11",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "21",
+      "instruction": "Conjugue le verbe entre parenthèses au temps demandé : (L'imparfait de l'indicatif) (1pt)",
+      "body": "Chaque dimanche, vous (se promener) près de la plage pour respirer l'air frais.",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p123_i12",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.22
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une épreuve de français (lexique, grammaire, conjugaison) sur la pollution de l'air, thème proche du Module 5 « Sauver la nature », mais elle couvre aussi des notions d'autres modules (pronoms compléments, voix passive, discours indirect), donc le rattachement reste incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Épreuve de français : pollution de l'air",
+    "skill": "Appliquer le lexique, la grammaire et la conjugaison (famille de mots, pronoms, transformations de phrases, présent et futur) à partir du thème de la pollution de l'air.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "pollution de l'air",
+      "famille de mots",
+      "transformations de phrases",
+      "voix passive",
+      "discours indirect",
+      "conjugaison"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série d'exercices de langue notés sur 1 point, tous construits autour d'un même thème écologique (la pollution de l'air). Le barème découpé en lexique, grammaire et conjugaison est un modèle réutilisable pour une épreuve de français thématique.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "examTrimester": 2,
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

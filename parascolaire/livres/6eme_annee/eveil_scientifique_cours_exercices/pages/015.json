@@ -1,0 +1,114 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 15,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الدم ومكوناته: الكريات الحمراء والكريات البيضاء والبلازما (Le sang et ses constituants)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "عِنْدَمَا يُجْرَحُ شَخْصٌ هَلْ يَتَوَاصَلُ عَادَةً سَيَلَانُ دَمِهِ ؟ لِمَاذَا ؟",
+      "body": "عِنْدَمَا يُجْرَحُ شَخْصٌ هَلْ يَتَوَاصَلُ عَادَةً سَيَلَانُ دَمِهِ ؟ لِمَاذَا ؟ (سطر فارغ للإجابة)",
+      "figureDesc": "رسم لطفل جالس على مقعد أحمر ينظر إلى جرح في ركبته ويمسكها.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p015_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 أ",
+      "instruction": "ضَعْ عَلَامَةً (×) فِي الخَانَةِ المُنَاسِبَةِ",
+      "body": "جدول بعمودين: الكريات الحمراء | الكريات البيضاء. الأسطر: أ) أصغر الكريات الدموية حجما؛ ب) بها نواة؛ ج) ليست منتظمة الشكل؛ د) تعيش مدة 120 يوما؛ هـ) مستديرة ومقعّرة الوجهين؛ و) أكبر الكريات الدموية حجما؛ ز) ليس بها نواة.",
+      "figureDesc": "صورة قطرة دم مكبّرة آلاف المرّات تبيّن الكريات الحمراء والكريات البيضاء والبلازما، وشكل لوعاء دموي يبيّن جدار شعيرة دموية والكريات الحمراء والكريات البيضاء والبلازما (الدم). الجدول فارغ.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p015_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 ب",
+      "instruction": "اكتب مكان النقط: الكريات الحمراء ، الكريات البيضاء ، البلازما",
+      "body": "........ تنقل المواد المغذية والفضلات.\n........ تدافع على الجسم بالقضاء على الجراثيم.\n........ تزوّد الجسم بالأكسيجين وتخلّصه من ثاني أكسيد الكربون.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p015_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "هل تعلم",
+      "body": "هل تعلم أنه يتكون كل يوم في نخاعك العظمي:\n- 150 مليارا من الكريات الحمراء.\n- كثير من المليارات من الكريات البيضاء.",
+      "figureDesc": "إطار أزرق به معلومة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p015_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَنْ يُعْطِي اللَّوْنَ الأَحْمَرَ لِلدَّمِ؟",
+      "body": "مَنْ يُعْطِي اللَّوْنَ الأَحْمَرَ لِلدَّمِ؟ (سطر فارغ للإجابة)",
+      "figureDesc": "صورة مجهرية لكريات حمراء داخل وعاء دموي.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p015_i5",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.7
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite du sang et de ses constituants (globules rouges, globules blancs, plasma, coagulation, moelle osseuse), ce qui relève de l'Unité 3 sur le système circulatoire et la composition du sang.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Le sang et ses constituants",
+    "skill": "Identifier les constituants du sang (globules rouges, globules blancs, plasma) et associer chacun à ses caractéristiques et à son rôle.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "sang",
+      "globules rouges",
+      "globules blancs",
+      "plasma",
+      "moelle osseuse",
+      "hémoglobine"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un tableau à cocher comparant deux types de cellules selon leurs propriétés, un texte à trous associant chaque constituant à sa fonction, une question d'accroche partant d'une situation vécue (blessure) et un encadré « Le savais-tu ? » avec des chiffres marquants.",
+    "themeGroup": "La circulation sanguine et le sang"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

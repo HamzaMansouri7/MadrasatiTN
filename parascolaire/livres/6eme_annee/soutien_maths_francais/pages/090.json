@@ -1,0 +1,209 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 90,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Épreuve de français (compréhension de l'écrit et activités réflexives sur la langue) – thème : l'eau et son économie. Note : la page n'est pas une page de mathématiques ; c'est la page 2 sur 4 d'un sujet d'examen de français.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "I-5",
+      "instruction": "Que constitue l'eau pour notre survie ? (2pts)",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "Cadre en haut de page avec un triangle hachuré et la mention arabe « لا يكتب أي شيء في هذا الإطار » (Ne rien écrire dans ce cadre).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p090_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-6",
+      "instruction": "De quel type est le texte ? (Coche la bonne réponse) (1,5pt)",
+      "body": "narratif ☐ ; injonctif ☐ ; argumentatif ☐",
+      "figureDesc": "Trois cases à cocher.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p090_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-7",
+      "instruction": "Donne un titre au texte. (2pts)",
+      "body": "Une ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p090_i3",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-8",
+      "instruction": "À ton avis, faut-il économiser l'eau ? Pourquoi ? (donner deux raisons) (2pts)",
+      "body": "Trois lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p090_i4",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II-A-1",
+      "instruction": "Relève dans le texte l'antonyme de chacun des mots ci-dessous. (1 pt)",
+      "body": "gaspiller # ……………… ; salée # ………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p090_i5",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II-A-2",
+      "instruction": "Ajoute un suffixe à chacun des mots suivants pour former un mot nouveau. (1 pt)",
+      "body": "majorité : ……………… ; seul : ………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p090_i6",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II-A-3",
+      "instruction": "Barre l'intrus dans la liste ci-dessous. (1 pt)",
+      "body": "Puits - barrage - théâtre - rivière - source.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p090_i7",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II-B-1",
+      "instruction": "Entoure le complément circonstanciel de lieu (CCL), et souligne le complément circonstanciel de temps (CCT). (1 pt)",
+      "body": "De nos jours, beaucoup de gestes permettent d'économiser l'eau à la maison.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p090_i8",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II-B-2",
+      "instruction": "Remplace les mots soulignés par les pronoms qui conviennent. (1 pt)",
+      "body": "Il conseille à son ami d'utiliser un arrosoir au jardin pour réduire ses factures d'eau. (mots soulignés : « à son ami » et « ses factures d'eau »). Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p090_i9",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.27
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page d'examen de français sur l'eau et son économie (compréhension de l'écrit, antonymes, suffixes, compléments circonstanciels) ; le thème de la préservation de l'eau se rapproche du Module 5 « Sauver la nature », mais l'épreuve couvre plusieurs notions de langue et ne correspond pas exactement à un seul chapitre.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "L'eau : compréhension et langue",
+    "skill": "Comprendre un texte documentaire sur l'économie de l'eau et appliquer le lexique (antonymes, suffixes, intrus) et la grammaire (compléments circonstanciels, pronoms de remplacement).",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "production_ecrite",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "eau",
+      "économie d'eau",
+      "compréhension de l'écrit",
+      "type de texte",
+      "antonymes",
+      "complément circonstanciel",
+      "pronoms"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Sujet d'examen structuré en deux volets (compréhension puis réflexion sur la langue) autour d'un thème citoyen, avec barème par item, question d'opinion à deux raisons, repérage du type de texte et exercices courts de lexique et de grammaire réutilisables avec un autre thème.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le cadre en haut avec le texte arabe « لا يكتب أي شيء في هذا الإطار » (consigne de ne rien écrire dans le cadre) n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'intitulé de section « II- Activités réflexives sur la langue (18 points) » et les titres « A) Lexique (3 pts) » et « B) Grammaire (6 pts) » ne sont pas transcrits, seulement codés dans les identifiants."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "B-2 : « Deux lignes pointillées » alors que l'image n'en montre qu'une seule pour la réponse."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "B-1 : aucune erreur de mots, mais la mise en forme (CCL à entourer, CCT à souligner) n'est pas précisée ; rien d'inventé sinon."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page « Page 2 sur 4 » et la lettre « D) » visible sur la page voisine ne sont pas transcrits."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

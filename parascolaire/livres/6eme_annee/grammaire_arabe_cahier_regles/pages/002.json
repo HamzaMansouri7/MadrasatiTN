@@ -1,0 +1,135 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 2,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "المعارف: التعريف بالإضافة (قواعد اللغة العربية – المراجعة، الدرس، التوسع)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "الاسم النكرة لا يدل على كائن أو شيء معين، ويذكر مجردا من الألف واللام ال و غير مضاف و من علاماته التنوين كتابُ كتاباً كتابٍ\nالاسم المعرفة يدل على كائن أو شيء معين، ويذكر مقترنا بـ ال أو مضافا و من أنواعه",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p002_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أنواع الاسم المعرفة (جدول المراجعة)",
+      "body": "الاسم العلم: يدل على شخص معين محمد ، عبد الله ، / بلد تونس ، فرنسا / حيوان لولو ، بوبي ،\nالاسم المقترن بـ ال: المدرسة، المدينة\nالاسم المضاف إلى اسم آخر: كتاب القراءة، أبو أحمد،\nالاسم المقترن بضمير: قلمـــي، صديقـــــكم،\nالضمير المنفصل: أنا، نحن، أنتَ، أنتِ، أنتما، أنتم، أنتن، هو، هي، هما، هما، هم، هن\nالضمير المتصل: صافحتك، عاتبتكم، شكرنا،\nاسم الإشارة: هذا، هذه، هذان، هاتان، هؤلاء، أولئك ، ذاك ، تلك\nاسم الموصول: الذي، التي، اللذان، اللتان، الذين، اللاتي",
+      "figureDesc": "جدول من عمودين: نوع المعرفة وأمثلته",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p002_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: أنواع المضاف إليه",
+      "body": "لفظ: مفردة — عاد إلى البيت منذ دقيقة\nتركيب جزئي: نعت و منعوت — سافر منذ يوم واحد\nتركيب جزئي: مضاف و مضاف إليه — قصد عمله منذ شروق الشمس\nتركيب جزئي: معطوف و معطوف عليه — خرج منذ ساعة و نصف\nتركيب إسنادي: جملة فعلية — لم يعد إلى الوطن منذ سافر\nتركيب إسنادي: جملة اسمية — انقطعت أخباره منذ أصبح في الخارج",
+      "figureDesc": "جدول من ثلاثة أعمدة: نوع التركيب، نوع المضاف إليه، مثال (الكلمات المضاف إليها بعد «منذ» بخط غليظ)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p002_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "التوسع: أضف إلى معلوماتك — يمكن أن يكون المضاف إليه",
+      "body": "بدل و مبدل منه: هذه سيارة العم مختار\nاسم موصول و صلته: خالط من يعمل بجد",
+      "figureDesc": "جدول من عمودين وسطرين",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p002_i4",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.17
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une leçon de grammaire arabe (définition par annexion, types de mudhaf ilayh) qui ne correspond clairement à aucune des unités officielles, centrées sur la narration et ses passages, même si l'ensemble reste de l'arabe de 6ème.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Les noms définis : annexion",
+    "skill": "Identifier les types de noms définis et reconnaître les différentes natures du complément d'annexion (mot simple, groupe, proposition).",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "nom défini",
+      "nom indéfini",
+      "annexion",
+      "complément d'annexion",
+      "grammaire arabe",
+      "révision"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau récapitulatif des noms définis (nom propre, article, annexion, pronom suffixe, pronom isolé) et la série de phrases modèles construites sur un même mot-outil, avec un complément d'annexion de nature différente à chaque fois, se prêtent à des exercices de classement, d'identification et de production de phrases.",
+    "themeGroup": "Les cinq noms et l'annexion"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre de la page « المعارف التعريف بالإضافة » est absent de la transcription (il est en tête de l'image)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« ال و غير مضاف » : l'image montre « ال » entre guillemets/espacé, la transcription est acceptable mais la ponctuation est perdue."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أنتَ، أنتِ » : tashkeel présent et conforme ; mais « كتابُ كتاباً كتابٍ » est correct. Pas d'erreur de voyelle notable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le tableau « أنواع المضاف إليه » : la colonne 'لفظ' est transcrite 'مفردة' avec l'exemple, mais les mots en gras (دقيقة، يوم واحد، شروق الشمس، ساعة و نصف، سافر، أصبح في الخارج) ne sont pas signalés, ce qui est mineur."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les sections « التوسع » et « الدرس » sont fusionnées dans des libellés ; le sous-titre « المراجعة » est présent mais l'intitulé « الاسم العلم » 'بلد/حيوان' sont à peu près corrects."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

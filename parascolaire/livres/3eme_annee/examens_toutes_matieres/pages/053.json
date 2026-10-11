@@ -1,0 +1,108 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 53,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "امتحان التربية الإسلامية: حقوق الوالدين وبرّهما، عظمة الله في الكون (سورة فاطر 27-28)، وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "السَّنَدُ 2 : يَحْظَى فَادِي بِالرِّعَايَةِ الْفَائِقَةِ مِنْ طَرَفِ وَالِدِهِ.\nالتَّعْلِيمَةُ 4 : أَعْمُرُ الْجَدْوَلَ بِمَا يُنَاسِبُ.",
+      "body": "اللَّعِبُ مَعَهُمْ - الِاسْتِمَاعُ لِآرَائِهِمْ - مُسَاعَدَتُهُمْ عِنْدَ الْحَاجَةِ - رِعَايَتُهُمْ عِنْدَ الْكِبَرِ - عَدَمُ رَفْعِ الصَّوْتِ أَمَامَهُمْ - غَمْرُهُمْ بِالْعَطْفِ وَالْحَنَانِ",
+      "figureDesc": "جدول من عمودين: «أَعْمَالٌ يَقُومُ بِهَا الْوَالِدَانِ تُجَاهَ أَبْنَائِهِمْ» و«أَعْمَالٌ يَقُومُ بِهَا الْأَبْنَاءُ تُجَاهَ آبَائِهِمْ»، في كل عمود ثلاثة أسطر منقّطة للتعمير، وبجانبها الأعداد 0,5 / 0,5 / 0,5. وفي الأعلى إطار رمادي يحتوي على العبارات المقترحة.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p053_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "السَّنَدُ 3 : خَرَجَ فَادِي مَعَ أَبِيهِ إِلَى الْمَسْجِدِ، فِي حِينِ بَدَأَ الْمَطَرُ يَنْزِلُ.\nالتَّعْلِيمَةُ 5 : خَلَقَ اللَّهُ الْكَثِيرَ مِنَ الْأَشْيَاءِ فِي الْكَوْنِ تَدُلُّ عَلَى عَظَمَتِهِ وَفِيهَا مَنَافِعُ لِلنَّاسِ. أَذْكُرُ فِي فِقْرَةٍ قَصِيرَةٍ بَعْضَ هَذِهِ الْأَشْيَاءِ وَأُبَيِّنُ مَنَافِعَهَا.",
+      "body": "أربعة أسطر منقّطة للإجابة (الأعداد 0,5 / 0,5 / 0,5 على الهامش).",
+      "figureDesc": "أسطر منقّطة للكتابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p053_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : أُكَمِّلُ الْآيَةَ التَّالِيَةَ مِنْ سُورَةِ فَاطِرَ الدَّالَّةَ عَلَى عَظَمَةِ اللَّهِ بِمَا يُنَاسِبُ مِنَ الْكَلِمَاتِ التَّالِيَةِ :",
+      "body": "غَرَابِيبُ - ثَمَرَاتٍ - جُدَدٌ\n«أَلَمْ تَرَ أَنَّ اللَّهَ أَنْزَلَ مِنَ السَّمَاءِ مَاءً فَأَخْرَجْنَا بِهِ .......... مُخْتَلِفًا أَلْوَانُهَا وَمِنَ الْجِبَالِ .......... بِيضٌ وَحُمْرٌ مُخْتَلِفٌ أَلْوَانُهَا وَ.......... سُودٌ.» (سورة فاطر 27 - 28)",
+      "figureDesc": "إطار رمادي يحتوي على الكلمات المقترحة؛ ثلاثة فراغات، لكل فراغ نقطة واحدة (1 / 1 / 1).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p053_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "جدول مقتطع في أسفل الصفحة: الشَّفَوِيُّ - سَلَامَةُ النُّطْقِ : مِنْ 0 إِلَى 1,5 - الِاسْتِرْسَالُ : مِنْ 0 إِلَى 1,5؛ التَّمَيُّزُ: معـ4؛ مَعَايِيرُ الْحَدِّ الْأَدْنَى: مع1أ، مع1ب، مع2أ، مع2ب، مع3؛ عمود الْمَعَايِيرِ.",
+      "figureDesc": "جدول إسناد الأعداد مقطوع جزئيا في أسفل الصفحة",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "examens_toutes_matieres_p053_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p1",
+    "confidence": 0.2
+  },
+  "topicSubject": "Éducation islamique",
+  "topicReason": "La page est un examen d'éducation islamique (droits des parents, grandeur de Dieu, sourate Fâtir 27-28) avec grille de notation, et aucun chapitre officiel de la liste (arabe, maths, éveil scientifique) ne correspond à cette matière.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Droits des parents et grandeur d'Allah",
+    "skill": "Citer les devoirs envers les parents et compléter des versets de la sourate Fâtir (27-28) montrant la grandeur d'Allah dans la création.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "droits des parents",
+      "bienveillance filiale",
+      "sourate Fâtir",
+      "grandeur d'Allah",
+      "création",
+      "barème d'évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le format d'examen s'appuie sur de courtes situations autour d'un enfant et de son père (soins reçus, sortie à la mosquée sous la pluie), avec un tableau à classer, une question ouverte sur les signes de la création et un verset à compléter avec une banque de mots ; la grille de notation par critères est aussi réutilisable.",
+    "themeGroup": "Droits des parents et liens de parenté"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "unknown",
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

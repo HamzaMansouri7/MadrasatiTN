@@ -1,0 +1,290 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 41,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "ترتيب الأعداد تصاعديا وتنازليا وتكوين المجموعات إلى 9",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَكْتُبُ الْأَرْقَامَ التَّالِيَةَ مُرَتَّبَةً تَصَاعُدِيًّا فِي مَوَاقِعِهَا مِنَ السُّلَّمِ.",
+      "body": "4 , 2 , 3 , 5 , 0 , 1",
+      "figureDesc": "سُلَّم من ست درجات (ست مربعات فارغة متصاعدة من اليسار إلى اليمين) ترسم فيه الأرقام",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p041_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُتِمُّ رَسْمَ عَنَاصِرِ الْمَجْمُوعَاتِ التَّالِيَةِ حَسَبَ كَمِّهَا الْمُنَاسِبِ.",
+      "body": "",
+      "figureDesc": "ثلاث مجموعات (دوائر بيضاوية) تحمل كل واحدة فقاعة بعدد. من اليمين: المجموعة ذات العدد 7 وبها 5 بيوت مرسومة؛ المجموعة ذات العدد 6 وبها 3 أشجار؛ المجموعة ذات العدد 8 وبها مستطيل أزرق واحد.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p041_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُلَوِّنُ سِلْسِلَةَ الْأَعْدَادِ الْمُنَاسِبَةَ لِلْعَدِّ الْعَكْسِيِّ عِنْدَ انْطِلَاقِ الصَّارُوخِ.",
+      "body": "[9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0]\n[0 | 1 | 3 | 5 | 7 | 9]\n[0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]\n[0 | 2 | 4 | 6 | 8]",
+      "figureDesc": "أربعة أشرطة عددية، وبجانبها رسم صاروخ بنفسجي تحيط به نجوم صفراء",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p041_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التَّعْلِيمَةُ : أُحِيطُ أَرْقَامَ الطَّوَابِقِ الَّتِي يَمُرُّ بِهَا مُرَادٌ عِنْدَ اسْتِعْمَالِهِ الْمُصْعَدَ الْكَهْرَبَائِيَّ لِلْعَوْدَةِ إِلَى شُقَّتِهِ.",
+      "body": "أُنْجِزُ وَأَتَمَيَّزُ :\nالسَّنَدُ : يَسْكُنُ مُرَادٌ بِالطَّابِقِ الرَّابِعِ بِإِحْدَى الْعِمَارَاتِ.\n5    0    6    4    9\n  7    8    2    3    1",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p041_i4"
+    }
+  ],
+  "topicId": "math-1-p2",
+  "topicTitle": "Période 2 : Nombres de 6 à 9, comparaison, ordre et lignes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p1",
+    "confidence": 0.64
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les chiffres de 0 à 9 : ordre croissant sur l'échelle, comptage à rebours (décroissant), constitution de collections et repérage des étages. Cela correspond à la Période 2 (nombres de 6 à 9, ordre croissant/décroissant).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Ordre des nombres jusqu'à 9",
+    "skill": "Ranger les nombres de 0 à 9 dans l'ordre croissant et décroissant, et associer une quantité à un nombre.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "ordre croissant",
+      "comptage à rebours",
+      "échelle numérique",
+      "constitution de collections",
+      "nombres jusqu'à 9"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des situations concrètes rendent l'ordre des nombres vivant : décompte avant le décollage d'une fusée, étages traversés par un ascenseur jusqu'à l'appartement, nombres placés sur une échelle, et collections à dessiner selon une quantité donnée.",
+    "themeGroup": "Comparaison et rangement des nombres"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : 'مُرَتَّبَةً' dans la transcription, alors que l'image porte 'مُرَتَّبَةً' avec le tashkeel visible 'مُرَتَّبَةً' ; en revanche 'السُّلَّمِ' est transcrit correctement. Aucune faute réelle ici."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 6 : l'image porte 'الْعَدَدِ' / 'سِلْسِلَةَ الْأَعْدَادِ', lecture correcte ; 'أُلَوِّنُ' est correct."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Consigne : l'image porte 'الْمِصْعَدَ' (mot de l'image 'الْمُصْعَدَ' avec damma), la transcription écrit 'الْمِصْعَدَ' ; à vérifier, la lecture de l'image est 'الْمُصْعَدَ'."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "'الطَّوَابِقِ' dans la transcription alors que l'image donne 'الطَّوابِقِ' ; différence mineure de tashkeel."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le mot 'التَّعْلِيمَةُ :' (étiquette verte) est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 5 : le contenu des ensembles est omis (cercles avec étiquettes 8, 6, 7 ; 1 rectangle bleu, 3 arbres, 5 maisons)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "La phrase 'السَّنَدُ' est présente, mais la ligne 'السَّنَدُ' est fusionnée avec le titre ; l'étiquette 'التَّعْلِيمَةُ' manque, ainsi que le numéro de page 65 et la marge latérale ('الرياضيات', 'السنة 1', 'الثلاثي الثاني')."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 4 : l'escalier de cases n'est pas décrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 6 : la fusée n'est pas mentionnée."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'الأرقام:' et 'السلاسل المقترحة:' sont des étiquettes ajoutées qui ne figurent pas dans l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Consigne de l'exercice final : l'image porte 'الْمُصْعَدَ' (damma sous le mim, soit 'مُصْعَد'). La transcription écrit 'الْمِصْعَدَ' avec une kasra."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'étiquette verte 'التَّعْلِيمَةُ :' qui introduit la consigne 'أُحِيطُ أَرْقَامَ…' est absente de la transcription."
+      },
+      {
+        "type": "ordre/description",
+        "severity": "minor",
+        "detail": "Exercice 5 : le texte est en RTL, donc le premier ensemble est celui de droite (étiquette 7, 5 maisons). La figureDesc le décrit en dernier, comme 'الثالثة'. L'ordre est à rectifier, et les étiquettes (bulles) sont à préciser."
+      },
+      {
+        "type": "texte ajouté",
+        "severity": "minor",
+        "detail": "Exercice 6 : la mention 'السلاسل المقترحة:' n'existe pas dans l'image. Elle est ajoutée par la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 65 et la marge latérale ('الرياضيات', 'السنة 1', 'الثلاثي الثاني') ne sont pas transcrits. Ce sont des éléments de mise en page."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَكْتُبُ الْأَرْقَامَ التَّالِيَةَ مُرَتَّبَةً تَصَاعُدِيًّا فِي مَوَاقِعِهَا مِنَ السُّلَّمِ.",
+      "body": "4 , 2 , 3 , 5 , 0 , 1",
+      "figureDesc": "سُلَّم من ست درجات (ست مربعات فارغة متصاعدة من اليسار إلى اليمين) ترسم فيه الأرقام",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p041_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُتِمُّ رَسْمَ عَنَاصِرِ الْمَجْمُوعَاتِ التَّالِيَةِ حَسَبَ كَمِّهَا الْمُنَاسِبِ.",
+      "body": "",
+      "figureDesc": "ثلاث مجموعات (دوائر بيضاوية) تحمل كل واحدة فقاعة بعدد. من اليمين: المجموعة ذات العدد 7 وبها 5 بيوت مرسومة؛ المجموعة ذات العدد 6 وبها 3 أشجار؛ المجموعة ذات العدد 8 وبها مستطيل أزرق واحد.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p041_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُلَوِّنُ سِلْسِلَةَ الْأَعْدَادِ الْمُنَاسِبَةَ لِلْعَدِّ الْعَكْسِيِّ عِنْدَ انْطِلَاقِ الصَّارُوخِ.",
+      "body": "[9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0]\n[0 | 1 | 3 | 5 | 7 | 9]\n[0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]\n[0 | 2 | 4 | 6 | 8]",
+      "figureDesc": "أربعة أشرطة عددية، وبجانبها رسم صاروخ بنفسجي تحيط به نجوم صفراء",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p041_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التَّعْلِيمَةُ : أُحِيطُ أَرْقَامَ الطَّوَابِقِ الَّتِي يَمُرُّ بِهَا مُرَادٌ عِنْدَ اسْتِعْمَالِهِ الْمُصْعَدَ الْكَهْرَبَائِيَّ لِلْعَوْدَةِ إِلَى شُقَّتِهِ.",
+      "body": "أُنْجِزُ وَأَتَمَيَّزُ :\nالسَّنَدُ : يَسْكُنُ مُرَادٌ بِالطَّابِقِ الرَّابِعِ بِإِحْدَى الْعِمَارَاتِ.\n5    0    6    4    9\n  7    8    2    3    1",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p041_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَكْتُبُ الْأَرْقَامَ التَّالِيَةَ مُرَتَّبَةً تَصَاعُدِيًّا فِي مَوَاقِعِهَا مِنَ السُّلَّمِ.",
+      "body": "4 , 2 , 3 , 5 , 0 , 1",
+      "figureDesc": "رسم لسُلَّم يحتوي على ست درجات (مربعات متصاعدة)",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p041_i1",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُتِمُّ رَسْمَ عَنَاصِرِ الْمَجْمُوعَاتِ التَّالِيَةِ حَسَبَ كَمِّهَا الْمُنَاسِبِ.",
+      "body": "",
+      "figureDesc": "ثلاث مجموعات: الأولى كَمُّهَا 8 وبها مستطيل واحد، الثانية كَمُّهَا 6 وبها 3 أشجار، الثالثة كَمُّهَا 7 وبها 5 بيوت",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p041_i2",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُلَوِّنُ سِلْسِلَةَ الْأَعْدَادِ الْمُنَاسِبَةَ لِلْعَدِّ الْعَكْسِيِّ عِنْدَ انْطِلَاقِ الصَّارُوخِ.",
+      "body": "السلاسل المقترحة:\n- [9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0]\n- [0 | 1 | 3 | 5 | 7 | 9]\n- [0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]\n- [0 | 2 | 4 | 6 | 8]",
+      "figureDesc": "رسم صاروخ بجانب أربعة أشرطة تتضمن متتاليات عددية مختلفة",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p041_i3",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أُحِيطُ أَرْقَامَ الطَّوَابِقِ الَّتِي يَمُرُّ بِهَا مُرَادٌ عِنْدَ اسْتِعْمَالِهِ الْمِصْعَدَ الْكَهْرَبَائِيَّ لِلْعَوْدَةِ إِلَى شُقَّتِهِ.",
+      "body": "أُنْجِزُ وَأَتَمَيَّزُ :\nالسَّنَدُ : يَسْكُنُ مُرَادٌ بِالطَّابِقِ الرَّابِعِ بِإِحْدَى الْعِمَارَاتِ.\nالأرقام:\n5    0    6    4    9\n  7    8    2    3    1",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p041_i4",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

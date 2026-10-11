@@ -1,0 +1,162 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 42,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وضعية إدماجية: حلّ مسألة حسابية حول النقود (المبالغ المالية بالمي) - علاء وفادي والإخوة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : كَمِّلِ الْمَبْلَغَ الَّذِي كَانَ بِحَوْزَةِ عَلَاءٍ بِالْقِطَعِ النَّقْدِيَّةِ الْمُنَاسِبَةِ ؟",
+      "body": "السَّنَدُ 3 : وَكَانَ بِحَوْزَةِ عَلَاءٍ 5730 مي.",
+      "figureDesc": "إطار يحتوي على قطعتين نقديتين معدنيتين داكنتين، وتحتهما المبلغ المكتوب: 5730 مي. المطلوب إكمال المبلغ بالقطع النقدية المناسبة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p042_i1",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : مَا هُوَ مِقْدَارُ الْمَبْلَغِ الْمُتَبَقِّي عِنْدَ عَلَاءٍ ؟",
+      "body": "",
+      "figureDesc": "ثلاثة أسطر منقطة للإجابة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p042_i2",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "التَّعْلِيمَةُ 7 : مَا هُوَ مِقْدَارُ الْمَبْلَغِ الْمُتَبَقِّي عِنْدَ فَادِي ؟",
+      "body": "السَّنَدُ 4 : أَمَّا فَادِي فَقَدْ جَمَعَ الْمَبْلَغَ الَّذِي يَمْلِكُهُ طِيلَةَ سِتَّةِ أَيَّامٍ فَتَحَصَّلَ عَلَى 5910 مي",
+      "figureDesc": "ستة أسطر منقطة للإجابة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p042_i3",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "التَّعْلِيمَةُ 8 : أُمَثِّلُ الْمَبْلَغَ الْمُتَبَقِّيَ عِنْدَ فَادِي بِالْقِطَعِ النَّقْدِيَّةِ الْمُنَاسِبَةِ ؟",
+      "body": "........ مي",
+      "figureDesc": "إطار فارغ لرسم القطع النقدية، وتحته سطر منقط لكتابة المبلغ بالمي.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p042_i4",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "التَّعْلِيمَةُ 9 : كَمْ أَصْبَحَ عِنْدَ الْإِخْوَةِ قَبْلَ شِرَاءِ الْمُثَلَّجَاتِ ؟",
+      "body": "السَّنَدُ 5 : جَمَعَ الْإِخْوَةُ مَا تَبَقَّى لَهُمْ مِنْ مَبَالِغَ مَالِيَّةٍ. وَاشْتَرَوْا ثَلَاثَ قِطَعٍ مِنَ الْمُثَلَّجَاتِ، ثَمَنُ الْقِطْعَةِ الْوَاحِدَةِ 1200 مي.",
+      "figureDesc": "أسطر منقطة للإجابة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p042_i5",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-3-p2",
+  "topicTitle": "Période 2 : Addition et soustraction jusqu'à 9999 et perpendicularité",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-3-u1",
+    "confidence": 0.19
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de situation d'intégration en mathématiques : problème sur des sommes d'argent (5730 mi, 5910 mi, 3×1200 mi) qui demande additions et soustractions jusqu'à 9999 ; la multiplication par un chiffre y figure aussi, et la page peut relever d'une synthèse, donc le choix est incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes sur les sommes d'argent",
+    "skill": "Résoudre une situation d'intégration par étapes sur des montants en millimes : composer, soustraire et additionner des sommes.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "monnaie",
+      "millimes",
+      "situation d'intégration",
+      "soustraction",
+      "addition",
+      "pièces de monnaie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation d'intégration en fil rouge, avec plusieurs personnages et des supports numérotés. Elle enchaîne la composition d'un montant avec des pièces, le calcul du reste, puis la mise en commun des sommes pour un achat (glaces), ce qui se prête à d'autres contextes d'achat.",
+    "themeGroup": "Problèmes additifs et soustractifs"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "عَلَاءٍ : l'image montre « عَلَاءٍ » avec tanwin, donc cohérent ; mais « الْمُتَبَقِّيَ » (instruction 8) : l'image porte « الْمُتَبَقِّي » sans fatha finale visible"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الْمَبْلَغَ » (instruction 5) : l'image montre « الْمَبْلَغَ » avec fatha, OK ; « كَمِّلِ » : l'image montre « كَمِّلْ » avec sukun, pas kasra"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« طِيلَةَ سِتَّةِ » : l'image montre « طِيلَةَ سِتَّةَ » (fatha sur le dernier ة de سِتَّةَ)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Instruction 8 : « أُمَثِّلُ » dans l'image est « أُمَثِّلُ », OK ; « النَّقْدِيَّةِ » dans l'image est écrit « النَّقْدِيَّةِ » avec ق sukun, mineur"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Sous l'instruction 9, les lignes de réponse pointillées ne sont pas transcrites ; les barèmes en marge (مع3، مع2ب، مع1، 2ب) sont omis ; l'image de pièces de monnaie (instruction 5) n'est pas signalée"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans chaque item, le support (السند) apparaît ici après ou avant l'instruction de façon inversée selon la page : السند 3 est au-dessus de التعليمة 5 dans l'image, la transcription met la التعليمة en premier"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« 5910 مي » (السند 4) : l'image n'a pas de point final, conforme ; « ثَمَنُ » est écrit « ثَمَنُ » mais le mot est coupé sur deux lignes (ثـمَنُ), OK"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

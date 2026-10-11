@@ -1,0 +1,89 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 21,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : « Pas d'accord sur le programme » (d'après Charles Milou)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Pas d'accord sur le programme\nCe samedi après-midi, il fait froid, le vent souffle très fort. Heureusement, nous avons la télé.\n-Chic, il y a un match de rugby, dit mon frère.\nMa sœur bondit de son fauteuil.\n-Je regrette, mais on donne aussi un film formidable.\nOn ne va pas le rater pour voir quinze fous se disputer un ballon pendant deux heures.\n-D'abord, ils ne sont pas quinze mais trente ; ensuite, ce ne sont pas des fous mais des sportifs.\n-Et toi, tu les regardes, assis dans ton fauteuil…\n-Je pense qu'à la même heure, il doit y avoir des dessins animés, et justement « la Panthère Rose » ; c'est mon émission préférée, dit grand-père.\nLaissez-moi voir ma « Panthère » et après, vous regarderez ce que vous voudrez.\nSur le petit écran, une jolie jeune fille joue dans un énorme nuage de bulles.\nElle nous conseille d'essayer sa nouvelle savonnette.\nC'est alors qu'un formidable coup de vent fait claquer les volets.\nSur l'écran, plus d'image. C'est encore l'antenne qui a lâché !\nIl va falloir monter sur la terrasse. Mais, pour l'instant, il y a trop de vent.\n-Parfait, murmure papa, qui n'aime pas trop la télévision.\nD'après Charles Milou",
+      "figureDesc": "Texte encadré avec le titre en italique gras ; en-tête « Lecture - Compréhension » (Sagesse, 6ème année de base).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p021_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1a",
+      "instruction": "Barre ce qui est faux :",
+      "body": "- L'histoire se déroule :\n[en été.]   [en hiver.]",
+      "figureDesc": "Deux propositions « en été. » et « en hiver. » encadrées.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p021_i2",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1b",
+      "instruction": "Relève, dans le texte, deux détails qui le montrent :",
+      "body": "……………………………………………………………\n……………………………………………………………",
+      "figureDesc": "Deux lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p021_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.22
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une leçon de lecture-compréhension en français (texte « Pas d'accord sur le programme » avec questions sur la saison), mais le thème (désaccord sur un programme télé entre frère et sœur) ne correspond clairement à aucun module précis ; le plus proche serait le module 3 ou le module 7 (temps libre), sans certitude.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture : texte narratif",
+    "skill": "Comprendre un court texte en relevant des indices explicites (saison, météo) pour justifier une réponse.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "relevé d'indices",
+      "dialogue",
+      "saison",
+      "désaccord familial"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation quotidienne de désaccord entre frère et sœur sur le choix d'un programme télé, réutilisable pour des questions de compréhension qui demandent de choisir entre deux propositions puis de justifier par des indices relevés dans le texte.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,104 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 46,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أَتَعَرَّفُ الْقِطَعَ النَّقْدِيَّةَ (1 ، 2 ، 5)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الْحِسَابُ الذِّهْنِيُّ : أَكْتُبُ الأَعْدَادَ النَّاقِصَةَ :",
+      "body": "يَأْتِي مُبَاشَرَةً بَعْدَ | العَدَدُ | يَأْتِي مُبَاشَرَةً بَعْدَ\n........... | ........... | 6\n5 | ........... | ...........\n........... | 8 | ...........",
+      "figureDesc": "جدول للحساب الذهني يربط بين أعداد وما يأتي مباشرة بعدها",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p046_i1",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْسُمُ عَلَامَةَ (X) فَوْقَ مَا يُمَثِّلُ قِطَعًا نَقْدِيَّةً.",
+      "body": "(1 مي)   (3 مي)   (6 مي)   (2 مي)   (4 مي)   (5 مي)",
+      "figureDesc": "ست دوائر تحتوي على قيم مليمات مختلفة: 1 مي، 3 مي، 6 مي، 2 مي، 4 مي، 5 مي",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p046_i2",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبِطُ:",
+      "body": "المجموعات النقدية:\n- المجموعة الأولى: قطعة من فئة 5 مي وقطعة من فئة 2 مي\n- المجموعة الثانية: 4 قطع من فئة 2 مي\n- المجموعة الثالثة: قطعة من فئة 1 مي وقطعتان من فئة 2 مي\n\nالمبالغ المقابلة:\n• 8 مي\n• 5 مي\n• 7 مي",
+      "figureDesc": "ثلاث مجموعات من القطع النقدية يُطلب ربط كل منها بالمبلغ المناسب (8 مي، 5 مي، 7 مي)",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p046_i3",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْتُبُ الْعَدَدَ الَّذِي يُنَاسِبُ الْمَبْلَغَ الْمَالِيَّ أَوْ أُمَثِّلُهُ بِأَقَلِّ عَدَدٍ مِنَ الْقِطَعِ.",
+      "body": "- سَلْمَى: قطع نقدية [5 مي، 1 مي، 1 مي، 2 مي] ← ........... مي\n- سَلِيمْ: [إطار فارغ لتمثيل المبلغ] ← 7 مي\n- يَقِينْ: قطع نقدية [1 مي، 1 مي، 2 مي، 2 مي] ← ........... مي",
+      "figureDesc": "جدول يحتوي على رسوم لثلاثة أطفال (سلمى، سليم، يقين) مع مبالغ نقدية أو قطع نقدية لتحديد المجموع أو رسم القطع بأقل عدد ممكن",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p046_i4",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "math-1-p6",
+  "topicTitle": "Période 6 : Longueurs, masses, monnaie et résolution de problèmes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p6",
+    "confidence": 0.76
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la reconnaissance des pièces de monnaie tunisiennes (1, 2, 5 millimes) et sur la composition de sommes, ce qui correspond à la Période 6 (monnaie), avec un court calcul mental sur les nombres qui précèdent et qui suivent.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie : pièces de 1, 2, 5 millimes",
+    "skill": "Reconnaître les pièces de monnaie tunisiennes et calculer ou composer une somme avec des pièces de 1, 2 et 5 millimes.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "appariement",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "monnaie",
+      "millimes",
+      "pièces",
+      "calcul mental",
+      "nombres suivants et précédents",
+      "somme d'argent"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression allant de la reconnaissance des pièces (cocher les vraies pièces) à l'association de groupes de pièces à leur somme, puis à la composition d'un montant avec le moins de pièces possible, en situation avec des personnages. Le calcul mental sur les nombres qui précèdent et suivent sert d'échauffement.",
+    "themeGroup": "Monnaie : pièces et millimes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

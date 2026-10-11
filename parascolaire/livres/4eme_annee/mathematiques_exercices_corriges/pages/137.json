@@ -1,0 +1,210 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 137,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "La multiplication et l'ordre des opérations : priorité des parenthèses, calcul de produits (26×38, 425×207, 219×162), distributivité de la multiplication sur l'addition et la soustraction",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "مثال (ب) و مثال (ج) — ملاحظة: لحساب عبارات عددية بها عمليات ضرب وجمع أو ضرب وطرح نعطي الأولوية للأقواس ثم أولوية الضرب على الجمع والطرح عند حسابها.",
+      "body": "مثال (ب): 2 x (3 + 4) x 5 + 6 ؛ 2 x 7 x 5 + 6 ؛ 2 x 35 + 6 ؛ 70 + 6 ؛ = 76. مثال (ج): (2 x 3 + 4) x 5 + 6 ؛ (6 + 4) x 5 + 6 ؛ 10 x 5 + 6 ؛ 50 + 6 ؛ = 56.",
+      "figureDesc": "Deux schémas en arbre avec flèches et accolades montrant les étapes de calcul des expressions (ب) et (ج), jusqu'aux résultats 76 et 56.",
+      "answer": "(ب) 76 ؛ (ج) 56",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p137_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "لحساب عدد المربعات: كتب مهدي ما يلي:",
+      "body": "(3 x 4) + (3 x 20) + (10 x 4) + (10 x 20) = 13 x 24 ؛ 12 + 60 + 40 + 200 = ؛ 312 =",
+      "figureDesc": "Quadrillage de 13 lignes sur 24 colonnes divisé en quatre zones : 10x20, 10x4, 20x3, 4x3. À côté, tableau de multiplication : lignes 10 et 3, colonnes 20 et 4, cases 200, 40, 60, 12.",
+      "answer": "312",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p137_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أحسب باستغلال توزيعية الضّرب على الجمع :",
+      "body": "مثال : 54 + (10 x 54) = (1 + 10) x 54 = 11 x 54 ؛ 594 = 54 + 540 =",
+      "figureDesc": "",
+      "answer": "594",
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p137_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أحسب باستغلال توزيعية الضّرب على الطرح :",
+      "body": "مثال : (5 x 1) - (5 x 40) = 5 x (1 - 40) = 5 x 39 ؛ 195 = 5 - 200 =",
+      "figureDesc": "",
+      "answer": "195",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p137_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "يملك فلاح ضيعة برتقال بها 26 سطرا، بكلّ سطر 38 شجرة. كم شجرة برتقال بهذه الضّيعة ؟",
+      "body": "للبحث عن عدد أشجار البرتقال بالضّيعة كتب طارق ما يلي: 26 x 38. عملية عمودية: 38 x 26 ؛ 228 + 760 = 988. جدول: 38 x ؛ 6 x 38 ؛ 6 ؛ 20 x 38 ؛ 20.",
+      "figureDesc": "Tableau de décomposition 26 = 20 + 6 (6x38 et 20x38) avec flèches rouges vers la multiplication posée.",
+      "answer": "988",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p137_i5",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أحسب ثمن شراء 207 لترات من الحليب بـ 425 مي اللتر الواحد.",
+      "body": "لحساب ثمن شراء الحليب كتب عليّ ما يلي: 425 x 207 ؛ 425 x 7 → 2975 ؛ 425 x 200 → 85000 ؛ = 87975",
+      "figureDesc": "Multiplication posée avec flèches rouges reliant 425x7 et 425x200 aux produits partiels.",
+      "answer": "87975",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p137_i6",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "تنتج شركة لصنع الملابس معدل 162 معطفا في اليوم. كم تنتج هذه الشّركة خلال 219 يوما ؟",
+      "body": "للبحث عن عدد المعاطف كتب سمير ما يلي: 219 x 162 ؛ (200 + 10 + 9) x 162 ؛ 32 400 + 1 620 + 1 458 ؛ 35 478. كتب صالح ما يلي: 162 x 219 ؛ 1 458 + 1620 + 32 400 = 35 478. كتبت أسماء ما يلي: 162 x 219 ؛ 1 458 + 162 + 324 = 35 478.",
+      "figureDesc": "Schéma de décomposition de 219 en 200+10+9 avec flèches colorées vers les produits partiels ; deux multiplications posées (Salah et Asma).",
+      "answer": "35 478",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p137_i7",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch2",
+    "confidence": 0.6
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la multiplication posée par des nombres à 2 et 3 chiffres (26×38, 425×207, 219×162), de la priorité des opérations et de la distributivité de la multiplication sur l'addition et la soustraction, ce qui correspond à la Période 2.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Multiplication et priorité des opérations",
+    "skill": "Calculer des produits en utilisant la distributivité de la multiplication et les priorités opératoires (parenthèses, multiplication avant addition/soustraction).",
+    "pageType": "mixed",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "multiplication",
+      "priorité des parenthèses",
+      "distributivité",
+      "produit de grands nombres",
+      "décomposition",
+      "problème de la vie courante"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes (rangées d'arbres, prix du lait au litre, production quotidienne de manteaux) et présentation de plusieurs méthodes de calcul d'un même produit (opération posée, tableau, décomposition, commutativité) ainsi que de calcul de l'aire d'un quadrillage par partition en rectangles.",
+    "themeGroup": "Multiplication et multiples"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre/bandeau « 4 تمارين + حلول » (« هدية المؤلف », « رياضيات ») n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étoiles/puces (*) et les titres des exemples sont absents ou fusionnés (« مثال (ب) و مثال (ج) » placés en bloc sans les expressions initiales)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de multiplication (x | 20 | 4 ; 10 | 200 | 40 ; 3 | 60 | 12) et la grille de carreaux (20, 4, 10, 3, 10x20, 10x4, 20x3, 4x3) du calcul des carrés de Mehdi ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étapes intermédiaires de l'exemple (ج) manquent : 'x 5 + 6' avec la ligne '10 x 5 + 6' ; les valeurs 2 x 7 x 5+6 sont bien là, mais les étapes '2 x 35 + 6' à '70 + 6' sont ok. Les étapes de l'opération posée de 38 x 26 sont incomplètes (« 26 » écrit, « 760 » sans le zéro rouge)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'opération posée de 425 x 207 n'est pas transcrite (seulement les produits partiels)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Opération posée de 162 x 219 de Salih (162 / 1 458 / 1620 / 32 400) et d'Asmaa (1 458 / 162 / 324) sont résumées ; les additions partielles sont présentes mais la mise en colonne est omise."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Dans l'opération de Sameer, les produits partiels sont listés dans l'ordre 32 400 + 1 620 + 1 458, ce qui correspond à l'image ; mais 1620 et 32 400 chez Salih ont des zéros rouges non signalés."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« مي » après 425 correspond à l'image (« مي » pour « مي » = millimes) ; « الضّيعة » et « الضّرب » correctes, mais « ملاحظة » est suivi de « : » sans la mise en forme."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions 'réponse: ...' ajoutées ne figurent pas dans l'image."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "L'ordre de lecture mélange les colonnes ; la colonne droite (exemples, carrés, distributivité) devrait précéder la colonne gauche, ce qui est respecté, mais l'exemple 594 = 54 + 540 et 195 = 5 - 200 sont inversés dans la présentation."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.96,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le bandeau « 4 تمارين + حلول » (avec « هدية المؤلف » et « رياضيات ») n'est pas transcrit. C'est un élément décoratif, sans effet sur les exercices ni sur les corrigés."
+      }
+    ]
+  },
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.96
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,64 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 64,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Image sans contenu mathématique : une éolienne dessinée et une main qui appuie sur un interrupteur (thème de l'énergie électrique). Ce n'est pas une page de manuel avec des exercices.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "Aucun texte éducatif lisible. Seul un filigrane partiel est visible : « www.escu… » et « infoila. ».",
+      "figureDesc": "Deux images superposées. En haut, un dessin d'éolienne blanche à trois pales sur fond de ciel bleu avec des nuages, au-dessus d'une prairie verte. En bas, la photo d'une main dont l'index appuie sur un interrupteur mural blanc avec un voyant rouge, sur un mur crépi blanc.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p064_i1",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u5",
+  "topicTitle": "Unité 5 : Énergie, magnétisme, poids et chute libre",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u5",
+    "confidence": 0.3
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page ne contient qu'une illustration (éolienne et main sur un interrupteur) sur le thème de l'énergie électrique, sans texte ni exercice lisible ; le rapprochement avec l'Unité 5 (énergie et courant électrique) reste donc une hypothèse peu certaine.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "L'énergie électrique",
+    "skill": "Identifier une source d'énergie renouvelable (le vent) et le rôle d'un interrupteur dans un circuit électrique.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "énergie électrique",
+      "éolienne",
+      "énergie éolienne",
+      "interrupteur",
+      "circuit électrique"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Illustration simple associant production d'électricité par le vent (éolienne) et usage domestique (interrupteur), utilisable comme accroche visuelle d'une infographie ou d'une question d'observation sur les sources d'énergie.",
+    "themeGroup": "L'électricité"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

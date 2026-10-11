@@ -1,0 +1,287 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 77,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مراجعة ودعم: أتصرف في وحدات قيس المساحة: المتر المربع وأجزاؤه ومضاعفاته (en réalité une page de mathématiques, not Arabic language)",
+  "items": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "",
+      "body": "مراجعة ودعم: أتصرف في وحدات قيس المساحة: المتر المربع أجزاؤه ومضاعفاته (السنة 5 — ص 78)",
+      "figureDesc": "Bandeau décoratif en haut de la page, avec « السنة 5 » sur le côté.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p077_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُكْمِلِ الْمَجَامِيعَ التَّالِيَةَ بِمَا يَنْقُصُهَا:",
+      "body": "• 508150 صم² = 50 ........... + 81 ........... + 50 ...........\n• 34 682 م² = 82 م² + ........... دكم² + ........... هم²\n• ........... صم² = 1500 مم² + 3 دسم² + 9 م²",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p077_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "رَتِّبِ الْأَقِيسَةَ التَّالِيَةَ مِنَ الْأَصْغَرِ إِلَى الْأَكْبَرِ:",
+      "body": "45789 م² ، 23 هم² ، 1 كم² ، 3000 914 دسم² ، 688 دكم²\n...........................................................",
+      "figureDesc": "Les mesures sont écrites dans un cadre en forme de bande de papier déchirée ; une ligne pointillée pour la réponse.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p077_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ- أَجْرِ الْعَمَلِيَّاتِ التَّالِيَةَ:",
+      "body": "• 536 م² - 89 دكم² + 28900 دسم² = ........... م²\n• 62000 مم² + 174 دسم² + 3080 صم² = ........... دسم²\n• 19 دكم² + 18100 م² + ........... هم² = 1 كم²\n• 75 دكم² - (1700 م² × 4) = ........... م² أو ........... دكم²\n• (6 هم² و 15 دكم²) × 15 - (49 700 م² و 7803 دكم²) = ...........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p077_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "قَسَّمَ وَالِدِي الْحَقْلَ إِلَى مَنَاطِقَ زِرَاعِيَّةٍ فَكَانَتْ كَالْآتِي:",
+      "body": "المنطقة / المساحة:\nبقول: 2 هم² و 6 دكم²\nخضروات: 3 هم² و 150 م²\nفراولة: 6 دكم² و 90 م²\nخس: 31 دكم² و 60 م²\nإِذَا كَانَتْ مِسَاحَةُ الْحَقْلِ الْحُمْلِيَّةِ 16 هم². كَمْ تَكُونُ الْمِسَاحَةُ الْمُخَصَّصَةُ لِلْخَسِّ؟\nكَلَّفَنِي أَبِي بِالْعِنَايَةِ بِالْبُقُولِ وَالْفَرَاوِلَةِ وَكَلَّفَ أَخِي بِالْخُضْرَوَاتِ وَالْخَسِّ. مَنْ مِنَّا يَعْتَنِي بِمِسَاحَةٍ أَكْبَرَ؟\n...........................................................",
+      "figureDesc": "Tableau à 5 colonnes (المنطقة، بقول، خضروات، فراولة، خس, de droite à gauche) et 2 lignes (المنطقة، المساحة) ; deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_evaluations_p077_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.21
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les unités de mesure de surface (m², dam², hm², km², conversions et problème sur les zones d'un champ), ce qui se rapproche le plus de la Période 1 (mesures agraires), mais aucun chapitre officiel ne traite explicitement des unités d'aire dans le système m².",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Unités de mesure de superficie",
+    "skill": "Convertir, comparer et calculer avec le mètre carré, ses sous-multiples et ses multiples (dm², cm², mm², dam², hm², km²).",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "aires",
+      "mètre carré",
+      "conversions",
+      "multiples et sous-multiples",
+      "comparaison de mesures",
+      "problème du champ"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression allant de la décomposition à trous au rangement, puis aux calculs mixtes avec conversions, et enfin à un problème contextuel (champ de la ferme divisé en zones de culture avec tableau des aires) réutilisable pour d'autres situations de partage de surface.",
+    "themeGroup": "Mesures d'aires et unités agraires"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête de la page est omis : « مراجعة ودعم: أتصرف في وحدات قيس المساحة: المتر المربع أجزاؤه ومضاعفاته », ainsi que le numéro de page 78 et le numéro de séance 5."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 1, 1re ligne : l'image montre « 508150 صم² = 50 صم² + ... + 81 ... + 50 ... ». Dans la transcription, les unités sont absentes après 81 et 50 et les points de suspension sont mal placés (ordre : ........... + 81 ........... + 50)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les voyelles (tashkeel) ajoutées sur l'énoncé ne sont pas toutes visibles dans l'image. « الْحُمْلِيَّةِ » : le mot de l'image est « الحُمْلِيَّةِ », à vérifier. Les voyelles sont ajoutées de façon systématique dans les consignes."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « أ- » est conservé, mais il n'y a pas de partie ب visible. Dans la 4e opération, l'unité « دكم² » de la fin est mal placée."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 3, 5e opération : l'image montre « (6 هم² و 15 دكم²) × 15 - (49 700 م² و 7803 دكم²) ». La transcription la rend correctement, mais le « 3 » de la 3e opération (« 18100 م² + ... هم² ») et les unités de l'exercice 2 (« 3000 914 دسم² ») sont à revérifier."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le tableau de l'exercice 4 est transcrit sous forme de liste. L'ordre des colonnes est inversé par rapport à l'image (خس, فراولة, خضروات, بقول de gauche à droite)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête « مراجعة ودعم: أتصرف في وحدات قيس المساحة: المتر المربع أجزاؤه ومضاعفاته » est absent de la transcription. Le bandeau porte aussi « السنة 5 » (année 5, pas « séance ») et le numéro de page 78 apparaît en bas, partiellement lisible."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 1, 1re ligne : la transcription ajoute « صم² » après le premier 50, alors que l'image n'affiche que « 50 » suivi de points. Les termes « + 81 ... » et « + 50 ... » ne portent pas d'unité dans l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "La transcription met un tashkeel complet sur toutes les consignes, alors que le scan n'en montre qu'une partie. Les mots eux-mêmes sont corrects, y compris « الحُمْلِيَّةِ » tel qu'écrit dans l'image."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "",
+      "body": "مراجعة ودعم: أتصرف في وحدات قيس المساحة: المتر المربع أجزاؤه ومضاعفاته (السنة 5 — ص 78)",
+      "figureDesc": "Bandeau décoratif en haut de la page, avec « السنة 5 » sur le côté.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p077_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُكْمِلِ الْمَجَامِيعَ التَّالِيَةَ بِمَا يَنْقُصُهَا:",
+      "body": "• 508150 صم² = 50 ........... + 81 ........... + 50 ...........\n• 34 682 م² = 82 م² + ........... دكم² + ........... هم²\n• ........... صم² = 1500 مم² + 3 دسم² + 9 م²",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p077_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "رَتِّبِ الْأَقِيسَةَ التَّالِيَةَ مِنَ الْأَصْغَرِ إِلَى الْأَكْبَرِ:",
+      "body": "45789 م² ، 23 هم² ، 1 كم² ، 3000 914 دسم² ، 688 دكم²\n...........................................................",
+      "figureDesc": "Les mesures sont écrites dans un cadre en forme de bande de papier déchirée ; une ligne pointillée pour la réponse.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p077_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ- أَجْرِ الْعَمَلِيَّاتِ التَّالِيَةَ:",
+      "body": "• 536 م² - 89 دكم² + 28900 دسم² = ........... م²\n• 62000 مم² + 174 دسم² + 3080 صم² = ........... دسم²\n• 19 دكم² + 18100 م² + ........... هم² = 1 كم²\n• 75 دكم² - (1700 م² × 4) = ........... م² أو ........... دكم²\n• (6 هم² و 15 دكم²) × 15 - (49 700 م² و 7803 دكم²) = ...........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p077_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "قَسَّمَ وَالِدِي الْحَقْلَ إِلَى مَنَاطِقَ زِرَاعِيَّةٍ فَكَانَتْ كَالْآتِي:",
+      "body": "المنطقة / المساحة:\nبقول: 2 هم² و 6 دكم²\nخضروات: 3 هم² و 150 م²\nفراولة: 6 دكم² و 90 م²\nخس: 31 دكم² و 60 م²\nإِذَا كَانَتْ مِسَاحَةُ الْحَقْلِ الْحُمْلِيَّةِ 16 هم². كَمْ تَكُونُ الْمِسَاحَةُ الْمُخَصَّصَةُ لِلْخَسِّ؟\nكَلَّفَنِي أَبِي بِالْعِنَايَةِ بِالْبُقُولِ وَالْفَرَاوِلَةِ وَكَلَّفَ أَخِي بِالْخُضْرَوَاتِ وَالْخَسِّ. مَنْ مِنَّا يَعْتَنِي بِمِسَاحَةٍ أَكْبَرَ؟\n...........................................................",
+      "figureDesc": "Tableau à 5 colonnes (المنطقة، بقول، خضروات، فراولة، خس, de droite à gauche) et 2 lignes (المنطقة، المساحة) ; deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "al_ahram_5eme_complet_p077_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُكْمِلِ الْمَجَامِيعَ التَّالِيَةَ بِمَا يَنْقُصُهَا:",
+      "body": "• 508150 صم² = 50 صم² + ........... + 81 ........... + 50 ...........\n• 34 682 م² = 82 م² + ........... دكم² + ........... هم²\n• ........... صم² = 1500 مم² + 3 دسم² + 9 م²",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "al_ahram_5eme_complet_p077_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "رَتِّبِ الْأَقِيسَةَ التَّالِيَةَ مِنَ الْأَصْغَرِ إِلَى الْأَكْبَرِ:",
+      "body": "45789 م² ، 23 هم² ، 1 كم² ، 3000 914 دسم² ، 688 دكم²\n...........................................................",
+      "figureDesc": "Les mesures sont écrites dans un cadre en forme de bande de papier déchirée ; une ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p077_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ- أَجْرِ الْعَمَلِيَّاتِ التَّالِيَةَ:",
+      "body": "• 536 م² - 89 دكم² + 28900 دسم² = ........... م²\n• 62000 مم² + 174 دسم² + 3080 صم² = ........... دسم²\n• 19 دكم² + 18100 م² + ........... هم² = 1 كم²\n• 75 دكم² - (1700 م² × 4) = ........... م² أو ........... دكم²\n• (6 هم² و 15 دكم²) × 15 - (49 700 م² و 7803 دكم²) = ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.65,
+      "id": "al_ahram_5eme_complet_p077_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "قَسَّمَ وَالِدِي الْحَقْلَ إِلَى مَنَاطِقَ زِرَاعِيَّةٍ فَكَانَتْ كَالْآتِي:",
+      "body": "المنطقة / المساحة:\nبقول: 2 هم² و 6 دكم²\nخضروات: 3 هم² و 150 م²\nفراولة: 6 دكم² و 90 م²\nخس: 31 دكم² و 60 م²\nإِذَا كَانَتْ مِسَاحَةُ الْحَقْلِ الْحُمْلِيَّةِ 16 هم². كَمْ تَكُونُ الْمِسَاحَةُ الْمُخَصَّصَةُ لِلْخَسِّ؟\nكَلَّفَنِي أَبِي بِالْعِنَايَةِ بِالْبُقُولِ وَالْفَرَاوِلَةِ وَكَلَّفَ أَخِي بِالْخُضْرَوَاتِ وَالْخَسِّ. مَنْ مِنَّا يَعْتَنِي بِمِسَاحَةٍ أَكْبَرَ؟\n...........................................................",
+      "figureDesc": "Tableau à 5 colonnes (المنطقة، بقول، خضروات، فراولة، خس) et 2 lignes (المنطقة، المساحة) ; deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.65,
+      "id": "al_ahram_5eme_complet_p077_i4",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

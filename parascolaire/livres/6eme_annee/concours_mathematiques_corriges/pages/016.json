@@ -1,0 +1,199 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 16,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الوضعية عدد 3 : مساحة الأرض (قرص دائري، معيّن، شبه منحرف قائم) والنسب والكسور (تكلفة التبليط، مواد البناء، اليد العاملة، التجهيز)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 3 (8 نقاط)",
+      "instruction": "1 / أحسب قيس مساحة الأرض.",
+      "body": "تملك البلدية 3 قطع متصلة .\n- القطعة الأولى على شكل جزء دائري مركزها \"م\".\n- القطعة الثانية على شكل معيّن أ م ج د قيس مساحتها 1.8 هـآ.\n- القطعة الثالثة على شكل شبه متحرف قائم ( أ د ب هـ )\n- ق ج = 120 م // دم = 150 م\n- قيس مساحة القرص الدائري تمثل 5/3 قيس مساحة شبه المنحرف",
+      "figureDesc": "Figure composée de trois parties accolées. À gauche, un grand disque de centre م dont on voit la partie circulaire (secteur) ; l'angle au centre du losange en م est marqué 120°. Au milieu, le losange أ م ج د (م à gauche, أ en haut, ج en bas, د à droite), avec ses diagonales م د et أ ج tracées en pointillés. À droite, le trapèze rectangle أ د ب هـ : أ هـ est horizontal en haut, هـ ب est vertical, د ب est horizontal en bas, avec un angle droit marqué en ب. Sous د, un point ق tel que ق est relié à د et à ج par des pointillés, avec un angle droit marqué en ق (ج ق perpendiculaire à د ق).",
+      "answer": null,
+      "id": "concours_mathematiques_corriges_p016_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "2/ أحسب ثمن مواد البناء.",
+      "body": "كلفت البلدية مقاولا لتبليط 20% المساحة الجملية بحساب 25 د المتر المربع الواحد.\nإذا علمت أن مصاريف اليد العاملة تمثل 3/4 ثمن مواد البناء وأن مصاريف التجهيز تمثل 13/3 مصاريف اليد العاملة .",
+      "figureDesc": "",
+      "answer": null,
+      "id": "concours_mathematiques_corriges_p016_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.93
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.39
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit d'une situation-problème à plusieurs étapes (aire du disque, losange, trapèze rectangle, fractions, pourcentage, coûts) de type concours, qui relève de la synthèse générale et de la résolution de situations-problèmes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    17,
+    18
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Aires, proportions et fractions",
+    "skill": "Calculer l'aire de figures composées (disque, losange, trapèze rectangle) puis utiliser fractions et pourcentages pour estimer des coûts.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "aire du disque",
+      "losange",
+      "trapèze rectangle",
+      "fractions",
+      "pourcentage",
+      "coût de travaux"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation-problème en contexte réel : une commune possède un terrain composé de plusieurs figures géométriques. Les élèves calculent l'aire totale, puis le coût du carrelage d'une partie, et enfin les dépenses liées (main-d'œuvre, équipement) exprimées en fractions des coûts précédents. Le schéma enchaîne géométrie, proportions et budget en une seule situation notée sur 8 points.",
+    "confidence": "high",
+    "themeGroup": "Périmètres et aires"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Ordre de lecture inversé : la question 1 (أحسب قيس مساحة الأرض) est placée avant l'énoncé 'تملك البلدية 3 قطع متصلة' et les puces ; elle doit venir après la dernière puce. De même la question 2 (أحسب ثمن مواد البناء) est placée avant 'كلفت البلدية مقاولا...' alors qu'elle vient à la fin."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre 'الوضعية عدد 3 (8 نقاط)' : dans l'image, 8 نقاط est à gauche du titre ; acceptable, mais l'étiquette '- السؤال 1' est ajoutée et n'existe pas dans l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel visible non transcrit : 'تَملك' (تمَلك), 'الوضعيَة', 'ثمن' avec fatha/shadda sur certains mots ; 'هـآ' devrait être 'هـ آ' (هكتار) avec signe visible ; 'تمثّل' porte une shadda dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Manque la fin de la phrase : 'مصاريف التجهيز تمثل 13/3 مصاريف اليد العاملة .' est présent, mais le point final et la mention de la figure (angle 120° en م, angles droits en ب et ق, points ه، ج، ق) ne sont pas décrits ; aucune mention de la figure."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'الأرض.' : l'image porte 'مساحة الأرض' avec tashkeel ; 'المساحة الجملية' est transcrit sans le 'ـة' ajouté, ok ; 'قيس مساحتها' correct."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Aucune erreur numérique détectée : 1.8، 120، 150، 5/3، 20%، 25، 3/4، 13/3 sont corrects."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "invention",
+        "severity": "minor",
+        "detail": "L'étiquette « - السؤال 1 » dans le champ number n'existe pas dans l'image. Le titre est « الوضعية عدد: 3 » avec « 8 نقاط » à côté. Le « 1 / » appartient à la consigne « 1 / أحسب قيس مساحة الأرض. »."
+      },
+      {
+        "type": "figure",
+        "severity": "major",
+        "detail": "figureDesc est inexact. Le point ق est le pied de la perpendiculaire issue de ج sur la droite (أ د), prolongée au-delà de د. Ce n'est pas la droite « (د ق) ». Dans l'image, seuls les angles droits en ب et en ق sont marqués. L'angle droit en هـ n'est pas marqué, même s'il est implicite dans l'énoncé « شبه منحرف قائم »."
+      },
+      {
+        "type": "ponctuation",
+        "severity": "minor",
+        "detail": "Le point final après « مصاريف اليد العاملة » est omis dans le second corps. « قطع متصلة . » est transcrit sans l'espace avant le point, ce qui est sans importance."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel visible (الوضعيَة، تمثّل، ثمن…) n'est pas transcrit. C'est une omission mineure, acceptable pour un OCR."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 3 (8 نقاط)",
+      "instruction": "1 / أحسب قيس مساحة الأرض.",
+      "body": "تملك البلدية 3 قطع متصلة.\n- القطعة الأولى على شكل جزء دائري مركزها \"م\".\n- القطعة الثانية على شكل معيّن أ م ج د قيس مساحتها 1.8 هـآ.\n- القطعة الثالثة على شكل شبه منحرف قائم ( أ د ب هـ ).\n- ق ج = 120 م // دم = 150 م\n- قيس مساحة القرص الدائري تمثل 5/3 قيس مساحة شبه المنحرف",
+      "figureDesc": "رسم: جزء دائري مركزه م، يرتكز عليه المعيّن أ م ج د (الزاوية عند م قيسها 120°، والرأسان أ وج على الدائرة)، والقطران أ ج وم د مرسومان بالمتقطع. شبه منحرف قائم أ د ب هـ إلى اليمين: أهـ ودب أفقيان، والضلع هـ ب عمودي مع علامة زاوية قائمة عند ب. النقطة ق على امتداد المستقيم (أ د) بعد د، والمنحرف المتقطع ج ق عمودي عليه مع علامة زاوية قائمة عند ق.",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "concours_math_6eme_corriges_p016_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "2 / أحسب ثمن مواد البناء.",
+      "body": "كلفت البلدية مقاولا لتبليط 20% المساحة الجملية بحساب 25 د المتر المربع الواحد.\nإذا علمت أن مصاريف اليد العاملة تمثل 3/4 ثمن مواد البناء وأن مصاريف التجهيز تمثل 13/3 مصاريف اليد العاملة .",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "concours_math_6eme_corriges_p016_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 3 (8 نقاط) - السؤال 1",
+      "instruction": "أحسب قيس مساحة الأرض.",
+      "body": "تملك البلدية 3 قطع متصلة.\n- القطعة الأولى على شكل جزء دائري مركزها \"م\".\n- القطعة الثانية على شكل معيّن أ م ج د قيس مساحتها 1.8 هـآ.\n- القطعة الثالثة على شكل شبه منحرف قائم ( أ د ب هـ ).\n- ق ج = 120 م // دم = 150 م\n- قيس مساحة القرص الدائري تمثل 5/3 قيس مساحة شبه المنحرف.",
+      "figureDesc": "رسم: جزء دائري مركزه م، داخله المعيّن أ م ج د (الزاوية عند م قيسها 120°)، والقطران متقطعان. شبه منحرف قائم أ د ب هـ إلى اليمين (زاويتان قائمتان عند ب وهـ). النقطة ق هي المسقط العمودي لـ ج على المستقيم (د ق) مع زاوية قائمة عند ق، وق ج = 120 م.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "concours_math_6eme_corriges_p016_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب ثمن مواد البناء.",
+      "body": "كلفت البلدية مقاولا لتبليط 20% المساحة الجملية بحساب 25 د المتر المربع الواحد.\nإذا علمت أن مصاريف اليد العاملة تمثل 3/4 ثمن مواد البناء وأن مصاريف التجهيز تمثل 13/3 مصاريف اليد العاملة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "concours_math_6eme_corriges_p016_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.93,
+    "reviewed": true
+  },
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

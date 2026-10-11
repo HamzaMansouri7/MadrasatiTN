@@ -1,0 +1,90 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 62,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الجمع وتفكيك الأعداد والمقارنة (العمليات على الأعداد من 0 إلى 20)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَمْلَأُ الْجَدْوَلَ بِمَا يُنَاسِبُ مِنَ الْأَعْدَادِ التَّالِيَةِ :",
+      "body": "الأعداد: 10 - 12 - 15 - 14 - 13 - 18 - 17 - 11 - 16\n\nجدول الجمع ذو مدخلين:\nالسطر الرأسي الأول: (5 + 7) ، (3 + 6) ، 1 + 5 + 2\nالعمود الأول: 6 ، 5 ، 7 ، 4\nالخانات المعبأة مسبقاً: تقاطع 5 مع (3 + 6) = 14 ، تقاطع 7 مع (5 + 7) = 19",
+      "figureDesc": "جدول جمع ذو مدخلين بأربعة أسطر وثلاثة أعمدة للأعداد المعطاة",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p062_i1",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "سَجَّلَ ثَلَاثَةُ لَاعِبِينَ فِي رِيَاضَةِ الرِّمَايَةِ فِي الْمَرْحَلَةِ الْأُولَى النِّقَاطَ التَّالِيَةَ 4+3 : وَفِي الْجَوْلَةِ الثَّانِيَةِ سَجَّلَ كُلُّ لَاعِبٍ النِّقَاطَ الْمَكْتُوبَةَ فِي الْجَدْوَلِ.\nأَبْحَثُ عَنِ النِّقَاطِ الْجُمْلِيَّةِ الَّتِي سَجَّلَهَا كُلُّ لَاعِبٍ.",
+      "body": "جدول:\nالسطر 1: + | اللَّاعِبُ (أ) 3 ن | اللَّاعِبُ (ب) 6 ن | اللَّاعِبُ (ج) 9 ن\nالسطر 2: (4 ن + 3 ن) | .......... | .......... | ..........\n\nكَمْ يَنْبَغِي عَلَى اللَّاعِبِ (أ) أَنْ يُسَجِّلَ حَتَّى يَفُوزَ فِي الْمُبَارَاةِ ؟\nالْجَوَابُ : ........................................................................\nالتَّعْلِيلُ : ........................................................................",
+      "figureDesc": "جدول يوضح نقاط اللاعبين (أ، ب، ج) في جولتين من لعبة الرماية",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p062_i2",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أُنْجِزُ وَأَتَمَيَّزُ :",
+      "body": "زَرَعَ جَلَالٌ وَرَامِي بَذْرَتَيْ فُولٍ. بَعْدَ مُدَّةٍ بَلَغَتْ نَبْتَةُ جَلَالٍ طُولًا يَنْحَصِرُ رَقْمُ آحَادِهِ بَيْنَ 6 وَ8 وَبَلَغَتْ نَبْتَةُ رَامِي طُولًا يَنْحَصِرُ بَيْنَ 11 وَ13.\nأُحَدِّدُ النَّبْتَةَ الْأَطْوَلَ ← ...........................................................\nكَمْ يَنْبَغِي أَنْ يَزِيدَ طُولُ النَّبْتَةِ الْأَطْوَلِ حَتَّى تَبْلُغَ طُولَ 19 صم ؟\nالتَّعْلِيلُ : ........................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p062_i3",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "topicId": "math-1-p4",
+  "topicTitle": "Période 4 : Nombres de 11 à 19, tables d'addition et soustraction",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p4",
+    "confidence": 0.73
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les tables d'addition à double entrée, la décomposition et la comparaison de nombres de 10 à 19 (résultats de 10 à 19), ce qui correspond à la Période 4 : nombres de 11 à 19 et tables d'addition.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition et décomposition de nombres jusqu'à 20",
+    "skill": "Additionner et décomposer des nombres jusqu'à 20, les comparer et résoudre une situation-problème simple.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "addition",
+      "table à double entrée",
+      "décomposition",
+      "comparaison",
+      "nombres jusqu'à 20",
+      "problème de score"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : table d'addition à double entrée avec cases pré-remplies, scores de joueurs de tir sur deux manches à additionner et comparer, et défi de comparer la taille de deux plantes à partir d'indices sur le chiffre des unités.",
+    "themeGroup": "Addition jusqu'à 20"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

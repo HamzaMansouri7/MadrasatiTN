@@ -1,0 +1,150 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 94,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Les énergies renouvelables (Maroc, centrale Noor) : compréhension de l'écrit et activités de langue (lexique, grammaire). Attention : cette page est un sujet d'examen de français marocain, qui ne correspond ni au manuel tunisien « Mouayen » ni aux mathématiques ; le numéro de page indiqué est 2.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Réponds par vrai ou faux :",
+      "body": "✓ L'énergie solaire est une énergie non renouvelable. ……\n✓ Le Maroc a atteint 52% part de renouvelable en 2020 ……\n✓ Le Roi Mohammed VI a inauguré la centrale Noor en 2016 ……",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p094_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "A ton avis, pourquoi doit-on penser à renforcer la production des énergies renouvelables?",
+      "body": "Trois lignes pointillées pour la réponse.",
+      "figureDesc": "Lignes pointillées de réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p094_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "Relève du texte les synonymes des mots suivants :",
+      "body": "diminuer : …………… , Indépendance : ……………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p094_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "Complète les mots dans les phrases suivantes par le suffixe ou le préfixe qui convient :",
+      "body": "L'énergie solaire est ……épuisable.\nCette source d'énergie se renouvelle rapid……….",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p094_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "Relie chaque énergie à sa source",
+      "body": "Colonne de gauche : Energie solaire ; Energie éolienne ; Energie hydraulique.\nColonne de droite : vent ; cours d'eaux ; soleil.",
+      "figureDesc": "Deux colonnes à relier par des flèches (points de liaison), items à gauche et sources à droite",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p094_i5",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "Souligne les compléments circonstanciels dans les phrases suivantes et indique leur fonction :",
+      "body": "En 2016, Le Roi Mohammed VI a inauguré la centrale Noor. ……\nLe Maroc produit l'énergie solaire dans le parc Noor de Ouarzazate. ……",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p094_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "Remplace le complément souligné par le pronom personnel qui convient :",
+      "body": "Le vent tourne les hélices des éoliennes. (« les hélices des éoliennes » est souligné)\n……………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p094_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u5",
+    "confidence": 0.18
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un sujet d'examen de français marocain (compréhension de l'écrit, lexique, grammaire) sur les énergies renouvelables, qui couvre plusieurs notions (suffixes, compléments circonstanciels, pronoms) et ne correspond clairement à aucun module du manuel tunisien, même si le thème écologique rappelle le module 5.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Les énergies renouvelables (centrale Noor)",
+    "skill": "Comprendre un texte documentaire sur les énergies renouvelables, puis travailler le lexique (synonymes, préfixes et suffixes) et la grammaire (compléments circonstanciels, pronoms personnels).",
+    "pageType": "exam",
+    "formats": [
+      "vrai_faux",
+      "production_ecrite",
+      "lecture_comprehension",
+      "texte_a_trous",
+      "appariement",
+      "autre"
+    ],
+    "keywords": [
+      "énergies renouvelables",
+      "centrale Noor",
+      "synonymes",
+      "préfixes et suffixes",
+      "compléments circonstanciels",
+      "pronoms personnels"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une même page d'examen enchaîne compréhension (vrai/faux, question d'opinion), lexique (synonymes à relever, affixes) et grammaire (compléments circonstanciels, pronominalisation) autour d'un thème d'actualité ; l'appariement énergie/source et l'ancrage dans un projet national réel sont facilement réutilisables.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "unknown",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

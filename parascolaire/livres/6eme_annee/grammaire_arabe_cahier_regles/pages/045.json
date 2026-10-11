@@ -1,0 +1,164 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 45,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Arabe (قواعد اللغة) : الأفعال المهموزة الآخر، اسم الفاعل، الإملاء، وإعراب المثنى",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حول الأفعال التالية إلى المضارع",
+      "body": "أرجا - هنأ - ابتدأ - امتلأ - هدأ",
+      "figureDesc": "Tableau à 5 colonnes contenant les verbes au passé dans la ligne du haut ; la ligne du bas est vide, à remplir avec le présent.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p045_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمل بكلمة في آخرها همزة",
+      "body": "إذا أحست الحيوانات بالخطر تحتمي بـ ...\nعند اندلاع الحريق نطلب المساعدة من رجال ...\nإذا حل فصل الصيف قصدنا ... للسباحة والاستجمام\nبعد رحلة الصيد تعود السفن إلى ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p045_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "صغ اسم الفاعل من الأفعال المسطرة",
+      "body": "قرأ - بدأ - امتلأ - أطفأ - جزأ",
+      "figureDesc": "Tableau à 5 colonnes avec les verbes dans la ligne du haut ; la ligne du bas est vide, à remplir avec le participe actif.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p045_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "نص للإملاء",
+      "body": "ها هو المقرئ متهيئ لتلاوة ما تيسر من القرآن الكريم ، يبدو هادئ البال رغم أنه يشارك في المسابقة لأول مرة، سيبتدئ بعد حين وما يريده البارئ سيكون، فالعبرة بالمشاركة والقلب مليء بالإيمان وهو قارئ جيد فلم الخوف ؟\nتلا وأبدع ، وقرأ فأقنع فهنيئا له بالجائزة الأولى",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p045_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "إعراب المثنى — المراجعة",
+      "body": "المثنى صيغة اسم دالة على اثنين متحدين في اللفظ والمعنى\nوالضمائر المستعملة في المثنى هي\nنحن : للمثنى المتكلم مذكرا ومؤنثا",
+      "figureDesc": "Tableau à deux cellules : « نحن » et « للمثنى المتكلم مذكرا ومؤنثا » ; le tableau semble se poursuivre sur la page suivante.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p045_i5",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.29
+  },
+  "topicSubject": "Arabe",
+  "topicReason": "La page traite de grammaire arabe (verbes à hamza finale, participe actif, dictée, duel), et seul ar-6-ch1 mentionne la conjugaison des verbes dans ses compétences, sans correspondre exactement à ce contenu ; aucun chapitre ne couvre clairement ces points.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Verbes à hamza finale et duel",
+    "skill": "Conjuguer et orthographier les verbes à hamza finale, former le participe actif et reconnaître le duel et ses pronoms.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "dictee",
+      "autre"
+    ],
+    "keywords": [
+      "verbes hamzés",
+      "hamza finale",
+      "participe actif",
+      "dictée",
+      "duel",
+      "pronoms"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement de consignes courtes (conjugaison au présent, phrases à compléter par un mot à hamza finale, formation du participe actif) suivi d'une dictée thématique sur un récitant de Coran qui concentre les cas de hamza, et d'un rappel de cours sur le duel.",
+    "themeGroup": "Orthographe de la hamza"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tanwin fatha omis dans le tableau de l'exercice 1 : image 'أرجا، هنأً، ابتدأً، امتلأً، هدأً' (transcrit sans tanwin)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : tanwin visible sur 'قرأ، بدأً، امتلأً، أطفأً، جزأً' non reporté dans la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.1 : ordre des colonnes OK, mais dans l'ex.3 l'ordre de lecture RTL est correct ; aucun mot changé."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Texte dicté : 'المقرئ' transcrit, l'image montre 'المقرئ' avec hamza ; 'هادئ' est correct ; mais 'قارئ' et 'البارئ' conformes. Aucune erreur certaine sur ce point."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres 'التمرين الأول/الثاني/الثالث/الرابع' et le titre 'إعراب المثنى' ne sont pas transcrits (seulement numérotés [1]..[4]) ; 'المراجعة' fusionné au titre."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.2 : le tiret 'بـ' est suivi d'un blanc dans l'image ; le premier item ('تحتمي بـ') est correct, mais l'espace vide du 3e item est placé avant 'للسباحة' (transcrit correctement)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Tableau final : l'image montre 'نحن' dans une cellule et 'للمثنى المتكلم مذكرا ومؤنثا' dans l'autre ; la transcription ajoute ':' inexistant."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.2 : le 2e item 'نطلب المساعدة من رجال' est suivi d'un blanc, correct ; pas de contenu majeur manquant."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

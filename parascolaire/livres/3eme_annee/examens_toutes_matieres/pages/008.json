@@ -1,0 +1,110 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 8,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول (عدد 4) - قراءة - النص: عَلَى ظَهْرِ الْبَاخِرَةِ",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ : عَلَى ظَهْرِ الْبَاخِرَةِ",
+      "body": "قُبَيْلَ أَنْ أَرْكَبَ الْبَاخِرَةَ عَائِدًا إِلَى بِلَادِي، وَقَعَتْ عَيْنِي فِي أَحَدِ الْحَوَانِيتِ عَلَى قُرْطٍ كَبِيرٍ مِنَ الْمَوْزِ الْأَصْفَرِ الشَّهِيِّ. وَلَمْ أَكُنْ قَبْلَ ذَلِكَ الْوَقْتِ، قَدْ رَأَيْتُ الْمَوْزَ فِي حَيَاتِي أَوْ تَذَوَّقْتُ طَعْمَهُ. إِلَّا أَنَّنِي كُنْتُ أَسْمَعُ أَنَّهُ فَاكِهَةٌ لَذِيذَةٌ فَاخِرَةٌ. فَخَطَرَ لِي أَنَّ هَدِيَّةً مِنَ الْمَوْزِ أَحْمِلُهَا مَعِي إِلَى وَالِدِي وَإِخْوَتِي سَيَكُونُ لَهَا وَقْعٌ كَبِيرٌ عِنْدَهُمْ. وَهَكَذَا اشْتَرَيْتُ ذَلِكَ الْقُرْطَ، وَوَضَعْتُهُ فِي سَلَّةٍ مَعَ بَاقِي حَوَائِجِي عَلَى سَطْحِ الْبَاخِرَةِ.\nوَبَعْدَ أَيَّامٍ مِنَ السَّفَرِ، كُنْتُ وَاقِفًا وَحْدِي عِنْدَ مُقَدِّمَةِ الْبَاخِرَةِ أَرْقُبُهَا وَهِيَ تَشُقُّ الْمَوْجَ، وَإِذَا بِي أَسْمَعُ قَفْقَفَةً وَأَصْوَاتًا غَرِيبَةً خَلْفِي. فَالْتَفَتُّ، وَإِذَا هُنَاكَ قِرْدَانِ يَتَرَاشَقَانِ بِالْمَوْزِ... فَهَرْوَلْتُ إِلَى حَيْثُ سَلَّتِي، وَإِذَا بِالْمَوْزِ يُقَابِلُنِي عِنْدَ كُلِّ خُطْوَةٍ، وَإِذَا بِالْقُرْطِ فِي السَّلَّةِ قَدْ تَهَشَّمَ أَفْظَعَ التَّهَشُّمِ. لَقَدْ كَانَتْ كَارِثَتِي بِهَدِيَّتِي لَا تُصَوَّرُ وَلَا تُوصَفُ. وَلَكِنْ ! مَا حِيلَتِي وَخَصْمِي قِرْدَانِ ؟!\nوَكَمْ كَانَتْ دَهْشَتِي عَظِيمَةً عِنْدَمَا وَصَلْتُ إِلَى وَطَنِي وَسِرْتُ فِي الشَّارِعِ إِلَى مَحَطَّةِ الْقِطَارِ لِأَرْكَبَهُ، إِلَى قَرْيَتِي عِنْدَمَا رَأَيْتُ أَقْرَاطَ الْمَوْزِ مُعَلَّقَةً فِي كُلِّ حَوَانِيتِ بَيْعِ الْغِلَالِ ! عِنْدَهَا أَدْرَكْتُ أَنِّي غِبْتُ طَوِيلًا عَلَى وَطَنِي وَاحْتَرْتُ فِي أَمْرِي وَقُلْتُ فِي نَجْوَايَ : «يَبْدُو أَنَّ الْمَوْزَ لَمْ يَعُدْ أَمْرًا يُثِيرُ الْإِعْجَابَ ! فَلَا شَكَّ أَنَّ وَالِدِي قَدِ ابْتَاعَهُ أَكْثَرَ مِنْ مَرَّةٍ ! فَمَاذَا سَأُهْدِيهِمْ يَا تُرَى ؟!»",
+      "figureDesc": "En-tête: «امتحانات جسر النجاح»، اختبار نهاية الثلاثي الأول عدد 4، المادة: قراءة، المستوى: السنة الثالثة، خانات الاسم واللقب والقسم. Filigrane du site visible. Quelques bords du texte coupés par le scan.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p008_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 - أ",
+      "instruction": "أَقْرَأُ النَّصَّ قِرَاءَةً وَاعِيَةً ثُمَّ أَعْمُرُ الْجَدْوَلَ بِمَا يُنَاسِبُ.",
+      "body": "أعمدة الجدول: الْمَكَانُ | الشَّخْصِيَّةُ الْمُعْتَدِيَةُ | الشَّخْصِيَّةُ الْمُتَضَرِّرَةُ (ثلاث خانات للتعمير بنقاط). المعيار: مع 2أ. النقاط: 0,5 + 0,5 + 0,5",
+      "figureDesc": "جدول من ثلاثة أعمدة وسطر فارغ للتعمير",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p008_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَضَعُ الْعَلَامَةَ (x) فِي خَانَةِ كُلِّ عِبَارَةٍ تَتَنَاسَبُ مَعَ النَّصِّ.",
+      "body": "○ شَرَى الشَّابُّ تُفَّاحًا.\n○ لَمْ يَذُقِ الشَّابُّ الْمَوْزَ أَبَدًا.\n○ شَرَى الشَّابُّ مَوْزًا لِيَبِيعَهُ.\n○ لَمْ يَجِدِ الشَّابُّ صَدِيقَهُ.\n○ سَيُهْدِي الشَّابُّ الْمَوْزَ لِأُسْرَتِهِ.\n○ الشَّابُّ يَعْلَمُ أَنَّ الْمَوْزَ فَاكِهَةٌ شَهِيَّةٌ.\nالمعيار: مع 2ب. النقاط: 0,5 لكل ثلاث عبارات (0,5 / 0,5 / 0,5)",
+      "figureDesc": "ست دوائر للتعليم أمام العبارات",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p008_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 - أ",
+      "instruction": "كَمْ دَامَتْ سَفْرَةُ الشَّابِّ ؟",
+      "body": "الْجَوَابُ : ...............................  (المعيار: مع 2ج، النقطة: 0,5)",
+      "figureDesc": "سطر منقط للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p008_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u8",
+    "confidence": 0.47
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un test de fin de premier trimestre (اختبار نهاية الثلاثي الأول, n°4) en lecture, une évaluation générale qui couvre plusieurs compétences (personnages, lieu, durée) et ne correspond donc pas à un seul chapitre précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de lecture narrative",
+    "skill": "Lire un texte narratif en arabe et en extraire des informations (lieu, personnages, durée) pour répondre à des questions de compréhension.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "schema_tableau",
+      "vrai_faux",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "évaluation fin de trimestre",
+      "lecture compréhension",
+      "texte narratif",
+      "personnages",
+      "tableau à compléter",
+      "3ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Modèle d'épreuve de lecture combinant un tableau à compléter (lieu, personnage fautif, personnage lésé), des affirmations à cocher selon le texte et une question à réponse courte, avec barème et critères d'évaluation.",
+    "themeGroup": "Compréhension de l'écrit : le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

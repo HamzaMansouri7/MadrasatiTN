@@ -1,0 +1,102 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 42,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الدَّرس 23: أَتَصَرَّف في وحدات القيس الفلاحية (قيس المساحات: المتر المربع، الآر، الهكتار)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اكْتُبِ الأَقْيِسَةَ التَّالِيَةَ فِي الْجَدْوَلِ جَانِبًا ثُمَّ اكْتُبِ الْقَيْسَ بِالْوَحْدَةِ الْمَطْلُوبَةِ :",
+      "body": "2 هـ و 15 م² = ............... م²\n12 هم² و 3400 م² = ............... آ\n6 كم² و 9 هـ = ............... آ\n4 هـ و 8 دكم² = ............... م²",
+      "figureDesc": "جدول بأعمدة: كم²، هم²، دكم²، م². وتحت هم² الخانة هـ، وتحت دكم² الخانة آ، وتحت م² الخانة صـآ. خانة كم² مظللة. ثلاثة صفوف فارغة للكتابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p042_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اِرْبِطْ بَيْنَ الأَقْيِسَةِ الْمُتَسَاوِيَةِ :",
+      "body": "الصف العلوي: 3450 صـآ — 21908 دكم² — 670000 م² — 18 هـ و 99 آ\nالصف السفلي: 67 هـ — 34 آ و 50 م² — 189900 صـآ — 2 كم² و 19 هـ و 8 آ",
+      "figureDesc": "ثمانية مستطيلات مدورة في صفين، تحت كل منها نقطة للربط بالخط بين الأقيسة المتساوية.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p042_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "رَتِّبْ هَذِهِ الأَقْيِسَةَ مِنَ الأَصْغَرِ إِلَى الأَكْبَرِ :",
+      "body": "9805 دكم² - 9805 صـآ - 8905 آ - 9508 م² - 95 هـ - 89 هم²",
+      "figureDesc": "إطار مستطيل يحتوي على الأقيسة، وتحته سطران منقطان للإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p042_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لِلْعَمِّ طَاهِرٍ أَرْضٌ بُعْدَاهَا 170 م وَ 300 م. بَاعَ مِنْهَا أَوَّلاً 3 هـ بِـ 5480 د الْهِكْتَارَ الْوَاحِدَ. ثُمَّ بَاعَ الْبَاقِيَ بِحِسَابِ 79 د الآرَ الْوَاحِدَ.",
+      "body": "* مَاهُوَ قَيْسُ مِسَاحَةِ الْجُزْءِ الثَّانِي مِنَ الأَرْضِ ؟\n* بِكَمْ بَاعَ الْعَمُّ طَاهِرٌ الْجُزْءَ الْبَاقِيَ ؟",
+      "figureDesc": "سطور منقطة للإجابة تحت كل سؤال.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p042_i4",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.54
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite des conversions, comparaisons et problèmes sur les mesures agraires (m², are, hectare, dam², hm², km²), ce qui correspond à la Période 1 : Grands nombres, opérations et mesures agraires.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures de superficie agraires",
+    "skill": "Convertir et comparer des mesures de superficie (m², are, hectare et multiples) et les utiliser pour résoudre un problème.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "appariement",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "mesures de superficie",
+      "conversion",
+      "are",
+      "hectare",
+      "terrain agricole",
+      "tableau de conversion"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation agricole concrète (vente d'un terrain en deux parties à prix différents par hectare puis par are) combinée à des exercices de conversion avec tableau, d'appariement de mesures équivalentes et de rangement par ordre croissant.",
+    "themeGroup": "Mesures d'aires et unités agraires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

@@ -1,0 +1,312 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 129,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "حساب: قسمة مجموع على عدد، باقي القسمة، المسائل؛ هندسة: محيط المربع والمستطيل؛ الاختبار التقويمي",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "2 (ص81)",
+      "instruction": "78 على 6",
+      "body": "78 على 6 = 6 : (60 + 18)\n(6 : 60) + (6 : 18) = 10 + 3 = 13\n84 على 7 = 7 : (70 + 14)\n(7 : 70) + (7 : 14) = 10 + 2 = 12\n95 على 5 = 5 : (50 + 45)\n(5 : 50) + (5 : 45) = 10 + 9 = 19\n76 على 4 = 4 : (40 + 36)\n(4 : 40) + (4 : 36) = 10 + 9 = 19",
+      "figureDesc": "",
+      "answer": "13 ؛ 12 ؛ 19 ؛ 19",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص81)",
+      "instruction": "باقي هذه القسمة :",
+      "body": "74 - (8 × 9) = 74 - 72 = 2",
+      "figureDesc": "",
+      "answer": "2",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص81)",
+      "instruction": "مناب كلّ واحد :",
+      "body": "(3 × 24) : 5 = 72 : 5 = 14\nعدد القطع الباقية :\n(3 × 24) - (5 × 14) = 2",
+      "figureDesc": "",
+      "answer": "14 ؛ 2",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص82)",
+      "instruction": "محيط المربع بالصم:",
+      "body": "4 × (3 × 25) = 300",
+      "figureDesc": "شبكة مربعات 3×3 مرسومة في الأعلى",
+      "answer": "300",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص82)",
+      "instruction": "محيط هذه القطعة بالصم :",
+      "body": "8 + 4 × (2 + 6) = 40",
+      "figureDesc": "",
+      "answer": "40",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i5",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص82)",
+      "instruction": "قيس محيطه بالصم:",
+      "body": "2 × (40 + 90) = 260",
+      "figureDesc": "",
+      "answer": "260",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i6",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص82)",
+      "instruction": "نصف المحيط (أ ب ج د) = 110 متر",
+      "body": "محيط المستطيل (هـ و ز ح) = 2 × (4 × 5 + 110) = 260 م\nأو 220 + (8 × 5) = 260 م",
+      "figureDesc": "",
+      "answer": "260 م",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p129_i7",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص82)",
+      "instruction": "قيس طول محيطه بالم :",
+      "body": "2 × (29 + 58) = 174\nثمن السياج بالم :\n950 × (3 - 174) = 162 450\nجملة المصاريف بالمي :\n35 000 + 162 450 = 197 450",
+      "figureDesc": "",
+      "answer": "174 ؛ 162 450 ؛ 197 450",
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_corriges_p129_i8",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 (ص83)",
+      "instruction": "أ) أكبر مضاعف لـ 6 يكون أصغر من 100 هو :",
+      "body": "100 : 6 = 16 ويبقى 4\n100 - 4 = 96\nأو 16 × 6 < 100 < 17 × 6\nب) أتمّ جدول القسمة (المقسوم، القاسم، الخارج، الباقي): 59، 8، 7، 3 / 85، 9، 9، 4 / 425، 21، 20، 5",
+      "figureDesc": "جدول بأربعة أعمدة: المقسوم، القاسم، الخارج، الباقي",
+      "answer": "96",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p129_i9",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص83)",
+      "instruction": "عدد كؤوس الحليب المستهلكة في 5 أيّام",
+      "body": "5 × (4 × 2) = 40\nعدد القوارير = 40 على 5 = 8",
+      "figureDesc": "",
+      "answer": "40 ؛ 8",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i10",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص83)",
+      "instruction": "المسألة 1 الإجابة = ج ؛ المسألة 2 الإجابة = ب",
+      "body": "",
+      "figureDesc": "",
+      "answer": "1: ج ؛ 2: ب",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i11",
+      "topicId": "math-4-ch3",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص84)",
+      "instruction": "750 على 3 ؛ 950 على 5",
+      "body": "750 على 3 = 250\n950 على 5 = 190",
+      "figureDesc": "",
+      "answer": "250 ؛ 190",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i12",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص84)",
+      "instruction": "ثمن الكأس الواحدة بالمي",
+      "body": "1 = 900 : 4 = 225\n2 = 720 : 3 = 240\nأقصد التّاجر الذي يبيع الكأس بـ 225 مي لأنّه أرخص من التاجر الثاني.\nأدفع بالمي: 7 × 225 = 1575",
+      "figureDesc": "",
+      "answer": "1575",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p129_i13",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص84)",
+      "instruction": "ثمن الكراسة الواحدة بالمي :",
+      "body": "(20 + 900) : 8 = 115\nبقي معها بالمي : 115 - 20 = 95\nأو : 900 - (7 × 115) = 95",
+      "figureDesc": "",
+      "answer": "115 ؛ 95",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i14",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص84)",
+      "instruction": "تنتج هذه الشّركة في كلّ يوم :",
+      "body": "324 على 6 = 54",
+      "figureDesc": "",
+      "answer": "54",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i15",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "6 (ص84)",
+      "instruction": "ثمن بيع الورد بالدّينار :",
+      "body": "3 × (450 : 9) = 50 × 3 = 150",
+      "figureDesc": "",
+      "answer": "150",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p129_i16",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch3",
+  "topicTitle": "Période 3 : Division euclidienne, fractions et périmètres",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "math-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.93
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page corrige des exercices sur la division d'une somme par un nombre, le reste de la division euclidienne, des problèmes de partage et les périmètres du carré et du rectangle, ce qui correspond à la Période 3 (division euclidienne, périmètres).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    85,
+    86,
+    87,
+    88
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division, reste et périmètres",
+    "skill": "Diviser une somme par un nombre, déterminer le quotient et le reste d'une division, et calculer le périmètre du carré et du rectangle dans des problèmes.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "division d'une somme",
+      "reste de la division",
+      "périmètre du carré",
+      "périmètre du rectangle",
+      "problèmes",
+      "clôture"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : décomposer un dividende en somme de multiples faciles pour calculer mentalement, tableau de division à compléter (dividende, diviseur, quotient, reste), et problèmes concrets de partage avec reste, de consommation (verres de lait, bouteilles) et de clôture avec coût total.",
+    "themeGroup": "Division euclidienne"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "[5 ص81] image: 5 : (3×24) = 72 : 5 = 14 ; transcription inverse l'ordre en (3 × 24) : 5. De même pour (5×14)-(3×24) : l'image montre (5×14)-(3×24) = 2 mais la transcription écrit (3 × 24) - (5 × 14), l'ordre est inversé."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "[5 ص82] image: 950 × (3 - 174) ; la transcription reproduit tel quel, mais l'image affiche (174 × 3)... OCR ambigu, à vérifier"
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "[1 ص83 ب] 'أتمّ جدول القسمة (المقسوم، القاسم، الخارج، الباقي)' : cette consigne n'existe pas dans l'image ; seul 'ب) 96' puis le tableau figurent"
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "[1 ص83 ب] ordre des colonnes et des valeurs du tableau : l'image donne المقسوم 59 / القاسم 8 / الخارج 7 / الباقي 3, correct, mais le 'ب) 96' est placé à tort en réponse alors qu'il précède le tableau"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel visible non reproduit : 'أقصد التّاجر' (image: أقـصـد التـّاجـر) et 'لأنّه' ; 'أيّام', 'كلّ' ok ; 'الدّينار' ok"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[5 ص82] 'قيس طول محيطه بالم' : l'image montre 'بالم' ; OK. [2 ص83] 'أيّام' ok. [4 ص81] 'باقي هذه القسمة' ok"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Pas de mention de l'en-tête (السنة الرابعة، حساب/هندسة/الاختبار التقويمي، رقم الصفحة) ni du numéro de page 21 ; la grille du carré (ex. 1 ص82) n'est pas signalée"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "[4 ص82] image: 2 × (4 × 5 + 110) = 260 م ; la transcription ajoute 'أو 220 + (8 × 5)' correct mais l'ordre des termes écrit 'أو 220 + (8×5) = 260' est fidèle ; vérifier la parenthèse '(4×5 + 110)' : image '(4×5 + 110)×... ' ambigu"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

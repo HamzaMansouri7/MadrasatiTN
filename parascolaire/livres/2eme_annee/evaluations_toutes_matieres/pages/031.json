@@ -1,0 +1,146 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 31,
+  "grade": "2ème Année",
+  "subject": "رياضيات",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني – عدد 2 – رياضيات – السنة الثانية (مسائل: أشجار البرتقال وكمية البرتقال المجموعة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "السند 1 - التعليمة 1",
+      "instruction": "أَحْسُبُ عَدَدَ الْأَشْجَارِ الْكَبِيرَةِ.",
+      "body": "السَّنَدُ 1 : يَمْلِكُ بُسْتَانِيٌّ أَشْجَارَ بُرْتُقَالٍ :\nعَدَدُ الْأَشْجَارِ الصَّغِيرَةِ 46 شَجَرَةً.\nعَدَدُ الْأَشْجَارِ الْكَبِيرَةِ يَقِلُّ عَنْ عَدَدِ الْأَشْجَارِ الصَّغِيرَةِ بِـ 13 شَجَرَةً.\nالْحَلُّ: الْعَمَلُ (فراغ) / عَدَدُ الْأَشْجَارِ الْكَبِيرَةِ. الْعَمَلِيَّةُ : ....................",
+      "figureDesc": "جدول بعمودين: العمل (فارغ) والحل (سطر منقط للعملية)، مع خانات المعايير (معـ2ب، معـ1) والنقاط 0,5 و0,5",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p031_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 1 - التعليمة 2",
+      "instruction": "أَحْسُبُ عَدَدَ الْأَشْجَارِ فِي الْجُمْلَةِ.",
+      "body": "الْحَلُّ: الْعَمَلُ (فراغ) / الْإِجَابَةُ اللَّفْظِيَّةُ : .................... الْعَمَلِيَّةُ : ....................",
+      "figureDesc": "جدول العمل والحل مع خانات المعايير (معـ5، معـ5ب) والنقاط 1، 0,5، 0,5",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p031_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 1 - التعليمة 3",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَنَازُلِيًّا.",
+      "body": "سطر منقط للإجابة ....................",
+      "figureDesc": "سطر منقط، خانتا المعايير (معـ1، معـ2أ)، النقاط 1 و0,5",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p031_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2 - التعليمة 1",
+      "instruction": "أَحْسُبُ كَمِّيَّةَ الْبُرْتُقَالِ الَّتِي تَحَصَّلَ عَلَيْهَا :",
+      "body": "السَّنَدُ 2 : جَمَعَ الْبُسْتَانِيُّ الْبُرْتُقَالَ عَلَى مَرْحَلَتَيْنِ، فِي الْمَرْحَلَةِ الْأُولَى 120 كغ وَفِي الْمَرْحَلَةِ الثَّانِيَةِ 77 كغ.\nالْحَلُّ: الْعَمَلُ (فراغ) / الْإِجَابَةُ اللَّفْظِيَّةُ : .................... الْعَمَلِيَّةُ : ....................",
+      "figureDesc": "جدول العمل والحل مع خانات المعايير (معـ5، معـ2ج) والنقاط 0,5 و0,5. رأس الصفحة: امتحانات جسر النجاح، اختبار نهاية الثلاثي الثاني عدد 2، المادة رياضيات، السنة الثانية، رقم الصفحة 30",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p031_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p6",
+    "confidence": 0.44
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation de fin de trimestre 2 (اختبار نهاية الثلاثي الثاني) qui regroupe soustraction, addition, ordre décroissant et problèmes sur plusieurs périodes, donc elle ne correspond à aucun chapitre unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes additifs et soustractifs",
+    "skill": "Résoudre des problèmes à étapes avec soustraction (comparaison) et addition, en rédigeant la réponse et l'opération, puis ordonner des nombres.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "problème",
+      "addition",
+      "soustraction",
+      "comparaison de quantités",
+      "ordre décroissant",
+      "verger d'orangers"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de verger où un support unique donne plusieurs consignes enchaînées (trouver une quantité par différence, puis le total, puis ranger les nombres), avec un cadre de réponse structuré en calcul, phrase-réponse et opération.",
+    "themeGroup": "Problèmes additifs et soustractifs"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "يَقِلُّ : l'image montre « يَقِلُّ » avec kasra sur le قاف ; transcription identique, donc correcte. Aucune erreur ici."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« تَحَصَّلَ » : l'image montre « تَحَصَّلُ » (تحصل عليها) ; la vocalisation de la dernière lettre est incertaine, à vérifier (la transcription a fatha au lieu de damma)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَحْسُبُ » dans les consignes : l'image porte « أُحْسُبْ / أَحْسُبُ » ; vocalisation à vérifier, sinon cohérente."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "[السند 1 - التعليمة 1] : la consigne est placée avant le texte du support (السند 1), alors que dans l'image le support précède la consigne."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête (امتحانات جسر النجاح, المادة : رياضيات, المستوى : السنة الثانية, اختبار نهاية الثلاثي الثاني, عدد : 2, الاسم/اللقب/القسم), les barèmes (0,5 ; 1...), les cases de critères (مع 2ب, مع1, مع5...) et le numéro de page 30 sont absents (probablement hors périmètre)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« (فراغ) » et « سطر منقط للإجابة » sont des annotations ajoutées, absentes du texte imprimé ; pour la التعليمة 1 le champ « الإجابة اللفظية » n'existe pas dans l'image, la transcription est correcte sur ce point."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

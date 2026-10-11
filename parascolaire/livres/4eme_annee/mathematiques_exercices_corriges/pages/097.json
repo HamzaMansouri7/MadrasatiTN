@@ -1,0 +1,104 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 97,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 26 – الأعداد من 100 000 إلى 999 999: مقارنة وترتيب (Les nombres de 100 000 à 999 999 : comparaison et rangement)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ضع الرّقم (3) بين رقمين من أرقام العدد 16 752 لتحصل على أكبر عدد ممكن.",
+      "body": "ب) ضع الرّقم (9) بين رقمين من أرقام العدد 16 752 لتحصل على أكبر عدد ممكن.\nج) ضع الرّقم (5) بين رقمين من أرقام العدد 16 752 لتحصل على أصغر عدد ممكن.\nد) ضع الرّقم (7) بين رقمين من أرقام العدد 16 752 لتحصل على أصغر عدد ممكن.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p097_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ضع على المستقيم الأعداد التّالية :",
+      "body": "10 x 8 ؛ 1000 x 165 ؛ 800 000 ؛ 825",
+      "figureDesc": "Une droite graduée avec cinq repères étiquetés dans des cases: 100, 10 000, 100 000, 600 000, 900 000. Au-dessus, quatre cases contenant les nombres à placer: 10 x 8, 1000 x 165, 800 000, 825.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p097_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اكتب عددا مناسبا مكان النّقط :",
+      "body": "أ) 600 010 > ........ > 599 999\n300 000 > ........ > 289 999\nب) 700 000 > ....\n.... > 401 000",
+      "figureDesc": "Deux colonnes séparées par un trait vertical; points de suspension à remplir.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p097_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "كلّ بطاقة تمثّل عددا :",
+      "body": "أ) املأ خانات كلّ بطاقة بالأرقام، 3 ، 5 ، 0 ، 1 لتحصل على أكبر عدد.\nب) رتّب هذه الأعداد ترتيبا تنازليًا.",
+      "figureDesc": "Six cartes de six cases chacune, avec les chiffres 9 et 4 déjà placés: (1) 9 en case 2 et 4 en case 4; (2) 9 et 4 en cases 1-2 consécutives (9 puis 4 en 1re et 2e cases); (3) 9 en 1re case et 4 en 5e case; (4) 9 en 4e case et 4 en 6e case; (5) 9 en 5e case et 4 en 6e case; (6) 9 en 1re case et 4 en 6e case.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p097_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.81
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les nombres à 5 et 6 chiffres (100 000 à 999 999) : comparaison, rangement, encadrement et placement sur une droite graduée, ce qui correspond à la Période 1 (Nombres à 5 et 6 chiffres).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    132
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Comparaison et rangement des grands nombres",
+    "skill": "Comparer, encadrer et ranger des nombres de 100 000 à 999 999, en insérant un chiffre ou en les plaçant sur une droite graduée.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "nombres à six chiffres",
+      "comparaison",
+      "rangement",
+      "ordre décroissant",
+      "droite graduée",
+      "encadrement"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : insérer un chiffre dans un nombre pour obtenir le plus grand ou le plus petit résultat, trouver un nombre entre deux bornes, former le plus grand nombre à partir de cartes-chiffres, placer des nombres écrits sous forme de produits sur une droite.",
+    "themeGroup": "Grands nombres"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

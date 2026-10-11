@@ -1,0 +1,112 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 14,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وصف عناصر المحيط – وصف فصلي الصيف والخريف",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "كان الفصل صيفا وكان اليوم شديد الحرارة ثقيل الوطأة\nبدأت حرارة الشمس تشتد وتتحول إلى سعير يلفح الأجسام\nابتدأت شمس الصيف ترسل أشعتها الحارة وينبعث في الأفق ضباب السراب\nصفرة رمل وزرقة ماء وصفاء جو وإشراق سماء    إنه فصل الصيف",
+      "figureDesc": "نص أول داخل إطار مستطيل يصف فصل الصيف",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p014_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "في فصل الخريف",
+      "body": "لقد رحل الصيف وجاء الخريف وبدأ الطقس يتغير شيئا فشيئا\nلانت حرارة الشمس ولكن الأرض مازالت صلبة\nهبت الريح فتساقطت الأوراق وتجردت الأشجار\nبدأت أمطار الخريف تنزل رذاذا ثم أصبحت هطلا\nفصل الخريف يكاد ينقضي الشمس خجولة والهواء لطيف والوراق الصفراء تناثرت على الأرض\nاربد الأفق وأظلمت الدنيا وهب نسيم بارد وخيم على الحقول سكون رهيب وبدت السحب السوداء في السماء مخيفة ثقيلة\nالأوراق الصفراء مكدسة ومبعثرة ومن تحتها حشائش نمت في حياء والأشجار شبه عارية\nأقبل الخريف فصبغ السماء بلون رقيق\nغامت السماء وتراكمت فيها السحب حتى أظلمت الدنيا فالمطر مقبل يبشر بقدومه وميض البرق وقصف الرعد\nفي فصل الخريف تتساقط أوراق الشجار وتتطاير في الفضاء الرحب كتطاير العبرات",
+      "figureDesc": "نص ثان داخل إطار مستطيل يصف فصل الخريف",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p014_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وصف عناصر المحيط",
+      "body": "وصف عناصر المحيط",
+      "figureDesc": "عنوان الدرس الموالي في إطار أسفل الصفحة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p014_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "ar-4-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.44
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la description des éléments de l'environnement (saisons été et automne) en arabe, mais aucune unité officielle (centrées sur le récit et les personnages) ne correspond clairement ; la plus proche, ar-4-u4 (description des personnages), concerne un autre objet de description.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description des saisons : été et automne",
+    "skill": "Décrire des éléments de l'environnement (saisons) en utilisant un vocabulaire sensoriel et des phrases descriptives adaptées.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "description",
+      "saisons",
+      "été",
+      "automne",
+      "environnement",
+      "vocabulaire sensoriel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Deux textes modèles courts et contrastés (été chaud et lumineux, automne doux et pluvieux) réutilisables pour des exercices de repérage du lexique descriptif, de comparaison de saisons ou de production écrite d'une description à partir d'indices sensoriels (chaleur, lumière, vent, pluie, feuilles).",
+    "themeGroup": "Description des saisons et du temps"
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« والوراق الصفراء » : l'image porte bien « والوراق » (sans alif hamza), la transcription la reproduit fidèlement, donc pas d'erreur. Mais « أوراق الشجار » (image : « أوراق الشجار ») est reproduit à l'identique ; le texte source contient peut-être une faute d'origine pour « الأشجار »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les retours à la ligne ne sont pas respectés : « ضباب السراب » est sur une ligne distincte dans l'image ; « الصفراء تناثرت على الأرض », « سكون رهيب… » et « والأشجار شبه عارية » sont aussi coupés différemment."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Mise en forme absente : « في فصل الخريف » est en gras comme sous-titre ; « وصف عناصر المحيط » est un titre en gras dans un cadre séparé. Il n'y a pas de contenu manquant."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

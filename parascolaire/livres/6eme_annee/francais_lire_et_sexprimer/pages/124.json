@@ -1,0 +1,159 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 124,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Corrigés de compréhension de l'écrit : Une petite fille imprudente, Lettre, Nadlouk le petit Esquimau, Lettre 2, L'histoire du petit Indien (1) et (2), Dans une maison chinoise",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "6",
+      "instruction": "Texte d'appui : Une petite fille imprudente",
+      "body": "La semaine dernière, Lise a voulu faire plaisir à ses petites camarades. Pour cela, la jeune fille a pris chez elle un tube de médicaments contre les maux de tête. Les cachets ressemblent en effet à des bonbons. À l'école, Lise a avalé quatre cachets et a donné la même quantité à Martine, sa meilleure amie. Puis, elle a distribué le reste des cachets à quelques camarades, donnant à chacune un seul comprimé. Les deux petites filles, Lise et Martine ont été rapidement prises de malaises. On les a conduites d'urgence à l'hôpital.",
+      "figureDesc": "Texte encadré",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p124_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "answer",
+      "number": "Lettre 1",
+      "instruction": "Corrigé : Lettre (François dans la forêt)",
+      "body": "Questions 1 à 7 corrigées",
+      "figureDesc": "",
+      "answer": "1- François a vu dans le bois un singe (barré). 2- a- « François a eu beaucoup peur ». Oui. b- Premier détail : « Alors une grande angoisse m'envahit. » Deuxième détail : « Le silence de la forêt augmente ma peur. Je m'affole. Je tremble comme une feuille… » 3- Une grande peur = une grande angoisse. Noir et blanc = Panaché. Animal = bête. 4- Le petit enfant, perdu dans la forêt, se met à crier car il a peur. 5- Le moniteur a suivi le petit François car il sait qu'il va perdre son chemin. 6- François est imprudent et désobéissant. (Il n'obéit pas aux consignes des moniteurs). 7- C'est les vacances. Alceste et sa sœur Viviane vont à la plage avec leur cousin Paul. Alceste et Paul construisent des châteaux de sable et ramassent des coquillages. Alceste entend des éclats de rire. Il se retourne ; son père, sa mère, son oncle et sa tante jouent au ballon et s'amusent dans l'eau. Alceste et Paul les rejoignent. Se trouvant seul, Viviane passe son superbe canard en plastique autour de son corps, se jette à l'eau et essaie de nager en agitant ses petits bras. Sa maman la surveille tout en jouant.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p124_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Nadlouk",
+      "instruction": "Corrigé : Nadlouk, le petit Esquimau",
+      "body": "Questions 1 à 7",
+      "figureDesc": "",
+      "answer": "1) Nadlouk ne sait pas nager parce que l'eau est soit congelée soit très froide en période de fonte de la glace. 2) Construire = Bâtir ; Tempête = Orage ; Habitation construite avec des blocs de glace ou de neige = Igloo. 3) a- Les Esquimaux habitent dans des igloos. Non. b- « Mais, en temps normal, nous habitons de jolies maisons en bois, peintes en marron ou en rouge, avec de vraies fenêtres et des carreaux ! » 4) a- La maison construite par le père est étroite. b- « Oh ! C'est tout petit : un nid douillet où nous nous entassons tous les sept : Grand-mère, papa, maman, mes frères et ma sœur. » 5) Les enfants dorment dans la cuisine, par terre, sur des peaux de caribous. 6) Les voisins ont aidé le papa à construire sa maison : Faux. Les Esquimaux vivent dans des tentes : Faux. Ils construisent un igloo quand il y a une tempête de neige : Vrai. Ils peuvent cultiver leurs légumes et cueillir des fruits : Faux. Nadlouk se couche dans un joli lit : Faux. 7) Nadlouk trouve son pays beau, sauvage et glacé. Les gens pensent que les Esquimaux vivent dans des igloos. Dans le pays de Nadlouk, l'eau de l'océan est très froide.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p124_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Lettre 2",
+      "instruction": "Corrigé : Lettre 2 (Didier et le sanglier)",
+      "body": "Questions 1 à 6 et début de 7",
+      "figureDesc": "",
+      "answer": "1) « Chalet » veut dire : Une habitation en bois dans la montagne. 2) Didier a peur car il s'est trouvé face à face avec un sanglier. 3) Didier escalade un arbre pour deux raisons : se sauver de la bête ; pour voir au loin. 4) Didier demande à Alexis de lui rendre visite. 5) a- Didier a tué le fameux sanglier. Non. b- « Et puis, le fameux sanglier que j'ai rencontré a finalement été abattu par un chasseur. » 6) Oui, Didier attend une réponse. « Écris-moi vite pour me dire que tu acceptes mon invitation et m'indiquer la date de ton arrivée. » 7) L'inquiétude = L'angoisse ; Dangereux et effrayant = Redoutable ; Célèbre = Fameux.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p124_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Texte sur Bubu et Zanzi (clown)",
+      "body": "Bubu a la bouche large comme un tiroir. Il a deux carrés bleus autour des yeux et une tomate à la place du nez. Bubu tape sur une boîte de conserves avec une cuillère. Pour le faire taire, Zanzi lui donne une gifle, et un jet d'eau sort de son oreille droite. Une autre gifle et l'eau jaillit de son oreille gauche. Les spectateurs rient très fort. Ils applaudissent le clown.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p124_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "L'histoire du petit Indien (1)",
+      "instruction": "Corrigé : L'histoire du petit Indien (1)",
+      "body": "Questions 1 à 7",
+      "figureDesc": "",
+      "answer": "1) « C'était une illusion » : on pourrait dire « C'était un mensonge ». 2) Le petit Indien trouve un cheval blanc dans la prairie. 3) a- Le petit Indien pense que le cheval est mort. Non. b- « Ce cheval ne peut, sans doute, pas marcher, pensa le petit Indien, il doit avoir soif. » « Il doit aussi avoir faim, se dit le petit Indien. » 4) « Le petit Indien se mit à caresser doucement le museau du cheval. » 5) La nuit, le petit Indien n'a pas dormi car il pense au cheval blanc couché, tout seul, là-bas, dans le froid et les marguerites. 6) Le pré = la prairie ; La noirceur = l'obscurité. 7) C'est grand, Paris ! Je me suis promenée toute la journée. J'ai visité le Château de Versailles et je suis montée aussi à la Tour Eiffel.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p124_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "L'histoire du petit Indien (2)",
+      "instruction": "Corrigé : L'histoire du petit Indien (2)",
+      "body": "Questions 1 à 7",
+      "figureDesc": "",
+      "answer": "1) L'enfant prend sa couverture chaude et il sort pour protéger le cheval blanc contre le froid. 2) a- Chef Soleil Levant a grondé le petit Indien. Non. b- « Chef Soleil Levant était heureux de retrouver son fils sain et sauf et il était très fier de lui. » 3) Le cheval ne se sauve pas quand le petit Indien s'approche de lui parce qu'il est blessé. 4) « Il t'appartient de droit. » veut dire : Si un Indien trouve un cheval sauvage et le soigne, ce cheval lui appartient. 5) Le petit Indien est content. Première raison : il a un nom comme les autres. Deuxième raison : il dispose d'un cheval comme tous les autres. 6) Ce petit Indien est hardi, courageux et affectueux. Il a un bon cœur. 7) Les Lapons sont les habitants du pôle nord. Ils sont nomades. Ils suivent leurs troupeaux de pâturage en pâturage. Ils font parfois plus de cent kilomètres pour trouver la nourriture de leurs bêtes. Et c'est pour cela qu'ils emportent toujours avec eux leurs tentes en peau de renne.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p124_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Dans une maison chinoise",
+      "instruction": "Corrigé : Dans une maison chinoise",
+      "body": "Questions 1 à 5",
+      "figureDesc": "",
+      "answer": "1) En Chine, on trouve les vitres dans les maisons des riches. 2) a- « Monsieur Miou-Li est un homme pauvre ». Oui. b- Premier détail : « Dans un coin, il y a une grande caisse en bois, recouverte d'une natte et qui servait de lit. Dans un autre coin se trouvait un grand coffre en bois également où les vêtements de la famille étaient rangés. » Deuxième détail : « Au milieu de la maisonnette était placée une petite table très basse sur laquelle on voyait deux assiettes en bois, l'une remplie de riz cuit, l'autre de légumes coupés très fins. » 3) La famille mange du riz et des légumes pendant le repas. 4) De petits morceaux = de petites quantités ; Très vite = en un clin d'œil ; Une caisse = coffre. 5) La famille de ce Chinois se compose de trois personnes : Vrai. Les Chinois mangent le riz avec une cuillère : Faux. Miou-Li a une grande maison : Faux.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p124_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m7",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u5",
+    "confidence": 0.21
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page rassemble des corrigés de compréhension de l'écrit de textes variés (petite fille imprudente, lettres, Nadlouk l'Esquimau, petit Indien, maison chinoise, clown) relevant de plusieurs modules (santé, modes de vie, loisirs) sans qu'un seul chapitre ne ressorte clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    57,
+    58,
+    59,
+    60
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : textes narratifs",
+    "skill": "Comprendre un texte court en répondant à des questions (repérage d'informations, personnages, lieux, causes) et vérifier ses réponses avec le corrigé.",
+    "pageType": "correction",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "corrigé",
+      "texte d'appui",
+      "lettre",
+      "questions de lecture",
+      "récit"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une série de textes courts variés (lettre, récit exotique, scène de clown, mise en garde sur un danger du quotidien), chacun suivi de 5 à 7 questions de compréhension progressives avec corrigé, pour créer des fiches de lecture autocorrectives.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

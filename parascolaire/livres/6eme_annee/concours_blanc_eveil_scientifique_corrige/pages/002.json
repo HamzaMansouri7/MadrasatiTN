@@ -1,0 +1,273 @@
+{
+  "book": "concours_blanc_eveil_scientifique_corrige",
+  "page": 2,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الدورة الدموية ومكونات الدم (le sang et la circulation sanguine)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "[جزء مقتطع من تمرين سابق]",
+      "figureDesc": "",
+      "answer": "تَخَثُّرْ / مُتَرَسِّبْ",
+      "id": "concours_blanc_eveil_scientifique_corrige_p002_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أصلح الخطأ في الجمل التّالية إن وجد",
+      "body": "يحتوي البطين الأيسر للقلب على دم عاتم قادم من الجسم\nالكريّات الحمراء و الصّفيحات في تجدّد مستمرّ في الدّم",
+      "figureDesc": "",
+      "answer": "يحتوي البطين الأيسر للقلب على دم قاني قادم من الأذين الأيسر\nهذه الافادة صحيحة",
+      "id": "concours_blanc_eveil_scientifique_corrige_p002_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكتب صواب أو خطأ أمام الإفادات التّالية",
+      "body": "يزداد عدد الكريّات الحمراء لدى مرضى فقر الدّم ..........\nتقوم الرّئتين بتزويد أعضاء الجسم بالأكسجين و الغذاء ..........\nينتج الاكسيهمغلوبين عن تفاعل الأكسجين مع خضاب الدّم ..........",
+      "figureDesc": "",
+      "answer": "يزداد عدد الكريّات الحمراء لدى مرضى فقر الدّم : خطأ\nتقوم الرّئتين بتزويد أعضاء الجسم بالأكسجين و الغذاء : خطأ\nينتج الاكسيهمغلوبين عن تفاعل الأكسجين مع خضاب الدّم : صواب",
+      "id": "concours_blanc_eveil_scientifique_corrige_p002_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "السّند: عند عودتهم الى البيت أرادت رانية أن تتعرف أكثر على جهاز الدوران و مكونات الدّم فأبحرت على الأنترنات ووجدت الرسم التالي\nالتّعليمة: أكمل بالعبارات المناسبة مكان النقاط",
+      "body": "",
+      "figureDesc": "رسم توضيحي لأنبوبي اختبار يحتويان على عيّنتي دم، الأنبوب الأول يبيّن ترسّب مكوّنات الدّم في ثلاث طبقات، والأنبوب الثاني يبيّن تخثّر الدّم وانفصال المصل عن العلقة.",
+      "answer": "الأنبوب الأول (دم):\n- الطبقة العليا: بلازما\n- الطبقة الوسطى: كريّات بيضاء\n- الطبقة السفلى: كريّات حمراء\n\nالأنبوب الثاني (دم):\n- السائل العلوي: مصل\n- الجزء السفلي المتخثر: علقة",
+      "id": "concours_blanc_eveil_scientifique_corrige_p002_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.93
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page porte sur le sang (globules rouges, plaquettes, anémie, hémoglobine, oxyhémoglobine) et sur la circulation (ventricule gauche, poumons), ce qui correspond à l'unité 3 sur le système circulatoire et la composition du sang.",
+  "linkFlags": [],
+  "selfContained": true,
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Circulation sanguine et composants du sang",
+    "skill": "Connaître le trajet du sang dans le cœur et le rôle de ses composants (globules rouges, plasma, sérum, caillot, oxyhémoglobine).",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "vrai_faux",
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "sang",
+      "circulation sanguine",
+      "globules rouges",
+      "plasma",
+      "coagulation",
+      "hémoglobine"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série variée d'exercices courts (appariement de termes, correction d'erreurs, vrai/faux, légende d'un schéma de tubes à essai) avec un contexte de recherche sur Internet par une élève, réutilisable pour des évaluations sur le sang.",
+    "themeGroup": "La circulation sanguine et le sang"
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le premier bloc invente une consigne «اِرْبِطْ كُلَّ كَلِمَةٍ بِمَا يُنَاسِبُهَا» avec tashkeel, absente de l'image (la zone supérieure est vide). Seuls deux mots verts apparaissent : مترسّب et تخثّر."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«مُتَرَسِّب» et «تَخَثُّر» sont transcrits avec un tashkeel complet alors que l'image montre seulement une shadda (مترسّب، تخثّر). Les mots sont dans des cases séparées, avec مترسّب à gauche et تخثّر à droite, sans virgule."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "La consigne «أَصْلِحِ الخَطَأَ فِي الجُمَلِ التَّالِيَةِ إِنْ وُجِدَ» est entièrement vocalisée, alors que l'image n'a aucune voyelle : «أصلح الخطأ في الجمل التالية إن وجد»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le mot «التّعليمة» qui introduit chaque consigne est omis dans les blocs 1 et 2. Les marqueurs «مع» de la marge ne sont pas transcrits."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 1 : l'image donne «على دم قاني قادم من الأذين الأيسر» ; la transcription est correcte, mais la phrase 2 est suivie de «هذه الافادة صحيحة» en vert, ce qui est correct."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Bloc 3 : les réponses «الطبقة الصفراء العليا / الرقيقة الوسطى / الحمراء السفلى / الراسب الأحمر الداكن» sont inventées. L'image montre seulement les étiquettes (بلازما، كريّات بيضاء، كريّات حمراء، مصل، علقة) reliées par des flèches aux tubes, et les mots «دم» sous les tubes."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le bloc 3 mélange السند et التعليمة dans un seul champ. Les étiquettes sont déjà remplies dans l'image, donc une «réponse» pour «أكمل مكان النقاط» est une interprétation. Le «دم» est sous les deux tubes, et non dans une liste."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.45,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Bloc 1 : la consigne «اِرْبِطْ كُلَّ كَلِمَةٍ بِمَا يُنَاسِبُهَا» n'existe pas dans l'image. La zone supérieure est un grand cadre bleu vide. Seuls deux mots verts dans des cases apparaissent : «تخثّر» (à droite) et «مترسّب» (à gauche)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "major",
+        "detail": "«مُتَرَسِّب» et «تَخَثُّر» sont transcrits avec un tashkeel complet. L'image ne montre que la shadda : «مترسّب», «تخثّر». Les deux mots sont dans des cases séparées, sans virgule, et l'ordre de lecture (de droite à gauche) est تخثّر puis مترسّب."
+      },
+      {
+        "type": "voyelle",
+        "severity": "major",
+        "detail": "La consigne «أصلح الخطأ في الجمل التالية إن وجد» est entièrement vocalisée dans la transcription, alors que l'image n'a aucune voyelle."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le mot «التّعليمة», qui introduit les consignes des blocs 2 et 3, est omis. Il est présent dans l'image, suivi d'un trait. Les numéros d'exercice et de phrase («1)», «2)», «3)») sont ajoutés alors qu'ils n'apparaissent pas dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Bloc 4 : la réponse (الطبقة الصفراء العليا، الطبقة الرقيقة الوسطى، الراسب الأحمر الداكن…) est inventée. L'image montre seulement les étiquettes vertes déjà placées (بلازما، كريّات بيضاء، كريّات حمراء، مصل، علقة), reliées aux tubes par des flèches, et le mot «دم» sous chaque tube."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "Bloc 4 : السند et التعليمة sont fusionnés dans le champ instruction. Le السند (le texte sur Rania) doit aller dans le body, et la consigne «أكمل بالعبارات المناسبة مكان النقاط» dans instruction."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "تخثّر\nمترسّب",
+      "figureDesc": "Grand cadre bleu vide en haut de la page. En bas, deux cases arrondies avec des mots verts : « تخثّر » (à droite) et « مترسّب » (à gauche). Aucune consigne visible.",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التّعليمة: أصلح الخطأ في الجمل التالية إن وجد",
+      "body": "يحتوي البطين الأيسر للقلب على دم عاتم قادم من الجسم\nالكريّات الحمراء و الصّفيحات في تجدّد مستمرّ في الدّم",
+      "figureDesc": "",
+      "answer": "يحتوي البطين الأيسر للقلب على دم قاني قادم من الأذين الأيسر\nهذه الافادة صحيحة"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التّعليمة: أكتب صواب أو خطأ أمام الإفادات التّالية",
+      "body": "يزداد عدد الكريّات الحمراء لدى مرضى فقر الدّم\nتقوم الرّئتين بتزويد أعضاء الجسم بالأكسجين و الغذاء\nينتج الاكسيهمغلوبين عن تفاعل الأكسجين مع خضاب الدّم",
+      "figureDesc": "",
+      "answer": "خطأ\nخطأ\nصواب"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التّعليمة: أكمل بالعبارات المناسبة مكان النقاط",
+      "body": "السّند: عند عودتهم الى البيت أرادت رانية أن تتعرف أكثر على جهاز الدوران و مكونات الدّم فأبحرت على الأنترنات ووجدت الرسم التالي",
+      "figureDesc": "Deux tubes à essai. Le tube de gauche montre trois couches (jaune en haut, rouge en bas) avec trois étiquettes vertes reliées par des flèches : بلازما، كريّات بيضاء، كريّات حمراء. Le tube de droite montre un liquide jaune au-dessus d'un dépôt rouge foncé, avec deux étiquettes vertes reliées par des flèches : مصل، علقة. Sous chaque tube figure le mot « دم ».",
+      "answer": "بلازما، كريّات بيضاء، كريّات حمراء (الأنبوب الأول) ؛ مصل، علقة (الأنبوب الثاني) ؛ دم (تحت كل أنبوب)"
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اِرْبِطْ كُلَّ كَلِمَةٍ بِمَا يُنَاسِبُهَا (le texte de la consigne est absent ou effacé dans la partie supérieure de la page)",
+      "body": "مُتَرَسِّب ، تَخَثُّر",
+      "figureDesc": "Grand cadre bleu presque vide en haut de la page. Seules deux étiquettes arrondies sont visibles en bas : « مترسّب » et « تخثّر » (en vert). Le reste du contenu est absent.",
+      "answer": null,
+      "confidence": 0.4,
+      "id": "concours_blanc_eveil_scientifique_corriges_p002_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَصْلِحِ الخَطَأَ فِي الجُمَلِ التَّالِيَةِ إِنْ وُجِدَ",
+      "body": "1) يحتوي البطين الأيسر للقلب على دم عاتم قادم من الجسم\n2) الكريّات الحمراء و الصّفيحات في تجدّد مستمرّ في الدّم",
+      "figureDesc": "",
+      "answer": "1) يحتوي البطين الأيسر للقلب على دم قاني قادم من الأذين الأيسر\n2) هذه الافادة صحيحة",
+      "confidence": 0.9,
+      "id": "concours_blanc_eveil_scientifique_corriges_p002_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكتب صواب أو خطأ أمام الإفادات التّالية",
+      "body": "1) يزداد عدد الكريّات الحمراء لدى مرضى فقر الدّم\n2) تقوم الرّئتين بتزويد أعضاء الجسم بالأكسجين و الغذاء\n3) ينتج الاكسيهمغلوبين عن تفاعل الأكسجين مع خضاب الدّم",
+      "figureDesc": "",
+      "answer": "1) خطأ\n2) خطأ\n3) صواب",
+      "confidence": 0.9,
+      "id": "concours_blanc_eveil_scientifique_corriges_p002_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "السّند: عند عودتهم الى البيت أرادت رانية أن تتعرف أكثر على جهاز الدوران و مكونات الدّم فأبحرت على الأنترنات ووجدت الرسم التالي. التّعليمة: أكمل بالعبارات المناسبة مكان النقاط",
+      "body": "رسم لأنبوبين اختبار يحتويان على دم. الأنبوب الأول (دم): بلازما، كريّات بيضاء، كريّات حمراء. الأنبوب الثاني (دم): مصل، علقة.",
+      "figureDesc": "Deux tubes à essai contenant du sang. Le tube de gauche montre trois couches : plasma (jaune), globules blancs et globules rouges (rouge en bas). Le tube de droite montre du sérum (jaune) et un caillot (rouge foncé en bas). Les étiquettes sont reliées aux tubes par des flèches. Sous chaque tube figure le mot « دم ».",
+      "answer": "بلازما ← الطبقة الصفراء العليا ؛ كريّات بيضاء ← الطبقة الرقيقة الوسطى ؛ كريّات حمراء ← الطبقة الحمراء السفلى ؛ مصل ← الطبقة الصفراء العليا في الأنبوب الثاني ؛ علقة ← الراسب الأحمر الداكن في أسفل الأنبوب الثاني",
+      "confidence": 0.8,
+      "id": "concours_blanc_eveil_scientifique_corriges_p002_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "linkStatus": "clean",
+  "bookTitle": "Concours blanc 6ème année — Éveil scientifique (corrigé)"
+}

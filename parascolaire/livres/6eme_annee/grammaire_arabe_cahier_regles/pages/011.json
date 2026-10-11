@@ -1,0 +1,115 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 11,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "قواعد اللغة العربية: إسناد الأفعال إلى الضمائر (المتكلم والمخاطب) والنفي بـ لم ولن (التمارين)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اسند أفعال الجملة وفق الطلب",
+      "body": "قال أبي لأمي: لماذا لم تعدي الطعام وتستعدي للخروج معي\nخاطبنا أبي قائلا:\nتوجه باللوم الي إخوتي البنات وأنتن",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p011_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أعيد كتابة الجملة بالصيغ التي يحددها الضمير المسطر",
+      "body": "لا تشدو وثاق الخروف ولا تعذبوه أتظنون أنه لا يحس مثل الآدميين ؟\nعليك أن\nعليكما أن",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p011_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "استعين بالمثال أسند أفعاله الي الضمائر: نحن، أنتن",
+      "body": "لم أتم ما كلفتني به لأنني لم أعد بعد ملازم المشروع",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p011_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "انف بـ لم الجملة التالية",
+      "body": "اهتم باخوتك عند غياب أمك وتسلمت المسؤولية منذ الصغر",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p011_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكمل الجدول التالي",
+      "body": "الضمائر / الأفعال: استهل، تردد، كف\nالمتكلم: أنا ← لن أستهل (استهل)، (تردد: فارغ)، لن أكف (كف)\nالمتكلم: نحن ← (استهل: فارغ)، لن نتردد (تردد)، (كف: فارغ)",
+      "figureDesc": "جدول من 4 أعمدة وصفين: عمود الضمائر (المتكلم)، عمود الأفعال (أنا، نحن)، وأعمدة الأفعال استهل وتردد وكف؛ بعض الخانات فارغة للإكمال.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p011_i5",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.3
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de conjugaison arabe (verbes attribués aux pronoms, négation par لم et لن), et le chapitre ar-6-ch1 est le seul à mentionner la conjugaison des verbes, mais son intitulé porte sur la narration, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison: pronoms et négation",
+    "skill": "Conjuguer des verbes selon les pronoms de la 1re et 2e personne et former la négation avec لم et لن.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "conjugaison arabe",
+      "pronoms personnels",
+      "négation",
+      "lam et lan",
+      "inaccompli"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : consignes de transposition d'une phrase vers différents pronoms, négation d'un énoncé et tableau de conjugaison à compléter, avec des mises en situation familiales (parents, frères et sœurs, responsabilités, animal de la fête).",
+    "themeGroup": "Conjugaison: pronoms et suffixes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

@@ -1,0 +1,107 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 47,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الهندسة (المجال الرئيسي الثاني) : إنشاء زاوية ومنصّفها، مجموع زوايا مثلث، إنشاء متوازي أضلاع، التماثل المحوري",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) أنشئ زاوية قياسها ... ثم أنشئ منصفا للزاوية باستعمال الأدوات الهندسية المناسبة. (… ن)",
+      "body": "إطار فارغ مخصص للإنشاء. الصفحة تحمل العنوان: المجال الرئيسي الثاني – الهندسة – نقطة. بعض الأعداد (قياس الزاوية والنقاط) غير ظاهرة في الصورة الممسوحة.",
+      "figureDesc": "مستطيل فارغ للرسم والإنشاء",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "soutien_maths_francais_p047_i1",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ المثلث جانبه ثم أحسب قياس الزاوية ... بدون استعمال الأدوات الهندسية. (… ن)",
+      "body": "المثلث JEF: الزاوية عند J قياسها 46°، والزاوية عند F قياسها 108°. المطلوب حساب قياس الزاوية الثالثة عند E.",
+      "figureDesc": "مثلث JEF، الضلع JE أفقي في الأعلى، الزاوية عند J تساوي 46° والزاوية عند F في الأسفل تساوي 108°، وبعض الأضلاع عليها علامات تقابل أو تساوٍ.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "soutien_maths_francais_p047_i2",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أنشئ متوازي أضلاع ... حيث ... و ... (… ن)",
+      "body": "إطار فارغ للإنشاء. بعض معطيات الإنشاء (أسماء الرؤوس والأطوال) غير ظاهرة في الصورة.",
+      "figureDesc": "مستطيل فارغ للرسم",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "soutien_maths_francais_p047_i3",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لاحظ الشكل أسفله ثم أنشئ مماثلا له بالنسبة لمحور التماثل. (… ن)",
+      "body": "شبكة مربعات يقطعها محور تماثل عمودي أحمر. المطلوب إنشاء مماثل الشكل بالنسبة لهذا المحور.",
+      "figureDesc": "شبكة مربعات، محور تماثل عمودي أحمر على اليمين، شكل أسود على اليسار على هيئة شبه منحرف (قاعدة سفلى أكبر من القاعدة العليا) يلامس رأسه الأيمن السفلي المحور تقريبا.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "soutien_maths_francais_p047_i4",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p4",
+  "topicTitle": "Période 4 : Solides, aires latérales/totales et angles",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.21
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de géométrie : construction d'un angle et de sa bissectrice, somme des angles d'un triangle, construction d'un parallélogramme et symétrie axiale. Cela correspond à la Période 4 (mesure des angles et symétrie), même si le parallélogramme apparaît aussi en Période 2.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    50,
+    51
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Géométrie : angles, triangles, symétrie axiale",
+    "skill": "Construire une bissectrice, calculer l'angle manquant d'un triangle, construire un parallélogramme et le symétrique d'une figure par rapport à un axe.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "bissectrice",
+      "somme des angles du triangle",
+      "parallélogramme",
+      "symétrie axiale",
+      "construction géométrique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série de quatre exercices courts sur des constructions aux instruments, un calcul d'angle sans instruments et une symétrie sur quadrillage. Le découpage en tâches distinctes avec cadres de construction et barème par exercice est réutilisable pour une fiche d'évaluation de géométrie.",
+    "themeGroup": "Angles et symétrie axiale"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

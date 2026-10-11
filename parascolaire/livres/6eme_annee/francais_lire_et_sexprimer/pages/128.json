@@ -1,0 +1,352 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 128,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Corrigé : complément circonstanciel, conjugaison (impératif, passé composé, présent, futur) et compréhension du texte « La ruse du jaguar »",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "C-b",
+      "instruction": "Compléments circonstanciels",
+      "body": "- Un complément de manière : gaiement\nb- -Durant les jours de grand froid, le mouton reste volontiers à la maison.\n- Les gens vont à la ville aujourd'hui.\n- Dans une auberge, le paysan se repose un instant.",
+      "figureDesc": "",
+      "answer": "Durant les jours de grand froid ; aujourd'hui ; Dans une auberge",
+      "confidence": 0.98,
+      "id": "francais_lire_et_sexprimer_p128_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "D-1",
+      "instruction": "D) Conjugaison : 1)",
+      "body": "- Fais une bonne affaire !\n- Réécrivez le conte !\n- Prends le sac de marrons !\n- Réfléchis avant de faire l'échange !\n- Va au marché !\n- Passe la nuit à l'auberge !\n- Dites la vérité.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.99,
+      "id": "francais_lire_et_sexprimer_p128_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "D-2",
+      "instruction": "2)",
+      "body": "Le passé composé | Le présent | Le futur\n-Le paysan a eu un cheval. | - Le paysan a un cheval. | -Le paysan aura un cheval.\n- La vache a été en bonne santé. | - La vache est en bonne santé. | - La vache sera en bonne santé.\n- J'ai été heureux. | - Je suis heureux. | - Je serai heureux.\n- Nous avons eu besoin d'un mouton. | - Nous avons besoin d'un mouton. | - Nous aurons besoin d'un mouton.\n- Tu as été à l'auberge. | - Tu es à l'auberge. | -Tu seras à l'auberge.\n- Vous avez été intelligents. | - Vous êtes intelligents. | - Vous serez intelligents.\n- Ils ont eu une poule et une oie. | - Ils ont une poule et une oie. | - Ils auront une poule et une oie.",
+      "figureDesc": "Tableau à trois colonnes : Le passé composé, Le présent, Le futur",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "francais_lire_et_sexprimer_p128_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "D-3",
+      "instruction": "3)",
+      "body": "- Hier, j'ai pris le sac de marrons, suis entré dans la salle de l'auberge et ai mis mon sac devant la cheminée.\n- Hier, vous avez pris le sac de marrons, êtes entrés dans la salle de l'auberge et avez mis votre sac devant la cheminée.\n- Hier, elles ont pris le sac de marrons, sont entrées dans la salle de l'auberge et ont mis leur sac devant la cheminée.\n* Demain, tu prendras le sac de marrons, entreras dans la salle de l'auberge et mettras ton sac devant la cheminée.\n* Demain, elle prendra le sac de marrons, entrera dans la salle de l'auberge et mettra son sac devant la cheminée.\n* Demain, nous prendrons le sac de marrons, entrerons dans la salle de l'auberge et mettrons notre sac devant la cheminée.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.99,
+      "id": "francais_lire_et_sexprimer_p128_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "D-4",
+      "instruction": "4)",
+      "body": "Hier, la paysanne est allée à la ville. Elle a fait une bonne affaire.\nHier, nous sommes allés à la ville. Nous avons fait une bonne affaire.\nDemain, elles iront à la ville. Elles feront une bonne affaire.\n- La semaine dernière, tu es allé au poulailler. Tu as nourri ta poule.\nLa semaine dernière, vous êtes allés au poulailler. Vous avez nourri votre poule.\n- Je veux me reposer un instant dans l'auberge.\nNous voulons nous reposer un instant dans l'auberge.\nLes passagers veulent se reposer un instant dans l'auberge.\n- Hier, le voyageur a dit des bêtises.\nHier, j'ai dit des bêtises.\nHier, vous avez dit des bêtises.\n- L'année dernière, nous avons lu l'histoire du paysan et nous avons fait un résumé.\nL'année prochaine, les élèves liront l'histoire du paysan et ils feront un résumé.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.99,
+      "id": "francais_lire_et_sexprimer_p128_i5",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "D-5",
+      "instruction": "5)",
+      "body": "a- Hier, Fatma a appris ses leçons et a rangé ses livres dans son armoire. Aujourd'hui, elle veut s'amuser un peu. Elle se met à jouer avec ses deux chiens. Les deux bêtes se laissent caresser sans bouger. Ensuite, la fillette prend dans ses petites mains des robots en plastique et les lance dans le jardin. Les deux chiens bondissent et vont ramener ensemble les jouets. Elle s'amuse bien avec ses animaux.\nb- Hier, nous avons appris nos leçons et avons rangé nos livres dans notre armoire. Aujourd'hui, nous voulons nous amuser un peu. Nous nous mettons à jouer avec notre chien. La bête se laisse caresser sans bouger. Ensuite, nous prenons dans nos petites mains des robots en plastique et les lançons dans le jardin. Le chien bondit et va ramener les jouets. Nous nous amusons bien avec nos animaux.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.99,
+      "id": "francais_lire_et_sexprimer_p128_i6",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "La ruse du jaguar\n1) a- * Le jaguar est d'accord pour aider Talokoé car :",
+      "body": "☒ c'est la première fois qu'il travaille pour un homme et il espère être bien payé.\nb- « Il se dit : « C'est la première fois que je travaille pour un homme ! Mon salaire vaudra sûrement son pesant d'or... »",
+      "figureDesc": "",
+      "answer": "b- « Il se dit : « C'est la première fois que je travaille pour un homme ! Mon salaire vaudra sûrement son pesant d'or… »",
+      "confidence": 0.99,
+      "id": "francais_lire_et_sexprimer_p128_i7",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "2) a- Pour résoudre le problème de son fils,",
+      "body": "☒ il suffit de faire comme le jaguar, c'est-à-dire d'inventer une ruse.\nb- « Alima, fils d'homme, si tu manges ce jour, tu deviendras aussi rusé que lui ! »",
+      "figureDesc": "",
+      "answer": "b- « Alima, fils d'homme, si tu manges ce jaguar, tu deviendras aussi rusé que lui ! »",
+      "confidence": 0.99,
+      "id": "francais_lire_et_sexprimer_p128_i8",
+      "topicId": "fr-6-m1",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "3)",
+      "body": "C'est l'histoire d'un jaguar malin qui aide un chef de village. Son fils refuse de manger. Le jaguar lui apporte donc un singe, puis un serpent comme repas. Mais au bout de trois jours, chaque fois, le petit garçon ne mange plus. Lorsque le jaguar rapporte un tapir comme repas, l'enfant se remet à manger. Le chef a compris la ruse du jaguar et décide de devenir aussi malin que lui : le chef fait alors semblant d'accepter de payer, mais il en profite pour assommer le jaguar qui devient à son tour le repas de son fils.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.99,
+      "id": "francais_lire_et_sexprimer_p128_i9",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.46
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un corrigé de français (compléments circonstanciels, impératif, passé composé, présent, futur, compréhension de « La ruse du jaguar » sur le travail de Talokoé) ; le module 1 « Travailler pour s'épanouir » est le plus proche, mais la page mélange plusieurs points de conjugaison et d'autres modules (passé composé, futur) pourraient aussi convenir.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Conjugaison et compléments circonstanciels",
+    "skill": "Conjuguer à l'impératif, au passé composé, au présent et au futur (avoir, être, aller, faire), identifier les compléments circonstanciels et comprendre un conte.",
+    "pageType": "correction",
+    "formats": [
+      "texte_a_trous",
+      "lecture_comprehension",
+      "production_ecrite",
+      "qcm"
+    ],
+    "keywords": [
+      "impératif",
+      "passé composé",
+      "compléments circonstanciels",
+      "avoir et être",
+      "La ruse du jaguar",
+      "résumé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : transposer un même texte à différentes personnes et temps (hier/demain), consignes à l'impératif tirées d'un conte, et questions de compréhension avec case à cocher puis justification par une phrase du texte.",
+    "themeGroup": "Conjugaison"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.99,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "D-5b : la transcription donne « les lançons dans le jardin » ; l'image porte « les lançons » avec la cédille (lançons), ce qui est correct, mais « et les lançons » omet « nous ». Dans l'image on lit « et les lançons » après « nous prenons… » : l'écart est négligeable."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "[1] et [2] : « b- Relève la phrase qui le prouve » n'apparaît pas dans l'image, c'est une consigne ajoutée. L'image montre seulement « b- » suivi de la réponse."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "D-5 : le titre « réécrire le texte avec « nous » » et les titres de section (D-4 « aller, faire, vouloir, dire, lire ») sont ajoutés, absents de l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "C-b : la mention « réponse: Compléments soulignés en gras » est une interprétation ; le texte contient aussi « b- -Durant » avec un double tiret."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'illustration (élèves en classe levant la main) n'est pas décrite ; la transcription finale est vide."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[3] : « C'est l'histoire d'un jaguar malin qui aide un chef de village » ; l'image dit « aide un chef de village » mais l'original contient aussi « Talokoé » en [1a], ce qui est cohérent. Le texte du résumé omet « un » dans « d'un jaguar » : l'image dit « d'un jaguar malin ». Pas d'erreur réelle."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "C-b",
+      "instruction": "Compléments circonstanciels (suite du corrigé)",
+      "body": "- Un complément de manière : gaiement\nb- Durant les jours de grand froid, le mouton reste volontiers à la maison.\n- Les gens vont à la ville aujourd'hui.\n- Dans une auberge, le paysan se repose un instant.",
+      "figureDesc": "",
+      "answer": "Compléments soulignés en gras : Durant les jours de grand froid ; aujourd'hui ; Dans une auberge",
+      "confidence": 0.9,
+      "id": "sagesse_6eme_complet_p128_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "D-1",
+      "instruction": "Conjugaison : phrases à l'impératif",
+      "body": "- Fais une bonne affaire !\n- Réécrivez le conte !\n- Prends le sac de marrons !\n- Réfléchis avant de faire l'échange !\n- Va au marché !\n- Passe la nuit à l'auberge !\n- Dites la vérité.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p128_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "D-2",
+      "instruction": "Conjugaison : passé composé, présent, futur",
+      "body": "Passé composé: Le paysan a eu un cheval. / La vache a été en bonne santé. / J'ai été heureux. / Nous avons eu besoin d'un mouton. / Tu as été à l'auberge. / Vous avez été intelligents. / Ils ont eu une poule et une oie.\nPrésent: Le paysan a un cheval. / La vache est en bonne santé. / Je suis heureux. / Nous avons besoin d'un mouton. / Tu es à l'auberge. / Vous êtes intelligents. / Ils ont une poule et une oie.\nFutur: Le paysan aura un cheval. / La vache sera en bonne santé. / Je serai heureux. / Nous aurons besoin d'un mouton. / Tu seras à l'auberge. / Vous serez intelligents. / Ils auront une poule et une oie.",
+      "figureDesc": "Tableau à trois colonnes : Le passé composé, Le présent, Le futur",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "sagesse_6eme_complet_p128_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "D-3",
+      "instruction": "Conjugaison : passé composé et futur",
+      "body": "- Hier, j'ai pris le sac de marrons, suis entré dans la salle de l'auberge et ai mis mon sac devant la cheminée.\n- Hier, vous avez pris le sac de marrons, êtes entrés dans la salle de l'auberge et avez mis votre sac devant la cheminée.\n- Hier, elles ont pris le sac de marrons, sont entrées dans la salle de l'auberge et ont mis leur sac devant la cheminée.\n* Demain, tu prendras le sac de marrons, entreras dans la salle de l'auberge et mettras ton sac devant la cheminée.\n* Demain, elle prendra le sac de marrons, entrera dans la salle de l'auberge et mettra son sac devant la cheminée.\n* Demain, nous prendrons le sac de marrons, entrerons dans la salle de l'auberge et mettrons notre sac devant la cheminée.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "sagesse_6eme_complet_p128_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "D-4",
+      "instruction": "Conjugaison : aller, faire, vouloir, dire, lire",
+      "body": "Hier, la paysanne est allée à la ville. Elle a fait une bonne affaire.\nHier, nous sommes allés à la ville. Nous avons fait une bonne affaire.\nDemain, elles iront à la ville. Elles feront une bonne affaire.\n- La semaine dernière, tu es allé au poulailler. Tu as nourri ta poule.\nLa semaine dernière, vous êtes allés au poulailler. Vous avez nourri votre poule.\n- Je veux me reposer un instant dans l'auberge.\nNous voulons nous reposer un instant dans l'auberge.\nLes passagers veulent se reposer un instant dans l'auberge.\n- Hier, le voyageur a dit des bêtises.\nHier, j'ai dit des bêtises.\nHier, vous avez dit des bêtises.\n- L'année dernière, nous avons lu l'histoire du paysan et nous avons fait un résumé.\nL'année prochaine, les élèves liront l'histoire du paysan et ils feront un résumé.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "sagesse_6eme_complet_p128_i5",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "D-5",
+      "instruction": "Conjugaison : réécrire le texte avec « nous »",
+      "body": "a- Hier, Fatma a appris ses leçons et a rangé ses livres dans son armoire. Aujourd'hui, elle veut s'amuser un peu. Elle se met à jouer avec ses deux chiens. Les deux bêtes se laissent caresser sans bouger. Ensuite, la fillette prend dans ses petites mains des robots en plastique et les lance dans le jardin. Les deux chiens bondissent et vont ramener ensemble les jouets. Elle s'amuse bien avec ses animaux.\nb- Hier, nous avons appris nos leçons et avons rangé nos livres dans notre armoire. Aujourd'hui, nous voulons nous amuser un peu. Nous nous mettons à jouer avec notre chien. La bête se laisse caresser sans bouger. Ensuite, nous prenons dans nos petites mains des robots en plastique et les lançons dans le jardin. Le chien bondit et va ramener les jouets. Nous nous amusons bien avec nos animaux.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "sagesse_6eme_complet_p128_i6",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "La ruse du jaguar : a- « Le jaguar est d'accord pour aider Talokoé car : » (case cochée) ; b- Relève la phrase qui le prouve.",
+      "body": "☒ c'est la première fois qu'il travaille pour un homme et il espère être bien payé.",
+      "figureDesc": "",
+      "answer": "b- « Il se dit : « C'est la première fois que je travaille pour un homme ! Mon salaire vaudra sûrement son pesant d'or… »",
+      "confidence": 0.88,
+      "id": "sagesse_6eme_complet_p128_i7",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "a- Pour résoudre le problème de son fils, (case cochée) ; b- Relève la phrase qui le prouve.",
+      "body": "☒ il suffit de faire comme le jaguar, c'est-à-dire d'inventer une ruse.",
+      "figureDesc": "",
+      "answer": "b- « Alima, fils d'homme, si tu manges ce jaguar, tu deviendras aussi rusé que lui ! »",
+      "confidence": 0.88,
+      "id": "sagesse_6eme_complet_p128_i8",
+      "topicId": "fr-6-m1",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Résumer l'histoire",
+      "body": "",
+      "figureDesc": "",
+      "answer": "C'est l'histoire d'un jaguar malin qui aide un chef de village. Son fils refuse de manger. Le jaguar lui apporte donc un singe, puis un serpent comme repas. Mais au bout de trois jours, chaque fois, le petit garçon ne mange plus. Lorsque le jaguar rapporte un tapir comme repas, l'enfant se remet à manger. Le chef a compris la ruse du jaguar et décide de devenir aussi malin que lui : le chef fait alors semblant d'accepter de payer, mais il en profite pour assommer le jaguar qui devient à son tour le repas de son fils.",
+      "confidence": 0.9,
+      "id": "sagesse_6eme_complet_p128_i9",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "Dessin en noir et blanc d'une classe : des élèves lèvent la main ; au premier plan un garçon souriant tient un cahier portant la mention « NOTE ».",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "sagesse_6eme_complet_p128_i10",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

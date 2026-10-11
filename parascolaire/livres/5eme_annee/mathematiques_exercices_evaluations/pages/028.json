@@ -1,0 +1,74 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 28,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 16: أتدرّب على حلّ المسائل – أصمّم لكلّ مسألة (ملاحظة: المحتوى رياضيات، ويظهر في كتاب اللغة العربية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ- ماهُوَ قِيسُ عَرْضِ هَذِهِ الأَرْضِ؟ ب- ماهُوَ قِيسُ مِساحَةِ كُلِّ قِطْعَةٍ؟ ج- ماهُوَ قِيسُ البُعْدِ الثّاني لِكُلِّ قِطْعَةٍ بِطَريقَتَيْنِ مُخْتَلِفَتَيْنِ؟",
+      "body": "يَمْلِكُ مُواطِنٌ قِطْعَةَ أَرْضٍ قِيسُ مِساحَتِها 3120م²، طُولُها 104 م قَسَّمَها بِالتَّساوِي حَسَبَ طُولِها بَيْنَ أَبْنائِهِ الأَرْبَعَةِ.",
+      "figureDesc": "جدول من عمودين: «صَمِّمْ لِحَلِّ المَسْأَلَةِ» و«أَجِبْ رِياضِيًّا»، به أسطر منقطة للكتابة. بعد كل سؤال (أ، ب، ج) سطر منقط للإجابة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p028_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أ- ماهِيَ كُتْلَةُ الزَّيْتُونِ الَّذِي وَقَعَ جَنْيُهُ بِـ: ط و ق؟ ب- ماهِيَ كُتْلَةُ حُمُولَةِ الشّاحِنَةِ؟ ج- ماهُوَ عَدَدُ الرِّحْلاتِ الَّتِي قامَتْ بِها الشّاحِنَةُ؟ د- ماهِيَ كُتْلَةُ الزَّيْتِ المُتَحَصَّلِ عَلَيْهِ فِي النِّهايَةِ؟",
+      "body": "جَنَى فَلّاحٌ 350 شَجَرَةَ زَيْتُونٍ، مُعَدَّلُ ما تُعْطِيهِ كُلُّ واحِدَةٍ مِنَ الزَّيْتُونِ 54 كغ. نَقَلَ الفَلّاحُ المَتْنُوحَ فِي شاحِنَتِهِ إِلَى المَعْصَرَةِ عَلَى مَراحِلَ فِي كُلِّ رِحْلَةٍ 19 كِيسًا كُتْلَةُ الكِيسِ الواحِدِ 50 كغ. - حَوَّلَتِ المَعْصَرَةُ الزَّيْتُونَ إِلَى زَيْتٍ فَكانَتْ كُتْلَةُ الفَواضِلِ مِنْ غَيْرِ الزَّيْتِ (فيتورة + مرجين) 10 ط و2 ق.",
+      "figureDesc": "جدول من عمودين: «صَمِّمْ لِحَلِّ المَسْأَلَةِ» و«أَجِبْ رِياضِيًّا»، به أسطر منقطة للكتابة. أسطر منقطة بعد الأسئلة ب، ج، د.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p028_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-5-m8",
+    "confidence": 0.22
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une série de problèmes de mathématiques : divisions (3120 m² ÷ 104 m), masses en kg, tonnes et nombre de trajets du camion avec 19 sacs de 50 kg. Ces notions correspondent à la Période 4 (division à 2 chiffres, masses), mais la page mêle aussi des aires et peut relever de la synthèse.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes de mesures et de proportionnalité",
+    "skill": "Résoudre des problèmes à plusieurs étapes sur l'aire d'un rectangle, le partage équitable, les masses et le nombre de trajets.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "problèmes",
+      "aire du rectangle",
+      "partage d'un terrain",
+      "masse",
+      "division",
+      "récolte d'olives"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations tirées de la vie rurale tunisienne (terrain partagé entre quatre enfants, récolte d'olives transportée en camion jusqu'au pressoir) avec questions en cascade, et consigne de trouver une même dimension par deux méthodes différentes.",
+    "themeGroup": "Proportionnalité et problèmes de mesures"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

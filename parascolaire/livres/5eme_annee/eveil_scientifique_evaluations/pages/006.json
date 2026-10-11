@@ -1,0 +1,102 @@
+{
+  "book": "eveil_scientifique_evaluations",
+  "page": 6,
+  "grade": "5ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "Le développement de la plante : les étapes de la germination de la graine et les parties de la plante à fleurs (fève)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أرتّب مراحل نمو البذرة",
+      "body": "التعليم عدد 1 : أرتّب مراحل نمو البذرة. الجدول يحتوي على خمس صور مرمّزة بالحروف: أ، ب، ج، د، هـ.",
+      "figureDesc": "Tableau de 5 colonnes (أ، ب، ج، د، هـ) montrant les stades de développement d'une graine de haricot, présentés dans le désordre. أ : graine avec une petite radicule qui sort. ب : plantule avec longue tige, racines développées et premières feuilles encore liées à la graine. ج : graine avec racine et tigelle courbée, début de développement. د : graine seule, intacte. هـ : jeune plante avec tige, deux feuilles, une feuille intermédiaire et racines bien développées.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_evaluations_p006_i1",
+      "topicId": "sci-5-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكتب اسم كلّ جزء من النبتة التالية",
+      "body": "التعليمة عدد 2 : أكتب اسم كلّ جزء من النبتة التالية. أجزاء مرقّمة من 1 إلى 4.",
+      "figureDesc": "Dessin d'une plante de fève à fleurs avec quatre cadres numérotés : 1 pointe une fleur (rose-violet), 2 pointe les feuilles en haut, 3 pointe la tige, 4 pointe les racines.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_evaluations_p006_i2",
+      "topicId": "sci-5-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-5-u6",
+  "topicTitle": "Unité 6 : Le sol, l'eau et reproduction végétale par graines",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-5-u6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-5-u6",
+    "confidence": 0.52
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page porte sur l'ordre des étapes de germination de la graine de fève et sur le nom des parties de la plante, ce qui correspond à l'unité 6 (germination et reproduction végétale par graines).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Germination de la graine de fève",
+    "skill": "Ordonner les étapes de la germination et nommer les parties d'une plante à fleurs.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "germination",
+      "graine",
+      "fève",
+      "plante à fleurs",
+      "étapes de croissance",
+      "parties de la plante"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : remettre en ordre des images légendées par des lettres pour représenter une séquence de développement, puis légender un schéma de plante avec des éléments numérotés ; transposable à d'autres plantes ou cycles de vie.",
+    "themeGroup": "La germination"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Item [1]: l'image indique « التعليم عدد » (sans chiffre) et « أرتّب مراحل نمو البذرة ». La transcription écrit « التعليم عدد 1 », avec un chiffre 1 absent de l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Item [2]: l'image indique « التعليمة عدد » (sans chiffre). La transcription ajoute « 2 » qui n'est pas visible."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« مرمّزة بالحروف » et « أجزاء مرقّمة من 1 إلى 4 » sont des descriptions ajoutées, absentes du texte imprimé. Elles décrivent l'image sans la transcrire."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel de « أرتّب » (shadda) est bien visible dans l'image et correctement transcrit. En revanche, « التعليم » en [1] est une variante de « التعليمة » ; la forme de l'image est « التعليم » et doit rester telle quelle."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Éveil scientifique 5ème année — Évaluations"
+}

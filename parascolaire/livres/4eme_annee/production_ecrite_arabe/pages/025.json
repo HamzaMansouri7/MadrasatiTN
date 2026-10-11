@@ -1,0 +1,99 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 25,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تراكيب جميلة (جمل وحكم وأمثال للتوظيف في الإنتاج الكتابي)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تراكيب جميلة",
+      "body": "وعندما عادت أمي إلى المنزل لاحظت علي اضطرابا شديدا فسألتني عما أصابني\nوكم كان غضبها شديدا حين علمت أني كسرت طاقم القهوة\nولما عرفت الحقيقة آلمني أني أسأت إلى أعز أصدقائي ظلما\nكان علي أن لا أتسرع في معاداته وأن أتبصر كثيرا في الأمر حتى أعرف الحقيقة\nوكانت السهرة كأحسن ما تكون السهرات جمالا وهدوءا\nكانت أمي تطوي الثياب وأختي الصغيرة تلعب بجانبها أما أبي فقد كان يطالع مجلة\nبينما كنا نصلح تمرينا حسابيا إذ سمعنا طرقا على الباب\nوكان أكثر التلاميذ خائفين فمنهم من كان يبكي ومنهم من كان يتظاهر بالشجاعة\nوما هي إلا دقائق حتى كان جميع أفراد العائلة حول فراشه\nوكان كثيرا ما يتظاهر بأن آلامه قد زالت وكأنه يريد أن يطمئننا على صحته\nولم يتحمل أبي رؤيته على هذه الحالة فأسرع يحمله إلى القسم الاستعجالي\nلو كان هذا العامل يتقن صناعته ويفي بوعوده لكسب ثقة كل الحرفاء\nلو عامل حرفاؤه معاملة حسنة لما نبذوه وابتعدوا عنه",
+      "figureDesc": "نص داخل إطار مستطيل بعنوان في الأعلى",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p025_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "من لا يحب صعود الجبال يعش أبد الدهر بين الحفر\nليس السقوط فشلا إنما الفشل أن تستمر حيث سقطت\nلا يلدغ المؤمن من جحر مرتين\nأحسن الأصدقاء عند الشدة\nلا تظهر الشماتة في أخيك يرحمه الله ويبتليك\nلو تعلقت همة المرء بما وراء العرش لناله\nمن نصب فخا لأخيه وقع فيه\nمن خالف القوم تاه\nزهرة في البيت تجلب لك الربيع\nالوقت كالسيف إن لم تقطعه قطعك\nإن اليد المقرحة بالعمل هي العليا واليد الناعمة المطرأة بالترف هي السفلى\nإن الأيدي التي تصنع أكاليل الشوك هي أفضل من الأيدي الكسولة",
+      "figureDesc": "حكم وأمثال داخل إطار مستطيل ثان",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p025_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-ch2",
+    "confidence": 0.52
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un recueil de belles tournures, proverbes et maximes pour la production écrite en arabe; elle relève bien de l'arabe, mais aucun chapitre précis ne correspond clairement (le plus proche serait l'unité 8 sur la cohérence textuelle et les connecteurs, sans certitude).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Expressions et proverbes pour la rédaction",
+    "skill": "Réutiliser des phrases types, des maximes et des proverbes arabes pour enrichir sa production écrite.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "proverbes arabes",
+      "maximes",
+      "expression écrite",
+      "connecteurs",
+      "récit à la première personne",
+      "amitié"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque de formules de transition narrative (surprise, regret, colère, prise de conscience) et de proverbes sur l'amitié, la persévérance et la prudence, utilisables pour conclure ou moraliser une rédaction, ou pour des exercices d'appariement et de choix de proverbe adapté à une situation.",
+    "themeGroup": "Expressions, proverbes et mots de liaison"
+  },
+  "audit": {
+    "accuracy": 0.96,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« يطمئننا » dans la transcription ; l'image porte « يطمئنننا » (يُطمئِننا) : orthographe à vérifier, l'image montre « يطمئنننا »"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المطرأة » : l'image montre « المطرأة » ; la graphie correcte serait « المطرّاة/المترفة », mais la transcription est fidèle à l'image"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« لا تظهر الشماتة في أخيك يرحمه الله ويبتليك » : conforme à l'image, aucune erreur"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.96
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

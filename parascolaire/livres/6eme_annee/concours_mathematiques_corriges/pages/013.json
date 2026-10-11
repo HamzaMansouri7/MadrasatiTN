@@ -1,0 +1,116 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 13,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Situation 3 : Problème de synthèse sur les aires (demi-disque, rectangle, triangle rectangle) ; corrigé de la question 2 sur l'irrigation et la plantation d'arbres",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هو عدد الأشجار بهذه الضيعة؟",
+      "body": "استعمل العامل كلّ الماء في الحوض لسقي مساحة خصّصها لزراعة الخضر بمعدّل 0.06 هل من الماء في المتر المربع الواحد.\nإذا علمت أنّ المساحة المسقيّة تمثّل 1/4 المساحة المتبقيّة المغروسة عنبا بحساب شجرة في كلّ 3 م².",
+      "figureDesc": "",
+      "answer": "سعة نصف الحوض: 25920 : 2 = 12960 ل = 129.60 هل\nالمساحة المسقيّة: 129.6 : 0.06 = 2160 م²\nقيس المساحة المغروسة عنبا: 2160 × 4 = 8640 م²\nعدد أشجار العنب: 8640 : 3 = 2880",
+      "confidence": 0.93,
+      "id": "concours_mathematiques_corriges_p013_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عـ 3 ـدد (8 نقاط)",
+      "instruction": "لفلاح أرض تتكون من 3 قطع متصلة كما هو مبيّن بالرسم:",
+      "body": "- القطعة الأولى على شكل نصف قرص دائري مركزها \" أ \" قيس القوس م هـ = 213.52 م\n- القطعة الثانية على شكل مستطيل ( أ ب ج د )\n- القطعة الثالثة على شكل مثلث ( أ د م ) قائم في \" أ \"\n- أ د = 51 م // أ ق = 40.8 م\n- النقاط م ، أ ، هـ ، ب على استقامة واحدة.",
+      "figureDesc": "رسم: نصف قرص (1) فوق المستقيم ب هـ أ م، مركزه أ؛ مستطيل (2) أ ب ج د على اليسار؛ مثلث قائم (3) أ د م على اليمين، الارتفاع أ ق المنزل على الضلع د م (خط متقطع) مع علامتي زاوية قائمة في أ وفي ق.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "concours_mathematiques_corriges_p013_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "math-6-p3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p3",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit d'une situation-problème de synthèse en plusieurs étapes (demi-disque, rectangle, triangle rectangle, irrigation, plantation) qui prépare au concours des collèges pilotes, ce qui correspond à la Période 6 (synthèse générale et résolution de situations-problèmes).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    9,
+    10
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Aires de figures composées",
+    "skill": "Calculer les aires d'un demi-disque, d'un rectangle et d'un triangle rectangle, puis les exploiter dans une situation de plantation et d'irrigation.",
+    "pageType": "mixed",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "aire",
+      "demi-disque",
+      "rectangle",
+      "triangle rectangle",
+      "irrigation",
+      "plantation d'arbres"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation de synthèse en contexte agricole : une terre formée de trois parcelles (demi-disque, rectangle, triangle) dont on déduit les aires. Une partie est consacrée aux légumes selon une fraction de la surface, le reste aux arbres avec une densité donnée, et l'arrosage est calculé à partir d'un volume d'eau. Adaptable à d'autres contextes comme un jardin scolaire ou un parc.",
+    "themeGroup": "Périmètres et aires"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "La question « 2/ ما هو عدد الأشجار بهذه الضيعة؟ » est placée au début de la transcription alors que dans l'image elle apparaît après le texte de l'énoncé (« ... شجرة في كلّ 3 م² ») et avant la réponse."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« خصّصها » : dans l'image on lit « خصّصها » (même mot) ; la forme est correcte, mais « 2/ » est transcrit « [2] », ce qui est inexact."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المساحة المتبقيّة » : le texte de l'image est « المساحة المتبقيّة المغروسة عنبا », la transcription est correcte ; aucune erreur ici, mais « تمثّل » est écrit « تمثّل » alors que l'image montre « تمثل » avec shadda ; différence mineure."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« réponse: None » ajouté pour la partie Situation 3 : aucune réponse n'apparaît dans l'image ; label inventé. Les étiquettes « réponse: » et les crochets [ ] sont aussi des ajouts."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le dessin (figure avec les points م، هـ، ب، ج، د، أ، ق et les numéros 1, 2, 3) n'est pas décrit ; le filigrane/tampon n'est pas non plus signalé. En bas, le numéro de page « 4 » et l'en-tête « منظومة عدد 3 » sont omis."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.97,
+    "verdict": "ok",
+    "confirmedErrors": []
+  },
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.97
+  },
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

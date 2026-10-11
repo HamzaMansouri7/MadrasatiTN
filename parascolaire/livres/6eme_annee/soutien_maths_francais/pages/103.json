@@ -1,0 +1,194 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 103,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Épreuve de français : compréhension de l'écrit (texte sur le robot Han) et activités réflexives sur la langue (lexique, grammaire). Cette page n'est pas une page de mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Réponds par vrai ou faux. (2pts)",
+      "body": "a. Han est un robot chinois.\nb. Il dispose d'un corps robuste.\nc. Han reconnait les gens grâce à des mini caméras et des moteurs.\nd. Ce Robot peut parler.",
+      "figureDesc": "Tableau à deux colonnes : les affirmations a à d à gauche, cases vides à droite pour répondre vrai ou faux.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p103_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Quel est le type de ce texte ? Coche la bonne réponse. (1.5pt)",
+      "body": "Injonctif | Descriptif | Narratif | Informatif",
+      "figureDesc": "Tableau à 4 colonnes (Injonctif, Descriptif, Narratif, Informatif) avec une ligne de cases vides à cocher.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p103_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Propose un titre convenable au texte. (2pts)",
+      "body": "..........................................................................................................",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p103_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "À votre avis, l'invention des robots est-elle utile ? (2pts)",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "Deux lignes pointillées.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p103_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "A.1",
+      "instruction": "Relève dans le texte les synonymes des mots proposés : (1pt)",
+      "body": "« discussion » : ........................   « foire » : ........................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p103_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "A.2",
+      "instruction": "Donne les antonymes des mots du texte en utilisant des préfixes. (1pt)",
+      "body": "heureux ≠ ......................   capable ≠ ................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p103_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "A.3",
+      "instruction": "Barre l'intrus dans la liste suivante : (1pt)",
+      "body": "logiciel | séjour | électronique | robot | intelligence",
+      "figureDesc": "Tableau d'une ligne et de 5 cases contenant les mots de la liste.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p103_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "B.1",
+      "instruction": "Entoure le complément circonstanciel de lieu (CCL) et souligne le complément circonstanciel de temps (CCT) dans la phrase proposée : (1pt)",
+      "body": "Un robot aux expressions humaines plus vraies que nature a été présenté mi-avril à Hong-Kong.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p103_i8",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u5",
+    "confidence": 0.22
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une épreuve de français (compréhension de l'écrit sur le robot Han, lexique, CCL/CCT) qui relève d'une évaluation générale, et aucun module ne correspond clairement : le thème technologique/robots n'apparaît dans aucun des modules 1 à 8.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : le robot",
+    "skill": "Comprendre un texte informatif sur un robot, puis réinvestir lexique (synonymes, antonymes avec préfixes, intrus) et grammaire (compléments circonstanciels de lieu et de temps).",
+    "pageType": "exam",
+    "formats": [
+      "vrai_faux",
+      "qcm",
+      "production_ecrite",
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "robot",
+      "type de texte",
+      "synonymes et antonymes",
+      "complément circonstanciel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'épreuve complète et barémée autour d'un texte documentaire sur une innovation technologique : vrai/faux, identification du type de texte, titre à proposer, opinion personnelle, puis activités de langue (synonymes à relever, antonymes par préfixes, intrus, repérage de CCL et CCT) réutilisables avec d'autres thèmes.",
+    "themeGroup": "Internet et technologies"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le bandeau « Ne rien écrire ici » en haut de la page n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes « II. Activités réflexives sur la langue : (18pts) », « A. Lexique : (3pts) » et « B. Grammaire : (6pts) » sont absents."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 2 » et les mentions du bas de page (CamScanner, www.escuila.info) ne sont pas transcrits."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La question 8 est décrite par « Deux lignes pointillées pour la réponse » au lieu de la transcription des pointillés. Ce n'est pas du texte de l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau de la question 5 comporte une colonne de réponse vide qui n'est pas signalée. Le « réponse: None » ne la décrit pas."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

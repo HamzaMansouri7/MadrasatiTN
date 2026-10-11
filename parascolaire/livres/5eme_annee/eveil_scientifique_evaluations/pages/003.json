@@ -1,0 +1,90 @@
+{
+  "book": "eveil_scientifique_evaluations",
+  "page": 3,
+  "grade": "5ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La graine (parties de la graine, germination) ; le cycle de l'eau (précipitations, purification de l'eau) ; les chaînes alimentaires (producteurs, consommateurs, décomposeurs)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أسمّي أجزاء البذرة على الرّسم",
+      "body": "أسمّي أجزاء البذرة على الرّسم (ثلاثة أسطر منقّطة للتسمية، يشير كل سطر إلى جزء من البذرة بواسطة سهم).",
+      "figureDesc": "Schéma d'une graine de haricot ouverte, composée de deux cotylédons roses. Entre eux se trouve un embryon vert (plantule) avec une petite tige jaune pâle. Le tégument brun-rouge entoure la graine. Trois flèches pointent vers des lignes pointillées : une vers la plantule, une vers les deux cotylédons (flèche à deux branches) et une vers le tégument (enveloppe).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_evaluations_p003_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أصلح الخطأ",
+      "body": "بعد عملية الترسيب نتحصّل على ماء صالح للشرب\nبفعل ارتفاع درجة الحرارة تتحوّل السحب إلى تساقطات\nماء الأمطار غني بالأملاح المعدنيّة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_evaluations_p003_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعلّل ما يأتي",
+      "body": "تسمّى الحيوانات مستهلكات لأنّ ...\nتسمّى النباتات منتجات لأن ...\nتسمّى الباكتيريا مفكّكات لأنّ ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_evaluations_p003_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "sci-5-u6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-5-u6",
+    "confidence": 0.49
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page mélange la graine et le cycle de l'eau (unité 6) avec les chaînes alimentaires (unité 5), donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Graine, cycle de l'eau, chaînes alimentaires",
+    "skill": "Légender un schéma de graine, corriger des affirmations erronées sur l'eau et justifier le rôle des êtres vivants dans une chaîne alimentaire.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "graine",
+      "cycle de l'eau",
+      "précipitations",
+      "purification de l'eau",
+      "chaîne alimentaire",
+      "décomposeurs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : trois exercices courts et variés couvrant plusieurs notions (légender un schéma muet, repérer et corriger une erreur dans une phrase, justifier un vocabulaire par une phrase à compléter avec « parce que »), utiles pour une évaluation de révision rapide.",
+    "themeGroup": "Le cycle de l'eau et sa potabilisation"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 5ème année — Évaluations"
+}

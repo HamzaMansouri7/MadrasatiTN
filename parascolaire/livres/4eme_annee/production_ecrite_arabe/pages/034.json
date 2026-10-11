@@ -1,0 +1,160 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 34,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التعبير الكتابي: الآلات العصرية والاختراع والعلماء (مواضيع إنتاج كتابي)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "تحدث عما شاهدت",
+      "body": "تابعت على شاشة التلفاز شريطا وثائقيا يعدد مزايا الآلات العصرية ومحاسنها",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p034_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "ارو ما حدث مبينا مزايا الآلات العصرية في تطوير الانتاج",
+      "body": "الموضوع عدد\nلاحظت أن والدك متمسك بالآلات التقليدية في عمله الفلاحي فنصحته بتطوير وسائله",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p034_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اذكر ما فعلت",
+      "body": "الموضوع عدد\nطالعت مجلة أو كتابا ولد فيك الرغبة في صنع شيء ما يعود بالفائدة عليك وعلى من حولك",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p034_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اسمي الاختراع وظروف انجازه",
+      "body": "الموضوع عدد\nفي نطاق مشروع القسم جمعت أصدقاءك وقررتم انجاز مشروع في الايقاظ العلمي",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p034_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "عرف به معددا الاعمال التي قام بها",
+      "body": "الموضوع عدد\nتعرف عالما في ساهم في تطوير الانسانية",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "production_ecrite_arabe_p034_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "ارو الحادثة واصفا مشاعرك تجاهه مبينا كيف كانت النهاية",
+      "body": "الموضوع عدد\nمن بين رفاقك بالقسم واحد اتخذته صديقا دون سواه لكنك أخطأت مرة في حقه",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p034_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-ch2",
+    "confidence": 0.4
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page propose des sujets de production écrite en arabe (machines modernes, invention, savants, amitié) qui relèvent de l'expression écrite générale, sans correspondre clairement à une unité précise parmi les chapitres officiels, centrés sur le récit et les personnages.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : machines et inventions",
+    "skill": "Rédiger un texte narratif ou descriptif à partir d'une situation sur les machines modernes, l'invention et les savants.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "expression écrite",
+      "machines modernes",
+      "invention",
+      "savants",
+      "récit",
+      "projet de classe"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Série de sujets de rédaction ancrés dans des situations concrètes (conseiller son père agriculteur sur l'usage de machines modernes, projet d'éveil scientifique en classe, portrait d'un savant, conflit avec un ami), chacun avec une consigne claire de raconter, décrire ou présenter.",
+    "themeGroup": "Production écrite : sujets variés et textes modèles"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "La transcription sépare les blocs de façon décalée : chaque consigne est placée avant son énoncé (ex. « تحدث عما شاهدت » avant « تابعت على شاشة... »), alors que dans l'image l'énoncé vient d'abord, puis la consigne. Le premier bloc est inversé. Aussi, « الموضوع عدد » est rattaché au mauvais bloc : il précède l'énoncé suivant et non la consigne précédente."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le premier « الموضوع عدد » de l'image est absent : le tout premier bloc n'a pas d'en-tête dans l'image, mais la structure des en-têtes est mal alignée avec les blocs dans la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« تعرف عالما في ساهم في تطوير الانسانية » : l'image indique « تعرف عالما ساهم في تطوير الانسانية » ; le « في » après « عالما » est en trop (en réalité l'image dit « تعرف عالما في ساهم »; à vérifier). L'image affiche bien « في » avant « ساهم », donc la transcription est fidèle sur ce point."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« معددا » : correspond à l'image (« معددا »). Aucune erreur."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions « réponse: None » et les marqueurs « [] » sont ajoutés et n'existent pas dans l'image."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

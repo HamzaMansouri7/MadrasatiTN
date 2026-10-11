@@ -1,0 +1,198 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 69,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigé et barème de l'examen régional unifié du certificat d'études primaires (session juillet 2022), mathématiques. NB : la page est marocaine (Royaume du Maroc, Ministère de l'Éducation nationale), pas tunisienne.",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "I.1.أ",
+      "instruction": "وضع وإنجاز العمليات: (10 ن). ينبغي أن يضع المترشح العمليات عموديا، وإلا يقتصر على إعطاء النتيجة بشكل أفقي. (2ن)",
+      "body": "6985,1 – (45,702 + 6020) =",
+      "figureDesc": "",
+      "answer": "919,398",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p069_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "I.1.ب",
+      "instruction": "وضع وإنجاز العمليات (2ن)",
+      "body": "(2 − 1/6) × (2/3 + 1) =",
+      "figureDesc": "",
+      "answer": "55/18",
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p069_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "I.1.ت",
+      "instruction": "وضع وإنجاز العمليات (2ن)",
+      "body": "67,23 × 49 =",
+      "figureDesc": "",
+      "answer": "3294,27",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p069_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "I.1.ث",
+      "instruction": "وضع وإنجاز العمليات (2ن)",
+      "body": "358,8 ÷ 23 =",
+      "figureDesc": "",
+      "answer": "15,6",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p069_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "I.1.د",
+      "instruction": "وضع وإنجاز العمليات (2ن)",
+      "body": "3h45min16s + 2h15min12s =",
+      "figureDesc": "",
+      "answer": "6h28s",
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p069_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "I.2",
+      "instruction": "(2ن)",
+      "body": "6 × 6 × 4 × 4 × 4 =",
+      "figureDesc": "",
+      "answer": "6² × 4³",
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p069_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "I.3",
+      "instruction": "(2ن)",
+      "body": "ترتيب الأعداد",
+      "figureDesc": "",
+      "answer": "1/8 < 0,8 < 8 < 8,5 < 80",
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p069_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "I.4",
+      "instruction": "مسألة (3ن). المسافة التي ستقطعها السيارة في ظرف ساعة ونصف هي:",
+      "body": "85 × 1,5 =",
+      "figureDesc": "",
+      "answer": "127.5 km",
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p069_i8",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "II.1",
+      "instruction": "التحقق من رسم الزاوية [AÔB] قياسها 80 درجة، و من رسم منصفها باستعمال الأدوات الهندسية اللازمة. (3ن)",
+      "body": "",
+      "figureDesc": "Angle AÔB de 80° tracé avec sa bissectrice, deux angles marqués 40 et 40, avec arcs de codage",
+      "answer": "40° + 40°",
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p069_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "II.2",
+      "instruction": "قياس الزاوية Ĉ (2ن)",
+      "body": "",
+      "figureDesc": "",
+      "answer": "180 – (90 + 30) = 60°",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p069_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "II.3",
+      "instruction": "التحقق من رسم المعين ABCD، قطراه متعامدان وكل منهما ينصف الآخر وقياسهما: AC = 10 cm و BD = 4cm (2ن)",
+      "body": "",
+      "figureDesc": "Losange avec ses deux diagonales perpendiculaires se coupant en leur milieu",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p069_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.24
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est le corrigé et barème d'un examen régional unifié marocain (certificat d'études primaires, juillet 2022) qui couvre plusieurs chapitres (décimaux, fractions, durées, puissances, ordre, problème de distance) ; elle ne correspond pas à un chapitre unique et relève d'un programme marocain, donc topicId null.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Opérations et géométrie du certificat primaire",
+    "skill": "Effectuer des opérations sur décimaux, fractions, durées et puissances, résoudre un problème de distance et construire/mesurer des angles.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "corrigé",
+      "barème",
+      "certificat d'études primaires",
+      "opérations posées",
+      "angles",
+      "distance vitesse"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure type d'un examen régional : série d'opérations posées avec barème, produit de facteurs répétés, rangement de nombres, problème de distance à vitesse constante et construction d'un angle avec sa bissectrice.",
+    "themeGroup": "Problèmes de synthèse et révisions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

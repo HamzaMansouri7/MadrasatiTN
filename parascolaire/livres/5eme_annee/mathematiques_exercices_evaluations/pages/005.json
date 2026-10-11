@@ -1,0 +1,102 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 5,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 3: أفكك الأعداد ذات 7 أرقام فأكثر وأركّبها (page de mathématiques, numéro 6 imprimé, bien que le manuel soit étiqueté arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "الدَّرْسُ 3: أُفَكِّكُ الأَعْدادَ ذاتَ 7 أَرْقامٍ فَأَكْثَرَ وَأُرَكِّبُها",
+      "figureDesc": "Bandeau-titre décoratif avec le chiffre 5 (السنة 5) à gauche et un logo à droite ; numéro de page 6 en bas.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p005_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 - أ",
+      "instruction": "أَكْمِلْ وَرَقَةَ السَّحْبِ التَّالِيَةَ الَّتِي اسْتَعْمَلَهَا البَنْكُ.",
+      "body": "سَحَبَ طاهِرٌ مِنْ حِسابِهِ بِالبَنْكِ مَبْلَغًا مالِيًّا فَتَسَلَّمَ أَوْراقًا مالِيَّةً مُخْتَلِفَةَ القِيمَةِ وَالعَدَدِ.",
+      "figureDesc": "Tableau : colonnes العدد، أوراق مالية من فئة (50 د، 30 د، 20 د، 10 د)، قطع نقدية (5 د)، المجموع. Lignes : 80 (croix sous 50 د), 20 (croix sous 30 د), 30 (croix sous 20 د), 50 (croix sous 10 د), 40 (croix sous 5 د). Colonne المجموع en pointillés à remplir, et dernière ligne « المجموع بالد » avec pointillés.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p005_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 - ب",
+      "instruction": "اِرْبُطْ بَيْنَ العَدَدِ وَالتَّفْكِيكِ الصَّحِيحِ :",
+      "body": "العدد: 5 900 000. التفكيكات: 400 000 + 500 000 ؛ 4000 000 + 1900 000 ؛ 3300 000 + 2600 000 ؛ 2400 000 + 3500 000",
+      "figureDesc": "Ovale noir central contenant 5 900 000, entouré de quatre cadres contenant les décompositions à relier.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p005_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "هَلْ يَكْفِيهِ المَبْلَغُ الَّذِي صارَ عِنْدَهُ؟ عَلِّلْ إِجابَتَكَ بِما يَنْقُصُهُ أَوْ يَبْقَى لَهُ بالمِي.",
+      "body": "اِسْتَعارَ طاهِرٌ مِنْ صَدِيقِهِ 4750 د لِيَدْفَعَ دَيْنًا بِذِمَّتِهِ يُقَدَّرُ بِأَحَدَ عَشَرَ أَلْفَ دِينارٍ.",
+      "figureDesc": "Trois lignes en pointillés pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p005_i4",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la décomposition et la composition des grands nombres à 7 chiffres et plus (millions), avec des montants en dinars, ce qui correspond à la Période 1 : Grands nombres.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Décomposition des grands nombres",
+    "skill": "Décomposer et recomposer des nombres de 7 chiffres et plus, et comparer des sommes d'argent pour résoudre une situation.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "appariement",
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "numération",
+      "nombres à 7 chiffres",
+      "décomposition",
+      "argent",
+      "dinars",
+      "retrait bancaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de retrait bancaire avec billets de valeurs différentes, utilisée pour compléter un bordereau, relier un nombre à sa décomposition additive correcte, puis vérifier si une somme empruntée suffit à rembourser une dette, avec le manque ou le reste à justifier.",
+    "themeGroup": "Grands nombres entiers"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

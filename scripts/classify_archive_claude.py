@@ -81,7 +81,7 @@ def work(pf, grade):
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('--limit', type=int); ap.add_argument('--workers', type=int, default=6); a = ap.parse_args()
     jobs = []
-    for bj in sorted(glob.glob('parascolaire/_original_frozen/_archive/*/book.json')):
+    for bj in sorted(glob.glob('parascolaire_frozen/_archive/*/book.json')):
         g = json.loads(Path(bj).read_text(encoding='utf-8'))['grade']
         jobs += [(pf, g) for pf in sorted(Path(bj).parent.glob('pages/*.json'))]
     if a.limit: jobs = jobs[::max(1, len(jobs) // a.limit)][:a.limit]

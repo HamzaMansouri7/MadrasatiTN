@@ -1,0 +1,159 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 4,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأعداد من 0 إلى 999 (1) أنشطة تهيئية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) أكْتُبْ أصْغَرَ عَدَدٍ ذِي 3 أرْقَامٍ يَكُونُ رَقْمُ مِئَاتِهِ 9.\nب) أكْتُبْ أكْبَرَ عَدَدٍ ذِي 3 أرْقَامٍ يَكُونُ رَقْمُ عَشَرَاتِهِ مُسَاوٍ لِنِصْفِ رَقْمِ آحَادِهِ.\nج) أكْتُبْ عَدَدًا يَتَكَوَّنُ من 3 أرْقَامٍ عَدَدُ عَشَرَاتِهِ 27 وَمَجْمُوعُ أرْقَامِهِ 13.",
+      "body": "أ) أكْتُبْ أصْغَرَ عَدَدٍ ذِي 3 أرْقَامٍ يَكُونُ رَقْمُ مِئَاتِهِ 9.\nب) أكْتُبْ أكْبَرَ عَدَدٍ ذِي 3 أرْقَامٍ يَكُونُ رَقْمُ عَشَرَاتِهِ مُسَاوٍ لِنِصْفِ رَقْمِ آحَادِهِ.\nج) أكْتُبْ عَدَدًا يَتَكَوَّنُ من 3 أرْقَامٍ عَدَدُ عَشَرَاتِهِ 27 وَمَجْمُوعُ أرْقَامِهِ 13.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "mathematiques_exercices_corriges_p004_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ابحَثْ عن مَجْموعةِ الأَعْدَادِ الْمُتَكَوِّنَةِ من ثلاثةِ أرقامٍ مَجْموعها 12 والتي رَقْمُ آحَادِهَا ضعف رَقْمِ مِئَاتِهَا.",
+      "body": "ابحَثْ عن مَجْموعةِ الأَعْدَادِ الْمُتَكَوِّنَةِ من ثلاثةِ أرقامٍ مَجْموعها 12 والتي رَقْمُ آحَادِهَا ضعف رَقْمِ مِئَاتِهَا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "mathematiques_exercices_corriges_p004_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هو العَدَدُ الَّذِي يُوجَدُ عَلَى نَفْسِ الْبُعْدِ مِنَ الْعَدَدَيْنِ 20 و 50 ؟",
+      "body": "ما هو العَدَدُ الَّذِي يُوجَدُ عَلَى نَفْسِ الْبُعْدِ مِنَ الْعَدَدَيْنِ 20 و 50 ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.99,
+      "id": "mathematiques_exercices_corriges_p004_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "تَضُمُّ كُلُّ لائِحَةٍ عَدَدًا دَخِيلاً عَلَى أعْدَادِهَا، ضَعْهُ فِي دَائِرَةٍ.",
+      "body": "48 | 58 | 68 | 76 | 88\n222 | 111 | 555 | 773 | 444\n123 | 234 | 345 | 456 | 678",
+      "figureDesc": "جدول يحتوي على 3 لوائح (أسطر) وكل لائحة تتضمن 5 أعداد.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "mathematiques_exercices_corriges_p004_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "\"أ\" هِيَ مَجْمُوعَةُ الأعْدَادِ الطَّبِيعِيَّةِ الْمُكَوَّنَةِ مِنْ رَقْمَيْنِ مُتَسَاوِيَيْنِ.\n\"ب\" هِيَ مَجْمُوعَةُ الأعْدَادِ الطَّبِيعِيَّةِ الزَّوْجِيَّةِ الْمُكَوَّنَةِ مِنْ رَقْمَيْنِ مُتَسَاوِيَيْنِ.\n- أوْجِدْ عَنَاصِرَ \"أ\" وَعَنَاصِرَ \"ب\"\n- وَزَّعْ هَذِهِ الْعَنَاصِرَ عَلَى الْمُخَطَّطِ التَّالِي :",
+      "body": "\"أ\" هِيَ مَجْمُوعَةُ الأعْدَادِ الطَّبِيعِيَّةِ الْمُكَوَّنَةِ مِنْ رَقْمَيْنِ مُتَسَاوِيَيْنِ.\n\"ب\" هِيَ مَجْمُوعَةُ الأعْدَادِ الطَّبِيعِيَّةِ الزَّوْجِيَّةِ الْمُكَوَّنَةِ مِنْ رَقْمَيْنِ مُتَسَاوِيَيْنِ.\n- أوْجِدْ عَنَاصِرَ \"أ\" وَعَنَاصِرَ \"ب\"\n- وَزَّعْ هَذِهِ الْعَنَاصِرَ عَلَى الْمُخَطَّطِ التَّالِي :",
+      "figureDesc": "مخطط فين يتكون من دائرتين متقاطعتين تمثلان المجموعتين 'أ' و 'ب'.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "mathematiques_exercices_corriges_p004_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.62,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.6
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des activités préparatoires sur les nombres de 0 à 999 (chiffres, centaines, dizaines, ensembles), ce qui correspond à la matière Mathématiques, mais aucun chapitre officiel ne traite exactement des nombres à 3 chiffres ; le plus proche est la Période 1 sur les nombres à 5 et 6 chiffres, ce qui limite la certitude.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres de 0 à 999",
+    "skill": "Lire, composer et comparer des nombres à trois chiffres selon la valeur de position de leurs chiffres et leurs propriétés.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "nombres à trois chiffres",
+      "valeur de position",
+      "chiffre des centaines",
+      "somme des chiffres",
+      "intrus",
+      "ensembles de nombres"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Les contraintes croisées sur les chiffres (centaines, dizaines, unités, somme, moitié, double) permettent de créer des énigmes numériques ; on peut aussi réutiliser la recherche du nombre équidistant de deux autres, le repérage de l'intrus dans une liste et la description d'ensembles de nombres à chiffres identiques ou pairs.",
+    "themeGroup": "Numération jusqu'à 999"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : «الأسبوع 1», «الأعداد من 0 إلى 999 (1)», «أنشطة تهييئية» et le numéro de page «1»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : dans «أكْتُبْ» (en début de question, a/b/c) le tashkeel de la transcription est ajouté alors que l'image montre un tashkeel partiel. Dans «مُسَاوٍ لِنِصْفِ», l'image écrit «مُسَاوِلِنِصْفِ» (collé), et le tanwin est une normalisation."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'image montre «ابحثْ عن مجموعة الأعداد الْمُتَكَوِّنَةِ من ثلاثةِ أرقامٍ». La transcription ajoute des voyelles sur «مَجْموعةِ الأَعْدَادِ» et «أرقامٍ», absentes ou partielles dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'image porte «الَّذِي يُوجَدُ» avec «الذي» écrit «ألْذِي» (voyelles légères) ; la transcription est acceptable, mais «الْبُعْدِ» et «الْعَدَدَيْنِ» ont un tashkeel plus complet que dans l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 5 : le tashkeel ajouté (ex. «مُتَسَاوِيَيْنِ», «وَزَّعْ») ne correspond pas exactement à l'image, qui écrit «وَزِّعْ» et «مُتَسَاوِيَيْنِ» avec un tashkeel différent. Dans «وَزَّعْ», la chadda est fausse : l'image montre «وَزِّعْ»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 5 : le diagramme (deux cercles qui se coupent, étiquetés «أ» et «ب») n'est pas décrit. Dans l'exercice 4, la transcription ne signale pas que le tableau est encadré."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 4 : la transcription ajoute «ضَعْهُ» avec un tashkeel complet, alors que l'image n'en montre qu'une partie."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,252 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 83,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "مراجعة ودعم: أتعرف المثلثات بأنواعها وأرسمها (ملاحظة : la page est un exercice de mathématiques, pas d'arabe)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "قِسْ فَتَحَاتِ زَوَايَا كُلِّ مُثَلَّثٍ وَأَطْوَالَ أَضْلَاعِهِ ثُمَّ بَيِّنْ نَوْعَهُ.",
+      "body": "① مثلّث ............... ② مثلّث ............... ③ مثلّث ...............",
+      "figureDesc": "Trois triangles numérotés (① à droite, ② au milieu, ③ à gauche) : ① triangle aux trois côtés apparemment égaux (équilatéral), ② triangle isocèle à sommet en haut, ③ triangle rectangle avec l'angle droit en bas à gauche.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p083_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ارْسُمْ قِطْعَةَ مُسْتَقِيمٍ [أب] تَقِيسُ 4 صم .",
+      "body": "مِنْ \" أ \" ارْسُمْ [أج] عَمُودِيًّا عَلَى [أب] وَتَقِيسُ 3 صم. اِجْمَعْ بَيْنَ \"ب\" و\"ج\". مَاهُوَ نَوْعُ الْمُثَلَّثِ أ ب ج؟ ........ (deux lignes de pointillés pour la réponse)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p083_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارْسُمْ مُثَلَّثًا وع ق بِحَيْثُ ع ق = و ق، و ع^ ق = 45°",
+      "body": "- مَاهُوَ نَوْعُ هَذَا الْمُثَلَّثِ؟ ........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p083_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَتِمَّ رَسْمَ الْمُثَلَّثِ أ ب ج بِحَيْثُ أب = ب ج = 4 صم وَ أ ب^ ج = 60°",
+      "body": "- مَاهُوَ نَوْعُ الْمُثَلَّثِ؟ ........\n- ارْسُمْ مُنَصِّفَ كُلِّ زَاوِيَةٍ فِي هَذَا الْمُثَلَّثِ. مَاذَا نُلَاحِظُ؟ ........",
+      "figureDesc": "Segment [أب] de 4 صم déjà tracé en bas à gauche, avec أ à droite et ب à gauche, à compléter.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p083_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u4",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une révision de géométrie sur les triangles (types, constructions, bissectrices), mais aucun chapitre officiel de 5ème Année ne traite des triangles : la Période 3 ne mentionne que parallélogramme et hauteurs, donc aucune correspondance claire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Triangles : types et construction",
+    "skill": "Identifier les triangles selon leurs côtés et leurs angles (rectangle, isocèle, équilatéral) et les construire avec règle, équerre et rapporteur.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "triangles",
+      "construction géométrique",
+      "triangle rectangle",
+      "triangle isocèle",
+      "triangle équilatéral",
+      "bissectrices"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement de consignes de construction à partir de données (longueurs, angle droit, angle de 45° ou 60°), suivi de l'identification du type de triangle et d'une observation sur les bissectrices, avec réponses à compléter sur pointillés.",
+    "themeGroup": "Angles, cercle et triangles"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de l'en-tête (« مراجعة ودعم: أتعرف المثلثات بأنواعها وأرسمها ») et le numéro 5 sont absents de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 84 en bas de page n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans l'exercice 4, la ligne de pointillés pour la réponse à « ماذا نلاحظ؟ » est présente, ainsi que le segment [أب] de 4 صم à compléter (le dessin avec « 4 صم », « أ », « ب »). Ces éléments ne sont pas mentionnés."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'exercice 1, les triangles sont numérotés ①②③ de droite à gauche (le ① est à droite). La transcription ne signale pas les figures, mais l'ordre est cohérent."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« تَقِيسُ » est écrit comme dans l'image, mais « وَتَقِيسُ » est ajouté avec un tashkeel qui n'est pas visible. « مَاهُوَ » : tashkeel ajouté non visible. Ces vocalisations sont partiellement inventées."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'exercice 3, « وع ق » et l'angle « وَ^ق » sont approximatifs : l'image montre « و ع ق » avec l'angle « و ق̂ ع ق = 45° » ; la notation de l'angle est incertaine."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'angle est transcrit « وَ^ق » (deux lettres, avec un « و » de conjonction ajouté). L'image montre « وع^ ق = 45° », c'est-à-dire l'angle du triangle وعق, noté avec trois lettres et un chapeau sur ع."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "قِسْ فَتَحَاتِ زَوَايَا كُلِّ مُثَلَّثٍ وَأَطْوَالَ أَضْلَاعِهِ ثُمَّ بَيِّنْ نَوْعَهُ.",
+      "body": "① مثلّث ............... ② مثلّث ............... ③ مثلّث ...............",
+      "figureDesc": "Trois triangles numérotés (① à droite, ② au milieu, ③ à gauche) : ① triangle aux trois côtés apparemment égaux (équilatéral), ② triangle isocèle à sommet en haut, ③ triangle rectangle avec l'angle droit en bas à gauche.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p083_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ارْسُمْ قِطْعَةَ مُسْتَقِيمٍ [أب] تَقِيسُ 4 صم .",
+      "body": "مِنْ \" أ \" ارْسُمْ [أج] عَمُودِيًّا عَلَى [أب] وَتَقِيسُ 3 صم. اِجْمَعْ بَيْنَ \"ب\" و\"ج\". مَاهُوَ نَوْعُ الْمُثَلَّثِ أ ب ج؟ ........ (deux lignes de pointillés pour la réponse)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p083_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارْسُمْ مُثَلَّثًا وع ق بِحَيْثُ ع ق = و ق، و ع^ ق = 45°",
+      "body": "- مَاهُوَ نَوْعُ هَذَا الْمُثَلَّثِ؟ ........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p083_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَتِمَّ رَسْمَ الْمُثَلَّثِ أ ب ج بِحَيْثُ أب = ب ج = 4 صم وَ أ ب^ ج = 60°",
+      "body": "- مَاهُوَ نَوْعُ الْمُثَلَّثِ؟ ........\n- ارْسُمْ مُنَصِّفَ كُلِّ زَاوِيَةٍ فِي هَذَا الْمُثَلَّثِ. مَاذَا نُلَاحِظُ؟ ........",
+      "figureDesc": "Segment [أب] de 4 صم déjà tracé en bas à gauche, avec أ à droite et ب à gauche, à compléter.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p083_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "قِسْ فَتَحَاتِ زَوَايَا كُلِّ مُثَلَّثٍ وَأَطْوَالَ أَضْلَاعِهِ ثُمَّ بَيِّنْ نَوْعَهُ.",
+      "body": "① مثلّث ............... ② مثلّث ............... ③ مثلّث ...............",
+      "figureDesc": "Trois triangles numérotés : ① triangle aux trois côtés apparemment égaux (équilatéral), ② triangle isocèle à sommet en haut, ③ triangle rectangle avec l'angle droit en bas à gauche.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p083_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ارْسُمْ قِطْعَةَ مُسْتَقِيمٍ [أب] تَقِيسُ 4 صم .",
+      "body": "مِنْ \" أ \" ارْسُمْ [أج] عَمُودِيًّا عَلَى [أب] وَتَقِيسُ 3 صم. اِجْمَعْ بَيْنَ \"ب\" و\"ج\". مَاهُوَ نَوْعُ الْمُثَلَّثِ أ ب ج؟ ........ (deux lignes de pointillés pour la réponse)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p083_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارْسُمْ مُثَلَّثًا وع ق بِحَيْثُ ع ق = و ق، وَ وَ^ق = 45°",
+      "body": "- مَاهُوَ نَوْعُ هَذَا الْمُثَلَّثِ؟ ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p083_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَتِمَّ رَسْمَ الْمُثَلَّثِ أ ب ج بِحَيْثُ أب = ب ج = 4 صم وَ أ ب^ ج = 60°",
+      "body": "- مَاهُوَ نَوْعُ الْمُثَلَّثِ؟ ........\n- ارْسُمْ مُنَصِّفَ كُلِّ زَاوِيَةٍ فِي هَذَا الْمُثَلَّثِ. مَاذَا نُلَاحِظُ؟ ........",
+      "figureDesc": "Segment [أب] de 4 صم déjà tracé en bas à gauche, avec A à droite et B à gauche, à compléter.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p083_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

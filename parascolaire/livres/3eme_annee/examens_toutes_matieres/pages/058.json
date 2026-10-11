@@ -1,0 +1,107 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 58,
+  "grade": "3ème Année",
+  "subject": "Français (la page est en français, pas en arabe : aucun texte arabe à recopier)",
+  "topicGuess": "Compréhension de l'écrit : Amélie Dupré, sa famille et sa maison (la famille, la maison, les couleurs et les nombres)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "je lis le texte :",
+      "body": "amélie dupré est française. elle a un frère, il s'appelle bruno et une sœur, elle s'appelle nadine. son père s'appelle patrice, sa mère s'appelle chantal.\namélie habite à paris dans une petite maison verte avec une porte jaune et trois fenêtres bleues. autour de la maison, il y a un grand jardin. dans le jardin, il y a quatre fleurs rouges et cinq fleurs jaunes.\ndans la maison, il y a trois chambres, un salon, une cuisine et une salle de bains.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p058_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "je barre ce qui est faux :",
+      "body": "• amélie a un frère et deux sœurs.\n• amélie a deux frères et une sœur.\n• amélie a un frère et une sœur.",
+      "figureDesc": "Un filigrane « MOURAJAA.COM » traverse les phrases.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examens_toutes_matieres_p058_i2",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "j'entoure la bonne phrase :",
+      "body": "• amélie est française, elle habite à tunis.\n• amélie est tunisienne, elle habite à paris.\n• amélie est française, elle habite à paris.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "examens_toutes_matieres_p058_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "je lis et je dessine :",
+      "body": "une maison | une fenêtre | une porte",
+      "figureDesc": "Tableau de trois grandes cases vides à remplir par un dessin. Les légendes sont en bas : « une maison », « une fenêtre », « une porte ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p058_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u4",
+    "confidence": 0.24
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une compréhension de l'écrit en français (Amélie Dupré, sa famille et sa maison), mais la liste officielle ne contient aucun chapitre de français, et les chapitres d'arabe, de mathématiques et de sciences ne correspondent pas.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : la famille et la maison",
+    "skill": "Lire un court texte descriptif et en extraire des informations (famille, lieu d'habitation, éléments de la maison) pour repérer le vrai du faux et illustrer le vocabulaire.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "qcm",
+      "autre"
+    ],
+    "keywords": [
+      "famille",
+      "maison",
+      "couleurs",
+      "nombres",
+      "compréhension de l'écrit",
+      "3ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un texte de présentation d'un personnage, avec sa famille et sa maison colorée, sert de base à des exercices progressifs : barrer ce qui est faux, entourer la bonne phrase, puis dessiner à partir de mots lus. Ce format est facile à adapter à d'autres personnages ou contextes.",
+    "themeGroup": "Compréhension de texte"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

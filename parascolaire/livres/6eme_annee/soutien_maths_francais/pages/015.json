@@ -1,0 +1,184 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 15,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Unité 5 : Puissances (carré et cube), symétrie axiale, cercle et carré, périmètre et aire, durées et conversions d'unités de temps",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب كما في المثال:",
+      "body": "Exemple : 3 × 3 × 3 = 3³ = 27\n6 × 6 × 6 = ……………\n18 × 18 = ……………",
+      "figureDesc": "Exemple encadré en haut de l'exercice.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p015_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ المثال وأحسب بنفس الطريقة:",
+      "body": "Exemple : (9 × 12)² = 9² × 12² = 81 × 144 = 11 664\n(10 × 5)² = ……………\n(11 × 20)³ = ……………",
+      "figureDesc": "Exemple encadré.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p015_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ المثال وأحسب بنفس الطريقة:",
+      "body": "Exemple : (4/5)² = 4/5 × 4/5 = (4×4)/(5×5) = 16/25\n(3/7)² = ……………\n(8/9)³ = ……………\n(0,12)² = ……………",
+      "figureDesc": "Exemple encadré.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p015_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أتمم الجدول التالي بما يناسب.",
+      "body": "Colonnes : القوة | الأساس | الأس | على شكل جداء | النتيجة\nLigne exemple : 4² | 4 | 2 | 4×4 | 16\nPuissances à compléter : 15² ; 10³ ; 6,1² ; 2,5³",
+      "figureDesc": "Tableau à 5 colonnes, première ligne remplie en exemple, 4 lignes vides à compléter.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p015_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أرسم مماثل الشكل بالنسبة لمحور التماثل (d):",
+      "body": "",
+      "figureDesc": "Quadrillage avec axe vertical rouge (d) ; forme noire à droite de l'axe (pentagone avec pointe à gauche) dont il faut dessiner le symétrique.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p015_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أنشئ دائرة (C) شعاعها r = 2cm ، ثم أنشئ مربعا ABCD أحد أضلاعه هو قطر الدائرة (C).",
+      "body": "",
+      "figureDesc": "Cadre vide pour la construction.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p015_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أ ـ لاحظ الشكل ثم أحسب محيطه (P).",
+      "body": "ب ـ أحسب مساحة الشكل (A).\nLignes pointillées pour les réponses.",
+      "figureDesc": "Figure jaune composée d'un rectangle de hauteur 7 m surmonté d'un demi-disque de diamètre 20 m ; à gauche du demi-disque un segment de 4 m (le segment de droite est marqué égal par des traits).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p015_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Complète les vides :",
+      "body": "1 Année = ………… Jours ; 1 mois = …………… Jours\n1 Jour = ……… Heures ; 1 Heure = …………… minutes\n1 Minute = ………… Secondes",
+      "figureDesc": "Cadre bleu.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p015_i8",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أكمل التحويلات التالية:",
+      "body": "1 min 6 s = …………… secondes\n15 min 50 s = …………… secondes\n2 h 22 min = …………… minutes\n25 h 3 min = …………… Minutes\n21 j = …………… Heures",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p015_i9",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أنجز العمليات التالية ثم أجري التحويل إذا أمكن ذلك بالخانة الأخيرة:",
+      "body": "5h 24min - 2h 34min\n12h 22min + 6h 27min",
+      "figureDesc": "Tableau à deux colonnes avec espace de calcul et une ligne finale pour la conversion.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p015_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p3",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une révision mixte (puissances, symétrie axiale, cercle et carré, périmètre et aire, conversions de durées) qui couvre plusieurs périodes (p3, p4, p5) sans correspondre clairement à un seul chapitre officiel.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Puissances, symétrie, périmètre et durées",
+    "skill": "Calculer des carrés et cubes, construire un symétrique et un carré inscrit, calculer périmètre et aire, convertir et opérer sur des durées.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "puissances",
+      "carré et cube",
+      "symétrie axiale",
+      "périmètre et aire",
+      "conversion de durées"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Exercices guidés par un exemple modèle à imiter, avec tableau de puissances (base, exposant, produit, résultat), construction géométrique liée au cercle et au carré, et conversions ou opérations sur des durées en heures, minutes et secondes.",
+    "themeGroup": "Puissances"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

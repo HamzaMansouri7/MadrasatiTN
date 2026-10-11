@@ -1,0 +1,221 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 84,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 21 – اختبار تقويمي للتثبيت والدعم (division et multiplication, masses, construction d'un carré, problème de dépenses)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "الأسبوع 21 — اختبار تقويمي للتثبيت والدعم (رقم الصفحة المطبوع: 80)",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p084_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمّ كلّ مخطّط بكتابة العدد المناسب في المكان المنقّط.",
+      "body": "مخطّطان. في كلّ مخطّط خانتان في الأعلى، الأولى فيها العدد 7 والثانية منقّطة، ثم دائرة فيها العملية، ثم خانة النتيجة 126. المخطّط الأيسر: 7 ، ........ ، العملية \":\" ، النتيجة 126. المخطّط الأيمن: 7 ، ........ ، العملية \"x\" ، النتيجة 126.",
+      "figureDesc": "مخطّطان يربط فيهما خطّان خانتي الأعلى بدائرة العملية، ويربط خطّ الدائرة بخانة النتيجة 126. في الأيسر القسمة \":\" وفي الأيمن الضرب \"x\". في كلّ مخطّط إحدى الخانتين العلويتين تحمل 7 والأخرى منقّطة.",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p084_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب كتلة كلّ من الجسمين \"أ\" و \"ب\".",
+      "body": "ميزانان. الميزان الأيمن: في إحدى الكفّتين الجسم \"ب\" (مثلّث) والجسم \"أ\" (دائرة)، وفي الكفّة الأخرى 2 كغ و 2 مغ. الميزان الأيسر: في إحدى الكفّتين الجسم \"أ\" و 5 مغ، وفي الكفّة الأخرى 1 كغ و 2 مغ و 100 غ.",
+      "figureDesc": "ميزانان ذوا كفّتين، السهم عمودي في كليهما أي أنّهما متوازنان. الأيمن: مثلّث \"ب\" ودائرة \"أ\" في كفّة، ومقابلهما كتلة 2 كغ وكتلة 2 مغ في الكفّة الأخرى. الأيسر: دائرة \"أ\" وكتلة 5 مغ في كفّة، ومقابلهما كتلة 1 كغ وكتلة 2 مغ وكتلة 100 غ في الكفّة الأخرى.",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p084_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أتمّ رسم هذا المربّع مستعينا بكوسك ومسطرتك المدرّجة.",
+      "body": "(أ ب ج د) مربّع. – ابتدأت برسم مربّع ضلعه [م ن]. أتمّ رسم هذا المربّع مستعينا بكوسك ومسطرتك المدرّجة.",
+      "figureDesc": "شبكة مربّعات كبيرة، الرأس ب في أعلى اليسار والرأس أ في أعلى اليمين والرأس ج في أسفل اليسار والرأس د في أسفل اليمين. النقطة م على الضلع العلوي والنقطة ن على الضلع الأيمن. القطعة [م ن] مرسومة، ومعها قطعة ثانية تنطلق من ن نحو الأسفل وتميل قليلا إلى اليسار.",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p084_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) ابحث عن جملة المصاريف. ب) كان لأحد أفراد الفرقة 7500 مي. هل يكفيه هذا المبلغ؟ علّل جوابك.",
+      "body": "قامت فرقة كشفيّة متكوّنة من 5 أفراد برحلة إلى منطقة أثريّة وكانت المصاريف كالآتي : – 20 د معلوم ركوب الحافلة لجميع المشاركين. – 1440 مي مصاريف الأكل بالنّسبة لكلّ مشارك. – 7800 مي مصاريف مختلفة للجميع. أ) ابحث عن جملة المصاريف. ب) كان لأحد أفراد الفرقة 7500 مي. هل يكفيه هذا المبلغ؟ علّل جوابك.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p084_i5",
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.9
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch2",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de la semaine 21 mêlant division/multiplication, masses, construction d'un carré et problème de dépenses, donc plusieurs chapitres (périodes 2, 3 et 6) sans correspondance unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    128
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Évaluation: division, masses, carré, dépenses",
+    "skill": "Résoudre des opérations à trous, calculer des masses avec des balances, construire un carré et résoudre un problème de dépenses.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "calcul",
+      "schema_tableau",
+      "probleme"
+    ],
+    "keywords": [
+      "division et multiplication",
+      "masses",
+      "balance",
+      "construction du carré",
+      "problème de dépenses",
+      "budget"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les balances en équilibre servent à déduire des masses inconnues par étapes, et le problème de sortie scoute (coûts par personne et frais communs, puis vérification d'un budget individuel) est un contexte réutilisable.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.1: le premier schéma est une division avec 7 en premier case et case vide, résultat 126 (7 : ... = 126) - transcrit ainsi; mais l'ordre des schémas est inversé: dans l'image, à droite se trouve 7 x ... = 126 et à gauche 7 : ... = 126, ce qui est acceptable; aucune erreur numérique."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Ex.2: la description des balances est fausse/inventée: le premier dessin (à droite) a 2 مغ et 2 كغ contre un côté vide? en fait la balance de droite compare 2 مغ + 2 كغ à جسم أ + جسم ب (triangle ب et دائرة أ); la balance du milieu: 100 غ + 2 مغ + 1 كغ contre جسم أ ; la balance de gauche: جسم أ contre 5 مغ. Transcription confond les balances et dit à tort que 'ب' est avec 100 غ, 2 مغ, 1 كغ."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.2: 'قطعتان: 2 مغ و2 كغ' attribué à la mauvaise balance (la balance de droite, pas la première)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.3: manque la mention des points/lettres de la figure (أ، ب، ج، د، م، ن) et de la grille; l'énoncé 'أتمّ رسم' placé avant '(أ ب ج د) مربّع' dans un ordre différent de la lecture (ordre: (أ ب ج د) مربّع، ابتدأت برسم مربّع ضلعه [م ن]، أتمّ رسم...)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Ex.4: l'ordre est inversé: l'énoncé (قامت فرقة...) devrait précéder les questions أ) و ب)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Manquent l'en-tête 'الأسبوع 21', le titre 'اختبار تقويمي للتثبيت والدعم' et le numéro de page 80."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel de l'image: 'الدّعم' non vocalisé de façon identique; transcription ajoute des chadda non visibles (ex. مخطّط, المنقّط sont présents dans l'image, mais 'المدرّجة' et 'مربّع' ok)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.9,
+    "reviewed": true
+  },
+  "correctionStatus": "linked",
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمّ كلّ مخطّط بكتابة العدد المناسب في المكان المنقّط.",
+      "body": "مخطّط أول: 7 : ......... = 126. مخطّط ثان: 7 x ......... = 126.",
+      "figureDesc": "Deux schémas en arbre. À gauche : une case contenant 7 et une case vide en pointillés reliées à un ovale « : » qui mène à la case 126. À droite : une case contenant 7 et une case vide en pointillés reliées à un ovale « x » qui mène à la case 126.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p084_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب كتلة كلّ من الجسمين \"أ\" و \"ب\".",
+      "body": "الميزان الأول: في كفّة جسم \"أ\" وفي الكفّة الأخرى قطعتان: 2 مغ و2 كغ، والميزان متوازن. الميزان الثاني: في كفّة جسم \"ب\" (مثلث) وجسم \"أ\" وفي الكفّة الأخرى 100 غ و2 مغ و1 كغ، والميزان متوازن. (الميزان الثالث: في كفّة جسم \"أ\" وفي الأخرى 5 مغ).",
+      "figureDesc": "Deux balances à fléau en équilibre. Droite : plateau avec des masses marquées 2 مغ et 2 كغ. Gauche : plateau avec le corps « أ » (cercle) et le corps « ب » (triangle) contre 100 غ, 2 مغ, 1 كغ. Une troisième balance : « أ » contre une masse de 5 مغ.",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p084_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أتمّ رسم هذا المربّع مستعينا بكوسك ومسطرتك المدرّجة.",
+      "body": "(أ ب ج د) مربّع. – ابتدأت برسم مربّع ضلعه [م ن].",
+      "figureDesc": "Quadrillage carré avec sommets A (haut droite), B (haut gauche), C (bas gauche), D (bas droite). Points M sur [AB] et N sur [AD]. Le segment [MN] est tracé ainsi qu'un début de côté partant de N vers le bas.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p084_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) ابحث عن جملة المصاريف. ب) كان لأحد أفراد الفرقة 7500 مي. هل يكفيه هذا المبلغ؟ علّل جوابك.",
+      "body": "قامت فرقة كشفيّة متكوّنة من 5 أفراد برحلة إلى منطقة أثريّة وكانت المصاريف كالآتي: – 20 د معلوم ركوب الحافلة لجميع المشاركين. – 1440 مي مصاريف الأكل بالنّسبة لكلّ مشارك. – 7800 مي مصاريف مختلفة للجميع.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "math_solutions_4eme_sellami_p084_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

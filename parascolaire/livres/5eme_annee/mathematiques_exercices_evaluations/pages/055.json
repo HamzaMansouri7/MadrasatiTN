@@ -1,0 +1,87 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 55,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 30: أنجز عمليتي الجمع والطرح على الأعداد التي تقيس الزمن (ملاحظation : la page est en réalité un contenu de mathématiques, numérotée 56 sur le scan)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُنجِزِ العَمَليّاتِ التّاليَةَ :",
+      "body": "Colonne de droite : 9 س و 30 دق + 4 س و 15 دق = ............. | 13 س و 14 دق و 40 ث + 2 س و 19 دق = ............. | 6 س و 25 دق + 7 س و 9 دق و 12 ث = ............. | 18 س و 18 دق و 45 ث + 5 س و 27 دق و 14 ث = ............. ; Colonne de gauche : 8 س و 45 دق و 39 ث - 3 س و 20 دق و 28 ث = ............. | 24 س و 12 دق و 49 ث - 6 س و 14 دق و 25 ث = ............. | 9 س و 26 دق و 53 ث - 7 س و 44 دق و 7 ث = ............. | 25 س و 44 ث - 6 س و 48 ث = .............",
+      "figureDesc": "Huit opérations sur les durées (additions à droite, soustractions à gauche) séparées par un trait vertical, chacune suivie d'une ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p055_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "مَتَى وَصَلَ القِطَارُ إِلَى مَدِينَةِ بَنْزَرْتَ؟ / مَتَى عَادَ القِطَارُ إِلَى مَدِينَةِ تُونِسَ؟",
+      "body": "إِنْطَلَقَ قِطَارٌ مِنْ مَدِينَةِ تُونِسَ عَلَى السَّاعَةِ 7 و 20 دق فَوَصَلَ مَدِينَةَ بِنْزَرْتَ بَعْدَ 1س و 50 دق. قَضَى القِطَارُ فِي مَحَطَّةِ بِنْزَرْتَ 35 دق ثُمَّ عَادَ إِلَى مَدِينَةِ تُونِسَ فَتَوَقَّفَ أَثْنَاءَ الطَّرِيقِ لِمُدَّةِ 10 دق عِلْمًا وَأَنَّ القِطَارَ قَضَى نَفْسَ تَوْقِيتِ الذَّهَابِ؟ • مَتَى وَصَلَ القِطَارُ إِلَى مَدِينَةِ بِنْزَرْتَ؟ • مَتَى عَادَ القِطَارُ إِلَى مَدِينَةِ تُونِسَ؟",
+      "figureDesc": "Lignes pointillées pour écrire les réponses.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p055_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "مَتَى تَصِلُ الحَافِلَةُ إِلَى سُوسَةَ ؟",
+      "body": "تَنْطَلِقُ حَافِلَةٌ مِنْ صَفَاقُس صَوْبَ سُوسَةَ عَلَى السَّاعَةِ 5 و45 دق صَبَاحًا وَتَقْضِي فِي الرِّحْلَةِ دُونَ تَوَقُّفٍ 1 س و50 دق. فِي نَفْسِ الوَقْتِ يَنْطَلِقُ قِطَارٌ مِنْ سُوسَةَ فَيَتَوَقَّفُ فِي الجَمِّ 23 دق وَيَصِلُ إِلَى صَفَاقُس عَلَى السَّاعَةِ 7 و 55 دق. • مَتَى تَصِلُ الحَافِلَةُ إِلَى سُوسَةَ ؟",
+      "figureDesc": "Lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p055_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.63
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur l'addition et la soustraction de durées (heures, minutes, secondes) et sur des problèmes d'horaires de trains et de bus, ce qui correspond à la Période 2 : opérations sur les décimaux et calcul sur les durées.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition et soustraction de durées",
+    "skill": "Effectuer des additions et soustractions de durées (heures, minutes, secondes) et calculer des heures d'arrivée ou de retour dans des situations de trajet.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "durées",
+      "heures et minutes",
+      "addition",
+      "soustraction",
+      "horaires de trajet",
+      "conversion"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les problèmes d'horaires de trains et de bus entre villes tunisiennes (départ, durée du trajet, temps d'arrêt, heure d'arrivée ou de retour) sont réutilisables, de même que la série de calculs de durées en h/min/s avec retenues.",
+    "themeGroup": "Mesures de durées"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

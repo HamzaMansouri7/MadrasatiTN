@@ -1,0 +1,104 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 22,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مزيدات الفعل الثلاثي (Arabe – les verbes trilitères augmentés). Remarque : le contenu de la page est de la grammaire arabe, pas des mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "مزيداتُ الفِعْلِ الثُّلاثي",
+      "body": "للثلاثي المزيد بحرف واحد ثلاثةُ أوزانِ هي: أَفْعَلَ (أَقْبَلَ)، فَعَّلَ (سَلَّمَ)، فَاعَلَ (وَافَقَ). للفعلِ الثلاثي المزيدِ بحرفين خمسةُ أوزانٍ هي: تَفَعَّلَ (تَكَلَّمَ)، تَفَاعَلَ (تَوَاتَرَ)، انْفَعَلَ (انْطَلَقَ)، افْتَعَلَ (انْتَصَبَ)، افْعَلَّ (احْمَرَّ).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p022_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول: يصبح الفعل مع زيادة حرفين",
+      "body": "أصل الفعل المجرد / ميزانه / الفعل المزيد / ميزانه: كَلَمَ - فَعَلَ - تَكَلَّمَ - تَفَعَّلَ؛ حَمَرَ - فَعَلَ - احْمَرَّ - افْعَلَّ؛ وَتَرَ - فَعَلَ - تَوَاتَرَ - تَفَاعَلَ؛ نَصَبَ - فَعَلَ - انْتَصَبَ - افْتَعَلَ؛ طَلَقَ - فَعَلَ - انْطَلَقَ - انْفَعَلَ",
+      "figureDesc": "Tableau rose à 5 lignes et 5 colonnes : verbe nu, sa forme, la colonne centrale verticale « يصبح الفعل مع زيادة حرفين », verbe augmenté et sa forme.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p022_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "للفعل الثلاثي المزيد بثلاثة أحرفٍ وزنان",
+      "body": "اسْتَفْعَلَ (اسْتَخْبَرَ)، وافْعَوْعَلَ (احْدَوْدَبَ)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p022_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول: يصبح الفعل مع زيادة ثلاثة أحرف",
+      "body": "أصل الفعل / ميزانه / الفعل المزيد / ميزانه: خَبَرَ - فَعَلَ - اسْتَخْبَرَ - اسْتَفْعَلَ؛ حَدَبَ - فَعَلَ - احْدَوْدَبَ - افْعَوْعَلَ",
+      "figureDesc": "Tableau rose à 2 lignes de données et 5 colonnes, avec la colonne centrale verticale « يصبح الفعل مع زيادة ثلاثة أحرف ».",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p022_i4",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u1",
+    "confidence": 0.35
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la morphologie arabe (verbes trilitères augmentés et leurs schèmes), un contenu de grammaire/conjugaison qui ne correspond à aucune des huit unités arabes de 5ème année, centrées sur les types de textes (narratif, descriptif, explicatif, injonctif).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Verbes trilitères augmentés",
+    "skill": "Identifier les verbes trilitères augmentés d'une, deux ou trois lettres, et reconnaître leur schème (wazn) à partir de la racine.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "verbes trilitères",
+      "augmentation",
+      "schèmes verbaux",
+      "racine",
+      "conjugaison arabe",
+      "wazn"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau qui relie racine, schème de base, verbe augmenté et nouveau schème se prête à des exercices d'appariement, de classement par nombre de lettres ajoutées ou de recherche de la racine à partir d'un verbe augmenté, ainsi qu'à une infographie récapitulative des 10 schèmes.",
+    "themeGroup": "Verbe simple et verbe augmenté"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

@@ -1,0 +1,158 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 22,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 11: أَتَعَرَّفُ الدَّائِرَةَ وَالقُرْصَ الدَّائِرِيَّ (ملاحظة: الصفحة تتناول الهندسة/الرياضيات وليست اللغة العربية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اُكْتُبْ تَحْتَ كُلِّ رَسْمٍ \" قُرْصٌ دَائِرِيٌّ \" أَوْ \" دَائِرَةٌ \":",
+      "body": "الرسم (أ) و الرسم (ب). تحت كل رسم سطر منقط للإجابة.",
+      "figureDesc": "رسمان: (أ) دائرة غير ملونة في وسطها نقطة (مركز) ، (ب) قرص مملوء بلون داكن.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p022_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اُكْتُبْ \" تَنْتَمِي \" أَوْ \" لاَ تَنْتَمِي \":",
+      "body": "- النُّقْطَةُ \" أ \" ........... لِلدَّائِرَةِ.\n- النُّقْطَةُ \" ب \" ........... لِلْقُرْصِ الدَّائِرِيِّ.\n- النُّقْطَةُ \" ج \" ........... لِلْقُرْصِ الدَّائِرِيِّ.\n- النُّقْطَةُ \" د \" ........... لِلدَّائِرَةِ وَ ........... لِلْقُرْصِ الدَّائِرِيِّ.",
+      "figureDesc": "دائرة مركزها م، عليها النقاط أ، ب، ص، س، ق، ع؛ القطعة [س ص] قطر يمر بالمركز م، والقطعة [ق ع] وتر؛ النقطة ج داخل الدائرة، والنقطة د خارجها.",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "mathematiques_exercices_evaluations_p022_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "سَمِّ قِطَعَ الْمُسْتَقِيمِ حَسَبَ عَلاَقَتِهَا بِالدَّائِرَةِ بِالتَّمْرِينِ 2:",
+      "body": "- [ س ص ] ← ...........\n- [ م س ] و [ م ص ] ← ...........\n- [ ع ق ] و [ ق ع ] ← ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p022_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اِرْسُمْ دَائِرَةً مَرْكَزُهَا \" م \" وَقِيسُ قُطْرِهَا 4 صم ثُمَّ اِرْسُمْ دَائِرَةً ثَانِيَةً مَرْكَزُهَا \" م' \" وَقِيسُ قُطْرِهَا 6 صم بِحَيْثُ تَتَقَاطَعُ الدَّائِرَتَانِ فِي نُقْطَتَيْنِ.",
+      "body": "",
+      "figureDesc": "إطار مستطيل فارغ مخصص للرسم.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p022_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "عَيِّنِ النِّقَاطَ التَّالِيَةَ عَلَى الرَّسْمِ السَّابِقِ:",
+      "body": "- \" ل \" تَنْتَمِي لِلدَّائِرَةِ \" م \" وَلاَ تَنْتَمِي لِلدَّائِرَةِ \" م' \".\n- \" ص \" تَنْتَمِي لِلْقُرْصِ الدَّائِرِيِّ الَّذِي مَرْكَزُهُ \" م' \" لاَ غَيْرَ.\n- \" ي \" تَنْتَمِي لِلْقُرْصَيْنِ الدَّائِرِيَّيْنِ فِي الرَّسْمِ ( م ، م' ).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p022_i5",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p4",
+    "confidence": 0.27
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une leçon de géométrie sur le cercle et le disque (appartenance, rayon, diamètre, tracé de cercles sécants), qui relève de la Période 4 (Division à 2 chiffres, masses et cercle/disque).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Cercle et disque",
+    "skill": "Distinguer cercle et disque, utiliser l'appartenance d'un point, nommer rayon, diamètre et corde, et construire deux cercles sécants.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "appariement",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "cercle",
+      "disque",
+      "appartenance",
+      "rayon",
+      "diamètre",
+      "construction géométrique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une progression allant de la reconnaissance du cercle et du disque à la construction de deux cercles sécants, puis au placement de points selon leur appartenance, est réutilisable pour des fiches de géométrie.",
+    "themeGroup": "Angles, cercle et triangles"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4: 'وَقِيسُ قُطْرِهَا' est transcrit tel quel; l'image montre 'وَقِيسُ قُطْرِهَا' (ok), mais 'صم' est conservé: correct. Pas d'erreur réelle ici."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1: l'image montre 'اُكْتُبْ تَحْتَ كُلِّ رَسْمٍ'; la transcription est correcte, mais ajoute des guillemets autour de 'دَائِرِيٌّ' de façon légèrement différente."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 1: texte ajouté 'الرسم (أ) و الرسم (ب). تحت كل رسم سطر منقط للإجابة.' (description, non présent dans l'image) et 'réponse: None'."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3: '[ ع ق ] و [ ق ع ]' dans l'image est '[ ع ق ] و [ ق ع ]' (ok); '[ س ص ]' ok."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2: la figure (points أ، ب، ج، د، م، س، ص، ق، ع) n'est pas décrite; le titre de leçon 'الدرس 11: أتعرف الدائرة والقرص الدائري' et le numéro de page 23 sont omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5: 'لاَ غَيْرَ' correct; 'مَرْكَزُهُ' correct; la dernière ligne mentionne 'فِي الرَّسْمِ' correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3: 'سَمِّ قِطَعَ' — l'image porte 'سَمِّ قِطَعَ' (ok); 'الْمُسْتَقِيمِ' ok."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

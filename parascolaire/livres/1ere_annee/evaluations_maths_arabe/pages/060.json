@@ -1,0 +1,165 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 60,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "تفكيك وتركيب الأعداد / الجمع / حل مسائل",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكَوِّنُ الْمَبْلَغَ 19 مي بِأَقَلِّ عَدَدٍ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "",
+      "figureDesc": "أربع دوائر تمثل قطعاً نقدية، إحداها كُتب عليها 5 مي وثلاث دوائر كُتب بداخلها 'مي' فارغة لتحديد قيمتها.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p060_i1",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَكْتُبُ الْأَعْدَادَ النَّاقِصَةَ :",
+      "body": "..... + 10 = (   ) = 8 + 9\n..... + 8 = (   ) = 5 + 10\n6 + 8 = (   ) = 7 + .....\n\n9 + 2 + ..... = ..... = 7 + 2 + 5\n..... + 10 + 3 = (19) = 2 + ..... + 16\n6 + ..... + 6 = (18) = 3 + 8 + .....",
+      "figureDesc": "عمليات حسابية مع فراغات ودوائر للأعداد الناتجة والمفقودة.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p060_i2",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُلَوِّنُ الْعَمَلِيَّاتِ الصَّحِيحَةَ :",
+      "body": "المخطط الأول (المركز 10): 7+8 ، 4+6 ، 4+1+9 ، 7+3\nالمخطط الثاني (المركز 19): 3+13 ، 9+10 ، 7+8 ، 5+14",
+      "figureDesc": "مخططان شجريان، في مركز كل منهما دائرة بها عدد (10 و 19) وتتفرع منها مستطيلات تحتوي على عمليات جمع للتلوين.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p060_i3",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "",
+      "body": "مَلَأَ بَائِعُ زَيْتٍ إِنَاءً أَوَّلًا يَسَعُ 10 لِتْرًا ثُمَّ مَلَأَ إِنَاءً ثَانِيًا يَسَعُ 5 لِتْرٍ ثُمَّ مَلَأَ 4 قَوَارِيرَ تَسَعُ كُلُّ وَاحِدَةٍ لِتْرًا وَاحِدًا.\nمَا هِي الْكَمِّيَّةُ الْجُمْلِيَّةُ الَّتِي عَبَّأَهَا بَائِعُ الزَّيْتِ ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p060_i4",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أُنْجِزُ وَأَتَمَيَّزُ :",
+      "body": "اِسْتَدْعَى فَادِي بِمُنَاسَبَةِ نَجَاحِهِ 17 صَدِيقًا، فَاشْتَرَى 12 مُرَطَّبَةً فَمُرَطَّبَتَيْنِ ثُمَّ 3 مُرَطَّبَاتٍ.\nالتَّعْلِيمَةُ :\nأَحْسُبُ عَدَدَ الْمُرَطَّبَاتِ الَّتِي اشْتَرَاهَا فَادِي.\nهَلْ يَكْفِيهِ هَذَا الْعَدَدُ مِنَ الْمُرَطَّبَاتِ لِاسْتِضَافَةِ أَصْدِقَائِهِ ؟ أُعَلِّلُ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p060_i5",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "topicId": "math-1-p4",
+  "topicTitle": "Période 4 : Nombres de 11 à 19, tables d'addition et soustraction",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p6",
+    "confidence": 0.68
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les nombres de 11 à 19 : décomposition et composition, tables d'addition (sommes jusqu'à 19), compléments à 10 et problèmes additifs. Elle correspond à la Période 4, bien que la monnaie et les problèmes touchent aussi la Période 6.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition et décomposition jusqu'à 20",
+    "skill": "Décomposer et recomposer des nombres jusqu'à 20, additionner et résoudre des problèmes additifs simples.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "addition",
+      "décomposition",
+      "nombres jusqu'à 20",
+      "monnaie",
+      "problème additif",
+      "égalités à compléter"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : former une somme avec le moins de pièces possible, compléter des égalités à trous à plusieurs termes, colorier les opérations égales au nombre central d'un schéma, et résoudre des problèmes de contexte quotidien (huile en litres, boissons pour invités) avec question de vérification de suffisance.",
+    "themeGroup": "Addition jusqu'à 20"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3: « أُكَوِّنُ » alors que l'image montre « أُكَوِّنُ » avec les mêmes voyelles, mais « الْمَبْلَغَ » et « الْقِطَعِ » sont corrects ; en revanche « بِأَقَلِّ » est écrit avec chadda alors que l'image montre « بِأَقَلِّ » sans chadda visible (« بِأَقَلّ »)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3: la pièce de 5 (image) et les 3 cercles « مي » vides ne sont pas décrits ; la transcription laisse un champ vide « || || »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 6: « مَا هِي الْكَمِّيَّةُ الْجُمْلِيَّةُ » : l'image montre « الْكَمِّيَّةُ » et « الْجُمْلِيَّةُ » ; « عَبَّأَهَا » et « الزَّيْتِ » corrects. Cependant « لِتْرٍ » (5 لِتْرٍ) et « تَسَعُ » sont conformes ; pas d'erreur majeure."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَتَمَيَّزُ » dans le titre : l'image montre « أَتَـمَيَّزُ » avec chadda et fatha, la transcription est correcte ; mais « أُنْجِزُ » est correct. Aucune erreur réelle."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« اِسْتَدْعَى » : l'image montre « اِسْتَدْعَى » ; « فَاشْتَرَى 12 مُرَطَّبَةً فَمُرَطَّبَتَيْنِ » correct."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 4: ordre des deux colonnes (colonne de droite d'abord, puis celle de gauche) acceptable en lecture RTL ; mais les cercles sont rendus « (   ) » sans le signe « .... » présent dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 5: transcription ne précise pas que les opérations sont à colorier (seulement la liste des cases) ; 7+8 et 3+13 sont des distracteurs non signalés."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Pied de page (« 84 », « الرياضيات », « جسر النجاح - الثلاثي الثاني (السنة 1) ») et la flèche/lignes de réponse sont absents."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

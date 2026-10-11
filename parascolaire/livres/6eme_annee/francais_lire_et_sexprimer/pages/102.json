@@ -1,0 +1,169 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 102,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Évaluation n°6 – Lire et s'exprimer : « La curiosité » (d'après Schmid)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Évaluation n°6\n\nLa curiosité\nChristine prie sa mère de lui acheter un beau canari. « Tu en auras un si tu es toujours obéissante et surtout si tu te corriges de ta curiosité qui te porte souvent à apprendre des choses inutiles et dangereuses. », répond la mère.\nChristine promet à sa mère d'être docile et de se corriger de son défaut.\nUn jour, elle revient de l'école. Sa mère, qui s'apprête à sortir, lui dit : « Voilà, sur ta table, une boîte toute neuve. Ne l'ouvre pas. Si je m'aperçois à mon retour que tu n'as pas désobéi à cet ordre, je te donnerai quelque chose qui te fera grand plaisir. »\nAussitôt après le départ de sa mère, la curieuse petite fille tient déjà la boite en carton à la main.\n« Comme elle est légère ! » se dit-elle. « Tiens, le couvercle est percé de petits trous. Mon Dieu ! Que peut-il y avoir là-dedans ? Oh ! Je ne dois pas l'ouvrir, j'ai promis à maman de ne pas la toucher. » »\nChristine remet la boite. Après un moment, elle la reprend, la regarde longuement, puis elle lève le couvercle. Au même instant, un charmant canari s'échappe de la boite et se met à voltiger dans la chambre en chantant joyeusement.\nChristine veut l'attraper, elle court, court, enfin elle le saisit par l'aile. Mais le canari s'échappe.\nToute essoufflée et les joues en feu, elle court encore après l'oiseau, lorsque sa mère entre...\n\nD'après SHMID",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p102_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "B 1",
+      "instruction": "Compréhension :",
+      "body": "1) La mère dit à sa fille : « je te donnerai quelque chose qui te fera grand plaisir. »\nQue va-t-elle lui offrir ?\n...................................................................................................................................\n...................................................................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p102_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "B 2) a-",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- Christine a hésité avant d'ouvrir la boîte. (...................)",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p102_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.31
+  },
+  "topicSubject": "Français",
+  "topicReason": "Évaluation n°6 de lecture et expression en français (texte « La curiosité » avec questions de compréhension) : la matière est bien le Français, mais le texte ne relève d'aucun module précis (travail, communication, tolérance, entraide, nature, santé, loisirs, autres modes de vie) et aucune compétence grammaticale d'un module n'est ciblée clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte narratif",
+    "skill": "Lire un court récit sur la curiosité et répondre à des questions de compréhension (réponse libre et oui/non).",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "curiosité",
+      "compréhension écrite",
+      "texte narratif",
+      "évaluation",
+      "lecture",
+      "6ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le schéma d'une évaluation en trois temps (lecture d'un récit moral, question d'inférence à réponse courte, série d'items oui/non justifiables) se transpose facilement à d'autres valeurs ou défauts comme la patience, l'honnêteté ou la gourmandise.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« une boîte toute neuve » : l'image porte « boîte » avec accent circonflexe, la transcription est correcte ; mais « la boite en carton » (image sans accent) est transcrit « boite » : cohérent. Pas d'erreur ici."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est omis : « Sagesse », « Les évaluations », « 6ème année de base », « Évaluation n°6 »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est omis : « Lire et s'exprimer », « 101 », « 6ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« quelque chose » : correct. En revanche, dans la citation de la question B1, l'image affiche « B) Compréhension : 1) » ; la numérotation « 1) » et la lettre « B) » ne figurent pas dans le texte transcrit."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans le texte, la fin de la réplique « de ne pas la toucher. » » comporte des guillemets fermants doublés dans l'image ; la transcription n'en met qu'un."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "La curiosité\nChristine prie sa mère de lui acheter un beau canari. « Tu en auras un si tu es toujours obéissante et surtout si tu te corriges de ta curiosité qui te porte souvent à apprendre des choses inutiles et dangereuses. », répond la mère.\nChristine promet à sa mère d'être docile et de se corriger de son défaut.\nUn jour, elle revient de l'école. Sa mère, qui s'apprête à sortir, lui dit : « Voilà, sur ta table, une boîte toute neuve. Ne l'ouvre pas. Si je m'aperçois à mon retour que tu n'as pas désobéi à cet ordre, je te donnerai quelque chose qui te fera grand plaisir. »\nAussitôt après le départ de sa mère, la curieuse petite fille tient déjà la boite en carton à la main.\n« Comme elle est légère ! » se dit-elle. « Tiens, le couvercle est percé de petits trous. Mon Dieu ! Que peut-il y avoir là-dedans ? Oh ! Je ne dois pas l'ouvrir, j'ai promis à maman de ne pas la toucher. »\nChristine remet la boite. Après un moment, elle la reprend, la regarde longuement, puis elle lève le couvercle. Au même instant, un charmant canari s'échappe de la boite et se met à voltiger dans la chambre en chantant joyeusement.\nChristine veut l'attraper, elle court, court, enfin elle le saisit par l'aile. Mais le canari s'échappe.\nToute essoufflée et les joues en feu, elle court encore après l'oiseau, lorsque sa mère entre...\nD'après SHMID",
+      "figureDesc": "Texte encadré avec coins arrondis ; bandeau d'en-tête « Les évaluations », « Sagesse », « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p102_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1",
+      "instruction": "Compréhension : La mère dit à sa fille : « je te donnerai quelque chose qui te fera grand plaisir. » Que va-t-elle lui offrir ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "Lignes pointillées de réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p102_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- Christine a hésité avant d'ouvrir la boîte. (………………)",
+      "figureDesc": "Case pointillée arrondie pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p102_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

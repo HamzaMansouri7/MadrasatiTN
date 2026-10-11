@@ -1,0 +1,161 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 74,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Épreuve de français : compréhension de l'écrit (suite) et activités réflexives sur la langue (lexique, grammaire) – thème : l'internet. La page ne relève pas des mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Donner un titre convenable au texte.",
+      "body": "Donner un titre convenable au texte. (2pts) ........................................",
+      "figureDesc": "Ligne en pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p074_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Comment l'usage intense d'internet baisse-t-il les capacités d'apprentissage ?",
+      "body": "Comment l'usage intense d'internet baisse-t-il les capacités d'apprentissage ? (2pts)",
+      "figureDesc": "Deux lignes en pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p074_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.1.a",
+      "instruction": "Trouve dans le texte le synonyme de : énorme. Trouve dans le texte l'antonyme de : difficile.",
+      "body": "II. ACTIVITES REFLEXIVES SUR LA LANGUE (18 pts). 1. Lexique. a) - Trouve dans le texte le synonyme de : énorme = ................... (0,5pt). - Trouve dans le texte l'antonyme de : difficile ≠ ................... (0,5pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p074_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.1.b",
+      "instruction": "Complète le tableau suivant :",
+      "body": "Complète le tableau suivant : (1pt). Colonnes : Le mot | L'antonyme (contraire) | Le préfixe utilisé. Ligne : limité | ........ | ........",
+      "figureDesc": "Tableau à 3 colonnes (Le mot, L'antonyme (contraire), Le préfixe utilisé) et une ligne avec le mot « limité » ; les deux autres cases sont à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p074_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.1.c",
+      "instruction": "Relève du texte deux mots en relation avec le thème : « L'internet »",
+      "body": "Relève du texte deux mots en relation avec le thème : « L'internet » (1pt). ................... ← L'internet → ...................",
+      "figureDesc": "Schéma : cadre central « L'internet » avec deux flèches vers des pointillés à gauche et à droite.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p074_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.2.a",
+      "instruction": "Transforme la phrase suivante à la forme interrogative :",
+      "body": "2. Grammaire (6pts). a) Transforme la phrase suivante à la forme interrogative : (1 pt) - Les élèves cherchent des documents sur le web. ........................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p074_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.2.b",
+      "instruction": "Remplace le complément d'objet direct dans la phrase suivante par un pronom convenable :",
+      "body": "- Les jeunes adorent les jeux en ligne. ........................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p074_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.2.c",
+      "instruction": "Souligne le complément de lieu (CCL) et encadre le complément de manière (CCM) dans la phrase suivante :",
+      "body": "- Les gens se connectent librement au cybercafé. ........................ (1 pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p074_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u5",
+    "confidence": 0.22
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une épreuve de français complète (compréhension de l'écrit, lexique, grammaire : interrogation, pronom COD, CCL/CCM) sur le thème de l'internet, qui couvre plusieurs notions et ne correspond clairement à aucun module officiel unique (le module 2 sur les médias ou le module 4 sur les COD ne sont que partiellement concernés).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : l'internet",
+    "skill": "Comprendre un texte sur l'internet, puis exploiter lexique (synonyme, antonyme, préfixe, champ lexical) et grammaire (forme interrogative, pronom COD, compléments circonstanciels).",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "schema_tableau",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "internet",
+      "compréhension de l'écrit",
+      "antonyme et préfixe",
+      "forme interrogative",
+      "pronom COD",
+      "complément circonstanciel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'épreuve notée en deux volets (compréhension puis réflexion sur la langue) autour d'un thème actuel, avec items courts barémés réutilisables : titre du texte, tableau d'antonymes à préfixe, champ lexical en étoile, transformation de phrases et analyse des compléments.",
+    "themeGroup": "Internet et technologies"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

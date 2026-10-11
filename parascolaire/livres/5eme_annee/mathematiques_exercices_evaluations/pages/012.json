@@ -1,0 +1,104 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 12,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الدَّرس 7 : أُوظِّفُ القِسمَةَ على الأعداد الصَّحيحة الطَّبيعيَّة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَجْرِ العَمَلِيَّاتِ التَّالِيَةَ:",
+      "body": "* 3450 : 6 = ...............\n* 2067 : 3 = ...............\n* ........... + ........... x 5 = 1319\n* 8124 : 4 = ...............\n* 8424 : 7 = ...............\n* ........... + ........... x 8 = 2665",
+      "figureDesc": "Six opérations en deux colonnes séparées par un trait vertical, avec des pointillés à compléter.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p012_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "للعَمِّ طَاهِرٍ قِطْعَةُ أَرْضٍ قِيسَ مِسَاحَتُهَا 17280 م² قَسَّمَهَا إِلَى 4 ضَيْعَاتٍ مُتَقَابِسَةٍ غَرَسَ كُلَّ ضَيْعَةٍ بِنَبَاتِ مُثْمِرٍ كَمَا يُبَيِّنُهُ الجَدْوَلُ.",
+      "body": "* خَصَّصَ العَمُّ طَاهِرٌ لِكُلِّ نَبْتَةٍ 9 م². فَمَا هُوَ عَدَدُ النَّبْتَاتِ الَّتِي غَرَسَهَا العَمُّ طَاهِرٌ بِكُلِّ ضَيْعَةٍ؟\n(سطور فارغة للحل)",
+      "figureDesc": "Tableau: الضَّيْعَة ① ② ③ ④ ؛ الشَّجَر: تُفَّاح، إِجَّاص، خَوْخ، كُرُوم.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p012_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "شَرَى العَمُّ طَاهِرٌ نَبْتَةَ الكُرُومِ بِـ 750 مي وَشَرَى بَقِيَّةَ النَّبْتَاتِ بِضِعْفِ ثَمَنِ نَبْتَةِ الكُرُومِ.",
+      "body": "* مَاهُوَ ثَمَنُ شِرَاءِ النَّبْتَاتِ جَمِيعًا؟\n(سطور فارغة للحل)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p012_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "بَعْدَ ثَلَاثِ سِنِينَ أَثْمَرَتْ شُجَيْرَاتُ العَمِّ طَاهِرٍ فَكَانَ إِنْتَاجُهَا الجُمْلِيُّ كَمَا هُوَ مُبَيَّنٌ فِي الجَدْوَلِ.",
+      "body": "الثِّمَار: تُفَّاح، إِجَّاص، خَوْخ، كُرُوم\nالكُتْلَة بالكغ: 2430، 2250، 2652، 1680",
+      "figureDesc": "Tableau à deux lignes: الثِّمَار et الكُتْلَة بالكغ avec quatre colonnes de fruits.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p012_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.61
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la division euclidienne avec un diviseur à un chiffre (3450:6, 8124:4…) et des problèmes de partage de surface et de masses (kg), ce qui relève des divisions et masses de la Période 4, mais le chapitre précis (division à 2 chiffres) n'est pas clairement confirmé et la Période 3 reste possible.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division euclidienne et problèmes",
+    "skill": "Effectuer des divisions d'entiers naturels et les utiliser pour résoudre des problèmes de partage, de prix et de production.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "division",
+      "entiers naturels",
+      "problème",
+      "partage de terrain",
+      "verger",
+      "tableau de données"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un fil conducteur unique (un agriculteur qui divise son terrain en parcelles, plante des arbres fruitiers, les achète puis récolte) relie plusieurs problèmes : aire par plante, coût avec double prix, production lue dans un tableau, à compléter par des opérations à trous du type a + b × n.",
+    "themeGroup": "Division euclidienne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

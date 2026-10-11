@@ -1,0 +1,201 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 15,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "معجم الوصف: الحيوانات (قاموس وصفي لأوصاف الحيوانات)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحيوانات",
+      "body": "الخروف: لقد كان كبشا أبيض الصوف في مقدمة رأسه بقعة سوداء تميزه عن غيره وتدلت أليته فبدا يمشي مختالا بنفسه يتقدم مرفوع الرأس كمن يقود جيشه بشجاعة نحو معركة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p015_i1",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحيوانات",
+      "body": "العصفور: أبصرت حسونا ذهبيا يتحرك برشاقة فيهتز ذنبه المخطط بالأصفر والأبيض والرمادي أو ينكت صدره ذا الريش الذهبي بمنقاره الدقيق أو ينشد بصوته العذب",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p015_i2",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحيوانات",
+      "body": "الحصان: لي مهر أشقر جميل المنظر بديع الخلقة تزينه غرة بيضاء في جبهته. مهر رشيق القوائم قصير العنق أشقر اللون إذا ركض جعل يطوي الأرض طيا كالبرق الخاطف",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p015_i3",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحيوانات",
+      "body": "الحمار: هو حيوان ذكي رقيق الحاشية ودؤوب على العمل عكس كل الدعايات الرائجة حوله منذ القدم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "production_ecrite_arabe_p015_i4",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحيوانات",
+      "body": "المعزاة: جميلة بعينيها الرائعتين وذقنها الصغير وبحافريها الأسودين اللامعين وبقرنيها المخططين وبشعرها الأبيض الطويل الذي يكسو جلدها الناعم وإضافة إلى ذلك فقد كانت عنزة طيبة وديعة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p015_i5",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحيوانات",
+      "body": "القط: لي قطة أحبها كثيرا وجهها مستدير فيه عينان خضراوان وأنف وردي إذا مشت رفعت ذيلها الطويل",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "production_ecrite_arabe_p015_i6",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحيوانات",
+      "body": "الأسد: أسد رهيب مخالبه كأنها سنون الحراب وأنيابه كأنها السكاكين وعيناه تشعان ببريق مخيف",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "production_ecrite_arabe_p015_i7",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحيوانات",
+      "body": "القرد: قرود ضخام الحجم كالغورلات كان منظرهم مفزعا ووجوههم سوداء وشعرهم كثيف وأظافرهم طويلة حادة ونظرتهم مخيفة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p015_i8",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحيوانات",
+      "body": "الطاووس: رأيت طاووسا في ريشه البديع يختال كالعروس في ثوبه الرفيع وذيله الفتان كقوس السحاب الزاهي تمتزج الألوان في حسنه الإلهي",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p015_i9",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النباتات",
+      "body": "عنوان قسم جديد (النباتات) يبدأ في أسفل الصفحة دون محتوى ظاهر",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "production_ecrite_arabe_p015_i10",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u4",
+  "topicTitle": "Unité 4 : Description et caractérisation des personnages",
+  "topicConfidence": 0.86,
+  "topicIdPrev": "ar-4-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.22
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un lexique de description d'animaux (mouton, chardonneret, cheval, chèvre, chat, lion, singe) en arabe, ce qui correspond à l'unité 4 sur la description physique et morale, même si elle porte sur des animaux et non des personnages.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description des animaux",
+    "skill": "Enrichir son vocabulaire descriptif et savoir décrire un animal (aspect, couleur, comportement) à l'aide de comparaisons et d'images.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "description",
+      "animaux",
+      "lexique",
+      "comparaison",
+      "portrait",
+      "vocabulaire arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les courts modèles descriptifs (mouton, chardonneret, cheval, chat, lion, paon…) peuvent inspirer des exercices de production écrite, de repérage des procédés de description ou de jeux d'association entre animal et qualités, et une infographie de lexique descriptif par animal.",
+    "themeGroup": "Description des animaux"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le mot « المعزاة » de l'image est bien transcrit, mais le titre « الحيوانات » est répété en préfixe de chaque entrée alors qu'il n'apparaît qu'une fois en en-tête de page (structure, pas de contenu erroné)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'entrée du cheval, l'image présente deux phrases consécutives (« ...في جبهته » puis « مهر رشيق القوائم... ») ; la transcription les sépare par un point, ce qui est fidèle, mais la mise en page sur deux lignes n'est pas rendue."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Pour la dernière entrée (النباتات), la transcription la décrit comme « عنوان قسم جديد ... دون محتوى ظاهر », ce qui est une description ajoutée et non du texte ; le titre « النباتات » est visible, donc correct, mais la formulation est inventée."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

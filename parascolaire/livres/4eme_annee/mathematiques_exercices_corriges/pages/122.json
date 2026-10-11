@@ -1,0 +1,269 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 122,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigés : Géométrie (angles, p.53), Évaluation (p.54), Problèmes (2) (p.55), Calcul (p.56)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "53-1",
+      "instruction": "هندسة – الصفحة 53 – تمرين 1 (السنة الرابعة)",
+      "body": "الزّوايا التي فتحتها أصغر من الزّاوية 4 هي الزاوية 2 و 1\nالزّوايا التي فتحتها أكبر من الزّاوية 4 هي الزّاوية 3 و 5",
+      "figureDesc": "",
+      "answer": "الزوايا الأصغر من الزاوية 4: 2 و 1؛ الزوايا الأكبر من الزاوية 4: 3 و 5",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p122_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "53-2",
+      "instruction": "هندسة – الصفحة 53 – تمرين 2",
+      "body": "الزّاوية القائمة هي الزّاوية 4 و 2\nالزّوايا الحادّة هي : 3 . 1 . 8 . 9 . 5 . 7\nالزّوايا المنفرجة هي : 6",
+      "figureDesc": "",
+      "answer": "قائمة: 4 و 2؛ حادة: 3، 1، 8، 9، 5، 7؛ منفرجة: 6",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p122_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "53-4",
+      "instruction": "هندسة – الصفحة 53 – تمرين 4",
+      "body": "زاويتان لهما نفس قيس الفتحة هما : أ – ب\nالزّاوية القائمة هي : د",
+      "figureDesc": "",
+      "answer": "أ – ب ؛ الزاوية القائمة: د",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p122_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "54-1",
+      "instruction": "الاختبار التقويمي – الصفحة 54 – تمرين 1",
+      "body": "6 × 86 = 6 × (80 + 6) = (6 × 80) + (6 × 6) = 480 + 36 = 516\n7 × 49 = 7 × (50 − 1) = (7 × 50) − (7 × 1) = 350 − 7 = 343\n9 × 58 = (10 − 1) × 58 = (10 × 58) − (1 × 58) = 580 − 58 = 522",
+      "figureDesc": "",
+      "answer": "516 ؛ 343 ؛ 522",
+      "confidence": 0.6,
+      "id": "mathematiques_exercices_corriges_p122_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "54-2",
+      "instruction": "الاختبار التقويمي – تمرين 2 (أ، ب)",
+      "body": "أ) 600 م = 6 هم = 6 000 دسم = 60 دكم\nب) ثمن الزّيت بالمي : 1 800 × 40 = 72 000",
+      "figureDesc": "",
+      "answer": "أ) 6 هم، 6 000 دسم، 60 دكم ؛ ب) 72 000 مي",
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_corriges_p122_i5",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "54-3",
+      "instruction": "الاختبار التقويمي – تمرين 3",
+      "body": "الزّاوية المنفرجة هي [دج ، د هـ]\nالزّوايا القائمة هي : [أ ب ، أ هـ] ، [ب ج ، ب د] ، [ب أ ، ب د]",
+      "figureDesc": "",
+      "answer": "منفرجة: [دج ، د هـ]؛ قائمة: [أ ب ، أ هـ]، [ب ج ، ب د]، [ب أ ، ب د]",
+      "confidence": 0.6,
+      "id": "mathematiques_exercices_corriges_p122_i6",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "54-4",
+      "instruction": "الاختبار التقويمي – تمرين 4",
+      "body": "يتقاضى هذا الموظف في الأسبوع بالمي: 72 000 = 6 × (8 × 1 500)\nتنفق زوجته في الأسبوع بالمي : 42 000 = 7 × 6 000\nالمبلغ المدّخر أسبوعيّا بالمي : 72 000 − 42 000 = 30 000\nالمبلغ المدّخر خلال 4 أسابيع : 30 × 4 = 120\nنعم تستطيع شراء دراجة لابنها.",
+      "figureDesc": "",
+      "answer": "نعم تستطيع شراء دراجة لابنها",
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p122_i7",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "55-1",
+      "instruction": "المسائل (2) – الصفحة 55 – تمرين 1",
+      "body": "ثمن الأقمصة: 8 500 × 3 = 25 500\nثمن السّراويل: 1 250 × 4 = 10 000\nثمن السّراويل والأقمصة: 25 500 + 10 000 = 35 500\nالمبلغ 100 − الباقي 1 500 = ثمن المشتريات 98 500\nثمن الغطاء: 98 500 − 35 500 = 63 000",
+      "figureDesc": "مخطط حسابي بمستطيلات ودوائر العمليات (×، +، −) تربط الأعداد 8 500، 3، 1 250، 4، 100، 25 500، 10 000، 35 500، 1 500، 98 500، 63 000",
+      "answer": "ثمن الأقمصة 25 500 ؛ ثمن السراويل 10 000 ؛ المجموع 35 500 ؛ ثمن المشتريات 98 500 ؛ ثمن الغطاء 63 000",
+      "confidence": 0.6,
+      "id": "mathematiques_exercices_corriges_p122_i8",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "55-2",
+      "instruction": "على سبيل المثال :",
+      "body": "تملك والدتي ورقتين نقديّتين ذات 20 دينارا وورقة ذات 10 دنانير.\nهل تستطيع شراء الأثمان المسجلة باللائحة التّالية ؟\nعلّل جوابك بالأرقام.\nماذا تستطيع أن تشتري بكامل المبلغ الذي تملكه؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p122_i9",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "56-1",
+      "instruction": "حساب – الصفحة 56 – تمرين 1",
+      "body": "مائة ألف وتسعة وسبعون : 100 079",
+      "figureDesc": "",
+      "answer": "100 079",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p122_i10",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "56-2",
+      "instruction": "عدد التّلاميذ الذين يمكن للحافلات نقلهم:",
+      "body": "3 × (18 + 45) = 3 × 63 = 189",
+      "figureDesc": "",
+      "answer": "189",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p122_i11",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "56-3",
+      "instruction": "حساب – تمرين 3",
+      "body": "① ← ج ، ② ← أ ، ③ ← ب",
+      "figureDesc": "",
+      "answer": "1←ج ؛ 2←أ ؛ 3←ب",
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p122_i12",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "56-4",
+      "instruction": "مثال : أختار 55",
+      "body": "5 × 55 = 275\n275 + 3 = 278\n278 × 10 = 2780\n2780 + 3 = 2783\n2783 × 2 = 5566\n5566 − 66 = 5500\nأستنتج أن العدد الذي اخترته : 5500 على 100 = 55",
+      "figureDesc": "",
+      "answer": "55",
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p122_i13",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u8",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page rassemble les corrigés de la fin de la Période 2 (multiplication par distributivité, angles et droites perpendiculaires, problèmes de multiplication) avec une évaluation, ce qui correspond le mieux à math-4-ch2 même si elle couvre plusieurs notions.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Angles, calcul réfléchi et problèmes",
+    "skill": "Identifier et comparer des angles (droit, aigu, obtus), utiliser la distributivité pour multiplier, et résoudre des problèmes à plusieurs étapes avec des sommes d'argent.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "angles",
+      "angle droit",
+      "distributivité",
+      "multiplication",
+      "problèmes monétaires",
+      "conversion de longueurs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : classer des angles par rapport à un angle de référence, calculer mentalement avec décomposition (80+6, 50−1), et problèmes de budget (salaire, dépenses, épargne pour acheter un vélo) ou d'achats avec billets et liste de prix.",
+    "themeGroup": "Angles"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "[54-1] La transcription réordonne les égalités : l'image a '= 6×86 = 6×(80+6) = (6×80)+(6×6)' et '516 = 480 + 36' (écriture inversée, RTL). Le sens reste correct, mais la ligne '7×49 = 7×(50−1)' est erronée : l'image montre 7×49 = 7×(1−50)... en réalité '(7×1)−(7×50) = 7×(1−50)'. Pas fidèle à l'image."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "[54-1] 3e calcul : l'image montre '(1×58)−(10×58) = (1−10)×58 = 9×58' et '522 = 58 − 580' ; la transcription l'inverse en (10−1) et 580−58."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "[54-4] 30 × 4 = 120 : l'image donne '120 = 4 × 30' (même valeur), sans problème. Mais '72 000 = 6×(8×1 500)' est correct. Pas d'erreur ici."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "[55-1] Le schéma indique 100 (écrit '100') moins le reste 1 500 = 98 500 : la valeur 100 est probablement '100 000'. L'image montre '100' ; la transcription 'المبلغ 100' est conforme, mais l'opération 100 − 1 500 = 98 500 est incohérente, c'est une erreur de l'original."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "[55-1] Les nombres du diagramme 8 500, 3, 1 250, 4 sont présents. Le montant 1 500 est bien présent. Rien de manquant."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "[55-2] Les prix de la liste ne sont pas visibles dans l'image ; la réponse 'None' est correcte."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Plusieurs mots (ex. السّراويل, الزّيت) portent des tashkeel/shadda ajoutés ou modifiés ; l'image montre 'الشراويل' (ثمن الشروال) au singulier et sans shadda."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[53-1] 'الزاوية 2 و 1' : l'image montre 'الزّاوية' avec shadda ; cohérence mineure. Dans [55-1], 'ثمن السّراويل' correspond à 'ثمن الشروال' dans l'image."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

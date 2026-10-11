@@ -1,0 +1,159 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 13,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "سلسلة تمارين الدعم في الرياضيات - الوحدة 4 - المستوى 6 (التناسبية، النسبة المئوية، الفائدة والتخفيض، الزوايا، المعين، سلم التصميم)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمم الجدولين التاليين أسفله (إن أمكن ذلك) :",
+      "body": "الجدول (1): كتلة الموز بـ kg: 1، 2، 5، 9 / الثمن بـ dh: 15، 30، (فارغ)، (فارغ). الجدول (2): كتلة الطماطم بـ kg: 1، 3، 6، 12 / الثمن بـ dh: 6، 14، (فارغ)، (فارغ). أ) ضع معامل التناسب لكل جدول إن أمكن ذلك، ثم حدد أسفل كل جدول ما إذا كان جدول تناسبية. ب) حدد حسب معطيات الجدول (1) ثمن 25kg من الموز.",
+      "figureDesc": "جدولان بخانات صفراء للعناوين، مع سطور منقطة أسفل كل جدول للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p013_i1",
+      "topicId": "math-6-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "وضع سمير مبلغا ماليا قدره 85 000 dh في بنك بسعر 5,2%، ثم حصل على فائدة من البنك بعد مرور سنة كاملة.",
+      "body": "أ) أحسب قيمة الفائدة السنوية بـ dh. ب) كم سيصبح المبلغ في حساب سمير بعد مرور سنة كاملة؟ ج) أتمم الجدول التالي من خلال المعطيات وما توصلت إليه من نتائج: الرأسمال، سعر الفائدة، الفائدة السنوية، المبلغ بعد مرور سنة كاملة.",
+      "figureDesc": "جدول من أربعة أعمدة بسطر فارغ للتعمير، وسطور منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p013_i2",
+      "topicId": "math-6-p3",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "قام بائع للملابس النسائية بتخفيض لجميع المنتوجات بنسبة 25%. أ) أتمم ملء الجدول التالي:",
+      "body": "المنتوج: حذاء، سروال، فستان، قبعة. الثمن قبل التخفيض بـ dh: 240، 180. نسبة التخفيض بـ %: 25 (للحذاء). مبلغ التخفيض بـ dh: 160 (للفستان). الثمن بعد التخفيض بـ dh: 45 (للقبعة).",
+      "figureDesc": "جدول بخانات خضراء للعناوين وخانات فارغة للتعمير",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p013_i3",
+      "topicId": "math-6-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لاحظ الشكلين ثم احسب بدون استعمال المنقلة ما يلي:",
+      "body": "أ) - قياس الزاوية EK̂F هو: ... - قياس الزاوية MÔN هو: ... ب) أكتب ما يناسب في كل حالة: \"متكاملتين\"، \"متتامتين\": - GK̂F و EK̂F زاويتان ... - MÔN و SÔN زاويتان ...",
+      "figureDesc": "الشكل 1: زاوية قائمة EKG مع نصف مستقيم KF، الزاوية FKG = 54° والزاوية EKF مجهولة. الشكل 2: مستقيم MS ونصف مستقيم ON، الزاوية NOS = 77° والزاوية MON مجهولة",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p013_i4",
+      "topicId": "math-6-p3",
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "ارسم زاوية DĤI قياسها 84°، ثم أنشئ باستعمال البركار والمسطرة المستقيم (d) منصفا لهذه الزاوية.",
+      "body": "أ) ضع نقطة A من المستقيم (d)، ثم استنتج قياس الزاويتين DĤA و AĤI. ماذا تستنتج؟ DĤA = ... AĤI = ... أستنتج: ...",
+      "figureDesc": "إطار فارغ للرسم",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p013_i5",
+      "topicId": "math-6-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "ارسم معينا PQRS حيث طول قطره الأكبر SQ=4cm وطول قطره الأصغر PR= 3cm.",
+      "body": "أ) طول أحد أضلاع هذا المعين هو: ...",
+      "figureDesc": "إطار فارغ للرسم",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p013_i6",
+      "topicId": "math-6-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "كتلة 520 cm³ من الزيت هي 468 g. أحسب الكتلة الحجمية للزيت.",
+      "body": "",
+      "figureDesc": "سطر منقط للإجابة",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p013_i7",
+      "topicId": "math-6-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "تمثل 1cm على تصميم مسافة حقيقية قدرها 15 000 cm.",
+      "body": "أ) أحسب سلم التصميم. ب) أتمم الجدول التالي: المسافات على التصميم بـ cm: 1، 2، ... / المسافات الحقيقية بـ cm: 15 000، ...، 180 000، ... / المسافات الحقيقية بـ m: 150، ...، 270.",
+      "figureDesc": "جدول بثلاثة أسطر وخانات فارغة للتعمير",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p013_i8",
+      "topicId": "math-6-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p3",
+  "topicTitle": "Période 3 : Proportionnalité, pourcentages, vitesse et aire du disque",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-p3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une série de soutien en mathématiques dont les exercices portent surtout sur la proportionnalité, les pourcentages, les intérêts, les réductions et l'échelle (Période 3). Elle contient aussi des angles, un losange et une masse volumique (Période 4 et autres), donc la page est mixte et la correspondance reste partielle.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Proportionnalité, pourcentages et angles",
+    "skill": "Appliquer la proportionnalité, les pourcentages (intérêt, réduction), les angles, le losange et l'échelle dans des situations variées.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "probleme"
+    ],
+    "keywords": [
+      "proportionnalité",
+      "pourcentage",
+      "intérêt",
+      "réduction",
+      "angles",
+      "losange",
+      "échelle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série variée de situations concrètes : tableaux à compléter en vérifiant d'abord s'ils sont proportionnels (prix au kilo avec un piège de non-proportionnalité), intérêt bancaire annuel, soldes en magasin, masse volumique, échelle de plan, constructions géométriques.",
+    "themeGroup": "Pourcentages et proportionnalité"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

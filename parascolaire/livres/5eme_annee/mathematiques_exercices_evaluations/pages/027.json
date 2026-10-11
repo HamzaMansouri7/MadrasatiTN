@@ -1,0 +1,101 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 27,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدَّرس 15: ارسم المستقيمات المتعامدة والمستقيمات المتوازية (ملاحظة : الصفحة تتناول محتوى الرياضيات رغم تصنيفها ضمن اللغة العربية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لَوِّنِ الشَّريطَ الَّذي لَهُ حافَّتانِ مُتَوازِيَتانِ.",
+      "body": "",
+      "figureDesc": "شريطان مرسومان: على اليسار شريط يتكون من مستقيمين أفقيين متوازيين يقطعهما مستقيمان مائلان متوازيان؛ على اليمين شبكة من مستقيمين أفقيين متوازيين ومستقيمين عموديين متوازيين يتقاطعان معهما.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p027_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ارْسُمِ الْمُسْتَقيمَ (م) يُوازي (ط) وَيَمُرُّ مِنْ \"د\". ارْسُمِ الْمُسْتَقيمَ (ع) عَمُودِيًّا عَلَى (ط) وَيَمُرُّ مِنْ \"د\".",
+      "body": "هَلْ (ع) عَمُودِيٌّ عَلَى (م)؟ ........................................",
+      "figureDesc": "مستقيم أفقي مسمى (ط) ونقطة \"د\" (علامة ×) تحته.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p027_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارْسُمْ مُسْتَقيمًا عَمُودِيًّا عَلَى (ص) يَمُرُّ مِنْ \"أ\" وَمُسْتَقيمًا عَمُودِيًّا عَلَى (ص) يَمُرُّ مِنْ \"ج\".",
+      "body": "مَا رَأْيُكَ فِي الْمُسْتَقيمَيْنِ اللَّذَيْنِ رَسَمْتَهُمَا؟ ........................................",
+      "figureDesc": "مستقيم أفقي مسمى (ص) عليه النقطة \"ج\" ونقطة \"أ\" (علامة ×) أسفله.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p027_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ارْسُمِ الْمُسْتَقيمَ الْمُوازِيَ لِـ(ص) وَيَمُرُّ مِنْ \"أ\" مُعْتَمِدًا التَّمرينَ السَّابِقَ.",
+      "body": "مَا نَوْعُ الرُّباعِيِّ الَّذي يُمَثِّلُهُ الرَّسْمُ؟ ........................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p027_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-5-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-5-m8",
+    "confidence": 0.17
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de géométrie (droites perpendiculaires et parallèles, construction d'un parallélogramme) ; elle se rattache le plus près à la Période 3 (parallélogramme et hauteurs), mais aucun chapitre ne porte explicitement sur les droites parallèles et perpendiculaires.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Droites perpendiculaires et parallèles",
+    "skill": "Tracer des droites perpendiculaires et parallèles à une droite donnée en passant par un point, et en déduire des propriétés.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "droites parallèles",
+      "droites perpendiculaires",
+      "tracé à l'équerre",
+      "quadrilatère",
+      "rectangle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement progressif d'exercices de tracé où le résultat d'un exercice sert de base au suivant (deux perpendiculaires à une même droite, donc parallèles, puis identification du quadrilatère formé), avec une question de conjecture en fin d'exercice et une première tâche de repérage de bandes à bords parallèles.",
+    "themeGroup": "Droites, médiatrice et bissectrice"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

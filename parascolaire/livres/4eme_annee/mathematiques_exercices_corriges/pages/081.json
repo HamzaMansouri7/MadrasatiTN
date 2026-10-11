@@ -1,0 +1,118 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 81,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "القسمة (2) – الأسبوع 21 : المضاعفات، القسمة الإقليدية (المقسوم، القاسم، الخارج، الباقي)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) أكمل ما يلي :",
+      "body": "العدد 42 هو مضاعف للعدد 6 لأنّ : 6 x 7 = 42\n- العدد 45 ليس مضاعفا للعدد 6 لكنّه محصور بين مضاعفين متتاليين له.\nأ) أكمل ما يلي : . x 6 > 45 > . x 6 .\n. + ( . x 6 ) = 45 .\nب) استعن بجدول المضاعفات لحساب الخارج والباقي في كلّ مما يلي :\n. + ( . x 7 ) = 65\n. + ( . x 9 ) = 83\n. + ( . x 6 ) = 38\n. + ( . x 8 ) = 74",
+      "figureDesc": "Les quatre égalités de la partie (ب) sont disposées sur deux colonnes séparées par un trait vertical.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p081_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "إذا كانت لفلاّحة 98 بيضة وأرادت وضعها في علب تسع كلّ واحدة 15 بيضة. فكم عدد العلب التي يمكن للفلاّحة ملؤها بالبيض؟ (استعن بجدول المضاعفات)",
+      "body": "إذا كانت لفلاّحة 98 بيضة وأرادت وضعها في علب تسع كلّ واحدة 15 بيضة. فكم عدد العلب التي يمكن للفلاّحة ملؤها بالبيض؟ (استعن بجدول المضاعفات)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p081_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أتمم الجدول :",
+      "body": "أعمدة الجدول : المقسوم | القاسم | الخارج | الباقي\nالسطر 1 : 10>5 ، 5 + (9 x 10) = 95\nالسطر 2 : 8>4 ، 4 + ( . x 8) = 108 ، الخارج: 13\nالسطر 3 : . > . ، . + ( . x 3) = 71",
+      "figureDesc": "Tableau à 4 colonnes (المقسوم، القاسم، الخارج، الباقي) et 3 lignes. Chaque ligne a une égalité à droite, avec l'inégalité encadrée. La valeur 13 est écrite dans la colonne الخارج de la ligne 2.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p081_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) ما هي كتلة الإجّاص الذي أخذها كلّ واحد؟ ب) إذا دفع الثّالث 4200 مي، فكم دفع الثاني؟",
+      "body": "اشترى 3 إخوة صندوقا من الإجّاص يزن 24 كغ. أخذ الأوّل ثُلث الكمّيّة وأخذ الثّاني 2 كغ أكثر من الأوّل، وأخذ الثّالث البقيّة. أ) ما هي كتلة الإجّاص الذي أخذها كلّ واحد؟ ب) إذا دفع الثّالث 4200 مي، فكم دفع الثاني؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p081_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "ما هو ثمن بيع الدّيك؟ ... ما هو ثمن المنديل الواحد؟",
+      "body": "باع فلاّح 25 كغ من الرمّان وديكا فتحصّل على ورقة مالية من فئة 20 د وقطعة نقدية ذات 1 د. إذا علمت أنّ ثمن الكغ الواحد من الرمّان بـ 650 مي. ما هو ثمن بيع الدّيك؟ اشترى هذا الفلاّح سمكا وقماشا فبقي له من النّقود 4000 مي. إذا علمت أنّ ثمن السّمك 6 دنانير فما هو ثمن القماش؟ اشترى بالباقي 5 مناديل. ما هو ثمن المنديل الواحد؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p081_i5",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch3",
+  "topicTitle": "Période 3 : Division euclidienne, fractions et périmètres",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.56
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les multiples et la division euclidienne (dividende, diviseur, quotient, reste) avec des problèmes d'application, ce qui correspond à la Période 3 : Division euclidienne.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    128
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Multiples et division euclidienne",
+    "skill": "Utiliser la table des multiples pour trouver le quotient et le reste d'une division euclidienne et résoudre des problèmes de partage.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "multiples",
+      "division euclidienne",
+      "dividende",
+      "diviseur",
+      "quotient",
+      "reste"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Encadrer un nombre entre deux multiples consécutifs, compléter l'égalité reste + (quotient × diviseur) et un tableau de divisions, avec des problèmes de la vie quotidienne (œufs en boîtes, partage de poires, achats et monnaie en millimes et dinars).",
+    "themeGroup": "Multiplication et multiples"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

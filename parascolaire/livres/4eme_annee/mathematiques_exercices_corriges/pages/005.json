@@ -1,0 +1,331 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 5,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "القطع النقدية من 1 مليم إلى 1 دينار - أنشطة تهيئية (الأسبوع 1)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الأسبوع 1",
+      "body": "القطع النقدية من 1 مليم إلى 1 دينار\nأنشطة تهييئية\n(رقم الصفحة: 2)",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p005_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمم مَلْءَ الجَدْوَلِ:",
+      "body": "قطع نقدية من فئة (الأعمدة من اليمين إلى اليسار): 1 مي | 2 مي | 5 مي | 10 مي | 20 مي | 50 مي | 100 مي | نصف دينار | 1 دينار | المجموع\nالسطر 1: 1 مي: [مظلل] | 2 مي: 2 | 5 مي: [مظلل] | 10 مي: 3 | 20 مي: [مظلل] | 50 مي: [مظلل] | 100 مي: 2 | نصف دينار: 1 | 1 دينار: [مظلل] | المجموع: 734 مي\nالسطر 2: 1 مي: 2 | 2 مي: [مظلل] | 5 مي: 2 | 10 مي: [مظلل] | 20 مي: 4 | 50 مي: 3 | 100 مي: [مظلل] | نصف دينار: 1 | 1 دينار: [فارغ] | المجموع: [فارغ]\nالسطر 3: 1 مي: [مظلل] | 2 مي: 4 | 5 مي: 5 | 10 مي: 3 | 20 مي: [مظلل] | 50 مي: 1 | 100 مي: 4 | نصف دينار: [مظلل] | 1 دينار: [مظلل] | المجموع: [فارغ]\nالسطر 4: كل الخانات فارغة | المجموع: 871 مي",
+      "figureDesc": "جدول من أربعة أسطر وعشرة أعمدة (فئات القطع النقدية من 1 مي إلى 1 دينار والمجموع)، بعض الخانات مظللة بالنقاط وبعضها فارغ للإتمام.",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p005_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "",
+      "body": "فَتَحْتُ حَصَّالَتِي فَأَعْطَيْتُ نِصْفَ مَا فِيهَا مِنَ الْمَالِ لأخِي وَابْتَعْتُ بالْبَاقِي قصّةً بـ 430 مي وَيَبْقَى لِي 20 مي. مَا هُوَ الْمَبْلَغُ الَّذِي كَانَ فِي الْحَصَّالَةِ قَبْلَ فَتْحِهَا ؟",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p005_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "",
+      "body": "لمهدي 900 مي ، اشترى 4 أزرار بـ 240 مي وخيطا بضعف ثمن الأزرار كلّها. كم مليما بقي له؟ هل يستطيع بالباقي شراء متر من الشّريطة إذا علمت أنّ ثمنه يساوي ثمن زرّين اثنين؟",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p005_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "",
+      "body": "يملك أنور نصف دينار و 6 قطع ذات 20 مي وهو مبلغ غير كاف لشراء قصّة. فبدأ يُوَفِّرُ كُلَّ يوم قطعة نقدية ذات 50 مي لمدّة أسبوع. وعند دفع ثمن القصّة وجد أنّ المبلغ الذي أصبح لديه يزيد بـ 80 مي عن ثمن القصّة.\nما هو ثمن القصّة التي اشتراها أنور؟",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p005_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "",
+      "body": "أراد أمين أن يوفّر مبلغا من المال فقرّر أن يجمعه بالطريقة التّالية :\nيضع في حصّالته مليما واحدا في اليوم الأوّل، ومليمَيْن في اليوم الثّاني و4 مليمات في اليوم الثّالث ثم 8 مليمات في اليوم الرّابع وهكذا...\nأ) كم يضع أمين في الحصّالة من مليم في اليوم الثّامن؟\nب) بعد كَمْ يَوْمٍ يَكُونُ أمين قد جمع 8 دنانير ؟",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p005_i6",
+      "topicId": "math-4-ch1",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.93
+    }
+  ],
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.93
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une activité de préparation de mathématiques sur la monnaie tunisienne (pièces de 1 millime à 1 dinar) avec des problèmes sur les sommes d'argent, ce qui correspond à la Période 1 (nombres à 5 et 6 chiffres, droites et monnaie).",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie tunisienne : millimes et dinars",
+    "skill": "Résoudre des problèmes de calcul avec les pièces de monnaie, de 1 millime à 1 dinar, en composant, décomposant et comparant des sommes.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "monnaie",
+      "millimes",
+      "dinar",
+      "problèmes à étapes",
+      "épargne",
+      "suite doublante"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations concrètes de la vie quotidienne (tirelire, achat d'une histoire, boutons et fil, épargne hebdomadaire, suite doublant chaque jour) et tableau de décomposition en pièces, réutilisables pour créer des problèmes de monnaie à difficulté progressive.",
+    "themeGroup": "Monnaie"
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 1 : « لحساب المجموع أو تفكيكه » est inventé ; absent de l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 1 : le tableau est absent (valeurs des cases : 734 مي, 871 مي, effectifs 1, 2, 3, 2 / 1, 3, 4, 2, 2 / 4, 1, 3, 5, 4, colonne المجموع, cases grisées). L'en-tête du tableau est réduit à une liste de fenêtres sans structure."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : en-tête du tableau « قطع نقدية من فئة » transcrit sous forme de phrase avec « : » ; l'ordre et la structure du tableau sont perdus."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex. 3 : « لِمَهْدِي » est vocalisé alors que l'image affiche « لمهدي » sans voyelles ; l'image porte « ثمن » et non « ثمنه » mais la transcription est correcte."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex. 2 : voyelles ajoutées (نِصْفَ → image : نصفَ ; لِأَخِي → image : لأخي ; وَابْتَعْتُ → image : وأَبْتَعْتُ) ; « وَابْتَعْتُ » devrait être « وَأَبْتَعْتُ »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex. 2 : « قِصَّةً بِـ 430 » correct, mais « وَبَقِيَ لِي » : l'image porte « وَيَبْقِي لِي » (sans changement majeur)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex. 3 : « اشترى » avec tashkeel absent est correct ; « الشّريطة » correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex. 4 : « يُوَفِّرُ كُلَّ » transcrit avec voyelles mais « يملك » sans ; l'image porte « يَمْلِكُ » (voyelles sur le ي) ; incohérence."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex. 5 : « مليمَيْن » est vocalisé, ce qui est conforme à l'image ; « جمع » et « يَكُونُ » restent plausibles."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.7,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Ex. 1 : la phrase « لحساب المجموع أو تفكيكه » est absente de l'image. Les intitulés des colonnes sont aussi transcrits comme une phrase, ce qui est faux."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Ex. 1 : le contenu du tableau n'est pas transcrit (colonnes المجموع, 1 دينار, نصف دينار, 100 مي, 50 مي, 20 مي, 10 مي, 5 مي, 2 مي, 1 مي sous l'en-tête « قطع نقديّة من فئة »). Les effectifs, les cases grisées et les totaux 734 مي et 871 مي ne sont pas restitués. Le figureDesc ne dit rien de précis sur les lignes 2 et 3."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex. 1, consigne : l'image porte l'impératif « أَتْمِمْ مَلْءَ الْجَدْوَلِ » ; la transcription écrit « أُتَمِّمُ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex. 2 : voyelles ajoutées là où l'image n'en a pas (نصفَ, لأخي). L'image porte « وأَبْتَعْتُ », pas « وَابْتَعْتُ ». L'image porte « وَيَبْقِي لِي », pas « وَبَقِيَ لِي »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex. 3 : « لمهدي » est sans voyelles dans l'image ; la transcription écrit « لِمَهْدِي ». Le mot « ثمنه » est correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex. 4 : « يملك » porte des voyelles dans l'image (يَمْلِكُ), alors que la transcription n'en a pas. Les shadda de « قصّة » et « نقديّة » sont omises."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex. 5 : la shadda de « الطّريقة » est omise."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَتْمِمْ مَلْءَ الْجَدْوَلِ:",
+      "body": "",
+      "figureDesc": "جدول عنوانه « قطع نقديّة من فئة ». الأعمدة من اليمين إلى اليسار: 1 مي، 2 مي، 5 مي، 10 مي، 20 مي، 50 مي، 100 مي، نصف دينار، 1 دينار، ثم عمود المجموع. السطر 1: 1 مي (خانة مظلّلة)، 2 مي: 2، 5 مي (مظلّلة)، 10 مي: 3، 20 مي (مظلّلة)، 50 مي (مظلّلة)، 100 مي: 2، نصف دينار: 1، 1 دينار (مظلّلة)، المجموع: 734 مي. السطر 2: 1 مي: 2، 2 مي (مظلّلة)، 5 مي: 2، 10 مي (مظلّلة)، 20 مي: 4، 50 مي: 3، 100 مي (مظلّلة)، نصف دينار: 1، 1 دينار (فارغة)، المجموع (فارغ). السطر 3: 1 مي (مظلّلة)، 2 مي: 4، 5 مي: 5، 10 مي: 3، 20 مي (مظلّلة)، 50 مي: 1، 100 مي: 4، نصف دينار (مظلّلة)، 1 دينار (مظلّلة)، المجموع (فارغ). السطر 4: كل الخانات فارغة، المجموع: 871 مي.",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "",
+      "body": "فَتَحْتُ حَصَّالَتِي فَأَعْطَيْتُ نصفَ مَا فِيهَا مِنَ الْمَالِ لأخي وأَبْتَعْتُ بِالْبَاقِي قِصَّةً بِـ 430 مي وَيَبْقِي لِي 20 مي. مَا هُوَ الْمَبْلَغُ الَّذِي كَانَ فِي الْحَصَّالَةِ قَبْلَ فَتْحِهَا ؟",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "",
+      "body": "لمهدي 900 مي ، اشترى 4 أزرار بـ 240 مي وخيطا بضعف ثمن الأزرار كلّها. كم مليما بقي له؟ هل يستطيع بالباقي شراء متر من الشّريطة إذا علمت أنّ ثمنه يساوي ثمن زرّين اثنين؟",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "",
+      "body": "يَمْلِكُ أنور نصف دينار و 6 قطع ذات 20 مي وهو مبلغ غير كاف لشراء قصّة. فبدأ يُوَفِّرُ كُلَّ يوم قطعة نقديّة ذات 50 مي لمدّة أسبوع. وعند دفع ثمن القصّة وجد أنّ المبلغ الذي أصبح لديه يزيد بـ 80 مي عن ثمن القصّة.\nما هو ثمن القصّة التي اشتراها أنور؟",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "",
+      "body": "أراد أمين أن يوفّر مبلغا من المال فقرّر أن يجمعه بالطّريقة التّالية :\nيضع في حصّالته مليما واحدا في اليوم الأوّل، ومليمَيْن في اليوم الثّاني و4 مليمات في اليوم الثّالث ثم 8 مليمات في اليوم الرّابع وهكذا ...\nأ) كم يضع أمين في الحصّالة من مليم في اليوم الثّامن؟\nب) بعد كَمْ يَوْمٍ يَكُونُ أمين قد جمع 8 دنانير ؟",
+      "figureDesc": "",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.93,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُتَمِّمُ مَلْءَ الْجَدْوَلِ:",
+      "body": "قطع نقديّة من فئة: 1 دينار، نصف دينار، 100 مي، 50 مي، 20 مي، 10 مي، 5 مي، 2 مي، 1 مي لحساب المجموع أو تفكيكه.",
+      "figureDesc": "جدول مكوّن من 4 أسطر يبيّن عدد القطع النقدية من كل فئة والمجموع بالمليم: السطر 1: المجموع 734 مي، السطر 4: المجموع 871 مي، مع بعض الخانات المظلّلة أو الفارغة للإتمام.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "math_solutions_4eme_sellami_p005_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "",
+      "body": "فَتَحْتُ حَصَّالَتِي فَأَعْطَيْتُ نِصْفَ مَا فِيهَا مِنَ الْمَالِ لِأَخِي وَابْتَعْتُ بِالْبَاقِي قِصَّةً بِـ 430 مي وَبَقِيَ لِي 20 مي. مَا هُوَ الْمَبْلَغُ الَّذِي كَانَ فِي الْحَصَّالَةِ قَبْلَ فَتْحِهَا ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "math_solutions_4eme_sellami_p005_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "",
+      "body": "لِمَهْدِي 900 مي ، اشترى 4 أزرار بـ 240 مي وخيطا بضعف ثمن الأزرار كلّها. كم مليما بقي له؟ هل يستطيع بالباقي شراء متر من الشّريطة إذا علمت أنّ ثمنه يساوي ثمن زرّين اثنين؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "math_solutions_4eme_sellami_p005_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "",
+      "body": "يملك أنور نصف دينار و 6 قطع ذات 20 مي وهو مبلغ غير كاف لشراء قصة. فبدأ يُوَفِّرُ كُلَّ يوم قطعة نقدية ذات 50 مي لمدّة أسبوع. وعند دفع ثمن القصة وجد أنّ المبلغ الذي أصبح لديه يزيد بـ 80 مي عن ثمن القصة.\nما هو ثمن القصة التي اشتراها أنور؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "math_solutions_4eme_sellami_p005_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "",
+      "body": "أراد أمين أن يوفّر مبلغا من المال فقرّر أن يجمعه بالطريقة التّالية :\nيضع في حصّالته مليما واحدا في اليوم الأوّل، ومليمَيْن في اليوم الثّاني و4 مليمات في اليوم الثّالث ثم 8 مليمات في اليوم الرّابع وهكذا ...\nأ) كم يضع أمين في الحصّالة من مليم في اليوم الثّامن؟\nب) بعد كَمْ يَوْمٍ يَكُونُ أمين قد جمع 8 دنانير ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "math_solutions_4eme_sellami_p005_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "linkStatus": "clean",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

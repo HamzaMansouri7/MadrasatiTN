@@ -1,0 +1,228 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 13,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تصريف الضمائر (معرفة الضمير) والإملاء – شبكة إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُعِيدُ كِتَابَةَ كُلِّ جُمْلَةٍ مَعَ الضَّمِيرِ الْمَذْكُورِ.",
+      "body": "أ / أُنْجِزُ الدُّرُوسَ بِانْتِظَامٍ.\n- (وَلَدَانِ يَتَكَلَّمَانِ) ........................................ الدُّرُوسَ بِانْتِظَامٍ.\nب / حَفِظَ الْقَصِيدَةَ الشِّعْرِيَّةَ.\n- (مَجْمُوعَةُ بَنَاتٍ غَائِبَاتٍ) ........................................ الْقَصِيدَةَ الشِّعْرِيَّةَ.\nج - إِسْتَقْبَلَ الرَّبِيعَ بِابْتِهَاجٍ.\n- (أُخَاطِبُ مَجْمُوعَةَ بَنَاتٍ) ........................................ الرَّبِيعَ بِابْتِهَاجٍ.",
+      "figureDesc": "معـ2ج في أعلى اليمين؛ مربع صغير للتقييم أمام كل بند (أ، ب، ج)؛ التنقيط في الهامش: 0,5 / 0,5 / 0,5 (بند لكل جملة)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p013_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "إِمْلَاءٌ: تُمْلَى الْفِقْرَةُ عَلَى الْمُتَعَلِّمِ كَمَا وَرَدَتْ فِي الْإِصْلَاحِ (ص 3).",
+      "body": "لَمَّا غَادَرَ شُكْ[......] الْمَدْرَسَةَ، رَاحَ يَعْ[......] مُسْرِعًا. إِنَّهُ يَشْعُرُ بِشَوْقٍ كَبِيرٍ لِرُؤْيَتِهِ عُصْفُورِهِ الصَّغِيرِ «كُو[......]». وَمَا كَادَ يَصِلُ إِلَى الْمَنْزِلِ حَتَّى التَـ[......] بِأُخْتِهِ فَذُ[......] عِنْدَ الْبَابِ وَعَلَى وَجْهِهَا عَلَامَاتُ التَّوَتُّرِ وَالْقَلَقِ. فَارْتَابَ فِي الْأَمْرِ، وَقَبْلَ أَنْ تَنْبِسَ الصَّغِيرَةُ بِكَلِمَةٍ تَرَكَهَا وَمَـ[......] يَجْـ[......] إِلَى الدَّاخِلِ وَقَدْ ذَهَبَتْ بِهِ الْهَوَاجِسُ إِلَى بَعِيدٍ وَظَنَّ أَنَّ أَمْرًا جَلَلًا قَدْ حَدَثَ. وَلَكِنَّهُ وَلَمَّا بَلَغَ الْمَكَانَ الَّذِي عَلَّقَ فِيهِ الْقَفَصَ، زَالَتْ كُلُّ مَخَاوِفِهِ وَانْشَرَحَ صَدْرُهُ وَسَ[......] عَائِدًا إِلَى أُخْتِهِ لِيَعْرِفَ سَبَبَ تَوَتُّرِهَا وَقَلَقِهَا...",
+      "figureDesc": "بعض الكلمات ناقصة (شُكْ، يَعْ، كُو، التَـ، فَذُ، وَمَـ، يَجْـ، وَسَ) يتبع كلًّا منها مربع ونقاط للتصحيح؛ على اليسار سلم تنقيط: 0 / 0,5 / 1,5 / 2 / 2,5",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p013_i2"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الجدول (المستويات × المعايير):\nمعايير الحد الأدنى: مع1أ | مع1ب | مع1ج | مع2أ | مع2ب ؛ معيار التميز: مع2ج\n- انعدام التملك (---): 0 | 0 | 0 | 0 | 0 ؛ مع2ج: 0\n- التملك دون الأدنى (--+): 0,5 | 0,5 | 0,5 | 0,5 | 0,5 ؛ مع2ج: 1\n- التملك الأدنى (++-): 1 | 1 | 1 | 1 | 1 ؛ مع2ج: 2\n- التملك الأقصى (+++): 1,5 | 1,5 | 1,5 | 1,5 | 1,5 ؛ مع2ج: 2,5\n\nالإِمْلَاءُ:\n- الرَّسْمُ السَّلِيمُ لِلْعَنَاصِرِ اللُّغَوِيَّةِ : 8\n- الْوُضُوحُ : 1\n- الْجَمَالِيَّةُ : 1\n- الْمَجْمُوعُ : 10 نِقَاط",
+      "figureDesc": "جدول إسناد الأعداد (يمين) وإطار تنقيط الإملاء (يسار)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p013_i3"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p5",
+    "confidence": 0.42
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation d'arabe (conjugaison des pronoms, dictée et barème de notation) qui ne correspond clairement à aucune des unités du programme, lesquelles portent sur des compétences de lecture et de production et non sur cette évaluation de langue.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison avec pronoms et dictée",
+    "skill": "Réécrire des phrases en accordant le verbe au pronom indiqué (dual, féminin pluriel) et orthographier correctement des mots lors d'une dictée.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "dictee",
+      "autre"
+    ],
+    "keywords": [
+      "pronoms personnels",
+      "conjugaison",
+      "accord du verbe",
+      "dictée",
+      "orthographe",
+      "barème de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : transformer une phrase en changeant le sujet (dual, féminin pluriel), dictée à trous sur les lettres finales difficiles dans un récit court, et grille de notation de la dictée (orthographe, lisibilité, présentation).",
+    "themeGroup": "Dictée"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau « جَدْوَلُ إِسْنَادِ الْأَعْدَادِ » est réduit à la seule case Imlāʾ. Manquent les niveaux de maîtrise (انعدام التملك ---, التملك دون الأدنى --+, التملك الأدنى ++-, التملك الأقصى +++), les critères minimaux (مع1أ, مع1ب, مع1ج, مع2أ, مع2ب), le critère de perfection (مع2ج) et toutes les valeurs : 0 ; 0,5 et 1 ; 1 et 2 ; 1,5 et 2,5."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les barèmes en marge sont absents : 0,5 / 0,5 / 0,5 pour les trois phrases de l'exercice 6, et 0 ; 0,5 ; 1,5 ; 2 ; 2,5 pour la dictée."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les indications « معـ2ج » en haut à droite de l'exercice 6 et les cases à cocher devant chaque item ne sont pas transcrites."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أُنْجِزُ » est transcrit alors que l'image porte « أَنْجِزُ » (« أنجز » avec un fatha sur l'alif)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans la dictée, les cases vides de la transcription sont notées « [......] », mais l'image montre une case encadrée suivie de points. Les fragments sont : شُكْ, يَعْ, كُو, التَـ, فَذُ, وَمَـ, يَجْـ, وَسَ. Le « فَذُ » de l'image est « فَذ » avec une vocalisation différente."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« حَفِظَ الْقَصِيدَةَ » : l'image porte « حِفْظُ الْقَصِيدَةِ » (حفظ القصيدة الشعرية, nom verbal). La vocalisation est donc fausse."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« إِسْتَقْبَلَ الرَّبِيعَ » : l'image porte « إِسْتَقْبِلَ » (« استقبل الربيع » avec un autre vocalisme). La voyelle est à vérifier."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau « جَدْوَلُ إِسْنَادِ الْأَعْدَادِ » n'est pas transcrit dans le body. Il n'est résumé que dans figureDesc, alors que l'image montre une grille complète : niveaux de maîtrise, critères مع1أ, مع1ب, مع1ج, مع2أ, مع2ب, puis معيار التميز مع2ج, avec toutes les valeurs (0 ; 0,5 et 1 ; 1 et 2 ; 1,5 et 2,5)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les barèmes en marge (0,5 en face de chacune des trois phrases de l'exercice 6 ; 0 / 0,5 / 1,5 / 2 / 2,5 pour la dictée) et les cases à cocher devant chaque item (أ, ب, ج) ne figurent pas dans le body. Ils sont seulement évoqués dans figureDesc. L'indication « معـ2ج » en haut à droite de l'exercice 6 y est bien."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُعِيدُ كِتَابَةَ كُلِّ جُمْلَةٍ مَعَ الضَّمِيرِ الْمَذْكُورِ.",
+      "body": "أ / أُنْجِزُ الدُّرُوسَ بِانْتِظَامٍ.\n- (وَلَدَانِ يَتَكَلَّمَانِ) ........................................ الدُّرُوسَ بِانْتِظَامٍ.\nب / حَفِظَ الْقَصِيدَةَ الشِّعْرِيَّةَ.\n- (مَجْمُوعَةُ بَنَاتٍ غَائِبَاتٍ) ........................................ الْقَصِيدَةَ الشِّعْرِيَّةَ.\nج - إِسْتَقْبَلَ الرَّبِيعَ بِابْتِهَاجٍ.\n- (أُخَاطِبُ مَجْمُوعَةَ بَنَاتٍ) ........................................ الرَّبِيعَ بِابْتِهَاجٍ.",
+      "figureDesc": "معـ2ج في أعلى اليمين؛ مربع صغير للتقييم أمام كل بند (أ، ب، ج)؛ التنقيط في الهامش: 0,5 / 0,5 / 0,5 (بند لكل جملة)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p013_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "إِمْلَاءٌ: تُمْلَى الْفِقْرَةُ عَلَى الْمُتَعَلِّمِ كَمَا وَرَدَتْ فِي الْإِصْلَاحِ (ص 3).",
+      "body": "لَمَّا غَادَرَ شُكْ[......] الْمَدْرَسَةَ، رَاحَ يَعْ[......] مُسْرِعًا. إِنَّهُ يَشْعُرُ بِشَوْقٍ كَبِيرٍ لِرُؤْيَتِهِ عُصْفُورِهِ الصَّغِيرِ «كُو[......]». وَمَا كَادَ يَصِلُ إِلَى الْمَنْزِلِ حَتَّى التَـ[......] بِأُخْتِهِ فَذُ[......] عِنْدَ الْبَابِ وَعَلَى وَجْهِهَا عَلَامَاتُ التَّوَتُّرِ وَالْقَلَقِ. فَارْتَابَ فِي الْأَمْرِ، وَقَبْلَ أَنْ تَنْبِسَ الصَّغِيرَةُ بِكَلِمَةٍ تَرَكَهَا وَمَـ[......] يَجْـ[......] إِلَى الدَّاخِلِ وَقَدْ ذَهَبَتْ بِهِ الْهَوَاجِسُ إِلَى بَعِيدٍ وَظَنَّ أَنَّ أَمْرًا جَلَلًا قَدْ حَدَثَ. وَلَكِنَّهُ وَلَمَّا بَلَغَ الْمَكَانَ الَّذِي عَلَّقَ فِيهِ الْقَفَصَ، زَالَتْ كُلُّ مَخَاوِفِهِ وَانْشَرَحَ صَدْرُهُ وَسَ[......] عَائِدًا إِلَى أُخْتِهِ لِيَعْرِفَ سَبَبَ تَوَتُّرِهَا وَقَلَقِهَا...",
+      "figureDesc": "بعض الكلمات ناقصة (شُكْ، يَعْ، كُو، التَـ، فَذُ، وَمَـ، يَجْـ، وَسَ) يتبع كلًّا منها مربع ونقاط للتصحيح؛ على اليسار سلم تنقيط: 0 / 0,5 / 1,5 / 2 / 2,5",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p013_i2"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الجدول (المستويات × المعايير):\nمعايير الحد الأدنى: مع1أ | مع1ب | مع1ج | مع2أ | مع2ب ؛ معيار التميز: مع2ج\n- انعدام التملك (---): 0 | 0 | 0 | 0 | 0 ؛ مع2ج: 0\n- التملك دون الأدنى (--+): 0,5 | 0,5 | 0,5 | 0,5 | 0,5 ؛ مع2ج: 1\n- التملك الأدنى (++-): 1 | 1 | 1 | 1 | 1 ؛ مع2ج: 2\n- التملك الأقصى (+++): 1,5 | 1,5 | 1,5 | 1,5 | 1,5 ؛ مع2ج: 2,5\n\nالإِمْلَاءُ:\n- الرَّسْمُ السَّلِيمُ لِلْعَنَاصِرِ اللُّغَوِيَّةِ : 8\n- الْوُضُوحُ : 1\n- الْجَمَالِيَّةُ : 1\n- الْمَجْمُوعُ : 10 نِقَاط",
+      "figureDesc": "جدول إسناد الأعداد (يمين) وإطار تنقيط الإملاء (يسار)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p013_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُعِيدُ كِتَابَةَ كُلِّ جُمْلَةٍ مَعَ الضَّمِيرِ الْمَذْكُورِ.",
+      "body": "أ / أُنْجِزُ الدُّرُوسَ بِانْتِظَامٍ.\n- (وَلَدَانِ يَتَكَلَّمَانِ) ........................................ الدُّرُوسَ بِانْتِظَامٍ.\nب / حَفِظَ الْقَصِيدَةَ الشِّعْرِيَّةَ.\n- (مَجْمُوعَةُ بَنَاتٍ غَائِبَاتٍ) ........................................ الْقَصِيدَةَ الشِّعْرِيَّةَ.\nج - إِسْتَقْبَلَ الرَّبِيعَ بِابْتِهَاجٍ.\n- (أُخَاطِبُ مَجْمُوعَةَ بَنَاتٍ) ........................................ الرَّبِيعَ بِابْتِهَاجٍ.",
+      "figureDesc": "ثلاثة مربعات صغيرة للتقييم بجانب كل جملة؛ سلم التنقيط 0,5 لكل جملة (معيار معـ2ج)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_3eme_examens_p013_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "إِمْلَاءٌ: تُمْلَى الْفِقْرَةُ عَلَى الْمُتَعَلِّمِ كَمَا وَرَدَتْ فِي الْإِصْلَاحِ (ص 3).",
+      "body": "لَمَّا غَادَرَ شُكْ[......] الْمَدْرَسَةَ، رَاحَ يَعْ[......] مُسْرِعًا. إِنَّهُ يَشْعُرُ بِشَوْقٍ كَبِيرٍ لِرُؤْيَةِ عُصْفُورِهِ الصَّغِيرِ «كُو[......]». وَمَا كَادَ يَصِلُ إِلَى الْمَنْزِلِ حَتَّى التَـ[......] بِأُخْتِهِ فَذُ[......] عِنْدَ الْبَابِ وَعَلَى وَجْهِهَا عَلَامَاتُ التَّوَتُّرِ وَالْقَلَقِ. فَارْتَابَ فِي الْأَمْرِ، وَقَبْلَ أَنْ تَنْبِسَ الصَّغِيرَةُ بِكَلِمَةٍ تَرَكَهَا وَمَـ[......] يَجْـ[......] إِلَى الدَّاخِلِ وَقَدْ ذَهَبَتْ بِهِ الْهَوَاجِسُ إِلَى بَعِيدٍ وَظَنَّ أَنَّ أَمْرًا جَلَلًا قَدْ حَدَثَ. وَلَكِنَّهُ وَلَمَّا بَلَغَ الْمَكَانَ الَّذِي عَلَّقَ فِيهِ الْقَفَصَ، زَالَتْ كُلُّ مَخَاوِفِهِ وَانْشَرَحَ صَدْرُهُ وَسَ[......] عَائِدًا إِلَى أُخْتِهِ لِيَعْرِفَ سَبَبَ تَوَتُّرِهَا وَقَلَقِهَا...",
+      "figureDesc": "بعض الكلمات ناقصة مع مربعات ونقاط للتصحيح؛ على اليسار سلم تنقيط (0 / 0,5 / 1,5 / 2 / 2,5)",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_3eme_examens_p013_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الإِمْلَاءُ:\n- الرَّسْمُ السَّلِيمُ لِلْعَنَاصِرِ اللُّغَوِيَّةِ: 8\n- الْوُضُوحُ: 1\n- الْجَمَالِيَّةُ: 1\n- الْمَجْمُوعُ: 10 نِقَاط",
+      "figureDesc": "جدول: المستويات (انعدام التملك 0؛ التملك دون الأدنى 0,5 لمعايير معـ1أ، معـ1ب، معـ1ج، معـ2أ، معـ2ب و1 لمعـ2ج؛ التملك الأدنى 1 ولمعـ2ج 2؛ التملك الأقصى 1,5 ولمعـ2ج 2,5) ومعيار التميز معـ2ج",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_3eme_examens_p013_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

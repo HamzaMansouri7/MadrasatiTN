@@ -2,7 +2,7 @@ import os, shutil, glob, json
 from pathlib import Path
 
 P = Path('parascolaire')
-SOURCES_DIR = P / '_original_frozen/_sources'
+SOURCES_DIR = P / '../parascolaire_frozen/_sources'
 SOURCES_DIR.mkdir(exist_ok=True)
 
 # Move grade folders into _sources
@@ -15,13 +15,13 @@ for g in grade_dirs:
         print(f"Moved {src_dir} -> {dest_dir}")
 
 # Update book.json sourceFile paths
-for bj in sorted(P.glob('_original_frozen/_archive/*/book.json')):
+for bj in sorted(P.glob('../parascolaire_frozen/_archive/*/book.json')):
     data = json.load(open(bj, encoding='utf-8'))
     sf = data.get('sourceFile', '')
-    if sf and not sf.startswith('_original_frozen/_sources/'):
-        data['sourceFile'] = f"_original_frozen/_sources/{sf}"
+    if sf and not sf.startswith('../parascolaire_frozen/_sources/'):
+        data['sourceFile'] = f"parascolaire_frozen/_sources/{sf}"
         with open(bj, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         print(f"Updated sourceFile in {bj.parent.name}: {data['sourceFile']}")
 
-print("Archive complete! All original PDFs safely stored in parascolaire/_original_frozen/_sources/.")
+print("Archive complete! All original PDFs safely stored in parascolaire_frozen/_sources/.")

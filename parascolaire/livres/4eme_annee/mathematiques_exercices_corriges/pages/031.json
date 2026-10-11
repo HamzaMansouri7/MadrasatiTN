@@ -1,0 +1,110 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 31,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 7 : اختبار تقويمي للتثبيت والدعم (مقارنة وجمع وطرح الأعداد، قيس الأطوال، المسلك بالأسهم، مسألة بمخطط)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع مكان النّقط أعدادا مناسبة :",
+      "body": "8 625 > ........ + 3 909 + 4 715\n........ = 800 - ........ = 720 - 980",
+      "figureDesc": "Cadres contenant des expressions numériques avec des pointillés à compléter : une inégalité et une double égalité.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p031_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هو قيس طول المسافة الفاصلة بين السّوق والمدرسة؟",
+      "body": "المسجد ↔ المدرسة : 3 هم و 7 م ؛ السوق ↔ الدار : 2 هم و 3 دكم ؛ المدرسة ↔ السوق : ؟ ؛ المسافة الجملية من المسجد إلى الدار : 79 دكم.",
+      "figureDesc": "Schéma horizontal : mosquée, école, marché, maison, avec flèches de distances : 3 hm et 7 m (mosquée-école), ? (école-marché), 2 hm et 3 dam (marché-maison), et une flèche totale de 79 dam.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p031_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارسم مسلكا ينطلق من العقدة \"أ\" ومعبّرا عنه بالأسهم التّالية :",
+      "body": "↑ → ↑ ← ← ↓ ↓ ↓ ← ←",
+      "figureDesc": "Quadrillage de 7 colonnes sur 5 lignes ; le nœud « أ » est marqué en haut, à la 2e colonne depuis la droite. Suite de 10 flèches dans des cases.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p031_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أكمل المخطّط التّالي واستعن به للبحث عن مقدار أجرة الإصلاح.",
+      "body": "أصلح عامل دراجته النّارية فأبدل الإطار الهوائي بـ 2 800 مي والقرص المسنّن المثبت في العجلة الخلفيّة بـ 4 300 مي. اشترى أيضا لترين من البنزين بـ 600 مي اللتر. دفع لصاحب الورشة 5 قطع نقدية من فئة 1 دينار و 9 قطع من فئة النّصف دينار.",
+      "figureDesc": "Schéma à accolades : أجرة الإصلاح (?), بنزين (لتر 1 + لتر 1, 600 مي), ثمن القرص (4300 مي), ثمن إطار هوائي (... مي) ; en dessous, pièces : ... قطع de 1 dinar et ... قطع de 1/2 dinar ; segment gradué avec 500 مي.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p031_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.25
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de consolidation (semaine 7) en mathématiques portant sur comparaison, addition/soustraction d'entiers, mesures de longueur, parcours fléchés et problème avec schéma ; elle correspond le mieux à la Période 1 (nombres, monnaie) mais couvre plusieurs notions, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    116
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision: nombres, longueurs et problèmes",
+    "skill": "Comparer, additionner et soustraire des nombres, convertir et calculer des longueurs, coder un trajet par flèches et résoudre un problème avec un schéma.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "comparaison de nombres",
+      "addition et soustraction",
+      "mesures de longueur",
+      "trajet fléché",
+      "problème avec schéma",
+      "monnaie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation de consolidation variée associant des inégalités à compléter, un calcul de distances en unités mixtes, le tracé d'un parcours codé par flèches et un problème de dépenses avec schéma à compléter et paiement en pièces.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

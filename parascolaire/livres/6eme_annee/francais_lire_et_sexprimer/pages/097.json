@@ -1,0 +1,134 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 97,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Lire et s'exprimer : compréhension (King le lionceau et Patricia), vocabulaire, grammaire (accord des adjectifs, forme négative, compléments essentiels et non essentiels)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4-b",
+      "instruction": "Relève, dans le texte, deux détails qui le montrent :",
+      "body": "Deux lignes de pointillés à remplir.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p097_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Écris les mots du texte qui ont le même sens que les mots suivants :",
+      "body": "- Fauve : ...............................  - Dormir : ...............................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p097_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Réponds par « Vrai » ou « Faux » :",
+      "body": "- Le père a trouvé King dans la forêt.\n- Patricia donne des coups de poing à King pour lui faire mal.\n- Quand Patricia arrête le jeu, King lui mord la main.\n- King obéit toujours à Patricia.",
+      "figureDesc": "Quatre cases ovales en pointillés à droite de chaque phrase pour écrire Vrai ou Faux.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p097_i3",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-1",
+      "instruction": "Complète avec les adjectifs entre parenthèses et accorde-les :",
+      "body": "- La (beau)................... fille aux yeux (bleu)................... trouve une (petit)................... lionne (blessé)................... dans un fossé. elle est trop (maigre)...................La bête est (puissant)................... et (gentil)................... Elles sont devenues deux amies (inséparable)...................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "francais_lire_et_sexprimer_p097_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-2",
+      "instruction": "Mets les phrases suivantes à la forme négative :",
+      "body": "- Le lionceau dort toujours avec Patricia.\n...................\n- King fait encore tout ce que je veux.\n...................\n- Patricia joue toujours avec King dans le jardin.\n...................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p097_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-3",
+      "instruction": "« Hier, mon père a trouvé un petit lionceau dans un fossé. » Relève dans cette phrase :",
+      "body": "- Un complément essentiel : ...................\n- Deux compléments non essentiels : ...................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p097_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.24
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de français (compréhension d'un texte sur un lionceau, vocabulaire, accord des adjectifs, forme négative, compléments essentiels et non essentiels) qui couvre plusieurs points de langue ; aucun module ne correspond clairement, car le thème animalier ne figure dans aucun intitulé de module et les compléments d'objet du module 4 ne sont qu'un recoupement partiel.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    126
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Évaluation : compréhension et grammaire",
+    "skill": "Comprendre un texte narratif et appliquer l'accord des adjectifs, la forme négative et la distinction des compléments essentiels et non essentiels.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "accord des adjectifs",
+      "forme négative",
+      "compléments essentiels",
+      "vocabulaire",
+      "lionceau"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série d'exercices variés (relevé de détails, synonymes, vrai/faux, adjectifs à accorder, transformation négative, analyse de compléments) bâtie autour d'un même récit d'animal apprivoisé, ce qui permet de reprendre le principe d'une évaluation à thème unique.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

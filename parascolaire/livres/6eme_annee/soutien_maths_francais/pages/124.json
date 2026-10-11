@@ -1,0 +1,182 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 124,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Page d'examen de français (et non de mathématiques) : conjugaison, orthographe et production écrite sur la pollution de l'air. La page porte le numéro 3.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "22",
+      "instruction": "(Être) des citoyens actifs ! (Impératif présent, 1ère personne du pluriel) (1pt)",
+      "body": "(Être) des citoyens actifs ! ........................",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p124_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "23",
+      "instruction": "Les agriculteurs (utiliser) peu d'engrais pour diminuer le taux de la pollution. (Conditionnel présent) (1pt)",
+      "body": "Les agriculteurs (utiliser) peu d'engrais pour diminuer le taux de la pollution.",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p124_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "24",
+      "instruction": "B- Orthographe (3 points) : Relie par une flèche les mots qui conviennent. (1pt)",
+      "body": "Colonne de gauche : Ils / Des feuilles / Un enfant. Colonne de droite : blanches / content / parlent.",
+      "figureDesc": "Deux colonnes de mots marqués par des points, à relier par des flèches",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p124_i3",
+      "topicId": "fr-6-m5",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "25",
+      "instruction": "Remplis le tableau suivant : (1pt)",
+      "body": "Singulier → Pluriel : Un cheval → Des ... ; Un va-et-vient → Des ... ; Un feu → Des ... ; Un clou → Des ...",
+      "figureDesc": "Tableau à deux colonnes (Singulier / Pluriel), 4 lignes, colonne Pluriel à compléter après « Des »",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p124_i4",
+      "topicId": "fr-6-m5",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "26",
+      "instruction": "Complète la phrase suivante par : (tout, tous, toute, toutes) (1pt)",
+      "body": "........ les agriculteurs essaient de minimiser le taux de la pollution en air. Pour cela, ils évitent de brûler les résidus de .......... les cultures",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p124_i5",
+      "topicId": "fr-6-m5",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "27",
+      "instruction": "C- Production de l'écrit (7 points) : Complète le paragraphe suivant par les mots ci-dessous : (2pts)",
+      "body": "Mots : électriques - carburant - véhicule hybride - chercheurs. La pollution d'air a permis aux ............. de penser à fabriquer des véhicules ......... et des véhicules hybrides. Le ........... a deux moteurs : Le premier est électrique et le deuxième est thermique. La fabrication de ce nouveau véhicule permet une économie du ......... d'une part, et d'autre part une minimisation des rejets polluants l'air et causant surtout les effets de serre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p124_i6",
+      "topicId": "fr-6-m5",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "28",
+      "instruction": "Pour participer au journal scolaire, écris un texte de sept lignes au moins, sur les dangers de la pollution de l'air en donnant des conseils pour faire face à ce phénomène. (5pts)",
+      "body": "",
+      "figureDesc": "Neuf lignes pointillées pour la rédaction ; en bas, la mention « Bonne chance »",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p124_i7",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.37
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un examen de français (conjugaison, orthographe, production écrite) sur la pollution de l'air, thème proche du Module 5 « Sauver la nature » (écologie, accords), mais elle couvre aussi l'impératif et le conditionnel, donc elle ressemble à une évaluation générale et le rattachement à un seul chapitre reste incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Examen de français : pollution de l'air",
+    "skill": "Conjuguer à l'impératif et au conditionnel, appliquer les règles d'orthographe (pluriels, accords, tout) et rédiger un texte sur la pollution de l'air.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "appariement",
+      "schema_tableau",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "pollution de l'air",
+      "conjugaison",
+      "impératif présent",
+      "conditionnel présent",
+      "pluriel des noms",
+      "production écrite"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un thème environnemental unique (pollution de l'air, agriculture, véhicules hybrides) relie conjugaison, orthographe et rédaction. Les formats combinent phrases à conjuguer, appariement, tableau de pluriels, accord de « tout », paragraphe à trous et article pour le journal scolaire avec conseils.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 3 » et la formule « Bonne chance » en bas de page ne sont pas transcrits."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Q27 : l'image dit « les effets de serre » précédé de « causant surtout » ; la transcription « l'air et causant surtout les effets de serre » est correcte. En revanche, « de penser à fabriquer des véhicules » est correct, mais le tiret entre les mots « électriques- carburant- véhicule hybride- chercheurs » est transcrit avec des espaces, ce qui est sans conséquence."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Q22 et Q23 sont dupliquées dans la transcription (énoncé répété avec des points de suite) ; Q23 omet les points de réponse présents dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Q28 : les lignes pointillées pour répondre ne sont pas mentionnées (champ vide)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Q26 : « essaient » transcrit, l'image montre « essaient » (lecture « essaient » correcte) ; « .les cultures » : le point avant « les cultures » est ignoré."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

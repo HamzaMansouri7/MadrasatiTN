@@ -1,0 +1,110 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 43,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 10 – الامتحان الثلاثي الأول (4) : الأعداد الفردية، الجمع والطرح، المسافات، الانتماء إلى مستقيمات، مسألة المشتريات",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) كَوِّنْ كل الأعداد الفردية الممكنة باستعمال الأرقام التالية :",
+      "body": "8 ، 5 ، 6 ، 2\nب) أنجز العمليّات التّالية وأملأ الفراغات :\n4732 + 3997 = . . . .\n8015 − 4907 = . . . .\n3.6. + 48.6 = 8421 (أرقام ناقصة في العملية)\n8.74 − .35. = 57.7 (أرقام ناقصة في العملية)",
+      "figureDesc": "جدول من ست خانات فارغة (منقطة) لكتابة الأعداد الفردية. أربع عمليات حسابية عمودية (جمع وطرح) بعضها يحتوي على نقاط تمثل أرقاما ناقصة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p043_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "تَأَمَّلِ الرَّسْمَ وَاحْسُبِ الْمَسَافَةَ بَيْنَ الْبَيْتِ وَالْمَسْجِدِ :",
+      "body": "المسافة بين المدرسة والمسجد : نصف كم. المسافة بين المسجد والبيت : ؟. المسافة بين المدرسة والبيت : 1 كم و 25 م.",
+      "figureDesc": "رسم للمدرسة والمسجد والبيت على خط واحد، سهم بين المدرسة والمسجد عليه «نصف كم»، سهم بين المسجد والبيت عليه «؟»، وسهم أسفل بين المدرسة والبيت عليه «1 كم و 25 م».",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p043_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "عيّن النّقط أ ، ب ، ج ، د باعتماد جدول الإنتماء :",
+      "body": "جدول «تنتمي إلى» (م) (ص) (ع):\nأ : x تحت (ع) و x تحت (م)\nب : x تحت (ص) و x تحت (م)\nج : لا شيء\nد : x تحت (ص) و x تحت (ع)",
+      "figureDesc": "ثلاثة مستقيمات متقاطعة (ص) و(ع) و(م) ومعها جدول انتماء للنقط أ، ب، ج، د.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p043_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) ما هو ثمن المشتريات؟ ب) ما هو ثمن البُرْتُقَالِ؟",
+      "body": "خرجتُ إلى السُّوق وَبِجَيبي 9 700 مي. شَرَيْتُ لَحْمًا بـ 4 500 مي وَخُضَرًا ثمنها أقلّ من ثمن اللّحم بـ 1 700 مي. كما شريتُ بُرْتُقَالاً. وعند رجوعي كان بجيبي قِطعتان نقديّتان، واحدة ذات 1 دينار وواحدةٌ ذات نصف دينار.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p043_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.24
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation du premier trimestre (الامتحان الثلاثي الأول) qui mêle nombres impairs, addition/soustraction, distances, appartenance à des droites et problème d'achats avec monnaie, donc plusieurs chapitres et aucun chapitre unique ne convient clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    118
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision du premier trimestre : opérations et problèmes",
+    "skill": "Résoudre des opérations d'addition et de soustraction, calculer des distances, lire un tableau d'appartenance et résoudre un problème d'achats.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "nombres impairs",
+      "addition et soustraction",
+      "distances",
+      "appartenance à des droites",
+      "problème d'achats",
+      "monnaie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : former des nombres impairs à partir de chiffres donnés, compléter des opérations à chiffres manquants, déduire une distance à partir d'un schéma de trajets, placer des points avec un tableau d'appartenance à des droites, et résoudre un problème de courses avec une monnaie restante (pièces) pour retrouver un prix inconnu.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

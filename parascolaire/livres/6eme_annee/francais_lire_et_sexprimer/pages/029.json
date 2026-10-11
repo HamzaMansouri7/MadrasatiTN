@@ -1,0 +1,145 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 29,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : « Un garçon énergétique » (d'après Georges Duhamel, Fables de mon jardin)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Un garçon énergétique\nUn jeune cycliste s'arrête. C'est un paysan. Il a de larges épaules et il paraît musclé. Il souffle, il n'a pas l'air content. Pendant un court moment, il regarde ce groupe d'hommes qui ne font rien et cette voiture dans le fossé.\nSoudain il jette son vélo contre un arbre. Il se précipite sur le groupe et écarte les gens pour se mettre au milieu. On lit sur son visage un mélange de colère et d'étonnement :\n« On ne va quand même pas la laisser là ! Allez ! On la reprend par l'arrière qui est plus léger. Après, il n y a plus qu'à tirer. »\nLes hommes relèvent le front, surpris devant ce jeune homme énergétique.\n« Allons ! Allons ! crie le paysan. Dix hommes sur l'arrière et je vous dis que ça suffit. »\nLa parole est forte, presque grondeuse. Notre lenteur énerve le jeune homme. D'un geste, il chasse notre hésitation. Nous obéissons tous, sans discuter. Et tout de suite, il donne des ordres, il place les hommes, il organise les opérations :\n« Une ! Deux ! Trois ! Ensemble ! Bien ! Ça y est ! »\nLa voiture ne résiste plus. Elle se laisse soulever. En dix secondes, la voilà sur la route.\nNous avons eu très peu d'efforts à faire. Et pourtant, tout est fini.\nD'après Georges Duhamel « Fables de mon jardin »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p029_i1",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Pourquoi le jeune cycliste s'arrête-t-il ?",
+      "body": "Ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p029_i2",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Pourquoi le jeune homme a-t-il l'air d'être en colère ?",
+      "body": "Ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p029_i3",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Comment le jeune cycliste a chassé les hésitations des hommes ?",
+      "body": "Ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p029_i4",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4a",
+      "instruction": "Qui commande les opérations ?",
+      "body": "Ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p029_i5",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m4",
+  "topicTitle": "Module 4 : S'entraider pour mieux réussir",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.24
+  },
+  "topicSubject": "Français",
+  "topicReason": "Le texte de lecture « Un garçon énergétique » montre un jeune cycliste qui organise et fait agir un groupe pour sortir une voiture du fossé, ce qui renvoie le plus probablement au thème de l'entraide (Module 4), mais le manuel ne l'indique pas explicitement et le Module 1 (le travail, l'énergie) reste possible.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    121
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Comprendre un texte narratif en répondant par écrit à des questions sur les actions et les motivations des personnages.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "texte narratif",
+      "Georges Duhamel",
+      "personnages",
+      "questions de texte"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une scène du quotidien où un personnage extérieur arrive et prend l'initiative face à un groupe passif, avec des questions allant du repérage de l'information (pourquoi, qui, comment) à l'inférence des sentiments et du rôle de chacun, réutilisable pour d'autres textes courts.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« n y a plus qu'à tirer » : l'image affiche « n y a » sans apostrophe, la transcription est fidèle ; pas d'erreur réelle"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (Sagesse, Lecture - Compréhension, 6ème année de base) et le pied de page (Lire et s'exprimer, 28) ne sont pas transcrits"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est absent de la transcription"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'étiquette « A) » est écrite « [A] » ; la numérotation « 4) a- » est notée « [4a] » (simple différence de format)"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

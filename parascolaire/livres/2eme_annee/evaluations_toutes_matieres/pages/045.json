@@ -1,0 +1,162 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 45,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقويم: التعبير عن الموقع (قريبة/بعيدة، صغيرة/كبيرة) والحدث الدوري وغير الدوري، مع جدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5 (suite)",
+      "instruction": "",
+      "body": "الْكَتِفُ • الرُّكْبَةُ • الْمِرْفَقُ • الأَطْرَافُ السُّفْلِيَّةُ • الأَطْرَافُ الْعُلْوِيَّةُ (fin de la liste de mots de l'exercice précédent; barème 1 - 1 - 1; critère معـ1ج)",
+      "figureDesc": "Liste de mots à puces; trois cases de notation à droite (معـ1ج).",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "evaluations_toutes_matieres_p045_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 3",
+      "instruction": "نَظَّمَتْ نَفْسُ الْمَدْرَسَةِ مُسَابَقَةً فِي الرَّسْمِ وَهَذِهِ هِيَ اللَّوْحَةُ الْفَائِزَةُ، أَتَأَمَّلُهَا وَأُنْجِزُ.",
+      "body": "",
+      "figureDesc": "Dessin en noir et blanc: une fillette à gauche, une fleur et une tortue près d'elle, un grand arbre au centre, un lapin à droite sous l'arbre, un soleil en haut à droite.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p045_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 6",
+      "instruction": "أُكَمِّلُ الْفَرَاغَاتِ بِالْعِبَارَاتِ التَّالِيَةِ :",
+      "body": "قَرِيبَةٌ - بَعِيدَةٌ - صَغِيرَةٌ - كَبِيرَةٌ\n1) تَظْهَرُ السُّلَحْفَاةُ لِلْبِنْتِ ........... لِأَنَّهَا ...........\n2) تَظْهَرُ الْأَرْنَبُ لِلْبِنْتِ ........... لِأَنَّهَا ...........\n3) تَظْهَرُ الزَّهْرَةُ لِلْبِنْتِ ........... لِأَنَّهَا ...........\nالتنقيط: 0,5-0,5 لكل جملة (معـ2ب)",
+      "figureDesc": "Les mots à utiliser sont dans un encadré gris arrondi; points de remplissage; cases de notation à droite (معـ2ب).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p045_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 7",
+      "instruction": "أَشْطُبُ الصِّنْفَ غَيْرَ الْمُنَاسِبِ لِلْحَدَثِ فِيمَا يَلِي :",
+      "body": "تَنْظِيمُ الْمُسَابَقَاتِ الرِّيَاضِيَّةِ : حَدَثٌ دَوْرِيٌّ / غَيْرُ دَوْرِيٍّ\nاِخْتِتَامُ السَّنَةِ الدِّرَاسِيَّةِ : حَدَثٌ دَوْرِيٌّ / غَيْرُ دَوْرِيٍّ.\nالْإِصَابَةُ بِمَرَضِ الزُّكَامِ : حَدَثٌ دَوْرِيٌّ / غَيْرُ دَوْرِيٍّ.\nالِاحْتِفَالُ بِالْمَوْلِدِ النَّبَوِيِّ الشَّرِيفِ : حَدَثٌ دَوْرِيٌّ / غَيْرُ دَوْرِيٍّ.\nالتنقيط: 0,5 لكل عنصر (معـ3)",
+      "figureDesc": "Quatre cases de notation à droite (معـ3).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p045_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "Tableau: المعايير / مستويات التملك. معايير الحد الأدنى: معـ1أ، معـ1ب، معـ1ج، معـ2أ، معـ2ب؛ معيار التميز: معـ3.\nانْعِدَامُ التَّمَلُّكِ: 0 / 0 / 0 / 0 / 0؛ معـ3: من 0 إلى 5.\nالتَّمَلُّكُ دُونَ الْأَدْنَى: معـ1أ 0,5-1-1,5؛ معـ1ب 1؛ معـ1ج 1؛ معـ2أ 0,5-1-1,5؛ معـ2ب 0,5-1-1,5.\nالتَّمَلُّكُ الْأَدْنَى: 2 في كل المعايير.\nالتَّمَلُّكُ الْأَقْصَى: معـ1أ 2,5-3؛ معـ1ب 3؛ معـ1ج 3؛ معـ2أ 2,5-3؛ معـ2ب 2,5-3.",
+      "figureDesc": "Tableau de barème de notation par niveaux de maîtrise et critères; numéro de page 44 en bas.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p045_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p2",
+    "confidence": 0.21
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Il s'agit d'une page d'évaluation (تقويم) avec un tableau d'attribution des notes, couvrant plusieurs critères (vocabulaire du corps, position proche/lointaine, événements périodiques ou non) et qui ne correspond clairement à aucune unité précise.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Repérage dans l'espace et temps",
+    "skill": "Exprimer la position apparente d'un objet (proche/lointain, petit/grand) et distinguer un événement périodique d'un événement non périodique.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "qcm",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "distance apparente",
+      "événement périodique",
+      "événement non périodique",
+      "évaluation",
+      "barème de notation",
+      "parties du corps"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une illustration (dessin gagnant d'un concours) sert à faire relier la taille apparente à la distance perçue, et un classement d'événements du quotidien en périodiques ou non est proposé ; la grille de notation par critères montre aussi comment structurer une évaluation.",
+    "themeGroup": "Repérage dans l'espace"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ligne 2 de la التعليمة 6 : l'image porte « تَظْهَرُ الْأَرْنَبُ » avec « الأَرْنَبُ » (hamza sans kasra) ; la transcription écrit « الْأَرْنَبُ », écart minimal de graphie. Dans l'image, c'est « الْأَرْنَبُ » avec sukun sur le lam, donc pas d'erreur."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Numérotation « 1) 2) 3) » ajoutée dans la التعليمة 6, absente de l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le texte « التنقيط: 0,5-0,5 لكل جملة (معـ2ب) » et « 0,5 لكل عنصر (معـ3) » est une reformulation de la marge ; il n'apparaît pas tel quel dans l'image."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Tableau : « 0,5-1-1,5 » est écrit « 1,5 - 1 - 0,5 » dans l'image (ordre inversé) ; de même « 2,5-3 » est « 3 - 2,5 »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases de notation, les repères معـ1ج / معـ2ب / معـ3 dans la marge droite et les en-têtes « مستويات التملك / المعايير » ne sont pas précisément restitués. Le numéro de page 44 est omis. Les barèmes de la marge gauche sont mal alignés."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les mots « الْمُنَاسِبِ » et « الْأَعْدَادِ » sont corrects. « اِخْتِتَامُ » est correct. L'en-tête « (suite) » du premier bloc est une addition de l'OCR."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« 5 (suite) » et « fin de la liste de mots de l'exercice précédent » sont des annotations ajoutées, absentes de l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

@@ -1,0 +1,119 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 61,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 15 : اختبار تقويمي للتثبيت والدعم",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع الأعداد التّالية في مكانها حتّى تكون العبارة العدديّة صحيحة :",
+      "body": "7 . 9 . 4 :\n99 = . x ( . + . )\n35 = . x ( . - . )\n252 = . x ( . x . )",
+      "figureDesc": "Trois égalités à compléter avec les nombres 7, 9 et 4 placés dans les points : somme, différence et produit entre parenthèses.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p061_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "رتّب الأطوال التّالية ترتيبًا تنازليًّا :",
+      "body": "354 مم - 61 صم - 2 م - 75 دسم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p061_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "كوّن بأصغر عدد ممكن من الأوراق المالية المبلغ : مائة ألف مليم",
+      "body": "مائة ألف مليم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p061_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لوّن الزّاوية القائمة في الرّسم بالأحمر :",
+      "body": "",
+      "figureDesc": "Une droite (دب) passant par le point أ. Deux demi-droites partent de أ vers ج et vers د, formant plusieurs angles adjacents au-dessus de la droite. Il faut repérer et colorier l'angle droit.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p061_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "باعت جمعية العمل التّنموي بالمدرسة ما يلي :",
+      "body": "- 8 فوانيس كهربائية بـ 2800 مي الفانونس الواحد.\n- 5 كراسي خشبيّة بـ 7500 مي الكرسي الواحد.\n- 7 شمعدانات بـ 1300 مي الشّمعدان الواحد.\nما هي جملة المداخيل؟\nأضافت الجمعيّة إلى جملة المداخيل مقدارا ماليًا من صندوق المدرسة لشراء وسائل إيضاح بـ 96 د. لكنّه تخلّد بذمّتها لدى البائع دين قيمته 7 د.\nابحث عن المقدار المالي الذي ساهم به صندوق المدرسة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p061_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.2
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de consolidation (semaine 15) qui mélange distributivité, comparaison de longueurs, monnaie, angle droit et problème sur la monnaie, donc plusieurs chapitres (période 1 et période 2) sans correspondance unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision : calcul, mesures et problèmes",
+    "skill": "Consolider les opérations, la comparaison de longueurs, la monnaie, les angles droits et la résolution de problèmes à plusieurs étapes.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "évaluation",
+      "distributivité",
+      "conversion de longueurs",
+      "monnaie",
+      "angle droit",
+      "problème de revenus"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation de consolidation variée : compléter des égalités avec des nombres donnés (distributivité et factorisation), ranger des longueurs en unités différentes, composer une somme avec un minimum de billets, repérer l'angle droit, et résoudre un problème contextuel de vente par une association scolaire.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

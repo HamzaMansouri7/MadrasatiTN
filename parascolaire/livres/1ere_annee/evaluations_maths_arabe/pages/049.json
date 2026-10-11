@@ -1,0 +1,106 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 49,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "تكوين العشرات والتجميع المنتظم (حساب ذهني وتفكيك الأعداد)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُجَمِّعُ الزَّهَرَاتِ عَشَرَةً/عَشَرَةً وَأُعَمِّرُ الْجَدْوَلَ.",
+      "body": "السَّنَد : سَاعَدْتُ أُمِّي عَلَى تَجْمِيعِ الْفُلِّ فِي مَشَامِيمَ بِكُلِّ وَاحِدٍ 8 زَهَرَاتٍ.",
+      "figureDesc": "مجموعة من زهرات الفلّ مرسومة (18 زهرة) وبجانبها جدول ذو خانتين: آحَادٌ وعَشَرَاتٌ.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p049_i1",
+      "topicId": "math-1-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُمَثِّلُ انْطِلَاقًا مِنْ مُعْطَيَاتِ الْجَدْوَلِ دَاخِلَ الْإِطَارِ.",
+      "body": "",
+      "figureDesc": "جدول مقسوم إلى عمودين: العمود الأيسر به رسم مجموعة من 3 تفاحات وتحته العدد 2، والعمود الأيمن به رسم تفاحة واحدة وتحته العدد 2، وإلى جانبهما إطار مستطيل فارغ للتمثيل.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p049_i2",
+      "topicId": "math-1-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "كَمْ سَجَّلَ مِنْ رَمْيَةٍ ؟\nأُعَلِّلُ : لِأَنَّ",
+      "body": "سَجَّلَ فَرِيقُ كُرَةِ السَّلَّةِ فِي الْفَتْرَةِ الْأُولَى 6 نِقَاطٍ بِرَمَيَاتٍ مِنْ فِئَةِ ثَلَاثِ نِقَاطٍ.\n• كَمْ سَجَّلَ مِنْ رَمْيَةٍ ؟ .........................................\nأُعَلِّلُ : لِأَنَّ .........................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p049_i3",
+      "topicId": "math-1-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "أُنْجِزُ وَأَتَمَيَّزُ",
+      "instruction": "أَكْتُبُ فِي كُلِّ مَرَّةٍ عَدَدَ الْمَجْمُوعَاتِ وَالْبَاقِي.",
+      "body": "دَعَتْنَا الْمُعَلِّمَةُ فِي حِصَّةِ التَّرْبِيَةِ الْبَدَنِيَّةِ إِلَى التَّجَمُّعِ فِي مَجْمُوعَاتٍ مُنْتَظِمَةٍ 5/5 ، 6/6 ، 7/7.\n5/5 عَدَدُ الْمَجْمُوعَاتِ: ........... الْبَاقِي: ...........\n6/6 عَدَدُ الْمَجْمُوعَاتِ: ........... الْبَاقِي: ...........\n7/7 عَدَدُ الْمَجْمُوعَاتِ: ........... الْبَاقِي: ...........",
+      "figureDesc": "ثلاث مجموعات من رسومات الأطفال: صف به 5 أطفال، وصف به 6 أطفال، وصف به 7 أطفال، وبجانبها بطاقات تحمل النسب 5/5 و 6/6 و 7/7 مع نقاط لكتابة عدد المجموعات والباقي.",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p049_i4",
+      "topicId": "math-1-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "math-1-p5",
+  "topicTitle": "Période 5 : Nombres à deux chiffres jusqu'à 99 et addition sans retenue",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p4",
+    "confidence": 0.8
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite du groupement par dizaines (regroupements de 10, tableaux) et de groupements réguliers 5/5, 6/6, 7/7 avec reste, ce qui relève de la formation des dizaines (P5) mais aussi de P4, d'où une confiance moyenne.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Groupements par dizaines et division",
+    "skill": "Regrouper des objets par paquets égaux (10, 8, 3, 5, 6, 7) et déterminer le nombre de groupes et le reste.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "probleme",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "groupements",
+      "dizaines",
+      "reste",
+      "tableau",
+      "dénombrement",
+      "calcul mental"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des situations concrètes du quotidien (fleurs en bouquets, tirs au basket de 3 points, groupes en cours d'éducation physique) servent à introduire le groupement régulier et le reste, avec des tableaux à compléter et des justifications écrites.",
+    "themeGroup": "Dizaines et groupements"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

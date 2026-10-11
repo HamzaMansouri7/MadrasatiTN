@@ -1,0 +1,78 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 82,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite – Thème 5 : Profiter de son temps libre (Les belles expressions)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Les belles expressions :",
+      "body": "- La pression du travail scolaire est terrible. Je n'ai pas souvent le temps de me reposer, de me détendre, de me distraire.\n- Les loisirs sont indispensables pour moi. Mon travail est stressant et épuisant. Si je ne trouve pas le temps de me distraire un peu, je me sens mal. J'ai besoin de bouger.\n- Pendant mes heures de loisir, j'aime me promener seul dans la forêt.\n- Regarder la télé, c'est son divertissement préféré.\n- Mon travail est routinier, ennuyeux et fatigant. Alors, pour me divertir le weekend, je fais du théâtre d'amateurs.\n- Chez moi, on aime bien passer la soirée en famille. On fait souvent une partie d'échecs ou de Monopoly. C'est plus agréable que de regarder la télé ou des vidéos.\n- Tous les après-midis, le jeune François va au café du coin retrouver ses copains. Ils font une partie ou deux de babyfoot, puis ils jouent au flipper. Quand ils n'ont plus de sous, ils s'en vont.\n- Nous avons visité beaucoup d'endroits touristiques. Nous nous sommes beaucoup amusés.\n- Chaque dimanche, mes amis et moi, nous partons ensemble pour faire une course.\n- Moi, pendant les grandes vacances, j'aime les voyages. Ma mère et moi, nous partons parfois en bateau ou en avion pour visiter mon père qui travaille en France.\n- Tu as raison, c'est très bon pour la santé de se promener en pleine nature en respirant l'air pur et en profitant du chant des oiseaux.\n- Pendant mon temps libre je pars avec mon oncle pour faire une partie de pêche.\n- Pendant mon temps libre j'aime jouer de la musique. J'adore le piano.\n- Aller faire une promenade, pour moi, c'est plus amusant. J'adore surtout les promenades à la campagne.",
+      "figureDesc": "En-tête décoratif gris avec « Sagesse », « 6ème année de base » et titre « Expression écrite » ; encadré arrondi « Thème 5 : Profiter de son temps libre ». Pied de page : « Lire et s'exprimer », numéro 81. Un texte de la page suivante est visible en transparence (non lisible).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p082_i1",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m7",
+  "topicTitle": "Module 7 : Profiter de son temps libre",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "fr-6-m7",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m7",
+    "confidence": 0.68
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page d'expression écrite porte sur le thème « Profiter de son temps libre » (loisirs, détente, se promener), qui correspond exactement au Module 7 de français.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Exprimer ses loisirs et détente",
+    "skill": "Réutiliser des expressions pour dire l'importance du temps libre et du repos dans une production écrite.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "temps libre",
+      "loisirs",
+      "détente",
+      "stress scolaire",
+      "expressions",
+      "expression écrite"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Banque d'expressions sur le contraste entre pression scolaire et besoin de se distraire, utilisable comme point de départ d'une rédaction ou d'un exercice de réemploi de vocabulaire.",
+    "themeGroup": "Production écrite et lettres"
+  },
+  "audit": {
+    "accuracy": 0.92,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « Expression écrite », « Thème 5 : Profiter de son temps libre », « Sagesse », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », numéro de page « 81 », « 6ème année de base »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.92
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

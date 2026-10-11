@@ -1,0 +1,315 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 61,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "اسم المفعول من الفعل المزيد (الثلاثي المزيد بحرف، بحرفين، بثلاثة أحرف) – Le participe passif des verbes augmentés (langue arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "Tableau (lecture de droite à gauche). En-têtes : المزيد بحرف (3 colonnes) | المزيد بحرفين (5 colonnes) | بـ أحرف (1 colonne, texte tel qu'il apparaît).\nLigne 1 (الماضي / les formes) : أفعل – فعّل – فاعل | انفعل – افتعل – تفعل – تفاعل – افعل | استفعل\nLigne 2 : أخرج – علم – سامح | انتصر – اقترب – تسلم – تظاهر – احمر | استقبل\nLigne 3 : يخرج – يعلم – يسامح | ينتصر – يقترب – يتسلم – يتظاهر – يحمر | يستقبل\nLigne 4 : مخرج – معلم – مسامح | منتصر – مقترب – متسلم – متظاهر – محمر | مستقبل",
+      "figureDesc": "Tableau à 4 lignes et 9 colonnes avec en-têtes fusionnés : المزيد بحرف, المزيد بحرفين, بـ أحرف. Page encadrée d'une bordure bleue.",
+      "answer": null,
+      "id": "grammaire_arabe_cahier_regles_p061_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التمارين – التمرين الأول : صغ اسم المفعول من الأفعال التالية",
+      "body": "انتصر – امتحن – استمع – استعمل – دلل",
+      "figureDesc": "Tableau de 5 colonnes avec les verbes en en-tête et une ligne de réponses vide.",
+      "answer": null,
+      "id": "grammaire_arabe_cahier_regles_p061_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التمرين الثاني : حول اسم المفعول إلى فعله الماضي",
+      "body": "متراجع عنه – مندفع اليه – مندهش منه – مستفسر عنه – محترم",
+      "figureDesc": "Tableau de 5 colonnes avec les participes passifs en en-tête et une ligne de réponses vide.",
+      "answer": null,
+      "id": "grammaire_arabe_cahier_regles_p061_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التمرين الثالث : صغ مما ورد بين قوسين أسماء المفعول ليستقيم المعنى",
+      "body": "عاد إلى البيت و قد حمل [espace vide] بما لذ و طاب و قال لنا [espace vide] أحضرت لكم اليوم\nطعاما اعتبر [espace vide] و غلالا استورد [espace vide] من الخارج",
+      "figureDesc": "",
+      "answer": null,
+      "id": "grammaire_arabe_cahier_regles_p061_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التمرين الرابع : ضع بين قوسين كل اسم مفعول ورد في الجمل التالي و اذكر الفعل الذي اشتق منه",
+      "body": "الكتب مرتبة في الرف حسب أحجامها\nهذه المفاجأة معدة مسبقا أليس كذلك ؟\nمرحبا بك زيارة غير منتظرة\nالفريق المنتصر لاعبوه مدربون جيدا",
+      "figureDesc": "",
+      "answer": null,
+      "id": "grammaire_arabe_cahier_regles_p061_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.93
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.27
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite du participe passif des verbes augmentés (grammaire/morphologie arabe), qui ne correspond clairement à aucune des six unités officielles, centrées sur la narration et ses types de passages ; ce point de langue pourrait être rattaché à plusieurs unités sans qu'aucune ne s'impose.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Participe passif des verbes augmentés",
+    "skill": "Former le participe passif à partir de verbes trilitères augmentés et retrouver le verbe à partir du participe.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "participe passif",
+      "verbes augmentés",
+      "conjugaison arabe",
+      "morphologie",
+      "dérivation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : tableau récapitulatif des schèmes (passé, présent, participe passif) et exercices variés : formation du participe, retour au verbe, complétion de phrases, repérage dans des phrases. Les consignes sont classiques et les situations sont peu originales.",
+    "themeGroup": "Les participes"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Le tableau a été réécrit sous forme de liste: l'en-tête « المزيد بثلاثة أحرف » est inventé, l'image porte « بـ أحرف » (cellule fragmentée) ; la transcription est restructurée en « ماضٍ، مضارع، اسم المفعول » alors que l'image est un tableau à colonnes."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Titre « جدول الأفعال المزيدة: الماضي، المضارع، اسم المفعول » inventé, absent de l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les formes-modèles de la ligne d'en-tête (أفعل، فعّل، فاعل، انفعل، اقتعل، تفعل، تفاعل، افعل، استفعل) sont mêlées aux exemples ; les exemples de la colonne « أفعل » sont corrects mais la structure en colonnes est perdue."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel ajouté absent de l'image: « علّم، يعلّم، معلّم », « تسلّم », « احمرّ », « محمرّ », « ماضٍ » ; l'image montre seulement la shadda sur فعّل."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3: « (و قد حمل) », « (طعاما) (اعتبر) », « (غلالا) (استورد) » : les parenthèses sont inventées (l'image n'a pas de parenthèses visibles, seulement des espaces vides) ; l'ordre de lecture est « طعاما اعتبر » et « و غلالا استورد » ; « و قد حمل » est suivi d'un espace vide avant « بما لذ »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: « مندفع إليه » alors que l'image porte « مندفع اليه » (sans hamza)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4: « الجمل التالي » correspond à l'image, mais l'espace entre « بك » et « زيارة » est supprimé ; « التمارين / التمرين الأول » : titres non transcrits (التمارين، التمرين الأول/الثاني/الثالث/الرابع)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les intitulés « التمارين » et « التمرين الأول… الرابع » sont remplacés par des numéros [1]–[4]."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.6,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le titre « جدول الأفعال المزيدة: الماضي، المضارع، اسم المفعول » n'apparaît pas dans l'image. La page ne porte aucun titre au-dessus du tableau."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "En-tête du tableau : « المزيد بثلاثة أحرف » est inventé. L'image porte « المزيد بحرف » (3 colonnes), « المزيد بحرفين » (5 colonnes) et une cellule fragmentée « بـ / أحرف »."
+      },
+      {
+        "type": "structure",
+        "severity": "major",
+        "detail": "Le tableau a été réécrit sous forme de liste. L'image montre un tableau de 9 colonnes et 5 lignes (en-têtes, formes-modèles, passé, présent, participe passif), pas 7 colonnes et 4 lignes. Les formes-modèles sont mêlées aux exemples et la structure en colonnes est perdue."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel ajouté et absent de l'image : « علّم، يعلّم، معلّم », « تسلّم، يتسلّم، متسلّم », « احمرّ، يحمرّ، محمرّ », « ماضٍ ». Dans les exemples, l'image écrit sans shadda : علم، يعلم، معلم، تسلم، متسلم، احمر، يحمر، محمر. Seule la forme-modèle « فعّل » porte la shadda."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : « مندفع إليه » alors que l'image porte « مندفع اليه » (sans hamza)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3 : les parenthèses autour de « و قد حمل », « طعاما », « اعتبر », « غلالا », « استورد » sont inventées. Les deux-points après « لنا » et le point final sont aussi inventés. L'image a seulement des espaces vides entre les segments."
+      },
+      {
+        "type": "espacement",
+        "severity": "minor",
+        "detail": "Exercice 4 : l'espace double entre « بك » et « زيارة » est supprimé. Les intitulés « التمارين » et « التمرين الأول/الثاني/الثالث/الرابع » sont remplacés par des numéros."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "المزيد بحرف | المزيد بحرفين | بـ أحرف\nأفعل | فعّل | فاعل | انفعل | اقتعل | تفعل | تفاعل | افعل | استفعل\nأخرج | علم | سامح | انتصر | اقترب | تسلم | تظاهر | احمر | استقبل\nيخرج | يعلم | يسامح | ينتصر | يقترب | يتسلم | يتظاهر | يحمر | يستقبل\nمخرج | معلم | مسامح | منتصر | مقترب | متسلم | متظاهر | محمر | مستقبل",
+      "figureDesc": "جدول من 9 أعمدة و5 صفوف: صف العناوين (المزيد بحرف، المزيد بحرفين، بـ أحرف)، ثم صف الصيغ، ثم صف الماضي، ثم صف المضارع، ثم صف اسم المفعول",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "صغ اسم المفعول من الأفعال التالية",
+      "body": "انتصر – امتحن – استمع – استعمل – دلل",
+      "figureDesc": "جدول من 5 خانات، الأفعال في الصف الأول وصف فارغ للإجابة",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حول اسم المفعول إلى فعله الماضي",
+      "body": "متراجع عنه – مندفع اليه – مندهش منه – مستفسر عنه – محترم",
+      "figureDesc": "جدول من 5 خانات، الكلمات في الصف الأول وصف فارغ للإجابة",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "صغ مما ورد بين قوسين أسماء المفعول ليستقيم المعنى",
+      "body": "عاد إلى البيت  و قد حمل  بما لذ و طاب و قال لنا  أحضرت لكم اليوم\nطعاما  اعتبر  و غلالا  استورد  من الخارج",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ضع بين قوسين كل اسم مفعول ورد في الجمل التالي و اذكر الفعل الذي اشتق منه",
+      "body": "الكتب مرتبة في الرف حسب أحجامها\nهذه المفاجأة معدة مسبقا أليس كذلك ؟\nمرحبا بك  زيارة غير منتظرة\nالفريق المنتصر لاعبوه مدربون جيدا",
+      "figureDesc": "",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.93,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول الأفعال المزيدة: الماضي، المضارع، اسم المفعول",
+      "body": "المزيد بحرف: أفعل / فعّل / فاعل — المزيد بحرفين: انفعل / اقتعل / تفعل / تفاعل / افعل — المزيد بثلاثة أحرف: استفعل. أمثلة (ماضٍ، مضارع، اسم المفعول): أخرج، يخرج، مخرج — علّم، يعلّم، معلّم — سامح، يسامح، مسامح — انتصر، ينتصر، منتصر — اقترب، يقترب، مقترب — تسلّم، يتسلّم، متسلّم — تظاهر، يتظاهر، متظاهر — احمرّ، يحمرّ، محمرّ — استقبل، يستقبل، مستقبل",
+      "figureDesc": "جدول من 7 أعمدة و4 صفوف: الصف الأول عناوين (المزيد بحرف، المزيد بحرفين، المزيد بثلاثة أحرف) ثم الصيغ، ثم الماضي والمضارع واسم المفعول",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "cahier_grammaire_6eme_p061_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "صغ اسم المفعول من الأفعال التالية",
+      "body": "انتصر – امتحن – استمع – استعمل – دلل",
+      "figureDesc": "جدول من 5 خانات، الأفعال في الصف الأول وصف فارغ للإجابة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "cahier_grammaire_6eme_p061_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حول اسم المفعول إلى فعله الماضي",
+      "body": "متراجع عنه – مندفع إليه – مندهش منه – مستفسر عنه – محترم",
+      "figureDesc": "جدول من 5 خانات، الكلمات في الصف الأول وصف فارغ للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "cahier_grammaire_6eme_p061_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "صغ مما ورد بين قوسين أسماء المفعول ليستقيم المعنى",
+      "body": "عاد إلى البيت (و قد حمل) بما لذ و طاب و قال لنا: أحضرت لكم اليوم (طعاما) (اعتبر) و (غلالا) (استورد) من الخارج.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "cahier_grammaire_6eme_p061_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ضع بين قوسين كل اسم مفعول ورد في الجمل التالي و اذكر الفعل الذي اشتق منه",
+      "body": "الكتب مرتبة في الرف حسب أحجامها\nهذه المفاجأة معدة مسبقا أليس كذلك ؟\nمرحبا بك زيارة غير منتظرة\nالفريق المنتصر لاعبوه مدربون جيدا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "cahier_grammaire_6eme_p061_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

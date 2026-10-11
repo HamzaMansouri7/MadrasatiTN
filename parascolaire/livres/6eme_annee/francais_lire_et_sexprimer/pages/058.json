@@ -1,0 +1,146 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 58,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : François et sa peur (questions de compréhension et texte lacunaire sur Alceste à la plage)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2-a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- François a eu très peur. (……………)",
+      "figureDesc": "La zone de réponse est entourée d'un cadre arrondi.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p058_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-b",
+      "instruction": "Relève, dans le texte, deux détails qui le montrent :",
+      "body": "Le premier détail : ……………………………………………………………………\n……………………………………………………………………\nLe deuxième détail : ……………………………………………………………………\n……………………………………………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p058_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Cherche, dans le texte, le mot qui a le même sens que :",
+      "body": "• Une grande peur = ……………………………\n• Noir et blanc = ……………………………\n• Animal = ……………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p058_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Le petit enfant se met à crier. Dis pourquoi .",
+      "body": "……………………………………………………………………\n……………………………………………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p058_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Pourquoi le moniteur a-t-il suivi le petit François ?",
+      "body": "……………………………………………………………………\n……………………………………………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p058_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Que penses –tu de François ?",
+      "body": "……………………………………………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p058_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Complète ce passage avec les mots du cadre :",
+      "body": "Mots du cadre : ramasser – s'amuser – plage – en jouant – vacances – châteaux\n\nC'est les ……………… Alceste et sa sœur Viviane vont à la ……………… avec leur cousin Paul.\nAlceste et Paul construisent des ……………… de sable et ……………… des coquillages.\nAlceste entend des éclats de rire. Il se retourne ; son père, sa mère, son oncle et sa tante jouent au ballon et……………… dans l'eau. Alceste et Paul les rejoignent.\nSe trouvant seul, Viviane passe son superbe canard en plastique autour de son corps, se jette à l'eau et essaie de nager en agitant ses petits bras. Sa maman la surveille tout ……………… .",
+      "figureDesc": "Les mots à utiliser sont placés dans un cadre arrondi.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p058_i7",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.39
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de lecture-compréhension en français (François et sa peur, texte lacunaire sur Alceste à la plage, vocabulaire), mais le récit de vacances à la plage ne correspond clairement à aucun des modules officiels (travail, médias, tolérance, entraide, nature, santé, loisirs, autres modes de vie), donc aucun chapitre n'est identifiable avec certitude.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    124
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture : la peur",
+    "skill": "Comprendre un texte narratif en relevant des détails, des synonymes et en justifiant les réactions d'un personnage, puis compléter un texte lacunaire.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "peur",
+      "synonymes",
+      "relevé de détails",
+      "texte lacunaire",
+      "plage"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable de questions de compréhension (réponse oui/non, relevé d'indices, recherche de synonymes, justification, avis personnel) suivi d'un résumé à compléter avec une banque de mots, dans un contexte de vacances à la plage.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

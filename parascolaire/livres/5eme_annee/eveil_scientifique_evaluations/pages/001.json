@@ -1,0 +1,112 @@
+{
+  "book": "eveil_scientifique_evaluations",
+  "page": 1,
+  "grade": "5ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "إيقاظ علمي الثلاثي الثالث: الإنبات وشروطه ومراحله، والسلاسل الغذائية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمّ تعمير الجدول التالي",
+      "body": "جدول من أربعة أعمدة: البذور | صالحة للزراعة | غير صالحة للزراعة | التعليل. الصفوف: 1) بذرة فول ناضجة وجافة وجنينها سليم. 2) بذرة جلبان ناضجة وجافة تلف جنينها. 3) بذرة حمّص ناضجة وجافة وجنينها سليم لكن جزء منها نخره السوس. 4) بذرة فول خضراء وجنينها سليم. 5) بذرة جلبان ناضجة وجافة وجنينها نخره السوس.",
+      "figureDesc": "جدول من 4 أعمدة و5 صفوف، خانات الصلاحية وعدم الصلاحية والتعليل فارغة لتعميرها",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_evaluations_p001_i1",
+      "topicId": "sci-5-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أرتّب مراحل الانبات",
+      "body": "انتفاخ البذرة / ظهور السويقة / تحوّل الجذير إلى جذر به شعيرات / تمزّق اللّحافة الواقية / اختراق النبتة الفتية وجه الأرض / بروز الجذير",
+      "figureDesc": "قائمة من ست مراحل، أمام كل مرحلة خانة فارغة لكتابة رقم الترتيب",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_evaluations_p001_i2",
+      "topicId": "sci-5-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكوّن سلسلة غذائيّة بما يلي",
+      "body": "انسان، طحالب بحريّة، سمك، اخطبوط، عوالق حيوانية، عوالق نباتية، سلحفاة بحرية، قنديل البحر، نسر، دودة، دجاجة، قمح",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_evaluations_p001_i3",
+      "topicId": "sci-5-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-5-u6",
+  "topicTitle": "Unité 6 : Le sol, l'eau et reproduction végétale par graines",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "sci-5-u5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-5-u6",
+    "confidence": 0.22
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page mêle la germination (conditions de semis, étapes, relevant de sci-5-u6) et les chaînes alimentaires (relevant de sci-5-u5), donc elle ne correspond pas clairement à un seul chapitre ; la germination occupe deux des trois exercices, d'où le choix de sci-5-u6 avec une confiance faible.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Germination et chaînes alimentaires",
+    "skill": "Identifier les conditions et les étapes de la germination et construire une chaîne alimentaire à partir d'êtres vivants donnés.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "germination",
+      "graine",
+      "conditions de germination",
+      "étapes",
+      "chaîne alimentaire",
+      "producteurs et consommateurs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un tableau de tri où l'on justifie si une graine est apte au semis selon son état (mûre, abîmée, embryon intact), le classement chronologique des étapes de germination, et la construction de chaînes alimentaires à partir d'une liste mélangeant milieux marins et terrestres.",
+    "themeGroup": "La germination"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : «حليم حاجبي», «ايقاظ علمي الثلاثي الثالث», «السّنة الخامسة»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le mot «التعليمة عدد» qui précède chaque consigne (3 fois) est omis."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les 6 étapes de l'exercice 2 sont données dans l'ordre de l'image, et non dans l'ordre correct. C'est conforme à l'image, mais la transcription les présente comme une liste ordonnée."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Éveil scientifique 5ème année — Évaluations"
+}

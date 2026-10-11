@@ -1,0 +1,143 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 30,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : le jeune cycliste et la petite fille handicapée (Sophie) – entraide et regard bienveillant sur le handicap",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4-b",
+      "instruction": "Est-ce que les hommes obéissent au jeune cycliste ?",
+      "body": "Ligne de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p030_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-c",
+      "instruction": "Relève, dans le texte, les détails qui le montrent :",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p030_i2",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Écris des mots du texte qui ont le même sens que les mots suivants :",
+      "body": "- Commander : ...........\n- Fâché : ...........\n- Étonné : ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p030_i3",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Entoure la bonne réponse :",
+      "body": "« Nous avons eu très peu d'efforts à faire. Et pourtant tout est fini. » veut dire :\n- Il faut s'entraider pour réussir.\n- Avec un peu d'efforts on ne peut pas réussir.\n- On ne doit pas aider les autres.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p030_i4",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Insère les expressions suivantes dans le récit pour obtenir un texte :",
+      "body": "Expressions (encadré) :\n- une enfant handicapée\n- essaie de la satisfaire et de la faire rire\n- les traits physiques de son visage gardent une profonde tristesse\n- a pitié d'elle\n\nRécit à compléter :\nChaque fois qu'il fait beau, le soir après la classe, nous passons chercher notre amie Sophie pour sa promenade habituelle.\nSophie est ..........., elle ne peut pas se tenir sur les jambes. Pourtant, on l'aime bien et on ...........\nPersonne n'ose la blesser ou l'attrister avec des mots ou des regards malsains.\nAu contraire, tout le monde ...........\nOn l'emmène partout ; au parc, au magasin, au club d'enfants de la cité. Et pourtant, ...........\nPauvre Sophie ! Si seulement elle pouvait marcher comme les autres !",
+      "figureDesc": "Encadré rectangulaire listant les quatre expressions à insérer dans les blancs du récit.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p030_i5",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m4",
+    "confidence": 0.22
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français sur une petite fille handicapée et le regard bienveillant des autres, thème de tolérance et d'acceptation de la différence (Module 3 « Accepter les autres »), mais le thème de l'entraide du Module 4 reste possible, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    121
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture : entraide et handicap",
+    "skill": "Comprendre un récit en relevant des détails, en trouvant des synonymes, en interprétant une phrase et en complétant un résumé.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "qcm",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "synonymes",
+      "entraide",
+      "handicap",
+      "résumé à compléter",
+      "bienveillance"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable : question de justification avec relevé d'indices, recherche de synonymes, choix de la signification d'une phrase, puis résumé à compléter avec des expressions fournies, autour d'un récit sur l'entraide et le regard bienveillant sur le handicap.",
+    "themeGroup": "Métiers, citoyenneté et vie sociale"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de la page ne sont pas transcrits : « Sagesse », « Lecture - Compréhension », « 6ème année de base », ainsi que le pied de page « Lire et s'exprimer 29 »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les numéros des questions sont étiquetés [4-b] et [4-c], alors que l'image montre seulement « b- » et « c- », sans le numéro 4. Le 4 est déduit, il n'est pas visible."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« Ligne de pointillés pour écrire la réponse » et « réponse: None » sont des descriptions ajoutées, pas du texte de la page. Ce n'est pas bloquant."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

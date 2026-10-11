@@ -1,0 +1,135 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 44,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Éducation islamique : عدد الركعات في كل صلاة وكيفية الصلاة (nombre de rak'at de chaque prière et manière d'accomplir la prière). Cette page ne relève pas des mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "عدد الركعات في كل صلاة",
+      "body": "الفَجْرُ رَكْعَتَانِ / الظُّهْرُ أَرْبَعُ رَكَعَاتٍ / العَصْرُ أَرْبَعُ رَكَعَاتٍ / المَغْرِبُ ثَلاثُ رَكَعَاتٍ / العِشَاءُ أَرْبَعُ رَكَعَاتٍ",
+      "figureDesc": "Cinq illustrations rondes : un coq au lever du jour (Fajr), un garçon sous un parasol avec un soleil au zénith (Dhuhr), un garçon sous un soleil d'après-midi sur une colline verte (Asr), un coucher de soleil avec la silhouette d'un arbre (Maghrib), un croissant de lune dans un ciel étoilé (Isha).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p044_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "كيفية الصلاة (عباداتي الصلاة)",
+      "body": "1 تكبيرة الإحرام: أتوجه إلى القبلة وأنوي الصلاة في قلبي لله فلا أقول أنويت أن أصلي الظهر مثلا، فالنية محلها القلب ثم أرفع يدي وأقول (الله أكبر).\n2 قراءة الفاتحة: أضع يدي اليمنى على اليسرى على الصدر ثم أقرأ الفاتحة ثم ما تيسر لي أحفظ من القرآن الكريم.\n3 الركوع: أكبر ثم أركع وظهري مستوٍ ثم أقول (سبحان ربي العظيم) ثلاث مرات.\n4 الرفع من الركوع: الرفع من الركوع قائلاً (سمع الله لمن حمده) ثم أقول: (ربنا ولك الحمد).\n5 السجود: أسجد مكبراً (الله أكبر) وأقول (سبحان ربي الأعلى).\n6 الرفع من السجود: أعتدل جالساً وأقول (رب أغفر لي).\n7 السجود مرة ثانية: أسجد مرة ثانية مكبراً (الله أكبر) وأقول (سبحان ربي الأعلى).\n8 التشهد: التحيات لله والصلوات والطيبات السلام عليك أيها النبي ورحمة الله وبركاته السلام علينا وعلى عباد الله الصالحين أشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمداً عبده ورسوله اللهم صل على محمد وعلى آل محمد كما صليت على إبراهيم وعلى آل إبراهيم وبارك على محمد وعلى آل محمد كما باركت على إبراهيم وعلى آل إبراهيم في العالمين إنك حميد مجيد.\n9 السلام: ألتفت يميناً وأقول (السلام عليكم ورحمة الله).\n10 السلام: التفت يساراً وأقول (السلام عليكم ورحمة الله).",
+      "figureDesc": "Tableau illustré « عباداتي الصلاة » : dix étapes numérotées montrant un garçon en tenue orange et bleue sur un tapis vert (takbir, lecture de la Fatiha, ruku', redressement, sujud, assise, second sujud, tashahhud, salam à droite, salam à gauche), chacune avec un encadré de texte coloré.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p044_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "قال تعالى إن الصلاة كانت على المؤمنين كتاباً موقوتا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p044_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-5-p3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.25
+  },
+  "topicSubject": "Éducation islamique",
+  "topicReason": "La page traite du nombre de rak'at de chaque prière et de la manière d'accomplir la prière (Éducation islamique), matière absente de la liste des chapitres officiels, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "La prière : rak'at et étapes",
+    "skill": "Connaître le nombre de rak'at de chaque prière quotidienne et décrire les premières étapes de la prière (takbîr, Fâtiha, ruku').",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "prière",
+      "rak'at",
+      "takbîrat al-ihrâm",
+      "Fâtiha",
+      "ruku'",
+      "intention"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La liste des cinq prières avec leur nombre de rak'at et la séquence numérotée des gestes se prêtent à un tableau récapitulatif, un appariement prière/rak'at, un remise en ordre des étapes ou une infographie illustrée pas à pas.",
+    "themeGroup": "La prière"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Étape 2 : l'image indique « على المعصم/السرر » (texte peu lisible) et non « على الصدر ». Le mot « الصدر » est probablement une correction ou une invention. Vérifier sur l'original (« على اليسرى على الصدر » est plausible mais n'est pas clairement lisible)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Étape 2 : « ثم ما تيسر لي أحفظ » ; l'image semble indiquer « ثم أقرأ ما تيسر لي مما أحفظ » / « ما تيسر لي من القرآن ». La structure « ثم أقرأ الفاتحة ثم ما تيسر » est une reconstruction douteuse."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Étape 6 : « أغفر لي » dans l'image est écrit « أغفرلي » ; la forme correcte est « اغفر لي » (hamza de liaison). La transcription est fidèle à l'image mais l'orthographe est fautive."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Étape 3 : « أكبر ثم أركع وظهري مستوٍ » ; l'image indique « أكبر ثم أركع وظهري مستوي », avec la voyelle/tanwin ajoutée en transcription."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les étapes sont dans l'ordre logique 1 à 10, alors que la mise en page de l'image place les étapes 7 et 8 (et le texte du tachahhud) dans la seconde rangée, de droite à gauche. L'ordre de lecture est acceptable mais ne reflète pas la disposition exacte."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Étape 9 : « ألتفت » (avec hamza de coupure) dans l'image contre « التفت » à l'étape 10 ; incohérence reproduite fidèlement, à noter. Les voyelles visibles sur les titres des prières sont correctes."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres de pas (تكبيرة الإحرام، قراءة الفاتحة، etc.) sont inclus, mais le titre « عباداتي الصلاة » est placé entre parenthèses ; les numéros dans les étoiles sont bien rendus. Les deux petites cases vides en bas du cadre ne sont pas mentionnées (sans importance)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

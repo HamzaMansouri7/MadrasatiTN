@@ -1,0 +1,147 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 6,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقييم فهم المنطوق/المقروء: نص «زينب والحصالة» (ادخار المال وحسن التصرف) مع جدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُرَتِّبُ أَحْدَاثَ النَّصِّ بِوَضْعِ الْأَرْقَامِ مِنْ 1 إِلَى 3.",
+      "body": "- تَفْقِدُ أَحْصَالَهَا.\n- ادِّخَارُ الْمَالِ فِي الْحَصَّالَةِ.\n- فَرِحَ زَيْنَبُ بِمَا جَمَعَتْهُ مِنْ مَالٍ.",
+      "figureDesc": "Trois cercles vides alignés verticalement à gauche des phrases, pour écrire les numéros. Barème 0,5 par ligne. Critère مع2ج (3 cases).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "evaluations_toutes_matieres_p006_i1",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُلَوِّنُ الْإِجَابَةَ الصَّحِيحَةَ بِالرُّجُوعِ إِلَى النَّصِّ. أَكْتُبُ قَرِينَةً مِنَ النَّصِّ تُنَاسِبُ الْإِجَابَةَ.",
+      "body": "ذَهَبَتْ زَيْنَبُ إِلَى مَغَازَةِ بَيْعِ الْهَوَاتِفِ.\nتَخَيَّلَتْ زَيْنَبُ نَفْسَهَا فِي مَغَازَةِ بَيْعِ الْهَوَاتِفِ.\n..............................................",
+      "figureDesc": "Deux phrases dans des cadres rectangulaires à colorier, puis une ligne pointillée pour la preuve. Critères مع2أ (2 cases) et مع2ب (1 case). Barème 0,5 + 0,5 + 0,5.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "evaluations_toutes_matieres_p006_i2",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُكَمِّلُ بِالْكَلِمَاتِ التَّالِيَةِ حَسَبَ الْمَعْنَى : ( هَمَسَتْ - اقْتَنَتْ - أَمْعَنَتْ )",
+      "body": "........... أُمِّي النَّظَرَ فِي الْمَلَابِسِ الْمَعْرُوضَةِ بِوَاجِهَةِ الْمَغَازَةِ. ثُمَّ دَخَلَتْ وَ ........... مَا أَعْجَبَهَا وَ ........... فِي أُذُنِي : « هَذِهِ الْبُدْلَةُ لَكِ لِيَوْمِ الْعِيدِ.»",
+      "figureDesc": "Texte à trous avec points de suite. Critère مع2د (3 cases). Barème 0,5 par trou.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "evaluations_toutes_matieres_p006_i3",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَضَعُ فِي إِطَارِ الْعُنْوَانَ الْمُنَاسِبَ لِلنَّصِّ.",
+      "body": "الْحَصَّالَةُ الْفَارِغَةُ - حُسْنُ التَّصَرُّفِ - عِيدُ مِيلَادِ أُمِّي",
+      "figureDesc": "Trois titres proposés dont un à encadrer. Critère مع2هـ (3 cases). Barème 0,5.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "evaluations_toutes_matieres_p006_i4",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "ادَّخَرَتْ زَيْنَبُ الْمَالَ لِتَشْتَرِيَ هَاتِفًا. أَذْكُرُ حَالَاتٍ أُخْرَى أَدَّخِرُ لَهَا الْمَالَ لِأُحَقِّقَهَا.",
+      "body": "..............................................",
+      "figureDesc": "Ligne pointillée de réponse. Barème 0,5.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "evaluations_toutes_matieres_p006_i5",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "عَلِمَتْ زَيْنَبُ بِعِيدِ مِيلَادِ أُمِّهَا. لَوْ كُنْتَ مَكَانَهَا كَيْفَ تَتَصَرَّفُ ؟ وَلِمَاذَا ؟",
+      "body": "- لَوْ كُنْتُ مَكَانَ زَيْنَبَ : ..............................\nالتَّعْلِيلُ : ..............................",
+      "figureDesc": "Deux lignes pointillées. Critère مع3 (1 case + 2 cases). Barème 1 / 1 / 1.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "evaluations_toutes_matieres_p006_i6",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مع1 : الْقِرَاءَةُ الْجَهْرِيَّةُ — الْقِرَاءَةُ السَّلِيمَةُ مِنَ الْأَخْطَاءِ: مِنْ 0 إِلَى 2,5 ؛ الْقِرَاءَةُ الْمُسْتَرْسِلَةُ : مِنْ 0 إِلَى 2,5 ؛ الْقِرَاءَةُ الْمُنَغَّمَةُ : مِنْ 0 إِلَى 3. المجموع: 20 = 12 + 8.\nمعايير الحد الأدنى: مع1أ، مع2ب، مع2ج، مع2د، مع2هـ ؛ معيار التميز: مع3.\nانْعِدَامُ التَّمَلُّكِ (--): 0 في كل المعايير.\nالتَّمَلُّكُ دُونَ الْأَدْنَى (-+): 0,5 - 1 لـ مع1؛ 0,5 لكل من مع2؛ 1 لـ مع3.\nالتَّمَلُّكُ الْأَدْنَى (+-): 1,5 - 2 ؛ 1 ؛ 2 لـ مع3.\nالتَّمَلُّكُ الْأَقْصَى (++): 2,5 - 3 ؛ 1,5 ؛ 3 لـ مع3.",
+      "figureDesc": "Tableau de notation par niveaux de maîtrise et critères, avec encadré de lecture à voix haute (مع1) et total sur 20. Numéro de page 5.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "evaluations_toutes_matieres_p006_i7",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-2-u2",
+  "topicTitle": "Unité 2 : Environnement, consommation et initiative",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-2-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p2",
+    "confidence": 0.26
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Page d'évaluation de compréhension en arabe sur le texte «Zeinab et la tirelire» (épargne, bon usage de l'argent, achat), qui se rattache le plus probablement à l'unité 2 (consommation et initiative), mais l'unité exacte reste incertaine car la page est une évaluation avec grille de notation.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de texte : l'épargne",
+    "skill": "Comprendre un texte entendu ou lu (ordre des événements, indices dans le texte, titre adapté, vocabulaire en contexte) et exprimer son opinion sur la gestion de l'argent.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "qcm",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "épargne",
+      "tirelire",
+      "compréhension écrite",
+      "vocabulaire",
+      "évaluation",
+      "barème de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une série d'exercices de compréhension autour d'une situation d'épargne (remettre les événements dans l'ordre, justifier par un indice du texte, choisir un titre, compléter avec des verbes, imaginer d'autres buts d'épargne, se mettre à la place du personnage), accompagnée d'une grille de notation de la lecture.",
+    "themeGroup": "Compréhension: l'argent et l'épargne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

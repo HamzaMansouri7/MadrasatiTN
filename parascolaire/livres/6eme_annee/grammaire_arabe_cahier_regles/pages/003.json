@@ -1,0 +1,136 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 3,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الإضافة: الأسماء المعرفة بالإضافة (الإضافة إلى المعرف بـ ال، إلى الضمير، إلى اسم علم) – ملاحظة : la page est en arabe, bien que la matière soit indiquée comme Français",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اجعل الأسماء النكرة معرفة بالإضافة",
+      "body": "شاب في العشرين من العمر، نحيف ، طويل ، جميل\nدق جرس فاصطف تلاميذ و أمرهم مدير بالدخول\nسافر ابن إلى الخارج لمواصلة دراسـتـه و الحصول على شهادة\nأبو شاعر تونسي من مواليد واحة\n(les mots en gras dans le texte : نحيف، طويل، جميل، جرس، تلاميذ، مدير، ابن، دراسـ، شهادة، أبو، واحة)",
+      "figureDesc": "Texte à trous dans un cadre : des espaces vides sont laissés après les mots en gras pour compléter par un complément d'annexion.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p003_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أصنف الأسماء المعرفة بالإضافة في الجدول التالي",
+      "body": "عاد أبو أحمد إلى البيت منهوك القوى، بعد يوم قضاه في حقله يزرع تارة و يسقي طورا، أما زوجته أم الخير فقد كانت تنتظره بفارغ الصبر داعية الله أن يوفقه و أن تكون صابة الغلال ممتازة",
+      "figureDesc": "Tableau vide à 3 colonnes : الإضافة إلى المعرف بـ ال | الإضافة إلى الضمير | الإضافة إلى اسم علم",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p003_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أجيب على السؤال بإضافة الاسم المسطر إلى الاسم الموضوع بين قوسين و اسطر الاسم المضاف اليه",
+      "body": "سيارة من هذه ؟ (أحمد)\nكتاب من هذا ؟ (أنا)\nأصدقاء من هؤلاء ؟ (ليلى)\nابن من هذا ؟ (الجيران)\n(les mots سيارة، كتاب، أصدقاء، ابن sont soulignés)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p003_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "زرت ضيعة تتصف بحسن تنظيم المغروسات فيها، صفها مستعملا أسماء معرفة بالإضافة",
+      "body": "",
+      "figureDesc": "Grand cadre vide pour la rédaction de la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p003_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u6",
+    "confidence": 0.14
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de grammaire arabe sur l'annexion (الإضافة) et les noms définis par annexion, mais les chapitres officiels d'arabe de 6ème traitent de la narration, de la description, du dialogue, etc., et aucun ne correspond clairement à ce point de grammaire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "L'annexion (الإضافة) et définition des noms",
+    "skill": "Rendre un nom défini par annexion à un nom défini par ال, à un pronom ou à un nom propre, puis identifier et employer ces annexions.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "إضافة",
+      "nom défini",
+      "complément d'annexion",
+      "grammaire arabe",
+      "6ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : transformer des noms indéfinis en noms définis dans de courtes phrases du quotidien, classer les annexions dans un tableau à partir d'un petit texte, répondre à « à qui est-ce ? » par annexion, et décrire une ferme bien organisée en production guidée.",
+    "themeGroup": "Les cinq noms et l'annexion"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1: l'image montre « دراستـ » (mot coupé, le ه final n'est pas visible), alors que la transcription écrit « دراسـتـه » avec un ه ajouté."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2: le tableau à 3 colonnes (الإضافة إلى المعرف بـ ال / الإضافة إلى الضمير / الإضافة إلى اسم علم) n'est pas transcrit."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: la transcription indique « منهوك » et « حقله » en gras, alors que l'image montre en gras « منهوك القوى », « أبو أحمد », « أم الخير », « صابة الغلال », « زوجته » et « حقله ». La liste des mots en gras n'est donc pas fournie pour cet exercice."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1: dans la liste des mots en gras, « دراسـ » est mentionné mais « جرس » est suivi de « مدير » et « واحة » ; les mots en gras « بالدخول » ne le sont pas. À part cela, la transcription est cohérente."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 3: l'ordre des mots soulignés et des mots entre parenthèses est inversé par rapport à l'image. Dans l'image, le nom entre parenthèses (أحمد, أنا, ليلى, الجيران) est à droite, et il n'y a pas de parenthèses."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

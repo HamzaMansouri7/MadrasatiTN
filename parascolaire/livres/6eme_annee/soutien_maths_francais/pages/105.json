@@ -1,0 +1,152 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 105,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Épreuve de français (hors mathématiques) : conjugaison (conditionnel présent), orthographe et production écrite sur la technologie et les réseaux sociaux. La page n'a pas de lien avec les mathématiques ; il s'agit d'une page d'examen de langue française.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "C.6",
+      "instruction": "Écris le verbe entre parenthèses au conditionnel présent. (1pt)",
+      "body": "Si nous utilisions internet, nous (finir)……………………… par changer nos habitudes.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p105_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D.1",
+      "instruction": "Orthographe (3pts) – Accorde correctement les adjectifs qualificatifs entre parenthèses. (1pt)",
+      "body": "Aujourd'hui, les réseaux (social)……………………… sont devenus une passion (commun)………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p105_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D.2",
+      "instruction": "Écris correctement les mots entre parenthèses : (1pt)",
+      "body": "Avec les nouvelles technologies, les (travail)……………………… à domicile pourraient se faire sur les (portail)……………………… des établissements.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p105_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D.3",
+      "instruction": "Complète par (tout – toute – tous – toutes). (1pt)",
+      "body": "……………………… les réseaux sociaux permettent de partager ……………………… nos expériences.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p105_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "III.1",
+      "instruction": "Production de l'écrit (7pts) – Complète le texte donné par les mots suivants : écrans – complètement – évolue – quotidien. (2pts)",
+      "body": "La technologie ………………………vite et s'installe dans nos vies tout aussi rapidement. Le ……………………… de plusieurs adultes et enfants d'aujourd'hui implique une multitude d'……………………… leur permettant de s'informer, se divertir et communiquer. Nous devenons ……………………… dépendants de toute cette technologie.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p105_i5",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "III.2",
+      "instruction": "En 5 à 6 lignes, rédige un texte argumentatif pour parler de l'importance de la technologie dans nos vies quotidiennes. (5pts)",
+      "body": "",
+      "figureDesc": "Dix lignes pointillées pour la rédaction ; la mention « Bonne chance ! » figure en bas de page.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p105_i6",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.26
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une épreuve de français générale (conditionnel présent, accords, tout/tous, production écrite sur la technologie) qui couvre plusieurs points; le conditionnel présent renvoie au module 6 mais le thème de la technologie et des réseaux sociaux ne correspond à aucun module précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Conjugaison, orthographe et production écrite",
+    "skill": "Conjuguer au conditionnel présent, accorder les mots et rédiger un texte sur la technologie.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "conditionnel présent",
+      "accord des adjectifs",
+      "pluriel des noms",
+      "tout/tous/toute/toutes",
+      "technologie",
+      "texte argumentatif"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un fil conducteur thématique (technologie et réseaux sociaux) relie conjugaison, orthographe et rédaction, avec un texte à compléter par des mots donnés puis un court texte argumentatif, ce qui donne un modèle d'examen de langue cohérent.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte de la page « Bonne chance ! » et le bandeau « Ne rien écrire ici » ne sont pas transcrits (éléments non pédagogiques, omission mineure)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « D. Orthographe : (3pts) » est fusionné avec D.1, et « III. Production de l'écrit (7pts) » avec III.1. Le découpage est acceptable mais les titres de section sont liés à la première question."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

@@ -1,0 +1,100 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 24,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "أقوال وحكم، ونص سردي لوصف الحيرة والقلق (انتظار قدوم الأخ)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أقوال وحكم",
+      "body": "من جد وجد ومن زرع حصد\nفي الاتحاد قوة\nلا تؤجل عمل اليوم إلى الغد\nمن طلب المعالي سهر الليالي\nالعلم نور والجهل ظلام\nوجعلنا من الماء كل شيء حيا التعاون سر النجاح\nوتعاونوا على البر والتقوى\nالماء أرخص موجود وأغلى مفقود\nالنظافة من الايمان\nنم باكرا وقم باكرا\nالجنة تحت أقدام الأمهات\nقطرة ماء خير من ألف كنز\nفي التأني السلامة وفي العجلة الندامة\nالصبر مفتاح الفرج\nوجه بلا ابتسامة كحديقة بلا أشجار\nمن يعمل صالحا يجن خيرا\nاليسير يصير كثيرا",
+      "figureDesc": "إطار مستطيل يحيط بالأقوال والحكم، يعلوه العنوان «أقوال وحكم».",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p024_i1",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "ينظر إلى الساعة من حين إلى آخر\nجالت بخاطره عدة أسئلة عجز عن ايجاد أجوبة لها\nذهب خياله إلى أخطر الاحتمالات ولكنه في كل مرة يحاول طردها\nاحتار ساور تردد ذهل تلعثم خامر\nكان يقضي نهاره في حيرة وندم ويبيت ليله في هم ونكد\nانتشر في البيت الحزن والحيرة\nيعبس فتتهجم سحنته\nداهمه الخوف وساورته هواجس شتى\nتقدمت في خطى مترددة وأنا أتحسس الطريق\nكنت أتأمله فتزدحم في خاطري أسئلة كثيرة\nوتوالت الأيام متثاقلة متباطئة متراخية\nوكنت أتحرق شوقا لقدوم أخي فأرسل النظر من النافذة تارة\nوأركض إلى ناصية الشارع مستطلعا طورا\nانتحى كل واحد منا ركنا وهو واجم\nكنت أقدم رجلا وأأخر أخرى",
+      "figureDesc": "إطار ثان يضم جملا وعبارات معجمية عن الحيرة والقلق والانتظار، دون ترقيم أو تشكيل.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "production_ecrite_arabe_p024_i2",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u4",
+  "topicTitle": "Unité 4 : Description et caractérisation des personnages",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "ar-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-ch2",
+    "confidence": 0.19
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page rassemble des proverbes et un texte narratif décrivant l'inquiétude et le trouble d'un personnage (vocabulaire des états d'âme : حيرة، قلق، خوف). Cela relève de la caractérisation morale des personnages (Unité 4), mais la page est une compilation hétérogène et aucun chapitre ne correspond clairement, d'où une confiance faible.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Proverbes et texte narratif",
+    "skill": "Comprendre et réutiliser des proverbes, et enrichir le lexique de l'inquiétude et de l'attente pour décrire un état d'âme dans un récit.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "proverbes",
+      "sagesses",
+      "lexique de l'inquiétude",
+      "description des sentiments",
+      "texte narratif",
+      "attente"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une liste de proverbes pour des exercices d'appariement ou d'explication de sens, et une situation d'attente anxieuse (un frère qui tarde) avec un champ lexical de la perplexité pour guider une production écrite descriptive.",
+    "themeGroup": "Expressions, proverbes et mots de liaison"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ligne \"وجعلنا من الماء كل شيء حيا التعاون سر النجاح\" : l'image la montre ainsi sur une seule ligne, la transcription est fidèle, mais ce sont deux proverbes distincts accolés (pas d'erreur de mots)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre \"أقوال وحكم\" est placé avant le cadre dans l'OCR, ce qui est correct ; la séparation entre les deux cadres est marquée par \"||\" sans erreur de contenu."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "\"وأأخر أخرى\" : l'image montre bien \"وأأخر أخرى\" (graphie avec double hamza), conforme ; aucune correction nécessaire."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

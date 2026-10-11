@@ -1,0 +1,162 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 54,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "التمييز (تمييز المفرد وتمييز النسبة) - Le complément de précision (tamyīz) en grammaire arabe",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تتمة جدول الأمثلة: المفعول لأجله / الحال",
+      "body": "المفعول لأجله | لماذا | زرت ضيعة جدي للترفيه عن نفسي | لماذا زرت الضيعة\nالحال | كيف | عاد أبي إلى البيت متعبا | كيف عاد أبي ؟",
+      "figureDesc": "جدول من أربعة أعمدة وسطرين: النوع، أداة السؤال، المثال، السؤال",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p054_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "التمييز اسم نكرة يذكر ليزيل الإبهام عن اسم أو جملة قبله وحكمه النصب\nالتمييز يأتي للذوات بعكس الحال التي تأتي للهيئات\nالتمييز المفرد يتعلق باسم متقدم عليه يدعى مميزا\nيرد التمييز المفرد لبيان المقادير أو لبيان العدد",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p054_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تمييز الفرد",
+      "body": "بعد أسماء المقادير: الوزن: استهلكت رطلا دقيقا | الكيل: استعملت لترا حليبا | المساحة: ابتعت هكتارا أرضا\nبعد أسماء العدد: العدد الصريح: اشتريت عشرين كراسا | كناية العدد: طالعت كذا كتبا",
+      "figureDesc": "جدول تمييز الفرد: بعد أسماء المقادير (الوزن، الكيل، المساحة) وبعد أسماء العدد (العدد الصريح، كناية العدد)، والكلمات المميِّزة (دقيقا، حليبا، أرضا، كراسا، كتبا) مسطّرة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p054_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "قاعدة تمييز المقادير",
+      "body": "الأسماء الدالة على المقاييس والمقادير والموازين والمكاييل أسماء مبهمة تزيل الإبهام عن هذه الأسماء باسم منصوب يسمى تمييزا\nيكون تمييز المقادير اسما منصوبا أو مركبا بحرف الجر\nزرع جدي قنطارا شعيرا      زرع جدي قنطارا من الشعير",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p054_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أضف إلى معلوماتك",
+      "body": "تمييز النسبة: المنقول: عن الفاعل: فاض الإناء زيتا | عن المفعول به: ملأت الإناء زيتا | عن المبتدأ: الإناء مملوء زيتا. غير المنقول: عن شيء: لله دره عالما",
+      "figureDesc": "جدول تمييز النسبة: المنقول (عن الفاعل، عن المفعول به، عن المبتدأ) وغير المنقول (عن شيء) مع أمثلة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p054_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أجعل سطرا تحت التمييز في ما يلي",
+      "body": "اشترى التاجر ثلاثين طنا بصلا ، وستين رطلا سكرا ، وبرميلا زيتا\nفي الكتاب عشرون صفحة ومائة وستون صورة\nأكلت لحما مشويا ورطلا مشمشا\nلله درك تلميذا مجتهدا\nمن يعمل مثقال ذرة خيرا يره، ومن يعمل مثقال ذرة شرا يره",
+      "figureDesc": "إطار مستطيل يحيط بالتمرين",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "grammaire_arabe_cahier_regles_p054_i6",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-ch2",
+    "confidence": 0.15
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite du tamyīz (complément de précision), un point de grammaire arabe, mais les chapitres officiels d'arabe de 6ème portent sur la narration et ses types de passages, et aucun ne mentionne cette notion grammaticale.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Le complément de précision (tamyīz)",
+    "skill": "Identifier et distinguer le tamyīz du nombre et des mesures (poids, capacité, surface), et le souligner dans des phrases.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "tamyīz",
+      "complément de précision",
+      "mesures et quantités",
+      "nom de nombre",
+      "grammaire arabe",
+      "accusatif"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : tableau de classement des tamyīz par catégorie (poids, capacité, surface, nombre) avec exemples tirés de la vie quotidienne (courses, ferme, école), et exercice de repérage par soulignement dans des phrases variées, y compris des versets coraniques.",
+    "themeGroup": "Les compléments"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre « تتمة جدول الأمثلة: المفعول لأجله / الحال » est inventé : l'image n'a pas ce titre, la page commence directement par le tableau."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre « قاعدة تمييز المقادير » est inventé : il n'apparaît pas dans l'image, le paragraphe suit simplement le tableau."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "« التمارين » (titre de section) et « التمرين الأول » sont absents ; le libellé « [1] » ne reproduit pas « التمرين الأول »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les cellules du tableau « تمييز الفرد » sont regroupées par catégorie ; l'ordre de lecture RTL du tableau diffère de la mise en page (mineur). Les lignes « الحال » et « المفعول لأجله » sont correctes."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Aucune voyelle n'est visible dans l'image, la transcription est cohérente sur ce point. Les mots soulignés (دقيقا، حليبا، أرضا، كراسا، كتبا) ne sont pas signalés comme soulignés."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

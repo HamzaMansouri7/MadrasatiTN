@@ -1,0 +1,738 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 53,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "Corrigés d'« إيقاظ علمي السنة السادسة » (pages 57 à 61 du manuel) : malnutrition, vitamines, alimentation équilibrée, maladies infectieuses et vaccination, peau, sang, groupes d'aliments",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "57-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 57",
+      "body": "ينتج سوء التغذية عن سوء في التغذية أو إفراط في استهلاك الأغذية ويتسبب في أمراض خطيرة تشوه الجسم وتؤدي أحيانا إلى الموت.",
+      "figureDesc": "",
+      "answer": "ينتج سوء التغذية عن سوء في التغذية أو إفراط في استهلاك الأغذية ويتسبب في أمراض خطيرة تشوه الجسم وتؤدي أحيانا إلى الموت.",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "57-2",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 57",
+      "body": "- نقص في فيتامين «د» ينتج عنه مرض الكساح.\n- نقص في فيتامين «ج» ينتج عنه نزف اللثة وتسوس الأسنان.\n- نقص في فيتامين «أ» ينتج عنه ضعف الرؤية ليلا.\n- كثرة الأكل وقلة النشاط ينتج عنه مرض السمنة.",
+      "figureDesc": "",
+      "answer": "نقص فيتامين د: الكساح؛ نقص فيتامين ج: نزف اللثة وتسوس الأسنان؛ نقص فيتامين أ: ضعف الرؤية ليلا؛ كثرة الأكل وقلة النشاط: السمنة",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "58-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 58",
+      "body": "المشكلة: الإكثار من تناول وجبة تحتوي على زلاليات فقط.\n- سيعانيان من السمنة.\n- أنصحهما بتناول وجبة غذائية متوازنة، متنوعة بكميات معتدلة وفي مواعيدها.",
+      "figureDesc": "",
+      "answer": "المشكلة: الإكثار من تناول وجبة تحتوي على زلاليات فقط؛ سيعانيان من السمنة؛ أنصحهما بتناول وجبة غذائية متوازنة، متنوعة بكميات معتدلة وفي مواعيدها.",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "58-2",
+      "instruction": "صواب أو خطأ (الإجابات مكتوبة في المربعات)",
+      "body": "- المسنّ في حاجة إلى أغذية واقية. [صواب]\n- نقص فيتامين (د) يؤدي إلى صعوبة الرؤية الجيدة ليلا. [خطأ]\n- يتسبب عدم وجود الفيتامين (ج) في الأغذية في مرض الإسقربوط. [صواب]\n- ينتج سوء التغذية عن إفراط في استهلاك الأغذية. [صواب]\n- يحتاج الطفل المراهق إلى أغذية البناء والنمو. [صواب]\n- ضوء الشمس يساعد في تكوين العظام وصلابتها. [صواب]",
+      "figureDesc": "Cases « صواب / خطأ » à gauche de chaque phrase",
+      "answer": "صواب، خطأ، صواب، صواب، صواب، صواب",
+      "topicId": "sci-6-u3",
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "58-3",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 58",
+      "body": "المرض الذي يصيب الأطفال الذين يعيشون في أماكن لا تصل إليها أشعة الشمس هو الكساح.",
+      "figureDesc": "",
+      "answer": "الكساح",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "58-4",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 58",
+      "body": "إن عدم الاهتمام بفطور الصباح عند التلميذ له انعكاسات سلبية على متابعته لدروسه من أهمها:\n- لا يبذل جهدا فكريا أو عضليا.\n- فقدان الرغبة في العمل.\n- عدم احتمال البرد.\n- حدوث اضطرابات نفسانية.",
+      "figureDesc": "",
+      "answer": "لا يبذل جهدا فكريا أو عضليا؛ فقدان الرغبة في العمل؛ عدم احتمال البرد؛ حدوث اضطرابات نفسانية",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "59",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 59",
+      "body": "- الكريات الحمراء تنقل الأكسجين من الرئتين إلى الخلايا.\n- الكريات البيضاء تحارب الجراثيم.\n- البلازما تنقل المواد الغذائية.\n- الصفيحات تلعب دورا في تحثر الدم.\n- الصمام يمنع عودة الدم من البطين إلى الأذينة.",
+      "figureDesc": "",
+      "answer": "الكريات الحمراء: نقل الأكسجين؛ الكريات البيضاء: محاربة الجراثيم؛ البلازما: نقل المواد الغذائية؛ الصفيحات: تحثر الدم؛ الصمام: يمنع عودة الدم من البطين إلى الأذينة",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "59-a",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 59",
+      "body": "اختلاف شدة المرض يتمثل في أن سامي قام بتلقيح جسمه ضد مرض الجدري، فعند دخول هذه الجرثومة إلى الجسم اكتسب الموادّ المضادة للجرثومة التي أنتجتها من قبل الكريات الدم البيضاء، حصانة للجسم، في حين فهي لم تتم بمثل هذا التلقيح.",
+      "figureDesc": "",
+      "answer": "اختلاف شدة المرض يتمثل في أن سامي قام بتلقيح جسمه ضد مرض الجدري، فعند دخول هذه الجرثومة إلى الجسم اكتسب الموادّ المضادة للجرثومة التي أنتجتها من قبل الكريات الدم البيضاء، حصانة للجسم، في حين فهي لم تتم بمثل هذا التلقيح.",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "59-b",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 59",
+      "body": "د) الرئتين",
+      "figureDesc": "",
+      "answer": "د) الرئتين",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "60-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 60",
+      "body": "- الحقن ضد مرض الخناق.\n- الكشط ضد مرض السل.\n- التجرع ضد مرض الشلل.",
+      "figureDesc": "",
+      "answer": "الحقن: الخناق؛ الكشط: السل؛ التجرع: الشلل",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i10"
+    },
+    {
+      "kind": "exercise",
+      "number": "60-2",
+      "instruction": "رتب مراحل المرض بالأرقام",
+      "body": "[1] دخول الجراثيم إلى الرئة عن طريق المجاري الهوائية.\n[4] تفجّر الدرنات الصغيرة ودخول الجراثيم في الأوعية الدموية.\n[2] إحداث التهابات في موضع الإصابة نتيجة مقاومة الجسم للجراثيم.\n[5] تكوّن تجاويف بالرئة فينقص حجمها وتضعف قدرتها على التنفس.\n[3] نمو الجراثيم وتكوّن درنات يحيط بها غشاء صلب يمنع دخول الهواء.",
+      "figureDesc": "Numéros écrits dans des cases",
+      "answer": "1، 4، 2، 5، 3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "60-3",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 60",
+      "body": "أ) الغطاء الخارجي لجسم الإنسان (الجلد).\nب) الطبقة الخارجية من الجلد (البشرة).\nج) ثقوب صغيرة تنتشر على سطح البشرة (المسام).\nد) مادة تساعد على ترطيب الجلد وحمايته من التشقق (غدة عرقية).\nهـ) الطبقة الداخلية من الجلد (الأدمة).",
+      "figureDesc": "",
+      "answer": "أ) الجلد؛ ب) البشرة؛ ج) المسام؛ د) غدة عرقية؛ هـ) الأدمة",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "61-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 61",
+      "body": "أ) اسم المجموعة المناسبة التي تنتمي إليها المعادلة الغذائية أعلاه: زلاليات حيوانية (المجموعة الأولى والثانية)\nب) تساعد الجسم على النمو والبناء وتجديد الخلايا.\nج) كمية الحليب التي تشربها لتعويض 150 غراما من اللحم هي 75 مل.",
+      "figureDesc": "",
+      "answer": "أ) زلاليات حيوانية؛ ب) النمو والبناء وتجديد الخلايا؛ ج) 75 مل",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i13"
+    },
+    {
+      "kind": "exercise",
+      "number": "61-2",
+      "instruction": "صل بخط كل مجموعة من الأغذية بدورها",
+      "body": "المجموعات: بيض، جبن، لحم / حمص جاف، عدس / عسل، خبز، بطاطا / أرز، زبدة، زيت / برتقال، [illisible]، خس.\nالأدوار: توفر الطاقة للجسم / تمكن الجسم من النمو / تقي الجسم من الأمراض.",
+      "figureDesc": "Deux colonnes reliées par des traits : cinq groupes d'aliments à gauche, trois rôles à droite",
+      "answer": "بيض، جبن، لحم ← تمكن الجسم من النمو؛ حمص جاف، عدس ← تمكن الجسم من النمو؛ عسل، خبز، بطاطا ← توفر الطاقة للجسم؛ أرز، زبدة، زيت ← توفر الطاقة للجسم؛ برتقال، [illisible]، خس ← تقي الجسم من الأمراض",
+      "topicId": "sci-6-u3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i14"
+    },
+    {
+      "kind": "exercise",
+      "number": "61-3",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 61",
+      "body": "الأكلة المتوازنة هي التي تتكون من أغذية بنّاءة وأغذية طاقية وأغذية واقية.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p053_i15"
+    },
+    {
+      "kind": "exercise",
+      "number": "61-4",
+      "instruction": "صل بخط: الفيتامين – الغذاء – نتائج النقص",
+      "body": "الفيتامين: أ، ج، د. الغذاء: البرتقال، زيت كبد الحوت، الجزر. نتائج النقص: ضعف الرؤية ليلا، الكساح، مرض الإسقربوط.",
+      "figureDesc": "Tableau de correspondance à trois colonnes reliées par des traits",
+      "answer": "أ ← الجزر ← ضعف الرؤية ليلا؛ ج ← البرتقال ← مرض الإسقربوط؛ د ← زيت كبد الحوت ← الكساح",
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "eveil_scientifique_cours_exercices_p053_i16"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u6",
+    "confidence": 0.44
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page contient les corrigés d'éveil scientifique sur la nutrition équilibrée, les vitamines et la malnutrition, la composition et le rôle du sang, le rôle des valves cardiaques et la vaccination, ce qui correspond à l'unité 3 (système circulatoire, nutrition, immunité et microbes).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Nutrition, santé et vaccination",
+    "skill": "Relier carences alimentaires, alimentation équilibrée, rôle du sang et prévention des maladies infectieuses par la vaccination.",
+    "pageType": "correction",
+    "formats": [
+      "vrai_faux",
+      "lecture_comprehension",
+      "appariement",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "malnutrition",
+      "vitamines",
+      "alimentation équilibrée",
+      "vaccination",
+      "sang",
+      "tuberculose"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : situations cause-effet entre carence en vitamine et maladie, comparaison de deux enfants vaccinés ou non, vrai/faux sur les besoins alimentaires, remise en ordre des étapes d'une maladie, association du rôle de chaque composant du sang.",
+    "themeGroup": "Santé, défense de l'organisme et maladies"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "[59-60] « في حين نهى لم تتم » : l'image porte « في حين فهي لم تتم » ; « نهى » est faux, la bonne valeur est « فهي »"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[61-2] « تلتل » : l'image porte « تلتل/نقل » (probablement « نقل » ou « ثلثل ») ; la lecture est incertaine"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[58-1] « أنصحهما بتناول وجبة غذائية متوازنة، متنوعة » : l'image porte « أنصحهما » ; le « و » ajouté dans la réponse (« متوازنة ومتنوعة ») n'existe pas dans le texte source"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[58-2] « أغذية واقية » : l'image porte « أغذية واقية » ; mais « الإسقربوط » est écrit « الاسكربوط/الأسقربوط » dans le texte source, sans « إ »"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[57-2] ligne « نقص في فيتامين «أ» » : l'image porte « نقص في فيتامين «أ» » ; mais le point de la séquence est fidèle ; l'ordre est correct"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "[61-2] et [61-4] : les liaisons tracées par traits dans l'image ne sont pas transcrites (réponse None), et l'exercice [61-3] présente une phrase déjà complétée sans les blancs"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les blocs du 60 (exercice 3 « الجلد... ») et du 59-60 sont mélangés avec l'ordre des colonnes ; le bloc « د) الرئتين » est rattaché au 59 sans distinction"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel visible dans l'image (par ex. « المَرَض », « الغِذاء ») est absent de la transcription entière"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[59-60] « في حين نهى لم تتم » : la lecture « فهي » est plausible dans l'image, mais le glyphe est ambigu. « نهى » ne donne pas de sens. Corrigé en « فهي »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "[60-2] « تفجر الرئات الصغيرة » : l'image porte « تفجّر الدرنات الصغيرة ». Il s'agit des tubercules et non des poumons."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[60-2] « عن طريق القنوات الهوائية » : l'image porte « عن طريق المجاري الهوائية »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[58-1] Le champ answer ajoute un « و » (« متوازنة ومتنوعة ») qui n'est pas dans le texte source (« متوازنة، متنوعة »)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[61-3] « أغذية بناء » : l'image porte « أغذية بنّاءة »."
+      },
+      {
+        "type": "invention",
+        "severity": "minor",
+        "detail": "[61-3] L'instruction « أكمل » est inventée. La phrase est déjà complète dans l'image, sans blancs, et la page ne donne pas de consigne pour ce passage."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[61-2] « تلتل » : lecture incertaine dans le scan. Remplacé par [illisible]."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "[61-2] et [61-4] : les traits de liaison visibles ne sont pas transcrits (answer null). Reconstitution d'après les traits, la correspondance 61-2 restant en partie incertaine."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "[59-60] Deux éléments distincts sont fusionnés : le texte « اختلاف شدة المرض… » et la réponse « د) الرئتين ». De plus, answer ne contient que « د) الرئتين » et omet le texte principal. Séparés en 59-a et 59-b."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel partiellement visible dans l'image (par ex. « المسنّ », « الموادّ », « تفجّر », « بنّاءة ») est absent de la transcription. Non reporté dans les items corrigés, sauf quelques cas."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "57-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 57",
+      "body": "ينتج سوء التغذية عن سوء في التغذية أو إفراط في استهلاك الأغذية ويتسبب في أمراض خطيرة تشوه الجسم وتؤدي أحيانا إلى الموت.",
+      "figureDesc": "",
+      "answer": "ينتج سوء التغذية عن سوء في التغذية أو إفراط في استهلاك الأغذية ويتسبب في أمراض خطيرة تشوه الجسم وتؤدي أحيانا إلى الموت.",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "57-2",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 57",
+      "body": "- نقص في فيتامين «د» ينتج عنه مرض الكساح.\n- نقص في فيتامين «ج» ينتج عنه نزف اللثة وتسوس الأسنان.\n- نقص في فيتامين «أ» ينتج عنه ضعف الرؤية ليلا.\n- كثرة الأكل وقلة النشاط ينتج عنه مرض السمنة.",
+      "figureDesc": "",
+      "answer": "نقص فيتامين د: الكساح؛ نقص فيتامين ج: نزف اللثة وتسوس الأسنان؛ نقص فيتامين أ: ضعف الرؤية ليلا؛ كثرة الأكل وقلة النشاط: السمنة",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "58-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 58",
+      "body": "المشكلة: الإكثار من تناول وجبة تحتوي على زلاليات فقط.\n- سيعانيان من السمنة.\n- أنصحهما بتناول وجبة غذائية متوازنة، متنوعة بكميات معتدلة وفي مواعيدها.",
+      "figureDesc": "",
+      "answer": "المشكلة: الإكثار من تناول وجبة تحتوي على زلاليات فقط؛ سيعانيان من السمنة؛ أنصحهما بتناول وجبة غذائية متوازنة، متنوعة بكميات معتدلة وفي مواعيدها.",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "58-2",
+      "instruction": "صواب أو خطأ (الإجابات مكتوبة في المربعات)",
+      "body": "- المسنّ في حاجة إلى أغذية واقية. [صواب]\n- نقص فيتامين (د) يؤدي إلى صعوبة الرؤية الجيدة ليلا. [خطأ]\n- يتسبب عدم وجود الفيتامين (ج) في الأغذية في مرض الإسقربوط. [صواب]\n- ينتج سوء التغذية عن إفراط في استهلاك الأغذية. [صواب]\n- يحتاج الطفل المراهق إلى أغذية البناء والنمو. [صواب]\n- ضوء الشمس يساعد في تكوين العظام وصلابتها. [صواب]",
+      "figureDesc": "Cases « صواب / خطأ » à gauche de chaque phrase",
+      "answer": "صواب، خطأ، صواب، صواب، صواب، صواب",
+      "topicId": "sci-6-u3",
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "58-3",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 58",
+      "body": "المرض الذي يصيب الأطفال الذين يعيشون في أماكن لا تصل إليها أشعة الشمس هو الكساح.",
+      "figureDesc": "",
+      "answer": "الكساح",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "58-4",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 58",
+      "body": "إن عدم الاهتمام بفطور الصباح عند التلميذ له انعكاسات سلبية على متابعته لدروسه من أهمها:\n- لا يبذل جهدا فكريا أو عضليا.\n- فقدان الرغبة في العمل.\n- عدم احتمال البرد.\n- حدوث اضطرابات نفسانية.",
+      "figureDesc": "",
+      "answer": "لا يبذل جهدا فكريا أو عضليا؛ فقدان الرغبة في العمل؛ عدم احتمال البرد؛ حدوث اضطرابات نفسانية",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "59",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 59",
+      "body": "- الكريات الحمراء تنقل الأكسجين من الرئتين إلى الخلايا.\n- الكريات البيضاء تحارب الجراثيم.\n- البلازما تنقل المواد الغذائية.\n- الصفيحات تلعب دورا في تحثر الدم.\n- الصمام يمنع عودة الدم من البطين إلى الأذينة.",
+      "figureDesc": "",
+      "answer": "الكريات الحمراء: نقل الأكسجين؛ الكريات البيضاء: محاربة الجراثيم؛ البلازما: نقل المواد الغذائية؛ الصفيحات: تحثر الدم؛ الصمام: يمنع عودة الدم من البطين إلى الأذينة",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "59-a",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 59",
+      "body": "اختلاف شدة المرض يتمثل في أن سامي قام بتلقيح جسمه ضد مرض الجدري، فعند دخول هذه الجرثومة إلى الجسم اكتسب الموادّ المضادة للجرثومة التي أنتجتها من قبل الكريات الدم البيضاء، حصانة للجسم، في حين فهي لم تتم بمثل هذا التلقيح.",
+      "figureDesc": "",
+      "answer": "اختلاف شدة المرض يتمثل في أن سامي قام بتلقيح جسمه ضد مرض الجدري، فعند دخول هذه الجرثومة إلى الجسم اكتسب الموادّ المضادة للجرثومة التي أنتجتها من قبل الكريات الدم البيضاء، حصانة للجسم، في حين فهي لم تتم بمثل هذا التلقيح.",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "59-b",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 59",
+      "body": "د) الرئتين",
+      "figureDesc": "",
+      "answer": "د) الرئتين",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "60-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 60",
+      "body": "- الحقن ضد مرض الخناق.\n- الكشط ضد مرض السل.\n- التجرع ضد مرض الشلل.",
+      "figureDesc": "",
+      "answer": "الحقن: الخناق؛ الكشط: السل؛ التجرع: الشلل",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i10"
+    },
+    {
+      "kind": "exercise",
+      "number": "60-2",
+      "instruction": "رتب مراحل المرض بالأرقام",
+      "body": "[1] دخول الجراثيم إلى الرئة عن طريق المجاري الهوائية.\n[4] تفجّر الدرنات الصغيرة ودخول الجراثيم في الأوعية الدموية.\n[2] إحداث التهابات في موضع الإصابة نتيجة مقاومة الجسم للجراثيم.\n[5] تكوّن تجاويف بالرئة فينقص حجمها وتضعف قدرتها على التنفس.\n[3] نمو الجراثيم وتكوّن درنات يحيط بها غشاء صلب يمنع دخول الهواء.",
+      "figureDesc": "Numéros écrits dans des cases",
+      "answer": "1، 4، 2، 5، 3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "60-3",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 60",
+      "body": "أ) الغطاء الخارجي لجسم الإنسان (الجلد).\nب) الطبقة الخارجية من الجلد (البشرة).\nج) ثقوب صغيرة تنتشر على سطح البشرة (المسام).\nد) مادة تساعد على ترطيب الجلد وحمايته من التشقق (غدة عرقية).\nهـ) الطبقة الداخلية من الجلد (الأدمة).",
+      "figureDesc": "",
+      "answer": "أ) الجلد؛ ب) البشرة؛ ج) المسام؛ د) غدة عرقية؛ هـ) الأدمة",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "61-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 61",
+      "body": "أ) اسم المجموعة المناسبة التي تنتمي إليها المعادلة الغذائية أعلاه: زلاليات حيوانية (المجموعة الأولى والثانية)\nب) تساعد الجسم على النمو والبناء وتجديد الخلايا.\nج) كمية الحليب التي تشربها لتعويض 150 غراما من اللحم هي 75 مل.",
+      "figureDesc": "",
+      "answer": "أ) زلاليات حيوانية؛ ب) النمو والبناء وتجديد الخلايا؛ ج) 75 مل",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i13"
+    },
+    {
+      "kind": "exercise",
+      "number": "61-2",
+      "instruction": "صل بخط كل مجموعة من الأغذية بدورها",
+      "body": "المجموعات: بيض، جبن، لحم / حمص جاف، عدس / عسل، خبز، بطاطا / أرز، زبدة، زيت / برتقال، [illisible]، خس.\nالأدوار: توفر الطاقة للجسم / تمكن الجسم من النمو / تقي الجسم من الأمراض.",
+      "figureDesc": "Deux colonnes reliées par des traits : cinq groupes d'aliments à gauche, trois rôles à droite",
+      "answer": "بيض، جبن، لحم ← تمكن الجسم من النمو؛ حمص جاف، عدس ← تمكن الجسم من النمو؛ عسل، خبز، بطاطا ← توفر الطاقة للجسم؛ أرز، زبدة، زيت ← توفر الطاقة للجسم؛ برتقال، [illisible]، خس ← تقي الجسم من الأمراض",
+      "topicId": "sci-6-u3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i14"
+    },
+    {
+      "kind": "exercise",
+      "number": "61-3",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 61",
+      "body": "الأكلة المتوازنة هي التي تتكون من أغذية بنّاءة وأغذية طاقية وأغذية واقية.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i15"
+    },
+    {
+      "kind": "exercise",
+      "number": "61-4",
+      "instruction": "صل بخط: الفيتامين – الغذاء – نتائج النقص",
+      "body": "الفيتامين: أ، ج، د. الغذاء: البرتقال، زيت كبد الحوت، الجزر. نتائج النقص: ضعف الرؤية ليلا، الكساح، مرض الإسقربوط.",
+      "figureDesc": "Tableau de correspondance à trois colonnes reliées par des traits",
+      "answer": "أ ← الجزر ← ضعف الرؤية ليلا؛ ج ← البرتقال ← مرض الإسقربوط؛ د ← زيت كبد الحوت ← الكساح",
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i16"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "57-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 57",
+      "body": "ينتج سوء التغذية عن سوء في التغذية أو إفراط في استهلاك الأغذية ويتسبب في أمراض خطيرة تشوه الجسم وتؤدي أحيانا إلى الموت.",
+      "figureDesc": "",
+      "answer": "ينتج سوء التغذية عن سوء في التغذية أو إفراط في استهلاك الأغذية ويتسبب في أمراض خطيرة تشوه الجسم وتؤدي أحيانا إلى الموت.",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "57-2",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 57",
+      "body": "- نقص في فيتامين «د» ينتج عنه مرض الكساح.\n- نقص في فيتامين «ج» ينتج عنه نزف اللثة وتسوس الأسنان.\n- نقص في فيتامين «أ» ينتج عنه ضعف الرؤية ليلا.\n- كثرة الأكل وقلة النشاط ينتج عنه مرض السمنة.",
+      "figureDesc": "",
+      "answer": "نقص فيتامين د: الكساح؛ نقص فيتامين ج: نزف اللثة وتسوس الأسنان؛ نقص فيتامين أ: ضعف الرؤية ليلا؛ كثرة الأكل وقلة النشاط: السمنة",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "58-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 58",
+      "body": "المشكلة: الإكثار من تناول وجبة تحتوي على زلاليات فقط.\n- سيعانيان من السمنة.\n- أنصحهما بتناول وجبة غذائية متوازنة، متنوعة بكميات معتدلة وفي مواعيدها.",
+      "figureDesc": "",
+      "answer": "المشكلة: الإكثار من تناول وجبة تحتوي على زلاليات فقط؛ سيعانيان من السمنة؛ أنصحهما بتناول وجبة غذائية متوازنة ومتنوعة بكميات معتدلة وفي مواعيدها.",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "58-2",
+      "instruction": "صواب أو خطأ (الإجابات مكتوبة في المربعات)",
+      "body": "- المسن في حاجة إلى أغذية واقية. [صواب]\n- نقص فيتامين (د) يؤدي إلى صعوبة الرؤية الجيدة ليلا. [خطأ]\n- يتسبب عدم وجود الفيتامين (ج) في الأغذية في مرض الإسقربوط. [صواب]\n- ينتج سوء التغذية عن إفراط في استهلاك الأغذية. [صواب]\n- يحتاج الطفل المراهق إلى أغذية البناء والنمو. [صواب]\n- ضوء الشمس يساعد في تكوين العظام وصلابتها. [صواب]",
+      "figureDesc": "Cases « صواب / خطأ » à gauche de chaque phrase",
+      "answer": "صواب، خطأ، صواب، صواب، صواب، صواب",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "58-3",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 58",
+      "body": "المرض الذي يصيب الأطفال الذين يعيشون في أماكن لا تصل إليها أشعة الشمس هو الكساح.",
+      "figureDesc": "",
+      "answer": "الكساح",
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i5",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "58-4",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 58",
+      "body": "إن عدم الاهتمام بفطور الصباح عند التلميذ له انعكاسات سلبية على متابعته لدروسه من أهمها:\n- لا يبذل جهدا فكريا أو عضليا.\n- فقدان الرغبة في العمل.\n- عدم احتمال البرد.\n- حدوث اضطرابات نفسانية.",
+      "figureDesc": "",
+      "answer": "لا يبذل جهدا فكريا أو عضليا؛ فقدان الرغبة في العمل؛ عدم احتمال البرد؛ حدوث اضطرابات نفسانية",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i6",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "59",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 59",
+      "body": "- الكريات الحمراء تنقل الأكسجين من الرئتين إلى الخلايا.\n- الكريات البيضاء تحارب الجراثيم.\n- البلازما تنقل المواد الغذائية.\n- الصفيحات تلعب دورا في تحثر الدم.\n- الصمام يمنع عودة الدم من البطين إلى الأذينة.",
+      "figureDesc": "",
+      "answer": "الكريات الحمراء: نقل الأكسجين؛ الكريات البيضاء: محاربة الجراثيم؛ البلازما: نقل المواد الغذائية؛ الصفيحات: تحثر الدم؛ الصمام: يمنع عودة الدم من البطين إلى الأذينة",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i7",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "59-60 (a)",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 59",
+      "body": "اختلاف شدة المرض يتمثل في أن سامي قام بتلقيح جسمه ضد مرض الجدري، فعند دخول هذه الجرثومة إلى الجسم اكتسب الموادّ المضادة للجرثومة التي أنتجتها من قبل الكريات الدم البيضاء، حصانة للجسم، في حين نهى لم تتم بمثل هذا التلقيح.\nد) الرئتين",
+      "figureDesc": "",
+      "answer": "د) الرئتين",
+      "confidence": 0.65,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i8",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "60-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 60",
+      "body": "- الحقن ضد مرض الخناق.\n- الكشط ضد مرض السل.\n- التجرع ضد مرض الشلل.",
+      "figureDesc": "",
+      "answer": "الحقن: الخناق؛ الكشط: السل؛ التجرع: الشلل",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i9",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "60-2",
+      "instruction": "رتب مراحل المرض بالأرقام",
+      "body": "[1] دخول الجراثيم إلى الرئة عن طريق القنوات الهوائية.\n[4] تفجر الرئات الصغيرة ودخول الجراثيم في الأوعية الدموية.\n[2] إحداث التهابات في موضع الإصابة نتيجة مقاومة الجسم للجراثيم.\n[5] تكون تجاويف بالرئة فينقص حجمها وتضعف قدرتها على التنفس.\n[3] نمو الجراثيم وتكون درنات يحيط بها غشاء صلب يمنع دخول الهواء.",
+      "figureDesc": "Numéros écrits dans des cases",
+      "answer": "1، 4، 2، 5، 3",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i10",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "60-3",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 60",
+      "body": "أ) الغطاء الخارجي لجسم الإنسان (الجلد).\nب) الطبقة الخارجية من الجلد (البشرة).\nج) ثقوب صغيرة تنتشر على سطح البشرة (المسام).\nد) مادة تساعد على ترطيب الجلد وحمايته من التشقق (غدة عرقية).\nهـ) الطبقة الداخلية من الجلد (الأدمة).",
+      "figureDesc": "",
+      "answer": "أ) الجلد؛ ب) البشرة؛ ج) المسام؛ د) غدة عرقية؛ هـ) الأدمة",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i11",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "61-1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 61",
+      "body": "أ) اسم المجموعة المناسبة التي تنتمي إليها المعادلة الغذائية أعلاه: زلاليات حيوانية (المجموعة الأولى والثانية)\nب) تساعد الجسم على النمو والبناء وتجديد الخلايا.\nج) كمية الحليب التي تشربها لتعويض 150 غراما من اللحم هي 75 مل.",
+      "figureDesc": "",
+      "answer": "أ) زلاليات حيوانية؛ ب) النمو والبناء وتجديد الخلايا؛ ج) 75 مل",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i12",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "61-2",
+      "instruction": "صل بخط كل مجموعة من الأغذية بدورها",
+      "body": "المجموعات: بيض، جبن، لحم / حمص جاف، عدس / عسل، خبز، بطاطا / أرز، زبدة، زيت / برتقال، تلتل، خس.\nالأدوار: توفر الطاقة للجسم / تمكن الجسم من النمو / تقي الجسم من الأمراض.",
+      "figureDesc": "Deux colonnes reliées par des traits : cinq groupes d'aliments à gauche, trois rôles à droite",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i13",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "61-3",
+      "instruction": "أكمل",
+      "body": "الأكلة المتوازنة هي التي تتكون من أغذية بناء وأغذية طاقية وأغذية واقية.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i14",
+      "topicId": "sci-6-u3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "61-4",
+      "instruction": "صل بخط: الفيتامين – الغذاء – نتائج النقص",
+      "body": "الفيتامين: أ، ج، د. الغذاء: البرتقال، زيت كبد الحوت، الجزر. نتائج النقص: ضعف الرؤية ليلا، الكساح، مرض الإسقربوط.",
+      "figureDesc": "Tableau de correspondance à trois colonnes reliées par des traits",
+      "answer": null,
+      "confidence": 0.65,
+      "id": "al_mounir_eveil_scientifique_6eme_p053_i15",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

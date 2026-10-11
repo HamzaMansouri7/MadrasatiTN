@@ -1,0 +1,195 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 28,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Jean au grand magasin (le costume marin)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Jean ne veut pas aller avec sa mère dans un grand magasin. Pourquoi ?",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p028_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2 a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- La caissière propose à la mère d'acheter un costume marin. (réponse à écrire dans un cadre arrondi pointillé)",
+      "figureDesc": "Cadre ovale arrondi en pointillés pour écrire oui ou non",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p028_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2 b",
+      "instruction": "Relève, dans le texte, le détail qui le montre :",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p028_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 a",
+      "instruction": "Le costume marin plaît à la maman. Relève, dans le texte, les détails qui le montrent :",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p028_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 b",
+      "instruction": "Plaît-il à Jean ? Justifie ta réponse par des phrases du texte :",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p028_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Que fait Jean pour ne pas acheter ce costume marin ?",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p028_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Est-ce qu'il a réussi à convaincre sa mère ?",
+      "body": "Une ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p028_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Qu'aurais-tu fais si tu étais à la place de Jean ?",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p028_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Complète ce passage avec les mots du cadre :",
+      "body": "Mots du cadre : maître – arrives – pancarte – ralentir\nPour rire\n- Pourquoi ................... -tu, chaque jour à l'école en retard ? dit le ........................ .\n- Sur la route, il y a une .................... qui dit : « ......................école », répond Ali.",
+      "figureDesc": "Mots donnés dans un cadre arrondi ; passage « Pour rire » dans un encadré rectangulaire",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p028_i9",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.3
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de compréhension de lecture en français (Jean au grand magasin, costume marin) ; aucun des modules 1 à 8 ne correspond clairement à ce texte (ni travail, médias, tolérance, entraide, nature, santé, loisirs ou autres modes de vie), donc on ne peut pas choisir un chapitre sans ambiguïté.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    121
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture : Jean au grand magasin",
+    "skill": "Comprendre un texte narratif en relevant des détails, en justifiant ses réponses et en donnant son opinion personnelle.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "relever des indices",
+      "justifier",
+      "texte narratif",
+      "achat de vêtements",
+      "humour"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression d'un questionnaire de compréhension (question globale, oui/non, relevé de détails, justification, réaction personnelle) suivie d'un texte à trous humoristique « Pour rire » basé sur un dialogue élève-maître et un panneau routier.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 6 : la transcription donne « Qu'aurais-tu fais » alors que l'image montre « Qu'aurais-tu fais » (avec « fais »). Cette forme est bien celle du manuel, donc elle est fidèle ; il n'y a pas d'erreur de transcription ici."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête et le pied de page ne sont pas transcrits : « Lecture - Compréhension », « Sagesse », « 6ème année de base », « B) Compréhension : », « Lire et s'exprimer », « 27 »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 7 : « ralentir » est bien présent, mais la ligne « Pour rire » omet l'ordre visuel des puces (« - » devant « Pourquoi » et « Sur la route »), ce qui est correct. Le seul point à noter est que le cadre « Pour rire » est transcrit sans signaler son encadrement."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

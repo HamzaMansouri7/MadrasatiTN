@@ -1,0 +1,216 @@
+{
+  "book": "examen_lecture_arabe_corrige",
+  "page": 3,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Examen de lecture (arabe) – question d'opinion sur le personnage de Salem et tableau de notation (جدول إسناد الأعداد)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما رأيكَ فِي ذلكَ ؟ علِّلْ إجابتَكَ :",
+      "body": "مع4 سالمٌ رغم العراقِيلِ لَمْ يسْتَسْلمْ وأَصرَّ عَلى تَحْقِيقِ حُلْمِهِ . ما رأيكَ فِي ذلكَ ؟ علِّلْ إجابتَكَ :",
+      "figureDesc": "Quatre lignes pointillées vides au-dessus (fin de l'exercice précédent), puis quatre lignes pointillées vides sous la question pour la réponse de l'élève. Petit cadre de notation à trois cellules sur le côté droit. Filigrane « MOURAJAA.COM » et calligraphie arabe orange en arrière-plan.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_arabe_corrige_p003_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "",
+      "instruction": "جدول إسناد الأعداد",
+      "body": "Colonnes (de droite à gauche) : مستوى التملّك | مع1 | مع2أ | مع2ب | مع2ج | مع3 | المحموع | مع4 | المجموع. Ligne --- : مع1=0 ; مع2أ=/1.5/1/0.5 ; مع2ب=0 ; مع2ج=0 ; مع3=0 ; المحموع=(vide) ; مع4=0 ; المجموع=(vide). Ligne +-- : مع1=2/1 ; مع2أ=2.5/2 ; مع2ب=0.5 ; مع2ج=0.5 ; مع3=1 ; المحموع=(vide) ; مع4=2 ; المجموع=(vide). Ligne -++ : مع1=3 ; مع2أ=3 ; مع2ب=1 ; مع2ج=1 ; مع3=2 ; المحموع=10 ; مع4=3 ; المجموع=(vide). Ligne +++ : مع1=4.5/4 ; مع2أ=4.5/4/3.5 ; مع2ب=1.5 ; مع2ج=1.5 ; مع3=3 ; المحموع=15 ; مع4=5 ; المجموع=20.",
+      "figureDesc": "Tableau de barème à 4 lignes (niveaux de maîtrise ---, +--, -++, +++) et colonnes par critère (مع1، مع2أ، مع2ب، مع2ج، مع3، مع4) avec sous-total « المحموع » (10 et 15) et total général « المجموع » (20).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_arabe_corrige_p003_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p5",
+    "confidence": 0.27
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un examen de lecture en arabe (question d'opinion sur Salem et grille de notation des critères مع1 à مع4) qui évalue des compétences générales de lecture et ne relève d'aucune unité précise du programme.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de lecture : opinion sur un personnage",
+    "skill": "Donner et justifier son opinion sur l'attitude d'un personnage (persévérance face aux obstacles) à partir d'un texte lu.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "examen de lecture",
+      "opinion argumentée",
+      "persévérance",
+      "barème de notation",
+      "critères d'évaluation",
+      "6ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une question finale d'opinion justifiée sur un personnage qui persiste malgré les obstacles, associée à un barème par critères (maîtrise des acquis, niveaux de maîtrise) réutilisable pour construire des évaluations de lecture.",
+    "themeGroup": "Compréhension de l'écrit"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le début « [4] ما رأيك فِي ذلكَ ؟ علِّلْ إجابتَكَ : » est une duplication inventée ; l'image ne montre en haut que des lignes pointillées, sans texte."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« سالمٌ رغم العراقِيلِ لَمْ يسْتَسْلمْ وأَصرَّ » : voyelles incomplètes ou inexactes. L'image porte « يَسْتَسْلِمْ » et « وأَصَرَّ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« ذلكَ » est écrit « ذٰلكَ » dans l'image, et « رأيكَ » est sans voyelles. « تَحْقِيقِ حُلْمِهِ » est correct."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Le symbole de la ligne 2 est « +-- » dans l'image, la transcription donne « --+ »."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ligne --- : « /1.5/1/0.5 » dans l'image, l'ordre et la barre sont inversés dans la transcription (« 0.5/1/1.5/ »). Les lignes +-- et +++ présentent le même problème d'ordre (2/1, 2.5/2 ; 4.5/4, 4/3.5/4.5)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Colonne « المحموع » : les cellules vides des lignes --- et +-- ne sont pas signalées. La ligne +-- (2) est correcte pour مع4 mais la colonne المحموع reste vide."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le cadre de notation (case à trois cellules) à droite de la deuxième zone de réponse et les lignes pointillées ne sont pas mentionnés."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المحموع » : l'image porte bien cette graphie (sans point sur le ج), la transcription la reprend, mais la graphie correcte serait « المجموع »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le filigrane (MOURAJAA.COM, bismillah) est ignoré, ce qui est acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Le symbole de la deuxième ligne du tableau est « +-- » dans l'image. La transcription donne « --+ »."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ligne ---, colonne مع2أ : l'image porte « /1.5/1/0.5 » (barre au début, ordre décroissant). La transcription donne « 0.5/1/1.5/ »."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ligne +--, l'ordre est inversé dans la transcription. L'image porte مع1 = « 2/1 » et مع2أ = « 2.5/2 ». La transcription donne « 1/2 » et « 2/2.5 »."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ligne +++, l'ordre est inversé dans la transcription. L'image porte مع1 = « 4.5/4 » et مع2أ = « 4.5/4/3.5 ». La transcription donne « 4/4.5 » et « 3.5/4/4.5 »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cellules vides de la colonne المحموع (lignes --- et +--) et la cellule vide de la colonne المجموع (lignes ---, +-- et -++) ne sont pas signalées dans le body du tableau."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما رأيكَ فِي ذلكَ ؟ علِّلْ إجابتَكَ :",
+      "body": "مع4 سالمٌ رغم العراقِيلِ لَمْ يسْتَسْلمْ وأَصرَّ عَلى تَحْقِيقِ حُلْمِهِ . ما رأيكَ فِي ذلكَ ؟ علِّلْ إجابتَكَ :",
+      "figureDesc": "Quatre lignes pointillées vides au-dessus (fin de l'exercice précédent), puis quatre lignes pointillées vides sous la question pour la réponse de l'élève. Petit cadre de notation à trois cellules sur le côté droit. Filigrane « MOURAJAA.COM » et calligraphie arabe orange en arrière-plan.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_6eme_corriges_p003_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "",
+      "instruction": "جدول إسناد الأعداد",
+      "body": "Colonnes (de droite à gauche) : مستوى التملّك | مع1 | مع2أ | مع2ب | مع2ج | مع3 | المحموع | مع4 | المجموع. Ligne --- : مع1=0 ; مع2أ=/1.5/1/0.5 ; مع2ب=0 ; مع2ج=0 ; مع3=0 ; المحموع=(vide) ; مع4=0 ; المجموع=(vide). Ligne +-- : مع1=2/1 ; مع2أ=2.5/2 ; مع2ب=0.5 ; مع2ج=0.5 ; مع3=1 ; المحموع=(vide) ; مع4=2 ; المجموع=(vide). Ligne -++ : مع1=3 ; مع2أ=3 ; مع2ب=1 ; مع2ج=1 ; مع3=2 ; المحموع=10 ; مع4=3 ; المجموع=(vide). Ligne +++ : مع1=4.5/4 ; مع2أ=4.5/4/3.5 ; مع2ب=1.5 ; مع2ج=1.5 ; مع3=3 ; المحموع=15 ; مع4=5 ; المجموع=20.",
+      "figureDesc": "Tableau de barème à 4 lignes (niveaux de maîtrise ---, +--, -++, +++) et colonnes par critère (مع1، مع2أ، مع2ب، مع2ج، مع3، مع4) avec sous-total « المحموع » (10 et 15) et total général « المجموع » (20).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_6eme_corriges_p003_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما رأيك فِي ذلكَ ؟ علِّلْ إجابتَكَ :",
+      "body": "مع4 سالمٌ رغم العراقِيلِ لَمْ يسْتَسْلمْ وأَصرَّ عَلى تَحْقِيقِ حُلْمِهِ . ما رأيكَ فِي ذلكَ ؟ علِّلْ إجابتَكَ :",
+      "figureDesc": "Lignes pointillées vides pour la réponse de l'élève (quatre lignes au-dessus, qui terminent l'exercice précédent, et quatre lignes en dessous de la question). Petit cadre de notation à trois cases sur le côté droit. Filigrane « MOURAJAA.COM » et calligraphie arabe orange en arrière-plan.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examen_lecture_6eme_corriges_p003_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "",
+      "instruction": "جدول إسناد الأعداد",
+      "body": "Colonnes (de droite à gauche) : مستوى التملّك | مع1 | مع2أ | مع2ب | مع2ج | مع3 | المحموع | مع4 | المجموع. Ligne --- : مع1=0 ; مع2أ=0.5/1/1.5/ ; مع2ب=0 ; مع2ج=0 ; مع3=0 ; مع4=0. Ligne --+ : مع1=1/2 ; مع2أ=2/2.5 ; مع2ب=0.5 ; مع2ج=0.5 ; مع3=1 ; مع4=2. Ligne -++ : مع1=3 ; مع2أ=3 ; مع2ب=1 ; مع2ج=1 ; مع3=2 ; المحموع=10 ; مع4=3. Ligne +++ : مع1=4/4.5 ; مع2أ=3.5/4/4.5 ; مع2ب=1.5 ; مع2ج=1.5 ; مع3=3 ; المحموع=15 ; مع4=5 ; المجموع=20.",
+      "figureDesc": "Tableau de barème à 4 lignes (niveaux de maîtrise ---, +--, -++, +++) et colonnes par critère (مع1، مع2أ، مع2ب، مع2ج، مع3، مع4) avec totaux partiels (15/10) et total général 20.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examen_lecture_6eme_corriges_p003_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "self_contained",
+  "examScope": "unknown",
+  "bookTitle": "Examen de lecture 6ème année — Arabe (corrigé)"
+}

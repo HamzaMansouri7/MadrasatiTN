@@ -1,0 +1,428 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 7,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قراءة وفهم - المقطع المنغلق وحرف التاء",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَعْمُرُ الْفَرَاغَ بِالْكَلِمَةِ الْمُنَاسِبَةِ: أَمْسَكْتُ - رَتَّبْتُ - خَبَّأْتُ",
+      "body": "• .................................... فِرَاشِي.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p007_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.85
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُكَمِّلُ بِالْمَكَانِ الْمُنَاسِبِ.",
+      "body": "• نَظَّمَتْ فَتِيحَةُ أَدَوَاتِهَا فِي ....................................\n• وَضَّبَتْ فَتِيحَةُ فِرَاشَهَا فِي ....................................\n• صَاحَبَتْ فَتِيحَةُ أَبَاهَا إِلَى ....................................",
+      "figureDesc": "",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p007_i2",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.85
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَكْتُبُ « أُوَافِقُ » / « لَا أُوَافِقُ » / « لِأَنَّ أُمَّهَا تُدَرِّبُهَا عَلَى النَّظَافَةِ » / « لِأَنَّهَا سَتَتْعَبُ » .",
+      "body": "وَضَّبَتْ فَتِيحَةُ فِرَاشَهَا، وَرَتَّبَتْ مَكْتَبَهَا. ....................................",
+      "figureDesc": "",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p007_i3",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.85
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَقْرَأُ الْكَلِمَاتِ التَّالِيَةَ وَأَضَعُ الْمَقْطَعَ الْمُنْغَلِقَ فِي خَطٍّ مُغْلَقٍ.",
+      "body": "• اِشْتَرَتْ تَسْنِيمُ قِصَّتَيْنِ مِنَ الْكُتْبِيَّةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p007_i4",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.85
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ الْكَلِمَاتِ الْمُحْتَوِيَةَ عَلَى مَقْطَعٍ مُنْغَلِقٍ وَأَضَعُهُ فِي خَطٍّ مُغْلَقٍ.",
+      "body": "← ....................................................................\n....................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p007_i5",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.85
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أُكَمِّلُ الْاِسْمَ بِالْمَقْطَعِ الْمُنَاسِبِ.",
+      "body": "(من اليمين إلى اليسار)\n1) ..........ـنَةٌ — المقاطع: تَبْ / تِيـ / تِـ\n2) زَيْـ..........ـنٌ — المقاطع: تُو / تُـ / تُنْ\n3) ..........ـرٌ — المقاطع: تِيـ / مِـ / تَمْـ\n4) ..........ـجٌ — المقاطع: نَتْ / تَا / تِي\n5) ..........ـسَاحٌ — المقاطع: تَـ / تِيـ / تِمْـ\n6) ..........ـبَّانٌ — المقاطع: تُـ / تِمْـ / تِيـ",
+      "figureDesc": "ست صور داخل إطارات: تينة (شمال التين)، أغصان زيتون بحبات خضراء وسوداء، غصن تمر، تاج ذهبي، تمساح أخضر، سروال قصير أزرق.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p007_i6",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.85
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أُكَمِّلُ الْكَلِمَاتِ بِالْمَقَاطِعِ الْمُنَاسِبَةِ. ( تَلْـ * تَمْـ * تِيـ * تَيْـ * ـتْ * ـةُ * تَأْ * تَلْـ * تَا )",
+      "body": "• ..........ـعَبُ رَ..........بَـ.......... مَعَ الـ..........ـسِ.\n• ..........ـبَسُ ..........ـسِيرُ ..........جًا، وَ..........كُلُ ..........رًا.",
+      "figureDesc": "صورة أولى: فتاة تلمس خروفاً/ماعزاً أسود. صورة ثانية: أميرة (فتاة بتاج) تمسك شيئاً وتأكله.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p007_i7",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.85
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "الصفحة 8 — مدرستي تونس - الثلاثي الثاني (السنة 1) — اللغة العربية - قراءة وفهم",
+      "figureDesc": "",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p007_i8",
+      "topicId": "ar-1-u3",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.85
+    }
+  ],
+  "topicId": "ar-1-u3",
+  "topicTitle": "Unité 3 : Mon compagnon pour ma santé et ma sécurité",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-1-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u3",
+    "confidence": 0.82
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la lettre ت (Ta) et de la syllabe fermée, avec un texte sur l'ordre et la propreté (Fatiha range son lit et son bureau), ce qui correspond à l'Unité 3 (lettres S, T, F, hygiène), bien que le Ta de l'unité 5 soit aussi mentionné.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Syllabe fermée et lettre ت",
+    "skill": "Identifier et utiliser la syllabe fermée et la lettre ت dans des mots et phrases en lecture, compréhension et écriture.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "lecture_comprehension",
+      "appariement",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "syllabe fermée",
+      "lettre ta",
+      "lecture",
+      "compréhension",
+      "vocabulaire",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices variés autour d'une même petite héroïne (rangement, vie quotidienne) : compléter avec le mot ou le lieu adéquat, donner son accord ou son désaccord avec justification, entourer la syllabe fermée, compléter des mots par la syllabe manquante parmi des choix, reconstituer des phrases à partir d'une banque de syllabes.",
+    "themeGroup": "Syllabe fermée et lettre ت"
+  },
+  "audit": {
+    "accuracy": 0.72,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.5 : « أُعَمِّرُ » au lieu de « أَعْمُرُ » (image : أَعْمُرُ الْفَرَاغَ)"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.6 : « أَدَوَاتِهَا » au lieu de « أَدَوَاتِهَا » avec la forme visible « أَدَوَاتِهَا » (image : أَدَوَاتِهَا) ; « نَظَّمَتْ » correct. Ex.6 : « أُكَمِّلُ » au lieu de « أَكْمِلْ » (image : أَكْمِلْ بِالْمَكَانِ الْمُنَاسِبِ)"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.10 : « أُكَمِّلُ الْاِسْمَ » au lieu de « أَكْمِلِ الاِسْمَ » (impératif dans l'image) ; idem Ex.11 « أُكَمِّلُ » au lieu de « أَكْمِلِ »"
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Ex.10 : les mots complets (تِينَةٌ, تَمْرٌ, تَاجٌ, تِمْسَاحٌ, تِبَّانٌ, زَيْتُونٌ) sont ajoutés ; l'image montre seulement des mots à trous (ـنَةٌ, زَيْـ ـنٌ, ـرٌ, ـجٌ, ـسَاحٌ, ـبَّانٌ)"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Ex.10 : les mots et leurs choix sont dans l'ordre inverse de l'image pour la lecture (les images vont de droite à gauche : figue, olive, dattes, couronne, crocodile, short) ; les choix de syllabes sont transcrits de façon approximative (ex. « تَبْ / تِيـ / تَـ » à vérifier, « تِيـ / مِـ / تَمْـ »)"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.7 : « وَضَّبَتْ » et « تَتْعَبُ » : la phrase de l'image est « سَتَتْعَبُ » ; « لَا أُوَافِقُ » correct ; « أَكْتُبُ » correct ; la ligne pointillée de réponse est placée après la phrase alors qu'elle est en dessous"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.5 : la réponse est après « فِرَاشِي. » dans l'image ; ordre des pointillés inversé (pointillés avant le mot dans l'image : correct, mais la puce est omise). Ex.9 : flèche « ← » omise ; images (fille avec chèvre, princesse) non mentionnées"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.11 : les syllabes visibles (ـعَبُ, بَـ, ـسِ, ـبَسُ, ـسِيرُ, جًا, ـكُلُ, ـرًا) sont reconstituées de manière approximative ; « تَلْ * تَمْـ * تِيـ * تَيْـ * ـتْ * ـةُ * تَأْ * تَلْ * تَا » : les vocalisations de l'image sont « تَلْـ تَمْـ تِيـ تَيْـ ـتِيْـ ـةُ تَأْ تَلْـ تَا » (à revoir)"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.55,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.5 : « أُعَمِّرُ » est faux. L'image montre l'impératif « أَعْمُرُ الْفَرَاغَ »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.6 : « أُكَمِّلُ » est faux. L'image montre « أَكْمِلْ بِالْمَكَانِ الْمُنَاسِبِ »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.10 : « أُكَمِّلُ الْاِسْمَ » est faux. L'image montre « أَكْمِلِ الاِسْمَ بِالْمَقْطَعِ الْمُنَاسِبِ »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.11 : « أُكَمِّلُ » est faux. L'image montre « أَكْمِلِ الْكَلِمَاتِ بِالْمَقَاطِعِ الْمُنَاسِبَةِ »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ex.8 : « الْكُتَيْبِيَّةِ » est faux. L'image montre « الْكُتْبِيَّةِ », avec un sukun sur le ت."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Ex.10 : les mots complets (تِينَةٌ، زَيْتُونٌ، تَمْرٌ، تَاجٌ، تِمْسَاحٌ، تِبَّانٌ) sont ajoutés avant chaque mot à trou. L'image ne contient que les mots à trou."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.10 : le choix de la 4e série est « نَتْ / تَا / تِيـ » dans l'image, et non « نَـ ». Les choix des séries 1, 3, 5 et 6 sont aussi transcrits de façon inexacte (« تَبْ », « تَمْـ », « تِبْـ »)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ex.10 : la figureDesc est inventée. Elle cite « عُثْكُول » et est en arabe, alors que l'image montre figue, olives, branche de dattes, couronne, crocodile et short."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.5 : la puce • avant les pointillés est omise."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.9 : la flèche « ← » et la deuxième ligne de pointillés sont omises."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.11 : dans la liste des syllabes, « ـتْ » est faux. L'image montre une syllabe de type « ـتَيْـ » (la voyelle exacte est peu nette dans le scan). Les formes « تَلْـ », « تَمْـ », « تِيـ » et « تَأْ » sont à rétablir avec leurs voyelles visibles."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ex.11 : la figureDesc est inexacte. Elle parle d'un enfant qui joue avec un bouc, d'un enfant qui porte une couronne et mange des dattes. L'image montre un enfant qui tient un bouc noir, et un personnage couronné qui tient un petit objet."
+      },
+      {
+        "type": "faux_positif",
+        "severity": "minor",
+        "detail": "Parmi les points du contrôle rapide : « وَضَّبَتْ » (Ex.6 et 7) est bien visible dans l'image, donc la transcription est correcte. « سَتَتْعَبُ » (Ex.7) est correct. L'ordre des items de l'Ex.10 est le bon (figue, olive, dattes, couronne, crocodile, short) : l'inversion signalée n'existe pas."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَعْمُرُ الْفَرَاغَ بِالْكَلِمَةِ الْمُنَاسِبَةِ: أَمْسَكْتُ - رَتَّبْتُ - خَبَّأْتُ",
+      "body": "• ............................................ فِرَاشِي.",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَكْمِلْ بِالْمَكَانِ الْمُنَاسِبِ.",
+      "body": "• نَظَّمَتْ فَتِيحَةُ أَدَوَاتِهَا فِي ....................................\n• وَضَّبَتْ فَتِيحَةُ فِرَاشَهَا فِي ....................................\n• صَاحَبَتْ فَتِيحَةُ أَبَاهَا إِلَى ....................................",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَكْتُبُ « أُوَافِقُ » / « لَا أُوَافِقُ » / « لِأَنَّ أُمَّهَا تُدَرِّبُهَا عَلَى النَّظَافَةِ » / « لِأَنَّهَا سَتَتْعَبُ » .",
+      "body": "وَضَّبَتْ فَتِيحَةُ فِرَاشَهَا، وَرَتَّبَتْ مَكْتَبَهَا. ....................................",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَقْرَأُ الْكَلِمَاتِ التَّالِيَةَ وَأَضَعُ الْمَقْطَعَ الْمُنْغَلِقَ فِي خَطٍّ مُغْلَقٍ.",
+      "body": "• اِشْتَرَتْ تَسْنِيمُ قِصَّتَيْنِ مِنَ الْكُتْبِيَّةِ.",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ الْكَلِمَاتِ الْمُحْتَوِيَةَ عَلَى مَقْطَعٍ مُنْغَلِقٍ وَأَضَعُهُ فِي خَطٍّ مُغْلَقٍ.",
+      "body": "←  ........................................................................................................\n........................................................................................................",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أَكْمِلِ الاِسْمَ بِالْمَقْطَعِ الْمُنَاسِبِ.",
+      "body": "• ..........ـنَةٌ  [ تِـ / تِيـ / تِبْـ ]\n• زَيْـ..........ـنٌ  [ تُنْ / تُـ / تُو ]\n• ..........ـرٌ  [ تَمْـ / مِتْـ / تِيـ ]\n• ..........ـجٌ  [ تِيـ / تَا / نَتْ ]\n• ..........ـسَاحٌ  [ تِمْـ / تِيـ / تَـ ]\n• ..........ـبَّانٌ  [ تِيـ / تِمْـ / تُـ ]",
+      "figureDesc": "ست صور من اليمين إلى اليسار: تينة (تين)، زيتون، غصن تمر، تاج، تمساح، سروال قصير (تبّان). تحت كل صورة كلمة ناقصة وإطار فيه ثلاثة مقاطع للاختيار. [ترتيب مقاطع الاختيار داخل الإطارات غير واضح تماماً في الصورة]",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أَكْمِلِ الْكَلِمَاتِ بِالْمَقَاطِعِ الْمُنَاسِبَةِ. ( تَلْـ * تَمْـ * تِيـ * تَيْـ * ـتَيْـ * ـةُ * تَأْ * تَلْـ * تَا )",
+      "body": "• ..........ـعَبُ رَ..........بَـ.......... مَعَ الـ..........ـسِ.\n• ..........ـبَسُ ..........ـسِيرُ ..........جًا، وَ..........كُلُ ..........رًا.",
+      "figureDesc": "صورتان: الأولى لطفل يمسك بتيس أسود، والثانية لشخصية بتاج تمسك شيئاً صغيراً بيديها.",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.85,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُعَمِّرُ الْفَرَاغَ بِالْكَلِمَةِ الْمُنَاسِبَةِ: أَمْسَكْتُ - رَتَّبْتُ - خَبَّأْتُ",
+      "body": ".................................................... فِرَاشِي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p007_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُكَمِّلُ بِالْمَكَانِ الْمُنَاسِبِ.",
+      "body": "• نَظَّمَتْ فَتِيحَةُ أَدَوَاتِهَا فِي ....................................\n• وَضَّبَتْ فَتِيحَةُ فِرَاشَهَا فِي ....................................\n• صَاحَبَتْ فَتِيحَةُ أَبَاهَا إِلَى ....................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p007_i2",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَكْتُبُ « أُوَافِقُ » / « لَا أُوَافِقُ » / « لِأَنَّ أُمَّهَا تُدَرِّبُهَا عَلَى النَّظَافَةِ » / « لِأَنَّهَا سَتَتْعَبُ » .",
+      "body": "وَضَّبَتْ فَتِيحَةُ فِرَاشَهَا، وَرَتَّبَتْ مَكْتَبَهَا. ....................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p007_i3",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَقْرَأُ الْكَلِمَاتِ التَّالِيَةَ وَأَضَعُ الْمَقْطَعَ الْمُنْغَلِقَ فِي خَطٍّ مُغْلَقٍ.",
+      "body": "• اِشْتَرَتْ تَسْنِيمُ قِصَّتَيْنِ مِنَ الْكُتَيْبِيَّةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p007_i4",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ الْكَلِمَاتِ الْمُحْتَوِيَةَ عَلَى مَقْطَعٍ مُنْغَلِقٍ وَأَضَعُهُ فِي خَطٍّ مُغْلَقٍ.",
+      "body": "........................................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "jisr_ennajah_1ere_evaluations_p007_i5",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أُكَمِّلُ الْاِسْمَ بِالْمَقْطَعِ الْمُنَاسِبِ.",
+      "body": "• تِينَةٌ: ..........ـنَةٌ [ تَبْ / تِيـ / تَـ ]\n• زَيْتُونٌ: زَيْـ..........ـنٌ [ تُو / تُـ / تُنْ ]\n• تَمْرٌ: ..........ـرٌ [ تِيـ / مِـ / تَمْـ ]\n• تَاجٌ: ..........ـجٌ [ نَـ / تَا / تِيـ ]\n• تِمْسَاحٌ: ..........ـسَاحٌ [ تَـ / تِيـ / تِمْـ ]\n• تِبَّانٌ: ..........ـبَّانٌ [ تُـ / تَمْـ / تِبْـ ]",
+      "figureDesc": "صور توضيحية لـ: تِين، زَيْتُون، عُثْكُول تَمْر، تَاج، تِمْسَاح، وتِبَّان مصحوبة بخيارات للمقاطع الصوتية الناقصة.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "jisr_ennajah_1ere_evaluations_p007_i6",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أُكَمِّلُ الْكَلِمَاتِ بِالْمَقَاطِعِ الْمُنَاسِبَةِ: ( تَلْ * تَمْـ * تِيـ * تَيْـ * ـتْ * ـةُ * تَأْ * تَلْ * تَا )",
+      "body": "• ..........ـعَبُ رَ..........بَـ.......... مَعَ الـ..........ـسِ.\n• ..........ـبَسُ ..........ـسِيرُ ..........جًا، وَ..........كُلُ ..........رًا.",
+      "figureDesc": "صورتان: الأولى لطفل يلعب مع تيس، والثانية لطفل يلبس تاجاً ويأكل تمراً.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "jisr_ennajah_1ere_evaluations_p007_i7",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "linkStatus": "clean",
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

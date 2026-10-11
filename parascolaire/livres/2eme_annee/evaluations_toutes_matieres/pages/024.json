@@ -1,0 +1,108 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 24,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إنتاج كتابي – اختبار نهاية الثلاثي الثاني (عدد 4): ترتيب كلمات الجمل المشوّشة وإنتاج نص حواري مع المشاهد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "I-1-أ",
+      "instruction": "أُرَتِّبُ كَلِمَاتِ الْجُمَلِ الْمُشَوَّشَةِ.",
+      "body": "الْقِطُّ - ثُعْبَانًا - رَأَى - الْحَدِيقَةِ - فِي.",
+      "figureDesc": "سطر منقّط لكتابة الجملة المرتّبة؛ خانات المعيار مع 1 (معـ1) وتنقيط 0,5 لكل جزء",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p024_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-1-ب",
+      "instruction": "أُرَتِّبُ كَلِمَاتِ الْجُمَلِ الْمُشَوَّشَةِ.",
+      "body": "ضَوْضَاءَ - سَمِعَ - غَرِيبَةً - صَاحِبُ الْمَنْزِلِ.",
+      "figureDesc": "سطر منقّط للإجابة؛ خانات المعيار معـ2",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p024_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-1-ج",
+      "instruction": "أُرَتِّبُ كَلِمَاتِ الْجُمَلِ الْمُشَوَّشَةِ.",
+      "body": "الْبِنْتُ - عَلَى - وَ - فِطْنَتِهِ - شَكَرَتْ - الْقِطَّ - شَجَاعَتِهِ.",
+      "figureDesc": "سطر منقّط للإجابة",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p024_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II-2",
+      "instruction": "أُنْتِجُ نَصًّا يَتَوَافَقُ مَعَ الْمَشَاهِدِ، وَأُضَمِّنُهُ حِوَارًا مُسْتَعِينًا بِمَا يَلِي :",
+      "body": "اِنْتَفَشَ - بِحَذَرٍ - وَثَبَ - ضَوْضَاءَ - حَرَكَةً غَرِيبَةً - هَوَى - مَخَالِبُ حَادَّةٌ - عَيْنَاهُ مُخِيفَتَانِ - فَزِعَ - يَقِظٌ",
+      "figureDesc": "رسم: قطّ تحت شجرة قرب جدار منزل له نافذة، قفص طائر معلّق في غصن الشجرة، وثعبان على الأرض أمام القطّ؛ سبعة أسطر منقّطة للكتابة (تنقيط 0,5 لكل سطر، معيار معـ1)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p024_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u5",
+    "confidence": 0.32
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un test de fin de deuxième trimestre en production écrite (ordonner des mots, rédiger un texte avec dialogue à partir d'images) : c'est une évaluation générale qui ne correspond clairement à aucune unité officielle précise.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : phrases et dialogue",
+    "skill": "Remettre en ordre les mots de phrases désordonnées, puis rédiger un texte dialogué à partir de scènes illustrées en réutilisant du vocabulaire donné.",
+    "pageType": "exam",
+    "formats": [
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "ordre des mots",
+      "phrases désordonnées",
+      "texte dialogué",
+      "production écrite",
+      "scènes illustrées",
+      "évaluation trimestrielle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : la double consigne (reconstituer des phrases mélangées, puis écrire un récit dialogué à partir d'images et d'une liste de mots imposés) dans une situation d'animal domestique qui protège la maison et sa famille.",
+    "themeGroup": "Production écrite: phrases et dialogue"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

@@ -1,0 +1,188 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 13,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الأمر (صيغة الأمر): الأمر من الفعل الصحيح والمضاعف، تصريف الأمر مع الضمائر",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "آمر المخاطب بالاعتماد على المثال",
+      "body": "مررت بصديقي وسلمت عليه ثم استعددنا لإنجاز البحث",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p013_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أصوغ الأمر وفق ما يتطلب السياق",
+      "body": "استمد قوّته من الله واسترد عافيته بسرعة\nيا ليلي",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p013_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اجعل الفقرة التالية في صيغة الأمر مع جمع المخاطبات",
+      "body": "قصت الخضر وأعدت الطعام فوفرت بذلك من مصروف اليوم ما تحتاج اليه غدا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p013_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "text_production",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "صرف في الأمر الفعلين التاليين",
+      "body": "دل\nاستدل",
+      "figureDesc": "جدول من 5 أعمدة وسطرين: العمود الأول (من اليمين) يحتوي على الفعلين دل واستدل والأعمدة الأربعة الأخرى فارغة لتصريف الأمر.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p013_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكمل تعميرا لجدول التالي",
+      "body": "مدّ | تشدد | استعد",
+      "figureDesc": "جدول من 3 أعمدة عناوينها: مدّ، تشدد، استعد، وتحتها 4 أسطر فارغة لتعميرها.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p013_i5",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تصريف المضاعف المجرد",
+      "body": "تصريف المضاعف المجرد: عدّ يعدّ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p013_i6",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m2",
+    "confidence": 0.42
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la conjugaison arabe (impératif des verbes sains et sourds/redoublés), matière arabe ; le chapitre ar-6-ch1 est le seul qui traite de conjugaison (verbes défectifs), mais l'impératif des verbes sains et redoublés ne correspond pas exactement, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "L'impératif en arabe",
+    "skill": "Conjuguer et former l'impératif des verbes sains, redoublés et dérivés avec les différents pronoms.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "impératif",
+      "verbe sain",
+      "verbe redoublé",
+      "conjugaison",
+      "pronoms",
+      "tableau de conjugaison"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les exercices de transformation de phrases ou de paragraphes en ordres adressés à différents interlocuteurs (masculin, féminin, pluriel) et le tableau de conjugaison à compléter sont réutilisables, avec une courte leçon sur les verbes redoublés en rappel.",
+    "themeGroup": "L'impératif"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 1: « استعددنا » est faux, l'image porte « استعددنا » avec une seule suite correcte ? En réalité l'image montre « استعددنا » : à vérifier ; la transcription est plausible, pas d'erreur certaine"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: « قوّته » transcrit avec shadda, l'image montre « قـوّتـه » (« قـ‍ٓتـه ») : voyelle acceptable"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3: « قصت الخضر » : l'image porte « قصت الخضر » ; correct. Aucune erreur certaine"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4: « صرف في الأمر الفعلين التاليين » correct"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5: « أكمل تعميرا لجدول التالي » correct, conforme à l'image"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres « التمارين » et « التمرين الأول…الخامس » ne sont pas transcrits (numérotés [1]–[5] à la place)"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 4: les cellules vides du tableau (5 colonnes, 2 lignes) et exercice 5: 4 lignes vides non indiquées"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Dernière ligne dupliquée: « تصريف المضاعف المجرد » apparaît deux fois, le second avec « : »; l'image n'a qu'une occurrence suivie de « عدّ يعدّ »"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« réponse: None » ajouté, absent de l'image"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 5: ordre des colonnes de l'image (RTL) : مدّ، تشدد، استعد ; transcription cohérente"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

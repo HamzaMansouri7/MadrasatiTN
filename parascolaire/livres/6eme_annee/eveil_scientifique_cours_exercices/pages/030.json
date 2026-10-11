@@ -1,0 +1,103 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 30,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الوسطُ البيئيُّ : السِّلْسِلَةُ الغِذائِيَّةُ (Le milieu environnemental : la chaîne alimentaire)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 1 : سَمِّ الأَحْياءَ المُنْتِجَةَ وَالأَحْياءَ المُسْتَهْلِكَةَ في كُلِّ سِلْسِلَةٍ.",
+      "body": "السَّنَد : تَعيشُ في الغابَةِ مَجْمُوعَةٌ مِنَ الحَيَواناتِ العاشِبَةِ وَاللاّحِمَةِ وَالمُحَلِّلَةِ.",
+      "figureDesc": "Encadré « أكل ماكول ! » : trois chaînes alimentaires dessinées sous forme de maillons colorés. Chaîne (أ) : herbe puis insecte (sauterelle). Chaîne (ب) : herbe, insecte, grenouille/lézard, etc. Chaîne (ج) : herbe, insecte, grenouille, serpent, rapace. Légende « سلاسل غذائية ».",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p030_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 2 : بِماذا تَبْدَأُ كُلٌّ مِنْ هذِهِ السَّلاسِلِ ؟ لِماذا ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p030_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 3 : حَدِّدْ تَرْتيبَ المُسْتَهْلِكِ في كُلِّ سِلْسِلَةٍ.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p030_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة : أ) أَلِّفْ 3 سَلاسِلَ غِذائِيَّةٍ بِحَيَواناتِ الغابَةِ الَّتي يُمَثِّلُها الرَّسْمُ. ب) لاحِظِ الرَّسْمَ ثُمَّ سَمِّ مَجْمُوعَةَ عَناصِرِ الحَلْقَةِ الأُولى. ج) اِسْتَعِنْ بِالرَّسْمِ لِكِتابَةِ مَجْمُوعَةِ الحَيَواناتِ الَّتي تَصْطادُ.",
+      "body": "السَّنَد : تَنْقَسِمُ الأَحْياءُ في أَيِّ بيئَةٍ طَبيعِيَّةٍ إِلى ثَلاثَةِ أَنْواعٍ : - الأَحْياءُ المُنْتِجَةُ لِلْغِذاءِ. - الأَحْياءُ المُسْتَهْلِكَةُ. - الأَحْياءُ المُحَلِّلَةُ.",
+      "figureDesc": "Schéma d'un réseau alimentaire en forêt : arbre avec feuilles, chenilles/insectes (شَجَرَة), pic (نَقَّار), vers (دودة), racines (جذور), hérisson (قنفذ), écureuil (سنجاب), aigle (عقاب), mésange (عصفور), fouine/renard (سمّور), faucon (صقر), lézard/caméléon. Les flèches indiquent « غذاء لـ ... » (sert de nourriture à). Légende dans un cadre rouge : flèche rouge « ... غذاء لـ ... ».",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p030_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.19
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des chaînes alimentaires (producteurs, consommateurs, décomposeurs), un contenu d'éveil scientifique sur le milieu naturel, mais aucun des chapitres officiels de 6ème (œil, air, circulation, reproduction florale, énergie, projets) ne couvre clairement ce thème.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Les chaînes alimentaires en forêt",
+    "skill": "Identifier les producteurs, consommateurs et décomposeurs, et déterminer l'ordre des consommateurs dans une chaîne alimentaire.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "chaîne alimentaire",
+      "producteurs",
+      "consommateurs",
+      "décomposeurs",
+      "forêt",
+      "milieu naturel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : composer des chaînes alimentaires à partir d'un dessin d'animaux d'un milieu (forêt), nommer les rôles de chaque maillon et justifier que la chaîne commence par un producteur, avec un encadré de synthèse sur les trois types d'êtres vivants.",
+    "themeGroup": "Chaînes alimentaires et reproduction des plantes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

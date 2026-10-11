@@ -1,0 +1,296 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 86,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Évaluation : ordre des nombres (rangement), intérêt simple d'un prêt bancaire, et géométrie (construction d'un angle et de sa bissectrice, parallélogramme à partir de ses diagonales)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرتب تزايديا.",
+      "body": "77/9 ; 8 ; 99/12 ; 8,51 ; 8,099 ; 9 (2ن)",
+      "figureDesc": "Ligne de nombres à ranger, suivie de lignes pointillées pour la réponse. En haut de la page, un cadre à motif de veines de bois avec la mention « لا يكتب أي شيء في هذا الإطار ».",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p086_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "مسألة:",
+      "body": "اقترض شخص مبلغ 36000 درهما من البنك ، على أن يسدد هذا المبلغ لمدة 3 سنوات بسعر 7 % . (3ن)\nأ- أبحث عن الفائدة السنوية.\nب- ما هو المبلغ الذي سيرده الشخص للبنك بعد مرور 3 سنوات؟",
+      "figureDesc": "Lignes pointillées pour écrire les réponses aux questions أ et ب.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p086_i2"
+    },
+    {
+      "kind": "title",
+      "number": null,
+      "instruction": "ثانيا: الهندسة (11 ن)",
+      "body": "",
+      "figureDesc": "Titre de section souligné, placé avant le tableau à deux cadres (exercices 1 et 2).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p086_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنشئ زاوية AÔB قياسها 130 درجة. أرسم منصفها [OK) (3ن)",
+      "body": "",
+      "figureDesc": "Cadre vide (colonne de droite du tableau) destiné à la construction de l'angle et de sa bissectrice.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p086_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أرسم متوازي الاضلاع ABCD انطلاقا من قطريه AC=3cm و BD= 4 cm (2ن)",
+      "body": "",
+      "figureDesc": "Cadre vide (colonne de gauche du tableau) destiné à la construction du parallélogramme.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p086_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.25
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation générale de mathématiques qui mêle rangement de nombres décimaux et fractions, intérêt simple (pourcentage), construction d'angle avec bissectrice et parallélogramme ; elle couvre plusieurs chapitres (ch1, ch2, p3, p4) sans en cibler clairement un seul.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Rangement, intérêt simple et constructions géométriques",
+    "skill": "Ranger des nombres décimaux et fractionnaires, calculer un intérêt simple et construire un angle avec sa bissectrice et un parallélogramme à partir de ses diagonales.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "rangement de nombres",
+      "intérêt simple",
+      "prêt bancaire",
+      "bissectrice",
+      "parallélogramme",
+      "diagonales"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation type en trois parties : ranger ensemble des décimaux et des fractions, problème d'emprunt bancaire avec intérêt annuel puis somme totale à rembourser, et constructions géométriques guidées avec barème détaillé.",
+    "themeGroup": "Constructions géométriques"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le bloc [1] « أنشئ زاوية AÔB ... [OK) (3ن) » est dupliqué : il apparaît une fois seul, puis à nouveau sous le titre « ثانيا: الهندسة » avec la numérotation 1-. Idem pour l'exercice [2], transcrit deux fois."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le titre « ثانيا: الهندسة (11 ن) » est placé après l'exercice [1] dupliqué, alors qu'il précède les exercices 1 et 2. Le titre est donc mal positionné dans la structure."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« [OK) » : le crochet est faux. L'image montre « [OK) » avec le crochet fermant dans l'autre sens, soit [OK) lu de droite à gauche ; à vérifier. En arabe RTL cela donne [OK) et la transcription semble correcte."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros « -4 » et « -5 » sont transcrits entre crochets [4] et [5], sans le tiret ni le point. Le tiret de « 5- مسألة » est absent. L'écriture « أرتب » est correcte."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de réponse en pointillés ne sont pas mentionnées. Le cadre « لا يكتب أي شيء في هذا الإطار » (en haut de la page) est omis."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'exercice 4, l'ordre des nombres est inversé par rapport à la lecture visuelle (77/9 ; 8 ; 99/12 ; 8,51 ; 8,099 ; 9 de droite à gauche). Cet ordre est cohérent avec la lecture RTL, donc acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Pas de vrai doublon d'exercices (4 items distincts), mais le contenu des exercices 1 et 2 est répété : le champ body recopie l'instruction déjà présente dans instruction. Pour l'exercice 1, body y ajoute le titre de section « ثانيا: الهندسة (11 ن) », qui n'appartient pas à l'exercice."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « ثانيا: الهندسة (11 ن) » est absent comme élément propre. Il est noyé dans le body de l'exercice 1 alors qu'il précède les exercices 1 et 2 du tableau."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 4 : les nombres sont transcrits dans l'ordre visuel gauche→droite (9 ; 8,099 ; 8,51 ; 99/12 ; 8 ; 77/9). L'ordre de lecture arabe (droite→gauche) est 77/9 ; 8 ; 99/12 ; 8,51 ; 8,099 ; 9. Les valeurs sont toutes correctes, seul l'ordre est inversé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le crochet de « [OK) » est bien lisible dans le scan et la transcription le reproduit correctement. Le signalement « mot » du contrôle rapide n'est donc pas confirmé."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرتب تزايديا.",
+      "body": "77/9 ; 8 ; 99/12 ; 8,51 ; 8,099 ; 9 (2ن)",
+      "figureDesc": "Ligne de nombres à ranger, suivie de lignes pointillées pour la réponse. En haut de la page, un cadre à motif de veines de bois avec la mention « لا يكتب أي شيء في هذا الإطار ».",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p086_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "مسألة:",
+      "body": "اقترض شخص مبلغ 36000 درهما من البنك ، على أن يسدد هذا المبلغ لمدة 3 سنوات بسعر 7 % . (3ن)\nأ- أبحث عن الفائدة السنوية.\nب- ما هو المبلغ الذي سيرده الشخص للبنك بعد مرور 3 سنوات؟",
+      "figureDesc": "Lignes pointillées pour écrire les réponses aux questions أ et ب.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p086_i2"
+    },
+    {
+      "kind": "title",
+      "number": null,
+      "instruction": "ثانيا: الهندسة (11 ن)",
+      "body": "",
+      "figureDesc": "Titre de section souligné, placé avant le tableau à deux cadres (exercices 1 et 2).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p086_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنشئ زاوية AÔB قياسها 130 درجة. أرسم منصفها [OK) (3ن)",
+      "body": "",
+      "figureDesc": "Cadre vide (colonne de droite du tableau) destiné à la construction de l'angle et de sa bissectrice.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p086_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أرسم متوازي الاضلاع ABCD انطلاقا من قطريه AC=3cm و BD= 4 cm (2ن)",
+      "body": "",
+      "figureDesc": "Cadre vide (colonne de gauche du tableau) destiné à la construction du parallélogramme.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p086_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرتب تزايديا.",
+      "body": "9 ; 8,099 ; 8,51 ; 99/12 ; 8 ; 77/9 (2ن)",
+      "figureDesc": "Ligne de nombres à ranger, suivie de lignes pointillées pour la réponse. En haut de la page, un cadre à motif de veines de bois avec la mention « لا يكتب أي شيء في هذا الإطار ».",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p086_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "مسألة:",
+      "body": "اقترض شخص مبلغ 36000 درهما من البنك ، على أن يسدد هذا المبلغ لمدة 3 سنوات بسعر 7 % . (3ن)\nأ- أبحث عن الفائدة السنوية.\nب- ما هو المبلغ الذي سيرده الشخص للبنك بعد مرور 3 سنوات؟",
+      "figureDesc": "Lignes pointillées pour écrire les réponses aux questions أ et ب.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p086_i2",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنشئ زاوية AÔB قياسها 130 درجة. أرسم منصفها [OK) (3ن)",
+      "body": "ثانيا: الهندسة (11 ن)\n1- أنشئ زاوية AÔB قياسها 130 درجة. أرسم منصفها [OK) (3ن)",
+      "figureDesc": "Cadre vide (colonne de droite du tableau) destiné à la construction de l'angle et de sa bissectrice.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mouayen_6eme_math_francais_p086_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أرسم متوازي الاضلاع ABCD انطلاقا من قطريه AC=3cm و BD= 4 cm (2ن)",
+      "body": "2- أرسم متوازي الاضلاع ABCD انطلاقا من قطريه AC=3cm و BD= 4 cm (2ن)",
+      "figureDesc": "Cadre vide (colonne de gauche du tableau) destiné à la construction du parallélogramme.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mouayen_6eme_math_francais_p086_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "full_year",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

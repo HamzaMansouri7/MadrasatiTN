@@ -1,0 +1,61 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 77,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite – Thème 3 : Sauver la nature – Les belles expressions",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Les belles expressions :",
+      "body": "• Ce jardin est propre et beau comme un paradis.\n• La rue est très sale, elle est comme une décharge.\n• Il faut avoir un environnement sain.\n• Il faut garder les rues propres.\n• Il est possible que les chats renversent les poubelles dans la rue, mais il faut faire des campagnes de propreté.\n• On a le droit de vivre dans un milieu sain et propre.\n• Les animaux aussi ont le droit de vivre dans un milieu naturel sain.\n• On doit s'entraider pour sauvegarder la nature.\n• Pour avoir un corps sain, il faut garder l'environnement propre.\n• On doit attirer l'attention des gens irresponsables sur l'importance de la vie en commun. Ils doivent respecter l'environnement.\n• Pour que la nature soit équilibrée, il faut sauvegarder les animaux et les protéger. Par exemple, il faut respecter les règles de la chasse. Il ne faut pas chasser après la fermeture de la saison de la chasse.\n• Moi, je suis contre la torture des animaux. Ils ont le droit de vivre en paix.\n• Tout à fait d'accord, je suis pour le respect des animaux et de l'environnement.\n• Pendant longtemps, on a cru que les ressources naturelles de la Terre étaient inépuisables.\n• Des actions de l'homme ont abîmé la planète.\n• Les entreprises rejettent des déchets toxiques.\n• L'environnement est en danger à cause de la pollution provoquée par l'homme.\n• Unissons nos efforts pour protéger l'environnement. Il est temps d'agir pour la protection de la terre.\n• Notre terre va de plus en plus mal !",
+      "figureDesc": "Page encadrée avec bandeau « Expression écrite », mention « Sagesse », « 6ème année de base » et titre du thème dans un cartouche. Pied de page : « Lire et s'exprimer », page 76. Texte du verso visible en transparence, non pris en compte.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p077_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "fr-6-m5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m5",
+    "confidence": 0.45
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page d'expression écrite du thème 3 « Sauver la nature » présente des expressions sur la propreté et l'environnement sain, ce qui correspond au Module 5 de français : Sauver la nature.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Expressions pour protéger l'environnement",
+    "skill": "Employer des expressions et structures pour décrire un environnement propre ou sale et exprimer l'obligation et la possibilité.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "environnement",
+      "propreté",
+      "comparaisons",
+      "expression écrite",
+      "sauver la nature",
+      "il faut"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque de phrases modèles avec comparaisons imagées et tournures d'obligation ou de possibilité, réutilisable pour des exercices de réécriture ou de rédaction d'un court texte sur la propreté des lieux publics.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

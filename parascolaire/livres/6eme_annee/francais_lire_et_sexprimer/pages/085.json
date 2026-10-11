@@ -1,0 +1,87 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 85,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite : écrire une lettre amicale pour parler de ses loisirs (Lettre 2 et Lettre 3)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "Lettre 2",
+      "instruction": "Lettre 2 :",
+      "body": "Espagne, le 05 avril 2016\nChère amie Amelie,\nJe vais parler de mes loisirs préférés et de ce que je fais pendant mon temps libre. J'aime beaucoup la musique, les films classiques et les comédies. J'aime aussi bavarder avec les amis et la famille. Le week-end, quand j'ai du temps libre, j'écoute de la musique et je danse en même temps, je m'occupe de moi, je regarde la télévision ; quelquefois, j'aide dans les tâches ménagères, je lis ou je cuisine.\nJe ne fais jamais de bricolage ni de sport. Je n'aime pas sortir pour aller en discothèque ou dans les bars parce qu'ils sont très chers et il y a beaucoup de disputes, mais en Espagne les jeunes en général vont là-bas et aussi au cinéma.\nMes salutations\nTon amie Carole",
+      "figureDesc": "Texte de lettre encadré. En-tête de page : « Expression écrite », « Sagesse », « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p085_i1",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "Lettre 3",
+      "instruction": "Lettre 3 :",
+      "body": "Paris, le 5 février 2016\nChère amie Sarah\nJe vais parler des choses que j'adore faire quand j'ai un peu de temps pour m'amuser (principalement pendant le week-end). J'aime bien sortir avec mes amis et mon petit copain, écouter les disques de mon groupe préféré \"HIM\", aller au cinéma pour voir seulement les bons films, aller aux magasins et visiter le stade où je ne vais pas normalement. Pendant la semaine, je n'ai pas beaucoup de temps libre parce que je dois faire mes devoirs, étudier pour les examens et assister aux cours particuliers.\nJe t'embrasse très fort\nChris",
+      "figureDesc": "Texte de lettre encadré. Pied de page : « Lire et s'exprimer », page 84, « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p085_i2",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m7",
+  "topicTitle": "Module 7 : Profiter de son temps libre",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "fr-6-m7",
+  "topicConfidencePrev": 0.5555555555555556,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m7",
+    "confidence": 0.69
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page présente des modèles de lettres amicales où l'on parle de ses loisirs et de son temps libre, ce qui correspond au Module 7 « Profiter de son temps libre » (rédaction d'une lettre amicale).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "La lettre amicale sur les loisirs",
+    "skill": "Rédiger une lettre amicale pour présenter ses loisirs et ses activités du temps libre à partir de modèles.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lettre amicale",
+      "loisirs",
+      "temps libre",
+      "expression écrite",
+      "correspondance",
+      "week-end"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable comme situation de correspondance entre amis de pays différents, avec des lettres modèles à comparer pour repérer la structure (lieu, date, formule d'appel, présentation des goûts) et produire sa propre lettre.",
+    "themeGroup": "Production écrite et lettres"
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« Expression écrite », « Sagesse », « 6ème année de base ») et le pied de page (« Lire et s'exprimer », « 84 ») ne sont pas transcrits. Ce sont des éléments de mise en page, pas du contenu des lettres."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

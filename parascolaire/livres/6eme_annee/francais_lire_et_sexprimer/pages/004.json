@@ -1,0 +1,100 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 3,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Sommaire",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "Sommaire\n\n| Notions | Page |\n| :--- | :--- |\n| **Partie I : Lecture - compréhension........................................** | **de 4 à 71** |\n| **Partie II : Expression écrite** | |\n| - *Les métiers*................................................................................... | 72 |\n| - *Communiquer avec les autres*..................................................... | 74 |\n| - *S'entraider pour mieux réussir*................................................... | 75 |\n| - *Sauver la nature*........................................................................... | 76 |\n| - *Être en forme et mieux se porter*................................................ | 79 |\n| - *Profiter de son temps libre*......................................................... | 81 |\n| - *La lettre*....................................................................................... | 83 |\n| **Partie III : Les évaluations..........................................................** | **de 85 à 115** |",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p004_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.99
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m4",
+    "confidence": 0.77
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un sommaire (table des matières) du manuel de français qui liste plusieurs parties et modules (lecture, expression écrite sur les métiers, communiquer, s'entraider, etc.), donc elle ne correspond à aucun chapitre unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Sommaire du manuel de français",
+    "skill": "Se repérer dans les parties du manuel : lecture-compréhension et expression écrite.",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "sommaire",
+      "lecture compréhension",
+      "expression écrite",
+      "les métiers",
+      "communication"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Page d'organisation seulement : elle montre la structure du manuel (lecture puis expression écrite par thèmes comme les métiers), utile pour planifier une progression mais sans exercice réutilisable.",
+    "themeGroup": "Divers"
+  },
+  "audit": {
+    "accuracy": 0.0,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "La transcription entière (« Sommaire », Partie I/II/III, liste de rubriques et numéros de pages) est inventée : l'image est une page « Introduction » du manuel « Lire et s'exprimer » (6ème année de base) et ne contient aucun sommaire."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Tout le texte réel est absent : le titre « Introduction », les quatre paragraphes (« Lire et s'exprimer » a pour objectif de corriger la lecture et la compréhension des apprenants de ce niveau… ; Il s'adresse à tous les élèves… collèges pilotes ; C'est aussi un manuel… noble mission ; Je tiens à remercier… modeste travail), « Merci à tous du fond du cœur », « L'auteur », ainsi que les en-têtes et pieds de page (Sagesse, 6ème année de base)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Numéros de page (4 à 71, 72, 74, 75, 76, 79, 81, 83, 85 à 115) et mentions « Partie I/II/III » absents de l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.99,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "Sommaire\n\nPartie I : Lecture - compréhension ................................................. de 4 à 71\n\nPartie II : Expression écrite\n- Les métiers ..................................................................................... 72\n- Communiquer avec les autres ....................................................... 74\n- S'entraider pour mieux réussir ..................................................... 75\n- Sauver la nature ............................................................................. 76\n- Être en forme et mieux se porter ................................................. 79\n- Profiter de son temps libre ............................................................ 81\n- La lettre .......................................................................................... 83\n\nPartie III : Les évaluations ............................................................. de 85 à 115",
+      "figureDesc": "Tableau à deux colonnes listant les notions du sommaire et les pages correspondantes.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "sagesse_6eme_complet_p004_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

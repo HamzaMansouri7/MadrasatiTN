@@ -1,0 +1,148 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 129,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Note : la page fournie n'est pas une page de mathématiques du manuel Mouayen. C'est le sujet d'examen régional marocain de français (certificat d'études primaires, session du 05 juillet 2022, Casablanca-Settat), page 1/4 : compréhension de l'écrit, texte « Le conteur de Marrakech ».",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte :",
+      "body": "La place Jamaâ El Fna est la place principale de la ville de Marrakech : un énorme espace, goudronné, où les gens de la ville et d'ailleurs viennent pour se promener, s'asseoir, parler, écouter, vendre et quelquefois acheter.\nSoudain le conteur apparut. Grand, bien vieux maintenant, il s'appuyait sur un bâton, qu'il agita en guise de salut. On fit cercle autour de lui, les voix s'élevèrent pour l'accueillir et tout le monde s'assit pour l'écouter. Ils le connaissent très bien car il racontait des histoires surprenantes.\nParfois ces histoires se poursuivaient pendant des jours, des semaines même. Et parfois aussi, elles étaient très courtes.\nD'après Tony Barton, « Le conteur de Marrakech ».",
+      "figureDesc": "En-tête d'examen en arabe (Royaume du Maroc, Académie régionale de Casablanca-Settat, examen régional unifié pour le certificat d'études primaires, session du 05 juillet 2022, matière : langue française, durée 1h30mn), cadre pour le numéro d'examen, le nom du candidat, la note /40 et le nom du correcteur. Consigne : écrire les réponses directement sur cette feuille.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p129_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Compréhension de l'écrit (15 pts) : Qui est l'auteur du texte ? (1,5 pt)",
+      "body": "Ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p129_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Réponds par « Vrai » ou « Faux ». (3 pts)",
+      "body": "a) La place Jamaâ El Fna se trouve à Marrakech.\nb) Les gens ne connaissent pas le conteur.\nc) Les histoires se poursuivaient pendant des jours.",
+      "figureDesc": "Pointillés à droite de chaque affirmation pour répondre.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p129_i3",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Pourquoi les gens viennent-ils à la place Jamaâ El Fna ? (2 pts)",
+      "body": "Ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p129_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Comment est le conteur ? (2 pts)",
+      "body": "Ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p129_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Coche la bonne réponse. Des histoires « surprenantes » sont : (1 pt)",
+      "body": "☐ des histoires étonnantes.\n☐ des histoires ennuyeuses.",
+      "figureDesc": "Deux cases à cocher.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p129_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Donne un titre convenable au texte. (1,5 pt)",
+      "body": "Ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p129_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.16
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un sujet d'examen régional marocain (certificat d'études primaires, Casablanca-Settat) de compréhension de l'écrit en français ; c'est une évaluation générale et non une leçon du programme tunisien, donc aucun chapitre officiel ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : texte narratif",
+    "skill": "Comprendre un texte court en repérant l'auteur, les informations explicites et le sens d'un mot, puis en proposant un titre.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "qcm",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "conteur",
+      "Marrakech",
+      "place Jamaâ El Fna",
+      "vrai ou faux",
+      "titre du texte"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série de questions graduées sur un texte culturel local (identifier l'auteur, vrai/faux, questions de repérage, description d'un personnage, vocabulaire en contexte, choix d'un titre) avec barème par question, réutilisable comme modèle d'évaluation de lecture.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

@@ -1,0 +1,112 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 4,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الجسم المضيء والجسم المضاء المنير – تفسير عملية الرؤية لابن الهيثم (Sciences : corps lumineux et corps éclairé, la vision selon Ibn al-Haytham). Remarque : le contenu de la page relève des sciences physiques/éveil scientifique, pas des mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الجسم المضيء،الجسم المضاء المنير",
+      "body": "الجسم المضيئ هو الجسم الذي يصدر الضوء من ذاته\nالجسم المضاء المنير هو الجسم الذي يتلقى الضوء من مصدر مضيء ثم ينثره",
+      "figureDesc": "Tableau à deux colonnes. Colonne « الجسم المضيئ » : النجوم البرق النار الشمس الشمعة المكشاف المصباح الكهربائي. Colonne « الجسم المضاء المنير » : القمر الكتاب الحديد السبورة الأرض الجدار. Cadre décoratif de cercles avec flèches autour de la page.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p004_i1",
+      "topicId": "sci-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تفسير عملية الرؤية لابن الهيثم",
+      "body": "أثبت ابن الهيثم أن الضوء يسير في خطوط مستقيمة باستخدام التجارب العلمية في كتابه المناظر\nسادت نظريتان كبيرتان حول كيفية الرؤية في العصور القديمة\nالنظرية الأولى نظرية الانبعاثات، التي أيدها مفكرون مثل إقليدس وبطليموس، والتي تفترض أن الإبصار يتم اعتمادًا على أشعة الضوء المنبعثة من العين\nأما النظرية الثانية نظرية الولوج التي أيدها أرسطو وأتباعه، والتي تفترض دخول الضوء للعين بصور فيزيائية  عارض ابن الهيثم كون عملية الرؤية تحدث عن طريق الأشعة المنبعثة من العين، أو دخول الضوء للعين من خلال صور فيزيائية، وعلل ذلك بأن الشعاع لا يمكن أن ينطلق من العينين ويصل إلى النجوم البعيدة في لحظة بمجرد أن نفتح أعيننا كما عارض",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p004_i2",
+      "topicId": "sci-5-u1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-5-u1",
+  "topicTitle": "Unité 1 : La lumière, vision et propagation rectiligne",
+  "topicConfidence": 0.96,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-5-u1",
+    "confidence": 0.44
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page définit le corps lumineux et le corps éclairé et présente la théorie de la vision d'Ibn al-Haytham ainsi que la propagation rectiligne de la lumière, ce qui correspond à l'Unité 1 d'Éveil Scientifique sur la lumière.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Vision et propagation de la lumière",
+    "skill": "Distinguer corps lumineux et corps éclairé, et expliquer la vision selon Ibn al-Haytham (propagation rectiligne de la lumière).",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "vrai_faux",
+      "appariement",
+      "qcm"
+    ],
+    "keywords": [
+      "corps lumineux",
+      "corps éclairé",
+      "Ibn al-Haytham",
+      "propagation rectiligne",
+      "théories de la vision",
+      "optique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le lien entre définitions (source de lumière vs objet qui diffuse la lumière) et histoire des sciences permet des classements d'objets, des schémas du trajet de la lumière vers l'œil, des expériences de la chambre noire et une infographie comparant la théorie de l'émission et celle de la réception.",
+    "themeGroup": "Propagation de la lumière et ombre"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le texte de l'image porte « المناظرسادت » (mots collés) ; la transcription sépare en « المناظر / سادت », ce qui est correct sur le fond mais à noter."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau est absent de la transcription : en-têtes « الجسم المضيئ » et « الجسم المضاء المنير » ; colonne 1 : « النجوم البرق النار الشمس الشمعة المكشاف المصباح الكهربائي » ; colonne 2 : « القمر الكتاب الحديد السبورة الأرض الجدار »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الجسم المضيئ » est écrit dans l'image « المضيئ » en définition et « المضيء » dans le titre ; la transcription est cohérente avec l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« تحدث عن طريق » : l'image a « تحدث » ; correct. Aucune erreur détectée dans le paragraphe, la fin « كما عارض » est bien présente."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.97,
+    "verdict": "ok",
+    "confirmedErrors": []
+  },
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.97
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

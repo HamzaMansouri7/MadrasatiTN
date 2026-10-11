@@ -1,0 +1,268 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 54,
+  "grade": "3ème Année",
+  "subject": "التربية الإسلامية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول عدد 2 - التربية الإسلامية - السنة الثالثة (صلة الرحم، فرائض الوضوء ومراحله)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1: حَثَّنَا الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ عَلَى التَّزَاوُرِ وَالتَّحَابُبِ وَالتَّعَاوُنِ بَيْنَ الأَقَارِبِ. أَكْتُبُ الْحَدِيثَ الْخَاصَّ بِذَلِكَ:",
+      "body": "السَّنَدُ 1: يَوْمَ الأَحَدِ زَارَ فَادِي عَائِلَةَ خَالَتِهِ، وَلَعِبَ مَعَ أَبْنَائِهَا، وَعِنْدَ الظُّهْرِ تَوَضَّأَ وَصَاحَبَ زَوْجَهَا إِلَى الْمَسْجِدِ وَأَدَّى صَلَاةَ الظُّهْرِ. فِي الرَّكْعَةِ الأُولَى تَلَا مَا تَيَسَّرَ مِنْ سُورَةِ التِّينِ.\nقَالَ الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «........................................................................................\n........................................................................................»",
+      "figureDesc": "سطران منقطان للكتابة. المعيار: مع2ب مع مربع للتنقيط.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "examens_toutes_matieres_p054_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2: أَرْبُطُ بِفَرَائِضِ الْوُضُوءِ:",
+      "body": "• غَسْلُ الْيَدَيْنِ إِلَى الْكُوعَيْنِ\n• غَسْلُ الْوَجْهِ\n• غَسْلُ الرِّجْلَيْنِ إِلَى الْكَعْبَيْنِ\n• مَسْحُ الرَّأْسِ\n\n• مِنْ فَرَائِضِ الْوُضُوءِ",
+      "figureDesc": "عمودان من النقاط للربط بخط: قائمة الأعمال على اليسار وعبارة «من فرائض الوضوء» على اليمين. المعيار: مع3أ مع ثلاثة مربعات.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "examens_toutes_matieres_p054_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3: أُعِيدُ كِتَابَةَ مَرَاحِلِ الْوُضُوءِ مُرَتَّبَةً.",
+      "body": "الاِسْتِنْشَاقُ وَالاِسْتِنْثَارُ\nغَسْلُ الْيَدَيْنِ إِلَى الْمِرْفَقَيْنِ\nالْمَضْمَضَةُ\n\nغَسْلُ الْيَدَيْنِ إِلَى الْكُوعَيْنِ\n........................................\n........................................\nغَسْلُ الْوَجْهِ\n........................................\n........................................",
+      "figureDesc": "إطار بعمودين: العمود الأيمن به مراحل مبعثرة (الاستنشاق والاستنثار، غسل اليدين إلى المرفقين، المضمضة)، والعمود الأيسر به «غسل اليدين إلى الكوعين» و«غسل الوجه» يليهما سطور منقطة للكتابة. المعيار: مع3ب مع ثلاثة مربعات.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "examens_toutes_matieres_p054_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4: أُكْمِلُ الآيَةَ بِمَا يُنَاسِبُ:",
+      "body": "أَرْجُلَكُمْ إِلَى الْكَعْبَيْنِ - وُجُوهَكُمْ - أَيْدِيَكُمْ إِلَى الْمَرَافِقِ.\nقَالَ اللَّهُ تَعَالَى: «يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا ........................ وَ ........................ وَامْسَحُوا بِرُؤُوسِكُمْ وَ ........................ »",
+      "figureDesc": "إطار رمادي يحتوي على الكلمات المقترحة. المعيار: مع2ب مع مربعين.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "examens_toutes_matieres_p054_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p3",
+    "confidence": 0.2
+  },
+  "topicSubject": "Éducation islamique",
+  "topicReason": "La page est un test de fin de trimestre en éducation islamique (liens de parenté, obligations et étapes des ablutions), matière absente de la liste des chapitres officiels (langue arabe, mathématiques, éveil scientifique), donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Les ablutions et les liens de parenté",
+    "skill": "Connaître les obligations et l'ordre des étapes des ablutions, citer le verset et le hadith sur les liens de parenté.",
+    "pageType": "exam",
+    "formats": [
+      "appariement",
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "ablutions",
+      "obligations du wudu",
+      "liens de parenté",
+      "verset coranique",
+      "hadith"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation de la vie quotidienne (visite à la famille puis prière) sert de support pour mobiliser un hadith. Les ablutions sont travaillées par appariement, remise en ordre des étapes et complétion d'un verset à partir d'une liste de mots donnée.",
+    "themeGroup": "Les ablutions et la prière"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice [2] : « أَرْبُطُ » transcrit au lieu de « أَرْبِطْ » (image : أَرْبُطُ avec tashkeel du texte source ; à vérifier), mais surtout l'ordre des deux colonnes est mélangé : la colonne « مِنْ فَرَائِضِ الْوُضُوءِ » est séparée des quatre items, ce qui est acceptable."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le bloc [1] fusionne la consigne « أَكْتُبُ الْحَدِيثَ الْخَاصَّ بِذَلِكَ » avec le Sanad 1 et la répète deux fois (au début de [1] puis après la Taalimat 1) : la première occurrence au début est inventée/dupliquée, le Sanad n'a pas de consigne propre à cet endroit."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« التَّحَابُبِ » : l'image porte « التَّحَابُبِ » (identique) ; OK. En revanche « وَصَاحَبَ زَوْجَهَا » correct."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice [3] : l'ordre des items est donné comme المضمضة / غسل اليدين إلى المرفقين / الاستنشاق / غسل اليدين إلى الكوعين / غسل الوجه ; dans l'image, la colonne de droite contient الاستنشاق والاستنثار, غسل اليدين إلى المرفقين, المضمضة, et la colonne de gauche غسل اليدين إلى الكوعين, غسل الوجه : l'ordre transcrit est inversé/mélangé."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« مُرَتَّبَةً » : l'image porte « مُرَتَّبَةً » ; « الاِسْتِنْثَارُ » dans l'image est « الاِسْتِنْتَارُ »/« الإِسْتِنْثَارُ » (graphie légèrement différente)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de réponse pointillées de l'exercice 3 et les repères de barème (معـ 2ب, معـ 3أ, معـ 3ب, معـ 2ب) ainsi que l'en-tête (matière : التربية الإسلامية, niveau : السنة الثالثة, اختبار نهاية الثلاثي الأول عدد 2, الاسم/اللقب/القسم) ne sont pas transcrits."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 3 : l'ordre des items est faux. Dans l'image, la colonne de droite (de haut en bas) est : الاِسْتِنْشَاقُ وَالاِسْتِنْثَارُ / غَسْلُ الْيَدَيْنِ إِلَى الْمِرْفَقَيْنِ / الْمَضْمَضَةُ. La colonne de gauche contient غَسْلُ الْيَدَيْنِ إِلَى الْكُوعَيْنِ, puis des lignes pointillées, puis غَسْلُ الْوَجْهِ, puis d'autres lignes pointillées. La transcription met الْمَضْمَضَةُ en premier."
+      },
+      {
+        "type": "texte dupliqué",
+        "severity": "minor",
+        "detail": "Exercice 1 : la consigne « أَكْتُبُ الْحَدِيثَ الْخَاصَّ بِذَلِكَ » est copiée au début comme instruction, puis répétée dans le corps. Dans l'image, elle apparaît une seule fois, à la suite de la التَّعْلِيمَةُ 1 et avant « قَالَ الرَّسُولُ… ». Le السَّنَدُ 1 n'a pas de consigne propre."
+      },
+      {
+        "type": "description",
+        "severity": "minor",
+        "detail": "Exercice 3 : figureDesc est inexact. Les étapes mélangées sont dans la colonne de droite. La colonne de gauche contient deux étapes déjà écrites, chacune suivie de deux lignes pointillées."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1: حَثَّنَا الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ عَلَى التَّزَاوُرِ وَالتَّحَابُبِ وَالتَّعَاوُنِ بَيْنَ الأَقَارِبِ. أَكْتُبُ الْحَدِيثَ الْخَاصَّ بِذَلِكَ:",
+      "body": "السَّنَدُ 1: يَوْمَ الأَحَدِ زَارَ فَادِي عَائِلَةَ خَالَتِهِ، وَلَعِبَ مَعَ أَبْنَائِهَا، وَعِنْدَ الظُّهْرِ تَوَضَّأَ وَصَاحَبَ زَوْجَهَا إِلَى الْمَسْجِدِ وَأَدَّى صَلَاةَ الظُّهْرِ. فِي الرَّكْعَةِ الأُولَى تَلَا مَا تَيَسَّرَ مِنْ سُورَةِ التِّينِ.\nقَالَ الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «........................................................................................\n........................................................................................»",
+      "figureDesc": "سطران منقطان للكتابة. المعيار: مع2ب مع مربع للتنقيط.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_3eme_examens_p054_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2: أَرْبُطُ بِفَرَائِضِ الْوُضُوءِ:",
+      "body": "• غَسْلُ الْيَدَيْنِ إِلَى الْكُوعَيْنِ\n• غَسْلُ الْوَجْهِ\n• غَسْلُ الرِّجْلَيْنِ إِلَى الْكَعْبَيْنِ\n• مَسْحُ الرَّأْسِ\n\n• مِنْ فَرَائِضِ الْوُضُوءِ",
+      "figureDesc": "عمودان من النقاط للربط بخط: قائمة الأعمال على اليسار وعبارة «من فرائض الوضوء» على اليمين. المعيار: مع3أ مع ثلاثة مربعات.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_3eme_examens_p054_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3: أُعِيدُ كِتَابَةَ مَرَاحِلِ الْوُضُوءِ مُرَتَّبَةً.",
+      "body": "الاِسْتِنْشَاقُ وَالاِسْتِنْثَارُ\nغَسْلُ الْيَدَيْنِ إِلَى الْمِرْفَقَيْنِ\nالْمَضْمَضَةُ\n\nغَسْلُ الْيَدَيْنِ إِلَى الْكُوعَيْنِ\n........................................\n........................................\nغَسْلُ الْوَجْهِ\n........................................\n........................................",
+      "figureDesc": "إطار بعمودين: العمود الأيمن به مراحل مبعثرة (الاستنشاق والاستنثار، غسل اليدين إلى المرفقين، المضمضة)، والعمود الأيسر به «غسل اليدين إلى الكوعين» و«غسل الوجه» يليهما سطور منقطة للكتابة. المعيار: مع3ب مع ثلاثة مربعات.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_3eme_examens_p054_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4: أُكْمِلُ الآيَةَ بِمَا يُنَاسِبُ:",
+      "body": "أَرْجُلَكُمْ إِلَى الْكَعْبَيْنِ - وُجُوهَكُمْ - أَيْدِيَكُمْ إِلَى الْمَرَافِقِ.\nقَالَ اللَّهُ تَعَالَى: «يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا ........................ وَ ........................ وَامْسَحُوا بِرُؤُوسِكُمْ وَ ........................ »",
+      "figureDesc": "إطار رمادي يحتوي على الكلمات المقترحة. المعيار: مع2ب مع مربعين.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_3eme_examens_p054_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَكْتُبُ الْحَدِيثَ الْخَاصَّ بِذَلِكَ:",
+      "body": "السَّنَدُ 1: يَوْمَ الأَحَدِ زَارَ فَادِي عَائِلَةَ خَالَتِهِ، وَلَعِبَ مَعَ أَبْنَائِهَا، وَعِنْدَ الظُّهْرِ تَوَضَّأَ وَصَاحَبَ زَوْجَهَا إِلَى الْمَسْجِدِ وَأَدَّى صَلَاةَ الظُّهْرِ. فِي الرَّكْعَةِ الأُولَى تَلَا مَا تَيَسَّرَ مِنْ سُورَةِ التِّينِ.\nالتَّعْلِيمَةُ 1: حَثَّنَا الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ عَلَى التَّزَاوُرِ وَالتَّحَابُبِ وَالتَّعَاوُنِ بَيْنَ الأَقَارِبِ. أَكْتُبُ الْحَدِيثَ الْخَاصَّ بِذَلِكَ: قَالَ الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «........................................................................................»",
+      "figureDesc": "سطران منقطان للكتابة. المعيار: مع2ب مع مربع للتنقيط.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_3eme_examens_p054_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبُطُ بِفَرَائِضِ الْوُضُوءِ:",
+      "body": "• غَسْلُ الْيَدَيْنِ إِلَى الْكُوعَيْنِ\n• غَسْلُ الْوَجْهِ\n• غَسْلُ الرِّجْلَيْنِ إِلَى الْكَعْبَيْنِ\n• مَسْحُ الرَّأْسِ\n\n• مِنْ فَرَائِضِ الْوُضُوءِ",
+      "figureDesc": "عمودان من النقاط للربط بخط: قائمة الأعمال على اليسار وعبارة «من فرائض الوضوء» على اليمين. المعيار: مع3أ مع ثلاثة مربعات.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_3eme_examens_p054_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُعِيدُ كِتَابَةَ مَرَاحِلِ الْوُضُوءِ مُرَتَّبَةً.",
+      "body": "الْمَضْمَضَةُ\nغَسْلُ الْيَدَيْنِ إِلَى الْمِرْفَقَيْنِ\nالاِسْتِنْشَاقُ وَالاِسْتِنْثَارُ\nغَسْلُ الْيَدَيْنِ إِلَى الْكُوعَيْنِ\nغَسْلُ الْوَجْهِ",
+      "figureDesc": "إطار بعمودين: عمود به المراحل مبعثرة وعمود به سطور منقطة للكتابة مع بعض المراحل مكتوبة. المعيار: مع3ب مع ثلاثة مربعات.",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "jisr_ennajah_3eme_examens_p054_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُكْمِلُ الآيَةَ بِمَا يُنَاسِبُ:",
+      "body": "أَرْجُلَكُمْ إِلَى الْكَعْبَيْنِ - وُجُوهَكُمْ - أَيْدِيَكُمْ إِلَى الْمَرَافِقِ.\nقَالَ اللَّهُ تَعَالَى: «يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا ........................ وَ ........................ وَامْسَحُوا بِرُؤُوسِكُمْ وَ ........................ »",
+      "figureDesc": "إطار رمادي يحتوي على الكلمات المقترحة. المعيار: مع2ب مع مربعين.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "jisr_ennajah_3eme_examens_p054_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

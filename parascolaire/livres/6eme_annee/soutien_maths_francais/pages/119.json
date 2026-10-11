@@ -1,0 +1,211 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 119,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Épreuve de français : Grammaire et Conjugaison (thème : Mozart et la musique), page 3 sur 4. La page n'est pas une page de manuel de mathématiques mais un sujet d'examen de français.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "J'indique le complément circonstanciel de temps (C.C.T), de lieu (C.C.L) ou de manière (C.C.M) dans les phrases suivantes (1pt) [section B - Grammaire : (6pts)]",
+      "body": "- Wolfgang Amadeus Mozart est né à la ville de Salzbourg. ................ (« la ville de Salzbourg » est souligné)\n- Mozart a voulu vivre indépendamment de son père à Vienne. ................ (« indépendamment » est souligné)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p119_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "Je remplace le complément du verbe souligné par un pronom : (1pt)",
+      "body": "- Léopold a appris à son fils à jouer au violon et à l'orgue. (« à son fils » est souligné)\n- ................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p119_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "Je transforme cette phrase en une phrase interrogative : (1pt)",
+      "body": "- La musique est un des arts les plus anciens de l'histoire.\n................\n................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p119_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "Je complète chaque phrase par ce qui convient :",
+      "body": "- La tortue est ................ rapide que le lapin. (moins....que / plus.....que / aussi.......que) (0.25pt)\n- Il est devenu célèbre ............. il composait et jouait de la bonne musique très jeune. (car / à cause de) (0.25pt)\n- A l'âge de 13 ans, Mozart ......... voulait .......... vivre à sa ville natale. (ne.....pas / ne.........plus) (0.5pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p119_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "Je transforme à la voix passive : (1pt)",
+      "body": "- La musicienne joue un beau morceau de musique.\n................\n................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p119_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "17",
+      "instruction": "Je transforme au discours indirect : (1pt)",
+      "body": "- Nabil dit à son père : « je voudrais bien avoir un CD de Mozart ».\n................\n................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p119_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "18",
+      "instruction": "b- Conjugaison : (6pts) Je conjugue les verbes entre parenthèses aux temps indiqués :",
+      "body": "Le petit Mozart (commencer) ........................... tôt son apprentissage artistique. (présent de l'indicatif) (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p119_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "19",
+      "instruction": "Je conjugue le verbe au futur (1pt)",
+      "body": "Les gens le (connaître) ........................... à travers les temps. (futur)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p119_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "20",
+      "instruction": "Je conjugue le verbe au passé composé (1pt)",
+      "body": "Wolfgang et sa sœur (vivre) .......................... une grande gloire. (passé composé)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p119_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "21",
+      "instruction": "Je conjugue le verbe à l'imparfait (1pt)",
+      "body": "Pendant leur tournée en Europe, ils ne (s'amuser) .......................... pas comme les enfants de leur âge. (imparfait)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p119_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "22",
+      "instruction": "Je conjugue le verbe à l'impératif (1pt)",
+      "body": "(Être) ...................... heureux de ne pas avoir une telle responsabilité. (impératif : 1ère personne du pluriel)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p119_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "23",
+      "instruction": "Je conjugue le verbe au conditionnel présent (1pt)",
+      "body": "J' (aimer) .......................... bien jouer à la guitare. (conditionnel présent)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p119_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.24
+  },
+  "topicSubject": "Français",
+  "topicReason": "Il s'agit d'une épreuve d'examen de français (grammaire et conjugaison) qui mélange compléments circonstanciels, pronoms, forme interrogative, comparatif, voix passive, discours indirect, présent et futur, donc elle couvre plusieurs modules sans correspondre clairement à un seul.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Grammaire et conjugaison : Mozart",
+    "skill": "Identifier les compléments circonstanciels, pronominaliser, transformer des phrases (interrogative, passive, discours indirect) et conjuguer aux temps de l'indicatif.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "complément circonstanciel",
+      "pronominalisation",
+      "voix passive",
+      "discours indirect",
+      "conjugaison",
+      "Mozart"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Sujet d'examen structuré en grammaire et conjugaison, avec un fil thématique (la vie de Mozart) qui donne un contexte cohérent aux phrases, réutilisable pour d'autres thèmes culturels ou biographiques ; exercices de transformation courts, notés au point.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

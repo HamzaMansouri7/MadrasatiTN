@@ -1,0 +1,134 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 9,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مناظرة عدد 3 (أفريل 2023/2024) - الضارب 1: مسائل على الكسور والتخفيضات والسعة والمساحة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 1 (6 نقاط)",
+      "instruction": "1/ ما هو المبلغ الذي قدّمه الأب لابنته؟ 2/ ما هو ثمن الحاسوب وآلة الطباعة بعد التخفيض؟ 3/ ما هو ثمن كلّ منهما قبل التخفيض علما وانّ آلة الطباعة تمثّل 2/3 ثمن الحاسوب.",
+      "body": "بمناسبة عيد ميلادها تلقت خديجة مبلغا ماليّا من والدها فاشترت حاسوبا وآلة طباعة فمنحها البائع تخفيضا قدره 1/5 الثمن الأصلي فلاحظت أنّها أنفقت 3/5 المبلغ الذي بجوزتها. واشترت بما تبقّى هاتفا جوّالا بمبلغ من مضاعفات 17 ويأتي مباشرة بعد 2110 د.",
+      "figureDesc": "ختم دائري (Tel : 20 903 18...) على الهامش الأيسر وعلامة مائية زرقاء؛ علم تونس في أعلى الصفحة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "concours_mathematiques_corriges_p009_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 2 (6 نقاط)",
+      "instruction": "1/ ما هي سعة الحوض بالهكل؟ 2/ ما هو عدد الأشجار بهذه الضيعة؟",
+      "body": "لفلاح حوض ممتلئ إلى 2/9 سعته ماء. فتح العامل حنفية تضخ 90 ل كلّ 3 دق ابتدأ من السّاعة التاسعة ليلا. فامتلأ 1/2 الحوض على الساعة الواحدة صباحا. استعمل العامل كلّ الماء في الحوض لسقي مساحة خصّصها لزراعة الخضر بمعدّل 0.06 هل من الماء في المتر المربع الواحد. إذا علمت أنّ المساحة المسقيّة تمثّل 1/4 المساحة المتبقيّة المغروسة عنبا بحساب شجرة في كلّ 3 م².",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "concours_mathematiques_corriges_p009_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-6-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch1",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page présente une épreuve de concours blanc (مناظرة) avec deux situations-problèmes à plusieurs étapes mêlant fractions, réductions, capacité, aire et multiples, ce qui correspond à la synthèse générale et à la résolution de situations-problèmes préparant au concours des collèges pilotes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    11,
+    12,
+    13
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes sur fractions, réductions et capacité",
+    "skill": "Résoudre des problèmes à étapes impliquant fractions, réductions de prix, capacité, débit et aire.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "fractions",
+      "réduction de prix",
+      "capacité",
+      "débit",
+      "aire",
+      "multiples"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations-problèmes contextualisées (cadeau d'anniversaire et achats avec réduction, bassin rempli à débit constant puis utilisé pour arroser une surface) qui enchaînent fractions, proportionnalité et contrainte sur les multiples, réutilisables comme modèles de devoirs de synthèse.",
+    "themeGroup": "Fractions"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Tout l'en-tête est omis : «مناظرة عدد 3», «السنة الدراسية 2023/2024», «رياضيات», «أفريل», «الضارب 1», ainsi que le numéro de page 1."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Dans la situation 1, les questions 1/ 2/ 3/ sont placées avant l'énoncé, alors qu'elles viennent après. Même problème dans la situation 2, où la question 2/ précède l'énoncé et où la question 1/ est placée avant le paragraphe sur l'arrosage."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "«بجوزتها» : le mot de l'image est «بحوزتها» (avec ح), «المبلغ الذي بحوزتها»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«ماليّا» : le mot de l'image est «مالياً» avec tanwin. La transcription a mis une chadda sur le ي qui n'y figure pas."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«تلقت» : le mot est bien «تلقّت», avec chadda visible sur le ق."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«تخفيضا قدره 1/5 الثمن الأصلي» : le texte est correct, mais «ابتدأ» est écrit «ابتداً» dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«بالهكل» : le mot de l'image est «بالهكتولتر» (ou «بالهكل» abrégé). Il faut vérifier, car l'abréviation est «هل»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes «الوضعية عدد 1» et «عدد 2» ont été transcrits, mais les mentions du filigrane et du tampon (Tel 20 903...) sont omises. Elles sont secondaires."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La transcription ne rend pas la phrase «ويأتي مباشرة بعد 2110 د» à sa place logique : elle est placée correctement mais après les questions."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "full_year",
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

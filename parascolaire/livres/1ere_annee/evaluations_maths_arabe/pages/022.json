@@ -1,0 +1,102 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 22,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قراءة وفهم - الوحدة الرابعة : فَصْلُ الشِّتَاءِ",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "قَالَتْ إِينَاسُ :\n- كَيْفَ سَنَعُودُ إِلَى الْمَنْزِلِ يَا أُمِّي ؟\nرَدَّتِ الأُمُّ :\n- لَا تَخَافِي ! سَأَحْمِلُكِ وَأَعْبُرُ الطَّرِيقَ.\nأَلْبَسَتِ الأُمُّ ابْنَتَهَا مِعْطَفَهَا الْقُطْنِيَّ لِتَحْمِيَهَا مِنْ بُرُودَةِ الطَّقْسِ، وَفَتَحَتِ الْمَطَرِيَّةَ، وَأَخَذَتَا تُغَالِبَانِ الرِّيحَ، وَقَدْ صَارَ الْمَطَرُ يَتَسَاقَطُ بِبُطْءٍ.\nوَصَلَتْ إِينَاسُ إِلَى الْمَنْزِلِ سَالِمَةً، فَحَضَنَتْ أُمَّهَا، وَقَبَّلَتْهَا، وَقَالَتْ لَهَا :\n- شُكْرًا لَكِ يَا أُمِّي، إِنِّي أُحِبُّكِ كَثِيرًا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p022_i1",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبِطُ بِسَهْمٍ :",
+      "body": "إِينَاسُ •\nالأُمُّ •\n\n• كَيْفَ سَنَعُودُ إِلَى الْمَنْزِلِ يَا أُمِّي ؟\n• لَا تَخَافِي ! سَأَحْمِلُكِ وَأَعْبُرُ الطَّرِيقَ..\n• شُكْرًا لَكِ يَا أُمِّي، إِنِّي أُحِبُّكِ كَثِيرًا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p022_i2",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبِطُ الصُّورَةَ بِالْجُمْلَةِ الْمُنَاسِبَةِ لَهَا.",
+      "body": "• الأُمُّ ابْنَتَهَا مِعْطَفَهَا.\n• حَمَلَتِ الأُمُّ ابْنَتَهَا، وَعَبَرَتِ الطَّرِيقَ.\n• الأُمُّ وَابْنَتُهَا تُغَالِبَانِ الرِّيحَ.",
+      "figureDesc": "صورة لأم تحمل مظلة وتغالب الريح والأمطار ممسكة بابنتها الصغيرة في الشارع.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p022_i3",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُرَتِّبُ الأَحْدَاثَ بِوَضْعِ الأَعْدَادِ مِنْ 1 إِلَى 3.",
+      "body": "◯ تُغَالِبُ الأُمُّ وَابْنَتُهَا الرِّيحَ.\n◯ أَلْبَسَتِ الأُمُّ ابْنَتَهَا مِعْطَفَهَا.\n◯ وَصَلَتْ إِينَاسُ إِلَى الْمَنْزِلِ سَالِمَةً.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p022_i4",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "ar-1-u4",
+  "topicTitle": "Unité 4 : Mon compagnon en hiver",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-1-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.96
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un texte de lecture et compréhension en arabe intitulé « فصل الشتاء » (Unité 4), qui traite de l'hiver avec la pluie, le manteau, le parapluie et le froid, ce qui correspond à l'Unité 4 : Mon compagnon en hiver.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de texte : l'hiver",
+    "skill": "Comprendre un court texte narratif en arabe, identifier les locuteurs, associer images et phrases, puis remettre les événements dans l'ordre.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "hiver",
+      "dialogue mère-fille",
+      "remise en ordre",
+      "appariement image-phrase"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une courte scène de vie quotidienne (une mère protège sa fille du froid et de la pluie) sert de support à trois exercices progressifs : attribuer les répliques aux personnages, relier image et phrase, ordonner la chronologie. Ce schéma est transposable à d'autres saisons ou situations.",
+    "themeGroup": "Lecture: nature et saisons"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

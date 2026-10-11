@@ -1,0 +1,106 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 67,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 17 – اختبار تقويمي للتثبيت والدعم (عمليات الضرب والطرح، حل مسائل، رسم مستطيل)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أعوّض النّقط بالأرقام المناسبة :",
+      "body": "ثلاث عمليات: (1) 1006 × 5 = ... (2) 55 702 − . . . . = 52 869 (3) . 18 × . = 4 662",
+      "figureDesc": "ثلاث عمليات عمودية: ضرب 1006 في 5 والناتج فارغ؛ طرح عدد ذي نقط من 55 702 والناتج 52 869؛ ضرب عدد ذي نقط ينتهي بـ 18 في عدد من رقم واحد (نقطة) والناتج 4 662.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p067_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هو ثمن السّجائر التي يستهلكها هذا الرّجل خلال أسبوع؟",
+      "body": "يدخّن رجل 3 علب من السّجائر كلّ يومين بثمن 800 مي العلبة الواحدة. ما هو ثمن السّجائر التي يستهلكها هذا الرّجل خلال أسبوع؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p067_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارسم مستطيلا قيس بعديه بالصم 6 و 4.",
+      "body": "ارسم مستطيلا قيس بعديه بالصم 6 و 4.",
+      "figureDesc": "مساحة فارغة للرسم",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mathematiques_exercices_corriges_p067_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "كم قبض؟ / كم دفع في الجملة؟ / هل يستطيع هذا الفلاّح أن يشتري بالباقي درّاجة ثمنها 105 د ؟ علّل جوابك. كم ينقصه أو كم يبقى له؟",
+      "body": "باع فلاّح خروفا بـ 113 دينارا ونعجة يقلّ ثمنها عن ثمن الخروف الواحد بـ 25 دينارا.\n- كم قبض؟\nاشترى سروالا بـ 15 500 مي و 12 مترا من القماش بـ 4 د المتر الواحد، ومكواة ثمنها يساوي ضعف ثمن السّروال.\n- كم دفع في الجملة؟\n- هل يستطيع هذا الفلاّح أن يشتري بالباقي درّاجة ثمنها 105 د ؟ علّل جوابك\nكم ينقصه أو كم يبقى له؟",
+      "figureDesc": "مساحة فارغة للحل",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p067_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-4-u5",
+    "confidence": 0.16
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de mathématiques (semaine 17) portant sur la multiplication posée, les opérations à trous, les problèmes de prix et le tracé d'un rectangle, ce qui correspond le plus à la Période 2 (multiplication, rectangle), mais la soustraction et les problèmes à étapes en font un test de consolidation un peu général.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Opérations et résolution de problèmes",
+    "skill": "Compléter des opérations (multiplication, soustraction), résoudre des problèmes à plusieurs étapes avec la monnaie et tracer un rectangle de dimensions données.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "multiplication",
+      "soustraction",
+      "problème",
+      "monnaie",
+      "rectangle",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations de la vie courante (achats, ventes, dépenses hebdomadaires) en problèmes à étapes avec conversion millimes/dinars et question finale de faisabilité à justifier, plus opérations à trous.",
+    "themeGroup": "Problèmes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

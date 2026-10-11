@@ -1,0 +1,191 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 22,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Exercices de soutien unité 1 - 6ème année (Français : conjugaison, orthographe, grammaire, lexique). Remarque : la page porte sur le français, pas sur les mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 1",
+      "instruction": "Conjugue au présent de l'indicatif :",
+      "body": "Verbes : Ramasser, Saisir, Tenir, Dormir. Pronoms : Je, Tu, Il/elle/on, Nous, Vous, Ils/elles.",
+      "figureDesc": "Tableau vide à 4 colonnes de verbes et 6 lignes de pronoms, à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p022_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 2",
+      "instruction": "Conjugue à l'imparfait de l'indicatif :",
+      "body": "Verbes : Aimer, Réagir, Mentir, Pouvoir. Pronoms : Je, Tu, Il/elle/on, Nous, Vous, Ils/elles.",
+      "figureDesc": "Tableau vide à 4 colonnes de verbes et 6 lignes de pronoms, à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p022_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Grammaire 1",
+      "instruction": "Indique s'il s'agit d'une : « phrase nominale » ou « phrases verbale » :",
+      "body": "Sami dessine un lion. / La civilisation égyptienne / Les droits et les devoirs / Les garçons jouent au ballon.",
+      "figureDesc": "Tableau à 2 colonnes : « Les phrases » et « Phrase nominale ou phrase verbale ». La colonne de réponse est vide.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p022_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Grammaire 2",
+      "instruction": "Souligne l'adjectif qualificatif et précise sa fonction :",
+      "body": "C'est une femme heureuse. / Cet enfant paraît triste. / Des fruits mûrs. / Les yeux étaient larges.",
+      "figureDesc": "Tableau à 3 colonnes : « Les phrases », « L'adjectif qualificatif » et « Sa fonction ». Les deux dernières colonnes sont vides.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p022_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 1",
+      "instruction": "Complète les phrases par les accents « é – è – ê » :",
+      "body": "Un probl......me – une pi....rre - le caf..... / la t...te – r...gle – b....te - ......crire / l...gume – r....création - po.....te",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p022_i5",
+      "topicId": "fr-6-m1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 2",
+      "instruction": "Accorde correctement l'adjectif qualificatif :",
+      "body": "- Un (violent) ........................... vent hivernal. - Les (dernier) ...........................feuilles de l'arbre sont tombées. - Une histoire (vrai) ........................................ - Les livres sont (beau) ................................... - La classe semble (beau) ................................ - Des (petit) ............................... filles.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p022_i6",
+      "topicId": "fr-6-m1",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 1",
+      "instruction": "Complète le tableau :",
+      "body": "Pays : Maroc, Italie, Argentine, Mexique, Afrique. Colonnes à remplir : Le nom de l'habitant, Suffixe.",
+      "figureDesc": "Tableau à 3 colonnes : « Le pays », « Le nom de l'habitant » et « Suffixe ». Les 5 pays sont donnés, les deux autres colonnes sont vides.",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p022_i7",
+      "topicId": "fr-6-m1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 2",
+      "instruction": "Lit cet article, puis réponds aux questions :",
+      "body": "Joyeux / joyeuse : adj. Naima est toute joyeuse ce matin, elle montre sa joie. Synonyme : content, gai. Contraire : triste. Questions : - Le féminin du mot joyeux : ........ - Quelle est sa nature (classe grammaticale) ? ........ - Quel est son synonyme ? ........ - Quel est son contraire ? ........",
+      "figureDesc": "Encadré arrondi contenant l'article de dictionnaire. « Synonyme » et « Contraire » sont soulignés.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p022_i8",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.25
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de soutien de l'unité 1 en français (présent, imparfait, phrase nominale/verbale, adjectif, accents, lexique) ; le Module 1 (Trimestre 1) est le plus proche avec la structure de la phrase et le présent, mais l'imparfait et le lexique relèvent aussi d'autres modules, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Révisions de langue : conjugaison, orthographe, grammaire, lexique",
+    "skill": "Consolider la conjugaison au présent et à l'imparfait, l'accord de l'adjectif, les accents, la nature des phrases et le vocabulaire des habitants et suffixes.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "conjugaison présent imparfait",
+      "adjectif qualificatif",
+      "phrase nominale et verbale",
+      "accents é è ê",
+      "noms d'habitants et suffixes",
+      "article de dictionnaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Page de soutien qui regroupe en un seul document plusieurs mini-exercices de langue classiques (conjugaison de verbes de groupes différents, repérage de la fonction de l'adjectif, tableau pays/habitants/suffixe, lecture d'une entrée de dictionnaire), réutilisable comme modèle de fiche de révision multi-compétences.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Orthographe 1 : « r...gle » est transcrit « r......gle » dans la transcription ; surtout, les tirets de séparation et la mise en ligne ne sont pas fidèles (« la t...te – r...gle » : l'article « la » est présent devant « t...te », pas devant « r...gle »)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page absent : « Exercices de soutien unité 1 - 6ème année » et « Nom et prénom de l'apprenant »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Grammaire 1 : l'intitulé de la colonne « Phrase nominale ou phrase verbale » n'est pas indiqué ; Grammaire 2 : colonnes « L'adjectif qualificatif » et « Sa fonction » non mentionnées."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Lexique 1 : colonne « Le pays » non mentionnée ; l'exemple « Naima est toute joyeuse… » est correct mais la mention « Lit » est conservée telle quelle (correct)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Orthographe 1 : le nombre de points ne correspond pas exactement (« probl......me » sur l'image : « probl……me », « pi....rre », « caf..... »), différences sans conséquence."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

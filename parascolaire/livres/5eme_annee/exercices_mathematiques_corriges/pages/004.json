@@ -1,0 +1,63 @@
+{
+  "book": "exercices_mathematiques_corriges",
+  "page": 4,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الوضعية الادماجية: مسألة حول الشراء والبيع والربح (العمليات الأربع على الأعداد الكبيرة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الوضعية الادماجية = اشترى مربي مواشي 40 خروفا ب 500000 دينار ودفع 8500 دينار لنقلها و 75500 دينار للعلف . بعد مدة باع الخرفان بـ 1500000 دينار .",
+      "body": "الوضعية الادماجية = اشترى مربي مواشي 40 خروفا ب 500000 دينار ودفع 8500 دينار لنقلها و 75500 دينار للعلف . بعد مدة باع الخرفان بـ 1500000 دينار .\nماهو ثمن شراء الخروف الواحد ؟\nماهي كلفة جميع الخرفان ؟\nماهو ثمن بيع الخروف الواحد ؟\nماهي الفائدة التي تحصل عليها مربي المواشي ؟",
+      "figureDesc": "جدول فارغ من عمودين (مخصص لكتابة الحل) تحت الأسئلة؛ الصفحة داخل إطار بنفسجي. توقيع: الأستاذ هاشمي زروال.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "exercices_mathematiques_corriges_p004_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p5",
+    "confidence": 0.47
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une situation d'intégration en mathématiques sur achat, vente et bénéfice avec les quatre opérations sur de grands nombres (500000, 1500000), ce qui correspond le mieux à la Période 1 (grands nombres et opérations), mais elle pourrait aussi relever de la synthèse de fin d'année (math-5-p6).",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problème d'achat, vente et bénéfice",
+    "skill": "Résoudre une situation intégrative en enchaînant les quatre opérations sur de grands nombres (coût total, prix unitaire, bénéfice).",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "situation intégrative",
+      "achat et vente",
+      "bénéfice",
+      "grands nombres",
+      "division",
+      "coût total"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation réaliste d'élevage (achat de bêtes, frais de transport et d'alimentation, revente) avec questions progressives : prix unitaire d'achat, coût total, prix unitaire de vente, bénéfice. Contexte transposable à d'autres commerces (artisan, agriculteur, boutiquier).",
+    "themeGroup": "Problèmes d'achat, vente et bénéfice"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices corrigés"
+}

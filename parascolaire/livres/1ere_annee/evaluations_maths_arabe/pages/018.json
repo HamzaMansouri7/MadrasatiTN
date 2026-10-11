@@ -1,0 +1,314 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 18,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الوحدة الرابعة: فَصْلُ الشِّتَاءِ - قِرَاءَةٌ وَفَهْمٌ",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "الْمَطَرُ يَهْطِلُ بِغَزَارَةٍ، وَالْمَاءُ يَغْمُرُ الشَّوَارِعَ. خَرَجَتْ إِينَاسُ مِنَ الْمَدْرَسَةِ وَهِيَ حَائِرَةٌ، لَا تَدْرِي مَا تَفْعَلُ ! ثُمَّ أَخَذَتْ تَتَأَمَّلُ الْأَوْلِيَاءَ وَهُمْ يُسَاعِدُونَ أَبْنَاءَهُمْ، وَفَجْأَةً لَمَحَتْ أُمَّهَا تَتَرَقَّبُهَا، فَارْتَسَمَتْ ابْتِسَامَةٌ عَرِيضَةٌ عَلَى ثَغْرِهَا.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p018_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبُطُ بِسَهْمٍ .",
+      "body": "إِينَاسُ •         • تَتَرَقَّبُ\nأُمُّ إِينَاسَ •       • يُسَاعِدُونَ أَبْنَاءَهُمْ.\nالْأَوْلِيَاءُ •        • حَائِرَةٌ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p018_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبُطُ الصُّورَةَ بِالْجُمْلَةِ الْمُنَاسِبَةِ لَهَا.",
+      "body": "• الْمَطَرُ يَهْطِلُ بِغَزَارَةٍ.\n• الْأَوْلِيَاءُ يُسَاعِدُونَ أَبْنَاءَهُمْ.\n• خَرَجَتْ إِينَاسُ مِنَ الْمَدْرَسَةِ.",
+      "figureDesc": "رسم يبيّن تهاطل أمطار غزيرة في المدينة، وشجرة في الواجهة، ومبانٍ في الخلفية.",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p018_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُرَتِّبُ الْأَحْدَاثَ بِوَضْعِ الْأَعْدَادِ مِنْ 1 إِلَى 3.",
+      "body": "الْأَوْلِيَاءُ يُسَاعِدُونَ أَبْنَاءَهُمْ. ( )\nلَمَحَتْ إِينَاسُ أُمَّهَا تَتَرَقَّبُهَا. ( )\nخَرَجَتْ إِينَاسُ مِنَ الْمَدْرَسَةِ. ( )",
+      "figureDesc": "ثلاث خانات بيضاوية فارغة لوضع الأعداد، إلى يسار الجمل.",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p018_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَعْمُرُ الْفَرَاغَ بِالْكَلِمَةِ الْمُنَاسِبَةِ : رَأَتْ - سَمِعَتْ - أَحَسَّتْ",
+      "body": "........................................ إِينَاسُ أُمَّهَا تَتَرَقَّبُهَا.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p018_i5"
+    }
+  ],
+  "topicId": "ar-1-u4",
+  "topicTitle": "Unité 4 : Mon compagnon en hiver",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.99
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une activité de lecture et compréhension en arabe sur la pluie et l'hiver (Unité 4 : فصل الشتاء), ce qui correspond à l'unité 4 « Mon compagnon en hiver ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de texte narratif: la pluie",
+    "skill": "Comprendre un court texte narratif en identifiant les personnages, leurs actions et l'ordre chronologique des événements.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "hiver",
+      "pluie",
+      "chronologie des événements",
+      "personnages",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série d'exercices de compréhension à partir d'un petit texte sur une scène de pluie à la sortie de l'école : relier personnages et actions, associer images et phrases, remettre les événements dans l'ordre, compléter une phrase avec le verbe adapté. Le schéma est facile à transposer à d'autres situations du quotidien.",
+    "themeGroup": "Lecture: nature et saisons"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « أَرْبِطُ » transcrit, mais l'image montre « أَرْبُطُ » (avec damma sur le ب)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Texte : « تَدْرِي » transcrit avec fatha, mais l'image montre « تَدْرِي » sans fatha sur le ت ; l'image indique « لَا تَدْرِي »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« إِينَاسُ » : l'image montre « إِينَاس » avec le kasra sous le hamza ; transcription conforme, mais le tashkeel de « ثَغْرِهَا » est absent dans la transcription alors qu'il est visible (« ثَغْرِهَا » est écrit sans voyelles dans l'image, donc ok)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "En-tête de la page absent : « الوحدة الرابعة : فصل الشتاء », « يبدي الرأي في حدث من أحداث النص », « المقطع المنغلق : أ / ؤ / إ / ء / ئ / آ », « اللغة العربية قراءة وفهم »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre « أَسْتَثْمِرُ النَّصَّ : » absent avant l'exercice 1."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2 : la description de l'image (pluie, arbre, bâtiments) n'est pas indiquée ; il y a seulement un point sans image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Pied de page absent : numéro de page 19, « السنة 1 », « الثلاثي الثاني », « اللغة العربية - قراءة وفهم »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'image montre trois cases ovales vides, la transcription les remplace par « ( ) » placé après chaque phrase au lieu d'avant."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « أُعَمِّرُ » dans l'image ; l'image montre « أَعْمُرُ الْفَرَاغَ » (أَعْمُرُ), pas « أُعَمِّرُ »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : la consigne est transcrite « أَرْبِطُ » (kasra), mais l'image montre « أَرْبُطُ » (damma sur le ب). La consigne se termine aussi par un point « . » dans l'image, pas par « : »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : la consigne est transcrite « أُعَمِّرُ », mais l'image montre « أَعْمُرُ الْفَرَاغَ » (fatha sur l'alif, sukun sur le م, damma sur le ر)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Texte : le « اَ » initial de « اَلنَّصُّ » et de « اَلْمَطَرُ » est une graphie parasite. L'image montre « النَّصُّ » et « الْمَطَرُ »."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "الْمَطَرُ يَهْطِلُ بِغَزَارَةٍ، وَالْمَاءُ يَغْمُرُ الشَّوَارِعَ. خَرَجَتْ إِينَاسُ مِنَ الْمَدْرَسَةِ وَهِيَ حَائِرَةٌ، لَا تَدْرِي مَا تَفْعَلُ ! ثُمَّ أَخَذَتْ تَتَأَمَّلُ الْأَوْلِيَاءَ وَهُمْ يُسَاعِدُونَ أَبْنَاءَهُمْ، وَفَجْأَةً لَمَحَتْ أُمَّهَا تَتَرَقَّبُهَا، فَارْتَسَمَتْ ابْتِسَامَةٌ عَرِيضَةٌ عَلَى ثَغْرِهَا.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p018_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبُطُ بِسَهْمٍ .",
+      "body": "إِينَاسُ •         • تَتَرَقَّبُ\nأُمُّ إِينَاسَ •       • يُسَاعِدُونَ أَبْنَاءَهُمْ.\nالْأَوْلِيَاءُ •        • حَائِرَةٌ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p018_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبُطُ الصُّورَةَ بِالْجُمْلَةِ الْمُنَاسِبَةِ لَهَا.",
+      "body": "• الْمَطَرُ يَهْطِلُ بِغَزَارَةٍ.\n• الْأَوْلِيَاءُ يُسَاعِدُونَ أَبْنَاءَهُمْ.\n• خَرَجَتْ إِينَاسُ مِنَ الْمَدْرَسَةِ.",
+      "figureDesc": "رسم يبيّن تهاطل أمطار غزيرة في المدينة، وشجرة في الواجهة، ومبانٍ في الخلفية.",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p018_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُرَتِّبُ الْأَحْدَاثَ بِوَضْعِ الْأَعْدَادِ مِنْ 1 إِلَى 3.",
+      "body": "الْأَوْلِيَاءُ يُسَاعِدُونَ أَبْنَاءَهُمْ. ( )\nلَمَحَتْ إِينَاسُ أُمَّهَا تَتَرَقَّبُهَا. ( )\nخَرَجَتْ إِينَاسُ مِنَ الْمَدْرَسَةِ. ( )",
+      "figureDesc": "ثلاث خانات بيضاوية فارغة لوضع الأعداد، إلى يسار الجمل.",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p018_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَعْمُرُ الْفَرَاغَ بِالْكَلِمَةِ الْمُنَاسِبَةِ : رَأَتْ - سَمِعَتْ - أَحَسَّتْ",
+      "body": "........................................ إِينَاسُ أُمَّهَا تَتَرَقَّبُهَا.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p018_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "اَلنَّصُّ :",
+      "body": "اَلْمَطَرُ يَهْطِلُ بِغَزَارَةٍ، وَالْمَاءُ يَغْمُرُ الشَّوَارِعَ. خَرَجَتْ إِينَاسُ مِنَ الْمَدْرَسَةِ وَهِيَ حَائِرَةٌ، لَا تَدْرِي مَا تَفْعَلُ ! ثُمَّ أَخَذَتْ تَتَأَمَّلُ الْأَوْلِيَاءَ وَهُمْ يُسَاعِدُونَ أَبْنَاءَهُمْ، وَفَجْأَةً لَمَحَتْ أُمَّهَا تَتَرَقَّبُهَا، فَارْتَسَمَتْ ابْتِسَامَةٌ عَرِيضَةٌ عَلَى ثَغْرِهَا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p018_i1",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبِطُ بِسَهْمٍ :",
+      "body": "إِينَاسُ •         • تَتَرَقَّبُ\nأُمُّ إِينَاسَ •       • يُسَاعِدُونَ أَبْنَاءَهُمْ.\nالْأَوْلِيَاءُ •        • حَائِرَةٌ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p018_i2",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبِطُ الصُّورَةَ بِالْجُمْلَةِ الْمُنَاسِبَةِ لَهَا.",
+      "body": "• الْمَطَرُ يَهْطِلُ بِغَزَارَةٍ.\n• الْأَوْلِيَاءُ يُسَاعِدُونَ أَبْنَاءَهُمْ.\n• خَرَجَتْ إِينَاسُ مِنَ الْمَدْرَسَةِ.",
+      "figureDesc": "مشهد يبيّن تهاطل أمطار غزيرة في المدينة مع ريح تعصف بشجرة أمام المباني السكنية.",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p018_i3",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُرَتِّبُ الْأَحْدَاثَ بِوَضْعِ الْأَعْدَادِ مِنْ 1 إِلَى 3.",
+      "body": "الْأَوْلِيَاءُ يُسَاعِدُونَ أَبْنَاءَهُمْ. ( )\nلَمَحَتْ إِينَاسُ أُمَّهَا تَتَرَقَّبُهَا. ( )\nخَرَجَتْ إِينَاسُ مِنَ الْمَدْرَسَةِ. ( )",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p018_i4",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُعَمِّرُ الْفَرَاغَ بِالْكَلِمَةِ الْمُنَاسِبَةِ : رَأَتْ - سَمِعَتْ - أَحَسَّتْ",
+      "body": "........................................ إِينَاسُ أُمَّهَا تَتَرَقَّبُهَا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p018_i5",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

@@ -1,0 +1,177 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 32,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : la voisine Mme Gaspard et l'enfant dont la maman est malade ; Joséphine et Madame Françoise (remise en ordre de paragraphes)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3 (suite)",
+      "instruction": "(fin de la question 3, consigne non visible) - La deuxième raison :",
+      "body": "- La deuxième raison : ....................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "francais_lire_et_sexprimer_p032_i1",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- L'enfant oubliera l'aide de Mme Gaspard. (réponse à écrire dans un cadre arrondi en pointillés)",
+      "figureDesc": "Cadre arrondi à compléter",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p032_i2",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4b",
+      "instruction": "Relève, dans le texte, la phrase qui le montre :",
+      "body": "Ligne en pointillés pour écrire la phrase.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p032_i3",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Écris « vrai » ou « faux » :",
+      "body": "- La maman a eu un accident dans la cuisine.\n- La mère a préparé une soupe.\n- L'enfant restera à la maison pour soigner sa maman.\n- Le petit enfant ne mange presque rien.",
+      "figureDesc": "Quatre cadres arrondis en pointillés à droite de chaque phrase",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p032_i4",
+      "topicId": "fr-6-m4",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Cherche dans le texte le mot qui a le même sens que :",
+      "body": "- Grand = ........................ - Chaude = ........................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p032_i5",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Que penses-tu de cette voisine ?",
+      "body": "Deux lignes en pointillés pour répondre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p032_i6",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Remets ces paragraphes en ordre :",
+      "body": "* Madame Françoise est contente. Joséphine arrive courageusement à tenir la maison en ordre.\n* Aujourd'hui, Madame Françoise semble malade. Sa fille aînée Joséphine prend donc en charge la maison.\n* Avec beaucoup de courage, elle essaie de répéter les mêmes gestes de sa mère. D'abord, la fillette range les lits et passe l'aspirateur sur les tapis. Ensuite, elle se dirige vers la cuisine. La brave fille débarrasse la table, lave la vaisselle et vide la poubelle. Enfin, elle réussit à préparer le déjeuner.",
+      "figureDesc": "Quatre lignes en pointillés pour écrire le texte remis en ordre",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p032_i7",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m4",
+  "topicTitle": "Module 4 : S'entraider pour mieux réussir",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.21
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français portant sur une voisine qui aide un enfant dont la maman est malade (entraide) ainsi que sur Joséphine qui aide sa mère, ce qui rapproche le thème du Module 4 « S'entraider pour mieux réussir », sans que l'on puisse le confirmer avec certitude.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture et ordre des paragraphes",
+    "skill": "Comprendre un texte narratif en relevant des informations, en repérant des synonymes et en remettant des paragraphes dans l'ordre logique.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "production_ecrite",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "vrai ou faux",
+      "synonymes",
+      "remise en ordre de paragraphes",
+      "entraide",
+      "maman malade"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable autour d'un texte sur la solidarité familiale et de voisinage : oui/non avec justification par une phrase du texte, vrai/faux, recherche de synonymes, avis personnel en deux lignes et remise en ordre de paragraphes mélangés.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le point 3 (suite) est transcrit deux fois : « La deuxième raison : » apparaît en doublon, et « consigne non visible » est un commentaire ajouté, pas du texte de l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête et pied de page absents : « Sagesse », « 6ème année de base », titre « Lecture - Compréhension », « Lire et s'exprimer », numéro de page 31."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 5 : les quatre cadres arrondis à pointillés pour répondre ne sont pas mentionnés, alors qu'ils le sont pour 4a."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 8 : les quatre lignes en pointillés pour écrire la réponse ne sont pas mentionnées."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 6 : les points de suspension sont décrits de façon approximative, mais le contenu textuel est correct."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

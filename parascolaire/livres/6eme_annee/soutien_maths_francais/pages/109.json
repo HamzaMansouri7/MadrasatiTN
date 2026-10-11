@@ -1,0 +1,134 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 109,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Mesures : périmètre du cercle, aire du rectangle, volume du cylindre ; Domaine 4 : Organisation et traitement de données (tableau de données)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "أَحْسُبْ قِيَاسَ مُحِيطِ دَائِرَةٍ إِذَا عَلِمْتَ أَنَّ قِيَاسَ شُعَاعِهَا هُوَ : r = 3,5 cm (1 ن)",
+      "body": "أحسب قياس محيط دائرة إذا علمت أن قياس شعاعها هو : r = 3,5 cm (1 ن)",
+      "figureDesc": "Lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "soutien_maths_francais_p109_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "أحسب مساحة الحديقة. (1,5 ن)",
+      "body": "يمتلك فلاح حديقة مستطيلة الشكل محيطها 130m وطولها أكبر من قياس عرضها ب 50m. أحسب مساحة الحديقة. (1,5 ن)",
+      "figureDesc": "Lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.65,
+      "id": "soutien_maths_francais_p109_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "كم تبلغ كمية الماء اللازمة لملء هذا الصهريج؟ (1,5 ن)",
+      "body": "قام أحمد ببناء صهريج لتخزين ماء المطر قاعدته عبارة عن قرص قطره 1m وارتفاعه 5m، كم تبلغ كمية الماء اللازمة لملء هذا الصهريج؟ (1,5 ن)",
+      "figureDesc": "Lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.65,
+      "id": "soutien_maths_francais_p109_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "يمثل الجدول التالي عدد الحيوانات الموجودة في حديقة حيوانات. (4ن)",
+      "body": "المجال الرئيسي الرابع: تنظيم ومعالجة البيانات (4ن). الجدول: الحيوان / عدده : الأسود 12 ؛ الفيلة 4 ؛ الحمير الوحشية 30 ؛ التماسيح ....... ؛ الغزلان 45 ؛ الكلاب البرية 12 ؛ المجموع 113.",
+      "figureDesc": "Tableau de 2 lignes : animaux (lions 12, éléphants 4, zèbres 30, crocodiles ?, gazelles 45, chiens sauvages 12, total 113)",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "soutien_maths_francais_p109_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "16-أ",
+      "instruction": "أحسب عدد التماسيح الموجودة بالحديقة؟ (2ن)",
+      "body": "أحسب عدد التماسيح الموجودة بالحديقة؟ (2ن)",
+      "figureDesc": "Lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "soutien_maths_francais_p109_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "16-ب",
+      "instruction": "ما هو صنف الحيوانات الذي يمثل أكبر عدد بالحديقة؟ والصنف الذي يمثل أصغر عدد؟ (2ن)",
+      "body": "ما هو صنف الحيوانات الذي يمثل أكبر عدد بالحديقة؟ والصنف الذي يمثل أصغر عدد؟ (2ن)",
+      "figureDesc": "Lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "soutien_maths_francais_p109_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p5",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation générale de mathématiques qui couvre plusieurs chapitres (périmètre du cercle, aire du rectangle, volume du cylindre, tableau de données), donc aucun chapitre unique ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Périmètre, aire et volume",
+    "skill": "Calculer le périmètre d'un cercle, l'aire d'un rectangle et le volume d'un cylindre, puis lire et exploiter un tableau de données.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "périmètre du cercle",
+      "aire du rectangle",
+      "volume du cylindre",
+      "tableau de données",
+      "problème de la vie courante",
+      "barème"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices de type devoir, avec barème, qui place les mesures dans des situations concrètes (jardin rectangulaire dont on déduit les dimensions à partir du périmètre et de l'écart, citerne cylindrique pour l'eau de pluie) et qui s'achève par un tableau d'effectifs d'animaux de zoo avec une valeur manquante à retrouver à partir du total, suivi de la recherche du maximum et du minimum.",
+    "themeGroup": "Périmètres et aires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "unknown",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

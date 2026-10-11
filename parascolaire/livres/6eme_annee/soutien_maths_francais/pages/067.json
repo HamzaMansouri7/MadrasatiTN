@@ -1,0 +1,148 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 67,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Géométrie (agrandissement d'une figure, symétrie axiale) et Mesures (conversions d'unités, périmètre du cercle) - sujet de devoir/évaluation",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرسم(ي) تكبيرا للشكل أسفله بمقدار 2. (2ن)",
+      "body": "",
+      "figureDesc": "Quadrillage portant un triangle isocèle grisé (sommet en haut, base en bas) situé à droite. Deux petits points repères sont visibles sur la grille, dont un en bas à gauche du triangle. Il faut tracer l'agrandissement de rapport 2.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p067_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أرسم مماثل الشكل التالي بالنسبة للمحور العمودي: (2ن)",
+      "body": "",
+      "figureDesc": "Quadrillage avec un axe de symétrie vertical en trait épais au centre. À droite de l'axe se trouve un trapèze grisé, dont la grande base est sur le bord droit de la grille et la petite base est verticale, côté axe. Il faut dessiner son symétrique à gauche de l'axe.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p067_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "III",
+      "instruction": "III. القيــاس (8ن)",
+      "body": "",
+      "figureDesc": "Titre de la partie dans un cadre rectangulaire.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p067_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حول(ي) القياسات التالية إلى الوحدة المطلوبة. (4ن)",
+      "body": "12 m 3,45 hm = ............................ m\n76,5 q 100 kg = ............................ t\n321 a 7,8 ha = ............................ dam²\n315 dl 5420 ml = ............................ dm³",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p067_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب(ي) محيط دائرة قياس شعاعها 3cm (1ن)",
+      "body": "",
+      "figureDesc": "Deux lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p067_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-p4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u6",
+    "confidence": 0.23
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un devoir de synthèse mêlant agrandissement de figure, symétrie axiale, conversions d'unités (longueur, masse, aire, capacité/volume) et périmètre du cercle, donc elle couvre plusieurs chapitres (p3, p4, p5) sans qu'un seul ne corresponde clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Géométrie et mesures : évaluation",
+    "skill": "Agrandir une figure, construire un symétrique par rapport à un axe, convertir des unités de mesure et calculer le périmètre d'un cercle.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "agrandissement de figure",
+      "symétrie axiale",
+      "conversion d'unités",
+      "périmètre du cercle",
+      "évaluation 6ème année"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Structure classique de devoir en trois parties (construction géométrique, conversions de mesures de longueur, masse, aire et capacité, calcul de périmètre) avec barème. Les conversions mêlant unités composées sont réutilisables comme modèle d'exercices, mais les consignes restent très standard.",
+    "themeGroup": "Problèmes de synthèse et révisions"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 5 : l'image indique « أرسم مماثل الشكل التالي » et la transcription correspond ; pas d'erreur. En revanche « أرسم(ي) » en 4 est lu avec « تكبيرا » alors que l'image montre « تكبيرا » : correct. Aucun mot arabe faux détecté."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros de question (4., 5., 1., 2.) sont convertis en indices entre crochets, et le numéro de page « 3 » ainsi que le filigrane « www.escuila.info » ne sont pas transcrits (sans importance)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les deux lignes pointillées de réponse sous la question 2 ne sont pas indiquées, et les figures (triangle sur quadrillage, trapèze avec axe vertical) ne sont pas décrites."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Les points de suite des conversions sont normalisés ; les nombres 12 m 3,45 hm, 76,5 q 100 kg, 321 a 7,8 ha, 315 dl 5420 ml, dam², dm³ sont corrects."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "short_test",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

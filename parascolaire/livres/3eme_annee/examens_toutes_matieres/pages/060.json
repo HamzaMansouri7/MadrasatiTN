@@ -1,0 +1,128 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 60,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "Production écrite en français (et non en arabe) : construire une phrase à partir d'étiquettes et d'un dessin, séquences 4 à 6, avec le tableau d'attribution des notes. Attention : la page est en français, pas en arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Séquence 4 : maintenant, bruno est dans sa chambre. que fait-il ? 4- je regarde le dessin et je fais une phrase avec les étiquettes :",
+      "body": "Étiquettes : avec / joue / bruno / . / l'ordinateur. Deux lignes pointillées pour écrire la phrase.",
+      "figureDesc": "Dessin d'un garçon assis devant un écran d'ordinateur, de profil, les mains sur le clavier.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "examens_toutes_matieres_p060_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Séquence 5 : à midi, les enfants ont faim. que mangent-ils ? 5- je regarde le dessin et je fais une phrase avec les étiquettes :",
+      "body": "Étiquettes : poissons / pain / les / . / mangent / et / enfants / du / des. Deux lignes pointillées pour écrire la phrase.",
+      "figureDesc": "Dessin d'une table ronde recouverte d'une nappe, avec des assiettes de nourriture dessus.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p060_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Séquence 6 : amélie entre dans sa chambre. maintenant, elle est dans son lit. que fait elle ? 6- je regarde le dessin et je fais une phrase avec les étiquettes :",
+      "body": "Étiquettes : livre / un / lit / . / amélie. Deux lignes pointillées pour écrire la phrase.",
+      "figureDesc": "Dessin d'une fille assise dans son lit, sous la couverture, qui lit un livre. Une lampe de chevet est posée sur une table de nuit.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p060_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Tableau d'attribution des notes",
+      "body": "Tableau avec les colonnes : Niveau de maîtrise / Critères minimaux (C1, C3) / Critère de perfectionnement (C7). La page est coupée, le reste du tableau n'est pas visible.",
+      "figureDesc": "Tableau de notation tronqué en bas de page.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p060_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u3",
+    "confidence": 0.23
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une production écrite en français (construire une phrase à partir d'étiquettes, séquences 4 à 6, avec grille de notation), et la liste officielle ne contient aucun chapitre de français : les unités de langue arabe, de mathématiques et d'éveil scientifique ne correspondent pas.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Construction de phrases simples",
+    "skill": "Produire une phrase correcte en remettant dans l'ordre des étiquettes à partir d'un dessin.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "production écrite",
+      "phrase simple",
+      "étiquettes",
+      "ordre des mots",
+      "dessin",
+      "grille de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : situation illustrée du quotidien (chambre, repas, lecture au lit) avec étiquettes de mots à réordonner pour former une phrase, accompagnée d'une grille de notation par critères minimaux et de perfectionnement.",
+    "themeGroup": "Construction de phrases"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Séquence 6 : l'étiquette « lit » est transcrite correctement, mais l'ordre des étiquettes dans la séquence 5 est respecté ; aucune erreur de mot trouvée. Seule imprécision : le filigrane « MOURAKIB.COM » (ou similaire) au milieu de la page n'est pas mentionné."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les images associées (garçon devant un ordinateur, table ronde avec nourriture, fille lisant au lit) ne sont pas décrites dans la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau est décrit de façon un peu incomplète : la ligne « Niveau de maîtrise » et les cases sous C1/C3/C7 sont coupées, ce qui est bien signalé, mais la mention « Critères minimaux » ne couvre que C1 et C3 (correct)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

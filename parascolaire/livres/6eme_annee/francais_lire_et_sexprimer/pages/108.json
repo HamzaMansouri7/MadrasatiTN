@@ -1,0 +1,231 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 108,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Lecture : l'histoire du paysan qui échange son cheval (Lire et s'exprimer)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "b",
+      "instruction": "b- Justifie ta réponse :",
+      "body": "...........................................................................................................................................................\n...........................................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p108_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "2) Le paysan et la paysanne n'ont pas besoin du cheval. Que vont-ils faire ?",
+      "body": "...........................................................................................................................................................\n...........................................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p108_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "3) Fais comme dans l'exemple :",
+      "body": "| L'échange | Les causes de l'échange |\n| :--- | :--- |\n| -Le paysan échange le cheval contre une vache. | - La vache donne un bon lait. |\n| - Le paysan échange la vache contre un mouton. | - .........................................................................................................................<br>......................................................................................................................... |\n| -Le paysan échange le mouton contre une oie. | - .........................................................................................................................<br>......................................................................................................................... |\n| - Le paysan échange l'oie contre une poule. | - .........................................................................................................................<br>......................................................................................................................... |",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p108_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "4) a- Écris « oui » ou « non » :\nb- Relève, dans le texte, le détail qui le montre :",
+      "body": "- La vieille n'est pas contente de l'affaire de son mari. (...................)\n\nb- Relève, dans le texte, le détail qui le montre :\n...........................................................................................................................................................\n...........................................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p108_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "5) Cherche dans le texte le synonyme des mots soulignés :",
+      "body": "- Le paysan <u>se précipite</u> vers le marché. =le paysan ...................... vers le marché.\n- <u>Il marche d'un pas rapide</u> pour arriver à la ville.= Il ............... pour arriver à la ville.\n- Le voyageur est <u>surpris</u>. =le voyageur est ......................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p108_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-6-u5",
+    "confidence": 0.2
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de lecture (histoire du paysan qui échange son cheval) en français, mais elle ne correspond clairement à aucun module précis (travail, communication, tolérance, entraide, etc.), donc aucun chapitre n'est retenu.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127,
+    128
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Comprendre un récit en justifiant ses réponses, en relevant des détails dans le texte et en trouvant des synonymes.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "schema_tableau",
+      "vrai_faux",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "texte narratif",
+      "synonymes",
+      "relevé d'indices",
+      "causes et conséquences",
+      "échange"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série de questions de compréhension variées (justification, tableau échange/cause, oui/non avec preuve, synonymes en contexte) autour d'un récit d'échanges successifs, que l'on peut transposer à d'autres histoires.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau de la question 3 compte cinq tirets suivis de lignes pointillées à compléter (avec des lignes supplémentaires), pas trois : la transcription indique 'trois tirets', ce qui est inexact."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Q5 : le groupe souligné « Il marche d'un pas rapide » est en gras et souligné, et « d'un pas rapide » est en italique. Cela est simplifié dans la transcription, sans erreur de texte."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête et le pied de page ne sont pas transcrits : « Sagesse », « Les évaluations », « 6ème année de base », « Lire et s'exprimer », page 107. Cela est acceptable si on ne garde que les exercices."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Q4-a : « contente » est écrit ainsi dans l'image (« contente » et non « contente »), la transcription est conforme ; la case ovale est bien contenue dans l'image avec des pointillés."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1-b",
+      "instruction": "Justifie ta réponse :",
+      "body": "Deux lignes pointillées pour écrire la justification. (La question 1-a n'est pas visible sur cette page.)",
+      "figureDesc": "Deux lignes pointillées à compléter",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "sagesse_6eme_complet_p108_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Le paysan et la paysanne n'ont pas besoin du cheval. Que vont-ils faire ?",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "Deux lignes pointillées",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p108_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Fais comme dans l'exemple :",
+      "body": "Tableau à deux colonnes. Colonne « L'échange » : - Le paysan échange le cheval contre une vache. - Le paysan échange la vache contre un mouton. - Le paysan échange le mouton contre une oie. - Le paysan échange l'oie contre une poule. Colonne « Les causes de l'échange » : - La vache donne un bon lait. puis trois tirets suivis de lignes pointillées à compléter.",
+      "figureDesc": "Tableau à deux colonnes « L'échange » / « Les causes de l'échange ». Le premier exemple est donné (La vache donne un bon lait). Le reste de la colonne de droite est à compléter sur des lignes pointillées.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p108_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-a",
+      "instruction": "Écris « oui » ou « non » :",
+      "body": "- La vieille n'est pas contente de l'affaire de son mari. (case ovale à remplir)",
+      "figureDesc": "Petite case ovale pointillée pour écrire oui/non",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p108_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-b",
+      "instruction": "Relève, dans le texte, le détail qui le montre :",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "Deux lignes pointillées",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p108_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Cherche dans le texte le synonyme des mots soulignés :",
+      "body": "- Le paysan se précipite vers le marché. = le paysan ...................... vers le marché.\n- Il marche d'un pas rapide pour arriver à la ville. = Il ............... pour arriver à la ville.\n- Le voyageur est surpris. = le voyageur est ......................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p108_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

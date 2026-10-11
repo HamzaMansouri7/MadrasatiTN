@@ -1,0 +1,127 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 39,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "قياس المساحات: المقارنة بين مساحات وترتيبها وحلّ مسألة تبادل قطعتي أرض (الوحدات: م² ، دكم² ، هم² ، كم²). Note : la page relève des mathématiques, et non de la langue arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "قارِن بَيْنَ الأَقْيِسَةِ بِوَضْعِ العَلامَةِ > = <",
+      "body": "67 هم² ● 670 دكم²\n2540 م² ● 254 كم²\n1039 كم² ● 10390000 دكم²\n2189 م² ● 33 دكم²\n10 كم² و 99 هم² ● 1099 هم²\n43010 دكم² ● 5 كم²",
+      "figureDesc": "Tableau de six comparaisons sur deux colonnes séparées par un trait vertical, chaque paire reliée par un point central à remplacer par le signe >, = ou <.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p039_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "رَتِّبْ مِنَ الأَكْبَرِ إِلَى الأَصْغَرِ:",
+      "body": "65 هم² – 650 دكم² – 6 كم² و 55 دكم² – 60500 م²",
+      "figureDesc": "Bandeau gris en forme de ruban contenant les quatre mesures ; trois lignes pointillées sont prévues pour la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p039_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "قارِنْ بَيْنَ الأَرْضَيْنِ مِنْ حَيْثُ الْمَسَاحَةُ بالدكم².",
+      "body": "تَبَادَلَ جَارَانِ قِطْعَتَيْ أَرْضٍ: الأُولَى مُسْتَطِيلَةُ الشَّكْلِ بُعْدَاهَا 75 م و 100 م وَالثَّانِيَةُ مُرَبَّعَةٌ قِيسُ ضِلْعِهَا 90 م. قُدِّرَ الْمِتْرُ الْمُرَبَّعُ مِنَ الأَرْضِ الأُولَى بِـ 16200 مي وَقُدِّرَ الدكم² مِنَ الأَرْضِ الثَّانِيَةِ بِـ 1500 د.\n* قَارِنْ بَيْنَ الأَرْضَيْنِ مِنْ حَيْثُ الْمَسَاحَةُ بالدكم².\n* مَنْ مِنْ هَذَيْنِ الْجَارَيْنِ رَبِحَ الصَّفْقَةَ بِاعْتِبَارِ قِيمَةِ الأَرْضِ؟",
+      "figureDesc": "Lignes pointillées pour rédiger les réponses aux deux questions ; numéro de page 40 en bas.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_evaluations_p039_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u1",
+    "confidence": 0.24
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la comparaison et le rangement de mesures de surface (m², dam², hm², km²) et un problème d'échange de terrains, ce qui se rapproche le plus des mesures agraires de la Période 1, mais les unités agraires officielles (ha, a, ca) ne sont pas mentionnées et aucun chapitre ne correspond exactement.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures de superficie et comparaison",
+    "skill": "Comparer et ranger des aires exprimées en m², dam², hm² et km² en convertissant, puis résoudre un problème d'échange de terrains.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "aires",
+      "conversion d'unités",
+      "comparaison",
+      "rangement",
+      "terrains",
+      "rectangle et carré"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une série de comparaisons d'aires avec des unités différentes, un rangement décroissant, et un problème contextualisé où deux voisins échangent un terrain rectangulaire et un terrain carré avec des prix au m² et au dam² à comparer.",
+    "themeGroup": "Mesures d'aires et unités agraires"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 6 : « الأَقْيِسَةِ » transcrit, mais l'image montre « الأَقِيسَةِ » (ordre des voyelles/lettres différent : قِيسَة)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 8 : « ضِلْعِهَا » transcrit, l'image montre « ضِلْعِهَا » mais avec « قِيسُ » à la place de « قِيسُ/قَيْسُ » ; le mot lu est « قِيسُ ضِلْعِهَا » (OK) – point à vérifier, la graphie de l'image est « قِيس »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 8 : « مي » (après 16200) et « د » : l'image indique « 16200 مي » et « 1500 د ». C'est correct, mais « بِـ 16200 » est transcrit sans le tatwil « بــ » ; différence mineure."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 6 : l'image comporte deux colonnes séparées par une ligne verticale. La colonne de droite contient 67 هم²/670 دكم², 2540 م²/254 كم², 1039 كم²/10390000 دكم². La colonne de gauche contient 2189 م²/33 دكم², 10 كم² و 99 هم²/1099 هم², 43010 دكم²/5 كم². Dans l'image, le côté gauche et le côté droit des paires sont inversés par rapport à la transcription (ex. « 670 دكم² ● 67 هم² » à l'écran), ce qui peut inverser le sens de la comparaison."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 8 : la question « قارن بين الأرضين… » est dupliquée dans la transcription (placée en tête puis en puce) alors qu'elle n'apparaît qu'une fois, après l'énoncé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 7 : « 6 كم² و 55 دكم² » correct ; tirets « – » ressemblent à des tirets de séparation, ok. « 60500 م² » correct."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

@@ -1,0 +1,130 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 50,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "Corrigés d'« إيقاظ علمي السنة السادسة » (pages 41 à 46) : la circulation sanguine, la respiration, les échanges de substances et la peau",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "41",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 41 : (1) في هذه المرحلة تتم تنقية الدم...",
+      "body": "1) [2] في هذه المرحلة تتم تنقية الدم... [1] في هذه المرحلة يقوم الدم بنقل الغذاء المهضوم. [4] في هذه المرحلة وبالتحديد الشعيرات الدموية.",
+      "figureDesc": "Cases numérotées dans un exercice d'association d'étapes, dont [2], [1] et [4].",
+      "answer": "ب) تتم عملية تبادل الاكسجين وثاني اكسيد الكربون في مستوى الحويصلات الرئوية إذ في الحويصلات الرئوية يأخذ الدم من هواء الشهيق غاز الاكسجين ويعطيه غاز ثاني اكسيد الكربون وبخار الماء الذي يخرج مع هواء الزفير. ج) تتم عملية تبادل المواد الغذائية بين جهاز الهضم والجهاز الدوري في مستوى الأمعاء الدقيقة. د) يلعب الجهاز الدوري دورا كبيرا في عملية نقل المواد داخل الجسم، ويشكل الدم احد مكونات هذا الجهاز، فهو ينقل الاكسجين من الرئتين (جهاز التنفس) والمواد الغذائية من الامعاء (جهاز الهضم). هـ) في حال حصول خلل في أي من هذه الأجهزة تموت خلايا الجسم وبالتالي يموت الانسان.",
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p050_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "42",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 42 :",
+      "body": "أ) رسم فاطمة يعطينا فكرة على أن الدم ينتشر في أطراف الأصابع فينتقل في أوعية دموية هي الأوردة فقط ونسيت رسم الشرايين والشعيرات. ب) نعم يختلف النبض باختلاف المجهود الذي تقوم به إذ يسبب الإجهاد في سرعة شق عملية التنفس. ج) عندما نجري يزداد عدد نبضات القلب كما تزداد قدرة الرئتين على استيعاب كمية أكبر من الهواء، مما يسمح للدم بنقل كميات كبيرة من الاكسجين إلى اعضاء الجسم. 1) الشعيرات. ب) في حال عدم وجود شعيرات لا يتم تبادل المواد بين الدم وأعضاء الجسم. وظائف الدم : وظيفة تنفسية. وظيفة دفاعية. توزيع الحرارة بانتظام في انحاء الجسم. توزيع المواد المغذية.",
+      "figureDesc": "",
+      "answer": "أ) رسم فاطمة يعطينا فكرة على أن الدم ينتشر في أطراف الأصابع فينتقل في أوعية دموية هي الأوردة فقط ونسيت رسم الشرايين والشعيرات. ب) نعم يختلف النبض باختلاف المجهود الذي تقوم به. ج) عندما نجري يزداد عدد نبضات القلب كما تزداد قدرة الرئتين على استيعاب كمية أكبر من الهواء. 1) الشعيرات. ب) في حال عدم وجود شعيرات لا يتم تبادل المواد بين الدم وأعضاء الجسم. وظائف الدم: وظيفة تنفسية، وظيفة دفاعية، توزيع الحرارة بانتظام في انحاء الجسم، توزيع المواد المغذية.",
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p050_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "43",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 43 :",
+      "body": "تمثل الطريق الأوعية الدموية. تدل العلامات على أن الدم يتنقل في اتجاه واحد. تحمل الشاحنات عند وصولها إلى العضلة الاكسجين والغذاء. تزود الشاحنات بالمواد المغذية من الأمعاء الدقيقة. تزود الشاحنات بالاكسجين من الحويصلات الرئوية. تنتج العضلة ثاني اكسيد الكربون. تعطلت إحدى الشاحنات لمدة وجيزة فتوقف الإنتاج. الشاحنة التي تعطلت هي شاحنة الاكسجين. التعليل: لا يستطيع الإنسان أن يبقى أكثر من ثلاث أو أربع دقائق دون أن يتنفس. يجب أن أضيف إلى هذا الرسم حتى تصبح الدورة الدموية كاملة عضلة القلب. يضخ القلب في الساعة بحساب المليلتر ثم باللتر : 294 000 = 60 x (70 x 70) مل = 294 ل. يضخ القلب في اليوم باللتر : 7056 = 24 x 294. يضخ القلب في السنة باللتر : 2 575 440 = 365 x 7056",
+      "figureDesc": "Activité d'analogie : route = vaisseaux sanguins, camions = transport d'oxygène et de nutriments vers le muscle.",
+      "answer": "الشاحنة التي تعطلت هي شاحنة الاكسجين ; يضخ القلب 294 ل في الساعة، 7056 ل في اليوم، 2 575 440 ل في السنة.",
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p050_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "44",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 44 :",
+      "body": "ت1: المادة المعنية تساعد على ترطيب الجلد وحمايته من التشقق. ت2: تفرز الغدد العرقية العرق. ت3: خلق الله لنا الجلد ليحافظ على درجة حرارة الجسم ، وليحمينا من الجراثيم الضارة ، ومن اشعة الشمس الحارة... البشرة بها طبقة متقرنة وتقاوم الاحتكاك. الأدمة بها أرعية دموية وبها غدد عرقية.",
+      "figureDesc": "",
+      "answer": "1: المادة المعنية تساعد على ترطيب الجلد وحمايته من التشقق. 2: تفرز الغدد العرقية العرق. 3: خلق الله لنا الجلد ليحافظ على درجة حرارة الجسم وليحمينا من الجراثيم الضارة ومن اشعة الشمس الحارة.",
+      "confidence": 0.75,
+      "id": "eveil_scientifique_cours_exercices_p050_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "45",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 45 :",
+      "body": "يتكون الجلد من منطقتين هما : البشرة وادمة الجلد. يغطي الجلد جسم الإنسان ويحميه من العوامل الخارجية. وظائف الجلد عديدة منها : منع دخول الجراثيم والماء والغبار إلى الجسم. تتوزع داخل الجسم جسيمات حسية وأوعية دموية. الغدد العرقية تفرز العرق ويخرج من الجلد بواسطة مسام.",
+      "figureDesc": "",
+      "answer": "يتكون الجلد من منطقتين هما : البشرة وادمة الجلد.",
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p050_i5",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "46",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 46 :",
+      "body": "دخلت الجراثيم إلى الجلد من جرّاء وخزة شوكة. تمطّطت الشعيرات الدموية فاحمرّ وضع الوخز. غادرت الكريات البيضاء الأوعية الدموية واتجهت نحو الجراثيم للقضاء عليها وابتلاعها.",
+      "figureDesc": "",
+      "answer": "دخلت الجراثيم إلى الجلد من جراء وخزة شوكة. تمططت الشعيرات الدموية فاحمر وضع الوخز. غادرت الكريات البيضاء الأوعية الدموية واتجهت نحو الجراثيم للقضاء عليها وابتلاعها.",
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p050_i6",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u6",
+    "confidence": 0.58
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est un corrigé d'éveil scientifique sur la circulation sanguine (vaisseaux, pouls, transport de l'oxygène et des nutriments), la peau et la défense contre les microbes (globules blancs), ce qui correspond surtout à l'unité 3 (système circulatoire, immunité, microbes). Elle touche aussi à la respiration (unité 2) et à la peau, qui n'est pas listée explicitement, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Circulation sanguine, respiration et peau",
+    "skill": "Expliquer le trajet et le rôle du sang, les échanges gazeux et nutritifs, ainsi que la structure et les fonctions de la peau.",
+    "pageType": "correction",
+    "formats": [
+      "schema_tableau",
+      "lecture_comprehension",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "circulation sanguine",
+      "pouls",
+      "vaisseaux sanguins",
+      "échanges gazeux",
+      "peau",
+      "globules blancs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les analogies (camions sur une route pour le sang et les vaisseaux), l'analyse du dessin d'un élève, le lien entre effort physique et pouls, et la séquence de défense de la peau après une piqûre d'épine sont des situations réutilisables pour créer des exercices originaux.",
+    "themeGroup": "La circulation sanguine et le sang"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

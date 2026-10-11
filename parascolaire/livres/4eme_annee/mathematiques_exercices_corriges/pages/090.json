@@ -1,0 +1,320 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 90,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 23 – اختبار تقويمي للتثبيت والدعم (division, problème sur les capacités, rectangles : périmètre et aire, problème d'achats)",
+  "items": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 23",
+      "body": "اختبار تقويمي للتثبيت والدعم",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p090_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "كلّ نقطة تمثّل رقما، ضع الرّقم المناسب مكان النّقطة المناسبة :",
+      "body": "Division posée à compléter. Dividende : ..58 (deux chiffres manquants suivis de 5 et 8), diviseur : 7, quotient : ... (trois chiffres manquants). Étapes visibles : (-) 14, puis (=) 2. (un chiffre manquant après le 2), puis (-) ..., puis (=) ..., puis (-) .., puis (=) ... (les chiffres manquants sont figurés par des points ; le nombre exact de points sur les dernières lignes est peu net dans le scan).",
+      "figureDesc": "Division posée en potence avec des points à la place des chiffres manquants ; seuls 5, 8, 7, 1, 4 et 2 sont visibles.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p090_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "بدنّ نصف هل من الزّيت، ملأ التّاجر 40 قارورة سعة الواحدة منهـــا 8 دسل. ما هي باللتر كمّية الزّيت المتبقّية بالدنّ؟",
+      "body": "بدنّ نصف هل من الزّيت، ملأ التّاجر 40 قارورة سعة الواحدة منهـــا 8 دسل. ما هي باللتر كمّية الزّيت المتبقّية بالدنّ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p090_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ الأشكال المرسومة ثمّ كمّل ملء الجدول :",
+      "body": "Tableau : colonnes المستطيل | قيس الطول | قيس العرض | قيس المحيط | قيس المساحة. Ligne 1 : (أ ب ج د) | 3 | 2 | 10 | 6. Ligne 2 : (أ هـ و ز) | vide | vide | vide | vide. Ligne 3 : (أ ح ط ي) | vide | vide | vide | vide.",
+      "figureDesc": "Quadrillage avec trois rectangles emboîtés partageant le sommet أ (coin inférieur droit). Points : ب، ج، د ; هـ، و، ز ; ح، ط، ي. Tableau à compléter à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p090_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ذهب أمين إلى السّوق فاشترى وعاء من البيض يحوي 30 بيضة بـ70مي البيضة ونصف كيلوغرام من اللحم بـ 6800 مي الكغ وزيتا بـ 3250 مي ويبقي ينقصه 100 مي لشراء 3 كغ من البطاطا بـ 450 مي الكغ الواحد.",
+      "body": "أ) ابحث عن ثمن: - البيض - اللحم - البطاطا.\nب) ماهو المبلغ الذي أعطته الأمّ لولدها؟\nج) كانت الأمّ تظنّ أنّ ثمن الحارة من البيض بـ 240 مي. ما هو المبلغ الذي كانت تظنّ أنه سيبقى مع ولدها؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_corriges_p090_i5"
+    },
+    {
+      "kind": "footer",
+      "number": null,
+      "instruction": "",
+      "body": "86",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_corriges_p090_i6"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch2",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de synthèse (semaine 23) mêlant division, capacités, périmètre/aire du rectangle et problème d'achats, donc plusieurs chapitres (math-4-ch2, ch3, p6) sans correspondance unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    130
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision : division, périmètre et aire",
+    "skill": "Mobiliser la division posée, les conversions de capacités, le périmètre et l'aire du rectangle, et les opérations dans un problème d'achats à étapes.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "division posée",
+      "capacités",
+      "périmètre",
+      "aire du rectangle",
+      "problème d'achats",
+      "monnaie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une division à trous à reconstituer, un problème de contenance avec conversion dl/L, un tableau de rectangles à compléter à partir d'une figure quadrillée, et un problème d'achats au marché avec montant manquant et estimation erronée de la mère.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 2 : « بدنّ نصف هل » est transcrit tel quel, mais l'image porte « بدنّ نصف هل من الزّيت » avec des erreurs OCR probables. Le mot « هل » (hectolitre, abrégé « هل ») est correct, mais « نصف هل » est ambigu et à vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « ويبقي ينقصه » ; l'image porte « ويبقى ينقصه » (ي final au lieu de ى). Vérifier : l'image montre « ويبقي »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 4 ج : « الحارة » est probablement faux. L'image porte bien « الحارة », mais le sens attendu est « البيضة » ou « الحبّة », à contrôler."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 4 : la question « أ) ابحث عن ثمن: البيض - اللحم - البطاطا » est placée dans le champ de sous-questions, mais le texte de l'énoncé est séparé de ses questions. Il y a donc un risque de structure incorrecte."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Absence de l'en-tête « اختبار تقويمي للتثبيت والدعم », de « الأسبوع 23 » et du numéro de page 86."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 1 : la description de la division est approximative. L'image montre ..58 | 7, puis 14, puis 2., puis « . . . », puis « . . . », puis « . . . », avec un quotient « . . . »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3 : la figure quadrillée (points أ ب ج د هـ و ز ح ط ي) n'est pas décrite."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les shadda visibles sont parfois mal placées ou ajoutées, par ex. « بدنّ », « الدنّ », « كمّية »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : « الأسبوع 23 » et « اختبار تقويمي للتثبيت والدعم ». Le numéro de page « 86 » en bas est lui aussi omis."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 1 : la division est mal décrite. Après « 14 » et « 2. », l'image montre quatre lignes de points, à savoir une soustraction, un résultat, une soustraction et un résultat. La transcription n'en annonce que trois. Le dividende « ..58 », le diviseur 7 et le quotient « ... » sont corrects."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 23",
+      "body": "اختبار تقويمي للتثبيت والدعم",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p090_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "كلّ نقطة تمثّل رقما، ضع الرّقم المناسب مكان النّقطة المناسبة :",
+      "body": "Division posée à compléter. Dividende : ..58 (deux chiffres manquants suivis de 5 et 8), diviseur : 7, quotient : ... (trois chiffres manquants). Étapes visibles : (-) 14, puis (=) 2. (un chiffre manquant après le 2), puis (-) ..., puis (=) ..., puis (-) .., puis (=) ... (les chiffres manquants sont figurés par des points ; le nombre exact de points sur les dernières lignes est peu net dans le scan).",
+      "figureDesc": "Division posée en potence avec des points à la place des chiffres manquants ; seuls 5, 8, 7, 1, 4 et 2 sont visibles.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p090_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "بدنّ نصف هل من الزّيت، ملأ التّاجر 40 قارورة سعة الواحدة منهـــا 8 دسل. ما هي باللتر كمّية الزّيت المتبقّية بالدنّ؟",
+      "body": "بدنّ نصف هل من الزّيت، ملأ التّاجر 40 قارورة سعة الواحدة منهـــا 8 دسل. ما هي باللتر كمّية الزّيت المتبقّية بالدنّ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p090_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ الأشكال المرسومة ثمّ كمّل ملء الجدول :",
+      "body": "Tableau : colonnes المستطيل | قيس الطول | قيس العرض | قيس المحيط | قيس المساحة. Ligne 1 : (أ ب ج د) | 3 | 2 | 10 | 6. Ligne 2 : (أ هـ و ز) | vide | vide | vide | vide. Ligne 3 : (أ ح ط ي) | vide | vide | vide | vide.",
+      "figureDesc": "Quadrillage avec trois rectangles emboîtés partageant le sommet أ (coin inférieur droit). Points : ب، ج، د ; هـ، و، ز ; ح، ط، ي. Tableau à compléter à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p090_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ذهب أمين إلى السّوق فاشترى وعاء من البيض يحوي 30 بيضة بـ70مي البيضة ونصف كيلوغرام من اللحم بـ 6800 مي الكغ وزيتا بـ 3250 مي ويبقي ينقصه 100 مي لشراء 3 كغ من البطاطا بـ 450 مي الكغ الواحد.",
+      "body": "أ) ابحث عن ثمن: - البيض - اللحم - البطاطا.\nب) ماهو المبلغ الذي أعطته الأمّ لولدها؟\nج) كانت الأمّ تظنّ أنّ ثمن الحارة من البيض بـ 240 مي. ما هو المبلغ الذي كانت تظنّ أنه سيبقى مع ولدها؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "math_solutions_4eme_sellami_p090_i5"
+    },
+    {
+      "kind": "footer",
+      "number": null,
+      "instruction": "",
+      "body": "86",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "math_solutions_4eme_sellami_p090_i6"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "كلّ نقطة تمثّل رقما، ضع الرّقم المناسب مكان النّقطة المناسبة :",
+      "body": "Division posée à compléter. Dividende : ..58 (deux chiffres manquants suivis de 5 et 8), diviseur : 7. Quotient : ... (trois chiffres manquants). Étapes : soustraction avec résultat partiel 14, puis reste 2., puis ligne ..., puis ligne ..., puis ligne ... (certains chiffres remplacés par des points).",
+      "figureDesc": "Division posée en potence avec des points à la place des chiffres manquants ; seuls 5, 8, 7, 1, 4 et 2 sont visibles.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p090_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "بدنّ نصف هل من الزّيت، ملأ التّاجر 40 قارورة سعة الواحدة منهـــا 8 دسل. ما هي باللتر كمّية الزّيت المتبقّية بالدنّ؟",
+      "body": "بدنّ نصف هل من الزّيت، ملأ التّاجر 40 قارورة سعة الواحدة منهـــا 8 دسل. ما هي باللتر كمّية الزّيت المتبقّية بالدنّ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p090_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ الأشكال المرسومة ثمّ كمّل ملء الجدول :",
+      "body": "Tableau : colonnes المستطيل | قيس الطول | قيس العرض | قيس المحيط | قيس المساحة. Ligne 1 : (أ ب ج د) | 3 | 2 | 10 | 6. Ligne 2 : (أ هـ و ز) | vide | vide | vide | vide. Ligne 3 : (أ ح ط ي) | vide | vide | vide | vide.",
+      "figureDesc": "Quadrillage avec trois rectangles emboîtés partageant le sommet أ (coin inférieur droit). Points : ب، ج، د ; هـ، و، ز ; ح، ط، ي. Tableau à compléter à droite.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p090_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ذهب أمين إلى السّوق فاشترى وعاء من البيض يحوي 30 بيضة بـ70مي البيضة ونصف كيلوغرام من اللحم بـ 6800 مي الكغ وزيتا بـ 3250 مي ويبقي ينقصه 100 مي لشراء 3 كغ من البطاطا بـ 450 مي الكغ الواحد.",
+      "body": "أ) ابحث عن ثمن: - البيض - اللحم - البطاطا.\nب) ماهو المبلغ الذي أعطته الأمّ لولدها؟\nج) كانت الأمّ تظنّ أنّ ثمن الحارة من البيض بـ 240 مي. ما هو المبلغ الذي كانت تظنّ أنه سيبقى مع ولدها؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "math_solutions_4eme_sellami_p090_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "correctionStatus": "linked",
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

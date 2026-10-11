@@ -1,0 +1,182 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 70,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 19 – الامتحان الثلاثي الثاني (1) : أعداد من أربعة أرقام، خاصيات الضرب، مقارنة الكتل، رسم رباعي، مسألة ادخار",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) أوجد ثلاثة أعداد من أربعة أرقام تحقّق الشرطين التاليين :",
+      "body": "- أرقام آحاد وعشرات ومئات كلٍّ منها متساوية .\n- مجموع أرقام كلّ عدد منها هو 25.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p070_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 (ب)",
+      "instruction": "ب) أقارن بوضع ( > ، = ، < ) مكان النّقط دون إجراء العمليّة :",
+      "body": "(7 × 36) + (3 × 36) ........ (7 + 3) × 36\n26 × 57 × 12 ........ 26 × 57 × 12\n70 × 235 ........ 7 × 2350",
+      "figureDesc": "ثلاث مقارنات مع نقاط للإكمال",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p070_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ الرّسم ثمّ رتّب الأشياء الموضوعة على كفّتي الميزانين حسب كتلتها من الأثقل إلى الأخفّ.",
+      "body": "",
+      "figureDesc": "ثلاث كفات ميزان: كفة فيها شكل بيضاوي (هـ) وسهم يشير إلى كفة فيها جسم (أ) صغير؛ كفة فيها علبة (ط) وسهم يشير إلى كفة فيها جسم (أ) على اليمين. الأسهم تبيّن الكفة الأثقل.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_corriges_p070_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم رباعيًا له زاويتان قائمتان فقط.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mathematiques_exercices_corriges_p070_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أتمّ الجدول التّالي وضع في دائرة عدد الأسابيع اللازمة لادّخار المبلغ النّاقص.",
+      "body": "تدّخر جارتنا كلّ أسبوع 20 دينارا وبعد 24 أسبوعا أرادت أن تشتري آلة خياطة جديدة بـ 580 دينارا فلاحظت أنّ المبلغ لا يكفي. كم ينقصها ؟\nخيّرت جارتنا فكرة شراء آلة جديدة واشترت لذلك آلة مستعملة فأنفقت 35 500 مي مقابل الإصلاحات ويبقي عندها من المبلغ الذي ادّخرته 44 دينارا.\nفبكم اشترت الآلة المستعملة؟",
+      "figureDesc": "جدول: المبلغ المدّخر: 20، 40، 60، ., ., 120، . ؛ عدد الأسابيع: 1، 2، ., 4، 5، ., 7",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p070_i5",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.28
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation du deuxième trimestre (الامتحان الثلاثي الثاني) qui mélange plusieurs chapitres : nombres à 4 chiffres, propriétés de la multiplication, comparaison de masses, construction d'un quadrilatère et problème d'épargne ; aucun chapitre ne correspond donc exactement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125,
+    126
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision de mi-parcours : nombres, mesures, géométrie",
+    "skill": "Mobiliser en situation d'évaluation les nombres à quatre chiffres, les propriétés de la multiplication, la comparaison de masses, le tracé d'un quadrilatère et la résolution d'un problème d'épargne.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "nombres à quatre chiffres",
+      "propriétés de la multiplication",
+      "comparaison sans calcul",
+      "masses et balances",
+      "quadrilatère à angles droits",
+      "problème d'épargne"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le sujet associe des contraintes sur les chiffres d'un nombre (chiffres identiques, somme imposée), des comparaisons d'expressions sans calcul fondées sur la distributivité, le classement d'objets sur des balances, un tracé géométrique sous contrainte et un problème d'épargne hebdomadaire complété par un tableau, ce qui offre une variété de formats facile à adapter.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.72
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.72,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 1 ب : l'ordre des symboles est (< ، = ، >) dans l'image, la transcription donne ( > ، = ، < )."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de l'exercice 4 (المبلغ المدّخر : 20, 40, 60, ., ., 120, . ; عدد الأسابيع : 1, 2, ., 4, 5, ., 7) est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes « الأسبوع 19 » et « الامتحان الثلاثي الثاني (1) » ainsi que le numéro de page 66 sont omis."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2 : le dessin des balances (objets a, b, c, d) n'est pas décrit."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 4 : « 35 500 مي » est faux. Le texte de l'image est « 35 500 مي » (millimes) mais l'énoncé « ويبقي » devrait être « ويبقى » ; vérifier la lecture de « مي »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« ويبقي » devrait être « ويبقى » (ya final)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 4 : la consigne « أتمّ الجدول… » est placée avant l'énoncé du problème, alors que dans l'image elle vient après la question « كم ينقصها ؟ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Certains tashkeel visibles sont omis ou modifiés, ex. « نُقط », « تحقّق » avec damma/shadda, « كلٍّ » (image : « كلّ »)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 أ : « كلٍّ منها » devrait être « كلّ منها » (image : كلُّ)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« رباعيًا » : l'image montre « رباعيّا »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

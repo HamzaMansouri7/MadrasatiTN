@@ -1,0 +1,142 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 50,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Le petit malade (Stéphanie et son chien Rex)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2a",
+      "instruction": "En allant voir son chien, Stéphanie a commis une faute. Laquelle ?",
+      "body": "Lignes de réponse à remplir (2 lignes pointillées).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p050_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2b",
+      "instruction": "Relève, dans le texte, le détail qui le montre :",
+      "body": "Lignes de réponse à remplir (2 lignes pointillées).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p050_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Quels sont les signes qui font croire à la fillette que son chien a la rage ?",
+      "body": "Lignes de réponse à remplir (3 lignes pointillées).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p050_i3",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Cherche dans le texte le synonyme des mots suivants :",
+      "body": "Libérer = ................................\nChaîne = ................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p050_i4",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Rex n'est pas enragé. Pourquoi hurle-t-il alors ?",
+      "body": "Lignes de réponse à remplir (2 lignes pointillées).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p050_i5",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Que fait Stéphanie pour délivrer son chien ?",
+      "body": "Lignes de réponse à remplir (2 lignes pointillées).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p050_i6",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Remets ces paragraphes en ordre :",
+      "body": "* Les médicaments sont à prendre trois fois par jour et, dans une semaine, notre malade pourra retourner à l'école.\n* Une heure après, il est devant le malade. Il ouvre sa trousse et examine Pascal.\n* Pascal est fiévreux. Sa maman téléphone au médecin.\n* Il lui annonce qu'il a la grippe. Il rédige une ordonnance.\n(Suivent 5 lignes pointillées pour la réponse.)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p050_i7",
+      "topicId": "fr-6-m6",
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.31
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français sur un texte consacré à la maladie (un chien soupçonné d'avoir la rage, un enfant atteint de la grippe vu par le médecin), qui se rattache au thème de la santé du Module 6, mais le module n'est pas explicitement identifié.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture : Le petit malade",
+    "skill": "Comprendre un texte narratif en repérant des informations, en trouvant des synonymes et en remettant des paragraphes dans l'ordre.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "synonymes",
+      "remise en ordre",
+      "texte narratif",
+      "Stéphanie et Rex",
+      "relevé d'indices"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Séquence de questions graduées autour d'un récit animalier (déduire une faute, relever des indices, expliquer une cause, chercher des synonymes), complétée par une remise en ordre de paragraphes sur une scène de visite du médecin, transposable à d'autres récits du quotidien.",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

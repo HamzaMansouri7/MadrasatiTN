@@ -1,0 +1,135 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 44,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الطَّاقَةُ : قُطْبَا المَغْنَاطِيسِ (L'énergie : les pôles d'un aimant)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 1 : أَيْنَ تَتَجَمَّعُ المَسَامِيرُ ؟",
+      "body": "السَّنَدُ : ضَعِ المَسَامِيرَ عَلَى الطَّاوِلَةِ. ضَعِ المَغْنَاطِيسَ بَيْنَ المَسَامِيرِ وَارْفَعْهُ. التعليمة 2 : مَاذَا يُدْعَى طَرَفُ المَغْنَاطِيسِ ؟",
+      "figureDesc": "Photo d'une main tenant un barreau aimanté (rouge et bleu) dont les deux extrémités attirent des clous et des petits objets métalliques.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p044_i1",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة 1 : لَاحِظْ اتِّجَاهَ المَغْنَاطِيسِ.",
+      "body": "السَّنَدُ : ضَعِ المَاءَ فِي وِعَاءِ البلاستيكِ. رَكِّزِ المَغْنَاطِيسَ عَلَى قِطْعَةِ البوليسترين وَضَعْ هَذِهِ القِطْعَةَ عَلَى سَطْحِ المَاءِ. حَرِّكْ قِطْعَةَ البوليسترين وَدَعْهَا تَتَوَازَنْ. التعليمة 2 : مَاذَا تَسْتَنْتِجُ بِالنِّسْبَةِ إِلَى اتِّجَاهِ المَغْنَاطِيسِ ؟",
+      "figureDesc": "Photo d'un récipient en plastique bleu rempli d'eau avec un morceau de polystyrène blanc flottant portant un petit aimant rouge.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p044_i2",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة 1 : مَاذَا تَسْتَنْتِجُ ؟",
+      "body": "السَّنَدُ : خُذْ كُلَّ قَضِيبٍ مَغْنَاطِيسِيٍّ فِي يَدٍ. قَرِّبِ القُطْبَ الشَّمَالِيَّ لِأَحَدِ المَغْنَاطِيسَيْنِ إِلَى القُطْبِ الجَنُوبِيِّ لِلْآخَرِ أَوِ العَكْسَ (قُطْبَانِ مُخْتَلِفَانِ أَوْ قُطْبَانِ مُتَشَابِهَانِ). التعليمة 2 : مَاذَا تُسَمَّى الظَّاهِرَةُ الَّتِي لَاحَظْتَهَا ؟",
+      "figureDesc": "Deux photos : mains rapprochant deux barreaux aimantés (rouge/bleu) bout à bout, d'abord pôles différents puis pôles identiques, pour observer attraction et répulsion.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p044_i3",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u5",
+  "topicTitle": "Unité 5 : Énergie, magnétisme, poids et chute libre",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "sci-6-u5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u5",
+    "confidence": 0.8
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des pôles d'un aimant, de l'orientation du magnétisme (boussole improvisée sur polystyrène) et de l'attraction/répulsion, ce qui correspond à l'unité 5 (énergie, magnétisme).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Les pôles d'un aimant",
+    "skill": "Identifier les pôles d'un aimant, son orientation nord-sud et les interactions d'attraction et de répulsion entre pôles.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "aimant",
+      "pôles",
+      "attraction",
+      "répulsion",
+      "orientation",
+      "expérience"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Trois expériences manipulatoires simples (clous attirés par un aimant, aimant posé sur du polystyrène flottant pour observer son orientation, rapprochement de deux barreaux aimantés) suivies de questions d'observation et de déduction, facilement réutilisables en séance d'investigation.",
+    "themeGroup": "Les aimants et la boussole"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de la page « الطَّاقَةُ : قُطْبَا المَغْنَاطِيسِ » est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 83 et les numéros de section 1, 2, 3 ne sont pas transcrits."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans chaque bloc, التعليمة 1 est placée avant السَّنَدُ alors que sur la page le السَّنَد vient en premier, puis التعليمة 1 et 2."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 1 : « وَارْفَعْهُ » correspond à l'image (وَأَرْفَعْهُ), pas d'erreur de fond, simple variante orthographique."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 1 : « طَرَفُ » est correct ; le tashkeel de « المَسَامِير » est normalisé, sans conséquence."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Bloc 2 : « البلاستيك » et « البوليسترين » sont transcrits sans voyelles. Sur la page, « البلاستيك » est partiellement vocalisé (البلاستيكِ), mais pas البوليسترين, ce qui est cohérent."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 2 : « رَكِّزِ » est correct. « تَتَوَازَنْ » est correct (تَتَوَازَنْ)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 3 : l'ordre « أَوِ العَكْسَ (قُطْبَانِ مُخْتَلِفَانِ أَوْ قُطْبَانِ مُتَشَابِهَانِ) » est correct. Sur la page, « أو العكس » est sans voyelles, la transcription en ajoute (ajout non visible)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

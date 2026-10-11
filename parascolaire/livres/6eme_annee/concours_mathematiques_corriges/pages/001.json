@@ -1,0 +1,235 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 1,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مناظرة تجريبية عدد 5 – رياضيات – السنة السادسة (أفريل 2023): الكسور، النسبة المائوية، الأسعار والقسط، مساحة المثلث",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "المسألة عدد 1: (6 نقاط)",
+      "body": "يملك مصنع للعصير آلة ضخمة لعصر الغلال. لا تعمل إلّا عند ملئها كاملا. كمّية البرتقال الموجودة هذا الصّباح تقدر بـ 3/5 سعة الآلة. وأحضر أحد الفلّاحين كمّية ثانية فامتلأت الآلة إلى حدود 6/7 سعتها.\n1/ ماهي سعة الآلة من البرتقال علما وأنّ الكمية التي أحضرها الفلاح ثمنها الجملي 51.840 د بحساب 0.480 د الكغ الواحد.\nبعد أن تم ملء الآلة أعطت كمية البرتقال المعصورة 147 كغ من العصير.\n2/ أحسب النسبة المائويّة لكتلة العصير بالنسبة لكتلة البرتقال.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy",
+      "id": "concours_mathematiques_corriges_p001_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "المسألة عدد 2: (6 نقاط)",
+      "body": "لشراء شقّة ثمنها 135450 د. باع عمّي قطعة أرض في شكل مثلّث. مجموع طول قاعدته وطول ارتفاعه الموافق لها 55 م وطول الأولى تمثّل 5/6 طول الثّاني بحساب 87.4 د المتر المربّع كما باع سيّارته فتحصّل بذلك على 4/9 ثمن الشقّة.\n1/ ماهو ثمن بيع السيّارة؟\nثمّ باع حليّ زوجته المقدّر كتلته بنصف رطل وبذلك بقي في حاجة إلى 45% من ثمن الشقّة اقترضه من البنك وسدّده أقساطا شهرية عددها 135 قيمة الواحد 532.770 د\n2/ ماهو ثمن بيع الغرام الواحد من الحليّ؟\n3/ ماهي النسبة المائويّة للفائض من المبلغ المقترض؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "concours_mathematiques_corriges_p001_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "math-6-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un concours blanc de mathématiques (n°5) composé de problèmes à plusieurs étapes qui mêlent fractions, pourcentages, prix, mensualités et aire du triangle, ce qui correspond à la synthèse générale et à la résolution de situations-problèmes préparant au concours d'entrée aux collèges pilotes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    3,
+    4
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes de fractions et pourcentages",
+    "skill": "Résoudre des problèmes à étapes combinant fractions, pourcentages, prix, aire du triangle et mensualités.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "fractions",
+      "pourcentage",
+      "prix unitaire",
+      "aire du triangle",
+      "mensualités",
+      "devoir de synthèse"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations de la vie réelle (usine de jus d'orange avec machine remplie aux 3/5 puis aux 6/7, achat d'un appartement financé par vente de terrain triangulaire, voiture, bijoux et prêt remboursé en mensualités) enchaînant plusieurs étapes, réutilisables pour créer des problèmes de synthèse avec un fil conducteur unique.",
+    "themeGroup": "Fractions"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Bloc [1] : la question 1/ est placée avant l'énoncé (يملك مصنع...). Dans l'image l'énoncé vient d'abord, puis la question 1/."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Bloc [2] : la question 2/ précède la phrase 'بعد أن تم ملء الآلة...'. Dans l'image, la phrase vient avant la question 2/."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Bloc [3] : la question 1/ (ماهو ثمن بيع السيّارة؟) précède l'énoncé de l'exercice 2. Dans l'image, elle vient après l'énoncé."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Bloc [4] : la question 2/ précède le texte 'ثمّ باع حليّ زوجته...'. Dans l'image, elle vient après."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Bloc [1] : la suite de la question 1/ est coupée. Dans l'image, 'الكغ الواحد.' suit 'بحساب 0.480 د' sur une nouvelle ligne ; le contenu est présent mais l'ordre est perturbé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'المائوية' est transcrit sans la forme exacte de l'image : l'image montre 'المائويّة' avec shadda. Dans [2] la transcription a 'المائوية' sans shadda."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc [3] : 'وطول الأولى تمثّل' est correct, mais 'الارتفاعه' n'apparaît pas. Il faut 'وطول ارتفاعه' tel quel (OK). Pas d'autre erreur de mot détectée."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel partiel : 'كمّية' en [1] est transcrit correctement, mais 'سدّده' dans [4] est écrit 'سدّده' (OK) et 'الغرام' est correct. Quelques shaddas ('الصّباح', 'الفلّاحين') sont conservées, d'autres comme 'كمية' en [2] sont sans shadda alors que l'image montre 'كمّيّة'."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Les deux problèmes (المسألة عدد 1 et عدد 2) sont découpés en 5 exercices. Les questions 1/, 2/ et 3/ sont placées dans 'instruction' avant l'énoncé, alors que dans l'image l'énoncé vient d'abord. Pour le problème 1, l'ordre de l'image est : énoncé, 1/, la phrase 'بعد أن تم ملء الآلة...', puis 2/. Pour le problème 2, c'est : énoncé, 1/, la phrase 'ثمّ باع حليّ زوجته...', 2/, puis 3/. Les 5 blocs sont à fusionner en 2 exercices, en respectant l'ordre de l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "'المائوية' est transcrit sans shadda dans la question 2/ du problème 1. L'image montre 'المائويّة'."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "المسألة عدد 1: (6 نقاط)",
+      "body": "يملك مصنع للعصير آلة ضخمة لعصر الغلال. لا تعمل إلّا عند ملئها كاملا. كمّية البرتقال الموجودة هذا الصّباح تقدر بـ 3/5 سعة الآلة. وأحضر أحد الفلّاحين كمّية ثانية فامتلأت الآلة إلى حدود 6/7 سعتها.\n1/ ماهي سعة الآلة من البرتقال علما وأنّ الكمية التي أحضرها الفلاح ثمنها الجملي 51.840 د بحساب 0.480 د الكغ الواحد.\nبعد أن تم ملء الآلة أعطت كمية البرتقال المعصورة 147 كغ من العصير.\n2/ أحسب النسبة المائويّة لكتلة العصير بالنسبة لكتلة البرتقال.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy",
+      "id": "concours_math_6eme_corriges_p001_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "المسألة عدد 2: (6 نقاط)",
+      "body": "لشراء شقّة ثمنها 135450 د. باع عمّي قطعة أرض في شكل مثلّث. مجموع طول قاعدته وطول ارتفاعه الموافق لها 55 م وطول الأولى تمثّل 5/6 طول الثّاني بحساب 87.4 د المتر المربّع كما باع سيّارته فتحصّل بذلك على 4/9 ثمن الشقّة.\n1/ ماهو ثمن بيع السيّارة؟\nثمّ باع حليّ زوجته المقدّر كتلته بنصف رطل وبذلك بقي في حاجة إلى 45% من ثمن الشقّة اقترضه من البنك وسدّده أقساطا شهرية عددها 135 قيمة الواحد 532.770 د\n2/ ماهو ثمن بيع الغرام الواحد من الحليّ؟\n3/ ماهي النسبة المائويّة للفائض من المبلغ المقترض؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "concours_math_6eme_corriges_p001_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "المسألة عدد 1: (6 نقاط) – 1/ ماهي سعة الآلة من البرتقال علما وأنّ الكمية التي أحضرها الفلاح ثمنها الجملي 51.840 د بحساب 0.480 د الكغ الواحد.",
+      "body": "يملك مصنع للعصير آلة ضخمة لعصر الغلال. لا تعمل إلّا عند ملئها كاملا. كمّية البرتقال الموجودة هذا الصّباح تقدر بـ 3/5 سعة الآلة. وأحضر أحد الفلّاحين كمّية ثانية فامتلأت الآلة إلى حدود 6/7 سعتها.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "concours_math_6eme_corriges_p001_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "2/ أحسب النسبة المائوية لكتلة العصير بالنسبة لكتلة البرتقال.",
+      "body": "بعد أن تم ملء الآلة أعطت كمية البرتقال المعصورة 147 كغ من العصير.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "concours_math_6eme_corriges_p001_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "المسألة عدد 2: (6 نقاط) – 1/ ماهو ثمن بيع السيّارة؟",
+      "body": "لشراء شقّة ثمنها 135450 د. باع عمّي قطعة أرض في شكل مثلّث. مجموع طول قاعدته وطول ارتفاعه الموافق لها 55 م وطول الأولى تمثّل 5/6 طول الثّاني بحساب 87.4 د المتر المربّع كما باع سيّارته فتحصّل بذلك على 4/9 ثمن الشقّة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "concours_math_6eme_corriges_p001_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "2/ ماهو ثمن بيع الغرام الواحد من الحليّ؟",
+      "body": "ثمّ باع حليّ زوجته المقدّر كتلته بنصف رطل وبذلك بقي في حاجة إلى 45% من ثمن الشقّة اقترضه من البنك وسدّده أقساطا شهرية عددها 135 قيمة الواحد 532.770 د",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "concours_math_6eme_corriges_p001_i4",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "3/ ماهي النسبة المائويّة للفائض من المبلغ المقترض؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "concours_math_6eme_corriges_p001_i5",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "linked",
+  "examScope": "full_year",
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

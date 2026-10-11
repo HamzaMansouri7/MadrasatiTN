@@ -1,0 +1,152 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 41,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La lumière : la vision, les images dans les miroirs et les lentilles, la réflexion et la réfraction de la lumière (corrigés des « Éveil scientifique » 7 à 14)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "7",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 7",
+      "body": "أ) 1- يرسل الجسم أشعة تستقبلها العين. 2- تخترق الأشعة الضوئية الأجزاء الداخلية للعين. 3- تجمع العدسة الأشعة الضوئية وتكسرها على الشبكية. 4- تنعكس صورة الجسم على الشبكية مقلوبة. 5- ينقل العصب البصري الصورة إلى الدماغ فيعدلها. ب) الدماغ هو الذي يلعب دور مظهر الصور. فعندما تتأثر أطراف الخلايا العصبية البصرية ينتقل هذا التأثير إلى الدماغ حيث يقوم بترجمة وتحليل تلك التأثيرات فتتم بذلك عملية الإبصار.",
+      "figureDesc": "",
+      "answer": "الدماغ هو الذي يترجم ويحلل التأثيرات العصبية فتتم عملية الإبصار.",
+      "confidence": 0.7,
+      "id": "eveil_scientifique_cours_exercices_p041_i1",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "8",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 8",
+      "body": "- تشكل العدسة المكبرة للجسم (الشمعة) خيالا مقلوبا على الماجر. - استنتج: يتغير موقع الخيال بتغير بعد الجسم عن العدسة. - تشكل العين الأجسام المرئية الموجودة أمامها خيالا مقلوبا على الشبكية بواسطة العدسة. - تقوم العدسة في العين الطبيعية بتشكيل الخيال دوما على الشبكية عند تغير بعد الجسم وذلك بفضل مرونتها وبذلك تتمكن العين من رؤية الأجسام القريبة والبعيدة بوضوح.",
+      "figureDesc": "",
+      "answer": "يتغير موقع الخيال بتغير بعد الجسم عن العدسة.",
+      "confidence": 0.65,
+      "id": "eveil_scientifique_cours_exercices_p041_i2",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "9",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 9",
+      "body": "أ) تتشكل بقعة ضوئية على الجدار المقابل للفتحة التي يرد منها الضوء، مما يدل على أن الأشعة الضوئية ارتدت باتجاه واحد. وهذا ما يسمى انعكاس الضوء. ب) استنتج: عندما يصطدم الضوء بسطح مستو مصقول فإنه ينعكس في مسار محدد ولا ينتشر في جميع الاتجاهات. تسمى هذه الظاهرة بالانعكاس المنتظم أو باختصار «الانعكاس». - الصورة المتكونة بالمرآة المسطحة (المستوية) تكون معكوسة، فإنك ترى على المرآة يدك اليسرى.",
+      "figureDesc": "Deux schémas : une lampe torche dirigée vers un miroir (rayons réfléchis dans une seule direction) et vers une planche de bois (rayons diffusés dans toutes les directions). Légendes : « خشب » et « مرآة ».",
+      "answer": "انعكاس الضوء؛ الصورة في المرآة المستوية معكوسة.",
+      "confidence": 0.65,
+      "id": "eveil_scientifique_cours_exercices_p041_i3",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "10",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 10",
+      "body": "1- ترى في المرآة صورة الكرة. 2- لها نفس البعد عن المرآة. 3- لها نفس كبر الجسم. - لاحظ: تتكون صورة للقلم في المرآة شبيهة به. - تسمى صورة القلم في المرآة خيالا. - إن الخيال مساو ومماثل للقلم الأصلي. - استنتج: المرآة المستوية تكون لجسم موضوع أمامها خيالا وهميا مساويا للجسم.",
+      "figureDesc": "",
+      "answer": "المرآة المستوية تكون لجسم موضوع أمامها خيالا وهميا مساويا للجسم.",
+      "confidence": 0.65,
+      "id": "eveil_scientifique_cours_exercices_p041_i4",
+      "topicId": "sci-6-u1",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "11",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 11",
+      "body": "- المرآة المقعرة تتكون لجسم موضوع أمامها وقريب منها خيالا وهميا أكبر من الجسم. - نعم رأى سائق السيارة خيالا للشاحنة. - هذا الخيال صحيح. - هذا الخيال أصغر من الجسم. - ترى في المرآة المستوية صورة لها نفس كبر الجسم، أما في المرآة المقعرة فترى صورة أكبر من الجسم وفي المرآة المحدبة فترى صورة أصغر من الجسم.",
+      "figureDesc": "",
+      "answer": "المستوية: نفس الكبر؛ المقعرة: أكبر؛ المحدبة: أصغر.",
+      "confidence": 0.65,
+      "id": "eveil_scientifique_cours_exercices_p041_i5",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "12",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 12",
+      "body": "السبب: تكون الصورة غير واضحة عندما لا يقع خيالها تماما على الشبكية. ويعود ذلك إلى خلل في العدسة، وهذا ما يؤدي إلى الإصابة بأحد عيوب الرؤية. أ) صورة الشجرة خلف الشبكية: عين مصابة بطول النظر (الفلس). تعدل الرؤية بعدسة محدبة. ب) صورة الشجرة أمام الشبكية: عين مصابة بقصر النظر (الحسر). تعدل الرؤية بعدسة مقعرة.",
+      "figureDesc": "",
+      "answer": "طول النظر يعدل بعدسة محدبة؛ قصر النظر يعدل بعدسة مقعرة.",
+      "confidence": 0.65,
+      "id": "eveil_scientifique_cours_exercices_p041_i6",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "13",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 13",
+      "body": "3 أوساط شفافة في التجربة (الهواء - الماء - زجاج الحوض). ينكسر الضوء عند انتقاله من الهواء إلى الماء ثم ينكسر مرة أخرى عند انتقاله من الزجاج إلى الهواء. يظهر القلم مكسورا إذا وضع مائلا على سطح الماء.",
+      "figureDesc": "Schéma d'une lampe torche dont les rayons traversent un bac d'eau incliné : les rayons se brisent à l'entrée dans l'eau puis à la sortie.",
+      "answer": "ينكسر الضوء عند انتقاله من وسط شفاف إلى آخر.",
+      "confidence": 0.65,
+      "id": "eveil_scientifique_cours_exercices_p041_i7",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "14",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 14",
+      "body": "ينكسر الضوء عند انتقاله من الهواء إلى الزجاج. ينكسر مرة أخرى عند انتقاله من الزجاج إلى الهواء. المصدر الضوئي: ضوء الشمس. يمر عبر وسطين: الهواء والماء.",
+      "figureDesc": "",
+      "answer": "المصدر الضوئي: ضوء الشمس؛ يمر عبر وسطين: الهواء والماء.",
+      "confidence": 0.65,
+      "id": "eveil_scientifique_cours_exercices_p041_i8",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u1",
+  "topicTitle": "Unité 1 : L'œil, la lumière et l'optique",
+  "topicConfidence": 0.96,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4166666666666667,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u1",
+    "confidence": 0.77
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page corrige des activités d'éveil scientifique sur la vision, l'œil, les miroirs et lentilles, la réflexion et la réfraction de la lumière, les défauts de vision (myopie, hypermétropie) et leur correction, ce qui correspond à l'Unité 1 : L'œil, la lumière et l'optique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La lumière et la vision",
+    "skill": "Expliquer la formation des images par l'œil, les miroirs et les lentilles, ainsi que la réflexion et la réfraction de la lumière.",
+    "pageType": "correction",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "vision",
+      "œil",
+      "miroir plan",
+      "lentille",
+      "réflexion",
+      "réfraction"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les expériences simples (bougie et lentille sur écran, tache lumineuse sur un mur, crayon dans l'eau, miroir de voiture, défauts de vision corrigés par des lentilles) peuvent inspirer des exercices d'observation et des schémas à compléter, mais la page ne contient que des corrigés.",
+    "themeGroup": "La lumière et la vision"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

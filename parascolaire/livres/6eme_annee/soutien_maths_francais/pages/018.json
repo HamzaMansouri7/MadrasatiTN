@@ -1,0 +1,337 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 18,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Unité 6 – Divisions euclidiennes, volume du cylindre et du prisme droit, angles du losange, du triangle isocèle et du trapèze",
+  "items": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "سلسلة تمارين الدعم في الرياضيات - الوحدة 6 - المستوى 6",
+      "body": "اسم المتعلم (ة) : ..............",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "soutien_maths_francais_p018_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنجز القسمات الإقليدية والمتساويات التالية :",
+      "body": "8526 ÷ 42 ؛ 18399 ÷ 65\nD = (d × q) + r ............\nD = (d × q) + r ............",
+      "figureDesc": "Deux divisions posées avec cases vides à remplir : 8526 ÷ 42 et 18399 ÷ 65 ; sous chacune, un cadre contenant D = (d × q) + r et une ligne en pointillés.",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy",
+      "id": "soutien_maths_francais_p018_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "مسألة: أراد عامل أن يوزع 1432 علبة حليب صغيرة سعة كل واحدة 1L على شكل علب كبيرة تضم كل واحدة 6 علب صغيرة.",
+      "body": "أ) ما هو أقصى عدد العلب الكبيرة التي يمكن للعامل تكوينها؟\nب) ما هو عدد العلب الصغيرة التي ستبقى؟\nج) أكتب على شكل متساوية. D = (d × q) + r ⟵ ............",
+      "figureDesc": "Deux dessins de grandes boîtes bleues contenant 6 petites boîtes chacune, avec la légende : علب كبيرة بكل واحدة 6 علب صغيرة من الحليب.",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "soutien_maths_francais_p018_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "قنينة زيت على شكل أسطوانة قائمة، ارتفاعها h =13,16cm وقطرها D= 22cm.",
+      "body": "أ) أحسب حجم القنينة.\nب) ما هو الحجم التقريبي الذي سيكتب على غلاف القنينة (أحط الجواب الصحيح)؟ 5L / 2L / 1L / 0,5L",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "soutien_maths_francais_p018_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "قام محسن بصنع موشور قائم ذو قاعدة خماسية كما في الشكل أسفله.",
+      "body": "أ) أحسب المساحة الكلية للموشور القائم.\nب) أحسب حجم الموشور القائم.\nج) كم يمثل 1/3 ثلث حجم الموشور القائم بـ cm³ ثم بـ cl.",
+      "figureDesc": "Prisme droit à base pentagonale : N = 5 cm, M = 6 cm, B = 45 cm² (aire de la base), h = 8 cm (hauteur), h1 = 5 cm. Partie supérieure en bleu, faces latérales en jaune.",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "soutien_maths_francais_p018_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أحسب قياس الزوايا التالية :",
+      "body": "المعين: ABCD، الزاوية A = 25°. BCD = ... ؛ ABC = ... ؛ ADC = ...\nمثلث متساوي الساقين: EFJ، الزاوية E = 84°. EFJ = ... ؛ FJE = ...\nشبه منحرف: HIGK، الزاوية G = 54°. KHI = ... ؛ GKH = ... ؛ HIG = ...",
+      "figureDesc": "Trois figures : un losange ABCD avec angle A = 25° ; un triangle isocèle EFJ de sommet E avec angle 84° ; un trapèze HIGK (H et I en haut, K et G en bas) avec angle G = 54° et un petit arc marqué en I. Lignes de réponse en pointillés.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p018_i6"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p4",
+    "confidence": 0.45
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une série de révision mêlant divisions euclidiennes, problèmes, volumes du cylindre et du prisme, aire totale et angles (Période 4 et Période 5), donc une synthèse de plusieurs chapitres qui correspond le mieux à la Période 6 (situations-problèmes), sans chapitre unique évident.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Divisions euclidiennes, volumes et angles",
+    "skill": "Effectuer des divisions euclidiennes, calculer l'aire et le volume de solides droits, et déterminer des angles dans le losange, le triangle isocèle et le trapèze.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "qcm",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "division euclidienne",
+      "volume du cylindre",
+      "prisme droit",
+      "angles du losange",
+      "triangle isocèle",
+      "trapèze"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : regroupement de petites boîtes de lait en grandes boîtes (division avec reste), bouteille d'huile cylindrique avec estimation de sa contenance parmi plusieurs choix, prisme à base pentagonale avec conversion cm³ en cl, et calcul d'angles à partir d'une seule mesure donnée.",
+    "themeGroup": "Multiples et diviseurs"
+  },
+  "audit": {
+    "accuracy": 0.82,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 1: la seconde division est 18399 ÷ 65 d'après l'image (1 8 3 9 9), la transcription est correcte; mais la transcription ajoute des détails non écrits ('المطروحات والبواقي والخارج') qui ne figurent pas sur la page."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 1: description inventée des cadres ('كل قسمة تُنجز في إطار به خانات فارغة (المطروحات والبواقي والخارج)'), absente du texte imprimé."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 4: les données de la figure sont omises: N=5 cm, M=6 cm, h=8 cm, h₁=5 cm, B=45 cm² (aire de la base)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis: 'سلسلة تمارين الدعم في الرياضيات - الوحدة 6 - المستوى 6' et 'اسم المتعلم(ة):'."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2: légende de l'image omise: 'علب كبيرة بكل واحدة 6 علب صغيرة من الحليب'."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 4: les questions أ، ب، ج sont dans la colonne de gauche, séparées de l'énoncé de l'exercice 4 (colonne de droite); l'ordre de lecture est reconstitué."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 5: les noms 'ABCD', 'EFJ', 'HIGK' sont des étiquettes déduites; les angles marqués (E=84°, A=25°, G=54°) sont corrects, mais le triangle et le trapèze ne sont pas décrits fidèlement (HIGK vs KHIG: le sommet K est en bas à gauche)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le texte arabe est sans tashkeel alors que l'image n'en montre pas ; ajout de 'تُنجز' avec damma, absent de l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 1 : la phrase « كل قسمة تُنجز في إطار به خانات فارغة (المطروحات والبواقي والخارج). ثم تُكتب المتساوية … لكل قسمة » ne figure pas sur la page. L'image montre seulement les deux divisions posées avec des cases vides, puis les cadres « D = (d × q) + r ». Cette phrase est un ajout descriptif, pas du texte imprimé."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel (damma de « تُنجز ») est absent de l'image, où tout le texte arabe est non voyellé. Il disparaît avec la suppression de la phrase inventée."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est omis : « سلسلة تمارين الدعم في الرياضيات » / « الوحدة 6 - المستوى 6 » et « اسم المتعلم (ة) : »."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "سلسلة تمارين الدعم في الرياضيات - الوحدة 6 - المستوى 6",
+      "body": "اسم المتعلم (ة) : ..............",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_6eme_math_francais_p018_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنجز القسمات الإقليدية والمتساويات التالية :",
+      "body": "8526 ÷ 42 ؛ 18399 ÷ 65\nD = (d × q) + r ............\nD = (d × q) + r ............",
+      "figureDesc": "Deux divisions posées avec cases vides à remplir : 8526 ÷ 42 et 18399 ÷ 65 ; sous chacune, un cadre contenant D = (d × q) + r et une ligne en pointillés.",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy",
+      "id": "mouayen_6eme_math_francais_p018_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "مسألة: أراد عامل أن يوزع 1432 علبة حليب صغيرة سعة كل واحدة 1L على شكل علب كبيرة تضم كل واحدة 6 علب صغيرة.",
+      "body": "أ) ما هو أقصى عدد العلب الكبيرة التي يمكن للعامل تكوينها؟\nب) ما هو عدد العلب الصغيرة التي ستبقى؟\nج) أكتب على شكل متساوية. D = (d × q) + r ⟵ ............",
+      "figureDesc": "Deux dessins de grandes boîtes bleues contenant 6 petites boîtes chacune, avec la légende : علب كبيرة بكل واحدة 6 علب صغيرة من الحليب.",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_6eme_math_francais_p018_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "قنينة زيت على شكل أسطوانة قائمة، ارتفاعها h =13,16cm وقطرها D= 22cm.",
+      "body": "أ) أحسب حجم القنينة.\nب) ما هو الحجم التقريبي الذي سيكتب على غلاف القنينة (أحط الجواب الصحيح)؟ 5L / 2L / 1L / 0,5L",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_6eme_math_francais_p018_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "قام محسن بصنع موشور قائم ذو قاعدة خماسية كما في الشكل أسفله.",
+      "body": "أ) أحسب المساحة الكلية للموشور القائم.\nب) أحسب حجم الموشور القائم.\nج) كم يمثل 1/3 ثلث حجم الموشور القائم بـ cm³ ثم بـ cl.",
+      "figureDesc": "Prisme droit à base pentagonale : N = 5 cm, M = 6 cm, B = 45 cm² (aire de la base), h = 8 cm (hauteur), h1 = 5 cm. Partie supérieure en bleu, faces latérales en jaune.",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_6eme_math_francais_p018_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أحسب قياس الزوايا التالية :",
+      "body": "المعين: ABCD، الزاوية A = 25°. BCD = ... ؛ ABC = ... ؛ ADC = ...\nمثلث متساوي الساقين: EFJ، الزاوية E = 84°. EFJ = ... ؛ FJE = ...\nشبه منحرف: HIGK، الزاوية G = 54°. KHI = ... ؛ GKH = ... ؛ HIG = ...",
+      "figureDesc": "Trois figures : un losange ABCD avec angle A = 25° ; un triangle isocèle EFJ de sommet E avec angle 84° ; un trapèze HIGK (H et I en haut, K et G en bas) avec angle G = 54° et un petit arc marqué en I. Lignes de réponse en pointillés.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p018_i6"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنجز القسمات الإقليدية والمتساويات التالية :",
+      "body": "قسمة 8526 على 42 ؛ قسمة 18399 على 65. كل قسمة تُنجز في إطار به خانات فارغة (المطروحات والبواقي والخارج). ثم تُكتب المتساوية D = (d × q) + r لكل قسمة.",
+      "figureDesc": "Deux cadres de divisions posées avec cases vides à remplir : 8526 ÷ 42 et 18399 ÷ 65 ; sous chacun, un cadre avec D = (d × q) + r et une ligne en pointillés.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p018_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "مسألة: أراد عامل أن يوزع 1432 علبة حليب صغيرة سعة كل واحدة 1L على شكل علب كبيرة تضم كل واحدة 6 علب صغيرة.",
+      "body": "أ) ما هو أقصى عدد العلب الكبيرة التي يمكن للعامل تكوينها؟\nب) ما هو عدد العلب الصغيرة التي ستبقى؟\nج) أكتب على شكل متساوية. D = (d × q) + r ⟵ ............",
+      "figureDesc": "Deux dessins de grandes boîtes bleues contenant 6 petites boîtes chacune, avec la légende : علب كبيرة بكل واحدة 6 علب صغيرة من الحليب.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p018_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "قنينة زيت على شكل أسطوانة قائمة، ارتفاعها h =13,16cm وقطرها D= 22cm.",
+      "body": "أ) أحسب حجم القنينة.\nب) ما هو الحجم التقريبي الذي سيكتب على غلاف القنينة (أحط الجواب الصحيح)؟ 5L / 2L / 1L / 0,5L",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p018_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "قام محسن بصنع موشور قائم ذو قاعدة خماسية كما في الشكل أسفله.",
+      "body": "أ) أحسب المساحة الكلية للموشور القائم.\nب) أحسب حجم الموشور القائم.\nج) كم يمثل 1/3 ثلث حجم الموشور القائم بـ cm³ ثم بـ cl.",
+      "figureDesc": "Prisme droit à base pentagonale : N = 5 cm, M = 6 cm, B = 45 cm² (aire de la base), h = 8 cm (hauteur), h1 = 5 cm. Partie supérieure en bleu, faces latérales en jaune.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mouayen_6eme_math_francais_p018_i4",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أحسب قياس الزوايا التالية :",
+      "body": "المعين: ABCD، الزاوية A = 25°. BCD = ... ؛ ABC = ... ؛ ADC = ...\nمثلث متساوي الساقين: EFJ، الزاوية E = 84°. EFJ = ... ؛ FJE = ...\nشبه منحرف: HIGK، الزاوية G = 54°. KHI = ... ؛ GKH = ... ؛ HIG = ...",
+      "figureDesc": "Trois figures : un losange ABCD avec angle A = 25° ; un triangle isocèle EFJ de sommet E avec angle 84° ; un trapèze rectangle HIGK avec angle G = 54°. Lignes de réponse en pointillés.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mouayen_6eme_math_francais_p018_i5",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

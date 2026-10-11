@@ -1,0 +1,63 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 114,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Le plaisir de lire : « La ruse du jaguar » (Lire et s'exprimer)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "La ruse du jaguar\n\nPrès du village au bord du fleuve vit un jaguar très rusé. Quand un problème survient dans la grande forêt, on fait toujours appel à lui. Il arrange les histoires de famille et, en contrepartie, se fait payer un bon prix.\n\nTous les animaux des environs, le tapir, le tamanoir, le paresseux, le singe, le perroquet, et même le serpent ont eu affaire à lui. Sa réputation a même atteint les oreilles des hommes.\n\nUn jour alors qu'il dort tranquillement sous une belle branche d'arbre, Talokoé, le chef du village au bord du fleuve vient le trouver :\n- Bonjour, jaguar !\n- Bonjour, maître des hommes !\n- Jaguar, mon ami, je viens te voir car depuis trois jours et trois nuits, mon fils Alima refuse obstinément de se nourrir.\n- Grrr ! Grogne le jaguar. C'est pour un caprice d'enfant que tu troubles ma sieste ?\n- C'est qu'il est déjà très affaibli, je crains le pire.\n- Dis ce que tu attends de moi !\n- Toi seul par ta ruse peux lui rendre l'appétit. Viens donc demain midi. Je te paierai un bon prix.\n\nToute la nuit, le jaguar réfléchit au moyen de forcer le petit homme à retrouver le goût de manger. À force de penser et de penser encore, il finit par avoir une idée. Aux aurores, il se tapit sur une branche au-dessus de la rivière et attend. Il se dit : « C'est la première fois que je travaille pour un homme ! Mon salaire vaudra sûrement son pesant d'or… »\n\nUn singe passe par là. Le jaguar lui saute dessus et l'assomme d'un bon coup de patte. À midi, il apporte son gibier au village. Il entre dans la case de Talokoé et s'adresse en ces mots à son fils :\n- Alima, fils d'homme, si tu manges ce singe, tu deviendras aussi agile que lui !",
+      "figureDesc": "En-tête décoratif avec les mentions « Sagesse », « 6ème année de base », titre « Les évaluations » et encadré « Le plaisir de lire ». Pied de page : « Lire et s'exprimer », page 113. Le texte de la page suivante est visible en transparence au verso.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p114_i1",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.3
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de lecture (« Le plaisir de lire : La ruse du jaguar », Lire et s'exprimer) en français, mais le texte narratif sur des animaux ne correspond clairement à aucun module précis, d'autant que les évaluations couvrent plusieurs modules.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Lecture d'un conte animalier",
+    "skill": "Lire un conte et en comprendre le déroulement pour répondre à des questions et s'exprimer à l'oral ou à l'écrit.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "conte",
+      "jaguar",
+      "ruse",
+      "compréhension de lecture",
+      "animaux",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un conte animalier où un personnage rusé résout les conflits contre rémunération, pour travailler la compréhension, le caractère des personnages et la production d'une suite ou d'une morale.",
+    "themeGroup": "Contes et récits légendaires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,146 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 77,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الساعة والدقيقة (الأسبوع 20) : lecture de l'heure sur une horloge, écriture en heures et minutes, format 24 h, durées",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب السّاعة تحت كلّ منبّه كما في المثال :",
+      "body": "أربعة منبّهات، وتحت كل منبّه جدول فيه سطران: «صباحا … س» و«مساء … س». المثال (المنبّه الأول من اليمين): صباحا: 3 س، مساء: 15 س.",
+      "figureDesc": "أربع ساعات حائطية. الأولى (من اليمين): العقرب الصغير على 3 والكبير على 12، أي الساعة 3، وهي المثال. الثانية: الصغير على 10 والكبير على 12، أي الساعة 10. الثالثة: الصغير على 6 والكبير على 12، أي الساعة 6. الرابعة: الصغير على 8 والكبير على 12، أي الساعة 8. تحت كل ساعة جدول من خانتين: صباحا / مساء.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p077_i1",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ وأكتب كما في المثال :",
+      "body": "المثال: الساعة 8 و 15 دق مساء ← 20 : 15. الساعات الأخرى: «الساعة ..... و ..... دق» داخل إطار «:» فارغ. الأخيرة: «الساعة ..... و ..... دق ليلا» وإطارها «:».",
+      "figureDesc": "أربع ساعات. الأولى (المثال): 8 و15 دقيقة (الصغير قرب 8 والكبير على 3). الثانية: الصغير على 9 والكبير على 6، أي 9 و30 دقيقة. الثالثة: الصغير قرب 1 والكبير على 6، أي 1 و30 دقيقة. الرابعة: العقربان على 12. تحت كل ساعة إطار للساعة الرقمية.",
+      "answer": "20 : 15 (للمثال فقط)",
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_corriges_p077_i2",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "المدّة اللازمة لوصول القطار من تونس العاصمة إلى صفاقس 3 ساعات ونصف",
+      "body": "إذا خرج القطار من صفاقس في السّاعة ...... : منتصف النهار والنصف، يصل إلى العاصمة في السّاعة ...... ؛ الواحدة والربع، يصل إلى العاصمة في السّاعة ...... ؛ الخامسة و 30 دق ، يصل إلى العاصمة في السّاعة ......",
+      "figureDesc": "ثلاثة أسطر مع أسهم تجمعها نحو عبارة «إذا خرج القطار من صفاقس في السّاعة»، وفي نهاية كل سطر نقاط للإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p077_i3",
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ارسم عَقْرَبَيِ السّاعة التي تدلّ على وقت وصول سامي إلى المدرسة.",
+      "body": "نظر سامي إلى ساعته عند خروجه من المنزل فوجد السّاعة تشير إلى السّابعة و 5 دق صباحا ومشى مدّة ربع ساعة. ارسم عَقْرَبَيِ السّاعة التي تدلّ على وقت وصول سامي إلى المدرسة.",
+      "figureDesc": "ساعتان: الأولى (يمين) تبيّن السابعة و5 دقائق، والثانية (يسار) بدون عقربين ليرسمهما التلميذ.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p077_i4",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-p6",
+  "topicTitle": "Période 6 : Mesure du temps, capacités, masses et synthèse",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-ch2",
+    "confidence": 0.15
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la lecture de l'heure, l'écriture en heures et minutes, le format 24 h et le calcul de durées, ce qui relève de la mesure du temps (Période 6).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Lecture de l'heure et durées",
+    "skill": "Lire l'heure sur une horloge, l'écrire en heures et minutes (formats 12 h et 24 h) et calculer une heure d'arrivée à partir d'une durée.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "probleme",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "heure",
+      "minutes",
+      "format 24 h",
+      "durée",
+      "horloge",
+      "aiguilles"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : réveils avec double lecture matin/après-midi, conversion en affichage numérique 24 h, horaires de train avec durée de trajet, et tracé des aiguilles pour une heure d'arrivée à l'école après un trajet à pied.",
+    "themeGroup": "Temps et calendrier"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 1, exemple : l'image montre «3 س» (matin) et «15 س» (soir), ce qui est correct. Mais la transcription ne précise pas que les trois autres tableaux sont vides, et ne décrit pas les horloges (8h, 10h, 12h)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 1 : le titre de la page «الأسبوع 20 / الساعة والدقيقة» et le numéro de page 73 sont absents de la transcription."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : «الساعة» est écrit parfois avec shadda (السّاعة) alors que l'image montre «الساعة» ou «السّاعة» de façon incohérente ; «العاصمة» sans voyelles, ce qui est correct. Légère incohérence du tashkeel."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2 : la première horloge de l'exemple et les horloges à compléter ne sont pas décrites. Le texte «الساعة 8 و 15 دق مساء» est correct, mais la ligne finale «ليلا» est bien présente."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 1 : les descriptions «أربعة منبّهات … سطران» sont des ajouts descriptifs, pas du texte de l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 4 : seule la dernière phrase est reprise comme question ; la consigne est répétée. Les deux horloges (une avec aiguilles à 7h05, une vide) ne sont pas mentionnées."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 3 : la phrase «إذا خرج القطار من صفاقس في الساعة» est placée avant les options, alors que dans l'image elle est à droite de l'accolade ; l'ordre est acceptable pour l'arabe."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

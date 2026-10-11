@@ -1,0 +1,270 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 43,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقييم: التعليمة 13 (تمثيل مبلغ بالقطع النقدية) والتعليمة 14 (أشكال هندسية حسب عدد الأضلاع) وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "التَّعْلِيمَةُ 13 : أَمْثِلُ الْمَبْلَغَ الْمُتَبَقِّي بِالْقِطَعِ النَّقْدِيَّةِ الْمُنَاسِبَةِ.",
+      "body": "",
+      "figureDesc": "إطار مستطيل بزوايا مدورة يحتوي على ثلاث دوائر فارغة تمثل القطع النقدية. على الهامش الأيسر العلامة 1، وعلى الهامش الأيمن «معـ3» ومربع صغير للتنقيط.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p043_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "8",
+      "instruction": "السَّنَدُ 8 :",
+      "body": "فِي مَدْخَلِ مَدِينَةِ الْجَمِّ مُفْتَرَقُ طُرُقٍ فِي طَوْرِ الْإِنْشَاءِ مُتَكَوِّنٌ مِنْ أَشْكَالٍ مُخْتَلِفَةٍ.",
+      "figureDesc": "على الهامش الأيسر بجانب السند ثلاث علامات: 0,5 / 0,5 / 0,5.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p043_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "التَّعْلِيمَةُ 14 : أَذْكُرُ نَوْعَ كُلِّ شَكْلٍ حَسَبَ عَدَدِ أَضْلَاعِهِ.",
+      "body": "",
+      "figureDesc": "إطار بزوايا مدورة يحتوي على ثلاثة أشكال هندسية: خماسي (مضلع بخمسة أضلاع برأس بارز جهة اليمين)، معين (رباعي)، ومثلث. تحت كل شكل سطر منقط للإجابة. على الهامش الأيسر العلامات 1 و1 و1، وعلى الهامش الأيمن «معـ4» وثلاثة مربعات تنقيط.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p043_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "جدول يربط مستويات التملك (انعدام التملك، التملك دون الأدنى، التملك الأدنى، التملك الأقصى) بالمعايير: معايير الحد الأدنى (مع1، مع2 أ، مع2 ب، مع2 ج، مع3، مع4)، معيار التميز (مع5). انعدام التملك: 0 في كل الخانات. التملك دون الأدنى: 0,5 (مع1، مع2 أ، مع2 ب، مع2 ج)، 1 (مع3، مع4). التملك الأدنى: 1 (مع1، مع2 أ، مع2 ب، مع2 ج)، 2 (مع3، مع4). التملك الأقصى: 1,5 (مع1، مع2 أ، مع2 ب، مع2 ج)، 3 (مع3، مع4). معيار التميز مع5: 0، 1، 2، 3، 4. الرياضيات: …/16، الحساب الذهني: …/4، المجموع: …/20.",
+      "figureDesc": "جدول إسناد الأعداد في أسفل الصفحة مع الأعمدة: المعايير/مستويات التملك، معايير الحد الأدنى، معيار التميز، الرياضيات، الحساب الذهني. رقم الصفحة 42.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p043_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p3",
+    "confidence": 0.26
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation (grille d'attribution des notes avec critères mp1 à mp5) qui mêle monnaie (représenter un montant avec des pièces) et figures géométriques selon le nombre de côtés, donc plusieurs chapitres (p2, p3) sans correspondance claire à un seul.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie et figures géométriques",
+    "skill": "Représenter une somme avec les pièces de monnaie adaptées et classer des figures selon leur nombre de côtés.",
+    "pageType": "mixed",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "monnaie",
+      "pièces",
+      "reste",
+      "polygones",
+      "nombre de côtés",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : la situation d'un carrefour en construction à l'entrée d'une ville, composé de formes variées à nommer d'après leur nombre de côtés, et la consigne de représenter un reste d'argent avec des pièces ; la grille de notation par critères est utile pour concevoir une évaluation.",
+    "themeGroup": "Géométrie : figures et lignes"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans l'image, « أَمْثِلُ » porte un sukun sur le ميم (أَمْثِلُ) ; la transcription écrit « أُمَثِّلُ » (damma sur الهمزة, fatha et shadda), ce qui est faux."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الْمَبْلَغَ » : l'image montre « الْمَبْلَغَ » avec fatha final, ce qui est conforme ; mais « الْجَمِّ » dans l'image est « الْجَمِّ », conforme. Aucune erreur supplémentaire notable."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« مُتَكَوِّنٌ » et « مُخْتَلِفَةٍ » : l'image montre « مُتَكَوِّنٌ » et « مُخْتَلِفَةٍ », conformes. « الْإِنْشَاءِ » est correct."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Les en-têtes « التعليمة » (التَّعْلِيمَةُ 13 / 14) sont omis ; la transcription n'indique que [13] et [14]."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les points attribués dans la marge (1 ; 0,5 / 0,5 / 0,5 ; 1 / 1 / 1) et les cases de notation (مع3, مع4) ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les trois cercles de l'exercice 13 et les trois figures (pentagone, losange, triangle) avec les lignes pointillées de réponse ne sont pas décrits."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Tableau : « التملك دون الأدنى » vaut 1 pour مع3 et مع4 ; « التملك الأدنى » vaut 2 pour مع3 et مع4 ; « التملك الأقصى » 3 : conforme. Le « المجموع …/20 » est correct. Les valeurs de مع5 (0 à 4) sont alignées sur les lignes, conforme."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans la consigne 13, l'image porte « أَمْثِلُ » (fatha sur la hamza, sukun sur le ميم). La transcription « أُمَثِّلُ » (damma, fatha, shadda) est fausse."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes « التَّعْلِيمَةُ 13 : » et « التَّعْلِيمَةُ 14 : » visibles dans l'image sont absents des champs instruction. Le « السَّنَدُ 8 : » est, lui, bien transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans la marge, les barèmes 0,5 / 0,5 / 0,5 situés entre le سند 8 et la consigne 14 ne sont pas décrits proprement. La figureDesc de l'exercice 14 les mêle aux 1/1/1. La forme « خماسي مائل شبيه بالمنزل » est aussi approximative : c'est un pentagone avec une pointe à droite."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "التَّعْلِيمَةُ 13 : أَمْثِلُ الْمَبْلَغَ الْمُتَبَقِّي بِالْقِطَعِ النَّقْدِيَّةِ الْمُنَاسِبَةِ.",
+      "body": "",
+      "figureDesc": "إطار مستطيل بزوايا مدورة يحتوي على ثلاث دوائر فارغة تمثل القطع النقدية. على الهامش الأيسر العلامة 1، وعلى الهامش الأيمن «معـ3» ومربع صغير للتنقيط.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "8",
+      "instruction": "السَّنَدُ 8 :",
+      "body": "فِي مَدْخَلِ مَدِينَةِ الْجَمِّ مُفْتَرَقُ طُرُقٍ فِي طَوْرِ الْإِنْشَاءِ مُتَكَوِّنٌ مِنْ أَشْكَالٍ مُخْتَلِفَةٍ.",
+      "figureDesc": "على الهامش الأيسر بجانب السند ثلاث علامات: 0,5 / 0,5 / 0,5.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "التَّعْلِيمَةُ 14 : أَذْكُرُ نَوْعَ كُلِّ شَكْلٍ حَسَبَ عَدَدِ أَضْلَاعِهِ.",
+      "body": "",
+      "figureDesc": "إطار بزوايا مدورة يحتوي على ثلاثة أشكال هندسية: خماسي (مضلع بخمسة أضلاع برأس بارز جهة اليمين)، معين (رباعي)، ومثلث. تحت كل شكل سطر منقط للإجابة. على الهامش الأيسر العلامات 1 و1 و1، وعلى الهامش الأيمن «معـ4» وثلاثة مربعات تنقيط.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "جدول يربط مستويات التملك (انعدام التملك، التملك دون الأدنى، التملك الأدنى، التملك الأقصى) بالمعايير: معايير الحد الأدنى (مع1، مع2 أ، مع2 ب، مع2 ج، مع3، مع4)، معيار التميز (مع5). انعدام التملك: 0 في كل الخانات. التملك دون الأدنى: 0,5 (مع1، مع2 أ، مع2 ب، مع2 ج)، 1 (مع3، مع4). التملك الأدنى: 1 (مع1، مع2 أ، مع2 ب، مع2 ج)، 2 (مع3، مع4). التملك الأقصى: 1,5 (مع1، مع2 أ، مع2 ب، مع2 ج)، 3 (مع3، مع4). معيار التميز مع5: 0، 1، 2، 3، 4. الرياضيات: …/16، الحساب الذهني: …/4، المجموع: …/20.",
+      "figureDesc": "جدول إسناد الأعداد في أسفل الصفحة مع الأعمدة: المعايير/مستويات التملك، معايير الحد الأدنى، معيار التميز، الرياضيات، الحساب الذهني. رقم الصفحة 42.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "أُمَثِّلُ الْمَبْلَغَ الْمُتَبَقِّي بِالْقِطَعِ النَّقْدِيَّةِ الْمُنَاسِبَةِ.",
+      "body": "",
+      "figureDesc": "إطار مستطيل بزوايا مدورة يحتوي على ثلاث دوائر فارغة تمثل القطع النقدية. على الجانب مربع صغير للتنقيط بجانب «معـ3»، والعلامة 1 على اليسار.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "8",
+      "instruction": "السَّنَدُ 8 :",
+      "body": "فِي مَدْخَلِ مَدِينَةِ الْجَمِّ مُفْتَرَقُ طُرُقٍ فِي طَوْرِ الْإِنْشَاءِ مُتَكَوِّنٌ مِنْ أَشْكَالٍ مُخْتَلِفَةٍ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "أَذْكُرُ نَوْعَ كُلِّ شَكْلٍ حَسَبَ عَدَدِ أَضْلَاعِهِ.",
+      "body": "",
+      "figureDesc": "ثلاثة أشكال هندسية: خماسي (شكل يشبه المنزل مائل)، معين (رباعي)، ومثلث. تحت كل شكل سطر منقط للإجابة. على الجانب ثلاثة مربعات تنقيط بجانب «معـ4»، والعلامات 1 و1 و1 على اليسار (0,5 / 0,5 / 0,5 مرتبطة بالسند).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "جدول يربط مستويات التملك (انعدام التملك، التملك دون الأدنى، التملك الأدنى، التملك الأقصى) بالمعايير: معايير الحد الأدنى (مع1، مع2 أ، مع2 ب، مع2 ج، مع3، مع4)، معيار التميز (مع5). انعدام التملك: 0 في كل الخانات. التملك دون الأدنى: 0,5 (مع1، مع2 أ، مع2 ب، مع2 ج)، 1 (مع3، مع4). التملك الأدنى: 1 (مع1، مع2 أ، مع2 ب، مع2 ج)، 2 (مع3، مع4). التملك الأقصى: 1,5 (مع1، مع2 أ، مع2 ب، مع2 ج)، 3 (مع3، مع4). معيار التميز مع5: 0، 1، 2، 3، 4. الرياضيات: …/16، الحساب الذهني: …/4، المجموع: …/20.",
+      "figureDesc": "جدول إسناد الأعداد في أسفل الصفحة مع الأعمدة: المعايير/مستويات التملك، معايير الحد الأدنى، معيار التميز، الرياضيات، الحساب الذهني. رقم الصفحة 42.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p043_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

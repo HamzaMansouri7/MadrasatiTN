@@ -1,0 +1,108 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 71,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "Examen du 1er trimestre N°3 – Écriture et dictée (3ème année) : écriture cursive (je continue) et dictée (j'écoute et j'écris). Remarque : la page est en français et en écriture latine, sans texte arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Je continue :",
+      "body": "• domdom\n• cercer\n• ulul",
+      "figureDesc": "Cadre à lignage Seyès (écriture cursive) contenant trois modèles en écriture cursive latine : domdom, cercer, ulul. L'élève doit continuer l'écriture de chaque modèle sur les lignes. À droite, deux cases de notation à trois cases : C2 et C7.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p071_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "J'écoute et j'écris :",
+      "body": "Deux lignes pointillées pour écrire la dictée. Le texte de la dictée n'est pas imprimé (il est dicté par l'enseignant).",
+      "figureDesc": "Deux lignes en pointillés. À droite, deux cases de notation à trois cases : C4 et C7.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p071_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Tableau d'attribution des notes (écriture) – note : ..../4",
+      "body": "Niveau de maîtrise | Critère minimal C2 | Critère de perfectionnement C7\nAucune maîtrise : 0 | C7 : de 0 à 1 (cellule fusionnée)\nMaîtrise minimale insuffisante : de 0,5 à 1,5\nMaîtrise minimale : 2\nMaîtrise maximale : de 2,5 à 3 | C7 : ....",
+      "figureDesc": "Tableau de barème avec colonnes Niveau de maîtrise, Critère minimal (C2) et Critère de perfectionnement (C7), et quatre niveaux de maîtrise.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p071_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Tableau d'attribution des notes (dictée) – note : ..../4",
+      "body": "Niveau de maîtrise | Critère minimal C4 | Critère de perfectionnement C7\nAucune maîtrise : 0 | C7 : de 0 à 1 (cellule fusionnée)\nMaîtrise minimale insuffisante : 1\nMaîtrise minimale : 2\nMaîtrise maximale : 3 | C7 : ....",
+      "figureDesc": "Tableau de barème avec colonnes Niveau de maîtrise, Critère minimal (C4) et Critère de perfectionnement (C7), et quatre niveaux de maîtrise.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p071_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u7",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u8",
+    "confidence": 0.37
+  },
+  "topicSubject": "Français (écriture et dictée)",
+  "topicReason": "La page est une évaluation de français (écriture cursive et dictée) du 1er trimestre, et aucun chapitre officiel de la liste ne concerne le français, qui n'y figure pas, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Écriture cursive et dictée",
+    "skill": "Reproduire des syllabes en écriture cursive et écrire sous dictée un court texte en respectant l'orthographe et la présentation.",
+    "pageType": "exam",
+    "formats": [
+      "dictee",
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "écriture cursive",
+      "dictée",
+      "examen trimestriel",
+      "grille de notation",
+      "3ème année"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Réutilisable surtout pour le modèle d'évaluation : exercice de continuation de syllabes en cursive, dictée sur lignes pointillées et grilles de notation par critères (minimal et perfectionnement) ; le contenu lui-même est très limité.",
+    "themeGroup": "Écriture et dictée"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

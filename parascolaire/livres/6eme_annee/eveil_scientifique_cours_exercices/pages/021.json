@@ -1,0 +1,184 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 21,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "التغذية: المجموعات الغذائية ودورها في الجسم، والطاقة التي تمدّ بها الأغذية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اشرح ، لماذا لا يستطيع الإنسان أن يعيش عندما يتناول دائما نفس الغذاء كالخبز أو الشكولاطة ؟",
+      "body": "...........................................................................................................................\n...........................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "eveil_scientifique_cours_exercices_p021_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ضع العلامة (×) أمام العبارة الصحيحة :",
+      "body": "أ) مجموعة الخبز تساعد الجسم على الحركة والعمل. [ ]\nب) مجموعة الدهنيات تساعد الجسم على النمو. [ ]\nج) مجموعة الحليب تساعد الجسم على النمو. [ ]\nد) مجموعة الفواكه والخضروات تحمي الجسم من الأمراض. [ ]\nهـ) الفيتامينات مواد توجد في الطّعام بكمّيّات قليلة وتساعد على وقاية الجسم من الأمراض. [ ]",
+      "figureDesc": null,
+      "answer": null,
+      "id": "eveil_scientifique_cours_exercices_p021_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) لَاحِظِ الْمَعْلُومَاتِ الْوَارِدَةَ بِالْجَدْوَلِ ثُمَّ أَذْكُرِ الْغِذَاءَ الَّذِي يَمُدُّ الْجِسْمَ بِأَكْثَرِ طَاقَةٍ ؟\nب) مَاذَا تَسْتَنْتِجُ مِنَ الْمَعْلُومَاتِ الْوَارِدَةِ بِهَذَا الْجَدْوَلِ ؟",
+      "body": "| الغذاء | المدة الزمنية المخصصة لاحتراق هذه الأغذية بالدقائق: أثناء راحة تامة | المدة الزمنية المخصصة لاحتراق هذه الأغذية بالدقائق: في حالة مشي | المدة الزمنية المخصصة لاحتراق هذه الأغذية بالدقائق: في حالة عدو |\n| :--- | :--- | :--- | :--- |\n| عصير | 85 | 22 | 11 |\n| قطعة من البيتزا | 142 | 36 | 18 |\n| قطعة من المرطبات | 450 | 116 | 58 |\n| لمجة | 254 | 66 | 33 |\n\nأ) ...........................................................................................................................\nب) ...........................................................................................................................\n\nهل تعلمُ أنَّ الموادَّ الدّهنيّةَ تُعْطِي طاقةً أَكْثَرَ من المواد النّشويّةِ.",
+      "figureDesc": "جدول يوضح المدة الزمنية بالدقائق اللازمة لاحتراق أربعة أصناف من الأغذية (عصير، قطعة بيتزا، قطعة مرطبات، لمجة/ساندويتش) أثناء راحة تامة، وفي حالة مشي، وفي حالة عدو مع رسوم توضيحية لكل صنف غذائي.",
+      "answer": null,
+      "id": "eveil_scientifique_cours_exercices_p021_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.88
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des groupes d'aliments, de leur rôle dans le corps, des vitamines et de l'énergie apportée par les aliments, soit la nutrition équilibrée de l'unité 3 d'Éveil Scientifique (système circulatoire, nutrition, immunité).",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Groupes d'aliments et énergie",
+    "skill": "Relier les groupes d'aliments à leur rôle dans le corps et comparer l'énergie fournie par différents aliments à partir d'un tableau.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite",
+      "vrai_faux",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "alimentation équilibrée",
+      "groupes d'aliments",
+      "vitamines",
+      "énergie",
+      "matières grasses",
+      "santé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : demander pourquoi un régime monotone (pain ou chocolat seul) est impossible, associer chaque groupe d'aliments à son rôle (croissance, mouvement, protection), et interpréter un tableau de valeurs énergétiques avec un encadré « Le savais-tu ? » sur les graisses.",
+    "themeGroup": "Les groupes d'aliments et l'alimentation équilibrée"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de l'exercice 4 est absent de la transcription : en-têtes (الغذاء، المدّة الزمنية المخصّصة لاحتراق هذه الأغذية بالدقائق، أثناء راحة تامة، في حالة مشي، في حالة عدو) et lignes : عصير 85/22/11 ; قطعة من البيتزا 142/36/18 ; قطعة من المرطبات 450/116/58 ; لمجة 254/66/33."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases à cocher de l'exercice 3 (cinq carrés devant les propositions) ne sont pas signalées."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de réponse de l'exercice 4 (pointillés pour أ et pour ب) ne sont pas indiquées."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 4 : la question أ) apparaît d'abord sans voyelles, puis de nouveau avec voyelles ; la première version est un doublon. L'exercice 2 est aussi dupliqué (énoncé répété deux fois)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 4 : « لأُحظْ » est faux ; l'image porte « لأحِظ / لأُلاحِظ » avec la graphie « لأحظ ». La version vocalisée « لأُحظْ » ne correspond pas au texte visible (voyelles inventées)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« يُمِدُّ » dans la version vocalisée : l'image montre « يَمُدُّ » (le verbe est مَدَّ، يَمُدُّ), et non « يُمِدُّ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les voyelles visibles dans l'image sur « النموّ » (3.ب, 3.ج), « الدّهنيات », « الصّحيحة », « الموادّ » ne sont pas toutes reproduites de façon cohérente ; la transcription varie entre versions avec et sans tashkeel."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans le cadre « هل تعلم », « النشويّة » est écrit avec des voyelles partielles ; l'image donne « النَّشَوِيَّة », et « تُعطي » doit être « تُعْطِي »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 53 et les numéros d'exercices en étoiles ne sont pas tous indiqués (le 53 est absent)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اشرح ، لماذا لا يستطيع الإنسان أن يعيش عندما يتناول دائما نفس الغذاء كالخبز أو الشكولاطة ؟",
+      "body": "اشرح ، لماذا لا يستطيع الإنسان أن يعيش عندما يتناول دائما نفس الغذاء كالخبز أو الشكولاطة ؟ (سطر فارغ للإجابة)",
+      "figureDesc": "سطر منقّط للإجابة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "al_mounir_eveil_scientifique_6eme_p021_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ضع العلامة (×) أمام العبارة الصحيحة :",
+      "body": "أ) مجموعة الخبز تساعد الجسم على الحركة والعمل.\nب) مجموعة الدهنيات تساعد الجسم على النمو.\nج) مجموعة الحليب تساعد الجسم على النمو.\nد) مجموعة الفواكه والخضروات تحمي الجسم من الأمراض.\nهـ) الفيتامينات مواد توجد في الطعام بكميات قليلة وتساعد على وقاية الجسم من الأمراض.",
+      "figureDesc": "خمس خانات فارغة للتأشير، واحدة أمام كل عبارة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "al_mounir_eveil_scientifique_6eme_p021_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) لأحظ المعلومات الواردة بالجدول ثم أذكر الغذاء الذي يمدّ الجسم بأكثر طاقة ؟",
+      "body": "أ) لأُحظْ الْمَعْلُومَاتِ الْوَارِدَةَ بِالْجَدْوَلِ ثُمَّ أَذْكُرِ الْغِذَاءَ الَّذِي يُمِدُّ الْجِسْمَ بِأَكْثَرِ طَاقَةٍ ؟\nب) مَاذَا تَسْتَنْتِجُ مِنَ الْمَعْلُومَاتِ الْوَارِدَةِ بِهَذَا الْجَدْوَلِ ؟\nإطار: هل تعلم أنّ الموادّ الدهنيّة تُعطي طاقةً أكثرَ من الموادّ النشويّة.",
+      "figureDesc": "جدول: المدة الزمنية المخصصة لاحتراق هذه الأغذية بالدقائق، حسب الحالة (أثناء راحة تامة / في حالة مشي / في حالة عدو). عصير: 85 / 22 / 11. قطعة من البيزا: 142 / 36 / 18. قطعة من المرطبات: 450 / 116 / 58. لمجة (ساندويتش): 254 / 66 / 33. سطران منقطان للإجابة عن كل سؤال.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p021_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "linkStatus": "clean",
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

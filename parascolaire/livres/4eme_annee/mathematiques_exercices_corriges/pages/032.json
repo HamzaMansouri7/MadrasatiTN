@@ -1,0 +1,91 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 32,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 7 – المسائل (1) : تحديد المعطيات الزائدة والناقصة وترتيب الأسئلة الفرعية في المسألة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "هل يمكنك أن تجيب عن هذا السّؤال؟ لماذا؟",
+      "body": "قصدت فاطمة المكتبة ومعها ورقة مـاليّة ذات 10 دنــانير. اشتـرت 3 قصص ثمن الواحدة 1 300 مي وحافظة أقلام. ما هو المبلغ المتبقي؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p032_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أ) قبل أن تُجيب عن السّؤال، اكتب المعلومات الموجودة في المسألة والتي لا تفيدك في الإجابة. ب) أجب عن السّؤال",
+      "body": "الحافلة التي تربط قابس بالعاصمة تستهلك 15 لترا من الوقـود في كلّ 100 كيلومتر. انطلقت هذه الحافلة من قابس وعلى متنها 30 مسافرا وفي أوّل توقّف لها بصفاقس نزل منها 15 مسافرا ثمّ انطلقت وعلى متنها 61 مسافرا. – ما هو عدد المسافرين الّذين ركبوا من محطّة صفاقس؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p032_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "– اقرإ الأسئلة الآتية واكتب أرقام التي لا يمكنك الإجابة عنها ثمّ رتّب الأخرى وأجب عنها.",
+      "body": "باع طفل ريفي بيضا بـ 1650 مي وأرنبا بضعف ثمن البيض ، ثمّ اشترى قاموسا وكرّاسَيْن من نفس النّوع وعاد إلى المنزل ومعه 150 مي. كان يملك قبل بيع البيض والأرنب 270 مي.\n1) ما هو ثمن المشتريات ؟\n2) ما هو ثمن القاموس؟\n3) ما هو ثمن بيع الأرنب؟\n4) ما هو المبلغ الذي قبضه الطفل؟",
+      "figureDesc": "إطار مستدير الحواف يحتوي على تعليمة الأسئلة الفرعية",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p032_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.16
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de résolution de problèmes (données superflues/manquantes, ordre des questions) avec monnaie en dinars et millimes, ce qui correspond le mieux à la Période 1 (nombres, droites et monnaie), mais le thème des problèmes n'est pas spécifique à un seul chapitre.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    116
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes : données superflues et manquantes",
+    "skill": "Repérer les données inutiles ou manquantes dans un problème et ordonner les questions intermédiaires pour le résoudre.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme"
+    ],
+    "keywords": [
+      "problème",
+      "données superflues",
+      "données manquantes",
+      "questions intermédiaires",
+      "monnaie",
+      "opérations"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Trois situations de la vie courante (achats à la librairie, trajet d'autobus, vente et achats d'un enfant) servent à travailler l'analyse d'un énoncé : repérer ce qui manque, écarter l'information inutile et ordonner des sous-questions avant de calculer.",
+    "themeGroup": "Problèmes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

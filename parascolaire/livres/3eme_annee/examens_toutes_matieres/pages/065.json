@@ -1,0 +1,143 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 65,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "Production écrite (français) : construire une phrase à partir d'étiquettes et d'un dessin (Séquences 4, 5 et 6), avec le tableau d'attribution des notes (C1, C3, C7). Remarque : la page est en français, pas en arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Séquence 4 : maintenant, bruno est dans sa chambre. que fait-il, avant de dormir ? 4- je regarde le dessin et je fais une phrase avec les étiquettes :",
+      "body": "Étiquettes : . , avant dormir de lit bruno livre un → (deux lignes pointillées pour écrire la phrase). Critères : C1, C3, C7.",
+      "figureDesc": "Dessin en noir et blanc : un garçon assis dans son lit lit un livre, avec une lampe de chevet à côté. À droite, grille de notation C1 (3 cases), C3 (3 cases), C7 (1 case).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p065_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Séquence 5 : que fait amélie avant de dormir ? 5- je regarde le dessin et je fais une phrase avec les étiquettes :",
+      "body": "Étiquettes : avant embrasse de . dormir ses amélie parents , → (deux lignes pointillées pour écrire la phrase). Critères : C1, C3, C7.",
+      "figureDesc": "Dessin : une fillette embrasse son père assis sur un canapé à côté de sa mère. Grille de notation C1, C3, C7. Filigrane « MOURAJAA.COM » sur la page.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p065_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Séquence 6 : la petite nadine est encore dans la cuisine. que fait-elle ? 6- je regarde le dessin et je fais une phrase avec les étiquettes :",
+      "body": "Étiquettes : boit du nadine lait . → (deux lignes pointillées pour écrire la phrase). Critères : C1, C3, C7.",
+      "figureDesc": "Dessin : une fillette assise à une table boit du lait, avec un carton de lait à côté. Grille de notation C1, C3, C7.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p065_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Tableau d'attribution des notes",
+      "body": "Colonnes : Niveau de maîtrise | Critères minimaux (C1, C3) | Critère de perfectionnement (C7). Aucune maîtrise : C1 = 0, C3 = 0, C7 = 0 à 3. Maîtrise minimale insuffisante : C1 = de 0,5 à 1,5, C3 = de 0,5 à 1,5. Maîtrise minimale : C1 = 3, C3 = 4. Maîtrise maximale : C1 = de 3,5 à 4,5 (partiellement coupé), C3 = de 3,5 à 4,5 ; la ligne est coupée en bas de la page, avec « …. » dans la colonne C7.",
+      "figureDesc": "Tableau de notation, coupé en bas de la page. La cellule C7 (0 à 3) est fusionnée sur plusieurs lignes.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "examens_toutes_matieres_p065_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u3",
+    "confidence": 0.24
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une production écrite en français (construire une phrase à partir d'étiquettes, avec grille de notation C1, C3, C7), alors que la liste officielle ne contient aucun chapitre de français : seuls l'arabe, les mathématiques et l'éveil scientifique y figurent.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Construire une phrase avec étiquettes",
+    "skill": "Remettre des mots dans l'ordre pour écrire une phrase correcte à partir d'un dessin, avec majuscule et ponctuation.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "production écrite",
+      "phrase",
+      "étiquettes",
+      "ordre des mots",
+      "routine du coucher",
+      "grille d'évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le format « dessin + mots mélangés à remettre en ordre » avec des scènes de la vie quotidienne (routine du soir, cuisine) se réutilise facilement, tout comme la grille de notation par critères (C1, C3, C7) qui accompagne chaque exercice.",
+    "themeGroup": "Construction de phrases"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Séquence 6 : l'étiquette «boit» est partiellement coupée dans l'image (« poit »), la transcription la restitue correctement ; pas d'erreur réelle."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane « MOURAJAA.COM » superposé à la séquence 5 n'est pas mentionné (négligeable)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes de ponctuation sont rendues par « . , » mais leur ordre exact n'est pas précisé ; en séquence 4 le point et la virgule sont placés en premier, ce qui est correct."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Séquence 5 : l'étiquette « . » est placée entre « de » et « dormir » ; l'ordre est correct, mais « dormir » est partiellement recouvert par le filigrane."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases de notation (3 cases pour C1, 3 pour C3, 1 pour C7) ne sont pas décrites ; seuls les libellés le sont."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Tableau : la ligne « Maîtrise maximale » est coupée ; la valeur C1 « de 3,5 à 4,5 » est supposée, l'image montre « de 3,5 à 4,5 » en partie. La colonne C7 est fusionnée « 0 à 3 » pour les trois premières lignes, ce qui est correctement indiqué seulement en partie."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

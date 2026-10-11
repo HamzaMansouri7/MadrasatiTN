@@ -1,0 +1,116 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 66,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "مسائل حسابية: الأقساط، مساحة المستطيل (الغرفة والبلاط)، الثمن والأجرة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "احْسُبِ الْمَبْلَغَ الْمُقَرَّرَ لِكُلِّ قِسْطٍ؟",
+      "body": "اِحْسُبِ الْمَبْلَغَ الْمُقَرَّرَ لِكُلِّ قِسْطٍ؟ (تتمة سؤال من الصفحة السابقة، مع أسطر منقطة للإجابة)",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p066_i1",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "احْسُبْ بِالْمِتْرِ عَرْضَ الْغُرْفَةِ إِذَا كَانَ طُولُهَا 8 م؟",
+      "body": "يَمْلِكُ طَاهِرٌ 1000 د فَقَرَّرَ تَبْلِيطَ إِحْدَى الْغُرَفِ فَاسْتَعْمَلَ 840 جَلِيزَةً مُرَبَّعَةً قِيسُ ضِلْعِ كُلِّ وَاحِدَةٍ 25 صم.",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p066_i2",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "ثَمَنُ الْجَلِيزِ 625,800 د. احْسُبْ ثَمَنَ جَلِيزَةٍ وَاحِدَةٍ.",
+      "body": "– ثَمَنُ الْجَلِيزِ 625,800 د. احْسُبْ ثَمَنَ جَلِيزَةٍ وَاحِدَةٍ.",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p066_i3",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "احْسُبْ ثَمَنَ أُجْرَةِ الْيَدِ الْعَامِلَةِ.",
+      "body": "أُجْرَةُ الْيَدِ الْعَامِلَةِ 6,500 د لِلْمِتْرِ الْمُرَبَّعِ الْوَاحِدِ. احْسُبْ ثَمَنَ أُجْرَةِ الْيَدِ الْعَامِلَةِ.",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p066_i4",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اِطْرَحْ سُؤَالًا مِنِ اقْتِرَاحِكَ وَأَجِبْ عَنْهُ.",
+      "body": "اِطْرَحْ سُؤَالًا مِنِ اقْتِرَاحِكَ وَأَجِبْ عَنْهُ.",
+      "figureDesc": "ثلاثة أسطر منقطة للكتابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p066_i5",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p6",
+  "topicTitle": "Période 6 : Aires latérales/totales et synthèse",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p6",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une série de problèmes de mathématiques (mensualités, aire d'une pièce rectangulaire carrelée, prix et main-d'œuvre) qui relève de la synthèse et de la résolution de situations-problèmes, sans correspondre sans ambiguïté à un seul chapitre (décimaux, division, aires).",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes de pavage et prix",
+    "skill": "Résoudre un problème à étapes mêlant aire du rectangle, division du prix et calcul du coût de la main-d'œuvre.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "aire du rectangle",
+      "carrelage",
+      "prix unitaire",
+      "main-d'œuvre",
+      "paiement par tranches",
+      "monnaie (dinars)"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation concrète de rénovation d'une pièce : on retrouve la largeur à partir de l'aire totale des carreaux et de la longueur, puis le prix d'un carreau et le coût de la pose au m². L'exercice se termine par une question ouverte où l'élève invente sa propre question, ce qui est facile à transposer à d'autres contextes (peinture, parquet, jardin).",
+    "themeGroup": "Mesures d'aires et unités agraires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

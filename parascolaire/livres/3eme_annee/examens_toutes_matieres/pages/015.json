@@ -1,0 +1,261 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 15,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إسناد الأفعال الماضية إلى ضمائر الرفع المتصلة (تاء الفاعل، نا، ت التأنيث، ألف الاثنين، واو الجماعة) وإعادة كتابة فقرة مع الضمير (نحن) + الإملاء وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَقْرَأُ وَأَفْهَمُ ثُمَّ أُكْمِلُ كُلَّ فِعْلٍ بِمَا يُنَاسِبُ مِمَّا يَلِي : (ثُ) - (تَ) - (نَا) - (نَ) - (تِ)",
+      "body": "الْمُتَكَلِّمُ / الْجُمَلُ :\n- وَلَدٌ وَبِنْتٌ : رَتَّبَ .......... الصُّحُونَ.\n- بِنْتٌ : مَلَأَ .......... الْكُؤُوسَ مَاءً.\n- بِنْتَانِ وَوَلَدٌ : سَاعَدَ .......... الْأُمَّ فِي الْعَمَلِ.",
+      "figureDesc": "جدول من عمودين: المتكلم (ولد وبنت / بنت / بنتان وولد) والجمل ذات الفراغات. على اليسار علامات 0,5 لكل جملة ومربعات للتقييم (معيار 2 أ).",
+      "answer": null,
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p015_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُعِيدُ كِتَابَةَ الْفِقْرَةِ التَّالِيَةِ مَعَ الضَّمِيرِ (نَحْنُ).",
+      "body": "قُبَيْلَ شُرُوقِ الشَّمْسِ، قَصَدَ الْفَلَّاحُ الْحَقْلَ، وَلَمَّا وَصَلَ جَمَعَ الْغِلَالَ وَرَصَّفَهَا فِي الصَّنَادِيقِ ثُمَّ نَقَلَهَا إِلَى السُّوقِ لِيَبِيعَهَا.\n(نَحْنُ) قُبَيْلَ شُرُوقِ الشَّمْسِ ......",
+      "figureDesc": "ثلاثة أسطر منقطة للكتابة (معيار 2 ب).",
+      "answer": null,
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p015_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "إملاء",
+      "instruction": "يُمْلَى النَّصُّ عَلَى الْمُتَعَلِّمِ كَمَا وَرَدَ فِي الْإِصْلَاحِ (ص 3).",
+      "body": "تَنَاهَى إِلَى سَمْعِ [..........] صَوْتٌ طَالَمَا طَرَقَ سَمْعَهَا، فَتَرَكَتْ مَا بَيْنَ يَدَيْهَا وَغَدَتْ نَحْوَ مَصْدَرِهِ. وَلَمَّا بَلَغَتِ الْمَكَانَ وَجَدَتْ أُمَّهَا [..........] تَقِفُ فِي الرِّوَاقِ وَبِجَانِبِهَا [..........] [..........] الْمَظْهَرِ تُمْسِكُ [..........] [..........] مُغَلَّفَةً بِوَرَقٍ زَاهِي الْأَلْوَانِ.\nنَظَرَتِ الْبِنْتُ إِلَى الضَّيْفَةِ وَتَفَرَّسَتْ فِي مَلَامِحِهَا ثُمَّ أَطْلَقَتْ صَيْحَةً تُعَبِّرُ عَنْ شَدِيدِ فَرْحَتِهَا. إِنَّهَا صَدِيقَتُهَا [..........]. لَقَدِ افْتَرَقَتَا مُنْذُ زَمَنٍ بَعِيدٍ، حِينَ سَافَرَتْ هَذِهِ [..........] مَعَ وَالِدَيْهَا إِلَى بِلَادِ الْمَهْجَرِ. وَهَا هِيَ الْيَوْمَ تَعُودُ إِلَيْهَا بَعْدَ غِيَابِ سَنَوَاتٍ عَدِيدَةٍ.\nتَعَانَقَتِ الْبِنْتَانِ طَوِيلًا ثُمَّ جَلَسَتَا تَسْتَرْجِعَانِ ذِكْرَيَاتِ الْمَاضِي الْجَمِيلَةِ.",
+      "figureDesc": "نص إملاء به مربعات فارغة منقطة (كلمات محجوبة) وعلامات التنقيط 0,5 و2 على الهامش.",
+      "answer": null,
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p015_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ - الْإِمْلَاءُ",
+      "body": "الْإِمْلَاءُ: - الرَّسْمُ السَّلِيمُ لِلْعَنَاصِرِ اللُّغَوِيَّةِ : 8 - الْوُضُوحُ : 1 - الْجَمَالِيَّةُ : 1 - الْمَجْمُوعُ : 10 نِقَاط",
+      "figureDesc": "جدول إسناد الأعداد: المعايير (معيار الحد الأدنى: معـ1 أ، ب، ج، د؛ معـ2 أ؛ معـ2 ب) ومعيار التميز. مستويات التملك: انعدام التملك 0 في كل الخانات؛ التملك دون الأدنى 0,5 (وفي معـ2 ب: 0,5 وللتميز 1)؛ التملك الأدنى 1 (معـ2 ب: 1,5 وللتميز 2)؛ التملك الأقصى 1,5 (معـ2 ب: 2,5).",
+      "answer": null,
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p015_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-3-u1",
+  "topicTitle": "Unité 1 : Personnages et actions accomplies",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u8",
+    "confidence": 0.16
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la conjugaison des verbes accomplis (passé) avec les pronoms sujets attachés et la réécriture d'un paragraphe avec « nous », ce qui correspond à l'Unité 1 « Personnages et actions accomplies », même si le programme ne mentionne pas explicitement cette notion grammaticale.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison du passé avec pronoms sujets suffixes",
+    "skill": "Conjuguer des verbes au passé en leur attachant le pronom sujet suffixe correct, puis réécrire un paragraphe en passant à la 1re personne du pluriel (nous).",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "dictee",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "verbes au passé",
+      "pronoms suffixes",
+      "conjugaison arabe",
+      "réécriture avec « nous »",
+      "dictée",
+      "tableau de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : compléter des verbes selon des sujets décrits (enfants qui aident à la maison), réécrire un court récit de vie quotidienne (un agriculteur au marché) en changeant de pronom, et dictée à trous accompagnée d'une grille de notation sur 10 points.",
+    "themeGroup": "Conjugaison : le passé et les pronoms"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« الصَّنَادِيقِ » transcrit « الصَّنَادِيقِ »: l'image porte « الصَّنَادِيقِ » mais la transcription a « الصَّنَادِيقِ » ; en revanche « رَصَّفَهَا » est présent dans les deux (RAS). Erreur réelle : « الضَّيْفَةِ » correct, mais « الصُّحُونَ » est écrit « الصُّحُونَ » (OK)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans l'image « الْكُؤُوسَ » est écrit « الْكُوُوسَ » ; « مَاءً » correct ; « مَلَأَ » est « مَلَأ » sans voyelle finale visible : voyelles ajoutées par la transcription."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans le tableau, la colonne « الْمُتَكَلِّمُ » est à droite et « الْجُمَلُ » à gauche ; la transcription l'inverse pour la ligne d'en-tête. Ordre des mots dans le texte de dictée : « الْمَظْهَرِ » précède « تُمْسِكُ » et un cadre se trouve entre « تُمْسِكُ » et « مُغَلَّفَةً », mais l'ordre des cadres est différent dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les barèmes de notation (0,5 ; 0,5 ; 0,5 ; 2 ; 0,5) et le tableau « جَدْوَلُ إِسْنَادِ الْأَعْدَادِ » (valeurs 0 ; 0,5 ; 1 ; 1,5 ; 2 ; 2,5 ; critères معا1/معا2 أ/ب) sont absents ou non transcrits."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« الإجابة تبدأ بـ » et « réponse: None » ajoutés, ne figurent pas dans l'image. Filigrane « MOURAJAA.COM » ignoré."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre « إِمْلَاءٌ » est transcrit sans tanwin ; « الصَّنَادِيقِ » et « الْمَهْجَرِ » : vérifier la vocalisation."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 6 : la phrase « الإجابة تبدأ بـ: » n'existe pas dans l'image. Seul « (نَحْنُ) قُبَيْلَ شُرُوقِ الشَّمْسِ » suivi de lignes pointillées figure sur la page."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dictée, 3e ligne : dans l'image on lit, de droite à gauche, un cadre, « الْمَظْهَرِ », « تُمْسِكُ », deux cadres, puis « مُغَلَّفَةً ». Le cadre placé à la fin de la ligne 2 après « وَبِجَانِبِهَا » est suivi d'un autre cadre au début de la ligne 3. La transcription met un cadre entre « الْمَظْهَرِ » et « تُمْسِكُ » et un seul cadre avant « مُغَلَّفَةً » : l'emplacement des cadres est donc faux."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَقْرَأُ وَأَفْهَمُ ثُمَّ أُكْمِلُ كُلَّ فِعْلٍ بِمَا يُنَاسِبُ مِمَّا يَلِي : (ثُ) - (تَ) - (نَا) - (نَ) - (تِ)",
+      "body": "الْمُتَكَلِّمُ / الْجُمَلُ :\n- وَلَدٌ وَبِنْتٌ : رَتَّبَ .......... الصُّحُونَ.\n- بِنْتٌ : مَلَأَ .......... الْكُؤُوسَ مَاءً.\n- بِنْتَانِ وَوَلَدٌ : سَاعَدَ .......... الْأُمَّ فِي الْعَمَلِ.",
+      "figureDesc": "جدول من عمودين: المتكلم (ولد وبنت / بنت / بنتان وولد) والجمل ذات الفراغات. على اليسار علامات 0,5 لكل جملة ومربعات للتقييم (معيار 2 أ).",
+      "answer": null,
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p015_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُعِيدُ كِتَابَةَ الْفِقْرَةِ التَّالِيَةِ مَعَ الضَّمِيرِ (نَحْنُ).",
+      "body": "قُبَيْلَ شُرُوقِ الشَّمْسِ، قَصَدَ الْفَلَّاحُ الْحَقْلَ، وَلَمَّا وَصَلَ جَمَعَ الْغِلَالَ وَرَصَّفَهَا فِي الصَّنَادِيقِ ثُمَّ نَقَلَهَا إِلَى السُّوقِ لِيَبِيعَهَا.\n(نَحْنُ) قُبَيْلَ شُرُوقِ الشَّمْسِ ......",
+      "figureDesc": "ثلاثة أسطر منقطة للكتابة (معيار 2 ب).",
+      "answer": null,
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p015_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "إملاء",
+      "instruction": "يُمْلَى النَّصُّ عَلَى الْمُتَعَلِّمِ كَمَا وَرَدَ فِي الْإِصْلَاحِ (ص 3).",
+      "body": "تَنَاهَى إِلَى سَمْعِ [..........] صَوْتٌ طَالَمَا طَرَقَ سَمْعَهَا، فَتَرَكَتْ مَا بَيْنَ يَدَيْهَا وَغَدَتْ نَحْوَ مَصْدَرِهِ. وَلَمَّا بَلَغَتِ الْمَكَانَ وَجَدَتْ أُمَّهَا [..........] تَقِفُ فِي الرِّوَاقِ وَبِجَانِبِهَا [..........] [..........] الْمَظْهَرِ تُمْسِكُ [..........] [..........] مُغَلَّفَةً بِوَرَقٍ زَاهِي الْأَلْوَانِ.\nنَظَرَتِ الْبِنْتُ إِلَى الضَّيْفَةِ وَتَفَرَّسَتْ فِي مَلَامِحِهَا ثُمَّ أَطْلَقَتْ صَيْحَةً تُعَبِّرُ عَنْ شَدِيدِ فَرْحَتِهَا. إِنَّهَا صَدِيقَتُهَا [..........]. لَقَدِ افْتَرَقَتَا مُنْذُ زَمَنٍ بَعِيدٍ، حِينَ سَافَرَتْ هَذِهِ [..........] مَعَ وَالِدَيْهَا إِلَى بِلَادِ الْمَهْجَرِ. وَهَا هِيَ الْيَوْمَ تَعُودُ إِلَيْهَا بَعْدَ غِيَابِ سَنَوَاتٍ عَدِيدَةٍ.\nتَعَانَقَتِ الْبِنْتَانِ طَوِيلًا ثُمَّ جَلَسَتَا تَسْتَرْجِعَانِ ذِكْرَيَاتِ الْمَاضِي الْجَمِيلَةِ.",
+      "figureDesc": "نص إملاء به مربعات فارغة منقطة (كلمات محجوبة) وعلامات التنقيط 0,5 و2 على الهامش.",
+      "answer": null,
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p015_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ - الْإِمْلَاءُ",
+      "body": "الْإِمْلَاءُ: - الرَّسْمُ السَّلِيمُ لِلْعَنَاصِرِ اللُّغَوِيَّةِ : 8 - الْوُضُوحُ : 1 - الْجَمَالِيَّةُ : 1 - الْمَجْمُوعُ : 10 نِقَاط",
+      "figureDesc": "جدول إسناد الأعداد: المعايير (معيار الحد الأدنى: معـ1 أ، ب، ج، د؛ معـ2 أ؛ معـ2 ب) ومعيار التميز. مستويات التملك: انعدام التملك 0 في كل الخانات؛ التملك دون الأدنى 0,5 (وفي معـ2 ب: 0,5 وللتميز 1)؛ التملك الأدنى 1 (معـ2 ب: 1,5 وللتميز 2)؛ التملك الأقصى 1,5 (معـ2 ب: 2,5).",
+      "answer": null,
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p015_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَقْرَأُ وَأَفْهَمُ ثُمَّ أُكْمِلُ كُلَّ فِعْلٍ بِمَا يُنَاسِبُ مِمَّا يَلِي : (ثُ) - (تَ) - (نَا) - (نَ) - (تِ)",
+      "body": "الْمُتَكَلِّمُ / الْجُمَلُ :\n- وَلَدٌ وَبِنْتٌ : رَتَّبَ .......... الصُّحُونَ.\n- بِنْتٌ : مَلَأَ .......... الْكُؤُوسَ مَاءً.\n- بِنْتَانِ وَوَلَدٌ : سَاعَدَ .......... الْأُمَّ فِي الْعَمَلِ.",
+      "figureDesc": "جدول من عمودين: المتكلم (ولد وبنت / بنت / بنتان وولد) والجمل ذات الفراغات. على اليسار علامات 0,5 لكل جملة ومربعات للتقييم (معيار 2 أ).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_3eme_examens_p015_i1",
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُعِيدُ كِتَابَةَ الْفِقْرَةِ التَّالِيَةِ مَعَ الضَّمِيرِ (نَحْنُ).",
+      "body": "قُبَيْلَ شُرُوقِ الشَّمْسِ، قَصَدَ الْفَلَّاحُ الْحَقْلَ، وَلَمَّا وَصَلَ جَمَعَ الْغِلَالَ وَرَصَّفَهَا فِي الصَّنَادِيقِ ثُمَّ نَقَلَهَا إِلَى السُّوقِ لِيَبِيعَهَا.\nالإجابة تبدأ بـ: (نَحْنُ) قُبَيْلَ شُرُوقِ الشَّمْسِ ......",
+      "figureDesc": "ثلاثة أسطر منقطة للكتابة (معيار 2 ب).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_3eme_examens_p015_i2",
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "إملاء",
+      "instruction": "يُمْلَى النَّصُّ عَلَى الْمُتَعَلِّمِ كَمَا وَرَدَ فِي الْإِصْلَاحِ (ص 3).",
+      "body": "تَنَاهَى إِلَى سَمْعِ [..........] صَوْتٌ طَالَمَا طَرَقَ سَمْعَهَا، فَتَرَكَتْ مَا بَيْنَ يَدَيْهَا وَغَدَتْ نَحْوَ مَصْدَرِهِ. وَلَمَّا بَلَغَتِ الْمَكَانَ وَجَدَتْ أُمَّهَا [..........] تَقِفُ فِي الرِّوَاقِ وَبِجَانِبِهَا [..........] الْمَظْهَرِ [..........] تُمْسِكُ [..........] مُغَلَّفَةً بِوَرَقٍ زَاهِي الْأَلْوَانِ.\nنَظَرَتِ الْبِنْتُ إِلَى الضَّيْفَةِ وَتَفَرَّسَتْ فِي مَلَامِحِهَا ثُمَّ أَطْلَقَتْ صَيْحَةً تُعَبِّرُ عَنْ شَدِيدِ فَرْحَتِهَا. إِنَّهَا صَدِيقَتُهَا [..........]. لَقَدِ افْتَرَقَتَا مُنْذُ زَمَنٍ بَعِيدٍ، حِينَ سَافَرَتْ هَذِهِ [..........] مَعَ وَالِدَيْهَا إِلَى بِلَادِ الْمَهْجَرِ. وَهَا هِيَ الْيَوْمَ تَعُودُ إِلَيْهَا بَعْدَ غِيَابِ سَنَوَاتٍ عَدِيدَةٍ.\nتَعَانَقَتِ الْبِنْتَانِ طَوِيلًا ثُمَّ جَلَسَتَا تَسْتَرْجِعَانِ ذِكْرَيَاتِ الْمَاضِي الْجَمِيلَةِ.",
+      "figureDesc": "نص إملاء به مربعات فارغة منقطة (كلمات محجوبة) وعلامات التنقيط 0,5 و2 على الهامش.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "jisr_ennajah_3eme_examens_p015_i3",
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ - الْإِمْلَاءُ",
+      "body": "الْإِمْلَاءُ: - الرَّسْمُ السَّلِيمُ لِلْعَنَاصِرِ اللُّغَوِيَّةِ : 8 - الْوُضُوحُ : 1 - الْجَمَالِيَّةُ : 1 - الْمَجْمُوعُ : 10 نِقَاط",
+      "figureDesc": "جدول إسناد الأعداد: المعايير (معيار الحد الأدنى: معـ1 أ، ب، ج، د؛ معـ2 أ؛ معـ2 ب) ومعيار التميز. مستويات التملك: انعدام التملك 0 في كل الخانات؛ التملك دون الأدنى 0,5 (وفي معـ2 ب: 0,5 وللتميز 1)؛ التملك الأدنى 1 (معـ2 ب: 1,5 وللتميز 2)؛ التملك الأقصى 1,5 (معـ2 ب: 2,5).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_3eme_examens_p015_i4",
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

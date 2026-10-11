@@ -1,0 +1,133 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 66,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "التَّدْرِيبُ عَلَى حَلِّ الْمَسَائِلِ (الأعداد: العشرات والآحاد، ترتيب الأعداد تصاعديًا)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "السَّنَدُ 1",
+      "instruction": "",
+      "body": "شَارَكْتُ فِي رِحْلَةٍ نَظَّمَتْهَا مَدْرَسَتُنَا، فَزُرْنَا مُتْحَف بَاردُو وَفِي مَرْبَضِ السَّيَّارَاتِ لَاحَظْتُ سَيَّارَاتٍ مُتَنَوِّعَةً.",
+      "figureDesc": "عنوان الصفحة: الرِّيَاضِيَّاتُ - التَّدْرِيبُ عَلَى حَلِّ الْمَسَائِلِ. السند 1 نص قصير عن رحلة مدرسية إلى متحف باردو.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p066_i1",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَكْتُبُ الْعَدَدَ الْمُنَاسِبَ لِكُلِّ مَجْمُوعَةٍ فِي جَدْوَلِ الْمَنَازِلِ.",
+      "body": "ثلاث مجموعات من المركبات، لكل واحدة جدول منازل (عَشَرَاتٌ | آحَادٌ) فارغ يُملأ بنقاط.",
+      "figureDesc": "المجموعة 1: سيارات صفراء صغيرة مرتبة في 4 صفوف × 3 أعمدة (12 سيارة) مع جدول عشرات/آحاد فارغ. المجموعة 2: حافلات صفراء مرتبة في 4 صفوف × 4 أعمدة (16 حافلة) مع جدول عشرات/آحاد فارغ. المجموعة 3: شاحنات زرقاء صغيرة: 5 في الصف الأول و4 في الثاني و4 في الثالث (13 شاحنة) مع جدول عشرات/آحاد فارغ.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_maths_arabe_p066_i2",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ تَصَاعُدِيًّا.",
+      "body": "سطر منقّط للكتابة (الأعداد المراد ترتيبها هي الناتجة عن التعليمة 1).",
+      "figureDesc": "سطر منقّط فارغ في أسفل الصفحة. رقم الصفحة 90، جسر النجاح - الثلاثي الثاني (السنة 1).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_maths_arabe_p066_i3",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-1-p4",
+  "topicTitle": "Période 4 : Nombres de 11 à 19, tables d'addition et soustraction",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p4",
+    "confidence": 0.39
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les tableaux de numération (dizaines | unités) et le rangement de nombres par ordre croissant, ce qui correspond à la Période 4 (nombres de 11 à 19, dizaines et unités) ; l'ordre croissant est aussi abordé en Période 2 et les nombres à deux chiffres en Période 5, d'où une certaine ambiguïté.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Dizaines et unités, ordre croissant",
+    "skill": "Écrire un nombre dans un tableau de numération (dizaines/unités) à partir d'une collection d'objets, puis ranger des nombres dans l'ordre croissant.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul"
+    ],
+    "keywords": [
+      "dizaines",
+      "unités",
+      "tableau de numération",
+      "ordre croissant",
+      "dénombrement",
+      "sortie scolaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation de sortie scolaire (musée, parking de véhicules) sert de support au dénombrement par groupements de dix, avec un tableau dizaines/unités à compléter. Les nombres obtenus sont ensuite réutilisés dans un exercice de rangement, ce qui crée un enchaînement entre les consignes.",
+    "themeGroup": "Dizaines et groupements"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre de la page est absent : «الرِّيَاضِيَّاتُ» et «التَّدْرِيبُ عَلَى حَلِّ الْمَسَائِلِ»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«مُتْحَف بَاردُو» : les voyelles visibles sont omises ou erronées. L'image porte «مُتْحَفَ بَارْدُو» (le texte a «بَاردُو» sans sukun sur le ر)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«أُرَتِّبُ» : l'image porte «أُرَتِّبُ» avec un shadda, ce qui est correct. «تَصَاعُدِيًّا» : l'image porte «تَصَاعُدِيًّا», ce qui est correct, mais la lecture «تَصَاعُدِيّاً» reste possible."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes «السَّنَدُ 1 :» et «التَّعْلِيمَةُ 1 / 2» sont notées «[1]» et «[2]» au lieu de leur libellé exact."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "«يُملأ بنقاط» et «لكل واحدة جدول منازل» sont des descriptions inventées. Il n'y a que deux colonnes (عَشَرَاتٌ | آحَادٌ) avec des pointillés. Le texte omet aussi qu'il y a trois collections : 16 bus, 12 voitures jaunes et 13 camionnettes bleues."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : numéro de page 90, «جسر النجاح - الثلاثي الثاني (السنة 1)», «الرِّيَاضِيَّاتُ»."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Pour la consigne 2, «الأعداد الناتجة عن التعليمة 1» est une interprétation. L'image montre seulement un espace pointillé."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

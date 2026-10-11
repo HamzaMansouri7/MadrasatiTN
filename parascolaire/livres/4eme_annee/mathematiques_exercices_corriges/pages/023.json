@@ -1,0 +1,103 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 23,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 5 – المستقيم وأجزاؤه (5): نصف المستقيم",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أرسمِ النُّقَطَ \"أ\" ، \"ب\" ، \"ج\" علمًا بِأَنَّ :",
+      "body": "- \"ب\" هِيَ نُقْطَةُ تَقَاطُعِ المُسْتَقِيمَيْنِ (م) و (ص).\n- \"أ\" هي نُقْطَةُ تَقَاطُعِ المُسْتَقِيمَيْنِ (ل) و (ص).\n- \"ج\" هي نُقْطَةُ تَقَاطُعِ المُسْتَقِيمَيْنِ (ل) و (م).",
+      "figureDesc": "Trois droites (م) و (ل) و (ص): (م) et (ل) sont obliques et se croisent en haut, (ص) est une droite horizontale en bas qui coupe les deux. Les points ne sont pas encore marqués.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p023_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ماهي نقطة تقاطعِ المستقيمينْ (أ ب ) و ( ب ج) ؟",
+      "body": "- ما هي نقطة تقاطع المستقيمين (ب ج) و (أ ج) ؟\n- ما هي نقطة تقاطع المستقيمين (أ ب) و (أ ج) ؟",
+      "figureDesc": "Une droite horizontale contenant les points ب (à gauche) et أ (à droite), coupée par deux droites obliques qui se croisent en ج en dessous (forme de triangle avec côtés prolongés).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p023_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "عمِّر الجدول بوضع العلامة (X) في التربيعة المناسبة :",
+      "body": "جدول: تنتمي إلى | (ص) | (م) ، الأسطر: أ ، ب ، ج ، هـ ، د",
+      "figureDesc": "Deux droites (م) et (ص) sécantes au point أ. Le point ب est sur (ص) à gauche, هـ sur (م) en haut à droite, د sur (ص) en bas à droite, ج en dehors des droites à droite. Tableau de 5 lignes (أ، ب، ج، هـ، د) et colonnes (ص) و (م), vide.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p023_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرسم تقاطع (أ د) مع المستقيمين (ب هـ) و ( ب د ) .\nأرسُمْ تقاطعَ (أ ج) مع المستقيمين (ب هـ) و (ب د)",
+      "body": "",
+      "figureDesc": "Cinq points marqués par des croix: أ (en haut au centre), ب (à droite), هـ (à gauche), د (en bas à gauche), ج (en bas au centre).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p023_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.51
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les droites, leurs points d'intersection et la demi-droite, ce qui relève de la Période 1 (nombres, droites et monnaie), en Mathématiques, 4ème année.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    114
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Droites sécantes et points d'intersection",
+    "skill": "Identifier et construire le point d'intersection de deux droites, et situer des points par rapport à des droites données.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "droite",
+      "demi-droite",
+      "intersection",
+      "points",
+      "géométrie",
+      "tableau d'appartenance"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série progressive d'exercices de géométrie : construire des points à partir de l'intersection de droites, nommer l'intersection de droites passant par des points, cocher l'appartenance de points à des droites dans un tableau, puis tracer des intersections de droites avec d'autres droites.",
+    "themeGroup": "Droites, points et segments"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

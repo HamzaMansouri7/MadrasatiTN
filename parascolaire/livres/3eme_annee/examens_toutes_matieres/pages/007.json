@@ -1,0 +1,215 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 7,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "فهم المنطوق/المقروء: الأب الذي يحلم بمنزل جديد – أسئلة فهم النص (المعيار 2) وإبداء الرأي في أفراد الأسرة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَذْكُرْ ثَلَاثَةَ أَوْصَافٍ لِلْمَنْزِلِ الَّذِي يَحْلُمُ بِهِ الْأَبُ.",
+      "body": "صِفَةٌ 1 : ...............\nصِفَةٌ 2 : ...............\nصِفَةٌ 3 : ...............",
+      "figureDesc": "ثلاثة أسطر منقطة للإجابة، مع مربعات التقييم (معـ2ب) على الهامش",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p007_i1",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 - أ",
+      "instruction": "هَلْ أَعْجَبَتْ فِكْرَةُ الْأَبِ أَفْرَادَ الْأُسْرَةِ ؟",
+      "body": "الْجَوَابُ : ...............",
+      "figureDesc": "سطران منقطان للإجابة (معـ2ج)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p007_i2",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 - ب",
+      "instruction": "دَعِّمْ جَوَابَكَ بِقَرِينَةٍ مِنَ النَّصِّ.",
+      "body": "الْقَرِينَةُ : « ............... »",
+      "figureDesc": "سطر منقط للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p007_i3",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 - ج",
+      "instruction": "يَرَى الْأَبُ أَنَّ هَذَا الْأَمْرَ صَعْبُ التَّحْقِيقِ. دَعِّمْ هَذَا الْقَوْلَ بِقَرِينَةٍ مِنَ النَّصِّ.",
+      "body": "الْقَرِينَةُ : « ............... »",
+      "figureDesc": "سطر منقط للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p007_i4",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4 - أ",
+      "instruction": "أَشْرَحُ مَا تَحْتَهُ سَطْرٌ.",
+      "body": "• أَبِيعُ مَصُوغِي :\n• أَبِيعُ مَنَابِي مِنْ مِيرَاثِ أَبِي :",
+      "figureDesc": "العبارتان «مَصُوغِي» و«مَنَابِي» تحتهما سطر؛ مربعات التقييم (معـ2د)",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p007_i5",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4 - ب",
+      "instruction": "أَبْحَثُ فِي النَّصِّ عَنْ مُفْرَدَةٍ مَعْنَاهَا : غَيْرُ ضَرُورِيٍّ.",
+      "body": "الْمُفْرَدَةُ : ...............",
+      "figureDesc": "إطار بيضاوي منقط لكتابة المفردة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p007_i6",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "بَعْدَ أَنْ تَدَاوَلَ أَفْرَادُ الْأُسْرَةِ الرَّأْيَ قَرَّرُوا أَنْ يُشَارِكُوا جَمِيعًا فِي هَذَا الْمَشْرُوعِ. أَذْكُرْ طَرِيقَةَ مُشَارَكَةِ كُلِّ طَرَفٍ مِنَ الْأَطْرَافِ الْمَذْكُورَةِ فِي الْجَدْوَلِ.",
+      "body": "الْأُمُّ : ...............\nالْأَوْلَادُ : ...............\nكَرِيمَةُ : ...............",
+      "figureDesc": "جدول من عمودين وثلاثة أسطر: الأطراف (الأم، الأولاد، كريمة) والإجابة منقطة (معـ2م)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p007_i7",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مَا رَأْيُكَ فِي أَفْرَادِ هَذِهِ الْأُسْرَةِ ؟",
+      "body": "............... (ثلاثة أسطر منقطة)",
+      "figureDesc": "ثلاثة أسطر منقطة للإجابة (معـ3)",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examens_toutes_matieres_p007_i8",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "جدول إسناد الأعداد (شبكة التقييم) في أسفل الصفحة، غير مقروء بوضوح لأنه مموّه/مشوّش.",
+      "figureDesc": "جدول تقييم مشوّش في أسفل الصفحة؛ علامة مائية MOURAJAA.COM على الصفحة",
+      "answer": null,
+      "confidence": 0.3,
+      "id": "examens_toutes_matieres_p007_i9",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-3-u4",
+  "topicTitle": "Unité 4 : Collecte d'indices et justification",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-3-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u4",
+    "confidence": 0.54
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une compréhension de texte en arabe dont les questions demandent surtout de relever des indices textuels (« دعّم جوابك بقرينة من النص ») pour justifier, avec aussi une question d'opinion finale (U6) et du vocabulaire, d'où une confiance modérée.",
+  "linkFlags": [
+    "low_ocr_confidence",
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de l'oral et de l'écrit",
+    "skill": "Répondre à des questions de compréhension d'un texte narratif, justifier par un indice du texte, chercher un synonyme et donner son opinion sur les personnages.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "indice textuel",
+      "vocabulaire",
+      "opinion",
+      "famille",
+      "projet de maison"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation familiale de projet commun (achat d'un logement) où chaque membre contribue à sa façon, avec une progression de questions: relever des informations, justifier par un indice, expliquer des expressions, chercher un synonyme, puis donner son avis.",
+    "themeGroup": "Compréhension de l'oral"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Question 3-ب : l'image porte «ب / دَعْمْ جَوَابَكَ» (دَعِّمْ vocalisé différemment) ; la transcription est acceptable, mais «جَوَابَكَ» est écrit «جَوَابَكَ» alors que l'image montre «جَوَابَكَ» : pas d'erreur réelle, à ignorer."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الْأَبُ» dans la question 2 : l'image montre «الْأَبِ» (après «بِهِ»), et non «الْأَبُ» : la bonne valeur est «الْأَبِ»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«مَنَابِي» : l'image montre «مَنَابِي» avec «مَنَابِي مِنْ مِيرَاثِ أَبِي» ; correct. En revanche «أَبِيعُ مَصُوغِي» est correct, mais le mot souligné n'est pas signalé (soulignement non transcrit)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les marqueurs de compétence en marge (مع2ب، مع2ج، مع2د، مع2م، مع3) et les cases à cocher ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau de la question 5 (الأم / الأولاد / كريمة) est transcrit comme liste et non comme tableau ; le filigrane MOURAJAA.COM est omis."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الْأُسْرَةِ» : l'image montre «الْأَسْرَةِ» (fatha sur la hamza) ; la transcription a une damma."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 3-ج : l'image dit «صَعْبُ التَّحْقِيقِ», conforme ; mais «الْأَمْرَ» est correct. Pas d'erreur."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

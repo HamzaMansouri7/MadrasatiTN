@@ -1,0 +1,108 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 3,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني - قراءة وفهم - عدد 1 (نص: مُصْطَفَى مَرِيضٌ)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أَقْرَأُ النَّصَّ :",
+      "body": "دَقَّتِ السَّاعَةُ السَّابِعَةُ وَالنِّصْفَ، وَمُصْطَفَى لَا يَزَالُ نَائِمًا. تَحَيَّرَتِ الأُمُّ، وَاتَّجَهَتْ لِتُوقِظَهُ، وَمَا أَنْ دَنَتْ مِنْ غُرْفَتِهِ حَتَّى سَمِعَتْهُ يَسْعُلُ وَيَعْطِسُ.\nجَزِعَتِ الأُمُّ وَدَخَلَتِ الغُرْفَةَ بِسُرْعَةٍ، فَوَجَدَتْهُ مُصْفَرَّ الْوَجْهِ، مُحْمَرَّ الْأُذُنَيْنِ، مُنْتَفِخَ الْعَيْنَيْنِ، وَهُوَ يَئِنُّ. اِقْتَرَبَتْ مِنْهُ وَوَضَعَتْ يَدَهَا عَلَى جَبْهَتِهِ فَوَجَدَتْ حَرَارَتَهُ مُرْتَفِعَةً. فَقَالَتْ : «إِنَّكَ مَرِيضٌ يَا بُنَيَّ، وَلَكِنْ لَا تَخَفْ، سَأَدْعُو الطَّبِيبَ لِيَنْظُرَ مَا بِكَ.»\nقَدِمَ الطَّبِيبُ، وَفَحَصَ مُصْطَفَى : فَجَسَّ نَبْضَهُ، وَنَظَرَ دَاخِلَ فَمِهِ وَحَلْقِهِ، وَنَقَرَ عَلَى ظَهْرِهِ، وَاسْتَمَعَ إِلَى دَقَّاتِ قَلْبِهِ. وَلَمَّا انْتَهَى مِنَ الْكَشْفِ، سَأَلَ مُصْطَفَى قَائِلًا : « هَلْ غَيَّرْتَ مَلَابِسَكَ وَالنَّافِذَةُ مَفْتُوحَةٌ ؟» فَأَجَابَ مُصْطَفَى بِحَرَكَةٍ مِنْ رَأْسِهِ تَدُلُّ عَلَى الْمُوَافَقَةِ. عِنْدَهَا حَرَّرَ الطَّبِيبُ وَصْفَةَ دَوَاءٍ سَلَّمَهَا إِلَى الأُمِّ، وَطَمْأَنَهَا بِأَنَّ حَالَةَ ابْنِهَا لَيْسَتْ بِالْخَطِيرَةِ...",
+      "figureDesc": "رسم أبيض وأسود: طبيب بمعطف أبيض وسماعة يفحص بطن طفل مستلقٍ على السرير، بجانبه مصباح؛ الطفل يبدو متعبًا وفمه مفتوح.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p003_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَضَعُ الْعَلَامَةَ (x) أَمَامَ الْجُمْلَةِ الْمُنَاسِبَةِ لِلنَّصِّ :",
+      "body": "لَمْ يَسْتَيْقِظْ مُصْطَفَى بَاكِرًا\n- لِأَنَّهُ سَهِرَ كَثِيرًا.\n- لِأَنَّهُ لَا يُرِيدُ الذَّهَابَ إِلَى الْمَدْرَسَةِ.\n- لِأَنَّهُ مَرِيضٌ.\n(معيار: معـ2أ — النقاط المسندة: 1)",
+      "figureDesc": "ثلاث دوائر فارغة للاختيار أمام الجمل الثلاث، ومربع تقييم للمعيار.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p003_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَسْتَخْرِجُ الْجُمْلَةَ الْمُؤَيِّدَةَ لِإِجَابَتِي، وَأَكْتُبُهَا.",
+      "body": "« ........................................ »\n(معيار: معـ2ب — النقاط المسندة: 1)",
+      "figureDesc": "سطران منقطان بين علامتي تنصيص ومربع تقييم.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p003_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ الْوَصْفَ الْمُنَاسِبَ لِلْعُضْوِ.",
+      "body": "- الْوَجْهُ : ..............\n(معيار: معـ2أ — النقاط المسندة: 1)",
+      "figureDesc": "سطر منقط ومربع تقييم.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p003_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u1",
+    "confidence": 0.27
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de trimestre 2 (compréhension de l'écrit, texte « Mustapha est malade ») qui n'est pas rattachée à un seul chapitre ; le thème de la santé relève de l'unité 3 (trimestre 1), mais l'épreuve couvre le trimestre 2, donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de texte : la maladie",
+    "skill": "Comprendre un court texte narratif, justifier sa réponse par une phrase du texte et relever une description précise.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "qcm"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "texte narratif",
+      "justification",
+      "évaluation trimestrielle",
+      "maladie",
+      "2ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une progression en trois questions (choisir la bonne cause, citer la phrase qui la prouve, relever une description liée à une partie du corps) à adapter à d'autres situations du quotidien comme un enfant malade ou un retard à l'école.",
+    "themeGroup": "Compréhension: la maladie"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

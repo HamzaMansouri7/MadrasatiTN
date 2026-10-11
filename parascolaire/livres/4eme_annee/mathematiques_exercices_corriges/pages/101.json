@@ -1,0 +1,262 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 101,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 27 – اختبار تقويمي للتثبيت والدعم (الأعداد حتى 999 999، مساحة المستطيل ومحيطه، القسمة والمسائل)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ما هو العدد المحصور بين 998 650 و 998 666 والذي يكون رقم المئات فيه ضعف رقم الآحاد البسيطة؟",
+      "body": "ما هو العدد المحصور بين 998 650 و 998 666 والذي يكون رقم المئات فيه ضعف رقم الآحاد البسيطة؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p101_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "عمّر الجدول بما يناسب :",
+      "body": "جدول من 3 أعمدة و3 أسطر. السطر الأول: العدد | 10 257 | 729 073. السطر الثاني: رقم عشرات الآلاف فيه | (خانة فارغة) | (خانة فارغة). السطر الثالث: عدد المئات به | (خانة فارغة) | (خانة فارغة).",
+      "figureDesc": "جدول من 3 أسطر و3 أعمدة: السطر الأول العدد (10 257 ، 729 073)، السطر الثاني رقم عشرات الآلاف فيه، السطر الثالث عدد المئات به؛ الخانات الفارغة مطلوب تعميرها.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p101_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ابحث عن قيس مساحة قاعة أفراح مستطيلة الشكل قيس محيطها بالمتر 110 وقيس عرضها بالمتر 25.",
+      "body": "ابحث عن قيس مساحة قاعة أفراح مستطيلة الشكل قيس محيطها بالمتر 110 وقيس عرضها بالمتر 25.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p101_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لفلاّح حقل أنتج له 225 كغ من التفّاح وزّعها على 9 صناديق. كم كيلوغراما من التفّاح يحوي الصّندوق الواحد؟ باع منها في السّوق الأسبوعيّة للقرية 3 صناديق بـ 18 د الصّندوق الواحد. وباع بقيّة الانتاج عند البقّال بـ 700 مي الكغ الواحد. - ما هي كتلة التفّاح المبيعة للبقّال؟ - كم قبض الفلاّح في الجملة؟",
+      "body": "لفلاّح حقل أنتج له 225 كغ من التفّاح وزّعها على 9 صناديق. كم كيلوغراما من التفّاح يحوي الصّندوق الواحد؟ باع منها في السّوق الأسبوعيّة للقرية 3 صناديق بـ 18 د الصّندوق الواحد. وباع بقيّة الانتاج عند البقّال بـ 700 مي الكغ الواحد. - ما هي كتلة التفّاح المبيعة للبقّال؟ - كم قبض الفلاّح في الجملة؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p101_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.35
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de la semaine 27 (consolidation et soutien) qui mélange nombres à 6 chiffres, périmètre et aire du rectangle, division et problèmes de masses et de monnaie, donc elle couvre plusieurs chapitres (ch1, ch2, ch3, p6) sans correspondre clairement à un seul.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    132
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Grands nombres, périmètre et aire du rectangle",
+    "skill": "Lire et décomposer des nombres jusqu'à 999 999, calculer l'aire d'un rectangle à partir de son périmètre, et résoudre un problème de partage et de prix en plusieurs étapes.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres jusqu'à 999 999",
+      "valeur des chiffres",
+      "aire du rectangle",
+      "périmètre",
+      "division",
+      "problème à étapes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : énigme numérique avec contraintes sur les chiffres dans un intervalle, tableau à compléter sur rang et nombre de centaines, aire d'une salle de fêtes déduite du périmètre et de la largeur, et problème de vente de pommes avec division, prix par caisse et prix au kilo.",
+    "themeGroup": "Grands nombres"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 2 : les cellules du tableau sont transcrites de façon incorrecte. Le tableau a 3 colonnes (العدد / 10 257 / 729 073), pas 'deux colonnes'. Les lignes 'رقم عشرات الآلاف فيه' et 'عدد المئات به' ont des cellules vides à remplir, et 'الآلاف' est écrit 'الالاف' sur l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 4 : le premier champ de transcription ne contient que les questions. L'énoncé (225 كغ، 9 صناديق، 3 صناديق بـ 18 د، 700 مي) est absent du premier champ, mais présent dans le second."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : 'المئات' dans l'image est écrit 'المثات' (forme du scan) ; sans gravité. Les nombres 998 650 et 998 666 sont corrects."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : 'ابحث عن قيس مساحة' est fidèle à l'image. La forme 'قاعة' est correcte. Pas d'erreur."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : tashkeel incohérent entre les deux champs (الفلاّح/التفاح sans shadda dans le premier, avec shadda dans le second). L'image montre 'الفلاّح', 'التفّاح', 'الصّندوق', 'البقّال'. Le premier champ omet les shaddas."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : 'باع منها' est écrit 'باع مُنها' sur l'image ; la transcription est acceptable. Le numéro de page (97), l'en-tête (اختبار تقويمي للتثبيت والدعم، الأسبوع 27) sont omis."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : le champ instruction omet les shaddas visibles sur l'image (التفّاح, الصّندوق), alors que le champ body les porte. Les deux champs sont incohérents. Le champ instruction ne contient aussi que les questions et pas l'énoncé complet."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "Exercice 2 : le champ body décrit mal le tableau (« les colonnes sont … les lignes sont : العدد … »). L'image montre 3 colonnes : l'étiquette de ligne, 10 257 et 729 073. La ligne d'en-tête est العدد | 10 257 | 729 073. Les deux lignes suivantes, « رقم عشرات الآلاف فيه » et « عدد المئات به », ont deux cellules vides chacune à remplir. figureDesc est correct (3 lignes et 3 colonnes). L'orthographe « الالاف » du scan est normalisée en « الآلاف », ce qui est acceptable."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ما هو العدد المحصور بين 998 650 و 998 666 والذي يكون رقم المئات فيه ضعف رقم الآحاد البسيطة؟",
+      "body": "ما هو العدد المحصور بين 998 650 و 998 666 والذي يكون رقم المئات فيه ضعف رقم الآحاد البسيطة؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p101_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "عمّر الجدول بما يناسب :",
+      "body": "جدول من 3 أعمدة و3 أسطر. السطر الأول: العدد | 10 257 | 729 073. السطر الثاني: رقم عشرات الآلاف فيه | (خانة فارغة) | (خانة فارغة). السطر الثالث: عدد المئات به | (خانة فارغة) | (خانة فارغة).",
+      "figureDesc": "جدول من 3 أسطر و3 أعمدة: السطر الأول العدد (10 257 ، 729 073)، السطر الثاني رقم عشرات الآلاف فيه، السطر الثالث عدد المئات به؛ الخانات الفارغة مطلوب تعميرها.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p101_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ابحث عن قيس مساحة قاعة أفراح مستطيلة الشكل قيس محيطها بالمتر 110 وقيس عرضها بالمتر 25.",
+      "body": "ابحث عن قيس مساحة قاعة أفراح مستطيلة الشكل قيس محيطها بالمتر 110 وقيس عرضها بالمتر 25.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p101_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لفلاّح حقل أنتج له 225 كغ من التفّاح وزّعها على 9 صناديق. كم كيلوغراما من التفّاح يحوي الصّندوق الواحد؟ باع منها في السّوق الأسبوعيّة للقرية 3 صناديق بـ 18 د الصّندوق الواحد. وباع بقيّة الانتاج عند البقّال بـ 700 مي الكغ الواحد. - ما هي كتلة التفّاح المبيعة للبقّال؟ - كم قبض الفلاّح في الجملة؟",
+      "body": "لفلاّح حقل أنتج له 225 كغ من التفّاح وزّعها على 9 صناديق. كم كيلوغراما من التفّاح يحوي الصّندوق الواحد؟ باع منها في السّوق الأسبوعيّة للقرية 3 صناديق بـ 18 د الصّندوق الواحد. وباع بقيّة الانتاج عند البقّال بـ 700 مي الكغ الواحد. - ما هي كتلة التفّاح المبيعة للبقّال؟ - كم قبض الفلاّح في الجملة؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p101_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ما هو العدد المحصور بين 998 650 و 998 666 والذي يكون رقم المئات فيه ضعف رقم الآحاد البسيطة؟",
+      "body": "ما هو العدد المحصور بين 998 650 و 998 666 والذي يكون رقم المئات فيه ضعف رقم الآحاد البسيطة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "math_solutions_4eme_sellami_p101_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "عمّر الجدول بما يناسب :",
+      "body": "الجدول: الأعمدة هي العدد 10 257 و 729 073. الصفوف: العدد، رقم عشرات الآلاف فيه، عدد المئات به.",
+      "figureDesc": "جدول من 3 أسطر و3 أعمدة: السطر الأول العدد (10 257 ، 729 073)، السطر الثاني رقم عشرات الآلاف فيه، السطر الثالث عدد المئات به؛ الخانات الفارغة مطلوب تعميرها.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "math_solutions_4eme_sellami_p101_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ابحث عن قيس مساحة قاعة أفراح مستطيلة الشكل قيس محيطها بالمتر 110 وقيس عرضها بالمتر 25.",
+      "body": "ابحث عن قيس مساحة قاعة أفراح مستطيلة الشكل قيس محيطها بالمتر 110 وقيس عرضها بالمتر 25.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "math_solutions_4eme_sellami_p101_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "كم كيلوغراما من التفاح يحوي الصندوق الواحد؟ ما هي كتلة التفاح المبيعة للبقّال؟ كم قبض الفلاّح في الجملة؟",
+      "body": "لفلاّح حقل أنتج له 225 كغ من التفّاح وزّعها على 9 صناديق. كم كيلوغراما من التفّاح يحوي الصّندوق الواحد؟ باع منها في السّوق الأسبوعيّة للقرية 3 صناديق بـ 18 د الصّندوق الواحد. وباع بقيّة الانتاج عند البقّال بـ 700 مي الكغ الواحد. - ما هي كتلة التفّاح المبيعة للبقّال؟ - كم قبض الفلاّح في الجملة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p101_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "linked",
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

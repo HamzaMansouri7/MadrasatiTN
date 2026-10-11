@@ -1,0 +1,161 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 70,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : les jeux du cirque romains et le carnaval de Rio",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Relie par une flèche:",
+      "body": "*Pour attirer le public, les organisateurs des jeux ● | ● offrent des places gratuites. | ● distribuent des cadeaux. | ● font de la publicité.",
+      "figureDesc": "Exercice d'appariement : la phrase de gauche est reliée par une flèche à l'une des trois propositions de droite.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p070_i1",
+      "topicId": "fr-6-m8",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Les Romains adorent les jeux du cirque. Relève, dans le texte, la phrase qui le montre :",
+      "body": "........................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p070_i2",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Qui participe aux combats ?",
+      "body": "Deux lignes de pointillés à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p070_i3",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Le public aime les champions. Que font les spectateurs ?",
+      "body": "Deux lignes de pointillés à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p070_i4",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Cherche, dans le texte, le synonyme des mots suivants :",
+      "body": "- Collée = ................................  - Bataille = ................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p070_i5",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Complète ce passage avec les mots de la liste :",
+      "body": "Liste : fête – carnaval – spectacle – Rio – samba – décorer\n\nLe carnaval de Rio\nQuelques jours plus tard, Conchita est à ...................... Le soir même, elle danse la ................... sur la plage Copacabana.\nRio se prépare à la ........................ en décorant ses rues.\nEnfin, le ......................... commence. Des milliers de gens se mettent à danser dans les rues.\nLa musique est très forte. Les plumes des plus beaux oiseaux ........................... les cheveux et les costumes des danseuses. Les uns sont déguisés en princes ou princesses, les autres en clowns.\nConchita refuse de dormir. Elle ne veut rien perdre de ce merveilleux ........................... Quand elle retournera chez-elle, elle racontera tout ce qu'elle a vu à sa famille.",
+      "figureDesc": "Liste de mots dans un cadre arrondi, puis texte à trous dans un cadre rectangulaire intitulé « Le carnaval de Rio ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p070_i6",
+      "topicId": "fr-6-m8",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m8",
+  "topicTitle": "Module 8 : Découvrir d'autres modes de vie",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.37
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français sur les jeux du cirque romains et le carnaval de Rio, qui correspond le mieux au Module 8 « Découvrir d'autres modes de vie » (cultures du monde), même si le thème des loisirs et fêtes pourrait aussi évoquer le Module 7.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture documentaire",
+    "skill": "Comprendre un texte documentaire en relevant des informations, des synonymes et en complétant un passage avec le vocabulaire adapté.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "jeux du cirque",
+      "carnaval de Rio",
+      "compréhension de texte",
+      "synonymes",
+      "vocabulaire",
+      "relevé d'informations"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Rapprocher deux fêtes populaires d'époques et de cultures différentes (Antiquité romaine et carnaval moderne) pour varier les questions: appariement, relevé de phrase, recherche de synonymes et texte à trous avec liste de mots.",
+    "themeGroup": "Textes documentaires"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page non transcrit : « Lecture - Compréhension », « Sagesse », « 6ème année de base »; pied de page « Lire et s'exprimer », numéro 69 absent."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 3 : la transcription met « ● » après « jeux » et une puce séparée pour chaque réponse. Dans l'image, la deuxième puce est collée à « distribuent » (« ●distribuent »), ce qui est négligeable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 8 : « chez-elle » est bien dans l'image, aucune erreur. La liste de mots est présentée comme « Liste : », alors que l'image la montre dans un encadré arrondi sans ce mot (ajout mineur)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les questions 5 et 6 sont résumées par « Deux lignes de pointillés à compléter » au lieu d'une transcription des pointillés (acceptable). Les pointillés de la question 4 sont indiqués comme une seule ligne, ce qui est correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,711 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 112,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "كراس الحلول: حساب (ص13)، نظام قيس (ص14)، هندسة (ص15)، اختبار تقويمي (ص16)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 13 - حساب) العددان هما:",
+      "body": "أ - 400 - 401\nب - 221 - 222 - 223\nج - 250 - 252\nد - 299 - 301 - 303",
+      "figureDesc": "",
+      "answer": "أ) 400 - 401 ؛ ب) 221 - 222 - 223 ؛ ج) 250 - 252 ؛ د) 299 - 301 - 303",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 13 - حساب) جدول عدد الطوابق وعدد المربعات الملوّنة، الاستنتاج",
+      "body": "عدد الطوابق: 5، 6، 7، 8، 9، 10\nعدد المربّعات الملوّنة: 15، 21، 28، 36، 45، 55\nالاستنتاج:\n(6 x 5) : 2 = 15\n(10 x 9) : 2 = 45\n(11 x 10) : 2 = 55",
+      "figureDesc": "جدول من سطرين: عدد الطوابق وعدد المربعات الملونة (الأعمدة من اليمين إلى اليسار: 5 إلى 10)",
+      "answer": "15 ، 21 ، 28 ، 36 ، 45 ، 55",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 13 - حساب) شبكة أعداد (أ ب ج د) والأسطر 1 إلى 4",
+      "body": "السطر 1: 8، [مظلل]، 1، 1\nالسطر 2: 8، 9، 8، [مظلل]\nالسطر 3: [مظلل]، 6، 0، 9\nالسطر 4: 9، 1، [مظلل]، 9",
+      "figureDesc": "شبكة 4×4 فيها خانات مظللة بالنقاط (الأعمدة أ ب ج د من اليمين إلى اليسار، والأسطر 1 إلى 4 من الأعلى إلى الأسفل)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 14 - نظام قيس)",
+      "body": "7 دكم + 230 م = 3 هم\n250 م + 65 دكم = 9 هم\n6 هم ونصف + 150 م = 80 دكم\n4 هم و 5 دكم = 450 م",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 14) ",
+      "body": "الأول: نصف هم و 25 م = 75 م\nالثاني: اختيار وحدة المتر: 75 م\nالثالث: اختيار وحدة الدسم = 750 دسم\nالرابع: اختيار وحدة الدكم = 7 دكم ونصف",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "المسافة الفاصلة بين المنزل والمدرسة:",
+      "body": "320 م + 550 م = 870 م\nالمسافة التي يقطعها حلمي: 870 x 4 = 3480 م",
+      "figureDesc": "",
+      "answer": "870 م ؛ 3480 م",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "(الصفحة 14)",
+      "body": "طول الأولى: 350 م\nطول الثانية: 350 - 6 = 344 م\nطول الثالثة: 344 + 30 = 374 م\nطول السلك المستعمل بالمتر: (374 + 344 + 350) - 68 = 1000\nقيس المحيط بالمتر: نصف 1000 = 500",
+      "figureDesc": "",
+      "answer": "500 م",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 15 - هندسة)",
+      "body": "نصف مستقيم (ص) بنقاط ك، ج، م؛ لون أزرق ولون أحمر",
+      "figureDesc": "مستقيم عليه النقاط ك، م، ج، ص مع جزء بالأزرق وجزء بالأحمر",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 15)",
+      "body": "- نصف المستقيم [أص) يمرّ من \"ب\"\n- نصف المستقيم [أص) لا يمرّ من \"د\"",
+      "figureDesc": "نصف مستقيم بالنقاط أ، ب، ص ونقطة د خارجه",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 15)",
+      "body": "ج ... ب",
+      "figureDesc": "مستقيم عليه النقطتان ج وب ونقطة بينهما",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "(الصفحة 15)",
+      "body": "أستنتج أن نصف المستقيم محدود من جهة بنقطة الأصل وغير محدود من الجهة الأخرى لذا يمكن أن نرسم أنصاف مستقيم أخرى.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 16 - اختبار تقويمي)",
+      "body": "971 > 170 ......... - 770 - 870 - 970\n973 > 972 ......... 979 > 980 أو 990",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 16)",
+      "body": "36 عشرة + 17 آحاد + 3 مئات = 677\n39 عشرة + 30 آحاد + 48 عشرة = 9 مئات",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 16)",
+      "body": "1، 3، 6، 10، 15، 21، 28، 36 مع +2، +3، +4، +5، +6، +7، +8",
+      "figureDesc": "جدول أعداد مثلثية وأقواس الإضافة",
+      "answer": "1 ، 3 ، 6 ، 10 ، 15 ، 21 ، 28 ، 36",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i14"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن المشتريات بالمليم:",
+      "body": "(1500 + 20) - 100 = 1420\nثمن القصة بالمليم: 2×425 = 850\nثمن قلم الرصاص بالمليم: 1420 - (425 + 850) = 145",
+      "figureDesc": "جدول (العدد / مدلول العدد): عدد القطع من فئة 1/2 دينار 3؛ المبلغ الذي زادته فرح 20؛ المبلغ الذي أرجعه الكتبي 100؛ ثمن القصة [illegible]؛ ثمن الكوس 425",
+      "answer": "145 مليم",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p112_i15"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Cahier de solutions de mathématiques couvrant plusieurs thèmes (suites de nombres, mesures de longueurs en m/dam/hm, géométrie avec demi-droites, test d'évaluation) sans correspondre à un seul chapitre officiel ; les unités de longueur (hm, dam) et les nombres à 3 chiffres suggèrent un niveau de début d'année, mais aucun chapitre n'est clairement identifiable.",
+  "linkFlags": [
+    "low_ocr_confidence",
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    13,
+    14,
+    15,
+    16
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Calcul, mesures de longueur et géométrie",
+    "skill": "Résoudre des exercices de calcul, de conversion de longueurs (hm, dam, m) et de demi-droites, avec corrections.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "cahier de solutions",
+      "conversion de longueurs",
+      "nombres triangulaires",
+      "demi-droite",
+      "périmètre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une suite de nombres triangulaires déduite d'un motif d'étages et de carrés coloriés, des conversions de longueurs avec hm, dam et m, ainsi que des problèmes de trajet maison-école et de périmètre à partir de longueurs de fil.",
+    "themeGroup": "Longueurs"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "[4] p.13 grille: les lignes sont mal transcrites. Image: ligne 1 = 8، [مظلل]، 1، 1 (de أ à د), mais ligne 2 = [مظلل]، 8، 9، 8 (lue de droite à gauche: 8،9،8،[مظلل]) ; ligne 3 = 9،0،6،[مظلل] (droite→gauche: [مظلل]،6،0،9) ; ligne 4 = 9،1،[مظلل]،9 (droite→gauche: 9،[مظلل]،1،9). La ligne 4 transcrite (9، 1، [مظلل]، 9) a l'ordre des cases incorrect, l'ombré est en position ب"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "[3] p.13 tableau: l'ordre des colonnes 5..10 est inversé par rapport à l'image (10 à gauche, 5 à droite), en RTL cohérent mais non précisé"
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "[1] p.16: 'ج) 971 > 970 - 870 - 770 ... 170' : l'image montre 971 > 170 ......... - 770 - 870 - 970 (suite à compléter); la transcription inverse l'ordre et la comparaison (971 > 170)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[1] p.16: '973 > 972 ... 979 > 980 أو 990' : l'image contient '973 > 972 ......... 979 > 980 أو 990' avec des pointillés; transcription OK mais le sens des signes est ambigu"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "[2] p.16: '39 عشرة + 30 آحاد + 48 عشرة + 9 مئات = ...' : l'image donne '= 9 مئات' sans résultat manquant ; le début '39 عشرة + 30 آحاد + 48 عشرة = 9 مئات' (le '+ 9 مئات' est faux)"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "[4] p.16: tableau des achats (عدد القطع من فئة 1/2 دينار = 3، المبلغ الذي زادته فرح = 20، المبلغ الذي أرجعه الكتبي = 100، ثمن القصة، ثمن الكرس = 425) absent de la transcription"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "[2] p.15: figure avec أ، ب، ص، د non décrite; [1] p.15 le point ك، ج، م et légendes partiellement"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[1] p.14: 'إتمام المساواات' est un titre inventé (faute de frappe et absent de l'image)"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les champs 'réponse' (ex: [3] p.13 '15، 21...', [4] p.14) et titres descriptifs sont ajoutés, non présents dans l'image"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "[3] p.16: la suite est 36 28 21 15 10 6 3 1 avec +8…+2; l'ordre est inversé en transcription"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[5] p.14: 'قيس المحيط' dans l'image est 'قيس المحيط' (ok) ; 'طول السلك' OK, mais 'المسافة التي يقطعها حلمي' ok"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "[2] p.16 : la 2e égalité est '39 عشرة + 30 آحاد + 48 عشرة = 9 مئات'. La transcription écrit '+ 9 مئات = ...' et invente un résultat manquant. Il n'y a rien à compléter, '9 مئات' est le membre de droite."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "[1] p.16 : la ligne 1 de l'image est '971 > 170 ......... - 770 - 870 - 970' (pointillés au milieu). La transcription '971 > 970 - 870 - 770 ... 170' réorganise les nombres et déplace la comparaison."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[1] p.14 : l'instruction 'إتمام المساواات' est inventée (et mal orthographiée). Aucun intitulé n'apparaît dans l'image, l'exercice commence directement par '7 دكم + 230 م = 3 هم'."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "[1] p.16 ligne 2 : l'image contient des pointillés entre '972' et '979'. Les signes de comparaison sont ambigus dans le scan. Ils sont gardés tels quels, sans interprétation."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "[4] p.16 : la ligne 'ثمن القصة' du tableau a une petite mention illisible dans la colonne العدد. Elle n'est pas signalée. Le tableau figure bien dans figureDesc, il n'est donc pas totalement absent."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 13 - حساب) العددان هما:",
+      "body": "أ - 400 - 401\nب - 221 - 222 - 223\nج - 250 - 252\nد - 299 - 301 - 303",
+      "figureDesc": "",
+      "answer": "أ) 400 - 401 ؛ ب) 221 - 222 - 223 ؛ ج) 250 - 252 ؛ د) 299 - 301 - 303",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 13 - حساب) جدول عدد الطوابق وعدد المربعات الملوّنة، الاستنتاج",
+      "body": "عدد الطوابق: 5، 6، 7، 8، 9، 10\nعدد المربّعات الملوّنة: 15، 21، 28، 36، 45، 55\nالاستنتاج:\n(6 x 5) : 2 = 15\n(10 x 9) : 2 = 45\n(11 x 10) : 2 = 55",
+      "figureDesc": "جدول من سطرين: عدد الطوابق وعدد المربعات الملونة (الأعمدة من اليمين إلى اليسار: 5 إلى 10)",
+      "answer": "15 ، 21 ، 28 ، 36 ، 45 ، 55",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 13 - حساب) شبكة أعداد (أ ب ج د) والأسطر 1 إلى 4",
+      "body": "السطر 1: 8، [مظلل]، 1، 1\nالسطر 2: 8، 9، 8، [مظلل]\nالسطر 3: [مظلل]، 6، 0، 9\nالسطر 4: 9، 1، [مظلل]، 9",
+      "figureDesc": "شبكة 4×4 فيها خانات مظللة بالنقاط (الأعمدة أ ب ج د من اليمين إلى اليسار، والأسطر 1 إلى 4 من الأعلى إلى الأسفل)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 14 - نظام قيس)",
+      "body": "7 دكم + 230 م = 3 هم\n250 م + 65 دكم = 9 هم\n6 هم ونصف + 150 م = 80 دكم\n4 هم و 5 دكم = 450 م",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 14) ",
+      "body": "الأول: نصف هم و 25 م = 75 م\nالثاني: اختيار وحدة المتر: 75 م\nالثالث: اختيار وحدة الدسم = 750 دسم\nالرابع: اختيار وحدة الدكم = 7 دكم ونصف",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "المسافة الفاصلة بين المنزل والمدرسة:",
+      "body": "320 م + 550 م = 870 م\nالمسافة التي يقطعها حلمي: 870 x 4 = 3480 م",
+      "figureDesc": "",
+      "answer": "870 م ؛ 3480 م",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "(الصفحة 14)",
+      "body": "طول الأولى: 350 م\nطول الثانية: 350 - 6 = 344 م\nطول الثالثة: 344 + 30 = 374 م\nطول السلك المستعمل بالمتر: (374 + 344 + 350) - 68 = 1000\nقيس المحيط بالمتر: نصف 1000 = 500",
+      "figureDesc": "",
+      "answer": "500 م",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 15 - هندسة)",
+      "body": "نصف مستقيم (ص) بنقاط ك، ج، م؛ لون أزرق ولون أحمر",
+      "figureDesc": "مستقيم عليه النقاط ك، م، ج، ص مع جزء بالأزرق وجزء بالأحمر",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 15)",
+      "body": "- نصف المستقيم [أص) يمرّ من \"ب\"\n- نصف المستقيم [أص) لا يمرّ من \"د\"",
+      "figureDesc": "نصف مستقيم بالنقاط أ، ب، ص ونقطة د خارجه",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 15)",
+      "body": "ج ... ب",
+      "figureDesc": "مستقيم عليه النقطتان ج وب ونقطة بينهما",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "(الصفحة 15)",
+      "body": "أستنتج أن نصف المستقيم محدود من جهة بنقطة الأصل وغير محدود من الجهة الأخرى لذا يمكن أن نرسم أنصاف مستقيم أخرى.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 16 - اختبار تقويمي)",
+      "body": "971 > 170 ......... - 770 - 870 - 970\n973 > 972 ......... 979 > 980 أو 990",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 16)",
+      "body": "36 عشرة + 17 آحاد + 3 مئات = 677\n39 عشرة + 30 آحاد + 48 عشرة = 9 مئات",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 16)",
+      "body": "1، 3، 6، 10، 15، 21، 28، 36 مع +2، +3، +4، +5، +6، +7، +8",
+      "figureDesc": "جدول أعداد مثلثية وأقواس الإضافة",
+      "answer": "1 ، 3 ، 6 ، 10 ، 15 ، 21 ، 28 ، 36",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i14"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن المشتريات بالمليم:",
+      "body": "(1500 + 20) - 100 = 1420\nثمن القصة بالمليم: 2×425 = 850\nثمن قلم الرصاص بالمليم: 1420 - (425 + 850) = 145",
+      "figureDesc": "جدول (العدد / مدلول العدد): عدد القطع من فئة 1/2 دينار 3؛ المبلغ الذي زادته فرح 20؛ المبلغ الذي أرجعه الكتبي 100؛ ثمن القصة [illegible]؛ ثمن الكوس 425",
+      "answer": "145 مليم",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p112_i15"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 13 - حساب) العددان هما:",
+      "body": "أ - 400 - 401\nب - 221 - 222 - 223\nج - 250 - 252\nد - 299 - 301 - 303",
+      "figureDesc": "",
+      "answer": "أ) 400 - 401 ؛ ب) 221 - 222 - 223 ؛ ج) 250 - 252 ؛ د) 299 - 301 - 303",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p112_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 13 - حساب) جدول عدد الطوابق وعدد المربعات الملوّنة، الاستنتاج",
+      "body": "عدد الطوابق: 5، 6، 7، 8، 9، 10\nعدد المربّعات الملوّنة: 15، 21، 28، 36، 45، 55\nالاستنتاج:\n(6 x 5) : 2 = 15\n(10 x 9) : 2 = 45\n(11 x 10) : 2 = 55",
+      "figureDesc": "جدول من سطرين: عدد الطوابق وعدد المربعات الملونة",
+      "answer": "15 ، 21 ، 28 ، 36 ، 45 ، 55",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p112_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 13 - حساب) شبكة أعداد (أ ب ج د) والأسطر 1 إلى 4",
+      "body": "السطر 1: 8، [مظلل]، 1، 1\nالسطر 2: 8، 9، 8، [مظلل]\nالسطر 3: [مظلل]، 6، 0، 9\nالسطر 4: 9، 1، [مظلل]، 9",
+      "figureDesc": "شبكة 4×4 فيها خانات مظللة بالنقاط",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p112_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 14 - نظام قيس) إتمام المساواات",
+      "body": "7 دكم + 230 م = 3 هم\n250 م + 65 دكم = 9 هم\n6 هم ونصف + 150 م = 80 دكم\n4 هم و 5 دكم = 450 م",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "math_solutions_4eme_sellami_p112_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 14) ",
+      "body": "الأول: نصف هم و 25 م = 75 م\nالثاني: اختيار وحدة المتر: 75 م\nالثالث: اختيار وحدة الدسم = 750 دسم\nالرابع: اختيار وحدة الدكم = 7 دكم ونصف",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p112_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "المسافة الفاصلة بين المنزل والمدرسة:",
+      "body": "320 م + 550 م = 870 م\nالمسافة التي يقطعها حلمي: 870 x 4 = 3480 م",
+      "figureDesc": "",
+      "answer": "870 م ؛ 3480 م",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p112_i6",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "(الصفحة 14)",
+      "body": "طول الأولى: 350 م\nطول الثانية: 350 - 6 = 344 م\nطول الثالثة: 344 + 30 = 374 م\nطول السلك المستعمل بالمتر: (374 + 344 + 350) - 68 = 1000\nقيس المحيط بالمتر: نصف 1000 = 500",
+      "figureDesc": "",
+      "answer": "500 م",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p112_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 15 - هندسة)",
+      "body": "نصف مستقيم (ص) بنقاط ك، ج، م؛ لون أزرق ولون أحمر",
+      "figureDesc": "مستقيم عليه النقاط ك، م، ج، ص مع جزء بالأزرق وجزء بالأحمر",
+      "answer": null,
+      "confidence": 0.5,
+      "id": "math_solutions_4eme_sellami_p112_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 15)",
+      "body": "- نصف المستقيم [أص) يمرّ من \"ب\"\n- نصف المستقيم [أص) لا يمرّ من \"د\"",
+      "figureDesc": "نصف مستقيم بالنقاط أ، ب، ص ونقطة د خارجه",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p112_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 15)",
+      "body": "ج ... ب",
+      "figureDesc": "مستقيم عليه النقطتان ج وب ونقطة بينهما",
+      "answer": null,
+      "confidence": 0.5,
+      "id": "math_solutions_4eme_sellami_p112_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "(الصفحة 15)",
+      "body": "أستنتج أن نصف المستقيم محدود من جهة بنقطة الأصل وغير محدود من الجهة الأخرى لذا يمكن أن نرسم أنصاف مستقيم أخرى.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p112_i11",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 16 - اختبار تقويمي)",
+      "body": "971 > 970 - 870 - 770 ... 170\n973 > 972 ... 979 > 980 أو 990",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.4,
+      "id": "math_solutions_4eme_sellami_p112_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 16)",
+      "body": "36 عشرة + 17 آحاد + 3 مئات = 677\n39 عشرة + 30 آحاد + 48 عشرة + 9 مئات = ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.5,
+      "id": "math_solutions_4eme_sellami_p112_i13",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 16)",
+      "body": "1، 3، 6، 10، 15، 21، 28، 36 مع +2، +3، +4، +5، +6، +7، +8",
+      "figureDesc": "جدول أعداد مثلثية وأقواس الإضافة",
+      "answer": "1 ، 3 ، 6 ، 10 ، 15 ، 21 ، 28 ، 36",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p112_i14",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن المشتريات بالمليم:",
+      "body": "(1500 + 20) - 100 = 1420\nثمن القصة بالمليم: 2×425 = 850\nثمن قلم الرصاص بالمليم: 1420 - (425 + 850) = 145",
+      "figureDesc": "جدول: عدد القطع من فئة 1/2 دينار 3؛ المبلغ الذي زادته فرح 20؛ المبلغ الذي أرجعه الكتبي 100؛ ثمن القصة؛ ثمن الكوس 425",
+      "answer": "145 مليم",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p112_i15",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

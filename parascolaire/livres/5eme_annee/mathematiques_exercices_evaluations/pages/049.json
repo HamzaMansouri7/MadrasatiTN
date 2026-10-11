@@ -1,0 +1,114 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 49,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الدرس 26: أفكّك الأعداد العشرية وأركّبها",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أعِدْ كِتَابَةَ مَجَامِيعِ الْمَقَادِيرِ بِعَدَدٍ عَشْرِيٍّ.",
+      "body": "67540 مي + 86649 مي = .................. د\n1 كغ و 6 هغ + 69 كغ و 3 هغ = ..............كغ و ..............هغ = ..............كغ = ..............ق\n604 ل و 4 دسل + 96 ل و 30 صل = ..............ل و ..............دسل = ..............هل\n15 دكم و 6 م + 28 هم و 7 دكم = .............. = .............. دكم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p049_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حَوِّلِ الْمَقَادِيرَ التَّالِيَةَ إِلَى مَجَامِيعَ لِأَعْدَادٍ عَشْرِيَّةٍ:",
+      "body": "65,480 كم = ..............كم + ..............كم + ..............كم + ..............كم\n19,765 هل = ..............هل + ..............هل + ..............هل + ..............هل + ..............هل\n25,895 ق = ..............ق + ..............ق + ..............ق + ..............ق + ..............ق\n6,046 ط = ..............ط + ..............ط + ..............ط + ..............ط",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p049_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "رَكِّبِ الْأَجْزَاءَ التَّالِيَةَ لِتُكَوِّنَ عَدَدًا عَشْرِيًّا.",
+      "body": "0,007 دكم + 0,06 دكم + 0,5 دكم + 4 دكم = ..............\n13 غ + 0,1 غ + 0,008 غ + 0,03 غ = ..............\n0,09 هل + 78 هل + 0,004 هل + 0,8 هل = ..............\n0,006 ق + 0,04 ق + 40 ق = ..............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p049_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "وَضَعَ صَانِعُ عُطُورَاتٍ الْمَقَادِيرَ التَّالِيَةَ مِنْ زُيُوتِ الْيَاسَمِينِ فِي قَارُورَةٍ. اِبْحَثْ عَنِ السَّعَةِ الْجُمْلِيَّةِ لِزَيْتِ الْيَاسَمِينِ.",
+      "body": "12 صل و 0,08 صل + 14 صل و 0,006 صل = .............. صل",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p049_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "وَضَعَ صَانِعُ الْعُطُورَاتِ كَمِّيَّةً مِنْ مَاءِ الزَّهْرِ فِي قَوَارِيرَ مُخْتَلِفَةِ الْحَجْمِ. اِبْحَثْ عَنْ هَذِهِ الْكَمِّيَّةِ بِاللِّتْرِ.",
+      "body": "10 دسل و 25 صل + 0,5 ل = .............. ل",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p049_i5",
+      "topicId": "math-5-ch2",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.64
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la décomposition et la composition de nombres décimaux, avec des additions de mesures de grandeurs exprimées en décimaux (Leçon 26), ce qui correspond à la Période 2 : nombres décimaux, addition/soustraction.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Décomposition et composition des nombres décimaux",
+    "skill": "Décomposer un nombre décimal en somme de parties et recomposer des sommes de mesures (longueur, capacité, masse) en nombre décimal avec conversion d'unités.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "décomposition",
+      "conversion d'unités",
+      "grandeurs et mesures",
+      "capacités",
+      "addition de mesures"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : exercices à trous de décomposition/recomposition décimale et additions de mesures mixtes, avec mise en situation d'un parfumeur mélangeant des huiles de jasmin et de l'eau de fleurs pour donner du sens aux conversions.",
+    "themeGroup": "Nombres décimaux : notions et comparaison"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

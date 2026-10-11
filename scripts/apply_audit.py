@@ -2,7 +2,7 @@
 import json, collections, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_original_frozen/_archive'); POOR = 0.75
+A = Path('parascolaire_frozen/_archive'); POOR = 0.75
 pages = {}
 for pf in sorted(A.glob('*/pages/*.json')):
     d = json.loads(pf.read_text(encoding='utf-8')); pages[(d['book'], d['page'])] = (pf, d)

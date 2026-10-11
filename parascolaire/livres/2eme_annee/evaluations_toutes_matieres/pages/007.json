@@ -1,0 +1,173 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 7,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني عدد 3 - قراءة وفهم (نص: زاهر والغابة)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أَقْرَأُ النَّصَّ :",
+      "body": "وَضَعَ أَفْرَادُ الْعَائِلَةِ الْأَمْتِعَةَ وَالْحَاجِيَاتِ فِي صُنْدُوقِ السَّيَّارَةِ وَانْطَلَقُوا نَحْوَ الْغَابَةِ. رَأَى زَاهِرٌ فِي الْغَابَةِ أُسَرًا كَثِيرَةً فَرَّتْ مِنْ حَرِّ الصَّيْفِ وَجَاءَتْ إِلَى الطَّبِيعَةِ الرَّحْبَةِ تَنْعَمُ بِأَنْسَامِ الْهَوَاءِ النَّدِيَّةِ.\nجَلَسَتْ أُسْرَةُ زَاهِرٍ تَحْتَ شَجَرَةٍ وَارِفَةِ الظِّلَالِ بِجِوَارِ سَاقِيَةِ مَاءٍ لِتَتَنَاوَلَ طَعَامَ الْغَدَاءِ. بَعْدَ ذَلِكَ اسْتَأْذَنَ زَاهِرٌ وَالِدَيْهِ لِيَتَجَوَّلَ قَلِيلًا وَيُمَتِّعَ نَاظِرَيْهِ بِجَمَالِ الطَّبِيعَةِ الْخَلَّابَةِ. وَفِي الْأَثْنَاءِ، رَأَى طِفْلًا يُخْرِجُ أَعْوَادَ ثِقَابٍ يُشْعِلُهَا وَيُلْقِيهَا فِي السَّاقِيَةِ فَتَنْطَفِئُ شُعْلَتُهَا وَيَسْتَغْرِقُ فِي الضَّحِكِ.\nدَنَا مِنْهُ زَاهِرٌ وَقَدَّمَ لَهُ النَّصِيحَةَ، لَكِنَّهُ تَمَادَى فِي عَبَثِهِ وَلَمْ يَكْتَرِثْ. وَاصَلَ زَاهِرٌ جَوْلَتَهُ، وَفَجْأَةً رَأَى جَمْعًا مِنَ الْمُصْطَافِينَ يَتَرَاكَضُونَ حَامِلِينَ أَوَانِيَ يَنْقُلُونَ فِيهَا الْمَاءَ مِنَ السَّاقِيَةِ لِإِطْفَاءِ حَرِيقٍ.\nوَدُونَ تَرَدُّدٍ انْدَفَعَ لِلْمُسَاعَدَةِ، وَتَظَافَرَتِ الْجُهُودُ فَسَيْطَرُوا عَلَى النَّارِ. نَظَرَ زَاهِرٌ حَوْلَهُ فَرَأَى ذَلِكَ الطِّفْلَ الْمُشَاغِبَ يَقِفُ جَامِدًا يَرْمُقُهُ وَعَلَامَاتُ النَّدَمِ وَالِاعْتِذَارِ بَادِيَةٌ عَلَى مُحَيَّاهُ...\n- الْمُؤَلِّفُونَ -",
+      "figureDesc": "رأس الصفحة: لافتة «امتحانات جسر النجاح»؛ إطار بيانات: المادة: قراءة وفهم، المستوى: السنة الثانية، اختبار نهاية الثلاثي الثاني عدد 3، خانات الاسم واللقب والقسم.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p007_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبُطُ كُلَّ شَخْصِيَّةٍ بِالْحَدَثِ الْمُتَّصِلِ بِهَا :",
+      "body": "الشخصيات: زَاهِرٌ • الطِّفْلُ • الْمُصْطَافُونَ\nالأحداث: • تَعَاوَنُوا لِإِطْفَاءِ الْحَرِيقِ. • كَانَ يَتَسَلَّى بِإِشْعَالِ أَعْوَادِ الثِّقَابِ. • قَدَّمَ النَّصِيحَةَ لِلطِّفْلِ.\n(الأعداد: 0.5 + 0.5 + 0.5) (المعيار: معـ2أ)",
+      "figureDesc": "عمودان من النقاط للتوصيل: الشخصيات على اليمين والأحداث على اليسار، وثلاث خانات للمعيار.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p007_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2 أ",
+      "instruction": "فِي أَيِّ فَصْلٍ دَارَتْ أَحْدَاثُ النَّصِّ ؟",
+      "body": "سطر منقّط للإجابة. (0.5) (المعيار: معـ2أ)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p007_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2 ب",
+      "instruction": "أَسْتَخْرِجُ الْجُمْلَةَ الَّتِي تُؤَيِّدُ إِجَابَتِي :",
+      "body": "سطر منقّط بين علامتي تنصيص « ». (1) (المعيار: معـ2ج)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p007_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 أ",
+      "instruction": "أَكْتُبُ «صَوَابٌ» أَوْ «خَطَأٌ».",
+      "body": "* عَمِلَ الطِّفْلُ بِنَصِيحَةِ زَاهِرٍ وَكَفَّ عَنْ إِشْعَالِ أَعْوَادِ الثِّقَابِ.\n(0.5) (المعيار: معـ2أ)",
+      "figureDesc": "مستطيل بحواف دائرية منقّط لكتابة الإجابة.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p007_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 ب",
+      "instruction": "أَقْرَأُ النَّصَّ وَأَسْتَخْرِجُ جُمْلَةً تُؤَيِّدُ جَوَابِي.",
+      "body": "سطر منقّط للإجابة. (1) (المعيار: معـ2ج)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p007_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u1",
+    "confidence": 0.23
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de trimestre 2 (اختبار نهاية الثلاثي الثاني عدد 3) en compréhension de lecture, donc un examen général qui ne correspond pas à un chapitre précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de texte narratif",
+    "skill": "Lire un texte narratif court et répondre à des questions de compréhension : identifier les personnages et leurs actions, repérer la saison, justifier par une phrase du texte.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "personnages et événements",
+      "justification par le texte",
+      "forêt",
+      "examen fin de trimestre",
+      "2ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Barème détaillé associé à un critère d'évaluation. Enchaînement réutilisable : apparier personnages et actions, déduire la saison d'un récit, juger vrai/faux, puis justifier en citant une phrase du texte. Le contexte (sortie en forêt, risque d'incendie, conseil donné à un enfant) se prête bien à une sensibilisation à l'environnement.",
+    "themeGroup": "Compréhension: le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الْأَثْنَاءِ» dans la transcription ; l'image montre «الْأَثْنَاءِ» écrit «الْأَثْنَاءِ» (phrase «وَفِي الْأَثْنَاءِ») : vérifier hamza/vocalisation, probablement «الْأَثْنَاءِ» ou «الْأَثْنَاءِ» sans différence notable"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«طِفْلًا» dans la transcription : l'image montre «طِفْلًا» avec vocalisation proche, mais «يُخْرِجُ» est écrit «يُخْرِجُ» ; aucune divergence lexicale majeure"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«وَدُونَ تَرَدُّدٍ» : dans l'image le «وَ» initial et «دُونَ» sont fidèles ; «سَيْطَرُوا» dans l'image est «فَسَيْطَرُوا» : OK"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions entre parenthèses (الأعداد، المعيار) et «سطر منقّط» sont des descriptions ajoutées, pas du texte ; la case des critères (معـ2أ, معـ2ج) est correcte mais la note de l'exercice 1 (une seule case de critère pour 3 sous-items) est simplifiée"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les puces de l'exercice 1 sont listées en deux colonnes séparées (personnages / événements) ; l'ordre visuel des lignes n'est pas conservé mais le contenu est complet"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête (امتحانات جسر النجاح، اختبار نهاية الثلاثي الثاني، عدد 3، المادة قراءة وفهم، المستوى السنة الثانية، الاسم/اللقب/القسم) et le numéro de page 6 ne sont pas transcrits"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

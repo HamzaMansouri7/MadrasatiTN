@@ -1,0 +1,96 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 29,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقييم الرياضيات: رسم الطريق (التعليمة 11) وحل وضعية مسألة (السند 6، التعليمة 12) مع جدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "التَّعْلِيمَةُ 11 : أَرْسُمُ الطَّرِيقَ الَّتِي سَلَكَهَا كُلُّ وَاحِدٍ مِنَ الأَطْفَالِ مُوَظِّفًا الْخُطُوطَ.",
+      "body": "نادي الأطفال – مَنْزِلُ جَاسِرٍ – مَنْزِلُ زَيْنَبَ – مَنْزِلُ أَحْمَدَ. (معيار: مع 4، مع التنقيط 0,5 / 0,5 / 0,5)",
+      "figureDesc": "رسم لنادي الأطفال ولثلاثة منازل (جاسر، زينب، أحمد) مع نقطة أمام كل مبنى، على التلميذ أن يصل بين النقاط بخطوط. على اليمين ثلاث خانات لتقييم معيار مع 4.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p029_i1",
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "التَّعْلِيمَةُ 12 : أَخْتَارُ الأَسْئِلَةَ الْمُنَاسِبَةَ بِوَضْعِ الْعَلاَمَةِ (x) لِحَلِّ الْوَضْعِيَّةِ وَأُجِيبُ عَنْهَا.",
+      "body": "السَّنَدُ 6 : أَرَادَ أَحْمَدُ أَنْ يَشْرِيَ مُرَطَّبَةً لَكِنَّ الْمَبْلَغَ الَّذِي مَعَهُ لاَ يَكْفِي. فَزَادَهُ جَاسِرٌ 52 مي.\nالأَسْئِلَةُ :\n☐ أَحْسُبُ الْمَبْلَغَ الَّذِي يَمْلِكُهُ أَحْمَدُ ؟\n☐ مَا هُوَ ثَمَنُ الْمُرَطَّبَةِ ؟\n☐ كَمْ بَقِيَ لِجَاسِرٍ ؟\nالْحَلُّ : ........ (ثلاثة أسطر منقطة)\n(التنقيط: 1 / 1 / 1 / 1 ، معيار مع 5)",
+      "figureDesc": "ثلاث خانات للاختيار أمام الأسئلة، أربع خانات لتقييم معيار مع 5 على اليمين، وأسطر منقطة لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p029_i2",
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الأَعْدَادِ",
+      "body": "المعايير / مستويات التملك: معايير الحد الأدنى (مع1، مع2أ، مع2ب، مع2ج، مع3، مع4)، معيار التميز (مع5)، الحساب الذهني (…/4).\nانعدام التملك: 0 في كل الخانات.\nالتملك دون الأدنى: 0,5 / 0,5 / 0,5 / 1 / 1 / 0,5 / 1 (مع1، مع2أ، مع2ب، مع2ج، مع3، مع4، مع5).\nالتملك الأدنى: 1 / 1 / 1 / 2 / 2 / 1 / 3-2.\nالتملك الأقصى: 1,5 / 1,5 / 1,5 / 3 / 3 / 1,5 / 4.\nالحساب الذهني: … + … = … ، 20 = 4 + 16.",
+      "figureDesc": "جدول إسناد الأعداد حسب مستويات التملك والمعايير، في أسفل الصفحة، رقم الصفحة 28.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "evaluations_toutes_matieres_p029_i3",
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-2-p1",
+  "topicTitle": "Période 1 : Nombres de 0 à 99, addition avec retenue et droites",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p2",
+    "confidence": 0.24
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de mathématiques (tracé de chemin à la règle avec des lignes, problème d'addition avec 52 millimes) avec grille de notation par critères ; elle évoque la Période 1 (droites, addition), mais la monnaie et le problème pourraient relever de la Période 3, donc le chapitre exact reste incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Évaluation: repérage et problème additif",
+    "skill": "Représenter un trajet à l'aide de lignes et choisir les questions pertinentes pour résoudre un problème d'argent.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "évaluation",
+      "trajet",
+      "tracé de lignes",
+      "monnaie",
+      "choix de questions",
+      "barème"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : tracer l'itinéraire d'enfants entre plusieurs lieux (club, maisons) avec des lignes, et problème d'argent où l'élève coche les questions utiles avant de répondre, avec grille de notation par critères.",
+    "themeGroup": "Évaluation et repérage"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "examTrimester": 2,
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

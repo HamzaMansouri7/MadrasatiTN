@@ -1,0 +1,341 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 117,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigés : نظام قيس (système de mesure, capacités en litres), هندسة (perpendiculaires), اختبار تقويمي, الامتحان الثلاثي الأول (1)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "نظام قيس – الصفحة 33 – السنة الرابعة: الكمّية التي صبّت باللتر",
+      "body": "الكمّية التي صبّت باللتر :",
+      "figureDesc": "",
+      "answer": "600 : 2 = 300",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p117_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "عدد اللترات الباقية بالخزّان :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "1000 ل - (250 ل + 320 ل) = 430",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p117_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "سعة هذا الخزّان بحساب اللتر:",
+      "body": "",
+      "figureDesc": "",
+      "answer": "40 ل + 200 ل + 5 ل + 50 ل = 295",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p117_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "كمّية البنزين التي بقيت في الخزّان باللتر :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "5400 ل - (1400 + 2150 + 1250) = 600",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p117_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "سعة الماء اللازم إضافته بحساب اللتر:",
+      "body": "",
+      "figureDesc": "",
+      "answer": "2950 - 1650 = 1300",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p117_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "عدد اللترات التي بقيت في الخزّان:",
+      "body": "",
+      "figureDesc": "",
+      "answer": "50 ل - 13 ل ونصف = 36 ل ونصف",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p117_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "7",
+      "instruction": "عدد الصّفائح المملوءة:",
+      "body": "",
+      "figureDesc": "",
+      "answer": "(1200 - (300 + 850)) : 10 = 5",
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_corriges_p117_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "هندسة – الصفحة 34 – السنة الرابعة",
+      "body": "[د ج] عمودي على [ب ط]\n[أ ب] عمودي على [أ ز] ، [أ ط]\n[د هـ] عمودي على [دط]",
+      "figureDesc": "",
+      "answer": "[د ج] عمودي على [ب ط] ؛ [أ ب] عمودي على [أ ز]، [أ ط] ؛ [د هـ] عمودي على [د ط]",
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p117_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "Une droite (ص) avec trois perpendiculaires parallèles tracées, points أ، ب، م, angles droits marqués",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p117_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "طبيعة الشكل ( أ ب ط د ) :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "مربّع",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p117_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "اختبار تقويمي – الصفحة 35 – السنة الرابعة: المخطط",
+      "body": "أملك بالمي :",
+      "figureDesc": "Schéma en barres : « أملك » , « ينقصني » -250 مي, « ثمن كتاب الرياضيات », « يبقى لي » +150 مي",
+      "answer": "3000 - (150 + 250) = 2600",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p117_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "سعة هذا الإناء باللتر:",
+      "body": "",
+      "figureDesc": "",
+      "answer": "32 + 40 + 58 = 130",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p117_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "تملك هذه السيدة بالمي :",
+      "body": "ثمن الكأسين بالمي :\nثمن المزهرية بالمي :\nثمن المشتريات بالمي :\nلا يمكنها ذلك لأنّ 9000 < 9750\nتستطيع أن تشتري كأسا واحدة بدل كأسين وصحنة من البلّور ومزهرية.",
+      "figureDesc": "",
+      "answer": "5000 + (1000 × 4) = 9000 ؛ 1750 - 250 = 1500 ؛ 2 × (1500 + 1750) = 6500 ؛ 6500 + 1750 + 1500 = 9750",
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_corriges_p117_i13",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الامتحان الثلاثي الأول (1) – الصفحة 36 – السنة الرابعة",
+      "body": "أ = { 6030 - 6130 - 6230 - 6330 - 6430 - 6530 - 6630 - 6730 - 6830 - 6930 }\nب ) 3438",
+      "figureDesc": "Nombre 3438 encadré",
+      "answer": "أ = {6030 - 6130 - 6230 - 6330 - 6430 - 6530 - 6630 - 6730 - 6830 - 6930} ؛ ب) 3438",
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_corriges_p117_i14",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "المسافة الفاصلة بين المنزل والمدرسة بالم :",
+      "body": "المسافة التي يقطعها مهدي في اليوم بالمتر =",
+      "figureDesc": "",
+      "answer": "420 + 650 = 1070 ؛ 4 × 1070 = 4280",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p117_i15",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "Deux droites (م) et (س) parallèles avec une perpendiculaire commune, point م, (ك)",
+      "answer": null,
+      "confidence": 0.65,
+      "id": "mathematiques_exercices_corriges_p117_i16",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن المشتريات بالمي :  /  ثمن الأرنب بالمي :",
+      "body": "بيض 2700، فروج 3250، أرنب ؛ أدوات 1350، كتب 2×1350، محفظة 5750",
+      "figureDesc": "Deux schémas en segments : (بيض، فروج، أرنب) et (أدوات، كتب، محفظة)",
+      "answer": "5750 + (3 × 1350) = 9800 ؛ 9800 - (3250 + 2700) = 3850",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p117_i17",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p6",
+    "confidence": 0.58
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un corrigé mélangeant plusieurs chapitres (capacités en litres de la période 6, perpendiculaires de la période 1) pour une évaluation et un examen trimestriel, donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    37,
+    38,
+    39
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures de capacité et perpendiculaires",
+    "skill": "Résoudre des problèmes sur les capacités en litres et identifier des droites perpendiculaires et la nature d'un quadrilatère.",
+    "pageType": "correction",
+    "formats": [
+      "probleme",
+      "calcul",
+      "autre"
+    ],
+    "keywords": [
+      "capacité",
+      "litres",
+      "problème de mesure",
+      "perpendiculaires",
+      "quadrilatère",
+      "corrigé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes de capacités (réservoir d'essence, remplissage de bidons, ajout d'eau, quantité restante) et exercices de géométrie où l'on déduit la nature d'une figure à partir de relations de perpendicularité.",
+    "themeGroup": "Masses et capacités"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.82
+  },
+  "audit": {
+    "accuracy": 0.82,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.4 p.33 : l'image montre (1 250 + 2 150 + 1 400), la transcription inverse l'ordre en (1400 + 2150 + 1250)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.4 p.35 : l'image montre 1 750 - 250 = 1 500 et la somme finale 9 750 = 1 500 + 1 750 + 6 500 ; la transcription écrit 6500 + 1750 + 1500, ordre inversé."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.4 p.35 : l'image montre 9 000 = (1 000 × 4) + 5 000 ; la transcription inverse en 5000 + (1000 × 4)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.2 p.36 : l'image montre 1070 = 650 + 420 ; la transcription écrit 420 + 650 = 1070, ordre inversé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.2 p.36 : « يقطعها » est écrit « يقطعمأمهدي » dans l'image (« يقطع أمهدي »), il y a confusion ; le texte a été normalisé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.4 p.35 : « تملك » dans l'image est « قملك/تملك », et « صحنة » devrait être « صحفة » (« وصحفة من البلور »)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Ex.1 p.35 : le schéma n'est pas transcrit (أملك، ينقصني، 250 مي، ثمن كتاب الرياضيات، يبقى لي، 150 مي) ; réponse présente mais sans le diagramme."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.1 p.33 : la phrase du schéma n'est pas dupliquée correctement ; schémas des ex. 2 à 7 p.33 et du p.34 (ex.2, perpendiculaires à (ص)) absents."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.3 p.36 : la figure (droites (م) et (ك)، (س)، point م) n'est pas décrite."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.4 p.36 : les étiquettes du schéma sont présentes mais la phrase de l'ex. 2 p.36 « بالم » correspond à « بالم » dans l'image, la ligne « ثمن الأرنب بالمي : » est bien là."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel : « الكمّية » et « الصّفائح » sont notés avec une shadda, mais l'image montre « الكمّية » et « الصّفائح » avec shadda partielle ; « الخزّان » est écrit avec shadda, l'image la montre « الخزّان » avec un autre marquage."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,117 @@
+{
+  "book": "eveil_scientifique_evaluations",
+  "page": 5,
+  "grade": "5ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "Le milieu de vie : les sources d'eau potable, le rôle du couvert végétal, les composants vivants et non vivants du milieu",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة عدد 1: أضع علامة وأعلّل",
+      "body": "جدول من أربعة أعمدة: مصدر الماء | صالح للشرب | غير صالح للشرب | التعليل. مصادر الماء (الصفوف): ماء الوادي، ماء الحنفية، ماء البحيرة، ماء المستنقع، ماء معدني معلّب، ماء البحر.",
+      "figureDesc": "Tableau à 6 lignes et 4 colonnes (مصدر الماء، صالح للشرب، غير صالح للشرب، التعليل). Seule la première colonne est remplie ; les autres sont vides, à compléter par une croix et une justification.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_evaluations_p005_i1",
+      "topicId": "sci-5-u6",
+      "formatGuess": "qcm",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة عدد 2: أعلّل الإفادات التالية",
+      "body": "1) فقدان الغطاء النباتي يؤدّي إلى انقراض الحيوانات اللّاحة\n2) مياه الآبار غنية بالأملاح المعدنيّة\n3) في البذر عند تلف الفلقتان لا يتمكّن الجنين السليم من النّمو\n4) تكثر الطيور في الجبال والغابات ولا تكثر في الصحراء",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_evaluations_p005_i2",
+      "topicId": "sci-5-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة عدد 3: أصنّف المكوّنات التالية إلى مكوّنات حيّة ومكوّنات غير حيّة",
+      "body": "الهواء، البرق، المطر، الحيوانات، الباكتيريا، الريح، التربة، الزهور، القمح، الأشجار، العقاب، الثعبان، الانسان، ماء النّهر، الذّباب، الفطر، ضوء الشّمس",
+      "figureDesc": "Tableau à deux colonnes : مكوّنات حية (à droite) et مكوّنات غير حيّة (à gauche), vides, à remplir par classement.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_evaluations_p005_i3",
+      "topicId": "sci-5-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-5-u6",
+  "topicTitle": "Unité 6 : Le sol, l'eau et reproduction végétale par graines",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "sci-5-u5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-5-u5",
+    "confidence": 0.18
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est une série d'exercices d'éveil scientifique sur l'eau potable, le couvert végétal, la germination (cotylédons) et les composants vivants/non vivants du milieu, qui touche à l'unité 6 (sol, eau, reproduction par graines) et à l'unité 5 (milieu écologique), sans correspondre clairement à un seul chapitre.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Le milieu de vie et ses composants",
+    "skill": "Distinguer l'eau potable de l'eau non potable, justifier le rôle du couvert végétal et classer les composants vivants et non vivants d'un milieu.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "eau potable",
+      "couvert végétal",
+      "composants vivants",
+      "composants non vivants",
+      "milieu de vie",
+      "justification"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Trois activités réutilisables : un tableau à cocher avec justification pour juger la potabilité de sources d'eau variées, des affirmations à justifier par une relation de cause à effet entre végétation, animaux et milieu, et une liste mélangée de composants à classer en vivants et non vivants (pièges comme la foudre, la pluie ou le vent).",
+    "themeGroup": "Le milieu de vie"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2, phrase 1 : la transcription donne « اللّاحة » ; l'image montre « اللّاحمة » ou une forme proche. Le mot lu dans l'image est « اللّاحة », donc à vérifier. Il est fidèle à l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'image écrit « البكتيريا » (« الباكتيريا » dans l'image). Aucune différence relevée."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3 : le tableau de classement (colonnes « مكوّنات حية » et « مكوّنات غير حيّة ») n'est pas décrit dans la transcription, contrairement au tableau de l'exercice 1."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 3 : la transcription met « الأشجار » après « القمح », ce qui est cohérent avec la lecture de la 2e ligne. Aucun écart d'ordre réel."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Éveil scientifique 5ème année — Évaluations"
+}

@@ -1,0 +1,179 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 82,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Sujet d'examen de français (6ème année) : compréhension de l'écrit sur le texte du robot, puis activités réflexives sur la langue (lexique). Cette page n'est pas une page de mathématiques et n'est pas la page 82 : elle porte la mention « Page 2 sur 4 ».",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Pourquoi le robot a-t-il secoué l'auteur ?",
+      "body": "(2pts) Ligne de réponse à compléter.",
+      "figureDesc": "Cadre en haut de page portant la mention « NE RIEN ÉCRIRE ICI ». Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p082_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Relève dans le texte la phrase qui montre que le robot est en colère.",
+      "body": "(2pts) Ligne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p082_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Quel est le type de ce texte ?",
+      "body": "(1,5pts) Ligne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p082_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Donne un titre au texte.",
+      "body": "(2pts) Ligne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p082_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "À ton avis pourquoi l'auteur aime-t-il son robot ?",
+      "body": "(2pts) Deux lignes de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p082_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "Donne les antonymes des mots suivants :",
+      "body": "(1pt) Section I. Activités réflexives sur la langue : (18pts) – A- Lexique : (3pts). Ouvrir ≠ ................... ; Construire ≠ ...........................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p082_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "Place le préfixe ou le suffixe convenables pour obtenir des mots nouveaux :",
+      "body": "(1pt) faire - soulève",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p082_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "Souligne les mots qui ont une relation avec les sciences et technologies ;",
+      "body": "(1pt) Robot - Fusée - Jour - Satellite - Ordinateur",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p082_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.38
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un sujet d'examen de français (compréhension de l'écrit sur le texte du robot et activités de lexique : antonymes, préfixes/suffixes, champ lexical des sciences), qui couvre plusieurs compétences sans correspondre clairement à un seul module officiel.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit et lexique",
+    "skill": "Comprendre un texte narratif sur un robot (relever, déduire, titrer) puis enrichir le lexique avec antonymes, préfixes/suffixes et champ lexical des technologies.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "robot",
+      "antonymes",
+      "préfixes et suffixes",
+      "champ lexical",
+      "sciences et technologies"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Sujet d'examen à barème détaillé: questions de compréhension graduées (relever, identifier le type de texte, titrer, donner son avis) suivies d'un petit bloc lexical (antonymes, dérivation, champ lexical), à réutiliser avec un autre thème de texte.",
+    "themeGroup": "Lexique et vocabulaire"
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête 'NE RIEN ÉCRIRE ICI' (encadré en haut de page) et le pied de page 'Page 2 sur 4' ne sont pas transcrits."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre de section 'I. Activités réflexives sur la langue : (18pts)' et 'A- Lexique : (3pts)' sont insérés dans la question 9, alors qu'ils précèdent cette question ; ils devraient être des en-têtes séparés."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

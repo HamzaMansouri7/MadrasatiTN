@@ -1,0 +1,129 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 20,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إِنْتَاجُ كِتَابِيٌّ: إِنْتَاجُ نَصٍّ يَتَأَلَّفُ مِنْ جُمَلٍ بَسِيطَةٍ مُتَمَاسِكَةِ البِنَاءِ (تَرْتِيبُ جُمَلٍ)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُرَتِّبُ الْجُمَلَ بِوَضْعِ الْأَرْقَامِ مِنْ 1 إِلَى 3.",
+      "body": "⚪ أَيْقَظَتِ الْأُمُّ ابْنَتَهَا،\n⚪ فِي الصَّبَاحِ الْبَاكِرِ.\n⚪ وَغَيَّرَتْ لَهَا مَلَابِسَهَا.",
+      "figureDesc": "أُمٌّ تُوقِظُ ابْنَتَهَا وَتُسَاعِدُهَا عَلَى ارْتِدَاءِ مَلَابِسِهَا فِي غُرْفَةِ النَّوْمِ.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p020_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُكَمِّلُ الْجُمْلَةَ الثَّالِثَةَ.",
+      "body": "⚪ فِي الصَّبَاحِ الْبَاكِرِ.\n⚪ غَيَّرَ عَلَاءٌ مَلَابِسَهُ، وَأَفْطَرَ،\n⚪ ثُمَّ ............................................",
+      "figureDesc": "طِفْلٌ (عَلَاء) يَجْمَعُ كُرَّاسَاتِهِ وَأَدَوَاتِهِ وَيُرَتِّبُ مِحْفَظَتَهُ عَلَى الْمَكْتَبِ.",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p020_i2",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُرَتِّبُ الْجُمَلَ، وَأُكَوِّنُ بِهَا نَصًّا.",
+      "body": "⚪ فَغَسَلَ وَجْهَهُ وَأَطْرَافَهُ، وَأَفْطَرَ.\n⚪ ثُمَّ وَدَّعَتْهُ، وَذَهَبَ إِلَى الْمَدْرَسَةِ.\n⚪ فِي الصَّبَاحِ الْبَاكِرِ، أَيْقَظَتِ الْأُمُّ ابْنَهَا.\n\n..........................................................................................................\n..........................................................................................................",
+      "figureDesc": "طِفْلٌ يَحْمِلُ مِحْفَظَتَهُ وَيُغَادِرُ إِلَى الْمَدْرَسَةِ بَيْنَمَا تُوَدِّعُهُ أُمُّهُ أَمَامَ بَابِ الْمَنْزِلِ.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p020_i3",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "ar-1-u3",
+  "topicTitle": "Unité 3 : Mon compagnon pour ma santé et ma sécurité",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.66
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Page d'Arabe consacrée à la production écrite (ordonner des phrases sur la routine matinale : réveil, change de vêtements, lavage du visage, petit-déjeuner), ce qui évoque l'hygiène de l'Unité 3, mais aucune unité ne cible explicitement la production écrite, d'où une confiance faible.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Ordonner des phrases en texte",
+    "skill": "Remettre des phrases simples dans l'ordre logique et chronologique pour produire un court texte cohérent, en utilisant des connecteurs temporels.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "production écrite",
+      "ordre des phrases",
+      "cohérence textuelle",
+      "connecteurs temporels",
+      "routine du matin"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression en trois étapes (numéroter des phrases, compléter une phrase finale avec un connecteur, remettre en ordre puis former un texte) autour d'une routine quotidienne, facilement transposable à d'autres séquences d'actions du quotidien.",
+    "themeGroup": "Ordonner des phrases et cohérence textuelle"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Consigne 1 : « أُرَتِّبُ » transcrit, l'image montre « أُرَتِّبُ » avec shadda sur le تّ et le ر fatha (أَرَتِّبُ). Image : « أُرَتِّبُ الْجُمَلَ » apparaît comme « أُرَتِّبُ » ; voyelle initiale à vérifier (fatha, non damma)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : « أُكَمِّلُ » correspond à l'image « أُكَمِّلُ » ; « الْجُمْلَةَ » dans la transcription au lieu de « الْجُمْلَةَ » : cohérent, pas d'erreur réelle."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : « الْبَاكِرِ » dans la transcription ; l'image montre « الْبَاكِرِ » dans la 1re phrase (ok), mais « الْبَاكِرِ » de l'exercice 2 est écrit « الْبَاكِرِ » : conforme."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : « عَلَاءٌ » : l'image montre « عَلَاءٌ » avec tanwin, conforme."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « ابْنَهَا » transcrit, l'image indique « ابْنَهَا » dans la 3e phrase ; correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page omis : « الْوَحْدَةُ الرَّابِعَةُ : فَصْلُ الشِّتَاءِ », « إِنْتَاجُ نَصٍّ يَتَأَلَّفُ مِنْ جُمَلٍ بَسِيطَةٍ مُتَمَاسِكَةِ الْبِنَاءِ. تَرْتِيبُ جُمَلٍ. », « أَتَدَرَّبُ وَأُوَظِّفُ » (peut être jugé hors exercices)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

@@ -1,0 +1,142 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 107,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Lecture et compréhension : texte « L'échange » (d'après un conte d'Andersen)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "Le paysan raconte alors l'histoire du cheval qu'il a échangé contre une vache et ainsi de suite jusqu'aux marrons.\nLe voyageur, amusé par ce qu'il vient d'entendre, invite le paysan à monter dans sa voiture et le ramène à sa petite maison de campagne.\n-Bonsoir, chère vieille.\n-Bonsoir, cher vieux.\n-L'échange est fait. J'ai échangé le cheval contre une vache, ajoute le paysan.\n-Tu t'y connais en affaires, dit la bonne femme. Nous allons avoir beaucoup de lait, du beurre et du fromage.\n-Oui mais après, j'ai échangé la vache contre un mouton.\n-Cela vaut mieux. Avec sa laine, je tricoterai des vêtements bien chauds pour l'hiver. Comme tu fais bien les choses.\n-Ce n'est pas fini, ma vieille. J'ai échangé le mouton contre une oie.\n-Voilà qui est bien fait, mon cher vieux. Nous aurons donc une belle oie rôtie à Noël.\n-Mais je n'ai plus cette oie. Je l'ai échangée contre une poule.\n- Une poule, dit la vieille. Elle pondra des œufs et elle les couvera. De jolis poussins en sortiront. J'aurai ainsi une basse-cour.\n- Ce n'est plus cela, ma chère vieille. J'ai échangé la poule contre un sac de marrons.\n-Quoi ? Est-ce vrai ? Comme je suis contente.\nJ'en donnerai aux voisins et je garderai le reste pour l'hiver. Et elle prend son mari entre ses bras et le serre fortement. Le voyageur, étonné par ce qu'il vient d'entendre, part sans attirer leur attention.\n\nD'après un conte d'Adersen",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p107_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "B) 1) a-",
+      "instruction": "B) Compréhension :",
+      "body": "1) a- Est-ce que le vieux et la vieille sont riches ?\n.......................................................................................................................................................\n.......................................................................................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p107_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.44
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de lecture et compréhension du texte « L'échange » (Andersen), sans lien clair avec un module précis; le thème du troc et du dialogue ne correspond pas sans ambiguïté à l'un des huit modules de français.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127,
+    128
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un conte : L'échange",
+    "skill": "Lire un texte narratif (conte) et répondre par écrit à une question de compréhension sur les personnages.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "conte",
+      "Andersen",
+      "lecture",
+      "compréhension",
+      "troc",
+      "personnages"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un conte à structure répétitive (chaîne d'échanges successifs) peut servir de support d'évaluation, avec des questions courtes de compréhension à réponse écrite sur lignes pointillées, et la fin du texte comme point de départ pour inférer la situation des personnages.",
+    "themeGroup": "Contes et récits légendaires"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« Texte support (suite et fin) : lire le texte. » ne figure pas sur l'image ; c'est un titre inventé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : « Les évaluations », « Sagesse », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », « 106 », « 6ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Adersen » est conforme à l'image (la graphie correcte serait Andersen). Aucune correction nécessaire."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "« B) Compréhension : » et « 1) a- Est-ce que… » sont fusionnés, et le préfixe « [B) 1) a-] » est dupliqué. La question principale est bien présente."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte support (suite et fin) : lire le texte.",
+      "body": "Le paysan raconte alors l'histoire du cheval qu'il a échangé contre une vache et ainsi de suite jusqu'aux marrons.\nLe voyageur, amusé par ce qu'il vient d'entendre, invite le paysan à monter dans sa voiture et le ramène à sa petite maison de campagne.\n-Bonsoir, chère vieille.\n-Bonsoir, cher vieux.\n-L'échange est fait. J'ai échangé le cheval contre une vache, ajoute le paysan.\n-Tu t'y connais en affaires, dit la bonne femme. Nous allons avoir beaucoup de lait, du beurre et du fromage.\n-Oui mais après, j'ai échangé la vache contre un mouton.\n-Cela vaut mieux. Avec sa laine, je tricoterai des vêtements bien chauds pour l'hiver. Comme tu fais bien les choses.\n-Ce n'est pas fini, ma vieille. J'ai échangé le mouton contre une oie.\n-Voilà qui est bien fait, mon cher vieux. Nous aurons donc une belle oie rôtie à Noël.\n-Mais je n'ai plus cette oie. Je l'ai échangée contre une poule.\n- Une poule, dit la vieille. Elle pondra des œufs et elle les couvera. De jolis poussins en sortiront. J'aurai ainsi une basse-cour.\n- Ce n'est plus cela, ma chère vieille. J'ai échangé la poule contre un sac de marrons.\n-Quoi ? Est-ce vrai ? Comme je suis contente.\nJ'en donnerai aux voisins et je garderai le reste pour l'hiver. Et elle prend son mari entre ses bras et le serre fortement. Le voyageur, étonné par ce qu'il vient d'entendre, part sans attirer leur attention.\nD'après un conte d'Adersen",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p107_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B) 1) a-",
+      "instruction": "B) Compréhension : Est-ce que le vieux et la vieille sont riches ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p107_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

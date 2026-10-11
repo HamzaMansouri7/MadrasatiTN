@@ -1,0 +1,181 @@
+{
+  "book": "examen_lecture_arabe_corrige",
+  "page": 5,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Examen de lecture en arabe : compréhension d'un texte sur le projet de Salem (terre, eau, gens), corrigé",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "مع2أ",
+      "instruction": "واجه سالمٌ عِدَّةَ صعوباتٍ وتَحَدِّيَاتٍ تتعلَّقُ بِــعدّة نواحٍ . صَنِّفْهَا فِي الْجدولِ :",
+      "body": "جدول من ثلاثة أعمدة: الأَرْضُ / الْماءُ / النَّاسُ",
+      "figureDesc": "جدول بثلاثة أعمدة (الأرض، الماء، الناس) مع إجاباته بالأحمر ومربع للتنقيط على اليمين",
+      "answer": "الأرض: أراضٍ قاحلة، ميّتة، جافّة، رمليّة. الماء: قلّة مياه الأمطار / عمق المياه الجوفيّة وصعوبة تفجّر الآبار المحفورة بالماء / صعوبة الوصول إلى الماء. الناس: التّشكيك فِي قدرته على النّجاح وانتقاده والاستخفاف به وإحباطه / تثبيط عزيمته",
+      "confidence": 0.93,
+      "id": "examen_lecture_arabe_corrige_p005_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2ج",
+      "instruction": "اُذْكُرْ قَرِينَةً عن كُلِّ صُعُوبَةٍ",
+      "body": "",
+      "figureDesc": "",
+      "answer": "الأرْضُ: \"مَا عَسَاهُ يَفْعَلُ فِي هَذِهِ الأَرَاضِي المَيِّتَةِ وَ الرِّمَالِ السَّافِيَةِ \"/ فَأَصَابَ الجَفَافُ الأَرْضَ\". الماءُ: \"لَكِنَّ السَّمَاءَ أَمْسَكَتْ عن الأَمْطَارِ\" \"لِأَنَّ المَاءَ كَانَ أَبْعَدَ مِمَّا تَوَقَّعَ\". النّاسُ: \"هُوَ فِي كُلِّ ذَلِكَ مَحَلَّ التَّعَالِيقِ المُخْتَلِفَةِ وَ مَدَارَ حَدِيثِ الجَمِيعِ فِي جَلْسَاتِهِمْ فَهُمْ يَشُكُّونَ فِي قُدْرَتِهِ عَلَى إِنْجَاحِ المَشْرُوعِ وَ قَدْ نَصَحَهُ البَعْضُ بِالعُدُولِ عَنْه\"",
+      "confidence": 0.9,
+      "id": "examen_lecture_arabe_corrige_p005_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2أ",
+      "instruction": "اُذْكُرْ سَبَبَيْنِ رئيسيْنِ لنَجَاحِ مَشْرُوعِ سالِمٍ وقُدْرَتِهِ على تَجَاوُزِ الصّعابِ :",
+      "body": "السبب الأوّلُ :\nالسّببُ الثّانِي :",
+      "figureDesc": "",
+      "answer": "السبب الأوّلُ: حبّ الأرض والتّعلّق بها والرّغبة فِي تعميرها. السّببُ الثّانِي: الإرادة والإصرار والعزيمة والثّقة فِي النّفس وتجاهل المحبطين وآراء الآخرين السّلبيّة.",
+      "confidence": 0.93,
+      "id": "examen_lecture_arabe_corrige_p005_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أسْنِدْ عُنْوانًا مناسِبًا لِلنَّصِّ :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "حلم يتحقّق / إرادة لا تُقْهرُ / التّحدّي / لا أرْضَى بغير أرضي بديلا / وأخيرا اخضرّت / لا مستحيل مع الإرادة / حبّ العمل / حبّ الأرض / من سار على الدّرب وصل / يسْرٌ بعد عسْرٍ / العزيمة وقود النّجاح / قاهر الصّعاب",
+      "confidence": 0.9,
+      "id": "examen_lecture_arabe_corrige_p005_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2ب",
+      "instruction": "فِي النّصِّ مفردتانِ مُتَضَادَّتانِ اِسْتَخْرِجْهُمَا :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "جَادَّةٌ ≠ هَازِلَةٌ / استحسان # انتقاد",
+      "confidence": 0.92,
+      "id": "examen_lecture_arabe_corrige_p005_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اِشْرَحْ حسبَ السِّيَاقِ :",
+      "body": "لَكِنَّ السَّمَاءَ أَمْسَكَتْ عَنِ الأَمْطَارِ\nلَكِنَّ سالِمًا لَمْ يَأْبَهْ لِذلكَ",
+      "figureDesc": "",
+      "answer": "أَمْسَكَتْ عَنِ الأَمْطَارِ = حبست الأمطار / منعت الأمطار / حجبت / أوقفت الأمطار / شحّت / اِنقطعت عن الأمطار / توقّفت عن الأمطار. لم يَأْبَهْ: لم يهتمَّ / لم يُعِرْ اهتماما / لم يكترث / لم يُبَالِ / تجاهل / لم يستمعْ / لم يُنْصت / لم يُصْغِ",
+      "confidence": 0.9,
+      "id": "examen_lecture_arabe_corrige_p005_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.31
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un examen de compréhension de lecture en arabe (texte sur le projet de Salem : classement des difficultés, titre, antonymes, explication contextuelle), qui n'est pas lié à un seul chapitre précis (unités 1 à 6 sur la narration) et dont on ne voit pas le type de passage dominant.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    4
+  ],
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de lecture : projet de Salem",
+    "skill": "Comprendre un texte narratif en arabe : classer des difficultés, justifier par des indices, dégager les causes d'une réussite, titrer, relever des antonymes et expliquer des expressions selon le contexte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "texte arabe",
+      "antonymes",
+      "titre du texte",
+      "indices textuels",
+      "vocabulaire en contexte"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série de questions de compréhension sur un récit de projet agricole : classer les obstacles (terre, eau, gens) dans un tableau, justifier chacun par un indice du texte, identifier les facteurs de réussite, donner un titre, relever des contraires et expliquer des expressions figurées. Le modèle est transposable à d'autres textes de défi ou d'entrepreneuriat rural.",
+    "corrige": "non fourni dans le contenu",
+    "themeGroup": "Compréhension de l'écrit"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«أراضٍ قاحلة»: l'image montre «أراض قاحلة» sans tanwin visible; la transcription ajoute un tanwin (ٍ) absent de l'image"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«جافّة، رمليّة»: l'image porte «جافّة،رمليّة» avec « جافّة » suivi d'une virgule sans espace; différence négligeable"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الأَرَاضِي» dans la citation: l'image montre «الأَرَاضِي» avec «الأَرْضِي» (هَذِهِ الأَرَاضِي); la transcription écrit «الأَرَاضِي», alors que l'image montre «الأَرْضِي»"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«قُدْرَتِهِ» dans «قُدْرَتِهِ عَلَى» est correct, mais «إِنْجَاحِ» est ok; «أُذْكُرْ» dans l'image porte une hamza avec damma (أُذْكُرْ) alors que la transcription écrit «اُذْكُرْ»"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«لَكِنَّ السَّمَاءَ أَمْسَكَتْ عن الأَمْطَارِ» : dans l'image «عن» est souligné et sans tashkeel; la transcription met «عَنِ» dans la partie «اِشْرَحْ» alors que l'image montre «عَنِ» avec voyelles, ok"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane «MOURAJAA.COM» et les cases de notation à droite ne sont pas transcrits (non essentiel)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«إِرادة لا تُقْهرُ»: l'image montre «إرادة لا تُقْهرُ» sans voyelles sur «إرادة»; transcription cohérente"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans «السبب الأوّلُ» le deux-points est placé différemment; mise en forme du tableau/liste inventée pour les cellules vides (colonnes «السبب الأوّلُ :» présentées comme tableau)"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Examen de lecture 6ème année — Arabe (corrigé)"
+}

@@ -1,0 +1,90 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 40,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المشهد الريفي المحلي: أنواعه وعناصره (note : la page traite du paysage rural, pas de mathématiques)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المشهد الريفي المحلي أنواعه عناصره",
+      "body": "يعتبر المشهد الريفي صورة وقتية لمجال هيّأه الإنسان لتعاطي الفلاحة، وهو يتغيّر حسب الفصول، ففي فصل الربيع يغلب عليه اللون الأخضر نتيجة كثرة الأعشاب والزراعات، في حين يصفر في فصل الصيف منبّأ بحلول فصل الحصاد، أمّا خريفا وشتاء فيكون المشهد الريفي خاليا من النباتات وتكون الأشجار عارية من الأوراق",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p040_i1",
+      "topicId": "hg-5-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أنواع المشهد الريفي",
+      "body": "ينقسم المشهد الريفي إلى نوعين: مشهد ريفي مسيّج وتكون فيه قطع الأرض محدودة إمّا بسياج طبيعي كالأشجار والنباتات، أو بسياج اصطناعي كالأسلاك الشائكة والحجارة، ومشهد ريفي مفتوح تكون فيه الأراضي غير محدودة",
+      "figureDesc": "Les mots « مشهد ريفي مسيّج » et « مشهد ريفي مفتوح » sont soulignés.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p040_i2",
+      "topicId": "hg-5-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "عناصر المشهد الريفي",
+      "body": "تتمثل عناصر المشهد الريفي في: المجال الزراعي: يتكون المجال الزراعي من الحقول، تتركز فيها خاصة الزراعات البعلية والتي تعتمد أساسا على الأمطار وتتمثل بالأساس في زراعة الحبوب كالقمح والشعير. البساتين، والتي يتمّ فيها غراسة الأشجار المثمرة وأشجار الزيتون، والتي تعتمد على السقيمن الآبار والعيون المائية. التجهيزات: إضافة إلى المجال الزراعي يتكون المشهد الريفي من التجهيزات التي تعتبر إحدى العوامل المساهمة في تطور هذا المشهد",
+      "figureDesc": "Les mots « المجال الزراعي » et « التجهيزات » sont soulignés ; « الحقول » et « البساتين » sont en bleu.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p040_i3",
+      "topicId": "hg-5-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "hg-5-u4",
+  "topicTitle": "Unité 4 : Géographie - Paysages ruraux et urbains en Tunisie",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-5-u4",
+    "confidence": 0.26
+  },
+  "topicSubject": "Histoire & Géographie",
+  "topicReason": "La page décrit le paysage rural tunisien (types ouvert/clos, éléments : espace agricole, champs, vergers, équipements), ce qui correspond à l'unité de géographie sur les paysages ruraux et urbains en Tunisie.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Histoire-Géographie",
+    "theme": "Le paysage rural local",
+    "skill": "Distinguer les types de paysage rural (clos, ouvert) et identifier ses éléments (champs, vergers, habitat).",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "paysage rural",
+      "paysage clos",
+      "paysage ouvert",
+      "agriculture pluviale",
+      "vergers",
+      "saisons"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable pour des infographies comparant paysage clos et ouvert, des exercices de classement des éléments du paysage (champs, vergers) et des questions sur l'évolution saisonnière du paysage rural.",
+    "themeGroup": "Le paysage rural"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Histoire-Géographie"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

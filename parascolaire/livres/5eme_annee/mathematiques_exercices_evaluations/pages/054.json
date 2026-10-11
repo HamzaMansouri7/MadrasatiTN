@@ -1,0 +1,158 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 54,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 29: أتصرّف في وحدات قيس الزمن: الساعة - الدقيقة - الثانية (ملاحظة : المحتوى الفعلي رياضيات)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "29",
+      "instruction": "الدَّرس 29 : أَتَصَرَّفُ في وحدات قيس الزمن: الساعة - الدقيقة - الثانية",
+      "body": "عنوان الدرس في أعلى الصفحة",
+      "figureDesc": "شريط عنوان زخرفي مع رقم 5 (السنة) في الزاوية اليسرى",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p054_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حَوِّلِ الأَقْيِسَةَ الزَّمَنِيَّةَ إِلَى الوِحْدَةِ المَطْلُوبَةِ :",
+      "body": "جدول الزمن بـ: الساعات / الدقائق / الثواني. السطر الأول (الساعات) من اليمين إلى اليسار: فارغة، 3، فارغة، نصف ساعة، فارغة، ربع ساعة. السطر الثاني (الدقائق): فارغة، فارغة، 60، فارغة، فارغة، فارغة. السطر الثالث (الثواني): فارغة، فارغة، فارغة، 7200 (في العمود الثاني من اليسار)، فارغة، فارغة.",
+      "figureDesc": "جدول من ثلاثة أسطر (الساعات، الدقائق، الثواني) وست خانات لكل سطر، بعضها مملوء وبعضها فارغ، مع بيضوية «الزمن بـ»",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_evaluations_p054_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حَوِّلْ كُلَّ مُدَّةٍ زَمَنِيَّةٍ إِلَى الوِحْدَةِ المَطْلُوبَةِ :",
+      "body": "العمود الأيمن: أ) 2 دق و 15 ث = ........... ث ؛ ب) 720 ث = ........... دق ؛ ج) ثلث ساعة = ........... دق = ........... ث ؛ د) 1 س و 5 دق و 60 ث = ........... دق. العمود الأيسر: هـ) 3 س و 15 ث = ........... ث ؛ و) 2 س و نصف ساعة = ........... دق ؛ ز) نصف دقيقة و 50 ث = ........... ث ؛ ح) ثلث دقيقة و 40 ث = ........... دق",
+      "figureDesc": "ثمانية تمارين في عمودين يفصل بينهما خط عمودي",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p054_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "عَدَّاؤُونَ قَطَعُوا مَسَافَةَ السِّبَاقِ في أَزْمِنَةٍ مُخْتَلِفَةٍ. أُرَتِّبُ هَؤُلاَءِ العَدَّائِينَ حَسَبَ التَّوْقِيتِ مِنَ الأَقْصَرِ إِلَى الأَطْوَلِ.",
+      "body": "العدّاؤون والزمن المستغرق في السباق: أ: 31 دق و 5 ث ؛ ب: 1600 ث ؛ ج: 20 دق و 70 ث ؛ د: 25 دق و 50 ث ؛ هـ: ثلث ساعة. سطر الرتبة فارغ.",
+      "figureDesc": "جدول بثلاثة أسطر: العدّاؤون، الزمن المستغرق في السباق، الرتبة (فارغ)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p054_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اِنْطَلَقَتْ 4 سَيَّارَاتٍ أُجْرَةٍ في نَفْسِ الوَقْتِ ثُمَّ عَادَتْ وَدَخَلَتِ المَحَطَّةَ الرَّئِيسِيَّةَ في أَوْقَاتٍ مُخْتَلِفَةٍ كَمَا يُبَيِّنُهَا الرَّسْمُ. * رَتِّبِ السَّيَّارَاتِ حَسَبَ أَوْقَاتِ عَوْدَتِهَا.",
+      "body": "السيارات من اليمين إلى اليسار: 10 س و 45 دق ؛ 600 دق و 45 ث ؛ 9 س و 75 دق ؛ 8 س و 170 دق. تحت كل سيارة خانة فارغة لكتابة الرتبة.",
+      "figureDesc": "رسم أربع سيارات، على كل واحدة الوقت المكتوب، وتحتها مربع فارغ",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_evaluations_p054_i5",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-5-u1",
+    "confidence": 0.4
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la conversion et la comparaison de durées (heures, minutes, secondes), ce qui correspond à la Période 2 : Nombres décimaux, addition/soustraction et temps.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Conversion des unités de temps",
+    "skill": "Convertir et comparer des durées exprimées en heures, minutes et secondes.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "unités de temps",
+      "heures",
+      "minutes",
+      "secondes",
+      "conversion",
+      "classement de durées"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : tableau de conversion à compléter avec fractions d'heure, séries de durées à convertir, et classement de durées mixtes (coureurs, taxis) du plus court au plus long, avec pièges de type 70 s ou 75 min.",
+    "themeGroup": "Mesures de durées"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre: 'قيس الزمن' — l'image indique 'قيس' mais lisible; 'الثانية' ok. Le titre est transcrit sans voyelles alors que partiellement visibles ('أَتَصَرَّفُ' est inventé, l'image montre 'أتصرف' sans tashkeel clair)"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 4: 'سَيَّارَاتٍ أُجْرَةٍ' — l'image dit 'سَيَّارَاتٍ أُخْرَى' (أخرى), pas 'أجرة'"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4: 'الرَّسْمُ' ok; mais 'أَوْقَاتٍ' ok. 'اِنْطَلَقَتْ 4 سيارات أخرى' : le mot 'أُخْرَى' manque/est remplacé"
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 1: l'ordre des cellules est incorrect. De droite à gauche, ligne des heures: 3, vide, نصف ساعة, vide, ربع ساعة (5 colonnes de données, pas 6). La transcription met 6 cellules avec 'فارغة' initiale en trop"
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 1: ligne des minutes: 60 est dans la 2e colonne depuis la gauche... en fait de droite à gauche: vide, 60, vide, vide, vide — la transcription place 60 en 3e position; 7200 est en 4e depuis la droite (2e depuis la gauche) ce qui est correct, mais le nombre de colonnes (5) est faux (6 annoncées)"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 2 (ح): 'ثلث دقيقة و 40 ث' correct; exercice (د) '60 ث' correct; mais l'ordre des colonnes: la colonne droite contient 2 دق و 15 ث, 720 ث, ثلث ساعة, 1 س و 5 دق و 60 ث — correct"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3: la ligne 'العدّاؤون' utilise les lettres أ ب ج د هـ; le tashkeel visible de 'السباق' (السِّبَاقِ) correct; ligne 'الرتبة' ok. Pas d'omission majeure"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

@@ -1,0 +1,127 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 8,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الأعداد وقياس الكتل والمبالغ المالية: التحويل (الكغ والدينار) والترتيب والمقارنة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "حَوِّلْ كُتَلَ الإِنْتَاجِ فِي الْجَدْوَلِ السَّابِقِ بِالْكِغ:",
+      "body": "جدول فيه المنتوج: بطاطا، طماطم، فلفل، بطيخ ودلاع. الصف: سنة 2000. الخانات فارغة لتعمرها.",
+      "figureDesc": "جدول من خمسة أعمدة: المنتوج (بطاطا، طماطم، فلفل، بطيخ ودلاع) وصف واحد لسنة 2000 بخانات فارغة منقطة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p008_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "رَتِّبِ الْمُنْتُوجَ حَسَبَ كُتْلَتِهِ مِنَ الأَكْثَرِ إِلَى الأَقَلِّ:",
+      "body": "سطر منقط لكتابة الترتيب.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p008_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ- حَوِّلِ الْمَبَالِغَ الْمَالِيَّةَ إِلَى الدِّينَارِ.",
+      "body": "تَلْتَزِمُ وِزَارَةُ التَّرْبِيَةِ وَالتَّكْوِينِ إِنْجَازَ الْمَشَارِيعِ التَّالِيَةِ: بِنَاءُ مَعَاهِدَ ثَانَوِيَّةٍ، بِنَاءُ مَدَارِسَ إِعْدَادِيَّةٍ، إِضَافَةُ أَقْسَامٍ لِمَدَارِسَ ابْتِدَائِيَّةٍ، بِنَاءُ مَبِيتَاتٍ لِلطَّلَبَةِ، بِنَاءُ وَتَهْيِئَةُ مَلَاعِبَ رِيَاضِيَّةٍ.",
+      "figureDesc": "جدول بثلاثة أعمدة: المشروع / المبلغ بالألف دينار / المبلغ بالدينار (فارغ). بناء أقسام: 2 251 500؛ بناء معاهد ثانوية: 720 000؛ بناء مدارس إعدادية: 683 400؛ بناء مبيتات: 95 760؛ بناء وتهيئة ملاعب رياضية: 2 502 000",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p008_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "ب",
+      "instruction": "مَا هُوَ الْمَشْرُوعُ الَّذِي رَصَدَتْ لَهُ الْوِزَارَةُ أَكْبَرَ مَبْلَغٍ؟ مَاهُوَ الْمَبْلَغُ؟",
+      "body": "سطران منقطان للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p008_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "ج",
+      "instruction": "مَا هُوَ الْمَشْرُوعُ الَّذِي رَصَدَتْ لَهُ الْوِزَارَةُ أَصْغَرَ مَبْلَغٍ؟ مَاهُوَ هَذَا الْمَبْلَغُ؟",
+      "body": "سطران منقطان للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p008_i5",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "د",
+      "instruction": "رَتِّبِ الْمَبَالِغَ الْمَالِيَّةَ الَّتِي رَصَدَتْهَا الْوِزَارَةُ لإِنْجَازِ مَشَارِيعِهَا.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p008_i6",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.16
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la conversion des masses en kg (production agricole) et sur la conversion, la comparaison et l'ordre de sommes d'argent en dinars, ce qui correspond à la Période 4 (masses, quintal/tonne), même si les montants en dinars pourraient aussi relever des grands nombres de la Période 1.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Conversion de masses et de montants",
+    "skill": "Convertir des masses en kg et des sommes d'argent en dinars, puis les comparer et les ranger dans l'ordre.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "probleme"
+    ],
+    "keywords": [
+      "conversion",
+      "kilogramme",
+      "dinar",
+      "comparaison",
+      "rangement",
+      "tableau de données"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : des données réelles (production agricole, budget du ministère de l'Éducation pour des projets scolaires) à convertir dans une même unité, puis à comparer, à classer et à interpréter en cherchant le maximum et le minimum.",
+    "themeGroup": "Mesures de masses et de capacités"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

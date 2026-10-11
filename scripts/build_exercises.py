@@ -3,7 +3,7 @@ import json, collections, sys, re, unicodedata
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_original_frozen/_archive')
+A = Path('parascolaire_frozen/_archive')
 
 TAG_FORMAT_MAP = {
     'appariement': 'matching',

@@ -1,0 +1,195 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 112,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Français – Conjugaison (Sous domaine 3) et Orthographe (Sous domaine 4) : thème des énergies renouvelables. La page ressemble à un sujet d'examen et non à une leçon de mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "18",
+      "instruction": "Mets le verbe au présent de l'indicatif : (1pt)",
+      "body": "-Tout le monde (utiliser)................................. l'énergie renouvelable.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "soutien_maths_francais_p112_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "19",
+      "instruction": "Conjugue le verbe entre parenthèses au futur simple : (1pt)",
+      "body": "-Vous (aller)........................ découvrir cette nouvelle énergie.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "soutien_maths_francais_p112_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "20",
+      "instruction": "Mets le verbe conjugué au passé composé : (1pt)",
+      "body": "- Elle se met à crier. ..............................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p112_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "21",
+      "instruction": "Conjugue le verbe à l'imparfait de l'indicatif : (1pt)",
+      "body": "-Jadis, personne ne (connaître)................................. les énergies renouvelables.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p112_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "22",
+      "instruction": "Transforme cette phrase au mode impératif : (1pt)",
+      "body": "-Tu respectes l'environnement. ..............................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p112_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "23",
+      "instruction": "Conjugue le verbe entre parenthèses au mode convenable : (1pt)",
+      "body": "Si tout le monde utilisait l'énergie renouvelable, la terre (être)..................... moins polluée.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p112_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "24",
+      "instruction": "Mets les accents convenables : (1pt)",
+      "body": "- Les eoliennes servent aussi a pomper l'eau.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p112_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "25",
+      "instruction": "Forme le pluriel des noms suivants : (1pt)",
+      "body": "-Un chacal : ............................... -Un hibou : .............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p112_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "26",
+      "instruction": "Complète par « tout / toute / tous / toutes) (1pt)",
+      "body": "-............les voitures sont dotées maintenant de systèmes automatisés.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p112_i9",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.27
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de conjugaison et d'orthographe qui couvre plusieurs temps (présent, futur simple, passé composé, imparfait, impératif, conditionnel) et des règles d'orthographe, donc plusieurs modules à la fois; le thème des énergies renouvelables ne correspond clairement à aucun module unique, même si le module 5 « Sauver la nature » s'en approche.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Conjugaison et orthographe : énergies renouvelables",
+    "skill": "Conjuguer des verbes à différents temps et modes et appliquer des règles d'orthographe (accents, pluriel des noms, accord de « tout ») dans des phrases sur les énergies renouvelables.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "conjugaison",
+      "orthographe",
+      "énergies renouvelables",
+      "temps et modes",
+      "pluriel des noms",
+      "accents"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série d'items courts notés sur 1 point, chacun ciblant un point de langue distinct (présent, futur, passé composé, imparfait, impératif, conditionnel, accents, pluriel, accord de « tout ») et reliés par un fil thématique écologique commun, ce qui donne un modèle d'évaluation de langue contextualisée facile à reprendre avec un autre thème.",
+    "themeGroup": "Conjugaison"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes « Sous domaine 3 : Conjugaison (6 pts) » et « Sous domaine 4 : Orthographe (3 pts) » visibles sur l'image ne sont pas transcrits."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le champ « réponse: None » ne figure pas sur l'image. C'est un ajout de format et non du texte de la page."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane « www.escuila.info » en bas de page n'est pas transcrit."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

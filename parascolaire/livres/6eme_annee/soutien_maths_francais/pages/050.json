@@ -1,0 +1,154 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 50,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المجال الرئيسي الثاني : الهندسة — construction d'angle et de bissectrice, somme des angles d'un triangle, parallélogramme, symétrie axiale",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أ) أنشئ زاوية AÔB قياسها °150، ثم أنشئ [OI) منصفا للزاوية AÔB باستعمال الأدوات الهندسية المناسبة. (3ن)",
+      "body": "المجال الرئيسي الثاني : الهندسة (11 نقطة)",
+      "figureDesc": "Cadre avec une construction manuscrite en rouge et crayon : angle AÔB de 150° (demi-droites OA et OB), arcs de construction et bissectrice [OI) tracée au crayon, angle marqué en O.",
+      "answer": "Angle AÔB de 150° construit au rapporteur ; bissectrice [OI) construite au compas (arcs de cercle), chaque demi-angle mesurant 75°.",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p050_i1",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "لاحظ المثلث جانبه ثم أحسب قياس الزاوية JÊF بدون استعمال الأدوات الهندسية. (2ن)",
+      "body": "Triangle JEF avec l'angle en J = 46° et l'angle en F = 108°. Lignes pointillées pour rédiger la réponse.",
+      "figureDesc": "Triangle JEF : angle en J de 46°, angle en F de 108°, angle en E marqué (inconnu).",
+      "answer": "JÊF = 180° − (FĴE + JF̂E) = 180° − (46° + 108°) = 180° − 154° = 26°",
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p050_i2",
+      "topicId": "math-6-p4",
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أنشئ متوازي أضلاع LMNO حيث LM = 5cm و MN = 4cm. (2ن)",
+      "body": "",
+      "figureDesc": "Cadre contenant un parallélogramme LMNO tracé à la main, avec marques d'égalité des côtés opposés (LM = ON, LO = MN) et arcs de construction en O.",
+      "answer": "Parallélogramme LMNO construit avec LM = 5 cm, MN = 4 cm ; côtés opposés codés de même longueur.",
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p050_i3",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "لاحظ الشكل أسفله ثم أنشئ مماثلا له بالنسبة لمحور التماثل (d) : (2ن)",
+      "body": "",
+      "figureDesc": "Quadrillage avec un trapèze noir à gauche de l'axe vertical (d) ; à droite, le symétrique tracé et colorié en rouge par l'élève.",
+      "answer": "Trapèze symétrique par rapport à (d) tracé à droite de l'axe (colorié en rouge).",
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p050_i4",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p4",
+  "topicTitle": "Période 4 : Solides, aires latérales/totales et angles",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-6-p4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p4",
+    "confidence": 0.4
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la géométrie (construction d'un angle de 150° et de sa bissectrice, somme des angles d'un triangle, symétrie axiale), ce qui correspond à la Période 4 (angles et symétrie), mais elle ressemble à un devoir de synthèse incluant aussi le parallélogramme (Période 2), donc le rattachement n'est pas totalement univoque.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    47,
+    48
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Géométrie : angles, parallélogramme, symétrie",
+    "skill": "Construire un angle et sa bissectrice, calculer un angle d'un triangle, tracer un parallélogramme et le symétrique d'une figure",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "autre"
+    ],
+    "keywords": [
+      "bissectrice",
+      "somme des angles du triangle",
+      "parallélogramme",
+      "symétrie axiale",
+      "construction géométrique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Sujet de devoir de géométrie en quatre exercices courts à barème détaillé (construction avec instruments, calcul d'angle sans instruments, tracé d'un parallélogramme à dimensions données, figure symétrique par rapport à un axe), qui peut servir de modèle de structure d'évaluation.",
+    "themeGroup": "Angles et symétrie axiale"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "self_contained",
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « المجال الرئيسي الثاني : الهندسة (11 نقطة) » figure en haut de la page, avant l'exercice 7, et non après. Il est précédé de « II. » qui est omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« [OI) » : l'image montre « [OI) » avec la parenthèse ouvrante, mais le texte arabe indique « (OI] » ; la notation est ambiguë. Le texte visible est « [OI) ». Rien de grave."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« °150 » : l'ordre visible est « °150 » ; le texte est correct. Le mot « أ) » est bien présent, mais le numéro est « 7. أ) » et la transcription omet le point."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La réponse de l'exercice 7 précise « construit au rapporteur », « arcs de cercle » et « 75° » : ce sont des déductions, pas du texte visible. Sur l'image, on voit seulement l'angle, des arcs de compas et la bissectrice."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 8 : l'angle de 46° est en J et celui de 108° en F, ce qui est correct. La réponse manuscrite utilise « FĴE + JF̂E », alors que l'image montre « FĴE + JF̂E » avec une notation approximative. L'opération 180−(46+108)=26 est correcte."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 9 : « côtés opposés codés de même longueur » est une description ; LM et ON portent le même codage (traits), MN et LO aussi. La description est acceptable. Le sommet O est bien présent."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 10 : « Trapèze… colorié en rouge » est correct, mais l'axe (d) est vertical entre les deux figures, ce qui n'est pas précisé."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

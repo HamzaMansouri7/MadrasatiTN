@@ -1,0 +1,266 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 29,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الوصف (وسائل الوصف ونظامه ومبادئه) وخاتمة الرسالة والإمضاء",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوصف",
+      "body": "وسائل الوصف: التشبيه، التفضيل، التمييز، المفعول المطلق، النعوت، الأحوال.\nنظام الوصف: وصف شخصية، وصف المشاهد، وصف البنايات.\nمبادئ الوصف: الكل، الأجزاء، العام، الخاص، الخارج، الداخل، من أعلى.",
+      "figureDesc": "جدول من ثلاثة أعمدة: وسائل الوصف، نظام الوصف، مبادئ الوصف.",
+      "answer": null,
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "production_ecrite_arabe_p029_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ختم الرسالة",
+      "body": "اللهم أقدرني أن أرد لك بعضا من جميلك\nوكل عام وأنت بخير يا والدتي العزيزة\nوختاما أقبلك راجيا أن أجتمع بك في القريب\nوإلى لقاء قريب بإذن الله\nوالسلام عليكم ورحمة اله وبركاته\nوأخيرا أبلغك سلام كل العائلة\nفإني أدعوالله مخلصا أن يديم جمعنا",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "production_ecrite_arabe_p029_i2"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "التحيات والأشواق",
+      "body": "لا أدري بأي لسان أعبر لك عن\nترقرقت عيناي دموعا وأنا أخط لك\nفإني لا أحمل القلم حتى تسبقني دموعي\nما يخالج نفسي من عذاب وألم فراقك يا\nنحن نجلك ونتذكرك دائما أطلب من الله أن\nويسلم عليك من أعماق قلوبهم كل من\nوتقبل قبلات",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "production_ecrite_arabe_p029_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الامضاء",
+      "body": "ابنك العزيز   ابنك الصغير   قرة\nولدك المشتاق\nزوجتك المحبة   أختك الحبيبة\nصديقك الذي لا ينساك   رفيقك\nتلميذك النجيب دائما   تلميذتك\n\nأخوك في   المخلص   العاجل\nاللهعينك\nالذكية على الدوام",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "production_ecrite_arabe_p029_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u4",
+  "topicTitle": "Unité 4 : Description et caractérisation des personnages",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "ar-4-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.18
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite des moyens et principes de la description (personnages, scènes, bâtiments) et des formules de conclusion et de signature d'une lettre ; la matière est l'arabe, mais aucune unité officielle ne correspond exactement, et la plus proche, l'Unité 4 (description des personnages), ne couvre pas la rédaction de lettres.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description et lettre à sa mère",
+    "skill": "Employer les moyens et principes de la description et rédiger les formules de salutation, de clôture et de signature d'une lettre personnelle.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "description",
+      "lettre personnelle",
+      "formules de politesse",
+      "signature",
+      "moyens de description",
+      "nostalgie familiale"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque de formules prêtes à l'emploi (salutations, clôture, signatures) et récapitulatif des moyens et principes de la description, réutilisables pour des exercices de rédaction de lettre à un proche éloigné ou pour des tableaux de classement des procédés descriptifs.",
+    "themeGroup": "Dialogue et lettre"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le titre «الوصف» (en bas à droite, après «أخوك في الله المخلص») est placé en tête de la transcription alors qu'il apparaît après le tableau. L'ordre des blocs est incohérent : le tableau est suivi de «ختم الرسالة», puis les fragments de signature (أخوك في الله المخلص، العاجل، الذكية على الدوام) sont déplacés à la fin."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Fragment «الله عينك» (en fin de ligne à droite de l'image) : il est transcrit «قرة عينك» dans la signature, mais dans l'image «عينك» est à côté de «العاجل» et «الله»; «قرة ولدك المشتاق» est coupé et déformé (la transcription ne garde pas «قرة ... ولدك المشتاق» tel quel)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les lignes du paragraphe «التحيات والأشواق» sont incomplètes: «لا أدري بأي لسان أعبر لك عن» est suivi de lignes tronquées, mais cela correspond à l'image; en revanche, «ختم الرسالة» est mal placé: le texte de la lettre apparaît sous le titre mais la ligne «وكل عام وأنت بخير يا والدتي العزيزة» est correcte."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ponctuation par virgules ajoutée dans les listes (التشبيه، التفضيل…) alors que dans l'image ce sont des lignes séparées; acceptable mais structure tabulaire perdue."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "«تلميذتك» et «الذكية على الدوام» sont regroupés avec «أخوك في الله المخلص، العاجل» comme une seule ligne, ce qui n'est pas dans l'image: ce sont des fragments séparés de la mise en page."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«ابنك الصغير» et «قرة عينك»: dans l'image on lit «ابنك الصغير قرة ولدك المشتاق»; la transcription réarrange l'ordre des mots."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Dans la signature, l'image porte «قرة» en fin de ligne puis «ولدك المشتاق» à la ligne suivante. La transcription a inséré «عينك» après «قرة» et écrit «قرة عينك», ce qui n'est pas dans le texte à cet endroit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le fragment «اللهعينك» (collé, en haut à droite, sous «العاجل») est absent en tant que tel. Son «عينك» a été déplacé vers «قرة», et son «الله» a été fusionné dans «أخوك في الله المخلص»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "L'image écrit «ورحمة اله وبركاته» (sans le lam). La transcription a normalisé en «الله». De même, l'image écrit «أدعوالله» (collé) et le titre «الامضاء» (sans hamza), alors que la transcription met «أدعو الله» et «الإمضاء»."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre «الوصف» apparaît dans l'image sous le tableau, au milieu des fragments de signature. La transcription le met en tête, comme titre du tableau. C'est discutable plutôt qu'une erreur nette, et le tableau lui-même est correctement transcrit."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوصف",
+      "body": "وسائل الوصف: التشبيه، التفضيل، التمييز، المفعول المطلق، النعوت، الأحوال.\nنظام الوصف: وصف شخصية، وصف المشاهد، وصف البنايات.\nمبادئ الوصف: الكل، الأجزاء، العام، الخاص، الخارج، الداخل، من أعلى.",
+      "figureDesc": "جدول من ثلاثة أعمدة: وسائل الوصف، نظام الوصف، مبادئ الوصف.",
+      "answer": null,
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_production_ecrite_4eme_p029_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ختم الرسالة",
+      "body": "اللهم أقدرني أن أرد لك بعضا من جميلك\nوكل عام وأنت بخير يا والدتي العزيزة\nوختاما أقبلك راجيا أن أجتمع بك في القريب\nوإلى لقاء قريب بإذن الله\nوالسلام عليكم ورحمة اله وبركاته\nوأخيرا أبلغك سلام كل العائلة\nفإني أدعوالله مخلصا أن يديم جمعنا",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_production_ecrite_4eme_p029_i2"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "التحيات والأشواق",
+      "body": "لا أدري بأي لسان أعبر لك عن\nترقرقت عيناي دموعا وأنا أخط لك\nفإني لا أحمل القلم حتى تسبقني دموعي\nما يخالج نفسي من عذاب وألم فراقك يا\nنحن نجلك ونتذكرك دائما أطلب من الله أن\nويسلم عليك من أعماق قلوبهم كل من\nوتقبل قبلات",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_production_ecrite_4eme_p029_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الامضاء",
+      "body": "ابنك العزيز   ابنك الصغير   قرة\nولدك المشتاق\nزوجتك المحبة   أختك الحبيبة\nصديقك الذي لا ينساك   رفيقك\nتلميذك النجيب دائما   تلميذتك\n\nأخوك في   المخلص   العاجل\nاللهعينك\nالذكية على الدوام",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_production_ecrite_4eme_p029_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوصف",
+      "body": "وسائل الوصف: التشبيه، التفضيل، التمييز، المفعول المطلق، النعوت، الأحوال.\nنظام الوصف: وصف شخصية، وصف المشاهد، وصف البنايات.\nمبادئ الوصف: الكل، الأجزاء، العام، الخاص، الخارج، الداخل، من أعلى.",
+      "figureDesc": "جدول من ثلاثة أعمدة: وسائل الوصف، نظام الوصف، مبادئ الوصف.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_production_ecrite_4eme_p029_i1",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ختم الرسالة",
+      "body": "اللهم أقدرني أن أرد لك بعضا من جميلك\nوكل عام وأنت بخير يا والدتي العزيزة\nوختاما أقبلك راجيا أن أجتمع بك في القريب\nوإلى لقاء قريب بإذن الله\nوالسلام عليكم ورحمة الله وبركاته\nوأخيرا أبلغك سلام كل العائلة\nفإني أدعو الله مخلصا أن يديم جمعنا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mouayen_production_ecrite_4eme_p029_i2",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "التحيات والأشواق",
+      "body": "لا أدري بأي لسان أعبر لك عن\nترقرقت عيناي دموعا وأنا أخط لك\nفإني لا أحمل القلم حتى تسبقني دموعي\nما يخالج نفسي من عذاب وألم فراقك يا\nنحن نجلك ونتذكرك دائما أطلب من الله أن\nويسلم عليك من أعماق قلوبهم كل من\nوتقبل قبلات",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "mouayen_production_ecrite_4eme_p029_i3",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الإمضاء",
+      "body": "ابنك العزيز، ابنك الصغير، قرة عينك، ولدك المشتاق، زوجتك المحبة، أختك الحبيبة، صديقك الذي لا ينساك، رفيقك، تلميذك النجيب دائما، تلميذتك\nأخوك في الله المخلص، العاجل، الذكية على الدوام",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mouayen_production_ecrite_4eme_p029_i4",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

@@ -1,0 +1,272 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 38,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقييم الرياضيات: السند 6 – المبالغ المالية (المليمات) وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "أَحْسُبُ الْمَبْلَغَ الَّذِي تَـمْلِكُهُ.",
+      "body": "السَّنَدُ 6 : أَخْرَجَتْ أُخْتُ مَلَاكٍ مِنْ جَيْبِهَا 65 مي وَوَجَدَتْ بِحَافِظَةِ نُقُودِهَا 75 مي.",
+      "figureDesc": "سطر منقّط لكتابة الحل. على اليمين خانة تقييم (مع 5) مقسومة إلى خانتين، وعلى اليسار الرقمان 1 و1.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p038_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "أُمَثِّلُ الْمَبْلَغَ الَّذِي تَـمْلِكُهُ بِأَقَلِّ عَدَدٍ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "",
+      "figureDesc": "إطار كبير بخطوط متقطعة فارغ للتمثيل بالقطع النقدية. على اليمين خانة تقييم (مع 5) وعلى اليسار الرقمان 1 و1.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p038_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "أَطْرَحُ سُؤَالًا مُنَاسِبًا ثُمَّ أُنْجِزُ الْحَلَّ.",
+      "body": "أَرَادَتْ أُخْتُ مَلَاكٍ أَنْ تَشْتَرِيَ قِطَعَ حَلْوِيَّاتٍ فَوَجَدَتْ أَنَّهُ يَنْقُصُهَا 55 مي.",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة السؤال والحل.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p038_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "جدول يضم مستويات التملك (انعدام التمَلُّك (---)، التمَلُّك دون الأدنى (--+)، التمَلُّك الأدنى (++-)، التمَلُّك الأقصى (+++)) ومعايير الحد الأدنى (مع1، مع2أ، مع2ب، مع2ج، مع3، مع4) ومعيار التميز (مع5) والحساب الذهني.",
+      "figureDesc": "جدول إسناد الأعداد (الأعمدة بترتيب مع1، مع2أ، مع2ب، مع2ج، مع3، مع4، مع5): انعدام التمَلُّك: 0 في كل الخانات. التمَلُّك دون الأدنى: 0,5؛ 0,5؛ 1؛ 0,5؛ 1؛ 0,5؛ 1. التمَلُّك الأدنى: 1؛ 1؛ 2؛ 1؛ 2؛ 1؛ (3 - 2) لمع5. التمَلُّك الأقصى: 1,5؛ 1,5؛ 3؛ 1,5؛ 3؛ 1,5؛ 4 لمع5. الحساب الذهني: …/4 ؛ …/20 = …/4 + …/16. رقم الصفحة 37.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p038_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-2-p3",
+  "topicTitle": "Période 3 : Nombres jusqu'à 500, soustraction et monnaie (Millimes/Dinar)",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p3",
+    "confidence": 0.23
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation de mathématiques sur les sommes d'argent en millimes (65 mi + 75 mi, monnaie la plus économe, ce qui manque pour un achat), ce qui relève de la Période 3 (monnaie, calcul d'achats), mais elle comporte aussi un tableau d'attribution des notes avec plusieurs critères, ce qui laisse un doute sur le chapitre.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Sommes d'argent en millimes",
+    "skill": "Calculer, représenter et comparer des sommes d'argent en millimes avec des pièces, et formuler une question à partir d'une situation.",
+    "pageType": "mixed",
+    "formats": [
+      "calcul",
+      "probleme",
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "monnaie tunisienne",
+      "millimes",
+      "addition",
+      "pièces de monnaie",
+      "formulation de question",
+      "évaluation par critères"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une même situation d'argent de poche sert à trois tâches : additionner deux sommes, représenter le total avec le moins de pièces, puis inventer une question à partir d'un manque d'argent. La page comprend aussi une grille d'évaluation par critères (minimaux et d'excellence) réutilisable pour concevoir une évaluation par compétences.",
+    "ideaNote_extra": null,
+    "themeGroup": "Monnaie : les millimes"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le support (السَّنَدُ 6 et son texte) est placé après la consigne 14 dans la transcription, alors qu'il la précède dans l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "أَحْسُبُ : l'image porte أَحْسُبُ avec la même vocalisation, mais la transcription ne reprend pas les voyelles de السَّنَدُ 6 : exactement comme dans l'image. Aucune différence nette."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "حَلْوِيَّاتٍ : l'image porte حَلْوِيَّاتٍ (même forme) ; la graphie de الْقِطَعِ est écrite الْقِطَعِ dans l'image, sans écart notable."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le numéro de la consigne 14, 15, 16 est présenté entre crochets sans le mot التَّعْلِيمَةُ (التَّعْلِيمَةُ 14/15/16) présent dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases de critère (مع5) à droite des consignes 14 et 15 et les barèmes (1 / 1) à gauche ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le cadre en pointillés pour la représentation (consigne 15), les lignes de réponse et le numéro de page 37 ne sont pas indiqués."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le tableau d'attribution des notes est remplacé par une description en prose, au lieu de ses valeurs réelles : 0 / 0,5 / 1 / 1,5 / 2 / 3 / 4, 3-2, ainsi que le calcul mental 20 = 4 + 16 et /4."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Dans la description du tableau : التمَلُّك دون الأدنى est noté (--+) et التمَلُّك الأدنى (++-) ; l'image montre (+--) et (-++) selon l'ordre de lecture, et les symboles ne sont pas fiables. De plus مع2أ/ب/ج sont ordonnés différemment dans l'image (مع 2 ج، مع 2 ب، مع 2 أ)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Dans la ligne «التمَلُّك الأدنى» du tableau, l'ordre des valeurs est faux. L'image lue de gauche à droite donne 3-2 (مع5), 1 (مع4), 2 (مع3), 1 (مع2ج), 2 (مع2ب), 1 (مع2أ), 1 (مع1). Dans l'ordre مع1 → مع5, cela donne 1، 1، 2، 1، 2، 1، (3-2). La transcription porte 1، 1، 1، 2، 1، 2، (3-2), ce qui attribue de mauvaises valeurs à مع2ب, مع2ج, مع3 et مع4."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le calcul mental est mal restitué. L'image montre une case «…/4» seule au-dessus, puis «…/20 = …/4 + …/16». La transcription écrit «…/16 + …/4 = …/20», dans un ordre différent."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "أَحْسُبُ الْمَبْلَغَ الَّذِي تَـمْلِكُهُ.",
+      "body": "السَّنَدُ 6 : أَخْرَجَتْ أُخْتُ مَلَاكٍ مِنْ جَيْبِهَا 65 مي وَوَجَدَتْ بِحَافِظَةِ نُقُودِهَا 75 مي.",
+      "figureDesc": "سطر منقّط لكتابة الحل. على اليمين خانة تقييم (مع 5) مقسومة إلى خانتين، وعلى اليسار الرقمان 1 و1.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "أُمَثِّلُ الْمَبْلَغَ الَّذِي تَـمْلِكُهُ بِأَقَلِّ عَدَدٍ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "",
+      "figureDesc": "إطار كبير بخطوط متقطعة فارغ للتمثيل بالقطع النقدية. على اليمين خانة تقييم (مع 5) وعلى اليسار الرقمان 1 و1.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "أَطْرَحُ سُؤَالًا مُنَاسِبًا ثُمَّ أُنْجِزُ الْحَلَّ.",
+      "body": "أَرَادَتْ أُخْتُ مَلَاكٍ أَنْ تَشْتَرِيَ قِطَعَ حَلْوِيَّاتٍ فَوَجَدَتْ أَنَّهُ يَنْقُصُهَا 55 مي.",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة السؤال والحل.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "جدول يضم مستويات التملك (انعدام التمَلُّك (---)، التمَلُّك دون الأدنى (--+)، التمَلُّك الأدنى (++-)، التمَلُّك الأقصى (+++)) ومعايير الحد الأدنى (مع1، مع2أ، مع2ب، مع2ج، مع3، مع4) ومعيار التميز (مع5) والحساب الذهني.",
+      "figureDesc": "جدول إسناد الأعداد (الأعمدة بترتيب مع1، مع2أ، مع2ب، مع2ج، مع3، مع4، مع5): انعدام التمَلُّك: 0 في كل الخانات. التمَلُّك دون الأدنى: 0,5؛ 0,5؛ 1؛ 0,5؛ 1؛ 0,5؛ 1. التمَلُّك الأدنى: 1؛ 1؛ 2؛ 1؛ 2؛ 1؛ (3 - 2) لمع5. التمَلُّك الأقصى: 1,5؛ 1,5؛ 3؛ 1,5؛ 3؛ 1,5؛ 4 لمع5. الحساب الذهني: …/4 ؛ …/20 = …/4 + …/16. رقم الصفحة 37.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "أَحْسُبُ الْمَبْلَغَ الَّذِي تَـمْلِكُهُ.",
+      "body": "السَّنَدُ 6 : أَخْرَجَتْ أُخْتُ مَلَاكٍ مِنْ جَيْبِهَا 65 مي وَوَجَدَتْ بِحَافِظَةِ نُقُودِهَا 75 مي.",
+      "figureDesc": "سطر منقّط لكتابة الحل. على اليمين خانة تقييم (مع 5) مقسومة إلى خانتين، وعلى اليسار الرقمان 1 و1.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i1",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "أُمَثِّلُ الْمَبْلَغَ الَّذِي تَـمْلِكُهُ بِأَقَلِّ عَدَدٍ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "",
+      "figureDesc": "إطار كبير بخطوط متقطعة فارغ للتمثيل بالقطع النقدية. على اليمين خانة تقييم (مع 5) وعلى اليسار الرقمان 1 و1.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i2",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "أَطْرَحُ سُؤَالًا مُنَاسِبًا ثُمَّ أُنْجِزُ الْحَلَّ.",
+      "body": "أَرَادَتْ أُخْتُ مَلَاكٍ أَنْ تَشْتَرِيَ قِطَعَ حَلْوِيَّاتٍ فَوَجَدَتْ أَنَّهُ يَنْقُصُهَا 55 مي.",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة السؤال والحل.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i3",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "جدول يضم مستويات التملك (انعدام التمَلُّك (---)، التمَلُّك دون الأدنى (--+)، التمَلُّك الأدنى (++-)، التمَلُّك الأقصى (+++)) ومعايير الحد الأدنى (مع1، مع2أ، مع2ب، مع2ج، مع3، مع4) ومعيار التميز (مع5) والحساب الذهني.",
+      "figureDesc": "جدول إسناد الأعداد: انعدام التمَلُّك: 0 في كل الخانات. التمَلُّك دون الأدنى: مع1 0,5؛ مع2أ 0,5؛ مع2ب 1؛ مع2ج 0,5؛ مع3 1؛ مع4 0,5؛ مع5 1. التمَلُّك الأدنى: 1، 1، 1، 2، 1، 2، (3 - 2) لمع5. التمَلُّك الأقصى: 1,5، 1,5، 3، 1,5، 3، 1,5، 4 لمع5. الحساب الذهني: ‎…/4 ثم ‎…/16 + …/4 = …/20.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p038_i4",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

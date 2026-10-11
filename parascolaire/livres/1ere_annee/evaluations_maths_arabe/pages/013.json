@@ -1,0 +1,89 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 13,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي - تغيير الشخصية في الجملة السردية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُغَيِّرُ الشَّخْصِيَّةَ بِالشَّخْصِيَّةِ الْمَوْجُودَةِ بِالْمَشْهَدِ.",
+      "body": "فِي الصَّبَاحِ، غَسَلَتْ أَمِيرَةُ وَجْهَهَا وَأَطْرَافَهَا، وَنَظَّفَتْ أَسْنَانَهَا، ثُمَّ أَفْطَرَتْ وَذَهَبَتْ إِلَى الْمَدْرَسَةِ.",
+      "figureDesc": "رسم لِوَلَدٍ يُنَظِّفُ أَسْنَانَهُ بِالْفُرْشَاةِ وَالسِّنَوْنِ أَمَامَ الْمَغْسَلَةِ.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p013_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُغَيِّرُ الشَّخْصِيَّةَ بِالشَّخْصِيَّةِ الْمَوْجُودَةِ بِالْمَشْهَدِ.",
+      "body": "دَخَلَتْ أَمِيرَةُ الْقِسْمَ، وَفَتَحَتْ كُرَّاسَهَا، وَأَنْجَزَتِ التَّمْرِينَ.",
+      "figureDesc": "رسم لِتِلْمِيذٍ يَجْلِسُ فِي قَاعَةِ الدَّرْسِ وَيَكْتُبُ فِي كُرَّاسِهِ.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p013_i2",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُغَيِّرُ الشَّخْصِيَّةَ بِالشَّخْصِيَّةِ الْمَوْجُودَةِ بِالْمَشْهَدِ.",
+      "body": "رَنَّ الْجَرَسُ، فَخَرَجَتْ أَمِيرَةُ، وَأَخَذَتْ تَلْعَبُ مَعَ أَصْدِقَائِهَا، تَارَةً تَجْرِي وَطَوْرًا تَقْفِزُ.",
+      "figureDesc": "رسم لِسَاحَةِ الْمَدْرَسَةِ خِلَالَ الِاسْتِرَاحَةِ، حَيْثُ يَلْعَبُ الْأَطْفَالُ وَيَرْكُضُونَ.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p013_i3",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "ar-1-u3",
+  "topicTitle": "Unité 3 : Mon compagnon pour ma santé et ma sécurité",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.76
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page d'expression écrite en arabe suit la routine quotidienne d'Amira (se laver le visage, se brosser les dents, petit-déjeuner, école), ce qui correspond le mieux à l'unité 3 sur l'hygiène et la santé. Mais le thème de l'école et du jeu pourrait aussi relever de l'unité 1, et la page ne précise pas de lettres ni d'unité, donc la confiance reste limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Changement de personnage dans le récit",
+    "skill": "Remplacer le personnage d'une phrase narrative par celui d'une image et accorder les verbes et pronoms en conséquence.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "phrase narrative",
+      "changement de personnage",
+      "accord du verbe",
+      "routine scolaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : récits courts de la journée d'un écolier (matin, classe, récréation) à réécrire en changeant le sujet (fille, garçon, groupe) à partir d'une image, pour travailler l'accord genre/nombre.",
+    "themeGroup": "Personnages, lieux et événements du récit"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

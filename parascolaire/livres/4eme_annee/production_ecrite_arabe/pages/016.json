@@ -1,0 +1,93 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 16,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "معجم الوصف: وصف الطبيعة (الأزهار) والشخصيات (أوصاف خلقية)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "السوسن الأبيض والأقحوان الأصفر والنرجس البنفسجي وشقائق النعمان الحمراء\nتموج الأزهار باعثة رائحة خلابة\nعادت للزهور رائحتها الذكية ونضارتها التي زادتها أشعة الشمس جمالا واشراقا\nتفتحت أزهارها ولاحت براعم طرية تبشر بمواصلة النمو وامتزجت رائحتها الشذية بنسيم عليل\nيوشي خضرتها زهر بري أحمر قان تتوسطه دائرة سوداء وكانت السنابل تحتك ببعضها وتمد أعناقها نحوه كأنها أنست به وردت التحية بتحية رقيقة على تلطفه معها",
+      "figureDesc": "نص داخل إطار، الجزء العلوي من الصفحة: عبارات وصفية للأزهار والطبيعة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p016_i1",
+      "topicId": "ar-4-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الشخصيات  أوصاف خلقية",
+      "body": "مغرورة متعالية لا تحمل الحب أو الود لأحد خبيثة ماكرة كذابة\nشخص نبيل الأخلاق كريم القلب والخلق لعوب طروب جذاب\nلقد اشتهرت بقلبها الرخامي وبقساوة لا يضاهيها فيها أحد\nهو شاب يحمل بين جنبيه قلبا يزخر بالعواطف الشريفة والاحساسات النبيلة وبرغبة صادقة في النفع والإرشاد\nأصبح الطفل مثالا لكمال الأخلاق وحميد الصفات بارعا في المعارف والآداب\nكانت ريم حسنة الأخلاق مهذبة تعطف على الفقراء والمساكين\nكانت الطفلة مطيعة قنوعة وغير متطلبة لها أحلام كثيرة تسعى إلى تحقيقها بالمشقة والعمل الدؤوب\nتحب ابنها الوحيد حبا شديدا لأنه طيب الخلق مطيع يلبي طلباتها\nهو طيب القلب كامل الأخلاق يعطف على الناس ويحب أهله حبا جما\nفلاح طيب القلب يعيش مع زوجته قانعين بما أعطاهما الله راضيين بما أنعم عليهم من خير وفير\nوإذا احتاج إلى شيء طلبه في احترام وأدب وإذا شكا شيئا ذكره في رقة ولطف",
+      "figureDesc": "نص داخل إطار، الجزء السفلي من الصفحة: عنوان بخط غليظ ثم جمل في أوصاف الشخصيات الخلقية",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p016_i2",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u4",
+  "topicTitle": "Unité 4 : Description et caractérisation des personnages",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-4-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.2
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un lexique de description (fleurs, nature) et surtout d'épithètes pour décrire les qualités physiques et morales des personnages (أوصاف خلقية), ce qui correspond à l'Unité 4 : Description et caractérisation des personnages.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Lexique de la description",
+    "skill": "Enrichir son vocabulaire pour décrire la nature (fleurs) et les traits physiques et moraux des personnages dans une production écrite.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "texte_a_trous",
+      "appariement"
+    ],
+    "keywords": [
+      "description",
+      "vocabulaire",
+      "fleurs",
+      "portrait moral",
+      "personnages",
+      "nature"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque de mots et d'expressions classée par catégories (fleurs et couleurs, ambiance printanière, qualités et défauts des personnages), réutilisable pour des exercices d'appariement, de complétion de phrases ou de rédaction d'une description guidée.",
+    "themeGroup": "Lexique et vocabulaire de la production écrite"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre « الشخصيات  أوصاف خلقية » est en gras dans l'image, avec un double espace. La transcription le garde comme en-tête de cellule, ce qui est acceptable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الاحساسات » est transcrit sans hamza, comme dans l'image (الاحساسات). Aucune erreur."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

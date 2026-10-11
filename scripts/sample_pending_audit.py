@@ -1,8 +1,8 @@
 import json, random, os
 from collections import defaultdict
 
-NAMES = json.load(open('parascolaire/_original_frozen/_archive/book_names.json', encoding='utf-8'))
-rows = [json.loads(line) for line in open('parascolaire/_original_frozen/_archive/exercises.jsonl', encoding='utf-8')]
+NAMES = json.load(open('parascolaire_frozen/_archive/book_names.json', encoding='utf-8'))
+rows = [json.loads(line) for line in open('parascolaire_frozen/_archive/exercises.jsonl', encoding='utf-8')]
 pending = [r for r in rows if r.get('tier') == 'pending_audit']
 
 print(f"Total pending_audit: {len(pending)}")
@@ -17,7 +17,7 @@ samples = []
 for book, items in by_book.items():
     chosen = random.sample(items, min(2, len(items)))
     for c in chosen:
-        page_file = f"parascolaire/_original_frozen/_archive/{c['book']}/pages/{c['book']}_{c['page']}.json"
+        page_file = f"parascolaire_frozen/_archive/{c['book']}/pages/{c['book']}_{c['page']}.json"
         body_snippet = ""
         instruction = ""
         if os.path.exists(page_file):
@@ -47,7 +47,7 @@ for book, items in by_book.items():
         })
 
 print(f"Sampled {len(samples)} exercises across {len(by_book)} books.")
-out_path = 'parascolaire/_original_frozen/_archive/_label_check/pending_audit_sample.json'
+out_path = 'parascolaire_frozen/_archive/_label_check/pending_audit_sample.json'
 with open(out_path, 'w', encoding='utf-8') as f:
     json.dump({
         "totalPending": len(pending),

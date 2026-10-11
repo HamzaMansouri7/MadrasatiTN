@@ -1,0 +1,152 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 26,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 14: أوظّف الدائرة في الوضعيات الهندسية (ملاحظة: الصفحة تتضمن محتوى هندسة/رياضيات، رقم الصفحة المطبوع 27)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "الدَّرْس 14 : أُوظِّفُ الدَّائِرَةَ فِي السِّيَاقَاتِ الهَنْدَسِيَّةِ",
+      "figureDesc": "عنوان الدرس في إطار زخرفي مع رقم 5 (السنة) في الركن الأيسر وشعار في الركن الأيمن",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_evaluations_p026_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ارْسُمِ الرُّبَاعِيَّ أ ب ج د ثُمَّ ارْسُمِ الدَّائِرَةَ الَّتِي مَرْكَزُهَا \"م\" وَتَمُرُّ مِنْ رُؤُوسِ الرُّبَاعِيِّ أ ب ج د.",
+      "body": "* مَاذَا تُلَاحِظُ فِي الضِّلْعَيْنِ [أب] و[دج] وَكَذَلِكَ الضِّلْعَيْنِ [أد] و[دج].\nثلاثة أسطر منقطة للإجابة.",
+      "figureDesc": "مستقيمان متقاطعان على شكل X في النقطة م (قطرا الرباعي) وثلاثة أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p026_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ارْسُمْ دَائِرَةً قُطْرُهَا [س ص] بِحَيْثُ \"ع\" تَنْتَمِي لِتِلْكَ الدَّائِرَةِ.",
+      "body": "* مَا نَوْعُ الْمُثَلَّثِ س ع ص؟\n(سطر منقط)\n* مَاذَا يُمَثِّلُ الْمُسْتَقِيمُ الَّذِي يَمُرُّ مِنْ \"ع\" وَمَرْكَزِ الدَّائِرَةِ بِالنِّسْبَةِ لِلْمُثَلَّثِ س ص ع.\n(سطران منقطان)",
+      "figureDesc": "قطعة مستقيمة [س ص] ونقطة ع فوقها على اليسار",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p026_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارْسُمْ مِنَ النُّقْطَةِ \"و\" دَائِرَةً قِيسُ قُطْرِهَا 3 صم.",
+      "body": "ارْسُمْ مِنَ النُّقْطَةِ \"ق\" دَائِرَةً قِيسُ قُطْرِهَا 5 صم.\n- تَتَقَاطَعُ الدَّائِرَتَانِ فِي نُقْطَتَيْنِ. ارْسُمِ الْمُسْتَقِيمَ الَّذِي يَمُرُّ مِنْ هَاتَيْنِ النُّقْطَتَيْنِ.",
+      "figureDesc": "نقطتان و وق مرسومتان بعلامة × للرسم منهما",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p026_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَاذَا يُمَثِّلُ (و ق) بِالنِّسْبَةِ لِهَذَا الْمُسْتَقِيمِ؟",
+      "body": "سطران منقطان للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p026_i5",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.12
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur le cercle (cercle circonscrit, diamètre, triangle inscrit, médiatrice de la corde, intersection de deux cercles), ce qui correspond à la Période 4 (Trimestre 2) qui traite du cercle et du disque.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Cercle et constructions géométriques",
+    "skill": "Utiliser les propriétés du cercle (cercle circonscrit, diamètre, triangle rectangle, médiatrice) pour construire et justifier des figures.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "cercle",
+      "diamètre",
+      "triangle rectangle",
+      "cercle circonscrit",
+      "médiatrice",
+      "construction géométrique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Séquence de constructions guidées (cercle passant par les sommets d'un quadrilatère, triangle inscrit dans un demi-cercle, deux cercles sécants) suivies de questions d'observation et de conjecture sur les propriétés, avec lignes pointillées pour répondre.",
+    "themeGroup": "Angles, cercle et triangles"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Titre: 'السِّيَاقَاتِ الهَنْدَسِيَّةِ' alors que l'image porte 'الوضعيات الهندسية' ou similaire (texte du bandeau: 'السياقات الهندسية' partiellement lisible); la vocalisation du titre est ajoutée alors qu'elle n'est pas visible (le titre est sans tashkeel sauf 'الدَّرْس' et 'أوظف')"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1: 'الرُّبَاعِيَّ' / 'الرُّبَاعِيِّ' : l'image indique 'الرُّبَاعِيَّ' puis 'الرُّبَاعِيِّ', ok; mais 'رُؤُوسِ' est écrit 'رُؤُوسِ' dans la transcription, l'image 'رُؤُوسِ' - acceptable"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 1: 'الضِّلْعَيْنِ [أب] و[دج] وَكَذَلِكَ الضِّلْعَيْنِ [أد] و[دج]' : la seconde paire dans l'image est [أد] و[دج] ; la transcription indique bien [أد] و[دج], mais l'image montre probablement [أد] و[بج] logiquement - à vérifier"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3: 'قِيسُ قُطْرِهَا' correspond à l'image 'قِيسُ' (le texte source), ok; mais 'هَاتَيْنِ' dans la transcription alors que l'image porte 'هَاتَيْنِ'/'هَاتَيْنِ النُّقْطَتَيْنِ' - 'هَاتَيْنِ' OK"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les points de repère (م, ع, س, ص, و, ق) et les figures ne sont pas décrits"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions entre parenthèses 'ثلاثة أسطر منقطة للإجابة' sont des annotations ajoutées, non du texte de l'image"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

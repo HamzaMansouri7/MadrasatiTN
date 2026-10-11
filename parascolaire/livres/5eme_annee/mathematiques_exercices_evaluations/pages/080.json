@@ -1,0 +1,270 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 80,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مراجعة ودعم: أتمرّن في الأعداد العشريّة (الرياضيات، السنة 5)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "رَتِّبِ الأَعْدَادَ التَّالِيَةَ تَرْتِيبًا تَنَازُلِيًّا:",
+      "body": "63,09 - 96,09 - 36,90 - 93,99 - 43,80 - 34,08",
+      "figureDesc": "Bandeau décoratif contenant la liste des nombres décimaux, suivi d'une ligne pointillée pour la réponse.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p080_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَنْجِزِ الْعَمَلِيَّاتِ التَّالِيَةَ وَفْقًا لِلْوَضْعِ الْعَمُودِيِّ:",
+      "body": "95,72 + 354,28 = ...... ؛ 3767,512 + 4809,099 = ...... ؛ 2984,09 + 5032,125 = ...... ؛ 485,085 - 900 = ......",
+      "figureDesc": "Quatre opérations avec lignes pointillées et un trait vertical à gauche pour la disposition en colonnes.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p080_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اِشْتَرَى أَحْمَدُ 3,75 م² مِنَ الرُّخَامِ بِحِسَابِ 39,500 د لِلْمِتْرِ الْمُرَبَّعِ الْوَاحِدِ. أَعْطَى أَحْمَدُ لِلْبَائِعِ 3 وَرَقَاتٍ مِنْ فِئَةِ 50 د، فَكَمْ أَرْجَعَ لَهُ؟",
+      "body": "اِشْتَرَى أَحْمَدُ 3,75 م² مِنَ الرُّخَامِ بِحِسَابِ 39,500 د لِلْمِتْرِ الْمُرَبَّعِ الْوَاحِدِ. - أَعْطَى أَحْمَدُ لِلْبَائِعِ 3 وَرَقَاتٍ مِنْ فِئَةِ 50 د، فَكَمْ أَرْجَعَ لَهُ؟",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p080_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "نَزَلَتْ بِجِهَةٍ بِشَمَالِ الْبِلَادِ كَمِّيَّاتٌ هَامَّةٌ مِنَ الأَمْطَارِ فَكَانَتْ لِآخِرِ أُسْبُوعٍ بِشَهْرِ جَانْفِي كَمَا يَلِي:",
+      "body": "الأيام: الاثنان، الثلاثاء، الخميس، السبت ؛ الكميات: 15 مم، 25 مم، 19 مم، 34 مم. - احْسُبْ بِالمم الْكَمِّيَّاتِ النَّازِلَةَ هَذَا الأُسْبُوعَ. - احْسُبْ بِالمم مُعَدَّلَ كَمِّيَّاتِ الأَمْطَارِ النَّازِلَةِ طِيلَةَ شَهْرِ جَانْفِي إِذَا كَانَتِ الْكَمِّيَّاتُ الْمُسَجَّلَةُ قَبْلَ هَذَا الأُسْبُوعِ 149 مم.",
+      "figureDesc": "Tableau à deux lignes (الأيام / الكميات) : الاثنان 15 مم، الثلاثاء 25 مم، الخميس 19 مم، السبت 34 مم. Trois lignes pointillées pour la réponse.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p080_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.35
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des exercices de révision sur les nombres décimaux (ordre décroissant, additions et soustractions en colonnes, problèmes d'achat et de moyenne), ce qui correspond à la Période 2 : nombres décimaux, addition/soustraction.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres décimaux : opérations et problèmes",
+    "skill": "Comparer, ranger, additionner et soustraire des nombres décimaux, puis résoudre des problèmes concrets (achat, moyenne).",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "rangement décroissant",
+      "opérations en colonnes",
+      "rendu de monnaie",
+      "moyenne",
+      "pluviométrie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : situations d'achat avec rendu de monnaie (prix au m²), et relevés de pluie hebdomadaires pour calculer total et moyenne, dans un contexte tunisien.",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de l'exercice 4 est absent de la transcription : Jours (الأيام) : الاثنين 15 مم، الثلاثاء 25 مم، الخميس 19 مم، السبت 34 مم."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « بِالْمِمِّ » est transcrit à la place de « بالمم » (image : « بالصم », lecture OCR de « بالمم »). Le mot « مم » est correct dans les données, mais la forme vocalisée « الْمِمِّ » est inventée, l'image n'ayant pas ce tashkeel."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel ajouté sur des mots qui sont non vocalisés ou peu vocalisés dans l'image (ex. « الْعَمَلِيَّاتِ », « اِشْتَرَى », « أَرْجَعَ »). L'image porte « أَرْجَعَ لَهُ » et « شَرَى/اشترى » avec des voyelles partielles. La transcription est sur-vocalisée par rapport à l'image."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'image présente les opérations sous la forme « 95,72 + 354,28 = ... » (ordre des opérandes inversé en lecture RTL) ; la transcription écrit « 354,28 + 95,72 », de même pour les trois autres opérations. Le résultat reste identique pour l'addition, mais pas pour « 485,085 - 900 » : l'image affiche « 485,085 - 900 » avec les opérandes dans l'ordre inverse de l'ordre du texte."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : séparateurs « ؛ » dans la transcription au lieu de « - » dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : l'image comporte « لِآخِرِ أُسْبُوعٍ بِشَهْرِ جَانْفِي » ; « بِجِهَةٍ بِشِمَالِ » : l'image a « بِجِهَةٍ بِشَمَالِ » (sans kasra sur le chin)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : la transcription sépare les nombres par « ؛ » alors que l'image les sépare par des tirets « - »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 2 : seule la première opération est inversée. L'image affiche « 95,72 + 354,28 = ... » et la transcription « 354,28 + 95,72 ». Les trois autres sont déjà dans l'ordre de l'image : « 3767,512 + 4809,099 », « 2984,09 + 5032,125 » et « 485,085 - 900 »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « بِالْمِمِّ » est un tashkeel inventé. L'image porte « بالمم » (unité mm, sans voyelles), à la fois dans « احسب بالمم الكميات... » et dans « احسب بالمم معدل... »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : « بِشِمَالِ » doit être « بِشَمَالِ » (fatha sur le chin) d'après l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 4 : le tableau (الأيام / الكميات) n'apparaît que dans figureDesc et pas dans le body. Les valeurs sont correctes : الاثنان 15 مم، الثلاثاء 25 مم، الخميس 19 مم، السبت 34 مم. Je l'ai ajouté au body."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "رَتِّبِ الأَعْدَادَ التَّالِيَةَ تَرْتِيبًا تَنَازُلِيًّا:",
+      "body": "63,09 - 96,09 - 36,90 - 93,99 - 43,80 - 34,08",
+      "figureDesc": "Bandeau décoratif contenant la liste des nombres décimaux, suivi d'une ligne pointillée pour la réponse.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p080_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَنْجِزِ الْعَمَلِيَّاتِ التَّالِيَةَ وَفْقًا لِلْوَضْعِ الْعَمُودِيِّ:",
+      "body": "95,72 + 354,28 = ...... ؛ 3767,512 + 4809,099 = ...... ؛ 2984,09 + 5032,125 = ...... ؛ 485,085 - 900 = ......",
+      "figureDesc": "Quatre opérations avec lignes pointillées et un trait vertical à gauche pour la disposition en colonnes.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p080_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اِشْتَرَى أَحْمَدُ 3,75 م² مِنَ الرُّخَامِ بِحِسَابِ 39,500 د لِلْمِتْرِ الْمُرَبَّعِ الْوَاحِدِ. أَعْطَى أَحْمَدُ لِلْبَائِعِ 3 وَرَقَاتٍ مِنْ فِئَةِ 50 د، فَكَمْ أَرْجَعَ لَهُ؟",
+      "body": "اِشْتَرَى أَحْمَدُ 3,75 م² مِنَ الرُّخَامِ بِحِسَابِ 39,500 د لِلْمِتْرِ الْمُرَبَّعِ الْوَاحِدِ. - أَعْطَى أَحْمَدُ لِلْبَائِعِ 3 وَرَقَاتٍ مِنْ فِئَةِ 50 د، فَكَمْ أَرْجَعَ لَهُ؟",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p080_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "نَزَلَتْ بِجِهَةٍ بِشَمَالِ الْبِلَادِ كَمِّيَّاتٌ هَامَّةٌ مِنَ الأَمْطَارِ فَكَانَتْ لِآخِرِ أُسْبُوعٍ بِشَهْرِ جَانْفِي كَمَا يَلِي:",
+      "body": "الأيام: الاثنان، الثلاثاء، الخميس، السبت ؛ الكميات: 15 مم، 25 مم، 19 مم، 34 مم. - احْسُبْ بِالمم الْكَمِّيَّاتِ النَّازِلَةَ هَذَا الأُسْبُوعَ. - احْسُبْ بِالمم مُعَدَّلَ كَمِّيَّاتِ الأَمْطَارِ النَّازِلَةِ طِيلَةَ شَهْرِ جَانْفِي إِذَا كَانَتِ الْكَمِّيَّاتُ الْمُسَجَّلَةُ قَبْلَ هَذَا الأُسْبُوعِ 149 مم.",
+      "figureDesc": "Tableau à deux lignes (الأيام / الكميات) : الاثنان 15 مم، الثلاثاء 25 مم، الخميس 19 مم، السبت 34 مم. Trois lignes pointillées pour la réponse.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p080_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "رَتِّبِ الأَعْدَادَ التَّالِيَةَ تَرْتِيبًا تَنَازُلِيًّا:",
+      "body": "63,09 ؛ 96,09 ؛ 36,90 ؛ 93,99 ؛ 43,80 ؛ 34,08",
+      "figureDesc": "Bandeau décoratif contenant la liste des nombres décimaux, suivi d'une ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p080_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَنْجِزِ الْعَمَلِيَّاتِ التَّالِيَةَ وَفْقًا لِلْوَضْعِ الْعَمُودِيِّ:",
+      "body": "354,28 + 95,72 = ...... ؛ 3767,512 + 4809,099 = ...... ؛ 2984,09 + 5032,125 = ...... ؛ 485,085 - 900 = ......",
+      "figureDesc": "Quatre opérations avec lignes pointillées et un trait vertical à gauche pour la disposition en colonnes.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "al_ahram_5eme_complet_p080_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اِشْتَرَى أَحْمَدُ 3,75 م² مِنَ الرُّخَامِ بِحِسَابِ 39,500 د لِلْمِتْرِ الْمُرَبَّعِ الْوَاحِدِ. أَعْطَى أَحْمَدُ لِلْبَائِعِ 3 وَرَقَاتٍ مِنْ فِئَةِ 50 د، فَكَمْ أَرْجَعَ لَهُ؟",
+      "body": "اِشْتَرَى أَحْمَدُ 3,75 م² مِنَ الرُّخَامِ بِحِسَابِ 39,500 د لِلْمِتْرِ الْمُرَبَّعِ الْوَاحِدِ. - أَعْطَى أَحْمَدُ لِلْبَائِعِ 3 وَرَقَاتٍ مِنْ فِئَةِ 50 د، فَكَمْ أَرْجَعَ لَهُ؟",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p080_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "نَزَلَتْ بِجِهَةٍ بِشِمَالِ الْبِلَادِ كَمِّيَّاتٌ هَامَّةٌ مِنَ الأَمْطَارِ فَكَانَتْ لِآخِرِ أُسْبُوعٍ بِشَهْرِ جَانْفِي كَمَا يَلِي:",
+      "body": "- احْسُبْ بِالْمِمِّ الْكَمِّيَّاتِ النَّازِلَةَ هَذَا الأُسْبُوعَ. - احْسُبْ بِالْمِمِّ مُعَدَّلَ كَمِّيَّاتِ الأَمْطَارِ النَّازِلَةِ طِيلَةَ شَهْرِ جَانْفِي إِذَا كَانَتِ الْكَمِّيَّاتُ الْمُسَجَّلَةُ قَبْلَ هَذَا الأُسْبُوعِ 149 مم.",
+      "figureDesc": "Tableau: الأيام: الاثنان، الثلاثاء، الخميس، السبت ؛ الكميات: 15 مم، 25 مم، 19 مم، 34 مم. Trois lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p080_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

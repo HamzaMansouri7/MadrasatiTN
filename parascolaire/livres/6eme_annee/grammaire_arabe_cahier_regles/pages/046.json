@@ -1,0 +1,144 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 46,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "المثنى (le duel en arabe) : صياغته وإعرابه، حذف النون عند الإضافة، والتثنيات الخاصة",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ضمائر المثنى (suite du tableau des pronoms)",
+      "body": "أنتما: للمثنى المخاطب مذكرا ومؤنثا\nهما: للمثنى الغائب مذكرا ومؤنثا",
+      "figureDesc": "Tableau à deux colonnes et deux lignes : pronom / emploi",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p046_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: يصاغ الاسم المثنى من الاسم المفرد بزيادة ألف ونون أو ياء ونون في آخره",
+      "body": "مرفوعا: زيادة الألف — عاد المعلمان\nمنصوبا: زيادة ياء ساكنة — رأيت المهندسين\nمجرورا: زيادة ياء ساكنة — التقيت بالمهندسين",
+      "figureDesc": "Tableau de 3 colonnes (مرفوعا، منصوبا، مجرورا) avec une ligne de règle et une ligne d'exemples",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p046_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وتحذف النون في الاسم المثنى إذا ورد مضافا",
+      "body": "مرفوعا: عاد معلما السنة السادسة\nمنصوبا: رأيت مهندسي الفلاحة\nمجرورا: التقيت بمربي النحل",
+      "figureDesc": "Tableau de 3 colonnes (مرفوعا، منصوبا، مجرورا) avec une ligne d'exemples",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p046_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أضف إلى معلوماتك: توجد تثنيات خاصة في إعراب المثنى",
+      "body": "مرفوع: من أسماء الإشارة: هذان، هاتان — من الأسماء الموصولة: اللذان، اللتان\nمنصوب: من أسماء الإشارة: هذين، هاتين — من الأسماء الموصولة: اللذين، اللتين\nمجرور: من أسماء الإشارة: هذين، هاتين — من الأسماء الموصولة: اللذين، اللتين",
+      "figureDesc": "Tableau : lignes مرفوع/منصوب/مجرور ; colonnes أسماء الإشارة والأسماء الموصولة",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p046_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ثن الأسماء التي تحتها سطر",
+      "body": "يجر الثور المحراث\nقرأت من الكتاب صفحة\nأمرنا الله بطاعة الوالد\nلعبت مع البنت الصغيرة",
+      "figureDesc": "Cadre contenant les phrases ; les mots soulignés : الثور، صفحة، الوالد، البنت الصغيرة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p046_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u6",
+    "confidence": 0.2
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite du duel en arabe (formation, déclinaison, chute du noun à l'annexion), une leçon de grammaire qui n'est liée à aucune des six unités narratives officielles (structure du récit, narration, passages descriptifs, dialogués, explicatifs ou prescriptifs), donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Le duel en arabe",
+    "skill": "Former le duel à partir du singulier, l'accorder selon sa fonction (nominatif, accusatif, génitif) et supprimer le noun quand il est en annexion.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "duel",
+      "pronoms duels",
+      "chute du noun",
+      "annexion",
+      "démonstratifs et relatifs au duel",
+      "déclinaison"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La leçon présente chaque règle avec des exemples tirés du monde scolaire et rural (instituteurs, ingénieurs agronomes, apiculteurs). L'exercice, qui consiste à mettre au duel des mots soulignés dans des phrases courtes, se prête à d'autres variantes: transformation de phrases, repérage du cas, ajout d'un complément d'annexion.",
+    "_note": "Page mixte, avec leçon et exercice.",
+    "themeGroup": "Le duel"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre «التمارين» et l'intitulé «التمرين الأول» sont présents dans l'image mais absents de la transcription (seul le numéro [1] apparaît)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "L'en-tête «ضمائر المثنى (suite du tableau des pronoms)» est inventé : il n'apparaît pas sur la page, qui ne contient que les deux lignes du tableau."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de colonnes des tableaux (مرفوعا / منصوبا / مجرورا et من أسماء الإشارة / من الأسماء الموصولة) ne sont qu'implicites dans le format clé:valeur ; acceptable mais non fidèle à la structure."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'exercice, les mots soulignés (الثور، صفحة، الوالد، البنت الصغيرة) ne sont pas signalés. Le soulignement porte l'information de l'exercice. Dans «يجر الثور المحراث», le mot «المحراث» est une erreur : l'image indique «المحرات» (lecture OCR à vérifier, probablement «المحراث» dans le texte original)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

@@ -1,0 +1,219 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 42,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أَتَعَرَّفُ الْعَدَدَ الرُّتْبِيَّ",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْتُبُ الْأَعْدَادَ التَّالِيَةَ بِالْأَرْقَامِ :",
+      "body": "ثَلَاثَةٌ  /  أَرْبَعَةٌ  /  تِسْعَةٌ  /  صِفْرٌ  /  اِثْنَانِ  /  ثَمَانِيَةٌ",
+      "figureDesc": "ستة أشكال بيضاوية فارغة تحت الكلمات مخصصة لكتابة الأرقام.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p042_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُتِمُّ كِتَابَةَ الْأَعْدَادِ النَّاقِصَةِ :",
+      "body": "",
+      "figureDesc": "مدرّج سلالم على شكل حرف V يتوسطه الصفر في الأسفل: درجات نازلة من اليسار (مربع فارغ، 5، مربع فارغ، 3، 2، مربع فارغ، 0) ودرجات صاعدة إلى اليمين (1، 2، مربع فارغ، 4، مربع فارغ، 6).",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p042_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُلَوِّنُ السَّيَّارَةَ الْأُولَى بِالْأَحْمَرِ وَأُحِيطُ الرَّابِعَةَ بِخَطٍّ مُغْلَقٍ بِدَايَةً مِنْ خَطِّ الْوُصُولِ .",
+      "body": "",
+      "figureDesc": "مشهد شارع فيه لافتة « وصول » وخط وصول متقطع، وأربع سيارات متتالية في صف واحد، وفي الخلفية بناية ومارة على الرصيفين.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p042_i3"
+    }
+  ],
+  "topicId": "math-1-p2",
+  "topicTitle": "Période 2 : Nombres de 6 à 9, comparaison, ordre et lignes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p3",
+    "confidence": 0.41
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur l'écriture des nombres de 0 à 9 en chiffres, sur le nombre ordinal (première, quatrième) et sur le tracé d'une ligne fermée, ce qui correspond à la Période 2 (nombres de 6 à 9, ordre et lignes).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres ordinaux et écriture des nombres",
+    "skill": "Écrire les nombres en chiffres, compléter une suite numérique et repérer un rang ordinal dans une file.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "nombre ordinal",
+      "écriture en chiffres",
+      "nombres manquants",
+      "rang",
+      "première année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de course de voitures avec ligne d'arrivée pour travailler les rangs (premier, quatrième) par coloriage et entourage, réutilisable avec d'autres files ou podiums, associée à une conversion mot-chiffre et à une suite à compléter.",
+    "themeGroup": "Nombres ordinaux"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres de la page ne sont pas transcrits : « الرِّيَاضِيَّاتُ », « أَتَعَرَّفُ الْعَدَدَ الرُّتْبِيَّ », « الْحِسَابُ الذِّهْنِيُّ : » et « أَتَدَرَّبُ وَأُوَظِّفُ : »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« اِثْنَانِ » : l'image montre « اِثْنَانِ » avec le tashkeel de la source ; à vérifier. « أُتِمُّ » apparaît comme « أُتِمُّ », ce qui est correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les six cases à compléter sous la première consigne (points de suspension) ne sont pas mentionnées."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 1 : le contenu visuel est vide. Il manque l'escalier de cases en V avec les nombres 6, 5, 3, 2, 0, 1, 2, 4 et les cases vides à compléter."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 2 : le contenu visuel est vide. Il manque la scène avec 4 voitures, le panneau « وصول », le bâtiment et les piétons."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page n'est pas transcrit : numéro de page 66, « جسر النجاح - الثلاثي الثاني (السنة 1) » et « الرياضيات »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« ثَمَانِيَةٌ » : l'image montre « ثَمَانِيَةٌ » avec tanwin ; c'est cohérent. « تِسْعَةٌ » est correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.95,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "texte inventé",
+        "severity": "minor",
+        "detail": "La figureDesc de l'exercice 2 parle d'un « مشهد سباق » (scène de course). L'image montre seulement une rue avec quatre voitures alignées, un panneau « وصول » avec une ligne pointillée, un bâtiment et des piétons. Aucune course n'y est représentée, et la description est reformulée de façon neutre."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْتُبُ الْأَعْدَادَ التَّالِيَةَ بِالْأَرْقَامِ :",
+      "body": "ثَلَاثَةٌ  /  أَرْبَعَةٌ  /  تِسْعَةٌ  /  صِفْرٌ  /  اِثْنَانِ  /  ثَمَانِيَةٌ",
+      "figureDesc": "ستة أشكال بيضاوية فارغة تحت الكلمات مخصصة لكتابة الأرقام.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p042_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُتِمُّ كِتَابَةَ الْأَعْدَادِ النَّاقِصَةِ :",
+      "body": "",
+      "figureDesc": "مدرّج سلالم على شكل حرف V يتوسطه الصفر في الأسفل: درجات نازلة من اليسار (مربع فارغ، 5، مربع فارغ، 3، 2، مربع فارغ، 0) ودرجات صاعدة إلى اليمين (1، 2، مربع فارغ، 4، مربع فارغ، 6).",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p042_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُلَوِّنُ السَّيَّارَةَ الْأُولَى بِالْأَحْمَرِ وَأُحِيطُ الرَّابِعَةَ بِخَطٍّ مُغْلَقٍ بِدَايَةً مِنْ خَطِّ الْوُصُولِ .",
+      "body": "",
+      "figureDesc": "مشهد شارع فيه لافتة « وصول » وخط وصول متقطع، وأربع سيارات متتالية في صف واحد، وفي الخلفية بناية ومارة على الرصيفين.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p042_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْتُبُ الْأَعْدَادَ التَّالِيَةَ بِالْأَرْقَامِ :",
+      "body": "ثَلَاثَةٌ  /  أَرْبَعَةٌ  /  تِسْعَةٌ  /  صِفْرٌ  /  اِثْنَانِ  /  ثَمَانِيَةٌ",
+      "figureDesc": "ستة أشكال بيضاوية فارغة تحت الكلمات مخصصة لكتابة الأرقام.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p042_i1",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُتِمُّ كِتَابَةَ الْأَعْدَادِ النَّاقِصَةِ :",
+      "body": "",
+      "figureDesc": "مدرّج سلالم على شكل حرف V يتوسطه الصفر في الأسفل: درجات نازلة من اليسار (مربع فارغ، 5، مربع فارغ، 3، 2، مربع فارغ، 0) ودرجات صاعدة إلى اليمين (1، 2، مربع فارغ، 4، مربع فارغ، 6).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "jisr_ennajah_1ere_evaluations_p042_i2",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُلَوِّنُ السَّيَّارَةَ الْأُولَى بِالْأَحْمَرِ وَأُحِيطُ الرَّابِعَةَ بِخَطٍّ مُغْلَقٍ بِدَايَةً مِنْ خَطِّ الْوُصُولِ .",
+      "body": "",
+      "figureDesc": "مشهد سباق يحتوي على لافتة وخط وصول، وأربع سيارات متتالية تقترب من خط الوصول، مع خلفية لبناية ومارة على الرصيف.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p042_i3",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.95
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

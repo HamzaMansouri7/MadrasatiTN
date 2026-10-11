@@ -1,0 +1,123 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 66,
+  "grade": "3ème Année",
+  "subject": "Français (l'écrit) – la page ne contient aucun texte arabe, contrairement à la matière indiquée dans la demande (اللغة العربية)",
+  "topicGuess": "Examen du 1er trimestre N°2 – l'écrit – 3ème année : le dîner, la toilette (salle de bains)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "je regarde le dessin et je relie par une flèche :",
+      "body": "Séquence 1 : le soir, la famille est à la maison. elle prend le dîner dans la cuisine. que mange amélie ?\n- amélie mange des poissons\n- amélie mange du pain\n- amélie mange de la salade",
+      "figureDesc": "Trois cadres à droite : un pain, une assiette de salade, une assiette avec un poisson. Chaque phrase est à relier à l'image correspondante.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p066_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "je regarde le dessin et je colorie la bonne phrase :",
+      "body": "Séquence 2 : après le dîner, amélie va dans la salle de bains. que fait-elle ?\n- amélie se lave le visage.\n- amélie se lave les mains.\n- amélie se brosse les dents.",
+      "figureDesc": "Dessin d'une fillette dans la salle de bains devant un miroir et un lavabo ; elle se brosse les dents, son reflet est visible dans le miroir.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examens_toutes_matieres_p066_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "je regarde le dessin et j'entoure la bonne réponse :",
+      "body": "Séquence 3 : bruno est aussi dans la salle de bains. que fait-il ?\n- bruno se lave le visage.\n- bruno prend une douche.\n- bruno s'habille.",
+      "figureDesc": "Dessin d'un garçon sous la douche, le bras levé, l'eau coulant de la pomme de douche.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p066_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u1",
+    "confidence": 0.17
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un examen de français (compréhension écrite sur le dîner et la toilette) et la liste officielle ne contient aucun chapitre de français, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Le dîner et la toilette",
+    "skill": "Comprendre des phrases simples à partir d'images et choisir la phrase qui décrit l'action de la routine du soir.",
+    "pageType": "exam",
+    "formats": [
+      "qcm",
+      "appariement"
+    ],
+    "keywords": [
+      "dîner",
+      "salle de bains",
+      "toilette",
+      "routine du soir",
+      "phrases simples",
+      "vocabulaire du quotidien"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Séquences illustrées de la routine du soir, chacune suivie d'une question avec trois choix, et des consignes variées (relier, colorier, entourer) pour associer image et phrase chez de jeunes élèves.",
+    "themeGroup": "La routine quotidienne"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête n'est pas transcrit : Matière : l'écrit, Niveau : 3ème année, Examen du 1er trimestre N°2, champs Nom/Prénom/3ème."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans les blocs 1, 2 et 3, la consigne (« je regarde le dessin et… ») est placée avant la mise en situation « Séquence … », alors que sur la page la séquence vient d'abord, puis la question, puis la consigne."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros des consignes (1-, 2-, 3-) ne sont pas repris ; le texte « Séquence 3 » est aussi tronqué dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les images associées (pain/salade/poisson, salle de bains, douche) ne sont pas décrites. Elles servent pourtant à répondre : l'exercice 1 est un appariement texte-image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

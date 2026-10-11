@@ -1,0 +1,142 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 64,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Histoire du petit Indien (B. Compréhension)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Souligne la bonne réponse :",
+      "body": "* Chef Soleil Levant dit : « C'était une illusion », à la place on pourrait dire :\n- C'était un mensonge.\n- C'était une bêtise.\n- C'était une vérité.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p064_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Que trouve le petit Indien dans la pairie ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p064_i2",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "a- Réponds par « oui » ou « non » :\nb- Relève, dans le texte, deux détails qui le montrent :",
+      "body": "a- Le petit Indien pense que le cheval est mort. (case en pointillés pour répondre)\nb- Deux lignes de pointillés pour relever deux détails.",
+      "figureDesc": "Case arrondie en pointillés pour la réponse oui/non.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p064_i3",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Relève, dans le texte, l'expression qui le montre :",
+      "body": "Le petit Indien est tendre et affectueux.\nDeux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p064_i4",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "La nuit, le petit Indien n'a pas dormi. Pourquoi ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p064_i5",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Écris les mots du texte qui ont le même sens que les mots suivants :",
+      "body": "-Le pré = ................\n-La noirceur = ................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p064_i6",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Complète ce passage avec les mots du cadre :",
+      "body": "Cadre : Tour Eiffel - château de Versailles – promenée\nC'est grand, Paris ! Je me suis ................ toute la journée. J'ai visité le ................ et je suis montée aussi à la ................ .",
+      "figureDesc": "Cadre arrondi contenant les mots à utiliser.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p064_i7",
+      "topicId": "fr-6-m3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.34
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français sur l'« Histoire du petit Indien » (affection, tendresse), qui correspond plausiblement au thème « Accepter les autres » du module 3, mais aucun indice explicite du module sur la page ne permet de l'affirmer, et l'exercice 7 (vocabulaire de Paris) et le thème pourraient relever d'un autre module.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte narratif",
+    "skill": "Comprendre un récit en relevant des informations et des détails du texte, en trouvant des synonymes et en réinvestissant le vocabulaire.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "texte_a_trous",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "synonymes",
+      "relevé d'indices",
+      "histoire du petit Indien",
+      "vocabulaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série classique de questions de compréhension après lecture (reformulation par choix, réponse oui/non justifiée par des indices, relevé d'expressions, synonymes) terminée par un texte à trous avec banque de mots, facile à reprendre pour d'autres récits.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,116 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 90,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – C) Grammaire : le singulier et le pluriel, les déterminants démonstratifs et possessifs",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "C-1",
+      "instruction": "Réécris ce passage en remplaçant « élèves » par « élève » :",
+      "body": "« Ces nouveaux élèves sont sages et polis. Ils obéissent à leur maîtresse. »",
+      "figureDesc": "Deux lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p090_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-2-a",
+      "instruction": "Remplace les articles en gras par des déterminants démonstratifs :",
+      "body": "- L'enfant est devant la porte de l'école.\n- Les bêtes restent calmes en classe.\n- La maîtresse accepte le sanglier.\n(Articles en gras : L', Les, La, le)",
+      "figureDesc": "Une ligne pointillée sous chaque phrase pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p090_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-2-b",
+      "instruction": "Remplace les articles en gras par des déterminants possessifs :",
+      "body": "- L'institutrice met les élèves en rang.\n- La maîtresse reçoit des bêtes dans la classe.\n- Les nouveaux écoliers se concentrent sur les leçons.\n- Tu discutes avec le maître.\n- Ma sœur et moi respectons les camarades.\n(Articles en gras : les, la, les, le, les)",
+      "figureDesc": "Une ligne pointillée sous chaque phrase pour la réponse.",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p090_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-3",
+      "instruction": "Réécris la phrase en remplaçant « écolières » par « écolier » :",
+      "body": "« Les gracieuses écolières sont gentilles et charmantes. »",
+      "figureDesc": "Deux lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p090_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de grammaire (singulier/pluriel, déterminants démonstratifs et possessifs) en français, mais ces notions ne correspondent clairement à aucun module précis (m1 à m8) : aucun ne cible spécifiquement les déterminants ou le nombre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Singulier, pluriel et déterminants",
+    "skill": "Passer du pluriel au singulier et remplacer des articles par des déterminants démonstratifs ou possessifs en respectant les accords.",
+    "pageType": "exercise",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "singulier et pluriel",
+      "déterminants démonstratifs",
+      "déterminants possessifs",
+      "accord",
+      "transformation de phrases"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Les exercices de transformation grammaticale (changement de nombre, substitution d'articles par des déterminants) se déroulent dans un contexte scolaire. On peut les réutiliser en variant le vocabulaire, mais ils restent très classiques et peu originaux.",
+    "themeGroup": "Orthographe et accords"
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans C-2-a, la liste des articles en gras omet « l' » de « l'école », qui est en gras dans l'image (« de l'école »). Liste correcte : L', l', Les, La, le."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

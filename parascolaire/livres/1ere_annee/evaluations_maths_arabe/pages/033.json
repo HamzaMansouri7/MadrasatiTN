@@ -1,0 +1,76 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 33,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إنتاج كتابي : الوحدة الرابعة: فصل الشتاء - ترتيب جمل والربط بينها",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُرَتِّبُ الْجُمَلَ.",
+      "body": "◯ وَهَطَلَ الْمَطَرُ،\n◯ فَتَبَلَّلَ الطِّفْلُ،\n◯ لَمَعَ الْبَرْقُ،\n◯ وَارْتَعَشَتْ أَوْصَالُهُ.",
+      "figureDesc": "رسم لطفل يضع محفظته فوق رأسه ليحتمي من المطر المنهمر أمام المدرسة، وأطفال آخرون يحملون مظلات.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p033_i1",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُكَوِّنُ نَصًّا بِالْجُمَلِ، وَأَتَجَنَّبُ التَّكْرَارَ.",
+      "body": "• وَأَخَذَتْ جَوَاهِرُ مِحْفَظَتَهَا،\n• فِي الصَّبَاحِ،\n• ثُمَّ ذَهَبَتْ جَوَاهِرُ إِلَى الْمَدْرَسَةِ.\n• لَبِسَتْ جَوَاهِرُ مِعْطَفَهَا،\n...........................................................................................................\n...........................................................................................................",
+      "figureDesc": "رسم لبنت (جواهر) ترتدي معطفاً دافئاً وتضع محفظتها على ظهرها متوجهة نحو المدرسة.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p033_i2",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "ar-1-u4",
+  "topicTitle": "Unité 4 : Mon compagnon en hiver",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-1-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.99
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de production écrite en arabe (ordonner des phrases sur la pluie, l'éclair et le froid) portant sur l'hiver, ce qui correspond à l'Unité 4 « Mon compagnon en hiver ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Ordonner et relier des phrases",
+    "skill": "Remettre des phrases dans l'ordre logique et les relier avec des connecteurs pour produire un court texte sans répétition.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "production écrite",
+      "ordre des phrases",
+      "connecteurs",
+      "hiver",
+      "éviter la répétition",
+      "cohérence du texte"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : remettre en ordre des phrases mélangées autour d'une scène de saison (pluie, éclair), puis composer un petit texte sur la routine matinale d'un personnage en utilisant des connecteurs (ثم، و، فـ) et des pronoms pour éviter les répétitions.",
+    "themeGroup": "Ordonner des phrases et cohérence textuelle"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

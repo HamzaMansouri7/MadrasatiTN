@@ -1,0 +1,62 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 115,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Lire et s'exprimer : texte de lecture « Alima et le jaguar » (d'après Contes et fables d'animaux, Yves Marie Clément)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Les évaluations (Madrasati TN – 6ème année de base) : texte support de lecture, d'après Contes et fables d'animaux, Yves Marie CLEMENT.",
+      "body": "Alima dévore le singe.\nTrois jours plus tard, comme convenu, le jaguar revient au village pour toucher son salaire. Il trouve le chef Talokoé assis devant sa case en train de se lamenter.\n- Ta ruse n'a pas marché longtemps, jaguar. Depuis trois jours, Alima n'a rien voulu manger !\nGêné, le jaguar s'en retourne dans la forêt. Toute la nuit, il veille, tapi sur une branche au-dessus de la rivière. Un serpent anaconda passe par là. Le jaguar saute dessus et l'assomme d'un bon coup de patte. À midi, il rapporte son gibier au village. Il entre dans la case de Talokoé et s'adresse en ces mots à son fils :\n- Alima, fils d'homme, si tu manges ce serpent, tu deviendras aussi puissant que lui !\nAlima dévore le serpent.\nLe jaguar revient au village pour toucher son salaire. Il trouve de nouveau le chef Talokoé assis devant sa case en train de se lamenter.\n- Une fois de plus, ta ruse n'a pas marché, jaguar. Voilà trois jours qu'Alima ne veut plus rien avaler !\nLe jaguar, qui n'avait jamais manqué une affaire de sa vie, s'en retourne dans la forêt. Il se tapit sur une branche durant toute la nuit. Au matin, il voit passer Maïpouri, le tapir. Il lui monte dessus et l'assomme d'un bon coup de patte.\nÀ midi, il rapporte son gibier au village. Il entre dans la case de Talokoé et s'adresse en ces mots à son fils :\n« Alima, fils d'homme, si tu manges ce tapir, tu deviendras aussi gourmand que lui ! »\nTrois jours plus tard, en revenant au village pour toucher son salaire, le jaguar y trouve Talokoé fort réjoui.\n« Merci mille fois, jaguar. Grâce à ta ruse, Alima a retrouvé l'appétit. Entre donc dans ma case, je vais te payer.\nLes yeux du jaguar s'illuminent. Il entre dans la case où il fait sombre. Il attend, mais rien ne se passe. Il sort alors la tête hors de la case, et reçoit un bon coup de bâton derrière les oreilles.\nLe soir même, au repas, Talokoé se penche sur son fils et lui dit :\n« Alima, fils d'homme, si tu manges ce jaguar, tu deviendras aussi rusé que lui ! »\nD'après Contes et fables d'animaux, Yves Marie CLEMENT",
+      "figureDesc": "Page à bandeau gris-vert : en-tête avec « Sagesse », titre « Les évaluations » sur un nuage, mention « 6ème année de base » ; pied de page « Lire et s'exprimer », page 114. Texte de la page suivante visible par transparence (ignoré).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p115_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.27
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de lecture et d'expression (texte « Alima et le jaguar », conte animalier) sans lien clair avec un seul module officiel : le thème de la ruse et du salaire ne correspond précisément à aucun des huit modules, et le caractère général de l'évaluation empêche de trancher.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Le conte animalier",
+    "skill": "Lire un conte et en comprendre le déroulement, les personnages et la ruse pour ensuite s'exprimer à l'oral ou à l'écrit.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "conte",
+      "jaguar",
+      "ruse",
+      "lecture suivie",
+      "récit d'animaux",
+      "personnages"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le conte avec ruse et chute (un animal rusé, un salaire promis, un village en détresse) peut servir de situation pour des questions de compréhension, un résumé, un changement de fin ou une production écrite imaginant la suite.",
+    "themeGroup": "Contes et récits légendaires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

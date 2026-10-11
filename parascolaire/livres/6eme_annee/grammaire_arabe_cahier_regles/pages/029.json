@@ -1,0 +1,119 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 29,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "قواعد اللغة العربية: الضمائر وإسناد الجملة إلى الضمائر المختلفة (المثنى والجمع، المخاطَب، المتكلم) مع الجزم بـ لم",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أسترشد بالضمير وأعيد كتابة الجملة التالية",
+      "body": "الغريب في الأمر أنه لم يجر خوفا ولم يبك ألما مما حدث له\nأنهما\nأنهم",
+      "figureDesc": "Encadré rectangulaire contenant la consigne, la phrase et les deux pronoms-guides (أنهما، أنهم).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p029_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أسند الجملة التالية إلى ضمير المخاطبة ثم المخاطبين",
+      "body": "لم يبال بالنتائج لأنه لم يسع ليكون من الناجحين",
+      "figureDesc": "Encadré rectangulaire avec espace vide pour la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p029_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعيد كتابة النص التالي مع ضمير المتكلم في المضارع المجزوم لـ",
+      "body": "صحوت من نومي ، فسعيت إلى مساعدة والدتي ، فلقيت منها الشكر والاكبار\nلم",
+      "figureDesc": "Encadré rectangulaire avec espace vide pour la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p029_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أعوض سالم بـ الصيادان ثم الصيادون",
+      "body": "أرجوك يا سالم لا تقض على الحيوانات في الغابة ، ولا تنس أنها رزقنا الباقي",
+      "figureDesc": "Encadré rectangulaire avec espace vide pour la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p029_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch1",
+    "confidence": 0.24
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de grammaire arabe (conjugaison, pronoms, jussif avec « لم », verbes défectifs comme يجر/يبك/تقض/تنس) qui s'apparente à la conjugaison de l'Unité 1, mais aucun chapitre ne traite explicitement de ce contenu, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison: pronoms et jussif avec lam",
+    "skill": "Réécrire et conjuguer des phrases en changeant le pronom sujet (duel, pluriel, 2e et 1re personne) au présent apocopé après لم.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "pronoms personnels",
+      "جزم بلم",
+      "duel et pluriel",
+      "conjugaison",
+      "transformation de phrases"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices de transformation: remplacer le sujet ou le pronom (duel, pluriel, locuteur, interlocuteur) dans de courtes phrases ou un mini-texte, avec accord du verbe au jussif après لم, réutilisable avec d'autres contextes narratifs ou de la vie quotidienne.",
+    "themeGroup": "Conjugaison: pronoms et suffixes"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « لـ » à la fin de la consigne, l'image montre « ك » (probablement « لم » coupé ou « ك »). La transcription « لـ » ne correspond pas à « ك » visible."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : la transcription place « أنهما / أنهم » à l'intérieur de la case, ce qui est correct, mais ces lignes sont des éléments de réponse/indices et non un énoncé, l'ordre est conservé."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

@@ -1,0 +1,189 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 10,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La respiration chez l'homme : échanges gazeux au niveau des poumons et des cellules, transport des gaz par le sang, composition de l'air inspiré et expiré",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ) أرْبُطْ بِسَهْمٍ :",
+      "body": "في مستوى الرئتَيْن • ، في مستوى الخلِيَّة • ؛ • تتمّ عملية الاحتراق ، • تتمّ عمليّة التّبادل الغازي",
+      "figureDesc": "Schéma de la circulation sanguine : un poumon (رئة) rempli d'air (هواء) relié à la trachée avec les flèches شهيق (inspiration) et زفير (expiration) ; le cœur (قلب) avec deux boucles de circulation, rouge (sang riche en oxygène) et bleu (sang riche en dioxyde de carbone) ; une cellule (خلية) en bas. Légende : flèche rouge = أكسجين, flèche bleue = ثاني أكسيد الكربون.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p010_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-ب",
+      "instruction": "ب) مَنِ الَّذِي يَقُومُ بِنَقْلِ وَتَوْزِيعِ هَذِهِ الغَازَات ؟",
+      "body": "ligne de réponse à compléter (pointillés)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p010_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-ج",
+      "instruction": "ج) كَيْفَ يَكُونُ الدَّمُ عِنْدَمَا يَتَّحِدُ بِالأكسجين ؟",
+      "body": "ligne de réponse à compléter (pointillés)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p010_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-د",
+      "instruction": "د) مَتَى يَكُونُ الدَّمُ قَاتِمَ اللَّوْنِ ؟",
+      "body": "ligne de réponse à compléter (pointillés)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p010_i4",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "السَّنَد : تَرْكِيبُ الهَوَاءِ قَبْلَ مُرُورِهِ فِي الرِّئَتَيْنِ وَبَعْدَهُ.",
+      "body": "Tableau : 100 لتر من الهواء | هواء عند الشهيق | هواء عند الزفير ؛ أكسجين | 21 لترا | 16 لترا ؛ ثاني أكسيد الكربون | قليل جدًّا | من 4 إلى 5 لترات ؛ أزوت (نيتروجين) | 79 لترا | 79 لترا",
+      "figureDesc": "Tableau de composition de l'air à l'inspiration et à l'expiration, et dessin du corps humain avec l'air riche en oxygène entrant (يدخل الهواء الغني بالأكسجين), cerveau (دماغ), poumon (رئة), foie/rate (كبد), muscles (عضلة).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p010_i5",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-التعليمة 1",
+      "instruction": "التعليمة 1: لاَحِظِ الجَدْوَلَ ثُمَّ أُتمِمِ الكِتَابَةَ التَّالِيَةَ.",
+      "body": "هَوَاءُ المُحِيطِ يَدْخُلُ إِلَى الرِّئَتَيْنِ غَنِيًّا بِـ ........ وَيَخْرُجُ مِنْهَا مُحَمَّلاً بِغَازِ ........ وَهَكَذَا يَتِمُّ فِي الرِّئَتَيْنِ تَبَادُلُ الغَازَاتِ بَيْنَ ........ وَ ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p010_i6",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-التعليمة 2",
+      "instruction": "التعليمة 2 : قَارِنْ تَرْكِيبَةَ الغَازَاتِ المَوْجُودَةِ فِي هَوَاءِ الشَّهِيقِ وَهَوَاءِ الزَّفِيرِ.",
+      "body": "مَاذَا يَحْصُلُ لِهَذِهِ التَّرْكِيبَةِ فِي الرِّئَتَيْنِ ؟ (ligne de réponse à compléter)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p010_i7",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.99
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des échanges gazeux pulmonaires et cellulaires, du transport de l'O2 et du CO2 par le sang, et compare la composition de l'air inspiré et expiré, ce qui correspond à l'unité 2 (air, respiration, combustion).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La respiration chez l'homme",
+    "skill": "Expliquer les échanges gazeux dans les poumons et les cellules en s'appuyant sur la lecture et la comparaison des données d'un tableau sur l'air inspiré et expiré.",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "texte_a_trous",
+      "schema_tableau",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "respiration",
+      "échanges gazeux",
+      "poumons",
+      "sang",
+      "air inspiré et expiré",
+      "oxygène et dioxyde de carbone"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une séquence qui part d'un tableau comparant l'air inspiré et l'air expiré pour déduire les échanges gazeux, puis relie chaque lieu (poumons, cellules) à son phénomène par appariement et pose des questions courtes sur le rôle du sang et sa couleur.",
+    "themeGroup": "La respiration"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3-أ : « أرْبُطْ بِسَهْمٍ » correct, mais « الرئتَيْن » et « الخلِيَّة » transcrits avec voyelles partielles ; l'image montre « الرِّئَتَيْنِ » (avec tashkeel complet) et « الخَلِيَّةِ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans 3-أ, « تتمّ » est écrit avec tashkeel dans l'image (« تَتِمُّ ») ; la transcription ne donne que la chedda partielle."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans 3-ج, « بِالأكسجين » : l'image montre « بِالاكسجين » sans hamza ; la transcription a « بِالأكسجين » (hamza ajoutée)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans 3-ج, « يَتَّحِدُ » : l'image montre « يَتْحِدُ » / « يَتَّحِدُ » avec vocalisation à vérifier ; mineur."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les légendes des schémas ne sont pas transcrites : رفيق/زفير، شهيق، هواء، رئة، قلب، خلية، أكسجين، ثاني أكسيد الكربون, دماغ, عضلة, كبد, « مدخل الهواء الغني بالأكسجين »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans 3-أ, l'ordre des items est mélangé (colonnes droite/gauche) ; l'appariement visuel n'est pas indiqué."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans le tableau, « قليل جدًّا » est écrit « قليل جداً » dans l'image ; « أزوت (نيتروجين) » est écrit « (تيتروجين) » ou « نتروجين » dans l'image, à vérifier."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 30 n'est pas transcrit."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

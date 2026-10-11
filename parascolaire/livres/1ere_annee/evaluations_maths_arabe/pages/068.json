@@ -1,0 +1,338 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 68,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "القطع النقدية والمبالغ المالية - الخطوط المفتوحة والخطوط المغلقة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ الْمُكَوَّنَةَ لِلْعَمَلِيَّةِ تَصَاعُدِيًّا.",
+      "body": "",
+      "figureDesc": "سطر منقط للإجابة.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p068_i1"
+    },
+    {
+      "kind": "support",
+      "number": "4",
+      "instruction": "",
+      "body": "السَّنَدُ 4:\nاِقْتَنَيْنَا مُشْتَرَيَاتٍ مُتَنَوِّعَةً (حَلْوَى / بَسْكُوِيتٍ / مَشْرُوبَاتٍ) وَبَقِيَ لَدَيَّ وَ لَدَى أَخِي خَالِدٍ الْقِطَعَ التَّالِيَةَ :",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p068_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أُحَدِّدُ الْمَبَالِغَ الْبَاقِيَةَ.",
+      "body": "- شَادِي: ..........مي\n- خَالِدٌ: ..........مي",
+      "figureDesc": "جدول من عمودين: شادي (قطعتان من فئة 2 وقطعتان من فئة 1) وخالد (قطعة من فئة 5 وثلاث قطع من فئة 1). تحت كل عمود خانة للإجابة: ..........مي.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p068_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أُقَارِنُ بَيْنَ الْمَبْلَغَيْنِ بِوَضْعِ الْعَلاَمَةِ الْمُنَاسِبَةِ.",
+      "body": "",
+      "figureDesc": "سطر منقط للإجابة.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p068_i4"
+    },
+    {
+      "kind": "support",
+      "number": "5",
+      "instruction": "",
+      "body": "السَّنَدُ 5:\nشَارَكَ شَادِي فِي وَرْشَةٍ لِلرَّسْمِ أَثْنَاءَ زِيَارَةِ الْحَدِيقَةِ فَرَسَمَ خُطُوطًا مُخْتَلِفَةً.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "evaluations_maths_arabe_p068_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أَرْبُطْ بِمَا يُنَاسِبُ:",
+      "body": "- خُطُوطٌ مَفْتُوحَةٌ\n- خُطُوطٌ مُغْلَقَةٌ",
+      "figureDesc": "ثمانية رسوم، تحت كل منها نقطة حمراء: مربع مغلق، مربع بداخله قطعة مستقيمة، مربع مفتوح، شكل غير منتظم مغلق، قوس، حلزون، دائرة، وخط مفتوح على شكل خطاف. تحتها بطاقتان للربط: «خُطُوطٌ مَفْتُوحَةٌ» و«خُطُوطٌ مُغْلَقَةٌ». تذييل الصفحة: الرياضيات، 92، جسر النجاح - الثلاثي الثاني (السنة 1).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "evaluations_maths_arabe_p068_i6"
+    }
+  ],
+  "topicId": "math-1-p2",
+  "topicTitle": "Période 2 : Nombres de 6 à 9, comparaison, ordre et lignes",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p2",
+    "confidence": 0.38
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite des lignes ouvertes et fermées, rattachées à la Période 2, mais aussi de la monnaie (pièces et montants), qui relève de la Période 6, et d'un ordre croissant ; le contenu mélange donc deux chapitres.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie et lignes ouvertes/fermées",
+    "skill": "Calculer et comparer des montants en millimes, ordonner des nombres et distinguer les lignes ouvertes des lignes fermées.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "appariement",
+      "schema_tableau",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "monnaie tunisienne",
+      "montants",
+      "comparaison",
+      "ordre croissant",
+      "lignes ouvertes",
+      "lignes fermées"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations contextualisées (achats lors d'une sortie au jardin, atelier de dessin) pour travailler la monnaie restante, la comparaison de montants et le classement de lignes par appariement, adaptées à de jeunes élèves.",
+    "themeGroup": "Monnaie : pièces et millimes"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le titre «السَّنَدُ 4:» est placé après la consigne 9, alors qu'il apparaît avant elle dans l'image. Le texte d'introduction du support 4 est lui aussi rattaché à la consigne 9."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le titre «السَّنَدُ 5:» et son texte sont placés après la consigne 11, alors qu'ils la précèdent dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«أَرْبِطُ» est transcrit avec un kasra sous le ba. L'image montre «أَرْبُطْ» (damma sur le ba, sukun sur le ṭa)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«أُرَتِّبُ» est transcrit avec fatha sur le ra. L'image montre «أُرَتِّبُ» avec damma, mais cette lecture reste ambiguë."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الْقِطَعُ التَّالِيَةُ» est transcrit au nominatif. L'image montre «الْقِطَعَ التَّالِيَةَ» à l'accusatif, avec fatha sur le ʿayn et sur le ya."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les pièces de monnaie de l'exercice 9 sont absentes. Chadi a 2, 2, 1, 1 et Khaled a 1, 1, 1, 5."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les figures de l'exercice 11 ne sont pas décrites : 3 carrés ouverts ou fermés, une forme fermée irrégulière, un arc, une spirale, un cercle et un trait ouvert."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes pointillées de réponse pour les consignes 8 et 10 ne sont pas indiquées. Le pied de page («الرياضيات», page 92, «جسر النجاح - الثلاثي الثاني (السنة 1)») est absent."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الْمَبْلَغَيْنِ» et «خُطُوطٌ مَفْتُوحَةٌ» sont à vérifier : l'image montre «خُطُوطٌ مَفْتُوحَةٌ» avec les voyelles finales sur ces mots."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre «السَّنَدُ 4:» et son texte d'introduction précèdent la consigne 9 dans l'image, mais la transcription les place dans le body de l'exercice 9, après la consigne. Même problème pour «السَّنَدُ 5:» et son texte, qui précèdent la consigne 11 dans l'image mais sont rattachés à son body. Je les ai séparés en items distincts, placés avant la consigne concernée."
+      },
+      {
+        "type": "voyelle",
+        "severity": "major",
+        "detail": "«الْقِطَعُ التَّالِيَةُ» (nominatif) est faux. L'image montre «الْقِطَعَ التَّالِيَةَ», avec fatha sur le ʿayn et sur le ya."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Consigne 11 : «أَرْبِطُ» est faux. L'image montre «أَرْبُطْ», avec damma sur le ba et sukun sur le ṭa."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«بَسْكُويتٍ» est transcrit sans le kasra sous le ya. L'image montre «بَسْكُوِيتٍ»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La description des figures de l'exercice 11 est imprécise. L'image montre 8 figures, chacune avec un point rouge dessous : carré fermé, carré avec un segment intérieur, carré ouvert, forme irrégulière fermée, arc, spirale, cercle et trait ouvert en forme de crochet. Le pied de page (الرياضيات, 92, جسر النجاح - الثلاثي الثاني (السنة 1)) et les lignes pointillées des consignes 8 et 10 ne sont pas indiqués."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ الْمُكَوَّنَةَ لِلْعَمَلِيَّةِ تَصَاعُدِيًّا.",
+      "body": "",
+      "figureDesc": "سطر منقط للإجابة.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p068_i1"
+    },
+    {
+      "kind": "support",
+      "number": "4",
+      "instruction": "",
+      "body": "السَّنَدُ 4:\nاِقْتَنَيْنَا مُشْتَرَيَاتٍ مُتَنَوِّعَةً (حَلْوَى / بَسْكُوِيتٍ / مَشْرُوبَاتٍ) وَبَقِيَ لَدَيَّ وَ لَدَى أَخِي خَالِدٍ الْقِطَعَ التَّالِيَةَ :",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p068_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أُحَدِّدُ الْمَبَالِغَ الْبَاقِيَةَ.",
+      "body": "- شَادِي: ..........مي\n- خَالِدٌ: ..........مي",
+      "figureDesc": "جدول من عمودين: شادي (قطعتان من فئة 2 وقطعتان من فئة 1) وخالد (قطعة من فئة 5 وثلاث قطع من فئة 1). تحت كل عمود خانة للإجابة: ..........مي.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p068_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أُقَارِنُ بَيْنَ الْمَبْلَغَيْنِ بِوَضْعِ الْعَلاَمَةِ الْمُنَاسِبَةِ.",
+      "body": "",
+      "figureDesc": "سطر منقط للإجابة.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p068_i4"
+    },
+    {
+      "kind": "support",
+      "number": "5",
+      "instruction": "",
+      "body": "السَّنَدُ 5:\nشَارَكَ شَادِي فِي وَرْشَةٍ لِلرَّسْمِ أَثْنَاءَ زِيَارَةِ الْحَدِيقَةِ فَرَسَمَ خُطُوطًا مُخْتَلِفَةً.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "jisr_ennajah_1ere_evaluations_p068_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أَرْبُطْ بِمَا يُنَاسِبُ:",
+      "body": "- خُطُوطٌ مَفْتُوحَةٌ\n- خُطُوطٌ مُغْلَقَةٌ",
+      "figureDesc": "ثمانية رسوم، تحت كل منها نقطة حمراء: مربع مغلق، مربع بداخله قطعة مستقيمة، مربع مفتوح، شكل غير منتظم مغلق، قوس، حلزون، دائرة، وخط مفتوح على شكل خطاف. تحتها بطاقتان للربط: «خُطُوطٌ مَفْتُوحَةٌ» و«خُطُوطٌ مُغْلَقَةٌ». تذييل الصفحة: الرياضيات، 92، جسر النجاح - الثلاثي الثاني (السنة 1).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "jisr_ennajah_1ere_evaluations_p068_i6"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُرَتِّبُ الأَعْدَادَ الْمُكَوَّنَةَ لِلْعَمَلِيَّةِ تَصَاعُدِيًّا.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "jisr_ennajah_1ere_evaluations_p068_i1",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أُحَدِّدُ الْمَبَالِغَ الْبَاقِيَةَ.",
+      "body": "السَّنَدُ 4:\nاِقْتَنَيْنَا مُشْتَرَيَاتٍ مُتَنَوِّعَةً (حَلْوَى / بَسْكُويتٍ / مَشْرُوبَاتٍ) وَبَقِيَ لَدَيَّ وَ لَدَى أَخِي خَالِدٍ الْقِطَعُ التَّالِيَةُ :\n- شَادِي: ..........مي\n- خَالِدٌ: ..........مي",
+      "figureDesc": "جدول يوضح القطع النقدية المتبقية لدى كل من: شادي (قطعتان من فئة 2 مي وقطعتان من فئة 1 مي)، وخالد (قطعة من فئة 5 مي وثلاث قطع من فئة 1 مي).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "jisr_ennajah_1ere_evaluations_p068_i2",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أُقَارِنُ بَيْنَ الْمَبْلَغَيْنِ بِوَضْعِ الْعَلاَمَةِ الْمُنَاسِبَةِ.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "jisr_ennajah_1ere_evaluations_p068_i3",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أَرْبِطُ بِمَا يُنَاسِبُ:",
+      "body": "السَّنَدُ 5:\nشَارَكَ شَادِي فِي وَرْشَةٍ لِلرَّسْمِ أَثْنَاءَ زِيَارَةِ الْحَدِيقَةِ فَرَسَمَ خُطُوطًا مُخْتَلِفَةً.\n- خُطُوطٌ مَفْتُوحَةٌ\n- خُطُوطٌ مُغْلَقَةٌ",
+      "figureDesc": "مجموعة من ثمانية خطوط وأشكال هندسية مرسومة (مربعات مغلقة، خطوط منكسرة مفتوحة، خط بيضاوي مغلق، خطوط منحنية وحلزونية مفتوحة، ودائرة مغلقة)، وأسفلها بطاقتان للربط: 'خُطُوطٌ مَفْتُوحَةٌ' و'خُطُوطٌ مُغْلَقَةٌ'.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "jisr_ennajah_1ere_evaluations_p068_i4",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

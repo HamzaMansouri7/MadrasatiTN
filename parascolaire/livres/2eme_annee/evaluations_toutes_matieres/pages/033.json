@@ -1,0 +1,143 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 33,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الرياضيات: المبالغ المالية بالمليم (القطع النقدية التونسية) وحل مسألة – السندات 6 و7 و8",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "السند 6 - التعليمة 1",
+      "instruction": "أَحْسُبُ الْمَبْلَغَ الْمَالِيَّ الَّذِي بَقِيَ بِجَيْبِهِ.",
+      "body": "السَّنَدُ 6 : قَامَ الْبُسْتَانِيُّ بِحِفْظِ أَمْوَالِهِ فِي خَزْنَتِهِ الْخَاصَّةِ. وَبَقِيَ بِجَيْبِهِ الْمَبْلَغُ الْمُمَثَّلُ بِالْقِطَعِ النَّقْدِيَّةِ التَّالِيَةِ.",
+      "figureDesc": "إطار مستدير فيه خمس قطع نقدية: 50 و20 و100 و10 و5 مي؛ وبجانبه سطر منقط لكتابة المبلغ. (معيار 3)",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p033_i1",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 7 - التعليمة 1",
+      "instruction": "أُكَمِّلُ الْمَبْلَغَ بِالْقِطَعِ النَّقْدِيَّةِ الْمُنَاسِبَةِ حَتَّى يُصْبِحَ 175 مي.",
+      "body": "السَّنَدُ 7 : أَعْطَى الْبُسْتَانِيُّ 175 مي لِابْنَتِهِ الصَّغِيرَةِ. 175 مي =",
+      "figureDesc": "إطار مستدير فيه قطعتان نقديتان: 100 و50 مي، مع فراغ لإضافة قطع أخرى. (معيار 3)",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p033_i2",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 8 - التعليمة 1",
+      "instruction": "أُمَثِّلُ ثَمَنَ قِطْعَةِ الشُّكُولَاطَةِ بِأَقَلِّ عَدَدٍ مُمْكِنٍ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "السَّنَدُ 8 : ذَهَبَتِ الْبِنْتُ إِلَى دُكَّانِ عَطَّارِ الْحَيِّ لِتَشْتَرِيَ قِطْعَةً مِنَ الشُّكُولَاطَةِ ثَمَنُهَا 150 مي.",
+      "figureDesc": "إطار مستدير فارغ للتمثيل بالقطع النقدية. (معيار 3)",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p033_i3",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 8 - التعليمة 2",
+      "instruction": "أَكْتُبُ السُّؤَالَ الْمُنَاسِبَ لِلْوَضْعِيَّةِ. أَكْتُبُ الْإِجَابَةَ الْمُنَاسِبَةَ لِلسُّؤَالِ وَأُنْجِزُ الْعَمَلِيَّةَ.",
+      "body": "السُّؤَالُ : ...... الْإِجَابَةُ اللَّفْظِيَّةُ : ...... الْعَمَلِيَّةُ : ......",
+      "figureDesc": "جدول من عمودين: «الْعَمَلُ» (فراغ لإنجاز العملية) و«الْحَلُّ» (سطور منقطة للسؤال والإجابة اللفظية والعملية). (معيار 5)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p033_i4",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-2-p3",
+  "topicTitle": "Période 3 : Nombres jusqu'à 500, soustraction et monnaie (Millimes/Dinar)",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p3",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la monnaie tunisienne (millimes, pièces), le calcul de montants jusqu'à 175 mi et un problème d'achat, ce qui correspond à la Période 3 (nombres jusqu'à 500, soustraction et monnaie Millimes/Dinar).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie tunisienne et millimes",
+    "skill": "Calculer, compléter et représenter des sommes en millimes avec les pièces de monnaie tunisiennes, puis formuler et résoudre un problème simple.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "millimes",
+      "pièces de monnaie",
+      "somme d'argent",
+      "problème",
+      "opération",
+      "2ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation de la vie quotidienne (jardinier, enfant au kiosque) pour travailler la monnaie : compter des pièces, compléter une somme cible, représenter un prix avec un minimum de pièces, puis inventer la question, la réponse orale et l'opération d'une situation donnée.",
+    "themeGroup": "Monnaie : les millimes"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«بِحِفْظِ» : l'image montre «بِحِفْظِ» (identique) ; en revanche «ثَمَنُهَا» est correct, mais «لِتَشْتَرِيَ» est écrit «لِتَشْتَرِيَ» dans la transcription alors que l'image porte «لِتَشْتَرِيَ» sans différence notable, aucune erreur grave"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les pièces de monnaie du support 6 (5, 10, 100, 20, 50 millimes) ne sont pas décrites ; la ligne de réponse en pointillés n'est pas mentionnée"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Support 7 : les pièces déjà données (100 et 50) ne sont pas mentionnées, seule la mention «175 مي =» apparaît"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cadres de réponse vides (supports 6, 7, 8), les barèmes (1, 1, 1, 1, 1), les mentions «معـ 3» / «معـ 5», les cases de notation, l'en-tête des colonnes «الحل» et «العمل» et le numéro de page 32 sont absents"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans chaque support, la transcription place la consigne (التعليمة) avant le texte du support (السند), alors que dans l'image le السند précède la التعليمة"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«أُمَثِّلُ» pour «أُمَثِّلُ ثَمَنَ» : l'image porte «أُمَثِّلُ ثَـمَنَ», correct. «أَحْسُبُ» OK. Aucun mot réellement faux"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

@@ -1,0 +1,153 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 36,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التعبير الكتابي: مواضيع إنتاج كتابي (سرد حدث طارئ أفسد نشاطا، وصف المشاعر، كتابة رسالة تشجيع وتهنئة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "كنت تمارس أحد هواياتك المفضلة حين حدث ما أفسد عليك هذه المتعة ارو الحادثة واصفا مشاعرك وكيف تجاوزت هذا الموقف",
+      "body": "الموضوع عدد: كنت تمارس أحد هواياتك المفضلة حين حدث ما أفسد عليك هذه المتعة ارو الحادثة واصفا مشاعرك وكيف تجاوزت هذا الموقف",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p036_i1",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "كنت تشاهد على شاشة التلفاز مقابلة رياضية حين حدث ما أفسدها",
+      "body": "الموضوع عدد: كنت تشاهد على شاشة التلفاز مقابلة رياضية حين حدث ما أفسدها",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p036_i2",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "شاركت أصحابك في مقابلة رياضية لكن حدث ما أفسدها",
+      "body": "الموضوع عدد: شاركت أصحابك في مقابلة رياضية لكن حدث ما أفسدها",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p036_i3",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "شاهدت على شاشة التلفاز أخبارا عن كارثة طبيعية في أحد البلدان المجاورة كما ولد فيك الرغبة في مد يد المساعدة للمنكوبين صف ما شاهدت واذكر العمل الذي قمت به",
+      "body": "الموضوع عدد: شاهدت على شاشة التلفاز أخبارا عن كارثة طبيعية في أحد البلدان المجاورة كما ولد فيك الرغبة في مد يد المساعدة للمنكوبين صف ما شاهدت واذكر العمل الذي قمت به",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p036_i4",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "كنتم في جولة في الغابة حين حدث ما أفسد عليكم هذه الرحلة",
+      "body": "الموضوع عدد: كنتم في جولة في الغابة حين حدث ما أفسد عليكم هذه الرحلة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p036_i5",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "حان موعد جني الصابة حين حدث ما ادخل بلبلة على الفلاح",
+      "body": "الموضوع عدد: حان موعد جني الصابة حين حدث ما ادخل بلبلة على الفلاح",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p036_i6",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "وصلتك رسالة من والدك المقيم خارج ارض الوطن تشجعك على المثابرة للنجاح. أكتب نص الرسالة",
+      "body": "الموضوع عدد: وصلتك رسالة من والدك المقيم خارج ارض الوطن تشجعك على المثابرة للنجاح. أكتب نص الرسالة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p036_i7",
+      "topicId": "ar-4-u7",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "نجحت في الامتحان فكتبت رسالة لأحد أصدقائك تعلمه بالخبر وتشجعه على النسج على منوالك",
+      "body": "الموضوع عدد: نجحت في الامتحان فكتبت رسالة لأحد أصدقائك تعلمه بالخبر وتشجعه على النسج على منوالك",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "production_ecrite_arabe_p036_i8",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u7",
+  "topicTitle": "Unité 7 : Structure du texte narratif et schéma narratif",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u7",
+    "confidence": 0.51
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page propose des sujets de production écrite en arabe (récit d'un incident qui gâche une activité, description des sentiments, lettres d'encouragement), ce qui se rapproche le plus de la structure du récit et du schéma narratif (situation initiale, péripétie, dénouement) de l'unité 7, mais aucun chapitre ne correspond exactement à cette page d'expression écrite.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : récit d'incident",
+    "skill": "Rédiger un récit d'un événement imprévu qui perturbe une activité, en décrivant ses sentiments, et écrire une lettre d'encouragement ou de félicitations.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "expression écrite",
+      "récit",
+      "événement imprévu",
+      "sentiments",
+      "lettre d'encouragement",
+      "félicitations"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque de sujets de rédaction fondés sur un imprévu qui gâche une activité (loisir, match, sortie en forêt, récolte), sur la solidarité face à une catastrophe naturelle et sur des lettres d'encouragement ou de félicitations entre proches. Les situations sont facilement adaptables à d'autres contextes.",
+    "themeGroup": "Le récit et l'incident perturbateur"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

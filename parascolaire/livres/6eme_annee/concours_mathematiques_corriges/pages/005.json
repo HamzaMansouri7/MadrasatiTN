@@ -1,0 +1,146 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 5,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مناظرة عدد 1 – رياضيات: مسائل حول الكسور، المضاعفات والأعداد المحصورة، والمبالغ المالية (الرواتب والتكلفة الجملية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "كم يبلغ المرتب الشهري لخديجة؟",
+      "body": "المسألة عدد 1 : ( 6 نقاط )\nتتقاضى مريم مرتبا شهريا يمثل 3/5 مرتب زوجها. و تتقاضى اينتها خديجة مرتبا شهريا يزيد عن مرتّب أمّها بـ 52.5 د و يقلّ عن مرتب أبيها بمبلغ من مضاعفات 11 و 9 و محصور بين 690 د و 697 د.\n1 ) كم يبلغ المرتب الشهري لخديجة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "concours_mathematiques_corriges_p005_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "كم يبلغ ثمن الثلاجة علما و أنّ ثمن التلفاز يمثّل 1/3 من ثمن الثلاجة.",
+      "body": "أنفقت العائلة 4/5 من دخلها الشهري لاشتراء ثلاجة و آلة غسيل و تلفاز.\n2 ) كم يبلغ ثمن الثلاجة علما و أنّ ثمن التلفاز يمثّل 1/3 من ثمن الثلاجة.\nو ثمن آلة الغسيل = 4/3 ثمن الثلاجة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "concours_mathematiques_corriges_p005_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "1 ) ابحث عن الكلفة الجمليّة للمشروع بالدينار.\n2 ) احسب ثمن شراء العلف علما و أنّه يقلّ عن ثمن شراء الأقفاص بـ 960 د.\n3 ) أحدّد عدد الفراخ المشتراة.",
+      "body": "المسألة عدد 2 : ( 6 نقاط )\nأراد فلاّح بعث مشروع يتمثّل في تربيّة الدّواجن، إقترض مبلغا محصورا بين 12780 د و 12804 د و يتكوّن من أوراق ماليّة من فئة 20 د و 50 د. كما تحصّل على منحة تشجيعيّة من وكالة النهوض بالفلاحة تقدّر بـ 12200 د جمّع المبالغ لديْه و صرفها على النحو التّالي:",
+      "figureDesc": "جدول من ثلاثة أعمدة: بناء مدجنة بـ ... : 2/5 المبلغ المتوفّر ؛ شراء فراخ : ثمن شراء الفرخ الواحد بـ 1.8 د ؛ شراء علف و أقفاص : 12840 د",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "concours_mathematiques_corriges_p005_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-6-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.35
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une épreuve (مناظرة) de problèmes à plusieurs étapes mêlant fractions, multiples, encadrement et sommes d'argent, ce qui correspond à la synthèse générale et à la résolution de situations-problèmes préparant au concours.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    7,
+    8
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes sur fractions et sommes d'argent",
+    "skill": "Résoudre des problèmes en plusieurs étapes avec fractions, multiples communs, encadrements et calculs de coûts.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "fractions",
+      "multiples communs",
+      "encadrement",
+      "salaires",
+      "coût total",
+      "billets"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations de la vie courante (salaires d'une famille, achat d'électroménager, projet d'élevage de volailles financé par un prêt et une subvention) où il faut croiser fractions, multiples de plusieurs nombres et encadrement pour trouver une valeur unique, avec des questions guidées en plusieurs étapes.",
+    "themeGroup": "Fractions"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.72
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.72,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de l'exercice 2 est absent : « بناء مدجنة بـ ... : المبلغ المتوفّر 2/5 », « شراء فراخ : ثمن شراء الفرخ الواحد بـ 1.8 د », « شراء علف و أقفاص : 12840 د »"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête absent : « مناظرة عـ 1 دد », « المربي: وليد الكراي », « المادّة : رياضيات »"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« اينتها » doit être « ابنتها » (le texte de l'image porte « اينتها » avec points ; à corriger en ابنتها)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« لاشتراء » : l'image montre « لاشتراء » mais la phrase « أنفقت العائلة 4/5 من دخلها الشهري لاشتراء ثلاجة و آلة غسيل و تلفاز » est ordonnée à tort après la question 2 dans le segment [2] (doublon et ordre inversé)"
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Segment [1] : « كم يبلغ المرتب الشهري لخديجة؟ » répété avant le titre ; doublon de la question 1 (duplication de contenu)"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Segment [2] : la question 2 apparaît deux fois (doublon)"
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Ordre incorrect : l'énoncé de la question 2 précède l'intro « أنفقت العائلة… » ; dans le segment [3] les questions 1-3 précèdent « المسألة عدد 2 » et son énoncé alors qu'elles viennent après le tableau"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel partiel : « الدَّواجن », « تربيّةِ », « ثلاجةً », « جمّع » avec voyelles visibles dans l'image non toutes reproduites ; « عدد » écrit au lieu de « عـ…دد » stylisé"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« و محصور بين » : la transcription dit « و 9 و محصور » correct ; mais « أحدّد » dans la question 3 est « أحدّد » dans l'image (ok) ; « تقدّر بـ 12200 د جمّع المبالغ » : « جمّع » à vérifier"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "full_year",
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

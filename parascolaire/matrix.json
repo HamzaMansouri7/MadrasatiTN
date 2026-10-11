@@ -1,0 +1,127 @@
+{
+  "books": 17,
+  "pages": 899,
+  "exercises": 3158,
+  "byClassSubject": {
+    "1ère Année | Arabe": {
+      "exercises": 111,
+      "ready": 111,
+      "withCorrection": 0,
+      "linkedToCurriculum": 93
+    },
+    "1ère Année | Mathématiques": {
+      "exercises": 129,
+      "ready": 129,
+      "withCorrection": 0,
+      "linkedToCurriculum": 118
+    },
+    "2ème Année | Arabe": {
+      "exercises": 86,
+      "ready": 78,
+      "withCorrection": 0,
+      "linkedToCurriculum": 32
+    },
+    "2ème Année | Mathématiques": {
+      "exercises": 77,
+      "ready": 77,
+      "withCorrection": 0,
+      "linkedToCurriculum": 31
+    },
+    "2ème Année | Éducation islamique": {
+      "exercises": 27,
+      "ready": 27,
+      "withCorrection": 0,
+      "linkedToCurriculum": 0
+    },
+    "2ème Année | Éveil scientifique": {
+      "exercises": 34,
+      "ready": 33,
+      "withCorrection": 0,
+      "linkedToCurriculum": 0
+    },
+    "3ème Année | Arabe": {
+      "exercises": 96,
+      "ready": 87,
+      "withCorrection": 0,
+      "linkedToCurriculum": 46
+    },
+    "3ème Année | Français": {
+      "exercises": 34,
+      "ready": 34,
+      "withCorrection": 0,
+      "linkedToCurriculum": 0
+    },
+    "3ème Année | Mathématiques": {
+      "exercises": 65,
+      "ready": 60,
+      "withCorrection": 0,
+      "linkedToCurriculum": 29
+    },
+    "3ème Année | Éducation islamique": {
+      "exercises": 19,
+      "ready": 19,
+      "withCorrection": 0,
+      "linkedToCurriculum": 0
+    },
+    "3ème Année | Éveil scientifique": {
+      "exercises": 37,
+      "ready": 37,
+      "withCorrection": 0,
+      "linkedToCurriculum": 19
+    },
+    "4ème Année | Arabe": {
+      "exercises": 47,
+      "ready": 46,
+      "withCorrection": 0,
+      "linkedToCurriculum": 15
+    },
+    "4ème Année | Mathématiques": {
+      "exercises": 528,
+      "ready": 489,
+      "withCorrection": 322,
+      "linkedToCurriculum": 344
+    },
+    "5ème Année | Arabe": {
+      "exercises": 1,
+      "ready": 1,
+      "withCorrection": 1,
+      "linkedToCurriculum": 0
+    },
+    "5ème Année | Mathématiques": {
+      "exercises": 379,
+      "ready": 319,
+      "withCorrection": 7,
+      "linkedToCurriculum": 337
+    },
+    "5ème Année | Éveil scientifique": {
+      "exercises": 21,
+      "ready": 21,
+      "withCorrection": 0,
+      "linkedToCurriculum": 8
+    },
+    "6ème Année | Arabe": {
+      "exercises": 168,
+      "ready": 162,
+      "withCorrection": 11,
+      "linkedToCurriculum": 59
+    },
+    "6ème Année | Français": {
+      "exercises": 799,
+      "ready": 790,
+      "withCorrection": 287,
+      "linkedToCurriculum": 361
+    },
+    "6ème Année | Mathématiques": {
+      "exercises": 312,
+      "ready": 285,
+      "withCorrection": 104,
+      "linkedToCurriculum": 145
+    },
+    "6ème Année | Éveil scientifique": {
+      "exercises": 188,
+      "ready": 176,
+      "withCorrection": 29,
+      "linkedToCurriculum": 165
+    }
+  }
+}

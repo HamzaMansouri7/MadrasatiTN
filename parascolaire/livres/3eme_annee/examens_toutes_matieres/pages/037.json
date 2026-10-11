@@ -1,0 +1,358 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 37,
+  "grade": "3ème Année",
+  "subject": "رياضيات",
+  "topicGuess": "اختبار نهاية الثلاثي الأول – عدد 3 – الرياضيات – السنة الثالثة (الأعداد إلى 9999، الجمع والطرح، العملة: المي والدينار)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "شَاهَدَتْ الْعَائِلَةُ وَمْضَةً إِشْهَارِيَّةً عَلَى شَاشَةِ التِّلْفَازِ لِلْمُرَكَّبِ التِّجَارِيِّ الْعَصْرِيِّ بِالْعَاصِمَةِ. فَزَارَهُ ثَلَاثَةُ إِخْوَةٍ. وَأَثْنَاءَ التَّجْوَالِ فِيهِ عَايَنُوا أَسْعَارَ بَعْضِ الْمَعْرُوضَاتِ حَسَبَ الْبَيَانَاتِ بِالْجَدْوَلِ.",
+      "body": "يَمْلِكُ أَحْمَدُ 7500 مي. فَاشْتَرَى تُحْفَةً مِنَ الْخَزَفِ وَفُرْشَاةَ أَسْنَانٍ.",
+      "figureDesc": "جدول: نوع البضاعة / الثمن بالمي: كيس من الحلوى 1655 مي؛ تحفة من الخزف 3640 مي؛ فرشاة أسنان 1850 مي؛ علبة من الغسول 2620 مي؛ أزهار اصطناعية 2850 مي؛ قارورة عطر ؟ (مجهول)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p037_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "أَبْحَثُ عَنْ قِيمَةِ مُشْتَرَيَاتِ أَحْمَدَ.",
+      "body": "سطران فارغان للإجابة (0,5 نقطة)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p037_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "كَمْ بَقِيَ لَهُ ؟",
+      "body": "سطر فارغ للإجابة (1 نقطة)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p037_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "أُمَثِّلُ بِأَقَلِّ مَا يُمْكِنُ مِنَ الْقِطَعِ النَّقْدِيَّةِ مَا بَقِيَ لِأَحْمَدَ.",
+      "body": "إطار فارغ للتمثيل (1 نقطة)",
+      "figureDesc": "مستطيل فارغ بزوايا مدورة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p037_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2",
+      "instruction": "وَضَعَتْ زَيْنَبُ بِحَافِظَةِ أَمْوَالِهَا الْقِطَعَ النَّقْدِيَّةَ التَّالِيَةَ :",
+      "body": "",
+      "figureDesc": "سبع قطع نقدية (من اليسار إلى اليمين): قطعة مظلمة، قطعة صغيرة منقوشة، قطعة عليها 50 [illisible: الرقم الأخير غير واضح]، قطعة 100، قطعة مظلمة، قطعة من فئة 2، قطعة من فئة 2",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p037_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 4",
+      "instruction": "أَضَعُ الْعَلَامَةَ (x) أَمَامَ الْإِجَابَةِ الصَّحِيحَةِ.",
+      "body": "تَمْلِكُ زَيْنَبُ : 6560 مي / 6650 مي / 5660 مي (0,5 نقطة)",
+      "figureDesc": "ثلاث خانات اختيار بجانب كل إجابة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p037_i6"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p1",
+    "confidence": 0.23
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un test de fin de premier trimestre (évaluation générale) qui porte sur la monnaie (millimes et dinars), l'addition et la soustraction jusqu'à 9999 ; elle ne correspond à aucun chapitre précis, la monnaie n'étant pas nommée dans les chapitres officiels et la page étant une évaluation globale.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie tunisienne : millimes et dinars",
+    "skill": "Résoudre un problème d'achats avec la monnaie (addition, soustraction), représenter une somme avec un minimum de pièces et lire une somme à partir de pièces, avec des nombres jusqu'à 9999.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul",
+      "qcm",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "millimes",
+      "dinar",
+      "achats",
+      "soustraction",
+      "pièces de monnaie",
+      "nombres jusqu'à 9999"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de sortie familiale dans un centre commercial où un enfant achète des objets avec une somme donnée, suivie de questions progressives : total des achats, reste, représentation avec le moins de pièces possible, et QCM sur la somme contenue dans un porte-monnaie illustré.",
+    "themeGroup": "Monnaie tunisienne"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«فَزَارَهُ» : l'image indique «فَزَارَهُ» ? en fait le texte visible est «فَزَارَهُ ثَلَاثَةُ إِخْوَةٍ» (ok) ; mais «وَمْضَةً إِشْهَارِيَّةً» est correct. «الْمُرَكَّبِ» dans l'image est «لِلْمُرَكَّبِ» (ok)"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau des prix est absent : types de marchandises (كيس من الحلوى 1655، تحفة من الخزف 3640، فرشاة أسنان 1850، علبة من الغسول 2620، أزهار اصطناعية 2850، قارورة عطر ?) avec «الثمن بالمي»"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "En-tête manquant : «اختبار نهاية الثلاثي الأول», «عدد : 3», مادة : رياضيات, المستوى : السنة الثالثة, champs الاسم/اللقب/القسم, «الأنشطة», «النقاط المسندة»"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les images des pièces de monnaie du السند 2 (7 pièces dont 50, 100, 2, 2 visibles) sont absentes (décrites comme vides)"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les barèmes sont mal associés : 0,5 pour التعليمة 1, 1 pour التعليمة 2, 1 pour التعليمة 3, 0,5 pour التعليمة 4 (l'ordre dans l'image est 0,5 / 1 / 1 / 0,5 : acceptable). La phrase «يملك أحمد 7500 مي» est séparée du السند 1 mais appartient au même bloc : acceptable"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "«تَمْلِكُ زَيْنَبُ» : le mot «تَمْلِكُ» est à la fin de la ligne ; les cases à cocher ne sont pas mentionnées, ordre des options inversé (image : 6560، 6650، 5660 de droite à gauche), cohérent"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel ajouté sur des mots où l'image est partiellement voyellée (ex. «يَمْلِكُ» est «يَمْلِكُ» ok) ; «الْعَائِلَةُ» ok ; différences mineures possibles"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente/mot",
+        "severity": "major",
+        "detail": "Instruction du السند 2 : l'image porte «بِحَافِظَةِ أَمْوَالِهَا الْقِطَعَ النَّقْدِيَّةَ التَّالِيَةَ». La transcription donne «بِحَافِظَتِهَا أَمْوَالَهَا», ce qui change deux mots (حافظة→حافظتها) et la voyelle de «أموالها» (kasra dans l'image, fatha dans la transcription)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "السند 1 : l'image porte «شَاهَدَتْ» (sukun) et non «شَاهَدَتِ», et «التِّلْفَازِ» (kasra sous le تاء) et non «التَّلْفَازِ»."
+      },
+      {
+        "type": "figureDesc",
+        "severity": "minor",
+        "detail": "Description des pièces du السند 2 : l'ordre (de gauche à droite) est pièce sombre, petite pièce gravée, pièce «50…», pièce «100», pièce sombre, pièce «2», pièce «2». La transcription les regroupe autrement. Sur la pièce de 50, le dernier chiffre n'est pas clairement lisible. L'unité «دينار» sur les pièces de 2 n'est pas visible dans le scan."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête (اختبار نهاية الثلاثي الأول، عدد : 3، رياضيات، السنة الثالثة، champs الاسم/اللقب/القسم) et la colonne «النقاط المسندة» ne figurent pas dans la transcription. Le contrôle rapide l'a signalé, mais ce n'est pas du contenu d'exercice. Le tableau des prix est bien présent dans figureDesc, donc ce point du contrôle est faux."
+      },
+      {
+        "type": "barème",
+        "severity": "minor",
+        "detail": "Le scan montre cinq notes (0,5 / 1 / 1 / 0,5 / 0,5). Leur rattachement aux instructions 1 à 3 est ambigu : une note de 0,5 est alignée avec le cadre de l'instruction 3. L'attribution «1 point» à l'instruction 3 n'est donc pas sûre. Je ne la modifie pas faute de certitude."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "شَاهَدَتْ الْعَائِلَةُ وَمْضَةً إِشْهَارِيَّةً عَلَى شَاشَةِ التِّلْفَازِ لِلْمُرَكَّبِ التِّجَارِيِّ الْعَصْرِيِّ بِالْعَاصِمَةِ. فَزَارَهُ ثَلَاثَةُ إِخْوَةٍ. وَأَثْنَاءَ التَّجْوَالِ فِيهِ عَايَنُوا أَسْعَارَ بَعْضِ الْمَعْرُوضَاتِ حَسَبَ الْبَيَانَاتِ بِالْجَدْوَلِ.",
+      "body": "يَمْلِكُ أَحْمَدُ 7500 مي. فَاشْتَرَى تُحْفَةً مِنَ الْخَزَفِ وَفُرْشَاةَ أَسْنَانٍ.",
+      "figureDesc": "جدول: نوع البضاعة / الثمن بالمي: كيس من الحلوى 1655 مي؛ تحفة من الخزف 3640 مي؛ فرشاة أسنان 1850 مي؛ علبة من الغسول 2620 مي؛ أزهار اصطناعية 2850 مي؛ قارورة عطر ؟ (مجهول)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p037_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "أَبْحَثُ عَنْ قِيمَةِ مُشْتَرَيَاتِ أَحْمَدَ.",
+      "body": "سطران فارغان للإجابة (0,5 نقطة)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p037_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "كَمْ بَقِيَ لَهُ ؟",
+      "body": "سطر فارغ للإجابة (1 نقطة)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p037_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "أُمَثِّلُ بِأَقَلِّ مَا يُمْكِنُ مِنَ الْقِطَعِ النَّقْدِيَّةِ مَا بَقِيَ لِأَحْمَدَ.",
+      "body": "إطار فارغ للتمثيل (1 نقطة)",
+      "figureDesc": "مستطيل فارغ بزوايا مدورة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p037_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2",
+      "instruction": "وَضَعَتْ زَيْنَبُ بِحَافِظَةِ أَمْوَالِهَا الْقِطَعَ النَّقْدِيَّةَ التَّالِيَةَ :",
+      "body": "",
+      "figureDesc": "سبع قطع نقدية (من اليسار إلى اليمين): قطعة مظلمة، قطعة صغيرة منقوشة، قطعة عليها 50 [illisible: الرقم الأخير غير واضح]، قطعة 100، قطعة مظلمة، قطعة من فئة 2، قطعة من فئة 2",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p037_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 4",
+      "instruction": "أَضَعُ الْعَلَامَةَ (x) أَمَامَ الْإِجَابَةِ الصَّحِيحَةِ.",
+      "body": "تَمْلِكُ زَيْنَبُ : 6560 مي / 6650 مي / 5660 مي (0,5 نقطة)",
+      "figureDesc": "ثلاث خانات اختيار بجانب كل إجابة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p037_i6"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "شَاهَدَتِ الْعَائِلَةُ وَمْضَةً إِشْهَارِيَّةً عَلَى شَاشَةِ التَّلْفَازِ لِلْمُرَكَّبِ التِّجَارِيِّ الْعَصْرِيِّ بِالْعَاصِمَةِ. فَزَارَهُ ثَلَاثَةُ إِخْوَةٍ. وَأَثْنَاءَ التَّجْوَالِ فِيهِ عَايَنُوا أَسْعَارَ بَعْضِ الْمَعْرُوضَاتِ حَسَبَ الْبَيَانَاتِ بِالْجَدْوَلِ.",
+      "body": "يَمْلِكُ أَحْمَدُ 7500 مي. فَاشْتَرَى تُحْفَةً مِنَ الْخَزَفِ وَفُرْشَاةَ أَسْنَانٍ.",
+      "figureDesc": "جدول: نوع البضاعة / الثمن بالمي: كيس من الحلوى 1655 مي؛ تحفة من الخزف 3640 مي؛ فرشاة أسنان 1850 مي؛ علبة من الغسول 2620 مي؛ أزهار اصطناعية 2850 مي؛ قارورة عطر ؟ (مجهول)",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_3eme_examens_p037_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "أَبْحَثُ عَنْ قِيمَةِ مُشْتَرَيَاتِ أَحْمَدَ.",
+      "body": "سطران فارغان للإجابة (0,5 نقطة)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_3eme_examens_p037_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "كَمْ بَقِيَ لَهُ ؟",
+      "body": "سطر فارغ للإجابة (1 نقطة)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "jisr_ennajah_3eme_examens_p037_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "أُمَثِّلُ بِأَقَلِّ مَا يُمْكِنُ مِنَ الْقِطَعِ النَّقْدِيَّةِ مَا بَقِيَ لِأَحْمَدَ.",
+      "body": "إطار فارغ للتمثيل (1 نقطة)",
+      "figureDesc": "مستطيل فارغ بزوايا مدورة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_3eme_examens_p037_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2",
+      "instruction": "وَضَعَتْ زَيْنَبُ بِحَافِظَتِهَا أَمْوَالَهَا الْقِطَعَ النَّقْدِيَّةَ التَّالِيَةَ :",
+      "body": "",
+      "figureDesc": "سبع قطع نقدية: قطعتان مظلمتان، قطعة 500 مي، قطعة 100 مي، قطعة صغيرة منقوشة، وقطعتان من فئة 2 دينار",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_3eme_examens_p037_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 4",
+      "instruction": "أَضَعُ الْعَلَامَةَ (x) أَمَامَ الْإِجَابَةِ الصَّحِيحَةِ.",
+      "body": "تَمْلِكُ زَيْنَبُ : 6560 مي / 6650 مي / 5660 مي (0,5 نقطة)",
+      "figureDesc": "ثلاث خانات اختيار بجانب كل إجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_3eme_examens_p037_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

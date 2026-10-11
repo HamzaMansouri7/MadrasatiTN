@@ -1,0 +1,122 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 23,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي: أتخيّل المشهد وأواصل كتابة النهاية (قصة الفتاة والنحلة) مع جدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَتَخَيَّلُ الْمَشْهَدَ وَأُوَاصِلُ كِتَابَةَ النِّهَايَةِ",
+      "body": "Espace d'expression écrite : lignes pointillées à gauche des images, avec barème par ligne (0,5 / 0,5 / 0,5 / 1 / 1 / 1 / 1 / 1 / 1 / 0,5 / 0,5 / 0,5 / 0,5 / 0,5 / 0,5 / 2 / 2 / 1). Cases de notation à droite : مع2أ، مع2ب، مع3ب، مع3ب، مع4.",
+      "figureDesc": "Trois cadres : (1) une petite fille surprise devant des fleurs, une abeille souriante près d'elle ; (2) la fille souriante, l'abeille, et une bulle de pensée contenant un pot de miel (écrit « عسل ») ; (3) un cadre contenant la consigne « أتخيّل المشهد وأواصل كتابة النهاية ».",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p023_i1",
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "Colonnes : المعايير / مستويات التملك ; معايير الحد الأدنى : مع1أ، مع1ب، مع2أ، مع2ب، مع3أ، مع3ب ; معيار التميز : مع4.\nانعدام التملك (– – –) : 0، 0، 0، 0، 0، 0، 0.\nالتملك دون الأدنى (+ – –) : مع1أ 0,5 ; مع1ب 0,5 ; مع2أ 1 ; مع2ب 1 ; مع3أ 0,5 – 1 ; مع3ب 0,5 – 1 ; مع4 : 2.\nالتملك الأدنى (+ + –) : مع1أ 1 ; مع1ب 1 ; مع2أ 2 ; مع2ب 2 ; مع3أ 1,5 – 2 ; مع3ب 1,5 – 2 ; مع4 : 4.\nالتملك الأقصى (+ + +) : مع1أ 1,5 ; مع1ب 1,5 ; مع2أ 3 ; مع2ب 3 ; مع3أ 2,5 – 3 ; مع3ب 2,5 – 3 ; مع4 : 5.\nالنتيجة الإجمالية : /20. Numéro de page : 22.",
+      "figureDesc": "Tableau de barème avec niveaux de maîtrise et critères ; une case de note sur 20 à gauche.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "evaluations_toutes_matieres_p023_i2",
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-2-u8",
+  "topicTitle": "Unité 8 : Fêtes nationales, religieuses et célébrations",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u5",
+    "confidence": 0.55
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une production écrite (imaginer la scène et écrire la fin d'une histoire) avec un tableau d'attribution des notes, ce qui évoque un bilan de production d'écrit, typique de l'Unité 8, mais rien n'y indique clairement l'unité précise.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : suite d'un récit",
+    "skill": "Imaginer une scène à partir d'images et rédiger la fin d'un récit court en respectant des critères d'évaluation.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "production écrite",
+      "fin de récit",
+      "images séquentielles",
+      "grille d'évaluation",
+      "barème",
+      "2ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation d'écriture à partir d'images (une fillette et une abeille) où l'élève imagine la scène puis rédige la fin, avec un barème par ligne et une grille de critères à niveaux de maîtrise, réutilisable pour concevoir des évaluations de production écrite.",
+    "themeGroup": "Production écrite: suite de récit"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "النِّهَايَةِ : l'image montre « النِّهَايَةِ » avec la même voyelle; OK, mais « الْمَشْهَدَ » est écrit « الْمَشْهَد » avec sukun/fatha différent, détail négligeable"
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Tableau, ligne التملك الأدنى : مع2أ et مع2ب valent 2, mais مع1أ/مع1ب valent 1 : correct ; en revanche pour la ligne التملك الأقصى مع1أ et مع1ب valent 1,5 : correct. Les colonnes sont toutefois mal attribuées : dans l'image مع3أ est subdivisé en 2 sous-colonnes (0,5 et 1 ; 1,5 et 2 ; 2,5 et 3) et مع3ب aussi (1 - 0,5, etc.), la transcription est approximative"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Barème des lignes : l'image donne 0,5 ×3, 1 ×6, 0,5 ×6, 2, 2, 1 : correct. Cependant مع2أ est placé dans la colonne de la ligne « التملك دون الأدنى » avec 1 : correct"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres de colonnes dans l'image : معيار التميز et الحد الأدنى sont avec tashkeel (مَعَايِيرُ الْحَدِّ الْأَدْنَى، مِعْيَارُ التَّمَيُّزِ، جَدْوَلُ إِسْنَادِ الْأَعْدَادِ) ; la transcription omet les voyelles de ces en-têtes"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les images (fille et abeille, bulle de miel « عسل ») ne sont pas décrites ; la case vide « 20 » et le point (النتيجة) sont transcrits « /20 » sans précision"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« النتيجة الإجمالية : /20 » : ce libellé n'apparaît pas dans l'image, seule une case avec 20 est visible"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Ordre des colonnes مع1أ… listé de gauche à droite alors que le tableau est lu de droite à gauche; مع1ب mal placé: l'image montre مع1ب à côté de مع1أ, ok; cases de notation : مع3أ n'existe pas à droite (deux مع3ب), fidèle à l'image"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

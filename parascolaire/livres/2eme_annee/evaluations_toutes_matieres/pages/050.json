@@ -1,0 +1,161 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 50,
+  "grade": "2ème Année",
+  "subject": "إيقاظ علمي",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني عدد 4 - إيقاظ علمي - السنة الثانية (جسم الإنسان، التدافع، الإصابات، التغذية السليمة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "السَّنَدُ 1 : زَارَتْ مَجْمُوعَةٌ مِنَ الأَطْفَالِ فِي رِحْلَةِ الْمَتْحَفِ الأَثَرِيِّ بِبَارْدُو فَشَاهَدُوا هَيَاكِلَ عَظْمِيَّةً مُخْتَلِفَةً. التَّعْلِيمَةُ 1 : أَكْتُبُ فِي الْفَرَاغَاتِ الأَجْزَاءَ الرَّئِيسِيَّةَ لِجِسْمِ الإِنْسَانِ.",
+      "body": "- 1 ............................ - 2 ............................ - 3 ............................ (المعيار: معـ1أ؛ 3 نقاط: 1 + 1 + 1)",
+      "figureDesc": "ثلاثة فراغات للإجابة وثلاثة مربعات للتقييم في خانة المعايير",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p050_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أُصْلِحُ الْخَطَأَ.",
+      "body": "* يَنْتَمِي مِفْصَلُ الرُّكْبَةِ إِلَى الأَطْرَافِ الْعُلْوِيَّةِ.\n* يَنْتَمِي مِفْصَلُ الرُّكْبَةِ إِلَى ............................ . (المعيار: معـ3؛ نقطة: 1)",
+      "figureDesc": "مربع تقييم واحد",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p050_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "السَّنَدُ 2 : رَأَى الْمُعَلِّمُ التَّلَامِيذَ يَتَدَافَعُونَ فَمَنَعَهُمْ مِنْ فِعْلِ ذَلِكَ فِي الْمُسْتَقْبَلِ. التَّعْلِيمَةُ 3 : أُكْمِلُ الْفَرَاغَاتِ بِمَا يُنَاسِبُ لِأُجِيبَ عَلَى السُّؤَالِ التَّالِي :",
+      "body": "لِمَاذَا مَنَعَ الْمُعَلِّمُ التَّلَامِيذَ مِنَ التَّدَافُعِ؟\nمَنَعَ الْمُعَلِّمُ التَّلَامِيذَ مِنَ التَّدَافُعِ ............................\n............................ (المعيار: معـ2أ؛ نقطة: 1)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p050_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : أَذْكُرُ 3 أَنْوَاعٍ مِنَ الإِصَابَاتِ الَّتِي يُمْكِنُ أَنْ تُصِيبَ جِسْمَ الإِنْسَانِ.",
+      "body": "- 1 ............................ - 2 ............................ - 3 ............................ (المعيار: معـ1ب؛ 3 نقاط: 1 + 1 + 1)",
+      "figureDesc": "ثلاثة أسطر للإجابة وثلاثة مربعات للتقييم",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p050_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "السَّنَدُ 3 : عِنْدَ الزَّوَالِ شَعُرَ أَحْمَدُ بِالْجُوعِ فَاشْتَرَى قِطْعَةَ مُرَطِّبَاتٍ مِنْ بَائِعٍ مُتَجَوِّلٍ مَرَّ قُرْبَ الْمُتْحَفِ. التَّعْلِيمَةُ 5 : أَضَعُ عَلَامَةَ (x) فِي الْخَانَةِ الْمُنَاسِبَةِ ثُمَّ أُعَلِّلُ إِجَابَتِي.",
+      "body": "☐ تَصَرَّفَ أَحْمَدُ بِطَرِيقَةٍ سَلِيمَةٍ.\n☐ تَصَرَّفَ أَحْمَدُ بِطَرِيقَةٍ غَيْرِ سَلِيمَةٍ.\nأُعَلِّلُ إِجَابَتِي :\nتَصَرَّفَ أَحْمَدُ بِطَرِيقَةٍ ............................ لِأَنَّ الْمُرَطِّبَاتِ الَّتِي اشْتَرَاهَا ............................ (المعيار: معـ2أ؛ نقطة للاختيار ونقطة للتعليل)",
+      "figureDesc": "خانتا اختيار للعلامة (x) ومربعان للتقييم",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p050_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u2",
+    "confidence": 0.21
+  },
+  "topicSubject": "Éveil scientifique (إيقاظ علمي)",
+  "topicReason": "La page est un test de fin de trimestre en éveil scientifique (corps humain, bousculades, blessures, alimentation saine), matière absente de la liste officielle (arabe et mathématiques uniquement), et elle couvre plusieurs thèmes, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Corps humain, prévention et alimentation",
+    "skill": "Identifier les os et articulations du corps, comprendre les risques des bousculades, citer des blessures et juger un comportement alimentaire sain",
+    "pageType": "exam",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "squelette",
+      "articulations",
+      "bousculade",
+      "blessures",
+      "alimentation saine",
+      "hygiène alimentaire"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Examen structuré en supports contextualisés (visite au musée, bousculade en classe, achat d'une pâtisserie à un vendeur ambulant) avec consignes variées : légender un squelette, corriger une erreur, compléter une explication causale, citer des exemples, cocher et justifier un comportement ; chaque question est liée à un critère d'évaluation noté.",
+    "themeGroup": "Le corps humain"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "السَّنَدُ 1 : « الأَثَرِيِّ » et « الأَطْفَالِ » : la transcription ajoute des hamzas/voyelles normalisées ; dans l'image « الأَطْفَالِ » est correct, mais « الْمَتْحَفِ » est écrit avec sukun/fatha différents selon la ligne (« الْمُتْحَفِ » dans le Sanad 3, « الْمَتْحَفِ » dans le Sanad 1) : conforme à l'image, à vérifier seulement."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أُصْلِحُ الْخَطَأَ » : l'image montre « الْخَطَأَ » avec tanwin (« الْخَطَأً ») ; la transcription met fatha seule."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الْعُلْوِيَّةِ » : l'image montre « الْعُلْوِيَّةِ » ; OK. Mais « مُرَطِّبَاتٍ » : l'image porte « مُرَطَّبَاتٍ » (مُرَطَّبَات), la transcription a « مُرَطِّبَاتٍ » (kasra fautive) ; idem « الْمُرَطِّبَاتِ » devrait être « الْمُرَطَّبَاتِ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« شَعُرَ » : l'image porte « شَعُرَ » ; OK. « التَّعْلِيمَةُ 3 » : « لِأُجِيبَ » dans l'image est « لِأُجِيبَ » ; OK. « يَنْتَمِي » : l'image porte « يَنْتَمِي » avec tashkeel partiel ; sans impact."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Annotation « 3 نقاط: 1 + 1 + 1 » et colonnes critères ajoutées entre parenthèses : métadonnées, pas dans le texte, mais reformulées (ex. « نقطة للاختيار ونقطة للتعليل »)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (امتحانات جسر النجاح، إختبار نهاية الثلاثي الثاني عدد 4، المادة إيقاظ علمي، المستوى السنة الثانية، الاسم/اللقب/القسم) et le numéro de page 49 ne sont pas transcrits."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

@@ -1,0 +1,299 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 13,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "خط وإملاء – اختبار نهاية الثلاثي الثاني (عدد 1) – السنة الثانية",
+  "items": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "امْتِحَانَاتُ جِسْرِ النَّجَاحِ",
+      "body": "اخْتِبَارُ نِهَايَةِ الثُّلَاثِيِّ الثَّانِي — عَدَد : 1 ؛ الْمَادَّة : خَطٌّ وَإِمْلَاءٌ ؛ الْمُسْتَوَى : السَّنَةُ الثَّانِيَةُ ؛ الاسم : ........ ؛ اللقب : ........ ؛ القسم : ........ ؛ (صفحة 12)",
+      "figureDesc": "رأس الصفحة مع شريط عنوان، وجدول فيه المعايير والأنشطة والنقاط المسندة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p013_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسُخُ عَلَى مِنْوَالِ الْمِثَالِ :",
+      "body": "السطر الأول (من اليمين إلى اليسار): ضَا . صِي . سٌ . شٍ ؛ السطر الثاني: كَهْـ . ذِئْـ . ثَوْ . مِحْـ .",
+      "figureDesc": "ورق مسطر (شبكة) تحت كل سطر لنسخ الحروف والمقاطع. على اليمين خانات المعايير: الوضوح والجمالية للسطر الأول، ثم الوضوح والجمالية للسطر الثاني. على اليسار النقاط المسندة: 0,25 لكل حرف، 0,25 لكل حرف (السطر الأول)؛ 0,5 لكل مقطع، 0,25 لكل مقطع (السطر الثاني). المجموع /10.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p013_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمْلَةِ وَأُغَيِّرُ «هِشَامٌ» بِـ «هَاجِرُ».",
+      "body": "رَأَى هَشَامٌ الشَّوَارِعَ مُزْدَانَةً بِالْأَعْلَامِ.",
+      "figureDesc": "ورق مسطر لإعادة كتابة الجملة. المعايير: الاسترسال، التناسق، الجمالية. النقاط: 0,25 لكل كلمة، 0,5 لكل كلمة، 0,25 لكل كلمة. المجموع /10.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p013_i3"
+    },
+    {
+      "kind": "section",
+      "number": null,
+      "instruction": "إِمْلَاءٌ :",
+      "body": "",
+      "figureDesc": "عنوان القسم في شريط داكن.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "evaluations_toutes_matieres_p013_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُكَمِّلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "تَناوَلَ زِيادٌ فَطورَ ........................ ثُمَّ اسْتَأْذَنَ أَبَوَيْهِ\nوَانْطَلَقَ نَحْوَ ........................، شَدَّ ........................\nوَشَرَعَ يَسْقِي ........................ وَ ........................ .",
+      "figureDesc": "فقرة بها فراغات منقطة على ورق مسطر. المعيار: السلامة من الأخطاء. التنقيط: 2 لكل كلمة صحيحة. المجموع /10.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "evaluations_toutes_matieres_p013_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p6",
+    "confidence": 0.36
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un test de fin de deuxième trimestre (écriture, copie, dictée) couvrant plusieurs unités (4 à 6) et non un chapitre précis, donc aucun chapitre ne correspond exactement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Écriture et dictée : évaluation du trimestre",
+    "skill": "Copier des lettres et syllabes avec soin, recopier une phrase en changeant le sujet, compléter un texte dicté avec les mots manquants.",
+    "pageType": "exam",
+    "formats": [
+      "production_ecrite",
+      "texte_a_trous",
+      "dictee"
+    ],
+    "keywords": [
+      "calligraphie",
+      "copie",
+      "dictée",
+      "texte à trous",
+      "évaluation trimestrielle",
+      "arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'épreuve combinant copie notée selon des critères de lisibilité et d'esthétique, transformation de phrase par changement de sujet, et dictée à trous sur une scène de la vie quotidienne (un enfant arrosant le jardin après le petit-déjeuner).",
+    "themeGroup": "Évaluations et consignes"
+  },
+  "audit": {
+    "accuracy": 0.72,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«سٌ» transcrit avec tanwin ; l'image montre «سٌّ» (damma avec chadda) : forme «سٌ» incomplète"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Consigne 2 : «هاجِرُ» ; l'image montre «هَاجِرُ» (avec fatha sur le هـ) et la ponctuation «هَاجِرُ». Voyelles absentes ou différentes"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الشَّوارِعَ» : l'image montre «الشَّوَارِعَ» (fatha sur le و) ; «مُزْدانَةً» devrait être «مُزْدَانَةً» ; «بِالأَعْلامِ» devrait être «بِالْأَعْلَامِ»"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«أُكَمِّلُ» ; l'image montre «أُكَمِّلُ» mais avec «الْفِقْرَةَ» et «الْكَلِمَاتِ» : la transcription écrit «بِالْكَلِمَاتِ» correctement ; mais «أَبَوَيْهِ» devrait être «أَبَوَيْهِ» selon l'image «أَبَوَيْهِ», et «اسْتَأْذَنَ» est lu «اسْتَأْذَنَ» : OK"
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Texte à trous reconstitué de façon inventée : l'image montre «تَناوَلَ زِيادٌ فَطورَ ...... ثُمَّ اسْتَأْذَنَ أَبَوَيْهِ / وَانْطَلَقَ نَحْوَ ......، شَدَّ ...... / وَشَرَعَ يَسْقِي ...... وَ ...... .» ; la transcription place les trous en ligne continue, mais l'ordre des lignes est inversé (RTL)"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le barème est mal transcrit : l'image indique 0,25 par lettre (2 lignes), 0,5 par syllabe, 0,25 par syllabe ; pour la phrase 0,25/mot, 0,5/mot, 0,25/mot ; pour la dictée 2 par mot correct sur 10. La transcription indique seulement une partie du barème"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Absents : en-tête «امتحانات جسر النجاح», «اختبار نهاية الثلاثي الثاني عدد 1», matière خط وإملاء, niveau السنة الثانية, champs الاسم/اللقب/القسم, titre «إملاء :», note /10, critères (الاسترسال، التناسق، الجمالية، السلامة من الأخطاء), numéro de page 12"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre de la dictée est numéroté «2» dans l'image mais l'exercice 1 de la partie dictée n'existe pas ; la numérotation est fusionnée avec «إملاء:»"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.78,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Consigne 2 : «هاجِرُ» doit porter la fatha sur le هـ et sur le ه de «هِشامٌ» : «هِشَامٌ» / «هَاجِرُ». Les fatha avant alif manquent aussi dans «كِتابَةَ»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Phrase à recopier : l'image montre «رَأَى هَشَامٌ الشَّوَارِعَ مُزْدَانَةً بِالْأَعْلَامِ.» ; la transcription omet les fatha sur «هَشَامٌ», «الشَّوَارِعَ», «مُزْدَانَةً», «الْأَعْلَامِ» et le sukun sur اللام de «بِالْأَعْلَامِ»."
+      },
+      {
+        "type": "bareme",
+        "severity": "minor",
+        "detail": "Barème de l'exercice 1 mal reporté. L'image donne, de haut en bas, 0,25 par lettre (deux fois), puis 0,5 par syllabe et 0,25 par syllabe. Il y a deux blocs de critères (الوضوح، الجمالية) : un pour chaque ligne. La transcription les confond."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Éléments absents : en-tête «امتحانات جسر النجاح», «اختبار نهاية الثلاثي الثاني عدد : 1», «المادة : خط وإملاء», «المستوى : السنة الثانية», champs الاسم/اللقب/القسم, titre de section «إملاء :», colonnes المعايير / الأنشطة / النقاط المسندة, numéro de page 12."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "Le titre de section «إملاء :» est fusionné dans la consigne de l'exercice 2 de la dictée. Dans l'image, c'est un bandeau séparé et la consigne est «2 - أُكَمِّلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.»."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "امْتِحَانَاتُ جِسْرِ النَّجَاحِ",
+      "body": "اخْتِبَارُ نِهَايَةِ الثُّلَاثِيِّ الثَّانِي — عَدَد : 1 ؛ الْمَادَّة : خَطٌّ وَإِمْلَاءٌ ؛ الْمُسْتَوَى : السَّنَةُ الثَّانِيَةُ ؛ الاسم : ........ ؛ اللقب : ........ ؛ القسم : ........ ؛ (صفحة 12)",
+      "figureDesc": "رأس الصفحة مع شريط عنوان، وجدول فيه المعايير والأنشطة والنقاط المسندة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسُخُ عَلَى مِنْوَالِ الْمِثَالِ :",
+      "body": "السطر الأول (من اليمين إلى اليسار): ضَا . صِي . سٌ . شٍ ؛ السطر الثاني: كَهْـ . ذِئْـ . ثَوْ . مِحْـ .",
+      "figureDesc": "ورق مسطر (شبكة) تحت كل سطر لنسخ الحروف والمقاطع. على اليمين خانات المعايير: الوضوح والجمالية للسطر الأول، ثم الوضوح والجمالية للسطر الثاني. على اليسار النقاط المسندة: 0,25 لكل حرف، 0,25 لكل حرف (السطر الأول)؛ 0,5 لكل مقطع، 0,25 لكل مقطع (السطر الثاني). المجموع /10.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمْلَةِ وَأُغَيِّرُ «هِشَامٌ» بِـ «هَاجِرُ».",
+      "body": "رَأَى هَشَامٌ الشَّوَارِعَ مُزْدَانَةً بِالْأَعْلَامِ.",
+      "figureDesc": "ورق مسطر لإعادة كتابة الجملة. المعايير: الاسترسال، التناسق، الجمالية. النقاط: 0,25 لكل كلمة، 0,5 لكل كلمة، 0,25 لكل كلمة. المجموع /10.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i3"
+    },
+    {
+      "kind": "section",
+      "number": null,
+      "instruction": "إِمْلَاءٌ :",
+      "body": "",
+      "figureDesc": "عنوان القسم في شريط داكن.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُكَمِّلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "تَناوَلَ زِيادٌ فَطورَ ........................ ثُمَّ اسْتَأْذَنَ أَبَوَيْهِ\nوَانْطَلَقَ نَحْوَ ........................، شَدَّ ........................\nوَشَرَعَ يَسْقِي ........................ وَ ........................ .",
+      "figureDesc": "فقرة بها فراغات منقطة على ورق مسطر. المعيار: السلامة من الأخطاء. التنقيط: 2 لكل كلمة صحيحة. المجموع /10.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسُخُ عَلَى مِنْوالِ الْمِثالِ :",
+      "body": "السطر الأول (من اليمين إلى اليسار): ضَا . صِي . سٌ . شٍ ؛ السطر الثاني: كَهْـ . ذِئْـ . ثَوْ . مِحْـ . (الحروف والمقاطع نماذج للنسخ على الورق المسطر). التنقيط: 0,25 لكل حرف، 0,5 لكل مقطع في الأول، 0,25 لكل مقطع في الثاني. المعايير: الوضوح، الجمالية.",
+      "figureDesc": "ورق مسطر (شبكة) تحت كل سطر لنسخ الحروف والمقاطع؛ جدول المعايير (الوضوح، الجمالية) بخانات على اليمين، والنقاط المسندة على اليسار.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتابَةَ الْجُمْلَةِ وَأُغَيِّرُ «هِشامٌ» بِـ «هاجِرُ».",
+      "body": "رَأَى هَشامٌ الشَّوارِعَ مُزْدانَةً بِالأَعْلامِ.",
+      "figureDesc": "ورق مسطر لإعادة كتابة الجملة؛ المعايير: الاسترسال، التناسق، الجمالية؛ النقاط: 0,25 / 0,5 / 0,25 لكل كلمة؛ المجموع /10.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "إملاء: أُكَمِّلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "تَناوَلَ زِيادٌ فَطورَ ........................ ثُمَّ اسْتَأْذَنَ أَبَوَيْهِ وَانْطَلَقَ نَحْوَ ........................، شَدَّ ........................ وَشَرَعَ يَسْقِي ........................ وَ ........................ .",
+      "figureDesc": "فقرة بها فراغات منقطة على ورق مسطر؛ المعيار: السلامة من الأخطاء؛ التنقيط: 2 لكل كلمة صحيحة؛ المجموع /10.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p013_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.78
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

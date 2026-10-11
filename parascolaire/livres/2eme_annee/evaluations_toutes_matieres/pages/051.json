@@ -1,0 +1,134 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 51,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقييم: تصحيح الخطأ، مصدر الغذاء (نباتي/حيواني)، ترتيب النزول من الحافلة، الحدث الدوري وغير الدوري، وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَقْرَأُ التَّعْلِيمَةَ ثُمَّ أُصْلِحُ الْخَطَأَ الْوَارِدَ فِيهَا.",
+      "body": "فَطُورُ الصَّبَاحِ غَيْرُ ضَرُورِيٍّ.\nفَطُورُ الصَّبَاحِ ← ...........................................\nمعيار التقييم: معـ 3 (خانة تقييم واحدة، النقطة: 1)",
+      "figureDesc": "سهم يشير إلى سطر منقّط لكتابة التصحيح، ومربع صغير للتقييم على اليمين.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p051_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَضَعُ عَلَامَةَ (x) فِي الْمَكَانِ الْمُنَاسِبِ بِالْجَدْوَلِ.",
+      "body": "الْغِذَاءُ: زُبْدَةٌ، عَصِيرُ الْبُرْتُقَالِ، حَلِيبٌ.\nالأعمدة: مَصْدَرٌ نَبَاتِيٌّ، مَصْدَرٌ حَيَوَانِيٌّ.\nمعيار التقييم: معـ 1ج (3 خانات تقييم، لكل واحدة نقطة 1)",
+      "figureDesc": "جدول من ثلاثة أعمدة (الغذاء، مصدر نباتي، مصدر حيواني) وثلاثة أسطر (زبدة، عصير البرتقال، حليب)، الخانات فارغة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p051_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "قَالَ الْمُعَلِّمُ سَنُحَافِظُ عَلَى النِّظَامِ لِذَلِكَ سَتَصْعَدُونَ إِلَى الْحَافِلَةِ بِنَفْسِ تَرْتِيبِ نُزُولِكُمْ مِنْهَا.\nقَالَ أُسَامَةُ: أَنَا نَزَلْتُ بَعْدَ أَحْمَدَ وَقَبْلَ وَلِيدٍ.\nقَالَ وَجْدِي: أَنَا نَزَلْتُ بَعْدَ وَلِيدٍ وَقَبْلَ عَلِيٍّ.\nقَالَ مُحَمَّدٌ: أَنَا آخِرُ مَنْ نَزَلَ مِنَ الْحَافِلَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p051_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُصْلِحُ التَّرْتِيبَ.",
+      "body": "وَجْدِي ②، وَلِيدٌ ①، أَحْمَدُ ④، أُسَامَةُ ⑥، مُحَمَّدٌ ③، عَلِيٌّ ⑤\nأُصْلِحُ: وَجْدِي ○، وَلِيدٌ ○، أَحْمَدُ ○، أُسَامَةُ ○، مُحَمَّدٌ ○، عَلِيٌّ ○\nمعيار التقييم: معـ 3 (سلم النقاط: 0.5 - 1 / 1.5 - 2 / 2.5 - 3)",
+      "figureDesc": "سطر أول بأسماء الأطفال داخل دوائر مرقّمة ترقيمًا خاطئًا، وسطر ثانٍ بدوائر فارغة لكتابة الترتيب الصحيح، وثلاث خانات تقييم مزدوجة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p051_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أَكْتُبُ «خَطَأً» أَوْ «صَوَابٌ» ثُمَّ أُعَلِّلُ.",
+      "body": "1) زِيَارَةُ الْمَتْحَفِ حَدَثٌ دَوْرِيٌّ. [.................] لِأَنَّهُ ...........................................\n2) عُطْلَةُ الشِّتَاءِ حَدَثٌ غَيْرُ دَوْرِيٍّ. [.................] لِأَنَّهُ ...........................................\nمعيار التقييم: معـ 2ب (0.5 - 1 لكل جملة)",
+      "figureDesc": "مستطيلان للإجابة وسطران منقّطان للتعليل، وخانتا تقييم على اليمين.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p051_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مستويات التملك / المعايير: معـ1أ، معـ1ب، معـ1ج، معـ2أ، معـ2ب (معايير الحد الأدنى)، معـ3 (معيار التمييز).\nانعدام التملك: 0، 0، 0، 0، 0 ← معـ3: 1\nالتملك دون الأدنى: 1، 1، 1، 1، 0.5 - 1 - 1.5 ← معـ3: 2\nالتملك الأدنى: 2، 2، 2، 2، 2 ← معـ3: 3\nالتملك الأقصى: 3، 3، 3، 3، 2.5 - 3 ← معـ3: 4 و5",
+      "figureDesc": "جدول إسناد الأعداد حسب مستويات التملك ومعايير الحد الأدنى ومعيار التمييز. رقم الصفحة 50.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "evaluations_toutes_matieres_p051_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p1",
+    "confidence": 0.12
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Cette page est une évaluation (items de correction d'erreur, source alimentaire, ordre de descente, événements périodiques, grille de notation par critères) qui couvre plusieurs thèmes (santé/alimentation, vie scolaire, temps) et ne correspond pas clairement à un seul chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Évaluation : consignes, ordre et temps",
+    "skill": "Comprendre une consigne et corriger une erreur, classer des aliments selon leur origine, ordonner des personnes d'après des indices et distinguer événements périodiques et non périodiques.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "vrai_faux",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "évaluation",
+      "correction d'erreur",
+      "origine des aliments",
+      "ordre de passage",
+      "événement périodique",
+      "grille de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : situation de la descente du bus où l'on déduit un rang à partir d'indices « avant/après », tableau à cocher pour classer des aliments (origine végétale/animale), vrai/faux avec justification sur les événements périodiques, et grille d'attribution des notes par critères de maîtrise.",
+    "themeGroup": "Évaluations et consignes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

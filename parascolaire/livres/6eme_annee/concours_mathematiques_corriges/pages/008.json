@@ -1,0 +1,116 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 8,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Problème de concours : échelle d'une carte, distance, vitesse et durée, heure d'arrivée ; fractions et capacité d'un réservoir (proportionnalité)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حدد ساعة الوصول الى المدينة \" ب \" علما وأن السائق توقف مدة ربع ساعة للتزود بالوقود؟",
+      "body": "المسألة عدد 3 (8 نقاط). المسافة الفاصلة بين المدينة \" أ \" والمدينة \" ب \" قُدّرت بـ 32.5 صم على خريطة سلّمها: 1/400000. انطلقت سيارة من المدينة \" أ \" على الساعة الثامنة صباحا و25 دق بمعدّل سرعة 100 كم / س.",
+      "figureDesc": "Un tampon circulaire (cachet) est visible à gauche du texte. Un filigrane arabe orange couvre la page.",
+      "answer": "المسافة: 32.5 × 4 = 130 كم. 100 كم ---> 60 دق ; 130 كم ---> ؟ . مدة السير الفعلي: (130 × 60) : 100 = 78 دق = 1 س و 18 دق. ساعة الوصول: 8 س و 25 دق + 15 دق + 1 س و 18 دق = 9 س و 58 دق",
+      "confidence": 0.9,
+      "id": "concours_mathematiques_corriges_p008_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسب سعة الخزان؟",
+      "body": "عند الانطلاق كان بالخزان 6/11 سعته بنزينا وعند الوقوف لاحظ السائق ان السيارة قد استهلكت 5/6 كمية البنزين بالخزان فأعاد ملء الخزان إلى 1/2 سعة الخزان فدفع 78.75 د مقابل 2.5 د اللتر الواحد.",
+      "figureDesc": "",
+      "answer": "6 أجزاء عند الانطلاق. 1 جزء كمية متبقية. كمية مضافة: 5.5 – 1 = 4.5. كمية البنزين المضافة: 78.75 : 2.5 = 31.5 ل. سعة الخزان: (31.5 × 11) : 4.5 = 77 ل",
+      "confidence": 0.88,
+      "id": "concours_mathematiques_corriges_p008_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-6-p3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p3",
+    "confidence": 0.4
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit d'un problème de concours à plusieurs étapes (échelle, distance, vitesse, durée, heure d'arrivée, fractions, capacité du réservoir et prix) qui mobilise plusieurs chapitres, ce qui correspond à la synthèse et à la résolution de situations-problèmes préparant au concours d'entrée aux collèges pilotes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    5,
+    6
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problème de concours : échelle, vitesse et capacité",
+    "skill": "Résoudre un problème en plusieurs étapes combinant échelle d'une carte, distance, vitesse, durée et fractions d'une capacité.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "échelle",
+      "vitesse",
+      "durée",
+      "heure d'arrivée",
+      "fractions",
+      "capacité du réservoir"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de voyage en voiture à décliner : conversion d'une distance de carte avec l'échelle, calcul de l'heure d'arrivée avec une pause, puis retrouver la capacité d'un réservoir à partir de fractions et du prix payé.",
+    "themeGroup": "Durées, vitesse et échelle"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«صم» dans l'image (abréviation de سم) est transcrit «صم» — fidèle à l'image, mais probablement «سم»; à signaler seulement comme lecture ambiguë"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre «المسألة عدد 3 (8 نقاط)» et l'énoncé sont placés après la question 1 ; dans l'image le titre et l'énoncé précèdent la question 1"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "L'énoncé de la partie 2 («عند الانطلاق...») est mis avant la question 2, ce qui est correct, mais la phrase «احسب سعة الخزان؟» est séparée de la fin de l'énoncé alors qu'elle suit directement «اللتر الواحد»"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«قُدّرت» et «سلّمها» comportent des voyelles/chadda ajoutées ; l'image montre «قدرت» et «سلمها» avec quelques signes, l'état est peu net"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«2.5 د» pour le prix du litre : conforme à l'image, mais «8 نقاط» entre parenthèses a été ajouté avec un point final «.» absent (l'image montre «:»)"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Dans la ligne «5.5 – 1 = 4.5» de l'image on lit «5.5» (en fait 5,5 attendu = 5.5 ; ok), mais le tampon/filigrane en arabe (وليد) et le cachet ne sont pas transcrits"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

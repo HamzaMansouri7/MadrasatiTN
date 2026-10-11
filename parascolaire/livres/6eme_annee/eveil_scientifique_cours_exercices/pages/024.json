@@ -1,0 +1,165 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 24,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الحاجات الغذائية للإنسان: الحريرات (السعرات الحرارية) واختلاف الوجبة الغذائية باختلاف السن والجنس",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "7",
+      "instruction": "",
+      "body": "الحرارة التي تنتج عن احتراق الطعام تقاس بوحدة حرارية تسمى «الحريرة».",
+      "figureDesc": "Encadré d'information en haut à droite de la page, avec l'étoile numérotée 7.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p024_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "استعن بالجدول الجانبي ثم اكتب داخل المستطيل «صواب» أو «خطأ»",
+      "body": "- 200 غرام من السمك تعوّض 100 غرام من لحم الضأن.\n- لحم الدجاج يوفّر أكثر قيمة حرارية من لحم الضأن.\n- 100 غرام من لحم الدجاج تعوّض 200 غرام من السمك.",
+      "figureDesc": "Tableau à 3 colonnes (نوع الغذاء المستهلك، كتلته بالغرام، عدد الحريرات) : لحم ضأن 100 غ = 330 حريرة ; لحم دجاج 100 غ = 150 حريرة ; سمك 100 غ = 75 حريرة. Un rectangle vide est placé devant chaque énoncé.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p024_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "هل تعلم أنّ جسم الطفل يحتاج من 2 إلى 3 غرامات من الزلاليات بالنسبة لكلّ كيلو غرام من وزن جسمه ؟",
+      "figureDesc": "Encadré « هل تعلم » à gauche, sous le tableau.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p024_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أ) من الذي يحتاج طعاما أكثر ؟",
+      "body": "(ملاحظة): تبيّن الأرقام ما يحتاجه الجسم من غذاء معبّر عنه بوحدة حرارية في يوم راحة تامة.",
+      "figureDesc": "Six dessins de personnes de la plus âgée à la plus jeune (homme, femme, adolescent, enfant qui court, enfant qui joue, bébé). Tableau (العمر / الحريرات) : سنتان 1100 ; 4 سنوات 1500 ; 8 سنوات 1800 ; 15 سنة 3000 ; 25 سنة 2100 (femme) ; 25 سنة 2400 (homme).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p024_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "ب) اكتب «صواب» أو «خطأ» :",
+      "body": "- الغذاء الذي يأكله طفل عمره سنتيْن على قدر ما يأكل طفل عمره 4 سنوات.\n- تحتاج المرأة المرضعة يوميًا إلى نفس القيمة الغذائيّة التي تحتاجه المرأة الحامل.\n- تختلف الوجبة الغذائيّة باختلاف السنّ.\n- تختلف الوجبة الغذائيّة باختلاف الجنس.",
+      "figureDesc": "Un rectangle vide devant chaque énoncé.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p024_i5",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "هل تعلم أنّ الأملاح المعدنيّة توجد بصفة عامّة في الخضروات ومن أهمّ فوائدها أنها تدخل في تركيب العظام والأسنان والدّم.",
+      "figureDesc": "Encadré « هل تعلم » en bas de page. Numéro de page : 56.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p024_i6",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.18
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des besoins alimentaires humains (calories, protéines, sels minéraux, ration selon l'âge et le sexe), ce qui correspond à la partie « nutrition équilibrée » de l'unité 3 (système circulatoire, nutrition, immunité et microbes).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Besoins alimentaires et calories",
+    "skill": "Comparer les besoins énergétiques de l'organisme selon l'âge, le sexe et l'état physiologique, en lisant un tableau de valeurs caloriques.",
+    "pageType": "mixed",
+    "formats": [
+      "vrai_faux",
+      "schema_tableau",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "calories",
+      "besoins alimentaires",
+      "âge et sexe",
+      "femme enceinte",
+      "protéines",
+      "sels minéraux"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des séries d'affirmations vrai/faux à vérifier dans un tableau de valeurs énergétiques (équivalences entre aliments, besoins selon l'âge, la grossesse ou l'allaitement), avec des encadrés « Le savais-tu ? » qui apportent des faits complémentaires.",
+    "themeGroup": "Énergie, besoins et troubles alimentaires"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de l'exercice 7 est absent : type d'aliment (لحم ضأن/لحم دجاج/سمك), masse 100 g, calories 330/150/75, avec les en-têtes."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de l'exercice 8 est absent : âges (سنتان، 4 سنوات، 8 سنوات، 15 سنة، 25 سنة، 25 سنة) et calories (1100، 1500، 1800، 3000، 2100، 2400)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« التي تحتاجه المرأة الحامل » : le texte original est « تحتاجه » après « التي », mais la transcription a écrit « تحتاجه » avec un mot manquant : « المرأة الحامل » est coupé, il manque « الحامل » dans la phrase complète, qui se lit « التي تحتاجه المرأة الحامل » (à vérifier)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الدجاج » dans la 2e phrase porte un tashkeel visible dans l'image (الدِّجاج) ; la transcription l'omet. « لحم الضأن » est écrit « الضّأن » dans l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أنّ » : dans la transcription « هل تعلم أنّ » correct, mais « السمك » est écrit « السَّمك » dans l'image, avec tashkeel absent dans la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les illustrations des personnages (6 figures) et le numéro de page 56 ne sont pas mentionnés."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

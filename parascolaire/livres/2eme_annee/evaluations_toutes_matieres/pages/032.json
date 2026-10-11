@@ -1,0 +1,264 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 32,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وضعية إدماجية: مسائل رياضية حول عصير البرتقال (الجمع والطرح، ترتيب الأعداد تصاعديا). Remarque : la page est imprimée 31 et le contenu est mathématique, malgré le sujet demandé.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "السند 3 - التعليمة 1",
+      "instruction": "أَحْسُبُ كَمِّيَّةَ الْعَصِيرِ الْمُتَحَصَّلِ عَلَيْهَا فِي الْجُمْلَةِ.",
+      "body": "السَّنَدُ 3 : قَامَ الْبُسْتَانِيُّ بِتَحْوِيلِ الْبُرْتُقَالِ إِلَى عَصِيرٍ، فَتَحَصَّلَ عَلَى 27 ل مِنَ النَّوْعِ الرَّفِيعِ وَ46 ل مِنَ النَّوْعِ الْمُتَوَسِّطِ.",
+      "figureDesc": "Tableau à deux colonnes : « الْعَمَلُ » (vide, à gauche) et « الْحَلُّ » (à droite) avec « كَمِّيَّةُ الْعَصِيرِ الْمُتَحَصَّلِ عَلَيْهَا. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; cases de critère « معـ1 » et « معـ2ب ».",
+      "answer": null,
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p032_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 4 - التعليمة 1",
+      "instruction": "أَحْسُبُ كَمِّيَّةَ الْعَصِيرِ الَّتِي بَاعَهَا الْبُسْتَانِيُّ لِلتَّاجِرِ الثَّانِي.",
+      "body": "السَّنَدُ 4 : بَاعَ الْبُسْتَانِيُّ : - لِتَاجِرٍ أَوَّلٍ 37 ل مِنَ الْعَصِيرِ. - وَلِتَاجِرٍ ثَانٍ كَمِّيَّةً أَقَلَّ مِنَ الْكَمِّيَّةِ الْمَبِيعَةِ لِلتَّاجِرِ الْأَوَّلِ بِـ 12 ل.",
+      "figureDesc": "Tableau « الْعَمَلُ » (vide) / « الْحَلُّ » : « كَمِّيَّةُ الْعَصِيرِ الَّتِي بَاعَهَا الْبُسْتَانِيُّ لِلتَّاجِرِ الثَّانِي. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; case « معـ2ج ».",
+      "answer": null,
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p032_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 1",
+      "instruction": "أَحْسُبُ كَمِّيَّةَ الْعَصِيرِ النَّاقِصَةَ لِمَلْءِ الدَّنِّ.",
+      "body": "السَّنَدُ 5 : بَقِيَ لِلْبُسْتَانِيِّ 11 ل مِنَ الْعَصِيرِ فَوَضَعَهَا فِي دَنٍّ سِعَتُهُ 15 ل.",
+      "figureDesc": "Tableau « الْعَمَلُ » (vide) / « الْحَلُّ » : « كَمِّيَّةُ الْعَصِيرِ النَّاقِصَةُ لِمَلْءِ الدَّنِّ. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; case « معـ2ج ».",
+      "answer": null,
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p032_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 2",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَصَاعُدِيًّا :",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour écrire la réponse ; barème 0,5 ; case « معـ2أ ».",
+      "answer": null,
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p032_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-2-p1",
+  "topicTitle": "Période 1 : Nombres de 0 à 99, addition avec retenue et droites",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u1",
+    "confidence": 0.23
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de situation d'intégration en mathématiques (addition 27+46, soustractions 37-12 et 15-11, rangement de nombres à 2 chiffres, tous inférieurs à 99), ce qui correspond le mieux à la Période 1, mais la soustraction et les problèmes sont aussi travaillés dans d'autres périodes, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes additifs et soustractifs",
+    "skill": "Résoudre des problèmes simples d'addition et de soustraction avec des nombres inférieurs à 100, puis ranger les nombres dans l'ordre croissant.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "addition",
+      "soustraction",
+      "situation d'intégration",
+      "jus d'orange",
+      "ordre croissant",
+      "problème à étapes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation d'intégration autour d'un jardinier qui transforme des oranges en jus, vend et stocke des quantités, avec des supports successifs (total, comparaison « de moins que », quantité manquante pour remplir un récipient) et un rangement final des nombres de l'opération.",
+    "themeGroup": "Problèmes additifs et soustractifs"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "كِمِّيَّةً (السند 4) : l'image montre كَمِّيَّةً avec fatha sur le kaf, la transcription a une kasra fautive"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "أُرَتِّبُ : l'image montre أُرَتِّبُ avec les mêmes voyelles ; la transcription est correcte, rien à corriger ici"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "أَحْسُبُ : l'image montre أَحْسُبُ ; la transcription est conforme"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les cadres de réponse « الحل » (كَمِّيَّةُ الْعَصِيرِ الْمُتَحَصَّلِ عَلَيْهَا / الْعَمَلِيَّةُ : ......) et « العمل » ne sont pas transcrits pour les trois exercices : texte imprimé manquant"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de colonnes « الحل » et « العمل » sont absents"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les barèmes (0,5), les codes de critères (معـ1، معـ2ب، معـ2ج، معـ2أ) et le numéro de page 31 sont absents"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans chaque bloc, la consigne (التعليمة) est placée avant le support (السند), alors que dans l'image le support vient avant la consigne"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.95,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "السند 4 : « كِمِّيَّةً » est erroné. L'image montre « كَمِّيَّةً », avec fatha sur le kaf."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "السند 4 : « لِتَاجِرٍ أَوَّلَ » est erroné. L'image montre « لِتَاجِرٍ أَوَّلٍ », avec tanwin kasra, parallèle à « لِتَاجِرٍ » et « ثَانٍ »."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "السند 3 - التعليمة 1",
+      "instruction": "أَحْسُبُ كَمِّيَّةَ الْعَصِيرِ الْمُتَحَصَّلِ عَلَيْهَا فِي الْجُمْلَةِ.",
+      "body": "السَّنَدُ 3 : قَامَ الْبُسْتَانِيُّ بِتَحْوِيلِ الْبُرْتُقَالِ إِلَى عَصِيرٍ، فَتَحَصَّلَ عَلَى 27 ل مِنَ النَّوْعِ الرَّفِيعِ وَ46 ل مِنَ النَّوْعِ الْمُتَوَسِّطِ.",
+      "figureDesc": "Tableau à deux colonnes : « الْعَمَلُ » (vide, à gauche) et « الْحَلُّ » (à droite) avec « كَمِّيَّةُ الْعَصِيرِ الْمُتَحَصَّلِ عَلَيْهَا. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; cases de critère « معـ1 » et « معـ2ب ».",
+      "answer": null,
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 4 - التعليمة 1",
+      "instruction": "أَحْسُبُ كَمِّيَّةَ الْعَصِيرِ الَّتِي بَاعَهَا الْبُسْتَانِيُّ لِلتَّاجِرِ الثَّانِي.",
+      "body": "السَّنَدُ 4 : بَاعَ الْبُسْتَانِيُّ : - لِتَاجِرٍ أَوَّلٍ 37 ل مِنَ الْعَصِيرِ. - وَلِتَاجِرٍ ثَانٍ كَمِّيَّةً أَقَلَّ مِنَ الْكَمِّيَّةِ الْمَبِيعَةِ لِلتَّاجِرِ الْأَوَّلِ بِـ 12 ل.",
+      "figureDesc": "Tableau « الْعَمَلُ » (vide) / « الْحَلُّ » : « كَمِّيَّةُ الْعَصِيرِ الَّتِي بَاعَهَا الْبُسْتَانِيُّ لِلتَّاجِرِ الثَّانِي. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; case « معـ2ج ».",
+      "answer": null,
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 1",
+      "instruction": "أَحْسُبُ كَمِّيَّةَ الْعَصِيرِ النَّاقِصَةَ لِمَلْءِ الدَّنِّ.",
+      "body": "السَّنَدُ 5 : بَقِيَ لِلْبُسْتَانِيِّ 11 ل مِنَ الْعَصِيرِ فَوَضَعَهَا فِي دَنٍّ سِعَتُهُ 15 ل.",
+      "figureDesc": "Tableau « الْعَمَلُ » (vide) / « الْحَلُّ » : « كَمِّيَّةُ الْعَصِيرِ النَّاقِصَةُ لِمَلْءِ الدَّنِّ. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; case « معـ2ج ».",
+      "answer": null,
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 2",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَصَاعُدِيًّا :",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour écrire la réponse ; barème 0,5 ; case « معـ2أ ».",
+      "answer": null,
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "السند 3 - التعليمة 1",
+      "instruction": "أَحْسُبُ كَمِّيَّةَ الْعَصِيرِ الْمُتَحَصَّلِ عَلَيْهَا فِي الْجُمْلَةِ.",
+      "body": "السَّنَدُ 3 : قَامَ الْبُسْتَانِيُّ بِتَحْوِيلِ الْبُرْتُقَالِ إِلَى عَصِيرٍ، فَتَحَصَّلَ عَلَى 27 ل مِنَ النَّوْعِ الرَّفِيعِ وَ46 ل مِنَ النَّوْعِ الْمُتَوَسِّطِ.",
+      "figureDesc": "Tableau à deux colonnes : « الْعَمَلُ » (vide, à gauche) et « الْحَلُّ » (à droite) avec « كَمِّيَّةُ الْعَصِيرِ الْمُتَحَصَّلِ عَلَيْهَا. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; case de critère « مع 1 » et « مع 2 ب ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i1",
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 4 - التعليمة 1",
+      "instruction": "أَحْسُبُ كَمِّيَّةَ الْعَصِيرِ الَّتِي بَاعَهَا الْبُسْتَانِيُّ لِلتَّاجِرِ الثَّانِي.",
+      "body": "السَّنَدُ 4 : بَاعَ الْبُسْتَانِيُّ : - لِتَاجِرٍ أَوَّلَ 37 ل مِنَ الْعَصِيرِ. - وَلِتَاجِرٍ ثَانٍ كِمِّيَّةً أَقَلَّ مِنَ الْكَمِّيَّةِ الْمَبِيعَةِ لِلتَّاجِرِ الْأَوَّلِ بِـ 12 ل.",
+      "figureDesc": "Tableau « الْعَمَلُ » (vide) / « الْحَلُّ » : « كَمِّيَّةُ الْعَصِيرِ الَّتِي بَاعَهَا الْبُسْتَانِيُّ لِلتَّاجِرِ الثَّانِي. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; case « مع 2 ج ».",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i2",
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 1",
+      "instruction": "أَحْسُبُ كَمِّيَّةَ الْعَصِيرِ النَّاقِصَةَ لِمَلْءِ الدَّنِّ.",
+      "body": "السَّنَدُ 5 : بَقِيَ لِلْبُسْتَانِيِّ 11 ل مِنَ الْعَصِيرِ فَوَضَعَهَا فِي دَنٍّ سِعَتُهُ 15 ل.",
+      "figureDesc": "Tableau « الْعَمَلُ » (vide) / « الْحَلُّ » : « كَمِّيَّةُ الْعَصِيرِ النَّاقِصَةُ لِمَلْءِ الدَّنِّ. الْعَمَلِيَّةُ : ......... » ; barème 0,5 ; case « مع 2 ج ».",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i3",
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 2",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَصَاعُدِيًّا :",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour écrire la réponse ; barème 0,5 ; case « مع 2 أ ».",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p032_i4",
+      "topicId": "math-2-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.95
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

@@ -1,0 +1,154 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 19,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المستقيم وأجزاؤه (4): نصف المستقيم (Droite et ses parties (4) : la demi-droite) – الأسبوع 4",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أرسم المستقيم (ص) وضَعْ عليه النّقط \"م\" ، \"ج\" ، \"ك\" بحيث تقع النّقطة \"م\" بين \"ج\" و \"ك\".",
+      "body": "- لوّن بالأحمر نصف المستقيم الذي مبدؤه النّقطة \"م\" ويحتوي على النّقطة \"ج\" .\n- لوّن بالأزرق نصف المستقيم الذي مبدؤه النّقطة \"م\" ويحتوي على النّقطة \"ك\" .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p019_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "\"أ\" هي مبدأ نصف المُسْتَقِيمِ الَّذي يمرّ من (ص)",
+      "body": "- هل نصف المستقيم [أص) يمرّ من \"ب\" ؟\n- هل نصف المستقيم [أص) يمرّ من \"د\" ؟",
+      "figureDesc": "مستقيم (ص) مائل يبدأ من النقطة أ (على اليسار) ويمرّ بالنقطة ب ثم يتجه نحو ص؛ النقطة د موضوعة خارج المستقيم أسفله.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p019_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم نُقْطَتَيْنِ \"س\" و \"ص\" . أرسم نِصْفَ المُسْتَقِيمِ [ص س)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p019_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرْسُمْ نِصْفَيِ الْمُسْتَقِيمَيْنِ [أ ب) و [أ ج) لهما نفسُ الْمَبْدَإِ.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p019_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أرسم أنصاف المُسْتَقِيمِ الَّتِي مَبْدَؤُهَا \"ن\" وتمرّ من النّقط \"أ\" ، \"ب\" ، \"ج\" ، \"د\" .",
+      "body": "- هل يمكنك أن ترسُمَ أنْصَافَ مُسْتَقِيمٍ أُخْرَى مَبْدَؤُهَا \"ن\" ؟\n- ماذا تستنتج؟",
+      "figureDesc": "خمس نقاط مبعثرة: أ (أعلى)، ب (يسار)، ن (وسط)، ج (أسفل اليسار)، د (أسفل الوسط). رقم الصفحة 15.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p019_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.33
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la demi-droite (droite et ses parties), notion de géométrie qui relève de la Période 1 (nombres, droites et monnaie), seul chapitre de math traitant des droites au Trimestre 1.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    113
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "La demi-droite et son origine",
+    "skill": "Construire, colorier et identifier des demi-droites d'origine donnée, et reconnaître qu'une origine donnée admet une infinité de demi-droites.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "demi-droite",
+      "origine",
+      "droite",
+      "points alignés",
+      "notation [Ax)",
+      "construction géométrique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série graduée d'exercices de construction : placer des points sur une droite, colorier deux demi-droites opposées de même origine, dire si une demi-droite passe par un point, tracer des demi-droites de même origine, puis conclure sur leur nombre infini.",
+    "themeGroup": "Droites, points et segments"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2: « المُسْتَقِيمِ الَّذي » transcrit avec voyelles, mais dans l'image c'est « المُسْتَقِيمِ الَّذى » ; incohérence de tashkeel entre les exercices (ex. 1 sans voyelles, 2 partiellement)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4: « نفسُ » dans l'image avec damma, et « لهما » sans voyelles ; « الْمَبْدَإِ » correct. Tashkeel de l'exercice 1 (« وضَعْ ») incomplet : « النّقط » ok."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de l'en-tête est absent : « الأسبوع 4 » et « المستقيم وأجزاؤه (4) : نصف المستقيم »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros de page (15) et les étiquettes de la figure (أ، ب، د، (ص)) de l'exercice 2 ne sont pas transcrits ; les points أ، ب، ج، د، ن de l'exercice 5 non plus."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: « [أص) » correct dans l'image (« [أص) »), mais l'exercice 1 « أرسم المستقيم » est écrit « أرسم » alors que l'image montre « أرسم » avec la même forme ; pas de faute réelle, seulement ponctuation « ."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3: « نُقْطَتَيْنِ » correct ; « نِصْفَ » correct ; mais « أرسم » de l'exercice 4 est « أرْسُمْ » dans l'image, bien transcrit."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

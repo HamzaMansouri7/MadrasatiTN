@@ -13,7 +13,7 @@ from google.genai import types
 load_dotenv()
 sys.stdout.reconfigure(encoding='utf-8')
 
-A = Path('parascolaire/_original_frozen/_archive')
+A = Path('parascolaire_frozen/_archive')
 REV = A / '_review'
 
 # Gather all available Gemini keys

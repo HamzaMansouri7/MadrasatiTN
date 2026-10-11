@@ -1,0 +1,178 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 83,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 21: وحدات قيس الأطوال والكتل والسعة (unités de mesure des longueurs, des masses et des capacités)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "مثّل بواسطة رسم توضيحي كيف تتمّ وزن هذه العلبة باستخدام ميزان وأربع عيارات هي : 500 غ - 1 هغ - 5 دكغ - 10 غ",
+      "body": "كتلة علبة 360 غراما. مثّل بواسطة رسم توضيحي كيف تتمّ وزن هذه العلبة باستخدام ميزان وأربع عيارات هي : 500 غ - 1 هغ - 5 دكغ - 10 غ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p083_i1",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ابحث بحساب الهكتولتر عن كمية الماء المستهلكة إذا تركت الحنفيّة بدون انقطاع مدّة ساعة وربع.",
+      "body": "إذا تركت الحنفيّة مفتوحة مدّة دقيقة واحدة فإنّ كميّة الماء المستهلكة هي 24 لترا. ابحث بحساب الهكتولتر عن كمية الماء المستهلكة إذا تركت الحنفيّة بدون انقطاع مدّة ساعة وربع.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p083_i2",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "تعرّف إلى المسافة التي تقطعها في مدّة ثلاثة أرباع ساعة.",
+      "body": "تقطع طائرة مسافة 20 كيلومترا في نصف دقيقة. تعرّف إلى المسافة التي تقطعها في مدّة ثلاثة أرباع ساعة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p083_i3",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هي بحساب اللتر كميّة ماء الزّهر اللازمة لملء 100 قارورة سعة كلّ واحدة 75 صل؟",
+      "body": "ما هي بحساب اللتر كميّة ماء الزّهر اللازمة لملء 100 قارورة سعة كلّ واحدة 75 صل؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p083_i4",
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "رتّب المراكز التي يمرّ بها الموزّع لقطع أقصر مسافة علما وأنّه يعود إلى مركز الانطلاق.",
+      "body": "ينطلق موزّع بريد يوميًا من المركز \"أ\" وعليه أن يمرّ من المراكز \"ب\" ، \"ج\" ، \"د\" ، \"هـ\". رتّب المراكز التي يمرّ بها الموزّع لقطع أقصر مسافة علما وأنّه يعود إلى مركز الانطلاق.",
+      "figureDesc": "Schéma de deux diagonales qui se croisent en هـ dans un quadrilatère أ ب ج د. Distances : أب = 1 كم و 2 هم ; بد (ب إلى هـ إلى د) = 720 م ; أهـ = 4 هم ; هـج = 6 هم ; هـد = 6 هم ونصف ; أد = 480 م ; بج = نصف كم.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p083_i5",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "ما كتلة الوعاء فارغا؟",
+      "body": "وعاء مملوء مربّى يزن 5 كغ ، بعد استهلاك نصف كميّة المربّى أصبحت كتلة الوعاء 28 هغ. ما كتلة الوعاء فارغا؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p083_i6",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-p6",
+  "topicTitle": "Période 6 : Mesure du temps, capacités, masses et synthèse",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.5,
+  "topicPrevAuto": {
+    "topicId": "math-4-p6",
+    "confidence": 0.87
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page contient des problèmes de conversion et de calcul sur les masses (g, hg, dag, kg), les capacités (L, hL, cL) et le temps (heure, minute), ce qui correspond à la Période 6 : mesure du temps, capacités, masses et synthèse.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    128
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures de longueurs, masses et capacités",
+    "skill": "Résoudre des problèmes de conversion et de calcul avec les unités de longueur, de masse, de capacité et de durée.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "unités de mesure",
+      "masse",
+      "capacité",
+      "hectolitre",
+      "conversion",
+      "proportionnalité"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations de la vie courante pour les mesures : peser avec des masses marquées, robinet qui coule, avion et durée, remplissage de bouteilles, tournée du facteur (plus court chemin) et masse d'un pot à moitié vide.",
+    "themeGroup": "Masses et capacités"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 5 : le schéma et ses données ne sont pas transcrits (points أ، ب، ج، د، هـ ; 1 كم و 2 هم ; 720 م ; 4 هم ; 480 م ; نصف كم ; 6 هم ; 6 هم ونصف), indispensables pour résoudre la question."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : la première partie du champ est tronquée, elle commence à « مثّل » et omet « كتلة علبة 360 غراما ». La version complète est correcte mais les deux champs sont incohérents."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : le premier champ est tronqué, il omet « إذا تركت الحنفيّة مفتوحة مدّة دقيقة واحدة... 24 لترا »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : le premier champ omet « تقطع طائرة مسافة 20 كيلومترا في نصف دقيقة »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5 : le premier champ est tronqué, il omet l'énoncé de départ (« ينطلق موزّع بريد... »)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 6 : le premier champ est tronqué, il omet « وعاء مملوء مربّى يزن 5 كغ... »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans l'exercice 5, « هـ » est transcrit avec un tatwīl alors que l'image porte « هـ » sans ce détail ; les vocalisations ajoutées comme « يوميًا » et « الزّهر » sont à peine visibles. Écart négligeable."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête (« الأسبوع 21 », « وحدات قيس الأطوال والكتل والسعة ») et le numéro de page 79 sont absents."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

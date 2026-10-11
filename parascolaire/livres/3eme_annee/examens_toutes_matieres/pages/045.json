@@ -1,0 +1,133 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 45,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الزمن: قراءة الساعة والتوقيت، والإفادات الصحيحة (السند 4 والسند 5)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أُعَلِّلُ :",
+      "body": "يَطِيرُ الْخُفَّاشُ [نَهَارًا] - [لَيْلًا]\nأُعَلِّلُ : ......................................................................",
+      "figureDesc": "Deux cadres : « نَهَارًا » et « لَيْلًا ». Le premier est un exercice de justification (fin d'une consigne précédente), suivi de lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p045_i1",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "السَّنَدُ 4 : عَادَ رَشِيدٌ إِلَى غُرْفَتِهِ وَوَاصَلَ عَمَلَهُ حَوْلَ مِحْوَرِ الزَّمَنِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p045_i2",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : أَرْبُطُ كُلَّ سَاعَةٍ بِالتَّوْقِيتِ الَّذِي يُنَاسِبُهَا.",
+      "body": "الساعات: ساعة رقمية تشير إلى 12:00 - ساعة عقارب تشير إلى الثالثة (العقرب الكبير على 12 والصغير على 3) - ساعة مربعة عقاربها نحو 9 و3.\nالتوقيتات: الثَّالِثَةُ - التَّاسِعَةُ وَ 15 دق - مُنْتَصَفُ النَّهَارِ",
+      "figureDesc": "Trois horloges (numérique 12:00, analogique ronde indiquant 3h, carrée avec une aiguille horizontale entre 9 et 3) reliées par des points à trois étiquettes arrondies : الثَّالِثَةُ، التَّاسِعَةُ وَ 15 دق، مُنْتَصَفُ النَّهَارِ. Filigrane MOURAJAA.COM.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p045_i3",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : أُصْلِحُ مَا وَرَدَ مِنْ أَخْطَاءٍ.",
+      "body": "1) ساعة عقارب (تشير إلى 4:15) ← بَعْدَ 20 دق ← 4:20 ← أُصْلِحُ ← [ : ]\n2) ساعة عقارب (تشير إلى 2:30) ← بَعْدَ نِصْفِ سَاعَةٍ ← 5:30 ← أُصْلِحُ ← [ : ]",
+      "figureDesc": "Deux lignes : horloge analogique → affichage numérique erroné (4:20 ; 5:30) → flèche « أُصْلِحُ » → cadre numérique vide « : » à remplir.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p045_i4",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "السَّنَدُ 5 : خَتَمَ رَشِيدٌ مَجْمُوعَةَ التَّمَارِينِ بِسِلْسِلَةٍ مِنَ الْإِفَادَاتِ. أَتَأَمَّلُهَا ثُمَّ أُنْجِزُ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p045_i5",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "التَّعْلِيمَةُ 7 : أَشْطُبُ الْعِبَارَاتِ الْخَاطِئَةَ لِأَتَحَصَّلَ عَلَى إِفَادَاتٍ صَحِيحَةٍ.",
+      "body": "• تَتَنَقَّلُ السَّمَكَةُ فِي : الْجَوِّ - الْبَحْرِ - الْبَرِّ.\n• عَدَدُ الْأَسَابِيعِ فِي السَّنَةِ : 72 - 62 - 52\n• الْقَافِزَةُ هِيَ عَقْرَبُ : السَّاعَاتِ - الدَّقَائِقِ - الثَّوَانِي",
+      "figureDesc": "Trois énoncés avec flèches vers trois choix chacun.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p045_i6",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-3-u6",
+  "topicTitle": "Unité 6 : Le temps, la température et la dilatation thermique",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-3-u6",
+    "confidence": 0.38
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page porte sur l'axe du temps (lecture de l'heure, durées, secondes/minutes/heures, semaines par an) avec des énoncés sur le déplacement du poisson et la chauve-souris, ce qui correspond le mieux à l'unité 6 « Le temps » d'Éveil Scientifique, même si le mélange de thèmes laisse une ambiguïté.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Lecture de l'heure et repères temporels",
+    "skill": "Lire l'heure sur différents types d'horloges, corriger des erreurs de calcul de durée et valider des affirmations sur le temps et le vivant.",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "texte_a_trous",
+      "qcm",
+      "autre"
+    ],
+    "keywords": [
+      "heure",
+      "horloge",
+      "durée",
+      "aiguilles",
+      "année et semaines",
+      "affirmations correctes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un fil conducteur narratif (un élève qui prépare un dossier sur le temps), l'appariement entre horloges (numérique, à aiguilles, carrée) et horaires, la correction d'erreurs de durée écrites et la sélection d'affirmations vraies parmi trois choix.",
+    "themeGroup": "Mesure du temps et repères temporels"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

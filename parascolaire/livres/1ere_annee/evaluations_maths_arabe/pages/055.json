@@ -1,0 +1,154 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 55,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الجمع وتفكيك الأعداد وتركيبها حتى 9",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَحْسُبُ كَمْ غَرَسَ الْأَبُ مِنْ شُجَيْرَةٍ فِي الْجُمْلَةِ.",
+      "body": "غَرَسَ الْأَبُ ثَلَاثَ شُجَيْرَاتِ زَيْتُونٍ وَمِثْلَهَا شُجَيْرَاتِ لَوْزٍ.\n• أَحْسُبُ كَمْ غَرَسَ الْأَبُ مِنْ شُجَيْرَةٍ فِي الْجُمْلَةِ.\n........................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p055_i1",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُعَبِّرُ عَمَّا يَلِي بِكِتَابَةٍ جَمْعِيَّةٍ :",
+      "body": "........ = ( ........ + ........ )\n........ = ( ........ + ........ )\n........ = ( ........ + ........ )",
+      "figureDesc": "ثلاثة رسوم تمثل مجموعات:\n1. مجموعة بها شجيرتان ومجموعة بها 5 شجيرات داخل خط مغلق كبير.\n2. مجموعة بها 4 سيارات ومجموعة بها 4 سيارات داخل خط مغلق كبير.\n3. مجموعة بها 8 سمكات ومجموعة بها سمكة واحدة داخل خط مغلق كبير.",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p055_i2",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَشْطُبُ الْخَطَأَ.",
+      "body": "9 = 0 + 9 •        8 = 3 + 6 •        9 = 1 + 8 •\n6 = 2 + 7 •        4 = 3 + 4 •        7 = 4 + 5 •\n4 = 1 + 3 •        4 = 2 + 3 •        8 = 2 + 6 •",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.99,
+      "id": "evaluations_maths_arabe_p055_i3",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "فَكَمْ طَالَعَ فِي عُطْلَةِ الرَّبِيعِ ؟",
+      "body": "طَالَعَ طَارِقٌ 9 قِصَصٍ فِي الْجُمْلَةِ، مِنْهَا 5 قِصَصٍ طَالَعَهَا فِي عُطْلَةِ الشِّتَاءِ.\n• فَكَمْ طَالَعَ فِي عُطْلَةِ الرَّبِيعِ ؟ ....................... لِأَنَّ .......................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p055_i4",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "topicId": "math-1-p2",
+  "topicTitle": "Période 2 : Nombres de 6 à 9, comparaison, ordre et lignes",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p5",
+    "confidence": 0.78
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de l'addition et de la décomposition des nombres jusqu'à 9 avec des problèmes simples, ce qui correspond le plus à la Période 2 (nombres de 6 à 9). La notion d'addition est cependant officiellement rattachée à la Période 3, qui porte sur le nombre 10, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition et décomposition des nombres jusqu'à 9",
+    "skill": "Calculer des sommes et décomposer ou composer les nombres jusqu'à 9 en écritures additives, en résolvant de petits problèmes.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "texte_a_trous",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "addition",
+      "décomposition",
+      "écriture additive",
+      "nombres jusqu'à 9",
+      "problème additif",
+      "complément"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations de la vie quotidienne (plantation d'arbres, lecture de livres pendant les vacances) pour l'addition de doubles et la recherche d'un complément, avec un exercice de repérage d'égalités fausses et un exercice de justification à compléter ('parce que...').",
+    "themeGroup": "Décomposition des nombres jusqu'à 10"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'en-tête « أَحْسُبُ كَمْ غَرَسَ الْأَبُ مِنْ شُجَيْرَةٍ فِي الْجُمْلَةِ. » placé avant l'énoncé est une duplication ; il n'apparaît qu'une fois, après l'énoncé, sous forme de consigne avec puce."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 6 : l'en-tête « فَكَمْ طَالَعَ فِي عُطْلَةِ الرَّبِيعِ ؟ » placé avant l'énoncé est une duplication ; la question n'apparaît qu'une fois, après l'énoncé."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercices 3 et 6 : la consigne/question est placée avant l'énoncé, alors que sur la page l'énoncé vient d'abord."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَحْسُبُ » : sur la page il est écrit « أَحْسُبُ » avec les mêmes voyelles, mais « شُجَيْرَاتِ لَوْزٍ » porte « لَوْزٍ » avec tanwin ; la page indique « لَوْزٍ » avec le signe de tanwin kasr, qui est correct. Aucune différence majeure."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 4 : les images (2 arbres + 5 arbres, 3 voitures + 3 voitures, 8 poissons + 1 poisson) ne sont pas décrites. Le format de la transcription « ........ = ( ........ + ........ ) » est approximatif : sur la page, les pointillés du total sont avant le signe = et les deux termes sont dans un cadre arrondi."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 5 : la mise en colonnes est brouillée. Sur la page (lecture RTL), la colonne de droite contient 9=1+8, 7=4+5, 8=2+6 ; celle du milieu 8=3+6, 4=3+4, 4=2+3 ; celle de gauche 9=0+9, 6=2+7, 4=1+3. Les expressions elles-mêmes sont correctes."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 79 et les éléments de marge (الرياضيات، السنة 1، الثلاثي الثاني) sont omis ; omission acceptable."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 6 : « الشِّتَاءِ » correct, mais « عُطْلَةِ الشِّتَاءِ » correspond bien à la page ; « قِصَصٍ » correct. Aucune vraie erreur ici."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

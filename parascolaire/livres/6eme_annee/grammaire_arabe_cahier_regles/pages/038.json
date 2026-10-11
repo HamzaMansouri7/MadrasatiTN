@@ -1,0 +1,149 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 38,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "المصدر من المزيد بأكثر من حرف (الصرف - مصدر الفعل المزيد بأكثر من حرف)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أذكر أوزان المصادر التالية والأفعال المشتقة منها ك",
+      "body": "المصدر: تقديم – مناصرة – إقبال – تهنئة – دفاع. الوزن: (فارغ). الفعل: (فارغ).",
+      "figureDesc": "جدول من ثلاثة أسطر وستة أعمدة: سطر المصدر (تقديم، مناصرة، إقبال، تهنئة، دفاع)، وسطر الوزن وسطر الفعل فارغان ليملأهما التلميذ.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p038_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "صغ مما بين قوسين المصدر وعمر به الفراغ",
+      "body": "دافع المنتخب الوطني عن راية البلاد (...) لا مثيل له\nهشم الطفل زجاج النافذة (...) عنيفا\nأعدّ التلميذ دروسه (...) جيدا",
+      "figureDesc": "إطار مستطيل يحتوي على الجمل، والفراغات موضع الإجابة (الأفعال بين القوسين غير ظاهرة في الصورة).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p038_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ضع في إطار كل مصدر ورد بالنص واكتب تحته الفعل الذي اشتق منه",
+      "body": "سلمنا على الحجاج تسليما حارا ، ورجوناهم تبليغ أشواقنا لبيت الله الحرام ، ولحظة إعداد ملازم السفر ، تناثرت الدموع وارتفعت الأصوات بالتهليل والتكبير ، فرق قلبي عند مشاهدة ذلك المنظر ودعوت الله أن ييسر لي زيارة بيته المقدس",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p038_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ألف فقرة قصيرة تتحدث فيها عن كيفية إعداد كعكة مرطبات ، مستعملا فيها المصادر التالية",
+      "body": "إخرتج  إعداد  تفكير  تجميل  مراقبة",
+      "figureDesc": "إطار مستطيل به مساحة فارغة للكتابة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p038_i4",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المصدر من المزيد بأكثر من حرف",
+      "body": "عنوان الدرس في أسفل الصفحة: المصدر من المزيد بأكثر من حرف",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p038_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m2",
+    "confidence": 0.29
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite du masdar des verbes augmentés de plus d'une lettre (morphologie arabe), un point de grammaire qui ne correspond clairement à aucune des six unités officielles centrées sur la narration, même si l'exercice 4 (rédiger un paragraphe sur une recette) s'en approche vaguement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Masdar du verbe augmenté",
+    "skill": "Identifier et former le masdar des verbes augmentés de plus d'une lettre, puis l'employer dans des phrases et un court texte.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "appariement",
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "masdar",
+      "verbe augmenté",
+      "morphologie arabe",
+      "schèmes verbaux",
+      "conjugaison"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression claire : identifier le schème du masdar, le former pour compléter des phrases, le repérer dans un texte (ici un récit sur le départ des pèlerins), puis le réemployer dans une production guidée (recette de gâteau) avec une liste de masdars imposés.",
+    "themeGroup": "Le masdar"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4: « إخرتج » est une faute de transcription; l'image porte « إخرتج » (ordre des lettres tel qu'écrit) et il faut vérifier, mais la forme attendue est « إخراج »; la transcription reproduit la graphie de l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les intitulés « التمرين الأول / الثاني / الثالث / الرابع » sont omis de la transcription (seuls les numéros [1]-[4] apparaissent)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2: les mots entre parenthèses sont présentés comme (...) alors que l'image montre les mots « لا مثيل له », « عنيفا », « جيدا » placés avant le blanc; l'ordre des mots dans la phrase n'est pas respecté (ex.: « دافع المنتخب ... البلاد » puis « لا مثيل له » est à la fin)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2: l'indication des mots entre parenthèses (المصدر à former à partir de دافع / هشم / أعدّ) n'est pas visible dans l'image; les mots « لا مثيل له », « عنيفا », « جيدا » sont des compléments, ce qui est bien rendu."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3: « ولحظة إعداد ملازم السفر » correct; « المقدس » correct. Aucun mot faux détecté, mais « réponse: None » est un ajout de format sans contenu dans l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

@@ -1,0 +1,108 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 63,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "Page d'examen en français (et non en arabe) : exercice 5 « Je lis et je dessine » (lecture de l'heure, vocabulaire) et tableau d'attribution des notes (critères C1, C2, C3, C5)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Je lis et je dessine :",
+      "body": "un lit | il est sept heures | la tête",
+      "figureDesc": "Trois cadres côte à côte à remplir par un dessin. Le cadre de gauche est vide, au-dessus de la légende « un lit ». Le cadre central contient une horloge sans aiguilles (chiffres 1 à 12, point au centre), au-dessus de « il est sept heures ». Le cadre de droite est vide, au-dessus de « la tête ». À droite de la page, une petite case de notation marquée C3 est partiellement visible. Le filigrane « MOURAJAA.COM » traverse l'image.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p063_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Tableau d'attribution des notes",
+      "body": "Niveau de maîtrise / Critères minimaux (C1, C2, C3) / Critère de perfectionnement (C5). Aucune maîtrise : C1 = 0, C2 = 0, C3 = 0. Maîtrise minimale insuffisante : C1 = de 0,5 à 2,5 ; C2 = de 0,5 à 2,5 ; C3 = de 0,5 à 3,5. Maîtrise minimale : C1 = 3 ; C2 = 3 ; C3 = 4. Maîtrise maximale : C1 = de 3,5 à 4,5 ; C2 = de 3,5 à 4,5 ; C3 = de 4,5 à 6. C5 (critère de perfectionnement) : 0 à 5 pour les trois premiers niveaux, « — » pour la maîtrise maximale. note : ___ / 20",
+      "figureDesc": "Tableau de barème avec les colonnes Niveau de maîtrise, C1, C2, C3 et C5, et quatre lignes de niveaux. Sous le tableau figure la ligne « note : ___ / 20 ».",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p063_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u4",
+    "confidence": 0.35
+  },
+  "topicSubject": "Français (langue)",
+  "topicReason": "La page est une évaluation de français (exercice « Je lis et je dessine » et grille de notation C1-C5), matière absente de la liste des chapitres officiels, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Lecture de l'heure et vocabulaire",
+    "skill": "Lire une consigne courte et illustrer par un dessin un mot, une heure et une partie du corps.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "lecture de l'heure",
+      "vocabulaire",
+      "dessin",
+      "consigne",
+      "barème d'évaluation",
+      "critères de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le format « je lis et je dessine » permet de vérifier la compréhension de mots simples sans écrire, et le tableau de niveaux de maîtrise (critères minimaux et de perfectionnement) peut servir de modèle de grille d'évaluation.",
+    "themeGroup": "Lecture de l'heure"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le dessin de l'horloge (cadran sans aiguilles, chiffres 1 à 12) au-dessus de « il est sept heures » n'est pas mentionné. Les cases vides destinées au dessin, le sigle « C3 » et les cases de notation à droite sont également omis."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane « MOURAJAA.COM » n'est pas transcrit (acceptable)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les en-têtes de colonnes « Critères minimaux » et « Critère de perfectionnement » sont correctement présents, mais la transcription fusionne les lignes du tableau en prose. Les libellés de niveaux sont décalés d'une ligne dans l'image, ce qui rend l'association des valeurs ambiguë."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Maîtrise minimale insuffisante » : l'image porte « Maitrise » sans accent circonflexe. Écart de graphie négligeable, sans conséquence."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

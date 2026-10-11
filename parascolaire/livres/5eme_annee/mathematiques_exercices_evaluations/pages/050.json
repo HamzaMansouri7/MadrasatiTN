@@ -1,0 +1,198 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 50,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 27 : أقارن الأعداد العشرية وأرتّبها (ملاحظة : la page traite de mathématiques, pas de langue arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "27",
+      "instruction": "",
+      "body": "الدرس 27 : أقارن الأعداد العشرية وأرتّبها",
+      "figureDesc": "Bandeau-titre décoratif avec le chiffre 5 (السنة 5) à gauche",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p050_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اِجْعَلِ الأَجْزَاءَ العَشْرِيَّةَ فِي إِطَارٍ.",
+      "body": "8,19 - 29,001 - 62,040 - 101,10 - 218,999",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p050_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اِحْصُرْ كُلَّ عَدَدٍ عَشْرِيٍّ بَيْنَ عَدَدَيْنِ صَحِيحَيْنِ مُتَوَالِيَيْنِ.",
+      "body": "★ ...... > 2,9 > ...... ★ ...... > 6,01 > ...... ★ ...... > 0,8 > ...... ★ ...... > 18,5 > ......",
+      "figureDesc": "Quatre encadrements à compléter par des points de suite",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p050_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اِرْبِطْ بَيْنَ الكِتَابَتَيْنِ المُتَسَاوِيَتَيْنِ.",
+      "body": "الصف الأول : 10 : 75 - 5,648 - 4,36 ؛ الصف الثاني : 100 : 436 - 7,5 - 1000 : 5648",
+      "figureDesc": "Deux rangées de trois cadres à relier par des flèches (étoiles)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p050_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اُكْتُبْ فِي الجَدْوَلِ كُلَّ الأَعْدَادِ العَشْرِيَّةِ المُنَاسِبَةِ.",
+      "body": "أعداد أصغر من واحد : الأجزاء برقم واحد | الأجزاء برقمين متماثلين | الأجزاء بـ3 أرقام متماثلة",
+      "figureDesc": "Tableau à trois colonnes avec deux lignes pointillées à remplir",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p050_i5",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اُكْتُبِ العَدَدَ العَشْرِيَّ المُنَاسِبَ مَكَانَ النُّقَطِ.",
+      "body": "★ 6 > ......... > 5,98 ؛ ★ 3608,011 > ......... > 3608,009 ؛ ★ 0,93 > ......... > 0,95 (tel qu'imprimé) ؛ ★ 300,71 > ......... > 300,69 ؛ ★ 10010,10 > ......... > 10010,08 ؛ ★ 20,10 > ......... > 20,08",
+      "figureDesc": "Six encadrements en deux rangées séparés par des lignes verticales",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p050_i6",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "اِجْعَلْ أَكْبَرَ عَدَدٍ فِي دَائِرَةٍ.",
+      "body": "59,460 - 95,46 - 38,460 - 77,46 - 83,46 ؛ 1,099 - 1,10 - 1,99 - 1,075 - 1,39 ؛ 2,504 - 2,045 - 2,540 - 2,405",
+      "figureDesc": "Trois séries de nombres, chacune précédée d'une flèche",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p050_i7",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "رَتِّبْ هَذِهِ الكُتَلَ مُرَاعِيًا نُمُوَّ الفِرَاخِ.",
+      "body": "1,850 كغ - 0,100 كغ - 0,5 كغ - 2,250 كغ",
+      "figureDesc": "Quatre cadres avec dessins : poussin, poulet, coq, poule",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p050_i8",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.42
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la comparaison, le rangement et l'encadrement des nombres décimaux (leçon 27), ce qui relève de la Période 2 « Nombres décimaux » du trimestre 1, même si l'intitulé ne mentionne pas explicitement la comparaison.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Comparaison et rangement des décimaux",
+    "skill": "Comparer, encadrer et ranger des nombres décimaux en s'appuyant sur la partie entière et la partie décimale.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "appariement",
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "comparaison",
+      "rangement",
+      "encadrement",
+      "partie décimale",
+      "masses"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série variée d'activités de manipulation des décimaux : entourer la partie décimale, encadrer entre deux entiers consécutifs, relier écritures fractionnaires et décimales, trouver un nombre intercalé entre deux décimaux proches, repérer le plus grand nombre et ranger des masses en kg (contexte de la croissance de poussins).",
+    "themeGroup": "Nombres décimaux : notions et comparaison"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre: l'image affiche « أُقارِنُ الأعداد العشرية وأرتبها » avec « الدرس 27 : » ; la transcription ajoute le tashkeel de « أرتّبها » alors qu'il n'est pas clairement visible. Le titre est globalement correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel des consignes (ex. اِحْصُرْ، مُتَوَالِيَيْنِ، اِرْبِطْ) est ajouté en entier alors que l'image n'en montre que partiellement (ex. « إجعلِ » sans hamza kasra, « مُتَوالِيَيْن »). Il est complété et non fidèle à l'image."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.1 : l'image donne « 218,999 - 101,10 - 62,040 - 29,001 - 8,19 » (de gauche à droite) ; l'ordre est inversé mais cohérent avec la lecture RTL. Aucun nombre faux."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Ex.2 : l'ordre des quatre items est inversé (lecture RTL) ; les inégalités sont retranscrites avec > au lieu de l'ordre imprimé « ...... > 2,9 > ...... » (OK). Mais pour 18,5 et 0,8 l'ordre dans l'image est 18,5 puis 0,8 puis 6,01 puis 2,9 de gauche à droite : conforme."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.5 : les inégalités sont mal retranscrites. L'image montre « 6 > ..... > 5,98 » mais aussi « 3608,011 > ..... > 3608,009 », « 0,93 > ..... > 0,95 » (tel qu'imprimé), « 20,10 > ..... > 20,08 » : transcrit correctement, sauf que « 0,95< ... < 0,93 » ressemble à une erreur d'impression signalée ; acceptable."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.7 : la transcription ne mentionne pas les quatre images de volailles (poussin, poulet, coq, poule) ni la ligne pointillée de réponse en bas ; Ex.3 et 4 omettent la structure du tableau (lignes vides)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.6 : la consigne est accompagnée de trois lignes de nombres ; l'ordre de l'image (83,46 - 77,46 - 38,460 - 95,46 - 59,460) est inversé dans la transcription, sans erreur de valeur."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

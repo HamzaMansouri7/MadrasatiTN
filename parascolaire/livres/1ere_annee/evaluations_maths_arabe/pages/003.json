@@ -1,0 +1,132 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 3,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قراءة وفهم - حرف الفاء (ف)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "بِمَاذَا تَتَّصِفُ فَتِيحَةُ؟ النَّشَاطِ / النَّظَافَةِ / الْكَسَلِ",
+      "body": "• تَتَّصِفُ فَتِيحَةُ بِـ ........................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p003_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَكْتُبُ «أُوَافِقُ» / «لَا أُوَافِقُ» / «لِتُحَافِظَ عَلَى نَظَافَتِهَا» / «لِأَنَّ الصَّابُونَ يَضُرُّ بِالْعَيْنَيْنِ»",
+      "body": "• غَسَلَتْ فَتِيحَةُ وَجْهَهَا وَأَطْرَافَهَا بِالْمَاءِ وَالصَّابُونِ، ........................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p003_i2",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَسْتَخْرِجُ الْكَلِمَاتِ الْمُحْتَوِيَةِ عَلَى الْمَقَاطِعِ التَّالِيَةِ مِنَ النَّصِّ.",
+      "body": "أَفْ | فَـجْـ | فَـتْـ\n........................................ | ........................................ | ........................................",
+      "figureDesc": "جدول مقسم إلى ثلاثة أعمدة يحمل كل عمود مقطعاً صوتياً: أَفْ، فَـجْـ، فَـتْـ وأسفل كل منها سطر منقط لكتابة الكلمة المناسبة.",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p003_i3",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) فِي التَّرْبِيعَةِ الْمُوَافِقَةِ لِلْمَقْطَعِ الَّذِي أَسْمَعُ فِيهِ (ف).",
+      "body": "1. هَاتِفٌ (3 تربيعات)\n2. فُلْفُلٌ (4 تربيعات)\n3. فِيلٌ (2 تربيعات)\n4. مِحْفَظَةٌ (4 تربيعات)\n5. حَافِلَةٌ (4 تربيعات)\n6. أَنْفٌ (2 تربيعات)",
+      "figureDesc": "ست صور: هاتف، فلفل، فيل، محفظة، حافلة، أنف، وتحت كل صورة خانات مقطعية مربعة لرسم العلامة في موضع حرف الفاء.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p003_i4",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أَكْتُبُ الِاسْمَ الْمُنَاسِبَ لِكُلِّ صُورَةٍ.",
+      "body": "• الصُّورَةُ 1 (فَأْرٌ): [فَا - أَفْ - كَا - ف - ر - سُ]\n• الصُّورَةُ 2 (فُرْشَاةٌ): [رُفْ - فُرْ - ـةٌ - شَا - سُ - شْ]\n• الصُّورَةُ 3 (فُقْمَةٌ): [فُقْ - فِقْ - ـمَـ - ـةٌ - رَ - حُفْ]",
+      "figureDesc": "ثلاث صور (فأر، فرشاة أسنان، فقمة) ومحاطة بكل صورة مقاطع وحروف موصولة بأسهم لاختيار المقاطع الصحيحة وكتابة الاسم.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p003_i5",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أَضَعُ كُلَّ اسْمٍ فِي الْجُمْلَةِ الْمُنَاسِبَةِ.",
+      "body": "• فَرَّ .................... مِنْ أَمَامِ الْهِرَّةِ.\n• تَسْبَحُ .................... فِي الْبَحْرِ.\n• تُنَظِّفُ فَاطِمَةُ أَسْنَانَهَا بِـ....................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p003_i6",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "ar-1-u3",
+  "topicTitle": "Unité 3 : Mon compagnon pour ma santé et ma sécurité",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u2",
+    "confidence": 0.39
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la lecture et la compréhension autour de la lettre ف (Fa), avec une héroïne, Fatiha, et le thème de la propreté et de l'hygiène, ce qui correspond à l'Unité 3 (lettres S, T, F et sensibilisation à l'hygiène).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Lettre ف : lecture et compréhension",
+    "skill": "Lire un court texte, le comprendre et reconnaître, repérer et écrire des mots contenant la lettre ف (syllabes, sons, composition de mots).",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "texte_a_trous",
+      "schema_tableau",
+      "appariement",
+      "autre"
+    ],
+    "keywords": [
+      "lettre fa",
+      "compréhension de texte",
+      "syllabes",
+      "discrimination auditive",
+      "hygiène",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable pour l'apprentissage d'une lettre : question de compréhension à choix, accord/désaccord justifié, repérage de syllabes dans le texte, case à cocher selon la position du son entendu, reconstitution de mots à partir de syllabes mélangées et phrases à compléter avec des images (souris, brosse à dents, phoque).",
+    "themeGroup": "Lettres et sons: ف ق ط"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

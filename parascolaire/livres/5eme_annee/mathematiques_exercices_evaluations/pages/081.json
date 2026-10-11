@@ -1,0 +1,289 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 81,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مراجعة ودعم: أتعرّف على وحدات قيس الزمن (الساعة، الدقيقة، الثانية) وأجري عمليات عليها",
+  "items": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "مراجعة ودعم: أتعرف على وحدات قيس الزمن",
+      "body": "السنة 5 — صفحة 82",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p081_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حَـوِّلِ الأَقِيسَةَ الزَّمَنِيَّةَ التَّالِيَةَ إِلَى دَقَائِق:",
+      "body": "* رُبْعُ سَاعَةٍ = ................ دق\n* نِصْفُ سَاعَةٍ = ................ دق\n* ثُلُثُ سَاعَةٍ = ................ دق\n* سَاعَةٌ وَنِصْفٌ = ................ دق\n* سَاعَتَانِ وَثَلَاثَةُ أَرْبَاعِ السَّاعَةِ = ................ دق\n* سَاعَةٌ وَرُبْعُ سَاعَةٍ = ................ دق\n* سَاعَتَانِ وَنِصْفٌ = ................ دق\n* سَاعَةٌ وَثُلُثُ سَاعَةٍ = ................ دق",
+      "figureDesc": "جدول من عمودين تفصل بينهما خطّ عمودي، كل سطر ينتهي بنقاط للإجابة.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p081_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَجْرِ العَمَلِيَّاتِ التَّالِيَةِ:",
+      "body": "* 7 س و15 دق + 4 س و 45 دق و15 ث = ................\n* 18 س و5 دق و18 ث - 6 س و35 دق + 50 ث = ................\n* 11 س و48 ث + 5 س و16 دق و12 ث = ................\n* 14 س و25 ث + 8 س و49 دق = ................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p081_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "إِنْطَلَقَتْ سَيَّارَةٌ فِي اتِّجَاهِ الْمَدِينَةِ عَلَى السَّاعَةِ التَّاسِعَةِ و55 دق وَوَصَلَتْهَا عَلَى السَّاعَةِ 12 و 5 دق.",
+      "body": "_ كَمْ دَامَتْ هَذِهِ الرِّحْلَةُ؟\n_ مَاهِيَ مُدَّةُ السَّيْرِ إِذَا تَوَقَّفَتِ السَّيَّارَةُ فِي مَحَطَّةٍ لِلْبَنْزِينِ 12 دق؟",
+      "figureDesc": "أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p081_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "وَصَلَتْ حَافِلَةٌ لِنَقْلِ الرُّكَّابِ إِلَى مَدِينَةِ عَيْنِ دَرَاهِمَ عَلَى السَّاعَةِ 13 و 30 دق. كَمْ دَامَتْ رِحْلَتُهَا إِذَا انْطَلَقَتْ مِنْ مَدِينَةِ الجَمِّ عَلَى السَّاعَةِ 8 و45 دق. تَوَقَّفَتِ الحَافِلَةُ أَثْنَاءَ الرِّحْلَةِ 25 دق. فَمَا هُوَ الزَّمَنُ الَّذِي قَضَتْهُ الحَافِلَةُ فِي السَّيْرِ؟",
+      "body": "................",
+      "figureDesc": "أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_evaluations_p081_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.34
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des conversions et des opérations sur les durées (heures, minutes, secondes) ainsi que des problèmes de durée de trajet, ce qui correspond à la Période 2 (calcul sur les durées).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures de durées et opérations",
+    "skill": "Convertir des durées en minutes, additionner et soustraire des durées (h, min, s) et calculer une durée écoulée entre deux horaires.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "durées",
+      "heures et minutes",
+      "conversion",
+      "addition de durées",
+      "soustraction de durées",
+      "problème de trajet"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression allant de la conversion de fractions d'heure en minutes aux opérations sur durées, puis à des problèmes de trajets (voiture, bus) avec calcul de la durée totale et de la durée de roulage après un arrêt, dans un contexte local réutilisable.",
+    "themeGroup": "Mesures de durées"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 2, 3e opération : l'image indique '11 س و48 ث - 5 س و16 دق و12 ث' (signe moins), la transcription met '+'."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 2, 1re opération : '7 س و15 دق + 4 س و 45 دق و15 ث' correspond à l'image, mais l'ordre de lecture RTL du fragment peut prêter à confusion ; à vérifier."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 4 : la 2e colonne répète 'كَمْ دَامَتْ رِحْلَتُهَا؟ فَمَا هُوَ الزَّمَنُ...' qui est un doublon de l'énoncé, absent de l'image comme zone séparée."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page non transcrit : 'مراجعة ودعم: أتعرف على وحدات قيس الزمن', numéro de page 82 et 'السنة 5'."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : 'الأَقْيِسَةَ' → l'image montre 'الأَقِيسَةَ' ; 'حَـوِّلِ' correct. Vocalisation ajoutée à l'énoncé 2 (أَجْرِ، العَمَلِيَّاتِ) partiellement absente sur l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : 'عَلَى السَّاعَةِ التَّاسِعَةِ و55 دق' correct ; 'إِنْطَلَقَتْ' avec hamza de coupure à vérifier, l'image montre 'إِنْطَلَقَتْ'. 'مَدِينَةِ عَيْنِ دَرَاهِمَ' : l'image montre 'عَيْنِ دَارَاهِمْ' (probable)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : 'الأَقْيِسَةَ' est incorrect. L'image montre 'الأَقِيسَةَ', sans sukun sur le qaf."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'énoncé se termine par 'التَّالِيَةِ' (kasra) dans l'image, et la transcription met 'التَّالِيَةَ'."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 4 : le body répète 'كَمْ دَامَتْ رِحْلَتُهَا؟ فَمَا هُوَ الزَّمَنُ…', déjà présent dans l'énoncé. Dans l'image, seules les lignes de points suivent la question, et il n'y a pas de zone séparée."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : 'مراجعة ودعم: أتعرف على وحدات قيس الزمن', 'السنة 5' et le numéro de page 82. Le texte de la bannière est assez flou."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "مراجعة ودعم: أتعرف على وحدات قيس الزمن",
+      "body": "السنة 5 — صفحة 82",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p081_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حَـوِّلِ الأَقِيسَةَ الزَّمَنِيَّةَ التَّالِيَةَ إِلَى دَقَائِق:",
+      "body": "* رُبْعُ سَاعَةٍ = ................ دق\n* نِصْفُ سَاعَةٍ = ................ دق\n* ثُلُثُ سَاعَةٍ = ................ دق\n* سَاعَةٌ وَنِصْفٌ = ................ دق\n* سَاعَتَانِ وَثَلَاثَةُ أَرْبَاعِ السَّاعَةِ = ................ دق\n* سَاعَةٌ وَرُبْعُ سَاعَةٍ = ................ دق\n* سَاعَتَانِ وَنِصْفٌ = ................ دق\n* سَاعَةٌ وَثُلُثُ سَاعَةٍ = ................ دق",
+      "figureDesc": "جدول من عمودين تفصل بينهما خطّ عمودي، كل سطر ينتهي بنقاط للإجابة.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p081_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَجْرِ العَمَلِيَّاتِ التَّالِيَةِ:",
+      "body": "* 7 س و15 دق + 4 س و 45 دق و15 ث = ................\n* 18 س و5 دق و18 ث - 6 س و35 دق + 50 ث = ................\n* 11 س و48 ث + 5 س و16 دق و12 ث = ................\n* 14 س و25 ث + 8 س و49 دق = ................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p081_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "إِنْطَلَقَتْ سَيَّارَةٌ فِي اتِّجَاهِ الْمَدِينَةِ عَلَى السَّاعَةِ التَّاسِعَةِ و55 دق وَوَصَلَتْهَا عَلَى السَّاعَةِ 12 و 5 دق.",
+      "body": "_ كَمْ دَامَتْ هَذِهِ الرِّحْلَةُ؟\n_ مَاهِيَ مُدَّةُ السَّيْرِ إِذَا تَوَقَّفَتِ السَّيَّارَةُ فِي مَحَطَّةٍ لِلْبَنْزِينِ 12 دق؟",
+      "figureDesc": "أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p081_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "وَصَلَتْ حَافِلَةٌ لِنَقْلِ الرُّكَّابِ إِلَى مَدِينَةِ عَيْنِ دَرَاهِمَ عَلَى السَّاعَةِ 13 و 30 دق. كَمْ دَامَتْ رِحْلَتُهَا إِذَا انْطَلَقَتْ مِنْ مَدِينَةِ الجَمِّ عَلَى السَّاعَةِ 8 و45 دق. تَوَقَّفَتِ الحَافِلَةُ أَثْنَاءَ الرِّحْلَةِ 25 دق. فَمَا هُوَ الزَّمَنُ الَّذِي قَضَتْهُ الحَافِلَةُ فِي السَّيْرِ؟",
+      "body": "................",
+      "figureDesc": "أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "al_ahram_5eme_complet_p081_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حَـوِّلِ الأَقْيِسَةَ الزَّمَنِيَّةَ التَّالِيَةَ إِلَى دَقَائِق:",
+      "body": "* رُبْعُ سَاعَةٍ = ................ دق\n* نِصْفُ سَاعَةٍ = ................ دق\n* ثُلُثُ سَاعَةٍ = ................ دق\n* سَاعَةٌ وَنِصْفٌ = ................ دق\n* سَاعَتَانِ وَثَلَاثَةُ أَرْبَاعِ السَّاعَةِ = ................ دق\n* سَاعَةٌ وَرُبْعُ سَاعَةٍ = ................ دق\n* سَاعَتَانِ وَنِصْفٌ = ................ دق\n* سَاعَةٌ وَثُلُثُ سَاعَةٍ = ................ دق",
+      "figureDesc": "جدول من عمودين تفصل بينهما خطّ عمودي، كل سطر ينتهي بنقاط للإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p081_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَجْرِ العَمَلِيَّاتِ التَّالِيَةَ:",
+      "body": "* 7 س و15 دق + 4 س و 45 دق و15 ث = ................\n* 18 س و5 دق و18 ث - 6 س و35 دق + 50 ث = ................\n* 11 س و48 ث + 5 س و16 دق و12 ث = ................\n* 14 س و25 ث + 8 س و49 دق = ................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p081_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "إِنْطَلَقَتْ سَيَّارَةٌ فِي اتِّجَاهِ الْمَدِينَةِ عَلَى السَّاعَةِ التَّاسِعَةِ و55 دق وَوَصَلَتْهَا عَلَى السَّاعَةِ 12 و 5 دق.",
+      "body": "_ كَمْ دَامَتْ هَذِهِ الرِّحْلَةُ؟\n_ مَاهِيَ مُدَّةُ السَّيْرِ إِذَا تَوَقَّفَتِ السَّيَّارَةُ فِي مَحَطَّةٍ لِلْبَنْزِينِ 12 دق؟",
+      "figureDesc": "أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p081_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "وَصَلَتْ حَافِلَةٌ لِنَقْلِ الرُّكَّابِ إِلَى مَدِينَةِ عَيْنِ دَرَاهِمَ عَلَى السَّاعَةِ 13 و 30 دق. كَمْ دَامَتْ رِحْلَتُهَا إِذَا انْطَلَقَتْ مِنْ مَدِينَةِ الجَمِّ عَلَى السَّاعَةِ 8 و45 دق. تَوَقَّفَتِ الحَافِلَةُ أَثْنَاءَ الرِّحْلَةِ 25 دق. فَمَا هُوَ الزَّمَنُ الَّذِي قَضَتْهُ الحَافِلَةُ فِي السَّيْرِ؟",
+      "body": "كَمْ دَامَتْ رِحْلَتُهَا؟ فَمَا هُوَ الزَّمَنُ الَّذِي قَضَتْهُ الحَافِلَةُ فِي السَّيْرِ؟ ................",
+      "figureDesc": "أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "al_ahram_5eme_complet_p081_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

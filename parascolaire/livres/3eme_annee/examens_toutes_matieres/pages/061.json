@@ -1,0 +1,124 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 61,
+  "grade": "3ème Année",
+  "subject": "Français (l'écrit) — NB : la page est en français, et non en arabe comme indiqué dans la consigne (اللغة العربية)",
+  "topicGuess": "Examen du 1er trimestre N°1 – l'écrit : la maison (les pièces : le salon, la cuisine, le jardin) ; où est-ce ? / il y a",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "je regarde le dessin et je relie par une flèche :",
+      "body": "Séquence 1 : c'est dimanche, les enfants ne vont pas à l'école. papa et maman ne vont pas au travail... où sont les enfants ? — les enfants sont dans • la cuisine. • la classe. • le salon.",
+      "figureDesc": "Dessin en noir et blanc d'un salon : un garçon debout qui lève le bras avec un objet, et plusieurs enfants assis sur un canapé devant une table basse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p061_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "je regarde le dessin et j'entoure la bonne réponse :",
+      "body": "Séquence 2 : maman n'est pas dans le salon. où est-elle ? — maman est dans • la salle de bains. • la cuisine. • le jardin.",
+      "figureDesc": "Dessin en noir et blanc d'une maman dans une cuisine qui coupe un aliment sur un plan de travail, avec des casseroles et des placards derrière elle.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p061_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "je lis et je dessine :",
+      "body": "Séquence 3 : papa est dans le jardin. qu'est-ce qu'il y a dans le jardin ? — dans le jardin, il y a un ballon, trois fleurs et un robot.",
+      "figureDesc": "Grand cadre vide destiné au dessin de l'élève (en bas de page, partiellement masqué par des doigts).",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examens_toutes_matieres_p061_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u1",
+    "confidence": 0.19
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un examen de français (le 1er trimestre, la maison et « où est-ce ? / il y a »), or la liste officielle ne contient aucun chapitre de français, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "La maison et ses pièces",
+    "skill": "Comprendre une courte consigne orale ou écrite et situer des personnes ou des objets dans la maison avec « où est-ce ? » et « il y a ».",
+    "pageType": "exam",
+    "formats": [
+      "appariement",
+      "qcm",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "maison",
+      "pièces",
+      "salon",
+      "cuisine",
+      "jardin",
+      "il y a"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Examen en trois séquences qui suivent une scène familiale un dimanche. Chaque séquence change de consigne : relier, entourer, dessiner à partir d'un texte. Ce schéma est facile à reprendre pour d'autres lieux ou d'autres thèmes de vocabulaire.",
+    "themeGroup": "Vocabulaire de la maison"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'item 1, la consigne 'je regarde le dessin et je relie par une flèche :' est placée avant 'Séquence 1 : ...' alors que dans l'image la Séquence 1 vient d'abord, puis la consigne 1-. Même inversion pour les items 2 et 3."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros des consignes ('1-', '2-', '3-') ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : 'Examens Jisr Ennajeh', 'Matière : l'écrit', 'Niveau : 3ème année', 'Examen du 1er trimestre N°1', 'Nom / Prénom / 3ème'."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les images (salon, maman dans la cuisine) et le cadre de dessin ne sont pas signalés."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

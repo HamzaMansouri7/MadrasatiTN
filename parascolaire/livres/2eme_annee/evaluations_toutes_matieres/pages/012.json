@@ -1,0 +1,407 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 12,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقييم الفهم والمعجم والتعبير حول نص النملة وكوثر (الأمنية) مع جدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَصَرَّتْ النَّمْلَةُ عَلَى نَقْلِ غِذَائِهَا إِلَى الْجُحْرِ. أَسْتَخْرِجُ جُمْلَةً مِنَ النَّصِّ دَالَّةً عَلَى ذَلِكَ.",
+      "body": "الْجُمْلَةُ : « ........................................ »",
+      "figureDesc": "سطر منقّط للإجابة؛ نقطة 0,5؛ خانة تقييم (معـ2ج)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p012_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "6-أ",
+      "instruction": "أَشْطُبُ الْعَمَلَ الَّذِي لَمْ تَقُمْ بِهِ كَوْثَرُ.",
+      "body": "* قَطْفُ الْبُرْتُقَالِ.\n* مُطَالَعَةُ قِصَّةٍ.\n* مُتَابَعَةُ النَّمْلَةِ دَاخِلَ الْجُحْرِ.",
+      "figureDesc": "ثلاث خانات تقييم (معـ2أ)، 0,5 لكل سطر",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p012_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "6-ب",
+      "instruction": "أَسْتَدِلُّ بِقَرِينَةٍ مِنَ النَّصِّ.",
+      "body": "الْقَرِينَةُ : « ........................................ »",
+      "figureDesc": "سطر منقّط؛ نقطة 0,5؛ خانة تقييم (معـ2ج) و(معـ2ب)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p012_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أُعَوِّضُ الْكَلِمَةَ الْمُسَطَّرَةَ بِأُخْرَى تُؤَدِّي نَفْسَ الْمَعْنَى.",
+      "body": "- لَمَحَتْ كَوْثَرُ نَمْلَةً. • ........... كَوْثَرُ نَمْلَةً.\n- تَجُرُّ حَبَّةَ قَمْحٍ بِعَنَاءٍ. • تَجُرُّ حَبَّةَ قَمْحٍ بِـ ...........\n- سَأُحَقِّقُ أُمْنِيَاتِي. • ........... أُمْنِيَاتِي.",
+      "figureDesc": "جدول من عمودين يفصل بينهما خط عمودي؛ الكلمات المسطّرة: لمحت، بعناء، سأحقق؛ نقطة 0,5 لكل سطر (3 × 0,5)؛ ثلاث خانات تقييم (معـ3)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p012_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَذْكُرُ ثَلَاثَ خِصَالٍ تَمْتَازُ بِهَا النَّمْلَةُ.",
+      "body": "• ........................\n• ........................\n• ........................",
+      "figureDesc": "ثلاثة أسطر منقطة، 0,5 لكل سطر؛ ثلاث خانات تقييم",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p012_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "مَاهِيَ أُمْنِيَتُكَ؟ وَكَيْفَ تَعْمَلُ عَلَى تَحْقِيقِهَا؟",
+      "body": "سطران منقطان للإجابة (2 نقطتان)",
+      "figureDesc": "سطران منقطان؛ خانة تقييم واحدة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p012_i6"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مستويات التملك / المعايير: معايير الحد الأدنى (معـ2أ، معـ2ب، معـ2ج) ومعيار التميز (معـ3).\nانعدام التملك (---): معـ2أ: 0؛ معـ2ب: 0؛ معـ2ج: 0؛ معـ3: من.\nالتملك دون الأدنى (--+): معـ2أ: 0,5 - 1 - 1,5 - 2؛ معـ2ب: 0,5؛ معـ2ج: 0,5؛ معـ3: 0.\nالتملك الأدنى (++-): معـ2أ: 2,5 - 3 - 3,5 - 4؛ معـ2ب: 1؛ معـ2ج: 1؛ معـ3: إلى.\nالتملك الأقصى (+++): معـ2أ: 4,5 - 5 - 5,5 - 6؛ معـ2ب: 1,5؛ معـ2ج: 1,5؛ معـ3: 3.\nمعـ1 : الْقِرَاءَةُ الْجَهْرِيَّةُ\nالْقِرَاءَةُ السَّلِيمَةُ مِنَ الْأَخْطَاءِ: مِنْ 0 إِلَى 2,5\nالْقِرَاءَةُ الْمُسْتَرْسِلَةُ: مِنْ 0 إِلَى 2,5\nالْقِرَاءَةُ الْمُنَغَّمَةُ: مِنْ 0 إِلَى 3\nالمجموع: ../12 + ../8 = ../20",
+      "figureDesc": "جدول إسناد الأعداد وإطار معـ1 للقراءة الجهرية مع خانة المجموع؛ عمود معـ3 يُقرأ من الأعلى إلى الأسفل: من / 0 / إلى / 3 أي «من 0 إلى 3»؛ رقم الصفحة 11",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p012_i7"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u1",
+    "confidence": 0.42
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de langue arabe (compréhension, lexique, expression) sur le texte « La fourmi et Kawthar » avec grille de notation, mais ni le thème (souhait/ambition, fourmi) ni la page d'évaluation ne correspondent clairement à une unité précise parmi celles proposées.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension du texte narratif",
+    "skill": "Évaluer la compréhension d'un texte (repérer une phrase, trouver un indice), le lexique (synonymes) et l'expression écrite sur le thème du souhait.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "synonymes",
+      "expression écrite",
+      "évaluation",
+      "barème",
+      "souhait"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement évaluatif réutilisable : relever une phrase-preuve, barrer l'intrus, justifier par un indice, remplacer un mot par un synonyme, citer des qualités d'un animal, puis production courte sur son propre souhait ; la grille de notation par critères et niveaux de maîtrise sert aussi de modèle.",
+    "themeGroup": "Compréhension: le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Question 7: « سَأُحَقِّقُ » transcrit, mais l'image montre « سَأَحَقِّقُ » avec la partie soulignée « سَأُحَقِّقُ »; surtout, le mot « الْمُسَطَّرَةَ » est écrit à tort, l'image donne « الْمُسَطَّرَةَ » (OK) mais la phrase soulignée « بِعَنَاءٍ » est à remplacer par « بِـ ... » (OK)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَصَرَّتِ » : l'image montre « أَصَرَّتْ » (sukun sur le ت), pas « أَصَرَّتِ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الْبُرْتُقَالِ » : l'image montre « الْبُرْتُقَالِ » avec ordre « الْبُرْتُقَالِ »; voyelles du ت à vérifier (image: الْبُرْتُقَالِ)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« سَأُحَقِّقُ » : l'image montre « سَأُحَقِّقُ » avec la hamza; la transcription « أُمْنِيَاتِي » est correcte."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Tableau, ligne « التملك الأدنى (++-) » : l'image indique « (++-) » mais la ligne est affichée « (-++) »; et pour معـ3 l'image affiche « إلى » seulement, pas « من 1 إلى 2 » ; « من » figure sur la ligne انعدام التملك."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ligne « انعدام التملك » : معـ3 = « من » dans l'image (0 / 0 / 0 / من), la transcription met 0."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ligne « التملك دون الأدنى » : معـ3 = 0 et l'image montre « 2 - 1,5 - 1 - 0,5 » (ordre inversé) ; transcrit 0,5 - 1 - 1,5 - 2."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les points de notation de la marge (0,5 ; 2) et les cases de معـ2ج / معـ2أ / معـ2ب / معـ3 ne sont pas transcrits."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« من 1 إلى 2 » pour معـ3 du niveau minimum : seul « إلى » est visible."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le bloc معـ1 (lecture à voix haute) est placé dans le tableau, avec la somme ../12 + ../8 = ../20 ; l'ordre dans l'image est ../20 = ../8 + ../12."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Question 5 : l'image montre « أَصَرَّتْ » avec un sukun sur le ت. La transcription donne « أَصَرَّتِ » avec une kasra."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Tableau, ligne « التملك الأدنى (++-) », colonne معـ3 : « من 1 إلى 2 » est inventé. L'image affiche seulement « إلى » dans cette cellule."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Tableau, ligne « انعدام التملك », colonne معـ3 : l'image affiche « من » et non 0. La colonne معـ3 se lit de haut en bas « من / 0 / إلى / 3 », soit « من 0 إلى 3 »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Question 7, première ligne : dans l'image, le pointillé se trouve avant « كَوْثَرُ نَمْلَةً » (puce, pointillé, puis texte), alors que la transcription le place après."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Question 7 : les trois notes de marge 0,5 ne sont pas mentionnées. Les cases d'évaluation (معـ2ج, معـ2أ, معـ2ب, معـ3) ne sont décrites que dans figureDesc."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَصَرَّتْ النَّمْلَةُ عَلَى نَقْلِ غِذَائِهَا إِلَى الْجُحْرِ. أَسْتَخْرِجُ جُمْلَةً مِنَ النَّصِّ دَالَّةً عَلَى ذَلِكَ.",
+      "body": "الْجُمْلَةُ : « ........................................ »",
+      "figureDesc": "سطر منقّط للإجابة؛ نقطة 0,5؛ خانة تقييم (معـ2ج)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "6-أ",
+      "instruction": "أَشْطُبُ الْعَمَلَ الَّذِي لَمْ تَقُمْ بِهِ كَوْثَرُ.",
+      "body": "* قَطْفُ الْبُرْتُقَالِ.\n* مُطَالَعَةُ قِصَّةٍ.\n* مُتَابَعَةُ النَّمْلَةِ دَاخِلَ الْجُحْرِ.",
+      "figureDesc": "ثلاث خانات تقييم (معـ2أ)، 0,5 لكل سطر",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "6-ب",
+      "instruction": "أَسْتَدِلُّ بِقَرِينَةٍ مِنَ النَّصِّ.",
+      "body": "الْقَرِينَةُ : « ........................................ »",
+      "figureDesc": "سطر منقّط؛ نقطة 0,5؛ خانة تقييم (معـ2ج) و(معـ2ب)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أُعَوِّضُ الْكَلِمَةَ الْمُسَطَّرَةَ بِأُخْرَى تُؤَدِّي نَفْسَ الْمَعْنَى.",
+      "body": "- لَمَحَتْ كَوْثَرُ نَمْلَةً. • ........... كَوْثَرُ نَمْلَةً.\n- تَجُرُّ حَبَّةَ قَمْحٍ بِعَنَاءٍ. • تَجُرُّ حَبَّةَ قَمْحٍ بِـ ...........\n- سَأُحَقِّقُ أُمْنِيَاتِي. • ........... أُمْنِيَاتِي.",
+      "figureDesc": "جدول من عمودين يفصل بينهما خط عمودي؛ الكلمات المسطّرة: لمحت، بعناء، سأحقق؛ نقطة 0,5 لكل سطر (3 × 0,5)؛ ثلاث خانات تقييم (معـ3)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَذْكُرُ ثَلَاثَ خِصَالٍ تَمْتَازُ بِهَا النَّمْلَةُ.",
+      "body": "• ........................\n• ........................\n• ........................",
+      "figureDesc": "ثلاثة أسطر منقطة، 0,5 لكل سطر؛ ثلاث خانات تقييم",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "مَاهِيَ أُمْنِيَتُكَ؟ وَكَيْفَ تَعْمَلُ عَلَى تَحْقِيقِهَا؟",
+      "body": "سطران منقطان للإجابة (2 نقطتان)",
+      "figureDesc": "سطران منقطان؛ خانة تقييم واحدة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i6"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مستويات التملك / المعايير: معايير الحد الأدنى (معـ2أ، معـ2ب، معـ2ج) ومعيار التميز (معـ3).\nانعدام التملك (---): معـ2أ: 0؛ معـ2ب: 0؛ معـ2ج: 0؛ معـ3: من.\nالتملك دون الأدنى (--+): معـ2أ: 0,5 - 1 - 1,5 - 2؛ معـ2ب: 0,5؛ معـ2ج: 0,5؛ معـ3: 0.\nالتملك الأدنى (++-): معـ2أ: 2,5 - 3 - 3,5 - 4؛ معـ2ب: 1؛ معـ2ج: 1؛ معـ3: إلى.\nالتملك الأقصى (+++): معـ2أ: 4,5 - 5 - 5,5 - 6؛ معـ2ب: 1,5؛ معـ2ج: 1,5؛ معـ3: 3.\nمعـ1 : الْقِرَاءَةُ الْجَهْرِيَّةُ\nالْقِرَاءَةُ السَّلِيمَةُ مِنَ الْأَخْطَاءِ: مِنْ 0 إِلَى 2,5\nالْقِرَاءَةُ الْمُسْتَرْسِلَةُ: مِنْ 0 إِلَى 2,5\nالْقِرَاءَةُ الْمُنَغَّمَةُ: مِنْ 0 إِلَى 3\nالمجموع: ../12 + ../8 = ../20",
+      "figureDesc": "جدول إسناد الأعداد وإطار معـ1 للقراءة الجهرية مع خانة المجموع؛ عمود معـ3 يُقرأ من الأعلى إلى الأسفل: من / 0 / إلى / 3 أي «من 0 إلى 3»؛ رقم الصفحة 11",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَصَرَّتِ النَّمْلَةُ عَلَى نَقْلِ غِذَائِهَا إِلَى الْجُحْرِ. أَسْتَخْرِجُ جُمْلَةً مِنَ النَّصِّ دَالَّةً عَلَى ذَلِكَ.",
+      "body": "الْجُمْلَةُ : « ........................................ »",
+      "figureDesc": "سطر منقّط للإجابة؛ نقطة 0,5؛ خانة تقييم (معـ2ج)",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6-أ",
+      "instruction": "أَشْطُبُ الْعَمَلَ الَّذِي لَمْ تَقُمْ بِهِ كَوْثَرُ.",
+      "body": "* قَطْفُ الْبُرْتُقَالِ.\n* مُطَالَعَةُ قِصَّةٍ.\n* مُتَابَعَةُ النَّمْلَةِ دَاخِلَ الْجُحْرِ.",
+      "figureDesc": "ثلاث خانات تقييم (معـ2أ)، 0,5 لكل سطر",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6-ب",
+      "instruction": "أَسْتَدِلُّ بِقَرِينَةٍ مِنَ النَّصِّ.",
+      "body": "الْقَرِينَةُ : « ........................................ »",
+      "figureDesc": "سطر منقّط؛ نقطة 0,5؛ خانة تقييم (معـ2ج) و(معـ2ب)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أُعَوِّضُ الْكَلِمَةَ الْمُسَطَّرَةَ بِأُخْرَى تُؤَدِّي نَفْسَ الْمَعْنَى.",
+      "body": "- لَمَحَتْ كَوْثَرُ نَمْلَةً. • كَوْثَرُ نَمْلَةً ...........\n- تَجُرُّ حَبَّةَ قَمْحٍ بِعَنَاءٍ. • تَجُرُّ حَبَّةَ قَمْحٍ بِـ ...........\n- سَأُحَقِّقُ أُمْنِيَاتِي. • ........... أُمْنِيَاتِي.",
+      "figureDesc": "جدول من عمودين يفصل بينهما خط عمودي؛ الكلمات المسطّرة: لمحت، بعناء، سأحقق؛ ثلاث خانات تقييم (معـ3)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَذْكُرُ ثَلَاثَ خِصَالٍ تَمْتَازُ بِهَا النَّمْلَةُ.",
+      "body": "• ........................\n• ........................\n• ........................",
+      "figureDesc": "ثلاثة أسطر منقطة، 0,5 لكل سطر؛ ثلاث خانات تقييم",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "مَاهِيَ أُمْنِيَتُكَ؟ وَكَيْفَ تَعْمَلُ عَلَى تَحْقِيقِهَا؟",
+      "body": "سطران منقطان للإجابة (2 نقطتان)",
+      "figureDesc": "سطران منقطان؛ خانة تقييم واحدة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مستويات التملك / المعايير: معايير الحد الأدنى (معـ2أ، معـ2ب، معـ2ج) ومعيار التميز (معـ3).\nانعدام التملك (---): 0 / 0 / 0 / 0.\nالتملك دون الأدنى (--+): معـ2أ: 0,5 - 1 - 1,5 - 2؛ معـ2ب: 0,5؛ معـ2ج: 0,5؛ معـ3: 0.\nالتملك الأدنى (++-): معـ2أ: 2,5 - 3 - 3,5 - 4؛ معـ2ب: 1؛ معـ2ج: 1؛ معـ3: من 1 إلى 2.\nالتملك الأقصى (+++): معـ2أ: 4,5 - 5 - 5,5 - 6؛ معـ2ب: 1,5؛ معـ2ج: 1,5؛ معـ3: 3.\nمعـ1 : الْقِرَاءَةُ الْجَهْرِيَّةُ\nالْقِرَاءَةُ السَّلِيمَةُ مِنَ الْأَخْطَاءِ: مِنْ 0 إِلَى 2,5\nالْقِرَاءَةُ الْمُسْتَرْسِلَةُ: مِنْ 0 إِلَى 2,5\nالْقِرَاءَةُ الْمُنَغَّمَةُ: مِنْ 0 إِلَى 3\nالمجموع: ../12 + ../8 = ../20",
+      "figureDesc": "جدول إسناد الأعداد وإطار معـ1 للقراءة الجهرية مع خانة المجموع؛ رقم الصفحة 11",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p012_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

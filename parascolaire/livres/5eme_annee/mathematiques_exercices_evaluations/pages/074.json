@@ -1,0 +1,160 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 74,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الرياضيات (وضعيات مشكلة): السند 3 - توزيع مبلغ مالي على أوراق نقدية من فئة 100 د و10 د و25 د؛ السند 4 - رسم مثلث مختلف الأضلاع وارتفاعه. ملاحظة: محتوى الصفحة رياضيات وليس لغة عربية.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "السَّنَدُ 3: [illisible] فِي جَمْعِ الْمَالِ عَلَى 3 دَفَاتِرِ تَبَرُّعَاتٍ ذَاتِ 100 وَصْلٍ [illisible] مِنْ فِئَةِ 10 د وَوُصُولَاتٍ أُخْرَى مِنْ فِئَةِ 25 د.",
+      "body": "التَّعْلِيمَةُ 1-3: احْسُبْ كَمْ وَصْلاً مِنْ فِئَةِ 25 د تَمَّ اقْتِطَاعُهُ؟",
+      "figureDesc": null,
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p074_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "confidence": 0.88
+    },
+    {
+      "kind": "exercise",
+      "number": "4-1",
+      "instruction": "السَّنَدُ 4: وَسَطَ سَاحَةِ الْمَدْرَسَةِ ثُبِّتَتْ سَارِيَةُ الْعَلَمِ فِي نُقْطَةِ تَقَاطُعِ ارْتِفَاعَاتِ مُثَلَّثٍ مُتَقَايِسِ الْأَضْلَاعِ.\nالتَّعْلِيمَةُ 1-4: ارْسُمْ مُثَلَّثًا أ ب ج مُتَقَايِسَ الْأَضْلَاعِ قَيْسُ أَحَدِ أَضْلَاعِهِ 5 صم ثُمَّ ارْسُمْ ارْتِفَاعَهُ [أ س].",
+      "body": "",
+      "figureDesc": null,
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p074_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.88
+    },
+    {
+      "kind": "exercise",
+      "number": "4-2",
+      "instruction": "التَّعْلِيمَةُ 2-4: مَاذَا يُمَثِّلُ [أ س] بِالنِّسْبَةِ لِهَذَا الْمُثَلَّثِ؟",
+      "body": "",
+      "figureDesc": null,
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p074_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.88
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page contient des situations-problèmes de mathématiques, avec un partage de somme en billets de 100 d, 10 d et 25 d, puis le tracé d'un triangle scalène et de sa hauteur. La notion de hauteur correspond à la Période 3 (parallélogramme et hauteurs), mais la partie sur les billets ne relève pas clairement de ce chapitre et le contenu reste partiel, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes : monnaie et hauteurs du triangle",
+    "skill": "Résoudre un problème de répartition d'une somme en billets de valeurs différentes et construire un triangle scalène avec une de ses hauteurs en l'identifiant.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "autre"
+    ],
+    "keywords": [
+      "monnaie",
+      "billets",
+      "division d'une somme",
+      "triangle scalène",
+      "hauteur",
+      "orthocentre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Deux situations-problèmes contextualisées : répartir une somme en coupures de 100, 10 et 25 dinars pour retrouver le nombre de billets manquants, et placer un mât de drapeau à l'intersection des hauteurs d'un triangle, avec construction suivie d'une question de reconnaissance du rôle de la hauteur.",
+    "themeGroup": "Problèmes de synthèse et vie courante"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.88,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "السند 3",
+      "instruction": "السند 3: (نص السند مقروء جزئيا بسبب جودة المسح) ... المال على 3 ... ذات 100 د وصل ... من فئة 10 د ووصولات أخرى من فئة 25 د.",
+      "body": "نص السند غير واضح في عدة مواضع. ما يظهر: «... في خَتْمِ الْمَالِ عَلَى 3 ... ذَاتِ 100 د وَصْلٍ ... مِنْ فِئَةِ 10 د وَوُصُولَاتٍ أُخْرَى مِنْ فِئَةِ 25 د.»",
+      "figureDesc": "شريط عنوان رمادي ملون مع رقم السند 3؛ على الهامش مربعان للتنقيط (معـ 2).",
+      "answer": null,
+      "confidence": 0.4,
+      "id": "al_ahram_5eme_complet_p074_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-1",
+      "instruction": "التَّعْلِيمَةُ 3-1: احْسُبْ كَمْ وَصْلاً مِنْ فِئَةِ 25 د تَمَّ اقْتِطَاعُهُ؟",
+      "body": "ثلاثة أسطر منقطة للإجابة.",
+      "figureDesc": "أسطر منقطة للإجابة؛ خانة تنقيط (معـ 5).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_ahram_5eme_complet_p074_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 4",
+      "instruction": "السَّنَد 4: (نص السند مقروء جزئيا) ... سَارِيَةُ الْعَلَمِ فِي نُقْطَةٍ تَقَاطُعِ ارْتِفَاعَاتِ مُثَلَّثٍ مُخْتَلِفِ الْأَضْلَاعِ.",
+      "body": "نص السند غير واضح بسبب المسح؛ يتعلق بمثلث مختلف الأضلاع وتقاطع ارتفاعاته.",
+      "figureDesc": "شريط عنوان رمادي ملون مع رقم السند 4.",
+      "answer": null,
+      "confidence": 0.4,
+      "id": "al_ahram_5eme_complet_p074_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-1",
+      "instruction": "التَّعْلِيمَةُ 4-1: ارْسُمْ مُثَلَّثًا أ ب ج مُخْتَلِفَ الْأَضْلَاعِ قَيْسُ أَحَدِ أَضْلَاعِهِ 5 صم ثُمَّ ارْسُمْ ارْتِفَاعَهُ [أ س].",
+      "body": "",
+      "figureDesc": "فراغ كبير للرسم؛ خانة تنقيط (معـ 4).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p074_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-2",
+      "instruction": "التَّعْلِيمَةُ 4-2: مَاذَا يُمَثِّلُ [أ س] بِالنِّسْبَةِ لِهَذَا الْمُثَلَّثِ؟",
+      "body": "ثلاثة أسطر منقطة للإجابة.",
+      "figureDesc": "أسطر منقطة؛ خانة تنقيط (معـ 4). رقم الصفحة 75.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "al_ahram_5eme_complet_p074_i5",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

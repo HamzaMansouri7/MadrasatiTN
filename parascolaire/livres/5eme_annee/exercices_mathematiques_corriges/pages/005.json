@@ -1,0 +1,191 @@
+{
+  "book": "exercices_mathematiques_corriges",
+  "page": 5,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Addition des nombres décimaux et problème de multiplication (calcul d'une somme sur trois semaines)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الخامس",
+      "instruction": "ضع العمليات ثم أحسب :",
+      "body": "1509.56 + 233.68 ؛ 195.33 + 0.86 ؛ 359 + 32.88 ؛ 100 + 0.514",
+      "figureDesc": "Tableau de 4 cases (2×2) contenant chacune une addition décimale posée en colonnes, avec un trait rouge avant le résultat. Pour 359 + 32.88, on écrit 359.00 ; pour 100 + 0.514, on écrit 100.000.",
+      "answer": "1509.56 + 233.68 : 1509.56 / 233.68 = 1743.24 ؛ 195.33 + 0.86 : 195.33 / 0.86 = 196.16 ؛ 359 + 32.88 : 359.00 / 32.88 = 391.88 ؛ 100 + 0.514 : 100.000 / 0.514 = 100.514",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "exercices_mathematiques_corriges_p005_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "السادس",
+      "instruction": "يتقاضى حارس ليلي مبلغ 2500 دينار عن كل ليلة حراسة .",
+      "body": "ماهو المبلغ الذي يتقاضاه في ثلاث أسابيع ؟",
+      "figureDesc": "",
+      "answer": "2500 × 7 = 17500 ؛ 17500 × 3 = 52500",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "exercices_mathematiques_corriges_p005_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-5-ch2",
+  "topicConfidencePrev": 0.4444444444444444,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.83
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des additions de nombres décimaux à poser (Période 2) et un problème simple de multiplication (2500 dinars × 21 nuits) portant sur des nombres entiers, ce qui relève surtout de la Période 2 (décimaux, addition) plutôt que de la Période 3 (multiplication des décimaux).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition des nombres décimaux",
+    "skill": "Poser et effectuer des additions de nombres décimaux, puis résoudre un problème de multiplication à partir d'un tarif journalier.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "addition",
+      "nombres décimaux",
+      "poser les opérations",
+      "multiplication",
+      "problème",
+      "monnaie (dinars)"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Série d'additions décimales à poser, avec des cas pièges (nombre entier + décimal, écarts de nombre de chiffres après la virgule), et un problème simple de salaire journalier à étendre sur plusieurs semaines (conversion semaines en jours).",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le mot « التمرين » est omis dans les deux titres : l'image donne « التمرين الخامس = » et « التمرين السادس = », la transcription n'a que « [الخامس] » et « [السادس] »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le signe « = » après les titres des exercices 5 et 6 n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les mises en colonnes (1509.56 / 233.68, 195.33 / 0.86, 359.00 / 32.88, 100.000 / 0.514) sont absentes. Ces opérations posées font partie du corrigé visible."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La signature « الأستاذ هاشمي زروال » n'est pas transcrite."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "195.33 + 0.86 = 196.19 est la bonne valeur, mais la transcription dit que la page indique 196.16, ce qui est exact. En revanche, la transcription présente « 196.19 » comme résultat de réponse alors que le texte de la page est 196.16 : la valeur lue sur la page doit rester 196.16, avec une note d'erreur séparée."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les commentaires « réponse: » et « (la page indique…) » sont ajoutés et ne figurent pas sur la page."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête et le pied de page (date 22/12/2024 14:23, WWW.EDUSET.TN, page 9/15, URL) ne sont pas transcrits."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les opérations de l'exercice 5 sont regroupées en une seule ligne. Sur la page, elles sont réparties en tableau 2×2, chacune avec sa résolution."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Dans la réponse de l'exercice 5, « 195.33 + 0.86 = 196.19 (la page indique 196.16, ce qui est une erreur de calcul) » est un commentaire ajouté qui ne figure pas sur la page. La page affiche seulement 196.16. Il faut recopier 196.16, la valeur de la page, sans correction ni note."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les opérations posées de l'exercice 5 (1509.56 / 233.68, 195.33 / 0.86, 359.00 / 32.88, 100.000 / 0.514) figurent dans la page comme résolution, mais pas dans la réponse transcrite. La figureDesc les décrit seulement en général. Elles sont ajoutées dans la réponse."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "الخامس",
+      "instruction": "ضع العمليات ثم أحسب :",
+      "body": "1509.56 + 233.68 ؛ 195.33 + 0.86 ؛ 359 + 32.88 ؛ 100 + 0.514",
+      "figureDesc": "Tableau de 4 cases (2×2) contenant chacune une addition décimale posée en colonnes, avec un trait rouge avant le résultat. Pour 359 + 32.88, on écrit 359.00 ; pour 100 + 0.514, on écrit 100.000.",
+      "answer": "1509.56 + 233.68 : 1509.56 / 233.68 = 1743.24 ؛ 195.33 + 0.86 : 195.33 / 0.86 = 196.16 ؛ 359 + 32.88 : 359.00 / 32.88 = 391.88 ؛ 100 + 0.514 : 100.000 / 0.514 = 100.514",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "exercices_math_5eme_corriges_p005_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "السادس",
+      "instruction": "يتقاضى حارس ليلي مبلغ 2500 دينار عن كل ليلة حراسة .",
+      "body": "ماهو المبلغ الذي يتقاضاه في ثلاث أسابيع ؟",
+      "figureDesc": "",
+      "answer": "2500 × 7 = 17500 ؛ 17500 × 3 = 52500",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "exercices_math_5eme_corriges_p005_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "الخامس",
+      "instruction": "ضع العمليات ثم أحسب :",
+      "body": "1509.56 + 233.68 ؛ 195.33 + 0.86 ؛ 359 + 32.88 ؛ 100 + 0.514",
+      "figureDesc": "Tableau de 4 cases (2×2) contenant chacune une addition décimale posée en colonnes, avec les virgules alignées et un trait rouge avant le résultat. Pour 359 + 32.88, on écrit 359.00 ; pour 100 + 0.514, on écrit 100.000.",
+      "answer": "1509.56 + 233.68 = 1743.24 ؛ 195.33 + 0.86 = 196.19 (la page indique 196.16, ce qui est une erreur de calcul) ؛ 359 + 32.88 = 391.88 ؛ 100 + 0.514 = 100.514",
+      "confidence": 0.93,
+      "id": "exercices_math_5eme_corriges_p005_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السادس",
+      "instruction": "يتقاضى حارس ليلي مبلغ 2500 دينار عن كل ليلة حراسة .",
+      "body": "ماهو المبلغ الذي يتقاضاه في ثلاث أسابيع ؟",
+      "figureDesc": "",
+      "answer": "2500 × 7 = 17500 ؛ 17500 × 3 = 52500",
+      "confidence": 0.93,
+      "id": "exercices_math_5eme_corriges_p005_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices corrigés"
+}

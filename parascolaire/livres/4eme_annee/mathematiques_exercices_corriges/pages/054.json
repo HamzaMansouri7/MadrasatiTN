@@ -1,0 +1,115 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 54,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الزاوية : تعرُّف ورسم (الأسبوع 13) - Les angles : reconnaître et tracer",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أذكر رأس وضلعي كلّ زاوية من الزّوايا المرسومة في الشّكل. أكتب رمز كلّ زاوية.",
+      "body": "ثلاث زوايا مرقّمة ❶ و ❷ و ❸. الزاوية ❶: الرأس ن، النقطتان ك و ط على الضلعين. الزاوية ❷: النقاط ج، أ، ب على مستقيم واحد (الرأس أ). الزاوية ❸: الرأس م، النقطتان س و ص على الضلعين.",
+      "figureDesc": "ثلاثة رسوم: ❶ زاوية حادة رأسها ن وضلعاها يمرّان بالنقطتين ك و ط. ❷ مستقيم عليه النقاط ج وأ وب، وعلامة عند أ (زاوية مستقيمة). ❸ زاوية رأسها م في الأعلى وضلعاها يتجهان نحو س و ص.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p054_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أعد رسم الشّكل التّالي على كرّاسك",
+      "body": "- اذكر بواسطة الأحرف \"أ\" ، \"ب\" ، \"ج\" ، \"س\" ، \"ن\" رأس وضلعي الزّاوية المرسومة في الشّكل.",
+      "figureDesc": "زاوية رأسها أ، أحد ضلعيها يمرّ بالنقطتين ب و ج، والضلع الآخر يمرّ بالنقطة س، والنقطة ن داخل الزاوية.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p054_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعد رسم الشّكل التّالي على كرّاسك",
+      "body": "- أذكر رأس وضلعي جميع الزّوايا المرسومة في الشّكل.",
+      "figureDesc": "ثلاث نصف مستقيمات تنطلق من الرأس أ نحو اليسار، وعليها النقاط ب و ج و د (ب في الأعلى، ج في الوسط، د في الأسفل).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p054_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أكتب جميع الزّوايا الموجودة في الشّكل.",
+      "body": "",
+      "figureDesc": "أربع نصف مستقيمات تنطلق من الرأس ن، وعليها النقاط هـ (أو د) و ج (منقّطة) و ب و أ من الأعلى إلى الأسفل.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p054_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أذكر جميع الزّوايا التي رأسها \"أ\"",
+      "body": "",
+      "figureDesc": "شكل رباعي ب، هـ، د، ج وقطراه ب د و ج هـ يتقاطعان في النقطة أ.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p054_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-p5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la reconnaissance et le tracé des angles (sommet, côtés) en mathématiques, mais aucun chapitre officiel de 4ème année ne mentionne les angles : les droites perpendiculaires (math-4-ch1) et les triangles (math-4-p5) sont proches sans correspondre clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Les angles : reconnaissance et notation",
+    "skill": "Identifier le sommet et les côtés d'un angle sur une figure, nommer et noter tous les angles d'une figure.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "angle",
+      "sommet",
+      "côtés",
+      "notation d'un angle",
+      "géométrie",
+      "figure"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression réutilisable : nommer le sommet et les côtés d'angles repérés sur une figure, puis reproduire la figure et recenser tous les angles, y compris ceux qui partagent un même sommet. Ces tâches de repérage visuel s'adaptent à d'autres figures.",
+    "themeGroup": "Angles"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

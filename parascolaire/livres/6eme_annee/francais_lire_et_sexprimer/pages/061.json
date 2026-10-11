@@ -1,0 +1,76 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 61,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Lettre d'invitation de Didier à Alexis (vacances à la montagne)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Conflans, le 28 mars 2017\nCher Alexis,\nJe t'écris de la montagne où je passe les vacances. J'habite avec mes parents un petit chalet, un peu à l'extérieur du village de Conflans, au bord de la forêt. Il n'y a aucune autre habitation à cet endroit. Chaque matin, je fais une grande promenade.\nUn jour je me suis perdu au milieu des fougères qui m'empêchaient d'avancer. En cherchant mon chemin, je suis tombé nez à nez avec un sanglier dont l'apparition m'a fait peur. Après un moment d'angoisse, j'ai pris mon courage à deux mains et j'ai escaladé un arbre pour voir au loin. J'ai eu de la chance, car la redoutable bête s'est éloignée et j'ai pu retrouver mon chemin.\n- Viens donc me rejoindre, si tu es libre, cela me fera tellement plaisir. Tu verras, il y a dans la région un beau château que je te ferai visiter et nous ferons de belles promenades. Mais rassure-toi, je connais maintenant tous les recoins de la forêt et je peux même prendre des raccourcis. Et puis, le fameux sanglier que j'ai rencontré a finalement été abattu par un chasseur.\nJ'espère que tes parents te permettront de nous rendre visite.\nÉcris-moi vite pour me dire que tu acceptes mon invitation et m'indiquer la date de ton arrivée.\nJe t'attends avec impatience.\nDidier",
+      "figureDesc": "Texte encadré (lettre) avec en-tête de page « Lecture - Compréhension », « Sagesse », « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p061_i1",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Entoure la bonne réponse :",
+      "body": "« Chalet » veut dire :\n- Une habitation en béton.\n- Une habitation en bois dans la montagne.\n- Une habitation en marbre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p061_i2",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m7",
+  "topicTitle": "Module 7 : Profiter de son temps libre",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m7",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.23
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension d'une lettre amicale (Didier écrit à Alexis depuis ses vacances à la montagne), ce qui correspond le mieux au module 7 (loisirs, rédaction d'une lettre amicale), bien que le thème des vacances puisse aussi évoquer le module 8.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Lettre d'invitation et vocabulaire",
+    "skill": "Comprendre une lettre amicale en repérant le sens d'un mot (chalet) grâce au contexte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "qcm"
+    ],
+    "keywords": [
+      "lettre amicale",
+      "invitation",
+      "vacances à la montagne",
+      "chalet",
+      "vocabulaire",
+      "compréhension de texte"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une lettre d'un enfant à un ami décrivant son lieu de vacances, suivie d'un QCM de vocabulaire déduit du contexte, réutilisable pour d'autres lieux (mer, campagne, désert) ou d'autres mots à définir.",
+    "themeGroup": "Production écrite et lettres"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

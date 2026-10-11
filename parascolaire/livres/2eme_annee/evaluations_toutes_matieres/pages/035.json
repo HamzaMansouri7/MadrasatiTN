@@ -1,0 +1,150 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 35,
+  "grade": "2ème Année",
+  "subject": "رياضيات (حساب ذهني)",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني عدد 3 - حساب ذهني - السنة الثانية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَحْسُبُ الْعَدَدَ الْجُمْلِيَّ لِلْأَطْفَالِ الْمُشَارِكِينَ.",
+      "body": "نَظَّمَتْ جَمْعِيَّةُ أَحِبَّاءِ الْبِيئَةِ حَمْلَةَ نَظَافَةٍ لِشَاطِئِ الْبَحْرِ شَارَكَ فِيهَا 10 أَوْلَادٍ وَ7 فَتَيَاتٍ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p035_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَبْحَثُ عَنْ عَدَدِ الْأَكْيَاسِ الْبُنِّيَةِ.",
+      "body": "قَامَ الْمُشَارِكُونَ فِي حَمْلَةِ النَّظَافَةِ بِتَجْمِيعِ النُّفَايَاتِ فِي 18 كِيسٍ مِنْهَا 10 أَكْيَاسٍ زَرْقَاءِ اللَّوْنِ وَالْبَقِيَّةُ بُنِّيَّةٌ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p035_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَبْحَثُ عَنْ ثَمَنِ شِرَاءِ اللُّمْجَةِ الصَّبَاحِيَّةِ لِلشَّخْصِ الْوَاحِدِ.",
+      "body": "وَفَّرَ الْمُشْرِفُونَ عَلَى الْجَمْعِيَّةِ لُمْجَةً صَبَاحِيَّةً لِكُلِّ مُشَارِكٍ تَمَثَّلَتْ فِي قِطْعَةِ شُكُلَاطَةٍ ثَمَنُهَا 100 مي وَقِطْعَةِ بَسْكُويتٍ بِـ 50 مي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p035_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَا هُوَ عَدَدُ أَشْجَارِ النِّسْرِينِ الْمَغْرُوسَةِ؟",
+      "body": "خِلَالَ الْيَوْمِ الثَّانِي لِلْأَشْغَالِ غَرَسَ الْأَطْفَالُ بِالْمِنْطَقَةِ الْخَضْرَاءِ الْقَرِيبَةِ مِنَ الشَّاطِئِ 20 شُجَيْرَةَ سَرْوٍ وَأَشْجَارَ نِسْرِينٍ يَقِلُّ عَدَدُهَا عَنْ أَشْجَارِ السَّرْوِ بِـ6.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p035_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p6",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit d'une épreuve de fin de trimestre 2 (calcul mental) qui mêle plusieurs types de problèmes (addition jusqu'à 17, complément à 18, monnaie en millimes, soustraction), donc une évaluation générale qui ne correspond pas à un seul chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Calcul mental et problèmes simples",
+    "skill": "Résoudre mentalement des problèmes additifs et soustractifs avec des nombres inférieurs à 100 et des sommes en millimes.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "calcul mental",
+      "problèmes additifs",
+      "soustraction",
+      "monnaie (millimes)",
+      "évaluation trimestrielle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une campagne de nettoyage de plage sert de fil conducteur à quatre mini-problèmes (total, complément, prix cumulé, comparaison « de moins que »), ce qui permet de lier calcul mental et éducation à l'environnement.",
+    "themeGroup": "Calcul mental"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.1: «أَحْسُبُ» dans la transcription, l'image porte «أَحْسُبُ» avec hamza sur alif ; transcription OK, mais «أَحِبَّاءِ» : l'image montre «أَحْبَاءِ» (sans shadda ni kasra sur le ح)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.1: «فَتَيَاتٍ» : l'image porte «فَتَيَاتٍ» avec tanwin, la transcription est cohérente ; «الْبِيئَةِ» est écrit «الْبِيئَةِ» dans l'image, la transcription est correcte"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.2: «بُنِّيَّةٌ» / «الْبُنِّيَةِ» : l'image montre «بُنِّيَةٌ» et «الْبُنِّيَةِ» (une seule shadda) ; la transcription est incohérente entre les deux occurrences"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.2: «وَالْبَقِيَّةُ» : l'image porte «وَالْبَقِيَّةُ», OK ; mais «زَرْقَاءِ» : l'image porte «زَرْقَاءَ» (le mot est écrit avec fatha, pas kasra)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.3: «شُكُلَاطَةٍ» : l'image porte «شُكُلاطَةٍ» ; «وَفَّرَ» : l'image porte «وَفَّرَ» ; «الْمُشْرِفُونَ» OK"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.4: «يَقِلُّ» : l'image porte «يَقِلُّ» ; «شُجَيْرَةَ» : l'image porte «شُجَيْرَةَ» (OK) ; «النِّسْرِينِ» : l'image porte «النِّسْرِينِ» ; «الْمَغْرُوسَةِ» : l'image a «المَغْرُوسَةِ»"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de la page ne sont pas transcrits (titre «امتحانات جسر النجاح», matière, niveau, colonnes, notes 1 par exercice, total /4, numéro de page 34)"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

@@ -1,0 +1,73 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 73,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite – Thème 1 : les métiers (Les belles expressions ; Le médecin)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Thème 1 : les métiers – Les belles expressions :",
+      "body": "-Le travail est nécessaire.\n-Il assure les besoins matériels.\n-Il insère l'individu dans la société.\n- Le travail est un moyen d'avancement pour la personne.\n- Il est nécessaire d'avoir un emploi parce que le travail nous procure la stabilité, le plaisir, la joie et le prestige.\n- Le travail nous permet de réaliser nos rêves et de bien nous exprimer.\n- Moi, quand je serai grand, je voudrais devenir pilote, je voyagerai et je visiterai tous les pays.\n- Quant à moi, je voudrais être coiffeuse plus tard car j'aime la beauté et j'ai de la créativité.\n- Moi, je voudrais devenir chirurgien car j'aime alléger le mal des autres. C'est un métier humanitaire.\n- Je n'aime ni devenir chirurgien, ni pilote. Je voudrais être menuisier car c'est très rentable.\n- Moi, je voudrais devenir architecte car j'ai beaucoup d'imagination.\n- Je voudrais être écrivain, moi. Je serais célèbre.",
+      "figureDesc": "Encadré arrondi avec le titre « Thème 1 : les métiers » ; en-tête « Expression écrite », « Sagesse », « 6ème année de base ». Page 72 du manuel (Lire et s'exprimer).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p073_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "text_production",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Le médecin (texte modèle de production écrite)",
+      "body": "J'ai toujours eu de l'admiration envers les médecins que j'ai rencontrés dans ma vie. Je rêve de devenir moi aussi médecin et cela pour plusieurs raisons. D'abord, parce que c'est un travail très respectable. Les gens respectent les médecins et les considèrent comme des hommes très importants dans la société. Ensuite, parce que ce métier qui n'est pas fatiguant me permet de gagner beaucoup d'argent et de devenir très riche. Ainsi, je pourrais réaliser tous mes rêves : acheter une belle voiture, construire une villa superbe..... Enfin, parce que je peux aider les malades et les guérir, je rends donc un grand service à l'humanité.",
+      "figureDesc": "Les connecteurs D'abord, Ensuite, Ainsi, Enfin sont en gras italique.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p073_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "text_production",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.28
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page d'expression écrite porte sur le thème des métiers et du travail (« Le travail est nécessaire », texte modèle « Le médecin »), ce qui correspond au Module 1 « Travailler pour s'épanouir ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Les métiers : expression écrite",
+    "skill": "Produire un texte argumentatif court pour expliquer pourquoi on souhaite exercer un métier, en s'appuyant sur des expressions modèles.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "métiers",
+      "travail",
+      "médecin",
+      "expression écrite",
+      "texte modèle",
+      "argumentation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure réutilisable : une banque d'expressions sur l'utilité du travail et un texte modèle « Je rêve d'exercer ce métier » organisé en raisons successives (d'abord, ensuite, enfin), transposable à d'autres métiers.",
+    "themeGroup": "Production écrite et lettres"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

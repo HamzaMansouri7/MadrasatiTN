@@ -1,0 +1,228 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 59,
+  "grade": "6ème Année",
+  "subject": "Français (la page est un examen de français marocain, 6ème AEP, et non une page de mathématiques)",
+  "topicGuess": "Examen de français, juin 2022 (6ème AEP, Maroc) : texte « Activité de nettoyage de la nature » (d'après J. Hausse), compréhension de l'écrit, lexique et grammaire",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte support (d'après J. Hausse)",
+      "body": "Je m'appelle Réda, j'ai 12 ans et je participe avec mes camarades de classe à une activité de nettoyage de la nature que notre école organise chaque année.\nD'abord je mets mes gants et mes bottes avant de commencer. J'emporte ensuite de grands sacs-poubelle en plastique. En me promenant, je repère les coins salis et je les nettoie. Je trouve de tout, des bouteilles, du verre cassé, de vieux vêtements, et toutes sortes de papier. Parfois, je trouve même des morceaux de voiture.\nJe pense qu'il faut s'occuper de la nature et d'éviter de jeter des déchets partout. Nous sommes tous concernés si on veut vivre dans une belle planète.",
+      "figureDesc": "En-tête d'examen : Royaume du Maroc, Ministère de l'Éducation Nationale, du Préscolaire et des Sports ; Examen Juin 2022 ; Année scolaire 2021/2022 ; Niveau 6ème AEP ; Note /40 et /10 ; champs Nom et Prénom, Numéro.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.1",
+      "instruction": "Choisis le titre qui convient au texte ? (Souligne la bonne réponse) (1.5 pts)",
+      "body": "a. Activité de nettoyage  b. Activité sportive  c. Activité artistique",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.2",
+      "instruction": "Qui parle dans ce texte ? (2pts)",
+      "body": "Ligne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i3",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.3",
+      "instruction": "Le type de ce texte est : (Souligne la bonne réponse) (1.5 pts)",
+      "body": "a. narratif  b. descriptif  c. injonctif",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i4",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.4",
+      "instruction": "Choisis la bonne proposition : L'école organise le nettoyage de la nature : (2pts)",
+      "body": "a. tous les jours ;  b. chaque année ;  c. tous les mois.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i5",
+      "topicId": "fr-6-m5",
+      "formatGuess": "qcm",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.5",
+      "instruction": "Que met Réda avant de commencer ? (2pt)",
+      "body": "Ligne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i6",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.6",
+      "instruction": "Réponds par « Vrai » ou « Faux » : (2pts)",
+      "body": "a. Réda a 13 ans. ......\nb. Réda et ses camarades jettent des déchets dans la nature. ......\nc. Parfois, Réda trouve des morceaux de voiture. ......",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i7",
+      "topicId": "fr-6-m5",
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.7",
+      "instruction": "Cite deux objets trouvés par Réda dans la nature. (2pts)",
+      "body": "Ligne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i8",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.8",
+      "instruction": "A ton avis, qu'est-ce qu'il faut faire pour s'occuper de la nature ? (2pts)",
+      "body": "Deux lignes de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i9",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II. Lexique 1",
+      "instruction": "Trouve dans le texte : (1.5pts)",
+      "body": "a. le synonyme d'« habits » : ......\nb. l'antonyme de « terminer » : ......",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i10",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II. Lexique 2",
+      "instruction": "Ajoute le préfixe convenable pour obtenir le contraire de ces mots : (1.5pts)",
+      "body": "a. content : ...... ;  Poli : ......",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i11",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II. Grammaire 1",
+      "instruction": "transforme la phrase en phrase interrogative. (1pt)",
+      "body": "Réda aide ses camarades.\nLigne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p059_i12",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II. Grammaire 2",
+      "instruction": "Souligne le complément et indique sa fonction grammaticale (CCL/ CCM) : (1pt)",
+      "body": "a. Je mets les déchets dans les sacs-poubelle. ......\nb. Notre professeur nous encourage vivement. ......",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p059_i13",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m5",
+    "confidence": 0.21
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un examen de français (compréhension de l'écrit sur un nettoyage de la nature) dont le thème écologique correspond au Module 5 « Sauver la nature », mais il s'agit d'une évaluation marocaine de type examen, ce qui limite la certitude.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : nettoyage de la nature",
+    "skill": "Comprendre un texte narratif à la première personne en repérant des informations, en identifiant le type de texte et en donnant son avis, puis travailler synonyme et antonyme.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "vrai_faux",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "nettoyage de la nature",
+      "type de texte",
+      "synonyme et antonyme",
+      "environnement",
+      "examen 6ème"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation scolaire concrète d'une sortie écologique racontée à la première personne, avec une progression de questions allant du repérage (qui parle, titre, type de texte) au vrai/faux, à la citation d'indices et à l'opinion personnelle, complétée par des questions de lexique.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "examTrimester": 2,
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

@@ -1,0 +1,127 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 9,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "نصوص وصفية نموذجية: المقهى، السينما، الطبيعة (في فصل الشتاء)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "مررت بمقهى مكتظا بالناس لا يوجد فيه مكان شاغر\nيا لها من مقهى واسعة شاسعة بها طاولات وكراسي زرقاء ناصعة في كل مكان\nذلك المقهى سهراته جميلة لا تنسى وكل الأحاديث فيه متعة",
+      "figureDesc": "نص وصفي داخل إطار، وهو خاتمة فقرة عن المقهى.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p009_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "السينما",
+      "body": "انطفأت الأنوار فاشرأبت الأعناق وعم السكون قاعة السينما وأشعت العيون\nدخلت مبنى السينما المخصص لتقديم مسرحيات فإذا هو شاسع أمام المتفرجين ركح قد وقف عليه الممثل في جلال ووقار وكراسي لا تحصى ولا تعد\nكانت قاعة السينما آية من آيات الجمال جدرانها تزينها نقوش فنية بديعة مطلية بماء الذهب أما أرضيتها فهي مغطاة بأجمل السجادات فهذه أعمدته الفخمة ذوات النقوش المذهبة وسقفه ذو القبة العالية بالأضواء المختلفة ومقاعده الواسعة المريحة\nدخلنا فظهرت لنا بقعة سوداء سرعان ما أخذت تتضح معالمها شيئا فشيئا فإنها السينما",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "production_ecrite_arabe_p009_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الطبيعة — في فصل الشتاء",
+      "body": "الأشجار تكاد جباهها تلامس الأرض كأنها تسجد لباريها تطلب منه العون وتستجديه الرحمة\nشجرة تهوي جثة هامدة\nحطمت الرياح جذعها\nتسمرت عيناي على جثة الشجرة الممتدة على مرمى بصري\nالسماء ملبدة بالسحب\nبرق يخطف الأبصار\nتلبدت السماء بالغيوم ونزلت الأمطار كأفواه القرب ظنناها سحابة عابرة لكنها لم تنقشع ولم تزدد الأمطار إلا شدة ولم يزدد الرعد إلا قعقعة وقصفا حتى لكأن الدنيا مجنونة عاودتها نوبتها فهي تصرخ وتقفز وتمزق ثوبها بيدها وتشق حنجرتها بصراخها وازداد الرعد قرقعة وألهب البرق واستشرى وأغدقت السماء وجادت وعصفت الريح وثارت وتدفق السيل\nألقيت نظرة على الحديقة من خلال النافذة فإذا الأشجار فإذا الأشجار تهتز اهتزازا عنيفا وإذا طبقة من الجليد الناصع تغطي الأعشاب فانقبضت نفسي وتراجعت إلى الوراء متسائلا في حيرة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "production_ecrite_arabe_p009_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u7",
+    "confidence": 0.18
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page présente des textes descriptifs modèles (café, cinéma, nature en hiver) en arabe; la description de lieux et de paysages ne correspond précisément à aucune unité officielle, qui portent sur la description des personnages (ar-4-u4) ou sur le récit.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Textes descriptifs modèles",
+    "skill": "Observer des textes modèles pour apprendre à décrire un lieu (café, cinéma) et la nature en hiver, en utilisant un vocabulaire riche et des images.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "description",
+      "café",
+      "cinéma",
+      "nature en hiver",
+      "expression écrite",
+      "figures de style"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Trois descriptions courtes de lieux et de scènes du quotidien (café animé, salle de cinéma, tempête hivernale) réutilisables comme modèles pour des exercices de production écrite descriptive, avec repérage des comparaisons, exclamations et champ lexical.",
+    "themeGroup": "Production écrite : sujets variés et textes modèles"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«وأشعت العيون» : l'image donne «وأشعت العيون» mais la transcription est identique ; en revanche «واسعة شاسعة» est transcrit «مقهى واسعة» alors que l'image porte «مقهى واسعة» (ok) ; aucune erreur ici à retenir"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "«فإذا هو شاسع أمام المتفرجين ركح» : l'image a «فإذا هو شاسع أمام المتفرجين ركح» (ok) mais «فهذه أعمدته» est transcrit tel quel (ok)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«تسجد لباريها تطلب منه» : dans l'image «تسجد لباريها تطلب منه» avec espaces parasites, la transcription est correcte"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "«فإذا الأشجار فإذا الأشجار» : l'image montre «فإذا الأشجار فإذا / الأشجار تهتز» ; la transcription duplique «فإذا الأشجار» à tort : l'image a «فإذا الأشجار فإذا الأشجار» à cause du saut de ligne, mais la répétition est bien «فإذا الأشجار فإذا» ; le second «الأشجار» est en début de ligne suivante, donc la répétition est correcte"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«وأشعت العيون» : l'image porte «وأشعت» ; la transcription «وأشعت» correspond"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres «السينما» et «الطبيعة / في فصل الشتاء» sont séparés en cellules ; structure acceptable"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

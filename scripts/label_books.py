@@ -2,7 +2,7 @@
 import json, glob, collections, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_original_frozen/_archive')
+A = Path('parascolaire_frozen/_archive')
 FOLDER = {'mathematiques': 'Mathématiques', 'francais': 'Français', 'eveil_scientifique': 'Éveil scientifique'}
 TITLE = [('math', 'Mathématiques'), ('production_ecrite', 'Arabe'), ('grammaire_arabe', 'Arabe')]
 rows = []

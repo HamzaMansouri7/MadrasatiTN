@@ -1,0 +1,235 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 10,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 6 : أوظّف الجمع والطرح والضرب على الأعداد الصحيحة الطبيعيّة (ملاحظation : la page relève des mathématiques et non de la langue arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "6",
+      "instruction": "الدرس 6 : أوظف الجمع والطرح والضرب على الأعداد الصحيحة الطبيعية",
+      "body": "",
+      "figureDesc": "Bandeau-titre décoratif avec le numéro « 5 » (السنة 5) dans un médaillon à gauche. Numéro de page 11 en bas de la page.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p010_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْتَجَ العَمُّ طَاهِرٌ عَدَدًا مِنَ الكُتُبِ الْمُوَازِيَةِ حَسَبَ مَا يُبَيِّنُهُ الجَدْوَلُ التَّالِي:",
+      "body": "* احْسُبْ ثَمَنَ التَّكْلُفَةِ الْجُمْلِيَّ لِكُلِّ صِنْفٍ مِنَ الكُتُبِ وَاكْتُبْهُ فِي الْجَدْوَلِ.\n* احْسُبِ الْعَدَدَ الْجُمْلِيَّ لِلنُّسَخِ الْمُسْتَخْرَجَةِ لِلسَّنَوَاتِ الثَّلاثِ الأُولَى ثُمَّ الْعَدَدَ الْجُمْلِيَّ لِلنُّسَخِ الْمُسْتَخْرَجَةِ لِلسَّنَوَاتِ الْمُوَالِيَةِ.",
+      "figureDesc": "Tableau (colonnes de droite à gauche). Ligne « سنوات الدراسة » : س1, س2, س3, س4, س5, س6. Ligne « عدد النسخ » : 6500, 6370, 5980, 5500, 4760, 3950. Ligne « ثمن تكلفة النسخة الواحدة » : 4100, 4200, 4300, 4400, 4500, 4600. Ligne « الثمن الجملي بالدينار » : cases vides en pointillés à remplir. Trois lignes pointillées sous le tableau pour la réponse.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p010_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "يَرْبَحُ العَمُّ طَاهِرٌ عِنْدَ بَيْعِ الكُتُبِ 500 مي عَنْ كُلِّ نُسْخَةٍ وَفِي جَمِيعِ الْمُسْتَوَيَاتِ الثَّلاثِ الأُولَى وَ 600 مي عَنْ كُلِّ نُسْخَةٍ فِي بَقِيَّةِ الْمُسْتَوَيَاتِ.",
+      "body": "* احْسُبْ مَرَابِيحَ العَمِّ طَاهِرٍ إِذَا بَاعَ كُلَّ الكُتُبِ.\n* احْسُبْ بِالدِّينَارِ نَفَقَاتِ العَمِّ طَاهِرٍ لِصُنْعِ كُلِّ الكُتُبِ.",
+      "figureDesc": "Lignes pointillées pour les réponses après chaque question.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p010_i3"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.42
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur l'addition, la soustraction et la multiplication d'entiers naturels (nombres de copies, coûts, bénéfices en millimes et dinars), ce qui correspond le mieux à la Période 1 (grands nombres et opérations), mais l'intitulé du chapitre est large et l'appariement reste incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Opérations sur les entiers naturels",
+    "skill": "Utiliser l'addition, la soustraction et la multiplication sur les entiers naturels pour résoudre des problèmes de coûts, de quantités totales et de bénéfices.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "addition",
+      "soustraction",
+      "multiplication",
+      "entiers naturels",
+      "coût total",
+      "bénéfice"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de production et de vente de livres : un tableau de données (coût unitaire, quantités par année) sert à calculer des coûts totaux, des quantités cumulées, des bénéfices avec un gain unitaire différent selon le niveau, puis des dépenses converties en dinars.",
+    "themeGroup": "Opérations sur les entiers"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de l'exercice 1 est absent : années س1 à س6, nombre de copies 6500, 6370, 5980, 5500, 4760, 3950, prix de revient unitaire 4100, 4200, 4300, 4400, 4500, 4600, ligne vide « الثمن الجملي بالدينار »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro « 5 » (السنة 5) de l'en-tête n'est pas transcrit, ni le numéro de page 11."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الجمعَ والطّرحَ والضّربَ على الأعدادِ الصّحيحةِ الطّبيعيّةِ » : l'image montre « أوظف الجمع والطرح والضرب على الأعداد الصحيحة الطبيعية » avec peu de voyelles ; la transcription en ajoute et écrit « الجمعَ » sans tashkeel visible."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الْجُمْلِيَّ » dans « ثَمَنَ التَّكْلُفَةِ الْجُمْلِيَّ » : l'image donne « الجُمْلِيَّ » (ثمن التكلفة الجملي), avec une voyelle différente de la transcription ; « الْجُمْلِيَّ » est acceptable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« لِلسَّنَوَاتِ الثَّلاثِ » : l'image indique « للسنوات الثلاث » (sans voyelles sur « السنوات »)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الْمُسْتَوَيَاتِ » : l'image écrit « المُستويات » avec voyelles différentes (الْمُسْتَوَيَاتِ ≈ المُسْتَوِيَاتِ)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أَنْتَجَ » : l'image montre « أَنتَجَ » (ok) ; « حَسَبَ » est correct."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions « réponse: None » et « (Trois lignes pointillées…) » sont des annotations, pas du texte de l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les annotations « (Trois lignes pointillées pour la réponse.) » et « (Lignes pointillées pour les réponses.) » sont ajoutées dans le champ body. Elles ne font pas partie du texte de l'image et doivent en être retirées."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans le titre, l'image montre « أوظف الجمع والطرح والضرب على الأعداد الصحيحة الطبيعية » avec très peu de voyelles. La transcription ajoute des voyelles absentes (أُوظِّفُ) et mélange vocalisé et non vocalisé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 11 », en bas de la page dans le cartouche, n'est pas mentionné. Il n'est donc pas transcrit, mais il est lisible."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "6",
+      "instruction": "الدرس 6 : أوظف الجمع والطرح والضرب على الأعداد الصحيحة الطبيعية",
+      "body": "",
+      "figureDesc": "Bandeau-titre décoratif avec le numéro « 5 » (السنة 5) dans un médaillon à gauche. Numéro de page 11 en bas de la page.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p010_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْتَجَ العَمُّ طَاهِرٌ عَدَدًا مِنَ الكُتُبِ الْمُوَازِيَةِ حَسَبَ مَا يُبَيِّنُهُ الجَدْوَلُ التَّالِي:",
+      "body": "* احْسُبْ ثَمَنَ التَّكْلُفَةِ الْجُمْلِيَّ لِكُلِّ صِنْفٍ مِنَ الكُتُبِ وَاكْتُبْهُ فِي الْجَدْوَلِ.\n* احْسُبِ الْعَدَدَ الْجُمْلِيَّ لِلنُّسَخِ الْمُسْتَخْرَجَةِ لِلسَّنَوَاتِ الثَّلاثِ الأُولَى ثُمَّ الْعَدَدَ الْجُمْلِيَّ لِلنُّسَخِ الْمُسْتَخْرَجَةِ لِلسَّنَوَاتِ الْمُوَالِيَةِ.",
+      "figureDesc": "Tableau (colonnes de droite à gauche). Ligne « سنوات الدراسة » : س1, س2, س3, س4, س5, س6. Ligne « عدد النسخ » : 6500, 6370, 5980, 5500, 4760, 3950. Ligne « ثمن تكلفة النسخة الواحدة » : 4100, 4200, 4300, 4400, 4500, 4600. Ligne « الثمن الجملي بالدينار » : cases vides en pointillés à remplir. Trois lignes pointillées sous le tableau pour la réponse.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p010_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "يَرْبَحُ العَمُّ طَاهِرٌ عِنْدَ بَيْعِ الكُتُبِ 500 مي عَنْ كُلِّ نُسْخَةٍ وَفِي جَمِيعِ الْمُسْتَوَيَاتِ الثَّلاثِ الأُولَى وَ 600 مي عَنْ كُلِّ نُسْخَةٍ فِي بَقِيَّةِ الْمُسْتَوَيَاتِ.",
+      "body": "* احْسُبْ مَرَابِيحَ العَمِّ طَاهِرٍ إِذَا بَاعَ كُلَّ الكُتُبِ.\n* احْسُبْ بِالدِّينَارِ نَفَقَاتِ العَمِّ طَاهِرٍ لِصُنْعِ كُلِّ الكُتُبِ.",
+      "figureDesc": "Lignes pointillées pour les réponses après chaque question.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p010_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "6",
+      "instruction": "الدّرس 6 : أُوظِّفُ الجمعَ والطّرحَ والضّربَ على الأعدادِ الصّحيحةِ الطّبيعيّةِ",
+      "body": "",
+      "figureDesc": "Bandeau-titre décoratif avec la mention « السنة 5 » à gauche.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p010_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْتَجَ العَمُّ طَاهِرٌ عَدَدًا مِنَ الكُتُبِ الْمُوَازِيَةِ حَسَبَ مَا يُبَيِّنُهُ الجَدْوَلُ التَّالِي:",
+      "body": "* احْسُبْ ثَمَنَ التَّكْلُفَةِ الْجُمْلِيَّ لِكُلِّ صِنْفٍ مِنَ الكُتُبِ وَاكْتُبْهُ فِي الْجَدْوَلِ.\n* احْسُبِ الْعَدَدَ الْجُمْلِيَّ لِلنُّسَخِ الْمُسْتَخْرَجَةِ لِلسَّنَوَاتِ الثَّلاثِ الأُولَى ثُمَّ الْعَدَدَ الْجُمْلِيَّ لِلنُّسَخِ الْمُسْتَخْرَجَةِ لِلسَّنَوَاتِ الْمُوَالِيَةِ.\n(Trois lignes pointillées pour la réponse.)",
+      "figureDesc": "Tableau : ligne 1 « سنوات الدراسة » : س1, س2, س3, س4, س5, س6. Ligne « عدد النسخ » : 6500, 6370, 5980, 5500, 4760, 3950. Ligne « ثمن تكلفة النسخة الواحدة » : 4100, 4200, 4300, 4400, 4500, 4600. Ligne « الثمن الجملي بالدينار » : cases vides à remplir.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p010_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "يَرْبَحُ العَمُّ طَاهِرٌ عِنْدَ بَيْعِ الكُتُبِ 500 مي عَنْ كُلِّ نُسْخَةٍ وَفِي جَمِيعِ الْمُسْتَوَيَاتِ الثَّلاثِ الأُولَى وَ 600 مي عَنْ كُلِّ نُسْخَةٍ فِي بَقِيَّةِ الْمُسْتَوَيَاتِ.",
+      "body": "* احْسُبْ مَرَابِيحَ العَمِّ طَاهِرٍ إِذَا بَاعَ كُلَّ الكُتُبِ.\n* احْسُبْ بِالدِّينَارِ نَفَقَاتِ العَمِّ طَاهِرٍ لِصُنْعِ كُلِّ الكُتُبِ.\n(Lignes pointillées pour les réponses.)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p010_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

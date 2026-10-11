@@ -1,0 +1,112 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 41,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Le jardin public (la propreté et la protection de l'environnement)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Aujourd'hui, il fait beau, car c'est le printemps. De belles fleurs garnissent les champs. Les papillons sont multicolores. Les oiseaux gazouillent partout.\n- « Quel beau jour !, dit Alceste. Que pensez-vous d'aller faire une promenade ? »\n- « Mais où irons-nous ? », demande Paul.\n- « Au jardin public, s'écrie Jean, et nous emmènerons avec nous nos amis Jules, Antoinette et Gaston.\nQuelques minutes après, les enfants arrivent au jardin public.\nDès qu'ils sont arrivés, les gamins sont déçus. Ils se regardent tristement : « Quel malheur ! » Les boîtes de conserves, les bouteilles vides, les sacs en plastique et les déchets sont jetés n'importe où sur le gazon. Les arbres aussi font pitié : on a cassé leurs branches et on a arraché leurs fleurs et leurs fruits. Même le petit lac qui a été fait pour les canards est très sale. Les canards s'y baignent péniblement.\n- « Que doit-on faire alors ? », se demandent les enfants au même moment.\n- « Tout d'abord, nous allons commencer à ramasser ces déchets. Ensuite, nous allons les entasser dans un coin. », propose Antoinette.\n- « Enfin, nous mettrons ces ordures dans de gros sachets et nous les déposerons dans les poubelles », ajoute Paul.\nTout de suite, les petits ménagers s'unissent et commencent à nettoyer. Chacun d'eux fait une tâche. Le soir, ils se sentent essoufflés. Ils ne peuvent plus poursuivre le ménage.\n- « Nous reviendrons demain avec tous nos camarades pour rendre ce jardin admirable et un bel endroit pour tout le monde », affirment les amis.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p041_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Coche la bonne phrase :",
+      "body": "- Les enfants vont au jardin public en été.\n- Les amis font une promenade dans le jardin public.\n- Les enfants veulent se promener mais il fait mauvais temps.",
+      "figureDesc": "Trois phrases à cocher (cases non visibles).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p041_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.29
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français sur le jardin public, la propreté et la protection de l'environnement, ce qui correspond le mieux au Module 5 « Sauver la nature » (écologie, passages descriptifs), même si l'extrait est surtout un dialogue de promenade.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    122
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture : le jardin public",
+    "skill": "Comprendre un texte narratif court et identifier l'idée générale en choisissant la bonne phrase.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "qcm"
+    ],
+    "keywords": [
+      "jardin public",
+      "propreté",
+      "protection de l'environnement",
+      "promenade",
+      "printemps",
+      "compréhension de texte"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un texte dialogué mettant en scène des amis en promenade au printemps sert d'amorce pour sensibiliser à la propreté des espaces verts, avec un QCM de compréhension globale facilement adaptable à d'autres lieux ou saisons.",
+    "themeGroup": "Textes descriptifs et biographiques"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est absent de la transcription (il y a seulement l'exercice 1) ; de même l'en-tête « Lecture - Compréhension »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Quel beau jour !, dit Alceste. Que pensez-vous d'aller faire une promenade ? » : la transcription a ajouté un guillemet fermant » après « promenade ? » qui n'existe pas dans l'image (la réplique reste ouverte)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Ils se sentent essoufflés » : dans l'image, « Ils » porte une majuscule (« Le soir, Ils se sentent »), la transcription met « ils » en minuscule."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Quel malheur ! » Les boîtes : dans l'image « Quel malheur ! »,Les boîtes avec une virgule après les guillemets ; la virgule est omise."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Au jardin public, s'écrie Jean… » : l'image n'a pas de guillemet fermant après « Gaston. », cohérent ; mais la page contient aussi une ponctuation « Jules , » avec espace, normalisée, sans gravité."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

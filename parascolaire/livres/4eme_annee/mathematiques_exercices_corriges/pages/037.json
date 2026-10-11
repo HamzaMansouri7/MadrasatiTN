@@ -1,0 +1,142 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 37,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 9: اللتر ومضاعفاته (1)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ما هي باللتر الكمية التي صُبَّتْ علمًا وأنَّ سعة الصَّهريج 6 هكتولترات ؟",
+      "body": "مُلِئَ صهريج بالماء إلى النَّصف. ما هي باللتر الكمية التي صُبَّتْ علمًا وأنَّ سعة الصَّهريج 6 هكتولترات ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p037_i1",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "كم لترا من الزّيت بقي بالخزّان؟",
+      "body": "بخزّان 10 هل من الزّيت. أخذنا منه في الصّباح 2 هل ونصفا وأخذنا في المساء 32 دكل. كم لترا من الزّيت بقي بالخزّان؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p037_i2",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هي سعة هذا الدَّنّ بحساب اللتر؟",
+      "body": "لملء دنّ فارغ صبَّ تاجرُ زَيْتٍ الكمّيات التّالية :\n4 دكل - ضعف هل - نصف دكل - نصف هل\nما هي سعة هذا الدَّنّ بحساب اللتر؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p037_i3",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هي كميّة البنزين التي بقيت في الخزّان باللتر؟",
+      "body": "خزّان سعته 54 هل مملوء بالبنزين. أُخِذَ منه في اليوم الأوّل 140 دكل وفي اليوم الثّاني 215 دكل وفي اليوم الثّالث 1250 ل.\nما هي كميّة البنزين التي بقيت في الخزّان باللتر؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p037_i4",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "ما هي سعة الماء اللازم إضافة صبّه بهذا الحوض حتّى يتمّ ملؤه؟",
+      "body": "صببنا 165 دكل من الماء بحوض فارغ سعته 29 هل ونصف.\nما هي سعة الماء اللازم إضافة صبّه بهذا الحوض حتّى يتمّ ملؤه؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p037_i5",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "كم لترا من البنزين بقي في الخزّان؟",
+      "body": "سعة خزّان سيّارة صغيرة 5 دكل، كان مملوءا بالبنزين. استُهْلِكَتْ منه 13 ل ونصف. كم لترا من البنزين بقي في الخزّان؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p037_i6",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "ما هو عدد الصّفائح المملوءة؟",
+      "body": "بخزّان 12 هل من الزّيت. بِيعَ منه 8 هل ونصف ثمّ 30 دكل وأُفْرِغَتْ الكمّيّة الباقية في صفائح سعة الواحدة 10 لترات.\nما هو عدد الصّفائح المملوءة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p037_i7",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-p6",
+  "topicTitle": "Période 6 : Mesure du temps, capacités, masses et synthèse",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page contient des problèmes sur le litre, l'hectolitre et le décalitre (capacités) avec conversions, ce qui correspond à la Période 6 : mesure du temps, capacités, masses et synthèse.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    117
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures de capacité : litre et multiples",
+    "skill": "Résoudre des problèmes de capacité en convertissant entre litre, décalitre et hectolitre et en additionnant ou soustrayant des quantités.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "litre",
+      "décalitre",
+      "hectolitre",
+      "capacité",
+      "conversion",
+      "problèmes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes de réservoirs, fûts et bidons (remplir, vider, quantité restante, nombre de bidons remplis) qui exigent de convertir des unités mixtes et d'utiliser des fractions simples comme « la moitié » ou « le double ».",
+    "themeGroup": "Masses et capacités"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,133 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 17,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تحويل الأفعال والضمائر حسب الزمن والضمير (الماضي، هُنَّ) + إملاء الفقرة وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5/أ",
+      "instruction": "اقْرَأْ وَافْهَمْ ثُمَّ أَنْجِزْ. أ / ( نَظِّفْ ) الْمَكَانَ. أُخَاطِبُ وَلَدًا وَبِنْتًا فِي زَمَنِ الْمَاضِي.",
+      "body": "( نَظِّفْ ) الْمَكَانَ\nأُخَاطِبُ وَلَدًا وَبِنْتًا فِي زَمَنِ الْمَاضِي.\n..............................................",
+      "figureDesc": "سطر منقّط للإجابة ومربع صغير لإسناد العدد (معيار مع1 أ) على اليسار",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p017_i1",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5/ب",
+      "instruction": "( أَطْفِئْ ) النَّارَ بَعْدَ اسْتِعْمَالِهَا. تَحَدَّثْ عَنْ نَفْسِكَ فِي زَمَنِ الْمَاضِي.",
+      "body": "( أَطْفِئْ ) النَّارَ بَعْدَ اسْتِعْمَالِهَا.\nتَحَدَّثْ عَنْ نَفْسِكَ فِي زَمَنِ الْمَاضِي.\n..............................................",
+      "figureDesc": "سطر منقّط ومربع لإسناد العدد",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p017_i2",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5/ج",
+      "instruction": "( سَاعَدَ ) الْجَدَّةَ فِي إِعْدَادِ الطَّعَامِ. تَحَدَّثْ عَنْ مَجْمُوعَةٍ مِنَ الْبَنَاتِ فِي زَمَنِ الْمَاضِي.",
+      "body": "( سَاعَدَ ) الْجَدَّةَ فِي إِعْدَادِ الطَّعَامِ.\nتَحَدَّثْ عَنْ مَجْمُوعَةٍ مِنَ الْبَنَاتِ فِي زَمَنِ الْمَاضِي.\n..............................................",
+      "figureDesc": "سطر منقّط ومربع لإسناد العدد",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "examens_toutes_matieres_p017_i3",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُعِيدُ كِتَابَةَ الْفِقْرَةِ التَّالِيَةِ مَعَ الضَّمِيرِ ( هُنَّ )",
+      "body": "أَنْجِزِ الْعَمَلَ بِكُلِّ هِمَّةٍ وَنَشَاطٍ، ثُمَّ رَجَعَ إِلَى الْقَرْيَةِ يَتَمَلَّكُهُ شُعُورٌ بِالسَّعَادَةِ. لَقَدْ أَدْرَكَ أَنَّ التَّعَاوُنَ أَمْرٌ مُهِمٌّ جِدًّا. وَلِذَلِكَ قَرَّرَ اتِّخَاذَ هَذَا الْأَمْرِ كَمَبْدَإٍ فِي الْحَيَاةِ.\nهُنَّ ..............................................",
+      "figureDesc": "ثلاثة أسطر منقّطة للإجابة؛ الأفعال المسطّرة: أَنْجِزِ، رَجَعَ، يَتَمَلَّكُهُ، أَدْرَكَ، قَرَّرَ؛ معيار مع2ب",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "examens_toutes_matieres_p017_i4",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "إملاء",
+      "instruction": "تُمْلَى الْفِقْرَةُ عَلَى الْمُتَعَلِّمِ كَمَا وَرَدَتْ فِي الْإِصْلَاحِ ( ص 4 ).",
+      "body": "مَلَأَتْ فَذْ الْقَارُورَةَ بِزَيْتِ الزَّيْتُونِ بَعْدَ أَنِ اسْتَشَارَتْ أُمَّهَا فِي ذَلِكَ ثُمَّ غَادَرَتِ الْمَنْزِلَ تَحْمِلُ فِي يَدِهَا قُفَّةً جَمِيلَةً مِنْ سَعَفِ النَّخِيلِ وَاتَّجَهَتْ فَوْرًا نَحْوَ مَنْزِلِ الْأَرْمَلَةِ الْخَالَةِ نَجْوَى فَسَلَّمَتْهَا مَا أَحْضَرَتْهُ لَهَا ثُمَّ عَادَتْ تَعْدُو لِتُوصِلَ إِلَى صَدِيقَتِهَا تَهَانِي نَصِيبَهَا الْمُعْتَادَ مِنْ صَابَةِ الزَّيْتِ لِهَذَا الْمَوْسِمِ.",
+      "figureDesc": "نص إملاء تتخلله مربعات صغيرة ونقاط تشير إلى الكلمات المعنية بالتصحيح؛ نقل الكلمات الناقصة تقريبي",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "examens_toutes_matieres_p017_i5",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الْإِمْلَاءُ: الرَّسْمُ السَّلِيمُ لِلْعَنَاصِرِ اللُّغَوِيَّةِ: 8 - الْوُضُوحُ: 1 - الْجَمَالِيَّةُ: 1 - الْمَجْمُوعُ: 10 نِقَاطٍ.\nمستويات التملك: انعدام التملك (0 في كل الخانات)؛ التملك دون الأدنى (0,5 لمع1 أ/ب/ج ومع2أ ومع2ب، و1 لمعيار التميّز مع2ج)؛ التملك الأدنى (1 لكل من مع1 أ/ب/ج ومع2أ ومع2ب، و2 لمع2ج).",
+      "figureDesc": "جدول معايير التنقيط: الأعمدة مع1 (أ، ب، ج)، مع2أ، مع2ب، معيار التميز مع2ج؛ الصفوف انعدام التملك، التملك دون الأدنى، التملك الأدنى، والجدول مقتطع في أسفل الصفحة",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "examens_toutes_matieres_p017_i6",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-3-u2",
+  "topicTitle": "Unité 2 : Actions et repères temporels",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p1",
+    "confidence": 0.24
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation d'arabe (conjugaison au passé, changement de pronom, dictée, barème) ; elle ne correspond à aucun chapitre précis, mais l'unité 2 (actions et repères temporels) est la plus proche grâce au travail sur le temps du passé.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison: passé et pronoms",
+    "skill": "Transformer des verbes et un paragraphe à l'accompli selon le pronom (toi, moi, elles) et écrire correctement une dictée.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "dictee",
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "impératif vers passé",
+      "pronom هنّ",
+      "transformation de paragraphe",
+      "dictée",
+      "grille de notation",
+      "orthographe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des consignes de transformation contextualisées (s'adresser à un garçon et une fille, parler de soi, parler d'un groupe de filles) avec des phrases du quotidien sur l'hygiène, l'entraide et le comportement, plus une dictée évaluée par une grille de notation sur 10 points (orthographe 8, lisibilité 1, présentation 1).",
+    "themeGroup": "Conjugaison : le passé et les pronoms"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

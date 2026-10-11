@@ -1,0 +1,147 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 102,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Pas une page de mathématiques : épreuve de français de l'examen normalisé du Certificat d'études primaires (Maroc, session de juillet 2022), compréhension de l'écrit sur le robot Han. La page ne correspond ni à un manuel tunisien ni à la matière indiquée.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte :",
+      "body": "Il fait même des clins d'œil quand il a envie de plaire ! Un robot aux expressions humaines plus vraies que nature a été présenté mi-avril lors d'un salon de l'électronique à Hong-Kong, en Chine (Asie). Son nom : Han. Il a été imaginé par l'entreprise américaine Hanson Robotics. Il n'a pas encore de corps, mais il est capable d'imiter des expressions humaines : il sourit, il fronce les sourcils, il grimace... Tout ça grâce au système Frubber : 40 moteurs cachés sous sa fausse peau ! Han possède aussi des mini-caméras dans les yeux et la poitrine. Cet équipement lui permet de reconnaître le visage des gens, leur sexe, leur âge, de savoir s'ils sont heureux ou tristes... Il peut tenir une conversation, répondre avec humour et même faire semblant d'être ivre ! (Source : Mon quotidien, 5 juin 2015)",
+      "figureDesc": "Texte encadré dans un cadre arrondi. En-tête de la page : cadres administratifs en arabe (الترميز، الاسم والنسب، رقم الامتحان، مركز الامتحان), titre « Examen normalisé pour l'obtention du Certificat d'études primaires », « Session de juillet 2022 », « ÉPREUVE DE FRANÇAIS », « Durée : 1H30 », cadre « Note /40 ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p102_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "D'où est extrait ce texte ? (1.5pt)",
+      "body": "I. Compréhension de l'écrit : (15pts). Lignes de réponse en pointillés.",
+      "figureDesc": "Deux lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p102_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Qui est Han ? (2pts)",
+      "body": "",
+      "figureDesc": "Une ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "soutien_maths_francais_p102_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Qui est son créateur ? (2pts)",
+      "body": "",
+      "figureDesc": "Une ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "soutien_maths_francais_p102_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "De quoi Han est-il capable ? (2pts)",
+      "body": "",
+      "figureDesc": "Deux lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p102_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-6-u5",
+    "confidence": 0.18
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une épreuve d'examen de français (certificat d'études primaires marocain, compréhension de l'écrit sur le robot Han), donc une évaluation générale qui ne correspond clairement à aucun module du programme tunisien de 6ème.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : le robot Han",
+    "skill": "Lire un texte documentaire court et répondre à des questions de compréhension (source, personnage, créateur, capacités).",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "robot Han",
+      "texte documentaire",
+      "certificat d'études primaires",
+      "examen normalisé",
+      "questions de lecture"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un article d'actualité technologique sur un robot aux expressions humaines, suivi de questions de repérage simples (source, qui, créateur, capacités) avec barème, réutilisable comme modèle d'épreuve de compréhension de l'écrit.",
+    "themeGroup": "Internet et technologies"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête de la page n'est pas transcrit : textes arabes (الترميز, الاسم والنسب, رقم الامتحان, مركز الامتحان, ministère, académie جهة فاس مكناس), « Examen normalisé pour l'obtention du Certificat d'études primaires », « Session de juillet 2022 », « ÉPREUVE DE FRANÇAIS », « Durée : 1H30 », cadre « Note /40 »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « I. Compréhension de l'écrit : (15pts) » est placé dans la question 1 alors qu'il précède les questions ; il est aussi mal rattaché à cette question."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« (Source : Mon quotidien, 5 juin 2015) » : la source est bien présente dans l'image, mais sans « Source : ». Le mot « Source : » est inventé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Numéro de page « 1 » en bas et lignes de réponse en pointillés pour les questions 2, 3 et 4 non indiquées."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

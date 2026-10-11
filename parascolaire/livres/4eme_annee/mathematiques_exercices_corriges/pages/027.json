@@ -1,0 +1,121 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 27,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 6 – اختبار تقويمي للتثبيت والدعم (الأعداد إلى 9999، المقارنة والترتيب، قياس الأطوال، المستقيمات المتقاطعة، مسألة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب الأعداد بالأرقام :",
+      "body": "- ألف وثلاثون : ........\n- ألف وخمسمائة وخمسة : ........\n- خمسة آلاف وثمانية وثمانون: ........\n- ثمانمائة وأربعة وستون : ........",
+      "figureDesc": "أربعة أسطر منقطة للإجابة، مرتبة في عمودين يفصل بينهما خط عمودي.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p027_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أ) أكتب جميع الأعداد الزوجيّة المحصورة بين 8 000 و 9 000 والتي يكون رقم عشراتها 5 ورقم مئاتها 7.",
+      "body": "أ) أكتب جميع الأعداد الزوجيّة المحصورة بين 8 000 و 9 000 والتي يكون رقم عشراتها 5 ورقم مئاتها 7.\nب) أكتب الأعداد الفرديّة الأكبر من 6000 والأصغر من 9000 والتي يكون مجموع أرقامها 9.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p027_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرتِّبُ مِنَ الأطولِ إلى الأقصرِ:",
+      "body": "نصف متر - 700 مم - 9 دسم - 5 صم.",
+      "figureDesc": "أربع مقادير طول، كل واحد داخل إطار مستطيل.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p027_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُرْسُمِ النُّقَطَ حَسَبَ بَيَانَاتِ جَدْوَلِ التَّقَاطُعِ :",
+      "body": "جدول التقاطع: الأعمدة (م)، (ص)، (ك) والأسطر (م)، (ص)، (ك). الخانات المعبأة: التقاطع بين (م) و(ص) هو أ، التقاطع بين (ص) و(ك) هو ب، التقاطع بين (ك) و(م) هو ج.",
+      "figureDesc": "رسم ثلاثة مستقيمات (م) و(ص) و(ك) متقاطعة مثنى مثنى تشكل مثلثا، وبجانبه جدول تقاطع 3×3 فيه الحروف أ وب وج في بعض الخانات وخانة عليها سهم في الزاوية العليا كُتب فيها 'تقاطع'.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p027_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أرادَتْ أُمٌّ شِراءَ قَمِيصٍ لوَلَدِهَا فَاخْتارَتْ بَيْنَ :",
+      "body": "- شِراءِ قَمِيصٍ جَاهِزٍ بإِحْدَى الْمَغَازَاتِ بـ 9 د مع انْخِفاضٍ بـ 1 350 مي.\n-أو شِراءَ 2 م مِنَ القُمَاشِ ثَمَنُ الْمِتْرِ الْوَاحِدِ مِنْهُ بـ 2 350 مي وتدفع دينارينِ ونِصْفَ لِخَيَاطَتِهِ.\nفَأَيُّ الْحَلَّيْنِ أنْسَبُ للأُمِّ وَكَمْ سَتَرْبَحُ مِنَ الْحَلِّ الَّذِي سَتَخْتَارُهُ ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "mathematiques_exercices_corriges_p027_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.24
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Évaluation de synthèse (semaine 6) portant sur les nombres jusqu'à 9999, la comparaison, les longueurs, les droites sécantes et un problème d'argent ; ces notions ne correspondent à aucun chapitre officiel de 4ème année, dont les chapitres commencent à 5 chiffres.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    115
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 9999 et mesure de longueurs",
+    "skill": "Écrire, comparer et ordonner des nombres jusqu'à 9999, convertir des longueurs, utiliser des droites sécantes et résoudre un problème d'achat.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "nombres à quatre chiffres",
+      "comparaison et rangement",
+      "unités de longueur",
+      "droites sécantes",
+      "problème de monnaie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les consignes de contraintes sur les chiffres (parité, chiffre des dizaines et des centaines, somme des chiffres), le rangement de longueurs exprimées dans des unités différentes, le tableau d'intersections pour placer des points, ainsi que le problème comparant un vêtement prêt-à-porter à un tissu à faire coudre peuvent être réutilisés comme situations d'évaluation.",
+    "themeGroup": "Numération jusqu'à 9 999"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "linked",
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

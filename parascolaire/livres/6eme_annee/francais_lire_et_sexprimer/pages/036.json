@@ -1,0 +1,166 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 36,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : la poule et le moineau (questions 4 à 7) ; vocabulaire : Un beau jardin",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Pourquoi la poule a-t-elle peur ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p036_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "Terrorisée, la poule se cache dans le poulailler. ................",
+      "figureDesc": "Case ovale arrondie contenant des pointillés pour la réponse oui/non.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p036_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5b",
+      "instruction": "Relève, dans le texte, le détail qui le montre :",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p036_i3",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6a",
+      "instruction": "Enfin, est-ce que la poule a compris que le moineau avait raison ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p036_i4",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6b",
+      "instruction": "Justifie ta réponse :",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p036_i5",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Complète ce passage avec les mots du cadre :",
+      "body": "Mots du cadre : propre – feuilles sèches – arracher – embellir – plantes – terre – respect\n\nUn beau jardin\nAsma et Fatma ramassent les ...................... dans un sac bien fermé. Tassnim arrose les ......................... à l'aide d'un arrosoir. Nour et Alex écrivent des écriteaux pour inciter les élèves à ...................... la ...................... : « Vive l'arbre » « L'arbre, c'est la joie de la terre » ... Les parents de Nadine ..........................les mauvaises herbes.\nSans trop de peine, le travail est achevé. Le directeur était très ravi. Il est resté bouche bée en voyant le jardin très ................... et magnifique à voir. Il dit :\n« Quel beau jardin ! Je suis fier de vous, vous avez fait un grand effort pour...................... notre école. Vous êtes adorables mes chers enfants. »\nEnfin, il donne des prix et des cadeaux aux élèves pour récompenser leurs efforts.\nDepuis ce jour, les élèves ont appris une belle leçon sur le respect de la nature.",
+      "figureDesc": "Mots du cadre dans une case ovale ; texte encadré intitulé « Un beau jardin ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p036_i6",
+      "topicId": "fr-6-m5",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.3
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de français (compréhension de lecture « la poule et le moineau » et vocabulaire « Un beau jardin » : ramasser les feuilles, arroser les plantes, respecter la terre), dont le thème du jardin et du respect de la nature se rapproche du Module 5 « Sauver la nature », mais le texte exact n'est pas clairement rattaché à ce module.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    122
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte et vocabulaire du jardin",
+    "skill": "Comprendre un récit en répondant à des questions, justifier avec un détail du texte, puis compléter un texte avec le vocabulaire du jardinage.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "vrai_faux",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "justification",
+      "la poule et le moineau",
+      "vocabulaire du jardin",
+      "texte à compléter",
+      "respect de la nature"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable : question de cause, réponse oui/non suivie du relevé d'un indice dans le texte, jugement justifié, puis texte à trous à partir d'une banque de mots dans un contexte scolaire d'entretien d'un jardin avec des enfants.",
+    "themeGroup": "Lexique et vocabulaire"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Question 6a : la transcription indique « la poule a compris que le moineau avait raison » ; l'image dit « Enfin, est-ce que la poule a compris que le moineau avait raison ? » et ce libellé est correct, mais « Enfin, est-ce que » est bien présent. Rien à corriger sur ce point."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de page omis : « Lecture - Compréhension », « Sagesse », « 6ème année de base » et pied de page « Lire et s'exprimer », « 35 »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le cadre arrondi autour de la case de réponse en 5a (oui/non) n'est pas signalé ; la transcription l'indique seulement par des points."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans le texte du 7 : « Nour et Alex écrivent » est correct, mais « Le directeur était très ravi.Il » est fusionné dans l'image ; la transcription l'a corrigé en « ravi. Il » (modification mineure)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les deux lignes pointillées de 4, 5b, 6a, 6b sont décrites et non transcrites, ce qui est acceptable. La ligne de 7 « pour récompenser leurs efforts » est correcte."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

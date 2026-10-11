@@ -1,0 +1,104 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 69,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Les gladiateurs (I)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Les gladiateurs (I)\n25 février de l'année 62. Après la longue interruption due aux froids de l'hiver, les jeux du cirque vont reprendre dans une grande ville romaine.\nDe nombreuses affiches rouges et noires ont été placardées dans les rues de la ville.\nAttirés par cette publicité, plus de vingt mille personnes se pressent aux entrées de l'arène.\nCes premiers jeux seront grandioses.\nIls dureront pendant cinq jours et on y verra combattre une soixantaine de gladiateurs.\nCeux-ci viennent d'écoles de combat souvent très célèbres.\nCe sont généralement des esclaves, mais parfois il y a des hommes libres parmi eux.\nLe public est plein d'admiration pour ces hommes qui risquent leur vie à chaque combat.\nOn crie le nom des champions, on les dessine sur les murs ou on leur envoie des cadeaux.\n(à suivre...)",
+      "figureDesc": "Texte encadré avec coins arrondis, intitulé « Les gladiateurs (I) ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p069_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1",
+      "instruction": "Cherche dans le dictionnaire la signification de mot « Gladiateur » :",
+      "body": "- Les combattants chez les romains.\n- Les joueurs de rugby.\n- Les boxeurs.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p069_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2a",
+      "instruction": "Souligne la bonne réponse :",
+      "body": "Pendant quelle saison les jeux sont-ils interrompus ?\n- au printemps.\n- en automne.\n- en été.\n- en hiver.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p069_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2b",
+      "instruction": "Justifie ta réponse :",
+      "body": "........................................\n........................................",
+      "figureDesc": "Deux lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p069_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.46
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension en français sur les gladiateurs romains (texte narratif/documentaire), un thème qui ne correspond clairement à aucun des huit modules (travail, médias, tolérance, entraide, nature, santé, loisirs, autres modes de vie), donc aucun chapitre n'est identifiable avec certitude.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture : les gladiateurs",
+    "skill": "Comprendre un texte documentaire historique en cherchant un mot dans le dictionnaire et en justifiant une réponse par le texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "qcm"
+    ],
+    "keywords": [
+      "gladiateurs",
+      "Rome antique",
+      "lecture compréhension",
+      "dictionnaire",
+      "justification"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : texte d'ouverture sur un événement historique (jeux du cirque romain) suivi d'une recherche de vocabulaire au dictionnaire, d'une question à choix multiples et d'une justification de la réponse par le texte.",
+    "themeGroup": "Textes documentaires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

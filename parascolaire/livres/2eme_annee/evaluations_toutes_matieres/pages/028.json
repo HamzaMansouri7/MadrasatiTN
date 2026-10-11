@@ -1,0 +1,444 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 28,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقييم: وضعية مشكلة – عيد الشجرة (حساب الشتلات، ترتيب الأعداد، العملة بالمليم، الطرق المستقيمة والمنحنية والمنكسرة)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "لِتَجْمِيلِ سَاحَةِ النَّادِي، أَحْضَرَ مُدِيرُ النَّادِي 98 شَتْلَةَ شَجَرَةِ سَرْوٍ. غَرَسَ الْأَطْفَالُ مِنْهَا فِي الصَّبَاحِ 35 شُجَيْرَةً وَبَعْدَ الظُّهْرِ غَرَسُوا 21 شُجَيْرَةً.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p028_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَحْسُبُ عَدَدَ الشُّجَيْرَاتِ الْمَغْرُوسَةِ فِي الْيَوْمِ.",
+      "body": "",
+      "figureDesc": "سطر منقّط للإجابة؛ خانة التقييم معـ1",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p028_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "مَاهُوَ عَدَدُ الشُّجَيْرَاتِ الْمُتَبَقِّيَةِ ؟",
+      "body": "",
+      "figureDesc": "سطر منقّط للإجابة؛ خانة التقييم معـ2ب؛ نقطة 0,5",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p028_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ الْمُنْجَزَةِ مِنَ الصَّغِيرِ إِلَى الْكَبِيرِ.",
+      "body": "",
+      "figureDesc": "سطر منقّط للإجابة؛ خانتا التقييم معـ2ج ومعـ2أ؛ نقطة 0,5",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p028_i4"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "سَاهَمَ فِي الاِحْتِفَالِ بِعِيدِ الشَّجَرَةِ أَحْمَدُ وَجَاسِرُ وَزَيْنَبُ. وَكَانَ لِكُلِّ وَاحِدٍ مِنْهُمْ مَبْلَغٌ مَالِيٌّ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p028_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "10 أ",
+      "instruction": "أَسْتَعِينُ بِالْمُعْطَيَاتِ وَأُنْجِزُ الْمَطْلُوبَ. أُحِيطُ بِخَطٍّ مُغْلَقٍ الْمَبْلَغَ الَّذِي تَمْلِكُهُ زَيْنَبُ بِأَقَلِّ مَا يُمْكِنُ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "تَمْلِكُ زَيْنَبُ 180مي",
+      "figureDesc": "سبع قطع نقدية تونسية: أربع قطع من فئة 20 مي، قطعة 100 مي، قطعة 10 مي، قطعة 50 مي؛ خانة التقييم معـ3",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p028_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "10 ب",
+      "instruction": "أُمَثِّلُ الْمَبْلَغَ الَّذِي يَمْلِكُهُ جَاسِرُ وَقِيمَتُهُ 165 مي.",
+      "body": "",
+      "figureDesc": "إطار مستطيل فارغ بزوايا مستديرة للرسم أو التمثيل؛ خانة التقييم معـ3",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p028_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "10 ج",
+      "instruction": "يَمْلِكُ أَحْمَدُ 138 مي. أُكَمِّلُ تَمْثِيلَ الْمَبْلَغِ بِمَا يُنَاسِبُ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "138مي",
+      "figureDesc": "إطار يحتوي قطعة 1 مي وقطعة 20 مي وقطعة 2 مي، مع فقاعة 138مي؛ خانة التقييم معـ3",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p028_i8"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "اِنْتَقَلَ الْأَطْفَالُ مِنْ مَنَازِلِهِمْ إِلَى مَقَرِّ نَادِي الْأَطْفَالِ، وَكُلُّ وَاحِدٍ مِنْهُمْ سَلَكَ طَرِيقًا مُغَايِرًا لِلْآخَرِ: سَلَكَ أَحْمَدُ طَرِيقًا مُسْتَقِيمًا، بَيْنَمَا اخْتَارَتْ زَيْنَبُ طَرِيقًا مُنْحَنِيًا وَاتَّبَعَ جَاسِرُ طَرِيقًا مُنْكَسِرًا.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p028_i9"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-2-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p1",
+    "confidence": 0.21
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de mathématiques à situation-problème (Arbre) couvrant plusieurs chapitres : soustraction et addition, ordre des nombres, monnaie en millimes, ainsi que des lignes droites, courbes et brisées. Aucun chapitre unique ne correspond clairement ; le sujet relève de plusieurs périodes (P1 à P3).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Situation-problème : la fête de l'arbre",
+    "skill": "Mobiliser addition, soustraction, rangement des nombres, monnaie en millimes et types de lignes dans une situation unique.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "situation-problème",
+      "évaluation",
+      "monnaie en millimes",
+      "ordre des nombres",
+      "chemins droit courbe brisé",
+      "plantation d'arbres"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Un contexte unique (fête de l'arbre au club des enfants) sert de fil conducteur à plusieurs supports : calcul des plants posés et restants, rangement croissant, représentation de sommes avec le moins de pièces possible, et comparaison de trajets droit, courbe ou brisé.",
+    "themeGroup": "Situations-problèmes (sorties, fête de l'arbre)"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "السند 3: 'غَرَسُوا 21 شُجَيْرَةً' – l'image indique 'شُجَيْرَةً' pour 21 mais 'شَجَرَةً' pour 35 : à vérifier. Plus important, la transcription 'شَجَرَةً' pour 35 devrait être 'شُجَيْرَةً' (image : 35 شُجَيْرَةً)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "التعليمة 7, 8, 9: l'image écrit 'الشُّجَيْرَاتِ' ; la transcription est correcte, mais 'مَاهُوَ' est écrit 'ماهو' sans fatha sur le waw dans l'image (voyelle ajoutée : 'مَاهُوَ' → 'مَاهُوَ' à vérifier)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "السند 3: 'شَتْلَةَ شَجَرَةِ سَرْوٍ' – l'image porte 'شَتْلَةَ' ; OK. 'سَرْوٍ' OK."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les consignes 'أَسْتَعِينُ بِالْمُعْطَيَاتِ وَأُنْجِزُ الْمَطْلُوبَ' (التعليمة 10) et l'énoncé 10 أ sont fusionnés ; la bulle 'تَمْلِكُ زَيْنَبُ 180مي' est ajoutée correctement mais le 'أ' est séparé de la consigne 'أحيط…'."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Non transcrits : les pièces de monnaie (20, 20, 20, 100, 20, 10, 50) et les pièces 1, 20, 2 de l'exercice 10 ج, les cases de barème (0,5 ; 1) et les références 'معـ1', 'معـ2ب', 'معـ2ج', 'معـ2أ', 'معـ3', ainsi que le numéro de page 27."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.95,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "السند 3 : l'image porte « 35 شُجَيْرَةً » et non « 35 شَجَرَةً ». La transcription doit être corrigée. « 21 شُجَيْرَةً » est correct, et « شَتْلَةَ شَجَرَةِ سَرْوٍ » est correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "10 أ : l'image porte « أُحِيطُ بِخَطٍّ مُغْلَقٍ » avec damma sur l'alif. La transcription a « أَحِيطُ » avec fatha."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "لِتَجْمِيلِ سَاحَةِ النَّادِي، أَحْضَرَ مُدِيرُ النَّادِي 98 شَتْلَةَ شَجَرَةِ سَرْوٍ. غَرَسَ الْأَطْفَالُ مِنْهَا فِي الصَّبَاحِ 35 شُجَيْرَةً وَبَعْدَ الظُّهْرِ غَرَسُوا 21 شُجَيْرَةً.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَحْسُبُ عَدَدَ الشُّجَيْرَاتِ الْمَغْرُوسَةِ فِي الْيَوْمِ.",
+      "body": "",
+      "figureDesc": "سطر منقّط للإجابة؛ خانة التقييم معـ1",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "مَاهُوَ عَدَدُ الشُّجَيْرَاتِ الْمُتَبَقِّيَةِ ؟",
+      "body": "",
+      "figureDesc": "سطر منقّط للإجابة؛ خانة التقييم معـ2ب؛ نقطة 0,5",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ الْمُنْجَزَةِ مِنَ الصَّغِيرِ إِلَى الْكَبِيرِ.",
+      "body": "",
+      "figureDesc": "سطر منقّط للإجابة؛ خانتا التقييم معـ2ج ومعـ2أ؛ نقطة 0,5",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i4"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "سَاهَمَ فِي الاِحْتِفَالِ بِعِيدِ الشَّجَرَةِ أَحْمَدُ وَجَاسِرُ وَزَيْنَبُ. وَكَانَ لِكُلِّ وَاحِدٍ مِنْهُمْ مَبْلَغٌ مَالِيٌّ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "10 أ",
+      "instruction": "أَسْتَعِينُ بِالْمُعْطَيَاتِ وَأُنْجِزُ الْمَطْلُوبَ. أُحِيطُ بِخَطٍّ مُغْلَقٍ الْمَبْلَغَ الَّذِي تَمْلِكُهُ زَيْنَبُ بِأَقَلِّ مَا يُمْكِنُ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "تَمْلِكُ زَيْنَبُ 180مي",
+      "figureDesc": "سبع قطع نقدية تونسية: أربع قطع من فئة 20 مي، قطعة 100 مي، قطعة 10 مي، قطعة 50 مي؛ خانة التقييم معـ3",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "10 ب",
+      "instruction": "أُمَثِّلُ الْمَبْلَغَ الَّذِي يَمْلِكُهُ جَاسِرُ وَقِيمَتُهُ 165 مي.",
+      "body": "",
+      "figureDesc": "إطار مستطيل فارغ بزوايا مستديرة للرسم أو التمثيل؛ خانة التقييم معـ3",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "10 ج",
+      "instruction": "يَمْلِكُ أَحْمَدُ 138 مي. أُكَمِّلُ تَمْثِيلَ الْمَبْلَغِ بِمَا يُنَاسِبُ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "138مي",
+      "figureDesc": "إطار يحتوي قطعة 1 مي وقطعة 20 مي وقطعة 2 مي، مع فقاعة 138مي؛ خانة التقييم معـ3",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i8"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "اِنْتَقَلَ الْأَطْفَالُ مِنْ مَنَازِلِهِمْ إِلَى مَقَرِّ نَادِي الْأَطْفَالِ، وَكُلُّ وَاحِدٍ مِنْهُمْ سَلَكَ طَرِيقًا مُغَايِرًا لِلْآخَرِ: سَلَكَ أَحْمَدُ طَرِيقًا مُسْتَقِيمًا، بَيْنَمَا اخْتَارَتْ زَيْنَبُ طَرِيقًا مُنْحَنِيًا وَاتَّبَعَ جَاسِرُ طَرِيقًا مُنْكَسِرًا.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i9"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "لِتَجْمِيلِ سَاحَةِ النَّادِي، أَحْضَرَ مُدِيرُ النَّادِي 98 شَتْلَةَ شَجَرَةِ سَرْوٍ. غَرَسَ الْأَطْفَالُ مِنْهَا فِي الصَّبَاحِ 35 شَجَرَةً وَبَعْدَ الظُّهْرِ غَرَسُوا 21 شُجَيْرَةً.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَحْسُبُ عَدَدَ الشُّجَيْرَاتِ الْمَغْرُوسَةِ فِي الْيَوْمِ.",
+      "body": "",
+      "figureDesc": "سطر منقّط للإجابة؛ خانة التقييم معـ1",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "مَاهُوَ عَدَدُ الشُّجَيْرَاتِ الْمُتَبَقِّيَةِ ؟",
+      "body": "",
+      "figureDesc": "سطر منقّط للإجابة؛ خانة التقييم معـ2ب؛ نقطة 0,5",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ الْمُنْجَزَةِ مِنَ الصَّغِيرِ إِلَى الْكَبِيرِ.",
+      "body": "",
+      "figureDesc": "سطر منقّط للإجابة؛ خانتا التقييم معـ2ج ومعـ2أ؛ نقطة 0,5",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "سَاهَمَ فِي الاِحْتِفَالِ بِعِيدِ الشَّجَرَةِ أَحْمَدُ وَجَاسِرُ وَزَيْنَبُ. وَكَانَ لِكُلِّ وَاحِدٍ مِنْهُمْ مَبْلَغٌ مَالِيٌّ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "10 أ",
+      "instruction": "أَسْتَعِينُ بِالْمُعْطَيَاتِ وَأُنْجِزُ الْمَطْلُوبَ. أَحِيطُ بِخَطٍّ مُغْلَقٍ الْمَبْلَغَ الَّذِي تَمْلِكُهُ زَيْنَبُ بِأَقَلِّ مَا يُمْكِنُ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "تَمْلِكُ زَيْنَبُ 180مي",
+      "figureDesc": "سبع قطع نقدية تونسية: أربع قطع من فئة 20 مي، قطعة 100 مي، قطعة 10 مي، قطعة 50 مي؛ خانة التقييم معـ3",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "10 ب",
+      "instruction": "أُمَثِّلُ الْمَبْلَغَ الَّذِي يَمْلِكُهُ جَاسِرُ وَقِيمَتُهُ 165 مي.",
+      "body": "",
+      "figureDesc": "إطار مستطيل فارغ بزوايا مستديرة للرسم أو التمثيل؛ خانة التقييم معـ3",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "10 ج",
+      "instruction": "يَمْلِكُ أَحْمَدُ 138 مي. أُكَمِّلُ تَمْثِيلَ الْمَبْلَغِ بِمَا يُنَاسِبُ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "138مي",
+      "figureDesc": "إطار يحتوي قطعة 1 مي وقطعة 20 مي وقطعة 2 مي، مع فقاعة 138مي؛ خانة التقييم معـ3",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "اِنْتَقَلَ الْأَطْفَالُ مِنْ مَنَازِلِهِمْ إِلَى مَقَرِّ نَادِي الْأَطْفَالِ، وَكُلُّ وَاحِدٍ مِنْهُمْ سَلَكَ طَرِيقًا مُغَايِرًا لِلْآخَرِ: سَلَكَ أَحْمَدُ طَرِيقًا مُسْتَقِيمًا، بَيْنَمَا اخْتَارَتْ زَيْنَبُ طَرِيقًا مُنْحَنِيًا وَاتَّبَعَ جَاسِرُ طَرِيقًا مُنْكَسِرًا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p028_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.95
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "examTrimester": 2,
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

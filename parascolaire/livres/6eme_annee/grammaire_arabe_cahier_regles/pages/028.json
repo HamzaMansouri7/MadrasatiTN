@@ -1,0 +1,138 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 28,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "تصريف الناقص اليائي في المضارع المجزوم (conjugaison du verbe défectueux à finale yā' au présent apocopé/jussif) – cours d'arabe, bien que la matière soit indiquée comme Français",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة: يجزم الفعل الصحيح السالم بـ",
+      "body": "السكون الظاهر في آخره: أنا نحن أنت هو هي — أنا لم أفهم\nبحذف النون: أنت أنتما أنتم هما هم — أنت لم تفهمي\nلا يتغير إذا اتصلت به نون النسوة: أنتن هن — أنتن لم تفهمن",
+      "figureDesc": "Tableau de révision à 3 colonnes (السكون الظاهر في آخره / بحذف النون / لا يتغير إذا اتصلت به نون النسوة) avec une ligne de pronoms et une ligne d'exemples avec le verbe فهم.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p028_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: تصريف الناقص اليائي في المضارع المجزوم (الأفعال: بنى، خشي، سعى حسب الضمائر)",
+      "body": "المتكلم:\nأنا: لم أبنِ / لم أخشَ / لم أسعَ\nنحن: لم نبنِ / لم نخشَ / لم نسعَ\nالمخاطب:\nأنتَ: لم تبنِ / لم تخشَ / لم تسعَ\nأنتِ: لم تبني / لم تخشي / لم تسعي\nأنتما: لم تبنيا / لم تخشيا / لم تسعيا\nأنتم: لم تبنوا / لم تخشوا / لم تسعوا\nأنتن: لم تبنين / لم تخشين / لم تسعين\nالغائب:\nهو: لم يبنِ / لم يخشَ / لم يسعَ\nهي: لم تبنِ / لم تخشَ / لم تسعَ\nهما (للمذكر): لم يبنيا / لم يخشيا / لم يسعيا\nهما (للمؤنث): لم تبنيا / لم تخشيا / لم تسعيا\nهم: لم يبنوا / لم يخشوا / لم يسعوا\nهن: لم يبنين / لم يخشين / لم يسعين",
+      "figureDesc": "Grand tableau de conjugaison : colonnes des verbes (بنى، خشي، سعى), lignes des pronoms regroupés en المتكلم، المخاطب، الغائب. Le texte du scan n'a pas de tashkeel ; les voyelles finales sont ajoutées ici de manière normative.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p028_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "يجزم الفعل الناقص اليائي بحذف حرف العلة مع الضمائر أنا، نحن، أنت، هو، هي.\nيجزم بحذف النون مع الضمائر أنت، أنتما، أنتم، هما، هم.\nلا يتغير إذا اتصلت به نون النسوة.",
+      "figureDesc": "Encadré de conclusions.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p028_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التمارين",
+      "body": "",
+      "figureDesc": "Titre de section « التمارين » en bas de page, sans exercice visible.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p028_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.32
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la conjugaison du verbe défectueux à finale yā' (بنى، خشي، سعى) au présent apocopé, ce qui correspond à la compétence « conjugaison des verbes défectifs » de l'Unité 1 d'arabe, même si la matière était indiquée comme Français.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Verbe défectueux à finale yā' au jussif",
+    "skill": "Conjuguer les verbes défectueux à finale yā' (بنى، خشي، سعى) au présent apocopé avec tous les pronoms, et en déduire les règles de l'apocope.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "conjugaison",
+      "verbe défectueux",
+      "présent apocopé",
+      "jussif",
+      "pronoms personnels",
+      "chute de la lettre faible"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : le schéma révision, tableau de conjugaison par pronoms puis conclusions à induire, ainsi que l'idée de comparer verbe sain et verbe défectueux. Les exercices ne figurent pas sur la page, donc l'apport reste limité à la structure de la leçon.",
+    "themeGroup": "Le verbe défectueux"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tableau du cours (الدرس) est transcrit avec des voyelles (لم أبنِ، لم أخشَ، لم أسعَ، أنتَ، أنتِ…) alors que l'image n'a aucun tashkeel : لم أبن، لم اخش، لم أسع. Voyelles ajoutées, non visibles."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'image on lit « لم اخش » (alif sans hamza) pour أنا ; la transcription écrit « لم أخشَ »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ajout de « (للمذكر) » et « (للمؤنث) » après هما : absent de l'image, qui indique seulement هما deux fois."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le titre du cours est inventé : « (الأفعال: بنى، خشي، سعى حسب الضمائر) » ; l'image a seulement l'en-tête du tableau الأفعال / الضمائر."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le tableau est aplati en liste ; la colonne des catégories (المتكلم، المخاطب، الغائب) est conservée, mais l'ordre des colonnes de l'image (سعى، خشي، بنى de gauche à droite) est inversé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans les conclusions, l'image écrit « أنا، نحن،أنت،هو،هي » et « أنت،أنتما،أنتم هما ، هم » ; mêmes mots, simple ponctuation. Pas d'erreur de fond."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

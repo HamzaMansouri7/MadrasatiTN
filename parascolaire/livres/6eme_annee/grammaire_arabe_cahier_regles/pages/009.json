@@ -1,0 +1,112 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 9,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الضمائر المتصلة وإسناد الأفعال إلى ضمائر المخاطب والغائب (التمارين) - النحو والصرف بالعربية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أعيد كتابة ما يلي بالصيغة التي تناسب السياق",
+      "body": "يجب أن أكد و أجد في العمل لأرد جميل والدي\nوالديك\nوالدينا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p009_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اسند المثال التالي إلى ضمائر الخطاب أنت، أنتما، أنتم",
+      "body": "يود أن يحل ضيفا بيننا ليرد لنا ما استدانه منا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p009_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "استرشد بالضمير المتصل و أعيد كتابة ما يلي بالصيغة المناسبة",
+      "body": "كي تسترد صحتك عليك أن تتم دواءك إلى الآخر\nعليهما\nعليكن",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p009_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اسند المثال التالي إلى ضمائر الغائب هم، هن",
+      "body": "بعثت إلينا لتهتم بكل كبيرة و صغيرة و لتتم علينا سعادتنا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p009_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكمل تعمير الفراغات بما يناسب",
+      "body": "المخاطب:\nأنت: [فراغ] | لن تعتد | [فراغ]\nأنت: لن تحلي | [فراغ] | لن تستمدي\nأنتما: [فراغ] | لن تعتدا | [فراغ]\nأنتم: لن تحلوا | [فراغ] | لن تستمدوا\nأنتن: [فراغ] | لن تعتدن | [فراغ]",
+      "figureDesc": "جدول من أربعة أعمدة وخمسة أسطر: عمود الضمير (أنت، أنت، أنتما، أنتم، أنتن) تحت خانة «المخاطب»، وثلاثة أعمدة للأفعال المنفية بـ«لن» (من أفعال: اعتدّ، حلّى، استمدّ) بعض خاناتها فارغة للتعمير.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p009_i5",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.19
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de grammaire et de conjugaison arabes (pronoms suffixes, verbes défectifs et assimilés conjugués à la 2e et 3e personne), ce qui correspond à la conjugaison des verbes défectifs de l'Unité 1 en arabe, même si la page ne mentionne pas explicitement la narration.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison des verbes avec pronoms suffixes",
+    "skill": "Conjuguer des verbes (assimilés, creux, défectueux, doublés) aux personnes du destinataire et de l'absent, et utiliser les pronoms suffixes adaptés au contexte.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "pronoms suffixes",
+      "conjugaison",
+      "verbes arabes",
+      "2e et 3e personnes",
+      "duel et pluriel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les phrases-contextes (remercier ses parents, suivre un traitement, rembourser une dette) sont conjuguées à différentes personnes, avec un tableau à compléter pour le futur négatif au singulier, duel et pluriel : le format se réutilise pour d'autres verbes.",
+    "themeGroup": "Conjugaison: pronoms et suffixes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

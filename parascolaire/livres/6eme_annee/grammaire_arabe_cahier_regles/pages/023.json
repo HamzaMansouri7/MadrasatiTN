@@ -1,0 +1,140 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 23,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "قواعد اللغة العربية: تغيير الضمائر في الجملة (المخاطب والغائب والمتكلم، المفرد والمثنى والجمع، المذكر والمؤنث) وإسناد الفعل المضارع المنصوب",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أعيد كتابة الفقرة مسترشدا بالضمير المسطر",
+      "body": "عليك أن تقسو عليه وتدعوه إلى احترام القانون المدرسي لينجو من العقاب\nعليكما\nعلينا",
+      "figureDesc": "نص داخل إطار مستطيل؛ كلمة «عليك» في الفقرة مسطرة. يليها ضميران مقترحان للإسناد: «عليكما» و«علينا».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p023_i1",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أسند الفعل في صيغة المضارع المنصوب",
+      "body": "قصدوا الغابة وشدوا مع الطيور وعدوا مع الفراشات وزهول مع الطبيعة\nيجب عليهم أن يقصدوا الغابة\nلـ ـ\nيجب عليكن",
+      "figureDesc": "نص داخل إطار مستطيل؛ يتضمن مثالا محلولا («يجب عليهم أن يقصدوا الغابة») وسطرا فيه شرطة تمديد «لـ ـ» ثم «يجب عليكن» لإتمام الإسناد.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p023_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعوض «بني» حسب الطلب وأغير ما يجب تغييره",
+      "body": "يا بني ، كي لا تسهو عن انجاز عملك عليك أن لا تلهو بمتابعة التلفاز\nبنيتي\nأبنائي",
+      "figureDesc": "نص داخل إطار مستطيل؛ كلمة «بني» في التعليمة مسطرة/مميزة، يليها بديلان: «بنيتي» و«أبنائي».",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p023_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أجعل المتكلم في الجملة التالية «نحن» («هم»)",
+      "body": "لن أدعوك على الانضمام إلى فريقي حتى أبلو صداقتك\nإلى فريقنا",
+      "figureDesc": "نص داخل إطار مستطيل؛ يبدأ الجواب بعبارة «إلى فريقنا» ويترك باقي الجملة لإكمالها.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p023_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.25
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la grammaire arabe (changement des pronoms et conjugaison du présent subjonctif, verbes défectueux comme يلهو/يسهو/أبلو), mais aucun chapitre officiel ne correspond clairement : les unités arabes sont centrées sur la narration, et seul ar-6-ch1 mentionne brièvement la conjugaison des verbes défectifs.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Changement des pronoms et conjugaison",
+    "skill": "Modifier les pronoms dans une phrase (personne, nombre, genre) et conjuguer le présent du subjonctif (المضارع المنصوب) en faisant les accords nécessaires.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "pronoms personnels",
+      "présent subjonctif",
+      "accord",
+      "conjugaison",
+      "réécriture",
+      "arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le principe de réécriture guidée par un pronom donné (passer au duel, au pluriel, au féminin) dans de courtes phrases scolaires sur le règlement, les conseils ou la nature, pourrait être repris avec d'autres contextes et d'autres verbes, y compris des verbes défectueux ou à voyelle longue.",
+    "themeGroup": "Conjugaison: pronoms et suffixes"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres 'التمارين', 'التمرين الأول', 'التمرين الثاني', 'التمرين الثالث', 'التمرين الرابع' ne sont pas transcrits."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: 'وزهول' dans l'image s'écrit 'وزهول' (avec espace 'وز هول'), transcription correcte; mais 'لـ ـ' est un tiret/trait (ligne de réponse 'لـــ'), transcrit de façon approximative."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1: 'تقسو' est correct; 'المسطر' correct. Aucune erreur détectée dans ce passage."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3: dans l'image 'أعوض بني حسب الطلب' sans guillemets; la transcription ajoute des guillemets « » autour de 'بني' (ajout de ponctuation)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4: guillemets et parenthèses ajoutés « نحن » (« هم ») alors que l'image montre 'نحن   هم' sans ces signes (probablement des flèches/symboles omis)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4: 'أبلو' correct (l'image: 'أبلو صداقتك')."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

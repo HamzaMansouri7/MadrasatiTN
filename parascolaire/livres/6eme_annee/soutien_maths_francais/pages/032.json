@@ -1,0 +1,171 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 32,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Exercices de soutien unité 6 – 6ème année (Français : Grammaire, Conjugaison, Orthographe, Lexique). Remarque : la page est en réalité une page de français, pas de mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "Grammaire 1",
+      "instruction": "Complète avec : « plus … que / moins … que »",
+      "body": "a) La voiture est ……………… rapide ………….. le vélo.\nb) La ville de Taroudant est …………… grande ……. la vile de Marrakech.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p032_i1",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Grammaire 2",
+      "instruction": "Réécris les phrases en utilisant les expressions données :",
+      "body": "a) Khalid est fort. Younes n'est pas fort. (plus … que) →\nb) Nadia n'est pas intelligente. Samia est intelligente. (moins … que) →\nc) Sofia est courageuse. Rania n'est pas courageuse. (moins … que) →\nd) Salim gagne = Karim gagne. (autant que) →\ne) C'est l'ordinateur avancé. (le plus) →\nf) Ce téléphone est cher. (le moins) →",
+      "figureDesc": "Lignes pointillées après chaque flèche pour écrire la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p032_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Grammaire 3",
+      "instruction": "Transforme les phrases au discours indirect :",
+      "body": "a) Le père dit à son fils : « Je suis content. ».\nb) Mon professeur me demande : « Peux-tu aider ton ami ?».\nc) « Il va pleuvoir » annonce le journalise.\nd) « Tu as raison » dit-elle.\ne) Le policier ordonne au conducteur : « faites attention aux feux de circulation ! ».",
+      "figureDesc": "Lignes pointillées sous chaque phrase",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p032_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 1",
+      "instruction": "Complète le tableau en conjuguant les verbes à l'impératif :",
+      "body": "(Sortir/2e.p.s) ……… | (Se lave/2e.p.s) ………\n(Voir/1e.p.p) ……… | (S'arrêter/1e.p.p) ………\n(Rendre/2e.p.p) ……… | (Se mentir/2e.p.p) ………\n(Moudre/2e.p.s) ……… | (S'attacher/2e.p.s) ………\n(Mettre/1e.p.p) ……… | (Se calmer/1e.p.p) ………\n(Lire/2e.p.p) ……… | (Se nourrir/2e.p.p) ………",
+      "figureDesc": "Tableau à deux colonnes et six lignes, avec pointillés pour les réponses",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p032_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 2",
+      "instruction": "Conjugue les verbes entre parenthèses à l'imparfait :",
+      "body": "a) Elle (se regarder) ………\nb) Je (se couper) ………\nc) Nous (s'adresser) ………\nd) Ils (se laisser) ………\ne) Vous (se relire) ………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p032_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 1",
+      "instruction": "Donne le pluriel des noms composés suivants :",
+      "body": "Singulier | Nature | Pluriel\nUn brise-glace | Verbe + nom | des ………\nUn sans-abri | Préposition+nom | des ………\nUn laissez-passer | Verbe+verbe | ………\nUn chou-fleur | Nom + nom | ………\nUn libre-service | Ajd + nom | ………\nUn porte-document | (vide) | ………\nUn après-midi | (vide) | ………\nUn arc-en-ciel | (vide) | ………",
+      "figureDesc": "Tableau à trois colonnes (Singulier, Nature, Pluriel) avec en-tête jaune",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p032_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 2",
+      "instruction": "Entoure le mot invariable dans chaque phrase :",
+      "body": "a) Il est absent, car il est malade.\nb) Je suis en route avec mon frère.\nc) il ne mange jamais les bonbons.\nd) Hier, il est parti chez ses parents.\ne) Nous maitrisons bien la réparation des voitures.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p032_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 1",
+      "instruction": "Donne le nom de chaque activité :",
+      "body": "a) qui écrit et fait de l'humour : ………\nb) Personne qui pratique l'art de la sculpture : ………\nc) Artiste dont la profession est de jouer un rôle à la scène ou à l'écran : ………\nd) Personne qui compose, écrit des ouvrages littéraires. ………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p032_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 2",
+      "instruction": "Classe les noms composés en les mettant au pluriel :",
+      "body": "Un sous-titre / une porte-fenêtre / le cerf-volant / une grand-mère / un chien-loup / un arc-en ciel / le savoir-faire\nCatégories : Nom + nom ; Verbe + nom ; Adjectif + nom ; Verbe + verbe ; Nom + adjectif ; Préposition + nom ; Nom + préposition + nom",
+      "figureDesc": "Tableau à deux colonnes : catégories de composition à gauche, cases vides à droite",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p032_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.23
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de soutien de français mêlant comparatif, discours indirect, impératif, imparfait, noms composés et lexique des métiers artistiques, ce qui couvre plusieurs modules sans correspondre clairement à un seul chapitre officiel.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Révisions de grammaire, conjugaison, orthographe et lexique",
+    "skill": "Réviser le comparatif, le discours indirect, l'impératif, l'imparfait des verbes pronominaux, le pluriel des noms composés et le lexique des métiers artistiques.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "comparatif",
+      "discours indirect",
+      "impératif",
+      "imparfait",
+      "noms composés",
+      "mots invariables"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices de soutien courts et variés (compléter, réécrire, transformer, conjuguer en tableau, classer par catégories, entourer l'invariable) qui couvre plusieurs domaines du français sur une seule page. Elle est réutilisable comme modèle de fiche de révision multi-compétences avec des phrases du quotidien.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

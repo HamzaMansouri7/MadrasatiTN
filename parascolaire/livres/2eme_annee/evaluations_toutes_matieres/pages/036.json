@@ -1,0 +1,135 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 36,
+  "grade": "2ème Année",
+  "subject": "رياضيات",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني – عدد 3 (رياضيات، السنة الثانية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : أَحْسُبُ عَدَدَ التَّلَامِيذِ الَّذِينَ تَابَعُوا الْعَرْضَ الثَّانِيَ.",
+      "body": "السَّنَدُ 1 : نَظَّمَتْ مَدْرَسَةُ مَلَاكَ 3 عُرُوض مَسْرَحِيَّةٍ لِلْأَطْفَالِ، فَبَلَغَ عَدَدُ الْحَاضِرِينَ فِي الْعَرْضِ الْأَوَّلِ 65 تِلْمِيذًا، وَحَضَرَ الْعَرْضَ الثَّانِيَ عَدَدٌ مِنَ التَّلَامِيذِ يَقِلُّ عَنْ عَدَدِ الْحَاضِرِينَ فِي الْعَرْضِ الْأَوَّلِ بِـ 22 تِلْمِيذًا، وَتَابَعَ الْعَرْضَ الثَّالِثَ عَدَدٌ مِنَ التَّلَامِيذِ يَفُوقُ الْحَاضِرِينَ فِي الْعَرْضِ الثَّانِي بِـ 28 تِلْمِيذًا. (النقطة المسندة: 0,5 – المعيار: مع1)",
+      "figureDesc": "سطر منقوط لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p036_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أَحْسُبُ عَدَدَ التَّلَامِيذِ الَّذِينَ تَابَعُوا الْعَرْضَ الثَّالِثَ.",
+      "body": "(النقطة المسندة: 1 – المعيار: مع2ب) يعتمد على السند 1.",
+      "figureDesc": "سطر منقوط لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p036_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : أَحْسُبُ الْعَدَدَ الْجُمْلِيَّ لِلتَّلَامِيذِ الَّذِينَ تَابَعُوا الْعُرُوضَ الثَّلَاثَةَ.",
+      "body": "(النقطة المسندة: 0,5 – المعيار: مع2أ) يعتمد على السند 1.",
+      "figureDesc": "سطر منقوط لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p036_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : أُرَتِّبُ أَعْدَادَ التَّلَامِيذِ الَّذِينَ تَابَعُوا الْعُرُوضَ تَنَازُلِيًّا.",
+      "body": "(النقطة المسندة: 0,5 – المعيار: مع2ج) يعتمد على السند 1.",
+      "figureDesc": "سطر منقوط لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p036_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : أَحْسُبُ الْمَبْلَغَ الْمَالِيَّ الْبَاقِيَ لِمَلَاكَ.",
+      "body": "السَّنَدُ 2 : إِثْرَ مُتَابَعَةِ الْعَرْضِ الْمَسْرَحِيِّ، تَفَقَّدَتْ مَلَاكُ الْمَبْلَغَ الْمَالِيَّ الْبَاقِيَ لَهَا فَوَجَدَتِ الْقِطَعَ النَّقْدِيَّةَ التَّالِيَةَ : (النقطة المسندة: 1 – المعيار: مع3)",
+      "figureDesc": "خمس قطع نقدية تونسية داخل إطار بيضاوي: 5 و10 و20 و50 و100 مي",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p036_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : أُكَمِّلُ رَسْمَ الْقِطَعِ النَّقْدِيَّةِ النَّاقِصَةِ الْمُمَثِّلَةِ لِثَمَنِ شِرَاءِ قِطْعَةِ الشُّكُلَاطَةِ.",
+      "body": "السَّنَدُ 3 : مَرَّتْ مَلَاكُ بِالْمَغَازَةِ فَاشْتَرَتْ قِطْعَةَ شُكُلَاطَةٍ بِـ 95 مِي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p036_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p6",
+    "confidence": 0.38
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un test de fin de trimestre 2 (اختبار نهاية الثلاثي الثاني) qui mélange plusieurs notions (soustraction, addition, ordre décroissant, monnaie en millimes), donc une évaluation générale ne correspondant pas à un seul chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes additifs et monnaie",
+    "skill": "Résoudre des problèmes de soustraction et d'addition, comparer et ordonner des nombres, calculer et représenter des sommes en millimes",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "problème",
+      "addition",
+      "soustraction",
+      "ordre décroissant",
+      "monnaie",
+      "millimes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation-problème contextualisée (spectacles scolaires puis achat d'une friandise) qui enchaîne comparaison, calcul de total, rangement de nombres, comptage de pièces et complétion de pièces pour former un prix, avec critères d'évaluation et barème.",
+    "themeGroup": "Monnaie : les millimes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

@@ -1,0 +1,93 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 27,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Le costume marin (thème : Sagesse)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Le costume marin\n\nPour acheter de nouveaux vêtements, le petit Jean va avec sa mère dans un grand magasin très animé. Jean n'aime pas ça : il faut toujours attendre très longtemps et sa mère n'achète rien de bien.\n... Enfin, c'est le tour de Jean. Un vendeur salue poliment la maman et lui montre plusieurs tenues. Mais elle dit non tout le temps. Puis, tout à coup, le vendeur sort un costume bleu marine avec quelques rayures blanches. Un costume de marin.\n- « Comme c'est adorable, dit sa mère, c'est de nouveau à la mode ça ?\n- Oui Madame, affirme le vendeur, c'est tout à fait nouveau. »\nJean est pris de panique. Il a envie de pleurer. Est-ce que maman veut vraiment acheter ce costume affreux ? Mais c'est horrible ! Tous les copains vont se moquer de lui.\nSa mère ne lui laisse pas le choix. Elle le pousse en avant vers la cabine d'essayage. C'est là qu'il met le costume marin. Il se regarde dans la glace. Il a l'air complètement ridicule. Ça le rend malade.\nSa maman tire son fils hors de la cabine et dit : « c'est joli, hein ? » Jean ne voit qu'une solution pour se débarrasser de ce costume : Mentir.\nIl respire profondément. « Un garçon de mon école avait le même costume, dit-il, mais il a été tout de suite déchiré.\n- Impossible, Madame, déclare le vendeur vivement. Touchez, c'est très solide. »\nMaman tâte le tissu entre ses doigts puis elle regarde son fils : « Je crois que tu as raison, mon enfant, conclut-elle. C'est joli mais pas très solide. »\nJean ne dit rien mais il est content.\nIl retourne dans la cabine d'essayage et enlève vite le costume marin.\nIl finit par acheter un pantalon et une chemise ordinaires.\nD'après Guus Kuijer « Les bonbons sont faits pour être mangés »",
+      "figureDesc": "Texte encadré avec bandeau de titre « Lecture - Compréhension », mentions « Sagesse » et « 6ème année de base ». Pas d'illustration. Au verso, texte d'exercices transparent (non lisible).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p027_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.29
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension en français (« Le costume marin », thème Sagesse), mais aucun module officiel ne correspond clairement : le thème « Sagesse » et l'extrait fourni (un enfant avec sa mère dans un magasin) ne relèvent sans ambiguïté ni de la tolérance (module 3) ni d'un autre module, donc l'association reste incertaine.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    121
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte narratif",
+    "skill": "Lire un texte narratif court et en dégager le sens (personnages, situation, message de sagesse).",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "texte narratif",
+      "sagesse",
+      "Jean",
+      "magasin"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation du quotidien (un enfant qui accompagne sa mère pour acheter des vêtements) servant de support à une lecture suivie, avec questions de compréhension et morale implicite, réutilisable pour d'autres textes sur les petites leçons de vie.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : « Sagesse », « Lecture - Compréhension », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page n'est pas transcrit : « Lire et s'exprimer », « 26 », « 6ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« c'est de nouveau à la mode ça ? » : la transcription est conforme, mais le guillemet fermant manque dans l'image comme dans l'OCR. Aucune erreur."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Sa maman tire son fils hors de la cabine et dit : « c'est joli, hein ? » » : l'image porte « hein?» sans espace avant le point d'interrogation. Différence typographique mineure."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

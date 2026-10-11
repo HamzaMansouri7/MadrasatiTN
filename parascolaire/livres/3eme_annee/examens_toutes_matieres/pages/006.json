@@ -1,0 +1,108 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 6,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول – قراءة (عدد 3) – السنة الثالثة: نص «بناء البيت الكبير» (الاقتصاد والتدبير) ومعالجة النص",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "« رَغْبَتِي شَدِيدَةٌ يَا أَعِزَّائِي فِي أَنْ أَبْنِيَ لَكُمْ بَيْتًا كَبِيرًا يَكُونُ فِيهِ لِكُلٍّ مِنْكُمْ غُرْفَةٌ خَاصَّةٌ بِهِ، تُحِيطُ بِهِ حَدِيقَةٌ جَمِيلَةٌ، تَغْمُرُهَا الْخُضَرُ وَالْغِلَالُ، وَتَفُوحُ مِنْهَا رَوَائِحُ الزَّهْرِ وَالْيَاسَمِينِ.»\nصَاحَتِ الْأُمُّ وَالْأَطْفَالُ فِي وَقْتٍ وَاحِدٍ : « مَا أَرْوَعَ الْفِكْرَةَ !»\nتَنَهَّدَ الْأَبُ وَقَالَ :« وَهَلْ تَحْسِبُونَ الْأَمْرَ سَهْلًا ؟ إِنَّهُ يَسْتَغْرِقُ مِنِّي جُهْدَ السِّنِينِ.»\nتَدَاوَلَ أَفْرَادُ الْأُسْرَةِ الرَّأْيَ :\n- بِالِاقْتِصَادِ وَالتَّدْبِيرِ يُمْكِنُنَا الْوُصُولُ.\nقَالَتِ الْأُمُّ :\n- أَبِيعُ مَصُوغِي وَبَعْضَ الْأَثَاثِ الْكَمَالِيِّ فِي الْبَيْتِ، وَأَبِيعُ مَنَابِي مِنْ مِيرَاثِ أَبِي.\nوَقَالَ الْأَوْلَادُ الثَّلَاثَةُ :\n- لَنْ نَطْلُبَ مِنْكَ يَا أَبَانَا ثِيَابًا جَدِيدَةً لِمُدَّةِ خَمْسَةِ أَعْيَادٍ.\nوَقَالَتْ كَرِيمَةُ :\n- لِمَاذَا نَأْكُلُ اللَّحْمَ يَوْمًا بَعْدَ يَوْمٍ ؟ تَكْفِينَا دَجَاجَةٌ كُلَّ أُسْبُوعٍ.\nوَقَالَتْ زَيْنَبُ :\n- لَنْ أَشْتَرِيَ الْحَلْوَى كُلَّ يَوْمٍ. تَكْفِينِي قِطْعَةٌ وَاحِدَةٌ فِي الصَّبَاحِ وَأُخْرَى فِي الْعَشِيَّةِ.\nضَحِكَ أَفْرَادُ الْأُسْرَةِ وَقَدْ شَعَّ مِنْ عُيُونِهِمْ بَرِيقُ الْأَمَلِ...\n(المصدر: فاطمة سليم - بتصرف)",
+      "figureDesc": "Page d'examen avec en-tête : الاسم، اللقب، القسم؛ اختبار نهاية الثلاثي الأول، عدد: 3؛ المادة: قراءة؛ المستوى: السنة الثالثة. Filigrane MOURAJAA.COM.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p006_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-أ",
+      "instruction": "أُلَوِّنُ خَانَةَ الْإِجَابَةِ الصَّحِيحَةِ. تَتَكَوَّنُ هَذِهِ الْأُسْرَةُ مِنْ :",
+      "body": "☐ أَبٍ وَأُمٍّ وَوَلَدَيْنِ وَثَلَاثِ بَنَاتٍ.\n☐ أَبٍ وَأُمٍّ وَبِنْتٍ وَثَلَاثَةِ أَوْلَادٍ.\n☐ أَبٍ وَأُمٍّ وَثَلَاثَةِ أَوْلَادٍ وَبِنْتَيْنِ.\n(المعيار: مع 2أ ؛ النقطة: 0,5)",
+      "figureDesc": "Trois cases à cocher/colorier",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p006_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-ب",
+      "instruction": "اِقْتَرَحَ الْأَبُ عَلَى أَفْرَادِ أُسْرَتِهِ :",
+      "body": "☐ شِرَاءَ مَنْزِلٍ جَدِيدٍ.\n☐ بِنَاءَ مَنْزِلٍ جَدِيدٍ.\n☐ كِرَاءَ مَنْزِلٍ كَبِيرٍ.\n(النقطة: 0,5)",
+      "figureDesc": "Trois cases à cocher",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p006_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-ج",
+      "instruction": "يَرَى الْأَبُ أَنَّ بِنَاءَ الْمَنْزِلِ يَسْتَغْرِقُ مِنْهُ :",
+      "body": "☐ بَعْضَ الْأَشْهُرِ.\n☐ سَنَةً كَامِلَةً.\n☐ سَنَوَاتٍ عَدِيدَةً.\n(النقطة: 0,5)",
+      "figureDesc": "Trois cases à cocher",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p006_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u8",
+    "confidence": 0.36
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un test de fin de premier trimestre (lecture, épreuve n°3) portant sur un texte et des questions de compréhension (composition de la famille, projet de construction, durée), ce qui relève d'une évaluation générale et non d'un chapitre précis; l'unité 1 (personnages et actions) est possible mais pas certaine.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de texte : construire la maison",
+    "skill": "Comprendre un texte narratif en relevant des informations explicites (composition de la famille, projet du père, durée des travaux) et répondre à des QCM.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "qcm"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "évaluation trimestrielle",
+      "famille",
+      "maison",
+      "QCM",
+      "arabe 3ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation familiale où un père expose un projet de maison à ses enfants, servant de base à des QCM de repérage d'informations (qui, quoi, combien de temps), avec barème par question et critère d'évaluation.",
+    "themeGroup": "Compréhension de l'écrit : la classe et la maison"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

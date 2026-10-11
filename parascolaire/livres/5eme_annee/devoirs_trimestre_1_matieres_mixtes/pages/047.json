@@ -1,0 +1,92 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 47,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "العائلة (La famille : famille nucléaire et famille élargie) – texte de lecture/éveil, sans contenu mathématique",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "العائلة",
+      "body": "العائلة هي الخلية الاساسية لبناء المجتمع\nتتكون من افراد تربط بينهم صلة القرابة و الرحم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p047_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "العائلة النواة",
+      "body": "هي العائلة المكونة من الزوجين وأطفالهم",
+      "figureDesc": "Dessin colorié d'une famille nucléaire : un père portant un bébé, une mère, et quatre enfants (deux filles, un garçon, un grand enfant avec un sac à dos) se tenant par la main.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p047_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "العائلة الممتدة",
+      "body": "تضم الأجداد والزوجين والأبناء والأبناء وزوجاتهم والأحفاد والأصهار والأعمام،\nوهي تعتبر وحدة اجتماعية مستمرة لما لا نهاية حيث تتكون من أجيال وأكثر",
+      "figureDesc": "Dessin d'une famille élargie sur fond gris-bleu : grands-parents (grand-père à lunettes avec canne, grand-mère), parents (père, mère), une fillette en robe bleue, un garçon avec un skateboard orange et une petite poupée.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p047_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-5-ch1",
+    "confidence": 0.29
+  },
+  "topicSubject": "Éducation civique / Éveil (société)",
+  "topicReason": "La page définit la famille, la famille nucléaire et la famille élargie, un contenu d'éducation sociale ou civique qu'aucun chapitre officiel de 5ème Année ne couvre clairement : ce n'est ni un texte narratif, descriptif, explicatif ou injonctif d'une unité d'arabe précise, ni de l'histoire-géographie ou des sciences.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation civique",
+    "theme": "La famille nucléaire et élargie",
+    "skill": "Distinguer la famille nucléaire de la famille élargie et identifier les membres de chacune.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "appariement",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "famille",
+      "famille nucléaire",
+      "famille élargie",
+      "liens de parenté",
+      "société"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les définitions courtes de deux types de familles se prêtent à un arbre généalogique à compléter, à un classement des membres par type de famille ou à un tableau comparatif. On peut aussi demander d'imaginer la composition de sa propre famille à partir de ces notions.",
+    "themeGroup": "La famille: structure"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éducation civique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

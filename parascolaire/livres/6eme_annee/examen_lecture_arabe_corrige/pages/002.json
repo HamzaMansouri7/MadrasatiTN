@@ -1,0 +1,428 @@
+{
+  "book": "examen_lecture_arabe_corrige",
+  "page": 2,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Examen de lecture (arabe) : compréhension d'un texte sur le projet de Salem (l'aridité de la terre, la persévérance et la réussite) – questions de compréhension, vocabulaire, ordre des événements et résumé",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "الأرْضُ | الْمَاءُ | النَّاسُ\n......... ......... | ......... ......... | ......... .........",
+      "figureDesc": "Tableau à trois colonnes (الأرضُ، الْمَاءُ، النَّاسُ), chacune avec deux lignes de pointillés à remplir ; cases de notation à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_arabe_corrige_p002_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2ج",
+      "instruction": "اُذْكُرْ قَرِينَةً عن كُلِّ صُعُوبَةٍ",
+      "body": "الأرْضُ :\" .........\nالماءُ :\" .........\nالنّاسُ :\" .........",
+      "figureDesc": "Trois lignes pointillées avec cases de notation à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_arabe_corrige_p002_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2أ",
+      "instruction": "اُذْكُرْ سَبَبَيْنِ لِنَجَاحِ مَشْرُوعِ سالِمٍ وقُدْرَتِهِ على تَجَاوُزِ الصّعابِ :",
+      "body": "السبب الأوَّلُ : .........\nالسّبَبُ الثّانِي: .........",
+      "figureDesc": "Lignes pointillées avec cases de notation.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_arabe_corrige_p002_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أسْنِدْ عُنْوانًا مناسِبًا لِلنَّصِّ :",
+      "body": ".........",
+      "figureDesc": "Ligne pointillée avec case de notation.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_arabe_corrige_p002_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2ب",
+      "instruction": "في النّصِّ مفردتانِ مُتَضادَّتانِ اِسْتَخْرِجْهُمَا :",
+      "body": "......... ≠ .........",
+      "figureDesc": "Ligne pointillée avec symbole ≠ et case de notation.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_arabe_corrige_p002_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اِشْرَحْ حسبَ السِّيَاقِ :",
+      "body": "لَكِنَّ السَّمَاءَ أَمْسَكَتْ عَلَى الأَمْطَارِ= .........\nلَكِنَّ سالِمًا لم يَأْبَهْ لِذلكَ : .........",
+      "figureDesc": "Les expressions « أَمْسَكَتْ عَلَى » et « لم يَأْبَهْ » sont soulignées ; cases de notation à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_arabe_corrige_p002_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2أ",
+      "instruction": "أرتِّبُ الأحْداثَ :",
+      "body": "☐ جَفَافُ الأرْضِ وَتَعَثُّرِ الْمَشْرُوعِ\n☐ إِنْهاءُ الدِّرَاسَةِ الْجامِعِيَّةِ والتَّخَرُّجُ .\n☐ نَجَاحُ سالِمٍ فِي إِحْيَاءِ الأَرْضِ .\n☐ الاقْتِرَاضُ مِنَ البَنْكِ لِحَفْرِ بِئْرٍ والتَّحلِّي بالصَّبْرِ والثِّقَةِ بالنَّفْسِ\n☐ التَّخْطيطُ والتَّنْفِيذُ لِخِدْمَةِ الأرْضِ .",
+      "figureDesc": "Cinq phrases, chacune accompagnée d'une case vide pour numéroter l'ordre ; cases de notation à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_arabe_corrige_p002_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع3",
+      "instruction": "اُلَخِّصُ النَّصَّ باعتماد الأحداث السّابقة :",
+      "body": ".........",
+      "figureDesc": "Ligne pointillée avec cases de notation.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_arabe_corrige_p002_i8"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.25
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un examen de lecture en arabe (compréhension, vocabulaire, ordre des événements, résumé d'un texte narratif sur Salem) qui ne correspond clairement à aucune unité précise : il s'agit d'une évaluation générale de compréhension sans focalisation sur un type de passage (description, dialogue, explication) ni sur la structure narrative.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de lecture : projet de Salem",
+    "skill": "Comprendre un texte narratif en relevant des indices, en expliquant le vocabulaire en contexte, en ordonnant les événements et en rédigeant un résumé.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "schema_tableau",
+      "production_ecrite",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "texte narratif",
+      "vocabulaire en contexte",
+      "ordre des événements",
+      "résumé",
+      "persévérance"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable autour d'un récit de persévérance (terre aride, projet agricole) : tableau de difficultés avec indices textuels, causes de réussite, titre, antonymes, explication en contexte, remise en ordre des événements puis résumé guidé par cet ordre.",
+    "themeGroup": "Compréhension de l'écrit"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "« [مع2ج (suite)] (suite d'une consigne de la page précédente) Compléter le tableau » est inventé : l'image ne contient aucune consigne de ce type, seulement un tableau avec les en--têtes الأرضُ / الماءُ / الناسُ et des pointillés."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le tableau est lu en RTL (الأرض, الماء, الناس), ce qui est correct. Mais la transcription ajoute « الأرْضُ : » avec deux-points dans les cellules, alors que ce ne sont que des en-têtes sans deux-points."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "En-têtes du tableau : « الْماءُ » et « النّاسُ » apparaissent avec un tashkeel différent de l'image (النَّاسُ avec fatha et shadda, الْمَاءُ avec fatha sur le mim/alif). L'« الأرْضُ » est bien vocalisé sans fatha sur le ر."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الصّعابِ » : l'image porte « الصِّعَابِ » avec shadda et kasra ; « لِنَجَاحِ » : l'image montre « لِنَجَاحِ » correct. « السبب الأوَّلُ » correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« اُلَخِّصُ » dans l'image est « أُلَخِّصُ » (hamza sur alif avec damma), et « عُنْوانًا » correct. « أرتِّبُ » est affiché « أَرَتِّبُ/أرتِّبُ » : à vérifier."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le mot « أَمْسَكَتْ عَلَى » est souligné dans l'image, et « لم يَأْبَهْ » aussi. Le soulignement n'est pas indiqué. Les cases de notation à droite ne sont pas mentionnées."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« والثِّقَةِ بالنَّفْسِ » : l'image affiche « والثَّقَةِ بالنَّفْسِ » (Ar. « الثَّقَةِ ») ; la transcription a une kasra sur le ث."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane « MOURAJAA.COM » et le texte filigrané arabe ne sont pas transcrits (acceptable)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le premier item porte le numéro « مع2ج (suite) » et une consigne « (suite d'une consigne de la page précédente) Compléter le tableau ». Rien de tel n'est imprimé sur l'image : le tableau (الأرضُ / الْماءُ / النَّاسُ) n'a ni numéro ni consigne visibles. Il faut laisser number et instruction vides."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans le corps du tableau, les en-têtes sont transcrits avec des deux-points (« الأرْضُ : ... »). L'image ne montre aucun deux-points : ce sont des en-têtes suivis de deux lignes de pointillés."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "L'en-tête « النّاسُ » est écrit « النَّاسُ » dans l'image, avec fatha sur la shadda."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases de notation à droite sont mentionnées dans figureDesc pour certains items seulement. Le soulignement de « أَمْسَكَتْ عَلَى » et de « لم يَأْبَهْ » est déjà indiqué dans figureDesc, donc ce point du contrôle rapide n'est pas une erreur."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "الأرْضُ | الْمَاءُ | النَّاسُ\n......... ......... | ......... ......... | ......... .........",
+      "figureDesc": "Tableau à trois colonnes (الأرضُ، الْمَاءُ، النَّاسُ), chacune avec deux lignes de pointillés à remplir ; cases de notation à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_6eme_corriges_p002_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2ج",
+      "instruction": "اُذْكُرْ قَرِينَةً عن كُلِّ صُعُوبَةٍ",
+      "body": "الأرْضُ :\" .........\nالماءُ :\" .........\nالنّاسُ :\" .........",
+      "figureDesc": "Trois lignes pointillées avec cases de notation à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_6eme_corriges_p002_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2أ",
+      "instruction": "اُذْكُرْ سَبَبَيْنِ لِنَجَاحِ مَشْرُوعِ سالِمٍ وقُدْرَتِهِ على تَجَاوُزِ الصّعابِ :",
+      "body": "السبب الأوَّلُ : .........\nالسّبَبُ الثّانِي: .........",
+      "figureDesc": "Lignes pointillées avec cases de notation.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_6eme_corriges_p002_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أسْنِدْ عُنْوانًا مناسِبًا لِلنَّصِّ :",
+      "body": ".........",
+      "figureDesc": "Ligne pointillée avec case de notation.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_6eme_corriges_p002_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2ب",
+      "instruction": "في النّصِّ مفردتانِ مُتَضادَّتانِ اِسْتَخْرِجْهُمَا :",
+      "body": "......... ≠ .........",
+      "figureDesc": "Ligne pointillée avec symbole ≠ et case de notation.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_6eme_corriges_p002_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اِشْرَحْ حسبَ السِّيَاقِ :",
+      "body": "لَكِنَّ السَّمَاءَ أَمْسَكَتْ عَلَى الأَمْطَارِ= .........\nلَكِنَّ سالِمًا لم يَأْبَهْ لِذلكَ : .........",
+      "figureDesc": "Les expressions « أَمْسَكَتْ عَلَى » et « لم يَأْبَهْ » sont soulignées ; cases de notation à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_6eme_corriges_p002_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2أ",
+      "instruction": "أرتِّبُ الأحْداثَ :",
+      "body": "☐ جَفَافُ الأرْضِ وَتَعَثُّرِ الْمَشْرُوعِ\n☐ إِنْهاءُ الدِّرَاسَةِ الْجامِعِيَّةِ والتَّخَرُّجُ .\n☐ نَجَاحُ سالِمٍ فِي إِحْيَاءِ الأَرْضِ .\n☐ الاقْتِرَاضُ مِنَ البَنْكِ لِحَفْرِ بِئْرٍ والتَّحلِّي بالصَّبْرِ والثِّقَةِ بالنَّفْسِ\n☐ التَّخْطيطُ والتَّنْفِيذُ لِخِدْمَةِ الأرْضِ .",
+      "figureDesc": "Cinq phrases, chacune accompagnée d'une case vide pour numéroter l'ordre ; cases de notation à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_6eme_corriges_p002_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع3",
+      "instruction": "اُلَخِّصُ النَّصَّ باعتماد الأحداث السّابقة :",
+      "body": ".........",
+      "figureDesc": "Ligne pointillée avec cases de notation.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examen_lecture_6eme_corriges_p002_i8"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "مع2ج (suite)",
+      "instruction": "(suite d'une consigne de la page précédente) Compléter le tableau : الأرضُ / الْماءُ / النّاسُ",
+      "body": "الأرْضُ : ......... ......... | الْماءُ : ......... ......... | النّاسُ : ......... .........",
+      "figureDesc": "Tableau à trois colonnes (الأرضُ، الْماءُ، النّاسُ), chacune avec deux lignes de pointillés à remplir ; cases de notation à droite.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examen_lecture_6eme_corriges_p002_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2ج",
+      "instruction": "اُذْكُرْ قَرِينَةً عن كُلِّ صُعُوبَةٍ",
+      "body": "الأرْضُ :\" .........\nالماءُ :\" .........\nالنّاسُ :\" .........",
+      "figureDesc": "Trois lignes pointillées avec cases de notation à droite.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examen_lecture_6eme_corriges_p002_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2أ",
+      "instruction": "اُذْكُرْ سَبَبَيْنِ لِنَجَاحِ مَشْرُوعِ سالِمٍ وقُدْرَتِهِ على تَجَاوُزِ الصّعابِ :",
+      "body": "السبب الأوَّلُ : .........\nالسّبَبُ الثّانِي: .........",
+      "figureDesc": "Lignes pointillées avec cases de notation.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examen_lecture_6eme_corriges_p002_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أسْنِدْ عُنْوانًا مناسِبًا لِلنَّصِّ :",
+      "body": "......................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examen_lecture_6eme_corriges_p002_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2ب",
+      "instruction": "في النّصِّ مفردتانِ مُتَضادَّتانِ اِسْتَخْرِجْهُمَا :",
+      "body": "......... ≠ .........",
+      "figureDesc": "Ligne pointillée avec symbole ≠ et case de notation.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examen_lecture_6eme_corriges_p002_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اِشْرَحْ حسبَ السِّيَاقِ :",
+      "body": "لَكِنَّ السَّمَاءَ أَمْسَكَتْ عَلَى الأَمْطَارِ= .........\nلَكِنَّ سالِمًا لم يَأْبَهْ لِذلكَ : .........",
+      "figureDesc": "Les expressions « أَمْسَكَتْ عَلَى » et « لم يَأْبَهْ » sont soulignées.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examen_lecture_6eme_corriges_p002_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع2أ",
+      "instruction": "أرتِّبُ الأحْداثَ :",
+      "body": "☐ جَفَافُ الأرْضِ وَتَعَثُّرِ الْمَشْرُوعِ\n☐ إِنْهاءُ الدِّرَاسَةِ الْجامِعِيَّةِ والتَّخَرُّجُ .\n☐ نَجَاحُ سالِمٍ فِي إِحْيَاءِ الأَرْضِ .\n☐ الاقْتِرَاضُ مِنَ البَنْكِ لِحَفْرِ بِئْرٍ والتَّحلِّي بالصَّبْرِ والثِّقَةِ بالنَّفْسِ\n☐ التَّخْطيطُ والتَّنْفِيذُ لِخِدْمَةِ الأرْضِ .",
+      "figureDesc": "Cinq phrases, chacune accompagnée d'une case vide pour numéroter l'ordre.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examen_lecture_6eme_corriges_p002_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع3",
+      "instruction": "اُلَخِّصُ النَّصَّ باعتماد الأحداث السّابقة :",
+      "body": "......................",
+      "figureDesc": "Ligne pointillée avec cases de notation.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examen_lecture_6eme_corriges_p002_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "unknown",
+  "bookTitle": "Examen de lecture 6ème année — Arabe (corrigé)"
+}

@@ -1,0 +1,108 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 41,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 10 – الامتحان الثلاثي الأول (2): الأعداد إلى 9999 (رقم العشرات والمئات)، ترتيب التواريخ، المسلك والأسهم، مسألة حول الأثمان بالمليم والدينار",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ابحث عن مجموعة الأعداد المتكوّنة من أربعة أرقام مجموعها 3.\nب) لوّن بالأزرق خانة الأعداد التي لها نفس رقم العشرات وبالأحمر خانة الأعداد التي لها نفس رقم المئات.",
+      "body": "جدول الأعداد: 5181 | 4500 | 758 (السطر الأول)؛ 3805 | 999 | 3333 (السطر الثاني)؛ 2721 | 9264 | 1001 (السطر الثالث)",
+      "figureDesc": "جدول من 3 أسطر و3 أعمدة يحتوي على الأعداد: 758، 4500، 5181 / 3333، 999، 3805 / 1001، 9264، 2721",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p041_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "رتّب أسماء الأطفال حسب سنّهم من الأصغر إلى الأكبر.",
+      "body": "هذه تواريخ ولادة بعض الأطفال. الاسم / تاريخ الولادة: سلمى 80-8-20؛ آمنة 79-4-17؛ نادية 80-3-20؛ رياض 81-4-7؛ أشرف 79-1-1؛ ألفة 81-9-3؛ عمر 80-6-12",
+      "figureDesc": "جدول من سطرين: الأسماء (سلمى، آمنة، نادية، رياض، أشرف، ألفة، عمر) وتواريخ الولادة المقابلة لها",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p041_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم مسلكا ينطلق من العقدة \"أ\" ومعبّرا عنه بالأسهم التّالية :",
+      "body": "→3 ، ↑2 ، ←2 ، ↑1 ، →3 ، ↓3 (من اليمين إلى اليسار في الجدول كما هو مكتوب: 3→ ، 2↑ ، 2← ، 1↑ ، 3→ ، 3↓)",
+      "figureDesc": "شبكة مربعات (7 أعمدة × 5 أسطر تقريبا) تحتوي على النقطة (العقدة) \"أ\" في أسفلها، وجدول أسهم تحدد الاتجاهات وعدد الخطوات",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p041_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) ما هو ثمن مجموعة القصص؟\nب) ما هو ثمن المشتريات؟\nج) كم كان يملك إذ أنّه لاحظ أنّه ينقصه نصف دينار لشراء تبّان لابنه بـ 2400 مي؟",
+      "body": "شرى جارنا لابنه قاموسًا بـ 6800 مي ومجموعة من القصص يقلّ ثمنها عن ثمن القاموس بـ 1700 مي.\nثُمّ شرى حذاء رياضة لابنته يزيد عن ثمن القاموس بـ 5 دنانير.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p041_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.21
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation du premier trimestre (الامتحان الثلاثي الأول) qui mélange plusieurs notions : nombres à 4 chiffres, ordre de dates, parcours fléchés et problème de monnaie. Elle ne correspond donc à aucun chapitre unique, et les nombres à 4 chiffres ne figurent pas non plus dans les chapitres officiels (5 et 6 chiffres).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    118
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision nombres à 4 chiffres et problèmes",
+    "skill": "Reconnaître les chiffres des dizaines et des centaines, ordonner des dates, coder un trajet par flèches et résoudre un problème sur des prix en millimes et dinars.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres jusqu'à 9999",
+      "chiffre des dizaines et des centaines",
+      "ordre chronologique des dates",
+      "chemin et flèches",
+      "prix en millimes et dinars"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisables : le coloriage d'une grille de nombres selon un critère de chiffre, le classement d'enfants par date de naissance, le tracé d'un parcours codé par flèches et le problème d'achats à prix comparés (millimes/dinars) avec une question sur la somme manquante.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

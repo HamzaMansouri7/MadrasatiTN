@@ -1,0 +1,78 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 71,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Les gladiateurs (2)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Les gladiateurs (2). Le texte décrit le spectacle de l'arène : il s'ouvre sur une grande parade où défilent taureaux, pugilistes, clowns, gladiateurs et lutteurs, tandis que le public acclame ses champions favoris. Viennent ensuite les combats de gladiateurs, par couple, chacun ayant un armement différent (à pied, à cheval ou en char), avec des armes et protections variées (glaive, casque, bouclier, trident, filet, armure...). À la fin du combat, le vainqueur peut tuer son adversaire ou lui faire grâce, selon l'attitude du public (pouce levé : le vaincu est épargné ; pouce vers le sol : il est mis à mort). Le spectacle se poursuit avec des combats d'animaux sauvages (lions, tigres, ours, sangliers) entre eux ou contre des hommes. Le texte se termine par le commentaire « Drôle d'époque ! ». Source : d'après Christian Lamblin.",
+      "figureDesc": "Texte encadré avec un bandeau nuage 'Lecture - Compréhension'. En-tête 'Sagesse' et '6ème année de base'. Pied de page : 'Lire et s'exprimer', page 70.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p071_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Par quoi commence le spectacle ?",
+      "body": "B) Compréhension : 1) Par quoi commence le spectacle ? Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "Deux lignes de points à compléter",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p071_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.49
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension en français sur « Les gladiateurs (2) », un texte documentaire sur le spectacle de l'arène, qui ne correspond clairement à aucun des 8 modules (travail, médias, tolérance, entraide, nature, santé, loisirs, autres modes de vie) ; le module 8 (découvrir d'autres modes de vie) reste possible mais incertain.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Les gladiateurs : spectacle de l'arène",
+    "skill": "Comprendre un texte documentaire en repérant les informations clés et répondre par écrit à une question de compréhension.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "gladiateurs",
+      "arène",
+      "lecture",
+      "compréhension",
+      "Rome antique",
+      "spectacle"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Structure classique « texte suivi de questions de repérage » avec réponse sur lignes pointillées, transposable à d'autres textes documentaires sur l'Antiquité ou les spectacles, mais la page contient peu de matière originale.",
+    "themeGroup": "Textes documentaires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

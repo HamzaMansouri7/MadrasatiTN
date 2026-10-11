@@ -1,0 +1,90 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 17,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "القسمة الإقليدية على عدد ذي رقمين (33، 66، 99) والتصرف في وحدات قيس الكتل (القنطار والطن)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أحسب",
+      "body": "ثلاث قسمات إقليدية مقدمة في الشكل المائل: 1452 ÷ 33 ، 3102 ÷ 66 ، 7326 ÷ 99",
+      "figureDesc": "ثلاثة جداول قسمة فارغة، في كل منها المقسوم والمقسوم عليه (1452 | 33، 3102 | 66، 7326 | 99) وخط عمودي طويل أسفلها لإنجاز العمليات.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p017_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أتصرف في وحدات قيس الكتل القنطار و الطن",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p017_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أوجد العدد المناسب",
+      "body": "... طن ... كغ\n... ق و ... طن ... كغ\n... كغ ... طن ... كغ",
+      "figureDesc": "ثلاثة أسطر بها فراغات لإتمامها بالأعداد المناسبة بين وحدات الطن والقنطار والكيلوغرام.",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p017_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.96,
+  "topicIdPrev": "math-5-p4",
+  "topicConfidencePrev": 0.6428571428571429,
+  "topicPrevAuto": {
+    "topicId": "math-5-p4",
+    "confidence": 0.99
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des divisions euclidiennes par un diviseur à deux chiffres (33, 66, 99) et des conversions d'unités de masse (quintal, tonne, kg), ce qui correspond exactement à la Période 4.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division euclidienne et unités de masse",
+    "skill": "Effectuer des divisions euclidiennes par 33, 66 et 99 et convertir entre kilogrammes, quintaux et tonnes.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "division euclidienne",
+      "diviseur à deux chiffres",
+      "quintal",
+      "tonne",
+      "kilogramme",
+      "conversion"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les diviseurs multiples de 33 (33, 66, 99) permettent de repérer des régularités dans les quotients. Les conversions à compléter entre kg, quintaux et tonnes peuvent être reprises dans des situations de pesée concrètes (récoltes, camions, marchandises).",
+    "themeGroup": "Division euclidienne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

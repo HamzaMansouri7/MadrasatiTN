@@ -1,0 +1,200 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 12,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Problème de concours : aire et périmètre d'une figure composée (demi-disque, triangle, trapèze), pourcentage et prix du mètre de grillage",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أحسب قيس مساحة الأرض الجملية إذا علمت أن قيس مساحة القطعة 3 تمثل 32 % قيس مساحة القطعة 2.",
+      "body": "",
+      "figureDesc": "La figure de l'énoncé n'apparaît pas sur cette page. Filigrane bleu arabe en travers de la page.",
+      "answer": "قيس م هـ : ( 213.52 × 2 ) : 3.14 = 136 م\nقيس أ م : 136 : 2 = 68 م\nقيس مساحة القطعة ( 3 ) : ( 68 × 51 ) : 2 = 1734 م²\nقيس مساحة القطعة ( 2 ) : ( 1734 : 32 ) × 100 = 5418.75 م²\nقيس مساحة القطعة ( 1 ) : ( 68 × 68 × 3.14 ) : 2 = 7259.68 م²\nالمساحة الجملية : 1734 + 5418.75 + 7259.68 = 14412.43 م²",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "concours_mathematiques_corriges_p012_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب ثمن شراء المتر الواحد من الأسلاك.",
+      "body": "بعد ترك مدخل عرضه 4 م أحاط كامل أرضه بسياج من الأسلاك الشائكة بلغت مصاريف اليد العاملة 1176.048 د و هو ما يمثل 20% ثمن شراء الأسلاك.",
+      "figureDesc": "",
+      "answer": "قيس د ج : 5418.75 : 51 = 106.25 م\nقيس م د : ( 1734 × 2 ) : 40.8 = 85 م\nالمحيط : 106.25 + 85 + 213.52 + ( 106.25 – 68 ) + 51 = 494.02 م\nطول السياج : 494.02 – 4 = 490.02 م\nثمن شراء الأسلاك : 1176.048 × 5 = 5880.24 د\nثمن المتر الواحد : 4880.24 : 490.02 = 12 د",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "concours_mathematiques_corriges_p012_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit d'un problème de concours à plusieurs étapes (aire d'une figure composée, pourcentages, périmètre, prix du grillage) qui relève de la synthèse et de la résolution de situations-problèmes préparant au concours des collèges pilotes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    9,
+    10
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Aire et périmètre de figures composées",
+    "skill": "Calculer l'aire et le périmètre d'une figure composée (demi-disque, triangle, trapèze), puis utiliser un pourcentage pour trouver un prix unitaire.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "aire",
+      "périmètre",
+      "figure composée",
+      "pourcentage",
+      "demi-disque",
+      "grillage"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation réaliste d'un terrain divisé en parcelles à clôturer avec un grillage, combinant aire, périmètre (avec une entrée à déduire), pourcentage de main-d'œuvre et prix au mètre, réutilisable pour des problèmes de concours en plusieurs étapes.",
+    "pageType_note": null,
+    "themeGroup": "Périmètres et aires"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le premier énoncé est dupliqué dans la transcription ('أحسب قيس مساحة الأرض الجملية...' apparaît deux fois), alors qu'il n'y en a qu'un seul dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les étiquettes 'réponse:' sont ajoutées et n'existent pas dans l'image."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Dans l'image, le texte de l'exercice 2 (énoncé 'بعد ترك مدخل...') précède la question '2/ أحسب ثمن...'. La transcription inverse cet ordre."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "'ثمن المتر الواحد : 490.02 : 4880.24 = 12 د' : l'image indique 4880.24 : 490.02 (dividende et diviseur inversés). Par ailleurs 'ثمن شراء الأسلاك : 5880.24' est présent dans l'image, d'où une incohérence interne déjà présente dans la source."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Numéros '1/' et '2/' transcrits '[1]' et '[2]' au lieu de '1/' et '2/'."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel visible dans l'image (ex. شدّة sur 'الجملية', 'تمثّل', 'الجملِيّة') n'est pas restitué ; par exemple 'المساحة الجملية' porte un signe dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'قيس د ج' et 'قيس م د' : le contenu correspond à l'image, mais 'قيس م هـ' est un peu ambigu (lettre 'هـ')."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête partiellement visible en haut de page ('مناظرة ع 3 دد' répété) et le numéro de page '5' ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane (nom 'وليد') n'est pas mentionné."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Dernière ligne : l'image indique « ثمن المتر الواحد : 4880.24 : 490.02 = 12 د » (dividende 4880.24, diviseur 490.02). La transcription avait inversé l'ordre en « 490.02 : 4880.24 ». Le chiffre 4880.24, incohérent avec 5880.24 de la ligne précédente, est bien présent dans l'image et doit être conservé tel quel."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "L'énoncé de l'exercice 1 est recopié deux fois, dans « instruction » et dans « body », alors qu'il n'apparaît qu'une fois dans l'image. Le champ « body » est donc vidé."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أحسب قيس مساحة الأرض الجملية إذا علمت أن قيس مساحة القطعة 3 تمثل 32 % قيس مساحة القطعة 2.",
+      "body": "",
+      "figureDesc": "La figure de l'énoncé n'apparaît pas sur cette page. Filigrane bleu arabe en travers de la page.",
+      "answer": "قيس م هـ : ( 213.52 × 2 ) : 3.14 = 136 م\nقيس أ م : 136 : 2 = 68 م\nقيس مساحة القطعة ( 3 ) : ( 68 × 51 ) : 2 = 1734 م²\nقيس مساحة القطعة ( 2 ) : ( 1734 : 32 ) × 100 = 5418.75 م²\nقيس مساحة القطعة ( 1 ) : ( 68 × 68 × 3.14 ) : 2 = 7259.68 م²\nالمساحة الجملية : 1734 + 5418.75 + 7259.68 = 14412.43 م²",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "concours_math_6eme_corriges_p012_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب ثمن شراء المتر الواحد من الأسلاك.",
+      "body": "بعد ترك مدخل عرضه 4 م أحاط كامل أرضه بسياج من الأسلاك الشائكة بلغت مصاريف اليد العاملة 1176.048 د و هو ما يمثل 20% ثمن شراء الأسلاك.",
+      "figureDesc": "",
+      "answer": "قيس د ج : 5418.75 : 51 = 106.25 م\nقيس م د : ( 1734 × 2 ) : 40.8 = 85 م\nالمحيط : 106.25 + 85 + 213.52 + ( 106.25 – 68 ) + 51 = 494.02 م\nطول السياج : 494.02 – 4 = 490.02 م\nثمن شراء الأسلاك : 1176.048 × 5 = 5880.24 د\nثمن المتر الواحد : 4880.24 : 490.02 = 12 د",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "concours_math_6eme_corriges_p012_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أحسب قيس مساحة الأرض الجملية إذا علمت أن قيس مساحة القطعة 3 تمثل 32 % قيس مساحة القطعة 2.",
+      "body": "أحسب قيس مساحة الأرض الجملية إذا علمت أن قيس مساحة القطعة 3 تمثل 32 % قيس مساحة القطعة 2.",
+      "figureDesc": "La figure de l'énoncé n'apparaît pas sur cette page (elle figure probablement sur la page précédente). Filigrane bleu arabe en travers de la page.",
+      "answer": "قيس م هـ : ( 213.52 × 2 ) : 3.14 = 136 م\nقيس أ م : 136 : 2 = 68 م\nقيس مساحة القطعة ( 3 ) : ( 68 × 51 ) : 2 = 1734 م²\nقيس مساحة القطعة ( 2 ) : ( 1734 : 32 ) × 100 = 5418.75 م²\nقيس مساحة القطعة ( 1 ) : ( 68 × 68 × 3.14 ) : 2 = 7259.68 م²\nالمساحة الجملية : 1734 + 5418.75 + 7259.68 = 14412.43 م²",
+      "confidence": 0.9,
+      "id": "concours_math_6eme_corriges_p012_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب ثمن شراء المتر الواحد من الأسلاك.",
+      "body": "بعد ترك مدخل عرضه 4 م أحاط كامل أرضه بسياج من الأسلاك الشائكة بلغت مصاريف اليد العاملة 1176.048 د و هو ما يمثل 20% ثمن شراء الأسلاك.",
+      "figureDesc": "",
+      "answer": "قيس د ج : 5418.75 : 51 = 106.25 م\nقيس م د : ( 1734 × 2 ) : 40.8 = 85 م\nالمحيط : 106.25 + 85 + 213.52 + ( 106.25 – 68 ) + 51 = 494.02 م\nطول السياج : 494.02 – 4 = 490.02 م\nثمن شراء الأسلاك : 1176.048 × 5 = 5880.24 د\nثمن المتر الواحد : 490.02 : 4880.24 = 12 د",
+      "confidence": 0.85,
+      "id": "concours_math_6eme_corriges_p012_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

@@ -1,0 +1,188 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 44,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الهمزة المتطرفة المسبوقة بضمة أو بكسرة (رسم الهمزة المتطرفة) - Cahier d'orthographe arabe",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "وزع الألفاظ التالية في الجدول المصاحب",
+      "body": "يجرؤ  تباطؤ  التبرؤ  التهيؤ  تكافؤ  تواطؤ  بؤبؤ",
+      "figureDesc": "جدول بعنوان «همزة متطرفة مسبوقة بضمة وحركتها» وثلاثة أعمدة: الفتحة، الضمة، الكسرة؛ الخانات فارغة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p044_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "صغ أسماء على وزن تفعل من الأفعال التالية",
+      "body": "تجرأ  تنبأ  تلكأ  تقيأ  توضأ",
+      "figureDesc": "جدول من خمسة أعمدة تحمل الأفعال: تجرأ، تنبأ، تلكأ، تقيأ، توضأ؛ والخانات السفلى فارغة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p044_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارسم مكان الفراغ الهمزة المناسبة",
+      "body": "التكاف.... شرط من شروط المبارزة\nعليك تحاشي التلك.... للتحصل على عدد جيد في المحفوظات\nأفضال أمي علي تجعلني أضعها في بؤب.... العين",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p044_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "نص للإملاء",
+      "body": "توضأ أبي عند عودته من العمل وتهيأ للصلاة فوقف أمامه أخي الصغير محمرَّ الوجه مرتجفا فسأله ما بك بني ؟ من أغضبك؟ تلكأ في الكلام وقال بصوت مرتعش تكسرت لعبتي يا ابي فهل ستشتري لي لعبة أخرى ؟ ابتسم ولم يجبه فعرف أنه سيعوضها له بلعبة أحسن منها ، وهل يجرؤ على رفض طلب الابن المدلل فهو بمثابة بؤبؤ العين",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p044_i4",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "رسم الهمزة المتطرفة المسبوقة بكسرة قصيرة",
+      "body": "تكتب الهمزة المتطرفة المسبوقة بكسرة على الياء",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p044_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التمارين",
+      "body": "عنوان قسم تمارين جديد؛ لا تظهر التمارين في أسفل الصفحة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "grammaire_arabe_cahier_regles_p044_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u1",
+    "confidence": 0.15
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un cahier d'orthographe arabe sur la hamza finale (précédée d'une damma ou d'une kasra), qui relève de l'orthographe et non d'une unité narrative précise ; aucun des chapitres officiels (narration, description, dialogue, etc.) ne lui correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Orthographe de la hamza finale",
+    "skill": "Choisir le support correct (waw, yā' ou alif) de la hamza finale précédée d'une damma ou d'une kasra, et l'appliquer en dictée.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "dictee",
+      "autre"
+    ],
+    "keywords": [
+      "hamza finale",
+      "orthographe arabe",
+      "damma",
+      "kasra",
+      "dictée",
+      "dérivation de noms"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable: classement de mots dans un tableau selon le support de la hamza, dérivation de noms à partir de verbes, phrases à compléter par la hamza, puis dictée contextualisée (scène familiale père-enfant) qui réunit les cas étudiés.",
+    "themeGroup": "Orthographe de la hamza"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres «التمارين» (en haut de page) et «التمرين الأول/الثاني/الثالث/الرابع» ne sont pas transcrits ; seul le dernier «التمارين» apparaît, comme entrée séparée."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête du tableau de l'exercice 1 est absent : «همزة متطرفة مسبوقة بضمة وحركتها» avec les colonnes «الفتحة / الضمة / الكسرة»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : les mots portent des signes visibles dans l'image (يجرؤ، تباطؤ، التبرؤ، التهيؤ، تكافؤ، تواطؤ، بؤبؤ), tandis que d'autres éléments vocaliques sont omis dans la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3 : «للتحصل» devrait être «للحصول» (image : «للحصول على عدد جيد»)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3 : «أفضال أمي علي تجعلني» devrait être «أفضل أمي علي أن تجعلني» ou, selon l'image, «أفضال أمي علي تجعلني» ; vérifier ce passage."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : «التلك....» et «التكاف....» : le texte image présente «التكاف ـ» avec un tiret/espace de remplissage et non des points."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : «محمرَّ» comporte une shadda/fatha inventée ; l'image montre «محمر» sans voyelles."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : «توضأ أبي» devrait être «توضأ أبي» sans espace erroné ; «ابي» est écrit comme dans l'image, mais «فسأله ما بك بني» est correct."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les champs «réponse: None» et la note «لا تظهر التمارين في أسفل الصفحة» sont ajoutés ; le titre «التمارين» est bien visible en bas de page."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La transcription ne présente pas les titres d'exercice dans l'ordre de la page et fusionne les consignes avec le contenu."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

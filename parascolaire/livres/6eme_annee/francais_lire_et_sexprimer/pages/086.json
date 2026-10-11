@@ -1,0 +1,65 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 86,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Évaluation n°1 : lecture du texte « Le tablier de Marie » (Colette Vivier, La maison des petits bonheurs)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Le tablier de Marie\nMarie est une enfant malheureuse. Un jour, elle vient à l'école avec un tablier trop petit et dont elle a honte. Aline et plusieurs de ses camarades décident de lui acheter un beau tablier. Pour le lui faire accepter, elles organisent une loterie et s'arrangent pour que Marie gagne le tablier neuf.\n- Le numéro 19 !\n- 19 ? C'est le mien ! dit Marie avec difficulté.\nElle est si troublée qu'elle reste clouée dans son coin. Je lui tends le paquet.\n- Ouvre-le, ouvre-le !\nElle l'ouvre. Ah ! Je n'oublierai jamais son visage. Il est devenu clair tout d'un coup et ses lèvres tremblaient...\nAprès avoir longuement contemplé le tablier, Marie s'est mise à le caresser d'un doigt timide comme pour s'assurer qu'il était bien vrai.\n- Ça te fait plaisir ? lui a demandé Violette.\nElle a voulu répondre, mais on voyait qu'elle n'osait pas de peur de pleurer, et elle a fait seulement « oui » avec sa tête.\nEt nous l'avons aidée joyeusement à retirer le tablier jaune pour mettre le neuf. Et Jacqueline lui prêtait sa glace de poche pour qu'elle s'admire, et Violette attachait les boutons.\nMarie se laissait faire, avec un petit sourire heureux.\nEn rentrant en classe, elle a trottiné derrière moi et m'a retenue par la manche :\n« Aline, j'ai compris, tu sais... et tu as fait ça exprès... vraiment... pour me faire plaisir, à moi ?\n- Oui, pour te faire plaisir, à toi !\n- Ah!... »\nColette Vivier (La maison des petits bonheurs)",
+      "figureDesc": "Page d'évaluation avec en-tête « Les évaluations », bandeaux « Sagesse » et « 6ème année de base », étiquette « Évaluation n°1 », texte encadré. Pied de page : « Lire et s'exprimer », page 85. Les questions de la page sont en transparence (verso), non lisibles.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p086_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.16
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de lecture (texte « Le tablier de Marie ») sur la solidarité entre camarades, mais elle ne correspond pas clairement à un seul module : le thème évoque les modules 3 ou 4, sans certitude, et c'est une page d'évaluation générale.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Lire un récit et en comprendre la situation, les personnages et les sentiments pour répondre à des questions de compréhension.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "texte narratif",
+      "compréhension",
+      "évaluation",
+      "solidarité",
+      "personnages"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation réutilisable : un enfant en difficulté est aidé par ses camarades, avec un geste de solidarité organisé avec tact pour préserver sa dignité. Elle peut servir de support à des questions sur les personnages, les sentiments et les valeurs, ou à une production écrite sur l'entraide.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

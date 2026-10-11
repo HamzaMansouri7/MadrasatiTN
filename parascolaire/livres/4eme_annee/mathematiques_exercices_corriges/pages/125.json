@@ -1,0 +1,731 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 125,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigés des examens : الاختبار التقويمي (ص 65) والامتحان الثلاثي الثاني 1 و2 و3 (ص 66-68) – السنة الرابعة",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الاختبار التقويمي (الصفحة 65) – السنة الرابعة – التمرين 1",
+      "body": "أ) (1 + 10) × (100 - 1000) ؛ ب) عدد نبضات قلبه",
+      "figureDesc": "",
+      "answer": "أ) 9 900 = (1 + 10) × (100 - 1 000) ؛ ب) 1080 = 15 × 72",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الاختبار التقويمي (الصفحة 65) – التمرين 2: أ) مضاعفات 5 و7 ؛ ب) العدد",
+      "body": "أ) مضاعفات (5) و مضاعفات (7) ؛ عمرها ؛ ب) العدد",
+      "figureDesc": "",
+      "answer": "مضاعفات (5): { 0 - 5 - 10 - 15 - 20 - 25 ...} ؛ مضاعفات (7): { 0 - 7 - 14 - 20 - 28 ...} ؛ عمرها: 20 سنة ؛ ب) العدد: 48",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الاختبار التقويمي (الصفحة 65) – التمرين 4",
+      "body": "ثمن شراء البرتقال بالمي، ثمن كلفة البرتقال بالمي، ثمن بيع البرتقال في المرة الأولى بالمي، كتلة البرتقال المبيعة في المرة الثانية بالكغ، ثمن بيع البرتقال في المرة الثانية بالمي، قبض في الجملة بالمي، المقدار المالي الذي وفّره بالمي",
+      "figureDesc": "",
+      "answer": "ثمن الشراء: 105 000 = 300 × 350 ؛ الكلفة: 110 100 = 3 000 + 2 100 + 105 000 ؛ البيع الأول: 84 000 = 200 × 420 ؛ الكتلة: 95 = (5 + 200) - 300 ؛ البيع الثاني: 38 000 = 95 × 400 ؛ قبض في الجملة: 122 000 = 38 000 + 84 000 ؛ المقدار الذي وفّره: 11 900 = 110 100 - 122 000",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الامتحان الثلاثي الثاني (1) (الصفحة 66) – التمرين 1: أ) ... ب) العلامة (=)",
+      "body": "أ) 7 666 ، 1 888 ، 4 777 ؛ ب) العلامة (=)",
+      "figureDesc": "ثلاثة مربعات تحتوي الأعداد 7666 و1888 و4777",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(أ) أخف من (ط) وأثقل من (هـ)",
+      "body": "(ط) > (أ) > (هـ)",
+      "figureDesc": "",
+      "answer": "(ط) > (أ) > (هـ)",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "الرسم :",
+      "body": "",
+      "figureDesc": "شبه منحرف قائم مرسوم برأسين قائمين على اليسار",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "المبلغ المدّخر بالد ؛ ينقصها بالد ؛ ثمن شراء الآلة المستعملة بالمي",
+      "body": "جدول: المبلغ المدخر: 20 - 40 - 60 - 80 - 100 - 120 - 140 ؛ عدد الأسابيع: 1 - 2 - 3 - 4 - 5 - 6 - 7",
+      "figureDesc": "جدول من سطرين، العدد 5 محاط بدائرة",
+      "answer": "المبلغ المدخر: 480 = 24 × 20 ؛ ينقصها: 100 = 480 - 580 ؛ ثمن الآلة: 400 500 = (44 000 + 35 500) - 480 000",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الامتحان الثلاثي الثاني (2) (الصفحة 67) – التمرين 1: أ) عمليات طرح ؛ ج) 1098",
+      "body": "أ) 40 000 - 8 625 ؛ 79 327 - 18 973 ؛ 23 812 - 15 257 ؛ ج) 9 × 122",
+      "figureDesc": "ثلاث عمليات طرح موضوعة عموديا",
+      "answer": "31 375 ؛ 60 354 ؛ 08 555 ؛ ج) 1098 = 9 × 122 = 9 × (50 + 72) ؛ 1098 = 450 + 648 = (9 × 50) + (9 × 72)",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "بقي في البرميل باللتر :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "292 = (508 + 150) - 950",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i9"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "",
+      "body": "زوايا ج، هـ، و، ب",
+      "figureDesc": "رسم زوايا بالرؤوس ج و هـ و و و ب مع تظليل",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن كلفة الصابون المصنوع بالمي ؛ ثمن الصابون عند شرائه من السوق بالمي ؛ مقدار الربح من هذه العملية بالمي",
+      "body": "",
+      "figureDesc": "",
+      "answer": "10 000 = 2 500 + (2 × 175) + (3 × 850) + 4 600 ؛ 14 000 = 20 × 700 ؛ الربح: 4 000 = 10 000 - 14 000",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الامتحان الثلاثي الثاني (3) (الصفحة 68) – التمرين 1",
+      "body": "أ) 9 998 ، 10 001 ؛ ب) (9 - 27) × 5 ؛ ج) 44 × 8 ؛ 5 215 + 9 613 + 5 172 ؛ 19 600 - 8 451",
+      "figureDesc": "عمليات ضرب وجمع وطرح عمودية",
+      "answer": "ب) 90 = (11 + 7) × 5 = (9 - 27) × 5 = 18 × 5 ؛ ج) 352 ؛ 20 000 ؛ 11 149",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "مجموع القطع بالمي ؛ مجموع الأوراق بالمي ؛ مجموع المبلغ المكوّن بالمي",
+      "body": "(1 + 2 + 5) + (10 + 20 + 50) + (100 + 500 + 1000)",
+      "figureDesc": "",
+      "answer": "1 688 = 1 600 + 80 + 8 ؛ الأوراق: 30 000 + 5 000 + 10 000 + 20 000 ؛ المجموع: 66 688 = 1 688 + 65 000",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "الزاوية (أ) ، الزاوية (ب) ، الزاوية (د)",
+      "body": "",
+      "figureDesc": "",
+      "answer": "الزاوية (أ) : منفرجة ، الزاوية (ب) : قائمة ، الزاوية (د) : حادّة",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i14"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن المشتريات بالمي ؛ ثمن الكؤوس بالمي ؛ ثمن الصحون بالمي ؛ ثمن الملاعق بالمي ؛ ثمن الورق بالمي",
+      "body": "",
+      "figureDesc": "",
+      "answer": "المشتريات: 11 230 = 1 230 + (2 × 5 000) ؛ الكؤوس: 2 370 = 6 × 395 ؛ الصحون: 5 640 = 8 × 705 ؛ الملاعق: 1 000 = 4 × 250 ؛ الورق: 2 220 = (1 000 + 5 640 + 2 370) - 11 230",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p125_i15"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.26
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page présente les corrigés d'un test d'évaluation et d'examens du deuxième trimestre en mathématiques (nombres, soustractions, comparaison de masses, tableaux, problèmes). Elle couvre plusieurs chapitres, donc aucun chapitre unique ne correspond.",
+  "linkFlags": [
+    "low_ocr_confidence",
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    70,
+    71,
+    72
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Corrigés d'examens de mathématiques 4ème année",
+    "skill": "Résoudre des problèmes et effectuer des opérations sur les entiers (multiples, soustraction, comparaison, tableau de proportionnalité, angles).",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "corrigé",
+      "examen trimestriel",
+      "opérations sur les entiers",
+      "multiples",
+      "problèmes",
+      "angles"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations de problèmes réutilisables : achat et revente d'oranges avec calcul du bénéfice, épargne hebdomadaire présentée dans un tableau pour acheter une machine d'occasion, comparaison de masses, et reste de liquide dans un baril. Ce sont des corrigés abrégés, donc peu d'énoncés complets.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.2 p.67 : la transcription donne 292 = (508 + 150) - 950, alors que l'image montre 950 - (508 + 150) = 292"
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.4 p.65 : la transcription donne 11 900 = 110 100 - 122 000, mais l'image montre 122 000 - 110 100 = 11 900 (l'ordre est inversé, comme pour 4 000 = 10 000 - 14 000 où l'image indique 14 000 - 10 000)"
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.4 p.67 : la transcription donne 4 000 = 10 000 - 14 000, mais l'image montre 14 000 - 10 000 = 4 000"
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.4 p.66 : la transcription donne 100 = 480 - 580, mais l'image montre 580 - 480 = 100"
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.4 p.66 : la transcription donne 400 500 = (44 000 + 35 500) - 480 000, mais l'image montre 480 000 - (44 000 + 35 500) = 400 500"
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.4 p.68 : la transcription donne 2 220 = (1 000 + 5 640 + 2 370) - 11 230, mais l'image montre 11 230 - (1 000 + 5 640 + 2 370) = 2 220"
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.4 p.65 : la transcription donne 95 = (5 + 200) - 300, mais l'image montre 300 - (200 + 5) = 95"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.4 p.65 : les nombres de la transcription sont inversés (« 105 000 = 300 × 350 » est correct), mais le coût s'écrit 110 100 = 3 000 + 2 100 + 105 000 ; cela est correct"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.2 p.68 : la transcription donne (1 + 2 + 5) + (10 + 20 + 50) + (100 + 500 + 1000), mais l'image montre (1 + 2 + 5) + (10 + 20 + 50) + (100 + 500 + 1000) avec un ordre inversé : 1000+500+100, 50+20+10, 5+2+1"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.2 p.68 : l'image indique 30 000 + 5 000 + 10 000 + 20 000 pour les billets, avec des ratures"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.1 p.67 : l'ordre des soustractions est inversé dans l'image (23 812 - 15 257 = 08 555, etc.)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel n'est présent que dans la réponse de l'ex.3 p.68, alors que l'image montre des voyelles partielles ailleurs (ex. المشتريات, الصّابون)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« ثمن كلفة الصابون » : l'image porte « الصّابون » avec chadda ; « الدّ » (بالد) correct"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Ex.3 p.65 et ex.3 p.67 : le contenu du dessin (angles ج، هـ، و، ب) est décrit comme « زوايا » et le texte de l'énoncé de l'ex.3 p.65 est absent ; l'ex.3 p.65 (non mentionné) manque dans la transcription"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ex.2 p.65 : « مضاعفات 5 و7 » et « ب) العدد » sont des reconstitutions d'énoncé non visibles dans l'image"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.95,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelles inventées",
+        "severity": "minor",
+        "detail": "Ex.3 p.68 : la transcription ajoute des voyelles complètes (الزَّاوِيَةُ، مُنْفَرِجَةٌ، قَائِمَةٌ…) qui n'apparaissent pas dans l'image. Seule la chadda de « حادّة » est visible. Le texte imprimé est : « الزاوية (أ) : منفرجة ، الزاوية (ب) : قائمة ، الزاوية (د) : حادّة »."
+      },
+      {
+        "type": "texte ajouté",
+        "severity": "minor",
+        "detail": "Ex.4 p.66 : la mention « (5 أسابيع) » après « 100 = 480 - 580 » n'est pas dans l'image. On y voit seulement le chiffre 5 entouré dans le tableau."
+      },
+      {
+        "type": "texte ajouté",
+        "severity": "minor",
+        "detail": "Ex.2 p.68 : la ligne « مجموع الأوراق بالمي » n'est pas écrite dans l'image sous la forme « 65 000 = … ». On y lit « 30 000 + 5 000 + 10 000 + 20 000 », avec le premier chiffre surchargé, et le total 65 000 n'apparaît qu'à la ligne suivante, dans « 66 688 = 1 688 + 65 000 »."
+      },
+      {
+        "type": "texte inventé",
+        "severity": "minor",
+        "detail": "Ex.2 p.67 : le champ body « 950 - (508 + 150) » n'est pas imprimé tel quel dans l'image. L'image montre uniquement la ligne de réponse « 292 = (508 + 150) - 950 », dans cet ordre visuel. Ce body est une reconstruction et est incohérent avec le champ answer."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les inversions signalées par le contrôle rapide (Ex.2 p.67, Ex.4 p.65, p.66, p.67, p.68) ne sont pas confirmées. L'image montre, dans l'ordre visuel gauche→droite, exactement « 292 = (508 + 150) - 950 », « 11 900 = 110 100 - 122 000 », « 4 000 = 10 000 - 14 000 », « 100 = 480 - 580 », « 400 500 = (44 000 + 35 500) - 480 000 », « 2 220 = (1 000 + 5 640 + 2 370) - 11 230 » et « 95 = (5 + 200) - 300 ». La transcription les recopie fidèlement et je les ai laissées telles quelles. La seule incohérence est de convention : les suites de multiples sont données dans l'ordre logique (0, 5, 10…) alors que les égalités gardent l'ordre visuel."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الاختبار التقويمي (الصفحة 65) – السنة الرابعة – التمرين 1",
+      "body": "أ) (1 + 10) × (100 - 1000) ؛ ب) عدد نبضات قلبه",
+      "figureDesc": "",
+      "answer": "أ) 9 900 = (1 + 10) × (100 - 1 000) ؛ ب) 1080 = 15 × 72",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الاختبار التقويمي (الصفحة 65) – التمرين 2: أ) مضاعفات 5 و7 ؛ ب) العدد",
+      "body": "أ) مضاعفات (5) و مضاعفات (7) ؛ عمرها ؛ ب) العدد",
+      "figureDesc": "",
+      "answer": "مضاعفات (5): { 0 - 5 - 10 - 15 - 20 - 25 ...} ؛ مضاعفات (7): { 0 - 7 - 14 - 20 - 28 ...} ؛ عمرها: 20 سنة ؛ ب) العدد: 48",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الاختبار التقويمي (الصفحة 65) – التمرين 4",
+      "body": "ثمن شراء البرتقال بالمي، ثمن كلفة البرتقال بالمي، ثمن بيع البرتقال في المرة الأولى بالمي، كتلة البرتقال المبيعة في المرة الثانية بالكغ، ثمن بيع البرتقال في المرة الثانية بالمي، قبض في الجملة بالمي، المقدار المالي الذي وفّره بالمي",
+      "figureDesc": "",
+      "answer": "ثمن الشراء: 105 000 = 300 × 350 ؛ الكلفة: 110 100 = 3 000 + 2 100 + 105 000 ؛ البيع الأول: 84 000 = 200 × 420 ؛ الكتلة: 95 = (5 + 200) - 300 ؛ البيع الثاني: 38 000 = 95 × 400 ؛ قبض في الجملة: 122 000 = 38 000 + 84 000 ؛ المقدار الذي وفّره: 11 900 = 110 100 - 122 000",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الامتحان الثلاثي الثاني (1) (الصفحة 66) – التمرين 1: أ) ... ب) العلامة (=)",
+      "body": "أ) 7 666 ، 1 888 ، 4 777 ؛ ب) العلامة (=)",
+      "figureDesc": "ثلاثة مربعات تحتوي الأعداد 7666 و1888 و4777",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(أ) أخف من (ط) وأثقل من (هـ)",
+      "body": "(ط) > (أ) > (هـ)",
+      "figureDesc": "",
+      "answer": "(ط) > (أ) > (هـ)",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "الرسم :",
+      "body": "",
+      "figureDesc": "شبه منحرف قائم مرسوم برأسين قائمين على اليسار",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "المبلغ المدّخر بالد ؛ ينقصها بالد ؛ ثمن شراء الآلة المستعملة بالمي",
+      "body": "جدول: المبلغ المدخر: 20 - 40 - 60 - 80 - 100 - 120 - 140 ؛ عدد الأسابيع: 1 - 2 - 3 - 4 - 5 - 6 - 7",
+      "figureDesc": "جدول من سطرين، العدد 5 محاط بدائرة",
+      "answer": "المبلغ المدخر: 480 = 24 × 20 ؛ ينقصها: 100 = 480 - 580 ؛ ثمن الآلة: 400 500 = (44 000 + 35 500) - 480 000",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الامتحان الثلاثي الثاني (2) (الصفحة 67) – التمرين 1: أ) عمليات طرح ؛ ج) 1098",
+      "body": "أ) 40 000 - 8 625 ؛ 79 327 - 18 973 ؛ 23 812 - 15 257 ؛ ج) 9 × 122",
+      "figureDesc": "ثلاث عمليات طرح موضوعة عموديا",
+      "answer": "31 375 ؛ 60 354 ؛ 08 555 ؛ ج) 1098 = 9 × 122 = 9 × (50 + 72) ؛ 1098 = 450 + 648 = (9 × 50) + (9 × 72)",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "بقي في البرميل باللتر :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "292 = (508 + 150) - 950",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i9"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "",
+      "body": "زوايا ج، هـ، و، ب",
+      "figureDesc": "رسم زوايا بالرؤوس ج و هـ و و و ب مع تظليل",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن كلفة الصابون المصنوع بالمي ؛ ثمن الصابون عند شرائه من السوق بالمي ؛ مقدار الربح من هذه العملية بالمي",
+      "body": "",
+      "figureDesc": "",
+      "answer": "10 000 = 2 500 + (2 × 175) + (3 × 850) + 4 600 ؛ 14 000 = 20 × 700 ؛ الربح: 4 000 = 10 000 - 14 000",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الامتحان الثلاثي الثاني (3) (الصفحة 68) – التمرين 1",
+      "body": "أ) 9 998 ، 10 001 ؛ ب) (9 - 27) × 5 ؛ ج) 44 × 8 ؛ 5 215 + 9 613 + 5 172 ؛ 19 600 - 8 451",
+      "figureDesc": "عمليات ضرب وجمع وطرح عمودية",
+      "answer": "ب) 90 = (11 + 7) × 5 = (9 - 27) × 5 = 18 × 5 ؛ ج) 352 ؛ 20 000 ؛ 11 149",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "مجموع القطع بالمي ؛ مجموع الأوراق بالمي ؛ مجموع المبلغ المكوّن بالمي",
+      "body": "(1 + 2 + 5) + (10 + 20 + 50) + (100 + 500 + 1000)",
+      "figureDesc": "",
+      "answer": "1 688 = 1 600 + 80 + 8 ؛ الأوراق: 30 000 + 5 000 + 10 000 + 20 000 ؛ المجموع: 66 688 = 1 688 + 65 000",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "الزاوية (أ) ، الزاوية (ب) ، الزاوية (د)",
+      "body": "",
+      "figureDesc": "",
+      "answer": "الزاوية (أ) : منفرجة ، الزاوية (ب) : قائمة ، الزاوية (د) : حادّة",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i14"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن المشتريات بالمي ؛ ثمن الكؤوس بالمي ؛ ثمن الصحون بالمي ؛ ثمن الملاعق بالمي ؛ ثمن الورق بالمي",
+      "body": "",
+      "figureDesc": "",
+      "answer": "المشتريات: 11 230 = 1 230 + (2 × 5 000) ؛ الكؤوس: 2 370 = 6 × 395 ؛ الصحون: 5 640 = 8 × 705 ؛ الملاعق: 1 000 = 4 × 250 ؛ الورق: 2 220 = (1 000 + 5 640 + 2 370) - 11 230",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p125_i15"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الاختبار التقويمي (الصفحة 65) – السنة الرابعة – التمرين 1",
+      "body": "أ) (1 + 10) × (100 - 1000) ؛ ب) عدد نبضات قلبه",
+      "figureDesc": "",
+      "answer": "أ) 9 900 = (1 + 10) × (100 - 1 000) ؛ ب) 1080 = 15 × 72",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p125_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الاختبار التقويمي (الصفحة 65) – التمرين 2: أ) مضاعفات 5 و7 ؛ ب) العدد",
+      "body": "أ) مضاعفات (5) و مضاعفات (7) ؛ عمرها ؛ ب) العدد",
+      "figureDesc": "",
+      "answer": "مضاعفات (5): { 0 - 5 - 10 - 15 - 20 - 25 ...} ؛ مضاعفات (7): { 0 - 7 - 14 - 20 - 28 ...} ؛ عمرها: 20 سنة ؛ ب) العدد: 48",
+      "confidence": 0.75,
+      "id": "math_solutions_4eme_sellami_p125_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الاختبار التقويمي (الصفحة 65) – التمرين 4",
+      "body": "ثمن شراء البرتقال بالمي، ثمن كلفة البرتقال بالمي، ثمن بيع البرتقال في المرة الأولى بالمي، كتلة البرتقال المبيعة في المرة الثانية بالكغ، ثمن بيع البرتقال في المرة الثانية بالمي، قبض في الجملة بالمي، المقدار المالي الذي وفّره بالمي",
+      "figureDesc": "",
+      "answer": "ثمن الشراء: 105 000 = 300 × 350 ؛ الكلفة: 110 100 = 3 000 + 2 100 + 105 000 ؛ البيع الأول: 84 000 = 200 × 420 ؛ الكتلة: 95 = (5 + 200) - 300 ؛ البيع الثاني: 38 000 = 95 × 400 ؛ قبض في الجملة: 122 000 = 38 000 + 84 000 ؛ المقدار الذي وفّره: 11 900 = 110 100 - 122 000",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p125_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الامتحان الثلاثي الثاني (1) (الصفحة 66) – التمرين 1: أ) ... ب) العلامة (=)",
+      "body": "أ) 7 666 ، 1 888 ، 4 777 ؛ ب) العلامة (=)",
+      "figureDesc": "ثلاثة مربعات تحتوي الأعداد 7666 و1888 و4777",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p125_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(أ) أخف من (ط) وأثقل من (هـ)",
+      "body": "(ط) > (أ) > (هـ)",
+      "figureDesc": "",
+      "answer": "(ط) > (أ) > (هـ)",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p125_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "الرسم :",
+      "body": "",
+      "figureDesc": "شبه منحرف قائم مرسوم برأسين قائمين على اليسار",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p125_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "المبلغ المدّخر بالد ؛ ينقصها بالد ؛ ثمن شراء الآلة المستعملة بالمي",
+      "body": "جدول: المبلغ المدخر: 20 - 40 - 60 - 80 - 100 - 120 - 140 ؛ عدد الأسابيع: 1 - 2 - 3 - 4 - 5 - 6 - 7",
+      "figureDesc": "جدول من سطرين، العدد 5 محاط بدائرة",
+      "answer": "المبلغ المدخر: 480 = 24 × 20 ؛ ينقصها: 100 = 480 - 580 (5 أسابيع) ؛ ثمن الآلة: 400 500 = (44 000 + 35 500) - 480 000",
+      "confidence": 0.75,
+      "id": "math_solutions_4eme_sellami_p125_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الامتحان الثلاثي الثاني (2) (الصفحة 67) – التمرين 1: أ) عمليات طرح ؛ ج) 1098",
+      "body": "أ) 40 000 - 8 625 ؛ 79 327 - 18 973 ؛ 23 812 - 15 257 ؛ ج) 9 × 122",
+      "figureDesc": "ثلاث عمليات طرح موضوعة عموديا",
+      "answer": "31 375 ؛ 60 354 ؛ 08 555 ؛ ج) 1098 = 9 × 122 = 9 × (50 + 72) ؛ 1098 = 450 + 648 = (9 × 50) + (9 × 72)",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p125_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "بقي في البرميل باللتر :",
+      "body": "950 - (508 + 150)",
+      "figureDesc": "",
+      "answer": "292 = (508 + 150) - 950",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p125_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "",
+      "body": "زوايا ج، هـ، و، ب",
+      "figureDesc": "رسم زوايا بالرؤوس ج و هـ و و و ب مع تظليل",
+      "answer": null,
+      "confidence": 0.4,
+      "id": "math_solutions_4eme_sellami_p125_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن كلفة الصابون المصنوع بالمي ؛ ثمن الصابون عند شرائه من السوق بالمي ؛ مقدار الربح من هذه العملية بالمي",
+      "body": "",
+      "figureDesc": "",
+      "answer": "10 000 = 2 500 + (2 × 175) + (3 × 850) + 4 600 ؛ 14 000 = 20 × 700 ؛ الربح: 4 000 = 10 000 - 14 000",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p125_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الامتحان الثلاثي الثاني (3) (الصفحة 68) – التمرين 1",
+      "body": "أ) 9 998 ، 10 001 ؛ ب) (9 - 27) × 5 ؛ ج) 44 × 8 ؛ 5 215 + 9 613 + 5 172 ؛ 19 600 - 8 451",
+      "figureDesc": "عمليات ضرب وجمع وطرح عمودية",
+      "answer": "ب) 90 = (11 + 7) × 5 = (9 - 27) × 5 = 18 × 5 ؛ ج) 352 ؛ 20 000 ؛ 11 149",
+      "confidence": 0.75,
+      "id": "math_solutions_4eme_sellami_p125_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "مجموع القطع بالمي ؛ مجموع الأوراق بالمي ؛ مجموع المبلغ المكوّن بالمي",
+      "body": "(1 + 2 + 5) + (10 + 20 + 50) + (100 + 500 + 1000)",
+      "figureDesc": "",
+      "answer": "1 688 = 1 600 + 80 + 8 ؛ الأوراق: 65 000 = 30 000 + 5 000 + 10 000 + 20 000 ؛ المجموع: 66 688 = 1 688 + 65 000",
+      "confidence": 0.7,
+      "id": "math_solutions_4eme_sellami_p125_i13",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "الزاوية (أ) ، الزاوية (ب) ، الزاوية (د)",
+      "body": "",
+      "figureDesc": "",
+      "answer": "الزَّاوِيَةُ (أ) : مُنْفَرِجَةٌ ، الزَّاوِيَةُ (ب) : قَائِمَةٌ ، الزَّاوِيَةُ (د) : حَادَّةٌ",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p125_i14",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن المشتريات بالمي ؛ ثمن الكؤوس بالمي ؛ ثمن الصحون بالمي ؛ ثمن الملاعق بالمي ؛ ثمن الورق بالمي",
+      "body": "",
+      "figureDesc": "",
+      "answer": "المشتريات: 11 230 = 1 230 + (2 × 5 000) ؛ الكؤوس: 2 370 = 6 × 395 ؛ الصحون: 5 640 = 8 × 705 ؛ الملاعق: 1 000 = 4 × 250 ؛ الورق: 2 220 = (1 000 + 5 640 + 2 370) - 11 230",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p125_i15",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

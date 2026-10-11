@@ -1,0 +1,197 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 47,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "فرض مراقبة: الحيوانات الأليفة، الأحداث الدورية، قراءة الساعة والتوقيت",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "السَّنَدُ 3 : أَثْنَاءَ إِبْحَارِهَا عَبْرَ الشَّبَكَةِ الْعَنْكَبُوتِيَّةِ وَجَدَتْ فَاطِمَةُ مَعْلُومَاتٍ عَنِ الْحَيَوَانَاتِ الأَلِيفَةِ فَدَوَّنَتِ الْمَعْلُومَاتِ التَّالِيَةَ لَكِنَّهَا أَخْطَأَتْ فِي نَسْخِ بَعْضِهَا :",
+      "body": "الدَّجَاجَةُ حَيَوَانٌ بَيُوضٌ يَحْضُنُ بَيْضَهُ.\nالْمِعْزَاةُ حَيَوَانٌ بَيُوضٌ لَا يَحْضُنُ بَيْضَهُ.",
+      "figureDesc": "سهمان يشيران من كل جملة إلى سطر منقّط للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p047_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4 أ",
+      "instruction": "التَّعْلِيمَةُ 4 أ : أَكْتُبُ «خَطَأً» أَوْ «صَوَابٌ».",
+      "body": "الدَّجَاجَةُ حَيَوَانٌ بَيُوضٌ يَحْضُنُ بَيْضَهُ.\nالْمِعْزَاةُ حَيَوَانٌ بَيُوضٌ لَا يَحْضُنُ بَيْضَهُ.",
+      "figureDesc": "سطران منقّطان بجانب سهمين",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p047_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4 ب",
+      "instruction": "التَّعْلِيمَةُ 4 ب : أُعَلِّلُ إِجَابَتِي السَّابِقَةَ :",
+      "body": "",
+      "figureDesc": "أسطر منقّطة للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p047_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : أَرْبُطُ الأَحْدَاثَ الدَّوْرِيَّةَ بِأَصْنَافِهَا وَأَكْتُبُ أَمَامَ كُلِّ صِنْفٍ، الْمُدَّةَ الزَّمَنِيَّةَ الْفَاصِلَةَ بَيْنَ حَدَثَيْنِ مِنْ نَفْسِ النَّوْعِ.\nالسَّنَدُ 4 : فَاطِمَةُ بُنَيَّةٌ تُحْسِنُ التَّصَرُّفَ، فَهْيَ تَتَنَاوَلُ وَجَبَاتِهَا الْغِذَائِيَّةَ فِي أَوْقَاتِهَا وَتَذْهَبُ إِلَى الْمَكْتَبَةِ الْعُمُومِيَّةِ كُلَّ يَوْمِ أَحَدٍ، وَتَزُورُ جَدَّتَهَا مَرَّةً كُلَّ أَرْبَعَةِ أَسَابِيعَ.",
+      "body": "العمود الأيمن: تَنَاوُلُ الْوَجَبَاتِ الْغِذَائِيَّةِ • الذَّهَابُ إِلَى الْمَكْتَبَةِ الْعُمُومِيَّةِ • زِيَارَةُ الْجَدَّةِ\nالعمود الأيسر: حَدَثٌ دَوْرِيٌّ شَهْرِيٌّ • حَدَثٌ دَوْرِيٌّ يَوْمِيٌّ • حَدَثٌ دَوْرِيٌّ أُسْبُوعِيٌّ",
+      "figureDesc": "جدول ربط بنقاط بين الأحداث وأصنافها مع أسهم وأسطر منقّطة لكتابة المدة الزمنية",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p047_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : كُتِبَ التَّوْقِيتُ تَحْتَ كُلِّ سَاعَةٍ بِطَرِيقَةٍ خَاطِئَةٍ، أُصْلِحُ الأَخْطَاءَ فِي الْخَانَاتِ.",
+      "body": "السَّادِسَةُ وَعَشْرُ دَقَائِقَ\nمُنْتَصَفُ النَّهَارِ وَالرُّبُعُ\nالثَّانِيَةُ بَعْدَ الظُّهْرِ",
+      "figureDesc": "ثلاث ساعات: ساعة عقربية تشير إلى حوالي السادسة والنصف، ساعة رقمية 12:30، ساعة عقربية تشير إلى الثالثة؛ تحت كل منها خانة فارغة بنقطتين للتوقيت",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p047_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "التَّعْلِيمَةُ 7 : أُصْلِحُ الإِفَادَةَ الْخَاطِئَةَ التَّالِيَةَ بِطَرِيقَتَيْنِ مُخْتَلِفَتَيْنِ.",
+      "body": "عَقْرَبُ السَّاعَاتِ أَسْرَعُ مِنْ عَقْرَبِ الدَّقَائِقِ.\nأُصْلِحُ بِطَرِيقَةٍ أُولَى : ...... أَسْرَعُ مِنْ ......\nأُصْلِحُ بِطَرِيقَةٍ ثَانِيَةٍ : ...... أَبْطَأُ مِنْ ......",
+      "figureDesc": "أسطر منقّطة للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p047_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الأَعْدَادِ",
+      "body": "مِعْيَارُ التَّمَيُّزِ ؛ مَعَايِيرُ الْحَدِّ الأَدْنَى ؛ مع1، مع2أ، مع2ب، مع3 (الجدول مقطوع)",
+      "figureDesc": "جدول إسناد الأعداد مقطوع في أسفل الصفحة",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "examens_toutes_matieres_p047_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-3-u3",
+    "confidence": 0.2
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "Il s'agit d'un devoir de contrôle (فرض مراقبة) qui regroupe plusieurs notions : animaux ovipares et vivipares (sci-3-u3), événements périodiques et lecture de l'heure (sci-3-u6), avec un barème d'évaluation ; il ne correspond donc à aucun chapitre unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Animaux domestiques et repérage du temps",
+    "skill": "Vérifier des informations sur les animaux domestiques, classer des événements périodiques et lire l'heure sur une horloge.",
+    "pageType": "exam",
+    "formats": [
+      "vrai_faux",
+      "appariement",
+      "texte_a_trous",
+      "lecture_comprehension",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "animaux domestiques",
+      "animaux ovipares",
+      "événements périodiques",
+      "lecture de l'heure",
+      "aiguilles de l'horloge",
+      "devoir de contrôle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Devoir de contrôle qui part d'une recherche sur Internet pour vérifier des affirmations vrai/faux avec justification, relie des événements du quotidien à leur périodicité, corrige des heures mal écrites et reformule une affirmation fausse de deux façons (vitesse des aiguilles).",
+    "themeGroup": "Animaux domestiques"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«صَوَابٌ» dans la consigne 4 أ : l'image montre «صَوَابٌ» entre guillemets avec tanwin, mais le contexte attendu «صَوَابٌ» est conservé ; la transcription est proche, sans faute claire"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الْوَجَبَاتِ» : l'image indique «الْوَجَبَاتِ» dans la liste mais le texte du سند 4 dit «وَجَبَاتِهَا» ; correct, aucune erreur réelle"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«كُلَّ يَوْمِ أَحَدٍ» : l'image porte «كُلِّ يَوْمِ أَحَدٍ» (kasra/shadda sur le lam) ; la transcription met «كُلَّ» (fatha)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«كُلَّ أَرْبَعَةِ أَسَابِيعَ» : l'image porte «كُلَّ» mais «كُلِّ» selon la lecture ; incohérence possible avec l'original"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«كُتِبَ التَّوْقِيتُ» : l'image dit «كُتِبَ التَّوْقِيتُ» ; correct. «مِعْيَارُ التَّمَيُّزِ» : l'image montre «مِعْيَارُ التَّمَيُّزِ», correct"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le bloc du السند 3 apparaît avant la consigne 4 أ puis est dupliqué ; les puces de l'énoncé sont répétées deux fois (duplication)"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le bas de la page (tableau d'attribution) est tronqué ; les chiffres de notation marginaux (0,5) et les lignes de réponse en pointillés ne sont pas transcrits"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les horloges (analogique 6:30 et 3:00, numérique 12:30) ne sont pas décrites, ni les cases de réponse vides"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

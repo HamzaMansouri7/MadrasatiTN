@@ -1,0 +1,101 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 26,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "التغذية السليمة والتوازن الغذائي – سوء التغذية والفيتامينات (فيتامين د وج) وأهمية فطور الصباح",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اِكْتَشِفِ الأَخْطَاءَ وَاذْكُرِ التَّصَرُّفَ السَّلِيمَ.",
+      "body": "- مَاهِيَ مُشْكِلَتُهُمَا ؟\n- مِمَّ سَيُعَانِيَانِ ؟\n- بِمَاذَا تَنْصَحُهُمَا ؟",
+      "figureDesc": "رسم لولدين على مائدة الأكل: أحدهما غاضب يمدّ يده نحو صحن فيه فخذ دجاج ويدفع الآخر، وعلى الطاولة بقايا طعام وأشواك السمك وعظام وقشور موز وأدوات مائدة مبعثرة. ثلاثة أسطر منقطة للإجابة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p026_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اكتب «صواب» أو «خطأ» :",
+      "body": "- المسنّ في حاجة إلى أغذية واقية.\n- نقص فيتامين (د) يؤدي إلى صعوبة الرؤية الجيدة ليلا.\n- يتسبب عدم وجود الفيتامين (ج) في الأغذية في مرض الأسقربوط.\n- ينتج سوء التغذية عن إفراط في استهلاك الأغذية.\n- يحتاج الطفل المراهق إلى أغذية البناء والنمو.\n- ضوء الشمس يساعد في تكوين العظام وصلابتها.",
+      "figureDesc": "ستة مربعات فارغة على اليسار لكتابة «صواب» أو «خطأ» أمام كل جملة.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "eveil_scientifique_cours_exercices_p026_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مَا هُوَ المَرَضُ الَّذِي يُصِيبُ الأَطْفَالَ الَّذِينَ يَعِيشُونَ فِي أَمَاكِنَ لاَ تَصِلُ إِلَيْهَا أَشِعَّةُ الشَّمْسِ ؟",
+      "body": "هل تعلم أن فيتامين (د) يوجد بكثرة في الحليب والزبدة وزيت كبد الحوت وهو مهم لنمو العظام وسلامة الأسنان، يتكون في الجلد عندما تعرضه إلى أشعة الشمس.",
+      "figureDesc": "إطار «هل تعلم» بجانب سطر منقط للإجابة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p026_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "إنّ عدم الاهتمام بفطور الصباح عند التلميذ له انعكاسات سلبية على متابعته لدروسه. أذكر أهمّها :",
+      "body": "",
+      "figureDesc": "سطر منقط للإجابة. رقم الصفحة 58.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "eveil_scientifique_cours_exercices_p026_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.28
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page porte sur la nutrition équilibrée, la malnutrition, les vitamines (D et C), le scorbut, le rachitisme et l'importance du petit-déjeuner, ce qui correspond à la partie nutrition équilibrée de l'unité 3 d'Éveil Scientifique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Alimentation équilibrée et carences",
+    "skill": "Identifier les erreurs alimentaires et expliquer les effets de la malnutrition, des vitamines D et C et du petit-déjeuner sur la santé.",
+    "pageType": "exercise",
+    "formats": [
+      "vrai_faux",
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "alimentation équilibrée",
+      "malnutrition",
+      "vitamines",
+      "vitamine D",
+      "scorbut",
+      "petit-déjeuner"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une série variée d'exercices courts (repérer les erreurs sur une image et conseiller, vrai/faux sur les besoins nutritifs selon l'âge, question sur une maladie carentielle avec encadré « Le savais-tu ? », réflexion sur l'impact du petit-déjeuner sur la scolarité).",
+    "themeGroup": "Énergie, besoins et troubles alimentaires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

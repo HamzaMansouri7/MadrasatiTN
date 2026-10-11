@@ -1,0 +1,312 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 7,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 1 : اختبار تقويمي للتثبيت والدعم (الأعداد إلى 999 – المعادلات – العمليات والمسائل – الاستقامية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب مجموعة الأعداد المكوَّنة من ثلاثة أرقام بحيث يكون رقمَا آحَادِهَا وَمِئَاتِهَا مُتَسَاوِيَيْنِ ومجموعهما مُسَاوٍ لرقم العشرات.",
+      "body": "أكتب مجموعة الأعداد المكوَّنة من ثلاثة أرقام بحيث يكون رقمَا آحَادِهَا وَمِئَاتِهَا مُتَسَاوِيَيْنِ ومجموعهما مُسَاوٍ لرقم العشرات.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p007_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمِلْ المعادلات التَّالية :",
+      "body": "3 مئات + 19 عشرة + 5 آحاد = ..........\n17 عشرة + .......... = 6 مئات\n8 آحاد + .......... عشرة = 128",
+      "figureDesc": "نقاط للإجابة (خطوط منقطة) في كل معادلة.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p007_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اِشتريت قلم رصاص بـ 135 مي وكِراسَيْنِ أحدهما بـ 95 مي. دفعت للكتبيّ نصف دينار فطلب منّي 45 مي وأرجع لي 3 قطع نقديّة ذات 50 مي الواحدة.",
+      "body": "اِشتريت قلم رصاص بـ 135 مي وكِراسَيْنِ أحدهما بـ 95 مي. دفعت للكتبيّ نصف دينار فطلب منّي 45 مي وأرجع لي 3 قطع نقديّة ذات 50 مي الواحدة.\n– ما هو ثمن المشتريات ؟\n– ما هو ثمن الكراس الثاني ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p007_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرسم النّقطة \"ج\" بحيث تكون النّقط \"أ\" \"ب\" \"ج\" على استقامة واحدة وكذلك النّقط \"د\" \"ج\" \"هـ\"",
+      "body": "أرسم النّقطة \"ج\" بحيث تكون النّقط \"أ\" \"ب\" \"ج\" على استقامة واحدة وكذلك النّقط \"د\" \"ج\" \"هـ\"",
+      "figureDesc": "أربع نقاط مبعثرة: أ (أعلى يمين)، د (أعلى يسار)، ب (أسفل يسار)، هـ (أسفل يمين) على الصفحة.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p007_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "دفعت دُرّة للكتبيّ مقابل شرائها قصّة وقلمين جافّين مبلغا قدره 820 مي، بينما دفعت صديقتها مقابل شراء نفس القصّة و 3 أقلام جافّة من نفس النّوع مبلغا قدره 980 مي.",
+      "body": "دفعت دُرّة للكتبيّ مقابل شرائها قصّة وقلمين جافّين مبلغا قدره 820 مي، بينما دفعت صديقتها مقابل شراء نفس القصّة و 3 أقلام جافّة من نفس النّوع مبلغا قدره 980 مي.\nأ) ما هو ثمن شراء القلم الواحد ؟\nب) ما هو ثمن شراء القصّة ؟",
+      "figureDesc": "جدول من عمودين: «دفعت دُرّة»: قصّة وقلمان جافّان = 820 مي؛ «دفعت صديقتها»: قصّة و3 أقلام جافّة = 980 مي، مع أقواس تجمع الأشياء وتبيّن المبلغ.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p007_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation diagnostique de la semaine 1 (nombres à 3 chiffres, équations, problèmes de monnaie, alignement de points) qui révise des acquis et correspond le plus à la Période 1 (nombres, droites, monnaie), mais ne couvre pas les nombres à 5 et 6 chiffres et reste une évaluation transversale.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Évaluation diagnostique nombres, opérations, problèmes",
+    "skill": "Consolider les nombres jusqu'à 999, les équations à trous, les problèmes à étapes et l'alignement de points.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "nombres à trois chiffres",
+      "décomposition centaines dizaines unités",
+      "monnaie en millimes",
+      "problème à deux inconnues",
+      "alignement de points"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations d'achat avec monnaie rendue en millimes, comparaison de deux paiements pour trouver le prix unitaire, et contrainte sur les chiffres d'un nombre (centaines = unités = somme à la dizaine).",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : l'en-tête « اختبار تقويمي للتثبيت والدعم » et « الأسبوع 1 » ainsi que le numéro de page 4 ne sont pas transcrits (en-tête manquant)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : « أكمِلِ » ; l'image montre « أكمِلْ » (sukun sur le lam final), pas kasra."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « كرّاس/كرّاسَيْنِ » ; l'image montre « كراس » et « كِراسَيْنِ » sans shadda sur le ra."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 3 : les questions sont placées avant l'énoncé dans le premier champ, puis dupliquées ; ordre incohérent."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 5 : même problème, questions avant l'énoncé puis répétées."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 2, 3e ligne : « 8 آحاد + .......... عشرة = 128 » est correct, mais les pointillés se trouvent entre le + et عشرة, ce qui est cohérent avec l'image ; aucune erreur numérique."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 4 : les points a, b, d, h (أ، ب، د، هـ) placés sur la figure ne sont pas décrits. Exercice 5 : le tableau illustré (crayons et cahier, 980 مي / 820 مي, « دفعت صديقتها » / « دفعت درّة ») est absent."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'image montre « أكمِلْ » avec un sukun sur le lam final. La transcription « أكمِلِ » porte une kasra, ce qui est incorrect."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'image montre « كِراسَيْنِ » et « الكراس » sans shadda sur le ra. La transcription ajoute une shadda (« كرّاسَيْنِ », « الكرّاس »)."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 3 : le champ instruction ne contient que les deux questions, qui figurent à la fin de l'énoncé dans l'image. L'énoncé arrive ensuite dans le body, avec les questions répétées. Il faut mettre l'énoncé dans instruction, puis l'énoncé suivi des questions dans l'ordre de lecture dans body."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 5 : même problème. Les questions أ) et ب) sont placées dans instruction, avant l'énoncé du body, puis répétées. Il faut mettre l'énoncé dans instruction, puis l'énoncé suivi des questions dans body."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب مجموعة الأعداد المكوَّنة من ثلاثة أرقام بحيث يكون رقمَا آحَادِهَا وَمِئَاتِهَا مُتَسَاوِيَيْنِ ومجموعهما مُسَاوٍ لرقم العشرات.",
+      "body": "أكتب مجموعة الأعداد المكوَّنة من ثلاثة أرقام بحيث يكون رقمَا آحَادِهَا وَمِئَاتِهَا مُتَسَاوِيَيْنِ ومجموعهما مُسَاوٍ لرقم العشرات.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p007_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمِلْ المعادلات التَّالية :",
+      "body": "3 مئات + 19 عشرة + 5 آحاد = ..........\n17 عشرة + .......... = 6 مئات\n8 آحاد + .......... عشرة = 128",
+      "figureDesc": "نقاط للإجابة (خطوط منقطة) في كل معادلة.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p007_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اِشتريت قلم رصاص بـ 135 مي وكِراسَيْنِ أحدهما بـ 95 مي. دفعت للكتبيّ نصف دينار فطلب منّي 45 مي وأرجع لي 3 قطع نقديّة ذات 50 مي الواحدة.",
+      "body": "اِشتريت قلم رصاص بـ 135 مي وكِراسَيْنِ أحدهما بـ 95 مي. دفعت للكتبيّ نصف دينار فطلب منّي 45 مي وأرجع لي 3 قطع نقديّة ذات 50 مي الواحدة.\n– ما هو ثمن المشتريات ؟\n– ما هو ثمن الكراس الثاني ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p007_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرسم النّقطة \"ج\" بحيث تكون النّقط \"أ\" \"ب\" \"ج\" على استقامة واحدة وكذلك النّقط \"د\" \"ج\" \"هـ\"",
+      "body": "أرسم النّقطة \"ج\" بحيث تكون النّقط \"أ\" \"ب\" \"ج\" على استقامة واحدة وكذلك النّقط \"د\" \"ج\" \"هـ\"",
+      "figureDesc": "أربع نقاط مبعثرة: أ (أعلى يمين)، د (أعلى يسار)، ب (أسفل يسار)، هـ (أسفل يمين) على الصفحة.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p007_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "دفعت دُرّة للكتبيّ مقابل شرائها قصّة وقلمين جافّين مبلغا قدره 820 مي، بينما دفعت صديقتها مقابل شراء نفس القصّة و 3 أقلام جافّة من نفس النّوع مبلغا قدره 980 مي.",
+      "body": "دفعت دُرّة للكتبيّ مقابل شرائها قصّة وقلمين جافّين مبلغا قدره 820 مي، بينما دفعت صديقتها مقابل شراء نفس القصّة و 3 أقلام جافّة من نفس النّوع مبلغا قدره 980 مي.\nأ) ما هو ثمن شراء القلم الواحد ؟\nب) ما هو ثمن شراء القصّة ؟",
+      "figureDesc": "جدول من عمودين: «دفعت دُرّة»: قصّة وقلمان جافّان = 820 مي؛ «دفعت صديقتها»: قصّة و3 أقلام جافّة = 980 مي، مع أقواس تجمع الأشياء وتبيّن المبلغ.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p007_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب مجموعة الأعداد المكوَّنة من ثلاثة أرقام بحيث يكون رقمَا آحَادِهَا وَمِئَاتِهَا مُتَسَاوِيَيْنِ ومجموعهما مُسَاوٍ لرقم العشرات.",
+      "body": "أكتب مجموعة الأعداد المكوَّنة من ثلاثة أرقام بحيث يكون رقمَا آحَادِهَا وَمِئَاتِهَا مُتَسَاوِيَيْنِ ومجموعهما مُسَاوٍ لرقم العشرات.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p007_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمِلِ المعادلات التَّالية :",
+      "body": "3 مئات + 19 عشرة + 5 آحاد = ..........\n17 عشرة + .......... = 6 مئات\n8 آحاد + .......... عشرة = 128",
+      "figureDesc": "نقاط للإجابة (خطوط منقطة) في كل معادلة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p007_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هو ثمن المشتريات ؟ – ما هو ثمن الكرّاس الثاني ؟",
+      "body": "اِشتريت قلم رصاص بـ 135 مي وكرّاسَيْنِ أحدهما بـ 95 مي. دفعت للكتبيّ نصف دينار فطلب منّي 45 مي وأرجع لي 3 قطع نقديّة ذات 50 مي الواحدة.\n– ما هو ثمن المشتريات ؟\n– ما هو ثمن الكرّاس الثاني ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p007_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرسم النّقطة \"ج\" بحيث تكون النّقط \"أ\" \"ب\" \"ج\" على استقامة واحدة وكذلك النّقط \"د\" \"ج\" \"هـ\"",
+      "body": "أرسم النّقطة \"ج\" بحيث تكون النّقط \"أ\" \"ب\" \"ج\" على استقامة واحدة وكذلك النّقط \"د\" \"ج\" \"هـ\"",
+      "figureDesc": "أربع نقاط مبعثرة: أ (أعلى يمين)، د (أعلى يسار)، ب (أسفل يسار)، هـ (أسفل يمين) على الصفحة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p007_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أ) ما هو ثمن شراء القلم الواحد ؟ ب) ما هو ثمن شراء القصّة ؟",
+      "body": "دفعت دُرّة للكتبيّ مقابل شرائها قصّة وقلمين جافّين مبلغا قدره 820 مي، بينما دفعت صديقتها مقابل شراء نفس القصّة و 3 أقلام جافّة من نفس النّوع مبلغا قدره 980 مي.\nأ) ما هو ثمن شراء القلم الواحد ؟\nب) ما هو ثمن شراء القصّة ؟",
+      "figureDesc": "جدول من عمودين: «دفعت دُرّة»: قصّة وقلمان جافّان = 820 مي؛ «دفعت صديقتها»: قصّة و3 أقلام جافّة = 980 مي، مع أقواس تجمع الأشياء وتبيّن المبلغ.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p007_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

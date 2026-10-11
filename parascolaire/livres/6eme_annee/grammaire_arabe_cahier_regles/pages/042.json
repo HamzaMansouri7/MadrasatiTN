@@ -1,0 +1,160 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 42,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "المفعول المطلق (المؤكد للفعل، المبين للنوع، المبين للعدد) ورسم الهمزة المتطرفة المسبوقة بفتحة قصيرة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "إني أحب كل أصدقائي وأخلص لهم إخلاصا لا مثيل له ، وأعمل لفائدتهم كل لحظة لأني مرتبط بهم كل الارتباط وقد رأيت مرة بعضهم يحذر مني بعض الحذر ويظن في بعض الظن ، فلمته على ذلك أشد لوم إلى أن اقتنع بإخلاصي إليه، فقال إني يا صديقي أتحمل منك لوما مرا لأني أخطأت خطأ كبيرا ثم أطرق رأسه إطراق المذنب، فصفحت عنه",
+      "figureDesc": "نص داعم داخل إطار (تتمة نص التمرين الأول، أعلى الصفحة)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p042_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "الثاني",
+      "instruction": "استخرج من النص كل مفعول مطلق وبين نوعه: مؤكد للفعل، مبين للنوع، مبين للعدد",
+      "body": "تمتن العلاقة أحيانا بين الأصدقاء متانة شديدة وتتمكن قلوبهم كل التمكن فينبذون الظنون والشكوك نبذا ولا يلتفتون إلى كلام الناس التفاتا بل تراهم متلازمين لزوم الظليل لظله فلا يهمهم أن تشرق الشمس من المغرب عوض المشرق أو تدور الرض دورتين عوض دورتها اليومية أو أن ينتقدهم المغرضون انتقادا لاذعا فإنهم يشعرون شعورا تاما بأنهم يسعدون سعادة الأصدقاء المخلصين ويعلمون علم اليقين أنهم يعيشون عيش الصدق والنزاهة",
+      "figureDesc": "جدول من ثلاثة أعمدة فارغة: مفعول مطلق مؤكد للفعل | مفعول مطلق مبين للنوع | مفعول مطلق مبين للعدد",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p042_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "الثالث",
+      "instruction": "أكتب تحت كل مفعول مطلق نوعه: مفردة، مركب إضافي، مركب نعتي، مركب جر",
+      "body": "انطلق العداء كالسهم | نزل الخبر نزول الصاعقة | أقبل المتفرجون على المقابلة إقبالا | شكر المدير التلاميذ شكرا جزيلا",
+      "figureDesc": "جدول من أربع خانات تحتوي الجمل، وتحتها صف فارغ للإجابة",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p042_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "الرابع",
+      "instruction": "صف عاملا يقوم بعمله بكل دية وتفان مستعملا أكبر عدد ممكن من المفاعيل المطلقة",
+      "body": "",
+      "figureDesc": "إطار فارغ للكتابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p042_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "رسم الهمزة المتطرفة المسبوقة بفتحة قصيرة",
+      "figureDesc": "عنوان درس، تليه كلمة «الدرس» في أسفل الصفحة دون محتوى",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p042_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.12
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de grammaire arabe (complément absolu المفعول المطلق) et d'orthographe (hamza finale), mais les unités officielles portent sur la narration et ne mentionnent pas explicitement ces points de langue, donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Le complément absolu (المفعول المطلق)",
+    "skill": "Identifier et classer les différents types de complément absolu (confirmatif, de manière, de nombre) et réviser l'écriture du hamza final précédé d'une voyelle brève fatha.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "مفعول مطلق",
+      "grammaire arabe",
+      "hamza finale",
+      "analyse de texte",
+      "amitié",
+      "6ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des textes courts sur l'amitié servent de support pour repérer et classer une structure grammaticale, puis analyser sa forme (mot simple, annexion, qualificatif, groupe prépositionnel). Un exercice final de production écrite décrit un travailleur dévoué avec un maximum de compléments absolus.",
+    "themeGroup": "Les compléments"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « اكبر » est écrit « أكبر » dans la transcription ; l'image montre « أكير » (probablement une coquille du document). À signaler, la transcription a corrigé le texte."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« بكل دية » : l'image montre bien « دية » (pour « جدية »), transcrit à l'identique, correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « التمرين الأول » n'est pas transcrit ; le premier bloc a un label vide []. Le titre « الدرس » en bas de page est aussi omis."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau de l'exercice 2 (3 colonnes : مفعول مطلق مؤكد للفعل / مبين للنوع / مبين للعدد) n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau de l'exercice 3 a une ligne de réponse vide sous les 4 phrases ; la structure n'est pas indiquée."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ponctuation ajoutée dans les consignes : « مؤكد للفعل، مبين للنوع، مبين للعدد » et « مفردة، مركب إضافي… » avec des virgules/deux-points absents de l'image (simples espaces)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الرض » dans l'image (pour « الأرض ») est transcrit tel quel : fidèle."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

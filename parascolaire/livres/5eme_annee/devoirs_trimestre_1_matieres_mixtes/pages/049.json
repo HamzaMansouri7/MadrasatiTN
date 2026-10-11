@@ -1,0 +1,91 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 49,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مقوّمات العلاقات داخل العائلة (Éducation civique : les fondements des relations au sein de la famille). Cette page ne traite pas de mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "يعملوا بإجتهاد ليكون محيط العائلة سعيد ، المساعدة في الأعمال المنزلية ، يراعي ظروف عائلته ولا يطلب منهم المستحيل",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p049_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "مقوّمات العلاقات داخل العائلة",
+      "body": "تقوم العلاقات داخل العائلة على\nالتعاون: كل أفراد العائلة لهم واجب الإعانة لبعضهم البعض\nالمحبّة: كل الأفراد يجمعها الحبّ العائلي\nالتشاور: من أهمّ المظاهر التي نجدها في العائلة هي التشاور قبل اتّخاذ القرار\nالتكامل: كل فرد يضطلع بدور يكمّل به دور الفرد الآخر",
+      "figureDesc": "Les mots clés (التعاون، المحبّة، التشاور، التكامل) sont soulignés dans le texte. Titre en rouge.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p049_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أُعاوِنُ في أعْمَالِ المَنْزِلِ.",
+      "body": "أُعاوِنُ في أعْمَالِ المَنْزِلِ.",
+      "figureDesc": "Illustration en couleur : une mère voilée (hijab rose, robe jaune) apporte un plat ; un garçon près de la fenêtre tient un verre ; une fillette en robe rouge porte un sac de provisions (fruits, bouteille) vers une table dressée avec des assiettes vides.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p049_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u1",
+    "confidence": 0.22
+  },
+  "topicSubject": "Éducation civique",
+  "topicReason": "La page traite des fondements des relations familiales (coopération, affection, concertation, complémentarité), c'est-à-dire de l'éducation civique, matière absente de la liste des chapitres officiels, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation civique",
+    "theme": "Relations au sein de la famille",
+    "skill": "Identifier les quatre fondements des relations familiales (coopération, affection, concertation, complémentarité) et s'engager à aider aux tâches ménagères.",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "famille",
+      "coopération",
+      "affection",
+      "concertation",
+      "complémentarité",
+      "tâches ménagères"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les quatre piliers de la vie familiale, chacun défini en une phrase courte, se prêtent à un appariement valeur/situation, à un tableau de synthèse ou à une affiche illustrée, et l'engagement à aider à la maison peut devenir un défi ou un tableau de responsabilités.",
+    "themeGroup": "La famille: relations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éducation civique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

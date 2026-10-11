@@ -1,0 +1,133 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 37,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : La poule et le moineau (2) (thème : Sagesse)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "La poule et le moineau (2)\nLe fermier s'occupa de ses maïs puis chercha sa poule à travers la basse-cour, mais elle resta cachée dans son buisson, terrorisée. Bien que morte de faim, elle n'osait quitter son abri. Même quand le soir tomba et qu'il commença à faire plus froid.\nIl faisait presque tout à fait noir quand le moineau vint se poser au-dessus de la poule.\n- Si tu veux, je vais encore te donner un conseil, dit le moineau.\n- Évidemment que je veux, dit la poule. Maintenant, j'ai bien compris que les moineaux donnent d'excellents conseils.\n- Alors écoute. Quand le fermier viendra pour te tuer, arrange-toi pour pondre un œuf. Le fermier le prendra et ira vite le faire frire dans sa poêle. Voilà mon conseil, et ne l'oublie pas !\n- Merci, dit la poule. Je vais faire ce que tu me dis. Aujourd'hui, demain, et tant que je vivrais.\nLe moineau s'envola et cria encore de loin :\n- Si tu ponds un œuf tous les jours, personne n'aura plus envie de te tuer.\nSois heureuse et ...longue vie !\nC'est ce que fit la poule, et elle devint très, très, très vieille.",
+      "figureDesc": "Texte encadré dans un cadre arrondi ; en-tête avec bandeau « Sagesse » et « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p037_i1",
+      "topicId": "fr-6-m4",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-1-a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- La poule a quitté son buisson avant le coucher du soleil. (………………)",
+      "figureDesc": "Case arrondie en pointillés pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p037_i2",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-1-b",
+      "instruction": "Justifie ta réponse :",
+      "body": "………………………………………………\n………………………………………………",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p037_i3",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-2-a",
+      "instruction": "La poule décide-t-elle d'écouter les conseils du moineau ?",
+      "body": "………………………………………………",
+      "figureDesc": "Une ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p037_i4",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m4",
+  "topicTitle": "Module 4 : S'entraider pour mieux réussir",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.27
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension en français (La poule et le moineau, thème Sagesse) où le moineau conseille la poule, ce qui se rapproche le plus du module 4 (entraide, conseils), mais aucun module ne correspond clairement au thème de la sagesse.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    122
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte narratif",
+    "skill": "Comprendre un récit en repérant des informations explicites et en justifiant ses réponses à partir du texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "fable",
+      "poule et moineau",
+      "justification",
+      "sagesse"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le schéma « texte court suivi d'un vrai/faux à justifier puis d'une question ouverte sur la décision du personnage » se réutilise pour d'autres fables ou récits à morale.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « Sagesse », « Lecture - Compréhension », « 6 ème année de base », ainsi que le pied de page « Lire et s'exprimer », « 36 »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Aujourd'hui, demain, et tant que je vivrais » : le texte est transcrit correctement mais la mise en page est modifiée (retour à la ligne avant « je vivrais »). Sans incidence sur le contenu."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Des espaces ont été ajoutés après « terrorisée. », « un œuf. » et « poêle. », alors que l'image les montre collés (« terrorisée.Bien », « œuf.Le », « poêle.Voilà »). Simple normalisation."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est absent. Les marqueurs de question « 1) a- », « b- », « 2) a- » ne sont pas repris dans le texte, seulement sous forme d'étiquettes entre crochets."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,144 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 86,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أتدرّب على حلّ المسائل (مسائل: فاتورة إصلاح سيارة، مساحة أرض مربعة وإنتاج القمح) - ملاحظة : الصفحة تخص الرياضيات وليس اللغة العربية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَعَدَّ مِيكَانِيكِيٌّ فَاتُورَةَ إِصْلَاحِ سَيَّارَةِ أَحَدِ الحُرَفَاءِ فَكَانَتْ كَمَا يَلِي:",
+      "body": "| البَيَانَات | المَبْلَغ بالـ د |\n| :--- | :--- |\n| - لَوَازِم لِلمَكَابِح | 76,000 |\n| - تَعْدِيلُ الأَضْوَاءِ | 25,000 |\n| - إِطَارَاتٌ لِلعَجَلَاتِ | 360,000 |\n| - كَابِل مُحَوِّلِ السُّرْعَة | 23,500 |\n| - يَد عَامِلَة | 125,000 |\n| - الأَدَاء عَلَى القِيمَةِ المُضَافَةِ | .................... |\n| الجُمْلَة | 719,200 |\n\n- بِالإِضَافَةِ إِلَى صِيَانَةِ السَّيَّارَةِ دَفَعَ مَالِكُهَا 325 د لِلتَّأْمِينِ وَ 120 د كَمَعْلُومٍ لِلجَوَلَانِ وَ 19,800 د لِلفَحْصِ الفَنِّيِّ.\n- أُحْسُبِ القِيمَةَ المُضَافَةَ وَأُكْمِلِ الفَاتُورَةَ.\n- أُحْسُبْ نَفَقَاتِ هَذَا المُوَاطِنِ مِنْ أَجْلِ اسْتِعْمَالِهِ لِلسَّيَّارَةِ فِي ظُرُوفٍ حَسَنَةٍ.",
+      "figureDesc": null,
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p086_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْضٌ مُرَبَّعَةُ الشَّكْلِ طُولُ مُحِيطِهَا 480 م زُرِعَتْ قَمْحًا. أَنْتَجَ الهِكْتَارُ الوَاحِدُ مِنْهَا 6 ط مِنَ القَمْحِ الصَّافِي.",
+      "body": "- أُحْسُبْ قِيسَ مِسَاحَةِ هَذِهِ الأَرْضِ.\n- أُحْسُبْ كُتْلَةَ القَمْحِ المُنْتَجَةِ بِالطُّنِّ.\nبَاعَ صَاحِبُ الأَرْضِ القَمْحَ بِحِسَابِ 950 د لِلقِنْطَارِ الوَاحِدِ. احْسُبْ مَدْخُولَهُ مِنْ هَذِهِ الأَرْضِ؟",
+      "figureDesc": null,
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p086_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p6",
+    "confidence": 0.25
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une série de problèmes de mathématiques (facture avec décimaux, aire d'un carré en ha/m², masse de blé en quintaux/tonnes) ; la conversion quintal/tonne rattache le plus à la Période 4, mais les problèmes de synthèse pourraient aussi relever d'autres périodes.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Résolution de problèmes de la vie courante",
+    "skill": "Résoudre des problèmes concrets en combinant calculs sur les nombres décimaux, la monnaie, les mesures d'aire et de masse, et les conversions d'unités.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "problèmes",
+      "facture",
+      "périmètre et aire",
+      "conversion d'unités",
+      "dinars",
+      "blé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Deux situations tirées du quotidien tunisien : compléter une facture de réparation automobile avec TVA et frais annexes, et calculer l'aire d'un champ carré à partir de son périmètre pour en déduire la production et le revenu de blé. Elles se prêtent à des problèmes à étapes avec conversions (m², hectare, quintal, tonne).",
+    "themeGroup": "Problèmes de synthèse et vie courante"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de la facture (exercice 1) est absent : en-têtes 'البيانات' / 'المبلغ بالد', lignes: لوازم للمكابح 76,000; تعديل الأضواء 25,000; إطارات للعجلات 360,000; كابل محوّل السرعة 23,500; يد عاملة 125,000; الأداء على القيمة المضافة ......; الجملة 719,200"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de l'en-tête de page (أتدرب على حل المسائل), le numéro 5 et le numéro de page 87 ne sont pas transcrits"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'أُحْسُبْ قِيسَ مِسَاحَةِ' : l'image porte 'قِيسَ' ; la transcription est cohérente, mais 'أُحْسُبْ نَفَقَاتِ' devrait être 'نَفَقَاتِ' avec 'نُفَقَات' lue 'نَفَقَاتِ' : OK ; en revanche 'أُحْسُبِ القِيمَةَ' ajoute un kasra sur le ب absent de l'image (أُحْسُبْ)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'أَعَدَّ' : l'image montre 'اعدَّ' sans hamza visible ; 'الحُرَفَاءِ' et 'مِيكَانِيكِيٌّ' correspondent"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le paragraphe 'بِالإِضَافَةِ…' et les puces sont fusionnés avec la question 1 par '||', structure acceptable mais le tableau devrait se situer entre l'énoncé et 'بالإضافة'"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "19,800 : l'image montre '19,800' collé à 'وَ' ; OK. 'أَنْتَجَ' dans l'image est 'أَنتَجَ' (OK)"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَعَدَّ مِيكَانِيكِيٌّ فَاتُورَةَ إِصْلَاحِ سَيَّارَةِ أَحَدِ الحُرَفَاءِ فَكَانَتْ كَمَا يَلِي:",
+      "body": "بِالإِضَافَةِ إِلَى صِيَانَةِ السَّيَّارَةِ دَفَعَ مَالِكُهَا 325 د لِلتَّأْمِينِ وَ 120 د كَمَعْلُومٍ لِلجَوَلَانِ وَ 19,800 د لِلفَحْصِ الفَنِّيِّ.\n- أُحْسُبِ القِيمَةَ المُضَافَةَ وَأَكْمِلِ الفَاتُورَةَ.\n- أُحْسُبْ نَفَقَاتِ هَذَا المُوَاطِنِ مِنْ أَجْلِ اسْتِعْمَالِهِ لِلسَّيَّارَةِ فِي ظُرُوفٍ حَسَنَةٍ.",
+      "figureDesc": "جدول فاتورة بعمودين (البيانات / المبلغ بالد): لوازم للمكابح 76,000؛ تعديل الأضواء 25,000؛ إطارات للعجلات 360,000؛ كابل محوّل السرعة 23,500؛ يد عاملة 125,000؛ الأداء على القيمة المضافة (فارغ، منقّط)؛ المجموع (الجملة) 719,200. تحته أسطر منقطة للإجابة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "al_ahram_5eme_complet_p086_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْضٌ مُرَبَّعَةُ الشَّكْلِ طُولُ مُحِيطِهَا 480 م زُرِعَتْ قَمْحًا. أَنْتَجَ الهِكْتَارُ الوَاحِدُ مِنْهَا 6 ط مِنَ القَمْحِ الصَّافِي.",
+      "body": "- أُحْسُبْ قِيسَ مِسَاحَةِ هَذِهِ الأَرْضِ.\n- أُحْسُبْ كُتْلَةَ القَمْحِ المُنْتَجَةِ بِالطُّنِّ.\nبَاعَ صَاحِبُ الأَرْضِ القَمْحَ بِحِسَابِ 950 د لِلقِنْطَارِ الوَاحِدِ. احْسُبْ مَدْخُولَهُ مِنْ هَذِهِ الأَرْضِ؟",
+      "figureDesc": "أسطر منقطة للإجابة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "al_ahram_5eme_complet_p086_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

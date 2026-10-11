@@ -1,0 +1,343 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 40,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أَكْتَشِفُ الْأَعْدَادَ مِنْ 0 إِلَى 9",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الرِّيَاضِيَّاتُ : أَكْتَشِفُ الْأَعْدَادَ مِنْ 0 إِلَى 9",
+      "body": "الْحِسَابُ الذِّهْنِيُّ :",
+      "figureDesc": "Bandeau vert en haut de page avec le titre de la leçon et l'étiquette « الرِّيَاضِيَّاتُ » dans un cadre bleu foncé. Sous-titre « الْحِسَابُ الذِّهْنِيُّ » sur une bannière vert foncé.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p040_i1",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَقْرَأُ الْإِفَادَاتِ وَأَكْتُبُ الْأَعْدَادَ الْمُنَاسِبَةَ.",
+      "body": "يَأْتِي مُبَاشَرَةً قَبْلَ 9 ⟵ ( )\nيَأْتِي مُبَاشَرَةً بَعْدَ 3 ⟵ ( )\nأَصْغَرُ مِنْ 5 وَأَكْبَرُ مِنْ 3 ⟵ ( )\nأَكْبَرُ مِنْ 7 وَأَصْغَرُ مِنْ 9 ⟵ ( )",
+      "figureDesc": "Quatre cases arrondies vides, chacune reliée par une flèche bleue à son énoncé, disposées sur deux colonnes de deux.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p040_i2",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.93
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أَتَدَرَّبُ وَأُوَظِّفُ :",
+      "body": "",
+      "figureDesc": "Bannière rouge avec le titre de la section.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p040_i3",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُوَاصِلُ كِتَابَةَ الْأَرْقَامِ الْمُنَاسِبَةِ لِتَرْتِيبِ أَيَّامِ الْأُسْبُوعِ ثُمَّ أَكْتُبُهَا بِالْحُرُوفِ.",
+      "body": "الْأَحَدُ ⟵ ( ) ....................\nالْإِثْنَانِ ⟵ ( ) ....................\nالثُّلَاثَاءُ ⟵ ( ) ....................\nالْأَرْبَعَاءُ ⟵ ( ) ....................\nالْخَمِيسُ ⟵ ( ) ....................\nالْجُمُعَةُ ⟵ ( ) ....................\nالسَّبْتُ ⟵ ( ) ....................",
+      "figureDesc": "Sept jours de la semaine, chacun avec une flèche marron vers une case arrondie vide, suivie d'une ligne pointillée pour écrire le nombre en lettres.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p040_i4",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) أَمَامَ عَدَدِ فُصُولِ السَّنَةِ.",
+      "body": "[ ☐ | 2 ]   [ ☐ | 3 ]   [ ☐ | 4 ]   [ ☐ | 5 ]",
+      "figureDesc": "Quatre cases arrondies, chacune divisée en deux : une partie vide à gauche pour la croix (X) et une partie à droite contenant le nombre 2, 3, 4 ou 5 (de droite à gauche).",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p040_i5",
+      "topicId": "math-1-p2",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْتُبُ الْكَمَّ الْمُنَاسِبَ فِي كُلِّ لَافِتَةٍ حَسَبَ عَدَدِ عَنَاصِرِ كُلِّ مَجْمُوعَةٍ.",
+      "body": "",
+      "figureDesc": "Trois ensembles ovales, chacun relié à une bulle vide pour écrire la quantité. De droite à gauche : 5 fleurs roses (tulipes) ; 3 papillons colorés ; 6 arbres verts. Une des bulles (à gauche) est partiellement masquée par un rectangle blanc.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p040_i6",
+      "topicId": "math-1-p2",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.93
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "64 — مدرستي تونس - الثلاثي الثاني (السنة 1) — الرِّيَاضِيَّاتُ",
+      "figureDesc": "Pied de page : bandeau vert avec le numéro de page 64 (imprimé) dans un cercle violet.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p040_i7",
+      "topicId": "math-1-p2",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.93
+    }
+  ],
+  "topicId": "math-1-p2",
+  "topicTitle": "Période 2 : Nombres de 6 à 9, comparaison, ordre et lignes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p2",
+    "confidence": 0.82
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la découverte des nombres de 0 à 9 (précédent/suivant, encadrement, jours de la semaine, dénombrement), ce qui correspond à la Période 2 sur les nombres de 6 à 9 et l'ordre, même si elle recouvre aussi les nombres de 0 à 5.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Les nombres de 0 à 9",
+    "skill": "Lire, écrire, ordonner et situer les nombres de 0 à 9 (prédécesseur, successeur, encadrement) en les reliant à des contextes de la vie courante.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "nombres de 0 à 9",
+      "successeur et prédécesseur",
+      "encadrement",
+      "jours de la semaine",
+      "saisons",
+      "dénombrement"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les nombres sont reliés à des repères familiers (rang des jours de la semaine, nombre de saisons, étiquettes à associer à des collections d'objets de la nature) et des devinettes d'encadrement à compléter, un format simple à transposer à d'autres contextes pour de jeunes élèves.",
+    "themeGroup": "Les nombres de 0 à 9"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الْأَرْبِعَاءُ» dans la transcription; l'image porte «الْأَرْبَعَاءُ» (fatha sur le ب, pas kasra)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de la page est absent: «الرِّيَاضِيَّاتُ» et «أَكْتَشِفُ الْأَعْدَادَ مِنْ 0 إِلَى 9»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les rubriques «الْحِسَابُ الذِّهْنِيُّ :» et «أَتَدَرَّبُ وَأُوَظِّفُ :» ne figurent pas dans la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent: «64», «جسر النجاح - الثلاثي الثاني (السنة 1)», «الرياضيات»."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Dans l'exercice 3, les lignes «مجموعة بها 6 أشجار ⟵ لافتة» etc. sont inventées. L'image ne contient que des dessins (arbres, papillons, fleurs) avec des bulles vides, sans ce texte. Les comptes semblent corrects: 6 arbres, 3 papillons, 5 fleurs."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Dans l'exercice 2, la transcription note «[ 2 ] ( )»; l'image montre une case vide à gauche et le nombre à droite, ce qui est acceptable. Ordre visuel 5, 4, 3, 2 de gauche à droite."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«أَرْسُمُ» est vocalisé ainsi dans l'image, la transcription est conforme. Aucune autre voyelle fautive repérée."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.6,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الْأَرْبِعَاءُ» dans la transcription. L'image porte «الْأَرْبَعَاءُ», avec une fatha sur le ب."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le bandeau de titre est absent: «الرِّيَاضِيَّاتُ» et «أَكْتَشِفُ الْأَعْدَادَ مِنْ 0 إِلَى 9»."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les rubriques «الْحِسَابُ الذِّهْنِيُّ :» et «أَتَدَرَّبُ وَأُوَظِّفُ :» sont absentes."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent: «64», «جسر النجاح - الثلاثي الثاني (السنة 1)» et «الرياضيات»."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 3: les lignes «مجموعة بها 6 أشجار ⟵ لافتة ( )», etc. n'existent pas dans l'image. La page ne contient que les dessins (6 arbres, 3 papillons, 5 fleurs) reliés à des bulles vides."
+      },
+      {
+        "type": "format",
+        "severity": "minor",
+        "detail": "Exercice du calcul mental: l'image ne met qu'une seule puce, devant la consigne. La transcription la répète devant chaque ligne du corps."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "",
+      "body": "الرِّيَاضِيَّاتُ\nأَكْتَشِفُ الْأَعْدَادَ مِنْ 0 إِلَى 9",
+      "figureDesc": "شريط عنوان أخضر مع لافتة «الرِّيَاضِيَّاتُ».",
+      "answer": null
+    },
+    {
+      "kind": "section_header",
+      "number": "",
+      "instruction": "",
+      "body": "الْحِسَابُ الذِّهْنِيُّ :",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "• أَقْرَأُ الْإِفَادَاتِ وَأَكْتُبُ الْأَعْدَادَ الْمُنَاسِبَةَ.",
+      "body": "يَأْتِي مُبَاشَرَةً قَبْلَ 9 ⟵ ( )\nيَأْتِي مُبَاشَرَةً بَعْدَ 3 ⟵ ( )\nأَصْغَرُ مِنْ 5 وَأَكْبَرُ مِنْ 3 ⟵ ( )\nأَكْبَرُ مِنْ 7 وَأَصْغَرُ مِنْ 9 ⟵ ( )",
+      "figureDesc": "حلقات بيضاوية فارغة لكتابة الأعداد المناسبة أمام كل عبارة.",
+      "answer": null
+    },
+    {
+      "kind": "section_header",
+      "number": "",
+      "instruction": "",
+      "body": "أَتَدَرَّبُ وَأُوَظِّفُ :",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُوَاصِلُ كِتَابَةَ الْأَرْقَامِ الْمُنَاسِبَةِ لِتَرْتِيبِ أَيَّامِ الْأُسْبُوعِ ثُمَّ أَكْتُبُهَا بِالْحُرُوفِ.",
+      "body": "الْأَحَدُ ⟵ ( ) ....................\nالْإِثْنَانِ ⟵ ( ) ....................\nالثُّلَاثَاءُ ⟵ ( ) ....................\nالْأَرْبَعَاءُ ⟵ ( ) ....................\nالْخَمِيسُ ⟵ ( ) ....................\nالْجُمُعَةُ ⟵ ( ) ....................\nالسَّبْتُ ⟵ ( ) ....................",
+      "figureDesc": "قائمة رأسية بأيام الأسبوع تقابلها خانات فارغة لكتابة الأرقام وأسطر منقطة لكتابة الأعداد بالحروف.",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) أَمَامَ عَدَدِ فُصُولِ السَّنَةِ.",
+      "body": "( ) | 2\n( ) | 3\n( ) | 4\n( ) | 5",
+      "figureDesc": "أربع بطاقات مستطيلة، في كل واحدة خانة فارغة على اليسار والعدد على اليمين؛ ترتيبها من اليسار إلى اليمين: 5، 4، 3، 2.",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْتُبُ الْكَمَّ الْمُنَاسِبَ فِي كُلِّ لَافِتَةٍ حَسَبَ عَدَدِ عَنَاصِرِ كُلِّ مَجْمُوعَةٍ.",
+      "body": "",
+      "figureDesc": "ثلاث مجموعات داخل أشكال بيضاوية، كل واحدة متصلة بدائرة فارغة لكتابة الكمية: من اليسار إلى اليمين، الأولى فيها 6 أشجار خضراء، والثانية فيها 3 فراشات ملونة، والثالثة فيها 5 زهرات حمراء.",
+      "answer": null
+    },
+    {
+      "kind": "footer",
+      "number": "",
+      "instruction": "",
+      "body": "64\nجسر النجاح - الثلاثي الثاني (السنة 1)\nالرياضيات",
+      "figureDesc": "",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.93,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَقْرَأُ الْإِفَادَاتِ وَأَكْتُبُ الْأَعْدَادَ الْمُنَاسِبَةَ.",
+      "body": "• يَأْتِي مُبَاشَرَةً قَبْلَ 9 ⟵ ( )\n• يَأْتِي مُبَاشَرَةً بَعْدَ 3 ⟵ ( )\n• أَصْغَرُ مِنْ 5 وَأَكْبَرُ مِنْ 3 ⟵ ( )\n• أَكْبَرُ مِنْ 7 وَأَصْغَرُ مِنْ 9 ⟵ ( )",
+      "figureDesc": "حلقات بيضاوية مخصصة لكتابة الأعداد المناسبة أمام كل عبارة.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p040_i1",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُوَاصِلُ كِتَابَةَ الْأَرْقَامِ الْمُنَاسِبَةِ لِتَرْتِيبِ أَيَّامِ الْأُسْبُوعِ ثُمَّ أَكْتُبُهَا بِالْحُرُوفِ.",
+      "body": "الْأَحَدُ ⟵ ( ) ....................\nالْإِثْنَانِ ⟵ ( ) ....................\nالثُّلَاثَاءُ ⟵ ( ) ....................\nالْأَرْبِعَاءُ ⟵ ( ) ....................\nالْخَمِيسُ ⟵ ( ) ....................\nالْجُمُعَةُ ⟵ ( ) ....................\nالسَّبْتُ ⟵ ( ) ....................",
+      "figureDesc": "قائمة رأسية بأيام الأسبوع تقابلها دوائر لكتابة الأرقام وأسطر لكتابة الأعداد بالحروف.",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p040_i2",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) أَمَامَ عَدَدِ فُصُولِ السَّنَةِ.",
+      "body": "[ 2 ] ( )\n[ 3 ] ( )\n[ 4 ] ( )\n[ 5 ] ( )",
+      "figureDesc": "بطاقات مستطيلة تحتوي على الأرقام 2، 3، 4، 5 وأمام كل بطاقة خانة بيضاوية لوضع العلامة.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p040_i3",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْتُبُ الْكَمَّ الْمُنَاسِبَ فِي كُلِّ لَافِتَةٍ حَسَبَ عَدَدِ عَنَاصِرِ كُلِّ مَجْمُوعَةٍ.",
+      "body": "مجموعة بها 6 أشجار ⟵ لافتة ( )\nمجموعة بها 3 فراشات ⟵ لافتة ( )\nمجموعة بها 5 زهرات ⟵ لافتة ( )",
+      "figureDesc": "ثلاث مجموعات دائرية: الأولى تحتوي على 6 أشجار خضراء، الثانية تحتوي على 3 فراشات ملونة، والثالثة تحتوي على 5 زهرات حمراء، متصلة بلافتات دائرية فارغة لكتابة الكمية.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "jisr_ennajah_1ere_evaluations_p040_i4",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "linkStatus": "clean",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

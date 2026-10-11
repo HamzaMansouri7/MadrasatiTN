@@ -1,0 +1,163 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 15,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مناظرة 4 سنة سادسة (أفريل 2024) : الكسور، النسبة المئوية (التسمين والربح)، المسافة والسرعة والمدة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 1 (6 نقاط)",
+      "instruction": "1 / احسب قيمة مدخرات الفلاح إذا علمت أن ثمن البقرة الواحدة 3550 د.\n2/ أحسب النسبة المائوية للربح إذا علمت أن ثمن البيع الجملي قدر بـ 33424.125 د.",
+      "body": "لبعث مشروع لتربية الماشية سحب فلاح 5/7 مدخراته وقرر شراء 14 خروفا و7 بقرات لكنّه بقي في حاجة لـ 350 د فقرر شراء 16 خروفا و5 بقرات فبقي له 5250 د.\n1 / احسب قيمة مدخرات الفلاح إذا علمت أن ثمن البقرة الواحدة 3550 د.\nبعد أشهر قدرت كلفة التسمين 5% ثمن الشراء.\n2/ أحسب النسبة المائوية للربح إذا علمت أن ثمن البيع الجملي قدر بـ 33424.125 د.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "concours_mathematiques_corriges_p015_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 2 (6 نقاط)",
+      "instruction": "1/ إبحث عن المدّة الزمنية المستغرقة في المرحلة الأولى إذا علمت أن الدراجة تقطع 12.56 كم/س.\n2/ أبحث عن المسافة الفاصلة بين المحطة والضيعة إذا علمت أنه وصل الضيعة على الساعة السابعة صباحا و30 دق وأنه بقي ينتظر الحافلة مدّة 1/10 س.",
+      "body": "يقطع فلاح مسافة من المنزل إلى ضيعته كل صباح من الساعة 5 و 56 دق صباحا على 3 مراحل :\n- المرحلة الأولى على دراجة نارية شعاع عجلتها 0.4 م. حيث تقوم بـ 2000 دورة من المنزل إلى محطة الحافلة.\n- المرحلة الثانية راكبا حافلة حيث تقطع الحافلة 75 كم/س.\n- المرحلة الثالثة راجلا مسافة 1.5 كم بمعدّل 6 كم/س.\n1/ إبحث عن المدّة الزمنية المستغرقة في المرحلة الأولى إذا علمت أن الدراجة تقطع 12.56 كم/س.\n2/ أبحث عن المسافة الفاصلة بين المحطة والضيعة إذا علمت أنه وصل الضيعة على الساعة السابعة صباحا و30 دق وأنه بقي ينتظر الحافلة مدّة 1/10 س.",
+      "figureDesc": "En-tête : cadre décoratif avec drapeau tunisien (croissant et étoile rouges), texte « مناظرة 4 سنة سادسة », « أفريل 2024 », « رياضيات », « وليد الكراي ». Un tampon circulaire avec numéro de téléphone figure à gauche et un filigrane bleu arabe en diagonale. Numéro de page : 1.",
+      "answer": null,
+      "id": "concours_mathematiques_corriges_p015_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-6-p3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u6",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit d'un sujet du concours d'entrée aux collèges pilotes (avril 2024) composé de situations-problèmes à plusieurs étapes (fractions, pourcentages, vitesse et distance), ce qui correspond à la période de synthèse et de résolution de problèmes, et non à un seul chapitre thématique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    17,
+    18
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Fractions, pourcentages, distance-vitesse-durée",
+    "skill": "Résoudre des problèmes à étapes combinant fractions, pourcentages (coût d'engraissement, bénéfice) et calculs de distance, vitesse et durée.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "fractions",
+      "pourcentage",
+      "vitesse",
+      "durée",
+      "distance",
+      "concours 6ème"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations contextualisées rurales (agriculteur, élevage de bétail, trajet maison-ferme en trois étapes) qui enchaînent un système d'équations implicite avec des fractions, puis des calculs de circonférence de roue, vitesse et temps, utiles pour créer des problèmes multi-étapes de type concours.",
+    "themeGroup": "Durées, vitesse et échelle"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.9,
+    "reviewed": true
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « مناظرة 4 سنة سادسة », « أفريل 2024 », « رياضيّات », « وليد الكراي »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« بعد أشهر » : l'image porte « بعد أشهر » avec la même graphie, mais la phrase est coupée : « قدرت كلفة التسمين 5% ثمن الشراء » omet « من » (image : « 5% ثمن الشراء », donc plutôt correct). À vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المسافة الفاصلة بين المحطة والضيعة » : l'image porte « و الضيعة » avec un espace, sans différence de sens."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« يقطع فلاح » : l'image porte « يقطع فلاح » ; correct. En revanche « سحب فلاح 5/7 مدخراته » est correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المرحلة الثانية راكبا حافلة حيث تقطع الحافلة 75 كم/س » : correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« النسبة المائوية » : l'image porte « المائوية » ; correct."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Ordre incohérent : la question 1 de la situation 1 est répétée avant l'énoncé (« || » en début), et la situation 2 place les questions avant l'énoncé. L'énoncé doit précéder les questions."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Duplication : la question 1 de la situation 1 apparaît deux fois, et les questions 1 et 2 de la situation 2 apparaissent deux fois."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel visible dans l'image (« الوضعيّة », « لكنّه », « مدّة », « المدّة », « ثمن ») : certains signes sont omis, notamment « الوضعيّة » (la shadda est absente) et « بمعدّل »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 1 (6 نقاط)",
+      "instruction": "1 / احسب قيمة مدخرات الفلاح إذا علمت أن ثمن البقرة الواحدة 3550 د.",
+      "body": "لبعث مشروع لتربية الماشية سحب فلاح 5/7 مدخراته وقرر شراء 14 خروفا و7 بقرات لكنّه بقي في حاجة لـ 350 د فقرر شراء 16 خروفا و5 بقرات فبقي له 5250 د.\n1 / احسب قيمة مدخرات الفلاح إذا علمت أن ثمن البقرة الواحدة 3550 د.\nبعد أشهر قدرت كلفة التسمين 5% ثمن الشراء.\n2 / أحسب النسبة المائوية للربح إذا علمت أن ثمن البيع الجملي قدر بـ 33424.125 د.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "concours_math_6eme_corriges_p015_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 2 (6 نقاط)",
+      "instruction": "1/ إبحث عن المدّة الزمنية المستغرقة في المرحلة الأولى إذا علمت أن الدراجة تقطع 12.56 كم/س.\n2/ أبحث عن المسافة الفاصلة بين المحطة والضيعة إذا علمت أنه وصل الضيعة على الساعة السابعة صباحا و30 دق وأنه بقي ينتظر الحافلة مدّة 1/10 س.",
+      "body": "يقطع فلاح مسافة من المنزل إلى ضيعته كل صباح من الساعة 5 و 56 دق صباحا على 3 مراحل :\n- المرحلة الأولى على دراجة نارية شعاع عجلتها 0.4 م. حيث تقوم بـ 2000 دورة من المنزل إلى محطة الحافلة.\n- المرحلة الثانية راكبا حافلة حيث تقطع الحافلة 75 كم/س.\n- المرحلة الثالثة راجلا مسافة 1.5 كم بمعدّل 6 كم/س.\n1/ إبحث عن المدّة الزمنية المستغرقة في المرحلة الأولى إذا علمت أن الدراجة تقطع 12.56 كم/س.\n2/ أبحث عن المسافة الفاصلة بين المحطة والضيعة إذا علمت أنه وصل الضيعة على الساعة السابعة صباحا و30 دق وأنه بقي ينتظر الحافلة مدّة 1/10 س.",
+      "figureDesc": "ختم دائري مع إمضاء ورقم هاتف (Tel : 20 803 18...) على اليسار؛ علم تونس في أعلى الصفحة؛ علامة مائية زرقاء",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "concours_math_6eme_corriges_p015_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "examScope": "full_year",
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

@@ -1,0 +1,107 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 68,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "Examen de français (et non d'arabe) : vocabulaire des pièces de la maison, exercice 5 « je colorie le mot juste », avec le tableau d'attribution des notes (critères C1, C2, C3, C5)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "je colorie le mot juste :",
+      "body": "Pour chaque image, choisir le mot juste parmi trois propositions. Image 1 : un jardin / la cour / le salon. Image 2 : la classe / la cuisine / la maison. Image 3 : une chambre / dimanche / la télé.",
+      "figureDesc": "Trois dessins en noir et blanc dans un tableau à trois colonnes. 1) Un salon avec un canapé, un fauteuil, une table basse et une porte-fenêtre. 2) Une cuisine avec un réfrigérateur, des placards, des ustensiles suspendus, une casserole, un évier et une corbeille de fruits. 3) Une chambre avec un lit, un bureau, une chaise, un ballon et un cartable. Sous chaque image figurent trois mots dans des cases.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p068_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Tableau d'attribution des notes",
+      "body": "Niveau de maîtrise / Critères minimaux (C1, C2, C3) / Critère de perfectionnement (C5). Aucune maîtrise : C1 = 0, C2 = 0, C3 = 0. Maîtrise minimale insuffisante : C1 de 0,5 à 2,5 ; C2 de 0,5 à 2,5 ; C3 de 0,5 à 3,5. Maîtrise minimale : C1 = 3 ; C2 = 3 ; C3 = 4. Maîtrise maximale : C1 de 3,5 à 4,5 ; C2 de 3,5 à 4,5 ; C3 de 4,5 à 6. C5 : de 0 à 5. note : ...../20",
+      "figureDesc": "Tableau de barème avec les niveaux de maîtrise en lignes et les critères C1, C2, C3 et C5 en colonnes. La cellule C5 est fusionnée (0 à 5). En bas, une case « note : ..... / 20 ». Le filigrane « 4OURAJAA.COM » traverse la page.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p068_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u4",
+    "confidence": 0.14
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de français (vocabulaire des pièces de la maison) avec un barème d'évaluation, et la liste officielle ne comporte aucun chapitre de français, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Vocabulaire des pièces de la maison",
+    "skill": "Identifier et choisir le mot juste correspondant à une image pour désigner une pièce ou un lieu de la maison.",
+    "pageType": "mixed",
+    "formats": [
+      "qcm",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "vocabulaire",
+      "maison",
+      "pièces",
+      "mot juste",
+      "image",
+      "barème"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Le format « colorier le mot juste » parmi trois propositions illustrées est facile à transposer à d'autres champs lexicaux, et le barème par critères (minimaux et perfectionnement) peut inspirer une grille d'évaluation, mais les distracteurs de l'exercice sont peu soignés.",
+    "themeGroup": "Vocabulaire de la maison"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« Pour chaque image, choisir le mot juste parmi trois propositions » est une consigne ajoutée qui ne figure pas sur l'image ; seule la consigne « je colorie le mot juste : » est visible."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane « 4OURAJAA.COM » (HOURAJAA.COM) n'est pas transcrit ; c'est un élément parasite, donc peu grave."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Le C5 est présenté comme « de 0 à 5 », alors que l'image l'écrit en colonne « 0 / à / 5 ». La cellule C5 sur la ligne « Maîtrise maximale » apparaît vide (« .... »), ce qui n'est pas indiqué."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de la colonne « Critère de perfectionnement » est coupé sur l'image (« perfectionn... ») ; la transcription le complète, ce qui est acceptable."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

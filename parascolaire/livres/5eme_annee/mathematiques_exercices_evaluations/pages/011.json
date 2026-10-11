@@ -1,0 +1,129 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 11,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مسائل حسابية: حساب مداخيل العم طاهر من بيع الكتب وعدد الكتب المباعة (قائمة الكتب التي لم يقع بيعها حسب المستوى)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "احْسُبْ مَدْخُولَ العَمِّ طَاهِرٍ عِنْدَ بَيْعِ كُلِّ الكُتُبِ.",
+      "body": "سطر منقّط لكتابة الإجابة.",
+      "figureDesc": "سطر منقّط للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p011_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "رَتِّبِ المَبَالِغَ المَالِيَّةَ الوَارِدَةَ فِي العَمَلِيَّةِ السَّابِقَةِ مِنَ الأَصْغَرِ إِلَى الأَكْبَرِ:",
+      "body": "سطر منقّط لكتابة الإجابة.",
+      "figureDesc": "سطر منقّط للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p011_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "هَذِهِ قَائِمَةُ الكُتُبِ الَّتِي لَمْ يَقَعْ بَيْعُهَا.",
+      "body": "المستوى: س1، س2، س3، س4، س5، س6. عدد الكتب: 750، 580، 490، 670، 390، 169.",
+      "figureDesc": "جدول من سطرين: المستوى (س1 إلى س6) وعدد الكتب (750، 580، 490، 670، 390، 169)",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_evaluations_p011_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "احْسُبْ عَدَدَ الكُتُبِ الَّتِي تَمَّ بَيْعُهَا مِنْ كُلِّ مُسْتَوًى.",
+      "body": "جدول للإتمام فيه الأسطر: المستوى، عدد الكتب المطبوعة، عدد الكتب التي لم يقع بيعها، عدد الكتب التي تم بيعها.",
+      "figureDesc": "جدول فارغ من ست خانات في كل سطر (المستوى، عدد الكتب المطبوعة، عدد الكتب التي لم يقع بيعها، عدد الكتب التي تم بيعها) ليملأه التلميذ",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p011_i4",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "احْسُبِ المَبْلَغَ الَّذِي نَقَصَ مِنْ مَرَابِيحِ العَمِّ طَاهِرٍ.",
+      "body": "أسطر منقّطة لكتابة الحل.",
+      "figureDesc": "ستة أسطر منقّطة للحل",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p011_i5",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "احْسُبْ كَمْ بَقِيَ لِلعَمِّ طَاهِرٍ.",
+      "body": "سطران منقّطان لكتابة الحل.",
+      "figureDesc": "سطران منقّطان للحل",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p011_i6",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p5",
+    "confidence": 0.25
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de problèmes de mathématiques (revenus de l'oncle Taher, soustraction du nombre de livres vendus, tri de montants du plus petit au plus grand) portant sur des nombres de plusieurs chiffres, probablement des décimaux, ce qui correspond à la Période 1 (grands nombres et opérations) ou à la Période 2 (décimaux), sans certitude.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes de ventes et revenus",
+    "skill": "Résoudre un problème en plusieurs étapes avec des montants et des quantités (addition, soustraction, comparaison et rangement de nombres).",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "problème",
+      "revenus",
+      "vente de livres",
+      "soustraction",
+      "rangement de nombres",
+      "tableau à compléter"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un même contexte de petit commerce (un libraire qui vend des livres par niveau scolaire) sert de fil conducteur à une suite de questions : calculer le revenu total, ranger des montants, compléter un tableau (imprimés, invendus, vendus), puis calculer le manque à gagner et le reste.",
+    "themeGroup": "Problèmes d'achat, vente et bénéfice"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

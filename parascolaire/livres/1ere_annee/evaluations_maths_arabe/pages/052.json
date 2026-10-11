@@ -1,0 +1,105 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 52,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أُكَوِّنُ اتِّحَادَ مَجْمُوعَتَيْنِ مُنْفَصِلَتَيْنِ وَأُمَثِّلُهُ",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْتَشِفُ الْخُطْوَةَ الْمُنَاسِبَةَ وَأُوَاصِلُ كِتَابَةَ الْأَعْدَادِ.",
+      "body": "0 ⟶ 2 ⟶ ..... ⟶ ..... ⟶ 8 } الْخُطْوَةُ هِيَ زِيَادَةُ .....\n..... ⟶ 3 ⟶ 6 ⟶ .....\n..... ⟶ ..... ⟶ 6 ⟶ 9 } الْخُطْوَةُ هِيَ زِيَادَةُ .....",
+      "figureDesc": "سلاسل أعداد وأسهم مع أقواس لتحديد مقدار الخطوة في كل متتالية",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p052_i1",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُتِمُّ بِمَا يُنَاسِبُ :",
+      "body": "مجموعة تضم مجموعتين جزئيتين: مجموعة بها 4 حبات إجاص ومجموعة بها 6 حبات تفاح، مع دوائر فارغة لتسجيل عدد عناصر كل مجموعة وعدد المجموعة الكلية بعد الاتحاد.",
+      "figureDesc": "رسم لخط مغلق يضم مجموعتين منفصلتين؛ الأولى بها 4 إجاصات ترتبط بدائرة فارغة، والثانية بها 6 تفاحات ترتبط بدائرة فارغة، والمجموعة الكلية ترتبط بدائرة فارغة",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p052_i2",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُوَحِّدُ بَيْنَ الْمَجْمُوعَتَيْنِ التَّالِيَتَيْنِ وَأُمَثِّلُ ذَلِكَ.",
+      "body": "مجموعة بها 7 أزهار وبجانبها دائرة فارغة، ومجموعة بها 5 فراشات كُتب أسفلها العدد 5.",
+      "figureDesc": "مجموعتان منفصلتان؛ الأولى تحتوي على 7 زهرات وترتبط بدائرة فارغة، والثانية تحتوي على 5 فراشات وترتبط بالعدد 5، والمطلوب توحيدهما بخط مغلق وتمثيل الاتحاد",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p052_i3",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكْمِلُ الْمُعْطَيَاتِ النَّاقِصَةَ :",
+      "body": "مجموعة بها 3 أسماك كُتب بجانبها سمكة وردية مع دائرة فارغة أسفلها، ومجموعة كبرى فارغة كُتب أسفلها العدد 8 وبجانبها سمكة زرقاء ودائرة فارغة، لرسم العناصر أو إكمال المعطيات العددية.",
+      "figureDesc": "مجموعة بها 3 أسماك وردية ودائرة فارغة لكتابة العدد، ومجموعة بيضاوية فارغة تحمل تسمية سمكة زرقاء وأسفلها العدد 8 ودائرة فارغة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p052_i4",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "topicId": "math-1-p3",
+  "topicTitle": "Période 3 : Le nombre 10, notion d'addition et formes géométriques",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la réunion de deux ensembles disjoints (4+6, 7+5, 3+5=8), soit le sens de l'addition, avec des sauts de 2 et de 3 dans les suites de nombres. Les totaux atteignent 10 et 12, ce qui dépasse les périodes 1 et 2 et se rapproche de la Période 3 (notion d'addition) ou de la Période 4, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Union de deux ensembles disjoints",
+    "skill": "Réunir deux ensembles disjoints, représenter la réunion et trouver le nombre total d'éléments (addition), avec une suite numérique à pas constant en échauffement.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "calcul"
+    ],
+    "keywords": [
+      "union d'ensembles",
+      "ensembles disjoints",
+      "addition",
+      "suites de nombres",
+      "dénombrement",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations illustrées de fruits, fleurs, papillons et poissons pour réunir deux collections et noter les effectifs dans des cercles à compléter, avec un exercice de complément (nombre manquant) et une suite à pas constant en échauffement.",
+    "themeGroup": "Réunion d'ensembles"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

@@ -1,0 +1,104 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 29,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 7 - قيس الأطوال (4): تطبيقات",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لصُنْع طيّارة استعمل سعيد الخيوط التّالية :",
+      "body": "95 صم - 1 م - 13 دسم .\n- ما هو طول الخيوط الثّلاثة؟\n- ولشدّها إلى بعضها خمر لكلّ عقدة 2 دسم.\n- ما هو طول الخيط الذي تحصّل عليه سعيد؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p029_i1",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هي المسافة التي لم تُحفر بعدُ؟",
+      "body": "عزمت شركة على حفر خندق طوله 17 هم وذلك لمدّ قنوات المياه. حفر العمّال في المرحلة الأولى 83 دكم وفي المرحلة الثّانية 565 م.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p029_i2",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ) ما هو بالصّنتيمتر طول المكتب؟\nب) ما هو بالصّنتيمتر الطّول الحقيقي لهذا المكتب؟",
+      "body": "اتّخذتُ مسطرة مدرّجة من 0 إلى 28 صنتيمترا لقيس طول مكتبي، فوجدت أنّ قيس الطّول هو أربع مرّات طول المسطرة.\nأ) ما هو بالصّنتيمتر طول المكتب؟\nانتبهت بعد القيام بالقيس أنّ كلّ طرف من طرفَي المسطرة غير مدرّج وأنّ طول كلّ طرف هو 15 مم.\nب) ما هو بالصّنتيمتر الطّول الحقيقي لهذا المكتب؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p029_i3",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "حدّد من بين الأطوال الآتية القامات الممكنة لخديجة.",
+      "body": "طول قامة آمنة 1 م و 48 صم. أمّا طول قامة أختها خديجة فيزيد عنها بأقلّ من 1 دسم.",
+      "figureDesc": "جدول من سبع خانات فيه الأطوال: 1 م و 54 صم ؛ 158 صم ؛ 14 دسم و 9 صم ؛ 1 م و 65 صم ؛ 148 صم ؛ 15 دسم ونصف ؛ 1 م و 42 صم",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p029_i4",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-p6",
+  "topicTitle": "Période 6 : Mesure du temps, capacités, masses et synthèse",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur des problèmes de mesure de longueurs et de conversions d'unités (cm, dm, m, hm, dam, mm), ce qui relève des conversions d'unités de mesure et de la synthèse de la Période 6, mais aucun chapitre ne traite explicitement les longueurs, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    116
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesure de longueurs et conversions",
+    "skill": "Résoudre des problèmes de mesure en convertissant et en additionnant des longueurs exprimées dans des unités différentes (mm, cm, dm, m, dam, hm).",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "longueurs",
+      "conversion d'unités",
+      "problèmes de mesure",
+      "addition de longueurs",
+      "comparaison de tailles"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes de la vie courante (fabrication d'un cerf-volant avec des ficelles nouées, tranchée à creuser en étapes, mesure d'un bureau avec une règle dont les extrémités ne sont pas graduées, taille possible d'une sœur) qui obligent à convertir des unités et à raisonner sur des écarts.",
+    "themeGroup": "Longueurs"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

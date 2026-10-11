@@ -1,0 +1,131 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 99,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 27 – الأعداد من 100 000 إلى 999 999 : تفكيك وتركيب",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اِبحث عن مجموعة الأعداد المتكوِّنة من ستّة أرقام مجموعها 3.",
+      "body": "اِبحث عن مجموعة الأعداد المتكوِّنة من ستّة أرقام مجموعها 3.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p099_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "فكّك الأعداد التّالية وفق الصّيغة القانونيّة :",
+      "body": "695 784 = ......................\n901 650 = ......................",
+      "figureDesc": "سطران منقّطان للإجابة بعد كل عدد.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p099_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أتمّ المعادلتين التّاليتين:",
+      "body": "(6 x 100 000) + (4 x 10 000) + (8 x 1 000) + (10 x 7) + 5 = ————\n8 + (...... x 6) + (—— x 7) + (—— x 2) + (—— x 4) = 427 608",
+      "figureDesc": "فراغات لإتمام المعادلتين.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p099_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أكمل تعمير الجدول التالي :",
+      "body": "الأعمدة: العدد | عدد الآلاف | الباقي\nالأعداد: 26 350 ; 275 640 ; 750 ; 183 000",
+      "figureDesc": "جدول من ثلاثة أعمدة (العدد، عدد الآلاف، الباقي) وأربعة أسطر؛ عمودا عدد الآلاف والباقي فارغان.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p099_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكمل كتابة أعداد السِّلسلة لتَحْصُلَ على سلسلة تتزايدُ بـ 10 000.",
+      "body": "176 000 ، 186 000 ، ثم أربع خانات فارغة",
+      "figureDesc": "شريط من ست خانات؛ الخانتان الأوليان (من اليمين) تحتويان 176 000 و186 000 والبقية فارغة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p099_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "كانت الأوراق البنكيّة التي عدّها قابض بنك هي من فئة 5 دنانير.",
+      "body": "أ) إذا كـان المبلغ الذي أحصـاه هو 900 000 مي فأوْجد عدد الأوراق المالية التي تَكَوَّنَ مِنْهَا هذا المبلغ.\nب) إذا كَوَّنَ قـابض البنك بواسطة هذه الأوراق رِزَمًا بكلّ واحدة 20 ورقة فأوجد عدد الرّزَم التي كوّنها.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "mathematiques_exercices_corriges_p099_i6",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.37
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les nombres à 6 chiffres (100 000 à 999 999) : décomposition, composition, suites de 10 000 et problème de billets en monnaie, ce qui correspond à la Période 1 (nombres à 5 et 6 chiffres, décomposition, monnaie).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    132
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 999 999",
+    "skill": "Décomposer, composer et ordonner des nombres de six chiffres en utilisant la valeur positionnelle des chiffres.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "schema_tableau",
+      "probleme"
+    ],
+    "keywords": [
+      "nombres à six chiffres",
+      "décomposition canonique",
+      "valeur positionnelle",
+      "milliers",
+      "suite de 10 000 en 10 000",
+      "billets de banque"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Variété d'activités sur la décomposition (recherche des nombres de somme de chiffres donnée, équations à compléter, tableau milliers/reste, suite arithmétique) et un problème contextualisé : comptage de billets de 5 dinars et formation de liasses de 20.",
+    "themeGroup": "Grands nombres"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

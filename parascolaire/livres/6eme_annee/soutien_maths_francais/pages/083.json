@@ -1,0 +1,174 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 83,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Sujet d'évaluation de français (thème du robot) : B- Grammaire et C- Conjugaison. La page ne traite pas de mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "Souligne le complément circonstanciel de lieu (CCL) et entoure le complément circonstanciel de temps (CCT) :",
+      "body": "-L'après- midi, je rentre de l'école. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p083_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "Complète par le pronom qui convient :",
+      "body": "-J'ai un robot, je …aime beaucoup. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p083_i2",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "Transforme cette phrase en une phrase interrogative :",
+      "body": "-Le robot a construit une fusée. (1pt)",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p083_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "Transforme la phrase suivante en une phrase négative :",
+      "body": "-Il m'attendait au bas de l'escalier. (1pt)",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p083_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "Mets la phrase suivante à la voix passive :",
+      "body": "-Le robot ouvre la porte. (1pt)",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p083_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "17",
+      "instruction": "Mets la phrase suivante au discours indirect :",
+      "body": "-L'enfant dit : « le robot sait tout faire. » (1pt)",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p083_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "18",
+      "instruction": "C- Conjugaison (6pts) : Conjugue les verbes entre parenthèses aux temps demandés :",
+      "body": "a- Ali et sa sœur (aimer)……….le robot magique. (présent de l'indicatif)\nb- Les scientifiques (construire)……….une fusée. (Futur simple)\nc- Le mécanicien (finir)……….de monter le moteur. (Passé composé)\nd- Les robots (pouvoir)……….imiter l'homme. (Conditionnel présent)\ne- Les astronautes (s'entraîner)……….pour atterrir sur la lune. (Imparfait)\nf- (Demander)……….l'avis des experts. (2ème personne du pluriel à l'impératif présent)",
+      "figureDesc": "Points de suspension à compléter ; barème 1pt par sous-question (coupé sur le bord droit)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p083_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.31
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un sujet d'évaluation de français couvrant plusieurs notions (compléments circonstanciels, pronoms, formes de phrase, voix passive, discours indirect, conjugaison à plusieurs temps), donc une évaluation générale qui ne correspond pas à un seul module.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Grammaire et conjugaison : évaluation",
+    "skill": "Maîtriser les compléments circonstanciels, les pronoms, les transformations de phrases (interrogative, négative, passive, discours indirect) et conjuguer des verbes à différents temps.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "grammaire",
+      "conjugaison",
+      "transformation de phrases",
+      "complément circonstanciel",
+      "voix passive",
+      "discours indirect"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Sujet d'évaluation structuré autour d'un thème unique (le robot), où chaque exercice court est noté sur 1 point et où les phrases à transformer ou à conjuguer partagent un même univers, ce qui est réutilisable pour construire des évaluations thématiques cohérentes.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de section « B- Grammaire : (6pts) » visible en haut de l'image n'est pas transcrit (seul « C- Conjugaison (6pts) » apparaît)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 13 : l'image indique « qui convient » ; la transcription l'a correctement reproduit, mais « je …aime » est transcrit sans l'espace/pointillés exacts. Écart négligeable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 18 d : l'image indique « l' homme » avec une espace après l'apostrophe ; la transcription donne « l'homme »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 17 : l'image indique « le robot sait tout faire » ; la transcription l'a respecté. Les points de suite/pointillés de réponse ne sont pas transcrits, ce qui est acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

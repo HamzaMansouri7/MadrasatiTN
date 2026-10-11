@@ -69,6 +69,6 @@ docs/
 /_sources_candidates/
 
 # private commercial books + OCR archive, never publish
-parascolaire/
+parascolaire_frozen/
 data/parascolaire/
 __pycache__/

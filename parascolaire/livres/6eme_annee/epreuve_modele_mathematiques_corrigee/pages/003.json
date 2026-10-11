@@ -1,0 +1,257 @@
+{
+  "book": "epreuve_modele_mathematiques_corrigee",
+  "page": 3,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Problème : aires du triangle et du trapèze rectangle, pourcentages, proportions et calcul du revenu net (production d'huile d'olive)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "المسألة رقم 3: ( 8 نقاط )",
+      "body": "يملك فلاّح أرضا مُمثّلة بالرّسم المُصاحب قيس مساحتها الجمليّة 5,12 هكتار.\n▪ طول [ أ ع ] = 192 م.\n▪ طول [ هـ د ] = 124,5 م.\n▪ مساحة المثلّث أ هـ ب = 3/5 مساحة شبه المنحرف ب هـ د ج.",
+      "figureDesc": "Figure composée d'un triangle (sommet أ, base [هـ ب]) et d'un trapèze rectangle ب هـ د ج situé en dessous. La hauteur [أ ع] est tracée en pointillés, perpendiculaire à [هـ ب] en ع (angle droit marqué), et mesure 192 م. Le côté [هـ د] vertical mesure 124,5 م. Les points sont : أ (sommet), هـ (à gauche), ب (à droite), د (bas gauche), ج (bas droite).",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_mathematiques_corrigee_p003_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أثبت حسابيّا أنّ طول [ ب ج ] = 195,5 م.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_mathematiques_corrigee_p003_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسب كمّيّة الزّيت المُتحصّل عليها إذا علمت أنّ 1 كغ من حبّ الزّيتون عند عصره يعطي 8 % من كتلته زيتا.",
+      "body": "غرس الفلاّح كامل مساحة الأرض المثلّثة و 40 % من مساحة الأرض شبه المنحرف أشجار زيتون فاُحتلّت الشّجرة الواحدة مساحة 12,5 م² و أنتجت معدّل نصف قنطار من حبّ الزّيتون.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_mathematiques_corrigee_p003_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "احسب الدّخل الصّافي للفلاّح.",
+      "body": "يبيع الفلاّح اللّتر الواحد زيتا بحساب 15 د و تمثّل مصاريف العصر و الجني 3/16 ثمن البيع الجمليّ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_mathematiques_corrigee_p003_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.33
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit d'un problème de synthèse à plusieurs étapes (aires du triangle et du trapèze, pourcentages, production d'huile, revenu net) typique de la préparation au concours d'entrée aux collèges pilotes, qui relève de la Période 6.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problème aires et pourcentages",
+    "skill": "Résoudre un problème en plusieurs étapes combinant aires du triangle et du trapèze rectangle, pourcentages, proportions et calcul d'un revenu net.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "aire du triangle",
+      "trapèze rectangle",
+      "pourcentage",
+      "huile d'olive",
+      "revenu net",
+      "conversion d'unités"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation agricole authentique tunisienne : un terrain composé d'un triangle et d'un trapèze, dont on déduit une longueur manquante à partir de l'aire totale et d'un rapport d'aires. On calcule ensuite le nombre d'arbres plantés, la production d'olives, le rendement en huile, puis le revenu net après déduction des frais exprimés en fraction du prix de vente. Ce schéma est transposable à d'autres cultures ou produits.",
+    "themeGroup": "Pourcentages et proportionnalité"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le paragraphe 'غرس الفلاّح كامل مساحة...' (avant la question 2) est placé après la question 2 comme si c'était sa réponse. De même, 'يبيع الفلاّح اللّتر...' (avant la question 3) est mis après la question 3. Ces textes sont des énoncés et non des réponses ; ils doivent précéder les questions 2 et 3."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'قيس مساحتها الجمليّة' : l'image donne 'قيس' mais le sens attendu est 'تقدّر'; à vérifier. Dans l'image, la mention est bien 'قيس', donc OK, mais la transcription 'الجمليّة' est correcte."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les tashkeels sont ajoutés de façon inexacte : 'مُمثَّلة', 'المُتحصّل', 'فاُحتلّت' etc. Dans l'image, 'مُمثّلة' porte seulement un damma ; la chadda avec fatha n'est pas visible. 'فاُحتلّت' devrait être 'فاُحتلّت' avec les marques de l'image, mais 'الشّجرة' et 'الزّيت' ont une chadda dans l'image sous une forme différente (الشَجرة, الزَيت)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'الجمليّة' dans l'image est écrit 'الجمليّة' ; en revanche 'الجملي' à la fin (ثمن البيع الجمليّ) comporte une chadda et un tanwin/kasra visibles, mais la transcription les omet."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes du schéma (أ، ب، ج، د، هـ، ع، 192، 124,5, angle droit) ne sont pas transcrites, mais cela reste acceptable pour une figure."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'كمّيّة' est transcrit avec chadda ; l'image montre 'كمّيّة' avec une marque légèrement différente (كَمِيَّة)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.95,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« مُمثَّلة » : l'image montre « مُمثّلة », avec un damma sur le premier mim et une chadda sur le second. La transcription ajoute une fatha qui n'est pas visible."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Fin du dernier énoncé : l'image porte « الجمليّ » (chadda et kasra visibles). La transcription a « الجملي » sans diacritiques."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "المسألة رقم 3: ( 8 نقاط )",
+      "body": "يملك فلاّح أرضا مُمثّلة بالرّسم المُصاحب قيس مساحتها الجمليّة 5,12 هكتار.\n▪ طول [ أ ع ] = 192 م.\n▪ طول [ هـ د ] = 124,5 م.\n▪ مساحة المثلّث أ هـ ب = 3/5 مساحة شبه المنحرف ب هـ د ج.",
+      "figureDesc": "Figure composée d'un triangle (sommet أ, base [هـ ب]) et d'un trapèze rectangle ب هـ د ج situé en dessous. La hauteur [أ ع] est tracée en pointillés, perpendiculaire à [هـ ب] en ع (angle droit marqué), et mesure 192 م. Le côté [هـ د] vertical mesure 124,5 م. Les points sont : أ (sommet), هـ (à gauche), ب (à droite), د (bas gauche), ج (bas droite).",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_math_6eme_corrigee_p003_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أثبت حسابيّا أنّ طول [ ب ج ] = 195,5 م.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_math_6eme_corrigee_p003_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسب كمّيّة الزّيت المُتحصّل عليها إذا علمت أنّ 1 كغ من حبّ الزّيتون عند عصره يعطي 8 % من كتلته زيتا.",
+      "body": "غرس الفلاّح كامل مساحة الأرض المثلّثة و 40 % من مساحة الأرض شبه المنحرف أشجار زيتون فاُحتلّت الشّجرة الواحدة مساحة 12,5 م² و أنتجت معدّل نصف قنطار من حبّ الزّيتون.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_math_6eme_corrigee_p003_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "احسب الدّخل الصّافي للفلاّح.",
+      "body": "يبيع الفلاّح اللّتر الواحد زيتا بحساب 15 د و تمثّل مصاريف العصر و الجني 3/16 ثمن البيع الجمليّ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium",
+      "id": "epreuve_modele_math_6eme_corrigee_p003_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "المسألة رقم 3: ( 8 نقاط )",
+      "body": "يملك فلاّح أرضا مُمثَّلة بالرّسم المُصاحب قيس مساحتها الجمليّة 5,12 هكتار.\n▪ طول [ أ ع ] = 192 م.\n▪ طول [ هـ د ] = 124,5 م.\n▪ مساحة المثلّث أ هـ ب = 3/5 مساحة شبه المنحرف ب هـ د ج.",
+      "figureDesc": "Figure composée d'un triangle (sommet أ, base [هـ ب]) et d'un trapèze rectangle ب هـ د ج situé en dessous. La hauteur [أ ع] est tracée en pointillés, perpendiculaire à [هـ ب] en ع (angle droit marqué), et mesure 192 م. Le côté [هـ د] vertical mesure 124,5 م. Les points sont : أ (sommet), هـ (à gauche), ب (à droite), د (bas gauche), ج (bas droite).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "epreuve_modele_math_6eme_corrigee_p003_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أثبت حسابيّا أنّ طول [ ب ج ] = 195,5 م.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "epreuve_modele_math_6eme_corrigee_p003_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسب كمّيّة الزّيت المُتحصّل عليها إذا علمت أنّ 1 كغ من حبّ الزّيتون عند عصره يعطي 8 % من كتلته زيتا.",
+      "body": "غرس الفلاّح كامل مساحة الأرض المثلّثة و 40 % من مساحة الأرض شبه المنحرف أشجار زيتون فاُحتلّت الشّجرة الواحدة مساحة 12,5 م² و أنتجت معدّل نصف قنطار من حبّ الزّيتون.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "epreuve_modele_math_6eme_corrigee_p003_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "احسب الدّخل الصّافي للفلاّح.",
+      "body": "يبيع الفلاّح اللّتر الواحد زيتا بحساب 15 د و تمثّل مصاريف العصر و الجني 3/16 ثمن البيع الجملي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "epreuve_modele_math_6eme_corrigee_p003_i4",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.95
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 3,
+  "bookTitle": "Épreuve modèle 6ème année — Mathématiques (corrigée)"
+}

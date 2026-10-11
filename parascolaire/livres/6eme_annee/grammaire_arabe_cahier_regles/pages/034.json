@@ -1,0 +1,103 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 34,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "النواسخ (كان وأخواتها): اسم الناسخ وخبر الناسخ — التمارين (Arabe: les verbes d'état « kâna et ses sœurs »)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أضع عناصر كل جملة في محلها من الجدول",
+      "body": "أليس في الصدق نجاة ؟\nأصبح لي أصدقاء أوفياء\nمازال في بيتنا ضيوف\nكان في حينا عرس",
+      "figureDesc": "Tableau à 4 colonnes : الجمل (les 4 phrases listées) | محل الناسخ | محل خبر الناسخ | محل اسم الناسخ. Les 3 colonnes de réponse sont vides.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p034_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اجعل اسم الناسخ نكرة و غير ما يجب تغييره في الجمل التالية",
+      "body": "أليست القوة في الاتحاد ؟\nمازالت الطيور على الأغصان\nلم تكن الفرقة الموسيقية على الركح\nليس الكتاب داخل المحفظة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p034_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أشكل الجمل التالية شكلا تاما و سطر تحت اسم الناسخ",
+      "body": "كانت فوق رأسي سماء صافية زرقاء\nأصبحت عند أسفل الصخرة بلوطة كبيرة منبسطة الفروع و الأغصان\nمازالت بين الأوراق أجواق من الحساسين ترفرف من غصن إلى غصن",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "grammaire_arabe_cahier_regles_p034_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ألف نصا قصيرا يتكون من جمل يتقدم فيها خبر الناسخ على اسم الناسخ",
+      "body": "",
+      "figureDesc": "Espace blanc laissé pour la rédaction.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p034_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.16
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page contient des exercices sur les verbes défectifs (كان وأخواتها : اسم الناسخ et خبر الناسخ), que la compétence de l'unité 1 mentionne explicitement (conjugaison des verbes défectifs). L'unité 1 est le seul chapitre qui les cite, mais sa description porte surtout sur la narration, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Kâna et ses sœurs",
+    "skill": "Identifier, accorder et vocaliser le sujet et l'attribut des verbes d'état, notamment quand l'attribut précède le sujet.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "kâna et ses sœurs",
+      "verbes d'état",
+      "sujet du verbe d'état",
+      "attribut",
+      "vocalisation",
+      "attribut antéposé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série progressive : classer les éléments dans un tableau, transformer le sujet en nom indéfini avec les accords, vocaliser entièrement en soulignant le sujet, puis rédiger un court texte à attribut antéposé ; la structure est réutilisable pour d'autres points de grammaire, avec des phrases à contexte familier (amis, voisinage, nature).",
+    "themeGroup": "Kâna et ses sœurs"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

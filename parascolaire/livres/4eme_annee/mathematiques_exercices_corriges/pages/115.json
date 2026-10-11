@@ -1,0 +1,280 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 115,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigés : نظام قيس (page 25), حساب (page 26), اختبار تقويمي (page 27), المسائل (page 28)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "25-1",
+      "instruction": "نظام قيس - الصفحة 25 - التمرين 1",
+      "body": "طول الخيوط الثلاثة بالصم : 35 + 100 + 130 = 325\nطول الخيط الذي تحصّل عليه بالصم : 325 - (2 × 20) = 285",
+      "figureDesc": "",
+      "answer": "325 صم ؛ 285 صم",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p115_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "25-2",
+      "instruction": "نظام قيس - الصفحة 25 - التمرين 2",
+      "body": "المسافة التي لم تحفر بعد بالمتر : 1700 - (565 + 830) = 305",
+      "figureDesc": "",
+      "answer": "305 م",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p115_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "25-3",
+      "instruction": "نظام قيس - الصفحة 25 - التمرين 3 : أ- قيس طول المكتب بالصم ؛ قيس طول الطرف الغير المدرّج ؛ ب) الطول الحقيقي لهذا المكتب بالصم",
+      "body": "4 × 28 = 112\n2 × 15 = 30 مم = 3 صم\n(28 - 3) × 4 = 100",
+      "figureDesc": "",
+      "answer": "112 صم ؛ 3 صم ؛ 100 صم",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p115_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "25-4",
+      "instruction": "نظام قيس - الصفحة 25 - التمرين 4 : القامات الممكنة لخديجة",
+      "body": "1 م و 54 صم - 14 دسم و 9 صم - 15 دسم ونصف",
+      "figureDesc": "",
+      "answer": "1 م و 54 صم - 14 دسم و 9 صم - 15 دسم ونصف",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p115_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "26-1",
+      "instruction": "حساب - الصفحة 26 - التمرين 1 : المسلك الأحمر والمنطلق من العقدة \"أ\" أطول من المسلك الأزرق المنطلق من العقدة \"ب\"",
+      "body": "",
+      "figureDesc": "شبكة مربعات عليها مسلكان بأسهم، نقطة البداية \"أ\" في أسفل اليسار و\"ب\" في أسفل اليمين",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p115_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "26-2",
+      "instruction": "حساب - الصفحة 26 - التمرين 2",
+      "body": "العقدة \"ل\" (2 ، 1)\nالعقدة \"ص\" (5 ، 6)",
+      "figureDesc": "شبكة مرقّمة من 0 إلى 8 عموديا ومن 1 إلى 9 أفقيا، عليها مسلك بأسهم من \"ل\" إلى \"ص\"",
+      "answer": "ل (2 ، 1) ؛ ص (5 ، 6)",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p115_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "26-3",
+      "instruction": "حساب - الصفحة 26 - التمرين 3 : المسلك السميك أقصر من المسلك الرقيق",
+      "body": "أقصر مسلك",
+      "figureDesc": "مسلك قصير بسهمين: سهم إلى الأعلى مع العدد 5 وسهم إلى اليمين",
+      "answer": "أقصر مسلك : ↑5 ثم →",
+      "confidence": 0.65,
+      "id": "mathematiques_exercices_corriges_p115_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "27-1",
+      "instruction": "اختبار تقويمي - الصفحة 27 - التمرين 1",
+      "body": "8625 > 0 + 3909 + 4715\n720 - 980 = 1060 - 800 = 260",
+      "figureDesc": "",
+      "answer": "260",
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p115_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "27-2",
+      "instruction": "اختبار تقويمي - الصفحة 27 - التمرين 2 : طول المسافة الفاصلة بين السوق والمدرسة بالم",
+      "body": "790 م - (230 م + 307 م) = 253",
+      "figureDesc": "",
+      "answer": "253 م",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p115_i9",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "27-4",
+      "instruction": "اختبار تقويمي - الصفحة 27 - التمرين 4",
+      "body": "ثمن لترين من البنزين بالمي : 2 × 600 = 1200\nثمن المشتريات بالمي : 2800 + 4300 + 1200 = 8300\nدفع لصاحب الورشة بالمي : (1000 × 5) + (500 × 9) = 5000 + 4500 = 9500\nأجرة الإصلاح بحساب بالمي : 9500 - 8300 = 1200",
+      "figureDesc": "",
+      "answer": "1200 ؛ 8300 ؛ 9500 ؛ 1200",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p115_i10",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "28-1",
+      "instruction": "المسائل - الصفحة 28 - التمرين 1",
+      "body": "لا يمكنني أن أجيب من هذا السؤال لأنّي لا أعرف ثمن حافظة الأقلام",
+      "figureDesc": "",
+      "answer": "لا يمكن الإجابة لأن ثمن حافظة الأقلام مجهول",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p115_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "28-2",
+      "instruction": "المسائل - الصفحة 28 - التمرين 2",
+      "body": "المعلومات الموجودة في المسألة والتي لا تفيدني في الإجابة عن السؤال هي 15 لترا. و100 كيلومتر\n- عدد المسافرين الذين ركبوا من محطّة صفاقس : 61 - (30 - 15) = 46",
+      "figureDesc": "",
+      "answer": "46",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p115_i12",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "28-3",
+      "instruction": "المسائل - الصفحة 28 - التمرين 3",
+      "body": "لا يمكنني أن أجيب عن الرقم 2 وهو ثمن القاموس\nترتيب بقية الأسئلة 3 - 4 - 1\nثمن بيع الأرنب بالمي : 2 × 1650 = 3300\nالمبلغ الذي قبضه الطفل بالمي : 1650 + 3300 = 4950\nثمن المشتريات بالمي : (270 + 4950) - 150 = 5070",
+      "figureDesc": "",
+      "answer": "3300 ؛ 4950 ؛ 5070",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p115_i13",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.25
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un corrigé de mathématiques qui mélange système de mesure (longueurs en cm/mm/dm), calcul, parcours sur quadrillage, test d'évaluation et problèmes, donc elle couvre plusieurs chapitres sans qu'aucun ne corresponde clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    25,
+    26,
+    27,
+    28
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures de longueur et calcul",
+    "skill": "Résoudre des problèmes de mesure de longueurs et de monnaie en utilisant les conversions d'unités et les quatre opérations, et se repérer sur un quadrillage.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "système de mesure",
+      "longueurs",
+      "conversion d'unités",
+      "monnaie",
+      "repérage sur quadrillage",
+      "problèmes additifs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les situations concrètes sont réutilisables : mesurer un bureau avec une règle dont le bout n'est pas gradué, calculer la longueur d'un fil après des nœuds, la distance restant à creuser, la facture d'un garagiste avec le rendu de monnaie, et comparer des trajets sur un réseau de nœuds repérés par des coordonnées.",
+    "themeGroup": "Longueurs"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "25-1: l'image montre 35 + 100 + 130 = 325 (ok), mais l'ordre de l'opération de 25-3 est transcrit différemment : image '112 = 4 x 28' et '100 = 4 x (28 - 3)', la transcription écrit '(28 - 3) × 4' (ordre des facteurs modifié)"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "25-3: l'image indique '30 = 2 x 15' puis '3 صم = 30 مم' ; la transcription inverse en '30 مم = 3 صم' (ordre dans la ligne différent)"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "27-1: l'image montre '260 = 800 - 1060 = 720 - 980' (valeurs lues telles quelles) ; la transcription écrit '720 - 980 = 1060 - 800' avec les termes inversés, ce qui change le sens (valeurs de l'image sont 1060 - 800 et 980 - 720)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "28-1: 'من هذا السؤال' correct, mais 'لا يمكنني' ok ; la ligne 'réponse' est inventée (non présente dans l'image)"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les champs 'réponse' (ex. 325 صم ؛ 285 صم, 305 م, أقصر مسلك : ↑5 ثم →, 1200 ؛ 8300 ؛ 9500 ؛ 1200) ne figurent pas dans l'image comme réponses séparées ; 26-3 'ثم' est inventé"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 27-3 absent de l'image (numérotation saute de 2 à 4) : pas d'erreur ; mais 26-1 et 26-2 : les grilles et chemins fléchés ne sont pas décrits (26-1 réponse None)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "25-1: 'طول الخيوط' : l'image a un tatweel/initiale coupée 'لول' ; 25-3 'مم' lu pour 'م' (image: '3 م = 30 مم' semble 'مم = 3 صم')"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "27-4: l'image montre '(500 x 9) + (1000 x 5)' puis '4500 + 5000', la transcription inverse l'ordre en '(1000 × 5) + (500 × 9) = 5000 + 4500' ; de même '2800 + 4300 + 1200' est inversé par rapport à '1200 + 4300 + 2800'"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "28-3: l'image montre '1650 + 3300 = 4950' sous la forme '4950 = 3300 + 1650' et '2 x 1650 = 3300' sous la forme '3300 = 2 x 1650' ; ordre des membres inversé dans la transcription"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,122 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 15,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "قواعد اللغة العربية: تصريف الأفعال وإسنادها إلى الضمائر (المفرد والمثنى والجمع، المذكر والمؤنث) وتحويل الزمن إلى الماضي",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أعيد صياغة الجملة حسب الطلب",
+      "body": "دنا مصطفى من الكلب ثم عدا هاربا و نجا بنفسه\nليلى\nنحن",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p015_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أعوض صديقي بـ صديقتي ثم بـ صديقاتي",
+      "body": "خطا صديقي نحوي و دنا مني و قال لي لقد سهوت عن تلاوة آية كاملة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p015_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعيد كتابة الفقرة التالية بالماضي",
+      "body": "كانوا يطوفون ببيت الله الحرام و يرجون الله و يدعونه أن يعفو عنهم و يحميهم من كل سوء",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p015_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "text_production",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اجعل الأفعال المسطرة مسندة إلى المثنى المخاطب ثم إلى جمع المتكلمين",
+      "body": "شكوت من صعوبة الامتحان و دعوت صديقي لمساعدتي لكنه اعتذر\n(الفعلان المسطران: شكوت، دعوت)",
+      "figureDesc": "الفعلان «شكوت» و«دعوت» مسطّران (تحتهما خط) في الجملة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p015_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.24
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la conjugaison et l'attribution des verbes défectifs (دنا، عدا، نجا، شكوت، دعوت، يرجون، يدعونه) aux pronoms et le passage au passé, ce qui correspond à la conjugaison des verbes défectifs de l'Unité 1.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison des verbes défectueux et transformation",
+    "skill": "Conjuguer des verbes en les accordant avec différents pronoms (genre et nombre) et transposer un texte au passé.",
+    "pageType": "exercise",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "conjugaison",
+      "pronoms personnels",
+      "duel et pluriel",
+      "masculin et féminin",
+      "passé",
+      "verbes à finale faible"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices de transformation sur de courts textes narratifs ou religieux : changer le sujet (féminin, pluriel, duel, 1re ou 2e personne) et transposer au passé, réutilisable avec d'autres contextes du quotidien.",
+    "themeGroup": "Le verbe défectueux"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Dans l'exercice 4, la transcription ajoute « (الفعلان المسطران: شكوت، دعوت) », qui n'est pas dans l'image. L'image montre seulement le soulignement de « شكوت » et de « و دعوت »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres « التمارين », « التمرين الأول », « التمرين الثاني », « التمرين الثالث » et « التمرين الرابع » sont absents de la transcription, qui les remplace par les numéros [1] à [4]."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le soulignement de « شكوت » et de « و دعوت » dans l'exercice 4 n'est pas marqué dans le texte. Il est seulement évoqué par la parenthèse ajoutée."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

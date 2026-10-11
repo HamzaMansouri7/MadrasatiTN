@@ -1,0 +1,117 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 12,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأعداد الصحيحة الطبيعية: قراءة الأعداد وكتابتها وجدول التسميات (الوحدات البسيطة، الآلاف، الملايين، المليارات)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "",
+      "instruction": "الإجابة",
+      "body": "",
+      "figureDesc": "Cadre décoratif vide intitulé « الإجابة » avec un espace de réponse vide, correspondant à un exercice dont l'énoncé n'apparaît pas sur cette page (probablement continuation de la page précédente).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p012_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "answer",
+      "number": "",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "Petit cadre rectangulaire vide (case de réponse ou de résultat) situé au centre de la page.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p012_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "answer",
+      "number": "",
+      "instruction": "الإجابة",
+      "body": "",
+      "figureDesc": "Deuxième cadre vide intitulé « الإجابة » avec un espace de réponse vide.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p012_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "تمرين: ضع هذا العدد في الجدول",
+      "body": "ضع هذا العدد في الجدول (le nombre à placer n'est pas écrit dans l'espace laissé vide entre « ضع هذا العدد » et « في الجدول »)",
+      "figureDesc": "Tableau de numération à 4 groupes de colonnes : الوحدات البسيطة، الآلاف، الملايين، المليارات. Chaque groupe est divisé en 3 sous-colonnes d'en-tête (de droite à gauche) : آ (آحاد), ع (عشرات), م (مئات). Une ligne de cellules vides en dessous est à remplir (12 cases).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p012_i4",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "تمرين: أكتب الأعداد التالية",
+      "body": "أكتب الأعداد التالية (la liste des nombres n'est pas visible sur la page)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p012_i5",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.48
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la lecture, l'écriture et le tableau de numération des grands nombres (unités simples, milliers, millions, milliards), ce qui correspond à la Période 1 : Grands nombres.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Lecture et écriture des grands nombres",
+    "skill": "Lire, écrire et placer un nombre entier dans le tableau de numération (unités simples, mille, millions, milliards).",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul"
+    ],
+    "keywords": [
+      "numération",
+      "grands nombres",
+      "tableau de numération",
+      "millions",
+      "milliards",
+      "écriture en chiffres"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Réutilisable : exercices classiques de placement d'un nombre dans un tableau de numération par classes et d'écriture de nombres, mais les nombres ne sont pas visibles et la page offre peu de variété ou de contexte original.",
+    "themeGroup": "Grands nombres entiers"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

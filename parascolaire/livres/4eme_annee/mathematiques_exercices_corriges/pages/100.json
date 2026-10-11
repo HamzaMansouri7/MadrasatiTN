@@ -1,0 +1,130 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 100,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 27 – مساحة المستطيل والمربع (3)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "يبلغ طول محيط حديقة مربّعة الشّكل 300 م. ما هو قيس مساحة الحديقة بالم2.",
+      "body": "يبلغ طول محيط حديقة مربّعة الشّكل 300 م. ما هو قيس مساحة الحديقة بالم2.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p100_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ابحث عن قيس مساحتها.",
+      "body": "حديقة مستطيلة الشّكل قسّمت إلى 3 مربّعات متقايسة. إذا كان قيس محيطها بالمتر 240 ، فما هو قيس بُعْدَيْهَا ؟ - ابحث عن قيس مساحتها.",
+      "figureDesc": "مستطيل مقسوم بخطين متقطعين عموديين إلى 3 مربعات متقايسة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p100_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ابحث عن قيس المساحة المظلّلة :",
+      "body": "ابحث عن قيس المساحة المظلّلة :",
+      "figureDesc": "مستطيل خارجي بعرض 6 صم، بداخله مستطيل أبيض طوله 12 صم؛ الإطار المظلل عرضه 1 صم من كل الجهات.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p100_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "احسب مساحة الجزء المظلّل بطَرِيقتَيْنِ مختلفتيْن :",
+      "body": "احسب مساحة الجزء المظلّل بطَرِيقتَيْنِ مختلفتيْن :",
+      "figureDesc": "مستطيل طوله 5 دسم وعرضه 18 صم؛ الجزء الأبيض طوله 32 صم، والجزء المتبقي على اليمين مظلل بخطوط مائلة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p100_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "calculation",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "ما هي مساحة هذه القطعة الأرضية؟",
+      "body": "المضلع (أ ب ج د هـ و) المرسوم في الشّكل يمثل قطعة أرضية مجزّأة إلى مربّعين (أ ز هـ و) و (ز د ج ب). ما هي مساحة هذه القطعة الأرضية؟",
+      "figureDesc": "مضلع من مربعين: مربع كبير ضلعه هـ و = 35 م ومربع صغير على يمينه في الأعلى ضلعه ج ب = 15 م؛ خط متقطع عند النقطة ز.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p100_i5",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أيّهما أكبر مساحة؟",
+      "body": "التّصميمان التّاليان هما لحقلين (أ) و (ب) أيّهما أكبر مساحة؟",
+      "figureDesc": "حقل (أ): مضلع على شكل L مقلوب، أبعاده 40 م، 45 م، 60 م، 80 م. حقل (ب): مضلع على شكل L، أبعاده 90 م، 20 م، 70 م، 35 م.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p100_i6",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch2",
+    "confidence": 0.43
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de l'aire et du périmètre du rectangle et du carré (semaine 27, mesure de surfaces), ce qui correspond à la Période 2 : multiplication, distributivité, rectangle et carré.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    132
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Aire du rectangle et du carré",
+    "skill": "Calculer l'aire d'un carré ou d'un rectangle, y compris composé ou ombré, à partir du périmètre ou de dimensions déduites d'une figure.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "aire",
+      "périmètre",
+      "carré",
+      "rectangle",
+      "surface ombrée",
+      "figures composées"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations de terrains et jardins où l'on passe du périmètre à l'aire, avec une parcelle rectangulaire découpée en carrés égaux, des surfaces ombrées à calculer de deux façons, des polygones décomposés en carrés et la comparaison de l'aire de deux champs.",
+    "themeGroup": "Périmètre et aire"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

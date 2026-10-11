@@ -1,0 +1,104 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 3,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "ملخص الإيقاظ – مصادر الضوء الطبيعية و الاصطناعية (Résumé d'éveil scientifique : sources de lumière naturelles et artificielles)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ملخص الإيقاظ – طريق النجاح – مصادر الضوء الطبيعية و الاصطناعية",
+      "body": "يمكن تقسيم مصادر الضوء إلى مصادر ضوء طبيعية و مصادر ضوء إصطناعية. المصادر الطبيعية هي المصادر التي خلقها الله ولا يمكن للإنسان أن يتحكم فيها. المصادر الإصطناعية هي التي يمكن للإنسان أن يتحكم فيها فهي من صنعه.",
+      "figureDesc": "Cadre décoratif de cercles jaunes autour de la page. Dessin d'un chiffre 5 jaune personnifié, aux gants et chaussures verts, qui pointe un doigt vers le haut. Titres colorés « ملخص الإيقاظ » et « طريق النجاح ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p003_i1",
+      "topicId": "sci-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول: مصادر ضوء طبيعية / مصادر ضوء إصطناعية",
+      "body": "مصادر ضوء طبيعية: القمر النجوم البرق الهلال الشمس بعض الحشرات. مصادر ضوء إصطناعية: المصابيح المنارة نار القنديل الفوانيس الكهربائية الشماريخ أضواء السيارات الشمعة.",
+      "figureDesc": "Tableau à deux colonnes : à droite « مصادر ضوء طبيعية », à gauche « مصادر ضوء إصطناعية », avec la liste d'exemples sous chaque titre.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p003_i2",
+      "topicId": "sci-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-5-u1",
+  "topicTitle": "Unité 1 : La lumière, vision et propagation rectiligne",
+  "topicConfidence": 0.96,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-5-u1",
+    "confidence": 0.37
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page résume les sources de lumière naturelles (soleil, étoiles, éclair) et artificielles (lampes, bougie, phare), ce qui correspond à l'Unité 1 sur la lumière et ses sources.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Sources de lumière naturelles et artificielles",
+    "skill": "Distinguer les sources de lumière naturelles des sources de lumière artificielles et en citer des exemples.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "lumière",
+      "sources naturelles",
+      "sources artificielles",
+      "soleil",
+      "lampe",
+      "classification"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau à deux colonnes (naturel / artificiel) se réutilise facilement en exercice de classement, d'appariement ou de vrai/faux, ou en infographie comparative avec des exemples du quotidien (soleil, éclair, luminaire, bougie, phare).",
+    "themeGroup": "Les sources de lumière"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre : l'image porte « ملخص الإيقاظ » (sans « ال » avant « ملخص » ; la transcription écrit « الإيقاظ », ce qui est correct). Aucune erreur ici, mais le « 5 » du personnage (numéro de la leçon) est omis."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le chiffre « 5 » affiché dans l'illustration du titre n'est pas transcrit (la transcription indique seulement [])."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المصابيح المنارة » : dans l'image, c'est « المصابيح المنارة » (les lampes allumées), ce qui est correct. Dans la transcription, « الفوانيس الكهربائية » est bien lu, mais « الفوانيس » et « الكهربائية » sont séparés par un retour à la ligne, ce qui est sans gravité."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'image, « مصادر ضوء طبيعية » est la colonne de droite et « مصادر ضوء إصطناعية » celle de gauche ; l'ordre de lecture est respecté dans la transcription."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

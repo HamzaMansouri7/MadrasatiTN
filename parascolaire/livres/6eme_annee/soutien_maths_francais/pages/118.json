@@ -1,0 +1,324 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 118,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Aucun contenu de mathématiques : la page est en réalité l'épreuve de langue française de l'Examen normalisé provincial marocain (Rabat-Salé-Kénitra, Skhirat-Témara, session juillet 2022), page 1 sur 4. Elle contient le texte « Mozart, l'enfant prodige » et des questions de compréhension de l'écrit.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte :",
+      "body": "Mozart, l'enfant prodige\n\nWolfgang Amadeus Mozart est né en 1756 à la ville de Salbourg, en Autriche. Son père, Léopold, était maître de violon. Alors que Léopold enseignait le chant à sa fille ainée âgée de 7ans, le cadet, Mozart plus attentif, s'est mis par jeu à la musique dès l'âge de 3ans. Son père était content en lui apprenant à jouer au violon et à l'orgue.\n\nPlus tard, ils sont partis en tournée en Europe pendant plus de six ans. De retour à leur ville, Mozart est nommé maître de violon dans l'orchestre de son église. Mécontent du retour après avoir joué du violon dans des palais et de grands théâtres, Mozart, l'enfant miracle, a voulu s'installer à Vienne pour devenir l'un des meilleurs compositeurs de musique de l'histoire.\n\nEncyclopédie « tout l'univers » Maison hachette – 1993 p.p : 3091-3093",
+      "figureDesc": "En-tête d'examen : Royaume du Maroc, Ministère de l'Éducation Nationale, Académie régionale Rabat-Salé-Kénitra, Direction provinciale Skhirat-Témara. Examen normalisé provincial, Épreuve de la langue française, Session juillet 2022, Durée : 1h30min. Cases Nom, Prénom, N° d'examen, note sur 40 en chiffres et en lettres (arabe), nom du correcteur et signature. Triangle noir en haut à droite (zone masquée).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "soutien_maths_francais_p118_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-1-a",
+      "instruction": "Compréhension de l'écrit : (15pts) – Quel est le titre de ce texte ? (0.75pt)",
+      "body": "Quel est le titre de ce texte ?",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p118_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-1-b",
+      "instruction": "Je donne sa référence : (0.75pt)",
+      "body": "Je donne sa référence :",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p118_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-2",
+      "instruction": "En quelle année est né Wolfgang Mozart ? (2pts)",
+      "body": "En quelle année est né Wolfgang Mozart ?",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p118_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-3",
+      "instruction": "Qui lui a appris à jouer au violon ? (2pts)",
+      "body": "Qui lui a appris à jouer au violon ?",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p118_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-4",
+      "instruction": "A quel âge Mozart a commencé à s'intéresser à la musique ? (2pts)",
+      "body": "A quel âge Mozart a commencé à s'intéresser à la musique ?",
+      "figureDesc": "Deux lignes pointillées pour répondre. Pied de page : « Page 1 sur 4 ».",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p118_i6"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.15
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une épreuve d'examen marocain (compréhension de l'écrit sur Mozart) et non une leçon du programme tunisien ; elle ne correspond clairement à aucun module de français de 6ème.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "pageType": "exam",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte biographique",
+    "skill": "Lire un texte biographique et en dégager des informations explicites (titre, référence, date, personnage, âge).",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "texte biographique",
+      "Mozart",
+      "examen normalisé",
+      "questions de repérage"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Modèle d'épreuve d'examen : un court texte biographique sur un enfant prodige suivi de questions graduées de repérage (titre, référence, date, personne, âge), réutilisable pour créer des évaluations de lecture avec barème.",
+    "themeGroup": "Textes descriptifs et biographiques"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête est absent : Royaume du Maroc, Ministère de l'Éducation nationale, Académie régionale Rabat-Salé-Kénitra, Direction provinciale Skhirat-Témara, Examen normalisé provincial, Épreuve de la langue française, Session juillet 2022, Durée 1h 30min, note sur 40, champs Nom/Prénom/N° d'examen, et les mentions arabes de la note et du correcteur."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page « Page 1 sur 4 » est absent."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Son père, Léopold, était maître de violon. Alors que Léopold enseignait le chant à sa fille ainée » : sur l'image, la phrase « Son » termine la première ligne et « père, Léopold » commence la suivante. Le sens est correct, mais l'ordre de lecture colonne/ligne est à vérifier. Le texte lui-même est fidèle."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "« Compréhension de l'écrit (15pts) » est fusionné avec la question 1-a. Il s'agit en réalité du titre de la section « I. », distinct de la question."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le texte de la question 4 est correct, mais les lignes de réponse ne sont pas signalées. Aucune erreur de contenu."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.95,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page « Page 1 sur 4 » est visible en bas de l'image et n'apparaît nulle part dans la transcription. Je l'ajoute à la figureDesc du dernier item."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte :",
+      "body": "Mozart, l'enfant prodige\n\nWolfgang Amadeus Mozart est né en 1756 à la ville de Salbourg, en Autriche. Son père, Léopold, était maître de violon. Alors que Léopold enseignait le chant à sa fille ainée âgée de 7ans, le cadet, Mozart plus attentif, s'est mis par jeu à la musique dès l'âge de 3ans. Son père était content en lui apprenant à jouer au violon et à l'orgue.\n\nPlus tard, ils sont partis en tournée en Europe pendant plus de six ans. De retour à leur ville, Mozart est nommé maître de violon dans l'orchestre de son église. Mécontent du retour après avoir joué du violon dans des palais et de grands théâtres, Mozart, l'enfant miracle, a voulu s'installer à Vienne pour devenir l'un des meilleurs compositeurs de musique de l'histoire.\n\nEncyclopédie « tout l'univers » Maison hachette – 1993 p.p : 3091-3093",
+      "figureDesc": "En-tête d'examen : Royaume du Maroc, Ministère de l'Éducation Nationale, Académie régionale Rabat-Salé-Kénitra, Direction provinciale Skhirat-Témara. Examen normalisé provincial, Épreuve de la langue française, Session juillet 2022, Durée : 1h30min. Cases Nom, Prénom, N° d'examen, note sur 40 en chiffres et en lettres (arabe), nom du correcteur et signature. Triangle noir en haut à droite (zone masquée).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_6eme_math_francais_p118_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-1-a",
+      "instruction": "Compréhension de l'écrit : (15pts) – Quel est le titre de ce texte ? (0.75pt)",
+      "body": "Quel est le titre de ce texte ?",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p118_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-1-b",
+      "instruction": "Je donne sa référence : (0.75pt)",
+      "body": "Je donne sa référence :",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p118_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-2",
+      "instruction": "En quelle année est né Wolfgang Mozart ? (2pts)",
+      "body": "En quelle année est né Wolfgang Mozart ?",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p118_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-3",
+      "instruction": "Qui lui a appris à jouer au violon ? (2pts)",
+      "body": "Qui lui a appris à jouer au violon ?",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p118_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-4",
+      "instruction": "A quel âge Mozart a commencé à s'intéresser à la musique ? (2pts)",
+      "body": "A quel âge Mozart a commencé à s'intéresser à la musique ?",
+      "figureDesc": "Deux lignes pointillées pour répondre. Pied de page : « Page 1 sur 4 ».",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p118_i6"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte :",
+      "body": "Mozart, l'enfant prodige\n\nWolfgang Amadeus Mozart est né en 1756 à la ville de Salbourg, en Autriche. Son père, Léopold, était maître de violon. Alors que Léopold enseignait le chant à sa fille ainée âgée de 7ans, le cadet, Mozart plus attentif, s'est mis par jeu à la musique dès l'âge de 3ans. Son père était content en lui apprenant à jouer au violon et à l'orgue.\n\nPlus tard, ils sont partis en tournée en Europe pendant plus de six ans. De retour à leur ville, Mozart est nommé maître de violon dans l'orchestre de son église. Mécontent du retour après avoir joué du violon dans des palais et de grands théâtres, Mozart, l'enfant miracle, a voulu s'installer à Vienne pour devenir l'un des meilleurs compositeurs de musique de l'histoire.\n\nEncyclopédie « tout l'univers » Maison hachette – 1993 p.p : 3091-3093",
+      "figureDesc": "En-tête d'examen : Royaume du Maroc, Ministère de l'Éducation Nationale, Académie régionale Rabat-Salé-Kénitra, Direction provinciale Skhirat-Témara. Examen normalisé provincial, Épreuve de la langue française, Session juillet 2022, Durée : 1h30min. Cases Nom, Prénom, N° d'examen, note sur 40 en chiffres et en lettres (arabe), nom du correcteur et signature. Triangle noir en haut à droite (zone masquée).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p118_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-1-a",
+      "instruction": "Compréhension de l'écrit : (15pts) – Quel est le titre de ce texte ? (0.75pt)",
+      "body": "Quel est le titre de ce texte ?",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mouayen_6eme_math_francais_p118_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-1-b",
+      "instruction": "Je donne sa référence : (0.75pt)",
+      "body": "Je donne sa référence :",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mouayen_6eme_math_francais_p118_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-2",
+      "instruction": "En quelle année est né Wolfgang Mozart ? (2pts)",
+      "body": "En quelle année est né Wolfgang Mozart ?",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mouayen_6eme_math_francais_p118_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-3",
+      "instruction": "Qui lui a appris à jouer au violon ? (2pts)",
+      "body": "Qui lui a appris à jouer au violon ?",
+      "figureDesc": "Lignes pointillées pour répondre",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mouayen_6eme_math_francais_p118_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-4",
+      "instruction": "A quel âge Mozart a commencé à s'intéresser à la musique ? (2pts)",
+      "body": "A quel âge Mozart a commencé à s'intéresser à la musique ?",
+      "figureDesc": "Deux lignes pointillées pour répondre",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mouayen_6eme_math_francais_p118_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.95
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

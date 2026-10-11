@@ -1,0 +1,95 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 126,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Proportionnalité : pourcentage et réduction (مسألة) ; Géométrie : construction d'un angle, bissectrice, parallélogramme",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مسألة:",
+      "body": "اشترت سلمى حاسوبا من محل تجاري يقدم تخفيضات بنسبة 25%. إذا علمت أن ثمن الحاسوب قبل التخفيض هو: 5 680dhs\nأ - ما هو مبلغ التخفيض؟\nب - بكم اشترت سلمى حاسوبها؟ (03 ن)",
+      "figureDesc": "Lignes vides pour écrire les réponses sous chaque question (a et b).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p126_i1",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "II-1",
+      "instruction": "المجال الرئيسي الثاني : الهندسة (11 ن) — 1. أ - أرسم زاوية [AOB] قياسها 120° ب - أنشئ [OI) منصف الزاوية [AOB] (03 ن)",
+      "body": "أ - أرسم زاوية \\widehat{AOB} قياسها 120°\nب - أنشئ [OI) منصف الزاوية \\widehat{AOB}",
+      "figureDesc": "Cadre rectangulaire vide destiné à la construction de l'angle AOB de 120° et de sa bissectrice [OI).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p126_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "II-2",
+      "instruction": "2. أ - أرسم متوازي الأضلاع EFGH بحيث:",
+      "body": "EF = 5 cm و FG = 3cm و \\widehat{EFG} = 75° (02 ن)",
+      "figureDesc": "Espace blanc pour dessiner le parallélogramme EFGH.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p126_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.46
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation générale de mathématiques qui couvre plusieurs chapitres : pourcentage et réduction (math-6-p3), construction d'angles et bissectrice (math-6-p4), parallélogramme (math-6-ch2). Aucun chapitre unique ne correspond clairement, donc topicId est null.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Pourcentage de réduction et constructions géométriques",
+    "skill": "Calculer un montant de réduction et un prix après remise, puis construire un angle, sa bissectrice et un parallélogramme à partir de mesures données.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul",
+      "autre"
+    ],
+    "keywords": [
+      "pourcentage",
+      "réduction",
+      "angle",
+      "bissectrice",
+      "parallélogramme",
+      "construction"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'examen en deux domaines (numération/proportionnalité puis géométrie), avec un problème d'achat en promotion dont la question se décompose en montant de la remise puis prix payé, suivi de constructions guidées à la règle et au rapporteur.",
+    "themeGroup": "Constructions géométriques"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

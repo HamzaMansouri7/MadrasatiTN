@@ -1,0 +1,104 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 28,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الجملة الفعلية: المفعول فيه للمكان (page de grammaire arabe, sans lien avec les mathématiques)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الجملة الفعليّة المفعول فيه للمكان",
+      "body": "حدّه: المفعول فيه للمكان مكوّن من المكوّنات المتمّمة للجملة يحَدِّد مكان وقوع الفعل. مثل: سِرْت يَمِينًا",
+      "figureDesc": "Page encadrée d'une bordure de cercles dorés. Le mot يَمِينًا est surligné en bleu clair.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p028_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أنواعه: يكون المفعول فيه للمكان",
+      "body": "مفردة: سِرْ يَمينًا / اِجْلِسْ هنَا. مركّب جرّ: نَشَأَ أحْمَد فِي الرِّيفِ. مركّبا إضافيّا المضاف فيه ظرف: فَوْقَ، تَحْتَ، قُرْبَ، حِذْوَ. مثال: جَلَسْت حِذْوَ النافِذَةِ",
+      "figureDesc": "La ligne des mots فَوْقَ تَحْتَ قُرْبَ حِذْوَ est surlignée en vert clair.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p028_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "حكمه: حكم المفعول فيه للمكان النّصب،",
+      "body": "و تظهر علامة النّصب على المفعول فيه مفردة: سِرْ يمينًا. على المضاف إذا كان المفعول فيه للمكان مركّبا إضافيًّا: وَقَفْت أمَامَ الْمَغَازَةِ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p028_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ملاحظة: نسأل عن المفعول فيه للمكان باستعمال اسم الاستفهام أَيْنَ",
+      "body": "اسم الاستفهام أَيْنَ في الجملة الفعلية وظيفته مفعول فيه للمكان. يتعلّق المعول فيه للمكان بالأفعال اللاّزمة: وَقَفْت خَلْفَ النافِذَةِ. بالأفعال المتعدّية: وَجَدتِ الْقِطّةَ تَحْتَ السرِيرِ",
+      "figureDesc": "La phrase وَقَفْت خَلْفَ النافِذَةِ est surlignée en bleu clair et la phrase وَجَدتِ الْقِطّةَ تَحْتَ السرِيرِ en orange.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p028_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u3",
+    "confidence": 0.41
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une leçon de grammaire arabe sur le complément de lieu (المفعول فيه للمكان), mais les unités officielles d'arabe portent sur les types de textes (narratif, descriptif, explicatif, injonctif) et aucune ne correspond clairement à cette leçon de grammaire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Complément circonstanciel de lieu",
+    "skill": "Identifier le complément circonstanciel de lieu (المفعول فيه للمكان), reconnaître ses formes, son accusatif et le questionner avec أين.",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "مفعول فيه للمكان",
+      "phrase verbale",
+      "accusatif",
+      "adverbes de lieu",
+      "أين",
+      "complément circonstanciel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La leçon présente définition, trois formes (mot simple, groupe prépositionnel, annexion avec adverbe de lieu) et des phrases modèles courtes, réutilisables pour créer des exercices d'identification, de transformation avec questions en أين, ou de complétion avec adverbes de lieu.",
+    "themeGroup": "Le complément circonstanciel de lieu"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

@@ -1,0 +1,137 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 72,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 4: أنجز عمليات الضرب على الأعداد التي تقيس الزمن (مادة الرياضيات: قياس الزمن)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْجِزِ الْعَمَلِيَّاتِ التَّالِيَةَ مُرَاعِيًا التَّحْوِيلَ اللَّازِمَ:",
+      "body": "عمود أيمن: 1 س و 55 دق × 2 = ......... ؛ 3 س و 35 دق × 4 = ......... ؛ 25 دق و 15 ث × 5 = ......... ؛ 1 يوم و 6 س و 12 دق × 12 = ......... . عمود أيسر: 2 س و 27 ث × 8 = ......... ؛ 4 أيام و 5 س × 15 = ......... ؛ 35 دق و 10 ث × 30 = ......... ؛ 6 س و 18 دق و 14 ث × 9 = .........",
+      "figureDesc": "ثمانية عمليات ضرب موزعة على عمودين يفصل بينهما خط عمودي، وبعد كل عملية نقاط للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p072_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حَافِلَةٌ تَنْطَلِقُ مِنَ الْمَحَطَّةِ الرَّئِيسِيَّةِ فِي الْمَدِينَةِ عَلَى السَّاعَةِ السَّادِسَةِ و 30 دق وَتَتَوَقَّفُ فِي 12 مَحَطَّةً لِمُدَّةِ 3 دق فِي كُلِّ مَحَطَّةٍ. فَمَاهِيَ سَاعَةُ وُصُولِهَا إِلَى الْقَرْيَةِ الْمَقْصُودَةِ إِذَا كَانَ زَمَنُ السَّيْرِ الْمُقَرَّرِ لِهَذِهِ الرِّحْلَةِ 45 دق.",
+      "body": "",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p072_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "تُخَصِّصُ إِحْدَى الْمَحَطَّاتِ التِّلْفَزِيَّةِ كُلَّ يَوْمٍ زَمَنًا لِلْأَخْبَارِ: 4 حِصَصٍ لِنَشَرَاتٍ إِخْبَارِيَّةٍ مُطَوَّلَةٍ مُدَّةُ كُلِّ نَشْرَةٍ 45 دق. وَحِصَصًا لِمُوجَزِ الْأَنْبَاءِ وَهِيَ تِسْعَةٌ مُعَدَّلُ زَمَنِ كُلِّ حِصَّةٍ 18 دق.",
+      "body": "* احْسُبِ الزَّمَنَ الْمُخَصَّصَ لِلْأَخْبَارِ الْمُطَوَّلَةِ بِالسَّاعَاتِ. * احْسُبِ الزَّمَنَ الْمُخَصَّصَ لِلْأَخْبَارِ طَوَالَ الْيَوْمِ.",
+      "figureDesc": "سطران منقطان لكتابة الإجابة، واحد بعد كل سؤال",
+      "answer": null,
+      "confidence": 0.87,
+      "id": "mathematiques_exercices_evaluations_p072_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اِنْطَلَقَتْ مُبَارَاةٌ ثَقَافِيَّةٌ مَدْرَسِيَّةٌ عَلَى السَّاعَةِ 10 و 39 دق. أَخَذَ فِيهَا الْمُنَشِّطُ 5 دق لِشَرْحِ الْبَرْنَامَجِ الْمُقَرَّرِ لِتِلْكَ الْحِصَّةِ، ثُمَّ شَرَعَ فِي إِلْقَاءِ الْأَسْئِلَةِ وَعَدَدُهَا 15 حَسَبَ التَّوْقِيتِ الزَّمَنِيِّ التَّالِي:",
+      "body": "- إِلْقَاءُ السُّؤَالِ 30 ث - مُهْلَةُ التَّفْكِيرِ 1 دق - التَّصْرِيحُ بِالْإِجَابَةِ وَالْإِصْلَاحِ 45 ث. - تُخَلِّلُ سَيْرَ الْمُبَارَاةِ 11 فَاصِلًا مُوسِيقِيًّا مُدَّةُ كُلِّ فَاصِلٍ 2 د و 30 ث. بَعْدَ الْحَفْلِ خُصِّصَتْ 20 دق لِلتَّصْرِيحِ بِالنَّتَائِجِ وَتَوْزِيعِ الْجَوَائِزِ. * احْسُبِ الزَّمَنَ الْمُخَصَّصَ لِطَرْحِ الْأَسْئِلَةِ وَالتَّفْكِيرِ فِيهَا. * احْسُبِ الزَّمَنَ الْمُخَصَّصَ لِلْمُوسِيقَى. * احْسُبِ الزَّمَنَ الْمُخَصَّصَ لِهَذِهِ الْمُبَارَاةِ. * مَاهِيَ سَاعَةُ انْتِهَاءِ الْمُبَارَاةِ؟ (أُنْجِزُ التَّمْرِينَ عَلَى كُرَّاسِ الْمُحَاوَلَاتِ)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p072_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.49
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la multiplication de durées (jours, heures, minutes, secondes) avec conversions, ce qui correspond au calcul sur les durées de la Période 2.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Multiplication de durées",
+    "skill": "Effectuer des multiplications sur des mesures de temps (heures, minutes, secondes, jours) en convertissant les unités si nécessaire.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "mesure du temps",
+      "multiplication",
+      "conversion d'unités",
+      "durées",
+      "problèmes de la vie courante"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : série de multiplications de durées avec conversions, et problèmes contextualisés (trajet de bus avec arrêts, programmation télévisée, déroulement d'un concours scolaire avec étapes chronométrées) qui demandent de calculer une durée totale ou une heure de fin.",
+    "themeGroup": "Mesures de durées"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 1, colonne droite, ligne 1 : l'image indique « 1 س و 55 دق × 2 » ; la transcription est correcte, mais le signe « - » devant les opérations (« -2 », « =4 ») est un artefact de l'image et a été correctement ignoré. Aucune erreur ici."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : « وَتَتَوَقَّفُ » est collé ; l'image montre « وَتَتَوَقَّفُ » avec un espace après « و 30 دق ». Pas d'erreur de fond."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « 2 د و 30 ث » est transcrit tel quel, l'image montre bien « 2 د و 30 ث ». Correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : « وَحِصَصًا لِمُوجَزِ الْأَنْبَاءِ » ; l'image montre « وَحِصَصًا » avec tashkeel plus léger. Les voyelles ajoutées dans la transcription sont plausibles mais partiellement non visibles (ex. « الْمَحَطَّاتِ »)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « تُخَلِّلُ » ; l'image montre « تُخَلِّلُ » (OK). « الْحَفْلِ » correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« الدرس 4 : أُنْجِزُ عَمَلِيَّاتِ الضَّرْبِ عَلَى الْأَعْدَادِ الَّتِي تَقِيسُ الزَّمَنَ », « السنة 5 ») et le numéro de page ne sont pas transcrits."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

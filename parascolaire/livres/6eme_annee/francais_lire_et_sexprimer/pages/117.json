@@ -1,0 +1,119 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 117,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Compréhension de l'écrit (histoire du jaguar et du chef du village)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Coche la bonne réponse :",
+      "body": "Pourquoi le jaguar accepte-t-il d'aider le chef du village ? (les propositions de réponse sont illisibles ; elles portent sur : donner son accord pour aider l'enfant ; ...)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.3,
+      "id": "francais_lire_et_sexprimer_p117_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Justifie ta réponse :",
+      "body": "(Lignes de pointillés à compléter. Le texte est trop pâle pour être lu fidèlement.)",
+      "figureDesc": "Lignes pointillées pour écrire la justification.",
+      "answer": null,
+      "confidence": 0.25,
+      "id": "francais_lire_et_sexprimer_p117_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "À la fin de l'histoire, que remarque-t-on ? (consigne partiellement lisible, elle porte sur la résolution du problème de son fils)",
+      "body": "Pour résoudre le problème de son fils... Il faut que le jaguar soit rusé / le jaguar prépare de nous... / ... faire comme le jaguar...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.2,
+      "id": "francais_lire_et_sexprimer_p117_i3",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Relève, dans le texte, le détail qui te montre :",
+      "body": "(Lignes pointillées pour la réponse.)",
+      "figureDesc": "Lignes pointillées.",
+      "answer": null,
+      "confidence": 0.4,
+      "id": "francais_lire_et_sexprimer_p117_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Fais un petit résumé de l'histoire :",
+      "body": "(Espace d'écriture avec lignes pointillées.)",
+      "figureDesc": "Lignes pointillées pour rédiger le résumé.",
+      "answer": null,
+      "confidence": 0.5,
+      "id": "francais_lire_et_sexprimer_p117_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u5",
+    "confidence": 0.36
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation générale de compréhension de l'écrit en français (histoire du jaguar, résumé), sans lien clair avec un seul module ; l'entraide du jaguar pourrait évoquer le module 4, mais le contenu reste trop ambigu et illisible pour trancher.",
+  "linkFlags": [
+    "low_ocr_confidence",
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un récit narratif",
+    "skill": "Comprendre un texte narratif, justifier ses réponses, relever des indices dans le texte et résumer l'histoire.",
+    "pageType": "exam",
+    "formats": [
+      "qcm",
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "récit",
+      "jaguar",
+      "justification",
+      "résumé",
+      "relevé d'indices"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable pour évaluer la lecture : choix de réponse, justification, repérage d'un détail dans le texte, remarque finale sur la résolution du problème, puis résumé, le tout à partir d'un conte animalier mettant en scène un problème à résoudre.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "short_test",
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

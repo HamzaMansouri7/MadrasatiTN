@@ -1,0 +1,240 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 111,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Épreuve de français (et non de mathématiques) : Domaine 2 – Activités réflexives sur la langue (lexique et grammaire), thème des énergies renouvelables / énergie éolienne. La page ne correspond pas au sujet annoncé et ne porte pas le numéro 111 ; elle est numérotée 2 et provient de www.escuela.info.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Connais-tu d'autres énergies renouvelables ? (2pts)",
+      "body": "Ligne de réponse à compléter (pointillés).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p111_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "Trouve dans le texte l'antonyme de chaque mot : (1pt)",
+      "body": "Ancienne ≠ ....................  difficilement ≠ ....................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p111_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "Ajoute un préfixe convenable à chaque mot : (1pt)",
+      "body": "-monter → ....................  -respectueuse → ....................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p111_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "Indique la nature grammaticale des constituants de ces mots composés (1pt)",
+      "body": "- grand-père → ....................  oiseau-mouche → ....................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p111_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "Souligne le CCL, encadre le CCM et entoure le CCT dans cette phrase : (0,75 pt)",
+      "body": "Aujourd'hui, l'énergie éolienne est utilisée fréquemment dans le monde.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p111_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "Remplace le COD par le pronom convenable : (0,75pt)",
+      "body": "- Les combustibles fossiles polluent l'environnement.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p111_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "Transforme cette phrase en phrase interrogative : (0,75pt)",
+      "body": "- Les autres éoliennes servent à pomper l'eau",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p111_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15 A",
+      "instruction": "Exprime la comparaison convenable dans la phrase suivante : (0,75pt)",
+      "body": "- Les combustibles fossiles sont ............... respectueuses de l'environnement ...... l'énergie éolienne.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p111_i8",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15 B",
+      "instruction": "Exprime la cause dans la phrase suivante : (0,75pt)",
+      "body": "On doit utiliser l'énergie renouvelable. Elle respecte l'environnement.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p111_i9",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15 C",
+      "instruction": "Écris cette phrase à la forme négative : (0,75pt)",
+      "body": "-L'énergie est toujours utilisée dans les pays arabes.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p111_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "Transforme cette phrase à la voix passive : (0,75pt)",
+      "body": "-Le gouvernement encourage l'utilisation de l'énergie éolienne.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p111_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "17",
+      "instruction": "Transmets cette phrase au discours indirect : (0,75pt)",
+      "body": "- « Respectez l'environnement ! », demande le maître aux élèves.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p111_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une épreuve de français (lexique, grammaire, énergie éolienne) qui regroupe plusieurs notions (antonymes, préfixes, mots composés, compléments circonstanciels, COD, interrogation, comparaison) ; elle ressemble à une évaluation générale et non à un chapitre précis, même si le thème des énergies renouvelables se rapproche du Module 5 (Sauver la nature).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Langue : lexique et grammaire (énergie éolienne)",
+    "skill": "Mobiliser le lexique (antonymes, préfixes, mots composés) et la grammaire (compléments circonstanciels, pronominalisation, types et formes de phrase, comparaison, cause) à partir d'un texte sur les énergies renouvelables.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "énergies renouvelables",
+      "énergie éolienne",
+      "antonymes et préfixes",
+      "mots composés",
+      "compléments circonstanciels",
+      "transformation de phrases"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Modèle d'épreuve de langue de fin de cycle avec exercices courts et notés, centrés sur un thème scientifique unique (lexique, analyse de phrase, transformations), réutilisable pour construire des évaluations thématiques cohérentes.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres de section sont omis : « Domaine2 : Activités réflexives sur la langue : (18 pts) », « Sous domaine 1 : Lexique (3pts) » et « Sous domaine 2 : Grammaire (6 pts) »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 15 A : l'image porte « respectueuses » avec la mention « de l'environnement ......l'énergie éolienne » ; la transcription est correcte, mais le point après « éolienne » est présent dans l'image et la transcription l'a conservé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Question 14 : le « (0,75pt) » figure à la fin de la ligne de la phrase dans l'image, et la ligne de réponse en pointillés n'est pas signalée (de même pour 13, 15B, 15C, 16, 17)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 15 : l'image numérote « 15 A », puis « B » et « C » sans le 15 ; la transcription ajoute « 15 » devant B et C (acceptable mais reformulé)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

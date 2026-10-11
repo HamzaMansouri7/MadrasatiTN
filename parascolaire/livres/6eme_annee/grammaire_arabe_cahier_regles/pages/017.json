@@ -1,0 +1,101 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 17,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الإسناد إلى الضمائر (إسناد الفعل الماضي والفعل الناسخ إلى الضمائر المتصلة) – conjugaison du verbe au passé avec les pronoms",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أعد كتابة الجملة و أسندها إلى ما هم بين قوسين",
+      "body": "نسي درسه بعد أن حفظه فرنا إلى المعلم مستعطفا\n(حفظتـه)\n(حفظناه)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p017_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أسند الأفعال إلى ما يشير إليه الضمير المتصل بالناسخ",
+      "body": "لأنه حفظ الود و رعى العهد فقد اخترته صديقا لي\nلأنك\nلأنك",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p017_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "استرشد بالجملة التالية و أسندها إلى الضمائر   أنتما   و   أنتم",
+      "body": "رضي أن أنظم إلى نادي التنس فسعيت إلى تسجيل اسمي",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p017_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أعيد كتابه النص مسندا إلى ضمير   الغائبين   و   الغائبات",
+      "body": "خشي أن يفشل في الامتحان فقضى وقتا طويلا في المراجعة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p017_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m2",
+    "confidence": 0.42
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la conjugaison arabe : verbes au passé et verbes défectifs (الناسخ) attribués aux pronoms suffixes. Cela correspond à l'Unité 1 (ar-6-ch1), qui mentionne la conjugaison des verbes défectifs, mais le lien avec la narration reste implicite et plusieurs unités pourraient reprendre ce point de langue.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison du passé avec pronoms",
+    "skill": "Conjuguer un verbe au passé et un verbe d'état (nâsikh) en les faisant accorder avec les pronoms sujets et compléments suffixés.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "conjugaison",
+      "passé",
+      "pronoms suffixes",
+      "verbe nâsikh",
+      "réécriture de phrases"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : réécrire une même phrase ou un court texte en changeant de pronom (duel, pluriel masculin ou féminin, 3e personne), avec un modèle donné, pour s'entraîner aux accords du verbe passé.",
+    "themeGroup": "Conjugaison: pronoms et suffixes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

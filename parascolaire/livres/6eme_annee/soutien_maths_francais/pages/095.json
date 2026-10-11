@@ -1,0 +1,160 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 95,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Langue française (et non mathématiques) : évaluation sur les énergies et la pollution — grammaire, conjugaison, orthographe. La page ressemble à un examen marocain (parc Noor, Maroc), pas à une page tunisienne.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "Mets la phrase suivante à la forme négative :",
+      "body": "L'énergie fossile est une énergie renouvelable.",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p095_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "Réécris la phrase suivante à la forme interrogative :",
+      "body": "Le charbon est la source la plus émettrice de CO2.",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p095_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "Mets la phrase à la voix passive :",
+      "body": "-Le Maroc construit un parc éolien.",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p095_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "17",
+      "instruction": "Transforme la phrase suivante au discours indirect :",
+      "body": "L'élève dit à son professeur : « est ce que l'utilisation des voitures électriques diminue la pollution ? »",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p095_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "18",
+      "instruction": "C. Conjugaison (06 points) — Conjugue les verbes entre parenthèses aux temps indiqués :",
+      "body": "- Ils ................. (fournir) des grands efforts pour lutter contre la pollution. (Présent)\n- Le monde ................. (Être) propre avec l'énergie verte. (Futur)\n- le réchauffement climatique ................. (Détruire) l'écosystème mondial. (Passé composé)\n- je ................. (visiter) le parc solaire Noor. (Imparfait)\n- ................. (unir) nos forces pour un monde propre. (Impératif présent / 1ère per du pluriel)\n- Si nous respections l'environnement, les ressources naturelles ne (s'épuiser)................. pas. (Conditionnel présent)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p095_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "19",
+      "instruction": "D. Orthographe (03 points) — Complète par la forme correcte de l'adjectif",
+      "body": "Les ................. ressources énergétiques sont le charbon et le gaz naturel. (ancien- anciennes)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p095_i6",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "20",
+      "instruction": "Mets les mots au pluriel.",
+      "body": "▪ Festival : ......................... un chou- fleur : .........................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p095_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "21",
+      "instruction": "Complète la phrase suivante par : quelle, quels ou qu'elle",
+      "body": "Elle m'a dit ................. a fait des recherches sur les énergies, ................. bonne idée !",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p095_i8",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.23
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation générale de français (grammaire, conjugaison, orthographe) sur les énergies et la pollution, au format d'examen marocain, qui couvre plusieurs notions et ne correspond pas clairement à un seul chapitre (le thème écologique évoque fr-6-m5, mais les exercices sont transversaux).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Énergies et pollution : grammaire, conjugaison, orthographe",
+    "skill": "Transformer des phrases (négation, interrogation, voix passive, discours indirect), conjuguer des verbes et accorder des mots dans un contexte écologique.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "transformations de phrases",
+      "voix passive",
+      "discours indirect",
+      "conjugaison",
+      "accord de l'adjectif",
+      "pluriel des noms composés",
+      "énergies renouvelables"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le thème des énergies et de la pollution sert de fil conducteur à des exercices de langue (transformation de phrases, conjugaison à différents temps, accords, homophones quelle/quels/qu'elle) : on peut reprendre ce principe d'évaluation thématique, avec des barèmes par rubrique.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "short_test",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

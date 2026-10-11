@@ -1,0 +1,146 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 48,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 11 – اختبار تقويمي للتثبيت والدعم (الأعداد إلى 9999 والعمليات، وحدات السعة، التعامد، مسائل)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع مكان النقط أعدادا مناسبة :",
+      "body": "8 د - ........... = 6 932 مي\n3 920 مي + ........... = 10 د = ........... - 1 769 مي",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p048_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اشتريت دِيسلتريْن من العطر بـ 800 مي. ما هو ثمن اللتر الواحد من هذا العطر؟",
+      "body": "اشتريت دِيسلتريْن من العطر بـ 800 مي. ما هو ثمن اللتر الواحد من هذا العطر؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p048_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ الرّسم التّالي :",
+      "body": "- ارسم مستقيما (س) عموديًا على المستقيم (ص) مارًا من النّقطة \"أ\".\n- ارسم مستقيما (ك) عموديًا على المستقيم (ص) مارًا من النّقطة \"ب\"\n- هل يتقاطع المستقيمان (ك) و (س)؟ ماذا تستنتج؟",
+      "figureDesc": "مستقيم مائل (ص) تقع عليه النقطة «أ»، ونقطة «ب» خارج المستقيم في أعلى اليسار.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p048_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "عائلة تتركّب من 5 أفراد. قرّرت الأمّ بمناسبة عيد ميلادها تقديم لكلّ واحد من أفراد العائلة 4 دسل من عصير البرتقال وقطعة مرطّبات سعر الواحدة 200 مي وتفّاحا يبلغ ثمنه ضعف ثمن المرطّبات.",
+      "body": "- كم لترا من العصير ستحضر هذه الأمّ ؟\n- ما هو ثمن تكلفة المشروب إذا علمت أنّ اللتر الواحد يبلغ 800 مي؟\n- كم ستبلغ مصاريف هذه السّهرة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p048_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p6",
+    "confidence": 0.25
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de consolidation (semaine 11) mêlant nombres jusqu'à 9999, opérations, unités de capacité, perpendiculaires et problèmes, donc couvrant plusieurs chapitres sans correspondance unique ; les nombres à 4 chiffres et la monnaie en millimes ne correspondent pas clairement à un seul chapitre officiel.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    119
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Numération, capacités et perpendiculaires",
+    "skill": "Calculer avec des nombres jusqu'à 9999 et des unités de monnaie et de capacité, tracer des perpendiculaires et résoudre des problèmes à étapes.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres jusqu'à 9999",
+      "millimes et dinars",
+      "décilitres et litres",
+      "droites perpendiculaires",
+      "problème à étapes",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation de consolidation qui combine calculs à trous sur des conversions dinar/millime, tracé de perpendiculaires à une même droite pour en déduire le parallélisme, et problème de fête familiale avec capacités (dl/L) et budget en plusieurs étapes.",
+    "themeGroup": "Numération jusqu'à 9 999"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « الأسبوع 11 », « اختبار تقويمي للتثبيت والدعم », ainsi que le numéro de page 44."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 1, 2e ligne : la transcription donne « 3 920 مي + ........... = 10 د = ........... - 1 769 مي ». Dans l'image, l'ordre est « 3 920 مي + ........ = 10 د = ........ - 1 769 مي », ce qui est identique. Pas d'erreur sur les nombres, seule la structure est ambiguë. Le point est donc à vérifier."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 3 : « لاحظ الرسم التالي » est séparé des consignes, et le dessin (droite (ص), points أ et ب) n'est pas décrit. C'est acceptable pour un OCR, mais le dessin est omis."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'énoncé est dupliqué dans la transcription (il apparaît deux fois)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : « وتفّاحا » est transcrit avec une shadda sur le ف, alors que l'image montre « وتفاحا » sans shadda. Des signes de voyelles sont aussi ajoutés dans l'exercice 3 : « عموديًا » et « مارًا » apparaissent avec tanwin, ce qui correspond à l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : dans l'image, « ضعف ثمن المرطّبات » est suivi d'un point. La transcription le conserve. La phrase « سعر الواحدة » est correcte. Aucune erreur détectée."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "linked",
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

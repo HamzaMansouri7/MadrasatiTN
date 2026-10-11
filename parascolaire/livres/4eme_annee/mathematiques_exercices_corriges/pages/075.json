@@ -1,0 +1,115 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 75,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 20 – القسمة (1) : القسمة كتوزيع بالتساوي، الجداء والباقي",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "وَزَّعَ 8 أطفال فِيمَا بَيْنَهُمْ بِالتَّسَاوِي 43 صُورَةً. أ) أَكْمِلْ مَلْءَ جَدْوَلِ التَّوْزِيعِ. ب) اسْتَعِنْ بِالجَدْوَلِ وأَكْمِلْ.",
+      "body": "جدول التوزيع (الأعمدة: عدد الصور لكلّ طفل | عدد الصور الموزّعة | عدد الصور الباقية):\n1 | 8 × 1 = 8 | 43 - 8 = 35\n2 | 8 × 2 = 16 | 35 - 8 = 27\n3 | 8 × .. = 24 | 27 - .. = ..\n4 | 8 × .. = .. | .. - 8 = ..\n.. | .. × .. = .. | .. - .. = ..\n\nب) أكمل:\n43 = (8 × 1) + ..\n43 = (8 × 2) + ..\n43 = (.. × 8) + ..\n43 = (.. × ..) + ..\n43 = (.. × ..) + ..\n43 = (5 × ..) + ..\n\nاسْتَنْتِجْ: عدد الصور التي أخذها كلّ طفل هو [ ] ، عدد الصور التي بقي هو [ ].",
+      "figureDesc": "جدول من ثلاثة أعمدة وخمسة أسطر، بعضها مملوء وبعضها فارغ (نقاط)، ثم إطاران فارغان للإجابة في آخر التمرين.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p075_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْمِلْ مَلْءَ الجَدْوَلِ جَانِبَهُ ثُمَّ اسْتَعِنْ بِهِ لِمَلْءِ البِطَاقَاتِ بِأَعْدَادٍ مُنَاسِبَةٍ :",
+      "body": "وَزَّعَتِ المُعَلِّمَةُ بِالتَّسَاوِي عَلَى [ ] تَلَامِيذَ [ ] قَلَمًا. فَأَخَذَ كُلٌّ [ ] أَقْلَامٍ وَتَوَقَّفَتِ المُعَلِّمَةُ عَنْ تَوْزِيعِ الأَقْلَامِ لِأَنَّهُ لَمْ يَبْقَ مَعَهَا إِلَّا [ ] أَقْلَامٍ.\n\nالجدول (الأعمدة: عدد الأقلام التي يأخذها كلّ تلميذ | عدد الأقلام الموزّعة | عدد الأقلام الباقية):\n1 | 6 | 34 - 6 = 28\n2 | 6 × 2 = .. | 28 - 6 = 22 (مكتوب 22 = 6 - ..)\n3 | 6 × 3 = .. | 22 - 6 = ..\n4 | 6 × .. = 24 | 16 - .. = 10\n5 | .. × 5 = 30 | 10 - .. = 4",
+      "figureDesc": "جدول من ثلاثة أعمدة وخمسة أسطر بعض خاناته فارغة، وبطاقات فارغة داخل النص.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p075_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْمِلْ كَمَا بِالْمِثَالِ :",
+      "body": "أطر: 2 × 7 < 18 < 3 × 7 ؛ .. × 7 < 30 < .. × 7 ؛ .. × .. < 45 < .. × .. ؛ .. × .. < 60 < .. × ..\nمستقيم عددي لمضاعفات 7: 7 (1×7)، 14 (2×7)، 21 (3×7)، 28 (4×7)، 35 (5×7)، 42 (6×7)، 49 (7×7)، 56 (8×7)، 63 (9×7).",
+      "figureDesc": "مستقيم عددي عليه مضاعفات 7 من 7 إلى 63 مع بطاقات الجداءات تحته، وسهم منحنٍ يبيّن موضع العدد 18 بين 14 و21 كمثال.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p075_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "فِي حِصَّةِ التَّرْبِيَةِ التَّشْكِيلِيَّةِ تُرِيدُ المُعَلِّمَةُ أَنْ تُوَزِّعَ عَلَى 37 تِلْمِيذًا قَلَمَيْنِ. تُوجَدُ الأَقْلَامُ فِي عُلَبٍ تَحْتَوِي كُلُّ عُلْبَةٍ عَلَى 6 أَقْلَامٍ. أَحْسُبْ عَدَدَ العُلَبِ الَّتِي سَتَفْتَحُهَا المُعَلِّمَةُ.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p075_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اقْرَأْ مَا يُمَثِّلُهُ كُلُّ عَدَدٍ ثُمَّ اكْتُبِ الأَعْدَادَ المُنَاسِبَةَ مَكَانَ النُّقَطِ :",
+      "body": "الأعداد: 151، 3، 4، 37. البطاقات: المقسوم، الخارج، الباقي، القاسم. المساواة: ... = (.. × ..) + ..",
+      "figureDesc": "مخطط بأسهم يربط بطاقات (المقسوم، الخارج، الباقي، القاسم) بالأعداد 151 و3 و4 و37، تتقاطع فيه الأسهم.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_corriges_p075_i5",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch3",
+  "topicTitle": "Période 3 : Division euclidienne, fractions et périmètres",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la division euclidienne (division comme partage équitable, dividende, diviseur, quotient, reste, égalité a = (b × q) + r), ce qui correspond à la Période 3 : Division euclidienne, fractions et périmètres.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division comme partage équitable avec reste",
+    "skill": "Comprendre la division euclidienne comme partage en parts égales et écrire l'égalité dividende = (diviseur × quotient) + reste.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "division",
+      "partage équitable",
+      "reste",
+      "multiples",
+      "dividende et diviseur",
+      "égalité caractéristique"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Progression partant d'un tableau de distribution pas à pas (images ou crayons partagés entre enfants), puis de cartes à compléter, d'un encadrement entre multiples sur droite graduée et d'un exercice d'identification des termes (dividende, diviseur, quotient, reste), réutilisable pour introduire la division.",
+    "themeGroup": "Division euclidienne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

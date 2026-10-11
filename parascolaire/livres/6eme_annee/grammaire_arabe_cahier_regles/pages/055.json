@@ -1,0 +1,102 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 55,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "التمييز (المفسِّر للمقادير) وإعرابه ووظائفه، ثم المركب الموصولي: الاسم الموصول وصلة الموصول (ملاحظة : la page est en arabe, matière de langue arabe)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الثاني",
+      "instruction": "أسطر التمييز المنصوب وأحوله إلى جار ومجرور",
+      "body": "اشتريت صاعا قمحا\nعندي رطل عسل\nهذا هكتار أرضا",
+      "figureDesc": "Encadré rectangulaire contenant la consigne et trois phrases.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p055_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الثالث",
+      "instruction": "عين وظائف العبارات المسطرة في الأمثلة التالية",
+      "body": "اشترت أمي مترين من القماش (« مترين » soulignée)\nضاع مني متران من القماش (« متران » soulignée)\nيلزمني متران قماشا لصنع سروال (« متران قماشا » souligné)\nثمن المتران من القماش ثلاثون دينارا\nعندي متران قماشا",
+      "figureDesc": "Encadré avec cinq phrases, certaines expressions soulignées (مترين، متران، متران قماشا).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p055_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الرابع",
+      "instruction": "ضع سطرا تحت كل تمييز",
+      "body": "دخلت مغازة لشراء ملازم صنع كعكة من المرطبات   ماذا اشتريت",
+      "figureDesc": "Grand encadré avec espace vide pour la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p055_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المركب الموصولي – المراجعة",
+      "body": "الاسم الموصول حرف أو لفظ يرد بعد اسم معرفة أو يعوضه ولا يتضح معناه إلا بتركيب جزئي أو اسنادي يتبعه ويسمى صلة الموصول\nالأسماء الموصولة قسمان: خاص ومشترك",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p055_i4",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u6",
+    "confidence": 0.22
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de grammaire arabe (التمييز et المركب الموصولي), qui ne correspond clairement à aucune des six unités officielles, centrées sur la narration et ses passages ; ces points de langue pourraient être intégrés à plusieurs unités sans qu'on puisse en désigner une.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Le complément de précision (tamyiz) et le groupe relatif",
+    "skill": "Identifier le tamyiz et sa fonction, le transformer en complément prépositionnel, et reconnaître le pronom relatif et sa proposition relative.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "tamyiz",
+      "complément de mesure",
+      "nom relatif",
+      "silat al-mawsul",
+      "analyse grammaticale",
+      "fonctions syntaxiques"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : séries de phrases courtes sur des mesures du quotidien (achats, tissu, terrain) pour comparer un tamyiz et un complément prépositionnel, avec consignes de soulignement et d'identification des fonctions, suivies d'un rappel de cours sur les noms relatifs.",
+    "themeGroup": "Les compléments"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

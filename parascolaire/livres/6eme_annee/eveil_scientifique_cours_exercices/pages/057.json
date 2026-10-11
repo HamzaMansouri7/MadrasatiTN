@@ -1,0 +1,275 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 57,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "Corrigés de « إيقاظ علمي – السنة السادسة – الصفحة 84 à 89 » : les aimants, la boussole, l'électroaimant et la force de gravité (الجاذبية الأرضية)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "84",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 84",
+      "body": "① + ④ يتنافران ، الاتجاه ←\n② + ③ يتجاذبان ، الاتجاه →\n\n① (ل) (ش) ← (ل) ← (ج)\n② (م) (ج) ← (م) ← (ش)\n③ (ن) (ش) ← (ن) ← (ج)\n④ (ش) (ج)",
+      "figureDesc": "جدول يوضح أقطاب المغناطيس والتجاذب والتنافر بينها بالأسهم والرموز (ش، ج، ل، م، ن)",
+      "answer": null,
+      "id": "eveil_scientifique_cours_exercices_p057_i1",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.95
+    },
+    {
+      "kind": "answer",
+      "number": "85",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 85",
+      "body": "ت1: لا يتغيّر اتّجاه الإبرة.\nت2: لها اتّجاه ثابت، شمال - جنوب ، لأنّها تدور أفقيا حول محور ثابت.\nأدِرْ حول نفسك حتّى يصبح الحرف (ش) باتّجاه الشمال ، تستطيع الآن تحديد الشّرق فهو عن يمينك.\nلا ينجح في تحديد الاتّجاه ، لأنّه استعمل البوصلة قرب قطعة الحديد.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "eveil_scientifique_cours_exercices_p057_i2",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.95
+    },
+    {
+      "kind": "answer",
+      "number": "86",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 86",
+      "body": "ت1: تشير البوصلة إلى :\nشمال - جنوب\nت2: يبطل عمل البوصلة عند قربها من موادّ حديديّة.\nت3: عند استعمال البوصلة لابدّ أن تكون بعيدة عن أيّ مغناطيس آخر حتّى لا تتأثّر به.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "eveil_scientifique_cours_exercices_p057_i3",
+      "topicId": "sci-6-u5",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "confidence": 0.95
+    },
+    {
+      "kind": "answer",
+      "number": "87",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 87",
+      "body": "ب) تلاحظ أنّ الإبرة تنحرف ولا تعود إلى وضعها السّابق وفق اتّجاه الشّمال والجنوب الجغرافيّ إلاّ عند فتح القاطعة.\nج) تنحرف الإبرة المغناطيسيّة في الاتّجاه المعاكس.\nد) استنتج أن للتيار الكهربائي أثرا مغناطيسيا.\nتتحرّك إبرة البوصلة.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "eveil_scientifique_cours_exercices_p057_i4",
+      "topicId": "sci-6-u5",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "confidence": 0.95
+    },
+    {
+      "kind": "answer",
+      "number": "88",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 88",
+      "body": "أ) يجذب المسمار بعض الدّبابيس.\nب) تسقط الدّبابيس.\nج) مسمار الفولاذ يحتفظ بمغنطته.\nد) استنتج :\nيصنع المغناطيس الدائم من الفولاذ بلفّ سلك معزول حوله وإمرار تيّار كهربائيّ في السّلك.\nيصبح مسمار الحديد المطاوع مغناطيسا عند مرور التّيّار الكهربائيّ ويفقد مغنطته عند قطع التّيّار الكهربائيّ.\nتدير عجلة الدرّاجة المنوّب الّذي بداخله مغناطيس فيضيء المصباح ، يولّد المنوّب طاقة كهربائيّة.\nالفولاذ لأنّه يستمرّ تمغنطه بعد انقطاع الكهرباء.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "eveil_scientifique_cours_exercices_p057_i5",
+      "topicId": "sci-6-u5",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "confidence": 0.95
+    },
+    {
+      "kind": "answer",
+      "number": "89",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 89",
+      "body": "أ) سقوط الكرة نحو الأرض.\nب) سقوط قطعة الحجر نحو الأرض.\nج) سبب سقوط الأوراق نحو الأرض وتحرّكها هو وجود قوّة تؤثّر عليها ، إنّها قوّة الجاذبيّة الأرضيّة.\nأ) يزداد طول النّابض بتأثير قوّة شدّ اليد.\nب) يزداد طول النّابض.\nالتفسير : تجذب الأرض الجسم نحو الأسفل بقوّة ثقل الجسم ممّا يؤدّي إلى زيادة في طول النّابض.\nتصل مجموعة الأجسام إلى سطح الأرض في اللّحظة نفسها.\nاستنتج :\nإذا سقطت مجموعة أجسام مختلفة بثقلها في آن معا ، ومن ارتفاع واحد تصل إلى سطح الأرض في اللّحظة نفسها.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "eveil_scientifique_cours_exercices_p057_i6",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.95
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u5",
+  "topicTitle": "Unité 5 : Énergie, magnétisme, poids et chute libre",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u5",
+    "confidence": 0.93
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "Les pages 84 à 89 corrigent des exercices sur les aimants, la boussole, l'effet magnétique du courant électrique, l'électroaimant et la force de gravité (poids, chute des corps), ce qui correspond à l'Unité 5 : Énergie, magnétisme, poids et chute libre.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Aimants, boussole et gravité",
+    "skill": "Expliquer le comportement des aimants, de la boussole et de l'électroaimant, et reconnaître l'effet de la force de gravité terrestre.",
+    "pageType": "correction",
+    "formats": [
+      "schema_tableau",
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "aimant",
+      "boussole",
+      "électroaimant",
+      "courant électrique",
+      "gravité",
+      "pôles magnétiques"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : expériences simples (attraction et répulsion de pôles, boussole près du fer, aiguille déviée par un courant, clou enroulé de fil pour fabriquer un électroaimant, chute d'objets, allongement d'un ressort) pour concevoir des exercices d'observation et de déduction.",
+    "themeGroup": "Les aimants et la boussole"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.95,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Section 84 : « réponse: ① و ④ يتنافران؛ ② و ③ يتجاذبان » est un texte ajouté, absent de l'image ; de même les « réponse: كما في النص » des autres sections."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Section 85 : « لأنّها تدور قُبَيْلَ حول محور ثابت » ; l'image porte « لأنّها تدور آقيًا حول محور ثابت » (ou équivalent). « قُبَيْلَ » est inventé et ses voyelles aussi."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Section 87 : « رفق اتّجاه الشمال » ; l'image porte « وفق اتّجاه الشمال » (« رفق » est une erreur)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 85 : la transcription met « 1) » « 2) » « 3) » alors que l'image numérote ces éléments par des puces carrées ; « ت1 » est plutôt « ت1: » avec point."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Section 88, point 3 : « يستمرّ مغنطته » ; l'image porte « يستمرّ بمغنطته » ou « تمغنطه », à vérifier ; « الدرّاجة » est correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 89 : « سبب سقوط الأوراق نحو الأرض وتحرّكها » ; l'image porte « نحو الأرض وتحركها » ; le sens est correct mais les voyelles sont ajoutées."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Section 84-2 : la grille des quatre rectangles est mal décrite. Les lettres sont (ش)(ل) pour ①, (ع)(م) pour ②, (ش)(ن) pour ③, (ج)(ش) pour ④. L'ordre et les flèches sont inversés : ① (ل)←(ج), ② (م)←(ش), ③ (ن)←(ع). Les polarités sont mal rendues."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 88 : « يصبح مسمار الحديد المطاوع » est correct ; « إمرار » correct. La phrase de la section 88 mélange les éléments d'un autre bloc, avec « المولد » sans tashkeel dans l'image."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les colonnes sont ordonnées 84→89 alors que l'image a deux colonnes (88-89 à gauche, 84-87 à droite) ; l'ordre de lecture arabe est respecté, mais le numéro de page 14 est omis."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "84",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 84",
+      "body": "① + ④ يتنافران، الاتجاه ←\n② + ③ يتجاذبان، الاتجاه →",
+      "figureDesc": "Deux flèches indiquant le sens (gauche pour la répulsion, droite pour l'attraction) entre les aimants numérotés ①④ et ②③.",
+      "answer": "① و ④ يتنافران؛ ② و ③ يتجاذبان",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p057_i1",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "84-2",
+      "instruction": "تعيين أقطاب المغناطيس (ش، ج، ل، م، ن)",
+      "body": "① مغناطيس مقسوم إلى (ش) و(ل) مع السهم (ل) ← (ج)\n② (ع) و(م) مع السهم (م) ← (ش)\n③ (ش) و(ن) مع السهم (ن) ← (ع)\n④ (ج) و(ش)",
+      "figureDesc": "Quatre rectangles (aimants) divisés en deux pôles, étiquetés par des lettres arabes, avec des flèches à gauche de chacun.",
+      "answer": null,
+      "confidence": 0.5,
+      "id": "al_mounir_eveil_scientifique_6eme_p057_i2",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "85",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 85",
+      "body": "1) ت1: لا يتغيّر اتّجاه الإبرة.\nت2: لها اتّجاه ثابت، شمال - جنوب، لأنّها تدور قُبَيْلَ حول محور ثابت.\n2) أدِرْ حول نفسك حتّى يصبح الحرف (ش) باتّجاه الشمال. تستطيع الآن تحديد الشرق فهو عن يمينك.\n3) لا ينجح في تحديد الاتّجاه، لأنّه استعمل البوصلة قرب قطعة الحديد.",
+      "figureDesc": "",
+      "answer": "كما في النص",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p057_i3",
+      "topicId": "sci-6-u5",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "86",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 86",
+      "body": "ت1: تشير البوصلة إلى: شمال - جنوب.\nت2: يبطل عمل البوصلة عند قربها من موادّ حديدية.\nت3: عند استعمال البوصلة لابدّ أن تكون بعيدة عن أيّ مغناطيس آخر حتّى لا تتأثّر به.",
+      "figureDesc": "",
+      "answer": "كما في النص",
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p057_i4",
+      "topicId": "sci-6-u5",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "87",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 87",
+      "body": "ب) تلاحظ أنّ الإبرة تنحرف ولا تعود إلى وضعها السابق رفق اتّجاه الشمال والجنوب الجغرافيّ إلاّ عند فتح القاطعة.\nج) تنحرف الإبرة المغناطيسيّة في الاتّجاه المعاكس.\nد) أستنتج أنّ للتيّار الكهربائيّ أثرا مغناطيسيّا.\nتتحرّك إبرة البوصلة.",
+      "figureDesc": "",
+      "answer": "كما في النص",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p057_i5",
+      "topicId": "sci-6-u5",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "88",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 88",
+      "body": "1) أ) يجذب المسمار بعض الدبابيس.\nب) تسقط الدبابيس.\nج) مسمار الفولاذ يحتفظ بمغنطته.\nد) أستنتج: يصنع المغناطيس الدائم من الفولاذ بلفّ سلك معزول حوله وإمرار تيّار كهربائيّ في السلك. يصبح مسمار الحديد المطاوع مغناطيسا عند مرور التيّار الكهربائيّ ويفقد مغنطته عند قطع التيّار الكهربائيّ.\n2) تدير عجلة الدرّاجة المُوَلِّد الذي بداخله مغناطيس فيضيء المصباح، يولّد المولّد طاقة كهربائيّة.\n3) الفولاذ لأنّه يستمرّ مغنطته بعد انقطاع الكهرباء.",
+      "figureDesc": "",
+      "answer": "كما في النص",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p057_i6",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "89",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 89",
+      "body": "1) أ) سقوط الكرة نحو الأرض.\nب) سقوط قطعة الحجر نحو الأرض.\nج) سبب سقوط الأوراق نحو الأرض وتحرّكها هو وجود قوّة تؤثّر عليها، إنّها قوّة الجاذبيّة الأرضيّة.\n2) أ) يزداد طول النابض بتأثير قوّة شدّ اليد.\nب) يزداد طول النابض.\nالتفسير: تجذب الأرض الجسم نحو الأسفل بقوّة ثقل الجسم ممّا يؤدّي إلى زيادة في طول النابض.\n3) تصل مجموعة الأجسام إلى سطح الأرض في اللحظة نفسها.\nأستنتج: إذا سقطت مجموعة أجسام مختلفة بثقلها في آن معا ومن ارتفاع واحد تصل إلى سطح الأرض في اللحظة نفسها.",
+      "figureDesc": "",
+      "answer": "كما في النص",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p057_i7",
+      "topicId": "sci-6-u5",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "linkStatus": "clean",
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

@@ -1,0 +1,156 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 65,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 17: حساب جداء عددين أحدهما ذو رقمين والآخر ذو رقمين أو ثلاثة أرقام أو أربعة أرقام",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "استعن بالجداء المنجز لكتابة باقي الجداءات دون وضع العمليات عموديّا:",
+      "body": "432 = 24 × 18 ؛ ......... = 36 × 48 ؛ ......... = 72 × 48 ؛ ......... = 36 × 24 ؛ ......... = 36 × 12 ؛ ......... = 72 × 12",
+      "figureDesc": "Six cadres de multiplication alignés sur deux rangées de trois. Seul le premier (24 × 18 = 432) est complété, les autres ont des pointillés à remplir.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p065_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أ) ابحث عن المداخيل الجملية. ب) ما هي المرابيح التي تحصّلت عليها الجمعيّة إذا علمت أنّ مصاريف الانتاج قدّرت بـ 59 د ؟",
+      "body": "نظّمت جمعيّة العمل التنموي بمدرسة معرضا لانتاجها فباعت: - 25 شمعدانا بـ 1800 مي الواحد. - 8 أزواج من الفوانيس الخشبيّة ثمن الفانوس الواحد بـ 4500 مي. - 35 حاملة مفاتيح بـ 1200 مي الواحد.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p065_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ابحث عن ثمن الغطاء.",
+      "body": "باع فلاّح 15 أرنبا بـ 3800 مي الأرنب الواحد و 36 كغ من الجلبّان بـ550 مي الكغ. كم قبض؟ أراد استغلال ما حصل عليه من مبيعاته في شراء مذياع بـ 35 د وعصّارة كهربائية ثمنها يقلّ بـ 9 دنانير عن ثمن المذياع وغطاء طاولة فلاحظ أنّه ينقصه 1200 مي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p065_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ابحث عن ربحه علما وأنّه اشترى الكتاب الواحد بـ 900 مي.",
+      "body": "باع كتبيّ 45 كتابا بـ 1200 مي الكتاب الواحد.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p065_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "كم عدد ساعات سنة 1988؟",
+      "body": "كم عدد ساعات سنة 1988؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p065_i5",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch2",
+    "confidence": 0.17
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la multiplication posée d'un nombre à deux chiffres par un nombre de 2 à 4 chiffres, avec des problèmes de calcul de produits et la distributivité (utilisation d'un produit connu), ce qui correspond à la Période 2.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Multiplication de nombres à deux chiffres",
+    "skill": "Calculer le produit d'un nombre à deux chiffres par un nombre à deux, trois ou quatre chiffres, et résoudre des problèmes de prix, de revenus et de bénéfices.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "multiplication",
+      "produit",
+      "problème",
+      "monnaie (dinars et millimes)",
+      "bénéfice",
+      "recette"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : déduire des produits à partir d'un produit connu sans poser l'opération (doubler, moitié, tiers), et des problèmes contextualisés tunisiens (exposition de l'association de l'école, vente de lapins, libraire) sur recettes, bénéfices et budget manquant. La dernière consigne (nombre d'heures dans une année) est un bon contexte de calcul, mais l'énoncé est dupliqué dans la page.",
+    "themeGroup": "Multiplication et multiples"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 2 : les questions أ) et ب) sont placées avant l'énoncé (نظّمت جمعيّة... فباعت), alors que dans l'image elles viennent après la liste des ventes."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 3 : 'ابحث عن ثمن الغطاء.' est placé avant l'énoncé alors qu'il se trouve à la fin."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 4 : 'ابحث عن ربحه...' est placé avant 'باع كتبيّ 45 كتابا...' alors qu'il vient après."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 1 : l'ordre des opérations est inversé (432 = 24 × 18 doit venir en premier à droite, puis 36×24, 36×48, 72×48 etc. selon la disposition en deux lignes). La ligne du haut est 24×18, 36×48, 72×48 et celle du bas 36×24, 36×12, 72×12 ; l'ordre transcrit est proche mais mélangé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page absent : 'الأسبوع 17', le titre 'حساب جداء عددين أحدهما ذو رقمين والآخر ذو رقمين أو ثلاثة أرقام أو أربعة أرقام' et le numéro de page 61 ne sont pas transcrits."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5 : le texte est dupliqué dans la transcription (énoncé répété comme titre), pas de contenu inventé mais redondance."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel partiel : 'عموديّا' et 'الجمعيّة' sont conservés, mais 'كتبيّ' garde correctement la shadda ; 'فلاّح' et 'الجلبّان' sont écrits avec shadda alors que l'image montre 'فلاح' et 'الجلبان' (légère différence)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

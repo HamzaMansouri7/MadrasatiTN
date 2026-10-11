@@ -1,0 +1,164 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 93,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 25 – آليات القسمة (6): المقسوم ذو 3 أو 4 أرقام والقاسم ذو رقم واحد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "استعمل الحصر لمعرفة عدد أرقام الخارج في كلّ قسمة ممّا يلي وذلك بضربه في 10 و 100 أو 100 و 1000.",
+      "body": "جدول من خمسة أسطر وأربعة أعمدة: المقسوم، خارج القسمة، الحصر، عدد أرقام الخارج. السطر 1: 358، 8، 100 x 8 > 358 > 10 x 8، عدد الأرقام 2. السطر 2: 670، 7، ... x 7 > 670 > 10 x 7، عدد الأرقام ....... السطر 3: 6800، 9، 1000 x 9 > 6800 > 100 x 9، عدد الأرقام 3. السطر 4: 3785، 6، ... x ... > .... > ... x ...، عدد الأرقام ....... السطر 5: 682، 5، ... x ... > .... > ... x ...، عدد الأرقام .......",
+      "figureDesc": "جدول بأعمدة: المقسوم، خارج القسمة، الحصر، عدد أرقام الخارج. السطران 1 و 3 محلولان والبقية يُكمل.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p093_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أ) أكتب باستعمال الأرقام (1 ، 3 ، 4) مرّة واحدة مجموعة الأعداد التي يمكن تكوينها من ثلاثة أرقام.",
+      "body": "ب) ابحث عن مجموع الأعداد المتحصّل عليها.\nج) اقسم النّتيجة المتحصّل عليها على (1 + 3 + 4) (أعد التّجربة مع 3 أعداد أخرى مختلفة). ماذا تستنتج؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p093_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أحسب عدد السلّات التي ينتجها هذا الصّانع كلّ يوم.",
+      "body": "ينتج صانع تقليدي كلّ يوم نفس العدد من السلّات. أنتج هذا الصّانع خلال أسبوع كامل من العمل 112 سلّة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p093_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أحسب عدد أكياس الاسمنت التي يمكن للشّاحنة حملها علما وأنّ كتلة كلّ كيس بالكغ 50.",
+      "body": "الحمولة القصوى لشاحنة هي 3 500 كيلوغرام.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p093_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "ما هو ثمن شراء الكأس الواحدة؟",
+      "body": "باع فلّاح 3 صناديق من المشمش ، بكلّ صندوق 30 كغ بسعر 1200 مي الكغ الواحد. كم قبض؟ اشترى كسوة لابنه بنصف ما قبضه، وفستانا لابنته بـ45 د وأخيرا أراد أن يشتري 9 كؤوس ولكنّه لاحظ أنّه ينقصه 1800 مي .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p093_i5",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch3",
+  "topicTitle": "Période 3 : Division euclidienne, fractions et périmètres",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.4
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite des mécanismes de la division euclidienne (dividende à 3 ou 4 chiffres, diviseur à un chiffre), avec encadrement du quotient et problèmes de division, ce qui correspond à la Période 3.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    131
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division à diviseur d'un chiffre",
+    "skill": "Effectuer et résoudre des problèmes de division d'un nombre de 3 ou 4 chiffres par un nombre d'un chiffre, en estimant le nombre de chiffres du quotient par encadrement.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "division",
+      "encadrement",
+      "nombre de chiffres du quotient",
+      "problèmes de la vie courante",
+      "monnaie tunisienne"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : estimer le nombre de chiffres du quotient en multipliant le diviseur par 10, 100 ou 1000 dans un tableau, explorer la somme des nombres formés avec trois chiffres (divisible par la somme des chiffres), et des problèmes contextualisés (artisan fabriquant des paniers, camion chargé de sacs de ciment, agriculteur vendant des abricots en dinars et millimes).",
+    "themeGroup": "Division euclidienne"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 1: transcrit « استعمل » alors que l'image porte « استعمل الحصر » (correct) mais la fin dit « بضربه في 10 و 100 أو 100 و 1000 » : la transcription omet « بضربه » (« وذلك بضربه ») et l'ordre/le mot est perdu."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page omis : « الأسبوع 25 » et « آليات القسمة (6) : المقسوم ذو 3 أو 4 أرقام والقاسم ذو رقم واحد », ainsi que le numéro de page 89."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« السلّات » : l'image porte « السّلات / السّلّة » avec chadda sur le س ; « سلّة » est correct mais « السلّات » diffère légèrement."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « أنتج » dans l'image est « أُنتج » (voyelle damma visible) ; « أحسب » est « أُحسب » (damma visible) ; absents dans la transcription."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 4 : « 3 500 » correct ; mais « كيلوغرام » ok. Aucune erreur de chiffre détectée, sauf que le tableau de l'exercice 1 est transcrit avec l'ordre des colonnes inversé par rapport à l'image (de droite à gauche, ce qui est cohérent avec la lecture arabe)."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercices 3, 4 et 5 : la question finale est placée avant l'énoncé (ex. 3 : « أحسب عدد... » avant « ينتج صانع... » ; ex. 5 : « ما هو ثمن... » avant l'énoncé) alors qu'elle vient après dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5 : « 1200 مي » suivi de « الكغ الواحد » correct, mais « باع فلّاح » devrait être « باع فلاّح » ; vocalisation et chadda non reproduites partout."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.97,
+    "verdict": "ok",
+    "confirmedErrors": []
+  },
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.97
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,163 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 52,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension (texte sur la visite du médecin à Stéphanie, la petite malade)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2b",
+      "instruction": "b- Justifie ta réponse :",
+      "body": "Ligne de pointillés à compléter (suite de la question 2).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p052_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3a",
+      "instruction": "a- Réponds par « oui » ou « non » :",
+      "body": "- L'état de santé de la petite malade empire. (case en pointillés à compléter)",
+      "figureDesc": "Case ovale en pointillés pour écrire oui ou non.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p052_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3b",
+      "instruction": "b- Relève, dans le texte, l'expression qui le montre :",
+      "body": "Ligne de pointillés à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p052_i3",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Relie par une flèche :",
+      "body": "* Manquer d'appétit ; * Une angine. Propositions : ne pas avoir envie de manger. / avoir envie de manger. / un mal de ventre. / un mal de gorge.",
+      "figureDesc": "Deux colonnes avec des points à relier : à gauche « Manquer d'appétit » et « Une angine », à droite quatre définitions.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p052_i4",
+      "topicId": "fr-6-m6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Que fait le médecin pour examiner Stéphanie ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p052_i5",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Cherche dans le texte le synonyme des mots soulignés :",
+      "body": "- La fille reste calme dans sa chambre. (calme souligné)\n- Le malade souffre d'une bronchite aiguë. (bronchite aiguë souligné)\n- La petite malade doit prendre le remède pendant six jours. (remède souligné)\n- La main de Stéphanie est chaude. (chaude souligné)\nUne ligne de pointillés après chaque phrase.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p052_i6",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Que penses-tu des parents de Stéphanie ?",
+      "body": "Ligne de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p052_i7",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.41
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français sur une petite malade examinée par le médecin (angine, bronchite, remède), vocabulaire de la santé qui correspond au Module 6 « Être en forme et mieux se porter ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte sur la maladie",
+    "skill": "Comprendre un texte narratif en relevant des informations, en justifiant ses réponses et en trouvant des synonymes dans le texte.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "appariement",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "synonymes",
+      "vocabulaire de la santé",
+      "visite du médecin",
+      "justification"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série de questions variées autour d'un texte sur une consultation médicale (oui/non avec relevé d'indice, appariement de vocabulaire, synonymes de mots soulignés, opinion personnelle sur les parents) est réutilisable pour d'autres textes de lecture.",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La transcription ajoute « Ligne de pointillés à compléter (suite de la question 2) » et des descriptions de pointillés/cases qui sont des annotations de mise en page, pas du texte imprimé. Ce n'est pas un contenu inventé grave."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« Sagesse », « Lecture - Compréhension », « 6ème année de base ») et le pied de page (« Lire et s'exprimer », « 51 ») ne sont pas transcrits."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 4 : les propositions sont regroupées en une liste. Sur la page, elles sont réparties entre les deux items, avec « un mal de ventre » et « un mal de gorge » près de « Une angine ». L'ordre d'affichage est conservé, mais pas la disposition."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

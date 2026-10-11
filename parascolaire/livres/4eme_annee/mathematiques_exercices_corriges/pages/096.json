@@ -1,0 +1,207 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 96,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 25 - المسائل (4)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ما هو ثمن الصحن الواحد؟ ب) ما هو ثمن الملعقة الواحدة؟",
+      "body": "اشترت ربّة منزل 7 صحون و 3 ملاعق بثمن 4400 مي واشترت من نفس البائع 5 صحون و 3 ملاعق بثمن 3400 مي.\n* هذه حلول قدّمها ثلاثة تلاميذ لهذه المسألة :\nالحلّ الذي قدّمه التّلميذ الأوّل: في المرّة الثّانية اشترت ربّة المنزل نفس عدد الملاعق وصحنيْن أقلّ ممّا اشترت في المرّة الأولى : - ثمن الملعقة : (3400 - (5×500)) : 3 = 300 مي - ثمن الصّحن (4400 - 3400) : 2 = 500 مي\nالحلّ الذي قدّمه التّلميذ الثّاني: ثمن الصحنيْن : 4400 - 3400 = 1000. ثمن الصحن الواحد : 1000 ÷ 2 = 500. ثمن الصحون : 500 × 7 = 3500. ثمن الملاعق : 4400 - 3500 = 0900. ثمن الملعقة : 900 ÷ 3 = 300.\nالحلّ الذي قدّمه التّلميذ الثّالث: ثمن الصحنيْن بالمي: 4400 - 3400 = 1000. ثمن الصحن الواحد بالمي : 1000 ÷ 2 = 500. ثمن 7 صحون بالمي : 7 × 500 = 3500. ثمن 3 ملاعق بالمي: 4400 - 3500 = 900. ثمن الملعقة بالمي: 900 ÷ 3 = 300. التحقيق: 3400 = (3 × 300) + (500 × 5) ؛ 900 + 2500.\nأ) ما هي مزايا كلّ تقديم وما هي عيوبه؟\nب) كيف يجب أن يكون تقديمك لحلّ مسألة حتّى يقرأها غيرك ويفهم حلّها؟",
+      "figureDesc": "جدول من ثلاثة أعمدة يعرض حلول التلاميذ الثلاثة مع عمليات الطرح والقسمة والضرب موضوعة بشكل عمودي",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p096_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "* ضع الحلّ والعمليّات واكتب جملا تشرح فيها النّتائج التي توصّلت إليها.",
+      "body": "يشتغل عامل مختصّ 6 أيّام في الأسبوع مدّة 8 ساعات يوميّا ويتقاضى أجرة يوميّة قدرها 7200 مي.\n- ما هي أجرته في أسبوع اشتغل فيه 10 ساعات إضافيّة وتقاضى عن كلّ ساعة إضافيّة ضعف أجرته عن ساعة عمل عاديّة؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p096_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.64
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page contient des problèmes de mathématiques (semaine 25) sur la monnaie en millimes, la soustraction, la division et les multiplications avec salaire et heures supplémentaires. Ils relèvent d'une synthèse de fin d'année, et aucun chapitre précis ne correspond clairement (math-4-p6 est possible mais incertain).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    131
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes à deux étapes et systèmes de prix",
+    "skill": "Résoudre des problèmes en déterminant des prix unitaires par comparaison de deux achats, et calculer un salaire avec heures supplémentaires.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "problèmes",
+      "prix unitaire",
+      "comparaison d'achats",
+      "salaire",
+      "heures supplémentaires",
+      "opérations"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation d'achats comparés où l'on déduit les prix unitaires à partir de la différence entre deux paniers, avec analyse de plusieurs solutions d'élèves, et problème de salaire avec heures supplémentaires payées double, en demandant de rédiger des phrases explicatives.",
+    "themeGroup": "Problèmes"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : «الأسبوع 25», «المسائل (4)» et le numéro de page 92."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«التّلميذ الثاني» : l'image porte «التّلميذ الثّاني» (voyelles/chadda), et «الثانية» doit être «الثّانية»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«التّلميذ الأوّل» est transcrit «الأوّل» avec la chadda mais «التّلميذ الثالث» perd la chadda de «الثّالث» ; les voyelles sont incohérentes."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'image, l'énoncé («اشترت ربّة منزل…») précède les questions أ) et ب) ; la transcription les place avant l'énoncé."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Solution 1 : l'image donne « (3400 - (5×500)) : 3 = 300 », avec des parenthèses ; la transcription écrit « 3400 - (5×500) : 3 », ce qui est ambigu."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Solution 1 : « (3400 - 4400) : 2 » est dans l'image « (4400 - 3400) : 2 = 500 » ; l'ordre des nombres est inversé dans la transcription."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le champ «réponse: ثمن الصحن الواحد 500 مي…» est ajouté et ne figure pas sur la page."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros d'exercice 1 et 2, ainsi que «التحقق» (écrit «التحقيق» dans la transcription), sont mal transcrits ; la disposition en colonnes est perdue."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 2 : la phrase «* ضع الحلّ والعمليّات…» est placée avant l'énoncé, alors qu'elle est à la fin dans l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Solution du 1er élève : l'image donne (4400 - 3400) : 2 = 500. La transcription écrit « (3400 - 4400) : 2 », ce qui est une soustraction inversée. Elle suit l'ordre visuel gauche-droite, alors que les autres solutions sont transcrites dans l'ordre logique 4400 - 3400."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le champ answer « ثمن الصحن الواحد 500 مي وثمن الملعقة الواحدة 300 مي » ne figure pas sur la page. Il est déduit des solutions des élèves, donc à mettre à null."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les titres des colonnes portent la chadda dans l'image : « التّلميذ الثّاني » et « التّلميذ الثّالث ». La transcription l'a perdue. Même chose pour « المرّة الثّانية » dans la solution 1."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ما هو ثمن الصحن الواحد؟ ب) ما هو ثمن الملعقة الواحدة؟",
+      "body": "اشترت ربّة منزل 7 صحون و 3 ملاعق بثمن 4400 مي واشترت من نفس البائع 5 صحون و 3 ملاعق بثمن 3400 مي.\n* هذه حلول قدّمها ثلاثة تلاميذ لهذه المسألة :\nالحلّ الذي قدّمه التّلميذ الأوّل: في المرّة الثّانية اشترت ربّة المنزل نفس عدد الملاعق وصحنيْن أقلّ ممّا اشترت في المرّة الأولى : - ثمن الملعقة : (3400 - (5×500)) : 3 = 300 مي - ثمن الصّحن (4400 - 3400) : 2 = 500 مي\nالحلّ الذي قدّمه التّلميذ الثّاني: ثمن الصحنيْن : 4400 - 3400 = 1000. ثمن الصحن الواحد : 1000 ÷ 2 = 500. ثمن الصحون : 500 × 7 = 3500. ثمن الملاعق : 4400 - 3500 = 0900. ثمن الملعقة : 900 ÷ 3 = 300.\nالحلّ الذي قدّمه التّلميذ الثّالث: ثمن الصحنيْن بالمي: 4400 - 3400 = 1000. ثمن الصحن الواحد بالمي : 1000 ÷ 2 = 500. ثمن 7 صحون بالمي : 7 × 500 = 3500. ثمن 3 ملاعق بالمي: 4400 - 3500 = 900. ثمن الملعقة بالمي: 900 ÷ 3 = 300. التحقيق: 3400 = (3 × 300) + (500 × 5) ؛ 900 + 2500.\nأ) ما هي مزايا كلّ تقديم وما هي عيوبه؟\nب) كيف يجب أن يكون تقديمك لحلّ مسألة حتّى يقرأها غيرك ويفهم حلّها؟",
+      "figureDesc": "جدول من ثلاثة أعمدة يعرض حلول التلاميذ الثلاثة مع عمليات الطرح والقسمة والضرب موضوعة بشكل عمودي",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p096_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "* ضع الحلّ والعمليّات واكتب جملا تشرح فيها النّتائج التي توصّلت إليها.",
+      "body": "يشتغل عامل مختصّ 6 أيّام في الأسبوع مدّة 8 ساعات يوميّا ويتقاضى أجرة يوميّة قدرها 7200 مي.\n- ما هي أجرته في أسبوع اشتغل فيه 10 ساعات إضافيّة وتقاضى عن كلّ ساعة إضافيّة ضعف أجرته عن ساعة عمل عاديّة؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p096_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ما هو ثمن الصحن الواحد؟ ب) ما هو ثمن الملعقة الواحدة؟",
+      "body": "اشترت ربّة منزل 7 صحون و 3 ملاعق بثمن 4400 مي واشترت من نفس البائع 5 صحون و 3 ملاعق بثمن 3400 مي.\n* هذه حلول قدّمها ثلاثة تلاميذ لهذه المسألة :\nالحلّ الذي قدّمه التّلميذ الأوّل: في المرّة الثانية اشترت ربّة المنزل نفس عدد الملاعق وصحنيْن أقلّ ممّا اشترت في المرّة الأولى : - ثمن الملعقة : 3400 - (5×500) : 3 = 300 مي - ثمن الصّحن (3400 - 4400) : 2 = 500 مي\nالحلّ الذي قدّمه التّلميذ الثاني: ثمن الصحنيْن : 4400 - 3400 = 1000. ثمن الصحن الواحد : 1000 ÷ 2 = 500. ثمن الصحون : 500 × 7 = 3500. ثمن الملاعق : 4400 - 3500 = 0900. ثمن الملعقة : 900 ÷ 3 = 300.\nالحلّ الذي قدّمه التّلميذ الثالث: ثمن الصحنيْن بالمي: 4400 - 3400 = 1000. ثمن الصحن الواحد بالمي : 1000 ÷ 2 = 500. ثمن 7 صحون بالمي : 7 × 500 = 3500. ثمن 3 ملاعق بالمي: 4400 - 3500 = 900. ثمن الملعقة بالمي: 900 ÷ 3 = 300. التحقيق: 3400 = (3 × 300) + (500 × 5) ؛ 900 + 2500.\nأ) ما هي مزايا كلّ تقديم وما هي عيوبه؟\nب) كيف يجب أن يكون تقديمك لحلّ مسألة حتّى يقرأها غيرك ويفهم حلّها؟",
+      "figureDesc": "جدول من ثلاثة أعمدة يعرض حلول التلاميذ الثلاثة مع عمليات الطرح والقسمة والضرب موضوعة بشكل عمودي",
+      "answer": "ثمن الصحن الواحد 500 مي وثمن الملعقة الواحدة 300 مي",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p096_i1",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "* ضع الحلّ والعمليّات واكتب جملا تشرح فيها النّتائج التي توصّلت إليها.",
+      "body": "يشتغل عامل مختصّ 6 أيّام في الأسبوع مدّة 8 ساعات يوميّا ويتقاضى أجرة يوميّة قدرها 7200 مي.\n- ما هي أجرته في أسبوع اشتغل فيه 10 ساعات إضافيّة وتقاضى عن كلّ ساعة إضافيّة ضعف أجرته عن ساعة عمل عاديّة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p096_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

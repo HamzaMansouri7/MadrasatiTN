@@ -1,0 +1,157 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 32,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي: سرد حادثة مخيفة ووصف الحالة النفسية، حوار حول موضوع، ورسالة وصف بلدة أو مدينة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ارو الحادثة واصفا حالتكم وما آل إليه الأمر في الآخر",
+      "body": "الموضوع عدد\nكلفتك أمك بالاعتناء بإخوتك أثناء تغيبها عن البيت، لكن حدث ما أفزعكم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p032_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اسرد أحداث الشريط وصف حالتك وأنت تشاهده وبعد نهايته",
+      "body": "الموضوع عدد\nشاهدت شريطا على شاشة التلفاز أفزعك وأقلك منامك لما فيه من أحداث مخيفة ومرعبة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p032_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارو الحادثة واذكر كيف تجاوزتم هذا الموقف",
+      "body": "الموضوع عدد\nرافقت أصدقاءك في رحلة لكن حدث ما أدخل على قلوبكم الرعب والفزع",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p032_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اذكر الحوار الذي دار بينهما مبديا رأيك حول الموضوع",
+      "body": "الموضوع عدد\nحضرت حوارا بين شخصين أحدهما يفضل أفلام المغامرات والثاني يحبذ الأشرطة الوثائقية",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p032_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اكتب له رسالة تصف فيها بلدتك وترغبه في زيارتك",
+      "body": "الموضوع عدد\nطلب منك أحد أصدقائك المقيمين ببلد أجنبي أن تحدثه عن مسقط رأسك (قريتك أو مدينتك)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p032_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.45
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Page de sujets de production écrite en arabe (récit d'une frayeur, dialogue sur les préférences de films, lettre de description d'une ville) qui couvre plusieurs types de textes et ne correspond clairement à aucune unité unique, d'où topicId null.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite narrative et descriptive",
+    "skill": "Rédiger un récit d'événement effrayant avec description de l'état psychologique, un dialogue argumenté et une lettre descriptive d'une ville.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "récit de peur",
+      "état psychologique",
+      "dialogue",
+      "lettre descriptive",
+      "ville natale"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Cinq sujets de rédaction à situations-déclencheurs variées (garde des frères en l'absence de la mère, film terrifiant, sortie entre amis qui tourne mal, débat films d'aventure vs documentaires, lettre à un ami étranger pour présenter sa ville) réutilisables comme amorces de production écrite.",
+    "themeGroup": "Production écrite : sujets variés et textes modèles"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: « وصف حالتك » dans la transcription, mais l'image a « وصف حالتك » précédé de « اسرد أحداث الشريط » : correct. En revanche « وأقلك منامك » est bien présent dans l'image (OK), aucune erreur ici."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Chaque exercice : la consigne (ligne finale) est placée avant « الموضوع عدد » et l'énoncé ; l'ordre de lecture est inversé par rapport à l'image (titre, énoncé, consigne)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page « الموضوع عدد » (cadre du haut) absent en tant qu'élément distinct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 1: « كلفتك أمك ... ما أفزعكم » est suivi dans l'image de la consigne « ارو الحادثة واصفا حالتكم... » : présente, mais mal placée ; pas de contenu manquant."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 5: parenthèses « (قريتك أو مدينتك) » ajoutées ; l'image n'a pas de parenthèses, juste un espace."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 5: dans l'image la consigne « اكتب له رسالة... » apparaît sur la même ligne après « رأسك قريتك أو مدينتك », puis « في زيارتك » ; la transcription la sépare en fin de bloc."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: « وأقلك منامك » transcrit tel quel ; l'image dit « وأقلق منامك » ? Lecture visible : « وأقلك » – pas de différence certaine."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

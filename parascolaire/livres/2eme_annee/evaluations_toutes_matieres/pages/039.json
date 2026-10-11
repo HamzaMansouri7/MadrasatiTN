@@ -1,0 +1,256 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 39,
+  "grade": "2ème Année",
+  "subject": "رياضيات (حساب ذهني)",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني – حساب ذهني – عدد 4",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَحْسُبُ :",
+      "body": "39 - 7 =",
+      "figureDesc": "Consigne générale de la page : أَحْسُبْ ذِهْنِيًّا :. Ligne de tableau (colonnes : ع/ر، الأنشطة، إجابة التلميذ(ة)، النقاط المسندة) avec ligne pointillée pour la réponse ; note : 1 point. En-tête de la page : امْتِحَانَات جِسْر النَّجَاح، المادة : رِيَاضِيّات (حِسَابٌ ذِهْنِيٌّ)، المستوى : السنة الثانية، اِخْتِبَار نِهَايَة الثَّلَاثِي الثَّانِي، عدد : 4 ; champs الاسم / اللقب / القسم ; total sur 4. Numéro de page : 38.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p039_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَحْسُبُ :",
+      "body": "70 - 40 =",
+      "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p039_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَحْسُبُ :",
+      "body": "200 + 200 =",
+      "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p039_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَحْسُبُ :",
+      "body": "59 + 400 =",
+      "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point. Case de total en bas à gauche : …/4.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p039_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p3",
+    "confidence": 0.39
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un test de fin de trimestre 2 en calcul mental (soustraction, addition de centaines, nombres jusqu'à 500) qui couvre plusieurs notions, donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Calcul mental : additions et soustractions",
+    "skill": "Calculer mentalement des additions et soustractions simples avec des nombres jusqu'à 3 chiffres (dizaines et centaines entières).",
+    "pageType": "exam",
+    "formats": [
+      "calcul"
+    ],
+    "keywords": [
+      "calcul mental",
+      "addition",
+      "soustraction",
+      "centaines",
+      "dizaines",
+      "évaluation trimestrielle"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Série courte de quatre calculs mentaux de difficulté progressive (soustraction avec unités, dizaines entières, centaines entières, addition d'un nombre et de centaines), réutilisable comme échauffement ou mini-test oral chronométré.",
+    "themeGroup": "Calcul mental"
+  },
+  "audit": {
+    "accuracy": 0.7,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Tout l'en-tête est omis : « امْتِحَانَات جِسْر النَّجَاح », « اختبار نهاية الثلاثي الثاني », « عدد : 4 », « المادة : رياضيات (حساب ذهني) », « المستوى : السنة الثانية », et les champs الاسم / اللقب / القسم."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "La consigne générale « أَحْسُبْ ذِهْنِيًّا : » est omise."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes du tableau sont omis (ع/ر, الأنشطة, إجابة التلميذ(ة), النقاط المسندة), ainsi que les points « 1 » par exercice, la note « /4 » et le numéro de page 38."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَحْسُبُ » : l'image montre « أَحْسُبُ » avec tashkeel ; la transcription est conforme, mais la consigne générale « أَحْسُبْ » (avec sukūn) n'apparaît pas."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "L'ordre des opérandes est inversé par rapport à l'image : « 7 - 39 = » à l'écran correspond visuellement à 39 - 7 en lecture RTL ; la transcription 39 - 7 est correcte sémantiquement. Les autres opérations (70-40, 200+200, 59+400) sont correctes."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« réponse: None » n'est pas du texte de l'image ; les lignes de réponse sont en pointillés vides."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La consigne générale « أَحْسُبْ ذِهْنِيًّا : » placée au-dessus du tableau n'apparaît nulle part dans la transcription. Le numéro de page « 38 » est également absent."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَحْسُبُ :",
+      "body": "39 - 7 =",
+      "figureDesc": "Consigne générale de la page : أَحْسُبْ ذِهْنِيًّا :. Ligne de tableau (colonnes : ع/ر، الأنشطة، إجابة التلميذ(ة)، النقاط المسندة) avec ligne pointillée pour la réponse ; note : 1 point. En-tête de la page : امْتِحَانَات جِسْر النَّجَاح، المادة : رِيَاضِيّات (حِسَابٌ ذِهْنِيٌّ)، المستوى : السنة الثانية، اِخْتِبَار نِهَايَة الثَّلَاثِي الثَّانِي، عدد : 4 ; champs الاسم / اللقب / القسم ; total sur 4. Numéro de page : 38.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَحْسُبُ :",
+      "body": "70 - 40 =",
+      "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَحْسُبُ :",
+      "body": "200 + 200 =",
+      "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَحْسُبُ :",
+      "body": "59 + 400 =",
+      "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point. Case de total en bas à gauche : …/4.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَحْسُبُ :",
+      "body": "39 - 7 =",
+      "figureDesc": "Ligne de tableau (colonnes : ع/ر، الأنشطة، إجابة التلميذ(ة)، النقاط المسندة) avec ligne pointillée pour la réponse ; note : 1 point. En-tête de la page : امْتِحَانَات جِسْر النَّجَاح، المادة : رِيَاضِيّات (حِسَابٌ ذِهْنِيٌّ)، المستوى : السنة الثانية، اِخْتِبَار نِهَايَة الثَّلَاثِي الثَّانِي، عدد : 4 ; champs الاسم / اللقب / القسم ; total sur 4.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَحْسُبُ :",
+      "body": "70 - 40 =",
+      "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَحْسُبُ :",
+      "body": "200 + 200 =",
+      "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَحْسُبُ :",
+      "body": "59 + 400 =",
+      "figureDesc": "Ligne de tableau avec pointillés pour la réponse ; note : 1 point. Case de total en bas à gauche : …/4.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p039_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

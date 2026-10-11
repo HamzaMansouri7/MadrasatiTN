@@ -1,0 +1,106 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 16,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Aires et volumes des solides (cube, parallélépipède, prisme droit, cylindre), opérations sur les durées, lecture d'un diagramme en ligne",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "10 (suite)",
+      "instruction": "",
+      "body": "Tableau de deux calculs sur les durées : 16h 54min 30s + 8h 19min 17s | 21h 11min 24s - 5h 34min. Les cases de réponse sont vides.",
+      "figureDesc": "Tableau à deux colonnes avec une ligne d'opérations, une grande zone de calcul vide et une ligne de résultat vide.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p016_i1",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "لاحظ الأشكال التالية ثم أحسب المطلوب :",
+      "body": "Parallélépipède (8 cm, 5 cm, 25 cm) : - المساحة الجانبية لمتوازي المستطيلات : L'air latérale du parallélépipède ... - المساحة الكلية لمتوازي المستطيلات : L'air total du parallélépipède ... | Cube (arête 4 cm) : - المساحة الجانبية للمكعب : L'air latérale du cube ... - المساحة الكلية للمكعب : L'air total du cube ... | Prisme droit (base triangulaire de côtés 4 cm, 6 cm, 8 cm, hauteur du triangle 3 cm, hauteur du prisme 10 cm) : - المساحة الجانبية للموشور القائم : L'air latérale du prisme droit ... - المساحة الكلية للموشور القائم : L'air total du prisme droit ... | Cylindre (diamètre 6 cm, hauteur 25 cm) : - المساحة الجانبية للأسطوانة القائمة : L'air latérale du cylindre ... - المساحة الكلية للأسطوانة القائمة : L'air total du cylindre ...",
+      "figureDesc": "Quatre solides : parallélépipède bleu (8 cm × 5 cm × 25 cm), cube orange (4 cm), prisme droit à base triangulaire (8 cm, 4 cm, 6 cm, 3 cm ; hauteur 10 cm), cylindre vert (diamètre 6 cm, hauteur 25 cm). Lignes pointillées pour les réponses.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p016_i2",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "أحسب المطلوب :",
+      "body": "Cylindre : حجم الأسطوانة : ... ; حجم الماء : ... ; حجم الجزء الفارغ : ... | Solide composé : حجم المجسم : ...",
+      "figureDesc": "Cylindre de hauteur 16 m et de diamètre 8 m, rempli d'eau sur 6 m de hauteur. Solide composé de deux pavés : le pavé inférieur 18 m × 12 m × 8 m (profondeur) et un pavé supérieur de 8 m de hauteur posé dessus à gauche.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p016_i3",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "هذا المخطط يمثل مبيعات محل خلال شهر رمضان :",
+      "body": "المبيعات (العدد). Catégories : الجلابيب، البُلْغَات، الأحذية، السراويل. أ) ما عدد الجلابيب التي بيعت؟ ب) ما عدد البُلْغَات التي بيعت؟ ج) ما الأنواع التي بيعت بعدد أقل من 40 خلال شهر رمضان ؟ د) بيع نوعين خلال شهر رمضان وعددهما معا هو 80، ما هما ؟",
+      "figureDesc": "Diagramme en ligne, axe vertical gradué de 0 à 70. Points environ : الجلابيب 32، البُلْغَات 66، الأحذية 20، السراويل 48.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p016_i4",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p5",
+  "topicTitle": "Période 5 : Volumes, capacités, temps et diagrammes statistiques",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-p4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p4",
+    "confidence": 0.53
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page mélange aires latérales/totales de solides (Période 4), volumes du cylindre et solide composé, opérations sur les durées et diagramme statistique (Période 5), qui domine avec les volumes, le temps et les statistiques, mais le contenu reste partagé entre deux chapitres.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Aires et volumes des solides",
+    "skill": "Calculer des aires et volumes de solides usuels, effectuer des opérations sur les durées et lire un diagramme en ligne.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "aire latérale",
+      "aire totale",
+      "volume",
+      "cylindre",
+      "durées",
+      "diagramme"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le contexte local des ventes d'un magasin pendant le Ramadan (djellabas, babouches, chaussures, pantalons) sert à lire un diagramme. Le calcul du volume d'eau et de la partie vide dans un cylindre, ainsi que le solide composé, sont aussi réutilisables.",
+    "themeGroup": "Volumes et capacités"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

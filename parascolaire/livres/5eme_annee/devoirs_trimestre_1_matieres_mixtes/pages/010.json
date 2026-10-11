@@ -1,0 +1,76 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 10,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "كتابة الأعداد بالأحرف (Écriture des nombres en lettres)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "Deux zones d'exercice, chacune composée d'un tableau de 7 cases vides (probablement pour les classes d'un grand nombre, à remplir) suivi d'une ligne « الإجابة » à compléter. Aucun nombre n'est écrit : le contenu est vide.",
+      "figureDesc": "Deux tableaux vides de 7 cases chacun (en haut de la page), chacun suivi d'un cadre « الإجابة » avec un espace de réponse vide.",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p010_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "تمرين",
+      "instruction": "أكتب الأعداد التالية بالأحرف",
+      "body": "Deux cadres destinés à contenir un nombre à écrire en lettres (cadres vides, nombres non imprimés sur la page). Chacun est suivi d'une ligne « الإجابة » vide.",
+      "figureDesc": "Deux petits cadres vides centrés (nombres à écrire en lettres), chacun suivi d'un grand cadre « الإجابة » à remplir.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p010_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.58
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un exercice d'écriture de grands nombres en lettres (tableau de 7 classes), ce qui relève de la Période 1 sur les grands nombres, même si les nombres ne sont pas imprimés.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Écriture des nombres en lettres",
+    "skill": "Écrire en lettres, en arabe, de grands nombres présentés dans un tableau de numération.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "grands nombres",
+      "écriture en lettres",
+      "tableau de numération",
+      "classes et rangs",
+      "5ème année"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Seul le format est réutilisable : un tableau de numération à 7 cases pour placer les chiffres d'un nombre, puis une ligne de réponse pour l'écrire en lettres. La page n'imprime aucun nombre et n'offre aucun contexte ni situation originale.",
+    "themeGroup": "Grands nombres entiers"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

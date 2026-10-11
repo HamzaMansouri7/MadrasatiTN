@@ -3,7 +3,7 @@ import json, shutil, sys
 from pathlib import Path
 import fitz
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_original_frozen/_archive'); R = A / '_review'; D = R / '_done'; D.mkdir(exist_ok=True)
+A = Path('parascolaire_frozen/_archive'); R = A / '_review'; D = R / '_done'; D.mkdir(exist_ok=True)
 pending = []; resolved = set()
 for pf in sorted(A.glob('*/pages/*.json')):
     d = json.loads(pf.read_text(encoding='utf-8')); q = d.get('quality', {}); st = q.get('status'); fl = d.get('linkFlags', [])

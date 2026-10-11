@@ -1,0 +1,184 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 50,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإيقاظ العلمي – اختبار نهاية الثلاثي الأول، عدد 4 (السنة الثالثة): الأحداث الدورية وغير الدورية، قياس الزمن والساعة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "سَاهَمَ بِلَالٌ وَرَبَابُ وَنَادِيَةُ فِي إِثْرَاءِ مَجَلَّةِ الْقِسْمِ بِمَجْمُوعَةٍ مِنَ التَّمَارِينِ فِي الْإِيقَاظِ الْعِلْمِيِّ. أُشَارِكُ هَذَا الْفَرِيقَ نَشَاطَهُ وَأُنْجِزُ مَا يَلِي :",
+      "body": "نص السند: ساهم بلال ورباب ونادية في إثراء مجلة القسم بمجموعة من التمارين في الإيقاظ العلمي. (رأس الورقة: الاسم، اللقب، القسم – المادة: الإيقاظ العلمي – المستوى: السنة الثالثة – إختبار نهاية الثلاثي الأول – عدد: 4)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p050_i1",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "أُكْمِلُ الْإِفَادَاتِ بِمَا يُنَاسِبُ مِمَّا يَلِي : «كُلَّ يَوْمٍ» / «كُلَّ أُسْبُوعٍ» / «كُلَّ سَنَةٍ» :",
+      "body": "• أُرَافِقُ أَبِي إِلَى الْمَسْجِدِ لِصَلَاةِ الْجُمُعَةِ : ..........\n• أَتَنَاوَلُ الْغَدَاءَ : ..........\n• نَحْتَفِلُ بِعِيدِ الشَّجَرَةِ : ..........",
+      "figureDesc": "ثلاثة أسطر منقطة للإجابة ومربعات تقييم المعيار (معيار أ1) على الجانب",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p050_i2",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "أَرْبُطُ السَّاعَةَ بِطَرِيقَةِ اشْتِغَالِهَا :",
+      "body": "• يَتِمُّ تَعْمِيرُهَا بِالْيَدِ.\n• تَشْتَغِلُ بِخَلِيَّةٍ كَهْرُبَائِيَّةٍ.",
+      "figureDesc": "ساعة رقمية تعرض 12:45 داخل إطار مستطيل بحواف مستديرة، وساعة منبّهة تقليدية بعقارب (تشير تقريبا إلى 10:10) وأرقام 12 و3 و6 و9؛ نقاط للربط بين الساعات والعبارتين (معيار ب1)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p050_i3",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "أَكْتُبُ : «حَدَثٌ دَوْرِيٌّ» - «حَدَثٌ غَيْرُ دَوْرِيٍّ» :",
+      "body": "• إِعْدَادُ الطَّعَامِ : ..........\n• خِتَانُ أَخِي : ..........\n• غُرُوبُ الشَّمْسِ : ..........",
+      "figureDesc": "أسطر منقطة ومربعات تقييم (معيار أ2)",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examens_toutes_matieres_p050_i4",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2",
+      "instruction": "شَرَعَ الْأَطْفَالُ فِي عَمَلِهِمْ عَلَى السَّاعَةِ الْعَاشِرَةِ وَالنِّصْفِ وَأَنْجَزُوا تَمَارِينَ الْفِيزِيَاءِ عَلَى امْتِدَادِ سَاعَةٍ كَامِلَةٍ. رَسَمَ بِلَالٌ التَّوْقِيتَ بِطَرِيقَةٍ خَاطِئَةٍ عَلَى السَّاعَتَيْنِ ذَاتِ الْعَقَارِبِ.",
+      "body": "",
+      "figureDesc": "ساعتان ذواتا عقارب (في أسفل الصفحة / الصفحة الموالية)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p050_i5",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 4",
+      "instruction": "أَكْتُبُ التَّوْقِيتَ الصَّحِيحَ عَلَى السَّاعَتَيْنِ ذَاتِ الْخَانَاتِ.",
+      "body": "",
+      "figureDesc": "ساعتان بخانات للكتابة (غير ظاهرتين في هذه الصفحة)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p050_i6",
+      "topicId": "sci-3-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-3-u6",
+  "topicTitle": "Unité 6 : Le temps, la température et la dilatation thermique",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p3",
+    "confidence": 0.19
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est un test de fin de premier trimestre en Éveil Scientifique, donc une évaluation générale, mais tous ses exercices (événements périodiques ou non, mesure du temps, horloge) portent sur le temps, ce qui correspond le mieux à l'unité 6 « Le temps, la température et la dilatation thermique ».",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Événements périodiques et mesure du temps",
+    "skill": "Distinguer les événements périodiques des non périodiques, repérer leur fréquence, lire l'heure et identifier le mode de fonctionnement d'une horloge.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "appariement",
+      "autre",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "événement périodique",
+      "mesure du temps",
+      "horloge",
+      "lecture de l'heure",
+      "durée",
+      "fréquence"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une épreuve de fin de trimestre structurée autour d'un fil conducteur (des élèves qui enrichissent le journal de classe), avec des consignes courtes et variées : compléter avec une fréquence (chaque jour, semaine, année), relier une horloge à son mode de fonctionnement, classer des événements du quotidien et inscrire l'heure sur des cadrans à partir d'une durée de travail.",
+    "themeGroup": "Événements périodiques"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "السند 1: «بِلَالٌ وَرَبَابُ وَنَادِيَةُ» – dans l'image: «بِلَالٌ وَرَبَابٌ وَنَادِيَةُ» ; la transcription a «رَبَابُ» au lieu de «رَبَابٌ»"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "التعليمة 1: «كُلَّ يَوْمٍ / كُلَّ أُسْبُوعٍ / كُلَّ سَنَةٍ» – l'image montre «كُلُّ يَوْمٍ» «كُلُّ أُسْبُوعٍ» «كُلُّ سَنَةٍ» (damma, pas fatha)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«أُشَارِكُ» est transcrit «أُشَارِكُ» mais l'image porte «أُشَارِكُ» avec un tashkeel ; ici le texte dit «أُشَارِكُ هَذَا الْفَرِيقَ»; correct. Dans la transcription: «أُشَارِكُ» OK mais «أُشَارِكُ» est écrit «أُشَارِكُ» – aucun écart réel"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "التعليمة 2: «كَهْرُبَائِيَّةٍ» correct dans l'image («كَهْرُبَائِيَّةٍ»), pas d'erreur"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le segment «نص السند: ... (رأس الورقة ...)» est une duplication non vocalisée ajoutée, absent comme tel de l'image"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "التعليمة 2: l'horloge à aiguilles (image) et l'affichage numérique «12 : 45» à relier ne sont pas mentionnés"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "التعليمة 4 / السند 2: les deux horloges (à aiguilles et à cases) ne sont pas décrites ; aussi les en-têtes «المعايير» et les repères «مع1أ، مع1ب، مع2أ» sont omis"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "السند 2: «أُنْجَزُوا» dans l'image est «وَأَنْجَزُوا» ; sans écart notable. «الْعَقَارِبِ» correct"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

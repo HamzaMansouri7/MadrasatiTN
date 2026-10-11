@@ -1,0 +1,200 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 3,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الأعداد الطبيعية: تكوين الأعداد حسب مواصفات وترتيب الأعداد (رياضيات، الصفحة 4)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "كَوَّنَ طَاهِرٌ أَعْدَادًا حَسَبَ الْمُوَاصَفَاتِ التَّالِيَةِ:",
+      "body": "- عَدَدٌ يَتَكَوَّنُ مِنْ 7 أَرْقَامٍ مَجْمُوعُهَا 42. آحَادُهَا أَكْبَرُ الأَرْقَامِ العَدَدِيَّةِ وَالبَقِيَّةُ لَهَا تَرْتِيبٌ تَنَازُلِيٌّ بِطَرْحِ وَاحِدٍ فِي كُلِّ مَرَّةٍ.\n- عَدَدٌ يَتَكَوَّنُ مِنْ 9 أَرْقَامٍ مَجْمُوعُهَا 25. مِئَاتُ مَلَايِينِهِ أَكْبَرُ الأَرْقَامِ العَدَدِيَّةِ. مَجْمُوعُ وَحَدَاتِهِ البَسِيطَةِ (صفر) مِئَاتُ آلَافِهِ وَمَلَايِينُهُ مُتَوَالِيَةٌ: الفَارِقُ بَيْنَ كُلِّ رَقْمَيْنِ مُتَوَالِيَيْنِ هُوَ (2).\n- عَدَدٌ يَتَكَوَّنُ مِنْ 11 رَقْمًا مَجْمُوعُهَا 34 مَجْمُوع وَحَدَاتِهِ البَسِيطَةِ (3) وَلَيْسَ بَيْنَهَا صفر مِئَاتُ آلَافِهِ أَكْبَرُ عَدَدٍ يَتَكَوَّنُ مِنْ 3 أَرْقَامٍ وَمَلَايِينُهُ أَصْغَرُ عَدَدٍ يَتَكَوَّنُ مِنْ 3 أَرْقَامٍ. مِلْيَارَاتُهُ مُتَكَوِّنَةٌ مِنْ رَقْمَيْنِ مَجْمُوعُهُمَا 3 وَغَيْرُ قَابِلَيْنِ لِلْقِسْمَةِ عَلَى 2.\n* اِبْحَثْ عَنْ تِلْكَ الأَعْدَادِ وَاكْتُبْهَا فِي الجَدْوَلِ التَّالِي:",
+      "figureDesc": "جدول من عمودين: «العَدَدُ بِالأَرْقَامِ» و«العَدَدُ بِالحُرُوفِ» وأربعة أسطر فارغة منقطة للإجابة.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p003_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "يَمْلِكُ طَاهِرٌ الأَرْقَامَ التَّالِيَةَ سَاعِدْهُ عَلَى تَكْوِينِ أَصْغَرِ سِتَّةِ أَعْدَادٍ (بِجَمِيعِهَا) مُرَتَّبَةً مِنَ الأَصْغَرِ إِلَى الأَكْبَرِ.",
+      "body": "9 7 5 3 2 1 0",
+      "figureDesc": "سبع بطاقات أرقام (9 7 5 3 2 1 0 من اليسار إلى اليمين) وستة أطر من خانات، الخانة الأولى في كل إطار مملوءة بـ 1 و2 و3 و5 و7 و9 والبقية منقطة فارغة (سبع خانات في كل إطار ما عدا الإطار الذي يبدأ بـ 3 ففيه ست خانات).",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p003_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.37
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la formation et le rangement de grands nombres (7 et 9 chiffres, centaines de millions, centaines de milliers), ce qui correspond à la Période 1 sur les grands nombres (millions, milliards).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Grands nombres entiers naturels",
+    "skill": "Former et ordonner des nombres entiers selon des contraintes sur leurs chiffres (somme, position, ordre) jusqu'à 9 chiffres.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "nombres naturels",
+      "composition de nombres",
+      "somme des chiffres",
+      "classe des millions",
+      "ordre croissant",
+      "plus petit nombre"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Un personnage construit des nombres à partir de contraintes (nombre de chiffres, somme, chiffres décroissants, chiffre maximal aux unités), et on cherche aussi les plus petits nombres possibles avec un jeu de chiffres donné, à présenter dans un cadre de cases à compléter.",
+    "themeGroup": "Grands nombres entiers"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5, 1re ligne : « الْمُوَاصَفَاتِ » dans la transcription, mais l'image donne « الْمُوَاصَفَاتِ » avec une vocalisation différente (« الْمُوَاصَفَاتِ » vs « الْمُوَاصَفَاتُ ») ; point à vérifier."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les débuts de phrases « عَدَد » sont transcrits sans tanwin/shadda alors que l'image les vocalise (« عَدَدٌ ») ; voyelles incohérentes."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5, 2e ligne : « مِئَاتُ مَلَايِينِهِ أَكْبَرُ الأَرْقَامِ » correct, mais « مَجْمُوعُ وَحَدَاتِهِ البَسِيطَةِ (صِفْر) » : la transcription met « صِفْر » avec voyelles alors que l'image montre « (صفر) » sans voyelles."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes du tableau (« العَدَدُ بِالأَرْقَامِ » et « العَدَدُ بِالحُرُوفِ ») ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 4 » n'est pas transcrit."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "« ستة أعداد، كل منها مبدوء برقم معطى (1، 2، 3، 5، 7، 9) وتُكمَل خاناته الست الباقية بنقاط » est une description ajoutée, absente de l'image. Les cases : 7 cases au départ, le chiffre initial est rempli (nombres à 7 chiffres), pas « 6 restantes » pour tous (la case 3 a 5 cases restantes)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ordre des chiffres de l'image : 9 7 5 3 2 1 0 en lecture de gauche à droite ; la transcription conserve cet ordre mais ne précise pas la direction ; sans impact majeur."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« سَاعِدْهُ » : l'image porte « سَاعِدَهُ » (« سَاعِدَةُ » lisible) ; vérifier."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Au début des trois puces de l'exercice 5, « عَدَد » est transcrit sans tanwin, alors que l'image montre « عَدَدٌ »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« صِفْر » est transcrit avec voyelles (deux occurrences, 2e et 3e puces). L'image porte « صفر » sans voyelles, aussi bien dans « (صفر) » que dans « وَلَيْسَ بَيْنَهَا صفر »."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Dans l'exercice 6, la phrase du body « ستة أعداد، كل منها مبدوء برقم معطى ... وتُكمَل خاناته الست الباقية بنقاط » est absente de l'image et doit être supprimée."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Dans la figureDesc de l'exercice 6, « سبع خانات » pour chacun des six cadres est inexact. Le cadre commençant par 3 compte 6 cases (1 remplie + 5 pointillées), les autres en comptent 7."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "كَوَّنَ طَاهِرٌ أَعْدَادًا حَسَبَ الْمُوَاصَفَاتِ التَّالِيَةِ:",
+      "body": "- عَدَدٌ يَتَكَوَّنُ مِنْ 7 أَرْقَامٍ مَجْمُوعُهَا 42. آحَادُهَا أَكْبَرُ الأَرْقَامِ العَدَدِيَّةِ وَالبَقِيَّةُ لَهَا تَرْتِيبٌ تَنَازُلِيٌّ بِطَرْحِ وَاحِدٍ فِي كُلِّ مَرَّةٍ.\n- عَدَدٌ يَتَكَوَّنُ مِنْ 9 أَرْقَامٍ مَجْمُوعُهَا 25. مِئَاتُ مَلَايِينِهِ أَكْبَرُ الأَرْقَامِ العَدَدِيَّةِ. مَجْمُوعُ وَحَدَاتِهِ البَسِيطَةِ (صفر) مِئَاتُ آلَافِهِ وَمَلَايِينُهُ مُتَوَالِيَةٌ: الفَارِقُ بَيْنَ كُلِّ رَقْمَيْنِ مُتَوَالِيَيْنِ هُوَ (2).\n- عَدَدٌ يَتَكَوَّنُ مِنْ 11 رَقْمًا مَجْمُوعُهَا 34 مَجْمُوع وَحَدَاتِهِ البَسِيطَةِ (3) وَلَيْسَ بَيْنَهَا صفر مِئَاتُ آلَافِهِ أَكْبَرُ عَدَدٍ يَتَكَوَّنُ مِنْ 3 أَرْقَامٍ وَمَلَايِينُهُ أَصْغَرُ عَدَدٍ يَتَكَوَّنُ مِنْ 3 أَرْقَامٍ. مِلْيَارَاتُهُ مُتَكَوِّنَةٌ مِنْ رَقْمَيْنِ مَجْمُوعُهُمَا 3 وَغَيْرُ قَابِلَيْنِ لِلْقِسْمَةِ عَلَى 2.\n* اِبْحَثْ عَنْ تِلْكَ الأَعْدَادِ وَاكْتُبْهَا فِي الجَدْوَلِ التَّالِي:",
+      "figureDesc": "جدول من عمودين: «العَدَدُ بِالأَرْقَامِ» و«العَدَدُ بِالحُرُوفِ» وأربعة أسطر فارغة منقطة للإجابة.",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p003_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "يَمْلِكُ طَاهِرٌ الأَرْقَامَ التَّالِيَةَ سَاعِدْهُ عَلَى تَكْوِينِ أَصْغَرِ سِتَّةِ أَعْدَادٍ (بِجَمِيعِهَا) مُرَتَّبَةً مِنَ الأَصْغَرِ إِلَى الأَكْبَرِ.",
+      "body": "9 7 5 3 2 1 0",
+      "figureDesc": "سبع بطاقات أرقام (9 7 5 3 2 1 0 من اليسار إلى اليمين) وستة أطر من خانات، الخانة الأولى في كل إطار مملوءة بـ 1 و2 و3 و5 و7 و9 والبقية منقطة فارغة (سبع خانات في كل إطار ما عدا الإطار الذي يبدأ بـ 3 ففيه ست خانات).",
+      "answer": null,
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p003_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "كَوَّنَ طَاهِرٌ أَعْدَادًا حَسَبَ الْمُوَاصَفَاتِ التَّالِيَةِ:",
+      "body": "- عَدَد يَتَكَوَّنُ مِنْ 7 أَرْقَامٍ مَجْمُوعُهَا 42. آحَادُهَا أَكْبَرُ الأَرْقَامِ العَدَدِيَّةِ وَالبَقِيَّةُ لَهَا تَرْتِيبٌ تَنَازُلِيٌّ بِطَرْحِ وَاحِدٍ فِي كُلِّ مَرَّةٍ.\n- عَدَد يَتَكَوَّنُ مِنْ 9 أَرْقَامٍ مَجْمُوعُهَا 25. مِئَاتُ مَلَايِينِهِ أَكْبَرُ الأَرْقَامِ العَدَدِيَّةِ. مَجْمُوعُ وَحَدَاتِهِ البَسِيطَةِ (صِفْر) مِئَاتُ آلَافِهِ وَمَلَايِينُهُ مُتَوَالِيَةٌ: الفَارِقُ بَيْنَ كُلِّ رَقْمَيْنِ مُتَوَالِيَيْنِ هُوَ (2).\n- عَدَد يَتَكَوَّنُ مِنْ 11 رَقْمًا مَجْمُوعُهَا 34 مَجْمُوع وَحَدَاتِهِ البَسِيطَةِ (3) وَلَيْسَ بَيْنَهَا صِفْر مِئَاتُ آلَافِهِ أَكْبَرُ عَدَدٍ يَتَكَوَّنُ مِنْ 3 أَرْقَامٍ وَمَلَايِينُهُ أَصْغَرُ عَدَدٍ يَتَكَوَّنُ مِنْ 3 أَرْقَامٍ. مِلْيَارَاتُهُ مُتَكَوِّنَةٌ مِنْ رَقْمَيْنِ مَجْمُوعُهُمَا 3 وَغَيْرُ قَابِلَيْنِ لِلْقِسْمَةِ عَلَى 2.\n* اِبْحَثْ عَنْ تِلْكَ الأَعْدَادِ وَاكْتُبْهَا فِي الجَدْوَلِ التَّالِي:",
+      "figureDesc": "جدول من عمودين: «العَدَدُ بِالأَرْقَامِ» و«العَدَدُ بِالحُرُوفِ» وأربعة أسطر فارغة منقطة للإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p003_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "يَمْلِكُ طَاهِرٌ الأَرْقَامَ التَّالِيَةَ سَاعِدْهُ عَلَى تَكْوِينِ أَصْغَرِ سِتَّةِ أَعْدَادٍ (بِجَمِيعِهَا) مُرَتَّبَةً مِنَ الأَصْغَرِ إِلَى الأَكْبَرِ.",
+      "body": "الأرقام: 9 ، 7 ، 5 ، 3 ، 2 ، 1 ، 0\nستة أعداد، كل منها مبدوء برقم معطى (1 ، 2 ، 3 ، 5 ، 7 ، 9) وتُكمَل خاناته الست الباقية بنقاط.",
+      "figureDesc": "سبع بطاقات أرقام (9 7 5 3 2 1 0) وستة جداول من سبع خانات، الخانة الأولى في كل منها مملوءة بـ 1 و2 و3 و5 و7 و9 والبقية فارغة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p003_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

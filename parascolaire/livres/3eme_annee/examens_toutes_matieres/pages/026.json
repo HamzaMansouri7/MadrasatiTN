@@ -1,0 +1,82 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 26,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إنتاج كتابي – اختبار نهاية الثلاثي الأول (السنة الثالثة): تكملة حوار وإنتاج نص سردي يتضمن مقطعًا حواريًّا",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُكْمِلُ الْحِوَارَ بَيْنَ الْبِنْتِ وَأُمِّهَا بِمَا أَرَاهُ مُنَاسِبًا حَسْبَ السِّيَاقِ.",
+      "body": "أَرَادَتْ هُيَامُ الْمُشَارَكَةَ فِي الرِّحْلَةِ الَّتِي سَتُنَظِّمُهَا الْمَدْرَسَةُ فَعَبَّرَتْ عَنْ رَغْبَتِهَا لِوَالِدَتِهَا قَائِلَةً : « ……………………………………… » فَأَجَابَتْهَا : « ……………………………………… » رَدَّتْ هُيَامُ : « حَسَنًا ! سَوْفَ أَنْتَظِرُ عَوْدَةَ أَبِي مِنَ الْعَمَلِ وَأَرْجُو أَنْ لَا يَرْفُضَ مَطْلَبِي.» فَقَالَتْ لَهَا وَالِدَتُهَا مُطَمْئِنَةً : « ……………………………………… »",
+      "figureDesc": "Trois lignes pointillées à compléter (réplique de Hayam, réponse de la mère, réplique finale de la mère). Barème en marge : 0,25 / 0,25 / 0,25 / 0,5 / 0,5 / 0,5. Critères : الملاءمة (مع 1 أ), سلامة بناء النص (مع 2 ب).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p026_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَتَأَمَّلُ الْمَشَاهِدَ ثُمَّ أُنْتِجُ نَصًّا سَرْدِيًّا يَتَضَمَّنُ مَقْطَعًا حِوَارِيًّا بِهِ عَلَامَاتُ التَّنْقِيطِ وَيَخْلُو مِنْ أَفْعَالِ الْقَوْلِ.",
+      "body": "فضاء للكتابة على أسطر منقّطة (حوالي 12 سطرًا) بجانب الصورتين.",
+      "figureDesc": "صورتان بالأبيض والأسود: الأولى لولد راكع أمام باب منزل يبحث أو يلتقط شيئًا من الأرض؛ الثانية لولد واقف عند نافذة يضع هاتفًا على أذنه وتبدو على وجهه الدهشة أو القلق. الأسطر المنقّطة بجانب الصورتين. التنقيط: 0,25 ×3 و 0,5 ×9. معايير: الملاءمة (مع 1 أ، مع 1 ب)، سلامة بناء النص (مع 2 أ، مع 2 ب).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p026_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u3",
+    "confidence": 0.55
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de premier trimestre en production écrite (compléter un dialogue, rédiger un récit avec dialogue sans verbes de parole) qui mêle plusieurs compétences, sans qu'aucun chapitre unique (u1, u2, u3) ne corresponde clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : dialogue et récit",
+    "skill": "Compléter un dialogue selon le contexte puis rédiger un récit à partir d'images, avec un passage dialogué ponctué et sans verbes de parole.",
+    "pageType": "exam",
+    "formats": [
+      "production_ecrite",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "production écrite",
+      "dialogue",
+      "texte narratif",
+      "ponctuation",
+      "verbes de parole",
+      "examen trimestriel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une situation de la vie scolaire (demander la permission de participer à une sortie) pour compléter un dialogue, puis une production narrative guidée par des images, avec la contrainte d'un dialogue ponctué sans verbes de parole.",
+    "themeGroup": "Production écrite : dialogue et récit"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

@@ -1,0 +1,78 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 30,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المفعول فيه للزمان (complément circonstanciel de temps) – page de grammaire arabe, sans lien avec les mathématiques",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "يتعلّق المفعول فيه للزّمان",
+      "body": "يتعلّق المفعول فيه للزّمان بالأفعال اللاّزمة: تزَقْزق الطُّيور صَبَاحًا. بالأفعال المتعدّية: تَحْضنَ الطّيور بَيْضها فِي الرّبيعِ",
+      "figureDesc": "Le premier exemple est surligné en bleu clair et le second en orange clair. Le tout est entouré d'une bordure décorative de cercles jaunes.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p030_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أستخْلِص",
+      "body": "يرد المفعول فيه للزّمان مفْردة منصوبةً. أمْثلَةٌ: غَدًا، صَبَاحًا، مَسَاءً، لَيْلاً. وَ يَرِد مركبًا. أمْثِلَةٌ: فِي الليْل، وَقْتَ الْفَجْرِ، عِنْدَ الصبَاح، ذاتَ يَوْمٍ",
+      "figureDesc": "Encadré bleu. Les exemples de mots simples sont surlignés en bleu clair. Les exemples composés sont surlignés en rose.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p030_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-5-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u3",
+    "confidence": 0.29
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une leçon de grammaire arabe (المفعول فيه للزمان) qui n'est pas une unité de texte narratif, descriptif, explicatif ou injonctif des chapitres officiels, donc aucun chapitre ne correspond clairement; le chapitre fr-5-m5 (CCL/CCT) concerne le français, pas l'arabe.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Complément circonstanciel de temps",
+    "skill": "Identifier et employer le complément circonstanciel de temps (al-maf'ul fihi) sous forme simple ou composée avec des verbes intransitifs et transitifs.",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "grammaire arabe",
+      "complément de temps",
+      "المفعول فيه",
+      "verbes transitifs",
+      "verbes intransitifs",
+      "accusatif"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Page de leçon qui présente la règle avec quelques exemples sur les oiseaux et les moments de la journée. On peut s'en servir pour des exercices d'identification ou de transformation (mot simple vers expression composée), mais elle ne propose aucune activité originale.",
+    "themeGroup": "Le complément circonstanciel de temps"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

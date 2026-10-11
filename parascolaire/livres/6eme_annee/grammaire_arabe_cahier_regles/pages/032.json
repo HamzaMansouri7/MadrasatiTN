@@ -1,0 +1,122 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 32,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "قواعد اللغة العربية: المبتدأ والخبر (الخبر شبه جملة: جار ومجرور / ظرف مضاف)، تقديم الخبر على المبتدأ النكرة، والظروف (ملاحظة: la matière est l'arabe, malgré la mention « Français » dans le gabarit)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "دل على المبتدأ و الخبر بجعل سطر تحت المبتدأ و جعل الخبر بين قوسين",
+      "body": "في الدار ضيوف\nفي حقيبة الخياط نسيج مختلف\nأمام بيتنا أشجار\nعن يميني أعز أصدقائي\nفي التأني سلامة و في العجلة ندامة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p032_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اجعل المبتدأ نكرة بحذف ال و اجعل الخبر مقدما",
+      "body": "العمامة فوق رأس الرجل العالم\nالحذاء تحت الخزانة\nاللاقطة لكل ساقطة\nالكبوة لكل جواد و الهفوة لكل عالم\nالإفادة في الإعادة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p032_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اكتب كل عنصر من عناصر جمل النص في محله من الجدول التالي",
+      "body": "إذا تأملت أختي الصغرى تخاله دمية  ففي عينيها بريق، و فوق خدها خال، و على شفتيها ابتسامة، و برقبتها عقد، و في معصمها ساعة  كانت جالسة أمامها لعب، و وراءها أدوات الزينة",
+      "figureDesc": "جدول فارغ بستة أعمدة من اليمين إلى اليسار: محل الخبر (جار، مجرور)، محل المبتدأ، محل الخبر (ظرف مضاف، مضاف إليه)، محل المبتدأ. الخانات فارغة للتعبئة.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p032_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ألف ثلاث جمل باستعمال الظروف التالية",
+      "body": "قبالة  حذو  حول  خلف  بين",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p032_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.17
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une série d'exercices de grammaire arabe (mubtada' et khabar, khabar semi-phrase, antéposition du khabar, adverbes de lieu) ; aucun des six chapitres officiels d'arabe, centrés sur la narration, ne correspond clairement à ce contenu.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Le prédicat quasi-phrase et antéposé",
+    "skill": "Identifier sujet et prédicat quasi-phrase (groupe prépositionnel ou adverbial), mettre le prédicat avant un sujet indéfini et employer les adverbes de lieu.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "مبتدأ وخبر",
+      "شبه جملة",
+      "تقديم الخبر",
+      "ظروف المكان",
+      "جار ومجرور",
+      "نكرة"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Succession de tâches variées: repérer et marquer sujet/prédicat (souligner, mettre entre parenthèses), transformer des phrases (sujet indéfini, prédicat antéposé), classer les éléments d'un court texte descriptif dans un tableau et rédiger des phrases avec des adverbes de lieu imposés; les proverbes servent de supports réutilisables.",
+    "pageType_note": "exercices de grammaire arabe, niveau 6ème",
+    "themeGroup": "La phrase nominale: le prédicat"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Tableau de l'exercice 3 non transcrit (en-têtes : محل المبتدأ، محل الخبر، جار، مجرور، ظرف مضاف، مضاف اليه)"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titres « التمارين » et « التمرين الأول/الثاني/الثالث/الرابع » omis"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

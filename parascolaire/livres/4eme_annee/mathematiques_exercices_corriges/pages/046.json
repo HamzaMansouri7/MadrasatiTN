@@ -1,0 +1,306 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 46,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 11 : الذيسلتر والصنتيلتر (2) — Le décilitre et le centilitre (2)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع في إطار السّعات التي تفوق 1 لتر :",
+      "body": "25 دسل - 87 صل - نصف دكل - 432 صل - 9 دسل ونصف",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p046_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "تستعمل ربّة بيت كأسا واحدة من الزّيت كلّ يوم. كم يلزمها من قارورة زيت في مدّة شهر (30 يوما) ؟",
+      "body": "تستعمل ربّة بيت كأسا واحدة من الزّيت كلّ يوم. كم يلزمها من قارورة زيت في مدّة شهر (30 يوما) ؟",
+      "figureDesc": "رسم قارورة زيت سعتها 1 ل تساوي 5 كؤوس؛ تحت الكؤوس عبارة «سعة القارورة».",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p046_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "يتناول مهدي 4 مرّات في اليوم ملعقة دواء تحوي 2 صل ولمدّة 6 أيّام. هل تكفي كميّة الدّواء الموجودة بقارورتيْن تسع الواحدة 2 دسل ونصف؟",
+      "body": "يتناول مهدي 4 مرّات في اليوم ملعقة دواء تحوي 2 صل ولمدّة 6 أيّام. هل تكفي كميّة الدّواء الموجودة بقارورتيْن تسع الواحدة 2 دسل ونصف؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p046_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هو ثمن اللتر الواحد من العطر إذا كان ثمن 5 دسل بـ 4500 مي؟",
+      "body": "ما هو ثمن اللتر الواحد من العطر إذا كان ثمن 5 دسل بـ 4500 مي؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p046_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكمل تعمير الجدول التّالي :",
+      "body": "جدول بصفّين: الثّمن: (خانة فارغة)، (خانة فارغة)، (خانة فارغة)، 3 000 مي. السّعة: 5 صل، 3 دسل، 1 دسل، 1 ل.",
+      "figureDesc": "جدول من 5 أعمدة (عمود العناوين: الثّمن / السّعة) تُقرأ أعمدته من اليمين إلى اليسار: 1 ل ↔ 3 000 مي، 1 دسل، 3 دسل، 5 صل، وخانات الثّمن الثلاث الأخيرة فارغة. في الأعلى (صفّ الثّمن) ثلاثة أسهم: سهم من 3 000 مي إلى خانة 1 دسل عليه دائرة فارغة (........)، وسهم من خانة 1 دسل إلى خانة 3 دسل عليه «3 x»، وسهم كبير من خانة 1 دسل إلى خانة 5 صل عليه دائرة فارغة. في الأسفل (صفّ السّعة): سهم من 1 ل إلى 1 دسل عليه «10 :»، وسهمان من 1 دسل إلى 3 دسل وإلى 5 صل على كلٍّ منهما دائرة فارغة (........).",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p046_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-p6",
+  "topicTitle": "Période 6 : Mesure du temps, capacités, masses et synthèse",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite du décilitre et du centilitre (conversions et problèmes de capacités), ce qui correspond à la Période 6 : mesure du temps, capacités, masses et synthèse.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    119
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures de capacité : décilitre et centilitre",
+    "skill": "Convertir et comparer des capacités (L, dL, cL) et les utiliser pour résoudre des problèmes de la vie quotidienne.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "capacité",
+      "décilitre",
+      "centilitre",
+      "conversion",
+      "proportionnalité",
+      "prix"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : consommation quotidienne d'huile sur un mois, posologie d'un médicament comparée à la contenance des flacons, prix d'un litre de parfum déduit du prix de 5 dL, tableau de proportionnalité capacité/prix, et repérage des capacités supérieures à 1 L.",
+    "themeGroup": "Masses et capacités"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 3 : le premier champ de la transcription ne contient que la question finale et omet l'énoncé « يتناول مهدي 4 مرّات في اليوم ملعقة دواء تحوي 2 صل ولمدّة 6 أيّام » (présent seulement dans le second champ)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre de la page absent : « الذّيسلتر والصنتيلتر (2) » et « الأسبوع 11 »; numéro de page 42 absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 5 : les flèches et les opérations du schéma (3 x, 10 :, bulles vides pour les opérations) ne sont pas décrites ; la description du tableau est incomplète."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'illustration (bouteille 1 L = 5 verres, « سعة القارورة ») n'est pas mentionnée ; donnée essentielle pour la résolution."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 5 : l'ordre des colonnes du tableau est inversé par rapport à la lecture arabe (de droite à gauche) : 1 ل, 1 دسل, 3 دسل, 5 صل. Il est correct en soi, mais la ligne du prix est décrite à l'envers (3 000 مي est à côté de 1 ل, les 3 vides sont à gauche)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « 25 دسل - 87 صل » : le tiret avant 25 دسل n'est pas bien placé ; le texte original utilise « 25 دسل - 87 صل - نصف دكل - 432 صل - 9 دسل ونصف » ; correct pour l'essentiel."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« كمية » dans l'exercice 3 (premier champ) sans chadda, alors que l'image montre « كميّة »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3, champ instruction : « كمية » est écrit sans chadda, alors que l'image montre « كميّة »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3 : le champ instruction ne contient que la question finale. L'énoncé « يتناول مهدي 4 مرّات في اليوم ملعقة دواء تحوي 2 صل ولمدّة 6 أيّام. » est présent seulement dans body. Il faut le recopier aussi dans l'instruction, comme pour l'exercice 2."
+      },
+      {
+        "type": "description",
+        "severity": "minor",
+        "detail": "Exercice 5 : la figureDesc est exacte mais imprécise. Elle ne situe pas les trois arcs du haut, sur la ligne du prix, ni les deux arcs du bas, sur la ligne de la capacité. Les flèches et les opérations (3 x, 10 :, bulles vides) sont pourtant bien mentionnées, contrairement à ce que signalait le contrôle."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع في إطار السّعات التي تفوق 1 لتر :",
+      "body": "25 دسل - 87 صل - نصف دكل - 432 صل - 9 دسل ونصف",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p046_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "تستعمل ربّة بيت كأسا واحدة من الزّيت كلّ يوم. كم يلزمها من قارورة زيت في مدّة شهر (30 يوما) ؟",
+      "body": "تستعمل ربّة بيت كأسا واحدة من الزّيت كلّ يوم. كم يلزمها من قارورة زيت في مدّة شهر (30 يوما) ؟",
+      "figureDesc": "رسم قارورة زيت سعتها 1 ل تساوي 5 كؤوس؛ تحت الكؤوس عبارة «سعة القارورة».",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p046_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "يتناول مهدي 4 مرّات في اليوم ملعقة دواء تحوي 2 صل ولمدّة 6 أيّام. هل تكفي كميّة الدّواء الموجودة بقارورتيْن تسع الواحدة 2 دسل ونصف؟",
+      "body": "يتناول مهدي 4 مرّات في اليوم ملعقة دواء تحوي 2 صل ولمدّة 6 أيّام. هل تكفي كميّة الدّواء الموجودة بقارورتيْن تسع الواحدة 2 دسل ونصف؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p046_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هو ثمن اللتر الواحد من العطر إذا كان ثمن 5 دسل بـ 4500 مي؟",
+      "body": "ما هو ثمن اللتر الواحد من العطر إذا كان ثمن 5 دسل بـ 4500 مي؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p046_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكمل تعمير الجدول التّالي :",
+      "body": "جدول بصفّين: الثّمن: (خانة فارغة)، (خانة فارغة)، (خانة فارغة)، 3 000 مي. السّعة: 5 صل، 3 دسل، 1 دسل، 1 ل.",
+      "figureDesc": "جدول من 5 أعمدة (عمود العناوين: الثّمن / السّعة) تُقرأ أعمدته من اليمين إلى اليسار: 1 ل ↔ 3 000 مي، 1 دسل، 3 دسل، 5 صل، وخانات الثّمن الثلاث الأخيرة فارغة. في الأعلى (صفّ الثّمن) ثلاثة أسهم: سهم من 3 000 مي إلى خانة 1 دسل عليه دائرة فارغة (........)، وسهم من خانة 1 دسل إلى خانة 3 دسل عليه «3 x»، وسهم كبير من خانة 1 دسل إلى خانة 5 صل عليه دائرة فارغة. في الأسفل (صفّ السّعة): سهم من 1 ل إلى 1 دسل عليه «10 :»، وسهمان من 1 دسل إلى 3 دسل وإلى 5 صل على كلٍّ منهما دائرة فارغة (........).",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p046_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع في إطار السّعات التي تفوق 1 لتر :",
+      "body": "25 دسل - 87 صل - نصف دكل - 432 صل - 9 دسل ونصف",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p046_i1",
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "تستعمل ربّة بيت كأسا واحدة من الزّيت كلّ يوم. كم يلزمها من قارورة زيت في مدّة شهر (30 يوما) ؟",
+      "body": "تستعمل ربّة بيت كأسا واحدة من الزّيت كلّ يوم. كم يلزمها من قارورة زيت في مدّة شهر (30 يوما) ؟",
+      "figureDesc": "رسم قارورة زيت سعتها 1 ل تساوي 5 كؤوس؛ تحت الكؤوس عبارة «سعة القارورة».",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p046_i2",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "هل تكفي كمية الدّواء الموجودة بقارورتيْن تسع الواحدة 2 دسل ونصف؟",
+      "body": "يتناول مهدي 4 مرّات في اليوم ملعقة دواء تحوي 2 صل ولمدّة 6 أيّام. هل تكفي كميّة الدّواء الموجودة بقارورتيْن تسع الواحدة 2 دسل ونصف؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p046_i3",
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هو ثمن اللتر الواحد من العطر إذا كان ثمن 5 دسل بـ 4500 مي؟",
+      "body": "ما هو ثمن اللتر الواحد من العطر إذا كان ثمن 5 دسل بـ 4500 مي؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "math_solutions_4eme_sellami_p046_i4",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكمل تعمير الجدول التّالي :",
+      "body": "جدول بصفّين: الثّمن: (خانة فارغة)، (خانة فارغة)، (خانة فارغة)، 3 000 مي. السّعة: 5 صل، 3 دسل، 1 دسل، 1 ل.",
+      "figureDesc": "جدول من 5 أعمدة (الثمن / السعة) مع أسهم ودوائر عمليات: 3 x بين خانتي 1 دسل و3 دسل، 10: من 1 ل إلى 1 دسل، ودوائر فارغة (........) لإتمام العمليات في الأعلى والأسفل.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p046_i5",
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

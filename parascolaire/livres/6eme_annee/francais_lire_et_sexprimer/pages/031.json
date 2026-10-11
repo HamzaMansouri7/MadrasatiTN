@@ -1,0 +1,100 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 31,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Le dévouement de Gaspard",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Le dévouement de Gaspard\nJe ne trouvai pas ma mère dans la cuisine comme à l'accoutumée. Elle m'appela de sa chambre. Dès que j'y entrai, je vis ses yeux fatigués et son visage tout rouge. Je pris sa main : elle était brûlante.\nJ'étais très inquiet.\n- « Maman, qu'est-ce que je peux faire pour te soulager ? lui demandai-je.\n- Rien, mon petit, me répondit-elle faiblement. Ton père arrivera bientôt. Mme Gaspard a préparé la soupe. »\nJe me sentais abandonné. J'avais le cœur serré... Enfin, mon père arriva. « Je vais m'occuper de maman, me dit-il, si la fièvre persiste, demain, je l'emmènerai chez le médecin. »\nNous dînâmes tous les deux, à notre table où la place de ma mère paraissait énorme. Nous ne parlions pas. Mon père m'encourageait de temps en temps : « mange donc ! supplie-t-il, il faut manger mon petit ! »\nLui-même ne mit presque rien dans son assiette. « Demain, tu n'iras pas en classe, me dit-il. Tu aideras Mme Gaspard à soigner maman. »\nLe lendemain, Mme Gaspard vint tôt chez nous. « Ne t'inquiète pas mon garçon, me rassure-t-elle, va à l'école, je m'occuperai de ta maman. »\nJe n'oublierai jamais le dévouement de cette voisine.\nD'après Edouard Jauffret",
+      "figureDesc": "Texte encadré dans un cadre arrondi, en-tête gris avec « Sagesse » et « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p031_i1",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1",
+      "instruction": "Pourquoi l'enfant est-il inquiet ?",
+      "body": "Ligne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p031_i2",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2",
+      "instruction": "La mère est trop malade. Relève, dans le texte, deux détails qui le montrent :",
+      "body": "Deux lignes de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p031_i3",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B3",
+      "instruction": "Mme Gaspard est venue tôt chez la famille de l'enfant. Pourquoi ? (Cite deux raisons)",
+      "body": "- La première raison : ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p031_i4",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m4",
+  "topicTitle": "Module 4 : S'entraider pour mieux réussir",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.36
+  },
+  "topicSubject": "Français",
+  "topicReason": "Texte de lecture sur le dévouement de Gaspard qui aide sa mère malade, ce qui relève de l'entraide (Module 4), mais le thème pourrait aussi correspondre au Module 3 (solidarité) et le texte est incomplet, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Lire un court récit et répondre à des questions de compréhension en relevant des indices dans le texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "texte narratif",
+      "relevé d'indices",
+      "dévouement",
+      "maladie de la mère"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un récit familial court (un enfant face à sa mère malade, avec l'aide d'une voisine) suivi de questions graduées : explication d'un sentiment, relevé de détails et justification par deux raisons. Ce schéma est réutilisable avec d'autres situations de solidarité.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

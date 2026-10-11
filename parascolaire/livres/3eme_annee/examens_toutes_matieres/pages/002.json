@@ -1,0 +1,135 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 2,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول - قراءة - عدد 1 - النص: أَيْنَ الْمِعْطَفُ؟!",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ : أَيْنَ الْمِعْطَفُ ؟!",
+      "body": "هَرْوَلَ الْعَمُّ خَالِدٌ إِلَى خِزَانَةِ الْمَلَابِسِ، فَجَعَلَ يُقَلِّبُ فِي مُحْتَوَاهَا لِكَيْ يَتَفَقَّدَ مِعْطَفَهُ الْقَدِيمَ الَّذِي لَزِمَهُ فِي الْفُصُولِ الْبَارِدَةِ سَنَوَاتٍ مُتَوَالِيَةً. حَقًّا تَقَادَمَ عَهْدُهُ وَتَغَيَّرَ لَوْنُهُ، وَتَآكَلَ نَسِيجُهُ، وَلَكِنَّهُ اسْتَطَاعَ أَنْ يَحْمِيَهُ خِلَالَ الشِّتَاءِ مِنْ لَدْغَاتِ الْبَرْدِ الْقَارِسِ، إِضَافَةً إِلَى كَوْنِهِ يَأْمَنُ عَلَى بَعْضِ الْمَالِ الَّذِي يُخْفِيهِ فِي جُيُوبِهِ لِوَقْتِ الْحَاجَةِ.\nأَطَالَ الْعَمُّ خَالِدٌ الْبَحْثَ فِي أَرْكَانِ الْخِزَانَةِ وَزَوَايَاهَا، فَلَمْ يَجِدْ لِلْمِعْطَفِ مِنْ أَثَرٍ، فَأَقْبَلَ عَلَى زَوْجَتِهِ يَسْأَلُهَا عَنْهُ، فَرَفَعَتْ إِلَيْهِ بَصَرَهَا مَذْهُوشَةً وَقَالَتْ لَهُ: «أَيُّ مِعْطَفٍ تَسْأَلُنِي عَنْهُ؟! الْمِعْطَفُ الْمُهَلْهَلُ الَّذِي قُلْتَ مِنْ مَرَّةٍ أَنَّكَ لَا تُرِيدُهُ، وَلَنْ تَرْتَدِيَهُ، وَأَنَّكَ مُعْتَزِمٌ شِرَاءَ مِعْطَفٍ جَدِيدٍ؟»\n- إِنِّي فِي حَاجَةٍ إِلَيْهِ. إِلَيَّ بِهِ !\n- أَلَسْتَ مُعْتَزِمًا شِرَاءَ مِعْطَفٍ جَدِيدٍ ؟\n- قُولِي أَيْنَ مِعْطَفِي الْقَدِيمُ ؟\n- لَقَدْ جَاءَ أَمْسِ رَجُلٌ مُسِنٌّ مِسْكِينٌ، يَرْتَعِدُ مِنْ شِدَّةِ الْبَرْدِ فَأَشْفَقْتُ عَلَيْهِ وَأَعْطَيْتُهُ الْمِعْطَفَ.",
+      "figureDesc": "En-tête « امتحانات جسر النجاح » ; cadre avec Nom/Prénom/Classe (الاسم، اللقب، القسم) ; المادة: قراءة ; المستوى: السنة الثالثة ; اختبار نهاية الثلاثي الأول عدد 1. Filigrane du site visible sur le texte. Le texte est partiellement coupé sur les bords (scan).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p002_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَضَعُ فِي إِطَارٍ الشَّخْصِيَّاتِ الْمَذْكُورَةَ فِي النَّصِّ.",
+      "body": "الْبِنْتُ - الْأَبُ - الْأَخُ - الزَّوْجَةُ - الْجَارَةُ - الرَّجُلُ الْمِسْكِينُ",
+      "figureDesc": "Cases à cocher de notation (معيار م‌ع 2 أ) à droite ; colonne de barème à gauche (0.5, 1.5…).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p002_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ ثَلَاثَةَ أَوْصَافٍ لِلْمِعْطَفِ تُبَيِّنُ حَالَتَهُ.",
+      "body": "• ........................\n• ........................\n• ........................",
+      "figureDesc": "Trois lignes pointillées à puces ; cases de critère (معيار 2 ب).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p002_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-أ",
+      "instruction": "أَيْنَ بَحَثَ الْعَمُّ خَالِدٌ عَنِ الْمِعْطَفِ ؟",
+      "body": "الْجَوَابُ : ........................",
+      "figureDesc": "Ligne pointillée ; case de critère (معيار 2 ج).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p002_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-ب",
+      "instruction": "لَمْ يَجِدِ الْعَمُّ خَالِدٌ مَا يَبْحَثُ عَنْهُ.",
+      "body": "الْقَرِينَةُ : « ........................ »",
+      "figureDesc": "Ligne pointillée pour la citation (القرينة).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p002_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-ج",
+      "instruction": "مَاذَا فَعَلَ الْعَمُّ خَالِدٌ لَمَّا يَئِسَ مِنَ الْعُثُورِ عَلَى الْمِعْطَفِ ؟",
+      "body": "الْجَوَابُ : (coupé en bas de page)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "examens_toutes_matieres_p002_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u8",
+    "confidence": 0.36
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de premier trimestre (lecture, texte « أين المعطف؟! ») qui mêle identification des personnages, relevé d'indices et description, donc elle ne correspond pas clairement à un seul chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de lecture d'un texte narratif",
+    "skill": "Comprendre un texte narratif en identifiant les personnages, les descriptions, le lieu de l'action et les réactions du héros, avec justification par des indices du texte.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "texte narratif",
+      "personnages",
+      "relevé d'indices",
+      "évaluation trimestrielle",
+      "3ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une évaluation de lecture bâtie sur une situation du quotidien (la recherche d'un vieux vêtement) avec des consignes variées : repérer les personnages dans une liste, relever des descriptions, répondre à une question de lieu, justifier par un indice, expliquer la réaction du héros.",
+    "themeGroup": "Compréhension de l'écrit : le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

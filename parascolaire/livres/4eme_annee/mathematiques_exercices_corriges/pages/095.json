@@ -1,0 +1,107 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 95,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 25 : اختبار تقويمي للتثبيت والدعم (القسمة الإقليدية على عدد ذي رقم واحد، المسائل)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنجز العملية التالية:",
+      "body": "2756 ÷ 9 (قسمة مبوّبة: المقسوم 2756 والمقسوم عليه 9)",
+      "figureDesc": "جدول قسمة عمودي: 2756 على اليسار، 9 على اليمين، مع مكان فارغ للخارج والباقي",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mathematiques_exercices_corriges_p095_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أتمّ العمليّات التّالية :",
+      "body": "ثلاث قسمات ناقصة: (أ) 637 ÷ .. ، القاسم مجهول والخارج 7 ؛ (ب) .... ÷ 6 ، الخارج 28 ، الباقي: أكبر باق ممكن ؛ (ج) .... ÷ 7 ، الخارج 39 ، الباقي 2",
+      "figureDesc": "ثلاثة جداول قسمة عمودية بها نقاط مكان الأعداد المجهولة؛ في الوسط عبارة «أكبر باق ممكن» مكتوبة تحت الخارج 28",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p095_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أحسب قيس ضلع كلّ مربّع.",
+      "body": "طول السّلك المستعمل لصنع زخرفة مستطيلة قسّمت إلى 6 مربّعات متقايسة كما هو مبيّن في الشّكل هو 51 دسم.",
+      "figureDesc": "مستطيل مقسّم إلى 6 مربّعات متقايسة (3 أعمدة وسطران)، سهم على الجانب الأيمن يشير إلى ضلع المربّع مع علامة استفهام",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p095_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "- كم قارورة ملأً؟ - كم صرف مقابل شراء القوارير الفارغة والسدّادات؟ - ما هو دخله الصّافي إذا كان قد أنفق 31 250 مي مصاريف الجني والتّقطير؟",
+      "body": "قام فلاّح بتقطير صابته من الورد ، فحصل على 28 لترا من ماء الورد وضعها في قوارير سعة الواحدة 8 دسل.\n- كم قارورة ملأً؟\nشرى هذا الفلاّح القارورة وسدّادها بـ 250 مي الواحدة.\n- كم صرف مقابل شراء القوارير الفارغة والسدّادات؟\nباع القارورة الملأى بـ 4 دنانير.\n- ما هو دخله الصّافي إذا كان قد أنفق 31 250 مي مصاريف الجني والتّقطير؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p095_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch3",
+  "topicTitle": "Période 3 : Division euclidienne, fractions et périmètres",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.46153846153846156,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.95
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation de consolidation sur la division euclidienne par un nombre à un chiffre, avec des problèmes et un périmètre de carrés, ce qui correspond à la Période 3 (division euclidienne, fractions et périmètres).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    131
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division euclidienne par un nombre à un chiffre",
+    "skill": "Effectuer et compléter des divisions euclidiennes par un diviseur à un chiffre et résoudre des problèmes de partage, de périmètre et de coût.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "division euclidienne",
+      "quotient et reste",
+      "plus grand reste possible",
+      "périmètre du carré",
+      "problème de vente",
+      "conversion d'unités de capacité"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : divisions à compléter (diviseur inconnu, dividende retrouvé à partir du quotient et du reste), problème de périmètre d'une figure découpée en carrés égaux, et problème en plusieurs étapes dans un contexte local (eau de rose en flacons) avec conversions, dépenses, recettes et gain net.",
+    "themeGroup": "Division euclidienne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

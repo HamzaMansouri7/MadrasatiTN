@@ -1,0 +1,172 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 8,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقويم فهم المقروء: الطفل العابث في الغابة (حريق الغابة) – معيار م2أ، م2ب، م2ج، م3 وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَخْتَارُ مِمَّا يَلِي عُنْوَانًا يُنَاسِبُ النَّصَّ وَأَضَعُهُ فِي إِطَارٍ.",
+      "body": "- جَوْلَةٌ فِي الْمَدِينَةِ - جَوْلَةٌ مُمْتِعَةٌ - كَادَ يَحْرِقُ الْغَابَةَ",
+      "figureDesc": "رسم لغابة فيها أشجار ونار صغيرة على الأرض وثلاثة أطفال، أحدهم يحمل شيئا ويبدو الآخر يطفئ النار. بجانبه مربع للإجابة (معيار م2أ، 0,5 نقطة).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p008_i1",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ جُمْلَةً تُعَبِّرُ عَنِ الصُّورَةِ.",
+      "body": "ثلاثة أسطر منقطة للكتابة (معيار م2ج، 1 نقطة).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p008_i2",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُرَتِّبُ الْأَحْدَاثَ وِفْقَ تَتَالِيهَا فِي النَّصِّ بِوَضْعِ الْأَرْقَامِ مِنْ 1 إِلَى 3.",
+      "body": "تَظَافُرُ الْجُهُودِ وَالسَّيْطَرَةُ عَلَى الْحَرِيقِ / تَجَوُّلُ زَاهِرٍ فِي الْغَابَةِ / تَقْدِيمُ النَّصِيحَةِ لِلطِّفْلِ الْعَابِثِ",
+      "figureDesc": "جدول من ثلاثة أسطر: عبارة في كل سطر وخانة منقطة لوضع الرقم (0,5 لكل سطر، معيار م2أ).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p008_i3",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ مُرَادِفًا لِكُلِّ مُفْرَدَةٍ مِمَّا يَلِي :",
+      "body": "لَمْ يَهْتَمَّ = ...... / اِقْتَرَبَ = ...... / يَنْظُرُ إِلَيْهِ = ......",
+      "figureDesc": "جدول من ثلاثة أعمدة، في كل عمود مفردة وخانة منقطة بعد علامة يساوي (0,5 لكل مفردة، معيار م2ب).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p008_i4",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8 أ",
+      "instruction": "أَضَعُ عَلَامَةَ ( x ) أَمَامَ الصِّفَةِ الَّتِي تُنَاسِبُ الطِّفْلَ.",
+      "body": "حَذِرٌ ☐ - مُقَدِّرٌ لِلْعَوَاقِبِ ☐ - مُسْتَهْتِرٌ ☐",
+      "figureDesc": "ثلاث خانات للاختيار (معيار م3).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p008_i5",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8 ب",
+      "instruction": "عَلِّلْ وَصْفَكَ وَدَعِّمْهُ :",
+      "body": "سطران منقطان للتعليل (1 + 1 نقطة).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p008_i6",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "كَيْفَ تَتَصَرَّفُ عِنْدَ زِيَارَتِكَ لِلْمَنَاطِقِ الْخَضْرَاءِ؟",
+      "body": "ثلاثة أسطر منقطة للإجابة (1 نقطة).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p008_i7",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "مع 1 : الْقِرَاءَةُ الْجَهْرِيَّةُ",
+      "body": "الْقِرَاءَةُ السَّلِيمَةُ مِنَ الْأَخْطَاءِ: مِنْ 0 إِلَى 2,5. الْقِرَاءَةُ الْمُسْتَرْسِلَةُ: مِنْ 0 إِلَى 2,5. الْقِرَاءَةُ الْمُنَغَّمَةُ: مِنْ 0 إِلَى 3. المجموع: ../8 + ../12 = ../20",
+      "figureDesc": "إطار لتنقيط القراءة الجهرية.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p008_i8",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مستويات التملك / المعايير: معايير الحد الأدنى (م2أ، م2ب، م2ج) ومعيار التميز (م3). انعدام التملك: 0 في كل المعايير. التملك دون الأدنى: م2أ: 0.5 / 1 / 1.5، م2ب: 0.5، م2ج: 1، م3: 1. التملك الأدنى: م2أ: 2 / 2.5 / 3، م2ب: 1، م2ج: 2، م3: 2. التملك الأقصى: م2أ: 3.5 / 4 / 4.5، م2ب: 1.5، م2ج: 3، م3: 3.",
+      "figureDesc": "جدول إسناد الأعداد حسب مستويات التملك والمعايير.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p008_i9",
+      "topicId": "ar-2-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-2-u2",
+  "topicTitle": "Unité 2 : Environnement, consommation et initiative",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-2-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u1",
+    "confidence": 0.21
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Il s'agit d'une évaluation de compréhension de l'écrit sur un texte au sujet de la forêt et de l'incendie causé par un enfant imprudent, qui relève du thème de l'environnement et du comportement citoyen (Unité 2), mais le thème pourrait aussi correspondre à l'Unité 5, et la page est une évaluation avec barème, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de l'écrit : incendie en forêt",
+    "skill": "Comprendre un texte narratif lu : choisir un titre, relever une phrase, ordonner les événements, trouver des synonymes, justifier un jugement sur un personnage.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "forêt",
+      "incendie",
+      "synonymes",
+      "ordre des événements",
+      "barème d'évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série d'items variés autour d'un même texte (choix du titre, phrase illustrant une image, ordre chronologique, synonymes, adjectif caractérisant un personnage avec justification, question d'éco-citoyenneté) accompagnée d'une grille de notation par critères et d'une évaluation de la lecture à voix haute.",
+    "themeGroup": "Compréhension: nature et animaux"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

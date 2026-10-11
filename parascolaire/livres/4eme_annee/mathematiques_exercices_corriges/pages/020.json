@@ -1,0 +1,273 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 20,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 4 – اختبار تقويمي للتثبيت والدعم (الأعداد العشرية، التفكيك، المتتاليات، مسألة النقود)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضَعْ رقما مَكَانَ النُّقْطَةِ وَحَافِظْ عَلَى تَرْتِيبِ الأَعْدَادِ.",
+      "body": "9.0 > 97 . > . 72 > 97 • > . 70",
+      "figureDesc": "خمسة إطارات متتالية (من اليسار إلى اليمين) تفصل بينها علامات (>): [9 . 0] > [97 .] > [. 72] > [97 •] > [. 70]",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p020_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْمِلِ النَّاقِصَ :",
+      "body": "36 عَشَرَةً + 17 آحَاد + 3 مِئَات = ...........\n39 عَشَرَةً + 30 آحَاد + .... عشرة = 9 مِئَات .",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p020_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "تَأَمَّلْ مِنْ هَذِهِ الأَعْدَادِ ثُمَّ عَمِّرِ الفَرَاغَاتِ بِنَفْسِ الانْتِظَامِ.",
+      "body": "1 ، 3 ، 6 ، 10 ، 15 ، ....... ، ....... ، .......",
+      "figureDesc": "جدول من ثماني خانات: الخانات الثلاث الأولى من اليسار فارغة (منقطة) ثم 15 ، 10 ، 6 ، 3 ، 1 (القراءة من اليمين)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p020_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "سجّل بقية المعطيات الواردة في الجدول التالي:",
+      "body": "اشْتَرَتْ فَرَح قِصَّةً وكوسًا وقلمَ رَصَاصٍ، فدَفَعَتْ 3 قطع نقديّة من فئة النّصف دينار، فلم يجد الكتبيّ صرفا لإرجاع الباقي لها. فطلب منها أن تسلّمه 20 مي وأرجع لها قطعة نقديّة ذات 100 مي.\n– ما هو ثمن المشتريات؟\n– سعر الكوس 425 مي أمّا ثمن القصّة فهو ضعف ثمن الكوس.\n– احسب ثمن قلم الرّصاص.",
+      "figureDesc": "جدول بعنوان «سجّل بقية المعطيات الواردة في الجدول التالي:» بعمودين (مدلول العدد / العدد): عدد القطع من فئة النصف دينار (خانة العدد فارغة ومشطوبة بخط مائل)، [مدلول فارغ] = 20، [مدلول فارغ] = 100، ثمن القصة (العدد فارغ)، ثمن [الكوس، منقط] = 425",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p020_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.24
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Cette page est un test d'évaluation de consolidation (semaine 4) qui mélange nombres décimaux, décomposition en dizaines/centaines, suites numériques et problème de monnaie, donc plusieurs chapitres (math-4-ch1 et math-4-ch4) sans qu'un seul ne ressorte clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    113
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres décimaux, décomposition et suites",
+    "skill": "Ordonner des nombres décimaux, décomposer des nombres en centaines, dizaines et unités, repérer la régularité d'une suite et résoudre un problème de monnaie en millimes.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "décomposition",
+      "suite numérique",
+      "monnaie",
+      "millimes",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : compléter un chiffre manquant dans une suite décimale ordonnée, équations de décomposition à trous, suite de nombres triangulaires et problème d'achat avec rendu de monnaie en dinars et millimes, complété par un tableau de données.",
+    "themeGroup": "Numération jusqu'à 9 999"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 1 : l'image affiche, de gauche à droite, '9.0 > 97. > .72 > 97. > .70' ; l'ordre de lecture RTL et la position des points sont à vérifier. La transcription met '97.' au 4e rang alors que l'image montre '97 .' (point après le nombre) ; le 2e est '97 .' avec point en bas à droite."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 1 : le premier cadre est '9.0' (point au milieu, '9 . 0'), correct, mais les cadres 2 et 4 sont '97.' et '97.' ; l'image montre 4e = '97 •' (point au milieu), à distinguer du 2e."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 2 : '30 آحاد' est transcrit correctement, mais la 2e ligne dans l'image est '39 عشرة + 30 آحاد + .... عشرة = 9 مئات' ; la transcription est conforme. La 1re ligne '36 عشرة + 17 آحاد + 3 مئات' est conforme."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : 'عَشَرَةً' et 'آحَاد' sont partiellement voyellés ; dans la 2e ligne le dernier 'عَشَرَة' est sans voyelles dans l'image ('عشرة'), voyelles ajoutées à tort."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'image présente la suite en tableau, de droite à gauche : 1, 3, 6, 10, 15 puis 3 cases vides ; l'ordre est correct. Les voyelles 'تَأَمَّلْ', 'هَذِهِ', 'عَمِّرِ' sont ajoutées/modifiées par rapport à l'image ('تأمّل مِن هذِهِ', 'عَمِّر')."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 4 : le tableau 'سجّل بقية المعطيات' est omis (lignes : مدلول العدد/العدد, عدد القطع من فئة النصف دينار, 20, 100, ثمن القصة, ثمن الكوس 425). Les consignes sont aussi dupliquées dans le champ en-tête."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : 'الكتبيّ' est correct ; 'فهو ضعف ثمن الكوس' correct. Titre de page 'الأسبوع 4 – اختبار تقويمي للتثبيت والدعم' et numéro de page 16 manquants."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2, 2e ligne : le dernier mot « عشرة » (après « .... ») est sans voyelles dans l'image, alors que la transcription l'écrit « عَشَرَة »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 1 : la parenthèse « (كل عدد داخل إطار، والفاصلة/النقطة تحتل موضع رقم ناقص) » dans le corps est un commentaire absent de l'image. Dans le 4e cadre, le point est à mi-hauteur (« 97 • »), alors que dans le 2e il est en bas (« 97 . ») ; la transcription les note de la même façon."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "Exercice 4 : le champ instruction regroupe les questions « ما هو ثمن المشتريات؟ / احسب ثمن قلم الرّصاص » et la consigne du tableau, alors que les questions sont déjà dans le corps (duplication). Le tableau n'est pas omis : il est décrit dans figureDesc, donc le signalement « manquant » est infirmé."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضَعْ رقما مَكَانَ النُّقْطَةِ وَحَافِظْ عَلَى تَرْتِيبِ الأَعْدَادِ.",
+      "body": "9.0 > 97 . > . 72 > 97 • > . 70",
+      "figureDesc": "خمسة إطارات متتالية (من اليسار إلى اليمين) تفصل بينها علامات (>): [9 . 0] > [97 .] > [. 72] > [97 •] > [. 70]",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p020_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْمِلِ النَّاقِصَ :",
+      "body": "36 عَشَرَةً + 17 آحَاد + 3 مِئَات = ...........\n39 عَشَرَةً + 30 آحَاد + .... عشرة = 9 مِئَات .",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p020_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "تَأَمَّلْ مِنْ هَذِهِ الأَعْدَادِ ثُمَّ عَمِّرِ الفَرَاغَاتِ بِنَفْسِ الانْتِظَامِ.",
+      "body": "1 ، 3 ، 6 ، 10 ، 15 ، ....... ، ....... ، .......",
+      "figureDesc": "جدول من ثماني خانات: الخانات الثلاث الأولى من اليسار فارغة (منقطة) ثم 15 ، 10 ، 6 ، 3 ، 1 (القراءة من اليمين)",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p020_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "سجّل بقية المعطيات الواردة في الجدول التالي:",
+      "body": "اشْتَرَتْ فَرَح قِصَّةً وكوسًا وقلمَ رَصَاصٍ، فدَفَعَتْ 3 قطع نقديّة من فئة النّصف دينار، فلم يجد الكتبيّ صرفا لإرجاع الباقي لها. فطلب منها أن تسلّمه 20 مي وأرجع لها قطعة نقديّة ذات 100 مي.\n– ما هو ثمن المشتريات؟\n– سعر الكوس 425 مي أمّا ثمن القصّة فهو ضعف ثمن الكوس.\n– احسب ثمن قلم الرّصاص.",
+      "figureDesc": "جدول بعنوان «سجّل بقية المعطيات الواردة في الجدول التالي:» بعمودين (مدلول العدد / العدد): عدد القطع من فئة النصف دينار (خانة العدد فارغة ومشطوبة بخط مائل)، [مدلول فارغ] = 20، [مدلول فارغ] = 100، ثمن القصة (العدد فارغ)، ثمن [الكوس، منقط] = 425",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p020_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضَعْ رقما مَكَانَ النُّقْطَةِ وَحَافِظْ عَلَى تَرْتِيبِ الأَعْدَادِ.",
+      "body": "9.0 > 97. > .72 > 97. > .70 (كل عدد داخل إطار، والفاصلة/النقطة تحتل موضع رقم ناقص)",
+      "figureDesc": "خمسة إطارات متتالية تحتوي أعدادا ناقصة رقما، تفصل بينها علامات أكبر من (>): [9 . 0] > [97 .] > [. 72] > [97 .] > [. 70]",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p020_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْمِلِ النَّاقِصَ :",
+      "body": "36 عَشَرَةً + 17 آحَاد + 3 مِئَات = ...........\n39 عَشَرَةً + 30 آحَاد + .... عَشَرَة = 9 مِئَات .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p020_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "تَأَمَّلْ مِنْ هَذِهِ الأَعْدَادِ ثُمَّ عَمِّرِ الفَرَاغَاتِ بِنَفْسِ الانْتِظَامِ.",
+      "body": "1 ، 3 ، 6 ، 10 ، 15 ، ....... ، ....... ، .......",
+      "figureDesc": "جدول من ثماني خانات: الخانات الثلاث الأولى من اليسار فارغة (منقطة) ثم 15 ، 10 ، 6 ، 3 ، 1 (القراءة من اليمين)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p020_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هو ثمن المشتريات؟ / احسب ثمن قلم الرّصاص. / سجّل بقية المعطيات الواردة في الجدول التالي:",
+      "body": "اشْتَرَتْ فَرَح قِصَّةً وكوسًا وقلمَ رَصَاصٍ، فدَفَعَتْ 3 قطع نقديّة من فئة النّصف دينار، فلم يجد الكتبيّ صرفا لإرجاع الباقي لها. فطلب منها أن تسلّمه 20 مي وأرجع لها قطعة نقديّة ذات 100 مي.\n– ما هو ثمن المشتريات؟\n– سعر الكوس 425 مي أمّا ثمن القصّة فهو ضعف ثمن الكوس.\n– احسب ثمن قلم الرّصاص.",
+      "figureDesc": "جدول بعنوان «سجّل بقية المعطيات الواردة في الجدول التالي» بعمودين (مدلول العدد / العدد): عدد القطع من فئة النصف دينار (خانة فارغة)، 20 (مدلول فارغ)، 100 (مدلول فارغ)، ثمن القصة (فارغ)، ثمن ... (الكوس) : 425",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p020_i4",
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "linked",
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

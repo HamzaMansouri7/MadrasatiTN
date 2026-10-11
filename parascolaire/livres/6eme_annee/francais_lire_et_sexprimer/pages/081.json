@@ -1,0 +1,91 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 81,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite : la santé et l'hygiène (phrases modèles et expressions utiles sur la bonne santé)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Expression écrite",
+      "body": "-Il faut pratiquer un sport pour avoir un corps fort et en bonne santé.\n- Pour être en forme, il faut se divertir après le travail pour éviter le stress.\n-Sans hygiène et sans sport, le corps s'endort, c'est-à-dire il sera faible et aura des maladies.",
+      "figureDesc": "Encadré aux coins arrondis contenant les phrases modèles et les expressions utiles. En arrière-plan, on voit en transparence le texte de l'autre face de la page (non lisible, à ignorer).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p081_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Expressions utiles :",
+      "body": "-« Seul l'homme malade connaît le prix d'une bonne santé »\n-« On ne connait le prix de la santé que quand on l'a perdue. »\n-« Qui est en bonne santé est riche sans le savoir. »\n-« La santé dépend plus des précautions que des médecins. »\n-« La santé, c'est le plus grand des biens. »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p081_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m6",
+    "confidence": 0.7
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page d'expression écrite porte sur la santé, le sport et l'hygiène (phrases modèles et citations sur la bonne santé), ce qui correspond au Module 6 « Être en forme et mieux se porter ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Santé et hygiène : expression écrite",
+    "skill": "Rédiger des phrases sur la bonne santé et l'hygiène en réutilisant des expressions et citations utiles.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "santé",
+      "hygiène",
+      "sport",
+      "stress",
+      "proverbes",
+      "expression écrite"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque de phrases modèles et de citations sur la santé, réutilisable comme point de départ pour une production écrite guidée, un texte à trous ou un appariement de proverbes avec leur sens.",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« Sagesse », « 6ème année de base ») et le pied de page (« Lire et s'exprimer », « 80 », « 6ème année de base ») ne sont pas transcrits."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« s'endort,c'est-à-dire » : dans l'image il n'y a pas d'espace après la virgule ; la transcription en ajoute un (« s'endort, c'est-à-dire »)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

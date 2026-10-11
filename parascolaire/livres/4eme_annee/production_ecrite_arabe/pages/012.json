@@ -1,0 +1,89 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 12,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وصف فصل الربيع (نص داعم للإنتاج الكتابي: وصف الطبيعة في فصل الربيع)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "وصلنا إلى المكان فإذا هو حديقة غناء تكسو أرضها أعشاب خضراء كأنها زربية متقنة الصنع وانتشرت الأزهار الفواحة التي تدغدغ الأنوف وتهز النفوس فتجعلك تتمايل من النشوة وبدت السماء كعين الطفل صفاء تغطيها العصافير المغردة تخالها في عرس أو مهرجان من الألحان وما ألحانها إلا فيضان ما في قلبها من الغبطة بالوجود\nرحل الشتاء بزوابعه المثقلة ورياحه القارسة وحل محله الربيع فصل التجديد تستيقظ فيه الطبيعة من نومها وتستبشر بعودة الحياة إلى ربوعها\nإنه فصل الأحلام فالعصافير تحلم بالفراخ والأشجار تحلم بالثمار والحيوانات تحلم بصغارها تدب حواليها والفلاح يحلم بالسنبلة التي دفن أمها في الأرض تلك هي يقظة الحياة بعد هجوعها\nسرت بين نفحات الرياحين وأهازيج الطيور وخرير السواقي وخوار البقر وصهيل الخيل وصياح الديكة وثغاء الأغنام ثم تخليت عنها لأمتع نظري بهذا الوشاح البديع الذي يغشي الأرض ولأستمع إلى أصوات تلك المخلوقات التي تسبح بلغاتها العديدة وظللت أملأ رئتي من هذا النسيم العطر الذي يتنازعه قر الشتاء وحر الصيف فلله ما أجمل الربيع في بلادنا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p012_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "✓ هذا أنت أيها الربيع لقد ملأت الجو عطرا بأزهارك الطيبة وثمارك العطرة فلما خاف الناس من غيبتك وانقطاع شذاك استخرجوا الروائع من أزهارك وعنوا بالاستقطار والتصعيد يتعطرون بها ذكرى لعطرك ويتفننون فيها تخليدا لعبيرك",
+      "figureDesc": "علامة صح (✓) بجانب بداية الفقرة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p012_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "في فصل الربيع",
+      "body": "لقد اعتدلت في حرارتك فلم تغل في بردك غلو الشتاء ولا في حرك علو الصيف فكنت جميلا في جوك كما كنت جميلا في شيء من آثارك\nكان الفصل ربيعيا فالسماء زرقاء صافية وشمسها مشرقة وروائح الأزهار الذكية تمتزج بالهواء وتملأ الصدر انشراحا وتداعب الألوان الزاهية الأبصار فتريحها\nما أجمل الطبيعة صفاء جو ونقاء هواء وإشراق شمس وزقزقة عصافير\nتتمتع النظار بجمال الأشجار الباسقات وهي مثقلة بثمارها يحركها النسيم فتتمايل الأغصان الذهبية كأنها عرائس الفردوس تختال في حليها",
+      "figureDesc": "العنوان «في فصل الربيع» مكتوب بخط غليظ",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p012_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.36
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un texte descriptif sur le printemps, support de production écrite en arabe. Les unités officielles d'arabe portent sur le récit : personnages, chronologie, schéma narratif et cohérence textuelle. Aucune ne traite de la description de la nature, donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description du printemps",
+    "skill": "Rédiger une description de la nature au printemps en utilisant un lexique riche et des images (comparaisons, personnification).",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "printemps",
+      "description",
+      "nature",
+      "comparaison",
+      "production écrite",
+      "lexique sensoriel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Textes modèles de description (jardin, ciel, parfums, climat modéré) réutilisables comme support de production écrite, de repérage des procédés descriptifs ou d'enrichissement du lexique des sens.",
+    "themeGroup": "Description des saisons et du temps"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

@@ -1,0 +1,158 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 64,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الدرس 34: أمرُ عمليات الجمع والطرح والضرب في مجموعة الأعداد العشرية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ماهُوَ مَدخُولُ كُلٍّ مِنَ الزَّوجِ وَالزَّوجَةِ في السَّنَةِ عِلمًا وَأَنَّ الزَّوجَةَ تَشتَغِلُ 215 يَومًا فَقَط.",
+      "body": "يَتَقاضى عامِلٌ 327,850 د في الشَّهرِ وَتَتَقاضى زَوجَتُهُ 9,375 د في اليَومِ.",
+      "figureDesc": "أربعة أسطر منقّطة لكتابة الحلّ.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p064_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ماهُوَ مَدخُولُ الزَّوجَينِ مَعًا سَنَوِيًّا؟",
+      "body": "",
+      "figureDesc": "سطران منقّطان لكتابة الحلّ.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p064_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسُبْ مَصاريفَ التَّغذِيَةِ في السَّنَةِ عِلمًا وَأَنَّ عَدَدَ أَسابيعِ السَّنَةِ هي 52.",
+      "body": "تُنفِقُ هَذِهِ العائِلَةُ كُلَّ أُسبُوعٍ 73 د لِمَصاريفِ التَّغذِيَةِ وَخَصَّصَت لِهَذِهِ السَّنَةِ 256,700 د لِشِراءِ المَلابِسِ وَ175 د لِلأَحذِيَةِ وَ650,750 د لِمَصاريفِ الصَّيفِ.",
+      "figureDesc": "سطران منقّطان لكتابة الحلّ.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p064_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسُبِ المَصاريفَ الجُملِيَّةَ لِلعائِلَةِ.",
+      "body": "",
+      "figureDesc": "سطران منقّطان لكتابة الحلّ.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p064_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسُبِ المَبلَغَ الَّذي تَدَّخِرُهُ هَذِهِ العائِلَةُ هَذِهِ السَّنَةَ؟",
+      "body": "",
+      "figureDesc": "سطران منقّطان لكتابة الحلّ.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p064_i5",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.65
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Problème sur les opérations (addition, soustraction, multiplication) avec des nombres décimaux en dinars, avec des multiplications de décimaux par des entiers (9,375 × 215, 73 × 52) qui relèvent de la Période 3, mais le titre de la leçon évoque aussi l'addition et la soustraction de la Période 2, d'où une certaine ambiguïté.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Opérations sur les nombres décimaux",
+    "skill": "Résoudre des problèmes à étapes en combinant addition, soustraction et multiplication de nombres décimaux (budget familial).",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "budget familial",
+      "problème à étapes",
+      "revenus et dépenses",
+      "multiplication",
+      "dinars"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de budget annuel d'une famille (salaire mensuel et journalier, dépenses hebdomadaires, habillement, vacances) à découper en questions successives menant au calcul de l'épargne ; transposable à d'autres contextes de gestion d'argent.",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 1 : l'énoncé (يَتَقاضى عامِلٌ ... في اليَومِ) est placé après la question ; il doit venir avant. Même problème pour l'exercice 2 : l'énoncé (تُنفِقُ هَذِهِ العائِلَةُ ...) doit précéder la question احسُبْ مَصاريفَ التَّغذِيَةِ."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les voyelles de la transcription sont plus complètes que celles de l'image, par exemple تَتَقاضى et الجُملِيَّةَ. Dans l'image, عامِلٌ et الزَّوجِ sont vocalisés différemment. La transcription ajoute des voyelles non visibles."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le mot « الجُمليّة » est écrit « الجُملِيَّةَ » alors que l'image montre « الحُمْلِيَّةَ » (lecture ambiguë, le sens attendu est الجُمليّة). À vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans la dernière question, « احسُبِ المَبلَغَ » : l'image indique « احسُبْ المَبْلَغَ » (voyelle différente)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'en-tête, le titre de la leçon (« الدرس 34 : أثر عمليات الجمع والطرح والضرب في مجموعة الأعداد العشرية ») et le numéro de page 65 sont absents de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro « 5 » de la SÉANCE/السنة en haut à gauche et les numéros de page sont omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« لِشِراءِ المَلابِسِ » : l'image montre « الْمَلابِس » ; « وَ175 د لِلأَحذِيَةِ » est correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

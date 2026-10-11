@@ -1,0 +1,114 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 9,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 2 : قيس الزّمن ، السنة ، الشّهر ، الأسبوع ، اليوم",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اِقرأْ وكَمِّلْ مَلْءَ الجَدْوَلِ :",
+      "body": "غرّة ماي هو يوم عيد الشّغل.\n- 19 يَوْمًا بعده سيذهب أمين في رحلة إلى جربة.\n- 5 أيّام قبله كانت ذكرى عيد ميلاده.",
+      "figureDesc": "جدول بأربعة أعمدة (اليوم، التّاريخ، الشّهر، المناسبة) وثلاثة أسطر: رحلة إلى جربة (فارغ)، عيد الشّغل (الخميس، 1، ماي)، عيد ميلاد أمين (فارغ).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p009_i1",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "إذا كانت غرّة مارس لسنة 1997 هو يوم السّبت.",
+      "body": "أ) حدّد تواريخ جميع أيّام السّبت لنفس الشّهر.\nب) ما اسم آخر يوم من شهر مارس لنفس السّنة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p009_i2",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اكتُبِ السّنواتِ الكبيسةَ الّتي أتتْ مباشرة قبل سنة 1996.",
+      "body": "",
+      "figureDesc": "جدول من ثماني خانات في سطر واحد: الخانتان الأوليان تحتويان 1996 و1992، والبقية فارغة.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p009_i3",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "إذا كان اليوم الأوّل من شهر أفريل هو الثّلاثاء فما هو اسم الأيّام المرتّبة في الجدول :",
+      "body": "الثّامن، العاشر، الخامس عشر، الثاني والعشرون، الخامس والعشرون، التاسع والعشرون",
+      "figureDesc": "جدول بستّ خانات في الأعلى: الثّامن، العاشر، الخامس عشر، الثاني والعشرون، الخامس والعشرون، التاسع والعشرون؛ الخانة تحت العاشر مملوءة بـ: الخميس، والبقية فارغة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p009_i4",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "ازداد الأطفال الآتية أسماؤهم في نفس السّنة وفي شهور مختلفة مبيّنة في الجدول التّالي :",
+      "body": "- رتّب أسماء الأطفال حسب سنّهم من الأصغر إلى الأكبر.",
+      "figureDesc": "جدول من سطرين: الشهور (جويلية، مارس، سبتمبر، ديسمبر، فيفري، جوان) والأطفال المقابلون (عماد، زينب، أحمد، خالد، فاطمة، نورهان).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p009_i5",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-p6",
+  "topicTitle": "Période 6 : Mesure du temps, capacités, masses et synthèse",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p6",
+    "confidence": 0.27
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la mesure du temps (année, année bissextile, mois, semaine, jour, calendrier), ce qui correspond à la Période 6 : Mesure du temps, capacités, masses et synthèse.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesure du temps et calendrier",
+    "skill": "Se repérer dans le calendrier (jours, semaines, mois, années bissextiles) et calculer des durées et des dates.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "calendrier",
+      "jours de la semaine",
+      "années bissextiles",
+      "dates",
+      "durées",
+      "ordre chronologique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations de repérage dans le calendrier réutilisables : retrouver les dates d'un même jour de la semaine dans un mois, deviner le jour à partir du 1er du mois, calculer une date avant ou après un événement (fête, voyage, anniversaire), identifier les années bissextiles et classer des enfants selon leur mois de naissance.",
+    "themeGroup": "Temps et calendrier"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

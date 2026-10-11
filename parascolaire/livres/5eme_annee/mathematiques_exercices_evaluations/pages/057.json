@@ -1,0 +1,133 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 57,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 31: أَتَدَرَّبُ عَلَى حَلِّ المَسَائِلِ (الوحدة 5 - حل مسائل في الحساب)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "إِبْحَثْ عَنْ بُعْدَيْ قِطْعَةِ القُمَاشِ. / إِبْحَثْ عَنْ قِيسِ مِسَاحَةِ المِنْدِيلِ الوَاحِدِ بِالدسم². / إِبْحَثْ عَنْ ثَمَنِ السَّفِيقَةِ لِلْمِنْدِيلِ الوَاحِدِ. / كَمْ رَبِحَتْ هَذِهِ الخَيَّاطَةُ فِي هَذَا المَشْرُوعِ؟",
+      "body": "المسألة عدد 1: شَرَتْ خَيَّاطَةٌ قِطْعَةً مِنَ القُمَاشِ بِـ 1500 مي مَجْمُوعُ بُعْدَيْ هَذِهِ القِطْعَةِ 250 صم، عَرْضُهَا عِقْدٌ مَحْصُورٌ بَيْنَ 45 و55. قَسَّمَتِ الخَيَّاطَةُ القُمَاشَ إِلَى 4 مَنَادِيلَ مُرَبَّعَةٍ مُتَسَاوِيَةٍ دُونَ أَنْ يَبْقَى مِنَ القُمَاشِ شَيْءٌ. – بَاعَتِ الخَيَّاطَةُ المِنْدِيلَ الوَاحِدَ بِـ 1400 مي بَعْدَ أَنْ أَحَاطَتْهُ بِسَفِيقَةٍ ثَمَنُ المِتْرِ الوَاحِدِ مِنْهَا 0,350 د.",
+      "figureDesc": "مساحة بنقاط متقطعة للإجابة على يسار الأسئلة",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_evaluations_p057_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حَدِّدْ سَاعَةَ وُصُولِهِ لِلحَقْلِ. / حَدِّدْ سَاعَةَ مُغَادَرَتِهِ لِلحَقْلِ. / مَا سَاعَةُ عَوْدَتِهِ إِلَى بَيْتِهِ؟",
+      "body": "المسألة عدد 2: غَادَرَ فَلَّاحٌ مَنْزِلَهُ عَلَى السَّاعَةِ الخَامِسَةِ وَالنِّصْفِ صَبَاحًا فَوَصَلَ ضَيْعَتَهُ بَعْدَ سَاعَةٍ وَ 40 دق. هُنَاكَ قَضَى 7 سَاعَاتٍ وَ 50 دق فِي العَمَلِ. أَثْنَاءَ عَوْدَتِهِ مَسَاءً، تَوَقَّفَ فِي السُّوقِ لِمُدَّةِ 40 دق.",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_evaluations_p057_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.73
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page « Unité 5 – résolution de problèmes en calcul » mêle une situation sur les durées (heures et minutes, problème 2) et un problème sur l'aire, le prix et le bénéfice avec des nombres décimaux (problème 1) ; la période 2 (décimaux, addition/soustraction et durées) est la plus proche, mais le problème 1 touche aussi la division et l'aire, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Résolution de problèmes à étapes",
+    "skill": "Résoudre des problèmes en plusieurs étapes impliquant aires, prix unitaire et durées.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme"
+    ],
+    "keywords": [
+      "problèmes",
+      "aire du carré",
+      "durées et heures",
+      "prix de revient",
+      "encadrement",
+      "bénéfice"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Deux situations de la vie quotidienne réutilisables : une couturière qui découpe un tissu en mouchoirs carrés à partir d'une somme de dimensions et d'un encadrement, et l'emploi du temps d'un agriculteur à reconstituer par calculs d'heures et de durées, chacune décomposée en questions guidées.",
+    "themeGroup": "Problèmes de synthèse et vie courante"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« شَرَتْ » : l'image porte « شرتْ » sans alif/ya correct ; la transcription ajoute des voyelles non visibles et l'original est « اشترت » (visible : شَرَتْ ?) – à vérifier ; mot « خَيَّاطَةٌ » ok"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« قِيسِ مِسَاحَةِ » : l'image indique « قَيْسِ مِسَاحَةِ » (voyelles fautives : قِيسِ au lieu de قَيْس)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« السَّفِيقَةِ » : l'image porte « السَّفِيفَةِ/السَّفِيقَة » ; vérifier, l'image lit « السَّفِيقَةِ » mais plus loin « بِسَفِيفَةٍ » dans le texte : la transcription écrit « بِسَفِيقَةٍ » à la place de « بِسَفِيفَةٍ »"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« ثَمَنُ المِتْرِ » : l'image a « ثَمَنُ المِتْرِ » ok ; mais « مي » = « مل » (millimes) à vérifier"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« إِبْحَثْ » ok ; « بِالدسم² » : l'image « بالدسم » avec exposant 2 placé après, ok"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« عِقْدٌ مَحْصُورٌ بَيْنَ 45 و55 » : l'image lit « 45 و 55 » ; dans l'image l'ordre est « بين 45 و55 » ok ; « عَرْضُهَا عِقْدٌ » correct"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les exercices sont listés en ordre inversé : questions placées avant l'énoncé, alors que l'énoncé précède les questions dans la page"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre de la leçon « الدرس 31 : أتدرب على حل المسائل » et numéro de page absents de la transcription"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أَحَاطَتْهُ » : l'image lit « أَحَاطَتْهَا »/« أَحَاطَتْهُ » ; peu lisible"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans l'exercice 2, « هُنَاكَ » ok mais lignes de réponse en pointillés non mentionnées"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

@@ -1,0 +1,150 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 39,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إنتاج كتابي: سرد حدث طارئ عطّل نشاطًا وذكر الأعمال المنجزة لتجاوزه (مواضيع متعلقة بشهر رمضان والسفر والسباحة والهواية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "كنتم تستعدون للقيام برحلة حين حدث ما عطلكم عن السفر",
+      "body": "كنتم تستعدون للقيام برحلة حين حدث ما عطلكم عن السفر",
+      "figureDesc": "نص في إطار مزدوج الخطوط، وهو بقية موضوع بدأ في الصفحة السابقة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p039_i1",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الموضوع عدد",
+      "body": "حل شهر رمضان فقمت بعمل إنساني بحثا عن الأجر والثواب",
+      "figureDesc": "موضوع داخل إطار مفصول بخطين أفقيين",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p039_i2",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الموضوع عدد",
+      "body": "حل شهر رمضان شهر الخير والبركة فاستعددتم لاستقباله أحسن استعداد لكن لفت انتباهك سلوكات غير حضارية صادرة عن بعض الأجوار\nتحدث عن ذلك واصفا جو رمضان والأعمال التي قمت بها",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p039_i3",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الموضوع عدد",
+      "body": "لم يرغب أخوك في صيام شهر رمضان فتقدمت منه ناصحا مبينا فضائل هذا الشهر وقيمته الدينية",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p039_i4",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الموضوع عدد",
+      "body": "قصدت البحر رفقة أفراد عائلتك للسباحة والترفيه عن النفس ، لكن حدث ما عكر صفوكم وأفسد عليكم هذه المتعة\nارو الحادثة واذكر الأعمال التي قمتم بها لتجاوز هذا الإشكال وكيف كانت النهاية",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p039_i5",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الموضوع عدد",
+      "body": "كنت تمارس هوايتك المفضلة صحبة أصدقائك، لكن حدث ما أفسد عليكم متعة هذا النشاط\nارو الواقعة واذكر ما قمتم به لمعالجة الحادث",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p039_i6",
+      "topicId": "ar-4-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u7",
+  "topicTitle": "Unité 7 : Structure du texte narratif et schéma narratif",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.3
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page propose des sujets de production écrite en arabe (récit d'un incident perturbant une activité, puis des actions menées pour le surmonter), ce qui correspond le mieux à la structure du schéma narratif (situation initiale, péripétie, dénouement) de l'unité 7, mais aucun chapitre ne porte explicitement sur la production écrite, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Récit d'un incident perturbateur",
+    "skill": "Rédiger un récit relatant un événement imprévu qui interrompt une activité, en précisant les actions menées pour le surmonter.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "récit",
+      "événement imprévu",
+      "Ramadan",
+      "voyage",
+      "baignade"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série de sujets de rédaction fondés sur une situation initiale (voyage, Ramadan, plage, loisir) rompue par un incident, suivie des actions de résolution et du dénouement ; le schéma est transposable à d'autres contextes du quotidien.",
+    "themeGroup": "Le récit et l'incident perturbateur"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La première ligne est dupliquée dans la transcription : « كنتم تستعدون للقيام برحلة حين حدث ما عطلكم عن السفر || كنتم تستعدون ... ». Le texte n'apparaît qu'une seule fois dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans la 3e consigne, l'image porte « انتباهك » et la transcription aussi, mais le contexte (pluriel « استعددتم ») suggère une incohérence d'origine. Rien à corriger, simple remarque."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le sujet 1 (« كنتم تستعدون للقيام برحلة... ») est dans l'image une ligne d'en-tête sans « الموضوع عدد ». La transcription le traite comme un bloc à part, ce qui est cohérent, mais la consigne de la suite (« ارو... ») n'existe pas dans l'image."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

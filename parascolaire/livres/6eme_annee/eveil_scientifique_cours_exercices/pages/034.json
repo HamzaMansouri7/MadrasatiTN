@@ -1,0 +1,150 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 34,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الحمّى التيفية (التيفوئيد) : مرض جرثومي يصيب الجهاز الهضمي، أعراضه وانتقاله والوقاية منه",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "السند : الحُمَّى التَّيفِيَّةُ (التيفوئيد) مرضٌ جِرْثُومِيٌّ يُصِيبُ الجِهَازَ الهَضْمِيَّ للصِّغَارِ والكِبَارِ",
+      "body": "السند : الحُمَّى التَّيفِيَّةُ (التيفوئيد) مرضٌ جِرْثُومِيٌّ يُصِيبُ الجِهَازَ الهَضْمِيَّ للصِّغَارِ والكِبَارِ ومن أعْرَاضِهِ : صُدَاعٌ في الرَّأْسِ ، ضَعْفٌ عَامٌّ في القُوَى ، ارْتِفَاعُ درجة حرارة الجسم قليلاً ، فقدان الشَّهِيَّةِ ، حالة الإمساك للبراز .\nتَنْتَقِلُ جَرَاثِيمُ المَرَضِ بِوَاسِطَةِ الذُّبَابِ أو تَنْتَقِلُ بِشُرْبِ المِيَاهِ المُلَوَّثَةِ أو تناول الطَّعَامِ المُلَوَّثِ.\nتَتِمُّ الوقاية من الحمَّى التَّيفِيَّةِ عن طريق التخلُّص السليم من البراز البشري ، تأمين مصدر مائيٍّ سليم ، وضع القمامة والفضلات في أكياس مغلقة ، مكافحة الذُّباب ، التقيّد بالنَّظافة التَّامة عند إعداد الطَّعام وتناوله ، الابتعاد عن المرضى المصابين وعدم استخدام أدواتهم الخاصَّة أمَّا معالجته فتتمُّ بإشراف الطَّبيب وإعطاء المريض المضادّات الحيوية.",
+      "figureDesc": "رسم ملوّن لطفل (شعر بنّي، قميص أصفر) يشرب مباشرة من قارورة ماء عليها علامة استفهام (؟)، داخل إطار أزرق، يوحي بشرب ماء مجهول المصدر/ملوّث.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p034_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 1 : اذْكُرْ اثنين من أعراض مرض التَّيفية .",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p034_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة 2 : ما العامل المسبب لمرض الحمَّى التيفية ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p034_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة 3 : كيف ينتقل مرض الحمَّى التَّيفيَّة إلى الإنسان السليم ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p034_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التعليمة 4 : كيف تتمُّ الوقاية من مرض الحمَّى التَّيفية ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p034_i5",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.24
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite de la fièvre typhoïde, une maladie microbienne (agent causal, symptômes, transmission par les mouches et l'eau contaminée, prévention), ce qui relève de l'unité sur les microbes et l'immunité, et non de l'arabe malgré la langue du texte.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La fièvre typhoïde",
+    "skill": "Prélever des informations d'un support documentaire pour identifier les symptômes, la cause, la transmission et la prévention d'une maladie microbienne.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "fièvre typhoïde",
+      "maladie microbienne",
+      "système digestif",
+      "symptômes",
+      "transmission",
+      "prévention"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un court support documentaire sur une maladie, suivi de quatre questions progressives (symptômes, cause, transmission, prévention), est un schéma réutilisable pour d'autres maladies liées à l'hygiène ou à l'eau, comme le choléra ou l'hépatite A.",
+    "themeGroup": "Santé, défense de l'organisme et maladies"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le premier bloc répète la phrase d'ouverture « السند : الحُمَّى ... والكِبَارِ » avant le texte complet (doublon avec ' || '). Il faut garder une seule occurrence."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« فقدان الشَّهِيَّةِ » : le texte de l'image montre « الشَّهِيَّةِ » avec voyelles, c'est correct. En revanche « ارْتِفَاعُ » : l'image montre « ارْتِفَاع » sans damma finale visible."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أعْرَاضِهِ » : voyelles correctes. Mais « حرارة الجسم » et « للبراز » sont sans voyelles, ce qui est cohérent avec l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« التعليمة 2 : ... الحمَّى التيفية » : l'image montre « التَّيفية » avec shadda sur le ت, absente dans la transcription."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أو تناول الطَّعَامِ المُلَوَّثِ » : l'image montre « الطَّعام الملوّث » avec peu de voyelles (tashkeel partiel). La transcription en ajoute plus que visible."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« تَتِمُّ الوقاية » : l'image montre « تَتِمُّ » avec voyelles, correct. « مائيٍّ » : l'image montre « مائيّ » avec kasra sur le ي, correct."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

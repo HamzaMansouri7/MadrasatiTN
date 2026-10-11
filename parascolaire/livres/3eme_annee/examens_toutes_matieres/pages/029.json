@@ -1,0 +1,95 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 29,
+  "grade": "3ème Année",
+  "subject": "رياضيات",
+  "topicGuess": "اختبار نهاية الثلاثي الأول، عدد 1 (رياضيات، السنة الثالثة): الأعداد إلى 9999 والجمع والطرح والمسائل (عيد الفطر). Remarque : la page est un examen de mathématiques, non de langue arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "السند 1 / التعليمة 1",
+      "instruction": "أَحْسُبُ ثَمَنَ عُلْبَةِ الْعَصِيرِ وَعُلْبَةِ الْبَسْكُوِيتِ.",
+      "body": "السَّنَدُ 1 : فِي الْيَوْمِ الْأَوَّلِ مِنْ عِيدِ الْفِطْرِ، اسْتَيْقَظَتِ الْعَائِلَةُ بَاكِرًا، فَكَلَّفَتِ الْأُمُّ ابْنَهَا فَوْزِي بِشِرَاءِ بَعْضِ الْحَاجِيَاتِ لِإِعْدَادِ فَطُورِ الصَّبَاحِ وَمَدَّتْهُ بِالْمَالِ. ذَهَبَ الطِّفْلُ إِلَى التَّاجِرِ وَاشْتَرَى عُلْبَةَ عَصِيرٍ كَبِيرَةً بِـ 1850 مي وَعُلْبَةً بِسْكُوِيتٍ بِـ 1375 مي.",
+      "figureDesc": "Trois lignes pointillées pour la réponse. Barème : 1 et 0,5 ; cases des critères مع1 و مع2أ.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p029_i1",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2 / التعليمة 2",
+      "instruction": "أَبْحَثُ عَنِ الْمَبْلَغِ الَّذِي تَسَلَّمَتْهُ تَسْنِيمُ مِنْ عِنْدِ أَبِيهَا.",
+      "body": "السَّنَدُ 2 : عَادَ الْأَبُ مِنْ صَلَاةِ الْعِيدِ، أَفْطَرَ ثُمَّ قَبَّلَ طِفْلَيْهِ وَأَعْطَى فَوْزِي 8500 مي وَأَعْطَى تَسْنِيمَ أَقَلَّ مِنْ فَوْزِي بِـ 750 مي.",
+      "figureDesc": "Trois lignes pointillées pour la réponse. Barème : 1 et 1 ; cases des critères مع1 و مع2ب.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p029_i2",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "السَّنَدُ 3 : اصْطَحَبَ فَوْزِي أُخْتَهُ وَذَهَبَا يَتَجَوَّلَانِ فِي الْمَدِينَةِ لِيُعَايِنَا الْبَضَائِعَ الْمَعْرُوضَةَ بِمُنَاسَبَةِ الْعِيدِ. أُعْجِبَ فَوْزِي بِاللُّعَبِ التَّالِيَةِ وَأَرَادَ أَنْ يَشْتَرِيَ مُعْظَمَهَا.\nقِطَارٌ : 6750 مي ؛ نَايٌ : 1500 مي ؛ سَيَّارَةٌ : 5850 مي",
+      "figureDesc": "Tableau à 3 colonnes : قطار 6750 مي، ناي 1500 مي، سيارة 5850 مي. Les questions associées se trouvent probablement à la page suivante.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p029_i3",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-3-p2",
+  "topicTitle": "Période 2 : Addition et soustraction jusqu'à 9999 et perpendicularité",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p1",
+    "confidence": 0.14
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Cette page est un test de fin de premier trimestre (mathématiques) dont les consignes portent sur l'addition et la soustraction de nombres à 4 chiffres dans des problèmes sur l'Aïd, ce qui correspond surtout à la Période 2, mais elle peut aussi couvrir la Période 1 (lecture de nombres), donc le rattachement reste incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 9999 et problèmes",
+    "skill": "Résoudre des problèmes d'addition et de soustraction avec des nombres jusqu'à 9999, dans un contexte de monnaie (millimes).",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "nombres jusqu'à 9999",
+      "addition",
+      "soustraction",
+      "problèmes",
+      "monnaie",
+      "Aïd el-Fitr"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation-support unique, celle d'un enfant qui fait des achats et reçoit de l'argent à l'Aïd, sert à enchaîner des consignes de calcul de prix, de recherche d'une somme (comparaison « de moins que ») et de choix d'articles, ce qui est réutilisable pour d'autres contextes festifs ou de vie quotidienne.",
+    "themeGroup": "Numération jusqu'à 9999"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

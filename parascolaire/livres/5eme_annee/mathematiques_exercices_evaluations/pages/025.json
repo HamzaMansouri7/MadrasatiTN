@@ -1,0 +1,345 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 25,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مسائل حسابية (الرياضيات): القسمة والمقارنة، ثمن الشراء والربح، أبعاد ومساحة مستطيل (ملاحظة: الصفحة في الواقع تتعلق بالرياضيات وليس باللغة العربية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": null,
+      "instruction": "كَمْ دَفَعَ كُلُّ حَرِيفٍ؟",
+      "body": "- لِجَوْدَةِ الإِنْتَاجِ اِقْتَسَمَ ثَمَانِيَةُ مُشْتَرِينَ بَاقِي الْمَشْرُوعِ وَدَفَعُوا مُقَابِلَ ذَلِكَ نَفْسَ ثَمَنِ الكِيلُوغْرَامِ الوَاحِدِ.",
+      "figureDesc": "سطر منقّط لكتابة الإجابة",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p025_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَاهُوَ عَدَدُ الخِرْفَانِ؟",
+      "body": "بَاعَ مُرَبِّي أَغْنَامٍ عَدَدًا مِنَ الخِرْفَانِ السِّمَانِ بِـ 345 د الخَرُوفِ الوَاحِدِ فَقَبَضَ 12075 د. أَنْفَقَ المُرَبِّي عَلَى هَذِهِ الخِرْفَانِ 2450 د وَرَبِحَ عَنْ كُلِّ رَأْسٍ مِنْهَا 45 د.",
+      "figureDesc": "أسطر منقّطة لكتابة الحل",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p025_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اِبْحَثْ بِطَرِيقَتَيْنِ عَنْ ثَمَنِ شِرَاءِ الخَرُوفِ الوَاحِدِ.",
+      "body": "- طريقة 1 : ........\n- طريقة 2 : ........",
+      "figureDesc": "أسطر منقّطة لكتابة الطريقتين",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p025_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اِحْسُبْ بُعْدَيْ هَذِهِ الحَدِيقَةِ إِذَا عَلِمْتَ أَنَّ الطُّولَ يَزِيدُ عَنِ العَرْضِ بِـ 60 م.",
+      "body": "حَدِيقَةُ العَمِّ طَاهِرٍ مُسْتَطِيلَةٌ مُسَيَّجَةٌ بِأَسْلَاكٍ شَائِكَةٍ، بَلَغَتْ كُلْفَةُ السِّيَاجِ 585 000 مي بِحِسَابِ 975 مي المِتْرِ الطُّولِيِّ الوَاحِدِ.",
+      "figureDesc": "سطر منقّط لكتابة الإجابة",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p025_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اِحْسُبْ قِيسَ مِسَاحَةِ هَذِهِ الحَدِيقَةِ.",
+      "body": "",
+      "figureDesc": "سطر منقّط لكتابة الإجابة",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p025_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "فَمَاهُوَ قِيسُ المِسَاحَةِ الَّتِي تَحْتَلُّهَا كُلُّ شَجَرَةٍ ؟",
+      "body": "- غَرَسَ طَاهِرٌ بِحَدِيقَتِهِ 400 شَجَرَةً.",
+      "figureDesc": "سطران منقّطان لكتابة الإجابة",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p025_i6"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p6",
+    "confidence": 0.16
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page contient des problèmes de division (12075 ÷ 345, 585000 ÷ 975), de prix d'achat et de bénéfice, ainsi que le périmètre et l'aire d'un rectangle, ce qui correspond le mieux à la Période 4 (division à 2 chiffres), mais elle pourrait aussi relever d'une synthèse de problèmes.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes de prix, bénéfice et rectangle",
+    "skill": "Résoudre des problèmes à étapes combinant division, prix d'achat et bénéfice, périmètre et aire d'un rectangle.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "prix d'achat",
+      "bénéfice",
+      "division",
+      "périmètre",
+      "aire du rectangle",
+      "problème à étapes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des contextes de la vie tunisienne (éleveur de moutons, jardin clôturé avec coût au mètre, arbres plantés) servent à enchaîner des questions, avec une consigne qui demande deux méthodes pour un même résultat et une sous-question qui fait trouver l'aire occupée par chaque arbre.",
+    "themeGroup": "Problèmes d'achat, vente et bénéfice"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "«الْمَشْرُوعِ» transcrit à la place de «الْمَنْتُوجِ» (باقي المنتوج) dans la phrase sur la qualité de la production"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«نَفْسَ» : l'image montre «تِفْسَ/نفس» ; la graphie «الكِيلُوغْرَامِ» devrait être «الكِيلُوغْرَامِ» avec غْرَامِ, mais le tashkeel de «الكيلو» est un peu différent"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "«السِّيَاجِ» transcrit à la place de «السِّبَاجِ/السياج» : l'image montre «السِّيَاجِ» – à vérifier ; en revanche «كُلْفَةُ» est correct"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«بِحِسَابِ» : l'image montre «بِحِسَابِ» avec des points de suspension, OK ; mais «مي» pour «م» est à vérifier (975 مي)"
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Les questions et énoncés sont inversés : «كَمْ دَفَعَ كُلُّ حَرِيفٍ؟» doit venir après l'énoncé «لِجَوْدَةِ الإِنْتَاجِ…» ; idem pour les exercices 4, 5 (énoncé avant question) et pour la dernière question (énoncé «غَرَسَ طَاهِرٌ…» avant «فَمَاهُوَ…»)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«شَجَرَةٍ» : l'image montre «400 شَجَرَةً» (accusatif/tanwin fatha), pas «شَجَرَةٍ»"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros d'exercices ④ et ⑤ et le numéro de page 26 ne sont pas retranscrits correctement ; l'étiquette [3 (تتمة)] est inventée (l'image montre un cercle avec 5 ou 3 en haut)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الخِرْفَانِ» : l'image porte «الخِرْفَانِ» ; «الخَرُوفِ» est transcrit alors que l'image montre «الخَرُوفِ»/«الْخَرُوف» – OK ; mais «أَنْفَقَ» est correct. «نَفْسَ ثَمَنِ» ok"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de pointillés pour les réponses ne sont pas indiquées, sauf pour طريقة 1/2"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "tashkeel/grammaire",
+        "severity": "minor",
+        "detail": "Dernière phrase : l'image montre «400 شَجَرَةً» (tanwin fatha), alors que la transcription donne «400 شَجَرَةٍ»."
+      },
+      {
+        "type": "texte inventé",
+        "severity": "minor",
+        "detail": "Le numéro «3 (تتمة)» du premier item n'est pas lisible dans l'image. Seul un cercle avec un chiffre peu net apparaît en haut de page. Le champ number est donc mis à null."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": null,
+      "instruction": "كَمْ دَفَعَ كُلُّ حَرِيفٍ؟",
+      "body": "- لِجَوْدَةِ الإِنْتَاجِ اِقْتَسَمَ ثَمَانِيَةُ مُشْتَرِينَ بَاقِي الْمَشْرُوعِ وَدَفَعُوا مُقَابِلَ ذَلِكَ نَفْسَ ثَمَنِ الكِيلُوغْرَامِ الوَاحِدِ.",
+      "figureDesc": "سطر منقّط لكتابة الإجابة",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p025_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَاهُوَ عَدَدُ الخِرْفَانِ؟",
+      "body": "بَاعَ مُرَبِّي أَغْنَامٍ عَدَدًا مِنَ الخِرْفَانِ السِّمَانِ بِـ 345 د الخَرُوفِ الوَاحِدِ فَقَبَضَ 12075 د. أَنْفَقَ المُرَبِّي عَلَى هَذِهِ الخِرْفَانِ 2450 د وَرَبِحَ عَنْ كُلِّ رَأْسٍ مِنْهَا 45 د.",
+      "figureDesc": "أسطر منقّطة لكتابة الحل",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p025_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اِبْحَثْ بِطَرِيقَتَيْنِ عَنْ ثَمَنِ شِرَاءِ الخَرُوفِ الوَاحِدِ.",
+      "body": "- طريقة 1 : ........\n- طريقة 2 : ........",
+      "figureDesc": "أسطر منقّطة لكتابة الطريقتين",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p025_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اِحْسُبْ بُعْدَيْ هَذِهِ الحَدِيقَةِ إِذَا عَلِمْتَ أَنَّ الطُّولَ يَزِيدُ عَنِ العَرْضِ بِـ 60 م.",
+      "body": "حَدِيقَةُ العَمِّ طَاهِرٍ مُسْتَطِيلَةٌ مُسَيَّجَةٌ بِأَسْلَاكٍ شَائِكَةٍ، بَلَغَتْ كُلْفَةُ السِّيَاجِ 585 000 مي بِحِسَابِ 975 مي المِتْرِ الطُّولِيِّ الوَاحِدِ.",
+      "figureDesc": "سطر منقّط لكتابة الإجابة",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p025_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اِحْسُبْ قِيسَ مِسَاحَةِ هَذِهِ الحَدِيقَةِ.",
+      "body": "",
+      "figureDesc": "سطر منقّط لكتابة الإجابة",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p025_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "فَمَاهُوَ قِيسُ المِسَاحَةِ الَّتِي تَحْتَلُّهَا كُلُّ شَجَرَةٍ ؟",
+      "body": "- غَرَسَ طَاهِرٌ بِحَدِيقَتِهِ 400 شَجَرَةً.",
+      "figureDesc": "سطران منقّطان لكتابة الإجابة",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p025_i6"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "3 (تتمة)",
+      "instruction": "كَمْ دَفَعَ كُلُّ حَرِيفٍ؟",
+      "body": "- لِجَوْدَةِ الإِنْتَاجِ اِقْتَسَمَ ثَمَانِيَةُ مُشْتَرِينَ بَاقِي الْمَشْرُوعِ وَدَفَعُوا مُقَابِلَ ذَلِكَ نَفْسَ ثَمَنِ الكِيلُوغْرَامِ الوَاحِدِ.",
+      "figureDesc": "سطر منقّط لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "al_ahram_5eme_complet_p025_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَاهُوَ عَدَدُ الخِرْفَانِ؟",
+      "body": "بَاعَ مُرَبِّي أَغْنَامٍ عَدَدًا مِنَ الخِرْفَانِ السِّمَانِ بِـ 345 د الخَرُوفِ الوَاحِدِ فَقَبَضَ 12075 د. أَنْفَقَ المُرَبِّي عَلَى هَذِهِ الخِرْفَانِ 2450 د وَرَبِحَ عَنْ كُلِّ رَأْسٍ مِنْهَا 45 د.",
+      "figureDesc": "أسطر منقّطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p025_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اِبْحَثْ بِطَرِيقَتَيْنِ عَنْ ثَمَنِ شِرَاءِ الخَرُوفِ الوَاحِدِ.",
+      "body": "- طريقة 1 : ........\n- طريقة 2 : ........",
+      "figureDesc": "أسطر منقّطة لكتابة الطريقتين",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p025_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اِحْسُبْ بُعْدَيْ هَذِهِ الحَدِيقَةِ إِذَا عَلِمْتَ أَنَّ الطُّولَ يَزِيدُ عَنِ العَرْضِ بِـ 60 م.",
+      "body": "حَدِيقَةُ العَمِّ طَاهِرٍ مُسْتَطِيلَةٌ مُسَيَّجَةٌ بِأَسْلَاكٍ شَائِكَةٍ، بَلَغَتْ كُلْفَةُ السِّيَاجِ 585 000 مي بِحِسَابِ 975 مي المِتْرِ الطُّولِيِّ الوَاحِدِ.",
+      "figureDesc": "سطر منقّط لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "al_ahram_5eme_complet_p025_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اِحْسُبْ قِيسَ مِسَاحَةِ هَذِهِ الحَدِيقَةِ.",
+      "body": "",
+      "figureDesc": "سطر منقّط لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p025_i5",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "فَمَاهُوَ قِيسُ المِسَاحَةِ الَّتِي تَحْتَلُّهَا كُلُّ شَجَرَةٍ ؟",
+      "body": "- غَرَسَ طَاهِرٌ بِحَدِيقَتِهِ 400 شَجَرَةٍ.",
+      "figureDesc": "سطران منقّطان لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p025_i6",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

@@ -1,0 +1,136 @@
+{
+  "book": "epreuve_modele_mathematiques_corrigee",
+  "page": 6,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Problème intégré : aire d'un triangle et d'un trapèze rectangle, pourcentages, proportionnalité (production d'huile d'olive et revenu net)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "المسألة رقم 3 (8 نقاط) - 1",
+      "instruction": "أثبت حسابيًا أنّ طول [ ب ج ] = 195,5 م.",
+      "body": "يملك فلاّح أرضا مُمثّلة بالرّسم المُصاحب قيس مساحتها الجملية 5,12 هكتار.\n▪ طول [ أ ع ] = 192 م.\n▪ طول [ هـ د ] = 124,5 م.\n▪ مساحة المثلّث أ هـ ب = 3/5 مساحة شبه المنحرف ب هـ د ج.",
+      "figureDesc": "Figure composée d'un triangle a h b (sommet a en haut, hauteur pointillée [a e] = 192 m, perpendiculaire en e à [h b]) posé sur un trapèze rectangle h b j d (côté [h d] = 124,5 m vertical à gauche, [b j] vertical à droite plus long, base inférieure [d j] oblique).",
+      "answer": "مساحة المثلّث: (3×51200)/8 = 19200 م². طول [ ب هـ ]: (2×19200)/192 = 200 م. مساحة شبه المنحرف: (5×51200)/8 = 32000 م²، أو: 51200 − 19200 = 32000 م². طول القاعدتين: (2×32000)/200 = 320 م. طول [ ب ج ]: 320 − 124,5 = 195,5 م.",
+      "confidence": 0.85,
+      "id": "epreuve_modele_mathematiques_corrigee_p006_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسب كمّيّة الزّيت المُتحصّل عليها إذا علمت أنّ 1 كغ من حبّ الزّيتون عند عصره يعطي 8 % من كتلته زيتا.",
+      "body": "غرس الفلّاح كامل مساحة الأرض المثلّثة و 40 % من مساحة الأرض شبه المنحرف أشجار زيتون فأحتلّت الشّجرة الواحدة مساحة 12,5 م² و أنتجت معدّل نصف قنطار من حبّ الزّيتون.",
+      "figureDesc": "",
+      "answer": "قيس المساحة المغروسة: 19200 + (32000 × 40 %) = 32000 م². عدد الأشجار المغروسة: 32000 : 12,5 = 2560 شجرة. الإنتاج الجملي من حبّ الزّيتون: 2560 × 0,5 = 1280 ق = 128000 كغ. كمّية الزّيت المتحصّل عليها: 128000 × 8 % = 10240 ل.",
+      "confidence": 0.85,
+      "id": "epreuve_modele_mathematiques_corrigee_p006_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "احسب الدّخل الصّافي للفلّاح.",
+      "body": "يبيع الفلّاح اللّتر الواحد زيتا بحساب 15 د و تمثّل مصاريف العصر و الجني 3/16 ثمن البيع الجملي.",
+      "figureDesc": "",
+      "answer": "الدّخل الجملي للفلّاح: ثمن بيع الزّيت: 10240 × 15 = 153600 د. الدّخل الصّافي للفلّاح: (13×153600)/16 = 124800 د.",
+      "confidence": 0.88,
+      "id": "epreuve_modele_mathematiques_corrigee_p006_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "math-6-p3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p3",
+    "confidence": 0.43
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit d'un problème intégré à plusieurs étapes (aires du triangle et du trapèze, pourcentages, proportionnalité, revenu net) de type concours d'entrée aux collèges pilotes, ce qui correspond à la synthèse et résolution de situations-problèmes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problème intégré : aires et pourcentages",
+    "skill": "Résoudre un problème en plusieurs étapes combinant aires de figures planes, pourcentages, proportionnalité et calcul d'un revenu net.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "aire du triangle",
+      "aire du trapèze rectangle",
+      "pourcentage",
+      "proportionnalité",
+      "huile d'olive",
+      "revenu net"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation authentique d'un agriculteur tunisien dont le terrain est composé d'un triangle et d'un trapèze rectangle, avec une chaîne de questions (longueur manquante, production d'huile selon un rendement, revenu net après déduction de frais en fraction) réutilisable pour d'autres cultures ou productions.",
+    "themeGroup": "Pourcentages et proportionnalité"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Mesure de la surface totale : « 5,12 هكتار » dans l'image, mais les calculs utilisent 51200 m² (5,12 ha). Si la transcription reprend bien « 5,12 », elle est fidèle à l'image ; point à vérifier, rien à corriger."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "« (5×51200)/8 = 32000 » : correct dans l'image, mais l'image n'a pas de « 8 » pour le dénominateur de cette ligne. La ligne est « 5×51200 » sur 8, donc conforme. Aucun écart réel."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« طول [ أ ع ] » : l'image montre bien « [ أ ع ] » ; conforme. « أ هـ ب » et « ب هـ د ج » sont conformes à l'image."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La question 1 est placée avant l'énoncé « يملك فلاّح… » dans la transcription ; dans l'image, l'énoncé, la figure et les données précèdent la question 1. Ordre à corriger."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La figure (sommets أ، هـ، ب، د، ج, hauteur 192 م, côté 124,5 م, angle droit) n'est pas décrite ; acceptable pour de l'OCR."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel parfois différent de l'image : « فلاّح » est écrit « فلّاح » à certains endroits, et « المُصاحب » est absent dans la transcription (l'image a « المُصاحب » avec damma)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أحتلّت » : l'image a « فأحتلّت » ; la transcription l'a aussi. Conforme."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "« (13×153600)/16 = 124800 » : l'image indique 124800 ; cohérent. Le calcul de la superficie plantée « 19200 + (32000 × 40 %) = 32000 » est identique à l'image."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Épreuve modèle 6ème année — Mathématiques (corrigée)"
+}

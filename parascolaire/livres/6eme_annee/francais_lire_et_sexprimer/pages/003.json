@@ -1,0 +1,102 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 3,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Introduction - Lire et s'exprimer",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "Introduction\n\n« Lire et s'exprimer » a pour objectif de corriger la lecture et la compréhension des apprenants de ce niveau.\n\nIl s'adresse à tous les élèves qui souhaitent améliorer leur niveau à l'écrit en compréhension comme en production afin de les préparer au concours d'entrée aux collèges pilotes.\n\nC'est aussi un manuel qui vient conforter ce qui est fait en classe et une aide pour nos chers collègues pour mieux accomplir leur noble mission.\n\nJe tiens à remercier toute personne qui nous a aidé à élaborer ce modeste travail.\n\nMerci à tous du fond du cœur\nL'auteur",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p003_i1",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "easy",
+      "confidence": 0.99
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.52
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une introduction générale du manuel « Lire et s'exprimer » (amélioration de la lecture et de l'écriture, préparation au concours des collèges pilotes) qui ne correspond à aucun module précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Lecture et expression écrite",
+    "skill": "Améliorer la lecture, la compréhension et la production écrite en français.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "expression écrite",
+      "production écrite",
+      "6ème année",
+      "remédiation"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Page d'introduction présentant les objectifs du manuel, sans exercice ni situation concrète ; seule la démarche de remédiation en lecture-compréhension et production peut inspirer une présentation de recueil.",
+    "themeGroup": "Production écrite et lettres"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : « Sagesse », « Lire et s'exprimer » et « 6ème année de base » (la transcription commence par un « [] » vide)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer » et « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte en filigrane (« Lire et s'exprimer 6ème année de base », « Nidhal Ayari ») est omis. Il est faiblement visible, donc peu grave."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "Introduction\n\n« Lire et s'exprimer » a pour objectif de corriger la lecture et la compréhension des apprenants de ce niveau.\n\nIl s'adresse à tous les élèves qui souhaitent améliorer leur niveau à l'écrit en compréhension comme en production afin de les préparer au concours d'entrée aux collèges pilotes.\n\nC'est aussi un manuel qui vient conforter ce qui est fait en classe et une aide pour nos chers collègues pour mieux accomplir leur noble mission.\n\nJe tiens à remercier toute personne qui nous a aidé à élaborer ce modeste travail.\n\nMerci à tous du fond du cœur\nL'auteur",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "sagesse_6eme_complet_p003_i1",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.99,
+    "reviewed": true
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

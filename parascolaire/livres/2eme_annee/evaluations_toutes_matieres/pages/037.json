@@ -1,0 +1,474 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 37,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقويم: حلّ وضعية مشكل بالنقود (المبالغ بالمليم، ترتيب الأعداد، الطرح) والخطوط (مستقيم، منحن، منكسر)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "اِشْتَرَتْ مَلَاكـ كَذَلِكَ قِطْعَةً مِنَ الْبَسْكُوِيتِ يَقِلُّ ثَمَنُهَا عَنْ ثَمَنِ الشُّكُلَاطَةِ بِـ 35 مي.",
+      "figureDesc": "في أعلى الصفحة، قبل السند 4، إطار مستدير الحواف على شكل كبسولة، في طرفه الأيمن قطعة نقدية من فئة 50 مي. على الهامش الأيسر قيم التنقيط (1، 0,5، 0,5، 1...) وعلى الهامش الأيمن مربعات المعايير (معـ3، معـ1، معـ2ب، معـ2ج...).",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p037_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَبْحَثُ عَنْ ثَمَنِ شِرَاءِ قِطْعَةِ الْبَسْكُوِيتِ.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p037_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَصَاعُدِيًّا :",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p037_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أُمَثِّلُ ثَمَنَ شِرَاءِ قِطْعَةِ الْبَسْكُوِيتِ بِأَرْبَعِ قِطَعٍ نَقْدِيَّةٍ.",
+      "body": "",
+      "figureDesc": "إطار مستطيل فارغ مستدير الزوايا لرسم القطع النقدية.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p037_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أَحْسُبُ الْمَبْلَغَ الَّذِي صَرَفَتْهُ مَلَاكـ فِي شِرَاءِ قِطْعَةِ الْبَسْكُوِيتِ وَقِطْعَةِ الشُّكُلَاطَةِ.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p037_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَنَازُلِيًّا.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p037_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "أَحْسُبُ الْمَبْلَغَ الْبَاقِيَ لِمَلَاكـ.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p037_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "لِتَغْلِيفِ رَفُّ مَكْتَبِهَا، اشْتَرَتْ مَلَاكـ وَرَقًا مُلَوَّنًا تُزَيِّنُهُ الْأَشْكَالُ الْهَنْدَسِيَّةُ التَّالِيَةُ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p037_i8"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "أُكْمِلُ كُلَّ شَكْلٍ وَأَجْعَلُهُ فِي صُورَةِ خَطٍّ مُغْلَقٍ وِفْقَ الطَّلَبِ :",
+      "body": "(بِخَطٍّ مُسْتَقِيمٍ / بِخَطٍّ مُنْحَنٍ / بِخَطٍّ مُنْكَسِرٍ). تحت الأشكال من اليمين إلى اليسار: خَطٌّ مُنْحَنٍ، خَطٌّ مُنْكَسِرٌ، خَطٌّ مُسْتَقِيمٌ.",
+      "figureDesc": "ثلاثة أشكال مفتوحة في ثلاث خانات: (يمين) شكل على هيئة حرف U مقلوب، له ضلعان عموديان وضلع علوي، وهو مفتوح من الأسفل، تحته «خَطٌّ مُنْحَنٍ»؛ (وسط) شكل من خطوط مستقيمة متعامدة يشبه إطارا مفتوحا في الأعلى من الجهة اليمنى، تحته «خَطٌّ مُنْكَسِرٌ»؛ (يسار) شكل على هيئة رأس مثلث (خطان مائلان) مفتوح من الأسفل، تحته «خَطٌّ مُسْتَقِيمٌ». في الهامش الأيمن ثلاث خانات للمعيار «معـ4» وفي اليسار قيم التنقيط 0,5 و0,5 و0,5.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p037_i9"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-2-p3",
+  "topicTitle": "Période 3 : Nombres jusqu'à 500, soustraction et monnaie (Millimes/Dinar)",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p1",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation de mathématiques sur un problème d'achats en millimes (prix, soustraction, reste, ordre des nombres), ce qui correspond à la Période 3 (soustraction et monnaie), même si le support 5 aborde aussi les lignes (droite, courbe, brisée).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie, problème et lignes",
+    "skill": "Résoudre un problème avec des montants en millimes (comparer, ordonner, additionner, soustraire) et distinguer les lignes droites, courbes et brisées pour fermer une figure.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "monnaie",
+      "millimes",
+      "soustraction",
+      "ordre des nombres",
+      "ligne brisée",
+      "ligne courbe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un fil conducteur d'achats (biscuit moins cher que le chocolat) découpé en étapes guidées : prix, ordre croissant/décroissant, représentation avec pièces, total, reste ; puis des figures à fermer avec le type de ligne imposé dans un contexte de décoration de papier.",
+    "themeGroup": "Géométrie : figures et lignes"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "البَسْكُوِيت : l'image montre « الْبَسْكُوِيتِ » avec la graphie « بسكويت » (ـكُوِيـ) ; la transcription est conforme, mais « يَقِلُّ » est faux : l'image porte « يَقِلُّ » avec fatha sur le ي (يَقِلُّ) — à vérifier, lecture correcte probable « يَقِلُّ »"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« تَزَيِّنُهُ » : l'image montre « تُزَيِّنُهُ » (damma sur التاء)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« مَلَاكٌ » : dans l'image c'est « مَلَاكٌ » avec tatwil (مَلَاكـ), sans tanwin visible ; « لِمَلَاكٍ » dans l'image est « لِمَلَاكـ » sans tanwin"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« وِفْقَ » : l'image montre « وِفْقَ » ; « الْأَشْكَالُ » correct"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le cadre du haut contenant la pièce de 50 millimes (fin du السند 3 / instruction précédente) n'est pas transcrit"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les barèmes (0,5 ; 1) et les cases « معـ1، معـ2ب، معـ2ج، معـ3، معـ2أ، معـ4 » dans les marges ne sont pas transcrits"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le cadre de réponse de la consigne 9 est indiqué vide mais l'encadré arrondi n'est pas décrit ; « خَطٌّ مُنْكَسِرٌ » : l'image porte « مُنْكَسِرٌ » ; les formes ne sont pas décrites"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« مَلَاكٌ » dans السند 4, la consigne 10 et السند 5 : l'image porte « مَلَاكـ » avec tatwil, sans tanwin. Le tanwin a été ajouté à tort."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Consigne 12 : « لِمَلَاكٍ » devrait être « لِمَلَاكـ » (tatwil, sans tanwin)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "السند 5 : « تَزَيِّنُهُ » doit être « تُزَيِّنُهُ » (damma sur le تاء)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "السند 5 : « رَفِّ مَكْتَبِهَا » est transcrit avec kasra et l'image montre « رَفُّ » (lecture à confirmer, mais la vocalisation de l'image est restituée)."
+      },
+      {
+        "type": "figureDesc",
+        "severity": "minor",
+        "detail": "Le cadre arrondi du haut avec la pièce de 50 millimes est placé avant « السند 4 » ; il n'est pas écrit que c'est le prix de la chocolatine. Cette interprétation est inventée. Les cases de barème et de critères des marges (معـ3، معـ1، معـ2ب، معـ2ج، معـ3، معـ2أ، معـ2ج، معـ2ب، معـ4) ne sont pas décrites avec précision."
+      },
+      {
+        "type": "figureDesc",
+        "severity": "minor",
+        "detail": "Consigne 9 : le cadre de réponse est un grand rectangle arrondi vide, ce qui est correct, mais il est placé avant la consigne 10 et ne porte pas de case de barème précise. Pour la consigne 13, les trois formes ne sont décrites que de façon approximative."
+      },
+      {
+        "type": "verification",
+        "severity": "minor",
+        "detail": "« يَقِلُّ » est correct dans l'image, donc le signalement du contrôle rapide n'est pas confirmé. « الْبَسْكُوِيتِ », « وِفْقَ », « الْأَشْكَالُ » et « مُنْكَسِرٌ » sont corrects."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "اِشْتَرَتْ مَلَاكـ كَذَلِكَ قِطْعَةً مِنَ الْبَسْكُوِيتِ يَقِلُّ ثَمَنُهَا عَنْ ثَمَنِ الشُّكُلَاطَةِ بِـ 35 مي.",
+      "figureDesc": "في أعلى الصفحة، قبل السند 4، إطار مستدير الحواف على شكل كبسولة، في طرفه الأيمن قطعة نقدية من فئة 50 مي. على الهامش الأيسر قيم التنقيط (1، 0,5، 0,5، 1...) وعلى الهامش الأيمن مربعات المعايير (معـ3، معـ1، معـ2ب، معـ2ج...).",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَبْحَثُ عَنْ ثَمَنِ شِرَاءِ قِطْعَةِ الْبَسْكُوِيتِ.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَصَاعُدِيًّا :",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أُمَثِّلُ ثَمَنَ شِرَاءِ قِطْعَةِ الْبَسْكُوِيتِ بِأَرْبَعِ قِطَعٍ نَقْدِيَّةٍ.",
+      "body": "",
+      "figureDesc": "إطار مستطيل فارغ مستدير الزوايا لرسم القطع النقدية.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أَحْسُبُ الْمَبْلَغَ الَّذِي صَرَفَتْهُ مَلَاكـ فِي شِرَاءِ قِطْعَةِ الْبَسْكُوِيتِ وَقِطْعَةِ الشُّكُلَاطَةِ.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَنَازُلِيًّا.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "أَحْسُبُ الْمَبْلَغَ الْبَاقِيَ لِمَلَاكـ.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "لِتَغْلِيفِ رَفُّ مَكْتَبِهَا، اشْتَرَتْ مَلَاكـ وَرَقًا مُلَوَّنًا تُزَيِّنُهُ الْأَشْكَالُ الْهَنْدَسِيَّةُ التَّالِيَةُ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i8"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "أُكْمِلُ كُلَّ شَكْلٍ وَأَجْعَلُهُ فِي صُورَةِ خَطٍّ مُغْلَقٍ وِفْقَ الطَّلَبِ :",
+      "body": "(بِخَطٍّ مُسْتَقِيمٍ / بِخَطٍّ مُنْحَنٍ / بِخَطٍّ مُنْكَسِرٍ). تحت الأشكال من اليمين إلى اليسار: خَطٌّ مُنْحَنٍ، خَطٌّ مُنْكَسِرٌ، خَطٌّ مُسْتَقِيمٌ.",
+      "figureDesc": "ثلاثة أشكال مفتوحة في ثلاث خانات: (يمين) شكل على هيئة حرف U مقلوب، له ضلعان عموديان وضلع علوي، وهو مفتوح من الأسفل، تحته «خَطٌّ مُنْحَنٍ»؛ (وسط) شكل من خطوط مستقيمة متعامدة يشبه إطارا مفتوحا في الأعلى من الجهة اليمنى، تحته «خَطٌّ مُنْكَسِرٌ»؛ (يسار) شكل على هيئة رأس مثلث (خطان مائلان) مفتوح من الأسفل، تحته «خَطٌّ مُسْتَقِيمٌ». في الهامش الأيمن ثلاث خانات للمعيار «معـ4» وفي اليسار قيم التنقيط 0,5 و0,5 و0,5.",
+      "answer": null,
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i9"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "اِشْتَرَتْ مَلَاكٌ كَذَلِكَ قِطْعَةً مِنَ الْبَسْكُوِيتِ يَقِلُّ ثَمَنُهَا عَنْ ثَمَنِ الشُّكُلَاطَةِ بِـ 35 مي.",
+      "figureDesc": "في أعلى الصفحة إطار مستدير الحواف بداخله قطعة نقدية من فئة 50 مي (ثمن الشكلاطة). على الهامش أعمدة للتنقيط (1، 0,5، 0,5، 1...) ومربعات للمعايير (مع 3، مع 1...).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i1",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَبْحَثُ عَنْ ثَمَنِ شِرَاءِ قِطْعَةِ الْبَسْكُوِيتِ.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i2",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَصَاعُدِيًّا :",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i3",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أُمَثِّلُ ثَمَنَ شِرَاءِ قِطْعَةِ الْبَسْكُوِيتِ بِأَرْبَعِ قِطَعٍ نَقْدِيَّةٍ.",
+      "body": "",
+      "figureDesc": "إطار مستطيل فارغ مستدير الزوايا لرسم القطع النقدية.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i4",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أَحْسُبُ الْمَبْلَغَ الَّذِي صَرَفَتْهُ مَلَاكٌ فِي شِرَاءِ قِطْعَةِ الْبَسْكُوِيتِ وَقِطْعَةِ الشُّكُلَاطَةِ.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i5",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَنَازُلِيًّا.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i6",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "أَحْسُبُ الْمَبْلَغَ الْبَاقِي لِمَلَاكٍ.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i7",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "لِتَغْلِيفِ رَفِّ مَكْتَبِهَا، اشْتَرَتْ مَلَاكٌ وَرَقًا مُلَوَّنًا تَزَيِّنُهُ الْأَشْكَالُ الْهَنْدَسِيَّةُ التَّالِيَةُ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i8",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "أُكْمِلُ كُلَّ شَكْلٍ وَأَجْعَلُهُ فِي صُورَةِ خَطٍّ مُغْلَقٍ وِفْقَ الطَّلَبِ :",
+      "body": "(بِخَطٍّ مُسْتَقِيمٍ / بِخَطٍّ مُنْحَنٍ / بِخَطٍّ مُنْكَسِرٍ). الأشكال مرتبة من اليمين: خَطٌّ مُنْحَنٍ، خَطٌّ مُنْكَسِرٌ، خَطٌّ مُسْتَقِيمٌ.",
+      "figureDesc": "ثلاثة أشكال مفتوحة تحتاج إلى إكمال: (يمين) شكل بثلاثة أضلاع مفتوح من الأسفل ليُكمَل بخط منحن؛ (وسط) شكل منكسر مفتوح من الجهة اليمنى ليُكمَل بخط منكسر؛ (يسار) شكل على هيئة رأس مثلث (خطان مائلان) ليُكمَل بخط مستقيم.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p037_i9",
+      "topicId": "math-2-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

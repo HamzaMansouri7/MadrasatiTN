@@ -1,0 +1,195 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 123,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Corrigés de compréhension de l'écrit – Thème de la santé (Visite à un ami alité, Les secrets d'une bonne alimentation, Rex a-t-il la rage ?, La petite malade, Pour garder une bonne santé 1 et 2)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "fin hygiène dentaire",
+      "instruction": "",
+      "body": "- Consulter le dentiste deux fois par an au moins.\n- Soigner les caries le plus vite possible.",
+      "figureDesc": "",
+      "answer": "- Consulter le dentiste deux fois par an au moins.\n- Soigner les caries le plus vite possible.",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p123_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Visite à un ami alité",
+      "instruction": "Corrigé : Visite à un ami alité",
+      "body": "1) a- Patrick est à l'hôpital parce qu'il souffre d'une forte angine. Non\nb- « Les deux amis continuent à bavarder. Michel en revient toujours à l'accident. »\n2) Patrick lit ses livres, et regarde la télé pour ne pas s'ennuyer.\n3) « Patrick, de son côté, ne parle que de leurs camarades de classe, de leurs travaux, de leur maître. Il veut les rejoindre le plus tôt possible. »\n4) Patrick demande à son ami de l'aider à marcher.\n5) Patrick s'appuie sur l'épaule de son ami pour faire le tour de la chambre.\n6) Patrick demande à Michel de lui apporter le cahier de devoirs le jeudi prochain.\n7) Bruno est malade. Le petit garçon tousse. Il pleure, il a de la fièvre. Son visage est pâle. Son front est brûlant. Ses joues sont rouges. Sa maman a très peur.\n« Sois sage. Je reviens tout de suite.\n- Où vas-tu ?\n- Téléphoner au médecin. Il faut que tu boives ta tisane. Et reste bien sous ta couverture. »\nLe docteur arrive après une demi-heure. Il l'examine et conclut qu'il s'agit d'une forte angine. Il lui prescrit quelques médicaments.",
+      "figureDesc": "",
+      "answer": "1a Non; 1b « Les deux amis continuent à bavarder… l'accident. »",
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p123_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Les secrets d'une bonne alimentation",
+      "instruction": "Corrigé : Les secrets d'une bonne alimentation",
+      "body": "1) À chaque repas, il faut : manger équilibré. Chaque journée doit comporter : 3 ou 4 repas. Les laitages nous apportent : du calcium. Il faut surtout prendre un bon : petit déjeuner.\n2) Tableau : Produits laitiers : Fromage/Yaourt, Lait ; Fruits : Pomme, pêche, banane ; Céréales : pain, corn flakes, muesli.\n3) * Il faut manger en quantité suffisante et raisonnable.\n* Dans chaque menu, tu dois prendre du pain, un produit laitier, un fruit ou un légume cru, et de l'eau à volonté.\n* Tu dois également manger une viande ou un poisson une fois par jour.\n* Les fruits et les légumes t'apporteront les vitamines et le calcium indispensables à ta croissance.\n4) - Du calcium : les produits laitiers.\n- Des protéines : la viande et le poisson.\n- Des sucres lents : le pain, les pâtes et les céréales.",
+      "figureDesc": "Tableau à 3 colonnes (catégorie, exemple 1, exemple 2) : produits laitiers, fruits, céréales",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p123_i3",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Rex a-t-il la rage ?",
+      "instruction": "Corrigé : Rex a-t-il la rage ?",
+      "body": "1) Le chien ne quitte pas sa niche. Il hurle, il gratte, il tousse. Il s'assoit comme suspendu, sans boire ni manger.\n2) a- En allant voir son chien, Stéphanie a commis une faute. Elle passe sa tête dans la niche de Rex.\nb- « Stéphanie s'agenouille puis passe la tête dans la niche de Rex. Elle sait que si Rex veut la mordre, elle n'aura pas le temps de ressortir. »\n3) Le chien a une singulière toux rauque. Alors la fillette croit que son chien a la rage.\n4) Libérer = Délivrer ; Chaîne = Collier\n5) Rex n'est pas enragé. Il hurle parce que son collier s'est accroché à un énorme clou qui dépasse les planches de la niche.\n6) Stéphanie enfonce le clou à coup de marteau et délivre le chien.\n7) Pascal est fiévreux. Sa maman téléphone au médecin. Une heure après, il est devant le malade. Il ouvre sa trousse et examine Pascal ; il lui annonce qu'il a la grippe. Il rédige une ordonnance. Les médicaments sont à prendre trois fois par jour et, dans une semaine, notre malade pourra retourner à l'école.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p123_i4",
+      "topicId": "fr-6-m6",
+      "formatGuess": "text_production",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "La petite malade",
+      "instruction": "Corrigé : La petite malade",
+      "body": "1) « Stéphanie a mal dormi ; elle est fiévreuse. Elle s'est réveillée plus tôt que d'habitude. La petite fille manquait d'appétit. »\n2) a- La mère a surveillé la petite malade toute la journée.\nb- « Elle ne quittait pas les yeux de sa mère qui était en train de tricoter. Elle surveillait ses moindres gestes… »\n3) a- L'état de la petite malade empire. Oui\nb- « Il constata que son front était brûlant et que ses mains étaient moites. » « Juste à ce moment, sa maman venait lui prendre la température car elle s'était rendu compte que l'état de sa fillette s'était aggravé avec le soir… « 39° de température, je vais prévenir le médecin de famille. » dit le père. »\n4) * Manquer d'appétit : ne pas avoir envie de manger. * Une angine : un mal de gorge.\n5) Le médecin examina la petite malade, tâta son pouls, regarda sa langue et sa gorge en lui recommandant de dire A…A…. sans s'arrêter.\n6) - La fille reste tranquille dans sa chambre. - Le malade souffre d'une forte angine. - La petite malade doit prendre le médicament pendant six jours. - La main de Stéphanie est brûlante.\n7) Les parents de Stéphanie sont affectueux, gentils et aimables.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p123_i5",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Pour garder une bonne santé (1)",
+      "instruction": "Corrigé : Pour garder une bonne santé (1)",
+      "body": "1) a- Les enfants de la ville ont besoin de passer des journées loin de l'air pollué. Oui\nb- « Pour les enfants des villes, il a fallu créer des colonies de vacances, des classes de mer, des classes de campagne ou classes vertes, des classes de neige. Ils peuvent donc aller respirer l'air pur. »\n2) On doit boire de l'eau pure pour conserver une bonne santé.\n3) - La fermière a beaucoup travaillé. Elle est lasse. - Le malade est triste.\n4) Une personne se fâche pour des riens lorsque elle est trop fatiguée.\n5) « Si une personne est lasse, elle se fâche pour des riens ; elle ne peut pas rassembler vite ses idées ; elle risque de prendre froid. Il faut donc se reposer. »\n6) - Pour avoir une bonne santé, il nous faut beaucoup d'air pur à respirer, beaucoup d'eau pure à boire et des aliments bien choisis.\n- Un corps fatigué doit se reposer pour mieux se réparer.\n7) Tableau « Je le fais / Je ne le fais pas » : Je le fais : Faire du sport régulièrement ; Se laver le corps, les dents, les cheveux et les mains pour être propre ; Manger les légumes et les fruits sans les laver ; Se coucher tôt et bien dormir pour être attentif et reposé ; Se brosser les dents après chaque repas. Je ne le fais pas : Manger les légumes et les fruits sans les laver ; S'endormir avec un bonbon dans la bouche.",
+      "figureDesc": "Tableau à deux colonnes : Je le fais / Je ne le fais pas",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p123_i6",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Pour garder une bonne santé (2)",
+      "instruction": "Corrigé : Pour garder une bonne santé (2)",
+      "body": "1) a- La première raison : Ils doivent se reposer pour mieux se réparer. - La deuxième raison : Ils doivent bien dormir pour bien grandir.\nb- «Les enfants ont besoin de plus de repos que les grandes personnes. En effet, leurs corps doivent non seulement se réparer, mais aussi grandir. »\n2) Pour être propre, il faut : - Se brosser les dents après chaque repas et surtout avant de dormir. - Prendre un bain ou une douche par jour.\n3) Le mécanicien regarde le moteur quand il vérifie la voiture.\n4) Le médecin et le dentiste peuvent vérifier le bon état de notre corps.\n5) - Des vêtements propres ≠ Des vêtements sales\n- Un corps en mauvais état ≠ Un corps en bon état\n- Une fille charmante ≠ Une fille laide",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p123_i7",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u5",
+    "confidence": 0.16
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page contient des corrigés de compréhension de l'écrit sur le thème de la santé (alimentation, hygiène, repos, maladie), ce qui correspond au Module 6 « Être en forme et mieux se porter ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    45,
+    46,
+    47,
+    48
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : la santé",
+    "skill": "Répondre à des questions de compréhension sur des textes portant sur la santé en relevant des informations et en justifiant par des citations du texte.",
+    "pageType": "correction",
+    "formats": [
+      "lecture_comprehension",
+      "schema_tableau",
+      "texte_a_trous",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "santé",
+      "alimentation équilibrée",
+      "hygiène dentaire",
+      "sommeil et repos",
+      "compréhension de texte",
+      "corrigé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les types de questions sont réutilisables : justifier par une citation, compléter des phrases à trous, classer des aliments dans un tableau, répondre Oui/Non, autour de situations du quotidien de l'enfant (visite à l'hôpital, animal malade, hygiène de vie).",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Libellés « Corrigé : … » ajoutés devant chaque titre : absents de l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« [fin hygiène dentaire] » et « réponse: … » dupliquent le contenu : ajoutés, absents de l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section « Pour garder une bonne santé (1) », question 4 : l'image porte « lorsqu'elle est trop fatiguée », la transcription « lorsque elle »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Pour garder une bonne santé (1) », question 7 : « Manger les légumes et les fruits sans les laver » est dans « Je le fais » dans la transcription, alors que le tableau le met aussi dans « Je ne le fais pas ». La colonne « Je le fais » de l'image contient bien cette ligne : c'est cohérent avec la source, mais la mise en forme est aplatie."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 3 de « La petite malade » : « avec le soir… » est repris tel quel ; la citation du père est mal délimitée, les guillemets sont mal placés."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Rex, question 4 : le tiret « - Libérer = Délivrer - Chaîne = Collier » est converti en point-virgule."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau de « Les secrets d'une bonne alimentation » question 2 perd sa structure Exemple 1 / Exemple 2 : « Fromage/Yaourt » et « Lait » sont juste listés."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Mises en gras et soulignements (angine, médicament, tranquille, brûlante, lasse, triste) non rendus ; « Non » et « Oui » encadrés non signalés."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

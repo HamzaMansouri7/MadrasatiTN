@@ -1,0 +1,116 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 45,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 11 : العدد 10 000 - الطرح (Le nombre 10 000 – La soustraction)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ما الفرق بين أصغر عدد ذي 5 أرقام وأكبر عدد زوجي ذي 4 أرقام؟",
+      "body": "ما الفرق بين أصغر عدد ذي 5 أرقام وأكبر عدد زوجي ذي 4 أرقام؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mathematiques_exercices_corriges_p045_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هو مقدار التَّخفيض؟",
+      "body": "بمناسبة العودة المدرسيّة ، علّق كتبيّ الإشهار التّالي : ما هو مقدار التَّخفيض؟",
+      "figureDesc": "إشهار داخل إطار: «المحفظة»، السعر القديم 10 د مشطوب، والسعر الجديد 8 500 مي.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p045_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هو المبلغ الذي كان يملكه سامي؟ ما هو المبلغ الذي كان يملكه مراد؟",
+      "body": "سامي ومراد يملكان معا مبلغ 10 دنانير، صرف سامي 3 000 مي وصرف مراد 5 000 مي فأصبح لكل منهما نفس المبلغ. - ما هو المبلغ الذي كان يملكه سامي؟ - ما هو المبلغ الذي كان يملكه مراد ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p045_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "- تثبَّتْ من العمليّات المُنجَزَة من طرف سلمى. - أصلحْ خطأها. - ابحث عن الباقي بطريقة أخرى.",
+      "body": "أجرت سلمى العمليّات التّالية :\nأعطت سلمى 10 000 مي\nثمن السَّمك - 3 500 مي = 6 500 مي\nثمن الزّيت - 1 800 مي = 5 700 مي\nثمن الغلال - 2 400 مي = 3 300 مي\nثمن علبة الحليب - 680 مي = 2 620 مي\nالباقي 2 620 مي",
+      "figureDesc": "جدول عمليات طرح متتالية في إطار، مع خطوط تحت كل عدد مطروح وعلامتي - و =.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p045_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "هل المبلغ الذي بقي عند أمين كاف لشراء قارورة غاز ثمنها 4 120 مي؟ لماذا؟",
+      "body": "توجّه أمين إلى التّاجر ومعه ورقة نقديّة من فئة 10 د فصرف ما يلي : 1 800 مي عند الخضار ، 4 550 مي عند الجزّار، 300 مي مقابل شراء الخبز. هل المبلغ الذي بقي عند أمين كاف لشراء قارورة غاز ثمنها 4 120 مي؟ لماذا؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p045_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.45
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur le nombre 10 000 et la soustraction de nombres à 4-5 chiffres avec problèmes de monnaie (dinars et millimes), ce qui correspond à la Période 1 : nombres à 5 chiffres et monnaie.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    119
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Soustraction avec nombres jusqu'à 10 000",
+    "skill": "Résoudre des problèmes de soustraction avec des nombres jusqu'à 10 000 et vérifier un calcul.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "soustraction",
+      "nombre 10 000",
+      "problèmes de monnaie",
+      "millimes",
+      "réduction",
+      "correction d'erreur"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations de la vie courante (courses avec un billet de 10 dinars, réduction de rentrée scolaire, dépenses égales de deux enfants), ainsi qu'un exercice de détection et de correction d'erreurs dans les calculs d'un élève, avec recherche du reste par une autre méthode.",
+    "themeGroup": "Addition et soustraction"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

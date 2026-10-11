@@ -1,0 +1,674 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 120,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigés : numération (nombres jusqu'à 100 000), achats et budget, itinéraires (géométrie), comparaison et multiplication, évaluation formative",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 45 - حساب)",
+      "body": "1 370 = [أ]\n70 300 = [ب]\n1 000 = [ج]\n70 000 = [د]",
+      "figureDesc": "Quatre cases contenant les lettres أ، ب، ج، د, placées après les nombres",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 45 - حساب)",
+      "body": "الأعمدة: العدد، عدد عشراته، عدد مئاته، عدد الآلاف، عدد عشرات الآلاف",
+      "figureDesc": "Tableau de 4 lignes et 5 colonnes",
+      "answer": "53 867 : 5 386، 538، 53، 5 ؛ 70 610 : 7 061، 706، 70، 7 ؛ 14 859 : 1 485، 148، 14، 1 ؛ 5 000 : 500، 50، 5، (case grisée)",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 45 - حساب)",
+      "body": "أ) ثمن المشتريات بالمي :\n12 500 + 8 900 + 2 100 + 16 500 = 40 000 = 40 د\nمقدار التّخفيض بالمي : 4 000 = 4 د\nب) لا يكفيه المبلغ لأنّه يملك 35 د وعليه أن يدفع :\n(40 د - 4 د) = 36 د\nج) المشتريات التي يمكن اقتناؤها ليصرف أكبر مبلغ ممكن : لعبة فكريّة + كتب مطالعة + آلة حاسبة",
+      "figureDesc": "",
+      "answer": "أ) 40 000 مي ؛ التخفيض 4 000 مي ؛ ب) لا يكفيه (36 د) ؛ ج) لعبة فكرية + كتب مطالعة + آلة حاسبة",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 46 - هندسة) أقرب مسلك :",
+      "body": "5 ↑ ، 2 ←",
+      "figureDesc": "Cadre avec flèches de déplacement : 5 vers le haut (à droite), 2 vers la gauche (à gauche)",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 46 - هندسة)",
+      "body": "المسلك (م) العدد : 8 927\nالمسلك (ب) العدد : 60 220\nالمسلك (ب) أقصر من المسلك (م)",
+      "figureDesc": "",
+      "answer": "المسلك (ب) أقصر من المسلك (م)",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 46 - هندسة)",
+      "body": "المسلك المرسوم باللون الأحمر متكافئ مع المسلك المرسوم باللون الأزرق لأنّ لهما نفس نقطة الانطلاق والوصول ولهما نفس عدد الخطوات.",
+      "figureDesc": "",
+      "answer": "متكافئان : نفس نقطة الانطلاق والوصول ونفس عدد الخطوات",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي)",
+      "body": "58 080 - 49 001",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي)",
+      "body": "30 421 - 95 308",
+      "figureDesc": "Deux nombres dans des cases",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي) عدد اللترات الباقية في البرميل :",
+      "body": "200 ل - (55 ل + 83 ل) = 62",
+      "figureDesc": "",
+      "answer": "62",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي)",
+      "body": "ثمن البطاطا بالمي: 420 × 3 = 1 260\nثمن اللحم بالمي : نصف 7 000 = 3 500\nثمن البرتقال بالمي : 600 + (600 : 2) = 900\nثمن البقدنوس بالمي : 125 × 4 = 500\nثمن المشتريات بالمي : 1 260 + 3 500 + 900 + 500 = 6 160\nبقي لأحمد بالمي : 10 000 - 6 160 = 3 840 مي\nنعم يستطيع شراء شريطي التّسجيل ويبقى له :\n(2 × 1 500) - 3 840 = 840 مي",
+      "figureDesc": "",
+      "answer": "البطاطا 1 260 ؛ اللحم 3 500 ؛ البرتقال 900 ؛ البقدنوس 500 ؛ المجموع 6 160 ؛ الباقي 3 840 ؛ نعم، ويبقى 840 مي",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 48 - حساب)",
+      "body": "أ) 33 475 ، 39 475 ، 34 758 ، 34 752\nب) 33 475 < 34 752 < 34 758 < 39 475",
+      "figureDesc": "Quatre nombres dans des cases (2 par rangée)",
+      "answer": "33 475 < 34 752 < 34 758 < 39 475",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 48 - حساب)",
+      "body": "7 × 4 ، 8 × 4",
+      "figureDesc": "Deux cases contenant des produits",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 48 - حساب)",
+      "body": "9 × 0 ، 8 × 1 ، 4 × 3 ، 5 × 4 ، 5 × 6 ، 4 × 9",
+      "figureDesc": "Tableau d'une ligne avec six produits",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 48 - حساب)",
+      "body": "ثمن شراء الصّحون بالمي: 1 250 × 5 = 6 250\nثمن الكؤوس بالمي : 800 × 4 = 3 200\nثمن الصّحون والكؤوس بالمي : 6 250 + 3 200 = 9 450\nثمن شراء المزهريّة بالمي : 15 000 - (9 450 + 150) = 5 400",
+      "figureDesc": "",
+      "answer": "6 250 ؛ 3 200 ؛ 9 450 ؛ 5 400",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p120_i14"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.36
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les nombres à 5 chiffres (décomposition, tableau des dizaines, centaines, milliers), la monnaie (achats, millimes et dinars, budget), les itinéraires et la soustraction de grands nombres, ce qui correspond à la Période 1 (nombres à 5 et 6 chiffres, droites et monnaie).",
+  "linkFlags": [
+    "low_ocr_confidence"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    49,
+    50,
+    51,
+    52
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Numération et problèmes de calcul",
+    "skill": "Résoudre des problèmes d'achats et de budget avec des nombres jusqu'à 100 000, et effectuer additions, soustractions et multiplications.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "numération",
+      "soustraction",
+      "budget et achats",
+      "itinéraires",
+      "multiplication",
+      "millimes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations d'achats en monnaie tunisienne (dinars et millimes) avec réduction et vérification du budget, parcours sur quadrillage avec flèches et comparaison de trajets équivalents, tableau de décomposition des nombres par rangs.",
+    "themeGroup": "Numération jusqu'à 9 999"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Page 45 ex.3 : '40 000 = 40 د' ; l'image montre '40 000 = 16 500 + 2 100 + 8 900 + 12 500' (la somme est inversée et le '40 د' n'est pas lié). Les termes de la somme sont dans l'ordre 12 500 + 8 900 + 2 100 + 16 500 de droite à gauche, mais l'image indique '40,' après '= 40 000' (ex. '40 000 = 40 د' est correct en lecture RTL). Le texte '= 16 500 + 2 100 + 8 900 + 12 500' est tronqué dans la transcription (somme visible mais l'égalité écrite autrement)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Page 45 ex.3 ب : '(40 د - 4 د) = 36 د' est correct, mais la transcription cite '35 د' : OK. Aucune erreur ici ; cependant la réponse 'لا يكفيه (36 د)' est correcte."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Page 45 ex.1 : les cases (أ، ب، ج، د) sont notées comme '...' ; elles sont vides dans l'image mais les lettres des cases (أ، ب، ج، د) ne sont pas transcrites."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Page 46 ex.1 : le cadre 'أقرب مسلك' contient '5 ↑' puis '2 ←' ; l'ordre RTL dans la transcription est '2 ←، 5 ↑' ce qui est inversé par rapport à l'image (5 ↑ à droite de 2 ←... en fait 2 ← à gauche, 5 ↑ à droite : cohérent)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les consignes 'أكمل بالعدد المناسب', 'أتمم الجدول', 'أحسب الفرق', 'رتب الأعداد', 'هل يكفيه المبلغ؟' n'existent pas dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Page 48 ex.1 : 'أ) 33 475 ، 34 758 ، 34 752 ، 39 475' : dans l'image ce sont 4 cases (33 475, 39 475, 34 752, 34 758) dans une disposition différente ; l'ordre est modifié."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel visible non rendu : 'الصُّحون' (page 48 ex.4 ثمن الصُّحون والكؤوس), 'التَّخفيض' ; 'المشتريات' etc. ; 'ثمن شراء المزهريّة' correct."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Page 48 ex.4 : l'image montre '15 000 - (150 + 9 450) = 5 400' ; la transcription inverse en '(9 450 + 150)'."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Page 48 ex.4 : l'image montre '3 200 + 6 250 = 9 450' ; la transcription inverse en '6 250 + 3 200'. Même chose pour '5 × 1 250' et '4 × 800' (transcrits 1 250 × 5 et 800 × 4)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Page 47 ex.4 : l'image montre '3 × 420', '4 × 125', '6 160 = 500 + 900 + 3 500 + 1 260' ; la transcription inverse l'ordre des termes. Aussi 'مي 840 = (2 × 1 500) - 3 840' correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Page 47 ex.2 : les nombres sont dans des cases (30 421 et 95 308), l'ordre RTL est 95 308 puis 30 421 avec le signe '-' ; l'ordre de la transcription est inversé."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Les consignes 'أكمل بالعدد المناسب' (p.45 ex.1), 'أتمم الجدول' (p.45 ex.2), 'هل يكفيه المبلغ؟' (p.45 ex.3), 'أحسب الفرق' (p.47 ex.1) et 'رتب الأعداد' (p.48 ex.1) n'apparaissent pas dans l'image. Seuls les en-têtes de page et les libellés réellement imprimés existent."
+      },
+      {
+        "type": "structure",
+        "severity": "major",
+        "detail": "P.45 ex.1 : l'image montre '1 370 = [أ]', '70 300 = [ب]', '1 000 = [ج]', '70 000 = [د]'. Les cases contiennent les lettres أ، ب، ج، د. La transcription les présente à tort comme 'أ) 1 370 = ...' avec des réponses manquantes."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "P.48 ex.1 أ : les quatre cases sont 33 475 et 39 475 sur la rangée du haut, puis 34 758 et 34 752 sur la rangée du bas. Lu de droite à gauche, l'ordre est 33 475 ، 39 475 ، 34 758 ، 34 752. La transcription donne 33 475 ، 34 758 ، 34 752 ، 39 475."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "P.47 ex.3 : l'image écrit '= 62' sans unité 'ل' après 62. La transcription ajoute 'ل'."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "P.46 ex.1 : le cadre contient '↑ 5' à droite et '← 2' à gauche. En ordre de lecture RTL, c'est '5 ↑ ، 2 ←', et non '2 ← ، 5 ↑'."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 45 - حساب)",
+      "body": "1 370 = [أ]\n70 300 = [ب]\n1 000 = [ج]\n70 000 = [د]",
+      "figureDesc": "Quatre cases contenant les lettres أ، ب، ج، د, placées après les nombres",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 45 - حساب)",
+      "body": "الأعمدة: العدد، عدد عشراته، عدد مئاته، عدد الآلاف، عدد عشرات الآلاف",
+      "figureDesc": "Tableau de 4 lignes et 5 colonnes",
+      "answer": "53 867 : 5 386، 538، 53، 5 ؛ 70 610 : 7 061، 706، 70، 7 ؛ 14 859 : 1 485، 148، 14، 1 ؛ 5 000 : 500، 50، 5، (case grisée)",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 45 - حساب)",
+      "body": "أ) ثمن المشتريات بالمي :\n12 500 + 8 900 + 2 100 + 16 500 = 40 000 = 40 د\nمقدار التّخفيض بالمي : 4 000 = 4 د\nب) لا يكفيه المبلغ لأنّه يملك 35 د وعليه أن يدفع :\n(40 د - 4 د) = 36 د\nج) المشتريات التي يمكن اقتناؤها ليصرف أكبر مبلغ ممكن : لعبة فكريّة + كتب مطالعة + آلة حاسبة",
+      "figureDesc": "",
+      "answer": "أ) 40 000 مي ؛ التخفيض 4 000 مي ؛ ب) لا يكفيه (36 د) ؛ ج) لعبة فكرية + كتب مطالعة + آلة حاسبة",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 46 - هندسة) أقرب مسلك :",
+      "body": "5 ↑ ، 2 ←",
+      "figureDesc": "Cadre avec flèches de déplacement : 5 vers le haut (à droite), 2 vers la gauche (à gauche)",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 46 - هندسة)",
+      "body": "المسلك (م) العدد : 8 927\nالمسلك (ب) العدد : 60 220\nالمسلك (ب) أقصر من المسلك (م)",
+      "figureDesc": "",
+      "answer": "المسلك (ب) أقصر من المسلك (م)",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 46 - هندسة)",
+      "body": "المسلك المرسوم باللون الأحمر متكافئ مع المسلك المرسوم باللون الأزرق لأنّ لهما نفس نقطة الانطلاق والوصول ولهما نفس عدد الخطوات.",
+      "figureDesc": "",
+      "answer": "متكافئان : نفس نقطة الانطلاق والوصول ونفس عدد الخطوات",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي)",
+      "body": "58 080 - 49 001",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي)",
+      "body": "30 421 - 95 308",
+      "figureDesc": "Deux nombres dans des cases",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي) عدد اللترات الباقية في البرميل :",
+      "body": "200 ل - (55 ل + 83 ل) = 62",
+      "figureDesc": "",
+      "answer": "62",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي)",
+      "body": "ثمن البطاطا بالمي: 420 × 3 = 1 260\nثمن اللحم بالمي : نصف 7 000 = 3 500\nثمن البرتقال بالمي : 600 + (600 : 2) = 900\nثمن البقدنوس بالمي : 125 × 4 = 500\nثمن المشتريات بالمي : 1 260 + 3 500 + 900 + 500 = 6 160\nبقي لأحمد بالمي : 10 000 - 6 160 = 3 840 مي\nنعم يستطيع شراء شريطي التّسجيل ويبقى له :\n(2 × 1 500) - 3 840 = 840 مي",
+      "figureDesc": "",
+      "answer": "البطاطا 1 260 ؛ اللحم 3 500 ؛ البرتقال 900 ؛ البقدنوس 500 ؛ المجموع 6 160 ؛ الباقي 3 840 ؛ نعم، ويبقى 840 مي",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 48 - حساب)",
+      "body": "أ) 33 475 ، 39 475 ، 34 758 ، 34 752\nب) 33 475 < 34 752 < 34 758 < 39 475",
+      "figureDesc": "Quatre nombres dans des cases (2 par rangée)",
+      "answer": "33 475 < 34 752 < 34 758 < 39 475",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 48 - حساب)",
+      "body": "7 × 4 ، 8 × 4",
+      "figureDesc": "Deux cases contenant des produits",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 48 - حساب)",
+      "body": "9 × 0 ، 8 × 1 ، 4 × 3 ، 5 × 4 ، 5 × 6 ، 4 × 9",
+      "figureDesc": "Tableau d'une ligne avec six produits",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 48 - حساب)",
+      "body": "ثمن شراء الصّحون بالمي: 1 250 × 5 = 6 250\nثمن الكؤوس بالمي : 800 × 4 = 3 200\nثمن الصّحون والكؤوس بالمي : 6 250 + 3 200 = 9 450\nثمن شراء المزهريّة بالمي : 15 000 - (9 450 + 150) = 5 400",
+      "figureDesc": "",
+      "answer": "6 250 ؛ 3 200 ؛ 9 450 ؛ 5 400",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p120_i14"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 45 - حساب) أكمل بالعدد المناسب",
+      "body": "أ) 1 370 = ... ب) 70 300 = ... ج) 1 000 = ... د) 70 000 = ...",
+      "figureDesc": "Quatre cases lettrées أ، ب، ج، د associées à des nombres",
+      "answer": "Les réponses (contenu des cases) ne sont pas lisibles de façon fiable",
+      "confidence": 0.5,
+      "id": "math_solutions_4eme_sellami_p120_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 45 - حساب) أتمم الجدول",
+      "body": "الأعمدة: العدد، عدد عشراته، عدد مئاته، عدد الآلاف، عدد عشرات الآلاف",
+      "figureDesc": "Tableau de 4 lignes et 5 colonnes",
+      "answer": "53 867 : 5 386، 538، 53، 5 ؛ 70 610 : 7 061، 706، 70، 7 ؛ 14 859 : 1 485، 148، 14، 1 ؛ 5 000 : 500، 50، 5، (case grisée)",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p120_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 45 - حساب) أ) ثمن المشتريات بالمي ب) هل يكفيه المبلغ؟ ج) المشتريات التي يمكن اقتناؤها ليصرف أكبر مبلغ ممكن",
+      "body": "أ) ثمن المشتريات بالمي :\n12 500 + 8 900 + 2 100 + 16 500 = 40 000 = 40 د\nمقدار التّخفيض بالمي : 4 000 = 4 د\nب) لا يكفيه المبلغ لأنّه يملك 35 د وعليه أن يدفع :\n(40 د - 4 د) = 36 د\nج) المشتريات التي يمكن اقتناؤها ليصرف أكبر مبلغ ممكن : لعبة فكريّة + كتب مطالعة + آلة حاسبة",
+      "figureDesc": "",
+      "answer": "أ) 40 000 مي ؛ التخفيض 4 000 مي ؛ ب) لا يكفيه (36 د) ؛ ج) لعبة فكرية + كتب مطالعة + آلة حاسبة",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p120_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 46 - هندسة) أقرب مسلك :",
+      "body": "2 ← ، 5 ↑",
+      "figureDesc": "Cadre avec flèches de déplacement : 5 vers le haut, 2 vers la gauche",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "math_solutions_4eme_sellami_p120_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 46 - هندسة)",
+      "body": "المسلك (م) العدد : 8 927\nالمسلك (ب) العدد : 60 220\nالمسلك (ب) أقصر من المسلك (م)",
+      "figureDesc": "",
+      "answer": "المسلك (ب) أقصر من المسلك (م)",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p120_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 46 - هندسة)",
+      "body": "المسلك المرسوم باللون الأحمر متكافئ مع المسلك المرسوم باللون الأزرق لأنّ لهما نفس نقطة الانطلاق والوصول ولهما نفس عدد الخطوات.",
+      "figureDesc": "",
+      "answer": "متكافئان : نفس نقطة الانطلاق والوصول ونفس عدد الخطوات",
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p120_i6",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي) أحسب الفرق",
+      "body": "58 080 - 49 001",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p120_i7",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي)",
+      "body": "30 421 - 95 308",
+      "figureDesc": "Deux nombres dans des cases",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p120_i8",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي) عدد اللترات الباقية في البرميل :",
+      "body": "200 ل - (55 ل + 83 ل) = 62 ل",
+      "figureDesc": "",
+      "answer": "62 ل",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p120_i9",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 47 - الاختبار التقويمي)",
+      "body": "ثمن البطاطا بالمي: 420 × 3 = 1 260\nثمن اللحم بالمي : نصف 7 000 = 3 500\nثمن البرتقال بالمي : 600 + (600 : 2) = 900\nثمن البقدنوس بالمي : 125 × 4 = 500\nثمن المشتريات بالمي : 1 260 + 3 500 + 900 + 500 = 6 160\nبقي لأحمد بالمي : 10 000 - 6 160 = 3 840 مي\nنعم يستطيع شراء شريطي التّسجيل ويبقى له :\n(2 × 1 500) - 3 840 = 840 مي",
+      "figureDesc": "",
+      "answer": "البطاطا 1 260 ؛ اللحم 3 500 ؛ البرتقال 900 ؛ البقدنوس 500 ؛ المجموع 6 160 ؛ الباقي 3 840 ؛ نعم، ويبقى 840 مي",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p120_i10",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "(الصفحة 48 - حساب) أ) ... ب) رتب الأعداد",
+      "body": "أ) 33 475 ، 34 758 ، 34 752 ، 39 475\nب) 33 475 < 34 752 < 34 758 < 39 475",
+      "figureDesc": "Quatre nombres dans des cases",
+      "answer": "33 475 < 34 752 < 34 758 < 39 475",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p120_i11",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "(الصفحة 48 - حساب)",
+      "body": "7 × 4 ، 8 × 4",
+      "figureDesc": "Deux cases contenant des produits",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p120_i12",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "(الصفحة 48 - حساب)",
+      "body": "9 × 0 ، 8 × 1 ، 4 × 3 ، 5 × 4 ، 5 × 6 ، 4 × 9",
+      "figureDesc": "Tableau d'une ligne avec six produits",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p120_i13",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "(الصفحة 48 - حساب)",
+      "body": "ثمن شراء الصّحون بالمي: 1 250 × 5 = 6 250\nثمن الكؤوس بالمي : 800 × 4 = 3 200\nثمن الصّحون والكؤوس بالمي : 6 250 + 3 200 = 9 450\nثمن شراء المزهريّة بالمي : 15 000 - (9 450 + 150) = 5 400",
+      "figureDesc": "",
+      "answer": "6 250 ؛ 3 200 ؛ 9 450 ؛ 5 400",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p120_i14",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

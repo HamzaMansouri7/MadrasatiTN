@@ -1,0 +1,166 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 67,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الكتابة الجمعية والتوحيد بين مجموعتين (مقارنة الأعداد وترتيبها تنازليا) - السنة الأولى، الثلاثي الثاني",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "السند 2",
+      "instruction": "",
+      "body": "رَأَيْنَا وَسْطَ الْمَدِينَةِ الْعَدِيدَ مِنَ الْإِشَارَاتِ الْمُرُورِيَّةِ الَّتِي تُنَظِّمُ حَرَكَةَ السَّيْرِ.",
+      "figureDesc": "Deux ensembles dans des ellipses : le premier contient 9 feux tricolores (bulle du nombre laissée vide, à compléter par pointillés) ; le second contient 3 panneaux routiers (interdiction de dépasser, sens interdit, STOP) et est associé à la bulle portant le nombre 7.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p067_i1",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْتُبُ الْكَمَّ الْمُنَاسِبَ لِلْمَجْمُوعَةِ الْأُولَى.",
+      "body": "",
+      "figureDesc": "Ensemble de 9 feux tricolores ; bulle vide en pointillés pour écrire le nombre.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p067_i2",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَرْسُمُ الْعَنَاصِرَ النَّاقِصَةَ فِي الْمَجْمُوعَةِ الثَّانِيَةِ.",
+      "body": "",
+      "figureDesc": "Ensemble de 3 panneaux routiers avec le nombre 7 : il faut dessiner les éléments manquants (4 panneaux).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p067_i3",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُوَحِّدُ بَيْنَ الْمَجْمُوعَتَيْنِ وَأُعَبِّرُ عَنْ ذَلِكَ بِكِتَابَةٍ جَمْعِيَّةٍ.",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour écrire l'égalité additive.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p067_i4",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ الْمُكَوِّنَةَ لِلْعَمَلِيَّةِ تَنَازُلِيًّا.",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p067_i5",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "زُرْنَا حَدِيقَةَ الْحَيَوَانَاتِ فَشَاهَدْنَا مِنْهَا أَنْوَاعًا مُخْتَلِفَةً :",
+      "figureDesc": "Deux ensembles : 4 lions (bulle 4) et 7 éléphants (bulle 7).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p067_i6",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أُوَحِّدُ بَيْنَ الْمَجْمُوعَتَيْنِ وَأُعَبِّرُ عَنْ ذَلِكَ بِكِتَابَةٍ جَمْعِيَّةٍ.",
+      "body": "الْكِتَابَةُ الْجَمْعِيَّةُ : ........",
+      "figureDesc": "Ensemble de 4 lions (bulle 4) et ensemble de 7 éléphants (bulle 7), ligne pointillée pour l'écriture additive.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p067_i7",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-1-p3",
+  "topicTitle": "Période 3 : Le nombre 10, notion d'addition et formes géométriques",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p1",
+    "confidence": 0.59
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur l'égalisation de deux ensembles et l'écriture additive (sens de l'addition), ainsi que le rangement décroissant des nombres de l'opération, ce qui correspond à la Période 3 (T2, notion d'addition), même si le rangement décroissant rappelle aussi la Période 2.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition et comparaison de collections",
+    "skill": "Réunir deux collections, écrire l'addition correspondante et ranger les nombres du plus grand au plus petit.",
+    "pageType": "mixed",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "addition",
+      "réunion de collections",
+      "écriture additive",
+      "ordre décroissant",
+      "complétion de collection",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des situations de la vie courante (panneaux de signalisation en ville, animaux du zoo) servent de support pour compléter une collection par dessin, la réunir à une autre, écrire l'addition et ordonner les nombres de la somme.",
+    "themeGroup": "Comparaison et rangement des nombres"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les nombres des figures ne sont pas transcrits : 7 (bulle des panneaux de signalisation, Support 2), 4 (bulle des lions) et 7 (bulle des éléphants, Support 3). Ils sont nécessaires pour les consignes 5 et 7."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases/pointillés de réponse ne sont pas signalés : bulle vide au-dessus des feux tricolores (consigne 3) et lignes de réponse des consignes 5 et 6. Seule la ligne « الكتابة الجمعية » de la consigne 7 est reprise."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Éléments de page absents : le mot « STOP » sur un panneau, la mention latérale « الرياضيات / السنة 1 / جيم النجاح – الثلاثي الثاني », le numéro de page 91 et le libellé « التعليمة » devant les numéros 3 à 7."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

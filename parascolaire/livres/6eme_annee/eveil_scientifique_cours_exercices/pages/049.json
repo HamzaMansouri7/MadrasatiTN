@@ -1,0 +1,140 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 49,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الهواء والاحتراق، التنفس والدم (إيقاظ علمي – السنة السادسة، الصفحة 34 إلى 40: corrigés)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "34",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 34",
+      "body": "ينتج عن عملية الاحتراق: الحرارة، الضوء، هباب الفحم، بخار الماء، ثاني أكسيد الكربون. لتجنّب تشرّب حريق بالغابة يجب إزالة عامل من العوامل الثلاثة التالية: الهواء، المحروق، الحرارة.",
+      "figureDesc": "",
+      "answer": "ينتج عن الاحتراق: الحرارة، الضوء، هباب الفحم، بخار الماء، ثاني أكسيد الكربون. لتجنب الحريق تتم إزالة أحد العوامل: الهواء أو المحروق أو الحرارة.",
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p049_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "35",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 35",
+      "body": "عند إشعال فتيلة قطنية تلاحظ سرعة الاشتعال وعندما تكون مغمورة في النفط تلاحظ بطء الاحتراق. وبما أنّ النفط والزيت والشمع لا يحترق إلاّ إذا تحوّل إلى غاز فلا بدّ أن تتشرّب هذه المواد داخل فتيلة. لا يحترق الشمع وهو في حالة صلبة وهو ما يستوجب تسخينه في ملعقة معدنية ليصير سائلا ثم غازا.",
+      "figureDesc": "",
+      "answer": "عند إشعال فتيلة قطنية تلاحظ سرعة الاشتعال، وعندما تكون مغمورة في النفط تلاحظ بطء الاحتراق. النفط والزيت والشمع لا تحترق إلا إذا تحولت إلى غاز، لذلك يجب أن تتشرب الفتيلة هذه المواد. لا يحترق الشمع وهو صلب فيسخن ليصير سائلا ثم غازا.",
+      "confidence": 0.75,
+      "id": "eveil_scientifique_cours_exercices_p049_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "36",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 36",
+      "body": "1- إشعال الفتيلة 2- ذوبان حامض الشحمي بمفعول الحرارة 3- احتراق الغاز الناتج عن ... 4- الضوء الناتج عن اشتعال ... تلاحظ انطلاق غاز أبيض يشتعل بمجرد تقريب لهب منه. الاستنتاج: المنطقة القاتمة يوجد فيها غاز ناتج عن تفكك الشمع بفعل حرارة الاحتراق. لا يحمرّ سلك النحاس في المنطقة القاتمة. يسودّ سلك النحاس في المنطقة الصفراء. يحمرّ سلك النحاس في المنطقة الزرقاء. تحتاج الشمعة عند احتراقها إلى الهواء والمادة المشتعلة والشرارة. ينتج عن احتراق الشمعة: الضوء، بخار الماء، ثاني أكسيد الكربون، هباب الفحم، الحرارة.",
+      "figureDesc": "",
+      "answer": "انظر النص",
+      "confidence": 0.7,
+      "id": "eveil_scientifique_cours_exercices_p049_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "37",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 37",
+      "body": "لا ينزل الماء داخل القارورة بالقارورة مساوية هواء، ولا يمكن لشيئين أن يشغلا الحيّز الواحد في آن واحد بالشروط نفسها. تعديل التجربة: إزالة الصلصال ورفع الفحم قليلا. الشهيق غني بالأكسجين. الزفير غني بثاني أكسيد الكربون وبخار الماء. جهاز التنفس ينقي الدم من ثاني أكسيد الكربون ويغذيه بالأكسجين. الأنف ينقي الهواء من الغبار ويرطبه. ارتفع الماء في القارورة الثالثة ليعوض الأكسجين المحترق. انطفأت الشمعة لانعدام الأكسجين.",
+      "figureDesc": "",
+      "answer": "انظر النص",
+      "confidence": 0.7,
+      "id": "eveil_scientifique_cours_exercices_p049_i4",
+      "topicId": "sci-6-u2",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "38",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 38",
+      "body": "1- منطقة صفراء مضيئة بها هباب الفحم. 2- منطقة قاتمة بها غاز الشمع. 3- منطقة زرقاء حارة جدا. ينتج عن احتراق الشمعة: إضاءة، حرارة، بخار الماء، ثاني أكسيد الكربون، هباب الفحم. يتمّ التبادل الغازي بين الجسم وهواء المحيط في مستوى الرئتين. يلعب الدم دورا هاما فهو ينقل الأكسجين والأغذية المهضومة إلى كل عضو وخلية ويعود محمّلا بثاني أكسيد الكربون والفضلات. الهواء غاز مرن قابل للضغط: صواب. الهواء له شكل معيّن: خطأ. الهواء الحار أخف من الهواء البارد: صواب. الهواء ضروري للاحتراق وللكائنات الحية: صواب.",
+      "figureDesc": "",
+      "answer": "الهواء غاز مرن قابل للضغط: صواب؛ له شكل معين: خطأ؛ الحار أخف من البارد: صواب؛ ضروري للاحتراق والكائنات الحية: صواب",
+      "confidence": 0.75,
+      "id": "eveil_scientifique_cours_exercices_p049_i5",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "39",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 39",
+      "body": "ش1: ينتج عن نقص عدد كريات الدم الحمراء صعوبة نقل غازات التنفس وحرق المواد الغذائية التي تم هضمها وفي صعوبة إنتاج الحرارة اللازمة لتدفئة الجسم والقيام بالعمل والحركة. ش2: ينتج عن نقص عدد كريات الدم البيضاء تكاثر الجراثيم داخل الجسم. ش3: ينتج عن نقص في عدد الصفيحات في سيلان الدم عند الإصابة بنزيف دموي.",
+      "figureDesc": "",
+      "answer": "انظر النص",
+      "confidence": 0.75,
+      "id": "eveil_scientifique_cours_exercices_p049_i6",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "40",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 40",
+      "body": "عندما يجرح شخص لا يتواصل عادة سيلان دمه لأنّ الصفيحات تساعد على تخثّر الدم ووقف النزيف في الجروح. أ) الكريات الحمراء: أ، د، هـ، ز. الكريات البيضاء: ب، ج، و. ب) البلازما تنقل المواد المغذية والفضلات. الكريات البيضاء تدافع عن الجسم بالقضاء على الجراثيم. الكريات الحمراء تزود الجسم بالأكسجين وتخلصه من ثاني أكسيد الكربون. يوجد حوالي 250 مليون كرية دم حمراء في نقطة الدم الواحدة فالكريات الحمراء هي التي تعطي اللون الأحمر للدم.",
+      "figureDesc": "",
+      "answer": "انظر النص",
+      "confidence": 0.75,
+      "id": "eveil_scientifique_cours_exercices_p049_i7",
+      "topicId": "sci-6-u2",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u6",
+    "confidence": 0.5
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "Les pages de corrigés traitent de la combustion (bougie, zones de la flamme, produits de combustion), de la respiration (inspiration/expiration, échanges gazeux pulmonaires) et du rôle du sang (globules, plaquettes), ce qui correspond surtout à l'unité 2 sur l'air, la respiration et la combustion, avec quelques notions sur la composition du sang liées à l'unité 3.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Combustion, respiration et sang",
+    "skill": "Expliquer les conditions et produits de la combustion, les échanges gazeux respiratoires et le rôle des composants du sang.",
+    "pageType": "correction",
+    "formats": [
+      "schema_tableau",
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "combustion",
+      "bougie",
+      "respiration",
+      "échanges gazeux",
+      "globules rouges",
+      "plaquettes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les corrigés renvoient à des expériences simples réutilisables : bougie sous cloche ou bouteille, flamme et ses trois zones, mèche imbibée de pétrole, comparaison inspiration/expiration, et cas de carence en globules rouges, blancs ou plaquettes à relier aux conséquences sur le corps.",
+    "themeGroup": "La combustion"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

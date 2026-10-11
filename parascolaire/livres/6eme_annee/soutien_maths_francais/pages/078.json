@@ -1,0 +1,121 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 78,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Devoir de synthèse : Activités numériques (puissances, comparaison de nombres, pourcentage) et Géométrie (construction d'un angle et de sa bissectrice, angles d'un quadrilatère)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "حوّل عاملي الجداء الى جداء قوى 2 و 3 (2 ن)",
+      "body": "125 × 9 = ......................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p078_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "رتب الاعداد التالية ترتيبا تزايديا (2 ن) :",
+      "body": "15 ; 1,05 ; 0,15 ; 10/5 ; 1,55 ; 6/4",
+      "figureDesc": "Une ligne en pointillés pour écrire la réponse",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p078_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مسألة : (3 ن)",
+      "body": "عدد التلاميذ المسجلين في مدرسة هو 320 تلميذا، إذا علمت أن نسبة النجاح هي 90% فما هو عدد التلاميذ الناجحين ؟",
+      "figureDesc": "Deux lignes en pointillés pour la rédaction de la solution",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p078_i3",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.1",
+      "instruction": "المجال الرئيسي الثاني: الهندسة (11 نقطة): أنشئ زاوية AÔB قياسها هو 80° ثم ارسم منصفها [OI) (3 ن)",
+      "body": "",
+      "figureDesc": "Grand cadre rectangulaire vide destiné à la construction de l'angle AÔB de 80° et de sa bissectrice [OI)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p078_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.2",
+      "instruction": "لاحظ المضلع الرباعي EFGH التالي و استنتج قياس زاويته HÊF (2 ن)",
+      "body": "",
+      "figureDesc": "Quadrilatère EFGH (trapèze rectangle) : angles droits marqués en H et G, angle de 65° en F, E en haut à droite. Quatre lignes en pointillés pour la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p078_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p4",
+    "confidence": 0.26
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un devoir de synthèse couvrant plusieurs chapitres (puissances, comparaison de nombres, pourcentages, construction d'angle et bissectrice, angles d'un quadrilatère), donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Puissances, comparaison, pourcentage, angles",
+    "skill": "Appliquer les puissances, ordonner des nombres décimaux et fractions, calculer un pourcentage, construire un angle avec sa bissectrice et déduire des angles d'un quadrilatère.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "devoir de synthèse",
+      "puissances",
+      "comparaison de nombres",
+      "pourcentage",
+      "bissectrice",
+      "quadrilatère"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'un devoir de synthèse en deux domaines (numérique et géométrie) avec barème, mélangeant écritures décimales et fractionnaires à ordonner, un problème de taux de réussite scolaire et une construction d'angle avec bissectrice.",
+    "themeGroup": "Puissances"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

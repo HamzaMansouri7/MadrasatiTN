@@ -1,0 +1,209 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 25,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي: تتمة قصة مصوّرة (القطة والثعبان) وجدول إسناد الأعداد (معايير التمليك)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "مع2",
+      "instruction": "",
+      "body": "Cadre de production écrite : lignes pointillées vierges à gauche de la première image (5 lignes), avec le barème « 1 » en marge gauche pour chaque ligne. À droite, la mention « مع2 » suivie d'une grille de notation de 3 cases. Aucun texte imprimé dans les lignes (espace à remplir par l'élève).",
+      "figureDesc": "Image 1 : dans un jardin, un chat au poil hérissé, le dos arqué, fait face à un serpent dressé (cobra) enroulé sur lui-même, près d'un buisson et d'un mur.",
+      "answer": null,
+      "id": "evaluations_toutes_matieres_p025_i1",
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.85
+    },
+    {
+      "kind": "exercise",
+      "number": "مع3",
+      "instruction": "",
+      "body": "Cadre de production écrite : lignes pointillées vierges à gauche de la deuxième image (environ 7 lignes), avec le barème « 1 » en marge gauche pour chaque ligne. À droite, la mention « مع3 » suivie de trois grilles de notation de 3 cases chacune. Aucun texte imprimé dans les lignes.",
+      "figureDesc": "Image 2 : dans un jardin, un homme tient une fourche avec laquelle il attrape un serpent au sol ; un chat est à proximité ; une cage à oiseau est suspendue à une branche d'arbre ; une fillette observe depuis un balcon à gauche.",
+      "answer": null,
+      "id": "evaluations_toutes_matieres_p025_i2",
+      "topicId": "ar-2-u8",
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium",
+      "confidence": 0.85
+    },
+    {
+      "kind": "exercise",
+      "number": "مع4",
+      "instruction": "",
+      "body": "Cadre de production écrite : lignes pointillées vierges à gauche de la troisième image (environ 7 lignes), avec le barème « 1 » en marge gauche. Deux bulles de dialogue vides (une pour l'homme, une pour la fillette) à compléter. À droite, la mention « مع4 » suivie d'une grille de notation de 3 cases.",
+      "figureDesc": "Image 3 : l'homme tenant la fourche parle à une fillette qui lui répond en faisant un geste de la main ; un chat se frotte contre les jambes de la fillette. Deux bulles de dialogue vides.",
+      "answer": null,
+      "id": "evaluations_toutes_matieres_p025_i3",
+      "topicId": "ar-2-u8",
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium",
+      "confidence": 0.85
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الأَعْدَادِ",
+      "body": "En-tête : المَعَايِيرُ / مُسْتَوَيَاتُ التَّمَلُّكِ ; مَعَايِيرُ الحَدِّ الأَدْنَى : مع1، مع2، مع3 ; مِعْيَارُ التَّمَيُّزِ : مع4.\n- انْعِدَامُ التَّمَلُّكِ (- - -) : مع1 = 0 ; مع2 = 0 ; مع3 = 0 ; مع4 = من\n- التَّمَلُّكُ دُونَ الأَدْنَى (+ - -) : مع1 = 0,5 / 1 ; مع2 = 0,5 / 1 ; مع3 = 1 / 2 / 3 ; مع4 = 0\n- التَّمَلُّكُ الأَدْنَى (+ + -) : مع1 = 1,5 / 2 ; مع2 = 1,5 / 2 ; مع3 = 4 / 5 / 6 ; مع4 = إلى\n- التَّمَلُّكُ الأَقْصَى (+ + +) : مع1 = 2,5 / 3 ; مع2 = 2,5 / 3 ; مع3 = 7 / 8 / 9 ; مع4 = 5\nNuméro de page imprimé : 24",
+      "figureDesc": "Tableau de barème à 5 colonnes (niveaux de maîtrise, مع1, مع2, مع3, مع4) et 4 lignes de niveaux.",
+      "answer": null,
+      "id": "evaluations_toutes_matieres_p025_i4",
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.85
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-2-u8",
+  "topicTitle": "Unité 8 : Fêtes nationales, religieuses et célébrations",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u5",
+    "confidence": 0.38
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une production écrite (suite d'une histoire en images) avec grille de notation par critères (مع1 à مع4), typique des évaluations de fin de période ; l'unité 8 mentionne le « bilan de production d'écrit », mais la page ne relève pas clairement d'une seule unité, d'où une confiance faible.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : suite d'histoire",
+    "skill": "Rédiger la suite et la fin d'une histoire en images avec dialogues, en respectant les critères d'évaluation.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "production écrite",
+      "histoire en images",
+      "dialogue",
+      "grille d'évaluation",
+      "critères de maîtrise",
+      "chat et serpent"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : écrire un récit à partir d'une séquence de trois images avec bulles de dialogue à compléter, accompagné d'une grille de notation par critères (minimaux et d'excellence).",
+    "themeGroup": "Production écrite: suite de récit"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.85,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel visible est absent dans la transcription du tableau : المعايير (المُعَايِيرُ), مستويات التملك (مُسْتَوَيَاتُ التَّمَلُّكِ), مَعَايِيرُ الْحَدِّ الْأَدْنَى, مِعْيَارُ التَّمَيُّزِ, إِنْعِدَامُ التَّمَلُّكِ, etc. Seul le titre est voyellé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« معيار التمّيز » : la graphie correcte est « مِعْيَارُ التَّمَيُّزِ » (chadda sur le ي, pas sur le م)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« انعدام » est écrit « إِنْعِدَامُ » dans l'image ; « التملك دون الأدنى » avec son signe (+ - -) : l'ordre des signes est inversé dans l'image (- - + pour دون الأدنى), donc « (+ - -) » est inexact par rapport à la lecture visuelle."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Les valeurs de مع1 et مع2 sont affichées dans l'image dans l'ordre 1 | 0,5 (de gauche à droite), et pour مع3 : 3 2 1 ; la transcription les donne « 0,5 / 1 » (ordre inversé de lecture, acceptable en RTL mais ambigu)."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "La description « Le texte de la consigne n'apparaît pas... sans doute sur la page précédente » est une supposition, et les descriptions « rédiger la suite/la fin de l'histoire » sont inventées. Les images ne sont pas décrites (chat et serpent ; homme avec fourche et serpent, cage ; homme, fillette et chat)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le critère « مع4 » : « Une case de notation à 3 cases » est correct, mais pour مع3 il y a trois rangées de 3 cases (9 cases), pas « trois cases »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les barèmes « 1 » dans la marge gauche (environ 16 lignes de « 1 ») et le numéro de page 24 ne sont pas transcrits précisément. Le « 1 » est regroupé par blocs sans détail."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Pour مع4 le tableau indique « من 0 إلى 5 » : la transcription sépare les valeurs (من, 0, إلى, 5) de façon peu claire ; la cellule « من » est mal placée dans la ligne انعدام (seul « من » apparaît, la valeur 0 est dans la ligne suivante)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "مع2",
+      "instruction": "",
+      "body": "Le texte de la consigne n'apparaît pas sur cette page (il figure sans doute sur la page précédente). Il reste des lignes pointillées vierges pour écrire le texte qui accompagne la première image. À gauche figurent les barèmes « 1 » par ligne. À droite, une case de notation à 3 cases est rattachée au critère مع2.",
+      "figureDesc": "Image 1 : dans un jardin, près d'un mur et d'un buisson, un chat au poil hérissé fait face à un serpent dressé et enroulé sur lui-même, prêt à l'attaquer.",
+      "answer": null,
+      "confidence": 0.55,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p025_i1",
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع3",
+      "instruction": "",
+      "body": "Lignes pointillées vierges pour rédiger la suite de l'histoire à partir de la deuxième image. Barème « 1 » par ligne. Trois cases de notation sont rattachées au critère مع3.",
+      "figureDesc": "Image 2 : dans un jardin, un homme muni d'une fourche court vers un serpent et le soulève avec elle. Un chat se tient près de lui. Une fillette observe la scène depuis derrière un muret. Une cage à oiseau est suspendue à la branche d'un arbre.",
+      "answer": null,
+      "confidence": 0.55,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p025_i2",
+      "topicId": "ar-2-u8",
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "مع4",
+      "instruction": "",
+      "body": "Lignes pointillées vierges pour rédiger la fin de l'histoire à partir de la troisième image. Deux bulles de dialogue vides sont à compléter, une pour l'homme et une pour la fillette. Barème « 1 » par ligne. Une case de notation à 3 cases est rattachée au critère مع4.",
+      "figureDesc": "Image 3 : l'homme tenant sa fourche parle à la fillette, qui lui fait un geste de la main. Un chat se tient contre ses jambes. Deux bulles de dialogue sont vides.",
+      "answer": null,
+      "confidence": 0.55,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p025_i3",
+      "topicId": "ar-2-u8",
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الأَعْدَادِ",
+      "body": "Colonnes : المعايير / مستويات التملك ; معايير الحد الأدنى : مع1، مع2، مع3 ; معيار التمّيز : مع4.\n- انعدام التملك (- - -) : مع1 = 0 ; مع2 = 0 ; مع3 = 0 ; مع4 = من\n- التملك دون الأدنى (+ - -) : مع1 = 0,5 / 1 ; مع2 = 0,5 / 1 ; مع3 = 1 / 2 / 3 ; مع4 = 0\n- التملك الأدنى (+ + -) : مع1 = 1,5 / 2 ; مع2 = 1,5 / 2 ; مع3 = 4 / 5 / 6 ; مع4 = إلى\n- التملك الأقصى (+ + +) : مع1 = 2,5 / 3 ; مع2 = 2,5 / 3 ; مع3 = 7 / 8 / 9 ; مع4 = 5",
+      "figureDesc": "Tableau de notation des niveaux de maîtrise (absence, en dessous du minimum, minimum, maximum) selon les critères minimaux مع1 à مع3 et le critère de perfectionnement مع4.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p025_i4",
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

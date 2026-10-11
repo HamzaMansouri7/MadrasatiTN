@@ -1,0 +1,173 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 54,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Agrandissement/réduction sur quadrillage, mesure (conversions d'unités, périmètre du cercle, aire du triangle rectangle, volume du parallélépipède rectangle) et organisation et traitement de données (diagramme en barres)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "لاحظ الشكل أسفله ثم أنشئ تصغيرا له بمعدل 2 : (2ن)",
+      "body": "لاحظ الشكل أسفله ثم أنشئ تصغيرا له بمعدل 2 : (2ن)",
+      "figureDesc": "Quadrillage contenant une figure noire en forme de « C » anguleux (barre horizontale en haut, barre verticale à gauche, petite barre horizontale en bas). À réduire de rapport 2 sur le quadrillage.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p054_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "حول الوحدات التالية إلى ما هو مطلوب: (4ن)",
+      "body": "20,1cm 45dam = ……………….. hm ; 5t 2,3q 7hg = ………………… kg ; 259,23 a = ……………….. m² ; 4,09 m³ = ………………….. l",
+      "figureDesc": "Section : المجال الرئيسي الثالث: القياس (8 نقطة)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p054_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "احسب محيط دائرة (P) شعاعها r = 8 m. (1ن)",
+      "body": "احسب محيط دائرة (P) شعاعها r = 8 m. (1ن)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p054_i3",
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "مسألة: أحسب مساحة المثلث VTR جانبه بـ m² ثم بـ dm². (1,5ن)",
+      "body": "مسألة: أحسب مساحة المثلث VTR جانبه بـ m² ثم بـ dm². (1,5ن)",
+      "figureDesc": "Triangle VTR rectangle en T, TV = 20 m, TR = 24 m.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p054_i4",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "أحسب حجم متوازي مستطيلات جانبه بـ m³ ثم بـ dam³. (1,5ن)",
+      "body": "أحسب حجم متوازي مستطيلات جانبه بـ m³ ثم بـ dam³. (1,5ن)",
+      "figureDesc": "Parallélépipède rectangle : L = 7 m, l = 4 m, h = 6 m.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p054_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "مسألة: المبيان التالي يوضح نسبة الملء الحالي من الماء بمليون m³ ببعض السدود المغربية بتاريخ الثلاثاء 8 مارس 2022 حسب الإحصائيات والأرقام التي ترد عن وزارة التجهيز والنقل واللوجيستيك والماء.",
+      "body": "أ) ما اسم السد الذي حظي بنسبة ملء كبيرة؟ (1ن)\nب) ما اسم السد الذي حظي بنسبة ملء قليلة؟ (1ن)\nج) ما اسم السدود التي ملؤها محصور بين 40 و 55 مليون متر مكعب؟ (1ن)\nد) كم بلغ ملء سد ملوية؟ (1ن)",
+      "figureDesc": "Section : المجال الرئيسي الرابع: تنظيم ومعالجة البيانات (4 نقط). Diagramme en barres « نسبة الملء بالمليون m³ », axe 0 à 60. Barres approximatives : الوكوس ≈51, ملوية ≈10, سبو ≈53, أبي رقراق ≈42, أم الربيع ≈11, تانسيفت ≈40, سوس ماسة ≈16.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p054_i6",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation générale de mathématiques qui regroupe plusieurs chapitres (réduction sur quadrillage, conversions, périmètre du cercle, aire du triangle, volume, diagramme en barres), donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures, réduction de figures et diagramme en barres",
+    "skill": "Réduire une figure sur quadrillage, convertir des unités, calculer périmètre, aire et volume, et lire un diagramme en barres.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "réduction sur quadrillage",
+      "conversion d'unités",
+      "périmètre du cercle",
+      "aire du triangle rectangle",
+      "volume du parallélépipède",
+      "diagramme en barres"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le sujet type examen couvre en une page géométrie, mesures et statistiques avec barème. Le contexte du taux de remplissage des barrages, lu dans un diagramme en barres, est réutilisable pour des questions de lecture de données (maximum, minimum, intervalle, valeur précise).",
+    "themeGroup": "Statistiques et graphiques"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les en-têtes de section sont absents : « III. المجال الرئيسي الثالث: القياس (8 نقطة) » avant l'exercice 12 et « IV. المجال الرئيسي الرابع: تنظيم ومعالجة البيانات (4 نقط) » avant l'exercice 16."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre du graphique « نسبة الملء بالمليون m³ » et les noms des barres (الوكوس، ملوية، سبو، أبي رقراق، أم الربيع، تاسفيفت، سوس ماسة) ne sont pas transcrits. Le graphique n'est pas décrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les données des figures ne sont pas transcrites : triangle VTR (20 m, 24 m, angle droit en T) et parallélépipède (L=7m, l=4m, h=6m). Elles sont nécessaires pour les exercices 14 et 15."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les exercices 11, 13, 14 et 15 sont dupliqués dans la transcription (texte répété de part et d'autre de « || »)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex. 14 : « جانبه » devrait être « جانبه » avec la mention du dessin ; l'ordre « بـ m² ثم بـ dm² » est correct. Ex. 13 : le point final après « 8 m » est ajouté, alors que l'original porte « .r = 8 m » avec le point placé avant."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le « 1 » (litre) de « 4,09 m³ = ... l » est transcrit « l », ce qui est acceptable. Le mot « نقطة » dans l'en-tête de la section III devrait apparaître avec « نقط » dans la section IV."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "unknown",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

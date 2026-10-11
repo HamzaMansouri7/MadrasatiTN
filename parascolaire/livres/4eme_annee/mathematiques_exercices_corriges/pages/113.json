@@ -1,0 +1,565 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 113,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "حساب، نظام قيس، هندسة، اختبار تقويمي (السنة الرابعة، الصفحات 17 إلى 20)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "3 (ص17)",
+      "instruction": "أصبح عدد سكّان القرية :",
+      "body": "837 = 18 - (59 + 796)",
+      "figureDesc": "",
+      "answer": "837",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص17)",
+      "instruction": "المخطط :",
+      "body": "ثمن القلم بالمي : 120 = 2 ÷ (840 - 1080)\nثمن القصة بالمي : 720 = 120 - 840",
+      "figureDesc": "مخطط بالأشرطة: أقلام (قلم قلم قلم) وقصة (؟)، المجموع 1080 مي، جزء 840 مي، وجزء مجهول (؟)",
+      "answer": "ثمن القلم 120 مي، ثمن القصة 720 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص17)",
+      "instruction": "الأشخاص الذين حضروا لمشاهدة الفلم 1 + 2 معًا :",
+      "body": "100 = 870 - (460 + 510)\nعدد الأشخاص الذين حضروا لمشاهدة الفلم 1 فقط: 360 = 100 - 460\nعدد الأشخاص الذين حضروا لمشاهدة الفلم 2 فقط: 410 = 100 - 510\nالمخطط :",
+      "figureDesc": "مخطط فن: مجموعة كلية 870 تحوي مجموعتين متقاطعتين ف1 و ف2؛ التقاطع 100، ف1 فقط 360، ف2 فقط 410",
+      "answer": "100 ؛ 360 ؛ 410",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص18)",
+      "instruction": "الرّسم :",
+      "body": "ضلع المربّع = 3 صم + 1 صم = 4 صم",
+      "figureDesc": "مربع كبير مقسّم إلى أربعة مستطيلات حول مربع صغير في الوسط (مربع)؛ الأبعاد 1 صم و3 صم",
+      "answer": "4 صم",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4 (ص18)",
+      "instruction": "",
+      "body": "الاسم / القامة: مراد 150 صم، أنور 134 صم، أمين 130 صم، سلمى 112 صم",
+      "figureDesc": "جدول بعمودين: الاسم والقامة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص18)",
+      "instruction": "",
+      "body": "ارتفاع الطوابق بالم : 15 = 5 x 3\nارتفاع السقوف بالصم : 100 = 5 x 20 = 1 م\nارتفاع هذه العمارة بالمتر : 17 = 1 + 1 + 15",
+      "figureDesc": "",
+      "answer": "17 م",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 (ص19)",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "مستقيمان (م) و(ل) يتقاطعان في النقطة ج، ومستقيم أفقي (ص) يقطعهما في النقطتين أ وب",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص19)",
+      "instruction": "تنتمي إلى :",
+      "body": "جدول بأعمدة (م) (ص) ومدخلات أ، ب، ج، هـ، د",
+      "figureDesc": "جدول: أ: (ص) و(م) ؛ ب: (ص) ؛ ج: لا شيء ؛ هـ: (م) ؛ د: (ص)",
+      "answer": "أ: x في (ص) و(م)؛ ب: x في (ص)؛ ج: لا شيء؛ هـ: x في (م)؛ د: x في (ص)",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص20)",
+      "instruction": "مثال :",
+      "body": "3 + 25 + 50 + 80 + 100 = 258",
+      "figureDesc": "",
+      "answer": "258",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص20)",
+      "instruction": "",
+      "body": "3 هم ونصف + 7 دكم + 480 م = 9 هم\n195 صم - 13 دسم = 65 صم",
+      "figureDesc": "",
+      "answer": "9 هم ؛ 65 صم",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i10"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 (ص20)",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "رسم هندسي: مستقيمات (م) و(ل) و(كـ) تتقاطع في ج، ومستقيم أفقي يقطعها في هـ وب وأ، ونقطتان د وو",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص20)",
+      "instruction": "ثمن الهدية بالمي :",
+      "body": "(ملاحظة مكتوبة بخط اليد) ترتيب الأمثلة : 4 - 3 - 1 - 2\n11700 = 900 - 12600\nالمبلغ الذي جمعوه بالمي: 12600 = 2500 + 8400 + 1700\nساهمت فاطمة بالمي: 1700 = 800 - 2500\nساهم أمين بالمي: 8400 = 2 × (1700 + 2500)",
+      "figureDesc": "",
+      "answer": "11700 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p113_i12"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u5",
+    "confidence": 0.21
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation (اختبار تقويمي) de mathématiques qui mélange problèmes d'addition/soustraction, mesures de longueur et droites sécantes, donc elle couvre plusieurs chapitres sans correspondre clairement à un seul.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    17,
+    18,
+    19,
+    20
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Calcul, mesures de longueur et géométrie",
+    "skill": "Résoudre des problèmes additifs et soustractifs, convertir des unités de longueur et utiliser l'appartenance point-droite.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "problèmes à étapes",
+      "conversion d'unités",
+      "mesures de longueur",
+      "droites sécantes",
+      "appartenance point-droite",
+      "diagramme"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des situations de problèmes à étapes (prix d'objets, spectateurs de deux films avec intersection, hauteur d'un immeuble par étages) et des exercices de conversion d'unités sont réutilisables, de même que le tableau d'appartenance des points aux droites ; la page reste un corrigé, avec peu d'énoncés complets.",
+    "themeGroup": "Longueurs"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Les lignes 'réponse: ...' ajoutées (ex. 'réponse: 837', 'ثمن القلم 120 مي، ثمن القصة 720 مي', 'réponse: 17 م') ne figurent pas dans l'image : texte inventé."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 3 p.19 : l'image montre pour أ x en (ص) et en (م) ; ب x en (ص) seulement ; ج rien ; هـ x en (م) ; د x en (ص). La description semble correcte, mais les colonnes sont présentées de façon ambiguë (l'ordre des colonnes dans l'image est (م) (ص))."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 4 p.17 : le schéma (qualifié 'قلم' x3, 'قصة ؟', 840 مي, 1080 مي) n'est pas transcrit ; de même le schéma de Venn (870, 410, 100, 360, ف1, ف2) de l'exercice 5 et le dessin du carré (1 صم, 3 صم, مربع) de l'ex. 3 p.18."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3 p.20 : la figure (points ج, أ, ب, هـ, د, و, droites (م) (ل) (كـ)) n'est pas transcrite ; la ligne 'ترتيب الأمثلة : 4 - 3 - 1 - 2' est écrite à tort '2 - 1 - 3 - 4' (ordre inversé) et placée dans l'exercice 3 alors qu'elle est au-dessus de l'exercice 4."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex. 1 p.19 : la description (مستقيمان (م) و(ل) ... (ص)) est une interprétation de la figure, pas du texte ; la figure comporte aussi les points أ، ب، ج."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex. 2 p.20 : l'image écrit '3 هم ونصف + 7 دكم + 480 م = 9 هم' ; '195 صم - 13 دسم = 65 صم' correct. Ex. 5 p.18 : 'ارتفاع الطوابق بالم' correct."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex. 4 p.17 : '120 = 2 ÷ (840 - 1080)' ; dans l'image la ligne est '2 ÷ (840 - 1080) = 120' avec ordre inversé, sans conséquence."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Ex. 1 p.19 : le body « مستقيمان (م) و(ل) يتقاطعان في النقطة ج، ويقطعهما المستقيم (ص)… » est une phrase inventée. Cet exercice ne contient que la figure (droites (م), (ل), (ص), points أ، ب، ج), sans texte imprimé. Le body doit être vide et la figure reste décrite dans figureDesc, avec les points أ، ب، ج."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La ligne « ترتيب الأمثلة » se lit 4 - 3 - 1 - 2 dans le sens de lecture arabe. La transcription donne 2 - 1 - 3 - 4, qui est l'ordre visuel gauche-droite inversé. Elle est aussi mal placée : c'est une annotation manuscrite située sous le trait de séparation, juste au-dessus de l'ex. 4, et non dans l'ex. 3."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "3 (ص17)",
+      "instruction": "أصبح عدد سكّان القرية :",
+      "body": "837 = 18 - (59 + 796)",
+      "figureDesc": "",
+      "answer": "837",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص17)",
+      "instruction": "المخطط :",
+      "body": "ثمن القلم بالمي : 120 = 2 ÷ (840 - 1080)\nثمن القصة بالمي : 720 = 120 - 840",
+      "figureDesc": "مخطط بالأشرطة: أقلام (قلم قلم قلم) وقصة (؟)، المجموع 1080 مي، جزء 840 مي، وجزء مجهول (؟)",
+      "answer": "ثمن القلم 120 مي، ثمن القصة 720 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص17)",
+      "instruction": "الأشخاص الذين حضروا لمشاهدة الفلم 1 + 2 معًا :",
+      "body": "100 = 870 - (460 + 510)\nعدد الأشخاص الذين حضروا لمشاهدة الفلم 1 فقط: 360 = 100 - 460\nعدد الأشخاص الذين حضروا لمشاهدة الفلم 2 فقط: 410 = 100 - 510\nالمخطط :",
+      "figureDesc": "مخطط فن: مجموعة كلية 870 تحوي مجموعتين متقاطعتين ف1 و ف2؛ التقاطع 100، ف1 فقط 360، ف2 فقط 410",
+      "answer": "100 ؛ 360 ؛ 410",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص18)",
+      "instruction": "الرّسم :",
+      "body": "ضلع المربّع = 3 صم + 1 صم = 4 صم",
+      "figureDesc": "مربع كبير مقسّم إلى أربعة مستطيلات حول مربع صغير في الوسط (مربع)؛ الأبعاد 1 صم و3 صم",
+      "answer": "4 صم",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4 (ص18)",
+      "instruction": "",
+      "body": "الاسم / القامة: مراد 150 صم، أنور 134 صم، أمين 130 صم، سلمى 112 صم",
+      "figureDesc": "جدول بعمودين: الاسم والقامة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص18)",
+      "instruction": "",
+      "body": "ارتفاع الطوابق بالم : 15 = 5 x 3\nارتفاع السقوف بالصم : 100 = 5 x 20 = 1 م\nارتفاع هذه العمارة بالمتر : 17 = 1 + 1 + 15",
+      "figureDesc": "",
+      "answer": "17 م",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 (ص19)",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "مستقيمان (م) و(ل) يتقاطعان في النقطة ج، ومستقيم أفقي (ص) يقطعهما في النقطتين أ وب",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص19)",
+      "instruction": "تنتمي إلى :",
+      "body": "جدول بأعمدة (م) (ص) ومدخلات أ، ب، ج، هـ، د",
+      "figureDesc": "جدول: أ: (ص) و(م) ؛ ب: (ص) ؛ ج: لا شيء ؛ هـ: (م) ؛ د: (ص)",
+      "answer": "أ: x في (ص) و(م)؛ ب: x في (ص)؛ ج: لا شيء؛ هـ: x في (م)؛ د: x في (ص)",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص20)",
+      "instruction": "مثال :",
+      "body": "3 + 25 + 50 + 80 + 100 = 258",
+      "figureDesc": "",
+      "answer": "258",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص20)",
+      "instruction": "",
+      "body": "3 هم ونصف + 7 دكم + 480 م = 9 هم\n195 صم - 13 دسم = 65 صم",
+      "figureDesc": "",
+      "answer": "9 هم ؛ 65 صم",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i10"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 (ص20)",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "رسم هندسي: مستقيمات (م) و(ل) و(كـ) تتقاطع في ج، ومستقيم أفقي يقطعها في هـ وب وأ، ونقطتان د وو",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص20)",
+      "instruction": "ثمن الهدية بالمي :",
+      "body": "(ملاحظة مكتوبة بخط اليد) ترتيب الأمثلة : 4 - 3 - 1 - 2\n11700 = 900 - 12600\nالمبلغ الذي جمعوه بالمي: 12600 = 2500 + 8400 + 1700\nساهمت فاطمة بالمي: 1700 = 800 - 2500\nساهم أمين بالمي: 8400 = 2 × (1700 + 2500)",
+      "figureDesc": "",
+      "answer": "11700 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p113_i12"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "3 (ص17)",
+      "instruction": "أصبح عدد سكّان القرية :",
+      "body": "837 = 18 - (59 + 796)",
+      "figureDesc": "",
+      "answer": "837",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p113_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص17)",
+      "instruction": "المخطط :",
+      "body": "ثمن القلم بالمي : 120 = 2 ÷ (840 - 1080)\nثمن القصة بالمي : 720 = 120 - 840",
+      "figureDesc": "مخطط بالأشرطة: ثلاثة أقلام وقصة (؟)، المجموع 1080 مي، قلمان وقصة 840 مي، ثمن القلم مجهول (؟)",
+      "answer": "ثمن القلم 120 مي، ثمن القصة 720 مي",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p113_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص17)",
+      "instruction": "الأشخاص الذين حضروا لمشاهدة الفلم 1 + 2 معًا :",
+      "body": "100 = 870 - (460 + 510)\nعدد الأشخاص الذين حضروا لمشاهدة الفلم 1 فقط: 360 = 100 - 460\nعدد الأشخاص الذين حضروا لمشاهدة الفلم 2 فقط: 410 = 100 - 510\nالمخطط :",
+      "figureDesc": "مخطط فن: مجموعة كلية 870 تحوي مجموعتين متقاطعتين ف1 و ف2؛ التقاطع 100، ف1 فقط 360، ف2 فقط 410",
+      "answer": "100 ؛ 360 ؛ 410",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p113_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص18)",
+      "instruction": "الرّسم :",
+      "body": "ضلع المربّع = 3 صم + 1 صم = 4 صم",
+      "figureDesc": "مربع كبير مقسّم إلى أربعة مستطيلات حول مربع صغير في الوسط؛ الأبعاد 1 صم و3 صم",
+      "answer": "4 صم",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p113_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4 (ص18)",
+      "instruction": "",
+      "body": "الاسم / القامة: مراد 150 صم، أنور 134 صم، أمين 130 صم، سلمى 112 صم",
+      "figureDesc": "جدول بعمودين: الاسم والقامة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p113_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص18)",
+      "instruction": "",
+      "body": "ارتفاع الطوابق بالم : 15 = 5 x 3\nارتفاع السقوف بالصم : 100 = 5 x 20 = 1 م\nارتفاع هذه العمارة بالمتر : 17 = 1 + 1 + 15",
+      "figureDesc": "",
+      "answer": "17 م",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p113_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص19)",
+      "instruction": "",
+      "body": "مستقيمان (م) و(ل) يتقاطعان في النقطة ج، ويقطعهما المستقيم (ص) في النقطتين أ وب",
+      "figureDesc": "مثلث مكوّن من مستقيمين (م) و(ل) متقاطعين في ج، ومستقيم أفقي (ص) يقطعهما في أ وب",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "math_solutions_4eme_sellami_p113_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص19)",
+      "instruction": "تنتمي إلى :",
+      "body": "جدول بأعمدة (م) (ص) ومدخلات أ، ب، ج، هـ، د",
+      "figureDesc": "جدول: أ: (ص) و(م) ؛ ب: (ص) ؛ ج: لا شيء ؛ هـ: (م) ؛ د: (ص)",
+      "answer": "أ: x في (ص) و(م)؛ ب: x في (ص)؛ ج: لا شيء؛ هـ: x في (م)؛ د: x في (ص)",
+      "confidence": 0.65,
+      "id": "math_solutions_4eme_sellami_p113_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص20)",
+      "instruction": "مثال :",
+      "body": "3 + 25 + 50 + 80 + 100 = 258",
+      "figureDesc": "",
+      "answer": "258",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p113_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص20)",
+      "instruction": "",
+      "body": "3 هم ونصف + 7 دكم + 480 م = 9 هم\n195 صم - 13 دسم = 65 صم",
+      "figureDesc": "",
+      "answer": "9 هم ؛ 65 صم",
+      "confidence": 0.7,
+      "id": "math_solutions_4eme_sellami_p113_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص20)",
+      "instruction": "ترتيب الأمثلة : 2 - 1 - 3 - 4",
+      "body": "",
+      "figureDesc": "رسم هندسي: مستقيمات (م) و(ل) و(ك) تتقاطع في ج، ومستقيم أفقي يقطعها في هـ وب وأ، ونقطتان د وو",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p113_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص20)",
+      "instruction": "ثمن الهدية بالمي :",
+      "body": "11700 = 900 - 12600\nالمبلغ الذي جمعوه بالمي: 12600 = 2500 + 8400 + 1700\nساهمت فاطمة بالمي: 1700 = 800 - 2500\nساهم أمين بالمي: 8400 = 2 × (1700 + 2500)",
+      "figureDesc": "",
+      "answer": "11700 مي",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p113_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

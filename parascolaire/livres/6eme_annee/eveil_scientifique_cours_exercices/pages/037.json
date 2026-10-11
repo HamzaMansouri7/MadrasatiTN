@@ -1,0 +1,200 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 37,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "Les aimants : aimantation d'un objet par frottement et par contact (magnétisation)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَرِّرْ تَيَّارًا كَهْرَبَائِيًّا فِي السِّلْكِ بِوَصْلِ طَرَفَيْهِ إِلَى قُطْبَيْ خَلِيَّةٍ كَهْرَبَائِيَّةٍ ، وَقَرِّبِ المِسْمَارَ الفُولَاذِيَّ مِنَ الدَّبَابِيسِ.",
+      "body": "مَاذَا تُلَاحِظُ ؟ ........................................................................",
+      "figureDesc": "Photo : une main tient une pile reliée par un fil enroulé autour d'un clou en acier ; le clou aimanté attire des épingles suspendues, d'autres épingles sont posées en bas.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p037_i1",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "5",
+      "instruction": "السَّنَد 1 : لِنَقُومَ بِمَغْنَطَةِ جِسْمٍ بِوَاسِطَةِ الدَّلْكِ.",
+      "body": "- خُذِ الجِسْمَ الَّذِي تُرِيدُ مَغْنَطَتَهُ مِنْ إِحْدَى جِهَتَيْهِ.\n- اِخْتَرْ إِحْدَى جِهَتَيِ المِغْنَاطِيسِ لِتَبْدَأَ الدَّلْكَ مِنْهَا.\n- لَا تُغَيِّرِ الجِهَةَ الَّتِي تَبْدَأُ مِنْهَا الدَّلْكَ أَوِ الَّتِي تَأْخُذُ مِنْهَا الجِسْمَ.\n- لَا تَقُمْ بِالدَّلْكِ ذَهَابًا وَإِيَابًا ، فَإِنَّكَ فِي هَذِهِ الحَالَةِ تَخْتَزِلُ مَا صَنَعْتَهُ.\n- قُمْ بِعَمَلِيَّةِ الدَّلْكِ عِدَّةَ مَرَّاتٍ.",
+      "figureDesc": "Dessin : une main frotte une tige métallique sur un aimant droit (moitié bleue, moitié rouge) ; deux petits objets en forme de crochet sont posés près de l'aimant.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p037_i2",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-1",
+      "instruction": "التَّعْلِيمَة 1-1 : كَيْفَ يُمْكِنُكَ مَغْنَطَةُ إِبْرَةٍ ثُمَّ إِزَالَةُ مَغْنَاطِيسِيَّتِهَا ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p037_i3",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-2",
+      "instruction": "التَّعْلِيمَة 1-2 : يَلْتَقِطُ المِغْنَاطِيسُ بُرَادَةَ الحَدِيدِ ، وَلَكِنْ يَصْعُبُ إِزَالَتُهَا عَنْهُ.",
+      "body": "أَفْرِغْ رَفِيقُكَ كَمِّيَّةً مِنْ بُرَادَةِ الحَدِيدِ مِنْ عُلْبَتِهَا. اِقْتَرِحْ عَلَيْهِ طَرِيقَةً سَهْلَةً لِإِعَادَتِهَا إِلَى دَاخِلِ العُلْبَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p037_i4",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 2",
+      "instruction": "السَّنَد 2 : أَمْسِكْ بِيَدِكَ قِطْعَةً مِنَ الوَرَقِ المُقَوَّى وَضَعْ عَلَيْهَا دَبُّوسًا ، وَحَرِّكْ بِيَدِكَ الأُخْرَى مِغْنَاطِيسًا مِنَ الوَجْهِ الأَسْفَلِ لِقِطْعَةِ الوَرَقِ المُقَوَّى.",
+      "body": "",
+      "figureDesc": "Dessin : une main tient un carton bleu avec un objet dessus ; l'autre main déplace un aimant sous le carton.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p037_i5",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-1",
+      "instruction": "التَّعْلِيمَة 2-1 : مَاذَا تُلَاحِظُ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p037_i6",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-2",
+      "instruction": "التَّعْلِيمَة 2-2 : عَدِّدْ طَرَائِقَ التَّمَغْنُطِ.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p037_i7",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-3",
+      "instruction": "التَّعْلِيمَة 2-3 : وَقَعَ مِسْمَارٌ حَدِيدِيٌّ فِي قِنِّينَةِ مَاءٍ. اِقْتَرِحْ طَرِيقَةً لِإِخْرَاجِهِ دُونَ سَكْبِ المَاءِ.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p037_i8",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u5",
+  "topicTitle": "Unité 5 : Énergie, magnétisme, poids et chute libre",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m4",
+    "confidence": 0.19
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite de l'aimantation (par frottement, contact, courant électrique dans un fil enroulé autour d'un clou) et des méthodes de magnétisation, ce qui correspond à l'unité 5 (énergie, magnétisme, effets du courant électrique).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Aimantation par frottement et contact",
+    "skill": "Savoir aimanter un objet en acier par frottement avec un aimant ou par courant électrique, et en observer les effets.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "aimant",
+      "aimantation",
+      "frottement",
+      "électroaimant",
+      "limaille de fer",
+      "épingles"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Mini-défis pratiques du quotidien (récupérer de la limaille, sortir un clou d'une bouteille d'eau sans la vider, aimanter puis désaimanter une aiguille), associés à des protocoles expérimentaux simples avec des supports d'observation (carton, épingle, aimant déplacé en dessous).",
+    "themeGroup": "Les aimants et la boussole"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Bloc [4] : « كَهْرَبَائِيًّا » / « كَهْرَبَائِيَّةٍ » transcrits avec un hamza (ئ) ; l'image porte « كَهْرَبَائِيًّا » dans ce sens, mais la transcription correspond à l'image : à vérifier. « الدَّبَابِيسِ » correspond bien."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Instruction 1-2 : l'image dit « يَلْتَقِطُ المِغْنَاطِيسُ بُرَادَةَ الحَدِيدِ » ; la transcription met une virgule avant « وَلَكِنْ », absente de l'image. Écart mineur."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« تَخْتَزِلُ » : l'image porte « تَخْتَزِلُ » ; « جِسْمٍ » et « الجِسْمَ » correspondent bien. Aucune faute de mot majeure détectée."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« مَغْنَطَةُ إِبْرَةٍ » dans 1-1 : l'image porte « مَغْنَطَةُ إِبْرَةٍ » ; OK. Mais « التَّعْلِيمَة 2-3 » : l'image indique « التعليمة 3-2 » (numérotation inversée) ; la transcription écrit « 2-3 »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le texte « أَفْرِغْ رَفِيقُكَ… » est rattaché à 1-2 alors qu'il constitue une consigne séparée ; on lit « أَفْرِغْ رَفِيقَكَ » (accusatif) dans l'image, pas « رَفِيقُكَ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Beaucoup de voyelles ajoutées dans la transcription (ex. « عِدَّةَ مَرَّاتٍ », « دَبُّوسًا ») ne sont pas toutes clairement visibles dans l'image : tashkeel partiellement inventé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« مَغْنَطَتَهُ » : l'image porte « مُغْنَطَتَهُ » ; « الفُولَاذِيَّ » correspond bien. Le mot « تَمَغْنُطِ » est écrit « التَّمَغْنُطِ » dans l'image."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.96,
+    "verdict": "ok",
+    "confirmedErrors": []
+  },
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.96
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

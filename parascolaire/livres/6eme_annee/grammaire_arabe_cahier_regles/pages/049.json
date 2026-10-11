@@ -1,0 +1,140 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 49,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "جمع المذكر السالم وإعرابه؛ إعراب جمع المؤنث السالم (مراجعة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "استخرج جمع المذكر السالم وأعين علامة إعرابه",
+      "body": "التونسيون مدنيون بالطبع ، متفتحون على الحضارات عرفوا حضارة الفنيقيين فأصبحوا مزارعين مهرة وتجارا محنكين ، وعرفوا الرومانيين فاقتبسوا منهم فن العمارة وأساليب الزراعة ، ولما دخل الإسلام البلاد امتزجوا بالفاتحين العرب ، فتكلموا لغتهم وصاروا على دينهم",
+      "figureDesc": "جدول من ثلاثة أعمدة فارغة للتعمير: جمع المذكر السالم | الوظيفة | علامة الإعراب",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p049_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اجمع الأسماء التي تحتها سطر جمعا مذكرا سالما",
+      "body": "اجتمع الوالي بمحرر الشكايات\nقدم مدير الشركة وعمالها\nوبخ الجار ضارب الكرة وقاذفها\nحامل الشهادة العليا يبحث عن عمل",
+      "figureDesc": "إطار فارغ للإجابة؛ الكلمات المسطرة في الأصل غير واضحة في المسح",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p049_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "كون نصا قصيرا يتضمن مجموعة من الأسماء في صيغة الجمع المذكر السالم",
+      "body": "",
+      "figureDesc": "إطار فارغ لكتابة النص",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p049_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "إعراب جمع المؤنث السالم - المراجعة",
+      "body": "الجمع اسم دالة على أكثر من اثنين\nالضمائر المستعملة للجمع هي:\nنحن: جمع المذكر والمؤنث المتكلم\nأنتن: جمع المؤنث المخاطب",
+      "figureDesc": "جدول من عمودين وسطرين: الضمير (نحن، أنتن) وما يدل عليه",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p049_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.22
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de grammaire arabe (pluriel masculin sain et pluriel féminin sain, révision), alors que les chapitres officiels d'arabe de 6ème portent sur la narration, la description, le dialogue, l'explication et la prescription, et aucun ne correspond clairement à ce contenu.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Pluriel masculin sain et son i'rab",
+    "skill": "Identifier le pluriel masculin sain, former ce pluriel à partir de noms au singulier et déterminer sa marque d'i'rab selon sa fonction.",
+    "pageType": "mixed",
+    "formats": [
+      "autre",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "pluriel masculin sain",
+      "i'rab",
+      "grammaire arabe",
+      "pluriel féminin sain",
+      "révision",
+      "pronoms"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable : repérer dans un texte culturel sur l'histoire des Tunisiens, transformer des noms soulignés en pluriel dans des phrases de la vie quotidienne (métiers, sport), puis rédiger un court texte qui emploie ce pluriel.",
+    "themeGroup": "Le pluriel masculin sain"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الجمع اسم دالة» : l'image indique «الجمع اسم دالة على أكثر من اثنين» ; la transcription est identique, mais «دالة» est conservé tel quel (c'est l'orthographe de l'image, OK)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«وأعين» : l'image indique bien «وأعين» ; correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres «التمرين الثاني / الثالث / الرابع» et «المراجعة» sont absents du texte, remplacés par des numéros [2], [3], [4] et [] ; le titre «المراجعة» est fusionné avec «إعراب جمع المؤنث السالم» par un tiret."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau de l'exercice 2 (جمع المذكر السالم | الوظيفة | علامة الإعراب) est omis de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau final est reformaté en «نحن: ... / أنتن: ...» ; sa structure en deux colonnes n'est pas rendue. Le contenu est correct."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "«إعراب جمع المؤنث السالم» est un grand titre de section, séparé de «المراجعة» dans l'image, mais fusionné dans la transcription."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

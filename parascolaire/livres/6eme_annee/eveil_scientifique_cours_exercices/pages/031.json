@@ -1,0 +1,356 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 31,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الوسط البيئي : مصادر تلوث الأوساط المائية والمحافظة على سلامة هذه الأوساط (Le milieu environnemental : sources de pollution des milieux aquatiques et préservation de leur intégrité)",
+  "items": [
+    {
+      "kind": "title",
+      "number": null,
+      "instruction": null,
+      "body": "الوَسَطُ البيئِيُّ :",
+      "figureDesc": "Petite illustration d'un camion-benne déversant des déchets près d'un arbre.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p031_i1"
+    },
+    {
+      "kind": "subtitle",
+      "number": null,
+      "instruction": null,
+      "body": "مَصادِرُ تَلَوُّثِ الأوْساطِ المائيَّةِ والمُحافَظةِ على سَلامَةِ هذِه الأوْساطِ",
+      "figureDesc": null,
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p031_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "هَلْ يوجَدْ تَصَرُّفٌ صَحيحٌ في الصُّورَةِ ؟ اِشْرَحْ",
+      "body": "ب) مَا هُوَ المُلَوِّثُ ؟",
+      "figureDesc": "Dessin d'une usine avec trois cheminées fumantes au bord de la mer ; un tuyau rejette ses déchets vers l'eau.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p031_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "هَلْ تَعْتَقِدُ بِأَنَّ المِياهَ التي تُشاهِدُها في الصُّورَةِ صالِحَةٌ لِلشُّرْبِ أمْ لا ؟ لِمَ ؟",
+      "body": null,
+      "figureDesc": "Grand tuyau d'évacuation d'où s'écoule une eau trouble et sale vers la mer.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p031_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "هَلِ النَّاسُ الَّذِينَ يَسْبَحُونَ في البَحْرِ مُعَرَّضُونَ لِلْمَرَضِ بِوُجُودِ بَعْضِ المُلَوِّثاتِ ؟",
+      "body": "ـ ماذا سَيَحْصُلُ لِلْحَيَواناتِ وَلِلنَّباتاتِ التي تَعيشُ في البَحْرِ ؟ اشْرَحْ",
+      "figureDesc": "Deux hommes sur une barque remontant un filet chargé de déchets noirs ; des nageurs dans l'eau polluée.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "eveil_scientifique_cours_exercices_p031_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) مَا هُوَ مَصْدَرُ المادَّةِ المُلَوِّثَةِ في الصُّورَةِ ؟",
+      "body": "ب) مَنْ هُوَ المَسْؤُولُ عَنْ إِلْقاءِ كُلِّ هذِه المُلَوِّثاتِ ؟ اشْرَحْ.",
+      "figureDesc": "Grand cargo en mer laissant derrière lui une traînée de déchets flottants.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "eveil_scientifique_cours_exercices_p031_i6"
+    },
+    {
+      "kind": "page_number",
+      "number": null,
+      "instruction": null,
+      "body": "70",
+      "figureDesc": null,
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "eveil_scientifique_cours_exercices_p031_i7"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u4",
+  "topicTitle": "Unité 4 : Reproduction florale et protection des milieux aquatiques",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u4",
+    "confidence": 0.71
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page porte sur les sources de pollution des milieux aquatiques (eau non potable, baignade, faune et flore marines, responsables des rejets) et sur leur protection, ce qui correspond à la partie « protection des milieux aquatiques » de l'unité 4 d'Éveil Scientifique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Pollution des milieux aquatiques",
+    "skill": "Analyser des situations illustrées pour identifier les sources de pollution de l'eau, leurs conséquences sur la santé et le vivant, et les comportements responsables.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "pollution de l'eau",
+      "milieu aquatique",
+      "polluants",
+      "santé",
+      "protection de l'environnement",
+      "mer"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Chaque question part d'une image (comportement à risque, eau trouble, baignade en mer polluée, rejets) et amène l'élève à identifier le polluant, sa source et le responsable, puis à justifier sa réponse, ce qui se réutilise pour des activités d'observation et de débat sur l'environnement.",
+    "themeGroup": "L'eau et sa pollution"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de la page « الوَسَطُ البيئيُّ : » est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le sous-titre « مَصادِرُ تَلَوُّثِ الأوْساطِ المائيَّةِ والمُحافَظةِ على سَلامَةِ هذِه الأوْساطِ » est absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 70 » et la numérotation des exercices (1 à 4) ne figurent pas dans la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans [1], la partie « أ) » devant la première question n'est pas transcrite, alors que « ب) » l'est."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans [1], « يوجَدُ » : l'image porte « يوجَدْ » (sukun, sans tanwin) ; « تَصَرُّفٌ » est correct, mais « يوجَدُ » est transcrit avec une damma qui n'est pas visible."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans [2], la transcription écrit « بِأَنَّ » alors que l'image donne « بِأَنَّ » ; « تَعْتَقِدُ » est transcrit avec un fatha sur le ت (« تَعْتَقِدُ »), mais l'image montre « تَعْتَقِدُ » (cohérent). En revanche, « لِمَ » est vocalisé avec une kasra alors que l'image montre « لِمَ » (cohérent) : aucune erreur nette, mais le tashkeel a manifestement été normalisé et non lu sur l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans [3], « يَسْبَحُونَ », « مُعَرَّضُونَ » : l'image affiche « يَسْبَحُونَ » et « مُعَرَّضُونَ » mais le tashkeel complet de la transcription (« بِوُجُودِ », « الْمُلَوِّثَاتِ ») paraît plus riche que celui de l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Chaque item est dupliqué (version brute puis version vocalisée), et les champs « réponse: None » sont ajoutés alors qu'il n'y a aucune réponse écrite : structure ajoutée."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de la page « الوَسَطُ البيئِيُّ : » (en haut, à côté de l'image du camion-benne) n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le sous-titre « مَصادِرُ تَلَوُّثِ الأوْساطِ المائيَّةِ والمُحافَظةِ على سَلامَةِ هذِه الأوْساطِ » n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 70 » (en bas, dans la pastille bleue) est absent. La numérotation 1 à 4 est bien reprise dans les champs « number »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Item 1 : l'image porte « يوجَدْ » avec un sukun sur le د. La transcription met une damma (« يوجَدُ »), qui n'est pas visible."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "Les champs « instruction » et « body » répètent le même texte dans chaque item. Dans l'item 1, l'instruction contient seulement la première question, et « ب) » ne figure que dans le corps."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel de la transcription est partiellement normalisé : sukun ajoutés après l'article « ال » et voyelles complétées sur « المُلَوِّثات », « بوجود » et « النباتات », que l'image ne porte pas toujours."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "title",
+      "number": null,
+      "instruction": null,
+      "body": "الوَسَطُ البيئِيُّ :",
+      "figureDesc": "Petite illustration d'un camion-benne déversant des déchets près d'un arbre.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p031_i1"
+    },
+    {
+      "kind": "subtitle",
+      "number": null,
+      "instruction": null,
+      "body": "مَصادِرُ تَلَوُّثِ الأوْساطِ المائيَّةِ والمُحافَظةِ على سَلامَةِ هذِه الأوْساطِ",
+      "figureDesc": null,
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p031_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "هَلْ يوجَدْ تَصَرُّفٌ صَحيحٌ في الصُّورَةِ ؟ اِشْرَحْ",
+      "body": "ب) مَا هُوَ المُلَوِّثُ ؟",
+      "figureDesc": "Dessin d'une usine avec trois cheminées fumantes au bord de la mer ; un tuyau rejette ses déchets vers l'eau.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p031_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "هَلْ تَعْتَقِدُ بِأَنَّ المِياهَ التي تُشاهِدُها في الصُّورَةِ صالِحَةٌ لِلشُّرْبِ أمْ لا ؟ لِمَ ؟",
+      "body": null,
+      "figureDesc": "Grand tuyau d'évacuation d'où s'écoule une eau trouble et sale vers la mer.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p031_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "هَلِ النَّاسُ الَّذِينَ يَسْبَحُونَ في البَحْرِ مُعَرَّضُونَ لِلْمَرَضِ بِوُجُودِ بَعْضِ المُلَوِّثاتِ ؟",
+      "body": "ـ ماذا سَيَحْصُلُ لِلْحَيَواناتِ وَلِلنَّباتاتِ التي تَعيشُ في البَحْرِ ؟ اشْرَحْ",
+      "figureDesc": "Deux hommes sur une barque remontant un filet chargé de déchets noirs ; des nageurs dans l'eau polluée.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "al_mounir_eveil_scientifique_6eme_p031_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) مَا هُوَ مَصْدَرُ المادَّةِ المُلَوِّثَةِ في الصُّورَةِ ؟",
+      "body": "ب) مَنْ هُوَ المَسْؤُولُ عَنْ إِلْقاءِ كُلِّ هذِه المُلَوِّثاتِ ؟ اشْرَحْ.",
+      "figureDesc": "Grand cargo en mer laissant derrière lui une traînée de déchets flottants.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "al_mounir_eveil_scientifique_6eme_p031_i6"
+    },
+    {
+      "kind": "page_number",
+      "number": null,
+      "instruction": null,
+      "body": "70",
+      "figureDesc": null,
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "al_mounir_eveil_scientifique_6eme_p031_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "هَلْ يوجَدُ تَصَرُّفٌ صَحيحٌ في الصُّورَةِ ؟ اِشْرَحْ",
+      "body": "هَلْ يوجَدُ تَصَرُّفٌ صَحيحٌ في الصُّورَةِ ؟ اِشْرَحْ \nب) مَا هُوَ الْمُلَوِّثُ ؟",
+      "figureDesc": "Dessin d'une usine avec trois cheminées fumantes au bord de la mer ; un tuyau rejette ses déchets vers l'eau.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p031_i1",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "هَلْ تَعْتَقِدُ بِأَنَّ الْمِيَاهَ الَّتِي تُشَاهِدُهَا فِي الصُّورَةِ صَالِحَةٌ لِلشُّرْبِ أَمْ لاَ ؟ لِمَ ؟",
+      "body": "هَلْ تَعْتَقِدُ بِأَنَّ الْمِيَاهَ الَّتِي تُشَاهِدُهَا فِي الصُّورَةِ صَالِحَةٌ لِلشُّرْبِ أَمْ لاَ ؟ لِمَ ؟",
+      "figureDesc": "Grand tuyau d'évacuation d'où s'écoule une eau trouble et sale vers la mer.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "al_mounir_eveil_scientifique_6eme_p031_i2",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "هَلِ النَّاسُ الَّذِينَ يَسْبَحُونَ فِي الْبَحْرِ مُعَرَّضُونَ لِلْمَرَضِ بِوُجُودِ بَعْضِ الْمُلَوِّثَاتِ ؟ ـ مَاذَا سَيَحْصُلُ لِلْحَيَوَانَاتِ وَلِلنَّبَاتَاتِ الَّتِي تَعِيشُ فِي الْبَحْرِ ؟ اشْرَحْ",
+      "body": "هَلِ النَّاسُ الَّذِينَ يَسْبَحُونَ فِي الْبَحْرِ مُعَرَّضُونَ لِلْمَرَضِ بِوُجُودِ بَعْضِ الْمُلَوِّثَاتِ ؟\nـ مَاذَا سَيَحْصُلُ لِلْحَيَوَانَاتِ وَلِلنَّبَاتَاتِ الَّتِي تَعِيشُ فِي الْبَحْرِ ؟ اشْرَحْ",
+      "figureDesc": "Deux hommes sur une barque remontant un filet chargé de déchets noirs ; des nageurs dans l'eau polluée.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p031_i3",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) مَا هُوَ مَصْدَرُ الْمَادَّةِ الْمُلَوِّثَةِ فِي الصُّورَةِ ؟ ب) مَنْ هُوَ الْمَسْؤُولُ عَنْ إِلْقَاءِ كُلِّ هَذِهِ الْمُلَوِّثَاتِ ؟ اشْرَحْ.",
+      "body": "أ) مَا هُوَ مَصْدَرُ الْمَادَّةِ الْمُلَوِّثَةِ فِي الصُّورَةِ ؟\nب) مَنْ هُوَ الْمَسْؤُولُ عَنْ إِلْقَاءِ كُلِّ هَذِهِ الْمُلَوِّثَاتِ ؟ اشْرَحْ.",
+      "figureDesc": "Grand cargo en mer laissant derrière lui une traînée de déchets flottants.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p031_i4",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

@@ -1,0 +1,146 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 53,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقويم – آداب الاستئذان وحفظ سور من القرآن الكريم (السندان 3 و4) وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "فِي الْعَشِيَّةِ أَعْطَانِي أَبِي صَاعًا مِنَ الزَّيْتُونِ هَدِيَّةً لِعَمَّتِي.. وَقَبْلَ الدُّخُولِ إِلَى الْمَنْزِلِ طَرَقْتُ الْبَابَ بِهُدُوءٍ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p053_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مَا رَأْيُكَ فِي سُلُوكِ الطِّفْلِ وَلِمَاذَا ؟",
+      "body": "سطران منقطان لكتابة الإجابة (التنقيط: 1 + 1). المعيار: معـ 3",
+      "figureDesc": "سطران منقطان للإجابة ومربعان لتقييم المعيار معـ 3 على اليمين",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p053_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أُكَمِّلُ لِأَسْتَدِلَّ بِحَدِيثٍ حَوْلَ آدَابِ الِاسْتِئْذَانِ.",
+      "body": "قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: « الِاسْتِئْذَانُ ........... فَإِنْ ........... لَكَ وَإِلَّا ........... » (الْبُخَارِي)",
+      "figureDesc": "ثلاث فراغات منقطة؛ مربع لتقييم المعيار معـ 2أ؛ التنقيط: 1",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p053_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَضَعُ الْعَلَامَةَ ( X ) فِي الْخَانَةِ الْمُنَاسِبَةِ.",
+      "body": "السُّلُوكُ يَدُلُّ عَلَى: آدَابِ الِاسْتِئْذَانِ / عَدَمِ الِاسْتِئْذَانِ. السلوكات: الطَّرْقُ دُونَ إِلْحَاحٍ؛ الدُّخُولُ إِلَى الْمَنْزِلِ عَلَى غَفْلَةٍ؛ طَلَبُ الْإِذْنِ لِلدُّخُولِ. (0,5 لكل سطر)",
+      "figureDesc": "جدول بثلاثة أعمدة (السلوك، آداب الاستئذان، عدم الاستئذان) وثلاثة أسطر؛ مربعات التقييم معـ 2ج",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p053_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "خِلَالَ السَّهْرَةِ الْعَائِلِيَّةِ طَلَبْتُ مِنْ أُخْتِي أَنْ تُرَاقِبَ حِفْظِي لِسُوَرٍ مِنَ الْقُرْآنِ الْكَرِيمِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p053_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أَرْبُطُ كُلَّ آيَةٍ بِسُورَتِهَا.",
+      "body": "الآيات: إِنَّ الْإِنْسَانَ لِرَبِّهِ لَكَنُودٌ؛ وَتَكُونُ الْجِبَالُ كَالْعِهْنِ الْمَنْفُوشِ؛ كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَقِينِ. السور: سُورَةُ التَّكَاثُرِ؛ سُورَةُ الْعَادِيَاتِ؛ سُورَةُ الْقَارِعَةِ. (0,5 لكل ربط)",
+      "figureDesc": "عمودان من النقاط للتوصيل بين الآيات (يمين) وأسماء السور (يسار)",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p053_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مستويات التملك: انْعِدَامُ التَّمَلُّكِ: 0 في كل المعايير. التَّمَلُّكُ دُونَ الْأَدْنَى: معـ1: 0,5؛ معـ2أ: 1؛ معـ2ب: 1؛ معـ2ج: 0,5؛ معـ2د: 0,5؛ معـ3: 0,5 - 1 - 1,5. التَّمَلُّكُ الْأَدْنَى: معـ1: 1؛ معـ2أ: 2؛ معـ2ب: 2؛ معـ2ج: 1؛ معـ2د: 1؛ معـ3: 2 - 2,5. التَّمَلُّكُ الْأَقْصَى: معـ1: 1,5؛ معـ2أ: 3؛ معـ2ب: 3؛ معـ2ج: 1,5؛ معـ2د: 1,5؛ معـ3: 3 - 3,5. الشَّفَوِيُّ: سَلَامَةُ النُّطْقِ 1,5؛ الِاسْتِرْسَالُ 1,5؛ الِاسْتِظْهَارُ الْكَامِلُ 1,5؛ التِّلَاوَةُ 1,5. المجموع: 20",
+      "figureDesc": "جدول إسناد الأعداد: معايير الحد الأدنى ومعيار التميز مع مستويات التملك، وخانة الشفوي والمجموع 20",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p053_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p1",
+    "confidence": 0.16
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Il s'agit d'une page d'évaluation (تقويم) avec grille de notation, portant sur l'éducation islamique (règles de politesse pour demander l'autorisation d'entrer, mémorisation de sourates du Coran), ce qui ne correspond clairement à aucune des unités de langue arabe proposées.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Convenances de l'autorisation d'entrer et sourates",
+    "skill": "Évaluer un comportement selon les règles de politesse pour entrer chez autrui, compléter un hadith et associer des versets à leur sourate.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "texte_a_trous",
+      "tableau_schema",
+      "appariement"
+    ],
+    "keywords": [
+      "adab al-isti'dhan",
+      "hadith",
+      "demander la permission",
+      "sourates courtes",
+      "évaluation par critères",
+      "barème de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Mise en situation de la vie quotidienne (visite à une tante avec un cadeau) pour faire juger un comportement, combinée à un hadith à compléter, un tableau de comportements à classer et un appariement verset-sourate, avec une grille de notation par critères de maîtrise.",
+    "themeGroup": "Politesse d'entrée et autorisation"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

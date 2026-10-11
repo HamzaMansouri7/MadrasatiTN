@@ -1,0 +1,64 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 2,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "Page de titre : امتحانات الثلاثي الثاني - جسر النجاح (2 أساسي) - دار اليمامة لنشر الكتاب",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "امتحانات الثلاثي الثاني 2 أساسي\nجِسْرُ النَّجَاحِ\nاختبارات في كلّ الْمواد تهيئكم لاجتياز الامتحانات بامتياز\nالمختار العميري - متفقّد عام للمدارس الابتدائية\nفوزي بن الشيخ - متفقّد أوّل للمدارس الابتدائية\nسليم ريدان - مساعد بيداغوجي\nعادل الأنصاري - أستاذ مدارس ابتدائية\nدار اليمامة لنشر الكتاب",
+      "figureDesc": "Page de couverture intérieure sur fond quadrillé : un disque indiquant le chiffre 2 « أساسي » avec l'arc « الثلاثي الثاني », un titre décoratif en gros caractères et le logo de la maison d'édition (oiseau stylisé) en bas.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p002_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Toutes matières (page de garde)",
+  "topicReason": "Il s'agit de la page de titre d'un recueil d'examens du 2ème trimestre couvrant toutes les matières, sans contenu rattachable à un chapitre précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Annales du deuxième trimestre",
+    "skill": "Se préparer aux examens du deuxième trimestre de 2ème année dans toutes les matières.",
+    "pageType": "mixed",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "examens",
+      "deuxième trimestre",
+      "2ème année primaire",
+      "parascolaire",
+      "préparation"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Page de titre sans exercice : elle montre seulement l'organisation d'un recueil d'épreuves trimestrielles pluridisciplinaires, avec les auteurs (inspecteurs et enseignants) et l'éditeur.",
+    "themeGroup": "Évaluations et annales"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

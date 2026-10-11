@@ -1,0 +1,126 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 13,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الوحدة الثانية : وضعية تقييم (التنفس عند الإنسان وجهاز التنفس)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضَعِ القِمَعَ دَاخِلَ فُوَّهَةِ القَارُورَةِ وَثَبِّتْهُ جَيِّدًا بِوَاسِطَةِ الصَّلْصَالِ.",
+      "body": "- اُسْكُبِ المَاءَ دَاخِلَ القِمَعِ.\n- اِشْرَحْ مَاذَا يَحْدُثُ.\n- كَيْفَ يُمْكِنُ تَعْدِيلُ التَّجْرِبَةِ كَيْ يَمُرَّ المَاءُ مِنَ القِمَعِ إِلَى القَارُورَةِ؟",
+      "figureDesc": "صورة قارورة بلاستيكية داكنة اللون مثبت على فوهتها قمع شفاف بواسطة الصلصال (أصفر).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p013_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبِطْ كَلِمَاتِ العَمُودِ الأَوَّلِ بِمَا يُنَاسِبُهَا مِنَ العَمُودِ الثَّانِي :",
+      "body": "العمود الأول: الشَّهِيقُ ؛ الزَّفِيرُ ؛ جِهَازُ التَّنَفُّسِ ؛ الأَنْفُ.\nالعمود الثاني:\n• يُنَقِّي الدَّمَ مِنْ ثَانِي أُكْسِيدِ الكَرْبُونِ وَيُغْنِيهِ بِالأُكْسِجِينِ اللَّازِمِ\n• غَنِيٌّ بِثَانِي أُكْسِيدِ الكَرْبُونِ وَبُخَارِ المَاءِ.\n• يُنَقِّي الهَوَاءَ مِنَ الغُبَارِ وَيُرَطِّبُهُ.\n• غَنِيٌّ بِالأُكْسِجِينِ.",
+      "figureDesc": "عمودان من الكلمات مع نقاط للربط بينهما.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p013_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لِمَاذَا اُرْتَفَعَ المَاءُ فِي القَارُورَةِ الثَّالِثَةِ وَانْطَفَأَتِ الشَّمْعَةُ؟",
+      "body": "",
+      "figureDesc": "ثلاثة أحواض فيها ماء، في كل منها شمعة مشتعلة مغطاة بقارورة شفافة مقلوبة (مرقمة 1 و2 و3)؛ مستوى الماء يرتفع في القارورة الثالثة وتنطفئ الشمعة. يوجد سطر منقط للإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p013_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.45
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est une évaluation sur la respiration humaine et l'appareil respiratoire (inspiration/expiration, O2 et CO2, bougie qui s'éteint dans la bouteille, expérience de l'air qui empêche l'eau de passer), ce qui correspond à l'Unité 2 sur l'air, la respiration et la combustion.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La respiration humaine",
+    "skill": "Expliquer le passage de l'air dans l'appareil respiratoire et distinguer inspiration, expiration et rôle des organes à partir d'expériences simples.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "appariement",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "respiration",
+      "appareil respiratoire",
+      "inspiration",
+      "expiration",
+      "dioxyde de carbone",
+      "expérience"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation d'évaluation en trois temps : une expérience de manipulation avec entonnoir et bouteille pour montrer qu'un air emprisonné bloque le passage de l'eau (analogie avec les poumons), un appariement entre notions et fonctions, puis l'interprétation d'une expérience avec bougie et montée d'eau dans une bouteille.",
+    "themeGroup": "La respiration"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de la page est absent : «الوحدة الثانية : وَضْعِيَّةُ تَقْيِيمٍ» (et le numéro de page 37)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : «أَرْبِطْ» est transcrit avec une hamza. L'image montre «أرْبِطِ» (écrit «أُرْبُطِ»/«اربط»), la forme correcte étant «اِرْبِطْ»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«يُنَقِّي» et «يُرَطِّبُهُ» : l'image porte les voyelles «يُنَقِّي الهَوَاءَ…» ; les marques sont à peu près fidèles, mais «الدَّمَ» est écrit «الدَّمَ» dans l'image sans shadda visible, et «بِثَانِي» sans «وَيُغْنِيهِ» complet. Les voyelles de la transcription sont plus complètes que celles de l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : «اُرْتَفَعَ» s'écrit dans l'image «أُرْتُفِعَ» (avec voyelles légèrement différentes), et «الثَّالِثَةِ» est correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les trois schémas de bougies sous cloche (numérotés 1, 2, 3) de l'exercice 3 et la photo de la bouteille avec l'entonnoir de l'exercice 1 ne sont pas décrits."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 1 : «تَعْدِيلُ» est correct, mais l'image écrit «يَمُرَّ» sans la shadda marquée (« يَمُرْ »). La transcription ajoute une shadda non visible."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

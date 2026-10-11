@@ -1,0 +1,140 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 41,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "المفعول المطلق (النحو العربي) – مراجعة المصدر ودرس المفعول المطلق. Remarque : la page est en arabe, bien que la matière indiquée soit « Français ».",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "المصدر اسم يدل على حالة أو حدث غير مقيد بزمن ويكون على أوزان سماعية وعلى أوزان قياسية\n\nأمثلة لبعض الأوزان السماعية: فتح فتحا | دخل دخولا | صهل صهيلا | سهل سهولة\n\nأمثلة لبعض الأوزان القياسية:\nفعّل تفعيلا | تفعل تفعلا | استفعل استفعالا | تفعلل تفعللا\nعلّم تعليما | تسلّم تسليما | استقبل استقبالا | تدحرج تدحرجا",
+      "figureDesc": "Un tableau d'une ligne à 4 colonnes (exemples de masdars à schèmes d'origine auditive/samāʿī) et un tableau de 2 lignes à 4 colonnes (exemples de schèmes réguliers/qiyāsī).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p041_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "يؤكد الفعل في الجملة بزيادة مصدره منصوبا يسمى هذا المصدر مفعولا مطلقا\nالمفعول المطلق مصدر متمم يأتي عادة بعد فعل من لفظه وحكمه النصب\n\nمن معاني المفعول المطلق:\nتأكيد معنى الفعل ولفظه: دفعه دفعا\nبيان النوع: انتصر انتصار البطال\nبيان العدد: ركع ركعتين\n\nيرد المفعول المطلق:\nمفردة: التهمه التهاما\nمركبا إضافيا: استسلم استسلام الجبناء\nمركبا نعتيا: شكره شكرا جزيلا\nمركب جر: نصحني نصيحة فيها حب",
+      "figureDesc": "Deux tableaux : les sens du complément absolu (confirmation, précision du type, précision du nombre) avec un exemple chacun ; les formes du complément absolu (mot simple, annexion, qualificatif, groupe prépositionnel) avec exemples.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p041_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أضف إلى معلوماتك",
+      "body": "زمن معاني المفعول المطلق كذلك\nتأكيد معنى الفعل: جلده ضربا\nتعويض التلفظ بالفعل: صبرا يا أخي",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "grammaire_arabe_cahier_regles_p041_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أشكل أواخر الكلمات التي أمامها قوسين واذكر وظائفها",
+      "body": "",
+      "figureDesc": "Consigne placée dans un cadre ; le contenu de l'exercice n'apparaît pas sur cette page (il se poursuit probablement sur la page suivante). Titres « التمارين » et « التمرين الأول ».",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p041_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.12
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la grammaire arabe (المفعول المطلق et المصدر), matière réelle : arabe, mais les chapitres officiels d'arabe de 6ème portent sur la narration, la description, le dialogue, etc., et aucun ne correspond clairement à ce point de grammaire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Le complément absolu (المفعول المطلق)",
+    "skill": "Identifier le maître (مصدر) et employer le complément absolu pour renforcer le verbe, préciser le type ou le nombre, et en indiquer la fonction.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "complément absolu",
+      "maçdar",
+      "grammaire arabe",
+      "vocalisation",
+      "fonction grammaticale",
+      "verbe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure réutilisable : rappel du masdar (formes régulières et irrégulières), cours sur les trois sens du complément absolu avec exemples courts, puis exercice de vocalisation finale des mots et identification de leur fonction. Note : la page est en arabe, la matière indiquée « Français » est donc probablement une erreur d'étiquetage.",
+    "themeGroup": "Les compléments"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«غير مقيد» dans la transcription ; l'image montre «حدث يرمقيد» (rendu OCR déformé de «غير مقيد»). La transcription corrige à juste titre, donc écart mineur."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les exemples sont transcrits avec des shadda («فعّل», «علّم», «تسلّم») alors que l'image ne montre aucun tashkeel : «فعل», «علم», «تسلم»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«تفعللا» (transcription) ; l'image montre «تفعلل تفعللا», ce qui est correct. Aucune erreur sur ce point."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«تأكيد معنى الفعل: جلده ضربا» : correct, mais le titre de la section est «زمن معاني المفعول المطلق كذلك» dans l'image, ce qui est repris tel quel."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre «التمارين» (section des exercices) est omis, ainsi que le libellé «التمرين الأول» : la transcription ne garde que «[1]»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«انتصر انتصار البطال» : correct. Mais «زمن» est transcrit exactement ; aucune autre faute détectée dans cette ligne."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

@@ -1,0 +1,322 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 71,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الرياضيات - وضعية تقييمية (السنة 1، الثلاثي الثاني): الجمع والمقارنة وترتيب الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُوَحِّدُ بَيْنَ الْمَجْمُوعَتَيْنِ وَأُعَبِّرُ عَنْ ذَلِكَ بِعَمَلِيَّةٍ جَمْعِيَّةٍ.",
+      "body": "..... + ..... = ..... (سطور منقّطة لكتابة العملية الجمعية)",
+      "figureDesc": "لا يوجد رسم. مساحة فارغة تحتوي على خطوط منقطة للإجابة، وبجانبها خانة تقييم (معيار 1).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p071_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ تَنَازُلِيًّا.",
+      "body": "..... < ..... < ..... (سطور منقّطة تفصل بينها علامتا مقارنة)",
+      "figureDesc": "ثلاثة سطور منقطة تفصل بينها علامتا مقارنة (<)، وبجانبها خانتا تقييم (معيار 2أ ومعيار 2ب). الأعداد المراد ترتيبها غير ظاهرة في الصفحة (قد تكون في الصفحة السابقة).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p071_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "شَاهَدَ نَادِرٌ أَشْجَارًا مُتَنَوِّعَةً. أُوَحِّدُ بَيْنَ الْمَجْمُوعَتَيْنِ وَأُعَبِّرُ عَنْ ذَلِكَ بِعَمَلِيَّةٍ جَمْعِيَّةٍ.",
+      "body": "..... + ..... = .....",
+      "figureDesc": "مجموعتان داخل شكلين بيضاويين: الأولى 8 أشجار كبيرة ذات جذوع بنية مرتبة في شكل بيضاوي (العدد 8 في دائرة)، والثانية 9 أشجار أصغر مرتبة في شكل بيضاوي (العدد 9 في دائرة). تحتهما سطر منقط لكتابة العملية الجمعية، وبجانبه خانة تقييم (معيار 2ب).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p071_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ حَسَبَ اخْتِيَارِي.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "خط منقط فقط، وبجانبه خانة تقييم (معيار 2ب).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p071_i4"
+    },
+    {
+      "kind": "lesson",
+      "number": "السَّنَدُ 4",
+      "instruction": "",
+      "body": "لَمَّا عَادَ نَادِرٌ إِلَى الْمَنْزِلِ أَعْطَاهُ أَبُوهُ نُقُودًا لَهُ وَلِأُخْتِهِ رَبَابَ.",
+      "figureDesc": "عنوان السند في لافتة خضراء. يتبعه نص السند فقط في هذه الصفحة، وبجانبه خانة تقييم (معيار 5).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p071_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p1",
+    "confidence": 0.48
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une situation d'évaluation du trimestre 2 qui mêle addition (réunion de deux ensembles), comparaison et rangement de nombres, ce qui recoupe plusieurs chapitres (P3 pour l'addition, P4 pour les nombres jusqu'à 19), et aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition, comparaison et rangement des nombres",
+    "skill": "Réunir deux collections en écrivant une addition, puis ranger des nombres dans l'ordre décroissant ou selon un critère choisi.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "addition",
+      "réunion de collections",
+      "ordre décroissant",
+      "comparaison de nombres",
+      "situation d'évaluation",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations d'évaluation à partir d'un contexte de vie (arbres observés, argent de poche partagé entre frère et sœur), avec des cases à compléter pour l'addition et des chaînes de comparaison, et un rangement des nombres au choix de l'élève qui ouvre la réponse.",
+    "themeGroup": "Comparaison et rangement des nombres"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "التعليمة 5 et 7: « أُوَحِّدُ » transcrit, l'image montre « أُوَحِّدْ » (sukūn sur le dāl, sans ḍamma) et « أُعَبِّرْ » (sukūn sur le rā')."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "التعليمة 6 et 8: « أُرَتِّبُ » transcrit, l'image montre « أُرَتِّبُ » avec le tashkeel de la source ; « تَنَازُلِيًّا » est correct, mais « الْأَعْدَادَ » est écrit sans hamza voyellée dans l'image (« الأَعْدَاد » avec sukūn final)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« مُتَنَوِّعَةً » transcrit avec tanwīn, l'image montre « مُتَنَوِّعَةٌ » (ḍammatān)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« رَبَابَ » transcrit, l'image montre « رَبَاب » avec un sukūn final (« رَبَابَ. » non fatḥa)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 6: signes de comparaison transcrits « > », l'image montre « < » (ouverts vers la droite en lecture arabe); le sens est à vérifier selon l'orientation, mais le signe visible est « < »."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 7: les deux ensembles d'arbres avec les étiquettes 8 et 9 ne sont pas mentionnés (8 arbres à gauche, 9 arbres à droite)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "« شَاهَدَ نَادِرٌ أَشْجَارًا مُتَنَوِّعَةً » se trouve avant la consigne 7 dans l'image, pas après."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les marqueurs de marge (مع1، مع2أ، مع2ب، مع2ب، مع5) et le numéro de page 95 ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le bandeau latéral (الرياضيات - وضعية تقييمية، السنة 1، الثلاثي الثاني) est omis."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« réponse: None » et les descriptions entre parenthèses (« سطور منقّطة... ») ne sont pas du texte de l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 6 : les signes de comparaison visibles dans l'image sont « < » et non « > ». Le corps de l'exercice est corrigé en conséquence."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La phrase « شَاهَدَ نَادِرٌ أَشْجَارًا مُتَنَوِّعَةً. » précède la consigne 7 dans l'image. Elle est placée avant la consigne dans la transcription corrigée."
+      },
+      {
+        "type": "autre",
+        "severity": "minor",
+        "detail": "Exercice 7 : la description parle de deux cases d'évaluation, alors que l'image n'en montre qu'une (marge « مع2ب »)."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُوَحِّدُ بَيْنَ الْمَجْمُوعَتَيْنِ وَأُعَبِّرُ عَنْ ذَلِكَ بِعَمَلِيَّةٍ جَمْعِيَّةٍ.",
+      "body": "..... + ..... = ..... (سطور منقّطة لكتابة العملية الجمعية)",
+      "figureDesc": "لا يوجد رسم. مساحة فارغة تحتوي على خطوط منقطة للإجابة، وبجانبها خانة تقييم (معيار 1).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p071_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ تَنَازُلِيًّا.",
+      "body": "..... < ..... < ..... (سطور منقّطة تفصل بينها علامتا مقارنة)",
+      "figureDesc": "ثلاثة سطور منقطة تفصل بينها علامتا مقارنة (<)، وبجانبها خانتا تقييم (معيار 2أ ومعيار 2ب). الأعداد المراد ترتيبها غير ظاهرة في الصفحة (قد تكون في الصفحة السابقة).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p071_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "شَاهَدَ نَادِرٌ أَشْجَارًا مُتَنَوِّعَةً. أُوَحِّدُ بَيْنَ الْمَجْمُوعَتَيْنِ وَأُعَبِّرُ عَنْ ذَلِكَ بِعَمَلِيَّةٍ جَمْعِيَّةٍ.",
+      "body": "..... + ..... = .....",
+      "figureDesc": "مجموعتان داخل شكلين بيضاويين: الأولى 8 أشجار كبيرة ذات جذوع بنية مرتبة في شكل بيضاوي (العدد 8 في دائرة)، والثانية 9 أشجار أصغر مرتبة في شكل بيضاوي (العدد 9 في دائرة). تحتهما سطر منقط لكتابة العملية الجمعية، وبجانبه خانة تقييم (معيار 2ب).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p071_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ حَسَبَ اخْتِيَارِي.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "خط منقط فقط، وبجانبه خانة تقييم (معيار 2ب).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p071_i4"
+    },
+    {
+      "kind": "lesson",
+      "number": "السَّنَدُ 4",
+      "instruction": "",
+      "body": "لَمَّا عَادَ نَادِرٌ إِلَى الْمَنْزِلِ أَعْطَاهُ أَبُوهُ نُقُودًا لَهُ وَلِأُخْتِهِ رَبَابَ.",
+      "figureDesc": "عنوان السند في لافتة خضراء. يتبعه نص السند فقط في هذه الصفحة، وبجانبه خانة تقييم (معيار 5).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p071_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُوَحِّدُ بَيْنَ الْمَجْمُوعَتَيْنِ وَأُعَبِّرُ عَنْ ذَلِكَ بِعَمَلِيَّةٍ جَمْعِيَّةٍ.",
+      "body": "..... + ..... = ..... (سطور منقّطة لكتابة العملية الجمعية)",
+      "figureDesc": "لا يوجد رسم. مساحة فارغة تحتوي على خطوط منقطة للإجابة، وبجانبها خانة تقييم (معيار 1).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_1ere_evaluations_p071_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ تَنَازُلِيًّا.",
+      "body": "..... > ..... > ..... (سطور منقّطة تفصل بينها علامتا مقارنة)",
+      "figureDesc": "ثلاثة سطور منقطة تفصل بينها علامتا مقارنة، وبجانبها خانتا تقييم (معيار 2أ ومعيار 2ب). الأعداد المراد ترتيبها غير ظاهرة في الصفحة (قد تكون في الصفحة السابقة).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_1ere_evaluations_p071_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أُوَحِّدُ بَيْنَ الْمَجْمُوعَتَيْنِ وَأُعَبِّرُ عَنْ ذَلِكَ بِعَمَلِيَّةٍ جَمْعِيَّةٍ.",
+      "body": "شَاهَدَ نَادِرٌ أَشْجَارًا مُتَنَوِّعَةً. ..... + ..... = .....",
+      "figureDesc": "مجموعتان داخل شكلين بيضاويين: الأولى 8 أشجار كبيرة ذات جذوع بنية مرتبة في دائرة (العدد 8 في دائرة)، والثانية 9 أشجار أصغر مرتبة في شكل بيضاوي (العدد 9 في دائرة). تحتها سطر منقط لكتابة العملية الجمعية، وبجانبه خانتا تقييم (معيار 2ب).",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "jisr_ennajah_1ere_evaluations_p071_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ حَسَبَ اخْتِيَارِي.",
+      "body": "سطر منقط للإجابة.",
+      "figureDesc": "خط منقط فقط، وبجانبه خانة تقييم (معيار 2ب).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_1ere_evaluations_p071_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السَّنَدُ 4",
+      "instruction": "",
+      "body": "لَمَّا عَادَ نَادِرٌ إِلَى الْمَنْزِلِ أَعْطَاهُ أَبُوهُ نُقُودًا لَهُ وَلِأُخْتِهِ رَبَابَ.",
+      "figureDesc": "عنوان السند في لافتة خضراء. يتبعه نص السند فقط في هذه الصفحة، وبجانبه خانة تقييم (معيار 5).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_1ere_evaluations_p071_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

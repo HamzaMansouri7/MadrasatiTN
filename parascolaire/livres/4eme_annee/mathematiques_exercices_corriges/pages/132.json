@@ -1,0 +1,674 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 132,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigés : الأعداد إلى 999 999 (ترتيب، مقارنة، تفكيك)، الاختبار التقويمي، قيس المساحات (هندسة) – صفحات 93 إلى 96",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 93 – حساب – السنة الرابعة",
+      "body": "أ) 167 532\nب) 196 752\nج) 156 752\nد) 167 572",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الصفحة 93 – حساب",
+      "body": "الأشكال البيضاوية : 900 000 ؛ 600 000 ؛ 100 000 ؛ 10 000 ؛ 100\nالمستطيلات : 800 000 ؛ 165×1 000 ؛ 825 ؛ 10×8",
+      "figureDesc": "خمسة أشكال بيضاوية تحتوي على 900 000 و600 000 و100 000 و10 000 و100، مرتبطة بخط أفقي بأربعة مستطيلات تحتوي على 800 000 و165×1 000 و825 و10×8. الربط الدقيق بين الأشكال والمستطيلات غير مؤكد.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 93 – حساب",
+      "body": "ب) 531 094 < 531 904 < 593 410 < 945 310 < 953 104 < 953 140",
+      "figureDesc": "ست بطاقات أرقام (عمود يمين) : 9 5 3 1 4 0 / 5 9 3 4 1 0 / 5 3 1 0 9 4 ؛ (عمود يسار) : 9 4 5 3 1 0 / 9 5 3 1 0 4 / 5 3 1 9 0 4",
+      "answer": "531 094 < 531 904 < 593 410 < 945 310 < 953 104 < 953 140",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 94 – الاختبار التقويمي – أصغر عدد هو :",
+      "body": "801 269",
+      "figureDesc": "",
+      "answer": "801 269",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الصفحة 94 – الاختبار التقويمي – كمية الزّيت الباقية باللتر :",
+      "body": "1 200 - (300 + 450) = 450\nعدد الأوعية المملوءة :\n450 على 9 = 50",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 94 – الاختبار التقويمي – ثمن شراء الفستان جاهزا بالمي :",
+      "body": "82 500 - 7 500 = 75 000\nثمن القماش بالمي :\n(2 × 16 000) + (2 : 16 000) = 40 000\nثمن الأزرار بالمي : (3 000 : 6) × 4 = 2 000\nأجرة الخياطة بالمي : 40 000 على 2 = 20 000\nثمن كلفة الفستان المصنوع بالمي :\n40 000 + 20 000 + 2 000 = 62 000\nستختار الحل الثاني لأنها توفّر :\n75 000 - 62 000 = 13 000",
+      "figureDesc": "",
+      "answer": "13 000",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 95 – حساب",
+      "body": "{ 300 000 - 210 000 - 201 000 - 200 100 -\n200 010 - 200 001 - 120 000 - 102 000 - 200 -\n100 - 100 020 - 100 002 }",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 95 – حساب – جدول: العدد، عدد الآلاف، الباقي",
+      "body": "العدد 26 350 ؛ عدد الآلاف 26 ؛ الباقي 350\nالعدد 275 640 ؛ عدد الآلاف 275 ؛ الباقي 640\nالعدد 750 ؛ عدد الآلاف 0 ؛ الباقي 750\nالعدد 183 000 ؛ عدد الآلاف 183 ؛ الباقي 0",
+      "figureDesc": "جدول بثلاثة أعمدة: العدد، عدد الآلاف، الباقي",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "الصفحة 95 – حساب – عدد الأوراق التي أحصاها القابض :",
+      "body": "900 000 مي = 900 دينار\n900 على 5 = 180\nعدد الرّزم التي كوّنها :\n180 على 20 = 9",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 96 – هندسة – قيس ضلع الحديقة بالم :",
+      "body": "300 على 4 = 75\nقيس مساحتها بالم2 : 75 × 75 = 5 625",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الصفحة 96 – هندسة – قيس العرض بالم :",
+      "body": "240 على 8 = 30\nقيس الطول بالم : 30 × 3 = 90\nقيس مساحتها بالم2 : 30 × 90 = 2 700",
+      "figureDesc": "",
+      "answer": "2 700",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "الصفحة 96 – هندسة – قيس عرض المستطيل الداخلي بالصم =",
+      "body": "6 - (2 × 1) = 4 صم\nقيس مساحة المستطيل الداخلي بالصم2 : 4 × 12 = 48\nقيس طول المستطيل الخارجي بالصم : 14 × 6 = 84\nقيس المساحة المظللة بالصم2 : 84 - 48 = 36",
+      "figureDesc": "",
+      "answer": "36",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "الصفحة 96 – هندسة – مساحة هذه القطعة الأرضية بالم2 :",
+      "body": "(35 × 35) + (15 × 15) = 1 225 + 225 = 1 450",
+      "figureDesc": "",
+      "answer": "1 450",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "الصفحة 96 – هندسة – قيس مساحة (أ) : 4 200 م2 ؛ قيس مساحة (ب) : 3 550 م2",
+      "body": "(أ) أكبر مساحة من (ب)",
+      "figureDesc": "",
+      "answer": "(أ) أكبر مساحة من (ب)",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p132_i14"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.37
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page de corrigés porte surtout sur les nombres à 6 chiffres (ordre, comparaison, décomposition en milliers) et la monnaie (problème sur les prix), ce qui correspond à la Période 1 ; le test d'évaluation et la mesure des surfaces sont secondaires.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 999 999 et aire",
+    "skill": "Comparer, ranger et décomposer des nombres jusqu'à 999 999, résoudre des problèmes de calcul et calculer l'aire d'un carré.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "appariement"
+    ],
+    "keywords": [
+      "nombres à six chiffres",
+      "comparaison et rangement",
+      "décomposition en milliers",
+      "problèmes de monnaie",
+      "aire du carré",
+      "corrigé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : comparer le coût d'une robe cousue maison et d'une robe achetée, répartir de l'huile en récipients, former des liasses de billets, trouver le côté d'un jardin à partir de son périmètre puis son aire ; tableau de décomposition en milliers et reste.",
+    "themeGroup": "Grands nombres"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.4 p.94 : '82 500 - 7 500 = 75 000' inversé ; l'image montre '75 000 - 7 500 - 82 500' (75 000 + 7 500 = 82 500 attendu, écrit avec tirets)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.4 p.94 : '(2 × 16 000) + (2 : 16 000)' ; l'image montre '(2 : 16 000) + (2 × 16 000)' (ordre inversé) = 40 000."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.4 p.94 : '40 000 + 20 000 + 2 000' ; l'image montre '2 000 + 20 000 + 40 000' (ordre inversé)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'ثمن كلفة الفستان' : l'image indique 'ثمن كلفة الفستان المصنوع بالمي' ; la transcription a omis 'المصنوع' dans la ligne (présent seulement dans la ligne suivante, mais tronqué : 'ثمن كلفة الفستان المصنوع' est correct ailleurs)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Ex.2 p.93 : le cadre sous 100 000 est '165×1 000' et sous 600 000 est '800 000' ; la transcription associe mal les cases (600 000 ← 165×1000) et marque 100 000 comme 'غير واضح' alors que '165 × 1 000' est lisible."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Ex.4 p.93 : les six nombres en cases (9 4 5 3 1 0 etc.) sont omis ; la ligne 'ب)' utilise '<' dans l'image (593 410 > ... lu de droite à gauche) et la transcription mélange '>' et '<' ; '531 094 < 531 904' est correct mais la chaîne est présentée avec des '>' non vus."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.1 p.95 : l'ordre des nombres dans l'ensemble diffère de l'image (ligne 2 : 200 010, 200 001, 120 000, 102 000, 200 ; ligne 3 : 100 002, 100 020, 100) et '200 100' placé avant ; '200' au lieu de '100 200' non certain."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les champs 'réponse' (ex. '450 لتر ؛ 50 وعاء', '180 ورقة ؛ 9 رزم') et le titre 'ربط الأعداد بالقيم', 'ترتيب الأعداد' sont inventés, absents de l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.3 p.94 absent dans l'image (numérotation 1,2,4) : correct ; mais '4 صم' : l'image montre '4 سم' avec 'صم' – ok. Ex.1 p.93 'أ)' ok."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.4 p.95 : colonnes du tableau transcrites comme phrases ('26 ألف و 350') ; l'image donne un tableau (العدد / عدد الآلاف / الباقي) sans cette formulation."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Ex.4 p.93 (ب) : la chaîne est coupée et mal orientée. Dans l'image, la ligne du bas '531 094 < 531 904' se prolonge sur la ligne du haut : '531 094 < 531 904 < 593 410 < 945 310 < 953 104 < 953 140'. Les signes sont tous '<' (le plus petit à gauche). La transcription présente la chaîne avec des '>' et la sépare de '531 094 < 531 904'."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Ex.1 p.95 : l'ordre de la ligne 3 est faux. Lue de droite à gauche, la ligne 1 est 300 000, 210 000, 201 000, 200 100. La ligne 2 est 200 010, 200 001, 120 000, 102 000, 200. La ligne 3 est 100, 100 020, 100 002, avec l'accolade fermante à gauche. La transcription met '100 002 - 100 020 - 100' dans l'ordre inverse. La fin de la ligne 2 est '200' et le début de la ligne 3 est '100'. Un nombre unique '100 200' coupé entre les deux lignes est possible mais pas certain."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.2 p.93 : '165×1 000' est lisible, donc le '(غير واضح)' n'est pas justifié. Les appariements ovale→rectangle sont donnés comme certains alors que les traits de liaison ne les établissent pas clairement. Les ovales (900 000, 600 000, 100 000, 10 000, 100) et les cases (800 000, 165×1 000, 825, 10×8) sont lisibles ; seule la liste des éléments est fiable."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Titres 'ربط الأعداد بالقيم' (Ex.2 p.93), 'ترتيب الأعداد' (Ex.4 p.93 et Ex.1 p.95) : absents de l'image. L'image porte seulement l'en-tête 'حساب'."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Champs 'answer' inventés : '450 لتر ؛ 50 وعاء' (p.94 Ex.2), '180 ورقة ؛ 9 رزم' (p.95 Ex.6), '75 م ؛ 5 625 م2' (p.96 Ex.1), et les libellés ajoutés dans l'Ex.4 p.95 ('26 ألف و 350', etc.). Ils sont absents de l'image : les résultats figurent déjà dans le corps de chaque exercice."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Ex.4 p.94 (ثمن الأزرار) : l'image montre '2 000 = 4×(6 : 3 000)'. La transcription écrit '4 × (6 : 3 000) = 2 000', un ordre mixte qui diffère des autres lignes lues de droite à gauche. L'ordre logique est '(3 000 : 6) × 4 = 2 000'."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 93 – حساب – السنة الرابعة",
+      "body": "أ) 167 532\nب) 196 752\nج) 156 752\nد) 167 572",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الصفحة 93 – حساب",
+      "body": "الأشكال البيضاوية : 900 000 ؛ 600 000 ؛ 100 000 ؛ 10 000 ؛ 100\nالمستطيلات : 800 000 ؛ 165×1 000 ؛ 825 ؛ 10×8",
+      "figureDesc": "خمسة أشكال بيضاوية تحتوي على 900 000 و600 000 و100 000 و10 000 و100، مرتبطة بخط أفقي بأربعة مستطيلات تحتوي على 800 000 و165×1 000 و825 و10×8. الربط الدقيق بين الأشكال والمستطيلات غير مؤكد.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 93 – حساب",
+      "body": "ب) 531 094 < 531 904 < 593 410 < 945 310 < 953 104 < 953 140",
+      "figureDesc": "ست بطاقات أرقام (عمود يمين) : 9 5 3 1 4 0 / 5 9 3 4 1 0 / 5 3 1 0 9 4 ؛ (عمود يسار) : 9 4 5 3 1 0 / 9 5 3 1 0 4 / 5 3 1 9 0 4",
+      "answer": "531 094 < 531 904 < 593 410 < 945 310 < 953 104 < 953 140",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 94 – الاختبار التقويمي – أصغر عدد هو :",
+      "body": "801 269",
+      "figureDesc": "",
+      "answer": "801 269",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الصفحة 94 – الاختبار التقويمي – كمية الزّيت الباقية باللتر :",
+      "body": "1 200 - (300 + 450) = 450\nعدد الأوعية المملوءة :\n450 على 9 = 50",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 94 – الاختبار التقويمي – ثمن شراء الفستان جاهزا بالمي :",
+      "body": "82 500 - 7 500 = 75 000\nثمن القماش بالمي :\n(2 × 16 000) + (2 : 16 000) = 40 000\nثمن الأزرار بالمي : (3 000 : 6) × 4 = 2 000\nأجرة الخياطة بالمي : 40 000 على 2 = 20 000\nثمن كلفة الفستان المصنوع بالمي :\n40 000 + 20 000 + 2 000 = 62 000\nستختار الحل الثاني لأنها توفّر :\n75 000 - 62 000 = 13 000",
+      "figureDesc": "",
+      "answer": "13 000",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 95 – حساب",
+      "body": "{ 300 000 - 210 000 - 201 000 - 200 100 -\n200 010 - 200 001 - 120 000 - 102 000 - 200 -\n100 - 100 020 - 100 002 }",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 95 – حساب – جدول: العدد، عدد الآلاف، الباقي",
+      "body": "العدد 26 350 ؛ عدد الآلاف 26 ؛ الباقي 350\nالعدد 275 640 ؛ عدد الآلاف 275 ؛ الباقي 640\nالعدد 750 ؛ عدد الآلاف 0 ؛ الباقي 750\nالعدد 183 000 ؛ عدد الآلاف 183 ؛ الباقي 0",
+      "figureDesc": "جدول بثلاثة أعمدة: العدد، عدد الآلاف، الباقي",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "الصفحة 95 – حساب – عدد الأوراق التي أحصاها القابض :",
+      "body": "900 000 مي = 900 دينار\n900 على 5 = 180\nعدد الرّزم التي كوّنها :\n180 على 20 = 9",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 96 – هندسة – قيس ضلع الحديقة بالم :",
+      "body": "300 على 4 = 75\nقيس مساحتها بالم2 : 75 × 75 = 5 625",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الصفحة 96 – هندسة – قيس العرض بالم :",
+      "body": "240 على 8 = 30\nقيس الطول بالم : 30 × 3 = 90\nقيس مساحتها بالم2 : 30 × 90 = 2 700",
+      "figureDesc": "",
+      "answer": "2 700",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "الصفحة 96 – هندسة – قيس عرض المستطيل الداخلي بالصم =",
+      "body": "6 - (2 × 1) = 4 صم\nقيس مساحة المستطيل الداخلي بالصم2 : 4 × 12 = 48\nقيس طول المستطيل الخارجي بالصم : 14 × 6 = 84\nقيس المساحة المظللة بالصم2 : 84 - 48 = 36",
+      "figureDesc": "",
+      "answer": "36",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "الصفحة 96 – هندسة – مساحة هذه القطعة الأرضية بالم2 :",
+      "body": "(35 × 35) + (15 × 15) = 1 225 + 225 = 1 450",
+      "figureDesc": "",
+      "answer": "1 450",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "الصفحة 96 – هندسة – قيس مساحة (أ) : 4 200 م2 ؛ قيس مساحة (ب) : 3 550 م2",
+      "body": "(أ) أكبر مساحة من (ب)",
+      "figureDesc": "",
+      "answer": "(أ) أكبر مساحة من (ب)",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p132_i14"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 93 – حساب – السنة الرابعة",
+      "body": "أ) 167 532\nب) 196 752\nج) 156 752\nد) 167 572",
+      "figureDesc": "",
+      "answer": "أ) 167 532 ب) 196 752 ج) 156 752 د) 167 572",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p132_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الصفحة 93 – حساب – ربط الأعداد بالقيم",
+      "body": "900 000 ← 800 000 ؛ 600 000 ← 165×1 000 ؛ 100 000 ← (غير واضح) ؛ 10 000 ← 825 ؛ 100 ← 10×8",
+      "figureDesc": "أشكال بيضاوية تحتوي على 900 000 و600 000 و100 000 و10 000 و100 مرتبطة بمستطيلات تحتوي على 800 000 و165×1 000 و825 و10×8",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p132_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 93 – حساب – ترتيب الأعداد",
+      "body": "أعداد من ستة أرقام: 953 140 ، 953 104 ، 945 310 ، 593 410 ، 531 904 ، 531 094\nب) 953 140 > 953 104 > 945 310 > 593 410 >\n531 094 < 531 904",
+      "figureDesc": "ست بطاقات أرقام: 9 5 3 1 4 0 / 9 4 5 3 1 0 / 9 5 3 1 0 4 / 5 9 3 4 1 0 / 5 3 1 9 0 4 / 5 3 1 0 9 4",
+      "answer": "953 140 > 953 104 > 945 310 > 593 410 ؛ 531 094 < 531 904",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p132_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 94 – الاختبار التقويمي – أصغر عدد هو :",
+      "body": "801 269",
+      "figureDesc": "",
+      "answer": "801 269",
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p132_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "كمية الزّيت الباقية باللتر :",
+      "body": "1 200 - (300 + 450) = 450\nعدد الأوعية المملوءة :\n450 على 9 = 50",
+      "figureDesc": "",
+      "answer": "450 لتر ؛ 50 وعاء",
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p132_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن شراء الفستان جاهزا بالمي :",
+      "body": "82 500 - 7 500 = 75 000\nثمن القماش بالمي :\n(2 × 16 000) + (2 : 16 000) = 40 000\nثمن الأزرار بالمي : 4 × (6 : 3 000) = 2 000\nأجرة الخياطة بالمي : 40 000 على 2 = 20 000\nثمن كلفة الفستان المصنوع بالمي :\n40 000 + 20 000 + 2 000 = 62 000\nستختار الحل الثاني لأنها توفّر :\n75 000 - 62 000 = 13 000",
+      "figureDesc": "",
+      "answer": "13 000",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p132_i6",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 95 – حساب – ترتيب الأعداد",
+      "body": "{ 300 000 - 210 000 - 201 000 - 200 100 - 200 010 - 200 001 - 120 000 - 102 000 - 200 - 100 002 - 100 020 - 100 }",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p132_i7",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 95 – حساب – جدول: العدد، عدد الآلاف، الباقي",
+      "body": "26 350 = 26 ألف و 350\n275 640 = 275 ألف و 640\n750 = 0 ألف و 750\n183 000 = 183 ألف و 0",
+      "figureDesc": "جدول بثلاثة أعمدة: العدد، عدد الآلاف، الباقي",
+      "answer": "26 350 : 26 / 350 ؛ 275 640 : 275 / 640 ؛ 750 : 0 / 750 ؛ 183 000 : 183 / 0",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p132_i8",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "عدد الأوراق التي أحصاها القابض :",
+      "body": "900 000 مي = 900 دينار\n900 على 5 = 180\nعدد الرّزم التي كوّنها :\n180 على 20 = 9",
+      "figureDesc": "",
+      "answer": "180 ورقة ؛ 9 رزم",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p132_i9",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 96 – هندسة – قيس ضلع الحديقة بالم :",
+      "body": "300 على 4 = 75\nقيس مساحتها بالم2 : 75 × 75 = 5 625",
+      "figureDesc": "",
+      "answer": "75 م ؛ 5 625 م2",
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p132_i10",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "قيس العرض بالم :",
+      "body": "240 على 8 = 30\nقيس الطول بالم : 30 × 3 = 90\nقيس مساحتها بالم2 : 30 × 90 = 2 700",
+      "figureDesc": "",
+      "answer": "2 700 م2",
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p132_i11",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "قيس عرض المستطيل الداخلي بالصم =",
+      "body": "6 - (2 × 1) = 4 صم\nقيس مساحة المستطيل الداخلي بالصم2 : 4 × 12 = 48\nقيس طول المستطيل الخارجي بالصم : 14 × 6 = 84\nقيس المساحة المظللة بالصم2 : 84 - 48 = 36",
+      "figureDesc": "",
+      "answer": "36 صم2",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p132_i12",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "مساحة هذه القطعة الأرضية بالم2 :",
+      "body": "(35 × 35) + (15 × 15) = 1 225 + 225 = 1 450",
+      "figureDesc": "",
+      "answer": "1 450 م2",
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p132_i13",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "قيس مساحة (أ) : 4 200 م2 ؛ قيس مساحة (ب) : 3 550 م2",
+      "body": "(أ) أكبر مساحة من (ب)",
+      "figureDesc": "",
+      "answer": "(أ) أكبر مساحة من (ب)",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p132_i14",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

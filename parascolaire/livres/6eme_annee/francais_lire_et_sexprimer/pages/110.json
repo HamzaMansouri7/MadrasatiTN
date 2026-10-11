@@ -1,0 +1,163 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 110,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Lire et s'exprimer (le paysan et son cheval : conjugaison au futur, féminin/masculin, forme négative, compléments)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "b",
+      "instruction": "« Le paysan racontera à ses amis l'histoire de son cheval. »\nRéécris la phrase en commençant par :",
+      "body": "- Je..............................................................................................................................\n- Tu..............................................................................................................................\n- Nous..........................................................................................................................\n- Les paysans................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p110_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Complète :",
+      "body": "* Le vieil homme échange un joli cheval blanc contre une belle vache.\n...................femme...................jument...........................................veau.\n* Un passager souriant conduit un gros mouton noir recouvert de laine épaisse.\nUne................................................................brebis.................................................\n* Un gentil marchand ambulant attache une grande poule bien grasse au pied d'une chaise cassée.\nUne...................marchande................... coq...........................................................\n* À la fin de la journée, le paysan est fatigué mais il est heureux et fier de son affaire.\nÀ la fin de la journée, les paysannes................................................................................\n* La bonne agricultrice est naïve.\n...................................agriculteur............................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p110_i2",
+      "topicId": "fr-6-m3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Mets les phrases suivantes à la forme négative :",
+      "body": "- Le paysan monte toujours la bête quand il va à la ville.\n.....................................................................................................................................\n- Les deux paysans ont encore des chevaux à la ferme.\n.....................................................................................................................................\n- Le voyageur emmène la vieille et le vieux à leur petite maison de campagne.\n.....................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p110_i3",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "« La nuit, dans l'auberge, le paysan raconte, gaiement, son histoire aux voyageurs.\nRelève dans la phrase :",
+      "body": "- Un complément essentiel : ...............................................................................................\n- Un complément de temps : ...............................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p110_i4",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.28
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de français (conjugaison au futur simple, genre, forme négative, compléments) sur le texte du paysan et son cheval; le futur simple correspond au module 3, mais elle couvre aussi d'autres notions (négation, compléments) et ne relève pas sans ambiguïté d'un seul chapitre.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127,
+    128
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Évaluation de grammaire et conjugaison",
+    "skill": "Conjuguer au futur, transformer des phrases (genre, négation) et identifier les compléments de la phrase.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "futur simple",
+      "masculin et féminin",
+      "forme négative",
+      "compléments de phrase",
+      "le paysan et son cheval"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série d'exercices de langue construits autour d'un même récit (le paysan et son cheval) : réécriture à différentes personnes, passage au féminin, négation et relevé de compléments, ce qui peut inspirer des évaluations thématiques cohérentes.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1-b",
+      "instruction": "Réécris la phrase en commençant par :",
+      "body": "« Le paysan racontera à ses amis l'histoire de son cheval. »\n- Je ...........\n- Tu ...........\n- Nous ...........\n- Les paysans ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p110_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Complète :",
+      "body": "* Le vieil homme échange un joli cheval blanc contre une belle vache.\n...................femme.........................jument...........................................veau.\n* Un passager souriant conduit un gros mouton noir recouvert de laine épaisse.\nUne......................................................brebis..............................\n* Un gentil marchand ambulant attache une grande poule bien grasse au pied d'une chaise cassée.\nUne...................marchande....................... coq......................\n* À la fin de la journée, le paysan est fatigué mais il est heureux et fier de son affaire.\nÀ la fin de la journée, les paysannes...........................\n* La bonne agricultrice est naïve.\n...............................agriculteur...........................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "sagesse_6eme_complet_p110_i2",
+      "topicId": "fr-6-m3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Mets les phrases suivantes à la forme négative :",
+      "body": "- Le paysan monte toujours la bête quand il va à la ville.\n...........\n- Les deux paysans ont encore des chevaux à la ferme.\n...........\n- Le voyageur emmène la vieille et le vieux à leur petite maison de campagne.\n...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p110_i3",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Relève dans la phrase :",
+      "body": "« La nuit, dans l'auberge, le paysan raconte, gaiement, son histoire aux voyageurs. »\n- Un complément essentiel : ...........\n- Un complément de temps : ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p110_i4",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

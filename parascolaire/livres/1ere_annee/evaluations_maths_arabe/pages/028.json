@@ -1,0 +1,172 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 28,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قراءة وفهم - حرف الزاي (تفكيك وتركيب المقاطع الصوتية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أُكَمِّلُ بِالْمَقَاطِعِ الْمُنَاسِبَةِ وَأُحِيطُهَا بِخَطٍّ مُغْلَقٍ فِي الْجَدْوَلِ.",
+      "body": "1) حَلَـ.......نْ\n2) خِـ.......نَـ.......\n3) حِـ.......مْ\n4) مِعْـ.......ةٌ\n5) .......رَا.......ةٌ",
+      "figureDesc": "جدول مقاطع الحروف (ر، م، ب، ل، د، ن، س، ك، ف، ق، ت، ج، أ، ط، ز) مع الحركات والمدود والتنوين والسكون والشدة. بجانبه خمس صور مع كلمات ناقصة: حلزون (حَلَـ…نْ)، خزانة (خِـ…نَـ…)، حزام (حِـ…مْ)، معزة (مِعْـ…ةٌ)، زرافة (…رَا…ةٌ). في الهامش الأيمن كلمات مقطوعة غير واضحة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p028_i1"
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-1-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u2",
+    "confidence": 0.59
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page travaille la lettre ز (zay), qui ne figure dans la liste des lettres d'aucune unité officielle de 1ère année ; aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Lettre ز : syllabes et mots",
+    "skill": "Compléter des mots avec les syllabes manquantes contenant la lettre ز (segmentation et assemblage de syllabes) et les repérer dans un tableau.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "lettre zay",
+      "syllabes",
+      "décomposition de mots",
+      "recomposition de mots",
+      "lecture débutante",
+      "premier cycle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Format réutilisable pour l'apprentissage de la lecture : mots à trous dont on complète les syllabes manquantes, puis entourage des syllabes dans un tableau, transposable à d'autres lettres ou à d'autres langues.",
+    "themeGroup": "Lettres et sons: ز و ح"
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Le numéro de la consigne est écrit [10] ; l'image indique « التعليمة 10 : » (le mot التعليمة manque)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Consigne : « أُكَمِّلُ » est transcrit avec une shadda ; l'image montre « أُكْمِلْ » (impératif), et « وَأُحِيطُهَا » est en réalité « وَأُحِيطُهَا » avec tanwin « بِخَطٍّ مُغْلَقٍ » : voyelles à revérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Item 1 : « حَلَـ.......نٌ » ; l'image montre « حَلَـ ........ نّ » (nūn avec shadda, pas de tanwin damma)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Item 4 : « مَعْـ.....ةٌ » ; l'image montre « مِعْـ.... ـةٌ » (kasra sous le mīm, pas fatha)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Item 3 : « حِـ.......مٌ » ; l'image montre « حِـ..... مْ » (sukūn sur le mīm, pas de tanwin)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Item 2 : « خِـ....نَـ.... » ; l'image montre « خِـ.... نَـ..... » ; ponctuation et tirets approximatifs."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le grand tableau de syllabes (lettres ر م ب ل د ن س ك ف ق ت ج أ ط ز avec leurs voyelles) n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les images (escargot, armoire, ceinture, chèvre, girafe) et les mots latéraux (زَارٌ، بَارٌ، ...) ne sont pas mentionnés."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Item 5 : « .....رَا....ةٌ » ; l'image montre « ...رَا...ـةٌ » (zarāfa, girafe), forme proche mais à vérifier."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Item 1 : la fin du mot est « نْ » avec un signe de sukūn sur le nūn. La transcription met un tanwīn damma « نٌ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Item 3 : l'image montre « حِـ..... مْ » avec un sukūn sur le mīm. La transcription met un tanwīn « مٌ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Item 4 : l'image montre « مِعْـ.....ةٌ » avec une kasra sous le mīm. La transcription met une fatha « مَعْـ »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le contenu du grand tableau de syllabes n'est pas décrit en détail dans figureDesc. Les mots latéraux dans la marge droite sont coupés et peu lisibles (type « ـزَارٌ »). Le tableau est tout de même mentionné de façon générale."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أُكَمِّلُ بِالْمَقَاطِعِ الْمُنَاسِبَةِ وَأُحِيطُهَا بِخَطٍّ مُغْلَقٍ فِي الْجَدْوَلِ.",
+      "body": "1) حَلَـ.......نْ\n2) خِـ.......نَـ.......\n3) حِـ.......مْ\n4) مِعْـ.......ةٌ\n5) .......رَا.......ةٌ",
+      "figureDesc": "جدول مقاطع الحروف (ر، م، ب، ل، د، ن، س، ك، ف، ق، ت، ج، أ، ط، ز) مع الحركات والمدود والتنوين والسكون والشدة. بجانبه خمس صور مع كلمات ناقصة: حلزون (حَلَـ…نْ)، خزانة (خِـ…نَـ…)، حزام (حِـ…مْ)، معزة (مِعْـ…ةٌ)، زرافة (…رَا…ةٌ). في الهامش الأيمن كلمات مقطوعة غير واضحة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p028_i1"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أُكَمِّلُ بِالْمَقَاطِعِ الْمُنَاسِبَةِ وَأُحِيطُهَا بِخَطٍّ مُغْلَقٍ فِي الْجَدْوَلِ.",
+      "body": "1) حَلَـ.......نٌ\n2) خِـ.......نَـ....... \n3) حِـ.......مٌ\n4) مَعْـ.....ةٌ\n5) .....رَا....ةٌ",
+      "figureDesc": "جدول مقاطع الحروف المدروسة مع الحركات والمدود والتنوين وبجانبه خمس صور ورسوم مصحوبة بكلمات ناقصة: صورة حلزون، صورة خزانة، صورة حزام، صورة معزة، صورة زرافة.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "jisr_ennajah_1ere_evaluations_p028_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

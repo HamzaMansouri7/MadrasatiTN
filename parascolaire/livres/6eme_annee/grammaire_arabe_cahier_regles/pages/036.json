@@ -1,0 +1,104 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 36,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "النواسخ الحرفية (إنّ وأخواتها) : إعراب الجملة المنسوخة، محل الناسخ واسمه وخبره، وتقدم خبر الناسخ الحرفي على اسمه",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أضع عناصر كل جملة في محلها من الجدول",
+      "body": "الجمل: إن بعد العسر يسرا / لعل في الإعادة إفادة / كان خلف كلامك سرا / ليت للحروف ألسنة",
+      "figureDesc": "جدول من أربعة أعمدة: الجمل، محل الناسخ، محل خبر الناسخ، محل اسم الناسخ. عمود الجمل يحتوي الجمل الأربع، والأعمدة الأخرى فارغة لتعبئتها.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p036_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اشكل النص التالي شكلا تاما وسطر تحت اسم الناسخ",
+      "body": "التلاميذ منتبهون لأن في القسم معلمة ناشطة ، ورغم أن في الدرس صعوبة فقد تمكنوا من فهمه ، لعل وراء ذلك سرا  فليت لي أجنحة أطير بها  فوق رؤوسهم علني أحل هذا اللغز",
+      "figureDesc": "إطار مستطيل يحتوي النص، مع فراغ تحته للإجابة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p036_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكمل مكان النقط بالعبارة المناسبة",
+      "body": "الجدول الأيمن: إن (ناسخ) / بعد (ظرف مضاف) / الشدة (ظرف مضاف إليه) / فرجا (فارغ) / خانة فارغة تحت الظرف والمضاف إليه / جملة. الجدول الأيسر: لعل (خانة فارغة) / خلف (خانة فارغة) / العتاب (خانة فارغة) / محبة (اسم ناسخ) / خبر ناسخ / خانة فارغة في الأسفل.",
+      "figureDesc": "جدولان تحليليان لعبارتين (إن بعد الشدة فرجا / لعل خلف العتاب محبة) بخانات مدمجة، بعضها معبأ وبعضها فارغ ليكمله التلميذ.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p036_i3",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "صغ حوارا بينك وبين رفاقك يتضمن جملا يتقدم فيها خبر الناسخ الحرفي على اسم الناسخ",
+      "body": "",
+      "figureDesc": "إطار مستطيل فارغ لكتابة الحوار.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p036_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de grammaire arabe sur les particules « inna et ses sœurs » (النواسخ الحرفية), qui ne correspond à aucun des chapitres officiels de 6ème, centrés sur la narration, la description, le dialogue, l'explication et la prescription, ni clairement à leurs compétences listées (seule la conjugaison des verbes défectifs est mentionnée dans ar-6-ch1).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Les particules أنّ et ses sœurs",
+    "skill": "Identifier et analyser grammaticalement les particules نواسخ حرفية (إنّ وأخواتها), leur nom et leur attribut, y compris quand l'attribut est placé avant le nom.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "إنّ وأخواتها",
+      "analyse grammaticale",
+      "نواسخ حرفية",
+      "تقدم الخبر",
+      "vocalisation du texte",
+      "tableau d'analyse"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression en quatre étapes : classer les éléments de phrases dans un tableau d'analyse, vocaliser un texte en soulignant les particules, compléter un tableau d'analyse partiellement rempli, puis écrire un dialogue réinvestissant la structure à l'attribut antéposé.",
+    "themeGroup": "Inna et ses sœurs"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

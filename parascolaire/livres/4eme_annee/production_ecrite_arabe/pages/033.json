@@ -1,0 +1,160 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 33,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مواضيع الإنتاج الكتابي: وصف مدينة، حوار، وصف احتفال، سرد حادثة، سرد عمل لإسعاد صديق، حوار بين فلاحين",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "صف المدينة ذاكرا محاسنها ومساوئها",
+      "body": "الموضوع عدد\nنظمت مدرستك رحلة إلى أحد المدن التونسية فشاركت فيها وانبهرت بما شاهدت\nصف المدينة ذاكرا محاسنها ومساوئها",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p033_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اذكر الحوار وبين موقفك مما سمعت",
+      "body": "الموضوع عدد\nحضرت حوارا بين شخصين أحدهما يعدد محاسن الريف والثاني يخير المدينة\nاذكر الحوار وبين موقفك مما سمعت",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p033_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "صف هذا الاحتفال واذكر كيف ساهمت فيه واختم بمشاعرك",
+      "body": "الموضوع عدد\nحضرت احتفالا دينيا أو وطنيا فأعجبت بما رأيت وسمعت\nصف هذا الاحتفال واذكر كيف ساهمت فيه واختم بمشاعرك",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p033_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ارو الحادثة واصفا ما حدث",
+      "body": "الموضوع عدد\nكنتم تحتفلون بالعيد حين حدث ما أفسد عليكم هذا الجو الاحتفالي\nارو الحادثة واصفا ما حدث",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p033_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "ارو ما حدث ذاكرا العمل الذي قمت به لإسعاده",
+      "body": "الموضوع عدد\nكنتم تستعدون للاحتفال بالعيد حين تذكرت أن أحد أصدقائك محروم من ذلك لسبب من الأسباب ففكرت في عمل يدخل عليه الفرحة\nارو ما حدث ذاكرا العمل الذي قمت به لإسعاده",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p033_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "اذكر الحوار وابد رأيك في الموضوع",
+      "body": "الموضوع عدد\nحضرت حوارا بين فلاحين أحدهما يستعمل وسائل تقليدية والثاني وسائله عصرية وكل منهما يعدد مزايا وسائله\nاذكر الحوار وابد رأيك في الموضوع",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p033_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.54
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une liste de sujets de production écrite en arabe (description, dialogue, récit) qui couvre plusieurs types de textes et ne correspond clairement à aucune unité précise (les unités officielles portent sur personnages, chronologie, schéma narratif, etc.).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : description, dialogue et récit",
+    "skill": "Rédiger un texte structuré (description, dialogue argumenté ou récit) à partir d'une situation proposée, en exprimant son avis ou ses sentiments.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "description de ville",
+      "dialogue",
+      "fête religieuse ou nationale",
+      "récit d'un incident",
+      "campagne et ville"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Six sujets de rédaction ancrés dans le vécu de l'élève (sortie scolaire, fête, geste d'amitié, débat ville/campagne, agriculteurs traditionnel/moderne), chacun avec une consigne claire, réutilisables pour créer des situations d'écriture variées.",
+    "themeGroup": "Production écrite : sujets variés et textes modèles"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 2 : « يخير المدينة » dans l'image est correct, mais le texte « اذكر الحوار وبين موقفك مما سمعت » est bien présent ; aucune erreur ici (vérifié)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Bloc 6 : la fin de la consigne « اذكر الحوار وابد رأيك في الموضوع » est transcrite correctement, mais l'ordre de lecture de la ligne est inversé par rapport à l'image (consigne après l'énoncé), ce qui est cohérent avec la structure."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les consignes sont dupliquées : chaque consigne apparaît en en-tête [n] puis de nouveau dans le corps, avec « réponse: None » ajouté ; ce n'est pas du texte de l'image."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Bloc 1 : « الموضوع عدد » est placé après la consigne dans l'en-tête alors qu'il vient en premier dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 1 : « أحد المدن » correspond à l'image (grammaticalement « إحدى »), transcription fidèle."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

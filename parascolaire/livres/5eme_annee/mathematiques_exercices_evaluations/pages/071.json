@@ -1,0 +1,139 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 71,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 40: أتعرّف ارتفاعات المثلث وأرسمها (en réalité une leçon de géométrie : hauteurs d'un triangle). Remarque : la page est de la matière mathématiques, bien que l'étiquette indique اللغة العربية.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ما هِيَ عَلاقَةُ (أ ب) بِكُلِّ مُثَلَّثٍ.",
+      "body": "Quatre triangles sont donnés, avec le segment (أ ب) tracé dans chacun. Des lignes pointillées sont prévues sous chaque figure pour écrire la réponse.",
+      "figureDesc": "Quatre figures séparées par des traits verticaux. 1) Triangle de sommet أ, avec le segment (أ ب) tracé vers le côté opposé (points ب, ج, د). 2) Triangle isocèle de sommet أ, avec la verticale (أ ب) tombant sur la base [د ج] ; ب est le pied sur la base. 3) Figure avec les points ع, د, ج, أ, ب : le segment (أ ب) coupe le côté [ع ج] en dehors du triangle. 4) Triangle rectangle de sommet أ, avec les points ب, ج, د sur la base horizontale ; le côté (أ ب) est vertical.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_evaluations_p071_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ارْسُمْ مُثَلَّثًا س ص ع بِحَيْثُ س ص = 5 صم، ص ع = 4 صم، س ع = 6 صم.",
+      "body": "• اِبْنِ ارْتِفاعاتِ هَذا المُثَلَّثِ.\n• قارِنْ بَيْنَ أَطْوالِ هَذِهِ الارْتِفاعاتِ، وَاكْتُبْ مُلاحَظَتَكَ.",
+      "figureDesc": "Lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p071_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارْسُمْ مُثَلَّثًا أ ب ج مُتَقايِسَ الضِّلْعَيْنِ قاعِدَتُهُ [ب ج] تَقيسُ 4 صم ثُمَّ ابْنِ ارْتِفاعاتِهِ وَقارِنْ بَيْنَها.",
+      "body": "",
+      "figureDesc": "Quatre lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p071_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ارْسُمْ ارْتِفاعاتِ مُثَلَّثٍ مُتَقايِسِ الأَضْلاعِ قيسُ ضِلْعِهِ 5 صم. لِهَذِهِ الارْتِفاعاتِ خاصِّيّاتٌ أُخْرَى، ما هِيَ؟ يُمْكِنُ رَسْمُ دائِرَةٍ تَمُرُّ مِنْ رُؤُوسِ هَذا المُثَلَّثِ. فَما هُوَ مَرْكَزُها؟",
+      "body": "",
+      "figureDesc": "Trois lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p071_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.45
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une leçon de géométrie sur les hauteurs d'un triangle (construction et comparaison), ce qui correspond à la Période 3 (polygones, parallélogramme et hauteurs), même si l'étiquette indique à tort la langue arabe.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Hauteurs d'un triangle",
+    "skill": "Identifier, construire et comparer les hauteurs d'un triangle quelconque, isocèle et équilatéral.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "triangle",
+      "hauteurs",
+      "construction géométrique",
+      "triangle isocèle",
+      "triangle équilatéral",
+      "cercle circonscrit"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression de la reconnaissance du rôle d'un segment dans plusieurs triangles à la construction aux instruments, puis à la comparaison des hauteurs dans des triangles quelconque, isocèle et équilatéral, avec ouverture vers le cercle circonscrit.",
+    "themeGroup": "Angles, cercle et triangles"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 4: « قيسُ ضِلْعِهِ » transcrit « قيسُ » correct, mais « مُتَقايِسِ الأَضْلاعِ » OK; en revanche exercice 3 « تَقيسُ 4 صم » correspond à l'image « تَقيسُ » (OK) — aucune erreur de mot majeure détectée; le titre de la leçon (« الدرس 40: أتعرف ارتفاعات المثلث وأرسمها ») est absent de la transcription"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page (titre de leçon 40, numéro 5, numéro de page) non transcrit"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 et 3: la transcription ajoute des voyelles absentes ou différentes de l'image (ex. « مُثَلَّثًا » au lieu de « مُثَلَّثًا » partiellement visible; « قارِنْ », « ارْسُمْ » vocalisés), tashkeel partiellement normalisé; « المُثَلَّثِ » vs « المُثَلَّثِ » OK"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: « اِبْنِ ارْتِفاعاتِ » dans l'image est « إِبْنِ ارْتِفَاعَاتِ »; « هَذا » vs « هَذَا » écriture mineure"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Description des figures: « Quatre triangles avec le segment (أ ب) tracé dans chacun » est approximative; les figures contiennent des lettres variées (د، ع، ج، ه) et dans l'une un segment croisant le triangle"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Lignes pointillées pour les réponses aux exercices 2, 3, 4 non mentionnées"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

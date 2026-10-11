@@ -1,0 +1,81 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 92,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Production de l'écrit : l'eau (économiser et protéger l'eau). Attention : cette page ne vient pas d'un manuel de mathématiques. C'est la page 4/4 d'un sujet d'examen de français, partie III « Production de l'écrit ».",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "III-1",
+      "instruction": "Complète le texte à l'aide des mots suivants. « pratiques – indispensable – quotidiens – traitement » (2pts)",
+      "body": "L'eau est ................ pour la vie. Cependant, les ressources en eau douce sont limitées ; alors que le ................ des eaux usées et des eaux salées coûte cher. Des ................ permettant la conservation et l'économie de l'eau s'imposent. À la maison, dans les exploitations agricoles ou partout ailleurs, tout citoyen peut contribuer, par des gestes ................, à relever les défis de l'eau.",
+      "figureDesc": "Texte à trous avec quatre espaces pointillés à remplir.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p092_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "III-2",
+      "instruction": "Tu fais partie du club de l'environnement dans ton école. Produis un texte de six à sept lignes pour conseiller à tes camarades d'économiser l'eau. (5pts)",
+      "body": "(Pour produire ton texte, tu peux rappeler à tes camarades ce que constitue l'eau pour la vie et comment sont les ressources en eau douce ; leur donner des conseils pour économiser l'eau et inciter tout le monde à protéger l'eau.) Bon courage !",
+      "figureDesc": "Page encadrée avec une vingtaine de lignes pointillées pour écrire la production. Pied de page : « Page 4 sur 4 ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p092_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.25
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est la partie « Production de l'écrit » d'un examen de français sur l'économie et la protection de l'eau, un thème qui relève du Module 5 « Sauver la nature » (écologie et préservation), mais c'est une page d'examen sans chapitre exclusif, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Production écrite : économiser l'eau",
+    "skill": "Rédiger un court texte de conseils pour économiser et protéger l'eau, après avoir complété un texte lacunaire avec le vocabulaire adapté.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "eau",
+      "économiser l'eau",
+      "protection de l'environnement",
+      "conseils",
+      "production écrite",
+      "club de l'environnement"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation réutilisable : un élève membre du club de l'environnement rédige un court texte de conseils, précédé d'un texte à trous qui introduit le vocabulaire du thème, avec des pistes de contenu (importance, ressources limitées, gestes, appel à agir).",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

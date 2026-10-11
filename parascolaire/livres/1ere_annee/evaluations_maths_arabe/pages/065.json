@@ -1,0 +1,259 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 65,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الجمع وتفكيك وتركيب الأعداد / المقارنة والترتيب",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُنْجِزُ وَأَتَمَيَّزُ : أُعِيدُ مَلْءَ الْجَدْوَلِ الثَّانِي مُتَجَنِّبًا الْأَخْطَاءَ الْمُرْتَكَبَةَ.",
+      "body": "الجدول 1 (مملوء، مع خانتين برتقاليتين فارغتين). Ligne d'en-tête, de droite à gauche : +1 (avec une flèche rouge) | 8 | 9 | 2 | 15 | 3 | 2+4.\nLignes, de droite à gauche :\nLigne 1 : 7 | 16 | 12 | 9 | [case orange vide] | 10 | 13\nLigne 2 : 4 | 10 | 13 | 7 | 19 | 12 | 11\nLigne 3 : 9 | 17 | 14 | 12 | [case orange vide] | 12 | 5\nLigne 4 : 3 | 11 | 15 | 5 | 19 | 8 | 9\n\nالْجَدْوَلُ 2 :\nEn-tête identique, de droite à gauche : +1 (avec flèche rouge) | 8 | 9 | 2 | 15 | 3 | 2+4.\nPremière colonne (à droite) : 7, 4, 9, 3. Les autres cases contiennent des pointillés à remplir ; dans la colonne « 15 », les lignes 1 et 3 sont des cases bleu foncé pleines, les lignes 2 et 4 sont vides.",
+      "figureDesc": "Deux tableaux de 5 lignes sur 7 colonnes. Le premier est encadré en orange, avec deux cases orange dans la colonne « 15 » (lignes 1 et 3). Le second, « الجدول 2 », est encadré en bleu : cases à pointillés et deux cases bleu foncé dans la colonne « 15 ». Une flèche rouge est placée au-dessus de « +1 » dans chaque tableau.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p065_i1",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "خِلَالَ تَمَارِينَ بِنَادِي أَلْعَابِ الْقُوَى قَامَ عَدَّاءٌ أَوَّلُ بِأَرْبَعِ دَوْرَاتٍ حَوْلَ الْمَلْعَبِ ثُمَّ ثَلَاثَ دَوْرَاتٍ ثُمَّ 6 دَوْرَاتٍ.\n• أَكْتُبُ الْعَمَلِيَّةَ الْجَمْعِيَّةَ الْمُنَاسِبَةَ وَأُنْجِزُهَا.",
+      "body": "Deux lignes en pointillés pour écrire la réponse (flèche verte à droite de la première ligne).",
+      "figureDesc": "Flèche verte pointant vers la ligne de réponse en pointillés.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p065_i2",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "قَامَ عَدَّاءٌ ثَانٍ بِسَبْعِ دَوْرَاتٍ فِي الْمَرَّةِ الْأُولَى ثُمَّ بِسِتِّ دَوْرَاتٍ فِي الْمَرَّةِ الثَّانِيَةِ. وَوَاصَلَ الْعَدْوَ.",
+      "body": "أ) بِكَمْ قَامَ مِنْ دَوْرَةٍ حَتَّى أَنْجَزَ 18 دَوْرَةً فِي الْجُمْلَةِ؟\nالْجَوَابُ: ............................................ (deux lignes en pointillés)\n\nب) أُقَارِنُ بِاسْتِعْمَالِ : ( أَطْوَلُ - أَقْصَرُ ) وَأُعَلِّلُ بِاسْتِعْمَالِ > ، < ، =\nالْمَسَافَةُ الَّتِي قَطَعَهَا الْعَدَّاءُ الْأَوَّلُ .............. مِنَ الْمَسَافَةِ الَّتِي قَطَعَهَا الْعَدَّاءُ الثَّانِي لِأَنَّ : .............................. .",
+      "figureDesc": "Icône de crayon à côté de « الْجَوَابُ ». Bandeau latéral vert : « الرياضيات », « السنة 1 », « جسر النجاح – الثلاثي الثاني ». Numéro de page 89.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p065_i3",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    }
+  ],
+  "topicId": "math-1-p6",
+  "topicTitle": "Période 6 : Longueurs, masses, monnaie et résolution de problèmes",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p5",
+    "confidence": 0.5
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la résolution de problèmes additifs (tours de piste, totaux jusqu'à 18) avec comparaison par >, <, =, ce qui relève de la résolution de problèmes de la Période 6, mais les nombres jusqu'à 19 et l'addition pourraient aussi correspondre à la Période 4, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition et problèmes additifs",
+    "skill": "Résoudre des problèmes additifs simples, compléter un tableau d'opérations et comparer des quantités.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "addition",
+      "problème additif",
+      "tableau",
+      "comparaison",
+      "complément",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le contexte sportif des tours de piste de coureurs sert à introduire l'addition de plusieurs termes, la recherche du complément pour atteindre un total, et la comparaison avec justification. L'exercice de correction d'erreurs dans un tableau est aussi un format original.",
+    "themeGroup": "Problèmes additifs"
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le bloc [1] contient un texte inventé : « الْجَدْوَلُ 1 (الأول) يتضمن أخطاء حسابية… تصحيحًا له بإضافة 1 ثم بقية العمليات… ». Il ne figure pas sur la page ; c'est une paraphrase ajoutée."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les deux tableaux de l'exercice 1 ne sont pas transcrits : en-tête +1, 8, 9, 2, 15, 3, 2+4 ; colonne 7, 4, 9, 3 ; valeurs du tableau 1 (16, 12, 9, 13, 10, 17, 14, 19, 15, 11, etc.) ; cases colorées. Le libellé « الْجَدْوَلُ 2 : » est aussi absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « أَنْجِزُ وَأَتَمَيَّزُ : » est absent, ainsi que le numéro de page 89, « الرياضيات », « السنة 1 » et l'en-tête « الثلاثي الثاني »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le bloc [2] est dupliqué : l'énoncé apparaît deux fois, et les points de suite sont ajoutés."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le bloc [3] est mal découpé : l'énoncé du 3 est séparé de la question أ) et ب), qui sont rangées dans un champ à part. La ligne de réponse du 2 est incorrectement fusionnée."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« بِكُمْ قَامَ » : sur la page on lit « بِكَمْ » (et non « بِكُمْ »)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أُقَارِنُ » : sur la page on lit « أُقَارِنُ » avec « بِاسْتِعْمَالِ ( أَطْوَلُ - أَقْصَرُ ) وَأُعَلِّلُ بِاسْتِعْمَالِ ﴿ ، ﴾ ، = » ; les symboles <, > sont dans le mauvais ordre/forme."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أَوَّلُ » dans « عَدَّاءٌ أَوَّلُ » : la page porte « عَدَّاءٌ أَوَّلُ » avec tanwin, à vérifier ; « أَلْعَابِ » et « ثَلَاثَ » sont corrects."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Une deuxième ligne de réponse pointillée est omise pour le 2 et pour le 3-أ ; la flèche verte est absente."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.6,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le body de l'exercice 1 est une paraphrase inventée (« الْجَدْوَلُ 1 (الأول) يتضمن أخطاء حسابية… تصحيحًا له بإضافة 1 ثم بقية العمليات… »). Ce texte ne figure pas sur la page. La figureDesc est elle aussi une description vague et inexacte."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les deux tableaux de l'exercice 1 ne sont pas transcrits. Les deux ont l'en-tête +1, 8, 9, 2, 15, 3, 2+4 et la colonne 7, 4, 9, 3. Le tableau 1 contient les valeurs (16, 12, 9, 10, 13, 7, 19, 12, 11, 17, 14, 12, 5, 15, 8, 9, 11, 5, 19, etc.) et deux cases colorées dans la colonne « 15 ». Le tableau 2 est vide (pointillés), avec deux cases sombres dans la colonne « 15 ». Le libellé « الْجَدْوَلُ 2 : » est absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de rubrique « أَنْجِزُ وَأَتَمَيَّزُ : » est absent. Les éléments de marge sont aussi absents : « الرياضيات », « السنة 1 », « الثلاثي الثاني » et le numéro de page 89."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'énoncé est dupliqué, une fois dans instruction et une fois dans body. Sur la page, l'énoncé vient d'abord, puis la consigne à puce « أَكْتُبُ الْعَمَلِيَّةَ… » avec deux lignes de réponse."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'énoncé (instruction) est séparé des questions أ) et ب), qui sont rangées dans body. Ce découpage est acceptable à condition que la ligne de réponse du 2 ne soit pas fusionnée avec elle. Cette ligne appartient à l'exercice 2."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« بِكُمْ قَامَ » est erroné. La page porte « بِكَمْ قَامَ » (fatha sur le kaf)."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "heading",
+      "number": null,
+      "instruction": "أَنْجِزُ وَأَتَمَيَّزُ :",
+      "body": "",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُعِيدُ مَلْءَ الْجَدْوَلِ الثَّانِي مُتَجَنِّبًا الْأَخْطَاءَ الْمُرْتَكَبَةَ.",
+      "body": "الجدول الأول (بدون عنوان، بإطار برتقالي) — الأعمدة مرتبة من اليمين إلى اليسار:\nالسطر الأول (رأس): +1 | 8 | 9 | 2 | 15 | 3 | 2+4\n7 | 16 | 12 | 9 | [خانة ملونة] | 10 | 13\n4 | 10 | 13 | 7 | 19 | 12 | 11\n9 | 17 | 14 | 12 | [خانة ملونة] | 12 | 5\n3 | 11 | 15 | 5 | 19 | 8 | 9\n\nالْجَدْوَلُ 2 : (بإطار أزرق)\nالسطر الأول (رأس): +1 | 8 | 9 | 2 | 15 | 3 | 2+4\n7 | ...... | ...... | ...... | [خانة داكنة] | ...... | ......\n4 | ...... | ...... | ...... | [خانة بيضاء فارغة] | ...... | ......\n9 | ...... | ...... | ...... | [خانة داكنة] | ...... | ......\n3 | ...... | ...... | ...... | [خانة بيضاء فارغة] | ...... | ......",
+      "figureDesc": "جدولان: الأول بإطار برتقالي مملوء بالأعداد مع خانتين ملونتين في عمود 15، والثاني بإطار أزرق (الْجَدْوَلُ 2) فارغ بنقاط الحذف مع خانتين داكنتين في عمود 15.",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْتُبُ الْعَمَلِيَّةَ الْجَمْعِيَّةَ الْمُنَاسِبَةَ وَأُنْجِزُهَا.",
+      "body": "خِلَالَ تَمَارِينَ بِنَادِي أَلْعَابِ الْقُوَى قَامَ عَدَّاءٌ أَوَّلُ بِأَرْبَعِ دَوْرَاتٍ حَوْلَ الْمَلْعَبِ ثُمَّ ثَلَاثَ دَوْرَاتٍ ثُمَّ 6 دَوْرَاتٍ.\n• أَكْتُبُ الْعَمَلِيَّةَ الْجَمْعِيَّةَ الْمُنَاسِبَةَ وَأُنْجِزُهَا.\n......................................................................\n......................................................................",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "قَامَ عَدَّاءٌ ثَانٍ بِسَبْعِ دَوْرَاتٍ فِي الْمَرَّةِ الْأُولَى ثُمَّ بِسِتِّ دَوْرَاتٍ فِي الْمَرَّةِ الثَّانِيَةِ. وَوَاصَلَ الْعَدْوَ.",
+      "body": "أ) بِكَمْ قَامَ مِنْ دَوْرَةٍ حَتَّى أَنْجَزَ 18 دَوْرَةً فِي الْجُمْلَةِ؟\nالْجَوَابُ:\n......................................................................\n......................................................................\n\nب) أُقَارِنُ بِاسْتِعْمَالِ : ( أَطْوَلُ - أَقْصَرُ ) وَأُعَلِّلُ بِاسْتِعْمَالِ > ، < ، =\nالْمَسَافَةُ الَّتِي قَطَعَهَا الْعَدَّاءُ الْأَوَّلُ .............. مِنَ الْمَسَافَةِ الَّتِي قَطَعَهَا الْعَدَّاءُ الثَّانِي لِأَنَّ : .............. .",
+      "figureDesc": "",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.9,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُعِيدُ مَلْءَ الْجَدْوَلِ الثَّانِي مُتَجَنِّبًا الْأَخْطَاءَ الْمُرْتَكَبَةَ.",
+      "body": "الْجَدْوَلُ 1 (الأول) يتضمن أخطاء حسابية، ويُطلب إعادة ملء الْجَدْوَلِ 2 تصحيحًا له بإضافة 1 ثم بقية العمليات المبيّنة في رأس الأعمدة.",
+      "figureDesc": "جدولان للحساب الذهني: جدول أول به معطيات وأخطاء، وجدول ثانٍ فارغ جزئيًا ومظلل في بعض الخانات لمطابقة النتائج وتصحيحها وفق العناوين (+1، 8، 9، 2، 15، 3، 2+4).",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p065_i1",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "خِلَالَ تَمَارِينَ بِنَادِي أَلْعَابِ الْقُوَى قَامَ عَدَّاءٌ أَوَّلُ بِأَرْبَعِ دَوْرَاتٍ حَوْلَ الْمَلْعَبِ ثُمَّ ثَلَاثَ دَوْرَاتٍ ثُمَّ 6 دَوْرَاتٍ.\n• أَكْتُبُ الْعَمَلِيَّةَ الْجَمْعِيَّةَ الْمُنَاسِبَةَ وَأُنْجِزُهَا.",
+      "body": "خِلَالَ تَمَارِينَ بِنَادِي أَلْعَابِ الْقُوَى قَامَ عَدَّاءٌ أَوَّلُ بِأَرْبَعِ دَوْرَاتٍ حَوْلَ الْمَلْعَبِ ثُمَّ ثَلَاثَ دَوْرَاتٍ ثُمَّ 6 دَوْرَاتٍ.\n• أَكْتُبُ الْعَمَلِيَّةَ الْجَمْعِيَّةَ الْمُنَاسِبَةَ وَأُنْجِزُهَا.\n....................................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p065_i2",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "قَامَ عَدَّاءٌ ثَانٍ بِسَبْعِ دَوْرَاتٍ فِي الْمَرَّةِ الْأُولَى ثُمَّ بِسِتِّ دَوْرَاتٍ فِي الْمَرَّةِ الثَّانِيَةِ. وَوَاصَلَ الْعَدْوَ.",
+      "body": "أ) بِكُمْ قَامَ مِنْ دَوْرَةٍ حَتَّى أَنْجَزَ 18 دَوْرَةً فِي الْجُمْلَةِ؟\nالْجَوَابُ:\n.......................................................................................................\n\nب) أُقَارِنُ بِاسْتِعْمَالِ : ( أَطْوَلُ - أَقْصَرُ ) وَأُعَلِّلُ بِاسْتِعْمَالِ > ، < ، =\nالْمَسَافَةُ الَّتِي قَطَعَهَا الْعَدَّاءُ الْأَوَّلُ ...................... مِنَ الْمَسَافَةِ الَّتِي قَطَعَهَا الْعَدَّاءُ الثَّانِي لِأَنَّ : .......................................... .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p065_i3",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

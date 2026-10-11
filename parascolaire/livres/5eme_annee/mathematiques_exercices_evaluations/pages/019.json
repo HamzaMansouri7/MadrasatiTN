@@ -1,0 +1,87 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 19,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مسائل حسابية: القسمة والمسائل التطبيقية (ملاحظة : الصفحة المطبوعة تحمل الرقم 20، والمحتوى رياضيات وليس لغة عربية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اِحْسُبْ عَدَدَ الرُّزَمِ الَّتِي تَمَّ تَكْوِينُهَا مِنْ كُلِّ صِنْفٍ مِنَ الْكُرَّاسَاتِ.",
+      "body": "عَلَّبَ مَصْنَعٌ لِلْوَرَقِ عَدَدًا مِنَ الْكُرَّاسَاتِ حَسَبَ حَجْمِهَا، كَمَا يَلِي:\n3560 كُرَّاسًا رَقْم 72 تُعَلَّبُ بِالـ 20\n6900 كُرَّاسًا رَقْم 48 تُعَلَّبُ بِالـ 30\n9850 كُرَّاسًا رَقْم 24 تُعَلَّبُ بِالـ 50",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p019_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اِحْسُبْ عَدَدَ عُلَبِ الْكَرْتُونِ الَّتِي اسْتَعْمَلَهَا الْمَصْنَعُ.",
+      "body": "عَبَّأَ مَصْنَعٌ لِلطَّمَاطِمِ 5400 عُلْبَةٍ مِنَ الطَّمَاطِمِ الْمُصَبَّرِ مِنَ الْحَجْمِ الْكَبِيرِ فِي عُلَبٍ مِنَ الْكَرْتُونِ تَتَّسِعُ الْوَاحِدَةُ لِـ 12 عُلْبَةً. وَعَبَّأَ 8928 عُلْبَةً مِنَ الْحَجْمِ الْمُتَوَسِّطِ فِي عُلَبٍ مِنَ الْكَرْتُونِ تَتَّسِعُ الْوَاحِدَةُ لِـ 24 عُلْبَةً.",
+      "figureDesc": "ستة أسطر منقطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p019_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "اِحْسُبْ عَدَدَ الْفِرَقِ؟ / كَمْ نَفَرًا يَبِيتُ فِي كُلِّ خَيْمَةٍ؟",
+      "body": "بِفَوْجٍ لِلْكَشَّافَةِ 120 مُشَارِكًا يَنْتَظِمُونَ فِي النَّهَارِ فِي فِرَقٍ ذَاتِ 15 نَفَرًا بَيْنَمَا يَبِيتُونَ فِي اللَّيْلِ فِي 10 خِيَامٍ.",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p019_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p6",
+    "confidence": 0.21
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des problèmes de division (3560÷20, 6900÷30, 9850÷50, 5400÷12, 8928÷24, 120÷15 et 120÷10) avec des diviseurs à 1 ou 2 chiffres, ce qui correspond à la Période 4 sur la division par un diviseur à 2 chiffres.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division et problèmes d'application",
+    "skill": "Résoudre des problèmes de la vie courante en appliquant la division euclidienne (groupements, conditionnement, répartition).",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "division",
+      "problèmes",
+      "conditionnement",
+      "groupement",
+      "répartition",
+      "quotient"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes de conditionnement en usine (cahiers en paquets, boîtes de conserve en cartons) et de répartition d'un groupe de scouts en équipes puis en tentes, utiles pour créer des problèmes de division à plusieurs questions liées.",
+    "themeGroup": "Division euclidienne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

@@ -1,0 +1,202 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 3,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La circulation sanguine : le sang, le pouls et les battements du cœur, les vaisseaux sanguins",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَيْنَ الدَّمُ فِي يَدِكَ ؟",
+      "body": "لِلإِجَابَةِ عَنْ هَذَا السُّؤَالِ قَامَتْ فَاطِمَةُ بِهَذَا الرَّسْمِ. مَا رَأْيُكَ فِيهِ ؟",
+      "figureDesc": "Dessin d'une main ouverte avec les vaisseaux sanguins tracés dans la paume et les doigts. Légende : « وريد به دم ». Cadre bleu. Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p003_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "3",
+      "instruction": "",
+      "body": "- النَّبْضُ يعني انقباض وارتخاء عضلة القلب، وكلّ انقباض وارتخاء لعضلة القلب يسمّى نبضة.\n- النّبض يجعل الدّم يدور في الجسم.\n\nعدد نبضات رجل بالغ وفي صحّة جيّدة :\n- أثناء النّوم 66 نبضة.\n- في حالة جلوس 70 نبضة.\n- في حالة وقوف بصفة فجئيّة 80 نبضة.\n- في حالة القيام بمجهود كبير من 140 إلى 180 نبضة.",
+      "figureDesc": "Deux encadrés bleus de texte d'appui : définition du pouls, puis nombre de pulsations d'un adulte en bonne santé selon l'activité.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p003_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-أ",
+      "instruction": "كَمْ عَدَدُ نَبَضَاتِ قَلْبِكَ ؟",
+      "body": "كَمْ عَدَدُ نَبَضَاتِ قَلْبِكَ ؟",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p003_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-ب",
+      "instruction": "هَلْ يَخْتَلِفُ النَّبْضُ بِاخْتِلَافِ المَجْهُودِ الَّذِي تَقُومُ بِهِ ؟",
+      "body": "هَلْ يَخْتَلِفُ النَّبْضُ بِاخْتِلَافِ المَجْهُودِ الَّذِي تَقُومُ بِهِ ؟",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p003_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-ج",
+      "instruction": "اُكْتُبْ السَّبَبَ لِمَا يَلِي :",
+      "body": "عِنْدَمَا تَجْرِي يَزْدَادُ عَدَدُ نَبَضَاتِ قَلْبِكَ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "eveil_scientifique_cours_exercices_p003_i5",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-أ",
+      "instruction": "أَيٌّ مِنَ الأَوْعِيَةِ الدَّمَوِيَّةِ يُحِيطُ بِالحُوَيْصَلَاتِ الرِّئَوِيَّةِ المَوْجُودَةِ فِي الرِّئَتَيْنِ ؟",
+      "body": "أَيٌّ مِنَ الأَوْعِيَةِ الدَّمَوِيَّةِ يُحِيطُ بِالحُوَيْصَلَاتِ الرِّئَوِيَّةِ المَوْجُودَةِ فِي الرِّئَتَيْنِ ؟",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p003_i6",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-ب",
+      "instruction": "مَاذَا يَحْدُثُ فِي حَالِ عَدَمِ وُجُودِ شُعَيْرَاتٍ ؟",
+      "body": "مَاذَا يَحْدُثُ فِي حَالِ عَدَمِ وُجُودِ شُعَيْرَاتٍ ؟",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p003_i7",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اذكر 4 وظائف للدمّ :",
+      "body": "1) ....... 2) ....... 3) ....... 4) .......",
+      "figureDesc": "Quatre lignes pointillées numérotées de 1 à 4.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "eveil_scientifique_cours_exercices_p003_i8",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.49
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page porte sur la circulation sanguine (sang, pouls, battements du cœur, vaisseaux sanguins, capillaires, fonctions du sang), ce qui correspond à l'Unité 3 sur le système circulatoire et la composition du sang.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La circulation sanguine",
+    "skill": "Comprendre le rôle du sang, du pouls et des vaisseaux sanguins, et relier l'effort physique au rythme cardiaque.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "circulation sanguine",
+      "pouls",
+      "battements du cœur",
+      "vaisseaux sanguins",
+      "effort physique",
+      "fonctions du sang"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "On peut reprendre la mesure du pouls au repos et après un effort, puis comparer les résultats. Le dessin de l'élève à critiquer pour localiser le sang dans la main et les questions de cause à effet (pourquoi le cœur bat plus vite quand on court) sont aussi réutilisables.",
+    "themeGroup": "La circulation sanguine et le sang"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«أَيٌّ مِنَ الأَوْعِيَةِ» : l'image montre «أَيُّ مِنَ الأَوْعِيَةِ» (أَيُّ avec damma, pas tanwin); la forme «أَيٌّ» est fausse."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الرِّئَوِيَّةِ» et «المَوْجُودَةِ» : l'image montre «الرِّئَوِيَّةِ/الرُّئَوِيَّةِ» et «المَوْجُودَةِ» ; vérifier le tashkeel. Le tashkeel de la transcription est ajouté alors que l'original est partiel."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les encadrés (النَّبْضُ، النّبض، etc.) sont transcrits avec des voyelles partielles différentes de l'image (ex. «النَّبْضُ يعني» alors que l'image a «النَّبْضُ» avec voyelles et «يعني» sans) ; incohérence mineure."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«يسمّى نبضة» : l'image indique «يسمَّى» avec fatha/shadda ; transcription correcte quant au mot. «المَجْهُودِ» : OK."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les champs de questions 3-أ, 3-ب, 4-أ, 4-ب sont dupliqués en deux colonnes (texte répété comme énoncé et contenu) ; ce n'est pas du texte inventé mais une redondance."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Légende du dessin «وريد به دم» (étiquette sur la main) absente de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 42 n'est pas transcrit."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'exercice 5, les items 1) 2) 3) 4) sont listés dans l'ordre, mais la disposition de l'image est en colonnes RTL (1 et 2 à droite, 3 et 4 à gauche) ; acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

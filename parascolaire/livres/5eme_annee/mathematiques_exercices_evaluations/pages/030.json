@@ -1,0 +1,421 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 30,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "محطة تقييمية 5 (وضعية مسألة: حقل فلاحي، إنتاج البطاطا والقمح، قرض بنكي). Note : la page relève des mathématiques malgré la matière indiquée.",
+  "items": [
+    {
+      "kind": "header",
+      "number": "المحطة 5",
+      "instruction": "محطة تقييمية",
+      "body": "رقم الصفحة: 31",
+      "figureDesc": "Bandeau-titre décoratif avec le médaillon « 5 » (المحطة) à gauche.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p030_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "",
+      "body": "حقل [illisible] 90 هكتارًا [illisible] صاحبه إلى 6 مناطق. [illisible] المنطقة الأولى بطاطا [illisible] 8 [illisible] 9 [illisible] 10 كغ باعها صاحب الحقل بـ 470 [illisible] للكغ الواحد.",
+      "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 1), partiellement illisible à cause de la qualité du scan.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p030_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-1",
+      "instruction": "ما هُوَ مُعَدَّلُ إِنْتاجِ الهِكْتارِ الوَاحِدِ مِنَ البَطاطَا.",
+      "body": "ثلاثة أسطر منقّطة للإجابة؛ سلّم التنقيط: معـ 2، معـ 3، معـ 1.",
+      "figureDesc": "Trois lignes pointillées pour la réponse, cases de notation à droite.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p030_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-2",
+      "instruction": "ما هُوَ ثَمَنُ بَيْعِ البَطاطَا؟",
+      "body": "ثلاثة أسطر منقّطة للإجابة؛ سلّم التنقيط: معـ 2، معـ 1.",
+      "figureDesc": "Trois lignes pointillées pour la réponse, cases de notation à droite (2 et 1).",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p030_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2",
+      "instruction": "",
+      "body": "[illisible] صاحب الحقل المنطقة الثانية قمحًا [illisible] الهكتار الواحد 5 ط ، 8 ق وقع بيع [illisible] الواحد بـ 20 د.",
+      "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 2), partiellement illisible.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p030_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-1",
+      "instruction": "احْسُبْ مَدْخُولَ صاحِبِ الأَرْضِ مِنَ القَمْحِ وَالبَطاطَا مَعًا.",
+      "body": "أربعة أسطر منقّطة للإجابة؛ سلّم التنقيط: معـ 3، معـ 2، معـ 1.",
+      "figureDesc": "Quatre lignes pointillées pour la réponse, cases de notation à droite.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p030_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "[illisible] الأرض اقترض هذا الفلاح من البنك 18240 د [illisible] سدّد هذا المبلغ أقساطًا و[illisible] مقدار كل قسط 380 د كل شهر من تاريخ [illisible].",
+      "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 3), partiellement illisible.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p030_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-1",
+      "instruction": "بَعْدَ كَمْ شَهْرٍ يُسَدِّدُ هَذَا الفَلاَّحُ المَبْلَغَ الَّذِي تَسَلَّمَهُ مِنَ البَنكِ؟",
+      "body": "سطران منقّطان للإجابة؛ سلّم التنقيط: معـ 2.",
+      "figureDesc": "Deux lignes pointillées pour la réponse, case de notation à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_evaluations_p030_i8"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p6",
+  "topicTitle": "Période 6 : Aires latérales/totales et synthèse",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u7",
+    "confidence": 0.2
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation (محطة تقييمية) de mathématiques mêlant moyenne par hectare, multiplication/division de décimaux, quintaux et résolution de situations-problèmes (champ, revenus, prêt), ce qui correspond le mieux à la synthèse et résolution de situations-problèmes de la Période 6, sans certitude car elle couvre plusieurs chapitres.",
+  "linkFlags": [
+    "low_ocr_confidence",
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problème de synthèse : production agricole et crédit",
+    "skill": "Résoudre une situation-problème à étapes mobilisant moyenne, prix de vente, revenu total et division pour un remboursement mensuel.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "situation-problème",
+      "évaluation",
+      "production agricole",
+      "moyenne par hectare",
+      "revenu total",
+      "crédit bancaire",
+      "mensualités"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation contextualisée (champ divisé en zones, deux cultures, emprunt remboursé par mensualités) découpée en supports successifs avec questions guidées et barème par étape, adaptable à d'autres contextes économiques comme un commerce ou un élevage.",
+    "themeGroup": "Problèmes de synthèse et vie courante"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le titre de la page (« محطة تقييمية », المحطة 5) et le numéro de page 34 sont omis. Ce n'est pas du texte inventé mais un contenu manquant (voir l'entrée suivante)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête absent de la transcription : « محطة تقييمية », « المحطة 5 » et numéro de page 34."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Barème de 1-1 : l'image montre 3 lignes de pointillés avec les cases 2, 3, 1 à droite. La transcription le rend correctement, mais pour 1-2 elle indique « ثلاثة أسطر » alors que l'image en montre 3 pointillés avec les barèmes 2 et 1, ce qui est ambigu."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "السند 1 : « حقل مساحته » est partiellement illisible dans l'image. La transcription le reconstitue sans le signaler. Le texte « المنطقة الأولى » et « 470 ... » sont reconstitués de façon plausible mais incertaine."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "السند 1 : les mots « فأنتجَتْ » et « قسّمَتْهُ صاحبُهُ » portent des voyelles ajoutées alors que l'image est trop floue pour les vérifier. La phrase « 8 ... 9 ... 10 كغ » est reconstituée ainsi : « 8 ط، 9 ق ، 10 كغ » probablement."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "السند 3 : « لشراء معدّات الأرض » et « على أن يسدّد » sont reconstitués à partir d'un texte quasi illisible. Le texte visible dit plutôt « ... الأرض اقترض هذا الفلاح من البنك 18240 د فسدّد هذا المبلغ أقساطًا وحدّد مقدار كل قسط 380 د كل شهر من تاريخ التسلم »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les en-têtes « التعليمة 1-1 », « 1-2 », « 2-1 », « 3-1 » sont rendus par « [1-1] » etc. Le mot « التعليمة » est omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "2-1 : l'image montre 4 lignes pointillées et les barèmes 3, 2, 1. Correct. Le barème de 3-1 (« معـ 2 ») est correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.78,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : « محطة تقييمية », « المحطة 5 » (médaillon « 5 » en haut à gauche). Le numéro de page imprimé en bas est 31, pas 34 comme le signalait le contrôle rapide."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "السند 3 : « لشراء معدّات الأرض » et « على أن يسدّد » ne sont pas lisibles dans l'image. Le texte visible se lit plutôt « ... الأرض اقترض هذا الفلاح من البنك 18240 د ... سدّد هذا المبلغ أقساطًا وحدّد مقدار كل قسط 380 د كل شهر من تاريخ التسلم ». Le mot « دينارًا » est aussi inventé (l'image montre « د »), et la fin de la phrase (« تاريخ ... ») est tronquée à tort."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "السند 1 : l'énoncé est reconstitué sans signalement précis. Les voyelles de « قسّمَتْهُ », « فأنتجَتْ » et « زُرِعَتِ » ne sont pas vérifiables, et la forme « قسّمَتْهُ صاحبُهُ » est grammaticalement douteuse. Les unités (« ط », « ق ») et « 470 ... » sont incertaines. Il faut utiliser [illisible] pour les passages flous."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "السند 2 : le début (« زرع صاحب الحقل ») et le mot avant « الواحد » (« القمح » dans la transcription) sont à peine lisibles. La transcription les présente comme certains alors que ce sont des reconstitutions, et les voyelles ajoutées ne sont pas visibles."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le mot « التعليمة » des étiquettes (« التعليمة 1-1 », etc.) n'est pas reproduit. C'est un choix de format acceptable, mais les numéros doivent rester 1-1, 1-2, 2-1 et 3-1."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "المحطة 5",
+      "instruction": "محطة تقييمية",
+      "body": "رقم الصفحة: 31",
+      "figureDesc": "Bandeau-titre décoratif avec le médaillon « 5 » (المحطة) à gauche.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p030_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "",
+      "body": "حقل [illisible] 90 هكتارًا [illisible] صاحبه إلى 6 مناطق. [illisible] المنطقة الأولى بطاطا [illisible] 8 [illisible] 9 [illisible] 10 كغ باعها صاحب الحقل بـ 470 [illisible] للكغ الواحد.",
+      "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 1), partiellement illisible à cause de la qualité du scan.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p030_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-1",
+      "instruction": "ما هُوَ مُعَدَّلُ إِنْتاجِ الهِكْتارِ الوَاحِدِ مِنَ البَطاطَا.",
+      "body": "ثلاثة أسطر منقّطة للإجابة؛ سلّم التنقيط: معـ 2، معـ 3، معـ 1.",
+      "figureDesc": "Trois lignes pointillées pour la réponse, cases de notation à droite.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p030_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-2",
+      "instruction": "ما هُوَ ثَمَنُ بَيْعِ البَطاطَا؟",
+      "body": "ثلاثة أسطر منقّطة للإجابة؛ سلّم التنقيط: معـ 2، معـ 1.",
+      "figureDesc": "Trois lignes pointillées pour la réponse, cases de notation à droite (2 et 1).",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p030_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2",
+      "instruction": "",
+      "body": "[illisible] صاحب الحقل المنطقة الثانية قمحًا [illisible] الهكتار الواحد 5 ط ، 8 ق وقع بيع [illisible] الواحد بـ 20 د.",
+      "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 2), partiellement illisible.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p030_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-1",
+      "instruction": "احْسُبْ مَدْخُولَ صاحِبِ الأَرْضِ مِنَ القَمْحِ وَالبَطاطَا مَعًا.",
+      "body": "أربعة أسطر منقّطة للإجابة؛ سلّم التنقيط: معـ 3، معـ 2، معـ 1.",
+      "figureDesc": "Quatre lignes pointillées pour la réponse, cases de notation à droite.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p030_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "[illisible] الأرض اقترض هذا الفلاح من البنك 18240 د [illisible] سدّد هذا المبلغ أقساطًا و[illisible] مقدار كل قسط 380 د كل شهر من تاريخ [illisible].",
+      "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 3), partiellement illisible.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p030_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-1",
+      "instruction": "بَعْدَ كَمْ شَهْرٍ يُسَدِّدُ هَذَا الفَلاَّحُ المَبْلَغَ الَّذِي تَسَلَّمَهُ مِنَ البَنكِ؟",
+      "body": "سطران منقّطان للإجابة؛ سلّم التنقيط: معـ 2.",
+      "figureDesc": "Deux lignes pointillées pour la réponse, case de notation à droite.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "al_ahram_5eme_complet_p030_i8"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "",
+      "body": "حقل مساحته 90 هكتارًا قسّمَتْهُ صاحبُهُ إلى 6 مناطق. زُرِعَتِ المنطقةُ الأولى بطاطا فأنتجَتْ 8 ... 9 ... 10 كغ باعها صاحبُ الحقل بـ 470 ... للكغ الواحد. (texte partiellement illisible à cause de la mauvaise qualité du scan)",
+      "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 1).",
+      "answer": null,
+      "confidence": 0.4,
+      "id": "al_ahram_5eme_complet_p030_i1",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-1",
+      "instruction": "ما هُوَ مُعَدَّلُ إِنْتاجِ الهِكْتارِ الوَاحِدِ مِنَ البَطاطَا.",
+      "body": "ثلاثة أسطر منقّطة للإجابة؛ سلّم التنقيط: معـ 2، معـ 3، معـ 1.",
+      "figureDesc": "Lignes pointillées pour la réponse, cases de notation à droite.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_ahram_5eme_complet_p030_i2",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-2",
+      "instruction": "ما هُوَ ثَمَنُ بَيْعِ البَطاطَا؟",
+      "body": "ثلاثة أسطر منقّطة للإجابة؛ سلّم التنقيط: معـ 2، معـ 1.",
+      "figureDesc": "Lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_ahram_5eme_complet_p030_i3",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2",
+      "instruction": "",
+      "body": "زَرَعَ صاحبُ الحقلِ المنطقةَ الثانيةَ قمحًا فأنتجَ الهكتارُ الواحدُ 5 ط ، 8 ق ووقعَ بيعُ القمحِ ... الواحد بـ 20 د. (texte partiellement illisible)",
+      "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 2).",
+      "answer": null,
+      "confidence": 0.35,
+      "id": "al_ahram_5eme_complet_p030_i4",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-1",
+      "instruction": "احْسُبْ مَدْخُولَ صاحِبِ الأَرْضِ مِنَ القَمْحِ وَالبَطاطَا مَعًا.",
+      "body": "أربعة أسطر منقّطة للإجابة؛ سلّم التنقيط: معـ 3، معـ 2، معـ 1.",
+      "figureDesc": "Lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_ahram_5eme_complet_p030_i5",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "لشراء معدّات الأرض اقترض هذا الفلاح من البنك 18240 دينارًا على أن يسدّد هذا المبلغ أقساطًا وكان مقدار كل قسط 380 د في كل شهر من تاريخ ... (texte partiellement illisible)",
+      "figureDesc": "Bandeau décoratif ombré contenant l'énoncé (support 3).",
+      "answer": null,
+      "confidence": 0.35,
+      "id": "al_ahram_5eme_complet_p030_i6",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-1",
+      "instruction": "بَعْدَ كَمْ شَهْرٍ يُسَدِّدُ هَذَا الفَلاَّحُ المَبْلَغَ الَّذِي تَسَلَّمَهُ مِنَ البَنكِ؟",
+      "body": "سطران منقّطان للإجابة؛ سلّم التنقيط: معـ 2.",
+      "figureDesc": "Lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "al_ahram_5eme_complet_p030_i7",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.78
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 3,
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

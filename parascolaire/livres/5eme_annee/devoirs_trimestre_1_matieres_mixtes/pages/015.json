@@ -1,0 +1,106 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 15,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "التناظر المحوري (الشكل المناظر لشكل بالنسبة إلى محور تناظر) - Symétrie axiale",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "",
+      "instruction": "الإجابة",
+      "body": "إطار فارغ مخصص لكتابة إجابة التلميذ.",
+      "figureDesc": "Cadre décoratif avec un encadré vide intitulé « الإجابة », prévu pour la réponse de l'élève.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p015_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أرسم صورة شكل على الشبكة باستعمال التناظر المحوري. أكمل الرسم وفقا للتناظر المحوري العمودي",
+      "body": "أكمل الرسم وفقا للتناظر المحوري العمودي",
+      "figureDesc": "Grille quadrillée avec un axe de symétrie vertical rouge. À droite de l'axe, une ligne brisée : segment horizontal en haut partant de l'axe, segment vertical vers le bas, puis segment oblique revenant vers l'axe. Il faut dessiner le symétrique à gauche de l'axe.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p015_i2",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمل الرسم وفقا للتناظر المحوري الأفقي",
+      "body": "أكمل الرسم وفقا للتناظر المحوري الأفقي",
+      "figureDesc": "Grille quadrillée avec un axe de symétrie horizontal rouge. Sous l'axe, une ligne brisée : segment vertical partant de l'axe, segment horizontal vers la gauche, segment oblique montant, puis segment horizontal vers la gauche. Il faut dessiner le symétrique au-dessus de l'axe.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p015_i3",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكمل الرسم وفقا للتناظر المحوري الأفقي و العمودي",
+      "body": "أكمل الرسم وفقا للتناظر المحوري الأفقي و العمودي",
+      "figureDesc": "Grille quadrillée avec deux axes rouges (un vertical, un horizontal) se croisant. Dans le quadrant supérieur droit, une figure en ligne brisée : segment horizontal en haut, segment vertical à droite, et un motif en forme de « V » inversé (chevron). Il faut dessiner les symétriques par rapport aux deux axes.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p015_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-5-m8",
+    "confidence": 0.25
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la symétrie axiale (compléter des figures sur quadrillage), un contenu de géométrie qui n'apparaît dans aucun des chapitres officiels de mathématiques de 5ème Année (ceux-ci traitent des nombres, polygones, cercle, fractions et solides).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Symétrie axiale sur quadrillage",
+    "skill": "Compléter une figure par symétrie axiale (verticale, horizontale ou les deux) sur un quadrillage.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "symétrie axiale",
+      "axe vertical",
+      "axe horizontal",
+      "quadrillage",
+      "figure symétrique",
+      "géométrie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression en trois étapes (axe vertical, axe horizontal, puis double symétrie) pour compléter des figures sur quadrillage, facilement adaptable avec d'autres motifs ou des motifs à thème (lettres, papillons, drapeaux).",
+    "themeGroup": "Quadrilatères, symétrie et repérage"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

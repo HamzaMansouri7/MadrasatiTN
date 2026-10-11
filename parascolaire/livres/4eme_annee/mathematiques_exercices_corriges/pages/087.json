@@ -1,0 +1,269 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 87,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 22 : اختبار تقويمي للتثبيت والدعم (المضاعفات، القسمة الإقليدية، مسائل حسابية، المحيط)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ما هو أكبر مضاعف لـ 6 يكون أصغر من 100 ؟",
+      "body": "ب) أكمل الجدول التالي :\nالمقسوم | القاسم | خارج القسمة | الباقي\n59 | 8 | . | 3\n85 | . | 9 | .\n. | 21 | 20 | 5",
+      "figureDesc": "جدول من أربعة أعمدة (المقسوم، القاسم، خارج القسمة، الباقي) وثلاثة أسطر، بعض الخانات فارغة (نقطة) يجب إتمامها.",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p087_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "تتركّب عائلتنا من 4 أفراد.\nيشرب كلّ واحد منّا يوميًا كأسَيْن من الحليب.\n- كم قارورة حليب تستهلك هذه العائلة في 5 أيّام؟",
+      "body": "",
+      "figureDesc": "رسم قارورة حليب (مكتوب عليها «حليب») تساوي خمسة كؤوس.",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p087_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "(أ ب ج د) مستطيل قُسّم إلى 6 مُرَبَّعات متقايسة. ما هو طول السلك المستعمل في الشّكل إذا كان طول أ د = 6 صم :",
+      "body": "",
+      "figureDesc": "مستطيل أ ب ج د مقسّم إلى 6 مربعات متقايسة (3 أعمدة وسطرين). طول الضلع أ د مشار إليه بسهم ويساوي 6 صم.",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p087_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اختر لكلّ مسألة الجواب المناسب :",
+      "body": "المسألة 1 : بقسم السّنة الرّابعة 30 تلميذا. ساهم كلّ تلميذ بدينارَيْن للطباعة. صُرف المبلغ المتحصّل عليه لشراء 6 رزم من الورق. ما هو ثمن شراء الرزمة الواحدة؟\nالمسألة 2 : رصَف التّاجر البيض في 6 أوعية يسع كل واحد 30 بيضة. سقط وعاءان فتكسّر بيضها. ما هو عدد البيض الصالح للبيع؟\nالإجابة :\n(أ) 2 x (30 + 6)\n(ب) (2 - 6) x 30\n(ج) 6 : (2 x 30)\n(د) 30 x (2 : 6)",
+      "figureDesc": "مربعان نصيان للمسألتين وأربعة مربعات للإجابات المقترحة أ، ب، ج، د مع دوائر للاختيار.",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p087_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch3",
+  "topicTitle": "Période 3 : Division euclidienne, fractions et périmètres",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.48
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de consolidation (multiples, division euclidienne, problèmes, périmètre) qui touche surtout la division euclidienne et les périmètres de la Période 3, mais mêle aussi multiples et distributivité de la Période 2, donc la correspondance n'est pas exacte.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    129
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Multiples, division euclidienne et problèmes",
+    "skill": "Déterminer des multiples, compléter une division euclidienne, résoudre des problèmes à étapes et calculer un périmètre.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "qcm"
+    ],
+    "keywords": [
+      "multiples",
+      "division euclidienne",
+      "problèmes arithmétiques",
+      "périmètre",
+      "rectangle",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation de consolidation mêlant tableau de division à compléter, problèmes de la vie quotidienne (consommation de lait en famille, œufs cassés, cotisation de classe) et périmètre d'une figure découpée en carrés, avec choix de réponses pour les problèmes.",
+    "themeGroup": "Multiplication et multiples"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Tableau ligne 3: l'image montre Reste=5, Quotient=20, Diviseur=21, Dividende='.'. La transcription met '. | 21 | 20 | 5' dans l'ordre colonnes (المقسوم|القاسم|خارج|الباقي), ce qui est cohérent ; mais ligne 1 est correcte (59|8|.|3). Pas d'erreur de valeur, seulement l'ordre RTL ambigu."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Question 2: la question 'كم قارورة...' est placée avant la description de la famille; dans l'image elle vient après (ordre de lecture inversé)."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Question 2: 'قارورة حليب = 5 كؤوس (حسب الرسم)' est inventé; l'image montre seulement un dessin d'une bouteille = 5 gobelets, pas de texte."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 4 problème 2: 'رصَف' est écrit 'رصَف' avec 'التّاجر' ; dans l'image 'رصّف التاجر البيض' (رصْف) et 'سقط وعاءان' – le texte original 'وعاءان' ok; vérifier 'بقسم' ok."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis: 'اختبار تقويمي للتثبيت والدعم', 'الأسبوع 22' et numéro de page 83."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Question 3: la figure (rectangle 3x2 avec sommets أ ب ج د et la cote 6 صم) n'est pas décrite; le texte 'السلك المستعمل' est correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel ajouté non visible dans l'image (ex. كأسَيْن, دينارَيْن, مُرَبَّعات) ; l'image a كأسَيْن et دينارَيْن visibles mais 'مُرَبَّعات' est 'مُرَبَّعات' sans shadda visible."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 2 : la ligne « قارورة حليب = 5 كؤوس (حسب الرسم) » figure dans le body comme du texte, alors que l'image ne contient aucun texte de ce genre. Il y a seulement un dessin (bouteille « حليب » = 5 gobelets). Cette information doit rester dans figureDesc."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 2 : la question « كم قارورة حليب… » est placée en instruction, avant l'énoncé (4 أفراد, كأسَيْن). Dans l'image elle vient après. Pour garder l'ordre de lecture, l'énoncé et la question sont regroupés dans instruction, comme pour l'exercice 3."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ما هو أكبر مضاعف لـ 6 يكون أصغر من 100 ؟",
+      "body": "ب) أكمل الجدول التالي :\nالمقسوم | القاسم | خارج القسمة | الباقي\n59 | 8 | . | 3\n85 | . | 9 | .\n. | 21 | 20 | 5",
+      "figureDesc": "جدول من أربعة أعمدة (المقسوم، القاسم، خارج القسمة، الباقي) وثلاثة أسطر، بعض الخانات فارغة (نقطة) يجب إتمامها.",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p087_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "تتركّب عائلتنا من 4 أفراد.\nيشرب كلّ واحد منّا يوميًا كأسَيْن من الحليب.\n- كم قارورة حليب تستهلك هذه العائلة في 5 أيّام؟",
+      "body": "",
+      "figureDesc": "رسم قارورة حليب (مكتوب عليها «حليب») تساوي خمسة كؤوس.",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p087_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "(أ ب ج د) مستطيل قُسّم إلى 6 مُرَبَّعات متقايسة. ما هو طول السلك المستعمل في الشّكل إذا كان طول أ د = 6 صم :",
+      "body": "",
+      "figureDesc": "مستطيل أ ب ج د مقسّم إلى 6 مربعات متقايسة (3 أعمدة وسطرين). طول الضلع أ د مشار إليه بسهم ويساوي 6 صم.",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p087_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اختر لكلّ مسألة الجواب المناسب :",
+      "body": "المسألة 1 : بقسم السّنة الرّابعة 30 تلميذا. ساهم كلّ تلميذ بدينارَيْن للطباعة. صُرف المبلغ المتحصّل عليه لشراء 6 رزم من الورق. ما هو ثمن شراء الرزمة الواحدة؟\nالمسألة 2 : رصَف التّاجر البيض في 6 أوعية يسع كل واحد 30 بيضة. سقط وعاءان فتكسّر بيضها. ما هو عدد البيض الصالح للبيع؟\nالإجابة :\n(أ) 2 x (30 + 6)\n(ب) (2 - 6) x 30\n(ج) 6 : (2 x 30)\n(د) 30 x (2 : 6)",
+      "figureDesc": "مربعان نصيان للمسألتين وأربعة مربعات للإجابات المقترحة أ، ب، ج، د مع دوائر للاختيار.",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p087_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ما هو أكبر مضاعف لـ 6 يكون أصغر من 100 ؟",
+      "body": "ب) أكمل الجدول التالي :\nالمقسوم | القاسم | خارج القسمة | الباقي\n59 | 8 | . | 3\n85 | . | 9 | .\n. | 21 | 20 | 5",
+      "figureDesc": "جدول من أربعة أعمدة (المقسوم، القاسم، خارج القسمة، الباقي) وثلاثة أسطر، بعض الخانات فارغة (نقطة) يجب إتمامها.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p087_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "كم قارورة حليب تستهلك هذه العائلة في 5 أيّام؟",
+      "body": "تتركّب عائلتنا من 4 أفراد.\nيشرب كلّ واحد منّا يوميًا كأسَيْن من الحليب.\nقارورة حليب = 5 كؤوس (حسب الرسم).",
+      "figureDesc": "رسم قارورة حليب تساوي خمسة كؤوس.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p087_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "(أ ب ج د) مستطيل قُسّم إلى 6 مُرَبَّعات متقايسة. ما هو طول السلك المستعمل في الشّكل إذا كان طول أ د = 6 صم :",
+      "body": "",
+      "figureDesc": "مستطيل أ ب ج د مقسّم إلى 6 مربعات متقايسة (3 أعمدة وسطرين). طول الضلع أ د مشار إليه بسهم ويساوي 6 صم.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p087_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اختر لكلّ مسألة الجواب المناسب :",
+      "body": "المسألة 1 : بقسم السّنة الرّابعة 30 تلميذا. ساهم كلّ تلميذ بدينارَيْن للطباعة. صُرف المبلغ المتحصّل عليه لشراء 6 رزم من الورق. ما هو ثمن شراء الرزمة الواحدة؟\nالمسألة 2 : رصَف التّاجر البيض في 6 أوعية يسع كل واحد 30 بيضة. سقط وعاءان فتكسّر بيضها. ما هو عدد البيض الصالح للبيع؟\nالإجابة :\n(أ) 2 x (30 + 6)\n(ب) (2 - 6) x 30\n(ج) 6 : (2 x 30)\n(د) 30 x (2 : 6)",
+      "figureDesc": "مربعان نصيان للمسألتين وأربعة مربعات للإجابات المقترحة أ، ب، ج، د مع دوائر للاختيار.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p087_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

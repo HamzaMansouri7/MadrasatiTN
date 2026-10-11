@@ -1,0 +1,175 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 99,
+  "grade": "6ème Année",
+  "subject": "Français (et non Mathématiques : la page est un examen de français, certifié primaire, Maroc)",
+  "topicGuess": "Examen régional unifié de français, certificat d'études primaires, session de juillet 2022 (Maroc, Casablanca-Settat, Direction provinciale de Jedida) : compréhension de l'écrit sur « Le smartphone ». La page ne correspond ni à un manuel tunisien ni à des mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte support : Le smartphone",
+      "body": "Les écrans occupent une place considérable dans la vie de chacun ; et plus particulièrement des enfants. Le téléphone portable et l'exposition aux écrans restent des préoccupations majeures des parents d'aujourd'hui. Les uns tolèrent l'usage du téléphone, les autres l'interdisent. Pour ceux qui défendent le numérique, le téléphone portable peut être un outil pédagogique. Par contre, les détracteurs du portable affirment qu'il provoquerait, chez les jeunes, des déficits de l'attention et des troubles du sommeil.\nLes effets négatifs d'une mauvaise utilisation des écrans concernent tous les âges. Mais le jeune enfant, fasciné par les bruits et les lumières vives, risque d'avoir des troubles comportementaux. Il réagit en colère quand on le lui retire. Par conséquent, cadrer le temps d'écran à tout âge est indispensable. Le parent doit accompagner l'enfant dans son utilisation. Sur ces sujets, rien ne remplace la discussion au sein de la famille.\nwww.academie-medecine.fr/",
+      "figureDesc": "En-tête d'examen marocain (Royaume du Maroc, ministère de l'Éducation nationale, Académie régionale de Casablanca-Settat), cadres pour nom, numéro d'examen et note, triangle hachuré. Matière : اللغة الفرنسية. Titre : الامتحان الإقليمي الموحد لنيل شهادة الدروس الابتدائية - دورة يوليوز 2022. Durée : ساعة ونصف.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p099_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Je complète le tableau suivant : (2pts)",
+      "body": "La source du texte ? (1pt) | Le titre du texte ? (1pt)",
+      "figureDesc": "Tableau à deux colonnes avec une ligne de réponse vide.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p099_i2",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Je réponds par vrai ou faux : (je coche la bonne réponse) (3pts)",
+      "body": "Tous les parent tolèrent l'usage du téléphone. (1pt)\nLes effets négatifs d'une mauvaise utilisation des écrans concernent tous les âges. (1pt)\nLe téléphone portable peut être un outil pédagogique. (1pt)",
+      "figureDesc": "Tableau avec colonnes Vrai / Faux à cocher.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p099_i3",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "D'après le texte, quelle est la préoccupation majeure des parents d'aujourd'hui ? (2pts)",
+      "body": "",
+      "figureDesc": "Lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p099_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Qu'affirment les détracteurs du portable ? (2pts)",
+      "body": "",
+      "figureDesc": "Lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p099_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Je cite un effet négatif de la mauvaise utilisation du portable par les jeunes ? (2pts)",
+      "body": "",
+      "figureDesc": "Lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p099_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Peut-on interdire le téléphone pour les jeunes et quelle solution proposes-tu ? (2pts)",
+      "body": "",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p099_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Je propose un autre titre au texte (1pt)",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p099_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Je précise le type de ce texte en cochant la bonne réponse (1pt)",
+      "body": "Narratif / Informatif / Descriptif",
+      "figureDesc": "Trois cases à cocher.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p099_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.16
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un examen régional marocain (certificat d'études primaires, 2022) de compréhension de l'écrit sur le smartphone, c'est-à-dire une évaluation générale et non un chapitre du manuel tunisien ; le thème des écrans se rapproche vaguement du module 2 (Communiquer) ou du module 6 (Santé), mais aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : le smartphone",
+    "skill": "Lire un texte informatif sur les écrans, en dégager les informations clés et donner son opinion en justifiant.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "schema_tableau",
+      "production_ecrite",
+      "qcm"
+    ],
+    "keywords": [
+      "smartphone",
+      "écrans",
+      "compréhension de l'écrit",
+      "texte informatif",
+      "examen régional",
+      "enfants et technologie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Sujet d'examen de compréhension sur un thème de société proche des élèves (écrans et enfants). Il enchaîne des questions graduées : identification de la source et du titre, vrai/faux, recherche d'informations, question d'opinion avec solution, nouveau titre, type de texte. Barème détaillé par question, facilement transposable à d'autres thèmes actuels.",
+    "themeGroup": "Internet et technologies"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

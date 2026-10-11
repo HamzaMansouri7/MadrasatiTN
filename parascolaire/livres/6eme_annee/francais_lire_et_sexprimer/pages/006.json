@@ -1,0 +1,200 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 6,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Julien et Thomas à la veille de la rentrée des classes (compréhension de texte et grammaire : la phrase interrogative)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "B) 1) a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- Vis-à-vis de la rentrée des classes, Julien est content et Thomas est triste. ............",
+      "figureDesc": "Une case ovale en pointillés à droite de la phrase pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p006_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B) 1) b",
+      "instruction": "Relève, dans le texte, les détails qui le montrent :",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p006_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B) 2",
+      "instruction": "Que met Thomas dans son cartable ?",
+      "body": "Une ligne de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p006_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B) 3) a",
+      "instruction": "Complète avec des mots du texte :",
+      "body": "- À la place du cahier, Julien sort ...............................\n- À la place de son stylo, Julien sort ...............................\n- Julien sort ............................... à la place des crayons de couleurs.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p006_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B) 3) b",
+      "instruction": "Cherche, dans le texte, le synonyme des mots soulignés :",
+      "body": "- Julien s'assoupit tôt. (« s'assoupit » est souligné) ...............\n- Le petit garçon cherche dans sa chambre. (« cherche » est souligné) ...............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p006_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B) 4",
+      "instruction": "Pourquoi Julien devient-il rouge ?",
+      "body": "Une ligne de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p006_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B) 5",
+      "instruction": "Que penses-tu de Thomas ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p006_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B) 6",
+      "instruction": "Imagine la réaction de la maîtresse vis-à-vis de Julien ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p006_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "C) 1) a",
+      "instruction": "Lis la réponse. Écris la question de deux façons différentes :",
+      "body": "- ...............\n- ...............\n(La réponse à lire est peu lisible sur la page scannée : texte en transparence.)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "francais_lire_et_sexprimer_p006_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.35,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.51
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de compréhension de texte en français (Julien et Thomas à la veille de la rentrée) avec la phrase interrogative, mais aucun des modules officiels (travail, médias, tolérance, entraide, nature, santé, loisirs, autres modes de vie) ne correspond clairement à ce thème de rentrée scolaire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    119
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte et phrase interrogative",
+    "skill": "Comprendre un texte narratif en relevant des informations et des synonymes, puis formuler une même question de plusieurs façons.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "phrase interrogative",
+      "synonymes",
+      "rentrée des classes",
+      "relevé d'indices",
+      "question-réponse"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une séquence progressive qui part d'une situation de la vie scolaire (veille de rentrée) : questions de compréhension, vocabulaire en contexte, avis personnel et réaction imaginée, puis réécriture d'une question de deux façons. Ce modèle est réutilisable pour d'autres textes.",
+    "themeGroup": "Grammaire: la phrase"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Mention « La réponse à lire est peu lisible... texte en transparence » : commentaire ajouté, absent de la page ; de plus, le texte en transparence (verso) n'est pas à transcrire."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-têtes et pieds de page omis : « Lecture - Compréhension », « Sagesse », « 6ème année de base », « B) Compréhension : », « C) Grammaire : », « Lire et s'exprimer », numéro de page 5."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Vis-à-vis » est écrit « Vis -à- vis » sur la page ; « devient-il » apparaît comme « devient –il » (différences de typographie négligeables)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le cadre arrondi pour la réponse oui/non (1a) est transcrit seulement comme pointillés, sans mention du cadre."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

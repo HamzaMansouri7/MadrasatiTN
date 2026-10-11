@@ -1,0 +1,104 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 11,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "فهم المكتوب: أسئلة حول نص قاعة القسم والنظافة (تعليل الإجابة بقرينة، شطب الخطأ، تعويض ما تحته سطر، المواقف الخاطئة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُجِيبُ بِـ «نَعَمْ» أَوْ «لَا»",
+      "body": "قَاعَةُ الْقِسْمِ لَا تَنْقُصُهَا التَّهْوِئَةُ. ......................\nأُعَلِّلُ جَوَابِي بِقَرِينَةٍ مِنَ النَّصِّ :\n..............................................................................................................",
+      "figureDesc": "Lignes pointillées pour la réponse et la justification ; indicateurs de barème dans la marge (معـ2أ، معـ2ج).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p011_i1",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَشْطُبُ الْخَطَأَ : تَدُورُ أَحْدَاثُ النَّصِّ فِي :",
+      "body": "الشَّارِعِ / الْمَنْزِلِ / الْمَدْرَسَةِ / الْحَدِيقَةِ\nأَسْتَخْرِجُ مِنَ النَّصِّ قَرِينَةً تَدُلُّ عَلَى ذَلِكَ :\n..............................................................................................................",
+      "figureDesc": "Quatre cases rectangulaires contenant les mots : الشَّارِعِ، الْمَنْزِلِ، الْمَدْرَسَةِ، الْحَدِيقَةِ ; filigrane MOURAJAA.COM ; lignes pointillées.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p011_i2",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُعَوِّضُ مَا تَحْتَهُ سَطْرٌ بِمَا يُفِيدُ الْمَعْنَى نَفْسَهُ :",
+      "body": "• اِسْتَاءَ الْمُعَلِّمُ وَالتَّلَامِيذُ لِهَذَا الْمَشْهَدِ الْـمُخْجِلِ. (المسطّر: اِسْتَاءَ)\n..............................................................................................................\n• قَاعَةُ قِسْمِنَا جَمِيلَةٌ وَفَسِيحَةٌ. (المسطّر: وَفَسِيحَةٌ)\n..............................................................................................................\n• وَجَدْنَا الْأَوْسَاخَ وَالْأَوْرَاقَ مُتَنَاثِرَةً عَلَى أَرْضِيَّةِ الْقَاعَةِ. (المسطّر: مُتَنَاثِرَةً)\n..............................................................................................................",
+      "figureDesc": "Un mot souligné dans chaque phrase ; lignes pointillées pour les réponses.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p011_i3",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَشْطُبُ الْمَوَاقِفَ الْخَاطِئَةَ.",
+      "body": "- أُلْقِي الْأَوْرَاقَ عَلَى أَرْضِيَّةِ الْقِسْمِ.\n- أُحَافِظُ عَلَى نَظَافَةِ قِسْمِي وَمَدْرَسَتِي.\n- لَا أُسَاهِمُ فِي تَزْيِينِ قِسْمِي.",
+      "figureDesc": "Petites cases de notation dans la marge (معـ3).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p011_i4",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-3-u4",
+  "topicTitle": "Unité 4 : Collecte d'indices et justification",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-3-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u4",
+    "confidence": 0.53
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Page de compréhension de l'écrit en arabe dont les exercices demandent de justifier une réponse par une \"قرينة\" (indice) du texte, ce qui correspond à l'unité 4 (collecte d'indices et justification); les exercices de remplacement et de comportements sont secondaires.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de l'écrit : propreté de la classe",
+    "skill": "Comprendre un texte écrit en justifiant ses réponses par des indices, en trouvant des synonymes et en jugeant des comportements.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "propreté de la classe",
+      "justification par indice",
+      "synonymes",
+      "comportements civiques"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices variés autour d'un texte sur la propreté de la classe : répondre par oui/non en justifiant par un indice, barrer l'intrus pour situer le lieu, remplacer un mot souligné par un synonyme, barrer les comportements inappropriés. Cette structure se réutilise facilement pour d'autres textes.",
+    "themeGroup": "Compréhension de l'écrit : la classe et la maison"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

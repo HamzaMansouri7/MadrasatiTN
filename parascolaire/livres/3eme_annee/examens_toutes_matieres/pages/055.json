@@ -1,0 +1,133 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 55,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التقييم: سورة التين وسورة الشرح، السند 2 (أشجار التين والزيتون)، وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَضَعُ الْعَلامَةَ (x) فِي الْخَانَةِ الْمُنَاسِبَةِ.",
+      "body": "الآيَةُ | سُورَةُ التِّينِ | سُورَةُ الشَّرْحِ\n• وَهَذَا الْبَلَدِ الأَمِينِ\n• الَّذِي أَنْقَضَ ظَهْرَكَ\n• لَقَدْ خَلَقْنَا الإِنْسَانَ فِي أَحْسَنِ تَقْوِيمٍ",
+      "figureDesc": "جدول من ثلاثة أعمدة (الآية، سورة التين، سورة الشرح) وثلاثة أسطر، خانات الاختيار فارغة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p055_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَرْبُطُ كُلَّ آيَةٍ مِنْ سُورَةِ التِّينِ بِالْمَعْنَى الْمُنَاسِبِ.",
+      "body": "الآيات (العمود الأيمن):\n• وَهَذَا الْبَلَدِ الأَمِينِ.\n• ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ\n• أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ\nالمعاني (العمود الأيسر):\n• أَرْجَعْنَاهُ إِلَى الْهَرَمِ وَأَرْذَلِ الْعُمُرِ\n• مَكَّةَ الْمُكَرَّمَةَ\n• اللَّهُ يَحْكُمُ بِالْعَدْلِ بَيْنَ النَّاسِ.",
+      "figureDesc": "تمرين وصل بين عمودين: آيات على اليمين ومعانيها على اليسار، مع علامة مائية MORAHA.COM",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p055_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 2",
+      "instruction": "",
+      "body": "رَأَى فَادِي أَشْجَارَ التِّينِ وَالزَّيْتُونِ الْمَغْرُوسَةَ فِي الْحُقُولِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p055_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَذْكُرُ بَعْضَ الْفَوَائِدِ لِلإِنْسَانِ فِي غِرَاسَةِ أَشْجَارِ التِّينِ وَالزَّيْتُونِ ؟",
+      "body": "ثلاثة أسطر منقطة للإجابة",
+      "figureDesc": "أسطر منقطة",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examens_toutes_matieres_p055_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُبْدِي رَأْيِي فِي الْمَوَاقِفِ التَّالِيَةِ :",
+      "body": "- مَنْ يَحْمِلُ هَدِيَّةً لِجَدِّهِ : ......\n- مَنْ يُسَاعِدُ أُمَّهُ فِي تَرْتِيبِ الْمَنْزِلِ : ......\n- مَنْ يَزُورُ أَقَارِبَهُ : ......",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p055_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الأَعْدَادِ",
+      "body": "الشَّفَوِيُّ\n- سَلامَةُ النُّطْقِ : مِنْ 0 إِلَى 5\n- الاسْتِسْتِسَال : مِنْ 0 إِلَى 5\nمَعَايِيرُ الْحَدِّ الأَدْنَى: مع1، مع2أ، مع2ب، مع2ج، مع3أ، مع3ب\nالتَّمَيُّزُ: مع4\nالمَعَايِيرُ",
+      "figureDesc": "جدول إسناد الأعداد مقطوع في أسفل الصفحة",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "examens_toutes_matieres_p055_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p1",
+    "confidence": 0.26
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation générale de langue arabe (récitation des sourates At-Tin et Ash-Sharh, support sur les figuiers et oliviers, expression d'opinion, grille de notation orale) qui couvre plusieurs compétences, sans correspondre clairement à une seule unité officielle.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Évaluation sourates At-Tîn et Ash-Sharh",
+    "skill": "Identifier les versets de chaque sourate, en comprendre le sens et en tirer des comportements et valeurs.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "appariement",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "sourate At-Tîn",
+      "sourate Ash-Sharh",
+      "versets",
+      "figuier et olivier",
+      "évaluation",
+      "bonnes actions"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : tableau à cocher pour attribuer un verset à sa sourate, appariement verset-sens simple, question ouverte sur l'utilité des arbres (figuier, olivier) et mise en situation pour donner son avis sur des comportements familiaux (cadeau au grand-père, aide à la maison, visite aux proches).",
+    "themeGroup": "Évaluation"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

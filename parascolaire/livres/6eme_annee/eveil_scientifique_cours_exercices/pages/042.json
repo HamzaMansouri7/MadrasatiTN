@@ -1,0 +1,433 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 42,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "Corrigés « إيقاظ علمي السنة السادسة الصحفة » (exercices 14 à 20) : la lumière (réflexion, réfraction, lentilles, œil) et l'air (respiration, dissolution dans l'eau, poids de l'air)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "14",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 14",
+      "body": "- ينحرف الضوء عن مساره عندما ينتقل بين وسطين شفّافين.\n- تسمّى هذه الظاهرة بالانكسار.\n- لا تظهر السمكة في مكانها الحقيقي فهي أقرب إلى سطح الماء.\n- انكسار الضوء عند سطح الماء يتسبب في تقريب رؤية الأجسام المغمورة في الماء.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p042_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "15",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 15",
+      "body": "ت1: أ- انعكاس، ب- انكسار، ج- عدسة محدّبة (لامّة)، د- عدسة مقعّرة (مفرّقة).\nت2: الضوء ينتقل بخط مستقيم في الأوساط الشفّافة.\nالانعكاس هو ارتداد الضوء على مسار محدّد.\nالقرنيّة غشاء شفّاف يغلّف العين.\nالشبكيّة يخرج منها العصب البصري.\nالجفن يحمل الأهداب.\nالقزحيّة هي القسم الملوّن في العين.\nت3: ينتقل الضوء في الأوساط الشفّافة بخط مستقيم وبسرعة محدّدة في كلّ منها.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p042_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "16",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 16",
+      "body": "ت2-1: [رسم]\nت2-2: الصورة التي تتكوّن في المرآة المستوية لها تساوي الجسم، معتدلة، على نفس البعد.\nت2-3: الانعكاس نوعان: انعكاس غير منتظم وانعكاس منتظم.\nالانعكاس غير المنتظم ينعكس باتجاهات مختلفة.\nالانعكاس المنتظم يتعكس في مسار محدّد ولا ينتشر في جميع الاتجاهات.\n- الانعكاس غير المنتظم يسمح برؤية الأجسام من حولنا.\nت2-4: تبدو برك الحدائق وحمامات السباحة أقلّ عمقًا ممّا عليه في الواقع بسبب انكسار الضوء النّاتج عن اختلاف سرعة الضوء في الوسطين الشفّافين.",
+      "figureDesc": "رسم لتجربة على طاولة: عدسة على حامل بين جسم وشاشة مع أشعة ضوئية متقاطعة؛ الكتابات على الرسم [illisible]",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p042_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "17",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 17",
+      "body": "ت3-2: عين مصابة بقصر النظر.\nت3-3: يتمّ تعديل الرؤية بعدسة مقعّرة.\nت3-4: الجفن لأنّه يمثّل الأجزاء الخارجيّة للعين في حين الشبكيّة والعصب البصري والمشيميّة من الأجزاء الداخليّة.\n- الشبكيّة لأنّها جسم معتم أمّا القرنيّة والعدسة والسائل الشفّاف فهي أجسام شفّافة.\nت3-5: تستعمل الجدّة عدسة محدّبة لأنّها تبعد الجسم المنظور عن عينيها لتراه بوضوح، وفي هذه الحالة يقع خيال الجسم المرئي",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p042_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "18",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 18",
+      "body": "لا يمكن للإنسان البقاء تحت الماء لمدّة طويلة بدون أجهزة مساعدة لأنّه يقوم بعمليّة حيويّة هامّة هي عمليّة التنفّس، والهواء هو المادّة الأساسيّة في هذه العمليّة لاحتوائه على الأكسجين، فإذا منع الهواء عن الإنسان يموت مختنقا.\nت1: مات الفار مختنقا.\nت2: لانعدام توفّر الأكسجين.\nتكدّر ماء الجير داخل الحوض الذي بداخله أصيص به نبتة وانخفضت كمّية الأكسجين لأنّ النبتة تمتصّ الأكسجين ليلا وتطرح ثاني أكسيد الكربون.\n- استنتج أنّ الهواء ضروريّ لتنفّس النبات وتمرّن.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p042_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "19",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 19",
+      "body": "الهواء يحمل الطيور ويساعدها على الطيران.\nت1: ماتت السمكة في الشكل الثاني لانعدام الأكسجين داخل الحوض.\nت2: ندخل تيّارا هوائيّا إلى الحوض بالشكل الثالث حتّى ينحلّ جزء من الهواء في ماء الحوض.\nت3: في الشكل الثالث ينحلّ الهواء في الماء بكمّيات قليلة ولا تعيش الأسماك ومعظم الأحياء المائيّة إلاّ في ماء يحوي كمّيّة من الهواء المنحلّ فيه.\nأمّا في الشكل الرابع فإنّ كمّيّة الأكسجين التي تعطيها النباتات الخضراء في عمليّة الضوئي أكبر بكثير ممّا تأخذه بالتنفّس.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p042_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "20",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 20",
+      "body": "الهواء مادّة (غاز) لا لون ولا طعم، يوجد في كلّ مكان حولنا وليس له شكل خاص به.\nتثبت التجربة أنّ للهواء وزن.\nأ) نمرّر تيّارا من الهواء في حوض السمك المنزلي لتتمكّن الأسماك من مواصلة التنفّس.\nب) الخاصيّة: ينحلّ الهواء في الماء بكمّيّة قليلة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p042_i7"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u1",
+  "topicTitle": "Unité 1 : L'œil, la lumière et l'optique",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u1",
+    "confidence": 0.57
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est un corrigé d'Éveil Scientifique dont la majorité (pages 14 à 17) porte sur la lumière, la réflexion, la réfraction, les lentilles et l'œil, ce qui correspond à l'Unité 1. Les pages 18 à 20 traitent de l'air et de la respiration (Unité 2), donc le contenu est mixte et la confiance reste limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Lumière, vision et air",
+    "skill": "Expliquer la réflexion et la réfraction de la lumière, le rôle des lentilles et de l'œil, ainsi que les propriétés de l'air (respiration, dissolution dans l'eau, poids).",
+    "pageType": "correction",
+    "formats": [
+      "schema_tableau",
+      "appariement",
+      "autre"
+    ],
+    "keywords": [
+      "réfraction",
+      "réflexion",
+      "lentilles",
+      "œil",
+      "respiration",
+      "air dans l'eau"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : situations expérimentales simples (poisson vu dans l'eau, bougie-lentille-écran, souris sous cloche, aquarium aéré), légendage de schémas de l'œil, classement des parties internes/externes et transparentes/opaques.",
+    "themeGroup": "La lumière et la vision"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Les champs « réponse: ... » ajoutés aux sections 14 et 15 ne figurent pas sur la page ; ce sont des reformulations inventées (ex. « يقرّب رؤية » à la place de « يتسبب في تقريب »)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Section 16 : « (رسم تجربة: شمعة، عدسة، شاشة/مصدر ضوء على طاولة) » est une description interprétative du schéma, pas du texte ; les étiquettes du schéma sont illisibles."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Section 15 : le « 1-2 » du texte est en réalité « ت2: » ; de plus la transcription mélange les numéros (1-1, 1-2, 1-3) alors que l'image indique « ت1 / ت2 / ت3 »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 14 : « تسمى » devrait être « تسمّى » (avec shadda visible) ; « ينحرف » devrait être « يَنحرف » (voyelles partielles)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Section 16 : « يتعكس » devrait être « ينعكس » (c'est ce que dit l'image) — la transcription reprend ici une faute du scan sans la corriger, ou introduit une erreur."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Section 17 : « والشبيكيّة » devrait être « والمشيميّة »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 17 : « الجدّة » devrait être « الجدّ » (ou « الجَدّة » selon l'image, à vérifier)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Section 17 : la fin de la phrase « وفي هذه الحالة يقع خيال الجسم المرئي » est tronquée avec « ... » alors qu'elle est complète dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Section 19 : « يذحلّ » devrait être « ينحلّ » (deux occurrences, et dans « يذحلّ جزء »)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Section 19 : « في عمليّة الضوئي » devrait être « في عمليّة التركيب الضوئي » (mot manquant) ; à vérifier dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Section 18 : les numéros « ت2 », le point 3 et le passage sur le Fār sont mal numérotés (« 1-2: ... 2: ... » au lieu de 1 / ت2)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Section 20 : la numérotation (1, 2, 3 avec « أ) ») est perdue."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 19 : « 2-2 » devrait être « ت2 » ; « 3: » devrait être « ت3 »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Sections 14 et 15 : le champ « answer » est une reformulation qui n'est pas sur la page (« يقرّب رؤية… », « أ- انعكاس… » recopié comme réponse séparée). Mis à null."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Section 16 : « (رسم تجربة: شمعة، عدسة، شاشة/مصدر ضوء على طاولة) » dans le body est une description du schéma, pas du texte. Retiré du body. Les étiquettes du schéma sont illisibles."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 15 : la numérotation « 1-1 / 1-2 / 1-3 » est fausse. L'image indique « ت1 / ت2 / ت3 »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Sections 18 et 19 : même problème de numérotation. L'image indique « ت1 / ت2 / ت3 » et non « 1-2 », « 2-2 », « 3 »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 14 : « تسمى » doit être « تسمّى » (shadda visible)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Section 17 : « والشبيكيّة » doit être « والمشيميّة ». Le mot était dupliqué avec « الشبكيّة »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Section 17 : la fin « المرئي » est bien la fin de la phrase dans l'image. Le « ... » ajouté est à supprimer."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 19 : « يذحلّ » (deux occurrences) doit être « ينحلّ »."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "14",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 14",
+      "body": "- ينحرف الضوء عن مساره عندما ينتقل بين وسطين شفّافين.\n- تسمّى هذه الظاهرة بالانكسار.\n- لا تظهر السمكة في مكانها الحقيقي فهي أقرب إلى سطح الماء.\n- انكسار الضوء عند سطح الماء يتسبب في تقريب رؤية الأجسام المغمورة في الماء.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "15",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 15",
+      "body": "ت1: أ- انعكاس، ب- انكسار، ج- عدسة محدّبة (لامّة)، د- عدسة مقعّرة (مفرّقة).\nت2: الضوء ينتقل بخط مستقيم في الأوساط الشفّافة.\nالانعكاس هو ارتداد الضوء على مسار محدّد.\nالقرنيّة غشاء شفّاف يغلّف العين.\nالشبكيّة يخرج منها العصب البصري.\nالجفن يحمل الأهداب.\nالقزحيّة هي القسم الملوّن في العين.\nت3: ينتقل الضوء في الأوساط الشفّافة بخط مستقيم وبسرعة محدّدة في كلّ منها.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "16",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 16",
+      "body": "ت2-1: [رسم]\nت2-2: الصورة التي تتكوّن في المرآة المستوية لها تساوي الجسم، معتدلة، على نفس البعد.\nت2-3: الانعكاس نوعان: انعكاس غير منتظم وانعكاس منتظم.\nالانعكاس غير المنتظم ينعكس باتجاهات مختلفة.\nالانعكاس المنتظم يتعكس في مسار محدّد ولا ينتشر في جميع الاتجاهات.\n- الانعكاس غير المنتظم يسمح برؤية الأجسام من حولنا.\nت2-4: تبدو برك الحدائق وحمامات السباحة أقلّ عمقًا ممّا عليه في الواقع بسبب انكسار الضوء النّاتج عن اختلاف سرعة الضوء في الوسطين الشفّافين.",
+      "figureDesc": "رسم لتجربة على طاولة: عدسة على حامل بين جسم وشاشة مع أشعة ضوئية متقاطعة؛ الكتابات على الرسم [illisible]",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "17",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 17",
+      "body": "ت3-2: عين مصابة بقصر النظر.\nت3-3: يتمّ تعديل الرؤية بعدسة مقعّرة.\nت3-4: الجفن لأنّه يمثّل الأجزاء الخارجيّة للعين في حين الشبكيّة والعصب البصري والمشيميّة من الأجزاء الداخليّة.\n- الشبكيّة لأنّها جسم معتم أمّا القرنيّة والعدسة والسائل الشفّاف فهي أجسام شفّافة.\nت3-5: تستعمل الجدّة عدسة محدّبة لأنّها تبعد الجسم المنظور عن عينيها لتراه بوضوح، وفي هذه الحالة يقع خيال الجسم المرئي",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "18",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 18",
+      "body": "لا يمكن للإنسان البقاء تحت الماء لمدّة طويلة بدون أجهزة مساعدة لأنّه يقوم بعمليّة حيويّة هامّة هي عمليّة التنفّس، والهواء هو المادّة الأساسيّة في هذه العمليّة لاحتوائه على الأكسجين، فإذا منع الهواء عن الإنسان يموت مختنقا.\nت1: مات الفار مختنقا.\nت2: لانعدام توفّر الأكسجين.\nتكدّر ماء الجير داخل الحوض الذي بداخله أصيص به نبتة وانخفضت كمّية الأكسجين لأنّ النبتة تمتصّ الأكسجين ليلا وتطرح ثاني أكسيد الكربون.\n- استنتج أنّ الهواء ضروريّ لتنفّس النبات وتمرّن.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "19",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 19",
+      "body": "الهواء يحمل الطيور ويساعدها على الطيران.\nت1: ماتت السمكة في الشكل الثاني لانعدام الأكسجين داخل الحوض.\nت2: ندخل تيّارا هوائيّا إلى الحوض بالشكل الثالث حتّى ينحلّ جزء من الهواء في ماء الحوض.\nت3: في الشكل الثالث ينحلّ الهواء في الماء بكمّيات قليلة ولا تعيش الأسماك ومعظم الأحياء المائيّة إلاّ في ماء يحوي كمّيّة من الهواء المنحلّ فيه.\nأمّا في الشكل الرابع فإنّ كمّيّة الأكسجين التي تعطيها النباتات الخضراء في عمليّة الضوئي أكبر بكثير ممّا تأخذه بالتنفّس.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "20",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 20",
+      "body": "الهواء مادّة (غاز) لا لون ولا طعم، يوجد في كلّ مكان حولنا وليس له شكل خاص به.\nتثبت التجربة أنّ للهواء وزن.\nأ) نمرّر تيّارا من الهواء في حوض السمك المنزلي لتتمكّن الأسماك من مواصلة التنفّس.\nب) الخاصيّة: ينحلّ الهواء في الماء بكمّيّة قليلة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u1",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "14",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 14",
+      "body": "- ينحرف الضوء عن مساره عندما ينتقل بين وسطين شفافين.\n- تسمى هذه الظاهرة بالانكسار.\n- لا تظهر السمكة في مكانها الحقيقي فهي أقرب إلى سطح الماء.\n- انكسار الضوء عند سطح الماء يتسبب في تقريب رؤية الأجسام المغمورة في الماء.",
+      "figureDesc": "",
+      "answer": "ينحرف الضوء عن مساره عندما ينتقل بين وسطين شفافين؛ تسمى هذه الظاهرة الانكسار؛ لا تظهر السمكة في مكانها الحقيقي فهي أقرب إلى سطح الماء؛ انكسار الضوء عند سطح الماء يقرّب رؤية الأجسام المغمورة.",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i1",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "15",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 15",
+      "body": "1-1: أ- انعكاس، ب- انكسار، ج- عدسة محدّبة (لامّة)، د- عدسة مقعّرة (مفرّقة).\n1-2: الضوء ينتقل بخط مستقيم في الأوساط الشفّافة. الانعكاس هو ارتداد الضوء على مسار محدّد.\nالقرنيّة غشاء شفّاف يغلّف العين.\nالشبكيّة يخرج منها العصب البصري.\nالجفن يحمل الأهداب.\nالقزحيّة هي القسم الملوّن في العين.\n1-3: ينتقل الضوء في الأوساط الشفّافة بخط مستقيم وبسرعة محدّدة في كلّ منها.",
+      "figureDesc": "",
+      "answer": "أ- انعكاس، ب- انكسار، ج- عدسة محدّبة (لامّة)، د- عدسة مقعّرة (مفرّقة)",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i2",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "16",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 16",
+      "body": "2-1: (رسم تجربة: شمعة، عدسة، شاشة/مصدر ضوء على طاولة)\n2-2: الصورة التي تتكوّن في المرآة المستوية لها تساوي الجسم، معتدلة، على نفس البعد.\n2-3: الانعكاس نوعان: انعكاس غير منتظم وانعكاس منتظم.\nالانعكاس غير المنتظم ينعكس باتجاهات مختلفة.\nالانعكاس المنتظم يتعكس في مسار محدّد ولا ينتشر في جميع الاتجاهات.\n- الانعكاس غير المنتظم يسمح برؤية الأجسام من حولنا.\n2-4: تبدو برك الحدائق وحمامات السباحة أقلّ عمقًا ممّا عليه في الواقع بسبب انكسار الضوء النّاتج عن اختلاف سرعة الضوء في الوسطين الشفّافين.",
+      "figureDesc": "رسم لتجربة على طاولة: عدسة مركّبة على حامل بين جسم وشاشة مع أشعة ضوئية متقاطعة",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i3",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "17",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 17",
+      "body": "3-2: عين مصابة بقصر النظر.\n3-3: يتمّ تعديل الرؤية بعدسة مقعّرة.\n3-4: الجفن لأنّه يمثّل الأجزاء الخارجيّة للعين في حين الشبكيّة والعصب البصري والشبيكيّة من الأجزاء الداخليّة.\n- الشبكيّة لأنّها جسم معتم أمّا القرنيّة والعدسة والسائل الشفّاف فهي أجسام شفّافة.\n3-5: تستعمل الجدّة عدسة محدّبة لأنّها تبعد الجسم المنظور عن عينيها لتراه بوضوح، وفي هذه الحالة يقع خيال الجسم المرئي ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i4",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "18",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 18",
+      "body": "لا يمكن للإنسان البقاء تحت الماء لمدّة طويلة بدون أجهزة مساعدة لأنّه يقوم بعمليّة حيويّة هامّة هي عمليّة التنفّس، والهواء هو المادّة الأساسيّة في هذه العمليّة لاحتوائه على الأكسجين، فإذا منع الهواء عن الإنسان يموت مختنقا.\n1-2: مات الفار مختنقا. 2: لانعدام توفّر الأكسجين.\nتكدّر ماء الجير داخل الحوض الذي بداخله أصيص به نبتة وانخفضت كمّية الأكسجين لأنّ النبتة تمتصّ الأكسجين ليلا وتطرح ثاني أكسيد الكربون.\n- استنتج أنّ الهواء ضروريّ لتنفّس النبات وتمرّن.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i5",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "19",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 19",
+      "body": "الهواء يحمل الطيور ويساعدها على الطيران.\n1-2: ماتت السمكة في الشكل الثاني لانعدام الأكسجين داخل الحوض.\n2-2: ندخل تيّارا هوائيّا إلى الحوض بالشكل الثالث حتّى يذحلّ جزء من الهواء في ماء الحوض.\n3: في الشكل الثالث يذحلّ الهواء في الماء بكمّيات قليلة ولا تعيش الأسماك ومعظم الأحياء المائيّة إلاّ في ماء يحوي كمّيّة من الهواء المنحلّ فيه.\nأمّا في الشكل الرابع فإنّ كمّيّة الأكسجين التي تعطيها النباتات الخضراء في عمليّة الضوئي أكبر بكثير ممّا تأخذه بالتنفّس.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i6",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "20",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة : 20",
+      "body": "الهواء مادّة (غاز) لا لون ولا طعم، يوجد في كلّ مكان حولنا وليس له شكل خاص به.\nتثبت التجربة أنّ للهواء وزن.\nأ) نمرّر تيّارا من الهواء في حوض السمك المنزلي لتتمكّن الأسماك من مواصلة التنفّس.\nب) الخاصيّة: ينحلّ الهواء في الماء بكمّيّة قليلة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p042_i7",
+      "topicId": "sci-6-u1",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

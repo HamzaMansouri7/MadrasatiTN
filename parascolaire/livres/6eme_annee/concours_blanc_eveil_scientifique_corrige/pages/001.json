@@ -1,0 +1,113 @@
+{
+  "book": "concours_blanc_eveil_scientifique_corrige",
+  "page": 1,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الدم ومكوّناته (الدورة الدموية: الشرايين والأوردة، البلازما والكريات والصفيحات)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حدّد لون الدّم في كلّ مرّة مع تحديد اسم الوعاء الذي سحبت منه العيّنة الدّمويّة",
+      "body": "السّند: قصدت رانية المخبر مع والدها للقيام بتحاليل دخلت قاعة فشاهدت الممرض يأخذ عينات دم من المرضى",
+      "figureDesc": "جدول من ثلاثة أعمدة: الخاصيّات، الوعاء (يسيل الدّم بسرعة وفي شكل نفضات)، الوعاء (يسيل الدّم في شكل مترسل). سطران: لون الدّم، اسم الوعاء.",
+      "answer": "الوعاء الأول (يسيل الدّم بسرعة وفي شكل نفضات): لون الدّم: دم أحمر قاني؛ اسم الوعاء: الشريان الابهر. الوعاء الثاني (يسيل الدّم في شكل مترسل): لون الدّم: دم أحمر قاتم؛ اسم الوعاء: الوريد الأجوف.",
+      "confidence": 0.9,
+      "id": "concours_blanc_eveil_scientifique_corrige_p001_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكتب أمام كلّ إفادة ما يناسبها من مكوّنات الدّم",
+      "body": "1) خلّص الجسم من الفضلات في مستوى الكليتين\n2) تحتوي على نسبة عالية من الماء\n3) خلايا لمفاويّة\n4) تحتلّ النسبة الأكبر من كريّات الدّم\n5) يساعد على الحماية من النزيف",
+      "figureDesc": "جدول من عمودين: الإفادات (يمين) وخانة الإجابة (يسار) بخمسة أسطر.",
+      "answer": "1) البلازما\n2) البلازما\n3) الكريّات البيضاء\n4) الكريّات الحمراء\n5) الصّفيحات",
+      "confidence": 0.92,
+      "id": "concours_blanc_eveil_scientifique_corrige_p001_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.34
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page porte sur le sang et ses composants (plasma, globules, plaquettes, lymphocytes), ainsi que sur les vaisseaux (artères et veines), ce qui correspond à l'unité sur le système circulatoire et la composition du sang.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "selfContained": true,
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Le sang et ses composants",
+    "skill": "Identifier les composants du sang et leur rôle, et distinguer le sang artériel du sang veineux selon le vaisseau de prélèvement.",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "sang",
+      "plasma",
+      "globules rouges",
+      "globules blancs",
+      "plaquettes",
+      "artères et veines"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation du quotidien (une fillette accompagne son père à un laboratoire d'analyses et observe une prise de sang) pour introduire la couleur du sang et le type de vaisseau, puis exercice d'association entre des fonctions et les composants du sang.",
+    "themeGroup": "La circulation sanguine et le sang"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les deux consignes sont dans le désordre. Dans l'image, le «السّند» et son texte précèdent la consigne «التّعليمة: حدّد لون الدّم…», alors que la transcription met la consigne avant le سند."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de la page sont omis : «مناظرة تجريبيّة في مادّة الإيقاظ العلمي للالتحاق بالمدارس الاعداديّة النّموذجيّة اصلاح دورة», «المستوى السّنة السّادسة», «اعداد السيّدة زرّوق», «الرّمز» et la signature «Mme Zarrouk.HA»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les libellés du tableau 1 sont omis : «الخاصيّات», «لون الدّم», «السم الوعاء». Le mot «التّعليمة» est aussi omis comme intitulé des deux consignes, tout comme «السّند»: au lieu de l'étiquette elle-même, seul le texte est transcrit."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans le سند, «قصدت رانية المخبر مع والدها» : l'image donne «المخبر» après «رانية» (correct), mais la phrase «دخلت قاعة» est transcrite sans coupure alors qu'elle suit «بتحاليل» avec un espace. Cela ne change pas le sens."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الوعاء الأول/الثاني» est une numérotation inventée : l'image affiche simplement «الوعاء» dans chaque colonne. Les descriptions des colonnes sont par ailleurs correctes."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les voyelles visibles sont absentes ou partielles dans «الشريان الابهر» : c'est fidèle à l'image. Les tashkeel du reste du texte sont correctement transcrits."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Concours blanc 6ème année — Éveil scientifique (corrigé)"
+}

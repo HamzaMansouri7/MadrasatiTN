@@ -1,0 +1,122 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 17,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La circulation sanguine (الدورة الدموية) : rôle du sang, du cœur et des vaisseaux – exploitation d'un schéma simplifié et de données chiffrées sur le cœur",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "لاَحِظْ هَذَا الرَّسْمَ المُبَسَّطَ ثُمَّ أَجِبْ عَنِ الأَسْئِلَةِ التَّالِيَةِ :",
+      "body": "- مَاذَا تُمَثِّلُ الطَّرِيقِ ؟\n- عَمَّ تَدُلُّ العَلامَاتُ ؟\n- مَاذَا تَحْمِلُ الشَّاحِنَاتُ عِنْدَ وُصُولِهَا إِلَى العَضَلَةِ ؟\n- مِنْ أَيْنَ تُزَوَّدُ الشَّاحِنَةُ بِالمَوَادِّ المُغَذِّيَةِ ؟\n- مِنْ أَيْنَ تُزَوَّدُ الشَّاحِنَةُ بِالأُكْسِجِينِ ؟\n- مَاذَا تُنْتِجُ العَضَلَةُ ؟\n- تَعَطَّلَتْ إِحْدَى الشَّاحِنَاتِ لِمُدَّةٍ وَجِيزَةٍ فَتَوَقَّفَ الإِنْتَاجُ.\nمَا هِيَ الشَّاحِنَةُ الَّتِي تَعَطَّلَتْ ؟ عَلِّلْ جَوَابَكَ ؟\n- مَاذَا يَجِبُ أَنْ تُضِيفَ إِلَى هَذَا الرَّسْمِ حَتَّى تُصْبِحَ الدَّوْرَةُ الدَّمَوِيَّةُ كَامِلَةً ؟",
+      "figureDesc": "Schéma simplifié : une route en boucle (ovale) reliant une usine rouge « عضلة » (muscle) et un bâtiment jaune « رئة » (poumon). Des camions transportent « غذاء » (aliments), « أكسجين » (oxygène) et « نفايات » (déchets, deux camions violets). Des panneaux indicateurs bleus sont placés le long de la route.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p017_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "اِسْتَعِنْ بِهَذِهِ المَعْلُومَاتِ ثُمَّ أَجِبْ عَنِ الأَسْئِلَةِ :",
+      "body": "نص الدعم: قَلْبُكَ يَقَعُ فِي مُنْتَصَفِ الصَّدْرِ بَيْنَ الرِّئَتَيْنِ، مَائِلًا قَلِيلًا إِلَى اليَسَارِ. دَقَّاتُ قَلْبِكَ تُعَبِّرُ عَنِ الحَرَكَةِ، فَقَلْبُكَ يَتَحَرَّكُ مَا دُمْتَ حَيًّا. إِنَّهُ يَدُقُّ حَوَالَيْ 70 مَرَّةً فِي الدَّقِيقَةِ وَهُوَ مَا يُسَاوِي 100 000 مَرَّةٍ فِي اليَوْمِ. فِي كُلِّ دَقَّةٍ يَضُخُّ القَلْبُ حَوَالَيْ 70 مل مِنَ الدَّمِ، أَيْ عِنْدَمَا تَعِيشُ 75 سَنَةً فَقَلْبُكَ يَضُخُّ حَوَالَيْ 200 مِلْيُونَ لِتْرٍ.\nأَمَّا الكُرَيَّاتُ الحَمْرَاءُ، فَهِيَ تَقْطَعُ مَسَافَةً تُقَدَّرُ بِـ 15 كِيلُومِتْرًا فِي اليَوْمِ.\n\nالجدول: سُرْعَةُ دَوَرَانِ الدَّمِ فِي الثَّانِيَةِ — الشِّرْيَانُ: مِنْ 30 إِلَى 40 سم ؛ الوَرِيدُ: مِنْ 15 إِلَى 20 سم.\n\nالأسئلة:\n- كَمْ لِتْرًا مِنَ الدَّمِ يَضُخُّ قَلْبُكَ فِي السَّاعَةِ ؟\n- كَمْ لِتْرًا مِنَ الدَّمِ يَضُخُّ قَلْبُكَ فِي اليَوْمِ ؟\n- كَمْ لِتْرًا مِنَ الدَّمِ يَضُخُّ قَلْبُكَ فِي السَّنَةِ ؟",
+      "figureDesc": "Tableau à deux colonnes (الشريان / الوريد) donnant la vitesse de circulation du sang par seconde ; encadré bleu contenant le texte d'appui ; lignes vides pour écrire les réponses.",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "eveil_scientifique_cours_exercices_p017_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.42
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page, rédigée en arabe, porte sur la circulation sanguine : une analogie routes/camions pour le rôle du sang et des vaisseaux, puis des données chiffrées sur le cœur (70 battements par minute, 70 ml par battement). Elle relève de l'Unité 3 sur le système circulatoire.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La circulation sanguine",
+    "skill": "Exploiter un schéma simplifié et un texte documentaire pour expliquer le rôle du sang, du cœur et des vaisseaux dans l'apport des nutriments et de l'oxygène aux organes.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "circulation sanguine",
+      "cœur",
+      "vaisseaux sanguins",
+      "sang",
+      "oxygène",
+      "nutriments"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "L'analogie du réseau routier (route, camions, panneaux) pour modéliser la circulation du sang et le transport des nutriments et de l'oxygène vers un muscle est réutilisable, de même que l'exploitation d'un texte documentaire avec des données chiffrées sur les battements du cœur.",
+    "themeGroup": "La circulation sanguine et le sang"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«مِنْ أَيْنَ تُزَوَّدُ الشَّاحِنَةُ بِالأُكْسِجِينِ» : l'image porte «بالاكسجين» (sans hamza/damma visibles) ; la transcription ajoute des voyelles absentes de l'image (الأُكْسِجِينِ)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«مَاذَا تُمَثِّلُ الطَّرِيقِ» : l'image donne «الطَّرِيقَ/الطَّرِيق» ; la forme à la fin «الطَّرِيقِ» est grammaticalement fausse (devrait être الطَّرِيقَ, complément d'objet)"
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "« 100 000 » : l'image montre «000 100» (écrit 100 000 en lecture inversée RTL) ; valeur correcte 100 000, donc acceptable, mais il faut vérifier l'ordre"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«سم» : l'image écrit «صم» (OCR de «سم») ; la transcription corrigée est acceptable"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le texte du cadre et du tableau n'a pas de voyelles complètes dans l'image ; la transcription en a ajouté beaucoup (يَقَعُ، مَائِلًا…), ce n'est pas fidèle à l'image"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes du schéma (غذاء، أكسجين، رئة، عضلة، نفايات ×2) ne sont pas transcrites"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«كِيلُومِتْرًا» : l'image porte «كيلو متر» (deux mots) ; la transcription change l'orthographe et la forme"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«حَوَالَيْ» : l'image porte «حوالي» ; «سَنَةً» : l'image «سنة»"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

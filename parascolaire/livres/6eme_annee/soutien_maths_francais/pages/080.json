@@ -1,0 +1,119 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 80,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Mesure du volume du cylindre (problème de la piscine) et Domaine 4 : Organisation et traitement de données (diagramme en bâtons)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "مسألة : (2 ن) — احسب كمية الماء بهذا المسبح باللتر ℓ",
+      "body": "مسبح لأطفال على شكل أسطوانة قائمة عمقه 1,5 m و قطر قاعدته 4 m ملأنا ثلثي حجمه (2/3) بالماء.",
+      "figureDesc": "Cinq lignes pointillées vides destinées à rédiger la solution.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p080_i1",
+      "topicId": "math-6-p5",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "IV",
+      "instruction": "المجال الرئيسي الرابع : تنظيم ومعالجة البيانات (4 نقط): يبين مخطط الأعمدة أعلاه عدد المسافرين الذين استعملوا مطار محمد الخامس ما بين 2017 و 2020",
+      "body": "1) ما هي السنة التي تجاوز فيها عدد المسافرين الذين استعملوا مطار محمد الخامس حاجز المليونين (1ن)\n2) كم كان عدد المسافرين في سنة 2018 (1ن)\n3) ما هي السنة التي سجلت أقل حركة للمسافرين بمطار محمد الخامس؟ (1ن)\n4) ما سبب هذا الانخفاض في نظرك؟ (1ن)",
+      "figureDesc": "Diagramme en bâtons : axe vertical = عدد المسافرين (0 à 2500000, graduation de 500000), axe horizontal = السنة. Valeurs : 2017 = 1544244 ; 2018 = 1988344 ; 2019 = 2008465 ; 2020 = 587566.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p080_i2",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p5",
+  "topicTitle": "Période 5 : Volumes, capacités, temps et diagrammes statistiques",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-6-p4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p4",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur le calcul du volume d'un cylindre et sa conversion en litres (capacité) ainsi que sur la lecture d'un diagramme en bâtons, ce qui correspond à la Période 5 : volumes, capacités et diagrammes statistiques.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Volume du cylindre et diagramme en bâtons",
+    "skill": "Calculer le volume d'un cylindre et en déduire une quantité en litres, puis lire et interpréter un diagramme en bâtons.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "volume du cylindre",
+      "conversion en litres",
+      "fraction d'un volume",
+      "diagramme en bâtons",
+      "lecture de données",
+      "trafic aéroportuaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation concrète d'une piscine d'enfants cylindrique remplie aux deux tiers, avec conversion m³ en litres, et exercice de lecture d'un diagramme sur le nombre de voyageurs d'un aéroport avec une question ouverte d'interprétation des causes d'une baisse (période de crise).",
+    "themeGroup": "Statistiques et graphiques"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les données du graphique sont absentes de la transcription : valeurs 1544244 (2017), 1988344 (2018), 2008465 (2019), 587566 (2020), axes 'عدد المسافرين' et 'السنة', échelle 0 à 2500000."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'أعلاه' est transcrit pour 'أعلاه' : correct. Mais 'المليونين' : le texte visible est 'المليونين', correct. Le 'ℓ' est bien présent."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'énoncé de la question 3, la consigne 'احسب كمية الماء...' est placée avant l'énoncé du problème alors qu'à l'image l'énoncé vient d'abord, puis la consigne."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Numéro de page '4' en bas à gauche et l'annotation manuscrite en haut à droite non transcrits ; lignes pointillées de réponse non mentionnées."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'مسبح لأطفال' : l'image porte 'مسبح أطفال' (sans lam) ; 'ملأنا' correct. Le point d'interrogation manque aux questions 1 et 2 (présence de pointillés à l'image, ponctuation non visible)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans 'المجال الرئيسي الرابع', la numérotation 'IV.' est correcte, mais la transcription ajoute 'أعلاه' correctement ; la question 2 comporte 'في سنة 2018' sans '؟' : conforme à l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

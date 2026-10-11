@@ -1,0 +1,75 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 38,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "المغناطيس: الأقطاب المغناطيسية، التجاذب والتنافر",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "السَّنَدُ: قَامَ طِفْلٌ بِالتَّجْرِبَةِ التَّالِيَةِ:",
+      "body": "- أَخَذَ مِغْنَاطِيسَيْنِ وَعَلَّمَ قُطْبَيْهِمَا بِعَلَامَةٍ.\n- أَحْضَرَ مُجَسَّمَ سَيَّارَةٍ لُدَائِنِيًّا.\n- ثَبَّتَ أَحَدَ الْمِغْنَاطِيسَيْنِ فَوْقَ «السَّيَّارَةِ».\n- أَخَذَ يُحَاوِلُ تَحْرِيكَ «السَّيَّارَةِ» لِلْأَمَامِ وَالْخَلْفِ، مَعَ إِمْسَاكِ الْمِغْنَاطِيسِ الثَّانِي قَرِيبًا مِنَ الْأَوَّلِ.\nالتَّعْلِيمَةُ 1: بَيِّنِ اتِّجَاهَ حَرَكَةِ السَّيَّارَةِ فِي كُلٍّ مِنَ الْحَالَاتِ الْمَرْسُومَةِ.\nالتَّعْلِيمَةُ 2: مَا سَبَبُ تَحَرُّكِ السَّيَّارَةِ إِلَى الْأَمَامِ أَوْ إِلَى الْخَلْفِ؟",
+      "figureDesc": "أربعة رسوم مرقمة من 1 إلى 4: في كل رسم سيارة خضراء مثبت فوقها مغناطيس (أحمر/أزرق) بشريط مطاطي، ويد تقرب مغناطيسا ثانيا من المغناطيس الأول بترتيب أقطاب مختلف (أحمر وأزرق) من حالة إلى أخرى.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p038_i1",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "بَيِّنْ نَوْعَ الْأَقْطَابِ (ل) (م) (ن).",
+      "body": "لَدَيْنَا أَرْبَعَةُ مَغَانِطَ وَنُرِيدُ التَّعَرُّفَ إِلَى قُطْبَيْ كُلِّ وَاحِدٍ مِنْهَا، فَلَاحَظْنَا أَنَّ الْقُطْبَ (ل) لِلْمِغْنَاطِيسِ الْأَوَّلِ يَجْذِبُ الْقُطْبَ (م) لِلْمِغْنَاطِيسِ الثَّانِي وَيَدْفَعُ الْقُطْبَ (ن) لِلْمِغْنَاطِيسِ الثَّالِثِ. أَمَّا الْقُطْبُ الشَّمَالِيُّ (ش) لِلْمِغْنَاطِيسِ الرَّابِعِ فَيَدْفَعُ الْقُطْبَ (م).\nجدول من أربعة أسطر، كل سطر مغناطيس من خانتين: ① (ل) ② (م) ③ (ن) ④ (ش).",
+      "figureDesc": "أربعة مستطيلات مقسمة إلى خانتين، مرقمة من 1 إلى 4، الخانة اليمنى فيها الرمز (ل) أو (م) أو (ن) أو (ش) والخانة اليسرى فارغة لتعيين نوع القطب.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p038_i2",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u5",
+  "topicTitle": "Unité 5 : Énergie, magnétisme, poids et chute libre",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u5",
+    "confidence": 0.32
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des aimants, de leurs pôles et de l'attraction/répulsion, ce qui relève du magnétisme de l'Unité 5 (Énergie, magnétisme, poids et chute libre) d'Éveil Scientifique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Aimants : pôles, attraction et répulsion",
+    "skill": "Identifier les pôles d'un aimant et prévoir attraction ou répulsion à partir d'observations expérimentales.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "schema_tableau",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "aimant",
+      "pôles magnétiques",
+      "attraction",
+      "répulsion",
+      "expérience",
+      "déduction"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations-problèmes à partir d'une expérience d'enfant (aimant fixé sur une voiture en pâte à modeler) et d'un raisonnement logique pour déduire la nature de pôles inconnus entre plusieurs aimants.",
+    "themeGroup": "Les aimants et la boussole"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

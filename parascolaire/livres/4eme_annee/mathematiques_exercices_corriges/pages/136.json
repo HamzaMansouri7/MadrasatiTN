@@ -1,0 +1,180 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 136,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Décomposition des nombres, comparaison de deux nombres, calcul réfléchi (sommes, différences, produits par 10, 100, 1000, expressions numériques)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تفكيك العدد وفقا للصّيغة القانونية :",
+      "body": "مثال : 60 000 + 5 000 + 900 + 40 + 2 = 65 942\n(10 000 x 6)+(1 000 x 5)+(100 x 9)+(10 x 4)+(1 x 2) = 65 942",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p136_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "مقارنة عددين، مثال:",
+      "body": "32 681 < 34 254. ملاحظة : لمقارنة عددين صحيحين نتّبع الخطوات التّالية: أوّلا : إذا لم يكن للعددين نفس عدد الأرقام فإنّ العدد الأكبر هو ما كان عدد أرقامه أكبر. ثانيا : إذا كان للعددين نفس عدد الأرقام نبحث بدءا من اليسار عن رقمين مختلفين في العددين حيث يكون العدد الأكبر هو ما كان رقمه أكبر. أمثلة: 3 527 > 3 499 (5 > 4) ؛ 3 524 < 3 527 (4 < 7) ؛ 3 527 > 1 967 (3 > 1)",
+      "figureDesc": "Deux bouliers (abaques) à tiges colorées avec colonnes 1, 10, 100, 1 000, 10 000 représentant 32 681 et 34 254 ; les chiffres 2 et 4 sont entourés en rouge ; trois cadres d'exemples de comparaison.",
+      "answer": "32 681 < 34 254",
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p136_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أوظّف التّفكيك في حساب المجاميع :",
+      "body": "مثال: 48 + 34 = 48 + 2 + 32 = 50 + 32 = 82\n4 + 30 + 48 = 34 + 48 ; 4 + 78 = 82\n34 + (40 + 8) = 34 + 48 ; (34 + 40) + 8 = 74 + 8 = 82",
+      "figureDesc": "Schéma à flèches décomposant 34 en 2 + 32 puis additionnant ; deuxième méthode en colonne à gauche.",
+      "answer": "82",
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p136_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أوظّف الزّيادة في حساب الفروق :",
+      "body": "مثال: 172 - 49 = (1 + 172) - (1 + 49) = 173 - 50 = 123",
+      "figureDesc": "",
+      "answer": "123",
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p136_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أوظّف التّفكيك لحساب جذاء عددين أحدهما أصغر من 10 والآخر عقد.",
+      "body": "مثال: 9 x 40 = 9 x 4 x 10 = 36 x 10 = 360",
+      "figureDesc": "Schéma à flèches montrant la décomposition de 40 en 4 x 10, puis 9 x 4 = 36, puis 36 x 10 = 360.",
+      "answer": "360",
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p136_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "حساب جذاء عددين أحدهما 10 ، 100، 1 000 : استخدم سامي جداول كالآتي :",
+      "body": "Ligne 1: 47, 53, 14, 8. x10: 470, 530, 140, 80. x10 : 4 700, 5 300, 1 400, 800. x10 : 47 000, 53 000, 14 000, 8 000. (x100 de la ligne 1 à la ligne 3 ; x1000 de la ligne 1 à la ligne 4)",
+      "figureDesc": "Tableau de 4 lignes et 4 colonnes avec flèches et bulles x10, x100, x1000 ; les zéros ajoutés sont en rouge.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p136_i6",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "مثال (أ)",
+      "instruction": "حساب عبارات عددية :",
+      "body": "2 x 3 + 4 x (5 + 6) = 2 x 3 + 4 x 11 = 6 + 44 = 50",
+      "figureDesc": "Schéma à flèches montrant les étapes de calcul ; (5 + 6) accolé.",
+      "answer": "50",
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p136_i7",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une synthèse de calcul et de numération (décomposition canonique de nombres à 5 chiffres, comparaison, calcul réfléchi, produits par 10/100/1000, expressions numériques) ; le chapitre le plus proche est la Période 1 (nombres à 5 et 6 chiffres, décomposition), mais le calcul réfléchi et les expressions numériques dépassent ce cadre, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Numération et calcul réfléchi",
+    "skill": "Décomposer et comparer des nombres entiers, puis utiliser la décomposition pour calculer mentalement sommes, différences, produits par 10, 100, 1000 et expressions numériques.",
+    "pageType": "lesson",
+    "formats": [
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "décomposition canonique",
+      "comparaison de nombres",
+      "calcul réfléchi",
+      "multiplication par 10, 100, 1000",
+      "expressions numériques",
+      "priorités opératoires"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : les stratégies de calcul mental (compléter à la dizaine, ajouter 1 aux deux termes d'une différence, décomposer un produit) et le tableau de multiplications successives par 10 comme support d'activités de manipulation.",
+    "themeGroup": "Numération jusqu'à 9 999"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titres de bandeau absents: «4 تمارين + حلول» (هدية المؤلف) et «رياضيات»"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'illustration des bouliers (10 000, 1 000, 100, 10, 1) pour comparer 32 681 < 34 254 n'est pas transcrite, ni le chiffre entouré (2 et 4)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«استخدم سامي جداول» : l'image porte «استخدم» sans erreur, mais 'سامي' est bien présent; aucune faute réelle, simple formulation de l'étiquette"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les exemples de comparaison sont donnés dans l'ordre 3 527>3 499, 3 524<3 527, 3 527>1 967 (droite à gauche), ce qui est correct en lecture RTL; l'ordre de l'exemple d'addition (deux méthodes côte à côte) est aplati"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les boîtes de comparaison (5>4, 4<7, 3>1) et la mention «مثال (أ)» sont placées de manière approximative"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel visible non reproduit de façon cohérente: «إنّ»/«فإنّ» ok, mais «مثال:» «ملاحظة» sans marques; chiffres 'x10', 'x100', 'x1000' dans les bulles non transcrits précisément (flèches)"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

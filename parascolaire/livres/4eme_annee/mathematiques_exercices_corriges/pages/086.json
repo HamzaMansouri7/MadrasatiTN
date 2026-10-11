@@ -1,0 +1,117 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 86,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 22 : محيط المستطيل والمربع",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أحسب طول المحيط الممكن للمربّع.",
+      "body": "9 جليزات مربّعة طول ضلع كلّ منها 25 صم. صفّفت على أرضية مستوية فكوّنت مربّعا. أحسب طول المحيط الممكن للمربّع.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p086_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب محيط هذه القطعة.",
+      "body": "قطعة من الورق المقوّى مكوّنة من ثلاثة مستطيلات متقايسة كما في الشّكل. أحسب محيط هذه القطعة.",
+      "figureDesc": "Pièce en forme de Z/S faite de trois rectangles identiques : un en haut, un à droite (vertical), un en bas. Largeur du rectangle du haut : 6 صم ; largeur du petit côté du rectangle du bas : 2 صم. Lignes pointillées de séparation.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p086_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "احسب قيس محيطه.",
+      "body": "يمثّل الشّكل حقلا مكوّنا من ثلاثة مربّعات. احسب قيس محيطه.",
+      "figureDesc": "Champ formé de trois carrés côte à côte, de côtés 20 م, 40 م et 30 م (de gauche à droite). Le carré du milieu est le plus haut ; séparations en pointillés.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p086_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "احسب محيط المستطيل (هـ و ز ح).",
+      "body": "محيط المستطيل (أ ب ج د) هو 220 م. احسب محيط المستطيل (هـ و ز ح).",
+      "figureDesc": "Deux rectangles concentriques : le rectangle intérieur (أ ب ج د) et le rectangle extérieur (هـ و ز ح). La distance entre les deux rectangles est de 5 م sur chacun des quatre côtés.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p086_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "ما هو قيس طول محيطه؟ / ما هو ثمنه إذا كان سعر المتر الواحد بـ 950 مي؟ / ابحث عن جملة المصاريف.",
+      "body": "أعدّ مربّي غنم مربضا لغنمه طوله 58 مترا وعرضه نصف طوله.\n- ما هو قيس طول محيطه؟\nأحاطه بسياج بعدما ترك بابا عرضه 3 م. ما هو ثمنه إذا كان سعر المتر الواحد بـ 950 مي؟\n- اشترى لهذا المربض بابا بـ 35 د. ابحث عن جملة المصاريف.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p086_i5",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch2",
+    "confidence": 0.71
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite du périmètre du rectangle et du carré (semaine 22), ce qui correspond à la Période 2 « rectangle et carré » avec périmètres, plutôt qu'à la Période 3 qui porte surtout sur la division et les fractions.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    129
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Périmètre du rectangle et du carré",
+    "skill": "Calculer le périmètre de carrés, de rectangles et de figures composées, puis l'utiliser pour résoudre des problèmes de coût.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "périmètre",
+      "rectangle",
+      "carré",
+      "figures composées",
+      "problème de coût",
+      "longueur"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations concrètes variées : carreaux assemblés en carré, pièce de carton formée de rectangles identiques, champ composé de carrés, enclos clôturé avec une porte déduite du périmètre, puis calcul du prix de la clôture et des dépenses totales. Ces contextes peuvent être repris pour des problèmes à étapes.",
+    "themeGroup": "Périmètre et aire"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

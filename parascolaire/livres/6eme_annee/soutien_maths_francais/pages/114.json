@@ -1,0 +1,119 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 114,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Examen régional unifié du certificat d'études primaires (session juillet 2022), mathématiques – Domaine 1 : Nombres et calcul (opérations sur les décimaux, fractions, durées, écriture en produit de puissances). Remarque : la page est un sujet d'examen marocain, pas un contenu du programme tunisien.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "الامتحان الإقليمي الموحد لنيل شهادة الدروس الابتدائية – دورة يوليوز 2022 – مادة الرياضيات – مدة الإنجاز: ساعة ونصف. النقطة بالأرقام: /40. النقطة بالحروف. اسم المصحح وتوقيعه. مركز التصحيح. الاسم، النسب، رقم الامتحان. المجال الأول: الأعداد والحساب (17 نقطة)",
+      "figureDesc": "En-tête d'examen : cadre avec un champ diagonal pour nom, prénom et numéro d'examen, emblème du royaume, cases pour la note en chiffres (/40) et en lettres, nom et signature du correcteur, centre de correction.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p114_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أضع وأنجز (6 ن)",
+      "body": "932 875 - (30 214,7 + 4 780,09) ; 4762 x 29,3 ; 934,8 ÷ 3,8",
+      "figureDesc": "Tableau de trois colonnes : chaque colonne contient une opération en en-tête et un espace vide pour poser et effectuer le calcul.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p114_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب وأختزل (2 ن)",
+      "body": "( 6/7 + 3/5 ) × ( 8/6 − 2/3 ) =",
+      "figureDesc": "Lignes pointillées pour la rédaction du calcul.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p114_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أضع وأنجز (2 ن)",
+      "body": "13 h 27 min 09 s – 8 h 30 min 10 s =",
+      "figureDesc": "Lignes pointillées pour la rédaction du calcul.",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p114_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أحول ما يلي إلى جداء قوى 2 وقوى 3 (2 ن)",
+      "body": "• 9 x 8 = ……………\n• 125 x 36 = ……………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p114_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch1",
+    "confidence": 0.26
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un sujet d'examen régional marocain (certificat d'études primaires, juillet 2022) qui couvre plusieurs chapitres (décimaux, fractions, durées, puissances) et ne relève pas du programme tunisien, donc aucun chapitre officiel ne correspond précisément.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Opérations sur nombres décimaux et fractions",
+    "skill": "Effectuer des opérations sur les décimaux, les fractions et les durées, et écrire un produit sous forme de puissances de 2 et de 3.",
+    "pageType": "exam",
+    "formats": [
+      "calcul"
+    ],
+    "keywords": [
+      "décimaux",
+      "fractions",
+      "durées",
+      "puissances",
+      "opérations posées",
+      "examen certificat"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'un domaine « Nombres et calcul » d'examen de fin de primaire : opérations posées, calcul fractionnaire avec simplification, soustraction de durées avec retenue et décomposition en puissances de 2 et de 3, réutilisable comme modèle de barème et de progression.",
+    "themeGroup": "Fractions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

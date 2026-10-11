@@ -1,0 +1,515 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 41,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Note : la page est en réalité un examen local unifié marocain (6ème année primaire, session de février) d'activité scientifique, et non une page de mathématiques tunisienne. Thèmes : l'air, les changements physiques et chimiques, le système nerveux, l'acte réflexe, les risques pour le système nerveux, les maladies de malnutrition, les milieux naturels, les chaînes alimentaires.",
+  "items": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "الامتحان الموحد المحلي – السنة السادسة ابتدائي – دورة فبراير – امتحان مادة النشاط العلمي",
+      "body": "المملكة المغربية، وزارة التربية الوطنية والتعليم الأولي والرياضة (+ texte en tifinagh) | أكاديمية | المديرية الإقليمية | المؤسسة | السنة الدراسية | اسم ونسب المتعلم | رقم الامتحان | مدة الامتحان ... دقيقة | النقطة",
+      "figureDesc": "Emblème du Royaume du Maroc au centre de l'en-tête.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p041_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمم ما يلي بما يناسب",
+      "body": "يتكون الهواء من عدة غازات، حيث يشكل ........ ، و ........ ، وغازات أخرى.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p041_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أجب بـ صحيح أو خطأ",
+      "body": "الهواء ضروري في عملية الاحتراق\nخلال التحول الفيزيائي تتغير المادة من حيث تركيبها\nخلال التحول الكيميائي، تظهر خواص جديدة\nالحساسية الشعورية هي الشعور بإحساسات متعددة ومختلفة",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p041_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أذكر نوع التغير كيميائي أو فيزيائي في كل حالة مما يلي",
+      "body": "انصهار الجليد\nصدأ الحديد\nتسوس الأسنان\nاحتراق الخشب",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p041_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أتمم بكتابة أسماء مكونات الجهاز العصبي للإنسان الوثيقة جانبه",
+      "body": "",
+      "figureDesc": "Schéma d'une coupe de tête humaine montrant le cerveau, le cervelet et la moelle épinière, avec trois flèches bleues pointant vers des lignes pointillées à compléter et une accolade menant à une ligne pointillée commune.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p041_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكتب اسم التحركية أمام كل جملة مما يلي",
+      "body": "يريد عمر حمل قلم ليكتب، فيحمله بيده\nحرك سعيد رجله بسرعة بعدما وخزه أخوه بإبرة وهو نائم",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p041_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أتمم الخطاطة التالية للتحركية التي قام بها سعيد وهو نائم بعدما وخزه أخوه",
+      "body": "مهيج  إبرة\nالجلد (تستقبل الإهاجة)\n[ ] (ينقل السيالة الحسية)\nمركز عصبي [ ] (يحلل السيالة)\n[ ] (ينقل السيالة الحركية)\nمستجيب حركي [ ] (يقوم بالحركة)",
+      "figureDesc": "Cinq cases alignées, de droite à gauche. Seule la case « الجلد » est remplie, les quatre autres sont vides. Deux petites flèches partent de « مهيج  إبرة » vers la case « الجلد ». Les libellés sont placés au-dessus ou en dessous des cases.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p041_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "صنف ما يلي حسب الجدول",
+      "body": "الضجيج المتواصل، التدخين، السكري، قلة النوم، الأنيميا، السمنة",
+      "figureDesc": "Tableau à deux colonnes : « أخطار على الجهاز العصبي » (à droite) et « أمراض سوء التغذية » (à gauche), avec trois lignes vides à remplir.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p041_i8"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "Trois photos : dunes de sable (désert), forêt verte avec un chemin, vagues de mer. Sous chacune, un cadre vide à remplir.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p041_i9"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أتمم ملء الخطاطة التالية لسلسلة غذائية من اختيارك",
+      "body": "منتج ← مستهلك من الدرجة ← مستهلك من الدرجة ← مستهلك من الدرجة",
+      "figureDesc": "Quatre cases vides reliées par des flèches noires pointant vers la gauche. Légendes sous les cases, de droite à gauche : منتج، مستهلك من الدرجة، مستهلك من الدرجة، مستهلك من الدرجة (sans numéro visible).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p041_i10"
+    },
+    {
+      "kind": "footer",
+      "number": "",
+      "instruction": "بالتوفيق",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p041_i11"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.19
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est un examen général marocain d'activité scientifique qui couvre plusieurs thèmes (air, transformations physiques et chimiques, système nerveux, acte réflexe, maladies de malnutrition, milieux naturels), dont la plupart ne figurent pas dans les chapitres officiels tunisiens, donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    42
+  ],
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Air, système nerveux et milieux",
+    "skill": "Mobiliser ses connaissances scientifiques (air, transformations, système nerveux, alimentation, milieux naturels) pour compléter, classer et schématiser.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "vrai_faux",
+      "schema_tableau",
+      "appariement",
+      "autre"
+    ],
+    "keywords": [
+      "air",
+      "transformations physiques et chimiques",
+      "système nerveux",
+      "acte réflexe",
+      "chaîne alimentaire",
+      "milieux naturels"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Examen de synthèse à exercices courts et variés : classement de transformations du quotidien, schéma de l'acte réflexe à compléter, identification de milieux sur images, chaîne alimentaire libre, tableau de risques et maladies, tous réutilisables comme modèles d'évaluation.",
+    "themeGroup": "L'air et ses propriétés"
+  },
+  "audit": {
+    "accuracy": 0.82,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 7 : les en-têtes du tableau (أمراض سوء التغذية، أخطار على الجهاز العصبي) et le tableau vide à remplir ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 4 : transcription vide. Il manque le schéma du système nerveux avec trois flèches, les lignes pointillées à compléter et l'accolade avec sa ligne pointillée."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page non transcrit : Royaume du Maroc, ministère de l'Éducation, examen local unifié, 6e année primaire, session de février, examen d'activité scientifique, champs nom, numéro, durée, note. Pied de page « بالتوفيق » également absent."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 9 : les chiffres (1), (2), (3) après « مستهلك من الدرجة » sont inventés. L'image n'en comporte pas, les libellés sont tous identiques et le chiffre est vide."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3 : « أذكر نوع التغير » est suivi de « كيميائي أو فيزيائي », transcrit correctement. L'ordre visuel des items est inversé, mais cela reste acceptable."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 8 : la consigne éventuelle est absente. La description en français est une invention, car la transcription ne contient pas de texte arabe pour cet exercice."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 6 : la case « الجلد » est transcrite, mais « مهيج إبرة » est écrit avec deux-points, et les flèches de l'image sont différentes."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.75,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit. Il contient : المملكة المغربية، وزارة التربية الوطنية والتعليم الأولي والرياضة، le texte en tifinagh, الامتحان الموحد المحلي، السنة السادسة ابتدائي، دورة فبراير، امتحان مادة النشاط العلمي, ainsi que les champs أكاديمية، المديرية الإقليمية، المؤسسة، السنة الدراسية، اسم ونسب المتعلم، رقم الامتحان، مدة الامتحان (دقيقة)، النقطة. Le pied de page « بالتوفيق » est lui aussi absent."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 9 : les chiffres (1), (2), (3) après « مستهلك من الدرجة » n'existent pas dans l'image. Les trois libellés sont identiques et sans numéro."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 8 : le champ body contient une description en français (« Trois images avec cadres vides… »). L'image ne comporte aucun texte ni consigne pour cet exercice. La description doit rester dans figureDesc et le body doit être vide."
+      },
+      {
+        "type": "erreur",
+        "severity": "minor",
+        "detail": "Exercice 6 : « مهيج: إبرة » est écrit avec deux-points, alors que l'image montre « مهيج  إبرة » suivi de deux petites flèches vers la case « الجلد ». Les flèches « ← » entre toutes les cases sont inventées : l'image n'a pas de flèches de chaîne entre les cases."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "الامتحان الموحد المحلي – السنة السادسة ابتدائي – دورة فبراير – امتحان مادة النشاط العلمي",
+      "body": "المملكة المغربية، وزارة التربية الوطنية والتعليم الأولي والرياضة (+ texte en tifinagh) | أكاديمية | المديرية الإقليمية | المؤسسة | السنة الدراسية | اسم ونسب المتعلم | رقم الامتحان | مدة الامتحان ... دقيقة | النقطة",
+      "figureDesc": "Emblème du Royaume du Maroc au centre de l'en-tête.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p041_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمم ما يلي بما يناسب",
+      "body": "يتكون الهواء من عدة غازات، حيث يشكل ........ ، و ........ ، وغازات أخرى.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p041_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أجب بـ صحيح أو خطأ",
+      "body": "الهواء ضروري في عملية الاحتراق\nخلال التحول الفيزيائي تتغير المادة من حيث تركيبها\nخلال التحول الكيميائي، تظهر خواص جديدة\nالحساسية الشعورية هي الشعور بإحساسات متعددة ومختلفة",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p041_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أذكر نوع التغير كيميائي أو فيزيائي في كل حالة مما يلي",
+      "body": "انصهار الجليد\nصدأ الحديد\nتسوس الأسنان\nاحتراق الخشب",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p041_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أتمم بكتابة أسماء مكونات الجهاز العصبي للإنسان الوثيقة جانبه",
+      "body": "",
+      "figureDesc": "Schéma d'une coupe de tête humaine montrant le cerveau, le cervelet et la moelle épinière, avec trois flèches bleues pointant vers des lignes pointillées à compléter et une accolade menant à une ligne pointillée commune.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p041_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكتب اسم التحركية أمام كل جملة مما يلي",
+      "body": "يريد عمر حمل قلم ليكتب، فيحمله بيده\nحرك سعيد رجله بسرعة بعدما وخزه أخوه بإبرة وهو نائم",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p041_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أتمم الخطاطة التالية للتحركية التي قام بها سعيد وهو نائم بعدما وخزه أخوه",
+      "body": "مهيج  إبرة\nالجلد (تستقبل الإهاجة)\n[ ] (ينقل السيالة الحسية)\nمركز عصبي [ ] (يحلل السيالة)\n[ ] (ينقل السيالة الحركية)\nمستجيب حركي [ ] (يقوم بالحركة)",
+      "figureDesc": "Cinq cases alignées, de droite à gauche. Seule la case « الجلد » est remplie, les quatre autres sont vides. Deux petites flèches partent de « مهيج  إبرة » vers la case « الجلد ». Les libellés sont placés au-dessus ou en dessous des cases.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p041_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "صنف ما يلي حسب الجدول",
+      "body": "الضجيج المتواصل، التدخين، السكري، قلة النوم، الأنيميا، السمنة",
+      "figureDesc": "Tableau à deux colonnes : « أخطار على الجهاز العصبي » (à droite) et « أمراض سوء التغذية » (à gauche), avec trois lignes vides à remplir.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p041_i8"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "Trois photos : dunes de sable (désert), forêt verte avec un chemin, vagues de mer. Sous chacune, un cadre vide à remplir.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p041_i9"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أتمم ملء الخطاطة التالية لسلسلة غذائية من اختيارك",
+      "body": "منتج ← مستهلك من الدرجة ← مستهلك من الدرجة ← مستهلك من الدرجة",
+      "figureDesc": "Quatre cases vides reliées par des flèches noires pointant vers la gauche. Légendes sous les cases, de droite à gauche : منتج، مستهلك من الدرجة، مستهلك من الدرجة، مستهلك من الدرجة (sans numéro visible).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p041_i10"
+    },
+    {
+      "kind": "footer",
+      "number": "",
+      "instruction": "بالتوفيق",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p041_i11"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمم ما يلي بما يناسب",
+      "body": "يتكون الهواء من عدة غازات، حيث يشكل ........ ، و ........ ، وغازات أخرى.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mouayen_6eme_math_francais_p041_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أجب بـ صحيح أو خطأ",
+      "body": "الهواء ضروري في عملية الاحتراق\nخلال التحول الفيزيائي تتغير المادة من حيث تركيبها\nخلال التحول الكيميائي، تظهر خواص جديدة\nالحساسية الشعورية هي الشعور بإحساسات متعددة ومختلفة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p041_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أذكر نوع التغير كيميائي أو فيزيائي في كل حالة مما يلي",
+      "body": "انصهار الجليد\nصدأ الحديد\nتسوس الأسنان\nاحتراق الخشب",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p041_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أتمم بكتابة أسماء مكونات الجهاز العصبي للإنسان الوثيقة جانبه",
+      "body": "",
+      "figureDesc": "Schéma d'une coupe de tête humaine montrant le cerveau, le cervelet et la moelle épinière, avec trois flèches bleues pointant vers des pointillés à compléter et une accolade menant à un pointillé commun.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mouayen_6eme_math_francais_p041_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكتب اسم التحركية أمام كل جملة مما يلي",
+      "body": "يريد عمر حمل قلم ليكتب، فيحمله بيده\nحرك سعيد رجله بسرعة بعدما وخزه أخوه بإبرة وهو نائم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mouayen_6eme_math_francais_p041_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أتمم الخطاطة التالية للتحركية التي قام بها سعيد وهو نائم بعدما وخزه أخوه",
+      "body": "مهيج: إبرة ← الجلد (تستقبل الإهاجة) ← [ ] (ينقل السيالة الحسية) ← [ ] مركز عصبي (يحلل السيالة) ← [ ] (ينقل السيالة الحركية) ← [ ] مستجيب حركي (يقوم بالحركة)",
+      "figureDesc": "Chaîne de cases : seule la case « الجلد » est remplie, les autres sont vides à compléter.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mouayen_6eme_math_francais_p041_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "صنف ما يلي حسب الجدول",
+      "body": "الضجيج المتواصل، التدخين، السكري، قلة النوم، الأنيميا، السمنة",
+      "figureDesc": "Tableau à deux colonnes : « أخطار على الجهاز العصبي » et « أمراض سوء التغذية », avec trois lignes vides.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p041_i7",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "",
+      "body": "Trois images avec cadres vides à compléter (nommer chaque milieu) : désert (dunes de sable), forêt (chemin dans la forêt), mer/océan (vagues).",
+      "figureDesc": "Trois photos : dunes de sable, forêt verte avec un chemin, vagues de mer. Sous chacune, un cadre vide.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mouayen_6eme_math_francais_p041_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أتمم ملء الخطاطة التالية لسلسلة غذائية من اختيارك",
+      "body": "منتج ← مستهلك من الدرجة (1) ← مستهلك من الدرجة (2) ← مستهلك من الدرجة (3)",
+      "figureDesc": "Quatre cases reliées par des flèches noires, de droite à gauche, à remplir ; légendes : منتج، مستهلك من الدرجة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mouayen_6eme_math_francais_p041_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.75
+  },
+  "correctionStatus": "linked",
+  "examScope": "full_year",
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

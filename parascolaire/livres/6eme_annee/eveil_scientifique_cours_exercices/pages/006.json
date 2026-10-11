@@ -1,0 +1,116 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 6,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "L'air : propriétés de l'air (mauvais conducteur du courant électrique, occupe l'espace, compressibilité et expansion)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "رَكِّبْ دَارَةً كَهْرَبَائِيَّةً مِنْ خَلِيَّةٍ كَهْرَبَائِيَّةٍ وَمِصْبَاحٍ وَسِلْكٍ نَاقِلٍ كَمَا فِي الشَّكْلِ.",
+      "body": "- صِلِ الدَّارَةَ ، مَاذَا تُلَاحِظُ ؟\n- اِقْطَعِ السِّلْكَ وَأَبْعِدْ طَرَفَيْهِ عَنْ بَعْضِهِمَا بِحَيْثُ يَفْصِلُ الهَوَاءُ بَيْنَهُمَا. مَاذَا تُلَاحِظُ ؟\n- مَاهِيَ خَاصِّيَةُ الهَوَاءِ الَّتِي تَسْتَنْتِجُهَا ؟",
+      "figureDesc": "Deux schémas de circuits : en haut, circuit fermé avec une cellule électrique (خلية كهربائية) et un lampe (مصباح) allumée ; en bas, circuit dont le fil est coupé avec de l'air (هواء) entre les deux extrémités, lampe éteinte.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p006_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "لِمَاذَا يَنْزِلُ المَاءُ دَاخِلَ القَارُورَةِ الثَّانِيَةِ بِسُهُولَةٍ ؟",
+      "body": "- لِمَاذَا يَنْزِلُ المَاءُ دَاخِلَ القَارُورَةِ الثَّانِيَةِ بِسُهُولَةٍ ؟ (سطر فارغ للإجابة)\n- لِمَاذَا يَتَوَقَّفُ نُزُولُ المَاءِ فِي القَارُورَةِ الأُولَى ؟ (سطر فارغ للإجابة)",
+      "figureDesc": "Deux flacons avec bouchon traversé par un entonnoir et un tube. Flacon 1 : le doigt bouche le second tube, l'eau ne descend pas. Flacon 2 : le second tube est libre, l'eau coule et s'accumule au fond.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p006_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَنْجِزِ التَّجْرِبَةَ التَّالِيَةَ :",
+      "body": "- اِدْفَعِ المِكْبَسَ وَلَاحِظْ.\n- اِشْرَحْ سَبَبَ تَحَدُّبِ الغِشَاءِ المَطَّاطِيِّ.\n- اِسْحَبِ المِكْبَسَ وَاسْتَنْتِجْ.\n(أسطر فارغة للإجابة)",
+      "figureDesc": "Deux schémas de seringue avec piston et membrane en caoutchouc (غشاء مطاطي) à l'extrémité : piston poussé (flèche vers la gauche) membrane bombée vers l'extérieur ; piston tiré (flèche vers la droite) membrane creusée vers l'intérieur.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p006_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u5",
+    "confidence": 0.31
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des propriétés de l'air (mauvais conducteur du courant, occupation de l'espace, compressibilité et expansion) en éveil scientifique, ce qui correspond le mieux à l'unité sur l'air, même si le chapitre officiel met l'accent sur la composition, la respiration et la combustion.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Propriétés de l'air",
+    "skill": "Mettre en évidence par l'expérience que l'air est mauvais conducteur, occupe l'espace et est compressible et expansible.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "air",
+      "circuit électrique",
+      "compressibilité",
+      "expansion",
+      "piston",
+      "expérience"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Trois mini-expériences (circuit avec coupure remplie d'air, deux flacons dont l'un est fermé, seringue à piston avec membrane en caoutchouc) suivies de questions observer-expliquer-conclure, réutilisables pour des activités de démarche scientifique.",
+    "themeGroup": "L'air et ses propriétés"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « دَارَةً » et « الدَّارَةَ » transcrits avec la graphie « دَارَة ». L'image montre « دَائِرَة » (dā'ira) en graphie scolaire. Vérifier la graphie."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 5 : la question « لِمَاذَا يَنْزِلُ المَاءُ دَاخِلَ القَارُورَةِ الثَّانِيَةِ بِسُهُولَةٍ ؟ » apparaît deux fois dans la transcription, d'abord dans la partie 1 puis dans la partie 2. Elle est dupliquée."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les légendes des schémas ne sont pas transcrites : « خلية كهربائية », « مصباح », « هواء », « غشاء مطاطي », ainsi que les numéros 1 et 2 de l'exercice 5 et le numéro de page 21."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« وَاسْتَنْتِجْ » : l'image montre « وَأُسْتَنْتِجْ » (graphie avec hamza). Même remarque pour « تَحَدُّبِ » : l'image montre « تَحَدُّبَ » avec fatha, et la forme correcte serait « تَحَدُّبَ » après « سَبَبَ » (génitif/accusatif à vérifier)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

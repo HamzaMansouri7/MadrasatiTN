@@ -1,0 +1,133 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 69,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 38: أُنجز عملية قسمة قاسمها عدد عشري (ملاحظة : la page est en réalité une page de mathématiques)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُجْرِ العَمَلِيَّاتِ التَّالِيَةَ :",
+      "body": "72 ÷ 0,9 ؛ 27,60 ÷ 2,3 ؛ 6,18 ÷ 4,12",
+      "figureDesc": "Trois divisions posées en potence, avec les dividendes 72, 27,60 et 6,18 à gauche et les diviseurs 0,9, 2,3 et 4,12 à droite. Les espaces de calcul sont vides.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p069_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْمِلْ تَعْمِيرَ الجَدْوَلِ التَّالِي:",
+      "body": "- شَرَى تَاجِرُ لُحُومٍ كَمِّيَّاتٍ لِيَبِيعَهَا بِالتَّفْصِيلِ فَكَانَتْ كَمَا يَلِي:\nالبِضَاعَة | الكُتْلَة بالكغ | الثَّمَن الجُمْلِيّ بالدِّينَار | ثَمَن الكَغ الوَاحِد\nلُحُومُ ضَأْن | 35 | 481,250 | ........\nلُحُومُ دَجَاج | 15,5 | 69,750 | ........\nلُحُومُ بَقَر | 97,75 | 1221,875 | ........",
+      "figureDesc": "Tableau de 4 colonnes et 3 lignes. La colonne du prix d'un kg est à compléter (pointillés).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p069_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "احْسُبْ عَدَدَ العُلَبِ المُسْتَعْمَلَةِ لِكُلِّ نَوْعٍ مِنَ الصِّنْفِ الثَّانِي. / احْسُبْ كُتْلَةَ التُّمُورِ الَّتِي لَمْ يَقَعْ تَعْلِيبُهَا؟",
+      "body": "لِمَصْنَعِ كَمِّيَّةٍ مِنَ التُّمُورِ تُقَدَّرُ بِـ 5,6 ط قَامَ بِتَعْلِيبِ جُزْءٍ مِنْهَا لِتَرْوِيجِهَا فِي الأَسْوَاقِ فَكَانَ مَا يَلِي:\nأ - الصِّنْفُ الأَوَّلُ: 500 عُلْبَة مِنْ صِنْف 2 كغ و 1000 عُلْبَة مِنْ صِنْف 1 كغ و 200 عُلْبَة مِنْ صِنْف 5 كغ.\nب - الصِّنْفُ الثَّانِي: 650 كغ فِي عُلَبٍ ذَاتِ 0,5 كغ و 840 كغ فِي عُلَبٍ ذَاتِ 0,75 كغ و 930 كغ فِي عُلَبٍ ذَاتِ 1,5 كغ.\nج - الصِّنْفُ الثَّالِثُ: تُمُورٌ دُونَ تَعْلِيبٍ لِتَدَنِّي جَوْدَتِهَا.\n* احْسُبْ عَدَدَ العُلَبِ المُسْتَعْمَلَةِ لِكُلِّ نَوْعٍ مِنَ الصِّنْفِ الثَّانِي.\n* احْسُبْ كُتْلَةَ التُّمُورِ الَّتِي لَمْ يَقَعْ تَعْلِيبُهَا؟",
+      "figureDesc": "Lignes pointillées pour rédiger la réponse. Numéro de page 76 en bas, bandeau « الدرس 38 » en haut.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p069_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.42
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la division par un diviseur décimal et de problèmes de masses (kg, boîtes de dattes), ce qui correspond le mieux à la Période 4 (division, masses), sans certitude car la Période 3 couvre aussi la division des décimaux.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division par un nombre décimal",
+    "skill": "Effectuer des divisions dont le diviseur est un nombre décimal et les appliquer à la résolution de problèmes concrets.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "probleme"
+    ],
+    "keywords": [
+      "division décimale",
+      "diviseur décimal",
+      "prix au kilo",
+      "masse",
+      "conditionnement",
+      "problème"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisables : le tableau de calcul du prix unitaire à partir d'un prix de gros et d'une masse (boucher), et le problème de conditionnement de dattes en boîtes de contenances différentes avec calcul du reste non emballé.",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 1: la transcription écrit « 72 ÷ 0,9 ; 27,60 ÷ 2,3 ; 6,18 ÷ 4,12 » sans respecter la disposition en potence, mais les nombres sont corrects (mineur côté format)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1: « أُجْرِ » correct ; mais le titre de la leçon (الدرس 38 : أنجز عملية قسمة قاسمها عدد عشري) et le numéro de page 76 / « السنة 5 » dans l'en-tête sont omis."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page absent : « السنة 5 », « الدرس 38 : أُنْجِزْ عَمَلِيَّةَ قِسْمَةٍ قَاسِمُهَا عَدَدٌ عَشْرِيّ », numéro de page 76."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 3: les deux questions finales (احْسُبْ ...) sont placées au début de l'item [3] comme en-tête, puis répétées à la fin : duplication ; elles ne doivent apparaître qu'une fois, à la fin."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« 5,6 ط » : l'unité est « ط » (tonnes) dans l'image ; à vérifier, la transcription la conserve, correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel ajouté sur des mots où il n'est pas toujours visible (ex. « كَمِّيَّاتٍ », « تَعْمِيرَ » : le mot est « تَعْمِيرَ » dans l'image) ; « الثَّمَن » : l'image montre « الثَّمَن الجُمْلِيّ »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les points de suite « ........ » sont réduits ; les lignes de réponse en bas de page ne sont pas mentionnées."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

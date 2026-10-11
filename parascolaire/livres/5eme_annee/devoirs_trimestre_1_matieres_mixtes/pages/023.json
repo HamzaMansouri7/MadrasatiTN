@@ -1,0 +1,79 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 23,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Remarque : la page ne traite pas de mathématiques. C'est une leçon de grammaire/conjugaison arabe (صرف) : الفعل المجرد والفعل المزيد (verbe simple et verbe augmenté), rubrique « احفظ »",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "احفظ",
+      "body": "الفعلُ المجرَّدُ هو ما كانت كلُّ أحرفهِ أصليَّةً ليس فيها حرفٌ زائدٌ\nوهو قسمانِ\nأ ثلاثيٌّ على وزن فَعَلَ فَتَحَ أو فَعِلَ سَمِعَ أو فَعُلَ حَسُنَ\nب رباعيٌّ على وزن فَعْلَلَ دَحْرَجَ",
+      "figureDesc": "Page encadrée d'une bordure décorative de petits cercles jaunes ; titre « احفظ » en rouge, souligné.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p023_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "احفظ",
+      "body": "الفعلُ المزيدُ هو ما زيد حرفٌ أو أكثر على أحرفه الأصليَّة\nمزيداتُ الثلاثيِّ\nللثلاثيّ المزيد بحرفٍ ثلاثةُ أوزانٍ\nأَفْعَلَ أَنْزَلَ وفَعَّلَ كَرَّمَ وفاعَلَ ساعَدَ\nوللثلاثيّ المزيد بحرفينِ خمسةُ أوزانٍ\nتَفَعَّلَ تَعَلَّمَ وتَفاعَلَ تباعَدَ\nوانْفَعَلَ انْكَسَرَ\nوافْتَعَلَ اجْتَمَعَ وافْعَلَّ اسْوَدَّ\nوللثلاثيّ المزيدِ بثلاثة أحرفٍ وزنان اسْتَفْعَلَ استَخْرَجَ وافْعَوْعَلَ اعْشَوْشَبَ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p023_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u1",
+    "confidence": 0.25
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une leçon de morphologie arabe (verbe simple et verbe augmenté, صرف) qui ne correspond à aucune des huit unités officielles d'arabe, centrées sur les types de textes (narratif, descriptif, explicatif, injonctif), donc aucun chapitre ne convient clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Verbe simple et verbe augmenté",
+    "skill": "Distinguer le verbe simple (trilitère ou quadrilitère) du verbe augmenté et reconnaître leurs schèmes (أوزان).",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "صرف",
+      "فعل مجرد",
+      "فعل مزيد",
+      "أوزان",
+      "ثلاثي ورباعي",
+      "morphologie arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les tableaux de schèmes verbaux avec un verbe exemple pour chacun peuvent servir à créer des exercices de classement, d'identification du schème ou d'appariement verbe-schème, ainsi que des fiches mémo ou infographies de morphologie.",
+    "themeGroup": "Verbe simple et verbe augmenté"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

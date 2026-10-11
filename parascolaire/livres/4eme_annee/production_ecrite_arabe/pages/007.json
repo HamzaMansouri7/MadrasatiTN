@@ -1,0 +1,103 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 7,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الأماكن الاجتماعية: المدينة (نص وصفي) – مع خاتمة نص وصف الصحراء «المحملة بالرمال»",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "المحملة بالرمال\nتوغلنا داخل الصحراء فبدت كثبانها أكثر تباعدا وأشد روعة وجمالا\nكانت الصحراء الشاسعة قاحلة لا تغيب فيها الشمس أبدا\nكنا نتأمل تجاعيد الرمال المتلاحقة في انسياب والتواء\nامتدت أمامنا الرمال رداء يلف الدنيا بصفرة فيها بريق الذهب ولمعان التبر\nكانت ارض الصحراء ساخنة ملتهبة كأنها جوف فرن متقد لا ينبت من جوفها زرع ولا يتفجر من آبارها ماء ولا يحلق في سمائها طائر أو يمرح فوق أرضها حيوان\nاستقبلت يوما قائظا محرقا وودعناه بليل هادئ رطب جليل",
+      "figureDesc": "نص داخل إطار جدول، الجزء الأول من الصفحة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p007_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الأماكن الاجتماعية",
+      "body": "المدينة\nزرت المدينة فإذا هي عمارات شاهقة وشوارع واسعة نظيفة تزينها واجهات محلات تجارية مليئة بمختلف المعروضات من اللباس والمصوغ اللماع\nالمدينة العتيقة ذلك القلب العريق بنمطه العربي الصميم وبأشكاله الهندسية المأثورة قباب مستديرة ومنارات مستقيمة وسطوح متفاوتة تعلو وتنخفض وأبواب منفرجة على السقائف المظلمة وأزقة ساحرة ذات تعاريج\nولجت مدينة عامرة منظمة في طرفها وتنسيق بيوتها وترقيم منازلها\nها هي مدينة صفاقس بسورها العتيق الذي مضى على بنائه ما يناهز الألف عام\nهذه مدينة سوسة جوهرة الساحل التونسي قد جمعت المناظر العربية والفنون الحضارية\nأرسلت نظري عبر النافذة فرأيت أطرافا من الشارع الرئيسي على اليسار ونزل فخم على اليمين وعلى الجانبين مغازات عصرية وبعض أكشاك وصفوف من السيارات تتقدم ببطء شديد\nمدينة عجيبة غريبة أسوارها تخف بها الأزهار والرياحين وطرقاتها زرعت على جانبها أشجار الورد والفل وفي شرفات منازلها أصص القرنفل والعطور وتفوح منها روائح ذكية وقد كانت المدينة متسعة الأرجاء مترامية الأطراف",
+      "figureDesc": "نص داخل جدول بعنوان «الأماكن الاجتماعية» وعنوان فرعي «المدينة»؛ إطار فارغ أسفل الصفحة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p007_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.15
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est en arabe et contient des textes descriptifs de lieux (désert et ville), mais aucun chapitre officiel ne traite de la description de lieux : les unités portent sur les personnages et la structure narrative, donc aucune correspondance claire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Le texte descriptif : lieux",
+    "skill": "Identifier et utiliser le lexique et les procédés de description d'un lieu (ville, désert) dans un texte descriptif.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "texte descriptif",
+      "description de la ville",
+      "désert",
+      "lexique descriptif",
+      "médina"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Deux textes modèles contrastés (désert et ville moderne/médina) réutilisables pour des exercices de repérage du lexique descriptif, de comparaison de lieux ou de rédaction d'une description guidée d'un lieu.",
+    "themeGroup": "Description de lieux (village, bâtiments)"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.96
+  },
+  "audit": {
+    "accuracy": 0.96,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المحملة بالرمال » : le titre est placé dans la même cellule que le texte, ce qui est cohérent avec l'image, mais la structure du tableau est un peu confuse"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أسوارها تخف بها الأزهار » : l'image indique « أسوارها تخف بها الأزهار والرياحين », ce qui correspond à la transcription ; aucune erreur réelle"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المصوغ اللماع » : l'image comporte un double espace avant « اللماع » ; différence négligeable"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau a une cellule vide en bas de page ; elle n'est pas signalée dans la transcription"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

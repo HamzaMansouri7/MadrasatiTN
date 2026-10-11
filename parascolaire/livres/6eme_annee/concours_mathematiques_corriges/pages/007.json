@@ -1,0 +1,119 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 7,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مناظرة عـ 1 ـدد – رياضيات : problèmes sur les fractions, les salaires, les multiples communs et les calculs de partage",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "المسألة عـ1ـدد (6 نقاط) – السؤال 1",
+      "instruction": "كم يبلغ المرتب الشهري لخديجة؟",
+      "body": "تتقاضى مريم مرتبا شهريا يمثل 3/5 مرتب زوجها. و تتقاضى ابنتها خديجة مرتبا شهريا يزيد عن مرتب أمها بـ 52.5 د و يقل عن مرتب أبيها بمبلغ من مضاعفات 11 و 9 و محصور بين 690 د و 697 د.",
+      "figureDesc": "Division posée 697 ÷ 99 = 7 reste. Modèle en barres : mariam 5 segments sur 3, l'époux 5 segments, khadija avec 3 parts + 52.5 et 5 parts - 693.",
+      "answer": "م.م.أ ≠ 0 : (11، 9) = 9 × 11 = 99 ؛ 697 ÷ 99 = 7 و باقي ؛ المبلغ الذي سلمه لابنه: 99 × 7 = 693 د ؛ قيمة الجزئين: 693 + 52.5 = 745.5 ؛ مرتب خديجة: [(745.5 : 2) × 3] + 52.5 = 1170.750 د",
+      "confidence": 0.85,
+      "id": "concours_mathematiques_corriges_p007_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة عـ1ـدد (6 نقاط) – السؤال 2",
+      "instruction": "كم يبلغ ثمن الثلاجة علما و أنّ ثمن التلفاز يمثل 1/3 من ثمن الثلاجة.",
+      "body": "أنفقت العائلة 4/5 من دخلها الشهري لاشتراء ثلاجة و آلة غسيل و تلفاز. و ثمن آلة الغسيل = 4/3 ثمن الثلاجة.",
+      "figureDesc": "",
+      "answer": "مرتب الزوج: (745.5 × 5) : 2 = 1863.75 د ؛ مرتب الزوجة: (745.5 × 3) : 2 = 1118.25 د ؛ الدخل الشهري للعائلة: 1863.75 + 1118.25 + 1170.750 = 4152.75 د ؛ ثمن المشتريات: (4152.75 × 4) : 5 = 3322.2 د ؛ ثمن الثلاجة: (3322.2 × 3) : 8 = 1245.825 د",
+      "confidence": 0.8,
+      "id": "concours_mathematiques_corriges_p007_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة عـ2ـدد (6 نقاط) – السؤال 1",
+      "instruction": "ابحث عن الكلفة الجملية للمشروع بالدينار.",
+      "body": "أراد فلاح بحث مشروع يتمثل في تربية الدواجن، افترض مبلغا محصورا بين 12780 د و12804 د ويتكون من أوراق مالية من فئة 20 د و 50 د. كما تحصل على منحة تشجيعية من وكالة النهوض بالفلاحة تقدر بـ 12200 د جمع المبالغ لديه و صرفها على النحو التالي:",
+      "figureDesc": "Tableau à 3 colonnes : بناء مدجنة بـ 2/5 المبلغ المتوفر ؛ شراء فراخ : ثمن شراء الفرخ الواحد بـ 1.8 د ؛ شراء علف و أقفاص : 12840 د",
+      "answer": "م.م.أ (20، 50) = 100 ؛ 12804 : 100 = 128 و باقي ؛ المبلغ المقترض: 128 × 100 = 12800 د ؛ الكلفة الجملية: 12800 + 12200 = 25000 د",
+      "confidence": 0.85,
+      "id": "concours_mathematiques_corriges_p007_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة عـ2ـدد – السؤال 2",
+      "instruction": "احسب ثمن شراء العلف علما و أنه يقلّ عن ثمن شراء الأقفاص بـ 960 د.",
+      "body": "",
+      "figureDesc": "",
+      "answer": "ثمن شراء العلف: (12840 – 960) : 2 = 5940 د",
+      "confidence": 0.85,
+      "id": "concours_mathematiques_corriges_p007_i4",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة عـ2ـدد – السؤال 3",
+      "instruction": "أحدّد عدد الفراخ المشتراة.",
+      "body": "",
+      "figureDesc": "",
+      "answer": "ثمن شراء الفراخ: 25000 – [[(2 × 25000) : 5] + 12840] = 2160 د ؛ عدد الفراخ المشتراة: 2160 : 1.8 = 1200 فرخا",
+      "confidence": 0.8,
+      "id": "concours_mathematiques_corriges_p007_i5",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "math-6-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.47
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une épreuve de type concours (مناظرة) composée de problèmes à plusieurs étapes mêlant fractions, multiples communs, salaires et partage, ce qui correspond à la synthèse générale et à la résolution de situations-problèmes préparant au concours des collèges pilotes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    5,
+    6
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes sur fractions et multiples communs",
+    "skill": "Résoudre des problèmes à étapes combinant fractions, multiples communs, encadrement et partage de sommes d'argent.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "fractions",
+      "salaire",
+      "multiples communs",
+      "encadrement",
+      "partage",
+      "billets"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations de la vie courante (salaires d'une famille, achat d'électroménager, projet d'élevage financé par billets et subvention) où l'on combine fraction d'une quantité, multiple commun dans un intervalle donné et écart entre deux montants.",
+    "themeGroup": "Multiples et diviseurs"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "self_contained",
+  "examScope": "full_year",
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

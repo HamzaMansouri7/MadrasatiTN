@@ -1,0 +1,188 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 14,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 8: أتدرّب على حلّ المسائل – أُغيِّر الأسئلة المساعدة على الحلّ (مسائل رياضيات: مخطّط بياني وجدول)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "عَدَدُ سُكّانِ مِنْطَقَةٍ مُبَيَّنٌ عَلَى الْمُخَطَّطِ الْبَيانِيِّ التّالِي حَسَبَ أَعْمارِهِمْ. * اشْطُبِ السُّؤالَ الّذِي لا يُساعِدُ عَلَى حَلِّ الْمَسْأَلَةِ.",
+      "body": "- اِبْحَثْ عَنْ عَدَدِ سُكّانِ هَذِهِ الْمِنْطَقَةِ؟\n- رَتِّبْ هَؤُلاءِ السُّكّانَ حَسَبَ أَعْمارِهِمْ مِنَ الْأَصْغَرِ إِلَى الْأَكْبَرِ؟\n- ارْسُمِ الْمُخَطَّطَ الْبَيانِيَّ لِهَؤُلاءِ السُّكّانِ حَسَبَ أَعْمارِهِمْ.\n* أَنْجِزِ الْحَلَّ: (أسطر منقّطة للكتابة)",
+      "figureDesc": "مخطّط بياني خطّي: المحور العمودي «عدد الأنفار» (0، 4000، 6000، 8000، 10000، 12000، 14000، 16000)، المحور الأفقي «الأعمار بالسنة» (10 إلى 65). النقاط التقريبية: (10 ; 10000)، (15 ; 6000)، (20 ; 12000)، (25 ; 14000)، (40 ; 10000)، (50 ; 8000)، (65 ; 4000). يوجد أربعة أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p014_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لِبائِعِ سَمَكٍ أَنْواعٌ مِنَ السَّمَكِ بِكَمِّيّاتٍ مُخْتَلِفَةٍ وَأَثْمانٍ مُتَعَدِّدَةٍ وَهَذَا الْجَدْوَلُ يُبَيِّنُ ذَلِكَ. * أَكْمِلِ الْجَدْوَلَ بِالْبَياناتِ النّاقِصَةِ.",
+      "body": "نوعُ السَّمَكِ: سَرْدين | بوري | شلبة | قاروص\nالكُتْلَةُ بالكغ: 36 | 45 | ........ | 18\nثَمَنُ بيعِ 1 كغ: 1700 مي | ........ | 6500 مي | 12500 مي\nالثَّمَنُ الجُمْلِيُّ: ........ | 427 500 مي | 188 500 مي | ........",
+      "figureDesc": "جدول من 4 أعمدة للأسماك و3 أسطر (الكتلة، ثمن بيع 1 كغ، الثمن الجملي) به خانات فارغة منقّطة للإكمال.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p014_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p6",
+  "topicTitle": "Période 6 : Aires latérales/totales et synthèse",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p5",
+    "confidence": 0.28
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de résolution de problèmes (diagramme, tableau avec prix unitaire, masse et prix total) qui relève de la synthèse et des situations-problèmes, mais sans lien clair avec les aires ; la période 6 reste le choix le plus proche mais incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Résolution de problèmes avec graphiques et tableaux",
+    "skill": "Identifier les questions utiles à la résolution d'un problème et compléter un tableau de données en utilisant la relation prix unitaire × quantité = prix total.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "schema_tableau",
+      "calcul"
+    ],
+    "keywords": [
+      "résolution de problèmes",
+      "diagramme statistique",
+      "tableau de données",
+      "prix unitaire et prix total",
+      "questions d'aide",
+      "lecture de graphique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : demander de barrer la question inutile parmi plusieurs sous-questions d'aide à la résolution, et compléter un tableau commercial (marchand de poissons) où l'on retrouve la masse, le prix au kilo ou le prix total à partir des deux autres données.",
+    "themeGroup": "Proportionnalité et problèmes de mesures"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le graphique (courbe, axes « عدد الأنفار » et « الأعمار بالسنة », valeurs 16000…0 et 10…65) n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « الدرس 8 : أتدرب على حل المسائل – أختبر الأسئلة المساعدة على الحل », ainsi que le numéro de page 15 et le numéro 5."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أَلْجِزِ » : l'image porte « أَنْجِزِ » (ن et non ل)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« مِنْطَقَةٍ » : l'image porte « مِنْطَقَةٍ » avec « مُبَيَّنٌ » ; « بائِعِ » : l'image porte « لِبائِعِ سَمَكٍ أَنْواعٌ » ; « أَنْواعٌ » doit être « أَنْواعٌ », mais l'image indique « ألواع »/« أنواع » : à vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الثَّمَنُ الجُمْلِيُّ » : l'image porte « الثمن الجملي » ; « ثَمَنُ بيعِ » : l'image porte « ثمن بيع » sans voyelles complètes."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les voyelles ajoutées dans le tableau (« سَرْدين », « الكُتْلَةُ ») sont partiellement incohérentes avec l'image, où elles sont partielles."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« شلبة » : l'image porte « شلبــة » avec un point final ; sans importance."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans « أَلْجِزِ الْحَلَّ », le mot de l'image est « أَنْجِزِ » (ن et non ل). Corrigé en « أَنْجِزِ »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« الدرس 8 : أتدرب على حل المسائل – أختبر الأسئلة المساعدة على الحل », numéro 5, page 15) n'est pas transcrit. Ce n'est pas un item d'exercice, donc il n'est pas ajouté aux items."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "عَدَدُ سُكّانِ مِنْطَقَةٍ مُبَيَّنٌ عَلَى الْمُخَطَّطِ الْبَيانِيِّ التّالِي حَسَبَ أَعْمارِهِمْ. * اشْطُبِ السُّؤالَ الّذِي لا يُساعِدُ عَلَى حَلِّ الْمَسْأَلَةِ.",
+      "body": "- اِبْحَثْ عَنْ عَدَدِ سُكّانِ هَذِهِ الْمِنْطَقَةِ؟\n- رَتِّبْ هَؤُلاءِ السُّكّانَ حَسَبَ أَعْمارِهِمْ مِنَ الْأَصْغَرِ إِلَى الْأَكْبَرِ؟\n- ارْسُمِ الْمُخَطَّطَ الْبَيانِيَّ لِهَؤُلاءِ السُّكّانِ حَسَبَ أَعْمارِهِمْ.\n* أَنْجِزِ الْحَلَّ: (أسطر منقّطة للكتابة)",
+      "figureDesc": "مخطّط بياني خطّي: المحور العمودي «عدد الأنفار» (0، 4000، 6000، 8000، 10000، 12000، 14000، 16000)، المحور الأفقي «الأعمار بالسنة» (10 إلى 65). النقاط التقريبية: (10 ; 10000)، (15 ; 6000)، (20 ; 12000)، (25 ; 14000)، (40 ; 10000)، (50 ; 8000)، (65 ; 4000). يوجد أربعة أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p014_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لِبائِعِ سَمَكٍ أَنْواعٌ مِنَ السَّمَكِ بِكَمِّيّاتٍ مُخْتَلِفَةٍ وَأَثْمانٍ مُتَعَدِّدَةٍ وَهَذَا الْجَدْوَلُ يُبَيِّنُ ذَلِكَ. * أَكْمِلِ الْجَدْوَلَ بِالْبَياناتِ النّاقِصَةِ.",
+      "body": "نوعُ السَّمَكِ: سَرْدين | بوري | شلبة | قاروص\nالكُتْلَةُ بالكغ: 36 | 45 | ........ | 18\nثَمَنُ بيعِ 1 كغ: 1700 مي | ........ | 6500 مي | 12500 مي\nالثَّمَنُ الجُمْلِيُّ: ........ | 427 500 مي | 188 500 مي | ........",
+      "figureDesc": "جدول من 4 أعمدة للأسماك و3 أسطر (الكتلة، ثمن بيع 1 كغ، الثمن الجملي) به خانات فارغة منقّطة للإكمال.",
+      "answer": null,
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p014_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "عَدَدُ سُكّانِ مِنْطَقَةٍ مُبَيَّنٌ عَلَى الْمُخَطَّطِ الْبَيانِيِّ التّالِي حَسَبَ أَعْمارِهِمْ. * اشْطُبِ السُّؤالَ الّذِي لا يُساعِدُ عَلَى حَلِّ الْمَسْأَلَةِ.",
+      "body": "- اِبْحَثْ عَنْ عَدَدِ سُكّانِ هَذِهِ الْمِنْطَقَةِ؟\n- رَتِّبْ هَؤُلاءِ السُّكّانَ حَسَبَ أَعْمارِهِمْ مِنَ الْأَصْغَرِ إِلَى الْأَكْبَرِ؟\n- ارْسُمِ الْمُخَطَّطَ الْبَيانِيَّ لِهَؤُلاءِ السُّكّانِ حَسَبَ أَعْمارِهِمْ.\n* أَلْجِزِ الْحَلَّ: (أسطر منقّطة للكتابة)",
+      "figureDesc": "مخطّط بياني خطّي: المحور العمودي «عدد الأنفار» (0 إلى 16000 بخطوة 2000/4000)، المحور الأفقي «الأعمار بالسنة» (10 إلى 65). النقاط التقريبية: (10 ; 10000)، (15 ; 6000)، (20 ; 12000)، (25 ; 14000)، (40 ; 10000)، (50 ; 8000)، (65 ; 4000). يوجد أربعة أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p014_i1",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لِبائِعِ سَمَكٍ أَنْواعٌ مِنَ السَّمَكِ بِكَمِّيّاتٍ مُخْتَلِفَةٍ وَأَثْمانٍ مُتَعَدِّدَةٍ وَهَذَا الْجَدْوَلُ يُبَيِّنُ ذَلِكَ. * أَكْمِلِ الْجَدْوَلَ بِالْبَياناتِ النّاقِصَةِ.",
+      "body": "نوعُ السَّمَكِ: سَرْدين | بوري | شلبة | قاروص\nالكُتْلَةُ بالكغ: 36 | 45 | ........ | 18\nثَمَنُ بيعِ 1 كغ: 1700 مي | ........ | 6500 مي | 12500 مي\nالثَّمَنُ الجُمْلِيُّ: ........ | 427 500 مي | 188 500 مي | ........",
+      "figureDesc": "جدول من 4 أعمدة للأسماك و3 أسطر (الكتلة، ثمن بيع 1 كغ، الثمن الجملي) به خانات فارغة منقّطة للإكمال.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p014_i2",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

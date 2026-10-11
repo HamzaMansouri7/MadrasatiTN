@@ -1,0 +1,258 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 64,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 16 : اختبار تقويمي للتثبيت والدعم (الأعداد الزوجية والفردية، البحث عن المجهول في العمليات، المسلك والكتابة السهمية، مسألة حول مصاريف وأرباح نادي الإنتاج الفلاحي)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب العدد الزّوجي الذي يأتي مباشرة قبل 150 000.",
+      "body": "أكتب العدد الزّوجي الذي يأتي مباشرة قبل 150 000.\nما هو العدد الفردي الذي يأتي مباشرة بعد 599 999 ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p064_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ابحث عن المجهول في كلّ حالة :",
+      "body": "ثلاث عمليات بها أرقام ناقصة:\n1) ضرب: 700 × 6 = . . . .\n2) جمع: 9532 + . . . . + 4869 = 20 000\n3) طرح: 86 . 2 - 5 . 67 = . 34 .",
+      "figureDesc": "ثلاث عمليات حسابية موضوعة عموديا (ضرب وجمع وطرح) بها نقاط مكان الأرقام أو الأعداد المجهولة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p064_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم بالأخضر المسلك الموافق للكتابة السّهميّة انطلاقا من \"أ\". اختصر الكتابة السّهمية للمسلك ثمّ ارسمه باللون الأحمر.",
+      "body": "الكتابة السهمية (كما في الصورة، انطلاقا من النقطة أ): ↓1 | →2 | ↑2 | ←1 | ↑2 | →2 ● أ",
+      "figureDesc": "شبكة مربعات 7×7 مرقمة أفقيا من 7 إلى 0 وعموديا من 1 إلى 7، النقطة \"أ\" عند (5 ، 2). شريط الكتابة السهمية: ↓1 ، →2 ، ↑2 ، ←1 ، ↑2 ، →2 .",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p064_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اعْتَنَى تلاميذ نَادِي الانْتَاج الفِلاَحِي بالمدرسة فَأعدّوا ما يلي لزراعةِ الحديقة بُقُولا :",
+      "body": "- 3 علب بذور بـ 5 د الواحدة - 50 كغ من الأسمدة بـ 350 مي الكغ.\n- أدوية بـ 3 د.\n* كم صرفوا في الجملة ؟\nقُدّر انتاجهم هذه السنة بـ 500 كغ من البقول. يمكنهم أن يبيعوا :\nأ) كامل الانتاج لخضار الحيّ بـ 75 د.\nب) جمع البقول وبيعها في السّوق بـ 200 مي الكغ مع تحمّل 4 د مصاريف التنقّل. أيّ الحلّين يوفّر أكثر فائدة لصندوق المدرسة؟ علّل جوابك بالأرقام.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p064_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-4-m6",
+    "confidence": 0.18
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de consolidation (semaine 16) mêlant nombres pairs/impairs, opérations à trous, itinéraires en écriture fléchée et problème de dépenses/bénéfices avec monnaie, donc couvrant plusieurs chapitres sans correspondre à un seul.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres pairs et impairs, opérations à trous, problème",
+    "skill": "Consolider les nombres pairs/impairs, la recherche du terme manquant dans les opérations, le repérage de parcours en écriture fléchée et la résolution d'un problème de dépenses et bénéfices.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres pairs et impairs",
+      "opérations à trous",
+      "écriture fléchée",
+      "parcours sur quadrillage",
+      "problème dépenses et bénéfices"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation de consolidation variée : parité des nombres autour de grands repères, opérations avec chiffres manquants, tracé et simplification d'un parcours fléché, et problème contextualisé (club d'agriculture scolaire) comparant deux modes de vente.",
+    "themeGroup": "Numération jusqu'à 999"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 3 : la transcription de la suite fléchée « أ ← 2 → ↑ 2 ← 2 ↑ ... » est inventée et fausse. Dans l'image, on lit (de droite à gauche à partir de أ) : →2, ↑2, →2... plus exactement les cases sont ↓1, →2, ↑2, ←1, ↑2, →2. La phrase 'أ ← 2 → ↑ 2 ...' est incohérente avec la liste donnée ensuite."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « الزّوجي » avec shadda dans l'image, c'est correct, mais les autres voyelles visibles sont absentes ou différentes : « أرسم » (image : « أرسم »), « المسلك » sans voyelles, « السهمية » écrit sans shadda alors que l'image a « السّهمية » / « الشهمیّة » (shadda sur ه ou س visible)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « أرسم بالأخضر » correct ; mais « اختصر الكتابة السهمية للمسلك ثمّ ارسمه » OK. « أرسم » dans la transcription devrait rester « أرسم » (pas d'erreur), mais l'en-tête « الأسبوع 16 / اختبار تقويمي للتثبيت والدعم / page 60 » est omis."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis : « الأسبوع 16 », « اختبار تقويمي للتثبيت والدعم » et numéro de page 60. La grille quadrillée avec point أ (non textuelle) n'est pas mentionnée."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 2 : la soustraction est « 86.2 − 5.67 = .34. » ; la transcription « 86 . 2 » et « 5 . 67 » perd la position du point décimal (86.2, 5.67). L'addition est « 9532 + .... + 4869 = 20 000 » correcte."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : « أدوية » ; « كم صرفوا » OK ; « يمكنهم » a un tashkeel dans l'image (يُمكنهم) absent ; « أعدّوا » et « فأعدّوا » : image « فَأعدّوا » ; « قُدّر » OK ; « تحمّل » OK."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 3 : dans le body, la suite « أ ← 2 → ↑ 2 ← 2 ↑ ... » est inventée et incohérente avec l'image. Le bandeau de l'image se lit ↓1 | →2 | ↑2 | ←1 | ↑2 | →2, suivi du point ● et de « أ » à droite. Le texte inventé est supprimé et remplacé par la suite réelle."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'image porte « الكتابة السّهميّة » avec chadda, alors que l'instruction l'écrit « السهمية ». Dans la 2e phrase, « السّهمية » porte la chadda sur le س."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب العدد الزّوجي الذي يأتي مباشرة قبل 150 000.",
+      "body": "أكتب العدد الزّوجي الذي يأتي مباشرة قبل 150 000.\nما هو العدد الفردي الذي يأتي مباشرة بعد 599 999 ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p064_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ابحث عن المجهول في كلّ حالة :",
+      "body": "ثلاث عمليات بها أرقام ناقصة:\n1) ضرب: 700 × 6 = . . . .\n2) جمع: 9532 + . . . . + 4869 = 20 000\n3) طرح: 86 . 2 - 5 . 67 = . 34 .",
+      "figureDesc": "ثلاث عمليات حسابية موضوعة عموديا (ضرب وجمع وطرح) بها نقاط مكان الأرقام أو الأعداد المجهولة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p064_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم بالأخضر المسلك الموافق للكتابة السّهميّة انطلاقا من \"أ\". اختصر الكتابة السّهمية للمسلك ثمّ ارسمه باللون الأحمر.",
+      "body": "الكتابة السهمية (كما في الصورة، انطلاقا من النقطة أ): ↓1 | →2 | ↑2 | ←1 | ↑2 | →2 ● أ",
+      "figureDesc": "شبكة مربعات 7×7 مرقمة أفقيا من 7 إلى 0 وعموديا من 1 إلى 7، النقطة \"أ\" عند (5 ، 2). شريط الكتابة السهمية: ↓1 ، →2 ، ↑2 ، ←1 ، ↑2 ، →2 .",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p064_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اعْتَنَى تلاميذ نَادِي الانْتَاج الفِلاَحِي بالمدرسة فَأعدّوا ما يلي لزراعةِ الحديقة بُقُولا :",
+      "body": "- 3 علب بذور بـ 5 د الواحدة - 50 كغ من الأسمدة بـ 350 مي الكغ.\n- أدوية بـ 3 د.\n* كم صرفوا في الجملة ؟\nقُدّر انتاجهم هذه السنة بـ 500 كغ من البقول. يمكنهم أن يبيعوا :\nأ) كامل الانتاج لخضار الحيّ بـ 75 د.\nب) جمع البقول وبيعها في السّوق بـ 200 مي الكغ مع تحمّل 4 د مصاريف التنقّل. أيّ الحلّين يوفّر أكثر فائدة لصندوق المدرسة؟ علّل جوابك بالأرقام.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p064_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب العدد الزّوجي الذي يأتي مباشرة قبل 150 000.",
+      "body": "أكتب العدد الزّوجي الذي يأتي مباشرة قبل 150 000.\nما هو العدد الفردي الذي يأتي مباشرة بعد 599 999 ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "math_solutions_4eme_sellami_p064_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ابحث عن المجهول في كلّ حالة :",
+      "body": "ثلاث عمليات بها أرقام ناقصة:\n1) ضرب: 700 × 6 = . . . .\n2) جمع: 9532 + . . . . + 4869 = 20 000\n3) طرح: 86 . 2 - 5 . 67 = . 34 .",
+      "figureDesc": "ثلاث عمليات حسابية موضوعة عموديا (ضرب وجمع وطرح) بها نقاط مكان الأرقام أو الأعداد المجهولة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p064_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم بالأخضر المسلك الموافق للكتابة السهمية انطلاقا من \"أ\". اختصر الكتابة السهمية للمسلك ثمّ ارسمه باللون الأحمر.",
+      "body": "الكتابة السهمية: أ ← 2 → ↑ 2 ← 2 ↑ ... (كما في الصورة: ↓1 ، →2 ، ↑2 ، ←1 ، ↑2 ، →2 انطلاقا من النقطة أ)",
+      "figureDesc": "شبكة مربعات 7×7 مرقمة أفقيا من 7 إلى 0 وعموديا من 1 إلى 7، النقطة \"أ\" عند (5 ، 2). شريط الكتابة السهمية: ↓1 ، →2 ، ↑2 ، ←1 ، ↑2 ، →2 .",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "math_solutions_4eme_sellami_p064_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اعْتَنَى تلاميذ نَادِي الانْتَاج الفِلاَحِي بالمدرسة فَأعدّوا ما يلي لزراعةِ الحديقة بُقُولا :",
+      "body": "- 3 علب بذور بـ 5 د الواحدة - 50 كغ من الأسمدة بـ 350 مي الكغ.\n- أدوية بـ 3 د.\n* كم صرفوا في الجملة ؟\nقُدّر انتاجهم هذه السنة بـ 500 كغ من البقول. يمكنهم أن يبيعوا :\nأ) كامل الانتاج لخضار الحيّ بـ 75 د.\nب) جمع البقول وبيعها في السّوق بـ 200 مي الكغ مع تحمّل 4 د مصاريف التنقّل. أيّ الحلّين يوفّر أكثر فائدة لصندوق المدرسة؟ علّل جوابك بالأرقام.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p064_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,128 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 38,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الدرس 20: أتعرف في وحدات قيس المساحة: المتر المربع ومضاعفاته",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "20",
+      "instruction": "الدّرس 20 : أتعرّف في وحدات قيس المساحة: المتر المربّع ومضاعفاته",
+      "body": "عنوان الدرس في أعلى الصفحة (الصفحة 39 حسب الترقيم المطبوع).",
+      "figureDesc": "عنوان زخرفي ملوّن في أعلى الصفحة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p038_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اكْتُبِ الأقْيِسَةَ التَّالِيَةَ فِي الجَدْوَلِ إِنْ أَمْكَنَ:",
+      "body": "2600 م² ؛ 7 كم² و 16 دكم² ؛ 385 000 دسم² ؛ 10 هم² و 145 دكم²",
+      "figureDesc": "جدول من أربعة أعمدة رئيسية: م²، دكم²، هم²، كم²، كل عمود مقسوم إلى خانتين، وفيه ثلاثة صفوف فارغة منقطة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p038_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حَـوِّلِ الأقْيِسَةَ التَّالِيَةَ إِلَى الْـوِحْدَةِ الْمَطْلُوبَةِ :",
+      "body": "★ 3475 م² = ........... دكم² + ........... م²\n★ 176 دكم² = ........... م² = ........... دكم² + ........... هم²\n★ 265 هم² + 3500 دكم² = ........... كم²\n★ 10 كم² = ........... هم² = ........... دكم² + ........... م².",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p038_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكْمِلْ بِمَا يَنْقُصُ مِنَ الوَحَدَاتِ:",
+      "body": "★ 964 500 م² = 45 ........... و 96 ...........\n★ 2089005 م² = 5 ........... و 90 ........... و 8 ........... و 2 ...........\n★ 300020 دكم² = 20 ........... و 30 ...........\n★ 1207 هم² = 120700 ........... = 7 ........... و 12 ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_evaluations_p038_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أجْرِ العَمَلِيَّاتِ التَّالِيَةِ:",
+      "body": "★ 364 دكم² + 486 هم² + 1800 م² = ........... دكم²\n★ 8 كم² و 5 هم² − ( 2000 دكم² + 3500 م² ) = ........... دكم²\n★ (53 هم² × 6) + (68 دكم² × 50) = ........... هم²\n★ (768 هم² : 6) + (4605 هم² : 15) = ........... هم²",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p038_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكْمِلْ بِمَا يَنْقُصُ المَجَامِيعَ:",
+      "body": "★ 46070 م² = 70 م² + ........... + ........... دكم² + ........... هم².\n★ 15 كم² = ........... هم² + 3 كم² + ...... م² + 400 م² = 5034 دكم² ★ ........... دكم² + 50 ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "mathematiques_exercices_evaluations_p038_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.43
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite des unités de mesure d'aire (m², dam², hm², km²) et de leurs conversions, ce qui relève des mesures en mathématiques ; mais aucun chapitre officiel ne porte sur les unités d'aire (ch1 ne couvre que les mesures agraires ha, a, ca, et p6 les aires des solides), donc aucune correspondance claire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Unités de mesure d'aires",
+    "skill": "Convertir et calculer avec le mètre carré, ses multiples (dam², hm², km²) et ses sous-multiples.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "mètre carré",
+      "multiples du m²",
+      "conversion d'unités",
+      "aires",
+      "tableau de conversion"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série progressive d'exercices de conversion et de décomposition de mesures d'aire (tableau de numération, écritures complexes/incomplexes, opérations mixtes) réutilisable pour créer des variantes ou des fiches d'entraînement graduées.",
+    "themeGroup": "Mesures d'aires et unités agraires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

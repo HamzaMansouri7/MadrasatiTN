@@ -1,0 +1,187 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 109,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Lire et s'exprimer (compréhension de l'histoire de l'échange des animaux) et Grammaire : le singulier des mots soulignés (ces + nom pluriel)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "La vieille considère qu'à chaque échange son mari a fait une bonne affaire.\nComplète ce tableau :",
+      "body": "| L'animal échangé | Les avantages de l'échange |\n| :--- | :--- |\n| - la vache | - La vieille va avoir beaucoup de lait, du beurre et du fromage. |\n| - Le mouton | - ............................................................................................<br>............................................................................................ |\n| - Une oie | - ............................................................................................<br>............................................................................................ |\n| - Une poule | - ............................................................................................<br>............................................................................................ |",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p109_i1",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Que penses-tu de ce vieux ?",
+      "body": "........................................................................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p109_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Cette histoire est amusante. Dis pourquoi .",
+      "body": "........................................................................................................................................\n........................................................................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p109_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "C) 1) a-",
+      "instruction": "C) Grammaire :\n1) a- Réécris les phrases en mettant les mots soulignés au singulier :",
+      "body": "- Tu comprends <u>ces explications</u> ?\n........................................................................................................................................\n- J'adore <u>ces fleurs</u> et <u>ces plantes</u>.\n........................................................................................................................................\n- <u>Ces exercices</u> sont faciles.\n........................................................................................................................................\n- J'ai rencontré <u>ces voyageurs</u> dans l'auberge.\n........................................................................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p109_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.25
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de français (compréhension de l'histoire de l'échange des animaux et grammaire sur ces + nom pluriel) qui ne correspond clairement à aucun des modules officiels, dont les thèmes sont le travail, la communication, la tolérance, l'entraide, etc.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127,
+    128
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte et démonstratifs pluriels",
+    "skill": "Comprendre un récit (avantages des échanges, jugement personnel) et mettre au singulier les groupes « ces + nom pluriel ».",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "schema_tableau",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "échange des animaux",
+      "tableau à compléter",
+      "singulier et pluriel",
+      "ces + nom",
+      "opinion personnelle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un récit en chaîne d'échanges sert de base à un tableau cause-avantage, suivi de questions d'opinion et d'humour, puis d'un exercice de grammaire transformant des phrases (pluriel vers singulier) sur un point précis.",
+    "themeGroup": "Grammaire: la phrase"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes et pieds de page ne sont pas transcrits : « Les évaluations », « Sagesse », « 6 ème année de base », « Lire et s'exprimer », numéro de page 108."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les consignes sont réduites à des descriptions : les lignes de réponse en pointillés sous chaque phrase de grammaire ne sont pas mentionnées, ce qui est acceptable."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le « 6) » de la première question et celui de la deuxième sont tous deux numérotés 6 dans l'image (doublon d'origine). La transcription le reproduit fidèlement, donc ce n'est pas une erreur."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "La vieille considère qu'à chaque échange son mari a fait une bonne affaire. Complète ce tableau :",
+      "body": "Tableau à deux colonnes : « L'animal échangé » et « Les avantages de l'échange ». Lignes : - la vache (exemple donné : « La vieille va avoir beaucoup de lait, du beurre et du fromage. ») ; - Le mouton ; - Une oie ; - Une poule. Les avantages sont à compléter sur des pointillés.",
+      "figureDesc": "Tableau de deux colonnes : animal échangé (la vache, le mouton, une oie, une poule) et avantages de l'échange, avec la première ligne remplie en exemple et les autres lignes en pointillés à compléter.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p109_i1",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Que penses-tu de ce vieux ?",
+      "body": "Ligne en pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p109_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Cette histoire est amusante. Dis pourquoi.",
+      "body": "Deux lignes en pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p109_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-1-a",
+      "instruction": "Grammaire : Réécris les phrases en mettant les mots soulignés au singulier :",
+      "body": "- Tu comprends ces explications ? (« ces explications » souligné)\n- J'adore ces fleurs et ces plantes. (« ces fleurs » et « ces plantes » soulignés)\n- Ces exercices sont faciles. (« Ces exercices » souligné)\n- J'ai rencontré ces voyageurs dans l'auberge. (« ces voyageurs » souligné)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "sagesse_6eme_complet_p109_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

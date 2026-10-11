@@ -1,0 +1,146 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 14,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "صِحَّتِي وَسَلَامَتِي - قِرَاءَةٌ وَفَهْمٌ",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "مَرِضَتْ سَمَاحُ مَرَّةً، وَانْقَطَعَتْ عَنِ الدُّرُوسِ مُدَّةً. وَلَمَّا عَلِمَتْ صَاحِبَتُهَا فَتِيحَةُ، حَمَلَتْ أَزْهَارًا، وَذَهَبَتْ لِزِيَارَتِهَا، فَاسْتَقْبَلَتْهَا أُمُّ سَمَاحِ، وَرَحَّبَتْ بِقُدُومِهَا، وَأَدْخَلَتْهَا غُرْفَةَ ابْنَتِهَا، فَوَجَدَتْهَا مُسْتَلْقِيَةً عَلَى سَرِيرِهَا، وَهِيَ نَاحِلَةُ الْجِسْمِ، صَفْرَاءُ الْوَجْهِ، وَبِجَانِبِهَا مُمَرِّضَةٌ.\nفَتَحَتِ الْمُمَرِّضَةُ حَقِيبَتَهَا، وَأَمْسَكَتِ الْحُقْنَةَ، وَغَرَزَتْهَا فِي سَاعِدِ سَمَاحِ بِكُلِّ لُطْفٍ وَحَنَانٍ.\nالْهَدِيَّةُ (دَارِ الْيَمَامَةِ) بِتَصَرُّفٍ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p014_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبِطُ بِسَهْمٍ :",
+      "body": "• فَتِيحَةُ\n• سَمَاحُ\n• الْمُمَرِّضَةُ\n\n• نَاحِلَةُ الْجِسْمِ.\n• غَرَزَتِ الْحُقْنَةَ فِي سَاعِدِ سَمَاحِ.\n• زَارَتْ سَمَاحَ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p014_i2",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) تَحْتَ الصُّورَةِ الْمُنَاسِبَةِ لِلْجُمْلَةِ.",
+      "body": "الْجُمْلَةُ : تَحْمِلُ فَتِيحَةُ أَزْهَارًا.",
+      "figureDesc": "ثلاث صور متجاورة: الأولى لفتاة تحمل باقة أزهار، الثانية لفتاة مريضة نائمة على السرير، الثالثة لممرضة تعالج فتاة مستلقية على السرير. وتحت كل صورة دائرة لوضع العلامة.",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p014_i3",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) أَمَامَ الْجُمْلَةِ الَّتِي تُنَاسِبُ النَّصَّ.",
+      "body": "زَارَتْ سَمَاحُ صَدِيقَتَهَا فَتِيحَةَ. [  ]\nحَقَنَتِ الْمُمَرِّضَةُ سَاعِدَ فَتِيحَةَ. [  ]\nلَزِمَتْ سَمَاحُ السَّرِيرَ. [  ]",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p014_i4",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "ar-1-u3",
+  "topicTitle": "Unité 3 : Mon compagnon pour ma santé et ma sécurité",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u3",
+    "confidence": 0.65
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un texte de lecture et de compréhension en arabe sur la maladie de Samah et la visite de son amie, avec le titre « صحتي وسلامتي », ce qui correspond à l'unité 3 « Mon compagnon pour ma santé et ma sécurité ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de texte : la maladie",
+    "skill": "Lire un court texte narratif et en vérifier la compréhension en associant personnages et actions, en reliant phrase et image, et en identifiant les phrases conformes au texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "qcm",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "santé",
+      "maladie",
+      "visite à une amie",
+      "compréhension écrite",
+      "première année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une petite histoire de visite à une amie malade sert de support à trois exercices simples et adaptés aux débutants : relier un personnage à son action, cocher l'image qui correspond à une phrase, cocher les phrases conformes au texte.",
+    "themeGroup": "Compréhension de texte"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le bandeau d'en-tête est absent : «اللُّغَةُ الْعَرَبِيَّةُ قِرَاءَةٌ وَفَهْمٌ», «الْوَحْدَةُ الثَّالِثَةُ : صِحَّتِي وَسَلَامَتِي», «يُحَدِّدُ أَحْدَاثَ النَّصِّ وَشَخْصِيَّاتِهِ، وَالْأَزْمِنَةَ، وَالْأَمْكِنَةَ», «الْمَقْطَعُ الْمُنْغَلِقُ : حـ / حـ / ـحـ / ح / حا / حو / حي»."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de section «أَسْتَثْمِرُ النَّصَّ :» est absent, avant l'exercice 1."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«دَارِ الْيَمَامَةِ» : l'image montre «دار اليمامة» sans voyelles visibles. La transcription ajoute des voyelles, dont le kasra final, qui ne sont pas dans l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans l'image, le texte «الْهَدِيَّةُ» est suivi de «(دار اليمامة) بِتَصَرُّف», avec un tashkeel partiel. La transcription ajoute des voyelles inexistantes."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : «حَقَنَتِ الْمُمَرِّضَةُ سَاعِدَ فَتِيحَةَ» correspond à l'image, mais le texte de l'image porte «حَقَنَتِ» sans fatha visible sur certaines lettres. Détail mineur."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les images de l'exercice 2 (3 illustrations avec cases) sont omises. Les cases sont absentes de la transcription, contrairement à l'exercice 3."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Numéro de page 15, mention «السنة 1», «الثلاثي الثاني» et le texte latéral «اللغة العربية - قراءة وفهم» sont absents."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

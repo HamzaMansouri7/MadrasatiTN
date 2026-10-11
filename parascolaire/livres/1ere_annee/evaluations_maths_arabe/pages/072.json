@@ -1,0 +1,167 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 72,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وضعيات تقييمية (الثلاثي الثاني، السنة 1) - الرياضيات: النقود (المبلغ المالي والمقارنة) والهندسة (الخطوط المفتوحة والخطوط المغلقة) + جدول إسناد الأعداد. Remarque : le contenu de la page relève des mathématiques, pas de la langue arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أُحَدِّدُ الْمَبْلَغَ الْمَالِيَّ الَّذِي يَـمْلِكُهُ نادِرٌ وَمَبْلَغَ رَبَابَ.",
+      "body": "نُقُودُ رَبَابَ ونُقُودُ نَادِرٍ. تحت كل مجموعة نقود عبارة «.......... مي» لكتابة المبلغ.",
+      "figureDesc": "إطار فيه مجموعتا قطع نقدية. نقود رباب: خمس قطع، أربع قطع من فئة 2 وقطعة من فئة 1. نقود نادر: ثلاث قطع، قطعة من فئة 2 وقطعة من فئة 5 وقطعة من فئة 1. تحت كل مجموعة سطر منقوط يليه «مي» لكتابة المبلغ. على الهامش المعيار مع3 وثلاث خانات للتقييم.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_maths_arabe_p072_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أُقَارِنُ بَيْنَ الْمَبْلَغَيْنِ.",
+      "body": "سطر منقوط لكتابة الإجابة.",
+      "figureDesc": "على الهامش المعيار مع5 وخانة تقييم واحدة.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p072_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "حَضَرَ نَادِرٌ حِصَّةَ الْهَنْدَسَةِ فَدَرَسَ الْخُطُوطَ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p072_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أَشْطُبُ الْخُطُوطَ الْمَفْتُوحَةَ وَ أَرْسُمُ عَلاَمَةَ (X) دَاخِلَ الْخُطُوطِ الْمُغْلَقَةِ.",
+      "body": "",
+      "figureDesc": "ستة خطوط مرسومة باليد: مربع، شكل بيضوي مغلق، دائرة (خطوط مغلقة)، وخط على شكل S، وشكل شبه مغلق على هيئة كلية، وقوس على شكل C (خطوط مفتوحة). على الهامش المعيار مع4 وأربع خانات تقييم.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_maths_arabe_p072_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول إسناد الأعداد",
+      "body": "الأعمدة: المعايير ومستويات التملك | معايير الحد الأدنى: مع1، مع2أ، مع2ب، مع3، مع4 | معيار التميز: مع5.\nانعدام التملك (--): 0، 0، 0، 0، 0 | 0.\nدون التملك الأدنى (+-): 1، 0,5، 0,5، 0,5، 1 | -.\nالتملك الأدنى (++-): 2، 1، 1، 1، 2 | 2.\nالتملك الأقصى (+++): 3، 1,5، 1,5، 1,5، 3 | 4.\nتذييل الصفحة: 96 - مدرستي تونس - الثلاثي الثاني (السنة 1) - وضعيات تقييمية",
+      "figureDesc": "جدول ملون (أخضر وبرتقالي وأزرق) لإسناد الأعداد حسب مستويات التملك والمعايير. القيم مذكورة بالترتيب من مع1 إلى مع4 ثم مع5.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_maths_arabe_p072_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p2",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Cette page d'évaluation du trimestre 2 mélange la monnaie (math-1-p6, trimestre 3), les lignes ouvertes/fermées (math-1-p2, trimestre 1) et une grille de notation, donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie et lignes ouvertes/fermées",
+    "skill": "Déterminer et comparer des montants en millimes, et distinguer les lignes ouvertes des lignes fermées.",
+    "pageType": "mixed",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "monnaie tunisienne",
+      "montant",
+      "comparaison",
+      "lignes ouvertes",
+      "lignes fermées",
+      "grille de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de la vie courante où deux enfants comptent leur argent (pièces et billets) puis comparent les montants, associée à une activité de géométrie consistant à barrer les lignes ouvertes et marquer les lignes fermées ; la grille d'attribution des notes par critères est aussi utilisable comme modèle d'évaluation.",
+    "themeGroup": "Monnaie : pièces et millimes"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 9 : « نُقُودُ رَبَابَ ونُقُودُ نَادِرٍ » est placé dans la consigne alors que c'est l'en-tête du tableau. Sur l'image, nُقُودُ نَادِرٍ est à droite et نُقُودُ رَبَابَ à gauche, mais la transcription les cite dans l'ordre inverse de la lecture RTL, et les pièces (2,5,1 pour Nader ; 2,2,2,1,2 pour Rabab) ne sont pas décrites."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« نادِرٌ » dans la consigne 9 : l'image montre « نَادِرٌ » (fatha sur le nūn). « رَبَابَ » : l'image montre « رَبَابَ » sans tanwin, c'est correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَرْسُمُ » : l'image montre « أَرْسُمُ », mais la transcription utilise « عَلاَمَةَ » alors que l'image donne « عَلَامَةَ »."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les marqueurs de critères (مع3، مع5، مع4 dans la marge) et les cases rouges de notation sont omis."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ligne ‘مي’ sous chaque groupe de pièces : l'image montre « ........ مي » pour chaque côté, c'est mentionné, mais les pièces ne sont pas transcrites."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Support 5 : les six figures (carré, ovale fermé, cercle, S ouvert, forme en haricot, arc ouvert) ne sont pas décrites."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« السند 5 » : la transcription laisse le texte du titre vide ; ce n'est pas faux mais incomplet. Le titre « السَّنَدُ 5 » porte des voyelles visibles."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Tableau : la colonne مع5 pour « دون التملك الأدنى » est « - » (correct). Les valeurs 3, 1,5, 1,5, 1,5, 3 / 4 sont correctes ; l'ordre des colonnes est inversé (RTL) mais cohérent."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

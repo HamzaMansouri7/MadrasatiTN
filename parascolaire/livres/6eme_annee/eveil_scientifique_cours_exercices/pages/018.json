@@ -1,0 +1,148 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 18,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "التَّغْذِيَةُ : المَجْمُوعَاتُ الغِذَائِيَّةُ (L'alimentation : les groupes d'aliments)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "السَّنَد",
+      "body": "السَّنَدُ : يُعَرِّفُ أَخِصَّائِيُّ التَّغْذِيَةِ مُكَوِّنَاتِ الأَطْعِمَةِ، وَيُحَدِّدُ حَاجَاتِنَا اليَوْمِيَّةَ مِنْ مُخْتَلَفِ الأَطْعِمَةِ ( أَطْعِمَةُ النُّمُوِّ ، أَطْعِمَةُ الطَّاقَةِ وَأَطْعِمَةُ الوِقَايَةِ) لِيَبْقَى جِسْمُنَا بِصِحَّةٍ جَيِّدَةٍ، وَهُوَ يَنْصَحُ بِأَنْ تَحْتَوِيَ كُلُّ وَجْبَةِ أَطْعِمَةٍ مُتَنَوِّعَةً تَشْمَلُ جَمِيعَ فِئَاتِ الهَرَمِ الغِذَائِيِّ.",
+      "figureDesc": "Un pyramide alimentaire colorée en haut à droite de la page. Au centre, un schéma en fleur de 6 groupes d'aliments : مجموعة 1 (poisson, viande, volaille, œufs), مجموعة 2 (fromage, lait et produits laitiers), مجموعة 3 (matières grasses : beurre, huile, etc.), مجموعة 4 (céréales, pain, féculents), مجموعة 5 (fruits et légumes), مجموعة 6 au centre (eau et boissons).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p018_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : حَدِّدْ إِلَى أَيَّةِ فِئَةٍ مِنْ فِئَاتِ الأَطْعِمَةِ تَنْتَمِي كُلٌّ مِنَ المَجْمُوعَاتِ السِّتِّ.",
+      "body": "",
+      "figureDesc": "Schéma en fleur des 6 groupes d'aliments.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p018_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : يَجِبُ أَنْ تُقَلِّلَ مِنْ أَكْلِ الحَلْوِيَّاتِ . مَا هِيَ الأَطْعِمَةُ البَدِيلَةُ لَهَا ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p018_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : بِكُلِّ مَجْمُوعَةٍ عُنْصُرٌ دَخِيلٌ، ضَعْهُ فِي إِطَارٍ :",
+      "body": "- {لحوم ، أسماك ، حمص ، عدس ، فول أخضر}.\n- {حبوب ، خبز ، دقيق ، جبن ، بطاطا ، سميد}.\n- {خس ، بسباس ، قنارية ، طماطم ، فلفل ، كسكس}.\n- {كبد ، ليمون ، مندرين ، تفاح ، إجاص ، برتقال}.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p018_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.5
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des groupes d'aliments (aliments de croissance, d'énergie et de protection) et de l'équilibre alimentaire, ce qui correspond à la nutrition équilibrée de l'unité 3 d'Éveil Scientifique, même si le texte est rédigé en arabe.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Les groupes d'aliments",
+    "skill": "Classer les aliments selon leur rôle (croissance, énergie, protection) et repérer l'intrus dans un groupe alimentaire.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "alimentation",
+      "groupes d'aliments",
+      "aliments de croissance",
+      "aliments d'énergie",
+      "aliments de protection",
+      "équilibre alimentaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : classer des aliments dans trois catégories fonctionnelles à partir d'un document, proposer des aliments de remplacement aux sucreries, et repérer l'intrus dans des listes d'aliments, avec le point de vue d'un diététicien comme contexte.",
+    "themeGroup": "Les groupes d'aliments et l'alimentation équilibrée"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«أَخِصَّائِيُّ» : l'image montre «أَخْصَائِيُّ» (avec sukun sur le خ, sans kasra)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«يُعَرِّفُ» : l'image montre «يُعَرِّفُ» avec une vocalisation un peu différente (يُعَرِّفُ / يُعْرِفُ). Vocalisation à vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«وَجْبَةِ» : l'image montre «وَجْبَةٍ» (tanwin kasra), suivi de «أَطْعِمَةٌ مُتَنَوِّعَةٌ» (nominatif). La transcription a «أَطْعِمَةٍ مُتَنَوِّعَةً», ce qui est faux."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«أَطْعِمَةُ الوِقَايَةِ» : voyelles à vérifier ; l'image montre «الوِقَايَةِ» comme transcrit, mais «أَطْعِمَةُ النُّمُوِّ» est correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de la page «التَّغْذِيَةُ : المَجْمُوعَاتُ الغِذَائِيَّةُ» et le numéro de page 50 ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes du schéma (مجموعة 1 à 6) ne sont pas transcrites."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le champ «السَّنَد» est dupliqué en en-tête, et la transcription met la numérotation [1] sur التعليمة 1 et [2], [3] sur les suivantes, ce qui est incohérent. L'image ne montre qu'un seul badge «1», placé près du support."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans la liste de la التعليمة 3, les mots n'ont pas de voyelles, ce qui correspond à l'image. Ce point est conforme."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

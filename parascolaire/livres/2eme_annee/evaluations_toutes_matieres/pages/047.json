@@ -1,0 +1,193 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 47,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إصلاح الأخطاء والتعليل والربط (سند: سقوط محمد أثناء السباق) وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : أُرَتِّبُ الْمُتَسَابِقِينَ مِنْ 1 إِلَى 7 .",
+      "body": "كَرِيمٌ ○ / سَلِيمٌ ○ / وَلِيدٌ ○ / مُحَمَّدٌ ○ / سِوَارٌ ○ / مَرْيَمٌ ○ / أَنْوَرُ ○",
+      "figureDesc": "سبع دوائر فارغة بجانب أسماء المتسابقين؛ على اليمين خانات لمعيار التصحيح (مع ب) وعلى اليسار الأعداد 0.5 لكل مرتبة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p047_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : أُصْلِحُ الْأَخْطَاءَ الْوَارِدَةَ فِي تَرْتِيبِ الْأَحْدَاثِ التَّالِيَةِ.",
+      "body": "① تَنَاوُلُ فَطُورِ الصَّبَاحِ / ④ غَسْلُ الْوَجْهِ\n② الذَّهَابُ إِلَى الْمَدْرَسَةِ / ③ النُّهُوضُ مِنَ النَّوْمِ\nأُصْلِحُ : ○ تَنَاوُلُ فَطُورِ الصَّبَاحِ / ○ غَسْلُ الْوَجْهِ\n○ الذَّهَابُ إِلَى الْمَدْرَسَةِ / ○ النُّهُوضُ مِنَ النَّوْمِ",
+      "figureDesc": "دوائر فارغة لكتابة الترتيب الصحيح؛ خانات التنقيط (معيار 3 / مع ب) بقيمة 0.5 لكل إصلاح",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p047_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 3",
+      "instruction": "السَّنَدُ 3",
+      "body": "أَثْنَاءَ السِّبَاقِ سَقَطَ مُحَمَّدٌ عَلَى الْأَرْضِ فَأُصِيبَ بِجُرُوحٍ فِي سَاقِهِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p047_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : أَرْبُطُ بِسَهْمٍ الْإِفَادَةَ بِالتَّعْلِيلِ الصَّحِيحِ.",
+      "body": "أُصِيبَ مُحَمَّدٌ بِجُرُوحٍ بِسَبَبِ •\n• التَّدَافُعِ مَعَ الْأَصْدِقَاءِ.\n• اِحْتِرَامِ قَانُونِ اللُّعْبَةِ.\n• صَلَابَةِ أَرْضِيَّةِ الْمَلْعَبِ.",
+      "figureDesc": "ثلاث نقاط للربط بأسهم؛ التنقيط 1 لكل ربط (معيار 2 ب)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p047_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "التَّعْلِيمَةُ 7 : أُصْلِحُ الْخَطَأَ الْوَارِدَ فِي الْإِفَادَةِ التَّالِيَةِ :",
+      "body": "لِأَتَجَنَّبَ حَوَادِثَ الْمُرُورِ أَعْبُرُ الطَّرِيقَ بِسُرْعَةٍ فَائِقَةٍ.\nأُصْلِحُ : لِأَتَجَنَّبَ حَوَادِثَ الْمُرُورِ ..............................................",
+      "figureDesc": "سطر منقط للإجابة؛ التنقيط 1 (معيار 3)",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p047_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "التَّعْلِيمَةُ 8 : أَرْبُطُ بِسَهْمٍ.",
+      "body": "مِفْصَلُ الْقَدَمِ •\nمِفْصَلُ الْمِرْفَقِ •\nمِفْصَلُ الْمِعْصَمِ •\n• الْأَطْرَافُ السُّفْلِيَّةُ\n• الْأَطْرَافُ الْعُلْوِيَّةُ",
+      "figureDesc": "ربط بسهم بين ثلاثة مفاصل وصنفين من الأطراف؛ 1 لكل ربط (معيار 1 ج)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p047_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مستويات التملك / المعايير: معايير الحد الأدنى (مع 1أ، مع 1ب، مع 1ج، مع 2أ، مع 2ب) ومعيار التميز (مع 3).\nانْعِدَامُ التَّمَلُّكِ: 0 لكل معايير الحد الأدنى.\nالتَّمَلُّكُ دُونَ الْأَدْنَى: مع 1أ: 0.5 - 1 - 1.5؛ مع 1ب: 0.5 - 1 - 1.5؛ مع 1ج: 1؛ مع 2أ: 1؛ مع 2ب: 1.\nالتَّمَلُّكُ الْأَدْنَى: 2 لكل المعايير.\nالتَّمَلُّكُ الْأَقْصَى: مع 1أ: 2.5 - 3؛ البقية: 3.\nمعيار التميز (مع 3): 0.5-1 / 1.5-2 / 2.5-3 / 3.5-4 / 4.5 / 5.",
+      "figureDesc": "جدول إسناد الأعداد حسب مستويات التملك والمعايير",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p047_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p4",
+    "confidence": 0.24
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation (consignes 4 à 8 et grille de notation par critères MAR 1a-3) portant sur l'ordre des événements, la causalité, la correction d'erreurs et les parties du corps (articulations), donc un bilan couvrant plusieurs thèmes sans unité précise (le thème sécurité/santé reste ambigu).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Corps humain et prévention des accidents",
+    "skill": "Ordonner des événements, relier une conséquence à sa cause et associer les articulations aux membres du corps.",
+    "pageType": "mixed",
+    "formats": [
+      "appariement",
+      "autre",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "ordre chronologique",
+      "cause et conséquence",
+      "articulations",
+      "accident",
+      "prévention",
+      "barème d'évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : situation-support d'une chute pendant une course, avec consignes d'ordonnancement, de correction d'erreurs, de reliage cause-effet et d'association articulations-membres, ainsi qu'une grille d'attribution de notes par critères de maîtrise.",
+    "themeGroup": "Prévention des accidents et sécurité"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Instruction 4 : 'أُرَتِّبُ' dans la transcription, l'image porte 'أُرَتِّبُ' ; le mot 'الْمُتَسَابِقِينَ' est écrit 'الْمُتَسَابِقِينَ' dans l'image (voyelles à vérifier)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Instruction 6 : 'أَرْبُطُ' dans la transcription, l'image porte 'أَرْبُطُ'. Ce point est identique, aucune correction nécessaire."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les barèmes de la colonne de gauche (0.5 ×6, 0.5 ×4, 1 ×3, 1, 1 ×3) ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les cases de critères de la colonne de droite (معـ ا ب, معـ 3, معـ 2ب, معـ 3, معـ 1ج) et leurs cases ne sont pas transcrits."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Tableau : 'مع 1ج' en 'التملك دون الأدنى' est 1 (correct), mais 'مع 1أ' et 'مع 1ب' sont inversés : l'image donne 0.5-1-1.5 pour les deux (correct) ; en revanche 'التملك الأقصى' : 'مع 1أ' vaut 2.5-3, les autres valent 3 (correct). Les en-têtes 'مع 2أ' et 'مع 2ب' sont correctement transcrits, mais l'ordre des colonnes diffère de celui de l'image (مع 1أ à droite)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Critère de distinction : dans l'image les plages sont 0.5-1, 1.5-2, 2.5-3, 3.5-4, 4.5, 5 (correct)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Instruction 6 : l'image porte 'اِحْتِرَامِ' (correct) ; 'مِفْصَلُ الْمِرْفَقِ' dans l'image est 'الْمِرْفَقِ' (correct). Le mot 'الْمِعْصَمِ' est écrit 'الْمِعْصَمِ' (correct)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le préfixe '[السند 3] السَّنَدُ 3 ||' est une étiquette redondante. L'image porte 'السَّنَدُ 3 :' avec deux-points."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

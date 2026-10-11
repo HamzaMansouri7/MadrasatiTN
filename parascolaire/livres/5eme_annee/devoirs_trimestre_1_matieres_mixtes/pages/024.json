@@ -1,0 +1,91 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 24,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "ملخص بياني: الفعل (الثلاثي والرباعي، المجرد والمزيد) – الفعل الصحيح والفعل المعتل. Remarque : la page porte sur la grammaire arabe, pas sur les mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ملخص بياني",
+      "body": "الفِعْلُ ← الثُّلاثيُّ، الرُّباعِيُّ. الثُّلاثيُّ ← المجرَّدُ، المزيدُ. الرُّباعِيُّ ← المجرَّدُ، المزِيدُ. الثلاثي المجرد: فَعَلَ (فَتَحَ)، فَعِلَ (سَمِعَ)، فَعُلَ (حَسُنَ). الثلاثي المزيد بحرف: أَفْعَلَ (أَنْزَلَ)، فَاعَلَ (سَاعَدَ)، فَعَّلَ (كَرَّمَ). الثلاثي المزيد بحرفين: انْفَعَلَ (انْكَسَرَ)، افْتَعَلَ (اجْتَمَعَ)، افْعَلَّ (اسْوَدَّ)، تَفَعَّلَ (تَعَلَّمَ)، تَفَاعَلَ (تَبَاعَدَ). الثلاثي المزيد بـ٣ أحرف: اسْتَفْعَلَ (اسْتَخْرَجَ)، افْعَوْعَلَ (اعْشَوْشَبَ). الرباعي المجرد: فَعْلَلَ (دَحْرَجَ). الرباعي المزيد بحرف: تَفَعْلَلَ (تَدَحْرَجَ). الرباعي المزيد بحرفين: افْعَلَلَّ (اقْشَعَرَّ)، افْعَنْلَلَ (افْرَنْقَعَ).",
+      "figureDesc": "Organigramme rose : الفعل en haut (hexagone), divisé en الثلاثي et الرباعي, puis المجرد et المزيد, puis des cases d'exemples (بحرف، بحرفين، بـ٣ أحرف) avec schémas verbaux et exemples.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p024_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الفِعْلُ الصَّحيحُ",
+      "body": "هو كُلُّ فِعْلٍ ماضٍ ليس بين أَحرُفِهِ الأصليَّةِ حرفُ عِلَّةٍ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p024_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "والفِعْلُ المُعْتَلُّ",
+      "body": "هو كُلُّ فِعْلٍ ماضٍ بين أحرُفِهِ الأَصليَّةِ حرفُ عِلَّةٍ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p024_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u1",
+    "confidence": 0.36
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un résumé de grammaire arabe (verbe trilitère/quadrilitère, nu/augmenté, sain/défectif), mais les 8 unités officielles d'arabe portent sur les types de textes (narratif, descriptif, explicatif, injonctif) et aucune ne correspond clairement à ce contenu grammatical.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Le verbe arabe : types et nature",
+    "skill": "Distinguer les verbes trilitères et quadrilitères, nus ou augmentés, ainsi que les verbes sains et les verbes défectueux.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "verbe arabe",
+      "trilitère",
+      "quadrilitère",
+      "verbe nu et augmenté",
+      "verbe sain",
+      "verbe défectueux"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le schéma hiérarchique de classification des verbes avec un exemple par schème peut être réutilisé en exercice de tri, d'appariement verbe-schème ou d'infographie à compléter ; la définition du verbe sain et du verbe défectueux se prête à un classement de verbes selon leurs lettres de base.",
+    "themeGroup": "Types et nature du verbe"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

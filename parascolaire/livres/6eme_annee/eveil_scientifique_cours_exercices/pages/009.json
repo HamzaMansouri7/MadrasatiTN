@@ -1,0 +1,102 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 9,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الهواء ومكوّناته (الأكسجين، الغازات المكوّنة للهواء والاحتراق)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "اُكْتُبْ فِي الْمُسْتَطِيلِ اِسْمَ الْغَازِ الْمُنَاسِبِ.",
+      "body": "غَازٌ يُعَكِّرُ مَاءَ الجِيرِ وَضَرُورِيٌّ لِلنَّبَاتِ.\nغَازٌ يُمَثِّلُ 4/5 الهَوَاءِ.\nغَازٌ ضَرُورِيٌّ لِلْإِنْسَانِ وَالحَيَوَانِ.",
+      "figureDesc": "Trois rectangles vides, un en face de chaque énoncé, pour écrire le nom du gaz.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p009_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "ضَعْ وَسَطَ كُلِّ مُسْتَطِيلٍ إِحْدَى الكَلِمَتَيْنِ : الهَوَاءُ ـ الأُكْسِجِينُ",
+      "body": "يَزِنُ اللِّتْرُ مِنْهُ 1,43 غ.\nيَزِنُ اللِّتْرُ مِنْهُ 1,3 غ.\nيُذْكِي نَارًا أَوْشَكَتْ أَنْ تَنْطَفِئَ.\nضَرُورِيٌّ لِلِاحْتِرَاقِ.\n\nجدول: المكوّنات الأساسية للهواء\nالمكوّنات | النسبة الحجمية | النسبة الكتلية | ملاحظات\nالنتروجين | 78,09 | 75,51 | ثابت\nالأكسجين | 20,95 | 23,15 | ثابت\nالأرغون | 0,93 | 1,28 | ثابت\nثاني أكسيد الكربون | 0,03 | 0,04 | غير ثابت",
+      "figureDesc": "Quatre rectangles vides à côté des énoncés, et un tableau des composants principaux de l'air (azote, oxygène, argon, dioxyde de carbone) avec pourcentage en volume, pourcentage en masse et remarques.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p009_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "اُتْرُكْ قِطْعَةً مِنَ الحَدِيدِ لِمُدَّةِ أُسْبُوعٍ فِي الهَوَاءِ. مَاذَا تُلَاحِظُ عَلَى سَطْحِهَا ؟",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p009_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "لِمَ يَسْتَعْمِلُ الغَوَّاصُونَ وَمُتَسَلِّقُو الجِبَالِ وَرُوَّادُ الفَضَاءِ الأُسْطُوَانَاتِ المُعَبَّأَةَ بِالأُكْسِجِينِ ؟",
+      "body": "",
+      "figureDesc": "Dessin d'un plongeur sous l'eau portant une bouteille d'oxygène rouge sur le dos, avec une flèche et une légende illisible; trois lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p009_i4",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.55
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page porte sur la composition de l'air (azote, oxygène, argon, CO2), le rôle de l'oxygène dans la combustion, l'oxydation du fer et l'usage de l'oxygène en bouteilles, ce qui correspond à l'Unité 2 : L'air, la respiration et la combustion.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "L'air et ses composants",
+    "skill": "Identifier les gaz de l'air (oxygène, dioxyde de carbone, azote), leurs propriétés et leur rôle dans la combustion et la respiration.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "appariement",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "air",
+      "oxygène",
+      "dioxyde de carbone",
+      "combustion",
+      "composition de l'air",
+      "rouille"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Exercices d'identification d'un gaz à partir de ses propriétés (devinettes à placer dans des rectangles), un tableau de composition de l'air, une expérience simple d'observation (fer exposé à l'air) et une question sur l'usage de bouteilles d'oxygène par les plongeurs, alpinistes et astronautes.",
+    "themeGroup": "Composition de l'air"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

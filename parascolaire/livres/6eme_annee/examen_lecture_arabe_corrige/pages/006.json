@@ -1,0 +1,144 @@
+{
+  "book": "examen_lecture_arabe_corrige",
+  "page": 6,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Examen de lecture en arabe (compréhension de l'écrit) : le texte sur Salem et la remise en culture de la terre. Exercices م ع2 (أ) ordonner les événements, م ع3 résumer le texte, م ع4 donner son avis, et barème de notation.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "م ع2 أ",
+      "instruction": "أرتِّبُ الأحْداثَ :",
+      "body": "جَفافُ الأرْضِ وَتَعَثُّرِ الْمَشْرُوعِ\nإنْهاءُ الدِّراسَةِ الْجامِعِيَّةِ والتَّخَرُّجُ .\nنَجاحُ سالِمٍ فِي إحْيَاءِ الأَرْضِ .\nالاقْتِراضُ مِنَ البَنْكِ لِحَفْرِ بِئْرٍ والتَّحلِّي بالصَّبْرِ والثِّقَةِ بالنَّفْسِ\nالتَّخْطِيطُ والتَّنْفِيذُ لِخِدْمَةِ الأرْضِ .",
+      "figureDesc": "Cinq phrases, chacune avec une case de numérotation ; les numéros du corrigé sont écrits en rouge dans les cases.",
+      "answer": "جفاف الأرض وتعثر المشروع: 3 ؛ إنهاء الدراسة الجامعية والتخرج: 1 ؛ نجاح سالم في إحياء الأرض: 5 ؛ الاقتراض من البنك لحفر بئر والتحلي بالصبر والثقة بالنفس: 4 ؛ التخطيط والتنفيذ لخدمة الأرض: 2",
+      "confidence": 0.9,
+      "id": "examen_lecture_arabe_corrige_p006_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "م ع3",
+      "instruction": "أُلَخِّصُ النَّصَّ باعتماد الأحداث السّابقة :",
+      "body": "",
+      "figureDesc": "Une grande case de notation à droite du résumé.",
+      "answer": "أنهى سالم دراسته الجامعيّة ،وتخرّج، وعاد إلى قريته وهو عاقدُ العَزْمَ على تعمير الأرضِ وإحيائها .فخطّط وبدأ بالتّنفيذِ .بيد أنّ السّماءَ شحّتْ وأصابَ الأرضَ جفاف .فاقترضَ من البنك وشرع في حفْرِ بئر لكنّ الماء كان بعيد المنال .ولم يجدْ سالم بُدًّا من مواصلة مشروعه ولم يهنأ له بالٌ ، حتّى تحقّق حلمه .",
+      "confidence": 0.9,
+      "id": "examen_lecture_arabe_corrige_p006_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "م ع4",
+      "instruction": "سالمٌ رغم العراقِيلِ لَمْ يَسْتَسْلِمِ وأَصرَّ عَلى تَحْقِيقِ حُلْمِهِ . ما رأيكَ فِي ذلكَ ؟ عَلِّلْ إجابَتَكَ :",
+      "body": "",
+      "figureDesc": "Case de notation à droite de la réponse.",
+      "answer": "ما قام به سالم يدعو للثّناءِ والإعجابِ وهو مثال للاقتداء به.\nلأنّ الإصرار أساس النّجاح خاصّة عندما يكون محفوفا بالصّعوبات والعراقيل . فعدم الاستسلام والأمل هما السّلاح لخوض أيّ تحدّ.فبقدرالجدّ تُكْتَسَبُ المعالي ومن طلبَ العلا سهرَ اللّيالي .وقد صدق أبو القاسم الشّابّي حين قال:\"إذا ما طمحت إلى غاية ركبتُ المنى ونسيت الحذر / يا قلبُ لا تقنع بشوك اليأسِ بين الزّهورِ فوراء أوجاعِ الْحياةِ عذوبة الأمل الجسورِ .",
+      "confidence": 0.88,
+      "id": "examen_lecture_arabe_corrige_p006_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول إسناد الأعداد",
+      "body": "مستوى التمكّن : --- / --+ / -++ / +++\nم ع1 : 0 / 1-2 / 3 / 4-4.5\nم ع2أ : 0.5-1-1.5 / 2-2.5 / 3 / 3.5-4-4.5\nم ع2ب : 0 / 0.5 / 1 / 1.5\nم ع2ج : 0 / 0.5 / 1 / 1.5\nم ع3 : 0 / 1 / 2 / 3\nالمجموع : 10 (مستوى -++) / 15 (مستوى +++)\nم ع4 : 0 / 2 / 3 / 5\nالمجموع : 20",
+      "figureDesc": "Tableau de barème de notation par niveau de maîtrise (---, +--, -++, +++) pour م ع1 à م ع4, avec totaux 10, 15 et 20.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examen_lecture_arabe_corrige_p006_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m7",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.24
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un examen de lecture en arabe (ordonner les événements, résumer, donner son avis, barème) sur un texte narratif, qui évalue des compétences générales de compréhension et ne correspond clairement à aucune unité précise, d'où topicId null.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de l'écrit : récit de réussite",
+    "skill": "Comprendre un texte narratif en arabe : ordonner les événements, le résumer à partir de ceux-ci et donner un avis argumenté.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "ordonner les événements",
+      "résumé",
+      "avis argumenté",
+      "barème de notation",
+      "persévérance"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable : ordonner les étapes d'un récit, résumer à partir de ces étapes, puis justifier son opinion sur la persévérance du héros ; le barème par niveaux de maîtrise (--- à +++) sert aussi de modèle d'évaluation.",
+    "themeGroup": "Compréhension de l'écrit"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Tableau, ligne م ع1 : l'image donne 0 / 2/1 / 3 / 4.5/4, ce qui est cohérent avec la transcription, mais la ligne م ع2أ de niveau '---' est '1.5/1/0.5' (3 valeurs), pas 0 ; la transcription 0.5-1-1.5 est correcte. Pas d'erreur ici ; à vérifier : ligne م ع2ب/م ع2ج, valeurs 0/0.5/1/1.5 correctes."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'عاقدُ العَزْمَ' : l'image montre 'عاقدُ العَزْمِ' (ou sans voyelle) ; la transcription met un fatha erroné sur le mim."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'المحموع' dans l'en-tête du tableau (faute de l'original) transcrit en 'المجموع' ; le total intermédiaire est écrit 'المحموع' dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de colonnes du tableau (ordre, م ع4 et المجموع) sont restructurés ; le total final 20 et le 10/15 sont attribués de façon approximative, la ligne '-++' (10) et '+++' (15) sont dans la colonne المحموع, correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Plusieurs mots de la consigne م ع4 ('لَمْ يَسْتَسْلِمِ', 'العراقِيلِ') : voyelles partiellement ajoutées/modifiées par rapport à l'image ('العراقيل' sans voyelles dans l'image, 'يَسْتَسْلِمِ' avec un tashkeel différent)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'الثِّقَةِ' dans la transcription alors que l'image montre 'الثَّقَةِ' ; aussi 'التَّحلِّي' vs 'والتّحلّي' (و manquant avant التحلي)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "self_contained",
+  "examScope": "unknown",
+  "bookTitle": "Examen de lecture 6ème année — Arabe (corrigé)"
+}

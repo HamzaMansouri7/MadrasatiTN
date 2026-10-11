@@ -1,0 +1,353 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 40,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 21: أرسم الزوايا وأقيسها (matière réelle : mathématiques, tracé et mesure des angles)",
+  "items": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "الدَّرْسُ 21 : اُرْسُمِ الزَّوَايَا وَأَقِيسُهَا",
+      "body": "السنة 5 — صفحة 41",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p040_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اِبْحَثْ عَنْ أَقْيِسَةِ الزَّوَايَا التَّالِيَةِ مُسْتَعْمِلاً الْمِنْقَلَةَ :",
+      "body": "",
+      "figureDesc": "Cinq angles, chacun marqué d'un petit arc. De gauche à droite : (1) un angle obtus de sommet en bas à gauche, avec un côté horizontal vers la droite et l'autre oblique vers le haut à gauche ; (2) un angle d'environ 90° de sommet en haut à gauche, ouvert vers le bas à droite ; (3) un angle aigu en V de sommet en bas ; (4) un angle aigu très étroit de sommet en haut ; (5) un grand angle de sommet à gauche, ouvert vers la droite, dont l'arc est à droite du sommet.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p040_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اُرْسُمِ الْمُسْتَقِيمَ (ط) عَمُودِيًّا عَلَى (و س) فِي \"و\"",
+      "body": "* مَاهُوَ قِيسُ [ و ط ، و ع ] ؟ ..............................",
+      "figureDesc": "Angle de sommet و (en bas à gauche) : la demi-droite [وس] est horizontale vers la droite (point س) et la demi-droite [وع] est oblique vers le haut à gauche (point ع). Un arc marque l'angle obtus.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p040_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اُرْسُمْ (ع) الْمُوَسِّطَ الْعَمُودِيَّ لِـ [أ ب] فَيَقْطَعُهَا فِي \"و\".",
+      "body": "اُرْسُمِ الزَّاوِيَةَ [ و ع ، و هـــ ] قِيسُ فَتْحَتِهَا 45°\nمَاهُوَ قِيسُ فَتْحَةِ الزَّاوِيَةِ [ و هـــ ، و ب ] وَفَتْحَةُ الزَّاوِيَةِ [ و أ ، و هـــ ] (deux lignes de pointillés pour répondre)",
+      "figureDesc": "Segment horizontal [أ ب] avec le point و en son milieu ; أ est à droite et ب à gauche.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p040_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اُرْسُمْ مُرَبَّعًا قِيسُ ضِلْعِهِ 3 صم ثُمَّ ارْسُمْ قُطْرَيْهِ.",
+      "body": "* اِحْسُبْ قِيسَ جَمِيعِ الزَّوَايَا الَّتِي يُحَدِّدُهَا الرَّسْمُ. (deux lignes de pointillés pour répondre)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p040_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اُرْسُمِ الزَّوَايَا التَّالِيَةَ مُتَجَاوِرَةً :",
+      "body": "أ وْ ع = 60°\nع وْ س = 50°\nس وْ ق = 30°\nق وْ ب = 40°\n* مَاذَا تُلاحِظُ ؟ (pointillés pour répondre)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_evaluations_p040_i6"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.44
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite du tracé et de la mesure des angles au rapporteur (perpendiculaires, médiatrice, carré et ses diagonales), mais aucun chapitre officiel de 5ème Année n'est dédié aux angles ; la période 3 (polygones, parallélogramme) est la plus proche sans correspondre clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Tracé et mesure des angles",
+    "skill": "Mesurer des angles avec le rapporteur, tracer des angles de mesure donnée et calculer des mesures d'angles dans une figure.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "angles",
+      "rapporteur",
+      "médiatrice",
+      "carré",
+      "angles adjacents",
+      "perpendiculaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série progressive d'exercices de géométrie : mesurer au rapporteur, construire une perpendiculaire ou une médiatrice puis déduire des angles, calculer les angles d'un carré et de ses diagonales, tracer des angles adjacents dont la somme donne un angle plat (observation à formuler).",
+    "themeGroup": "Angles, cercle et triangles"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1: 'الْمِنْقَلَةَ' ; l'image montre 'الْمِنْقَلَةَ' avec vocalisation proche, mais l'image semble 'المُنقَلَة' (vocalisation à vérifier)"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3: 'الْمَوْسِطَ' est faux; l'image porte 'الْمُوَسِّطَ' ou 'الْمُوَسَّط' (المُوَسِّط العمودي), pas 'الْمَوْسِطَ'"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: 'قِيسُ' vs image 'قِيسُ' ok, mais 'مَاهُوَ' correspond à 'مَاهُوَ' ; 'الْمُسْتَقِيمَ' transcrit alors que l'image a 'اُرْسُمِ الْمُسْتَقِيمَ' avec vocalisation 'الْمُسْتَقِيمَ' ok; 'عَمُودِيًّا' ok"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre de la leçon non transcrit: 'الدَّرْسُ 21 : اُرْسُمِ الزَّوَايَا وَأَقِيسُهَا'"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Numéro de page 41 et niveau 5 (السنة) non transcrits"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Figures (angles de l'exercice 1, angle عوس de l'exercice 2, segment [أب] avec و de l'exercice 3) non décrites"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3: 'فَيَقْطَعُهَا' dans l'image est 'فَيَقْطَعُهَا' ok; 'قِيسُ فَتْحَتِهَا' ok; 'و هـ' avec tiret allongé (و هـــ) dans l'image"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4: 'ضِلْعِهِ' dans l'image 'ضِلْعِهِ' ok; 'قُطْرَيْهِ' dans l'image 'قُطْرَيْهِ' ok; vocalisation de 'الزَّوَايَا' vs 'الزَّوَايَا' ok"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 5: 'مَاذَا نُلاحِظُ' dans l'image 'مَاذَا نُلاحِظُ' ; ok mais 'مُتَجَاوِرَةً' est écrit 'مُتَجَاوِرَةً' ok"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.86,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "word",
+        "severity": "major",
+        "detail": "Exercice 3 : 'الْمَوْسِطَ' est faux. L'image porte 'الْمُوَسِّطَ' (المُوَسِّط العمودي), à corriger."
+      },
+      {
+        "type": "word",
+        "severity": "minor",
+        "detail": "Exercice 5 : 'مَاذَا نُلاحِظُ' est transcrit avec un نون. L'image semble porter 'مَاذَا تُلاحِظُ' (تاء, deux points au-dessus). Lecture peu nette dans le scan, à garder avec réserve."
+      },
+      {
+        "type": "missing",
+        "severity": "major",
+        "detail": "Le titre de la leçon n'est pas transcrit : 'الدَّرْسُ 21 : اُرْسُمِ الزَّوَايَا وَأَقِيسُهَا'."
+      },
+      {
+        "type": "missing",
+        "severity": "minor",
+        "detail": "Le numéro de page 41 et le niveau (السنة 5) ne sont pas transcrits."
+      },
+      {
+        "type": "figure",
+        "severity": "minor",
+        "detail": "Exercice 1 : la description des cinq angles est inexacte. De gauche à droite : un angle obtus de sommet en bas à gauche, un angle d'environ 90° de sommet en haut à gauche, un angle aigu en V de sommet en bas, un angle aigu très étroit de sommet en haut, et un grand angle de sommet à gauche, arc à droite. Dans l'exercice 2, la lettre ع (en haut à gauche) et les lettres و et س ne sont pas mentionnées."
+      },
+      {
+        "type": "typography",
+        "severity": "minor",
+        "detail": "Exercice 3 : dans l'image, 'هـ' est écrit avec un tatwil allongé ('هــ'). La transcription l'écrit sans tatwil."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "الدَّرْسُ 21 : اُرْسُمِ الزَّوَايَا وَأَقِيسُهَا",
+      "body": "السنة 5 — صفحة 41",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p040_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اِبْحَثْ عَنْ أَقْيِسَةِ الزَّوَايَا التَّالِيَةِ مُسْتَعْمِلاً الْمِنْقَلَةَ :",
+      "body": "",
+      "figureDesc": "Cinq angles, chacun marqué d'un petit arc. De gauche à droite : (1) un angle obtus de sommet en bas à gauche, avec un côté horizontal vers la droite et l'autre oblique vers le haut à gauche ; (2) un angle d'environ 90° de sommet en haut à gauche, ouvert vers le bas à droite ; (3) un angle aigu en V de sommet en bas ; (4) un angle aigu très étroit de sommet en haut ; (5) un grand angle de sommet à gauche, ouvert vers la droite, dont l'arc est à droite du sommet.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p040_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اُرْسُمِ الْمُسْتَقِيمَ (ط) عَمُودِيًّا عَلَى (و س) فِي \"و\"",
+      "body": "* مَاهُوَ قِيسُ [ و ط ، و ع ] ؟ ..............................",
+      "figureDesc": "Angle de sommet و (en bas à gauche) : la demi-droite [وس] est horizontale vers la droite (point س) et la demi-droite [وع] est oblique vers le haut à gauche (point ع). Un arc marque l'angle obtus.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p040_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اُرْسُمْ (ع) الْمُوَسِّطَ الْعَمُودِيَّ لِـ [أ ب] فَيَقْطَعُهَا فِي \"و\".",
+      "body": "اُرْسُمِ الزَّاوِيَةَ [ و ع ، و هـــ ] قِيسُ فَتْحَتِهَا 45°\nمَاهُوَ قِيسُ فَتْحَةِ الزَّاوِيَةِ [ و هـــ ، و ب ] وَفَتْحَةُ الزَّاوِيَةِ [ و أ ، و هـــ ] (deux lignes de pointillés pour répondre)",
+      "figureDesc": "Segment horizontal [أ ب] avec le point و en son milieu ; أ est à droite et ب à gauche.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p040_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اُرْسُمْ مُرَبَّعًا قِيسُ ضِلْعِهِ 3 صم ثُمَّ ارْسُمْ قُطْرَيْهِ.",
+      "body": "* اِحْسُبْ قِيسَ جَمِيعِ الزَّوَايَا الَّتِي يُحَدِّدُهَا الرَّسْمُ. (deux lignes de pointillés pour répondre)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p040_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اُرْسُمِ الزَّوَايَا التَّالِيَةَ مُتَجَاوِرَةً :",
+      "body": "أ وْ ع = 60°\nع وْ س = 50°\nس وْ ق = 30°\nق وْ ب = 40°\n* مَاذَا تُلاحِظُ ؟ (pointillés pour répondre)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "al_ahram_5eme_complet_p040_i6"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اِبْحَثْ عَنْ أَقْيِسَةِ الزَّوَايَا التَّالِيَةِ مُسْتَعْمِلاً الْمِنْقَلَةَ :",
+      "body": "",
+      "figureDesc": "Cinq angles dessinés, chacun marqué d'un petit arc : un angle obtus ouvert vers la droite, un angle obtus ouvert vers le bas, un angle aigu en forme de V, un angle aigu très étroit, et un angle à ouverture à gauche près d'un sommet.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p040_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اُرْسُمِ الْمُسْتَقِيمَ (ط) عَمُودِيًّا عَلَى (و س) فِي \"و\"",
+      "body": "* مَاهُوَ قِيسُ [ و ط ، و ع ] ؟ ..............................",
+      "figureDesc": "Angle de sommet و, avec la demi-droite [وس] horizontale vers la droite et la demi-droite [وع] oblique vers le haut à gauche ; un arc marque l'angle obtus.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p040_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اُرْسُمْ (ع) الْمَوْسِطَ الْعَمُودِيَّ لِـ [أ ب] فَيَقْطَعُهَا فِي \"و\".",
+      "body": "اُرْسُمِ الزَّاوِيَةَ [ و ع ، و هـ ] قِيسُ فَتْحَتِهَا 45°\nمَاهُوَ قِيسُ فَتْحَةِ الزَّاوِيَةِ [ و هـ ، و ب ] وَفَتْحَةُ الزَّاوِيَةِ [ و أ ، و هـ ] (deux lignes de pointillés pour répondre)",
+      "figureDesc": "Segment horizontal [أ ب] avec le point و en son milieu.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p040_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اُرْسُمْ مُرَبَّعًا قِيسُ ضِلْعِهِ 3 صم ثُمَّ ارْسُمْ قُطْرَيْهِ.",
+      "body": "* اِحْسُبْ قِيسَ جَمِيعِ الزَّوَايَا الَّتِي يُحَدِّدُهَا الرَّسْمُ. (deux lignes de pointillés pour répondre)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p040_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اُرْسُمِ الزَّوَايَا التَّالِيَةَ مُتَجَاوِرَةً :",
+      "body": "أ وْ ع = 60°\nع وْ س = 50°\nس وْ ق = 30°\nق وْ ب = 40°\n* مَاذَا نُلاحِظُ ؟ (pointillés pour répondre)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p040_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.86
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

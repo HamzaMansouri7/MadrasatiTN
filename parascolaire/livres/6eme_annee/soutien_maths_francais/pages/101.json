@@ -1,0 +1,162 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 101,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Devoir de français : conjugaison, orthographe et production écrite (le téléphone portable). Note : la page est un sujet d'examen de français et non une page de mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "18",
+      "instruction": "Je conjugue le verbe entre parenthèses au temps demandé :",
+      "body": "Les élèves ........ un exposé. (réaliser) Présent. (1pt)\nNous ........ par des classes contrôlées par des robots. (finir) futur simple. (1pt)\nVous ........ par les journalistes. (attendre) passé composé (1pt)\nJe ........ au nouveau tableau blanc interactif. (s'habituer) Imparfait. (1pt)\n(nous- préserver) ........ notre planète. Impératif. (1pt)\nTu ........ acheter un téléphone portable. (souhaiter) Conditionnel présent. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p101_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "19",
+      "instruction": "J'écris correctement les mots entre parenthèses. (0,25×4=1pt)",
+      "body": "Les enfants sont victimes de (grand) ........ exploitations. La journée (mondial) ........ est (dédié) ........ à ces enfants (forcé) ........ de travailler alors qu'ils devraient être à l'école.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p101_i2",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "20",
+      "instruction": "Je transforme au pluriel les noms entre parenthèses. (0,5×2=1pt)",
+      "body": "(Le journal) ........ parlent de ces (festival) ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p101_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "21",
+      "instruction": "Je complète par « peu » - « peux » - « peut ». (0,25×4=1pt)",
+      "body": "Quand il est en forme il ........ courir à ........ près 10 Km.\nJ'ai ........ d'amis mais je ........ compter sur eux.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p101_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "III.1",
+      "instruction": "Je complète convenablement le texte suivant par les mots ci-après (0,5×4=2pts) :",
+      "body": "[-communiquer- messages -internet- mobile ]\nLe téléphone portable, autrement dit, le téléphone ........ nous permet de ........ facilement avec les autres personnes qui sont loin de nous. Il offre aussi la possibilité de voir des vidéos, envoyer des ........, prendre des photos et même de se connecter à ........ et faire des recherches.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p101_i5",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "III.2",
+      "instruction": "En m'aidant du texte à l'appui, je produis, en sept lignes au moins, un texte qui parle du téléphone portable. (5pts)",
+      "body": "",
+      "figureDesc": "Espace de rédaction avec lignes pointillées (environ 16 lignes).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p101_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.33
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un devoir de synthèse de français qui mêle conjugaison à plusieurs temps (présent, futur, passé composé, imparfait, impératif), orthographe et production écrite sur le téléphone portable, donc plusieurs modules à la fois et aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Devoir de synthèse : conjugaison, orthographe, production écrite",
+    "skill": "Conjuguer à différents temps, accorder les mots, distinguer peu/peux/peut et rédiger un texte sur le téléphone portable.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "conjugaison",
+      "accord des adjectifs",
+      "pluriel des noms",
+      "peu/peux/peut",
+      "téléphone portable",
+      "production écrite"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'examen réutilisable : exercices courts notés (conjugaison à temps variés, accords, homophones, texte à compléter avec banque de mots) suivis d'une production écrite guidée par un texte d'appui sur un thème actuel (téléphone portable, travail des enfants, école du futur).",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres de section sont omis : « C. Conjugaison:(6 points) », « D. Orthographe:(3 points) », « III. Production écrite :(7 points) »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 21 : l'image indique « courir à ........ près 10 Km », transcrit correctement, mais « près » est précédé d'un blanc. La transcription ne signale pas la consigne soulignée « peut ». Pas d'erreur majeure."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice III.1 : dans l'image, le texte est mélangé sur plusieurs lignes (« de ........ facilement … la possibilité de voir des vidéos, envoyer des ........, … de se connecter à »). La transcription remet « de se » dans un ordre différent : « et même de se » devient « et même de se connecter à », ce qui est cohérent, mais l'ordre visuel n'est pas respecté."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La mention « (0,5×4=2pts) » est transcrite « (0,5×4=2pts) » correctement ; en revanche le numéro de page « 3 » est omis."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

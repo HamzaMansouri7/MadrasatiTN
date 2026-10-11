@@ -1,0 +1,88 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 39,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الطّاقَةُ : البُوصِلَةُ (L'énergie : la boussole)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 1 : هَلْ يَتَغَيَّرُ اتِّجَاهُ الإبْرَةِ فِي جَمِيعِ المَرَّاتِ ؟ / التعليمة 2 : مَاهُوَ هَذَا الاتِّجَاهُ ؟",
+      "body": "السَّنَدُ :\nالبُوصِلَةُ هِيَ عُلْبَةٌ مِنَ البلاستيك أسطوانِيَةُ الشَّكْلِ قَلِيلَةُ العُمْقِ وَمُقْفَلَةٌ . نَرَى مِنْ خِلَالِ غِطائِهَا الشَّفَّافِ دَائِرَةً تُحَدَّدُ عَلَيْهَا الاتِّجَاهَاتُ التَّالِيَةُ : الشَّمال ، الجنوب ، الشَّرق ، الغَرب . يُقَابِلُهَا عَادَةً الدَّرَجَاتُ : صفر - 180 - 90 و 270 .\nالتعليمة 1 : هَلْ يَتَغَيَّرُ اتِّجَاهُ الإبْرَةِ فِي جَمِيعِ المَرَّاتِ ؟\nالتعليمة 2 : مَاهُوَ هَذَا الاتِّجَاهُ ؟",
+      "figureDesc": "Photo d'une boussole ouverte avec son couvercle, cadran avec N, S, E, W et aiguille bleue et blanche ; une petite boussole dorée en en-tête de page.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p039_i1",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "كَيْفَ تَتَصَرَّفُ ؟",
+      "body": "قَرَّرْتَ مَعَ رِفَاقِكَ المُشَارَكَةَ فِي مُخَيَّمٍ كَشْفِيٍّ ، يُقَامُ فِي غَابَةِ صَنَوْبَرٍ شَرْقِيَّ عَيْنِ دَرَاهِمَ . بَعْدَ وُصُولِكُمْ إِلَى عَيْنِ دَرَاهِمَ ، طَلَبَ إِلَيْكَ القَائِدُ تَحْدِيدَ الاتِّجَاهِ الصَّحِيحِ لِسَيْرِكُمْ إِلَى غَابَةِ الصَّنَوْبَرِ ، بِوَاسِطَةِ البُوصِلَةِ . كَيْفَ تَتَصَرَّفُ ؟",
+      "figureDesc": "Dessin de trois scouts en uniforme près d'un arbre ; au premier plan un scout de dos regarde une boussole et pointe du doigt une direction.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p039_i2",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "هَلْ نَجَحَ بِرَأْيِكَ فِي تَحْدِيدِ الاتِّجَاهِ المَطْلُوبِ ؟ لِمَاذَا ؟",
+      "body": "خِلَالَ رِحْلَةٍ كَشْفِيَّةٍ شَرَعَ أَحَدُ المُشَارِكِينَ بِالتَّحَقُّقِ مِنْ صِحَّةِ الاتِّجَاهِ الَّذِي يَسْلُكُونَهُ لِلْوُصُولِ إِلَى الهَدَفِ المُحَدَّدِ ، فَوَضَعَ البوصلة قُرْبَ قِطْعَةٍ مِنَ الحَدِيدِ .\nهَلْ نَجَحَ بِرَأْيِكَ فِي تَحْدِيدِ الاتِّجَاهِ المَطْلُوبِ ؟ لِمَاذَا ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p039_i3",
+      "topicId": "sci-6-u5",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u5",
+  "topicTitle": "Unité 5 : Énergie, magnétisme, poids et chute libre",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u5",
+  "topicConfidencePrev": 0.5,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u5",
+    "confidence": 0.95
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page porte sur la boussole, son orientation vers le nord et l'effet d'un morceau de fer sur l'aiguille aimantée, ce qui correspond à l'unité 5 (Énergie, magnétisme, boussole).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La boussole et l'orientation",
+    "skill": "Utiliser une boussole pour déterminer la direction du nord et comprendre l'influence d'un objet en fer sur l'aiguille.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite",
+      "probleme"
+    ],
+    "keywords": [
+      "boussole",
+      "orientation",
+      "aiguille aimantée",
+      "points cardinaux",
+      "fer",
+      "magnétisme"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Des situations concrètes ancrées dans le contexte tunisien (camp scout en forêt de pins près d'Aïn Draham) amènent l'élève à s'orienter avec une boussole, puis à analyser une expérience où un morceau de fer perturbe l'aiguille, ce qui permet d'exercer l'esprit critique.",
+    "themeGroup": "Les aimants et la boussole"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

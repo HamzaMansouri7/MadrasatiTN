@@ -1,0 +1,124 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 22,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "تصريف الناقص الواوي في المضارع المنصوب (conjugaison du verbe défectueux à finale waw au présent de l'accusatif/subjonctif) - مادة اللغة العربية",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة: علامات نصب الفعل المضارع هي",
+      "body": "الفتحة الظاهرة: أنا لن أنام | الفتحة المقدرة: نحن لن نسعى | حذف النون: أنت لن تراجعي | البناء على السكون: أنتن لن تجئن",
+      "figureDesc": "Tableau de 4 colonnes et 2 lignes : signes de l'accusatif du verbe présent (titre en en-tête, exemple en dessous).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p022_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: تصريف الناقص الواوي في المضارع المنصوب (الأفعال: نجا، جثا، كبا)",
+      "body": "المتكلم:\nأنا: لن أنجو | لن أجثو | لن أكبو\nنحن: لن ننجو | لن نجثو | لن نكبو\nالمخاطب:\nأنتَ: لن تنجو | لن تجثو | لن تكبو\nأنتِ: لن تنجي | لن تجثي | لن تكبي\nأنتما: لن تنجوا | لن تجثوا | لن تكبوا\nأنتم: لن تنجوا | لن تجثوا | لن تكبوا\nأنتن: لن تنجين | لن تجثين | لن تكبون\nالغائب:\nهو: لن ينجو | لن يجثو | لن يكبو\nهي: لن تنجو | لن تجثو | لن تكبو\nهما: لن ينجوا | لن يجثوا | لن يكبوا\nهما: لن تنجوا | لن تجثوا | لن تكبوا\nهم: ينجوا | لن يجثوا | لن يكبوا\nهن: لن ينجون | لن يجثون | لن يكبون",
+      "figureDesc": "Tableau de conjugaison : colonnes = verbes (نجا، جثا، كبا), lignes = pronoms (الضمائر) regroupés en المتكلم، المخاطب، الغائب. Le tableau reproduit ici contient des irrégularités du scan : « ينجوا » pour هم sans « لن » ; « لن تكبون » pour أنتن ; « لن تنجي/تجثي/تكبي » pour أنتِ.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p022_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "ينصب الفعل الناقص الواوي في المضارع بالفتحة مع الضمائر: أنا ، نحن، أنت ، هو ، هي\nينصب الفعل المضارع مع ضمائر الأفعال الخمسة: أنتِ ، أنتما ، أنتم ، هما ، هم بحذف النون\nصياغة الفعل الناقص لا تتغير مع المسند إلى نون النسوة سواء كان ذلك في المضارع المرفوع أو المنصوب: تنجون ، لن تنجون",
+      "figureDesc": "Encadré de conclusions.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p022_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.35
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la conjugaison du verbe défectif à finale waw (نجا، جثا، كبا) au présent subjonctif, ce qui correspond à la conjugaison des verbes défectifs de l'Unité 1 (Trimestre 1) d'arabe.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Verbe défectueux à finale waw, subjonctif",
+    "skill": "Conjuguer un verbe défectueux à finale waw au présent de l'accusatif (subjonctif) et identifier les marques de mise à l'accusatif selon le pronom.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "verbe défectueux",
+      "finale waw",
+      "présent accusatif",
+      "conjugaison arabe",
+      "marques du nasb",
+      "chute du noun"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau de conjugaison par pronom, avec trois verbes modèles et un rappel des marques du nasb, peut servir de base à des exercices de transformation, de texte à trous ou de fiche récapitulative illustrée.",
+    "themeGroup": "Le verbe défectueux"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans la transcription, « أنتَ » et « أنتِ » portent un tashkeel absent de l'image, où on lit « أنت » dans les deux lignes (ajout non visible)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'image, la ligne « هم » de la colonne نجا affiche « ينجوا » sans « لن ». La transcription le reproduit, ce qui est fidèle, mais l'erreur de la page n'est pas signalée."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les colonnes sont transcrites de gauche à droite (أنجو، أجثو، أكبو) alors que la lecture de la page se fait de droite à gauche. Cela inverse l'ordre des colonnes par rapport au titre de l'en-tête (نجا، جثا، كبا), mais la transcription indique cet ordre dans l'en-tête."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans la section « الاستنتاجات », « أنتِ » est écrit avec kasra, alors que l'image montre « أنت » sans voyelle. Le texte « أنتَ ... هو ، هي » est donné sans voyelle sur l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de ligne « المتكلم / المخاطب / الغائب » et les en-têtes diagonaux « الأفعال / الضمائر » sont partiellement absents ou reformulés. « الضمائر » et « الأفعال » ne sont pas transcrits comme tels."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'image, « أنتن لن تجئن » et « لن تكبون » (pour أنتن, colonne كبا) sont corrects. Mais « لن تكبون » pour « أنتن » est une erreur de la page : on attendrait « لن تكبون », qui est conforme. Rien d'autre à corriger."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

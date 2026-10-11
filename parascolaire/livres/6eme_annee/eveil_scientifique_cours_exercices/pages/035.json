@@ -1,0 +1,159 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 35,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La pollution de l'eau : sources de pollution d'un fleuve et de la mer, effets sur les êtres vivants aquatiques, moyens de protection et maladies",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "لَاحِظِ الوَثِيقَةَ جَيِّدًا ، وَأَجِبْ عَمَّا يَلِي :",
+      "body": "Document illustré annoté : مركز حراري، تربية المواشي، أنابيب الوادي الحار، مياه مستعملة قادمة من المنازل، مصانع، مخيم",
+      "figureDesc": "Dessin en couleurs d'un paysage côtier avec un fleuve se jetant dans la mer. On y voit une centrale thermique qui rejette une fumée noire (مركز حراري), un élevage de bétail (تربية المواشي), des tuyaux du oued chaud (أنابيب الوادي الحار), des eaux usées venant des maisons (مياه مستعملة قادمة من المنازل), des usines avec cheminées (مصانع), un camp (مخيم), un bateau et des montagnes à l'arrière-plan.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p035_i1",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 1 : مَاهِيَ أَنْوَاعُ المُلَوِّثَاتِ الَّتِي تُصِيبُ النَّهْرَ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p035_i2",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة 2 : كَيْفَ يُسَاهِمُ النَّهْرُ فِي تَلْوِيثِ البَحْرِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p035_i3",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة 3 : كَيْفَ تُؤَثِّرُ هَذِهِ المُلَوِّثَاتُ عَلَى حَيَاةِ الأَسْمَاكِ وَالحَيَوَانَاتِ المَائِيَّةِ الأُخْرَى ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p035_i4",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التعليمة 4 : اُذْكُرْ بَعْضَ الوَسَائِلِ الكَفِيلَةِ بِحِمَايَةِ المَاءِ مِنَ التَّلَوُّثِ.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p035_i5",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التعليمة 5 : سَمِّ 3 أَمْرَاضٍ نَاتِجَةٍ عَنْ تَلَوُّثِ المِيَاهِ.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p035_i6",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u4",
+  "topicTitle": "Unité 4 : Reproduction florale et protection des milieux aquatiques",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u4",
+    "confidence": 0.46
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page, rédigée en arabe, porte sur la pollution de l'eau (polluants d'un fleuve, pollution de la mer, effets sur la faune aquatique, moyens de protection, maladies hydriques), ce qui correspond à la protection des milieux aquatiques de l'Unité 4 d'Éveil Scientifique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La pollution de l'eau",
+    "skill": "Analyser un document illustré pour identifier les sources de pollution d'un cours d'eau et de la mer, leurs effets sur les êtres vivants aquatiques, les moyens de protection et les maladies associées.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "pollution de l'eau",
+      "fleuve",
+      "mer",
+      "êtres vivants aquatiques",
+      "protection de l'environnement",
+      "maladies hydriques"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une illustration annotée d'un fleuve entouré de sources de pollution (usines, élevage, eaux usées domestiques, camping) sert de support à une série de questions progressives allant de l'observation aux causes, aux effets, aux solutions et à la santé ; cette structure est facile à transposer à d'autres milieux, comme une plage, un lac ou une oasis.",
+    "themeGroup": "L'eau et sa pollution"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Annotation « أنابيب الوادي الحار » : la transcription écrit « أنابيب » ce qui est correct, mais l'image montre « أنابيب الوادي الحار » avec le mot « الحار » ; pas d'écart réel, à garder tel quel."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Instruction 1 : l'image montre « المُلَوِّثَاتِ » écrit avec shadda sur le waw ; la transcription est conforme, mais l'image affiche « المَلْوَثَاتِ/المُلَوَّثَاتِ » avec des voyelles peu nettes, donc difficile à confirmer."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Instruction 4 : « اُذْكُرْ » transcrit avec alif + damma, l'image montre « أُذْكُرْ » (hamza sur l'alif) ; correction : أُذْكُرْ."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Instruction 3 : « هَذِهِ » transcrit ; l'image montre « هَذِهِ » avec voyelles, conforme."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Annotation du document : l'image présente aussi un mot « تربية المواشي » (conforme) et « مخيم » (conforme) ; le numéro de page 76 est omis de la transcription (élément non pédagogique)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

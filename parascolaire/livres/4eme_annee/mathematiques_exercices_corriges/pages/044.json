@@ -1,0 +1,179 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 44,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 10 – الامتحان الثلاثي الأول (5) : المتتاليات العددية، المقارنة والترتيب، الأعداد المكونة بأرقام، الأيام والتواريخ، قطع المستقيم، مسائل على الأسعار والنقود",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1 أ",
+      "instruction": "أكتشف الانتظام ثمّ عمّر الفراغات :",
+      "body": "2 900 | 2 825 | 2 750 | ........ | ........ | ........",
+      "figureDesc": "جدول من ست خانات: الخانات الثلاث الأولى تحتوي على 2 900 و2 825 و2 750 والثلاث الأخيرة فارغة.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mathematiques_exercices_corriges_p044_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 ب",
+      "instruction": "أختصر الكتابتين في كتابة واحدة :",
+      "body": "228 > 211 ، 305 > 228 (مع نقاط للإجابة)",
+      "figureDesc": "متباينتان مجمعتان بقوس أيسر، يليهما سطر منقط للإجابة.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p044_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 ج",
+      "instruction": "كوّن جميع الأعداد الممكنة بالأرقام 7 ، 5 ، 2 ، 3 والتي رقم مئاتها 5 ثمّ رتّبها تصاعديًا :",
+      "body": "الأعداد هي: ................\nترتيبها تصاعديًا : ................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p044_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أوّل يوم في شَهْرِ نُوفَمْبَر 1997 هو يَوْمُ السَّبت. فَمَا هُوَ تَارِيخُ آخِرِ يَوْمِ سبت مِنْ نَفْسِ الشَّهْرِ ؟",
+      "body": "أوّل يوم في شَهْرِ نُوفَمْبَر 1997 هو يَوْمُ السَّبت. فَمَا هُوَ تَارِيخُ آخِرِ يَوْمِ سبت مِنْ نَفْسِ الشَّهْرِ ؟",
+      "figureDesc": "سطر منقط للإجابة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p044_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكتب قِطعَ مُسْتَقِيمِ الرَّسْمِ التَّالِي :",
+      "body": "",
+      "figureDesc": "مستقيم مائل عليه ثلاث نقاط: أ و ب و ج، وثلاثة أسطر للإجابة على اليسار.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p044_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) ما هو ثمن المحفظة؟ ب) ما هو ثمن المشتريات؟ ج) ما هو ثمن أدوات التلوين؟",
+      "body": "شرى سامي كُتُبًا مَدْرَسِيَّةً بـ 2 550 مي ومَحْفَظَةً ثَمَنُهَا يُسَاوِي ضِعف ثمن الكتُب. ثمّ طلب من الكتبي أدوات التلوين المائي.\nأ) ما هو ثمن المحفظة؟\nسلَّمَ سامي للتَّاجِرِ وَرَقَتَيْنِ نقديَّتَيْنِ قيمة الواحدة 5 دنانير فأرجع له قطعة نقديّة ذات نصف دينار.\nب) ما هو ثمن المشتريات؟\nج) ما هو ثمن أدوات التلوين؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p044_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.25
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de révision pour l'examen du premier trimestre (semaine 10) qui mélange suites numériques, comparaison, dénombrement de nombres, calendrier, segments et problèmes de monnaie : elle couvre plusieurs chapitres, donc aucun chapitre unique ne correspond clairement, même si math-4-ch1 est le plus proche.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    118
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision trimestrielle : nombres, calendrier, monnaie",
+    "skill": "Mobiliser en situation d'évaluation les suites numériques, la comparaison et le rangement de nombres, le calendrier, les segments et les problèmes de prix et de monnaie.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "suites numériques",
+      "comparaison de nombres",
+      "calendrier",
+      "segments de droite",
+      "monnaie",
+      "problème de prix"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une épreuve de synthèse qui juxtapose plusieurs mini-situations : régularité d'une suite à compléter, réécriture de deux inégalités en une seule, fabrication de nombres avec des chiffres imposés puis rangement, recherche du dernier jour de la semaine d'un mois, nomination de segments sur une figure, et problème d'achats scolaires avec rendu de monnaie.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.88
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre de la page omis: «الامتحان الثلاثي الأول (5)» ainsi que «الأسبوع 10» et le numéro de page 40."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans [1 أ], «أُكتشف» et «عمِّر» portent des voyelles visibles dans l'image mais absentes de la transcription (ex. «أُكتشف الانتظام ثمَّ عمِّر الفراغات»). Même remarque pour «أُختصر الكتابتين» en [1 ب]."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "En [4], «شرى» est écrit «شَرى» dans l'image, mais le texte est lu «شرى سامي كُتُبًا» ; l'image porte «مي» pour «مي» (millimes), ce qui est correct, mais «بـ 2 550 مي» doit être vérifié: il s'agit bien de 2 550 مي."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "En [2], l'énoncé est dupliqué: le champ de contenu répète la question au lieu d'une réponse; la transcription est redondante."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "En [4], les questions sont listées d'abord en en-tête (أ، ب، ج) puis réinsérées dans le texte; la question ب) précède «سلَّم سامي...» alors que dans l'image la phrase sur la monnaie précède ب)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En [3], le dessin (droite avec points أ، ب، ج) n'est pas décrit et les lignes de réponse sont omises."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "En [4], voyelles de l'image absentes: «الكتبي أدوات التلوين المائي» (الكُتبيِّ أَدَوات التلوينَ), «ضِعف ثمن الكتُب», «سامي» etc. Parfois la transcription ajoute des voyelles non présentes (ex. «نقديَّتَيْنِ» OK, mais «قطعة نقديّة» sans voyelles alors qu'elles sont visibles)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

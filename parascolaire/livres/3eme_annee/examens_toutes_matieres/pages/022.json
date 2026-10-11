@@ -1,0 +1,107 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 22,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إنتاج كتابي وتوظيف أدوات الربط: العاصفة (الريح والرعد) وطفلان في الطريق",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُكْمِلُ الْفَرَاغَاتِ بِمَا يُنَاسِبُ مِمَّا يَلِي.",
+      "body": "[ رِيَاحٌ هَوْجَاءُ / فَصْلِ الشِّتَاءِ / عَائِدَيْنِ ]\nظَهِيرَةَ يَوْمٍ مِنْ أَيَّامِ ................ غَادَرَ الصَّدِيقَانِ صَبْرِي وَمَجْدِي الْمَدْرَسَةَ وَسَارَا ................ كُلٌّ إِلَى مَنْزِلِهِ. فَجْأَةً تَغَيَّرَ الطَّقْسُ وَهَبَّتْ ................ تَكَادُ تَذْهَبُ بِالدِّيَارِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p022_i1",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبُطُ كُلَّ جُزْءٍ بِمَا يُنَاسِبُ.",
+      "body": "العمود الأول (يمين): كَانَتِ الرِّيَاحُ • / اِنْحَنَتْ لِهَوْلِهَا • / اِرْتَجَفَ قَلْبَا الطِّفْلَيْنِ •\nالعمود الثاني (يسار): • الْأَشْجَارُ بِهَامَاتِهَا. / • خَوْفًا وَرُعْبًا. / • تَعْصِفُ مُوَلْوِلَةً.",
+      "figureDesc": "جدولان من النقاط للربط بخطوط بين عمودين (علامة مائية MOURAJAA.COM)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p022_i2",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُرَتِّبُ مُفْرَدَاتِ كُلِّ مَجْمُوعَةٍ لِأَحْصُلَ عَلَى جُمَلٍ مُفِيدَةٍ.",
+      "body": "أ) [ كَأَنَّهُ / مُرْعِبًا / سَمِعَ / هَزِيمُ / صَوْتًا / الطِّفْلَانِ / الرَّعْدِ ]\n................................................\nب) [ مِنَ الشَّجَرَةِ / الطَّرِيقَ / غُصْنًا كَبِيرًا / نَظَرَ / فَشَاهَدَا / إِلَى الْخَلْفِ / يَسُدُّ الطَّرِيقَ / الطَّفْلَانِ ]\n................................................\nج) [ ثُمَّ / عَنِ الطَّرِيقِ / الْجِذْعَ الْمَقْطُوعَ / أَبْعَدَ / ثُمَّ وَاصَلَا / الصَّدِيقَانِ / سَيْرَهُمَا ]\n................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p022_i3",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَتَأَمَّلُ الْمَشَاهِدَ ثُمَّ أُنْتِجُ نَصًّا سَلِيمَ الْمَبْنَى وَالْمَعْنَى مُسْتَعْمِلًا أَدَوَاتِ الرَّبْطِ الْمُنَاسِبَةَ اسْتِعْمَالًا سَلِيمًا.",
+      "body": "",
+      "figureDesc": "مشاهد مصورة غير ظاهرة في الصورة (مقتطعة)، يتبعها مجال للكتابة",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "examens_toutes_matieres_p022_i4",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-3-u2",
+  "topicTitle": "Unité 2 : Actions et repères temporels",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "ar-3-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u2",
+    "confidence": 0.45
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une production écrite narrative (tempête, deux enfants) centrée sur les connecteurs (أدوات الربط) et l'ordonnancement des phrases et des événements (ظهيرة يوم، فجأة، ثم), ce qui rapproche le plus de l'unité 2 sur les repères temporels, mais aucun chapitre ne correspond exactement à ce contenu.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite narrative et connecteurs",
+    "skill": "Produire un court texte narratif cohérent à partir d'images en utilisant correctement les connecteurs logiques et temporels.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "appariement",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "production écrite",
+      "connecteurs",
+      "tempête",
+      "récit",
+      "phrases à reconstituer",
+      "images"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Progression en quatre étapes autour d'une situation de tempête vécue par deux enfants (compléter, relier, remettre les mots en ordre, puis rédiger à partir d'images), réutilisable comme séquence de préparation à la production écrite sur n'importe quel événement inattendu.",
+    "themeGroup": "Grammaire : ponctuation et connecteurs"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

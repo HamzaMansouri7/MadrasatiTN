@@ -1,0 +1,101 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 139,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "القسمة الإقليدية: تحديد عدد الأرقام بالخارج وقسمة عدد على عدد من رقم واحد (مضاعفات العدد 7، قسمة 849 على 4، قسمة 349 على 8)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "لاحظ جدول مضاعفات 7 التّالي :",
+      "body": "العدد 56 هو مضاعف للعدد 7 لأنّ : 7 x 8 = 56. العدد 61 ليس مضاعفا للعدد 7 لكنّه محصور بين مضاعفين متتاليين له. 7 x 8 < 61 < 7 x 9 ؛ 5 + ( 8 x 7 ) = 61",
+      "figureDesc": "جدول مضاعفات 7: x : 0 1 2 3 4 5 6 7 8 9 10 ... ؛ 7 : 0 7 14 21 28 35 42 49 56 (بالأحمر) 63 ... ...",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p139_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "مثال لقسمة 849 على 4 ما هو عدد الأرقام بالخارج ؟",
+      "body": "1000 x 4 > 849 > 100 x 4. الخارج سيكون محصورا بين 100 و 1000 وبالتّالي عدد أرقامه 3. القسمة: 849 ÷ 4: 8 − 8 = 0، نُنزل 4 ← 04 − 4 = 0، نُنزل 9 ← 09 − 8 = 1. الخارج 212 والباقي 1. التثبّت: 1 + ( 212 x 4 ) = 849 ؛ 4 > 1",
+      "figureDesc": "مكعبات عدّ: 8 مئات، 4 عشرات، 9 وحدات؛ عملية القسمة الموضوعة 849 على 4 بجدول (م ع أ) والخارج 212",
+      "answer": "الخارج 212 والباقي 1",
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p139_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "لقسمة 349 على 8",
+      "body": "قبل إنجاز العملية نبحث عن عدد الأرقام بالخارج. 100 x 8 > 349 > 10 x 8 ؛ 800 > 349 > 80. الخارج سيكون محصورا بين 10 و100 إذا سنجد رقمين بالخارج. تتّبع مراحل قسمة العدد 349 على 8. أوّلا : قسمة 34 عشرة على 8: 2 + (4 x 8) = 34 ؛ 8 > 2. خارج 34 على 8 هو 4. عدد العشرات المتبقية هو 2 أو 20 وحدة. ثانيّا : قسمة 29 وحدة على 8. 5 + ( 3 x 8 ) = 29. خارج 29 على 8 هو 3. عدد الوحدات المتبقية هو 5. لنتثبّت : 5 + ( 8 x 43 ) = 349 ؛ 8 > 5",
+      "figureDesc": "مكعبات عدّ: 3 مئات، 4 عشرات، 9 وحدات؛ عملية القسمة 349 ÷ 8: 32 ثم 29 ثم 24 والباقي 5، الخارج 43",
+      "answer": "الخارج 43 والباقي 5",
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p139_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ضلعا الكوس أب و أج متعامدان.",
+      "body": "الزّاوية أ هي زاوية قائمة.",
+      "figureDesc": "مثلث قائم الزاوية في أ، الرؤوس أ و ب و ج، الزاوية القائمة معلّمة بالأحمر",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p139_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch3",
+  "topicTitle": "Période 3 : Division euclidienne, fractions et périmètres",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.63
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la division euclidienne par un chiffre (multiples de 7, nombre de chiffres du quotient, divisions de 849 par 4 et de 349 par 8), ce qui correspond à la Période 3 sur la technique de la division euclidienne.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division euclidienne à diviseur d'un chiffre",
+    "skill": "Estimer le nombre de chiffres du quotient par encadrement, puis diviser un nombre à trois chiffres par un nombre à un chiffre et vérifier le résultat.",
+    "pageType": "lesson",
+    "formats": [
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "division euclidienne",
+      "multiples",
+      "encadrement",
+      "quotient",
+      "reste",
+      "vérification"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Démarche réutilisable : encadrer le dividende entre deux multiples (par 10 ou 100 fois le diviseur) pour prévoir le nombre de chiffres du quotient, poser la division étape par étape, puis vérifier avec reste + quotient × diviseur et reste < diviseur ; la page ajoute une courte note de géométrie sur l'angle droit.",
+    "themeGroup": "Division euclidienne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

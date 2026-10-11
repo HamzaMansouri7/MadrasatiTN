@@ -1,0 +1,88 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 51,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : La petite malade (d'après André Dumas, « Ma petite Yvette »)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "La petite malade\n\nStéphanie a mal dormi ; elle est fiévreuse. Elle s'est réveillée plus tôt que d'habitude. La petite fille manquait d'appétit.\n« Un petit rhume, dit la mère, elle se sera découverte en dormant. »\n- Pas de classe, ajouta le père. Stéphanie restera tranquille à la maison. Il sera facile de la soigner. Demain il n'y paraîtra plus rien. »\nEt pour préserver la petite Stéphanie du froid, on l'a enveloppée dans un châle qui lui donnait un air drôle de petite paysanne.\nLe jour diminua lentement. Stéphanie était sur le canapé du salon, la tête appuyée contre des coussins. Elle ne quittait pas des yeux sa mère qui était en train de tricoter. Elle surveillait ses moindres gestes... Et chaque fois que la petite malade levait la tête, elle surprenait le tendre regard maternel qui l'observait. De retour à la maison, son père s'assit à son chevet. Il constata que son front était brûlant et que ses mains étaient moites. Juste à ce moment, sa maman venait lui prendre la température car elle s'était rendu compte que l'état de sa fillette s'était aggravé avec le soir... « 39° de température, je vais prévenir le médecin de famille. », dit le père.\nUne heure après, le ronflement d'une auto annonça son arrivée. Il examina l'enfant, tâta son pouls, regarda sa langue et sa gorge en lui recommandant de dire A...A.... sans s'arrêter.\n« Cette fièvre annonce une forte angine, dit-il. Je vais lui prescrire quelques médicaments et dans six jours elle sera complètement guérie. »\n\nD'après André Dumas « Ma petite Yvette. »",
+      "figureDesc": "Page encadrée avec bandeaux : « Sagesse », « Lecture - Compréhension », « 6ème année de base ». Le texte est dans un cadre arrondi.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p051_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Relève, dans le texte, un détail qui montre que Stéphanie est souffrante :",
+      "body": "Deux lignes pointillées pour répondre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p051_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "a- Qui a surveillé la petite malade toute la journée ?",
+      "body": "Une ligne pointillée pour répondre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p051_i3",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.23
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français sur une enfant malade (rhume, fièvre, soins à la maison), dont le thème de la santé se rapproche du Module 6 « Être en forme et mieux se porter », mais le texte lui-même ne correspond pas explicitement à une compétence précise du module.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Lire un court texte et relever des informations explicites pour répondre à des questions de compréhension.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "texte narratif",
+      "maladie",
+      "famille",
+      "relevé d'indices"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Format classique texte court suivi de questions de relevé d'indices (qui, quoi, quel détail), transposable à d'autres situations du quotidien comme la maladie ou la vie familiale, mais peu original.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

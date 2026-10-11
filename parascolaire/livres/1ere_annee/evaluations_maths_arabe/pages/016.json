@@ -1,0 +1,87 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 16,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي : إثراء الجمل (الوحدة الثالثة: صحتي وسلامتي)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُثْرِي الْجُمَلَ بِمَا يُنَاسِبُ.",
+      "body": "( بِانْتِبَاهٍ - فِي الْقِسْمِ - وَتَرْكِيزٍ )\nيُتَابِعُ التَّلَامِيذُ الْمُعَلِّمَ.\n...................................................................",
+      "figureDesc": "مُعَلِّمٌ يَقِفُ أَمَامَ السَّبُّورَةِ فِي الْقِسْمِ وَالتَّلَامِيذُ يَجْلِسُونَ عَلَى الْمَقَاعِدِ يُتَابِعُونَ الدَّرْسَ.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p016_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُثْرِي الْجُمَلَ بِمَا يُنَاسِبُ.",
+      "body": "( وَلُطْفٍ - فِي الْمُسْتَشْفَى - بِحَذَرٍ )\nغَرَزَتِ الْمُمَرِّضَةُ الْإِبْرَةَ فِي سَاعِدِ الطِّفْلِ.\n...................................................................",
+      "figureDesc": "مُمَرِّضَةٌ بِمِئْزَرِهَا الْأَبْيَضِ تَغْرِزُ حُقْنَةً فِي سَاعِدِ طِفْلٍ جَالِسٍ أَمَامَهَا.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p016_i2",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُثْرِي الْجُمَلَ بِمَا يُنَاسِبُ.",
+      "body": "( فِي الْمَنْزِلِ - وَعَزْمٍ - الصَّغِيرُ - بِحَزْمٍ )\nيُسَاعِدُ الطِّفْلُ أَبَاهُ فِي الْعِنَايَةِ بِالْحَدِيقَةِ.\n...................................................................",
+      "figureDesc": "أَبٌ يَكْنُسُ أَوْرَاقَ الشَّجَرِ فِي الْحَدِيقَةِ وَابْنُهُ الصَّغِيرُ يُسَاعِدُهُ بِاسْتِعْمَالِ مِجْرَفَةٍ.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p016_i3",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "ar-1-u3",
+  "topicTitle": "Unité 3 : Mon compagnon pour ma santé et ma sécurité",
+  "topicConfidence": 0.86,
+  "topicIdPrev": "ar-1-u3",
+  "topicConfidencePrev": 0.5,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u3",
+    "confidence": 0.85
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de production écrite en arabe (enrichissement de phrases) rattaché à l'unité 3 « صحتي وسلامتي » (santé et sécurité), d'après le sujet détecté et le contexte de l'infirmière et de l'hôpital.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Enrichissement de phrases",
+    "skill": "Enrichir une phrase simple en y ajoutant des compléments de manière, de lieu ou de sujet choisis dans une liste.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "enrichissement de phrases",
+      "production écrite",
+      "compléments circonstanciels",
+      "santé et sécurité",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une phrase simple tirée d'un contexte de santé ou de vie quotidienne (classe, hôpital, jardin) est à enrichir avec des mots proposés, dont certains sont des intrus (lieu, manière, sujet déjà exprimé), ce qui oblige à choisir ceux qui conviennent.",
+    "themeGroup": "Enrichissement de phrases"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

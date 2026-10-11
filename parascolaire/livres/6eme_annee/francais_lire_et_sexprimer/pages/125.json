@@ -1,0 +1,494 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 125,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Corrigés : Les Lapons (fin), Les gladiateurs (1) et (2), Le carnaval de Rio ; Les évaluations n°1 et n°2 (compréhension, grammaire, conjugaison)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "5 (suite)",
+      "instruction": "Vrai ou faux ?",
+      "body": "- Les Chinois mangent leurs repas tranquillement.",
+      "figureDesc": "Réponse encadrée",
+      "answer": "Faux",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i1",
+      "topicId": "fr-6-m8",
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "Les Chinois (corrigé)",
+      "body": "En Chine, les ouvriers consacrent peu de temps à leur repas. Ils doivent, donc, faire vite pour rattraper leur travail.",
+      "figureDesc": "",
+      "answer": "En Chine, les ouvriers consacrent peu de temps à leur repas. Ils doivent, donc, faire vite pour rattraper leur travail.",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i2",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "7",
+      "instruction": "Les Lapons (corrigé : texte-résumé)",
+      "body": "Le renne est la seule richesse des familles lapones. Cet animal donne à son maître lait, viande, peau, laine ; tout ce qu'il faut pour manger et s'habiller. C'est aussi le renne qui tire le traîneau familial des Lapons. Les Lapons sont petits. Ce sont des gens sympathiques qui ont gardé leurs habitudes. Au printemps et en automne, les Lapons partent à la montagne avec leurs troupeaux. Mais les vieux et les enfants restent au village.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i3",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "Les gladiateurs (1) : Le gladiateur",
+      "body": "Le gladiateur : Homme qui combattait contre une bête féroce ou contre un autre homme chez les Romains.",
+      "figureDesc": "",
+      "answer": "- Les combattants chez les Romains",
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i4",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "Les gladiateurs (1) : Quand ? Justification",
+      "body": "En hiver. Justification : « Après la longue interruption due aux froids de l'hiver, les jeux du cirque vont reprendre dans une grande ville romaine. »",
+      "figureDesc": "",
+      "answer": "En hiver",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i5",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "Pour attirer le public, les organisateurs des jeux :",
+      "body": "- font de la publicité.",
+      "figureDesc": "",
+      "answer": "font de la publicité",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i6",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "Justification",
+      "body": "« Attirés par cette publicité, plus de vingt mille personnes se pressent aux entrées de l'arène. »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i7",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "Gladiateurs (1)",
+      "body": "Les esclaves et les hommes libres participent aux combats.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i8",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "Gladiateurs (1)",
+      "body": "Les spectateurs crient le nom des champions et les dessinent sur les murs. Parfois, ils leur envoient des cadeaux.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i9",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "7",
+      "instruction": "Synonymes",
+      "body": "- Collée = Placardée  - Bataille = Combat",
+      "figureDesc": "",
+      "answer": "Collée = Placardée ; Bataille = Combat",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i10",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "8",
+      "instruction": "Le carnaval de Rio (texte de production)",
+      "body": "Quelques jours plus tard, Conchita est à Rio. Le soir même, elle danse la samba sur la plage Copacabana. Rio se prépare à la fête en décorant ses rues. Enfin, le carnaval commence. Des milliers de gens se mettent à danser dans les rues. La musique est très forte. Les plumes des plus beaux oiseaux décorent les cheveux et les costumes des danseuses. Les uns sont déguisés en princes ou princesses, les autres en clowns. Conchita refuse de dormir. Elle ne veut rien perdre de ce merveilleux spectacle. Quand elle retournera chez-elle, elle racontera tout ce qu'elle a vu à sa famille.",
+      "figureDesc": "Texte encadré intitulé « Le carnaval de Rio »",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i11",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "Les gladiateurs (2)",
+      "body": "Le spectacle débute par une grande parade : des taureaux, des pugilistes, des clowns, des gladiateurs et des lutteurs défilent dans l'arène.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i12",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "Gladiateurs (2) : a- Le public connaît-il les champions ? b- Justification",
+      "body": "a- Oui, le public qui se trouve dans l'arène connaît bien le nom des champions. b- « Le public s'enthousiasme et hurle le nom des champions favoris en les montrant du doigt. »",
+      "figureDesc": "",
+      "answer": "Oui",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i13",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "Expliquer",
+      "body": "*Le vainqueur : la personne qui gagne la bataille. *Impitoyablement : sans pitié. *Le vaincu sera épargné : le vaincu ne sera pas tué.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i14",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "Gladiateurs (2) : a) b) Justification",
+      "body": "a) Si les spectateurs tournent leur pouce vers le sol, le vaincu sera tué. b) « Par contre, si la majorité des spectateurs tourne son pouce vers le sol, alors le vaincu sera impitoyablement mis à mort. »",
+      "figureDesc": "",
+      "answer": "Oui",
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i15",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "Vrai ou faux ?",
+      "body": "- Tous les gladiateurs combattent à pied. - À la fin du combat, le vainqueur doit tuer son adversaire. - Les animaux se battent entre eux seulement. - À la fin du spectacle, le public est content.",
+      "figureDesc": "Réponses encadrées",
+      "answer": "Faux ; Faux ; Faux ; Vrai",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i16",
+      "topicId": "fr-6-m8",
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "Opinion personnelle",
+      "body": "Ce type de jeux était très apprécié par les Romains car ils admiraient la violence et les forces mais, à mon avis, il n'est pas admirable car les participants risquent de perdre leur vie dans le combat.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i17",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°1 - 1",
+      "instruction": "a- Marie met-elle un beau tablier ? b- Justifie",
+      "body": "a- Marie met un beau tablier. b- « Un jour, elle vient à l'école avec un tablier trop petit et dont elle a honte. »",
+      "figureDesc": "",
+      "answer": "Non",
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i18",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°1 - 2",
+      "instruction": "Résumé",
+      "body": "Marie est malheureuse. Ses camarades décident de lui acheter un beau tablier.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i19",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°1 - 3",
+      "instruction": "Aline et ses camarades s'arrangent pour que Marie gagne le tablier pour :",
+      "body": "- se moquer d'elle (barré) - créer une ambiance joyeuse à l'école (barré) - ne pas la vexer.",
+      "figureDesc": "",
+      "answer": "ne pas la vexer",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p125_i20",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°1 - 4",
+      "instruction": "Explique les expressions",
+      "body": "* Marie s'est clouée dans son coin : elle demeure immobile. * Après avoir contemplé le tablier : elle a longuement regardé le tablier. * Elle s'efforçait de retenir son sourire : elle essayait de ne pas sourire.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i21",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°1 - 5-7",
+      "instruction": "Questions 5 à 7",
+      "body": "5) « Ah ! Je n'oublierai jamais son visage. Il est devenu clair tout d'un coup et ses lèvres tremblaient... » 6) « Aline, j'ai compris, tu sais... et tu as fait ça exprès... vraiment... pour me faire plaisir, à moi ? » 7) Aline et ses camarades sont gentils, affectueux et aimables.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i22",
+      "topicId": "fr-6-m8",
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°2 B - 1",
+      "instruction": "Compréhension",
+      "body": "La maîtresse n'est pas étonnée de voir un cheval, un chien, un cochon et une petite poule blanche dans la cour de l'école car elle a l'habitude de les voir toujours.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i23",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°2 B - 2",
+      "instruction": "a- Tous les animaux sont-ils dans la cour ? b- Justifie",
+      "body": "a- Non, tous les animaux ne sont pas dans la cour à l'arrivée de la maîtresse. Il manquait le sanglier puisque l'auteur écrit que la maîtresse est surprise par son arrivée soudaine. b- « Ce qui ne manqua pas de la surprendre et de l'effrayer, ce fut l'arrivée d'un sanglier débouchant soudain d'une haie où il se tenait caché. »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i24",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°2 B - 3-4",
+      "instruction": "Compréhension",
+      "body": "3) Ce qui étonne le plus la maîtresse c'est l'arrivée du sanglier. 4) Les bêtes sont venues à l'école pour entendre les leçons.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p125_i25",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°2 B - 5",
+      "instruction": "a- La maîtresse a-t-elle accepté les bêtes ? b- Justifie",
+      "body": "a- La maîtresse n'a pas accepté les bêtes dans sa classe. b- « Après tout, dit la maîtresse, je ne vois pas d'inconvénients à ce que vous entriez dans la classe. Mettez-vous en rangs. »",
+      "figureDesc": "",
+      "answer": "Non",
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i26",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°2 B - 6-7",
+      "instruction": "Compréhension",
+      "body": "6) Les nouveaux écoliers se placent derrière les filles, alignés deux par deux. Le chien à la tête de la rangée. Le sanglier est à côté du cochon et la petite poule blanche à côté du cheval. 7) Les nouveaux écoliers sont sages, sérieux et polis.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i27",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°2 C - 1-3",
+      "instruction": "Grammaire",
+      "body": "1) Ce nouvel élève est sage et poli. Il obéit à sa maîtresse. 2) a- Cet enfant est devant la porte de cette école. - Ces bêtes restent calmes en classe. - Cette maîtresse accepte ce sanglier. b- L'institutrice met ses élèves en rang. - La maîtresse reçoit des bêtes dans sa classe. - Les nouveaux écoliers se concentrent sur leurs leçons. - Tu discutes avec ton maître. - Ma sœur et moi respectons nos camarades. 3) « Le gracieux écolier est gentil et charmant »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i28",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°2 D - 1-3",
+      "instruction": "Conjugaison",
+      "body": "1) La maîtresse a dit à Julien et Amélie : « Entrez sagement en classe, prenez vos places et écrivez la date sur vos cahiers. 2) a- Demain, la bête sera heureuse. Elle aura des amis magnifiques. - Demain, mon frère et moi serons heureux. Nous aurons des amis magnifiques. - Demain, les deux fillettes seront heureuses. Elles auront des amis magnifiques. b- Hier, tu as été heureux. Tu as eu des amis magnifiques. - Hier, ton ami et toi avez été heureux. Vous avez eu des amis magnifiques. - Hier, les deux gamins ont été heureux. Ils ont eu des amis magnifiques. 3) La mère dit à son fils : « Fais tes devoirs, arrange ta chambre et mets tes affaires dans le placard avant d'aller jouer. »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p125_i29",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m8",
+  "topicTitle": "Module 8 : Découvrir d'autres modes de vie",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.36
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page contient des corrigés de textes de lecture sur des modes de vie (Chinois, Lapons, gladiateurs romains, carnaval de Rio), ce qui correspond au module 8 « Découvrir d'autres modes de vie », mais elle comprend aussi des évaluations mélangées, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de textes documentaires",
+    "skill": "Vérifier sa compréhension de textes documentaires (Lapons, gladiateurs, Chinois) en repérant des informations, en justifiant par le texte et en trouvant des synonymes.",
+    "pageType": "correction",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "corrigé",
+      "compréhension de lecture",
+      "justification",
+      "synonymes",
+      "résumé de texte",
+      "gladiateurs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : la démarche « répondre puis justifier par une citation du texte », les questions vrai/faux, la recherche de synonymes et le résumé de texte documentaire sur des cultures ou des époques variées.",
+    "themeGroup": "Textes documentaires"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[Gladiateurs (1) 2] « En hiver. » est souligné dans l'image comme réponse, mais la transcription le met aussi en champ réponse : cohérent. Aucune faute ici."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[Éval. 2 D-2a] « Demain,mon frère et moi » : transcription correcte ; pas d'erreur."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Évaluation n°1 : le titre « Les évaluations : », « Évaluation n°1 » et « Évaluation n°2 », ainsi que les rubriques B) Compréhension, C) Grammaire, D) Conjugaison, ne sont pas transcrits comme texte à part, seulement dans les étiquettes."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « Les gladiateurs (1) : » et « Les gladiateurs (2) » ainsi que le cadre de « Le carnaval de Rio » sont absents du texte, mais apparaissent dans les étiquettes."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Étiquettes ajoutées (« corrigé », « texte-résumé », « texte de production », « Résumé », « Opinion personnelle », « Explique les expressions ») qui ne figurent pas dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "[6] Les Chinois : « réponse » dupliquée, alors que le texte est le corrigé lui-même ; [Éval.1-1] « Marie met un beau tablier » réponse Non : cohérent avec l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[Éval.2 C-1] l'image se termine par « obéit à sa maîtresse. » » avec guillemet fermant parasite ; la transcription l'omet (négligeable). Aussi « chez-elle » est bien dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[Éval.2 B-6] « Le chien à la tête » : l'image a « Le chien à la tête de la rangée » ; correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "[Éval.2 D-1] le guillemet fermant après « cahiers » est présent dans l'image (« cahiers. ») ; la transcription l'omet."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

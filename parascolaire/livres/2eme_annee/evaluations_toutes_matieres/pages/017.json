@@ -1,0 +1,246 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 17,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "خط وإملاء – اختبار نهاية الثلاثي الثاني (عدد 5): نسخ الحروف والمقاطع، إعادة كتابة جملة، وإكمال فقرة إملائية عن العيد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسَخُ عَلَى مِنْوَالِ الْمِثَالِ :",
+      "body": "السطر الأول (حروف): عَ ، عِ ، حُ ، هَا — السطر الثاني (مقاطع وكلمات): عِيـ ، حَى ، ـهُو ، عَدَّ",
+      "figureDesc": "En-tête de la page : امتحانات جسر النجاح — المادة : خط و إملاء — المستوى : السنة الثانية — اختبار نهاية الثلاثي الثاني عدد : 5 (champs الاسم / اللقب / القسم). Deux lignes quadrillées d'écriture avec les modèles en gras suivis de points de repère pour copier. Barème : 0,25 لكل حرف (×2) ; 0,5 لكل مقطع ; 0,25 لكل مقطع. Critères : الوضوح، الجمالية، الوضوح، الجمالية.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p017_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمْلَةِ وَأَنْتَبِهُ إِلَى رَسْمِ الْكَلِمَاتِ.",
+      "body": "يُهَنِّئُ الْمُسْلِمُونَ بَعْضُهُمْ فَرَحًا بِالْعِيدِ.",
+      "figureDesc": "Lignes quadrillées pour recopier la phrase. Barème : 0,25 لكل كلمة / 0,5 لكل كلمة / 0,25 لكل كلمة ; total /10. Critères : الاسترسال، التناسق، الجمالية.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p017_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُكْمِلُ الْفِقْرَةَ بِالْمُفْرَدَاتِ النَّاقِصَةِ.",
+      "body": "إملاء : لَبِسَتْ أَرِيجُ كِسْوَةَ الْعِيدِ ........ وَ ........ أُمَّهَا وَ ........ ، فَـ ........ الْأَبُ وَ ........ مَبْلَغًا مِنَ الْمَالِ.",
+      "figureDesc": "Paragraphe à trous sur papier quadrillé, avec des pointillés à compléter. Barème : 2 لكل كلمة صحيحة, total /10. Critère : السلامة من الأخطاء. Numéro de page : 16.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p017_i3"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-2-u7",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u7",
+    "confidence": 0.36
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de 2ème trimestre (اختبار نهاية الثلاثي الثاني, écriture et dictée) qui couvre plusieurs compétences; même si le thème de l'Aïd évoque l'unité 8 (Trimestre 3), elle ne correspond clairement à aucun chapitre unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Écriture et orthographe de l'Aïd",
+    "skill": "Copier correctement des lettres, syllabes et une phrase en soignant le tracé, puis compléter un texte à trous orthographique sur le thème de l'Aïd.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "dictee",
+      "autre"
+    ],
+    "keywords": [
+      "calligraphie arabe",
+      "copie de lettres",
+      "orthographe",
+      "Aïd",
+      "texte lacunaire",
+      "2ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'évaluation d'écriture en trois étapes progressives (lettres et syllabes, phrase, paragraphe lacunaire) dans un contexte festif familier de l'Aïd (vêtements neufs, visite en famille, argent de fête), facile à transposer à d'autres occasions ou à d'autres lettres cibles.",
+    "themeGroup": "Dictée et orthographe"
+  },
+  "audit": {
+    "accuracy": 0.82,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«كِتابَةَ» : l'image montre «كِتَابَةَ» (fatha sur le ت), la transcription l'écrit sans."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "«لَبِسَتْ» : l'image montre «لَبِسَتْ» avec la forme «لَبِسَتْ أَرِيجُ». Le point est à vérifier, mais la transcription correspond à peu près ; l'image semble porter «لَبِسَتْ»."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Dans la dictée, «أُمُّهَا» est transcrit avec une damma sur le م, alors que l'image montre «أُمَّهَا» (fatha et shadda) : «أُمَّهَا»."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Dans la dictée, les trous sont mal placés. L'image donne : «لَبِسَتْ أَرِيجُ كِسْوَةَ الْعِيدِ ...... وَ ...... أُمَّهَا وَ ...... ، فَـ ...... الْأَبُ ...... وَ ...... مَبْلَغًا». Les trous sont placés dans l'ordre visuel de lecture de droite à gauche : après «العيد» vient un trou puis «وَ», puis un trou ; la transcription en inverse l'ordre : «........ وَ ........ أُمُّهَا»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes ne sont pas transcrits : «امتحانات جسر النجاح», «اختبار نهاية الثلاثي الثاني عدد 5», matière خط وإملاء, niveau السنة الثانية, ainsi que le barème (0,25 par lettre, 0,5 par syllabe, 2 par mot correct, /10)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Numérotation : l'exercice de dictée est numéroté «2» dans l'image, ce qui est conservé ; le titre «إملاء» est correctement signalé."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«يُهَنِّئُ» : l'image montre «يُهَنِّئُ», ce qui est conforme ; «وَأَنْتَبِهُ» est correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Consigne 2 : l'image porte «كِتَابَةَ» avec fatha sur le ت. La transcription écrit «كِتابَةَ» sans cette voyelle."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dictée : l'image montre «أُمَّهَا» (fatha et shadda sur le م). La transcription écrit «أُمُّهَا» avec une damma."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dictée : la transcription place un trou « ........ » de trop entre «الْأَبُ» et «وَ». Dans l'image, la 2e ligne finit par «الْأَبُ» et la 3e commence directement par «وَ ........ مَبْلَghًا»; il n'y a pas de pointillés entre les deux. L'ordre des autres trous est correct, le point signalé sur l'inversion des trous n'est donc pas confirmé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête n'est pas transcrit : «امتحانات جسر النجاح», «اختبار نهاية الثلاثي الثاني عدد : 5», «المادة : خط و إملاء», «المستوى : السنة الثانية», ainsi que les champs الاسم / اللقب / القسم. Le numéro de page 16 manque aussi."
+      },
+      {
+        "type": "autre",
+        "severity": "minor",
+        "detail": "Dans la figureDesc de l'exercice 2, les critères «الوضوح، الجمالية» appartiennent au bloc de l'exercice 1. Le bloc de la copie de phrase ne porte que «الاسترسال، التناسق، الجمالية»."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسَخُ عَلَى مِنْوَالِ الْمِثَالِ :",
+      "body": "السطر الأول (حروف): عَ ، عِ ، حُ ، هَا — السطر الثاني (مقاطع وكلمات): عِيـ ، حَى ، ـهُو ، عَدَّ",
+      "figureDesc": "En-tête de la page : امتحانات جسر النجاح — المادة : خط و إملاء — المستوى : السنة الثانية — اختبار نهاية الثلاثي الثاني عدد : 5 (champs الاسم / اللقب / القسم). Deux lignes quadrillées d'écriture avec les modèles en gras suivis de points de repère pour copier. Barème : 0,25 لكل حرف (×2) ; 0,5 لكل مقطع ; 0,25 لكل مقطع. Critères : الوضوح، الجمالية، الوضوح، الجمالية.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمْلَةِ وَأَنْتَبِهُ إِلَى رَسْمِ الْكَلِمَاتِ.",
+      "body": "يُهَنِّئُ الْمُسْلِمُونَ بَعْضُهُمْ فَرَحًا بِالْعِيدِ.",
+      "figureDesc": "Lignes quadrillées pour recopier la phrase. Barème : 0,25 لكل كلمة / 0,5 لكل كلمة / 0,25 لكل كلمة ; total /10. Critères : الاسترسال، التناسق، الجمالية.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُكْمِلُ الْفِقْرَةَ بِالْمُفْرَدَاتِ النَّاقِصَةِ.",
+      "body": "إملاء : لَبِسَتْ أَرِيجُ كِسْوَةَ الْعِيدِ ........ وَ ........ أُمَّهَا وَ ........ ، فَـ ........ الْأَبُ وَ ........ مَبْلَغًا مِنَ الْمَالِ.",
+      "figureDesc": "Paragraphe à trous sur papier quadrillé, avec des pointillés à compléter. Barème : 2 لكل كلمة صحيحة, total /10. Critère : السلامة من الأخطاء. Numéro de page : 16.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسَخُ عَلَى مِنْوَالِ الْمِثَالِ :",
+      "body": "السطر الأول (حروف): عَ ، عِ ، حُ ، هَا — السطر الثاني (مقاطع وكلمات): عِيـ ، حَى ، ـهُو ، عَدَّ",
+      "figureDesc": "Deux lignes quadrillées d'écriture avec les modèles en gras suivis de points de repère pour copier. Barème : 0,25 par lettre ; 0,5 par syllabe/mot ; 0,25 par syllabe/mot. Critères : الوضوح، الجمالية.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتابَةَ الْجُمْلَةِ وَأَنْتَبِهُ إِلَى رَسْمِ الْكَلِمَاتِ.",
+      "body": "يُهَنِّئُ الْمُسْلِمُونَ بَعْضُهُمْ فَرَحًا بِالْعِيدِ.",
+      "figureDesc": "Lignes quadrillées pour recopier la phrase. Barème : 0,25 par mot / 0,5 par mot / 0,25 par mot ; total /10. Critères : الوضوح، الجمالية، الاسترسال، التناسق، الجمالية.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُكْمِلُ الْفِقْرَةَ بِالْمُفْرَدَاتِ النَّاقِصَةِ.",
+      "body": "إملاء : لَبِسَتْ أَرِيجُ كِسْوَةَ الْعِيدِ ........ وَ ........ أُمُّهَا وَ ........ ، فَـ ........ الْأَبُ ........ وَ ........ مَبْلَغًا مِنَ الْمَالِ.",
+      "figureDesc": "Paragraphe à trous sur papier quadrillé, avec des pointillés à compléter. Barème : 2 points par mot correct, total /10. Critère : السلامة من الأخطاء.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p017_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

@@ -1,0 +1,133 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 27,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "كلمات الربط (أدوات الربط) في الحوار، وتوظيفها في الإنشاء (الرياضة)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "وما هي إلا سويعات حتى صار وظل صديقي في غدوه ورواحه\nكانت الساعات تمر بسرعة مذهلة لقد سدت كل الأبواب في وجهي\nكنت في أشد الحاجة إلى تسلحت بالصبر لمواجهة الموقف\nكان الأمل يتجدد مع طلوع كل يوم ثم لا يلبث أن يتبخر كضباب الصباح\nتراءت لنا شواطئها الذهبية أحاطت بها إحاطة السوار بالمعصم\nتهللت وجوه الناس بشرا انتحينا مكانا ظليلا بين الفينة والأخرى\nما شاء الله كم هو بديع سبحان الله وخضنا في حديث ممتع\nلم أدخر جهدا لمساعدته كان بإمكانه أن يكتفي بذلك\nانتصب في تباه وشموخ تمتزج حواسنا بما جادت به الطبيعة من سحر وبهاء\nتنط يمنة ويسرة في خفة ورشاقة رائعة الجمال كالعروس الفاتنة",
+      "figureDesc": "نص مبعثر في أعلى الصفحة: جمل وعبارات متفرقة في عمودين (مسحوب ضوئيا بترتيب غير منتظم).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "production_ecrite_arabe_p027_i1",
+      "topicId": "ar-4-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحوار / كلمات الربط",
+      "body": "الحوار: قال، أجاب، رد قائلا، ثم أردف، بادره قائلا\nكلمات الربط:\n- السببية: بفضل، من أجل، بسبب\n- الغائية: لأجل، حتى، لئلا، قصد\n- الضد والعكس: على الرغم من، عوضا عن، بدلا من\n- الاستثناء: إلا، إذا\n- النظام والترتيب: قبل، بعد، إضافة إلى\n- أدوات الربط: هكذا، كما أن، مثلما، في حين أن، على أن، و",
+      "figureDesc": "جدول من عمودين: عمود «الحوار» (أفعال القول) وعمود «كلمات الربط» مصنفة حسب المعنى.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "production_ecrite_arabe_p027_i2",
+      "topicId": "ar-4-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "متفرقات: الرياضة (محبة للسلم) — عناصر لتوظيفها في الإنشاء",
+      "body": "الرياضة تقوي الجسم وتنشط الأعضاء\nالرياضة تبعث الروح الرياضية\nالرياضة تعلم التعاون والاتحاد\nالرياضة تحفظ الجسم من الأمراض\nالرياضة تكسب الجسم خفة ورشاقة\nالرياضة وسيلة من وسائل نشر الصداقة وال...\nالرياضة تربي الأجيال على الأخلاق الفاضلة",
+      "figureDesc": "قائمة من عمودين: عمود كلمة «الرياضة» مكررة وعمود الجمل المتممة؛ العنوان «الرياضة محبة والسلم» متداخل. الجملة السادسة مقطوعة.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "production_ecrite_arabe_p027_i3",
+      "topicId": "ar-4-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u8",
+  "topicTitle": "Unité 8 : Cohérence textuelle et connecteurs logiques",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-4-m8",
+    "confidence": 0.49
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page, en arabe, porte sur les mots de liaison (السببية، الغائية، الضد، الترتيب) et leur emploi dans le dialogue et la rédaction sur le sport ; le chapitre le plus proche est l'unité 8 (connecteurs logiques), mais elle mélange aussi des expressions de vocabulaire et des idées de rédaction, donc la correspondance n'est pas exacte.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Mots de liaison et dialogue",
+    "skill": "Utiliser les mots de liaison et les verbes de dialogue pour rédiger une production écrite sur le sport.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "mots de liaison",
+      "dialogue",
+      "expression écrite",
+      "sport",
+      "cause et but",
+      "opposition"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau classant les connecteurs (cause, but, opposition, exception, ordre) et la liste d'arguments sur les bienfaits du sport peuvent servir de base à des activités de rédaction guidée ou à des exercices de complétion avec connecteurs.",
+    "themeGroup": "Expressions, proverbes et mots de liaison"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Titre « متفرقات: الرياضة (محبة للسلم) — عناصر لتوظيفها في الإنشاء » inventé/reformulé; l'image montre « متفرقات » et « الرياضة لمحبة والسلم » (fragments disposés en désordre)"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans la section 1, les lignes contiennent deux colonnes (ex. « وظل صديقي في غدوه ورواحه » / « وما هي إلا سويعات حتى صار »); la transcription mélange l'ordre des colonnes et fusionne les phrases"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الأبواب في وجهي » : la ligne est « لقد سدت كل الأبواب في وجهي » — correct ; mais « الاستثناء: إلا، إذا » : l'image indique « إلا إذا » (une seule expression), pas deux mots séparés"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أدوات الربط ... و » : l'image montre « على أن » puis « و » et « إضافة إلى » avec ordre différent (mise en tableau), « بدلا من » et « عوضا عن » inversés par rapport à l'image"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ligne « الرياضة وسيلة من وسائل نشر الصداقة وا... » tronquée dans l'image; la transcription met « وال... » au lieu de « وا... »"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le mot « الرياضة » est répété en colonne à droite dans l'image (7 fois) comme préfixe, la transcription l'a ajouté devant chaque phrase, ce qui est acceptable mais « تقوي الجسم » etc. figurent dans une colonne séparée"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les mots « والسلم » et « لمحبة » en haut de la dernière section sont omis ou reformulés"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

@@ -1,0 +1,109 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 57,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار في اللغة العربية: السند 4 و5 و6 (النظافة، الوضوء، حفظ سورتي التين والشرح)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : لِمَاذَا نَحْرِصُ عَلَى تَنْظِيفِ الْفَمِ بَعْدَ الْأَكْلِ ؟",
+      "body": "السَّنَدُ 4 : شَكَرَ خَلِيلٌ أُمَّهُ لِأَنَّهَا حَرِيصَةٌ عَلَى نَظَافَةِ ثِيَابِهِ وَغُرْفَتِهِ.\nSur la page, trois lignes en pointillés sont prévues pour la réponse écrite. Barème indiqué : 1,5.",
+      "figureDesc": "Trois lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p057_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "التَّعْلِيمَةُ 7 : اشْطُبْ مَا لَا يَدُلُّ عَلَى حُسْنِ الْمُعَامَلَةِ.",
+      "body": "• يَحْرِصُ عَلَى تَزْوِيدِ الْأَبْنَاءِ بِالْعُلُومِ.\n• يُنْفِقُ الْمَالَ عَلَى نَفْسِهِ وَلَا يُنْفِقُ عَلَى أَطْفَالِهِ.\n• يَعْزِفُ عَنْ زِيَارَةِ أَجْدَادِهِ.",
+      "figureDesc": "Liste de trois énoncés à puces ; notes de barème 0,5 en marge.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p057_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "التَّعْلِيمَةُ 8 : اشْطُبِ الرَّقْمَ الْخَاطِئَ لِأَحْصُلَ عَلَى مَرَاحِلِ الْوُضُوءِ مُرَتَّبَةً.",
+      "body": "السَّنَدُ 5 : ذَكَّرَتِ الْأُمُّ ابْنَهَا أَنْ يُحْسِنَ الْوُضُوءَ لِلصَّلَاةِ.\n• مَسْحُ الرَّأْسِ : [5 | 3]\n• غَسْلُ الْوَجْهِ : [3 | 2]\n• غَسْلُ الْيَدَيْنِ إِلَى الْكُوعَيْنِ : [1 | 2]\n• غَسْلُ الرِّجْلَيْنِ إِلَى الْكَعْبَيْنِ : [6 | 5]\n• النِّيَّةُ : [1 | 4]\n• غَسْلُ الْيَدَيْنِ إِلَى الْمِرْفَقَيْنِ : [3 | 4]",
+      "figureDesc": "Six cases, chacune contenant deux numéros dont on doit barrer le faux ; barème 0,25 par item.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p057_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "التَّعْلِيمَةُ 9 : اكْتُبْ أَمَامَ كُلِّ آيَةٍ «سُورَةُ التِّينِ» ، «سُورَةُ الشَّرْحِ».",
+      "body": "السَّنَدُ 6 : تَعَوَّدَتِ الْأُمُّ بَعْدَ الِانْتِهَاءِ مِنْ شُؤُونِ الْمَنْزِلِ أَنْ تَحْفَظَ مَا تَيَسَّرَ مِنَ الْقُرْآنِ.\n• أَلَيْسَ اللهُ بِأَحْكَمِ الْحَاكِمِينَ ( ........ )\n• فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ( ........ )\n• وَهَذَا الْبَلَدِ الْأَمِينِ ( ........ )",
+      "figureDesc": "Chaque verset est suivi de parenthèses avec pointillés pour écrire le nom de la sourate. Filigrane MOURAJAA.COM.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p057_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p3",
+    "confidence": 0.15
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation d'arabe qui regroupe plusieurs supports (4, 5 et 6) : compréhension, bonne conduite, étapes des ablutions et récitation des sourates At-Tîn et Ach-Charh. Elle ne correspond à aucune unité précise parmi les chapitres officiels, donc topicId est null.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Hygiène, ablutions et sourates",
+    "skill": "Comprendre un support écrit et réagir : justifier une habitude d'hygiène, repérer les comportements respectueux, ordonner les étapes des ablutions, identifier des versets de sourates.",
+    "pageType": "exam",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension",
+      "appariement",
+      "autre"
+    ],
+    "keywords": [
+      "hygiène",
+      "ablutions",
+      "sourate At-Tîn",
+      "sourate Ash-Sharh",
+      "bonne conduite",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Chaque consigne s'appuie sur un court support de la vie quotidienne (mère attentive, prière, mémorisation du Coran), avec des formats variés : réponse courte sur l'hygiène, biffer les comportements négatifs, remettre les étapes dans l'ordre en barrant le mauvais numéro, associer un verset à sa sourate.",
+    "themeGroup": "Hygiène, ablutions et sourates"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "unknown",
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

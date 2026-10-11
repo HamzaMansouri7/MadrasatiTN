@@ -1,0 +1,74 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 78,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite : La protection de l'environnement (pollution, recyclage, tri des déchets)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Expression écrite",
+      "body": "·L'environnement est menacé par la pollution qui ne cesse d'augmenter de jour en jour. La pollution de l'eau ! des océans ! de l'air ! de la terre !...Que des ordures ! Que des déchets ! Des sacs en plastique envahissent notre espace et menacent notre ville.\n· La pollution a un effet sur l'air que nous respirons, sur l'eau que nous buvons. Elle a des conséquences sur notre environnement, c'est-à-dire sur les végétaux et les animaux qui s'y trouvent comme nous.\n·Agissons vite ! Notre planète est en danger.\n· Aujourd'hui, la protection de l'environnement devient nécessaire.\n· Faisons vite ! notre planète est malade !",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p078_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Comment protéger l'environnement ?",
+      "body": "- De nombreuses personnes entreprennent des actions pour lutter contre le gaspillage et la pollution.\n- Recycler, c'est protéger notre planète.\n- Pour une planète en bonne santé, il faut savoir recycler !\n- Protéger tout l'environnement en recyclant.\n- Diminuer les déchets.\n- Les déchets, ce n'est pas beau ! Ne les mets pas n'importe où.\n-Organiser des campagnes de nettoyage.\n-Sensibiliser les gens aux problèmes des déchets qui détruisent la beauté de notre milieu naturel.\n- J'aime la nature alors je trie mes déchets. J'aime la nature donc je produis moins de déchets.\n- Trier et recycler, c'est permettre à la nature et la communauté de vivre mieux.\n- Avec les efforts de chacun, notre planète continuera de faire vivre les générations futures.\n- Tous ensemble pour une planète propre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p078_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m6",
+    "confidence": 0.27
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page d'expression écrite porte sur la pollution, le recyclage et la protection de l'environnement, ce qui correspond au Module 5 « Sauver la nature » (écologie et préservation de la nature).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Protection de l'environnement",
+    "skill": "Rédiger un court texte argumentatif ou incitatif pour sensibiliser à la pollution, au recyclage et au tri des déchets.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "environnement",
+      "pollution",
+      "recyclage",
+      "déchets",
+      "tri sélectif",
+      "expression écrite"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation d'écriture sur l'écologie qui part d'un constat alarmant (types de pollution) puis passe à des slogans et des actions concrètes, réutilisable pour des affiches, slogans ou courts textes de sensibilisation.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

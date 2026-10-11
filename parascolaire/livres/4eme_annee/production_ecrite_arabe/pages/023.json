@@ -1,0 +1,117 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 23,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وصف الحالات النفسية والمشاعر: الغضب والحيرة (نصوص داعمة للإنتاج الكتابي)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "لقد اشتهرت بقلبها الرخامي وبقساوتها التي لا يضاهيها فيها أحد\nكان الشر قد جفف كل ينابيع الحب في قلبها\nثارت وهاجت وظنتها إهانة لها وتحقيرا فتمتمت بين شفتيها وبكلمات تنذر بالشر وانفجرت كالبركان الثائر\nحملق إليه طويلا بعينين طافحتين حقدا وشرا\nبدأ يظهر الحسد الذي في نفسه\nحل الجفاء والحقد بيني وبينه محل الألفة والصداقة\nكانت تكتم نحوها غيظا وحقدا شديدين لا حصر لهما",
+      "figureDesc": "إطار يحتوي على جمل متفرقة تصف الحقد والشر والحسد (متابعة لقائمة سابقة).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p023_i1",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الغضب",
+      "body": "ينفجر غضبا بصوت غليظ كأنه هدير النهر في هيجانه\nيغضب فيتطاير الشرر من عينيه وتنفر عروق رقبته وتتصلب عضلاته\nيصيح بصوت جهوري أجش\nيعصره الغيظ والغضب\nكانت تعاتبني في لهجة غاضبة\nانفجر غاضبا كانفجار البركان واحمر وجهه غيضا\nاحمر وجهه وانتفخت عنقه فبرزت عروقه كأشجار الخريف ثم تدفق علينا كما يتدفق النهر في موسم فيضانه",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p023_i2",
+      "topicId": "ar-4-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحيرة",
+      "body": "بقيت مذهولا\nوقفت مترددا\nأجوب الغرفة جيئة وذهابا\nساورتني حيرة كبيرة\nأصابني أرق شديد\nكنت أغوص في بحر من الأفكار\nلم يكحل النوم أجفاني\nماذا أفعل يا إلاهي\nيا للمصيبة     لقد نسيت\nارتسمت علامات الحيرة على محياي\nيا لني من غبي هل أخبر أبي الحقيقة هذا مستحيل\nكانت هذه الأسئلة تخامرذهني\nكان يذرع الغرفة أو المكان جيئة وذهابا\nيحس كأن المكان لم يعد يسعه\nفهو لا يستقر في مكان",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p023_i3",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u4",
+  "topicTitle": "Unité 4 : Description et caractérisation des personnages",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.27
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page propose des expressions pour décrire des états psychologiques et des sentiments (colère, perplexité) à l'appui de la production écrite, ce qui se rapproche de la description et caractérisation des personnages (Unité 4), sans correspondance exacte avec un chapitre officiel.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description de la colère et de la perplexité",
+    "skill": "Employer un lexique et des expressions imagées pour décrire des états psychologiques (colère, perplexité) dans une production écrite.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "colère",
+      "perplexité",
+      "description des sentiments",
+      "champ lexical",
+      "expressions imagées",
+      "production écrite"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banques de phrases modèles classées par émotion (réactions physiques, voix, comparaisons à des phénomènes naturels, monologue intérieur), réutilisables pour des ateliers d'écriture, des exercices de classement ou de réécriture avec le lexique des émotions.",
+    "themeGroup": "Expression des sentiments et émotions"
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Image: « بصوت جهوري أجش » apparaît comme « بصةت جهوري أجش » (artefact de l'image); la transcription « بصوت » est une lecture raisonnable, donc pas d'erreur réelle"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« تخامرذهني » : dans l'image, le texte est « تخامرذهني » (espace manquant, soudé). La transcription reproduit fidèlement l'image, mais la forme correcte serait « تخامر ذهني »"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« يا لني من غبي » : l'image porte « يا لني من غبي », la transcription est conforme (la forme correcte serait « يا لي من غبي »)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« انتفخت عنقه » conforme à l'image; aucune erreur"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

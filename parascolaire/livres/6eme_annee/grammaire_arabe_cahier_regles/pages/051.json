@@ -1,0 +1,158 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 51,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "قواعد اللغة العربية : جمع المؤنث السالم وإعراب الأسماء الخمسة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1 (fin)",
+      "instruction": "",
+      "body": "يكافئ المعلم التلميذة المجتهدة",
+      "figureDesc": "Cadre de réponse vide contenant uniquement la phrase (fin de l'exercice précédent)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p051_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الثاني",
+      "instruction": "ضع الحركة المناسبة في جمع المؤنث السالم",
+      "body": "البنات يعطفن على البائسات\nتجر الخيل العربات\nتلعب الفتيات بالحركات\nيحب الله المؤمنات الصالحات",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p051_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الثالث",
+      "instruction": "أعين وظائف العناصر المسطرة في الجدول",
+      "body": "أبصر المتفرجون فتيات الشبيبة النسائية مقبلات على الميدان رافعات الرايات واللافتات وهن يختلن في أزياء ناصعة البياض رمز الطمأنينة والسلام كأنهن ممرضات",
+      "figureDesc": "Tableau vide à trois colonnes : العنصر المسطر | وظيفته | علامة اعرابه, avec une ligne à remplir",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p051_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الرابع",
+      "instruction": "أكون فقرة في وصف لاعبات تتضمن أسماء في جمع المؤنث السالم",
+      "body": "",
+      "figureDesc": "Cadre vide pour la rédaction",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p051_i4",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "اعراب الأسماء الخمسة - المراجعة",
+      "body": "الأسماء الخمسة هي: أب، أخ، حم، فم، ذو",
+      "figureDesc": "Tableau d'une ligne et cinq cases contenant : أب، أخ، حم، فم، ذو",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p051_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "تعرب الأسماء الخمسة بالحروف إذا كانت مضافة إلى غير المتكلم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p051_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.21
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de grammaire arabe (pluriel féminin sain et déclinaison des cinq noms), alors que les chapitres officiels d'arabe portent sur la narration et ses passages (description, dialogue, explication, prescription) ; aucun ne correspond clairement à cette leçon de grammaire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Pluriel féminin sain et noms des cinq",
+    "skill": "Identifier et accorder le pluriel féminin sain avec sa marque de cas, et connaître l'i'rab des cinq noms (أب، أخ، حم، فم، ذو).",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "grammaire arabe",
+      "pluriel féminin sain",
+      "cinq noms",
+      "i'rab",
+      "fonctions grammaticales",
+      "marques de cas"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement d'exercices : compléter par la voyelle finale, analyser les fonctions dans un tableau à partir d'un texte descriptif (défilé de jeunes filles), puis rédiger un paragraphe imposant l'emploi de pluriels féminins sains ; le rappel de cours des cinq noms est réutilisable en fiche de révision.",
+    "themeGroup": "Le pluriel féminin sain"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « العناصر المسطرة » est correct, mais le tableau (العنصر المسطر | وظيفته | علامة اعرابه) n'est pas transcrit ; les en-têtes de colonnes manquent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes du tableau de l'exercice 3 (العنصر المسطر، وظيفته، علامة اعرابه) sont absents de la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المؤنث » est écrit « المؤنث » dans l'image avec hamza sur waw (المؤنث) ; la transcription est conforme. « المؤمنات » est écrit « المؤمنات » : OK. Aucune erreur sur ces mots."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les titres « التمرين » sont réduits à « [الثاني] », « [الثالث] », « [الرابع] » sans le mot « التمرين » ; les titres « المراجعة » et « اعراب الأسماء الخمسة » sont fusionnés en « اعراب الأسماء الخمسة - المراجعة » alors que ce sont deux titres distincts."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

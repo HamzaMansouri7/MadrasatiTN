@@ -1,0 +1,101 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 82,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مراجعة ودعم: ضرب الأعداد العشرية وقسمتها (note : la page est en réalité une page de mathématiques, pas de langue arabe)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لَوِّنِ الجُذَاذَاتِ المُتَسَاوِيَةَ بِنَفْسِ اللَّوْنِ:",
+      "body": "الصف الأول: 10 × 3,51 ؛ 100 : 4630 ؛ 0,1 × 351 ؛ 1000 : 463. الصف الثاني: 10 : 463 ؛ 100 × 0,351 ؛ 0,01 × 4630 ؛ 0,001 × 463",
+      "figureDesc": "Huit cartes rectangulaires encadrées, disposées en deux rangées de quatre, chacune contenant une opération de multiplication ou de division par 10, 100 ou 1000, ou par 0,1, 0,01 ou 0,001.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p082_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احْسُبْ قِيمَةَ كُلِّ قِسْطٍ.",
+      "body": "شَرَتْ سُعَادُ ثَلَّاجَةً بِـ 1465,500 د فَدَفَعَتْ 345,900 د وَقَسَّمَتِ البَاقِي إِلَى 12 قِسْطٍ.",
+      "figureDesc": "Deux lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p082_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "كَمْ قَبَضَ صَالِحٌ؟",
+      "body": "بَاعَ صَالِحٌ 2,5 كغ مِنْ سَمَكِ القَارُوصِ بِـ 13,900 د لِلكِيلُوغْرَامِ الوَاحِدِ وَبَاعَ أَيْضًا 3,45 كغ مِنْ سَمَكِ الوَرَاطَةِ بِـ 9,750 د لِلكِيلُوغْرَامِ الوَاحِدِ. كَمْ قَبَضَ صَالِحٌ؟",
+      "figureDesc": "Quatre lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "mathematiques_exercices_evaluations_p082_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "احْسُبْ قَيْسَ مَسَاحَتِهَا بِالآرِ؟",
+      "body": "حَدِيقَةٌ مُرَبَّعَةُ الشَّكْلِ طُولُ مُحِيطِهَا 216,08 م.",
+      "figureDesc": "Quatre lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "mathematiques_exercices_evaluations_p082_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.37
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page de révision porte sur la multiplication et la division des nombres décimaux (par 10, 100, 1000, 0,1, 0,01, division par un entier en 12 parts, produits décimaux), ce qui correspond à la Période 3 ; le dernier exercice sur le périmètre et l'aire d'un carré en ares reste un prolongement mineur.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Multiplication et division des décimaux",
+    "skill": "Multiplier et diviser des nombres décimaux, y compris par 10, 100, 1000, 0,1, 0,01 et 0,001, et résoudre des problèmes concrets.",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "multiplication",
+      "division",
+      "multiplication par 0,1",
+      "problèmes de la vie courante",
+      "aire en ares"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un jeu de coloriage où l'on associe des écritures équivalentes (×10, ÷100, ×0,1), ainsi que des problèmes en contexte tunisien (achat à crédit en mensualités, vente de poisson au kilo en dinars, jardin carré dont on déduit l'aire à partir du périmètre).",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

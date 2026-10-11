@@ -1,0 +1,126 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 10,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "تصريف المضاعف في المضارع المجزوم (conjugaison des verbes sourds/redoublés au présent apocopé – مادة اللغة العربية)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "المضارع المجزوم هو ما دخلت عليه إحدى أدوات الجزم وهي: لم ← لم يرسب ؛ لمّا ← لمّا يغادر البيت بعد ؛ لام الأمر لـ ← لنراجع دروسنا ؛ لا الناهية لا ← لا تخالط أصحاب السوء",
+      "figureDesc": "Tableau de 4 colonnes et 2 lignes : les outils de jussion (لم، لمّا، لام الأمر، لا الناهية) avec un exemple pour chacun.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p010_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "الضمائر / الأفعال: كفّ - تردد - استهل\nالمتكلم: أنا: لم أكفَّ، لم أتردد، لم أستهل ؛ نحن: لم نكفَّ، لم نتردد، لم نستهل\nالمخاطب: أنتَ: لم تكفَّ، لم تتردد، لم تستهل ؛ أنتِ: لم تكفّي، لم تترددي، لم تستهلي ؛ أنتما: لم تكفّا، لم تترددا، لم تستهلا ؛ أنتم: لم تكفّوا، لم تترددوا، لم تستهلوا ؛ أنتنّ: لم تكففن، لم تترددن، لم تستهللن\nالغائب: هو: لم يكفَّ، لم يتردد، لم يستهل ؛ هي: لم تكفَّ، لم تتردد، لم تستهل ؛ هما (مذكر): لم يكفّا، لم يترددا، لم يستهلا ؛ هما (مؤنث): لم تكفّا، لم تترددا، لم تستهلا ؛ هم: لم يكفّوا، لم يترددوا، لم يستهلوا ؛ هنّ: لم يكففن، لم يترددن، لم يستهللن",
+      "figureDesc": "Tableau de conjugaison : colonnes الضمائر، الأفعال، كفّ، تردد، استهل ; lignes groupées en المتكلم، المخاطب، الغائب (14 pronoms).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p010_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "يحافظ الفعل على إدغامه في المضارع المجزوم مع جميع الضمائر إلا مع أنتنّ وهنّ فيفك الإدغام.\nعلامة الإعراب في الأفعال المضاعفة المجزومة هي الفتحة النائبة عن السكون مع الضمائر: أنا، نحن، أنت، هو، هي؛ وحذف النون مع الضمائر: أنتِ، أنتما، أنتم، هما مذكر، هما مؤنث، هم.\nلا تتغير علامة الإعراب في الفعل المضارع المسند إلى نون النسوة: هنّ، أنتنّ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p010_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.49
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la conjugaison des verbes sourds (مضاعف) au présent apocopé en arabe, qui relève de la grammaire arabe ; seule l'Unité 1 mentionne la conjugaison des verbes (défectifs), donc c'est le rattachement le plus proche mais l'appariement exact reste incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Verbes redoublés au présent apocopé",
+    "skill": "Conjuguer les verbes sourds (redoublés) au présent apocopé avec tous les pronoms, en appliquant correctement l'idghâm, son dégroupement et les marques de l'apocope.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "verbes redoublés",
+      "présent apocopé",
+      "particules de l'apocope",
+      "idghâm",
+      "conjugaison",
+      "marques d'apocope"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau de conjugaison par pronoms avec trois verbes modèles, précédé d'un rappel des particules d'apocope, peut inspirer des exercices de conjugaison à compléter, des tableaux à remplir ou une affiche de synthèse sur le maintien ou le dégroupement de l'idghâm.",
+    "themeGroup": "Le verbe doublé (mudhaʿʿaf)"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "major",
+        "detail": "La transcription ajoute des voyelles (tashkeel) absentes de l'image dans tout le tableau : « أكفَّ », « نكفَّ », « تكفَّ », « تكفّي », « تكفّا », « تكفّوا », « يكفَّ », « يكفّا », « يكفّوا », « أنتَ », « أنتِ », « أنتنّ », « هنّ ». L'image n'a pas de tashkeel, sauf « لمّا » et « لمّا »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre « تصريف المضاعف في المضارع المجزوم » est absent de la transcription (voir « manquant »). Dans la ligne des conclusions, l'image écrit « انتن » sans hamza et « الاعراب » sans hamza ; la transcription les corrige en « أنتنّ » et « الإعراب ». Ce n'est pas une erreur de sens."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de la page « تصريف المضاعف في المضارع المجزوم » est omis."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes de catégories « المتكلم / المخاطب / الغائب » sont présentes mais la structure du tableau (colonnes) est aplatie. Dans la ligne des conclusions, la phrase « الادغام علامة الاعراب... » est transformée : « فيفك الإدغام » est coupé de la phrase suivante, sans changement de sens."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'image, « لام الأمر لـ » correspond à « لنراجع دروسنا ». La transcription remplace l'espace par « ← » et « ؛ ». Ce sont des ajouts de mise en forme sans gravité."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions « (مذكر) » et « (مؤنث) » après « هما » dans le tableau sont ajoutées : l'image écrit seulement « هما » deux fois. Elles sont déduites du texte des conclusions."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

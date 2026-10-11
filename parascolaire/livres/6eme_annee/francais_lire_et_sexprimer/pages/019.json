@@ -1,0 +1,128 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 19,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : « Une bonne leçon » (d'après Xavier Marmier)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Une bonne leçon\nTrois enfants, se rendant à l'école, pensent que c'est bien ennuyeux d'étudier et se disent : « Allons au bois, nous y trouverons toutes sortes de jolies créatures qui n'ont rien à faire ; nous jouerons avec elles. »\nIls s'en vont et passent, sans oser s'arrêter, devant l'active fourmi ; ils s'écartent aussi devant l'abeille laborieuse. Mais une petite souris, qu'ils invitent, leur répond :\n« Je n'ai que le temps de faire mes provisions d'hiver. »\n« Moi, dit le lièvre, je courrais volontiers avec vous si je m'étais lavé le museau. Avant tout, je dois faire ma toilette.\n- Moi, dit la blanche colombe, j'ai plusieurs choses à porter dans mon nouveau nid. »\nLes enfants, troublés, lèvent les yeux et aperçoivent un pinson perché sur une branche.\n« Ah ! lui disent-ils, toi qui n'as rien à faire, veux-tu venir jouer avec nous ?\n- Rien à faire ? Êtes-vous fous ? répond l'oiseau. Pendant le jour, il faut que je chasse les mouches pour ma nourriture. Il faut que je réjouisse par mes chants le pauvre homme dans son travail... Allez, petits paresseux, allez aussi à votre devoir, et ne venez plus déranger les habitants des bois qui ont tous leur tâche à remplir. »\nD'après Xavier Marmier",
+      "figureDesc": "Texte encadré dans un cadre à coins arrondis, avec bandeau d'en-tête « Lecture - Compréhension » sur un nuage, « Sagesse » et « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p019_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- Les trois enfants aiment l'école. (……………)",
+      "figureDesc": "Case ovale en pointillés pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p019_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1b",
+      "instruction": "Relève, dans le texte, la phrase qui le montre :",
+      "body": "……………………………………………\n……………………………………………",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p019_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2a",
+      "instruction": "Pourquoi les enfants vont-ils au bois ?",
+      "body": "……………………………………………\n……………………………………………",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p019_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.29
+  },
+  "topicSubject": "Français",
+  "topicReason": "Le texte « Une bonne leçon » montre des enfants qui trouvent l'étude ennuyeuse et croisent la fourmi et l'abeille laborieuse, ce qui se rapporte au thème du travail (Module 1 : Travailler pour s'épanouir), mais l'extrait est court et le lien avec le module reste une hypothèse.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    120
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte narratif",
+    "skill": "Comprendre un texte narratif en répondant à des questions et en justifiant par des phrases relevées dans le texte",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "texte narratif",
+      "relever une phrase",
+      "enfants",
+      "école"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un court récit moral avec des enfants tentés de fuir l'école, suivi d'une question oui/non puis d'une justification par relevé de phrase, puis d'une question sur la cause.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : « Sagesse », « Lecture - Compréhension », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », « 18 », « 6ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est absent, alors que les questions 1a, 1b et 2a sont transcrites. Le marqueur [A] est transcrit en « [A] Lis le texte : »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,257 @@
+{
+  "book": "concours_blanc_eveil_scientifique_corrige",
+  "page": 3,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "L'air (propriétés : expansibilité, compressibilité, absence de forme) et la circulation sanguine / échanges gazeux (O2 et CO2) au niveau des organes",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التّعليمة: فسّر ما يحدث خلال التّجربتين",
+      "body": "",
+      "figureDesc": "رسمان تخطيطيّان لتجربتين: الأولى (يمين) تُظهر بالونة متّصلة بأنبوب ينتهي داخل كأس مدرّج منكوس في حوض ماء؛ الثّانية (يسار) تُظهر أنبوب اختبار موضوعًا داخل كأس بها مكعّبات ثلج، وموصولاً بأنبوب ينغمس طرفه في سائل.",
+      "answer": "التّجربة الأولى: يمرّ الهواء في هذه التّجربة تلقائيّا من البالونة الى الكأس المدرّج المنكوس عند وصلهما بانبوب لأنّه غاز قابل للانتشار كما يمكن نقله من اناء الى آخر يتغيّر شكل الهواء بعد انتقاله ليأخذ شكل الكأس المنكوس لأنّ الهواء لا شكل له.\nالتّجربة الثّانية: عند وضع الأنبوب داخل الثّـلج تنخفض درجة حرارة الهواء فيتقلص و يصغر حجمه ما يؤدّي الى دخول الهواء عبر الانبوب فتظهر فقاقيع داخل السائل.",
+      "id": "concours_blanc_eveil_scientifique_corrige_p003_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "confidence": 0.95
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التّعليمة: أكمل الرسم بالبيانات الناقصة",
+      "body": "",
+      "figureDesc": "رسم تخطيطي يبيّن التبادلات الغازيّة في مستوى الأعضاء أو الأسناخ الرئويّة مع مسار الدّم وتبادل الأكسجين وثاني أكسيد الكربون.",
+      "answer": "البيانات المكتوبة على الرّسم:\n- دم أحمر قاتم\n- دم أحمر قاني\n- O₂\n- CO₂",
+      "id": "concours_blanc_eveil_scientifique_corrige_p003_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "confidence": 0.95
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التّعليمة: فسّر مصير الدّم داخل الأعضاء",
+      "body": "",
+      "figureDesc": null,
+      "answer": "يصل الدّم الى الأعضاء أحمر قانيا عبر الشريان الابهر فيزوّد الخلايا بالاكسجين و الغذاء و يخلّصها من ثاني أكسيد الكربون و الفضلات ليخرج من الأعضاء أحمر قاتما",
+      "id": "concours_blanc_eveil_scientifique_corrige_p003_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.95
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "",
+      "body": "السّند: طالعت رانية مجلّتها العلميّة فوجدت التّجربتين التاليتين",
+      "figureDesc": null,
+      "answer": null,
+      "id": "concours_blanc_eveil_scientifique_corrige_p003_i4",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.95
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.8
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des propriétés de l'air (expansibilité, compressibilité) à travers des expériences, ainsi que des échanges gazeux O2/CO2 au niveau des organes, ce qui correspond à l'unité sur l'air et la respiration, même si le schéma de la circulation sanguine pourrait aussi relever de l'unité 3.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Propriétés de l'air et échanges gazeux",
+    "skill": "Interpréter des expériences sur l'expansibilité et la compressibilité de l'air, et expliquer les échanges gazeux entre le sang et les organes.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "air",
+      "expansibilité",
+      "compressibilité",
+      "circulation sanguine",
+      "échanges gazeux",
+      "oxygène et dioxyde de carbone"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : deux montages simples (ballon relié à une éprouvette renversée dans l'eau ; seringue plongée dans la glace) à faire interpréter, puis un schéma de capillaire sanguin à compléter avec les échanges O2/CO2 et la couleur du sang.",
+    "themeGroup": "L'air et ses propriétés"
+  },
+  "audit": {
+    "accuracy": 0.72,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Transcription de la figure 1 : « محقنة موصولة بأنبوب مغمور في سائل » et « تجربة 1 (الجهة اليمنى) / تجربة 2 (الجهة اليسرى) » : ces descriptions et étiquettes ne figurent pas dans l'image (le texte visible est seulement سائل et ثلج). L'ordre droite/gauche est aussi à vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Dans la réponse [3] : « يصل الدّم الى الأعضاء أحمر قانيا » correct, mais « ليخرج من الأعضاء أحمر قاتما » est correct aussi ; en revanche, dans [2] la réponse est inventée : le texte vert n'existe pas dans l'image (seul le schéma avec étiquettes est visible). La partie « réponse » de [2] est donc inventée."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "La phrase « السّند: العت رانية مجلّتها العلميّة فوجدت التّجربتين التاليتين » apparaît à la fin (après [3]) alors qu'elle est un en-tête du document ; elle est dupliquée, et « العت رانية » est probablement à corriger en « العترانية »/« العالمة ... » selon l'image (lecture incertaine)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans [1], « الأنبوب » écrit « الانبوب » et « انتقاله » absent : la phrase « كما يمكن نقله من اناء الى آخر يتغيّر شكل الهواء بعد انتقاله » est correcte mais le mot « انتقاله » est bien présent ; omission mineure de « ط » (lettre parasite au-dessus de التّعليمة) et de « مع » dans la marge ; « Mme » dans [2] omis."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans [2], les étiquettes du schéma : « دم أحمر قاتم » en haut à droite (bleu) et « دم أحمر قاني » en haut à gauche (rouge) ; la transcription n'indique pas leur position précise ; CO2 et O2 en bas (CO2 à gauche, O2 à droite) sont bien présents."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans [1] le tashkeel visible est partiellement perdu (par ex. « يمرّ » ok, mais « التّلج » / « تلقائيّا » avec shadda ok) ; quelques mots comme « فسّر » sont corrects ; cohérence globale acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.7,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 1, body/figureDesc : la description « محقنة موصولة بأنبوب مغمور في سائل », les étiquettes « تجربة 1 (الجهة اليمنى) / تجربة 2 (الجهة اليسرى) » et « كأس مدرّج منكوس داخل إناء به ماء » ne figurent pas dans l'image. Les seuls textes du schéma sont « سائل » et « ثلج ». À droite on voit un tube dans un récipient contenant du liquide, relié par un tuyau à un ballon rouge. À gauche on voit une seringue fixée sur un support, dont le tube plonge dans un bécher contenant de la glace."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 1, answer : les intitulés « التجربة الأولى: » et « التجربة الثانية: » sont ajoutés. L'image contient deux textes verts, un sous chaque schéma, sans ces intitulés."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 2, answer : « O2 يمرّ من الدم الى العضو، CO2 يمرّ من العضو الى الدم » et la précision « (يدخل)/(يخرج) » sont inventés. Aucun texte de réponse n'existe pour cet exercice : les étiquettes du schéma (déjà complétées) sont le seul contenu. Le body ajoute aussi « داخل عضو » et « مع أسهم تبيّن التبادل الغازي », qui sont interprétatifs."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La phrase « السّند: العت رانية مجلّتها العلميّة فوجدت التّجربتين التاليتين » est bien placée après l'exercice 3 dans l'image, ce n'est donc pas une erreur d'ordre. En revanche, elle est dupliquée dans instruction et body : le body doit rester vide. La lecture « العت رانية » correspond à l'image, avec un espace visible."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التّعليمة: فسّر ما يحدث خلال التّجربتين",
+      "body": "",
+      "figureDesc": "جدول من عمودين. في العمود الأيمن رسم لأنبوب في وعاء به سائل، يتصل بأنبوب مرن إلى بالونة حمراء. في العمود الأيسر رسم لمحقنة مثبّتة على حامل، أنبوبها داخل كأس فيه ثلج وسائل، مع التسميتين «سائل» و«ثلج».",
+      "answer": "يمرّ الهواء في هذه التّجربة تلقائيّا من البالونة الى الكأس المدرّج المنكوس عند وصلهما بانبوب لأنّه غاز قابل للانتشار كما يمكن نقله من اناء الى آخر يتغيّر شكل الهواء بعد انتقاله ليأخذ شكل الكأس المنكوس لأنّ الهواء لا شكل له. عند وضع الأنبوب داخل التّلج تنخفض درجة حرارة الهواء فيتقلص و يصغر حجمه ما يؤدّي الى دخول الهواء عبر الانبوب فتظهر فقاقيع داخل السائل."
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التّعليمة: أكمل الرسم بالبيانات الناقصة",
+      "body": "",
+      "figureDesc": "رسم لشعيرة دموية على شكل كمثرى، بجزء أزرق على اليمين وجزء أحمر على اليسار. التسميات الظاهرة: «دم أحمر قاتم» في الأعلى يمين، و«دم أحمر قاني» في الأعلى يسار، و CO2 و O2 في الأعلى، و CO2 في الأسفل يسار، و O2 في الأسفل يمين، مع أسهم صغيرة.",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التّعليمة: فسّر مصير الدّم داخل الأعضاء",
+      "body": "",
+      "figureDesc": "",
+      "answer": "يصل الدّم الى الأعضاء أحمر قانيا عبر الشريان الابهر فيزوّد الخلايا بالاكسجين و الغذاء و يخلّصها من ثاني أكسيد الكربون و الفضلات ليخرج من الأعضاء أحمر قاتما"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "السّند: العت رانية مجلّتها العلميّة فوجدت التّجربتين التاليتين",
+      "body": "",
+      "figureDesc": "",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.95,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التّعليمة: فسّر ما يحدث خلال التّجربتين",
+      "body": "تجربة 1 (الجهة اليمنى): بالونة حمراء موصولة بأنبوب يصل إلى كأس مدرّج منكوس داخل إناء به ماء. تجربة 2 (الجهة اليسرى): محقنة موصولة بأنبوب مغمور في سائل، موضوعة داخل كأس به ثلج؛ مع كتابة: سائل، ثلج.",
+      "figureDesc": "جدول من عمودين: على اليمين رسم لأنبوب اختبار منكوس في ماء مع أنبوب مطاطي يصل إلى بالونة حمراء؛ على اليسار رسم لمحقنة مثبّتة على حامل، أنبوبها داخل كأس فيه ثلج وسائل، مع التسميتين «سائل» و«ثلج».",
+      "answer": "التجربة الأولى: يمرّ الهواء في هذه التّجربة تلقائيّا من البالونة الى الكأس المدرّج المنكوس عند وصلهما بانبوب لأنّه غاز قابل للانتشار كما يمكن نقله من اناء الى آخر يتغيّر شكل الهواء بعد انتقاله ليأخذ شكل الكأس المنكوس لأنّ الهواء لا شكل له. التجربة الثانية: عند وضع الأنبوب داخل التّلج تنخفض درجة حرارة الهواء فيتقلص و يصغر حجمه ما يؤدّي الى دخول الهواء عبر الانبوب فتظهر فقاقيع داخل السائل.",
+      "confidence": 0.9,
+      "id": "concours_blanc_eveil_scientifique_corriges_p003_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التّعليمة: أكمل الرسم بالبيانات الناقصة",
+      "body": "رسم لشعيرة دموية داخل عضو، عليه البيانات: دم أحمر قاتم، دم أحمر قاني، CO2، O2 (في الأعلى)، CO2 و O2 (في الأسفل) مع أسهم تبيّن التبادل الغازي.",
+      "figureDesc": "رسم لشعيرة دموية على شكل كمثرى: جزء أزرق (دم أحمر قاتم يدخل) وجزء أحمر (دم أحمر قاني يخرج)، أسهم لتبادل الغازين O2 وCO2 بين الدم والعضو.",
+      "answer": "دم أحمر قاتم (يدخل)، دم أحمر قاني (يخرج)، O2 يمرّ من الدم الى العضو، CO2 يمرّ من العضو الى الدم.",
+      "confidence": 0.8,
+      "id": "concours_blanc_eveil_scientifique_corriges_p003_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التّعليمة: فسّر مصير الدّم داخل الأعضاء",
+      "body": "",
+      "figureDesc": "",
+      "answer": "يصل الدّم الى الأعضاء أحمر قانيا عبر الشريان الابهر فيزوّد الخلايا بالاكسجين و الغذاء و يخلّصها من ثاني أكسيد الكربون و الفضلات ليخرج من الأعضاء أحمر قاتما",
+      "confidence": 0.93,
+      "id": "concours_blanc_eveil_scientifique_corriges_p003_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "السّند: العت رانية مجلّتها العلميّة فوجدت التّجربتين التاليتين",
+      "body": "السّند: العت رانية مجلّتها العلميّة فوجدت التّجربتين التاليتين",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "concours_blanc_eveil_scientifique_corriges_p003_i4",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "linkStatus": "parked",
+  "bookTitle": "Concours blanc 6ème année — Éveil scientifique (corrigé)"
+}

@@ -1,0 +1,101 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 6,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الأعداد الأكبر من مليون: التفكيك إلى الصيغة القانونية، الجدول، الكتابة الجمعية والجمع (ملاحظation : la page est en réalité une page de mathématiques, numérotée 7 sur le scan)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "فَكِّكِ الأَعْدَادَ التَّالِيَةَ إِلَى صِيغَتِهَا القَانُونِيَّةِ.",
+      "body": "5900 000 = ............\n4750 000 = ............\n10 650 000 = ............\n319 480 629 = ............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p006_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اكْتُبِ الأَعْدَادَ التَّالِيَةَ فِي جَدْوَلِ الوَحَدَاتِ:",
+      "body": "1) سَبْعُونَ مِلْيُونًا وَثَلاثُمِائَةِ أَلْفٍ وَثَمَانُونَ.\n2) سِتُّمِائَةِ مِلْيُونٍ وَمِائَتَانِ وَخَمْسُونَ أَلْفًا وَمِائَتَانِ وَتِسْعَةٌ.\n3) مِائَةٌ وَخَمْسَةٌ وَثَمَانُونَ أَلْفًا وَمِائَةٌ وَخَمْسُونَ.",
+      "figureDesc": "جدول من 9 أعمدة مقسمة إلى ثلاث منازل: منزلة الملايين، منزلة الآلاف، الوحدات البسيطة (كل منزلة من 3 خانات: مئات، عشرات، آحاد)، وثلاثة صفوف مرقمة 1 و2 و3 لكتابة الأعداد.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p006_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "حَوِّلِ الكِتَابَةَ الجَمْعِيَّةَ إِلَى عَدَدٍ يُسَاوِيهَا:",
+      "body": "* 5 + 30 + 100 + 4000 + 50 000 + 200 000 + 6 000 000 = ............\n* 5 000 000 + 10 000 000 + 1000 + 20 000 + 300 000 = ............\n* 300 + 9000 + 70 000 + 1800 000 + 920 000 000 = ............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p006_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَجْرِ العَمَلِيَّاتِ التَّالِيَةَ:",
+      "body": "* 9304978 + 12684095 = ............\n* 512 345 387 + 48 764 936 = ............\n* 362 190 866 + 909 785 674 = ............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p006_i4",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u7",
+    "confidence": 0.24
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les grands nombres supérieurs au million (décomposition canonique, tableau des unités, écriture additive et addition de grands nombres), ce qui correspond à la Période 1 : Grands nombres, opérations et mesures agraires.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Grands nombres supérieurs au million",
+    "skill": "Décomposer, écrire en chiffres, lire dans un tableau de numération et additionner des nombres supérieurs à un million.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "grands nombres",
+      "millions",
+      "forme canonique",
+      "tableau de numération",
+      "écriture additive",
+      "addition posée"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable de quatre exercices : décomposition canonique, placement dans un tableau de numération à partir de nombres écrits en lettres, conversion d'une écriture additive (termes en désordre) en nombre, puis additions posées de grands nombres.",
+    "themeGroup": "Grands nombres entiers"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

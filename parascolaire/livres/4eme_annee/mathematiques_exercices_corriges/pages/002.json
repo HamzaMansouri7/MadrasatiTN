@@ -1,0 +1,61 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 2,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مقدّمة وتوجيهات بيداغوجية لسلسلة تمارين + حلول",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "تعتبر سلسلة تمارين + حلول ، دعامة من دعامات تعلّم التلميذ في مختلف الموادّ ، ضمن تطوّر جديد يخضع لجملة من المواصفات أبرزها :\n• تخطيط الكتاب وبناء مضامينه وفق منطق يستحضر الكفايات المطلوب امتلاكها من لدن المتعلّم في نهاية مرحلة التّعليم الابتدائي، ويعمل على تحقيقها تدريجيًّا .\n• بناء الأنشطة المتضمّنة في الكتاب، وفق ما يضمن حدوث تقاطعات بين مختلف الموادّ الدراسيّة .\n• عدم إغفال خصوصيّات المادّة .\n• محوريّة المتعلّم ، حيث بُنيت الأنشطة بشكل يهيّئ للتلميذ مسارات التعلّم الذّاتي بما يلائم قدراته ومؤهّلاته وما يحدث في محيطه السوسيو-ثقافي .\n\nومن حيث الهيكلة ، فإنّ الكتاب يتكوّن من ثلاثة أصناف من الأنشطة :\n1 . أنشطة تطبيقية محورية تهدف إلى :\n- الرّبط بين مكوّنات المحور على اعتبار أنّها كلّ لا يتجزّأ .\n- إغناء أو تكميل عناصر المحور.\n- تقويم حصيلة المتعلّمين قبل الانتقال إلى المحور الموالي .\n2 . أنشطة للتثبيت والتركيز تعزّز الكفايات المستهدفة .\n3 . أنشطة تقويمية تتزامن مع مواعيد الامتحانات لسدّ بعض الثّغرات المحتملة وتأهيل المتعلّمين للسّنة الموالية.\n\nفهذه السلسة مجهود متواضع أتت لتساهم في البحث والعمل المتواصل المبني على تفكير جادّ . والله وليّ التّوفيق.\nالمؤلّف",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "mathematiques_exercices_corriges_p002_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.13
+  },
+  "topicSubject": "Général (introduction pédagogique)",
+  "topicReason": "La page est une introduction générale et des orientations pédagogiques de la collection « سلسلة تمارين + حلول » pour toutes les matières, sans contenu lié à un chapitre précis du programme de 4ème année.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Autre",
+    "theme": "Présentation pédagogique de la collection",
+    "skill": "Comprendre les principes et l'organisation d'une série d'exercices avec corrigés fondée sur les compétences de fin de cycle primaire",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "introduction",
+      "orientations pédagogiques",
+      "approche par compétences",
+      "exercices corrigés",
+      "fin de cycle primaire",
+      "manuel parascolaire"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Page d'introduction sans exercice ni situation : seule la structure de la collection (compétences visées en fin de primaire, exercices suivis de corrigés) peut inspirer l'organisation d'un support, sans contenu directement réutilisable.",
+    "themeGroup": "Présentation de la collection"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

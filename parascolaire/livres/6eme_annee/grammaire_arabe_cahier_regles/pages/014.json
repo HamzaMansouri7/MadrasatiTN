@@ -1,0 +1,121 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 14,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الفعل الناقص (الناقص الواوي والناقص اليائي) في الماضي – إسناد الناقص الواوي إلى الضمائر",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "الناقص هو ما كانت لامه حرف علة و هو نوعان\nناقص واوي: سما يسمو / خطا يخطو / دنا يدنو\nناقص يائي: بكى يبكي / سعى يسعى / جرى يجري",
+      "figureDesc": "جدول من عمودين: ناقص واوي (سما يسمو، خطا يخطو، دنا يدنو) وناقص يائي (بكى يبكي، سعى يسعى، جرى يجري).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p014_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "جدول تصريف الأفعال (دنا، خطا، سما) في الماضي مع الضمائر:\nالمتكلم: أنا: دنوت، خطوت، سموت / نحن: دنونا، خطونا، سمونا\nالمخاطب: أنتَ: دنوت، خطوت، سموت / أنتِ: دنوت، خطوت، سموت / أنتما: دنوتما، خطوتما، سموتما / أنتم: دنوتم، خطوتم، سموتم / أنتن: دنوتن، خطوتن، سموتن\nالغائب: هو: دنا، خطا، سما / هي: دنت، خطت، سمت / هما (مذكر): دنوا، خطوا، سموا / هما (مؤنث): دنتا، خطتا، سمتا / هم: دنوا، خطوا، سموا / هن: دنون، خطون، سمون",
+      "figureDesc": "جدول: العمود الأول الضمائر (المتكلم، المخاطب، الغائب) وبقية الأعمدة الأفعال دنا، خطا، سما مصرفة في الماضي. (كما في الصورة، في خانتي هما: دنوا/سموا/خطوا و دنتا/سمتا/خطتا)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p014_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "answer",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "تكون حركة عين الناقص الواوي في الماضي دائما مفتوحة\nلا يحذف حرف العلة إلا حين يقترن الفعل\nبتاء التأنيث: دناتا دنتا\nبواو الجمع: دناوا دنوا\nتظهر الواو مع ضمير المتكلم\nيختم الناقص الواوي في الماضي بألف مد إذا اسند إلى الغائب",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p014_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.45454545454545453,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m2",
+    "confidence": 0.48
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la conjugaison du verbe défectif (الناقص الواوي واليائي) au passé, ce qui correspond à la compétence « conjugaison des verbes défectifs » de l'Unité 1 d'arabe (Trimestre 1).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "selfContained": true,
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Verbe défectueux à lettre faible waw",
+    "skill": "Conjuguer au passé les verbes défectueux en waw (nāqiṣ wāwī) avec les pronoms et en déduire les règles de la lettre faible.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "verbe défectueux",
+      "nāqiṣ wāwī",
+      "passé",
+      "conjugaison",
+      "pronoms personnels",
+      "lettre faible"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Démarche réutilisable : rappel, tableau de conjugaison de trois verbes modèles à tous les pronoms, puis déduction guidée des règles (voyelle de la lettre médiane, chute ou maintien de la lettre faible) ; adaptable en exercices de conjugaison à compléter ou en tableau à remplir.",
+    "themeGroup": "Le verbe défectueux"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les marques « أنتَ » et « أنتِ » ajoutent un tashkeel absent de l'image, qui affiche « أنت » deux fois sans voyelles. Il s'agit d'une interprétation, pas d'une transcription fidèle."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« هما (مذكر) » et « هما (مؤنث) » : les précisions entre parenthèses sont inventées. L'image porte « هما » seul, deux fois. De même, « جدول تصريف الأفعال (دنا، خطا، سما) في الماضي مع الضمائر » est une description ajoutée et non du texte. Dans l'image, les en-têtes sont « الأفعال / الضمائر » et les catégories « المتكلم / المخاطب / الغائب »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes « الأفعال » et « الضمائر » du tableau ne sont pas transcrits fidèlement. L'ordre des colonnes (سما، خطا، دنا) n'est pas respecté."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans les conclusions, « بتاء التأنيث: دناتا دنتا » et « بواو الجمع: دناوا دنوا » sont fidèles à l'image. Il manque en revanche la mise en forme du premier exemple, qui est barré ou corrigé. Les formes sont correctes."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "L'ordre des lignes du tableau est bon, mais le tableau d'origine est en colonnes (سما، خطا، دنا de gauche à droite). La transcription le réorganise en lignes par pronom."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

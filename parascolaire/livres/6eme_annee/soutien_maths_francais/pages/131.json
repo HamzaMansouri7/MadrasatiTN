@@ -1,0 +1,159 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 131,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Langue française – Évaluation (examen blanc) : structuration de la langue (grammaire, conjugaison, orthographe) autour du conte. Remarque : la page ne traite pas de mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "15.b",
+      "instruction": "Relie les deux phrases pour exprimer la cause en employant « parce que » : (0,25 pt)",
+      "body": "Je suis heureuse. Mon père me promet de m'emmener à Marrakech.",
+      "figureDesc": "Ligne pointillée pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p131_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15.c",
+      "instruction": "Mets cette phrase à la forme négative : (0,25 pt)",
+      "body": "Le conteur raconte encore l'histoire.",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p131_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "Écris cette phrase à la voix passive : (1 pt)",
+      "body": "Le vieux conteur raconte une fable.",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p131_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "17",
+      "instruction": "Transforme cette phrase au discours indirect : (1 pt)",
+      "body": "Le conteur demande à l'enfant : « as-tu aimé l'histoire ? »",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p131_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "18",
+      "instruction": "C) Conjugaison (6 pts) : Conjugue les verbes entre parenthèses aux temps demandés : (6 pts)",
+      "body": "a) Nous (se promener) ……… maintenant. (Présent de l'indicatif)\nb) Fatima (aller) ……… à Marrakech demain. (Futur simple de l'indicatif)\nc) Les gens (entendre) ……… l'histoire. (Passé composé de l'indicatif)\nd) Vous (choisir) ……… toujours ce conte. (Imparfait de l'indicatif)\ne) (Se reposer) ……… bien. (2e personne du singulier à l'impératif présent)\nf) J'(avoir) ……… la première note. (Conditionnel présent)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p131_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "19",
+      "instruction": "D) Orthographe (3 pts) : Écris correctement les adjectifs qualificatifs entre parenthèses : (1 pt)",
+      "body": "- Les jeunes filles sont (heureux) ………\n- L'histoire est (intéressant) ………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p131_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "20",
+      "instruction": "Mets les noms suivants au pluriel : (1 pt)",
+      "body": "• Une belle-sœur ⇒ ………\n• Un récital ⇒ ………\n• Un corail ⇒ ………\n• Un joujou ⇒ ………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p131_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "21",
+      "instruction": "Complète la phrase suivante avec « tout », « toute », « tous » ou « toutes » : (1 pt)",
+      "body": "- Le conteur demande à ……… les spectatrices de s'asseoir.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p131_i8",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.25
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un examen blanc de français qui couvre plusieurs notions (cause, négation, voix passive, discours indirect, conjugaison à plusieurs temps, accords, pluriels, « tout »), donc elle ne correspond à aucun module précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Structuration de la langue : examen blanc",
+    "skill": "Appliquer les règles de grammaire, de conjugaison et d'orthographe (cause, négation, voix passive, discours indirect, accords, pluriels, « tout ») dans des phrases autour du conte.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "examen blanc",
+      "conjugaison",
+      "voix passive",
+      "discours indirect",
+      "pluriel des noms",
+      "adjectifs qualificatifs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les consignes de transformation de phrases (cause, négation, passif, discours indirect), la conjugaison à trous avec temps imposés et les pièges d'orthographe (pluriels irréguliers, accord de « tout ») s'insèrent dans un contexte de conteur. Ce modèle de barème par exercice se réutilise dans d'autres évaluations.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

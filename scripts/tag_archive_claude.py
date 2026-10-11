@@ -52,7 +52,7 @@ def work(pf):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('--limit', type=int); ap.add_argument('--workers', type=int, default=6); a = ap.parse_args()
-    fs = sorted(Path('parascolaire/_original_frozen/_archive').glob('*/pages/*.json'))
+    fs = sorted(Path('parascolaire_frozen/_archive').glob('*/pages/*.json'))
     if a.limit: fs = fs[::max(1, len(fs) // a.limit)][:a.limit]
     with ThreadPoolExecutor(a.workers) as ex: list(ex.map(work, fs))
     print('DONE', use)

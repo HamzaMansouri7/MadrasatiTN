@@ -1,0 +1,205 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 30,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Exercices de soutien – Unité 5 – 6ème année (Grammaire, Orthographe, Conjugaison, Lexique). Note : la page est une fiche de français, pas de mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "Grammaire 1",
+      "instruction": "Relève le complément circonstanciel de manière (C.C.M) dans les phrases et indique sa nature :",
+      "body": "Les enfants ont couru rapidement. / Il faut manger doucement. / La journée passe vite. / Travaillez sans bavarder ! / Il attend le film avec impatience. / Il m'a accueilli en souriant.",
+      "figureDesc": "Tableau à 3 colonnes : La phrase, C.C.M, Sa nature. 6 lignes, colonnes C.C.M et Sa nature vides.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p030_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Grammaire 2",
+      "instruction": "Transforme les phrases à la voix passive :",
+      "body": "a) Mourad dessine un tableau. b) Le lion attrape la gazelle. c) Les élèves ont célébré la fête. d) Les conducteurs traverseront la voie.",
+      "figureDesc": "Lignes pointillées pour écrire les réponses sous chaque phrase.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p030_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 1",
+      "instruction": "Donne le pluriel des noms suivants :",
+      "body": "Un bisou / Un kangourou / Un clou / Un cheveu / Un adieu / Un jeu / bleu / bijou",
+      "figureDesc": "Tableau à 2 colonnes : Singulier, pluriel (colonne pluriel vide).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p030_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 2",
+      "instruction": "Complète par « peut – peux – peu » :",
+      "body": "a) Il ………… soulever une voiture. b) Je ………… faire ce travail. c) Elle ………… courir. d) Ajoute un ………… de sucre. e) C'est un ………… simple. f) Tu ………… manger ce que tu veux.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p030_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 1",
+      "instruction": "Relie avec des flèches ce qui va ensemble :",
+      "body": "Je – Tu – Nous  /  te dépêches – m'amuse – nous énervons",
+      "figureDesc": "Deux colonnes de points à relier par des flèches.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p030_i5",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 2",
+      "instruction": "Conjugue les verbes au présent de l'indicatif :",
+      "body": "a) Je (se présenter) b) Tu (se disputer) c) Moi et mes amis (se calmer) d) Elles (se souvenir) e) Il (se laver)",
+      "figureDesc": "Lignes pointillées.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p030_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 3",
+      "instruction": "Conjugue les verbes au passé composé :",
+      "body": "a) Je (se doucher) b) Elle (se téléphoner) c) Nous (se promener) d) Elles (s'occuper) e) Ils (se mettre)",
+      "figureDesc": "Lignes pointillées.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p030_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 1",
+      "instruction": "classe les mots dans le tableau sous le bon mot-étiquette :",
+      "body": "Kiwi – avion – carotte – tennis - chien – éléphant – raisin – pomme de terre – rugby – train",
+      "figureDesc": "Tableau : Légume, Fruit, Sport, Animaux, Moyen de transport, avec 2 lignes vides.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p030_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 2",
+      "instruction": "écris trois mots appartenant aux champs thématiques suivants :",
+      "body": "a) espace : b) Technologie : c) pollution :",
+      "figureDesc": "Lignes pointillées pour chaque champ.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p030_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.25
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une fiche de soutien de français (C.C.M, voix passive, pluriel des noms, peut/peux/peu, verbes pronominaux au présent et au passé composé, lexique) qui regroupe plusieurs notions réparties sur plusieurs modules, et aucun module officiel ne correspond clairement à l'ensemble.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Révisions de grammaire, conjugaison et lexique",
+    "skill": "Réinvestir les notions de l'unité 5 : complément circonstanciel de manière, voix passive, pluriel des noms, verbes pronominaux et champs lexicaux.",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "complément circonstanciel de manière",
+      "voix passive",
+      "pluriel des noms",
+      "verbes pronominaux",
+      "champ lexical",
+      "peut/peux/peu"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Fiche de soutien qui regroupe des exercices courts et variés (relever et identifier, transformer, relier sujet et verbe pronominal, classer des mots sous une étiquette, trouver des mots d'un champ thématique), utile comme modèle de structure pour une fiche de révision multi-notions.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Conjugaison 3 b): l'image indique « (se téléphoner) » écrit « téléphoner » avec une faute (« téléphoner » apparaît comme « téléphoner »/« téléphoner »); la transcription corrige en « se téléphoner » — fidélité correcte, mais l'image porte « se téléphoner » sans écart notable"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Conjugaison 3 a): l'image affiche « se doucher », transcrit « se doucher » — correct. Aucune erreur réelle ici"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis: « Exercices de soutien unité 5 - 6ème année » et « Nom et prénom de l'apprenant »"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les sous-colonnes des tableaux (La phrase / C.C.M / Sa nature; Singulier / pluriel; Légume, Fruit, Sport, Animaux, Moyen de transport) ne sont pas transcrites"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Orthographe 2: les points de suite sont de longueurs variables dans l'image; la transcription les uniformise (sans incidence sur le contenu)"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

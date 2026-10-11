@@ -1,0 +1,133 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 44,
+  "grade": "3ème Année",
+  "subject": "الإيقاظ العلمي",
+  "topicGuess": "اختبار نهاية الثلاثي الأول عدد 1 - الإيقاظ العلمي (التنقل عند الحيوان: أوساط التنقل وطرق التنقل)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "في إِطَارِ إِثْرَاءِ مَشْرُوعِ الْقِسْمِ، تَطَوَّعَ رَشِيدٌ لِإِعْدَادِ مَجْمُوعَةٍ مِنَ التَّمَارِينِ فِي الْإِيقَاظِ الْعِلْمِيِّ وَإِنْجَازِهَا. أُشَارِكُ رَشِيدًا عَمَلَهُ الْمُفِيدَ.",
+      "body": "السَّنَدُ 1 : فِي إِطَارِ إِثْرَاءِ مَشْرُوعِ الْقِسْمِ، تَطَوَّعَ رَشِيدٌ لِإِعْدَادِ مَجْمُوعَةٍ مِنَ التَّمَارِينِ فِي الْإِيقَاظِ الْعِلْمِيِّ وَإِنْجَازِهَا. أُشَارِكُ رَشِيدًا عَمَلَهُ الْمُفِيدَ.",
+      "figureDesc": "Page header: nom, prénom, classe; matière الإيقاظ العلمي, niveau السنة الثالثة, اختبار نهاية الثلاثي الأول عدد 1. Colonne des critères (معايير) à droite: معا1، معا ب، معا2أ avec cases de notation.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p044_i1",
+      "topicId": "sci-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "أُرَتِّبُ مَرَاحِلَ التَّنَقُّلِ التَّالِيَةَ مِنَ الْأَبْطَإِ إِلَى الْأَسْرَعِ",
+      "body": "الْعَدْوُ - الْحَبْوُ - الْمَشْيُ\nـــــــــــــ /1   ـــــــــــــ /2   ـــــــــــــ /3",
+      "figureDesc": "Bulle grise contenant les trois mots; trois lignes pointillées numérotées /1 /2 /3 pour écrire l'ordre.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p044_i2",
+      "topicId": "sci-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "أَرْبُطُ الْحَيَوَانَاتِ التَّالِيَةَ فِي الْجَدْوَلِ بِالْأَوْسَاطِ الطَّبِيعِيَّةِ وَطُرُقِ التَّنَقُّلِ الَّتِي تُنَاسِبُهَا.",
+      "body": "الحيوانات: الْأَسَدُ - السَّمَكَةُ - الْعُنْدَلِيبُ\nالأوساط: الْجَوُّ - الْمَاءُ - الْبَرُّ\nطرق التنقل: السِّبَاحَةُ - الطَّيَرَانُ - الْعَدْوُ",
+      "figureDesc": "Trois colonnes d'étiquettes ovales à relier par des points: animaux (à droite), milieux (au centre), modes de déplacement (à gauche).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p044_i3",
+      "topicId": "sci-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2",
+      "instruction": "بَعْدَ إِنْجَازِ جُزْءٍ مِنَ الْعَمَلِ، دَعَتْهُ أُمُّهُ لِتَنَاوُلِ طَعَامِ الْغَدَاءِ ثُمَّ الْعَوْدَةَ لِإِنْهَاءِ مَا تَطَوَّعَ مِنْ أَجْلِهِ.",
+      "body": "السَّنَدُ 2 : بَعْدَ إِنْجَازِ جُزْءٍ مِنَ الْعَمَلِ، دَعَتْهُ أُمُّهُ لِتَنَاوُلِ طَعَامِ الْغَدَاءِ ثُمَّ الْعَوْدَةَ لِإِنْهَاءِ مَا تَطَوَّعَ مِنْ أَجْلِهِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p044_i4",
+      "topicId": "sci-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "أَشْطُبُ الْعُنْصُرَ الدَّخِيلَ فِي كُلِّ مَرَّةٍ.",
+      "body": "تَتَنَقَّلُ فِي الْجَوِّ: الْحَمَامَةُ - الْأُخْطُبُوطُ - الشُّحْرُورُ - الصَّقْرُ\nتَتَنَقَّلُ فِي الْمَاءِ: الْحَبَارُ - سَرَطَانُ الْبَحْرِ - الْخُطَّافُ - الدُّلْفِينُ\nتَتَنَقَّلُ فِي الْبَرِّ: النَّمْرُ - الزَّرَافَةُ - الْغَزَالَةُ - السَّمَكَةُ",
+      "figureDesc": "Trois bulles ovales contenant chacune quatre animaux, reliées à une étiquette en dessous (الجو، الماء، البر).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p044_i5",
+      "topicId": "sci-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "السَّنَدُ 3 : بَعْدَ تَنَاوُلِ وَجْبَةِ الْغَدَاءِ ذَهَبَ رَشِيدٌ إِلَى حَدِيقَةِ الْمَنْزِلِ، فَوَجَدَ خُفَّاشًا عَلَى الْأَرْضِ.",
+      "figureDesc": "Photo en noir et blanc d'une chauve-souris posée au sol (coupée en bas de page). Les questions suivantes ne sont pas visibles.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p044_i6",
+      "topicId": "sci-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-3-u1",
+  "topicTitle": "Unité 1 : La locomotion chez l'homme et l'animal",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-3-u1",
+    "confidence": 0.35
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est un test d'Éveil Scientifique qui porte uniquement sur la locomotion des animaux (milieux et modes de déplacement : marche, course, vol, nage), ce qui correspond à l'unité 1 sur la locomotion chez l'homme et l'animal.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Le déplacement chez les animaux",
+    "skill": "Associer les animaux à leur milieu de vie et à leur mode de déplacement, et repérer les intrus dans une liste.",
+    "pageType": "exam",
+    "formats": [
+      "appariement",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "déplacement des animaux",
+      "milieux de vie",
+      "vol",
+      "nage",
+      "course",
+      "intrus"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les exercices sont encadrés par un fil narratif (un élève prépare des exercices pour le projet de classe, puis découvre une chauve-souris dans le jardin). Les consignes sont variées : classer des allures de la plus lente à la plus rapide, relier animal, milieu et mode de déplacement dans un tableau, barrer l'intrus par milieu. La chauve-souris, mammifère volant, ouvre sur une situation-problème sur les cas ambigus.",
+    "themeGroup": "Déplacement des animaux"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

@@ -1,0 +1,394 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 49,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Examen régional unifié blanc (modèle 1) du certificat d'études primaires, session juillet 2022 (Maroc) – Domaine 1 : Nombres et calcul. Remarque : la page est marocaine, pas tunisienne.",
+  "items": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "المملكة المغربية – وزارة التربية الوطنية والتعليم الأولي والرياضة ; امتحان موحد إقليمي تجريبي (نموذج 1) لنيل شهادة الدروس الابتدائية دورة يوليوز 2022 ; مادة الرياضيات",
+      "body": "أكاديمية : ........ ; المديرية الإقليمية : ........ ; مدة الامتحان : ساعة ونصف ; النقطة : /10 ; النقطة : /40 ; اسم ونسب المتعلم : ........ ; رقم الامتحان : ........ ; المؤسسة : المدرسة الجماعية الأطلس الصغير (manuscrit)",
+      "figureDesc": "Cadre d'en-tête avec l'emblème du Royaume du Maroc ; la ligne de texte en caractères latins stylisés sous l'emblème est [illisible].",
+      "answer": "",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p049_i1"
+    },
+    {
+      "kind": "section",
+      "number": "I",
+      "instruction": "المجال الرئيسي الأول : الأعداد والحساب (17 نقطة)",
+      "body": "",
+      "figureDesc": "",
+      "answer": "",
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p049_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع وأنجز العمليات التالية عموديا : (6ن)",
+      "body": "(326 568 + 1 709,23) – 65 726,2 ; 3 344,12 × 52 ; 4 924,8 ÷ 7,2",
+      "figureDesc": "Tableau à trois colonnes contenant les trois opérations posées en colonnes, avec des calculs manuscrits en rouge.",
+      "answer": "326 568,00 + 1 709,23 = 324 759,23 ; 324 759,23 – 65 726,20 = 259 033,03 ; 3 344,12 × 52 : 668824 + 1672060 = 173 894,24 ; 49248 ÷ 72 = 684 (reste 000), donc 4 924,8 ÷ 7,2 = 684",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p049_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسب ما يلي على عدد كسري مختزل : (2ن)",
+      "body": "((7/4 + 13/9) - 29/36) × 2/3 =",
+      "figureDesc": "",
+      "answer": "((63+52)/36 - 29/36) × 2/3 = (115/36 - 29/36) × 2/3 = 86/36 × 2/3 = 172/108 = 43/27",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p049_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ضع وأنجز ما يلي : (2ن)",
+      "body": "12h 37min 13s - 10h 42min 08s",
+      "figureDesc": "Cadre contenant la soustraction de durées posée en colonnes, manuscrite en rouge ; l'élève a écrit 11h 97min 13s au-dessus de 12h 37min 13s, qui est barré.",
+      "answer": "11h 97min 13s - 10h 42min 08s = 01h 55min 05s",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p049_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "حول جداء العددين التاليين إلى جداء قوى : (2ن)",
+      "body": "27 × 25",
+      "figureDesc": "Réponse écrite à la main, en bleu et en rouge, sur une bande collée.",
+      "answer": "27 × 25 = (3×3×3) × (5×5) = 3³ × 5²",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p049_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "رتب الأعداد التالية ترتيبا تزايديا: (2ن)",
+      "body": "15 ; 2,5 ; 28 ; 14/5 ; 25,1 ; 10/3",
+      "figureDesc": "",
+      "answer": "2,5 < 14/5 < 10/3 < 15 < 25,1 < 28",
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p049_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مسألة: قررت احدى الأسواق الممتازة تخفيض ثمن فرن كهربائي من نوع CANDY بنسبة 30% وذلك بمناسبة اقتراب دخول فصل الصيف حيث أن ثمنه قبل التخفيض هو 1599 dh. أحسب ثمن هذا الفرن بعد التخفيض. (3ن)",
+      "body": "",
+      "figureDesc": "",
+      "answer": "1599 × 30/100 = 479,70 dh ; ثمن هذا الفرن بعد التخفيض هو : 1599 – 479,70 = 1119,30 dh",
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p049_i8"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch1",
+    "confidence": 0.37
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un examen régional blanc de mathématiques (Maroc) qui couvre plusieurs chapitres (opérations décimales, fractions, durées, puissances, ordre des nombres, pourcentage), donc aucun chapitre unique ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres décimaux, fractions et calcul",
+    "skill": "Effectuer des opérations posées sur les décimaux, calculer avec des fractions, des durées et des puissances, ordonner des nombres et résoudre un problème de pourcentage.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "opérations posées",
+      "fractions",
+      "durées",
+      "puissances",
+      "comparaison de nombres",
+      "réduction en pourcentage"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'examen blanc en six exercices courts et notés, couvrant le calcul posé, les fractions, les durées, les puissances, le rangement de nombres de formes mixtes (décimaux et fractions) et un problème de réduction de prix en pourcentage dans un contexte de magasin (soldes d'un appareil électroménager).",
+    "themeGroup": "Nombres décimaux et opérations"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête de la page est omis : ministère, titre de l'examen (امتحان موحد إقليمي تجريبي نموذج 1, شهادة الدروس الابتدائية يوليوز 2022), مادة الرياضيات, durée ساعة ونصف, notes /10 et /40, champs élève/établissement."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de section « المجال الرئيسي الأول : الأعداد والحساب (17 نقطة) » est absent, ainsi que le numéro « 1. » de section."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Annotation « (valeur écrite par l'élève, en réalité 328 277,23) » inventée : elle ne figure pas dans l'image. L'addition de l'élève est à transcrire telle quelle."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 1 : 49248 ÷ 72 écrit « reste 0 » et le quotient est 684, ce qui est correct. Le résultat de 3 344,12 × 52 est écrit 173 894,24 sur la feuille (le calcul écrit montre aussi 668824 + 1672060), la transcription le reprend bien."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'élève a écrit 11h 97min 13s (barré 12h 37min 13s), et le résultat 01h 55min 05s. La transcription simplifie en omettant la barre ; le « 97 » est bien lu."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'énoncé est « احسب ما يلي وأعط الناتج على شكل عدد كسري مختزل » ou équivalent ; la transcription « على عدد كسري مختزل » semble correcte d'après l'image. L'étape intermédiaire « 86/36 » est correcte."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le mot « أحسب » dans l'exercice 6 et « احدى » sont transcrits sans hamza cohérente : l'image montre « احدى » et « أحسب »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête de la page est omis : Royaume du Maroc / ministère de l'Éducation nationale, du Préscolaire et des Sports ; « امتحان موحد إقليمي تجريبي (نموذج 1) لنيل شهادة الدروس الابتدائية دورة يوليوز 2022 » ; « مادة الرياضيات » ; « مدة الامتحان : ساعة ونصف » ; cases de note « النقطة /10 » et « النقطة /40 » ; champs académie, direction provinciale, nom de l'élève, numéro d'examen, établissement."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de section « I. المجال الرئيسي الأول : الأعداد والحساب (17 نقطة) » est absent."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 1 : l'annotation « (valeur écrite par l'élève, en réalité 328 277,23) » ne figure pas dans l'image. Il faut transcrire seulement ce que l'élève a écrit : 324 759,23."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "المملكة المغربية – وزارة التربية الوطنية والتعليم الأولي والرياضة ; امتحان موحد إقليمي تجريبي (نموذج 1) لنيل شهادة الدروس الابتدائية دورة يوليوز 2022 ; مادة الرياضيات",
+      "body": "أكاديمية : ........ ; المديرية الإقليمية : ........ ; مدة الامتحان : ساعة ونصف ; النقطة : /10 ; النقطة : /40 ; اسم ونسب المتعلم : ........ ; رقم الامتحان : ........ ; المؤسسة : المدرسة الجماعية الأطلس الصغير (manuscrit)",
+      "figureDesc": "Cadre d'en-tête avec l'emblème du Royaume du Maroc ; la ligne de texte en caractères latins stylisés sous l'emblème est [illisible].",
+      "answer": "",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p049_i1"
+    },
+    {
+      "kind": "section",
+      "number": "I",
+      "instruction": "المجال الرئيسي الأول : الأعداد والحساب (17 نقطة)",
+      "body": "",
+      "figureDesc": "",
+      "answer": "",
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p049_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع وأنجز العمليات التالية عموديا : (6ن)",
+      "body": "(326 568 + 1 709,23) – 65 726,2 ; 3 344,12 × 52 ; 4 924,8 ÷ 7,2",
+      "figureDesc": "Tableau à trois colonnes contenant les trois opérations posées en colonnes, avec des calculs manuscrits en rouge.",
+      "answer": "326 568,00 + 1 709,23 = 324 759,23 ; 324 759,23 – 65 726,20 = 259 033,03 ; 3 344,12 × 52 : 668824 + 1672060 = 173 894,24 ; 49248 ÷ 72 = 684 (reste 000), donc 4 924,8 ÷ 7,2 = 684",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p049_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسب ما يلي على عدد كسري مختزل : (2ن)",
+      "body": "((7/4 + 13/9) - 29/36) × 2/3 =",
+      "figureDesc": "",
+      "answer": "((63+52)/36 - 29/36) × 2/3 = (115/36 - 29/36) × 2/3 = 86/36 × 2/3 = 172/108 = 43/27",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p049_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ضع وأنجز ما يلي : (2ن)",
+      "body": "12h 37min 13s - 10h 42min 08s",
+      "figureDesc": "Cadre contenant la soustraction de durées posée en colonnes, manuscrite en rouge ; l'élève a écrit 11h 97min 13s au-dessus de 12h 37min 13s, qui est barré.",
+      "answer": "11h 97min 13s - 10h 42min 08s = 01h 55min 05s",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p049_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "حول جداء العددين التاليين إلى جداء قوى : (2ن)",
+      "body": "27 × 25",
+      "figureDesc": "Réponse écrite à la main, en bleu et en rouge, sur une bande collée.",
+      "answer": "27 × 25 = (3×3×3) × (5×5) = 3³ × 5²",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p049_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "رتب الأعداد التالية ترتيبا تزايديا: (2ن)",
+      "body": "15 ; 2,5 ; 28 ; 14/5 ; 25,1 ; 10/3",
+      "figureDesc": "",
+      "answer": "2,5 < 14/5 < 10/3 < 15 < 25,1 < 28",
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p049_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مسألة: قررت احدى الأسواق الممتازة تخفيض ثمن فرن كهربائي من نوع CANDY بنسبة 30% وذلك بمناسبة اقتراب دخول فصل الصيف حيث أن ثمنه قبل التخفيض هو 1599 dh. أحسب ثمن هذا الفرن بعد التخفيض. (3ن)",
+      "body": "",
+      "figureDesc": "",
+      "answer": "1599 × 30/100 = 479,70 dh ; ثمن هذا الفرن بعد التخفيض هو : 1599 – 479,70 = 1119,30 dh",
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p049_i8"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع وأنجز العمليات التالية عموديا : (6ن)",
+      "body": "(326 568 + 1 709,23) – 65 726,2 ; 3 344,12 × 52 ; 4 924,8 ÷ 7,2",
+      "figureDesc": "Tableau à trois colonnes contenant les trois opérations posées en colonnes, avec des calculs manuscrits en rouge.",
+      "answer": "326 568,00 + 1 709,23 = 324 759,23 (valeur écrite par l'élève, en réalité 328 277,23) ; 324 759,23 – 65 726,20 = 259 033,03 ; 3 344,12 × 52 = 173 894,24 ; 49248 ÷ 72 = 684 (reste 0), donc 4 924,8 ÷ 7,2 = 684",
+      "confidence": 0.85,
+      "id": "mouayen_6eme_math_francais_p049_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسب ما يلي على عدد كسري مختزل : (2ن)",
+      "body": "((7/4 + 13/9) - 29/36) × 2/3 =",
+      "figureDesc": "",
+      "answer": "((63+52)/36 - 29/36) × 2/3 = (115/36 - 29/36) × 2/3 = 86/36 × 2/3 = 172/108 = 43/27",
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p049_i2",
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ضع وأنجز ما يلي : (2ن)",
+      "body": "12h 37min 13s - 10h 42min 08s",
+      "figureDesc": "Cadre contenant la soustraction de durées posée en colonnes, manuscrite en rouge.",
+      "answer": "11h 97min 13s - 10h 42min 08s = 01h 55min 05s",
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p049_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "حول جداء العددين التاليين إلى جداء قوى : (2ن)",
+      "body": "27 × 25",
+      "figureDesc": "",
+      "answer": "27 × 25 = (3×3×3) × (5×5) = 3³ × 5²",
+      "confidence": 0.85,
+      "id": "mouayen_6eme_math_francais_p049_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "رتب الأعداد التالية ترتيبا تزايديا: (2ن)",
+      "body": "15 ; 2,5 ; 28 ; 14/5 ; 25,1 ; 10/3",
+      "figureDesc": "",
+      "answer": "2,5 < 14/5 < 10/3 < 15 < 25,1 < 28",
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p049_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مسألة: قررت احدى الأسواق الممتازة تخفيض ثمن فرن كهربائي من نوع CANDY بنسبة 30% وذلك بمناسبة اقتراب دخول فصل الصيف حيث أن ثمنه قبل التخفيض هو 1599 dh. أحسب ثمن هذا الفرن بعد التخفيض. (3ن)",
+      "body": "",
+      "figureDesc": "",
+      "answer": "1599 × 30/100 = 479,70 dh ; ثمن هذا الفرن بعد التخفيض هو : 1599 – 479,70 = 1119,30 dh",
+      "confidence": 0.85,
+      "id": "mouayen_6eme_math_francais_p049_i6",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "self_contained",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

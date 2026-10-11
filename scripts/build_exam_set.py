@@ -2,7 +2,7 @@
 import json, collections, re, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_original_frozen/_archive'); rows = []
+A = Path('parascolaire_frozen/_archive'); rows = []
 BOOK_NAMES = json.loads((A / 'book_names.json').read_text(encoding='utf-8')) if (A / 'book_names.json').exists() else {}
 for pf in sorted(A.glob('*/pages/*.json')):
     d = json.loads(pf.read_text(encoding='utf-8')); t = d.get('tags', {})

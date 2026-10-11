@@ -1,0 +1,145 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 51,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 12 : اختبار تقويمي للتثبيت والدعم (الأعداد حتى 99 999، المسائل، الأعداد العشرية والنقود بالدينار والمليم)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب بالأرقام :",
+      "body": "- تسعة وأربعون ألفا وواحد : ..........\n- ثمانية وخمسون ألفا وثمانون : ..........",
+      "figureDesc": "Deux lignes pointillées destinées à écrire les nombres en chiffres.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p051_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ضع رقما مناسبا مكان النّقط :",
+      "body": "ليكون العدد زوجيًا وأكبر ما يمكن : [ . 530 . ]\nليكون العدد فرديًا وأصغر ما يمكن رقم عشراته مساوٍ لنصف رقم مئاته ومجموع أرقامه 10 : [ . . 3 . 4 ]",
+      "figureDesc": "Deux cadres rectangulaires contenant les nombres à compléter : « .530. » et « ..3.4 .. » (points à remplacer par des chiffres).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p051_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "حوى برميل 2 هل من الزّيت، باع منه الزيّات لحريف أوّل 5 دكل ونصف وباع منه لحريف ثانٍ 83 لترًا. كم لترا بقي في البرميل ؟",
+      "body": "حوى برميل 2 هل من الزّيت، باع منه الزيّات لحريف أوّل 5 دكل ونصف وباع منه لحريف ثانٍ 83 لترًا. كم لترا بقي في البرميل ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p051_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "توجّه أحمد إلى السّوق ومعه ورقة نقدية ذات 10 د والقائمة التّالية :",
+      "body": "• 3 كغ من البطاطا\n• نصف كغ من اللّحم\n• 1 كغ ونصف من البرتقال\n• 4 قتّات من البقدنوس\nعند وصوله إلى السّوق لاحظ قائمة الأسعار التّالية :\n1 كغ من اللّحم : 7 د\nقتّة البقدنوس : 125 مي\n1 كغ من البرتقال : 600 مي\n1 كغ من البطاطا : 420 مي\nأ) أحسب ثمن المشتريات.\nب) بالمقدار المتبقي هل بإمكان أحمد شراء شريطيْ تسجيلٍ بدينارٍ ونصفٍ الشّريط الواحد ؟ علّل جوابك بالأرقام.",
+      "figureDesc": "Cadre en pointillés avec la liste de courses en deux colonnes, puis quatre étiquettes de prix sur pieds (viande, persil, oranges, pommes de terre).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p051_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de consolidation (semaine 12) mêlant nombres à 5 chiffres, problèmes de capacités, monnaie et décimaux, donc couvrant plusieurs chapitres (ch1, ch4, p6) sans correspondance unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    120
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 99 999 et monnaie",
+    "skill": "Écrire et comparer des nombres jusqu'à 99 999 et résoudre des problèmes de capacités et de monnaie (dinar et millime).",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "nombres jusqu'à 99 999",
+      "parité",
+      "problème de capacités",
+      "dinar et millime",
+      "liste de courses"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : vente d'huile à deux clients avec conversion de capacités, courses au marché avec liste et tableau de prix en dinars et millimes, et chiffres manquants à placer selon des contraintes (parité, somme des chiffres, relation entre chiffres).",
+    "themeGroup": "Grands nombres"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « الزّيت » transcrit avec shadda, l'image montre « الزَّيت/الزيت » sans shadda nette ; « الزيّات » correct (الزيّات)."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 3 : le texte de l'énoncé est dupliqué (apparaît deux fois, séparé par ||) ; la deuxième copie est inventée/redondante."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : « زوجيًا » et « فرديًا » : tanwin visible dans l'image, ok ; mais « وأكبر ما يمكن » dans l'image se termine par un point (.) et non « : » ; la ponctuation du 2e item (« : » avant la boîte) n'existe pas dans l'image."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 2 : la boîte est « . 530 . » et la seconde « . . 3 . 4 » : correcte, mais dans l'image les points sont placés « 3 . 4 . . » (lecture RTL) ; ordre des points à vérifier."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Numéro de page 47 et en-tête « الأسبوع 12 / اختبار تقويمي للتثبيت والدعم » absents de la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « شريطيْ » ; l'image montre « شريطيْ تسجيلٍ » avec sukun, OK ; « 1 كغ ونصف » correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,238 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 104,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Grammaire (compléments essentiels, complément de temps, de manière, de lieu) et Conjugaison (passé composé, futur, présent)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": null,
+      "instruction": "",
+      "body": "- Deux compléments essentiels :...........................................................................\n* Le premier complément essentiel :......................................................................\n* Le deuxième complément essentiel :..................................................................\n- Un complément de temps :....................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p104_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Relève dans cette phrase :",
+      "body": "« Le canari se met à voltiger dans la chambre en chantant. »\n\n- Un complément de manière :................................................................................\n- Un complément de lieu :.......................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p104_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "D) 1) a-",
+      "instruction": "D) Conjugaison :\n1) « Christine n'obéit pas à sa mère. Elle va discrètement à la chambre et elle saisit le canari par l'aile. »\na- Réécris ce passage au passé composé en commençant par :",
+      "body": "- Tu.............................................................................................................................\n- Mon frère et moi ...................................................................................................\n- Les deux fillettes....................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p104_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "D) 1) b-",
+      "instruction": "b- Transforme ce passage au futur avec les sujets indiqués :",
+      "body": "- Vous........................................................................................................................\n- Les deux enfants...................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p104_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "D) 2)",
+      "instruction": "2) « Christine promet à sa mère d'être docile. Elle met la boîte sur la table. Mais, curieusement, elle enlève le couvercle et elle prend le canari. »\nMets les verbes de ce passage au passé composé en commençant par :",
+      "body": "- Tu.............................................................................................................................\n- Nous..........................................................................................................................\n- Les deux filles.......................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p104_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "D) 3)",
+      "instruction": "3) « Christine veut attraper l'oiseau mais elle ne peut pas. »\nTransforme au présent en commençant par :",
+      "body": "- Je..............................................................................................................................\n- Nous..........................................................................................................................\n- Elles...........................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p104_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.32
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de français qui mélange grammaire (compléments essentiels, de temps, de manière, de lieu) et conjugaison (passé composé, futur, présent), donc plusieurs modules à la fois sans correspondance claire avec un seul chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compléments de phrase et conjugaison",
+    "skill": "Identifier les compléments essentiels, de temps, de manière et de lieu, et conjuguer des verbes au passé composé, au futur et au présent selon le sujet donné.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "compléments essentiels",
+      "complément circonstanciel",
+      "passé composé",
+      "futur simple",
+      "présent",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un même petit récit (une fillette et un canari) sert de fil conducteur à l'analyse grammaticale puis à la transformation des temps avec des sujets variés (tu, nous, les deux filles). Ce modèle d'évaluation cohérente et contextualisée est facile à réutiliser avec une autre histoire.",
+    "themeGroup": "Grammaire: la phrase"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans [D1] et [D2], la consigne et la phrase citée sont dans un ordre mélangé : pour D2, la consigne « Mets les verbes… » apparaît après la phrase dans l'image, alors que la transcription met le titre avant. Pour D1, la phrase est présentée avant « a- Réécris… » dans l'image, mais l'ordre est inversé dans la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« Les évaluations », « Sagesse », « 6ème année de base ») et le pied de page (« Lire et s'exprimer », « 103 ») ne sont pas transcrits."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« [2 (suite)] Relève dans la phrase (suite de la consigne précédente) » : cette consigne n'existe pas sur la page, elle est inventée. La page commence directement par « - Deux compléments essentiels »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "correctionStatus": "linked",
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "2 (suite)",
+      "instruction": "Relève dans la phrase (suite de la consigne précédente) :",
+      "body": "- Deux compléments essentiels : ........\n* Le premier complément essentiel : ........\n* Le deuxième complément essentiel : ........\n- Un complément de temps : ........",
+      "figureDesc": "Lignes de pointillés à compléter ; le haut de la page porte l'en-tête « Sagesse – Les évaluations – 6ème année de base ». La phrase source est sur la page précédente.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "sagesse_6eme_complet_p104_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Relève dans cette phrase :",
+      "body": "« Le canari se met à voltiger dans la chambre en chantant. »\n- Un complément de manière : ........\n- Un complément de lieu : ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p104_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D1",
+      "instruction": "D) Conjugaison : 1) a- Réécris ce passage au passé composé en commençant par :",
+      "body": "« Christine n'obéit pas à sa mère. Elle va discrètement à la chambre et elle saisit le canari par l'aile. »\n- Tu ........\n- Mon frère et moi ........\n- Les deux fillettes ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p104_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D1-b",
+      "instruction": "b- Transforme ce passage au futur avec les sujets indiqués :",
+      "body": "- Vous ........\n- Les deux enfants ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p104_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D2",
+      "instruction": "Mets les verbes de ce passage au passé composé en commençant par :",
+      "body": "2) « Christine promet à sa mère d'être docile. Elle met la boîte sur la table. Mais, curieusement, elle enlève le couvercle et elle prend le canari. »\n- Tu ........\n- Nous ........\n- Les deux filles ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p104_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D3",
+      "instruction": "Transforme au présent en commençant par :",
+      "body": "3) « Christine veut attraper l'oiseau mais elle ne peut pas. »\n- Je ........\n- Nous ........\n- Elles ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p104_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "examScope": "short_test",
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

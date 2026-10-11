@@ -1,0 +1,335 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 2,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإطار الزمني والمكاني ووصف المحيط والأحاسيس والمشاعر – معجم الإنتاج الكتابي (شبكة تقييم المواضيع)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الإطار الزمني",
+      "body": "المكاني — الطبيعية: الجبال، السهول، الغابات، الأودية، البحر، الصحراء. | الاجتماعية: المدينة، القرية، البنايات، المقهى، السينما. | (عمود بلا عنوان): في فصل الشتاء، في فصل الربيع، في فصل الصيف، في فصل الخريف.",
+      "figureDesc": "جدول بعنوان «الإطار الزمني». الصف الأول: خلية «المكاني» على اليمين ثم ثلاثة أعمدة من اليمين إلى اليسار: الطبيعية، الاجتماعية، وعمود بلا عنوان للفصول (في فصل الشتاء/الربيع/الصيف/الخريف).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "production_ecrite_arabe_p002_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وصف عناصر المحيط",
+      "body": "الحيوانات، النباتات، الشخصيات، أوصاف خلقية، أوصاف خلقية",
+      "figureDesc": "صف في الجدول عنوانه «وصف عناصر المحيط» وقائمة العناصر في خلية واحدة ممتدة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "production_ecrite_arabe_p002_i2"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وصف الأحاسيس والمشاعر",
+      "body": "الفرح، الحزن، الخوف، الإعجاب، الحقد والحسد، الحيرة، الغضب",
+      "figureDesc": "صف في الجدول عنوانه «وصف الأحاسيس والمشاعر» وقائمة المشاعر في الخلية المجاورة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "production_ecrite_arabe_p002_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "أقوال وحكم، تراكيب جميلة، عبارات طريفة",
+      "figureDesc": "صف في الجدول بثلاث عبارات بلا عنوان منفصل.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "production_ecrite_arabe_p002_i4"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "متفرقات، الرسالة، الوصف، السرد",
+      "figureDesc": "صف في الجدول بأربع عبارات بلا عنوان منفصل.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "production_ecrite_arabe_p002_i5"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "شبكة تقييم المواضيع",
+      "figureDesc": "صف أخير في الجدول.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "production_ecrite_arabe_p002_i6"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-ch2",
+    "confidence": 0.41
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un lexique de production écrite en arabe (cadre spatio-temporel, description de l'environnement, sentiments, maximes, grille d'évaluation) qui couvre plusieurs unités et ne correspond à aucun chapitre précis ; seule la description des personnages (ar-4-u4) s'en rapproche partiellement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Lexique pour la production écrite",
+    "skill": "Mobiliser un vocabulaire thématique (cadre spatio-temporel, description, sentiments) pour rédiger un texte et s'auto-évaluer avec une grille.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "production écrite",
+      "lexique",
+      "cadre spatio-temporel",
+      "description",
+      "sentiments",
+      "grille d'évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable comme banque de vocabulaire classée par catégories (lieux, saisons, émotions, personnages) pour concevoir des sujets de rédaction guidés et une grille d'évaluation des productions écrites.",
+    "themeGroup": "Lexique et vocabulaire de la production écrite"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le titre «الإطار الزمني» est l'en-tête du tableau, mais il est transcrit comme une cellule de la première ligne, collé à «المكاني». La structure est erronée."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "La ligne «في فصل الشتاء… الخريف» appartient à une colonne distincte (celle de gauche), mais elle est fusionnée avec la colonne «الاجتماعية». La séparation des colonnes n'est pas respectée."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ligne 4: le contenu «أقوال وحكم، تراكيب جميلة، عبارات طريفة» est dupliqué comme étiquette et comme contenu, alors que l'image ne le montre qu'une seule fois."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ligne 5: «متفرقات» est dupliqué, une fois comme étiquette et une fois dans le contenu. Dans l'image, c'est un seul élément parmi «متفرقات، الرسالة، الوصف، السرد»."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ligne 6: «شبكة تقييم المواضيع» est dupliqué en étiquette et en contenu. L'ordre de lecture dans l'image est «المواضيع شبكة تقييم»."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les sous-colonnes «الطبيعية» et «الاجتماعية» sont présentées comme des listes avec étiquettes, mais le tableau est transcrit sans marquer la colonne «المكاني» comme cellule fusionnée. L'ordre des colonnes (de droite à gauche) est ambigu."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Lignes 4, 5 et 6 (أقوال وحكم…، متفرقات…، شبكة تقييم المواضيع): le champ instruction reprend le texte du corps comme s'il s'agissait d'un titre. Dans l'image, ces lignes n'ont pas d'étiquette séparée et chaque texte n'apparaît qu'une fois. Pour «متفرقات», c'est simplement le premier des quatre éléments. La duplication est donc artificielle."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "figureDesc de l'item 2: la remarque «ربما الثانية تعني أوصاف خُلقية» est une supposition qui n'est pas dans l'image. L'image montre simplement «أوصاف خلقية» deux fois, et c'est bien ce que le corps transcrit."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Item 1: les fleurs de la colonne de gauche (الفصول) ne sont pas séparées dans le corps. Les quatre «في فصل…» suivent directement la liste «الاجتماعية», alors que c'est une troisième colonne sans en-tête. Le figureDesc la décrit correctement, mais le corps devrait la marquer comme colonne distincte."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الإطار الزمني",
+      "body": "المكاني — الطبيعية: الجبال، السهول، الغابات، الأودية، البحر، الصحراء. | الاجتماعية: المدينة، القرية، البنايات، المقهى، السينما. | (عمود بلا عنوان): في فصل الشتاء، في فصل الربيع، في فصل الصيف، في فصل الخريف.",
+      "figureDesc": "جدول بعنوان «الإطار الزمني». الصف الأول: خلية «المكاني» على اليمين ثم ثلاثة أعمدة من اليمين إلى اليسار: الطبيعية، الاجتماعية، وعمود بلا عنوان للفصول (في فصل الشتاء/الربيع/الصيف/الخريف).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "mouayen_production_ecrite_4eme_p002_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وصف عناصر المحيط",
+      "body": "الحيوانات، النباتات، الشخصيات، أوصاف خلقية، أوصاف خلقية",
+      "figureDesc": "صف في الجدول عنوانه «وصف عناصر المحيط» وقائمة العناصر في خلية واحدة ممتدة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_production_ecrite_4eme_p002_i2"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وصف الأحاسيس والمشاعر",
+      "body": "الفرح، الحزن، الخوف، الإعجاب، الحقد والحسد، الحيرة، الغضب",
+      "figureDesc": "صف في الجدول عنوانه «وصف الأحاسيس والمشاعر» وقائمة المشاعر في الخلية المجاورة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_production_ecrite_4eme_p002_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "أقوال وحكم، تراكيب جميلة، عبارات طريفة",
+      "figureDesc": "صف في الجدول بثلاث عبارات بلا عنوان منفصل.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_production_ecrite_4eme_p002_i4"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "متفرقات، الرسالة، الوصف، السرد",
+      "figureDesc": "صف في الجدول بأربع عبارات بلا عنوان منفصل.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_production_ecrite_4eme_p002_i5"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "شبكة تقييم المواضيع",
+      "figureDesc": "صف أخير في الجدول.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_production_ecrite_4eme_p002_i6"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الإطار الزمني",
+      "body": "المكاني — الطبيعية: الجبال، السهول، الغابات، الأودية، البحر، الصحراء. الاجتماعية: المدينة، القرية، البنايات، المقهى، السينما. في فصل الشتاء، في فصل الربيع، في فصل الصيف، في فصل الخريف.",
+      "figureDesc": "جدول بعنوان «الإطار الزمني». الصف الأول «المكاني» مقسم إلى ثلاثة أعمدة: الطبيعية، الاجتماعية، والفصول (في فصل الشتاء/الربيع/الصيف/الخريف).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_production_ecrite_4eme_p002_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وصف عناصر المحيط",
+      "body": "الحيوانات، النباتات، الشخصيات، أوصاف خلقية، أوصاف خلقية",
+      "figureDesc": "صف في الجدول عنوانه «وصف عناصر المحيط» وقائمة العناصر في خلية واحدة ممتدة. تكررت عبارة «أوصاف خلقية» في الصورة (ربما الثانية تعني «أوصاف خُلقية»).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_production_ecrite_4eme_p002_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وصف الأحاسيس والمشاعر",
+      "body": "الفرح، الحزن، الخوف، الإعجاب، الحقد والحسد، الحيرة، الغضب",
+      "figureDesc": "صف في الجدول عنوانه «وصف الأحاسيس والمشاعر» وقائمة المشاعر في الخلية المجاورة.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mouayen_production_ecrite_4eme_p002_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أقوال وحكم – تراكيب جميلة – عبارات طريفة",
+      "body": "أقوال وحكم، تراكيب جميلة، عبارات طريفة",
+      "figureDesc": "صف في الجدول بثلاث خانات.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_production_ecrite_4eme_p002_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "متفرقات",
+      "body": "متفرقات، الرسالة، الوصف، السرد",
+      "figureDesc": "صف في الجدول بأربع خانات.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mouayen_production_ecrite_4eme_p002_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "شبكة تقييم المواضيع",
+      "body": "شبكة تقييم المواضيع",
+      "figureDesc": "صف أخير في الجدول.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_production_ecrite_4eme_p002_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

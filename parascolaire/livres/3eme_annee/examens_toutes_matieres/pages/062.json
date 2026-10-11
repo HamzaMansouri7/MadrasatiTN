@@ -1,0 +1,142 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 62,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "Examen du 1er trimestre N°1 - Écriture et dictée (3ème année). Remarque : la page est en français (écriture cursive latine), pas en arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "je continue :",
+      "body": "• ddd\n• dodo\n• dudu",
+      "figureDesc": "Cadre arrondi à quadrillage de cahier (lignes d'écriture) où l'élève continue les modèles en écriture cursive. Barème à droite : cases C2 et C7.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p062_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "j'écoute et j'écris :",
+      "body": "Deux lignes pointillées vides pour écrire la dictée. Le texte de la dictée n'est pas imprimé sur la page. Barème à droite : cases C4 et C7.",
+      "figureDesc": "Deux lignes pointillées pour la réponse de l'élève.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p062_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Tableau d'attribution des notes (écriture) — note : __ / 4",
+      "body": "Niveau de maîtrise | Critère minimal C2 | Critère de perfectionnement C7\nAucune maîtrise | 0 | de 0 à 1 (C7)\nMaîtrise minimale insuffisante | de 0,5 à 1,5 | (C7)\nMaîtrise minimale | 2 | —\nMaîtrise maximale | de 2,5 à 3 | —",
+      "figureDesc": "Tableau de notation de l'écriture avec colonnes Niveau de maîtrise, Critère minimal (C2) et Critère de perfectionnement (C7).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p062_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Tableau d'attribution des notes (dictée) — note : __ / 4",
+      "body": "Niveau de maîtrise | Critère minimal C4 | Critère de perfectionnement C7\nAucune maîtrise | 0 | de 0 à 1 (C7)\nMaîtrise minimale insuffisante | 1 | (C7)\nMaîtrise minimale | 2 | —\nMaîtrise maximale | 3 | —",
+      "figureDesc": "Tableau de notation de la dictée avec colonnes Niveau de maîtrise, Critère minimal (C4) et Critère de perfectionnement (C7).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p062_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u8",
+    "confidence": 0.35
+  },
+  "topicSubject": "Français (écriture et dictée)",
+  "topicReason": "La page est une évaluation de français (écriture cursive et dictée avec barème) qui ne correspond à aucun chapitre officiel de la liste, celle-ci ne contenant ni unité de français ni unité d'examen de ce type.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Écriture cursive et dictée",
+    "skill": "Reproduire des lettres et syllabes en écriture cursive et écrire sous dictée un court texte.",
+    "pageType": "exam",
+    "formats": [
+      "dictee",
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "écriture cursive",
+      "dictée",
+      "examen trimestriel",
+      "graphisme",
+      "barème",
+      "3ème année"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Réutilisable comme modèle d'évaluation d'écriture : prolonger une suite de lettres ou de syllabes (d, o, u) et dictée notée avec grilles de critères de maîtrise ; contenu pédagogique limité, le texte de la dictée n'étant pas fourni.",
+    "themeGroup": "Écriture et dictée"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête n'est pas transcrit : Matière : écriture et dictée, Niveau : 3ème année, Examen du 1er trimestre N°1, champs Nom/Prénom/3ème."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases de notation C2 et C7 à côté de l'exercice 'je continue' ne sont pas mentionnées (seuls C4 et C7 sont cités pour la dictée)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Dans le tableau d'écriture, « Maîtrise minimale insuffisante | de 0,5 à 1,5 | (C7) » : le C7 est en réalité une cellule fusionnée 'de 0 à 1' couvrant les deux premières lignes ; la répétition '(C7)' est une interprétation."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La cellule C7 'de 0 à 1' est fusionnée sur les lignes Aucune maîtrise et Maîtrise minimale insuffisante, et non seulement sur la première ; la structure du tableau est approximative."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane 'MOURAJAA.COM' n'est pas transcrit (négligeable)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

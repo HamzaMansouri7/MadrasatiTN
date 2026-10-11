@@ -1,0 +1,60 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 2,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Page de titre - Lire et s'exprimer",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "Madrasati TN — Lire et s'exprimer\n6 ème année de base\n\nNidhal Ayari",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.99,
+      "id": "francais_lire_et_sexprimer_p002_i1",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.64
+  },
+  "topicSubject": "Français",
+  "topicReason": "Il s'agit d'une page de titre (page de garde) du manuel parascolaire « Lire et s'exprimer » 6ème année, sans contenu propre à un chapitre ou module précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Page de titre du manuel",
+    "skill": "Identifier le manuel de français et son niveau (6ème année de base) ; aucune compétence travaillée sur cette page.",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "manuel parascolaire",
+      "Lire et s'exprimer",
+      "6ème année",
+      "français",
+      "page de titre"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Simple page de couverture (titre, niveau, auteur) sans contenu pédagogique ; seule l'organisation en « lire » et « s'exprimer » peut inspirer la structure d'un recueil de ressources.",
+    "themeGroup": "Divers"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

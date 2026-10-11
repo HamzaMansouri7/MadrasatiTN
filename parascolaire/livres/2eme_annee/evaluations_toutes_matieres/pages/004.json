@@ -1,0 +1,170 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 4,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "فهم المكتوب (مصطفى المريض) وجدول إسناد الأعداد – تقييم",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَا هُوَ سَبَبُ مَرَضِ مُصْطَفَى ؟",
+      "body": "الْجَوَابُ : ................................................................ (سطران للإجابة) — معيار التقييم: مع 2 أ — العلامة: 1",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_toutes_matieres_p004_i1",
+      "topicId": "ar-2-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَسْتَخْرِجُ الْجُمْلَةَ الْمُنَاسِبَةَ لِلصُّورَةِ مِنَ النَّصِّ وَأَكْتُبُهَا.",
+      "body": "ثلاثة أسطر منقطة للكتابة — معيار التقييم: مع 2 ب — العلامة: 1",
+      "figureDesc": "رسم: أمّ واقفة تضع يدها على جبين ابنها المريض المستلقي في السرير، وبجانب السرير مصباح.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p004_i2",
+      "topicId": "ar-2-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَسْتَخْرِجُ الْجُمْلَةَ الدَّالَّةَ عَلَى ذَلِكَ مِنَ النَّصِّ وَأَكْتُبُهَا :",
+      "body": "خَافَتِ الْأُمُّ عِنْدَمَا عَرَفَتْ أَنَّ ابْنَهَا مَرِيضٌ. — سطران منقطان للكتابة — معيار التقييم: مع 2 ب — العلامة: 1",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p004_i3",
+      "topicId": "ar-2-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أُكْمِلُ الْفَرَاغَاتِ بِالْمُرَادِفَاتِ التَّالِيَةِ : (خَافَتِ - يَتَأَوَّهُ - اِقْتَرَبَتْ)",
+      "body": "وَمَا أَنْ (دَنَتْ) .................... مِنْ غُرْفَتِهِ حَتَّى سَمِعَتْهُ يَسْعُلُ.\nوَهْوَ (يَئِنُّ) ....................\n(جَزِعَتْ) .................... الْأُمُّ وَدَخَلَتِ الْغُرْفَةَ بِسُرْعَةٍ.\nمعيار التقييم: مع 2 ج — العلامات: 1 + 1 + 1",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p004_i4",
+      "topicId": "ar-2-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "هَلْ تُوَافِقُهُ عَلَى ذَلِكَ أَمْ لَا ؟ وَبِمَاذَا تَنْصَحُهُ ؟",
+      "body": "غَيَّرَ مُصْطَفَى مَلَابِسَهُ وَالنَّافِذَةُ مَفْتُوحَةٌ.\nالرَّأْيُ : ....................\nالنَّصِيحَةُ : .................... — معيار التقييم: مع 3 — العلامتان: 1,5 + 1,5",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p004_i5",
+      "topicId": "ar-2-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "المعايير: مع 2 أ، مع 2 ب، مع 2 ج (معايير الحد الأدنى)، مع 3 (معيار التميز).\nانعدام التملك (--): 0 / 0 / 0 / 0.\nالتملك دون الأدنى (+--): 1 / 1 / 1 / 1,5.\nالتملك الأدنى (++-): 2 / 2 / 2.\nالتملك الأقصى (+++): 3 / 3 / 3 / 3.\nمع 1 : الْقِرَاءَةُ الْجَهْرِيَّةُ — الْقِرَاءَةُ السَّلِيمَةُ مِنَ الْأَخْطَاءِ: مِنْ 0 إِلَى 2,5 ؛ الْقِرَاءَةُ الْمُسْتَرْسِلَةُ: مِنْ 0 إِلَى 2,5 ؛ الْقِرَاءَةُ الْمُنَغَّمَةُ: مِنْ 0 إِلَى 3.\nالمجموع: 20 = 12 + 8.",
+      "figureDesc": "جدول تقييم بمستويات التملك والمعايير، وجدول فرعي لقراءة جهرية (مع 1) ومعادلة المجموع.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p004_i6",
+      "topicId": "ar-2-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-2-u3",
+  "topicTitle": "Unité 3 : Santé et bien-être (La visite médicale et l'hygiène)",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-2-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u3",
+    "confidence": 0.46
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de compréhension écrite (Moustafa malade : toux, fenêtre ouverte, mère inquiète) avec grille de notation, ce qui relève du thème santé de l'unité 3, mais l'unité exacte (évaluation) reste incertaine.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de l'écrit : Mustapha malade",
+    "skill": "Comprendre un texte narratif en repérant causes et phrases clés, enrichir son vocabulaire par les synonymes et donner un avis argumenté.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "synonymes",
+      "extraction de phrases",
+      "évaluation par critères",
+      "grille de notation",
+      "santé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : enchaîner questions sur la cause, relevé de phrase illustrant une image, synonymes à replacer dans le texte et avis avec conseil sur un comportement de santé, le tout relié à des critères d'évaluation et une grille de notation à niveaux de maîtrise.",
+    "themeGroup": "Compréhension: la maladie"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Question 6 : la phrase 'خَافَتِ الْأُمُّ عِنْدَمَا عَرَفَتْ أَنَّ ابْنَهَا مَرِيضٌ.' est l'énoncé de la question (affirmation donnée), pas une réponse, et la consigne est introduite par un tiret ; la transcription place l'énoncé après la consigne, ce qui inverse l'ordre (l'énoncé vient avant la consigne 'أَسْتَخْرِجُ...')."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Question 8 : l'énoncé 'غَيَّرَ مُصْطَفَى مَلَابِسَهُ وَالنَّافِذَةُ مَفْتُوحَةٌ.' précède la question 'هَلْ تُوَافِقُهُ...' dans l'image ; la transcription les inverse. Dans l'image, le mot est 'غَيْرَ' (avec sukun sur ي)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 6 : 'مِنَ النَّصِّ' est écrit 'مِنْ ٱلنَّصِّ' dans l'image ; 'ذَلِكَ' est écrit 'ذٰلِكَ' – différences mineures de graphie."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Question 7 : 'وَمَا أَنْ' devrait être 'وَمَا أَنْ' avec 'دَنَتْ' ; dans l'image 'وَمَا أَنْ (دَنَتْ)' est correct, mais 'وَهْوَ' est bien 'وَهْوَ' ; 'اِقْتَرَبَتْ' dans l'image est 'اِقْتَرَبَتْ' – RAS. Dans la phrase 'مِنْ غُرْفَتِهِ' l'image a bien 'غُرْفَتِهِ'."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Tableau : la ligne 'التملك دون الأدنى' est notée (+--) dans la transcription, l'image montre '(--+)' ; la ligne 'التملك الأدنى' est notée (++-) alors que l'image montre '(-++)' ; la colonne مع3 pour le niveau minimal est vide dans l'image (pas de valeur 2)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les marques de notation à gauche (1, 1, 1, 1,5...) et les cases à cocher sont mentionnées partiellement ; la question 4 n'indique 'سطران' que par déduction."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

@@ -1,0 +1,267 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 20,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "تصريف الناقص اليائي في المضارع المرفوع (conjugaison du verbe défectueux à finale yā' au présent de l'indicatif) – matière : langue arabe",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تصريف الناقص اليائي في المضارع المرفوع",
+      "body": "",
+      "figureDesc": "Titre de la page, encadré par une bordure bleue.",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "grammaire_arabe_cahier_regles_p020_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة: علامات إعراب المضارع المرفوع هي",
+      "body": "الضمة الظاهرة: هو يسأل | ثبوت النون: أنت تردين | الضمة المقدرة على اللف: نحن نرضى",
+      "figureDesc": "Tableau de 3 colonnes (الضمة الظاهرة، ثبوت النون، الضمة المقدرة على اللف) avec un exemple sous chaque colonne.",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "grammaire_arabe_cahier_regles_p020_i2"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "الأفعال / الضمائر: جنى | رضي | رعى\nالمتكلم:\nأنا: أجني | أرضى | أرعى\nنحن: نجني | نرضى | نرعى\nالمخاطب:\nأنت: تجني | ترضى | ترعى\nأنت: تجنين | ترضين | ترعين\nأنتما: تجنوان | ترضيان | ترعيان\nأنتم: تجنون | ترضون | ترعون\nأنتن: تجنين | ترضين | ترعين\nالغائب:\nهو: يجني | يرضى | يرعى\nهي: تجني | ترضى | ترعى\nهما: يجنيان | يرضيان | يرعيان\nهما: تجنيان | ترضيان | ترعيان\nهم: يجنون | يرضون | يرعون\nهن: يجنين | يرضين | يرعين",
+      "figureDesc": "Tableau de conjugaison. Cellule d'en-tête diagonale الأفعال / الضمائر ; colonnes = verbes جنى، رضي، رعى ; lignes = pronoms regroupés en المتكلم (أنا، نحن), المخاطب (أنت، أنت، أنتما، أنتم، أنتن), الغائب (هو، هي، هما، هما، هم، هن).",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "grammaire_arabe_cahier_regles_p020_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "إذا تحركت عين الفعل بالفتحة\nلا يحذف حرف العلة إلا عند اقتران الفعل بياء المخاطبة   تنتي ين   تنهين\nبواو الجماعة   يسعيون   يسعون\nإذا تحركت عين الفعل بالكسرة\nلا يطرأ تغيير على حركة عين الفعل إلا إذا اقترن الفعل بواو الجماعة فتنقلب الكسرة ضمة\nيرضيون   يرضون\nلا يحذف حرف العلة إلا حين يقترن الفعل بياء المخاطبة   يمشيون   يمشون",
+      "figureDesc": "Encadré de conclusions (règles).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "grammaire_arabe_cahier_regles_p020_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.36
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la conjugaison du verbe défectueux à finale yā' (جنى، رضي، رعى) au présent de l'indicatif, ce qui correspond à la compétence « conjugaison des verbes défectifs » de l'Unité 1 d'arabe (ar-6-ch1), seul chapitre qui la mentionne.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison du verbe défectueux en yā'",
+    "skill": "Conjuguer au présent de l'indicatif les verbes défectueux à finale yā' et déduire les règles de maintien ou de chute de la lettre faible selon la voyelle de la lettre médiane.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "verbe défectueux",
+      "présent de l'indicatif",
+      "conjugaison",
+      "lettre faible",
+      "voyelle de la lettre médiane",
+      "terminaisons"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau de conjugaison à trois verbes modèles, présenté par personne et suivi d'une règle déduite, peut servir de base à des exercices de transformation ou de repérage d'erreurs, avec des verbes de voyelle médiane différente. La page contient une coquille (forme du duel de جنى) qu'on peut exploiter comme exercice de correction, mais le contenu est très normé et peu original.",
+    "_note": "Page à utiliser avec prudence : le texte OCR est incomplet et contient des fautes.",
+    "themeGroup": "Le verbe défectueux"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Review table: the image reads «أنت تردين» (no tashkeel), the transcription matches. But the title «تصريف الناقص اليائي في المضارع المرفوع» and the heading «الدرس» are missing from the title position; the title is not transcribed."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Row أنتما: the image prints «تجنوان» for جنى; the transcription writes «تجنيان» and puts the note in parentheses, which is a correction rather than a faithful transcription of the page."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "The transcription adds tashkeel («أنتَ», «أنتِ») that is not in the image, which has no vowel marks on the pronouns."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "The text «(la page imprime تجنوان pour جنى)» and the labels «(م)» after هما are annotations that do not appear on the page."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Table header: the image shows the diagonal cell «الأفعال / الضمائر»; the transcription omits «الضمائر» and does not separate the headings المتكلم / المخاطب / الغائب structurally."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Conclusions: «تنتي ين» reproduces the image, but the sentence structure is merged. The page's line breaks and the examples «تنتي ين   تنهين» and «يسعيون   يسعون» are given without separation. The wording «بواو الجماعة» is correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "The page title «تصريف الناقص اليائي في المضارع المرفوع» and the section label «المراجعة» are only partly rendered (the title is missing)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.82,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de la page «تصريف الناقص اليائي في المضارع المرفوع» est visible en haut de l'image et n'est pas transcrit."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ligne أنتما, colonne جنى : la page imprime «تجنوان», mais la transcription écrit «تجنيان» et ajoute une remarque entre parenthèses. C'est une correction, pas une transcription fidèle. Il faut recopier «تجنوان»."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "La mention «(la page imprime تجنوان pour جنى)» et les étiquettes «(م)» après les deux هما sont des ajouts absents de la page."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les pronoms «أنتَ» et «أنتِ» reçoivent une vocalisation absente de l'image, où les deux lignes sont imprimées «أنت» sans voyelles."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans la cellule diagonale de l'en-tête, seul «الأفعال» est transcrit. «الضمائر» est omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans les conclusions, la ponctuation (deux-points, virgules, point-virgule) est ajoutée et les retours à la ligne sont fusionnés. La page présente les exemples séparés par des espaces, sans ponctuation."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تصريف الناقص اليائي في المضارع المرفوع",
+      "body": "",
+      "figureDesc": "Titre de la page, encadré par une bordure bleue.",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "cahier_grammaire_6eme_p020_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة: علامات إعراب المضارع المرفوع هي",
+      "body": "الضمة الظاهرة: هو يسأل | ثبوت النون: أنت تردين | الضمة المقدرة على اللف: نحن نرضى",
+      "figureDesc": "Tableau de 3 colonnes (الضمة الظاهرة، ثبوت النون، الضمة المقدرة على اللف) avec un exemple sous chaque colonne.",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "cahier_grammaire_6eme_p020_i2"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "الأفعال / الضمائر: جنى | رضي | رعى\nالمتكلم:\nأنا: أجني | أرضى | أرعى\nنحن: نجني | نرضى | نرعى\nالمخاطب:\nأنت: تجني | ترضى | ترعى\nأنت: تجنين | ترضين | ترعين\nأنتما: تجنوان | ترضيان | ترعيان\nأنتم: تجنون | ترضون | ترعون\nأنتن: تجنين | ترضين | ترعين\nالغائب:\nهو: يجني | يرضى | يرعى\nهي: تجني | ترضى | ترعى\nهما: يجنيان | يرضيان | يرعيان\nهما: تجنيان | ترضيان | ترعيان\nهم: يجنون | يرضون | يرعون\nهن: يجنين | يرضين | يرعين",
+      "figureDesc": "Tableau de conjugaison. Cellule d'en-tête diagonale الأفعال / الضمائر ; colonnes = verbes جنى، رضي، رعى ; lignes = pronoms regroupés en المتكلم (أنا، نحن), المخاطب (أنت، أنت، أنتما، أنتم، أنتن), الغائب (هو، هي، هما، هما، هم، هن).",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "cahier_grammaire_6eme_p020_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "إذا تحركت عين الفعل بالفتحة\nلا يحذف حرف العلة إلا عند اقتران الفعل بياء المخاطبة   تنتي ين   تنهين\nبواو الجماعة   يسعيون   يسعون\nإذا تحركت عين الفعل بالكسرة\nلا يطرأ تغيير على حركة عين الفعل إلا إذا اقترن الفعل بواو الجماعة فتنقلب الكسرة ضمة\nيرضيون   يرضون\nلا يحذف حرف العلة إلا حين يقترن الفعل بياء المخاطبة   يمشيون   يمشون",
+      "figureDesc": "Encadré de conclusions (règles).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "cahier_grammaire_6eme_p020_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة: علامات إعراب المضارع المرفوع هي",
+      "body": "الضمة الظاهرة: هو يسأل | ثبوت النون: أنت تردين | الضمة المقدرة على اللف: نحن نرضى",
+      "figureDesc": "Tableau de 3 colonnes (الضمة الظاهرة، ثبوت النون، الضمة المقدرة على اللف) avec un exemple sous chaque colonne.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "cahier_grammaire_6eme_p020_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "الأفعال: جنى / رضي / رعى. المتكلم: أنا: أجني، أرضى، أرعى. نحن: نجني، نرضى، نرعى. المخاطب: أنتَ: تجني، ترضى، ترعى. أنتِ: تجنين، ترضين، ترعين. أنتما: تجنيان، ترضيان، ترعيان (la page imprime تجنوان pour جنى). أنتم: تجنون، ترضون، ترعون. أنتن: تجنين، ترضين، ترعين. الغائب: هو: يجني، يرضى، يرعى. هي: تجني، ترضى، ترعى. هما (م): يجنيان، يرضيان، يرعيان. هما (م): تجنيان، ترضيان، ترعيان. هم: يجنون، يرضون، يرعون. هن: يجنين، يرضين، يرعين.",
+      "figureDesc": "Tableau de conjugaison : colonnes = verbes جنى، رضي، رعى ; lignes = pronoms (أنا، نحن، أنت، أنت، أنتما، أنتم، أنتن، هو، هي، هما، هما، هم، هن) regroupés en المتكلم، المخاطب، الغائب.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "cahier_grammaire_6eme_p020_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "إذا تحركت عين الفعل بالفتحة لا يحذف حرف العلة إلا عند اقتران الفعل بياء المخاطبة: تنتي ين، تنهين؛ بواو الجماعة: يسعيون، يسعون. إذا تحركت عين الفعل بالكسرة لا يطرأ تغيير على حركة عين الفعل إلا إذا اقترن الفعل بواو الجماعة فتنقلب الكسرة ضمة: يرضيون، يرضون. لا يحذف حرف العلة إلا حين يقترن الفعل بياء المخاطبة: يمشيون، يمشون",
+      "figureDesc": "Encadré de conclusions (règles).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "cahier_grammaire_6eme_p020_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.82
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

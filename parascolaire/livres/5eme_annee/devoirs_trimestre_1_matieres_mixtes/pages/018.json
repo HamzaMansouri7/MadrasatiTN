@@ -1,0 +1,172 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 18,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "أتعرف الدائرة و القرص الدائري (Reconnaître le cercle et le disque : centre, rayon, diamètre, corde)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أتعرف الدائرة و القرص الدائري",
+      "body": "الدّائرة هي خطّ مغلق يتكوّن من مجموعة نقاط لها نفس البعد عن مركز الدّائرة وكلّ نقطة تنتمي لهذا الخطّ فهي تنتمي للدّائرة والّتي لاتنتمي للخطّ فهي لا تنتمي للدّائرة ومن مكوّنات الدّائرة نجد\n- الشّعاع هو كلّ قطعة مستقيم تربط بين إحدى نقاط الدّائرة والمركز\n- القطر هو كلّ قطعة مستقيم تربط بين نقطتين من نقاط الدّائرة وتمرّ بالمركز\nقيس القطر     قيس الشّعاع\n- الحبل هو قطعة مستقيم تربط بين نقطتين من نقاط الدّائرة ولا يمرّ بالمركز",
+      "figureDesc": "دائرة (تبدو بيضاوية) سوداء مرسومة بمركز نقطة سوداء. شعاع باللون الأحمر الداكن من المركز إلى الأعلى مكتوب عليه «شعاع»، القطر أفقي أصفر مكتوب عليه «القطر»، حبل أزرق في الأسفل مكتوب عليه «حبل»، وكلمة «المركز» بالأسود بجانب المركز.",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "devoirs_trimestre_1_matieres_mixtes_p018_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "القرص الدّائري",
+      "body": ". القرص الدّائري هو خطّ الدّائرة والمساحة المحصورة داخله وبذلك فإنّ كلّ نقطة موجودة على الخطّ الدّائري أو في المساحة المحصورة داخله فإنّها تنتمي للقرص الدّائري",
+      "figureDesc": "قرص دائري أحمر ممتلئ في وسطه نقطة سوداء (المركز) مع عنوان «القرص الدّائري» بالأحمر.",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "devoirs_trimestre_1_matieres_mixtes_p018_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-5-p4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p4",
+    "confidence": 0.52
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite du cercle et du disque (rayon, diamètre, appartenance des points), ce qui correspond à la Période 4 de mathématiques, qui inclut cercle/disque et périmètre du cercle.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Cercle et disque",
+    "skill": "Reconnaître et distinguer le cercle et le disque, et identifier leurs éléments (centre, rayon, diamètre, corde).",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "cercle",
+      "disque",
+      "rayon",
+      "diamètre",
+      "centre",
+      "corde"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Page de cours purement définitionnelle, utile comme base pour créer des exercices de vocabulaire géométrique (appartenance d'un point au cercle ou au disque, repérage des éléments sur une figure) ou une affiche récapitulative.",
+    "themeGroup": "Angles, cercle et triangles"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "« قيس القطر = 2 × قيس الشّعاع » : la page affiche seulement « قيس القطر     قيس الشّعاع » avec un espace vide, sans « = 2 × ». La transcription invente la formule puis ajoute une note entre parenthèses qui n'est pas dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أتعرف » : l'image montre « أتعرّف » (ou « أتعرف ») avec le texte collé au cadre ; pas d'erreur certaine, mais le titre est en rouge et correctement transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes du schéma sont absentes : « شعاع », « المركز », « القطر », « حبل » (le mot est écrit « حبل » ou « حيل » dans l'image). Le libellé « القرص الدائري » au-dessus du disque rouge est bien présent."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« القرص الدائري » du titre n'a pas de tashkeel : cohérent avec l'image. « الشّعاع » est écrit avec chadda dans l'image : conforme."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« réponse: None » apparaît deux fois : ce texte ne figure pas dans l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.92,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "La transcription écrit « قيس القطر = 2 × قيس الشّعاع » et ajoute une note entre parenthèses. L'image affiche seulement « قيس القطر     قيس الشّعاع » avec un espace vide, sans « = 2 × » et sans note. La formule et la note sont supprimées dans la correction."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أتعرف الدائرة و القرص الدائري",
+      "body": "الدّائرة هي خطّ مغلق يتكوّن من مجموعة نقاط لها نفس البعد عن مركز الدّائرة وكلّ نقطة تنتمي لهذا الخطّ فهي تنتمي للدّائرة والّتي لاتنتمي للخطّ فهي لا تنتمي للدّائرة ومن مكوّنات الدّائرة نجد\n- الشّعاع هو كلّ قطعة مستقيم تربط بين إحدى نقاط الدّائرة والمركز\n- القطر هو كلّ قطعة مستقيم تربط بين نقطتين من نقاط الدّائرة وتمرّ بالمركز\nقيس القطر     قيس الشّعاع\n- الحبل هو قطعة مستقيم تربط بين نقطتين من نقاط الدّائرة ولا يمرّ بالمركز",
+      "figureDesc": "دائرة (تبدو بيضاوية) سوداء مرسومة بمركز نقطة سوداء. شعاع باللون الأحمر الداكن من المركز إلى الأعلى مكتوب عليه «شعاع»، القطر أفقي أصفر مكتوب عليه «القطر»، حبل أزرق في الأسفل مكتوب عليه «حبل»، وكلمة «المركز» بالأسود بجانب المركز.",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "livre_mowazi_5eme_math_sciences_p018_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "القرص الدّائري",
+      "body": ". القرص الدّائري هو خطّ الدّائرة والمساحة المحصورة داخله وبذلك فإنّ كلّ نقطة موجودة على الخطّ الدّائري أو في المساحة المحصورة داخله فإنّها تنتمي للقرص الدّائري",
+      "figureDesc": "قرص دائري أحمر ممتلئ في وسطه نقطة سوداء (المركز) مع عنوان «القرص الدّائري» بالأحمر.",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "livre_mowazi_5eme_math_sciences_p018_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أتعرف الدائرة و القرص الدائري",
+      "body": "الدّائرة هي خطّ مغلق يتكوّن من مجموعة نقاط لها نفس البعد عن مركز الدّائرة وكلّ نقطة تنتمي لهذا الخطّ فهي تنتمي للدّائرة والّتي لاتنتمي للخطّ فهي لا تنتمي للدّائرة ومن مكوّنات الدّائرة نجد\n- الشّعاع هو كلّ قطعة مستقيم تربط بين إحدى نقاط الدّائرة والمركز\n- القطر هو كلّ قطعة مستقيم تربط بين نقطتين من نقاط الدّائرة وتمرّ بالمركز\nقيس القطر = 2 × قيس الشّعاع (عبارة مكتوبة: قيس القطر   قيس الشّعاع، الرمز الرياضي غير ظاهر في الصفحة)\n- الحبل هو قطعة مستقيم تربط بين نقطتين من نقاط الدّائرة ولا يمرّ بالمركز",
+      "figureDesc": "دائرة (تبدو بيضاوية) سوداء مرسومة بمركز نقطة سوداء. شعاع باللون الأحمر الداكن من المركز إلى الأعلى مكتوب عليه «شعاع»، القطر أفقي أصفر مكتوب عليه «القطر»، حبل أزرق في الأسفل مكتوب عليه «حبل»، وكلمة «المركز» بالأسود بجانب المركز.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "livre_mowazi_5eme_math_sciences_p018_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "القرص الدّائري",
+      "body": ". القرص الدّائري هو خطّ الدّائرة والمساحة المحصورة داخله وبذلك فإنّ كلّ نقطة موجودة على الخطّ الدّائري أو في المساحة المحصورة داخله فإنّها تنتمي للقرص الدّائري",
+      "figureDesc": "قرص دائري أحمر ممتلئ في وسطه نقطة سوداء (المركز) مع عنوان «القرص الدّائري» بالأحمر.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "livre_mowazi_5eme_math_sciences_p018_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.92
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

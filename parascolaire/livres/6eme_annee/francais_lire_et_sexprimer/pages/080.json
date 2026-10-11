@@ -1,0 +1,74 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 80,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite – Thème 4 : Être en forme et mieux se porter – Les belles expressions (Description d'un malade ; la bonne santé)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Les belles expressions : A) Description d'un malade :",
+      "body": "- Il a pris froid, la fièvre le brûle, son visage est rouge et sa poitrine lui fait mal.\n- J'ai du mal à respirer, je ne me sens pas bien.\n- L'état de la fillette empire, sa mère s'inquiète. Elle tousse beaucoup. Elle n'a pas d'appétit.\n- Il ferme à demi les yeux, il tremble, il respire difficilement. Il a de la fièvre, il gémit de douleur. Il a des maux de gorge et de tête.\n- Il est enfoui sous les couvertures, ses yeux sont pleines de larmes (larmoyants).\n-Le docteur examine attentivement le petit malade. Il écoute les battements de son cœur, il examine ses yeux, il regarde le fond de sa gorge et prend sa température. Enfin, il lui fait une piqure et écrit son ordonnance.\n- Aujourd'hui, il est debout, il va mieux, il s'est amélioré.\n- Après une semaine, le garçon est guéri.\n- Enfin, l'enfant retrouve sa santé.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p080_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "B",
+      "instruction": "B) la bonne santé : Les secrets d'une bonne santé :",
+      "body": "Un corps sain doit être toujours propre. Il faut alors :\n-Se laver les mains avec du savon avant et après avoir mangé.\n-Se brosser les dents après chaque repas et surtout avant de dormir.\n- Se couper les ongles.\n- Nos repas doivent être toujours propres et équilibrés. Il faut alors :\n* Bien laver les légumes avant de les préparer.\n* S'éloigner de la consommation des sucreries.\n* Bien mâcher les aliments avant de les avaler.\n* Consommer un repas qui se compose de viande, de pâtes et de légumes.\n* Diminuer la consommation des matières grasses.\n* Bien laver les fruits avant de les consommer.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p080_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.5,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m6",
+    "confidence": 0.75
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page d'expression écrite porte sur le thème 4 « Être en forme et mieux se porter » (description d'un malade, secrets d'une bonne santé), ce qui correspond au Module 6 de français.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Décrire un malade et la santé",
+    "skill": "Réutiliser un vocabulaire et des expressions pour décrire l'état d'un malade et exposer les règles d'une bonne santé dans une production écrite.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "expression écrite",
+      "santé",
+      "maladie",
+      "hygiène",
+      "description",
+      "expressions"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque d'expressions classées en deux situations (malade et bonne santé), réutilisable pour des consignes de rédaction, des textes à trous ou des affiches de conseils d'hygiène.",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

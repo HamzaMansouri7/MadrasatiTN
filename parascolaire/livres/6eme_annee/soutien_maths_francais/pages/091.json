@@ -1,0 +1,200 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 91,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Épreuve de français (thème : économiser l'eau) – Structures de la langue : transformations de phrases, conjugaison, orthographe. Remarque : la page est une page d'examen (page 3 sur 4), pas une page du manuel Mouayen Math.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Transforme la phrase ci-dessous en une phrase interrogative. (1 pt)",
+      "body": "Elle récupère l'eau de la douche.",
+      "figureDesc": "Ligne en pointillés pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p091_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4A",
+      "instruction": "Transforme la phrase suivante en une phrase négative. (0,5 pt)",
+      "body": "Maman lave la vaisselle en machine.",
+      "figureDesc": "Ligne en pointillés pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p091_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4B",
+      "instruction": "Utilise le mot qui convient pour exprimer la cause. (Puisque – Plus ... que) (0,5 pt)",
+      "body": "............ elle fait la vaisselle avec deux bacs, elle économise de l'eau.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p091_i3",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Écris la phrase ci-dessous à la voix passive. (1 pt)",
+      "body": "Le jardinier arrose le jardin.",
+      "figureDesc": "Ligne en pointillés pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p091_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Transforme la phrase suivante au discours indirect. (1 pt)",
+      "body": "Papa nous demande toujours : « coupez l'eau dès que c'est possible ».",
+      "figureDesc": "Ligne en pointillés pour la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p091_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "C1",
+      "instruction": "C) Conjugaison (6 pts) – Conjugue les verbes entre parenthèses aux temps et modes indiqués. (6 x 1pt)",
+      "body": "1) Je (choisir) ............ des plantes moins gourmandes en eau. (Présent de l'indicatif)\n2) Vous (prendre) ............ des douches courtes. (Futur simple de l'indicatif)\n3) Nous (éviter) ............ les fuites. (Passé composé de l'indicatif)\n4) Ils (se servir) ............ de récupérateurs d'eau de pluie. (Imparfait de l'indicatif)\n5) (Arroser) ............ le jardin le soir. (Impératif présent/deuxième personne du pluriel)\n6) Que (pouvoir) ............-nous faire pour économiser l'eau ? (Conditionnel présent)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p091_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "D1",
+      "instruction": "D) Orthographe (3pts) – 1) Écris correctement les mots entre parenthèses. (1pt)",
+      "body": "Des marchandises (rare) ............ ; un produit (manufacturé) ............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p091_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "D2",
+      "instruction": "Écris au pluriel les mots soulignés. (1pt)",
+      "body": "Un lave-linge : des ............ ; un travail : des ............ (les mots « lave-linge » et « travail » sont soulignés)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p091_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "D3",
+      "instruction": "Complète la phrase par les mots qui conviennent. (1pt)",
+      "body": "(Tout/Tous/Toute/Toutes) ............ citoyen (peu/peux/peut) ............ adopter des gestes responsables pour économiser l'eau.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p091_i9",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.14
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page d'épreuve de français (page 3 sur 4) qui couvre plusieurs notions (transformations de phrases, voix passive, discours indirect, conjugaison à plusieurs temps, orthographe) sans correspondre clairement à un seul module ; le thème de l'économie d'eau se rapproche du module 5 « Sauver la nature » mais l'évaluation est générale.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Transformations de phrases et conjugaison",
+    "skill": "Transformer des phrases (interrogative, négative, passive, discours indirect), conjuguer des verbes et appliquer les règles d'orthographe dans un contexte sur l'économie d'eau.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "transformation de phrases",
+      "voix passive",
+      "discours indirect",
+      "conjugaison",
+      "accord et pluriel",
+      "économie d'eau"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un thème unique (les gestes pour économiser l'eau) relie toutes les consignes de langue, avec un barème détaillé par exercice : on peut réutiliser cette cohérence thématique pour d'autres épreuves structurées en transformations, conjugaison et orthographe.",
+    "themeGroup": "Grammaire: la phrase"
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 3 : l'image indique « Elle récupère l'eau de la douche » ; la transcription est correcte, aucune erreur."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 6 : l'image donne « coupez l'eau dès que c'est possible ». La transcription est correcte."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La numérotation « 3) », « 4) A. », « B. », « 5) », « 6) » et le pied de page « Page 3 sur 4 » ne sont pas transcrits. Ce n'est pas un contenu d'exercice."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "D2 : la transcription ajoute une note sur les mots soulignés. Elle est correcte d'après l'image (lave-linge, travail), mais ce n'est pas du texte imprimé."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

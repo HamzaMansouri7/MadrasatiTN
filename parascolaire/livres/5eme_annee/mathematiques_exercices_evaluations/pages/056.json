@@ -1,0 +1,196 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 56,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "حساب المدة الزمنية والتوقيت (الساعة والدقائق والثواني) – مسائل في الزمن",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "* مَا هُوَ زَمَنُ سَيْرِ القِطَارِ؟\n* أَيُّ الوَسِيلَتَيْنِ أَسْرَعُ؟ ( دُونَ اعْتِبَارِ التَّوَقُّفِ):",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p056_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "* مَتَى سَيُحْقَنُ المَرِيضُ حُقْنَةً ثَانِيَةً؟\n* كَمْ بَقِيَ المَرِيضُ يَنْتَظِرُ لِيُحْقَنَ الحُقْنَةَ الثَّالِثَةَ؟",
+      "body": "حَقَنَتْ مُمَرِّضَةٌ فِي المُسْتَشْفَى مَرِيضًا عَلَى السَّاعَةِ الوَاحِدَةِ و35 دق صَبَاحًا وَسَتَحْقِنُهُ بَعْدَ أَرْبَعِ سَاعَاتٍ وَ45 دق حُقْنَةً ثَانِيَةً عَلَى أَنْ تَحْقِنَهُ ثَالِثَةً عَلَى السَّاعَةِ الحَادِيَةَ عَشَرَ مِنْ نَفْسِ اليَوْمِ.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p056_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "فَهَلْ وَصَلَتْ يَاسْمِينُ إِلَى المَدْرَسَةِ فِي الوَقْتِ المُنَاسِبِ؟ عَلِّلْ إِجَابَتَكَ.\n* مَاهِيَ سَاعَةُ عَوْدَةِ يَاسْمِينَ إِلَى البَيْتِ عِلْمًا وَأَنَّهَا تَقْضِي نَفْسَ تَوْقِيتِ الذَّهَابِ؟",
+      "body": "خَرَجَتْ يَاسْمِينُ مِنَ المَنْزِلِ عَلَى السَّاعَةِ 7 و 35 دق صَبَاحًا فَقَضَتْ 20 دق تَمْشِي حَتَّى تَصِلَ المَدْرَسَةَ. الثَّامِنَةُ صَبَاحًا هِيَ سَاعَةُ الدُّخُولِ إِلَى الأَقْسَامِ،\n- الحِصَّةُ الأُولَى تَنْتَهِي عَلَى السَّاعَةِ 9 و55 دق فَتَعُودُ يَاسْمِينُ إِلَى المَنْزِلِ بَعْدَ أَنْ تَتَوَقَّفَ عِنْدَ الكُتُبِيِّ 17 دق و 5 ث.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p056_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.93
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page contient des problèmes de calcul sur les durées et les horaires (heures, minutes, secondes), ce qui correspond au volet « temps » de la Période 2 de mathématiques.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Durées et calcul du temps",
+    "skill": "Calculer une durée ou une heure d'arrivée en additionnant ou soustrayant heures et minutes dans des situations de la vie courante.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "durée",
+      "heure",
+      "minutes",
+      "problème",
+      "temps",
+      "horaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations réutilisables : horaires d'injections d'un patient à l'hôpital, trajet à pied vers l'école avec heure d'entrée à respecter, comparaison de la vitesse de deux moyens de transport (train) en ignorant les arrêts, avec justification de la réponse.",
+    "themeGroup": "Mesures de durées"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le premier élément contient du texte inventé : « سؤال تكميلي لمسألة سابقة... أربعة أسطر منقّطة » est une description et non du texte de la page."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le deuxième élément contient du texte inventé : « سؤال مقارنة بين وسيلتين (القطار ووسيلة أخرى...) » est une description ajoutée."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "L'exercice 4 est mal structuré. Les deux questions sont recopiées avant l'énoncé, puis répétées dans l'énoncé. L'ordre correct est : énoncé, question 1, question 2."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "L'exercice 5 commence par la question finale, répétée ensuite après l'énoncé. L'ordre n'est pas respecté et la question est dupliquée."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الحَادِيَةَ عَشَرَ » : sur l'image on lit « الحادية عشر » ; le tashkeel de la transcription diffère de celui de l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« التَّوَقُّفِ » dans la transcription ; l'image montre « التَّوقُّف » avec des voyelles légèrement différentes."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الكُتُبِيِّ » ; l'image montre « الكُتبيّ », avec un tashkeel différent."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "« 17 دق و 5 ث » est correct. « 45 دق » est également correct. Les chiffres sont bons mais la mise en forme est incohérente : « و35 دق »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de réponse pointillées ne sont pas représentées, sauf par des descriptions inventées. L'exercice 5 compte quatre lignes, puis deux autres après la dernière question."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "مَاهُوَ زَمَنُ سَيْرِ القِطَارِ؟",
+      "body": "سؤال تكميلي لمسألة سابقة (القطار) واردة في الصفحة السابقة. يتبعه أربعة أسطر منقّطة للإجابة.",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_ahram_5eme_complet_p056_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَيُّ الوَسِيلَتَيْنِ أَسْرَعُ؟ ( دُونَ اعْتِبَارِ التَّوَقُّفِ):",
+      "body": "سؤال مقارنة بين وسيلتين (القطار ووسيلة أخرى من المسألة السابقة). يتبعه سطران منقطان للإجابة.",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "al_ahram_5eme_complet_p056_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَتَى سَيُحْقَنُ المَرِيضُ حُقْنَةً ثَانِيَةً؟ / كَمْ بَقِيَ المَرِيضُ يَنْتَظِرُ لِيُحْقَنَ الحُقْنَةَ التَّالِيَةَ؟",
+      "body": "حَقَنَتْ مُمَرِّضَةٌ فِي المُسْتَشْفَى مَرِيضًا عَلَى السَّاعَةِ الوَاحِدَةِ و35 دق صَبَاحًا وَسَتَحْقِنُهُ بَعْدَ أَرْبَعِ سَاعَاتٍ و45 دق حُقْنَةً ثَانِيَةً عَلَى أَنْ تَحْقِنَهُ ثَالِثَةً عَلَى السَّاعَةِ الحَادِيَةَ عَشَرَ مِنْ نَفْسِ اليَوْمِ.\n* مَتَى سَيُحْقَنُ المَرِيضُ حُقْنَةً ثَانِيَةً؟\n* كَمْ بَقِيَ المَرِيضُ يَنْتَظِرُ لِيُحْقَنَ الحُقْنَةَ التَّالِيَةَ؟",
+      "figureDesc": "أسطر منقطة للإجابة بعد كل سؤال (سطران لكل سؤال)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_ahram_5eme_complet_p056_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "هَلْ وَصَلَتْ يَاسْمِينُ إِلَى المَدْرَسَةِ فِي الوَقْتِ المُنَاسِبِ؟ عَلِّلْ إِجَابَتَكَ.",
+      "body": "خَرَجَتْ يَاسْمِينُ مِنَ المَنْزِلِ عَلَى السَّاعَةِ 7 و 35 دق صَبَاحًا فَقَضَتْ 20 دق تَمْشِي حَتَّى تَصِلَ المَدْرَسَةَ. الثَّامِنَةُ صَبَاحًا هِيَ سَاعَةُ الدُّخُولِ إِلَى الأَقْسَامِ، فَهَلْ وَصَلَتْ يَاسْمِينُ إِلَى المَدْرَسَةِ فِي الوَقْتِ المُنَاسِبِ؟ عَلِّلْ إِجَابَتَكَ.\n- الحِصَّةُ الأُولَى تَنْتَهِي عَلَى السَّاعَةِ 9 و55 دق فَتَعُودُ يَاسْمِينُ إِلَى المَنْزِلِ بَعْدَ أَنْ تَتَوَقَّفَ عِنْدَ الكُتُبِيِّ 17 دق و 5 ث.\n* مَاهِيَ سَاعَةُ عَوْدَةِ يَاسْمِينَ إِلَى البَيْتِ عِلْمًا وَأَنَّهَا تَقْضِي نَفْسَ تَوْقِيتِ الذَّهَابِ؟",
+      "figureDesc": "أسطر منقطة للإجابة (أربعة أسطر بعد السؤال الأول وسطران بعد السؤال الأخير)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_ahram_5eme_complet_p056_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "linkStatus": "clean",
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

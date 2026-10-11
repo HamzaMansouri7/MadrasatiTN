@@ -1,0 +1,148 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 70,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "Production écrite en français (et non en arabe) : construire une phrase avec des étiquettes à partir d'un dessin, Séquences 4 à 6 (journée d'Amélie), avec le tableau d'attribution des notes. Remarque : la page est en français, pas en arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "je regarde le dessin et je fais une phrase avec les étiquettes :",
+      "body": "Séquence 4 : puis, elle va dans la salle à manger. que fait-elle ? Étiquettes : déjeuner | . | amélie | petit | prend | son",
+      "figureDesc": "Dessin d'une fillette assise à table dans la salle à manger, avec un verre, une brique de lait, une pomme et des couverts. Deux lignes pointillées pour écrire la phrase. Cases de notation C1, C3 et C7 sur la marge.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p070_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "je regarde le dessin et je fais une phrase avec les étiquettes :",
+      "body": "Séquence 5 : après, elle prépare son cartable pour aller à l'école. qu'est-ce qu'il y a dans le cartable d'amélie ? Étiquettes : cartable | trousse | cahier | dans | il y a | et | le | règle | , | , | . | une | une | un",
+      "figureDesc": "Dessin d'un cahier ouvert, d'une règle et d'une trousse. Deux lignes pointillées pour écrire. Cases C1, C3 et C7 sur la marge. Filigrane « MOURAJAA.COM ».",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p070_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "je regarde le dessin et je fais une phrase avec les étiquettes :",
+      "body": "Séquence 6 : enfin, elle va à l'école. maintenant, elle est en classe. dans la classe d'amélie, il y a un maître ou une maîtresse ? Étiquettes : il y a | classe | dans | une | d'amélie | la | , | . | maîtresse",
+      "figureDesc": "Dessin d'une maîtresse debout devant le tableau noir, une baguette à la main, avec un globe et des cartes au mur. Deux lignes pointillées pour écrire. Cases C1, C3 et C7 sur la marge.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p070_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Tableau d'attribution des notes",
+      "body": "Niveau de maîtrise | Critères minimaux (C1, C3) | Critère de perfectionnement (C7). Aucune maîtrise : C1 = 0, C3 = 0. Maîtrise minimale insuffisante : C1 de 0,5 à 1,5, C3 de 0,5 à 1,5, C7 de 0 à 3. Maîtrise minimale : C1 = 3, C3 = 1 (valeur partiellement coupée). La ligne « Maîtrise maximale » est coupée.",
+      "figureDesc": "Tableau de notation coupé en bas de page.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "examens_toutes_matieres_p070_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u3",
+    "confidence": 0.21
+  },
+  "topicSubject": "Français (production écrite)",
+  "topicReason": "La page porte sur la production écrite en français (construire des phrases avec des étiquettes, séquences 4 à 6 et grille de notation), matière absente de la liste officielle, qui ne contient que l'arabe, les mathématiques et l'éveil scientifique ; aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Production écrite : phrases avec étiquettes",
+    "skill": "Construire une phrase correcte à partir d'un dessin en remettant dans l'ordre des étiquettes de mots et de ponctuation.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "production écrite",
+      "phrase",
+      "étiquettes",
+      "dessin",
+      "journée d'Amélie",
+      "grille de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une série d'images illustrant une journée (petit-déjeuner, cartable, classe) avec des étiquettes de mots à ordonner pour former une phrase, accompagnée d'une grille d'évaluation par critères (C1, C3, C7) et niveaux de maîtrise.",
+    "themeGroup": "Construction de phrases"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane « MOURAJAA.COM » n'est pas transcrit (élément non pédagogique, peu important)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les repères de critères C1, C3 et C7 à droite de chaque exercice, avec leurs cases de notation, sont absents de la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Séquence 6 : la transcription écrit « il y a un maître ou une maîtresse ? ». L'image porte « il ya un maître ou une maîtresse ? » (sans espace entre « il » et « ya »)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Séquence 6 : l'étiquette « . » n'est pas distinguée de la virgule, mais les deux sont bien présentes. Les étiquettes sont correctes."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Séquence 5 : le texte « qu'est-ce qu'il y a dans le cartable d'amélie ? » est bien transcrit. Les étiquettes « , , . » sont présentes. Aucune erreur réelle."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Tableau : la valeur C3 de la ligne « Maîtrise minimale » est coupée sur l'image. La transcription indique « 1 » comme partiellement visible, ce qui est acceptable mais incertain."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes pointillées de réponse et les flèches (→) ne sont pas mentionnées. Le champ réponse est vide, ce qui est cohérent."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

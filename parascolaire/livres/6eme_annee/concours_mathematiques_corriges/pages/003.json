@@ -1,0 +1,223 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 3,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مناظرة تجريبية عدد 5 (أفريل 2023) – الكسور، النسبة المائوية، المساحة والأسعار (حلول مسائل)",
+  "items": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "مناظرة تجريبية عدد 5 — سنة سادسة — أفريل 2023 — رياضيات وليد الكراتي — المادة: رياضيات",
+      "body": "",
+      "figureDesc": "Drapeau tunisien à gauche de l'en-tête. Numéro de page : 3.",
+      "answer": "",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy",
+      "id": "concours_mathematiques_corriges_p003_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "المسألة عدد: 1 (6 نقاط) — 1/ ماهي سعة الآلة من البرتقال علما وأنّ الكمّية التي أحضرها الفلاح ثمنها الجملي 51.840 د بحساب 0.480 د للكغ الواحد. 2/ أحسب النسبة المائوية لكتلة العصير بالنسبة لكتلة البرتقال.",
+      "body": "يملك مصنع للعصير آلة ضخمة لعصر الغلال. لا تعمل إلّا عند ملئها كاملا. كمّية البرتقال الموجودة هذا الصباح تقدر بـ 3/5 سعة الآلة، وأحضر أحد الفلّاحين كمّية ثانية فامتلأت الآلة إلى حدود 6/7 سعتها. [السؤال 1/] ... بعد أن تم ملء الآلة أعطت كمية البرتقال المعصورة 147 كغ من العصير. [السؤال 2/]",
+      "figureDesc": "Tampon circulaire de signature/filigrane de l'enseignant sur la page.",
+      "answer": "توحيد المقامات: 3/5 = 21/35 ؛ 6/7 = 30/35. العدد الكسري الممثل للكمية الثانية: 30/35 - 21/35 = 9/35. كمّية البرتقال الثانية: 51.840 : 0.480 = 108 كغ. سعة الآلة: (35 × 108) / 9 = 420 كغ. النسبة المائوية لكتلة العصير بالنسبة لكتلة البرتقال: (100 × 147) / 420 = 35 %",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "concours_mathematiques_corriges_p003_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "المسألة عدد: 2 (6 نقاط) — 1/ ماهو ثمن بيع السيّارة؟",
+      "body": "لشراء شقّة ثمنها 135450 د، باع عمّي قطعة أرض في شكل مثلّث. مجموع طول قاعدته وطول ارتفاعه الموافق لها 55 م وطول الأولى تمثّل 5/6 طول الثّاني بحساب 87.4 د المتر المربّع كما باع سيّارته فتحصّل بذلك على 4/9 ثمن الشقّة.",
+      "figureDesc": "Tampon circulaire de signature/filigrane de l'enseignant sur la page.",
+      "answer": "طول القاعدة: (5 × 55) / 11 = 25 م. طول الارتفاع: (6 × 55) / 11 = 30 م. قيس المساحة: (30 × 25) / 2 = 375 م². ثمن قطعة الأرض: 375 × 87.4 = 32775 د. المبلغ المجمّع: (4 × 135450) / 5 = 60200 د. ثمن السيّارة: 60200 - 32775 = 27425 د.",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy",
+      "id": "concours_mathematiques_corriges_p003_i3"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-6-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch1",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une épreuve blanche (مناظرة تجريبية) composée de problèmes à plusieurs étapes mêlant fractions, pourcentages, aire du triangle et prix, ce qui correspond à la synthèse générale et à la préparation au concours d'entrée aux collèges pilotes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    1,
+    2
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Fractions, pourcentages, aires et prix",
+    "skill": "Résoudre des problèmes à étapes combinant fractions d'une quantité, pourcentage, aire d'un triangle et calculs de prix.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "fractions",
+      "pourcentage",
+      "aire du triangle",
+      "prix",
+      "problème à étapes",
+      "examen blanc"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : une machine à jus qui ne fonctionne que pleine et se remplit par fractions successives, ou la vente d'un terrain triangulaire et d'une voiture pour financer un achat, avec calcul du prix au kg ou au m².",
+    "themeGroup": "Pourcentages et proportionnalité"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Problème 2 : '(4 × 135450) / 5 = 60200' — l'image indique 4×135450 / 9 = 60200 ; le dénominateur est 9 (4/9 du prix de l'appartement), pas 5."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Ordre de lecture incohérent : les questions (1/, 2/) sont placées avant l'énoncé ; le texte de l'énoncé du problème 1 doit précéder la question 1/. De même, la question 1/ du problème 2 est placée avant l'énoncé, alors qu'elle figure après."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'المسألة عدد 1' : l'image montre 'المسألة عــــدد: 1' avec deux-points, et le titre '(6 نقاط)' est ok ; sinon 'مناظرة تجريبية عدد 5' (en-tête), 'سنة سادسة أفريل 2023 رياضيات وليد الكراتي', 'المادة: رياضيات' sont omis de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis : 'مناظرة تجريبية عدد 5', 'سنة سادسة - أفريل 2023 - رياضيات وليد الكراتي', 'المادة: رياضيات', numéro de page 3."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'ثمن الشقّة' : dans l'énoncé de l'image, la phrase est 'بحساب 87.4 د المتر المربع' ; le texte 'وطول الأولى تمثّل 5/6 طول الثّاني' est correct. 'للكغ' ok. 'المبلغ المجمّع' : l'image porte 'المبلغ المجمّع' – ok."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est omis : « مناظرة تجريبية عدد 5 », « سنة سادسة – أفريل 2023 – رياضيات وليد الكراتي » (le nom de l'enseignant est partiellement lisible), « المادة: رياضيات ». Le numéro de page « 3 » en bas de page est aussi omis."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans les champs 'instruction' des exercices, la question (« 1/ ماهي سعة الآلة… ») est collée au titre « المسألة عدد … » alors que l'énoncé figure dans 'body'. Le titre du problème 2 est fusionné avec la question 1/ et rangé sous un numéro bricolé « 2 (المسألة عدد 2) - 1 ». Dans l'image, le titre vient d'abord, puis l'énoncé, puis la question. La question 2/ du problème 1 est bien précédée de son énoncé « بعد أن تم ملء الآلة… »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les titres de l'image sont « المسألة عدد: 1 (6 نقاط) » et « المسألة عدد: 2 (6 نقاط) », avec deux-points après « عدد ». La transcription les écrit « المسألة عدد 1 : (6 نقاط) », avec les deux-points mal placés."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "مناظرة تجريبية عدد 5 — سنة سادسة — أفريل 2023 — رياضيات وليد الكراتي — المادة: رياضيات",
+      "body": "",
+      "figureDesc": "Drapeau tunisien à gauche de l'en-tête. Numéro de page : 3.",
+      "answer": "",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy",
+      "id": "concours_math_6eme_corriges_p003_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "المسألة عدد: 1 (6 نقاط) — 1/ ماهي سعة الآلة من البرتقال علما وأنّ الكمّية التي أحضرها الفلاح ثمنها الجملي 51.840 د بحساب 0.480 د للكغ الواحد. 2/ أحسب النسبة المائوية لكتلة العصير بالنسبة لكتلة البرتقال.",
+      "body": "يملك مصنع للعصير آلة ضخمة لعصر الغلال. لا تعمل إلّا عند ملئها كاملا. كمّية البرتقال الموجودة هذا الصباح تقدر بـ 3/5 سعة الآلة، وأحضر أحد الفلّاحين كمّية ثانية فامتلأت الآلة إلى حدود 6/7 سعتها. [السؤال 1/] ... بعد أن تم ملء الآلة أعطت كمية البرتقال المعصورة 147 كغ من العصير. [السؤال 2/]",
+      "figureDesc": "Tampon circulaire de signature/filigrane de l'enseignant sur la page.",
+      "answer": "توحيد المقامات: 3/5 = 21/35 ؛ 6/7 = 30/35. العدد الكسري الممثل للكمية الثانية: 30/35 - 21/35 = 9/35. كمّية البرتقال الثانية: 51.840 : 0.480 = 108 كغ. سعة الآلة: (35 × 108) / 9 = 420 كغ. النسبة المائوية لكتلة العصير بالنسبة لكتلة البرتقال: (100 × 147) / 420 = 35 %",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "concours_math_6eme_corriges_p003_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "المسألة عدد: 2 (6 نقاط) — 1/ ماهو ثمن بيع السيّارة؟",
+      "body": "لشراء شقّة ثمنها 135450 د، باع عمّي قطعة أرض في شكل مثلّث. مجموع طول قاعدته وطول ارتفاعه الموافق لها 55 م وطول الأولى تمثّل 5/6 طول الثّاني بحساب 87.4 د المتر المربّع كما باع سيّارته فتحصّل بذلك على 4/9 ثمن الشقّة.",
+      "figureDesc": "Tampon circulaire de signature/filigrane de l'enseignant sur la page.",
+      "answer": "طول القاعدة: (5 × 55) / 11 = 25 م. طول الارتفاع: (6 × 55) / 11 = 30 م. قيس المساحة: (30 × 25) / 2 = 375 م². ثمن قطعة الأرض: 375 × 87.4 = 32775 د. المبلغ المجمّع: (4 × 135450) / 5 = 60200 د. ثمن السيّارة: 60200 - 32775 = 27425 د.",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy",
+      "id": "concours_math_6eme_corriges_p003_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "المسألة عدد 1 : (6 نقاط) – 1/ ماهي سعة الآلة من البرتقال علما وأنّ الكمّية التي أحضرها الفلاح ثمنها الجملي 51.840 د بحساب 0.480 د للكغ الواحد.",
+      "body": "يملك مصنع للعصير آلة ضخمة لعصر الغلال. لا تعمل إلّا عند ملئها كاملا. كمّية البرتقال الموجودة هذا الصباح تقدر بـ 3/5 سعة الآلة، وأحضر أحد الفلّاحين كمّية ثانية فامتلأت الآلة إلى حدود 6/7 سعتها.",
+      "figureDesc": "Tampon circulaire de signature/filigrane de l'enseignant sur la page.",
+      "answer": "توحيد المقامات: 3/5 = 21/35 ؛ 6/7 = 30/35. العدد الكسري الممثل للكمية الثانية: 30/35 - 21/35 = 9/35. كمّية البرتقال الثانية: 51.840 : 0.480 = 108 كغ. سعة الآلة: (35 × 108) / 9 = 420 كغ.",
+      "confidence": 0.85,
+      "id": "concours_math_6eme_corriges_p003_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "2/ أحسب النسبة المائوية لكتلة العصير بالنسبة لكتلة البرتقال.",
+      "body": "بعد أن تم ملء الآلة أعطت كمية البرتقال المعصورة 147 كغ من العصير.",
+      "figureDesc": "",
+      "answer": "النسبة المائوية لكتلة العصير بالنسبة لكتلة البرتقال: (100 × 147) / 420 = 35 %",
+      "confidence": 0.88,
+      "id": "concours_math_6eme_corriges_p003_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2 (المسألة عدد 2) - 1",
+      "instruction": "المسألة عدد 2 : (6 نقاط) – 1/ ماهو ثمن بيع السيّارة؟",
+      "body": "لشراء شقّة ثمنها 135450 د، باع عمّي قطعة أرض في شكل مثلّث. مجموع طول قاعدته وطول ارتفاعه الموافق لها 55 م وطول الأولى تمثّل 5/6 طول الثّاني بحساب 87.4 د المتر المربّع كما باع سيّارته فتحصّل بذلك على 4/9 ثمن الشقّة.",
+      "figureDesc": "Tampon circulaire de signature/filigrane de l'enseignant sur la page.",
+      "answer": "طول القاعدة: (5 × 55) / 11 = 25 م. طول الارتفاع: (6 × 55) / 11 = 30 م. قيس المساحة: (30 × 25) / 2 = 375 م². ثمن قطعة الأرض: 375 × 87.4 = 32775 د. المبلغ المجمّع: (4 × 135450) / 5 = 60200 د. ثمن السيّارة: 60200 - 32775 = 27425 د.",
+      "confidence": 0.8,
+      "id": "concours_math_6eme_corriges_p003_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "correctionStatus": "self_contained",
+  "examScope": "full_year",
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

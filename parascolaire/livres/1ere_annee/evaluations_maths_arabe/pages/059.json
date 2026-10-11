@@ -1,0 +1,104 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 59,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أَقْرَأُ الْأَعْدَادَ مِنْ 10 إِلَى 19 وَأَكْتُبُهَا وَأَحْسُبُهَا",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْتُبُ الْعَدَدَ الْمَحْصُورَ بَيْنَ عَدَدَيْنِ :",
+      "body": "5 > ........ > 2+1 ، 9 > ........ > 7 ، 0+4 > ........ > 2 ، 7 > ........ > 3+2",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p059_i1",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْتُبُ الْأَعْدَادَ مِنْ 10 إِلَى 19 وَالَّتِي رَقْمُ آحَادِهَا عَدَدٌ زَوْجِيٌّ مُرَتَّبَةً تَصَاعُدِيًّا.",
+      "body": "........................................................................................................................ ⟵",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p059_i2",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبِطُ بِمَا يُنَاسِبُ :",
+      "body": "العمود الأول:\n- 9+3+3+3\n- 9+8+2\n- 0+10\n- 4+4+7\n- 8+3\n\nالعمود الثاني (الأعداد بالرموز والأرقام):\n- 10\n- 19\n- 15\n- 11\n- 18\n\nالعمود الثالث (الأعداد بالحروف):\n- خَمْسَةَ عَشَرَ\n- عَشَرَةٌ\n- تِسْعَةَ عَشَرَ\n- ثَمَانِيَةَ عَشَرَ\n- إِحْدَى عَشَرَ",
+      "figureDesc": "ثلاثة أعمدة للتوصيل بينها بنقاط: العمود الأول يحتوي عمليات جمع، والعمود الثاني يحتوي أرقاماً، والعمود الثالث يحتوي كتابة الأعداد بالحروف.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p059_i3",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْتُبُ أَمَامَ كُلِّ عَدَدٍ مَا يُنَاسِبُهُ بِالْحُرُوفِ أَوْ بِالْأَرْقَامِ : 10، 14، ثَلَاثَةَ عَشَرَ، 12، تِسْعَةَ عَشَرَ، 16.",
+      "body": "• اثْنَا عَشَرَ ⟵ ....................................................\n• 13 ⟵ ....................................................\n• سِتَّةَ عَشَرَ ⟵ ....................................................\n• عَشَرَةٌ ⟵ ....................................................\n• 19 ⟵ ....................................................\n• أَرْبَعَةَ عَشَرَ ⟵ ....................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p059_i4",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "topicId": "math-1-p4",
+  "topicTitle": "Période 4 : Nombres de 11 à 19, tables d'addition et soustraction",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p1",
+    "confidence": 0.54
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la lecture, l'écriture et le calcul des nombres de 10 à 19 (encadrement, ordre croissant, associations de sommes avec écriture en chiffres et en lettres), ce qui correspond à la Période 4 : Nombres de 11 à 19.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres de 10 à 19",
+    "skill": "Lire, écrire en chiffres et en lettres, et décomposer ou comparer les nombres de 10 à 19 (encadrement, parité, additions).",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "texte_a_trous",
+      "calcul",
+      "autre"
+    ],
+    "keywords": [
+      "nombres 10 à 19",
+      "écriture en lettres",
+      "encadrement",
+      "nombres pairs",
+      "appariement",
+      "addition"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : relier une somme à son écriture en chiffres puis en lettres (trois colonnes), encadrer un nombre entre deux expressions, et lister les nombres dont le chiffre des unités est pair dans l'ordre croissant.",
+    "themeGroup": "Nombres de 10 à 20"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

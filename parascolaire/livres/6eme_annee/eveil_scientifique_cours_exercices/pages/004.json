@@ -1,0 +1,113 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 4,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La respiration chez les êtres vivants : la respiration des animaux aquatiques (le poisson dans l'aquarium, rôle de la pompe à air et de la plante verte) et le vol des animaux (chauve-souris et oiseau)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لَاحِظِ المَشْهَدَ مَا الَّذِي يَحْمِلُ الطُّيُورَ ؟",
+      "body": "لَاحِظِ المَشْهَدَ مَا الَّذِي يَحْمِلُ الطُّيُورَ ؟",
+      "figureDesc": "Image encadrée montrant une chauve-souris aux ailes membraneuses déployées et un oiseau (mésange bleue) en plein vol, ailes déployées.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p004_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "السَّنَدُ :",
+      "body": "السَّنَدُ : أربعة أحواض (الشكل 1، الشكل 2، الشكل 3، الشكل 4) تحتوي على سمكة.",
+      "figureDesc": "Quatre aquariums. Figure 1 : poisson vivant au milieu de l'eau avec des bulles, sable au fond. Une flèche mène vers la figure 2 : poisson mort à la surface de l'eau, eau sans bulles. Figure 3 : poisson vivant, tuyau d'arrivée d'air (pompe à air) avec bulles, sable et petits animaux au fond. Figure 4 : poisson vivant avec des plantes vertes aquatiques et des bulles.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p004_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "لِمَاذَا مَاتَتِ السَّمَكَةُ فِي الشَّكْلِ 2 ؟",
+      "body": "التَّعْلِيمَةُ 1 : لِمَاذَا مَاتَتِ السَّمَكَةُ فِي الشَّكْلِ 2 ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p004_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "لِمَاذَا نُدْخِلُ تَيَّارًا هَوَائِيًّا إِلَى الحَوْضِ فِي الشَّكْلِ 3 ؟",
+      "body": "التَّعْلِيمَةُ 2 : لِمَاذَا نُدْخِلُ تَيَّارًا هَوَائِيًّا إِلَى الحَوْضِ فِي الشَّكْلِ 3 ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p004_i4",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "هَلْ تَجِدُ عَلَاقَةً بَيْنَ دَوْرِ المِضَخَّةِ الهَوَائِيَّةِ وَدَوْرِ النَّبْتَةِ الخَضْرَاءِ فِي الشَّكْلَيْنِ 3 و 4 ؟",
+      "body": "التَّعْلِيمَةُ 3 : هَلْ تَجِدُ عَلَاقَةً بَيْنَ دَوْرِ المِضَخَّةِ الهَوَائِيَّةِ وَدَوْرِ النَّبْتَةِ الخَضْرَاءِ فِي الشَّكْلَيْنِ 3 و 4 ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p004_i5",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.46
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite de la respiration du poisson dans un aquarium (pompe à air, plante verte, dioxygène dissous) et du vol des animaux, ce qui relève de l'unité sur l'air et la respiration, bien que l'unité 4 (milieux aquatiques) puisse prêter à confusion.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La respiration des animaux aquatiques",
+    "skill": "Expliquer, à partir d'une expérience avec aquariums, comment le poisson respire et le rôle de l'air et de la plante verte dans l'eau.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "respiration",
+      "poisson",
+      "aquarium",
+      "pompe à air",
+      "plante verte",
+      "oxygène"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation expérimentale comparant quatre aquariums (sans air, avec courant d'air, avec plante) et amenant à déduire par questions guidées que la pompe et la plante apportent le même élément vital, avec une accroche d'observation (qu'est-ce qui porte les oiseaux ?) pour introduire le vol.",
+    "themeGroup": "La respiration"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

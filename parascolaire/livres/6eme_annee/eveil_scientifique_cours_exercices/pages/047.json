@@ -1,0 +1,152 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 47,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الهواء وخصائصه – تركيب الهواء (الأكسيجين والنيتروجين) والاحتراق – إيقاظ علمي (السنة السادسة): تصحيح التمارين 21 إلى 28",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "21",
+      "instruction": "إيقاظ علمي السنة السادسة – الصفحة 21",
+      "body": "1) أُلاحِظُ توهُّجَ المصباح. أُلاحِظُ انطفاءَ المصباح. الخاصيّةُ: لا يسمحُ الهواءُ بمرورِ التيّارِ الكهربائيِّ خلالَه.\n2) ينزلُ الماءُ داخلَ القارورةِ الثانيةِ بسهولةٍ نتيجةَ خروجِ الهواءِ من الأنبوبِ الرفيقِ، فلا يمكنُ لشيئين أن يشغلا الحيّزَ الواحدَ في آنٍ واحدٍ. يتوقّفُ نزولُ الماءِ في القارورةِ الأولى لأنّها مملوءةٌ هواءً.\n3) عندَ دفعِ المكبسِ أحسُّ بأنّ الهواءَ يدفعُ أصبعي. يتحدّبُ أو يتقعّرُ الغشاءُ المطّاطيُّ تحتَ تأثيرِ ضغطِ الهواءِ.",
+      "figureDesc": "",
+      "answer": "لا يسمح الهواء بمرور التيار الكهربائي؛ لا يمكن لشيئين أن يشغلا الحيز نفسه في آن واحد؛ الهواء يدفع الأصبع (ضغط الهواء).",
+      "confidence": 0.7,
+      "id": "eveil_scientifique_cours_exercices_p047_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "22",
+      "instruction": "إيقاظ علمي السنة السادسة – الصفحة 22",
+      "body": "أستنتجُ: يمكنُ نقلُ الهواءِ من إناءٍ إلى آخر.\nعندَ دفعِ المكبسِ يتقلّصُ حجمُ هواءِ المحقنِ. عندَ سحبِ المكبسِ يكبرُ حجمُ هواءِ المحقنِ. أستنتجُ: أنّ الهواءَ مرنٌ قابلٌ للانضغاطِ والانتشارِ.\nعندَ تغطيسِ القنّينةِ المنزوعةِ القعرِ عموديًّا في الماءِ والقعرُ إلى الأسفلِ لا يدخلُ الماءُ إلى القارورةِ لوجودِ الهواءِ بها، وعندَ الضغطِ عليها تحصرُ الهواءَ فينتفخُ البالونُ.",
+      "figureDesc": "",
+      "answer": "الهواء مرن قابل للانضغاط والانتشار.",
+      "confidence": 0.7,
+      "id": "eveil_scientifique_cours_exercices_p047_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "23",
+      "instruction": "إيقاظ علمي السنة السادسة – الصفحة 23",
+      "body": "أستنتجُ: أنّ الهواءَ الساخنَ أخفُّ من الهواءِ البارد.\nأ) عندَ وضعِ القنّينةِ في الماءِ الساخنِ تنتفخُ النفّاخةُ، ممّا يدلّ على ازدياد حجم الهواء المحبوس (يتمدّدُ الهواءُ بمفعولِ الحرارةِ).\nب) يحدثُ العكسُ عندَ نقلِ القنّينةِ إلى الماءِ البارد (يتقلّصُ الهواءُ بالتبريد).\nج) أستنتجُ: يتمدّدُ الهواءُ بمفعولِ الحرارةِ ويتقلّصُ بمفعولِ البرودةِ.\nأثناءَ ملءِ القنّينةِ بالماءِ يتقلّصُ حجمُ الهواءِ داخلَها، ويزدادُ ضغطُه فينفلتُ ويظهرُ على شكلِ فقاعاتٍ.",
+      "figureDesc": "",
+      "answer": "يتمدد الهواء بالحرارة ويتقلص بالبرودة.",
+      "confidence": 0.7,
+      "id": "eveil_scientifique_cours_exercices_p047_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "24",
+      "instruction": "إيقاظ علمي السنة السادسة – الصفحة 24",
+      "body": "1) تتكوّنُ على السطحِ الخارجيِّ للكأسِ قطيراتٌ من الماءِ. 2) الفرضيّةُ: وجودُ كميّةٍ من بخارِ الماءِ في الهواءِ.\nالغازُ المسؤولُ عمّا حصلَ هو ثاني أكسيدِ الكربون. مصدرُ هذا الغازِ هو هواءُ الزفيرِ.\nيبقى في الكأسِ غازٌ لا يساعدُ على الاحتراقِ ولا يصلحُ للتنفّسِ يسمّى النيتروجين.",
+      "figureDesc": "",
+      "answer": "الغاز هو ثاني أكسيد الكربون؛ الغاز المتبقي هو النيتروجين.",
+      "confidence": 0.7,
+      "id": "eveil_scientifique_cours_exercices_p047_i4",
+      "topicId": "sci-6-u2",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "25",
+      "instruction": "إيقاظ علمي السنة السادسة – الصفحة 25",
+      "body": "لا يدخلُ الماءُ للكأسِ. السببُ: إنّ الهواءَ الذي يملأُ الكأسَ يمنعُ دخولَ الماءِ إليها.\nنلاحظُ بعدَ فترةٍ قصيرةٍ من الزمنِ أنّ الشمعةَ قد انطفأت وارتفعَ الماءُ في الكأسِ ليشغلَ خُمُسَ حجمِه تقريبًا.\nالتعليلُ: إنّ احتراقَ الشمعةِ استهلكَ الأكسيجينَ الموجودَ في الهواءِ، ويبقى غازٌ لا يساعدُ على الاحتراقِ هو غازُ النيتروجينِ الذي يشكّلُ أربعةَ أخماسِ حجمِ الهواءِ تقريبًا.\n1 نيتروجين - 2 أكسيجين - 3 أرغون",
+      "figureDesc": "",
+      "answer": "النيتروجين يشكل حوالي أربعة أخماس الهواء؛ الأكسيجين خُمُسه.",
+      "confidence": 0.7,
+      "id": "eveil_scientifique_cours_exercices_p047_i5",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "26",
+      "instruction": "إيقاظ علمي السنة السادسة – الصفحة 26",
+      "body": "ثاني أكسيد الفحم يعكّر ماءَ الجير وهو ضروريٌّ للنباتات. النيتروجينُ غازٌ يمثّلُ أربعةَ أخماسِ الهواءِ. الأكسيجينُ غازٌ ضروريٌّ للإنسانِ والحيوانِ.\nالأكسيجينُ يزنُ اللترُ منه 1,43 غ. الهواءُ يزنُ اللترُ منه 1,3 غ. الأكسيجينُ يفكّي نارًا أوشكت أن تنطفئَ. الهواءُ ضروريٌّ للاحتراقِ.\nتلاحظُ طبقةً حمراءَ من الصدإ تختلفُ عن الحديد.\nيستعملُ الأكسيجينُ المعبّأ في أسطوانات خاصّةً: لمساعدةِ متسلّقي الجبالِ العاليةِ على التنفّسِ بسببِ نقصِ الأكسيجينِ في الطبقاتِ العليا من الجوّ. وكذلك لمساعدةِ الغوّاصين على التنفّسِ تحتَ الماءِ، ولمساعدةِ روّادِ الفضاءِ على التنفّسِ عندَ الهبوطِ على سطحِ القمرِ لعدمِ وجودِ الأكسيجين.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.65,
+      "id": "eveil_scientifique_cours_exercices_p047_i6",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "27",
+      "instruction": "إيقاظ علمي السنة السادسة – الصفحة 27",
+      "body": "الأكسيجينُ ضروريٌّ للاحتراقِ، فالشمعةُ المشتعلةُ تنطفئُ بعدَ فترةٍ قصيرةٍ إذا غُطّيت بناقوسٍ زجاجيٍّ، لأنّ احتراقَها استهلكَ الأكسيجينَ من الهواءِ المحيطِ بها، وإذا رُفعَ الناقوسُ الزجاجيُّ قبلَ انطفائِها فإنّها تعودُ إلى الاشتعالِ.\nيشتعلُ البنزينُ والكحولُ بسرعةٍ شديدةٍ أمّا الزيتُ والبترولُ فهي موادُّ تحترقُ عندما تتحوّلُ إلى غازٍ بمفعولِ الحرارةِ.\nتنطفئ: 3 - 2 - 4 - 1",
+      "figureDesc": "",
+      "answer": "ترتيب الانطفاء: 3 - 2 - 4 - 1",
+      "confidence": 0.7,
+      "id": "eveil_scientifique_cours_exercices_p047_i7",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "28",
+      "instruction": "إيقاظ علمي السنة السادسة – الصفحة 28",
+      "body": "تستمرُّ الشمعةُ الأولى في الاشتعالِ بسببِ الثقبِ الموجودِ في أسفلِ القنّينةِ ويفضلِ تيّارِ الهواءِ الذي يساعدُ على الاحتراقِ. أمّا في القنّينتين الثانيةِ والثالثةِ فتنطفئان بمجرّدِ انتهاءِ كميّةِ الأكسيجينِ الموجودِ بداخلهما.",
+      "figureDesc": "",
+      "answer": "الشمعة الأولى تستمر بفضل الثقب وتيار الهواء؛ الأخريان تنطفئان عند نفاد الأكسيجين.",
+      "confidence": 0.7,
+      "id": "eveil_scientifique_cours_exercices_p047_i8",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u6",
+    "confidence": 0.46
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page corrige des exercices d'éveil scientifique sur les propriétés de l'air, sa composition (O2, N2) et le rôle de l'oxygène dans la combustion, ce qui correspond à l'Unité 2 : L'air, la respiration et la combustion.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Propriétés et composition de l'air",
+    "skill": "Comprendre les propriétés de l'air (compressibilité, dilatation, poids) et son rôle dans la combustion grâce à des expériences simples.",
+    "pageType": "correction",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "air",
+      "oxygène",
+      "azote",
+      "combustion",
+      "dilatation",
+      "dioxyde de carbone"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Expériences simples réutilisables (bougie sous cloche avec montée de l'eau, seringue d'air, bouteille et ballon dans l'eau chaude ou froide, verre embué, eau de chaux) qui permettent de construire des situations d'observation, d'hypothèse et de conclusion.",
+    "themeGroup": "Composition de l'air"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

@@ -1,0 +1,90 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 17,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي - أُثْرِي الْجُمَلَ بِمَا يُنَاسِبُ",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُثْرِي الْجُمَلَ بِمَا يُنَاسِبُ وَأُعِيدُ كِتَابَتَهَا.",
+      "body": "( بِانْتِبَاهٍ - بِأَدَبٍ - فِي هُدُوءٍ - فِي الصَّبَاحِ )\nدَخَلَ التَّلَامِيذُ الْقِسْمَ، وَجَلَسُوا، ثُمَّ تَابَعُوا الْمُعَلِّمَ.",
+      "figureDesc": "مُعَلِّمٌ يَقِفُ أَمَامَ السَّبُّورَةِ فِي الْقِسْمِ وَالتَّلَامِيذُ جَالِسُونَ أَمَامَهُ يُتَابِعُونَ الدَّرْسَ.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p017_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُثْرِي الْجُمَلَ بِمَا يُنَاسِبُ وَأُعِيدُ كِتَابَتَهَا.",
+      "body": "( وَبِيَدِهَا - فَجْأَةً - مُبْتَسِمَةً - حَقِيبَةٌ )\nدَخَلَتِ الْمُمَرِّضَةُ.",
+      "figureDesc": "مُمَرِّضَةٌ تَدْخُلُ إِلَى قَاعَةِ الدَّرْسِ بِجَانِبِ الْمُعَلِّمِ وَالتَّلَامِيذُ يَنْظُرُونَ إِلَيْهَا.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p017_i2",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُثْرِي الْجُمَلَ بِمَا يُنَاسِبُ وَأُعِيدُ كِتَابَتَهَا.",
+      "body": "( بِكُلِّ شَجَاعَةٍ - طَوِيلٍ - فَرْدًا فَرْدًا )\nوَقَفَ التَّلَامِيذُ فِي صَفٍّ، وَتَقَدَّمُوا مِنَ الْمُمَرِّضَةِ.",
+      "figureDesc": "الْمُمَرِّضَةُ تَقِفُ عِنْدَ الْمَكْتَبِ وَأَمَامَهَا صَفٌّ مِنَ التَّلَامِيذِ يَتَقَدَّمُونَ نَحْوَهَا.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p017_i3",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "ar-1-u3",
+  "topicTitle": "Unité 3 : Mon compagnon pour ma santé et ma sécurité",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.53
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice d'expression écrite en arabe (enrichir des phrases) dont le contexte, la présence d'une infirmière (المُمَرِّضَة), évoque l'unité 3 sur la santé, mais ce lien reste incertain car l'exercice de production écrite est transversal et pourrait relever d'une autre unité.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Enrichissement de phrases",
+    "skill": "Enrichir une phrase simple en y insérant des compléments adaptés (manière, temps, accompagnement) choisis dans une liste, puis la réécrire.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "enrichissement de phrases",
+      "production écrite",
+      "compléments circonstanciels",
+      "adverbes de manière",
+      "réécriture"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le principe de partir d'une phrase noyau et de l'enrichir avec une banque de mots dans un contexte scolaire familier (classe, infirmière) est réutilisable pour d'autres scènes du quotidien et d'autres niveaux de difficulté.",
+    "themeGroup": "Enrichissement de phrases"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

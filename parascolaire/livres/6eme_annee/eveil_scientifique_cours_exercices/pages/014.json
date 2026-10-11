@@ -1,0 +1,294 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 14,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "جِهَازُ الدَّوَرَانِ : تَرْكِيبَةُ الدَّمِ (Appareil circulatoire : composition du sang)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "السَّنَدُ :",
+      "body": "يَحْتَوِي جِسْمُ الإِنْسَانِ المُتَوَسِّطُ الحَجْمِ عَلَى حَوَالَيْ خَمْسِ لِتْرَاتٍ مِنَ الدَّمِ. يَتَأَلَّفُ الدَّمُ مِنَ الكُرَيَّاتِ الحَمْرَاءِ، وَالكُرَيَّاتِ البَيْضَاءِ، وَالصُّفَيْحَاتِ وَجَمِيعُهَا يَسْبَحُ فِي سَائِلٍ يُسَمَّى البلازما. تَحْتَوِي البلازما عَلَى نِسْبَةٍ عَالِيَةٍ مِنَ المَاءِ وَعَلَى مَوَادَّ غَذَائِيَّةٍ. تَقُومُ البلازما بِنَقْلِ المَوَادِّ الغَذَائِيَّةِ وَغَازَاتِ التَّنَفُّسِ. كُرَيَّاتُ الدَّمِ الحَمْرَاءِ تَحْمِلُ غَازَاتِ التَّنَفُّسِ بَيْنَ الرِّئَتَيْنِ وَخَلَايَا الجِسْمِ. كُرَيَّاتُ الدَّمِ البَيْضَاءِ تُحَارِبُ الجَرَاثِيمَ الَّتِي تَدْخُلُ إِلَى الجِسْمِ. الصُّفَيْحَاتُ تُسَاعِدُ عَلَى تَخَثُّرِ الدَّمِ وَوَقْفِ النَّزِيفِ فِي الجُرُوحِ.",
+      "figureDesc": "Titre de la page : جِهَازُ الدَّوَرَانِ : تَرْكِيبَةُ الدَّمِ (page 39). En haut à droite : vaisseau sanguin avec globules rouges (légende : كرية حمراء) et plasma (légende : بلازما). Cinq flacons de sang. Une éprouvette (légende : عينة من الدم) séparée en deux tubes : %55 بلازما (القسم السائل), liquide jaune ; %45 خلايا الدم (القسم الصلب), partie foncée. En bas : dessins d'une plaquette, d'un globule blanc et d'un globule rouge avec leurs légendes.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p014_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 1 : مَاهِي نَتِيجَةُ نَقْصٍ فِي عَدَدِ كُرَيَّاتِ الدَّمِ الحَمْرَاءِ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p014_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة 2 : مَاهِي نَتِيجَةُ نَقْصٍ فِي عَدَدِ كُرَيَّاتِ البَيْضَاءِ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p014_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة 3 : مَاهِي نَتِيجَةُ نَقْصٍ فِي عَدَدِ الصُّفَيْحَاتِ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p014_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.99
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite de la composition du sang (globules rouges, globules blancs, plaquettes, plasma) et des conséquences d'un déficit de chacun, ce qui relève de l'Unité 3 sur le système circulatoire.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Composition du sang",
+    "skill": "Identifier les constituants du sang et déduire les conséquences d'un manque de globules rouges, de globules blancs ou de plaquettes.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "sang",
+      "globules rouges",
+      "globules blancs",
+      "plaquettes",
+      "plasma",
+      "appareil circulatoire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un document court sur le volume et les constituants du sang, suivi de questions de cause à effet (un déficit de chaque constituant et ses conséquences), réutilisable en tableau à compléter, appariement constituant-rôle ou QCM.",
+    "themeGroup": "La circulation sanguine et le sang"
+  },
+  "audit": {
+    "accuracy": 0.82,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«حَوَالَيْ» : l'image porte «حَوَالِي» (حَوَالِي خَمْسِ)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الكُرِيَاتِ» (×2) : l'image porte «الْكُرَيَّاتِ» (الكُرَيَّاتِ الحَمْرَاءِ / البَيْضَاءِ), avec fatha et shadda sur le ya"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«كُرِيَاتُ الدَّمِ» (×2) : l'image porte «كُرَيَّاتُ»"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«كُرِيَاتِ» dans les instructions 1 et 2 : l'image porte «كُرَيَّاتِ»"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الكُرِيَاتُ الدَّمِ الحَمْرَاءِ» : l'image porte «كُرَيَّاتُ الدَّمِ الحَمْرَاءِ», sans article défini sur كريات"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«مَوَادَّ غِذَائِيَّةٍ» : l'image porte «مَوَادَّ غَذَائِيَّةٍ» (غذائية avec fatha) ; de même «الغِذَائِيَّةِ» devient «الغَذَائِيَّةِ»"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les légendes des schémas sont omises : «كرية حمراء», «بلازما», «عينة من الدم», «%55 بلازما (القسم السائل)», «%45 خلايا الدم (القسم الصلب)», ainsi que le titre «جهاز الدوران : تركيبة الدم» et le numéro de page 39"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«البلازما» est écrit sans voyelles alors qu'elles sont visibles dans le titre/schéma (ex. «بلازما» sans tashkeel, ce qui est cohérent), mais «لِتْرَاتٍ» s'écrit dans l'image «لِتْرَاتٍ مِنَ الدَّمِ» : correct"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Instruction 2 : «كُرِيَاتِ البَيْضَاءِ» ; l'image porte «كُرَيَّاتِ البَيْضَاءِ»"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "L'ordre de lecture est mélangé : les légendes sous les cellules (صفيحات, بيضاء, حمراء) sont placées après le texte de la plasma, ce qui est acceptable, mais le bloc numéroté 1 mêle texte et légendes"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الكُرِيَاتِ» (×2 dans le texte du support) : l'image porte «الكُرَيَّاتِ» (fatha + shadda sur le ya), dans «الكُرَيَّاتِ الحَمْرَاءِ» et «الكُرَيَّاتِ البَيْضَاءِ»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«كُرِيَاتُ الدَّمِ البَيْضَاءِ» (légende) : l'image porte «كُرَيَّاتُ»."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "«الكُرِيَاتُ الدَّمِ الحَمْرَاءِ» (légende du globule rouge) : l'image porte «كُرَيَّاتُ الدَّمِ الحَمْرَاءِ», sans article défini sur كريات."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«كُرِيَاتِ» dans les instructions 1 et 2 : l'image porte «كُرَيَّاتِ»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«مَوَادَّ غِذَائِيَّةٍ» et «الغِذَائِيَّةِ» : l'image porte «غَذَائِيَّةٍ» et «الغَذَائِيَّةِ», avec fatha sur le ghayn."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les légendes des schémas, le titre «جِهَازُ الدَّوَرَانِ : تَرْكِيبَةُ الدَّمِ» et le numéro de page 39 sont absents de la transcription. Ils sont ajoutés dans figureDesc."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "السَّنَدُ :",
+      "body": "يَحْتَوِي جِسْمُ الإِنْسَانِ المُتَوَسِّطُ الحَجْمِ عَلَى حَوَالَيْ خَمْسِ لِتْرَاتٍ مِنَ الدَّمِ. يَتَأَلَّفُ الدَّمُ مِنَ الكُرَيَّاتِ الحَمْرَاءِ، وَالكُرَيَّاتِ البَيْضَاءِ، وَالصُّفَيْحَاتِ وَجَمِيعُهَا يَسْبَحُ فِي سَائِلٍ يُسَمَّى البلازما. تَحْتَوِي البلازما عَلَى نِسْبَةٍ عَالِيَةٍ مِنَ المَاءِ وَعَلَى مَوَادَّ غَذَائِيَّةٍ. تَقُومُ البلازما بِنَقْلِ المَوَادِّ الغَذَائِيَّةِ وَغَازَاتِ التَّنَفُّسِ. كُرَيَّاتُ الدَّمِ الحَمْرَاءِ تَحْمِلُ غَازَاتِ التَّنَفُّسِ بَيْنَ الرِّئَتَيْنِ وَخَلَايَا الجِسْمِ. كُرَيَّاتُ الدَّمِ البَيْضَاءِ تُحَارِبُ الجَرَاثِيمَ الَّتِي تَدْخُلُ إِلَى الجِسْمِ. الصُّفَيْحَاتُ تُسَاعِدُ عَلَى تَخَثُّرِ الدَّمِ وَوَقْفِ النَّزِيفِ فِي الجُرُوحِ.",
+      "figureDesc": "Titre de la page : جِهَازُ الدَّوَرَانِ : تَرْكِيبَةُ الدَّمِ (page 39). En haut à droite : vaisseau sanguin avec globules rouges (légende : كرية حمراء) et plasma (légende : بلازما). Cinq flacons de sang. Une éprouvette (légende : عينة من الدم) séparée en deux tubes : %55 بلازما (القسم السائل), liquide jaune ; %45 خلايا الدم (القسم الصلب), partie foncée. En bas : dessins d'une plaquette, d'un globule blanc et d'un globule rouge avec leurs légendes.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p014_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 1 : مَاهِي نَتِيجَةُ نَقْصٍ فِي عَدَدِ كُرَيَّاتِ الدَّمِ الحَمْرَاءِ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p014_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة 2 : مَاهِي نَتِيجَةُ نَقْصٍ فِي عَدَدِ كُرَيَّاتِ البَيْضَاءِ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p014_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة 3 : مَاهِي نَتِيجَةُ نَقْصٍ فِي عَدَدِ الصُّفَيْحَاتِ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p014_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "السَّنَدُ :",
+      "body": "يَحْتَوِي جِسْمُ الإِنْسَانِ الْمُتَوَسِّطُ الحَجْمِ عَلَى حَوَالَيْ خَمْسِ لِتْرَاتٍ مِنَ الدَّمِ. يَتَأَلَّفُ الدَّمُ مِنَ الكُرِيَاتِ الحَمْرَاءِ، وَالكُرِيَاتِ البَيْضَاءِ، وَالصُّفَيْحَاتِ وَجَمِيعُهَا يَسْبَحُ فِي سَائِلٍ يُسَمَّى البلازما. تَحْتَوِي البلازما عَلَى نِسْبَةٍ عَالِيَةٍ مِنَ المَاءِ وَعَلَى مَوَادَّ غِذَائِيَّةٍ. تَقُومُ البلازما بِنَقْلِ المَوَادِّ الغِذَائِيَّةِ وَغَازَاتِ التَّنَفُّسِ. الكُرِيَاتُ الدَّمِ الحَمْرَاءِ تَحْمِلُ غَازَاتِ التَّنَفُّسِ بَيْنَ الرِّئَتَيْنِ وَخَلَايَا الجِسْمِ. كُرِيَاتُ الدَّمِ البَيْضَاءِ تُحَارِبُ الجَرَاثِيمَ الَّتِي تَدْخُلُ إِلَى الجِسْمِ. الصُّفَيْحَاتُ تُسَاعِدُ عَلَى تَخَثُّرِ الدَّمِ وَوَقْفِ النَّزِيفِ فِي الجُرُوحِ.",
+      "figureDesc": "En haut à droite : vaisseau sanguin avec globules rouges (كرية حمراء) et plasma (بلازما). Cinq flacons de sang. Un tube de sang séparé en deux tubes : 55% بلازما (القسم السائل), liquide jaune ; 45% خلايا الدم (القسم الصلب), partie foncée. En bas : dessins d'une plaquette, d'un globule blanc et d'un globule rouge avec leurs légendes.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p014_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 1 : مَاهِي نَتِيجَةُ نَقْصٍ فِي عَدَدِ كُرِيَاتِ الدَّمِ الحَمْرَاءِ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p014_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة 2 : مَاهِي نَتِيجَةُ نَقْصٍ فِي عَدَدِ كُرِيَاتِ البَيْضَاءِ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p014_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة 3 : مَاهِي نَتِيجَةُ نَقْصٍ فِي عَدَدِ الصُّفَيْحَاتِ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p014_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

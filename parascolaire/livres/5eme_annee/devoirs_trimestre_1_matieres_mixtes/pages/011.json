@@ -1,0 +1,141 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 11,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأعداد الصحيحة الطبيعية: كتابة الأعداد بالأرقام، أصغر وأكبر عدد، وتفكيك الأعداد وفق الصيغة القانونية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب الأعداد التالية بالأرقام",
+      "body": "تسعة ملايين\nسبعة ملايين وثمانية وثمانون ألف وخمسة",
+      "figureDesc": "Deux cadres à bordure pointillée, chacun avec la mention « الإجابة » à droite et une case vide à gauche pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p011_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ماهو أصغر عدد يتكون من … أرقام ؟",
+      "body": "ماهو أصغر عدد يتكون من … أرقام ؟\nماهو أكبر عدد يتكون من … أرقام ؟\nماهو العدد الذي يتكون من … أرقام مجموعها … ؟",
+      "figureDesc": "Le nombre de chiffres et la somme sont des espaces vides à compléter dans les énoncés.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p011_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أفكك الأعداد ذات … أرقام فأكثر و أركبها وأقارنها وأرتبها",
+      "body": "أفكك الأعداد ذات … أرقام فأكثر و أركبها وأقارنها وأرتبها",
+      "figureDesc": "Titre de section écrit en rouge.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p011_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أفكك وفقا للصيغة القانونية",
+      "body": "أفكك وفقا للصيغة القانونية",
+      "figureDesc": "Un petit cadre vide à bordure pointillée pour écrire la décomposition ; le nombre à décomposer n'est pas visible.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p011_i4",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur l'écriture en chiffres des grands nombres (millions), le plus petit et le plus grand nombre, et la décomposition canonique, ce qui correspond à la Période 1 (Grands nombres).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Grands nombres entiers naturels",
+    "skill": "Écrire en chiffres, comparer et décomposer des grands nombres (à partir de sept chiffres) selon l'écriture canonique.",
+    "pageType": "mixed",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "nombres entiers naturels",
+      "écriture en chiffres",
+      "plus petit et plus grand nombre",
+      "décomposition canonique",
+      "millions"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : trouver le plus petit ou le plus grand nombre selon le nombre de chiffres, retrouver un nombre à partir de la somme de ses chiffres, et passer de l'écriture en lettres à l'écriture en chiffres puis à la décomposition canonique.",
+    "themeGroup": "Grands nombres entiers"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« وثمانون ألف » : l'image montre « وثمانون ألف » ; la transcription correspond, mais la grammaire attendue serait « وثمانين », donc aucune faute de transcription ici (à ne pas corriger)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre rouge « تمرين » qui précède chaque exercice (3 occurrences) est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les mentions « الإجابة » des deux cadres de réponse (après « تسعة ملايين » et après « سبعة ملايين… وخمسة ») ne sont pas transcrites, et les cadres vides sont indiqués par « réponse: None »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Dans le bloc [2], la phrase « ماهو أصغر عدد يتكون من … أرقام ؟ » est dupliquée dans la seconde colonne."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le bloc [1] regroupe « تسعة ملايين » et « سبعة ملايين… » en un seul exercice alors que ce sont deux items avec chacun leur cadre de réponse."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le texte rouge « أفكك الأعداد ذات … أرقام فأكثر… » est transcrit en double (colonne de contenu répétée) sans indication de sa couleur/titre de section."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

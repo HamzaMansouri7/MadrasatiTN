@@ -1,0 +1,242 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 71,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Note : cette page n'est pas une page de mathématiques du manuel Mouayen. C'est un examen normalisé marocain de français (certificat des études primaires, session juillet 2022) sur le thème « Les énergies fossiles et renouvelables ».",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte support de l'épreuve (Examen normalisé pour l'obtention du certificat des études primaires, Session juillet 2022, Épreuve de français, Durée 1H30mn, Note : /40)",
+      "body": "Comme nous le voyons bien, nous consommons de plus en plus d'énergie pour nos habitations, nos bureaux, nos usines, nos transports… Logique, nous sommes de plus en plus nombreux sur terre.\nAujourd'hui, nous utilisons surtout des énergies fossiles* comme le pétrole, le gaz, le charbon ou encore le nucléaire. Mais le problème est que ces énergies sont polluantes et pas vraiment durables ! À trop les consommer, les réserves s'épuisent : d'où l'importance des énergies renouvelables comme le soleil, le vent ou les marées. Ces ressources-là polluent moins et sont inépuisables, mais elles ne sont pas permanentes…\nSi nous ne voulons pas épuiser nos ressources, il va falloir développer les énergies durables et réduire notre consommation, d'autant que nous n'avons pas de planète de rechange ! **\nISABELLE DESPEZ, les énergies expliquées aux enfants (Texte adapté)\nArticle publié sur https://www.salamandre.org/article/les-energies-expliquees-aux-enfants/\n* font référence à la décomposition d'éléments vivants dans le sol il y a des millions d'années.\n** une planète de remplacement que l'on pourrait coloniser.",
+      "figureDesc": "En-tête avec cadres Nom/Prénom/N° d'examen (barrés), emblème officiel marocain avec texte en arabe, case Note /40.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p071_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.1",
+      "instruction": "De quel site Internet est extrait cet article et quelle en est l'auteure ? (3 pts)",
+      "body": "Compréhension de l'écrit (15 points). Ligne de réponse pointillée.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p071_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.2",
+      "instruction": "Relève du texte trois sources (primaires) dont provient chacun des deux types d'énergie cités. (6 pts)",
+      "body": "Compléter le tableau : Les énergies ........ / Les énergies ........, avec 3 tirets par colonne.",
+      "figureDesc": "Tableau à deux colonnes, titres à compléter, trois lignes de tirets pointillés par colonne.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p071_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.3",
+      "instruction": "Identifie le type de ce texte : (2 pts)",
+      "body": "narratif ☐ descriptif ☐ explicatif ☐",
+      "figureDesc": "Trois cases à cocher.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p071_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.4",
+      "instruction": "Donne un titre à ce texte (2 pts)",
+      "body": "Ligne de réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p071_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I.5",
+      "instruction": "L'auteure parle de deux actions à mener pour préserver nos ressources en énergie. Lesquelles ? (2 pts)",
+      "body": "........ ; ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p071_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.A.1",
+      "instruction": "Trouve dans le texte le contraire des mots suivants : (1 pt)",
+      "body": "Activités réflexives sur la langue (18 points). A. Lexique (3 points). Rares # ........ ; Temporaires # ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p071_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.A.2",
+      "instruction": "Trouve le contraire de ces mots en ajoutant ou en supprimant le préfixe convenable : (1 pt)",
+      "body": "Inépuisable : ........ honnête : ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p071_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.A.3",
+      "instruction": "Souligne les termes qui se rapportent au thème du texte : (1 pt)",
+      "body": "École – réserves – renouvelables – aujourd'hui – soleil – alors – animaux – énergie",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p071_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.B.1",
+      "instruction": "Souligne le CCT et entoure le CCM dans la phrase suivante : (1 pt)",
+      "body": "Grammaire (6 points). Chaque semaine, le professeur explique longuement le réchauffement climatique.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p071_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.B.2",
+      "instruction": "Transforme la phrase suivante en phrase interrogative en inversant le sujet : (1 pt)",
+      "body": "L'énergie hydraulique est fournie par la force d'écoulement de l'eau.",
+      "figureDesc": "Ligne de réponse pointillée.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p071_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "II.B.3",
+      "instruction": "Relie les deux phrases pour exprimer la cause : (1 pt)",
+      "body": "Aujourd'hui, la population mondiale consomme de plus en plus d'énergie. Elle est de plus en plus nombreuse sur la surface de la planète Terre.",
+      "figureDesc": "Lignes de réponse pointillées. Pied de page : 1/2.",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p071_i12",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.22
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un examen normalisé marocain de français (certificat d'études primaires, juillet 2022) sur les énergies fossiles et renouvelables : c'est une évaluation générale (compréhension, lexique, langue), pas un chapitre précis du manuel tunisien, même si le thème rejoint de loin le module 5 « Sauver la nature ».",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Les énergies fossiles et renouvelables",
+    "skill": "Comprendre un texte explicatif sur l'énergie, puis travailler le lexique (contraires, préfixes, champ lexical) et la grammaire (compléments circonstanciels de temps et de manière).",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "schema_tableau",
+      "qcm",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "énergies fossiles",
+      "énergies renouvelables",
+      "texte explicatif",
+      "compréhension de l'écrit",
+      "contraires et préfixes",
+      "CCT et CCM"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un texte documentaire sur un enjeu actuel, l'énergie, sert de support à des questions graduées : identifier la source, classer dans un tableau, reconnaître le type de texte, trouver un titre, puis faire des activités de langue sur le même thème.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Texte support: l'image indique « pas de planète de rechange ! ** » ; la transcription est correcte, mais « Comme nous le voyons bien » est bien présent. Aucune erreur de mot détectée dans le texte."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le bloc d'en-tête (Nom, Prénom, N° d'examen, mention du Royaume du Maroc en arabe/tifinagh) n'est pas transcrit ; seul le titre de l'examen est repris."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 1/2 » en bas de page est omis."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de réponse pour II.B.2 et II.B.3 ne sont pas mentionnées (pointillés)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

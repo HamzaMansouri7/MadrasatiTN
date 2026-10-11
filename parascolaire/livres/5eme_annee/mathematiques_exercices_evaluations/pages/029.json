@@ -1,0 +1,103 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 29,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "حل مسائل حسابية متتبعا التمشي السابق (مسائل في الأثمان والكتل والجدول التجاري) - ملاحظة : la page est en réalité de mathématiques",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "حُلَّ الْمَسَائِلَ التَّالِيَةَ مُتَّبِعًا التَّمَشِّيَ السَّابِقَ.",
+      "body": "شَرَى رَجُلٌ لِزَوْجَتِهِ حُلِيًّا مُكَوَّنًا مِنْ عِقْدٍ كُتْلَتُهُ 19 غ بِـ 56 د الغِرَامِ الوَاحِدِ وَقُرْطَيْنِ وَخَاتَمٍ وَدَفَعَ مُقَابِلَ كُلِّ ذَلِكَ 1310 د. اِحْسُبْ ثَمَنَ العِقْدِ ثُمَّ احْسُبْ ثَمَنَ القُرْطَيْنِ وَالْخَاتَمِ.",
+      "figureDesc": "أسطر منقطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p029_i1",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 (تابع)",
+      "instruction": "اِحْسُبْ ثَمَنَ بَيْعِ العِقْدِ. / اِحْسُبِ المَبْلَغَ الَّذِي يَنْقُصُ العَائِلَةَ.",
+      "body": "اِحْتَاجَتِ العَائِلَةُ يَوْمًا لِـ 900 د فَوَقَعَ بَيْعُ العِقْدِ بِـ 38 د الغِرَامِ الوَاحِدِ.\n* اِحْسُبْ ثَمَنَ بَيْعِ العِقْدِ.\n* اِحْسُبِ المَبْلَغَ الَّذِي يَنْقُصُ العَائِلَةَ.",
+      "figureDesc": "أسطر منقطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p029_i2",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَا هِيَ كُتْلَةُ الفَطِيرَةِ قَبْلَ الطُّهْوِ؟",
+      "body": "صَنَعَتْ أَسْمَاءُ فَطِيرَةً لِعِيدِ مِيلَادِهَا. فَاسْتَعْمَلَتِ الْمَوَادَّ وَالْمَقَادِيرَ التَّالِيَةَ: 120 غ دَقِيقًا، 260 غ مِنَ البَيْضِ، 120 غ سُكَّرًا، 200 غ شُكُلَاطَة، 50 غ فَوَاكِه جَافَّةً، 250 غ زُبْدَةً.\n* مَا هِيَ كُتْلَةُ الفَطِيرَةِ قَبْلَ الطُّهْوِ؟\n- قَسَّمَتْ أَسْمَاءُ الفَطِيرَةَ إِلَى 8 أَجْزَاءٍ مُتَمَاثِلَةٍ. فَمَا هِيَ كُتْلَةُ كُلِّ جُزْءٍ إِذَا عَلِمْتَ أَنَّ الفَطِيرَةَ عِنْدَ وَضْعِهَا فِي الفُرْنِ تَفْقِدُ مِنْ كُتْلَتِهَا 240 غ.",
+      "figureDesc": "أسطر منقطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p029_i3",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اِطْرَحِ الأَسْئِلَةَ الْمُنَاسِبَةَ لِلْمَسْأَلَةِ وَحُلَّهَا.",
+      "body": "لِبَائِعٍ عَدَدٌ مِنْ وَسَائِلِ الرَّفَاهِ المَنْزِلِيَّةِ يُبَيِّنُهَا الجَدْوَلُ التَّالِي. هَذَا البَائِعُ مَدِينٌ لِلْمُوَزِّعِينَ بِالْجُمْلَةِ بِـ 5 سَنَدَاتٍ مُتَمَاثِلَةٍ قِيمَةُ كُلِّ سَنَدٍ 1800 د.",
+      "figureDesc": "جدول: المواد (ثلاجة، موقد غازي، فرن كهربائي، برادة ماء، مكيف للهواء). العدد: 8، ......، 14، 18، ...... . ثمن الوحدة بالدينار: 325، 215، ......، 17، 980. الثمن الجملي بالدينار: ......، 1290، 910، ......، 3920.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p029_i4",
+      "topicId": "math-5-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p6",
+  "topicTitle": "Période 6 : Aires latérales/totales et synthèse",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p4",
+    "confidence": 0.15
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des situations-problèmes variées (prix, masses, tableau commercial, billets/traites) à résoudre avec une démarche, ce qui correspond à la résolution de situations-problèmes, mais les masses et les décimaux pourraient aussi relever de la période 4 ou 3, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes sur prix, masses et billets",
+    "skill": "Résoudre des problèmes à plusieurs étapes impliquant prix, masses et valeurs en suivant une démarche de résolution structurée.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "problèmes",
+      "prix",
+      "masse",
+      "bijoux",
+      "pâtisserie",
+      "tableau commercial"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations de la vie quotidienne (achat et revente de bijoux au gramme, recette de gâteau à additionner les masses, commerçant endetté avec traites à partir d'un tableau) qui amènent à poser soi-même les questions d'un problème à étapes.",
+    "themeGroup": "Problèmes d'achat, vente et bénéfice"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

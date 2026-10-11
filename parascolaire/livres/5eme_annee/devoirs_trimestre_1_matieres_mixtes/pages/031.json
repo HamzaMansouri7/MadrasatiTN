@@ -1,0 +1,130 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 31,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "أتموقع في الزمان والمكان – الحدث التاريخي والحدث غير التاريخي، التقويم الميلادي والتقويم الهجري (Se situer dans le temps et l'espace)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أتموقع في الزّمان والمكان",
+      "body": "تنقسم الأحداث إلى نوعين\nالحدث التاريخي والحدث غير التاريخي",
+      "figureDesc": "Frise chronologique : flèche horizontale verte pointant vers la gauche, avec un repère 0 au centre (ميلاد المسيح). À droite du 0 : « ق.م » (قبل الميلاد). À gauche du 0 : « م » (التقويم الميلادي). Légende : « التقويم الميلادي ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p031_i1",
+      "topicId": "hg-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحدث التاريخي",
+      "body": "هو الحدث الهام في حياة الفرد أو المجموعة، وهو عادة ما يقع مرة واحدة ولا يتكرر إلا نادرا، ويحتفظ به في الذاكرة، مثل تاريخ الولادة أو تاريخ الزواج أو تاريخ التخرج أو تاريخ الاستقلال إلخ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p031_i2",
+      "topicId": "hg-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحدث غير التاريخي",
+      "body": "هو مجموع الأحداث التي يعيشها يوميا وليست لها أهمية واضحة أو نادرة ويمكن أن تتكرر عديد المرات مثل الذهاب إلى المدرسة أو الذهاب إلى الحلاق أو نزول المطر أو تحية العلم إلخ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p031_i3",
+      "topicId": "hg-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ولتحديد التاريخ والزمن اعتمد العلماء عدة تقاويم",
+      "body": "وكلمة التقويم تعني التأريخ، أي ما نحدد به الزمن التاريخي\nمن أهمها نجد التقويم الميلادي والتقويم الهجري",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p031_i4",
+      "topicId": "hg-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "التقويم الميلادي",
+      "body": "وهو نسبة لميلاد المسيح عليه السلام حيث بدؤوا التأريخ منذ ولادته فنجد فترة ما قبل الميلاد ميلاد المسيح وفترة ما بعد الميلاد",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p031_i5",
+      "topicId": "hg-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "التقويم الهجري",
+      "body": "أي منذ هجرة الرسول الكريم صلى الله عليه وسلم من مكة إلى المدينة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p031_i6",
+      "topicId": "hg-5-u1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "hg-5-u1",
+  "topicTitle": "Unité 1 : Histoire - Introduction et Tunisie antique",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "math-5-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-5-m5",
+    "confidence": 0.33
+  },
+  "topicSubject": "Histoire & Géographie",
+  "topicReason": "La page traite des repères chronologiques (événement historique vs non historique, calendriers grégorien et hégirien), ce qui correspond à l'introduction de l'Unité 1 d'Histoire (repères chronologiques, Tunisie antique).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Histoire-Géographie",
+    "theme": "Événements historiques et calendriers",
+    "skill": "Distinguer un événement historique d'un événement non historique et situer des dates avec les calendriers grégorien et hégirien.",
+    "pageType": "lesson",
+    "formats": [
+      "appariement",
+      "vrai_faux",
+      "qcm",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "événement historique",
+      "événement non historique",
+      "calendrier grégorien",
+      "calendrier hégirien",
+      "chronologie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les définitions avec exemples de la vie quotidienne (naissance, mariage, diplôme, indépendance, trajet scolaire, pluie) se réutilisent pour des exercices de classement ou de tri, des vrais/faux, ou une frise personnelle à construire en distinguant avant et après la naissance du Christ ou l'Hégire.",
+    "themeGroup": "Repères chronologiques et calendriers"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Histoire-Géographie"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

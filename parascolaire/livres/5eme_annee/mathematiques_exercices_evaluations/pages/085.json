@@ -1,0 +1,136 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 85,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مراجعة ودعم: أنجز عمليات الضرب على الأعداد التي تقيس الزمن (ملاحظة : الصفحة تتعلق في الواقع بمادة الرياضيات)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنجز العمليّاتِ التّاليةَ ولا تنسَ التّحويلَ اللّازمَ:",
+      "body": "(6 س و 35 دق و 20 ث × 4) + (4 أيام و 6 س) = ...........\n(3 أيام و 7 س و 47 دق × 13) - (6 أيام و 12 س) = ...........\n(8 س و 55 دق × 6) - (7 س × 4) = ...........\n(15 س و 46 ث × 5) + (3 س و 48 دق × 2) = ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p085_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اِقْتَطَعَتْ ياسمينُ تَذْكِرَةً بِـ 2,500 د وَدَخَلَتْ إِلى نادي الأَلْعابِ على السّاعةِ العاشِرَةِ صَباحًا فَشارَكَتْ في الأَلْعابِ الْمَوْجودَةِ هُناكَ كَمَا يُوَضِّحُ الجَدْوَلُ:",
+      "body": "– مَتى انْتَهَتْ ياسمينُ مِنَ اللَّعِبِ وَكَمْ دَفَعَتْ في الجُمْلَةِ؟\nبَعْدَ اللَّعِبِ تَحَوَّلَتْ ياسمين في أَنْحاءِ النّادي لِمُدَّةِ 1 س و 15 دق فَرَأَتْ الحَيَواناتِ والطُّيورَ ثُمَّ خَرَجَتْ مُتَوَجِّهَةً إلى بَيْتِها.\n– ما هِيَ ساعَةُ خُروجِ ياسمين مِنَ النّادي؟\n– ما هِيَ ساعَةُ وُصولِ ياسمين إلى بَيْتِها إذا قَضَتْ رُبْعَ ساعَةٍ في طَريقِ العَوْدَةِ؟",
+      "figureDesc": "جدول: الأنشطة (تأرجح، تزحلق، قفز، المجموع). الزمن: 35 دق، 35 دق، 35 دق، المجموع فارغ. ثمن التذكرة بالدينار: 1,500 للتأرجح، خانة فارغة للتزحلق، 2 للقفز، 4,700 للمجموع. أسطر فارغة للإجابة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p085_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "وَصَلَتْ حافِلَةٌ لِنَقْلِ الرُّكّابِ إلى مَدينَةِ عين دراهم على السّاعَةِ 13 و 30 دق.",
+      "body": "– كَمْ دامَتْ رِحْلَتُها إذا انْطَلَقَتْ مِنْ مَدينَةِ الجم على السّاعَةِ 8 و 45 دق. تَوَقَّفَتِ الحافِلَةُ أَثْناءَ الرِّحْلَةِ 25 دق.\n– فَما هُوَ الزَّمَنُ الَّذي قَضَتْهُ الحافِلَةُ في السَّيْرِ؟",
+      "figureDesc": "سطر فارغ للإجابة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p085_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.38
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des révisions de multiplication de durées (jours, heures, minutes, secondes) et des problèmes sur les horaires et les durées, ce qui correspond au calcul sur les durées de la Période 2.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures de durées : multiplication et conversions",
+    "skill": "Effectuer des multiplications, additions et soustractions sur des durées (jours, heures, minutes, secondes) avec conversions, et résoudre des problèmes de temps.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "durées",
+      "multiplication",
+      "conversion",
+      "heures et minutes",
+      "problème de temps",
+      "horaires"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Calculs de durées avec conversions et deux situations concrètes réutilisables : une sortie au club de jeux avec tableau de tarifs et d'horaires, et un trajet en bus avec arrêt pour calculer le temps de route effectif.",
+    "themeGroup": "Mesures de durées"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de l'exercice 2 est absent de la transcription (Activités: تارجح، تزحلق، قفز، المجموع; Durée: 35 دق pour chacune; Prix: 1,500 / vide / 2 / 4,700)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de l'en-tête 'مراجعة ودعم: أنجز عمليات الضرب على الأعداد التي تقيس الزمن' est absent, ainsi que le numéro de page 86."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Opération 1: l'image porte '(6 س و 35 دق و 20 ث × 4)'. La transcription est correcte. Opération 4: l'image porte '(15 س و 46 ث × 5)'. La transcription omet 'س و 46 ث' sans changement ; l'image montre '15 س و 46 ث × 5', donc à vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'أنجز' dans l'image est écrit 'أنجز' avec vocalisation 'أَنْجِزِ' ; le tashkeel de l'exercice 1 et de plusieurs mots de l'exercice 3 est absent ou incohérent (ex. 'العمليّاتِ التّاليةَ' vocalisé, mais 'اِقْتَطَعَتْ' vocalisé différemment)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'تحوّلت ياسمين في أنحاء النادي' : l'image porte 'تَحَوَّلَتْ ياسمين' ; la transcription est correcte, mais 'فَرَأَتْ الحَيَواناتِ' ne correspond pas exactement à 'فَرَأَتِ الحَيَواناتِ'."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'exercice 3, 'كَمْ دامَتْ رِحْلَتُها' : l'image porte 'كَمْ دامَتْ رِحْلَتُها' ; 'تَوَقَّفَتِ' correct. Phrase finale 'فَما هُوَ الزَّمَنُ' correcte."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La question '– مَتى انْتَهَتْ ياسمينُ…' est placée dans la même section que le tableau manquant ; l'ordre est correct mais sans tableau."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.96,
+    "verdict": "ok",
+    "confirmedErrors": []
+  },
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.96
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

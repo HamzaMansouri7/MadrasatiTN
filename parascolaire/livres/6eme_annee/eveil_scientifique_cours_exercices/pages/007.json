@@ -1,0 +1,87 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 7,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "L'air : propriétés de l'air (il a une masse, il se dilate sous l'effet de la chaleur et se contracte sous l'effet du froid)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "التَّعْلِيمَة : مَاذَا تَسْتَنْتِجُ مِنْ هَذِهِ التَّجْرِبَةِ ؟",
+      "body": "السَّنَد: وَزَنَتْ زَيْنَبُ الوِعَاءَ، قَامَتْ بِتَسْخِينِ الهَوَاءِ المَوْجُودِ دَاخِلَ الوِعَاءِ، أَعَادَتْ وَزْنَ الوِعَاءِ.",
+      "figureDesc": "Trois schémas superposés : en haut, un récipient vert muni d'un manche posé sur une balance, avec une flèche vers le haut et un tas de petites billes (étiquette « الوعاء ») ; au milieu, le même récipient chauffé par un réchaud à gaz ; en bas, « نفس الوعاء » pesé de nouveau avec une flèche et un tas de billes. Deux lignes pointillées sont prévues pour la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p007_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "فِي الرَّسْمِ الَّذِي أَمَامَكَ :",
+      "body": "أ) مَاذَا يَحْدُثُ لَوْ وَضَعْتَ الجِهَازَ (أ) فِي حَوْضٍ بِهِ مَاءٌ سَاخِنٌ ؟ وَلِمَاذَا ؟\nب) مَاذَا يَحْدُثُ لَوْ وُضِعَ هَذَا الجِهَازُ فِي حَوْضٍ بِهِ مَاءٌ بَارِدٌ ؟ وَلِمَاذَا ؟\nج) مَاذَا تَسْتَنْتِجُ مِنَ التَّجْرِبَتَيْنِ السَّابِقَتَيْنِ ؟",
+      "figureDesc": "Trois flacons à col étroit surmontés d'un ballon de caoutchouc. (أ) : flacon hors de l'eau, ballon dégonflé et affaissé. (ب) : flacon placé dans un bassin d'eau chaude (« ماء ساخن »), ballon orange gonflé. (ج) : flacon placé dans un bassin d'eau froide (« ماء بارد »), ballon se dégonflant. Des flèches indiquent le passage d'un montage à l'autre. Des lignes pointillées sont prévues pour les réponses.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p007_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "أَنْجِزِ التَّجْرِبَةَ كَمَا هُوَ مُبَيَّنٌ جَانِبَهُ.",
+      "body": "- صُبَّ المَاءَ فِي القِمْعِ وَلَاحِظْ.\n- اِشْرَحْ سَبَبَ ظُهُورِ فُقَّاعَاتٍ فِي أُنْبُوبِ الاِخْتِبَارِ.",
+      "figureDesc": "Un flacon fermé par un bouchon, traversé par un entonnoir (« قمع ») dans lequel on verse de l'eau (« ماء ») depuis un verre. Un tube coudé relie le flacon à un tube à essai (« أنبوب الاختبار ») contenant de l'eau, où l'air chassé produit des bulles. Une flèche indique le sens de l'air. Une ligne pointillée est prévue pour la réponse.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p007_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u5",
+    "confidence": 0.35
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page, en arabe, traite des propriétés de l'air (pesée d'un récipient, dilatation par la chaleur, contraction par le froid), ce qui relève de l'unité sur l'air, même si le résumé de l'unité parle surtout de composition, respiration et combustion.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Propriétés de l'air",
+    "skill": "Interpréter des expériences simples pour conclure que l'air a une masse, se dilate à la chaleur et se contracte au froid.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "air",
+      "masse de l'air",
+      "dilatation",
+      "contraction",
+      "expérience",
+      "chaleur"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série de situations expérimentales (pesée d'un récipient avant et après chauffage, dispositif plongé dans l'eau chaude ou froide, entonnoir et tube à essai avec bulles) où l'élève observe, prédit, explique et tire une conclusion, réutilisable pour concevoir des activités d'investigation sur l'air.",
+    "themeGroup": "L'air et ses propriétés"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

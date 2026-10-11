@@ -1,0 +1,123 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 105,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Évaluation annuelle – Lecture du conte « Le vieux et la vieille »",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "A",
+      "instruction": "Lis le conte :",
+      "body": "Évaluation annuelle\n\nLe vieux et la vieille\n\nUn vieux paysan et une vieille paysanne habitaient dans une petite maison de campagne. Ils ne possèdent presque rien au monde. Pourtant ils ont une chose dont ils n'ont pas vraiment besoin : un cheval qui mange l'herbe des fossés de la route.\nLe paysan monte la bête quand il va à la ville ; il la prête quelquefois aux voisins. Cependant, il pense depuis quelque temps le vendre ou l'échanger contre un objet plus utile, sans savoir quoi : « Tu feras ce que tu jugeras bon de faire, lui dit la bonne femme. Aujourd'hui, c'est le jour de marché à la ville. Emmène le cheval ; tu le vendras ou tu feras un échange. Tout ce que tu feras me conviendra ».\nPuis, il monte sur le cheval pour aller le vendre ou l'échanger. « Oui, le vieux s'y connaît, se dit-elle, il fera une bonne affaire ».\nEn route, beaucoup de gens vont à la ville, en voiture, à cheval ou à pied. Parmi ces gens, un homme conduit une vache au marché. Elle est belle et en bonne santé. « Quel bon lait elle doit donner, se dit le paysan. Voilà qui sera un très bon échange, cette très belle vache contre mon cheval.\n-Hé là-bas ! L'homme à la vache ! Je te propose un marché. Je sais qu'un cheval coûte plus cher qu'une vache, mais cela ne me fait rien. Veux-tu échanger ta vache contre mon cheval ?\n-Je veux bien, répond l'homme, et ils échangent leurs bêtes. Le vieux paysan a bien pu rentrer chez lui puisqu'il a terminé l'affaire pour laquelle il est venu.\nMais comme il aime beaucoup voir le marché, il décide d'y aller quand même. Il se dirige avec sa vache vers la ville.\nComme il marche d'un pas rapide, il se trouve à côté d'un homme qui conduit un gros mouton recouvert d'une laine épaisse. « Un mouton trouvera bien l'herbe qu'il lui faut autour de notre maison, se dit le vieux paysan. On n'aura pas besoin de lui chercher de la nourriture. Voilà donc une belle bête que j'aimerais bien avoir. Et puis,",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p105_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.3
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation annuelle de lecture d'un conte (« Le vieux et la vieille »), qui couvre plusieurs modules sans correspondre clairement à un seul chapitre officiel.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127,
+    128
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Lecture et compréhension d'un conte",
+    "skill": "Lire un conte puis répondre à des questions pour montrer qu'on en a compris les personnages, les événements et le message.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "conte",
+      "lecture",
+      "compréhension",
+      "évaluation annuelle",
+      "personnages",
+      "vieux paysan"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un conte populaire sur un couple de paysans pauvres et leur cheval sert de support de lecture pour une évaluation de fin d'année. On peut reprendre l'idée d'un récit court et familier, suivi de questions sur les personnages, la situation de départ et la morale.",
+    "themeGroup": "Contes et récits légendaires"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « Sagesse », « 6ème année de base », « Les évaluations », « Évaluation annuelle »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », « 104 », « 6ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Ils ne possèdent presque rien » : l'image donne bien « possèdent » (présent), mais « habitaient » est à l'imparfait. Le texte est fidèle à l'image, pas d'erreur de transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« connaît, se dit-elle » : l'image porte « connaît. se dit-elle » avec un point. La transcription a corrigé la ponctuation."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Puis, il monte » : l'image montre « Puis, » avec une marque parasite. La transcription est correcte."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« En route, beaucoup de gens » : l'image présente un double espace entre « de » et « gens ». Sans conséquence."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "A",
+      "instruction": "Lis le conte :",
+      "body": "Le vieux et la vieille\n\nUn vieux paysan et une vieille paysanne habitaient dans une petite maison de campagne. Ils ne possèdent presque rien au monde. Pourtant ils ont une chose dont ils n'ont pas vraiment besoin : un cheval qui mange l'herbe des fossés de la route.\nLe paysan monte la bête quand il va à la ville ; il la prête quelquefois aux voisins. Cependant, il pense depuis quelque temps le vendre ou l'échanger contre un objet plus utile, sans savoir quoi : « Tu feras ce que tu jugeras bon de faire, lui dit la bonne femme. Aujourd'hui, c'est le jour de marché à la ville. Emmène le cheval ; tu le vendras ou tu feras un échange. Tout ce que tu feras me conviendra ».\nPuis, il monte sur le cheval pour aller le vendre ou l'échanger. « Oui, le vieux s'y connaît, se dit-elle, il fera une bonne affaire ».\nEn route, beaucoup de gens vont à la ville, en voiture, à cheval ou à pied. Parmi ces gens, un homme conduit une vache au marché. Elle est belle et en bonne santé. « Quel bon lait elle doit donner, se dit le paysan. Voilà qui sera un très bon échange, cette très belle vache contre mon cheval.\n-Hé là-bas ! L'homme à la vache ! Je te propose un marché. Je sais qu'un cheval coûte plus cher qu'une vache, mais cela ne me fait rien. Veux-tu échanger ta vache contre mon cheval ?\n-Je veux bien, répond l'homme, et ils échangent leurs bêtes. Le vieux paysan a bien pu rentrer chez lui puisqu'il a terminé l'affaire pour laquelle il est venu.\nMais comme il aime beaucoup voir le marché, il décide d'y aller quand même. Il se dirige avec sa vache vers la ville.\nComme il marche d'un pas rapide, il se trouve à côté d'un homme qui conduit un gros mouton recouvert d'une laine épaisse. « Un mouton trouvera bien l'herbe qu'il lui faut autour de notre maison, se dit le vieux paysan. On n'aura pas besoin de lui chercher de la nourriture. Voilà donc une belle bête que j'aimerais bien avoir. Et puis,",
+      "figureDesc": "En-tête décoratif avec nuage « Les évaluations », bandeaux « Sagesse » et « 6ème année de base » ; titre encadré « Évaluation annuelle ». Pied de page : « Lire et s'exprimer », 104. Texte du recto suivant partiellement visible en transparence (ignoré).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p105_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "examScope": "full_year",
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

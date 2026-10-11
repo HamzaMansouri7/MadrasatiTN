@@ -1,0 +1,101 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 11,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الجهاز التنفسي – التبادل الغازي على مستوى الحويصلات الرئوية (أهمية الأكسجين في عملية التنفس)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التعليمة : أَكْمِلْ بِمَا يُنَاسِبُ :",
+      "body": "السَّنَد : لاَحِظْ تَبَادُلَ الأُكْسِجِينِ وَثَانِي أُكْسِيدِ الكَرْبُونِ بَيْنَ هَوَاءِ الحُوَيْصِلاَتِ وَالدَّمِ.\n- يَنْقُلُ الدَّمُ إِلَى الحُوَيْصِلَةِ الرِّئَوِيَّةِ ...... لِيُخَلِّصَ مِنْهُ الجِسْمَ عِنْدَ ......\n- ثُمَّ يَنْقُلُ ...... مِنَ الحُوَيْصِلَةِ الرِّئَوِيَّةِ إِلَى الجِسْمِ عِنْدَ ......",
+      "figureDesc": "رسم للحويصلة الرئوية محاطة بشبكة من الشعيرات الدموية: الدم الغني بالأكسجين (أحمر) والدم الفقير من الأكسجين (أزرق). أسهم تبين دخول وخروج الهواء من الحويصلة وخروج ثاني أكسيد الكربون. مفتاح: سهم أحمر = دم غني بالأكسجين، سهم أزرق = دم فقير من الأكسجين. عنوان الرسم: الحويصلة الرئوية.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p011_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "6",
+      "instruction": "",
+      "body": "كلّ أعضاء جسمك تأخذ الأكسجين وليست رئتاك اللتان تتنفّسان بل مخّك ، عضلتك ، كبدك ....\nهل تعلم أنّ في 24 ساعة تمتصّ أعضاء الجسم حوالي 500 لتر من الأكسجين كما يمرّ في الرّئتين في نفس المدّة حوالي 8000 لتر من الدّم.",
+      "figureDesc": "إطار أزرق يحتوي على المعلومة «هل تعلم».",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p011_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6-أ",
+      "instruction": "إِذَا كَانَ جِسْمُكَ يَمْتَصُّ حَوَالَيْ 500 لِتْرٍ مِنَ الأُكْسِجِينِ فِي 24 سَاعَة. مَاهِيَ أَهَمِّيَّةُ الأُكْسِجِينِ فِي عَمَلِيَّةِ التَّنَفُّسِ ؟",
+      "body": "سطر منقّط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p011_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6-ب",
+      "instruction": "مَاذَا يَنْتُجُ عَنْ حَرْقِ المَوَادِّ الغِذَائِيَّةِ دَاخِلَ الجِسْمِ ؟",
+      "body": "سطر منقّط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p011_i4",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.85
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des échanges gazeux alvéolaires (O2 et CO2 entre l'air des alvéoles et le sang), de l'importance du dioxygène dans la respiration et de la combustion des aliments, ce qui correspond à l'Unité 2 : L'air, la respiration et la combustion.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Échanges gazeux pulmonaires",
+    "skill": "Expliquer le rôle de l'oxygène dans la respiration et décrire les échanges de gaz entre les alvéoles pulmonaires et le sang.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "appareil respiratoire",
+      "alvéoles pulmonaires",
+      "oxygène",
+      "dioxyde de carbone",
+      "échange gazeux",
+      "combustion des aliments"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Exercice à trous associé à un schéma support montrant les échanges de gaz sang/alvéoles, avec un encadré « Le savais-tu ? » à chiffres (500 L d'O₂, 8000 L de sang par jour) et des questions ouvertes sur l'utilité de l'oxygène et le devenir des aliments brûlés.",
+    "themeGroup": "La respiration"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

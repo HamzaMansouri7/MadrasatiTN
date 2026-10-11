@@ -1,0 +1,95 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 15,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني عدد 3 – خط و إملاء (السنة الثانية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسخُ عَلَى مِنْوَالِ الْمِثَالِ :",
+      "body": "السطر الأول (حروف): عٍ . عُ . وُْ . ئِي ؛ السطر الثاني (مقاطع): مَعْ . غُو . وُّو . مِئْـ . Barème : 0,25 لكل حرف ؛ 0,5 لكل مقطع (0,25 لكل مقطع في الجزء الثاني).",
+      "figureDesc": "Deux lignes d'écriture sur papier quadrillé avec modèles en arabe à copier (lettres puis syllabes), séparés par des points. Colonne de critères à droite (الوضوح، الجمالية) avec cases à cocher ; total sur 10.",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "evaluations_toutes_matieres_p015_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمْلَةِ وَأَنْتبهُ إِلَى رَسْمِ الْمُفْرَدَاتِ.",
+      "body": "لَا نُؤَجِّلُ عَمَلَ الْيَوْمِ إِلَى الْغَدِ.",
+      "figureDesc": "Lignes quadrillées vides pour recopier la phrase. Barème : 0,25 / 0,5 / 0,25 par mot ; critères : الوضوح، الجمالية، الاسترسال، التناسق، الجمالية.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p015_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "إِمْلَاءٌ : أُكَمِّلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "أَسْرَعَ غَيْلَانُ الْخُطَى يُرِيدُ أَنْ يَعْبُرَ ........ فَقَالَتْ لَهُ أُخْتُهُ : «تَمَهَّلْ وَلَا ........ احْتَرِمِ ........ السَّيْرِ وَرَاقِبِ ........ الضَّوْئِيَّةَ حَتَّى تَعُودَ إِلَى الْبَيْتِ سَالِمًا.»",
+      "figureDesc": "Texte à trous sur lignes quadrillées, les mots manquants étant dictés par l'enseignant. Barème : 2 points pour chaque mot correct ; critère : السلامة من الأخطاء ; total sur 10. En-tête : اختبار نهاية الثلاثي الثاني عدد 3، المادة : خط و إملاء، المستوى : السنة الثانية.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "evaluations_toutes_matieres_p015_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p6",
+    "confidence": 0.4
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de trimestre 2 (اختبار نهاية الثلاثي الثاني عدد 3, écriture et dictée) qui couvre plusieurs unités, donc elle ne correspond à aucun chapitre précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Calligraphie et dictée arabe",
+    "skill": "Copier correctement lettres, syllabes et phrase en écriture arabe, puis compléter un texte dicté sur la sécurité routière.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "dictee",
+      "autre"
+    ],
+    "keywords": [
+      "calligraphie arabe",
+      "copie de syllabes",
+      "dictée à trous",
+      "sécurité routière",
+      "fin de trimestre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation en deux parties : copie de lettres et syllabes avec un barème précis, puis texte à trous contextualisé (traverser la rue, respecter les règles et les feux), ce qui permet de lier l'écriture à l'éducation routière.",
+    "themeGroup": "Calligraphie et graphie des lettres"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

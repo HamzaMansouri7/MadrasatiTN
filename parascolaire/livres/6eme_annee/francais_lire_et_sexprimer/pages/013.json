@@ -1,0 +1,126 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 13,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Les maçons",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Les maçons\nLe père Mustapha a décidé d'agrandir sa maison. Les enfants sont grands, une chambre de plus est nécessaire.\nMustapha fera lui-même le maçon, son fils aîné, Mohamed, l'aidera.\nDes sacs de chaux et de ciment, des pierres, des briques, des échelles, des madriers et de gros tas de sable ont été déposés dans la cour.\nLe travail peut commencer.\nC'est Mohamed qui prépare le mortier ; avec sa pelle il mélange du sable, de la chaux et de l'eau. Il remplit l'auge de mortier et la porte à son père.\nMonté sur une échelle, le père construit les murs. Il aligne les briques et les assemble avec le mortier. C'est avec beaucoup d'habileté qu'il manie la truelle.\nLes murs s'élèvent, ils sont épais et solides. Une large fenêtre laissera entrer l'air et la lumière.\nMohamed travaille avec beaucoup de courage, car il sait que cette pièce neuve sera sa chambre. Il la partagera avec son jeune frère.\nMohamed songe déjà à la façon dont il disposera ses meubles :\n« Dans ce coin l'armoire, le long du mur son lit et celui de son frère, sous la fenêtre le bureau. Qu'il sera facile et agréable de travailler dans cette chambre claire. »\nD'après R. Potier « Du langage à la lecture »",
+      "figureDesc": "Texte encadré dans un cadre aux coins arrondis. En arrière-plan, on devine par transparence le verso de la page (texte de consignes illisible).",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p013_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Que va construire le père Mustapha ?",
+      "body": "B) Compréhension : 1) Que va construire le père Mustapha ? (une ligne de pointillés pour répondre)",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p013_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Qu'est-ce qui a été déposé dans la cour ?",
+      "body": "Qu'est-ce qui a été déposé dans la cour ? (deux lignes de pointillés pour répondre)",
+      "figureDesc": "Deux lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p013_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Que fait Mohamed avec sa pelle ?",
+      "body": "Que fait Mohamed avec sa pelle ? (deux lignes de pointillés pour répondre)",
+      "figureDesc": "Deux lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p013_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.52
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français sur un texte décrivant le travail de maçons (père Mustapha et son fils), ce qui correspond au Module 1 « Travailler pour s'épanouir » centré sur les récits sur le travail.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : les maçons",
+    "skill": "Lire un texte narratif et répondre à des questions de compréhension littérale en repérant les informations clés (action, objets, rôles).",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "maçons",
+      "construction de la maison",
+      "questions sur le texte"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Situation du quotidien (agrandir la maison en famille, métier de maçon) servant de support à des questions de repérage simples avec réponses courtes sur lignes pointillées, réutilisable pour d'autres textes sur les métiers ou les travaux familiaux.",
+    "themeGroup": "Métiers, citoyenneté et vie sociale"
+  },
+  "audit": {
+    "accuracy": 0.96,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : « Lecture - Compréhension », « Sagesse », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », numéro de page 12, « 6ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le texte de l'image dit « Dans ce coin l'armoire » avec un « ce » partiellement effacé. La transcription « ce » est correcte, donc aucune erreur ici."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est rattaché à la question 1 au lieu de former une section à part. Cela reste mineur."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.96
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

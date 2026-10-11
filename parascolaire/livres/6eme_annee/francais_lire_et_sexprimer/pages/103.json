@@ -1,0 +1,329 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 103,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Lire et s'exprimer : compréhension de texte (Christine et la boîte), vocabulaire et grammaire",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "b",
+      "instruction": "Relève, dans le texte, un détail qui le montre :",
+      "body": ".......................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p103_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Écris les mots du texte qui ont le même sens que les mots soulignés :",
+      "body": "- Sa mère se prépare à sortir. ➔ * Sa mère....................................... à sortir.\n- La fille n'est pas obéissante. ➔ * La fille n'est pas .....................................................\n- La petite fille est fatiguée. ➔ * La petite fille est .....................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p103_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "4) a-",
+      "instruction": "Est-ce que la fille a obéi aux ordres de sa mère ?",
+      "body": ".......................................................................................................................................\n.......................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p103_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "4) b-",
+      "instruction": "Justifie ta réponse :",
+      "body": ".......................................................................................................................................\n.......................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p103_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Écris « vrai » ou « faux » :",
+      "body": "- Christine a promis de ne pas toucher la boîte. (..........................)\n- Christine s'est corrigée de son défaut. (..........................)\n- La mère a voulu voir si Christine peut se corriger. (..........................)\n- Christine est docile. (..........................)",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p103_i5",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Que penses-tu de Christine ?",
+      "body": ".......................................................................................................................................\n.......................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p103_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "C) 1) a-",
+      "instruction": "Grammaire :\n1) a- Remplace « fille » par « garçon » et « boite » par « coffret » :",
+      "body": "« La curieuse petite fille tient la boîte neuve à la main. »\n.......................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p103_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "C) 1) b-",
+      "instruction": "Remplace « canari » par « cane » :",
+      "body": "« La mère offre à sa petite fille un charmant oiseau blanc. »\n.......................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p103_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "C) 2",
+      "instruction": "Relève dans cette phrase :",
+      "body": "« À mon retour, je te donnerai quelque chose. »",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p103_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.56
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation générale de français (compréhension du texte « Christine et la boîte », vocabulaire, grammaire) qui ne correspond clairement à aucun module précis : elle porte sur l'obéissance et sur l'accord des groupes nominaux, sans lien net avec les thèmes des modules 1 à 8.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte et accord grammatical",
+    "skill": "Comprendre un texte narratif en le justifiant par des détails, enrichir son vocabulaire par les synonymes et appliquer les accords en genre lors de transformations de phrases.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "synonymes",
+      "vrai ou faux",
+      "accord en genre",
+      "transformation de phrases",
+      "conte moral"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement classique d'évaluation autour d'un récit moral sur la désobéissance et la curiosité : questions de justification par relevé de détails, remplacement par des synonymes du texte, vrai/faux, avis personnel, puis transformations grammaticales (changement de genre, nom remplacé) et relevé de compléments dans une phrase.",
+    "themeGroup": "Orthographe et accords"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ajout de notes entre parenthèses absentes de l'image : « (La suite de la question 2, partie a, se trouve sur la page précédente.) », « (Mots soulignés : ...) » et « (La liste des éléments à relever continue sur la page suivante.) »"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« boîte » avec accent circonflexe dans les consignes C-1-a ; l'image porte « boite » dans « Remplace « fille » par « garçon » et « boite » par « coffret » » (le transcripteur a laissé « boite » dans la consigne mais « boîte » dans la phrase, ce qui est correct)"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes et pieds de page ne sont pas transcrits : « Les évaluations », « Sagesse », « 6ème année de base », « Lire et s'exprimer », « 102 »"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cadres de réponse « vrai/faux » de la question 5 ne sont pas mentionnés"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 3 : le « * » devant « Sa mère » est noté, mais l'exercice 2 « Relève dans cette phrase : » est suivi de rien visible ; rien d'inventé sinon"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "2-b",
+      "instruction": "Relève, dans le texte, un détail qui le montre :",
+      "body": "Ligne de réponse en pointillés. (La suite de la question 2, partie a, se trouve sur la page précédente.)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "sagesse_6eme_complet_p103_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Écris les mots du texte qui ont le même sens que les mots soulignés :",
+      "body": "- Sa mère se prépare à sortir. → * Sa mère ............................ à sortir.\n- La fille n'est pas obéissante. → * La fille n'est pas ....................\n- La petite fille est fatiguée. → * La petite fille est ....................\n(Mots soulignés : se prépare, obéissante, fatiguée)",
+      "figureDesc": "Flèches épaisses reliant chaque phrase à sa phrase à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p103_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-a",
+      "instruction": "Est-ce que la fille a obéi aux ordres de sa mère ?",
+      "body": "Deux lignes de réponse en pointillés.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "sagesse_6eme_complet_p103_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-b",
+      "instruction": "Justifie ta réponse :",
+      "body": "Deux lignes de réponse en pointillés.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "sagesse_6eme_complet_p103_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Écris « vrai » ou « faux » :",
+      "body": "- Christine a promis de ne pas toucher la boîte.\n- Christine s'est corrigée de son défaut.\n- La mère a voulu voir si Christine peut se corriger.\n- Christine est docile.",
+      "figureDesc": "Quatre cases arrondies en pointillés à droite de chaque phrase pour écrire vrai ou faux.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p103_i5",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Que penses-tu de Christine ?",
+      "body": "Deux lignes de réponse en pointillés.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "sagesse_6eme_complet_p103_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-1-a",
+      "instruction": "Grammaire : Remplace « fille » par « garçon » et « boite » par « coffret » :",
+      "body": "« La curieuse petite fille tient la boîte neuve à la main. »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p103_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-1-b",
+      "instruction": "Remplace « canari» par « cane » :",
+      "body": "« La mère offre à sa petite fille un charmant oiseau blanc. »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p103_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-2",
+      "instruction": "Relève dans cette phrase :",
+      "body": "« À mon retour, je te donnerai quelque chose. » (La liste des éléments à relever continue sur la page suivante.)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "sagesse_6eme_complet_p103_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "examScope": "short_test",
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

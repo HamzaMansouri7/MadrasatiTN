@@ -1,0 +1,88 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 22,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التعبير عن المشاعر والانفعالات: الخوف، الإعجاب، الحقد والحسد (نصوص نموذجية للإنتاج الكتابي)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الخوف (نص نموذجي للتعبير عن الخوف، العنوان غير ظاهر في الصفحة)",
+      "body": "وكأن لساني عقل وقلبي قد ذاب\nأصبحت ساقاي غير قادرتين على حملي\nندت مني صرخة قوية مزقت أحشاء السكون\nاقشعر بدني وسرت فيه رعشة من الخوف والهلع\nخاف ذعر اضطرب ارتجف تلعثم تسمر وجم هلع ارتاع ذهل\nانتشر الهلع والفزع في قلوب السكان واختلط عليهم المر\nكان ذلك المنظر يثير في النفس الرهبة\nأخذت الهواجس تساور المرأة ثم اشتد بها الخوف\nكان يرتجف كالقصبة لشدة فزعه وخوفه ورعبه\nهب من النوم مذعورا وهو يرتعد من الخوف ويضطرب من الفزع والرعب\nسمعت صوتا مرعبا فاضطربت وأخذت أرتعش من شدة الخوف وجمدت قوائمي فلم أستطع أن أهرب أو أصيح\nذعرت مما سمعت وعلا وجهها الشحوب واصفر لونها وقالت في صوت مضطرب\nاشتد فزع سكان البيت فقد كانوا مهددين بكارثة شاملة لا يسلم من أذاها أحد\nكنت أتقدم بخطى متثاقلة أقدم رجلا وأأخر أخرى\nوإذا الدنيا من حولنا أصوات مخيفة ترتجف له النفس وعلامات الخوف بادية على وجوهنا",
+      "figureDesc": "نص داخل إطار (جدول) من خانة واحدة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p022_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الإعجاب",
+      "body": "اعتراها ذهول شديد ثم تحاملت على نفسها وقالت\nأعجبت بها أيما اعجاب\nراقتني الفكرة ولم تعوزني الإرادة في تنفيذها\nراقني ما كان عليه من حسن وتناسب ونظام\nحدقنا فيه غير مصدقين\nإنها غاية في الابداع والتنسيق\nأصغيت إليها بقلبي وعقلي وكياني\nأول ما بهرني وملك عقلي هو\nما أروع الطبيعة وما أبدعها سبحان الله\nيا لهذا الجمال الخلاب كل من رآه أعجب به\nإنه مشهد أثار اعجابنا",
+      "figureDesc": "نص داخل إطار (جدول) تحت عنوان الإعجاب",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p022_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الحقد والحسد (عنوان خانة جديدة، المحتوى غير ظاهر في هذه الصفحة)",
+      "body": "الحقد والحسد",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "production_ecrite_arabe_p022_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u7",
+    "confidence": 0.26
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est en arabe (expression écrite : vocabulaire et phrases modèles pour exprimer la peur, l'admiration, la haine et la jalousie), mais aucune des unités officielles (personnages, chronologie, indices, description, schéma narratif, cohérence) ne correspond clairement ; la plus proche, la description des personnages (ar-4-u4), reste trop incertaine.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Expression des sentiments et émotions",
+    "skill": "Rédiger un texte exprimant la peur, l'admiration, la haine ou l'envie à l'aide d'un lexique et de formules adaptés.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "expression écrite",
+      "sentiments",
+      "peur",
+      "admiration",
+      "jalousie",
+      "lexique arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banques de verbes, d'expressions imagées et de phrases modèles par émotion, réutilisables pour des consignes de production écrite ou des exercices d'enrichissement lexical (choisir l'expression adaptée, compléter un texte).",
+    "themeGroup": "Expression des sentiments et émotions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

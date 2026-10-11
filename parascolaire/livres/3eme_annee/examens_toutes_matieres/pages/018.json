@@ -1,0 +1,327 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 18,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قواعد اللغة – اختبار نهاية الثلاثي الأول عدد 4 (السنة الثالثة)",
+  "items": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "اِخْتِبَار نِهَايَةِ الثُّلَاثِي الأَوَّل - عَدَد : 4",
+      "body": "الْمَادَّة : قَوَاعِدُ اللُّغَةِ\nالْمُسْتَوَى : السَّنَةُ الثَّالِثَةُ\nالاسْمُ : ......\nاللَّقَبُ : ......\nالْقِسْمُ : ......\nالْمَعَايِيرُ | الْأَنْشِطَةُ",
+      "figureDesc": "En-tête de l'épreuve avec champs nom, prénom et classe, et colonne des critères. Filigrane MOURAJAA.COM.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p018_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَقْرَأُ الْفِقْرَةَ ثُمَّ أَفْصِلُ بَيْنَ جُمَلِهَا.",
+      "body": "تَرَاكَمَتْ السُّحُبُ فِي السَّمَاءِ وَاقْتَرَبَتْ الْعَاصِفَةُ مِنَ الْمَدِينَةِ فَعَادَ النَّاسُ إِلَى مَنَازِلِهِمْ مُسْرِعِينَ.",
+      "figureDesc": "Trois petites cases de notation à droite de la phrase. Critère: معـ1أ",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p018_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُرَتِّبُ الْمُفْرَدَاتِ التَّالِيَةَ وَأُعِيدُ كِتَابَتَهَا لِأُكَوِّنَ جُمَلًا تَامَّةَ الْمَعْنَى.",
+      "body": "شُجَيْرَةً - الْبُسْتَانِ - فِي - غَرَسَ - يَانِعَةً - الْمُجْتَهِدُ - جَدِّي\n......................................\nآوَى - سَلِيمُ - قِصَّةَ - الْأَزْرَقِ - طَالِعَ - ابْنِ\n......................................\nالْمَدْرَسَةِ - التَّلَامِيذُ - بِحَدِيقَةِ - اِعْتَنَى\n......................................",
+      "figureDesc": "Trois lignes pointillées pour écrire chaque phrase, avec une case de notation à droite de chacune. Critère: معـ2أ. Filigrane MOURAJAA.COM.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p018_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكْمِلُ الْفَرَاغَاتِ بِمَا يُنَاسِبُ لِأُكَوِّنَ جُمَلًا تَامَّةَ الْمَعْنَى.",
+      "body": "- ...................... الْجَدَّةُ قِصَّةً لِحَفِيدَتِهَا.\n- طَرَقَ الضَّيْفَ ......................\n- ...................... الطُّيُورُ فِي الْفَضَاءِ الرَّحْبِ.",
+      "figureDesc": "Une case de notation à côté de chaque phrase. Critère: معـ2ب",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p018_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الْأَفْعَالَ الْمُنَاسِبَةَ لِلْجُمَلِ.",
+      "body": "• الْأَطْفَالُ نَسَخُوا / نَسَخَ / نَسَخَا فِقْرَةً مِنْ قِصَّةٍ.\n• اِسْتَمْتَعَ / اِسْتَمْتَعُوا / اِسْتَمْتَعَتْ الْعَائِلَةُ بِنَسَمَاتِ الْبَحْرِ.\n• الصَّدِيقَاتُ رَاجَعُوا / رَاجَعْنَ / رَاجَعَ دُرُوسَهُنَّ بِجِدِّيَّةٍ.",
+      "figureDesc": "Une case de notation à droite de chaque phrase. Critère: معـ1ب",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "examens_toutes_matieres_p018_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p3",
+    "confidence": 0.32
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de premier trimestre (اختبار نهاية الثلاثي الأول عدد 4) en grammaire/langue arabe, qui porte sur la séparation des phrases, l'ordre des mots, les compléments de phrases et l'accord du verbe avec le sujet, et ne correspond donc à aucun chapitre précis des unités 1 à 3.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Construction de la phrase verbale",
+    "skill": "Délimiter les phrases d'un paragraphe, ordonner des mots pour former une phrase, compléter une phrase avec le verbe ou le complément qui convient et accorder le verbe avec son sujet.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "qcm",
+      "autre"
+    ],
+    "keywords": [
+      "grammaire arabe",
+      "phrase verbale",
+      "accord verbe-sujet",
+      "ordre des mots",
+      "ponctuation",
+      "évaluation trimestrielle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement progressif de quatre exercices courts (séparer les phrases d'un paragraphe, remettre des mots dans l'ordre, compléter des phrases, choisir parmi trois formes verbales), dans des situations quotidiennes proches de l'enfant (jardin, école, météo, famille), facilement adaptable à d'autres thèmes.",
+    "themeGroup": "Grammaire : la phrase verbale"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3, 2e phrase : la transcription donne « طَرَقَ الضَّيْفُ ...... » alors que l'image montre « طَرَقَ الضَّيْفَ ...... » avec le fatha final sur الضيف ; l'ordre est aussi à vérifier, la ligne de points suivant le mot."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « تَرَاكَمَتِ » alors que l'image porte « تَرَاكَمَتْ » (sukun sur le ت final)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « اقْتَرَبَتِ » alors que l'image porte « اقْتَرَبَتْ » (sukun)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 ب : « قِصَّةَ » et « طَالِعَ » : l'image montre bien « قِصَّةَ » et « طَالِعَ », donc correct ; mais « سَلِيمٌ » est écrit « سَلِيمُ » (damma) dans l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : « نَسَمَاتِ » alors que l'image porte « نَسَمَاتِ » ; le mot est cependant écrit « نَسْمَاتِ » ou « نَسَمَاتِ » de façon peu nette, à vérifier."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : « الْفِقْرَةَ / فِقْرَةً » : l'image porte « الْفِقْرَةَ » (correct), mais « فِقْرَةً » est présenté avec tanwin, ce qui est correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis : matière (قواعد اللغة), niveau (السنة الثالثة), « اختبار نهاية الثلاثي الأول عدد 4 », champs nom/prénom/classe, colonne des critères (معـ1أ, etc.)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3, 1re phrase : l'image montre « الْجَدَّةُ قِصَّةً » précédé de points ; la transcription place les points avant, ce qui est conforme."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « تَرَاكَمَتِ » alors que l'image porte « تَرَاكَمَتْ » (sukun sur le ت final)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « اقْتَرَبَتِ » alors que l'image porte « اقْتَرَبَتْ » (sukun sur le ت final)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 (2e série) : « سَلِيمٌ » (tanwin) alors que l'image montre « سَلِيمُ » (damma simple)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3, 2e phrase : « الضَّيْفُ » alors que l'image porte « الضَّيْفَ » (fatha), car الضيف est complément d'objet de طَرَقَ. L'ordre est correct : le mot vient d'abord, puis la ligne de points."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4, 2e phrase : « اِسْتَمْتَعَتِ » alors que l'image porte « اِسْتَمْتَعَتْ » (sukun)."
+      },
+      {
+        "type": "texte inventé",
+        "severity": "minor",
+        "detail": "Exercice 2 : les marqueurs « أ) ب) ج) » ne figurent pas dans l'image. Les trois séries de mots y sont séparées par des lignes pointillées, sans lettres."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis : المادة : قواعد اللغة ; المستوى : السنة الثالثة ; اختبار نهاية الثلاثي الأول ; عدد : 4 ; champs الاسم / اللقب / القسم ; colonnes المعايير et الأنشطة."
+      },
+      {
+        "type": "figureDesc",
+        "severity": "minor",
+        "detail": "Exercice 1 : les cases de notation sont du côté droit de la phrase, près de la colonne des critères, et non à gauche. Les critères sont notés « معـ1أ », « معـ2أ », « معـ2ب » et « معـ1ب »."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "اِخْتِبَار نِهَايَةِ الثُّلَاثِي الأَوَّل - عَدَد : 4",
+      "body": "الْمَادَّة : قَوَاعِدُ اللُّغَةِ\nالْمُسْتَوَى : السَّنَةُ الثَّالِثَةُ\nالاسْمُ : ......\nاللَّقَبُ : ......\nالْقِسْمُ : ......\nالْمَعَايِيرُ | الْأَنْشِطَةُ",
+      "figureDesc": "En-tête de l'épreuve avec champs nom, prénom et classe, et colonne des critères. Filigrane MOURAJAA.COM.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p018_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَقْرَأُ الْفِقْرَةَ ثُمَّ أَفْصِلُ بَيْنَ جُمَلِهَا.",
+      "body": "تَرَاكَمَتْ السُّحُبُ فِي السَّمَاءِ وَاقْتَرَبَتْ الْعَاصِفَةُ مِنَ الْمَدِينَةِ فَعَادَ النَّاسُ إِلَى مَنَازِلِهِمْ مُسْرِعِينَ.",
+      "figureDesc": "Trois petites cases de notation à droite de la phrase. Critère: معـ1أ",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p018_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُرَتِّبُ الْمُفْرَدَاتِ التَّالِيَةَ وَأُعِيدُ كِتَابَتَهَا لِأُكَوِّنَ جُمَلًا تَامَّةَ الْمَعْنَى.",
+      "body": "شُجَيْرَةً - الْبُسْتَانِ - فِي - غَرَسَ - يَانِعَةً - الْمُجْتَهِدُ - جَدِّي\n......................................\nآوَى - سَلِيمُ - قِصَّةَ - الْأَزْرَقِ - طَالِعَ - ابْنِ\n......................................\nالْمَدْرَسَةِ - التَّلَامِيذُ - بِحَدِيقَةِ - اِعْتَنَى\n......................................",
+      "figureDesc": "Trois lignes pointillées pour écrire chaque phrase, avec une case de notation à droite de chacune. Critère: معـ2أ. Filigrane MOURAJAA.COM.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p018_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكْمِلُ الْفَرَاغَاتِ بِمَا يُنَاسِبُ لِأُكَوِّنَ جُمَلًا تَامَّةَ الْمَعْنَى.",
+      "body": "- ...................... الْجَدَّةُ قِصَّةً لِحَفِيدَتِهَا.\n- طَرَقَ الضَّيْفَ ......................\n- ...................... الطُّيُورُ فِي الْفَضَاءِ الرَّحْبِ.",
+      "figureDesc": "Une case de notation à côté de chaque phrase. Critère: معـ2ب",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p018_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الْأَفْعَالَ الْمُنَاسِبَةَ لِلْجُمَلِ.",
+      "body": "• الْأَطْفَالُ نَسَخُوا / نَسَخَ / نَسَخَا فِقْرَةً مِنْ قِصَّةٍ.\n• اِسْتَمْتَعَ / اِسْتَمْتَعُوا / اِسْتَمْتَعَتْ الْعَائِلَةُ بِنَسَمَاتِ الْبَحْرِ.\n• الصَّدِيقَاتُ رَاجَعُوا / رَاجَعْنَ / رَاجَعَ دُرُوسَهُنَّ بِجِدِّيَّةٍ.",
+      "figureDesc": "Une case de notation à droite de chaque phrase. Critère: معـ1ب",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "jisr_ennajah_3eme_examens_p018_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَقْرَأُ الْفِقْرَةَ ثُمَّ أَفْصِلُ بَيْنَ جُمَلِهَا.",
+      "body": "تَرَاكَمَتِ السُّحُبُ فِي السَّمَاءِ وَاقْتَرَبَتِ الْعَاصِفَةُ مِنَ الْمَدِينَةِ فَعَادَ النَّاسُ إِلَى مَنَازِلِهِمْ مُسْرِعِينَ.",
+      "figureDesc": "Trois petites cases de notation à gauche de la phrase. Critère: مع1أ",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_3eme_examens_p018_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُرَتِّبُ الْمُفْرَدَاتِ التَّالِيَةَ وَأُعِيدُ كِتَابَتَهَا لِأُكَوِّنَ جُمَلًا تَامَّةَ الْمَعْنَى.",
+      "body": "أ) شُجَيْرَةً - الْبُسْتَانِ - فِي - غَرَسَ - يَانِعَةً - الْمُجْتَهِدُ - جَدِّي\nب) آوَى - سَلِيمٌ - قِصَّةَ - الْأَزْرَقِ - طَالِعَ - ابْنِ\nج) الْمَدْرَسَةِ - التَّلَامِيذُ - بِحَدِيقَةِ - اِعْتَنَى",
+      "figureDesc": "Trois lignes pointillées pour écrire chaque phrase, avec une case de notation à droite de chacune. Critère: مع2أ. Filigrane MOURAJAA.COM.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_3eme_examens_p018_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكْمِلُ الْفَرَاغَاتِ بِمَا يُنَاسِبُ لِأُكَوِّنَ جُمَلًا تَامَّةَ الْمَعْنَى.",
+      "body": "- ...................... الْجَدَّةُ قِصَّةً لِحَفِيدَتِهَا.\n- طَرَقَ الضَّيْفُ ......................\n- ...................... الطُّيُورُ فِي الْفَضَاءِ الرَّحْبِ.",
+      "figureDesc": "Une case de notation à côté de chaque phrase. Critère: مع2ب",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "jisr_ennajah_3eme_examens_p018_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُحِيطُ بِخَطٍّ مُغْلَقٍ الْأَفْعَالَ الْمُنَاسِبَةَ لِلْجُمَلِ.",
+      "body": "• الْأَطْفَالُ نَسَخُوا / نَسَخَ / نَسَخَا فِقْرَةً مِنْ قِصَّةٍ.\n• اِسْتَمْتَعَ / اِسْتَمْتَعُوا / اِسْتَمْتَعَتِ الْعَائِلَةُ بِنَسَمَاتِ الْبَحْرِ.\n• الصَّدِيقَاتُ رَاجَعُوا / رَاجَعْنَ / رَاجَعَ دُرُوسَهُنَّ بِجِدِّيَّةٍ.",
+      "figureDesc": "Une case de notation à droite de chaque phrase. Critère: مع1ب",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "jisr_ennajah_3eme_examens_p018_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

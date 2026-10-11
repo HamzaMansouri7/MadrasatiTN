@@ -1,0 +1,138 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 49,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 12 : الأعداد من 10 000 إلى 99 999 (1) – قراءة، كتابة، منازل – آليات الطرح",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "استعمل مرّةً واحدة ما يُناسب من الكلمات الآتية لكتابة ما يلي :",
+      "body": "الكلمات: ألــف – ثلاثمائة – سبعون\nأ) أكبر عدد مكوَّن من أربعة أرقام.\nب) أكبر عدد مكوَّن من خمسة أرقام.\nج) أصغر عدد مكوَّن من أربعة أرقام.\nد) أصغر عدد مكوَّن من خمسة أرقام.",
+      "figureDesc": "Trois cartes encadrées contenant les mots : ألــف، ثلاثمائة، سبعون.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p049_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أتمم الجدول :",
+      "body": "الأعداد: 53 687 ، 70 610 ، 14 859 ، 5 000\nأعمدة الجدول: العدد – عدد عشراته – عدد مئاته – عدد آلافه – عدد عشرات آلافه",
+      "figureDesc": "Tableau de 5 colonnes (العدد، عدد عشراته، عدد مئاته، عدد آلافه، عدد عشرات آلافه) et 4 lignes, seule la colonne du nombre est remplie ; les autres cases sont vides à compléter.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p049_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "دخل أمين المعرض السنويَّ للكتاب برواق محطّة الأرتال وبحافظة نقوده 7 أوراق مالية من فئة 5 د. فكّر في شراء ما يلي :",
+      "body": "- لعبة فكريّة بـ 12 500 مي\n- علبة أقلام تلوين بـ 2 100 مي\n- كتب مطالعة بـ 8 900 مي\n- آلة حاسبة بـ 16 500 مي\nأ) ابحث عن ثمن المشتريات.\nب) هل يكفيه المبلغ الذي يملكه إذا متّعه المسؤول عن المعرض من تخفيض بـ 1 000 مي عن كلّ مشتريات بـ 10 000 مي.\nج) إذا لم يستطع ما هي المشتريات التي يمكن اقتناؤها ليصرف أكبر مبلغ ممكن؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "mathematiques_exercices_corriges_p049_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "احسب أولا ثمّ استنتج :",
+      "body": "(150 - 100) - 25 ثمّ 150 - (100 - 25)\n(8 900 + 6 750) - 4 500 ثمّ 4 500 - (8 900 + 6 750)\n3 200 - (18 650 + 25 681) ثمّ (3 200 + 18 650) - 25 681",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p049_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.37
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la lecture, de l'écriture et des rangs des nombres de 10 000 à 99 999, de la monnaie (millimes et dinars) et de la soustraction, ce qui correspond à la Période 1 (nombres à 5 chiffres et monnaie).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    120
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres de 10 000 à 99 999",
+    "skill": "Lire, écrire et décomposer les nombres jusqu'à 99 999 selon leurs rangs, et effectuer des soustractions en maîtrisant l'ordre des opérations avec parenthèses.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "grands nombres",
+      "valeur positionnelle",
+      "tableau de numération",
+      "soustraction",
+      "parenthèses",
+      "budget d'achats"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : écrire le plus grand ou le plus petit nombre en utilisant chaque mot une seule fois, compléter un tableau de numération, problème de budget à la foire du livre avec réduction par tranche, et comparaison de calculs avec parenthèses placées différemment.",
+    "themeGroup": "Grands nombres"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 4, ligne 2 : l'image donne (8 900 + 6 750) - 4 500 puis 4 500 - (8 900 - 6 750)... en réalité l'image montre 4 500 - (8 900 + 6 750) puis (4 500 - 8 900) + 6 750. La transcription met '(8 900 + 6 750) - 4 500 ثمّ 4 500 - (8 900 + 6 750)', ce qui ne correspond pas à l'image ; la 2e expression doit être (4 500 - 8 900) + 6 750."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 4, ligne 1 : l'image donne (150 - 100) - 25 puis 150 - (100 - 25) ; la transcription écrit 150 - (100 - 25), ce qui est correct. Mais ligne 3 : l'image montre 3 200 - (18 650 + 25 681) puis (3 200 + 18 650) - 25 681, ce qui est correct. Seule la ligne 2 est fautive."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 (ب) : 'متّعه' dans l'image est 'متّعه' mais la phrase est 'إذا متّعه المسؤول' ; la transcription est correcte. Le mot 'اقتناؤها' est correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : 'السنويَّ' porte un tashkeel dans la transcription, alors que dans l'image il est écrit 'السنويّ' (shadda et kasra), différence mineure."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2 : les en-têtes du tableau sont transcrits sans 'عدد آحاده' ; l'image n'a pas cette colonne, donc ok. L'en-tête de la page (الأسبوع 12، الأعداد من 10 000 إلى 99 999 (1)، قراءة، كتابة، منازل - آليات الطرح) et le numéro de page 45 sont absents."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

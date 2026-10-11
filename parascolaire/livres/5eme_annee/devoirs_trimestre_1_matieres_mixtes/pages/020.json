@@ -1,0 +1,111 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 20,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "بناء الموسط العمودي لمستقيم (construction de la médiatrice d'un segment) et نصائح بخصوص حل المسائل (conseils pour la résolution de problèmes)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أخيراً نتحصل على موسط عمودي للمستقيم",
+      "body": "بناء الموسط العمودي",
+      "figureDesc": "Schéma de construction de la médiatrice : un segment [أ ب] (étiqueté 'المستقيم أ' et 'ب') avec des arcs de cercle tracés de part et d'autre de ses extrémités ; une droite bleue étiquetée 'الموسط العمودي' coupe le segment perpendiculairement, avec un angle droit marqué en jaune. Une règle en bois, un compas et un crayon bleu sont dessinés autour.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p020_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "نصائح بخصوص حل المسائل",
+      "body": "إعلم أيها التلميذ أن كل معلومة مقدمة في أي مسألة هي معلومة هامة لا يمكنك تجاوزها فهي تمهد في أغلب الأوقات للعملية التي تليها لذلك لا تتجاهلها\nلا يمكنك حل أي مسألة إذا لم تحفظ الجداول والقواعد الرياضية التي قدمتها لك سابقا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p020_i2",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-5-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.49
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la construction de la médiatrice d'un segment et de conseils généraux de résolution de problèmes ; la médiatrice n'apparaît explicitement dans aucun chapitre officiel de 5ème (les périodes 3 et 4 portent sur parallélogramme, hauteurs et cercle), donc aucune correspondance claire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Médiatrice d'un segment",
+    "skill": "Construire la médiatrice d'un segment avec les instruments de géométrie et adopter de bonnes méthodes pour résoudre un problème.",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "médiatrice",
+      "segment",
+      "construction géométrique",
+      "résolution de problèmes",
+      "conseils méthodologiques",
+      "règle et compas"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Peut servir d'encadré méthodologique (lire chaque donnée de l'énoncé, mémoriser les tables et règles) ou d'amorce pour une fiche de construction pas à pas de la médiatrice, mais la page contient peu de situations ou d'exercices originaux.",
+    "themeGroup": "Droites, médiatrice et bissectrice"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes du schéma ne sont pas transcrites : « الموسط العمودي », « المستقيم أ » et « ب »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« إعلم » : l'image montre « إعلم » avec un hamza sur l'alif (إِعلم), ce qui est déjà plus ou moins le cas ; aucune faute nette."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أخيراً » : le tanwin est bien transcrit. Rien d'autre à signaler."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« نتحصل » est conforme à l'image. « موسط » est conforme (l'image montre « موسَط »)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « بناء الموسط العمودي » est transcrit après « أخيراً… », ce qui correspond à l'ordre de l'image. Pas d'erreur."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

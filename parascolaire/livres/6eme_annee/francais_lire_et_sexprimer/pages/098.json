@@ -1,0 +1,131 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 98,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – D) Conjugaison (présent, passé composé et futur simple)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "D1-a",
+      "instruction": "Réécris ce passage au présent en remplaçant « Patricia » par « les filles » et « lionceau » par « lionceaux » :",
+      "body": "« Patricia soigne et sauve le petit lionceau. Elle met l'animal dans un landau. Le lionceau grandit vite. Il obéit à sa maîtresse. »",
+      "figureDesc": "Un espace vide est laissé pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p098_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D1-b",
+      "instruction": "Réécris ce passage au passé composé en remplaçant « Patricia » par « les filles » et « lionceau » par « lionceaux » :",
+      "body": "Le même passage que pour 1-a : « Patricia soigne et sauve le petit lionceau. Elle met l'animal dans un landau. Le lionceau grandit vite. Il obéit à sa maîtresse. » Une ligne en pointillés est prévue pour la réponse.",
+      "figureDesc": "Ligne en pointillés pour répondre.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p098_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D2-a",
+      "instruction": "Réécris ce passage au passé composé en commençant par :",
+      "body": "« La fille fait une bêtise. Elle met le petit lionceau dans le poulailler. »\n- Tu ……\n- Ma sœur et moi ……\n- Les deux fillettes ……",
+      "figureDesc": "Lignes en pointillés à compléter après chaque début de phrase.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p098_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D2-b",
+      "instruction": "Transforme ce passage comme suit :",
+      "body": "- Demain, je ……\n- Demain, nous ……",
+      "figureDesc": "Lignes en pointillés à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p098_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D3-a",
+      "instruction": "Réécris ce passage en commençant par :",
+      "body": "« Le soir, Patricia finit ses devoirs vite. Elle prend le ballon et elle va au parc avec son lionceau. Les deux amis font une sortie agréable. »\n- Hier, j' ……\n- Hier, les deux amies ……",
+      "figureDesc": "Lignes en pointillés à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p098_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D3-b",
+      "instruction": "Réécris ce passage en mettant les verbes au futur aux sujets indiqués :",
+      "body": "- Demain, nous ……\n……\n- Demain, elles ……\n……",
+      "figureDesc": "Deux lignes en pointillés par sujet.",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p098_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.44
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de conjugaison couvrant présent, passé composé et futur simple, donc plusieurs modules (m1 présent, m2 passé composé, m3 futur simple) sans qu'un seul chapitre ne corresponde clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    126
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Conjugaison présent, passé composé, futur simple",
+    "skill": "Conjuguer des verbes au présent, au passé composé et au futur simple en changeant le sujet d'un passage.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "conjugaison",
+      "présent",
+      "passé composé",
+      "futur simple",
+      "transformation de texte",
+      "accord sujet-verbe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : transformer un même court récit (une fille et son animal) en changeant le sujet, singulier ou pluriel, et le temps, avec des amorces de phrases imposées (Hier, Demain, Tu, Nous).",
+    "themeGroup": "Conjugaison"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

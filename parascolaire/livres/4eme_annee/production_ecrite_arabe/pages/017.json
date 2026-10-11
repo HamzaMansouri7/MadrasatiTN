@@ -1,0 +1,61 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 17,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الشخصيات: أوصاف خلقية (وصف الشخصيات من حيث الهيئة والشكل)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الشخصيات أوصاف خلقية",
+      "body": "فتاة باهرة الجمال كأنها القمر المكتمل في السماء أو النجوم اللامعة في الليل الكاحل السواد وجهها مستدير وردي اللون وعيناها خضروان بلون أعشاب البحر وشعرها أصفر كأنه خيوط الذهب\nشاب كأنه غصن مزهر وقفته فيها جلال ووقار وعيناه فيهما طموح وتعال\nكانت مريم طفلة بكل ما للطفولة من خصائص لهجتها في الحديث اشراقة وجهها بتلك البراءة والسذاجة خفة حركتها كأنها الظبي\nصار كهلا عجوزا فضعف بصره واعتل قلبه ووهنت قواه وخارت صحته\nخطواتها وئيدة كخطوات السلحفاة رجلاها هزيلتان وثيابها رثة بالية ظهرها منحن انحناء مزعجا\nجميل المنظر رائع الطلعة نجيب ذكي القلب وكان أنجب الاسرة وأذكاها وأرقها قلبا وأصفاها طلعة وأبرها بأبويه وأرفقها بصغار إخوته\nكانت له طلعة بهية تنم عن وجاهة مستدير الوجه طويل القامة ثاقب النظر له جسم رياضي\nشاب ذو ذراعين مفتولين وعلى رأسه قبعة واسعة تظلل وجهه ولا تترك من شعره الفاحم إلا بعض الخصائل السوداء المتدلية على جبينه\nعينا صديقي كعيني القطط في الصباح شعره بسط لونه بني ضارب إلى الصفرة كلون خيوط الذرة تماما وجهه أشقر انتشرت فيه نقاط نمش\nعينا الطفل سوداوين كحبتي زيتون لامعتان شعره جعد فاحم كقطع الظلام ووجهه قمحي صبغته شمس بلاده بسمرة خفيفة محببة\nشخص جميل الطلعة رشيق القوام حسن الصفات مفتول العضلات\nكانت شمطاء قبيحة المنظر شعرها أشعث وجهها صغير تعلوه كثير من التجاعيد وعيناها مستديرتان جاحظتان وأنفها طويل معقف وكأنه منقار نسر جارح\nرأيت رجلا أشعث أغبر قد تدلى شعره حلقات وانهالت لحيته",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "production_ecrite_arabe_p017_i1",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u4",
+  "topicTitle": "Unité 4 : Description et caractérisation des personnages",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-4-u5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-ch1",
+    "confidence": 0.2
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page présente des descriptions physiques (أوصاف خلقية) de personnages (visage, yeux, cheveux, allure), ce qui correspond à l'Unité 4 : Description et caractérisation des personnages.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description physique des personnages",
+    "skill": "Savoir décrire l'apparence physique d'un personnage (visage, yeux, cheveux, allure) en employant des comparaisons et des images.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "portrait physique",
+      "description",
+      "personnages",
+      "comparaison",
+      "métaphore",
+      "texte descriptif"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des portraits courts s'appuyant sur des comparaisons poétiques (astres, or, branche fleurie) peuvent servir de modèles pour des exercices de repérage du vocabulaire descriptif ou pour une production écrite de portrait physique.",
+    "themeGroup": "Description d'un personnage"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

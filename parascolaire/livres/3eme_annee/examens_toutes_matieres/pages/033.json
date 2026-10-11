@@ -1,0 +1,122 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 33,
+  "grade": "3ème Année",
+  "subject": "رياضيات",
+  "topicGuess": "إختبار نهاية الثلاثي الأول – عدد 2 – الرياضيات – السنة الثالثة (المبالغ المالية بالمليم: جمع وطرح وتركيب القطع النقدية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "السند 1 / التعليمة 1",
+      "instruction": "أَكْمِلِ الْمَبْلَغَ الْمَالِيَّ بِأَقَلِّ مَا يُمْكِنُ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "السَّنَدُ 1 : كَلَّفَتِ الْأُمُّ ابْنَهَا خَلِيلًا أَنْ يَقْتَنِيَ بَعْضَ الْغِلَالِ مِنَ السُّوقِ فَسَلَّمَتْهُ مَبْلَغًا مَالِيًّا قَدْرُهُ 5720 مي.",
+      "figureDesc": "إطار يحتوي على خمس قطع نقدية داكنة (ثلاث في الصف الأول واثنتان في الصف الثاني) وبقية الإطار فارغة لإتمام المبلغ.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p033_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2 / التعليمة 2",
+      "instruction": "أَحْسُبُ الْمَبْلَغَ الَّذِي طَلَبَهُ الْبَائِعُ، إِذَا عَلِمْتَ أَنَّ ثَمَنَ الْبُرْتُقَالِ يَقِلُّ عَنْ ثَمَنِ التُّفَّاحِ بِـ 350 مي؟",
+      "body": "السَّنَدُ 2 : اِشْتَرَى خَلِيلٌ مِنْ بَائِعِ الْغِلَالِ بُرْتُقَالًا بِـ 850 مي وَتُفَّاحًا. (ثلاثة أسطر منقطة للإجابة)",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p033_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "مَا هُوَ الْمِقْدَارُ الْمَالِيُّ الَّذِي تَبَقَّى لِلطِّفْلِ ؟",
+      "body": "(سطر منقط للإجابة)",
+      "figureDesc": "سطر منقط.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p033_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 4",
+      "instruction": "أَضَعُ فِي دَائِرَةٍ قِيمَةَ الْمَبْلَغِ الْبَاقِي مِنْ بَيْنِ الْمَبَالِغِ التَّالِيَةِ :",
+      "body": "ثلاثة إطارات تمثل ثلاثة مبالغ مختلفة من القطع النقدية، يختار التلميذ منها المبلغ الباقي.",
+      "figureDesc": "ثلاثة إطارات من القطع النقدية (قطع من فئة 2 د، و100 مي، و20 مي، وقطع داكنة) تمثل كل منها مبلغا مختلفا.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p033_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "السَّنَدُ 3 : تَذَكَّرَ خَلِيلٌ أَنَّهُ فِي حَاجَةٍ لِقَلَمٍ وَكُرَّاسٍ، فَذَهَبَ إِلَى الْمَكْتَبَةِ وَاشْتَرَى مَا أَرَادَ وَدَفَعَ الثَّمَنَ الَّذِي طَلَبَهُ الْكُتُبِيُّ، فَبَقِيَ فِي جَيْبِ خَلِيلٍ 2660 مي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p033_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p4",
+    "confidence": 0.24
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un examen de fin de premier trimestre (اختبار نهاية الثلاثي الأول – عدد 2) : même si les exercices portent surtout sur l'addition et la soustraction de sommes d'argent en millimes, il s'agit d'une évaluation générale et non d'un chapitre précis, donc topicId null.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie tunisienne : opérations sur les millimes",
+    "skill": "Résoudre des problèmes d'argent en composant, additionnant et soustrayant des montants en millimes avec le minimum de pièces.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "monnaie",
+      "millimes",
+      "pièces et billets",
+      "addition et soustraction",
+      "problème à étapes",
+      "situation d'achat"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un fil conducteur d'achats au marché puis à la librairie, découpé en supports et consignes successives (composer un montant avec le minimum de pièces, trouver un prix par comparaison, calculer le reste, reconnaître le reste parmi des images de pièces), réutilisable pour construire des problèmes d'argent à étapes.",
+    "themeGroup": "Monnaie tunisienne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

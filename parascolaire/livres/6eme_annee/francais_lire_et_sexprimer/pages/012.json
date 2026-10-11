@@ -1,0 +1,127 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 12,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : l'atelier d'Ibrahim et de Bruno (la table, le mécanicien)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3b",
+      "instruction": "Relève, dans le texte, deux détails qui le montrent :",
+      "body": "Deux lignes pointillées pour écrire les réponses. (La question 3a, qui précède, n'est pas visible sur la page.)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "francais_lire_et_sexprimer_p012_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Qu'utilise Ibrahim pour fabriquer la table ?",
+      "body": "Une ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p012_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Pourquoi la table sera –t-elle solide ?",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p012_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Réponds par « vrai » ou « faux » :",
+      "body": "- Dans l'atelier, il y a trois personnes.\n- Ibrahim veut devenir médecin.\n- La table est bien construite.\n- Ibrahim est fier de son travail.",
+      "figureDesc": "Quatre cases arrondies avec pointillés, à droite des énoncés, pour écrire vrai ou faux.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p012_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7a",
+      "instruction": "Complète ce passage avec les mots du cadre :",
+      "body": "Cadre : le soir – mécanicien – ranger – ramasser – atelier – propre\nBruno est un très bon ................... Il est toujours calme, toujours souriant, toujours prêt à faire chaque jour une heure de plus sans se plaindre.\n..............., quand tout le monde est parti, il reste un bon moment à se promener dans l'atelier. Il ............. un boulon qui brille dans une flaque d'huile. Il ............... un outil oublié. Ainsi, son .................. est toujours .................... et ordonné.",
+      "figureDesc": "Cadre arrondi contenant les mots à utiliser.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p012_i5",
+      "topicId": "fr-6-m1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7b",
+      "instruction": "Réécris ce passage en remplaçant « Bruno » par « Béatrice » :",
+      "body": "« Bruno est un très bon mécanicien. Il est toujours calme, toujours souriant, toujours prêt à faire chaque jour une heure de plus sans se plaindre. »\nSix lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p012_i6",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.33
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page propose une compréhension de texte sur le travail dans un atelier (Ibrahim fabrique une table, Bruno est mécanicien) avec exercices de lecture et de grammaire, ce qui correspond au module 1 « Travailler pour s'épanouir ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Comprendre un texte lu en relevant des détails, en répondant à des questions et en réutilisant le vocabulaire dans un passage à compléter.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "atelier",
+      "vrai ou faux",
+      "texte à trous",
+      "substitution du sujet"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Séquence d'exercices variés autour d'un texte situé dans un atelier de menuiserie ou de mécanique (relevé d'indices, questions de cause, vrai/faux, texte à trous avec cadre de mots, réécriture en changeant le sujet), facilement transposable à d'autres métiers ou contextes.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

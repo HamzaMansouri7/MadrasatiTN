@@ -1,0 +1,280 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 19,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "Les groupes d'aliments et l'équilibre alimentaire (وجبات غذائية متوازنة – مجموعات الأغذية الست)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أ) اكتب الأرقام المناسبة داخل المُرَبّعاتِ الَّتِي يَنْتَمِي إِلَيْهِ كُلُّ غِذَاءٍ.\nب) مَاذَا تَسْتَنْتِجُ؟",
+      "body": "وجبة مهدي\nجدول: 6 5 4 3 2 1 (الخانتان تحت 4 و 3 تحتويان على علامة × ، وهما مثال محلول)",
+      "figureDesc": "Un plateau de repas avec six aliments reliés par des traits pointillés à des cases vides à remplir : un verre de lait, une assiette de gâteaux/dattes, des biscuits, une poire, une grande assiette de plat (couscous/légumes) dont la case porte déjà le chiffre 4, et un pot. À gauche, un tableau de numéros 6 5 4 3 2 1 avec deux croix sous 4 et 3. Une ligne pointillée pour la conclusion.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p019_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ) ضَعِ العَلامَةَ (×) أَمَامَ المَجْمُوعَةِ الَّتِي تَنْتَمِي إِلَيْهَا كُلُّ وَجْبَةٍ غِذَائِيَّةٍ :\nب) هذه الوجبات الغذائية هل أُحْتُرِمَتْ النَّصيحة التَّالية التي قدَّمها طبيب مختصّ في التَّغذية ؟",
+      "body": "فطور الصَّباح :\nخبز ـ عسل ـ زبدة\nكأس مملوءة حليبا ـ إجَاصة\nالغداء :\nسلاطة طماطم ، سمك مقليّ ،\nخبز ، جبن ، تفّاحة ، ماء\nاللَّمجة :\nخبز ، تنّ ، عصير ، موزة\nالعشاء :\nكسكسي بالخضر ، لبن ،\nبيضة مسلوقة\n\nجدول « مجموعة الأغذية » : الأعمدة 6 5 4 3 2 1 ؛ الأسطر : فطور الصباح (علامة × تحت 5 و 4 و 3 و 2) / الغداء / اللمجة / العشاء (فارغة)\n\nالنصيحة: لضمان صحّة الجسم ونموّه وقدرته على النشاط وجب تنويع الغذاء اليومي وذلك باعتماد مجموعات الأغذية الستّ.",
+      "figureDesc": "Tableau « مجموعة الأغذية » avec colonnes 6 5 4 3 2 1 et lignes : فطور الصباح (croix déjà placées sous 5, 4, 3, 2), الغداء, اللمجة, العشاء (vides). Encadré avec le menu de la journée et encadré avec le conseil du médecin nutritionniste.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p019_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اكتب أسماء ثلاثة أغذية في كلّ مجموعة :",
+      "body": "جدول بستة أعمدة: أغذية حيوانية – مشتقّات الحليب – بقول جافة – مشتقّات الحبوب – خضروات – فواكه (ثلاثة أسطر منقّطة لكل عمود)",
+      "figureDesc": "Tableau à six colonnes avec trois lignes pointillées à remplir par colonne.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p019_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "هل تعلم أنّ الإنسان لا يستطيع أن يعيش بدون ماء، فهو ضروريّ للحياة إنّه يساعدنا على ابتلاع الطعام وهضمه وامتصاصه وتكوين الدمّ والتخلّص من الفضلات والموادّ الضّارّة على هيئة بول أو عرق.",
+      "figureDesc": "Encadré « Le savais-tu ? » en bas à gauche.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p019_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.18
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des six groupes d'aliments, de la diversification de l'alimentation et de l'équilibre alimentaire, ce qui correspond à la nutrition équilibrée de l'unité 3 d'Éveil Scientifique (système circulatoire, nutrition, immunité et microbes).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Groupes d'aliments et équilibre alimentaire",
+    "skill": "Classer des aliments selon les six groupes alimentaires et vérifier l'équilibre d'une journée de repas.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "appariement",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "groupes d'aliments",
+      "repas équilibré",
+      "alimentation",
+      "classification",
+      "eau",
+      "santé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : analyser les repas d'une journée (petit-déjeuner, déjeuner, goûter, dîner) dans un tableau à croiser avec les groupes d'aliments, puis conclure sur le respect d'un conseil de médecin ; encadré « Le savais-tu ? » sur le rôle de l'eau.",
+    "themeGroup": "Les groupes d'aliments et l'alimentation équilibrée"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de l'exercice 3 est absent : en-tête «مجموعة الأغذية» avec colonnes 6 5 4 3 2 1 et lignes فطور الصباح / الغداء / اللمجة / العشاء. La ligne «فطور الصباح» contient des × sous 5, 4, 3, 2."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'image de l'exercice 2 n'est pas décrite : plateau avec 6 aliments reliés à des cases vides, dont une case déjà remplie par le chiffre 4."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 2 : les × se trouvent sous les colonnes 4 et 3, mais la transcription ne précise pas que la ligne est un exemple. Tableau sinon correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«أُحْتُرِمَتْ» : la forme visible est «أحترمت» (avec hamza sur alif, sans voyelles complètes). Les voyelles ajoutées sont inventées."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«يَنْتَمِي إِلَيْهِ» et «تَسْتَنْتِجُ» : voyelles correctes dans l'ensemble. «المُرَبَّعاتِ» : l'image montre «المُرَبّعاتِ» avec chadda, écart mineur."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«بقول جافة» : l'image porte «بقول جافة» sans «مشتقات الحبوب» entre eux. L'ordre des colonnes (de droite à gauche) est : أغذية حيوانية، مشتقات الحليب، بقول جافة، مشتقات الحبوب، خضروات، فواكه. La transcription est correcte."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros de section 2, 3, 4 sont indiqués. Le numéro de page 51 est omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'encadré «هل تعلم» : l'image porte «ضروريّ للحياة إنّه يساعدنا» et «والتخلص من الفضلات». Le titre «هل تعلم؟» n'apparaît pas séparément. La transcription est donc essentiellement fidèle."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3 : le tableau « مجموعة الأغذية » (colonnes 6 5 4 3 2 1 ; lignes فطور الصباح / الغداء / اللمجة / العشاء ; × sous 5, 4, 3, 2 pour فطور الصباح) n'est décrit que dans figureDesc, pas dans le body. Le signalement « absent » est donc exagéré, mais le body devrait le contenir."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 2 : les × sous 4 et 3 sont corrects. La transcription n'indique pas que cette ligne est un exemple déjà rempli. L'indication est ajoutée, mais le scan n'écrit pas explicitement « exemple »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« المُرَبَّعاتِ » : l'image montre « المُرَبّعاتِ » (chadda sans fatha visible). Les voyelles complètes de « أُحْتُرِمَتْ » et de quelques autres mots (« الَّتِي ») sont plus complètes que dans le scan. Écart mineur, conservé tel quel sauf « المُرَبّعاتِ », corrigé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Encadré « هل تعلم » : le titre « هل تعلم؟ » n'est pas séparé dans l'image, c'est le début de la phrase. Le champ instruction dupliquait donc le début du body ; il est vidé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 51 est omis (hors schéma des items). Les numéros de section 2, 3, 4 sont bien présents."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أ) اكتب الأرقام المناسبة داخل المُرَبّعاتِ الَّتِي يَنْتَمِي إِلَيْهِ كُلُّ غِذَاءٍ.\nب) مَاذَا تَسْتَنْتِجُ؟",
+      "body": "وجبة مهدي\nجدول: 6 5 4 3 2 1 (الخانتان تحت 4 و 3 تحتويان على علامة × ، وهما مثال محلول)",
+      "figureDesc": "Un plateau de repas avec six aliments reliés par des traits pointillés à des cases vides à remplir : un verre de lait, une assiette de gâteaux/dattes, des biscuits, une poire, une grande assiette de plat (couscous/légumes) dont la case porte déjà le chiffre 4, et un pot. À gauche, un tableau de numéros 6 5 4 3 2 1 avec deux croix sous 4 et 3. Une ligne pointillée pour la conclusion.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p019_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ) ضَعِ العَلامَةَ (×) أَمَامَ المَجْمُوعَةِ الَّتِي تَنْتَمِي إِلَيْهَا كُلُّ وَجْبَةٍ غِذَائِيَّةٍ :\nب) هذه الوجبات الغذائية هل أُحْتُرِمَتْ النَّصيحة التَّالية التي قدَّمها طبيب مختصّ في التَّغذية ؟",
+      "body": "فطور الصَّباح :\nخبز ـ عسل ـ زبدة\nكأس مملوءة حليبا ـ إجَاصة\nالغداء :\nسلاطة طماطم ، سمك مقليّ ،\nخبز ، جبن ، تفّاحة ، ماء\nاللَّمجة :\nخبز ، تنّ ، عصير ، موزة\nالعشاء :\nكسكسي بالخضر ، لبن ،\nبيضة مسلوقة\n\nجدول « مجموعة الأغذية » : الأعمدة 6 5 4 3 2 1 ؛ الأسطر : فطور الصباح (علامة × تحت 5 و 4 و 3 و 2) / الغداء / اللمجة / العشاء (فارغة)\n\nالنصيحة: لضمان صحّة الجسم ونموّه وقدرته على النشاط وجب تنويع الغذاء اليومي وذلك باعتماد مجموعات الأغذية الستّ.",
+      "figureDesc": "Tableau « مجموعة الأغذية » avec colonnes 6 5 4 3 2 1 et lignes : فطور الصباح (croix déjà placées sous 5, 4, 3, 2), الغداء, اللمجة, العشاء (vides). Encadré avec le menu de la journée et encadré avec le conseil du médecin nutritionniste.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p019_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اكتب أسماء ثلاثة أغذية في كلّ مجموعة :",
+      "body": "جدول بستة أعمدة: أغذية حيوانية – مشتقّات الحليب – بقول جافة – مشتقّات الحبوب – خضروات – فواكه (ثلاثة أسطر منقّطة لكل عمود)",
+      "figureDesc": "Tableau à six colonnes avec trois lignes pointillées à remplir par colonne.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p019_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "هل تعلم أنّ الإنسان لا يستطيع أن يعيش بدون ماء، فهو ضروريّ للحياة إنّه يساعدنا على ابتلاع الطعام وهضمه وامتصاصه وتكوين الدمّ والتخلّص من الفضلات والموادّ الضّارّة على هيئة بول أو عرق.",
+      "figureDesc": "Encadré « Le savais-tu ? » en bas à gauche.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p019_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أ) اكتب الأرقام المناسبة داخل المُرَبَّعاتِ الَّتِي يَنْتَمِي إِلَيْهِ كُلُّ غِذَاءٍ.\nب) مَاذَا تَسْتَنْتِجُ؟",
+      "body": "وجبة مهدي\nجدول: 6 5 4 3 2 1 (الخانتان تحت 4 و 3 تحتويان على علامة ×)",
+      "figureDesc": "Un plateau de repas avec six aliments reliés par des traits à des cases vides à remplir : un verre de lait, une assiette de gâteaux/dattes, des biscuits, une poire, une grande assiette de plat (couscous/légumes) dont la case porte le chiffre 4, et un pot. À gauche, un tableau de numéros 1 à 6 avec deux croix sous 3 et 4. Une ligne pointillée pour la conclusion.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p019_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ) ضَعِ العَلامَةَ (×) أَمَامَ المَجْمُوعَةِ الَّتِي تَنْتَمِي إِلَيْهَا كُلُّ وَجْبَةٍ غِذَائِيَّةٍ :\nب) هذه الوجبات الغذائية هل أُحْتُرِمَتْ النَّصيحة التَّالية التي قدَّمها طبيب مختصّ في التَّغذية ؟",
+      "body": "فطور الصَّباح :\nخبز ـ عسل ـ زبدة\nكأس مملوءة حليبا ـ إجَاصة\nالغداء :\nسلاطة طماطم ، سمك مقليّ ،\nخبز ، جبن ، تفّاحة ، ماء\nاللَّمجة :\nخبز ، تنّ ، عصير ، موزة\nالعشاء :\nكسكسي بالخضر ، لبن ،\nبيضة مسلوقة\n\nالنصيحة: لضمان صحّة الجسم ونموّه وقدرته على النشاط وجب تنويع الغذاء اليومي وذلك باعتماد مجموعات الأغذية الستّ.",
+      "figureDesc": "Tableau « مجموعة الأغذية » avec colonnes 1 à 6 et lignes : فطور الصباح (croix déjà placées sous 2, 3, 4, 5), الغداء, اللمجة, العشاء (vides). Encadré avec le menu de la journée et encadré avec le conseil du médecin nutritionniste.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "al_mounir_eveil_scientifique_6eme_p019_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اكتب أسماء ثلاثة أغذية في كلّ مجموعة :",
+      "body": "جدول بستة أعمدة: أغذية حيوانية – مشتقّات الحليب – بقول جافة – مشتقّات الحبوب – خضروات – فواكه (ثلاثة أسطر منقّطة لكل عمود)",
+      "figureDesc": "Tableau à six colonnes avec trois lignes pointillées à remplir par colonne.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p019_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "هل تعلم؟",
+      "body": "هل تعلم أنّ الإنسان لا يستطيع أن يعيش بدون ماء، فهو ضروريّ للحياة إنّه يساعدنا على ابتلاع الطعام وهضمه وامتصاصه وتكوين الدمّ والتخلّص من الفضلات والموادّ الضّارّة على هيئة بول أو عرق.",
+      "figureDesc": "Encadré « Le savais-tu ? » en bas à gauche.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p019_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

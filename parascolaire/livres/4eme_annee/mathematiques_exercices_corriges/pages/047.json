@@ -1,0 +1,123 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 47,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "التوازي : تعرّف (الأسبوع 11) — Droites parallèles : reconnaissance",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أرسم مستقيما (ص)",
+      "body": "- ضع أحد أضلع الكوس (الضلع ❶) على المستقيم (ص)\n- اجعل (الضلع ❷) من الكوس ينزلق على حرف المسطرة.\n- ارسم بواسطة (الضلع ❶) من الكوس المستقيم (م)\n- ما رأيك في المستقيمين (ص) و (م) ؟",
+      "figureDesc": "Deux positions d'une équerre glissant le long du bord d'une règle graduée (graduations 4, 5, 6, 7, 8). Le côté ❷ est posé sur la règle, le côté ❶ est vertical. L'hypoténuse de l'équerre est alignée avec la droite (ص) dans la première position et avec la droite (م) dans la seconde. Les deux droites sont parallèles.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p047_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "على نصف المستقيم [أ ص) عيّن النّقط \"هـ\" ، \"ب\" ، \"ج\" متباعدة عن بعضها وعن [أ ب] بـ 2 صم.",
+      "body": "- ارسم مستقيمات متعامدة على [أ ص) تمرّ من النّقط \"هـ\" ، \"ب\" ، \"ج\"\n- ما رأيك في هذه المستقيمات فيما بينها ؟",
+      "figureDesc": "Demi-droite horizontale [أ ص) avec le point أ à l'extrémité gauche et ص à droite, sur laquelle placer les points.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p047_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم على المستقيم (د) نقطتين \"أ\" و \"ب\" بحيث تكون النّقطة \"ن\" هي منتصف القطعة [أ ب] .",
+      "body": "أرسم على المستقيم (ص) نقطتين \"ج\" و \"هـ\" بحيث تكون النّقطة \"ن\" هي منتصف القطعة [ج هـ] .\n- ما رأيك في المستقيمين (أ ج) و (ب هـ) ؟\n- اِبحث عن مستقيمين آخرين متوازيين.",
+      "figureDesc": "Deux droites sécantes (د) (descendante, pente raide) et (ص) (légèrement inclinée) se coupant au point ن.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p047_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.61
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la reconnaissance des droites parallèles (équerre, droites perpendiculaires à une même droite), ce qui correspond le mieux à la Période 1 « droites perpendiculaires » en Mathématiques 4ème année, même si le parallélisme n'est pas cité explicitement dans le titre.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    119
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Droites parallèles : reconnaissance",
+    "skill": "Reconnaître et construire des droites parallèles à l'équerre et à la règle, en s'appuyant sur la perpendicularité commune et sur le milieu commun de deux segments.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "droites parallèles",
+      "équerre",
+      "droites perpendiculaires",
+      "milieu d'un segment",
+      "construction géométrique",
+      "tracé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Trois situations de découverte guidées par la construction : faire glisser l'équerre le long d'une règle, tracer plusieurs perpendiculaires à une même droite, relier les extrémités de deux segments de même milieu. Chacune amène l'élève à conjecturer le parallélisme, et la dernière demande de trouver d'autres parallèles.",
+    "themeGroup": "Droites, points et segments"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre de la page absent : « التوازي : تعرف » (en-tête de la page)"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Mention « الأسبوع 11 » et numéro de page 43 non transcrits"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Éléments du schéma non transcrits : étiquettes (ص) et (م), graduations de la règle 4 5 6 7 8, étiquettes (د), (ص), ن, أ, ص dans les figures"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « ضع أحد أضلع الكوس (الضلع ❶) على المستقيم (ص) » — l'image porte « أضلع » : correct ; mais « (ص) » est coupé à la ligne dans l'image, sans conséquence. Aucune erreur de mot confirmée"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel visible non reproduit : « النَّقط » (fatha/shadda visibles dans l'image), « اِبحث عن مستقيمَين آخرَين » — la transcription a « النّقط » avec shadda seule et « آخرين » sans voyelles"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

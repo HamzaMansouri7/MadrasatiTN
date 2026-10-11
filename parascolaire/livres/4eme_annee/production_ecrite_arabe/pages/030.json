@@ -1,0 +1,137 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 30,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وصف شخصية (الموصوف شخصية) – الفقرات الثلاث للنص السردي وملامح الشخصية",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "الحاجبان: كثيفان، ثقيلان، خفيفان، رقيقان. العينان: حوروان، واسعتان، جاحظتان، غائرتان، ضيقتان. الأنف: دقيق، أشم، أفطس، بارز، ضخم، معقوف. الفم: صغير، واسع، باسم، ضحوك. الشفتان: مزمومتان، غليظتان، رقيقتان.",
+      "figureDesc": "جدول من خمسة أعمدة (الحاجبان، العينان، الأنف، الفم، الشفتان) يضم صفات كل عضو من أعضاء الوجه",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p030_i1",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الفقرات الثلاث للنص السردي",
+      "body": "وضع البداية: الإطار الزماني، الإطار المكاني، الشخصية أو الشخصيات. سياق التحول: الحدث القادح، الأحداث التي تحاول الرجوع إلى استمرار (البداية). وضع الختام: حدث لحل العقدة، رجوع إلى وضع البداية. (في جدول صغير تحته كلمة: أسفل)",
+      "figureDesc": "جدول من ثلاثة أعمدة (وضع البداية، سياق التحول، وضع الختام) يليه جدول فارغ تقريبا فيه كلمة «أسفل»",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "production_ecrite_arabe_p030_i2",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الموصوف شخصية",
+      "body": "القامة: الكتفان، العضلات، الأطراف. الوجه: الشعر، الجبين، العينان، الأنف، الشفتان، الذقن. اللباس: اللباس من أعلى إلى أسفل. السلوك / الطباع: المشية، الحديث، الأعمال.",
+      "figureDesc": "جدول من أربعة أعمدة (القامة، الوجه، اللباس، السلوك/الطباع) لعناصر وصف الشخصية",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p030_i3",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ملامح شخصية",
+      "body": "الجسم: قوي، ذو بناء متين، هزيل، ذو هيكل، شامخ. القامة: سامقة، مديدة، طويلة، فارع الطول. العضلات: مفتولة، بارزة، معروقة، واهنة، هزيلة. الوجه: نحيف، صلب، هزيل، ناضر، شاحب، بشوش. الشعر: جعد، مرسل، مضفور، أشعث، أشيب.",
+      "figureDesc": "جدول من خمسة أعمدة (الجسم، القامة، العضلات، الوجه، الشعر) يضم صفات لكل ملمح",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p030_i4",
+      "topicId": "ar-4-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u4",
+  "topicTitle": "Unité 4 : Description et caractérisation des personnages",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-4-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.33
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la description d'un personnage (stature, visage, vêtements, comportement, adjectifs pour les traits physiques), ce qui correspond à l'Unité 4 ; le tableau des trois paragraphes du récit (situation initiale, transformation, clôture) est secondaire et relève de l'Unité 7.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description d'un personnage",
+    "skill": "Décrire le portrait physique et le comportement d'un personnage en utilisant le lexique adapté et en repérant les trois séquences du texte narratif.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "portrait physique",
+      "description de personnage",
+      "lexique du visage",
+      "texte narratif",
+      "situation initiale et finale"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banques de vocabulaire classées par partie du corps (sourcils, yeux, nez, bouche, lèvres, cheveux) et grille de description (stature, visage, vêtements, comportement) réutilisables pour des exercices de portrait, de classement lexical ou de production écrite guidée, ainsi qu'un schéma des trois étapes du récit.",
+    "themeGroup": "Description d'un personnage"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Tableau 2, 'سياق التحول': l'image porte 'الأحداث التي تحاول الرجوع إلى استمرار' ; la transcription ajoute '(البداية)' entre parenthèses, alors que 'البداية' appartient à la colonne 'وضع الختام' (suite de 'رجوع إلى وضع البداية')."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'الشخصية أو' puis 'الشخصيات' : l'image affiche seulement 'الشخصية أو' (la suite n'est pas visible) ; 'الشخصيات' est ajouté par la transcription."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre 'الموصوف شخصية' : dans l'image il se lit 'شخصية الموصوف' (ordre inversé par l'affichage RTL) ; l'ordre est à vérifier."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "'(في جدول صغير تحته كلمة: أسفل)' est une description ajoutée, pas du texte de l'image ; le petit tableau vide contient seulement 'أسفل' dans une cellule."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le premier tableau n'a pas de titre, mais les en-têtes sont aplatis : la structure en colonnes (tableaux) n'est pas rendue, et la marque [] est vide."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le texte 'اللباس من أعلى إلى أسفل' est correct, mais 'السلوك / الطباع' : l'image présente 'السلوك' et 'الطباع' sur deux lignes ; le séparateur '/' est ajouté."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

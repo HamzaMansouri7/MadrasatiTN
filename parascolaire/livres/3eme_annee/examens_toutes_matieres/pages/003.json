@@ -1,0 +1,135 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 3,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار في اللغة العربية – فهم المنطوق/المقروء (نص المعطف) وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُكْمِلْ بِمَا يُنَاسِبُ بِالرُّجُوعِ إِلَى النَّصِّ.",
+      "body": "تَعْلَمُ الزَّوْجَةُ أَنَّ زَوْجَهَا لَا ........................ هَذَا الْمِعْطَفَ. وَلَنْ ........................ وَأَنَّهُ ........................",
+      "figureDesc": "أسطر منقطة للإكمال، وعلى يمين الصفحة خانات تقييم (معيار 2د).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p003_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5-أ",
+      "instruction": "أَشْرَحُ مَا تَحْتَهُ سَطْرٌ.",
+      "body": "• الْمِعْطَفُ الْمُهَلْهَلُ : ........................\n• أَشْفَقْتُ عَلَيْهِ : ........................",
+      "figureDesc": "أسطر منقطة للإجابة، خانات تقييم (معيار 2م).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p003_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5-ب",
+      "instruction": "أُعَوِّضُ الْمُفْرَدَةَ الْمُسَطَّرَةَ بِمُفْرَدَةٍ أُخْرَى تُؤَدِّي نَفْسَ الْمَعْنَى.",
+      "body": "يَحْمِيهِ خِلَالَ الشِّتَاءِ مِنْ لَدَغَاتِ الْبَرْدِ. ........................ (المسطرة: لَدَغَاتِ)",
+      "figureDesc": "سطر منقوط للإجابة، خانة تقييم واحدة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p003_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُرَتِّبُ الْأَحْدَاثَ التَّالِيَةَ حَسَبَ وُرُودِهَا فِي النَّصِّ.",
+      "body": "○ الْعَمُّ خَالِدٌ يَسْأَلُ زَوْجَتَهُ عَنْ مِعْطَفِهِ.\n○ الزَّوْجَةُ تُعْلِمُ زَوْجَهَا بِسِرِّ الْمِعْطَفِ.\n○ الْعَمُّ خَالِدٌ يُقَلِّبُ مُحْتَوَى الْخِزَانَةِ.",
+      "figureDesc": "دوائر فارغة لترقيم الأحداث، خانات تقييم (معيار 2هـ).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p003_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "مَا رَأْيُكَ فِي تَصَرُّفِ الزَّوْجِ وَفِي تَصَرُّفِ الزَّوْجَةِ؟",
+      "body": "ستة أسطر منقطة للإجابة الحرة.",
+      "figureDesc": "أسطر منقطة، خانات تقييم (معيار 3).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p003_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مع1: الْقِرَاءَةُ الْجَهْرِيَّةُ: النُّطْقُ السَّلِيمُ: 2 نُقْطَتَان؛ الِاسْتِرْسَالُ: 2 نُقْطَتَان؛ الْأَدَاءُ الْمُنَغَّمُ: 2 نُقْطَتَان؛ الْمَجْمُوعُ: 6 نِقَاط.",
+      "figureDesc": "جدول: المعايير (مع2أ، مع2ب، مع2ج، مع2د، مع2م، مع2هـ) ومعيار التميز (مع3) حسب مستويات التملك. انعدام التملك: 0 في الجميع، وللتميز 0 / 1. التملك دون الأدنى: 0.5، 1، 0.5، 0.5، 0.5، 0.5، وللتميز 1 / 2. التملك الأدنى: 1، 2، 1، 1، 1، 1، وللتميز 2.5 / 3. التملك الأقصى: 1.5، 3، 1.5، 1.5، 1.5، 1.5، وللتميز 3.5.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p003_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p1",
+    "confidence": 0.3
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation générale de compréhension de l'oral/écrit (texte du manteau) avec complétion, explication de mots, synonymes, ordre des événements, opinion et grille de notation, couvrant plusieurs unités sans correspondre clairement à un seul chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de l'oral et de l'écrit",
+    "skill": "Comprendre un texte narratif (le manteau), enrichir son vocabulaire, ordonner les événements et donner son opinion sur le comportement des personnages.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "lecture_comprehension",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "vocabulaire",
+      "ordre des événements",
+      "opinion personnelle",
+      "grille de notation",
+      "lecture à voix haute"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série de consignes autour d'un récit domestique (un vieux manteau et un secret entre époux) : texte à trous, explication de mots, synonyme, remise en ordre chronologique et avis personnel, avec une grille d'évaluation de la lecture à voix haute réutilisable comme modèle de barème.",
+    "themeGroup": "Compréhension de l'oral"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "unknown",
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

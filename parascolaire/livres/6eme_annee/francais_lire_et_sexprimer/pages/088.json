@@ -1,0 +1,89 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 88,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Évaluation n° 2 : Lecture du texte « Les nouveaux écoliers ! » (Lire et s'exprimer)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Les nouveaux écoliers !\nLorsque la maîtresse, ce matin-là, apparut sur le seuil de l'école pour faire rentrer les élèves, elle ne s'étonna pas de voir dans la cour un cheval, un chien, un cochon et une petite poule blanche. Il n'était pas rare qu'une poule de la ferme voisine vînt s'égarer par là. Ce qui ne manqua pas de la surprendre et de l'effrayer, ce fut l'arrivée d'un sanglier débouchant soudain d'une haie où il se tenait caché. Peut-être eût-elle crié et appelé au secours si deux des plus gracieuses écolières, Delphine et Marinette, ne l'avaient aussitôt rassurée :\n« Mademoiselle, n'ayez pas peur. On le connaît. C'est un sanglier très gentil.\n- Pardonnez-moi, dit le sanglier en s'approchant, j'ai entendu dire tant de bien de votre école que l'envie m'est venue d'entendre une de vos leçons. »\nFlattée, la maîtresse hésitait pourtant à le recevoir dans sa classe :\n« Bien entendu, ajouta le sanglier, nous nous engageons, mes compagnons et moi, à être sages et à ne pas troubler la leçon.\n- Après tout, dit la maîtresse, je ne vois pas d'inconvénients à ce que vous entriez dans la classe. Mettez-vous en rangs. »\nLes bêtes se placèrent à la suite des fillettes, alignées deux par deux devant la porte de l'école. Le sanglier était à côté du cochon, la petite poule blanche à côté du cheval et le chien au bout de la rangée. Lorsque la maîtresse eut frappé dans ses mains, les nouveaux écoliers entrèrent en classe sans faire de bruit et sans se bousculer.",
+      "figureDesc": "Page d'évaluation avec bandeau gris-vert « Les évaluations », étiquettes « Sagesse » et « 6ème année de base », titre « Évaluation n° 2 » ; texte encadré. Les questions de compréhension au verso apparaissent en transparence, illisibles. Pied de page : « Lire et s'exprimer », page 87, « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p088_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.4
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de lecture (texte « Les nouveaux écoliers ! ») qui n'est rattachée à aucun module précis : le texte est un récit d'animaux à l'école, sans lien net avec le travail, la communication, la tolérance ou un autre thème des modules ; je ne peux donc pas choisir un chapitre avec certitude.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Lecture et compréhension d'un récit",
+    "skill": "Lire un texte narratif et répondre à des questions de compréhension pour s'exprimer à l'oral ou à l'écrit.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "texte narratif",
+      "animaux",
+      "école",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de départ humoristique et décalée (animaux qui arrivent à l'école comme des élèves) : elle peut servir de support de lecture, de questions de compréhension et de production d'une suite du récit.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : « Les évaluations », « Évaluation n° 2 », « Sagesse », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », numéro de page « 87 », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte des questions de l'exercice, vu en filigrane à travers la page (verso), n'est pas lisible. Il n'est donc pas transcrit, et c'est normal."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

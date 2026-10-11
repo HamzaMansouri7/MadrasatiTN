@@ -1,0 +1,469 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 110,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Remarque : cette page n'est pas une page de mathématiques ni du manuel Mouayen. C'est un examen normalisé marocain de français (Session juillet 2022, niveau 6e A.E.P., Fès-Meknès, Taza), avec un texte sur l'énergie éolienne et des questions de compréhension de l'écrit.",
+  "items": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "En-tête de l'examen",
+      "body": "Royaume du Maroc — Ministère de l'Éducation Nationale, du Préscolaire et des Sports\nExamen normalisé\nSession : Juillet 2022\nÉpreuve de français\nNiveau 6° A.E.P\nMinistère de l'éducation nationale, de l'enseignement préscolaire et de sport. Académie régionale de Fès-Meknès. Direction provinciale de Taza\nDurée 1 h 30 min\nPages 4/4\nNom et prénom : ....................\nN° d'examen : ........",
+      "figureDesc": "Emblème du Royaume du Maroc en haut à gauche.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "soutien_maths_francais_p110_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte",
+      "body": "L'énergie éolienne est l'énergie du vent. Elle est utilisée pour mettre en mouvement des bateaux, entraîner des moulins et produire de l'électricité. C'est une énergie plus respectueuse de l'environnement que les combustibles fossiles ou l'énergie nucléaire, car elle cause moins de pollution.\nLe vent est une source d'énergie gratuite que les moulins à vent ou leur équivalent moderne, les éoliennes, mettent à profit facilement. Une éolienne moderne ressemble à une hélice à deux ou trois pales, perchée au sommet d'une tour.\nQuelques 200000 éoliennes sont en service dans le monde, mais seules 50000 d'entre elles produisent de l'électricité ; les autres servent à pomper l'eau...\nIan GRAHAM, L'Energie éolienne, édition Gamma jeunesse, 2000",
+      "figureDesc": "Image en noir et blanc de plusieurs éoliennes sur une colline, placée à gauche du début du texte.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p110_i2"
+    },
+    {
+      "kind": "section",
+      "number": "",
+      "instruction": "Domaine 1 : Compréhension de l'écrit : (15pts)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p110_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Complète le tableau suivant :",
+      "body": "Colonnes : D'où est extrait ce texte (0.5 pt) | Qui en est l'auteur ? (0.5pt) | La maison d'édition (0.5pt)",
+      "figureDesc": "Tableau à 3 colonnes avec une ligne de réponse vide.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p110_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Ce texte est : (2pts)",
+      "body": "☐ narratif   ☐ explicatif   ☐ descriptif   ?",
+      "figureDesc": "Trois cases à cocher.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p110_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Qu'est-ce que l'énergie éolienne ? (2pts)",
+      "body": "........................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p110_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Combien y a-t-il de paragraphes dans ce texte ? (2pts)",
+      "body": "........................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p110_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Selon le texte, combien d'éoliennes sont en service dans le monde ? (2pts)",
+      "body": "........................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "soutien_maths_francais_p110_i8"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Coche la bonne réponse (1.5pt)",
+      "body": "Colonnes : Vrai | Faux\nL'énergie éolienne peut produire de l'électricité. ☐ Vrai ☐ Faux\nUne éolienne ressemble à un carré. ☐ Vrai ☐ Faux\nIl y a des éoliennes qui servent à pomper l'eau. ☐ Vrai ☐ Faux",
+      "figureDesc": "Tableau Vrai / Faux avec une case par affirmation dans chaque colonne.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p110_i9"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Relie par une flèche : (2pts)",
+      "body": "Colonne de gauche : - Le pétrole * ; - Le vent * ; - Le charbon * ; - Le soleil *\nColonne de droite : * produit une énergie propre ; *produit une énergie fossile",
+      "figureDesc": "Deux colonnes à relier par des flèches. Numéro de page « 1 » en bas de la page.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p110_i10"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.18
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un examen normalisé marocain de français (session juillet 2022) avec un texte sur l'énergie éolienne et des questions de compréhension; il s'agit d'une évaluation générale hors programme tunisien, et le thème écologique ne correspond que partiellement au module 5 (Sauver la nature), donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : énergie éolienne",
+    "skill": "Comprendre un texte explicatif en repérant des informations, sa nature, sa structure et sa source.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "appariement",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "énergie éolienne",
+      "texte explicatif",
+      "compréhension écrite",
+      "énergies renouvelables",
+      "paragraphes",
+      "examen normalisé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'évaluation réutilisable : un texte documentaire court suivi de questions graduées (source du texte, type de texte, repérage d'informations, cases à cocher, appariement énergie propre/fossile), transposable à d'autres thèmes scientifiques ou environnementaux.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête de la page est absent : Royaume du Maroc, Ministère de l'Éducation nationale, du Préscolaire et des Sports ; Examen normalisé, Session : Juillet 2022, Épreuve de français ; Niveau 6° A.E.P, Académie régionale de Fès-Meknès, Direction provinciale de Taza, Durée 1 h 30 min, Pages 4/4, Nom et prénom, N° d'examen."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre « Domaine 1 : Compréhension de l'écrit : (15pts) » est absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases Vrai / Faux de la question 6 ne sont pas transcrites (colonnes « Vrai » et « Faux » avec une case par affirmation)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'image des éoliennes à côté du texte n'est pas mentionnée, et la numérotation de la page (1) est omise."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La question 7 est placée après la question 6, ce qui est correct, mais la mise en page des cases Vrai/Faux et de la question 7 se chevauche et n'est pas restituée. Les lignes de réponse des questions 3 à 5 sont raccourcies."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Quelques 200000 » est conforme à l'image. Le texte du paragraphe est fidèle. Aucune faute de mot repérée dans le corps du texte."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de l'examen est absent : Royaume du Maroc ; Ministère de l'Éducation Nationale, du Préscolaire et des Sports ; Examen normalisé, Session : Juillet 2022, Épreuve de français ; Niveau 6° A.E.P, Académie régionale de Fès-Meknès, Direction provinciale de Taza, Durée 1 h 30 min, Pages 4/4, Nom et prénom, N° d'examen."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « Domaine 1 : Compréhension de l'écrit : (15pts) » est visible dans l'image mais absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Question 6 : les colonnes « Vrai » et « Faux » (une case par affirmation) ne figurent pas dans le corps. Elles sont seulement évoquées dans figureDesc."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 1 » en bas de page est omis."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "En-tête de l'examen",
+      "body": "Royaume du Maroc — Ministère de l'Éducation Nationale, du Préscolaire et des Sports\nExamen normalisé\nSession : Juillet 2022\nÉpreuve de français\nNiveau 6° A.E.P\nMinistère de l'éducation nationale, de l'enseignement préscolaire et de sport. Académie régionale de Fès-Meknès. Direction provinciale de Taza\nDurée 1 h 30 min\nPages 4/4\nNom et prénom : ....................\nN° d'examen : ........",
+      "figureDesc": "Emblème du Royaume du Maroc en haut à gauche.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_6eme_math_francais_p110_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte",
+      "body": "L'énergie éolienne est l'énergie du vent. Elle est utilisée pour mettre en mouvement des bateaux, entraîner des moulins et produire de l'électricité. C'est une énergie plus respectueuse de l'environnement que les combustibles fossiles ou l'énergie nucléaire, car elle cause moins de pollution.\nLe vent est une source d'énergie gratuite que les moulins à vent ou leur équivalent moderne, les éoliennes, mettent à profit facilement. Une éolienne moderne ressemble à une hélice à deux ou trois pales, perchée au sommet d'une tour.\nQuelques 200000 éoliennes sont en service dans le monde, mais seules 50000 d'entre elles produisent de l'électricité ; les autres servent à pomper l'eau...\nIan GRAHAM, L'Energie éolienne, édition Gamma jeunesse, 2000",
+      "figureDesc": "Image en noir et blanc de plusieurs éoliennes sur une colline, placée à gauche du début du texte.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p110_i2"
+    },
+    {
+      "kind": "section",
+      "number": "",
+      "instruction": "Domaine 1 : Compréhension de l'écrit : (15pts)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p110_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Complète le tableau suivant :",
+      "body": "Colonnes : D'où est extrait ce texte (0.5 pt) | Qui en est l'auteur ? (0.5pt) | La maison d'édition (0.5pt)",
+      "figureDesc": "Tableau à 3 colonnes avec une ligne de réponse vide.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p110_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Ce texte est : (2pts)",
+      "body": "☐ narratif   ☐ explicatif   ☐ descriptif   ?",
+      "figureDesc": "Trois cases à cocher.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p110_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Qu'est-ce que l'énergie éolienne ? (2pts)",
+      "body": "........................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p110_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Combien y a-t-il de paragraphes dans ce texte ? (2pts)",
+      "body": "........................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p110_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Selon le texte, combien d'éoliennes sont en service dans le monde ? (2pts)",
+      "body": "........................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "mouayen_6eme_math_francais_p110_i8"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Coche la bonne réponse (1.5pt)",
+      "body": "Colonnes : Vrai | Faux\nL'énergie éolienne peut produire de l'électricité. ☐ Vrai ☐ Faux\nUne éolienne ressemble à un carré. ☐ Vrai ☐ Faux\nIl y a des éoliennes qui servent à pomper l'eau. ☐ Vrai ☐ Faux",
+      "figureDesc": "Tableau Vrai / Faux avec une case par affirmation dans chaque colonne.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p110_i9"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Relie par une flèche : (2pts)",
+      "body": "Colonne de gauche : - Le pétrole * ; - Le vent * ; - Le charbon * ; - Le soleil *\nColonne de droite : * produit une énergie propre ; *produit une énergie fossile",
+      "figureDesc": "Deux colonnes à relier par des flèches. Numéro de page « 1 » en bas de la page.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p110_i10"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte",
+      "body": "L'énergie éolienne est l'énergie du vent. Elle est utilisée pour mettre en mouvement des bateaux, entraîner des moulins et produire de l'électricité. C'est une énergie plus respectueuse de l'environnement que les combustibles fossiles ou l'énergie nucléaire, car elle cause moins de pollution.\nLe vent est une source d'énergie gratuite que les moulins à vent ou leur équivalent moderne, les éoliennes, mettent à profit facilement. Une éolienne moderne ressemble à une hélice à deux ou trois pales, perchée au sommet d'une tour.\nQuelques 200000 éoliennes sont en service dans le monde, mais seules 50000 d'entre elles produisent de l'électricité ; les autres servent à pomper l'eau...\nIan GRAHAM, L'Energie éolienne, édition Gamma jeunesse, 2000",
+      "figureDesc": "Image en noir et blanc de plusieurs éoliennes sur une colline.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p110_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Complète le tableau suivant :",
+      "body": "Colonnes : D'où est extrait ce texte (0.5 pt) | Qui en est l'auteur ? (0.5pt) | La maison d'édition (0.5pt)",
+      "figureDesc": "Tableau à 3 colonnes avec une ligne de réponse vide.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p110_i2",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Ce texte est : (2pts)",
+      "body": "☐ narratif   ☐ explicatif   ☐ descriptif   ?",
+      "figureDesc": "Trois cases à cocher.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p110_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Qu'est-ce que l'énergie éolienne ? (2pts)",
+      "body": "........................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p110_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Combien y a-t-il de paragraphes dans ce texte ? (2pts)",
+      "body": "........................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p110_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Selon le texte, combien d'éoliennes sont en service dans le monde ? (2pts)",
+      "body": "........................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p110_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Coche la bonne réponse (1.5pt)",
+      "body": "L'énergie éolienne peut produire de l'électricité.\nUne éolienne ressemble à un carré.\nIl y a des éoliennes qui servent à pomper l'eau.",
+      "figureDesc": "Tableau Vrai / Faux avec cases à cocher pour chaque phrase.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p110_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Relie par une flèche : (2pts)",
+      "body": "Colonne de gauche : Le pétrole ; Le vent ; Le charbon ; Le soleil.\nColonne de droite : * produit une énergie propre ; * produit une énergie fossile",
+      "figureDesc": "Deux colonnes à relier par des flèches.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p110_i8",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

@@ -1,0 +1,296 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 26,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قراءة وفهم - الوحدة الرابعة: فصل الشتاء (جني الزيتون)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الْوِحْدَةُ الرَّابِعَةُ: فَصْلُ الشِّتَاءِ",
+      "body": "يُبْدِي الرَّأْيَ فِي حَدَثٍ مِنْ أَحْدَاثِ النَّصِّ.\nالْمَقْطَعُ الْمُنْغَلِقُ : ز / زْ / زا / زو / زي",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p026_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "فِي صَبِيحَةِ يَوْمِ الْأَحَدِ يَوْمِ الْعُطْلَةِ الْأُسْبُوعِيَّةِ، صَاحَبَتْ وَهِيبَةُ عَائِلَتَهَا إِلَى الضَّيْعَةِ لِجَنْيِ الزَّيْتُونِ. وَعِنْدَ الْوُصُولِ، رَأَتْ مَشْهَدًا خَلَّابًا يَسْحَرُ الْعُقُولَ: عُمَّالٌ يَتَسَلَّقُونَ السَّلَالِمَ، وَيَسْلِتُونَ الزَّيْتُونَ بِحَزْمٍ وَعَزْمٍ، وَنِسْوَةٌ يَفْرِزْنَ الْأَوْرَاقَ، وَهُنَّ يُزَغْرِدْنَ فَرَحًا وَابْتِهَاجًا. اِقْتَرَبَتْ وَهِيبَةُ، وَمَدَّتْ يَدَيْهَا، وَأَخَذَتْ تَلْتَقِطُ حَبَّاتِ الزَّيْتُونِ الْمُتَنَاثِرَةِ، وَتَضَعُهَا فِي السَّلَالِ...",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p026_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبِطُ بِالْعَمَلِ الْمُنَاسِبِ.",
+      "body": "وَهِيبَةُ •          • يَتَسَلَّقُونَ السَّلَالِمَ.\nالْعُمَّالُ •          • يَفْرِزْنَ الْأَوْرَاقَ.\nالنِّسْوَةُ •          • تَلْتَقِطُ حَبَّاتِ الزَّيْتُونِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p026_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبِطُ الصُّورَةَ بِالْجُمْلَةِ الْمُنَاسِبَةِ لَهَا.",
+      "body": "• عُمَّالٌ يَتَسَلَّقُونَ السَّلَالِمَ، وَيَسْلِتُونَ الزَّيْتُونَ بِحَزْمٍ وَعَزْمٍ.\n• النِّسْوَةُ يَفْرِزْنَ الْأَوْرَاقَ.\n• وَأَخَذَتْ وَهِيبَةُ تَلْتَقِطُ حَبَّاتِ الزَّيْتُونِ الْمُتَنَاثِرَةِ.",
+      "figureDesc": "مشهد كرتوني يظهر عمالاً في حقل زيتون، أحدهم يصعد سلماً خشبياً لجني الزيتون من الشجرة.",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p026_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) أَمَامَ الْجُمْلَةِ الَّتِي تُنَاسِبُ النَّصَّ.",
+      "body": "تَفْرِزُ وَهِيبَةُ الْأَوْرَاقَ. ( )\nيَلْتَقِطُ الْعُمَّالُ حَبَّاتِ الزَّيْتُونِ. ( )\nرَأَتْ وَهِيبَةُ مَشْهَدًا خَلَّابًا. ( )",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "evaluations_maths_arabe_p026_i5"
+    }
+  ],
+  "topicId": "ar-1-u4",
+  "topicTitle": "Unité 4 : Mon compagnon en hiver",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u4",
+  "topicConfidencePrev": 0.5,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.76
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Page de lecture et compréhension en arabe sur la cueillette des olives en hiver, qui correspond à l'Unité 4 « Mon compagnon en hiver » (vocabulaire de l'hiver).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Lecture : la cueillette des olives",
+    "skill": "Lire un court texte en arabe vocalisé et vérifier sa compréhension en associant personnages, actions et images, puis en identifiant les phrases conformes au texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "cueillette des olives",
+      "saison d'hiver",
+      "compréhension de texte",
+      "appariement",
+      "première année",
+      "Tunisie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation ancrée dans la vie rurale tunisienne (sortie familiale en famille pour la récolte des olives) avec une progression simple de la compréhension : relier personnage et action, relier image et phrase, cocher les phrases justes ou fausses.",
+    "themeGroup": "Lecture: nature et saisons"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "السِّلَالِمَ (transcription) vs image: السَّلَالِمَ (السَّلَالِم) – voyelle du س: fatha, pas kasra (apparait 3 fois: texte, exercice 1, exercice 2)"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "يُزَغْرِدْنَ vs image: يُزَغْرِدْنَ lu 'يُزْغِرِدْنَ' – ordre des lettres: image indique يُزْغْرِدْنَ (زغرد), à vérifier le tashkeel: سكون sur ز et non fatha"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "يَدَيْهَا dans l'image (مَدَّتْ يَدَيْهَا) vs transcription يَدَيْهَا ok; mais السَّلَالِ dans le texte: transcription السَّلَالِ correcte"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "النِّسْوَةُ dans la transcription vs image: النَّسْوَةُ / النُّسْوَةُ (النِّسْوَةُ avec kasra visible sur l'image: النِّسْوَة) – vérifier, image montre ضمة/فتحة sur النسوة (exercice 1 et 2: النُّسْوَةُ)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "يَتَسَلَّقُونَ, تَفْرِزُ: image 'تَفْرِزُ' ok; 'يَفْرِزْنَ' ok"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les titres et en-têtes de la page sont omis: الوحدة الرابعة: فصل الشتاء، يبدي الرأي في حدث من أحداث النص، المقطع المنغلق: ز / زـ / زا / زو / زي، اللغة العربية قراءة وفهم، أستثمر النص، التعليمة 1/2/3، رقم الصفحة 27"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Labels التعليمة 1/2/3 et en-têtes/pied de page (السنة 1، الثلاثي الثاني، اللغة العربية - قراءة وفهم) absents"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "tashkeel",
+        "severity": "major",
+        "detail": "السِّلَالِمَ (kasra sur le س) est faux. L'image montre السَّلَالِمَ avec fatha et shadda. L'erreur apparaît 3 fois : dans le texte, dans l'exercice 1 et dans l'exercice 2."
+      },
+      {
+        "type": "tashkeel/mot",
+        "severity": "major",
+        "detail": "وَيُسَلِّتُونَ est faux. L'image montre وَيَسْلِتُونَ (fatha sur ي, sukun sur س, kasra sur ل, sans shadda). L'erreur apparaît dans le texte et dans l'exercice 2."
+      },
+      {
+        "type": "omission",
+        "severity": "minor",
+        "detail": "Le bloc de titre de la page est absent : الوحدة الرابعة: فصل الشتاء / يبدي الرأي في حدث من أحداث النص / المقطع المنغلق : ز / زـ / زا / زو / زي. Les étiquettes marginales (اللغة العربية قراءة وفهم, السنة 1, الثلاثي الثاني) et le numéro de page 27 sont aussi omis. Le sous-titre « أستثمر النص » n'est pas repris non plus."
+      },
+      {
+        "type": "faux_positif_du_controle",
+        "severity": "minor",
+        "detail": "Deux signalements du contrôle initial ne sont pas confirmés. يُزَغْرِدْنَ (ز غ ر د) est correct dans la transcription. النِّسْوَةُ est cohérent avec l'image, qui montre une kasra, y compris dans les exercices 1 et 2. Les formes السَّلَالِ (fin du texte), يَدَيْهَا, تَفْرِزُ et يَفْرِزْنَ sont correctes."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الْوِحْدَةُ الرَّابِعَةُ: فَصْلُ الشِّتَاءِ",
+      "body": "يُبْدِي الرَّأْيَ فِي حَدَثٍ مِنْ أَحْدَاثِ النَّصِّ.\nالْمَقْطَعُ الْمُنْغَلِقُ : ز / زْ / زا / زو / زي",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p026_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "فِي صَبِيحَةِ يَوْمِ الْأَحَدِ يَوْمِ الْعُطْلَةِ الْأُسْبُوعِيَّةِ، صَاحَبَتْ وَهِيبَةُ عَائِلَتَهَا إِلَى الضَّيْعَةِ لِجَنْيِ الزَّيْتُونِ. وَعِنْدَ الْوُصُولِ، رَأَتْ مَشْهَدًا خَلَّابًا يَسْحَرُ الْعُقُولَ: عُمَّالٌ يَتَسَلَّقُونَ السَّلَالِمَ، وَيَسْلِتُونَ الزَّيْتُونَ بِحَزْمٍ وَعَزْمٍ، وَنِسْوَةٌ يَفْرِزْنَ الْأَوْرَاقَ، وَهُنَّ يُزَغْرِدْنَ فَرَحًا وَابْتِهَاجًا. اِقْتَرَبَتْ وَهِيبَةُ، وَمَدَّتْ يَدَيْهَا، وَأَخَذَتْ تَلْتَقِطُ حَبَّاتِ الزَّيْتُونِ الْمُتَنَاثِرَةِ، وَتَضَعُهَا فِي السَّلَالِ...",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p026_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبِطُ بِالْعَمَلِ الْمُنَاسِبِ.",
+      "body": "وَهِيبَةُ •          • يَتَسَلَّقُونَ السَّلَالِمَ.\nالْعُمَّالُ •          • يَفْرِزْنَ الْأَوْرَاقَ.\nالنِّسْوَةُ •          • تَلْتَقِطُ حَبَّاتِ الزَّيْتُونِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p026_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبِطُ الصُّورَةَ بِالْجُمْلَةِ الْمُنَاسِبَةِ لَهَا.",
+      "body": "• عُمَّالٌ يَتَسَلَّقُونَ السَّلَالِمَ، وَيَسْلِتُونَ الزَّيْتُونَ بِحَزْمٍ وَعَزْمٍ.\n• النِّسْوَةُ يَفْرِزْنَ الْأَوْرَاقَ.\n• وَأَخَذَتْ وَهِيبَةُ تَلْتَقِطُ حَبَّاتِ الزَّيْتُونِ الْمُتَنَاثِرَةِ.",
+      "figureDesc": "مشهد كرتوني يظهر عمالاً في حقل زيتون، أحدهم يصعد سلماً خشبياً لجني الزيتون من الشجرة.",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p026_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) أَمَامَ الْجُمْلَةِ الَّتِي تُنَاسِبُ النَّصَّ.",
+      "body": "تَفْرِزُ وَهِيبَةُ الْأَوْرَاقَ. ( )\nيَلْتَقِطُ الْعُمَّالُ حَبَّاتِ الزَّيْتُونِ. ( )\nرَأَتْ وَهِيبَةُ مَشْهَدًا خَلَّابًا. ( )",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "jisr_ennajah_1ere_evaluations_p026_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "فِي صَبِيحَةِ يَوْمِ الْأَحَدِ يَوْمِ الْعُطْلَةِ الْأُسْبُوعِيَّةِ، صَاحَبَتْ وَهِيبَةُ عَائِلَتَهَا إِلَى الضَّيْعَةِ لِجَنْيِ الزَّيْتُونِ. وَعِنْدَ الْوُصُولِ، رَأَتْ مَشْهَدًا خَلَّابًا يَسْحَرُ الْعُقُولَ: عُمَّالٌ يَتَسَلَّقُونَ السِّلَالِمَ، وَيُسَلِّتُونَ الزَّيْتُونَ بِحَزْمٍ وَعَزْمٍ، وَنِسْوَةٌ يَفْرِزْنَ الْأَوْرَاقَ، وَهُنَّ يُزَغْرِدْنَ فَرَحًا وَابْتِهَاجًا. اِقْتَرَبَتْ وَهِيبَةُ، وَمَدَّتْ يَدَيْهَا، وَأَخَذَتْ تَلْتَقِطُ حَبَّاتِ الزَّيْتُونِ الْمُتَنَاثِرَةِ، وَتَضَعُهَا فِي السَّلَالِ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p026_i1",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبِطُ بِالْعَمَلِ الْمُنَاسِبِ.",
+      "body": "وَهِيبَةُ •          • يَتَسَلَّقُونَ السِّلَالِمَ.\nالْعُمَّالُ •          • يَفْرِزْنَ الْأَوْرَاقَ.\nالنِّسْوَةُ •          • تَلْتَقِطُ حَبَّاتِ الزَّيْتُونِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p026_i2",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبِطُ الصُّورَةَ بِالْجُمْلَةِ الْمُنَاسِبَةِ لَهَا.",
+      "body": "• عُمَّالٌ يَتَسَلَّقُونَ السِّلَالِمَ، وَيُسَلِّتُونَ الزَّيْتُونَ بِحَزْمٍ وَعَزْمٍ.\n• النِّسْوَةُ يَفْرِزْنَ الْأَوْرَاقَ.\n• وَأَخَذَتْ وَهِيبَةُ تَلْتَقِطُ حَبَّاتِ الزَّيْتُونِ الْمُتَنَاثِرَةِ.",
+      "figureDesc": "مشهد كرتوني يظهر عمالاً في حقل زيتون، أحدهم يصعد سلماً خشبياً لجني الزيتون من الشجرة.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "jisr_ennajah_1ere_evaluations_p026_i3",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) أَمَامَ الْجُمْلَةِ الَّتِي تُنَاسِبُ النَّصَّ.",
+      "body": "تَفْرِزُ وَهِيبَةُ الْأَوْرَاقَ. ( )\nيَلْتَقِطُ الْعُمَّالُ حَبَّاتِ الزَّيْتُونِ. ( )\nرَأَتْ وَهِيبَةُ مَشْهَدًا خَلَّابًا. ( )",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p026_i4",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

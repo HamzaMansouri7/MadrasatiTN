@@ -1,0 +1,132 @@
+{
+  "book": "eveil_scientifique_evaluations",
+  "page": 4,
+  "grade": "5ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La chaîne alimentaire, la graine et la germination, le cycle de l'eau dans la nature",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أسمّي عنصرا من عناصر الوسط البيئي مناسبا لكل افادة",
+      "body": "مستهلك درجة أولى\nيتغذّى على حيوان عاشب\nكائن مفكّك\nكائن منتج\nالحلقة الأولى من السلسلة الغذائيّة",
+      "figureDesc": "جدول من عمودين: العمود الأيمن يحتوي على الإفادات الخمس، والعمود الأيسر فارغ لكتابة اسم العنصر البيئي المناسب.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "eveil_scientifique_evaluations_p004_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمل بما يناسب",
+      "body": "تتكوّن البذرة من ........ و ........ ومن جنين الذي يتكوّن بدوره من ثلاثة أجزاء هي ........ و ........ و ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_evaluations_p004_i2",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أصلح الخطأ",
+      "body": "يتغذّى الجنين في البذرة على المخزون الغذائي الموجود في اللّحافة\nالبذرة الجافّة والسليمة والناضجة تنبت بتوفرّ الماء والهواء في مكان مظلم\nتصبح النبتة فتية بساق وأوراق معتمدة في غذائها على الفلقتين",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_evaluations_p004_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أربط بسهم بين عناصر الدورة المائية في الطبيعة",
+      "body": "حرارة الشمس\nيكون السحب\nالتّكثّف\nتحوّل الماء إلى بخار\nتحوّل السّحب إلى تساقطات\nمياه البحر والأنهار\nالطبقة الهوائية الباردة مصدر من مصادر تبخّر المياه",
+      "figureDesc": "عناصر مبعثرة على الصفحة تُربط بينها بأسهم، دون رسم الأسهم.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_evaluations_p004_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "sci-5-u5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-5-u6",
+    "confidence": 0.63
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est une série d'exercices de révision qui couvre la chaîne alimentaire (sci-5-u5), la graine et la germination (sci-5-u6) et le cycle de l'eau, donc plusieurs chapitres et aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Chaîne alimentaire, germination et cycle de l'eau",
+    "skill": "Identifier les maillons d'une chaîne alimentaire, les parties de la graine, les conditions de germination et les étapes du cycle de l'eau.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "texte_a_trous",
+      "appariement"
+    ],
+    "keywords": [
+      "chaîne alimentaire",
+      "graine",
+      "germination",
+      "cycle de l'eau",
+      "producteur et décomposeur",
+      "évaporation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série de 4 exercices courts de révision couvrant trois notions : nommer un élément du milieu à partir d'un rôle dans la chaîne, compléter un schéma textuel de la graine, corriger des affirmations erronées sur la germination, relier les éléments du cycle de l'eau. Ces formats variés sont réutilisables comme évaluation de fin de séquence en éveil scientifique.",
+    "ideaNote_lang": "fr",
+    "themeGroup": "Les chaînes alimentaires"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le mot « التعليمة عدد » (numéro de consigne) qui précède chaque consigne est omis dans les 4 exercices; seul le texte de la consigne est transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2 : la transcription ne conserve pas la structure en lignes (« و » placés sur des lignes séparées avec blancs); la phrase « ومن جنين الذي » est transcrite correctement mais l'ordre des blancs est ambigu en RTL."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « يكون السحب » correct, mais « الطبقة الهوائية الباردة مصدر من مصادر تبخّر المياه » est présenté comme élément à relier alors que sa mise en page est différente; aucun mot erroné toutefois."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane « حلم السعودي/…» (watermark) n'est pas transcrit; acceptable car non pertinent."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Éveil scientifique 5ème année — Évaluations"
+}

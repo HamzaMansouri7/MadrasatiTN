@@ -1,0 +1,165 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 36,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigé d'évaluation : géométrie (perpendiculaire, parallélogramme), volume du parallélépipède rectangle, mesure (conversions d'unités, aire, capacité) et organisation des données (diagramme en bâtons)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أنشئ مستقيما (d3) يمر من النقطة B وعمودي على المستقيم (d4) مستعينا بالأدوات الهندسية المناسبة. (2.5ن)",
+      "body": "",
+      "figureDesc": "Cadre bleu contenant une droite (d4) presque horizontale, un point B et la droite (d3) tracée en rouge passant par B, perpendiculaire à (d4).",
+      "answer": "La droite (d3) est tracée en rouge : elle passe par B et est perpendiculaire à (d4).",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p036_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أرسم متوازي الأضلاع ABCD حيث AB = 5cm و BC = 4cm مستعينا بالأدوات الهندسية المناسبة. (3ن)",
+      "body": "",
+      "figureDesc": "Cadre bleu contenant un parallélogramme ABCD rempli de rouge. A et B sont en haut, D et C en bas.",
+      "answer": "Le parallélogramme ABCD est dessiné en rouge avec AB = 5 cm et BC = 4 cm.",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p036_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "مسألة :",
+      "body": "- أراد هشام معرفة حجم خزان ماء على شكل متوازي المستطيلات (الشكل أسفله)، فملأه بواسطة براميل حيث سعة كل برميل هو 2000 L.\nأ) - أحسب حجم هذا الخزان علما أن a=4m و b=2m و c=3m. (2 ن)\nب) كم من برميل احتاج هشام لملء هذا الخزان ؟ (1ن)",
+      "figureDesc": "Parallélépipède rectangle (pavé droit) avec dimensions a (longueur), b (largeur) et c (hauteur).",
+      "answer": "أ) حجم هذا الخزان هو : V = a×b×c = 4×2×3 = 24 m³.\nب) 24 m³ = 24 000 L ; احتاج هشام لملء هذا الخزان : 24 000 : 2 000 = 12 برميلا.",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p036_i3",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "VII",
+      "instruction": "المجال الثالث : القياس (13 نقطة)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p036_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "حول الوحدات التالية إلى ما هو مطلوب : (10ن)",
+      "body": "86,5 m = ... dam ; 5t 7q 64kg = ... Kg ; 45,91 cm² = ... dm²\n512 Mo = ... Go ; 0,35 m³ = ... dm³",
+      "figureDesc": "",
+      "answer": "86,5 m = 8,65 dam ; 5t 7q 64kg = 5764 Kg ; 45,91 cm² = 0,4591 dm² ; 512 Mo = 0,512 Go ; 0,35 m³ = 350 dm³",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p036_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مسألة :",
+      "body": "- تملك مروى حديقة صغيرة طولها L=7m وعرضها l=5m، وقد غرست بها مجموعة من النباتات المختلفة، وتقوم بسقيها بمعدل 50L يوميا.\nأ) احسب مساحة هذه الحديقة الصغيرة. (2ن)\nب) أحسب كمية الماء اللازمة لسقي هذه النباتات أسبوعيا بـ L. (1ن)",
+      "figureDesc": "",
+      "answer": "أ) مساحة هذه الحديقة الصغيرة هي : S = 7 × 5 = 35 m².\nب) كمية الماء اللازمة لسقي هذه النباتات أسبوعيا هي : 50 × 7 = 350 L.",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p036_i6",
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "VIII",
+      "instruction": "المجال الرابع : تنظيم ومعالجة البيانات (3 نقط)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p036_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "مسألة : قام 4 شباب برفع أثقال بقاعة الرياضة كما هو مبين في المخطط بأعمدة جانبه.\nأ) نظم معطيات المخطط بأعمدة إلى الجدول أسفله : (2ن)\nب) ما اسم الشاب الذي حمل أكبر عدد من الكيلوغرامات ؟ (1ن)",
+      "body": "جدول : اسم الشاب : علي، خالد، عمر، فريد ؛ عدد الكيلوغرامات : ... (à compléter)",
+      "figureDesc": "Diagramme en bâtons : axe vertical « عدد الكيلوغرامات » gradué 60, 120, 180, 240 ; axe horizontal « أسماء الشباب » : علي (orange, 240), خالد (bleu, 180), عمر (vert, 210), فريد (jaune, 270). Tableau à deux lignes.",
+      "answer": "أ) علي 240 ، خالد 180 ، عمر 210 ، فريد 270.\nب) الشاب الذي حمل أكبر عدد من الكيلوغرامات هو فريد.",
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p036_i8",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.33
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un corrigé d'évaluation générale qui couvre plusieurs chapitres (géométrie : perpendiculaire et parallélogramme, volume, conversions d'unités, aire, diagramme en bâtons), donc aucun chapitre unique ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    35
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Évaluation de géométrie, mesures et statistiques",
+    "skill": "Construire des figures géométriques, convertir des unités, calculer aire et volume, et organiser des données d'un diagramme en bâtons",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "perpendiculaire",
+      "parallélogramme",
+      "volume du pavé droit",
+      "conversion d'unités",
+      "diagramme en bâtons",
+      "capacité"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : remplir un réservoir avec des barils pour lier volume et capacité, arroser un jardin pour lier aire et litres par semaine, et transformer un diagramme en bâtons en tableau (haltérophilie), avec un barème par exercice.",
+    "themeGroup": "Problèmes de synthèse et révisions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "self_contained",
+  "examScope": "short_test",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

@@ -1,0 +1,76 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 40,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "محتوى الكتاب (table des matières du manuel)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "محتوى الكتاب",
+      "body": "جسم الإنسان: 1 أعضاء الوقاية للعين ، تركيبة العين ؛ 5 العين والرؤية ؛ 11 عيوب الرؤية ووسائل الإصلاح. الضوء: 3 انتشار الضوء ؛ 9 انعكاس الضوء ؛ 13 انكسار الضوء ؛ وضعية تقييم. الهواء: 18 الهواء ضروري لحياة الإنسان والحيوان و... ؛ 20 خاصيات الهواء ؛ 24 مكونات الهواء ؛ 27 الاحتراق في الهواء وأهمية الأكسجين... ؛ 33 العناصر المتدخلة في عملية الاحتراق... ؛ 35 احتراق الشمعة. التنفس: 29 التبادل الغازي في مستوى الرئتين ؛ وضعية تقييم. جهاز الدوران: 39 تركيبة الدم ؛ 41 الدم ينقل الغذاء والغازات. الأمراض الجرثومية: 44 أهمية الجلد في منع تسرب الجراثيم داخله ؛ 46 التعفن الجرثومي ؛ 47 التلاقيح ؛ 49 المقاومة باستعمال الأدوية والمقاومة الطبيعية...",
+      "figureDesc": "Colonne droite de la table des matières, avec pastilles numérotées de pages et titres de chapitres colorés",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p040_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "محتوى الكتاب (تابع)",
+      "body": "التغذية: 50 المجموعات الغذائية ؛ 52 أغذية البناء ، الطاقة ، الوقاية ؛ 54 الوجبة الغذائية المتوازنة حسب السن والنشاط ؛ 57 بعض الأمراض الناتجة عن سوء التغذية ؛ وضعية تقييم. التكاثر الزهري: 62 الزهرة ومكوناتها ؛ 64 التأبير والإخصاب ؛ 66 دورة حياة النبتة الزهرية. الوسط البيئي: 68 السلسلة الغذائية ؛ 70 مصادر تلوث الأوساط المائية و... ؛ 72 الأمراض الناتجة عن تلوث المياه و... ؛ وضعية تقييم. الطاقة: 77 التأثير الحراري للتيار الكهربائي ؛ 79 التأثير الكيميائي للتيار الكهربائي ؛ 81 أنواع المغنط ، أشكاله ، قدرته على جذب... ؛ 83 قطبا المغناطيس ؛ 85 البوصلة ؛ 87 التأثير المغناطيسي للتيار الكهربائي ؛ 89 وزن الأجسام ، السقوط الحر للأجسام ؛ وضعية تقييم. 94 محتوى الكتاب.",
+      "figureDesc": "Colonne gauche de la table des matières ; numéro de page 94 en bas",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p040_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u4",
+    "confidence": 0.36
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est la table des matières complète du manuel d'éveil scientifique (œil, lumière, air, nutrition, reproduction florale, milieu), qui couvre plusieurs unités et ne correspond donc à aucun chapitre précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Table des matières du manuel",
+    "skill": "Repérer les grandes unités du programme d'éveil scientifique (corps humain, lumière, air, nutrition, reproduction des plantes).",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "table des matières",
+      "programme",
+      "œil et vision",
+      "lumière",
+      "air",
+      "alimentation",
+      "reproduction florale"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Sert de carte du programme : elle donne la liste des thèmes (œil, lumière, air, nutrition, fleur) et la présence de situations d'évaluation en fin d'unité, mais ne contient aucun exercice réutilisable.",
+    "themeGroup": "Divers"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

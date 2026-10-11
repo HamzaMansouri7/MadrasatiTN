@@ -1,0 +1,380 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 52,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التربية الإسلامية - اختبار نهاية الثلاثي الثاني عدد 1 (السنة الثانية): نعم الله (الزيتونة)، آداب الأكل",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "السند 1",
+      "instruction": "السَّنَدُ 1 :",
+      "body": "حَضَرْتُ مَوْسِمَ جَنْيِ الزَّيْتُونِ، وَأَدْرَكْتُ مَنَافِعَ الزَّيْتُونَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p052_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : أَذْكُرُ ثَلَاثَ مَنَافِعَ لِلزَّيْتُونَةِ.",
+      "body": "ثلاثة أسطر منقّطة للإجابة (• ........ • ........ • ........). النقاط: 0,5 لكل سطر. المعيار: مع 1",
+      "figureDesc": "ثلاثة أسطر منقطة بنقاط، ومربعات تقييم المعيار مع 1 على اليمين",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p052_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أُكَمِّلُ الْآيَةَ لِأَسْتَدِلَّ عَلَى نِعَمِ اللَّهِ.",
+      "body": "قَالَ اللَّهُ تَعَالَى : « هُوَ الَّذِي ........ لَكُمْ ........ فِي ........ جَمِيعًا» (سُورَةُ الْبَقَرَةِ الْآيَةُ 29). النقاط: 0,5 لكل فراغ. المعيار: مع 2 أ",
+      "figureDesc": "ثلاثة فراغات منقطة ومربع تقييم للمعيار مع 2 أ",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p052_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 2",
+      "instruction": "السَّنَدُ 2 :",
+      "body": "عِنْدَ مُنْتَصَفِ النَّهَارِ، اِجْتَمَعَ الْعُمَّالُ لِتَنَاوُلِ الْفُطُورِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p052_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : أُجِيبُ بِـ«نَعَمْ» أَوْ «لَا» أَمَامَ الْإِفَادَةِ.",
+      "body": "أَغْسِلُ يَدَيَّ قَبْلَ الْأَكْلِ وَبَعْدَهُ. ........\nأَبْسِمِلُ قَبْلَ الْأَكْلِ. ........\nلَا أَمْضُغُ الْأَكْلَ جَيِّدًا. ........\nالنقاط: 1 لكل إفادة. المعيار: مع 2 ب",
+      "figureDesc": "ثلاثة أسطر منقطة للإجابة ومربعات تقييم المعيار مع 2 ب",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p052_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : أُكَمِّلُ الْحَدِيثَ النَّبَوِيَّ الشَّرِيفَ.",
+      "body": "قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ : « يَا غُلَامُ سَمِّ ........ وَ ........ » (رَوَاهُ الشَّيْخَانِ). النقاط: 1 و 0,5. المعيار: مع 2 أ",
+      "figureDesc": "فراغان منقطان ومربعات تقييم للمعيار مع 2 أ",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p052_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : أَرْبُطُ بِسَهْمٍ لِأُعَبِّرَ عَنْ مَوْقِفِي.",
+      "body": "العمود الأيمن: • أُوَافِقُ مَنْ • لَا أُوَافِقُ مَنْ\nالعمود الأيسر: • يَزْدَرِدُ الْأَكْلَ ازْدِرَادًا. • يَتَنَاوَلُ الطَّعَامَ بِهُدُوءٍ. • يَحْمَدُ اللَّهَ وَيَشْكُرُهُ.\nالنقاط: 0,5 لكل ربط. المعيار: مع 3",
+      "figureDesc": "عمودان من العبارات يُربط بينهما بأسهم، ومربعات تقييم المعيار مع 3",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p052_i7"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p6",
+    "confidence": 0.23
+  },
+  "topicSubject": "التربية الإسلامية",
+  "topicReason": "La page est une évaluation de fin de trimestre en éducation islamique (bienfaits de Dieu, olivier, étiquette du repas), matière absente de la liste des chapitres officiels (arabe et mathématiques uniquement), donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Bienfaits d'Allah et règles de bienséance à table",
+    "skill": "Citer des bienfaits de l'olivier, compléter un verset et un hadith, et adopter les bonnes manières à table.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "vrai_faux",
+      "appariement",
+      "autre"
+    ],
+    "keywords": [
+      "olivier",
+      "bienfaits d'Allah",
+      "bienséance à table",
+      "basmala",
+      "verset coranique",
+      "hadith"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation en situations contextualisées (récolte des olives, pause déjeuner des ouvriers) qui enchaîne liste de bienfaits, verset et hadith à compléter, vrai/faux sur les gestes à table et appariement pour se positionner face à des comportements.",
+    "themeGroup": "Bonnes manières à table"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«أَبَسْمِلُ» : l'image montre «أَبْسِمِلُ» (voyelles visibles différentes du texte transcrit)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«أَرْبُطُ» : l'image montre «أُرْبُطُ»"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«أُوَافِقُ» : l'image montre «أُوَافِقُ» sans la shadda sur le waw, accord avec l'image à vérifier ; «أُكَمِّلُ» : l'image montre «أُكَمِّلُ» avec la forme «أُكَمِّلُ» (OK)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«جَمِيعًا» et «الْآيَةُ 29» : l'image affiche «الْآيَةُ» avec un «سُورَةُ الْبَقَرَةِ» légèrement différent (la transcription ajoute un kasra sur «الْبَقَرَةِ» alors que l'image indique «الْبَقَرَةُ الْآيَةُ»)"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le critère «مع 2 أ» de la TA2 est placé à côté de la TA2, mais «مع 2 أ» apparaît aussi pour la TA4 ; le critère «مع 2 ب» est correct, mais les cases de notation ne sont pas mentionnées"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : «امتحانات جسر النجاح», «اختبار نهاية الثلاثي الثاني», «عدد : 1», «المادة : التربية الإسلامية», «المستوى : السنة الثانية», champs الاسم/اللقب/القسم, et numéro de page 51"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«اِجْتَمَعَ» est transcrit «اِجْتَمَعَ» (OK) ; «لِأُعَبِّرَ» : l'image montre «لِأُعَبِّرَ» (OK) ; «الْفَطُورِ» : l'image montre «الْفُطُورِ»"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "السند 2 : l'image montre «الْفُطُورِ» (فُطُور, avec damma sur le فاء), alors que la transcription a «الْفَطُورِ» (fatha)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "التعليمة 3, 2e énoncé : la transcription «أَبَسْمِلُ» ne correspond pas à l'image, où les voyelles visibles sont celles de «أَبْسِمِلُ». Je recopie la forme de l'image."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "السند 1",
+      "instruction": "السَّنَدُ 1 :",
+      "body": "حَضَرْتُ مَوْسِمَ جَنْيِ الزَّيْتُونِ، وَأَدْرَكْتُ مَنَافِعَ الزَّيْتُونَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : أَذْكُرُ ثَلَاثَ مَنَافِعَ لِلزَّيْتُونَةِ.",
+      "body": "ثلاثة أسطر منقّطة للإجابة (• ........ • ........ • ........). النقاط: 0,5 لكل سطر. المعيار: مع 1",
+      "figureDesc": "ثلاثة أسطر منقطة بنقاط، ومربعات تقييم المعيار مع 1 على اليمين",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أُكَمِّلُ الْآيَةَ لِأَسْتَدِلَّ عَلَى نِعَمِ اللَّهِ.",
+      "body": "قَالَ اللَّهُ تَعَالَى : « هُوَ الَّذِي ........ لَكُمْ ........ فِي ........ جَمِيعًا» (سُورَةُ الْبَقَرَةِ الْآيَةُ 29). النقاط: 0,5 لكل فراغ. المعيار: مع 2 أ",
+      "figureDesc": "ثلاثة فراغات منقطة ومربع تقييم للمعيار مع 2 أ",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 2",
+      "instruction": "السَّنَدُ 2 :",
+      "body": "عِنْدَ مُنْتَصَفِ النَّهَارِ، اِجْتَمَعَ الْعُمَّالُ لِتَنَاوُلِ الْفُطُورِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : أُجِيبُ بِـ«نَعَمْ» أَوْ «لَا» أَمَامَ الْإِفَادَةِ.",
+      "body": "أَغْسِلُ يَدَيَّ قَبْلَ الْأَكْلِ وَبَعْدَهُ. ........\nأَبْسِمِلُ قَبْلَ الْأَكْلِ. ........\nلَا أَمْضُغُ الْأَكْلَ جَيِّدًا. ........\nالنقاط: 1 لكل إفادة. المعيار: مع 2 ب",
+      "figureDesc": "ثلاثة أسطر منقطة للإجابة ومربعات تقييم المعيار مع 2 ب",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : أُكَمِّلُ الْحَدِيثَ النَّبَوِيَّ الشَّرِيفَ.",
+      "body": "قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ : « يَا غُلَامُ سَمِّ ........ وَ ........ » (رَوَاهُ الشَّيْخَانِ). النقاط: 1 و 0,5. المعيار: مع 2 أ",
+      "figureDesc": "فراغان منقطان ومربعات تقييم للمعيار مع 2 أ",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : أَرْبُطُ بِسَهْمٍ لِأُعَبِّرَ عَنْ مَوْقِفِي.",
+      "body": "العمود الأيمن: • أُوَافِقُ مَنْ • لَا أُوَافِقُ مَنْ\nالعمود الأيسر: • يَزْدَرِدُ الْأَكْلَ ازْدِرَادًا. • يَتَنَاوَلُ الطَّعَامَ بِهُدُوءٍ. • يَحْمَدُ اللَّهَ وَيَشْكُرُهُ.\nالنقاط: 0,5 لكل ربط. المعيار: مع 3",
+      "figureDesc": "عمودان من العبارات يُربط بينهما بأسهم، ومربعات تقييم المعيار مع 3",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "السند 1",
+      "instruction": "السَّنَدُ 1 :",
+      "body": "حَضَرْتُ مَوْسِمَ جَنْيِ الزَّيْتُونِ، وَأَدْرَكْتُ مَنَافِعَ الزَّيْتُونَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : أَذْكُرُ ثَلَاثَ مَنَافِعَ لِلزَّيْتُونَةِ.",
+      "body": "ثلاثة أسطر منقّطة للإجابة (• ........ • ........ • ........). النقاط: 0,5 لكل سطر. المعيار: مع 1",
+      "figureDesc": "ثلاثة أسطر منقطة بنقاط، ومربعات تقييم المعيار مع 1 على اليمين",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أُكَمِّلُ الْآيَةَ لِأَسْتَدِلَّ عَلَى نِعَمِ اللَّهِ.",
+      "body": "قَالَ اللَّهُ تَعَالَى : « هُوَ الَّذِي ........ لَكُمْ ........ فِي ........ جَمِيعًا» (سُورَةُ الْبَقَرَةِ الْآيَةُ 29). النقاط: 0,5 لكل فراغ. المعيار: مع 2 أ",
+      "figureDesc": "ثلاثة فراغات منقطة ومربع تقييم للمعيار مع 2 أ",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 2",
+      "instruction": "السَّنَدُ 2 :",
+      "body": "عِنْدَ مُنْتَصَفِ النَّهَارِ، اِجْتَمَعَ الْعُمَّالُ لِتَنَاوُلِ الْفَطُورِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : أُجِيبُ بِـ«نَعَمْ» أَوْ «لَا» أَمَامَ الْإِفَادَةِ.",
+      "body": "أَغْسِلُ يَدَيَّ قَبْلَ الْأَكْلِ وَبَعْدَهُ. ........\nأَبَسْمِلُ قَبْلَ الْأَكْلِ. ........\nلَا أَمْضُغُ الْأَكْلَ جَيِّدًا. ........\nالنقاط: 1 لكل إفادة. المعيار: مع 2 ب",
+      "figureDesc": "ثلاثة أسطر منقطة للإجابة ومربعات تقييم المعيار مع 2 ب",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : أُكَمِّلُ الْحَدِيثَ النَّبَوِيَّ الشَّرِيفَ.",
+      "body": "قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ : « يَا غُلَامُ سَمِّ ........ وَ ........ » (رَوَاهُ الشَّيْخَانِ). النقاط: 1 و 0,5. المعيار: مع 2 أ",
+      "figureDesc": "فراغان منقطان ومربعات تقييم للمعيار مع 2 أ",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : أَرْبُطُ بِسَهْمٍ لِأُعَبِّرَ عَنْ مَوْقِفِي.",
+      "body": "العمود الأيمن: • أُوَافِقُ مَنْ • لَا أُوَافِقُ مَنْ\nالعمود الأيسر: • يَزْدَرِدُ الْأَكْلَ ازْدِرَادًا. • يَتَنَاوَلُ الطَّعَامَ بِهُدُوءٍ. • يَحْمَدُ اللَّهَ وَيَشْكُرُهُ.\nالنقاط: 0,5 لكل ربط. المعيار: مع 3",
+      "figureDesc": "عمودان من العبارات يُربط بينهما بأسهم، ومربعات تقييم المعيار مع 3",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p052_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

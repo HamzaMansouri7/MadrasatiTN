@@ -1,0 +1,94 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 20,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إنتاج كتابي – اختبار نهاية الثلاثي الثاني عدد 2 (ترتيب العبارات لتكوين جمل وإثرائها)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : أُرَتِّبُ الْعِبَارَاتِ الْوَارِدَةَ فَوْقَ كُلِّ مَشْهَدٍ لِأُكَوِّنَ جُمَلًا وَأُثْرِيهَا.",
+      "body": "المشهد 1 – العبارات: الْفَسِيحَةِ - الْغِزْلَانُ - عِنْدَ الْأَصِيلِ - الْعُشْبَ - فِي الْفَيَافِي - خَرَجَتِ - تَرْعَى. (خمسة أسطر منقّطة للكتابة؛ النقاط: 0.25 / 0.25 / 0.25 / 0.5 / 1؛ المعايير: مع1أ، مع1ب، مع2أ، مع2ب، مع3)",
+      "figureDesc": "رسم لمنظر طبيعي: شمس وجبال ووادٍ يجري وأشجار وغزلان ترعى العشب.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p020_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : أُرَتِّبُ الْعِبَارَاتِ الْوَارِدَةَ فَوْقَ كُلِّ مَشْهَدٍ لِأُكَوِّنَ جُمَلًا وَأُثْرِيهَا.",
+      "body": "المشهد 2 – العبارات: غَزَالَةٌ مَغْرُورَةٌ - تَوَغَّلَتْ - اِبْتَعَدَتْ - بِالْخَطَرِ - فِي الْغَابَةِ - غَيْرَ مُبَالِيَةٍ - عَنِ الْقَطِيعِ - بِمُفْرَدِهَا - وَ - (خمسة أسطر منقّطة للكتابة؛ النقاط: 0.25 / 0.25 / 0.25 / 0.5 / 1؛ المعايير: مع1أ، مع1ب، مع2أ، مع2ب، مع3)",
+      "figureDesc": "رسم لغزلان قرب وادٍ وجبل وشمس؛ غزالة تبتعد عن القطيع.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p020_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : أُرَتِّبُ الْعِبَارَاتِ الْوَارِدَةَ فَوْقَ كُلِّ مَشْهَدٍ لِأُكَوِّنَ جُمَلًا وَأُثْرِيهَا.",
+      "body": "المشهد 3 – العبارات: وَقَعَتْ - فَجْأَةً - صَيَّادٍ - النَّجْدَةَ - تَطْلُبُ - تَتَخَبَّطُ - شِبَاكِ - فِي - وَ - فَجَعَلَتْ - الْغَزَالَةُ (خمسة أسطر منقّطة للكتابة؛ النقاط: 0.25 / 0.25 / 0.25 / 0.5 / 1؛ المعايير: مع1أ، مع1ب، مع2أ، مع2ب، مع3)",
+      "figureDesc": "رسم لغزالة عالقة في شبكة صيّاد وسنجاب بجانبها في الغابة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p020_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u5",
+    "confidence": 0.29
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de trimestre 2 (production écrite : ordonner des mots pour former et enrichir des phrases), qui couvre plusieurs unités du trimestre et non un chapitre précis ; aucun chapitre ne correspond exactement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : ordonner et enrichir des phrases",
+    "skill": "Remettre des groupes de mots dans l'ordre pour former des phrases correctes, puis les enrichir pour construire un court récit à partir d'une scène.",
+    "pageType": "exam",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "ordre des mots",
+      "enrichissement de phrases",
+      "scènes illustrées",
+      "évaluation trimestrielle",
+      "récit de la gazelle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une série de trois scènes illustrées formant un mini-récit (gazelle imprudente piégée par un chasseur), avec des groupes de mots mélangés à ordonner, enrichir puis relier, et un barème progressif par critères.",
+    "themeGroup": "Production écrite: ordonner des événements"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

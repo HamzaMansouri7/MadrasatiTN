@@ -1,0 +1,128 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 37,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Les points cardinaux et l'orientation (معرفة الجهات) ; situation géographique de la Tunisie (موقع البلاد التونسية). Remarque : le contenu relève de la géographie, pas des mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الجهات الفرعية",
+      "body": "والجنوب الشرقي يقع بين الجنوب والشرق\nوالشمال الغربي يقع بين الشمال والغرب\nوالجنوب الغربي يقع بين الجنوب والغرب",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p037_i1",
+      "topicId": "hg-5-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "معرفة الجهات في أثناء الليل",
+      "body": "يمكنك معرفة الجهات في الليل بالاستعانة بالبوصلة،\nفإن لم توجد فالقمر الذي يطلع من الشرق ويغرب في الغرب،\nوإذا لم يكن القمر طالعاً فيمكنك معرفتها بنجم يسمى النجم القطبي ومكانه دائماً في الشمال\nويمكنك الاستدلال عليه بمجموعتين من النجوم تسمى الأولى الدب الأكبر وتسمى الثانية الدب الأصغر",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p037_i2",
+      "topicId": "hg-5-u2",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "موقع البلاد التونسية",
+      "body": "تتوسط البلاد التونسية حوضي البحر الأبيض المتوسط الشرقي والغربي،\nيحدها من الشمال والشرق البحر الأبيض المتوسط، من الجنوب الشرقي ليبيا ومن الغرب الجزائر ولا يفصلها عن أوروبا و بالتحديد صقلية سوى كلم (العدد غير مكتوب في الصفحة)\nكما تقع شمال خط الإستواء وشمال القارة الإفريقية وغرب القارة الآسيوية وشرق أمريكا\nهذا الموقع الجغرافي الهام جعل تونس ملتقى للحضارات على مر التاريخ ،\nوموقعا ملائما للاستثمار والإنتاج والتجارة\nنظرا لقربها من أوروبا وتوسطها للمغرب العربي",
+      "figureDesc": "Carte colorée de la Tunisie (en jaune) avec la mer Méditerranée en bleu au nord et à l'est, l'Algérie à l'ouest et la Libye au sud-est en rouge, l'Italie en haut à droite, Tunis (la capitale) marquée par un point rouge au nord ; drapeau tunisien en bas à droite. Légendes : تونس، الجزائر، البحر المتوسط، ليبيا، إيطاليا.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p037_i3",
+      "topicId": "hg-5-u2",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "hg-5-u2",
+  "topicTitle": "Unité 2 : Géographie - Repères géographiques et carte de Tunisie",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-5-u2",
+    "confidence": 0.68
+  },
+  "topicSubject": "Histoire & Géographie",
+  "topicReason": "La page traite des points cardinaux (sous-directions, orientation de nuit avec la boussole, la lune et l'étoile polaire) et de la situation géographique de la Tunisie (limites, continents), ce qui correspond à l'Unité 2 de Géographie : repères géographiques et carte de Tunisie.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Histoire-Géographie",
+    "theme": "Orientation et situation de la Tunisie",
+    "skill": "Savoir s'orienter grâce aux points cardinaux, de jour comme de nuit, et situer la Tunisie par rapport à ses voisins et à la Méditerranée.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "points cardinaux",
+      "orientation",
+      "étoile polaire",
+      "boussole",
+      "Tunisie",
+      "frontières"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable pour des activités d'orientation de nuit (lune, étoile polaire, Grande Ourse), des exercices de repérage des points cardinaux intermédiaires et des cartes à compléter sur les limites de la Tunisie (mer, Libye, Algérie, distance jusqu'à la Sicile).",
+    "themeGroup": "Situation de la Tunisie"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le titre « الجهات الفرعية » est ajouté en tête de la transcription. Il n'apparaît pas sur l'image, où le texte commence directement par « والجنوب الشرقي »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« في » est écrit « فى » (avec ya sans points) dans l'image, notamment dans « في أثناء », « في الليل », « في الغرب » et « في الشمال ». La transcription normalise en « في »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« يمكنك » : l'image a « يمكنك » sans hamza, et la transcription est correcte. En revanche, « الاستعانة » et « الأولى » sont conformes."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte de la carte n'est pas transcrit : إيطاليا، تونس، الجزائر، البحر المتوسط، ليبيا. Le titre rouge « موقع البلاد التونسية » est bien présent."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« كلم » : le texte visible est « سوى [espace] كلم ». La note « العدد غير مكتوب في الصفحة » est un ajout de l'annotateur, pas du texte de la page."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« يحدها » : l'image montre « يحدها » (correct). « الإستواء » est conforme à l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Histoire-Géographie"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

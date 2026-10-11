@@ -1,0 +1,145 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 53,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المجال الرئيسي الثاني : الهندسة – الزوايا (قياس زاوية، منصف زاوية)، المثلث القائم، المعين، التماثل المحوري",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنشئ زاوية قياسها ن، ثم أنشئ منصفا للزاوية باستعمال الأدوات الهندسية المناسبة",
+      "body": "أنشئ زاوية قياسها (القيمة غير ظاهرة في الصفحة)، ثم أنشئ منصفا للزاوية باستعمال الأدوات الهندسية المناسبة.",
+      "figureDesc": "Grand cadre rectangulaire vide destiné à la construction de l'angle et de sa bissectrice.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "soutien_maths_francais_p053_i1",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ المثلث جانبه ثم أحسب قياس الزاوية ن بدون استعمال الأدوات الهندسية",
+      "body": "المثلث HKE قائم الزاوية في K، قياس الزاوية عند H يساوي 41°. أحسب قياس الزاوية عند E.",
+      "figureDesc": "Triangle rectangle HKE, angle droit en K (carré noir), angle en H marqué 41°, angle en E marqué par un arc sans mesure.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "soutien_maths_francais_p053_i2",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أنشئ معينا طول قطره الأكبر ن وقطره الأصغر ن",
+      "body": "أنشئ معينا طول قطره الأكبر (غير ظاهر) وقطره الأصغر (غير ظاهر).",
+      "figureDesc": "Grand cadre rectangulaire vide pour la construction du losange.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "soutien_maths_francais_p053_i3",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لاحظ الشكل أسفله ثم أنشئ مماثلا له بالنسبة لمحور التماثل ن",
+      "body": "أنشئ مماثل المثلث بالنسبة لمحور التماثل (المستقيم الأحمر).",
+      "figureDesc": "Quadrillage avec un triangle noir à gauche et un axe de symétrie vertical rouge ; il faut tracer le symétrique du triangle à droite de l'axe.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "soutien_maths_francais_p053_i4",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p4",
+  "topicTitle": "Période 4 : Solides, aires latérales/totales et angles",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-6-p4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p4",
+    "confidence": 0.17
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la construction d'angles et de bissectrices, du triangle rectangle, du losange et de la symétrie axiale, ce qui correspond à la Période 4 (mesure des angles et symétrie).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Angles, triangle rectangle, losange, symétrie axiale",
+    "skill": "Construire une bissectrice, calculer un angle d'un triangle rectangle, construire un losange à partir de ses diagonales et le symétrique d'une figure.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "autre"
+    ],
+    "keywords": [
+      "bissectrice",
+      "angle",
+      "triangle rectangle",
+      "losange",
+      "symétrie axiale"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série de quatre exercices courts de géométrie, chacun centré sur une construction aux instruments ou un calcul d'angle, qui peut servir de modèle pour une fiche de révision variée avec des valeurs à changer.",
+    "themeGroup": "Angles et symétrie axiale"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre de l'en-tête (« المجال الرئيسي الثاني الهندسة نقطة ») est absent de la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « أ » (marqueur de l'exercice) est omis au début ; « ن » est un marqueur de note ou de point, non une valeur."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : « أحسب » devrait être écrit « أحسب » sans problème, mais « جانبه » est lu « جانبه » correctement ; en revanche « الزاوية ن » est transcrit comme une valeur alors que ce « ن » est un marqueur de note."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 2 : « المثلث HKE قائم الزاوية في K ... أحسب قياس الزاوية عند E » est une reformulation inventée. Le texte réel est « لاحظ المثلث جانبه ثم أحسب قياس الزاوية بدون استعمال الأدوات الهندسية » (angle non précisé dans l'énoncé). La figure donne bien H=41° et un angle droit en K."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions « (القيمة غير ظاهرة في الصفحة) » et « (غير ظاهر) » ne sont pas dans l'image ; ce sont des ajouts ou interprétations de « ن »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 4 : « (المستقيم الأحمر) » et « مماثل المثلث » sont des ajouts ; l'énoncé dit seulement « أنشئ مماثلا له »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes de la figure (H, K, E, 41°) ne sont pas transcrites dans la ligne principale."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

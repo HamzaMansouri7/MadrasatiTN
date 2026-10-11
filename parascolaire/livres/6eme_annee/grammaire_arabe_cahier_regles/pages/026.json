@@ -1,0 +1,225 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 26,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "تصريف الناقص الواوي في المضارع المجزوم (conjugaison du verbe défectueux à finale « waw » au présent apocopé – cours d'arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تصريف الناقص الواوي في المضارع المجزوم — المراجعة: علامات جزم الفعل المضارع",
+      "body": "علامات جزم الفعل المضارع\nالسكون: نحن لم نخرج\nحذف حرف العلة: أنا لم أدن\nحذف النون: أنتما لم تدفعا\nالبناء على السكون: أنتن لم تجئن",
+      "figureDesc": "Tableau à 4 colonnes (de droite à gauche : السكون، حذف حرف العلة، حذف النون، البناء على السكون) avec une ligne d'exemples. Page encadrée d'une bordure bleue.",
+      "answer": null,
+      "id": "grammaire_arabe_cahier_regles_p026_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.9
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "Tableau de conjugaison (colonnes : الضمائر/الأفعال، بدا، حبا، رجا) :\nالمتكلم:\nأنا: لم أبد | لم أحب | لم أرج\nنحن: لم نبد | لم نحب | لم نرج\nالمخاطب:\nأنت: لم تبد | لم تحب | لم ترج\nأنت: لم تبدي | لم تحبي | لم ترجي\nأنتما: لم تبدوا | لم تحبوا | لم ترجوا\nأنتم: لم تبدوا | لم تحبوا | لم ترجوا\nأنتن: لم تبدون | لم تحبون | لم ترجون\nالغائب:\nهو: لم يبد | لم يحب | لم يرج\nهي: لم تبد | لم تحب | لم ترج\nهما: لم يبدوا | لم يحبوا | لم يرجوا\nهما: لم تبدوا | لم تحبوا | لم ترجوا\nهم: لم يبدوا | لم يحبوا | لم يرجوا\nهن: لم يبدون | لم يحبون | لم يرجون",
+      "figureDesc": "Grand tableau de conjugaison : en-tête diagonal (الأفعال / الضمائر), colonnes des verbes بدا، حبا، رجا, lignes des pronoms regroupés en المتكلم، المخاطب، الغائب.",
+      "answer": null,
+      "id": "grammaire_arabe_cahier_regles_p026_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.9
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "علامة الجزم في المضارع من الناقص الواوي هي\nحذف حرف العلة الواو مع الضمائر أنا،نحن،أنت،هو،هي\nيجزم الفعل المضارع مع ضمائر الأفعال الخمسة أي أنت،أنتما،أنتم، هما ، هم بحذف النون\nصياغة الفعل لم تتغير مع المسند إلى نون النسوة سواء كان ذلك في المضارع المرفوع أو المنصوب أو المجزوم تخطون لن تخطون لم تخطون",
+      "figureDesc": "Encadré contenant les conclusions.",
+      "answer": null,
+      "id": "grammaire_arabe_cahier_regles_p026_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.9
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.92,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-ch1",
+    "confidence": 0.93
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la conjugaison du verbe défectueux à finale waw au présent apocopé, ce qui correspond à la compétence « conjugaison des verbes défectifs » de l'Unité 1 d'arabe (Trimestre 1).",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Verbe défectueux waw apocopé",
+    "skill": "Conjuguer au présent apocopé les verbes défectueux à finale waw et identifier les marques du jussif selon le pronom.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "conjugaison",
+      "présent apocopé",
+      "verbe défectueux",
+      "jussif",
+      "chute de la lettre faible",
+      "cinq verbes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau de conjugaison par pronom avec trois verbes modèles et la synthèse des marques du jussif (voyelle brève, chute de la lettre faible, chute du noun) peuvent inspirer des exercices de transformation, de complétion de tableau ou de repérage de la marque.",
+    "themeGroup": "Le verbe défectueux"
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "major",
+        "detail": "Le tashkeel (ُ، َ، ِ) a été ajouté dans le tableau de conjugaison (لم أبدُ، لم أحبُ، أنتَ، أنتِ…) alors que l'image n'en contient aucun : voyelles inventées."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Le tableau transcrit les formes sous forme de liste, avec ajout de libellés (المتكلم، المخاطب، الغائب) accolés aux pronoms ; la structure en colonnes (رجا، حبا، بدا) est perdue."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Pronoms : l'image porte 'أنتِ' sous la forme 'أنت' pour les deux lignes ; 'أنتما' ligne 5 correspond à 'لم تبدوا' : OK, mais 'أنتن' ligne 'لم تبدون' conservé. Les formes sont fidèles, mais la transcription 'لم تبدون' etc. est correcte ; en revanche les pronoms sont annotés (المتكلم) de façon inventée en ligne."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans les conclusions : 'الواو مع الضمائر أنا، نحن، أنت، هو، هي' correct ; la mention 'حذف حرف العلة الواو' correcte. Les pronoms 'أنت، أنتما، أنتم، هما، هم' conformes à l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ajout de '(الأفعال: بدا، حبا، رجا)' dans l'intitulé du Dars, absent du texte de l'image ; et le titre principal 'تصريف الناقص الواوي في المضارع المجزوم' est présent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-têtes du tableau (الأفعال / الضمائر) non transcrits comme tels."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "La ligne 'أنتن' dans les révisions et le tableau est correcte ; 'لم تخطون' conforme. Ordre des lignes du tableau inversé par rapport à la mise en page (colonnes)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.7,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "major",
+        "detail": "Le tableau de conjugaison porte des signes de voyelles (ُ، َ، ِ) sur أبدُ، أحبُ، أنتَ، أنتِ, etc., alors que le scan n'a aucun tashkeel. La figureDesc affirme même que ces signes sont « restitués », ce qui est faux. Les formes réelles sont : لم أبد، لم أحب، لم أرج, etc. Les pronoms sont écrits « أنت » (deux fois), sans voyelle."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "L'intitulé « (الأفعال: بدا، حبا، رجا) » ajouté à « الدرس » est inventé. Dans le scan, « الدرس » est seul ; بدا، حبا، رجا sont les en-têtes de colonnes du tableau. Le titre principal est aussi mélangé à l'intitulé de la section."
+      },
+      {
+        "type": "format",
+        "severity": "minor",
+        "detail": "La structure du tableau est aplatie en lignes « pronom (groupe): f1 / f2 / f3 ». Les en-têtes diagonaux (الأفعال / الضمائر) et la colonne des groupes (المتكلم، المخاطب، الغائب), qui figurent bien dans le scan, ne sont pas rendus comme tels. Ils sont placés entre parenthèses à côté des pronoms."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les points-virgules/virgules de la conclusion (أنا،نحن،أنت،هو،هي) sont normalisés. Le contenu des conclusions est sinon fidèle. La section « المراجعة » est fidèle."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة: علامات جزم الفعل المضارع",
+      "body": "علامات جزم الفعل المضارع:\nالسكون: نحن لم نخرج\nحذف حرف العلة: أنا لم أدن\nحذف النون: أنتما لم تدفعا\nالبناء على السكون: أنتن لم تجئن",
+      "figureDesc": "Tableau de 4 colonnes (السكون، حذف حرف العلة، حذف النون، البناء على السكون) avec un exemple sous chaque en-tête.",
+      "answer": null
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "الضمائر / الأفعال: بدا | حبا | رجا\nالمتكلم:\nأنا: لم أبد | لم أحب | لم أرج\nنحن: لم نبد | لم نحب | لم نرج\nالمخاطب:\nأنت: لم تبد | لم تحب | لم ترج\nأنت: لم تبدي | لم تحبي | لم ترجي\nأنتما: لم تبدوا | لم تحبوا | لم ترجوا\nأنتم: لم تبدوا | لم تحبوا | لم ترجوا\nأنتن: لم تبدون | لم تحبون | لم ترجون\nالغائب:\nهو: لم يبد | لم يحب | لم يرج\nهي: لم تبد | لم تحب | لم ترج\nهما: لم يبدوا | لم يحبوا | لم يرجوا\nهما: لم تبدوا | لم تحبوا | لم ترجوا\nهم: لم يبدوا | لم يحبوا | لم يرجوا\nهن: لم يبدون | لم يحبون | لم يرجون",
+      "figureDesc": "Tableau de conjugaison avec en-tête diagonal (الأفعال / الضمائر). Colonnes des verbes : بدا، حبا، رجا. Colonne des groupes : المتكلم (2 lignes), المخاطب (5 lignes), الغائب (6 lignes). Aucun tashkeel dans le scan. Les doublons « أنت » et « هما » sont présents dans l'original.",
+      "answer": null
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "علامة الجزم في المضارع من الناقص الواوي هي\nحذف حرف العلة الواو مع الضمائر أنا،نحن،أنت،هو،هي\nيجزم الفعل المضارع مع ضمائر الأفعال الخمسة أي أنت،أنتما،أنتم، هما ، هم بحذف النون\nصياغة الفعل لم تتغير مع المسند إلى نون النسوة سواء كان ذلك في المضارع المرفوع أو المنصوب أو المجزوم\nتخطون   لن تخطون   لم تخطون",
+      "figureDesc": "Encadré de conclusions en bas de page.",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.9,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة: علامات جزم الفعل المضارع",
+      "body": "علامات جزم الفعل المضارع:\nالسكون: نحن لم نخرج\nحذف حرف العلة: أنا لم أدن\nحذف النون: أنتما لم تدفعا\nالبناء على السكون: أنتن لم تجئن",
+      "figureDesc": "Tableau de 4 colonnes (السكون، حذف حرف العلة، حذف النون، البناء على السكون) avec un exemple sous chaque en-tête.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "cahier_grammaire_6eme_p026_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: تصريف الناقص الواوي في المضارع المجزوم (الأفعال: بدا، حبا، رجا)",
+      "body": "أنا (المتكلم): لم أبدُ / لم أحبُ / لم أرجُ\nنحن (المتكلم): لم نبدُ / لم نحبُ / لم نرجُ\nأنتَ (المخاطب): لم تبدُ / لم تحبُ / لم ترجُ\nأنتِ (المخاطب): لم تبدي / لم تحبي / لم ترجي\nأنتما (المخاطب): لم تبدوا / لم تحبوا / لم ترجوا\nأنتم (المخاطب): لم تبدوا / لم تحبوا / لم ترجوا\nأنتن (المخاطب): لم تبدون / لم تحبون / لم ترجون\nهو (الغائب): لم يبدُ / لم يحبُ / لم يرجُ\nهي (الغائب): لم تبدُ / لم تحبُ / لم ترجُ\nهما (الغائب): لم يبدوا / لم يحبوا / لم يرجوا\nهما (الغائب): لم تبدوا / لم تحبوا / لم ترجوا\nهم (الغائب): لم يبدوا / لم يحبوا / لم يرجوا\nهن (الغائب): لم يبدون / لم يحبون / لم يرجون",
+      "figureDesc": "Tableau de conjugaison : colonnes الأفعال (بدا، حبا، رجا) et lignes الضمائر groupées en المتكلم، المخاطب، الغائب. Le tashkeel est absent du scan ; les signes de voyelles ci-dessus sont restitués. Le scan reproduit les formes telles quelles, y compris les doublons « هما » et « أنت », et les formes avec « ون » pour أنتن/هن.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "cahier_grammaire_6eme_p026_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "علامة الجزم في المضارع من الناقص الواوي هي حذف حرف العلة الواو مع الضمائر أنا، نحن، أنت، هو، هي.\nيجزم الفعل المضارع مع ضمائر الأفعال الخمسة أي أنت، أنتما، أنتم، هما، هم بحذف النون.\nصياغة الفعل لم تتغير مع المسند إلى نون النسوة سواء كان ذلك في المضارع المرفوع أو المنصوب أو المجزوم: تخطون، لن تخطون، لم تخطون.",
+      "figureDesc": "Encadré de conclusions en bas de page.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "cahier_grammaire_6eme_p026_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "linkStatus": "clean",
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

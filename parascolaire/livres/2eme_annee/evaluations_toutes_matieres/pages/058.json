@@ -1,0 +1,130 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 58,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الغلاف الخلفي – سلسلة جسر النجاح: الامتحانات (الثلاثي الثاني) – دار اليمامة لنشر الكتاب",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الثّلاثي الثاني",
+      "body": "يسعدنا أن نقدّم لكم هذه السّلسلة من كتب الامتحانات الثّلاثيّة الّتي اشترك في إعدادها فريق متكامل من ذوي الكفاءة العالية والتّجربة الثّريّة في مجال التّقييم بالمرحلة الأولى من التّعليم الأساسي. وبذلك تتيح دار اليمامة فرصة ثمينة لتدريب أبنائنا المتعلّمين على توظيف مكتسباتهم وتقييم قدراتهم استعدادا لاجتياز كلّ الامتحانات بامتياز. والله وليّ التّوفيق. النّاشر",
+      "figureDesc": "ورقة مفكرة خضراء فاتحة على خلفية برتقالية، عنوان «الثّلاثي الثاني» في إطار بنفسجي",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p058_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "مكتبة مدرستي تونس: – الامتحانات + ورقة (مرفق) بإصلاح دقيق – الثلاثي الثاني",
+      "body": "ستة أغلفة لكتب: أساسي 1، أساسي 2، أساسي 3، أساسي 4، أساسي 5، أساسي 6 – «مدرستي تونس – الامتحانات + مرفق بإصلاح دقيق» – دار اليمامة لنشر الكتاب",
+      "figureDesc": "صور لأغلفة ملوّنة تتضمن تلميذا يحمل محفظة يمشي على قوس قزح، وشارة «الثلاثي الثاني» مع رقم السنة",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "evaluations_toutes_matieres_p058_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "معلومات النشر",
+      "body": "ISBN : 978-9938-08-421-4 | الرمز الشريطي 6 194036 427017 | الثمن: 4,200 د.ت | انتاج دار اليمامة لنشر الكتاب سجل تجاري عدد: B02245402014 | ايداع العلامة بالمعهد الوطني للمواصفات والملكية الصناعية تحت عدد : TN/T/2018/0799 | ايداع الرسوم والنماذج الصناعية تحت عدد : DM17125",
+      "figureDesc": "رمز شريطي (باركود) وإطار للسعر",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p058_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.97,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Autre (page de garde / quatrième de couverture)",
+  "topicReason": "Il s'agit de la quatrième de couverture de la série d'examens « جسر النجاح » (Trimestre 2) avec présentation éditoriale, couvertures des six niveaux et informations de publication (ISBN, prix), sans contenu pédagogique correspondant à un chapitre précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "pageType": "exercise",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Présentation de la collection d'examens",
+    "skill": "Aucune compétence disciplinaire : page de quatrième de couverture présentant une série d'examens trimestriels et ses informations d'édition.",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "quatrième de couverture",
+      "examens du deuxième trimestre",
+      "Jisr Ennajah",
+      "Dar Al Yamama",
+      "évaluation",
+      "enseignement de base"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Page purement promotionnelle et éditoriale, sans exercice ni situation d'apprentissage ; seule la structure de la collection (examens trimestriels avec corrigé détaillé en annexe) peut inspirer l'organisation d'un recueil.",
+    "themeGroup": "Évaluations et annales"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«التّعليم الأساسي» est transcrit «التّعليم»; l'image montre «التّقييم بالمرحلة الأولى من التّعليم الأساسي» : vérifier. Surtout «التّقييم» est correct, mais dans la transcription on lit «التّقييم» : OK. Point douteux : « الثلاثي الثاني » du titre sans tashkeel, l'image porte «الثّلاثي الثّاني»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans la section 2 et 3, les titres sont sans tashkeel (ex. «جسر النجاح» est «جِسْرُ النَّجاح», «الامتحانات» est «الْامتحانات»), mais ces parties sont des descriptions, non du texte imprimé."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Bloc 2 : « ورقة (مرفق) بإصلاح دقيق » et « ستة أغلفة لكتب… » sont des descriptions inventées ; l'image indique « + مرفق بإصلاح دقيق » (lecture incertaine). Le texte « عرض كتب السلسلة » est un titre ajouté, absent de l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les intitulés «معلومات النشر» et «الرمز الشريطي» sont ajoutés, absents de l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les petits textes sur les couvertures (noms d'auteurs, matières comme «قراءة», «Français») ne sont pas transcrits."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«المتعلّمين», «وليّ», «التّوفيق» corrects ; mais «فرصة ثمينة» s'écrit «فرصة ثمينة» collé à «لتدريب» dans l'image (« ثمينةلتدريب »), détail mineur."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

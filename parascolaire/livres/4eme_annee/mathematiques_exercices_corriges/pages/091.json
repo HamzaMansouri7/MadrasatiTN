@@ -1,0 +1,119 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 91,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المساحة (2) – الأسبوع 24 : قياس مساحة سطح باستعمال وحدات قيس (تربيعات)، التأطير بين عددين صحيحين، ترتيب المساحات، مساحة المثلث كوحدة قيس",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُحْسُبْ مِسَاحَةَ السَّطْحِ (ص) بِاسْتِعْمَالِ كُلٍّ مِنَ الْوَحْدَتَيْنِ (أ) و (ب) ثُمَّ أَكْمِلْ :",
+      "body": "- مساحة السطح (ص) باستعمال التربيعة (أ) وحدةً هي : ............\n- مساحة السطح (ص) باستعمال التربيعة (ب) وحدة هي : ............",
+      "figureDesc": "شبكة مربعات يظهر فيها مستطيل (ص) في الأعلى. في أسفل الشبكة الوحدة (ب) وهي مستطيل مخطط يتكون من مربعين، والوحدة (أ) وهي مربع أسود واحد.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p091_i1",
+      "topicId": "math-4-ch4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "مساحة الشكل (أ) محصورة بين عددين صحيحين من التربيعات : أبحث عن هذين العددين ثم أكمل ما يلي :",
+      "body": "مساحة الشكل (أ) أكبر من ............ تربيعة وأصغر من ............ تربيعة.",
+      "figureDesc": "شبكة مربعات فيها شكل (أ) غير منتظم (يشبه مربعا ناقص ركن). شكل داخلي مظلل بنقاط ومخطط يمثل الجزء الداخلي، وإطار خارجي سميك يحيط به.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p091_i2",
+      "topicId": "math-4-ch4",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُحْسُبْ مِسَاحَةَ السَّطْحَيْنِ (أ)،(ب)،(ج) بِاسْتِعْمَالِ كُلٍّ مِنَ الْوَحْدَتَيْنِ (ص) و (س) ثُمَّ امْلَإِ الْجَدْوَلَ التَّالِيَ:",
+      "body": "جدول: السطح | (أ) | (ب) | (ج) ؛ الصف الأول: باستخدام (ص) ؛ الصف الثاني: باستخدام (س). الخانات فارغة.",
+      "figureDesc": "شبكة مربعات فيها ثلاثة أسطح: مستطيل (ج) في الأعلى، وشكلان غير منتظمين (ب) و(أ) في الأسفل. الوحدة (ص) مربع أسود صغير والوحدة (س) مربع مخطط أكبر.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p091_i3",
+      "topicId": "math-4-ch4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 (تتمة)",
+      "instruction": "أُرَتِّبُ مِسَاحَةَ هَذِهِ السُّطُوحِ تَصَاعُدِيًّا :",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p091_i4",
+      "topicId": "math-4-ch4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "وحدة قيس مساحة السطحين (أ) و (ب) في الشكلين التاليين هي مساحة المثلث. أحسب مساحة كل رسم.",
+      "body": "",
+      "figureDesc": "الشكل (أ): مركب شراعي مكون من مثلثات (مثلث في الأعلى وشبه منحرف في الأسفل مقسم بخطوط منقطعة إلى مثلثات). الشكل (ب): مربع مقسم بخطوط منقطة إلى 8 مثلثات، مع مربعين مائلين خلفه.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p091_i5",
+      "topicId": "math-4-ch4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch4",
+  "topicTitle": "Période 4 : Nombres décimaux, addition/soustraction et surfaces",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p6",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la mesure des aires avec des unités (carreaux, triangle), de l'encadrement et du rangement des aires ; elle relève des mathématiques et le chapitre le plus proche est la Période 4 (surfaces), même si le titre mentionne surtout les décimaux.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    130
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesure d'aires avec unités non standard",
+    "skill": "Mesurer et comparer des aires en utilisant différentes unités (carreaux, triangle), encadrer une aire entre deux entiers et ordonner des surfaces.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "aire",
+      "unité de mesure",
+      "encadrement",
+      "comparaison de surfaces",
+      "pavage",
+      "triangle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Mesurer une même surface avec deux unités différentes pour montrer que la mesure dépend de l'unité, encadrer une aire entre deux entiers, remplir un tableau comparatif puis ranger les surfaces, avec le triangle comme unité inhabituelle.",
+    "themeGroup": "Périmètre et aire"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

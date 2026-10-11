@@ -1,0 +1,178 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 34,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Romulus et Rémus (les jumeaux abandonnés, recueillis par la louve), suivi d'un exercice de remise en ordre de paragraphes (Petit Écureuil)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- Le prince ordonne au chasseur de tuer l'un des bébés. (.....................)",
+      "figureDesc": "Case arrondie en pointillés pour écrire la réponse oui/non",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p034_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1b",
+      "instruction": "Relève, dans le texte, la phrase qui le montre :",
+      "body": "Ligne en pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p034_i2",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Le vieux chasseur n'a pas envie de laisser les bébés dans la forêt. Relève, dans le texte, le détail qui le montre :",
+      "body": "Ligne en pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p034_i3",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Où le chasseur dépose-t-il les bébés ? Pourquoi ?",
+      "body": "Ligne en pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p034_i4",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Que fait la louve, tapie dans les buissons du fleuve ?",
+      "body": "Ligne en pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p034_i5",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Que décide la femme de Rémus en voyant les bébés ?",
+      "body": "Ligne en pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p034_i6",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Cherche dans le texte le synonyme des mots suivants :",
+      "body": "- Rester cachée = ......................... - Donner son lait = .........................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p034_i7",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Remets ces paragraphes en ordre :",
+      "body": "* Sa maman enlève la grosse épine puis elle dit à Paul : - Voilà, maintenant, Petit Écureuil peut retourner dans la forêt.\n* Petit Écureuil est blessé : Il a une grosse épine dans le pied qui l'empêche de sauter. Alors Paul le ramasse, le met dans son anorak, tout contre sa poitrine, et il rentre chez lui.\n* Petit Écureuil s'est perdu en courant comme un fou dans la forêt. Son papa et sa maman le cherchent partout mais c'est Paul qui l'a trouvé.\n(Cinq lignes en pointillés pour écrire la réponse.)",
+      "figureDesc": "Cinq lignes en pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p034_i8",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.27
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une compréhension de lecture en français (Romulus et Rémus, abandon puis recueil des bébés, vocabulaire et remise en ordre de paragraphes) ; le thème de la solidarité envers les bébés recueillis évoque vaguement le module 3 « Accepter les autres », mais rien n'indique clairement un module précis.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture : récit légendaire",
+    "skill": "Comprendre un récit en relevant des informations dans le texte, en employant des synonymes et en remettant des paragraphes dans l'ordre chronologique.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "Romulus et Rémus",
+      "relevé d'indices",
+      "synonymes",
+      "ordre des paragraphes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable pour tout récit : question oui/non suivie d'une justification par une phrase du texte, relevé d'un détail révélant un sentiment, recherche de synonymes, puis remise en ordre de courts paragraphes avec un petit récit d'animal blessé.",
+    "themeGroup": "Contes et récits légendaires"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » et l'en-tête (Sagesse, Lecture - Compréhension, 6ème année de base) ne figurent pas dans la transcription ; le pied de page (Lire et s'exprimer, 33) non plus."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions « réponse: None » et « Ligne en pointillés pour la réponse » sont des annotations, pas du texte de la page. « Cinq lignes en pointillés » correspond bien à l'image (5 lignes)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les tirets « - » devant « Rester cachée » et « Voilà » sont conservés, mais la mise en forme en paragraphes de l'exercice 7 est aplatie (sans gravité)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

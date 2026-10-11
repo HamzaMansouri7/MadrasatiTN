@@ -1,0 +1,109 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 74,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 19 – الامتحان الثلاثي الثاني (5) : عمليات على الأعداد، الكتل (الغرام والكيلوغرام والديكاغرام)، السرعة/الدقة والزمن، الزوايا، المسلك على الشبكة، مسائل نقدية بالمي والدينار",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنجز العمليّات التّالية :",
+      "body": "أ) 20000 + 3750 = ..... (الناتج المطبوع في الصفحة: 40000 غير مكتمل/غير واضح) ؛ ب) ..... − 17873 = 70251 ؛ ج) 2381. − 1.253 = .85.2 (كما هو مطبوع) ؛ د) 2075 × 8 = ...",
+      "figureDesc": "أربع عمليات مكتوبة عموديا: جمع (20000 و3750)، طرح (..... ناقص 17873 والناتج 70251)، طرح (2381. ناقص 1.253 والناتج .85.2)، ضرب (2075 × 8) مع خط الناتج فارغ.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p074_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أ) ما هي كتلة العسل بالديكاغرام؟ ب) ابحث عن عدد دقّاته في 11 دقيقة.",
+      "body": "أ) وعاء يزن فارغا 650 غ. صبينا فيه عسلا فصار يزن 5 كغ. ما هي كتلة العسل بالديكاغرام؟\nب) ينبضُ قلبُ عليّ 72 دقّة في الدّقيقة. اِبحثْ عن عدد دقّاته في 11 دقيقة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p074_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ) اذكر نوع كلّ زاوية من الزّوايا أسفله:\nب) ارسم المسلك الآتي على الشّبكة انطلاقا من العقدة أ",
+      "body": "أ) الزّاوية التي رأسها \"أ\" ............ ؛ الزّاوية التي رأسها \"ب\" ............ ؛ الزّاوية التي رأسها \"هـ\" ............\nب) المسلك: ↓ ↓ ↓ → → → ↑ ↑ ↑ → → → ↓ ↓ ↓",
+      "figureDesc": "مضلع غير محدب برؤوس أ، ب، ج، د، هـ (هـ رأس داخلي مقعر). شبكة مربعات فيها نقطة البداية أ. شريط أسهم يبين المسلك.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p074_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اِبحثْ عن ثمن عُلَبِ اليـاغُورت.",
+      "body": "شـرى أب لأطفـالـه 3 لوحـات من الشُّكلاطة بـ 1100 مي الواحـدة. وصندوقا من المرطّبات بلغ ثمنه ضعف ثمن لوحات الشكلاطة. كما أشترى أيضا عُلبًا من الياغورت . ما هو ثمن المرطّبات؟\nقدّم الأبُ للتّاجرِ وَرَقَـةً نقديّة ذات عشرة دنانير وثلاث قطع من فئة الدّينار الواحد. فطلب منه التّاجر أن يزيده 50 مي ثم أرجع له نصف دينار.\nابحث عن ثمن عُلَبِ الياغورت.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p074_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.18
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation du deuxième trimestre (semaine 19) qui mélange opérations, masses, durées, angles, tracé d'un parcours et problèmes de monnaie, donc elle couvre plusieurs chapitres et ne correspond à aucun chapitre unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    126
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision trimestrielle : opérations, mesures, géométrie",
+    "skill": "Mobiliser opérations, conversions de masses, durées, types d'angles, repérage sur quadrillage et monnaie pour résoudre des problèmes.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "opérations",
+      "masses",
+      "angles",
+      "trajet sur quadrillage",
+      "monnaie",
+      "problèmes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un sujet d'examen varié qui associe des situations concrètes (pot de miel à peser, battements du cœur par minute, achats de chocolat et de yaourts avec paiement en billets et pièces) à un tracé de parcours fléché sur quadrillage et à l'identification des angles.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,101 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 27,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الوحدة الثالثة : الدورة الدموية (الدم والقلب) – وضعية تقييم",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبُطْ كَلِمَاتِ الْعَمُودِ الْأَوَّلِ بِمَا يُنَاسِبُهَا فِي الْعَمُودِ الثَّانِي :",
+      "body": "العمود الأول: الْكُرَيَاتُ الْحَمْرَاءُ • / الْكُرَيَاتُ الْبَيْضَاءُ • / الْبْلازْمَا • / الصُّفَيْحَاتُ •\nالعمود الثاني: • تَنْقُلُ الْمَوَادَّ الْغِذَائِيَّةَ / • تَلْعَبُ دَوْرًا فِي تَخَثُّرِ الدَّمِ. / • تَنْقُلُ الْأُكْسِجِينَ مِنَ الرِّئَتَيْنِ إِلَى الْخَلَايَا. / • تُحَارِبُ الْجَرَاثِيمَ.",
+      "figureDesc": "Tableau de correspondance à deux colonnes avec des points à relier. Petit schéma du cœur avec vaisseaux rouges et bleus en haut de la page (en-tête de l'unité).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p027_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لِمَاذَا لَا يَسْتَطِيعُ الدَّمُ الْعَوْدَةَ مِنَ الْبُطَيْنِ إِلَى الْأُذَيْنَةِ؟",
+      "body": "سطر منقّط لكتابة الإجابة.",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p027_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "مَا هُوَ بِاعْتِقَادِكَ السَّبَبُ الَّذِي أَدَّى إِلَى اخْتِلَافِ شِدَّةِ الْمَرَضِ عِنْدَ سَامِي وَنُهَى؟ فَسِّرْ مَا حَصَلَ لِكُلٍّ مِنْهُمَا؟",
+      "body": "أُصِيبَ سَامِي بِمَرَضِ الْجُدَرِيِّ وَظَهَرَتْ عَلَى وَجْهِهِ بُثُورٌ طَفِيفَةٌ وَقَرَّرَ أَنْ يَذْهَبَ إِلَى الْمَدْرَسَةِ لِأَنَّهُ لَمْ يَشْعُرْ بِانْزِعَاجٍ شَدِيدٍ. بَعْدَ بِضْعَةِ أَيَّامٍ أُصِيبَتْ زَمِيلَتُهُ نُهَى بِالْمَرَضِ نَفْسِهِ وَلَكِنَّهُ كَانَ أَشَدَّ بِكَثِيرٍ مِنْ مَرَضِ سَامِي مِمَّا اضْطَرَّهَا أَنْ تُلَازِمَ الْمَنْزِلَ لِأَيَّامٍ عِدَّةٍ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p027_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "تَتِمُّ عَمَلِيَّةُ تَبَادُلِ الْأُكْسِجِينِ وَثَانِي أُكْسِيدِ الْكَرْبُونِ بَيْنَ جِهَازِ التَّنَفُّسِ وَالْجِهَازِ الدَّوْرِيِّ فِي :",
+      "body": "أ) الْأَمْعَاءِ   ب) الشَّرَايِينِ   ج) الْأَوْرِدَةِ   د) الرِّئَتَيْنِ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p027_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.42857142857142855,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.7
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est une évaluation sur le sang (globules rouges, blancs, plasma, plaquettes), le cœur (ventricule/oreillette), l'immunité (varicelle) et les échanges gazeux, ce qui correspond à l'unité 3 sur le système circulatoire et l'immunité.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Circulation sanguine : sang et cœur",
+    "skill": "Évaluer la connaissance des composants du sang, du rôle des valves cardiaques, de l'immunité et des échanges gazeux au niveau des poumons.",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "autre",
+      "qcm"
+    ],
+    "keywords": [
+      "circulation sanguine",
+      "composants du sang",
+      "cœur",
+      "valvules",
+      "immunité",
+      "échanges gazeux"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Mini-situation d'évaluation variée : appariement des constituants du sang et de leur rôle, question de raisonnement sur le sens unique du sang dans le cœur, et cas de deux enfants atteints de la même maladie avec une gravité différente pour expliquer l'immunité (réutilisable comme contexte de la vie quotidienne).",
+    "themeGroup": "La circulation sanguine et le sang"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

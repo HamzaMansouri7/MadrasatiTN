@@ -1,0 +1,102 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 21,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "قواعد اللغة العربية: الضمائر (إسناد الجملة إلى ضمائر المخاطبين والمخاطبات، وإلى هما المؤنث وهن) وتصريف الناسخ (إنّ وأخواتها) والضمير المتصل",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أسند الجملة التالية إلى ضمير المخاطبين ثم المخاطبات",
+      "body": "أقضي نهاري أسقي الأشجار والثمار وأنقي الأعشاب الطفيلية",
+      "figureDesc": "نص داخل إطار مستطيل مع مساحة فارغة للإجابة",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p021_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أعيد كتابة ما يلي مسندا إلى الضمائر هما المؤنث و هن",
+      "body": "سأرقى إلى أعلى المراتب وأسعى إلى الحصول على الجائزة الأولى",
+      "figureDesc": "نص داخل إطار مستطيل مع مساحة فارغة للإجابة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p021_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكمل بالصيغة التي يدل عليها تصريف الناسخ",
+      "body": "إنه ينهى عن خلق ويأتي مثله فلا تخالطه\nإنهما\nإنهم",
+      "figureDesc": "نص داخل إطار مستطيل؛ الكلمتان «إنهما» و«إنهم» متبوعتان بمساحة فارغة للإكمال",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p021_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أستعين بالضمير المتصل وأعيد كتابة الجملة التالية",
+      "body": "من هنا فصاعدا ستكتفي بما اشتريه لك وتبقى دائما على العهد\nلكما\nلكن",
+      "figureDesc": "نص داخل إطار مستطيل؛ «لكما» و«لكن» متبوعتان بمساحة فارغة للإجابة",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p021_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.26
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de grammaire arabe (pronoms, conjugaison, إنّ et ses sœurs, pronoms suffixes) sans lien clair avec une unité narrative précise ; le chapitre ar-6-ch1 est le seul à mentionner la conjugaison, mais l'adéquation reste incertaine.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison et pronoms personnels",
+    "skill": "Transformer des phrases en changeant le pronom sujet (vous, elles, eux) et employer les pronoms suffixes et les particules « inna et ses sœurs ».",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "pronoms personnels",
+      "pronoms suffixes",
+      "inna et ses sœurs",
+      "conjugaison",
+      "transformation de phrases",
+      "grammaire arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Format réutilisable : réécrire une courte phrase en changeant la personne (masculin/féminin, duel/pluriel) ou compléter par la forme correcte du pronom attaché ou de la particule d'« inna », à partir de situations de la vie quotidienne comme le jardinage ou les conseils.",
+    "themeGroup": "Conjugaison: pronoms et suffixes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

@@ -1,0 +1,131 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 15,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 3 – المستقيم وأجزاؤه (3): قطعة المستقيم",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أذكر جميع القطع المرسومة في الشَّكْلِ:",
+      "body": "",
+      "figureDesc": "Quadrilatère de sommets أ، ب، ج، د avec le segment [أ ج] tracé à l'intérieur. Les segments tracés sont [أ ب]، [ب ج]، [ج د]، [د أ]، [أ ج].",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mathematiques_exercices_corriges_p015_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أرسم قطعة المستقيم [أ ب] .",
+      "body": "- أرسم نقطة \"ج\" تنتمي إلى قطعة المستقيم [أ ب] .\n- أرسم نقطة \"هـ\" بحيث \"ب\" تنتمي إلى القطعة [ج هـ] .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p015_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم النِّقَط \"أ\" \"ب\" \"ج\" \"د\" على المستقيم (م)",
+      "body": "بحيث : \"أ\" تنتمي إلى قطعة المستقيم [ج د]\nو \"د\" تنتمي إلى قطعة المستقيم [أ ب]",
+      "figureDesc": "Une droite (م) légèrement inclinée, tracée vers le haut à droite, sans points marqués.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p015_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "- أكْتُبْ اَلْقِطَعَ اَلْمتقايِسَةَ فِيمَا بَيْنَهَا.",
+      "body": "(أ ب ج د) مربَّع.",
+      "figureDesc": "Carré (أ ب ج د) avec ses deux diagonales tracées. Sommets : ب en haut à gauche, أ en haut à droite, ج en bas à gauche, د en bas à droite.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p015_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "لاحظ الشَّكل التّالي :",
+      "body": "أرسم نُقطتيْنِ \"ب\" و \"ج\" على المستقيم (م)\nبحيث تكون القطعتان [أ ب] و [أ ج] متقايستَيْنِ.",
+      "figureDesc": "Un point أ au-dessus et une droite (م) inclinée vers le bas à droite.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p015_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "استعمل المسطرة و ارسم نُقطة \"م\"",
+      "body": "بحيث تكون \"ل\" هي منتصف قطعة المستقيم [ك م] .",
+      "figureDesc": "Un segment horizontal partant du point ك, avec le point ل marqué sur le segment.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p015_i6",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.4
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la droite et de ses parties (segment de droite, appartenance, segments isométriques, milieu), ce qui relève de la géométrie de la Période 1 (droites), même si le titre exact du chapitre ne mentionne pas explicitement les segments.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    112
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Segment de droite et ses propriétés",
+    "skill": "Identifier, tracer et placer des points sur des segments, reconnaître des segments isométriques et le milieu d'un segment.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "segment",
+      "appartenance d'un point",
+      "segments isométriques",
+      "milieu",
+      "construction géométrique",
+      "carré"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices de construction progressifs (nommer les segments d'une figure, placer des points selon des contraintes d'appartenance, repérer des segments de même longueur dans un carré, trouver un milieu à la règle) réutilisable comme modèle de consignes de géométrie à reproduire avec d'autres figures.",
+    "themeGroup": "Droites, points et segments"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

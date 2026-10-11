@@ -1,0 +1,82 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 76,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Production de l'écrit (page d'examen de français, et non une page de mathématiques) : compléter un paragraphe sur l'internet et rédiger un paragraphe sur le téléphone portable",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "III-a",
+      "instruction": "Complète le paragraphe ci-dessous avec les mots suivants :",
+      "body": "Mots à utiliser : Causer ; des documents ; source ; acheter\n-L'internet est une .................... gratuite d'informations. Elle permet de partager ...................... à travers les courriels et .......................... des articles grâce aux sites e-commerce. Mais, son usage intense peut .................. le stress chronique et la fatigue des yeux.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p076_i1",
+      "topicId": "fr-6-m2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "III-b",
+      "instruction": "Production d'un paragraphe : En 7 lignes. Explique à tes copains deux avantages et deux inconvénients (défauts) du téléphone portable et donne un conseil pour mieux l'utiliser.",
+      "body": "De nos jours, le téléphone portable (SMARTPHONE) est devenu un outil indispensable et efficace. Il offre plusieurs services pratiques et utiles, mais il pourrait être nuisible et dangereux s'il est mal exploité.",
+      "figureDesc": "Environ 11 lignes pointillées pour la rédaction de la réponse de l'élève. Le titre de la section « III. PRODUCTION DE L'ECRIT » (7pts) apparaît en haut, avec a) = 2pts et b) = 5pts. Pied de page : « Page 4 sur 4 ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p076_i2",
+      "topicId": "fr-6-m2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m2",
+  "topicTitle": "Module 2 : Communiquer avec les autres",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-ch2",
+    "confidence": 0.34
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de production écrite en français sur l'internet et le téléphone portable (outils de communication et médias), ce qui se rapproche du Module 2 « Communiquer avec les autres », mais elle ressemble aussi à une page d'examen générale sans chapitre clairement identifié.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Internet et téléphone portable",
+    "skill": "Compléter un texte à trous avec le vocabulaire donné, puis rédiger un paragraphe de 7 lignes présentant avantages, inconvénients et conseil.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "internet",
+      "téléphone portable",
+      "paragraphe",
+      "avantages et inconvénients",
+      "vocabulaire",
+      "production écrite"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un texte à trous guidé par une banque de mots sur un thème technologique, suivi d'une consigne de production écrite structurée (deux avantages, deux inconvénients, un conseil) adressée à des camarades.",
+    "themeGroup": "Internet et technologies"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "examTrimester": 1,
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

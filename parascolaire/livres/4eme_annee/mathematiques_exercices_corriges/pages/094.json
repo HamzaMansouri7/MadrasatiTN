@@ -1,0 +1,173 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 94,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 25 : حساب ضلع مربع – حساب أحد بعدي مستطيل محيطه وبعده الآخر معلومان",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "فابحث عن قيس بعديه.",
+      "body": "يمثّل الشّكل مستطيلا (أ ب ج د) ، قُسِّمَ إلى 6 مربّعات متقايسة. - إذا كان قيس طول محيطه بالصم 90. فابحث عن قيس بعديه.",
+      "figureDesc": "مستطيل (أ ب ج د) مقسّم إلى 6 مربعات متقايسة: 3 مربعات في الطول وصفّان في العرض.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p094_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "فما هو قيس محيط السّاحة؟ ما هو قيس عرضها إذا كان قيس طولها 130 مترا؟",
+      "body": "أقامت المصالح البلديّة حول ساحة عموميّة مستطيلة الشكل أعمدة كهربائية للإنارة بحيث يوجد كلّ عمود في ركن من أركان الساحة ويبعُد كلّ عمود عن الآخر 15 مترا. إذا علمتَ أنّ عدد الأعمدة المقامة حول السّاحة هو 28 فما هو قيس محيط السّاحة؟ ما هو قيس عرضها إذا كان قيس طولها 130 مترا؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p094_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هو قيس عرض هذه الحديقة؟",
+      "body": "نحتاج إلى 280 مترا من الأسلاك الشائكة لإحاطة حديقة مستطيلة الشّكل قيس طولها 86 م. ما هو قيس عرض هذه الحديقة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p094_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ابحث عن بُعديْ مستطيل محيطه 72 صم وعرضه يساوي نصف طوله. (استعن بالمخطّط المناسب)",
+      "body": "ابحث عن بُعديْ مستطيل محيطه 72 صم وعرضه يساوي نصف طوله. (استعن بالمخطّط المناسب)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p094_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "احسب عرض المستطيل (أ ب ج د)",
+      "body": "محيط المستطيل (أ ب ج د) هو 220 مترا. محيط المربّع (ص م س ك) هو 120 مترا. احسب عرض المستطيل (أ ب ج د)",
+      "figureDesc": "مستطيل (أ ب ج د) يعلوه مربّع (ص م س ك) قاعدته [س ك] على الضلع العلوي للمستطيل؛ المسافة من ب إلى س 30 م ومن ك إلى أ 10 م.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p094_i5",
+      "topicId": "math-4-ch2",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أوجد قيس أبعاد هذه الحديقة. (استعن بالمخطط المناسب)",
+      "body": "محيط حديقة مستطيلة الشّكل 160 مترا قيس طولها 3 أضعاف قيس عرضها. أوجد قيس أبعاد هذه الحديقة. (استعن بالمخطط المناسب)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p094_i6",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch2",
+    "confidence": 0.21
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite du calcul du côté d'un carré et d'une dimension d'un rectangle à partir de son périmètre, ce qui correspond à la Période 2 (multiplication, rectangle et carré, périmètres).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    131
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Périmètre du rectangle et du carré",
+    "skill": "Calculer une dimension manquante d'un rectangle ou le côté d'un carré à partir du périmètre et d'une autre donnée.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "périmètre",
+      "rectangle",
+      "carré",
+      "dimension manquante",
+      "longueur et largeur",
+      "schéma"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations concrètes variées à réutiliser : poteaux d'éclairage autour d'une place, grillage pour clôturer un jardin, rectangle découpé en carrés identiques, comparaison des périmètres d'un rectangle et d'un carré, relations entre dimensions (moitié, triple) avec schéma d'aide.",
+    "themeGroup": "Périmètre et aire"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « الأسبوع 25 », « حساب ضلع مربع », « حساب أحد بعدي مستطيل محيطه وبعده الآخر معلومان »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 90 et les étiquettes du schéma (أ، ب، ج، د، م، ص، س، ك, 30 م, 10 م) ne sont pas transcrits."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 1 : la dernière ligne « فابحث عن قيس بعديه. » est dupliquée comme premier segment, hors de l'ordre de lecture."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercices 2, 3, 5, 6 : le premier segment répète des fragments de l'énoncé, ce qui crée des doublons."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « 280 مترا » alors que l'image porte « 280 متراً » sans tanwin visible ; « نحتاج إلى 280 مترا من الأسلاك الشائكة » est correct sinon."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « بالصم » est fidèle à l'image (« بالسم »). Les voyelles de « قيس » et de « فابحث » ne sont pas toutes visibles, ce qui est cohérent avec la transcription."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : « الشكل » apparaît sans chadda dans « مستطيلة الشكل » alors que « الشّكل » en a une ailleurs ; cohérence douteuse."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

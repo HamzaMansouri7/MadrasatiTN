@@ -1,0 +1,132 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 27,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قراءة وفهم / دراسة حرف الزاي (ز)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُعَمِّرُ الْفَرَاغَ بِالْكَلِمَةِ الْمُنَاسِبَةِ: يَضْرِبُونَ - يُزِيلُونَ - يُطْعِمُونَ",
+      "body": "عُمَّالٌ يَتَسَلَّقُونَ السَّلَالِمَ، وَ .................... الزَّيْتُونَ بِحَزْمٍ وَعَزْمٍ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p027_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُكَمِّلُ بِالْكَلِمَةِ الْمُنَاسِبَةِ مِنَ النَّصِّ.",
+      "body": "وَنِسْوَةٌ يُفْرِزْنَ الْأَوْرَاقَ، وَهُنَّ .................... فَرَحًا وَابْتِهَاجًا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p027_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "بِمَاذَا تَتَّصِفُ وَهِيبَةُ ؟ النَّشَاطِ - الْكَسَلِ",
+      "body": "تَتَّصِفُ وَهِيبَةُ بِـ ....................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p027_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَكْتُبُ « أُوَافِقُ » / « لَا أُوَافِقُ ».",
+      "body": "سَاعَدَتْ وَهِيبَةُ عَائِلَتَهَا فِي جَنْيِ الزَّيْتُونِ.\n............................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p027_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَرْبِطُ بِالْمَقْطَعِ الْمُنَاسِبِ ثُمَّ أَكْتُبُهُ.",
+      "body": "- صُورَةُ زَهْرَةٍ: زَ . / قَا . / بَا . ـــــ . هْرَةٌ\n........................\n- صُورَةُ جَزَّارٍ: جَـ . ـــــ . رَّارٌ / . بَّارٌ / . زَّارٌ\n........................\n- صُورَةُ مَوْزٍ: مَوْ . ـــــ . سٌ / . زٌ / . جٌ\n........................\nمَا هُوَ الْحَرْفُ الَّذِي تَكَرَّرَ فِي هَذِهِ الْكَلِمَاتِ؟\nالْحَرْفُ : ...................................",
+      "figureDesc": "ثلاث صور توضيحية: صورة زهرة وردية، صورة جزار في دكانه، وصورة موز أصفر.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p027_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ الْكَلِمَاتِ الْمُحْتَوِيَةِ عَلَى الْحَرْفِ «ز».",
+      "body": "...........................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p027_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-1-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u1",
+    "confidence": 0.29
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la lettre ز (Zay) avec un texte sur la cueillette des olives, mais cette lettre ne figure dans aucune des unités listées (U1 à U7 couvrent d'autres lettres), donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Étude de la lettre ز",
+    "skill": "Reconnaître et écrire la lettre ز dans des mots, et comprendre un texte sur la cueillette des olives.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "qcm",
+      "vrai_faux",
+      "appariement",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lettre zay",
+      "compréhension de lecture",
+      "cueillette des olives",
+      "syllabes",
+      "vocabulaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices variés autour d'une lettre : compléter une phrase avec le bon verbe, choisir entre deux traits de caractère, dire si on est d'accord, relier une image à la bonne syllabe et relever dans le texte les mots contenant la lettre, le tout dans le contexte de la récolte des olives en famille.",
+    "themeGroup": "Lettres et sons: ز و ح"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

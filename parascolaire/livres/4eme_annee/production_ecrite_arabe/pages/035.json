@@ -1,0 +1,127 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 35,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي: مواضيع تعبيرية (وصف شخص نشيط، حوار بين فلاح ونجار، رسالة تهنئة وتشجيع، رسالة لوم لصديق، الصلح بين صديقين، وصف ورشة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "صف هذا العامل قبل وبعد الحادثة",
+      "body": "الموضوع عدد\nتعرف شخصا دائم الحركة والنشاط حدث له ما منعه عن مواصلة العمل\nصف هذا العامل قبل وبعد الحادثة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p035_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اذكر الحوار وما آل إليه الأمر في الآخر",
+      "body": "الموضوع عدد\nحضرت حوارا بين فلاح ونجار كل منهما يفتخر بعمله ويعدد مزاياه\nاذكر الحوار وما آل إليه الأمر في الآخر",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p035_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اكتب الرسالة مهنئا المرسل ومشجعا إياه على المثابرة",
+      "body": "الموضوع عدد\nوصلتكم رسالة تحمل أخبارا سارة فكلفتك أمك بالرد عليها قصد التهنئة والتشجيع\nاكتب الرسالة مهنئا المرسل ومشجعا إياه على المثابرة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p035_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "نسيك صديقك المقيم في بلد آخر فكتبت له رسالة تلومه فيها على تأخره في مراسلتك وتذكره بالأيام الجميلة التي قضيتموها معا",
+      "body": "الموضوع عدد\nنسيك صديقك المقيم في بلد آخر فكتبت له رسالة تلومه فيها على تأخره في مراسلتك وتذكره بالأيام الجميلة التي قضيتموها معا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "production_ecrite_arabe_p035_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "ارو ما حدث",
+      "body": "الموضوع عدد\nحضرت خصومة بين صديقين كل منهما يرمي اللوم على الآخر فتدخلت لاصلاح ذات البين بينهما\nارو ما حدث",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p035_i5",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "صفه وهو يعمل واذكر الحوار الذي دار بينكما حول قيمة العمل",
+      "body": "الموضوع عدد\nزرت ورشة فأعجبت بنشاط صاحبها\nصفه وهو يعمل واذكر الحوار الذي دار بينكما حول قيمة العمل",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p035_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u6",
+    "confidence": 0.39
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Page d'expression écrite en arabe regroupant six sujets variés (description d'une personne active, dialogue, lettres de félicitation et de reproche, réconciliation, description d'un atelier) qui touchent plusieurs unités (description, relations entre personnages) sans correspondre clairement à un seul chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite: sujets d'expression",
+    "skill": "Rédiger des textes variés (description, dialogue, lettres, récit) à partir de situations de la vie quotidienne.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "expression écrite",
+      "description",
+      "dialogue",
+      "lettre",
+      "réconciliation",
+      "valeur du travail"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Série de six consignes de rédaction contextualisées (portrait avant/après un accident, dispute valorisant deux métiers, lettre de félicitations, lettre de reproche à un ami éloigné, médiation entre amis, visite d'atelier avec dialogue sur la valeur du travail), réutilisables comme situations d'écriture variées.",
+    "themeGroup": "Production écrite : sujets variés et textes modèles"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

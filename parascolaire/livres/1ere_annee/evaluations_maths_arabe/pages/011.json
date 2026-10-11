@@ -1,0 +1,130 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 11,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قراءة وفهم - حرف القاف والمقطع المغلق",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُكَمِّلُ بِالْمَكَانِ الْمُنَاسِبِ :",
+      "body": "• وَقَفَتْ فَتِيحَةُ أَمَامَ ..................... .\n• دَخَلَ التَّلَامِيذُ إِلَى ..................... .\n• اِصْطَفَّ التَّلَامِيذُ أَمَامَ ..................... .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p011_i1",
+      "topicId": "ar-1-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَكْتُبُ «أُوَافِقُ» / «لَا أُوَافِقُ» «لِيُحَافِظُوا عَلَى نَظَافَةِ الْمَدْرَسَةِ» /«لِأَنَّهُمْ يُقَدِّمُونَ الْأَزْهَارَ لِلْمُعَلِّمَةِ» .",
+      "body": "• لَا يَعْبَثُ التَّلَامِيذُ بِالْأَزْهَارِ، وَلَا يُلْقُونَ الْأَوْرَاقَ فِي السَّاحَةِ. .....................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p011_i2",
+      "topicId": "ar-1-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَقْرَأُ النَّصَّ وَأُكَمِّلُ بِالْحَرْفِ النَّاقِصِ فِي الْكَلِمَاتِ التَّالِيَةِ :",
+      "body": "ر  |  ا\nفـ |  .\nيـ |  تـ\n.  ط  ل  إ  .  ى",
+      "figureDesc": "شَبَكَةُ كَلِمَاتٍ مُتَقَاطِعَةٍ تَحْتَوِي عَلَى خَانَاتٍ بَعْضُهَا يَحْمِلُ حُرُوفًا وَبَعْضُهَا فَارِغٌ تَنْتَظِرُ الْإِكْمَالَ (كَلِمَاتٌ عَمُودِيَّةٌ وَأُفُقِيَّةٌ).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_maths_arabe_p011_i3",
+      "topicId": "ar-1-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَقْرَأُ الْكَلِمَاتِ وَأَضَعُ الَّتِي تَحْتَوِي عَلَى مَقْطَعٍ مُنْغَلِقٍ فِي خَطٍّ مُغْلَقٍ.",
+      "body": "قَاعَةُ - فَقِيرٌ - قُوَّتْ - قَبْوٌ - يَقُومُ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p011_i4",
+      "topicId": "ar-1-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) تَحْتَ الصُّورَةِ الَّتِي يَحْتَوِي اسْمُهَا عَلَى مَقْطَعٍ مُنْغَلِقٍ.",
+      "body": "",
+      "figureDesc": "سِتُّ صُوَرٍ لِأَشْيَاءَ وَحَيَوَانَاتٍ تَبْدَأُ أَوْ تَحْتَوِي عَلَى حَرْفِ الْقَافِ، وَتَحْتَ كُلِّ صُورَةٍ خَانَةٌ دَائِرِيَّةٌ: قَبْقَابٌ، قِطَارٌ، قَارُورَةٌ، قُفْلٌ، قُنْفُذٌ، بَقَرَةٌ.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p011_i5",
+      "topicId": "ar-1-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أُكَمِّلُ الْكَلِمَاتِ بِالْمَقْطَعِ الْمُنَاسِبِ: قُـ / قَـ / قِـ / قِرْ",
+      "body": ".....فَزَ الْـ.....دُ بِـ.....وَّةٍ فَوْ..... الشَّجَرَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p011_i6",
+      "topicId": "ar-1-u6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "ar-1-u6",
+  "topicTitle": "Unité 6 : Mon compagnon au printemps",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-1-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u1",
+    "confidence": 0.29
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de lecture et de compréhension en arabe sur la lettre ق (Qaf) et la syllabe fermée, ce qui correspond à l'unité 6 (lettres Sad, Dad, Kaf, Qaf, thème du printemps et de l'école en fête).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Lettre ق et syllabe fermée",
+    "skill": "Lire et comprendre un court texte, puis identifier et utiliser la lettre ق et les syllabes fermées dans des mots.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "lecture_comprehension",
+      "appariement",
+      "autre"
+    ],
+    "keywords": [
+      "lettre qaf",
+      "syllabe fermée",
+      "lecture débutant",
+      "compléter mots",
+      "vie scolaire",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices variés pour débutants : compléter une phrase par un lieu, accord/désaccord avec justification, lettre manquante, entourer les mots à syllabe fermée, marquer les images d'une croix, compléter des mots par la syllabe adaptée ; le tout dans le contexte de la vie scolaire (propreté, fleurs, rangs).",
+    "themeGroup": "Lettres et sons: ف ق ط"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

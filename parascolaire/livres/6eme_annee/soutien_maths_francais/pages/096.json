@@ -1,0 +1,105 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 96,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Production écrite : les énergies renouvelables (énergie hydraulique). Note : la page est un sujet d'évaluation de français, et non une page de mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "22",
+      "instruction": "Complète le texte ci-dessous par les mots proposés :",
+      "body": "Verte – pomper l'eau - les mouvements de l'eau – hydraulique\nL'énergie.................. est une énergie........... connue dès l'Antiquité. Cette source exploite ..................\n................................. pour moudre le grain,.......... ................ et actionner les marteaux- pilons.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p096_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "23",
+      "instruction": "Ecris un texte dans lequel tu parles de l'importance des énergies renouvelables et les défis qui affrontent leur généralisation. (5 à 6 lignes)",
+      "body": "Section « III. PRODUCTION ECRITE : (7points) ». Huit lignes pointillées sont prévues pour la rédaction.",
+      "figureDesc": "Lignes pointillées vierges pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p096_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.54
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page, un sujet d'évaluation de français sur les énergies renouvelables (énergie hydraulique, énergie verte) avec production écrite, relève le plus clairement du Module 5 « Sauver la nature » (écologie et préservation de la nature), même si elle ressemble à une évaluation générale.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Production écrite : énergies renouvelables",
+    "skill": "Compléter un texte documentaire avec le lexique approprié, puis rédiger un court texte argumentatif sur l'importance des énergies renouvelables et les défis de leur généralisation.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "énergies renouvelables",
+      "énergie hydraulique",
+      "texte à trous",
+      "production écrite",
+      "évaluation",
+      "vocabulaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un sujet d'évaluation en deux temps : un texte à trous à compléter avec une banque de mots sur un thème scientifique, puis une rédaction guidée de 5 à 6 lignes mêlant importance et défis d'un enjeu environnemental, ce qui permet de relier la langue et les sciences.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro/titre de section « III. PRODUCTION ECRITE : (7points) » est mentionné seulement dans la note de l'exercice 23, pas placé avant l'exercice 22 où il apparaît dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le texte à trous est transcrit sans faute, mais les pointillés ne correspondent pas exactement à l'image (ex. « pilons. » présent, nombre de points différent). Sans conséquence."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« Huit lignes pointillées » : l'image montre 9 lignes pointillées (comptées de haut en bas), pas 8."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "examTrimester": 2,
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

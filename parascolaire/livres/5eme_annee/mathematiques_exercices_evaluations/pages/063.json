@@ -1,0 +1,114 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 63,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مسائل حسابية: حساب الأثمان والمبالغ المتبقية (عملية الشراء في السوق) – الأعداد العشرية والقيس",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لِإِعْدَادِ فَطُورٍ لِلضُّيُوفِ شَرَتْ أُمُّ طَاهِرٍ سَمَكًا وَلَحْمَ بَقَرٍ وَلَحْمَ ضَأْنٍ. لَاحِظِ الْقَائِمَةَ لِتَعْرِفَ الْمَقَادِيرَ اللَّازِمَةَ.",
+      "body": "وَشَرَتْ بَعْدَ ذَلِكَ 5 كغ مِنَ التُّفَّاحِ بِـ 3,700 د الكغ و 7,5 كغ مِنَ الْبُرْتُقَالِ لِإِعْدَادِ الْعَصِيرِ بِـ 650 مي الكغ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p063_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-أ",
+      "instruction": "احْسُبْ ثَمَنَ كُلِّ نَوْعٍ مِنَ اللُّحُومِ.",
+      "body": "جدول: لحم بقر: ثمن 1 كغ 14,500 د، الكتلة 2,900 كغ، المبلغ الجملي ........ / لحم ضأن: ثمن 1 كغ 13,800 د، الكتلة 2,750 كغ، المبلغ الجملي ........ / سمك: ثمن 1 كغ 12,500 د، الكتلة 3,500 كغ، المبلغ الجملي ........",
+      "figureDesc": "جدول بثلاثة أعمدة (ثمن 1 كغ، الكتلة، المبلغ الجملي) وثلاثة أسطر (لحم بقر، لحم ضأن، سمك)، خانات المبلغ الجملي فارغة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p063_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-ب",
+      "instruction": "احْسُبِ الثَّمَنَ الْجُمْلِيَّ لِلُّحُومِ:",
+      "body": "أسطر فارغة للإجابة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p063_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-ج",
+      "instruction": "احْسُبْ ثَمَنَ شِرَاءِ الْغِلَالِ.",
+      "body": "أسطر فارغة للإجابة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p063_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-د",
+      "instruction": "خَرَجَتْ أُمُّ طَاهِرٍ إِلَى السُّوقِ وَمَعَهَا 150 د فَكَمْ بَقِيَ لَهَا ؟",
+      "body": "أسطر فارغة للإجابة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p063_i5",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.48
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des problèmes d'achats au marché où l'on multiplie des prix décimaux par des masses décimales (14,500 d × 2,900 kg, etc.), ce qui relève de la multiplication des décimaux (Période 3), même si l'addition et la soustraction de décimaux pour le total et la monnaie rendue relèvent aussi de la Période 2.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes d'achats avec nombres décimaux",
+    "skill": "Calculer des prix totaux et une somme restante en multipliant et soustrayant des nombres décimaux dans une situation d'achat au marché.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "prix",
+      "multiplication",
+      "monnaie",
+      "soustraction",
+      "marché"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation réutilisable de courses au marché pour un repas : un tableau prix au kilo × masse donne le montant par produit, puis un total, puis la monnaie restante sur une somme donnée, avec conversion des millimes en dinars.",
+    "themeGroup": "Problèmes d'achat, vente et bénéfice"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

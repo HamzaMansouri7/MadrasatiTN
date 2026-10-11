@@ -1,0 +1,320 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 48,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول عدد 3 – الإيقاظ العلمي (السنة الثالثة): قراءة الساعة وترتيب الأحداث، الأحداث الدورية وغير الدورية",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "الاسم : / اللقب : / القسم : — اِخْتِبَار نِهَايَة الثُّلَاثِي الأَوَّل — عَدَد : 3 — الـمَادَّةُ : الإِيقَاظُ العِلْمِيُّ — الـمُسْتَوَى : السَّنَةُ الثَّالِثَةُ — الـمَعَايِيرُ : معـأ / معـب / معـج (خانات التقييم) — الأَنْشِطَةُ",
+      "figureDesc": "En-tête de l'examen : cadre avec nom, prénom, classe ; titre, numéro, matière et niveau ; colonne des critères d'évaluation (معـأ، معـب، معـج) avec cases de notation. Filigrane MOURAJAA.COM en travers de la page.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p048_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 1 / التعليمة 1",
+      "instruction": "التَّعْلِيمَةُ 1 : أُرَتِّبُ السَّاعَاتِ التَّالِيَةَ بِالأَرْقَامِ مِنْ 1 إِلَى 3 حَسَبَ تَعَاقُبِ أَحْدَاثِ النَّصِّ.",
+      "body": "السَّنَدُ 1 : يَدْرُسُ هِشَامٌ بِالسَّنَةِ الثَّالِثَةِ، وَهُوَ مُولَعٌ بِالمُطَالَعَةِ. يَوْمَ الأَحَدِ، غَادَرَ الْمَنْزِلَ عَلَى السَّاعَةِ التَّاسِعَةِ وَوَصَلَ إِلَى الْمَكْتَبَةِ الْعُمُومِيَّةِ بَعْدَ رُبُعِ سَاعَةٍ حَيْثُ بَقِيَ هُنَاكَ يُطَالِعُ وَيُدَوِّنُ مَعْلُومَاتٍ لِمُدَّةِ سَاعَتَيْنِ وَ 15 دق ثُمَّ غَادَرَهَا.",
+      "figureDesc": "Trois cases arrondies vides, avec des pointillés, à remplir par un numéro de 1 à 3. Elles sont au-dessus de trois horloges, de gauche à droite : une horloge à aiguilles indiquant 9h00 (aiguilles sur 12 et sur 9), une horloge à aiguilles dont la grande aiguille est sur 6 et la petite aiguille près de 11 (environ 11h30), et une horloge digitale 9:15. Chaque horloge a un point en dessous. Trois étiquettes arrondies ont chacune un point au-dessus, de gauche à droite : « الو[illisible]ول إِلَى الْمَكْتَبَةِ » (partiellement masqué par une tache), « مُغَادَرَةُ الْمَنْزِلِ », « مُغَادَرَةُ الْمَكْتَبَةِ ».",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p048_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أَعْتَمِدُ مُعْطَيَاتِ التَّمْرِينِ السَّابِقِ وَأَرْبُطُ بَيْنَ السَّاعَاتِ وَالأَحْدَاثِ [illisible] تُنَاسِبُهَا.",
+      "body": "",
+      "figureDesc": "Pas de figure propre. La liaison se fait par des traits entre les points situés sous les trois horloges et les points situés au-dessus des trois étiquettes d'événements de l'exercice précédent.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p048_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : أَرْبُطُ بِمَا يُنَاسِبُ.",
+      "body": "السَّنَدُ 2 : وَقَفَ هِشَامٌ قُرْبَ النَّافِذَةِ يَتَأَمَّلُ نُورَ الشَّمْسِ السَّاطِعِ :\n• شُرُوقُ الشَّمْسِ\n• نُبَاحُ الْكَلْبِ\n• حَرَكَةُ الأَرْضِ\n• حَدَثٌ غَيْرُ دَوْرِيٍّ",
+      "figureDesc": "Trois items à droite (شروق الشمس، نباح الكلب، حركة الأرض), chacun précédé d'un point, et à gauche « حدث غير دوري » précédé d'un point, à relier. Trois petites cases de notation à droite, dans la marge.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p048_i4"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "السَّنَدُ 3 : غَادَرَ هِشَامٌ الْمَكْتَبَةَ الْعُمُومِيَّةَ وَهُوَ يَقُولُ : « بَعْدَ غِذَاءِ الفِكْرِ حَانَ وَقْتُ غِذَاءِ الجِسْمِ.» وَاتَّجَهَ نَحْوَ مَحَلِّ بَيْعِ الأُكُلَاتِ الخَفِيفَةِ وَمُشْتَقَّاتِ الأَلْبَانِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p048_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u2",
+    "confidence": 0.3
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "Il s'agit d'un test de fin de trimestre en Éveil Scientifique portant sur la lecture de l'heure, l'ordre des événements et les phénomènes périodiques ou non, notions de temps qui ne correspondent exactement à aucun chapitre : sci-3-u6 (Le temps, la température et la dilatation) est le plus proche mais traite surtout de la température, et l'évaluation couvre plusieurs notions (la nutrition apparaît dans le support 3).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Lecture de l'heure et événements périodiques",
+    "skill": "Lire l'heure, ordonner des événements dans le temps et distinguer les phénomènes périodiques des non périodiques.",
+    "pageType": "exam",
+    "formats": [
+      "appariement",
+      "lecture_comprehension",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "lecture de l'heure",
+      "ordre chronologique",
+      "événements périodiques",
+      "événements non périodiques",
+      "horloges",
+      "examen trimestriel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une courte histoire d'un élève passionné de lecture, avec horloges à ordonner et à relier aux événements, puis un appariement entre phénomènes naturels, mouvement de la Terre et événements non périodiques, réutilisable pour évaluer le temps et la périodicité.",
+    "themeGroup": "Lecture de l'heure"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«نُبَاحُ الكَلْبِ» : l'image montre «نُبَاحُ الْكَلْبِ» (détail mineur de tashkeel) ; de même «حَرَكَةُ الأَرْضِ» est écrit «حَرْكَةُ/حَرَكَةُ» à vérifier : l'image montre «حَرَكَةُ الأَرْضِ»"
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Dans la transcription de la consigne 2, la description «الأولى 9:00، الثانية، الثالثة 9:15» est une interprétation inventée ; l'image montre trois horloges (9:00 analogique, 9:30 analogique, 9:15 digitale) avec des cases vides à numéroter, non décrites correctement"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les cases de numérotation pointillées (…………) au-dessus des horloges ne sont pas mentionnées, ni l'horloge du milieu indiquant 9h30 environ (aiguilles sur 6 et près de 10)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الوُصُولُ إِلَى الْمَكْتَبَةِ» : l'image montre «الوصول إلى المكتبة» partiellement masqué par une tache ; voyelles ajoutées non visibles pour «مُغَادَرَةُ» (image : «مُغَادَرَةُ») ; en-tête : «الاسم» est sans voyelles dans l'image mais «اللَّقَب» y est vocalisé"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Plusieurs voyelles ajoutées qui ne sont pas visibles dans l'image : «اِخْتِبَار نِهَايَة الثُّلَاثِي» (image : «الثُّلَاثِي»), «أُرَتِّبُ» (image : «أُرَتِّبُ»), «غِذَاءِ» et «مُولَعٌ» sont vocalisés différemment ; «الأَرْقَامِ» absent des voyelles dans l'original ; «الثُّلَاثِي» OK"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Filigrane «MOURAJAA.COM» et les repères «مع أ / مع ب / مع ج» avec cases non rendus fidèlement ; «معا1» est écrit «مع أ1»"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le السند 2 est placé après la التعليمة 3 alors que dans l'image il précède la التعليمة 3 ; السند 1 et التعليمة 1 inversés dans le bloc"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le corps de la consigne 2 contient « الربط بين الساعات (الأولى 9:00، الثانية، الثالثة 9:15) وبين الأحداث… ». Ce texte n'existe pas dans l'image. La consigne 2 n'a pas de corps propre : il n'y a que la consigne et la zone de liaison, dont les points et les étiquettes sont ceux de l'exercice 1."
+      },
+      {
+        "type": "mot invente",
+        "severity": "minor",
+        "detail": "Dans la consigne 2, « الَّتِي » a été ajouté entre « الأَحْدَاثِ » et « تُنَاسِبُهَا ». L'image montre un espace avec une petite marque à cet endroit, et le mot « التي » n'y est pas lisible. Il faut le remplacer par [illisible]."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "L'étiquette « الوُصُولُ إِلَى الْمَكْتَبَةِ » est partiellement masquée par une tache. L'image montre « الو ـ ول إلى المكتبة », avec les lettres du milieu illisibles. Il faut marquer le passage [illisible] au lieu de le reconstituer."
+      },
+      {
+        "type": "en-tete",
+        "severity": "minor",
+        "detail": "Les repères de la colonne des critères sont écrits « مع أ1 ». L'image montre « معـأ », « معـب », « معـج », avec une kashida et des cases. Le « 1 » est une confusion avec l'allongement de la lettre ; il n'y a pas de chiffre."
+      },
+      {
+        "type": "voyelles",
+        "severity": "minor",
+        "detail": "Certaines lignes d'en-tête sont vocalisées différemment de l'image : « الـمَادَّةُ » et « السَّنَةُ الثَّالِثَةُ » portent des voyelles finales dans l'image. Le détail est mineur."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "الاسم : / اللقب : / القسم : — اِخْتِبَار نِهَايَة الثُّلَاثِي الأَوَّل — عَدَد : 3 — الـمَادَّةُ : الإِيقَاظُ العِلْمِيُّ — الـمُسْتَوَى : السَّنَةُ الثَّالِثَةُ — الـمَعَايِيرُ : معـأ / معـب / معـج (خانات التقييم) — الأَنْشِطَةُ",
+      "figureDesc": "En-tête de l'examen : cadre avec nom, prénom, classe ; titre, numéro, matière et niveau ; colonne des critères d'évaluation (معـأ، معـب، معـج) avec cases de notation. Filigrane MOURAJAA.COM en travers de la page.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p048_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 1 / التعليمة 1",
+      "instruction": "التَّعْلِيمَةُ 1 : أُرَتِّبُ السَّاعَاتِ التَّالِيَةَ بِالأَرْقَامِ مِنْ 1 إِلَى 3 حَسَبَ تَعَاقُبِ أَحْدَاثِ النَّصِّ.",
+      "body": "السَّنَدُ 1 : يَدْرُسُ هِشَامٌ بِالسَّنَةِ الثَّالِثَةِ، وَهُوَ مُولَعٌ بِالمُطَالَعَةِ. يَوْمَ الأَحَدِ، غَادَرَ الْمَنْزِلَ عَلَى السَّاعَةِ التَّاسِعَةِ وَوَصَلَ إِلَى الْمَكْتَبَةِ الْعُمُومِيَّةِ بَعْدَ رُبُعِ سَاعَةٍ حَيْثُ بَقِيَ هُنَاكَ يُطَالِعُ وَيُدَوِّنُ مَعْلُومَاتٍ لِمُدَّةِ سَاعَتَيْنِ وَ 15 دق ثُمَّ غَادَرَهَا.",
+      "figureDesc": "Trois cases arrondies vides, avec des pointillés, à remplir par un numéro de 1 à 3. Elles sont au-dessus de trois horloges, de gauche à droite : une horloge à aiguilles indiquant 9h00 (aiguilles sur 12 et sur 9), une horloge à aiguilles dont la grande aiguille est sur 6 et la petite aiguille près de 11 (environ 11h30), et une horloge digitale 9:15. Chaque horloge a un point en dessous. Trois étiquettes arrondies ont chacune un point au-dessus, de gauche à droite : « الو[illisible]ول إِلَى الْمَكْتَبَةِ » (partiellement masqué par une tache), « مُغَادَرَةُ الْمَنْزِلِ », « مُغَادَرَةُ الْمَكْتَبَةِ ».",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p048_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أَعْتَمِدُ مُعْطَيَاتِ التَّمْرِينِ السَّابِقِ وَأَرْبُطُ بَيْنَ السَّاعَاتِ وَالأَحْدَاثِ [illisible] تُنَاسِبُهَا.",
+      "body": "",
+      "figureDesc": "Pas de figure propre. La liaison se fait par des traits entre les points situés sous les trois horloges et les points situés au-dessus des trois étiquettes d'événements de l'exercice précédent.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p048_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : أَرْبُطُ بِمَا يُنَاسِبُ.",
+      "body": "السَّنَدُ 2 : وَقَفَ هِشَامٌ قُرْبَ النَّافِذَةِ يَتَأَمَّلُ نُورَ الشَّمْسِ السَّاطِعِ :\n• شُرُوقُ الشَّمْسِ\n• نُبَاحُ الْكَلْبِ\n• حَرَكَةُ الأَرْضِ\n• حَدَثٌ غَيْرُ دَوْرِيٍّ",
+      "figureDesc": "Trois items à droite (شروق الشمس، نباح الكلب، حركة الأرض), chacun précédé d'un point, et à gauche « حدث غير دوري » précédé d'un point, à relier. Trois petites cases de notation à droite, dans la marge.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p048_i4"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "السَّنَدُ 3 : غَادَرَ هِشَامٌ الْمَكْتَبَةَ الْعُمُومِيَّةَ وَهُوَ يَقُولُ : « بَعْدَ غِذَاءِ الفِكْرِ حَانَ وَقْتُ غِذَاءِ الجِسْمِ.» وَاتَّجَهَ نَحْوَ مَحَلِّ بَيْعِ الأُكُلَاتِ الخَفِيفَةِ وَمُشْتَقَّاتِ الأَلْبَانِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p048_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "الاسم : / اللقب : / القسم : — اِخْتِبَار نِهَايَة الثُّلَاثِي الأَوَّل — عَدَد : 3 — الـمَادَّة : الإِيقَاظُ العِلْمِيُّ — الـمُسْتَوَى : السَّنَة الثَّالِثَة — الـمَعَايِيرُ : مع أ1 / مع ب / مع ج (خانات التقييم) — الأَنْشِطَةُ",
+      "figureDesc": "En-tête de l'examen : cadre avec nom, prénom, classe ; titre, numéro, matière et niveau ; colonne des critères d'évaluation (معأ، معاب، معاج) avec cases de notation. Filigrane MOURAJAA.COM.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_3eme_examens_p048_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 1 / التعليمة 1",
+      "instruction": "التَّعْلِيمَةُ 1 : أُرَتِّبُ السَّاعَاتِ التَّالِيَةَ بِالأَرْقَامِ مِنْ 1 إِلَى 3 حَسَبَ تَعَاقُبِ أَحْدَاثِ النَّصِّ.",
+      "body": "السَّنَدُ 1 : يَدْرُسُ هِشَامٌ بِالسَّنَةِ الثَّالِثَةِ، وَهُوَ مُولَعٌ بِالمُطَالَعَةِ. يَوْمَ الأَحَدِ، غَادَرَ الْمَنْزِلَ عَلَى السَّاعَةِ التَّاسِعَةِ وَوَصَلَ إِلَى الْمَكْتَبَةِ الْعُمُومِيَّةِ بَعْدَ رُبُعِ سَاعَةٍ حَيْثُ بَقِيَ هُنَاكَ يُطَالِعُ وَيُدَوِّنُ مَعْلُومَاتٍ لِمُدَّةِ سَاعَتَيْنِ وَ 15 دق ثُمَّ غَادَرَهَا.",
+      "figureDesc": "Trois cases vides pour numéroter (pointillés) au-dessus de trois horloges : une horloge à aiguilles indiquant 9h00, une horloge à aiguilles indiquant environ 11h30 (6 pour les minutes), une horloge digitale 9:15. En dessous, trois étiquettes à relier par points : « الوُصُولُ إِلَى الْمَكْتَبَةِ », « مُغَادَرَةُ المَنْزِلِ », « مُغَادَرَةُ المَكْتَبَةِ ».",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_3eme_examens_p048_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أَعْتَمِدُ مُعْطَيَاتِ التَّمْرِينِ السَّابِقِ وَأَرْبُطُ بَيْنَ السَّاعَاتِ وَالأَحْدَاثِ الَّتِي تُنَاسِبُهَا.",
+      "body": "الربط بين الساعات (الأولى 9:00، الثانية، الثالثة 9:15) وبين الأحداث: الوُصُولُ إِلَى الْمَكْتَبَةِ، مُغَادَرَةُ الْمَنْزِلِ، مُغَادَرَةُ الْمَكْتَبَةِ.",
+      "figureDesc": "Reliage par traits entre les horloges et les étiquettes d'événements (points de liaison).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_3eme_examens_p048_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : أَرْبُطُ بِمَا يُنَاسِبُ.",
+      "body": "السَّنَدُ 2 : وَقَفَ هِشَامٌ قُرْبَ النَّافِذَةِ يَتَأَمَّلُ نُورَ الشَّمْسِ السَّاطِعِ :\n• شُرُوقُ الشَّمْسِ\n• نُبَاحُ الكَلْبِ\n• حَرَكَةُ الأَرْضِ\n• حَدَثٌ غَيْرُ دَوْرِيٍّ",
+      "figureDesc": "Trois items à droite (شروق الشمس، نباح الكلب، حركة الأرض) avec points, et à gauche « حدث غير دوري » avec un point, à relier. Trois petites cases de notation à droite.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_3eme_examens_p048_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "السَّنَدُ 3 : غَادَرَ هِشَامٌ الْمَكْتَبَةَ الْعُمُومِيَّةَ وَهُوَ يَقُولُ : « بَعْدَ غِذَاءِ الفِكْرِ حَانَ وَقْتُ غِذَاءِ الجِسْمِ.» وَاتَّجَهَ نَحْوَ مَحَلِّ بَيْعِ الأُكُلَاتِ الخَفِيفَةِ وَمُشْتَقَّاتِ الأَلْبَانِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_3eme_examens_p048_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

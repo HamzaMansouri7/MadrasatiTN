@@ -1,0 +1,116 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 85,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 22 – آليات القسمة (4): المقسوم ذو رقمين والقاسم ذو رقم واحد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لاحظ المثال ثمّ احسب متّبعا نفس الطّريقة ما يلي :",
+      "body": "مثال: (7 : 21) + (7 : 14) = 7 : (21 + 14) ; 3 + 2 = ; 5 =. أحسب: 5 : (35 + 20) ؛ 3 : (18 + 27) ؛ 8 : (48 + 72) ؛ 9 : (72 + 36)",
+      "figureDesc": "مثال محلول مع إبراز (7 : 21) و(7 : 14) بمستطيلات صغيرة، ثم أربعة مستطيلات تحتوي على العمليات المطلوبة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p085_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ المثال ثمّ احسب متّبعا نفس الطّريقة ما يلي :",
+      "body": "مثال: 96 على 8 = 8 : (80 + 16) = (8 : 80) + (8 : 16) = 10 + 2 = 12. أحسب: 78 على 6 ؛ 84 على 7 ؛ 95 على 5 ؛ 76 على 4",
+      "figureDesc": "مثال محلول مع تبرير التفكيك، وأربعة مستطيلات تحتوي على القسمات المطلوبة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p085_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ كيفية وضع القسمة عموديًا ثمّ تتبّع نفس المراحل لحساب خارج القسمة والباقي ممّا يلي :",
+      "body": "73 على 4: المقسوم 73، القاسم 4، الخارج 18، الباقي 1؛ 4 > 1 ، 1 + (18 x 4) = 73. أنجز: 95 على 7 ؛ 86 على 6 ؛ 94 على 5 ؛ 73 على 8",
+      "figureDesc": "جدول القسمة العمودية: المقسوم 73، 33 ثم الباقي 1، القاسم 4، الخارج 18، والتحقق 4 > 1 ، 1 + (18 x 4) = 73.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p085_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "إذا كان خارج قسمة 74 على 9 هو 8. فما هو باقي هذه القسمة؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p085_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أمين وخالد ويوسف ومهدي وفراس قرّروا إثر خروجهم من المسبح قسمة 3 علب من البسكويت فيما بينهم بالتساوي.",
+      "body": "– ما هو مناب كلّ واحد إذا كانت العلبة الواحدة تحوي على 24 قطعة؟\n– كم قطعة من البسكويت بَقِيَتْ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p085_i5",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch3",
+  "topicTitle": "Période 3 : Division euclidienne, fractions et périmètres",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.63
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la division euclidienne d'un nombre à deux chiffres par un chiffre (distributivité de la division, pose verticale, quotient et reste), ce qui correspond à la Période 3.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    129
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division euclidienne à diviseur d'un chiffre",
+    "skill": "Calculer le quotient et le reste d'une division d'un nombre à deux chiffres par un nombre à un chiffre, en utilisant la décomposition additive et la disposition verticale.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "division",
+      "dividende à deux chiffres",
+      "quotient",
+      "reste",
+      "décomposition",
+      "distributivité"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Chaque exercice part d'un exemple résolu à imiter (décomposer le dividende en dizaines et unités, poser la division en colonne), puis un problème de partage équitable de boîtes de biscuits entre cinq amis après la piscine, avec recherche du reste, réutilisable comme contexte.",
+    "themeGroup": "Division euclidienne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

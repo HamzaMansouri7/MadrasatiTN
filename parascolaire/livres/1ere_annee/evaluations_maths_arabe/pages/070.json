@@ -1,0 +1,181 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 70,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "وضعية تقييمية – الرياضيات: الأعداد إلى 20 (آحاد وعشرات)، ترتيب الأعداد تصاعديا، مجموعة الفراشات ومجموعة الزهور",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "السند 1",
+      "instruction": "",
+      "body": "خَرَجَ نَادِرٌ لِلتَّجَوُّلِ فِي الْحُقُولِ صُحْبَةَ عَائِلَتِهِ، فَشَاهَدَ عَصَافِيرَ وَفَرَاشَاتٍ وَأَزْهَارًا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p070_i1",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَكْتُبُ الْعَدَدَ الْمُنَاسِبَ لِكُلِّ مَجْمُوعَةٍ فِي جَدْوَلِ الْمَنَازِلِ.",
+      "body": "ثلاث مجموعات: فراشات، أزهار، عصافير. (المعيار: معـ1 و معـ2أ)",
+      "figureDesc": "ثلاثة أشكال بيضاوية: الأول (من اليمين) يضم فراشات في ثلاثة صفوف من 3 (9 فراشات)، الثاني يضم أزهارا حمراء (حوالي 10)، الثالث يضم عصافير صفراء مرتبة في أربعة صفوف (4 و4 و4 و3، أي 15). تحت كل مجموعة جدول منازل بعمودين: عَشَرَاتٌ وآحَادٌ، فارغ ليملأه التلميذ.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_maths_arabe_p070_i2",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ تَصَاعُدِيًّا :",
+      "body": "سطر منقوط للكتابة. (المعيار: معـ2أ)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p070_i3",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 2",
+      "instruction": "",
+      "body": "اِصْطَادَ نَادِرٌ الْفَرَاشَاتِ، وَكَوَّنَ بَاقَةَ زُهُورٍ لِإِهْدَائِهَا إِلَى أُمِّهِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p070_i4",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْتُبُ كَمْ مَجْمُوعَةِ الْفَرَاشَاتِ.",
+      "body": "(المعيار: معـ1)",
+      "figureDesc": "شكل بيضاوي فيه 6 فراشات (صفان من 3) وبجانبه دائرة صغيرة فارغة لكتابة العدد.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_maths_arabe_p070_i5",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَرْسُمُ عَنَاصِرَ مَجْمُوعَةِ الزُّهُورِ.",
+      "body": "(المعيار: معـ2أ و معـ5). العدد 8 مكتوب في الدائرة الصغيرة.",
+      "figureDesc": "شكل بيضاوي كبير فيه زهرتان مرسومتان وبقية الشكل فارغ ليرسم التلميذ تمام 8 زهور؛ دائرة صغيرة فيها العدد 8.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_maths_arabe_p070_i6",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-1-p4",
+  "topicTitle": "Période 4 : Nombres de 11 à 19, tables d'addition et soustraction",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p1",
+    "confidence": 0.28
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation de mathématiques sur les nombres jusqu'à 20 (tableau des dizaines et unités, ordre croissant, ensembles), ce qui correspond à la Période 4 (nombres de 11 à 19, dizaines et unités).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 20",
+    "skill": "Lire, écrire et ordonner des nombres jusqu'à 20 en distinguant unités et dizaines, et dénombrer des collections.",
+    "pageType": "exam",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "autre"
+    ],
+    "keywords": [
+      "nombres jusqu'à 20",
+      "unités et dizaines",
+      "ordre croissant",
+      "tableau de numération",
+      "dénombrement",
+      "collections"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation d'évaluation à partir d'une sortie à la campagne (papillons, fleurs, oiseaux) : compter des collections, remplir un tableau de numération, ranger les nombres, puis dessiner une collection de taille donnée, avec des critères d'évaluation associés à chaque exercice.",
+    "themeGroup": "Nombres de 10 à 20"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de la page « وَضْعِيَّةٌ تَقْيِيمِيَّةٌ » et la matière « الرِّيَاضِيَّاتُ » sont absents. Les en-têtes « الْمَعَايِيرُ » et « الْأَنْشِطَةُ » le sont aussi."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Pied de page absent : « جسر النجاح – الثلاثي الثاني (السنة 1) », numéro de page 94, rappel « وَضْعِيَّةٌ تَقْيِيمِيَّةٌ »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes « التَّعْلِيمَةُ 1/2/3/4 » ne sont pas transcrites. Seuls les numéros [1] à [4] figurent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes des tableaux de numération « آحَادٌ » et « عَشَرَاتٌ » ne sont pas mentionnés (3 tableaux)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La description « ثلاث مجموعات: فراشات، أزهار، عصافير » est correcte quant au contenu mais ne suit pas l'ordre de l'image. Les marqueurs de critères sont ajoutés avec la forme « معـ2أ ». Sur la page, la consigne 1 porte معـ1 et معـ2أ, ce qui est plausible."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Le nombre de la consigne 4 (8) est correct, mais il est placé dans une petite pastille en bas à gauche du grand ovale. La transcription dit « الدائرة الصغيرة », ce qui est ambigu. Le cercle vide près de l'ensemble des papillons (pour la consigne 3) n'est pas mentionné."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَرْسُمُ » : la page porte « أَرْسُمُ », transcription conforme. « لِإِهْدَائِهَا » : la page montre « لِإِهْدَائِها » avec hamza, correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les images (groupes de papillons, fleurs, oiseaux ; 6 papillons ; 2 fleurs déjà dessinées) ne sont pas décrites. Cela ne pose pas de problème pour le texte, mais la mention des 2 fleurs manque."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "examTrimester": 2,
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

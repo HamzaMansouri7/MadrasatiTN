@@ -1,0 +1,124 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 14,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : le travail de Mustapha et Mohamed ; synonymes ; Chez le tailleur (vocabulaire des métiers et de la couture)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Relève, dans le texte, le passage qui décrit le travail de Mustapha :",
+      "body": "Deux lignes de pointillés pour écrire la réponse. Le texte d'appui n'est pas sur cette page.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p014_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Pourquoi Mohamed travaille-t-il avec beaucoup de courage ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p014_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Cherche dans le texte le synonyme des mots soulignés :",
+      "body": "– Mustapha construit des murs durs. (mot souligné : durs) ……\n- Les deux frères partageront la nouvelle chambre. (mot souligné : chambre) ……",
+      "figureDesc": "Une ligne de pointillés après chaque phrase.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p014_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Complète ce passage avec les mots du cadre :",
+      "body": "Cadre : tailleur – ciseaux – pantalon – fête – machine – pièces – gentil\n\nChez le tailleur\n« Voici bientôt l'Aïd, dit le père de Ali à son fils. Tu auras une veste et un pantalon neufs pour la ………………… .\nViens avec moi chez le ………………… !\n- Oh ! Que tu es ………………, papa ! »\nLes voici chez le tailleur qui apporte des ………………… de tissu. Ali regarde autour de lui.\nAvec ses grands ………………, un ouvrier taille un ………………… .\nUn autre, assis devant une ………………… à coudre, pique une veste.\n« Comme cela va vite ! » dit Ali.\nSon père l'appelle :\n« Viens choisir ton tissu, Ali ! Cette étoffe bleue n'est-elle pas jolie ? Aimes-tu mieux celle-ci ?",
+      "figureDesc": "Mots du cadre dans un encadré arrondi ; texte à trous dans un cadre rectangulaire intitulé « Chez le tailleur ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p014_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.46
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page porte sur la compréhension d'un texte sur le travail de Mustapha et Mohamed, les synonymes et le vocabulaire des métiers (tailleur), ce qui correspond au Module 1 « Travailler pour s'épanouir ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte et vocabulaire",
+    "skill": "Comprendre un texte en relevant des informations, trouver des synonymes et compléter un texte avec le vocabulaire des métiers et de la couture.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "synonymes",
+      "métiers",
+      "tailleur",
+      "vocabulaire de la couture",
+      "texte à compléter"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement classique de questions de compréhension (relever un passage, justifier un comportement), de recherche de synonymes de mots soulignés et de texte à trous avec cadre de mots, dans un contexte familier (préparatifs de l'Aïd, visite chez le tailleur) transposable à d'autres métiers.",
+    "themeGroup": "Lexique et vocabulaire"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« Lecture - Compréhension », « Sagesse », « 6ème année de base ») et le pied de page (« Lire et s'exprimer », n° 13) ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La dernière phrase du texte se termine par « Aimes-tu mieux celle-ci ? » mais la transcription omet le guillemet fermant « » ."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La note « Le texte d'appui n'est pas sur cette page » est un commentaire ajouté, absent de l'image. La question 6 est transcrite sans les tirets de la 1re ligne (« – ») ni le formatage exact, mais le contenu est correct."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,160 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 53,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الأسماء الخمسة (أبو، أخو، ذو، ...) والمفعول فيه للزمان وللمكان (النحو - السنة السادسة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1 (suite)",
+      "instruction": "",
+      "body": "التقيت بأبيك في السوق",
+      "figureDesc": "Cadre de réponse vide contenant la fin d'un énoncé de l'exercice précédent (la page commence par cette phrase).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p053_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "عوض جد بـ أبو أبا أبي وشقيق بـ أخو أخا أخي وصاحب بـ ذو ذا ذي",
+      "body": "صاحب المال محسود\nالزم جدل في كبره\nاحترم شقيقك الأكبر\nاعطف على شقيقك الصغر\nصاحب الوجهين لا يكون عند الله وجيها\nكان معلمنا صاحب فضل علينا\nصاحب العقل يشقى في النعيم بعقله وشقيق الجهالة في الشقاوة ينعم",
+      "figureDesc": "Cadre encadré contenant les phrases à transformer.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p053_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هي وظائف العناصر المسطرة في النص التالي",
+      "body": "استقبل أبو سير في بيته أخاه أبا قير وأبدى موافقته على ان يسافرا معا لم يكونا متشابهين بالمرة فأبو سير شهم لا يمكن مقارنته بـأبي قير فهو ذو خبث ودهاء",
+      "figureDesc": "Cadre encadré ; dans l'original certains mots sont soulignés (les noms des cinq noms), le soulignement n'est pas identifiable dans la transcription.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p053_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ألف ثلاث جمل تستعمل في كل منها أحد الأسماء الخمسة في محلات مختلفة",
+      "body": "",
+      "figureDesc": "Cadre vide destiné à la réponse de l'élève.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p053_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "التمييز / المراجعة",
+      "body": "للتعرف على | اسأل ؟ | مثلا\nالمفعول فيه للزمان | متى | شاهدت شرطا سينيمائيا مساء الأحد | متى شاهدت الشريط\nالمفعول فيه للمكان | أين | راجعت دروسي في الحديقة | أين راجعت دروسي ؟",
+      "figureDesc": "Tableau de révision à 3 colonnes (للتعرف على / اسأل ؟ / مثلا) et 2 lignes : complément circonstanciel de temps et de lieu. Titres de section : التمييز et المراجعة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p053_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u6",
+    "confidence": 0.21
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de grammaire arabe (les cinq noms et le complément circonstanciel de temps et de lieu), mais aucun chapitre officiel ne correspond clairement, car les unités portent sur la narration, la description, le dialogue, l'explication et la prescription.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Les cinq noms et complément circonstanciel",
+    "skill": "Employer correctement les cinq noms (أبو، أخو، ذو) selon leur fonction et identifier les compléments circonstanciels de temps et de lieu.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "autre",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "الأسماء الخمسة",
+      "المفعول فيه",
+      "grammaire arabe",
+      "fonctions grammaticales",
+      "cas de déclinaison",
+      "temps et lieu"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : remplacer un mot par le nom approprié en l'accordant à sa fonction, analyser les fonctions de mots soulignés dans un court récit de deux personnages, et rédiger des phrases variant la position grammaticale ; tableau récapitulatif avec question-test (متى / أين) pour repérer le complément de temps ou de lieu.",
+    "themeGroup": "Les cinq noms et l'annexion"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الزم جدل في كبره» : l'image indique «جدل» ? Non: l'image porte «الزم جدل»; à vérifier, sinon conforme"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«اعطف على شقيقك الصغر» : l'image porte «الصغر» (conforme à l'image, mais la forme correcte serait «الأصغر»); transcription fidèle"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres «التمرين الثاني», «التمرين الثالث», «التمرين الرابع» et «التمييز» sont visibles dans l'image mais absents de la transcription (seuls des numéros [2], [3], [4] apparaissent)"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre «المراجعة» est regroupé avec «التمييز» sous la forme «التمييز / المراجعة», ce qui est acceptable mais perd la hiérarchie"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«أسأل» dans l'image, transcrit «اسأل» (hamza manquante)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«سينيمائيا» : conforme à l'image"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«ان يسافرا» et «لم يكونا» : conformes à l'image; «لم» est précédé d'un espace sans ponctuation, fidèle"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

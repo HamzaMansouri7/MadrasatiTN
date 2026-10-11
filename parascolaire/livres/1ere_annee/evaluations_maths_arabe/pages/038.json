@@ -1,0 +1,121 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 38,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "حساب مجموع عددين صحيحين / اكتشاف العدد 10",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "7 = 4 + 3",
+      "figureDesc": "مجموعتان من الأزهار؛ الأولى تحتوي على 4 أزهار بنفسجية والثانية تحتوي على 3 أزهار حمراء ضمن مجموعة كبرى تمثل العدد 7 بأسهم توضيحية.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p038_i1",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "8",
+      "instruction": "حِسَابُ مَجْمُوعِ عَدَدَيْنِ صَحِيحَيْنِ مَجْمُوعُهُمَا أَصْغَرُ مِنْ 10 :",
+      "body": "9 = 4 + 5\n(9) = (4) + (5)\n\n9 = 2 + 3 + 4\n9 = 2 + 7\n(9) = (2) + (3) + (4)",
+      "figureDesc": "مجموعات دائرية تحتوي على علامات (X) توضح جمع وتفكيك العدد 9: مجموعة بها 4 ومجموعة بها 5، ومجموعات أخرى بها 2 و 3 و 4.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p038_i2",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "9",
+      "instruction": "اِكْتِشَافُ الْعَدَدِ 10 :",
+      "body": "عَشَرَةٌ: 10\n... 2+8 = 10 / 1+9 = 10 / 5+5 = 10\nمخطط تفكيك العدد 10:\n4+6\n5+5\n1+9\n2+2+6\n3+7\n2+3+5\n2+8\n1+4+5",
+      "figureDesc": "مخطط شعاعي مركزي يتوسطه العدد 10 محاط بمختلف الكتابات الجمعية المساوية له.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p038_i3",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "math-1-p3",
+  "topicTitle": "Période 3 : Le nombre 10, notion d'addition et formes géométriques",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p3",
+    "confidence": 0.53
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de l'addition de deux nombres dont la somme est inférieure à 10 et de la découverte du nombre 10 avec ses décompositions (compléments à 10), ce qui correspond à la Période 3.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Décompositions additives jusqu'à 10",
+    "skill": "Calculer la somme de deux ou trois nombres inférieure ou égale à 10 et découvrir le nombre 10 par ses décompositions.",
+    "pageType": "lesson",
+    "formats": [
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "addition",
+      "nombre 10",
+      "décomposition",
+      "somme",
+      "première année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le schéma de décomposition du nombre 10 en deux ou trois termes (paires complémentaires, additions à trois termes) peut être repris pour des jeux de familles de nombres, des cartes d'association ou des exercices de complétion.",
+    "themeGroup": "Décomposition des nombres jusqu'à 10"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page n'est pas transcrit : « الرِّياضِيَّاتُ » et « جسر النجاح - الثلاثي الثاني (السنة 1) », ainsi que le numéro de page 62."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le premier exercice (fleurs violettes 4 et tulipes 3, avec les cercles 4, 3 et 7) n'est pas décrit. Seul « 7 = 4 + 3 » est transcrit, et la transcription indique « réponse: None »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« مخطط تفكيك العدد 10 » est un titre ajouté. Il n'apparaît pas dans l'image, qui montre seulement le schéma en étoile autour de 10."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les expressions du schéma ne sont pas dans l'ordre de l'image, qui commence par 1+4+5 en haut à gauche. Le « 10 » central est absent de la liste."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« عَشَرَةٌ » est correctement vocalisé dans l'image. Dans « 9 = 2 + 3 + 4 », le « 9 = 2 + 7 » avec son accolade en V sous 3+4 n'est pas signalé."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

@@ -1,0 +1,345 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 68,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 37: أقسم عددا صحيحا طبيعيا على عدد آخر صحيح طبيعي والخارج عدد عشري (ملاحظة : la page est en réalité une page de mathématiques, pas de langue arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "37",
+      "instruction": "الدرس 37 : أقسم عددا صحيحا طبيعيا على عدد آخر صحيح طبيعي والخارج عدد عشري",
+      "body": "",
+      "figureDesc": "Bandeau-titre décoratif avec la mention « السنة 5 » et le numéro 5 à gauche ; numéro de page 69 en bas de la page",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p068_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "شَرَى بَائِعٌ لُعَبًا كَمَا يُبَيِّنُهَا الْجَدْوَلُ الْمُوَالِي: • أَكْمِلِ الْجَدْوَلَ عِلْمًا وَأَنَّ الْمَرَابِحَ تُسَاوِي ثُلُثَ ثَمَنِ الشِّرَاءِ.",
+      "body": "الأعمدة: السِّلَعُ | الثَّمَنُ الجُمْلِيُّ لِلشِّرَاءِ | المرابح | الثَّمَنُ الجُمْلِيُّ لِلبَيْعِ | ثمن الوحدة عند البيع. الصفوف: 10 سَيَّارَاتٍ: 36 د ؛ 15 مِزْمَارًا: 18 د ؛ 12 نَظَّارَةً لِلأَطْفَالِ: 33,120 د ؛ 6 لُعَبٍ إلكترونية: 38,880 د",
+      "figureDesc": "Tableau à 5 colonnes et 4 lignes ; seule la colonne du prix d'achat est remplie, les autres sont à compléter (points de suspension et « د »)",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p068_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اِرْبِطْ كُلَّ عَدَدٍ كَسْرِيٍّ بِالْعَدَدِ الْعَشْرِيِّ الْمُوَافِقِ لَهُ:",
+      "body": "الأعداد العشرية (يمين): 0,2 ؛ 0,25 ؛ 0,5 ؛ 0,4. الكسور (وسط يمين): 1/2 ؛ 1/5 ؛ 2/5 ؛ 1/4. الكسور (وسط يسار): 1/10 ؛ 1/100 ؛ 1/1000 ؛ 25/100. الأعداد العشرية (يسار): 0,001 ؛ 0,25 ؛ 0,1 ؛ 0,01",
+      "figureDesc": "Quatre colonnes d'items à relier par des traits : décimaux entourés d'ovales, fractions dans des cadres",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p068_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "بَاعَ تَاجِرٌ قُمَاشًا بِـ 59,500 د ثُمَّ بَاعَ بِـ 85 د مِنْ نَفْسِ النَّوْعِ بِحِسَابِ 17 د الْمِتْرِ الْوَاحِدِ. • اُحْسُبْ طُولَ الْقُمَاشِ الَّذِي بَاعَهُ؟",
+      "body": "",
+      "figureDesc": "Lignes pointillées pour la réponse",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p068_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "طُولُ مُحِيطِ حَدِيقَةٍ مُرَبَّعَةٍ 250 م. فَمَا هُوَ قِيسُ ضِلْعِهَا وَقِيسُ مِسَاحَتِهَا ؟",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p068_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "يَسْتَخْرِجُ فَلَّاحٌ مَاءً لِلرَّيِّ مِنْ بِئْرٍ عَمِيقَةٍ بِمَضَخَّةٍ طَاقَتُهَا الْمُتَوَسِّطَةُ 25 ل فِي الدَّقِيقَةِ وَيَجْمَعُهُ فِي حَابِيَةٍ لِتَوْزِيعِهِ عَلَى 8 أَحْوَاضٍ. كَمْ لِتْرًا تَسْتَخْرِجُ الْمَضَخَّةُ فِي 5 سَاعَاتٍ؟",
+      "body": "- يُوَزَّعُ الْمَاءُ الْمُسْتَخْرَجُ فِي هَذِهِ الْمُدَّةِ عَلَى 15 فَتْرَةً. كَمْ يُصِيبُ كُلَّ حَوْضٍ مِنَ الْمَاءِ فِي كُلِّ فَتْرَةٍ؟",
+      "figureDesc": "Deux lignes pointillées pour la réponse",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p068_i6"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.4
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La leçon 37 porte sur la division d'un entier par un entier avec un quotient décimal (division par un entier, conversion fractions/décimaux), ce qui correspond à la Période 3 (multiplication/division des décimaux).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division décimale d'entiers naturels",
+    "skill": "Diviser un entier naturel par un autre entier quand le quotient est un nombre décimal, et relier fractions simples et écritures décimales.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "appariement",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "division décimale",
+      "quotient décimal",
+      "fractions décimales",
+      "problèmes de vente",
+      "périmètre et aire du carré",
+      "proportionnalité"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes variées à réutiliser : tableau d'achat-revente avec bénéfice égal à une fraction du prix d'achat, appariement fractions/décimaux, longueur de tissu retrouvée à partir d'un prix unitaire, côté et aire d'un jardin carré à partir de son périmètre, partage d'un débit d'eau entre bassins et périodes.",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 1: « 15 مِرْقَابًا (مِزْمَارًا) » est inventé/ambigu; l'image montre « 15 مزمارا » (مِزْمَارًا), pas « مرقاب »; la parenthèse est ajoutée."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1: « الْمُوَالِي » dans l'image est « الْمُوَالِي » (OK), mais « الشِّرَاءِ » dans la consigne est vocalisé alors que l'image montre « الشَّرَاءِ » sans tashkeel clair; voyelles ajoutées non visibles."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1: l'en-tête de colonne « السِّلَعُ » est l'image « البِضَاعَةُ/السِّلَعُ » (illisible); « لُعَبًا » ok; « 6 لُعَبٍ إلكترونية » ok."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4: « قِيسُ » transcrit « قِيسُ ضِلْعِهَا »; l'image montre « قِيسُ ضِلْعِهَا » (قيس ضلعها) mais la forme correcte serait « ضِلْعِهَا » OK; « مُرَبَّعَةٍ » correct: image « مُرَبَّعَةٍ »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5: « الْمِضَخَّةُ/بِمِضَخَّةٍ » : l'image montre « بِمَضَخَّةٍ / الْمَضَخَّةُ » (مضخة avec fatha), pas kasra."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5: « يُوَزَّعُ » dans l'image est « يُوَزَّعُ » mais « تَسْتَخْرِجُ » ok; « كَمْ يُصِيبُ » image: « كَمْ يُصِيبُ » ok."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Titre (leçon 37) transcrit sans voyelles alors que quelques voyelles sont visibles; l'en-tête « السنة 5 » (en haut à gauche) et le numéro de page 69 ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 69 et la mention « السنة 5 » ne figurent pas dans la transcription."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 1 (corps du tableau) : « مِرْقَابًا (مِزْمَارًا) » est un mot inventé avec une parenthèse ajoutée. L'image montre seulement « 15 مِزْمَارًا »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 5 : « بِمِضَخَّةٍ » et « الْمِضَخَّةُ » portent une kasra sur le م. Le mot est « مَضَخَّة » (fatha), à corriger ici et à la fin de la consigne. La vocalisation du scan est peu lisible, d'où la gravité mineure."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page (69, en bas, partiellement estompé) n'est pas transcrit. La mention « السنة 5 » n'apparaît que dans figureDesc."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "37",
+      "instruction": "الدرس 37 : أقسم عددا صحيحا طبيعيا على عدد آخر صحيح طبيعي والخارج عدد عشري",
+      "body": "",
+      "figureDesc": "Bandeau-titre décoratif avec la mention « السنة 5 » et le numéro 5 à gauche ; numéro de page 69 en bas de la page",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p068_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "شَرَى بَائِعٌ لُعَبًا كَمَا يُبَيِّنُهَا الْجَدْوَلُ الْمُوَالِي: • أَكْمِلِ الْجَدْوَلَ عِلْمًا وَأَنَّ الْمَرَابِحَ تُسَاوِي ثُلُثَ ثَمَنِ الشِّرَاءِ.",
+      "body": "الأعمدة: السِّلَعُ | الثَّمَنُ الجُمْلِيُّ لِلشِّرَاءِ | المرابح | الثَّمَنُ الجُمْلِيُّ لِلبَيْعِ | ثمن الوحدة عند البيع. الصفوف: 10 سَيَّارَاتٍ: 36 د ؛ 15 مِزْمَارًا: 18 د ؛ 12 نَظَّارَةً لِلأَطْفَالِ: 33,120 د ؛ 6 لُعَبٍ إلكترونية: 38,880 د",
+      "figureDesc": "Tableau à 5 colonnes et 4 lignes ; seule la colonne du prix d'achat est remplie, les autres sont à compléter (points de suspension et « د »)",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p068_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اِرْبِطْ كُلَّ عَدَدٍ كَسْرِيٍّ بِالْعَدَدِ الْعَشْرِيِّ الْمُوَافِقِ لَهُ:",
+      "body": "الأعداد العشرية (يمين): 0,2 ؛ 0,25 ؛ 0,5 ؛ 0,4. الكسور (وسط يمين): 1/2 ؛ 1/5 ؛ 2/5 ؛ 1/4. الكسور (وسط يسار): 1/10 ؛ 1/100 ؛ 1/1000 ؛ 25/100. الأعداد العشرية (يسار): 0,001 ؛ 0,25 ؛ 0,1 ؛ 0,01",
+      "figureDesc": "Quatre colonnes d'items à relier par des traits : décimaux entourés d'ovales, fractions dans des cadres",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p068_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "بَاعَ تَاجِرٌ قُمَاشًا بِـ 59,500 د ثُمَّ بَاعَ بِـ 85 د مِنْ نَفْسِ النَّوْعِ بِحِسَابِ 17 د الْمِتْرِ الْوَاحِدِ. • اُحْسُبْ طُولَ الْقُمَاشِ الَّذِي بَاعَهُ؟",
+      "body": "",
+      "figureDesc": "Lignes pointillées pour la réponse",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p068_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "طُولُ مُحِيطِ حَدِيقَةٍ مُرَبَّعَةٍ 250 م. فَمَا هُوَ قِيسُ ضِلْعِهَا وَقِيسُ مِسَاحَتِهَا ؟",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p068_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "يَسْتَخْرِجُ فَلَّاحٌ مَاءً لِلرَّيِّ مِنْ بِئْرٍ عَمِيقَةٍ بِمَضَخَّةٍ طَاقَتُهَا الْمُتَوَسِّطَةُ 25 ل فِي الدَّقِيقَةِ وَيَجْمَعُهُ فِي حَابِيَةٍ لِتَوْزِيعِهِ عَلَى 8 أَحْوَاضٍ. كَمْ لِتْرًا تَسْتَخْرِجُ الْمَضَخَّةُ فِي 5 سَاعَاتٍ؟",
+      "body": "- يُوَزَّعُ الْمَاءُ الْمُسْتَخْرَجُ فِي هَذِهِ الْمُدَّةِ عَلَى 15 فَتْرَةً. كَمْ يُصِيبُ كُلَّ حَوْضٍ مِنَ الْمَاءِ فِي كُلِّ فَتْرَةٍ؟",
+      "figureDesc": "Deux lignes pointillées pour la réponse",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p068_i6"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "37",
+      "instruction": "الدرس 37 : أقسم عددا صحيحا طبيعيا على عدد آخر صحيح طبيعي والخارج عدد عشري",
+      "body": "",
+      "figureDesc": "Bandeau-titre décoratif avec le numéro 5 (السنة 5) à gauche",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p068_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "شَرَى بَائِعٌ لُعَبًا كَمَا يُبَيِّنُهَا الْجَدْوَلُ الْمُوَالِي: • أَكْمِلِ الْجَدْوَلَ عِلْمًا وَأَنَّ الْمَرَابِحَ تُسَاوِي ثُلُثَ ثَمَنِ الشِّرَاءِ.",
+      "body": "الأعمدة: السِّلَعُ | الثَّمَنُ الجُمْلِيُّ لِلشِّرَاءِ | المرابح | الثَّمَنُ الجُمْلِيُّ لِلبَيْعِ | ثمن الوحدة عند البيع. الصفوف: 10 سَيَّارَاتٍ: 36 د ؛ 15 مِرْقَابًا (مِزْمَارًا): 18 د ؛ 12 نَظَّارَةً لِلأَطْفَالِ: 33,120 د ؛ 6 لُعَبٍ إلكترونية: 38,880 د",
+      "figureDesc": "Tableau à 5 colonnes et 4 lignes ; seule la colonne du prix d'achat est remplie, les autres sont à compléter (points de suspension et « د »)",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p068_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اِرْبِطْ كُلَّ عَدَدٍ كَسْرِيٍّ بِالْعَدَدِ الْعَشْرِيِّ الْمُوَافِقِ لَهُ:",
+      "body": "الأعداد العشرية (يمين): 0,2 ؛ 0,25 ؛ 0,5 ؛ 0,4. الكسور (وسط يمين): 1/2 ؛ 1/5 ؛ 2/5 ؛ 1/4. الكسور (وسط يسار): 1/10 ؛ 1/100 ؛ 1/1000 ؛ 25/100. الأعداد العشرية (يسار): 0,001 ؛ 0,25 ؛ 0,1 ؛ 0,01",
+      "figureDesc": "Quatre colonnes d'items à relier par des traits : décimaux entourés d'ovales, fractions dans des cadres",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_ahram_5eme_complet_p068_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "بَاعَ تَاجِرٌ قُمَاشًا بِـ 59,500 د ثُمَّ بَاعَ بِـ 85 د مِنْ نَفْسِ النَّوْعِ بِحِسَابِ 17 د الْمِتْرِ الْوَاحِدِ. • اُحْسُبْ طُولَ الْقُمَاشِ الَّذِي بَاعَهُ؟",
+      "body": "",
+      "figureDesc": "Lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p068_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "طُولُ مُحِيطِ حَدِيقَةٍ مُرَبَّعَةٍ 250 م. فَمَا هُوَ قِيسُ ضِلْعِهَا وَقِيسُ مِسَاحَتِهَا ؟",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p068_i5",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "يَسْتَخْرِجُ فَلَّاحٌ مَاءً لِلرَّيِّ مِنْ بِئْرٍ عَمِيقَةٍ بِمِضَخَّةٍ طَاقَتُهَا الْمُتَوَسِّطَةُ 25 ل فِي الدَّقِيقَةِ وَيَجْمَعُهُ فِي حَابِيَةٍ لِتَوْزِيعِهِ عَلَى 8 أَحْوَاضٍ. كَمْ لِتْرًا تَسْتَخْرِجُ الْمِضَخَّةُ فِي 5 سَاعَاتٍ؟",
+      "body": "- يُوَزَّعُ الْمَاءُ الْمُسْتَخْرَجُ فِي هَذِهِ الْمُدَّةِ عَلَى 15 فَتْرَةً. كَمْ يُصِيبُ كُلَّ حَوْضٍ مِنَ الْمَاءِ فِي كُلِّ فَتْرَةٍ؟",
+      "figureDesc": "Deux lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p068_i6",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

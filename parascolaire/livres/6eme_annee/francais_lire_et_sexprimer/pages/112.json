@@ -1,0 +1,165 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 112,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations : conjugaison (passé composé, présent, futur simple) et changement de sujet",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Complète ce tableau :",
+      "body": "| Le passé composé | Le présent | Le futur |\n| :--- | :--- | :--- |\n| - .................................................... | - Le paysan a un cheval. | - .................................................... |\n| - ....................................................<br>.................................................... | - ....................................................<br>.................................................... | - La vache sera en bonne santé. |\n| - .................................................... | - Je suis heureux. | - .................................................... |\n| - Nous avons eu besoin d'un mouton. | - ....................................................<br>.................................................... | - ....................................................<br>.................................................... |\n| - .................................................... | - .................................................... | -Tu seras à l'auberge. |\n| - .................................................... | - Vous êtes intelligents | - .................................................... |\n| - .................................................... | - Ils ont une poule et une oie. | - .................................................... |",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p112_i1",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "« Le paysan prend le sac de marrons, entre dans la salle de l'auberge et met son sac devant la cheminée. »\nTransforme :",
+      "body": "- Hier, j'..........................................................................................................................\n.......................................................................................................................................\n- Hier, vous .....................................................................................................................\n.......................................................................................................................................\n- Hier, elles......................................................................................................................\n.......................................................................................................................................\n* Demain, tu.......................................................................................................................\n.......................................................................................................................................\n* Demain, elle....................................................................................................................\n.......................................................................................................................................\n* Demain, nous..................................................................................................................\n.......................................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p112_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Réécris les phrases suivantes avec les sujets indiqués :",
+      "body": "- Les gens vont à la ville. Ils font une bonne affaire.",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p112_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.33
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de conjugaison (présent, passé composé, futur simple) et de changement de sujet, qui couvre plusieurs modules (m1 présent, m2 passé composé, m3 futur simple) sans correspondre clairement à un seul chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127,
+    128
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Conjugaison : passé composé, présent, futur",
+    "skill": "Conjuguer des verbes (avoir, être, prendre, aller, faire) au passé composé, au présent et au futur simple, et adapter les phrases à un nouveau sujet.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "conjugaison",
+      "passé composé",
+      "présent",
+      "futur simple",
+      "changement de sujet",
+      "verbes avoir et être"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau à trois colonnes (passé composé, présent, futur) à compléter à partir d'une phrase donnée à un temps, et la transformation d'un court récit en changeant le sujet et le repère temporel (hier, demain), sont réutilisables avec d'autres contextes narratifs.",
+    "themeGroup": "Conjugaison"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« Les évaluations », « Sagesse », « 6ème année de base ») et le pied de page (« Lire et s'exprimer », 111) ne sont pas transcrits."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les étiquettes « (présent) », « (passé composé) » et « (futur) » devant chaque phrase du tableau sont ajoutées par la transcription. La colonne de chaque phrase est visible dans l'image, mais elle est présentée comme une étiquette."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les phrases du tableau sont regroupées par colonne et non dans leur ordre de lecture. Par exemple, « Le paysan a un cheval » puis « Je suis heureux » puis « Vous êtes intelligents » puis « Ils ont... », alors que les cases à compléter s'intercalent. L'emplacement relatif des cases vides est perdu."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans l'exercice 3, la transcription omet les lignes pointillées supplémentaires après chaque amorce (« Hier, j'... », « Hier, vous... », etc.). Il y a deux lignes par item."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Complète ce tableau :",
+      "body": "Tableau à trois colonnes : Le passé composé | Le présent | Le futur. Phrases données : (présent) « Le paysan a un cheval. » ; (présent) « Je suis heureux. » ; (présent) « Vous êtes intelligents » ; (présent) « Ils ont une poule et une oie. » ; (passé composé) « Nous avons eu besoin d'un mouton. » ; (futur) « La vache sera en bonne santé. » ; (futur) « Tu seras à l'auberge. » Les autres cases sont à compléter (lignes pointillées).",
+      "figureDesc": "Tableau de 3 colonnes sur 7 lignes environ. Certaines cases contiennent une phrase modèle, les autres sont des lignes pointillées à remplir pour conjuguer la phrase au temps demandé.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "sagesse_6eme_complet_p112_i1",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Transforme :",
+      "body": "« Le paysan prend le sac de marrons, entre dans la salle de l'auberge et met son sac devant la cheminée. » - Hier, j'........ - Hier, vous ........ - Hier, elles........ * Demain, tu........ * Demain, elle........ * Demain, nous........",
+      "figureDesc": "Lignes pointillées à compléter après chaque amorce de phrase.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p112_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Réécris les phrases suivantes avec les sujets indiqués :",
+      "body": "- Les gens vont à la ville. Ils font une bonne affaire.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "sagesse_6eme_complet_p112_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

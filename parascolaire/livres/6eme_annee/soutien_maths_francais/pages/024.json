@@ -1,0 +1,223 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 24,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Exercices de soutien – unité 2 – 6ème année (Français : grammaire, conjugaison, orthographe, lexique). La page ne contient aucun contenu de mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "Grammaire 1",
+      "instruction": "remplace les mots en gras par un pronom personnel COD ou COI :",
+      "body": "a) J'aime les fraises. - ... b) l'enfant caresse le chat. - ... c) J'aime cette sucette. - ... d) Il cloue une planche. - ... e) Il répare son vélo. - ... f) Nous racontons une histoire aux enfants. - ...",
+      "figureDesc": "Lignes pointillées pour écrire les réponses",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p024_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Grammaire 2",
+      "instruction": "Regarde l'exemple ci-dessous et pose les questions en trois manières différentes :",
+      "body": "Exp : - As-tu froid ? → Oui, j'ai froid. → Est-ce que tu as froid ? → Tu as froid ? a) ... → Ma maman va au marché. → ... → ... b) ... → je m'appelle Said. → ... → ... c) ... → la fête était formidable. → ... → ...",
+      "figureDesc": "Encadré bleu contenant l'exemple ; lignes pointillées à compléter",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p024_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 1",
+      "instruction": "conjugue les verbes suivants au passé composé :",
+      "body": "- Vous (étudier) ... bien et vous (réussir) ... facilement. - Elles (venir) ... souvent nous visiter. - Ils (venir) ... souvent nous visiter. - Tu (croire) ... que nous (avoir) ... raison. - J' (promettre) ... de dire la vérité.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p024_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 2",
+      "instruction": "conjugue les verbes suivants au futur simple de l'indicatif :",
+      "body": "- Ce soir, nous (regarder) ... des photos. - Je (semer) ... la joie partout. - Tu (aller) ... au lit et tu (s'endormir) ... - Vous (remplir) ... le vase d'eau. - Elle (conduire) ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p024_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 1",
+      "instruction": "écris cette phrase en remplaçant (Je) par (il / vous) :",
+      "body": "• J'ai évité le gaspillage alimentaire. → il ... • Je suis tellement heureux. → Vous ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p024_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 2",
+      "instruction": "écris ces phrases au pluriel :",
+      "body": "• la jeune fille a mis son casque. → ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p024_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 3",
+      "instruction": "écris ces phrases au singulier :",
+      "body": "- les écoliers de 6ème année sont allés à la salle informatique. → ... - les écoles ont organisé une journée de la citoyenneté. → ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p024_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 4",
+      "instruction": "complète par le participe passé convenable :",
+      "body": "- Maman a (remercier) ... le professeur pour ses efforts avec les élèves. - Hier, elle est (aller) ... au marché. - Elles sont (devenir) ... plus fortes. - Nous avons (prendre) ... des photos. - Ils sont (arriver) ... à l'heure.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p024_i8",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 1",
+      "instruction": "complète le tableau par ces mots :",
+      "body": "élève – protéger – se nourrir - gamin",
+      "figureDesc": "Tableau à deux lignes : Mot (écolier, enfant, défendre, manger) et Synonyme (cases vides)",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p024_i9",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 2",
+      "instruction": "classe les mots suivants dans le tableau :",
+      "body": "- je ramasse les déchets dans les poubelles. - j'attaque mes amis. - je ne moque pas de mes amis. - je jette les ordures dans ma classe.",
+      "figureDesc": "Tableau à deux colonnes : Les bons comportements / Les mauvais comportements, cases vides",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p024_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.23
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une série d'exercices de soutien de français mêlant pronoms COD/COI, types de phrases interrogatives, passé composé, futur simple, pluriel/singulier et accord du participe passé, donc plusieurs modules (m3 futur simple, m4 COD/COI, m2 passé composé) sans qu'aucun chapitre ne la couvre clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "pageType": "exercise",
+  "tags": {
+    "subject": "Français",
+    "theme": "Révisions de langue : grammaire, conjugaison, orthographe",
+    "skill": "Réviser les pronoms COD/COI, les formes interrogatives, les temps (passé composé, futur simple), les accords et le lexique de l'école et du civisme.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "pronoms COD COI",
+      "passé composé",
+      "futur simple",
+      "participe passé",
+      "transformation de phrases",
+      "lexique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Page de soutien qui regroupe de courts exercices de transformation (pronominalisation, trois formes de question, changement de personne ou de nombre) et des classements de lexique sur le thème du comportement citoyen et écologique ; la structure en mini-exercices variés est réutilisable pour une fiche de révision.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Grammaire 2 a): l'image indique « Ma maman va au marché », transcrit correctement, mais l'exemple « Oui, j'ai froid » est mis sur la même ligne que les autres flèches, sans que la structure en encadré soit signalée (mineur)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête « Exercices de soutien unité 2 - 6ème année » et « Nom et prénom de l'apprenant » ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Lexique 1 : le contenu du tableau (Mot : écolier, enfant, défendre, manger ; Synonyme : vide) n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Lexique 2 : le tableau « Les bons comportements / Les mauvais comportements » n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Conjugaison 2 : « Tu (aller) ... au lit et tu (s'endormir) ... » correct, mais les pointillés de fin de ligne ne sont pas distingués (négligeable)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Lexique 2 : « je ne moque pas de mes amis » correspond bien à l'image (la faute « je ne me moque » est dans l'original) ; aucune correction requise."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

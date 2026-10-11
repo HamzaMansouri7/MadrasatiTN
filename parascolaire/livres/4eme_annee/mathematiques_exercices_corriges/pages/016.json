@@ -1,0 +1,108 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 16,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 3 – اختبار تقويمي للتثبيت والدعم (الأعداد حتى 1000، قراءة الساعة، قطع المستقيمات، حل مسألة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اِبحث عن قيمة ج بطرُق مختلفة :",
+      "body": "أ) ........ (ثلاثة أسطر فارغة للإجابة). ب) اِكتشف قاعدة الانتظام وأكمل الفراغات بما يُناسِب من الأعداد : الجدول (من اليمين إلى اليسار): 327 ، 372 ، 417 ، 462 ، ثم أربع خانات فارغة.",
+      "figureDesc": "مخطط بيضاوي كبير يحتوي على مجموعة (أ) فيها الأعداد 320 و415 و69، وعلى مجموعات صغيرة: ب فيها 750، ج فيها نقطة (عدد مجهول)، ود مرتبطة بالعدد 1300. جدول من ثماني خانات: الأربع الأولى فارغة والبقية 462 417 372 327.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p016_i1",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أشر إلى الزمن المطلوب بِرَسْمِ العَقْرَبَيْنِ في السّاعاتِ الآتِيَةِ :",
+      "body": "السّاعة السابعة و 55 دق ؛ 16 س و 15 دق ؛ السّاعة العاشرة و 40 دق ؛ 21 س و 10 دق",
+      "figureDesc": "أربع ساعات حائطية فارغة من العقربين، تحت كل واحدة إطار فيه الزمن المطلوب.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p016_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "سمّ جميع قِطع المُستَقيمات الَّتي تُلاحِظُها عَلى الرَّسْمِ :",
+      "body": "",
+      "figureDesc": "مستقيم أفقي عليه خمس نقاط مسماة من اليمين إلى اليسار: أ، ب، ج، د، هـ.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p016_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أعد كتابة أعداد هذه المسألة مُستعينا بالحلّ المقدّم.",
+      "body": "يَمْلكُ فلّاحٌ بَقَرَةً حَلُوبًا تُوفِّرُ لهُ يوميًا ........ لِترًا مِنَ الحَليبِ. يَحْتَفِظُ بِ ........ لِتْرَاتٍ لِعَائلتِهِ وَيَبيعُ الباقي. ما هي كمّيّة الحليب التي يبيعُها خلال ........ ؟",
+      "figureDesc": "إطار يحتوي على الحل المقدم.",
+      "answer": "الحَلُّ : كَمِّيَةُ الحَليبِ الّتي يَبيعُها بِاللِّتْرِ : (28 - 3) × 7 = 175",
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p016_i4",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.41
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de consolidation (semaine 3) mélangeant nombres jusqu'à 1000, lecture de l'heure, segments de droites et résolution de problème, donc aucun chapitre officiel ne correspond précisément (les nombres à 5-6 chiffres et la mesure du temps de la période 6 ne couvrent pas l'ensemble).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    112
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 1000 et mesure du temps",
+    "skill": "Consolider la numération jusqu'à 1000, la lecture de l'heure, la désignation de segments et la reformulation d'un problème.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "schema_tableau",
+      "probleme"
+    ],
+    "keywords": [
+      "nombres jusqu'à 1000",
+      "suite régulière",
+      "lecture de l'heure",
+      "segments de droite",
+      "problème de lait",
+      "évaluation diagnostique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une page d'évaluation courte mêlant quatre compétences, avec une suite numérique à compléter en cherchant la règle, le tracé des aiguilles pour des heures données (y compris au format 24 h), le nommage de segments sur une figure, et un problème dont il faut réécrire les données manquantes à partir de la solution fournie.",
+    "themeGroup": "Numération jusqu'à 999"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

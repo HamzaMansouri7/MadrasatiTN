@@ -1,0 +1,152 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 24,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 5 – اختبار تقويمي للتثبيت والدعم (addition, longueurs, repérage dans un tableau d'appartenance, problème)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "بواسطة الأعداد الآتية أكتب العدد 258 باستعمال الجمع فقط.",
+      "body": "3 | 18 | 5 | 15 | 25 | 100 | 7 | 10 | 80 | 50",
+      "figureDesc": "Tableau d'une ligne contenant dix cases avec les nombres : 3, 18, 5, 15, 25, 100, 7, 10, 80, 50.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p024_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ضَعْ مَكَانَ الفَرَاغِ مَا يُنَاسِبُ مِنَ الأَطْوَالِ:",
+      "body": "3 هم ونصف + 7 دكم + ... م = 9 هم\n... صم − 13 دسم = 65 صم .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p024_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُرْسُمِ النُّقَطَ حَسَبَ بَيَانَاتِ جَدْوَلِ الانْتِمَاءِ :",
+      "body": "Tableau d'appartenance. Colonnes : (ص) ، (ك) ، (م) ، (ل). Lignes et croix : أ : (ص) x، (ك) x ; ب : (ص) x، (ل) x ; ج : (ل) x، (م) x، (ك) x ; د : aucune croix ; هـ : (ص) x، (م) x ; و : (ك) x.",
+      "figureDesc": "À gauche : une droite horizontale (ص) coupée par trois droites obliques (م) و (ل) و (ك) qui se croisent presque en un même point au-dessus. À droite : le tableau d'appartenance avec les croix.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p024_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اقرا الأَسْئِلَةَ الآتِيَةَ وَرَتِّبْهَا ثُمَّ أَجِبْ عَنْهَا.",
+      "body": "أَرَادَ 3 إِخْوَةٍ شِرَاءَ قَارُورَةِ عِطْرٍ لأُمِّهِمْ بِمُنَاسَبَةِ عِيدِ مِيلادِهَا. دَفَعَتْ إِيمَانُ 2 500 مي وَسَاهَمَتْ فَاطِمَةُ بِأَقَلَّ مِمَّا دَفَعَتْ إِيمَانُ بِـ 800 مي. أَمَّا أَمِينُ فَقَدْ دَفَعَ ضِعْفَ مَا دَفَعَتْهُ إِيمَانُ وَفَاطِمَةُ مَعًا. بَقِيَ لَهُمْ بَعْدَ شِرَاءِ قَارُورَةِ العِطْرِ 900 مي\n1) مَا هُوَ المَبْلَغُ الَّذِي جَمَعُوهُ ؟\n2) مَا هُوَ ثَمَنُ الهَدِيَّةِ ؟\n3) مَا هُوَ المَبْلَغُ الَّذِي سَاهَمَ بِهِ أَمِينٌ؟\n4) مَا هُوَ المَبْلَغُ الَّذِي سَاهَمَتْ بِهِ فَاطِمَةُ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p024_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.24
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de la semaine 5 mêlant addition, conversions de longueurs, tableau d'appartenance et problème à plusieurs questions, sans chapitre unique clair (les montants en millimes et les longueurs sans décimaux ne correspondent pas nettement à une seule période).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    114
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition, longueurs et problème",
+    "skill": "Réviser l'addition, les conversions de longueurs, le repérage dans un tableau d'appartenance et la résolution d'un problème en étapes.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "schema_tableau",
+      "probleme"
+    ],
+    "keywords": [
+      "addition",
+      "décomposition d'un nombre",
+      "unités de longueur",
+      "tableau d'appartenance",
+      "problème à étapes",
+      "monnaie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation de semaine combinant plusieurs types de tâches : décomposer un nombre avec des termes imposés, compléter des égalités de longueurs avec conversions, placer des points d'après un tableau à croix, et ordonner les questions d'un problème avant d'y répondre (contribution familiale pour un cadeau).",
+    "themeGroup": "Addition et soustraction"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : le texte est vocalisé dans la transcription ailleurs, mais ici il n'y a pas de voyelles ; cela correspond à l'image (non vocalisé), donc aucune erreur."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 3 : ligne أ – l'image montre des croix en (ص) et (ك) : correct. Ligne ب : croix en (ص) et (ل) : correct. Ligne ج : croix en (ل)، (م)، (ك) : correct. Ligne هـ : croix en (ص) et (م) : correct. Ligne و : croix en (ك) : correct. Aucune erreur de tableau."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 3 : la figure géométrique (trois droites (م)، (ل)، (ك) concourantes et une droite (ص) horizontale) n'est pas décrite dans la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis : « الأسبوع 5 », « اختبار تقويمي للتثبيت والدعم » et numéro de page 20."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : « 800 مي » correct ; mais « اقرا » écrit sans hamza comme dans l'image, OK. Les voyelles ajoutées à « عِيدِ » et « أَمِينٌ » diffèrent légèrement de l'image (« أَمِينُ » dans le texte, « أمين » sans tanwin dans la question 3)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « 2 500 مي » OK ; « هُوَ ثَمَنُ الهَدِيَّةِ » OK ; la transcription ajoute des voyelles à « اقرا » alors que l'ordre des phrases « اقرأ الأسئلة » est placé avant le texte, alors que dans l'image l'énoncé précède la consigne (problème d'ordre)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 4 : la consigne « اقرا الأسئلة... » apparaît dans l'image après le texte du problème et avant les questions, mais est placée avant dans la transcription."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

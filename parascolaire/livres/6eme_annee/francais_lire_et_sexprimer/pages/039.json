@@ -1,0 +1,119 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 39,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : « Sauvé par sa mère » (d'après Charles Sylvestre, Le voyage rustique)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Sauvé par sa mère\n\nLéonard traverse la cour de la ferme, entre dans la grange et prend un à un, avec douceur, les petits chiens qui viennent de naître.\nIl repousse du pied leur pauvre mère Blanchette qui veut l'en empêcher et referme la porte sur elle. Une des fenêtres de la grange est restée ouverte ; Léonard ne s'en est pas aperçu.\nLe jeune ouvrier court vers la rivière, le cœur serré. « Il fait bien froid, pense-t-il, ils mourront d'un seul coup. Je voudrais bien les garder mais M. Julien m'a ordonné de les noyer. »\nQuand Léonard arrive, il vide son panier dans l'eau. Dans le noir, il ne voit pas qu'un des chiots s'est accroché à une branche...\nBlanchette, flairant le vent, s'élance comme une folle hors de la grange. En quelques secondes, elle arrive à la rivière. Elle aperçoit, de ses yeux brillants, un de ses petits qui vit encore ; elle plonge dans l'eau et le ramène sur la rive. Elle le lèche en gémissant de douleur et de joie. Elle l'emporte dans sa gueule mais elle ne retourne pas à la grange...\nQuelques jours après, le fermier et son ouvrier, en s'approchant d'une vieille charrette abandonnée dans un coin de la ferme, sont étonnés de voir sortir d'un tas de foin le museau pointu d'un petit chien.\nLe fermier se tourne vers Léonard et lui dit sur un ton sévère : « Je t'avais pourtant dit de les noyer tous ! »\n\nD'après Charles Sylvestre « Le voyage rustique »",
+      "figureDesc": "Texte encadré avec titre en italique gras ; en-tête « Lecture - Compréhension » avec nuage décoratif, mentions « Sagesse » et « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p039_i1",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Pourquoi Léonard prend-il les chiots qui viennent de naître ?",
+      "body": "B) Compréhension : ...... (ligne de pointillés pour la réponse)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p039_i2",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Est-ce que l'ouvrier veut noyer les chiots ? Justifie ta réponse :",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p039_i3",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m4",
+  "topicTitle": "Module 4 : S'entraider pour mieux réussir",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.22
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français (« Sauvé par sa mère ») où Léonard sauve des chiots ; le thème de l'entraide et de la solidarité évoque le module 4, mais le texte n'est pas clairement rattachable à un module précis (m4 ou m5), d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    122
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Comprendre un récit en repérant les actions et les intentions des personnages, et justifier ses réponses à partir du texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "texte narratif",
+      "justification",
+      "personnages",
+      "ferme"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un texte court sur un animal en danger, suivi de questions de compréhension qui demandent d'expliquer les motivations d'un personnage et de justifier par un indice du texte, ce qui est réutilisable pour d'autres récits.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« ne retourne pas à la grange » : l'image indique « ne retourne » ; la transcription est correcte. Aucune faute de mot trouvée dans le texte principal."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de page (« Sagesse », « 6ème année de base », « Lecture - Compréhension ») et le pied de page (« Lire et s'exprimer », « 38 », « 6ème année de base ») ne sont pas transcrits."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est placé à l'intérieur de la ligne de la question 1 au lieu d'être un titre de section distinct, avant la question 1."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « Lecture - Compréhension » est absent de la transcription."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

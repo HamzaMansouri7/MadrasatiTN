@@ -1,0 +1,91 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 92,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Évaluation n°3 – Lecture : « La brebis retrouvée » (d'après C. Nigremont, Jeantou, le maçon creusois)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "La brebis retrouvée\n\nCe soir-là, le temps était très mauvais. On ne voyait rien à cause de la pluie, du vent et de la nuit qui était tombée à trois heures. Je ramenais mes moutons mais je croyais qu'il devait en manquer un. Un mouton qui manque sur trente, cela se connaît tout de suite.\nMais ce soir-là, je manquais de courage, j'étais gelé. Je croyais qu'une fois dans la maison, au chaud, tout s'arrangerait et que le mouton perdu finirait par se retrouver. C'était l'heure de se coucher, mais je ne pouvais pas dormir. Au milieu de la nuit, je suis allé réveiller ma sœur :\n- « Françoise, il y a une brebis perdue…\n- Il faut essayer de la retrouver avant le jour. »\nNous avons cherché à droite, à gauche, dans les champs, dans les chemins, dans les fossés ; toujours rien. De son côté le chien flairait partout, sans rien trouver. Tout à coup Françoise me dit :\n« Tu as gardé les moutons près de la ferme de Julien ?\n- Oui !\n- Vite à la ferme ! Le berger se couche à l'étable, allons le réveiller ! »\nLe berger avait peur, nous lui avons parlé, il nous a reconnus.\n- Ce n'est pas possible ! On vous envoie dans la nuit par ce mauvais temps !\n- N'avez-vous pas une brebis en trop ? Nous en avons perdu une.\n- Oui, une pauvre bête qui s'est trompée de troupeau. Venez la voir. Ce n'est pas la nôtre. C'est bien la vôtre ?\nNous avons remercié le berger et nous avons rapporté la brebis.\n\nD'après C. Nigremont « Jeantou, le maçon creusois »",
+      "figureDesc": "Texte encadré avec bandeau de titre « Les évaluations », « Sagesse », « 6ème année de base » ; en-tête « Évaluation n°3 ». Au verso, le texte des questions apparaît en transparence (illisible).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p092_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.18
+  },
+  "topicSubject": "Français",
+  "topicReason": "Évaluation de lecture en français sur un récit (« La brebis retrouvée », d'après Nigremont, Jeantou, le maçon creusois) dont le héros est un berger qui travaille, ce qui peut se rattacher au Module 1 « Travailler pour s'épanouir ». Le texte est tronqué et l'évaluation n'est pas clairement liée à un seul module, d'où une confiance faible.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    126
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Lire un récit et répondre à des questions pour en comprendre les événements, les personnages et le sens.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "évaluation",
+      "lecture",
+      "texte narratif",
+      "brebis",
+      "berger",
+      "compréhension"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation de récit rural (un berger qui compte son troupeau pendant une nuit de tempête) peut servir de support de lecture suivi de questions de compréhension, avec ce format d'évaluation en lecture.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est omis : « Les évaluations », « Sagesse », « 6ème année de base », « Évaluation n°3 »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est omis : « Lire et s'exprimer », « 91 », « 6ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Françoise, il y a une brebis perdue… » : dans l'image, ce dialogue s'ouvre avec « - « » et la transcription le reproduit à peu près fidèlement. Aucune faute de mot réelle n'est relevée dans le corps du texte."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

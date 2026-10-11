@@ -1,0 +1,75 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 59,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 14 – المسائل (2) : مسائل بعدة عمليات (جمع وضرب وطرح) مع النقود بالمليم والدينار",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) المخطَّط أسفله يُمْكِنُكَ أن تستخدمه لحلّ هذه المسألة. ب) اقرإ المسألة مرّة ثانية وأتمم كتابة الأعداد والعمليات المناسبة على المخطّط. ج) اكتب في الإطارات [ ] العبارات التي تشرح النّتائج التي توصّلت إليها.",
+      "body": "مع والدة إبراهيم مائة دينار. اشترت 4 سراول بـ 12 500 مي الواحد و3 أقمصة ثمن الواحد بـ 8 500 مي وغطاء صوفيًا وبقي لها 1 500 مي – احسب ثمن شراء الغطاء الصّوفيّ.",
+      "figureDesc": "مخطط بصناديق ودوائر عمليات: في الأعلى خمسة صناديق (أربعة فارغة وصندوق فيه العدد 4 وصندوق فيه 100). دائرتان للعمليتين العلويتين تؤديان إلى صندوقين، ثم دائرة تجمعهما، ثم دائرة طرح (-) مع 100، ثم دائرة أخيرة تؤدي إلى الصندوق النهائي. إطارات متقطعة للعبارات الشارحة، منها المكتوب: «ثمن السّروال والأقمصة» و«ثمن المشتريات». باقي الصناديق والإطارات فارغة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p059_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "استعن بلائحة الأثمان وبالمبلغ الممثّل بالأوراق النقديّة [10د] [20د] [20د] لكتابة مسألة لها سؤالان ثمّ أجب عن السّؤالين :",
+      "body": "جدول: الأدوات / الثّمن بالمليم — ميدعة: 11 000 ؛ حذاء: 13 700 ؛ محفظة: 7 800 ؛ سروال: 17 500 ؛ قميص: 10 000.",
+      "figureDesc": "جدول من عمودين (الأدوات، الثمن بالمليم) وخمسة أسطر، ورسومات: ميدعة، محفظة، سروال، حذاء، قميص. أوراق نقدية: 10د، 20د، 20د.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p059_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.36
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur des problèmes à plusieurs opérations avec la monnaie (millimes et dinars), thème de la Période 1 (nombres à 5 et 6 chiffres, droites et monnaie) ; le rattachement reste incertain car la multiplication à 2 chiffres de la Période 2 pourrait aussi être concernée.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes à plusieurs opérations avec monnaie",
+    "skill": "Résoudre des problèmes à plusieurs étapes (addition, multiplication, soustraction) avec des montants en millimes et dinars, à l'aide d'un schéma.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "problèmes",
+      "monnaie",
+      "millimes et dinars",
+      "multiplication",
+      "soustraction",
+      "schéma"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation d'achats multiples avec reste connu pour retrouver un prix inconnu, résolue via un schéma à compléter, et exercice de création d'un énoncé à deux questions à partir d'une liste de prix et de billets.",
+    "themeGroup": "Monnaie"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

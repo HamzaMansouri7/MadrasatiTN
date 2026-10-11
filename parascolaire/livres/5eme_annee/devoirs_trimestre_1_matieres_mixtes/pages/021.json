@@ -1,0 +1,156 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 21,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Langue arabe (قواعد اللغة) : أنواع الاسم العلم (اسم بلد، اسم حيوان، الكنية، اللقب) وأصنف الفعل الثلاثي (المجرد والمزيد، الصحيح والمعتل). Remarque : la page ne traite pas de mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أنواع الاسم العَلَم",
+      "body": "اسم بلد   تونس ، قابس ،\nاسم لحيوان   فلة ، بوبي ،\nالكنية   ما كان في أوله   أب ، أم ، ست ، وهو مركب إضافي\nكقولنا  أبوبكر ، أم البنين ، أم كلثوم ، ست البنات\nاللقب   ما يطلق على المسمى مدحا أو ذما\nكقولنا   قدم زين الشباب ، جاء الأحدب ، قرأت عن الجاحظ",
+      "figureDesc": "Page entourée d'un cadre décoratif de cercles dorés ornés d'un chevron.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p021_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أصنف الفعل الثلاثي",
+      "body": "الفعل الثلاثي المجرد و الفعل الثلاثي المزيد\nالفعل الثلاثي الصحيح و الفعل الثلاثي المعتل",
+      "figureDesc": "Titre en rouge, sous-titres en orange.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p021_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "قاعدة (إطار أزرق 1)",
+      "body": "يتكوّن الفعل الثلاثيّ المجرّد من ثلاثة أحرف أصليّة ويكون على وزن : فَعَلَ – فَعُلَ – فَعِلَ",
+      "figureDesc": "Encadré bleu avec texte bleu clair.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p021_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "قاعدة (إطار أزرق 2)",
+      "body": "يتكوّن الفعل الثلاثيّ المزيد من ثلاثة أحرف أصليّة ومن حرفٍ زائدٍ أو أكثر.",
+      "figureDesc": "Encadré bleu avec texte bleu clair.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p021_i4",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "استفادة",
+      "body": "الفعلُ المجرَّدُ هو ما كانت كلُّ أحرفِ ماضيهِ أصليّةً وليس فيها حرفٌ زائدٌ  وهو قسمانِ\nثلاثيٌّ على وزنِ فَعَلَ  دَخَلَ  أو فَعِلَ  سَمِعَ  أو فَعُلَ  ضَعُفَ\nورباعِيٌّ على وزنِ فَعْلَلَ  مثلُ  هَرْوَلَ\nالفعلُ المزيدُ هو ما زيدَ حرفٌ أو أكثرُ على أحرفِهِ الأصليَّةِ  وهو قسمانِ\nثلاثيٌّ مَزيدٌ  مثل  أقبَلَ\nورباعيٌّ مَزيدٌ  مثل  تَنَحْنَحَ",
+      "figureDesc": "Les mots الفعلُ المجرَّدُ et الفعلُ المزيدُ sont en orange ; titre « استفادة » en rouge souligné.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p021_i5",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u1",
+    "confidence": 0.3
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de grammaire arabe (types de noms propres, verbe trilatère simple/augmenté, sain/défectueux), mais les unités officielles d'arabe portent sur les types de textes (narratif, descriptif, explicatif, injonctif) et aucune ne correspond clairement à ce contenu grammatical.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Noms propres et verbes trilitères",
+    "skill": "Distinguer les types de noms propres (pays, animal, surnom, titre honorifique) et classer les verbes trilitères selon qu'ils sont nus ou augmentés, sains ou défectifs.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "nom propre",
+      "kounya",
+      "laqab",
+      "verbe trilitère",
+      "verbe nu et augmenté",
+      "verbe sain et défectif"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les catégories accompagnées d'exemples courts se prêtent à des exercices de classement ou d'appariement : trier des noms propres par type, repérer le schéma de conjugaison d'un verbe (faʿala, faʿila, faʿula), distinguer un verbe nu d'un verbe augmenté.",
+    "themeGroup": "Noms propres et verbes trilitères"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le titre «أنواع الاسم العَلَم» n'apparaît pas sur l'image : la page commence directement par «اسم بلد تونس ، قابس ،». Texte ajouté."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les étiquettes «قاعدة (إطار أزرق 1)» et «قاعدة (إطار أزرق 2)» sont inventées. L'image montre seulement deux encadrés bleus sans titre."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans l'image, l'ordre des wazn est «فَعَلَ سَمِعَ أو فَعُلَ ضَعُفَ» pour les exemples : «فَعِلَ سَمِعَ» et «فَعُلَ ضَعُفَ». La transcription est cohérente. Le tashkeel «ضَعُفَ» est correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le mot «فَعْلَلَ» est correct. L'image montre «هَرْوَلَ» avec sukun, conforme à la transcription."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel «مَزيدٌ» et «ورباعيٌّ» est correct. En revanche, «ورباعيٌّ مَزيدٌ» de l'image est bien transcrit, et «أقبَلَ» est ok. «ورباعِيٌّ» dans la première occurrence a un kasra visible, correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'image, l'ordre du premier encadré est «فَعَلَ – فَعُلَ – فَعِلَ». La transcription est correcte. Le titre «استفادة» est également correct."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

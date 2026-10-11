@@ -1,0 +1,137 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 53,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "اتحاد مجموعتين والتمثيل بالأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُكَوِّنُ إِتِّحَادَ الْمَجْمُوعَتَيْنِ وَأُمَثِّلُهُ.",
+      "body": "غَرَسَ فَلَّاحٌ 8 نَخْلَاتٍ وَ 7 زَيْتُونَاتٍ.",
+      "figureDesc": "رسم توضيحي لنخلة وشجرة زيتون، يليه إطار مستطيل فارغ مخصص لتمثيل اتحاد المجموعتين.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p053_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُعَبِّرُ عَنِ اتِّحَادِ الْمَجْمُوعَتَيْنِ.",
+      "body": "اِشْتَرَتْ أُمِّي كُؤُوسًا وَفَنَاجِينَ وَوَضَعَتْهَا فِي خِزَانَةِ الْمَوَاعِينِ.",
+      "figureDesc": "مجموعة من الفناجين (6 فناجين) ومجموعتان من كؤوس العصير (8 كؤوس + 4 كؤوس).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p053_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُنْجِزُ الْمَطْلُوبَ.",
+      "body": "طَلَبَ مِنَّا الْمُعَلِّمُ أَنْ نُكَوِّنَ مَجْمُوعَةَ مُرَبَّعَاتٍ وَمَجْمُوعَةَ مُثَلَّثَاتٍ، وَنُوَحِّدَ بَيْنَهُمَا وَنُمَثِّلَ ذَلِكَ.",
+      "figureDesc": "مجموعتان: مجموعة مربعات بها 4 مربعات والعدد المطلوب 10، ومجموعة مثلثات بها 5 مثلثات والعدد المطلوب 12.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p053_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أُكَوِّنُ كُلَّ مَجْمُوعَةٍ وَأُوَحِّدُ بَيْنَهُمَا وَأُمَثِّلُهُ لِأَجِدَ الْمَبْلَغَ الَّذِي ادَّخَرَتْهُ رَفِيقَةُ.",
+      "body": "أُنْجِزُ وَأَتَمَيَّزُ :\nادَّخَرَتْ رَفِيقَةُ مَجْمُوعَتَيْنِ مِنَ النُّقُودِ : الْأُولَى مِنْ فِئَةِ 1 مي وَالثَّانِيَةُ مِنْ فِئَةِ 5 مي.",
+      "figureDesc": "مجموعتان بيضاويتان تحتوي الأولى على 12 قطعة نقدية من فئة 1 مي مرتبطة بدائرة فارغة لكتابة العدد، والمجموعة الثانية تحتوي على قطعتين من فئة 5 مي مرتبطة بالعدد 25.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p053_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.0,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "linkStatus": "parked",
+  "linkFlags": [
+    "classify_failed"
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Réunion de deux ensembles",
+    "skill": "Former la réunion de deux ensembles d'objets, la représenter et l'exprimer avec des nombres.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "schema_tableau",
+      "calcul"
+    ],
+    "keywords": [
+      "réunion d'ensembles",
+      "addition",
+      "représentation",
+      "1ère année",
+      "monnaie",
+      "formes géométriques"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes de la vie quotidienne (plantation d'arbres, vaisselle dans un placard, formes géométriques, économies en pièces de monnaie) pour amener l'élève à former deux ensembles, les réunir et les représenter par un schéma et des nombres.",
+    "themeGroup": "Réunion d'ensembles"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4: « إِتِّحَادَ » dans la transcription, l'image porte « اِتِّحَادَ » (hamza de liaison, wasla) ; « أُمَثِّلُهُ » : l'image a « وَأُمَثِّلُهُ » (le « و » est absent dans la transcription)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4: « فَلَّاحٌ » : l'image montre « فَلَّاحٌ » avec une graphie « فَلَاحٌ » sans shadda visible ; à vérifier. « نَخْلَاتٍ » et « زَيْتُونَاتٍ » ont des voyelles correctes (image : زَيْتُونَاتٍ)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5: « كُؤُوسًا » est correct, mais « أُعَبِّرُ » devrait rester « أُعَبِّرُ » ; l'image a « أُعَبِّرُ » — pas d'erreur, mais l'ordre des phrases est inversé (la consigne vient après l'énoncé dans la page)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice final: « رَفِيقَةُ » après « ادَّخَرَتْهُ » : l'image porte « ادَّخَرَتْهُ رَفِيقَةُ » ; la transcription a « ادَّخَرَتْهُ » correct, mais « ادَّخَرَتْ رَفِيقَةُ » dans l'énoncé est correct. Le titre « أَنْجِزُ وَأَتَمَيَّزُ » est transcrit « أُنْجِزُ وَأَتَمَيَّزُ » alors que l'image montre « أَنْجِزْ وَأَتَمَيَّزْ » (impératif, avec sukun)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans les exercices 4, 5, 6 et final, la consigne (puce rouge) est placée avant l'énoncé alors qu'elle vient après dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les nombres figurant dans les illustrations (12, 10, 25) et le cercle vide ne sont pas transcrits ; numéro de page 77 et mentions latérales (الرياضيات، السنة 1، الثلاثي الثاني) omis."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

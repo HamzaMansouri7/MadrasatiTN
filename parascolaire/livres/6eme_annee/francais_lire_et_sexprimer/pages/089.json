@@ -1,0 +1,188 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 89,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Compréhension de l'écrit (texte des animaux venus à l'école), Lire et s'exprimer",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "B-1",
+      "instruction": "Pourquoi la maîtresse n'est-elle pas étonnée de voir un cheval, un chien, un cochon et une petite poule blanche dans la cour de l'école ?",
+      "body": "Trois lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p089_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-2a",
+      "instruction": "Tous les animaux sont-ils dans la cour à l'arrivée de la maîtresse ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p089_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-2b",
+      "instruction": "Justifie ta réponse :",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p089_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-3",
+      "instruction": "Qu'est-ce qui étonne le plus la maîtresse ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p089_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-4",
+      "instruction": "Pourquoi les bêtes sont-elles venues à l'école ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p089_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-5a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- La maîtresse n'a pas accepté les bêtes dans sa classe. (……………)",
+      "figureDesc": "Case ovale en pointillés à droite de la phrase pour écrire oui/non.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p089_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-5b",
+      "instruction": "Relève dans le texte le détail qui le montre :",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p089_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-6",
+      "instruction": "Peux-tu indiquer comment se rangent les élèves ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p089_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-7",
+      "instruction": "Que penses-tu des nouveaux écoliers ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p089_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.59
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page d'évaluation de compréhension de l'écrit (texte des animaux venus à l'école) sans lien clair avec un module précis ; elle relève du français, mais aucun chapitre ne correspond sans ambiguïté.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Comprendre un texte narratif en repérant des informations, en justifiant ses réponses et en donnant son opinion.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "texte narratif",
+      "justification",
+      "relevé d'indice",
+      "opinion personnelle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression de questions allant du repérage explicite (oui/non, relevé d'un détail) à l'inférence puis à l'avis personnel, à partir d'une situation amusante où des animaux viennent à l'école, réutilisable pour d'autres textes.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête et le pied de page ne sont pas transcrits : « Les évaluations », « Sagesse », « 6ème année de base », « Lire et s'exprimer », page 88, et le titre « B) Compréhension : »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "B-1 : sur l'image il y a trois lignes de pointillés, ce qui correspond à la transcription. B-3 : seulement deux lignes sont visibles, ce qui correspond aussi. Aucune erreur détectée sur ces points."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

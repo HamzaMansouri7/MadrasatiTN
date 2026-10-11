@@ -1,0 +1,119 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 81,
+  "grade": "6ème Année",
+  "subject": "Français (la page n'est pas une page de Mathématiques)",
+  "topicGuess": "Examen normalisé pour l'obtention du certificat d'études primaires, session juillet 2022, langue française (Maroc, pas Tunisie) : Compréhension de l'écrit, texte « Mon robot » de Bernard Friot. La page ne correspond pas à la description du manuel Mouayen 6ème Math.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte support",
+      "body": "J'ai un robot. Il sait tout faire. Quand j'ai des devoirs, il m'explique. Quand je joue, il m'aide. Un jour, on a construit une fusée et un satellite.\nL'après-midi, quand je rentre de l'école, il est là. Il m'attend. C'est lui qui m'ouvre la porte.\nUn jour, je suis arrivé en retard. Il m'attendait au bas de l'escalier. Quand il m'a vu, Il m'a attrapé par les épaules et il m'a secoué. Il criait : « Tu aurais pu me prévenir ! » Alors, j'ai mis mes bras autour de son cou. Il m'a soulevé et m'a emporté jusqu'à ma chambre. Je l'aime bien, mon robot.\nFRIOT Bernard, Nouvelles Histoires pressées",
+      "figureDesc": "Texte encadré. En-tête de la copie d'examen : bandeau officiel en arabe et en tifinagh (Royaume du Maroc, Ministère de l'Éducation nationale), code 3FR57P, « Examen normalisé pour l'obtention du certificat d'études primaires – session : Juillet 2022 – La langue française – Durée : 1h30 », cases Note en chiffres, Note en lettres, Nom du correcteur, Signature, volet à découper « Nom et prénom », « N° d'examen ». Mention : « *TOUTES LES RÉPONSES DOIVENT ÊTRE MENTIONNÉES SUR CETTE COPIE. »",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p081_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-a",
+      "instruction": "I- Compréhension de l'écrit : (15pts) — Quel est l'auteur de ce texte ? (0,5pt)",
+      "body": "Quel est l'auteur de ce texte ?",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p081_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-b",
+      "instruction": "De combien de paragraphes se compose le texte ? (1pt)",
+      "body": "De combien de paragraphes se compose le texte ?",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p081_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Que sait faire le robot ? (2pts)",
+      "body": "Que sait faire le robot ?",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p081_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Où le robot attendait-il l'auteur ? (2pts)",
+      "body": "Où le robot attendait - il l'auteur ?",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p081_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.15
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un examen normalisé du certificat d'études primaires (session juillet 2022, Maroc) avec compréhension de l'écrit sur « Mon robot » de Bernard Friot ; c'est une évaluation générale et non un chapitre précis du programme tunisien, donc aucun module ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit narratif",
+    "skill": "Lire un court texte et répondre à des questions de compréhension littérale (auteur, nombre de paragraphes, informations explicites).",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "examen normalisé",
+      "certificat d'études primaires",
+      "robot",
+      "questions sur le texte",
+      "Bernard Friot"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'examen réutilisable : un court texte sur un robot compagnon suivi de questions graduées et notées (identifier l'auteur, compter les paragraphes, relever ce que fait le personnage et le lieu où il attend), avec un barème précis par question.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

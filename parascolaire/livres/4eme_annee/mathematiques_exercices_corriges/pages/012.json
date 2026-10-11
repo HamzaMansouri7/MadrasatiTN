@@ -1,0 +1,116 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 12,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 2 – اختبار تقويمي للتثبيت والدعم (المقارنة بين الأعداد، أشهر السنة والسنة الكبيسة، منتصف قطعة، المسائل النقدية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضعْ مَكَان النُّقَطِ أكْبَرَ عَدَدٍ مُمْكِنٍ :",
+      "body": "٠٠٠٠٠٠٠ > 500 ؛ 900 > ٠٠٠٠٠٠٠ (الأولى: ...... < 500 والثانية: 900 > ......)",
+      "figureDesc": "Deux cadres rectangulaires contenant chacun une inégalité avec des pointillés à compléter : '...... < 500' et '900 > ......'",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p012_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اُكْتُبْ أشهر السَّنَة الَّتي عدد أيّامها 30 :",
+      "body": "",
+      "figureDesc": "Tableau d'une ligne avec 4 cases vides à remplir par les noms des mois",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p012_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اُكْتُبْ 365 أو 366 يَوْمًا فِي الْتَرْبِيعَةِ الْمُنَاسِبَةِ :",
+      "body": "سنة 1993 ؛ سنة 1996 ؛ سنة 1980 ؛ سنة 1950",
+      "figureDesc": "Tableau de 4 colonnes : en-têtes années 1993, 1996, 1980, 1950 ; la ligne du dessous est vide à remplir",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p012_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرسم نقطة \"م\" بحيث تكون \"أ\" هي منتصف النَّقْطتين \"ب\" و \"م\"",
+      "body": "",
+      "figureDesc": "Deux points marqués sur la page : 'ب' à gauche et 'أ' à droite, sur une même ligne horizontale ; espace vide pour placer le point م",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p012_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "* اقرأ المسألة وابحث عن الأعداد المناسبة ثمّ اكتبها في البطاقات الثّلاث.",
+      "body": "يملك مهدي قِطْعَتَيْنِ نَقْدِيَّتَيْنِ من فئة 1 دينار و زادته أمّه 3 قطع من فئة نصف دينار فصار يملك [      ] ابتاع 4 كرّاسات بـ 250 مي الاثْنَتَيْنِ و ومجلّة الرّياض بـ 600 مي وكتابا ثمنه [      ] ويبقي له 3 قِطَعٍ مِنْ فِئَةِ 100 مي [      ]",
+      "figureDesc": "Trois petites cartes (cases en pointillés) insérées dans le texte du problème, à remplir avec les nombres appropriés",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p012_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de mathématiques (comparaison de nombres, mois et année bissextile, milieu d'un segment, problème de monnaie en dinars et millimes) ; le chapitre 1 (nombres, droites et monnaie) est le plus proche, mais le contenu est un test de consolidation mélangeant plusieurs notions.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Comparaison, calendrier et monnaie",
+    "skill": "Comparer des nombres, identifier les mois de 30 jours et les années bissextiles, placer un milieu et résoudre un problème monétaire.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "calcul",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "comparaison de nombres",
+      "mois de l'année",
+      "année bissextile",
+      "milieu d'un segment",
+      "monnaie (dinars et millimes)"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation de consolidation à exercices courts et variés : encadrer avec le plus grand nombre possible, classer des années en 365 ou 366 jours, construire un point symétrique par rapport à un milieu, et compléter des cartes dans un problème d'achats avec pièces de monnaie.",
+    "themeGroup": "Temps et calendrier"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

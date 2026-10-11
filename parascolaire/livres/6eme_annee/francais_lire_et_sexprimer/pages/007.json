@@ -1,0 +1,146 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 7,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Julien et Thomas préparent la rentrée scolaire (phrase négative, conjugaison/reformulation selon le sujet, accord de l'adjectif, compléments de la phrase)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1-a (suite)",
+      "instruction": "(Suite de la consigne de l'exercice 1-a, non visible sur cette page)",
+      "body": "* Julien regarde avec joie le calendrier.\n-.......................................\n-.......................................\n*Thomas met dans le cartable un jeu électronique.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "francais_lire_et_sexprimer_p007_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-b",
+      "instruction": "Mets les phrases suivantes à la forme négative :",
+      "body": "- Thomas est encore content.\n.......................................\n- Julien rencontre Thomas dans le supermarché.\n.......................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p007_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "« Julien met dans son cartable ses cahiers, son stylo et sa plume d'encre. » Réécris cette phrase en commençant par :",
+      "body": "- Je.......................................\n- Tu.......................................\n- Mon voisin et moi.......................................\n- Ton cousin et toi.......................................\n- Les deux écolières.......................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p007_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Complète avec les adjectifs entre parenthèses et accorde-les :",
+      "body": "- Julien achète de (nouveau)................ vêtements ; une chemise (vert)................., un pantalon (bleu)................ et des chaussures (noir)................ .\n- La (beau)................ maîtresse gronde la fille (impoli)................ .\n- Christine est (sérieux)................, (gentil)................ et (charmant)................ .\n- L'élève (intelligent)................ a une (joli)................ ardoise (neuf)................ .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p007_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Relève dans cette phrase :",
+      "body": "« La veille de la rentrée scolaire, Julien range ses affaires avec le plus grand soin dans son cartable. »\n-Un complément essentiel : .......................................\n- Un complément de temps : .......................................\n- Un complément de lieu : .......................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p007_i5",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.31
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page porte sur des exercices de langue française (forme négative, conjugaison au présent, accord de l'adjectif, compléments de la phrase) autour de la rentrée scolaire, ce qui correspond le mieux au Module 1 (structure de la phrase et conjugaison du présent), mais le thème de la rentrée ne correspond pas clairement au titre du module, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    119
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Phrase négative et accord de l'adjectif",
+    "skill": "Transformer des phrases à la forme négative, conjuguer selon le sujet, accorder les adjectifs et identifier les compléments de la phrase.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "forme négative",
+      "conjugaison",
+      "accord de l'adjectif",
+      "compléments de phrase",
+      "rentrée scolaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un fil conducteur du quotidien (préparer sa rentrée avec un cartable et des fournitures) sert de support à plusieurs exercices de grammaire : négation, réécriture d'une phrase avec différents sujets, accord d'adjectifs et relevé de compléments.",
+    "themeGroup": "Grammaire: la phrase"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le texte « (Suite de la consigne de l'exercice 1-a, non visible sur cette page) » est ajouté et ne figure pas sur l'image ; il s'agit d'un commentaire de l'éditeur, pas du contenu de la page."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête (« Sagesse », « 6ème année de base », « Lecture - Compréhension ») et le pied de page (« Lire et s'exprimer », numéro 6) ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte fantôme (transparence du verso) est ignoré, ce qui est acceptable."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le marqueur « 3) » et les numéros d'exercices sont reformulés entre crochets, ce qui est cohérent. Le point « 2) » est conservé dans la structure."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

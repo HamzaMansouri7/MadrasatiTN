@@ -1,0 +1,81 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 22,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إنتاج كتابي – اختبار نهاية الثلاثي الثاني (عدد 3): ترتيب الأحداث وتكوين جمل ثم كتابة نص مقترحًا نهاية مناسبة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُكَوِّنُ جُمَلًا مُسْتَعِينًا بِالْأَحْدَاثِ الْمُقْتَرَحَةِ.",
+      "body": "الْأَحْدَاثُ: الْخُرُوجُ لِلتَّفَسُّحِ فِي الْحَدِيقَةِ. / خَوْفُ الْبِنْتِ مِنَ النَّحْلَةِ. / الْإِعْجَابُ بِالْوَرْدَةِ. / رُؤْيَةُ نَحْلَةٍ فَوْقَ وَرْدَةٍ. / اِمْتِصَاصُ النَّحْلَةِ لِرَحِيقِ الْوَرْدِ. / اِقْتِرَابُ النَّحْلَةِ مِنَ الْبِنْتِ. — الْأَحْدَاثُ مُرَتَّبَةً: ستة أسطر منقطة فارغة (يبدأ كل سطر بنجمة) لكتابة جملة لكل حدث. (النقاط: 0,5 لكل جملة، المجموع 3. المعيار: معـ3ـأ)",
+      "figureDesc": "جدول من عمودين: عمود «الْأَحْدَاثُ» (ستة أحداث غير مرتبة) وعمود «الْأَحْدَاثُ مُرَتَّبَةً» (ستة أسطر منقطة فارغة).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_toutes_matieres_p022_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَسْتَعِينُ بِالْجُمَلِ وَأُكَوِّنُ نَصًّا مُقْتَرِحًا نِهَايَةً مُنَاسِبَةً.",
+      "body": "خمسة أسطر منقطة فارغة لكتابة النص. (النقاط: 0,5 + 0,5 + 0,5. المعيار: معـ1ـأ ومعـاب)",
+      "figureDesc": "رسم لبنت تمشي في حديقة بين أشجار وجبل في الخلفية، وبالقرب منها على العشب نحلات وأزهار.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p022_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u5",
+    "confidence": 0.39
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Il s'agit d'un test de fin du deuxième trimestre (production écrite : ordonner des événements, former des phrases, écrire une fin), donc une évaluation générale et non un chapitre précis ; l'unité 8 (bilan de production d'écrit) est du trimestre 3 et ne correspond pas.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : ordonner des événements",
+    "skill": "Former des phrases à partir d'événements proposés, puis rédiger un court texte narratif avec une fin appropriée.",
+    "pageType": "exam",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "ordre des événements",
+      "phrases",
+      "texte narratif",
+      "fin du récit",
+      "2ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation réutilisable : une petite scène de jardin (fille, abeille, fleur) découpée en événements à transformer en phrases, puis à enchaîner dans un récit avec une fin à inventer, avec un barème par étape.",
+    "themeGroup": "Production écrite: ordonner des événements"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

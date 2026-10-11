@@ -1,0 +1,146 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 57,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التربية الإسلامية / التربية المدنية : سلوك التلاميذ في الساحة، اختبار تقييمي مع جدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "رَنَّ الْجَرَسُ مُعْلِنًا عَنْ حُلُولِ وَقْتِ الرَّاحَةِ، فَخَرَجَ التَّلَامِيذُ إِلَى السَّاحَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p057_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 5",
+      "instruction": "أُبَيِّنُ مَوْقِفِي مِنْ سُلُوكَاتِ بَعْضِ التَّلَامِيذِ بِشَطْبِ الْكَلِمَةِ الْخَاطِئَةِ، وَأُبْدِي رَأْيِي :",
+      "body": "1) فِي السَّاحَةِ يَتَجَنَّبُ التَّلَامِيذُ الْوُقُوفَ مَعَ صَدِيقِهِمْ سَامِي لِأَنَّهُ فَقِيرٌ.\n- (أُوَافِقُ) / (لَا أُوَافِقُ) / يَجِبُ ........................\n........................\n2) يَتَقَاسَمُ عَلَاءٌ لُمْجَتَهُ مَعَ صَدِيقِهِ عِنْدَمَا لَا يَجْلِبُ لُمْجَةً.\n- (أُوَافِقُ) / (لَا أُوَافِقُ) / يَجِبُ ........................\n........................\n3) يَقُومُ بَعْضُ الْأَطْفَالِ بِالْعَبَثِ بِأَزْهَارِ الْحَدِيقَةِ فِي السَّاحَةِ.\n- (أُوَافِقُ) / (لَا أُوَافِقُ) / يَجِبُ ........................\n........................",
+      "figureDesc": "نقاط على اليسار (0,5 لكل موافقة/تبرير) ومربعات تقييم المعيار مع 3 أ ومع 3 ب",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p057_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "يَحْرِصُ الْحَارِسُ عَلَى الْعِنَايَةِ بِالسَّاحَةِ وَالْمُحَافَظَةِ عَلَى نَظَافَتِهَا فَهُوَ رَجُلٌ طَيِّبٌ يُحِبُّ عَمَلَهُ وَيُخْلِصُ فِي الْقِيَامِ بِهِ وَلَا يَقُولُ إِلَّا الْحَقَّ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p057_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 6",
+      "instruction": "أُكَمِّلُ الْآيَةَ الَّتِي تَحُثُّ عَلَى قَوْلِ الْحَقِّ وَالْإِخْلَاصِ فِي الْعَمَلِ بِمَا يُنَاسِبُ :",
+      "body": "قَالَ اللَّهُ تَعَالَى : «يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ ........................» (سُورَةُ التَّوْبَةِ 119)",
+      "figureDesc": "التنقيط 1، معيار مع 2 أ",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p057_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 6",
+      "instruction": "",
+      "body": "يَقُومُ بَعْضُ التَّلَامِيذِ بِمُسَاعَدَةِ حَارِسِ الْمَدْرَسَةِ فِي جَمْعِ الْأَوْرَاقِ لِأَنَّ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ أَمَرَنَا بِذَلِكَ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p057_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 7",
+      "instruction": "أُكَمِّلُ الْحَدِيثَ بِمَا يُنَاسِبُ :",
+      "body": "قَالَ الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ : «اللَّهُ فِي عَوْنِ الْعَبْدِ ........................ ........................» (رَوَاهُ مُسْلِمٌ)",
+      "figureDesc": "التنقيط 1,5، معيار مع 2 أ، مربع تقييم واحد",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p057_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مستويات التملك × المعايير. معايير الحد الأدنى: مع1، مع2 أ، مع2 ب، مع2 ج، مع3 أ؛ معيار التميز: مع3 ب.\nانعدام التملك: 0 في كل الخانات.\nالتملك دون الأدنى: 1، 1، 1، 0,5، 0,5، 0,5.\nالتملك الأدنى: 2، 2، 2، 1، 1، 1.\nالتملك الأقصى: 3، 3,5، 3، 1,5، 1,5، 1,5.\nالشفوي: سلامة النطق من 0 إلى 1,5؛ الاسترسال من 0 إلى 1,5؛ الاستظهار الكامل من 0 إلى 1,5؛ التلاوة من 0 إلى 1,5. المجموع: 20.",
+      "figureDesc": "جدول إسناد الأعداد وجدول الشفوي، رقم الصفحة 56",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "evaluations_toutes_matieres_p057_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p2",
+    "confidence": 0.28
+  },
+  "topicSubject": "التربية الإسلامية / التربية المدنية",
+  "topicReason": "La page est une évaluation d'éducation islamique et civique (comportement dans la cour, verset, hadith, grille de notation), matière absente de la liste des chapitres officiels (arabe et mathématiques uniquement), donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Comportement dans la cour d'école",
+    "skill": "Adopter des comportements conformes aux valeurs islamiques (partage, sincérité, entraide) dans la cour de récréation et les justifier par un verset et un hadith.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "vrai_faux",
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "récréation",
+      "entraide",
+      "véracité",
+      "verset coranique",
+      "hadith",
+      "grille de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : partir d'une courte situation vécue à l'école (supports), faire barrer la mauvaise réponse pour se positionner et justifier, puis compléter un verset ou un hadith correspondant à la valeur ; la grille de notation par niveaux de maîtrise et critères est aussi un modèle d'évaluation.",
+    "themeGroup": "Comportement à l'école"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

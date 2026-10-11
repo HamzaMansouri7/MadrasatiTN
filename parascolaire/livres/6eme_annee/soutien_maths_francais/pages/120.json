@@ -1,0 +1,179 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 120,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Il ne s'agit pas de mathématiques : c'est la page 2/4 d'un devoir de français (compréhension de l'écrit et activités réflexives sur la langue, thème « Art et créativité », texte sur la musique). Le numéro de page du manuel n'est pas visible ; 2 correspond à « Page 2 sur 4 ».",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Dans quelle ville il s'est installé pour composer de la musique ? (2pts)",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p120_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Quel est le type de ce texte ? J'entoure la bonne réponse : (1.5pt)",
+      "body": "- Argumentatif   - Informatif   - Narratif   - Injonctif",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p120_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Je donne un autre titre à ce texte : (2pts)",
+      "body": "Une ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p120_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Que penses-tu de la musique en général ? (2pts)",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p120_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "II",
+      "instruction": "Activités réflexives sur la langue : (18pts)",
+      "body": "A- Lexique : (3pts)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p120_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "Je cherche dans le texte les synonymes des mots suivants : (1pt)",
+      "body": "Prodigue : ............  Heureux : ............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p120_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "J'ajoute le suffixe ou le préfixe qui convient : (1pt)",
+      "body": "Content ≠ ............ ; attentif → ............",
+      "figureDesc": "Un signe ≠ et une flèche → sont placés entre les mots et les pointillés.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p120_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "Je relève du texte quatre mots en relation avec le thème « Art et créativité » : (1pt)",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p120_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u5",
+    "confidence": 0.2
+  },
+  "topicSubject": "Français",
+  "topicReason": "Il s'agit de la page 2/4 d'un devoir de français (compréhension de l'écrit, lexique) sur le thème « Art et créativité » à propos de la musique ; cette évaluation générale ne correspond clairement à aucun module précis (le module 7 sur les loisirs créatifs et la culture est le plus proche, mais ce n'est pas assez net).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit et lexique",
+    "skill": "Comprendre un texte sur la musique, en identifier le type, donner son avis, puis enrichir son lexique (synonymes, préfixes et suffixes, champ lexical).",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite",
+      "qcm",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "type de texte",
+      "synonymes",
+      "préfixe et suffixe",
+      "champ lexical",
+      "art et créativité"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Structure classique de devoir en deux parties (questions de compréhension suivies d'activités de lexique) autour d'un thème culturel, avec barème par exercice ; peu d'originalité mais modèle d'organisation réutilisable.",
+    "themeGroup": "Lexique et vocabulaire"
+  },
+  "audit": {
+    "accuracy": 0.96,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête « N'écrivez rien dans ce cadre » et « Page 2/4 » (cadre grisé) n'est pas transcrit, ni le pied de page « Page 2 sur 4 »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions « réponse: None » et les descriptions « Deux lignes pointillées pour la réponse » ne sont pas du texte de l'image, mais des annotations de format. Elles sont acceptables."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.96
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

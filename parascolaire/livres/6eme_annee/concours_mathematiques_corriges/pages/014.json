@@ -1,0 +1,197 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 14,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مناظرة 2 سنة سادسة (فيفري 2024) : النسب المئوية (الربح والخسارة) والكسور، المدة الزمنية، المضاعفات والقسمة والمسافات",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الوضعيّة عدد 1",
+      "instruction": "1/ احسب ثمن شراء الكغ الواحد.\n2/ احسب النسبة المائويّة للخسارة في الكميّة المتبقيّة. إذا علمت أنّ ثمن البيع الجملي قدر بـ 867.16 د",
+      "body": "شرى بائع غلال كميّة من التفاح باع في المرّة الأولى 5/7 كتلتها فقبض 665 د محققا ربحا نسبته 25 % ثمن الشراء. ثمّ باع الكتلة المتبقيّة و تبلغ 76 كغ بخسارة من ثمن شرائها. (6 نقاط)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "hard",
+      "id": "concours_mathematiques_corriges_p014_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعيّة عدد 2",
+      "instruction": "",
+      "body": "انطلقت سيّارة من المدينة \"أ\" على الساعة 22 و 45 دق مرورا بالمدينتين \"ب\" و\"ج\" وصولا للمدينة \"د\". (6 نقاط)\nالمسافة الفاصلة بين \"أ\" و\"ج\" مرورا بنصف الدائرة إذا أضفنا لها 8 تصبح من مضاعفات 3 و 5 و محصورة بالكم بين 155 و 166.",
+      "figureDesc": "رسم طريق: المدينة \"أ\" (مع كلمة « مدينة » فوقها) على اليمين، طريق مائل نحو \"ب\"، ثم نصف دائرة من \"ب\" إلى \"ج\" (سهام تبيّن اتجاه السيارة)، ثم طريق مستقيم أفقي من \"ج\" إلى \"د\" طوله 251.2 كم. سيارات مرسومة على الطريق.",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "concours_mathematiques_corriges_p014_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-p3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u6",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un sujet de concours blanc (مناظرة) composé de situations-problèmes à plusieurs étapes qui mêlent pourcentages, fractions, multiples, durées et distances, ce qui correspond à la synthèse générale préparant au concours d'entrée aux collèges pilotes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Pourcentages, fractions et multiples",
+    "skill": "Résoudre des problèmes de profit et perte en pourcentage, de multiples communs, de durées et de distances.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "pourcentage",
+      "profit et perte",
+      "fractions",
+      "multiples communs",
+      "durée",
+      "distance"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de commerce de fruits où l'on retrouve prix d'achat unitaire et pourcentage de perte sur le reste, et problème de trajet avec horaire de départ et distance déduite d'un multiple commun compris dans un intervalle, utiles pour des sujets de devoir type concours.",
+    "themeGroup": "Multiples et diviseurs"
+  },
+  "audit": {
+    "accuracy": 0.82,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Situation 1 : l'énoncé (شرى بائع غلال...) est placé après les questions 1/ et 2/ ; l'ordre correct est énoncé, puis questions."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Situation 2 : la phrase « المسافة الفاصلة بين أ و ج... » apparaît avant « انطلقت سيّارة... » alors qu'elle se trouve en bas de page, après le schéma."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le schéma est omis : étiquettes مدينة, أ, ب, ج, د et la distance 251.2 كم entre د et ج. Il manque donc la donnée 251.2 كم."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre d'en-tête est omis : « مناظرة 2 سنة سادسة », « فيفري 2024 », « رياضيات », « وليد الكراي »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "« بخسارة من ثمن شرائها » : le pourcentage de la perte est absent dans l'image, donc correct ; mais « الوضعية عدد » est transcrit sans « : », et le numéro de page 1 est omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المائوية » : l'image indique « المائويّة » avec shadda et ta marbuta, la transcription écrit « المائوية » sans shadda."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الكغ » : l'image écrit « الكغ » ; correct. « محصورة بالكم » : l'image indique « بالكم » ; correct. « ربحا » : correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les signes visibles (« الوضعيّة », « ثمّ », « سيّارة », « المتبقيّة ») sont partiellement perdus : « الوضعية » est écrit sans shadda ; « المتبقية » sans shadda."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Shadda perdue : « الوضعيّة » (écrit sans shadda aux deux situations), « كميّة » (énoncé 1), « المائويّة » (question 2), « الكميّة المتبقيّة » (question 2)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Situation 2 : les champs sont inversés. La phrase « انطلقت سيّارة... » vient en premier dans l'image, puis le schéma, puis « المسافة الفاصلة... ». La transcription met la phrase du bas dans « instruction » et celle du haut dans « body »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans la description du schéma, l'étiquette « مدينة » placée au-dessus de « أ » et les étiquettes ب, ج, د ne sont pas citées. La distance 251.2 كم est bien présente."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "الوضعيّة عدد 1",
+      "instruction": "1/ احسب ثمن شراء الكغ الواحد.\n2/ احسب النسبة المائويّة للخسارة في الكميّة المتبقيّة. إذا علمت أنّ ثمن البيع الجملي قدر بـ 867.16 د",
+      "body": "شرى بائع غلال كميّة من التفاح باع في المرّة الأولى 5/7 كتلتها فقبض 665 د محققا ربحا نسبته 25 % ثمن الشراء. ثمّ باع الكتلة المتبقيّة و تبلغ 76 كغ بخسارة من ثمن شرائها. (6 نقاط)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "hard",
+      "id": "concours_math_6eme_corriges_p014_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعيّة عدد 2",
+      "instruction": "",
+      "body": "انطلقت سيّارة من المدينة \"أ\" على الساعة 22 و 45 دق مرورا بالمدينتين \"ب\" و\"ج\" وصولا للمدينة \"د\". (6 نقاط)\nالمسافة الفاصلة بين \"أ\" و\"ج\" مرورا بنصف الدائرة إذا أضفنا لها 8 تصبح من مضاعفات 3 و 5 و محصورة بالكم بين 155 و 166.",
+      "figureDesc": "رسم طريق: المدينة \"أ\" (مع كلمة « مدينة » فوقها) على اليمين، طريق مائل نحو \"ب\"، ثم نصف دائرة من \"ب\" إلى \"ج\" (سهام تبيّن اتجاه السيارة)، ثم طريق مستقيم أفقي من \"ج\" إلى \"د\" طوله 251.2 كم. سيارات مرسومة على الطريق.",
+      "answer": null,
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "concours_math_6eme_corriges_p014_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 1",
+      "instruction": "1/ احسب ثمن شراء الكغ الواحد. 2/ احسب النسبة المائوية للخسارة في الكمية المتبقية. إذا علمت أنّ ثمن البيع الجملي قدر بـ 867.16 د",
+      "body": "شرى بائع غلال كمية من التفاح باع في المرّة الأولى 5/7 كتلتها فقبض 665 د محققا ربحا نسبته 25 % ثمن الشراء. ثمّ باع الكتلة المتبقية و تبلغ 76 كغ بخسارة من ثمن شرائها. (6 نقاط)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "concours_math_6eme_corriges_p014_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 2",
+      "instruction": "المسافة الفاصلة بين \"أ\" و\"ج\" مرورا بنصف الدائرة إذا أضفنا لها 8 تصبح من مضاعفات 3 و 5 و محصورة بالكم بين 155 و 166.",
+      "body": "انطلقت سيّارة من المدينة \"أ\" على الساعة 22 و 45 دق مرورا بالمدينتين \"ب\" و\"ج\" وصولا للمدينة \"د\". (6 نقاط)",
+      "figureDesc": "رسم طريق: المدينة \"أ\" على اليمين، طريق مائل نحو \"ب\"، ثم نصف دائرة من \"ب\" إلى \"ج\" (سهام تبيّن اتجاه السيارة)، ثم طريق مستقيم أفقي من \"ج\" إلى \"د\" طوله 251.2 كم. سيارات مرسومة على الطريق.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "concours_math_6eme_corriges_p014_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "full_year",
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

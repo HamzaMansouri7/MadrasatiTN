@@ -1,0 +1,78 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 25,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Arabe (قواعد اللغة) : الفعل الصحيح والفعل المعتل وأقسامهما. Remarque : cette page traite de grammaire arabe, pas de mathématiques, bien que le manuel soit étiqueté Math Sciences.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "استفادة",
+      "body": "الفعلُ المعتَلُّ من حيثُ موقع حرفِ العلةِ فيهِ ثلاثةُ أقسامٍ\nالفعلُ المثالُ وهو الذي يبدأ بحرفِ علة\nوالفعلُ الأجوفُ وهو الذي توسَّطه حرفُ علة\nوالفعلُ الناقصُ وهو الذي ينتهي بحرفِ علة",
+      "figureDesc": "Page encadrée d'une bordure décorative de cercles jaunes ; titre rouge « استفادة » souligné.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p025_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "احـــفــظ",
+      "body": "الفِعْلُ الصَّحيحُ\nهو كُلُّ فِعْلٍ ماضٍ ليس بين أَحرُفِهِ الأَصليَّةِ حرفُ عِلَّةٍ\nدَرَسَ     جَمَعَ\n\nوالفِعْلُ المُعْتَلُّ\nهو كُلُّ فِعْلٍ ماضٍ بين أحرُفِهِ الأَصلِيَّةِ حرفُ عِلَّةٍ\nوَجَدَ\n\nالفعلُ الصحيحُ ثلاثةُ أقسامٍ\n\nصحيحٌ سالمٌ وهو كلُّ فعلٍ صحيحٍ سلِمَ من الهمزِ والتشديدِ\nسَمِعَ     فَتَحَ\nوصحيحٌ مهموزٌ وهو كلُّ فعلٍ صحيحٍ تضمنَ همزةً في أولهِ\nأكلَ   أو في وسطه   سئِمَ     سَأَلَ   أو في آخرهِ\nوصحيحٌ مشدَّدٌ\nوهو كلُّ فعلٍ صحيحٍ شُدِدَ آخرُهُ     ظَنَّ     مَدَّ",
+      "figureDesc": "Titre rouge souligné « احفظ » ; exemples de verbes disposés en lignes centrées.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p025_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u1",
+    "confidence": 0.33
+  },
+  "topicSubject": "Arabe (قواعد اللغة)",
+  "topicReason": "La page traite de la grammaire arabe (verbe sain et verbe défectueux), mais aucune des unités officielles d'arabe, centrées sur les types de textes (narratif, descriptif, explicatif, injonctif), ne correspond clairement à cette leçon de grammaire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Verbe sain et verbe défectueux",
+    "skill": "Distinguer le verbe sain du verbe à lettre faible (assimilé, creux, défectueux) selon la position de la lettre faible.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "verbe sain",
+      "verbe défectueux",
+      "lettre faible",
+      "grammaire arabe",
+      "classification des verbes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le plan de leçon en définitions courtes avec exemples de verbes au passé se prête à des exercices de classement des verbes selon leur catégorie, à un tableau récapitulatif ou à un appariement verbe-catégorie.",
+    "themeGroup": "Verbe sain et verbe défectueux"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

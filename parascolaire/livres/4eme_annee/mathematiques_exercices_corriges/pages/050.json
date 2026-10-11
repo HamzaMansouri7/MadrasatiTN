@@ -1,0 +1,277 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 50,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 12 – الشبكة (2): المقارنة بين المسالك (Quadrillage (2) : comparer des parcours)",
+  "items": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 12",
+      "body": "الشبكة (2) المقارنة بين المسالك\nصفحة 46",
+      "figureDesc": null,
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p050_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "عبِّر بكتابة سهميّة عن المسلك المرسوم انطلاقا من العقدة \"أ\" وصولا إلى العقدة \"ن\" وارسم بلون ثان أقرب مسلكٍ",
+      "body": null,
+      "figureDesc": "Quadrillage sur lequel un parcours est tracé en trait épais, du nœud « أ » (en bas à droite) vers le nœud « ن » (en haut). Le parcours part de أ, va vers la gauche, monte, va vers la droite, monte encore, puis fait un dernier court segment vers la gauche jusqu'à la colonne de « ن ». Le quadrillage permet de tracer, avec une seconde couleur, le parcours le plus court.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p050_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ الشّبكة والجدول وارسم المسلكين واكتب العدد المناسب :",
+      "body": "جدول بالأعمدة: المسلك | نقطة الانطلاق | الكتابة السّهمية للمسلك | العدد. السطر (م): نقطة الانطلاق (2 , 5)، الكتابة السهمية: ↑2 → 2 ↑3 → 2، العدد: (فارغ). السطر (ب): نقطة الانطلاق (5 , 5)، الكتابة السهمية: ↑2 → 2 ↑3 → 2، العدد: (فارغ).",
+      "figureDesc": "Quadrillage dont les axes sont gradués de 0 à 8 (horizontal, de droite à gauche : 8 7 6 5 4 3 2 1 0 vu de gauche à droite sur l'image) et de 1 à 8 (vertical). Des points portent des nombres écrits en lettres : عشرون, مائتان, سبعة (suivi de « عشرة » en dessous), ألف, ستون, تسعة, ثمانون. Tableau à compléter à droite avec les parcours (م) et (ب).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p050_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "- أرسم باللّون الأحمر انطلاقا من العقدة \"أ\" المسلك المعبّر عنه بالكتابة السّهميّة التّالية :",
+      "body": "→ ↑ → → → ↑ ↑\n- أرسم باللّون الأزرق انطلاقا من العقدة \"أ\" المسلك المعبّر عنه بالكتابة السّهميّة التّالية :\n↑2 → ↑ →3\n- قارن بين المسلكين.",
+      "figureDesc": "Quadrillage vierge avec le point de départ « أ » (الانطلاق) marqué en bas à gauche. Deux tableaux de flèches, reproduits dans l'ordre visuel gauche→droite de l'image : le premier avec 7 cases (→ ↑ → → → ↑ ↑), le second avec 4 cases (↑2, →, ↑, →3).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_corriges_p050_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u6",
+    "confidence": 0.43
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur le repérage dans un quadrillage et la comparaison de parcours (écriture fléchée, plus court chemin), une notion de mathématiques (organisation et gestion de données) qui ne correspond clairement à aucun des chapitres officiels listés (nombres, multiplication, division, décimaux, triangles/symétrie, mesures).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    120
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Quadrillage et parcours fléchés",
+    "skill": "Coder et décoder un parcours sur un quadrillage par une écriture fléchée, puis comparer des parcours selon leur longueur.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "autre"
+    ],
+    "keywords": [
+      "quadrillage",
+      "parcours",
+      "écriture fléchée",
+      "repérage",
+      "comparaison de longueurs",
+      "plus court chemin"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation réutilisable : coder un parcours en flèches (avec répétitions comme ↑2), le tracer en couleurs différentes sur une grille, trouver le chemin le plus court et compléter un tableau (départ, codage, nombre de pas).",
+    "themeGroup": "Quadrillage et parcours"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « الأسبوع 12 » et le titre « الشبكة (2) المقارنة بين المسالك »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 46 est absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les étiquettes de la grille de l'exercice 2 ne sont pas transcrites : عشرون، مائتان، سبعة عشر (ou « سبعة عشرة »), ألف، ستون، ثمانون، تسعة, ainsi que les graduations 0 à 8 sur les axes."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les mentions « ن », « أ » (exercice 1) et « الانطلاق » (exercice 3) figurant sur les grilles ne sont pas transcrites."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans l'exercice 1, « مسلك » est écrit sans tashkeel alors que le mot est vocalisé dans l'image (« مسلكٍ »)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'exercice 1, « المسلك المرسوم » est transcrit avec un tashkeel partiel, et la ligne « وارسم بلون ثان أقرب مسلك » est reprise sans ses marques visibles."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'exercice 3, l'ordre des flèches du tableau est en lecture gauche-droite alors que la lecture est en arabe (droite-gauche) ; il faudrait préciser le sens."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'exercice 2, l'en-tête de colonne « الكتابة السهمية للمسلك » a perdu sa vocalisation (« السّهمية ») alors qu'elle est visible."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête « الأسبوع 12 » et le titre « الشبكة (2) المقارنة بين المسالك » sont bien visibles dans l'image mais absents de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 46 » (en bas, dans un cadre) est visible et absent de la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2, figureDesc : l'étiquette « سهمة (?) » est fausse. L'image montre « سبعة », sur la ligne 5 près de la colonne 1, suivie de « عشرة » juste en dessous. Il s'agit probablement de « سبعة عشر » écrit sur deux lignes."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « أقرب مسلكٍ » porte un tanwin kasr visible sur le kaf (« مسلكٍ »). La transcription l'a perdu et a ajouté un point final qui n'est pas dans l'image. De plus, cette phrase fait partie de la consigne et non d'un corps séparé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'en-tête de colonne est écrit « الكتابة السّهمية للمسلك » avec une shadda visible sur le sīn. La transcription a perdu cette shadda."
+      },
+      {
+        "type": "description",
+        "severity": "minor",
+        "detail": "Exercice 1, figureDesc : le tracé épais fait gauche, haut, droite, haut, puis une dernière courte portion vers la gauche, qui rejoint la colonne de « ن ». La description omettait ce dernier segment."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 12",
+      "body": "الشبكة (2) المقارنة بين المسالك\nصفحة 46",
+      "figureDesc": null,
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p050_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "عبِّر بكتابة سهميّة عن المسلك المرسوم انطلاقا من العقدة \"أ\" وصولا إلى العقدة \"ن\" وارسم بلون ثان أقرب مسلكٍ",
+      "body": null,
+      "figureDesc": "Quadrillage sur lequel un parcours est tracé en trait épais, du nœud « أ » (en bas à droite) vers le nœud « ن » (en haut). Le parcours part de أ, va vers la gauche, monte, va vers la droite, monte encore, puis fait un dernier court segment vers la gauche jusqu'à la colonne de « ن ». Le quadrillage permet de tracer, avec une seconde couleur, le parcours le plus court.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p050_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ الشّبكة والجدول وارسم المسلكين واكتب العدد المناسب :",
+      "body": "جدول بالأعمدة: المسلك | نقطة الانطلاق | الكتابة السّهمية للمسلك | العدد. السطر (م): نقطة الانطلاق (2 , 5)، الكتابة السهمية: ↑2 → 2 ↑3 → 2، العدد: (فارغ). السطر (ب): نقطة الانطلاق (5 , 5)، الكتابة السهمية: ↑2 → 2 ↑3 → 2، العدد: (فارغ).",
+      "figureDesc": "Quadrillage dont les axes sont gradués de 0 à 8 (horizontal, de droite à gauche : 8 7 6 5 4 3 2 1 0 vu de gauche à droite sur l'image) et de 1 à 8 (vertical). Des points portent des nombres écrits en lettres : عشرون, مائتان, سبعة (suivi de « عشرة » en dessous), ألف, ستون, تسعة, ثمانون. Tableau à compléter à droite avec les parcours (م) et (ب).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p050_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "- أرسم باللّون الأحمر انطلاقا من العقدة \"أ\" المسلك المعبّر عنه بالكتابة السّهميّة التّالية :",
+      "body": "→ ↑ → → → ↑ ↑\n- أرسم باللّون الأزرق انطلاقا من العقدة \"أ\" المسلك المعبّر عنه بالكتابة السّهميّة التّالية :\n↑2 → ↑ →3\n- قارن بين المسلكين.",
+      "figureDesc": "Quadrillage vierge avec le point de départ « أ » (الانطلاق) marqué en bas à gauche. Deux tableaux de flèches, reproduits dans l'ordre visuel gauche→droite de l'image : le premier avec 7 cases (→ ↑ → → → ↑ ↑), le second avec 4 cases (↑2, →, ↑, →3).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "math_solutions_4eme_sellami_p050_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "عبِّر بكتابة سهميّة عن المسلك المرسوم انطلاقا من العقدة \"أ\" وصولا إلى العقدة \"ن\"",
+      "body": "وارسم بلون ثان أقرب مسلك.",
+      "figureDesc": "Quadrillage sur lequel un parcours est tracé en trait épais, du nœud « أ » (en bas à droite) vers le nœud « ن » (en haut). Le parcours part de أ, va vers la gauche, monte, puis va vers la droite et monte encore. Le quadrillage est vierge pour tracer le parcours le plus court avec une seconde couleur.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p050_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ الشّبكة والجدول وارسم المسلكين واكتب العدد المناسب :",
+      "body": "جدول بالأعمدة: المسلك | نقطة الانطلاق | الكتابة السهمية للمسلك | العدد. السطر (م): نقطة الانطلاق (2 , 5)، الكتابة السهمية: ↑2 → 2 ↑3 → 2، العدد: (فارغ). السطر (ب): نقطة الانطلاق (5 , 5)، الكتابة السهمية: ↑2 → 2 ↑3 → 2، العدد: (فارغ).",
+      "figureDesc": "Quadrillage dont les axes sont gradués de 0 à 8 (horizontal, de droite à gauche : 8 7 6 5 4 3 2 1 0) et de 1 à 8 (vertical). Des points portent des nombres écrits en lettres : عشرون, مائتان, سهمة (?) , ألف, ستون, عشرة, تسعة, ثمانون. Tableau à compléter à droite avec les parcours (م) et (ب).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p050_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "- أرسم باللّون الأحمر انطلاقا من العقدة \"أ\" المسلك المعبّر عنه بالكتابة السّهميّة التّالية :",
+      "body": "→ ↑ → → → ↑ ↑\n- أرسم باللّون الأزرق انطلاقا من العقدة \"أ\" المسلك المعبّر عنه بالكتابة السّهميّة التّالية :\n↑2 → ↑ →3\n- قارن بين المسلكين.",
+      "figureDesc": "Quadrillage vierge avec le point de départ « أ » (الانطلاق) marqué en bas à gauche. Deux tableaux de flèches: le premier avec 7 cases (→ ↑ → → → ↑ ↑), le second avec 4 cases (↑2, →, ↑, →3).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p050_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

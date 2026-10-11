@@ -1,0 +1,96 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 69,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "Note : la page est en français (matière « l'écrit », 3ème année), pas en arabe. Examen du 1er trimestre N°3 : Amélie, la routine du matin (salle de bains, toilette, vêtements)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Séquence 1 : il est sept heures, amélie se réveille. maintenant, où est-elle ? 1- je regarde le dessin et je barre ce qui est faux :",
+      "body": "amélie est dans le salon.\namélie est dans la salle de bains.\namélie est dans le jardin.",
+      "figureDesc": "Dessin en noir et blanc : une petite fille s'essuie le visage avec une serviette dans une salle de bains (miroir, lavabo, douche, rideau).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "examens_toutes_matieres_p069_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Séquence 2 : que fait amélie dans la salle de bains ? 2- je relie par une flèche :",
+      "body": "amélie se lave le visage.\namélie se brosse les dents.\namélie se peigne les cheveux.",
+      "figureDesc": "Trois dessins dans la salle de bains : (1) la fille se brosse les dents, debout près du lavabo ; (2) la fille penchée sur le lavabo se lave le visage ; (3) la fille devant le miroir, avec son reflet visible.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p069_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Séquence 3 : ensuite, la petite fille rentre dans sa chambre. elle s'habille. elle met un pantalon, une chemise et des chaussures. 3- j'entoure les vêtements d'amélie :",
+      "body": "Cinq images de vêtements à entourer : chemisier, jupe, pantalon, robe, chaussures.",
+      "figureDesc": "Rangée de cinq images : un chemisier à manches courtes, une jupe, un pantalon à motifs de fleurs, une robe, une paire de chaussures plates à nœud.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p069_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Français (l'écrit)",
+  "topicReason": "La page est un examen du 1er trimestre en français (l'écrit, compréhension d'une routine du matin) et la liste officielle ne contient aucun chapitre de français : les unités arabes, les mathématiques et l'éveil scientifique ne correspondent pas.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "La routine du matin d'Amélie",
+    "skill": "Comprendre un court texte illustré et repérer des actions quotidiennes et des vêtements à partir de dessins.",
+    "pageType": "exam",
+    "formats": [
+      "vrai_faux",
+      "appariement",
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "routine du matin",
+      "salle de bains",
+      "toilette",
+      "vêtements",
+      "verbes pronominaux"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une journée racontée en séquences, chacune accompagnée d'une consigne différente (barrer l'intrus, relier action et image, entourer des objets), à adapter à d'autres moments de la journée ou à d'autres personnages.",
+    "themeGroup": "La routine quotidienne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

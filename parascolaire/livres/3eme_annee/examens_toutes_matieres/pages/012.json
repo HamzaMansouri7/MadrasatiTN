@@ -1,0 +1,319 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 12,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول – عدد 1 – قواعد اللغة (علامات الوقف والفصل بين الجمل، تكوين جمل مفيدة، أدوات الربط، الضمائر)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَقْرَأُ النَّصَّ قِرَاءَةً وَاعِيَةً ثُمَّ أَفْصِلُ بَيْنَ جُمَلِهِ بِـ ( / ).",
+      "body": "- لَمَّا فَتَحَ نَبِيلٌ الثَّلَّاجَةَ تَرَاجَعَ الْمِسْكِينُ إِلَى الْوَرَاءِ مُنْدَهِشًا وَفَاضَتْ عَيْنَاهُ بِالدُّمُوعِ.",
+      "figureDesc": "على اليسار نقاط التقييم 0,5 / 0,5 / 0,5 وعلى اليمين ثلاث خانات للمعيار (معـ1أ).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p012_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبُطُ بَيْنَ الْمُفْرَدَاتِ التَّالِيَةِ لِأَتَحَصَّلَ عَلَى جُمَلٍ مُفِيدَةٍ :",
+      "body": "العمود الأول (من اليمين): أَهْمَلَ • / إِنْتَابَ • / قَرَّرَ •\nالعمود الثاني: الْأَبُ • / الْغَضَبُ • / نَبِيلٌ •\nالعمود الثالث: دُرُوسَهُ • / الْأُمَّ • / ذَبْحَ الْحَمَامَتَيْنِ •",
+      "figureDesc": "ثلاثة أعمدة من الكلمات تتقدمها نقاط للربط بخطوط؛ علامة مائية MOURAJAA.COM؛ نقاط 0,5 لكل ربط؛ معيار معـ1ب.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p012_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكْمِلُ الْجُمَلَ التَّالِيَةَ بِمَا يُنَاسِبُ لِيَكْتَمِلَ الْمَعْنَى.",
+      "body": "• ........ الصَّبِيُّ نَبِيلٌ بِالْحُزْنِ.\n• عَاتَبَتْ ........ وَلَدَهَا.\n• اِعْتَذَرَ الطِّفْلُ الصَّغِيرُ ........ .",
+      "figureDesc": "أسطر منقطة للإكمال؛ نقاط 0,5 لكل جملة (معـ1ج).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p012_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَسْتَعِينُ بِجُمَلِ التَّمْرِينِ (2) وَأُكَوِّنُ فِقْرَةً مَعَ حُسْنِ اسْتِعْمَالِ أَدَوَاتِ الرَّبْطِ.",
+      "body": "الْفِقْرَةُ :",
+      "figureDesc": "أسطر منقطة للكتابة؛ سلم تنقيط 0 / 0,5 / 1 / 1,5 / 2 / 2,5 وشبكة معايير (معـ2أ).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p012_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَرْبُطُ كُلَّ جُمْلَةٍ بِالضَّمِيرِ الْمُنَاسِبِ.",
+      "body": "- شَرَيْتُنَّ قِصَصًا كَثِيرَةً.\n- لَخَّصْنَ أَحْدَاثَ الْقِصَّةِ.\n- ذَهَبْنَا إِلَى الْمَكْتَبَةِ الْعُمُومِيَّةِ.\nالضمائر: نَحْنُ • / هُنَّ • / أَنْتُنَّ •",
+      "figureDesc": "عمود جمل وعمود ضمائر بنقاط للربط؛ نقاط 0,5 لكل ربط (معـ2ب).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p012_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u8",
+    "confidence": 0.28
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de premier trimestre (اختبار نهاية الثلاثي الأول) en grammaire arabe (ponctuation, construction de phrases, connecteurs, pronoms) qui couvre plusieurs notions, sans correspondre précisément à un seul chapitre ; le texte sur Nabil et les personnages évoque l'unité 1 mais ne suffit pas, d'où topicId null.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Grammaire : ponctuation, connecteurs, pronoms",
+    "skill": "Séparer les phrases, construire des phrases cohérentes, employer les connecteurs et choisir le pronom personnel adapté.",
+    "pageType": "exam",
+    "formats": [
+      "appariement",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "ponctuation",
+      "phrases utiles",
+      "connecteurs",
+      "pronoms personnels",
+      "évaluation trimestrielle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une trame d'évaluation grammaticale construite autour d'un même récit (un enfant, des colombes, la mère). Elle enchaîne segmentation en phrases, appariement sujet-verbe-complément, phrases à compléter, paragraphe avec connecteurs et association pronoms-phrases, ce qui se transpose facilement à d'autres contextes.",
+    "themeGroup": "Grammaire : ponctuation et connecteurs"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 5: «شَرِبْتُنَّ» est transcrit tel quel, mais l'image montre «شَرِبْتُنَّ»/«قَرَأْتُنَّ» selon le contexte; le sens (lire des histoires) indique «قَرَأْتُنَّ». La mention «(كذا في الصفحة)» est un ajout inventé."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 3: l'annotation «(الفراغ بين «الصَّبِيُّ» و«نَبِيلٌ»: ........)» est ajoutée; dans l'image il s'agit simplement de points de suspension entre les deux mots, sans commentaire."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 4: «(أربعة أسطر منقطة للكتابة)» est un ajout descriptif; l'image montre cinq lignes pointillées."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3, phrase 2: l'image montre «عَاتَبَتْ ........ وَلَدَهَا» avec les points avant «وَلَدَهَا» (OK), mais la troisième phrase a un point final après les pointillés; transcription acceptable."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis: nom, prénom, classe, matière (قواعد اللغة), niveau (السنة الثالثة), titre (اختبار نهاية الثلاثي الأول، عدد 1), et colonne des barèmes (0,5 ...) ainsi que les critères (معا1، معا ب...)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الْأَبُ» dans l'image est «الأب» sans tashkeel complet; «أَدَوَاتِ» dans l'image est «أَدَوَاتِ الرَّبْطِ» avec voyelles différentes (أَدَوَاتِ vs أَدَوَاتِ), vérifier; «الثَّلَّاجَةَ» image: «الثَّلَّاجَةَ» ok."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 2: l'organisation des colonnes est inversée par rapport à la lecture droite-gauche (colonne 1 = أَهْمَلَ، إِنْتَابَ، قَرَّرَ à droite), ce qui est correct; pas de véritable erreur."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 5 : la mention «(كذا في الصفحة)» est un ajout absent de l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 3, phrase 1 : l'annotation «(الفراغ بين «الصَّبِيُّ» و«نَبِيلٌ»: ........)» est inventée. Dans l'image, les pointillés sont avant «الصَّبِيُّ» (juste après la puce, à droite), pas entre les deux mots."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 4 : «(أربعة أسطر منقطة للكتابة)» est un ajout descriptif, et le nombre de lignes («quatre») est erroné. L'image montre plusieurs lignes pointillées (environ cinq)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5 : le premier verbe est lu «شَرِبْتُنَّ». L'image semble montrer «شَرَيْتُنَّ» (avec un yā' et non un bā'). La correction proposée «قَرَأْتُنَّ» n'est pas visible dans l'image et n'est pas retenue."
+      },
+      {
+        "type": "critere",
+        "severity": "minor",
+        "detail": "Le critère de l'exercice 2 est transcrit «معـ أ2». L'image montre «معـ1ب», dans la série معـ1أ (ex. 1), معـ1ب (ex. 2), معـ1ج (ex. 3), معـ2أ (ex. 4), معـ2ب (ex. 5). Le critère de l'exercice 3 est aussi précisé en «معـ1ج»."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَقْرَأُ النَّصَّ قِرَاءَةً وَاعِيَةً ثُمَّ أَفْصِلُ بَيْنَ جُمَلِهِ بِـ ( / ).",
+      "body": "- لَمَّا فَتَحَ نَبِيلٌ الثَّلَّاجَةَ تَرَاجَعَ الْمِسْكِينُ إِلَى الْوَرَاءِ مُنْدَهِشًا وَفَاضَتْ عَيْنَاهُ بِالدُّمُوعِ.",
+      "figureDesc": "على اليسار نقاط التقييم 0,5 / 0,5 / 0,5 وعلى اليمين ثلاث خانات للمعيار (معـ1أ).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p012_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبُطُ بَيْنَ الْمُفْرَدَاتِ التَّالِيَةِ لِأَتَحَصَّلَ عَلَى جُمَلٍ مُفِيدَةٍ :",
+      "body": "العمود الأول (من اليمين): أَهْمَلَ • / إِنْتَابَ • / قَرَّرَ •\nالعمود الثاني: الْأَبُ • / الْغَضَبُ • / نَبِيلٌ •\nالعمود الثالث: دُرُوسَهُ • / الْأُمَّ • / ذَبْحَ الْحَمَامَتَيْنِ •",
+      "figureDesc": "ثلاثة أعمدة من الكلمات تتقدمها نقاط للربط بخطوط؛ علامة مائية MOURAJAA.COM؛ نقاط 0,5 لكل ربط؛ معيار معـ1ب.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p012_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكْمِلُ الْجُمَلَ التَّالِيَةَ بِمَا يُنَاسِبُ لِيَكْتَمِلَ الْمَعْنَى.",
+      "body": "• ........ الصَّبِيُّ نَبِيلٌ بِالْحُزْنِ.\n• عَاتَبَتْ ........ وَلَدَهَا.\n• اِعْتَذَرَ الطِّفْلُ الصَّغِيرُ ........ .",
+      "figureDesc": "أسطر منقطة للإكمال؛ نقاط 0,5 لكل جملة (معـ1ج).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p012_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَسْتَعِينُ بِجُمَلِ التَّمْرِينِ (2) وَأُكَوِّنُ فِقْرَةً مَعَ حُسْنِ اسْتِعْمَالِ أَدَوَاتِ الرَّبْطِ.",
+      "body": "الْفِقْرَةُ :",
+      "figureDesc": "أسطر منقطة للكتابة؛ سلم تنقيط 0 / 0,5 / 1 / 1,5 / 2 / 2,5 وشبكة معايير (معـ2أ).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p012_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَرْبُطُ كُلَّ جُمْلَةٍ بِالضَّمِيرِ الْمُنَاسِبِ.",
+      "body": "- شَرَيْتُنَّ قِصَصًا كَثِيرَةً.\n- لَخَّصْنَ أَحْدَاثَ الْقِصَّةِ.\n- ذَهَبْنَا إِلَى الْمَكْتَبَةِ الْعُمُومِيَّةِ.\nالضمائر: نَحْنُ • / هُنَّ • / أَنْتُنَّ •",
+      "figureDesc": "عمود جمل وعمود ضمائر بنقاط للربط؛ نقاط 0,5 لكل ربط (معـ2ب).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p012_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَقْرَأُ النَّصَّ قِرَاءَةً وَاعِيَةً ثُمَّ أَفْصِلُ بَيْنَ جُمَلِهِ بِـ ( / ).",
+      "body": "- لَمَّا فَتَحَ نَبِيلٌ الثَّلَّاجَةَ تَرَاجَعَ الْمِسْكِينُ إِلَى الْوَرَاءِ مُنْدَهِشًا وَفَاضَتْ عَيْنَاهُ بِالدُّمُوعِ.",
+      "figureDesc": "على اليسار نقاط التقييم 0,5 / 0,5 / 0,5 وعلى اليمين خانات المعيار (معـ أ1) للتقييم.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_3eme_examens_p012_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبُطُ بَيْنَ الْمُفْرَدَاتِ التَّالِيَةِ لِأَتَحَصَّلَ عَلَى جُمَلٍ مُفِيدَةٍ :",
+      "body": "العمود الأول: أَهْمَلَ • / إِنْتَابَ • / قَرَّرَ •\nالعمود الثاني: الْأَبُ • / الْغَضَبُ • / نَبِيلٌ •\nالعمود الثالث: دُرُوسَهُ • / الْأُمَّ • / ذَبْحَ الْحَمَامَتَيْنِ •",
+      "figureDesc": "ثلاثة أعمدة من الكلمات تتقدمها نقاط للربط بخطوط؛ علامة مائية MOURAJAA.COM؛ معيار معـ أ2 (معـاب).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_3eme_examens_p012_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكْمِلُ الْجُمَلَ التَّالِيَةَ بِمَا يُنَاسِبُ لِيَكْتَمِلَ الْمَعْنَى.",
+      "body": "• الصَّبِيُّ نَبِيلٌ بِالْحُزْنِ. (الفراغ بين «الصَّبِيُّ» و«نَبِيلٌ»: ........)\n• عَاتَبَتْ ........ وَلَدَهَا.\n• اِعْتَذَرَ الطِّفْلُ الصَّغِيرُ ........ .",
+      "figureDesc": "أسطر منقطة للإكمال؛ نقاط 0,5 لكل جملة (معـ ج).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_3eme_examens_p012_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَسْتَعِينُ بِجُمَلِ التَّمْرِينِ (2) وَأُكَوِّنُ فِقْرَةً مَعَ حُسْنِ اسْتِعْمَالِ أَدَوَاتِ الرَّبْطِ.",
+      "body": "الْفِقْرَةُ : (أربعة أسطر منقطة للكتابة)",
+      "figureDesc": "أسطر منقطة؛ سلم تنقيط 0 / 0,5 / 1 / 1,5 / 2 / 2,5 وشبكة معايير (معـ 2أ).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_3eme_examens_p012_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَرْبُطُ كُلَّ جُمْلَةٍ بِالضَّمِيرِ الْمُنَاسِبِ.",
+      "body": "- شَرِبْتُنَّ قِصَصًا كَثِيرَةً. (كذا في الصفحة)\n- لَخَّصْنَ أَحْدَاثَ الْقِصَّةِ.\n- ذَهَبْنَا إِلَى الْمَكْتَبَةِ الْعُمُومِيَّةِ.\nالضمائر: نَحْنُ • / هُنَّ • / أَنْتُنَّ •",
+      "figureDesc": "عمود جمل وعمود ضمائر بنقاط للربط؛ نقاط 0,5 لكل ربط (معـ 2ب).",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "jisr_ennajah_3eme_examens_p012_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

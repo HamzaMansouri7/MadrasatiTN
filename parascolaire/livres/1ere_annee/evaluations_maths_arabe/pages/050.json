@@ -1,0 +1,207 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 50,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أُجَمِّعُ عَشَرَةً / عَشَرَةٌ",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الرِّيَاضِيَاتُ",
+      "body": "أُجَمِّعُ عَشَرَةً / عَشَرَةً",
+      "figureDesc": "Bandeau vert en haut de page avec le titre de la leçon et l'étiquette « الرِّيَاضِيَاتُ » sur un fond violet foncé.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p050_i1",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الْحِسَابُ الذِّهْنِيُّ : أَكْتُبُ الْأَعْدَادَ الْمَحْصُورَةَ بَيْنَ مَا يَلِي :",
+      "body": "3 〉 .......... 〉 1\n9 〉 .......... 〉 7\n6 〉 .......... 〉 4\n4 〉 .......... 〉 2\n7 〉 .......... 〉 5\nصِفْرٌ 〈 .......... 〈 اِثْنَانِ",
+      "figureDesc": "Six cadres arrondis disposés sur deux lignes, chacun contenant deux bornes séparées par des pointillés à remplir.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p050_i2",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَتَدَرَّبُ وَأُوَظِّفُ : أَرْبِطُ الْعَدَدَ بِاللَّافِتَةِ الَّتِي تُنَاسِبُهُ.",
+      "body": "Trois étiquettes à relier aux nombres : 10 ، 6 ، 7",
+      "figureDesc": "À gauche, trois cadres. Cadre 1 : 6 triangles bleus (3 + 3, sur deux rangées décalées). Cadre 2 : 7 carrés rouges (3 + 4). Cadre 3 : 10 rectangles verts (4 + 4 + 2). Un point vert à droite de chaque cadre. À droite, trois nombres entourés d'un cercle bleu, chacun précédé d'un point vert : 10, 6, 7.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p050_i3",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُجَمِّعُ عَشَرَةً / عَشَرَةً (10/10) وَأُكَمِّلُ الْجَدْوَلَ.",
+      "body": "Tableau à compléter avec des pointillés dans les deux cases du bas.",
+      "figureDesc": "À droite, 25 jetons orange portant le chiffre 1 : une rangée de 5, puis 5 rangées de 4. À gauche, un tableau à 4 cases (2×2) : la case en haut à gauche contient 10 jetons « 1 » regroupés (4 + 2 + 4), la case en haut à droite contient 1 jeton « 1 ». Les deux cases du bas sont vides, avec des pointillés à remplir.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p050_i4",
+      "topicId": "math-1-p3",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.9
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Pied de page",
+      "body": "مدرستي تونس - الثلاثي الثاني (السنة 1) — 74 — الرِّيَاضِيَاتُ",
+      "figureDesc": "",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p050_i5",
+      "topicId": "math-1-p3",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.9
+    }
+  ],
+  "topicId": "math-1-p3",
+  "topicTitle": "Période 3 : Le nombre 10, notion d'addition et formes géométriques",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p3",
+    "confidence": 0.9
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page, en mathématiques au 2e trimestre, porte sur le regroupement par dizaines (10/10) et la construction du nombre 10, ce qui correspond à la Période 3 ; le calcul mental sur les nombres encadrés relève de la même période.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Groupements par dizaines jusqu'à 10",
+    "skill": "Grouper des objets par dizaines, associer un nombre à une collection et encadrer des nombres inférieurs à 10.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "appariement",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "dizaine",
+      "groupement",
+      "nombres jusqu'à 10",
+      "encadrement",
+      "calcul mental",
+      "dénombrement"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression en trois temps : calcul mental sur les nombres compris entre deux autres, association d'un nombre à une pancarte de formes colorées, puis regroupement de jetons par 10 reporté dans un tableau dizaines/unités. Cette trame se transpose facilement à d'autres supports (étiquettes, jetons, boîtes).",
+    "themeGroup": "Dizaines et groupements"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.9,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Le titre vert en haut est absent: «الرِّيَاضِيَات» et «أُجَمِّعُ عَشَرَةً / عَشَرَةً». Sur l'image, le verbe est «أَجْمَعُ» (أَجْمَعُ عَشَرَةً / عَشَرَةً), pas «أُجَمِّعُ»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans l'exercice 2, «أُجَمِّعُ ... وَأُكَمِّلُ» ne correspond pas aux voyelles de l'image: «أَجْمَعُ ... وَأُكْمِلُ الْجَدْوَلَ»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«أَرْبِطُ» devrait être «أَرْبُطُ» comme sur l'image. «اثْنَانِ» s'écrit «اِثْنَانِ» avec kasra sous le alif."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de section «أَتَدَرَّبُ وَأُوَظِّفُ :» est absent de la transcription."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 1: la transcription annonce 6 triangles bleus, 7 carrés rouges et 10 rectangles verts. L'image montre 6 triangles, 7 carrés rouges et 10 rectangles verts, donc ces comptes sont plausibles, mais la transcription décrit des «لافتات» (panneaux) qui n'existent pas sous cette forme: ce sont des cadres d'images à relier aux nombres. Le texte «اللافتات العددية المقابلة» est inventé."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les bornes sont inversées dans le sens de lecture RTL: l'image les présente comme 1 ⟨…⟩ 3, 7 ⟨…⟩ 9, 4 ⟨…⟩ 6, et la ligne du bas dans l'ordre inverse. L'ordre des exercices et des nombres est donc mal rendu (ligne du haut: 1-3, 7-9, 4-6; ligne du bas: صفر-اثنان, 5-7, 2-4)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 2: la description est vague. Il manque le tableau de valeur de position (dizaines/unités) avec 10 cercles groupés, 1 cercle isolé dans la colonne de droite, et les 21 cercles «1» à regrouper. Les lignes de points à compléter ne sont pas mentionnées."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent: «جسر النجاح - الثلاثي الثاني (السنة 1)», la page 74 et «الرياضيات»."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الْحِسَابُ الذِّهْنِيُّ : أَكْتُبُ الْأَعْدَادَ الْمَحْصُورَةَ بَيْنَ مَا يَلِي :",
+      "body": "• ( 3 ) ......... ( 1 )\n• ( 9 ) ......... ( 7 )\n• ( 6 ) ......... ( 4 )\n• ( صِفْرٌ ) ......... ( اثْنَانِ )\n• ( 7 ) ......... ( 5 )\n• ( 4 ) ......... ( 2 )",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p050_i1",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبِطُ الْعَدَدَ بِاللَّافِتَةِ الَّتِي تُنَاسِبُهُ.",
+      "body": "• لافتة بها 6 مثلثات زرقاء\n• لافتة بها 7 مربعات حمراء\n• لافتة بها 10 مستطيلات خضراء\n\nاللافتات العددية المقابلة:\n• 10\n• 6\n• 7",
+      "figureDesc": "ثلاث لافتات تحوي مجموعات من الأشكال الهندسية: الأولى بها 6 مثلثات، الثانية بها 7 مربعات، الثالثة بها 10 مستطيلات، يقابلها على اليسار أعداد داخل بطاقات بيضاوية (10، 6، 7).",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "jisr_ennajah_1ere_evaluations_p050_i2",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُجَمِّعُ عَشَرَةً / عَشَرَةً (10/10) وَأُكَمِّلُ الْجَدْوَلَ.",
+      "body": "مجموعة من الدوائر يحمل كلٌّ منها العدد 1، والمطلوب تجميعها بالعشرات وتمثيلها داخل الجدول.",
+      "figureDesc": "مجموعة من الدوائر التي تحوي الرقم 1 (مجموعها 25 دائرة)، وإلى جانبها جدول مقسم إلى خانتين (عشرات وآحاد) مع فراغات لكتابة العدد.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "jisr_ennajah_1ere_evaluations_p050_i3",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "linkStatus": "clean",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

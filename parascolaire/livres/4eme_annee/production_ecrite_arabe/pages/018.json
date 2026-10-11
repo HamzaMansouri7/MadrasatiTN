@@ -1,0 +1,61 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 18,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "نص قرائي وصفي: طيات (وصف الشخصيات: الجمال والقبح، الفتاة الجميلة والفتاة القبيحة، الرجل والمرأة)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "طيات\nكان مضحك المنظر أفطس الأنف واسع الشدق غليظ الشفتين شعره طويل أذناه صغيرتان لا تكادان تظهران\nكان صديقي مليح الطلعة ساحر الحسن خفيف الروح حلو الكلام دمث الأخلاق حميد الصفات\nفتاة رائعة الحسن لا مثيل لجمالها فوق الأرض عيناها زرقاوان بلون السماء وشعرها ذهبي بلون الشمس وفمها دقيق كأنه البدر\nكلما كبرت الفتاة اكتمل جسمها وتضاعف جمالها وزاد شعرها اصفرارا وبريقا حتى كأنه الذهب الخالص فالعين لم تر أجمل منه والأذن لم تسمع عن شبيه له في القصص والحكايات\nكانت فتاة قاسية القلب متحجرة المشاعر لها هيبة ينفر منها الانسان وشعر خشن كأنه الليف رمادي اللون كأنه صوف خروف\nكانت امرأة شريرة خبيثة الأخلاق ولم تكن هي وابنتها ممن يحفظون وعدا ولا عهدا أو يتذكرون صنيعا طيبا أو معروفا لأحد\nفتاة صغيرة شاحبة الوجه مهلهلة الثياب يظهر عليها الوهن والجوع والهزال\nشاب نقي القلب هادئ الطباع يبذل أقصى جهده في العمل عن طيب خاطر لا يشكو ولا يتكاسل ولا يحتال أو يأخذ لنفسه ما ليس له\nحباها الله بجمال وضاح وحسن زائد فكانت مسرة للعيون ومبعث اعجاب لكل من يراها\nلباسها لم يعد يعرف له لون من شدة القذارة وشعرها لم تمتد إليه يد بمشط فهو في نظر العين غصن قندول أو عليق\nقامة مرحة وجه عربي مستدير شعر أسود فاحم وذكاء متقد يغزل لسانها أجمل الأحاديث وأرق الحكايا\nكانت في مقتبل شبابها في ربيعها العشرين فائقة الجمال شعرها أسود فاحم عيناها حوروان تنافسان عيون بقر الوحش ممشوقة القوام وجهها بدر في ليلة تمامه فكأنها إحدى حوريات الجنان\nرجل ضخم الجثة شديد السواد له عينان مشوهتان مليئتان بالشر وفي أصابعه أظافر طويلة قذرة\nكانت تناهز الثلاثين شقراء مستديرة الوجه عسلية العينين طويلة القامة قوية البنية\nعينان واسعتان جميلتان كحبات اللوز ملتمعتين مثل اللؤلؤ الأسود النادر وأنف دقيق صغير فم ضيق باسم لطيف وشعر",
+      "figureDesc": "صفحة نصية فقط داخل إطار، بدون صور أو جداول؛ النص مجموعة فقرات وصفية لشخصيات (بدون تشكيل)، والنص مقطوع في آخر الصفحة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "production_ecrite_arabe_p018_i1",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u4",
+  "topicTitle": "Unité 4 : Description et caractérisation des personnages",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-4-u5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-ch1",
+    "confidence": 0.12
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un texte de lecture en arabe composé de descriptions physiques et morales de personnages (laideur, beauté, caractère), ce qui correspond à l'Unité 4 : Description et caractérisation des personnages.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description physique des personnages",
+    "skill": "Repérer et réutiliser le lexique de la beauté et de la laideur pour décrire le portrait physique et moral d'une personne.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "texte descriptif",
+      "portrait",
+      "beauté et laideur",
+      "adjectifs qualificatifs",
+      "vocabulaire physique",
+      "personnages"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le principe de portraits contrastés (personnage laid et personnage charmant, jeune fille, homme et femme) peut servir d'exercices de classement du lexique en traits physiques ou moraux, ou de consigne de production écrite pour décrire un personnage.",
+    "themeGroup": "Description d'un personnage"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

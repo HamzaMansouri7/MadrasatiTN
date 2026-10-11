@@ -1,0 +1,137 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 38,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Évaluation : Géométrie (droites perpendiculaires/parallèles) et Mesure (conversions, volume du parallélépipède rectangle, capacité de stockage numérique, aire)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ماذا تستنتج بالنسبة للمستقيمين (F) و (d1). (2ن)",
+      "body": "ماذا تستنتج بالنسبة للمستقيمين (F) و (d1). (2ن) ............",
+      "figureDesc": "Cadre contenant une droite oblique (d1) et un point A situé en dessous de la droite. La droite (F) n'est pas visible sur cette page (probablement tracée à la question précédente).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p038_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مسألة - أراد هشام معرفة حجم خزان ماء على شكل متوازي المستطيلات (الشكل أسفله)، فملأه بواسطة براميل حيث سعة كل برميل هو 2000 L.",
+      "body": "أ) ـ أحسب حجم هذا الخزان علما أن a=4m و b=2m و c=3m. (2ن)\nب) كم من برميل احتاج هشام لملء هذا الخزان ؟ (2ن)",
+      "figureDesc": "Schéma d'un parallélépipède rectangle avec dimensions a (longueur), b (largeur), c (hauteur).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p038_i2",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "III",
+      "instruction": "المجال الثالث : القياس (14 نقطة)",
+      "body": "عنوان المجال الثالث: القياس (14 نقطة)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p038_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حول الوحدات التالية إلى ما هو مطلوب : (8ن)",
+      "body": "86,5 m = ........ dam ; 5t 7q 64kg = ........ Kg ; 45,91 cm² = ........ dm² ; 65dm = ........ cm",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p038_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "قم بتحويل وحدات قياس سعة التخزين الرقمي إلى ما هو مطلوب وذلك بالاستعانة بجدول التحويلات : (2ن)",
+      "body": "6,2 Ko = ........ O (Octet)\n27,6 Go = ........ To",
+      "figureDesc": "Tableau de conversion avec colonnes To, Go, Mo, Ko, O, chacune divisée en 3 sous-colonnes, et deux lignes vides avec flèches vers les deux conversions.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p038_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "مسألة : - تملك مروى حديقة صغيرة طولها L=7m وعرضها l=5m، وقد غرست بها مجموعة من النباتات المختلفة، وتقوم بسقيها بمعدل 50L يوميا.",
+      "body": "أ) احسب مساحة هذه الحديقة الصغيرة. (2ن)\nب) أحسب كمية الماء اللازمة لسقي هذه النباتات أسبوعيا بـ L. (2ن)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p038_i6",
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-p5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p5",
+    "confidence": 0.41
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation générale qui couvre plusieurs chapitres (droites perpendiculaires/parallèles, conversions d'unités, volume du parallélépipède, capacité de stockage numérique, aire du rectangle) ; elle ne correspond donc pas clairement à un seul chapitre, même si les volumes et capacités de la Période 5 y occupent une place importante.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    39
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures, volume et aire",
+    "skill": "Convertir des unités de mesure et calculer l'aire d'un rectangle et le volume d'un parallélépipède rectangle dans des problèmes de la vie courante.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "conversions d'unités",
+      "volume du parallélépipède rectangle",
+      "capacité de stockage numérique",
+      "aire du rectangle",
+      "droites perpendiculaires et parallèles",
+      "problème de capacité"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : des situations concrètes simples (remplir un réservoir avec des barils de capacité donnée, arroser un petit jardin chaque jour pendant une semaine) et des conversions à compléter, y compris les unités de stockage numérique (Ko, Go, To), avec un barème par question.",
+    "themeGroup": "Volumes et capacités"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "linked",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

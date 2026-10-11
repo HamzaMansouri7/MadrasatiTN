@@ -1,0 +1,774 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 119,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigés : حساب (ص41)، نظام قيس (ص42)، هندسة – التوازي (ص43)، الاختبار التقويمي (ص44)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "41-1",
+      "instruction": "الفرق :",
+      "body": "10 000 - 9 998 = 2",
+      "figureDesc": "",
+      "answer": "2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "41-2",
+      "instruction": "مقدار التخفيض بالمي :",
+      "body": "10 000 - 8 500 = 1 500",
+      "figureDesc": "",
+      "answer": "1 500 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "41-3",
+      "instruction": "بقي لكلّ واحد منهما بالمي :",
+      "body": "10 000 - (5 000 + 3 000) : 2 = 1 000. المبلغ الذي يملكه سامي بالمي : 3 000 + 1 000 = 4 000. المبلغ الذي يملكه مراد بالمي : 5 000 + 1 000 = 6 000",
+      "figureDesc": "",
+      "answer": "سامي: 4 000 مي ؛ مراد: 6 000 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "41-4",
+      "instruction": "الخطأ :",
+      "body": "6 500 - 1 800 = 4 700 مي. الباقي : 1 620 مي. البحث عن الباقي بطريقة أخرى بالمي : 10 000 - (680 + 2 400 + 1 800 + 3 500) = 1 620",
+      "figureDesc": "",
+      "answer": "الباقي 1 620 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "41-5",
+      "instruction": "المبلغ الذي بقي لأمين بالمي :",
+      "body": "10 000 - (300 + 4 550 + 1 800) = 3 350 مي. لا يمكنه شراء قارورة غاز لأنّه ينقصه بالمي : 4 120 - 3 350 = 770",
+      "figureDesc": "",
+      "answer": "3 350 مي ؛ ينقصه 770 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "42-1",
+      "instruction": "السعات التي تفوق 1 ل :",
+      "body": "25 دسل - نصف دكل - 432 صل",
+      "figureDesc": "",
+      "answer": "25 دسل ؛ نصف دكل ؛ 432 صل",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "42-2",
+      "instruction": "عدد قوارير الزيت التي نحتاجها في 30 يوما :",
+      "body": "30 على 5 = 6",
+      "figureDesc": "",
+      "answer": "6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "42-3",
+      "instruction": "سعة الدوّاء التي يتناولها مهدي في 6 أيام بالصل :",
+      "body": "6 x (2 x 4) = 48. نعم تكفيه كميّة الدوّاء الموجودة بالقارورتين لأنّ : 2 دسل ونصف x 2 = 5 دسل = 50 صل و 50 صل > 48 صل",
+      "figureDesc": "",
+      "answer": "48 صل ؛ نعم تكفيه",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "42-4",
+      "instruction": "ثمن اللتر الواحد من العطر بالمي :",
+      "body": "2 x 4 500 = 9 000",
+      "figureDesc": "",
+      "answer": "9 000 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "42-5",
+      "instruction": "",
+      "body": "1 دسل ← 300 مي ؛ 3 دسل ← 900 مي ؛ 5 صل ← 150 مي",
+      "figureDesc": "",
+      "answer": "300 مي ؛ 900 مي ؛ 150 مي",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "43-1",
+      "instruction": "",
+      "body": "المستقيمان (ص) و (م) متوازيان.",
+      "figureDesc": "",
+      "answer": "متوازيان",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "43-2",
+      "instruction": "",
+      "body": "هذه مستقيمات متوازية.",
+      "figureDesc": "مستقيم (ص) عليه النقاط أ و ج و ب و هـ، وتقطعه ثلاثة مستقيمات عمودية في ج و ب و هـ بزوايا قائمة. المسافة بين أ و ج، وبين ج و ب، وبين ب و هـ : 2 صم لكل منها.",
+      "answer": "مستقيمات متوازية",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "43-3",
+      "instruction": "",
+      "body": "(أ ج) و (ب هـ) مستقيمان متوازيان. (أ هـ) و (ج ب) كذلك مستقيمان متوازيان.",
+      "figureDesc": "قطعتان [أ ب] و [ج هـ] تتقاطعان في النقطة ن مع علامات تساوي الأطوال. المستقيم (د) في الأعلى يمرّ بـ ج، والمستقيم (ص) في الأسفل يمرّ بـ هـ، مع خطين منقطين.",
+      "answer": "(أ ج)//(ب هـ) و (أ هـ)//(ج ب)",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "44-1",
+      "instruction": "",
+      "body": "8 د - 1 068 مي = 6 932 مي ؛ 3 920 مي + 6 080 = 10 د = 11 769 مي - 1 769 مي",
+      "figureDesc": "",
+      "answer": "1 068 ؛ 6 080",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i14"
+    },
+    {
+      "kind": "answer",
+      "number": "44-2",
+      "instruction": "ثمن اللتر الواحد من هذا العطر بالمي :",
+      "body": "5 x 800 = 4 000",
+      "figureDesc": "",
+      "answer": "4 000 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i15"
+    },
+    {
+      "kind": "answer",
+      "number": "44-3",
+      "instruction": "",
+      "body": "لا يتقاطع المستقيمان (ك) و(س) لأنّهما متعامدان على نفس المستقيم (ص). أستنتج أنّهما متوازيان",
+      "figureDesc": "مستقيمان عموديان (ك) و(س) على المستقيم الأفقي (ص) بزاويتين قائمتين، ونقطة ب على المستقيم (ك).",
+      "answer": "متوازيان",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i16"
+    },
+    {
+      "kind": "answer",
+      "number": "44-4",
+      "instruction": "",
+      "body": "ستحضر هذه الأم : 4 دسل x 5 = 20 دسل = 2 ل. تكلفة هذا المشروب بالمي : 2 x 800 = 1 600. مصاريف هذه السهرة بالمي : 2 000 + (200 x 5) + 1 600 = 4 600 (200 x 5 = 1 000)",
+      "figureDesc": "",
+      "answer": "2 ل ؛ 1 600 مي ؛ 4 600 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p119_i17"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un corrigé regroupant plusieurs rubriques (calcul avec monnaie en millimes, système de mesure des capacités, géométrie du parallélisme, test d'évaluation), ce qui couvre plusieurs chapitres sans qu'un seul ne ressorte clairement (monnaie en période 1 et capacités en période 6).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    45,
+    46,
+    47,
+    48
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes de monnaie et mesures de capacité",
+    "skill": "Résoudre des problèmes additifs et multiplicatifs sur les millimes et les capacités (litre, décilitre, centilitre).",
+    "pageType": "correction",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "monnaie",
+      "millimes",
+      "capacité",
+      "litre",
+      "soustraction",
+      "proportionnalité"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes de la vie quotidienne réutilisables : partage d'une somme entre deux enfants, recherche d'une erreur de calcul dans un budget, vérification de suffisance (dose de médicament, achat d'une bouteille de gaz), conversion de prix selon la contenance.",
+    "themeGroup": "Monnaie"
+  },
+  "audit": {
+    "accuracy": 0.86,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "41-3 : l'image indique « (5 000 + 3 000) - 10 000 : 2 = 1 000 », la transcription est cohérente, mais l'ordre réel des opérations est « 10 000 - (5 000 + 3 000) : 2 = 1 000 » ; le sens de l'écriture est inversé (RTL)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "41-5 : l'image indique « 10 000 - (300 + 4 550 + 1 800) = 3 350 » ; la transcription est correcte, mais « 4 120 - 3 350 = 770 » est affiché dans le bon sens, ce qui est correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "41-3 : « يملكه » dans l'image est « يملكه » ; en revanche « بقي لكلّ » est bien avec shadda, mais « الدواء » dans 42-3 apparaît « الدّواء » (shadda visible) et « لأنّ » dans 42-3 est « لأنّ » ; la shadda sur الدّواء est absente de la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "41-4 : le texte « 6 500 - 1 800 = 4 700 » est présenté sous forme « الخطأ » correct ; « مي » est bien placé. Aucune erreur de mot trouvée."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Les champs « réponse: » ajoutés pour chaque exercice ne figurent pas sur l'image (texte inventé/dupliqué)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "42-1 : « السمات » dans l'image est bien « السعات » (السعات التي تفوق 1 ل) ; la lecture « السمات » est fautive."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "44-1 : l'opération « 10 د = 6 080 + 3 920 مي » est mal restituée ; « 11 769 مي - 1 769 مي = 10 د » est incomplet : le « 10 د » n'apparaît pas à la place indiquée et le résultat de la dernière ligne est manquant."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "43-2 : les légendes de la figure (2 صم ×3, points أ ج ب هـ ص) ne sont pas transcrites ; 43-3 : la figure (د، ص، ن، أ، ب، ج، هـ) n'est pas décrite ; 44-3 : la figure (ب، ك، س، ص) est absente."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "44-4 : la sous-annotation « 1 000 » sous (200 × 5) n'est pas transcrite."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "41-3 : l'ordre de l'opération est inversé (lecture RTL). L'image donne « 10 000 - (5 000 + 3 000) : 2 = 1 000 », alors que la transcription écrit « (5 000 + 3 000) - 10 000 : 2 = 1 000 »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "42-1 : « السمات » est une mauvaise lecture. Le mot de l'image est « السعات » (capacités), ce qui est cohérent avec les unités du corps de l'exercice. Corrigé dans l'instruction et dans la réponse."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "42-3 : les shaddas visibles dans l'image manquent dans la transcription : « الدوّاء » (instruction) et « كميّة » (corps). Le « الدواء » du corps passe aussi à « الدوّاء »."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "44-1 : la ligne « 3 920 مي + 6 080 = 10 د = 11 769 مي - 1 769 مي » est mal restituée. La transcription sépare « 11 769 مي - 1 769 مي » par un point-virgule et omet le lien « = 10 د » avec cette dernière opération."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les descriptions de figures 43-2, 43-3 et 44-3 sont imprécises. 43-2 omet le point أ et le fait que les 2 صم sont répétés entre أ-ج, ج-ب et ب-هـ. 43-3 appelle la figure un « quadrilatère » alors que l'image montre deux segments sécants en ن avec des marques d'égalité. 44-3 omet les angles droits. Les figures sont décrites, donc ce n'est pas une omission totale."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "41-1",
+      "instruction": "الفرق :",
+      "body": "10 000 - 9 998 = 2",
+      "figureDesc": "",
+      "answer": "2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "41-2",
+      "instruction": "مقدار التخفيض بالمي :",
+      "body": "10 000 - 8 500 = 1 500",
+      "figureDesc": "",
+      "answer": "1 500 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "41-3",
+      "instruction": "بقي لكلّ واحد منهما بالمي :",
+      "body": "10 000 - (5 000 + 3 000) : 2 = 1 000. المبلغ الذي يملكه سامي بالمي : 3 000 + 1 000 = 4 000. المبلغ الذي يملكه مراد بالمي : 5 000 + 1 000 = 6 000",
+      "figureDesc": "",
+      "answer": "سامي: 4 000 مي ؛ مراد: 6 000 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "41-4",
+      "instruction": "الخطأ :",
+      "body": "6 500 - 1 800 = 4 700 مي. الباقي : 1 620 مي. البحث عن الباقي بطريقة أخرى بالمي : 10 000 - (680 + 2 400 + 1 800 + 3 500) = 1 620",
+      "figureDesc": "",
+      "answer": "الباقي 1 620 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "41-5",
+      "instruction": "المبلغ الذي بقي لأمين بالمي :",
+      "body": "10 000 - (300 + 4 550 + 1 800) = 3 350 مي. لا يمكنه شراء قارورة غاز لأنّه ينقصه بالمي : 4 120 - 3 350 = 770",
+      "figureDesc": "",
+      "answer": "3 350 مي ؛ ينقصه 770 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "42-1",
+      "instruction": "السعات التي تفوق 1 ل :",
+      "body": "25 دسل - نصف دكل - 432 صل",
+      "figureDesc": "",
+      "answer": "25 دسل ؛ نصف دكل ؛ 432 صل",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "42-2",
+      "instruction": "عدد قوارير الزيت التي نحتاجها في 30 يوما :",
+      "body": "30 على 5 = 6",
+      "figureDesc": "",
+      "answer": "6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "42-3",
+      "instruction": "سعة الدوّاء التي يتناولها مهدي في 6 أيام بالصل :",
+      "body": "6 x (2 x 4) = 48. نعم تكفيه كميّة الدوّاء الموجودة بالقارورتين لأنّ : 2 دسل ونصف x 2 = 5 دسل = 50 صل و 50 صل > 48 صل",
+      "figureDesc": "",
+      "answer": "48 صل ؛ نعم تكفيه",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "42-4",
+      "instruction": "ثمن اللتر الواحد من العطر بالمي :",
+      "body": "2 x 4 500 = 9 000",
+      "figureDesc": "",
+      "answer": "9 000 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "42-5",
+      "instruction": "",
+      "body": "1 دسل ← 300 مي ؛ 3 دسل ← 900 مي ؛ 5 صل ← 150 مي",
+      "figureDesc": "",
+      "answer": "300 مي ؛ 900 مي ؛ 150 مي",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "43-1",
+      "instruction": "",
+      "body": "المستقيمان (ص) و (م) متوازيان.",
+      "figureDesc": "",
+      "answer": "متوازيان",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "43-2",
+      "instruction": "",
+      "body": "هذه مستقيمات متوازية.",
+      "figureDesc": "مستقيم (ص) عليه النقاط أ و ج و ب و هـ، وتقطعه ثلاثة مستقيمات عمودية في ج و ب و هـ بزوايا قائمة. المسافة بين أ و ج، وبين ج و ب، وبين ب و هـ : 2 صم لكل منها.",
+      "answer": "مستقيمات متوازية",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "43-3",
+      "instruction": "",
+      "body": "(أ ج) و (ب هـ) مستقيمان متوازيان. (أ هـ) و (ج ب) كذلك مستقيمان متوازيان.",
+      "figureDesc": "قطعتان [أ ب] و [ج هـ] تتقاطعان في النقطة ن مع علامات تساوي الأطوال. المستقيم (د) في الأعلى يمرّ بـ ج، والمستقيم (ص) في الأسفل يمرّ بـ هـ، مع خطين منقطين.",
+      "answer": "(أ ج)//(ب هـ) و (أ هـ)//(ج ب)",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "44-1",
+      "instruction": "",
+      "body": "8 د - 1 068 مي = 6 932 مي ؛ 3 920 مي + 6 080 = 10 د = 11 769 مي - 1 769 مي",
+      "figureDesc": "",
+      "answer": "1 068 ؛ 6 080",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i14"
+    },
+    {
+      "kind": "answer",
+      "number": "44-2",
+      "instruction": "ثمن اللتر الواحد من هذا العطر بالمي :",
+      "body": "5 x 800 = 4 000",
+      "figureDesc": "",
+      "answer": "4 000 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i15"
+    },
+    {
+      "kind": "answer",
+      "number": "44-3",
+      "instruction": "",
+      "body": "لا يتقاطع المستقيمان (ك) و(س) لأنّهما متعامدان على نفس المستقيم (ص). أستنتج أنّهما متوازيان",
+      "figureDesc": "مستقيمان عموديان (ك) و(س) على المستقيم الأفقي (ص) بزاويتين قائمتين، ونقطة ب على المستقيم (ك).",
+      "answer": "متوازيان",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i16"
+    },
+    {
+      "kind": "answer",
+      "number": "44-4",
+      "instruction": "",
+      "body": "ستحضر هذه الأم : 4 دسل x 5 = 20 دسل = 2 ل. تكلفة هذا المشروب بالمي : 2 x 800 = 1 600. مصاريف هذه السهرة بالمي : 2 000 + (200 x 5) + 1 600 = 4 600 (200 x 5 = 1 000)",
+      "figureDesc": "",
+      "answer": "2 ل ؛ 1 600 مي ؛ 4 600 مي",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p119_i17"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "41-1",
+      "instruction": "الفرق :",
+      "body": "10 000 - 9 998 = 2",
+      "figureDesc": "",
+      "answer": "2",
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p119_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "41-2",
+      "instruction": "مقدار التخفيض بالمي :",
+      "body": "10 000 - 8 500 = 1 500",
+      "figureDesc": "",
+      "answer": "1 500 مي",
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p119_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "41-3",
+      "instruction": "بقي لكلّ واحد منهما بالمي :",
+      "body": "(5 000 + 3 000) - 10 000 : 2 = 1 000. المبلغ الذي يملكه سامي بالمي : 3 000 + 1 000 = 4 000. المبلغ الذي يملكه مراد بالمي : 5 000 + 1 000 = 6 000",
+      "figureDesc": "",
+      "answer": "سامي: 4 000 مي ؛ مراد: 6 000 مي",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p119_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "41-4",
+      "instruction": "الخطأ :",
+      "body": "6 500 - 1 800 = 4 700 مي. الباقي : 1 620 مي. البحث عن الباقي بطريقة أخرى بالمي : 10 000 - (680 + 2 400 + 1 800 + 3 500) = 1 620",
+      "figureDesc": "",
+      "answer": "الباقي 1 620 مي",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p119_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "41-5",
+      "instruction": "المبلغ الذي بقي لأمين بالمي :",
+      "body": "10 000 - (300 + 4 550 + 1 800) = 3 350 مي. لا يمكنه شراء قارورة غاز لأنّه ينقصه بالمي : 4 120 - 3 350 = 770",
+      "figureDesc": "",
+      "answer": "3 350 مي ؛ ينقصه 770 مي",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p119_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "42-1",
+      "instruction": "السمات التي تفوق 1 ل :",
+      "body": "25 دسل - نصف دكل - 432 صل",
+      "figureDesc": "",
+      "answer": "25 دسل ؛ نصف دكل ؛ 432 صل",
+      "confidence": 0.75,
+      "id": "math_solutions_4eme_sellami_p119_i6",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "42-2",
+      "instruction": "عدد قوارير الزيت التي نحتاجها في 30 يوما :",
+      "body": "30 على 5 = 6",
+      "figureDesc": "",
+      "answer": "6",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p119_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "42-3",
+      "instruction": "سعة الدواء التي يتناولها مهدي في 6 أيام بالصل :",
+      "body": "6 x (2 x 4) = 48. نعم تكفيه كمية الدواء الموجودة بالقارورتين لأنّ : 2 دسل ونصف x 2 = 5 دسل = 50 صل و 50 صل > 48 صل",
+      "figureDesc": "",
+      "answer": "48 صل ؛ نعم تكفيه",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p119_i8",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "42-4",
+      "instruction": "ثمن اللتر الواحد من العطر بالمي :",
+      "body": "2 x 4 500 = 9 000",
+      "figureDesc": "",
+      "answer": "9 000 مي",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p119_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "42-5",
+      "instruction": "",
+      "body": "1 دسل ← 300 مي ؛ 3 دسل ← 900 مي ؛ 5 صل ← 150 مي",
+      "figureDesc": "",
+      "answer": "300 مي ؛ 900 مي ؛ 150 مي",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p119_i10",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "43-1",
+      "instruction": "",
+      "body": "المستقيمان (ص) و (م) متوازيان.",
+      "figureDesc": "",
+      "answer": "متوازيان",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p119_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "43-2",
+      "instruction": "",
+      "body": "هذه مستقيمات متوازية.",
+      "figureDesc": "مستقيم (ص) تقطعه ثلاثة مستقيمات عمودية في ج و ب و هـ، المسافة بين كل اثنين 2 صم، مع زوايا قائمة.",
+      "answer": "مستقيمات متوازية",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p119_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "43-3",
+      "instruction": "",
+      "body": "(أ ج) و (ب هـ) مستقيمان متوازيان. (أ هـ) و (ج ب) كذلك مستقيمان متوازيان.",
+      "figureDesc": "شكل رباعي أ ج ب هـ قطراه يتقاطعان في ن، مع علامات تساوي الأطوال، والمستقيمان (د) و (ص) وخطوط منقطة.",
+      "answer": "(أ ج)//(ب هـ) و (أ هـ)//(ج ب)",
+      "confidence": 0.75,
+      "id": "math_solutions_4eme_sellami_p119_i13",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "44-1",
+      "instruction": "",
+      "body": "8 د - 1 068 مي = 6 932 مي ؛ 3 920 مي + 6 080 = 10 د ؛ 11 769 مي - 1 769 مي",
+      "figureDesc": "",
+      "answer": "1 068 ؛ 6 080",
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p119_i14",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "44-2",
+      "instruction": "ثمن اللتر الواحد من هذا العطر بالمي :",
+      "body": "5 x 800 = 4 000",
+      "figureDesc": "",
+      "answer": "4 000 مي",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p119_i15",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "44-3",
+      "instruction": "",
+      "body": "لا يتقاطع المستقيمان (ك) و(س) لأنّهما متعامدان على نفس المستقيم (ص). أستنتج أنّهما متوازيان",
+      "figureDesc": "مستقيمان عموديان (ك) و(س) على المستقيم (ص)، ونقطة ب.",
+      "answer": "متوازيان",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p119_i16",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "44-4",
+      "instruction": "",
+      "body": "ستحضر هذه الأم : 4 دسل x 5 = 20 دسل = 2 ل. تكلفة هذا المشروب بالمي : 2 x 800 = 1 600. مصاريف هذه السهرة بالمي : 2 000 + (200 x 5) + 1 600 = 4 600",
+      "figureDesc": "",
+      "answer": "2 ل ؛ 1 600 مي ؛ 4 600 مي",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p119_i17",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

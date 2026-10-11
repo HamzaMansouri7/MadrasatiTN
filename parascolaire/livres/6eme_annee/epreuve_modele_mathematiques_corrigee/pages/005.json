@@ -1,0 +1,139 @@
+{
+  "book": "epreuve_modele_mathematiques_corrigee",
+  "page": 5,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Problème : circonférence, arc de cercle, distance, vitesse et durée (course autour d'un secteur circulaire)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "المسألة رقم 2: ( 6 نقاط ) — يمثّل الرّسم المصاحب مضمارا للعدو على شكل قطعتي مستقيم و قوس دائريّ.",
+      "body": "• الدّائرة ( ح ) مركزها \"ن\" و شعاعها [ ن و ] = 750 م.\n• الزّاوية ج ن و = 72 درجة.\n• \"هـ\" منتصف [ ن ج ].\n• \"س\" منتصف [ ن و ].\nانطلق العدّاء الأوّل بسرعة 111 م/دق على السّاعة 8 و 30 دق و قام بـ 5 دورات و انطلق العدّاء الثاني بتفس سرعة الأوّل على السّاعة 9 و 20 دق و قام بـ 3 دورات.\n1- ما هو الفارق الزّمني بين وصول العدّاءين ؟\nقام عدّاء ثالث بالعدو مسافة 6951 م منطلقا من النّقطة \"و\".\n2- ما هي نقطة وصوله ؟ علّل جوابك حسابيّا.",
+      "figureDesc": "دائرة (ح) بخط متقطع مركزها ن؛ قطاع دائري محدد بالنصفي القطرين [ن و] و [ن ج] والقوس و ج (بخط سميك)، الزاوية ج ن و = 72°، النقطة س على [ن و] والنقطة هـ على [ن ج].",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "epreuve_modele_mathematiques_corrigee_p005_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2-1",
+      "instruction": "الفارق الزمني بين وصول العدّاءين",
+      "body": "محيط الدّائرة: ( 750 × 2 ) × 3,14 = 4710 م.\nطول القوس: 4710 : 5 = 942 م.\nطول المسافة المقطوعة في دورة واحدة: 942 + ( 750 × 2 ) = 2442 م.\nالمسافة الّتي قطعها العدّاء الأوّل: 2442 × 5 = 12210 م\nالمدّة الزّمنيّة التي قضّاها العدّاء الأول: 12210 : 111 = 110 دق = 1 س و 50 دق.\nساعة وصول العدّاء الأوّل: س 8 و 30 دق + 1 س و 50 دق = س 10 و 20 دق.\nالمسافة الّتي قطعها العدّاء الثّاني: 2442 × 3 = 7326 م\nالمدّة الزّمنيّة التي قضّاها العدّاء الثّاني: 7326 : 111 = 66 دق = 1 س و 6 دق.\nساعة وصول العدّاء الثّاني: س 9 و 20 دق + 1 س و 6 دق = س 10 و 26 دق.\nالفارق الزّمني بين وصول العدّاءين: س 10 و 26 دق ـ س 10 و 20 دق = 6 دق.",
+      "figureDesc": "",
+      "answer": "6 دق",
+      "confidence": 0.9,
+      "id": "epreuve_modele_mathematiques_corrigee_p005_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2-2",
+      "instruction": "نقطة وصول العدّاء الثّالث",
+      "body": "عدد الدّورات الّتي قام بها العدّاء الثّالث: 6951 : 2442 = 2 دورات و الباقي 2067 م.\nنقطة وصول العدّاء الثّالث: النّقطة: \"س\".\nالتّعليل: 2067 م = 942 م + 750 م + 375 م\n2067 م = [ و ج ] + [ ج ن ] + [ ن س ].",
+      "figureDesc": "",
+      "answer": "النّقطة \"س\"",
+      "confidence": 0.9,
+      "id": "epreuve_modele_mathematiques_corrigee_p005_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-p3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p3",
+    "confidence": 0.34
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit d'un problème à plusieurs étapes de type concours (circonférence, arc, vitesse, durée, horaires, trois coureurs) qui relève de la synthèse et de la résolution de situations-problèmes, même si la vitesse et le cercle relèvent aussi de la Période 3.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Circonférence, arc de cercle et vitesse",
+    "skill": "Calculer la longueur d'un arc et d'un parcours à partir du périmètre du cercle, puis déterminer durées, écarts de temps et point d'arrivée avec la vitesse.",
+    "pageType": "mixed",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "circonférence",
+      "arc de cercle",
+      "vitesse",
+      "durée",
+      "distance",
+      "piste de course"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation réutilisable : une piste d'athlétisme en forme de secteur circulaire avec plusieurs coureurs partant à des heures différentes, où l'on calcule la distance par tour, la durée, l'écart d'arrivée et le point d'arrivée en justifiant par la décomposition de la distance en segments.",
+    "themeGroup": "Cercle et disque"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«بتفس» : l'image porte «بنفس» (le ن est lu comme ت)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«قضّاها» : l'image porte «قضّاها» avec la chadda sur le ض, mais en OCR on lit «قضاها» ; la transcription reste acceptable, pas d'erreur réelle"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الزّاوية ج ن و» : l'image montre un chapeau d'angle sur ج ن و, et il manque dans la transcription ; «هـ» est écrit «ه» dans l'image"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le dessin (cercle (ح), points ن، هـ، س، ج، و, angle 72°) n'est pas décrit"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le titre «الفارق الزمني بين وصول العدّاءين» (2-1) et «نقطة وصول العدّاء الثّالث» (2-2) n'existent pas dans l'image ; ce sont des étiquettes ajoutées"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الثاني» dans l'énoncé : l'image porte «الثّاني» avec la chadda"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«الأول» dans «العدّاء الأول» (durée) : l'image porte «الأوّل» avec la chadda"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'image, l'avant-dernière ligne est «2067 م = [ و ج ] + [ ج ن ] + [ ن س ]» : transcription correcte"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Épreuve modèle 6ème année — Mathématiques (corrigée)"
+}

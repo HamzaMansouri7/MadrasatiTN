@@ -1,0 +1,148 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 43,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الرياضيات: قيس المساحات ووحدات قيسها (الهكتار، الآر، الصّا) - مسألة أرض الفلاح. Remarque : la page est un exercice de mathématiques, pas de langue arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "* كَمْ قَبَضَ فِي الْجُمْلَةِ ؟",
+      "body": "....................................................................................................\n....................................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p043_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "لِفَلَّاحٍ أَرْضٌ قَسَّمَهَا إِلَى أَرْبَعَةِ أَجْزَاءٍ كَمَا هُوَ مُبَيَّنٌ فِي الْجَدْوَلِ :",
+      "body": "| قِيس مساحة كامل الأرض | قيس مساحة الجزء 1 | قيس مساحة الجزء 2 | قيس مساحة الجزء 3 | قيس مساحة الجزء 4 |\n| :---: | :---: | :---: | :---: | :---: |\n| 75 ها | .................... | 180000 صا | 1400 دكم² | 15 هم² |\n\nأ- احْسُبْ قِيسَ مِسَاحَةِ الْجُزْءِ الْأَوَّلِ.\nب- بَنَى الْفَلَّاحُ عَلَى الْجُزْءِ الْأَوَّلِ مِنَ الْأَرْضِ مَخْزَنًا لِلْعَلَفِ بُعْدَاهُ بِالْمِ 20 و 15. وَبَنَى غَيْرَ بَعِيدٍ عَنِ الْمَخْزَنِ إِصْطَبْلًا لِلْخُيُولِ بُعْدَاهُ 55 م وَ 110 م وَزَرَعَ بَقِيَّةَ الْأَرْضِ عَلَفًا لِحَيَوَانَاتِهِ.\n- احْسُبْ قِيسَ الْمِسَاحَةِ الْمَبْنِيَّةِ.\n- احْسُبْ قِيسَ الْمِسَاحَةِ الْمَزْرُوعَةِ عَلَفًا بِالْآرِ وَالصَّا.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p043_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.88
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "L'exercice porte sur le calcul d'aires d'un terrain de fermier avec conversion entre unités agraires (hectare, are/centiare) et unités de surface (dam², hm²), ce qui correspond à la Période 1 sur les mesures agraires.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures d'aires et unités agraires",
+    "skill": "Calculer et convertir des aires en utilisant les unités hectare, are et centiare dans un problème de terrain agricole.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "aire",
+      "hectare",
+      "are",
+      "centiare",
+      "conversion",
+      "terrain agricole"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation d'un agriculteur qui divise son terrain en parcelles décrites dans un tableau, avec constructions rectangulaires (grange, écurie) et cultures, ce qui amène à calculer des aires et à convertir entre unités agraires.",
+    "themeGroup": "Mesures d'aires et unités agraires"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Première ligne : « قَبَضَ » est faux ; l'image porte « قِيضَ » (كَمْ قِيضَ فِي الْجُمْلَةِ ؟), avec une voyelle différente."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau est absent : en-têtes « قيس مساحة كامل الأرض / الجزء 1 / 2 / 3 / 4 » et valeurs 75 هـا, (vide), 180000 صـا, 1400 دكم², 15 هم²."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« قِيسَ » et « قَسَّمَهَا » : l'image porte « قَيْس » (قَيْسَ) ; la transcription met « قِيسَ », mais l'image est ambiguë."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« بُعْدَاهُ بِالْمِ » : l'image porte « بِالْمِ 20 و 15 » avec « بالم » comme unité (م), formulation douteuse ; « بُعْدَاهُ » correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« لِفَلَّاحٍ » : l'image porte « لِفَلَّاحٍ » ; « إِصْطَبْلًا » correct, mais « الْمَزْرُوعَةِ » et « الصَّا » acceptables."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Annotations entre parenthèses (« suite d'un exercice précédent… », « huit lignes pointillées ») ajoutées. La première ligne est dupliquée. Le nombre de lignes pointillées est faux : il y en a 2 en haut et environ 8 en bas."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le numéro « ⑤ » est transcrit [5] ; le tiret « - » et « أ- » sont bien présents."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "كَمْ قَبَضَ فِي الْجُمْلَةِ ؟",
+      "body": "كَمْ قَبَضَ فِي الْجُمْلَةِ ؟ (suite d'un exercice précédent dont l'énoncé n'est pas sur cette page ; deux lignes pointillées pour la réponse)",
+      "figureDesc": "Deux lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p043_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "لِفَلَّاحٍ أَرْضٌ قَسَّمَهَا إِلَى أَرْبَعَةِ أَجْزَاءٍ كَمَا هُوَ مُبَيَّنٌ فِي الْجَدْوَلِ :",
+      "body": "أ- احْسُبْ قِيسَ مِسَاحَةِ الْجُزْءِ الْأَوَّلِ.\nب- بَنَى الْفَلَّاحُ عَلَى الْجُزْءِ الْأَوَّلِ مِنَ الْأَرْضِ مَخْزَنًا لِلْعَلَفِ بُعْدَاهُ بِالْمِ 20 و 15. وَبَنَى غَيْرَ بَعِيدٍ عَنِ الْمَخْزَنِ إِصْطَبْلًا لِلْخُيُولِ بُعْدَاهُ 55 م و 110 م وَزَرَعَ بَقِيَّةَ الْأَرْضِ عَلَفًا لِحَيَوَانَاتِهِ.\n- احْسُبْ قِيسَ الْمِسَاحَةِ الْمَبْنِيَّةِ.\n- احْسُبْ قِيسَ الْمِسَاحَةِ الْمَزْرُوعَةِ عَلَفًا بِالْآرِ وَالصَّا.\n(Sous la consigne, huit lignes pointillées pour la rédaction.)",
+      "figureDesc": "Tableau à 5 colonnes : قيس مساحة كامل الأرض = 75 هـا ; قيس مساحة الجزء 1 = vide (à compléter) ; الجزء 2 = 180000 صا ; الجزء 3 = 1400 دكم² ; الجزء 4 = 15 هم².",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p043_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "linkStatus": "clean",
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

@@ -1,0 +1,188 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 44,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Chez M. Sabre, le dentiste (Lire et s'exprimer)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Relie par une flèche :",
+      "body": "- L'auteur • ; - Un ami • ; - La mère • || • décide d'emmener l'enfant chez M. Sabre. ; • ne veut pas aller chez le dentiste. ; • m'a dit que M. Sabre fait très mal aux malades.",
+      "figureDesc": "Deux colonnes de points à relier par des flèches : personnages à gauche, actions à droite.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p044_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Complète avec le lieu :",
+      "body": "- L'enfant tend l'oreille pour écouter le bruit de la machine. ……………… ; - M. Sabre me fait peur lorsque je le vois. ……………… ; - Je vais t'emmener chez M. Sabre, me dit ma mère. ………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "francais_lire_et_sexprimer_p044_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Complète les répliques avec le personnage qui convient :",
+      "body": "- Demain nous irons chez M. Sabre, dit……………………… . ; - Mais laisse-moi regarder, dit ……………………… . ; - M. Sabre a une grande pince pour arracher les dents, dit……………………… .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "francais_lire_et_sexprimer_p044_i3",
+      "topicId": "fr-6-m6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Barre ce qui est faux :",
+      "body": "- Je tends l'oreille : * Je ferme les oreilles pour ne pas entendre. * J'ouvre bien les oreilles pour bien entendre. ; - Son ventre est énorme : * Son ventre est très grand. * Son ventre est très petit. ; - Un fauteuil bizarre : * Un fauteuil normal. * Un fauteuil anormal.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p044_i4",
+      "topicId": "fr-6-m6",
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Recopie la phrase qui décrit le dentiste :",
+      "body": "Ligne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p044_i5",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Écris « oui » ou « non » et recopie la phrase qui le montre :",
+      "body": "- M. Sabre a arraché la dent de l'enfant sans lui faire de mal. (……………) ; Ligne de réponse pour recopier la phrase.",
+      "figureDesc": "Ovale pour écrire oui/non.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p044_i6",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "L'enfant n'a plus peur de M. Sabre. Cherche la phrase qui le montre :",
+      "body": "Ligne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p044_i7",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "M. Sabre est-il un bon dentiste ? Justifie ta réponse :",
+      "body": "Ligne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p044_i8",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "Donne un conseil à cet enfant pour avoir des dents saines :",
+      "body": "Ligne de réponse à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p044_i9",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.4
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français sur une visite chez le dentiste ; le thème de la santé correspond le mieux au Module 6 (Être en forme et mieux se porter), mais le texte n'est pas explicitement rattaché à ce module.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : chez le dentiste",
+    "skill": "Comprendre un texte narratif en identifiant les personnages, les lieux et les sentiments, puis justifier ses réponses à l'aide de phrases du texte.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "texte_a_trous",
+      "vrai_faux",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "dentiste",
+      "peur",
+      "vocabulaire en contexte",
+      "justification",
+      "hygiène dentaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une séquence progressive allant du repérage (relier, situer, attribuer les répliques) à l'inférence et à la justification, avec une situation proche des élèves (la peur du dentiste) et un prolongement sur les conseils d'hygiène dentaire.",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.96
+  },
+  "audit": {
+    "accuracy": 0.96,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de la section « B) Compréhension : » n'est pas transcrit, ni l'en-tête de la page (« Lecture - Compréhension », « Sagesse », « 6ème année de base », numéro de page 43)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 6 : la transcription note « (……………) » pour la case ovale, ce qui est acceptable. Mais la question 3 « dit……………………… . » ne distingue pas les trois longueurs de pointillés, différence sans importance."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

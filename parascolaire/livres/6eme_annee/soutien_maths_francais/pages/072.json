@@ -1,0 +1,222 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 72,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Page de devoir de français (page 2/2) sur le thème de l'énergie et de la protection de la planète : grammaire, conjugaison, orthographe et production écrite. La page ne contient pas de mathématiques, et le contenu ne correspond pas au titre du manuel indiqué.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Transforme la phrase suivante au discours indirect :",
+      "body": "L'auteur nous dit : « notre planète est en danger. » (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p072_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Transforme la phrase suivante à la forme passive :",
+      "body": "Les gens jettent des objets de tout genre dans les poubelles. (2pts)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p072_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-1.1",
+      "instruction": "C-Conjugaison (6points) - 1. Mets les verbes entre parenthèses aux temps indiqués :",
+      "body": "1.1. Les citoyens (devoir/ présent de l'indicatif/....................) réduire la consommation énergétique. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p072_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-1.2",
+      "instruction": "Mets le verbe entre parenthèses au temps indiqué :",
+      "body": "1.2. Les énergies fossiles (polluer/ imparfait/....................) depuis toujours l'environnement. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p072_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-1.3",
+      "instruction": "Mets le verbe entre parenthèses au temps indiqué :",
+      "body": "1.3. Bientôt, les énergies non renouvelables (être/ futur simple/....................) probablement épuisées. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p072_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-1.4",
+      "instruction": "Mets le verbe entre parenthèses au temps indiqué :",
+      "body": "1.4. Le prix du pétrole (atteindre/passé composé/....................) des records historiques ces derniers temps. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p072_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-1.5",
+      "instruction": "Mets le verbe entre parenthèses au temps indiqué :",
+      "body": "1.5 Les ressources d'énergie (s'épuiser/ conditionnel présent/....................) dans quelques années. (1 pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p072_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-1.6",
+      "instruction": "Mets à l'impératif à la première personne du pluriel :",
+      "body": "(Se mobiliser) pour protéger notre planète : .................... (1 pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p072_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "D-1",
+      "instruction": "D-Orthographe (3points) - 1- Accorde correctement les mots mis entre parenthèses :",
+      "body": "Nos appareils sont (devenu / ....................) désormais (intelligent/ ....................). (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p072_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "D-2",
+      "instruction": "Écris les mots suivants au pluriel. Fais attention aux accords !",
+      "body": "un sous-titre => .................... ; un grille-pain => .................... (1 pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p072_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "D-3",
+      "instruction": "Complète le texte par : « toute - tout - tous - toutes » :",
+      "body": "Il est urgent d'agir ! Nous pouvons ............ réussir si ............ le monde applique certains gestes : Eh bien oui, ne pas allumer ............ les lumières à la maison, c'est bon pour notre budget et pour ............ la planète. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p072_i11",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "III-1",
+      "instruction": "III- Production de l'écrit (7points) - 1. Complète le texte ci-dessous par les mots proposés : geste - la vie – appareils – boutons (2 pts)",
+      "body": "Pour vous faciliter ...................., optez pour des multiprises avec des .................... Marche/arrêt. En un seul...................., vous éteindrez et allumerez tous vos.................... .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p072_i12",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "III-2",
+      "instruction": "Rédige un texte de 5 lignes dans lequel tu expliques à tes camarades de classe : (5 pts)",
+      "body": "- Les usages de l'énergie dans notre vie, les inconvénients des énergies fossiles et les avantages des énergies renouvelables. (6 lignes pointillées pour écrire ; page 2/2)",
+      "figureDesc": "Lignes pointillées pour la rédaction",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p072_i13",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.26
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une seconde page de devoir de français qui mêle grammaire (discours indirect, passif), conjugaison (présent, imparfait, futur, passé composé, conditionnel, impératif) et production écrite sur l'énergie, donc une évaluation générale couvrant plusieurs chapitres ; le thème de l'énergie et de la planète évoque le module 5 « Sauver la nature », mais ce rapprochement reste insuffisant pour l'assigner à un seul chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Grammaire, conjugaison et orthographe : énergie",
+    "skill": "Transformer des phrases (discours indirect, passif), conjuguer des verbes à différents temps et accorder des mots en contexte écologique.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "discours indirect",
+      "voix passive",
+      "conjugaison",
+      "impératif",
+      "pluriel des noms composés",
+      "énergie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série de phrases à thème écologique (énergie, pollution, ressources) pour travailler la conjugaison à des temps variés, la transformation de phrases et le pluriel des noms composés, avec un barème détaillé de type devoir de synthèse.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

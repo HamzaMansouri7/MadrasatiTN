@@ -1,0 +1,107 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 89,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "فكرة المساحة (1) – الأسبوع 23",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لَوِّنْ سُطُوحَ الْمُضَلَّعَاتِ الْمَرْسُومَةِ بِالأزرق وَمُحِيطَاتِهَا بِالأحْمَرِ.",
+      "body": "",
+      "figureDesc": "Cinq polygones gris : un parallélogramme, un triangle rectangle, un carré, un trapèze rectangle et un grand rectangle, alignés sur une ligne.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p089_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاَحِظِ السَّطْحَيْنِ (أ) و (ب) ثُمَّ :",
+      "body": "- أُحْسُبْ عَدَدَ تَرْبِيعَاتِ السَّطْحِ (أ) : ……\n- أُحْسُبْ عَدَدَ تَرْبِيعَاتِ السَّطْحِ (ب) : ……\n- أَكْمِلْ بِاسْتِعْمَالِ الْعِبَارَتَيْنِ (لَهُمَا نَفْسُ الْمِسَاحَةِ، لَيْسَ لَهُمَا نَفْسُ الْمِسَاحَةِ) :\nالسَّطْحَانِ (أ) و (ب) لَهُمَا ……",
+      "figureDesc": "Grille quadrillée contenant deux surfaces hachurées de carreaux : (ب) à gauche en forme de croix allongée avec une longue tige verticale, (أ) à droite en forme d'escalier en diagonale. Trois cadres de réponse vides.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p089_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرْسُمْ سَطْحًا لَهُ نَفْسُ مِسَاحَةِ السَّطْحِ (هـ) وَآخَرَ لَهُ نَفْسُ مِسَاحَةِ السَّطْحِ (ج).",
+      "body": "",
+      "figureDesc": "Deux grilles quadrillées : à gauche la surface (ج) en forme de croix de carreaux ; à droite la surface (هـ) en forme irrégulière en crochet/spirale avec un carreau blanc au centre. Le reste de chaque grille est vide pour dessiner.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p089_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُحْسُبْ مِسَاحَةَ كُلٍّ مِنَ السَّطْحَيْنِ (د) و (م) بِاسْتِعْمَالِ الْوِحْدَةِ ■ ثُمَّ أَكْمِلْ",
+      "body": "مِسَاحَةُ السَّطْحِ (د) بِاعْتِبَارِ التَّرْبِيعَةِ ■ وَحْدَة هي ……\nمِسَاحَةُ السَّطْحِ (م) بِاعْتِبَارِ التَّرْبِيعَةِ ■ وَحْدَة هي ……",
+      "figureDesc": "Deux rectangles quadrillés : (د) de 2 lignes sur environ 10 colonnes, (م) d'environ 6 colonnes sur 8 lignes ; le carreau unité est noirci dans le coin supérieur droit de chacun.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p089_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.15
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la notion d'aire (comparaison de surfaces par comptage de carreaux, périmètre et surface de polygones), ce qui se rattache à « périmètres/surfaces » de la Période 2, mais la Période 4 (surfaces) reste possible et l'attribution est incertaine.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    130
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Notion d'aire (comparaison de surfaces)",
+    "skill": "Comparer et calculer des aires en comptant des carreaux-unités, et les distinguer du périmètre.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "aire",
+      "périmètre",
+      "surface",
+      "quadrillage",
+      "unité d'aire",
+      "polygones"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : séquence progressive sur quadrillage (colorier surface et contour, comparer deux surfaces par comptage, dessiner une surface de même aire, changer l'unité d'aire) pour construire la notion d'aire.",
+    "themeGroup": "Périmètre et aire"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

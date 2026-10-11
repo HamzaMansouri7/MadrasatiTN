@@ -1,0 +1,157 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 60,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 32: أُجري عملية ضرب عدد عشري في آخر صحيح (matière réelle de la page : mathématiques, multiplication d'un nombre décimal par un entier)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "32",
+      "instruction": "الدرس 32 : أُجْرِي عَمَلِيَّةَ ضَرْبِ عَدَدٍ عُشْرِيٍّ في عَدَدٍ صَحِيحٍ",
+      "body": "",
+      "figureDesc": "Bandeau de titre décoratif avec le numéro 5 (السنة 5) à gauche et un logo à droite. Le titre est peu lisible sur le scan.",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "mathematiques_exercices_evaluations_p060_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَجْرِ الْعَمَلِيَّاتِ التَّالِيَةَ :",
+      "body": "Colonne de droite : 10 × 3,145 = ... ; 100 × 3,145 = ... ; 1000 × 3,145 = ... ; 0,1 × 3,145 = ... . Colonne de gauche : 4 × 6,48 = ... ; 24 × 0,39 = ... ; 3218 × 1,07 = ... ; 8 × 56,25 = ...",
+      "figureDesc": "Deux colonnes séparées par un trait vertical, chaque opération suivie de points de réponse et précédée d'une petite icône de crayon.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_evaluations_p060_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اِرْبِطْ بَيْنَ الْجُدَاءَاتِ الْمُتَسَاوِيَةِ :",
+      "body": "Rangée du haut : 10 × 60,87 ; 0,5 × 468 ; 100 : 546 ; 1000 : 125. Rangée du bas : 1000 × 0,234 ; 0,01 × 546 ; 100 × 6,087 ; 0,001 × 125.",
+      "figureDesc": "Huit étiquettes en forme de nuage, quatre en haut et quatre en bas, avec des points à relier entre les expressions égales.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p060_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اِحْسُبْ طُولَ مُحِيطِهَا ثُمَّ قِسْ مِسَاحَتَهَا.",
+      "body": "أَرْضٌ مُسْتَطِيلَةُ الشَّكْلِ طُولُهَا 134 م وَعَرْضُهَا 89,5 م .",
+      "figureDesc": "Trois lignes en pointillés pour rédiger la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p060_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اِحْسُبْ ثَمَنَ شِرَاءِ كُلِّ قِطْعَةٍ مِنَ الْقُمَاشِ.",
+      "body": "شَرَتْ سَيِّدَةٌ 2,3 م مِنَ الْقُمَاشِ الرَّفِيعِ بِـ 57 د الْمِتْرِ الْوَاحِدِ. وَشَرَتْ 1,9 م مِنْ قُمَاشِ الْبِطَانَةِ بِـ 2500 مي الْمِتْرِ الْوَاحِدِ وَشَرَتْ لَوَازِمَ أُخْرَى لِلْخِيَاطَةِ بِـ 7850 مي . ثُمَّ دَفَعَتْ لِلْخَيَّاطَةِ 65 د كَأُجْرَةٍ .",
+      "figureDesc": "Trois lignes en pointillés pour la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p060_i5",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.91
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la multiplication d'un nombre décimal par un entier (par 10, 100, 1000, 0,1, 0,01), avec des problèmes de périmètre, d'aire et de prix. Cela correspond à la Période 3 (Multiplication/division des décimaux et polygones, trimestre 2).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Multiplication d'un nombre décimal",
+    "skill": "Multiplier un nombre décimal par un entier ou par une puissance de 10 et appliquer ce calcul à des problèmes de périmètre, d'aire et de prix.",
+    "pageType": "mixed",
+    "formats": [
+      "calcul",
+      "appariement",
+      "probleme"
+    ],
+    "keywords": [
+      "nombre décimal",
+      "multiplication",
+      "multiplication par 10, 100, 1000",
+      "périmètre et aire",
+      "prix d'achat",
+      "dinars et millimes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : le jeu d'appariement entre produits égaux (× 0,01 et ÷ 100, × 0,5 et ÷ 2), les séries de multiplications par 10, 100, 1000 et 0,1, et le problème de couture au budget à plusieurs postes (tissu, doublure, fournitures, main-d'œuvre) en dinars et millimes.",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre : l'image montre « أَجْرِ عَمَلِيَّةَ ضَرْبِ عَدَدٍ عُشْرِيٍّ في عَدَدٍ صَحِيحٍ » ; la transcription écrit « أُجْرِي » (verbe conjugué), ce qui ne correspond pas à l'impératif « أَجْرِ » de la consigne 1. Le titre étant peu lisible, c'est incertain."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « التَّالِيَةَ » avec fatha ; l'image montre « التَّالِيَةِ » (génitif, kasra), car l'expression est « الْعَمَلِيَّاتِ التَّالِيَةِ »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : « الْجُدَاءَاتِ » ; l'image montre « الجُذَاءَاتِ » (avec ذ, pas د). La graphie est « الجُذَاءَات »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercices 3 et 4 : la consigne en gras (« اِحْسُبْ… ») est placée avant l'énoncé du problème, alors que dans l'image elle vient après. L'ordre est inversé."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 4 : « شَرَتْ » dans l'image est « شَرَتْ » (écrit sans alif, tel que dans le scan) ; la transcription est probablement fidèle. En revanche « بِـ 57 د الْمِتْرِ » correspond à l'image, mais « الْقُمَاشِ الرَّفِيعِ » est correct. Aucune erreur certaine ici."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : la rangée du haut est listée dans l'ordre gauche→droite (10 × 60,87 en dernier dans l'image visuelle, premier dans la lecture arabe). L'ordre de lecture RTL n'est pas respecté (l'image montre de gauche à droite : 1000 : 125, 100 : 546, 0,5 × 468, 10 × 60,87)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : « 100 : 546 » et « 1000 : 125 » correspondent à l'image mais sont appelés « جداءات » ; l'image montre bien « : » pour ces deux expressions, ce qui est correct."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

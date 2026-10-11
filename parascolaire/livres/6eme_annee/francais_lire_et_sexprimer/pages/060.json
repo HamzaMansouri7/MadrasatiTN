@@ -1,0 +1,185 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 60,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Nadlouk et les habitations (igloo, chalet) – questions de compréhension sur le texte",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Écris les mots du texte qui ont le même sens que les mots suivants :",
+      "body": "- Construire = ...............................\n- Tempête = ...............................\n- Habitation construite avec des blocs de glace ou de neige = ...............................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p060_i1",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "a- Réponds par « oui » ou « non » :",
+      "body": "- Les Esquimaux habitent dans des igloos. [case à compléter]",
+      "figureDesc": "Case arrondie pour écrire la réponse oui/non.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p060_i2",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3b",
+      "instruction": "b- Relève, dans le texte, le détail qui le montre :",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p060_i3",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "a- Est-ce que la maison construite par le père est large ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p060_i4",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4b",
+      "instruction": "b- Justifie ta réponse :",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p060_i5",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Où dorment les enfants ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p060_i6",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Écris « vrai » ou « faux » :",
+      "body": "- Les voisins ont aidé le papa à construire sa maison.\n- Les Esquimaux vivent dans des tentes.\n- Ils construisent un igloo quand il y a une tempête de neige.\n- Ils peuvent cultiver leurs légumes et cueillir des fruits.\n- Nadlouk se couche dans un joli lit.",
+      "figureDesc": "Cinq cases arrondies alignées à droite pour écrire vrai/faux.",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p060_i7",
+      "topicId": "fr-6-m8",
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Complète avec des mots du texte :",
+      "body": "- Nadlouk trouve son pays ..............., ..............., et ...............\n- Les gens pensent que les Esquimaux vivent dans des ...............\n- Dans le pays de Nadlouk, l'eau de l'océan est très ...............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p060_i8",
+      "topicId": "fr-6-m8",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m8",
+  "topicTitle": "Module 8 : Découvrir d'autres modes de vie",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.41
+  },
+  "topicSubject": "Français",
+  "topicReason": "Le texte sur Nadlouk, enfant esquimau, et sur les habitations (igloo, chalet) relève de la découverte d'autres modes de vie, donc du Module 8 de français.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    124
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : habitations esquimaudes",
+    "skill": "Comprendre un texte documentaire en relevant des informations, en trouvant des synonymes et en justifiant ses réponses.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "Nadlouk",
+      "igloo",
+      "Esquimaux",
+      "habitation",
+      "compréhension de texte",
+      "synonymes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement varié de questions sur un texte (synonymes, oui/non avec relevé d'indice, justification, vrai/faux, phrases à compléter) autour d'un mode de vie lointain, transposable à d'autres peuples ou habitats.",
+    "themeGroup": "Textes documentaires"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « Lecture - Compréhension », « Sagesse », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », numéro de page 59, « 6ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'exercice 7, « Nadlouk » est écrit « Nadloук/Nadlouk » sans problème, mais la phrase « Nadlouk trouve son pays ..., ..., et ... » est correcte. Le nombre de pointillés est simplifié et les cases arrondies de l'exercice 6 sont omises, ce qui ne change pas le sens."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases arrondies de réponse de l'exercice 6 (5 cases) ne sont pas mentionnées. Elles sont indiquées pour 3a mais pas pour 6."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

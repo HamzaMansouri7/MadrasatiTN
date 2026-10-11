@@ -1,0 +1,185 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 88,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 23 – آليات القسمة (5): المقسوم ذو ثلاثة أرقام والقاسم ذو رقم واحد",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الأسبوع 23 — آليات القسمة (5) :",
+      "body": "المقسوم ذو ثلاثة أرقام والقاسم ذو رقم واحد",
+      "figureDesc": "Titre de la page dans un cadre arrondi, avec une ellipse « الأسبوع 23 » à droite. Le numéro 84 figure en bas de page (numéro du manuel).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p088_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لاحظ كيفيّة وضع القسمة عموديًا ثمّ تتبّع نفس المراحل لحساب خارج القسمة والباقي ممّا يلي :",
+      "body": "904 على 7 ؛ 745 على 8 ؛ 836 على 9 ؛ 777 على 4",
+      "figureDesc": "Exemple de division posée en colonnes (المقسوم / القاسم / الخارج / الباقي) : 847 ÷ 5. Quotient 169, reste 2. Le chiffre 8 est encadré, puis 34 et 47 apparaissent avec des flèches. Vérification : 5 > 2 et 2 + (169 × 5) = 847. Le scan indique 247 pour le résultat de la vérification. Quatre cadres contiennent les divisions à effectuer.",
+      "answer": "Exemple : 847 ÷ 5 → quotient 169, reste 2 (5 > 2). Le scan indique 2 + (169 × 5) = 247.",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p088_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ماذا تريد أن أمنحك ثُلْثَ 750 مي أم خُمُسَ 950 مي؟ لماذا؟",
+      "body": "ماذا تريد أن أمنحك ثُلْثَ 750 مي أم خُمُسَ 950 مي؟ لماذا؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p088_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "حدّد تاجر ثمن بيع 4 كؤوس بـ 900 مي وحدّد تاجر آخر ثمن بيع 3 كؤوس من نفس النّوع بـ 720 مي. لو أردت شراء 7 كؤوس أيّ تاجر تقصد؟ لماذا؟ وكم تدفع؟",
+      "body": "حدّد تاجر ثمن بيع 4 كؤوس بـ 900 مي وحدّد تاجر آخر ثمن بيع 3 كؤوس من نفس النّوع بـ 720 مي. لو أردت شراء 7 كؤوس أيّ تاجر تقصد؟ لماذا؟ وكم تدفع؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p088_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هو المبلغ الذي بقي معها؟",
+      "body": "أرادت فاطمة شراء 8 كرّاسات وكانت تملك 900 مي وبعد أن سألت عن ثمن الكرّاس الواحد لاحظت أنّه ينقصها 20 مي فاشترت 7 كرّاسات فقط. ما هو المبلغ الذي بقي معها؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p088_i5",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "احسب عدد الدرّاجات التي تُنْتِجها الشّركة في كلّ يوم إذا علمت أنّها تَتَعَطّلُ يوم الأحد.",
+      "body": "تُنْتِجُ شركة كلَّ يوم نفس العدد من الدرّاجات. أنتجت هذه الشّركة خلال أسبوع 324 درّاجة. احسب عدد الدرّاجات التي تُنْتِجها الشّركة في كلّ يوم إذا علمت أنّها تَتَعَطّلُ يوم الأحد.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.87,
+      "id": "mathematiques_exercices_corriges_p088_i6",
+      "topicId": "math-4-ch3",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "ابحث عن ثمن بيع الورد.",
+      "body": "تلقّى بائع ورود هذا الصّباح 450 وردة جمّعها في باقات تضمّ الواحدة 9 وردات. ثمن بيع الباقة الواحدة 3 دنانير. ابحث عن ثمن بيع الورد.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p088_i7",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch3",
+  "topicTitle": "Période 3 : Division euclidienne, fractions et périmètres",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.39
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la division euclidienne posée d'un nombre à trois chiffres par un nombre à un chiffre (quotient et reste), avec des problèmes et des fractions simples (tiers, cinquième), ce qui correspond à la Période 3.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    129
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division à diviseur d'un chiffre",
+    "skill": "Poser et effectuer une division d'un nombre de trois chiffres par un nombre d'un chiffre, puis l'utiliser pour résoudre des problèmes.",
+    "pageType": "mixed",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "division euclidienne",
+      "quotient et reste",
+      "dividende à trois chiffres",
+      "problèmes de la vie courante",
+      "monnaie (millimes)"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les situations concrètes sont réutilisables : comparer le tiers et le cinquième de deux nombres, choisir entre deux marchands selon le prix unitaire, calculer la production quotidienne sur une semaine, trouver le reste d'argent après un achat, fixer un prix de vente à partir de regroupements en lots ; le tout est précédé d'une consigne d'observation de la disposition en colonnes.",
+    "themeGroup": "Division euclidienne"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exemple : l'image montre 847 ÷ 5 (8 4 7), quotient 169, reste 2, et la vérification 2 + (169 × 5) = 847. La transcription dit « = 247 » en prétendant que « le scan indique 247 », alors que l'image porte 247 comme ligne de vérification : la valeur lue est bien 247 sur le scan, mais le mélange avec l'exemple 847 est incohérent. À signaler comme erreur du scan et non à corriger sans note."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre : « آليات » transcrit, mais l'image montre « اليات » (sans hamza), à vérifier ; de plus « الأسبوع » est correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « 904 على 7 » etc. correct, mais l'ordre des cases (droite à gauche) est différent : 904/7, 836/9 en haut, 745/8, 777/4 en bas ; l'ordre de transcription (904, 745, 836, 777) est en colonnes, acceptable."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : « ثُلْثَ » et « خُمُسَ » : l'image montre ثُلثَ et خُمُسَ ; le soukoun sur اللام n'est pas visible, donc ajouté de façon inventée."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 5 : « تُنْتِجُ » ; l'image montre تُنتِجُ, sans soukoun visible sur النون. De plus « شركة » est écrit « شركةُ » dans l'image avec « كلَّ » ; « الشّركة » porte la chadda dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « كرّاسات/الكرّاس » : l'image porte « كراسات » avec une fatha sur le ر ; la chadda est ajoutée sans être visible. Idem « الدرّاجات » : l'image montre « الدراجات » avec fatha."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercices 4, 5, 6 : le champ de la question finale est dupliqué dans le premier champ, alors que les énoncés complets sont dans le second ; incohérence de structure."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

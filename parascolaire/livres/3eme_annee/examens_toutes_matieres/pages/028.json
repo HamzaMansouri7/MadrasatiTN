@@ -1,0 +1,145 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 28,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول عدد 1 – رياضيات (حساب ذهني) – السنة الثالثة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَحْصُرُ الْمَبْلَغَ بَيْنَ أَلْفَيْنِ كَامِلَتَيْنِ مُتَتَالِيَتَيْنِ.",
+      "body": "بِمُنَاسَبَةِ الْعِيدِ تَسَلَّمَ فَوْزِي مِنْ عِنْدِ أَبِيهِ 8400 مي.",
+      "figureDesc": "Ligne de réponse à compléter : ........ > 8400 > ........ (note : 1)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p028_i1",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُفَكِّكُ الْمَبْلَغَ إِلَى آلَافٍ كَامِلَةٍ وَالْبَاقِي.",
+      "body": "أَمَّا أُخْتُهُ تَسْنِيمُ فَقَدْ تَسَلَّمَتْ 4200 مي.",
+      "figureDesc": "Ligne de réponse pointillée (note : 0,5)",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p028_i2",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْتُبُ عَدَدَ الْعَشَرَاتِ.",
+      "body": "اِشْتَرَتْ تَسْنِيمُ دُمْيَةً بِـ 3950 مي.",
+      "figureDesc": "Ligne de réponse pointillée (note : 0,5)",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p028_i3",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَكْتُبُ عَدَدَ الْمِئَاتِ.",
+      "body": "اِشْتَرَى فَوْزِي قِطْعَةَ شُكُولَاطَةٍ بِـ 700 مي.",
+      "figureDesc": "Ligne de réponse pointillée (note : 0,5)",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p028_i4",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "مَا هُوَ ثَمَنُ شِرَاءِ الشَّايِ ؟",
+      "body": "اِشْتَرَى أَيْضًا شَايًا ثَمَنُهُ يُمَثِّلُ ضِعْفَ ثَمَنِ قِطْعَةِ الشُّكُولَاطَةِ.",
+      "figureDesc": "Ligne de réponse pointillée (note : 0,5)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p028_i5",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مَا هُوَ قَيْسُ طُولِهِ بِالصَّمِ ؟",
+      "body": "اِشْتَرَى فَوْزِي وَأُخْتُهُ بَالُونًا بَلَغَ قَيْسُ طُولِهِ 5 دسم وَ 3 صم.",
+      "figureDesc": "Ligne de réponse pointillée (note : 0,5)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p028_i6",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "مَا هُوَ قَيْسُ طُولِهِ بِالصَّمِ ؟",
+      "body": "نَفَخَ فَوْزِي الْبَالُونَ فَأَصْبَحَ طُولُهُ 1 م وَ3 صم.",
+      "figureDesc": "Ligne de réponse pointillée (note : 0,5)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p028_i7",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-3-p1",
+  "topicTitle": "Période 1 : Nombres à 4 chiffres, quadrillage et mètre/cm",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p4",
+    "confidence": 0.36
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Cette page de calcul mental du premier trimestre porte sur les nombres à 4 chiffres (encadrement entre milliers, décomposition, nombre de dizaines et de centaines, double) et sur les conversions de mesures de longueur en m, dm et cm, ce qui correspond à la Période 1.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Calcul mental : nombres jusqu'à 9999",
+    "skill": "Encadrer, décomposer et lire les chiffres d'un nombre (milliers, centaines, dizaines), puis calculer un double et convertir des mesures de longueur (dm, cm, m) en cm.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "calcul mental",
+      "milliers",
+      "encadrement",
+      "double",
+      "conversion de longueurs",
+      "monnaie (millimes)"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une histoire unique (deux enfants qui reçoivent de l'argent de poche pour l'Aïd et font des achats) sert de fil conducteur à sept questions courtes de calcul mental, ce qui rend la situation cohérente et facile à adapter à d'autres contextes.",
+    "themeGroup": "Calcul mental"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

@@ -1,0 +1,180 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 126,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Corrigés des évaluations n°3, n°4 et n°5 (Compréhension, Grammaire, Conjugaison)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "Évaluation n°3 - B) Compréhension",
+      "instruction": "Corrigé des questions 1 à 6 (compréhension)",
+      "body": "1) Ce jour-là, le jeune berger n'a pas fait son travail comme il faut car il a perdu une brebis.\n2) La nuit, le jeune berger ne peut pas dormir car il pense à la brebis perdue.\n3) Les deux enfants sont partis la nuit dans la campagne pour chercher la brebis perdue.\n4) « Le chien flairait partout. » veut dire : Par l'odeur, il essayait de retrouver la trace de la brebis. / « J'étais gelé. » veut dire : J'avais très froid.\n5) a- Le berger voisin a volé la brebis. Non\nb- « Oui, une pauvre bête qui s'est trompée de troupeau. Venez la voir. Ce n'est pas la nôtre. C'est bien la vôtre ? »\n6) Le berger a peur car il a pensé que les voleurs allaient attaquer la ferme pour voler les brebis.",
+      "figureDesc": "",
+      "answer": "Voir body (corrigé)",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p126_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°3 - C) Grammaire",
+      "instruction": "Corrigé des questions 1 à 3",
+      "body": "1) « Ces bergères ont perdu leur brebis, leur agneau et leurs chèvres. »\n2) a- La jeune fille imprudente va chercher le petit agneau perdu.\nb- La petite brebis s'est trompée de troupeau. Les deux jeunes bergères sont inquiètes. Accompagnées de leur grande chienne blanche, elles ont cherché partout ; toujours rien. Elles sont malheureuses.\n3) Nous disons : « Ce beau garçon est notre frère. Il est joli, sérieux et intelligent. »",
+      "figureDesc": "",
+      "answer": "Voir body (corrigé)",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p126_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°3 - D) Conjugaison",
+      "instruction": "Corrigé des questions 1 et 2",
+      "body": "1) - Essaie de trouver la brebis avant le coucher du soleil !\n- Rassemblez le troupeau !\n- Allons réveiller le berger !\n- Le temps est mauvais, fais attention !\n- Bondissons de plaisir !\n2) a- « Tu manqueras de courage, tu seras gelé. » / « Nous manquerons de courage, nous serons gelés. »\nb- Hier, le berger a manqué de courage, il a été gelé. / Hier, le berger et moi avons manqué de courage, nous avons été gelés. / Hier, les bergers ont manqué de courage, ils ont été gelés.\n3) a- La bergère sera mécontente car elle aura une brebis en trop. / Nous serons mécontents car nous aurons une brebis en trop. / Les deux sœurs seront mécontentes car elles auront une brebis en trop.\nb- Ma sœur a été mécontente car elle a eu une brebis en trop. / Le berger et toi avez été mécontents car vous avez eu une brebis en trop. / Les deux bergères ont été mécontentes car elles ont eu une brebis en trop.",
+      "figureDesc": "",
+      "answer": "Voir body (corrigé)",
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p126_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°4 - B) Compréhension",
+      "instruction": "Corrigé des questions 1 à 6",
+      "body": "1) Le père trouve le lionceau en mauvais état dans un fossé. Il est seul. L'animal pleure en criant de faim et de peur.\n2) Patricia a soigné et sauvé le bébé-lion. Elle lui donne du lait en utilisant un biberon. Elle le couvre de vêtements en laine pour le protéger contre le froid.\n3) Patricia a appelé le lionceau « King » parce qu'elle sait qu'il deviendra un vrai roi à l'avenir.\n4) a- Est-ce que Patricia a peur de King ? Non\nb- « Elle donne de grands coups de poing dans le ventre du lion. Elle tire très fort sur sa crinière. » / « Elle se couche près du fauve. »\n5) fauve : sauvage / dormir : se coucher\n6) Le père a trouvé King dans la forêt. Faux\n- Patricia donne des coups de poing à King pour lui faire mal. Faux\n- Quand Patricia arrête le jeu, King lui mord la main. Faux\n- King obéit toujours à Patricia. Vrai",
+      "figureDesc": "",
+      "answer": "Voir body (corrigé)",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p126_i4",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°4 - C) Grammaire",
+      "instruction": "Corrigé des questions 1 à 3",
+      "body": "1) La belle fille aux yeux bleus trouve une petite lionne blessée dans un fossé. Elle est trop maigre. La bête est puissante et gentille. Elles sont devenues deux amies inséparables.\n2) - Le lionceau ne dort jamais avec Patricia.\n- King ne fait plus tout ce que je veux.\n- Patricia ne joue jamais avec King dans le jardin.\n3) - Un complément essentiel : un petit lionceau\n- Deux compléments non essentiels : Hier, dans un fossé.",
+      "figureDesc": "",
+      "answer": "Voir body (corrigé)",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p126_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°4 - D) Conjugaison",
+      "instruction": "Corrigé des questions 1 à 3",
+      "body": "1) a- « Les filles soignent et sauvent les petits lionceaux. Elles mettent les animaux dans un landau. Les lionceaux grandissent vite. Ils obéissent à leur maîtresse. »\nb- Les filles ont soigné et ont sauvé les petits lionceaux. Elles ont mis les animaux dans un landau. Les lionceaux ont grandi vite. Ils ont obéi à leur maîtresse.\n2) a- Tu as fait une bêtise. Tu as mis le petit lionceau dans le poulailler. / Ma sœur et moi avons fait une bêtise. Nous avons mis le petit lionceau dans le poulailler. / Les deux fillettes ont fait une bêtise. Elles ont mis le petit lionceau dans le poulailler.\nb- Demain, je ferai une bêtise. Je mettrai le petit lionceau dans le poulailler. / Demain, nous ferons une bêtise. Nous mettrons le petit lionceau dans le poulailler.\n3) a- Hier, j'ai fini mes devoirs vite. J'ai pris le ballon et je suis allé au parc avec mon lionceau. Nous avons fait une sortie agréable. / Hier, les deux amies ont fini leurs devoirs vite. Elles ont pris le ballon et elles sont allées au parc avec leur lionceau. Ils ont fait une sortie agréable.\nb- Demain, nous finirons nos devoirs vite. Nous prendrons le ballon et nous irons au parc avec notre lionceau. Nous ferons une sortie agréable. / Demain, elles finiront leurs devoirs vite. Elles prendront le ballon et elles iront au parc avec leur lionceau. Ils feront une sortie agréable.",
+      "figureDesc": "",
+      "answer": "Voir body (corrigé)",
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p126_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°5 - B) Compréhension",
+      "instruction": "Corrigé des questions 1 à 4",
+      "body": "1) a- La tourterelle picore le grain et se sauve. Oui\nb- « Quand maman jette des grains pour les poules, elle descend se poser sur le sol et se met à picorer. Ensuite, elle retourne à l'arbre... »\n2) a- Oui, les filles ont obéi à leur père.\nb- Aussitôt, je pars avec l'une de mes sœurs et nous remettons notre tourterelle en liberté... / Quelqu'un qui voudrait savoir si vous êtes bien rentrées de la campagne ce matin.\nc- Elle est fatiguée.\n3) Le père enferme la tourterelle dans une cage pour une nuit seulement pour que les chats ne la mangent pas.\n4) C'est la tourterelle qui vient visiter les filles.",
+      "figureDesc": "",
+      "answer": "Voir body (corrigé)",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p126_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°5 - C) Grammaire",
+      "instruction": "Corrigé des questions 1 à 3",
+      "body": "1) * Le premier complément essentiel : lui\n* Le deuxième complément essentiel : un joli oiseau\n2) - Un complément de lieu : là\n- Un complément de temps : Toute la journée\n- Un complément de manière : doucement\n3) - Notre père réussit à l'attraper, quand la nuit est tout à fait venue.\n- Sur un des arbres de notre jardin, la tourterelle construit un nid.\n- La tourterelle picore les grains avec prudence.",
+      "figureDesc": "",
+      "answer": "Voir body (corrigé)",
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p126_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Évaluation n°5 - D) Conjugaison",
+      "instruction": "Corrigé des questions 1 et 2 (partiel)",
+      "body": "1) - Ma sœur est allée à la campagne. Elle a remis la tourterelle en liberté et elle est rentrée vite à la maison.\n- Les deux filles sont allées à la campagne. Elles ont remis la tourterelle en liberté et elles sont rentrées vite à la maison.\n2) a- Ma sœur a dit bonjour à sa maîtresse.\n- Mes parents ont lu un livre avant de dormir.\n- Mon camarade et moi avons écrit une lettre à notre ami.",
+      "figureDesc": "",
+      "answer": "Voir body (corrigé)",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p126_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.52
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page rassemble les corrigés de trois évaluations (n°3, n°4, n°5) de français portant sur des textes différents (berger, lionceau, tourterelle) et couvrant compréhension, grammaire et conjugaison, donc plusieurs modules sans correspondance claire avec un seul chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Corrigés d'évaluations de français",
+    "skill": "Vérifier et s'autocorriger en compréhension de texte, grammaire et conjugaison à partir de récits sur des animaux.",
+    "pageType": "correction",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "corrigé",
+      "compréhension de texte",
+      "compléments essentiels",
+      "futur et passé composé",
+      "impératif",
+      "récit d'animaux"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le schéma d'évaluation en trois volets (compréhension, grammaire, conjugaison) autour d'un même récit, avec des histoires d'animaux (brebis perdue, lionceau recueilli, tourterelle libérée), est réutilisable. La transformation de phrases (changement de personne, de temps, impératif) et le repérage de compléments en sont d'autres pistes. La page ne contient que des réponses, sans les consignes complètes.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

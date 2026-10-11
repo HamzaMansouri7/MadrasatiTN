@@ -1,0 +1,282 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 9,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الوحدة 2 : المضاعفات والقواسم، المساحة والمحيط، القسمة والضرب (سلسلة تمارين الدعم)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكمل لائحة مضاعفات العدد 8 الأصغر من 56 :",
+      "body": "0 ; 8 ; ........................................ 56",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p009_i1",
+      "topicId": "math-6-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمل لائحة مضاعفات العدد 7 الأصغر من 63 :",
+      "body": "0 ; 7 ; ........................................ 63",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p009_i2",
+      "topicId": "math-6-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أحط مضاعفات العدد 6 من الأعداد التالية :",
+      "body": "6 ; 7 ; 9 ; 12 ; 17 ; 18 ; 22 ; 25 ; 36 ; 40",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p009_i3",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أحط قواسم العدد 36 :",
+      "body": "1 ; 2 ; 5 ; 6 ; 8 ; 11 ; 12 ; 18 ; 24 ; 36",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p009_i4",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أ ـ حدد المضاعفات المشتركة للعددين 6 و 4 الأصغر من 50 :",
+      "body": "ب ـ حدد أصغر مضاعف مشترك للعددين 4 و 6 :\nج ـ حدد أكبر مضاعف مشترك للعددين 4 و 6 (الأصغر من 50) :\n(أسطر منقطة للإجابة)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p009_i5",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مسألة :",
+      "body": "يوجد بمكتبة 16 رفاً لوضع الكتب، ويحتوي كل رف على 12 كتابا.\n- حدد في أي رف يوجد الكتاب رقم 160 علما أن جميع الكتب مرقمة انطلاقا من الرف الأول.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p009_i6",
+      "topicId": "math-6-ch1",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أحسب ما يلي :",
+      "body": "4 : 1 = .......   ;   5 : 10 = ........\n4 : 10 = ......   ;   0,6 : 10 = .......\n4 : 100 = ........   ;   0,08 : 10 = ..........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p009_i7",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أنجز القسمات التالية :",
+      "body": "252 : 4 ; 595 : 5 ; 2912 : 7",
+      "figureDesc": "Trois cadres verts contenant chacun une potence de division vide : 252 ÷ 4, 595 ÷ 5, 2912 ÷ 7.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p009_i8",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "ما هو ثمن 1 kg من اللحم علما أن ثمن 8 kg هو 524 درهما ؟",
+      "body": "(أسطر منقطة للإجابة)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p009_i9",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "احسب مساحة ومحيط الشكلين (ضع العلاقة ثم التطبيق العددي)",
+      "body": "P = ... = ... = ... ; S = ... = ... = ... (pour chaque figure)",
+      "figureDesc": "Deux figures bleues dans un cadre jaune : un rectangle de 6 m sur 4 m, et un carré de côté 7 m ; cadres vides pour P (périmètre) et S (aire).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p009_i10",
+      "topicId": "math-6-ch1",
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "Calcule l’aire de la partie colorée (verte) :",
+      "body": "(lignes pointillées pour la réponse)",
+      "figureDesc": "Grand rectangle vert de 25 m de longueur et 19 m de hauteur, avec un rectangle blanc découpé sur le côté gauche ; cotes : 7 m en haut à gauche, 4 m en bas à gauche, 14 m en bas (longueur de la partie verte inférieure).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p009_i11",
+      "topicId": "math-6-ch1",
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "أحسب ما يلي :",
+      "body": "5 × 6 × 10 =\n65 + (320 + 126) =",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p009_i12",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "أحسب باستعمال خاصية التوزيعية لتسهيل عملية الضرب كما في المثال التالي :",
+      "body": "146 × 215 = 146 × (200 + 10 + 5)\n146 × 210 = (146 × 200) + (146 × 10) + (146 × 5)\n146 × 210 = 29 200 + 1460 + 730 = 31 390\n- 210 × 164 = ........\n- 210 × 164 = ........\n- 210 × 164 = ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p009_i13",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-ch1",
+  "topicTitle": "Période 1 : Nombres décimaux, surfaces et critères de divisibilité",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch1",
+    "confidence": 0.66
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de multiples, diviseurs, division décimale par 10 et 100 et divisions posées, ce qui relève des nombres décimaux et de la divisibilité de la Période 1 (Trimestre 1), mais aucun chapitre ne couvre explicitement multiples et diviseurs communs, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Multiples, diviseurs, division, périmètre et aire",
+    "skill": "Déterminer multiples et diviseurs d'un nombre, effectuer des divisions (dont par 10 et 100) et calculer périmètre et aire de figures.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "calcul",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "multiples",
+      "diviseurs",
+      "multiple commun",
+      "division",
+      "périmètre",
+      "aire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série de soutien variée : compléter des listes de multiples, entourer multiples et diviseurs, chercher les multiples communs, problème de rangement de livres par étagères, prix unitaire par division et calcul de périmètre et d'aire avec formule puis application numérique.",
+    "themeGroup": "Multiples et diviseurs"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête est absent : « سلسلة تمارين الدعم في الرياضيات - الوحدة 2 - المستوى 6 » et « اسم المتعلم (ة) : ... »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page « www.escuila.info » est absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 10 : les figures et leurs dimensions (rectangle 6m × 4m, carré de côté 7m) ne sont pas transcrites."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 11 : les cotes de la figure (25m, 7m, 4m, 19m, 14m) et le rectangle blanc sont absents."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 8 : la mise en forme des trois cadres de division (252 | 4, 595 | 5, 2912 | 7) est perdue ; seule la liste « 252 : 4 ; … » est donnée."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 5 : les parties ب et ج sont fusionnées dans la même case que l'énoncé 5-أ, avec des lignes de réponse indiquées comme « (أسطر منقطة للإجابة) » au lieu d'être transcrites ; la structure n'est pas respectée."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions « (أسطر منقطة للإجابة) » et « réponse: None » sont des annotations absentes de l'image."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 13 : l'exemple écrit « 146 × 210 = (146 × 200)… » à la 2e ligne, alors que l'image indique « 146 × 210 » (erreur de l'original) ; la transcription suit l'image. Mais l'exemple de la 1re ligne est « 146 × 215 », ce qui est correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 6 : la transcription ajoute des tirets et des retours à la ligne ; le texte « - حدد في أي رف يوجد الكتاب رقم 160 » est correct, mais « انطلاقا » devrait être « انطلاقا من الرف الأول » (présent), sans différence notable."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 4 : la liste est correcte, mais l'exercice 3 est écrit « أحط » alors que l'image affiche « أحط » ; aucune différence réelle."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

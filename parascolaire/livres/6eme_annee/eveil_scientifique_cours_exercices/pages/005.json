@@ -1,0 +1,100 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 5,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الهواء : خاصيّات الهواء (L'air : propriétés de l'air)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَة : هَلْ لِلْهَوَاءِ لَوْنٌ ؟ هَلْ يُرَى ؟ هَلْ لَهُ رَائِحَةٌ ؟ هَلْ لَهُ شَكْلٌ خَاصٌّ بِهِ ؟",
+      "body": "السَّنَدُ : يُحِيطُ الهَوَاءُ بِالكُرَةِ الأَرْضِيَّةِ مُكَوِّنًا الغِلَافَ الجَوِّيَّ ، وَإِذَا مَثَّلْنَا الأَرْضَ بِبُرْتُقَالَةٍ كَانَ الغِلَافُ الجَوِّيُّ مُمَثَّلًا بِقِشْرَتِهَا.",
+      "figureDesc": "Dessin d'une demi-orange (avec l'écorce en pointillés) à côté du globe terrestre, pour représenter l'atmosphère comme l'écorce de l'orange. Trois lignes pointillées pour écrire les réponses.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p005_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "مَاذَا أَثْبَتَتِ التَّجْرِبَةُ الَّتِي قَامَتْ بِهَا فَاطِمَةُ ؟",
+      "body": "1) وَزَنَتْ فَاطِمَةُ كُرَةً مَطَّاطِيَّةً بِالهَوَاءِ.\n2) أَفْرَغَتْ قَلِيلًا مِنَ الهَوَاءِ مِنْ دَاخِلِ الكُرَةِ إِلَى دَاخِلِ القَارُورَةِ كَمَا يُوَضِّحُهُ الشَّكْلُ.\n3) أَعَادَتْ وَزْنَ الكُرَةِ مِنْ جَدِيدٍ.",
+      "figureDesc": "Trois étapes numérotées : (1) balle sur une balance électronique (affichage 0850) ; (2) balle reliée par un tube à une éprouvette/bouteille remplie d'eau renversée dans une cuvette (récupération de l'air par déplacement d'eau) ; (3) balle sur la balance avec un affichage différent (0849).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p005_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ) لِمَاذَا نُمَرِّرُ تَيَّارًا مِنَ الهَوَاءِ فِي حَوْضِ السَّمَكِ المَنْزِلِيِّ ؟\nب) مَا هِيَ خَاصِّيَّةُ الهَوَاءِ الَّتِي تَسْتَنْتِجُهَا ؟",
+      "body": "",
+      "figureDesc": "Aquarium domestique avec poissons et plantes ; un tuyau amène de l'air (flèche rouge, mot « هواء ») dans l'eau. Lignes pointillées pour les réponses.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p005_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "عُنْوَانُ الصَّفْحَةِ : الهَوَاءُ : خَاصِّيَّاتُ الهَوَاءِ",
+      "body": "Titre de la page, avec en en-tête un schéma de deux récipients d'eau et une bouteille retournée avec un tissu/coton rose (expérience sur l'air). Numéro de page : 20.",
+      "figureDesc": "Deux schémas : bouteille avec bouchon de coton rose au-dessus d'un récipient d'eau bleue, flèche rouge entre les deux.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p005_i4",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.6666666666666666,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.71
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des propriétés de l'air (couleur, odeur, forme, atmosphère, pesée d'une balle contenant de l'air, dissolution de l'air dans l'eau de l'aquarium), ce qui relève de l'unité 2 sur l'air.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Propriétés de l'air",
+    "skill": "Identifier les propriétés de l'air (masse, oxygénation de l'eau, invisibilité, absence de forme) à partir d'expériences et de documents.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "air",
+      "propriétés de l'air",
+      "atmosphère",
+      "pesée",
+      "expérience",
+      "aquarium"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : partir d'une question-problème sur l'air, puis faire interpréter une expérience schématisée (pesée d'un ballon avant/après transfert d'air) et une situation quotidienne (air dans l'aquarium), avec l'analogie de l'orange pour représenter l'atmosphère.",
+    "themeGroup": "L'air et ses propriétés"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

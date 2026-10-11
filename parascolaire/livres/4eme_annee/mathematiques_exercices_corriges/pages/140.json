@@ -1,0 +1,217 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 140,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مذكرة هدية المؤلف: التوازي، محيط ومساحة المستطيل والمربع، وحدات قيس الأطوال (مضاعفات المتر وأجزاؤه) وجدول التحويلات",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "التوازي",
+      "body": "المستقيمان أ و ب متوازيان. المستقيمان د و ج متوازيان.",
+      "figureDesc": "أربعة مستقيمات مائلة (أ، ب، ج، د) مرسومة بالأحمر مع مثلثات قائمة الزاوية (مسطرة المثلث) مستندة إلى مستقيم أفقي أزرق لإثبات التوازي.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p140_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "قيس محيط المستطيل وقيس محيط المربع",
+      "body": "قيس محيط المستطيل : 2 x (طول + عرض). قيس محيط المربع : طول ضلع x 4.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p140_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "قيس الطول والعرض وضلع المربع",
+      "body": "قيس طول المستطيل : طول نصف المحيط – العرض. قيس عرض المستطيل : طول نصف المحيط – الطول. قيس ضلع المربع : طول المحيط على 4.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p140_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "مساحة المستطيل / مساحة المربع",
+      "body": "مساحة المستطيل تساوي جُذاء بعديه. مساحة المربع تساوي مربّع طول ضلعه. مساحة المستطيل: ط X ع. مساحة المربع: ض X ض.",
+      "figureDesc": "مستطيل بُعداه ط (الطول) وع (العرض) ومربع ضلعه ض، داخل إطارين أزرقين فاتحين مع القانونين.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p140_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوحدة الأساسية لقيس الأطوال",
+      "body": "الوحدة الأساسية لقيس الأطوال هي المتر ونرمز له هكذا م وهناك وحدات أخرى لقياس الأطوال. الوحدات الأكبر من المتر وهي مضاعفاته والوحدات الأصغر من المتر وهي أجزاؤه.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p140_i5",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "مضاعفات المتر لقيس الأطوال الكبيرة وهي :",
+      "body": "الدّيكامتر = 1 دكم = 10 م. الهكتومتر = 1 هم = 100 م. الكيلومتر = 1 كم = 1 000 م.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mathematiques_exercices_corriges_p140_i6",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أجزاء المتر لقياس الأطوال الصغيرة أو المتوسطة وهي",
+      "body": "الدّيسمتر = 1 دسم = 10 صم. الصنتيمتر = 1 صم = 10 مم. المليمتر = 1 مم. قيس طول الشّريط الورديّ = 8 صم و 5 مم.",
+      "figureDesc": "شريط وردي فوق مسطرة مدرّجة من 0 إلى 10 صم لقيس طول الشريط (8 صم و5 مم).",
+      "answer": "8 صم و 5 مم",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p140_i7",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول التحويلات يبيّن العلاقات التي تربط بين مختلف وحدات الطّول أو السّعة أو الكتلة بوحدات مختلفة أو للتّحويل من وحدة إلى أخرى.",
+      "body": "جدول الأطوال: كم، هم، دكم، م، دسم، صم، مم. جدول السعة: هل، دكل، ل، دسل، صل. جدول الكتلة: كغ، هغ، دكغ، غ. الخانات السفلية فارغة. إعداد : فريق مدرستي تونس",
+      "figureDesc": "ثلاثة جداول فارغة الصف السفلي: الأطوال (7 أعمدة)، السعة (5 وحدات)، الكتلة (4 وحدات).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p140_i8",
+      "topicId": "math-4-ch2",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "إشهار: تمارين + حلول",
+      "body": "تمارين + حلول. الكتاب الذي دخل كل بيت عن ثقة و اقتناع.",
+      "figureDesc": "صور أغلفة كتب سلسلة تمارين + حلول للسنتين الرابعة والخامسة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p140_i9",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch2",
+    "confidence": 0.35
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une fiche-mémo de mathématiques qui traite du parallélisme, du périmètre et de l'aire du rectangle et du carré (correspondant à la Période 2) mais aussi des unités de longueur et du tableau de conversions, qui relèvent plutôt de la Période 6, donc le chapitre n'est pas univoque.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Périmètre, aire et unités de longueur",
+    "skill": "Calculer le périmètre et l'aire d'un rectangle et d'un carré, et convertir des unités de longueur à l'aide du tableau de conversion.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "calcul"
+    ],
+    "keywords": [
+      "parallélisme",
+      "périmètre",
+      "aire",
+      "rectangle",
+      "carré",
+      "unités de longueur",
+      "tableau de conversion"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Fiche récapitulative de formules et de définitions, utile comme référence de cours ; on peut s'en inspirer pour des exercices de conversion avec tableau vide ou de recherche d'une dimension à partir du périmètre, mais elle ne propose aucune situation originale.",
+    "themeGroup": "Périmètre et aire"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres/bandeaux « 4 تمارين + حلول » (هدية المؤلف، رياضيات) en en-tête des deux pages ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau de conversion de la capacité est incomplet : la colonne vide (avant هل) n'est pas notée. Dans le tableau de la masse, il y a trois colonnes vides à gauche de غ qui ne sont pas indiquées. La transcription n'indique pas l'ordre inversé de lecture (de droite à gauche), ni la position des colonnes."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le tableau de capacité contient aussi « صل دسل ل دكل هل », ce qui est correct. Mais l'ordre « جدول الأطوال: كم، هم، دكم... » est inversé par rapport à l'image, où la ligne se lit de droite à gauche : مم، صم، دسم، م، دكم، هم، كم."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les schémas (droites parallèles a, b, c, d avec équerres), le dessin de la règle graduée avec la bande rose, les schémas du rectangle (ط، ع) et du carré (ض) ne sont pas décrits."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les titres comme « التوازي », « قيس محيط المستطيل وقيس محيط المربع », « قيس الطول والعرض وضلع المربع », « مساحة المستطيل / مساحة المربع » n'existent pas dans l'image ; ils ont été inventés pour regrouper les puces."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "L'ordre de lecture est inversé : la page de droite (parallélisme, périmètre, aire, unités) précède la page de gauche (sous-multiples). Cela est correct, mais la mention « مساحة المستطيل / مساحة المربع » : l'image place d'abord le rectangle à droite."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les voyelles visibles sont globalement présentes (الدّيكامتر، جُذاء، مربّع). « الكتاب الذي » dans l'annonce est vocalisé dans l'image (الكُتَابُ الَّذِي دَخَلَ كُلَّ بَيْتٍ عَنْ ثِقَةٍ وَاقْتِنَاعٍ) mais la transcription l'omet."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le mot « الشريط » est écrit « الشّريط » avec chadda, ce qui est correct. Le texte de la transcription « Voyelles » du slogan n'est pas vocalisé alors que l'image l'est."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,126 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 46,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La vision et l'œil : corrigés des éveils scientifiques de la 6ème page (protection de l'œil, structure de l'œil, propagation de la lumière, vision des objets, appareil photo et œil)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 1",
+      "body": "- الدموع تنظف العين من الأوساخ.\n- الحاجب يمنع العرق من النزول إلى العين.\n- الأهداب تمنع الأوساخ والجراثيم من النفاذ إلى العين.\n- المحجر يصون العين.\n- الجفن ينطبق على العين ويحميها خاصة عند النوم.\nت1: لا تبقى العينان ثابتتين.\nت2: تمتاز العين بقدرة كبيرة على الحركة بحيث تمكن الإنسان بدون أن يحرك رأسه من الرؤية في جميع الاتجاهات (من اليمين إلى الشمال ومن أعلى إلى أسفل). وهذا ما يفسر وجود عضلات تيسر دوران العين في محجرها ولكن لا تتحرك كل عين على حدة مستقلة عن الأخرى.",
+      "figureDesc": "",
+      "answer": "الدموع تنظف العين من الأوساخ؛ الحاجب يمنع العرق؛ الأهداب تمنع الأوساخ والجراثيم؛ المحجر يصون العين؛ الجفن ينطبق على العين. ت1: لا تبقى العينان ثابتتين.",
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p046_i1",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 2",
+      "body": "ت1: أ) القرنية، ب) القزحية، ج) العدسة، د) الشبكية. هـ) العصب البصري.\nت2: يتألف جدار كرة العين من ثلاث طبقات هي من الخارج إلى الداخل:\n1) الطبقة القرنية أو البيضاء الصلبة.\n2) الطبقة المشيمية التي تتفرع فيها الخلايا والأوعية الدموية.\n3) الطبقة الشبكية التي يخرج منها العصب البصري.\n- من الأوساط الشفافة في العين القرنية والحدقة والعدسة والسائل.\nت3: الغدتان الدمعيتان تفرزان الدمع الذي يعقم العين ويرطبها ويسهل حركة الجفن.",
+      "figureDesc": "",
+      "answer": "أ) القرنية، ب) القزحية، ج) العدسة، د) الشبكية، هـ) العصب البصري.",
+      "confidence": 0.78,
+      "id": "eveil_scientifique_cours_exercices_p046_i2",
+      "topicId": "sci-6-u1",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 3",
+      "body": "أرى الكتاب في جميع الأماكن، لأن أشعة ضوئية تصل إلى عيني منه مما يدل على أن الأشعة الواردة على الكتاب انتشرت في جميع الاتجاهات بعد ارتدادها منه، وهذا ما نسميه انتشار الضوء.\nسينتشر الضوء عندما يعترض سطح خشن في الاتجاهات كافة.",
+      "figureDesc": "",
+      "answer": "أرى الكتاب في جميع الأماكن لأن أشعة ضوئية تصل إلى عيني منه (انتشار الضوء).",
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p046_i3",
+      "topicId": "sci-6-u1",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 4",
+      "body": "أ) لا ترى الأشياء التي حولها لانعدام أشعة الضوء.\nب) رأت البنت بمينها الغير المضيئة بوساطة الضوء المنعكس عن سطحها.\n- العين ترى الأشياء عندما يصل الضوء من الجسم إلى العين.\n- القمر ينير الأرض في بعض الليالي، رغم أنه ليس مصدرا ذاتي الإضاءة. فهو في الحقيقة يستمد ضوءه من ضوء الشمس.\nضوء الشمس يسقط على سطح القمر، وسطح القمر يعمل على ارتداد الضوء إلى الأرض فيظهر مضيئا.",
+      "figureDesc": "",
+      "answer": "العين ترى الأشياء عندما يصل الضوء من الجسم إلى العين؛ القمر ليس مصدرا ذاتيا للإضاءة، يستمد ضوءه من الشمس ويرتده إلى الأرض.",
+      "confidence": 0.7,
+      "id": "eveil_scientifique_cours_exercices_p046_i4",
+      "topicId": "sci-6-u1",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 5",
+      "body": "العين - العصب البصري - المخ.\nآلة التصوير صندوق مطلي باللون الأسود من الداخل، في مقدمة الآلة فتحة ضيقة يتحكم بها الغالق، خلف هذه الفتحة توجد عدسة محدبة الوجهين، يوضع على الوجه المقابل للعدسة الفيلم الحساس للضوء.",
+      "figureDesc": "",
+      "answer": "العين - العصب البصري - المخ.",
+      "confidence": 0.78,
+      "id": "eveil_scientifique_cours_exercices_p046_i5",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 6",
+      "body": "عندما تفتح الحاجب تسمح بمرور كمية من الضوء عبر العدسة، فتتكون الصورة.\n- تشبه عين الإنسان بطبقاتها آلة التصوير، فعدسة العين تقوم بدور عدسة آلة التصوير، والقزحية تعمل عمل المنظم الضوئي، والتجويف الداخلي للغرفة الخلفية والذي هو معتم بسبب أصباغ المشيمية يقوم بدور الغرفة السوداء في آلة التصوير. أما الطبقة الشبكية فهي تقوم بدور الفيلم الذي تنطبع عليه صور الأجسام.\nتتسع القزحية. فالقزحية تكيف اتساع الحدقة بواسطة الياف تعمل على اتساعها أو التضييق فيها حسب شدة النور (لاحظ عين القط في الظلام الدامس).",
+      "figureDesc": "جدول من عمودين يقابل بين العين وآلة التصوير: القزحية↔المنظم الضوئي، العدسة↔الأوساط الشفافة، المشيمية (الغرفة الخلفية المعتمة)↔الغرفة السوداء، الشبكية↔الفيلم الحساس.",
+      "answer": "العين/آلة التصوير: الغرفة الخلفية المعتمة ↔ الغرفة السوداء؛ الأوساط الشفافة ↔ العدسة؛ القزحية ↔ المنظم الضوئي؛ الشبكية ↔ الفيلم الحساس.",
+      "confidence": 0.72,
+      "id": "eveil_scientifique_cours_exercices_p046_i6",
+      "topicId": "sci-6-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u1",
+  "topicTitle": "Unité 1 : L'œil, la lumière et l'optique",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u6",
+    "confidence": 0.41
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page contient les corrigés d'éveil scientifique sur la protection de l'œil, sa structure (cornée, iris, cristallin, rétine), la propagation et la réflexion de la lumière, la vision des objets et la comparaison œil/appareil photo, ce qui correspond à l'Unité 1 : L'œil, la lumière et l'optique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La vision et l'œil",
+    "skill": "Décrire la structure et la protection de l'œil, expliquer comment la lumière se propage et permet de voir les objets, et comparer l'œil à l'appareil photo.",
+    "pageType": "correction",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "œil",
+      "vision",
+      "propagation de la lumière",
+      "appareil photo",
+      "protection de l'œil",
+      "rétine"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les corrigés montrent des situations réutilisables : légender un schéma de l'œil, expliquer pourquoi on voit un livre sous tous les angles (lumière diffusée), l'exemple de la lune non lumineuse et la comparaison œil/appareil photo sous forme de correspondances.",
+    "themeGroup": "La lumière et la vision"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

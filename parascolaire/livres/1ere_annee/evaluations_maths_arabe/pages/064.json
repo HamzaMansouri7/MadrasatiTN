@@ -1,0 +1,152 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 64,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الجمع في نطاق الأعداد من 0 إلى 19",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَخْتَارُ مَا يُنَاسِبُ مِنَ الْأَعْدَادِ التَّالِيَةِ وَأَكْتُبُهَا فِي التَّرْبِيعَاتِ الْفَارِغَةِ.",
+      "body": "الأعداد: [ 17 - 2 - 8 - 16 - 14 - 11 - 9 - 18 - 7 ]\n\nجَدْوَلُ الْجَمْعِ:\n+ | 8 | 7 | 3 | 2 | 13\n4 | 12 | ..... | ..... | 6 | .....\n6 | ..... | 13 | 9 | ..... | 19",
+      "figureDesc": "جدول جمع يتضمن أعداداً وفراغات مع شريط أعداد في الأعلى للاختيار منها",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p064_i1",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَكْتُبُ الْأَعْدَادَ الْمُنَاسِبَةَ فِي الْفَرَاغَاتِ :",
+      "body": "جَدْوَلُ الْجَمْعِ:\n+ | ..... | 4 | ..... | . + 1\n3 + 9 | 14 | ..... | ..... | .....\n7 | ..... | ..... | 10 | .....\n. + 4 | 10 | ..... | ..... | .....\n15 | ..... | ..... | ..... | 18",
+      "figureDesc": "جدول جمع ثنائي المدخل يحتوي على فراغات وأعداد وعبارات جمعية",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p064_i2",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "بَذَرَ كُلٌّ مِنْ رَامِي وَشَادِي بَذْرَةَ فُولٍ فَتَحَصَّلَا عَلَى النَّتِيجَةِ التَّالِيَةِ. أُتِمُّ وَأُقَارِنُ .",
+      "body": "نَبْتَةُ رَامِي:\n- عَدَدُ الْأَوْرَاقِ عَلَى الْأَغْصَانِ: ( ) ، 8 ، 4\n- عَدَدُ الْأَوْرَاقِ الْجُمْلِيَّةِ: 17\n\nنَبْتَةُ شَادِي:\n- عَدَدُ الْأَوْرَاقِ عَلَى الْأَغْصَانِ: 5 ، ( ) ، 6\n- عَدَدُ الْأَوْرَاقِ الْجُمْلِيَّةِ: 15",
+      "figureDesc": "رسم لنبتتين من الفول، كل واحدة بثلاثة فروع تنتهي بدوائر لكتابة عدد الأوراق مع ذكر المجموع الكلي أسفل كل نبتة",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p064_i3",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَرْبِطُ بِمَا يُنَاسِبُ :",
+      "body": "السّطْرُ الأَوَّلُ (عِبَارَاتُ الْجَمْعِ):\n8 + 7 •\n9 + 1 •\n6 + 2 •\n8 + 9 •\n6 + 7 •\n\nالسّطْرُ الثَّانِي (عِبَارَاتُ الْجَمْعِ):\n3 + 10 •\n6 + 9 •\n5 + 3 •\n10 + 7 •\n8 + 2 •\n\nالسّطْرُ الثَّالِثُ (النَّتَائِجُ):\n17 •\n8 •\n10 •\n14 •\n13 •\n9 •\n15 •",
+      "figureDesc": "ثلاثة صفوف من النقاط: الصف الأول والثاني يحتويان على بطاقات عمليات جمع، والصف الثالث يحتوي على بطاقات للأعداد لربط العمليات بنتائجها المتساوية",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p064_i4",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "topicId": "math-1-p4",
+  "topicTitle": "Période 4 : Nombres de 11 à 19, tables d'addition et soustraction",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p4",
+    "confidence": 0.99
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des tables d'addition et des exercices d'addition avec des nombres de 11 à 19 (sommes jusqu'à 19), ce qui correspond à la Période 4 : nombres de 11 à 19, tables d'addition et soustraction.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition jusqu'à 19",
+    "skill": "Calculer des sommes dont le résultat est inférieur ou égal à 19 et compléter des tableaux d'addition.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "appariement",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "addition",
+      "nombres jusqu'à 19",
+      "tableau d'addition",
+      "appariement",
+      "problème de plantation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : tableaux d'addition à double entrée avec cases à compléter, appariement entre opérations et résultats (avec des intrus), et situation concrète de comparaison de deux plantes de fève en cherchant un terme manquant.",
+    "themeGroup": "Addition jusqu'à 20"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 3, tableau: la ligne d'en-tête est transcrite de gauche à droite (+ | 8 | 7 | 3 | 2 | 13), alors que l'image la montre de droite à gauche. Les valeurs sont correctes mais l'ordre visuel est inversé, ce qui peut créer des ambiguïtés."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 3, ligne 4: valeurs 12, 6 bien placées, mais les cases vides (........) sont à la 3e, 4e et 6e positions selon l'image (13, .... ), à vérifier: ligne 6: 19 | ..... | 9 | 13 | ..... | 6 — la transcription donne '6 | ..... | 13 | 9 | ..... | 19', soit 13 et 9 inversés par rapport à l'image (image: 3→9, 7→13)."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 4: la colonne d'en-tête est mal transcrite. Dans l'image, la 1ère ligne contient '+ | ...... | 4 | ...... | . + 1' et les lignes suivantes '3 + 9 | 14', '7', '. + 4 | 10', '15'. Le 10 de la ligne '7' est dans la colonne 2 (en partant de la droite 3), et 18 est dans la dernière ligne, colonne gauche. La transcription déplace plusieurs valeurs (14, 10) de colonne."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 4: la case de la ligne '7' (colonne 3) est vide sans pointillés dans l'image; la transcription met '.....'."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5: 'عَدَدُ الْأَوْرَاقِ عَلَى الْأَغْصَانِ' est inventé; l'image montre seulement des cercles au sommet des branches (pas de légende)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 6: la rangée du bas contient 15, 9, 13, 14, 10, 8, 17 (de gauche à droite); la transcription les liste dans un autre ordre (17, 8, 10, 14, 13, 9, 15 = lecture droite-gauche, acceptable mais non indiquée)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les titres 'جَدْوَلُ الْجَمْعِ' et 'السّطْرُ الأَوَّلُ/الثَّانِي/الثَّالِثُ' sont ajoutés et absents de l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le titre de l'exercice 6 'أَرْبِطُ بِمَا يُنَاسِبُ' a des voyelles à vérifier: l'image montre 'أَرْبُطُ بِـمَا يُنَاسِبُ' (أَرْبُطُ avec damma)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

@@ -1,0 +1,264 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 62,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الدرس 33: أنجز عملية ضرب عدد عشري في آخر عشري (ملاحظة : la page est de mathématiques et non de langue arabe, malgré la matière indiquée dans la demande)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "33",
+      "instruction": "",
+      "body": "الدرس 33 : أنجز عملية ضرب عدد عشري في آخر عشري",
+      "figureDesc": "Bandeau-titre décoratif avec le logo « السنة 5 » à gauche ; numéro de page 63 en bas de la page",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p062_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَلْجِزِ العَمَلِيَّاتِ التَّالِيَةَ :",
+      "body": "Quatre opérations posées en colonnes, de droite à gauche : (1) addition : 4 . ,7 . 4 + . 3 , . 5 . = 123,422 (chiffres manquants à retrouver) ; (2) soustraction : 2 . 3 , . 5 . - 17 . ,967 = . 87 , . 83 (chiffres manquants) ; (3) multiplication : 32,57 × 69 = ....... ; (4) multiplication : 32,57 × 6,9 = .......",
+      "figureDesc": "Quatre opérations posées séparées par des traits verticaux, avec une icône de crayon à côté de chaque opération",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p062_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَعَدَّ مُهَنْدِسٌ مِعْمَارِيٌّ تَصَامِيمَ لِمَسَاكِنَ مُخْتَلِفَةِ الْمِسَاحَةِ كَمَا هُوَ مُبَيَّنٌ فِي الْجَدْوَلِ التَّالِي:",
+      "body": "المساكن: أ، ب، ج، د. قيس الطول: أ = 17,75 م ؛ ب = 14,6 م ؛ ج = 18,5 م ؛ د = 10,45 م. قيس العرض: أ = 15 م ؛ ب = 12,5 م ؛ ج = 13,85 م ؛ د = 8,20 م. قيس المساحة: (فارغ). • احْسُبْ قِيسَ مِسَاحَةِ كُلِّ مَسْكَنٍ. • رَتِّبْ هَذِهِ الْمَسَاكِنَ مِنَ الأَصْغَرِ مِسَاحَةً إِلَى الأَكْبَرِ مِسَاحَةً.",
+      "figureDesc": "Tableau de 5 colonnes (المساكن، أ، ب، ج، د) et 3 lignes (الطول، العرض، المساحة) ; la ligne de l'aire est vide. Ligne pointillée pour la réponse du rangement.",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p062_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "",
+      "body": "لِنَجَّارٍ وَرَقَةٌ مِنَ الْخَشَبِ الْمَضْغُوطِ بُعْدَاهَا 1,75 م وَ 2,40 م قَسَّمَهَا إِلَى أَجْزَاءٍ: الْجُزْءُ الأَوَّلُ 1,2 م و1,6 م. وَالْجُزْءُ الثَّانِي 1,50 م و0,8 م وَالْجُزْءُ الثَّالِثُ 55 صم و 1,20 م. • احْسُبْ قِيسَ مِسَاحَةِ كُلِّ جُزْءٍ. • مَاهُوَ قِيسُ مِسَاحَةِ الْجُزْءِ الْمُتَبَقِّي ؟",
+      "figureDesc": "Lignes pointillées pour écrire les réponses, sous chaque question",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_evaluations_p062_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la multiplication d'un décimal par un décimal (calcul d'aires de rectangles), ce qui correspond à la Période 3 : multiplication/division des décimaux et polygones.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Multiplication de nombres décimaux",
+    "skill": "Effectuer la multiplication d'un nombre décimal par un autre nombre décimal et l'utiliser pour calculer des aires.",
+    "pageType": "mixed",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "multiplication décimaux",
+      "aire du rectangle",
+      "opérations posées",
+      "chiffres manquants",
+      "problème de mesures"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : opérations à trous à reconstituer, tableau de dimensions à compléter avec les aires puis classement par ordre croissant, et situations concrètes (plans de logements, découpe d'une plaque de bois) avec conversion d'unités cm/m.",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Consigne 1 : « أنجز »/« أَلْجِزِ » est transcrit avec un ل fautif ; l'image montre « أَنْجِزِ » (alif-nûn-jîm-zây). Le titre de la leçon est en revanche correct."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 1 : les opérations sont décrites « de droite à gauche » mais numérotées dans le mauvais ordre. De droite à gauche, on a l'addition, la soustraction, 32,57×69, puis 32,57×6,9. L'image montre bien 32,57×6,9 à l'extrême gauche et 32,57×69 juste à sa droite ; la transcription les place dans le bon ordre mais les numérote (3) et (4) de façon ambiguë."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Addition : l'image montre « 4 . ,7 . 4 » et « . 3 , . 5 . » avec des points à la place des chiffres manquants. La transcription « 4 . ,7 . 4 + . 3 , . 5 . » est approximative : la virgule du second terme et la position des points ne sont pas fidèles."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Soustraction : l'image montre « 2 . 3 ,. 5 . », « 17 . ,967 » et « . 87 ,. 83 ». La transcription est à peu près correcte, mais la position des points est légèrement différente."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les voyelles de l'exercice 3 sont partiellement inventées : « لِنَجَّارٍ » devrait être « لِنَجَّارٍ » (correct), mais « قَسَّمَهَا » et « أَجْزَاءٍ » apparaissent avec des voyelles différentes de l'image (« قَسَّمَهَا إِلَى أَجْزَاءٍ »). Plusieurs voyelles sont ajoutées alors que le texte de l'image est peu lisible."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « 55 صم » correspond bien à l'image (55 cm). « مَاهُوَ » est écrit « مَاهُوَ » ; l'image montre « مَاهُوَ قِيسُ مِسَاحَةِ الجُزْءِ المُتَبَقِّي »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 3 : la transcription place « احْسُبْ قِيسَ مِسَاحَةِ كُلِّ جُزْءٍ » en tête comme élément séparé, puis la répète. C'est un doublon qui n'existe pas dans cet ordre dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Éléments non transcrits : numéro de page 63, l'en-tête « السنة 5 », les lignes pointillées de réponse et la ligne d'espace sous la question de rangement."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 3 : la consigne « احْسُبْ قِيسَ مِسَاحَةِ كُلِّ جُزْءٍ » est placée dans le champ instruction puis répétée dans le body. Dans l'image elle n'apparaît qu'une fois, comme puce après l'énoncé. L'énoncé du problème n'a pas de consigne séparée en tête, donc le champ instruction doit rester vide."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 63, en bas de la page, n'est pas transcrit. Le logo « السنة 5 » est déjà mentionné dans figureDesc de la leçon."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "33",
+      "instruction": "",
+      "body": "الدرس 33 : أنجز عملية ضرب عدد عشري في آخر عشري",
+      "figureDesc": "Bandeau-titre décoratif avec le logo « السنة 5 » à gauche ; numéro de page 63 en bas de la page",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p062_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَلْجِزِ العَمَلِيَّاتِ التَّالِيَةَ :",
+      "body": "Quatre opérations posées en colonnes, de droite à gauche : (1) addition : 4 . ,7 . 4 + . 3 , . 5 . = 123,422 (chiffres manquants à retrouver) ; (2) soustraction : 2 . 3 , . 5 . - 17 . ,967 = . 87 , . 83 (chiffres manquants) ; (3) multiplication : 32,57 × 69 = ....... ; (4) multiplication : 32,57 × 6,9 = .......",
+      "figureDesc": "Quatre opérations posées séparées par des traits verticaux, avec une icône de crayon à côté de chaque opération",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p062_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَعَدَّ مُهَنْدِسٌ مِعْمَارِيٌّ تَصَامِيمَ لِمَسَاكِنَ مُخْتَلِفَةِ الْمِسَاحَةِ كَمَا هُوَ مُبَيَّنٌ فِي الْجَدْوَلِ التَّالِي:",
+      "body": "المساكن: أ، ب، ج، د. قيس الطول: أ = 17,75 م ؛ ب = 14,6 م ؛ ج = 18,5 م ؛ د = 10,45 م. قيس العرض: أ = 15 م ؛ ب = 12,5 م ؛ ج = 13,85 م ؛ د = 8,20 م. قيس المساحة: (فارغ). • احْسُبْ قِيسَ مِسَاحَةِ كُلِّ مَسْكَنٍ. • رَتِّبْ هَذِهِ الْمَسَاكِنَ مِنَ الأَصْغَرِ مِسَاحَةً إِلَى الأَكْبَرِ مِسَاحَةً.",
+      "figureDesc": "Tableau de 5 colonnes (المساكن، أ، ب، ج، د) et 3 lignes (الطول، العرض، المساحة) ; la ligne de l'aire est vide. Ligne pointillée pour la réponse du rangement.",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p062_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "",
+      "body": "لِنَجَّارٍ وَرَقَةٌ مِنَ الْخَشَبِ الْمَضْغُوطِ بُعْدَاهَا 1,75 م وَ 2,40 م قَسَّمَهَا إِلَى أَجْزَاءٍ: الْجُزْءُ الأَوَّلُ 1,2 م و1,6 م. وَالْجُزْءُ الثَّانِي 1,50 م و0,8 م وَالْجُزْءُ الثَّالِثُ 55 صم و 1,20 م. • احْسُبْ قِيسَ مِسَاحَةِ كُلِّ جُزْءٍ. • مَاهُوَ قِيسُ مِسَاحَةِ الْجُزْءِ الْمُتَبَقِّي ؟",
+      "figureDesc": "Lignes pointillées pour écrire les réponses, sous chaque question",
+      "answer": null,
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_ahram_5eme_complet_p062_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "33",
+      "instruction": "",
+      "body": "الدرس 33 : أنجز عملية ضرب عدد عشري في آخر عشري",
+      "figureDesc": "Bandeau-titre décoratif avec le logo « السنة 5 » à gauche",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p062_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَلْجِزِ العَمَلِيَّاتِ التَّالِيَةَ :",
+      "body": "Quatre opérations posées en colonnes, de droite à gauche : (1) addition : 4 . ,7 . 4 + . 3 , . 5 . = 123,422 (chiffres manquants à retrouver) ; (2) soustraction : 2 . 3 , . 5 . - 17 . ,967 = . 87 , . 83 (chiffres manquants) ; (3) multiplication : 32,57 × 69 = ....... ; (4) multiplication : 32,57 × 6,9 = .......",
+      "figureDesc": "Quatre opérations posées séparées par des traits verticaux, avec une icône de crayon à côté de chaque opération",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "al_ahram_5eme_complet_p062_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَعَدَّ مُهَنْدِسٌ مِعْمَارِيٌّ تَصَامِيمَ لِمَسَاكِنَ مُخْتَلِفَةِ الْمِسَاحَةِ كَمَا هُوَ مُبَيَّنٌ فِي الْجَدْوَلِ التَّالِي:",
+      "body": "المساكن: أ، ب، ج، د. قيس الطول: أ = 17,75 م ؛ ب = 14,6 م ؛ ج = 18,5 م ؛ د = 10,45 م. قيس العرض: أ = 15 م ؛ ب = 12,5 م ؛ ج = 13,85 م ؛ د = 8,20 م. قيس المساحة: (فارغ). • احْسُبْ قِيسَ مِسَاحَةِ كُلِّ مَسْكَنٍ. • رَتِّبْ هَذِهِ الْمَسَاكِنَ مِنَ الأَصْغَرِ مِسَاحَةً إِلَى الأَكْبَرِ مِسَاحَةً.",
+      "figureDesc": "Tableau de 5 colonnes (المساكن، أ، ب، ج، د) et 3 lignes (الطول، العرض، المساحة) ; la ligne de l'aire est vide. Ligne pointillée pour la réponse du rangement.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p062_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "احْسُبْ قِيسَ مِسَاحَةِ كُلِّ جُزْءٍ.",
+      "body": "لِنَجَّارٍ وَرَقَةٌ مِنَ الْخَشَبِ الْمَضْغُوطِ بُعْدَاهَا 1,75 م وَ 2,40 م قَسَّمَهَا إِلَى أَجْزَاءٍ: الْجُزْءُ الأَوَّلُ 1,2 م و1,6 م. وَالْجُزْءُ الثَّانِي 1,50 م و0,8 م وَالْجُزْءُ الثَّالِثُ 55 صم و 1,20 م. • احْسُبْ قِيسَ مِسَاحَةِ كُلِّ جُزْءٍ. • مَاهُوَ قِيسُ مِسَاحَةِ الْجُزْءِ الْمُتَبَقِّي ؟",
+      "figureDesc": "Lignes pointillées pour écrire les réponses",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p062_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

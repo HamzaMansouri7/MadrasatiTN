@@ -1,0 +1,175 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 73,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Examen normalisé provincial (Maroc, Khouribga, juillet 2022) – Épreuve de français : compréhension de l'écrit sur l'internet. La page n'est pas une page de mathématiques et ne provient pas d'un manuel tunisien.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte d'appui :",
+      "body": "L'internet est un grand réseau mondial formé de sites web disponibles au public.\nIl offre plusieurs services gratuits à savoir :\n- La recherche facile d'information en illimité ;\n- Le partage des documents et des images à travers les réseaux sociaux ;\n- Des sites e-commerce qui facilitent l'achat et la vente des articles.\nL'internet peut avoir des défauts comme la perte de temps, le stress, la fatigue des yeux et l'obésité.\nLa neuroscience affirme que l'usage intense d'internet diminue l'attention des élèves, affaiblit leurs mémoires et baisse ainsi leurs capacités d'apprentissage.\nEt un enfant sera dépendant à internet s'il se connecte plus de quatre heures par jour.\nJEAN Lefèvre, « les progrès de la science », page 22",
+      "figureDesc": "En-tête de l'examen : Ministère de l'Éducation Nationale, Académie régionale de Béni Mellal-Khénifra, Direction provinciale de Khouribga. Examen normalisé provincial pour l'obtention du certificat d'études primaires, épreuve de français, session juillet 2022, durée 1h30. Cadre pour le nom et prénom et le numéro d'inscription.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p073_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "D'où ce texte est-il extrait ? (1,5pt)",
+      "body": "I. COMPRÉHENSION DE L'ÉCRIT (15 pts)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p073_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "L'internet est-il un service gratuit ? (2pts)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p073_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Qu'est-ce qui facilite l'achat des articles par internet ? (2pts)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p073_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Relève du texte un défaut lié à internet. (2pts)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p073_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Quand un enfant sera-t-il dépendant à internet ? (2pts)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p073_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Quel est le type de ce texte ? Mets une croix devant la bonne réponse. (1,5pt)",
+      "body": "Narratif / Informatif / prescriptif",
+      "figureDesc": "Tableau à deux colonnes : les types de texte (Narratif, Informatif, prescriptif) et une case vide à cocher pour chacun.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p073_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.25
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un extrait d'examen normalisé marocain (Khouribga, 2022) de compréhension de l'écrit sur l'internet, c'est une évaluation générale qui ne provient pas du programme tunisien et ne correspond clairement à aucun module officiel (le module 2 sur les médias et la communication est seulement une proximité thématique).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : l'internet",
+    "skill": "Lire un texte informatif sur l'internet et répondre à des questions de compréhension (source, information explicite, type de texte).",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "autre"
+    ],
+    "keywords": [
+      "internet",
+      "compréhension de l'écrit",
+      "texte informatif",
+      "examen normalisé",
+      "avantages et dangers",
+      "dépendance"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'épreuve notée avec un texte documentaire sur un sujet d'actualité (numérique), suivi de questions variées : identifier la source, relever une information ou un défaut, justifier, déterminer le type de texte par croix, avec barème par question.",
+    "themeGroup": "Internet et technologies"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (Ministère de l'Éducation Nationale, Examen normalisé provincial pour l'obtention du certificat d'études primaires, Épreuve de FRANÇAIS, Session juillet 2022, Durée 1h30, Nom et prénom, Numéro d'inscription) est absent de la transcription."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « I. COMPRÉHENSION DE L'ÉCRIT (15 pts) » est placé après le texte d'appui mais fusionné avec la question 1 ; il devrait être un en-tête de section séparé, avant les questions."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« élèves, affaiblit » : la virgule n'apparaît pas dans l'image (« des élèves affaiblit leurs mémoires »). Le mot « élèves » est coupé en bord de page."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre est écrit « COMPRÉHENSION DE L'ÉCRIT » avec des accents, alors que l'image indique « COMPREHENSION DE L'ECRIT » sans accents. Il s'agit d'une normalisation mineure."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

@@ -1,0 +1,65 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 35,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "أنشودتي في التاريخ لتسهيل حفظ الدروس (comptine d'histoire pour mémoriser les leçons : préhistoire, naissance du Christ, apparition de l'écriture, fondation de Carthage). Page sans rapport avec les mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أنشودتي في التاريخ لتسهيل حفظ الدروس",
+      "body": "مشينا لقفصة لقينا حضاره\nحضاره قبصية هي هي هي\nحضاره قبصية هي هي هي\nهي حضاره قبل التاريخ\nبين ألاف و خمسة ألاف\nبين ألاف و خمسة ألاف\nولد المسيح في واحد ميلاد\nظهور الكتابة في\nظهور الكتابة في\nأسس الفينيقيون قرطاج\nفي ثمان مائة و\nفي ثمان مائة و\nإرتبطت شخصيا بعليسة\nفي القرن يوجد سنة\nفي القرن يوجد سنة",
+      "figureDesc": "Page encadrée d'une bordure décorative de petits cercles jaunes avec une flèche; titre en rouge, texte en gras calligraphique noir. Certaines lignes sont répétées (refrain). Les nombres sont laissés incomplets pour être complétés à l'oral.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p035_i1",
+      "topicId": "hg-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "hg-5-u1",
+  "topicTitle": "Unité 1 : Histoire - Introduction et Tunisie antique",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-5-u3",
+    "confidence": 0.48
+  },
+  "topicSubject": "Histoire & Géographie",
+  "topicReason": "La page est une comptine d'histoire qui mêle la civilisation capsienne (Gafsa, préhistoire), des repères chronologiques (naissance du Christ, apparition de l'écriture) et la fondation de Carthage ; elle relève surtout de l'unité 1 (repères chronologiques et civilisation capsienne), mais touche aussi l'unité 3 (Carthage), d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Histoire-Géographie",
+    "theme": "Repères chronologiques de l'histoire tunisienne",
+    "skill": "Mémoriser des dates et civilisations clés (préhistoire, écriture, fondation de Carthage) à l'aide d'une comptine.",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "comptine",
+      "frise chronologique",
+      "préhistoire",
+      "Capsien",
+      "Carthage",
+      "Élissa"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Mettre des dates et des événements en chanson sur un refrain rythmé aide à les retenir ; on peut réutiliser l'idée pour d'autres leçons, avec des trous à compléter sur les dates, ou la transformer en frise chronologique illustrée.",
+    "themeGroup": "Repères chronologiques et calendriers"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Histoire-Géographie"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

@@ -1,0 +1,90 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 51,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Page de texte sans contenu mathématique : fin d'un passage sur les droits et devoirs de l'élève (règlement scolaire) et annonce de la partie 2 du livre. Aucun exercice ni leçon de mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "و يلتزم كذلك بالحفاظ على ممتلكات المدرسة و الأدوات المستخدمة بشكل مشترك بين الطلاب ، كما يجب عليه الإلتزام بإحضار أدواته و حضور الإمتحانات\nكانت تلك الأمثلة عن حقوق التلميذ و واجباته في المدارس و المؤسسات التعليمية بشكل عام ، و لا ينفي هذا أن لكل مدرسة أو مؤسسة أن تضع ما يناسبها من لوائح تبعاً لما تقدمه من نظم تعليمية",
+      "figureDesc": "Page encadrée d'une bordure décorative de cercles jaunes à chevron.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p051_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "في هذا الجزء الأول من الكتاب قدمت لكم أغلب الدروس الأساسية موعدنا مع الجزء الثاني الذي سأثريه بمجموعة من الإختبارات وسيكون بإذن الله ثري بالمعلومات\nوسيم",
+      "figureDesc": "Texte dans un cadre à double trait noir ; le mot « وسيم » (signature de l'auteur) est écrit en rouge.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p051_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-5-m8",
+    "confidence": 0.25
+  },
+  "topicSubject": "Autre (page de conclusion / règlement scolaire)",
+  "topicReason": "La page, en arabe, traite des droits et devoirs de l'élève et annonce la partie 2 du livre ; ce n'est ni une leçon ni un exercice et elle ne correspond à aucun chapitre officiel.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation civique",
+    "theme": "Droits et devoirs de l'élève",
+    "skill": "Comprendre les droits et les devoirs de l'élève dans le cadre du règlement scolaire.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "droits de l'élève",
+      "devoirs de l'élève",
+      "règlement scolaire",
+      "biens de l'école",
+      "examens"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Le texte explicatif sur les devoirs de l'élève (respect du matériel commun, apporter ses affaires, assister aux examens) peut servir de support à un vrai/faux ou à un appariement droits/devoirs, mais la page contient peu de matière originale, et l'annonce de la partie 2 n'a aucune valeur pédagogique.",
+    "themeGroup": "Droits et devoirs de l'élève"
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le texte de l'image donne « و يلتزم كذلك بالحفاظ على ممتلكات المدرسة و الأدوات المستخدمة بشكل مشترك بين الطلاب » : la transcription est conforme, aucune erreur trouvée sur ce passage."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "labels": {
+    "pageSubject": "Éducation civique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

@@ -1,0 +1,62 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 33,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : La louve et les deux bébés (d'après Laura Orviéto)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "La louve et les deux bébés\n\nLe prince ordonne à un vieux chasseur d'emmener les nouveaux -nés dans la forêt et de les tuer.\nL'homme prit le panier dans lequel se trouvaient les deux bébés et sortit du palais. Il traversa la ville et alla dans les bois, là où l'on entendait hurler les loups. Il arriva près d'un fleuve. Non loin de là se trouvait une cabane, habitée par un homme, Rémus, qui gardait le troupeau du prince. Le vieux chasseur dépassa cette cabane et remonta le cours du fleuve.\nTout à coup, il vit une louve qui le regardait fixement.\n« Voilà ce qui tuera les enfants. Je les laisserai ici et dans une heure, ils seront dévorés. Pauvres petits, comme je les regrette ! Mais il me faut obéir aux ordres que j'ai reçus ». Et le vieil homme déposa la corbeille parmi les roseaux, sur la rive du fleuve, puis il retourna en ville.\n... Il se passait une chose étrange dans les buissons près du fleuve. Tous les jours, une louve sortait de la forêt et passait devant la cabane de Rémus. Elle s'approchait de l'eau et restait tapie dans les buissons, toujours au même endroit. Elle demeurait là, pendant un certain temps, puis reprenait le chemin du bois.\nÉtonné par le va -et- vient de la louve, Rémus raconta à sa femme ce qui se passait. Le lendemain, ils décidèrent d'aller voir de plus près ce que faisait l'animal.\nQuand la louve fut retournée au bois, ils s'approchèrent des buissons et ils virent quelque chose bouger.\n- Deux bébés ! s'exclama Rémus. Comme ils sont beaux !\n- Prenons-les avec nous, dit sa femme.\n- Bien oui ! répondit Rémus, mais qui leur donnera à manger ?\n- La louve ! Tu verras que si elle les trouve devant la cabane, elle continuera à les allaiter.\n\nD'après Laura Orviéto",
+      "figureDesc": "Page encadrée avec bandeau « Lecture - Compréhension », mentions « Sagesse » et « 6ème année de base » ; pied de page « Lire et s'exprimer », page 32.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p033_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.25
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension en français (récit de Romulus et Remus : « La louve et les deux bébés »), mais le texte ne relève clairement d'aucun des modules : ni travail, ni médias, ni tolérance, ni entraide, ni nature, ni santé, ni loisirs, ni autres modes de vie.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un récit légendaire",
+    "skill": "Lire un texte narratif et en comprendre les événements, les personnages et l'enchaînement de l'histoire.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "récit",
+      "louve",
+      "jumeaux",
+      "légende"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un récit de légende (abandon d'enfants, intervention d'un animal protecteur) peut servir de support à des questions de compréhension, au repérage du schéma narratif, à l'anticipation de la suite ou à une production écrite de réécriture.",
+    "themeGroup": "Contes et récits légendaires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

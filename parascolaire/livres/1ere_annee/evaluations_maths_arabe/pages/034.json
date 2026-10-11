@@ -1,0 +1,63 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 34,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي - أُنْتِجُ وَأَتَمَيَّزُ",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْتُبُ الْجُمَلَ أَمَامَ الْمَشَاهِدِ الْمُنَاسِبَةِ لَهَا.",
+      "body": "• وَفِي الْخَارِجِ عُصْفُورٌ يَنْقُرُ النَّافِذَةَ،\n• وَيَرْتَعِدُ الْعُصْفُورُ مِنَ الْبَرْدِ.\n• وَالْمَطَرُ يَنْزِلُ مِدْرَارًا،\n• فَتَحَ وَلِيدُ النَّافِذَةَ،\n• الرَّعْدُ يَقْصِفُ،\n• وَأَدْخَلَ وَلِيدُ الْعُصْفُورَ.\n• وَوَلِيدُ فِي غُرْفَتِهِ.\n• وَالْبَرْقُ يَلْمَعُ،",
+      "figureDesc": "ثلاثة مشاهد مصورة ومسطّرة للكتابة: المشهد الأول يُظهر وليداً يراجع دروسه في غرفته والمطر يهطل، المشهد الثاني يُظهر عصفوراً يرتعد من البرد وينقر النافذة، والمشهد الثالث يُظهر وليداً يفتح النافذة ويُدخل العصفور.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p034_i1",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "ar-1-u4",
+  "topicTitle": "Unité 4 : Mon compagnon en hiver",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.73
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Il s'agit d'une page de production écrite en arabe dont les phrases décrivent un scénario d'hiver (pluie, tonnerre, éclair, froid, oiseau à la fenêtre), ce qui correspond au vocabulaire de l'Unité 4 « Mon compagnon en hiver ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : séquence d'images",
+    "skill": "Associer des phrases à des scènes illustrées et les ordonner pour reconstituer un récit cohérent.",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "images séquentielles",
+      "phrases narratives",
+      "météo",
+      "orage",
+      "récit"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un récit court découpé en phrases à replacer sous des vignettes illustrées (ici un enfant, un orage et un oiseau secouru), pour travailler la cohésion narrative et l'ordre chronologique.",
+    "themeGroup": "Production écrite: images et scènes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

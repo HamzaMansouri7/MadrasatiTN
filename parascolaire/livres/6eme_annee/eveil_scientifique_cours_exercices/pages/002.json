@@ -1,0 +1,126 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 2,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "L'air : propriétés, rôle dans la combustion et dans la respiration (échanges gazeux au niveau des alvéoles pulmonaires)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) اُكْتُبِ الاسْمَ المُنَاسِبَ لِكُلِّ رَقْمٍ.",
+      "body": "ب) مَاذَا يَنْتُجُ عَنِ احْتِرَاقِ الشَّمْعَةِ ؟\n(deux lignes pointillées pour écrire la réponse)",
+      "figureDesc": "Photo d'une bougie allumée avec sa flamme. Trois flèches numérotées 1, 2 et 3 désignent les différentes zones de la flamme : 1 la zone externe (enveloppe), 2 la zone intermédiaire (zone sombre), 3 la zone interne près de la mèche.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p002_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَتْمِمْ بِمَا يُنَاسِبُ :",
+      "body": "- يَتِمُّ التَّبَادُلُ الغَازِيُّ بَيْنَ الجِسْمِ وَهَوَاءِ المُحِيطِ فِي مُسْتَوَى ........\n- يَلْعَبُ الدَّمُ دَوْرًا هَامًّا فَهُوَ يَنْقُلُ ........ وَ ........ إِلَى كُلِّ عُضْوٍ وَخَلِيَّةٍ وَيَعُودُ مُحَمَّلاً بِـ ........ وَ ........",
+      "figureDesc": "Schéma d'un poumon avec un agrandissement circulaire montrant des alvéoles pulmonaires entourées de capillaires sanguins (rouges et bleus) ; une flèche jaune indique un vaisseau sanguin.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p002_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "اُكْتُبْ «صَوَابٌ» أَوْ «خَطَأٌ» :",
+      "body": "- الهَوَاءُ غَازٌ مَرِنٌ قَابِلٌ لِلضَّغْطِ. ........\n- الهَوَاءُ لَهُ شَكْلٌ مُعَيَّنٌ. ........\n- الهَوَاءُ الحَارُّ أَخَفُّ مِنَ الهَوَاءِ البَارِدِ. ........\n- الهَوَاءُ ضَرُورِيٌّ لِلاِحْتِرَاقِ وَلِلْكَائِنَاتِ الحَيَّةِ. ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p002_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.5,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.99
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "Les exercices portent sur la combustion de la bougie, les échanges gazeux au niveau des alvéoles, le rôle du sang dans le transport de O2 et CO2 et les propriétés de l'air, ce qui correspond à l'Unité 2 : L'air, la respiration et la combustion.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "L'air et la respiration",
+    "skill": "Connaître les propriétés de l'air, son rôle dans la combustion et les échanges gazeux au niveau des alvéoles pulmonaires.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "air",
+      "combustion",
+      "bougie",
+      "échanges gazeux",
+      "alvéoles pulmonaires",
+      "sang"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices de révision combinant légende d'un schéma d'expérience (combustion d'une bougie), texte à trous sur le rôle du sang dans le transport des gaz et vrai/faux sur les propriétés de l'air (compressible, sans forme, air chaud plus léger), réutilisable comme fiche d'évaluation courte.",
+    "themeGroup": "La respiration"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "يَنْتُجُ : l'image montre يَنْتُجُ (avec damma sur le ت), la transcription est fidèle mais la forme correcte serait يَنْتُجُ/يَنْتِجُ ; aucune erreur de transcription, à vérifier seulement"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "احْتِرَاقِ : l'image montre اُحْتِرَاقِ (avec damma sur l'alif), la transcription a ا sans voyelle"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "يَتِمُّ : l'image montre يَتِمُّ, correct ; mais الغَازِيُّ avec damma/shadda visible dans l'image est plutôt الغَازِيُّ, correct"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cercles numérotés 1, 2, 3 du schéma de la bougie ne sont pas mentionnés (éléments d'image, non transcrits)"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans l'exercice 5, les lignes de remplissage sont placées différemment : après 'مُسْتَوَى' un blanc, puis 'وَ' entre deux blancs avant 'إِلَى كُلِّ' ; la structure est approximativement respectée"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le texte 'مُحَمَّلاً بِـ' est correct, mais le numéro de page 38 n'est pas transcrit"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

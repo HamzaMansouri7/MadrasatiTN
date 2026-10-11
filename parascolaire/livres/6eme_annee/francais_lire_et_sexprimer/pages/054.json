@@ -1,0 +1,114 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 54,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : l'hygiène de vie et la santé (le corps a besoin de repos, d'air pur, d'eau pure et d'aliments bien choisis)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3 (fin)",
+      "instruction": "",
+      "body": "Le malade est malheureux. (le mot « malheureux » est souligné ; ligne de réponse en pointillés)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "francais_lire_et_sexprimer_p054_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Quand une personne se fâche-t-elle pour des riens ?",
+      "body": "",
+      "figureDesc": "Deux lignes de réponse en pointillés",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p054_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Relève, dans le texte, l'expression qui le montre :",
+      "body": "Notre corps a besoin de se reposer.",
+      "figureDesc": "Deux lignes de réponse en pointillés",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p054_i3",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Complète avec des mots du texte :",
+      "body": "- Pour avoir une bonne ................, il nous faut beaucoup d'................ pur à respirer, beaucoup d'................ pure à boire et des ................ bien choisis.\n- Un corps fatigué doit ................ pour mieux se réparer.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p054_i4",
+      "topicId": "fr-6-m6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Lis les phrases suivantes et remplis le tableau :",
+      "body": "- Faire du sport régulièrement.\n- Se laver le corps, les dents, les cheveux et les mains pour être propre.\n- Manger les légumes et les fruits sans les laver.\n- Se coucher tôt et bien dormir pour être attentif et se reposer.\n- Se brosser les dents après chaque repas.\n- Manger des repas équilibrés.\n- S'endormir avec un bonbon dans la bouche.",
+      "figureDesc": "Tableau à deux colonnes : « Je le fais » et « Je ne le fais pas », avec cinq lignes en pointillés chacune à remplir.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p054_i5",
+      "topicId": "fr-6-m6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m6",
+    "confidence": 0.53
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une compréhension de lecture en français sur l'hygiène de vie (repos, air pur, eau pure, alimentation équilibrée, sport), ce qui correspond au Module 6 « Être en forme et mieux se porter ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Hygiène de vie et santé",
+    "skill": "Comprendre un texte documentaire en relevant des informations, en complétant des phrases avec les mots du texte et en classant des habitudes saines et malsaines.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "hygiène",
+      "santé",
+      "repos",
+      "compréhension de lecture",
+      "alimentation",
+      "habitudes saines"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement de questions de compréhension (justification par une expression du texte, texte à trous reprenant le vocabulaire clé) suivi d'un tableau de classement de bonnes et mauvaises habitudes, transposable à d'autres thèmes de santé ou de sécurité.",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

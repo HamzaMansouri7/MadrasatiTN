@@ -2,7 +2,7 @@ import json, os, shutil, glob
 from pathlib import Path
 
 BASE = Path('parascolaire')
-ARCHIVE = BASE / '_original_frozen' / '_archive'
+ARCHIVE = Path('parascolaire_frozen') / '_archive'
 LIVRES = BASE / 'livres'
 
 NAMES = json.load(open(ARCHIVE / 'book_names.json', encoding='utf-8'))

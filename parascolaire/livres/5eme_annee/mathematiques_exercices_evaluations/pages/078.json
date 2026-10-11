@@ -1,0 +1,137 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 78,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مراجعة ودعم: أرسم منصّف الزاوية (الرياضيات - الهندسة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُرْسُمْ مُنَصِّفَ كُلِّ زَاوِيَةٍ:",
+      "body": "أُرْسُمْ مُنَصِّفَ كُلِّ زَاوِيَةٍ من الزوايا الثلاث المعروضة.",
+      "figureDesc": "ثلاث زوايا مرسومة: زاوية منفرجة على اليسار ضلعها الأفقي سفلي، زاوية حادة في الوسط ضلعها الأفقي سفلي، وزاوية حادة على اليمين على شكل رأس مدبب إلى الأعلى.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p078_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ارْسُمْ زَاوِيَتَيْنِ مُتَجَاوِرَتَيْنِ:",
+      "body": "بِ وَ جـ = 60° ؛ دِ وَ بـ = 50°\n- ثُمَّ ارْسُمْ مُنَصِّفَ كُلِّ زَاوِيَةٍ مِنْهُمَا [وع) , [وق]\n- مَاهُوَ قِيسُ الزَّاوِيَةِ [وع ، وق] ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_evaluations_p078_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ- ارْسُمْ لِكُلِّ زَاوِيَةٍ زَاوِيَةً مُجَاوِرَةً لَهَا بِحَيْثُ [وأ ) ، [ع س) ، [م ق ) مُنَصِّفَات لِزَوَايَا جَدِيدَة",
+      "body": "ثلاث زوايا عليها الرموز: (أ، د، ر)، (س، ع، ق)، (ق، م، هـ).",
+      "figureDesc": "ثلاث زوايا: على اليمين زاوية على شكل V رأسها ر وضلعاها نحو د وأ؛ في الوسط زاوية حادة رأسها ع وضلعاها ع س وع ق؛ على اليسار زاوية قائمة رأسها م وضلعاها م ق (عمودي) وم هـ (أفقي).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p078_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-5-ch1",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur le tracé de bissectrices d'angles et d'angles adjacents (géométrie), un sujet qu'aucun chapitre officiel de 5ème Année ne mentionne explicitement : les chapitres de géométrie listés traitent du parallélogramme, des hauteurs, du cercle et des solides.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Tracé de la bissectrice d'un angle",
+    "skill": "Tracer la bissectrice d'un angle avec les instruments de géométrie et déterminer la mesure d'angles adjacents.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "calcul"
+    ],
+    "keywords": [
+      "bissectrice",
+      "angle",
+      "angles adjacents",
+      "construction géométrique",
+      "rapporteur",
+      "révision"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression réutilisable : tracer la bissectrice d'angles donnés, construire deux angles adjacents de mesures connues puis tracer leurs bissectrices et calculer l'angle formé, enfin construire un angle adjacent pour qu'une demi-droite donnée devienne bissectrice.",
+    "themeGroup": "Droites, médiatrice et bissectrice"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.75
+  },
+  "audit": {
+    "accuracy": 0.75,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 1 : la phrase « أُرْسُمْ مُنَصِّفَ كُلِّ زَاوِيَةٍ من الزوايا الثلاث المعروضة » est inventée/dupliquée ; l'image ne contient que « اُرْسُمْ مُنَصِّفَ كُلِّ زَاوِيَةٍ »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 2 : « بِ وَ جـ = 60° » est faux ; l'image montre l'angle « ب وَ ج » (ب و̂ ج) = 60° ; « دِ وَ بـ » devrait être « د و̂ ب » = 50°. Les voyelles ajoutées sont inventées."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« قِيسُ » est faux ; l'image porte « قَيْسُ » (mesure)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« [وع) , [وق] » : crochets mal transcrits ; l'image montre [وع) , [وق)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« [وع ، وق] » dans la dernière question : l'image montre [وع ، وق]  avec la ponctuation de l'angle, correct mais « الزَّاوِيَةِ » devrait avoir « الزَّاوِيَةِ » avec une hamza/forme « الزَّاوِيَة » (voyelle finale non visible)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3 : « لِزَوَايَا » est faux ; l'image porte « لِزَوَايَا » proche mais lue « لِزَوَايَا جَدِيدَة » ; « وأ » devrait être « [وا ) » (و ا)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 3 : le titre « مراجعة ودعم: أرسم منصف الزاوية » de l'en-tête et le numéro de page (75) sont omis ; la mention « ا- » est bien présente mais pas de « ب »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Description des figures de l'ex. 3 : lettres incorrectes ; l'image montre (أ، د، و) pour la première figure (sommet و, pas ر), (س، ع، ق) et (ق، م، هـ) avec un point entre م et هـ."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

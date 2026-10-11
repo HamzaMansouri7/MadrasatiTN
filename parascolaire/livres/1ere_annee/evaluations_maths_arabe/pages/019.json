@@ -1,0 +1,160 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 19,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قراءة وفهم / حرف الهمزة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَكْتُبُ «أُوَافِقُ» / «لَا أُوَافِقُ» / «لِأَنَّهَا تُرِيدُ الْعَوْدَةَ إِلَى الْمَنْزِلِ» / «لِأَنَّهَا سَتُعَرِّضُ نَفْسَهَا لِلْخَطَرِ»",
+      "body": "• خَرَجَتْ إِينَاسُ مِنَ الْمَدْرَسَةِ. ....................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p019_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَكْتُبُ «أُوَافِقُ» / «لَا أُوَافِقُ» / «لِكَيْ لَا تَتَعَرَّضَ لِلْخَطَرِ» / «لِأَنَّهَا تَسْتَطِيعُ الْعَوْدَةَ إِلَى الْمَنْزِلِ»",
+      "body": "• الْأُمُّ تَتَرَقَّبُ ابْنَتَهَا إِينَاسَ. ....................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p019_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ كَلِمَاتٍ وَرَدَ الْحَرْفُ «أَ» فِي أَوَّلِهَا أَوْ وَسَطِهَا أَوْ آخِرِهَا.",
+      "body": "الْحَرْفُ فِي أَوَّلِ الْكَلِمَةِ:\n....................................................\n....................................................\n\nالْحَرْفُ فِي وَسَطِ الْكَلِمَةِ:\n....................................................\n....................................................\n\nالْحَرْفُ فِي آخِرِ الْكَلِمَةِ:\n....................................................\n....................................................",
+      "figureDesc": "جدول مقسم إلى ثلاثة أعمدة لتصنيف الكلمات حسب موضع حرف الهمزة (في أول الكلمة، في وسط الكلمة، في آخر الكلمة).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p019_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أُكَمِّلُ الْأَسْمَاءَ بِالْمَقْطَعِ الْمُنَاسِبِ.",
+      "body": "سَمَا..... | حِرْبَا..... | بَبَّغَا..... | حِذَا..... | مُتَّكَ..... | مِينَا.....\nالمقاطع المقترحة: [ءُ | ءِ | أٌ | ءً | ءِ | أً | إِ | ءٍ | أُ | ئٍ | أ | أِ | ءٌ]",
+      "figureDesc": "شريط مصور يحتوي ست صور توضيحية: سماء وغيوم، حرباء، ببغاء، حذاء، وسادة/متكأ، ميناء وبواخر؛ وتحت كل صورة الكلمة ناقصة المقطع الأخير، وأسفلها شريط بمقاطع حرف الهمزة بحركات مختلفة.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p019_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أُكَمِّلُ الْكَلِمَاتِ بِالْمَقْطَعِ الْمُنَاسِبِ.",
+      "body": "• قَسَّمَتْ ..... رَامُ .....جَّاصَةً ثُمَّ .....كَلَتْ جُزْ..... وَ .....عْطَتْ جُزْ..... لِ.....خِيهَا.\n• تَحَصَّلَتْ .....نَاسُ عَلَى الْجَا.....زَةِ الْ.....ولَى فَفَرِحَتْ .....مُّهَا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p019_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "ar-1-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u1",
+    "confidence": 0.44
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la lettre hamza (أ/ء/ئ) en lecture-compréhension et exercices de position dans le mot, une lettre qui ne figure dans aucune des unités listées (B, L, M, R, D, N, S, T, F, J, H, Kh, Ayn, Ghayn, Ta, Dha, Sad, Dad, Kaf, Qaf, Chin, Ha, Waw, Ya), donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "La hamza en début, milieu et fin de mot",
+    "skill": "Identifier et écrire correctement la hamza (sur alif, seule, sur ligne ou yā') selon sa position et la voyelle dans le mot.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "hamza",
+      "orthographe arabe",
+      "position de la lettre",
+      "compréhension de texte",
+      "compléter les mots"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : exercices d'accord/désaccord justifié à partir d'un petit récit (fillette rentrant de l'école), classement des mots selon la position de la lettre étudiée, et textes à trous où l'on choisit la bonne forme de la hamza parmi des segments proposés.",
+    "themeGroup": "La hamza"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 5: l'image montre «خَرَجَتْ إِيناسُ» sans tashkeel complet sur le nom; la transcription ajoute «إِينَاسُ» avec damma, alors que l'image montre «إيناسُ» écrit «إِينَاسُ» – à vérifier; surtout, la transcription a ajouté une seconde ligne de points inexistante dans le même bloc (une ligne courte et une ligne longue sont présentes, ce qui est correct)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 5: «تُرِيدُ» et «سَتُعَرِّضُ» OK, mais «أُوَافِقُ» est affiché dans l'image comme «أُوافِقُ» (sans fatha sur le waw); voyelles ajoutées à tort."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 6: l'image porte «لِكَيْ لَا تَتَعَرَّضَ» ? Non: l'image montre «لِكَيْ لَا» écrit «لِكَيْ»; transcription conforme, mais «الْأُمُّ تَتَرَقَّبُ» correspond à «الأُمُّ تَتَرَقَّبُ ابْنَتَهَا إِيناسَ»; ok."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 8: les mots sont mal transcrits: l'image donne «حِرْبَا» (ok), «بَبَّغَا» (ok), «حِذَا» (ok), «مُتَّكَ» (ok), «مِينَا» (ok); mais les images/tableau sont absents de la transcription (images du ciel, caméléon, perroquet, botte, coussin, bateau)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 8: les cases de syllabes proposées sont organisées en 6 groupes de 3 (أ إِ ءٌ / أُ أ ءٌ / ...) pour chaque mot; la transcription en fait une liste plate de 13 éléments, perdant la structure et des éléments (il y en a 18)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 9: l'image montre «قَسَّمَتْ ..... رَامُ» et «جُزْ.....» ; «لِ.....خِيهَا» ok; mais «الْجَا.....زَةِ الْ.....ولَى» ok; le «تَحَصَّلَتْ» est correct. Pas d'erreur claire."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête/pied de page (page 20, «جسر النجاح - الثلاثي الثاني (السنة 1)») est absent de la transcription."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

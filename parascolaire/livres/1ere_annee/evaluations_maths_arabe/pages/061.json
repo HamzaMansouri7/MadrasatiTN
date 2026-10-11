@@ -1,0 +1,105 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 61,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أَبْنِي جَدَاوِلَ جُزْئِيَّةً لِلْجَمْعِ ذَاتِ وَادَّيْنِ",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَعُدُّ تَصَاعُدِيًّا :",
+      "body": "12 > ......... > ......... > ......... > 4 > ......... > 0",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p061_i1",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُلَوِّنُ الْمُسْتَطِيلَاتِ الَّتِي تَحْتَوِي الْعَمَلِيَّاتِ الْجَمْعِيَّةَ الصَّحِيحَةَ :",
+      "body": "مخططان شجريان للجمع:\nالمخطط الأول حول العدد 9 وبجواره عمليات: [4+5]، [5+6]، [3+6]، [7+2]\nالمخطط الثاني حول العدد 14 وبجواره عمليات: [6+8]، [9+5]، [7+7]، [6+5]",
+      "figureDesc": "دائرتان مركزيّتان (9 و 14) تحيط بكل واحدة منهما 4 مستطيلات تحتوي على عمليات جمع متصلة بخطوط بالدائرة المركزية.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p061_i2",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبِطُ الْعَمَلِيَّاتِ بِمَا يُنَاسِبُهَا.",
+      "body": "العمود الأول (النتائج): 15، 18، 10، 17، 14، 13\nالعمود الثاني: 7+7، 10+8، 6+9، 5+8، 8+12، 9+5\nالعمود الثالث: 5+5، 7+8، 9+9، 7+6، 5+9، 6+8",
+      "figureDesc": "ثلاثة أعمدة بها بطاقات ونقاط للربط: العمود الأيمن يحتوي على عمليات جمع، والأوسط على عمليات جمع، والأيسر على أعداد/نتائج.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p061_i3",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "",
+      "body": "لَمَّا قَطَعَتْ الْحَافِلَةُ مَسَافَةَ 11 كم نَزَلَ مِنْهَا 8 رُكَّابٍ وَفِي الْمَحَطَّةِ الثَّانِيَةِ نَزَلَ مِنْهَا 4 رُكَّابٍ وَفِي الْمَحَطَّةِ الْأَخِيرَةِ نَزَلَ 7 رُكَّابٍ.\nكَمْ كَانَ فِي الْحَافِلَةِ مِنْ رَاكِبٍ عِنْدَ انْطِلَاقِ الرِّحْلَةِ ؟\n.......................................................................................................\n.......................................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p061_i4",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "topicId": "math-1-p4",
+  "topicTitle": "Période 4 : Nombres de 11 à 19, tables d'addition et soustraction",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p5",
+    "confidence": 0.21
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur des tables d'addition partielles avec des nombres de 11 à 19, un comptage décroissant de 12 à 0 et des additions avec résultats jusqu'à 18, ce qui correspond à la Période 4 (nombres de 11 à 19, tables d'addition), même si un problème final de soustraction à plusieurs étapes apparaît.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition jusqu'à 20",
+    "skill": "Calculer des sommes dans la limite de 20, en s'appuyant sur des tableaux partiels d'addition et des décompositions, puis résoudre un problème de transformation.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "appariement",
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "addition",
+      "tables d'addition",
+      "décomposition",
+      "comptage ascendant",
+      "problème de l'autobus",
+      "diagrammes en arbre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : le diagramme en arbre où l'on colorie les additions donnant le nombre cible, l'appariement de résultats avec plusieurs écritures additives équivalentes, la suite à compléter, et le problème de l'autobus à descentes successives où l'on cherche l'état initial (calcul à rebours).",
+    "themeGroup": "Addition jusqu'à 20"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

@@ -1,0 +1,108 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 128,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Périmètre, aire et volume (المجال الرئيسي الثالث : القياس) ; organisation et traitement des données : diagramme en bâtons (المجال الرئيسي الرابع). Note : la page ressemble à un sujet d'examen marocain (dhs, m), pas à une page du manuel tunisien.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسب محيط الشكل الملون:",
+      "body": "(01 ن) — Trois lignes sont prévues pour la réponse.",
+      "figureDesc": "Figure grise inscrite dans un carré de 3,2 cm de côté (cote indiquée par une flèche horizontale au-dessus). C'est un disque dont un quart a été retiré dans l'angle inférieur gauche. À la place du quart apparaît un arc de cercle concave. Deux axes en croix passent par le centre.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p128_i1",
+      "topicId": "math-6-p5",
+      "formatGuess": "calculation",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "مسألة:",
+      "body": "(1,5 ن) اشترى فلاح قطعة أرضية على شكل مستطيل طوله 31 m وعرضه نصف طوله. إذا علمت أن ثمن المتر المربع الواحد هو 1 000 dhs، فما هو ثمن القطعة الأرضية كاملة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p128_i2",
+      "topicId": "math-6-p5",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مسألة:",
+      "body": "(1,5 ن) يملك رجل مسبحا بمنزله على شكل متوازي المستطيلات، أبعاد قاعدته هي: 4,5m و 2,8m وعمقه 2m.\nأ - أحسب حجم هذا المسبح.\nب - أحسب باللتر كمية الماء اللازمة لملء 2/3 من سعة المسبح.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p128_i3",
+      "topicId": "math-6-p5",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "II-1",
+      "instruction": "مسألة:",
+      "body": "المجال الرئيسي الرابع : تنظيم ومعالجة البيانات (04 ن)\nيمثل المخطط عدد التلاميذ المشاركين في المسابقة الثقافية بإحدى المؤسسات التعليمية.\nأ - ما هو المستوى الأكثر تمثيلية في المسابقة؟\nب - ما هو عدد التلاميذ المشاركين في هذه المسابقة؟",
+      "figureDesc": "Diagramme en bâtons de 4 barres, une par niveau scolaire (les étiquettes sont illisibles ; elles semblent désigner les niveaux السادس، الخامس، الرابع، الثالث). Axe vertical gradué de 0 à 30 par pas de 5. Hauteurs approximatives : environ 21, 17, 25 et 19. Des pointillés sont prévus pour les réponses. Pied de page : « حظ موفق », page 4|4.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "soutien_maths_francais_p128_i4",
+      "topicId": "math-6-p5",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p5",
+  "topicTitle": "Période 5 : Volumes, capacités, temps et diagrammes statistiques",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p5",
+    "confidence": 0.17
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page ressemble à un examen général (périmètre, aire, volume du pavé droit, capacité en litres, diagramme en bâtons) ; elle est proche de la Période 5 (volumes, capacités, diagrammes statistiques), mais le périmètre et l'aire d'un rectangle relèvent d'autres chapitres, donc la correspondance reste partielle.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Périmètre, aire, volume et diagramme",
+    "skill": "Calculer le périmètre d'une figure, l'aire d'un rectangle et le volume d'un pavé droit avec conversion en litres, puis lire un diagramme en bâtons.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "périmètre",
+      "aire du rectangle",
+      "volume du pavé droit",
+      "conversion en litres",
+      "diagramme en bâtons",
+      "problème contextualisé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : achat d'un terrain rectangulaire dont on déduit la largeur et le prix total à partir du prix au mètre carré, remplissage partiel d'une piscine en litres, lecture d'un diagramme sur la participation à un concours culturel. Le barème par exercice sert aussi de modèle de structure d'examen.",
+    "themeGroup": "Statistiques et graphiques"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

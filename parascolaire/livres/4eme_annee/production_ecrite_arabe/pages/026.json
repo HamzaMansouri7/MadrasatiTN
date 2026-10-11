@@ -1,0 +1,122 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 26,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "عبارات طريفة (نصوص وعبارات داعمة للإنتاج الكتابي: الرسالة، الطفولة، رمضان والعيد)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "وكنت كلما مررت بشخص إلا وسألته عن عناصر الفريق\nوبقيت أكثر من ساعة وأنا أجري وأسأل إلى أن عثرت عليهم\nوما إن وضعت قدمي في المنزل حتى أسرعت إلى الحديقة أتفقد زهرتي كالعادة\nوما كدت أراها مقلعة حتى انتفضت كالملسوع وعدت أجري إلى أمي\nوفي حين كان الجزار يستعد لذبحه كنت أنظر إليه متأسفا على فراقه\nوأخذت أمي تنظف الأحشاء بينما شرعت أختي في تقطيع اللحم\nلا أظن أنك نسيت الصداقة التي كانت بيننا ولكن قلة رسائلك جعلتني أشك في ذلك\nيا لها من أيام جميلة تلك الأيام التي قضيناها معا في اللعب والدراسة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p026_i1",
+      "topicId": "ar-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "بدايات جمل للإتمام",
+      "body": "ماكان عليك أن\nكان يمكنك أن\nإياك أن     احذر",
+      "figureDesc": "مساحة فارغة تحت العبارات للكتابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p026_i2",
+      "topicId": "ar-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "عبارات طريفة",
+      "body": "وأية متعة يجدها الأطفال بين أحضان الطبيعة الضاحكة وأية لذة يحسون بها وهم يلعبون ويقفزون ويركضون بل أية فائدة أشد وأعظم من هذا اللقاء الذي امتزجت فيه النفوس وتلاقحت الافكار وفتحت العيون على آفاق جديدة تساعدهم على فهم الدروس  وعلى ادراك كنه الحياة\nمازال رمضان يحل بين المسلمين محل النور من العين والبهجة من القلب\nلا يأتي العيد على حين غرة فعادة ما تسبقه أهبة تليق بمقامه\nأشرقت شمس العيد على مدينتنا في غير وجهها المألوف فلا النور كان باهرا كهذا النور ولا الشعاع كان ساحرا كهذا الشعاع\nسرت والفرحة تهزني هزا          تكاد تلامس السحاب    عرفته منذ نعومة أظافري\nأكاد أطير من شدة الفرح          الشوق يهزنا هزا          لا تسل عن عظيم فرحتي\nكم تمنيت أن أمد في عمر الليل ساعة       بفضل تآزرنا تغلبنا على كل الصعاب",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p026_i3",
+      "topicId": "ar-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-ch2",
+  "topicTitle": "Unité 2 : Chronologie et succession des événements",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u7",
+    "confidence": 0.28
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une fiche d'expression écrite arabe (phrases-modèles, connecteurs temporels comme « كلما », « ما إن… حتى », « ما كدت… حتى », « بينما », débuts de phrases à compléter, thèmes lettre/enfance/Ramadan), qui se rapproche le plus de la chronologie et des connecteurs logico-temporels de l'Unité 2, sans correspondre exactement à un chapitre.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Expressions d'appui à la production écrite",
+    "skill": "Enrichir sa production écrite en réutilisant des connecteurs temporels, des débuts de phrases et des expressions imagées pour raconter et conseiller.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "production écrite",
+      "expressions toutes faites",
+      "connecteurs temporels",
+      "début de phrases",
+      "enfance",
+      "Ramadan"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une banque de structures de phrases (« à peine… que », « tandis que », « il aurait fallu que ») et de débuts de phrases à compléter, pour des exercices de rédaction sur une anecdote d'enfance, une lettre ou la fête de l'Aïd.",
+    "themeGroup": "Expressions, proverbes et mots de liaison"
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ligne 'يا لها من أيام جميلة تلك الأيام التي قضيناها': l'image porte 'يا لها من أيام جميلة تلك الأيام التي...' — correct, mais 'مقلعة' est bien présent dans l'image ; aucune différence à signaler ici"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'أشرقت ... كهذا النور ولا الشعاع كان ساحرا كهذا الشعاع': dans l'image, la phrase est 'فلا النور كان باهرا كهذا النور ولا الشعاع كان ساحرا كهذا الشعاع' — conforme"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le vers 'عرفته منذ نعومة أظافري' est lu à la fin de la ligne 1 de la strophe, avant 'تكاد تلامس السحاب' en lecture RTL ; l'ordre des hémistiches dans la transcription est ambigu"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "'كم تمنيت ... بفضل تآزرنا': l'ordre des hémistiches est inversé selon la lecture RTL ; l'image donne 'كم تمنيت أن أمد في عمر الليل ساعة / بفضل تآزرنا تغلبنا على كل الصعاب' — conforme"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le titre 'بدايات جمل للإتمام' n'apparaît pas dans l'image (il n'y a pas de titre au-dessus de 'ماكان عليك أن')"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

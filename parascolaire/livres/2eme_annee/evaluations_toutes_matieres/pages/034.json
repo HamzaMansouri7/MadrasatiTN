@@ -1,0 +1,93 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 34,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقييم الرسم والتعبير الفني: التمثيل بالخطوط (مستقيم، منكسر، منحني) وترتيب المبالغ المالية، مع جدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : أُرَتِّبُ الْمَبَالِغَ التَّالِيَةَ :",
+      "body": "( 175مي - 185 مي - 150 مي)\n........................................................................................................ (سطر منقط للإجابة)\nالتنقيط: 0,5 (معيار: معـ2أ)",
+      "figureDesc": "إطار رمادي مستدير يحتوي على المبالغ، يليه سطر منقط للإجابة، ومربع صغير لتسجيل تقييم المعيار معـ2أ",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p034_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "السَّنَدُ 9 : عِنْدَ دُخُولِ الْمَنْزِلِ رَأَتِ الْبِنْتُ وَرْدَةً جَمِيلَةً فِي الْحَدِيقَةِ، فَقَطَفَتْهَا وَقَدَّمَتْهَا هَدِيَّةً لِأُمِّهَا.\nالتَّعْلِيمَةُ 1 : أَرْسُمُ هَذِهِ الْوَرْدَةَ.",
+      "body": "أُمَثِّلُ سَاقَ الْوَرْدَةِ بِخَطٍّ مُسْتَقِيمٍ.\nأُمَثِّلُ جَوَانِبَ الْأَوْرَاقِ بِخَطٍّ مُنْكَسِرٍ.\nأُمَثِّلُ الْوَرْدَةَ بِخُطُوطٍ مُنْحَنِيَةٍ.\nالرَّسْمُ\nالتنقيط: 1 / 1 / 1 (معيار: معـ4)",
+      "figureDesc": "إطار مستطيل بخط متقطع ذي زوايا مستديرة فارغ للرسم؛ على اليمين ثلاثة مربعات صغيرة للتقييم وعلى اليسار الأعداد 1 و1 و1",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p034_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الأعمدة: المعايير/مستويات التمَلُّك؛ معايير الحد الأدنى (معـ1، معـ2أ، معـ2ب، معـ2ج، معـ3، معـ4)؛ معيار التميز (معـ5)؛ الحساب الذهني.\nانْعِدَامُ التَّمَلُّكِ: 0 في كل الخانات.\nالتَّمَلُّكُ دُونَ الْأَدْنَى: معـ1: 0,5 ؛ معـ2أ: 0,5 ؛ معـ2ب: 0,5 ؛ معـ2ج: 1 ؛ معـ3: 1 ؛ معـ4: 0,5 ؛ معـ5: 1.\nالتَّمَلُّكُ الْأَدْنَى: معـ1: 1 ؛ معـ2أ: 1 ؛ معـ2ب: 1 ؛ معـ2ج: 2 ؛ معـ3: 2 ؛ معـ4: 1 ؛ معـ5: 2 - 3.\nالتَّمَلُّكُ الْأَقْصَى: معـ1: 1,5 ؛ معـ2أ: 1,5 ؛ معـ2ب: 1,5 ؛ معـ2ج: 3 ؛ معـ3: 3 ؛ معـ4: 1,5 ؛ معـ5: 4.\nالحساب الذهني: ./4 ؛ ./20 = 4 + 16 (مجموع: ../4 + ../16 = ../20)",
+      "figureDesc": "جدول إسناد الأعداد لمستويات التملك ومعايير التقييم مع خانة الحساب الذهني؛ رقم الصفحة 33",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p034_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-2-u6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u6",
+    "confidence": 0.23
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation mêlant ordre de montants en millimes (maths, critère معـ2أ), dessin avec lignes droites, brisées et courbes (éducation artistique) et grille de notation par critères (معـ1 à معـ5, calcul mental), donc pas de chapitre unique correspondant clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Évaluation : tracés et rangement de montants",
+    "skill": "Représenter un objet par des lignes droites, brisées et courbes, et ranger des sommes d'argent en millimes.",
+    "pageType": "mixed",
+    "formats": [
+      "autre",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "évaluation",
+      "lignes droite brisée courbe",
+      "dessin de fleur",
+      "ranger des montants",
+      "millimes",
+      "grille de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une courte situation narrative (une fille offre une fleur à sa maman) sert de support à une consigne de dessin guidée par type de ligne, et une consigne de rangement de prix en millimes complète l'évaluation ; la grille d'attribution des notes par critère peut inspirer d'autres évaluations par compétences.",
+    "themeGroup": "Évaluations et annales"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

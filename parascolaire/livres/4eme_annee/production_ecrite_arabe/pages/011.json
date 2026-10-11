@@ -1,0 +1,76 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 11,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وصف فصول السنة (الشتاء والربيع) – نصوص نموذجية للإنتاج الكتابي",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "أظلمت الدنيا ظلاما عجيبا وكأنما غطى وجهها ستارة سوداء كثيفة فلم يعد يبين منها قمر أو نجم أو حتى بصيص ضئيل من ضوء بعيد\nوفي نفس الوقت اضطرب وضربت الريح بعنف وهاجت الأعاصير بثورة وولولت\nكانت الأشجار تتراقص والرياح مندفعة من كل صوب عند ذلك حجبت النافذة غمامة سوداء كثيفة وإذا القاعة تغرق في ظلام حالك بالسواد وأصبح كل واحد منا لا يرى الآخر\nازدادت العاصفة قساوة عندما هطل المطر وتساقط البرد يرجم الأشجار والأرض وأمل الفلاحين وشقت الأرض في صلب الأرض جداول تتدفق ملتوية تجرف التربة فتجرف معها الحياة استمرت هذه العاصفة ساعة من الزمن كانت أطول من الدهر وأقسى من ضربات الفأس والمعول\nقر الشتاء يسري في الأجسام ويبعث في النفس قشعريرة تكاد تزهق الأرواح\nملك الفصول هو الشتاء في كل أرض دار لها تلقاها بالترحاب\nأعطى الشتاء البرد للأرض فنامت ونامت معها بذور النباتات وأعطى المطر والثلج فشربت الأرض وشربت معها البذور فانتعشت وهي نائمة في أحضان الطبيعة\nكان زفير العاصفة يخترق الخشب والاسمنت ويصل إلى أذني قرقعة هائلة فأحس برأسي ينشطر",
+      "figureDesc": "نص في إطار (خانة) أولى بعنوان ضمني: فصل الشتاء",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p011_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "في فصل الربيع",
+      "body": "الربيع بشمسه الوهاجة وظلاله الوارفة بهوائه اللافح ونسيمه الوديع بغدرانه الهادئة وسواقيه النواحة\nذهبت إلى الحديقة رغبة في النزهة\nالثمار تتدلى وكأنها الشموع أوقدت في أحد المهرجانات\nكل شيء في الطبيعة يضحك      الشمس تتجول طويلا في السماء\nالأزهار تتفتح فتملأ الجو عبيرا      رقصت الفراشات فرحا بالربيع\nالعصافير تبني أعشاشها      المياه تنساب بدقة وانسجام\nالبساتين تختار بأشجارها المزدانة بالأثمار\nكان الربيع قد انتشر في كل مكان وكسا الأرض رداؤه المرقش فالحقول قد هاجت بالأزهار على اختلاف أنواعها وألوانها والأشجار ارتدت حلة من الأوراق الفتية والطيور خرجت ترنم أناشيد الفرح بقدوم فصل الجمال والطبيعة كلها بهجة ومرح كأنها في عرس",
+      "figureDesc": "نص في إطار (خانة) ثانية، العنوان بخط غليظ",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p011_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u7",
+    "confidence": 0.31
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page contient des textes modèles de production écrite décrivant l'hiver et le printemps (description de la nature et des saisons), alors qu'aucun chapitre officiel d'arabe ne porte sur la description de paysages ou de saisons : les unités concernent la narration et les personnages, donc aucune correspondance claire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description des saisons (hiver, printemps)",
+    "skill": "Rédiger une description de saison en s'appuyant sur des textes modèles et un lexique imagé (comparaisons, personnification, sensations).",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "description",
+      "saisons",
+      "hiver",
+      "printemps",
+      "production écrite",
+      "figures de style"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Textes modèles décrivant une tempête d'hiver et un jardin printanier, réutilisables comme supports de production écrite : repérer les images et comparaisons, enrichir le lexique des sensations, puis décrire une autre saison ou un autre paysage.",
+    "themeGroup": "Description des saisons et du temps"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

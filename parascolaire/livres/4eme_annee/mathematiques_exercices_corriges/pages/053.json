@@ -1,0 +1,114 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 53,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 13 – الأوراق المالية: 5 د، 10 د، 20 د (Les billets de banque : 5 D, 10 D, 20 D)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمم ملء الجدول :",
+      "body": "الجدول بالأعمدة: المجموع | قطعة نقدية من فئة: 100 مي، نصف دينار، 1 دينار | ورقة مالية من فئة: 5 دنانير، 10 دنانير، 20 دينارا.\nالسطر 1: المجموع 65 200 ؛ 100 مي: 2 ؛ نصف دينار: (مظلل) ؛ 1 دينار: (مظلل) ؛ 5 دنانير: 1 ؛ 10 دنانير: (مظلل) ؛ 20 دينارا: 3.\nالسطر 2: المجموع ........ ؛ 100 مي: (مظلل) ؛ نصف دينار: 1 ؛ 1 دينار: 3 ؛ 5 دنانير: 1 ؛ 10 دنانير: 2 ؛ 20 دينارا: 2.\nالسطر 3: المجموع ........ ؛ 100 مي: 4 ؛ نصف دينار: 3 ؛ 1 دينار: (مظلل) ؛ 5 دنانير: 2 ؛ 10 دنانير: (مظلل) ؛ 20 دينارا: 4.\nالسطر 4: المجموع ........ ؛ 100 مي: 3 ؛ نصف دينار: 1 ؛ 1 دينار: 8 ؛ 5 دنانير: (مظلل) ؛ 10 دنانير: 3 ؛ 20 دينارا: 1.",
+      "figureDesc": "جدول من 4 أسطر وسبعة أعمدة، بعض الخانات مظللة (منقطة) تدل على أنها غير مطلوبة أو لا قيمة فيها، وعمود المجموع به نقاط للإتمام.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p053_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أردتَ أن تشتري كسوة ثمنها 57 500 مي. ما هو أصغر عدد ممكن من الأوراق المالية والقطع النَّقديّة التي تسمح لك بشراء هذه الكسوة؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p053_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هو نوع الأوراق المالية التي يكوّن بها مبلغَ 75 د ؟",
+      "body": "بحافظة نقود مصطفى ورقتان ماليتان من فئة 20 د و 3 أوراق من فئة 10 د و 5 أوراق مالية من فئة 5 د.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p053_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "فكم يجب أن تأخذ من كلّ واحد؟",
+      "body": "أعطى أب لأبنائه الثّلاثة مقدارا من المال وزّعه عليهم كالآتي :\n- ورقة مالية من فئة 20 دينارا لكلّ واحد من الابنيْن أمين ومهدي.\n- 3 أوراق مالية من فئة 5 دنانير وقطعتان نقديتان ذات 1 د لفاطمة.\nوطلب من فاطمة أن تأخذ من أخويْها المبلغ الذي يجعل المنابات الثّلاثة متساوية.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p053_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "- ما هو ثمن المذياع؟\n- أحسب قيمة التّخفيض إذا علمت أن ثمنه الأصلي 74 د.",
+      "body": "لدفع ثمن مذياع سلمتُ البائع ورقتيْن ماليتيْن ذات 20 د و 3 أوراق مالية ذات 10 د فأرجع لي 3 قطع نقديّة ذات نصف دينار.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p053_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.13
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la monnaie (billets de 5, 10, 20 D, pièces, calcul de sommes et rendu de monnaie), contenu de la Période 1 « Nombres à 5 et 6 chiffres, droites et monnaie ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie : billets et pièces tunisiens",
+    "skill": "Composer, décomposer et comparer des sommes d'argent en dinars et en millimes avec des billets de 5, 10 et 20 D et des pièces.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "dinar",
+      "millimes",
+      "billets",
+      "pièces de monnaie",
+      "rendu de monnaie",
+      "décomposition d'un montant"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations d'achat concrètes (vêtement, radio avec réduction, partage d'argent entre enfants) et tableau de décomposition d'une somme en coupures ; réutilisable pour travailler le nombre minimal de billets, le rendu de monnaie et l'égalisation de parts.",
+    "themeGroup": "Monnaie"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

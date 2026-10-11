@@ -1,0 +1,154 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 10,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Michel retourne à l'école (B) Compréhension)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1a",
+      "instruction": "Michel va-t-il à l'école pour la première fois ?",
+      "body": "Michel va-t-il à l'école pour la première fois ? ...............................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p010_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1b",
+      "instruction": "Justifie ta réponse :",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p010_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "À quelle heure Bruno et Julien sont-ils venus chercher Michel ? Pourquoi ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p010_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Les enfants sont-ils contents de retourner à l'école ? Pourquoi ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p010_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- Les parents de Marcel l'ont envoyé chez sa grand-mère. (..............)",
+      "figureDesc": "Case arrondie avec pointillés pour écrire oui/non.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p010_i5",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4b",
+      "instruction": "Relève, dans le texte, la phrase qui le montre :",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p010_i6",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Pourquoi Marcel est-il toujours le premier ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p010_i7",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Complète ce passage avec les mots du cadre :",
+      "body": "Mots du cadre : ma – classe – directeur – mettre – jouer – promenade\n\nEn classe\nLe .................. siffle. Les élèves se mettent en rangs et entrent en .................................. .\nJulien ouvre son cartable. Il ..................le livre à droite, place le cahier à gauche et pose l'ardoise et ses stylos devant lui.\n« Bruno, j'ai oublié .......................... règle ; tu en as une ?\n- Oui, je te la prête ; mais toi, tu me prêteras ta bicyclette après la classe.\n- Bon, nous ......................ensemble ce soir. Nous ferons une................... à bicyclette.»",
+      "figureDesc": "Mots du cadre dans un encadré arrondi ; texte à trous dans un cadre rectangulaire intitulé « En classe ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p010_i8",
+      "topicId": "fr-6-m1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.33
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de compréhension de lecture en français (Michel retourne à l'école, avec un passage « En classe ») ; le thème de l'école et du travail scolaire se rapproche du Module 1, mais rien ne l'indique clairement et aucun chapitre ne correspond sans ambiguïté.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : la rentrée scolaire",
+    "skill": "Comprendre un texte narratif en répondant à des questions, en justifiant ses réponses par des éléments du texte et en réemployant le vocabulaire dans un texte à compléter.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "rentrée scolaire",
+      "justifier une réponse",
+      "relever une phrase",
+      "vocabulaire de l'école"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression classique de questions sur un récit de rentrée (oui/non, justification, relevé de phrase, cause), suivie d'un texte à trous à mots donnés qui réemploie le vocabulaire de la scène de classe, transposable à d'autres situations de vie scolaire.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

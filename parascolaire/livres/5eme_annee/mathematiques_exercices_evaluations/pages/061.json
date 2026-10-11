@@ -1,0 +1,232 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 61,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "حل مسائل رياضية: حساب كلفة الثوب، كتلة صابة الزيتون، وعدد رحلات الشاحنة (تمارين تطبيقية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "احْسُبْ كُلْفَةَ الثَّوْبِ الَّذِي سَتَخِيطُهُ السَّيِّدَةُ :",
+      "body": "",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p061_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اِبْحَثْ بِطَرِيقَتَيْنِ مُخْتَلِفَتَيْنِ عَنْ كُتْلَةِ صَابَةِ الزَّيْتُونِ.",
+      "body": "لِفَلَاحٍ 64 شَجَرَةَ زَيْتُونٍ. حَتَّى ثِمَارَهَا فَأَعْطَتْهُ كُلُّ زَيْتُونَةٍ مُعَدَّلَ كِيسٍ وَنِصْفِ الْكِيسِ، كُتْلَةُ الْكِيسِ الْوَاحِدِ 75 كغ.",
+      "figureDesc": "أسطر منقطة للإجابة (خمسة أسطر تقريبًا)",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p061_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "كَمْ رِحْلَةً قَامَتْ بِهَا الشَّاحِنَةُ لِنَقْلِ الصَّابَةِ ؟ وَكَمْ كِيسًا تَنْقُلُ فِي كُلِّ رِحْلَةٍ ؟.",
+      "body": "حَمَلَ الْفَلَاحُ صَابَتَهُ إِلَى الْمَعْصَرَةِ عَلَى شَاحِنَةٍ طَاقَةُ اسْتِيعَابِهَا 9 قِنْطَارَاتٍ.",
+      "figureDesc": "أسطر منقطة للإجابة (ستة أسطر تقريبًا)",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p061_i3"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.27
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page contient des problèmes de mathématiques sur les masses (sacs de 75 kg, capacité d'une camionnette de 9 quintaux) qui font intervenir la multiplication et la division par un diviseur à 2 chiffres, ce qui correspond à la Période 4 (division, quintal/tonne).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes de multiplication et de division",
+    "skill": "Résoudre des problèmes à plusieurs étapes avec des masses, des quantités et des unités (kg, quintal), en cherchant plusieurs méthodes de résolution.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "problèmes",
+      "multiplication",
+      "division",
+      "masse",
+      "quintal",
+      "récolte d'olives"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation rurale tunisienne (récolte d'olives transportée au pressoir par camion) qui permet de travailler la comparaison de deux méthodes de calcul, les conversions de masse (quintal/kg) et le nombre de trajets, et peut être transposée à d'autres récoltes ou à d'autres transports.",
+    "themeGroup": "Opérations sur les entiers"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le texte '(تكملة تمرين سابق: الفقرة الأولى من التمرين غير ظاهرة في هذه الصفحة) مساحة للإجابة: ثلاثة أسطر منقّطة' est une annotation inventée, absente de l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "فَلَّاحٍ : l'image montre 'فَلَاحٍ' (sans shadda visible). La transcription ajoute une shadda, de même pour 'الْفَلَّاحُ' dans l'exercice 6."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'سَتَخِيطُهُ' : l'image affiche 'سَتُخِيطُهُ' (lecture de l'image : سَتُخِيطُهُ). La transcription met 'سَتَخِيطُهُ'. Le mot est incertain, à vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'يُمَارِهَا' : l'image montre 'ثِمَارَهَا' (حَتَّى ثِمَارَهَا) ; la transcription met 'يُمَارِهَا'. À corriger en 'ثِمَارَهَا' ou à vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'كغ' correct. 'اسْتِيعَابِهَا' et 'قَنَاطِيرَ' : l'image montre 'قِنطَارَاتٍ' ('9 قِنْطَارَاتٍ'), pas 'قَنَاطِيرَ'."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans les exercices 5 et 6, la consigne (*) est placée avant l'énoncé alors que dans l'image l'énoncé vient en premier, puis la consigne."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros ⑤ et ⑥ sont transcrits [5] et [6], et l'astérisque (*) des consignes n'est pas reproduit."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le champ body du premier item contient une annotation inventée « (تكملة تمرين سابق...) مساحة للإجابة... », absente de l'image. L'image n'a que la consigne « احسب كلفة الثوب... » suivie de lignes pointillées, donc body doit être vide."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« يُمَارِهَا » ne correspond à aucun mot de l'image, qui montre « ثِمَارَهَا » (حَتَّى ثِمَارَهَا). La transcription est corrigée en conséquence."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 6 : l'image montre « 9 قِنْطَارَاتٍ » et non « قَنَاطِيرَ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« فَلَّاحٍ » (ex. 5) et « الْفَلَّاحُ » (ex. 6) : aucune shadda n'est visible sur le scan, qui montre « فَلَاحٍ » et « الْفَلَاحُ ». La shadda ajoutée est retirée."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "احْسُبْ كُلْفَةَ الثَّوْبِ الَّذِي سَتَخِيطُهُ السَّيِّدَةُ :",
+      "body": "",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p061_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اِبْحَثْ بِطَرِيقَتَيْنِ مُخْتَلِفَتَيْنِ عَنْ كُتْلَةِ صَابَةِ الزَّيْتُونِ.",
+      "body": "لِفَلَاحٍ 64 شَجَرَةَ زَيْتُونٍ. حَتَّى ثِمَارَهَا فَأَعْطَتْهُ كُلُّ زَيْتُونَةٍ مُعَدَّلَ كِيسٍ وَنِصْفِ الْكِيسِ، كُتْلَةُ الْكِيسِ الْوَاحِدِ 75 كغ.",
+      "figureDesc": "أسطر منقطة للإجابة (خمسة أسطر تقريبًا)",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p061_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "كَمْ رِحْلَةً قَامَتْ بِهَا الشَّاحِنَةُ لِنَقْلِ الصَّابَةِ ؟ وَكَمْ كِيسًا تَنْقُلُ فِي كُلِّ رِحْلَةٍ ؟.",
+      "body": "حَمَلَ الْفَلَاحُ صَابَتَهُ إِلَى الْمَعْصَرَةِ عَلَى شَاحِنَةٍ طَاقَةُ اسْتِيعَابِهَا 9 قِنْطَارَاتٍ.",
+      "figureDesc": "أسطر منقطة للإجابة (ستة أسطر تقريبًا)",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p061_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "احْسُبْ كُلْفَةَ الثَّوْبِ الَّذِي سَتَخِيطُهُ السَّيِّدَةُ :",
+      "body": "(تكملة تمرين سابق: الفقرة الأولى من التمرين غير ظاهرة في هذه الصفحة) مساحة للإجابة: ثلاثة أسطر منقّطة.",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_ahram_5eme_complet_p061_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اِبْحَثْ بِطَرِيقَتَيْنِ مُخْتَلِفَتَيْنِ عَنْ كُتْلَةِ صَابَةِ الزَّيْتُونِ.",
+      "body": "لِفَلَّاحٍ 64 شَجَرَةَ زَيْتُونٍ. حَتَّى يُمَارِهَا فَأَعْطَتْهُ كُلُّ زَيْتُونَةٍ مُعَدَّلَ كِيسٍ وَنِصْفِ الْكِيسِ، كُتْلَةُ الْكِيسِ الْوَاحِدِ 75 كغ.",
+      "figureDesc": "أسطر منقطة للإجابة (خمسة أسطر تقريبًا)",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "al_ahram_5eme_complet_p061_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "كَمْ رِحْلَةً قَامَتْ بِهَا الشَّاحِنَةُ لِنَقْلِ الصَّابَةِ ؟ وَكَمْ كِيسًا تَنْقُلُ فِي كُلِّ رِحْلَةٍ ؟.",
+      "body": "حَمَلَ الْفَلَّاحُ صَابَتَهُ إِلَى الْمَعْصَرَةِ عَلَى شَاحِنَةٍ طَاقَةُ اسْتِيعَابِهَا 9 قَنَاطِيرَ.",
+      "figureDesc": "أسطر منقطة للإجابة (ستة أسطر تقريبًا)",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "al_ahram_5eme_complet_p061_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

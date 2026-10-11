@@ -1,0 +1,154 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 13,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 3 : الأعداد من 0 إلى 999 (3) – تفكيك وتركيب",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اكتب هذه الأعداد باستعمال الجمع والضّرب كما في المثال :",
+      "body": "مثال : 5 + (10 × 2) + (100 × 4) = 425\nالأعداد : 782 ، 666 ، 810 ، 709 ، 946",
+      "figureDesc": "Les nombres sont encadrés. Le résultat 425 de l'exemple est dans un cadre. Les cinq nombres 782, 666, 810, 709 et 946 sont dans des cadres alignés sur une ligne.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p013_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اكتب كلّ عدد مِمّا يَلي فِي صورتِهِ الطّبِيعِيّةِ :",
+      "body": "العمود الأيمن :\n(4 × 100) + (7 × 10) + 9 = ......\n5 + (8 × 100) + (6 × 10) = ......\n6 + (9 × 100) + (7 × 10) = ......\nالعمود الأيسر :\n4 مئات و 8 عشرات و 3 آحاد = ......\n9 مئات و 6 عشرات = ......\n14 عشرة و 5 آحاد = ......",
+      "figureDesc": "Deux colonnes séparées par une ligne verticale, avec des pointillés pour les réponses.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p013_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "فتحت آمنة حصّالتها لتشتري قصّة فوجدت ما يلي :",
+      "body": "– 8 قطع نقدية ذات 100 مي.\n– 7 قطع نقدية ذات 10 مي.\n– قطعتان ذات 50 مي.\n– قطعة ذات 5 مي.\n* أوجد القيمة النقدية للمبلغ المدّخر بطريقتين مختلفتين.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p013_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لترقيم صفحات كرّاس إعداد النّصوص كتب فرّاس كلّ الأرقام من 1 إلى 99.",
+      "body": "– كَمْ مَرّةً اُسْتُعْمِلَ فيها الرّقْمُ 0 ؟\n– كَمْ مَرّةً اُسْتُعْمِلَ فيها الرّقْمُ 1 ؟\n– كَمْ مَرّةً اُسْتُعْمِلَ فيها الرّقْمُ 2 ؟\n– كم رقمًا كُتِبَ في الجملة ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p013_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-4-m6",
+    "confidence": 0.5
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la décomposition et la recomposition de nombres jusqu'à 999 et sur la monnaie (millimes), ce qui se rapproche de la Période 1 (nombres, décomposition, monnaie), mais ce chapitre officiel traite des nombres à 5 et 6 chiffres, donc la correspondance n'est pas exacte.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    112
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Décomposition et composition des nombres jusqu'à 999",
+    "skill": "Décomposer un nombre en centaines, dizaines et unités, puis le recomposer sous forme additive et multiplicative.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "numération",
+      "centaines dizaines unités",
+      "décomposition",
+      "monnaie",
+      "nombres jusqu'à 999",
+      "chiffres"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : écriture des nombres en sommes de produits avec termes dans le désordre, conversions du type '14 dizaines et 5 unités', problème de tirelire avec pièces à calculer de deux façons, et dénombrement des chiffres utilisés pour numéroter des pages.",
+    "themeGroup": "Numération jusqu'à 999"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : « اكتب كلّ عدد مِمّا يَلي فِي صورتِهِ الطّبِيعِيّةِ » – dans l'image, « كلّ » porte un tashkeel sur le kāf et la phrase est vocalisée ; transcription correcte mais « الطّبِيعِيّةِ » vérifié OK (aucune erreur réelle)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : « فرّاس كلّ » dans l'image est écrit « فراسٌ كُلّ » (avec tanwin/damma) ; la transcription met « فرّاس » avec shadda, ce qui est faux (فِراس sans shadda)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : « كرّاس » dans l'image est « كرّاس » avec la même graphie ; la transcription met la shadda, OK. Mais « إعداد النّصوص » est correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : « أوجد القيمة النقدية ... بطريقتين مختلفتين » est vocalisé dans l'image (النّقديّة، بطريقتَيْنِ مُخْتَلِفَتَيْنِ) ; la transcription omet les voyelles."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : « نقدية » dans l'image porte une shadda (نقديّة) ; la transcription l'omet."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « الضّرب » correct ; « الأعداد » en titre omis : l'en-tête de page (الأسبوع 3، الأعداد من 0 إلى 999 (3)، تفكيك وتركيب) et le numéro de page 9 sont absents de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête manquant : « الأسبوع 3 », « الأعداد من 0 إلى 999 (3) », « تفكيك وتركيب » et numéro de page 9."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 1 : l'ordre des nombres est inversé par rapport à la lecture visuelle RTL, mais cohérent (782 à droite) ; acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

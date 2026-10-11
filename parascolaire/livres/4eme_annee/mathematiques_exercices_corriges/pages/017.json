@@ -1,0 +1,95 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 17,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأعداد من 0 إلى 999 (4) - أنشطة عددية (الأسبوع 4)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) عدد�ان مُتتاليَان مَجْمُوعُهُمَا 801. اِبْحَثْ عَنْهُمَا.",
+      "body": "أ) عدد�ان مُتتاليَان مَجْمُوعُهُمَا 801. اِبْحَثْ عَنْهُمَا .\nب) ثَلاَثَةُ أعداد مُتتالية مجموعها 666. مَا هي هذه الأعداد ؟\nج) مجموع عددَيْن زَوْجِيَيْن مُتتالِيَيْن هوَ 502. ابحث عنهما.\nد) مَجْمُوعُ ثَلاَثَةِ أَعْدَادٍ فَرْدِيَّةٍ مُتَتَالِيَةٍ هُوَ 903. أَوْجِدْ هَذِهِ الأَعْدَادَ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p017_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْمِلْ تَعْمِيرَ الجَدْوَلِ التَّالِي :",
+      "body": "لَوَّنَتْ نَادِيَةُ مُرَبَّعَاتِ كُرَّاسَاتِهَا لِرَسْمِ دَرَاجَاتٍ ذَاتِ 5 طَوَابِقَ كَمَا يُوَضِّحُهُ الرَّسْمُ.\nجدول: عدد الطوابق: 5، 6، 7، 8، 9، 10 ؛ عدد المربعات الملونة: 15، 21، 28، (فارغ)، (فارغ)، (فارغ).",
+      "figureDesc": "رسم درج من 5 طوابق من مربعات ملونة (الطابق 1 في الأسفل به 5 مربعات إلى الطابق 5 به مربع واحد)، وجدول من سطرين: عدد الطوابق (5 إلى 10) وعدد المربعات الملونة (15، 21، 28 والبقية فارغة).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p017_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أتمم الأعداد الصحيحة الطبيعية المتقاطعة :",
+      "body": "أفقيا:\n1) أكبر عدد زوجي يتكوّن من رقم واحد.\n- أصغر عدد فردي يتكوّن من رقمين.\n2) العدد الزوجي الذي يأتي مباشرة قبل 900.\n3) 90 عشرة و 6 آحاد.\n4) العدد السابق للعدد 20.\n- أكبر عدد فردي يتكوّن من رقم واحد.\nعموديا:\nأ) الرقمان متساويان مجموعهما 16 - خامس عدد فردي.\nب) (9 × 100) + (6 × 10) + 1.\nج) 18 عشرة.\nد) أول عدد فردي - العدد السابق لمائة.",
+      "figureDesc": "شبكة كلمات متقاطعة أعداد 4 أسطر × 4 أعمدة (أ، ب، ج، د)، بعض الخانات مظللة، الخانة (السطر 2، العمود ب) تحتوي 9 والخانة (السطر 3، العمود ج) تحتوي 0.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p017_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.51
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les nombres de 0 à 999 (nombres consécutifs, pairs et impairs, mots croisés numériques), un contenu de 3ème année qui ne correspond à aucun chapitre de 4ème (nombres à 5 et 6 chiffres), donc aucun chapitre ne convient clairement.",
+  "linkFlags": [
+    "garbled_chars",
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    113
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 999 : suites et parités",
+    "skill": "Résoudre des problèmes sur les nombres consécutifs, pairs et impairs, et compléter une suite numérique et des mots croisés de nombres.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "schema_tableau",
+      "calcul",
+      "autre"
+    ],
+    "keywords": [
+      "nombres consécutifs",
+      "somme",
+      "pairs et impairs",
+      "nombres croisés",
+      "suite numérique",
+      "nombres triangulaires"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Variété de situations réutilisables : retrouver des nombres consécutifs, pairs ou impairs à partir de leur somme, compléter un tableau de motifs (dessins de vélos en carreaux, suite de nombres triangulaires) et résoudre des mots croisés de nombres à partir d'indices de lecture.",
+    "themeGroup": "Numération jusqu'à 999"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

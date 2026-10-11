@@ -1,0 +1,412 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 48,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Évaluation : Géométrie (agrandissement), Mesure (conversions, périmètre du cercle, aire du rectangle, volume du cube) et Organisation et traitement des données (tableau)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "لاحظ الشكل أسفله ثم أنشئ تكبيرا له بمعدل 2 : (2ن)",
+      "body": "",
+      "figureDesc": "Quadrillage sur lequel figure une forme noire composée de carreaux (2 rangées de 4 carreaux en haut, puis 2 carreaux en bas à droite) à agrandir selon un rapport 2.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p048_i1"
+    },
+    {
+      "kind": "section",
+      "number": "III",
+      "instruction": "المجال الرئيسي الثالث: القياس (8 نقطة)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p048_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "حول الوحدات التالية إلى ما هو مطلوب: (4ن)",
+      "body": "18,3 dam 6 hm = ……………….. m ; 240 dg 4,3 kg = ………………… hg ; 16 ha 6 a 56 ca = ……………….. dam² ; 48,12 l = ………………….. m³",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p048_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "لاحظ الدائرة جانبه، ثم احسب محيطها (P) بـ m. (1ن)",
+      "body": "D = 14 m",
+      "figureDesc": "Cercle avec un diamètre tracé en jaune, marqué D = 14 m ; lignes pointillées pour la réponse.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p048_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "مسألة: أحسب مساحة مستطيل طوله L = 6cm وعرضه l = 5cm. (1,5ن)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p048_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "أحسب حجم مكعب طول أحد أضلاعه a = 12 cm. (1,5ن)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p048_i6"
+    },
+    {
+      "kind": "section",
+      "number": "IV",
+      "instruction": "المجال الرئيسي الرابع: تنظيم ومعالجة البيانات (4 نقط)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p048_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "مسألة: أعلنت المراكز الأمريكية لمكافحة الأمراض والوقاية منها يوم الجمعة 3 يونيو 2022 عن رصد مجموعة من الإصابات بفيروس جُدَري القردة على المستوى العالمي موزعين حسب الجدول التالي :",
+      "body": "أ) ما هو عدد الإصابات حول المستوى العالمي؟ (1ن)\nب) ما هي الدولة الأكثر إصابة بفيروس جدري القردة؟ (1ن)\nج) ما هي الدولة الأقل إصابة بفيروس جدري القردة؟ (1ن)\nد) ما هي الدول التي عدد إصاباتها أكثر من 100 إصابة؟ (1ن)",
+      "figureDesc": "Tableau : الدولة / عدد الإصابات : كندا 77، الولايات المتحدة 21، فرنسا 51، بريطانيا 400، البرتغال 119، اسبانيا 132، المغرب 1.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p048_i8"
+    },
+    {
+      "kind": "note",
+      "number": "",
+      "instruction": "بالتوفيق",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p048_i9"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p5",
+    "confidence": 0.33
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Évaluation générale de mathématiques couvrant plusieurs chapitres (agrandissement, conversions de mesures, périmètre du cercle, aire du rectangle, volume du cube, lecture de tableau), sans correspondance claire avec un seul chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    50,
+    51
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Évaluation de géométrie et mesures",
+    "skill": "Agrandir une figure, convertir des unités, calculer périmètre, aire et volume, et lire un tableau de données.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "agrandissement",
+      "conversions d'unités",
+      "périmètre du cercle",
+      "aire du rectangle",
+      "volume du cube",
+      "lecture de tableau"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le devis de fin de trimestre combine plusieurs domaines avec barème détaillé, et l'exercice de lecture de tableau s'appuie sur un contexte d'actualité (nombre de cas d'une maladie par pays) pour faire trouver total, maximum, minimum et valeurs supérieures à un seuil.",
+    "themeGroup": "Problèmes de synthèse et révisions"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de la question 16 est absent de la transcription : en-têtes (الدولة, كندا, الولايات المتحدة, فرنسا, بريطانيا, البرتغال, اسبانيا, المغرب) et données (77, 21, 51, 400, 119, 132, 1). Sans lui, les questions أ à د ne peuvent pas être résolues."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres de section sont omis : « المجال الرئيسي الثالث: القياس (8 نقطة) » (III) et « المجال الرئيسي الرابع: تنظيم ومعالجة البيانات (4 نقط) » (IV)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Q11 : la grille quadrillée avec la forme noire en L à agrandir n'est pas décrite. Le champ de la figure est vide."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La formule de clôture « بالتوفيق » en bas de page est absente."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Q16 : « موزعين » correspond à l'image, mais la phrase est coupée. Le début de la ligne 2 « بفيروس جُدَري القردة على المستوى العالمي » est bien présent. En revanche « حول المستوى العالمي » à la question أ est fidèle à l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.92,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de section « المجال الرئيسي الثالث: القياس (8 نقطة) » (III), situé entre les questions 11 et 12, est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de section « المجال الرئيسي الرابع: تنظيم ومعالجة البيانات (4 نقط) » (IV), situé entre les questions 15 et 16, est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La formule de clôture « بالتوفيق » en bas de page est absente."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "لاحظ الشكل أسفله ثم أنشئ تكبيرا له بمعدل 2 : (2ن)",
+      "body": "",
+      "figureDesc": "Quadrillage sur lequel figure une forme noire composée de carreaux (2 rangées de 4 carreaux en haut, puis 2 carreaux en bas à droite) à agrandir selon un rapport 2.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p048_i1"
+    },
+    {
+      "kind": "section",
+      "number": "III",
+      "instruction": "المجال الرئيسي الثالث: القياس (8 نقطة)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p048_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "حول الوحدات التالية إلى ما هو مطلوب: (4ن)",
+      "body": "18,3 dam 6 hm = ……………….. m ; 240 dg 4,3 kg = ………………… hg ; 16 ha 6 a 56 ca = ……………….. dam² ; 48,12 l = ………………….. m³",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p048_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "لاحظ الدائرة جانبه، ثم احسب محيطها (P) بـ m. (1ن)",
+      "body": "D = 14 m",
+      "figureDesc": "Cercle avec un diamètre tracé en jaune, marqué D = 14 m ; lignes pointillées pour la réponse.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p048_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "مسألة: أحسب مساحة مستطيل طوله L = 6cm وعرضه l = 5cm. (1,5ن)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p048_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "أحسب حجم مكعب طول أحد أضلاعه a = 12 cm. (1,5ن)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p048_i6"
+    },
+    {
+      "kind": "section",
+      "number": "IV",
+      "instruction": "المجال الرئيسي الرابع: تنظيم ومعالجة البيانات (4 نقط)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p048_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "مسألة: أعلنت المراكز الأمريكية لمكافحة الأمراض والوقاية منها يوم الجمعة 3 يونيو 2022 عن رصد مجموعة من الإصابات بفيروس جُدَري القردة على المستوى العالمي موزعين حسب الجدول التالي :",
+      "body": "أ) ما هو عدد الإصابات حول المستوى العالمي؟ (1ن)\nب) ما هي الدولة الأكثر إصابة بفيروس جدري القردة؟ (1ن)\nج) ما هي الدولة الأقل إصابة بفيروس جدري القردة؟ (1ن)\nد) ما هي الدول التي عدد إصاباتها أكثر من 100 إصابة؟ (1ن)",
+      "figureDesc": "Tableau : الدولة / عدد الإصابات : كندا 77، الولايات المتحدة 21، فرنسا 51، بريطانيا 400، البرتغال 119، اسبانيا 132، المغرب 1.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p048_i8"
+    },
+    {
+      "kind": "note",
+      "number": "",
+      "instruction": "بالتوفيق",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p048_i9"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "لاحظ الشكل أسفله ثم أنشئ تكبيرا له بمعدل 2 : (2ن)",
+      "body": "",
+      "figureDesc": "Quadrillage sur lequel figure une forme noire composée de carreaux (2 rangées de 4 carreaux en haut, puis 2 carreaux en bas à droite) à agrandir selon un rapport 2.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p048_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "حول الوحدات التالية إلى ما هو مطلوب: (4ن)",
+      "body": "18,3 dam 6 hm = ……………….. m ; 240 dg 4,3 kg = ………………… hg ; 16 ha 6 a 56 ca = ……………….. dam² ; 48,12 l = ………………….. m³",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mouayen_6eme_math_francais_p048_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "لاحظ الدائرة جانبه، ثم احسب محيطها (P) بـ m. (1ن)",
+      "body": "D = 14 m",
+      "figureDesc": "Cercle avec un diamètre tracé en jaune, marqué D = 14 m ; lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p048_i3",
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "مسألة: أحسب مساحة مستطيل طوله L = 6cm وعرضه l = 5cm. (1,5ن)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mouayen_6eme_math_francais_p048_i4",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "أحسب حجم مكعب طول أحد أضلاعه a = 12 cm. (1,5ن)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mouayen_6eme_math_francais_p048_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "مسألة: أعلنت المراكز الأمريكية لمكافحة الأمراض والوقاية منها يوم الجمعة 3 يونيو 2022 عن رصد مجموعة من الإصابات بفيروس جُدَري القردة على المستوى العالمي موزعين حسب الجدول التالي :",
+      "body": "أ) ما هو عدد الإصابات حول المستوى العالمي؟ (1ن)\nب) ما هي الدولة الأكثر إصابة بفيروس جدري القردة؟ (1ن)\nج) ما هي الدولة الأقل إصابة بفيروس جدري القردة؟ (1ن)\nد) ما هي الدول التي عدد إصاباتها أكثر من 100 إصابة؟ (1ن)",
+      "figureDesc": "Tableau : الدولة / عدد الإصابات : كندا 77، الولايات المتحدة 21، فرنسا 51، بريطانيا 400، البرتغال 119، اسبانيا 132، المغرب 1.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p048_i6",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.92
+  },
+  "correctionStatus": "linked",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

@@ -1,0 +1,185 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 59,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "اسم الفاعل من المزيد (الثلاثي المزيد) واسم المفعول من المضاعف المزيد – Le participe actif du verbe augmenté et le participe passif du verbe géminé augmenté (grammaire arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "يصاغ اسم الفاعل من المزيد بإبدال حرف المضارعة ميما مضمومة وكسر ما قبل الآخر",
+      "body": "سلم يسلم مسلم     انتصر ينتصر منتصر\nجدول: المزيد بحرف: أفعل (أخرج، يخرج، مخرج) – فعّل (علم، يعلم، معلم) – فاعل (سامح، يسامح، مسامح). المزيد بحرفين: انفعل (انتصر، ينتصر، منتصر) – افتعل (اقترب، يقترب، مقترب) – تفعل (تسلم، يتسلم، متسلم) – تفاعل (تظاهر، يتظاهر، متظاهر) – افعل (احمر، يحمر، محمر). المزيد بـ3 أحرف: استفعل (استقبل، يستقبل، مستقبل)",
+      "figureDesc": "جدول من أربعة أسطر: الوزن، الماضي، المضارع، اسم الفاعل؛ أعمدة: المزيد بحرف، المزيد بحرفين، المزيد بثلاثة أحرف",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p059_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "هات اسم الفاعل من الأفعال التالية",
+      "body": "استغفر – افتخر – قاوم – تسامح – انفجر",
+      "figureDesc": "جدول بخمس خانات للأفعال وخانات فارغة للإجابة",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p059_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حول اسم الفاعل على فعله الماضي",
+      "body": "مسلم – مستقبل – منتصر – معلم – مهتز",
+      "figureDesc": "جدول بخمس خانات وخانات فارغة للإجابة",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p059_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "عوض في النص التالي كل فعل ورد بين قوسين باسم فاعل ويكون منصوبا",
+      "body": "كنت (أستعد) لاشتراء معطف ، (فخرجت) و(اتجهت) نحو المغازة العصرية للملابس ولما دخلتها قضيت زمنا طويلا (أبحث) عن معطف جميل ، و(أقلب) شتى المعاطف المعلقة بتلك المغازة و(أتأمل) فيها بكل امعان",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p059_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ضع بين قوسين كل اسم فاعل ورد في النص واكتب تحته الفعل الذي اشتق منه",
+      "body": "أنصار الفريق متجمعون أمام الملعب مرددين مختلف الأغاني ، منتظرين انطلاق المباراة بفارغ الصبر ، ترى هل سيعودون إلى منازلهم منتصرين أم منهزمين ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p059_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "اسم المفعول من المضاعف المزيد – يصاغ اسم المفعول من المضاعف المجرد على وزن مفعول",
+      "body": "حل: محلول – فكت: مفكوكة – مدا: ممدودان – شدتا: مشدودتان – عدوا: معدودون – ردذن: مردودات",
+      "figureDesc": "جدول من سطرين: الفعل واسم المفعول",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p059_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: يصاغ اسم المفعول من المضاعف المزيد بإبدال حرف المضارعة ميما مضمومة وفتح ما قبل الآخر",
+      "body": "أعد يعد معد\nجدول (ناقص في أسفل الصفحة): المزيد بحرف | المزيد بحرفين | بـ",
+      "figureDesc": "رأس جدول فقط: المزيد بحرف، المزيد بحرفين، بـ (أحرف)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p059_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.12
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite du participe actif et du participe passif du verbe augmenté (grammaire arabe), un point de langue isolé qui ne correspond clairement à aucune des six unités arabes, centrées sur les types de passages narratifs (seule l'unité 1 mentionne la conjugaison des verbes défectifs).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Participe actif et passif du verbe augmenté",
+    "skill": "Former le participe actif des verbes augmentés et le participe passif des verbes géminés augmentés, et retrouver le verbe d'origine.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "اسم الفاعل",
+      "اسم المفعول",
+      "verbe augmenté",
+      "verbe géminé",
+      "conjugaison",
+      "morphologie arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les règles de dérivation sont présentées en tableau par type d'augmentation (une lettre, deux lettres). Les exercices vont dans les deux sens (verbe vers participe, participe vers verbe) et les textes courts à compléter ou à analyser (achat d'un manteau, supporters au stade) servent de contexte réutilisable pour de nouveaux exercices.",
+    "themeGroup": "Les participes"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "«ردذن» dans la transcription : le mot de l'image est «ردَدْن» (ردّدن), et non «ردذن»."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "«المزيد بـ3 أحرف» : l'image indique seulement «بـ أحرف» (en-tête «بـ ... أحرف», coupé), sans le chiffre 3."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 1 : le mot «انفجر» est présent, mais l'ordre RTL est respecté ; il manque les cases de réponse vides, ce qui est acceptable."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans le tableau du pluriel/duel, l'image montre «مهتز» (exercice 2) ; la transcription le contient bien. Rien de manquant, mais le tableau de forme «افعل» est transcrit «افعل» alors que l'image montre «افعلّ» (احمرّ)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : la transcription met «فخرجت» entre parenthèses ; dans l'image les mots ne sont pas entre parenthèses (les parenthèses ont été ajoutées). Aussi «لاشتراء» est correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres «التمارين» et «التمرين الأول/الثاني…» ne sont pas transcrits tels quels (numérotés seulement [1]…[4]) ; le titre «الدرس» est présent."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les voyelles visibles (ex. «فعّل» avec shadda) sont partiellement omises : «فعّل» est conservé mais «علّم/معلّم» sont transcrits sans shadda."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

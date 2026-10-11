@@ -1,0 +1,63 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 47,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Les secrets d'une bonne alimentation",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Les secrets d'une bonne alimentation\n\nPour rester en forme, il est important de donner à son corps les aliments dont il a besoin. Pour cela, il faut manger équilibré à chaque repas et éviter de grignoter des sucreries à longueur de journée.\nUne alimentation équilibrée passe par quelques règles très simples. D'abord, il faut varier les plaisirs et manger en quantité suffisante et raisonnable. Chaque journée doit comporter 3 ou 4 repas : petit-déjeuner, déjeuner, goûter et dîner.\nEt dans chaque menu, tu dois prendre du pain, un produit laitier, un fruit ou un légume cru et de l'eau à volonté. Tu dois également manger une viande ou un poisson une fois par jour, ainsi qu'un légume cuit au déjeuner et un féculent (pâtes, pommes de terre, riz...) au dîner, ou vice-versa.\nDans les laitages, tu trouveras du calcium. Dans la viande et le poisson : des protéines, mais aussi du fer, des vitamines et du phosphore, utile au bon fonctionnement du cerveau. Les fruits et les légumes t'apporteront les vitamines et le calcium indispensables à ta croissance. Enfin, le pain, les pâtes et les céréales fournissent les sucres lents qui t'aideront pour les longs efforts.\nMais surtout, tu ne dois pas négliger le repas du matin ; il doit représenter un quart de l'alimentation de la journée. En effet, après une nuit de sommeil, rien de tel qu'un bon petit-déjeuner pour éviter la fatigue et les tiraillements d'estomac sur le coup des 10 heures.\nUn petit-déjeuner équilibré doit comporter 1 aliment de chacune de ces 3 familles :\n- Produits laitiers (lait, fromage, yaourts...).\n- Céréales (pain, corn flakes, muesli...).\n- Fruits (kiwis, oranges, bananes, jus de fruits...).\n\nArticle sur les secrets d'une bonne alimentation. La semaine du goût.",
+      "figureDesc": "Texte encadré dans un cadre arrondi ; en-tête « Lecture - Compréhension », bandeaux « Sagesse » et « 6ème année de base » ; pied de page « Lire et s'exprimer », page 46. Au verso, le texte des questions est visible en transparence mais illisible.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p047_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.35
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension sur l'alimentation équilibrée pour rester en forme, ce qui correspond au Module 6 « Être en forme et mieux se porter » (santé, conseils).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    123
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Les secrets d'une bonne alimentation",
+    "skill": "Lire un texte documentaire sur l'alimentation équilibrée et répondre à des questions pour en comprendre les informations.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "alimentation équilibrée",
+      "santé",
+      "repas",
+      "grignotage",
+      "texte documentaire",
+      "compréhension de lecture"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un texte documentaire court sur les bonnes habitudes alimentaires, qui peut servir de support à des questions de compréhension, à un vrai/faux ou à une production écrite sur la santé au quotidien, en lien avec l'éveil scientifique.",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

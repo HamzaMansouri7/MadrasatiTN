@@ -1,0 +1,122 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 5,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني عدد 2 – قراءة وفهم (نص: البنت زينب ومصروفها)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أَقْرَأُ النَّصَّ :",
+      "body": "تَحصُلُ الْبِنْتُ زَيْنَبُ عَلَى مَصْرُوفِهَا مِنْ وَالِدَيْهَا. وَلَمْ تَكُنْ تُنْفِقُهُ كُلَّهُ، بَلْ كَانَتْ تَدَّخِرُ مِنْهُ نَصِيبًا فِي حَصَّالَتِهَا. فَهْيَ تَأْمُلُ أَنْ تَجْمَعَ مَا يَكْفِيهَا مِنَ الْمَالِ لِتَشْرِيَ هَاتِفًا أَعْجَبَهَا مِنَ الْمَغَازَةِ. تُرِيدُ أَنْ تَتَّصِلَ بِهِ وَتَسْأَلَ عَنْ صَدِيقَاتِهَا، وَعَنْ أَبِيهَا لِتَطْمَئِنَّ عَلَيْهِ وَهُوَ فِي الْعَمَلِ، وَلِتُخْبِرَ أُمَّهَا عِنْدَ خُرُوجِهَا مِنَ الْمَدْرَسَةِ، وَتَلْتَقِطَ بِهِ صُوَرًا...\nذَاتَ يَوْم، تَفَقَّدَتْ زَيْنَبُ حَصَّالَتَهَا فَإِذَا هِيَ ثَقِيلَةٌ، فَتَهَلَّلَتْ أَسَارِيرُ وَجْهِهَا، وَخَفَقَ قَلْبُهَا فَرَحًا، وَلَمَعَتْ عَيْنَاهَا غِبْطَةً. هَمَسَتْ : «مَتَى أُكَسِّرُهَا وَأَعُدُّ مَا بِدَاخِلِهَا ؟» وَحَمَلَهَا الْخَيَالُ إِلَى مَغَازَةِ بَيْعِ الْهَوَاتِفِ الْمَحْمُولَةِ لِتَقْتَنِيَ مَا يُعْجِبُهَا...\nوَفِي تِلْكَ اللَّيْلَةِ، أَثْنَاءَ السَّهْرَةِ، عَلِمَتِ الْبِنْتُ أَنَّ عِيدَ مِيلَادِ أُمِّهَا بَعْدَ يَوْمَيْنِ.\n- الْمُؤَلِّفُونَ -",
+      "figureDesc": "رأس الصفحة: «امتحانات جسر النجاح»؛ إطار بيانات: المادة: قراءة و فهم، المستوى: السنة الثانية، اختبار نهاية الثلاثي الثاني عدد 2، خانات الاسم واللقب والقسم.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p005_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "تُحْسِنُ زَيْنَبُ التَّصَرُّفَ فِي الْمَالِ. كَيْفَ ذَلِكَ ؟",
+      "body": "سطر منقّط للإجابة. المعيار: معـ2أ. النقطة: 0,5",
+      "figureDesc": "خط منقّط ومربع لتقييم المعيار",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p005_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَكْتُبُ قَرِينَةً مِنَ النَّصِّ تَدْعَمُ إِجَابَتِي.",
+      "body": "الْقَرِينَةُ : «............................»  المعيار: معـ2ب. النقطة: 0,5",
+      "figureDesc": "سطر منقّط ومربع تقييم",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p005_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبُطُ بِسَهْمٍ لِلْحُصُولِ عَلَى إِجَابَةٍ تُوَافِقُ النَّصَّ.",
+      "body": "أَرَادَتْ زَيْنَبُ أَنْ تَشْرِيَ هَاتِفًا لِـ ●\nتَتَّصِلَ بِصَدِيقَاتِهَا. ●\nتُفَاخِرَ أَتْرَابَهَا. ●\nتَتَّصِلَ بِوَالِدَيْهَا. ●\nالمعيار: معـ2أ. النقاط: 0,5 لكل ربط (0,5 + 0,5 + 0,5)",
+      "figureDesc": "عمود من ثلاث عبارات على اليسار ونقطة الجملة الأصلية على اليمين للربط بالأسهم؛ ثلاث خانات تقييم",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p005_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَدْعَمُ إِجَابَتِي بِقَرِينَةٍ مِنَ النَّصِّ.",
+      "body": "سطران منقّطان للإجابة. المعيار: معـ2ب. النقطة: 0,5",
+      "figureDesc": "سطران منقطان ومربع تقييم",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p005_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u1",
+    "confidence": 0.16
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de trimestre 2 (اختبار نهاية الثلاثي الثاني) en compréhension de lecture, qui couvre plusieurs unités du trimestre, donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de lecture : gestion de l'argent de poche",
+    "skill": "Comprendre un texte court et justifier ses réponses en relevant un indice (قرينة) dans le texte.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "argent de poche",
+      "épargne",
+      "relevé d'indice",
+      "évaluation fin de trimestre",
+      "2ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de la vie quotidienne (une enfant qui épargne son argent de poche pour un objectif) associée à un format réutilisable : répondre puis justifier par un indice du texte, avec une question d'appariement par flèches et des critères d'évaluation notés à part.",
+    "themeGroup": "Compréhension: l'argent et l'épargne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

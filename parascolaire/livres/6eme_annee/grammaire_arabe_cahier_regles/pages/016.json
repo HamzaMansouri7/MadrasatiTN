@@ -1,0 +1,87 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 16,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "تصريف الناقص اليائي في الماضي (conjugaison du verbe défectueux à finale yā' au passé – langue arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة: الناقص اليائي يصنف إلى ثلاث مجموعات",
+      "body": "الوزن: فعل يفعل | فعل يفعل | فعل يفعل\nالمثال: مضى يمضي | سعى يسعى | نسي ينسى",
+      "figureDesc": "Tableau de 2 lignes et 4 colonnes (الوزن / المثال) classant le verbe défectueux en trois groupes avec exemples : مضى يمضي، سعى يسعى، نسي ينسى.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p016_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: تصريف الأفعال (مضى، غشي، سعى) في الماضي حسب الضمائر",
+      "body": "المتكلم: أنا: مضيت، غشيت، سعيت | نحن: مضينا، غشينا، سعينا\nالمخاطب: أنتَ: مضيتَ، غشيتَ، سعيتَ | أنتِ: مضيتِ، غشيتِ، سعيتِ | أنتما: مضيتما، غشيتما، سعيتما | أنتم: مضيتم، غشيتم، سعيتم | أنتن: مضيتن، غشيتن، سعيتن\nالغائب: هو: مضى، غشي، سعى | هي: مضت، غشيت، سعت | هما (مذكر): مضيا، غشيا، سعيا | هما (مؤنث): مضتا، غشيتا، سعتا | هم: مضوا، غشوا، سعوا | هن: مضين، غشين، سعين",
+      "figureDesc": "Grand tableau de conjugaison : colonnes = verbes (مضى، غشي، سعى), lignes = pronoms (أنا، نحن، أنت، أنت، أنتما، أنتم، أنتن، هو، هي، هما، هما، هم، هن) regroupés en المتكلم / المخاطب / الغائب.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p016_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "إذا تحركت عين الفعل بالفتحة: لا يطرأ تغيير على حركة عين الفعل أبدا. لا يحذف حرف العلة إلا عند اقتران الفعل بـ: تاء التأنيث: سعى ← سعت، سعيتا ← سعتا؛ واو الجماعة: سعيوا ← سعوا.\nإذا تحركت عين الفعل بالكسرة: لا يطرأ تغيير على حركة عين الفعل إلا عند اقتران الفعل بواو الجماعة فتقلب الكسرة ضمة: رضوا. لا يحذف حرف العلة إلا حين يقترن الفعل بواو الجماعة: حضوا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "grammaire_arabe_cahier_regles_p016_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m2",
+    "confidence": 0.53
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la conjugaison au passé des verbes défectueux à finale yā' (مضى، سعى، غشي), ce qui correspond à la compétence « conjugaison des verbes défectifs » de l'Unité 1 d'arabe au Trimestre 1.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison du verbe défectueux au passé",
+    "skill": "Conjuguer les verbes défectueux à finale yā' (مضى، غشي، سعى) au passé avec tous les pronoms et en déduire les règles de maintien ou de suppression de la lettre faible.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "verbe défectueux",
+      "finale yā'",
+      "passé",
+      "conjugaison",
+      "pronoms personnels",
+      "voyelle de la lettre médiane"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un tableau de conjugaison par pronom avec trois verbes modèles, suivi d'une démarche inductive allant des exemples aux règles (comportement devant ta' féminin et wāw du pluriel), qui se prête à des exercices de conjugaison à compléter ou à repérer les erreurs.",
+    "themeGroup": "Le verbe défectueux"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

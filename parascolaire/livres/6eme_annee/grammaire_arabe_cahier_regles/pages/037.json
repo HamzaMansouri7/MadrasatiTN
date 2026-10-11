@@ -1,0 +1,88 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 37,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "المصدر من المزيد بحرف: فاعل، فعّل، أفعل (Le nom verbal (masdar) des verbes augmentés d'une lettre : fā'ala, fa''ala, af'ala) – Cours d'arabe",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "كل فعل يدل على حدث، ونعبر عن هذا الحدث باسم يسمى مصدرا فالمصدر إذن اسم مشتق يدل على العمل وله معنى الفعل\nالأفعال الثلاثية المجردة مصادرها مختلفة الأوزان غير مضبوطة فهي سماعية مثل:\nسمع / سمع ؛ خرج / خروج ؛ فرح / فرح ؛ صعب / صعوبة ؛ أبى / إباء ؛ سرى / سريان ؛ زكم / زكام ؛ بكى / بكاء ؛ سار / مسير ؛ كتب / كتابة ؛ حمر / حمرة",
+      "figureDesc": "Tableau de 2 lignes et 11 colonnes : première ligne les verbes trilitères (سمع، خرج، فرح، صعب، أبى، سرى، زكم، بكى، سار، كتب، حمر), deuxième ligne leurs masdars (سمع، خروج، فرح، صعوبة، إباء، سريان، زكام، بكاء، مسير، كتابة، حمرة).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p037_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "الأفعال المزيدة لها مصادر قياسية حسب الجدول التالي\nوزن الفعل: أفعل ← وزن المصدر: إفعال ← الفعل: أسلم ← المصدر: إسلام\nوزن الفعل: فعّل ← وزن المصدر: تفعيل، تفعلة ← الفعل: علّم، برّأ ← المصدر: تعليم، تبرئة\nوزن الفعل: فاعل ← وزن المصدر: فعال، مفاعلة ← الفعل: قاتل ← المصدر: قتال، مقاتلة",
+      "figureDesc": "Tableau à 4 colonnes (وزن الفعل، وزن المصدر، الفعل، المصدر) et 3 lignes de données : أفعل، فعّل، فاعل.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p037_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التمارين",
+      "body": "عنوان القسم فقط؛ لا توجد تمارين ظاهرة في هذه الصفحة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p037_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m7",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.21
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite du masdar des verbes augmentés (grammaire/morphologie arabe), un point de langue autonome qui ne correspond clairement à aucune des six unités, centrées sur la narration et les types de passages.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Masdar des verbes augmentés",
+    "skill": "Former le masdar des verbes augmentés d'une lettre (fāʿala, faʿʿala, afʿala) à partir de leurs schèmes réguliers.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "masdar",
+      "verbes augmentés",
+      "schèmes",
+      "conjugaison arabe",
+      "dérivation",
+      "qiyās"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Le tableau de correspondance entre schème du verbe et schème du masdar, précédé d'un rappel sur les verbes trilitères simples au masdar irrégulier, peut servir de base à des exercices de transformation verbe-masdar ou à une fiche de synthèse. La page ne contient aucun exercice visible.",
+    "themeGroup": "Le masdar"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

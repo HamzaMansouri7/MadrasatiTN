@@ -1,0 +1,143 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 60,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "اسم المفعول من المزيد (النحو/الصرف – اللغة العربية)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول أوزان الفعل المزيد واسم المفعول منها (أحرف)",
+      "body": "الأوزان: أفعل، فعّل، فاعل، انفعل، افتعل، تفعّل، تفاعل، افعلّ، استفعل. الفعل: أمدّ، عدّد، مار، انفكّ، ارتدّ، تمدّد، تشاد، استعدّ، استعدّ. اسم المفعول: ممدّ، معدّد، ممار، منفكّ، مرتدّ، متمدّد، متشاد، (خانة مظللة فارغة)، مستعدّ.",
+      "figureDesc": "جدول من ثلاثة أسطر: الأوزان، الأفعال، أسماء المفعول؛ إحدى الخانات مظللة بالرمادي",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p060_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "صغ اسم المفعول من الأفعال التالي",
+      "body": "تردد، تسلل، فكك، استدل، ارتد",
+      "figureDesc": "جدول بخمس خانات للأفعال وخانات فارغة أسفلها للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p060_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "سطر كل اسم مفعول ورد في الجمل التالية واذكر الفعل الذي اشتق منه",
+      "body": "اجتماع لجان الأحياء مقرر لهذا المساء\nالانترنات في بيتنا مستغلة أحسن استغلال\nالنجاح محقق لو واصلت العمل بجدية",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p060_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ضع مكان النقاط اسم المفعول المناسب مسترشدا بالفعل المقترح",
+      "body": "جعلت عليسة قرطاج (استقر) ... لها\nقوتي (استمد) ... من عزمي على الانتصار\nعطفي وحناني (وزع) ... بالعدل بين أبنائي",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p060_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ألف ثلاث جمل تشتمل في كل واحدة منها اسم مفعول حسب الطلب",
+      "body": "معزز\nمدلل\nممدد",
+      "figureDesc": "مساحة فارغة للإجابة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p060_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "اسم المفعول من المزيد – يصاغ اسم المفعول من الثلاثي المجرد على وزن مفعول",
+      "body": "الصحيح: السالم: كتب ← مكتوب؛ المضاعف: ردّ ← مردود؛ مهموز الفاء: أخذ ← مأخوذ؛ مهموز العين: سأل ← مسؤول؛ مهموز اللام: قرأ ← مقروء. المعتل: المثال: وهب ← موهوب.",
+      "figureDesc": "جدول يصنف الثلاثي المجرد إلى صحيح (سالم، مضاعف، مهموز الفاء، مهموز العين، مهموز اللام) ومعتل (مثال) مع فعل واسم المفعول",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p060_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "يصاغ اسم المفعول من المزيد بإبدال حرف المضارعة ميما مضمومة وفتح ما قبل الآخر\nسلّم يسلّم مسلَّم     انتصر ينتصر منتصَر",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p060_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.26
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la formation du participe passif (اسم المفعول) des verbes dérivés, une leçon de grammaire/morphologie arabe qui ne correspond clairement à aucune des six unités, centrées sur la narration et ses passages (aucune mention explicite de la conjugaison ou de la grammaire propre à une unité).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Participe passif des verbes augmentés",
+    "skill": "Former et repérer le participe passif (اسم المفعول) à partir de verbes trilitères augmentés et le réutiliser dans des phrases.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "production_ecrite",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "participe passif",
+      "verbes augmentés",
+      "morphologie arabe",
+      "conjugaison",
+      "dérivation",
+      "grammaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable : tableau récapitulatif des schèmes, puis dérivation, repérage dans des phrases, complétion guidée par le verbe et production de phrases à partir de mots donnés, avec règle de formation en synthèse.",
+    "themeGroup": "Les participes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

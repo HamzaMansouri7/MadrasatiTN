@@ -1,0 +1,122 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 31,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "شبكة تقييم الإنتاج الكتابي (معايير التقييم) وجدول تخطيط النص السردي (الشخصيات، وضع البداية، النهاية)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول تخطيط النص السردي",
+      "body": "الشخصيات: ما تنوي الشخصية القيام به | وضع البداية: الحدث الذي حل العقدة | النهاية: نهاية محزنة / نهاية سعيدة / موقف جديد لشخصية / عبرة أخلاقية",
+      "figureDesc": "جدول من ثلاثة أعمدة (الشخصيات، وضع البداية، النهاية) بخلايا فارغة للتعبئة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "production_ecrite_arabe_p031_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "معايير التقييم في الإنتاج الكتابي: شبكة تقييم",
+      "body": "مع١ الملاءمة: هل فهمت السند ؟ / هل التزمت بما هو مطلوب منك ؟ / هل حررت في كل العناصر ؟\nمع٢ سلامة بناء النص: هل رتبت الأحداث ؟ / ها احتوى نصك على السياقات الثلاثة ؟ / هل احترمت قواعد اللغة والرسم ؟\nمع٣ التصرف في نمط الكتابة: هل أغنيت نصك بالوصف ؟ / هل أغنيت نصك بحوار ؟ / هل احترمت مكونات النص السردي ؟\nمع٤ ثراء اللغة والطرافة: هل استعملت لغة عربية فصيحة ؟ / هل استعملت تراكيب متنوعة ؟ / هل احتوى تحريرك على فكرة مميزة ؟\nمع٥ حسن العرض: هل خطك واضح ؟ / هل نقطت نصك ؟ فاصل نقطة / هل ميزت الفقرات عن بعضها ؟",
+      "figureDesc": "جدول تقييم: عمود المعايير (مع…)، عمود الأسئلة، وعمود أيسر بخانات فارغة للتقييم (ثلاث خانات لكل معيار)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "production_ecrite_arabe_p031_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "عنوان القسم التالي",
+      "body": "مجموعة من المواضيع",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "production_ecrite_arabe_p031_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-u7",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u7",
+    "confidence": 0.9
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page présente une grille d'évaluation de la production écrite (critères de pertinence, construction du texte, richesse de la langue) et un tableau de planification du récit (personnages, situation initiale, fin) ; c'est une page de synthèse transversale qui ne correspond clairement à aucune unité précise, même si l'Unité 7 (schéma narratif) en est proche.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Planification et évaluation du récit",
+    "skill": "Planifier un texte narratif (personnages, situation initiale, fin) et s'auto-évaluer avec une grille de critères en production écrite.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "texte narratif",
+      "production écrite",
+      "grille d'évaluation",
+      "schéma narratif",
+      "situation finale",
+      "critères de pertinence"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une grille d'auto-évaluation en trois critères (pertinence, cohérence de la structure, adaptation du mode d'écriture avec description) sous forme de questions, et un tableau de planification du récit avec choix de type de fin (triste, heureuse, nouvelle situation, morale).",
+    "themeGroup": "Planification et évaluation de la production écrite"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le tableau d'en-tête n'a pas de titre « جدول تخطيط النص السردي » visible dans l'image ; ce titre est inventé. Même remarque pour la colonne « النهاية: » : l'image ne montre pas ce mot, seulement les 4 options."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« عنوان القسم التالي » : texte absent de l'image. Seul « مجموعة من المواضيع » apparaît, en bas, et son ordre visuel est brouillé."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "« مع١ … مع٥ » : l'image montre « معـ » suivi du titre ; aucun chiffre n'est visible (ils sont probablement coupés)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases de notation vides à gauche de chaque critère (3 par ligne) ne sont pas signalées."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« فاصل نقطة » est transcrit comme appartenant à la question ; dans l'image, « فاصل » est sur la même ligne que « هل نقطت نصك ؟ » et « نقطة » est à la ligne suivante, ce qui est à peu près correct mais sans sens clair."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

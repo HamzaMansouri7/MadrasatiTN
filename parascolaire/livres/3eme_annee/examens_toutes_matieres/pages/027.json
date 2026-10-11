@@ -1,0 +1,119 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 27,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي – ورقة تحرير مع جدول إسناد الأعداد (معايير التصحيح)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "Page de production écrite : lignes pointillées vides destinées à la rédaction de l'élève. La consigne de départ n'est pas visible sur cette page. Barème noté dans la marge gauche : 0,5 / 0,5 / 0,5 / 0,5 / 0,5 / 0,5 / 0,5 / 0,5 / 0,5 puis 1 / 1 / 1. Fragment visible dans la marge : « مِنْ 0 إِلَى ».",
+      "figureDesc": "Deux illustrations à droite. En haut, un garçon tend un billet ou une pièce à une femme à l'intérieur d'une boutique dont l'enseigne porte « مكتبة ». En bas, dans une bibliothèque garnie de livres, une femme remet des objets à un garçon vu de dos au comptoir. Filigrane « MOURAJAA.COM ».",
+      "answer": null,
+      "confidence": 0.5,
+      "id": "examens_toutes_matieres_p027_i1",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "Colonnes (معايير الحد الأدنى) : معـ1أ (subdivisé), معـ1ب, معـ2أ, معـ2ب (subdivisé), معـ2ج, معـ2د, معـ2هـ, معـ4. Colonne التميز : معـ3.\nLignes (niveaux) : لا يَمْلِكُ (0) ; دُونَ الأَدْنَى ; الأَدْنَى ; الأَقْصَى.\nValeurs par ligne, de droite à gauche : \n- لا يَمْلِكُ : 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 ; التميز : مِنْ 0\n- دُونَ الأَدْنَى : 0,25 et 0,5 (معـ1أ) | 0,5 (معـ1ب) | 0,5 (معـ2أ) | 0,5 et 1 (معـ2ب) | 0,5 (معـ2ج) | 0,5 (معـ2د) | 0,5 (معـ2هـ) | 1 (معـ4) ; التميز : إِلَى\n- الأَدْنَى : 0,75 et 1 (معـ1أ) | 1 (معـ1ب) | 1 (معـ2أ) | 1,5 et 2 (معـ2ب) | 1 (معـ2ج) | 1 (معـ2د) | 1 (معـ2هـ) | 2 (معـ4)\n- الأَقْصَى : 1,25 et 1,5 (معـ1أ) | 1,5 (معـ1ب) | 1,5 (معـ2أ) | 2,5 et 3 (معـ2ب) | 1,5 (معـ2ج) | 1,5 (معـ2د) | 1,5 (معـ2هـ) | 3 (معـ4) ; التميز : 5",
+      "figureDesc": "Tableau de notation à double entrée (critères × niveaux de maîtrise), avec un tableau séparé « التَّمَيُّزُ » (معـ3) à gauche : مِنْ 0 إِلَى 5.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p027_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u5",
+    "confidence": 0.57
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Il s'agit d'une page de production écrite en arabe avec une grille de notation générale (critères معـ1 à معـ4) et sans consigne visible, donc rien ne permet de la rattacher à une unité précise.",
+  "linkFlags": [
+    "low_ocr_confidence",
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite et grille d'évaluation",
+    "skill": "Rédiger un texte en arabe en respectant des critères de correction (pertinence, cohérence, langue, présentation) évalués par une grille de notation.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "production écrite",
+      "grille de notation",
+      "critères de correction",
+      "barème",
+      "arabe",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La structure de la grille d'attribution des notes (critères minimaux, critère d'excellence, niveaux de maîtrise) peut inspirer une fiche d'auto-évaluation ou de co-évaluation de la production écrite, mais la page ne contient ni consigne ni situation réutilisable.",
+    "themeGroup": "Évaluation de la production écrite"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Barème de la marge gauche : 9 valeurs de 0,5 sont indiquées, mais l'image en montre 9 (3+3+3) suivies de 1/1/1 ; le décompte est correct, mais le regroupement n'est pas précisé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les deux illustrations (scène devant la « مكتبة » et scène de l'élève avec la libraire) ne sont pas mentionnées, ni le mot « مكتبة » sur l'enseigne."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de colonne « المعايير » / « المَعَايِيرُ الحَدُّ الأَدْنَى » avec ses voyelles et l'en-tête « التَّمَيُّزُ » ne sont pas transcrits ; seuls les codes des colonnes sont donnés."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les en-têtes sont transcrits « معـ1أ, معـ1ب, معـ2أ » alors que l'image montre « مع1أ, معـ ب (1), مع2أ… » : l'ordre chiffre/lettre est inversé (ex. « معـ1ب » vs « معـ ب 1 »). Le « معـ3 » du التميز et le « معـ4 » sont corrects."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ligne دُونَ الأَدْنَى, colonne معـ4 : la transcription donne 1, ce qui est correct, mais pour la ligne الأَدْنَى la valeur de معـ4 est 2 et celle de الأَقْصَى est 3 ; la colonne التميز est mal alignée : « مِنْ 0 / إِلَى / 5 » apparaît en colonne, et non en face des lignes « لا يملك » et « دون الأدنى »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« لا يَمْلِكُ » : l'image est tronquée (« تَمْلِكُ ») ; la transcription restitue une forme complétée non entièrement visible."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

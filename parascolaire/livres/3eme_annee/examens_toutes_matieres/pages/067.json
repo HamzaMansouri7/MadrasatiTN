@@ -1,0 +1,143 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 67,
+  "grade": "3ème Année",
+  "subject": "Lecture (français) – la page ne contient aucun texte arabe, contrairement à l'indication « اللغة العربية » du prompt",
+  "topicGuess": "Examen du 1er trimestre N°3 – Lecture : Dimanche en famille (les enfants et leurs jeux à la maison)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "je lis le texte :",
+      "body": "aujourd'hui, c'est dimanche, les enfants ne vont pas à l'école. les parents ne vont pas au travail. toute la famille est à la maison ; papa est dans le salon, il regarde la télé. maman est dans la cuisine, elle prépare le déjeuner. amélie est dans sa chambre, elle joue avec l'ordinateur. bruno joue au ballon, dans le jardin. la petite nadine joue avec sa poupée. les trois enfants s'amusent bien.",
+      "figureDesc": "Texte de lecture encadré. Le filigrane « MOURAJAA.COM » le traverse. Les débuts de ligne sont partiellement coupés par le scan (« pas au travail », « la télé », « chambre », « nadine »). Cases de notation C1 et C5 à droite.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p067_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "je barre ce qui est faux :",
+      "body": "→ les trois enfants ne vont pas à l'école, • c'est samedi. • c'est dimanche. • c'est lundi.",
+      "figureDesc": "Phrase à gauche avec une flèche. Trois propositions à puces à droite. Case de notation C2.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p067_i2",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "je relie par une flèche :",
+      "body": "Colonne de gauche : amélie • ; bruno • ; nadine • (début des mots coupé par le scan). Colonne de droite : • joue au ballon. • joue avec sa poupée. • joue avec l'ordinateur.",
+      "figureDesc": "Deux colonnes de points à relier. Case de notation C2.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p067_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "je lis et je dessine :",
+      "body": "un ordinateur | un ballon | une poupée",
+      "figureDesc": "Tableau de trois cases vides à remplir par un dessin, avec une légende sous chaque case.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p067_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u3",
+    "confidence": 0.2
+  },
+  "topicSubject": "Français (lecture)",
+  "topicReason": "La page est un examen de lecture en français (Examen du 1er trimestre N°3, texte « Dimanche en famille ») et la liste officielle ne contient aucun chapitre de français : les unités arabes, les mathématiques et l'éveil scientifique ne correspondent pas.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Lecture : dimanche en famille",
+    "skill": "Lire un court texte et en comprendre les informations explicites (lieux, activités des personnages) pour répondre à des consignes variées.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "appariement",
+      "autre"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "famille",
+      "dimanche",
+      "jeux",
+      "vocabulaire de la maison"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une séquence simple et progressive : texte court de la vie quotidienne, suivi d'un tri entre propositions fausses et vraies, d'un appariement personnage-activité et d'un dessin pour vérifier la compréhension, facilement adaptable à d'autres scènes (samedi, vacances, fête).",
+    "themeGroup": "Compréhension de texte"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête n'est pas transcrit : « Matière : Lecture », « Niveau : 3ème année », « Examen du 1er trimestre N°3 », champs « Nom », « Prénom », « 3ème »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les mots coupés par le scan sont omis dans le texte : « les parents ne vont pas au travail. [ ils regardent ] la télé. » Le début des lignes (« pas au travail. », « la télé. », « chambre », « nadine ») est visible en marge, mais la transcription a fusionné et complété le texte. Elle donne « les parents ne vont pas au travail. toute la famille... », ce qui est correct, mais elle a ignoré le fragment « la télé » en début de ligne."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« il regarde la télé » : la transcription a reconstitué des mots coupés par le bord du scan (« la » / « télé » est visible mais « regarde » est en fin de ligne précédente). La reconstitution est plausible mais pas entièrement lisible."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les marqueurs de notation (cases C1, C5, C2, C2) dans la marge droite ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros d'exercices 2, 3 et 4 sont partiellement coupés dans l'image ; la transcription les numérote correctement. Le filigrane « MOURAJAA.COM » n'est pas mentionné, ce qui est acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

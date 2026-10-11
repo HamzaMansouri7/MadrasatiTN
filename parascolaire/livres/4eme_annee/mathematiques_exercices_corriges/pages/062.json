@@ -1,0 +1,128 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 62,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 16 : الأعداد من 10 000 إلى 99 999 (1) قراءة وكتابة منازل حساب جداء عددين أحدهما عقد أو مئات كاملة أو آلاف كاملة والآخر ذو رقم واحد",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الأسبوع 16",
+      "body": "الأعداد من 10 000 إلى 99 999 (1) : قراءة، كتابة منازل حساب جداء عددين أحدهما عقد أو مئات كاملة أو آلاف كاملة والآخر ذو رقم واحد",
+      "figureDesc": "عنوان الصفحة داخل إطار مستطيل بزوايا مدورة، ورقم الأسبوع 16 داخل شكل بيضاوي على اليمين",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p062_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حدّد منزلة الرّقم 2 في كلّ من الأعداد التالية :",
+      "body": "67 203 - 840 295 - 529 607 - 70 250",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mathematiques_exercices_corriges_p062_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ضع رقما مناسبًا مكان النّقطة:",
+      "body": "100 > . x 33 > 90 ؛ 1 000 > . x 230 > 900 ؛ 700 > . x 310 > 400 ؛ 110 > . 5 x 4 > 80",
+      "figureDesc": "أربع متباينات في عمودين يفصل بينهما خط عمودي",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p062_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ العدد ثمّ أتمم كما في المثال :",
+      "body": "678 509\nالعدد 67 هو عدد عشرات الآلاف\nالعدد 67 850 هو عدد ................\nيحتلّ الرّقم 6 رتبة ................\nالعدد 678 هو عدد ................",
+      "figureDesc": "العدد 678 509 داخل مستطيل في أعلى اليسار",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p062_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لاحظ المثال ثم تتبّع نفس الطّريقة لكتابة باقي الجذاءات في صورها المختصرة :",
+      "body": "(7 x 5) + (7 x 40) + (7 x 100) = 7 x (5 + 40 + 100) = 7 x 145\n35 + 280 + 700 =\n1 015 =\nالجذاءات: 6 x 128 ؛ 5 x 527 ؛ 8 x 3248 ؛ 9 x 613",
+      "figureDesc": "أربعة جذاءات داخل مستطيلات في أسفل التمرين",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p062_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أيّ الخيارين أفضل له علما وأنّه وجد 10 فوانيس محترقة وغير صالحة للبيع؟ علّل جوابك بالأرقام.",
+      "body": "اشترى تاجر 20 علبة بكلّ واحدة 12 فانوسا كهربائيا. عرض عليه بائع شراءها بـ 5 400 مي للعلبة الواحدة لكنّه فضّل بيعها بالتّفصيل وذلك بحساب 600 مي للفانوس الواحد.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p062_i6",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.61
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la lecture, l'écriture et la valeur positionnelle des nombres de 10 000 à 99 999, ainsi que sur les produits par un chiffre (dizaines, centaines, milliers entiers) et un problème monétaire en millimes, ce qui correspond à la Période 1 (nombres à 5 chiffres et monnaie).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 99 999 et multiplication",
+    "skill": "Lire, écrire et décomposer les nombres de 10 000 à 99 999 (rangs) et calculer le produit d'un nombre par un nombre à un chiffre, en utilisant la factorisation et les dizaines, centaines ou milliers entiers.",
+    "pageType": "mixed",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "valeur positionnelle",
+      "rang des chiffres",
+      "produit",
+      "factorisation",
+      "multiples de 10/100/1000",
+      "problème de commerce"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : encadrement d'un nombre par des produits à compléter avec un chiffre manquant, nombre « coupé » à lire par classes (dizaines de mille, etc.) sur un exemple modèle, et problème commercial comparant vente en gros et vente au détail avec articles défectueux, à justifier par le calcul.",
+    "themeGroup": "Grands nombres"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,158 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 3,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Sommaire : modèles d'examens unifiés régionaux et locaux de 6ème année primaire (session juillet) et exercices de soutien en mathématiques et en français",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "نماذج امتحانات موحدة اقليمية للسنة السادسة ابتدائي دورة يوليوز",
+      "body": "امتحان مادة الرياضيات نموذج وفق الإطار المرجعي\nالتصحيح\nامتحان مادة الرياضيات نموذج وفق الإطار المرجعي\nامتحان مادة الرياضيات نموذج وفق الإطار المرجعي\nامتحان مادة اللغة الفرنسية نموذج وفق الإطار المرجعي\nامتحان مادة اللغة الفرنسية نموذج وفق الإطار المرجعي\nامتحان مادة اللغة الفرنسية نموذج وفق الإطار المرجعي\nامتحان مادة اللغة الفرنسية نموذج وفق الإطار المرجعي",
+      "figureDesc": "Liste à puces. En-tête rouge avec « امتحانات للصفحة » et filigrane vert/rouge « www.escu... info ».",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p003_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "امتحانات مديريات (نماذج إقليمية)",
+      "body": "امتحان مادة الرياضيات لمديرية تارودانت مع التصحيح\nامتحان مادة اللغة الفرنسية لمديرية تارودانت\nامتحان مادة اللغة الفرنسية لمديرية خريبكة\nامتحان مادة اللغة الرياضيات لمديرية بني ملال\nامتحان مادة اللغة الفرنسية لمديرية بني ملال\nامتحان مادة الرياضيات لمديرية طنجة أصيلة\nامتحان مادة اللغة الفرنسية لمديرية صفرو\nامتحان مادة اللغة الفرنسية لمديرية تطوان الحسيمة\nامتحان مادة الرياضيات لمديرية سيدي قاسم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p003_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الفهرس",
+      "body": "الوحدة الأولى\nالوحدة الثانية\nالوحدة الثالثة\nالوحدة الرابعة\nالوحدة الخامسة\nالوحدة السادسة",
+      "figureDesc": "Filigrane de site en vert et rouge à côté du mot « الفهرس ».",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "soutien_maths_francais_p003_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "نماذج امتحانات موحدة محلية للسنة السادسة ابتدائي",
+      "body": "امتحان مادة الرياضيات نموذج\nالتصحيح\nامتحان مادة الرياضيات نموذج\nالتصحيح\nامتحان مادة النشاط العلمي نموذج\nالتصحيح\nامتحان مادة اللغة الفرنسية نموذج\nالتصحيح\nامتحان مادة اللغة الفرنسية نموذج\nالتصحيح",
+      "figureDesc": "Titre en vert, liste à puces.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p003_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تمارين الدعم في مادة الرياضيات",
+      "body": "الوحدة الأولى\nالوحدة الثانية\nالوحدة الثالثة\nالوحدة الرابعة\nالوحدة الخامسة\nالوحدة السادسة",
+      "figureDesc": "Titre bleu avec icône décorative.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p003_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تمارين الدعم في مادة اللغة الفرنسية",
+      "body": "",
+      "figureDesc": "Titre bleu avec icône décorative, en bas de page ; la liste des unités est coupée.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p003_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.4
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un sommaire de modèles d'examens unifiés régionaux et locaux (mathématiques, français, éveil scientifique) et d'exercices de soutien, donc sans contenu rattachable à un chapitre précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Sommaire d'examens unifiés de 6ème",
+    "skill": "Se repérer dans un recueil de modèles d'examens et d'exercices de soutien en mathématiques et en français.",
+    "pageType": "mixed",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "sommaire",
+      "examens unifiés",
+      "6ème année primaire",
+      "mathématiques",
+      "français",
+      "soutien"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Page d'index qui énumère des modèles d'examens régionaux et locaux, avec corrigés et soutien par unité. Elle ne contient aucun exercice, mais donne une idée de la structure d'un recueil de préparation à l'examen (régional, local, par matière, avec corrigé).",
+    "themeGroup": "Sommaires"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Titre ajouté « امتحانات مديريات (نماذج إقليمية) » absent de l'image (l'image affiche « امتحانات للصفحة » en haut à gauche)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« امتحان مادة اللغة الرياضيات لمديرية بني ملال » : l'image affiche bien cette erreur (اللغة الرياضيات), transcription fidèle ; à signaler seulement comme texte source."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Texte de filigrane/en-tête omis : « امتحانات للصفحة », « حصرية للصفحة », « والمجتازة », « وبعض الأساتذة الرسمية », « دورة فبراير », « www.escu... info »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "« مع التصحيح » se trouve sur la même ligne que l'examen de Taroudant, à gauche ; OK, mais la transcription le place après le texte, ce qui est acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

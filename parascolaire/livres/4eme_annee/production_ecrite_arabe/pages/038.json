@@ -1,0 +1,166 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 38,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التعبير الكتابي: وصف مشهد (زيارة ضيعة، سوق أسبوعية، محمية طبيعية، حديقة الحيوانات، الغابة، وسائل النقل العمومي، المحطة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "صف المشهد واذكر مشاعرك وأنت تستمتع بما ترى",
+      "body": "زرت ضيعة فأعجبت بما رأيت وسمعت",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "production_ecrite_arabe_p038_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "صفه",
+      "body": "الموضوع عدد\nرأيت فلاحا يعتني بأرضه",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p038_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "الموضوع عدد\nزرت سوقا اسبوعية فأعجبت بما يعرضه الفلاحون",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p038_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "الموضوع عدد\nزرت محمية طبيعية فأعجبت بما رأيت وسمعت",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p038_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "الموضوع عدد\nقمت برحلة إلى حديقة الحيوانات لكن حدث ما افسد عليكم الجولة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p038_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أكتب رسالة لصديقك تصف له فيها ما رايت",
+      "body": "الموضوع عدد\nخرجتم للغابة للقيام بجولة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p038_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "صف ما شاهدت",
+      "body": "الموضوع عدد\nاضطررت لزيارة أحد أقاربك فاستعملت أحد الوسائل النقل العمومي فلفت انتباهك العديد من السلوكات",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p038_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "الموضوع عدد\nذهبت إلى المحطة لاستقبال ضيف فلفت انتباهك العديد من السلوكات التي لم تعجبك",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p038_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "الموضوع عدد",
+      "figureDesc": "عنوان موضوع جديد في أسفل الصفحة، نصه غير ظاهر (مقطوع)",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "production_ecrite_arabe_p038_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-4-m7",
+    "confidence": 0.38
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page propose des sujets d'expression écrite (description de scènes : ferme, marché, réserve naturelle, zoo, forêt, transport, gare) en arabe ; aucun des chapitres officiels (centrés sur le récit, les personnages et le schéma narratif) ne correspond clairement à ce contenu descriptif.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description de scènes (expression écrite)",
+    "skill": "Rédiger un texte descriptif d'un lieu ou d'une scène vécue en exprimant ses sentiments et ses observations.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "expression écrite",
+      "description",
+      "visite d'une ferme",
+      "marché hebdomadaire",
+      "zoo",
+      "transports en commun"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Banque de situations d'écriture variées ancrées dans le quotidien tunisien (ferme, souk, réserve naturelle, zoo, forêt, transports, gare), avec des consignes d'imprévu, de lettre à un ami ou de comportements observés à critiquer, facilement réutilisables comme sujets de rédaction.",
+    "themeGroup": "Description de lieux (village, bâtiments)"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

@@ -1,0 +1,122 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 36,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول – رياضيات (حساب ذهني) – السنة الثالثة – عدد 3 (ملاحظة : المادة المكتوبة على الصفحة هي الرياضيات وليست اللغة العربية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَحْسُبُ عَدَدَ عُلَبِ الجُبْنِ الْمَرْصُوفَةِ.",
+      "body": "بِالْمُرَكَّبِ التِّجَارِيِّ رَأَى خَلِيلٌ عَامِلَةً تَرُصُّفُ عُلَبَ الْجُبْنِ. وَضَعَتِ الْعَامِلَةُ 9 عُلَبٍ ثُمَّ أَضَافَتْ 7 عُلَبٍ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p036_i1",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "- أَكْتُبُ عَدَدَ عَشَرَاتِهِ.\n- أُفَكِّكُ 1650 مي حَسَبَ صِيغَتِهِ الْقَانُونِيَّةِ.",
+      "body": "ثَبَّتَتِ الْعَامِلَةُ عَلَى الْعُلْبَةِ الْوَاحِدَةِ الثَّمَنَ 1650 مي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p036_i2",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْتُبُ الْعَدَدَيْنِ الْمُوَالِيَيْنِ مُحَافِظًا عَلَى نَفْسِ الْخُطْوَةِ.",
+      "body": "بِالْجِهَةِ الْمُقَابِلَةِ عَامِلَةٌ أُخْرَى تَعُدُّ عُلَبَ الْبَسْكُويتِ حَسَبَ الِانْتِظَامِ التَّالِي :\n30 - 33 - 36 - 39 - ..... - .....",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p036_i3",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُفَكِّكُ الْعَدَدَ إِلَى مِئَاتٍ كَامِلَةٍ وَالْبَاقِي.",
+      "body": "ثَمَنُ عُلْبَةِ الْبَسْكُويتِ 1435 مي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p036_i4",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَكْتُبُ الثَّمَنَ الْجَدِيدَ.",
+      "body": "وَقَعَ التَّخْفِيضُ فِي ثَمَنِ عُلْبَةِ الْبَسْكُويتِ بِ 200 مي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "examens_toutes_matieres_p036_i5",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-3-p1",
+  "topicTitle": "Période 1 : Nombres à 4 chiffres, quadrillage et mètre/cm",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p3",
+    "confidence": 0.22
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Cette page de calcul mental de fin de premier trimestre porte sur les nombres à 4 chiffres (décomposition de 1650 et de 1435, nombre de dizaines, suite de 3 en 3, retrait de 200), ce qui relève de la Période 1, mais c'est une évaluation de fin de trimestre qui peut couvrir plusieurs chapitres.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Calcul mental et numération",
+    "skill": "Effectuer du calcul mental (addition, suites régulières, décomposition de nombres jusqu'à 1650, soustraction de centaines) dans un contexte de prix et de comptage.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "calcul mental",
+      "décomposition de nombres",
+      "suite régulière",
+      "dizaines et centaines",
+      "prix en millimes",
+      "fin de trimestre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un fil conducteur unique (visite d'un centre commercial, ouvrière qui range et étiquette des boîtes de fromage et de biscuits) relie des mini-exercices de calcul mental : addition simple, nombre de dizaines, décomposition canonique, suite de pas 3, décomposition en centaines entières et reste, baisse de prix de 200 millimes.",
+    "themeGroup": "Calcul mental"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

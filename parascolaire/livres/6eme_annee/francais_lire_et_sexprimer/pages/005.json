@@ -1,0 +1,99 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 4,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension / Révision : Les cartables",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Les cartables\n\nJulien prépare ses affaires.\n-Quel bonheur, pense-t-il, la rentrée est pour demain !\nIl taille ses crayons, remplit son stylo d'encre violette et range ses cahiers neufs avec le plus grand soin dans son cartable brun. Il est prêt pour le grand jour.\nAlors, il remonte son réveil et se met au lit. Et comme il faut être en forme pour le premier jour d'école, il s'endort aussitôt...\nDans sa chambre, Thomas regarde avec tristesse le calendrier. Il soupire.\n-Quel désastre ! Demain, c'est la rentrée...\nIl prend son cartable brun qui traîne sous le lit. Il y entasse pêle-mêle un avion en papier, un jeu électronique, un sac de billes et un gros paquet de bonbons. Il y fourre aussi deux ou trois vieux crayons et quelques feuilles de papier froissées.\nAlors, il se jette sur son lit et s'endort aussitôt...\nSur le chemin de l'école, Julien marche d'un bon pas.\nSoudain il rencontre Thomas. Les enfants se disputent. Tous deux se retrouvent par terre tandis que les cartables glissent sur le trottoir...\nChacun repart, en prenant le cartable de l'autre !\n-Sortez vos cahiers, dit la maîtresse.\nJulien fouille dans le cartable et en sort... un sac de billes !\n-Prenez votre stylo...\nJulien cherche, cherche... et ne trouve qu'un bonbon rose !\nQuand la maîtresse demande de dessiner son meilleur souvenir de vacances, Julien devient tout rouge.\nQue va-t-il encore trouver dans son cartable à la place des crayons de couleurs ?\nIl y plonge la main en retenant son souffle.\nIl en sort un réveil qui se met à sonner, à sonner sans arrêt... Toute la classe le regarde.\n\nD'après Didier Dufresne",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.99,
+      "id": "francais_lire_et_sexprimer_p005_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.4
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un texte de lecture narratif (Julien prépare son cartable pour la rentrée) en français ; il ne correspond clairement à aucun des huit modules, car le thème de la rentrée scolaire n'apparaît dans aucun titre ni aucune compétence, et le texte est trop court pour rattacher la page à un module avec certitude.",
+  "linkFlags": [
+    "no_topic",
+    "poor_scan"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    119
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Lecture suivie : Les cartables",
+    "skill": "Lire un court texte narratif et en comprendre le sens en répondant à des questions sur le récit.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "cartable",
+      "rentrée scolaire",
+      "texte narratif",
+      "révision"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le contexte de la rentrée scolaire, avec un personnage qui prépare ses affaires, peut servir de base à des textes de lecture, à des questions de compréhension ou à une production écrite sur le même thème.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.0,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Toute la transcription (« Lis le texte : Les cartables… D'après Didier Dufresne ») est absente de l'image. L'image montre un Sommaire, pas un texte de lecture. Le texte de la transcription n'est qu'une ombre très floue vue par transparence (verso de la page)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le contenu réel visible n'est pas transcrit : titre « Sommaire », « Sagesse », « 6ème Année de base », en-tête « Notions / Page »."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Partie I : Lecture - compréhension … de 4 à 71 ; Partie II : Expression écrite ; Partie III : Les évaluations … de 85 à 115 : tous absents."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Entrées de la Partie II absentes, avec leurs pages : Les métiers 72 ; Communiquer avec les autres 74 ; S'entraider pour mieux réussir 75 ; Sauver la nature 76 ; Être en forme et mieux se porter 79 ; Profiter de son temps libre 81 ; La lettre 83."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Pied de page absent : « Lire et s'exprimer », page 3, « 6ème année de base »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "quality": {
+    "status": "poor",
+    "accuracy": 0.0,
+    "source": "audit"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

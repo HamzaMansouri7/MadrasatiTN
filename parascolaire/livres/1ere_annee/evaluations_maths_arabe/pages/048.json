@@ -1,0 +1,104 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 48,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أَقُومُ بِمُبَادَلَاتٍ: التَّجْمِيعَاتُ المُنْتَظَمَةُ",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الحِسَابُ الذِّهْنِيُّ",
+      "body": "أَمْلِكُ : (2) (2) (1) (2) = ............... مي\nأَحْتَاجُ ............... مي لِيُصْبِحَ لِي 9 مي .\n• أُمَثِّلُ مَا أَحْتَاجُهُ بِقِطْعَتَيْنِ\n• أُمَثِّلُ مَا أَمْلِكُهُ بِثَلَاثِ قِطَعٍ",
+      "figureDesc": "صور لأربع قطع نقدية (2 مي، 2 مي، 1 مي، 2 مي)، وإطار مستطيل مقسوم إلى جزأين لتمثيل القطع النقدية.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p048_i1",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُجَمِّعُ البَيْضَ 4/4 وَأَمْلَأُ الجَدْوَلَ.",
+      "body": "أُجَمِّعُ البَيْضَ 4/4 وَأَمْلَأُ الجَدْوَلَ.",
+      "figureDesc": "مجموعة من 10 بيضات، وجدول تجميع مكوّن من خانتين: خانة للمجموعات الرباعية (4 بيضات) وخانة للآحاد المتبقية (بيضة واحدة).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p048_i2",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُجَمِّعُ قَوَارِيرَ المَاءِ 6/6 .",
+      "body": "أُجَمِّعُ قَوَارِيرَ المَاءِ 6/6 .",
+      "figureDesc": "مجموعة تضم 19 قارورة ماء، وجدول تجميع مكوّن من خانتين لتسجيل التجميعات السداسية والوحدات المتبقية.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p048_i3",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَسْتَبْدِلُ كُلَّ 5 مُثَلَّثَاتٍ بِمُرَبَّعٍ وَاحِدٍ.",
+      "body": "مِثَالٌ : 5 مُثَلَّثَاتٍ تُمَثَّلُ بِمُرَبَّعٍ وَاحِدٍ.",
+      "figureDesc": "مثال توضيحي يُظهر 5 مثلثات داخل حلقة متصلة بمربع، ومجموعة من المثلثات الزرقاء المتفرقة لاستبدال كل 5 منها بمربع.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p048_i4",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "math-1-p6",
+  "topicTitle": "Période 6 : Longueurs, masses, monnaie et résolution de problèmes",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p4",
+    "confidence": 0.15
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de mathématiques sur les échanges et groupements réguliers avec des pièces de monnaie (millimes), qui se rapproche le plus de la période 6 (monnaie), mais le rattachement reste incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Groupements et échanges de pièces",
+    "skill": "Regrouper des objets par paquets égaux (4, 5, 6) et effectuer des échanges, en préparation à la numération de position.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "groupements réguliers",
+      "échanges",
+      "monnaie (millimes)",
+      "calcul mental",
+      "regroupement par 4, 5 et 6"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les situations concrètes d'échange (pièces de monnaie, œufs en boîtes, bouteilles d'eau en packs, formes remplacées par une autre) permettent de passer du regroupement à la valeur de position, avec un tableau à compléter et une représentation par des pièces.",
+    "themeGroup": "Monnaie : pièces et millimes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

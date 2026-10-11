@@ -1,0 +1,261 @@
+{
+  "book": "epreuve_modele_mathematiques_corrigee",
+  "page": 2,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Épreuve blanche de mathématiques – Concours d'entrée aux collèges préparatoires pilotes (session 2023) : fractions et pourcentages, problème financier ; cercle, secteur circulaire, arc, vitesse, durée et distance",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "En-tête de l'épreuve",
+      "body": "وزارة التربية ***** المعلم: نبيل ثابتي — مناظرة الدخول إلى المدارس الإعدادية النموذجية — دورة 2023 ( تجريبي ) — الاختبار: رياضيات — التوقيت: 60 دقيقة — الضارب: 1",
+      "figureDesc": "",
+      "answer": null,
+      "id": "epreuve_modele_mathematiques_corrigee_p002_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "المسألة رقم 1: ( 6 نقاط )",
+      "body": "جمّعت عائلة مبلغا ماليّا لتأثيث منزلها و ذلك بشراء تلفاز و مكيّف هوائيّ و ثلاّجة. الجدول التّالي يوضّح مساهمات أفراد العائلة:\nالجدول: مساهمة الأب: 1/3 المبلغ | مساهمة الأمّ: 40 % من المبلغ | مساهمة البنت الكبرى: أقلّ من مساهمة الأب بـ 287,4 د\n1- ما هو المبلغ المجمّع لدى العائلة ؟\nتبيّن للعائلة أنّ المبلغ المجمّع لديهم يمكّنهم من شراء تلفاز و مكيّف فقط أو أن يضيفوا 405 د ليتمكّنوا من شراء الثلاّجة و المكيّف فقط.\n2- ما هو ثمن شراء المكيّف إذا علمت أنّ ثمن التّلفاز يمثّل 85 % من ثمن الثلاّجة.",
+      "figureDesc": "Tableau à trois colonnes (contribution du père, de la mère, de la fille aînée) et une ligne de valeurs.",
+      "answer": null,
+      "id": "epreuve_modele_mathematiques_corrigee_p002_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "المسألة رقم 2: ( 6 نقاط )",
+      "body": "يمثّل الرّسم المصاحب مضمارا للعدو على شكل قطعتي مستقيم و قوس دائريّ.\n• الدّائرة ( ح ) مركزها \"ن\" و شعاعها [ ن و ] = 750 م.\n• الزّاوية ج ن و = 72 درجة.\n• \"هـ\" منتصف [ ن ج ].\n• \"س\" منتصف [ ن و ].\nانطلق العدّاء الأوّل بسرعة 111 م/دق على السّاعة 8 و 30 دق و قام بـ 5 دورات و انطلق العدّاء الثّاني بنفس سرعة الأوّل على السّاعة 9 و 20 دق و قام بـ 3 دورات.\n1- ما هو الفارق الزّمني بين وصول العدّاءين ؟\nقام عدّاء ثالث بالعدو مسافة 6951 م منطلقا من النّقطة \"و\".\n2- ما هي نقطة وصوله ؟ علّل جوابك حسابيّا.",
+      "figureDesc": "Cercle (ح) en pointillés de centre ن. Un secteur circulaire plein est tracé, délimité par les rayons [ن و] et [ن ج] et l'arc و-ج en trait épais. L'angle en ن mesure 72°. Les points س (milieu de [ن و]) et هـ (milieu de [ن ج]) sont marqués sur les rayons.",
+      "answer": null,
+      "id": "epreuve_modele_mathematiques_corrigee_p002_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "confidence": 0.93
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-6-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.82
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Épreuve blanche du concours d'entrée aux collèges pilotes, composée de problèmes à plusieurs étapes (fractions, pourcentages, vitesse, cercle et arc) couvrant plusieurs chapitres, ce qui correspond à la synthèse générale et à la résolution de situations-problèmes.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes: fractions, pourcentages, cercle et vitesse",
+    "skill": "Résoudre des problèmes combinant fractions et pourcentages d'un montant, puis calculer longueurs d'arc, vitesse, durée et distance sur une piste circulaire.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "fractions",
+      "pourcentages",
+      "budget familial",
+      "secteur circulaire",
+      "longueur d'arc",
+      "vitesse et durée"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Deux situations concrètes réutilisables: une famille qui cotise pour des appareils électroménagers avec parts en fraction et en pourcentage et comparaison de deux scénarios d'achat, et une piste d'athlétisme en arc de cercle où des coureurs partent à des vitesses et heures différentes, avec écart d'arrivée et point d'arrivée à justifier par le calcul.",
+    "themeGroup": "Durées, vitesse et échelle"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Bloc [1] : la question 1 (ما هو المبلغ المجمّع لدى العائلة ؟) est placée avant l'énoncé et le tableau. Sur l'image, l'énoncé et le tableau viennent d'abord, puis la question 1."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Bloc [2] : la question 2 (ثمن المكيّف) est placée avant le paragraphe تبيّن للعائلة.... Dans l'image, le paragraphe précède la question 2."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Bloc [3] : la question 1 de l'exercice 2 (الفارق الزمني) est placée avant l'énoncé et les données. Dans l'image, elle vient après les données du coureur."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Bloc [4] : la question 2 est placée avant la phrase 'قام عدّاء ثالث...'. Dans l'image, la phrase vient avant la question."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'بشراء' dans la transcription, alors que l'image porte 'بشراء' sans problème ; en revanche 'مكيّف هوائيّ' est correct. Aucune erreur lexicale nette dans cette phrase."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel ajouté ou modifié par rapport à l'image : 'لتأثيث', 'التّالي', 'الأمّ', 'يمكّنهم', 'الثلاّجة' etc. L'image ne montre pas toujours les mêmes marques (ex. 'مكيَّف', 'الثّلاّجة', 'تبيّن')."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis : وزارة التربية، المعلم: نبيل ثابتي، مناظرة الدخول إلى المدارس الإعدادية النموذجية دورة 2023 (تجريبي)، الاختبار: رياضيات، التوقيت: 60 دقيقة، الضارب: 1."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le schéma (cercle (ح), points ن، و، ج، هـ، س, angle 72°) n'est pas décrit."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'الزّاوية ج ن و' : le chapeau d'angle sur ج ن و n'est pas rendu."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.6,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 1 : la question 1 (ما هو المبلغ المجمّع لدى العائلة ؟) est placée dans 'instruction', donc avant l'énoncé et le tableau. Sur l'image, elle vient après le tableau."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "La question 2 (ثمن المكيّف) est séparée du reste et placée avant le paragraphe 'تبيّن للعائلة...'. Sur l'image, le paragraphe précède la question 2."
+      },
+      {
+        "type": "structure",
+        "severity": "major",
+        "detail": "La 'المسألة رقم 2' est coupée en deux items (3 et 4) alors que ce n'est qu'un seul exercice avec deux questions. L'item 2 est aussi mal découpé : il contient la question 2 de l'exercice 1 dans 'instruction'. Sur l'image il y a 2 exercices (المسألة رقم 1 et 2)."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 2 : la question 1 (الفارق الزمني) est placée avant l'énoncé et les données. Sur l'image, elle vient après le paragraphe sur les deux coureurs."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "La question 2 (نقطة وصوله) est placée avant la phrase 'قام عدّاء ثالث...'. Sur l'image, la phrase vient avant la question."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête est omis : وزارة التربية، المعلم: نبيل ثابتي، مناظرة الدخول إلى المدارس الإعدادية النموذجية، دورة 2023 (تجريبي)، الاختبار: رياضيات، التوقيت: 60 دقيقة، الضارب: 1."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "وزارة التربية ***** — المعلم: نبيل ثابتي — مناظرة الدخول إلى المدارس الإعدادية النموذجية دورة 2023 ( تجريبي ) — الاختبار: رياضيات — التوقيت: 60 دقيقة — الضارب: 1",
+      "body": "",
+      "figureDesc": "",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "المسألة رقم 1: ( 6 نقاط )",
+      "body": "جمّعت عائلة مبلغا ماليّا لتأثيث منزلها و ذلك بشراء تلفاز و مكيّف هوائيّ و ثلاّجة. الجدول التّالي يوضّح مساهمات أفراد العائلة: مساهمة الأب: 1/3 المبلغ. مساهمة الأمّ: 40 % من المبلغ. مساهمة البنت الكبرى: أقلّ من مساهمة الأب بـ 287,4 د.\n1- ما هو المبلغ المجمّع لدى العائلة ؟\nتبيّن للعائلة أنّ المبلغ المجمّع لديهم يمكّنهم من شراء تلفاز و مكيّف فقط أو أن يضيفوا 405 د ليتمكّنوا من شراء الثلاّجة و المكيّف فقط.\n2- ما هو ثمن شراء المكيّف إذا علمت أنّ ثمن التّلفاز يمثّل 85 % من ثمن الثلاّجة.",
+      "figureDesc": "جدول من ثلاثة أعمدة: مساهمة الأب (1/3 المبلغ)، مساهمة الأمّ (40 % من المبلغ)، مساهمة البنت الكبرى (أقلّ من مساهمة الأب بـ 287,4 د)",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "المسألة رقم 2: ( 6 نقاط )",
+      "body": "يمثّل الرّسم المصاحب مضمارا للعدو على شكل قطعتي مستقيم و قوس دائريّ.\n• الدّائرة ( ح ) مركزها \"ن\" و شعاعها [ ن و ] = 750 م.\n• الزّاوية ج ن و = 72 درجة.\n• \"هـ\" منتصف [ ن ج ].\n• \"س\" منتصف [ ن و ].\nانطلق العدّاء الأوّل بسرعة 111 م/دق على السّاعة 8 و 30 دق و قام بـ 5 دورات و انطلق العدّاء الثّاني بنفس سرعة الأوّل على السّاعة 9 و 20 دق و قام بـ 3 دورات.\n1- ما هو الفارق الزّمني بين وصول العدّاءين ؟\nقام عدّاء ثالث بالعدو مسافة 6951 م منطلقا من النّقطة \"و\".\n2- ما هي نقطة وصوله ؟ علّل جوابك حسابيّا.",
+      "figureDesc": "دائرة (ح) مركزها ن بخط متقطّع؛ قطاع دائري ن ج و بزاوية 72° عند ن؛ القوس و ج بخط غليظ؛ س على [ن و] وهـ على [ن ج] (علامتا المنتصف)",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.93,
+    "reviewed": true
+  },
+  "correctionStatus": "no_correction_yet",
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "المسألة رقم 1: ( 6 نقاط ) — ما هو المبلغ المجمّع لدى العائلة ؟",
+      "body": "جمّعت عائلة مبلغا ماليّا لتأثيث منزلها و ذلك بشراء تلفاز و مكيّف هوائيّ و ثلاّجة. الجدول التّالي يوضّح مساهمات أفراد العائلة: مساهمة الأب: 1/3 المبلغ. مساهمة الأمّ: 40 % من المبلغ. مساهمة البنت الكبرى: أقلّ من مساهمة الأب بـ 287,4 د.",
+      "figureDesc": "جدول من ثلاثة أعمدة: مساهمة الأب (1/3 المبلغ)، مساهمة الأمّ (40 % من المبلغ)، مساهمة البنت الكبرى (أقلّ من مساهمة الأب بـ 287,4 د)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "epreuve_modele_math_6eme_corrigee_p002_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هو ثمن شراء المكيّف إذا علمت أنّ ثمن التّلفاز يمثّل 85 % من ثمن الثلاّجة.",
+      "body": "تبيّن للعائلة أنّ المبلغ المجمّع لديهم يمكّنهم من شراء تلفاز و مكيّف فقط أو أن يضيفوا 405 د ليتمكّنوا من شراء الثلاّجة و المكيّف فقط.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "epreuve_modele_math_6eme_corrigee_p002_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "المسألة رقم 2: ( 6 نقاط ) — 1- ما هو الفارق الزّمني بين وصول العدّاءين ؟",
+      "body": "يمثّل الرّسم المصاحب مضمارا للعدو على شكل قطعتي مستقيم و قوس دائريّ. • الدّائرة ( ح ) مركزها \"ن\" و شعاعها [ ن و ] = 750 م. • الزّاوية ج ن و = 72 درجة. • \"هـ\" منتصف [ ن ج ]. • \"س\" منتصف [ ن و ]. انطلق العدّاء الأوّل بسرعة 111 م/دق على السّاعة 8 و 30 دق و قام بـ 5 دورات و انطلق العدّاء الثّاني بنفس سرعة الأوّل على السّاعة 9 و 20 دق و قام بـ 3 دورات.",
+      "figureDesc": "دائرة (ح) مركزها ن بخط متقطّع، قطاع دائري ن ج و بزاوية 72°، القوس ج و بخط غليظ، النقطتان هـ منتصف [ن ج] وس منتصف [ن و]",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "epreuve_modele_math_6eme_corrigee_p002_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "2- ما هي نقطة وصوله ؟ علّل جوابك حسابيّا.",
+      "body": "قام عدّاء ثالث بالعدو مسافة 6951 م منطلقا من النّقطة \"و\".",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "epreuve_modele_math_6eme_corrigee_p002_i4",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "linkStatus": "clean",
+  "examScope": "full_year",
+  "bookTitle": "Épreuve modèle 6ème année — Mathématiques (corrigée)"
+}

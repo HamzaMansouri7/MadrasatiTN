@@ -1,0 +1,120 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 18,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 4 - قيس الطول (1): المتر ومضاعفاته",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع مكان الفراغ ما يناسب من الأطوال :",
+      "body": "7 دكم + ........ م = 3 هم\n6 هم ونصف + ........ م = 80 دكم\n250 م + ........ دكم = 9 هم\n4 هم و 5 دكم = ........ م",
+      "figureDesc": "Quatre égalités à compléter, présentées sur deux colonnes séparées par un trait vertical ; les blancs sont indiqués par des pointillés.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p018_i1",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "رَتِّبِ الأَطْوَالَ التَّالِيَةَ تَرْتِيبًا تَنَازُلِيًّا :",
+      "body": "863 م - 8 هم ونصف - 7 هم و 35 م - 81 دكم و 9 م",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p018_i2",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هي الوحدة التي اختارها الثاني والثالث والرابع ؟",
+      "body": "قَاس أربعة تلاميذ طول ساحة المدرسة فوجد الأول [نصف هم و 25 م] ووجد الثاني [75] ووجد الثالث [750] ووجد الرابع [7 ونصف] .",
+      "figureDesc": "Les mesures trouvées par les élèves sont encadrées : « نصف هم و 25 م », « 75 », « 750 », « 7 ونصف ».",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p018_i3",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "- مَا هي المسافَةُ الفَاصِلَةُ بين المنزل والمدرسة ؟\n- مَا هيَ المَسَافَةُ الَّتِي يَقْطَعُهَا حلمِي عِلْمًا وَأَنَّهُ يَتَوَجَّهُ مَرَّتَيْنِ فِي اليَوْمِ إِلَى المَدْرَسَةِ ؟",
+      "body": "المنزل — 3 هم و 2 دكم — مركز البريد — 5 هم و نصف — المدرسة",
+      "figureDesc": "Schéma : à droite la maison (المنزل), au centre le bureau de poste (مركز البريد), à gauche l'école (المدرسة). Flèches doubles : maison–poste = 3 هم و 2 دكم ; poste–école = 5 هم و نصف.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p018_i4",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "ما هو طول الأسلاك في اللفائف الثلاث ؟ ... ما هو قيس محيط حقله ؟",
+      "body": "أراد فلاح تسييج حقله فأشترى 3 لفائف من الأسلاك الشائكة طول الأولى 3 هم ونصف وطول الثانية أقلّ من طول الأولى بـ 6 م. أمّا اللفيفة الثالثة فهي تكبر الثانية بـ 3 دكم. ما هو طول الأسلاك في اللفائف الثلاث ؟\nبعد أن أحاط أرضه مرتين بالسلك بقي له 6 دكم و 8 أمتار.\nما هو قيس محيط حقله ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p018_i5",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-p6",
+  "topicTitle": "Période 6 : Mesure du temps, capacités, masses et synthèse",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u5",
+    "confidence": 0.12
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la mesure des longueurs (m, dam, hm) et de leurs conversions, ce qui se rapproche le plus de la période 6 (conversions d'unités de mesure), même si les longueurs n'y sont pas citées explicitement.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    113
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesure des longueurs : mètre et multiples",
+    "skill": "Convertir, comparer et additionner des longueurs en mètres, décamètres et hectomètres pour résoudre des problèmes.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "calcul",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "longueurs",
+      "mètre",
+      "décamètre",
+      "hectomètre",
+      "conversion",
+      "périmètre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables (trajet maison-poste-école parcouru deux fois par jour, rouleaux de fil de clôture pour un champ, périmètre) et exercice de déduction de l'unité choisie à partir d'une mesure sans unité, avec des égalités à compléter et un rangement décroissant de longueurs exprimées dans des unités mixtes.",
+    "themeGroup": "Longueurs"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

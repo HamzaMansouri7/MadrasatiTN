@@ -1,0 +1,290 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 6,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المستقيم وأجزاؤه (2) : أنشطة تهيئية — الأسبوع 1 (نقاط على استقامة واحدة)",
+  "items": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 1",
+      "body": "المستقيم وأجزاؤه (2) : أنشطة تهييئية\nص 3",
+      "figureDesc": null,
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p006_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) اِبحث بالرّسم التّالي عن ثلاث نقط على استقامة واحدة.",
+      "body": "أ) اِبحث بالرّسم التّالي عن ثلاث نقط على استقامة واحدة.\nب) أرسم النَّقطة \"أ\" بحيث تكون النَّقط \"ب\" \"أ\" \"ج\" على استقامة واحدة وكذلك النَّقط \"ح\" \"أ\" \"هـ\".",
+      "figureDesc": "نقاط مبعثرة في الصفحة مسماة: ب، ج، ح (في الأعلى)، د (على اليمين)، نقطة أخرى مسماة ج في الوسط، وهـ (أسفل اليسار). المطلوب إيجاد ثلاث نقاط على استقامة واحدة ثم رسم النقطة أ.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p006_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لأَحظ الورقة التِّي طوَاها مهدي ثم نشرها على سطح الطَّاولة ورسم عليهَا النَّقط \"أ\" \"ب\" \"ج\" \"د\".",
+      "body": "- ماذا تقول عن النَّقط \"أ\" \"ب\" \"ج\" ؟\n- ماذا تقول عن النَّقط \"أ\" \"ب\" \"د\" ؟",
+      "figureDesc": "مستطيل يمثل ورقة منشورة عليها خط طي منقط مائل، تقع عليه النقاط أ، ب، ج؛ النقطة د خارج خط الطي إلى اليمين.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p006_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم على خطّ الطيّ النُّقطة \"أ\" بِحَيْثُ تكون النَّقط \"أ\" \"ب\" \"ج\" عَلى استقامة واحدة.",
+      "body": "أرسم على خطّ الطيّ النُّقطة \"أ\" بِحَيْثُ تكون النَّقط \"أ\" \"ب\" \"ج\" عَلى استقامة واحدة.",
+      "figureDesc": "مستطيل فيه خط طي منقط مائل من أعلى اليسار إلى أسفل اليمين، والنقطتان ج (أعلى اليمين) وب (يسار).",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p006_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرسم النُّقْطتَيْنِ \"أ\" و \"م\" اعتمادا على الجدول التّالي :",
+      "body": "جدول بثلاثة أعمدة: النَّقط | على استقامة واحدة | ليست على استقامة واحدة.\nالسطر 1: \"أ\" \"ص\" \"ج\" ← x في عمود على استقامة واحدة.\nالسطر 2: \"ب\" \"م\" \"ج\" ← x في عمود ليست على استقامة واحدة.\nالسطر 3: \"أ\" \"س\" \"ب\" ← x في عمود على استقامة واحدة.",
+      "figureDesc": "نقاط معطاة: س وص في الأعلى، وب وج في الأسفل، إضافة إلى جدول من ثلاثة أسطر.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_corriges_p006_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.43
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la droite et de l'alignement de points (activités préparatoires), ce qui correspond à la partie « droites » de la Période 1 (Nombres, droites et monnaie), même si le chapitre est surtout axé sur les droites perpendiculaires.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Points alignés et droite",
+    "skill": "Reconnaître et construire des points alignés (sur une même droite) à l'aide d'un dessin, d'un pliage ou d'un tableau.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "points alignés",
+      "droite",
+      "pliage",
+      "tracé",
+      "géométrie",
+      "alignement"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "L'activité de pliage d'une feuille pour matérialiser une droite, puis le placement d'un point afin qu'il soit aligné avec deux autres, et le tableau à cocher aligné / non aligné, sont réutilisables pour introduire l'alignement de façon concrète.",
+    "themeGroup": "Droites, points et segments"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « الأسبوع 1 », « المستقيم وأجزاؤه (2) : أنشطة تهييئية » et le numéro de page 3."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « اِبحث » et « الرّسم التّالي » sont transcrits avec des voyelles, mais l'image montre « ابحث » sans kasra initiale."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 4, ligne 2 : la transcription donne \"ب\" \"م\" \"ج\", alors que l'image affiche \"ج\" \"م\" \"ب\" (ordre inversé)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : le mot « ح » apparaît dans l'énoncé (\"ح\" \"أ\" \"هـ\"). Le point du dessin ressemble à « ز » ou « ن », mais l'énoncé imprimé semble bien contenir « ح » ; point à vérifier."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : « لأَحظ » est écrit avec un fatha sur le alif-hamza, alors que l'image montre « لاحِظ » avec un kasra sur le ح (« لأحظ » mal orthographié). Les voyelles d'« النَّقط » sont ajoutées alors qu'elles ne sont pas visibles."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les figures (points et lettres, ligne pointillée de pliage, rectangles) ne sont pas décrites. Les points a, b, c, d, h, etc. sont absents de la transcription."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : « أرسم » apparaît avec « اَلنُّقطة », ce qui est correct, mais « النَّقط » est écrit avec un shadda sur le نون dans l'énoncé alors que l'image n'en montre pas partout."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : « الأسبوع 1 », « المستقيم وأجزاؤه (2) : أنشطة تهييئية » et le numéro de page 3. Ce point est confirmé."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : la transcription écrit « اَلنُّقطة » avec une fatha sur l'alif. Elle n'est pas visible dans l'image, qui montre « النُّقطة »."
+      },
+      {
+        "type": "figure",
+        "severity": "minor",
+        "detail": "Exercice 1 : la description de la figure est approximative. Le troisième point du haut porte une étiquette proche de « ح », qui correspond à l'énoncé « ح » « أ » « هـ ». La transcription l'a lue « ز (ر) ». Les étiquettes visibles sont : ب, ج, ح en haut ; د à droite ; un point avec ج au centre ; هـ en bas à gauche."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 1",
+      "body": "المستقيم وأجزاؤه (2) : أنشطة تهييئية\nص 3",
+      "figureDesc": null,
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p006_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) اِبحث بالرّسم التّالي عن ثلاث نقط على استقامة واحدة.",
+      "body": "أ) اِبحث بالرّسم التّالي عن ثلاث نقط على استقامة واحدة.\nب) أرسم النَّقطة \"أ\" بحيث تكون النَّقط \"ب\" \"أ\" \"ج\" على استقامة واحدة وكذلك النَّقط \"ح\" \"أ\" \"هـ\".",
+      "figureDesc": "نقاط مبعثرة في الصفحة مسماة: ب، ج، ح (في الأعلى)، د (على اليمين)، نقطة أخرى مسماة ج في الوسط، وهـ (أسفل اليسار). المطلوب إيجاد ثلاث نقاط على استقامة واحدة ثم رسم النقطة أ.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p006_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لأَحظ الورقة التِّي طوَاها مهدي ثم نشرها على سطح الطَّاولة ورسم عليهَا النَّقط \"أ\" \"ب\" \"ج\" \"د\".",
+      "body": "- ماذا تقول عن النَّقط \"أ\" \"ب\" \"ج\" ؟\n- ماذا تقول عن النَّقط \"أ\" \"ب\" \"د\" ؟",
+      "figureDesc": "مستطيل يمثل ورقة منشورة عليها خط طي منقط مائل، تقع عليه النقاط أ، ب، ج؛ النقطة د خارج خط الطي إلى اليمين.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p006_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم على خطّ الطيّ النُّقطة \"أ\" بِحَيْثُ تكون النَّقط \"أ\" \"ب\" \"ج\" عَلى استقامة واحدة.",
+      "body": "أرسم على خطّ الطيّ النُّقطة \"أ\" بِحَيْثُ تكون النَّقط \"أ\" \"ب\" \"ج\" عَلى استقامة واحدة.",
+      "figureDesc": "مستطيل فيه خط طي منقط مائل من أعلى اليسار إلى أسفل اليمين، والنقطتان ج (أعلى اليمين) وب (يسار).",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p006_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرسم النُّقْطتَيْنِ \"أ\" و \"م\" اعتمادا على الجدول التّالي :",
+      "body": "جدول بثلاثة أعمدة: النَّقط | على استقامة واحدة | ليست على استقامة واحدة.\nالسطر 1: \"أ\" \"ص\" \"ج\" ← x في عمود على استقامة واحدة.\nالسطر 2: \"ب\" \"م\" \"ج\" ← x في عمود ليست على استقامة واحدة.\nالسطر 3: \"أ\" \"س\" \"ب\" ← x في عمود على استقامة واحدة.",
+      "figureDesc": "نقاط معطاة: س وص في الأعلى، وب وج في الأسفل، إضافة إلى جدول من ثلاثة أسطر.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "math_solutions_4eme_sellami_p006_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) اِبحث بالرّسم التّالي عن ثلاث نقط على استقامة واحدة.",
+      "body": "أ) اِبحث بالرّسم التّالي عن ثلاث نقط على استقامة واحدة.\nب) أرسم النَّقطة \"أ\" بحيث تكون النَّقط \"ب\" \"أ\" \"ج\" على استقامة واحدة وكذلك النَّقط \"ح\" \"أ\" \"هـ\".",
+      "figureDesc": "نقاط مبعثرة في الصفحة مسماة: ب، ج، ز (ر)، د، ج (نقطة ثانية)، هـ، وبعض النقاط الأخرى؛ المطلوب إيجاد ثلاث نقاط على استقامة واحدة ثم رسم النقطة أ.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p006_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لأَحظ الورقة التِّي طوَاها مهدي ثم نشرها على سطح الطَّاولة ورسم عليهَا النَّقط \"أ\" \"ب\" \"ج\" \"د\".",
+      "body": "- ماذا تقول عن النَّقط \"أ\" \"ب\" \"ج\" ؟\n- ماذا تقول عن النَّقط \"أ\" \"ب\" \"د\" ؟",
+      "figureDesc": "مستطيل يمثل ورقة منشورة عليها خط طي منقط مائل، تقع عليه النقاط أ، ب، ج؛ النقطة د خارج خط الطي إلى اليمين.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p006_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم على خطّ الطيّ اَلنُّقطة \"أ\" بِحَيْثُ تكون النَّقط \"أ\" \"ب\" \"ج\" عَلى استقامة واحدة.",
+      "body": "أرسم على خطّ الطيّ اَلنُّقطة \"أ\" بِحَيْثُ تكون النَّقط \"أ\" \"ب\" \"ج\" عَلى استقامة واحدة.",
+      "figureDesc": "مستطيل فيه خط طي منقط مائل من أعلى اليسار إلى أسفل اليمين، والنقطتان ج (أعلى اليمين) وب (يسار).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p006_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرسم النُّقْطتَيْنِ \"أ\" و \"م\" اعتمادا على الجدول التّالي :",
+      "body": "جدول بثلاثة أعمدة: النَّقط | على استقامة واحدة | ليست على استقامة واحدة.\nالسطر 1: \"أ\" \"ص\" \"ج\" ← x في عمود على استقامة واحدة.\nالسطر 2: \"ب\" \"م\" \"ج\" ← x في عمود ليست على استقامة واحدة.\nالسطر 3: \"أ\" \"س\" \"ب\" ← x في عمود على استقامة واحدة.",
+      "figureDesc": "نقاط معطاة: س وص في الأعلى، وب وج في الأسفل، إضافة إلى جدول من ثلاثة أسطر.",
+      "answer": null,
+      "confidence": 0.87,
+      "id": "math_solutions_4eme_sellami_p006_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

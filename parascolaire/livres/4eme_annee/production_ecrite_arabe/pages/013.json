@@ -1,0 +1,76 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 13,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وصف فصل الربيع وفصل الصيف (نصوص داعمة للإنتاج الكتابي)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "أطلت خيوط الشمس فملأت الكون بنورها ودفئها وأيقظت الحشرات النائمة فخرجت لتستقبل الحياة\nكانت مياه البحيرة زرقاء لامعة كالمرآة تنعكس على صفحاتها خضرة الأشجار والأزهار الناضرة يا لهذا الجمال الخلاب كل من رآه خال نفسه في فراديس الجنان وما زاد المنظر روعة أن مياه الشلالات كانت تتدفق لماعة تحت أشعة الشمس كأنها الذهب الخالص\nها هو فصل الربيع قد فتح جناحيه المزهرتين الساحرتين على الكون\nغصن أقحوان ترصعه الأزهار الذهبية ذات الألوان المتناسقة المتوهجة فجمالها كان فوق أن يوصف\nأطلت خيوط الشمس فملأت الكوخ بنورها ودفئها وأيقظت حشرات نائمة فخرجت من مخابئها تستقبل الحياة وتسعى إلى الرزق\nأقبل فصل الربيع بسمائه الصافية واكتست الأرض حلة سندسية ناضرة موشاة بمختلف أنواع الزهور والرياحين\nفي الربيع نما الزئبق وينع القرنفل ونبتت شماريخ الياسمين فاختلطت الرياحين وأصبح الجو عطرا منعشا\nأما الربيع فهو عيدنا بما تضفيه الطيور والفراشات والنحل والزنابير من بهجة وحركات رقص وموسيقى في السماء العالية\nكنت أرى الربيع كعروس يمشي مختالا في ثوب سندسي اللون مخضر بديع وقد زانه الظل\nغرست حديقة المنزل أزهارا وورودا من مختلف الأشكال والألوان تفوح منها عطور تحيي الموتى وتنعش النفوس الحزينة\nفإذا الحديقة جنات عدن فيها كل ما تشتهي النفوس وتروق العيون حتى أن رائحة الربيع يمكنك شمها من مسافة بعيدة جدا",
+      "figureDesc": "نص داخل إطار مستطيل، قسم الربيع",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p013_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "في فصل الصيف",
+      "body": "حر شديد\nالبحر ساج هادئ يترامى بزرقة ساحرة\nتتسارع أمواجه خفيفة رشيقة لتوشوش الشاطئ\nكل المصطافين يمرحون\nتلاطم الأمواج الخفيفة الصخور البارزة وتتراجع في انسياب\nفي الصيف تشرق شمس وهاجة تغمر الكون دفءا وبهاء فيعج البحر بالمصطافين الذين يقبلون عليه من كل الأنحاء\nفي الصيف الهواء حار والشمس ساطعة ترسل أشعة محرقة اليوم قائظ والشاطئ يعج بالناس",
+      "figureDesc": "نص داخل إطار مستطيل، قسم الصيف",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p013_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u7",
+    "confidence": 0.32
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page contient des textes descriptifs (printemps et été) servant de support à la production écrite en arabe ; aucune unité officielle ne porte sur la description de paysages ou de saisons, car les unités 4 à 6 concernent la description des personnages dans le récit, donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description des saisons : printemps et été",
+    "skill": "S'appuyer sur des textes modèles pour rédiger une description de paysage saisonnier en utilisant un lexique riche et des images.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "description",
+      "printemps",
+      "été",
+      "production écrite",
+      "textes modèles",
+      "comparaison"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Textes modèles de description (lac au printemps, mer et estivants en été) réutilisables pour proposer des consignes de production écrite, repérer comparaisons et personnifications, ou faire transformer un paysage d'une saison à l'autre.",
+    "themeGroup": "Description des saisons et du temps"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

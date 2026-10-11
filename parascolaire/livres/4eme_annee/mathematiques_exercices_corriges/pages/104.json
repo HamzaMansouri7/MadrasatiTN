@@ -1,0 +1,156 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 104,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 28 – امتحان النقلة (3)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنجز ما يلي:",
+      "body": "72 100 = ........ − 90 500 = ........ + 65 000\n. = . × 208 = 2 : (10 × 208)\n. = . × 405 = 50 : (100 × 405)",
+      "figureDesc": "Chaîne d'égalités avec cases à compléter : 72 100 = [ ] − 90 500 = [ ] + 65 000 ; puis deux lignes de points à compléter avec les égalités sur la division et la multiplication par 208 et 405.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p104_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هي باللتر كمّية الزّيت المتبقّية بالدنّ؟",
+      "body": "بدنّ نصف هل من الزّيت. ملأ التّاجر 40 قارورة سعة الواحدة منها 75 صل. ما هي باللتر كمّية الزّيت المتبقّية بالدنّ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p104_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ) اِختصر كتابة المسلك التّالي :\nب) أرسمه مختصرا انطلاقا من \"أ\"",
+      "body": "المسلك: ↓ → ↑ ↑ ← ← ↑ ↑ → →",
+      "figureDesc": "Quadrillage de 8 colonnes sur 5 lignes avec un point marqué « أ » sur un nœud de la grille, en bas vers le centre-droit, pour tracer le chemin abrégé.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p104_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) ما هو المبلغ الذي صار يملكه بعد البيع إذا كان بحافظة نقوده 3 قطع من فئة 1 د.\nب) ما هو ثمن شراء العلف؟\nج) ما هو ثمن شراء قارورة الدّواء إذا علمت أنّ الفلّاح عاد إلى ضيعته وبحافظة نقوده 380 د ؟",
+      "body": "باع مربّي دواجن 150 دجاجة بـ 4 د الواحدة. و 80 أرنبا بـ 3 د الأرنب الواحد.\nأ) ما هو المبلغ الذي صار يملكه بعد البيع إذا كان بحافظة نقوده 3 قطع من فئة 1 د.\nب) شرى هذا الفلّاح 10 أكياس من العلف بـ 15 د الكيس الواحد. ما هو ثمن شراء العلف؟\nج) اشترى أيضا قارورة دواء نسي ثمنها وشرى تجهيزات بلاستيكية لتعصير مدجنته بلغ ثمنها 300 دينار. ما هو ثمن شراء قارورة الدّواء إذا علمت أنّ الفلّاح عاد إلى ضيعته وبحافظة نقوده 380 د ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "mathematiques_exercices_corriges_p104_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un examen de passage (امتحان النقلة, semaine 28) qui mélange plusieurs chapitres : calcul mental et multiplication par 10 ou 100, capacités en litres, codage de parcours, problèmes de monnaie. Aucun chapitre unique ne correspond donc.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    133
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision de fin d'année : calcul et problèmes",
+    "skill": "Mobiliser calcul numérique, mesures de capacité, repérage de trajets et résolution de problèmes à étapes avec la monnaie.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "examen de passage",
+      "opérations",
+      "capacités en litres",
+      "problème monnaie",
+      "codage de parcours",
+      "4ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un examen type regroupant calcul à trous, conversion cl/litres dans une situation d'embouteillage d'huile, codage et abrègement de trajets fléchés, et un problème à étapes dans un contexte de ferme (vente de volailles, achat d'aliments et de médicament, monnaie).",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 2: « بدنّ نصف هل من الزّيت » : l'image montre « بدنٍّ نصف هل من الزّيت » (le sens est « le bidon contient un demi-hectolitre »). Le tanwin sur le noun est absent dans la transcription, et « ملأ » est correct. Les voyelles sont ajoutées là où l'image n'en montre pas."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: « سعة الواحدة منها » correct, mais l'image a « سعة الـــواحدة » avec des kashidas; pas d'erreur de fond."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2: « كمّية » et « المتبقّية » sont transcrits avec une shadda; l'image montre « كمّيّة » et « المتبقّيّة » (double shadda)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4: « الدّواء » est transcrit avec une shadda, alors que l'image montre « الدّواء » sans shadda évidente dans « قارورة الدّواء »; incertain."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 1: la première case contient « + 65 000 » et la deuxième « − 90 500 »; l'ordre dans la transcription est inversé par rapport au sens de lecture (gauche à droite) : 72 100 = [ ] − 90 500 = [ ] + 65 000 est correct visuellement. Pas d'erreur de chiffre, mais « 2 : (10 × 208) » et « 50 : (100 × 405) » sont corrects."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2: le champ de question dupliqué en début de champ (« ما هي باللتر... » répété) ; l'énoncé est déjà dans le texte."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 4: le champ question reprend les sous-questions a, b, c sans l'énoncé, et l'énoncé dupliqué. Le grillage de l'exercice 3 (point « أ » sur une grille 8×5) n'est pas décrit."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3: « اِختصر » correct; « أرسمه » : l'image montre « أرسمه مختصرا » correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "linked",
+  "examScope": "full_year",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

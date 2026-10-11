@@ -1,0 +1,100 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 6,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الدرس الثالث – المعارف: ضمائر النصب المتصلة (Les pronoms compléments suffixes en arabe – cours d'arabe, pas de français)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "الضمائر تعوض الأسماء ظاهرة و مقدرة و تكون بارزة مثل أنا لعبت أو مستترة مثل نجح و الضمائر نوعان ضمائر منفصلة و ضمائر متصلة",
+      "figureDesc": "Tableau à trois colonnes (للمتكلم، للمخاطب، للغائب), chacune divisée en الضمائر المنفصلة et الضمائر المتصلة. المتكلم: أنا، نحن / ت، ي، نا. المخاطب: أنتَ، أنتِ، أنتما، أنتم، أنتن / ت، ك ; ت، ك ; تما، كما ; تم، كم ; تن، كن. الغائب: هو، هي، هما (مذكر)، هما (مؤنث)، هم، هن / ـه ; ت، ها ; ـا، هما ; ـا، هما ; وا، هم ; ن، هن.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p006_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: الضمائر المتصلة في محل نصب",
+      "body": "إذا اتصل الضمير بالفعل و كانت وظيفته مفعولا به سمي ضمير نصب متصل",
+      "figureDesc": "Tableau à trois colonnes. للمتكلم: شكرَني، شكرَنا. للمخاطب: استقبلك، استقبلك، استقبلكما، استقبلكم، استقبلكن. للغائب: جازاه، جازاها، جازاهما، جازاهما، جازاهم، جازاهن.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p006_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "قاعدة: اتصال الضمير بأحد النواسخ الحرفية",
+      "body": "إذا اتصل الضمير بأحد النواسخ الحرفية إنّ أنّ كأن لكن لعل ليت سمي ضمير نصب متصل وكانت وظيفته اسما منصوبا لذلك الناسخ",
+      "figureDesc": "Tableau d'exemples: إنـه، إنـهم، كأنكما، لكنك، لعلنا، ليتها",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p006_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أضف إلى معلوماتك: أهم وظائف ضمائر النصب المتصلة",
+      "body": "مفعول به: علمتكم القراءة / اسم ناسخ حرفي: إنـه ناشط",
+      "figureDesc": "Tableau à deux colonnes: مفعول به (علمتكم القراءة) et اسم ناسخ حرفي (إنه ناشط).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p006_i4",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "fr-6-m4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m4",
+    "confidence": 0.32
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite des pronoms compléments suffixes (ضمائر النصب المتصلة), une leçon de grammaire arabe qui n'est explicitement liée à aucune des six unités officielles, centrées sur la narration et ses types de passages ; le lien avec l'une d'elles (ar-6-ch1, ar-6-u3, etc.) serait donc incertain.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Pronoms compléments suffixes",
+    "skill": "Identifier les pronoms suffixes de l'accusatif et déterminer leur fonction (complément d'objet ou nom d'une particule d'insistance).",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "pronoms suffixes",
+      "accusatif",
+      "complément d'objet",
+      "particules inna et sœurs",
+      "grammaire arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La page comporte un rappel, une règle et des exemples courts, qui se prêtent à des exercices d'identification de la fonction du pronom (complément d'objet ou nom de inna et ses sœurs), de transformation de phrases par remplacement d'un nom par un pronom suffixe, et de tableaux de classement.",
+    "themeGroup": "Les pronoms"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

@@ -5,7 +5,7 @@ import fitz
 sys.path.insert(0, 'scripts')
 from recheck_ocr_claude import call, use, cost
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_original_frozen/_archive')
+A = Path('parascolaire_frozen/_archive')
 for arg in sys.argv[1:]:
     b, p = arg.rsplit(':', 1); p = int(p)
     pf = A / b / 'pages' / f'{p:03d}.json'; d = json.loads(pf.read_text(encoding='utf-8'))

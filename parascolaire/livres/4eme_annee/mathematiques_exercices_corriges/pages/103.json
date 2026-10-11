@@ -1,0 +1,146 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 103,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 28 – امتحان النقلة (2) : العمليات الأربع، السعة، محيط المربع والمستطيل، مسائل حسابية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكمل العمليّات التّالية:",
+      "body": "3 + ( . x 9) = 975\n5 x ( . + . ) = (9 x 5) + (5 x 7)\n24 = 2 : ........... = ........... x 3",
+      "figureDesc": "Trois égalités à compléter avec des pointillés, séparées par un trait vertical : deux à droite, une à gauche.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p103_i1",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هي سعة هذه الدّمجانة؟",
+      "body": "بواسطة دمجانة ملآنة بماء الورد وقع ملء 20 قارورة سعة الواحدة 25 صل ووعاء سعته 50 دسل. ما هي سعة هذه الدّمجانة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p103_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "فما هو قيس طولها؟",
+      "body": "في منزلنا قاعتان لهما نفس قيس المحيط. القاعة الأولى مربّعة الشّكل قيس طول ضلعها بالمتر 6. إذا كانت القاعة الثّانية مستطيلة الشّكل وقيس عرضها بالمتر 5 . فما هو قيس طولها ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p103_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "كم مليمًا قبضت؟ / كم صرفت؟ / ابحث عن ثمن الكأس الواحدة",
+      "body": "باعت فلاحة 42 بيضة بـ 360 مي الأربع بيضات وأرنبا بضعف ثمن البيض.\nكم مليمًا قبضت؟\nاشترت منشفة بـ 1900 مي و 3 علب معجون بـ 700 مي العلبة الواحدة ومواد تنظيف ثمنها يساوي ثمن المنشفة والعلب معا.\nكم صرفت؟\nقبل أن تغادر المغازة شرت 8 كؤوس.\nابحث عن ثمن الكأس الواحدة علما وأنّه بقي لها نصف دينار.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p103_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.35,
+  "topicIdPrev": "math-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch2",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un examen de passage (امتحان النقلة) de synthèse qui mélange les quatre opérations, la distributivité, les capacités, le périmètre du carré et du rectangle et des problèmes de monnaie, donc plusieurs chapitres (ch2, p6, ch3) et aucun ne correspond exactement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    133
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Opérations, capacités et périmètres",
+    "skill": "Mobiliser les quatre opérations, les mesures de capacité et le périmètre du carré et du rectangle pour résoudre des problèmes.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "quatre opérations",
+      "capacité",
+      "périmètre",
+      "carré et rectangle",
+      "problèmes à étapes",
+      "monnaie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations de la vie courante réutilisables : remplissage de flacons avec un récipient de capacité inconnue, deux salles de même périmètre (carré et rectangle) avec recherche d'une longueur, achats et ventes en millimes avec prix unitaire à trouver, et compléments d'égalités à trous avec distributivité.",
+    "themeGroup": "Problèmes"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « الأسبوع 28 », « امتحان النقلة (2) » et le numéro de page 99."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الدّمجانة » est transcrit avec une chadda sur le dal, alors que l'image montre « الدّمجانة » avec une voyelle différente. Dans la phrase de l'énoncé, « بواسطة دمجانة » est sans chadda, ce qui est correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : « شرت 8 كؤوس » est correct. « اشترت منشفة » est correct. Mais « مواد تنظيف » est omis de la liste des titres de questions, sans gravité."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 1 : l'ordre est inversé. Dans l'image, la colonne de droite (3 + (. x 9) = 975 et 5 x (. + .)...) vient en premier, et l'équation « 24 = 2 : ... = ... x 3 » est à gauche. Cela respecte à peu près le sens de lecture arabe, mais l'équation de gauche est écrite à l'envers : l'image montre « 24 = 2 : ........ = ........ x 3 » dans l'ordre visuel, ce qui est acceptable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : la phrase « وأرنبا بضعف ثمن البيض » est correcte, mais la transcription ne sépare pas clairement les trois sous-problèmes. Le contenu est en revanche complet."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les en-têtes de résumé sont inventés : « ما هي سعة هذه الدّمجانة؟ », « فما هو قيس طولها؟ », « كم مليمًا قبضت؟ / كم صرفت؟ … » sont des doublons de questions déjà présentes dans le texte."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "examScope": "unknown",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

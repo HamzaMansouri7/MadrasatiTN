@@ -1,0 +1,149 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 27,
+  "grade": "2ème Année",
+  "subject": "رياضيات",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني – عدد 1 – رياضيات – السنة الثانية (جمع وطرح الأعداد، ترتيب الأعداد، حل مسألة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "سَجَّلَ مُدِيرُ نادِي الطُّفُولَةِ عَدَدَ التَّلامِيذِ الحاضِرِينَ حَسَبَ الجَدْوَلِ التَّالِي :",
+      "body": "يَرْتادُ تَلامِيذُ إِحْدَى المَدارِسِ الِابْتِدائِيَّةِ نادِي الطُّفُولَةِ القَرِيبَ مِنْ مَدْرَسَتِهِمْ أَيَّامَ الآحادِ وَفِي أَوْقاتِ فَراغِهِمْ لِمُمارَسَةِ هِواياتِهِمْ.",
+      "figureDesc": "جدول: الأيام / الجنس. الأعمدة: أولاد، بنات، الجملة. يوم الأحد: أولاد 25، بنات ......، الجملة 57. يوم الثلاثاء: أولاد 17، بنات 23، الجملة ......",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p027_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "أَحْسُبُ عَدَدَ البَناتِ الحاضِراتِ بِالنَّادِي يَوْمَ الأَحَدِ.",
+      "body": "(معيار: مع2ج – 1 نقطة) سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p027_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "أُرَتِّبُ أَعْدادَ العَمَلِيَّةِ المُنْجَزَةِ تَصاعُدِيًّا.",
+      "body": "(معيار: مع2أ – 0,5 نقطة) سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p027_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "أَحْسُبُ جُمْلَةَ الحاضِرِينَ بِالنَّادِي يَوْمَ الثُّلاثاءِ.",
+      "body": "(معيار: مع2ب – 0,5 نقطة) سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p027_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 4",
+      "instruction": "أَحْسُبُ جُمْلَةَ التَّلامِيذِ الَّذِينَ حَضَرُوا بِالنَّادِي خِلالَ اليَوْمَيْنِ المَذْكُورَيْنِ.",
+      "body": "(معيار: مع1 – 0,5 نقطة) سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p027_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 5",
+      "instruction": "أُرَتِّبُ أَعْدادَ العَمَلِيَّةِ تَنازُلِيًّا.",
+      "body": "(معيار: مع2ب – 0,5 نقطة) سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p027_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2 – التعليمة 6",
+      "instruction": "أَبْحَثُ عَنْ عَدَدِ الأَوْلادِ الحاضِرِينَ لِلِاحْتِفالِ بِعِيدِ الشَّجَرَةِ.",
+      "body": "شارَكَ نادِي الأَطْفالِ بِمَجْمُوعَةٍ مِنَ التَّلامِيذِ لِلْمُساهَمَةِ فِي الِاحْتِفالِ بِعِيدِ الشَّجَرَةِ. حَضَرَ أَمامَ النَّادِي 35 تِلْمِيذًا مِنْ بَيْنِهِمْ 14 بِنْتًا. (معيار: مع2ج – 1 نقطة) سطر منقط للإجابة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p027_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p6",
+    "confidence": 0.36
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation de fin de deuxième trimestre (addition, soustraction, rangement des nombres, problème) qui couvre plusieurs chapitres (périodes 3 et 4 notamment), donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition, soustraction et ordre des nombres",
+    "skill": "Résoudre des problèmes additifs et soustractifs à partir d'un tableau, puis ranger des nombres dans l'ordre croissant et décroissant.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "addition",
+      "soustraction",
+      "ranger les nombres",
+      "tableau de données",
+      "problème",
+      "évaluation trimestrielle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation concrète (fréquentation d'un club d'enfants un dimanche, puis fête de l'arbre) fournit un tableau de données. Elle sert à enchaîner plusieurs questions : calculer une partie, calculer un total, ranger les nombres de l'opération dans l'ordre croissant puis décroissant, et résoudre un problème avec une soustraction. Chaque question est liée à un critère d'évaluation et à un barème.",
+    "ideaNote_extra": null,
+    "themeGroup": "Addition et soustraction"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

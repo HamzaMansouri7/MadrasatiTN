@@ -1,0 +1,204 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 41,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقييم الرياضيات (مسائل): رحلة مدرسية – الطرح والجمع وترتيب الأعداد (السندات 3 و4 و5)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "السند 3",
+      "instruction": "صُنِّفَ الْمُشَارِكُونَ فِي الرِّحْلَةِ إِلَى نِسَاءٍ وَأَطْفَالٍ، عَدَدُ الْأَطْفَالِ 23.",
+      "body": "صُنِّفَ الْمُشَارِكُونَ فِي الرِّحْلَةِ إِلَى نِسَاءٍ وَأَطْفَالٍ، عَدَدُ الْأَطْفَالِ 23.",
+      "figureDesc": "Case de code du critère « معـ2ج » en haut à droite. Le total des participants n'est pas donné dans cette partie de la page (il vient du support précédent).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p041_i1",
+      "topicId": "math-2-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : - أَحْسُبُ عَدَدَ النِّسَاءِ الْمُشَارِكَاتِ فِي الرِّحْلَةِ.",
+      "body": "عَدَدُ النِّسَاءِ الْمُشَارِكَاتِ فِي الرِّحْلَةِ.\nالْعَمَلِيَّةُ : ……………………………………………………",
+      "figureDesc": "Grand cadre vide pour la réponse, barème 0,5.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p041_i2",
+      "topicId": "math-2-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "دَفَعَتْ أُمِّي قِسْطَ الْمُشَارَكَةِ فِي الرِّحْلَةِ الْمُقَدَّرِ بِـ 42د، وَاشْتَرَتْ أَغْطِيَةً وَسَتَائِرَ بِـ 287د وَأَوَانِيَ لِلطَّبْخِ بِأَقَلَّ مِنْ ثَمَنِ الْأَغْطِيَةِ وَالسَّتَائِرِ بِـ 135د.",
+      "body": "دَفَعَتْ أُمِّي قِسْطَ الْمُشَارَكَةِ فِي الرِّحْلَةِ الْمُقَدَّرِ بِـ 42د، وَاشْتَرَتْ أَغْطِيَةً وَسَتَائِرَ بِـ 287د وَأَوَانِيَ لِلطَّبْخِ بِأَقَلَّ مِنْ ثَمَنِ الْأَغْطِيَةِ وَالسَّتَائِرِ بِـ 135د.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p041_i3",
+      "topicId": "math-2-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : - أَخْتَارُ السُّؤَالَ الْمُنَاسِبَ بِوَضْعِ الْعَلَامَةِ (x) أَمَامَهُ ثُمَّ أُجِيبُ.",
+      "body": "- أَحْسُبُ ثَمَنَ شِرَاءِ الْأَغْطِيَةِ.\n- أَحْسُبُ ثَمَنَ شِرَاءِ السَّتَائِرِ.\n- أَحْسُبُ ثَمَنَ شِرَاءِ أَوَانِي الطَّبْخِ.\n- الْإِجَابَةُ اللَّفْظِيَّةُ : ……………………………\n- الْعَمَلِيَّةُ : ……………………………",
+      "figureDesc": "Trois cases à cocher devant les questions (barème 1, 1, 1), codes « معـ5 » à droite avec trois cases ; cadre de réponse (0,5 et 1) ; code « معـ2أ ».",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p041_i4",
+      "topicId": "math-2-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : - أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَصَاعُدِيًّا :",
+      "body": "……………………………………………………",
+      "figureDesc": "Ligne pointillée, barème 0,5, code « معـ5 ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p041_i5",
+      "topicId": "math-2-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "التَّعْلِيمَةُ 7 : - أَحْسُبُ جُمْلَةَ الْمَصَارِيفِ.",
+      "body": "- الْإِجَابَةُ اللَّفْظِيَّةُ : ……………………………\n- الْعَمَلِيَّةُ : ……………………………",
+      "figureDesc": "Cadre de réponse, barèmes 1 et 0,5, code « معـ2ب ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p041_i6",
+      "topicId": "math-2-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "التَّعْلِيمَةُ 8 : - أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَنَازُلِيًّا.",
+      "body": "……………………………………………………",
+      "figureDesc": "Ligne pointillée, barème 0,5, code « معـ2أ ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p041_i7",
+      "topicId": "math-2-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 5",
+      "instruction": "عَدَدُ الْأَغْطِيَةِ الَّتِي اشْتَرَتْهَا أُمِّي 3 الْأَوَّلُ بِـ 123د، وَالثَّانِي بِـ 132د، وَالثَّالِثُ بِـ 127د.",
+      "body": "عَدَدُ الْأَغْطِيَةِ الَّتِي اشْتَرَتْهَا أُمِّي 3 الْأَوَّلُ بِـ 123د، وَالثَّانِي بِـ 132د، وَالثَّالِثُ بِـ 127د.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p041_i8",
+      "topicId": "math-2-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-2-p4",
+  "topicTitle": "Période 4 : Nombres jusqu'à 999, soustraction avec retenue et sens de la multiplication",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p3",
+    "confidence": 0.5
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation en mathématiques (problèmes d'achats, soustraction et addition avec nombres jusqu'à 999, rangement croissant/décroissant) qui correspond le mieux à la Période 4, mais c'est une évaluation pouvant couvrir plusieurs chapitres (P3 monnaie/soustraction), d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes additifs et soustractifs, sortie scolaire",
+    "skill": "Résoudre des problèmes d'addition et de soustraction avec des nombres jusqu'à 999 et ranger les nombres de la opération dans l'ordre croissant ou décroissant.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul",
+      "qcm"
+    ],
+    "keywords": [
+      "problème",
+      "addition",
+      "soustraction",
+      "ordre croissant",
+      "ordre décroissant",
+      "sortie scolaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de sortie scolaire en plusieurs supports (effectifs, achats, comparaison de prix) avec consignes enchaînées : choisir la bonne question, poser l'opération, répondre par une phrase, puis ranger les nombres, ce qui est facilement adaptable à d'autres contextes.",
+    "themeGroup": "Situations-problèmes (sorties, fête de l'arbre)"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "السَّتَائِرِ / وَسَتَائِرَ : l'image montre 'السِّتَائِر' et 'سِتَائِر' (kasra sous le sin), la transcription met fatha"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'وَضْعِ' dans l'image (بِوَضْعِ، sukun sur le ض) transcrit 'بِوَضَعِ' avec fatha au lieu de sukun"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'أَحْسُبُ' : image 'أَحْسُبُ' correct ; mais 'أُرَتِّبُ' image 'أُرَتِّبُ' avec shadda correct, 'الْعَلَامَةِ' correct"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'أَوَانِي الطَّبْخِ' dans la question 5 : l'image montre 'أَوَانِي الطَّبْخِ' correct, mais dans le سند 4 'أَوَانِيَ' avec fatha final alors que l'image montre 'وَأَوَانِي' sans fatha"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'الْمُشَارَكَةِ' (قسط المشاركة) : image 'الْمُشَارَكَةِ' ok ; 'الْمُشَارِكُونَ' ok"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les mentions de compétences en marge (معـ2ج, معـ5, معـ2أ, معـ2ب) et les barèmes (0.5, 1) ne sont pas transcrits"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Numéro de page 40 non transcrit ; cases à cocher non signalées"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "examTrimester": 2,
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

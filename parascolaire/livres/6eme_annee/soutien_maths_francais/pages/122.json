@@ -1,0 +1,188 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 122,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Hors sujet : la page n'est pas une page de mathématiques tunisienne. C'est une épreuve de français du Certificat d'études primaires (Maroc, Direction provinciale de Driouch, session de juillet 2022), sur le texte « La pollution de l'air ».",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte support",
+      "body": "La pollution de l'air. La modification de la composition de l'air par des polluants est nuisible pour la santé et l'environnement. Ces polluants sont nombreux et proviennent des activités humaines. Trois parmi eux sont les plus dangereux : - Les oxydes d'azote, ils sont émis par les chauffages, les moteurs thermiques des véhicules ou pendant la production de l'électricité. - Les petites particules qui sont issues directement des combustions (industrie, véhicules, feux de forêt, etc). - L'ozone, il est produit dans l'air par des réactions complexes entre certains polluants. Ces polluants de l'air contaminent l'Homme, les plantes, les animaux, les sols et les eaux. La réduction de l'émission de ces substances devient donc essentielle. (www.developpement-durable.gouv.fr, modifié et adapté)",
+      "figureDesc": "Encadré en pointillés contenant le texte. En-tête de l'examen : Royaume du Maroc, Ministère de l'Éducation Nationale, Académie régionale de l'Oriental, Durée 1h30, cases Nom, Prénom, N° d'examen, notes.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p122_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Quel est le titre de ce texte ? (1.5pt)",
+      "body": "",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p122_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Réponds par vrai ou faux : (2pts)",
+      "body": "La modification de l'air par des polluants est bonne pour la santé.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p122_i3",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Quels sont les polluants les plus dangereux ? (2pts)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p122_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Quel est l'origine des oxydes d'azote ? (2pts)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p122_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Quel est l'origine de l'ozone ? (2pts)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p122_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Détermine le type du texte en cochant la bonne réponse : (1.5pt)",
+      "body": "Narratif ( ) ; Argumentatif ( ) ; Informatif ( ).",
+      "figureDesc": "Trois ovales à cocher",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p122_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Propose un autre titre au texte : (2pts)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p122_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "A ton avis, comment l'air pollué peut contaminer l'Homme ? (2pts)",
+      "body": "",
+      "figureDesc": "Trois lignes de pointillés",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p122_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "B1- Lexique (3 points) : Cherche dans le texte un mot synonyme de dangereux : (1pt)",
+      "body": "B- Activités réflexives sur la langue (18 points)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p122_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-6-u5",
+    "confidence": 0.17
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une épreuve de français du Certificat d'études primaires marocain (Driouch, juillet 2022), donc une évaluation générale qui n'appartient pas au manuel tunisien ; le thème de la pollution de l'air se rapproche du Module 5 « Sauver la nature » (fr-6-m5), mais ce lien est trop incertain pour retenir ce chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture : la pollution de l'air",
+    "skill": "Comprendre un texte informatif en repérant le titre, les informations clés, l'origine des polluants et le type de texte, puis donner son avis et relever un synonyme.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "qcm",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "pollution de l'air",
+      "texte informatif",
+      "compréhension de lecture",
+      "titre du texte",
+      "synonyme",
+      "Certificat d'études primaires"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une épreuve de compréhension de texte documentaire sur un thème environnemental, avec des questions graduées (repérage, vrai/faux, identification du type de texte, nouveau titre, avis personnel, lexique) et un barème par question.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

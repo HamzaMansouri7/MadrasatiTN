@@ -1,0 +1,127 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 23,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الحاجة إلى الطاقة: الغذاء بالنسبة للإنسان كالوقود بالنسبة للسيارة (التغذية وإنتاج الطاقة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) لماذا يحترق الوقود في السيّارات؟ ب) حسب رأيك لماذا يحتاج جسم آمنة إلى الطّاقة والحرارة حتى في حالات الرّاحة التّامة؟",
+      "body": "- تستهلك هذه السيّارة 6 لترات من البنزين عند سيرها مدّة ساعة بسرعة 90 كم في الساعة. - تستهلك هذه السيّارة 0 لتر من البنزين عندما تكون راسية ومحرّكها لا يشتغل. - عمر آمنة 8 سنوات، يحتاج جسمها إلى 45 غراما من الشّكولاطة عند سيرها ساعة كاملة بسرعة 3 كم في الساعة. - يحتاج جسمها في الساعة إلى 10 غرامات من الشّكولاطة عندما تكون مستلقية على فراشها.",
+      "figureDesc": "رسم سيارة، ورسم فتاة (آمنة) تمشي وعلى ظهرها محفظة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p023_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اكتب «صواب» أو «خطأ»:",
+      "body": "- كلّما ازداد مجهود الإنسان ازدادت حاجة الجسم إلى الطّاقة. - الفيتامينات تستعمل جميعها لتوليد الطّاقة والحرارة اللازمة للجسم. - الطّعام بالنّسبة للإنسان كالوقود بالنّسبة للسيّارة. | جدول «استهلاك السيّارة»: المسافة المقطوعة بالكم: 100 / 100 / 100؛ السرعة بالكم/الساعة: 100 / 120 / 140؛ كمية البنزين المستهلكة: 6 / 8 / 12. | جدول «استهلاك آمنة لمدّة ساعة من النّشاط»: جالسة 15 غ، تمشي 45 غ، تمتطي دراجة 60 غ، تجري 90 غ.",
+      "figureDesc": "جدولان: استهلاك السيارة (المسافة، السرعة، كمية البنزين) واستهلاك آمنة لمدة ساعة من النشاط (جالسة، تمشي، على دراجة، تجري) مع رسوم؛ ثلاثة مربعات فارغة لكتابة صواب أو خطأ",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p023_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أرْبُطِ الوَجْبَةَ الغِذائِيَّةَ بِمَنْ هُوَ في أَوْكَدِ الحاجةِ إِلَيْها:",
+      "body": "الشيخ • الرّياضي • الطّفل ؛ وجبة غذائيّة تتوفّر فيها خاصّةُ الزّلاليّات. وجبة غذائيّة تتوفّر فيها خاصّةُ النّشويّات والسّكّريات والدّهنيّات. وجبة غذائيّة تتوفّر فيها خاصّةُ الخضروات.",
+      "figureDesc": "نشاط توصيل: ثلاثة مربعات (الشيخ، الرياضي، الطفل) تُوصل بثلاثة مربعات وجبات غذائية بواسطة نقاط",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p023_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "sci-6-u5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.19
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite du besoin en énergie de l'organisme, de l'alimentation comparée au carburant d'une voiture, des nutriments (protéines, glucides, lipides, vitamines) et des besoins selon l'âge et l'effort, ce qui correspond à la nutrition équilibrée de l'unité 3.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Alimentation et production d'énergie",
+    "skill": "Comprendre que les aliments fournissent au corps l'énergie nécessaire, comme le carburant pour une voiture, et que les besoins varient selon l'effort et la personne.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "appariement",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "énergie",
+      "alimentation",
+      "carburant",
+      "besoins nutritionnels",
+      "nutriments",
+      "effort physique"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "L'analogie entre voiture et corps humain (consommation à l'arrêt, en marche, selon la vitesse) sert de situation de départ, suivie d'un vrai/faux et d'un appariement entre profils (enfant, sportif, personne âgée) et types de repas.",
+    "themeGroup": "Énergie, besoins et troubles alimentaires"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Tableau 5: « تمتطي دراجة » dans la transcription, mais l'image porte « تنطي دراجة » / « تمتطي » illisible; la mention « تمتطي » est une normalisation incertaine du texte visible (« تشطي/تمطي دراجة »)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Tableau «استهلاك السيّارة»: les colonnes sont lues de droite à gauche dans l'image (100,100,100 / 100,120,140 / 6,8,12) – ordre correct; aucun problème sauf le titre de l'exercice 5 placé avant le tableau, alors que les tableaux sont au-dessus des énoncés."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les voyelles visibles (ex. « السيّارة », « الطّاقة », « الزّلاليّات », « النّشويّات ») sont partiellement notées; l'énoncé 6 est vocalisé alors que le reste est non vocalisé, cohérent avec l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Numéro de page 55 non transcrit; les trois cases de réponse (صواب/خطأ) et la consigne de relier par des points (exercice 6) ne sont pas mentionnées."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Énoncé 4: « 0 لتر » et « آمنة » correspondent à l'image (« أمنة »); la hamza est écrite « أ » dans l'image, la transcription met « آ » (madda) – erreur mineure."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les images (voiture, fille qui marche, sportif, vélo, personne assise) et les numéros de section ne sont pas décrits, ce qui est acceptable."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

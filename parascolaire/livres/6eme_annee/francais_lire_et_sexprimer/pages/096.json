@@ -1,0 +1,119 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 96,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Évaluation n°4 – Lecture et compréhension : Patricia et King (Le lion, d'après Joseph Kessel)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Patricia et King\nPatricia est la fille du directeur d'un parc où vivent des animaux sauvages. Ella a pour ami un lion qu'elle a appelé King. Elle le présente à un visiteur.\n« Dis-moi, Patricia, comment es-tu devenue l'amie de ce lion ?\n- Mon père a trouvé dans un fossé un tout petit lionceau. Il était tout seul. Il pleurait et criait de faim et de peur. Ma mère a dit qu'il était trop maigre, mais j'ai tout fait pour qu'il vive. »\nAlors, Patricia me raconte comment elle a soigné et sauvé le bébé-lion. Elle lui a donné le biberon. Il dormait avec elle. Quand il faisait froid, elle le couvrait de vêtements en laine.\n« Je l'ai appelé King, dit Patricia. Je savais qu'un jour il serait un roi, un vrai.\nQuand il a grandi, nous avons commencé à jouer. King faisait tout ce que je voulais. Il fait encore et toujours tout ce que je veux. Regardez ! Regardez ! »\nElle donne de grands coups de poing dans le ventre du lion. Elle tire très fort sur sa crinière. Au bout d'un moment, la petite fille arrête le jeu. Elle se couche près du fauve. King lui lèche la main et les cheveux. Patricia sourit, heureuse.\nLe lion, d'après Joseph Kessel",
+      "figureDesc": "Texte encadré avec coins arrondis, titre « Patricia et King ». En-tête « Les évaluations – Évaluation n°4 », 6ème année de base.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p096_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1",
+      "instruction": "Compréhension : Comment le père a-t-il trouvé le lionceau ?",
+      "body": "Comment le père a-t-il trouvé le lionceau ?\n.......................................................",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p096_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2",
+      "instruction": "Comment Patricia s'est-elle occupée de King ?",
+      "body": "Comment Patricia s'est-elle occupée de King ?\n.......................................................",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p096_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "B3",
+      "instruction": "Patricia a appelé le lionceau « King ». Pourquoi ?",
+      "body": "Patricia a appelé le lionceau « King ». Pourquoi ?\n.......................................................\n.......................................................",
+      "figureDesc": "Deux lignes de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p096_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "B4a",
+      "instruction": "Barre ce qui est faux :",
+      "body": "- Est-ce que Patricia a peur de King ? [oui] [non]",
+      "figureDesc": "Deux cases encadrées « oui » et « non »",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p096_i5",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.23
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de lecture-compréhension (Patricia et King) de français; le texte sur l'amitié avec un lion ne correspond clairement à aucun module précis (m3 'Accepter les autres' et m5 'Sauver la nature' sont possibles mais incertains), donc aucun chapitre n'est retenu.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    126
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Lire un texte narratif et répondre à des questions de compréhension en justifiant par des éléments du texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "texte narratif",
+      "lion",
+      "amitié homme-animal",
+      "évaluation",
+      "questions ouvertes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation réutilisable : une amitié entre un enfant et un animal sauvage racontée dans un extrait de roman, suivie de questions de compréhension progressives (comment, pourquoi) et d'un item vrai/faux à corriger.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

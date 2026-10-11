@@ -1,0 +1,80 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 10,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Problème de synthèse (concours) : périmètres et aires (demi-disque, rectangle, triangle rectangle), pourcentage et prix unitaire",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 3 (8 نقاط) - السؤال 1",
+      "instruction": "أحسب قيس مساحة الأرض الجملية إذا علمت أنّ قيس مساحة القطعة 3 تمثّل 32 % قيس مساحة القطعة 2.",
+      "body": "لفلاح أرض تتكون من 3 قطع متصلة كما هو مبيّن بالرسم:\n- القطعة الأولى على شكل نصف قرص دائري مركزها \" أ \" قيس القوس م هـ = 213.52 م\n- القطعة الثانية على شكل مستطيل ( أ ب ج د )\n- القطعة الثالثة على شكل مثلث ( أ د م ) قائم في \" أ \"\n- أ د = 51 م // أ ق = 40.8 م\n- النقاط م ، أ ، هـ ، ب على استقامة واحدة.",
+      "figureDesc": "Figure : demi-disque (1) de centre A au-dessus de la droite M-A-H-B ; rectangle ABCD (2) à gauche ; triangle ADM (3) rectangle en A, à droite, avec la hauteur [AQ] (ق) perpendiculaire à (DM), tracée en pointillés ; angles droits marqués en A et en Q.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "concours_mathematiques_corriges_p010_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 3 - السؤال 2",
+      "instruction": "أحسب ثمن شراء المتر الواحد من الأسلاك.",
+      "body": "بعد ترك مدخل عرضه 4 م أحاط كامل أرضه بسياج من الأسلاك الشائكة بلغت مصاريف اليد العاملة 1176.048 د و هو ما يمثّل 20% ثمن شراء الأسلاك.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "concours_mathematiques_corriges_p010_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-6-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p3",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit d'un problème de synthèse de type concours, à plusieurs étapes (aires et périmètres de figures composées, pourcentages, prix unitaire), ce qui correspond à la Période 6 consacrée à la résolution de situations-problèmes préparant au concours d'entrée aux collèges pilotes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    11,
+    12,
+    13
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Périmètres et aires composées",
+    "skill": "Résoudre un problème de synthèse combinant aires et périmètres de figures usuelles (demi-disque, rectangle, triangle rectangle), pourcentage et prix unitaire.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "aire",
+      "périmètre",
+      "demi-disque",
+      "rectangle",
+      "triangle rectangle",
+      "pourcentage",
+      "prix unitaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation réaliste d'un agriculteur dont le terrain est composé de trois parcelles (demi-disque, rectangle, triangle), avec calcul d'aire totale puis coût de clôture avec entrée laissée libre et main-d'œuvre exprimée en pourcentage du prix des fils, réutilisable pour des problèmes de synthèse de type concours.",
+    "themeGroup": "Périmètres et aires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

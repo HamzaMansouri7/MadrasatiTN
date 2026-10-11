@@ -1,0 +1,84 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 75,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite – Thème 2 : la solidarité – Les belles expressions : A) Communiquer avec les autres",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Les belles expressions : A) Communiquer avec les autres :",
+      "body": "• L'internet est utile parce qu'il réduit les distances, mais il a des inconvénients aussi. L'utilisation excessive de l'ordinateur, à long terme, fait mal aux yeux.\n• On peut utiliser le Net sans excès pour apprendre ou pour se distraire aussi.\n• Il y a plein de sites pour apprendre le français par exemple, même d'autres langues.\n• Pour faire une recherche sur l'internet, il faut d'abord se connecter.\n• Moi, j'utilise le téléphone portable pour communiquer avec mes amis, je peux les appeler ou leur écrire des messages.\n• Avec Facebook aussi et Skype ou Messenger, on contacte les amis et les parents pour avoir de leurs nouvelles.\n• Moi, j'utilise l'internet juste pour me distraire, mais pour communiquer avec mes amis à Gafsa, je leur écris des lettres. Ainsi, je pratique le français pour améliorer mes compétences en classe.\n• Mon ami n'a pas d'internet pour se connecter, il utilise son ordinateur juste pour écrire ses productions.\n• Avant, les gens se déplaçaient pour se contacter parce qu'il n'y avait pas de moyens de communication comme de nos jours.\n• À l'époque de nos parents, il y avait la radio et la télévision. Mais il n'y avait pas plusieurs chaînes.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p075_i1",
+      "topicId": "fr-6-m2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m2",
+  "topicTitle": "Module 2 : Communiquer avec les autres",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.62
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page d'expression écrite « Les belles expressions : Communiquer avec les autres » traite de l'usage d'Internet comme moyen de communication, ce qui correspond au Module 2 « Communiquer avec les autres », même si l'OCR mentionne le thème de la solidarité.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Communiquer avec les autres (internet)",
+    "skill": "Réutiliser des expressions et des arguments pour parler des avantages et des inconvénients d'internet dans une production écrite.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "expression écrite",
+      "solidarité",
+      "internet",
+      "communication",
+      "avantages et inconvénients",
+      "expressions"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque de phrases modèles qui présentent le pour et le contre d'un outil moderne (internet, ordinateur), réutilisable pour des sujets de rédaction argumentative ou des exercices de réemploi d'expressions.",
+    "themeGroup": "Internet et technologies"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : « Sagesse », « Expression écrite », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « Thème 2 : la solidarité » est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », numéro de page « 74 », « 6ème année de base »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

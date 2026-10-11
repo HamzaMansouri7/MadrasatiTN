@@ -1,0 +1,116 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 40,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "المفعول المطلق (قواعد اللغة العربية) : المصدر وصياغته من الأفعال المزيدة والمفعول المطلق",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "التمرين الأول",
+      "instruction": "هات المصدر لكل فعل من الأفعال التالية",
+      "body": "استبشر – اجتهد – تأخر – اخضر – تمارض",
+      "figureDesc": "جدول من خمس خانات في الأعلى تحمل الأفعال (استبشر، اجتهد، تأخر، اخضر، تمارض) وصف ثان فارغ لكتابة المصادر",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p040_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التمرين الثاني",
+      "instruction": "ايت بأفعال المصادر التالية",
+      "body": "انتظار – استعادة – اندفاع – اعتماد – استنتاج",
+      "figureDesc": "جدول من خمس خانات في الأعلى تحمل المصادر (انتظار، استعادة، اندفاع، اعتماد، استنتاج) وصف ثان فارغ لكتابة الأفعال",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p040_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التمرين الثالث",
+      "instruction": "عوض كل فعل بين قوسين بمصدره",
+      "body": "أريد أن أتنزه في البستان\nيحاول الصانع أن يجبر لعبتي المكسرة\nأريد أن أضطجع تحت هذه الشجرة\nينبغي أن نعتمد على أنفسنا",
+      "figureDesc": "إطار مستطيل يحيط بالتمرين",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p040_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التمرين الرابع",
+      "instruction": "أغن كل جملة بمفعول مطلق",
+      "body": "انتصر الملاكم على خصمه\nاستسلم المريض للطبيب\nاهتمت الدولة بذوي الحاجة",
+      "figureDesc": "إطار مستطيل يحيط بالتمرين",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p040_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "عنوان الدرس (أسفل الصفحة)",
+      "body": "المفعول المطلق",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p040_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.39
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de grammaire arabe (masdar des verbes augmentés et complément absolu), qui ne correspond clairement à aucune des unités officielles centrées sur la narration, donc aucun chapitre n'est retenu.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Le maçdar et le complément absolu",
+    "skill": "Former le maçdar des verbes dérivés (augmentés) et enrichir des phrases par un complément absolu (المفعول المطلق).",
+    "pageType": "mixed",
+    "formats": [
+      "autre",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "مصدر",
+      "مفعول مطلق",
+      "أفعال مزيدة",
+      "صياغة المصادر",
+      "grammaire arabe",
+      "conjugaison"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression en quatre exercices courts : du verbe vers son maçdar, du maçdar vers le verbe, remplacement d'un verbe par son maçdar dans une phrase, puis enrichissement de phrases simples par un complément absolu ; transposable à d'autres points de grammaire.",
+    "themeGroup": "Le masdar"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

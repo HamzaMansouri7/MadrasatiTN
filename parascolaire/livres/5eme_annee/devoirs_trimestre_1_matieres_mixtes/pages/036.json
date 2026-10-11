@@ -1,0 +1,185 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 36,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المواقع والاتجاهات الجغرافية (Repérage et directions géographiques : les points cardinaux)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المواقع والاتجاهات الجغرافيّة",
+      "body": "الجِهَاتُ الأَرْبَعُ الشَّرْقُ وَ الغَرْبُ وَ الشِّمَالُ وَ الجَنُوبُ\nالجِهَةُ التي تُشْرِقُ مِنها الشَّمْسُ هِيَ الشَّرْقُ\nالجِهَةُ التي تَغِيبُ تَغْرُبُ فِيها الشَّمْسُ هِيَ الغَرْبُ\nقِفْ في الصْباحِ وَوَجْهُكَ صَوْبَ الشَّمْسِ\nثُمَّ مُدَّ ذِراعَيكَ فَيَكُونُ وَجْهُكَ بِاتِّجاهِ الشَّرْقِ وَظَهْرُكَ بِاتِّجاهِ الغَرْبِ،\nوَتُشيرُ يَدُكَ اليُمْنَى إلى جِهَةِ الجنُوبِ وَيَدُكَ اليُسْرى إلى جِهَةِ الشَّمالِ\nيمكن تعيين الاتِّجاهات نهاراً بالشمس ، وإذا حجبتها السحب ،\nيمكن تعيينها بالبوصلة وهى آلة صغيرة تشبه الساعة،\nولكن ليس لها إلا عقرب واحد أحد طرفيه يتجه دائماً إلى جهة الشمال،\nوإذا ما عرفت الشمال سهل عليك معرفة الجهات الثلاثة الأخرى\nويوجد غير الجهات الأربع الأصلية جهات أخرى تسمى الجهات الفرعية\nفالشمال الشرقى يقع بين الشمال والشرق",
+      "figureDesc": "Rose des vents (étoile à 4 branches rouges principales, branches bleues et jaunes secondaires) avec les noms arabes : الشمال، الجنوب، الشرق، الغرب (rouge) ; الشمال الشرقي، الشمال الغربي، الجنوب الشرقي، الجنوب الغربي (bleu) ; et les directions intermédiaires : شمال الشمال الشرقي، شمال الشمال الغربي، شرق الشمال الشرقي، غرب الشمال الغربي، شرق الجنوب الشرقي، غرب الجنوب الغربي، جنوب الجنوب الشرقي، جنوب الجنوب الغربي (marron).",
+      "answer": null,
+      "topicId": "hg-5-u2",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "devoirs_trimestre_1_matieres_mixtes_p036_i1"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "hg-5-u2",
+  "topicTitle": "Unité 2 : Géographie - Repères géographiques et carte de Tunisie",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-5-u2",
+    "confidence": 0.99
+  },
+  "topicSubject": "Histoire & Géographie",
+  "topicReason": "La page traite des quatre points cardinaux (est, ouest, nord, sud) et de l'orientation avec le soleil, ce qui correspond à l'unité de géographie sur les repères géographiques (points cardinaux).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Histoire-Géographie",
+    "theme": "Points cardinaux et orientation",
+    "skill": "Savoir s'orienter à l'aide du soleil et identifier les quatre points cardinaux (est, ouest, nord, sud).",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "points cardinaux",
+      "orientation",
+      "lever du soleil",
+      "est et ouest",
+      "repérage"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Activité pratique réutilisable : se placer face au soleil le matin, bras écartés, pour déduire les quatre directions. Elle peut servir de base à un exercice d'orientation sur schéma, de rose des vents à compléter ou de mise en situation dans la cour.",
+    "themeGroup": "Orientation et points cardinaux"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les étiquettes de la rose des vents sont absentes : الشمال، الجنوب، الشرق، الغرب، الشمال الشرقي، الشمال الغربي، الجنوب الشرقي، الجنوب الغربي, ainsi que les directions intermédiaires (شمال الشمال الشرقي، شرق الشمال الشرقي، etc.). La transcription ne contient que « [] »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الشِّمَالُ » dans la 1re ligne : l'image porte « الشِّمَالُ » avec kasra, ce qui est correct ; mais « الصْباحِ » est transcrit sans shadda alors que l'image montre « الصَّباحِ/الصْباحِ » : à vérifier."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الجنُوب » (ligne de la main droite) : l'image porte « الجُنُوبِ » avec voyelles, la transcription les a perdues en partie."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« ووَجْهُكَ » : l'image montre « وَوَجْهُكَ » avec fatha sur le premier waw, qui manque."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« باتجاهِ الغَرْبِ » : l'image porte « بِاتِّجاهِ » avec voyelles, la transcription les a perdues."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الشَّمسُ » : les voyelles sur le mim (« الشَّمْسُ ») sont absentes à plusieurs endroits où l'image montre un sukun."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الاتّجاهات » en rouge : à l'image le mot est « الاتِّجاهات » avec kasra, absente de la transcription."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La première ligne colorée figure sous forme séparée par « || », mais l'ordre de lecture est conservé ; la ligne « الجِهَاتُ الأَرْبَعُ... » est correcte."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« وَوَجْهُكَ » : la fatha sur le premier waw est visible dans l'image mais absente de la transcription (« ووَجْهُكَ »)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الشَّمْسُ / الشَّمْسِ » : l'image porte un sukun sur le mim aux lignes 2, 3 et 4. La transcription écrit « الشَّمسُ » sans sukun."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الشَّرْقُ » à la ligne 2 : le sukun sur le ra est visible dans l'image mais absent de la transcription (« الشَّرقُ »)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« صَوْبَ » à la ligne 4 : l'image porte un sukun sur le waw, absent de la transcription (« صَوبَ »)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« بِاتِّجاهِ الغَرْبِ » : dans la transcription, « باتجاهِ » est sans voyelles ni shadda alors que l'image les porte."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الجنُوبِ » à la ligne de la main droite : la kasra finale visible dans l'image manque dans la transcription (« الجنُوب »)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الاتِّجاهات » en rouge : la kasra et la shadda visibles dans l'image manquent dans la transcription (« الاتّجاهات »)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الصْباحِ » : la transcription est fidèle à l'image (sukun sur le sad, sans shadda). Ce point signalé n'est pas une erreur."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المواقع والاتجاهات الجغرافيّة",
+      "body": "الجِهَاتُ الأَرْبَعُ الشَّرْقُ وَ الغَرْبُ وَ الشِّمَالُ وَ الجَنُوبُ\nالجِهَةُ التي تُشْرِقُ مِنها الشَّمْسُ هِيَ الشَّرْقُ\nالجِهَةُ التي تَغِيبُ تَغْرُبُ فِيها الشَّمْسُ هِيَ الغَرْبُ\nقِفْ في الصْباحِ وَوَجْهُكَ صَوْبَ الشَّمْسِ\nثُمَّ مُدَّ ذِراعَيكَ فَيَكُونُ وَجْهُكَ بِاتِّجاهِ الشَّرْقِ وَظَهْرُكَ بِاتِّجاهِ الغَرْبِ،\nوَتُشيرُ يَدُكَ اليُمْنَى إلى جِهَةِ الجنُوبِ وَيَدُكَ اليُسْرى إلى جِهَةِ الشَّمالِ\nيمكن تعيين الاتِّجاهات نهاراً بالشمس ، وإذا حجبتها السحب ،\nيمكن تعيينها بالبوصلة وهى آلة صغيرة تشبه الساعة،\nولكن ليس لها إلا عقرب واحد أحد طرفيه يتجه دائماً إلى جهة الشمال،\nوإذا ما عرفت الشمال سهل عليك معرفة الجهات الثلاثة الأخرى\nويوجد غير الجهات الأربع الأصلية جهات أخرى تسمى الجهات الفرعية\nفالشمال الشرقى يقع بين الشمال والشرق",
+      "figureDesc": "Rose des vents (étoile à 4 branches rouges principales, branches bleues et jaunes secondaires) avec les noms arabes : الشمال، الجنوب، الشرق، الغرب (rouge) ; الشمال الشرقي، الشمال الغربي، الجنوب الشرقي، الجنوب الغربي (bleu) ; et les directions intermédiaires : شمال الشمال الشرقي، شمال الشمال الغربي، شرق الشمال الشرقي، غرب الشمال الغربي، شرق الجنوب الشرقي، غرب الجنوب الغربي، جنوب الجنوب الشرقي، جنوب الجنوب الغربي (marron).",
+      "answer": null,
+      "topicId": "hg-5-u2",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "livre_mowazi_5eme_math_sciences_p036_i1"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المواقع والاتجاهات الجغرافيّة",
+      "body": "الجِهَاتُ الأَرْبَعُ الشَّرْقُ وَ الغَرْبُ وَ الشِّمَالُ وَ الجَنُوبُ\nالجِهَةُ التي تُشْرِقُ مِنها الشَّمسُ هِيَ الشَّرقُ\nالجِهَةُ التي تَغِيبُ تَغْرُبُ فِيها الشَّمسُ هِيَ الغَرْبُ\nقِفْ في الصْباحِ ووَجْهُكَ صَوبَ الشَّمسِ\nثُمَّ مُدَّ ذِراعَيكَ فَيَكُونُ وَجْهُكَ بِاتِّجاهِ الشَّرْقِ وَظَهْرُكَ باتجاهِ الغَرْبِ،\nوَتُشيرُ يَدُكَ اليُمْنَى إلى جِهَةِ الجنُوب وَيَدُكَ اليُسْرى إلى جِهَةِ الشَّمالِ\nيمكن تعيين الاتّجاهات نهاراً بالشمس ، وإذا حجبتها السحب ،\nيمكن تعيينها بالبوصلة وهى آلة صغيرة تشبه الساعة،\nولكن ليس لها إلا عقرب واحد أحد طرفيه يتجه دائماً إلى جهة الشمال،\nوإذا ما عرفت الشمال سهل عليك معرفة الجهات الثلاثة الأخرى\nويوجد غير الجهات الأربع الأصلية جهات أخرى تسمى الجهات الفرعية\nفالشمال الشرقى يقع بين الشمال والشرق",
+      "figureDesc": "Rose des vents (étoile à 4 branches rouges principales, branches bleues et jaunes secondaires) avec les noms arabes : الشمال، الجنوب، الشرق، الغرب (rouge) ; الشمال الشرقي، الشمال الغربي، الجنوب الشرقي، الجنوب الغربي (bleu) ; et les directions intermédiaires : شمال الشمال الشرقي، شمال الشمال الغربي، شرق الشمال الشرقي، غرب الشمال الغربي، شرق الجنوب الشرقي، غرب الجنوب الغربي، جنوب الجنوب الشرقي، جنوب الجنوب الغربي (marron).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "livre_mowazi_5eme_math_sciences_p036_i1",
+      "topicId": "hg-5-u2",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Histoire-Géographie"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

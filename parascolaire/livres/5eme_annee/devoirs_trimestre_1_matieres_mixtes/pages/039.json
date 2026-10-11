@@ -1,0 +1,104 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 39,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "أهم السلاسل الجبلية وأهم السهول والهضاب في العالم (Géographie : principales chaînes de montagnes, plaines et plateaux du monde)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أهم السلاسل الجبلية",
+      "body": "موقعها | إسمها | أعلى قمة بها\nالقارة الآسيوية | الهملايا | جبل إفريست م\nشمال القارة الإفريقية | جبال الأطلس | جبل طوبقال م\nأوروبا | الآلب | جبل الأبيض م\nأمريكا الجنوبية | جبال الأند | جبل أكنكاغا م\nأمريكا الشمالية | جبال الروكي | جبل ماك كنلاي م",
+      "figureDesc": "Tableau à trois colonnes (موقعها، إسمها، أعلى قمة بها) et cinq lignes sur les principales chaînes de montagnes. Les altitudes sont absentes, seul reste le signe « م » après chaque nom de sommet.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p039_i1",
+      "topicId": "hg-5-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أهم السهول و الهضاب",
+      "body": "السهول (الإسم | القارة):\nسهول سيبيريا | آسيا\nسهول الأمزون | أمريكا الجنوبية\nسهول الساحل الأطلسي | إفريقيا\nسهول أوروبا | أوروبا\n\nالهضاب (الإسم | القارة):\nهضاب الصين | آسيا\nهضاب البرازيل | أمريكا الجنوبية\nهضاب لموند | إفريقيا\nهضبة الميزيتا الاسبانية | أوروبا",
+      "figureDesc": "Tableau à deux grandes colonnes (السهول et الهضاب), chacune divisée en الإسم et القارة, avec quatre lignes. Les plaines sont à droite et les plateaux à gauche.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p039_i2",
+      "topicId": "hg-5-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "hg-5-u2",
+  "topicTitle": "Unité 2 : Géographie - Repères géographiques et carte de Tunisie",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-5-m8",
+    "confidence": 0.22
+  },
+  "topicSubject": "Histoire & Géographie",
+  "topicReason": "La page présente les grandes chaînes de montagnes, plaines et plateaux du monde par continent, ce qui relève de l'unité de géographie sur les repères géographiques, les continents et les grands reliefs.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Histoire-Géographie",
+    "theme": "Chaînes de montagnes, plaines et plateaux du monde",
+    "skill": "Localiser et nommer les principales chaînes de montagnes, plaines et plateaux du monde par continent, avec les plus hauts sommets.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "chaînes de montagnes",
+      "plaines",
+      "plateaux",
+      "continents",
+      "sommets",
+      "Himalaya"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les tableaux de correspondance relief/continent/sommet se prêtent à des exercices d'appariement, de légende de planisphère muet, de quiz de localisation ou d'infographie comparant les altitudes des sommets.",
+    "themeGroup": "Reliefs du monde"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« جبل إفريست » : l'image montre « جبل إفريست » tel quel (graphie du document, pas d'erreur de transcription) ; à vérifier, pas de correction nécessaire"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La transcription omet la ligne d'en-tête des colonnes du second tableau : « السهول » et « الهضاب » sont présents, mais la mise en page en deux blocs côte à côte (السهول à droite, الهضاب à gauche) est inversée dans l'ordre de lecture"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans le premier tableau, les colonnes sont listées dans l'ordre موقعها | إسمها | أعلى قمة بها, ce qui est cohérent avec l'image (de droite à gauche) ; l'ordre est correct, mais le « م » (abréviation de « متر ») apparaît séparé à gauche de chaque cellule"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« سهول الساحل الأطلسي » : l'image affiche « سهول الساحل الأطلسي » ; transcription correcte"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "labels": {
+    "pageSubject": "Histoire-Géographie"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

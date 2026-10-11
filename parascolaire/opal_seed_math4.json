@@ -1,0 +1,88 @@
+{
+  "book": "Mathématiques 4ème année — Exercices et corrigés",
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "count": 10,
+  "exercises": [
+    {
+      "theme": "Numération jusqu'à 999",
+      "topicId": null,
+      "format": "fill_blank",
+      "difficulty": "easy",
+      "statement_ar": "يَمْلكُ فلّاحٌ بَقَرَةً حَلُوبًا تُوفِّرُ لهُ يوميًا ........ لِترًا مِنَ الحَليبِ. يَحْتَفِظُ بِ ........ لِتْرَاتٍ لِعَائلتِهِ وَيَبيعُ الباقي. ما هي كمّيّة الحليب التي يبيعُها خلال ........ ؟",
+      "answer_ar": "الحَلُّ : كَمِّيَةُ الحَليبِ الّتي يَبيعُها بِاللِّتْرِ : (28 - 3) × 7 = 175"
+    },
+    {
+      "theme": "Addition et soustraction",
+      "topicId": "math-4-ch1",
+      "format": "calculation",
+      "difficulty": "easy",
+      "statement_ar": "لحساب فرق العددين 752 - 186 يمكن إضافة العدد 4 أو العدد 14 إلى كلّ من العددين ليصبحا عددين صحيحين من العشرات أو المئات . مثال : 752 - 186 = (752 + 14) - (186 + 14) = 766 - 200 = 566. الفروق المطلوبة : 483 - 267 ، 1 992 - 897 ، 1 382 - 675",
+      "answer_ar": "752 - 186 = 566 (exemple donné dans l'énoncé)"
+    },
+    {
+      "theme": "Temps et calendrier",
+      "topicId": "math-4-p6",
+      "format": "fill_blank",
+      "difficulty": "medium",
+      "statement_ar": "المثال: الساعة 8 و 15 دق مساء ← 20 : 15. الساعات الأخرى: «الساعة ..... و ..... دق» داخل إطار «:» فارغ. الأخيرة: «الساعة ..... و ..... دق ليلا» وإطارها «:».",
+      "answer_ar": "20 : 15 (للمثال فقط)"
+    },
+    {
+      "theme": "Problèmes",
+      "topicId": "math-4-ch1",
+      "format": "fill_blank",
+      "difficulty": "medium",
+      "statement_ar": "وزّع والدَ بالتّســاوي على ........ من أبنائه مبلغ ........ دينارا، اشترى أصغرهم بنصيبه ........ لعب ثمن الواحدة ........ دنانير ووفّر الباقي.\nاحسب بالدّينار ما وفّره أصغر الأبناء.",
+      "answer_ar": "الحلّ: المبلغ الذي وفّره أصغر الأبناء : (78 على 3) - (4 × 5) = 6 دنانير"
+    },
+    {
+      "theme": "Division euclidienne",
+      "topicId": "math-4-ch3",
+      "format": "free",
+      "difficulty": "medium",
+      "statement_ar": "904 على 7 ؛ 745 على 8 ؛ 836 على 9 ؛ 777 على 4",
+      "answer_ar": "Exemple : 847 ÷ 5 → quotient 169, reste 2 (5 > 2). Le scan indique 2 + (169 × 5) = 247."
+    },
+    {
+      "theme": "Quadrillage et parcours",
+      "topicId": null,
+      "format": "free",
+      "difficulty": "hard",
+      "statement_ar": "69 000 = (7 × 1 300) + (5 × 7 500) + (2 800 × 8)\nالمخطط :\nصندوق المدرسة\n69 د\n27 د = دين\nوسائل الإيضاح :\n96 د\nالمقدار المالي الذي ساهم به صندوق المدرسة بالدينار :\n20 = (7 + 69) - 96",
+      "answer_ar": "20 = (7 + 69) - 96"
+    },
+    {
+      "theme": "Quadrillage et parcours",
+      "topicId": null,
+      "format": "free",
+      "difficulty": "hard",
+      "statement_ar": "700 × 6 = 4 200\n9 532 + 5 599 + 4 869 = 20 000\n8 612 - 5 267 = 3 345",
+      "answer_ar": "4 200 ; 20 000 ; 3 345"
+    },
+    {
+      "theme": "Quadrillage et parcours",
+      "topicId": null,
+      "format": "free",
+      "difficulty": "hard",
+      "statement_ar": "ثمن علب البذور بالمي : 15 000 = 3 × 5 000\nثمن السماد بالمي : 17 500 = 50 × 350\nصرفوا في الجملة بالمي :\n35 500 = 3 000 + 17 500 + 15 000\nالدخل الصافي عند بيع البقول في السوق بالمي :\n96 000 = 4 000 - (500 × 200)\nالحل الثاني يوفّر لهم أكثر لأن :\n96 000 مي > 75 000 مي\nأو 96 000 - 35 500 > 75 000 مي - 35 500 مي",
+      "answer_ar": "35 500 مي ؛ 96 000 مي ؛ الحل الثاني يوفّر أكثر لأن 96 000 مي > 75 000 مي"
+    },
+    {
+      "theme": "Multiplication et multiples",
+      "topicId": "math-4-ch3",
+      "format": "fill_blank",
+      "difficulty": "hard",
+      "statement_ar": "للبحث عن عدد الأطفال بكل فرقة قدم أحد التّلاميذ حلاّ لهذه المسألة فكان كالآتي: 4 x ... = ... x 4 = 32 ؛ 4 x 8 = 8 x 4 = 32 ؛ وكتب أيضا: 32 على 4 = 8",
+      "answer_ar": "8 أطفال بكل فرقة"
+    },
+    {
+      "theme": "Multiplication et multiples",
+      "topicId": "math-4-ch3",
+      "format": "free",
+      "difficulty": "hard",
+      "statement_ar": "قدّمت فاطمة الحلّ التّالي: جدول: عدد العلب المملوءة 1 ، 2 ، 3 ، 4 ، 5 ؛ عدد البيض بها 6 = 6 x 1 ، 12 = 6 x 2 ، 18 = 6 x 3 ، 24 = 6 x 4 ، 30 = 6 x 5. – العدد 27 محصور بين مضاعفين متتاليين للعدد 6 هما 24 و 30. – عدد العلب الّتي يمكن للسيّدة ملؤها هو 4 لأنّ: 4 x 6 < 27 < 5 x 6. ما يتبقّى من البيض هو 3 لأنّ: 3 < 6 و 3 + ( 6 x 4 ) = 27. المقسوم هو 27 ، القاسم هو 6 ، الخارج هو 4 ، الباقي هو 3",
+      "answer_ar": "4 علب ويتبقّى 3 بيضات"
+    }
+  ]
+}

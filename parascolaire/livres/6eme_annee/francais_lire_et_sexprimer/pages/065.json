@@ -1,0 +1,62 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 65,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : L'histoire du petit Indien (2)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "L'histoire du petit Indien (2)\nLe petit Indien frissonnait en pensant au cheval blanc couché, tout seul, là-bas, dans le froid et les marguerites.\nAlors, il se leva, il prit sa chaude couverture et il sortit sans bruit de la tente.\nLe petit Indien avait très peur, mais il pensait à son ami et il continua son chemin. Il trouva le cheval dans l'obscurité, il lui caressa le museau.\nIl le couvrit de sa couverture de laine, puis il se glissa dessous et s'endormit.\nAu matin, sous la tente, il n'y avait plus de petit Indien roulé dans sa couverture.\nToute la famille partit aussitôt à sa recherche.\nQuand le père, la mère, le grand frère et la grande sœur arrivèrent dans la prairie, ils virent – et ce n'était pas une illusion – un grand cheval blanc qui dormait sous la couverture du petit Indien avec le petit Indien blotti contre lui.\n-Ce n'était pas une illusion, Chef Soleil Levant, dit le petit Indien en se réveillant, j'ai pensé qu'il avait froid !\nChef Soleil Levant était heureux de retrouver son fils sain et sauf et il était très fier de lui.\nChef Soleil Levant examina le grand cheval blanc : il avait une patte cassée.\nOn lui fit une attelle, et le cheval put marcher en boitillant.\nLe petit Indien demanda alors, très inquiet :\n-Puis-je garder le cheval ?\nSon père le regarda en souriant :\n-Puisque c'est toi qui l'as trouvé et soigné, il t'appartient de droit.\nEt puisque tu as été très courageux, je te donnerai aussi un nom : tu t'appelleras maintenant « Cheval Hardi ». Le petit Indien était doublement heureux : il avait désormais, comme tous les autres, un nom et un cheval et c'est ce qu'il désirait le plus au monde.\nD'après CH. Zolotow, Le petit Indien, Ed. Des deux coqs d'or",
+      "figureDesc": "Page encadrée avec bandeau « Lecture - Compréhension », mentions « Sagesse » et « 6ème année de base ». Le texte est dans un cadre arrondi. Au verso, les questions sont visibles par transparence mais illisibles.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p065_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.35
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension en français sur un petit Indien qui part chercher son ami le cheval blanc ; le thème de l'amitié et de la solidarité se rapproche du Module 3 (Accepter les autres), mais le texte ne permet pas de rattacher la page à un module avec certitude.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture : récit",
+    "skill": "Lire un texte narratif et en comprendre le sens (personnages, actions, sentiments) pour répondre à des questions.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "texte narratif",
+      "petit Indien",
+      "récit",
+      "personnages"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Suite d'un récit à épisodes centré sur un personnage qui agit par compassion envers un animal, réutilisable pour des questions de compréhension, de chronologie des actions ou d'anticipation de la suite.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

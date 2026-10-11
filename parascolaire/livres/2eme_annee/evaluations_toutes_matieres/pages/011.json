@@ -1,0 +1,161 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 11,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني عدد 5 – قراءة وفهم (نص: كوثر والنملة)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أَقْرَأُ النَّصَّ :",
+      "body": "جَلَسَتْ كَوْثَرُ عَلَى كُرْسِيٍّ خَشَبِيٍّ تَحْتَ شَجَرَةِ بُرْتُقَالٍ، وَبَيْنَ يَدَيْهَا قِصَّةٌ تُطَالِعُهَا. لَمَحَتْ أَمَامَهَا نَمْلَةً سَوْدَاءَ تَجُرُّ حَبَّةَ قَمْحٍ بِعَنَاءٍ، أَعْجَبَهَا الْمَشْهَدُ، وَبَقِيَتْ تُتَابِعُ حَرَكَاتِ النَّمْلَةِ وَهِيَ تَبْذُلُ مَجْهُودًا كَبِيرًا : تَارَةً تَجُرُّ الْحَبَّةَ وَطَوْرًا تَدْفَعُهَا، وَأُخْرَى تَدُورُ حَوْلَهَا...\nلَمْ تَيْأَسِ النَّمْلَةُ وَلَمْ تَكِلَّ أَوْ تَمِلَّ إِلَى أَنْ وَصَلَتْ بِغَنِيمَتِهَا إِلَى الْجُحْرِ، فَنَزَلَتْ وَاخْتَفَتْ.\nاِبْتَسَمَتِ الْبِنْتُ وَقَالَتْ فِي نَفْسِهَا : «عَلَّمَنِي هَذَا الْكَائِنُ الصَّغِيرُ دَرْسًا، سَأَعْمَلُ وَأَكْدَحُ وَلاَ أَدَعُ لِلْفَشَلِ نَصِيبًا فِي حَيَاتِي حَتَّى أُحَقِّقَ أُمْنِيَاتِي.»\n- الْمُؤَلِّفُونَ -",
+      "figureDesc": "رأس الصفحة: امتحانات جسر النجاح. إطار: المادة: قراءة و فهم، المستوى: السنة الثانية، اختبار نهاية الثلاثي الثاني عدد 5، الاسم، اللقب، القسم.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p011_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبُطُ بِسَهْمٍ :",
+      "body": "لَمَحَتِ الْبِنْتُ  ●  زَهْرَةٌ / نَمْلَةٌ / نَحْلَةٌ  (المعيار: معـ2أ ؛ 0.5 لكل عنصر)",
+      "figureDesc": "عمود يمين: «لَمَحَتِ الْبِنْتُ ●» ؛ عمود يسار ثلاث نقاط: زَهْرَةٌ، نَمْلَةٌ، نَحْلَةٌ ليربط بينها بسهم. مربع للتقييم (معـ2أ).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p011_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ جُمْلَةً مُنَاسِبَةً تَدْعَمُ إِجَابَتِي :",
+      "body": "سطر منقّط للإجابة (0.5 نقطة) (المعيار: معـ2ج)",
+      "figureDesc": "سطر منقط ومربع تقييم.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p011_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْتُبُ فِي الْجَدْوَلِ الشَّخْصِيَّةَ الْمُنَاسِبَةَ بِالرُّجُوعِ إِلَى النَّصِّ :",
+      "body": "الاِعْتِمَادُ عَلَى النَّفْسِ فِي جَمْعِ الْغِذَاءِ.\nحُبُّ مُطَالَعَةِ الْكُتُبِ.\nالإِعْجَابُ بِعَمَلِ النَّمْلَةِ.\n(0.5 نقطة لكل سطر) (المعيار: معـ2أ)",
+      "figureDesc": "جدول من عمودين: يمين الصفات الثلاث، يسار نقاط منقطة لكتابة الشخصية المناسبة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p011_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُرَتِّبُ الأَحْدَاثَ حَسَبَ وُقُوعِهَا فِي النَّصِّ.",
+      "body": "* الْوُصُولُ إِلَى الْجُحْرِ.\n* دَفْعُ حَبَّةِ الْقَمْحِ.\n* اِبْتِسَامُ الْبِنْتِ.\n(0.5 نقطة لكل عنصر) (المعيار: معـ2أ)",
+      "figureDesc": "ثلاثة مربعات فارغة بجانب الأحداث لكتابة الترتيب، وثلاثة مربعات تقييم. رقم الصفحة المطبوع: 10.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "evaluations_toutes_matieres_p011_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u1",
+    "confidence": 0.23
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de deuxième trimestre (اختبار نهاية الثلاثي الثاني عدد 5) en compréhension de lecture, qui couvre l'ensemble du trimestre et non un chapitre précis ; aucun chapitre ne correspond donc exactement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de lecture narrative",
+    "skill": "Comprendre un court texte narratif en repérant les personnages, en justifiant par une phrase du texte et en ordonnant les événements.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "texte narratif",
+      "ordre des événements",
+      "personnages",
+      "prélèvement d'indices",
+      "fourmi"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un court texte de la vie quotidienne (une fillette observant une fourmi) sert de support à quatre consignes graduées : relier, justifier par une phrase du texte, remplir un tableau de personnages et ordonner des événements, avec un barème de 0,5 point par item.",
+    "themeGroup": "Compréhension: le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«نَمْلَةً سَوْدَاءَ»: l'image affiche «نَـمْلَةٌ سَوْدَاءُ» (nominatif, tanwin damma / damma) et non «نَمْلَةً سَوْدَاءَ»"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«وَأُخْرَى»: l'image affiche «وَأُخْرَى» ; la transcription est correcte mais «أَمَامَهَا» est bien là, rien à corriger – seule la ponctuation/vocalisation de «تَدُورُ» est conforme"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«بِغَنِيمَتِهَا» et «لَمْ تَيْأَسِ»: conformes ; en revanche «الاِعْتِمَادُ» est écrit «الاِ» alors que l'image montre «الْاِعْتِمَادُ» (sukun sur le lam)"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis: «امْتِحَانَاتُ جِسْرِ النَّجَاحِ», «الْمَادَّةُ: قِرَاءَةٌ وَفَهْمٌ», «الْمُسْتَوَى: السَّنَةُ الثَّانِيَةُ», «اخْتِبَارُ نِهَايَةِ الثُّلَاثِيِّ الثَّانِي عَدَد: 5», champs الاسم/اللقب/القسم, numéro de page 10"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases de réponse (carrés d'ordonnancement, cases de critères) et les colonnes «المعايير» / «النقاط المسندة» ne sont pas transcrites fidèlement; barème 0.5 par ligne indiqué seulement de façon résumée"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Dans l'exercice 3, le tableau a deux colonnes (lignes pointillées à gauche pour la réponse); la transcription ne le précise pas. Aussi l'exercice 2 a le barème 0.5 sans mention du critère «معـ2ج» exact sur l'image (présent) – OK"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

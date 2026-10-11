@@ -1,0 +1,110 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 45,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Visite à un ami alité (d'après Maurice Genevoix)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Visite à un ami alité\nPatrick est dans sa chambre, à l'hôpital, étendu confortablement sur son lit. Michel, son camarade de classe, est assis à son chevet, un livre à la main.\n- Michel.\n- Oui, Patrick.\n- Écoute : il ne faut pas te croire obligé de me rendre visite tous les jeudis. Si tu en as envie, tu peux aller jouer ou te promener avec les autres. Tu sais, je ne m'ennuierai pas tout seul ! J'ai mes livres, la télévision, mes jeux vidéo...\n- Non, non, je préfère passer mon après-midi du jeudi avec toi, répond Michel avec délicatesse.\nLes deux amis continuent à bavarder. Michel en revient toujours à l'accident. Et Patrick, de son côté, ne parle que de leurs camarades de classe, de leurs travaux, de leur maître. Il veut les rejoindre le plus tôt possible.\n- Aide-moi à marcher. Tu vas voir, j'ai fait des progrès.\n- Tu n'as pas peur de te faire mal ? Et... si tu glissais sur le parquet ?\n- Pas de danger ! Je n'appuierai pratiquement pas sur mon pied.\nLes deux enfants font le tour de la chambre. Michel est très fier d'offrir son épaule à son ami.\n- C'est assez, Patrick, reviens t'allonger.\nMichel aide encore Patrick à s'installer sur la chaise roulante.\n« Quand tu t'en iras, dit Patrick, n'oublie pas mon cahier de devoirs. »\nD'après Maurice Genevoix.",
+      "figureDesc": "Texte encadré dans un cadre aux coins arrondis ; en-tête « Sagesse », « Lecture - Compréhension », « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p045_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-1-a",
+      "instruction": "Compréhension : Réponds par « oui » ou « non » :",
+      "body": "- Patrick est à l'hôpital parce qu'il souffre d'une forte angine. ................",
+      "figureDesc": "Case arrondie en pointillés pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p045_i2",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B-1-b",
+      "instruction": "Relève, dans le texte, la phrase qui le montre :",
+      "body": "...............................................................",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p045_i3",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.28
+  },
+  "topicSubject": "Français",
+  "topicReason": "Il s'agit d'une lecture-compréhension en français, un texte dialogué sur la visite à un ami malade, qui évoque l'amitié et la solidarité (Module 3 : dialogues, accepter les autres) ; le Module 4 (entraide) ou le Module 6 (santé) sont aussi envisageables, donc la correspondance reste incertaine.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    123
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte dialogué",
+    "skill": "Comprendre un dialogue en relevant des informations explicites et justifier ses réponses par des phrases du texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "dialogue",
+      "hôpital",
+      "amitié",
+      "justification"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation de visite à un camarade malade, support à un dialogue, avec le format « réponds par oui ou non puis relève la phrase du texte qui le prouve », réutilisable avec d'autres contextes de la vie quotidienne.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.96,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : « Lecture - Compréhension », « Sagesse », « 6 ème année de base » ; le pied de page (« Lire et s'exprimer », « 44 ») est également absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est fusionné dans l'étiquette de l'exercice B-1-a, et la numérotation « 1) a- » est omise. Le « A) » est transcrit « [A] »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.96
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,373 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 58,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "محطّة تقييميّة (الوحدة 5) – عمليات على الأعداد العشرية وقياس الأطوال والكتل والسعات والزمن (الصفحة تتعلق في الواقع بالرياضيات وليس باللغة العربية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "[illisible] فؤاد وأشرف عملية حسابية وعرضا النتيجة على والديهما.",
+      "body": "فُؤاد: 212,97 كغ + 3,8703 ق = 5,89 ق.\nأَشْرَف: 7307,5 ل - 45,185 هل = 27,9 هل.",
+      "figureDesc": "جدول من سطرين يحتوي على عمليتي فؤاد وأشرف.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p058_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-1",
+      "instruction": "تَأَكَّدْ مِنْ كُلِّ إِجَابَةٍ وَأَصْلِحِ الخَطَأَ إِنْ وُجِدَ.",
+      "body": "سطران منقّطان للإجابة. (معيار التقييم: معـ 2)",
+      "figureDesc": "خانتان لتنقيط المعيار «معـ 2» على الهامش.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p058_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-2",
+      "instruction": "رَتِّبْ أَعْدَادَ كُلِّ عَمَلِيَّةٍ بَعْدَ إِصْلاحِ الخَطَأِ مِنَ الأَصْغَرِ إِلَى الأَكْبَرِ.",
+      "body": "سطران منقّطان للإجابة. (معيار التقييم: معـ 5)",
+      "figureDesc": "خانة تنقيط «معـ 5» على الهامش.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p058_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2",
+      "instruction": "[illisible] فُؤَادًا وَأَشْرَف بِمَجْمُوعَةٍ مِنَ العَمَلِيَّاتِ نَطْلُبُ مِنْهَا إِجْرَاءَهَا وَتَرْتِيبَ الأَعْدَادِ المُكَوَّنَةِ مِنْهَا.",
+      "body": "",
+      "figureDesc": "إطار ملوّن بخلفية مشوّشة.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p058_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-1",
+      "instruction": "سَاعِدْ فُؤَادًا وَأَشْرَفَ عَلَى إِجْرَاءِ هَذِهِ العَمَلِيَّاتِ.",
+      "body": "7,576 كم + (25,9 هم - 14,08 هم) = ................\n61,4 ط - 22,85 ق = ................\n38,07 هل - (8,3 دكل + 466 ل) = ................",
+      "figureDesc": "معايير التقييم على الهامش: معـ 2 (أمام العملية الأولى) و معـ 3 (أمام العملية الثالثة).",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p058_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-2",
+      "instruction": "رَتِّبِ الأَعْدَادَ المُكَوَّنَةَ لِكُلِّ عَمَلِيَّةٍ مِنَ الأَكْبَرِ إِلَى الأَصْغَرِ.",
+      "body": "سطران منقّطان للإجابة. (معيار التقييم: معـ 1)",
+      "figureDesc": "خانة تنقيط «معـ 1» على الهامش.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p058_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 3",
+      "instruction": "انتقل الطفلان من التصرّف في الأعداد العشرية إلى مجموعة الأعداد التي تقيس الزمن فأجريا العمليات التالية.",
+      "body": "7 س و 13 دق و 6 ث + ................ = 1 يوم.",
+      "figureDesc": "معيار التقييم على الهامش: معـ 2. رقم الصفحة 59. عنوان الصفحة: «محطّة تقييمية».",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p058_i7"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.28
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation (محطة تقييمية) sur les opérations d'addition et de soustraction de nombres décimaux, les mesures de longueur, de masse et de capacité et le calcul sur les durées (heures, minutes, secondes), ce qui correspond à la Période 2 (décimaux, addition/soustraction et temps).",
+  "linkFlags": [
+    "low_ocr_confidence"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Opérations sur décimaux et mesures",
+    "skill": "Effectuer et vérifier des opérations sur des nombres décimaux avec conversion d'unités (longueur, masse, capacité, durée) puis ordonner les résultats.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "conversion d'unités",
+      "longueurs masses capacités",
+      "durées",
+      "comparaison et rangement",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Mise en scène de deux élèves dont il faut vérifier et corriger les calculs avec unités mixtes, suivie d'un rangement des nombres et d'un complément de durée pour atteindre un jour.",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Dans le [السند 2], « قام (رتّب) ولدينا فؤادًا وأشرف بمجموعة... » est une invention/déformation. Le texte visible est plutôt « مَثَّلَ... فُؤَادًا وَأَشْرَف بِمَجْمُوعَةٍ مِنَ العَمَلِيَّاتِ نَطْلُبُ مِنْهَا إِجْرَاءَهَا وَتَرْتِيبَ الأَعْدَادِ المُتَحَصَّلِ عَلَيْهَا » (début partiellement illisible)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans la phrase du [السند 3], « انتقل الطفلان من التصرّف... فأجريا العمليات التالية » : le texte est partiellement illisible dans l'image ; la formulation « فأجريا » est incertaine (« فأجريا » semble acceptable, mais « العمليات التالية » est à vérifier)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans le [السند 1], la partie illisible est supposée : l'image montre plutôt « قام فؤاد وأشرف بعملية حسابية وعرضا النتيجة على والديهما », et non « أنجز فؤاد وأشرف عملية حسابية »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les critères d'évaluation (معـ 2, معـ 5, معـ 2, معـ 3, معـ 1, معـ 2) ne sont pas tous attribués correctement : pour 2-1 les marges montrent معـ 2 / معـ 3 sur les opérations, et معـ 2 pour le السند 3, qui ne sont pas transcrits."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel incohérent : ajouté aux consignes mais « الخَطَإِ » est écrit « الخَطَا » dans l'image (الخَطَأَ en 1-1) ; « إِجَابَةٍ » manquant dans 1-1 (« كُلِّ إِجَابَةٍ » au lieu de « كُلِّ إِجَابَةٍ » correct mais « عَمَلِيَّةٍ » à vérifier)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 59 et le titre « محطّة تقييمية » ne sont pas transcrits."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "[السند 2] : « قام (رتّب) ولدينا فؤادًا وأشرف بمجموعة… » est une déformation. Le début de la phrase est illisible, et le mot « رتّب ولدينا » n'est pas confirmé par l'image. Le passage lisible est « … فُؤَادًا وَأَشْرَف بِمَجْمُوعَةٍ مِنَ العَمَلِيَّاتِ نَطْلُبُ مِنْهَا إِجْرَاءَهَا وَتَرْتِيبَ الأَعْدَادِ … مِنْهَا ». La fin de la phrase n'est pas non plus certaine : la proposition « المتحصَّل عليها » du contrôle n'est pas clairement visible. La fin de la deuxième ligne ressemble à « المُكَوَّنَةِ مِنْهَا » (« المُكَوَّنَةِ » est utilisé dans 2-2)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "[السند 1] : le verbe « أنجز » est une supposition. Le début de la consigne est masqué par l'arrière-plan. Seule la fin est lisible : « … فؤاد وأشرف عملية حسابية وعرضا النتيجة على والديهما ». Le verbe « قام » proposé par le contrôle n'est pas visible non plus : il faut garder [illisible]."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "[1-2] : « الخَطَإِ » ne correspond pas à l'image, qui montre « الخَطَأِ / الخَطَا » après « إِصْلاحِ ». La forme avec hamza sur alif et kasra finale est préférable."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "[illisible] فؤاد وأشرف عملية حسابية وعرضا النتيجة على والديهما.",
+      "body": "فُؤاد: 212,97 كغ + 3,8703 ق = 5,89 ق.\nأَشْرَف: 7307,5 ل - 45,185 هل = 27,9 هل.",
+      "figureDesc": "جدول من سطرين يحتوي على عمليتي فؤاد وأشرف.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p058_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-1",
+      "instruction": "تَأَكَّدْ مِنْ كُلِّ إِجَابَةٍ وَأَصْلِحِ الخَطَأَ إِنْ وُجِدَ.",
+      "body": "سطران منقّطان للإجابة. (معيار التقييم: معـ 2)",
+      "figureDesc": "خانتان لتنقيط المعيار «معـ 2» على الهامش.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p058_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-2",
+      "instruction": "رَتِّبْ أَعْدَادَ كُلِّ عَمَلِيَّةٍ بَعْدَ إِصْلاحِ الخَطَأِ مِنَ الأَصْغَرِ إِلَى الأَكْبَرِ.",
+      "body": "سطران منقّطان للإجابة. (معيار التقييم: معـ 5)",
+      "figureDesc": "خانة تنقيط «معـ 5» على الهامش.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p058_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2",
+      "instruction": "[illisible] فُؤَادًا وَأَشْرَف بِمَجْمُوعَةٍ مِنَ العَمَلِيَّاتِ نَطْلُبُ مِنْهَا إِجْرَاءَهَا وَتَرْتِيبَ الأَعْدَادِ المُكَوَّنَةِ مِنْهَا.",
+      "body": "",
+      "figureDesc": "إطار ملوّن بخلفية مشوّشة.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p058_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-1",
+      "instruction": "سَاعِدْ فُؤَادًا وَأَشْرَفَ عَلَى إِجْرَاءِ هَذِهِ العَمَلِيَّاتِ.",
+      "body": "7,576 كم + (25,9 هم - 14,08 هم) = ................\n61,4 ط - 22,85 ق = ................\n38,07 هل - (8,3 دكل + 466 ل) = ................",
+      "figureDesc": "معايير التقييم على الهامش: معـ 2 (أمام العملية الأولى) و معـ 3 (أمام العملية الثالثة).",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p058_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-2",
+      "instruction": "رَتِّبِ الأَعْدَادَ المُكَوَّنَةَ لِكُلِّ عَمَلِيَّةٍ مِنَ الأَكْبَرِ إِلَى الأَصْغَرِ.",
+      "body": "سطران منقّطان للإجابة. (معيار التقييم: معـ 1)",
+      "figureDesc": "خانة تنقيط «معـ 1» على الهامش.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p058_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 3",
+      "instruction": "انتقل الطفلان من التصرّف في الأعداد العشرية إلى مجموعة الأعداد التي تقيس الزمن فأجريا العمليات التالية.",
+      "body": "7 س و 13 دق و 6 ث + ................ = 1 يوم.",
+      "figureDesc": "معيار التقييم على الهامش: معـ 2. رقم الصفحة 59. عنوان الصفحة: «محطّة تقييمية».",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p058_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "السند 1",
+      "instruction": "(الجزء الأول من نص السند غير مقروء بوضوح بسبب الخلفية) ... أنجز فؤاد وأشرف عملية حسابية وعرضا النتيجة على والديهما.",
+      "body": "فُؤاد: 212,97 كغ + 3,8703 ق = 5,89 ق.\nأَشْرَف: 7307,5 ل - 45,185 هل = 27,9 هل.",
+      "figureDesc": "جدول من سطرين يحتوي على عمليتي فؤاد وأشرف.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "al_ahram_5eme_complet_p058_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-1",
+      "instruction": "تَأَكَّدْ مِنْ كُلِّ إِجَابَةٍ وَأَصْلِحِ الخَطَأَ إِنْ وُجِدَ.",
+      "body": "سطران منقّطان للإجابة. (معيار التقييم: معـ 2)",
+      "figureDesc": "خانتان لتنقيط المعيار «معـ 2» على الهامش.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p058_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-2",
+      "instruction": "رَتِّبْ أَعْدَادَ كُلِّ عَمَلِيَّةٍ بَعْدَ إِصْلاحِ الخَطَإِ مِنَ الأَصْغَرِ إِلَى الأَكْبَرِ.",
+      "body": "سطران منقّطان للإجابة. (معيار التقييم: معـ 5)",
+      "figureDesc": "خانة تنقيط «معـ 5» على الهامش.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p058_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2",
+      "instruction": "قام (رتّب) ولدينا فؤادًا وأشرف بمجموعة من العمليات تطلب منّا إجراءها وترتيب الأعداد المتحصّل عليها. (النص جزئيًا غير مقروء)",
+      "body": "",
+      "figureDesc": "إطار ملوّن بخلفية مشوّشة.",
+      "answer": null,
+      "confidence": 0.55,
+      "id": "al_ahram_5eme_complet_p058_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-1",
+      "instruction": "سَاعِدْ فُؤَادًا وَأَشْرَفَ عَلَى إِجْرَاءِ هَذِهِ العَمَلِيَّاتِ.",
+      "body": "7,576 كم + (25,9 هم - 14,08 هم) = ................\n61,4 ط - 22,85 ق = ................\n38,07 هل - (8,3 دكل + 466 ل) = ................",
+      "figureDesc": "معايير التقييم على الهامش: معـ 2 و معـ 3.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p058_i5",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-2",
+      "instruction": "رَتِّبِ الأَعْدَادَ المُكَوِّنَةَ لِكُلِّ عَمَلِيَّةٍ مِنَ الأَكْبَرِ إِلَى الأَصْغَرِ.",
+      "body": "سطران منقّطان للإجابة. (معيار التقييم: معـ 1)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p058_i6",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 3",
+      "instruction": "انتقل الطفلان من التصرّف في الأعداد العشرية إلى مجموعة الأعداد التي تقيس الزمن فأجريا العمليات التالية. (النص جزئيًا غير مقروء)",
+      "body": "7 س و 13 دق و 6 ث + ................ = 1 يوم.",
+      "figureDesc": "معيار التقييم على الهامش: معـ 2. رقم الصفحة 59.",
+      "answer": null,
+      "confidence": 0.65,
+      "id": "al_ahram_5eme_complet_p058_i7",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

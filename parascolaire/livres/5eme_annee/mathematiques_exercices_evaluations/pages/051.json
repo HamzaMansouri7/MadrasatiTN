@@ -1,0 +1,223 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 51,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "ترتيب الأعداد العشرية ومقارنتها (الرياضيات) – تمارين تطبيقية: معدلات التلاميذ، أطوال الجدار المنجز، مردود المزروعات",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "رَتِّبِ التَّلاَمِيذَ حَسَبَ مُعَدَّلاَتِ الاِخْتِبَارِ مِنَ الأَحْسَنِ إِلَى الأَقَلِّ.",
+      "body": "أَجْرَى مُعَلِّمٌ لِتَلاَمِيذِهِ اِخْتِبَارًا وَوَعَدَهُمْ بِحَوَائِزَ لِأَحْسَنِ 3 مُعَدَّلاَتٍ، وَهَذِهِ أَحْسَنُ الْمُعَدَّلاَتِ الَّتِي تَحَصَّلَ عَلَيْهَا التَّلاَمِيذُ. ناجح: 18,47 – فائز: 16,90 – ممتاز: 16,09 – علام: 18,74 – عادل: 17,48 – راوي: 17,84",
+      "figureDesc": "جدول من 6 أعمدة يحوي أسماء التلاميذ ومعدلاتهم، تحته جدول فارغ من سطرين و6 أعمدة للإجابة (الأسماء والمعدلات مرتبة).",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p051_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "مَاهُوَ أَطْوَلُ جُزْءٍ مُنْجَزٍ وَمَتَى تَمَّ إِنْجَازُهُ؟ / مَاهُوَ أَقْصَرُ جُزْءٍ مُنْجَزٍ وَمَتَى تَمَّ إِنْجَازُهُ؟ / رَتِّبِ الأَيَّامَ حَسَبَ الأَطْوَالِ الْمُنْجَزَةِ.",
+      "body": "بَنَى عَامِلٌ جِدَارًا عَلَى مَدَى 6 أَيَّامٍ فَكَانَتِ الأَطْوَالُ الْمُنْجَزَةُ كَمَا هُوَ مُبَيَّنٌ فِي الْكَشْفِ جَانِبًا: الإثنين: 11,570 م – الثلاثاء: 157,5 دسم – الأربعاء: 15,8 م – الخميس: 1,485 دكم – الجمعة: 0,126 هم – السبت: 13,5 م",
+      "figureDesc": "جدول بعمودين: اليوم / طول الجدار المنجز (بوحدات مختلفة: م، دسم، دكم، هم)؛ تحت كل سؤال سطر منقط للإجابة.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p051_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "لاَحِظِ الْجَدْوَلَ ثُمَّ أَجِبْ: أ– رَتِّبِ الْمَزْرُوعَاتِ حَسَبَ كُتْلَةِ مَنْتُوجِهَا مِنَ الأَقَلِّ إِلَى الأَكْثَرِ. ب– رَتِّبِ الْمَزْرُوعَاتِ حَسَبَ مَدْخُولِهَا لِلْفَلاَّحِ مِنَ الأَكْثَرِ إِلَى الأَقَلِّ.",
+      "body": "قَسَّمَ فَلاَّحٌ أَرْضًا لَهُ إِلَى 5 مَنَاطِقَ مُتَقَايِسَةِ الْمِسَاحَةِ وَزَرَعَ فِيهَا أَصْنَافًا مُخْتَلِفَةً مِنَ الْمَزْرُوعَاتِ ثُمَّ بَاعَ الْمَنْتُوجَ. المزروعات: [illisible] – [illisible] – [illisible] – [illisible] – [illisible]. كتلة المنتوج: 1,450 ط – 2,7 ط – 4,20 ط – 3,6 ط – 1,490 ط. ثمن بيع 1 كغ بالمي: 800 – 400 – 450 – 640 – 300. ثمن بيع كامل المنتوج بالد: (فارغ)",
+      "figureDesc": "جدول من 5 أعمدة للمزروعات (أسماؤها غير مقروءة في الصورة) وثلاثة أسطر: كتلة المنتوج، ثمن بيع 1 كغ، ثمن بيع كامل المنتوج (السطر الأخير فارغ)؛ سطران منقطان للإجابة.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_evaluations_p051_i3"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.22
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur le rangement et la comparaison de nombres décimaux (moyennes, longueurs avec conversions d'unités, masses et prix), ce qui relève de la Période 2 sur les nombres décimaux, même si le titre ne mentionne pas explicitement le rangement.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Ordre et comparaison des décimaux",
+    "skill": "Comparer et ranger des nombres décimaux, y compris après conversion d'unités de longueur et de masse.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "comparaison",
+      "rangement",
+      "conversion d'unités",
+      "longueurs",
+      "masses"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Trois situations concrètes à réutiliser : classement de moyennes d'élèves avec des chiffres proches, longueurs de mur construites chaque jour en unités différentes à convertir avant de comparer, et production de cultures avec prix au kilo à ranger selon la masse puis le revenu.",
+    "themeGroup": "Nombres décimaux : notions et comparaison"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 8 : la consigne 'رَتِّبِ التَّلاَمِيذَ…' est placée avant l'énoncé ; dans l'image l'énoncé 'أَجْرَى مُعَلِّمٌ…' et le tableau viennent d'abord, puis la consigne. Même inversion pour 9 et 10 (questions avant l'énoncé)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 8 : les noms des élèves sont transcrits de façon incomplète. 'فائز' et 'ناجح' sont donnés sans les allongements et les lettres de l'image ('فــائز', 'نــاجح'), ce qui est mineur. Les cases de réponse du tableau (2 lignes × 6 colonnes) ne sont pas signalées."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 10 : 'مَنْتُوجِهَا' / 'الْمَنْتُوجَ' sont écrits avec 'ت' correct, mais l'image montre 'المنتوج' ; vérifier la graphie. L'en-tête du tableau (المزروعات : جلبان، بطاطا، جزر/…, قمح…) est absent de la transcription, donc les noms des cultures manquent."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 10 : la ligne d'en-tête des cultures (nom de chaque culture) n'est pas transcrite ; les valeurs de masse et de prix ne sont donc associées à aucune culture."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 10 : 'بالمي(لِّيم)' et 'بالد(ينار)' sont des expansions inventées ; l'image affiche 'بالمي' et 'بالد' (texte tronqué). Aussi 'ثمن بيع 1 كغ بالمي' est sans tashkeel dans l'image, mais la transcription ajoute 'كتلة المنتوج' correctement."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 9 : les en-têtes du tableau ('اليوم' et 'طول الجدار المنجز') sont omis. Il y a aussi des puces '*' devant les questions non signalées."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 8 : l'ordre des élèves est inversé par rapport à l'image (de droite à gauche : ناجح 18,47, فائز 16,90, ممتاز 16,09, علام 18,74, عادل 17,48, راوي 17,84) ; ce sont bien les valeurs, donc OK. Aucune erreur de chiffre détectée."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "texte inventé",
+        "severity": "minor",
+        "detail": "Exercice 10 : « بالمي(لِّيم) » et « بالد(ينار) » sont des expansions ajoutées. L'image affiche seulement « بالمي » et « بالد » (texte tronqué)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 10 : la ligne d'en-tête du tableau (المزروعات et les noms des 5 cultures) n'est pas transcrite. Elle est illisible dans le scan (fond sombre), donc à marquer [illisible] pour que les valeurs restent associées à 5 colonnes."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "رَتِّبِ التَّلاَمِيذَ حَسَبَ مُعَدَّلاَتِ الاِخْتِبَارِ مِنَ الأَحْسَنِ إِلَى الأَقَلِّ.",
+      "body": "أَجْرَى مُعَلِّمٌ لِتَلاَمِيذِهِ اِخْتِبَارًا وَوَعَدَهُمْ بِحَوَائِزَ لِأَحْسَنِ 3 مُعَدَّلاَتٍ، وَهَذِهِ أَحْسَنُ الْمُعَدَّلاَتِ الَّتِي تَحَصَّلَ عَلَيْهَا التَّلاَمِيذُ. ناجح: 18,47 – فائز: 16,90 – ممتاز: 16,09 – علام: 18,74 – عادل: 17,48 – راوي: 17,84",
+      "figureDesc": "جدول من 6 أعمدة يحوي أسماء التلاميذ ومعدلاتهم، تحته جدول فارغ من سطرين و6 أعمدة للإجابة (الأسماء والمعدلات مرتبة).",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p051_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "مَاهُوَ أَطْوَلُ جُزْءٍ مُنْجَزٍ وَمَتَى تَمَّ إِنْجَازُهُ؟ / مَاهُوَ أَقْصَرُ جُزْءٍ مُنْجَزٍ وَمَتَى تَمَّ إِنْجَازُهُ؟ / رَتِّبِ الأَيَّامَ حَسَبَ الأَطْوَالِ الْمُنْجَزَةِ.",
+      "body": "بَنَى عَامِلٌ جِدَارًا عَلَى مَدَى 6 أَيَّامٍ فَكَانَتِ الأَطْوَالُ الْمُنْجَزَةُ كَمَا هُوَ مُبَيَّنٌ فِي الْكَشْفِ جَانِبًا: الإثنين: 11,570 م – الثلاثاء: 157,5 دسم – الأربعاء: 15,8 م – الخميس: 1,485 دكم – الجمعة: 0,126 هم – السبت: 13,5 م",
+      "figureDesc": "جدول بعمودين: اليوم / طول الجدار المنجز (بوحدات مختلفة: م، دسم، دكم، هم)؛ تحت كل سؤال سطر منقط للإجابة.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p051_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "لاَحِظِ الْجَدْوَلَ ثُمَّ أَجِبْ: أ– رَتِّبِ الْمَزْرُوعَاتِ حَسَبَ كُتْلَةِ مَنْتُوجِهَا مِنَ الأَقَلِّ إِلَى الأَكْثَرِ. ب– رَتِّبِ الْمَزْرُوعَاتِ حَسَبَ مَدْخُولِهَا لِلْفَلاَّحِ مِنَ الأَكْثَرِ إِلَى الأَقَلِّ.",
+      "body": "قَسَّمَ فَلاَّحٌ أَرْضًا لَهُ إِلَى 5 مَنَاطِقَ مُتَقَايِسَةِ الْمِسَاحَةِ وَزَرَعَ فِيهَا أَصْنَافًا مُخْتَلِفَةً مِنَ الْمَزْرُوعَاتِ ثُمَّ بَاعَ الْمَنْتُوجَ. المزروعات: [illisible] – [illisible] – [illisible] – [illisible] – [illisible]. كتلة المنتوج: 1,450 ط – 2,7 ط – 4,20 ط – 3,6 ط – 1,490 ط. ثمن بيع 1 كغ بالمي: 800 – 400 – 450 – 640 – 300. ثمن بيع كامل المنتوج بالد: (فارغ)",
+      "figureDesc": "جدول من 5 أعمدة للمزروعات (أسماؤها غير مقروءة في الصورة) وثلاثة أسطر: كتلة المنتوج، ثمن بيع 1 كغ، ثمن بيع كامل المنتوج (السطر الأخير فارغ)؛ سطران منقطان للإجابة.",
+      "answer": null,
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_ahram_5eme_complet_p051_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "رَتِّبِ التَّلاَمِيذَ حَسَبَ مُعَدَّلاَتِ الاِخْتِبَارِ مِنَ الأَحْسَنِ إِلَى الأَقَلِّ.",
+      "body": "أَجْرَى مُعَلِّمٌ لِتَلاَمِيذِهِ اِخْتِبَارًا وَوَعَدَهُمْ بِحَوَائِزَ لِأَحْسَنِ 3 مُعَدَّلاَتٍ، وَهَذِهِ أَحْسَنُ الْمُعَدَّلاَتِ الَّتِي تَحَصَّلَ عَلَيْهَا التَّلاَمِيذُ. ناجح: 18,47 – فائز: 16,90 – ممتاز: 16,09 – علام: 18,74 – عادل: 17,48 – راوي: 17,84",
+      "figureDesc": "جدول من 6 أعمدة يحوي أسماء التلاميذ ومعدلاتهم، تحته جدول فارغ من سطرين و6 أعمدة للإجابة (الأسماء والمعدلات مرتبة).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p051_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "مَاهُوَ أَطْوَلُ جُزْءٍ مُنْجَزٍ وَمَتَى تَمَّ إِنْجَازُهُ؟ / مَاهُوَ أَقْصَرُ جُزْءٍ مُنْجَزٍ وَمَتَى تَمَّ إِنْجَازُهُ؟ / رَتِّبِ الأَيَّامَ حَسَبَ الأَطْوَالِ الْمُنْجَزَةِ.",
+      "body": "بَنَى عَامِلٌ جِدَارًا عَلَى مَدَى 6 أَيَّامٍ فَكَانَتِ الأَطْوَالُ الْمُنْجَزَةُ كَمَا هُوَ مُبَيَّنٌ فِي الْكَشْفِ جَانِبًا: الإثنين: 11,570 م – الثلاثاء: 157,5 دسم – الأربعاء: 15,8 م – الخميس: 1,485 دكم – الجمعة: 0,126 هم – السبت: 13,5 م",
+      "figureDesc": "جدول بعمودين: اليوم / طول الجدار المنجز (بوحدات مختلفة: م، دسم، دكم، هم)؛ تحت كل سؤال سطر منقط للإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p051_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "لاَحِظِ الْجَدْوَلَ ثُمَّ أَجِبْ: أ– رَتِّبِ الْمَزْرُوعَاتِ حَسَبَ كُتْلَةِ مَنْتُوجِهَا مِنَ الأَقَلِّ إِلَى الأَكْثَرِ. ب– رَتِّبِ الْمَزْرُوعَاتِ حَسَبَ مَدْخُولِهَا لِلْفَلاَّحِ مِنَ الأَكْثَرِ إِلَى الأَقَلِّ.",
+      "body": "قَسَّمَ فَلاَّحٌ أَرْضًا لَهُ إِلَى 5 مَنَاطِقَ مُتَقَايِسَةِ الْمِسَاحَةِ وَزَرَعَ فِيهَا أَصْنَافًا مُخْتَلِفَةً مِنَ الْمَزْرُوعَاتِ ثُمَّ بَاعَ الْمَنْتُوجَ. كتلة المنتوج: 1,450 ط – 2,7 ط – 4,20 ط – 3,6 ط – 1,490 ط. ثمن بيع 1 كغ بالمي(لِّيم): 800 – 400 – 450 – 640 – 300. ثمن بيع كامل المنتوج بالد(ينار): (فارغ)",
+      "figureDesc": "جدول من 5 أعمدة للمزروعات (أسماؤها غير واضحة في الصورة) وثلاثة أسطر: كتلة المنتوج، ثمن بيع 1 كغ، ثمن بيع كامل المنتوج (السطر الأخير فارغ)؛ سطران منقطان للإجابة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p051_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

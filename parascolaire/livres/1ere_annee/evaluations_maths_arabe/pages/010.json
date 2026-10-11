@@ -1,0 +1,164 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 10,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قراءة وفهم : صِحَّتِي وَسَلَامَتِي - تَحْدِيدُ أَحْدَاثِ النَّصِّ وَشَخْصِيَّاتِهِ وَالأَزْمِنَةِ وَالأَمْكِنَةِ",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "... بَعْدَ دَقَائِقَ، وَقَفَتْ فَتِيحَةُ قُدَّامَ الْمَدْرَسَةِ، تَتَرَقَّبُ مَوْعِدَ الدُّخُولِ. دَقَّ الْمُدِيرُ الْجَرَسَ، فَفَتَحَ الْمُنَظِّفُ الْبَابَ، دَخَلَ التَّلَامِيذُ إِلَى السَّاحَةِ. فَإِذَا هِيَ نَظِيفَةٌ، تُزَيِّنُهَا أَزْهَارٌ فَائِحَةٌ، وَأَشْجَارٌ عَالِيَةٌ، أَمَّا جُدْرَانُهَا فَبَيْضَاءُ نَاصِعَةٌ...\nلَا يَعْبَثُ التَّلَامِيذُ بِالأَزْهَارِ، وَلَا يُلْقُونَ الْأَوْرَاقَ فِي السَّاحَةِ، وَيَصْطَفُّونَ فِي نِظَامٍ أَمَامَ الأَقْسَامِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p010_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبُطُ بِسَهْمٍ :",
+      "body": "الْمُدِيرُ •          • فَتَحَ الْبَابَ.\nفَتِيحَةُ •          • دَقَّ الْجَرَسَ.\nالْمُنَظِّفُ •         • تَتَرَقَّبُ أَمَامَ الْمَدْرَسَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p010_i2",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَرْبُطُ الصُّورَةَ بِالْجُمْلَةِ الْمُنَاسِبَةِ لَهَا.",
+      "body": "• وَقَفَ التَّلَامِيذُ قُدَّامَ الْمَدْرَسَةِ.\n• دَخَلَ التَّلَامِيذُ السَّاحَةَ.\n• وَقَفَ التَّلَامِيذُ فِي صَفٍّ أَمَامَ الْقِسْمِ.",
+      "figureDesc": "رسم لتلاميذ يقفون في صف منتظم أمام باب القسم في ساحة المدرسة ويشرف عليهم المعلم.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p010_i3",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُرَتِّبُ الْأَحْدَاثَ بِوَضْعِ الْأَعْدَادِ مِنْ 1 إِلَى 3.",
+      "body": "[ ] فَتَحَ الْمُنَظِّفُ الْبَابَ.\n[ ] فَتِيحَةُ تَتَرَقَّبُ مَوْعِدَ الدُّخُولِ.\n[ ] دَقَّ الْمُدِيرُ الْجَرَسَ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p010_i4",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُعَمِّرُ الْفَرَاغَ بِالْكَلِمَةِ الْمُنَاسِبَةِ : تُرَتِّبُ - تَدْخُلُ - تَنْتَظِرُ",
+      "body": ".............................. مَوْعِدَ الدُّخُولِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p010_i5",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "ar-1-u3",
+  "topicTitle": "Unité 3 : Mon compagnon pour ma santé et ma sécurité",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u3",
+    "confidence": 0.31
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Page de lecture et compréhension en arabe sur le thème « صحتي وسلامتي » (santé et sécurité), qui correspond à l'Unité 3 « Mon compagnon pour ma santé et ma sécurité » : texte sur la propreté de l'école, avec exercices sur les personnages, les événements et les lieux.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de texte : personnages, événements, lieux",
+    "skill": "Identifier les personnages, les actions, les lieux et l'ordre chronologique des événements dans un court texte narratif lu.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "personnages",
+      "ordre des événements",
+      "école",
+      "lecture 1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une scène de rentrée à l'école (arrivée, cloche, ouverture de la porte) sert de base à quatre exercices progressifs : relier personnage et action, relier image et phrase, remettre les événements dans l'ordre et compléter une phrase avec le bon verbe. Ce schéma se transpose facilement à d'autres situations du quotidien.",
+    "themeGroup": "Personnages, lieux et événements du récit"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête de l'unité est absent : « الْوِحْدَةُ الثَّالِثَةُ : صِحَّتِي وَسَلَامَتِي », « يُحَدِّدُ أَحْدَاثَ النَّصِّ وَشَخْصِيَّاتِهِ، وَالْأَزْمِنَةَ، وَالْأَمْكِنَةَ », « الْمَقْطَعُ الْمُغْلَقُ : قـ / ـقـ / ـق / ق / قا / قو / قي », « اللُّغَةُ الْعَرَبِيَّةُ قِرَاءَةٌ وَفَهْمٌ »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "« أَسْتَثْمِرُ النَّصَّ : » (titre de la section d'exercices) est absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les éléments de marge sont absents : « السَّنَةُ 1 », « الثَّلَاثِيُّ الثَّانِي », « اللُّغَةُ الْعَرَبِيَّةُ - قِرَاءَةٌ وَفَهْمٌ », le numéro de page 11."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« الْمُنَظِّفُ » est transcrit à la place de « الْمُنَظِّفُ » (en fait مُنَظِّف dans l'image est « الْمُنَظِّفُ ») ; l'image montre « الْمُنَظِّفُ » avec la même forme dans les 3 occurrences, à vérifier ; la transcription du mot « فَتَحَ » en « فَفَتَحَ » est correcte."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَرْبُطُ » : l'image porte « أَرْبُطُ » ; « فَتَحَ الْبَابَ » : l'image écrit « فَتْحَ الْبَابِ » (sans verbe conjugué, vocalisation différente) ; « دَقَّ الْجَرَسَ » correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Vocalisation du texte : « تَتَرَقَّبُ » dans l'image est « تَتَرَقَّبُ » ; « الْمُدِيرُ » correct ; « الأَزْهَارِ » et « الأَقْسَامِ » ont une hamza avec alif sans voyelle supplémentaire, cohérent."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « فَتَحَ الْمُنَظِّفُ الْبَابَ » correspond à l'image « فَتَحَ الْمُنَظِّفُ الْبَابَ. » ; rien d'inventé détecté."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'image de l'exercice 2 (école, directeur, élèves en rang) n'est pas décrite ; le point de liaison associé à l'image n'est pas indiqué."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

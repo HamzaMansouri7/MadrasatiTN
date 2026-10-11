@@ -1,0 +1,89 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 4,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الأماكن الطبيعية (وصف الجبال والسهول) – رصيد لغوي وفقرات نموذجية للوصف",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الأماكن الطبيعية – الجبال",
+      "body": "إنما هي جبال شاهقة تخترق قممها قلب السحاب يكسوها الصنوبر والفلين فلا ترى العين سوى الغصون والأفنان والأوراق\nجبال عملاقة شاهقة في الفضاء الواسع تبدو للناظر كأنها تلامس السماء\nجبال شامخة تكاد تفوق السحب كثيفة الأشجار صعبة التسلق\nجبال صخرية عالية ذات ذؤابات حادة ومنحدرات وعرة\nرابية عالية هادئة صامتة متوجة بشجر الصنوبر\nكان المكان رائعا وديعا يأخذ الألباب إنه غابة تعانقت أغصانها وامتد اخضرارها على مدى البصر وقد سحرت النفوس بجمالها الأخاذ حيث الجبال الشاهقة والسفوح الممراعة والأشجار الباسقة والظلال الوارفة والطيور المغردة والهواء النقي والعيون الجارية بمائها النمير",
+      "figureDesc": "نص داخل جدول، خانة بعنوان «الجبال» تحت العنوان الرئيسي «الأماكن الطبيعية»",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p004_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الأماكن الطبيعية – السهول",
+      "body": "سهل منبسط تعلوه أزهار مزدانة بمختلف الألوان الزاهية حتى وكأنه زربية من حرير\nسهول ممتدة تكسوها الخضرة حيثما التفت\nسهول طيبة بأديمها وثراها كريمة بأهلها من الفلاحين الشداد الأصليين\nسهل جميل خصب ونضير تحيط به أشجار مترامية الأطراف فوق الغابة الزاهية بأشجارها وزهورها الفواحة التي يفوح منها عطر الربيع من مسافة بعيدة جدا\nالريف العظيم بشمسه الوهاجة وظلاله الوارفة بهوائه اللافح ونسيمه الوديع بغدرانه وسواقيه الفواحة وبخوار بهائمه وأغاني فلاحيه\nوكان مرأى تلك الزهور المنتشرة على امتداد الحقول يثير في النفس البهجة\nالحشائش الخضراء تغطي الأرض كأنها بسط أخضر بديع والماء يلمع مثل الفضة وهو يجري وسط الحشائش الخضراء وزهور البنفسج والقرنفل والياسمين والفراشات الجميلة تطير كأنها زهور ملونة تنتقل في السماء والطيور تغني وتغرد أجمل الألحان\nتلك الحقول الشاسعة تكسوها النباتات فأينما وجهت نظرك لا ترى إلا الألوان الزاهية وجمال الحياة",
+      "figureDesc": "نص داخل جدول، خانة بعنوان «السهول»",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p004_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.13
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est en arabe (matière réelle : langue arabe) et propose un lexique et des paragraphes modèles pour décrire des lieux naturels (montagnes, plaines), mais aucun chapitre officiel ne porte sur la description de lieux : les unités 4 à 6 concernent la description des personnages dans le récit, ce qui ne correspond pas clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description des paysages naturels",
+    "skill": "Enrichir son vocabulaire descriptif pour rédiger un paragraphe décrivant des montagnes et des plaines.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "description",
+      "montagnes",
+      "plaines",
+      "champ lexical",
+      "paragraphe modèle",
+      "paysage"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les banques d'expressions et paragraphes modèles par type de lieu naturel peuvent servir de support à des exercices de production écrite descriptive, de texte à trous ou de classement lexical, et s'étendre à d'autres lieux (forêt, mer, désert).",
+    "themeGroup": "Description de la nature et des paysages"
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « الأماكن الطبيعية » apparaît une seule fois dans l'image mais est répété avant chaque section (« – الجبال », « – السهول ») ; la structure est un peu modifiée."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

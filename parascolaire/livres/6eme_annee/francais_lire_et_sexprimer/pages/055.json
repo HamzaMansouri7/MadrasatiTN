@@ -1,0 +1,119 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 55,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Pour garder une bonne santé (2)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Pour garder une bonne santé (2)\nLes enfants ont besoin de plus de repos que les grandes personnes. En effet, leurs corps doivent non seulement se réparer, mais aussi grandir. C'est le sommeil qui est le meilleur repos.\nLa propreté est un autre moyen d'aider notre corps à rester en bon état et à fonctionner sans maladie. Un regard dans la glace suffit à nous montrer comme nous sommes laids quand nous sommes sales. Un bain ou une douche par jour et nous gardons une peau bien claire et bien nette qui nous protège bien. Il faut aussi prendre soin de bien nous brosser les dents. Si nous laissons des débris de nourriture entre elles, la carie attaque l'émail.\nTous ceux qui ont une automobile savent qu'il faut la faire réviser de temps en temps. Le mécanicien regarde les pneus, les freins, le moteur. Il faut aussi vérifier notre corps à nous. Pour cela, nous allons voir le médecin et le dentiste. Ils savent ce qu'il faut faire pour remettre la machine en bon état de marche.\nIl faut donc travailler, jouer en plein air, se reposer, rester propre et se faire soigner pour garder une bonne santé.\nD'après Parker",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p055_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 a",
+      "instruction": "Pourquoi les enfants doivent-ils dormir plus que les grandes personnes ? (Cite deux raisons) :",
+      "body": "La première raison : ........................................\nLa deuxième raison : ........................................",
+      "figureDesc": "Lignes pointillées à compléter",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p055_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 b",
+      "instruction": "Relève, dans le texte, le détail qui le montre :",
+      "body": "........................................",
+      "figureDesc": "Lignes pointillées à compléter",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p055_i3",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.31
+  },
+  "topicSubject": "Français",
+  "topicReason": "Il s'agit d'une page de lecture-compréhension en français sur la santé (sommeil, propreté), ce qui correspond au Module 6 « Être en forme et mieux se porter ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension : hygiène de vie et santé",
+    "skill": "Comprendre un texte documentaire sur la santé et relever des informations explicites pour justifier une réponse.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "santé",
+      "sommeil",
+      "repos",
+      "propreté",
+      "compréhension de texte",
+      "hygiène"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un texte documentaire court sur les bonnes habitudes de vie, suivi de questions qui demandent de citer des raisons puis de relever dans le texte le détail qui les justifie, ce qui est réutilisable pour d'autres thèmes d'éveil.",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.96
+  },
+  "audit": {
+    "accuracy": 0.96,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : « Sagesse », « Lecture - Compréhension », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page n'est pas transcrit : « Lire et s'exprimer », « 54 », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La rubrique « B) Compréhension : » est absente. Les questions 1a et 1b sont présentes, mais sans ce titre de section."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le tiret de « doivent-ils » est transcrit sans l'espace de l'original (« doivent –ils »). Cela ne change pas le sens."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Il manque une ligne de pointillés : la première raison et la deuxième raison en ont chacune deux dans l'image, la transcription n'en met qu'une. Les deux lignes de pointillés de 1b sont réduites à une seule."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

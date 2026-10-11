@@ -1,0 +1,116 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 29,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "L'alimentation équilibrée : groupes d'aliments, équivalences alimentaires et vitamines",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أ) اكتب اسم المجموعة المناسبة التي تنتمي إليها المعادلة الغذائيّة أعلاه.",
+      "body": "ب) اذكر فائدتيْن لهذه المجموعة ؟ ........ ج) ماهي كميّة الحليب التي تشربها لتعويض 150 غ من اللّحم ؟ ... Équivalences : 100 غ من السّمك = 100 غ من اللّحم = بيضتان = 60 غ من الجبن = نصف لتر من الحليب",
+      "figureDesc": "Rangée de dessins reliés par des signes égal : un poisson (100 g de poisson), une côte de viande (100 g de viande), deux œufs (بيضتان), un morceau de fromage (60 g de fromage), une boîte de lait (نصف لتر من الحليب).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p029_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "اربط اللافتة بما يناسبها :",
+      "body": "Étiquettes (colonne de droite) : توفّر الطّاقة للجسم / تمكّن الجسم من النموّ / تقي الجسم من الأمراض. Groupes d'aliments (colonne de gauche) : بيض ـ جبن ـ لحم / حمّص جافّ ـ عدس / عسل ـ خبز ـ بطاطا / لوز ـ زبدة ـ زيت / برتقال ـ فلفل ـ خسّ",
+      "figureDesc": "Deux colonnes de cases à relier : trois étiquettes à droite, cinq cases d'aliments à gauche.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p029_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "اكتب ما يناسب مكان النّقط :",
+      "body": "الأكلة المتوازنة هي الّتي تتكوّن من أغذية ........ وأغذية ........ وأغذية ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p029_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "اربط الفيتامين بالغذاء الّذي يوفّره وما ينجرّ عن فقدانه :",
+      "body": "الفيتامين : أ / ج / د. الغذاء : البرتقال / زيت كبد الحوت / الجزر. نتائج النقص : ضعف الرّؤية ليلا / الكساح / مرض الإسقربوط",
+      "figureDesc": "Tableau de liaison à trois colonnes (الفيتامين، الغذاء، نتائج النقص) ; les vitamines sont dans des cercles.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p029_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "أصلح الجملة الخاطئة :",
+      "body": "- يحتاجُ الشيخ إلى وجبة غذائية تتوفّر فيها خاصّة الزلاليات.\n- السكريات ضرورية لنموّ الجسم ولتجديد خلاياه ولبناء أنسجته.\n- يحتاج الجسم في فصل الشتاء إلى الماء والأملاح.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p029_i5",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.24
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite de l'alimentation équilibrée (groupes d'aliments, équivalences alimentaires, vitamines et carences), ce qui correspond à la partie nutrition équilibrée de l'unité 3 d'Éveil Scientifique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "L'alimentation équilibrée et les vitamines",
+    "skill": "Identifier les groupes d'aliments, leurs rôles et les équivalences alimentaires, et relier chaque vitamine à sa source et à sa carence.",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "texte_a_trous",
+      "calcul",
+      "qcm",
+      "autre"
+    ],
+    "keywords": [
+      "alimentation équilibrée",
+      "groupes d'aliments",
+      "équivalences alimentaires",
+      "vitamines",
+      "carences",
+      "besoins nutritionnels"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Variété de formats courts réutilisables : relier groupes d'aliments et rôles, vitamine-aliment-carence, calcul d'équivalence de quantités (viande/lait), correction de phrases fausses sur les besoins selon l'âge et la saison.",
+    "themeGroup": "Les groupes d'aliments et l'alimentation équilibrée"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

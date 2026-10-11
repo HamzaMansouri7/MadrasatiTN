@@ -1,0 +1,114 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 21,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مسائل رياضية حول كتلة المواد المنقولة وكميات الحديد (مشروع بناء مسكن) – ملاحظة : الصفحة تبدو من مادة الرياضيات (قياس الكتل)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "• مَاهِيَ كُتْلَةُ الْمَوَادِّ الْمَنْقُولَةِ لِإِنْجَازِ هَذَا الْمَشْرُوعِ؟",
+      "body": "سطران منقطان لكتابة الإجابة.",
+      "figureDesc": "سطران منقطان فارغان للإجابة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p021_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لِبِنَاءِ مَسْكَنٍ أَعَدَّ مُقَاوِلٌ كَمِّيَّاتِ الْحَدِيدِ التَّالِيَةَ:",
+      "body": "جدول: عدد القضبان / النوع المستعمل / الصنف / كتلة القضيب الواحد. الصف 1: 250 قضيبا، عيار (Ø : 10)، الصنف 1، كتلة القضيب الواحد 9 كغ. الصف 2: 300 قضيب، عيار (Ø : 12)، الصنف 2، 12 كغ. الصف 3: 15 قضيبا، عيار (Ø : 14)، الصنف 3، 17 كغ. الصف 4: 4 قضبان، عيار (Ø : 6)، الصنف 4، 700 كغ.",
+      "figureDesc": "جدول من أربعة أعمدة وأربعة أسطر يبين عدد القضبان ونوعها (العيار) وصنفها وكتلة القضيب الواحد.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p021_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "• أَحْسُبْ كُتْلَةَ كُلِّ صِنْفٍ مِنَ الْحَدِيدِ بِالطُّنِّ وَالْقِنْطَارِ وَالْكِغْ:",
+      "body": "أربعة أسطر منقطة لكتابة الإجابة.",
+      "figureDesc": "أسطر منقطة فارغة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p021_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "• أَحْسُبْ كُتْلَةَ الْحَدِيدِ الَّتِي أَعَدَّهَا الْبَنَّاءُ لِبِنَاءِ هَذَا الْمَسْكَنِ.",
+      "body": "ثلاثة أسطر منقطة لكتابة الإجابة.",
+      "figureDesc": "أسطر منقطة فارغة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p021_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "- عِنْدَ نِهَايَةِ الْأَشْغَالِ وَجَدَ الْمُقَاوِلُ 68 كغ مِنْ صِنْفٍ وَاحِدٍ مِنَ الْحَدِيدِ لَمْ يَسْتَعْمِلْهُ. فَكَمْ قَضِيبًا بَقِيَ لَهُ وَمِنْ أَيِّ صِنْفٍ؟",
+      "body": "سطران منقطان لكتابة الإجابة.",
+      "figureDesc": "أسطر منقطة فارغة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p021_i5",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p6",
+    "confidence": 0.18
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de problèmes sur les masses (tonne, quintal, kg) avec calcul de la masse de barres de fer, ce qui correspond à la Période 4 (masses : quintal/tonne).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures de masses : tonne, quintal, kg",
+    "skill": "Calculer et convertir des masses (tonne, quintal, kg) dans un problème de chantier, avec recherche d'une donnée manquante.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "masse",
+      "tonne",
+      "quintal",
+      "conversion",
+      "barres de fer",
+      "chantier"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation concrète d'un entrepreneur qui prépare ses matériaux pour construire une maison : un tableau de données (nombre, calibre, catégorie, masse unitaire) permet des calculs par catégorie, un total converti en t/q/kg, puis une question inverse sur le reste non utilisé. Le contexte se transpose facilement à d'autres matériaux ou métiers.",
+    "themeGroup": "Mesures de masses et de capacités"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

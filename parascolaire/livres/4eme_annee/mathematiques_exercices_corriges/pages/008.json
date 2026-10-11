@@ -1,0 +1,291 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 8,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأعداد من 0 إلى 999 (2) : مقارنة وترتيب، اتحاد مجموعتين منفصلتين أو أكثر (الأسبوع 2)",
+  "items": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 2",
+      "body": "الأعداد من 0 إلى 999 (2)\nمقارنة وترتيب، اتحاد مجموعتين منفصلتين أو أكثر\n[رقم الصفحة: 5]",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p008_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لاحظ الأعداد التّالية :",
+      "body": "370 ، 501 ، 905 ، 670 ، 850 ، 710 ، 499 ، 89\nأ) أكتب مَجْمُوعَةَ الأَعْدادِ التي هي أكبر من 700 .\nب) أكتب مجموعة الأعداد التي هي أصغر من 500.",
+      "figureDesc": "Huit cartes numérotées disposées sur deux lignes : 370, 501, 905, 670 / 850, 710, 499, 89 (ordre de gauche à droite).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p008_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكتب بِواسِطَةِ الأَرْقَامِ الآتِيـة : 4 ، 0 ، 6 مجموعة الأعداد المكوَّنَةِ من ثلاثة أرقام بحيث لا يتكرَّر الرَّقم الواحد في نفس العدد ثمّ رتِّبها ترتيبا تَنَازليًا.",
+      "body": "الأرقام : 4 ، 0 ، 6",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p008_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "هذه أربعة أعداد امّحت بعض أرقامها :",
+      "body": "أ = 6 . .\nب = . 8 2\nج = . 4 .\nد = 3 . 1\nإذا كان :\nأ و د لهما نفس رقم الآحاد.\nج و د لهما نفس عدد العشرات.\nأ و ب لهما نفس عدد العشرات.\nج أصغر من د\nفأستعن بالمعطيات المذكورة لإتمام الأرقام ثم رتب الأعداد المتحصّل عليها تصاعديًا.",
+      "figureDesc": "Quatre nombres à chiffres effacés dans des cases (les chiffres effacés sont marqués par des points), chacun associé à une lettre cerclée (أ، ب، ج، د). Contenu des cases, de gauche à droite : أ = '6 . .', ب = '. 8 2', ج = '. 4 .', د = '3 . 1'.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p008_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أكمل مخطّط المجموعة اعتمادا على ما هو موجود بالجدول التّالي :",
+      "body": "جدول : المجموعة / كمّها\nب = لعب فكرية : 10\nأ = سكرابل : 4\nج = شطرنج : 6",
+      "figureDesc": "Grande ellipse contenant deux ellipses internes vides. L'étiquette cerclée ج est reliée par un trait à l'ellipse interne de gauche, et أ à celle de droite. L'étiquette ب est reliée à la grande ellipse. À droite, un tableau à deux colonnes (المجموعة، كمّها) et trois lignes.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_corriges_p008_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.33
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les nombres de 0 à 999 (comparaison, ordre, réunion de deux ensembles disjoints), un contenu de début d'année; aucun chapitre officiel ne le couvre, car math-4-ch1 traite des nombres à 5 et 6 chiffres, donc un chapitre approximatif serait trompeur.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 999 : comparaison et rangement",
+    "skill": "Comparer et ranger des nombres de 0 à 999 et déterminer l'union d'ensembles disjoints à l'aide d'un diagramme.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "probleme"
+    ],
+    "keywords": [
+      "nombres à trois chiffres",
+      "comparaison",
+      "ordre croissant et décroissant",
+      "chiffres effacés",
+      "réunion d'ensembles",
+      "diagramme"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les situations de nombres à chiffres effacés à reconstituer à partir d'indices (unités, dizaines, comparaison) et de construction de tous les nombres avec des chiffres donnés sans répétition sont réutilisables, de même que la complétion d'un diagramme d'ensembles à partir d'un tableau d'effectifs de jeux.",
+    "themeGroup": "Numération jusqu'à 999"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 3, ب : l'image montre '. 8 2' (chiffre effacé en premier, puis 8, puis 2), la transcription donne '2 8 .' : ordre des chiffres inversé et position du point erronée"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 3, ج : l'image montre '. 4 .' dans une case avec points avant et après ; transcription '. 4 .' correcte mais la case semble avoir 3 positions, ok. Exercice 3, أ : '6 . .' correct"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.3 : 'امّحت' dans l'image est écrit 'امحت' (ﺍﻣﺤﺖ) ; la shadda ajoutée n'est pas visible"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.2 : 'الآتِيـة' et 'تَنَازليًا' : l'image montre 'تَنَازليًا' avec voyelles ; 'رتِّبها' est écrit 'رَتِّبها' avec shadda, voyelle sur 'ثمّ' non visible : voyelles partiellement incohérentes"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.4 : le diagramme (ensembles ellipses avec étiquettes أ، ب، ج) n'est pas décrit ; en-tête de page (الأسبوع 2، الأعداد من 0 إلى 999 (2)، مقارنة وترتيب، اتحاد مجموعتين منفصلتين أو أكثر) et numéro de page 5 absents"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Ex.1 : ordre des nombres inversé par rapport à la lecture visuelle (ligne 1 : 670, 905, 501, 370 de droite à gauche) ; la transcription liste 370, 501, 905, 670 : acceptable en RTL inversé"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 3, ب : l'image montre, de gauche à droite, '. 8 2' (centaines effacées, dizaines 8, unités 2). La transcription donne '2 8 .', ce qui inverse l'ordre des chiffres. Cela fausse aussi la contrainte « أ و ب لهما نفس عدد العشرات »."
+      },
+      {
+        "type": "texte inventé",
+        "severity": "minor",
+        "detail": "Exercice 3, أ : la mention « (رقمان ممحوّان) » est ajoutée par la transcription. Elle n'est pas dans l'image, où la case montre seulement '6 . .'."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de page est absent : الأسبوع 2 ; الأعداد من 0 إلى 999 (2) ; مقارنة وترتيب، اتحاد مجموعتين منفصلتين أو أكثر. Le numéro de page 5 est absent aussi."
+      },
+      {
+        "type": "figure",
+        "severity": "minor",
+        "detail": "Exercice 4 : la description du diagramme est imprécise. Les étiquettes ج et أ sont reliées chacune à une des deux petites ellipses internes (ج à gauche, أ à droite). L'étiquette ب est reliée à la grande ellipse extérieure."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 2",
+      "body": "الأعداد من 0 إلى 999 (2)\nمقارنة وترتيب، اتحاد مجموعتين منفصلتين أو أكثر\n[رقم الصفحة: 5]",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p008_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لاحظ الأعداد التّالية :",
+      "body": "370 ، 501 ، 905 ، 670 ، 850 ، 710 ، 499 ، 89\nأ) أكتب مَجْمُوعَةَ الأَعْدادِ التي هي أكبر من 700 .\nب) أكتب مجموعة الأعداد التي هي أصغر من 500.",
+      "figureDesc": "Huit cartes numérotées disposées sur deux lignes : 370, 501, 905, 670 / 850, 710, 499, 89 (ordre de gauche à droite).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p008_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكتب بِواسِطَةِ الأَرْقَامِ الآتِيـة : 4 ، 0 ، 6 مجموعة الأعداد المكوَّنَةِ من ثلاثة أرقام بحيث لا يتكرَّر الرَّقم الواحد في نفس العدد ثمّ رتِّبها ترتيبا تَنَازليًا.",
+      "body": "الأرقام : 4 ، 0 ، 6",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p008_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "هذه أربعة أعداد امّحت بعض أرقامها :",
+      "body": "أ = 6 . .\nب = . 8 2\nج = . 4 .\nد = 3 . 1\nإذا كان :\nأ و د لهما نفس رقم الآحاد.\nج و د لهما نفس عدد العشرات.\nأ و ب لهما نفس عدد العشرات.\nج أصغر من د\nفأستعن بالمعطيات المذكورة لإتمام الأرقام ثم رتب الأعداد المتحصّل عليها تصاعديًا.",
+      "figureDesc": "Quatre nombres à chiffres effacés dans des cases (les chiffres effacés sont marqués par des points), chacun associé à une lettre cerclée (أ، ب، ج، د). Contenu des cases, de gauche à droite : أ = '6 . .', ب = '. 8 2', ج = '. 4 .', د = '3 . 1'.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p008_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أكمل مخطّط المجموعة اعتمادا على ما هو موجود بالجدول التّالي :",
+      "body": "جدول : المجموعة / كمّها\nب = لعب فكرية : 10\nأ = سكرابل : 4\nج = شطرنج : 6",
+      "figureDesc": "Grande ellipse contenant deux ellipses internes vides. L'étiquette cerclée ج est reliée par un trait à l'ellipse interne de gauche, et أ à celle de droite. L'étiquette ب est reliée à la grande ellipse. À droite, un tableau à deux colonnes (المجموعة، كمّها) et trois lignes.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "math_solutions_4eme_sellami_p008_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لاحظ الأعداد التّالية :",
+      "body": "370 ، 501 ، 905 ، 670 ، 850 ، 710 ، 499 ، 89\nأ) أكتب مَجْمُوعَةَ الأَعْدادِ التي هي أكبر من 700 .\nب) أكتب مجموعة الأعداد التي هي أصغر من 500.",
+      "figureDesc": "Huit cartes numérotées disposées sur deux lignes : 370, 501, 905, 670 / 850, 710, 499, 89.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "math_solutions_4eme_sellami_p008_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكتب بِواسِطَةِ الأَرْقَامِ الآتِيـة : 4 ، 0 ، 6 مجموعة الأعداد المكوَّنَةِ من ثلاثة أرقام بحيث لا يتكرَّر الرَّقم الواحد في نفس العدد ثمّ رتِّبها ترتيبا تَنَازليًا.",
+      "body": "الأرقام : 4 ، 0 ، 6",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p008_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "هذه أربعة أعداد امّحت بعض أرقامها :",
+      "body": "أ = 6 . . (رقمان ممحوّان)\nب = 2 8 .\nج = . 4 .\nد = 3 . 1\nإذا كان :\nأ و د لهما نفس رقم الآحاد.\nج و د لهما نفس عدد العشرات.\nأ و ب لهما نفس عدد العشرات.\nج أصغر من د\nفأستعن بالمعطيات المذكورة لإتمام الأرقام ثم رتب الأعداد المتحصّل عليها تصاعديًا.",
+      "figureDesc": "Quatre nombres à chiffres effacés dans des cases, chacun associé à une lettre cerclée (أ، ب، ج، د).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p008_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أكمل مخطّط المجموعة اعتمادا على ما هو موجود بالجدول التّالي :",
+      "body": "جدول : المجموعة / كمّها\nب = لعب فكرية : 10\nأ = سكرابل : 4\nج = شطرنج : 6",
+      "figureDesc": "Grande ellipse contenant deux ellipses vides, avec des étiquettes cerclées ج، ب، أ reliées par des traits ; tableau à deux colonnes (المجموعة، كمّها) et trois lignes.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p008_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

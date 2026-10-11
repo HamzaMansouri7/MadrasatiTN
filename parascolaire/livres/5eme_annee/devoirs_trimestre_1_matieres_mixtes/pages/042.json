@@ -1,0 +1,118 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 42,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الوضوء (Éducation islamique : les ablutions). La page ne contient pas de contenu mathématique, elle ne correspond donc pas à la matière annoncée.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوضوء - قال تعالى",
+      "body": "الوضوء\nقال تعالى\nيا أَيُّهَا الَّذِينَ آمَنُواْ إِذَا قُمْتُمْ إِلَى الصَّلاةِ فَاغْسِلُواْ وُجُوهَكُمْ وَأَيْدِيَكُمْ إِلَى الْمَرَافِقِ وَامْسَحُواْ بِرُؤُوسِكُمْ وَأَرْجُلَكُمْ إِلَى الْكَعْبَيْنِ\nسورة المائدة الآية",
+      "figureDesc": "Page encadrée d'une bordure décorative de cercles dorés. Titre en rouge, texte en bleu et noir.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p042_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "فرائض الوضوء",
+      "body": "النية ، غسل الوجه ، غسل اليدين إلى المرفقين ، مسح الرأس ، غسل الرجلين إلى الكعبين ، الدلك ، الموالاة",
+      "figureDesc": "Tableau à deux colonnes. Celle-ci est la colonne de droite du premier tableau, intitulée « فرائض الوضوء ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p042_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "سنن الوضوء",
+      "body": "غسل اليدين إلى الكوعين ، المضمضة ، الإستنشاق والإستنثار ، رد مسح الرأس ، مسح الأذنين ، تجديد الماء لهما ، ترتيب الفرائض",
+      "figureDesc": "Colonne de gauche du premier tableau, intitulée « سنن الوضوء ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p042_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "مكروهات الوضوء",
+      "body": "التوضؤ في المكان النجس ، الزيادة على الثلاث ، الإسراف في الماء ، الكلام أثناء الوضوء",
+      "figureDesc": "Tableau à deux colonnes. Celle-ci est la colonne de droite du second tableau, intitulée « مكروهات الوضوء ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p042_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "نواقض الوضوء",
+      "body": "كل ما خرج من السبيلين من نجاسات ، النوم الثقيل ، غياب العقل والإدراك ، الشك",
+      "figureDesc": "Colonne de gauche du second tableau, intitulée « نواقض الوضوء ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p042_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p6",
+    "confidence": 0.12
+  },
+  "topicSubject": "Éducation islamique",
+  "topicReason": "La page traite des ablutions (obligations, sunnas, actes détestables, annulations du wudû') en éducation islamique, matière absente de la liste des chapitres officiels, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Les ablutions (al-wudû')",
+    "skill": "Connaître les obligations, les sunnas, les actes réprouvés et les annulatifs des ablutions, avec le verset coranique de référence.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "ablutions",
+      "wudû'",
+      "obligations",
+      "sunnas",
+      "annulatifs",
+      "prière"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La structure en quatre catégories (obligatoires, recommandés, déconseillés, annulatifs) se prête à des exercices de classement, d'appariement, de vrai/faux ou de QCM, ainsi qu'à une infographie des étapes des ablutions.",
+    "themeGroup": "La purification: les ablutions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

@@ -1,0 +1,256 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 16,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "امتحانات جسر النجاح – اختبار نهاية الثلاثي الثاني – عدد 4 – خط و إملاء (السنة الثانية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسخُ عَلَى مِنْوالِ الْمِثالِ :",
+      "body": "السطر الأول: سَا . شَا . صٌ . ضٍ ; السطر الثاني: نَصٌّ . بَهْ . حِسٌّ . رُكْ . (التنقيط: 0,25 لكل حرف، 0,25 لكل حرف، 0,5 لكل مقطع، 0,25 لكل مقطع. المعايير: الوضوح، الجمالية، الوضوح، الجمالية)",
+      "figureDesc": "Deux lignes de lettres et de syllabes modèles à copier sur papier quadrillé (écriture), séparées par des points ; à droite les cases des critères : الوضوح، الجمالية (pour chaque ligne).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p016_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتابَةَ الْجُمْلَةَ وَأُغَيِّرُ «سَمِيرَةُ» بِـ «سَمِيرٌ».",
+      "body": "تَنَعَّمَتْ سميرةُ بِالْمَشْهَدِ الْفَتَّانِ لِلْحَدِيقَةِ. (التنقيط: 0,25 لكل كلمة، 0,5 لكل كلمة، 0,25 لكل كلمة. المعايير: الاسترسال، التناسق، الجمالية)",
+      "figureDesc": "Lignes quadrillées pour la copie ; critères à droite : الاسترسال، التناسق، الجمالية ; note sur 10.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p016_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "إِمْلاءٌ : أُكَمِّلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "تَعَوَّدَ ........ مُنِيرٌ حِراسَةَ الْحَدِيقَةِ ........ وَتَعَهَّدَها بِالْعِنايَةِ وَ ........ وَ ........ وَهْوَ يُقَدِّمُ هَذا الْعَمَلَ اعْتِرافًا لِوَطَنِهِ بِـ ........ . (التنقيط: 2 لكل كلمة صحيحة؛ المعيار: السلامة من الأخطاء؛ النقطة على 10)",
+      "figureDesc": "Paragraphe à trous avec lignes pointillées à compléter sous dictée.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p016_i3"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p6",
+    "confidence": 0.3
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de trimestre 2 (écriture et dictée) couvrant plusieurs unités, et non un chapitre précis; aucun chapitre ne correspond exactement, donc topicId null.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Calligraphie et dictée (jardin)",
+    "skill": "Copier des lettres et syllabes vocalisées, transformer une phrase du féminin au masculin et compléter une dictée à trous.",
+    "pageType": "exam",
+    "formats": [
+      "production_ecrite",
+      "texte_a_trous",
+      "dictee"
+    ],
+    "keywords": [
+      "écriture arabe",
+      "copie",
+      "dictée",
+      "accord masculin-féminin",
+      "évaluation trimestrielle",
+      "jardin"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'épreuve en trois parties (copie sur modèle avec grille de notation, transformation de phrase par changement de sujet, paragraphe à compléter) autour d'un thème unique comme la protection du jardin, avec un barème clair par critère.",
+    "themeGroup": "Calligraphie et graphie des lettres"
+  },
+  "audit": {
+    "accuracy": 0.7,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.1 : «صٌ» et «ضٍ» sont transcrits comme dans l'image (ص avec tanwin damma, ض avec tanwin kasra) ; OK. En revanche «أَنْسخُ» : l'image porte «أُنْسخُ» (damma sur la hamza), pas fatha."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«مِنْوالِ» : transcrit correctement ; mais «أُعِيدُ» est écrit avec une ya (إعيد) alors que l'image montre «أُعِيدُ» sans ya longue : «أُعِيدُ» ↔ image «أُعِيدُ كِتابَةَ» (vérifier) ; la hamza de «أُغَيِّرُ» est correcte."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«تَنَعَّمَتْ» : l'image montre «تَنَعَّمَتْ» ; «سَمِيرَةُ» dans l'image est «سميرةُ» avec peu de voyelles (seul le damma final visible), la transcription en ajoute (سَمِيرَةُ, الْحَدِيقَةِ avec kasra sur le ح)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«سَمِيرٌ» : l'image montre «سَمِيرٌ» entre guillemets ; OK. «الْمَشْهَدِ» : OK."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«وَتَعَهُّدَها» : l'image montre «وتَعَهَّدَها» (fatha + shadda sur le ه, forme verbale), pas «تَعَهُّدَها»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«حِراسَةَ» : l'image porte «حِراسَةَ» ; OK. Mais «إِمْلاءٌ» est bien présent ; «بِـ ........ .» correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les cases de notation (/10 pour l'écriture et pour l'orthographe), les en-têtes (امتحانات جسر النجاح, المادة: خط و إملاء, المستوى: السنة الثانية, اختبار نهاية الثلاثي الثاني, عدد: 4, الاسم/اللقب/القسم) et les critères (الوضوح، الجمالية، الاسترسال، التناسق) ne sont pas transcrits ou sont incomplets."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le barème de l'exercice 2 est mal rendu : 0,25 par lettre, 0,5 par mot, 0,25 par mot ; la transcription écrit «لكل مقطع» pour les deux lignes alors que l'image indique «لكل حرف» pour la ligne 1 (0,25 + 0,25) et «لكل مقطع» pour la ligne 2 (0,5 + 0,25), tandis que 0,25/0,5/0,25 «لكل كلمة» concerne la phrase."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans la dictée, les trous sont mal placés : l'image montre «تَعَوَّدَ ..... مُنِيرٌ حِراسَةَ الْحَدِيقَةِ .....» puis «وَتَعَهَّدَها بِالْعِنايَةِ وَ ..... وَ .....». Le trou final de la ligne 2 se trouve avant «وَ» ; la structure est proche mais approximative."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.86,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Dictée, ligne 2 : l'image porte «وَتَعَهَّدَها» (fatha + shadda sur le ه, forme verbale). La transcription donne «وَتَعَهُّدَها» (nom verbal), ce qui est faux."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.2, consigne : l'image porte «الْجُمْلَةَ» (fatha finale, complément d'objet). La transcription donne «الْجُمْلَةِ» (kasra)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ex.2, phrase : dans l'image, «سميرةُ» n'a que le damma final. La transcription ajoute des voyelles qui ne figurent pas dans l'image (سَمِيرَةُ). Dans la phrase, «الحديقةِ» n'a que la kasra finale."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ex.1, barème : l'image indique 0,25 لكل حرف (ligne 1, deux fois), puis 0,5 لكل مقطع et 0,25 لكل مقطع (ligne 2). La transcription n'a qu'un seul «0,25 لكل حرف», et le second manque. Les critères الوضوح، الجمالية sont présents deux fois (une fois par ligne)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.2 : le barème (0,25 / 0,5 / 0,25 لكل كلمة) n'est pas transcrit dans le body. L'en-tête de la page (امتحانات جسر النجاح، المادة: خط و إملاء، المستوى: السنة الثانية، اختبار نهاية الثلاثي الثاني، عدد: 4، الاسم/اللقب/القسم) et les cases /10 ne sont pas non plus rendus."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسخُ عَلَى مِنْوالِ الْمِثالِ :",
+      "body": "السطر الأول: سَا . شَا . صٌ . ضٍ ; السطر الثاني: نَصٌّ . بَهْ . حِسٌّ . رُكْ . (التنقيط: 0,25 لكل حرف، 0,25 لكل حرف، 0,5 لكل مقطع، 0,25 لكل مقطع. المعايير: الوضوح، الجمالية، الوضوح، الجمالية)",
+      "figureDesc": "Deux lignes de lettres et de syllabes modèles à copier sur papier quadrillé (écriture), séparées par des points ; à droite les cases des critères : الوضوح، الجمالية (pour chaque ligne).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتابَةَ الْجُمْلَةَ وَأُغَيِّرُ «سَمِيرَةُ» بِـ «سَمِيرٌ».",
+      "body": "تَنَعَّمَتْ سميرةُ بِالْمَشْهَدِ الْفَتَّانِ لِلْحَدِيقَةِ. (التنقيط: 0,25 لكل كلمة، 0,5 لكل كلمة، 0,25 لكل كلمة. المعايير: الاسترسال، التناسق، الجمالية)",
+      "figureDesc": "Lignes quadrillées pour la copie ; critères à droite : الاسترسال، التناسق، الجمالية ; note sur 10.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "إِمْلاءٌ : أُكَمِّلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "تَعَوَّدَ ........ مُنِيرٌ حِراسَةَ الْحَدِيقَةِ ........ وَتَعَهَّدَها بِالْعِنايَةِ وَ ........ وَ ........ وَهْوَ يُقَدِّمُ هَذا الْعَمَلَ اعْتِرافًا لِوَطَنِهِ بِـ ........ . (التنقيط: 2 لكل كلمة صحيحة؛ المعيار: السلامة من الأخطاء؛ النقطة على 10)",
+      "figureDesc": "Paragraphe à trous avec lignes pointillées à compléter sous dictée.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسخُ عَلى مِنْوالِ الْمِثالِ :",
+      "body": "السطر الأول: سَا . شَا . صٌ . ضٍ ; السطر الثاني: نَصٌّ . بَهْ . حِسٌّ . رُكْ . (حروف ومقاطع للنسخ على شبكة الخط. التنقيط: 0,25 لكل حرف، 0,5 لكل مقطع، 0,25 لكل مقطع. المعايير: الوضوح، الجمالية)",
+      "figureDesc": "Deux lignes de lettres et de syllabes modèles à copier sur papier quadrillé (écriture), séparées par des points ; à droite les cases des critères : الوضوح، الجمالية.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتابَةَ الْجُمْلَةِ وَأُغَيِّرُ «سَمِيرَةُ» بِـ «سَمِيرٌ».",
+      "body": "تَنَعَّمَتْ سَمِيرَةُ بِالْمَشْهَدِ الْفَتَّانِ لِلْحَدِيقَةِ.",
+      "figureDesc": "Lignes quadrillées pour la copie ; critères à droite : الاسترسال، التناسق، الجمالية ; note sur 10.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "إِمْلاءٌ : أُكَمِّلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "تَعَوَّدَ ........ مُنِيرٌ حِراسَةَ الْحَدِيقَةِ ........ وَتَعَهُّدَها بِالْعِنايَةِ وَ ........ وَ ........ وَهْوَ يُقَدِّمُ هَذا الْعَمَلَ اعْتِرافًا لِوَطَنِهِ بِـ ........ . (التنقيط: 2 لكل كلمة صحيحة؛ المعيار: السلامة من الأخطاء؛ النقطة على 10)",
+      "figureDesc": "Paragraphe à trous avec lignes pointillées à compléter sous dictée.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p016_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.86
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

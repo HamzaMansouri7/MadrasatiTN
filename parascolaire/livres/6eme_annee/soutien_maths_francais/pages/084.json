@@ -1,0 +1,95 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 84,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Note : cette page n'est pas une page de mathématiques. C'est la page 4/4 d'un devoir de français (Orthographe et Production de l'écrit, thème des nouvelles technologies et d'internet), et non une page du manuel Mouayen Math. Elle ne contient aucun texte arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "19",
+      "instruction": "Écris correctement les mots entre parenthèses :",
+      "body": "D- Orthographe : (3pts)\na- Les (nouveau)............. technologies ont (faciliter)................... L'apprentissage des langues. (1pt)\nb- Les (travail)........... des chercheurs sont affichés sur les (journal)............... (0,5pt)\nc- Les (presse-fruits)................... fonctionnent avec de l'électricité. (0,5pt)\nd- (Tout) .........les chercheurs ont montré que le virus (peut/peu)...........provoquer de graves complications. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p084_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "20",
+      "instruction": "Complète le texte par les mots suivants : (2pts)",
+      "body": "III – Production de l'écrit : (7 pts)\nMots : quitter – recherches - factures - monde\nAvec internet, tu peux écrire à un autre abonné, qu'il soit ton voisin ou qu'il habite à l'autre bout du................ Tu peux effectuer des............... , échanger des idées, faire des achats ou même payer des................ Grâce à internet, j'ai appris beaucoup de choses sans................ ma chambre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p084_i2",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "En sept lignes au moins, parle d'un jeu électronique de ton choix. (5pts)",
+      "body": "Zone d'écriture : 12 lignes pointillées à remplir. Fin de page : « Bonne chance ! » – Page 4 sur 4.",
+      "figureDesc": "Lignes pointillées pour la rédaction",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p084_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-ch2",
+    "confidence": 0.22
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est la 4/4 d'un devoir de français (orthographe, texte à compléter, production écrite sur internet et les jeux électroniques) qui couvre plusieurs notions, et aucun module officiel ne traite clairement des nouvelles technologies : le module 2 (médias) est proche mais insuffisant.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Orthographe et production écrite : internet",
+    "skill": "Accorder les mots et conjuguer correctement, compléter un texte lacunaire, puis rédiger un court texte sur un jeu électronique.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "nouvelles technologies",
+      "internet",
+      "accord des noms",
+      "participe passé",
+      "jeu électronique",
+      "devoir de synthèse"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un devoir qui relie orthographe (accords pluriels, participes, mots composés), texte lacunaire et rédaction autour d'un même thème numérique, avec un sujet de production proche du vécu des élèves (leur jeu électronique préféré).",
+    "themeGroup": "Internet et technologies"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

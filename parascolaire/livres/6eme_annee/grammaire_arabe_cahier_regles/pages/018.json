@@ -1,0 +1,124 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 18,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "تصريف الناقص الواوي في المضارع المرفوع (Conjugaison du verbe défectif à finale « waw » à l'inaccompli marfou')",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة: من أهم علامات المضارع المرفوع",
+      "body": "يبدأ به الكلام: يدرس | يكون خبرا لناسخ: مازال يلعب | يبدأ بالسين: سينجح | يبدأ بسوف: سوف يعود | ينفى بلام النافية: لا ينتبه | يبدأ بلام الابتداء: انه ليجتهد",
+      "figureDesc": "Tableau de 6 colonnes : en haut la marque du présent marfou' (début de phrase, attribut d'un verbe abrogatif, commence par السين, par سوف, négation par لا, commence par لام الابتداء) ; en bas un exemple pour chaque marque.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p018_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: تصريف الناقص الواوي في المضارع المرفوع",
+      "body": "الأفعال: سها، غدا، صحا. الضمائر: المتكلم: أنا: أسهو، أغدو، أصحو | نحن: نسهو، نغدو، نصحو. المخاطب: أنتَ: تسهو، تغدو، تصحو | أنتِ: تسهين، تغدين، تصحين | أنتما: تسهوان، تغدوان، تصحوان | أنتم: تسهون، تغدون، تصحون | أنتن: تسهون، تغدون، تصحون. الغائب: هو: يسهو، يغدو، يصحو | هي: تسهو (في الجدول: تسهى)، تغدو، تصحو | هما (مذكر): يسهوان، يغدوان، يصحوان | هما (مؤنث): تسهوان، تغدوان، تصحوان | هم: يسهون، يغدون، يصحون | هن: يسهون، يغدون، يصحون",
+      "figureDesc": "Tableau de conjugaison à l'inaccompli marfou' de trois verbes (سها، غدا، صحا) selon les pronoms, regroupés en المتكلم، المخاطب، الغائب.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p018_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "لا يطرأ تغيير على صيغة الناقص الواوي اسند في المضارع إلى الضمائر أنا نحن أنت هو هي. تحذف واو الفعل من الناقص الواوي إذا اسند في صيغة المضارع إلى المخاطبة تخطوين تخطين. تحذف واو الفعل من الناقص الواوي إذا اسند في صيغة المضارع الى جمع الذكور أنتم هم وتبقى واو الجماعة تخطون، يخطون. الفعل الناقص الواوي في صيغة المضارع المرفوع يصرف مع المخاطبات مثل تصريفه مع المخاطبين وكذلك يصرف مع الغائبات مثل تصريفه مع الغائبين",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p018_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.28
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la conjugaison du verbe défectif à finale waw à l'inaccompli marfou', ce qui correspond à la compétence « conjugaison des verbes défectifs » de l'Unité 1 d'arabe (Trimestre 1).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison du défectif en waw",
+    "skill": "Conjuguer à l'inaccompli marfou' les verbes défectifs à finale waw avec tous les pronoms et connaître la chute du waw à certaines personnes.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "verbe défectif",
+      "waw",
+      "inaccompli marfou'",
+      "conjugaison",
+      "pronoms personnels",
+      "chute du waw"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau de conjugaison par pronom, suivi d'une règle déduite de la comparaison des formes, peut inspirer des exercices de complétion de tableaux, de repérage des formes où le waw tombe, ou une fiche récapitulative.",
+    "themeGroup": "Le verbe défectueux"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "La transcription ajoute des voyelles (أنتَ، أنتِ) absentes de l'image, qui n'a pas de tashkeel."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans la ligne هي, l'image porte تسهى (pour سها) et تغدو، تصحو ; la transcription écrit تسهو avec une note « في الجدول: تسهى », ce qui n'est pas fidèle à l'image (commentaire ajouté)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Conclusions : l'image dit « إلى المخاطب تخطوين تخطين » ; la transcription écrit « المخاطبة » au lieu de « المخاطب »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Conclusions : « يخطون » dans la transcription, alors que l'image écrit « يخطون ، » avec une virgule précédée d'un espace ; sinon identique. Dans la première phrase, la transcription ajoute un point après « هي » qui n'existe pas dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Annotations ajoutées « (مذكر) » et « (مؤنث) » pour هما, et « (في الجدول: تسهى) » : absentes de l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le mot « المخاطب » de l'image est transcrit « المخاطبة » ; les titres de colonnes d'origine (الأفعال/الضمائر) sont bien présents mais la structure du tableau (المتكلم/المخاطب/الغائب) est aplatie."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

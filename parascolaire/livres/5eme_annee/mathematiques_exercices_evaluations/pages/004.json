@@ -1,0 +1,262 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 4,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 2: أكتب إحداثيات عقدة على الشبكة (ملاحظة : la page traite de mathématiques – repérage sur un quadrillage – et non de langue arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدَّرس 2: أكتب إحداثيات عقدة على الشبكة",
+      "body": "",
+      "figureDesc": "Bandeau de titre décoratif avec la mention « السنة 5 » à gauche ; le numéro de page 5 figure en bas de page. Le titre est en grande partie sans voyelles dans l'image.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p004_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لِطَاهِرٍ خَرِيطَةُ حَيِّهِ مَرْسُومَةٌ عَلَى الشَّبَكَةِ جانِبًا.",
+      "body": "* حَدِّدْ إِحْدَاثِيَّاتِ \" س \" مَوْقِعِ السُّوقِ.\n* حَدِّدْ إِحْدَاثِيَّاتِ \" غ \" مَوْقِعِ الْمَغَازَةِ.\n* حَدِّدْ إِحْدَاثِيَّاتِ \" م \" مَحَطَّةِ الْحَافِلَاتِ.\nس (........،........) غ (........،........) م (........،........).",
+      "figureDesc": "Quadrillage avec axe horizontal gradué de -4 à 4 et axe vertical gradué de -5 à 5. Points repérés : س en haut à gauche (environ (-4 ; 5)), غ (3 ; 4), م (2 ; 1).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p004_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "يُرِيدُ طَاهِرٌ أَنْ يَنْتَقِلَ يَوْمَ الأَحَدِ إِلَى \" كـ \" مَوْقِعِ الْكُتُبِيَّةِ ثُمَّ إِلَى \" ح \" حَيْثُ حَدِيقَةُ الْحَيَوَانَاتِ وَأَخِيرًا يَعُودُ إِلَى بَيْتِهِ الْمُمَثَّلِ بِالنُّقْطَةِ \" د \".",
+      "body": "* ارْسُمْ عَلَى الشَّبَكَةِ جانِبًا النُّقَطَ الْمَذْكُورَةَ فِي السَّنَدِ حَسَبَ إِحْدَاثِيَّاتِهَا التَّالِيَةِ:\nك ( 3 ، 2 ) – ح ( 4 ، 4 ) – د ( 0 ، 3 )",
+      "figureDesc": "Utiliser le même quadrillage pour placer les points. Dans le scan, des lettres parasites ou peu lisibles (ي، أ، س، و) sont collées aux chiffres des coordonnées. Seules les valeurs numériques sont retenues.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p004_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "يَنْتَقِلُ طَاهِرٌ بَيْنَ الْمَوَاقِعِ الْمَذْكُورَةِ سَابِقًا مَارًّا بِعُقَدِ الشَّبَكَةِ وَجَوِّيًّا.",
+      "body": "* كَمْ خُطْوَةً يَقْطَعُ طَاهِرٌ مِنْ بَيْتِهِ إِلَى الْكُتُبِيَّةِ؟\n* كَمْ خُطْوَةً يَقْطَعُ طَاهِرٌ مِنَ الْكُتُبِيَّةِ إِلَى حَدِيقَةِ الْحَيَوَانَاتِ؟\n* كَمْ خُطْوَةً يَقْطَعُ طَاهِرٌ مِنَ الْحَدِيقَةِ إِلَى بَيْتِهِ؟\n- بَيْنَ الْبَيْتِ وَالْكُتُبِيَّةِ: ......... خُطُوَات.\n- بَيْنَ الْكُتُبِيَّةِ وَحَدِيقَةِ الْحَيَوَانَاتِ: ......... خُطْوَة.\n- بَيْنَ الْحَدِيقَةِ وَبَيْتِ طَاهِرٍ: ......... خُطْوَة.\n- إِذَا كَانَ طُولُ الْخُطْوَةِ فِي الْحَقِيقَةِ 50 م. فَمَا هُوَ طُولُ الْمَسَافَةِ الَّتِي يَقْطَعُهَا طَاهِرٌ يَوْمَ الأَحَدِ؟",
+      "figureDesc": "Quatre lignes pointillées vides en bas de page pour rédiger la réponse à la dernière question.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p004_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u1",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite du repérage par coordonnées sur un quadrillage (mathématiques), mais aucun des chapitres officiels de mathématiques listés ne mentionne ce thème, donc aucune correspondance claire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Repérage sur un quadrillage",
+    "skill": "Lire et écrire les coordonnées d'un nœud du quadrillage, placer des points selon leurs coordonnées et compter des pas sur un trajet.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "coordonnées",
+      "quadrillage",
+      "nœud",
+      "plan de quartier",
+      "trajet",
+      "repérage"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation contextualisée : un enfant se déplace dans son quartier représenté sur un quadrillage. Enchaînement lecture de coordonnées, placement de points puis calcul de distances en pas sur un trajet, réutilisable avec d'autres lieux ou d'autres parcours.",
+    "themeGroup": "Quadrilatères, symétrie et repérage"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Titre : « أكتب إحداثيات عقدة على الشبكة » transcrit sans tashkeel alors qu'il est vocalisé dans l'image (أَكْتُبُ إِحْدَاثِيَّاتِ عُقْدَةٍ عَلَى الشَّبَكَةِ) ; « الشبكة » est lu comme « الشبكه » dans l'image."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 2 : l'image indique ك(3، 2) avec lettres parasites (ي، أ), la transcription a normalisé ; la coordonnée de ح est « 4، 4 » dans l'image avec lettres (س، و) : ambiguïté, à vérifier. Pour د l'image indique (0، 3), transcription OK."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« وَحُوَيًّا » doit être « وَحُوِيًّا »/« وَحُرًّا » : l'image dit « وَحُرْيًّا » (probablement « وَحُرًّا »/« وَحُرِّيًّا ») ; mot fautif."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الْمَغَازَةِ » : l'image indique « الْمَغَازَةِ » ; correct, mais « إِحْدَاثِيَّاتِ » doit être « إِحْدَاثِيَّاتِ » (avec ث) : conforme à l'image, pas d'erreur."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de réponse pointillées pour la dernière question (calcul de la distance) ne sont pas signalées."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte de la grille (graduations, lettres س، غ، م) n'est pas transcrit ; numéro de page 5 et « السنة 5 » absents."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« خُطُوَات » : l'image a « خَطَوَات/خُطُوَات » sans voyelle fiable ; « خُطْوَة » vocalisée alors que l'image est peu claire."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3, instruction : « وَحُوَيًّا » est erroné. L'image montre « وَجَوِّيًّا » (« et par les airs »), avec un ج et non un ح. Corrigé en « وَجَوِّيًّا »."
+      },
+      {
+        "type": "figureDesc",
+        "severity": "minor",
+        "detail": "La description de la grille était inexacte. L'axe horizontal est gradué de -4 à 4 et l'axe vertical de -5 à 5, et non de -5 à 5 pour les deux. Les positions des points (س en haut à gauche à (-4 ; 5), غ (3 ; 4), م (2 ; 1)) concordent avec l'image. Corrigé."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدَّرس 2: أكتب إحداثيات عقدة على الشبكة",
+      "body": "",
+      "figureDesc": "Bandeau de titre décoratif avec la mention « السنة 5 » à gauche ; le numéro de page 5 figure en bas de page. Le titre est en grande partie sans voyelles dans l'image.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p004_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لِطَاهِرٍ خَرِيطَةُ حَيِّهِ مَرْسُومَةٌ عَلَى الشَّبَكَةِ جانِبًا.",
+      "body": "* حَدِّدْ إِحْدَاثِيَّاتِ \" س \" مَوْقِعِ السُّوقِ.\n* حَدِّدْ إِحْدَاثِيَّاتِ \" غ \" مَوْقِعِ الْمَغَازَةِ.\n* حَدِّدْ إِحْدَاثِيَّاتِ \" م \" مَحَطَّةِ الْحَافِلَاتِ.\nس (........،........) غ (........،........) م (........،........).",
+      "figureDesc": "Quadrillage avec axe horizontal gradué de -4 à 4 et axe vertical gradué de -5 à 5. Points repérés : س en haut à gauche (environ (-4 ; 5)), غ (3 ; 4), م (2 ; 1).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p004_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "يُرِيدُ طَاهِرٌ أَنْ يَنْتَقِلَ يَوْمَ الأَحَدِ إِلَى \" كـ \" مَوْقِعِ الْكُتُبِيَّةِ ثُمَّ إِلَى \" ح \" حَيْثُ حَدِيقَةُ الْحَيَوَانَاتِ وَأَخِيرًا يَعُودُ إِلَى بَيْتِهِ الْمُمَثَّلِ بِالنُّقْطَةِ \" د \".",
+      "body": "* ارْسُمْ عَلَى الشَّبَكَةِ جانِبًا النُّقَطَ الْمَذْكُورَةَ فِي السَّنَدِ حَسَبَ إِحْدَاثِيَّاتِهَا التَّالِيَةِ:\nك ( 3 ، 2 ) – ح ( 4 ، 4 ) – د ( 0 ، 3 )",
+      "figureDesc": "Utiliser le même quadrillage pour placer les points. Dans le scan, des lettres parasites ou peu lisibles (ي، أ، س، و) sont collées aux chiffres des coordonnées. Seules les valeurs numériques sont retenues.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p004_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "يَنْتَقِلُ طَاهِرٌ بَيْنَ الْمَوَاقِعِ الْمَذْكُورَةِ سَابِقًا مَارًّا بِعُقَدِ الشَّبَكَةِ وَجَوِّيًّا.",
+      "body": "* كَمْ خُطْوَةً يَقْطَعُ طَاهِرٌ مِنْ بَيْتِهِ إِلَى الْكُتُبِيَّةِ؟\n* كَمْ خُطْوَةً يَقْطَعُ طَاهِرٌ مِنَ الْكُتُبِيَّةِ إِلَى حَدِيقَةِ الْحَيَوَانَاتِ؟\n* كَمْ خُطْوَةً يَقْطَعُ طَاهِرٌ مِنَ الْحَدِيقَةِ إِلَى بَيْتِهِ؟\n- بَيْنَ الْبَيْتِ وَالْكُتُبِيَّةِ: ......... خُطُوَات.\n- بَيْنَ الْكُتُبِيَّةِ وَحَدِيقَةِ الْحَيَوَانَاتِ: ......... خُطْوَة.\n- بَيْنَ الْحَدِيقَةِ وَبَيْتِ طَاهِرٍ: ......... خُطْوَة.\n- إِذَا كَانَ طُولُ الْخُطْوَةِ فِي الْحَقِيقَةِ 50 م. فَمَا هُوَ طُولُ الْمَسَافَةِ الَّتِي يَقْطَعُهَا طَاهِرٌ يَوْمَ الأَحَدِ؟",
+      "figureDesc": "Quatre lignes pointillées vides en bas de page pour rédiger la réponse à la dernière question.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p004_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدَّرس 2: أكتب إحداثيات عقدة على الشبكة",
+      "body": "",
+      "figureDesc": "Bandeau de titre décoratif avec la mention « السنة 5 » et le numéro de page 5 en bas.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p004_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "لِطَاهِرٍ خَرِيطَةُ حَيِّهِ مَرْسُومَةٌ عَلَى الشَّبَكَةِ جانِبًا.",
+      "body": "* حَدِّدْ إِحْدَاثِيَّاتِ \" س \" مَوْقِعِ السُّوقِ.\n* حَدِّدْ إِحْدَاثِيَّاتِ \" غ \" مَوْقِعِ الْمَغَازَةِ.\n* حَدِّدْ إِحْدَاثِيَّاتِ \" م \" مَحَطَّةِ الْحَافِلَاتِ.\nس (........،........) غ (........،........) م (........،........).",
+      "figureDesc": "Quadrillage avec deux axes gradués de -5 à 5. Points repérés : س en haut à gauche (environ (-4 ; 5)), غ (3 ; 4), م (2 ; 1).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p004_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "يُرِيدُ طَاهِرٌ أَنْ يَنْتَقِلَ يَوْمَ الأَحَدِ إِلَى \" كـ \" مَوْقِعِ الْكُتُبِيَّةِ ثُمَّ إِلَى \" ح \" حَيْثُ حَدِيقَةُ الْحَيَوَانَاتِ وَأَخِيرًا يَعُودُ إِلَى بَيْتِهِ الْمُمَثَّلِ بِالنُّقْطَةِ \" د \".",
+      "body": "* ارْسُمْ عَلَى الشَّبَكَةِ جانِبًا النُّقَطَ الْمَذْكُورَةَ فِي السَّنَدِ حَسَبَ إِحْدَاثِيَّاتِهَا التَّالِيَةِ:\nك ( 3 ، 2 ) – ح ( 4 ، 4 ) – د ( 0 ، 3 )",
+      "figureDesc": "Utiliser le même quadrillage pour placer les points.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "al_ahram_5eme_complet_p004_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "يَنْتَقِلُ طَاهِرٌ بَيْنَ الْمَوَاقِعِ الْمَذْكُورَةِ سَابِقًا مَارًّا بِعُقَدِ الشَّبَكَةِ وَحُوَيًّا.",
+      "body": "* كَمْ خُطْوَةً يَقْطَعُ طَاهِرٌ مِنْ بَيْتِهِ إِلَى الْكُتُبِيَّةِ؟\n* كَمْ خُطْوَةً يَقْطَعُ طَاهِرٌ مِنَ الْكُتُبِيَّةِ إِلَى حَدِيقَةِ الْحَيَوَانَاتِ؟\n* كَمْ خُطْوَةً يَقْطَعُ طَاهِرٌ مِنَ الْحَدِيقَةِ إِلَى بَيْتِهِ؟\n- بَيْنَ الْبَيْتِ وَالْكُتُبِيَّةِ: ......... خُطُوَات.\n- بَيْنَ الْكُتُبِيَّةِ وَحَدِيقَةِ الْحَيَوَانَاتِ: ......... خُطْوَة.\n- بَيْنَ الْحَدِيقَةِ وَبَيْتِ طَاهِرٍ: ......... خُطْوَة.\n- إِذَا كَانَ طُولُ الْخُطْوَةِ فِي الْحَقِيقَةِ 50 م. فَمَا هُوَ طُولُ الْمَسَافَةِ الَّتِي يَقْطَعُهَا طَاهِرٌ يَوْمَ الأَحَدِ؟",
+      "figureDesc": "Lignes pointillées vides en bas de page pour la réponse.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p004_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

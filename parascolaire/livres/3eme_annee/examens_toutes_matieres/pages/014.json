@@ -1,0 +1,110 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 14,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قواعد اللغة – اختبار نهاية الثلاثي الأول، عدد 2 (الجملة التامة المعنى، الضمائر المتصلة بالفعل، الإفراد والجمع والمؤنث)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَقْرَأُ النَّصَّ وَأَسْتَخْرِجُ ثَلاثَ جُمَلٍ تُبَيِّنُ أَعْمَالَ الْجَدِّ.",
+      "body": "هَا هِيَ الشَّمْسُ تَمِيلُ إِلَى الْغُرُوبِ وَالْحَرَكَةُ فِي الْقَرْيَةِ بَدَأَتْ تَهْدَأُ شَيْئًا فَشَيْئًا. عِنْدَهَا نَهَضَ الْجَدُّ مِنْ مَكَانِهِ وَاتَّجَهَ نَحْوَ الْحَنَفِيَّةِ وَشَرَعَ يَتَوَضَّأُ فَأَذَانُ صَلاةِ الْمَغْرِبِ عَلَى وَشَكٍ أَنْ يَصْدَحَ صَوْتُهُ مِنَ الصَّوْمَعَةِ.\nالْجُمْلَةُ 1 : ................\nالْجُمْلَةُ 2 : ................\nالْجُمْلَةُ 3 : ................\n(0,5 نقطة لكل جملة؛ المعيار: معـ1)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p014_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُلَوِّنُ خَانَةَ كُلِّ جُمْلَةٍ تَامَّةِ الْمَعْنَى.",
+      "body": "مَائِدَةُ الْإِفْطَارِ\nجَهَّزَتِ الْأُمُّ مَائِدَةَ الْإِفْطَارِ\nيُشَاهِدُ الْأَطْفَالَ الصِّغَارُ\nيُشَاهِدُ الْأَطْفَالُ بَرَامِجَ التِّلْفَازِ\nعَادَ الْجَدُّ مِنَ الْمَسْجِدِ.\nتَنَاوَلَتِ الْجَدَّةُ خَدِيجَةُ\n(0,5 نقطة لكل جملة؛ المعيار: معـ ب)",
+      "figureDesc": "ست جمل، أمام كل واحدة دائرة صغيرة للتلوين",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p014_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْتُبُ فِي كُلِّ فَرَاغٍ الْكَلِمَةَ الْمُنَاسِبَةَ مِمَّا يَلِي لِتَكْتَمِلَ الْجُمَلُ.",
+      "body": "مَلَأً - شَرِبُوا - بَسْمَلَ - تَحَلَّقُوا - مَلَأَتْ - تَحَلَّقَ - بَسْمَلَتْ\n• أَفْرَادُ الْأُسْرَةِ ................ حَوْلَ مَائِدَةِ الْإِفْطَارِ.\n• الصَّبِيُّ حَيْدَرُ ................ قَبْلَ الشُّرُوعِ فِي الْأَكْلِ.\n• الْأُمُّ ................ الْكُوُوسَ عَصِيرًا.\n(0,5 نقطة لكل جملة؛ المعيار: معـ ج)",
+      "figureDesc": "إطار رمادي يحتوي على قائمة الكلمات المقترحة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p014_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَرْبُطُ الضَّمِيرَ بِالْجُمْلَةِ الْمُنَاسِبَةِ.",
+      "body": "الضمائر: أَنَا - هِيَ - نَحْنُ - هُنَّ - هُمْ\nالجمل:\n• غَسَلْنَا أَيْدِيَنَا قَبْلَ الْأَكْلِ.\n• غَسَلْنَ أَيْدِيَهُنَّ قَبْلَ الْأَكْلِ.\n• غَسَلْتُ يَدَيَّ قَبْلَ الْأَكْلِ.\n(0,5 نقطة لكل ربط؛ المعيار: معـ ج)",
+      "figureDesc": "عمود ضمائر على اليمين وعمود جمل على اليسار، تربط بينها أسهم/خطوط بنقاط",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p014_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u1",
+    "confidence": 0.12
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un test de fin de premier trimestre (grammaire : phrase complète, pronoms suffixes, singulier/pluriel/féminin) qui couvre plusieurs notions, et aucune des unités officielles (centrées sur personnages/actions, repères temporels ou spatiaux) ne correspond précisément, donc topicId null.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Grammaire : phrase complète, pronoms suffixes",
+    "skill": "Identifier une phrase au sens complet, compléter des phrases avec le verbe conjugué adapté et relier chaque pronom à sa phrase.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "texte_a_trous",
+      "appariement"
+    ],
+    "keywords": [
+      "grammaire arabe",
+      "phrase complète",
+      "pronoms suffixes",
+      "conjugaison",
+      "accord singulier-pluriel-féminin",
+      "évaluation trimestrielle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série d'exercices de grammaire construite autour d'un même contexte (le repas de rupture du jeûne en famille), avec des critères d'évaluation notés et des formats variés : extraction de phrases d'un texte, coloriage des phrases complètes, texte à trous avec banque de mots et appariement pronom-phrase.",
+    "themeGroup": "Grammaire : pronoms personnels"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

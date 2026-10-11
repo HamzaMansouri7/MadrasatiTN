@@ -1,0 +1,159 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 57,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "أنواع الزوايا (الأسبوع 14) : زاوية قائمة، زاوية حادة، زاوية منفرجة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "استعمل الورق الشفاف.",
+      "body": "أذكر الزّوايا التي فتحتها أصغر من الزّاوية ❶ .\n- أذكر الزّوايا التي فتحتها أكبر من الزّاوية ❶ .",
+      "figureDesc": "Cinq angles numérotés de 1 à 5. L'angle 1 est un angle droit (marqué d'un petit carré). Les angles 2, 3, 4 et 5 sont dessinés à côté, certains aigus et d'autres obtus.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p057_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "استعن بكوسك للبحث عن جميع الزّوايا القائمة بالرّسم.",
+      "body": "أكتب جميع الزّوايا الحادّة وكذلك الزّوايا المنفرجة.",
+      "figureDesc": "Figure polygonale divisée en triangles à partir d'un même sommet à gauche. Angles numérotés de 1 à 9 à l'intérieur de la figure.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p057_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم الزّاوية التي رأسها \"أ\" ولها فتحة أصغر من فتحة الزّاوية القائمة.",
+      "body": "- أرسم زاوية أخرى رأسها \"ن\" ولها فتحة أكبر من فتحة الزّاوية القائمة.",
+      "figureDesc": "Une demi-droite horizontale avec les points «أ» et «ن» marqués en dessous, qui serviront de sommets des angles à tracer.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p057_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "في الرّسم زاويتان لهما نفس قيس الفتحة. ما هما ؟",
+      "body": "- في الرّسم زاوية قائمة. ما هي ؟",
+      "figureDesc": "Quadrilatère avec les sommets nommés ج (à gauche), ب (en haut), أ (à droite) et د (en bas).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p057_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "ساعد مهدي على تلوين الطريق التي يريد أن يسلكها للذهاب إلى المدرسة.",
+      "body": "علمًا وأنّهُ كلّما وصل إلى عقدة يَنْعَطِفُ ليكوّن زاوية قائمة.",
+      "figureDesc": "Réseau de chemins en lignes brisées avec des nœuds (points). Mehdi (un bonhomme) part en bas à gauche, l'école (مدرسة) est à droite. Certaines zones sont pointillées.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p057_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-4-m5",
+    "confidence": 0.2
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les types d'angles (droit, aigu, obtus) en mathématiques, notion géométrique proche des droites perpendiculaires de la Période 1 (angle droit à l'équerre), mais aucun chapitre officiel ne traite explicitement des angles, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Types d'angles (droit, aigu, obtus)",
+    "skill": "Identifier, comparer et tracer des angles droits, aigus et obtus à l'aide du papier calque et de l'équerre.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "angle droit",
+      "angle aigu",
+      "angle obtus",
+      "équerre",
+      "papier calque",
+      "comparaison d'angles"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Activités variées de comparaison d'angles par superposition au papier calque, de repérage à l'équerre, de tracé et un labyrinthe ludique où l'on colorie le chemin d'un élève vers l'école en tournant à angle droit à chaque nœud.",
+    "themeGroup": "Angles"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre de la page omis : «أنواع الزوايــا» ainsi que «الأسبوع 14» et le numéro de page 53"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 2 : «بكوسك» est écrit « بكوسك » dans la transcription, ce qui est correct selon l'image ; pas d'erreur. En revanche «الزّوايا» (ex. 1, 2, 3, 4) : l'image porte «الزَّوايا/الزّوايا» ; l'écart est mineur"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 5 : «الطريق التي» reproduit fidèlement l'image (pas de correction) ; mais «علمًا وأنّهُ كلّما وصل إلى عقدة» est correct. «ينعطف» est correct. Aucune erreur de mot grave constatée"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : «استعمل» et «أذكر» sont sans voyelles dans l'image ; la transcription ajoute des chadda sur «الزّوايا» alors que l'image présente «الزَّوايا» avec fatha + chadda ; incohérence mineure"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3 : les lettres «أ» et «ن» sous le segment de droite ne sont pas mentionnées ; les numéros ❶ à ❾ des angles et les lettres «أ، ب، ج، د» de l'exercice 4 ne sont pas mentionnés (figures)"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 1 : la transcription répète ❶ pour les deux questions, ce qui correspond à l'image (angle ❹ de référence : l'image montre ❹ pour l'angle droit). Le symbole ❶ est donc fautif : la bonne valeur est ❹"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 5 : le mot «مدرسة» figurant sur le dessin n'est pas transcrit"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

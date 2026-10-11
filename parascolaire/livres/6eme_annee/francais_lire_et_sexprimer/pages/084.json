@@ -1,0 +1,108 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 84,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite – Thème 7 : la lettre",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Voici le schéma d'une lettre :",
+      "body": "Lieu/date\nLa formule pour s'adresser au destinataire : ______\nLe corps de la lettre : ______ ______ ______\nLa formule de fin\nLa signature",
+      "figureDesc": "Encadré présentant le schéma d'une lettre : lieu/date en haut à droite, formule d'adresse au destinataire sur une ligne, corps de la lettre sur trois lignes, formule de fin puis signature en bas à droite.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p084_i1",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "Lettre 1",
+      "instruction": "Lettre 1 :",
+      "body": "Très cher Philippe,\nFrance, le 2 juin 2017\nJe suis allé en France, il y a deux semaines. J'ai passé mes vacances sur la Côte d'Azur à Nice. Je suis parti avec ma famille en avion. Le vol a été fantastique. Pendant le voyage, j'ai écouté mon MP3, j'ai regardé un film, j'ai mangé du poulet et j'ai bu un coca. Nous sommes partis le 4 mai pendant environ deux semaines.\nNous avons logé dans un hôtel qui a coûté 100 dinars par nuit. Je préfère loger dans un hôtel parce qu'il y a la piscine et le restaurant mais la chambre était trop petite. Cependant, dans cet hôtel il y avait de très bons cafés, un restaurant excellent et une boîte de nuit vraiment à la mode.\nLe matin, je faisais la grasse matinée. Je restais au lit jusqu'à 10 heures.\nEnsuite, je prenais le petit déjeuner tranquillement sur la terrasse ou à la piscine et j'allais à la plage. Le soleil brillait et il faisait chaud. Je nageais dans la mer et comme il y avait le soleil, je me suis bien bronzé. Je me suis détendu sur la plage. Cependant il a plu pendant deux jours. Alors, j'ai visité la ville. À Nice, j'ai fait des achats dans les magasins ; j'ai acheté des souvenirs pour moi et mes amis et j'ai visité les musées de Nice. L'après-midi, je me reposais un peu ou bien je jouais au tennis et au foot à l'hôtel. Je me suis amusé en famille. Le soir, je fréquentais les discothèques avec ma sœur et nous nous couchions très tard dans la nuit.\nFinalement, nous sommes retournés en Angleterre le 18 mai. Quelles Vacances !\nGrosses bises\nDaniel",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p084_i2",
+      "topicId": "fr-6-m7",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m7",
+  "topicTitle": "Module 7 : Profiter de son temps libre",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.37
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page porte sur le schéma d'une lettre amicale (lieu/date, formule d'adresse, corps, formule de fin, signature) et sur un exemple de lettre de vacances, ce qui correspond à la rédaction d'une lettre amicale du Module 7.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "La lettre personnelle",
+    "skill": "Identifier la structure d'une lettre et rédiger une lettre à un ami pour raconter ses vacances.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "lettre",
+      "expression écrite",
+      "schéma de la lettre",
+      "formule d'adresse",
+      "vacances",
+      "destinataire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un schéma à compléter (lieu/date, formule d'appel, corps, formule de fin, signature) associé à une lettre modèle sur des vacances, réutilisable pour des exercices de repérage des parties puis de rédaction guidée.",
+    "themeGroup": "Production écrite et lettres"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « Sagesse », « 6ème année de base », « Expression écrite », « Thème 7 : la lettre »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », numéro de page « 83 », « 6ème année de base »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "« Lettre 1 » est transcrit avec le chiffre 1, alors que l'image montre « Lettre I ». Le texte « Très cher Philippe, » est bien placé avec la date, mais la mention « réponse: None » est un artefact inutile."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« le18 mai » est écrit sans espace dans l'image, ce que la transcription a corrigé en « le 18 mai ». C'est une normalisation et non une vraie erreur."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les balises « réponse: None » et les marqueurs « [] » / « [Lettre 1] » ne figurent pas dans l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,183 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 104,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Langue française : structures (pronoms compléments, interrogation, cause, voix passive, discours indirect) et conjugaison (thème : technologie et intelligence artificielle)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Remplace les compléments d'objet soulignés par les pronoms compléments convenables dans la phrase suivante :",
+      "body": "- Les caméras permettent au robot de reconnaître le visage des gens. (« au robot » et « le visage des gens » sont soulignés) - ................ (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p104_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Transforme la phrase suivante en phrase interrogative :",
+      "body": "- L'intelligence artificielle permet à la machine d'imiter le cerveau humain. - ................ (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p104_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Exprime la cause en reliant les deux propositions suivantes :",
+      "body": "- L'internet expose les informations personnelles. - La vie privée est menacée. - ................ (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p104_i3",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Transforme la phrase suivante à la voix passive :",
+      "body": "- Les entreprises américaines développent une technologie de pointe. - ................ (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p104_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Ecris la phrase suivante au discours indirect :",
+      "body": "- Albert Einstein dit : « aujourd'hui, la technologie dépasse notre humanité ». - ................ (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p104_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C1",
+      "instruction": "C. Conjugaison : (6pts) — Mets les verbes entre parenthèses au temps convenable.",
+      "body": "- Maintenant, la technologie (faciliter) ................ l'accès à l'information et (garantir) ................ la découverte du monde. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p104_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C2",
+      "instruction": "Ecris le verbe au futur de l'indicatif.",
+      "body": "- Grâce à la technologie, les voitures (pouvoir) ................ rouler sans conducteurs. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p104_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C3",
+      "instruction": "Conjugue le verbe donné au passé composé.",
+      "body": "- L'internet (changer) ................ notre mode de vie. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p104_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C4",
+      "instruction": "Mets les verbes entre parenthèses à l'imparfait.",
+      "body": "- Autrefois, nous (transmettre) ................ les messages de bouche à oreille. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p104_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C5",
+      "instruction": "Mets le verbe en gras à l'impératif présent.",
+      "body": "- Faites attention et ne (dire) ................ aucune information personnelle. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p104_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m4",
+    "confidence": 0.24
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation générale de français qui mélange pronoms compléments, interrogation, cause, voix passive, discours indirect et conjugaison (présent, futur, passé composé), donc elle ne correspond à aucun chapitre unique (le module 4 ne couvre que les pronoms compléments).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Structures et conjugaison : technologie",
+    "skill": "Appliquer les transformations grammaticales (pronoms compléments, interrogation, cause, voix passive, discours indirect) et conjuguer des verbes à différents temps.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "pronoms compléments",
+      "voix passive",
+      "discours indirect",
+      "expression de la cause",
+      "conjugaison",
+      "intelligence artificielle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série d'exercices courts à une phrase, notés sur 1 point chacun, qui font travailler une notion de grammaire ou de conjugaison à partir d'un thème actuel (technologie, IA, vie privée) et qui conviennent bien à une évaluation de fin de trimestre.",
+    "themeGroup": "Internet et technologies"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

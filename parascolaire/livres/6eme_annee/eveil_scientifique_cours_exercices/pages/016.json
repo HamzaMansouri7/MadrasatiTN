@@ -1,0 +1,424 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 16,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "جِهَازُ الدَّوَرَانِ : الدَّمُ يَنْقُلُ الغِذَاءَ وَالغَازَاتِ (L'appareil circulatoire : le sang transporte les aliments et les gaz)",
+  "items": [
+    {
+      "kind": "title",
+      "number": "",
+      "instruction": "جِهَازُ الدَّوَرَانِ : الدَّمُ يَنْقُلُ الغِذَاءَ وَالغَازَاتِ",
+      "body": "",
+      "figureDesc": "Petit schéma en haut à droite : capillaires reliant artère (شريان, en rouge) et veine (وريد, en bleu). Page 41.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p016_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) لَاحِظْ أَرْقَامَ الَّتِي عَلَى الرَّسْمِ ثُمَّ اُكْتُبْ كُلَّ رَقْمٍ فِي المُرَبَّعِ المُنَاسِبِ :",
+      "body": "- فِي هَذِهِ المَرْحَلَةِ تَتِمُّ تنقية الدَّم حيث يتخلَّص الدم من ثاني أكسيد الكربون وبخار الماء ويُحمَّلُ بالاكسجين. [مربع فارغ]\n- فِي هَذِهِ المَرْحَلَةِ يَقُومُ الدَّمُ بِنَقْلِ الغِذَاءِ المَهْضُومِ. [مربع فارغ]\n- فِي هَذِهِ المَرْحَلَةِ وَبِالتَّحْدِيدِ فِي الشُّعَيْرَاتِ الدَّمَوِيَّةِ يَتِمُّ تَبَادُلُ الأُكْسِجِينِ وَالأَغْذِيَةِ المَهْضُومَةِ وَيُحَمَّلُ الدَّمُ بِغَازِ ثَانِي أَكْسِيدِ الكَرْبُونِ وَالفَضَلَاتِ. [مربع فارغ]\n- فِي هَذِهِ المَرْحَلَةِ يَتَخَلَّصُ الدَّمُ مِنْ نِفَايَاتِهِ. [المربع: 3]",
+      "figureDesc": "Schéma d'un garçon avec les appareils respiratoire (هواء، رئة), digestif (غذاء، معدة، معي، غائط), circulatoire (قلب) et excréteur (كلية، مثانة، بول), muscle (عضو الجسم). Quatre points numérotés (① à ④) marquent les étapes, avec des flèches rouges de circulation.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p016_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "ب",
+      "instruction": "أَيْنَ تَتِمُّ عَمَلِيَّةُ تَبَادُلِ الأُكْسِجِينِ وَثَانِي أُكْسِيدِ الكَرْبُونِ بَيْنَ جِهَازِ التَّنَفُّسِ وَالجِهَازِ الدَّوْرِيِّ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p016_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "ج",
+      "instruction": "أَيْنَ تَتِمُّ عَمَلِيَّةُ تَبَادُلِ المَوَادِّ الغِذَائِيَّةِ بَيْنَ جِهَازِ الهَضْمِ وَالجِهَازِ الدَّوْرِيِّ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p016_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "د",
+      "instruction": "مَاهِيَ صِلَةُ الوَصْلِ بَيْنَ الأَجْهِزَةِ الثَّلَاثَةِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p016_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "هـ",
+      "instruction": "مَاهِيَ نَتِيجَةُ حُصُولِ خَلَلٍ فِي أَيٍّ مِنْ هَذِهِ الأَجْهِزَةِ عَلَى الجِسْمِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p016_i6"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "هل تعلم",
+      "body": "هل تعلم أن الدم الذي يمر في الرئتين يقدر بحوالي 8 000 لتر في 24 ساعة.",
+      "figureDesc": "Encadré bleu « Le savais-tu ? »",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p016_i7"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "هل تعلم",
+      "body": "هل تعلم أن حوالي 1650 لترا من الدم تعبر الكليتين يوميا أي تكاد 5 لترات من الدم تمر بإحدى الكليتين حوالي 330 مرة في اليوم.",
+      "figureDesc": "Encadré bleu « Le savais-tu ? »",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "eveil_scientifique_cours_exercices_p016_i8"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.74
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite de l'appareil circulatoire : le sang transporte les aliments et les gaz, avec les échanges entre les appareils respiratoire, digestif et circulatoire. Cela correspond à l'unité 3 (système circulatoire et composition du sang).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Circulation sanguine et échanges",
+    "skill": "Relier le rôle du sang dans le transport des gaz et des nutriments aux appareils respiratoire, digestif et circulatoire.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "appareil circulatoire",
+      "sang",
+      "oxygène",
+      "dioxyde de carbone",
+      "nutriments",
+      "échanges gazeux"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : exploiter un schéma numéroté pour associer chaque étape du trajet du sang à sa fonction (épuration, transport des aliments), puis des questions de synthèse sur les lieux d'échange et les conséquences d'un dysfonctionnement, avec des encadrés « Le savais-tu ? » à base de chiffres.",
+    "themeGroup": "La circulation sanguine et le sang"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel ajouté alors que l'image n'en montre que partiellement (ex. الأُكْسِجِينِ, الكَرْبُونِ). L'image porte: بالاكسجين، أكسيد الكربون, sans voyelles sur ces mots."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«بِالأُكْسِجِينِ» dans l'image: «بالاكسجين» (sans voyelles); «أَرْقَامَ الَّتِي» vs image «أَرْقَامَ الَّتِي» : l'image a «أَرْقَام» sans fatha finale visible, mineur."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«لَاحِظْ» dans l'image: «لاحظ» sans voyelles; «صِلَةُ الوَصْلِ» correct, mais «مَا هِيَ» est «ماهي» dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الجِهَازِ الدَّوَرِيِّ» : l'image a «الدَّوْرِيِّ» (sukun sur le waw), pas «الدَّوَرِيِّ»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الدَّمَوِيَّةِ» : l'image a «الدَّمَوِيَّةِ»; le mot «الفَضَلَاتِ» est «الفَضَلَات» ok. «تَنْقِيَةُ» correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Titre de page absent: «جِهَازُ الدَّوَرَانِ : الدَّمُ يَنْقُلُ الغِذَاءَ وَالغَازَاتِ» ainsi que le numéro de page 41."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Étiquettes du schéma absentes: هواء، غذاء، رئة، معدة، قلب، معي، كلية، مثانة، غائط، بول، عضو الجسم, numéros ①②③④ et شريان/وريد."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les cases vides: le 3 est placé dans la case de la 4e phrase, correct, mais le numéro d'exercice est affiché «1» dans l'étoile (transcrit [1]) ok; l'étiquette «[ب]» devrait être «ب)» format mineur."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "«8 000» : image «000 8»; ok. «330» et «1650» corrects."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de la page est absent de la transcription. L'image porte « جِهَازُ الدَّوَرَانِ : الدَّمُ يَنْقُلُ الغِذَاءَ وَالغَازَاتِ ». Le numéro de page 41 est aussi omis (mineur)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans la première phrase de l'exercice, l'image n'a presque pas de voyelles : « تتمُّ تنقية الدَّم حيث يتخلَّص الدم من ثاني أكسيد الكربون وبخار الماء ويُحمَّلُ بالاكسجين ». La transcription ajoute un tashkeel complet (وَبُخَارِ الماءِ, بِالأُكْسِجِينِ, ثَانِي أُكْسِيدِ الكَرْبُونِ). La graphie « بالاكسجين » sans hamza ni voyelles est confirmée."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الدَّوَرِيِّ » (questions ب et ج) : l'image porte « الدَّوْرِيِّ », avec sukun sur le waw."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« مَا هِيَ » (questions د et هـ) : l'image écrit « مَاهِيَ » en un seul mot."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans la 3e phrase, « ثَانِي أُكْسِيدِ » est lu « ثَانِي أَكْسِيدِ » dans l'image (fatha sur le alif)."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "Les questions ب, ج, د, هـ sont des sous-questions de l'exercice 1 mais sont transcrites comme des exercices séparés. C'est acceptable. L'item « أ) » a le même format et n'est pas touché."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "title",
+      "number": "",
+      "instruction": "جِهَازُ الدَّوَرَانِ : الدَّمُ يَنْقُلُ الغِذَاءَ وَالغَازَاتِ",
+      "body": "",
+      "figureDesc": "Petit schéma en haut à droite : capillaires reliant artère (شريان, en rouge) et veine (وريد, en bleu). Page 41.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) لَاحِظْ أَرْقَامَ الَّتِي عَلَى الرَّسْمِ ثُمَّ اُكْتُبْ كُلَّ رَقْمٍ فِي المُرَبَّعِ المُنَاسِبِ :",
+      "body": "- فِي هَذِهِ المَرْحَلَةِ تَتِمُّ تنقية الدَّم حيث يتخلَّص الدم من ثاني أكسيد الكربون وبخار الماء ويُحمَّلُ بالاكسجين. [مربع فارغ]\n- فِي هَذِهِ المَرْحَلَةِ يَقُومُ الدَّمُ بِنَقْلِ الغِذَاءِ المَهْضُومِ. [مربع فارغ]\n- فِي هَذِهِ المَرْحَلَةِ وَبِالتَّحْدِيدِ فِي الشُّعَيْرَاتِ الدَّمَوِيَّةِ يَتِمُّ تَبَادُلُ الأُكْسِجِينِ وَالأَغْذِيَةِ المَهْضُومَةِ وَيُحَمَّلُ الدَّمُ بِغَازِ ثَانِي أَكْسِيدِ الكَرْبُونِ وَالفَضَلَاتِ. [مربع فارغ]\n- فِي هَذِهِ المَرْحَلَةِ يَتَخَلَّصُ الدَّمُ مِنْ نِفَايَاتِهِ. [المربع: 3]",
+      "figureDesc": "Schéma d'un garçon avec les appareils respiratoire (هواء، رئة), digestif (غذاء، معدة، معي، غائط), circulatoire (قلب) et excréteur (كلية، مثانة، بول), muscle (عضو الجسم). Quatre points numérotés (① à ④) marquent les étapes, avec des flèches rouges de circulation.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "ب",
+      "instruction": "أَيْنَ تَتِمُّ عَمَلِيَّةُ تَبَادُلِ الأُكْسِجِينِ وَثَانِي أُكْسِيدِ الكَرْبُونِ بَيْنَ جِهَازِ التَّنَفُّسِ وَالجِهَازِ الدَّوْرِيِّ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "ج",
+      "instruction": "أَيْنَ تَتِمُّ عَمَلِيَّةُ تَبَادُلِ المَوَادِّ الغِذَائِيَّةِ بَيْنَ جِهَازِ الهَضْمِ وَالجِهَازِ الدَّوْرِيِّ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "د",
+      "instruction": "مَاهِيَ صِلَةُ الوَصْلِ بَيْنَ الأَجْهِزَةِ الثَّلَاثَةِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "هـ",
+      "instruction": "مَاهِيَ نَتِيجَةُ حُصُولِ خَلَلٍ فِي أَيٍّ مِنْ هَذِهِ الأَجْهِزَةِ عَلَى الجِسْمِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i6"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "هل تعلم",
+      "body": "هل تعلم أن الدم الذي يمر في الرئتين يقدر بحوالي 8 000 لتر في 24 ساعة.",
+      "figureDesc": "Encadré bleu « Le savais-tu ? »",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i7"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "هل تعلم",
+      "body": "هل تعلم أن حوالي 1650 لترا من الدم تعبر الكليتين يوميا أي تكاد 5 لترات من الدم تمر بإحدى الكليتين حوالي 330 مرة في اليوم.",
+      "figureDesc": "Encadré bleu « Le savais-tu ? »",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i8"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) لَاحِظْ أَرْقَامَ الَّتِي عَلَى الرَّسْمِ ثُمَّ اُكْتُبْ كُلَّ رَقْمٍ فِي المُرَبَّعِ المُنَاسِبِ :",
+      "body": "- فِي هَذِهِ المَرْحَلَةِ تَتِمُّ تَنْقِيَةُ الدَّمِ حَيْثُ يَتَخَلَّصُ الدَّمُ مِنْ ثَانِي أُكْسِيدِ الكَرْبُونِ وَبُخَارِ الماءِ وَيُحَمَّلُ بِالأُكْسِجِينِ. [مربع فارغ]\n- فِي هَذِهِ المَرْحَلَةِ يَقُومُ الدَّمُ بِنَقْلِ الغِذَاءِ المَهْضُومِ. [مربع فارغ]\n- فِي هَذِهِ المَرْحَلَةِ وَبِالتَّحْدِيدِ فِي الشُّعَيْرَاتِ الدَّمَوِيَّةِ يَتِمُّ تَبَادُلُ الأُكْسِجِينِ وَالأَغْذِيَةِ المَهْضُومَةِ وَيُحَمَّلُ الدَّمُ بِغَازِ ثَانِي أُكْسِيدِ الكَرْبُونِ وَالفَضَلَاتِ. [مربع فارغ]\n- فِي هَذِهِ المَرْحَلَةِ يَتَخَلَّصُ الدَّمُ مِنْ نِفَايَاتِهِ. [المربع: 3]",
+      "figureDesc": "Schéma d'un garçon avec les appareils respiratoire (هواء، رئة), digestif (غذاء، معدة، معي، غائط), circulatoire (قلب) et excréteur (كلية، مثانة، بول), muscle (عضو الجسم). Quatre points numérotés (1 à 4) marquent les étapes, avec des flèches rouges de circulation. En haut à droite, petit schéma des capillaires reliant artère (شريان) et veine (وريد).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "ب",
+      "instruction": "أَيْنَ تَتِمُّ عَمَلِيَّةُ تَبَادُلِ الأُكْسِجِينِ وَثَانِي أُكْسِيدِ الكَرْبُونِ بَيْنَ جِهَازِ التَّنَفُّسِ وَالجِهَازِ الدَّوَرِيِّ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "ج",
+      "instruction": "أَيْنَ تَتِمُّ عَمَلِيَّةُ تَبَادُلِ المَوَادِّ الغِذَائِيَّةِ بَيْنَ جِهَازِ الهَضْمِ وَالجِهَازِ الدَّوَرِيِّ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "د",
+      "instruction": "مَا هِيَ صِلَةُ الوَصْلِ بَيْنَ الأَجْهِزَةِ الثَّلَاثَةِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "هـ",
+      "instruction": "مَا هِيَ نَتِيجَةُ حُصُولِ خَلَلٍ فِي أَيٍّ مِنْ هَذِهِ الأَجْهِزَةِ عَلَى الجِسْمِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i5",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "هل تعلم",
+      "body": "هل تعلم أن الدم الذي يمر في الرئتين يقدر بحوالي 8 000 لتر في 24 ساعة.",
+      "figureDesc": "Encadré bleu « Le savais-tu ? »",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i6",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "هل تعلم",
+      "body": "هل تعلم أن حوالي 1650 لترا من الدم تعبر الكليتين يوميا أي تكاد 5 لترات من الدم تمر بإحدى الكليتين حوالي 330 مرة في اليوم.",
+      "figureDesc": "Encadré bleu « Le savais-tu ? »",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p016_i7",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

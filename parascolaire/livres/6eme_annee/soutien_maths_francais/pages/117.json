@@ -1,0 +1,168 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 117,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Grandeurs et mesures (volume du cylindre) ; Quatrième domaine : Organisation et traitement des données (lecture d'un graphique en ligne brisée)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "17.2",
+      "instruction": "أحسب بالقنطار محصوله الزراعي.",
+      "body": "أحسب بالقنطار محصوله الزراعي. (0,5 ن) — Suite de l'exercice 17 dont l'énoncé figure sur la page précédente (non visible ici). Lignes pointillées pour la réponse.",
+      "figureDesc": "Lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p117_i1",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "18",
+      "instruction": "أحسب باللتر، كمية الماء اللازمة لملء 4/5 حجم الصهريج. (نأخذ π = 3,14)",
+      "body": "مسألة: يستغل بستاني صهريجا للري على شكل أسطوانة قائمة ارتفاعها 25 مترا وقطر قاعدتها 6 أمتار. أحسب باللتر، كمية الماء اللازمة لملء 4/5 حجم الصهريج. (نأخذ π = 3,14) (1,5 ن)",
+      "figureDesc": "Quatre lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p117_i2",
+      "topicId": "math-6-p5",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "19.1",
+      "instruction": "أتمم ملء الجدول التالي انطلاقا من المخطط أعلاه.",
+      "body": "المجال الرابع: تنظيم ومعالجة البيانات (4 نقط). 19- يمثل المخطط بخط منكسر عدد تلاميذ مؤسسة تعليمية الذين زاروا معرض الكتاب المنظم بالعاصمة الرباط خلال ستة أيام. (1 ن). Tableau : الأيام: الأحد، ... ؛ عدد التلاميذ: 400، ...",
+      "figureDesc": "Graphique en ligne brisée : axe vertical « عدد التلاميذ » de 0 à 450 (pas de 50), axe horizontal « الأيام » : الأحد، الاثنين، الثلاثاء، الأربعاء، الخميس، الجمعة. Points approx. : الأحد 400، الاثنين 200، الثلاثاء 250، الأربعاء 350، الخميس 150، الجمعة 210. Tableau à 2 lignes et 7 colonnes à compléter ; seule la case الأحد = 400 est remplie.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p117_i3",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "19.2",
+      "instruction": "ماهو اليوم الذي زار فيه أكبر عدد من التلاميذ المعرض؟",
+      "body": "ماهو اليوم الذي زار فيه أكبر عدد من التلاميذ المعرض؟ (1 ن)",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p117_i4",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "19.3",
+      "instruction": "كم بلغ عدد التلاميذ الذين زاروا المعرض خلال هذه الأيام؟",
+      "body": "كم بلغ عدد التلاميذ الذين زاروا المعرض خلال هذه الأيام؟ (1 ن)",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p117_i5",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "19.4",
+      "instruction": "ما اليومان اللذان سجلا فارق 100 زائر بينهما؟",
+      "body": "ما اليومان اللذان سجلا فارق 100 زائر بينهما؟ (1 ن)",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p117_i6",
+      "topicId": "math-6-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p5",
+  "topicTitle": "Période 5 : Volumes, capacités, temps et diagrammes statistiques",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "math-6-p5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p5",
+    "confidence": 0.19
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur le volume d'un cylindre (citerne) avec conversion en litres et sur la lecture d'un diagramme en ligne brisée, soit les volumes, capacités et diagrammes statistiques de la Période 5.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Volume du cylindre et graphique en ligne brisée",
+    "skill": "Calculer le volume d'un cylindre et en déduire une capacité en litres, puis lire et exploiter un graphique en ligne brisée.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "volume du cylindre",
+      "capacité en litres",
+      "citerne d'irrigation",
+      "ligne brisée",
+      "tableau de données",
+      "fréquentation d'un salon du livre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Deux situations réutilisables : une citerne cylindrique de jardinier dont on calcule la fraction remplie en litres (conversion m³ en L), et une série d'exercices sur la fréquentation d'un salon du livre (compléter un tableau, repérer le maximum, calculer le total, trouver deux jours avec un écart donné).",
+    "themeGroup": "Statistiques et graphiques"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le point (bullet •) devant « أحسب باللتر » dans l'exercice 18 n'est pas signalé ; l'énoncé et la question sont fusionnés dans l'entrée 18."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Dans 19.1, la transcription contient « الأحد، ... ؛ 400، ... » : le tableau est incomplet. Il comporte 6 colonnes de données avec cellules vides, et la ligne d'en-tête « الأيام » / « عدد التلاميذ » n'est pas décrite précisément."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre du domaine (المجال الرابع) et l'énoncé 19 sont placés dans l'entrée 19.1 au lieu d'une entrée séparée ; les points (1 ن) sont mal associés (le 1 ن de 19.1 est placé après l'énoncé)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le graphique (courbe) n'est pas transcrit : valeurs approximatives 400, 200, 250, 350, 160, 210 pour الأحد…الجمعة ; les axes (عدد التلاميذ، الأيام) sont absents."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes pointillées de la première partie en haut de la page (fin de la question précédente) ne sont pas mentionnées ; le numéro de page 4 est omis."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le « 17.2 » est indiqué comme « 2. » dans l'image, avec une note interprétative (« Suite de l'exercice 17 ») qui ne figure pas sur la page ; l'entrée est dupliquée."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

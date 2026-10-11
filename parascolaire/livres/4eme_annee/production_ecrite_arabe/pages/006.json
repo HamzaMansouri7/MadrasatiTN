@@ -1,0 +1,89 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 6,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "نصوص وصفية داعمة للإنتاج الكتابي: وصف الطبيعة (الجداول، البحر، الصحراء)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "ينابيع كثيرة تتفرع منها مئات الجداول فتحدث خريرا دائما يستهوي المارة\nماء يلمع مثل الفضة وهو يجري وسط الحشائش\nمياهها عذبة تنبع من عيون صافية فوارة وتجري في جداول متجهة إلى اليمين تارة وإلى الشمال طورا\nكانت المياه تجري على الحصى في السبيل العريض الطويل الماضي بهدوئه في تعرجات حلوة وكأنها الدم يسري في الشرايين\nبحيرة فضية ماؤها يترقرق ويلمع وكأنه الفضة المذابة ويفور ويغلي",
+      "figureDesc": "مقطع نصي داعم في أعلى الصفحة (تتمة وصف الجداول والينابيع) داخل إطار جدول",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p006_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "البحر",
+      "body": "صفرة رمل وزرقة ماء وصفاء جو وإشراق سماء\nإن البحر هائج وأمواجه تتلاطم على الصخور\nشاطئ البحر متلاطم الأمواج ضفافه فضية بلون الفجر ورماله ذهبية بلون الشمس ومياهه منحدرة كأنها القباب أو السحاب\nكان الماء في البحر أزرق صافيا يحاكي زرقة السماء وصفاء البلور\nبعضهم استلقوا على الرمال الذهبية معرضا بشرته إلى أشعة الشمس الحارقة والبعض الآخر فضل الجلوس في ظل شمسية لمطالعة كتاب بينما امتطت مجموعة من الشبان ألواحا شراعية متحدين الأمواج العاتية\nتلمع رمال شاطئه تحت أشعة الشمس كأنها التبر\nعلى سطح الماء زوارق صغيرة ناشرة أشرعتها كأنها حمائم بيضاء\nكانت أمواج البحر تتلألأ تحت أشعة الشمس الحارقة\nبدأ البحر بعد ذلك يهيج ويثور وأخذت الأمواج تتجمع مرعبة مزبدة\nكانت السفينة تمخر عباب البحر وبينها بين الساحل آلاف الأمتار\nبدت الأمواج كالجبال الهائجة تزبد وتزمجر وبدت المراكب أشلاء ممزقة تقذف بها الرياح العاتية في كل الاتجاهات\nكان البحر أزرق صافيا يحاكي زرقة السماء وصفاء البلور",
+      "figureDesc": "خانة جدول بعنوان «البحر» تحتوي على جمل وصفية للبحر",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p006_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الصحراء",
+      "body": "توغلنا في قلب الصحراء فامتدت أمامنا الرمال رداء يلف الدنيا من حولنا بصفرة فيها بريق الذهب ولمعان التبر\nواحة يتوجها النخيل وتخترقها المسارب والجداول يترقرق فيها الماء على مهل يتلألأ تحت أشعة شمس كأنها لا تغيب أبدا\nتستنشق عبير الصحراء فيدغدغك البخور المحمل بشيء من رائحة الشيح والسعتر\nهبت عليهم عاصفة رملية فامتلأت الأرض والسماء بالرياح الشديدة",
+      "figureDesc": "خانة جدول بعنوان «الصحراء» تحتوي على جمل وصفية للصحراء، والنص مقطوع في أسفل الصفحة",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p006_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.39
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page présente des textes descriptifs de la nature (ruisseaux, mer, désert) pour la production écrite en arabe, mais aucune unité officielle ne traite de la description de paysages : les unités 4 et 5 portent sur la description des personnages dans le récit.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description de la nature",
+    "skill": "S'appuyer sur des textes modèles pour rédiger une description de paysages naturels (ruisseaux, mer, désert) en utilisant un lexique riche et des images.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "description",
+      "nature",
+      "ruisseaux",
+      "mer",
+      "désert",
+      "figures de style"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque d'extraits descriptifs classés par paysage (eau courante, mer, désert/oasis), réutilisable pour créer des fiches de vocabulaire, des exercices de repérage de comparaisons et des sujets de rédaction descriptive guidée.",
+    "themeGroup": "Description de la nature et des paysages"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

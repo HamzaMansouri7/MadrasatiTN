@@ -1,0 +1,161 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 32,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 17: أتعرّف سلسلتين من الأعداد الصحيحة الطبيعية المتناسبة طردا (matière réelle : mathématiques, la proportionnalité)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "17",
+      "instruction": "الدَّرْس 17 : أتَعَرَّفُ سلسلتين مِنَ الأعداد الصحيحة الطبيعية المتناسبة طردا",
+      "body": "",
+      "figureDesc": "Bandeau décoratif de titre avec le chiffre 5 (السنة 5)",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_evaluations_p032_i1",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أعَدَّ كُتُبِيٌّ لَافِتَاتٍ تُبَيِّنُ أَثْمَانَ بَيْعِ الكُرَّاسَاتِ، سَاعِدْهُ عَلَى إِتْمَامِ هَذِهِ اللَّافِتَةِ :",
+      "body": "عَدَدُ الكُرَّاسَات : 1 | 2 | 3 | ........ | ........ | 10 | (case vide). الثَّمَنُ بالمِلِّيم : 330 | ........ | ........ | 1650 | 2640 | ........ | 3960",
+      "figureDesc": "Tableau de proportionnalité à 2 lignes (nombre de cahiers / prix en millimes) avec cases à compléter ; lu de droite à gauche",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p032_i2",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "مُقْطَعُ تَذَاكِرَ فِي حَافِلَةٍ يُحْصِي الرَّاكِبِينَ فِي كُلِّ المَحَطَّاتِ وَيُسَجِّلُ المَدْخُولَ المُتَأَتِّيَ مِنْ بَيْعِ التَّذَاكِرِ. • أَكْمِلِ الجَدْوَلَ التَّالِيَ لِتَعْرِفَ طَبِيعَةَ عَمَلِهِ.",
+      "body": "المَحَطَّات : 1 | 2 | 3 | 4 | 5 | 6 | 7. عَدَدُ الرَّاكِبِين : ........ | ........ | 23 | 25 | ........ | 45 | 50. المَدْخُولُ بِالمِلِّي : 7310 | 8170 | ........ | ........ | 13760 | ........ | 21500",
+      "figureDesc": "Tableau à 3 lignes (stations, nombre de passagers, recette en millimes) avec cases à compléter",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p032_i3",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-أ",
+      "instruction": "مَرِيضٌ بِدَاءِ السُّكَّرِيِّ يَتَنَاوَلُ كُلَّ يَوْمٍ 3 أَقْرَاصٍ، يَشْتَرِي عُلْبَةَ الدَّوَاءِ وَبِهَا 30 قُرْصًا. أ- أَكْمِلِ الجَدْوَلَ التَّالِيَ لِتَعْرِفَ كَمْ يَسْتَهْلِكُ هَذَا المَرِيضُ فِي ثَلَاثَةِ أَشْهُرٍ؟",
+      "body": "عَدَدُ الأَشْهُر : 1 | 2 | 3. عَدَدُ العُلَب : ........ | ........ | ......... عَدَدُ الأَقْرَاص : ........ | ........ | ........",
+      "figureDesc": "Tableau à 3 lignes (mois, nombre de boîtes, nombre de comprimés) avec cases vides à compléter",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p032_i4",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-ب",
+      "instruction": "ب- لَوْ يَشْتَرِي هَذَا المَرِيضُ عُلَبَ دَوَاءٍ ذَاتَ 20 قُرْصًا. كَمْ عُلْبَةً تَلْزَمُهُ فِي هَذِهِ المُدَّةِ ؟",
+      "body": "",
+      "figureDesc": "Trois lignes pointillées pour écrire la réponse",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p032_i5",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p5",
+  "topicTitle": "Période 5 : Fractions, pourcentages, proportionnalité et solides",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p5",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la proportionnalité, avec des tableaux de nombres entiers proportionnels à compléter (cahiers, billets de bus, boîtes de médicaments), ce qui correspond à la Période 5 (fractions, pourcentages, proportionnalité et solides).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Proportionnalité entre deux suites d'entiers",
+    "skill": "Reconnaître et compléter deux suites d'entiers directement proportionnelles en utilisant le coefficient de proportionnalité ou le passage par l'unité.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "proportionnalité",
+      "tableau de proportionnalité",
+      "coefficient",
+      "suites de nombres",
+      "problèmes de la vie quotidienne"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des situations concrètes (étiquette de prix en papeterie, recettes d'un contrôleur de bus, consommation mensuelle de médicaments) servent à compléter des tableaux de proportionnalité, avec une question finale qui change l'unité (boîtes de 30 ou de 20 comprimés) pour faire raisonner sur le total.",
+    "themeGroup": "Proportionnalité et problèmes de mesures"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 1, tableau : la ligne des prix est dans l'ordre inverse (RTL) par rapport à celui de la transcription. Image, de droite à gauche : 330 | vide | vide | 1650 | 2640 | vide | 3960. La transcription met 1650 en 4e colonne et 2640 en 5e, alors que sur l'image 1650 est en 4e colonne et 2640 en 5e. L'ordre est donc correct, mais la ligne du nombre de cahiers diffère : l'image donne 1, 2, 3, vide, vide, 10, vide, ce qui est cohérent avec la transcription."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 2, ligne du revenu : l'image (de droite à gauche) donne 7310, 8170, vide, vide, 13760, vide, 21500. La transcription est correcte."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre : 'سلسلتين' est écrit sans voyelles, alors que le reste du titre est vocalisé de façon incohérente. Le titre de l'image porte des voyelles (سِلْسِلَتَيْنِ، الصَّحِيحَةِ، الطَّبِيعِيَّةِ، المُتَناسِبَةِ طَرْدًا)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : 'مُقْطَعُ' est une faute, l'image porte 'مُقْتَطِعُ' (مُقتطِع تذاكر)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : 'كُتُبِيٌّ' correspond bien à l'image 'كُتُبِيٌّ'. Dans 'الثَّمَنُ بالمِلِّيم', la lecture 'بِالمِلِّيم' est correcte, mais 'المِلِّيم' perd la vocalisation visible."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : 'المَدْخُولُ بِالمِلِّي' est correct mais l'image porte 'المَدْخُولُ بالمِلِّي' (sans kasra sur le ba)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les balises '[17]', '[1]', '[3-أ]' et 'réponse: None' ne figurent pas dans l'image. Le numéro de page 38 et le numéro de niveau 5 sont absents."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3, le texte de l'image 'يَتَناوَلُ كُلَّ يَوْمٍ' est bien présent. Les lignes de réponse pointillées de la question ب ne sont pas signalées."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

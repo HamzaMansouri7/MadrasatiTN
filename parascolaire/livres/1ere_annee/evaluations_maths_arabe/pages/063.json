@@ -1,0 +1,141 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 63,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أُتِمُّ جَدَاوِلَ جُزْئِيَّةً لِلْجَمْعِ تَحْتَوِي عَلَى أَكْثَرَ مِنْ حَدَّيْنِ وَاسْتِثْمَارِهَا",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَعُدُّ تَنَازُلِيًّا :",
+      "body": "17 > ........ > 13 > ........ > 9 > ........ > 5 > ........ > ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p063_i1",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "يَبْلُغُ أَحْمَدُ مِنَ الْعُمْرِ 7 سَنَوَاتٍ وَأُخْتُهُ تَكْبُرُهُ بِأَرْبَعِ سَنَوَاتٍ وَالْأَخُ الْأَكْبَرُ يَفُوقُ أُخْتَهُ بِـ 6 سَنَوَاتٍ.",
+      "body": "كَمْ عُمْرُ الْأُخْتِ ؟ ـــــــــــــــــــــــــــــــــ\nوَكَمْ عُمْرُ الْأَخِ الْأَكْبَرِ ؟ ـــــــــــــــــــــــــــــــــ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p063_i2",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُتِمُّ بِمَا يُنَاسِبُ :",
+      "body": "| + | 5 | 8 | 0 + 7 | 6 |\n|---|---|---|---|---|\n| 3 | ........ | ........ | ........ | ........ |\n| 9 | ........ | ........ | ........ | ........ |\n| (3 + 8) | ........ | ........ | ........ | ........ |",
+      "figureDesc": "جدول لعمليات الجمع يتكوّن من أسطر تجمع الأعداد (3، 9، (3 + 8)) مع الأعمدة (5، 8، 0 + 7، 6)",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p063_i3",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "غَاصَ صَيَّادُ النَّشَّافِ 4 مَرَّاتٍ ثُمَّ 3 مَرَّاتٍ فِي أَعْمَاقِ الْبَحْرِ.",
+      "body": "• كَمْ يَغُوصُ فِي الْجُمْلَةِ إِذَا غَاصَ 8 مَرَّاتٍ أُخْرَى ؟\nالْجَوَابُ :\n................................................................\n• إِذَا غَاصَ 4 مَرَّاتٍ ثُمَّ 3 مَرَّاتٍ، كَمْ يَجِبُ عَلَيْهِ أَنْ يَغُوصَ مِنْ مَرَّةٍ حَتَّى يُحَقِّقَ 19 غَوْصَةً.\nالْجَوَابُ :\n................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p063_i4",
+      "topicId": "math-1-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "topicId": "math-1-p4",
+  "topicTitle": "Période 4 : Nombres de 11 à 19, tables d'addition et soustraction",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "isl-1-u2",
+    "confidence": 0.2
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur des tables d'addition partielles (nombres jusqu'à 19), le comptage à rebours de 17 à 5 et des problèmes additifs, ce qui correspond à la Période 4 (nombres de 11 à 19, tables d'addition et soustraction).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition à plusieurs termes",
+    "skill": "Compléter des tableaux partiels d'addition à plus de deux termes et les utiliser pour résoudre des problèmes.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "addition",
+      "tableau d'addition",
+      "comptage décroissant",
+      "problème additif",
+      "plus de deux termes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un tableau à double entrée d'additions avec une ligne contenant une somme (3+8), des problèmes d'âges en chaîne (frère, sœur) et une situation de plongées avec objectif à atteindre (complément à un total) pour travailler l'addition itérée.",
+    "themeGroup": "Addition jusqu'à 10"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de la leçon est absent : « أُتِمُّ جَداوِلَ جُزْئِيَّةً لِلْجَمْعِ تَحْتَوِي عَلَى أَكْثَرِ مِنْ وَادِينِ وَاسْتِثْمَارِهَا » (sic, tel qu'il figure sur l'image)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes « الرِّيَاضِيَات », « الْحِسَابُ الذِّهْنِيُّ : » et « أَتَدَرَّبُ وَأُوَظِّفُ : » sont omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« كَمْ يَغُوصُ فِي الْجُمْلَةِ » : l'image porte « يَغُوصُ » sans le ou « يَغُوصُ » ; vérifier. Les mots « الْأُخْتِ » sont transcrits avec une hamza différente de l'image (« الْأُخْتِ » est correct)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les colonnes du tableau sont dans l'ordre visuel de gauche à droite (6, 0+7, 8, 5, +), ce qui est cohérent avec l'image, mais la lecture RTL donnerait l'ordre inverse."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الْأَخِ الْأَكْبَرِ » transcrit correctement, mais « وَالْأَخُ » dans l'énoncé : OK. Aucune erreur de chiffre détectée dans les nombres 17, 13, 9, 5, 7, 4, 6, 3, 8, 19."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَعُدُّ » : l'image montre « أَعُدُّ » ; la transcription est conforme. Les signes de ponctuation (• devant la question 1) sont corrects."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

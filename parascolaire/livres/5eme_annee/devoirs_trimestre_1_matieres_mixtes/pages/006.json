@@ -1,0 +1,82 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 6,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Lumière et ombre : corps transparents, opaques, propagation rectiligne de la lumière, formation de l'ombre (rubrique « أثري معلوماتي »)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أثري معلوماتي",
+      "body": "الأجسام الشفافة تتحول إلى عاتمة بزيادة سمكها\nالأجسام العاتمة تتحول إلى شافة فشفافة بتقليص سمكها\nينتشر الضوء حسب خطوط مستقيمة في الأوساط الشافة والشفافة المتجانسة\nلتكوين الظل لابد من توفر ثلاثة عناصر أساسية مصدر ضوئي وشاشة وجسم عاتم وتتعدد الظلال بتعدد مصادر الضوء",
+      "figureDesc": "Page encadrée d'une bordure décorative de petits cercles jaunes ; le texte est dans un cadre à bordure pointillée/hachurée ; titre en rouge en haut ; le reste de la page est vide.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p006_i1",
+      "topicId": "sci-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-5-u1",
+  "topicTitle": "Unité 1 : La lumière, vision et propagation rectiligne",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-5-u1",
+    "confidence": 0.99
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page, rubrique « أثري معلوماتي », traite des corps transparents et opaques, de la propagation rectiligne de la lumière et de la formation de l'ombre, ce qui correspond à l'Unité 1 d'Éveil Scientifique (lumière, milieux optiques, ombres).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Lumière et formation de l'ombre",
+    "skill": "Distinguer corps transparents et opaques, et expliquer la propagation rectiligne de la lumière et la formation des ombres.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "lumière",
+      "ombre",
+      "corps opaque",
+      "corps transparent",
+      "propagation rectiligne",
+      "source lumineuse"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La rubrique de synthèse « pour enrichir mes connaissances » pourrait inspirer des expériences simples : faire varier l'épaisseur d'un matériau pour voir s'il laisse passer la lumière, ou multiplier les sources lumineuses pour compter les ombres. Elle peut aussi servir de base à une infographie sur les trois éléments nécessaires à l'ombre (source, objet opaque, écran).",
+    "themeGroup": "Propagation de la lumière et ombre"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.95
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ligne 2 : « شافة » est écrit tel quel dans l'image (« إلى شافة فشفافة ») ; la transcription est fidèle. Ligne 3 : « الشافة والشفافة » est lui aussi identique à l'image, donc aucune erreur de ce côté."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le mot « المتجانسة », qui est à la ligne 4 de l'image, est absent de la transcription à la fin de la phrase « ينتشر الضوء… الشافة والشفافة » ; il faut ajouter « المتجانسة » après « والشفافة »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

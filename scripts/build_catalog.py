@@ -2,7 +2,7 @@
 import json, sys, collections, re
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_original_frozen/_archive')
+A = Path('parascolaire_frozen/_archive')
 BOOK_NAMES = json.loads((A / 'book_names.json').read_text(encoding='utf-8')) if (A / 'book_names.json').exists() else {}
 GO = lambda g: int(re.match(r'(\d)', g).group(1))
 rows = []

@@ -1,0 +1,64 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 30,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي: ترتيب جمل لتكوين نص",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُرَتِّبُ الْجُمَلَ، وَأُكَوِّنُ بِهَا نَصًّا.",
+      "body": "الْجُمَلُ الْمُرَادُ تَرْتِيبُهَا:\n- [ ] اَلْجَوُّ بَارِدٌ، وَالْمَطَرُ يَهْطِلُ بِغَزَارَةٍ،\n- [ ] وَالرِّيَاحُ تَعْصِفُ.\n- [ ] وَرَاجَعَتْ دُرُوسَهَا.\n- [ ] وَلَمَّا شَعَرَتْ بِالنُّعَاسِ،\n- [ ] دَخَلَتْ زُهُورُ إِلَى غُرْفَتِهَا،\n- [ ] أَوَتْ إِلَى فِرَاشِهَا.\n- [ ] فَأَقْبَلَتْ أُمُّهَا،\n- [ ] وَرَوَتْ لَهَا قِصَّةً شَيِّقَةً.",
+      "figureDesc": "ثلاثة رسوم توضيحية متتابعة: 1. بنت تراجع دروسها في غرفتها والمطر ينزل في الخارج، 2. البنت تستعد للنوم وتدخل فراشها، 3. الأم تجلس بجانب ابنتها في السرير وتقرأ لها قصة، وبجانبها أسطر فارغة لكتابة النص.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p030_i1",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "ar-1-u4",
+  "topicTitle": "Unité 4 : Mon compagnon en hiver",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-1-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.99
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Exercice de production écrite en arabe (ordonner des phrases) dont le texte décrit une journée d'hiver (froid, pluie, vent), ce qui rapproche l'Unité 4 (Mon compagnon en hiver), mais la page ne porte pas de marqueur explicite d'unité.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : ordonner des phrases",
+    "skill": "Remettre des phrases dans l'ordre logique et chronologique à l'aide des connecteurs pour former un court texte cohérent.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "ordre des phrases",
+      "texte narratif",
+      "connecteurs",
+      "cohérence textuelle",
+      "production écrite",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le principe d'un récit de la vie quotidienne découpé en phrases mélangées, dont l'ordre se retrouve grâce aux connecteurs (et, quand) et à la chronologie, est réutilisable avec d'autres routines ou personnages.",
+    "themeGroup": "Ordonner des phrases et cohérence textuelle"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

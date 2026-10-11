@@ -1,0 +1,115 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 135,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "لوحة جامعة: تقاطع مجموعات، تمثيل علاقة ثنائية (جدول ديكارتي وتمثيل سهمي)، جدول العد وقراءة الأعداد، التمييز بين المنازل",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تحديد تقاطع مجموعتين فأكثر",
+      "body": "مثال: عناصر المجموعة أ: 6 ، 8 ، 24 ، 40. عناصر المجموعة ب: 5 ، 8 ، 24 ، 30. عناصر المجموعة ج: 5 ، 9 ، 24 ، 40. أضع العناصر داخل المخطط.",
+      "figureDesc": "جدول من ثلاثة أسطر لعناصر المجموعات أ (أحمر) وب (أخضر) وج (أزرق)، ومخطط فين لثلاث مجموعات متقاطعة: 6 في أ فقط، 9 في ج فقط، 30 في ب فقط، 40 في تقاطع أ وج، 8 في تقاطع أ وب، 5 في تقاطع ب وج، 24 في تقاطع المجموعات الثلاث.",
+      "answer": "6 في أ فقط؛ 9 في ج فقط؛ 30 في ب فقط؛ 40 في أ∩ج؛ 8 في أ∩ب؛ 5 في ب∩ج؛ 24 في أ∩ب∩ج",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p135_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تمثيل علاقة ثنائية: تمثيل العلاقة « ... أصغر من ... » من \"أ\" نحو \"ب\" بواسطة جدول ديكارتي",
+      "body": "عناصر ب في السطر الأول: 69 ، 35 ، 20 ، 15. عناصر أ في العمود: 14 ، 27 ، 58. علامات X تدل على أن العنصر من أ أصغر من العنصر من ب.",
+      "figureDesc": "جدول ديكارتي: السطر 14: X في الأعمدة 69 و35 و20 و15؛ السطر 27: X في 69 و35؛ السطر 58: X في 69 فقط. كلمة «أصغر من» بجانب الجدول.",
+      "answer": "14 أصغر من 69 و35 و20 و15؛ 27 أصغر من 69 و35؛ 58 أصغر من 69",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p135_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "التّمثيل السّهمي للعلاقة ... أكبر من ... من \"أ\" نحو \"ب\"",
+      "body": "المجموعة أ: 15 ، 46 ، 51. المجموعة ب: 12 ، 18 ، 31 ، 46. الأسهم تربط كل عنصر من أ بالعناصر من ب التي هي أصغر منه.",
+      "figureDesc": "مخطط سهمي بإهليلجين: ب (أخضر) يضم 12 و18 و31 و46، وأ (أحمر) يضم 15 و46 و51. من 15 سهم نحو 12؛ من 46 أسهم نحو 12 و18 و31؛ من 51 أسهم نحو 12 و31 و46.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p135_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "يسمح جدول العدّ بقراءة الأعداد:",
+      "body": "جدول الآلاف وجدول الوحدات البسيطة (خانات: م ، ع ، آ). (1) 9 329 ؛ (2) 17 430 ؛ (3) 508 403. يقرأ العدد الأوّل تسعة آلاف وثلاثمائة وتسعة وعشرون. يقرأ العدد الثّاني سبعة عشر ألفا وأربعمائة وثلاثون. يقرأ العدد الثّالث خمسمائة وثمانية آلاف وأربعمائة وثلاثة. ملاحظة: لقراءة عدد كبير دون استخدام الجدول نجمّع أرقام العدد ثلاثة ثلاثة بدءا من اليمين.",
+      "figureDesc": "جدولان: جدول الآلاف (آ ، ع ، م) بالأرقام 9 / 1 و7 / 5 و0 و8، وجدول الوحدات البسيطة بالأرقام 3 2 9 / 4 3 0 / 4 0 3، وأسهم نحو الأعداد 9 329 و17 430 و508 403.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p135_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "التّمييز بين مختلف المنازل، مثال:",
+      "body": "جدول بالأعمدة: العدد، عدد المئات، عدد الآلاف، رقم عشرات الآلاف، عدد عشرات الآلاف، رقم مئات الآلاف، عدد العشرات. الأسطر: 365 142 ← 3651 ، 365 ، 6 ، 36 ، 3 ، 365 14. 97 653 ← 976 ، 97 ، 9 ، 9 ، 0 ، 97 65. 978 641 ← 9786 ، 978 ، 7 ، 97 ، 9 ، 97 864.",
+      "figureDesc": "جدول ملون من 3 أسطر و7 أعمدة للتمييز بين المنازل.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p135_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.38
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de synthèse (لوحة جامعة) de mathématiques mêlant intersection d'ensembles, relations binaires, lecture des nombres à 5 et 6 chiffres et distinction des rangs ; le chapitre le plus proche est la Période 1 (nombres à 5 et 6 chiffres), mais le contenu sur les ensembles et les relations dépasse un peu ce chapitre.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Ensembles, relations et numération",
+    "skill": "Déterminer l'intersection d'ensembles, représenter une relation binaire (tableau cartésien, diagramme sagittal) et lire et distinguer les rangs des nombres jusqu'à la centaine de mille.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "intersection d'ensembles",
+      "relation binaire",
+      "tableau cartésien",
+      "diagramme sagittal",
+      "tableau de numération",
+      "rangs des chiffres"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Page de synthèse qui présente chaque notion par un exemple modèle : diagramme à trois ensembles, relation « plus petit que » en tableau à croix, flèches pour « plus grand que », tableau de numération avec lecture en lettres, et tableau comparant chiffre et nombre de centaines, de milliers et de dizaines de mille. Ces modèles se prêtent à des exercices de complétion ou de lecture.",
+    "themeGroup": "Numération jusqu'à 999"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,126 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 10,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إختبار نهاية الثلاثي الأول – قراءة – عدد 5 – نص «بَلَدِيَّةُ القِسْمِ»",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "بَلَدِيَّةُ الْقِسْمِ\nقَاعَةُ قِسْمِنَا جَمِيلَةٌ وَفَسِيحَةٌ يَدْخُلُهَا النُّورُ وَالْهَوَاءُ وَالشَّمْسُ مِنْ نَوَافِذِهَا الْكَبِيرَةِ.\nجُدْرَانُهَا مَطْلِيَّةٌ بِالْأَبْيَضِ وَمُزْدَانَةٌ بِلَوْحَاتٍ شَارَكَنَا الْمُعَلِّمَ فِي تَلْوِينِهَا وَتَعْلِيقِهَا بِلَافِتَاتٍ حَائِطِيَّةٍ كَتَبْنَاهَا بِأَحْرُفٍ غَلِيظَةٍ تَحْتَوِي عَلَى بَعْضِ الْحِكَمِ وَالنَّصَائِحِ، وَأَبْرَزُ لَافِتَةٍ عَلَّقْنَاهَا فِي الْقِسْمِ كُتِبَ عَلَيْهَا «حَافِظْ عَلَى نَظَافَةِ قِسْمِكَ».\nدَخَلْنَا قَاعَةَ الدَّرْسِ الْيَوْمَ كَعَادَتِنَا فَوَجَدْنَا الْأَوْسَاخَ وَالْأَوْرَاقَ مُتَنَاثِرَةً عَلَى أَرْضِيَّةِ الْقَاعَةِ. اِسْتَاءَ الْمُعَلِّمُ وَالتَّلَامِيذُ لِهَذَا الْمَشْهَدِ الْمُخْجِلِ، وَأَمَرَ بَعْضُنَا بِجَمْعِ الْفَوَاضِلِ وَبِوَضْعِهَا فِي السَّلَّةِ، وَمِنْ شِدَّةِ حِرْصِنَا عَلَى نَظَافَةِ قِسْمِنَا طَلَبْنَا مِنْ مُعَلِّمِنَا تَعْيِينَ فَرِيقٍ مِنَّا يَقُومُ عَلَى جَمْعِ الْأَوْرَاقِ وَتَنْظِيمِ مَكْتَبِ الْمُعَلِّمِ وَمَسْحِ السَّبُّورَةِ فِي وَقْتِ الرَّاحَةِ. قَبِلَ الْمُعَلِّمُ الْفِكْرَةَ وَأَطْلَقْنَا عَلَى الْفَرِيقِ اِسْمَ بَلَدِيَّةِ الْقِسْمِ.",
+      "figureDesc": "En-tête « امتحانات جسر النجاح » ; cadre : المادة قراءة، المستوى السنة الثالثة، إختبار نهاية الثلاثي الأول، عدد 5 ; champs الاسم / اللقب / القسم. Filigrane du site visible sur le texte.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p010_i1",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَتَفَاعَلُ مَعَ النَّصِّ – 1 - أَرْبُطُ بِمَا يُنَاسِبُ.",
+      "body": "اِسْتَاءَ الْمُعَلِّمُ وَالتَّلَامِيذُ •\n• لِأَنَّ قَاعَةَ الْقِسْمِ جَمِيلَةٌ.\n• لِأَنَّ الْأَوْرَاقَ وَالْأَوْسَاخَ مُتَنَاثِرَةٌ عَلَى أَرْضِيَّةِ الْقَاعَةِ.\n• لِأَنَّ الْمُدِيرَ لَمْ يُشَارِكْ فِي تَزْيِينِ الْقَاعَةِ.",
+      "figureDesc": "Exercice de liaison : une phrase à droite reliée à l'une des trois propositions à gauche. Barème 0,5 par ligne (0,5 / 0,5 / 0,5). Critère : معيار 2 أ.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p010_i2",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَدْعُمُ جَوَابِي بِجُمْلَةٍ مِنَ النَّصِّ :",
+      "body": "(trois lignes pointillées à remplir)",
+      "figureDesc": "Trois lignes pointillées pour la réponse ; barème 0,5 ; critère : معيار 2 ج.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p010_i3",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-3-u4",
+  "topicTitle": "Unité 4 : Collecte d'indices et justification",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u8",
+    "confidence": 0.28
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Page de lecture d'une évaluation de fin de trimestre 1 (texte « بلدية القسم ») dont la question demande d'appuyer sa réponse par une phrase du texte (relevé d'indice, Unité 4), mais comme c'est un test général de fin de trimestre et que l'unité 4 appartient au trimestre 2, la correspondance reste incertaine.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de texte : la classe",
+    "skill": "Comprendre un texte court en reliant une réaction à sa cause, puis justifier sa réponse par une phrase relevée dans le texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "texte descriptif",
+      "salle de classe",
+      "appariement",
+      "justification par le texte",
+      "propreté"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le schéma « relier une réaction à sa cause, puis justifier par une phrase du texte » se réutilise avec d'autres situations de vie scolaire (entretien de la classe, respect du matériel, responsabilités des élèves), avec des distracteurs plausibles.",
+    "themeGroup": "Compréhension de l'écrit : la classe et la maison"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«شَارَكَنَا الْمُعَلِّمَ» : l'image montre « شَارَكَنَا الْمُعَلِّمَ » avec la fatha sur le mim, ce qui est cohérent avec la transcription. Pas d'erreur à signaler ici."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « امتحانات جسر النجاح », « اختبار نهاية الثلاثي الأول », « عدد : 5 », « المادة : قراءة », « المستوى : السنة الثالثة », ainsi que les champs الاسم / اللقب / القسم."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les barèmes (0,5 répété), les références de critères (معـ 2 أ1 ; معـ 2 ج) et le numéro de page 10 sont absents. Les colonnes « المعايير », « معالجة النص » et « النقاط المسندة » ne figurent pas non plus."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« وَبِوَضْعِهَا » : l'image donne « وَبِوَضْعِهَا فِي السَّلَّةِ », donc identique. Aucune erreur."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَبْرَزُ لَافِتَةٍ » : dans l'image, « وَأَبْرَزُ » est écrit avec une hamza sans voyelle visible différente. Aucune erreur réelle."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

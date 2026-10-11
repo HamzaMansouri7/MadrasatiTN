@@ -1,0 +1,90 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 50,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "جمع المؤنث الغائب (هنّ) – جمع المؤنث السالم وإعرابه",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "يؤخذ جمع المؤنث السالم من الاسم المفرد المؤنث بزيادة ألف وتاء مفتوحة في آخره\nعلامات إعراب جمع المؤنث السالم:\nالضمة رفعا: قدمت الممرضات\nالكسرة النائبة عن الفتحة نصبا: شكر المدير المعلمات\nالكسرة جرا: سألت عن المهندسات",
+      "figureDesc": "عنوان في أعلى الصفحة: «هن – جمع المؤنث الغائب». جدول من ثلاثة أعمدة: الضمة رفعا، الكسرة النائبة عن الفتحة نصبا، الكسرة جرا، مع مثال تحت كل علامة.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p050_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أضف إلى معلوماتك: جدول الإعراب بالحروف والحركات",
+      "body": "يرفع: المفرد الضمة، المثنى الألف، جمع المذكر الواو، جمع المؤنث الضمة، الأسماء الخمسة الواو.\nينصب: المفرد الفتحة، المثنى الياء الساكنة، جمع المذكر الياء، جمع المؤنث الكسرة، الأسماء الخمسة الألف.\nيجر: المفرد الكسرة، المثنى الياء الساكنة، جمع المذكر الياء، جمع المؤنث الكسرة، الأسماء الخمسة الياء.",
+      "figureDesc": "جدول: الصفوف (يرفع، ينصب، يجر) والأعمدة (المفرد، المثنى، جمع المذكر، جمع المؤنث، الأسماء الخمسة).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p050_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أجمع السماء المكتوبة بين قوسين جمعا مؤنثا سالما ، وأشكل أواخرها ك",
+      "body": "تعمر النبتة الأرض\nلا تعذب الحيوان\nإن الحسنة تمحو السيئة\nتحتاج تونس إلى المواطنة الصالحة",
+      "figureDesc": "التمارين محاطة بإطار. الأسماء المراد جمعها هي: النبتة، الحيوان، الحسنة، السيئة، المواطنة. (كتب النص بلا تشكيل، وقد يكون «الحيوان» خطأ مطبعيا في الأصل بدل «الحيوانات»).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p050_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.23
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite du pluriel féminin sain et de son analyse grammaticale (i'rab), une leçon de grammaire arabe qui ne correspond à aucun des six chapitres officiels, centrés sur la narration et ses passages descriptifs, dialogués, explicatifs ou prescriptifs.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Pluriel féminin sain et son i'rab",
+    "skill": "Former le pluriel féminin sain à partir du singulier et identifier les marques de son i'rab (damma, kasra) selon la fonction.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "pluriel féminin sain",
+      "i'rab",
+      "voyelles casuelles",
+      "grammaire arabe",
+      "accord",
+      "tableau récapitulatif"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : leçon courte avec exemples par cas (sujet, complément, génitif), tableau comparatif des marques d'i'rab par catégorie et exercice de transformation au pluriel avec vocalisation des finales.",
+    "themeGroup": "Le pluriel féminin sain"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

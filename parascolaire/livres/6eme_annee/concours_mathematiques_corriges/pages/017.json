@@ -1,0 +1,149 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 17,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مناظرة السنة السادسة (أفريل 2024) – الوضعية 1: مسائل الكسور والنسبة المائوية للربح؛ الوضعية 2: المسافة والمدة والسرعة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 1 – السؤال 1",
+      "instruction": "احسب قيمة مدخرات الفلاح إذا علمت أن ثمن البقرة الواحدة 3550 د.",
+      "body": "لبعث مشروع لتربية الماشية سحب فلاح 5/7 مدخراته وقرر شراء 14 خروفا و7 بقرات لكنه بقي في حاجة لـ 350 د فقرر شراء 16 خروفا و5 بقرات فبقي له 5250 د.",
+      "figureDesc": "",
+      "answer": "14 خ + 7 ب − 350 = 16 خ + 5 ب + 5250؛ 2 خ = 2 ب − 5250 − 350؛ 2 خ = 7100 − 5250 − 350 = 1500 د؛ ثمن الخروف: 1500 : 2 = 750 د؛ ثمن المشروبات: (16 × 750) + (5 × 3550) + 5250 = 35000 د؛ قيمة المدخرات: (35000 : 5) × 7 = 49000 د",
+      "confidence": 0.9,
+      "id": "concours_mathematiques_corriges_p017_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 1 – السؤال 2",
+      "instruction": "أحسب النسبة المائوية للربح إذا علمت أن ثمن البيع الجملي قدر بـ 33424.125 د.",
+      "body": "بعد أشهر قدرت كلفة التسمين 5% ثمن الشراء.",
+      "figureDesc": "",
+      "answer": "الكلفة الجملية: (29750 × 105) : 100 = 31237.5 د؛ قيمة الربح: 33424.125 − 31237.5 = 2186.625 د؛ النسبة المائوية للربح: (2186.625 × 100) : 31237.5 = 7%",
+      "confidence": 0.88,
+      "id": "concours_mathematiques_corriges_p017_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 2 – السؤال 1",
+      "instruction": "إبحث عن المدة الزمنية المستغرقة في المرحلة الأولى إذا علمت أن الدراجة تقطع 12.56 كم/س.",
+      "body": "يقطع فلاح مسافة من المنزل إلى ضيعته كل صباح من الساعة 5 و56 دق صباحا على 3 مراحل: – المرحلة الأولى على دراجة نارية شعاع عجلتها 0.4 م، حيث تقوم بـ 2000 دورة من المنزل إلى محطة الحافلة. – المرحلة الثانية راكبا حافلة حيث تقطع الحافلة 75 كم/س. – المرحلة الثالثة راجلا مسافة 1.5 كم بمعدّل 6 كم/س.",
+      "figureDesc": "",
+      "answer": "محيط العجلة: 0.4 × 2 × 3.14 = 2.512 م؛ المسافة المقطوعة: 2.512 × 2000 = 5024 م = 5.024 كم؛ مدة السير الفعلي: (5.024 × 60) : 12.56 = 24 دق",
+      "confidence": 0.88,
+      "id": "concours_mathematiques_corriges_p017_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 2 – السؤال 2",
+      "instruction": "أبحث عن المسافة الفاصلة بين المحطة والضيعة إذا علمت أنه وصل الضيعة على الساعة السابعة صباحا و30 دق وأنه بقي ينتظر الحافلة مدة 1/10 س.",
+      "body": "",
+      "figureDesc": "",
+      "answer": "مدة السير الفعلي راجلا: (1.5 × 60) : 6 = 15 دق؛ مدة السير الفعلي للحافلة: س 7 و 30 دق − (س 5 و 56 دق + 24 دق + 15 دق + 6 دق) = 49 دق",
+      "confidence": 0.85,
+      "id": "concours_mathematiques_corriges_p017_i4",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "math-6-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Cette page reprend les situations-problèmes du concours de 6ème (avril 2024) : fractions, pourcentage de bénéfice, distance, durée et vitesse, soit des problèmes complexes à plusieurs étapes qui relèvent de la synthèse générale préparant au concours d'entrée aux collèges pilotes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    15,
+    16
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes de fractions, pourcentage et vitesse",
+    "skill": "Résoudre des problèmes en plusieurs étapes mobilisant fractions, pourcentage de bénéfice, et relations distance-durée-vitesse.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "fractions",
+      "pourcentage de bénéfice",
+      "vitesse",
+      "durée",
+      "distance",
+      "concours sixième"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Deux situations contextualisées dans le monde agricole (achat de bétail avec épargne fractionnée, trajet en trois étapes avec roue, bus et attente) réutilisables pour créer des problèmes multi-étapes enchaînant plusieurs notions, dans le style du concours de fin de primaire.",
+    "themeGroup": "Durées, vitesse et échelle"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "self_contained",
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ligne 2: l'image donne « 2 خ = 2 ب − 5250 − 350 » ; la transcription écrit « 2 خ = 2 ب − 5250 − 350 » en omettant le signe d'origine (image : 2 خ = 2 ب – 5250 – 350), à vérifier ; surtout, la ligne 'مدة السير الفعلي للحافلة' est suivie dans l'image de « 49 دق » mais le calcul est présenté tel quel – OK."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المشروبات » est correct dans l'image (sic), mais « المائوية » est écrit « المائوية » alors que l'image porte « المئوية » (النسبة المئوية)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أشهر » : l'image dit « بعد أشهر قدرت كلفة التسمين 5% ثمن الشراء » ; la transcription omet « من » absent aussi dans l'image, OK ; mais « 1/10 س » est placé dans la question 2 alors que dans l'image la fraction suit « مدة »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel visible dans l'image (ex. « ثمن », « الوضعيّة », « مناظرة ») n'est pas reproduit ; « بمعدّل » conservé mais « الوضعية » sans chadda."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête (مناظرة 4 سنة سادسة، أفريل 2024، رياضيات، وليد الكراي، رقم 3) est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le calcul « 7100 » à la ligne 3 est présent, mais le titre « الوضعية عدد 1 : 6 نقاط » et « عدد 2 : 6 نقاط » (barème) est omis."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les phrases « بعد أشهر… » et l'ordre des questions/réponses sont réorganisés par rapport à la page (la question 2 apparaît avant son énoncé)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "full_year",
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

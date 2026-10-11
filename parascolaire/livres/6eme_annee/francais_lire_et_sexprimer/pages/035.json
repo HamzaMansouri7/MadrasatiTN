@@ -1,0 +1,127 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 35,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : La poule et le moineau (I)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "La poule et le moineau (I)\nIl était une fois un moineau qui s'étonnait que la poule restait toujours par terre et ne vole jamais.\n- Madame la poule, demanda-t-il un jour, pourquoi ne voles-tu pas, comme moi ? Tu as des ailes pourtant. Veux-tu que je t'apprenne ?\n- Et pourquoi donc volerais-je, puisque je trouve ma nourriture par terre ? répondit la poule.\n- Oui, mais celui qui sait voler peut aussi s'enfuir, dit le moineau, plein de sagesse.\n- Je ne vois pas pourquoi je m'enfouirais. Je suis très bien ici. Va-t'en, et laisse-moi manger en paix.\nLe moineau hocha la tête, accablé par tant de bêtises.\n- Les hommes vont te tuer et te manger. Comme tu ne sais pas voler, tu es une proie facile. Enfin, je t'aurai prévenue ! Et le moineau s'envola.\nLe lendemain matin, la poule fut saisie d'une grande frayeur en voyant arriver le fermier armé d'un bâton.\nElle se rappela les derniers mots du moineau. Avait-il donc raison ?\n- Oh ! Oh ! Se lamenta la poule en s'enfuyant, la tête basse, vers un buisson.\nJ'aurais mieux fait d'écouter les bons conseils du moineau...\n(à suivre...)",
+      "figureDesc": "Texte encadré dans un cadre aux coins arrondis ; bandeau d'en-tête « Lecture - Compréhension » avec « Sagesse » et « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p035_i1",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1",
+      "instruction": "Pourquoi le moineau est-il étonné ?",
+      "body": "Compréhension : 1) Pourquoi le moineau est-il étonné ? (ligne de pointillés pour la réponse)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p035_i2",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2",
+      "instruction": "Pourquoi la poule ne vole-t-elle pas ?",
+      "body": "2) Pourquoi la poule ne vole-t-elle pas ? (ligne de pointillés pour la réponse)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p035_i3",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B3",
+      "instruction": "Quel est le premier conseil du moineau ? Relève la phrase qui le montre :",
+      "body": "3) Quel est le premier conseil du moineau ? Relève la phrase qui le montre : (lignes de pointillés pour la réponse)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p035_i4",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m4",
+  "topicTitle": "Module 4 : S'entraider pour mieux réussir",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.43
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension en français (La poule et le moineau) qui met en scène un dialogue d'entraide, un moineau proposant d'apprendre à voler à la poule ; le module 4 « S'entraider pour mieux réussir » est le plus plausible, mais le texte ne permet pas de l'affirmer sans ambiguïté.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    122
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Comprendre un texte en répondant à des questions et en relevant dans le texte la phrase qui justifie la réponse.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "conte animalier",
+      "poule",
+      "moineau",
+      "relevé de phrase"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Dialogue entre deux animaux aux modes de vie opposés, suivi de questions graduées : explication d'un étonnement, recherche d'une cause, relevé d'une phrase-preuve. Transposable à d'autres fables ou dialogues.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.96
+  },
+  "audit": {
+    "accuracy": 0.96,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« je m'enfouirais » dans la transcription ; l'image indique « je m'enfouirais » (identique), mais le sens attendu est « m'enfuirais » : l'image porte bien « m'enfouirais », donc transcription fidèle, sans erreur réelle"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-têtes et pied de page omis : « Sagesse », « 6 ème année de base », « Lecture - Compréhension », « B) Compréhension : », « 34 », « Lire et s'exprimer »"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les blocs B1-B3 sont dupliqués avec des annotations entre parenthèses (« ligne de pointillés pour la réponse ») qui ne font pas partie du texte de la page"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

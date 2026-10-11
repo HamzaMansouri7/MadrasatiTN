@@ -1,0 +1,304 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 31,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الوحدة الرابعة: فصل الشتاء - قراءة وفهم: يُبْدِي الرَّأْيَ فِي حَدَثٍ مِنْ أَحْدَاثِ النَّصِّ",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ",
+      "body": "فِي الْمَسَاءِ، بَدَأَ الْبَرْدُ يَشْتَدُّ، وَأَخَذَتِ الرِّيَاحُ تُوَلْوِلُ، فَتَوَقَّفَتِ الْعَائِلَةُ عَنِ الْعَمَلِ وَأَوَى أَفْرَادُهَا إِلَى الْمَنْزِلِ. اِرْتَمَتْ وَهِيبَةُ عَلَى الْأَرِيكَةِ مُنْهَكَةَ الْقُوَى.\nحَضَّرَتِ الْأُمُّ الطَّعَامَ، فَانْضَمَّتْ وَهِيبَةُ إِلَى إِخْوَتِهَا، وَتَحَلَّقُوا حَوْلَ الطَّاوِلَةِ، وَعَاوَدَتْ، وَرَوَتْ أَحْدَاثَ الْيَوْمِ فِي غِبْطَةٍ وَسُرُورٍ، وَشَارَكَتْهُمْ فَرْحَتَهُمْ بِوَفْرَةِ الْمَحْصُولِ...",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p031_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبُطُ بِسَهْمٍ.",
+      "body": "بَدَأَ الْبَرْدُ يَشْتَدُّ، وَأَخَذَتِ الرِّيَاحُ تُوَلْوِلُ •\n• إِنَّهُ فَصْلُ الشِّتَاءِ.\n• إِنَّهُ فَصْلُ الرَّبِيعِ.\n• إِنَّهُ فَصْلُ الصَّيْفِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p031_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَشْطُبُ الْجُمَلَ الَّتِي لَا تُنَاسِبُ الصُّورَةَ.",
+      "body": "• أَخَذَتِ الرِّيَاحُ تُوَلْوِلُ.\n• اِنْضَمَّتْ وَهِيبَةُ إِلَى إِخْوَتِهَا.\n• اِرْتَمَتْ وَهِيبَةُ عَلَى الْأَرِيكَةِ مُنْهَكَةَ الْقُوَى.",
+      "figureDesc": "رسم لبنت مستلقية على أريكة خشبية تبدو متعبة ومنهكة القوى.",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p031_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) أَمَامَ الْجُمْلَةِ الَّتِي تُنَاسِبُ النَّصَّ.",
+      "body": "( ) حَضَّرَتِ وَهِيبَةُ الطَّعَامَ.\n( ) نَامَتْ وَهِيبَةُ عَلَى الْأَرِيكَةِ.\n( ) تَحَلَّقَ أَفْرَادُ الْعَائِلَةِ حَوْلَ الطَّاوِلَةِ.",
+      "figureDesc": "ثلاث دوائر بيضاوية مخصصة لوضع العلامة أمام كل جملة.",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p031_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُعَمِّرُ الْفَرَاغَ بِالْكَلِمَاتِ الْمُنَاسِبَةِ : ذَهَبَ - سَرَدَتْ - بَهْجَةٍ",
+      "body": "• .................... وَهِيبَةُ أَحْدَاثَ الْيَوْمِ فِي .................... وَسُرُورٍ.\n• .................... أَفْرَادُ الْعَائِلَةِ إِلَى الْمَنْزِلِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_maths_arabe_p031_i5"
+    }
+  ],
+  "topicId": "ar-1-u4",
+  "topicTitle": "Unité 4 : Mon compagnon en hiver",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-1-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.63
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une leçon de lecture et compréhension en arabe de l'Unité 4 sur l'hiver (le froid, le vent, la famille à la maison), ce qui correspond à « Mon compagnon en hiver ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de lecture : l'hiver",
+    "skill": "Exprimer son opinion sur un événement du texte et vérifier sa compréhension en s'appuyant sur le texte et l'image.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "vrai_faux",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "lecture compréhension",
+      "saison d'hiver",
+      "donner son avis",
+      "vocabulaire",
+      "texte et image"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une courte scène familiale du soir en hiver sert de base à une série d'exercices variés : relier un indice du texte à une saison, barrer les phrases qui ne correspondent pas à l'image, cocher la phrase conforme au texte et compléter des phrases avec une banque de mots. Ce schéma se transpose facilement à d'autres saisons ou contextes.",
+    "themeGroup": "Lecture: nature et saisons"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête rose de l'unité est absent : « الْوَحْدَةُ الرَّابِعَةُ: فَصْلُ الشِّتَاءِ », « يُبْدِي الرَّأْيَ فِي حَدَثٍ مِنْ أَحْدَاثِ النَّصِّ. », « التَّضْعِيفُ : و / ـو », ainsi que « اللُّغَةُ الْعَرَبِيَّةُ قِرَاءَةٌ وَفَهْمٌ »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Pied de page absent : « 32 », « جسر النجاح - الثلاثي الثاني (السنة 1) », « اللُّغَةُ الْعَرَبِيَّةُ - قِرَاءَةٌ »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أَخَذَتِ » : dans l'image, la forme est « أَخَذَتِ » (correct) ; mais « تُوَلْوِلُ » est écrit « تُوَلْوِلُ » sur l'image, donc OK. Aucun écart réel."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« حَضَّرَتْ وَهِيبَةُ الطَّعَامَ » (exercice 3) : l'image porte « حَضَّرَتِ وَهِيبَةُ الطَّعَامَ » avec kasra sur le ت ; la transcription met un sukun."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الْجُمْلَةِ » (exercice 3) : l'image porte « الْجُمْلَةِ » ; la transcription est cohérente. « أَرْسُمُ » correspond à l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3 : la phrase « حَضَّرَتِ الْأُمُّ الطَّعَامَ » du texte est correcte, mais dans l'exercice la première phrase de l'image est « حَضَّرَتِ وَهِيبَةُ الطَّعَامَ ». La transcription du sujet est correcte, seule la voyelle diffère."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases à cocher de l'exercice 3 et l'image de la fillette sur le canapé (exercice 2) ne sont pas signalées."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 4 : les points de suite sont placés en début de phrase dans la transcription, alors que dans l'image les vides se trouvent au milieu (« وَهِيبَةُ ... أَحْدَاثَ ») et en début pour la 2e phrase (« ... أَفْرَادُ »). Dans la 1re phrase, le vide est entre « وَهِيبَةُ » et « أَحْدَاثَ », et un autre est entre « فِي » et « وَسُرُورٍ »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3, 1re phrase : l'image porte « حَضَّرَتِ وَهِيبَةُ الطَّعَامَ. » avec kasra sous le ت. La transcription avait « حَضَّرَتْ » avec sukun. Corrigé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de l'unité et le pied de page sont absents de la transcription. En-tête : « اللُّغَةُ الْعَرَبِيَّةُ قِرَاءَةٌ وَفَهْمٌ », « الْوَحْدَةُ الرَّابِعَةُ: فَصْلُ الشِّتَاءِ », « يُبْدِي الرَّأْيَ فِي حَدَثٍ مِنْ أَحْدَاثِ النَّصِّ. », « التَّضْعِيفُ : و / ـو ». Pied de page : « 32 », « جسر النجاح - الثلاثي الثاني (السنة 1) », « اللُّغَةُ الْعَرَبِيَّةُ - قِرَاءَةٌ ». Il s'agit d'éléments de mise en page. Le sous-titre « أَسْتَثْمِرُ النَّصَّ » n'est pas transcrit non plus. Je ne les ai pas ajoutés aux items."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ",
+      "body": "فِي الْمَسَاءِ، بَدَأَ الْبَرْدُ يَشْتَدُّ، وَأَخَذَتِ الرِّيَاحُ تُوَلْوِلُ، فَتَوَقَّفَتِ الْعَائِلَةُ عَنِ الْعَمَلِ وَأَوَى أَفْرَادُهَا إِلَى الْمَنْزِلِ. اِرْتَمَتْ وَهِيبَةُ عَلَى الْأَرِيكَةِ مُنْهَكَةَ الْقُوَى.\nحَضَّرَتِ الْأُمُّ الطَّعَامَ، فَانْضَمَّتْ وَهِيبَةُ إِلَى إِخْوَتِهَا، وَتَحَلَّقُوا حَوْلَ الطَّاوِلَةِ، وَعَاوَدَتْ، وَرَوَتْ أَحْدَاثَ الْيَوْمِ فِي غِبْطَةٍ وَسُرُورٍ، وَشَارَكَتْهُمْ فَرْحَتَهُمْ بِوَفْرَةِ الْمَحْصُولِ...",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p031_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبُطُ بِسَهْمٍ.",
+      "body": "بَدَأَ الْبَرْدُ يَشْتَدُّ، وَأَخَذَتِ الرِّيَاحُ تُوَلْوِلُ •\n• إِنَّهُ فَصْلُ الشِّتَاءِ.\n• إِنَّهُ فَصْلُ الرَّبِيعِ.\n• إِنَّهُ فَصْلُ الصَّيْفِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p031_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَشْطُبُ الْجُمَلَ الَّتِي لَا تُنَاسِبُ الصُّورَةَ.",
+      "body": "• أَخَذَتِ الرِّيَاحُ تُوَلْوِلُ.\n• اِنْضَمَّتْ وَهِيبَةُ إِلَى إِخْوَتِهَا.\n• اِرْتَمَتْ وَهِيبَةُ عَلَى الْأَرِيكَةِ مُنْهَكَةَ الْقُوَى.",
+      "figureDesc": "رسم لبنت مستلقية على أريكة خشبية تبدو متعبة ومنهكة القوى.",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p031_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) أَمَامَ الْجُمْلَةِ الَّتِي تُنَاسِبُ النَّصَّ.",
+      "body": "( ) حَضَّرَتِ وَهِيبَةُ الطَّعَامَ.\n( ) نَامَتْ وَهِيبَةُ عَلَى الْأَرِيكَةِ.\n( ) تَحَلَّقَ أَفْرَادُ الْعَائِلَةِ حَوْلَ الطَّاوِلَةِ.",
+      "figureDesc": "ثلاث دوائر بيضاوية مخصصة لوضع العلامة أمام كل جملة.",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p031_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُعَمِّرُ الْفَرَاغَ بِالْكَلِمَاتِ الْمُنَاسِبَةِ : ذَهَبَ - سَرَدَتْ - بَهْجَةٍ",
+      "body": "• .................... وَهِيبَةُ أَحْدَاثَ الْيَوْمِ فِي .................... وَسُرُورٍ.\n• .................... أَفْرَادُ الْعَائِلَةِ إِلَى الْمَنْزِلِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_1ere_evaluations_p031_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ",
+      "body": "فِي الْمَسَاءِ، بَدَأَ الْبَرْدُ يَشْتَدُّ، وَأَخَذَتِ الرِّيَاحُ تُوَلْوِلُ، فَتَوَقَّفَتِ الْعَائِلَةُ عَنِ الْعَمَلِ وَأَوَى أَفْرَادُهَا إِلَى الْمَنْزِلِ. اِرْتَمَتْ وَهِيبَةُ عَلَى الْأَرِيكَةِ مُنْهَكَةَ الْقُوَى.\nحَضَّرَتِ الْأُمُّ الطَّعَامَ، فَانْضَمَّتْ وَهِيبَةُ إِلَى إِخْوَتِهَا، وَتَحَلَّقُوا حَوْلَ الطَّاوِلَةِ، وَعَاوَدَتْ، وَرَوَتْ أَحْدَاثَ الْيَوْمِ فِي غِبْطَةٍ وَسُرُورٍ، وَشَارَكَتْهُمْ فَرْحَتَهُمْ بِوَفْرَةِ الْمَحْصُولِ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p031_i1",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبُطُ بِسَهْمٍ.",
+      "body": "بَدَأَ الْبَرْدُ يَشْتَدُّ، وَأَخَذَتِ الرِّيَاحُ تُوَلْوِلُ •\n• إِنَّهُ فَصْلُ الشِّتَاءِ.\n• إِنَّهُ فَصْلُ الرَّبِيعِ.\n• إِنَّهُ فَصْلُ الصَّيْفِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p031_i2",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَشْطُبُ الْجُمَلَ الَّتِي لَا تُنَاسِبُ الصُّورَةَ.",
+      "body": "• أَخَذَتِ الرِّيَاحُ تُوَلْوِلُ.\n• اِنْضَمَّتْ وَهِيبَةُ إِلَى إِخْوَتِهَا.\n• اِرْتَمَتْ وَهِيبَةُ عَلَى الْأَرِيكَةِ مُنْهَكَةَ الْقُوَى.",
+      "figureDesc": "رسم لبنت مستلقية على أريكة خشبية تبدو متعبة ومنهكة القوى.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "jisr_ennajah_1ere_evaluations_p031_i3",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) أَمَامَ الْجُمْلَةِ الَّتِي تُنَاسِبُ النَّصَّ.",
+      "body": "( ) حَضَّرَتْ وَهِيبَةُ الطَّعَامَ.\n( ) نَامَتْ وَهِيبَةُ عَلَى الْأَرِيكَةِ.\n( ) تَحَلَّقَ أَفْرَادُ الْعَائِلَةِ حَوْلَ الطَّاوِلَةِ.",
+      "figureDesc": "ثلاث دوائر بيضاوية مخصصة لوضع العلامة أمام كل جملة.",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p031_i4",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُعَمِّرُ الْفَرَاغَ بِالْكَلِمَاتِ الْمُنَاسِبَةِ : ذَهَبَ - سَرَدَتْ - بَهْجَةٍ",
+      "body": "• .................... وَهِيبَةُ أَحْدَاثَ الْيَوْمِ فِي .................... وَسُرُورٍ.\n• .................... أَفْرَادُ الْعَائِلَةِ إِلَى الْمَنْزِلِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p031_i5",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

@@ -1,0 +1,103 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 13,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأعداد الصحيحة الطبيعية: قراءة الأعداد ورتبها (آحاد، عشرات، مئات، آلاف، ملايين)، استخراج الأرقام، المقارنة والترتيب",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "جدول قيمة المنزلة (مليون، آلاف، مئات، عشرات، آحاد) يُكتب فيه العدد؛ يظهر الجدول مرتين، وفي كل مرة عناوين الأعمدة: آحاد، عشرات، مئات، آلاف، مليون، تحتها خانة فارغة.",
+      "figureDesc": "عنوانان متتاليان لجدولين للمنازل (آحاد، عشرات، مئات، آلاف، مليون) يليهما مستطيل فارغ لكتابة العدد في كل مرة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p013_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "تمرين 1",
+      "instruction": "إستخرج من هذا العدد رقم الآحاد و رقم العشرات ورقم آحاد الملايين",
+      "body": "مستطيل فارغ لكتابة العدد (العدد غير مكتوب في الصفحة) ثم جدول من ثلاثة أعمدة: رقم آحاد الملايين | رقم العشرات | رقم الآحاد، وسطره الثاني فارغ.",
+      "figureDesc": "مستطيل فارغ للعدد، وجدول من ثلاثة أعمدة (رقم آحاد الملايين، رقم العشرات، رقم الآحاد) وخلاياه فارغة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p013_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "تمرين 2",
+      "instruction": "قارن بين هذه الأرقام بوضع  أو",
+      "body": "الأعداد المراد مقارنتها غير ظاهرة (مساحة فارغة)، والرموز (< ، >) غير ظاهرة في الصفحة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p013_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "تمرين 3",
+      "instruction": "رتب هذه الأعداد من الأصغر إلى الأكبر",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p013_i4",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.36
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la lecture, le tableau de numération (unités, dizaines, centaines, milliers, millions), l'extraction de chiffres, la comparaison et le rangement de grands nombres, ce qui correspond à la Période 1 : Grands nombres.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Grands nombres entiers naturels",
+    "skill": "Lire et décomposer un nombre jusqu'aux millions en identifiant le rang de chaque chiffre, puis comparer et ranger des nombres.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul"
+    ],
+    "keywords": [
+      "numération",
+      "valeur de position",
+      "millions",
+      "comparaison",
+      "rangement",
+      "tableau de numération"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Exercices classiques et très standardisés (tableau de numération, extraction de chiffres, comparaison avec < et >, rangement croissant), réutilisables seulement comme modèle de format simple; les nombres sont absents de la page.",
+    "themeGroup": "Grands nombres entiers"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

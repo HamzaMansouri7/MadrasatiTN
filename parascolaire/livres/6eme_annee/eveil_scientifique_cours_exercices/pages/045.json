@@ -1,0 +1,157 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 45,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "المغناطيس والبوصلة : تجربة برادة الحديد وصنع بوصلة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "هَذِهِ التَّجْرِبَةُ الَّتِي قَامَ بِهَا أَحْمَدُ :",
+      "body": "أ) مَلَأَ أَحْمَدُ أُنْبُوبَ اخْتِبَار بِبرادَةِ الحَدِيد، وَضَعَ البوصلة بعيدا عن الأنبوب.\nب) قَرَّبَ البوصلة من الأنبوب فتغيّر اتّجاه إبرة البوصلة.",
+      "figureDesc": "رسمان داخل إطار أزرق: أنبوب اختبار مملوء ببرادة الحديد مع بوصلة بعيدة عنه (إبرتها في اتجاهها الأصلي)، ثم أنبوب آخر مع بوصلة مقرّبة منه تغيّر اتجاه إبرتها.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p045_i1",
+      "topicId": "sci-6-u5",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "إِلَى مَاذَا تُشِيرُ إِبْرَةُ البُوصْلَةِ عِنْدَ إِبْعَادِهَا عَنْ بُرَادَةِ الحَدِيدِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p045_i2",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "مَتَى يَبْطُلُ عَمَلُ البُوصْلَةِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "eveil_scientifique_cours_exercices_p045_i3",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "هَلْ يُمْكِنُ بِرَأْيِكَ تَحْدِيدُ اتِّجَاهِ الشَّمَالِ بِوَاسِطَةِ بوصلة وَبِجَانِبِهَا مَغْنَاطِيس ؟ لِمَاذَا ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p045_i4",
+      "topicId": "sci-6-u5",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "5",
+      "instruction": "كَيْفَ تَصْنَعُ بُوصْلَةً ؟",
+      "body": "- مَغْنِطِ الإِبْرَةَ بِوَاسِطَةِ المِغْنَاطِيس.\n- ضَعِ الإِبْرَةَ عَلَى قِطْعَةِ الفَلِّين.\n- ضَعِ الماء في عُلْبَةِ البلاستيك.\n- ضَعِ الإبرة داخل عُلْبَةِ البلاستيك حيث تطفو على سطح الماء. مَاذَا تُلَاحِظُ ؟\n- حَدِّدِ الجِهَاتِ وَاكْتُبْهَا عَلَى عُلْبَةِ البلاستيك.",
+      "figureDesc": "صورتان: علبة بلاستيكية فيها ماء وقطعة فلّين تحمل الإبرة وتطفو، مع كتابة الحرفين N وS على العلبة؛ والصورة الثانية لعلبة مغلقة بغطائها وعليها حرف S.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_cours_exercices_p045_i5",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u5",
+  "topicTitle": "Unité 5 : Énergie, magnétisme, poids et chute libre",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u5",
+    "confidence": 0.46
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite de l'aimant, de la boussole (expérience avec la limaille de fer, fabrication d'une boussole), ce qui correspond au magnétisme et à la boussole de l'Unité 5 d'Éveil Scientifique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Le magnétisme et la boussole",
+    "skill": "Expliquer le fonctionnement d'une boussole, l'effet d'un aimant sur son aiguille, et fabriquer une boussole simple.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "aimant",
+      "boussole",
+      "limaille de fer",
+      "pôle nord",
+      "aiguille aimantée",
+      "expérience"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation expérimentale en deux temps (boussole éloignée puis rapprochée d'un tube de limaille) suivie de questions d'observation et de raisonnement, plus un mode d'emploi pour fabriquer une boussole (aiguille aimantée sur liège flottant dans l'eau) réutilisable comme activité de manipulation.",
+    "themeGroup": "Les aimants et la boussole"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«بِبرادَةِ الحَدِيد، وَضَعَ البوصلة» : l'image donne « بِبُرَادَةِ الحديد. وضع البوصلة » (point, pas virgule ; l'image montre « وضع » avec voyelles) ; la transcription ajoute un tashkeel partiel et incohérent"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Bloc 4 (أ et ب) : voyelles visibles sur « هَذِهِ التَّجْرِبَةُ… » mais « قَرَّبَ البوصلة » est écrit « قَرِّبِ البوصلة » (impératif) dans l'image ; la transcription donne « قَرَّبَ »"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« قَرَّبَ » au lieu de « قَرِّبِ » (impératif : rapproche la boussole) ; « فتغيّر » correspond à « فَتَغَيَّرَ »"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "التعليمة 3 : « مَغْنَاطِيس » dans l'image est entre guillemets/avec voyelles « مَغْنَاطِيسٌ » ; « بوصلة » sans tashkeel alors que visible « بِوَاسِطَةِ بُوصْلَةٍ »"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 5 : « مَغْنِطِ » correct, mais « المِغْنَاطِيس » dans l'image est « المَغْنَاطِيسِ » (fatha sur le mim)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Plusieurs mots du bloc 5 (الماء، البلاستيك، الإبرة، تطفو، سطح) sont voyellés dans l'image (ex. « الإِبْرَةَ »، « تَطْفُو »، « عُلْبَةِ البلاستيك ») mais sans tashkeel dans la transcription"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Numéro de page 86 et les légendes des images (lettres S / N sur la boîte) non transcrits"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

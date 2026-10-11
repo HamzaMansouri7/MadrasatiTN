@@ -1,0 +1,104 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 39,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 9 – اختبار تقويمي للتثبيت والدعم (مسائل على النقود والسعة، المستقيمان المتعامدان)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "فكم أملك؟",
+      "body": "ينقصني 250 مي لأشتري كتاب الرّياضيات. لو كان عندي 3 دنانير لبقي معي 150 مي بعد شراء الكتاب. فكم أملك؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p039_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هي سعة هذا الإناء باللتر ؟",
+      "body": "إناء به 32 لترا من الماء ، أضيف فيه 4 ديكالترات من الماء ثمّ 58 لترا من الماء فأصبح مملوءا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p039_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعد رسم المستقيم (ص) ونقطة \"أ\" تنتمي إليه. استعمل كوسك لرسم مستقيم يمرّ من النّقطة \"أ\" وعمودي على المستقيم (ص).",
+      "body": "أعد رسم المستقيم (ص) ونقطة \"أ\" تنتمي إليه. استعمل كوسك لرسم مستقيم يمرّ من النّقطة \"أ\" وعمودي على المستقيم (ص).",
+      "figureDesc": "مستقيم مائل (ص) تنتمي إليه النقطة \"أ\" المعلّمة بعلامة ×، والمطلوب رسم العمودي عليه من النقطة أ باستعمال الكوس.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p039_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) كم مليما تملك هذه السيّدة؟ ب) هل يمكنها ذلك؟ علّل جوابك. ج) ماذا تستطيع أن تشتري بكلّ ما لديها من النّقود ؟",
+      "body": "دخلت سيّدة إلى المغازة العامّة ومعها ورقة نقديّة ذات 5 دنانير و 4 قطع نقديّة من فئة الدّينار.\nأ) كم مليما تملك هذه السيّدة؟\nأرادت أن تشتري صحفة من البلّور ثمنها بـ 1750 مي وكأسين بـ 250 مي أقلّ من ثمن صحفة البلّور ومزهريّة بضعف ثمن الصّحفة والكأسين معًا.\nب) هل يمكنها ذلك؟ علّل جوابك.\nج) ماذا تستطيع أن تشتري بكلّ ما لديها من النّقود ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p039_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la monnaie (dinars et millimes), les droites perpendiculaires tracées à l'équerre et un problème de capacité en litres, ce qui correspond surtout à la Période 1 (droites perpendiculaires et monnaie), même si la capacité relève aussi de la Période 6.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    117
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes sur monnaie et capacités",
+    "skill": "Résoudre des problèmes impliquant la monnaie (dinars et millimes) et les mesures de capacité, et tracer une perpendiculaire à une droite avec l'équerre.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "autre"
+    ],
+    "keywords": [
+      "monnaie",
+      "millimes",
+      "capacité",
+      "litre et décalitre",
+      "droites perpendiculaires",
+      "équerre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : achat avec une somme manquante ou restante pour retrouver un montant, récipient rempli en plusieurs étapes avec conversion de unités, courses au magasin avec questions de faisabilité à justifier, et tracé d'une perpendiculaire à l'équerre.",
+    "themeGroup": "Monnaie"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

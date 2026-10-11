@@ -1,0 +1,169 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 40,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Léonard, Blanchette et les chiots (questions 3 à 8) ; Nettoyons le jardin public",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "Le matin, Léonard fait noyer les chiots. (........)",
+      "figureDesc": "Case arrondie avec pointillés pour écrire la réponse oui/non.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p040_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3b",
+      "instruction": "Relève, dans le texte, la phrase qui le montre :",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p040_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Est-ce que Blanchette a sauvé tous ses chiots ? Justifie ta réponse",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p040_i3",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "La chienne n'est pas revenue à la grange. Pourquoi ?",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p040_i4",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Pourquoi le fermier et l'ouvrier sont-ils étonnés ?",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p040_i5",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Écris « vrai » ou « faux » :",
+      "body": "- L'ouvrier fait noyer les chiots dans un bassin. (........)\n- Blanchette est restée emprisonnée dans la grange. (........)\n- La chienne ne peut pas nager. (........)\n- Le fermier est furieux. (........)",
+      "figureDesc": "Quatre cases arrondies pointillées à droite de chaque phrase.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p040_i6",
+      "topicId": "fr-6-m5",
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Complète ce passage avec les mots de la liste :",
+      "body": "Liste : mauvaises herbes – jardin public – cailloux – arroser – ordures\n\nNettoyons le jardin public\nLes enfants sont en train de nettoyer le ........ Ils commencent le travail avec beaucoup d'enthousiasme. D'abord, ils ramassent les ........ et les ........ et les mettent dans une brouette. Ensuite, les petits garçons arrachent les ........ qui envahissent le jardin.\nEnfin, ils se plaisent à ........ le jardin avec le tuyau.",
+      "figureDesc": "Liste de mots dans un encadré arrondi ; texte à trous dans un cadre rectangulaire.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p040_i7",
+      "topicId": "fr-6-m5",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.34
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de compréhension de lecture en français (Léonard, Blanchette et les chiots) suivi d'un texte à compléter sur le nettoyage du jardin public, ce qui se rapproche du Module 5 « Sauver la nature » (écologie, environnement), mais le récit sur les chiots peut aussi relever du module 4 (entraide), donc la correspondance n'est pas certaine.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "pageType": "exercise",
+  "correctionPages": [
+    122
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture narrative",
+    "skill": "Comprendre un récit en répondant à des questions de justification, de vrai/faux et en complétant un texte à trous avec une liste de mots.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "récit animalier",
+      "vrai ou faux",
+      "justification",
+      "texte à trous",
+      "jardin public"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable : question oui/non suivie du relevé de la phrase preuve, puis questions de causalité et vrai/faux, et un texte à trous avec banque de mots sur un thème civique (nettoyer le jardin public).",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'exercice 8, la transcription écrit « Enfin, ils se plaisent à ........ le jardin avec le tuyau » ; l'image donne bien « se plaisent à », donc c'est correct. Cette remarque ne signale aucune faute."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes et pieds de page ne sont pas transcrits : « Lecture - Compréhension », « 6ème année de base », « Sagesse », « Lire et s'exprimer », page 39."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte de la page précédente, visible en filigrane (transparence), n'est pas transcrit. Il est illisible et n'est pas nécessaire."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

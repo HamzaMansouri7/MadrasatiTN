@@ -1,0 +1,134 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 52,
+  "grade": "3ème Année",
+  "subject": "التربية الإسلامية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول، عدد 1 – التربية الإسلامية (الوضوء، سورة التين، سورة الشرح)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : أُعِيدُ كِتَابَةَ الْأَعْمَالِ مُرَتَّبَةً.",
+      "body": "السَّنَدُ 1 : فِي يَوْمِ الْجُمُعَةِ أَرَادَ فَادِي أَنْ يَسْبِقَ أَبَاهُ وَيَتَوَضَّأَ قَبْلَهُ، وَلَكِنَّ الْأَبَ كَانَ يُرَاقِبُهُ وَطَلَبَ مِنْهُ إِعَادَةَ الْوُضُوءِ لِأَنَّهُ أَخْطَأَ فِي تَرْتِيبِ الْأَعْمَالِ. أَعَادَ فَادِي الْوُضُوءَ ثُمَّ تَلَا مَا تَيَسَّرَ مِنْ سُورَةِ التِّينِ. الأعمال المطلوب ترتيبها: الْمَضْمَضَةُ / غَسْلُ الْيَدَيْنِ إِلَى الْكُوعَيْنِ / غَسْلُ الْوَجْهِ / الِاسْتِنْشَاقُ وَالِاسْتِنْثَارُ",
+      "figureDesc": "جدول من عمودين وأربعة أسطر: العمود الأيمن يحتوي الأعمال (الْمَضْمَضَةُ، غَسْلُ الْيَدَيْنِ إِلَى الْكُوعَيْنِ، غَسْلُ الْوَجْهِ، الِاسْتِنْشَاقُ وَالِاسْتِنْثَارُ) والعمود الأيسر نقاط فارغة لكتابة الترتيب.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p052_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أَضَعُ الْعَلَامَةَ (x) أَمَامَ الْآيَاتِ الْمَأْخُوذَةِ مِنْ سُورَةِ التِّينِ.",
+      "body": "○ ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ.\n○ أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ.\n○ وَوَضَعْنَا عَنْكَ وِزْرَكَ.\n○ فَمَا يُكَذِّبُكَ بَعْدُ بِالدِّينِ.\n○ الَّذِي أَنْقَضَ ظَهْرَكَ.\n○ وَإِلَى رَبِّكَ فَارْغَبْ.",
+      "figureDesc": "ست دوائر فارغة أمام كل آية لوضع العلامة.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p052_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : أَرْبِطُ كُلَّ آيَةٍ مِنْ سُورَةِ الشَّرْحِ بِالْمَعْنَى الْمُنَاسِبِ.",
+      "body": "العمود الأيمن (الآيات): وَرَفَعْنَا لَكَ ذِكْرَكَ / فَإِذَا فَرَغْتَ فَانْصَبْ / فَإِنَّ مَعَ الْعُسْرِ يُسْرًا\nالعمود الأيسر (المعاني): إِذَا فَرَغْتَ مِنْ عَمَلِكَ فَأَقْبِلْ عَلَى عِبَادَةِ اللَّهِ. / إِنَّ بَعْدَ الشِّدَّةِ يَأْتِي الْفَرَجُ. / إِنَّ اسْمَ الرَّسُولِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يُذْكَرُ فِي الْآذَانِ.",
+      "figureDesc": "نقاط في العمودين للربط بخطوط بين الآيات ومعانيها.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examens_toutes_matieres_p052_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p3",
+    "confidence": 0.12
+  },
+  "topicSubject": "Éducation islamique (التربية الإسلامية)",
+  "topicReason": "La page est un test de fin de trimestre en éducation islamique (ablutions, sourates At-Tîn et Ash-Sharh) et aucun des chapitres officiels listés (arabe, mathématiques, éveil scientifique) ne couvre cette matière.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Ablutions et sourates At-Tîn, Ash-Sharh",
+    "skill": "Remettre dans l'ordre les actes de l'ablution et reconnaître les versets des sourates At-Tîn et Ash-Sharh avec leur sens.",
+    "pageType": "exam",
+    "formats": [
+      "autre",
+      "appariement",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "ablution",
+      "sourate At-Tîn",
+      "sourate Ash-Sharh",
+      "ordre des actes",
+      "sens des versets",
+      "évaluation trimestrielle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une petite mise en situation (un enfant se trompe dans l'ordre de l'ablution et son père le corrige) pour remettre des actes dans l'ordre, un repérage de versets par sourate à cocher et un appariement verset-sens, le tout dans un format d'examen court par consignes numérotées.",
+    "themeGroup": "Sourates At-Tîn et Ash-Sharh"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans la phrase 'الأعمال المطلوب ترتيبها:' : ce texte n'existe pas sur l'image, il a été inventé (l'image ne montre que le tableau avec les quatre actions)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "'مُرَتَّبَةً' : l'image porte 'مُرْتَّبَةً' (voyelles de l'image plutôt que celles de la transcription) ; différence minime."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "'الَّذِي أَنْقَضَ ظَهْرَكَ' : l'image écrit 'الَّذِي أَنْقَضَ' avec la forme 'أَنْقَض' ; vérifier la vocalisation. Les 'ك' finaux sont rendus avec tatwil dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'الْآذَانِ' : l'image porte 'الْاَذَانِ' (sans madda, 'الأذان') ; la transcription ajoute une madda."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (التربية الإسلامية، السنة الثالثة، اختبار نهاية الثلاثي الأول، عدد : 1، اللقب، القسم) et le titre 'الأنشطة' ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau de la consigne 1 comporte des lignes vides de réponse (pointillés) en face de chaque action, non signalées ; le filigrane MOURAJAA.COM est ignoré (acceptable)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

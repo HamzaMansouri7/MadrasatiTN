@@ -1,0 +1,288 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 5,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "ضمير الجر: الضمير المتصل المجرور بحرف الجر أو المضاف إليه (قواعد اللغة العربية)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أضع ما سطر في مكانه من الجدول",
+      "body": "التفت الصياد صوب صاحب الصوت وأرسل نحوه مصباحه وجذب خيطا كان متدليا بالقرب منه فالتف العريش بمظلة كالسحاب أطبقت عليه من جميع جوانبه وصدت من يفكر في الإفلات عن الخروج",
+      "figureDesc": "جدولان فارغان: الجدول الأيمن بعمودين «حرف جر» و«ضمير مجرور»، والجدول الأيسر بعمودين «اسم مضاف» و«ضمير جر مضاف إليه».",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "grammaire_arabe_cahier_regles_p005_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أعين وظيفة الضمائر المسطرة بإحدى العبارتين التاليتين\nمضاف إليه لأنه متصل باسم   مجرور لأنه متصل بحرف",
+      "body": "يعود الصياد إلى بيته محملا بصيد وفير\nرحب بي جميع الأصدقاء\nسألت عنكم كل من اعترضني في الطريق\nأمرنا الله بطاعته وطاعة والدينا",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "grammaire_arabe_cahier_regles_p005_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكمل الفراغات بما يناسب   حرف جر   مجرور   مضاف   مضاف إليه",
+      "body": "قصدوا مدارســـهم\nدافعت عنـــــه\nحملت إليـــك أخبارا سارة\nسألت صديقـــي عن موعد الامتحان",
+      "figureDesc": "جدول من أربع خانات (2×2). في الأعلى يمينا: «قصدوا مدارســـهم»، وفي الأعلى يسارا: «دافعت عنـــــه»، وفي الأسفل يمينا: «حملت إليـــك أخبارا سارة»، وفي الأسفل يسارا: «سألت صديقـــي عن موعد الامتحان». في كل خانة فراغ (ضمير متصل) يُكمل بما يناسب.",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy",
+      "id": "grammaire_arabe_cahier_regles_p005_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "كون ثلاث جمل تتضمن كل واحدة منها على الأقل ضمير جر متصل بالحرف مستعينا بالأزواج بين الأقواس التالية",
+      "body": "لعب ، بـ   اقترب ، من   انضم ، إلى",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "grammaire_arabe_cahier_regles_p005_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.16
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une leçon de grammaire arabe sur le pronom suffixe complément d'un préposition ou d'un nom (ضمير الجر), mais aucun chapitre officiel ne traite explicitement de ce point ; le texte utilisé est narratif (le chasseur), donc le rattachement à l'Unité 1 reste incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Pronom complément de préposition",
+    "skill": "Identifier et employer le pronom suffixe attaché à une préposition ou à un nom (complément du nom) et en distinguer la fonction.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "grammaire arabe",
+      "pronom suffixe",
+      "préposition",
+      "complément du nom",
+      "fonction grammaticale",
+      "6ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression claire en quatre étapes (classer dans un tableau à partir d'un extrait narratif, identifier la fonction, compléter avec la terminologie grammaticale, produire des phrases à partir de couples verbe-préposition), facilement transposable à d'autres points de grammaire.",
+    "themeGroup": "Les pronoms"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres « التمارين » et « التمرين الأول/الثاني/الثالث/الرابع » ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les en-têtes du tableau de l'exercice 1 sont absents : حرف جر، ضمير مجرور، اسم مضاف، ضمير جر مضاف إليه."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3 : la structure en tableau (4 cases) n'est pas reproduite, et l'ordre des cases ne correspond pas à l'image (قصدوا مدارسهم est en haut à droite, دافعت عنه en haut à gauche)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « ـهم » s'écrit « ـــهم » et « إليـ ـك » est « إليـــك » ; la transcription altère les tirets d'allongement. « صديقـ ـي » est lu « صديقــ ـي »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : « مضاف إليه لأنه متصل باسم / مجرور لأنه متصل بحرف » : la barre « / » est inventée, l'image présente seulement un espace."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mots soulignés sont ajoutés entre parenthèses (« الكلمات المسطرة ») et « réponse: None » est ajouté ; la liste omet aussi les mots soulignés de l'exercice 2 (بيته، بي، عنكم، والدينا)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « مجرور / حرف جر / مضاف / مضاف إليه » : l'ordre dans l'image est « مضاف إليه، مضاف، حرف جر، مجرور » (lecture RTL), ce qui est ambigu mais cohérent."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 1 : la parenthèse « (الكلمات المسطرة: مصباحه، منه، عليه، جوانبه) » n'existe pas dans l'image. Le point final après « الخروج » est lui aussi ajouté. Les mots soulignés (مصباحه، منه، عليه، جوانبه) sont seulement soulignés ou en gras dans le texte."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : la barre « / » entre « مضاف إليه لأنه متصل باسم » et « مجرور لأنه متصل بحرف » est inventée. L'image n'a qu'un espace. Les points finals ajoutés à la fin des quatre phrases n'existent pas non plus."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'ordre des termes de l'instruction est faux. L'image donne, en lecture RTL, « حرف جر، مجرور، مضاف، مضاف إليه », et non « مجرور / حرf جر / … ». Les barres « / » sont inventées."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : les tirets d'allongement (tatwil) sont altérés. L'image montre « مدارســــهم », « عـنـــــه », « إليــــك » et « صديقـــــي », en une seule suite continue. La transcription introduit des espaces (« مدارسـ ـهم », « عنـ ـه », « إليـ ـك », « صديقـ ـي »)."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "Exercice 3 : le tableau 2×2 n'est décrit que de façon vague. L'ordre de lecture RTL des phrases est correct (قصدوا مدارسهم en haut à droite, دافعت عنه en haut à gauche, حملت إليك en bas à droite, سألت صديقي en bas à gauche), mais la description ne le précise pas."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "Exercice 1 : les en-têtes des deux tableaux sont bien présents dans figureDesc, mais l'ordre est inversé. Le tableau de droite est « حرف جر | ضمير مجرور » et celui de gauche est « اسم مضاف | ضمير جر مضاف إليه »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 4 : les parenthèses autour des paires sont ajoutées. L'image n'a que « لعب ، بـ   اقترب ، من   انضم ، إلى », séparés par des espaces."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أضع ما سطر في مكانه من الجدول",
+      "body": "التفت الصياد صوب صاحب الصوت وأرسل نحوه مصباحه وجذب خيطا كان متدليا بالقرب منه فالتف العريش بمظلة كالسحاب أطبقت عليه من جميع جوانبه وصدت من يفكر في الإفلات عن الخروج",
+      "figureDesc": "جدولان فارغان: الجدول الأيمن بعمودين «حرف جر» و«ضمير مجرور»، والجدول الأيسر بعمودين «اسم مضاف» و«ضمير جر مضاف إليه».",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "cahier_grammaire_6eme_p005_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أعين وظيفة الضمائر المسطرة بإحدى العبارتين التاليتين\nمضاف إليه لأنه متصل باسم   مجرور لأنه متصل بحرف",
+      "body": "يعود الصياد إلى بيته محملا بصيد وفير\nرحب بي جميع الأصدقاء\nسألت عنكم كل من اعترضني في الطريق\nأمرنا الله بطاعته وطاعة والدينا",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "cahier_grammaire_6eme_p005_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكمل الفراغات بما يناسب   حرف جر   مجرور   مضاف   مضاف إليه",
+      "body": "قصدوا مدارســـهم\nدافعت عنـــــه\nحملت إليـــك أخبارا سارة\nسألت صديقـــي عن موعد الامتحان",
+      "figureDesc": "جدول من أربع خانات (2×2). في الأعلى يمينا: «قصدوا مدارســـهم»، وفي الأعلى يسارا: «دافعت عنـــــه»، وفي الأسفل يمينا: «حملت إليـــك أخبارا سارة»، وفي الأسفل يسارا: «سألت صديقـــي عن موعد الامتحان». في كل خانة فراغ (ضمير متصل) يُكمل بما يناسب.",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy",
+      "id": "cahier_grammaire_6eme_p005_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "كون ثلاث جمل تتضمن كل واحدة منها على الأقل ضمير جر متصل بالحرف مستعينا بالأزواج بين الأقواس التالية",
+      "body": "لعب ، بـ   اقترب ، من   انضم ، إلى",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "cahier_grammaire_6eme_p005_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أضع ما سطر في مكانه من الجدول",
+      "body": "التفت الصياد صوب صاحب الصوت وأرسل نحوه مصباحه وجذب خيطا كان متدليا بالقرب منه فالتف العريش بمظلة كالسحاب أطبقت عليه من جميع جوانبه وصدت من يفكر في الإفلات عن الخروج. (الكلمات المسطرة: مصباحه، منه، عليه، جوانبه)",
+      "figureDesc": "جدولان فارغان: الأول بعمودين «اسم مضاف» و«ضمير جر مضاف إليه»، والثاني بعمودين «حرف جر» و«ضمير مجرور».",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "cahier_grammaire_6eme_p005_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أعين وظيفة الضمائر المسطرة بإحدى العبارتين التاليتين: مضاف إليه لأنه متصل باسم / مجرور لأنه متصل بحرف",
+      "body": "يعود الصياد إلى بيته محملا بصيد وفير.\nرحب بي جميع الأصدقاء.\nسألت عنكم كل من اعترضني في الطريق.\nأمرنا الله بطاعته وطاعة والدينا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "cahier_grammaire_6eme_p005_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكمل الفراغات بما يناسب: مجرور / حرف جر / مضاف / مضاف إليه",
+      "body": "قصدوا مدارسـ ـهم\nدافعت عنـ ـه\nحملت إليـ ـك أخبارا سارة\nسألت صديقـ ـي عن موعد الامتحان",
+      "figureDesc": "جدول من أربع خانات، في كل خانة عبارة بها فراغ (ضمير متصل) يُكمل بما يناسب.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "cahier_grammaire_6eme_p005_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "كون ثلاث جمل تتضمن كل واحدة منها على الأقل ضمير جر متصل بالحرف مستعينا بالأزواج بين الأقواس التالية",
+      "body": "(لعب ، بـ) (اقترب ، من) (انضم ، إلى)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "cahier_grammaire_6eme_p005_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

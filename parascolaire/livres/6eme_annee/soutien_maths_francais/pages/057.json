@@ -1,0 +1,134 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 57,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Évaluation : Mesure (conversions, périmètre du cercle, aire du carré, volume du cylindre) et Organisation et traitement de données (diagramme circulaire) ; agrandissement de figure",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "لاحظ الشكل أسفله ثم أنشئ تكبيرا له بمعدل 3 : (2ن)",
+      "body": "",
+      "figureDesc": "Grille quadrillée de 7 lignes sur 17 colonnes. Une figure en forme de T noir (une case en haut, trois cases en dessous) est dessinée à gauche. Il faut construire son agrandissement de rapport 3.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p057_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "حول الوحدات التالية إلى ما هو مطلوب: (4ن)",
+      "body": "5,1 m 76,7cm = ……………….. dm ; 7 t 562,5 kg = ………………… q ; 162,3 hm² 60 m² = …………………… ca ; 240 dm³ = …………………… l",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p057_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "احسب محيط دائرة (P) قطرها D = 10 cm . (1ن)",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p057_i3",
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "مسألة: أحسب مساحة مربع طول أحد أضلاعه a = 12 m . (1,5ن)",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p057_i4",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "لاحظ الأسطوانة القائمة جانبه، ثم أحسب حجمها بـ m³ ثم بـ l (علما أن شعاعها r = 4 m). (1,5ن)",
+      "body": "",
+      "figureDesc": "Cylindre droit avec hauteur h = 10m indiquée par une flèche verticale ; quatre lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p057_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "مسألة: المبيان بقطاعات دائرية التالي يوضح توزيع نسبة كل نشاط بـ (%) الذي يقضيه حسام في اليوم الواحد:",
+      "body": "أ) ما هو النشاط الذي يحتاج وقتا أكثر؟ (1ن)\nب) ما هو النشاط الذي يحتاج وقتا أقل؟ (1ن)\nج) ما مجموع نسبة \" النوم والمدرسة وإنجاز الواجبات المدرسة\"؟ (1ن)\nد) كم يمثل نشاط المدرسة بالساعات (h) ؟ (1ن)",
+      "figureDesc": "Diagramme circulaire : النوم 25% (bleu), اللعب 10% (orange), المدرسة 25% (gris), الأكل 10% (jaune), مشاهدة التلفاز 10% (bleu clair), انجاز الواجبات المدرسية 20% (vert).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p057_i6",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p4",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation générale de mathématiques couvrant plusieurs chapitres (agrandissement de figure, conversions, périmètre du cercle, aire du carré, volume du cylindre, diagramme circulaire), donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures, périmètre, aire, volume",
+    "skill": "Mobiliser conversions d'unités, formules de périmètre, aire et volume, lecture de diagramme circulaire et agrandissement de figure.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "conversions d'unités",
+      "périmètre du cercle",
+      "aire du carré",
+      "volume du cylindre",
+      "diagramme circulaire",
+      "agrandissement"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation barémée couvrant plusieurs notions de mesure, avec un problème de diagramme circulaire sur l'emploi du temps quotidien d'un enfant (activité la plus longue, la plus courte, somme de pourcentages, conversion en heures) et un agrandissement de figure à l'échelle 3.",
+    "themeGroup": "Périmètres et aires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "short_test",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

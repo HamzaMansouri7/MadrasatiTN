@@ -1,0 +1,100 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 53,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مسائل حول جمع الأعداد العشرية وطرحها (الدينار والمتر) - حلّ مسائل",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "احْسُبِ الفَائِضَ الَّذِي سَيَتَحَصَّلُ عَلَيْهِ طَاهِر.",
+      "body": "لِطَاهِرٍ دَفْتَرُ ادِّخَارٍ بِهِ 175,350 د فِي شَهْرِ جَانْفِي مِنْ هَذِهِ السَّنَةِ ادَّخَرَ 65,750 د وَفِي شَهْرِ مَارِس زَادَ عَلَيْهَا 89,200 د. بَعْدَ رَأْسِ السَّنَةِ سَيَجِدُ طَاهِرٌ بِدَفْتَرِهِ 346,815 د.",
+      "figureDesc": "أربعة أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p053_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مَا هُوَ طُولُ القُمَاشِ المُتَبَقِّي؟",
+      "body": "شَرَتْ خَيَّاطَةٌ 16,5 م مِنَ القُمَاشِ. خَاطَتْ 6 مِيدَعَاتٍ فَاسْتَعْمَلَتْ 10,90 م وَخَاطَتْ 4 تُنُّورَاتٍ وَاسْتَعْمَلَتْ 3,8 م.",
+      "figureDesc": "ثلاثة أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p053_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أ – احْسُبْ طُولَ القَنَوَاتِ البَاقِيَةِ مِنْ كُلِّ صِنْفٍ.",
+      "body": "لِتَجْهِيزِ بَيْتٍ بِالمَاءِ جَلَبَ مُقَاوِلٌ 20 م مِنَ القَنَوَاتِ البَلَاسْتِيكِيَّةِ وَ8,5 م مِنْ قَنَوَاتِ النُّحَاسِ. تَطَلَّبَتِ الأَشْغَالُ فِي بَيْتِ الاسْتِحْمَامِ 7,75 م مِنْ قَنَوَاتِ النُّحَاسِ وَاسْتُوجِبَ جَلْبُ المِيَاهِ مِنَ العَدَّادِ إِلَى دَاخِلِ البَيْتِ 17,58 م مِنْ قَنَوَاتِ البَلَاسْتِيكِ.",
+      "figureDesc": "سطران منقّطان لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_evaluations_p053_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7-ب",
+      "instruction": "ب – احْسُبِ الطُّولَ الجُمْلِيَّ لِلْقَنَوَاتِ المُسْتَعْمَلَةِ.",
+      "body": "",
+      "figureDesc": "ثلاثة أسطر منقّطة لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p053_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.62
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page contient des problèmes d'addition et de soustraction de nombres décimaux (dinars et mètres), ce qui correspond à la Période 2 : Nombres décimaux, addition/soustraction.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes d'addition et soustraction de décimaux",
+    "skill": "Résoudre des problèmes à étapes impliquant l'addition et la soustraction de nombres décimaux (dinars et mètres).",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "addition",
+      "soustraction",
+      "dinars",
+      "mètres",
+      "problèmes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations de la vie quotidienne (carnet d'épargne, couturière avec tissu restant, plombier avec tuyaux) qui demandent de calculer un reste ou un total avec des grandeurs décimales, réutilisables comme contextes de problèmes à plusieurs étapes.",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

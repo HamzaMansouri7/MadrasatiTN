@@ -1,0 +1,209 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 49,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التقييم: الحيوانات (الحيوانات اللبونة والبيوضة، طرق تنقل الحيوانات وأوساطها الطبيعية، الفترات الزمنية لنزول المطر) وتقمص الدور وإسداء النصيحة مع التعليل",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : اكْتُبْ «خَطَأً» أَوْ «صَوَابٌ» أَمَامَ كُلِّ إِفَادَةٍ.",
+      "body": "• الْحَيَوَانَاتُ اللَّبُونَةُ تُرْضِعُ صِغَارَهَا. ← ..............\n• الْحَيَوَانَاتُ اللَّبُونَةُ تَحْضُنُ بَيْضَهَا. ← ..............",
+      "figureDesc": "سهمان يشيران إلى أسطر منقطة لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p049_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : أُعَلِّلُ إِجَابَتِي السَّابِقَةَ.",
+      "body": "أسطر منقطة لكتابة التعليل.",
+      "figureDesc": "أسطر منقطة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p049_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "السَّنَدُ 4 : صَادَفَ أَنْ مَرَّ مِنْ أَمَامِ الْمَحَلِّ رَامِي، وَهُوَ صَدِيقُ هِشَام، فَدَعَاهُ هَذَا الأَخِيرُ لِمُشَارَكَتِهِ أَكْلَ الْوَجْبَةِ. لَكِنَّ رَامِي رَفَضَ ذَلِكَ وَقَدَّمَ لِهِشَام نَصِيحَةً.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p049_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : أَتَقَمَّصُ دَوْرَ رَامِي وَأُقَدِّمُ لِهِشَام نَصِيحَةً مَعَ التَّعْلِيلِ :",
+      "body": "أَنْصَحُكَ يَا صَدِيقِي أَنْ ..............",
+      "figureDesc": "أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p049_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "السَّنَدُ 5 : اِقْتَنَعَ هِشَامٌ بِنَصِيحَةِ صَدِيقِهِ، غَادَرَ الطِّفْلَانِ مَحَلَّ بَيْعِ الأُكُلاتِ الْخَفِيفَةِ وَاتَّفَقَا عَلَى جَوْلَةٍ قَصِيرَةٍ فِي حَدِيقَةِ الْحَيَوَانَاتِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p049_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "التَّعْلِيمَةُ 7 : أُصْلِحُ الأَخْطَاءَ الْوَارِدَةَ فِي طُرُقِ تَنَقُّلِ الْحَيَوَانَاتِ وَالأَوْسَاطِ الطَّبِيعِيَّةِ الَّتِي تَتَنَقَّلُ فِيهَا.",
+      "body": "الْحَبَارُ : الْجَوُّ ← ..............  |  الْعَدْوُ ← ..............\nالْخُطَّافُ : الْبَرُّ ← ..............  |  الْقَفْزُ ← ..............\nالنَّمِرُ : الْمَاءُ ← ..............  |  الزَّحْفُ ← ..............",
+      "figureDesc": "جدول من ثلاثة أسطر: لكل حيوان خانة للوسط الطبيعي وخانة لطريقة التنقل، يشير سهم إلى خانة فارغة للتصحيح",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p049_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 6",
+      "instruction": "",
+      "body": "السَّنَدُ 6 : شَاهَدَ الطِّفْلَانِ عُمَّالًا يَعْتَنُونَ بِنَبَاتَاتِ الْحَدِيقَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p049_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "التَّعْلِيمَةُ 8 : أُصْلِحُ الْخَطَأَ وَأُعَلِّلُ.",
+      "body": "• الْفَتَرَاتُ الزَّمَنِيَّةُ الَّتِي يَسْتَغْرِقُهَا نُزُولُ الْمَطَرِ مَضْبُوطَةٌ.\nأُصْلِحُ : ..............\nأُعَلِّلُ : ..............",
+      "figureDesc": "أسطر منقطة للإصلاح والتعليل",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p049_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-3-u1",
+    "confidence": 0.2
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "Page d'évaluation mixte couvrant les animaux vivipares/ovipares (sci-3-u3), la locomotion (sci-3-u1), la durée de la pluie et un jeu de rôle avec conseil argumenté (arabe), donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Classification et déplacement des animaux",
+    "skill": "Évaluer ses connaissances sur les animaux (mammifères et ovipares, modes et milieux de déplacement, durée des pluies) et justifier ses réponses ou conseils.",
+    "pageType": "exam",
+    "formats": [
+      "vrai_faux",
+      "production_ecrite",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "animaux mammifères",
+      "animaux ovipares",
+      "déplacement des animaux",
+      "milieux naturels",
+      "pluie",
+      "conseil argumenté"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Une évaluation construite autour d'un fil narratif (deux amis, snack puis zoo) où chaque support introduit une consigne différente : vrai/faux justifié, jeu de rôle pour donner un conseil argumenté, correction d'associations animal-milieu-déplacement erronées et rectification d'une affirmation fausse avec explication.",
+    "themeGroup": "Classification des animaux"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "التعليمة 4 : l'image porte «صَوَابٌ» et la transcription l'a gardé ainsi ; c'est fidèle, mais «أُعَلِّلُ» dans la consigne 5 apparaît dans l'image sous la forme «أَعَلِّلْ» (أُعَلِّلْ إجابتي) : la transcription ajoute une voyelle finale sans rapport."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "التعليمة 7 : l'image porte «أَصْلِحُ» (sans damma sur le alif, أَصْلِحُ) et la transcription met «أُصْلِحُ» ; de même التعليمة 8 «أَصْلِحُ»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الأُكُلاتِ» dans l'image est «الْأُكْلَاتِ» (أُكْلَات), la transcription écrit «الأُكُلاتِ»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«أُصْلِحُ : ..............» et «أُعَلِّلُ : ..............» : l'image porte «أَصْلِحْ» et «أَعَلِّلْ»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page/indice « 12 » et les marques de notation dans la marge ne sont pas transcrits."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "«أسطر منقطة لكتابة التعليل» est une description ajoutée, pas du texte de l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le filigrane « MOURAJAA.COM » n'est pas transcrit (non essentiel)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«هِشَام» dans « لِهِشَام » : l'image porte «لِهِشَامٍ» avec tanwin."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "short_test",
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

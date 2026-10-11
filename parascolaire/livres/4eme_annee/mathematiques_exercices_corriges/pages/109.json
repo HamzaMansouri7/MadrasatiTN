@@ -1,0 +1,354 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 109,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigés : حساب، نظام قيس، هندسة (استقامة النقاط) واختبار تقويمي – السنة الرابعة",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "حساب – الصفحة 1 (السنة الرابعة)",
+      "body": "أ) 900   ب) 948   ج) 274",
+      "figureDesc": "",
+      "answer": "أ) 900 ؛ ب) 948 ؛ ج) 274",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p109_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "مجموعة الأعداد هي :",
+      "body": "{ 192 - 264 - 336 - 408 }",
+      "figureDesc": "",
+      "answer": "{ 192 - 264 - 336 - 408 }",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p109_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "العدد الذي يوجد على نفس البعد هو :",
+      "body": "(50 + 20) : 2 = 35 أو 20 + (50 - 20)/2 = 35",
+      "figureDesc": "",
+      "answer": "35",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p109_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "حساب – تمرين 4",
+      "body": "جدول من 3 أسطر و5 أعمدة: 48 58 68 76 88 / 222 111 555 773 444 / 123 234 345 456 678",
+      "figureDesc": "جدول أعداد؛ الأعداد المحاطة بدائرة: 76 ، 773 ، 678",
+      "answer": "76 ، 773 ، 678",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p109_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "حساب – تمرين 5",
+      "body": "أ) { 11 - 22 - 33 - 44 - 55 - 66 - 77 - 88 - 99 }\nب) { 22 - 44 - 66 - 88 }",
+      "figureDesc": "مخطط فن بدائرتين متقاطعتين أ و ب؛ في التقاطع 22 و44 و66 و88 ، وفي أ فقط 11 و33 و55 و77 و99",
+      "answer": "أ) { 11 - 22 - 33 - 44 - 55 - 66 - 77 - 88 - 99 } ؛ ب) { 22 - 44 - 66 - 88 }",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p109_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "نظام قيس – الصفحة 2: المبلغ الذي كان في الحصّالة بالمي",
+      "body": "(430 + 20) x 2 = 900",
+      "figureDesc": "قطعة مستقيمة مقسمة: ثمن القصة 430 مي ، بقي 20 مي",
+      "answer": "900",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p109_i6",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "ثمن الخيط بالمي، ما بقي له، ثمن م من الشريطة، هل يستطيع شراء الزرّين؟",
+      "body": "ثمن الخيط بالمي : 240 × 2 = 480\nبقي له بالمي : 900 - (240 + 480) = 180\nثمن م من الشريطة بالمي = ثمن الزرّين بالمي : نصف 240 = 120\nنعم يستطيع لأنّ 120 مي < 180 مي",
+      "figureDesc": "",
+      "answer": "480 ؛ 180 ؛ 120 ؛ نعم",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p109_i7",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ملك أنور بالمي، المبلغ الذي يوفره، ثمن القصة بالمي",
+      "body": "500 + (20 x 6) = 620\nالمبلغ الذي يوفره بالمي : 7 × 50 = 350\nثمن القصة بالمي : (350 + 620) - 80 = 890",
+      "figureDesc": "",
+      "answer": "620 ؛ 350 ؛ 890",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p109_i8",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "نظام قيس – تمرين 5 (المبلغ بالمي والمجموع بالمي حسب اليوم)",
+      "body": "اليوم 1..9: المبلغ 1 2 4 8 16 32 64 128 256 ؛ المجموع 1 3 7 15 31 63 127 255 511\nاليوم 10..14: المبلغ 512 1024 2048 4096 8192 ؛ المجموع 1023 2047 4095 8191 16383\nأ) = 128 مي\nب) بعد 13 يوما",
+      "figureDesc": "جدولان؛ 128 و8191 محاطان بدائرة",
+      "answer": "أ) 128 مي ؛ ب) بعد 13 يوما",
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_corriges_p109_i9",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "هندسة – الصفحة 3: أ) ثلاث نقط على استقامة واحدة",
+      "body": "(ز ، ح ، ب) (د ، ج ، هـ)",
+      "figureDesc": "مستقيمان متقاطعان في أ مع قاطعين يمر بهما ز، ح، د، ج، هـ، ب",
+      "answer": "(ز ، ح ، ب) (د ، ج ، هـ)",
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p109_i10",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "هندسة",
+      "body": "النّقط \"أ\" ، \"ب\" ، \"ج\" على استقامة واحدة.\nالنّقط \"أ\" ، \"ب\" ، \"د\" ليست على استقامة واحدة",
+      "figureDesc": "",
+      "answer": "",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p109_i11",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "مستطيل فيه مستقيمان متقاطعان عند أ ونقط ب، ج",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "mathematiques_exercices_corriges_p109_i12",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "مستقيمان يمر بهما النقط أ، ص، س، ب، ج، م",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "mathematiques_exercices_corriges_p109_i13",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "اختبار تقويمي – الصفحة 4",
+      "body": "{ 121 - 242 - 363 - 484 }",
+      "figureDesc": "",
+      "answer": "{ 121 - 242 - 363 - 484 }",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p109_i14",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "اختبار تقويمي",
+      "body": "3 مئات + 19 عشرة + 5 آحاد = 495\n17 عشرة + 430 = 6 مئات\n8 آحاد + 12 عشرة = 128",
+      "figureDesc": "",
+      "answer": "495 ؛ 6 مئات ؛ 128",
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_corriges_p109_i15",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "المبلغ الذي أخذه الكتبيّ بالمي",
+      "body": "(45 + 500) - 150 = 395\nثمن الكرّاس الثاني بالمي : 395 - (95 + 135) = 165",
+      "figureDesc": "",
+      "answer": "395 ؛ 165",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p109_i16",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "مستقيمان يتقاطعان في ج مع النقط أ، د، ب، هـ",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "mathematiques_exercices_corriges_p109_i17",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "ثمن شراء القلم الواحد بالمي، ثمن شراء القصة بالمي",
+      "body": "820 - 980 = 160\n500 = (2 x 160) - 820",
+      "figureDesc": "مخططان: قلمان وقصة، وثلاثة أقلام وقصة",
+      "answer": "160 ؛ 500",
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p109_i18",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.27
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de corrigés de mathématiques (nombres à 3 chiffres, ensembles de nombres, problèmes de monnaie en millimes) qui touche surtout au thème « nombres et monnaie » de la Période 1, mais les corrigés mélangent calcul, système de mesure et un test d'évaluation, donc le rattachement reste incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Calcul, monnaie et alignement de points",
+    "skill": "Résoudre des problèmes sur les opérations et les durées-monnaies (millimes), repérer des suites numériques et reconnaître des points alignés.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "corrigé",
+      "système de mesure",
+      "millimes",
+      "suites de nombres",
+      "points alignés",
+      "problèmes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations réutilisables : problèmes de monnaie (tirelire, achats de fil, ruban et boutons, épargne pour une histoire), tableau de doublement quotidien avec cumul, recherche du nombre au milieu de deux nombres, et multiples à repérer dans un tableau.",
+    "themeGroup": "Monnaie"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Page 2, ex. 2 : l'image indique (20 + 430) x 2 = 900, la transcription écrit (430 + 20) x 2 ; l'ordre des termes est inversé."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Page 4, ex. 5 : l'image indique 160 = 820 - 980 (ou 980 - 820), pas 820 - 980 = 160 ; l'opération est fausse (résultat négatif)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Page 1, ex. 2 : l'ordre dans l'image est { 408 - 336 - 264 - 192 }, la transcription l'inverse (192 ... 408)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Page 4, ex. 1 : l'image donne { 484 - 363 - 242 - 121 }, la transcription l'inverse."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Page 1, ex. 5 : l'image donne { 99 - 88 - ... - 11 } et { 88 - 66 - 44 - 22 }, l'ordre est inversé dans la transcription."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Page 1, ex. 3 : l'image indique 35 = (50 + 20) : 2, soit 35 = 2 : (50+20) en lecture inversée, et 35 = 20 + (50-20)/2 ; la présentation est partiellement modifiée."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Page 1, ex. 1 : la ligne « 900 ب) 948 ج) 274 » est transcrite, mais les ex. 3 et 4 de la page 3 (géométrie : rectangle avec points أ ب ج, et figure avec س ص م) ne sont pas décrits ; l'ex. 4 de la page 4 (droites avec points أ ب ج د هـ) est vide."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Page 4, ex. 5 : schémas des barres (قلم، قصة) non transcrits ; pages 3 et 4, étiquettes de points manquantes."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Page 1, ex. 4 : les nombres 76, 773, 678 sont entourés dans l'image, ce qui est correct, mais l'ex. 5 omet le diagramme de Venn (أ، ب)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Page 2, ex. 3 : « ثمن م من الشريطة » : l'image indique « ثمن 1م من الشريطة » ; le chiffre 1 est manquant."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Page 2, ex. 4 : « ملك أنور » est correct mais le mot est partiellement masqué par le numéro 4 ; tashkeel (ـكُ) non rendu."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel visible non reproduit (ex. « الحصّالة », « الكتبيّ » conservés, mais « الزِّرّين », « النَّقط » partiels)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

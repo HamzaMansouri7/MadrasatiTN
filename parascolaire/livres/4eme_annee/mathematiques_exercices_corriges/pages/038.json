@@ -1,0 +1,103 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 38,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 9 : رسم مستقيمين متعامدين باعتماد الكوس (Tracer deux droites perpendiculaires à l'aide de l'équerre)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ابحث بواسطة الكوس عن المستقيمات المتعامدة ثمّ عبّر عنها بجمل كما في المثال:",
+      "body": "[د ج] عمودي على [ب ط]",
+      "figureDesc": "Figure géométrique avec les points ب، أ، ج، ط، د، هـ، و، ز، ح. Un angle droit est marqué en ج (le segment [د ج] est perpendiculaire à [ب ط]) et un autre angle droit en و (entre [و ز] et [هـ ط]). Les segments se rejoignent au point ط.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p038_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "استعمل كوسك لرسم :",
+      "body": "- مستقيم عمودي على المستقيم (ص) والمارّ من النّقطة \"أ\".\n- مستقيم عمودي على المستقيم (ص) والمارّ من النّقطة \"م\".\n- مستقيم عمودي على المستقيم (ص) والمارّ من النّقطة \"ب\".",
+      "figureDesc": "Une droite oblique (ص) et trois points : أ et ب situés hors de la droite, et م situé sur la droite.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p038_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعد رسم الشّكل التّالي مستعملا في ذلك كوسك ومسطرتك المدرّجة.",
+      "body": "",
+      "figureDesc": "Un rectangle contenant des segments obliques : deux segments parallèles partant du coin inférieur gauche et du bas, ainsi qu'un segment perpendiculaire formant un sommet en haut (motif en zigzag/« montagnes »).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p038_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ارسم مستقيما عموديًا على (س) يمرّ من النّقطة \"ط\" ويقطع (س) في النّقطة \"ب\" ثمّ ارسم مستقيما عموديًا على (ص) يمرّ من النّقطة \"ط\" ويقطع (ص) في النّقطة \"د\".",
+      "body": "- ما هي طبيعة الشّكل (أ ب ط د) ؟",
+      "figureDesc": "Deux droites (ص) et (س) se coupant en A avec un angle droit marqué en أ (forme de V inversé). Un point ط est placé en dessous, entre les deux droites.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p038_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.41
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur le tracé de droites perpendiculaires à l'équerre, un contenu de la Période 1 (Nombres à 5 et 6 chiffres, droites et monnaie), semaine 9 au Trimestre 1.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    117
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Droites perpendiculaires à l'équerre",
+    "skill": "Tracer et reconnaître des droites perpendiculaires en utilisant l'équerre, puis identifier la figure obtenue.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "droites perpendiculaires",
+      "équerre",
+      "tracé géométrique",
+      "reproduction de figure",
+      "quadrilatère"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression d'activités de géométrie : repérer des perpendiculaires sur une figure et les exprimer en phrases, tracer des perpendiculaires depuis des points donnés, reproduire une figure à l'équerre et à la règle, puis déduire la nature du quadrilatère construit (rectangle).",
+    "themeGroup": "Droites, points et segments"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

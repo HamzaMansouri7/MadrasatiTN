@@ -1,0 +1,142 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 52,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأعداد من 10 000 إلى 99 999 (2) – مقارنة وترتيب – الضرب (1) – الأسبوع 13",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "تمثّل النُّقطة رقما في كلّ عدد من الأعداد التّالية :",
+      "body": "3.475 ، 34.75 ، 347.5 ، 3475.\nأ) ضع الرّقم 3 مكان نقطة مناسبة لتَحْصُلَ على أصغر عدد مكوَّن من 5 أرقام.\nضع الرّقم 9 مكان نقطة مناسبة لتَحْصُلَ على أكبر عدد مكوَّن من 5 أرقام.\nضع الرّقم 8 مكان نقطة مناسبة لتَحْصُلَ على أصغر عدد مكوَّن من 5 أرقام.\nضع الرّقم 2 مكان نقطة مناسبة لتَحْصُلَ على أكْبَر عدد مكوَّن من 5 أرقام.\nب) رتّب الأعداد المتحصّل عليها ترتيبا تنازليًّا.",
+      "figureDesc": "أربع بطاقات في كل واحدة عدد به نقطة في موضع مختلف: 3.475 ، 34.75 ، 347.5 ، 3475.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p052_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمل رسم التّربيعات بالشّبكتيْن ثمّ املإِ البطاقتيْن بما يناسب.",
+      "body": "تحت كل شبكة بطاقة على شكل: . x .",
+      "figureDesc": "شبكتان مستطيلتان مقسّمتان إلى مربعات وأجزاء مرسومة جزئيا (تمثيل ضرب عددين)، وتحت كل شبكة بطاقة فارغة للضرب '. x .'.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p052_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "رتّب على الشّريط من الأصغر إلى الأكبر الجذاءات التّالية :",
+      "body": "8 x 1 ، 4 x 5 ، 4 x 3 ، 9 x 0 ، 4 x 9 ، 5 x 6",
+      "figureDesc": "شريط مقسّم إلى ست خانات فارغة لكتابة الجذاءات مرتّبة.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p052_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هو ثمن الصّحون والكؤوس؟",
+      "body": "اشترَيْتُ من المغازة 5 صحون بـ 1250 مي الصّحن الواحد و 8 كؤوس بـ 800 مي الكأسيْن ومزهريّة.\n- ما هو ثمن الصّحون والكؤوس؟\nسلّمتُ للبائعة 3 أوراق نقديّة ذات 5 د فأرجَعَتْ لي 150 مي.\nما هو ثمن شراء المزهريّة ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p052_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.58
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite des nombres à 5 chiffres (10 000 à 99 999), de leur comparaison et de leur rangement, avec des problèmes de monnaie et des produits simples. Cela correspond à la Période 1 (nombres à 5 chiffres, monnaie); la multiplication à 2 chiffres de la Période 2 n'est pas abordée ici.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    120
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 99 999 et multiplication",
+    "skill": "Comparer et ordonner des nombres de 5 chiffres, et découvrir la multiplication par des tables et des problèmes d'achat.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres à 5 chiffres",
+      "comparaison",
+      "ordre croissant",
+      "multiplication",
+      "rendu de monnaie",
+      "quadrillage"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Placer un chiffre à la place d'un point pour obtenir le plus petit ou le plus grand nombre, illustrer une multiplication par un quadrillage, ranger des produits sur une bande, et résoudre un problème d'achat avec rendu de monnaie en plusieurs étapes.",
+    "themeGroup": "Grands nombres"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le titre de l'en-tête (الأعداد من 10 000 إلى 99 999 (2) ، مقارنة وترتيب الضرب (1) ، الأسبوع 13) est absent de la transcription, ainsi que le numéro de page 48."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الجذاءات » : l'image montre « الجذاءات » avec un alif après le ذ (الجذا ءات). La transcription est quasi correcte mais l'orthographe de l'original est inhabituelle."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« النُّقطة » : l'image porte « النَّقطة » (fatha sur le nun), pas une damma."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أكْبَر » apparaît avec tashkeel dans l'image pour la 4e ligne, mais « أكبر » de la 2e ligne est sans voyelles, ce qui est conforme. « مكوَّن » : l'image porte « مكوّن » avec une fatha sur le waw, ce qui est fidèle."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les grilles de carrés de l'exercice 2 ne sont pas décrites, mais ce sont des figures et non du texte."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Dans l'exercice 4, le champ intermédiaire « ما هو ثمن الصّحون والكؤوس؟ » est dupliqué comme titre ; ce n'est pas une erreur sur la page mais une répétition de la transcription."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

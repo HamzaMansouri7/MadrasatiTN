@@ -1,0 +1,157 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 7,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "ضمائر النصب المتصلة (ضمير نصب مفعول به، ضمير نصب اسم ناسخ) – النحو، السنة السادسة (ملاحظة : la matière est l'arabe, pas le français)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "عمر الفراغات بضمائر النصب الملائمة",
+      "body": "أين وضعت القلم ؟ ← وضعـ ... فوق الطاولة\nمتى أنجزت فروضك المنزلية ← أنجزتـ ... ليلة الأحد\nكيف وجدت جزيرة جربة ← إنـ ... رائعة الجمال\nهل سيعيدون الامتحان؟ ← ليتـ ... يفعلون ذلك",
+      "figureDesc": "Tableau à deux colonnes : à droite les questions, à gauche les débuts de réponses avec un espace vide à remplir par un pronom suffixe.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p007_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اكتب كل ضمير نصب مسطر في الوادي المناسب من الجدول",
+      "body": "ذهبت إلى أمي وحدثتها نظرت لي نظرة غريبة وافترت شفتاها لحظة كأنها تريد أن تبتسم ثم أطبقتهما وغابت قليلا ثم جاءت بكيس وضعته في يدي وقالت لي في هذا الكيس مال تستعين به وضرب القطار في الصحراء ففكرت في أمي واخواتي الذين خلفتهم ورائي وقلت في نفسي لعلهم الأن متحسرون على فراقي",
+      "figureDesc": "Tableau vide à deux colonnes : « ضمير نصب مفعول به » (à droite) et « ضمير نصب اسم ناسخ » (à gauche). Dans le texte, soulignés : وحدثتها، كأنها، أطبقتهما، وضعته، خلفتهم، لعلهم.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p007_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ضع في اطار كل ضمير نصب متصل",
+      "body": "قررت الخروج من البيت لكنني عدلت عن ذلك عندما بدأ برنامجا تلفزيا انتظرته طويلا\nلا تنس دروسك راجعها جيدا لعلك تنجح هذه السنة\nقصدوا الملعب لأنهم عزموا على اجراء مقابلة ودية سيلعبونها بكل حماس",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p007_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "حرر نصا يتضمن أكثر ما يمكن من ضمائر النصب",
+      "body": "خرجت في رحلة صيد وجعلت تطارد بعض الحيوانات وهي تحاول النجاة منك",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p007_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u6",
+    "confidence": 0.25
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de grammaire arabe sur les pronoms suffixes de l'accusatif (ضمائر النصب المتصلة), mais les chapitres officiels d'arabe portent sur la narration (structure, description, dialogue, etc.) et aucun ne correspond clairement à ce point de grammaire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Pronoms suffixes complément et اسم إن",
+    "skill": "Identifier et employer les pronoms suffixes de l'accusatif (complément d'objet ou complément d'un verbe/particule d'insistance ou de souhait) dans des phrases et un texte.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "autre",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "pronoms suffixes",
+      "accusatif",
+      "إن وأخواتها",
+      "complément d'objet",
+      "grammaire arabe",
+      "classement en tableau"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression en 4 étapes réutilisable : compléter des phrases question-réponse avec le pronom adéquat, classer des pronoms soulignés d'un récit dans un tableau selon leur fonction, encadrer les pronoms dans de courtes phrases, puis rédiger un texte libre en réemployant un maximum de pronoms.",
+    "themeGroup": "Les pronoms"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les titres «التمارين» et les intitulés «التمرين الأول/الثاني/الثالث/الرابع» sont absents de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de l'exercice 2 (ضمير نصب مفعول به / ضمير نصب اسم ناسخ) n'est pas transcrit."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«أين وضعت القلم ؟» : le mot «وضعتـ» est tronqué en «وضعت» ; dans l'exercice 1 la transcription met «وضعـ» au lieu de «وضعتـ»."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3 : «عندما بدأ برنامجا تلفزيا» : l'image montre «عندما بدأ برنامجا تلفزيا انتظرته طويلا», ce qui est cohérent, mais un espace vide (ضمير à compléter) après «عن» est omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : «في الوادي» est transcrit correctement, mais «مسطر» doit être vérifié ; «الأن» devrait être «الآن» (madda sur l'alif)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3 : les espaces blancs (ضمير à insérer) après «عن ذلك» et «راجعها» ne sont pas indiqués."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 4 : la phrase «حرر نصا...» est placée comme consigne, mais l'ordre de lecture est inversé : le texte «خرجت في رحلة صيد...» est affiché avant la consigne."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 4 : l'ordre de la consigne et du texte d'exemple est inversé par rapport à l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : les mots soulignés/en gras (وحدثتها، كأنها، أطبقتهما، وضعته، خلفتهم، لعلهم) ne sont pas signalés comme soulignés."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

@@ -1,0 +1,111 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 57,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Une sortie particulière (lettre de François à Nicolas)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "(L'été dernier, François est allé en colonie de vacances. De là-bas, il écrit une lettre à son ami pour lui raconter une sortie assez particulière...)\nGrenoble, le 26 juillet 2016\nCher Nicolas.\n... Je vais te raconter une sortie que je ne suis pas prêt d'oublier.\nUn matin, nous partons en promenade dans la forêt, nos deux moniteurs, mes camarades et moi. Vers midi, nous nous arrêtons tous sous les arbres pour déjeuner. Puis nous nous mettons à jouer. À l'heure du retour, tout le groupe reprend le chemin de la colonie. En cours de route, je lève les yeux, et que vois-je?\nJe vois, en haut d'un arbre, une petite queue en panache : c'est un magnifique écureuil !\nTu te rends compte ? Je n'en avais jamais vu d'aussi près. Je m'approche doucement. Mais la petite bête saute sur un autre arbre : hop ! hop ! Je la suis de plus en plus loin dans la forêt...\nTout à coup, je m'aperçois que je suis seul. Je cours pour rejoindre mes camarades. Mais je ne retrouve pas mon chemin. Alors une grande angoisse m'envahit. Je me mets à appeler : Éric ! Philippe ! Personne ne répond. Le silence de la forêt augmente ma peur. Je m'affole. Je tremble comme une feuille...\nSoudain, une voix m'appelle : « François ! Je suis là. N'aie pas peur, crie le moniteur. Je t'ai suivi. Tu as failli te perdre. Tu sais qu'il ne faut pas quitter le groupe, même pour un écureuil. » Je crois que ce jour-là, j'ai eu la plus grande peur de ma vie.\nTon ami qui ne t'oublie pas.\nFrançois",
+      "figureDesc": "Texte encadré ; en-tête « Lecture - Compréhension » (Sagesse, 6ème année de base).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p057_i1",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1",
+      "instruction": "Barre ce qui est faux :",
+      "body": "• François a vu dans le bois un singe.\n• François est parti à la forêt avec ses camarades et deux moniteurs.\n• François a vu un écureuil.\n• François est perdu dans la forêt.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p057_i2",
+      "topicId": "fr-6-m7",
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m7",
+  "topicTitle": "Module 7 : Profiter de son temps libre",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m7",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.26
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension centrée sur une lettre amicale (François écrit à Nicolas pour raconter une sortie en colonie de vacances), ce qui se rattache au module 7 (loisirs, rédaction d'une lettre amicale), mais le thème du récit de sortie en forêt pourrait aussi relever d'autres modules, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    124
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Lecture : la lettre racontant une sortie",
+    "skill": "Comprendre un texte en repérant les informations explicites et en identifiant les affirmations fausses.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "lecture compréhension",
+      "lettre",
+      "colonie de vacances",
+      "sortie en forêt",
+      "affirmations fausses"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le contexte d'une lettre d'un enfant en colonie de vacances qui raconte une sortie inhabituelle se prête à de nombreux exercices de compréhension, comme celui qui consiste à barrer les affirmations fausses. On peut le transposer à d'autres récits de voyage ou de sortie.",
+    "themeGroup": "Production écrite et lettres"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : « Lecture - Compréhension », « Sagesse », « 6 ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », « 56 », « 6 ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Grenoble, le 26 juillet 2016 » : l'image affiche « Grenoble,le 26 juillet  2016 » avec des espaces différents. Écart typographique sans conséquence."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« hop ! hop ! » est transcrit avec une espace, alors que l'image montre « hop !hop ! ». Écart typographique sans conséquence."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » et le numéro « 1- » de la consigne ne sont pas repris, la consigne commençant directement par « Barre ce qui est faux : »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

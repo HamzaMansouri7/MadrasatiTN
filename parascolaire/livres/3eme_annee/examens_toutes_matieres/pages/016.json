@@ -1,0 +1,141 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 16,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول – عدد 3 – قواعد اللغة (الجملة الفعلية، الجملة تامة المعنى، الضمائر)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَقْرَأُ النَّصَّ وَأَسْتَخْرِجُ الْجُمَلَ الْمَطْلُوبَةَ.",
+      "body": "قُبَيْلَ غُرُوبِ الشَّمْسِ، كَانَ الْجَمِيعُ فِي غَابَةِ الزَّيْتُونِ، وَكُلُّهُمْ نَشَاطٌ وَحَمَاسٌ. فَرَشَ أَكْرَمُ وَأَمْجَدُ الْمَفَارِشَ، وَنَصَبَ الْعَمُّ عَبْدُ الْجَوَادِ السَّلَالِمَ. وَأَضْرَمَ عَبْدُ الْكَرِيمِ النَّارَ فِي الْحَطَبِ، فِي حِينِ رَاحَتِ الْجَدَّةُ خَدِيجَةُ تُعِدُّ اللَّوَازِمَ لِإِعْدَادِ الطَّعَامِ.\n• جُمْلَةٌ تُبَيِّنُ عَمَلَ أَكْرَمَ وَأَمْجَدَ. ........\n• جُمْلَةٌ تُبَيِّنُ عَمَلَ الْعَمِّ عَبْدِ الْجَوَادِ. ........\n• جُمْلَةٌ تُبَيِّنُ عَمَلَ الْعَمِّ عَبْدِ الْكَرِيمِ. ........",
+      "figureDesc": "ثلاثة أسطر منقّطة للإجابة، وخانات تقييم (معيار م‎ع1أ) على اليمين",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p016_i1",
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَضَعُ الْعَلَامَةَ (x) فِي خَانَةِ كُلِّ جُمْلَةٍ تَامَّةِ الْمَعْنَى.",
+      "body": "○ شَغَلَ الْفَلَّاحُ\n○ انْطَلَقَ الْجَمِيعُ فِي الْعَمَلِ\n○ تَجْمَعُ النِّسْوَةُ\n○ تَسَلَّقَ أَكْرَمُ شَجَرَةَ الزَّيْتُونِ.\n○ تُعِدُّ فَاطِمَةُ وَكَوْثَرُ.\n○ تَسَاقَطَ الْحَبُّ عَلَى الْمَفَارِشِ",
+      "figureDesc": "ست دوائر للتعليم بجانب الجمل، مرتبة في عمودين؛ خانات تقييم (معيار م‎ع1ب)",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p016_i2",
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَكْتُبُ فِي الْفَرَاغِ مَا يُنَاسِبُ مِمَّا يَلِي لِيَكْتَمِلَ الْمَعْنَى.",
+      "body": "صَابَةُ الزَّيْتُونِ - كِيسُ الزَّيْتُونِ - حَبَّاتُ الزَّيْتُونِ\n- رَفَعَ أَكْرَمُ وَأَمْجَدُ ........\n- تَلْتَقِطُ النِّسْوَةُ ........\n- نَقَلَ الْفَلَّاحُ ........ إِلَى الْمَعْصَرَةِ.",
+      "figureDesc": "شريط رمادي يحوي الكلمات المقترحة؛ خانات تقييم (معيار م‎ع1أ)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p016_i3",
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَكْتُبُ فِي الْإِطَارِ الضَّمِيرَ الْمُنَاسِبَ لِلْجُمْلَةِ مِمَّا يَلِي: أَنْتَ - هُوَ - نَحْنُ - هُنَّ - أَنْتُمَا - هُمَا - هُمْ",
+      "body": "[........] انْطَلَقْنَا فِي الْعَمَلِ بِهِمَّةٍ وَنَشَاطٍ.\n[........] أَحْضَرْتِ الْأَكْيَاسَ الْفَارِغَةَ.\n[........] وَزَّعَتَا كُؤُوسَ الشَّايِ عَلَى الْعُمَّالِ.",
+      "figureDesc": "ثلاثة إطارات مستطيلة فارغة قبل كل جملة؛ شريط رمادي للضمائر؛ خانات تقييم (معيار م‎ع1ج)",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "examens_toutes_matieres_p016_i4",
+      "topicId": "ar-3-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-3-u1",
+  "topicTitle": "Unité 1 : Personnages et actions accomplies",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u1",
+    "confidence": 0.15
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Il s'agit d'une évaluation de fin de premier trimestre en grammaire arabe (phrase verbale, phrase au sens complet, pronoms) centrée sur les personnages et leurs actions dans un texte, ce qui se rapproche de l'unité 1, mais la page est un test de fin de trimestre qui peut couvrir plusieurs unités, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Phrase verbale et pronoms personnels",
+    "skill": "Identifier la phrase verbale, reconnaître une phrase au sens complet et choisir le pronom personnel adapté au verbe conjugué.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "autre",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "phrase verbale",
+      "phrase au sens complet",
+      "pronoms personnels",
+      "conjugaison",
+      "récolte des olives"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation de grammaire construite autour d'un contexte unique, la récolte des olives : extraction de phrases d'un texte, repérage des phrases incomplètes par cases à cocher, compléments à choisir dans une liste, et pronoms à associer à des verbes conjugués.",
+    "themeGroup": "Grammaire : la phrase verbale"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « السَّلَالِمَ » transcrit avec shadda sur le س ; l'image montre « السَّلَالِم » (acceptable), aucune vraie divergence notable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « لِإِعْدَادِ الطَّعَامِ » dans la transcription ; l'image montre « لإعداد الطعام » avec le même sens, sans erreur majeure."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : « أَحْضَرْتِ » (image : أَحْضَرْتِ) et « وَزَّعَتَا » (image : وَزَّعَتَا) — conformes ; « انْطَلَقْنَا » conforme."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'ordre de lecture des deux colonnes est mélangé, car les phrases de droite (شغل الفلاح، انطلق الجميع، تجمع النسوة) sont lues avant celles de gauche. C'est cohérent avec l'arabe RTL."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes (المادة : قواعد اللغة، المستوى : السنة الثالثة، اختبار نهاية الثلاثي الأول، عدد : 3, اللقب، القسم) et la colonne des critères (المعايير : معـ1أ، معـ1ب، معـ1ج) ne sont pas transcrits."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

@@ -1,0 +1,108 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 20,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وصف الأحاسيس والمشاعر – الفرح",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وصف الأحاسيس والمشاعر: الفرح",
+      "body": "تهللت بشر   تهللت أساريري   رحت أرقص بشرا وحبورا   لم تسع الفرحة قلبي\nغمرتني سعادة لا توصف   غمرتني فرحة عارمة   انبسطت أساريري فرحا\nكللت جهودي بالنجاح   كدت أطير فرحا   ارتسمت علامات الفرح على محياي\nانقشع عني الشعور بالهزيمة وأصبحت أشعر بالنخوة والانتصار\nبوجهها بشر وفي عينيها فرح وعلى لسانها قول جميل   فاضت نفسي غبطة وحبورا\nيا لها من مفاجأة سارة خلفت في نفسي البهجة   تهللت أساريره والتمعت أعينه سرورا\nكاد قلبي يقفز من بين أضلعي فرحا وسرورا   وجوه طلقة تفيض بشرا وحيوية\nفرح انشرح سعد انبسط استبشر ابتهج\nكنا نتجول باعثين الفرح والسلام والحب حيثما مررنا\nبوجهها بشر وفي عينيها فرح وعلى لسانها قول جميل\nكنت أركض في سرعة وسرور كعصفور غادر قفصه\nارتسم البشر والترحاب على وجوههم فالتمعت أعينهم سرورا وفرحا\nتكركر الصبية بضحكاتها الرنانة الصافية وهي مرحة طروب يهزها الحب والانتصار\nغمرته بقبلاتها الطافحة بالمودة والمعبرة عن السعادة\nوقد ملأ كيانها فرح فريد لم تعرفه من قبل وفيض من السعادة لا يوصف",
+      "figureDesc": "نص داخل إطار بعنوان «وصف الأحاسيس والمشاعر» وكلمة «الفرح» كعنوان فرعي",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p020_i1",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "اغبر شعرها الفاحم وتلبد ولاح من تحته وجه كالدينار الزائف في صفرته\nهي فتاة عليلة قد أخذ السقام من حجمها وهي تنتقل متحاملة في مشيتها وكلما خافت العثار استندت إلى جدار إنها لتمشي وكأن ليس فيها دم ينتهي إلى قدميها فهي تجرها جرا وتقتلعها بين الخطوة والخطوة",
+      "figureDesc": "نص في إطار ثانٍ أسفل الصفحة (وصف فتاة عليلة)، يليه إطار فارغ",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p020_i2",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u4",
+  "topicTitle": "Unité 4 : Description et caractérisation des personnages",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.34
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur le vocabulaire arabe de description des sentiments (la joie) et un portrait physique d'une jeune fille malade, ce qui se rapproche de l'unité 4 (description et caractérisation des personnages), sans correspondance exacte avec un chapitre.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description des sentiments : la joie",
+    "skill": "Employer le lexique et les expressions de la joie pour décrire des sentiments, en s'appuyant sur un portrait descriptif d'un personnage.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "expression des sentiments",
+      "joie",
+      "lexique arabe",
+      "description",
+      "portrait physique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque d'expressions pour exprimer la joie, réutilisable en exercices de réemploi ou de production écrite (raconter une réussite). Le portrait d'une jeune fille malade peut servir de modèle pour décrire l'état physique et moral d'un personnage.",
+    "themeGroup": "Expression des sentiments et émotions"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Première ligne : « تهللت بشر » dans l'image, la transcription l'a repris tel quel ; le titre « الأحاسيس » est transcrit correctement, mais « تهللت بشر » est bien présent dans l'image, donc pas d'erreur sur ce point"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« تكركر الصبية بضحكاتها » : l'image donne bien « تكركر », donc conforme ; aucune erreur sur ce mot"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« كالدينار الزائف » : l'image montre « كالدينارالزائف » (mots collés), la transcription a séparé les deux mots, ce qui est sans conséquence"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أساريره » et « أعينه » : l'image donne « أساريره » et « أعينه », conforme"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les phrases de la ligne 'فرح انشرح سعد انبسط استبشر ابتهج' sont présentes, rien ne manque"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

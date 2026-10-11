@@ -1,0 +1,106 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 98,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 26 : اختبار تقويمي للتثبيت والدعم (ترتيب الأعداد، السعات، محيط المربع ومساحته، الأثمان والانخفاض)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب أصغر عدد يمكن تكوينه بواسطة الأرقام 0 ، 2 ، 9 ، 6 ، 1 ، 8 ومحصور بين 800 000 و 900 000.",
+      "body": "أكتب أصغر عدد يمكن تكوينه بواسطة الأرقام 0 ، 2 ، 9 ، 6 ، 1 ، 8 ومحصور بين 800 000 و 900 000.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p098_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هو عدد الأوعية المملوءة؟",
+      "body": "بِخزّان 12 هل من الزّيت. بِيع منه 4 هل ونصف ثمّ 30 دكل وأُفرغت الكمية الباقية في أوعية سعة الواحد 9 لترات. ما هو عدد الأوعية المملوءة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p098_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ) ما هو طول قيس ضلعها بالمتر؟ ب) ما هو قيس مساحتها؟",
+      "body": "حديقة مربّعة الشّكل. أراد أمين قيس طول محيطها فوجدها 220 خطوة طول الواحدة 60 صم.\nأ) ما هو طول قيس ضلعها بالمتر؟\nب) ما هو قيس مساحتها؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p098_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) ما هو ثمن شراء هذا الفستان الجاهز إذا كان صاحب المغازة يقوم بانخفاض قدره 7 500 مي لمن يدفع الثّمن حاضرا؟ ب) فكّرت الأمّ أنّها تستطيع صنع فستان مُمَاثِلٍ عند خَيّاطَتِهَا وذلك : ج) ما هو ثمن كلفة هذا الفستان المصنوع عند الخيّاطة؟ د) أيّ الحلّيْن ستختار الأمّ؟ لماذا؟",
+      "body": "تريد أمّ شراء فستان لابنتها وجدته بإحدى المغازات بثمن 82 500 مي.\nأ) ما هو ثمن شراء هذا الفستان الجاهز إذا كان صاحب المغازة يقوم بانخفاض قدره 7 500 مي لمن يدفع الثّمن حاضرا؟\nب) فكّرت الأمّ أنّها تستطيع صنع فستان مُمَاثِلٍ عند خَيّاطَتِهَا وذلك :\n- بشراء مترين ونصف من القماش ثمن المتر منه بـ 16 د.\n- واقتناء 4 أزرار بـ 3 دنانير النّصف الطزينة (6 أزرار).\n- ودفع أجرة الخياطة التي تبلغ نصف ثمن القماش.\nج) ما هو ثمن كلفة هذا الفستان المصنوع عند الخيّاطة؟\nد) أيّ الحلّيْن ستختار الأمّ؟ لماذا؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p098_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch2",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de la semaine 26 qui mélange plusieurs notions (ordre des nombres à 6 chiffres, capacités, périmètre et aire du carré, prix et réductions), donc elle ne correspond à aucun chapitre unique, même si elle se rattache à la synthèse de math-4-p6.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    132
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Évaluation: nombres, capacités, carré, prix",
+    "skill": "Résoudre des problèmes mobilisant l'ordre des nombres, les unités de capacité, le périmètre et l'aire du carré, ainsi que les prix et réductions.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "ordre des nombres",
+      "capacités",
+      "périmètre du carré",
+      "aire du carré",
+      "prix et réduction"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations de la vie courante réutilisables : fabriquer un nombre à partir de chiffres imposés dans un intervalle, répartir un liquide en récipients après des ventes successives, retrouver le côté et l'aire d'un jardin carré à partir de pas mesurés, comparer un achat avec réduction et une confection chez la couturière.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "linked",
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

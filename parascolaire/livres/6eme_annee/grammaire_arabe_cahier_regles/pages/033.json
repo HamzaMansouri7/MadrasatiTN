@@ -1,0 +1,126 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 33,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الجملة الاسمية: تقديم الخبر على اسم الناسخ – النواسخ الفعلية (كان وأخواتها)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "النواسخ الفعلية هي: كان صار أصبح مازال ليس أضحى ظل أمسى بات مابرح ما فتئ مانفك ما دام. تدخل الواحدة منها على الجملة الاسمية فيصير المبتدأ اسما لها مرفوعا و الخبر خبرا لها منصوبا. مثال: الطقس بارد ← كان الطقس باردا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p033_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "يتقدم خبر الناسخ على اسم الناسخ إذا كان اسم الناسخ نكرة و الخبر جار و مجرور. كما يتقدم خبر الناسخ على اسم الناسخ إذا كان اسم الناسخ نكرة و الخبر ظرفا مضافا و مضافا اليه. إذا تقدم الخبر على اسم الناسخ الفعلي يرد مرفوعا.",
+      "figureDesc": "جدول من 3 أسطر و4 أعمدة: الجمل الاسمية (في التعب لذة / عندي موعد / في السيارة سائقها / لا اله إلا الله) وتحتها الجمل بعد دخول الناسخ (أصبح في التعب لذة / مازال عندي موعد / كان في السيارة سائقها / ما دام لا اله إلا الله) مع تضخيم الناسخ.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p033_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أضف إلى معلوماتك",
+      "body": "تقترن الجملة الاسمية بناسخ لغرض معين. من معاني النواسخ: كان: تقيد اسمها و خبرها بالزمن المستفاد من صيغتها. أصبح أضحى أمسى بات ظل: تقيد اسمها و خبرها بأزمتها المخصوصة. مازال ما برح ما فتئ مانفك: تقيد اسمها و خبرها بمعنى الاستمرار في الزمن. صار: تفيد معنى التحول من حالة إلى أخرى. ليس: تفيد المعنى قبل دخولها. ما دام: تفيد ما بمدة دوام خبرها.",
+      "figureDesc": "جدول من عمودين: الناسخ (كان / أصبح أضحى أمسى بات ظل / مازال ما برح ما فتئ مانفك / صار / ليس / ما دام) ومعناه.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p033_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.3
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite des verbes défectifs (كان وأخواتها) en grammaire arabe, ce qui correspond à la compétence « conjugaison des verbes défectifs » de l'Unité 1, mais aucun chapitre ne porte précisément sur la phrase nominale et les نواسخ, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Les verbes d'état (كان et ses sœurs)",
+    "skill": "Identifier les verbes d'état (كان وأخواتها) et accorder leur sujet et leur attribut, y compris quand l'attribut est antéposé au sujet indéfini.",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "verbes d'état",
+      "كان وأخواتها",
+      "phrase nominale",
+      "antéposition de l'attribut",
+      "sujet indéfini",
+      "sens des verbes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le cours sépare rappel, règle et complément de sens (durée, transformation, continuité). On peut en tirer des exercices de transformation de phrases nominales, de classement des verbes selon leur sens ou de réécriture avec antéposition de l'attribut, mais la page ne propose aucune activité ni mise en situation.",
+    "themeGroup": "Kâna et ses sœurs"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau d'exemples de la section الدرس est absent : في التعب لذة / أصبح في التعب لذة ; عندي موعد / مازال عندي موعد ; في السيارة سائقها / كان في السيارة سائقها ; لا اله إلا الله / ما دام لا اله إلا الله"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre principal est absent : الجملة الاسمية تقديم الخبر على اسم الناسخ النواسخ الفعلية"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le mot « مثال: » est ajouté avant الطقس بارد, alors qu'il n'apparaît pas dans l'image"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« مضافا و مضافا اليه » : l'image dit « مضافا و مضاف اليه » (le deuxième mot est sans alif final)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الخبر جار و مجرور » est correct, mais la phrase « إذا تقدم الخبر ... » est transcrite fidèlement ; seul « الطقس بارد ← » ajoute une flèche absente de l'image (simple espacement)"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les tableaux sont aplatis en texte : l'ordre des colonnes (nasikh / sens) est inversé par rapport à la lecture visuelle"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

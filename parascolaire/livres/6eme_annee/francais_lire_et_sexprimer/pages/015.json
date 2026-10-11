@@ -1,0 +1,130 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 15,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : « Ma mère » (d'après Georges Duhamel, Le notaire du Havre)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Ma mère\nMaman était revenue de la ville avec un énorme ballot. C'étaient des pantalons d'hommes, tout coupés ; il ne restait qu'à assembler les morceaux et à les coudre.\nLe soir, ma mère se mettait au travail et veillait une grande partie de la nuit. Elle disait de temps à autre à mon père :\n« Ce n'est pas très bien payé mais un peu d'argent nous aidera beaucoup. »\nJe lui disais parfois :\n« Comme tu couds bien, maman ! Mais cela te fatigue.\nElle me répondait avec un sourire forcé :\n- Ça me fait plaisir de travailler. Je veux que rien ne manque à la maison.»\nPuis elle ajoutait en soupirant : « Si seulement j'avais une fille en âge de m'aider, on travaillerait ensemble et ce serait plus gai ! »\nCertains voisins se plaignaient à cause de la machine à coudre qui les empêchait de dormir. Ils avaient fini par s'y habituer.\nUne nuit, je fus réveillé par le grondement du tonnerre. Papa et ma sœur Cécile sommeillaient à côté de moi. Je vis, loin, sur le sol, un filet de lumière venant de la cuisine mais je n'entendais aucun bruit. Je me levai lentement et j'allai sur la pointe des pieds vers la cuisine. Je fus à la fois étonné et peiné de voir ma mère qui dormait assise devant la table, la tête appuyée à son bras.\nD'après Georges Duhamel « Le notaire du Havre »",
+      "figureDesc": "Texte encadré dans un cadre aux coins arrondis, avec en-tête illustré (nuage) « Lecture - Compréhension », bandeaux « Sagesse » et « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p015_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-a",
+      "instruction": "Barre ce qui est faux :",
+      "body": "- La mère est : couturière. / pharmacienne. / épicière",
+      "figureDesc": "Les trois mots sont encadrés dans des cases.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p015_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1-b",
+      "instruction": "Justifie ta réponse :",
+      "body": "........................................................................",
+      "figureDesc": "Ligne de pointillés à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p015_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "La mère travaille-t-elle le jour seulement ? Pourquoi ?",
+      "body": "........................................................................\n........................................................................",
+      "figureDesc": "Deux lignes de pointillés à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p015_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.26
+  },
+  "topicSubject": "Français",
+  "topicReason": "Lecture-compréhension d'un texte sur le travail d'une mère couturière, ce qui correspond au module 1 « Travailler pour s'épanouir » (récits sur le travail), même si la page ne précise pas le module.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    120
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Comprendre un texte littéraire et justifier ses réponses par des éléments du texte",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "qcm"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "métier de la mère",
+      "justification",
+      "Georges Duhamel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Texte de lecture sur le travail d'une mère couturière, suivi d'exercices de compréhension progressifs : barrer l'intrus parmi des métiers, justifier par le texte, puis répondre à une question de déduction sur le temps de travail. Ce schéma est transposable à d'autres textes portant sur des métiers ou la vie quotidienne.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est omis : « Sagesse », « Lecture - Compréhension », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est omis : « Lire et s'exprimer », « 14 », « 6ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est absent. La transcription passe directement à « 1-a » sans cet en-tête de section."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les numérotations « 1) a- » et « b- » sont transcrites sous la forme « [1-a] » et « [1-b] », ce qui ne correspond pas exactement à l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

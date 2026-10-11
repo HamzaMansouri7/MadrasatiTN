@@ -1,0 +1,161 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 24,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الدرس 13: أُنْجِزُ عَمَلِيَّةَ الْقِسْمَةِ عَلَى عَدَدٍ ذِي 3 أَرْقَامٍ فَأَكْثَرَ",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُتِمِّمِ الْجَدْوَلَ التَّالِيَ :",
+      "body": "جدول أعمدته: المقسوم | القاسم | الخارج | الباقي | العملية (مستوفاة / غير مستوفاة). السطر 1: المقسوم 2750، القاسم 250، الخارج (فارغ)، الباقي (فارغ)، العملية: مستوفاة (X). السطر 2: المقسوم 18095، القاسم (فارغ)، الخارج 753، الباقي (فارغ)، العملية (فارغة). السطر 3: المقسوم (فارغ)، القاسم 348، الخارج 106، الباقي 112، العملية (فارغة).",
+      "figureDesc": "جدول من ثلاثة أسطر وخمسة أعمدة، العمود الأخير مقسوم إلى خانتين: مستوفاة وغير مستوفاة. توجد علامة X في خانة «مستوفاة» في السطر الأول.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_evaluations_p024_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اِحْسُبْ عَدَدَ الرِّحْلَاتِ الَّتِي يَجِبُ أَنْ تَقُومَ بِهَا الطَّائِرَةُ لِتَنْقُلَ كُلَّ الرُّكَّابِ.",
+      "body": "اِسْتَعَدَّ 1729 مُوَاطِنًا لِلْقِيَامِ بِمَنَاسِكِ الْحَجِّ. خُصِّصَتْ لَـهُمْ طَائِرَةٌ تَنْقُلُ 247 حَاجًّا فِي كُلِّ رِحْلَةٍ.",
+      "figureDesc": "سطران منقّطان لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p024_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "كَمْ عَدَدُ الْمَغْرُوسَاتِ بِهَذَا الْحَقْلِ؟",
+      "body": "أَنْتَجَ حَقْلُ زَيْتُونٍ 57 ط و5 ق مِنْ حُبُوبِ الزَّيْتُونِ بِمُعَدَّلِ 250 كغ لِكُلِّ شَجَرَةٍ.",
+      "figureDesc": "سطران منقّطان لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p024_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 (تابع - أ)",
+      "instruction": "كَمْ عَدَدُ الرِّحْلَاتِ الَّتِي تَمَّ فِيهَا نَقْلُ الْمَنْتُوجِ إِلَى السُّوقِ؟",
+      "body": "نَقَلَ الْفَلَّاحُ إِنْتَاجَهُ إِلَى السُّوقِ فَاسْتَوْجَبَ ذَلِكَ عِدَّةَ رَحَلَاتٍ لِشَاحِنَةٍ حُمُولَتُهَا 960 كغ.",
+      "figureDesc": "سطران منقّطان لكتابة الحل.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p024_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 (تابع - ب)",
+      "instruction": "مَا هُوَ ثَمَنُ الْكِيلُوغْرَامِ الْوَاحِدِ مِنَ الزَّيْتُونِ؟",
+      "body": "اِشْتَرَى أَحَدُ التُّجَّارِ 4 ط و5 ق مِنَ الزَّيْتُونِ بِثَمَنٍ حُمْلِيٍّ قَدْرُهُ 3915 د.",
+      "figureDesc": "سطران منقّطان لكتابة الحل. رقم الصفحة 25 أسفل الصفحة.",
+      "answer": null,
+      "confidence": 0.87,
+      "id": "mathematiques_exercices_evaluations_p024_i5",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p4",
+    "confidence": 0.71
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la division par un diviseur à 3 chiffres (tableau dividende/diviseur/quotient/reste, problèmes avec quintaux), ce qui correspond à la Période 4 sur la division à plusieurs chiffres et les masses (quintal).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division par un nombre à 3 chiffres",
+    "skill": "Effectuer et vérifier une division euclidienne par un diviseur à 3 chiffres ou plus, puis l'appliquer dans des problèmes concrets.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "division euclidienne",
+      "diviseur à 3 chiffres",
+      "quotient et reste",
+      "problème de partage",
+      "unités de masse (quintal, kg)"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un tableau à compléter (dividende, diviseur, quotient, reste, division exacte ou non) et un problème en plusieurs étapes autour d'une même situation (un champ d'oliviers : nombre d'arbres, de voyages de camion, prix au kilo), avec conversions d'unités ; transposable à d'autres contextes comme les pèlerins et l'avion.",
+    "themeGroup": "Division euclidienne"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre de la leçon (الدرس 13 : أنجز عملية القسمة على عدد ذي 3 أرقام فأكثر) et numéro de page 25 absents de la transcription"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Tableau : 'غير مستوفاة' est écrit 'غو مستوفاة' dans l'image ; la transcription corrige, ce qui est acceptable. Dans le tableau, l'ordre des colonnes est inversé, mais il est décrit correctement"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "'رَحَلَاتٍ' dans l'exercice 3 (suite) : l'image montre 'رَحْلَاتٍ' (ou رِحْلَاتٍ), la voyelle est incorrecte"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'أَنْتَجَ' : l'image montre 'أَنْتَجَ' avec une voyelle différente, et 'فَاسْتَوْجَبَ' est écrit 'فَاسْتَوْجَبَ' : voyelles non vérifiables avec certitude"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'الْمَنْتُوجِ' : l'image porte 'الْمَنْتُوجِ' ; 'الْمَغْرُوسَاتِ' correct. Dans la question 3 (suite), 'تَمَّ' est correct"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les consignes et les énoncés sont inversés : la question (*) est placée avant l'énoncé ; de plus, les deux sous-questions (أ) et (ب) sont étiquetées '3 (تابع)' alors qu'elles sont des tirets sans numéro"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'ثَمَنٍ حُمْلِيٍّ' : l'image indique 'جُمْلِيٍّ' (prix de gros), 'حُمْلِيٍّ' est faux"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'الْكِيلُوغْرَامِ' : l'image porte 'الكيلوغرام' avec 'غ' ; ok. 'إِنْتَاجَهُ' : l'image montre 'إِنْتَاجَهُ' ; ok"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

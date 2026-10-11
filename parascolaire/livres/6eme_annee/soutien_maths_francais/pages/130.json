@@ -1,0 +1,236 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 130,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Note : cette page n'est pas une page de mathématiques. C'est la page 2/4 d'un devoir de français (compréhension de l'écrit et activités réflexives sur la langue : lexique, grammaire), sur le thème du conteur et de la place Jamaâ El Fna.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Quel est le type de ce texte ? (2 pts)",
+      "body": "- C'est un texte ☐ injonctif ; ☐ explicatif ; ☐ narratif.",
+      "figureDesc": "Trois cases à cocher : injonctif, explicatif, narratif.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p130_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Préfères-tu lire ou écouter une histoire ? Justifie ta réponse. (2 pts)",
+      "body": "Deux lignes pointillées pour répondre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p130_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "II",
+      "instruction": "II. Activités réflexives sur la langue : (18 pts)",
+      "body": "A) Lexique (3 pts) :",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p130_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "Trouve dans le texte le synonyme de « immense » et l'antonyme de « jeune » : (1 pt)",
+      "body": "immense = ........................... ; jeune ≠ ...................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p130_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "Ajoute des suffixes pour former d'autres mots. (1 pt)",
+      "body": "- jour : ................................. (un seul mot).\n- place : ................................ (un seul mot).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p130_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "Barre l'intrus dans cette liste de mots : (1 pt)",
+      "body": "Conteur – histoire – écouter – robot – spectateurs",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p130_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "B",
+      "instruction": "B) Grammaire (6 pts) :",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p130_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "Entoure le CCL et souligne le CCT dans ces phrases : (1 pt)",
+      "body": "- Chaque soir, le vieux conteur nous racontait une belle histoire.\n- Les gens se promènent dans la place Jamaâ El Fna.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p130_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "Réécris cette phrase en remplaçant le complément souligné par le pronom qui convient : (1 pt)",
+      "body": "- Le conteur raconte de belles histoires aux gens. (« aux gens » est souligné)\nLigne pointillée pour répondre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p130_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "Transforme la phrase suivante en une phrase interrogative (interrogation totale) : (1 pt)",
+      "body": "- Il écoute attentivement le conteur.\nLigne pointillée pour répondre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p130_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "a. Réécris les deux phrases en exprimant la comparaison avec « plus…que ». (0,5 pt)",
+      "body": "- Les hommes sont nombreux. Les enfants ne sont pas nombreux.\nLigne pointillée pour répondre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p130_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Encadré grisé en haut de page",
+      "body": "لا يكتب أي شيء في هذا الإطار",
+      "figureDesc": "Bandeau gris indiquant de ne rien écrire dans cette zone ; pagination 2/4 en bas de page.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p130_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u5",
+    "confidence": 0.23
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est la page 2/4 d'un devoir de français (type de texte, lexique, CCL/CCT) portant sur le conteur de Jamaâ El Fna ; elle couvre plusieurs notions sans lien net avec un module précis (m1 à m8), donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit et langue",
+    "skill": "Identifier le type de texte, enrichir le lexique (synonyme, antonyme, suffixes, intrus) et maîtriser la grammaire (CCL/CCT, pronoms compléments, interrogation totale).",
+    "pageType": "exam",
+    "formats": [
+      "qcm",
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "type de texte",
+      "lexique",
+      "synonyme et antonyme",
+      "suffixes",
+      "compléments circonstanciels",
+      "interrogation totale"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure de devoir de français barémisé combinant compréhension, lexique et grammaire autour d'un thème culturel unique (le conteur de la place Jamaâ El Fna), avec des exercices courts réutilisables : intrus, dérivation par suffixes, repérage des CCL/CCT, pronominalisation et transformation interrogative.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "L'encadré grisé arabe « لا يكتب أي شيء في هذا الإطار » est placé en dernier alors qu'il se trouve en haut de la page, avant la question 7."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Q14 : l'image indique « le conteur » avec un trait de pliure sur le « r » final (« conteu|r »). La transcription est correcte, mais l'ajout « (« aux gens » est souligné) » en Q13 est une annotation, pas du texte imprimé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 2/4 » en bas de page et la mention « www.escuila.info » ne sont pas transcrits (non essentiels)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

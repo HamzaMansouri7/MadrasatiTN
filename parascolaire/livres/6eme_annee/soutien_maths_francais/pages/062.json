@@ -1,0 +1,262 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 62,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Activités réflexives sur la langue (lexique, grammaire, conjugaison) – thème de la citoyenneté. Note : la page ne contient pas de mathématiques ; il s'agit d'une épreuve de français (II - activité réflexives sur la langue : 18 pts).",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "Trouvez l'antonyme des mots suivants :",
+      "body": "A- Lexique : (3pts)\n- Collectif : ……………………………………\n- le premier : ……………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p062_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "Ajoutez un préfixe au mot suivant :",
+      "body": "- fait : ………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p062_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "relevez du texte trois mots appartiennent au lexique thématique de la citoyenneté :",
+      "body": "- ……………………………  - ……………………………  - ……………………………",
+      "figureDesc": "Trois lignes de pointillés à compléter",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p062_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "Transformez la phrase en phrase interrogative.",
+      "body": "B- Grammaire : (6pts)\n- La citoyenneté est essentielle dans notre vie.\n- ……………………………………………………… ?",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p062_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "Souligne le CCT et entoure le CCL.",
+      "body": "Au sud du maroc, les citoyens se réveillent tôt.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p062_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "Remplace le complément d'objet par le pronom qui convient.",
+      "body": "- On doit respecter les autres.\n- ……………………………………………… .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p062_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "Reliez les phrases par l'expression demandée :",
+      "body": "- Il change toujours leur compertement. (ne….. jamais)\n- ………………………………\n- La mamane aide sa voisine. Elle est malade. (car)\n- ………………………………\n- Ce garçon est gentil. Son frère est moins gentil. (plus…que)\n- ………………………………\n- Le recpect est un fait important. (le plus)\n- ………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p062_i7",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "Tranformez la phrase suivante à la voix passive.",
+      "body": "- la citoyenneté interroge la liberté d'opinion.\n- ………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p062_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "17",
+      "instruction": "Trnsformez la phrase au discours indirect.",
+      "body": "- Une élève demande à son camarade : « faites attention. »\n- ………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p062_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "18",
+      "instruction": "conjuguez les verbes aux temps indiqués :",
+      "body": "C- conjugaison : (6pts)\nNous (se participer) aux actions solidaires. (présent de l'indicatif)\n- Nous ………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p062_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "19",
+      "instruction": "conjuguez les verbes aux temps indiqués :",
+      "body": "Elle (aller) aux associations pour donner des aides. (passé composé)\n- Elle ………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p062_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "20",
+      "instruction": "conjuguez les verbes aux temps indiqués :",
+      "body": "Je (vouloir) acheter des objets. (conditionnel présent)\n- Je ………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p062_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "21",
+      "instruction": "conjuguez les verbes aux temps indiqués :",
+      "body": "Le bien commun (faire) primer l'intérêt général. (imparfait)\n- Le bien commun………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p062_i13",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.21
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une épreuve de français (lexique, grammaire, conjugaison sur la citoyenneté) qui couvre plusieurs notions (antonymes, préfixe, CCT/CCL, pronoms COD, connecteurs, voix passive) et ne correspond à aucun module précis ; le thème de la citoyenneté n'apparaît pas dans les modules officiels.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Langue : lexique, grammaire, conjugaison (citoyenneté)",
+    "skill": "Mobiliser le lexique, la grammaire et la conjugaison à travers des transformations de phrases autour du thème de la citoyenneté.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "citoyenneté",
+      "antonyme",
+      "préfixe",
+      "voix passive",
+      "discours indirect",
+      "présent de l'indicatif"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une épreuve de langue en trois volets (lexique, grammaire, conjugaison) dont toutes les phrases tournent autour de la citoyenneté ; les consignes de transformation (forme interrogative, pronominalisation, voix passive, discours indirect, mise en relation de phrases par une expression imposée) sont réutilisables dans d'autres thèmes.",
+    "themeGroup": "Métiers, citoyenneté et vie sociale"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Question 13 : « Souligne le CCT et entoure le CCL » est transcrit correctement, mais la transcription ajoute « II - activité réflexives sur la langue : (18pts) » nulle part : l'en-tête principal est absent (voir manquant)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre de section « II - activité réflexives sur la langue : (18pts) » absent de la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 9 : « A- Lexique : (3pts) » est placé après la consigne, alors qu'il la précède dans l'image (ordre inversé). De même « B- Grammaire » pour la 12 et « C- conjugaison » pour la 18."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les titres de section A, B et C sont placés après les consignes 9, 12 et 18 au lieu de les précéder."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Questions 19, 20, 21 : la consigne « conjuguez les verbes aux temps indiqués : » est répétée alors qu'elle n'apparaît qu'une fois dans l'image, avant la 18."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 18 : « (se participer) » est conforme à l'image ; « Nous (se participer) » est correct. Aucune faute ici. Pointillés raccourcis, sans conséquence."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

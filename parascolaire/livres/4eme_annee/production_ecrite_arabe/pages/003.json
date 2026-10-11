@@ -1,0 +1,115 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 3,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإطار المكاني (التعبير عن الزمان: الصباح، منتصف النهار، المساء، الليل)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الإطار المكاني",
+      "body": "الصباح\nفي صبيحة يوم شمسي\nفي الوقت الذي بدأت فيه النجوم تتلاشى وتنطفئ الواحدة تلو الأخرى\nفي صبيحة يوم ربيعي طقسه جميل ونسيمه عليل\nصاح الديك معلنا عن بداية يوم جديد\nما إن بدأت أشعة الشمس تنتشر في الأفق\nما إن داعبت أشعة الشمس الأولى جفني\nعندما بدأت شمس الصباح تستيقظ من نومها وعلت في السماء فاردة أشرعة نورها",
+      "figureDesc": "جدول بخانات؛ الخانة الأولى بعنوان «الصباح» وتتضمن عبارات للتعبير عن الصباح.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p003_i1",
+      "topicId": "ar-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "منتصف النهار",
+      "body": "عندما توسطت الشمس كبد السماء\nما كادت الساعة تشير إلى الواحدة\nعندما أصبح ظل كل شيء مثله\nعند الظهر",
+      "figureDesc": "خانة ثانية من الجدول بعنوان «منتصف النهار» وفي أسفلها فراغ.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p003_i2",
+      "topicId": "ar-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المساء",
+      "body": "كعادتنا مساء كل سبت\nفي أمسية من أمسيات شهر رمضان\nفي اللحظة التي كان فيها قرص الشمس يختفي خلف الأفق الغربي\nبعد آذان المغرب وعند ساعة الإفطار\nذات مساء اشتد به الصراع بين دفء الربيع ورطوبة الشتاء",
+      "figureDesc": "خانة ثالثة من الجدول بعنوان «المساء».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p003_i3",
+      "topicId": "ar-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الليل",
+      "body": "مع غياب الشمس وظهور النجوم\nأسدل الليل ستائره وتلألأت النجوم في السماء\nفتح الليل أجنحته فغمر الأرض ظلام دامس",
+      "figureDesc": "خانة رابعة من الجدول بعنوان «الليل».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p003_i4",
+      "topicId": "ar-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-ch2",
+  "topicTitle": "Unité 2 : Chronologie et succession des événements",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-4-m8",
+    "confidence": 0.17
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page présente des expressions de cadre temporel (matin, midi, soir, nuit) pour situer un récit; c'est du lexique de repères temporels, proche de la chronologie et des connecteurs temporels de l'unité 2, mais aucun chapitre ne correspond exactement (cadre spatio-temporel du récit).",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Expression du temps dans le récit",
+    "skill": "Utiliser des expressions variées pour situer le moment de l'action (matin, midi, soir, nuit) dans une production écrite narrative.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "cadre spatio-temporel",
+      "expressions du temps",
+      "matin",
+      "soir",
+      "nuit",
+      "récit"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque classée par moment de la journée, d'expressions d'ouverture de récit; réutilisable pour des exercices d'appariement expression/moment, de complétion d'un début de récit ou de réécriture d'un incipit avec un autre cadre temporel.",
+    "themeGroup": "Cadres spatio-temporels et temps du récit"
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« آذان المغرب » : l'image porte « أذان » ? Après vérification, l'image montre « آذان المغرب », donc conforme ; seul point à surveiller, sans erreur avérée"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

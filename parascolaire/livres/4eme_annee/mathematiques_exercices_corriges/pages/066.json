@@ -1,0 +1,218 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 66,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 17 – المستطيل: خاصيات الأضلع والزوايا",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الأسبوع 17 — المستطيل : خاصيات الأضلع والزوايا",
+      "body": "الأسبوع 17\nالمستطيل : خاصيات الأضلع والزوايا\n(رقم الصفحة : 62)",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p066_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ألون كلَّ مستطيل بالأصفر: (استعن بالأدوات اللازمة)",
+      "body": "",
+      "figureDesc": "Quadrillage de points sur lequel sont dessinées 7 figures étiquetées : (أ) triangle quelconque allongé incliné ; (ب) rectangle vertical étroit et haut ; (هـ) quadrilatère (trapèze rectangle) avec deux angles droits en bas, un côté supérieur oblique ; (د) rectangle horizontal long et étroit ; (ج) parallélogramme non rectangle ; (و) triangle rectangle à droite ; (ز) carré posé sur un sommet (incliné à 45°).",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p066_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ألوِّن الأشكال حسب التعليمات المكتوبة في الجدول :",
+      "body": "جدول : المضلعات الرباعية\nبالأخضر : له ضلعان متجاوران لهما نفس قيس الطول.\nبالأحمر : له ضلعان متجاوران ليس لهما نفس قيس الطول.",
+      "figureDesc": "Grande grille quadrillée contenant : un triangle isocèle (en haut à gauche), un carré (en haut), un rectangle horizontal étroit (en haut à droite), un grand carré posé sur un sommet (losange, au centre), un rectangle (à droite, au centre), un cercle (en bas à gauche) et un petit triangle (en bas). À droite, un tableau intitulé « المضلعات الرباعية » avec deux colonnes : « بالأخضر » et « بالأحمر ».",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p066_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "تأمّل تقاطع الشريطين وعمّر الجدول بما يناسب :",
+      "body": "جدول بأربعة أعمدة : رمز الشكل | زواياه | أضلاعه | نوعه",
+      "figureDesc": "Deux bandes qui se croisent (une verticale, une horizontale) délimitées par des pointillés ; les points d'intersection sont nommés أ، ب، ج، د ; l'intersection forme un quadrilatère. Un petit triangle rectangle avec un angle droit marqué est dessiné en haut à droite. À droite, un tableau vide de 4 colonnes : « رمز الشكل », « زواياه », « أضلاعه », « نوعه ».",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p066_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.9
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ارسم مستقيمين (س) و (ع) متعامدين في \"هـ\" عيّن على المستقيم (س) نقطتين \"أ\" و \"ج\" تبعدان نفس البعد عن النقطة \"هـ\" ثمّ عيّن نقطتين \"ب\" و \"د\" على المستقيم (ع) وتبعدان نفس البعد عن النقطة \"هـ\".",
+      "body": "أرسم مستقيمين موازيين للمستقيم (س) ويمران من النقطتين \"ب\" و \"د\".\nوموازيين للمستقيم (ع) يمران من النقطتين \"أ\" و \"ج\".\nما نوع الشكل الهندسي المتحصّل عليه؟ لماذا؟",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p066_i5",
+      "topicId": "math-4-ch2",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.9
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch2",
+    "confidence": 0.9
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite des propriétés des côtés et des angles du rectangle (quadrilatères, droites perpendiculaires et parallèles), ce qui correspond à la Période 2 qui inclut le rectangle et le carré.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Le rectangle et ses propriétés",
+    "skill": "Reconnaître et construire un rectangle en utilisant les propriétés de ses côtés et de ses angles (perpendicularité, parallélisme, égalité de longueurs).",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "rectangle",
+      "quadrilatères",
+      "côtés",
+      "angles droits",
+      "droites perpendiculaires",
+      "droites parallèles"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression allant de l'identification des rectangles par coloriage avec instruments, au tri de quadrilatères selon l'égalité des côtés adjacents, à l'analyse de deux bandes qui se croisent dans un tableau, puis à une construction guidée (perpendiculaires, parallèles, points équidistants) qui demande de justifier la nature de la figure obtenue.",
+    "themeGroup": "Rectangle et carré"
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "major",
+        "detail": "La transcription ajoute un tashkeel complet sur les consignes 1, 3 et 4, alors que l'image n'en montre presque pas (« ألون كلّ مستطيل بالأصفر »). Les voyelles sont donc inventées, par exemple « أُلَوِّنُ », « مُسْتَطِيلٍ », « تَأَمَّلْ »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Consigne 1 : « الأَدَوَاتِ » ; l'image porte « بالأدوات اللازمة ». La graphie et la vocalisation ne sont pas celles de l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Consigne 2 : le texte de l'image est « ألوّن الأشكال حسب التعليمات المكتوبة في الجدول ». La transcription ajoute des voyelles absentes."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Consigne 4 : l'image porte « أرسم مستقيمين مُوازين » et « موازيين » ; la transcription les rend par « مُوَازِيَيْنِ » et « يَمُرَّانِ » avec un tashkeel qui n'est pas visible. « نُقْطَتَيْنِ » est écrit « نقطتين » dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les en-têtes manquent : « الأسبوع 17 », le titre « المستطيل : خاصيات الأضلع والزوايا » et le numéro de page 62."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le contenu de l'exercice 1 est vide : figures (أ، ب، هـ، د، ج، و، ز) sur une trame de points. Dans l'exercice 3, les deux bandes qui se croisent et le triangle rectangle ne sont pas décrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'en-tête « المضلعات الرباعية » et les colonnes (بالأخضر / بالأحمر) sont mal structurés. L'ordre des colonnes est inversé et la grille de figures n'est pas mentionnée."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Consigne 4 : l'image dit « عيّن نقطتين ب و د على المستقيم (ع) وتبعدان » ; la transcription y met « ثُمَّ ». C'est la même formule, mais avec un tashkeel ajouté."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.9,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُلَوِّنُ كُلَّ مُسْتَطِيلٍ بِالأَصْفَرِ: (اسْتَعِنْ بِالأَدَوَاتِ اللَّازِمَةِ)",
+      "body": "",
+      "figureDesc": "شبكة من النقاط عليها سبعة أشكال هندسية مرمزة: (أ) مثلث، (ب) مستطيل طويل عمودي، (هـ) شكل رباعي ذو زاويتين قائمتين وضلع مائل، (د) مستطيل أفقي رفيع، (ج) متوازي أضلاع، (و) مثلث قائم الزاوية، (ز) مربع مائل (معين).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p066_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُلَوِّنُ الأَشْكَالَ حَسَبَ التَّعْلِيمَاتِ المَكْتُوبَةِ فِي الجَدْوَلِ :",
+      "body": "جدول المضلعات الرباعية: بالأخضر: له ضلعان متجاوران لهما نفس قيس الطول. بالأحمر: له ضلعان متجاوران ليس لهما نفس قيس الطول.",
+      "figureDesc": "شبكة مربعات تحتوي على: مثلثين، مربعين/مستطيلين، مستطيل كبير، مربع مائل (معين) كبير، ودائرة. إضافة إلى جدول التعليمات على اليمين.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p066_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "تَأَمَّلْ تَقَاطُعَ الشَّرِيطَيْنِ وَعَمِّرِ الجَدْوَلَ بِمَا يُنَاسِبُ :",
+      "body": "أعمدة الجدول: رمز الشكل | زواياه | أضلاعه | نوعه",
+      "figureDesc": "شريطان متقاطعان (أفقي وعمودي) يحددان مستطيل التقاطع بالنقاط أ، ب، ج، د؛ مثلث قائم صغير للتحقق من الزاوية القائمة؛ جدول فارغ من أربعة أعمدة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p066_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ارْسُمْ مُسْتَقِيمَيْنِ (س) و (ع) مُتَعَامِدَيْنِ فِي \"هـ\" عَيِّنْ عَلَى المُسْتَقِيمِ (س) نُقْطَتَيْنِ \"أ\" و \"ج\" تَبْعُدَانِ نَفْسَ البُعْدِ عَنِ النُّقْطَةِ \"هـ\" ثُمَّ عَيِّنْ نُقْطَتَيْنِ \"ب\" و \"د\" عَلَى المُسْتَقِيمِ (ع) وَتَبْعُدَانِ نَفْسَ البُعْدِ عَنِ النُّقْطَةِ \"هـ\".",
+      "body": "أَرْسُمُ مُسْتَقِيمَيْنِ مُوَازِيَيْنِ لِلْمُسْتَقِيمِ (س) وَيَمُرَّانِ مِنَ النُّقْطَتَيْنِ \"ب\" و \"د\". وَمُوَازِيَيْنِ لِلْمُسْتَقِيمِ (ع) يَمُرَّانِ مِنَ النُّقْطَتَيْنِ \"أ\" و \"ج\". مَا نَوْعُ الشَّكْلِ الهَنْدَسِيِّ المُتَحَصَّلِ عَلَيْهِ؟ لِمَاذَا؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p066_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "linkStatus": "clean",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

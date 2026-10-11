@@ -1,0 +1,364 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 72,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 19 – الامتحان الثلاثي الثاني (3) : مراجعة الأعداد إلى 20 000، المعادلات، العمليات الحسابية، النقود، الزوايا وحل المسائل",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1 أ",
+      "instruction": "أكمل :",
+      "body": "العدد الزّوجي الّذي يأتي مباشرة قبل 10 000 هو: ..............................\nالعدد الفردي الّذي يأتي مباشرة بعد 9 999 هو: ..............................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p072_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 ب",
+      "instruction": "أكمل المعادلة التّالية :",
+      "body": "18 × 5 = ( ........ - 27 ) × 5 = ( ... + 7 ) × 5 = ...",
+      "figureDesc": "سلسلة مساواة بها نقاط للتعويض",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p072_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 ج",
+      "instruction": "اِبحث عن المجهول في كلّ حالة :",
+      "body": "(1) .... - 8 451 = 11 149\n(2) 5 215 + .... + 9 613 = 20 000\n(3) 4 . × . = 3 . 2",
+      "figureDesc": "ثلاث عمليات موضوعة عموديا. (1) طرح: عدد مجهول في الأعلى، 8 451 تحته مع إشارة الطرح، والناتج 11 149. (2) جمع: 5 215 ثم عدد مجهول ثم 9 613، والمجموع 20 000. (3) ضرب: العدد 4 . في الأعلى، تحته رقم مجهول مع إشارة ×، والناتج 3 . 2.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p072_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "",
+      "body": "جمّع سامي ورقة ماليّة من كلّ نوع من الأوراق، وقطعة واحدة من كلّ نوع من القطع النّقديّة. ما هو مجموع المبلغ المكوّن؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p072_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ الرّسم وأذكر أنواع الزّوايا التّالية :",
+      "body": "الزّاوية التي رأسها \"أ\" : ..............\nالزّاوية التي رأسها \"ب\" : ..............\nالزّاوية التي رأسها \"د\" : ..............",
+      "figureDesc": "شبه منحرف قائم أ ب ج د: الضلع ب أ أفقي في الأعلى (ب على اليسار وأ على اليمين)، والضلع ب ج عمودي على اليسار، والضلع ج د أفقي في الأسفل، والضلع المائل يصل بين أ و د",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p072_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "",
+      "body": "اشترت سيّدة 6 كؤوس بـ 395 مي الكأس الواحدة و 8 صحون بـ 705 مي الصّحن الواحد، و 4 ملاعق بـ 250 مي الملعقة الواحدة، ودَوْرَقًا. أعطتْ للتّاجر وَرَقَتَيْنِ مَالِيَّتَيْنِ من فئة 5 دينار فطلب منها أن تزيده 1 230 مي.\n– ما ثمن المشتريات؟\n– ما هو ثمن الدّورق ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p072_i6"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p6",
+    "confidence": 0.37
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de révision pour l'examen du deuxième trimestre (semaine 19) mêlant nombres jusqu'à 20 000, équations, opérations, monnaie, angles et problèmes : elle couvre plusieurs chapitres et ne correspond à aucun chapitre unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125,
+    126
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision nombres jusqu'à 20 000",
+    "skill": "Mobiliser nombres, équations à trou, opérations, monnaie, angles et problèmes dans une révision d'examen trimestriel.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres jusqu'à 20 000",
+      "inconnue",
+      "opérations",
+      "monnaie tunisienne",
+      "types d'angles",
+      "problème à étapes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : le problème d'achats en monnaie locale (millimes et dinars) avec calcul du prix d'un article inconnu à partir du rendu, et les opérations à chiffres manquants pour trouver l'inconnue.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "1 ج (3): la transcription donne « 4 . × . = 3 . 2 ». L'image montre une multiplication posée : 4 . en haut, × . en dessous, résultat 3 . 2. Le « × » est à gauche et non entre les termes, et la structure posée n'est pas respectée."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "1 ج (2): « (المجموع المكتوب في الصفحة: 20 000) » est un texte inventé. Dans l'image, 20 000 est le résultat de l'addition posée 5215 + .... = 9613 suivie de = 20 000, structure mal rendue."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "1 ج (1) et (2): les opérations posées en colonnes sont aplaties en ligne. La soustraction .... - 8451 = 11149 est correcte, mais 5215 + .... = 9613 puis 20 000 est confus."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel: « الزّوجي الّذي » et « الفردي الّذي » sont fidèles ; « اِبحث » ok. Mais « الزّاوية التي » : l'image montre « الزّاوِية » avec shadda/voyelles, mélange incohérent (« الزّاوية » sans voyelles complètes)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4: « أعطتْ » correct ; « الصّحن » ok. Dans l'image « 1 230 مي » correct. Aucun mot faux notable."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis : « الأسبوع 19 », « الامتحان الثلاثي الثاني (3) » et numéro de page 68 absents."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 2 et 4: la question « ما هو مجموع المبلغ المكوّن؟ » est dupliquée comme titre puis dans le texte ; idem pour l'exercice 4."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le dessin du trapèze (sommets أ، ب، ج، د) n'est pas décrit."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 1 ج (2) : l'addition posée en colonnes est 5 215 / + .... / 9 613, puis un trait, puis « = 20 000 ». Il s'agit donc de 5 215 + .... + 9 613 = 20 000. La transcription « 5 215 + .... = 9 613 » est fausse, car elle fait de 9 613 le résultat alors que c'est le deuxième terme connu de la somme."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 1 ج (2) : la mention « (المجموع المكتوب في الصفحة: 20 000) » est une glose inventée. 20 000 est le résultat de l'addition posée et non un commentaire de la page. Elle doit être supprimée et le résultat rétabli sous la forme « = 20 000 »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 1 ج (3) : la multiplication posée est aplatie en « 4 . × . = 3 . 2 ». Les chiffres et les points sont corrects, mais la disposition verticale (4 . en haut, × et . en dessous, trait, résultat 3 . 2) n'apparaît que dans la description de la figure."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercices 2 et 4 : la question finale est répétée, une fois dans « instruction » et une fois dans « body » (pour l'exercice 4, les deux questions). Le texte du scan n'apparaît qu'une seule fois."
+      },
+      {
+        "type": "autre",
+        "severity": "minor",
+        "detail": "Exercice 3 : la description « قائم الرؤوس » pour le trapèze est inexacte. Seuls les angles en ب et ج sont droits. Le sommet أ a un angle obtus et le sommet د un angle aigu."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1 أ",
+      "instruction": "أكمل :",
+      "body": "العدد الزّوجي الّذي يأتي مباشرة قبل 10 000 هو: ..............................\nالعدد الفردي الّذي يأتي مباشرة بعد 9 999 هو: ..............................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p072_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 ب",
+      "instruction": "أكمل المعادلة التّالية :",
+      "body": "18 × 5 = ( ........ - 27 ) × 5 = ( ... + 7 ) × 5 = ...",
+      "figureDesc": "سلسلة مساواة بها نقاط للتعويض",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p072_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 ج",
+      "instruction": "اِبحث عن المجهول في كلّ حالة :",
+      "body": "(1) .... - 8 451 = 11 149\n(2) 5 215 + .... + 9 613 = 20 000\n(3) 4 . × . = 3 . 2",
+      "figureDesc": "ثلاث عمليات موضوعة عموديا. (1) طرح: عدد مجهول في الأعلى، 8 451 تحته مع إشارة الطرح، والناتج 11 149. (2) جمع: 5 215 ثم عدد مجهول ثم 9 613، والمجموع 20 000. (3) ضرب: العدد 4 . في الأعلى، تحته رقم مجهول مع إشارة ×، والناتج 3 . 2.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p072_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "",
+      "body": "جمّع سامي ورقة ماليّة من كلّ نوع من الأوراق، وقطعة واحدة من كلّ نوع من القطع النّقديّة. ما هو مجموع المبلغ المكوّن؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p072_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ الرّسم وأذكر أنواع الزّوايا التّالية :",
+      "body": "الزّاوية التي رأسها \"أ\" : ..............\nالزّاوية التي رأسها \"ب\" : ..............\nالزّاوية التي رأسها \"د\" : ..............",
+      "figureDesc": "شبه منحرف قائم أ ب ج د: الضلع ب أ أفقي في الأعلى (ب على اليسار وأ على اليمين)، والضلع ب ج عمودي على اليسار، والضلع ج د أفقي في الأسفل، والضلع المائل يصل بين أ و د",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p072_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "",
+      "body": "اشترت سيّدة 6 كؤوس بـ 395 مي الكأس الواحدة و 8 صحون بـ 705 مي الصّحن الواحد، و 4 ملاعق بـ 250 مي الملعقة الواحدة، ودَوْرَقًا. أعطتْ للتّاجر وَرَقَتَيْنِ مَالِيَّتَيْنِ من فئة 5 دينار فطلب منها أن تزيده 1 230 مي.\n– ما ثمن المشتريات؟\n– ما هو ثمن الدّورق ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p072_i6"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1 أ",
+      "instruction": "أكمل :",
+      "body": "العدد الزّوجي الّذي يأتي مباشرة قبل 10 000 هو: ..............................\nالعدد الفردي الّذي يأتي مباشرة بعد 9 999 هو: ..............................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p072_i1",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 ب",
+      "instruction": "أكمل المعادلة التّالية :",
+      "body": "18 × 5 = ( ........ - 27 ) × 5 = ( ... + 7 ) × 5 = ...",
+      "figureDesc": "سلسلة مساواة بها نقاط للتعويض",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p072_i2",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 ج",
+      "instruction": "اِبحث عن المجهول في كلّ حالة :",
+      "body": "(1) .... - 8 451 = 11 149\n(2) 5 215 + .... = 9 613 ... (المجموع المكتوب في الصفحة: 20 000)\n(3) 4 . × . = 3 . 2",
+      "figureDesc": "ثلاث عمليات حسابية موضوعة عموديا (طرح وجمع وضرب) تتضمن أرقاما مجهولة",
+      "answer": null,
+      "confidence": 0.65,
+      "id": "math_solutions_4eme_sellami_p072_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هو مجموع المبلغ المكوّن؟",
+      "body": "جمّع سامي ورقة ماليّة من كلّ نوع من الأوراق، وقطعة واحدة من كلّ نوع من القطع النّقديّة. ما هو مجموع المبلغ المكوّن؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "math_solutions_4eme_sellami_p072_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ الرّسم وأذكر أنواع الزّوايا التّالية :",
+      "body": "الزّاوية التي رأسها \"أ\" : ..............\nالزّاوية التي رأسها \"ب\" : ..............\nالزّاوية التي رأسها \"د\" : ..............",
+      "figureDesc": "شبه منحرف قائم الرؤوس أ ب ج د: الضلع أ ب أفقي في الأعلى، ب ج عمودي، ج د أفقي في الأسفل، والضلع المائل يصل أ بـ د",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p072_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما ثمن المشتريات؟ ما هو ثمن الدّورق؟",
+      "body": "اشترت سيّدة 6 كؤوس بـ 395 مي الكأس الواحدة و 8 صحون بـ 705 مي الصّحن الواحد، و 4 ملاعق بـ 250 مي الملعقة الواحدة، ودَوْرَقًا. أعطتْ للتّاجر وَرَقَتَيْنِ مَالِيَّتَيْنِ من فئة 5 دينار فطلب منها أن تزيده 1 230 مي.\n– ما ثمن المشتريات؟\n– ما هو ثمن الدّورق ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p072_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

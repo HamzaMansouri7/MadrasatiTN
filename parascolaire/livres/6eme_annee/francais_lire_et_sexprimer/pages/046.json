@@ -1,0 +1,149 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 46,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : la maladie et le retour à l'école (Patrick et Michel)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Que fait Patrick pour ne pas s'ennuyer lorsqu'il est seul ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p046_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Patrick veut retourner à l'école le plus vite possible. Relève, dans le texte, le détail qui le montre :",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p046_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Que demande Patrick à son ami ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p046_i3",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Que fait Michel pour aider Patrick ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p046_i4",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Que doit apporter Michel à Patrick le jeudi prochain ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p046_i5",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Complète ce passage avec les mots de la liste :",
+      "body": "Liste : pâle - brûlant – médecin – angine - rouges – médicaments\n\nBruno est malade. Le petit garçon tousse. Il pleure, il a de la fièvre. Son visage est ........... Son front est ........... Ses joues sont ........... Sa maman a très peur.\n« Sois sage. Je reviens tout de suite.\n- Où vas-tu ?\n- Téléphoner au ........... Il faut que tu boives ta tisane. Et reste bien sous ta couverture. »\nLe docteur arrive après une demi-heure. Il l'examine et conclut qu'il s'agit d'une forte ........... Il lui prescrit quelques ...........",
+      "figureDesc": "Passage à trous encadré avec une liste de mots dans une bulle arrondie.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p046_i6",
+      "topicId": "fr-6-m6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.32
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une compréhension de lecture en français sur la maladie de Patrick et son retour à l'école, avec un exercice de vocabulaire de la santé (fièvre, médecin, angine), ce qui se rapproche le plus du module 6 « Être en forme et mieux se porter », mais les questions portent aussi sur l'amitié et l'entraide (module 4), d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    123
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : la maladie",
+    "skill": "Comprendre un texte narratif en relevant des informations explicites et réemployer le vocabulaire de la maladie dans un texte à trous.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "maladie",
+      "amitié",
+      "retour à l'école",
+      "vocabulaire de la santé",
+      "relevé d'indices"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation réutilisable : un élève malade resté à la maison et un camarade qui l'aide à suivre les cours. Questions courtes de prélèvement d'informations suivies d'un texte à trous avec banque de mots sur la maladie (symptômes, médecin, médicaments).",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« Lecture - Compréhension », « Sagesse », « 6ème année de base ») et le pied de page (« Lire et s'exprimer », « 45 », « 6ème année de base ») ne sont pas transcrits."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions « réponse: None » et « Deux lignes de pointillés pour écrire la réponse » sont des annotations ajoutées, absentes du texte de la page. Elles décrivent la mise en page, ce qui est acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

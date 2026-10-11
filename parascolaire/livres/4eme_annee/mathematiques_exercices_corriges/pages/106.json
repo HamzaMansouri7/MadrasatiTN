@@ -1,0 +1,120 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 106,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 28 – امتحان النقلة (5) : الأعداد إلى 999 999، المقادير (السعات)، الضرب، المحيط والمساحة، حل المسائل",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) أكتب العدد التّالي بالأرقام :",
+      "body": "ثلاثمائة وخمسة وسبعون ألفا وثمانون :\nب) أضف إليه نصف مائة ألف وأكتب العدد الحاصل :",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p106_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هي باللتر كمّيّة الزّيت المتبقّية بالخزّان؟",
+      "body": "بخزّان 6 هل ونصف من الزّيت. ملأ صاحب المعصرة 40 وعاء سعة الواحد 1 دكل ونصف. ما هي باللتر كمّيّة الزّيت المتبقّية بالخزّان؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p106_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هو عدد العلب التي سيحتاجها المريض إذا كانت العلبة الواحدة تحتوي على 20 حبّة؟",
+      "body": "قدّم طبيب لمريض الوصفة التّالية : حبّتان ثلاث مرّات في اليوم لمدّة 10 أيّام\".\nما هو عدد العلب التي سيحتاجها المريض إذا كانت العلبة الواحدة تحتوي على 20 حبّة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p106_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هو قيس مساحتها؟ ... ابحث عن قيس مساحة القطعة المتبقّية.",
+      "body": "قطعة ورق مقوّى مربّعة الشّكل قيس محيطها 2 م.\nما هو قيس مساحتها؟\nاقتطعنا منها شريطا كما يبيّنه الرّسم قيس مساحته 6 دسم².\nابحث عن قيس مساحة القطعة المتبقّية.",
+      "figureDesc": "مربّع يظهر في أعلاه شريط مستطيل مكتوب عليه « 6 دسم² »، والجزء السّفلي هو القطعة المتبقّية.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p106_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "كم قبض؟ ... ابحث عن ثمن الصّحن الواحد.",
+      "body": "باع فلاّح 8 أرانب بـ 3500 مي الأرنب الواحد و 3 كغ من العسل بحساب 9 د الكغ.\nكم قبض؟\nاستغلّ كلّ ما تحصّل عليه من مبيعاته في شراء أنبوب مطّاطي بـ 23 د ونقّالة ثمنها يقلّ بـ 4500 مي عن ثمن الأنبوب المطّاطي و 9 صحون.\nابحث عن ثمن الصّحن الواحد.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p106_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.29
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un examen de passage (امتحان النقلة, semaine 28) qui couvre plusieurs chapitres de mathématiques (nombres à 6 chiffres, capacités, multiplication, périmètre et aire, résolution de problèmes), donc aucun chapitre unique ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    134
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision de fin d'année : nombres, mesures et problèmes",
+    "skill": "Résoudre des problèmes à étapes mobilisant les nombres jusqu'à 999 999, les capacités, la multiplication, le périmètre et l'aire.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "nombres jusqu'à 999 999",
+      "capacités",
+      "multiplication",
+      "périmètre et aire",
+      "problèmes à étapes",
+      "examen blanc"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : huilerie et remplissage de bidons, posologie en boîtes de comprimés, carré de carton dont on découpe une bande, vente de lapins et de miel suivie d'achats, avec conversions d'unités et questions intermédiaires.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "linked",
+  "examScope": "full_year",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

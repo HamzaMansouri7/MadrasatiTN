@@ -1,0 +1,129 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 22,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : la télévision (les émissions préférées de la famille)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Si le frère regarde le match de rugby,",
+      "body": "- Que va rater sa sœur ? ........... -Que va rater le grand-père ? ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p022_i1",
+      "topicId": "fr-6-m2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "a- La fille aime-t-elle les émissions sportives ? b- Relève, dans le texte, la phrase qui le montre :",
+      "body": "a- La fille aime-t-elle les émissions sportives ? ........... b- Relève, dans le texte, la phrase qui le montre : ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p022_i2",
+      "topicId": "fr-6-m2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "a- Barre ce qui est faux : b- Justifie ta réponse :",
+      "body": "Dans le quatrième paragraphe, on nous parle : - d'une chanteuse. - d'une danseuse. - d'une publicité. b- Justifie ta réponse : ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p022_i3",
+      "topicId": "fr-6-m2",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Sur l'écran de la télévision, il n'y a plus d'image. Pourquoi ?",
+      "body": "...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p022_i4",
+      "topicId": "fr-6-m2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "a- Réponds par « oui » ou « non » : b- Relève, dans le texte, la phrase qui le montre :",
+      "body": "-Le père adore regarder la télé. (...............) b- Relève, dans le texte, la phrase qui le montre : ...........",
+      "figureDesc": "Réponse oui/non à écrire dans une case arrondie en pointillés.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p022_i5",
+      "topicId": "fr-6-m2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Complète ce passage avec les mots du cadre :",
+      "body": "Cadre : dessins animés – films documentaires – télévision – amusants – émissions sportives. C'est le soir, les enfants rentrent à la maison, ils allument la ............ . Nabil aime les ............ sur les animaux. Nadia regarde les ............ car ils sont ............ . Kamel préfère les ............ .",
+      "figureDesc": "Cadre arrondi contenant la liste des mots à utiliser.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p022_i6",
+      "topicId": "fr-6-m2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m2",
+  "topicTitle": "Module 2 : Communiquer avec les autres",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.38
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français sur la télévision et les émissions, ce qui relève du thème des médias du Module 2 « Communiquer avec les autres », même si aucun passé composé ni imparfait n'apparaît explicitement.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : la télévision",
+    "skill": "Comprendre un texte sur les émissions télévisées en répondant à des questions, en relevant des phrases justificatives et en complétant un passage avec le vocabulaire adapté.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "télévision",
+      "compréhension de texte",
+      "émissions préférées",
+      "relever une phrase",
+      "vocabulaire des émissions"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le thème des goûts télévisés de chaque membre de la famille se prête à des exercices variés : déduire les conséquences d'un choix de programme, justifier par une phrase du texte, barrer l'intrus et compléter un texte avec une banque de mots.",
+    "themeGroup": "Internet et technologies"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

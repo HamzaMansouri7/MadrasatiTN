@@ -1,0 +1,101 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 25,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الضمائر المتصلة وإسناد الجملة إلى الضمائر (Les pronoms personnels suffixes et la conjugaison selon les pronoms) – مادة اللغة العربية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكمل الفراغ بما يناسب مسترشدا بالضمير المتصل",
+      "body": "عليه أن يصلي الدجاج، ويشوي اللحم ، ويقلي السمك ثم يغادر المطبخ\nعليكما\nعليهم",
+      "figureDesc": "Encadré rectangulaire contenant la consigne, la phrase modèle et deux amorces (عليكما، عليهم) à compléter",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p025_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أسند الجملة على الضمائر أنت ثم نحن",
+      "body": "كي أبني منزلا لائقا علي أن أسعى جادا في العمل علني أوفر ثمنه",
+      "figureDesc": "Encadré rectangulaire avec espace blanc pour répondre",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p025_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعيد كتابة الجملة حسب الطلب",
+      "body": "يجب عليّ ان أكتفي بما تحصلت عليه وأحاول أن أخفيه في مكان أمين\nيجب عليكن\nيجب عليهما",
+      "figureDesc": "Encadré rectangulaire contenant la phrase modèle et deux amorces à compléter",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p025_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أسند ما يلي إلى الضمائر المذكورة",
+      "body": "جارتنا لن تلقي الفضلات في الطريق منذ اليوم ولن تتسلى بتكسير أغصان الأشجار\nأنا\nنحن",
+      "figureDesc": "Encadré rectangulaire contenant la phrase modèle et deux pronoms (أنا، نحن)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p025_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.27
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la conjugaison (attribution des phrases aux pronoms, verbes défectifs comme يصلي، يقلي، أسعى، تلقي), ce qui correspond le mieux à l'Unité 1 mentionnant la conjugaison des verbes défectifs, mais l'appariement reste incertain car la page n'est pas liée à la narration.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Pronoms suffixes et conjugaison",
+    "skill": "Conjuguer des phrases en changeant le pronom sujet et accorder les pronoms suffixes qui s'y rattachent.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "pronoms suffixes",
+      "conjugaison",
+      "transformation de phrases",
+      "accord",
+      "grammaire arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une même phrase de la vie quotidienne (cuisine, projet de construction, civisme) est réécrite avec différents pronoms (أنت، نحن، أنا، هما، هم، هن). Le format est réutilisable pour de nouvelles consignes de transformation, avec des contextes variés et progressifs.",
+    "themeGroup": "Conjugaison: pronoms et suffixes"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

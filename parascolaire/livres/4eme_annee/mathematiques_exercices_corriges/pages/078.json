@@ -1,0 +1,145 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 78,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 20 — المربع: خاصيات الأضلاع والزوايا",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "تأمّل تقاطع شريطيْن متقايسيْن :",
+      "body": "- ما رأيك في قيس أضلاعه [أ ب]، [ب ج] ، [ج د] ، [أ د] ؟\n- أكتب جملة تعبّر فيها عنِ رأيك في زوايا الرّسم.",
+      "figureDesc": "شريطان متقايسان (كل شريط محدود بمستقيمين متوازيين) يتقاطعان فيكوّنان معينًا/رباعيًا رؤوسه أ ب ج د. عند الرأس أ مثلث قائم (كوس) موضوع لفحص الزاوية، وعليه دائرة صغيرة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p078_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "استعمل الشّريط مع الكوس لرسم مستقيميْن متوازييْن يتقاطعان مع مستقيميْن متوازييْن آخرين وعموديّان عليهما متبعا المراحل التّالية :",
+      "body": "- الرّباعي (أ ب ج د) هو ..............................",
+      "figureDesc": "ثلاث مراحل مرقّمة ①②③: ① شريط مظلّل أفقي بين مستقيمين متوازيين ومستقيم عمودي؛ ② شريط مظلّل عمودي مع كوس لرسم العمودي؛ ③ الشكل النهائي: الرباعي أ ب ج د بزوايا قائمة مرسومة بمربعات صغيرة وأسهم تبيّن تساوي البعدين.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p078_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارسم زاوية قائمة [أ ب ، أ ج] عيّن نقطة \"ك\" تنتمي إلى [أ ب) والنّقطة \"ق\" تنتمي إلى [أ ج) تبعدان نفس البعد عن النقطة \"أ\".",
+      "body": "أرسم مستقيما عموديًا على [أ ج) في \"ق\" وكذلك مستقيما عمويا على [أب) في \"ك\". يتقاطع هذان العمودان في النقطة \"هـ\". ما هي طبيعة الشكل (أ ك هـ ق) ؟ علّل إجابتك.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p078_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) ارسم مربّعا (أ ب ج د) قيس طول ضلعه بالصم 6.\nب) ارسم مربّعا (أ ب ج د) قيس طول محيطه بالصم 16.",
+      "body": "أ) ارسم مربّعا (أ ب ج د) قيس طول ضلعه بالصم 6.\nب) ارسم مربّعا (أ ب ج د) قيس طول محيطه بالصم 16.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p078_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p5",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite du carré (propriétés des côtés et des angles, construction, périmètre), ce qui correspond à la Période 2 : rectangle et carré, périmètres.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Le carré : propriétés des côtés et angles",
+    "skill": "Identifier et construire un carré en utilisant ses propriétés (côtés égaux, angles droits, côtés parallèles et perpendiculaires) avec la bande, l'équerre et la règle.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite",
+      "probleme",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "carré",
+      "quadrilatère",
+      "angle droit",
+      "périmètre",
+      "construction géométrique",
+      "équerre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Démarche de découverte du carré par l'entrecroisement de deux bandes isométriques, suivie de constructions guidées (équerre, points équidistants, perpendiculaires) et de tracés à partir du côté ou du périmètre, avec justification de la nature de la figure.",
+    "themeGroup": "Rectangle et carré"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1: « عنِ رأيك » dans la transcription; l'image porte « عنْ رأيك » (« عنِ » incorrect, la bonne valeur est « عنْ »)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1: « قيس أضلاعه [أ ب] » — dans l'image, la forme est « أضلاعه[أ ب] » avec crochet collé; sinon OK. Tashkeel de « متقايسيْن » correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: « متوازييْن » (avec double ي) au lieu de « متوازيْن » visible dans l'image (deux occurrences)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3: « عمويا » est présent dans l'image (faute d'origine), transcription fidèle; « أرسم مستقيما عموديًا » : l'image porte « عموديًا » ok"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3: « [أ ب ، أ ج] » : dans l'image la parenthèse/crochet est « [أ ب ، أ ج ] » et la phrase « تنتمي إلى [أ ب) » est correcte; le numéro de page 74 et l'en-tête (« الأسبوع 20 », « المربع: خاصيات الأضلاع والزوايا ») sont absents de la transcription"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2: les figures ①②③ et leurs étiquettes (أ ب ج د) ne sont pas décrites (diagrammes uniquement)"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 4: le texte est dupliqué dans le champ de réponse (copie de l'énoncé)"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

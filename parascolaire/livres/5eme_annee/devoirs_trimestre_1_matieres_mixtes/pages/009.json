@@ -1,0 +1,178 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 9,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Formules de périmètre et d'aire (rectangle, triangle, carré, cercle et disque) ; former, écrire et lire des nombres à plusieurs chiffres (plus grand et plus petit nombre possible)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المستطيل:",
+      "body": "-محيط المستطيل = (الطول + العرض) × 2\n-طول المستطيل = (المحيط ÷ 2) – العرض\n-عرض المستطيل = (المحيط ÷ 2) – الطول\n-مساحة المستطيل = الطول × العرض\n-طول المستطيل = المساحة ÷ العرض\n-عرض المستطيل = المساحة ÷ الطول",
+      "figureDesc": "Un rectangle dessiné à gauche des formules.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p009_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المثلث :",
+      "body": "-المحيط = الضلع + الضلع + الضلع\n-مساحة المثلث = (القاعدة × الارتفاع) ÷ 2\n-قاعدة المثلث = (المساحة × 2) ÷ الارتفاع\n-ارتفاع المثلث = (المساحة × 2) ÷ القاعدة",
+      "figureDesc": "Un triangle isocèle dessiné à côté des formules.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p009_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدائرة والقرص :",
+      "body": "-محيط الدائرة = القطر × 3.14 (P=3.14)\n-قياس قطر الدائرة = المحيط ÷ 3.14\n-شعاع الدائرة = القطر ÷ 2\n-قطر الدائرة = الشعاع × 2\n-مساحة القرص = (الشعاع × الشعاع) × 3.14",
+      "figureDesc": "Un cercle dessiné sous les formules.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p009_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المربع :",
+      "body": "-محيط المربع = الضلع × 4\n-ضلع المربع = المحيط ÷ 4\n-مساحة المربع = الضلع × الضلع",
+      "figureDesc": "Un carré dessiné à côté des formules.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p009_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أكون الأعداد ذات أرقام فأكثر و أكتبها و أقرؤها",
+      "body": "عنوان القسم (بالأحمر). عدد الأرقام غير مذكور في النص (فراغ).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p009_i5",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "تمرين: كون أكبر عدد ممكن من الأرقام التالية",
+      "body": "Deux séries de 7 cases vides où écrire les chiffres donnés (chiffres non fournis). Chacune est suivie d'un cadre « الإجابة » à remplir.",
+      "figureDesc": "Deux rangées de 7 cases à bordure en pointillés, chacune suivie d'un cadre réponse « الإجابة ».",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p009_i6",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "تمرين: كون أصغر عدد ممكن من الأرقام التالية",
+      "body": "Énoncé seul ; les cases des chiffres ne figurent pas sur cette page (suite probable sur la page suivante).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p009_i7",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "math-5-p4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p4",
+    "confidence": 0.89
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un mélange de formules de périmètre et d'aire (rectangle, triangle, carré, cercle/disque) et d'exercices sur la formation de grands nombres ; le chapitre math-5-p4 (périmètre du cercle) correspond partiellement, mais math-5-ch1 (grands nombres) couvre l'autre moitié, donc l'attribution reste ambiguë.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Périmètres, aires et grands nombres",
+    "skill": "Appliquer les formules de périmètre et d'aire des figures usuelles et former le plus grand ou le plus petit nombre à partir de chiffres donnés.",
+    "pageType": "mixed",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "périmètre",
+      "aire",
+      "rectangle",
+      "cercle et disque",
+      "plus grand nombre",
+      "plus petit nombre"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Une fiche récapitulative des formules (y compris les formules inverses pour retrouver une longueur) et un exercice de cases à remplir pour composer le plus grand ou le plus petit nombre avec des chiffres imposés, réutilisables comme modèles de fiche-mémo et d'activité de manipulation.",
+    "themeGroup": "Mesures d'aires et unités agraires"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Triangle : « قاعدة المثلث » et « ارتفاع المثلث » correspondent bien à l'image ; en revanche l'image indique « -المحيط = » sans « المثلث », ce qui est correct dans la transcription. Pas d'erreur ici."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La transcription affirme que les deux séries de 7 cases sont suivies chacune d'un cadre « الإجابة » : c'est exact. Mais « suite probable sur la page suivante » pour le dernier exercice est une supposition inventée, non visible sur l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Dans le titre rouge, « عدد الأرقام غير مذكور (فراغ) » est une glose ajoutée : l'image montre seulement un espace entre « ذات » et « أرقام ». La transcription omet cet espace dans le texte, mais le commentaire est une interprétation."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les deux séries de 7 cases et les deux cadres « الإجابة » sont placés sous le premier « تمرين » (أكبر عدد), ce que la transcription indique ; le second exercice (أصغر عدد) n'a effectivement pas de cases sur la page. Aucun vrai manque."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les blocs « المربع » et « الدائرة » sont lus dans l'ordre mise en page droite-gauche ; l'ordre est acceptable, mais la première ligne de la formule du cercle « (P=3.14) » est placée à gauche de la ligne dans l'image, ce qui est reflété correctement."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

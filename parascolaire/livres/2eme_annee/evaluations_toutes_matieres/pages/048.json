@@ -1,0 +1,136 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 48,
+  "grade": "2ème Année",
+  "subject": "إيقاظ علمي",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني عدد 3 – إيقاظ علمي – السنة الثانية (المواد: الصلابة والليونة، السلامة والوقاية من الحوادث المنزلية، النظافة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَكْتُبُ «صَوَابٌ» أَوْ «خَطَأٌ» أَمَامَ كُلِّ إِفَادَةٍ.",
+      "body": "السَّنَدُ 1 : فِي حِصَّةِ التَّرْبِيَةِ التِّكْنُولُوجِيَّةِ قَدَّمَتِ الْمُعَلِّمَةُ لِتَلَامِيذِهَا مَجْمُوعَةً مِنَ الْوَسَائِلِ وَالْأَدَوَاتِ لِإِنْجَازِ مَشْرُوعٍ تَشْكِيلِيٍّ.\nالطِّينُ أَشَدُّ صَلَابَةً مِنَ الْخَشَبِ. ..........\nالصَّلْصَالُ أَقَلُّ صَلَابَةً مِنَ اللَّوْحَةِ. ..........\nالْوَرَقُ أَكْثَرُ لُيُونَةً مِنَ الْخَشَبِ. ..........",
+      "figureDesc": "ثلاثة مربعات للتنقيط على يسار المعيار (مع 1أ) ونقاط الإسناد 1 1 1",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p048_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَقْرَأُ وَأُجِيبُ. لِمَاذَا طَلَبَتِ الْمُعَلِّمَةُ ذَلِكَ مِنْ سَامِي؟",
+      "body": "السَّنَدُ 2 : أَثْنَاءَ الْحِصَّةِ رَمَى سَامِي الْمِقَصَّ الْحَادَّ لِصَدِيقِهِ مُرَادٍ، فَطَلَبَتِ الْمُعَلِّمَةُ مِنْ سَامِي أَنْ لَا يُعِيدَ ذَلِكَ مَرَّةً أُخْرَى.\nطَلَبَتِ الْمُعَلِّمَةُ ذَلِكَ مِنْ سَامِي ..........................................",
+      "figureDesc": "سطر منقّط للإجابة؛ خانتان للتنقيط (مع 2أ)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p048_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَرْبُطُ بِسَهْمٍ.",
+      "body": "أَحْذَرُ الْجُرُوحَ • ⟷ • فَأَتَجَنَّبُ اللَّعِبَ الْعَنِيفَ.\nأَحْذَرُ الْحُرُوقَ • ⟷ • فَأَتَجَنَّبُ الْأَدَوَاتِ الْحَادَّةَ.\nأَحْذَرُ الْحَوَادِثَ • ⟷ • أَتَجَنَّبُ اللَّعِبَ بِأَعْوَادِ الْكِبْرِيتِ.",
+      "figureDesc": "عمودان من العبارات يُربط بينهما بأسهم: عمود أيمن (أَحْذَرُ...) وعمود أيسر (فَأَتَجَنَّبُ...)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p048_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4أ",
+      "instruction": "أَشْطُبُ الْخَطَأَ.",
+      "body": "السَّنَدُ 3 : عِنْدَ الْخُرُوجِ إِلَى الرَّاحَةِ تَوَجَّهَ سَامِي مُبَاشَرَةً إِلَى الْحَنَفِيَّةِ وَقَامَ بِغَسْلِ يَدَيْهِ.\nالسُّلُوكُ الَّذِي قَامَ بِهِ سَامِي: [سَلِيمٌ] [غَيْرُ سَلِيمٍ]",
+      "figureDesc": "إطاران للاختيار بين «سَلِيمٌ» و«غَيْرُ سَلِيمٍ»؛ خانة تنقيط (مع 2ب)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p048_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4ب",
+      "instruction": "أُعَلِّلُ :",
+      "body": "..............................................................................................",
+      "figureDesc": "سطر منقّط للتعليل؛ خانتان للتنقيط",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p048_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَضَعُ عَلَامَةَ (x) فِي الْخَانَةِ الْمُنَاسِبَةِ فِي الْجَدْوَلِ.",
+      "body": "",
+      "figureDesc": "الجدول غير ظاهر في هذه الصفحة (يتبع في الصفحة الموالية)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p048_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u2",
+    "confidence": 0.2
+  },
+  "topicSubject": "Éveil scientifique (إيقاظ علمي)",
+  "topicReason": "La page est un test de fin de trimestre en éveil scientifique (dureté et souplesse, sécurité domestique, hygiène), matière absente de la liste des chapitres officiels (arabe et mathématiques uniquement), donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Solidité, sécurité domestique et hygiène",
+    "skill": "Comparer la dureté et la souplesse de matériaux, adopter des gestes de prévention des accidents et des règles d'hygiène des mains.",
+    "pageType": "exam",
+    "formats": [
+      "vrai_faux",
+      "lecture_comprehension",
+      "appariement",
+      "qcm",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "dureté et souplesse",
+      "matériaux",
+      "prévention des accidents",
+      "hygiène des mains",
+      "évaluation de fin de trimestre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Chaque exercice s'appuie sur une mini-situation de classe (atelier de technologie, élève qui lance des ciseaux, lavage des mains avant la récréation), suivie d'un vrai/faux, d'une justification, d'un appariement danger-précaution et d'un tableau à cocher ; ce schéma est facile à transposer.",
+    "themeGroup": "Hygiène et santé"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

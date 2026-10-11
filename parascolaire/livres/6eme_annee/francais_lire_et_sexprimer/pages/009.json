@@ -1,0 +1,95 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 9,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Le beau jour de la rentrée (d'après Ernest Perochon, « À l'ombre des ailes »)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Le beau jour de la rentrée\nC'est la rentrée des classes. Allez ! Allez, les écoliers ! Cherchez vos livres et vos cahiers ! Prenez vos cartables et vos papiers !...\nLe jour de la rentrée, Michel retourne à l'école. Il y va en compagnie de Julien et Bruno qui sont venus le chercher au moins une heure à l'avance.\n- « Il n'est que sept heures, c'est très tôt, dit Michel.\n- Non, il ne faut pas être en retard, surtout le jour de la rentrée. Tous les camarades sont devant l'école. »\nMichel se dépêche.\nBruno a un joli tablier et un cartable neuf.\n« Comme tu es beau ce matin ! » lui dit la mère de Michel. Julien, tout joyeux, ouvre son cartable et, devant la voisine, il déballe ses richesses.\n« Regardez, Madame, une belle ardoise, une gomme à effacer, des stylos... »\nMichel est prêt et les trois amis partent pour l'école.\nSur le chemin, d'autres écoliers arrivent, bavardent et rient. Les groupes se réunissent. Avant d'arriver à la porte de l'école, Michel fait la connaissance d'une dizaine de nouveaux camarades. Alors, il n'a plus de crainte, il n'est plus inquiet.\n- Es-tu content de retourner à l'école ? demande Julien.\n- Pour moi, c'est le plus beau jour de l'année, dit Michel.\nIl y a quarante élèves dans la classe.\nMichel se trouve placé à côté de Bruno. Tout en avant, le maître place un garçon aux cheveux rebelles, et assez pauvrement vêtu, qui s'appelle Marcel.\nCet élève est orphelin de père et de mère ; il est élevé par sa grand-mère.\nIl est très intelligent : premier en calcul, premier en dictée ! Premier toujours...\nD'après Ernest Perochon « À L'ombre des ailes »",
+      "figureDesc": "Page encadrée avec bandeau « Lecture - Compréhension » (nuage), mentions « Sagesse » et « 6ème année de base ». Au verso, en transparence, on devine des exercices illisibles de la page suivante (non extraits). Pied de page : « Lire et s'exprimer », page 8.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p009_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.23
+  },
+  "topicSubject": "Français",
+  "topicReason": "Il s'agit d'un texte de lecture en français sur la rentrée des classes (Michel, Julien et Bruno), qui relève de la matière Français ; le thème de l'école et du travail scolaire se rapproche du Module 1 « Travailler pour s'épanouir », mais le lien reste incertain car l'extrait est court et aucun module ne traite explicitement de la rentrée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Le texte narratif : la rentrée scolaire",
+    "skill": "Lire un texte narratif sur la rentrée des classes et répondre à des questions pour en comprendre le sens.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "rentrée des classes",
+      "lecture",
+      "compréhension de texte",
+      "école",
+      "Michel",
+      "texte narratif"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un texte de lecture sur un moment familier (la rentrée, les trajets et retrouvailles entre camarades) peut servir de support à des questions de compréhension, ou à une production écrite sur les émotions de la rentrée.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « Lecture - Compréhension », « Sagesse », « 6ème année de base » et le pied de page « Lire et s'exprimer », « 8 »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'image, « cartable » est écrit « un cartable neuf » : la transcription est correcte. En revanche, la phrase « Bruno a un joli tablier et un cartable neuf » est fidèle. Aucune erreur de mot ici."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Alors, il n'a plus de crainte » : dans l'image on lit « Alors,il » sans espace après la virgule. C'est une différence de ponctuation et d'espacement uniquement."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La ligne « || réponse: None » et le marqueur « [A] » à la place de « A) » sont des artefacts de format et ne figurent pas dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Du texte en filigrane (transparence du verso, consignes d'exercices comme « Réécris cette phrase avec les sujets indiqués ») est partiellement visible mais illisible. Il n'est pas transcrit, ce qui est acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

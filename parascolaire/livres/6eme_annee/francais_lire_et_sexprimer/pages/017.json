@@ -1,0 +1,120 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 17,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : L'histoire de Monet",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "L'histoire de Monet\nClaude Monet est le fils aîné d'un épicier.\nTrès tôt, Monet décide de devenir peintre mais son père désire qu'il travaille dans l'épicerie familiale.\nSa tante lui donne de l'argent pour qu'il puisse aller étudier l'art à Paris où il se fait de nombreux amis peintres.\nIl rencontre sa future femme, Camille, qu'il a souvent peinte.\nCamille et Claude Monet ont deux enfants : Jean et Michel.\nMais leur bonheur est de courte durée. Camille est malade et meurt peu de temps après la naissance de Michel. Monet est désespéré et arrête de peindre.\nParmi les nombreux amis de la famille Monet, il y a Ernest et Alice qui sont très riches.\nAprès la mort de Camille, c'est Alice qui s'occupe de Monet, de Jean et de Michel en même temps que de ses propres enfants. Ils vivent ensemble et forment une grande nouvelle famille. Monet se remet à peindre.\nUn jour qu'il a vendu plusieurs toiles, il part en train à la recherche d'une grande maison. À Giverny, il découvre la demeure de ses rêves : « La maison rose ».\nToute la famille s'y installe. Après le décès d'Ernest, le peintre épouse Alice.\nLes peintures de Monet sont devenues célèbres et elles se vendent très bien.\nToute la famille vit très heureuse dans « La maison rose » jusqu'au jour où Alice meurt à son tour et laisse à nouveau l'artiste désespéré.\nClaude Monet meurt à l'âge de 86 ans.",
+      "figureDesc": "Texte encadré avec un bandeau d'en-tête « Lecture - Compréhension » (Sagesse, 6ème année de base).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p017_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1",
+      "instruction": "Quel est le métier du père de Claude Monet ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p017_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2a",
+      "instruction": "Réponds par « vrai » ou « faux » :",
+      "body": "- Monet veut travailler dans l'épicerie familiale. ...............",
+      "figureDesc": "Case arrondie en pointillés pour la réponse vrai/faux.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p017_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.42
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension en français sur le parcours de Claude Monet, qui veut devenir peintre malgré son père épicier, ce qui correspond au thème « Travailler pour s'épanouir » (récits sur le travail et la vocation) du Module 1.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    120
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte biographique",
+    "skill": "Lire un court texte biographique et répondre à des questions de compréhension (questions ouvertes et vrai/faux).",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "Claude Monet",
+      "biographie",
+      "peintre",
+      "vrai ou faux"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une mini-biographie d'un artiste célèbre, centrée sur un conflit entre vocation et désir familial, suivie de questions de repérage et d'un vrai/faux à justifier.",
+    "themeGroup": "Textes descriptifs et biographiques"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : « Sagesse », « Lecture - Compréhension », « 6 ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page n'est pas transcrit : « Lire et s'exprimer », numéro de page 16, « 6 ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est absent de la transcription. Les questions B1 et B2a sont étiquetées, mais ce titre de section manque."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Pour B2a, l'étiquette « 2) a- » et le cadre arrondi autour des pointillés ne sont pas indiqués. Pour B1, le numéro « 1) » est omis du texte de la question."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,726 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 131,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigés : حساب (ص 89)، هندسة (ص 90)، اختبار تقويمي (ص 91)، المسائل (4) (ص 92)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "2 (ص 89)",
+      "instruction": "مجموعة الأعداد: {431، 413، 341، 314، 134، 143}",
+      "body": "ب) مجموع الأعداد: 431 + 413 + 341 + 314 + 134 + 143 = 1 776\nج) 1 776 على (1 + 3 + 4) = 8\nأحصل دائما على خارج مساو لـ 222",
+      "figureDesc": "",
+      "answer": "1 776 ؛ 222",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص 89)",
+      "instruction": "عدد السلات التي ينتجها هذا الصّانع كلّ يوم",
+      "body": "112 على 7 = 16",
+      "figureDesc": "",
+      "answer": "16",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص 89)",
+      "instruction": "عدد أكياس الاسمنت",
+      "body": "3 500 على 50 = 70",
+      "figureDesc": "",
+      "answer": "70",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص 89)",
+      "instruction": "قبض بالمي؛ ثمن الكسوة بالمي؛ ثمن الكؤوس بالمي؛ ثمن الكأس الواحدة بالمي",
+      "body": "قبض بالمي: (3×30) × 1 200 = 108 000\nثمن الكسوة بالمي: 108 000 على 2 = 54 000\nثمن الكؤوس بالمي: (1 800 + 54 000) - 45 000 = 10 800\nثمن الكأس الواحدة بالمي: 10 800 : 9 = 1 200",
+      "figureDesc": "",
+      "answer": "108 000 ؛ 54 000 ؛ 10 800 ؛ 1 200",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص 90)",
+      "instruction": "قيس طول المستطيل بالصم؛ قيس عرض المستطيل بالصم",
+      "body": "قيس طول المستطيل بالصم: (90 ؛ 10) × 3 = 27\nقيس عرض المستطيل بالصم: (90 ؛ 10) × 2 = 18\nأو (90 ؛ 2) - 27 = 18",
+      "figureDesc": "",
+      "answer": "الطول 27 ؛ العرض 18",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص 90)",
+      "instruction": "قيس عرض هذه الحديقة بالم",
+      "body": "(280 : 2) - 86 = 54\n72 على 2",
+      "figureDesc": "مستطيل: العرض جزء واحد والطول جزءان متساويان، المجموع 72 على 2",
+      "answer": "54",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص 90)",
+      "instruction": "قيس العرض بالصم؛ قيس الطول بالصم",
+      "body": "قيس العرض بالصم: (72 : 2) : 3 = 12\nقيس الطول بالصم: 2 × 12 = 24",
+      "figureDesc": "",
+      "answer": "العرض 12 ؛ الطول 24",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص 90)",
+      "instruction": "قيس نصف محيط المستطيل بالم؛ قيس ضلع المربع بالم؛ قيس عرض المستطيل بالم",
+      "body": "قيس نصف محيط المستطيل بالم: 220 على 2 = 110\nقيس ضلع المربع بالم: 120 على 4 = 30\nقيس عرض المستطيل بالم: 110 - (10 + 30 + 30) = 40",
+      "figureDesc": "",
+      "answer": "110 ؛ 30 ؛ 40",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "6 (ص 90)",
+      "instruction": "قيس العرض بالم؛ قيس الطول بالم",
+      "body": "160 على 2\nقيس العرض بالم: 160 : 2 : 4 = 160 : 8 = 20\nقيس الطول بالم: 3 × 20 = 60",
+      "figureDesc": "مستطيل: العرض جزء واحد والطول ثلاثة أجزاء متساوية",
+      "answer": "العرض 20 ؛ الطول 60",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص 91)",
+      "instruction": "",
+      "body": "2 756 | 9\n056 | 306\n2",
+      "figureDesc": "عملية قسمة عمودية: 2756 على 9، الخارج 306، الباقي 2",
+      "answer": "306 (الباقي 2)",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص 91)",
+      "instruction": "",
+      "body": "275 | 7 : الباقي 2 ، الخارج 39\n173 | 6 : الخارج 28 ، أكبر باق = 5\n637 | 91 : الخارج 7",
+      "figureDesc": "ثلاث عمليات قسمة عمودية",
+      "answer": "39 (الباقي 2) ؛ 28 (الباقي 5) ؛ 7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص 91)",
+      "instruction": "قيس ضلع كلّ مربّع بالدسم",
+      "body": "51 على 3 = 17",
+      "figureDesc": "",
+      "answer": "17",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص 91)",
+      "instruction": "عدد القوارير المملوءة؛ مصاريف شراء القوارير الفارغة والسدادات بالمي؛ ثمن بيع القوارير بالمي؛ دخله الصافي بالمي",
+      "body": "عدد القوارير المملوءة: 280 على 8 = 35\nمصاريف شراء القوارير الفارغة والسدادات بالمي: 35 × 250 = 8 750\nثمن بيع القوارير بالمي: 35 × 4 000 = 140 000\nدخله الصافي بالمي: 140 000 - (8 750 + 31 250) = 100 000",
+      "figureDesc": "",
+      "answer": "35 ؛ 8 750 ؛ 140 000 ؛ 100 000",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص 92)",
+      "instruction": "",
+      "body": "الحلّ (1) : لم يراعِ التّلميذ عند الحلّ التّرتيب في الإجابة.\n- لم يكتب الوحدة مع الجملة الرّياضيّة.\n- استغلّ العمليّات المركّبة.\nالحلّ (2) عمليّات عموديّة وعبارات تشرح النّتائج فهي حلول سريعة بمثابة المسوّدة.\nالحلّ (3) : تنظيم محكم ومفهوم. الحلّ مرتّب، كتابة الوحدة مع الجملة الرّياضيّة، عمليّات أفقيّة بسيطة مدعّمة بعمليّات عموديّة. النّتائج مدعّمة بتحقيق.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i14"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص 92)",
+      "instruction": "أجرة الساعة الواحدة بالمي؛ أجرة الساعة الإضافية بالمي؛ أجرته في أسبوع بالمي",
+      "body": "أجرة الساعة الواحدة بالمي: 7 200 على 8 = 900\nأجرة الساعة الإضافية بالمي: 900 × 2 = 1 800\nأجرته في أسبوع بالمي: (6 × 7 200) + (10 × 1 800) = 58 200",
+      "figureDesc": "أقواس تحت العبارة: 40 200 تحت (6 × 7 200) و18 000 تحت (10 × 1 800)",
+      "answer": "900 ؛ 1 800 ؛ 58 200",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p131_i15"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.38
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de corrigés de mathématiques (calcul, géométrie, test d'évaluation, problèmes) couvrant plusieurs chapitres (divisions, périmètres de rectangle et de carré, multiplications, monnaie), donc pas de chapitre unique.",
+  "linkFlags": [
+    "low_ocr_confidence",
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    93,
+    94,
+    95,
+    96
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division et problèmes de périmètre",
+    "skill": "Résoudre des problèmes à étapes avec divisions, opérations sur les nombres et périmètre du rectangle ou du carré.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "division",
+      "corrigé",
+      "périmètre",
+      "rectangle",
+      "problème à étapes",
+      "permutation de chiffres"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : l'activité de permutation des chiffres d'un nombre dont la somme divisée par la somme des chiffres donne toujours 222, ainsi que des problèmes de la vie courante (paniers, sacs de ciment, achat de verres) et des problèmes de rectangle avec relation entre longueur et largeur.",
+    "themeGroup": "Division euclidienne"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.2 p.92 : '43 200 + 18 000' est faux ; l'image indique 40 200 (sous 6×7 200) + 18 000 = 58 200, et l'ordre est (10×1 800) + (6×7 200)"
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Ex.1 p.91 : '2 756 ÷ 9 = 306 والباقي 2' ; l'image montre une division posée (2756, 056, reste 2) avec quotient 306, pas la phrase inventée 'اختبار تقويمي: قسمة'"
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Les lignes 'réponse: ...' ne figurent pas dans l'image, et pour l'ex.2 p.89 '1 776 ؛ 222' ne correspond pas à la structure (1 776 ÷ 8 = 222)"
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.2 p.89 ج) : l'image indique 1 776 ÷ (1+3+4) = 8 ... en réalité 'على (1+3+4)=8' avec 1 776 ÷ 8 = 222 ; la transcription écrit '1 776 على (1 + 3 + 4) = 8' ce qui est acceptable, mais l'unité 'ج' est partiellement illisible/raturée"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.3 p.90 : '(2 : 280) - 86 = 54' ; l'image montre 86 - (2 : 280) = 54, ordre inversé"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.1 p.90 : '(2 ؛ 90) - 27 = 18' ; l'image montre 27 - (2 ؛ 90) = 18, ordre inversé"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.5 p.89 : '(1 800 + 54 000) - 45 000' ; l'image montre 45 000 - (1 800 + 54 000) = 10 800, ordre inversé"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.4 p.89 : 'عدد أكياس الاسمنت' omet ': 3 500 على 50 = 70' ; l'énoncé est suivi de la ligne, structure OK mais 'الكؤوس' et 'الكسوة' sans tashkeel visible, OK"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ex.2 p.91 : '173 ÷ 6' : l'image montre 'أكبر باق = 5' (mention manuscrite) non transcrite ; 275 ÷ 7 reste 2 correct"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel visibles non reproduits : الحلّ، العمليّات المركّبة، رياضيّة، مدعّمة، النّتائج، الصّانع، السّلات, etc. ; 'لم يراع التلميذ عند' est 'عند' à vérifier ; 'مرتّب'"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.3 p.90 : 'بالم' correct ; titre en-têtes (حساب، هندسة، السنة الرابعة، الصفحة) omis"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.78,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.2 p.92 : la parenthèse finale '(43 200 + 18 000)' est fausse. L'image indique 40 200 sous (6 × 7 200) et 18 000 sous (10 × 1 800), soit 40 200 + 18 000 = 58 200."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ex.1 p.91 : l'instruction 'اختبار تقويمي: قسمة 2 756 على 9' et la phrase '2 756 ÷ 9 = 306 والباقي 2' sont inventées. Dans l'image, 'اختبار تقويمي' n'est que l'en-tête de page. L'exercice est une division posée : 2756 | 9, 056, reste 2, quotient 306."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ex.2 p.91 : l'instruction 'عمليات قسمة' est inventée, l'image n'en contient pas. L'annotation 'أكبر باق = 5' à côté de 173 ÷ 6 est omise."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ex.1 p.92 : l'instruction 'المسائل (4): تقويم الحلول' est inventée, l'en-tête de la page est seulement 'المسائل (4)'. Les voyelles et chadda visibles (الحلّ، التّلميذ، الرّياضيّة، مدعّمة…) sont absentes, et un ':' est ajouté après 'الحل (2)'."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.3 p.90 : la figureDesc dit que le segment de la longueur compte trois parties, mais l'image en montre deux (un seul trait de division). Cela correspond à 72 ÷ 2 = 36 = 12 + 24. De plus, la division '(2 : 280)' est écrite dans l'ordre visuel inversé, alors que le sens de lecture donne (280 : 2) = 140, puis 140 - 86 = 54."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.6 p.90 : la figureDesc dit que la longueur compte quatre parties, mais l'image en montre trois (longueur = 3 × largeur, 3 × 20 = 60)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.1 p.90 et Ex.4 p.90 : les opérandes des divisions sont inversés par rapport au sens de lecture arabe. Il faut (90 ؛ 10) et (90 ؛ 2), et (72 : 2), pas (10 ؛ 90), (2 ؛ 90) et (2 : 72). La transcription est incohérente, car elle écrit correctement '160 : 2 : 4' à l'Ex.6 p.90."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Chadda visibles omises : الصّانع، كلّ (Ex.3 p.89), كلّ مربّع (Ex.3 p.91)."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "2 (ص 89)",
+      "instruction": "مجموعة الأعداد: {431، 413، 341، 314، 134، 143}",
+      "body": "ب) مجموع الأعداد: 431 + 413 + 341 + 314 + 134 + 143 = 1 776\nج) 1 776 على (1 + 3 + 4) = 8\nأحصل دائما على خارج مساو لـ 222",
+      "figureDesc": "",
+      "answer": "1 776 ؛ 222",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص 89)",
+      "instruction": "عدد السلات التي ينتجها هذا الصّانع كلّ يوم",
+      "body": "112 على 7 = 16",
+      "figureDesc": "",
+      "answer": "16",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص 89)",
+      "instruction": "عدد أكياس الاسمنت",
+      "body": "3 500 على 50 = 70",
+      "figureDesc": "",
+      "answer": "70",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص 89)",
+      "instruction": "قبض بالمي؛ ثمن الكسوة بالمي؛ ثمن الكؤوس بالمي؛ ثمن الكأس الواحدة بالمي",
+      "body": "قبض بالمي: (3×30) × 1 200 = 108 000\nثمن الكسوة بالمي: 108 000 على 2 = 54 000\nثمن الكؤوس بالمي: (1 800 + 54 000) - 45 000 = 10 800\nثمن الكأس الواحدة بالمي: 10 800 : 9 = 1 200",
+      "figureDesc": "",
+      "answer": "108 000 ؛ 54 000 ؛ 10 800 ؛ 1 200",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص 90)",
+      "instruction": "قيس طول المستطيل بالصم؛ قيس عرض المستطيل بالصم",
+      "body": "قيس طول المستطيل بالصم: (90 ؛ 10) × 3 = 27\nقيس عرض المستطيل بالصم: (90 ؛ 10) × 2 = 18\nأو (90 ؛ 2) - 27 = 18",
+      "figureDesc": "",
+      "answer": "الطول 27 ؛ العرض 18",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص 90)",
+      "instruction": "قيس عرض هذه الحديقة بالم",
+      "body": "(280 : 2) - 86 = 54\n72 على 2",
+      "figureDesc": "مستطيل: العرض جزء واحد والطول جزءان متساويان، المجموع 72 على 2",
+      "answer": "54",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص 90)",
+      "instruction": "قيس العرض بالصم؛ قيس الطول بالصم",
+      "body": "قيس العرض بالصم: (72 : 2) : 3 = 12\nقيس الطول بالصم: 2 × 12 = 24",
+      "figureDesc": "",
+      "answer": "العرض 12 ؛ الطول 24",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i7"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص 90)",
+      "instruction": "قيس نصف محيط المستطيل بالم؛ قيس ضلع المربع بالم؛ قيس عرض المستطيل بالم",
+      "body": "قيس نصف محيط المستطيل بالم: 220 على 2 = 110\nقيس ضلع المربع بالم: 120 على 4 = 30\nقيس عرض المستطيل بالم: 110 - (10 + 30 + 30) = 40",
+      "figureDesc": "",
+      "answer": "110 ؛ 30 ؛ 40",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i8"
+    },
+    {
+      "kind": "answer",
+      "number": "6 (ص 90)",
+      "instruction": "قيس العرض بالم؛ قيس الطول بالم",
+      "body": "160 على 2\nقيس العرض بالم: 160 : 2 : 4 = 160 : 8 = 20\nقيس الطول بالم: 3 × 20 = 60",
+      "figureDesc": "مستطيل: العرض جزء واحد والطول ثلاثة أجزاء متساوية",
+      "answer": "العرض 20 ؛ الطول 60",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i9"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص 91)",
+      "instruction": "",
+      "body": "2 756 | 9\n056 | 306\n2",
+      "figureDesc": "عملية قسمة عمودية: 2756 على 9، الخارج 306، الباقي 2",
+      "answer": "306 (الباقي 2)",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i10"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص 91)",
+      "instruction": "",
+      "body": "275 | 7 : الباقي 2 ، الخارج 39\n173 | 6 : الخارج 28 ، أكبر باق = 5\n637 | 91 : الخارج 7",
+      "figureDesc": "ثلاث عمليات قسمة عمودية",
+      "answer": "39 (الباقي 2) ؛ 28 (الباقي 5) ؛ 7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i11"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص 91)",
+      "instruction": "قيس ضلع كلّ مربّع بالدسم",
+      "body": "51 على 3 = 17",
+      "figureDesc": "",
+      "answer": "17",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i12"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص 91)",
+      "instruction": "عدد القوارير المملوءة؛ مصاريف شراء القوارير الفارغة والسدادات بالمي؛ ثمن بيع القوارير بالمي؛ دخله الصافي بالمي",
+      "body": "عدد القوارير المملوءة: 280 على 8 = 35\nمصاريف شراء القوارير الفارغة والسدادات بالمي: 35 × 250 = 8 750\nثمن بيع القوارير بالمي: 35 × 4 000 = 140 000\nدخله الصافي بالمي: 140 000 - (8 750 + 31 250) = 100 000",
+      "figureDesc": "",
+      "answer": "35 ؛ 8 750 ؛ 140 000 ؛ 100 000",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i13"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص 92)",
+      "instruction": "",
+      "body": "الحلّ (1) : لم يراعِ التّلميذ عند الحلّ التّرتيب في الإجابة.\n- لم يكتب الوحدة مع الجملة الرّياضيّة.\n- استغلّ العمليّات المركّبة.\nالحلّ (2) عمليّات عموديّة وعبارات تشرح النّتائج فهي حلول سريعة بمثابة المسوّدة.\nالحلّ (3) : تنظيم محكم ومفهوم. الحلّ مرتّب، كتابة الوحدة مع الجملة الرّياضيّة، عمليّات أفقيّة بسيطة مدعّمة بعمليّات عموديّة. النّتائج مدعّمة بتحقيق.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i14"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص 92)",
+      "instruction": "أجرة الساعة الواحدة بالمي؛ أجرة الساعة الإضافية بالمي؛ أجرته في أسبوع بالمي",
+      "body": "أجرة الساعة الواحدة بالمي: 7 200 على 8 = 900\nأجرة الساعة الإضافية بالمي: 900 × 2 = 1 800\nأجرته في أسبوع بالمي: (6 × 7 200) + (10 × 1 800) = 58 200",
+      "figureDesc": "أقواس تحت العبارة: 40 200 تحت (6 × 7 200) و18 000 تحت (10 × 1 800)",
+      "answer": "900 ؛ 1 800 ؛ 58 200",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p131_i15"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "2 (ص 89)",
+      "instruction": "مجموعة الأعداد: {431، 413، 341، 314، 134، 143}",
+      "body": "ب) مجموع الأعداد: 431 + 413 + 341 + 314 + 134 + 143 = 1 776\nج) 1 776 على (1 + 3 + 4) = 8\nأحصل دائما على خارج مساو لـ 222",
+      "figureDesc": "",
+      "answer": "1 776 ؛ 222",
+      "confidence": 0.7,
+      "id": "math_solutions_4eme_sellami_p131_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص 89)",
+      "instruction": "عدد السلات التي ينتجها هذا الصانع كل يوم",
+      "body": "112 على 7 = 16",
+      "figureDesc": "",
+      "answer": "16",
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p131_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص 89)",
+      "instruction": "عدد أكياس الاسمنت",
+      "body": "3 500 على 50 = 70",
+      "figureDesc": "",
+      "answer": "70",
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p131_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص 89)",
+      "instruction": "قبض بالمي؛ ثمن الكسوة بالمي؛ ثمن الكؤوس بالمي؛ ثمن الكأس الواحدة بالمي",
+      "body": "قبض بالمي: (3×30) × 1 200 = 108 000\nثمن الكسوة بالمي: 108 000 على 2 = 54 000\nثمن الكؤوس بالمي: (1 800 + 54 000) - 45 000 = 10 800\nثمن الكأس الواحدة بالمي: 10 800 : 9 = 1 200",
+      "figureDesc": "",
+      "answer": "108 000 ؛ 54 000 ؛ 10 800 ؛ 1 200",
+      "confidence": 0.7,
+      "id": "math_solutions_4eme_sellami_p131_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص 90)",
+      "instruction": "قيس طول المستطيل بالصم؛ قيس عرض المستطيل بالصم",
+      "body": "قيس طول المستطيل بالصم: (10 ؛ 90) × 3 = 27\nقيس عرض المستطيل بالصم: (10 ؛ 90) × 2 = 18\nأو (2 ؛ 90) - 27 = 18",
+      "figureDesc": "",
+      "answer": "الطول 27 ؛ العرض 18",
+      "confidence": 0.65,
+      "id": "math_solutions_4eme_sellami_p131_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص 90)",
+      "instruction": "قيس عرض هذه الحديقة بالم",
+      "body": "(2 : 280) - 86 = 54\n72 على 2",
+      "figureDesc": "مستطيل: العرض يساوي جزءا واحدا والطول ثلاثة أجزاء متساوية، المجموع 72 على 2",
+      "answer": "54",
+      "confidence": 0.55,
+      "id": "math_solutions_4eme_sellami_p131_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص 90)",
+      "instruction": "قيس العرض بالصم؛ قيس الطول بالصم",
+      "body": "قيس العرض بالصم: (2 : 72) : 3 = 12\nقيس الطول بالصم: 2 × 12 = 24",
+      "figureDesc": "",
+      "answer": "العرض 12 ؛ الطول 24",
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p131_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5 (ص 90)",
+      "instruction": "قيس نصف محيط المستطيل بالم؛ قيس ضلع المربع بالم؛ قيس عرض المستطيل بالم",
+      "body": "قيس نصف محيط المستطيل بالم: 220 على 2 = 110\nقيس ضلع المربع بالم: 120 على 4 = 30\nقيس عرض المستطيل بالم: 110 - (10 + 30 + 30) = 40",
+      "figureDesc": "",
+      "answer": "110 ؛ 30 ؛ 40",
+      "confidence": 0.75,
+      "id": "math_solutions_4eme_sellami_p131_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "6 (ص 90)",
+      "instruction": "قيس العرض بالم؛ قيس الطول بالم",
+      "body": "160 على 2\nقيس العرض بالم: 160 : 2 : 4 = 160 : 8 = 20\nقيس الطول بالم: 3 × 20 = 60",
+      "figureDesc": "مستطيل: العرض جزء واحد والطول أربعة أجزاء",
+      "answer": "العرض 20 ؛ الطول 60",
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p131_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص 91)",
+      "instruction": "اختبار تقويمي: قسمة 2 756 على 9",
+      "body": "2 756 ÷ 9 = 306 والباقي 2",
+      "figureDesc": "عملية قسمة عمودية: 2756 على 9، الخارج 306، الباقي 2",
+      "answer": "306 (الباقي 2)",
+      "confidence": 0.7,
+      "id": "math_solutions_4eme_sellami_p131_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص 91)",
+      "instruction": "عمليات قسمة",
+      "body": "275 ÷ 7 = 39 والباقي 2\n173 ÷ 6 = 28 والباقي 5\n637 ÷ 91 = 7",
+      "figureDesc": "ثلاث عمليات قسمة عمودية",
+      "answer": "39 (الباقي 2) ؛ 28 (الباقي 5) ؛ 7",
+      "confidence": 0.7,
+      "id": "math_solutions_4eme_sellami_p131_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3 (ص 91)",
+      "instruction": "قيس ضلع كل مربع بالدسم",
+      "body": "51 على 3 = 17",
+      "figureDesc": "",
+      "answer": "17",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p131_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4 (ص 91)",
+      "instruction": "عدد القوارير المملوءة؛ مصاريف شراء القوارير الفارغة والسدادات بالمي؛ ثمن بيع القوارير بالمي؛ دخله الصافي بالمي",
+      "body": "عدد القوارير المملوءة: 280 على 8 = 35\nمصاريف شراء القوارير الفارغة والسدادات بالمي: 35 × 250 = 8 750\nثمن بيع القوارير بالمي: 35 × 4 000 = 140 000\nدخله الصافي بالمي: 140 000 - (8 750 + 31 250) = 100 000",
+      "figureDesc": "",
+      "answer": "35 ؛ 8 750 ؛ 140 000 ؛ 100 000",
+      "confidence": 0.75,
+      "id": "math_solutions_4eme_sellami_p131_i13",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1 (ص 92)",
+      "instruction": "المسائل (4): تقويم الحلول",
+      "body": "الحل (1): لم يراع التلميذ عند الحل الترتيب في الإجابة.\n- لم يكتب الوحدة مع الجملة الرياضية.\n- استغل العمليات المركبة.\nالحل (2): عمليات عمودية وعبارات تشرح النتائج فهي حلول سريعة بمثابة المسودة.\nالحل (3): تنظيم محكم ومفهوم. الحل مرتب، كتابة الوحدة مع الجملة الرياضية، عمليات أفقية بسيطة مدعمة بعمليات عمودية. النتائج مدعمة بتحقيق.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p131_i14",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2 (ص 92)",
+      "instruction": "أجرة الساعة الواحدة بالمي؛ أجرة الساعة الإضافية بالمي؛ أجرته في أسبوع بالمي",
+      "body": "أجرة الساعة الواحدة بالمي: 7 200 على 8 = 900\nأجرة الساعة الإضافية بالمي: 900 × 2 = 1 800\nأجرته في أسبوع بالمي: (6 × 7 200) + (10 × 1 800) = 58 200 (43 200 + 18 000)",
+      "figureDesc": "أقواس تحت العبارة تشير إلى 18 000 و40 200",
+      "answer": "900 ؛ 1 800 ؛ 58 200",
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p131_i15",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.78
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

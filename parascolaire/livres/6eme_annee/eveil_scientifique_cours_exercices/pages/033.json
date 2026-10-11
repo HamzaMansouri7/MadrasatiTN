@@ -1,0 +1,419 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 33,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الوَسَطُ البِيئِيُّ : الأَمْرَاضُ النَّاتِجَةُ عَنْ تَلَوُّثِ المِيَاهِ وَالوِقَايَةُ مِنْهَا (le choléra)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوَسَطُ البِيئِيُّ : الأَمْرَاضُ النَّاتِجَةُ عَنْ تَلَوُّثِ المِيَاهِ وَالوِقَايَةُ مِنْهَا",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p033_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "السَّنَد",
+      "body": "بِسَبَبِ تَلَوُّثِ المِيَاهِ فِي الطَّبِيعَةِ يُوجَدُ 800 مِلْيُون إِنْسَان مُصَاب بِالمَلَارِيَا و 500 مِلْيُون بِالتْرَاخُومَا المُؤَدِّيَةِ إِلَى العَمَى و 200 مِلْيُون بِالبِلْهَارِيسِيَا كَمَا تَنْدَثِرُ يَوْمِيًّا 140 نَبْتَةً وَكَائِنًا حَيًّا عَلَى وَجْهِ الأَرْضِ.",
+      "figureDesc": "Petite photo en haut à droite : un enfant qui reçoit une injection/un vaccin dans le bras, administrée par une personne en blouse blanche.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p033_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة : مَا هِيَ أَسْمَاءُ الأَمْرَاضِ الَّتِي تُسَبِّبُهَا المِيَاهُ المُلَوَّثَةُ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p033_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "السَّنَد",
+      "body": "الكُولِيرَا مَرَضٌ مَعْوِيٌّ جَرْثُومِيٌّ يُصِيبُ جَمِيعَ الأَعْمَارِ وَهُوَ مَرَضٌ خَطِيرٌ مُمِيتٌ بِالتَّجْفَافِ إِذَا لَمْ يُعَالَجْ فِي الوَقْتِ المُنَاسِبِ.\n- مِنْ أَعْرَاضِهِ : الإِسْهَالُ الشَّدِيدُ (بِرَازٌ مَائِيٌّ غَزِيرٌ)، تَجْفَافٌ سَرِيعٌ (نَقْصُ المَاءِ فِي الجِسْمِ)، حَالَةُ الإِقْيَاءِ، مَغَصٌ فِي البَطْنِ.\n- طُرُقُ الانْتِقَالِ : يَنْتَقِلُ عَنْ طَرِيقِ الطَّعَامِ وَالمَاءِ المُلَوَّثَيْنِ بِهَذِهِ الجَرَاثِيمِ وَتُعْتَبَرُ الكُولِيرَا مِنْ أَهَمِّ الأَمْرَاضِ الَّتِي تَنْتَقِلُ بِالمَاءِ.\n- مِنْ عَوَامِلِ الوِقَايَةِ مِنَ الكُولِيرَا : سَلَامَةُ مِيَاهِ الشُّرْبِ مِنَ التَّلَوُّثِ، نَظَافَةُ الأَطْعِمَةِ وَعَدَمُ تَنَاوُلِ المَكْشُوفِ مِنْهَا، مُكَافَحَةُ الذُّبَابِ، غَسْلُ اليَدَيْنِ بَعْدَ الخُرُوجِ مِنَ المِرْحَاضِ وَقَبْلَ الطَّعَامِ، التَّخَلُّصُ مِنَ القُمَامَةِ وَالفَضَلَاتِ بِأَكْيَاسٍ مُغْلَقَةٍ، عَدَمُ اسْتِخْدَامِ أَدَوَاتِ المَرِيضِ الخَاصَّةِ، كَمَا لا يُمْكِنُ مُعَالَجَةُ الكوليرا في المنزل بل في المستشفيات وتتم المعالجة عن طريق تعويض السَّوَائِلِ وَالشَّوَارِدِ المفقودة من الجسم نتيجة الإسهال الشديد والإقياء، وكذلك بإعطاء المريض المضادات الحيوية.",
+      "figureDesc": "Photo d'un garçon en chemise bleue allongé sur un canapé, une main sur le front, couvert d'une couverture rouge, l'air malade.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p033_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 1 : عَدِّدْ اثْنَيْنِ مِنْ أَعْرَاضِ المُصَابِ بِمَرَضِ الكُولِيرَا.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p033_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة 2 : مَا العَامِلُ المُسَبِّبُ لِمَرَضِ الكُولِيرَا ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p033_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة 3 : كَيْفَ يَنْتَقِلُ مَرَضُ الكُولِيرَا إِلَى الإِنْسَانِ السَّلِيمِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p033_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التعليمة 4 : كَيْفَ تَتِمُّ الوِقَايَةُ مِنْ مَرَضِ الكُولِيرَا ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "eveil_scientifique_cours_exercices_p033_i8"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u4",
+  "topicTitle": "Unité 4 : Reproduction florale et protection des milieux aquatiques",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u4",
+    "confidence": 0.69
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page porte sur les maladies d'origine hydrique (choléra, paludisme, trachome, bilharziose) dues à la pollution de l'eau et sur leur prévention, ce qui correspond à la protection des milieux aquatiques de l'Unité 4, même si le volet microbes de l'Unité 3 reste possible.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Maladies liées à l'eau polluée",
+    "skill": "Identifier les causes, les symptômes, la transmission et la prévention du choléra à partir de documents.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "choléra",
+      "pollution de l'eau",
+      "maladies hydriques",
+      "prévention",
+      "hygiène",
+      "environnement"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une démarche réutilisable : partir d'un document support (statistiques mondiales puis fiche sur une maladie) et poser des consignes graduées sur les symptômes, l'agent causal, la transmission et la prévention, en liant santé et environnement.",
+    "themeGroup": "L'eau et sa pollution"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre de la page est absent de la transcription : « الوَسَطُ البِيئِيُّ : الأَمْرَاضُ النَّاتِجَةُ عَنْ تَلَوُّثِ المِيَاهِ وَالوِقَايَةُ مِنْهَا »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« التَّعْلِيمَة » au point 2 : l'image montre « التعليمة » sans voyelles sur les deux premières lettres, et la transcription ajoute un tashkeel inexistant (« التَّعْلِيمَة »)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« تَجَفَافٌ » : l'image porte « تَجْفَافٌ » (avec sukun sur le ج) ; la voyelle est fausse."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« تَنْدَثِرُ » : l'image porte « تَنْدثِرُ » avec une vocalisation légèrement différente ; la forme exacte est à vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« بِالتْرَاخُومَا » : l'image a « بِالتْرَاخُومَا » ; correct. En revanche « بِالبِلْهَارِيسْيَا » ne correspond pas à « بِالبِلْهَارِيسِيَا » vu sur l'image (sukun superflu sur le س)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le texte de l'image est largement vocalisé, mais les passages en bas de page (consignes, liste de prévention) sont presque sans voyelles ; la transcription y ajoute des voyelles absentes, par ex. « التَّعْلِيمَة 1 : عَدِّدْ اثْنَيْنِ… », « عَدَمُ اسْتِخْدَامِ… »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الإِسْهَالُ الشَّدِيدُ » : l'image porte « الشديد » sans voyelles complètes ; le tashkeel de la transcription est ajouté."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المِرْحَاضِ » : l'image porte « المِرْحَاضِ » ; correct. Mais « المُضَادَّاتِ الحَيَوِيَّةَ » est sans voyelles sur l'image (« المضادات الحيوية »)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "omission",
+        "severity": "major",
+        "detail": "Le titre de la page « الوَسَطُ البِيئِيُّ : الأَمْرَاضُ النَّاتِجَةُ عَنْ تَلَوُّثِ المِيَاهِ وَالوِقَايَةُ مِنْهَا » est visible en haut de l'image mais absent de la transcription."
+      },
+      {
+        "type": "tashkeel_added",
+        "severity": "minor",
+        "detail": "Le mot « التعليمة » (point 2 et exercices 1 à 4) est sans voyelles sur l'image. La transcription écrit « التَّعْلِيمَة »."
+      },
+      {
+        "type": "wrong_vowel",
+        "severity": "minor",
+        "detail": "« تَجَفَافٌ » : l'image porte « تَجْفَافٌ », avec un sukun sur le ج."
+      },
+      {
+        "type": "wrong_vowel",
+        "severity": "minor",
+        "detail": "« بِالبِلْهَارِيسْيَا » : l'image porte « بِالبِلْهَارِيسِيَا », avec un kasra sur le س et sans sukun."
+      },
+      {
+        "type": "wrong_vowel",
+        "severity": "minor",
+        "detail": "« بُرَازٌ » : l'image porte « بِرَازٌ », avec un kasra sur le ب."
+      },
+      {
+        "type": "tashkeel_added",
+        "severity": "minor",
+        "detail": "La fin de la liste de prévention est sans voyelles sur l'image, à partir de « المفقودة من الجسم نتيجة الإسهال الشديد والإقياء، وكذلك بإعطاء المريض المضادات الحيوية ». Les passages « كما لا يُمْكِنُ مُعَالَجَةُ الكوليرا في المنزل بل في المستشفيات وتتم المعالجة عن طريق تعويض » sont presque sans voyelles. Seuls « السَّوَائِلِ وَالشَّوَارِدِ » portent des voyelles. La transcription vocalise tout ce passage, y compris « المُضَادَّاتِ الحَيَوِيَّةَ »."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوَسَطُ البِيئِيُّ : الأَمْرَاضُ النَّاتِجَةُ عَنْ تَلَوُّثِ المِيَاهِ وَالوِقَايَةُ مِنْهَا",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "السَّنَد",
+      "body": "بِسَبَبِ تَلَوُّثِ المِيَاهِ فِي الطَّبِيعَةِ يُوجَدُ 800 مِلْيُون إِنْسَان مُصَاب بِالمَلَارِيَا و 500 مِلْيُون بِالتْرَاخُومَا المُؤَدِّيَةِ إِلَى العَمَى و 200 مِلْيُون بِالبِلْهَارِيسِيَا كَمَا تَنْدَثِرُ يَوْمِيًّا 140 نَبْتَةً وَكَائِنًا حَيًّا عَلَى وَجْهِ الأَرْضِ.",
+      "figureDesc": "Petite photo en haut à droite : un enfant qui reçoit une injection/un vaccin dans le bras, administrée par une personne en blouse blanche.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة : مَا هِيَ أَسْمَاءُ الأَمْرَاضِ الَّتِي تُسَبِّبُهَا المِيَاهُ المُلَوَّثَةُ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "السَّنَد",
+      "body": "الكُولِيرَا مَرَضٌ مَعْوِيٌّ جَرْثُومِيٌّ يُصِيبُ جَمِيعَ الأَعْمَارِ وَهُوَ مَرَضٌ خَطِيرٌ مُمِيتٌ بِالتَّجْفَافِ إِذَا لَمْ يُعَالَجْ فِي الوَقْتِ المُنَاسِبِ.\n- مِنْ أَعْرَاضِهِ : الإِسْهَالُ الشَّدِيدُ (بِرَازٌ مَائِيٌّ غَزِيرٌ)، تَجْفَافٌ سَرِيعٌ (نَقْصُ المَاءِ فِي الجِسْمِ)، حَالَةُ الإِقْيَاءِ، مَغَصٌ فِي البَطْنِ.\n- طُرُقُ الانْتِقَالِ : يَنْتَقِلُ عَنْ طَرِيقِ الطَّعَامِ وَالمَاءِ المُلَوَّثَيْنِ بِهَذِهِ الجَرَاثِيمِ وَتُعْتَبَرُ الكُولِيرَا مِنْ أَهَمِّ الأَمْرَاضِ الَّتِي تَنْتَقِلُ بِالمَاءِ.\n- مِنْ عَوَامِلِ الوِقَايَةِ مِنَ الكُولِيرَا : سَلَامَةُ مِيَاهِ الشُّرْبِ مِنَ التَّلَوُّثِ، نَظَافَةُ الأَطْعِمَةِ وَعَدَمُ تَنَاوُلِ المَكْشُوفِ مِنْهَا، مُكَافَحَةُ الذُّبَابِ، غَسْلُ اليَدَيْنِ بَعْدَ الخُرُوجِ مِنَ المِرْحَاضِ وَقَبْلَ الطَّعَامِ، التَّخَلُّصُ مِنَ القُمَامَةِ وَالفَضَلَاتِ بِأَكْيَاسٍ مُغْلَقَةٍ، عَدَمُ اسْتِخْدَامِ أَدَوَاتِ المَرِيضِ الخَاصَّةِ، كَمَا لا يُمْكِنُ مُعَالَجَةُ الكوليرا في المنزل بل في المستشفيات وتتم المعالجة عن طريق تعويض السَّوَائِلِ وَالشَّوَارِدِ المفقودة من الجسم نتيجة الإسهال الشديد والإقياء، وكذلك بإعطاء المريض المضادات الحيوية.",
+      "figureDesc": "Photo d'un garçon en chemise bleue allongé sur un canapé, une main sur le front, couvert d'une couverture rouge, l'air malade.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 1 : عَدِّدْ اثْنَيْنِ مِنْ أَعْرَاضِ المُصَابِ بِمَرَضِ الكُولِيرَا.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة 2 : مَا العَامِلُ المُسَبِّبُ لِمَرَضِ الكُولِيرَا ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة 3 : كَيْفَ يَنْتَقِلُ مَرَضُ الكُولِيرَا إِلَى الإِنْسَانِ السَّلِيمِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التعليمة 4 : كَيْفَ تَتِمُّ الوِقَايَةُ مِنْ مَرَضِ الكُولِيرَا ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i8"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "السَّنَد",
+      "body": "بِسَبَبِ تَلَوُّثِ المِيَاهِ فِي الطَّبِيعَةِ يُوجَدُ 800 مِلْيُون إِنْسَان مُصَاب بِالمَلَارِيَا و 500 مِلْيُون بِالتْرَاخُومَا المُؤَدِّيَةِ إِلَى العَمَى و 200 مِلْيُون بِالبِلْهَارِيسْيَا كَمَا تَنْدَثِرُ يَوْمِيًّا 140 نَبْتَةً وَكَائِنًا حَيًّا عَلَى وَجْهِ الأَرْضِ.",
+      "figureDesc": "Petite photo en haut à droite : un enfant qui reçoit une injection/un vaccin dans le bras, administrée par une personne en blouse blanche.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i1",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَة : مَا هِيَ أَسْمَاءُ الأَمْرَاضِ الَّتِي تُسَبِّبُهَا المِيَاهُ المُلَوَّثَةُ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i2",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "السَّنَد",
+      "body": "الكُولِيرَا مَرَضٌ مَعْوِيٌّ جَرْثُومِيٌّ يُصِيبُ جَمِيعَ الأَعْمَارِ وَهُوَ مَرَضٌ خَطِيرٌ مُمِيتٌ بِالتَّجْفَافِ إِذَا لَمْ يُعَالَجْ فِي الوَقْتِ المُنَاسِبِ.\n- مِنْ أَعْرَاضِهِ : الإِسْهَالُ الشَّدِيدُ (بُرَازٌ مَائِيٌّ غَزِيرٌ)، تَجَفَافٌ سَرِيعٌ (نَقْصُ المَاءِ فِي الجِسْمِ)، حَالَةُ الإِقْيَاءِ، مَغَصٌ فِي البَطْنِ.\n- طُرُقُ الانْتِقَالِ : يَنْتَقِلُ عَنْ طَرِيقِ الطَّعَامِ وَالمَاءِ المُلَوَّثَيْنِ بِهَذِهِ الجَرَاثِيمِ وَتُعْتَبَرُ الكُولِيرَا مِنْ أَهَمِّ الأَمْرَاضِ الَّتِي تَنْتَقِلُ بِالمَاءِ.\n- مِنْ عَوَامِلِ الوِقَايَةِ مِنَ الكُولِيرَا : سَلَامَةُ مِيَاهِ الشُّرْبِ مِنَ التَّلَوُّثِ، نَظَافَةُ الأَطْعِمَةِ وَعَدَمُ تَنَاوُلِ المَكْشُوفِ مِنْهَا، مُكَافَحَةُ الذُّبَابِ، غَسْلُ اليَدَيْنِ بَعْدَ الخُرُوجِ مِنَ المِرْحَاضِ وَقَبْلَ الطَّعَامِ، التَّخَلُّصُ مِنَ القُمَامَةِ وَالفَضَلَاتِ بِأَكْيَاسٍ مُغْلَقَةٍ، عَدَمُ اسْتِخْدَامِ أَدَوَاتِ المَرِيضِ الخَاصَّةِ، كَمَا لَا يُمْكِنُ مُعَالَجَةُ الكُولِيرَا فِي المَنْزِلِ بَلْ فِي المُسْتَشْفَيَاتِ وَتَتِمُّ المُعَالَجَةُ عَنْ طَرِيقِ تَعْوِيضِ السَّوَائِلِ وَالشَّوَارِدِ المَفْقُودَةِ مِنَ الجِسْمِ نَتِيجَةَ الإِسْهَالِ الشَّدِيدِ وَالإِقْيَاءِ، وَكَذَلِكَ بِإِعْطَاءِ المَرِيضِ المُضَادَّاتِ الحَيَوِيَّةَ.",
+      "figureDesc": "Photo d'un garçon en chemise bleue allongé sur un canapé, une main sur le front, couvert d'une couverture rouge, l'air malade.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i3",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَة 1 : عَدِّدْ اثْنَيْنِ مِنْ أَعْرَاضِ المُصَابِ بِمَرَضِ الكُولِيرَا.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i4",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَة 2 : مَا العَامِلُ المُسَبِّبُ لِمَرَضِ الكُولِيرَا ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i5",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَة 3 : كَيْفَ يَنْتَقِلُ مَرَضُ الكُولِيرَا إِلَى الإِنْسَانِ السَّلِيمِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i6",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَة 4 : كَيْفَ تَتِمُّ الوِقَايَةُ مِنْ مَرَضِ الكُولِيرَا ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p033_i7",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

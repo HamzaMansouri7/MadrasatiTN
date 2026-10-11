@@ -1,0 +1,129 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 30,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الأسماء المقصورة النكرة (Les noms à alif maqṣūra indéfinis)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أقرأ النص وأسطر الأسماء المنتهية بألف مقصورة",
+      "body": "راجع الفتى دروسه ثم خرج للعب في بطحاء الحي وهناك سقط على الحصى فجرح جرحا عميقا استوجب حمله إلى المستشفى، وعندما وصل لفت انتباهه كثرة المرضى والجرحى فحاول التسلل بين الصفوف عساه يمر قبلهم لكن دون جدوى ، حينها تدخل أحد الممرضين قائلا له لا تحاول فجهدك سيذهب سدى واحترام الدور واجب عليك وعلى غيرك",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p030_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أجعل الأسماء فيما يلي معرفة",
+      "body": "قوى - أذى - مأوى - ملهى - مرمى",
+      "figureDesc": "Tableau de 5 colonnes : ligne d'en-tête avec les mots, ligne vide à remplir",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p030_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أجعل الأسماء التالية نكرة",
+      "body": "الربى - الرحى - الصدى - المبنى - القرى",
+      "figureDesc": "Tableau de 5 colonnes : ligne d'en-tête avec les mots, ligne vide à remplir",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p030_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أحول الأسماء من المفرد إلى الجمع والعكس",
+      "body": "المفرد: مدية - (فراغ) - قوة - (فراغ) - دمية ; الجمع: (فراغ) - ربى - (فراغ) - رؤى - (فراغ)",
+      "figureDesc": "Tableau à 2 lignes (المفرد / الجمع) et 5 colonnes, cases vides à compléter",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p030_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أحول الأسماء من المثنى إلى الجمع والعكس",
+      "body": "المثنى: فتيان - (فراغ) - مستشفيان - (فراغ) ; الجمع: (فراغ) - مبان - (فراغ) - قرى",
+      "figureDesc": "Tableau à 2 lignes (المثنى / الجمع) et 4 colonnes, cases vides à compléter",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p030_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أعمر الفراغات بأسماء تنتهي بألف مقصورة مستعينا بما بين قوسين",
+      "body": "إن ما شاهدته على شاشة التلفاز من أخبار عن قتل ........ و جرح ........ جعلني أخرج من بيتي أسير عن غير هدى ........ أبحث عن أوى ........ لسيارتي قريب من شفي ........ عساني أتمكن من التبرع بقليل من الدم",
+      "figureDesc": "Les blancs sont à compléter ; les mots entre parenthèses sont peu lisibles sur le scan",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "grammaire_arabe_cahier_regles_p030_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de grammaire arabe sur les noms à alif maqṣūra (défini/indéfini, singulier/duel/pluriel), un point de langue qui ne correspond à aucune des unités officielles centrées sur la narration, le texte étant seulement un support d'exercice.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Noms indéfinis à alif maqṣūra",
+    "skill": "Repérer les noms terminés par un alif maqṣūra, les définir ou les rendre indéfinis, et les mettre au singulier, duel ou pluriel.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "alif maqṣūra",
+      "nom défini et indéfini",
+      "singulier et pluriel",
+      "duel",
+      "grammaire arabe",
+      "conjugaison des noms"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un court texte narratif (un enfant blessé à l'hôpital) sert de support pour repérer les noms à alif maqṣūra, suivi d'exercices de transformation (défini/indéfini, singulier/pluriel/duel) et d'un texte à trous contextualisé avec indices entre parenthèses.",
+    "themeGroup": "Les compléments"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

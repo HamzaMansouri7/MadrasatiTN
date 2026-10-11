@@ -1,0 +1,122 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 11,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Chez le menuisier",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Chez le menuisier\nIbrahim aime beaucoup jouer dans l'atelier de son oncle Ahmed, le menuisier.\nIl suit du regard le va-et-vient de la scie ou celui du rabot. Il recueille dans ses mains la fine sciure ou les copeaux frisés.\nIl aime caresser de la main les planches bien lisses que l'on vient de raboter. Il sent avec plaisir la bonne odeur de bois qui emplit l'atelier.\nIbrahim cherche aussi à se rendre utile, c'est lui qui apporte à l'apprenti les planches à scier. Il est toujours là pour tendre à son oncle l'outil dont il a besoin.\nIbrahim ne sait pas encore scier ou raboter, mais il sait se servir d'un marteau.\nIl se donne bien quelques coups sur les doigts, mais cela ne le décourage pas. Plus tard, il sera menuisier comme son oncle.\nAvec quelques bouts de planches trouvés dans la sciure, Ibrahim veut fabriquer une table. Voilà un marteau, des clous, au travail !\nLes quatre pieds sont cloués ; ils ne sont pas tout à fait de la même longueur mais la table sera solide car Ibrahim n'a épargné ni les clous ni les coups de marteau.\nCe soir il sera heureux d'offrir cette table à sa petite sœur.\nD'après R. Potier « Du langage à la lecture »",
+      "figureDesc": "Texte encadré dans un cadre arrondi ; en-tête avec nuage « Lecture - Compréhension », mentions « Sagesse » et « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p011_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1",
+      "instruction": "Est-ce qu'Ibrahim est impressionné par le métier de son oncle ? Relève, dans le texte, trois détails qui le montrent :",
+      "body": "Trois lignes pointillées pour écrire les réponses.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p011_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2",
+      "instruction": "Que fait Ibrahim pour se rendre utile ?",
+      "body": "Une ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p011_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B3a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- Ibrahim est un excellent menuisier. (........)",
+      "figureDesc": "Zone de réponse ovale en pointillés à droite de la phrase.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p011_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.37
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de lecture-compréhension française sur le métier de menuisier et le travail manuel, qui correspond au Module 1 « Travailler pour s'épanouir » (récits sur le travail).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : le métier de menuisier",
+    "skill": "Comprendre un texte narratif en relevant des détails, en identifiant des actions du personnage et en répondant par oui ou non.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "compréhension écrite",
+      "menuisier",
+      "atelier",
+      "relevé d'indices",
+      "métiers"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un court texte sur un enfant dans l'atelier d'un artisan sert de base à des questions graduées : relever des indices, expliquer une action, puis répondre par vrai/faux. Ce modèle peut être transposé à d'autres métiers.",
+    "themeGroup": "Métiers, citoyenneté et vie sociale"
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : « Lecture - Compréhension », « Sagesse », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page n'est pas transcrit : « Lire et s'exprimer », « 10 », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est absent. La transcription numérote les questions B1, B2 et B3a, mais le titre de la section B n'est pas repris."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

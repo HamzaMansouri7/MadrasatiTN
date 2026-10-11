@@ -1,0 +1,92 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 41,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Le paysage rural : l'habitat rural et les équipements (texte de géographie, sans contenu mathématique)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "ومن أهم هذه التجهيزات نجد الآلات الفلاحيةوالجرّارات والمحاريث ووسائل النقل وأعمدة التيّارالكهربائي والطرقات والمؤسسات التي تقدم خدمات للفلاحين\nالسكن تعتبر المساكن عنصرا من المشهد الريفي لأنها جزء لا يتجزأ منه، وهي تنقسم إلى قسمين  مساكن متفرقة في شكل مساكن فردية، ومساكن متجمّعة في شكل مساكن مترابطة كما يتكون السكن الريفي من مسكن الفلاح والإسطبلات والمستودعات والورشات والمخازن المرتبطة بالنشاط الفلاحي",
+      "figureDesc": "Page encadrée d'une bordure décorative de motifs circulaires jaunes. Le mot « السكن » est écrit en rouge. Aucun schéma ni tableau. Le reste de la page est vide.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p041_i1",
+      "topicId": "hg-5-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "hg-5-u4",
+  "topicTitle": "Unité 4 : Géographie - Paysages ruraux et urbains en Tunisie",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-5-u6",
+    "confidence": 0.33
+  },
+  "topicSubject": "Histoire & Géographie",
+  "topicReason": "La page traite du paysage rural tunisien (habitat rural, équipements agricoles, types de logements), ce qui correspond à l'unité de géographie sur les paysages ruraux et urbains en Tunisie.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Histoire-Géographie",
+    "theme": "Habitat rural et équipements agricoles",
+    "skill": "Identifier les équipements du paysage rural et distinguer l'habitat rural dispersé de l'habitat groupé.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "paysage rural",
+      "habitat rural",
+      "équipements agricoles",
+      "habitat dispersé",
+      "services aux agriculteurs",
+      "Tunisie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le classement des équipements ruraux (machines, transport, électricité, routes, services) et la distinction entre habitat dispersé et groupé peuvent donner un exercice d'appariement, un tableau comparatif ou une infographie de village tunisien.",
+    "themeGroup": "Habitat et équipements agricoles"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel est présent dans l'image mais la transcription ne le conserve que partiellement : « الجرّارات » et « التيّار » ont leur shadda, « متجمّعة » aussi, ce qui est correct. Aucune voyelle visible n'est omise."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الفلاحيةوالجرّارات » : l'espace est absent entre les deux mots, comme dans l'image (« الفلاحيةوالجرّارات »). Fidèle à l'original, aucune correction nécessaire."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« التيّارالكهربائي » : l'espace est absent, comme dans l'image. Fidèle à l'original."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le saut de ligne entre « للفلاحين » et « السكن » est conservé. Le mot « السكن » est en rouge dans l'image, ce que la transcription ne signale pas (sans conséquence)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "labels": {
+    "pageSubject": "Histoire-Géographie"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

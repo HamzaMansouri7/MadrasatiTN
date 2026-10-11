@@ -1,0 +1,270 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 8,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "تصريف المضاعف في المضارع المنصوب (conjugaison du verbe mudhaʿʿaf à l'inaccompli mansūb, arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "تصريف المضاعف في المضارع المنصوب\nالمضارع المنصوب هو ما دخلت عليه أدوات النصب\nأن: أريد أن أسافر\nكي لكي: ألعب كي أربح\nلن: لن ينجح هذه المرة\nلام التعليل: أتيت إلى المدرسة لأتعلم\nحتى: أعمل بجد حتى أفوز بالمرتبة الأولى",
+      "figureDesc": "Tableau à deux colonnes : à droite les particules de l'accusatif (أن، كي لكي، لن، لام التعليل، حتى), à gauche un exemple pour chacune.",
+      "answer": null,
+      "id": "grammaire_arabe_cahier_regles_p008_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.93
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "الضمائر | الأفعال | حل | اعتد | استمد\nالمتكلم:\nأنا: لن أحل | لن اعتد | لن أستمد\nنحن: لن تحلي | لن نعتد | لن نستمد\nالمخاطب:\nأنت: لن تحل | لن تعتد | لن تستمد\nأنت: لن تحلي | لن تعتدي | لن تستمدي\nأنتما: لن تحلا | لن تعتدا | لن تستمدا\nأنتم: لن تحلوا | لن تعتدوا | لن تستمدوا\nأنتن: لن تحللن | لن تعتددن | لن تستمددن\nالغائب:\nهو: لن يحل | لن يعتد | لن يستمد\nهي: لن تحل | لن تعتد | لن تستمد\nهما: لن يحلا | لن يعتدا | لن يستمدا\nهما: لن تحلا | لن تعتدا | لن تستمدا\nهم: لن يحلوا | لن يعتدوا | لن يستمدوا\nهن: لن يحللن | لن يعتددن | لن يستمددن",
+      "figureDesc": "Tableau de conjugaison : colonnes الضمائر/الأفعال, حل, اعتد, استمد ; les pronoms sont regroupés en المتكلم (2 lignes), المخاطب (5 lignes) et الغائب (6 lignes).",
+      "answer": null,
+      "id": "grammaire_arabe_cahier_regles_p008_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.93
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "يحافظ الفعل على إدغامه في المضارع المنصوب مع جميع الضمائر إلا مع أنتن و هن فيفك الإدغام\nعلامة الإعراب في الأفعال المضاعفة المنصوبة هي الفتحة مع الضمائر أنا، نحن، أنت، هو، هي، و حذف النون مع الضمائر أنت، أنتما، أنتم، هما للمذكر، هما للمؤنث، هم\nلا تتغير علامة الإعراب في الفعل المضاعف المسند إلى نون النسوة هن أنتن",
+      "figureDesc": "Encadré contenant les conclusions.",
+      "answer": null,
+      "id": "grammaire_arabe_cahier_regles_p008_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.93
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.32
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la conjugaison du verbe mudhaʿʿaf à l'inaccompli mansūb en arabe; le seul chapitre d'arabe mentionnant la conjugaison (verbes défectifs, Unité 1) est le plus proche, mais aucun chapitre ne couvre explicitement les verbes mudhaʿʿaf, d'où une confiance faible.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison du verbe mudhaʿʿaf au mansūb",
+    "skill": "Conjuguer les verbes à redoublement (mudhaʿʿaf) à l'inaccompli mansūb avec 'lan' selon tous les pronoms, en maintenant ou dénouant l'idghām.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "verbe mudhaʿʿaf",
+      "inaccompli mansūb",
+      "particules du nasb",
+      "idghām",
+      "conjugaison",
+      "lan"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau de conjugaison par pronom avec trois verbes modèles et la règle d'idghām (maintenu sauf avec أنتنّ et هنّ) se réutilise pour des exercices de transformation, de complétion de tableaux ou de repérage d'erreurs.",
+    "themeGroup": "Le verbe doublé (mudhaʿʿaf)"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « تصريف المضاعف في المضارع المنصوب » est absent de la transcription."
+      },
+      {
+        "type": "voyelle",
+        "severity": "major",
+        "detail": "La transcription ajoute des tashkeel absents de l'image (حلّ، اعتدّ، استمدّ، لن أحلَّ، أعتدَّ، أستمدَّ, etc.). L'image n'a aucune voyelle visible."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Les en-têtes de colonnes sont altérés : l'image donne « حل / اعتد / استمد » sans chadda. La colonne « الضمائر » n'est pas transcrite non plus."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ligne « أنا » : l'image a « لن أحل / لن اعتد / لن أستمد ». La transcription écrit « أعتدَّ » avec une hamza qui n'est pas dans l'image (« اعتد » sans hamza)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ligne « نحن » : l'image a « لن تحلي » pour حل. La transcription écrit « لن نحلّي », ce qui est faux."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« لام التعليل: أتيت إلى المدرسة لأتعلم » et « أعمل بجد... » sont corrects. En revanche, la transcription ajoute « (مذكر) » et « (مؤنث) » après هما : ces mentions n'apparaissent pas dans les cellules du tableau."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« (مع لن) » dans la ligne des verbes est inventé. Les libellés « المتكلم / المخاطب / الغائب » sont réorganisés en titres alors qu'ils sont des cellules fusionnées."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les pronoms « أنتَ » et « أنتِ » sont vocalisés par la transcription alors que l'image a « أنت » deux fois."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans les conclusions, l'image dit « أنا، نحن، أنت، هو، هي » avec des virgules. La transcription ajoute « أنتِ » vocalisé et « أنتنّ / هنّ » avec chadda, absents de l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.55,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de la page « تصريف المضاعف في المضارع المنصوب » est absent de la transcription."
+      },
+      {
+        "type": "voyelle",
+        "severity": "major",
+        "detail": "La transcription ajoute des tashkeel et des chadda absents du scan (حلّ، اعتدّ، استمدّ، لن أحلَّ، لن تعتدَّ, أنتنّ, هنّ, etc.). Aucune voyelle n'est visible sur l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "L'en-tête du tableau est altéré. L'image donne « الضمائر | الأفعال | حل | اعتد | استمد » sans chadda, et la colonne « الضمائر » n'était pas transcrite."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ligne « أنا » : l'image a « لن اعتد » sans hamza. La transcription écrit « أعتدَّ »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ligne « نحن » : l'image a « لن تحلي » pour حل. La transcription écrit « لن نحلّي », ce qui ne correspond pas au scan."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "« (مع لن) » dans la ligne des verbes est inventé. Les mentions « (مذكر) » et « (مؤنث) » après هما sont aussi inventées : l'image a simplement « هما » deux fois."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أنتَ » et « أنتِ » sont vocalisés alors que l'image a « أنت » deux fois (avec « لن تحل » puis « لن تحلي »)."
+      },
+      {
+        "type": "mise_en_forme",
+        "severity": "minor",
+        "detail": "Les libellés المتكلم / المخاطب / الغائب sont des cellules fusionnées de la dernière colonne du tableau, pas des titres de section. Dans le tableau de révision, l'image a « كي لكي » sans virgule."
+      },
+      {
+        "type": "figureDesc",
+        "severity": "minor",
+        "detail": "La description affirme que les voyelles sont « déduites ». Il ne faut pas en ajouter, la transcription doit rester fidèle au scan."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تصريف المضاعف في المضارع المنصوب",
+      "body": "",
+      "figureDesc": "Titre de la page.",
+      "answer": null
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "المضارع المنصوب هو ما دخلت عليه أدوات النصب\nأن: أريد أن أسافر\nكي لكي: ألعب كي أربح\nلن: لن ينجح هذه المرة\nلام التعليل: أتيت إلى المدرسة لأتعلم\nحتى: أعمل بجد حتى أفوز بالمرتبة الأولى",
+      "figureDesc": "Tableau à deux colonnes : à droite les particules du nasb (أن، كي لكي، لن، لام التعليل، حتى), à gauche un exemple pour chacune.",
+      "answer": null
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "الضمائر | الأفعال | حل | اعتد | استمد\nالمتكلم | أنا | لن أحل | لن اعتد | لن أستمد\nالمتكلم | نحن | لن تحلي | لن نعتد | لن نستمد\nالمخاطب | أنت | لن تحل | لن تعتد | لن تستمد\nالمخاطب | أنت | لن تحلي | لن تعتدي | لن تستمدي\nالمخاطب | أنتما | لن تحلا | لن تعتدا | لن تستمدا\nالمخاطب | أنتم | لن تحلوا | لن تعتدوا | لن تستمدوا\nالمخاطب | أنتن | لن تحللن | لن تعتددن | لن تستمددن\nالغائب | هو | لن يحل | لن يعتد | لن يستمد\nالغائب | هي | لن تحل | لن تعتد | لن تستمد\nالغائب | هما | لن يحلا | لن يعتدا | لن يستمدا\nالغائب | هما | لن تحلا | لن تعتدا | لن تستمدا\nالغائب | هم | لن يحلوا | لن يعتدوا | لن يستمدوا\nالغائب | هن | لن يحللن | لن يعتددن | لن يستمددن",
+      "figureDesc": "Grand tableau de conjugaison à colonnes الضمائر، الأفعال، حل، اعتد، استمد. Les cellules fusionnées المتكلم (أنا، نحن), المخاطب (أنت، أنت، أنتما، أنتم، أنتن) et الغائب (هو، هي، هما، هما، هم، هن) occupent la dernière colonne. Aucune voyelle sur le scan.",
+      "answer": null
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "يحافظ الفعل على إدغامه في المضارع المنصوب مع جميع الضمائر إلا مع أنتن و هن فيفك الإدغام\nعلامة الإعراب في الأفعال المضاعفة المنصوبة هي الفتحة مع الضمائر أنا، نحن، أنت، هو، هي، و حذف النون مع الضمائر أنت، أنتما، أنتم، هما للمذكر، هما للمؤنث، هم\nلا تتغير علامة الإعراب في الفعل المضاعف المسند إلى نون النسوة هن أنتن",
+      "figureDesc": "Encadré de conclusions.",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.93,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "المضارع المنصوب هو ما دخلت عليه أدوات النصب\nأن: أريد أن أسافر\nكي، لكي: ألعب كي أربح\nلن: لن ينجح هذه المرة\nلام التعليل: أتيت إلى المدرسة لأتعلم\nحتى: أعمل بجد حتى أفوز بالمرتبة الأولى",
+      "figureDesc": "Tableau à deux colonnes : à droite les particules du nasb (أن، كي/لكي، لن، لام التعليل، حتى), à gauche un exemple pour chacune.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "cahier_grammaire_6eme_p008_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "الأفعال: حلّ، اعتدّ، استمدّ (مع لن)\nالمتكلم:\nأنا: لن أحلَّ / لن أعتدَّ / لن أستمدَّ\nنحن: لن نحلّي / لن نعتدّ / لن نستمدّ\nالمخاطب:\nأنتَ: لن تحلَّ / لن تعتدَّ / لن تستمدَّ\nأنتِ: لن تحلّي / لن تعتدّي / لن تستمدّي\nأنتما: لن تحلا / لن تعتدا / لن تستمدا\nأنتم: لن تحلوا / لن تعتدوا / لن تستمدوا\nأنتنّ: لن تحللن / لن تعتددن / لن تستمددن\nالغائب:\nهو: لن يحلّ / لن يعتدّ / لن يستمدّ\nهي: لن تحلّ / لن تعتدّ / لن تستمدّ\nهما (مذكر): لن يحلا / لن يعتدا / لن يستمدا\nهما (مؤنث): لن تحلا / لن تعتدا / لن تستمدا\nهم: لن يحلوا / لن يعتدوا / لن يستمدوا\nهنّ: لن يحللن / لن يعتددن / لن يستمددن",
+      "figureDesc": "Grand tableau de conjugaison : colonnes الضمائر، الأفعال، حل، اعتد، استمد ; lignes groupées en المتكلم، المخاطب، الغائب, avec « لن » + verbe mudhaʿʿaf. Le texte est recopié sans tashkeel, car il est absent sur le scan ; les voyelles ci-dessus sont déduites.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "cahier_grammaire_6eme_p008_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "يحافظ الفعل على إدغامه في المضارع المنصوب مع جميع الضمائر إلا مع أنتنّ و هنّ فيفك الإدغام.\nعلامة الإعراب في الأفعال المضاعفة المنصوبة هي الفتحة مع الضمائر: أنا، نحن، أنت، هو، هي، و حذف النون مع الضمائر أنتِ، أنتما، أنتم، هما للمذكر، هما للمؤنث، هم.\nلا تتغير علامة الإعراب في الفعل المضاعف المسند إلى نون النسوة: هنّ، أنتنّ.",
+      "figureDesc": "Encadré de conclusions.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "cahier_grammaire_6eme_p008_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

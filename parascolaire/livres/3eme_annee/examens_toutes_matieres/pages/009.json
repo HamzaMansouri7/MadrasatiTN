@@ -1,0 +1,159 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 9,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار فهم المقروء (قصة الشاب والقردان وقرط الموز) وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "ب",
+      "instruction": "أَيْنَ كَانَ الشَّابُّ لَمَّا تَفَطَّنَ إِلَى مَا وَقَعَ لِمَوْزِهِ ؟",
+      "body": "الْجَوَابُ : ..............................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p009_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "ج",
+      "instruction": "مَاذَا فَعَلَ الْقِرْدَانِ بِالْمَوْزِ ؟",
+      "body": "الْجَوَابُ : ..............................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p009_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُرَتِّبُ الْأَحْدَاثَ التَّالِيَةَ حَسَبَ تَعَاقُبِهَا فِي النَّصِّ.",
+      "body": "○ التَّفَطُّنُ إِلَى الْقِرْدَيْنِ.\n○ الصُّعُودُ إِلَى الْبَاخِرَةِ.\n○ شِرَاءُ قُرْطٍ مِنَ الْمَوْزِ.",
+      "figureDesc": "ثلاث دوائر فارغة لترقيم الأحداث؛ على الهامش خانات التنقيط ومعيار معـ2د",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p009_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَبْحَثُ فِي النَّصِّ عَنْ مَعْنًى لِكُلِّ عِبَارَةٍ مِمَّا يَلِي :",
+      "body": "• تَأْثِيرٌ كَبِيرٌ : ..............................\n• يَرْمِي أَحَدُهُمَا الآخَرَ : ..............................\n• أُشَاهِدُهَا : ..............................",
+      "figureDesc": "علامة مائية MOURAJAA.COM؛ معيار معـ2م",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p009_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6-أ",
+      "instruction": "مَا هُوَ الشُّعُورُ الَّذِي انْتَابَ الشَّابَّ عِنْدَ وُصُولِهِ إِلَى وَطَنِهِ ؟",
+      "body": "الْجَوَابُ : ..............................................",
+      "figureDesc": "معيار معـ2هـ",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p009_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6-ب",
+      "instruction": "مَا سَبَبُ ذَلِكَ ؟",
+      "body": "الْجَوَابُ : ..............................................\nالْقَرِينَةُ : « .............................................. »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examens_toutes_matieres_p009_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "فَلَوْ كُنْتَ مَكَانَهُ فَمَاذَا سَتَفْعَلُ ؟",
+      "body": "بَقِيَ الشَّابُّ فِي حَيْرَةٍ مِنْ أَمْرِهِ يُفَكِّرُ فِي مَا سَيُهْدِيهِ لِأَفْرَادِ أُسْرَتِهِ.\n(أربعة أسطر للإجابة)",
+      "figureDesc": "أسطر منقطة للإجابة؛ معيار معـ3",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examens_toutes_matieres_p009_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "معـ1 : الْقِرَاءَةُ الْجَهْرِيَّةُ : النُّطْقُ السَّلِيمُ : 2 نُقْطَتَانِ - الِاسْتِرْسَالُ : 2 نُقْطَتَانِ - الْأَدَاءُ الْمُنَغَّمُ : 2 نُقْطَتَانِ - الْمَجْمُوعُ : 6 نِقَاطٍ",
+      "figureDesc": "جدول: المعايير (معـ2أ، معـ2ب، معـ2ج، معـ2د، معـ2م، معـ2هـ، معـ3 للتميز) ومستويات التملك: انعدام التملك = 0 في كل الخانات؛ التملك دون الأدنى = 0,5 (معـ2أ، 2ب، 2ج، 2د، 2م)، 1 (معـ2هـ)، 0,5 / 1 / 1,5 (معـ3)؛ صف ثالث مقطوع: 2 (معـ2هـ)، 1 (معـ2م)، و3 / 2,5 / 2 في معـ3",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "examens_toutes_matieres_p009_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p1",
+    "confidence": 0.29
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Il s'agit d'un test de compréhension de l'écrit (récit du jeune homme et des singes) avec grille de notation, donc une évaluation générale mêlant ordre des événements, vocabulaire, justification par indice et opinion, sans unité unique clairement identifiable.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de l'écrit narratif",
+    "skill": "Comprendre un récit en repérant des informations, ordonnant les événements, trouvant des synonymes et justifiant par un indice du texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "récit",
+      "ordre des événements",
+      "synonymes",
+      "indice textuel",
+      "grille de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable de questions de compréhension (réponse courte, remise en ordre chronologique, recherche de synonymes, émotion + cause + indice du texte, extension 'à ta place que ferais-tu ?') et grille de notation de la lecture à voix haute (prononciation, fluidité, expressivité).",
+    "themeGroup": "Compréhension de l'écrit : le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

@@ -1,0 +1,275 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 20,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الدرس 10: أتعرّف في وحدات قيس الكتل: الطن والقنطار",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "10",
+      "instruction": "الدرس 10: أتعرف في وحدات قيس الكتل: الطن والقنطار",
+      "body": "",
+      "figureDesc": "Bandeau-titre décoratif avec le numéro 5 (السنة الخامسة) et un logo en médaillon à droite",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p020_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حَوِّلِ الْكُتَلَ وَأَكْمِلِ الْجَدْوَلَ:",
+      "body": "Tableau à 3 lignes (كغ / قنطار / طن) et 5 colonnes de valeurs. Lecture de droite à gauche après l'étiquette.\nLigne كغ : 3000 | ........ | ........ | 9000 | ........\nLigne قنطار : ........ | 250 | ........ | ........ | 480\nLigne طن : ........ | ........ | 16 | ........ | ........",
+      "figureDesc": "Tableau de conversion kg / quintal / tonne. Les cases vides ont des points de suspension à remplir.",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p020_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْمِلِ الْعَمَلِيَّاتِ التَّالِيَةَ:",
+      "body": "★ 2 ط + 25 ق = ................ كغ\n★ 86000 ق : 25 = ................ ق - ................ ط\n★ 8 ط و 75 ق − 13450 كغ = ................ كغ\n★ 4 ط + 300 كغ = ................ ق\n★ (6ط × 3) + 12000 كغ = ................ = ................ ط\n★ 129600 كغ : 36 = ............ كغ = ........... ق",
+      "figureDesc": "Opérations en deux colonnes séparées par une double ligne verticale : 3 opérations à droite, 3 à gauche.",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p020_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "إعتزمت بلدية ردم مستنقع في إحدى ضواحي المدينة فكلفت مقاولا للقيام بهذه المهمة.",
+      "body": "إستعمل المقاول في نقل المواد اللازمة شاحنتين الأولى تنقل 12 ط و 5 ق في كل سفرة والثانية تنقل 4 ط ونصفا في كل سفرة (السفرة : ذهاب دون اعتبار الإياب). إشتغلت الشاحنات 3 أيام دون [illisible] تقوم كل واحدة بـ 15 سفرة يوميا.\n• ماهي كتلة المواد التي تنقلها كل شاحنة خلال يوم واحد؟\n• ماهي كتلة المواد التي تنقلها كل شاحنة خلال 3 أيام؟",
+      "figureDesc": "Trois lignes pointillées pour la réponse après chaque question. Numéro de page 21 en bas de page.",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_evaluations_p020_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p4",
+    "confidence": 0.42
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite des unités de masse (tonne et quintal), avec conversions, opérations et problème sur les camions, ce qui correspond à la Période 4 (Division à 2 chiffres, masses et cercle/disque).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesure des masses : tonne et quintal",
+    "skill": "Convertir et calculer avec les unités de masse (kg, quintal, tonne) pour résoudre des opérations et un problème.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "masses",
+      "tonne",
+      "quintal",
+      "conversion",
+      "kilogramme",
+      "problème de transport"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : tableau de conversion kg/quintal/tonne, séries d'opérations à unités mixtes, et problème contextualisé où deux camions transportent des matériaux pour combler un marécage pour la municipalité.",
+    "themeGroup": "Mesures de masses et de capacités"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le titre [10] est transcrit sans voyelles alors que l'image montre un titre sans tashkeel complet. Acceptable, mais le numéro est écrit 'الدّرس 10' au lieu de 'الدرس 10' avec shadda visible."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ligne 2 de l'exercice 2: l'image indique '86000 ق : 25 = ........ ق - ........ ط' alors que la transcription donne la même chose, mais 86000 est suivi de ق, et il faut vérifier l'unité (ق = قنطار). Cela concorde, aucune erreur ici."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Description du tableau confuse et incohérente: 'colonne 4 depuis la droite, soit la 5e de gauche à droite en position 2'. Positions réelles: ligne كغ: 3000 (1re colonne après l'étiquette, à droite) et 9000 (5e depuis la droite, 2e depuis la gauche); ligne قنطار: 250 (3e depuis la droite) et 480 (6e, dernière à gauche); ligne طن: 16 (4e depuis la droite, 3e depuis la gauche)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "major",
+        "detail": "Le texte de l'exercice 3 et des questions a été entièrement voyellé (tashkeel ajouté) alors que l'image montre seulement des voyelles partielles. Exemples: 'المَوَادِّ' au lieu de 'الْمَوَادِّ', 'كُتْلَةُ' au lieu de 'كُتْلَةُ'. Voyelles inventées en grande partie."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les consignes des exercices 1 et 2 ont été voyellées différemment de l'image: 'حَوِّلِ الكُتَلَ' est donné comme 'حوّلِ الكُتَلَ', la forme de l'image est 'حَوِّلِ الْكُتَلَ'."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le texte 'إِعْتَزَمَتْ' et 'مُقَاوِلاً' est correct, mais 'الأُولَى' dans l'image est 'الأولى'; la transcription ajoute des voyelles non visibles."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de réponse en pointillés et les numéros de page (21) ne sont pas mentionnés."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.75,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 1 : le tableau compte 5 colonnes de valeurs (plus la colonne d'étiquettes), pas 6. La description des positions est incohérente. Positions réelles, de droite à gauche après l'étiquette : ligne كغ : 3000 (col. 1), vide (col. 2), vide (col. 3), 9000 (col. 4), vide (col. 5). Ligne قنطار : vide (col. 1), 250 (col. 2), vide (col. 3), vide (col. 4), 480 (col. 5). Ligne طن : vide (col. 1), vide (col. 2), 16 (col. 3), vide (col. 4), vide (col. 5)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 2, dernière ligne : la transcription ajoute un trou supplémentaire ('= ............ = ............ كغ = ... ق'). L'image montre seulement '129600 كغ : 36 = ........ كغ = ........ ق'."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'image donne 'الشاحنات' (« اشتغلت الشاحنات 3 أيام »), alors que la transcription écrit 'الشَّاحِنَتَانِ'. Le passage 'دون ... القطاع' est peu net dans le scan ; la transcription le normalise en 'دُونَ انْقِطَاعٍ'."
+      },
+      {
+        "type": "voyelle",
+        "severity": "major",
+        "detail": "Les exercices 2 et 3 (consignes, énoncé, questions) ont été entièrement voyellés, alors que le scan n'a que des voyelles partielles. Beaucoup de voyelles sont donc inventées (ex. 'الأُولَى' alors que l'image montre 'الأولى'). Dans l'exercice 1, la consigne est voyellée 'حوّلِ الكُتَلَ ... الجَدْوَلَ', alors que l'image montre 'حَوِّلِ الْكُتَلَ'. Dans le titre, les shaddas ajoutés ('الدّرس', 'الطنّ') sont douteux."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page (21) n'est pas mentionné. Les lignes de réponse pointillées sont seulement évoquées dans figureDesc."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "10",
+      "instruction": "الدرس 10: أتعرف في وحدات قيس الكتل: الطن والقنطار",
+      "body": "",
+      "figureDesc": "Bandeau-titre décoratif avec le numéro 5 (السنة الخامسة) et un logo en médaillon à droite",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p020_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حَوِّلِ الْكُتَلَ وَأَكْمِلِ الْجَدْوَلَ:",
+      "body": "Tableau à 3 lignes (كغ / قنطار / طن) et 5 colonnes de valeurs. Lecture de droite à gauche après l'étiquette.\nLigne كغ : 3000 | ........ | ........ | 9000 | ........\nLigne قنطار : ........ | 250 | ........ | ........ | 480\nLigne طن : ........ | ........ | 16 | ........ | ........",
+      "figureDesc": "Tableau de conversion kg / quintal / tonne. Les cases vides ont des points de suspension à remplir.",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p020_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْمِلِ الْعَمَلِيَّاتِ التَّالِيَةَ:",
+      "body": "★ 2 ط + 25 ق = ................ كغ\n★ 86000 ق : 25 = ................ ق - ................ ط\n★ 8 ط و 75 ق − 13450 كغ = ................ كغ\n★ 4 ط + 300 كغ = ................ ق\n★ (6ط × 3) + 12000 كغ = ................ = ................ ط\n★ 129600 كغ : 36 = ............ كغ = ........... ق",
+      "figureDesc": "Opérations en deux colonnes séparées par une double ligne verticale : 3 opérations à droite, 3 à gauche.",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p020_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "إعتزمت بلدية ردم مستنقع في إحدى ضواحي المدينة فكلفت مقاولا للقيام بهذه المهمة.",
+      "body": "إستعمل المقاول في نقل المواد اللازمة شاحنتين الأولى تنقل 12 ط و 5 ق في كل سفرة والثانية تنقل 4 ط ونصفا في كل سفرة (السفرة : ذهاب دون اعتبار الإياب). إشتغلت الشاحنات 3 أيام دون [illisible] تقوم كل واحدة بـ 15 سفرة يوميا.\n• ماهي كتلة المواد التي تنقلها كل شاحنة خلال يوم واحد؟\n• ماهي كتلة المواد التي تنقلها كل شاحنة خلال 3 أيام؟",
+      "figureDesc": "Trois lignes pointillées pour la réponse après chaque question. Numéro de page 21 en bas de page.",
+      "answer": null,
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_ahram_5eme_complet_p020_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "10",
+      "instruction": "الدّرس 10: أتعرّف في وحدات قيس الكتل: الطنّ والقنطار",
+      "body": "",
+      "figureDesc": "Bandeau-titre décoratif avec le numéro 5 (السنة الخامسة) et le logo Al Ahram",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_ahram_5eme_complet_p020_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حوّلِ الكُتَلَ وَأَكْمِلِ الجَدْوَلَ:",
+      "body": "Tableau à 3 lignes (كغ / قنطار / طن) et 6 colonnes de valeurs. Valeurs données, lues de droite à gauche après l'étiquette: ligne كغ: 3000 (colonne 1) et 9000 (colonne 4 depuis la droite, soit la 5e de gauche à droite en position 2); ligne قنطار: 250 (colonne 3 depuis la droite) et 480 (dernière colonne à gauche); ligne طن: 16 (colonne 3 depuis la gauche). Les autres cases sont à compléter (points de suspension).",
+      "figureDesc": "Tableau de conversion kg / quintal / tonne avec cases vides pointillées à remplir",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p020_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْمِلِ العَمَلِيَّاتِ التَّالِيَةَ:",
+      "body": "★ 2 ط + 25 ق = ................ كغ\n★ 86000 ق : 25 = ................ ق - ................ ط\n★ 8 ط و 75 ق − 13450 كغ = ................ كغ\n★ 4 ط + 300 كغ = ................ ق\n★ (6ط × 3) + 12000 كغ = ................ = ................ ط\n★ 129600 كغ : 36 = ............ = ............ كغ = ........... ق",
+      "figureDesc": "Opérations en deux colonnes séparées par une double ligne verticale",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p020_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "إِعْتَزَمَتْ بَلَدِيَّةٌ رَدْمَ مُسْتَنْقَعٍ فِي إِحْدَى ضَوَاحِي المَدِينَةِ فَكَلَّفَتْ مُقَاوِلاً لِلْقِيَامِ بِهَذِهِ المُهِمَّةِ.",
+      "body": "إِسْتَعْمَلَ المُقَاوِلُ فِي نَقْلِ المَوَادِّ اللَّازِمَةِ شَاحِنَتَيْنِ الأُولَى تَنْقُلُ 12 ط و 5 ق فِي كُلِّ سَفْرَةٍ وَالثَّانِيَةُ تَنْقُلُ 4 ط وَنِصْفًا فِي كُلِّ سَفْرَةٍ (السَّفْرَةُ: ذَهَابٌ دُونَ اعْتِبَارِ الإِيَابِ). إِشْتَغَلَتِ الشَّاحِنَتَانِ 3 أَيَّامٍ دُونَ انْقِطَاعٍ تَقُومُ كُلُّ وَاحِدَةٍ بِـ 15 سَفْرَةً يَوْمِيًّا.\n• مَا هِيَ كُتْلَةُ المَوَادِّ الَّتِي تَنْقُلُهَا كُلُّ شَاحِنَةٍ خِلَالَ يَوْمٍ وَاحِدٍ؟\n• مَا هِيَ كُتْلَةُ المَوَادِّ الَّتِي تَنْقُلُهَا كُلُّ شَاحِنَةٍ خِلَالَ 3 أَيَّامٍ؟",
+      "figureDesc": "Lignes pointillées pour écrire les réponses après chaque question",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p020_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.75
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

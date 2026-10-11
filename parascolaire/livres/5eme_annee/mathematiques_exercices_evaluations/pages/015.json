@@ -1,0 +1,103 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 15,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "حل المسائل الحسابية (مسائل نقدية: مدخول البائع، الربح، الشراء بالحاضر وبالتقسيط) – صفحة 16",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "مَاهُوَ مَدْخُولُ هَذَا الْبَائِعِ إِذَا بَاعَ كُلَّ بِضَاعَتِهِ ( سَمَكَهُ).",
+      "body": "سطران منقوطان لكتابة الإجابة (تتمة مسألة بائع السمك من الصفحة السابقة).",
+      "figureDesc": "سطور منقوطة فارغة للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p015_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اطْرَحْ سُؤَالاً يَتَناسَبُ مَعَ إِضَافَةِ هَذَا الْمُعْطَى إِلَى الْمَسْأَلَةِ ثُمَّ أَجِبْ عَلَيْهِ.",
+      "body": "- شَرَى الْبَائِعُ السَّمَكَ بِـ 748 د.",
+      "figureDesc": "ثلاثة سطور منقوطة فارغة للإجابة",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_evaluations_p015_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "هَلْ يُمْكِنُ لِهَذَا الْبَائِعِ أَنْ يَشْتَرِيَ الْكِسْوَةَ بِالْمَالِ الَّذِي رَبِحَهُ مِنْ بَيْعِ بِضَاعَتِهِ؟ عَلِّلْ إِجَابَتَكَ.",
+      "body": "- يُرِيدُ بَائِعُ السَّمَكِ شِرَاءَ كِسْوَةٍ جَدِيدَةٍ ثَمَنُهَا يُسَاوِي نِصْفَ ثَمَنِ السَّرْدِينِ وَالشَّلْبَةِ.",
+      "figureDesc": "ستة سطور منقوطة فارغة للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p015_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ابْحَثْ عَنِ الأَسْئِلَةِ الْمُسَاعِدَةِ عَلَى حَلِّ الْمَسْأَلَةِ ثُمَّ أَنْجِزْهَا. (أَنْجِزِ الْحَلَّ عَلَى كُرَّاسِ التَّمَارِينِ)",
+      "body": "أَرَادَ مُوَاطِنٌ شِرَاءَ دَرَّاجَةٍ نَارِيَّةٍ يَسْتَعْمِلُهَا ابْنُهُ فِي التَّنَقُّلِ بَيْنَ الْبَيْتِ وَالْجَامِعَةِ ثَمَنُهَا الأَصْلِيُّ 1156 د فَعَرَضَ عَلَيْهِ التَّاجِرُ خِيَارَيْنِ :\n* الْخِيَارُ الأَوَّلُ: شِرَاءُ الدَّرَّاجَةِ بِالْحَاضِرِ وَالتَّمَتُّعِ بِتَخْفِيضٍ قَدْرُهُ 60 د.\n* الْخِيَارُ الثَّانِي: شِرَاءُ الدَّرَّاجَةِ بِالتَّقْسِيطِ عَلَى أَنْ يَدْفَعَ رُبُعَ ثَمَنِهَا وَيَدْفَعَ الْبَاقِيَ عَلَى 6 أَقْسَاطٍ مُضَافًا إِلَى كُلِّ قِسْطٍ 5500 مي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p015_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.15
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est consacrée à la résolution de problèmes monétaires (revenu, bénéfice, achat au comptant ou à tempérament) qui relèvent des opérations sur les décimaux; aucun chapitre ne les traite explicitement, et la page pourrait aussi relever d'une synthèse (P6) ou de la période 3, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes monétaires : achat et vente",
+    "skill": "Résoudre des problèmes d'argent (revenu, bénéfice, achat comptant ou à tempérament) en s'appuyant sur des questions intermédiaires.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "problème arithmétique",
+      "revenu du vendeur",
+      "bénéfice",
+      "achat comptant",
+      "achat à tempérament",
+      "moitié du prix"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations de la vie courante (poissonnier, achat d'une moto) à enchaîner sur plusieurs pages, avec consignes variées : calculer, inventer la question qui correspond à une donnée ajoutée, justifier la faisabilité d'un achat, trouver soi-même les questions intermédiaires et comparer deux modes de paiement.",
+    "themeGroup": "Problèmes d'achat, vente et bénéfice"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

@@ -1,0 +1,159 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 68,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : les repas des Chinois et la vie des Lapons",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2 (suite)",
+      "instruction": "Le deuxième détail :",
+      "body": "Le deuxième détail : ……………………………………………………………………………………… (deux lignes de pointillés à compléter)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "francais_lire_et_sexprimer_p068_i1",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Que mange la famille pendant le repas ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p068_i2",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Cherche, dans le texte, les mots qui ont le même sens que :",
+      "body": "- De petits morceaux = ……………………\n- Très vite = ……………………\n- Une caisse = ……………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p068_i3",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Écris « vrai » ou « faux » :",
+      "body": "- La famille de ceChinois se compose de trois personnes.\n- Les Chinois mangent le riz avec une cuillère.\n- Miou-Li a une grande maison.\n- Les Chinois mangent leurs repas tranquillement.",
+      "figureDesc": "Quatre cases arrondies en pointillés à droite de chaque phrase pour écrire vrai ou faux.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p068_i4",
+      "topicId": "fr-6-m8",
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "À ton avis, pourquoi les Chinois terminent-ils leurs repas en quelques minutes ?",
+      "body": "Trois lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p068_i5",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Complète ce passage avec les mots du cadre :",
+      "body": "Cadre : manger et s'habiller - montagne - sympathiques - renne - traîneau familial\nLe ………………… est la seule richesse des familles lapones. Cet animal donne à son maître lait, viande, peau, laine ; tout ce qu'il faut pour ………………………… C'est aussi le renne qui tire le ………………………… des Lapons.\nLes Lapons sont petits. Ce sont des gens …………………………qui ont gardé leurs habitudes.\nAu printemps et en automne, les Lapons partent à la ………………………… avec leurs troupeaux. Mais les vieux et les enfants restent au village.",
+      "figureDesc": "Mots à utiliser encadrés dans un cadre arrondi.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p068_i6",
+      "topicId": "fr-6-m8",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m8",
+  "topicTitle": "Module 8 : Découvrir d'autres modes de vie",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.3
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une compréhension de lecture sur les repas des Chinois et la vie des Lapons, ce qui correspond au Module 8 « Découvrir d'autres modes de vie » (cultures du monde).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    125
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte documentaire",
+    "skill": "Comprendre un texte documentaire sur des modes de vie (repas chinois, Lapons) en relevant des informations, des synonymes et en justifiant son avis.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "Chinois",
+      "Lapons",
+      "synonymes",
+      "vrai ou faux",
+      "texte à trous"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement d'activités de compréhension autour de textes sur des cultures différentes : relevé d'informations, recherche de synonymes dans le texte, vrai/faux, question d'opinion justifiée et texte à compléter avec un cadre de mots.",
+    "themeGroup": "Textes documentaires"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de page non transcrit : « Lecture - Compréhension », « Sagesse », « 6ème année de base » ; pied de page (n° 67, « Lire et s'exprimer ») également absent."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 5 : les cases à remplir (pointillés) à droite de chaque affirmation ne sont pas signalées. « ceChinois » est conservé tel quel dans l'image, ce qui est correct."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le libellé « [2 (suite)] » est ajouté, et la ligne « Le deuxième détail » est répétée deux fois dans la transcription. Dans l'image, il y a une seule ligne « Le deuxième détail : » suivie d'une ligne de pointillés."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 6 : « terminent-ils » est correct, mais l'image affiche « terminent –ils » avec un tiret espacé ; différence négligeable. Le cadre de la question 7 est transcrit correctement."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

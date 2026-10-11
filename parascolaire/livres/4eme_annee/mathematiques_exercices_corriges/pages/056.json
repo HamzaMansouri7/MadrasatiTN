@@ -1,0 +1,164 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 56,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 14 : الأعداد من 10 000 إلى 99 999 (3) – تفكيك وتركيب – الضرب، خاصياته",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع العدد المناسب مكان النّقط:",
+      "body": ". + (10 x .) + (100 x .) + (1000 x .) + (10 000 x .) = 79 386\n. + (10 x .) + (1000 x .) = 45 701\n. + (. x 8) + (. x 13) = 13 806\n. + (100 x .) + (. x 4) + (. x 6) = 64 902",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p056_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ المثال ثم تتبّع نفس الطّريقة للبحث عن بقية الجذاءات :",
+      "body": "مثال : 2 574 = 1 638 + 936 = 11 x 234\n1638 = 7 x 234 ; 1170 = 5 x 234 ; 936 = 4 x 234\nالجذاءات المطلوبة: = 12 x 234 ; = 10 x 234 ; = 9 x 234 ; = 16 x 234",
+      "figureDesc": "Trois encadrés de produits donnés (1638 = 7x234, 1170 = 5x234, 936 = 4x234) puis quatre lignes de produits à compléter séparées par un trait vertical.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p056_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ المثال ثم تتبّع نفس الطّريقة لكتابة باقي الجذاءات :",
+      "body": "مثال : 270 = 10 x 27 = 10 x 9 x 3 = (5 x 9) x (2 x 3) = 45 x 6\n35 x 8 , 65 x 4 , 75 x 6 , 25 x 12",
+      "figureDesc": "Quatre produits dans des encadrés.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p056_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لاحظ المثال ثم أنجز متتبعا نفس الطّريقة :",
+      "body": "مثال : 195 = 5 - 200 = (1 x 5) - (5 x 40) = 5 x (1 - 40) = 5 x 39\n6 x 29 , 4 x 28 , 7 x 139 , 6 x 399",
+      "figureDesc": "Quatre produits dans des encadrés.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p056_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "لاحظ المثال ثم تتبّع بنفس الطّريقة :",
+      "body": "مثال : 594 = 54 + 540 = 54 + (10 x 54) = (1 + 10) x 54 = 11 x 54\n11 x 19 , 11 x 38 , 21 x 23 , 21 x 42",
+      "figureDesc": "Quatre produits dans des encadrés.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p056_i5",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "لاحظ المثال ثم أكتب الأعداد بالمثل :",
+      "body": "مثال : 10 x 10 x 10 x 65 = 65 000\n8 000 , 70 000 , 1 500 , 12 500",
+      "figureDesc": "Quatre nombres dans des encadrés. Numéro de page 52 en bas.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p056_i6",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-4-m6",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la décomposition de nombres à 5 chiffres et surtout de la multiplication et de ses propriétés (distributivité, associativité, multiplication par 10, 100, 1000), ce qui correspond à la Période 2 (multiplication, distributivité), même si la décomposition des nombres à 5 chiffres relève aussi de la Période 1.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Grands nombres et propriétés de la multiplication",
+    "skill": "Décomposer et composer des nombres jusqu'à 99 999 et utiliser la distributivité et l'associativité pour calculer des produits.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "calcul"
+    ],
+    "keywords": [
+      "nombres jusqu'à 99 999",
+      "décomposition",
+      "multiplication",
+      "distributivité",
+      "calcul réfléchi",
+      "multiplication par 10, 100, 1000"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Chaque exercice part d'un exemple résolu à imiter (décomposer un produit en somme, factoriser une différence, regrouper les facteurs), ce qui se prête à la création de fiches de calcul réfléchi guidées par un modèle.",
+    "themeGroup": "Grands nombres"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 1, ligne 2: l'image montre « . + (10 x .) + (1000 x .) = 45 701 », ce qui correspond à la transcription ; en revanche la 1re ligne est correcte. Aucune erreur ici, mais la ligne 4 est à vérifier : « . + (100 x .) + (. x 4) + (. x 6) = 64 902 » est correcte."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercices 3, 4, 5 et 6: l'ordre des cases est inversé par rapport à la lecture de droite à gauche. Image (de gauche à droite) : 25x12, 75x6, 65x4, 35x8 ; la transcription donne 35x8, 65x4, 75x6, 25x12 (ordre RTL, acceptable)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 2: l'ajout de « الجذاءات المطلوبة: » n'existe pas dans l'image ; ce libellé est inventé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: « الجذاءات » correspond à « الجذاءات » de l'image (mot écrit avec un espace « الجذا ءات »), pas d'erreur réelle."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les signes visibles (shadda sur « النّقط », « تتبّع », « الطّريقة ») sont conservés ; la shadda de « تتبّع » dans l'exercice 2 est absente de l'image (« تتبع »), mais l'ajout est mineur."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« الأسبوع 14 », « الأعداد من 10 000 إلى 99 999 (3) », « تفكيك وتركيب - الضرب، خاصياته ») et le numéro de page 52 sont absents de la transcription."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

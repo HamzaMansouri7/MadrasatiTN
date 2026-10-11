@@ -1,0 +1,174 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 106,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الامتحان الموحد لنيل شهادة الدروس الابتدائية دورة يوليوز 2022 – المجال الرئيسي الأول: الأعداد والحساب (ملاحظة : la page est un sujet d'examen marocain, et non tunisien)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع وأنجز (6 ن)",
+      "body": "782,15 × 26 = ............ ; 4062,5 ÷ 325 = ... ; 1320 + (235,27 − 105,18) = .........",
+      "figureDesc": "Tableau de trois colonnes avec des lignes pointillées pour poser et effectuer une multiplication, une division et un calcul avec parenthèses.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p106_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب ما يلي: (2 ن)",
+      "body": "(3/4 + 5/2) × (6/3 − 3/4) = ...............",
+      "figureDesc": "Lignes pointillées pour écrire les étapes du calcul.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p106_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ضع وأنجز ما يلي: (2 ن)",
+      "body": "5h 49 min 37 s + 3h 55 min 49 s = ......",
+      "figureDesc": "Lignes pointillées pour poser l'addition.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p106_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-أ",
+      "instruction": "اكتب على شكل قوى 2 العدد الآتي: 16 (1 ن)",
+      "body": "16 = ...............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p106_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-ب",
+      "instruction": "اكتب على شكل قوى 3 العدد الآتي: 27 (1 ن)",
+      "body": "27 = ...............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p106_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "رتب تناقصيا هذه الأعداد باستعمال الرمز > (2 ن)",
+      "body": "50 ; 505/10 ; 55/10 ; 5,05 ; 55,55 ; 59",
+      "figureDesc": "Ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p106_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch1",
+    "confidence": 0.19
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un examen marocain de fin de primaire (juillet 2022) qui couvre plusieurs notions (opérations décimales, fractions, durées, puissances, rangement de nombres), donc une évaluation générale ne correspondant à aucun chapitre précis.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres et calculs : décimaux, fractions, puissances",
+    "skill": "Effectuer des opérations sur les décimaux, les fractions et les durées, écrire des puissances et ordonner des nombres.",
+    "pageType": "exam",
+    "formats": [
+      "calcul"
+    ],
+    "keywords": [
+      "opérations sur les décimaux",
+      "fractions",
+      "addition de durées",
+      "puissances",
+      "rangement de nombres"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Structure d'examen de fin de primaire avec exercices de calcul posé et barème, réutilisable comme modèle de progression (opérations, fractions, durées, puissances, ordre décroissant), mais les situations sont très classiques et sans contexte.",
+    "themeGroup": "Puissances"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête n'est pas transcrit : « الامتحان الموحد لنيل شهادة الدروس الابتدائية دورة يوليوز 2022 », « مادة الرياضيات », « مدة الإنجاز: ساعة ونصف », les champs nom, numéro d'examen, note /40."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre du domaine « المجال الرئيسي الأول: الأعداد والحساب (17ن) » est absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les numéros d'exercice 1, 2, 3, 5 sont absents du texte, seule la structure est indiquée."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : l'image porte « ضع وأنجز » ; « أحسب » à l'ex. 2 est bien lu. L'ex. 3 « ضع وأنجز ما يلي » est correct."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex. 5 : les fractions 505/10 et 55/10 sont lues correctement. Aucune erreur numérique détectée dans les calculs."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « ٨ » en bas de page et le filigrane www.escuila.info sont omis."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.96,
+    "verdict": "ok",
+    "confirmedErrors": []
+  },
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.96
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

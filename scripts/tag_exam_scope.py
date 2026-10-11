@@ -2,7 +2,7 @@
 import json, re, sys, collections
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_original_frozen/_archive')
+A = Path('parascolaire_frozen/_archive')
 FULL = re.compile(r"annuel|سنوي|certificat de fin|fin d.études|fin des études|concours|examen régional|examen regional|session de juin|نهاية المرحلة|شهادة ختم|مناظرة|اختبار نهاية السنة|نهاية السنة", re.I)
 SHORT = re.compile(r"تقويمي|مراقبة|devoir|contrôle|contrôle|évaluation|evaluation|تقييم|اختبار قصير|فرض", re.I)
 PART = re.compile(r"page \d+ sur \d+|المجال الرئيسي|فرض تأليفي|partie \d", re.I)

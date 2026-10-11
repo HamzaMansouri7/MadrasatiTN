@@ -1,0 +1,63 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 4,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إنتاج كتابي : التَّصَرُّفُ فِي عَنَاصِرِ الْجُمْلَةِ بِالتَّعْوِيضِ (الزَّمَانُ)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمَلِ وَأُغَيِّرُ الزَّمَانَ.",
+      "body": "1) بَعْدَ الْفُطُورِ، يُنَظِّفُ فَادِي أَسْنَانَهُ.\n2) فِي الصَّبَاحِ، سَرَّحَتْ فِرْدَوْسُ شَعْرَهَا.\n3) عِنْدَ الظُّهْرِ، وَدَّعَتْ فِرْدَوْسُ أُمَّهَا، وَذَهَبَتْ إِلَى الْمَدْرَسَةِ.",
+      "figureDesc": "ثلاث صور توضيحية: الأولى لطفل ينظف أسنانه بالفرشاة والمعجون، والثانية لبنت تسرح شعرها أمام المرآة، والثالثة لبنت تودع أمها متجهة إلى المدرسة.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p004_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.75
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de production écrite en arabe (changer le temps des phrases), mais il s'agit d'une compétence grammaticale transversale qui ne correspond clairement à aucune unité officielle (celles-ci portent sur des lettres et des thèmes précis), même si le contexte d'hygiène et de famille (se laver les dents, Ferdaous et sa mère) évoque vaguement les unités 2 ou 3.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Transformation de phrases : changement de temps",
+    "skill": "Réécrire des phrases en changeant le temps des verbes (présent/passé) en respectant l'accord avec le sujet.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "conjugaison",
+      "changement de temps",
+      "réécriture de phrases",
+      "verbes arabes",
+      "production écrite"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Exercice de réécriture de phrases en changeant le temps, ancré dans la routine quotidienne d'enfants (repas, toilette, départ à l'école), adaptable à d'autres moments de la journée ou à d'autres personnages.",
+    "themeGroup": "Substitution et transformation de phrases"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

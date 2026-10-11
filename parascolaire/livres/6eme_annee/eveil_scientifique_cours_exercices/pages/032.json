@@ -1,0 +1,189 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 32,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La pollution de l'eau et le traitement des eaux usées (station d'épuration / station de traitement des eaux usées)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التعليمة : أُذْكُرْ بَعْضَ فَوَائِدِ مَحَطَّةِ التَّطْهِيرِ.",
+      "body": "السند : يُمَثِّلُ الرَّسْمُ مَحَطَّةً لِتَنْقِيَةِ المِيَاهِ المُسْتَعْمَلَةِ.",
+      "figureDesc": "Schéma d'une station d'épuration des eaux usées : la ville (immeubles et maisons) à gauche, canalisation avec dégrillage et dépôt de sable/déchets, bassins de décantation et de traitement (cuves rondes et bassins rectangulaires), flèches indiquant le sens de circulation de l'eau, camion évacuant les boues, et rejet de l'eau épurée dans la nature (cours d'eau et pelouse fleurie).",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p032_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَكْمِلِ الجَدْوَلَ :",
+      "body": "فِي الجَدْوَلِ التَّالِي ، يُؤَدِّي وُجُودُ الكَثِيرِ مِنْ شَيْءٍ، مَا إِلَى حُدُوثِ أَمْرٍ مَا فِي البَحْرِ.\nالجدول: العمود الأول «الكَثِيرُ مِنْ ....» ؛ العمود الثاني «يُؤَدِّي إِلَى (مَاذَا يَحْدُثُ فِي البَحْرِ) ....»\nالأسطر:\n1) النِّفَايَاتِ الصِّنَاعِيَّةِ الكيميائيَّةِ\n2) المِيَاهُ المُسْتَعْمَلَةُ\n3) طَرْحُ مُنْتُوجَاتٍ بِتْرُولِيَّةٍ كَالبنزين وزيوت المحركات والبترول الخام ....\n4) إهمال النَّاس",
+      "figureDesc": "Tableau à deux colonnes : à droite les causes (déchets industriels chimiques, eaux usées, rejet de produits pétroliers comme l'essence, huiles de moteurs et pétrole brut, négligence des gens) ; la colonne de gauche (conséquence dans la mer) est vide, à compléter.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p032_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u4",
+  "topicTitle": "Unité 4 : Reproduction florale et protection des milieux aquatiques",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u4",
+    "confidence": 0.32
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page, rédigée en arabe, porte sur la station d'épuration et sur les effets de la pollution (déchets industriels, eaux usées, rejets pétroliers) sur le milieu marin, ce qui correspond à la protection des milieux aquatiques de l'Unité 4 d'Éveil Scientifique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Pollution de l'eau et épuration",
+    "skill": "Identifier les rôles d'une station d'épuration et relier des polluants à leurs effets sur le milieu marin.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "pollution de l'eau",
+      "station d'épuration",
+      "eaux usées",
+      "milieu marin",
+      "déchets industriels"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : exploiter le schéma d'une station d'épuration pour faire énoncer ses bénéfices, et un tableau cause-conséquence reliant chaque polluant (déchets industriels, etc.) à son effet sur la mer.",
+    "themeGroup": "L'eau et sa pollution"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 5 : dans l'image, السند apparaît avant التعليمة ; la transcription met التعليمة d'abord (le séparateur || rétablit en partie l'ordre)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 6 : la phrase « فِي الجَدْوَلِ التَّالِي… » précède « أَكْمِلِ الجَدْوَلَ » dans l'image ; la transcription les inverse."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« النِّفَايَاتِ » : l'image montre « النَّفَايَاتِ » avec fatha sur le nون et le mot est au nominatif (النَّفَايَاتُ/النفايات), pas de kasra."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الكِيمِيَائِيَّةِ » : l'image montre « الكيميائيّة » ; la graphie est « الكِيمِيَائِيَّةِ » dans la transcription mais l'image porte « الكيميائية » avec shadda/voyelles différentes (النَّفَايَاتُ الصِّنَاعِيَّةُ الكيميائيةُ)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« مُنْتُوجَاتٍ بِتْرُولِيَّةٍ » : l'image montre « مَنْتُوجَات » (فتحة sur le ميم) ; « طَرْحُ » est « طَرْحُ » ok."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Ligne 3 : la transcription fusionne « طرح منتوجات بترولية كالبنزين » et « وزيوت المحركات والبترول الخام .... » en une seule ligne ; dans l'image ce sont deux lignes/cellules distinctes, et « وَزُيُوتِ المُحَرِّكَاتِ وَالبِتْرُولِ » n'a pas de tashkeel visible (il est écrit sans voyelles)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Des voyelles ont été ajoutées à des mots non voyellés dans l'image (المحركات، البترول، الخام، إهمال الناس, النفايات)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Des voyelles ont été ajoutées à des mots que l'image écrit sans tashkeel : « السند » (écrit « السَّنَدُ » dans la transcription), « البنزين » (écrit « البَنْزِينِ »), « المحركات », « البترول », « الخام » (écrit « المُحَرِّكَاتِ », « البِتْرُولِ », « الخَامِ »). Dans l'image, « وزيوت المحركات والبترول الخام .... » est quasiment sans voyelles."
+      },
+      {
+        "type": "ponctuation",
+        "severity": "minor",
+        "detail": "Exercice 6 : l'image porte une virgule après « شَيْءٍ » (« …مِنْ شَيْءٍ، مَا إِلَى حُدُوثِ… ») ; la transcription l'a omise."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Ligne 1 du tableau : la graphie « الكِيمِيَائِيَّةِ » est surchargée en voyelles. L'image montre « الكيميائية » avec seulement la shadda et peu de voyelles."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التعليمة : أُذْكُرْ بَعْضَ فَوَائِدِ مَحَطَّةِ التَّطْهِيرِ.",
+      "body": "السند : يُمَثِّلُ الرَّسْمُ مَحَطَّةً لِتَنْقِيَةِ المِيَاهِ المُسْتَعْمَلَةِ.",
+      "figureDesc": "Schéma d'une station d'épuration des eaux usées : la ville (immeubles et maisons) à gauche, canalisation avec dégrillage et dépôt de sable/déchets, bassins de décantation et de traitement (cuves rondes et bassins rectangulaires), flèches indiquant le sens de circulation de l'eau, camion évacuant les boues, et rejet de l'eau épurée dans la nature (cours d'eau et pelouse fleurie).",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p032_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَكْمِلِ الجَدْوَلَ :",
+      "body": "فِي الجَدْوَلِ التَّالِي ، يُؤَدِّي وُجُودُ الكَثِيرِ مِنْ شَيْءٍ، مَا إِلَى حُدُوثِ أَمْرٍ مَا فِي البَحْرِ.\nالجدول: العمود الأول «الكَثِيرُ مِنْ ....» ؛ العمود الثاني «يُؤَدِّي إِلَى (مَاذَا يَحْدُثُ فِي البَحْرِ) ....»\nالأسطر:\n1) النِّفَايَاتِ الصِّنَاعِيَّةِ الكيميائيَّةِ\n2) المِيَاهُ المُسْتَعْمَلَةُ\n3) طَرْحُ مُنْتُوجَاتٍ بِتْرُولِيَّةٍ كَالبنزين وزيوت المحركات والبترول الخام ....\n4) إهمال النَّاس",
+      "figureDesc": "Tableau à deux colonnes : à droite les causes (déchets industriels chimiques, eaux usées, rejet de produits pétroliers comme l'essence, huiles de moteurs et pétrole brut, négligence des gens) ; la colonne de gauche (conséquence dans la mer) est vide, à compléter.",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p032_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التعليمة : أُذْكُرْ بَعْضَ فَوَائِدِ مَحَطَّةِ التَّطْهِيرِ.",
+      "body": "السَّنَدُ : يُمَثِّلُ الرَّسْمُ مَحَطَّةً لِتَنْقِيَةِ المِيَاهِ المُسْتَعْمَلَةِ.",
+      "figureDesc": "Schéma d'une station d'épuration des eaux usées : la ville (immeubles et maisons) à gauche, canalisation avec dégrillage et dépôt de sable/déchets, bassins de décantation et de traitement (cuves rondes et bassins rectangulaires), flèches indiquant le sens de circulation de l'eau, camion évacuant les boues, et rejet de l'eau épurée dans la nature (cours d'eau et pelouse fleurie).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p032_i1",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أَكْمِلِ الجَدْوَلَ :",
+      "body": "فِي الجَدْوَلِ التَّالِي ، يُؤَدِّي وُجُودُ الكَثِيرِ مِنْ شَيْءٍ مَا إِلَى حُدُوثِ أَمْرٍ مَا فِي البَحْرِ.\nالجدول: العمود الأول «الكَثِيرُ مِنْ ....» ؛ العمود الثاني «يُؤَدِّي إِلَى (مَاذَا يَحْدُثُ فِي البَحْرِ) ....»\nالأسطر:\n1) النِّفَايَاتِ الصِّنَاعِيَّةِ الكِيمِيَائِيَّةِ\n2) المِيَاهُ المُسْتَعْمَلَةُ\n3) طَرْحُ مُنْتُوجَاتٍ بِتْرُولِيَّةٍ كَالْبَنْزِينِ وَزُيُوتِ المُحَرِّكَاتِ وَالبِتْرُولِ الخَامِ ....\n4) إِهْمَالُ النَّاسِ",
+      "figureDesc": "Tableau à deux colonnes : à droite les causes (déchets industriels chimiques, eaux usées, rejet de produits pétroliers comme l'essence, huiles de moteurs et pétrole brut, négligence des gens) ; la colonne de gauche (conséquence dans la mer) est vide, à compléter.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "al_mounir_eveil_scientifique_6eme_p032_i2",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

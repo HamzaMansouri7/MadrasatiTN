@@ -1,0 +1,351 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 59,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مسائل حسابية: الأعداد العشرية (تقاسم المصاريف) وحساب المدة الزمنية (الساعة والدقيقة والثانية) - السندان 4 و5",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْمِلْ بِـمَا يُنَاسِبُ:",
+      "body": "............................................ - 5 س و 37 ث = 12 س و 15 دق.\n14 س و 18 دق - ............................................ = 4 س و 49 دق و 20 ث.",
+      "figureDesc": null,
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p059_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium",
+      "confidence": 0.95
+    },
+    {
+      "kind": "exercise",
+      "number": "السّند 4",
+      "instruction": "كَمْ دَفَعَ كُلُّ مُشَارِكٍ فِي هَذِهِ الرِّحْلَةِ؟",
+      "body": "نَظَّمَتْ شَرِكَةٌ لِفَائِدَةِ عُمَّالِهَا رِحْلَةً إِلَى الْجَنُوبِ التُّونِسِيِّ، فَاكْتَرَتْ حَافِلَةً بِـ 493,500 د.\nسَاهَمَتِ الشَّرِكَةُ فِي مَعْلُومِ النَّقْلِ بِـ 145,500 د وَدَفَعَ الْعُمَّالُ الْمُشَارِكُونَ فِي الرِّحْلَةِ بَقِيَّةَ الْمَبْلَغِ وَعَدَدُهُمْ 29.",
+      "figureDesc": null,
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p059_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium",
+      "confidence": 0.95
+    },
+    {
+      "kind": "exercise",
+      "number": "السّند 5 - التعليمة 5-1",
+      "instruction": "مَاهِيَ سَاعَةُ انْطِلَاقِ الْحَافِلَةِ مِنْ قَابِسَ نَحْوَ دُوزَ؟",
+      "body": "انْطَلَقَتِ الْحَافِلَةُ مِنْ مَدِينَةِ الْمَهْدِيَّةِ عَلَى السَّاعَةِ 6 و 30 دق فَوَصَلَتْ إِلَى قَابِسَ بَعْدَ سَاعَتَيْنِ وَ 15 دق.\nبَعْدَ اسْتِرَاحَةٍ دَامَتْ 25 دق تَحَوَّلَتْ وِجْهَةُ الْحَافِلَةِ إِلَى دُوزَ فَوَصَلَتْ عَلَى السَّاعَةِ 12 و 45 دق مُسَجِّلَةً تَأَخُّرًا بِـ 35 دق.",
+      "figureDesc": null,
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p059_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.95
+    },
+    {
+      "kind": "exercise",
+      "number": "السّند 5 - التعليمة 5-2",
+      "instruction": "كَمْ دَامَتْ رِحْلَةُ الْحَافِلَةِ مِنْ قَابِسَ إِلَى دُوزَ؟",
+      "body": "",
+      "figureDesc": null,
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p059_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "confidence": 0.95
+    },
+    {
+      "kind": "exercise",
+      "number": "السّند 5 - التعليمة 5-3",
+      "instruction": "مَاهِيَ السَّاعَةُ الَّتِي كَانَ يَجِبُ أَنْ تَصِلَ فِيهَا الْحَافِلَةُ إِلَى دُوزَ؟",
+      "body": "",
+      "figureDesc": null,
+      "answer": null,
+      "id": "mathematiques_exercices_evaluations_p059_i5",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "confidence": 0.95
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.93
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page contient des problèmes sur les nombres décimaux (partage de frais en dinars) et des calculs de durées (heures, minutes, secondes), ce qui correspond à la Période 2 : nombres décimaux, addition/soustraction et temps.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes décimaux et durées",
+    "skill": "Résoudre des problèmes de partage de frais avec des nombres décimaux et calculer des durées et des horaires (heures, minutes, secondes).",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "partage des frais",
+      "durée",
+      "heures et minutes",
+      "soustraction de durées",
+      "horaire"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Deux situations concrètes réutilisables : une sortie en autocar avec partage équitable du coût de location entre participants, et un trajet en bus avec départ, arrêts et retard, où l'on retrouve l'heure de départ, la durée et l'heure d'arrivée prévue ; s'y ajoutent des soustractions de durées à compléter.",
+    "themeGroup": "Problèmes de synthèse et vie courante"
+  },
+  "audit": {
+    "accuracy": 0.72,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les deux premières lignes sont précédées de la consigne « أكمل (عملية طرح في الزمن) », absente de l'image : texte inventé. L'image ne montre que les icônes de document et les équations."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ligne 1 : l'image porte « 5 س و 37 ث = 12 س و 15 دق » ; la transcription la reprend telle quelle, mais « - 5 س و 37 ث » est précédé de points de suite à droite, d'où un ordre visuel inversé. À vérifier."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le SANAD 4 est mal structuré : le texte du سند (493,500 د, 145,500 د, 29...) est placé après la question 4-1, alors qu'il la précède dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Texte du السند 4 : « نظمت شركة لقاءات », « استأجرت », « دفع العمال » sont des reconstitutions hasardeuses d'un texte illisible, donc inventées."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "السند 5 : « مستغرقة ... 35 دق » ; l'image semble indiquer « 16 دق » ou un autre nombre illisible, pas 35. Chiffre inventé."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "السند 5 : « توقفت » et « انطلقت الحافلة من ... » sont des reconstitutions non vérifiables. L'image montre « بعد أن تحركت 25 دق ... تحولت وجهة الحافلة إلى دوز »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Les questions sont vocalisées dans la transcription mais « الرِّحْلَةِ » et « إِطْلَاقِ » diffèrent légèrement de l'image (« الـرِّحْلَةِ », « إِنْطِلَاقِ »). Dans l'image : « إِنْطِلَاقِ » et non « إِطْلَاقِ »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les barèmes (مع 1, مع 2, مع 5, مع 2) et le numéro de page 60 ne sont pas transcrits. De même, les lignes de réponse pointillées."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.55,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Les deux premières lignes reçoivent la consigne « أكمل (عملية طرح في الزمن). », qui n'apparaît pas dans l'image. Seules les équations à compléter sont visibles, chacune précédée d'une icône de document."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le texte du السند 4 (encadré coloré) précède la question 4-1 dans l'image. La transcription l'avait placé dans le body de la question, et la question était mêlée au numéro du support. Il faut deux items : le support, puis la question."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le texte du السند 4 est largement illisible (scan déformé). « نظمت شركة لقاءات », « رحلة إلى ... », « استأجرت » et « دفع العمال » sont des reconstitutions non vérifiables. Seuls « 493,500 د », « 145,500 د » et « 29 » sont lisibles. Le reste doit être [illisible]."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Dans le السند 5, le nombre final « 35 دق » n'est pas lisible avec certitude (peut-être un autre nombre, p. ex. 16). Il ne doit pas être affirmé ; il est remplacé par [illisible]."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Dans le السند 5, « انطلقت الحافلة من ... », « توقفت » et « تحركت » sont des reconstitutions non vérifiables. Sont lisibles : « على الساعة 6 و30 د », « ساعتين و15 دق », « 25 دق », « وجهة الحافلة إلى دوز », « الساعة 12 و45 دق » et « مستغرقة ». Le reste est [illisible]."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Question 5-1 : « إِطْلَاقِ » est à corriger en « إِنْطِلَاقِ » (mot de l'image)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les barèmes dans la marge (مع 1 ; مع 2 ; مع 1 et مع 5 ; مع 2 ; مع 2), le numéro de page 60 et le nombre de lignes pointillées de réponse n'étaient pas transcrits ou étaient mal décrits."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "........... - 5 س و 37 ث = 12 س و 15 دق.",
+      "figureDesc": "icône de document à droite de la ligne ; page 60",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "14 س و 18 دق - ........... = 4 س و 49 دق و 20 ث.",
+      "figureDesc": "icône de document à droite de la ligne ; barème en marge : مع 1",
+      "answer": null
+    },
+    {
+      "kind": "support",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "[illisible] ... بـ 493,500 د. [illisible] ... 145,500 د [illisible] ... 29 [illisible]",
+      "figureDesc": "encadré coloré dégradé en deux lignes, partiellement illisible, avec l'étiquette « السند 4 »",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 4 - التعليمة 1",
+      "instruction": "كَمْ دَفَعَ كُلُّ مُشارِكٍ فِي هَذِهِ الــرِّحْلَةِ؟",
+      "body": "",
+      "figureDesc": "étiquette « التعليمة 4-1 » ; trois lignes pointillées de réponse ; barème en marge : مع 2",
+      "answer": null
+    },
+    {
+      "kind": "support",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "[illisible] ... على الساعة 6 و30 د [illisible] ... ساعتين و15 دق [illisible] ... 25 دق [illisible] ... وجهة الحافلة إلى دوز [illisible] ... الساعة 12 و45 دق مستغرقة [illisible] ... [illisible] دق.",
+      "figureDesc": "encadré coloré dégradé en trois lignes, très dégradé, avec l'étiquette « السند 5 »",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 1",
+      "instruction": "مَاهِيَ سَاعَةُ إِنْطِلَاقِ الحَافِلَةِ مِنْ قَابِسَ نَحْوَ دُوزٍ؟",
+      "body": "",
+      "figureDesc": "étiquette « التعليمة 5-1 » ; deux lignes pointillées de réponse ; barèmes en marge : مع 1 et مع 5",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 2",
+      "instruction": "كَمْ دَامَتْ رِحْلَةُ الحَافِلَةِ مِنْ قَابِسَ إِلَى دُوزٍ؟",
+      "body": "",
+      "figureDesc": "étiquette « التعليمة 5-2 » ; deux lignes pointillées de réponse ; barème en marge : مع 2",
+      "answer": null
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 3",
+      "instruction": "مَاهِيَ السَّاعَةُ الَّتِي كَانَ يَجِبُ أَنْ تَصِلَ فِيهَا الحَافِلَةُ إِلَى دُوزٍ؟",
+      "body": "",
+      "figureDesc": "étiquette « التعليمة 5-3 » ; trois lignes pointillées de réponse ; barème en marge : مع 2",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.95,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أكمل (عملية طرح في الزمن).",
+      "body": "........... - 5 س و 37 ث = 12 س و 15 دق.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p059_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أكمل (عملية طرح في الزمن).",
+      "body": "14 س و 18 دق - ........... = 4 س و 49 دق و 20 ث.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_ahram_5eme_complet_p059_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 4",
+      "instruction": "كَمْ دَفَعَ كُلُّ مُشارِكٍ فِي هَذِهِ الــرِّحْلَةِ؟ (التعليمة 4-1)",
+      "body": "نص السند 4 (غير واضح بسبب تشوه المسح): نظمت شركة لقاءات رحلة إلى ... استأجرت حافلة بـ 493,500 د. ... 145,500 د ... دفع العمال ... وتقدّم 29 ...",
+      "figureDesc": "إطار نص ملوّن غير مقروء جزئيًا، وبعده ثلاثة أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.5,
+      "id": "al_ahram_5eme_complet_p059_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 1",
+      "instruction": "مَاهِيَ سَاعَةُ إِطْلَاقِ الحَافِلَةِ مِنْ قَابِسَ نَحْوَ دُوزٍ؟",
+      "body": "نص السند 5 (غير واضح جزئيًا): انطلقت الحافلة من ... على الساعة 6 و30 د ... توقفت ... ساعتين و15 دق ... بعد ذلك ... 25 دق ... تحركت وجهة الحافلة إلى دوز ووصلت على الساعة 12 و45 دق مستغرقة ... 35 دق.",
+      "figureDesc": "إطار نص ملوّن مشوّه، وسطران منقطان للإجابة",
+      "answer": null,
+      "confidence": 0.5,
+      "id": "al_ahram_5eme_complet_p059_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 2",
+      "instruction": "كَمْ دَامَتْ رِحْلَةُ الحَافِلَةِ مِنْ قَابِسَ إِلَى دُوزٍ؟",
+      "body": "",
+      "figureDesc": "سطران منقطان للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_ahram_5eme_complet_p059_i5",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 5 - التعليمة 3",
+      "instruction": "مَاهِيَ السَّاعَةُ الَّتِي كَانَ يَجِبُ أَنْ تَصِلَ فِيهَا الحَافِلَةُ إِلَى دُوزٍ؟",
+      "body": "",
+      "figureDesc": "ثلاثة أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_ahram_5eme_complet_p059_i6",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "linkStatus": "clean",
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

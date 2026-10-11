@@ -1,0 +1,113 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 12,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي : التّصرّف في عناصر الجملة بالتّعويض (الشّخصيّات)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمَلِ وَأُغَيِّرُ الشَّخْصِيَّةَ بِالشَّخْصِيَّةِ الْمَوْجُودَةِ بِالْمَشْهَدِ.",
+      "body": "فِي الصَّبَاحِ، أَخَذَتْ دَلَالُ مِحْفَظَتَهَا وَذَهَبَتْ إِلَى الْمَدْرَسَةِ.",
+      "figureDesc": "رسم لطفل (ولد) يحمل محفظة ويتجه نحو المدرسة.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p012_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمَلِ وَأُغَيِّرُ الشَّخْصِيَّةَ بِالشَّخْصِيَّةِ الْمَوْجُودَةِ بِالْمَشْهَدِ.",
+      "body": "وَصَلَ كَرِيمٌ إِلَى الْمَدْرَسَةِ، فَوَقَفَ يَتَرَقَّبُ أَصْدِقَاءَهُ.",
+      "figureDesc": "رسم لبنت تقف قرب باب المدرسة وتترقب، بينما يمر طفلان (ولد وبنت) يحملان محفظتيهما.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p012_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمَلِ وَأُغَيِّرُ الشَّخْصِيَّةَ بِالشَّخْصِيَّةِ الْمَوْجُودَةِ بِالْمَشْهَدِ.",
+      "body": "رَنَّ الْجَرَسُ، فَخَرَجَتْ رِحَابُ إِلَى السَّاحَةِ وَأَخَذَتْ تَلْعَبُ مَعَ أَصْدِقَائِهَا.",
+      "figureDesc": "رسم لساحة المدرسة والتلاميذ يلعبون ويمرحون.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p012_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.69
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de production écrite en arabe (remplacer le personnage dans des phrases sur la journée à l'école), mais elle ne correspond clairement à aucune unité précise : le thème de l'école évoque l'unité 1, sans que les lettres ou le vocabulaire ciblés le confirment, et les phrases narratives ne relèvent pas non plus de l'unité 8.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Substitution des personnages dans la phrase",
+    "skill": "Réécrire une phrase en remplaçant le personnage par celui figurant sur l'image du scène, en accordant verbes et pronoms.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "remplacement de personnage",
+      "accord du verbe",
+      "réécriture de phrases",
+      "scène illustrée",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : partir d'une scène illustrée de la vie scolaire (matin, arrivée, récréation) et faire réécrire une phrase modèle en changeant le personnage, ce qui oblige à ajuster le genre et le nombre des verbes et pronoms.",
+    "themeGroup": "Substitution et transformation de phrases"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres de la page ne sont pas transcrits : « الوحدة الثالثة : صحتي وسلامتي », « التصرف في عناصر الجملة بالتعويض (الشخصيات) », « اللغة العربية - إنتاج كتابي », « أتدرب وأوظف : »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans la phrase [2], le texte visible porte « وَصَلَ » et « فَوَقَفَ », ce qui correspond à la transcription. Aucune erreur de voyelle n'est détectée. Dans la phrase [3], le début « رَنَّ » est partiellement coupé sur l'image mais reste cohérent."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La consigne est répétée à l'identique devant chaque phrase [2] et [3]. Sur la page elle n'apparaît qu'une seule fois, en tête d'exercice. C'est une structuration acceptable, mais ce n'est pas fidèle à la mise en page."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

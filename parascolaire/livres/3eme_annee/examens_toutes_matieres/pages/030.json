@@ -1,0 +1,117 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 30,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الرياضيات: حل وضعيات مشكلة (الأعداد والقياس) – التعليمات 3 و4 و5 (السند 4 والسند 5: تحويل وحدات الطول)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : مَا هِيَ اللُّعَبُ الَّتِي يُمْكِنُ أَنْ يَشْتَرِيَهَا فَوْزِي بِالْمَبْلَغِ الَّذِي يَمْلِكُهُ، وَكَمْ يَبْقَى لَهُ فِي كُلِّ مَرَّةٍ ؟",
+      "body": "فضاء للإجابة: خمسة أسطر منقّطة. المعايير: مع1، مع2أ، مع2ب، مع2أ، مع2ب. الأسناد: 1 / 0,5 / 1 / 0,5 / 1",
+      "figureDesc": "أسطر منقطة للإجابة، مربعات التقييم على اليمين (مع1، مع2أ، مع2ب، مع2أ، مع2ب) وعلامات التنقيط على اليسار (1، 0,5، 1، 0,5، 1). علامة مائية MOURAJAA.COM",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p030_i1",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "السَّنَدُ 4",
+      "body": "صَرَفَتْ تَسْنِيمُ مِنَ الْمَبْلَغِ الَّذِي أَخَذَتْهُ مِنْ وَالِدِهَا وَبَقِيَ لَهَا 7320 مي. أَرَادَتِ الْبِنْتُ أَنْ تَشْتَرِيَ دُمْيَةً وَثَلَاثَةً بَالُونَاتٍ وَلَكِنَّ الْمَبْلَغَ الَّذِي كَانَ مَعَهَا، لَا يَكْفِي، فَزَادَهَا أَخُوهَا فَوْزِي نِصْفَ دِينَارٍ. سَلَّمَتِ الْبِنْتُ الْمَبْلَغَ الَّذِي تَحَصَّلَتْ عَلَيْهِ، فَأَرْجَعَ لَهَا التَّاجِرُ 150 مي .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p030_i2",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : أَخْتَارُ السُّؤَالَ الْمُنَاسِبَ لِحَلِّ الْوَضْعِيَّةِ بِوَضْعِ الْعَلَامَةِ (x) أَمَامَهُ، وَأُجِيبُ عَنْهُ.",
+      "body": "- مَا هُوَ ثَمَنُ الدُّمْيَةِ ؟\n- كَمْ تَمْلِكُ تَسْنِيمُ ؟\n- مَا هُوَ ثَمَنُ الدُّمْيَةِ وَالْبَالُونَاتِ ؟\nفضاء للإجابة: خمسة أسطر منقطة. المعيار: مع5. العلامات: 1,5 / 1,5 / 1",
+      "figureDesc": "ثلاثة مربعات للاختيار على اليمين، أسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p030_i3",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 5",
+      "instruction": "السَّنَدُ 5",
+      "body": "الْبَالُونَاتُ الَّتِي اشْتَرَتْهَا تَسْنِيمُ مَرْبُوطَةٌ بِخُيُوطٍ مُتَفَاوِتَةِ الطُّولِ. طُولُ الْخَيْطِ الْأَوَّلِ 1 م وَ5صم، وَطُولُ الْخَيْطِ الثَّانِي 125 صم، وَطُولُ الْخَيْطِ الثَّالِثِ 14 دسم.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "examens_toutes_matieres_p030_i4",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : أُحَوِّلُ أَطْوَالَ الْخُيُوطِ إِلَى الْوَحَدَاتِ الْمَطْلُوبَةِ.",
+      "body": "- 1م و5 صم = ............... صم\n- 125 صم = ............... م و ............... دسم و ............... صم.\n- 14 دسم = ............... صم (السطر الأخير مقطوع جزئيا)\nالمعيار: مع3. العلامات: 0,5 / 0,5 / 0,5",
+      "figureDesc": "مربعات التقييم على اليمين، الصفحة مقطوعة من الأسفل",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p030_i5",
+      "topicId": "math-3-p1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-3-p1",
+  "topicTitle": "Période 1 : Nombres à 4 chiffres, quadrillage et mètre/cm",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p4",
+    "confidence": 0.14
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation de résolution de problèmes avec sommes en millimes (nombres à 4 chiffres, ex. 7320 mi) et conversions m/dm/cm, ce qui correspond à la Période 1 (nombres jusqu'à 9999 et mesures en m/cm), même si elle comporte aussi une part de problèmes mêlant plusieurs notions.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes d'argent et conversions de longueurs",
+    "skill": "Résoudre une situation-problème sur les sommes d'argent (millimes) et convertir des unités de longueur (m, dm, cm).",
+    "pageType": "mixed",
+    "formats": [
+      "probleme",
+      "calcul",
+      "texte_a_trous",
+      "qcm"
+    ],
+    "keywords": [
+      "situation-problème",
+      "monnaie (millimes)",
+      "conversion de longueurs",
+      "achats de jouets",
+      "choix de la question pertinente"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation d'achat de jouets avec un budget qui s'accroît (don d'un frère), suivie du choix de la bonne question intermédiaire et d'un exercice de conversion m/dm/cm sur des fils de ballons, le tout évalué par critères avec barème.",
+    "themeGroup": "Mesures de longueur"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

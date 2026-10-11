@@ -1,0 +1,106 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 32,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Histoire (التاريخ) : الحضارة القبصية وتأسيس قرطاج. Cette page ne contient pas de contenu mathématique. Il s'agit d'une leçon d'histoire/éveil sur la civilisation capsienne et la fondation de Carthage.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "من خلال الحفريات التي وجدها الباحثون تبين أن الإنسان القبصي قد تطور سكنه وغذائه فأصبح يسكن الأكواخ ويطهو الحلزونيات كما يدجن الحيوانات يربيها بالمنزل فضلا عن مواصلة صيدها",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p032_i1",
+      "topicId": "hg-5-u1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "كان القبصيون يتعبدون بالمعابد ويدفنون فيها الموتى بالإضافة إلى دفنهم في الحوانيت وهي عبارة عن قبور محفورة في الصخر",
+      "figureDesc": "Photographie d'une tombe creusée dans le rocher, avec une entrée rectangulaire encadrée. Légende : حانوت يعود إلى الحضارة القبصيّة",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p032_i2",
+      "topicId": "hg-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "السّلّم الزّمني لتأسيس قرطاج",
+      "body": "Repères de la frise : 7000 ق.م و5000 ق.م (الحضارة القبصيّة، zone hachurée) ؛ 3000 ق.م (ظهور الكتابة) ؛ 814 ق.م (تأسيس قرطاج) ؛ 1 م (ميلاد المسيح) ؛ 2005 م.",
+      "figureDesc": "Frise chronologique horizontale graduée avec flèche vers la gauche. Zone hachurée entre 7000 et 5000 av. J.-C. pour la civilisation capsienne. Traits verticaux pour 3000 av. J.-C., 814 av. J.-C., l'an 1 et 2005.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p032_i3",
+      "topicId": "hg-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "قرطاج أو قرط حدشت عند الفينيقيين و تعني المدينة الجديدة أسسها الفينيقيون في نهاية القرن ... ق م وحسب الأسطورة أسستها أميرة فينيقية هي عليسة وذلك سنة ... ق م موقعها استراتيجي على خليج تونس المطل على مضيق صقلية يمكن من مراقبة السفن التجارية التي",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p032_i4",
+      "topicId": "hg-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "hg-5-u1",
+  "topicTitle": "Unité 1 : Histoire - Introduction et Tunisie antique",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-5-u3",
+    "confidence": 0.58
+  },
+  "topicSubject": "Histoire & Géographie",
+  "topicReason": "La page traite surtout de la civilisation capsienne (habitat, alimentation, sépultures) et d'une frise chronologique, ce qui relève de l'Unité 1, même si un paragraphe final aborde la fondation de Carthage (Unité 3).",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Histoire-Géographie",
+    "theme": "Civilisation capsienne et fondation de Carthage",
+    "skill": "Situer sur une frise chronologique la civilisation capsienne et la fondation de Carthage, et décrire le mode de vie des Capsiens.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "Capsiens",
+      "Carthage",
+      "frise chronologique",
+      "Élissa",
+      "Phéniciens",
+      "préhistoire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La frise chronologique avec zone hachurée et les dates à compléter (texte à trous) se réutilisent pour des exercices de repérage dans le temps ; le récit de la légende d'Élissa et la localisation stratégique de Carthage peuvent servir d'appui à une infographie ou à un quiz.",
+    "themeGroup": "Civilisation capsienne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Histoire-Géographie"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

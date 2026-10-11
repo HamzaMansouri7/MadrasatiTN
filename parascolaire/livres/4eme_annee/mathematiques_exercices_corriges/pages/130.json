@@ -1,0 +1,262 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 130,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigés des évaluations (اختبار تقويمي) pages 85 à 88 : mesure d'aire, division, problèmes, géométrie, opérations",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الصفحة 85 – اختبار تقويمي (السنة الرابعة)",
+      "body": "عدد تربيعات السّطح (أ) : 30\nعدد تربيعات السّطح (ب) : 30\nالسّطحان (أ) و (ب) لهما نفس قيس المساحة",
+      "figureDesc": "",
+      "answer": "30 ; 30 ; لهما نفس قيس المساحة",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p130_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 85 – مساحة السّطح (د) و (م) باعتبار التّربيعة وحدة",
+      "body": "مساحة السّطح (د) باعتبار التّربيعة ▩ وحدة هي : 33\nمساحة السّطح (م) باعتبار التّربيعة ▩ وحدة هي : 36",
+      "figureDesc": "",
+      "answer": "33 ; 36",
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p130_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 86 – اختبار تقويمي : القسمة",
+      "body": "1658 ÷ 7\n1658 − 14 = 25 ; 25 − 21 = 048 ; 48 − 42 = 06",
+      "figureDesc": "عملية قسمة 1658 على 7 : خارج القسمة 236 والباقي 6",
+      "answer": "236 والباقي 6",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p130_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "كمية الزيت المتبقية بالدسل",
+      "body": "500 − (8 × 40) = 180 = 18 ل",
+      "figureDesc": "",
+      "answer": "18 ل",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p130_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 86 – مسألة",
+      "body": "ثمن البيض بالمي : 70 × 30 = 2100\nثمن اللّحم بالمي : 6800 : 2 = 3400\nثمن البطاطا بالمي : 3 × 450 = 1350\nالمبلغ الذي كان عند أمين بالمي :\n10 000 = 100 − (1350 + 3250 + 3400 + 2100)\nثمن البيض بالمي : (240 : 4) × 30 = 1800\nالمبلغ التي كانت تظن أنه سيبقى مع ولدها بالمي :\n(2100 − 100) − 1800 = 200 أو (70 − 60) × 30 − 100 = 200",
+      "figureDesc": "",
+      "answer": "2100 ; 3400 ; 1350 ; 10 000 ; 1800 ; 200",
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_corriges_p130_i5",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 87 – هندسة",
+      "body": "مساحة السّطح (ص) باستعمال التّربيعة (أ) وحدة هي : 40\nمساحة السّطح (ص) باستعمال التّربيعة (ب) وحدة هي : 10",
+      "figureDesc": "",
+      "answer": "40 ; 10",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p130_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الصفحة 87",
+      "body": "مساحة الشّكل (أ) أكبر من 46 تربيعة وأصغر من 22 تربيعة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p130_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "الصفحة 87 – جدول قيس المساحة",
+      "body": "السّطح (أ) (ب) (ج)\nباستخدام (ص) : 32 ، 16 ، 24\nباستخدام (س) : 8 ، 4 (مكتوب بخط اليد) ، 6",
+      "figureDesc": "جدول بعمودين وثلاثة أسطر؛ بعض القيم مكتوبة بخط اليد",
+      "answer": "32 ; 16 ; 24 ; 8 ; 4 ; 6",
+      "confidence": 0.65,
+      "id": "mathematiques_exercices_corriges_p130_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 87",
+      "body": "قيس مساحة السّطح (أ) : 6\nقيس مساحة السّطح (ب) : 12",
+      "figureDesc": "",
+      "answer": "6 ; 12",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p130_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "الصفحة 88 – الاختبار التقويمي",
+      "body": "6 × (28 + 34) = 372\n8 × (23 − 49) = 208\n9 × 7 × 6 = 378",
+      "figureDesc": "",
+      "answer": "372 ; 208 ; 378",
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_corriges_p130_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الصفحة 88 – مخطط العمليات",
+      "body": "50 → (+ 50) → 100 ؛ 50 → (2 ×) → 100",
+      "figureDesc": "مخطط بمستطيلات 50 و 100 وبيضويين '+50' و '×2' وأسهم",
+      "answer": "100",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p130_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الصفحة 88 – جدول البضاعة",
+      "body": "نوع البضاعة / الكمية / الدخل الفردي بالمي / الثمن الجملي بالمي\nكؤوس : 12 ، 870 ، 10 440\nصحون : 24 ، 1 300 ، 31 200\nملاعق : 6 ، 950 ، 5 700\nقيمة المشتريات بالمي : 47 340\nالتّخفيض بالمي : 2 340\nالمبلغ المدفوع بالمي : 45 000",
+      "figureDesc": "جدول من أربعة أعمدة وثلاثة أسطر",
+      "answer": "47 340 ; 2 340 ; 45 000",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p130_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.51
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un corrigé d'évaluations (pages 85 à 88) qui mélange mesure d'aire, division euclidienne, problèmes sur la monnaie et géométrie, donc elle couvre plusieurs chapitres (surtout les périodes 3 et 4) sans correspondre clairement à un seul.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    89,
+    90,
+    91,
+    92
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesure d'aire et opérations",
+    "skill": "Mesurer et comparer des aires avec une unité de mesure, poser une division et résoudre des problèmes à plusieurs étapes.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "aire",
+      "unité d'aire",
+      "quadrillage",
+      "division",
+      "problème de budget",
+      "priorité des opérations"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : comparer des aires en comptant des carreaux avec différentes unités (tableau de conversion d'unité), et problème de courses en plusieurs étapes avec monnaie (millimes) et reste à calculer.",
+    "themeGroup": "Périmètre et aire"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "[4] p.85 : la transcription dit « مساحة السّطح (د) و (م) باعتبار التّربيعة وحدة », ligne d'en-tête inventée. L'image n'a que deux lignes séparées, une pour (د) et une pour (م)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« المبلغ التي كانت » : l'image porte bien « المبلغ التي », ce qui est correct. En revanche, « الدخل الفردي » est bien dans l'image."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Tableau p.87 : la valeur de (ب) avec (ص) est écrite à la main et ressemble à « 16 » (retouchée). C'est ambigu, mais 16 est probable. La valeur de (ب) avec (س) est « 4 » avec une annotation manuscrite (« 4 و نصف » ?), que la transcription simplifie en « 4 (مكتوب بخط اليد) »."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "[2] p.88 : le schéma montre 50 → (+50) → 100 et 50 → (2×) → 100. C'est correct, mais la transcription « 1658 − 14 = 25 » est une simplification de la division posée (1658 − 14 = 25, puis 21, 048, 42, 06). Le quotient 236 est correct."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions « القسمة », « مسألة », « جدول قيس المساحة », « مخطط العمليات » et « جدول البضاعة » sont des titres ajoutés. Ils ne figurent pas dans l'image."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les pages sont listées dans l'ordre 85, 86, 87, 88 sans tenir compte de la disposition de la page scannée. L'ordre de lecture RTL est cependant acceptable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'image, « 22 » est après « أصغر من » et « 46 » après « أكبر من ». La transcription est fidèle, mais l'énoncé est incohérent à l'origine."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel de « كؤوس » : l'image porte « كؤوس » sans voyelles. Les shadda sur « السّطح » et « التّربيعة » sont globalement conformes."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

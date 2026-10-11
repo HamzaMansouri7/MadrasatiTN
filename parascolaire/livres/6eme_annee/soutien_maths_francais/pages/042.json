@@ -1,0 +1,189 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 42,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Note : la page n'est pas tirée d'un manuel tunisien de mathématiques. C'est un corrigé (عناصر الإجابة) d'un examen marocain de النشاط العلمي (sciences) : air et combustion, transformations physiques et chimiques, système nerveux, mouvements volontaire et involontaire, hygiène de vie, chaîne alimentaire.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "عناصر الإجابة لامتحان مادة النشاط العلمي",
+      "body": "En-tête du corrigé : المملكة المغربية، وزارة التربية الوطنية والتعليم الأولي والرياضة. Champs : أكاديمية، المديرية الإقليمية، المؤسسة، السنة الدراسية، اسم ونسب المتعلم، رقم الامتحان، مدة الامتحان (دقيقة)، النقطة.",
+      "figureDesc": "Cadre d'en-tête avec emblème du Royaume du Maroc et texte en tifinagh",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p042_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمم ما يلي بما يناسب",
+      "body": "يتكون الهواء من عدة غازات، حيث يشكل ثنائي الآزوت ... ، و ثنائي الأكسجين ... ، وغازات أخرى.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "soutien_maths_francais_p042_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أجب بـ صحيح أو خطأ",
+      "body": "الهواء ضروري في عملية الاحتراق: صحيح\nخلال التحول الفيزيائي تتغير المادة من حيث تركيبها: خطأ\nخلال التحول الكيميائي، تظهر خواص جديدة: صحيح\nالحساسية الشعورية هي الشعور بإحساسات متعددة ومختلفة: صحيح",
+      "figureDesc": "",
+      "answer": "صحيح، خطأ، صحيح، صحيح",
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p042_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أذكر نوع التغير كيميائي أو فيزيائي في كل حالة مما يلي",
+      "body": "انصهار الجليد: فيزيائي\nصدأ الحديد: كيميائي\nتسوس الأسنان: كيميائي\nاحتراق الخشب: كيميائي",
+      "figureDesc": "",
+      "answer": "فيزيائي، كيميائي، كيميائي، كيميائي",
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p042_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أتمم بكتابة أسماء مكونات الجهاز العصبي للإنسان الوثيقة جانبه",
+      "body": "دماغ: مخ ، مخيخ ، بصلة سيسائية",
+      "figureDesc": "Schéma d'une coupe de la tête avec trois flèches vers le cerveau, le cervelet et le bulbe rachidien, accolade « دماغ »",
+      "answer": "مخ، مخيخ، بصلة سيسائية، والمجموع دماغ",
+      "confidence": 0.8,
+      "id": "soutien_maths_francais_p042_i5",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أكتب اسم التحركية أمام كل جملة مما يلي",
+      "body": "يريد عمر حمل قلم ليكتب، فيحمله بيده: التحركية الإرادية\nحرك سعيد رجله بسرعة بعدما وخزه أخوه بإبرة وهو نائم: تحركية اللاإرادية",
+      "figureDesc": "",
+      "answer": "التحركية الإرادية ؛ التحركية اللاإرادية",
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p042_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أتمم الخطاطة التالية للتحركية التي قام بها سعيد وهو نائم بعدما وخزه أخوه",
+      "body": "مهيج: إبرة ← الجلد (تستقبل الإهاجة) ← عصب حسي (ينقل السيالة الحسية) ← نخاع شوكي (مركز عصبي، يحلل السيالة) ← عصب حركي (ينقل السيالة الحركية) ← رجل (مستجيب حركي، يقوم بالحركة)",
+      "figureDesc": "Schéma fléché en cases : peau, nerf sensitif, moelle épinière, nerf moteur, jambe",
+      "answer": "الجلد، عصب حسي، نخاع شوكي، عصب حركي، رجل",
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p042_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "صنف ما يلي حسب الجدول",
+      "body": "أخطار على الجهاز العصبي: الضجيج المتواصل، التدخين، قلة النوم\nأمراض سوء التغذية: السمنة، الأنيميا، السكري",
+      "figureDesc": "Tableau à deux colonnes : أخطار على الجهاز العصبي et أمراض سوء التغذية",
+      "answer": "أخطار على الجهاز العصبي: الضجيج المتواصل، التدخين، قلة النوم. أمراض سوء التغذية: السمنة، الأنيميا، السكري",
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p042_i8",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "",
+      "body": "Trois images avec cadres vides à compléter, sans consigne visible.",
+      "figureDesc": "Trois photos : dunes de désert, forêt avec chemin, vagues de mer, chacune avec un cadre vide en dessous",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "soutien_maths_francais_p042_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أتمم ملء الخطاطة التالية لسلسلة غذائية من اختيارك",
+      "body": "نبات (منتج) ← فأر (مستهلك من الدرجة ...) ← ثعبان (مستهلك من الدرجة ...) ← نسر (مستهلك من الدرجة ...)\nيتم قبول أي سلسلة مناسبة",
+      "figureDesc": "Chaîne alimentaire à quatre cases reliées par des flèches noires",
+      "answer": "نبات ← فأر ← ثعبان ← نسر (toute chaîne appropriée est acceptée)",
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p042_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u6",
+    "confidence": 0.21
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est un corrigé d'examen marocain d'éveil scientifique couvrant plusieurs thèmes (air et combustion, transformations physiques et chimiques, système nerveux, hygiène de vie, alimentation) et ne correspond à aucun chapitre tunisien unique ; seule une petite partie concerne sci-6-u2.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    41
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Air, transformations et système nerveux",
+    "skill": "Distinguer transformations physiques et chimiques, identifier les composants du système nerveux et schématiser un acte réflexe.",
+    "pageType": "correction",
+    "formats": [
+      "texte_a_trous",
+      "vrai_faux",
+      "schema_tableau",
+      "appariement"
+    ],
+    "keywords": [
+      "air et combustion",
+      "transformation chimique",
+      "système nerveux",
+      "mouvement involontaire",
+      "chaîne alimentaire",
+      "hygiène de vie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Corrigé d'examen marocain avec une grande variété de formats courts (texte à trous, vrai/faux, classement, schéma fléché du trajet de l'influx nerveux, chaîne alimentaire libre) et des situations de la vie quotidienne (glace qui fond, rouille, piqûre pendant le sommeil) réutilisables pour composer des exercices d'évaluation.",
+    "themeGroup": "L'air et ses propriétés"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

@@ -1,0 +1,79 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 21,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التعبير الكتابي: إتمام فقرة بما يناسب وإنتاج نص مستعينًا بمشاهد مصورة (الصبي وزراعة حبة الفول)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُكْمِلُ بِمَا أَرَاهُ مُنَاسِبًا.",
+      "body": "• ظَهِيرَةَ يَوْمٍ مِنْ أَيَّامِ الدِّرَاسَةِ عَادَ ........................ وَدَخَلَ عَلَى أُمِّهِ فِي الْمَطْبَخِ فَوَجَدَهَا ........................\n• سَلَّمَ الصَّبِيُّ عَلَى أُمِّهِ وَطَلَبَ مِنْهَا إِعْطَاءَهُ حَبَّةَ فُولٍ.\n• سَأَلَتِ الْأُمُّ وَلَدَهَا مُسْتَفْسِرَةً : « ........................ »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p021_i1",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَتَأَمَّلُ الْمَشَاهِدَ وَأُنْتِجُ نَصًّا مُسْتَعِينًا بِمَا جَاءَ فِي التَّمَارِينِ السَّابِقَةِ مَعَ الْإِثْرَاءِ وَالتَّصَرُّفِ.",
+      "body": "أسطر فارغة للكتابة (حوالي 16 سطرًا) بجانب أربعة مشاهد. معايير التقييم الجانبية: الْمُلَاءَمَةُ (م‌ع 1 أ، م‌ع 1 ب)، سَلَامَةُ بِنَاءِ النَّصِّ (م‌ع 2)، التَّمَيُّزُ (م‌ع 3)، الْمَقْرُونِيَّةُ (م‌ع 4). يلي ذلك عنوان: جَدْوَلُ إِسْنَادِ الْأَعْدَادِ (مَعَايِيرُ الْحَدِّ الْأَدْنَى، التَّمَيُّزُ) – الجدول مقطوع.",
+      "figureDesc": "أربعة رسوم: 1) أمّ في المطبخ تحضّر الطعام وولدها بجانبها وفي فقاعة تفكيره حبّة فول؛ 2) الولد راكع في الحديقة يغرس حبّة في إناء قرب سياج خشبي؛ 3) شرفة منزل بها الولد خلف حاجز وإناء نبات صغير؛ 4) الولد مسرور ينظر إلى نبتة نبتت في الإناء.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "examens_toutes_matieres_p021_i2",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-3-u2",
+  "topicTitle": "Unité 2 : Actions et repères temporels",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u5",
+    "confidence": 0.19
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Page d'expression écrite en arabe (compléter un paragraphe et produire un récit à partir de quatre images, avec grille d'évaluation); la production narrative ordonnée d'événements (ظهيرة يوم...) se rapproche de l'unité 2 (repères temporels et ordre des événements), mais aucun chapitre ne correspond clairement, d'où la confiance faible.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite narrative illustrée",
+    "skill": "Compléter un paragraphe puis rédiger un récit cohérent à partir d'une série de quatre images, avec enrichissement et mise en forme.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "expression écrite",
+      "texte narratif",
+      "images séquentielles",
+      "paragraphe à compléter",
+      "grille d'évaluation",
+      "3ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression en deux temps : compléter d'abord un début de récit guidé (moment, lieu, état de la mère, dialogue), puis produire un texte complet à partir de quatre scènes illustrées d'une situation quotidienne (un enfant et la graine de fève), avec une grille critères d'évaluation (pertinence, cohérence, originalité, présentation) réutilisable.",
+    "themeGroup": "Production écrite : récit illustré"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

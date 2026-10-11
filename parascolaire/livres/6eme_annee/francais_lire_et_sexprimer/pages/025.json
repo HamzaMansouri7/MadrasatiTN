@@ -1,0 +1,102 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 25,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Mon copain bizarre",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Mon copain bizarre\nJe m'appelle Julien. L'an dernier à l'école, j'ai eu un copain formidable. Un copain unique au monde. Brice était orphelin.\nÀ l'école, les autres ne l'aimaient pas. Ils l'avaient surnommé « Brosse Bizarre », à cause de ses cheveux qui brillaient dans la lumière.\nIls disaient :\n-Hé ! Brosse Bizarre ! Éteins la lumière. Tu nous éblouis !\nC'est vrai qu'ils étaient plutôt biz... euh, étranges, les cheveux de Brice.\nJe n'avais jamais vu des cheveux comme ça.\nIls étaient aussi brillants que le papier d'aluminium qui entoure les tablettes de chocolat.\nTout le monde se moquait de lui, surtout les grands : Yannick, Jean-Raoul et leur bande. Moi, je ne les trouvais pas rigolos, ses cheveux.\nJe les trouvais même jolis. Il est arrivé en cours d'année, Brice. Dans la classe, j'ai été le seul qui n'a pas ri quand il est entré pour la première fois. C'est sûrement pour ça qu'il s'est assis dans le fond, juste à côté de moi. C'est un voisin tranquille.\nLe plus souvent, il regardait par la fenêtre les oiseaux qui volaient au-dessus des toits.\nPourtant, il avait toujours les meilleures notes.\nC'est incroyable comme il était intelligent !",
+      "figureDesc": "Texte encadré dans un cadre aux coins arrondis, avec en-tête « Lecture - Compréhension » (Sagesse, 6ème année de base).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p025_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Comment Brice est-il surnommé ?",
+      "body": "Comment Brice est-il surnommé ?\n(une ligne pointillée pour répondre)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p025_i2",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Pourquoi l'a-t-on surnommé ainsi ?",
+      "body": "Pourquoi l'a-t-on surnommé ainsi ?\n(deux lignes pointillées pour répondre)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p025_i3",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Les autres élèves se moquent de Brice. Relève deux détails qui le montrent :",
+      "body": "Les autres élèves se moquent de Brice. Relève deux détails qui le montrent :\n(deux lignes pointillées pour répondre)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p025_i4",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.37
+  },
+  "topicSubject": "Français",
+  "topicReason": "Le texte « Mon copain bizarre » raconte un enfant orphelin moqué par ses camarades à cause de son apparence, ce qui relève du thème de l'acceptation des autres (Module 3 : Accepter les autres), avec des questions de compréhension en lecture.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    121
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un texte narratif",
+    "skill": "Comprendre un récit en relevant des informations explicites dans le texte pour répondre à des questions sur un personnage.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "texte narratif",
+      "personnage",
+      "surnom",
+      "moquerie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un récit à la première personne sur un camarade différent et mis à l'écart, suivi de questions graduées (identifier, expliquer la cause, relever des indices), réutilisable pour travailler l'empathie, le rejet et la différence.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

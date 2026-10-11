@@ -1,0 +1,244 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 122,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Corrigés de compréhension de l'écrit : La poule et le moineau (1 et 2), Sauvé par sa mère, Nettoyons le jardin public, Le dentiste du village",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "La poule et le moineau (1) - 3",
+      "instruction": "Corrigé : le premier conseil du moineau",
+      "body": "Le premier conseil du moineau est le suivant : 'Qui sait voler peut aussi s'enfuir.' « -Oui, mais celui qui sait voler peut aussi s'enfuir, dit le moineau, plein de sagesse. »",
+      "figureDesc": "",
+      "answer": "Qui sait voler peut aussi s'enfuir.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p122_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "La poule et le moineau (1) - 4 à 6",
+      "instruction": "Corrigé des questions 4, 5 et 6",
+      "body": "4) La poule a peur car elle pense que le fermier armé d'un bâton va la tuer. 5) a- Terrorisée, la poule se cache dans le poulailler. Non. b- « -Oh ! Oh ! Se lamenta la poule en s'enfuyant, la tête basse, vers un buisson. » 6) a- Oui, la poule a compris, enfin, que le moineau a raison. b- « J'aurais mieux fait d'écouter les bons conseils du moineau... »",
+      "figureDesc": "",
+      "answer": "4) Elle pense que le fermier armé d'un bâton va la tuer. 5a) Non. 6a) Oui.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p122_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "La poule et le moineau (1) - 7 (production écrite)",
+      "instruction": "Corrigé : texte modèle sur le nettoyage du jardin de l'école",
+      "body": "Asma et Fatma ramassent les feuilles sèches dans un sac bien fermé. Tassnim arrose les plantes à l'aide d'un arrosoir. Nour et Alex écrivent des écriteaux pour inciter les élèves à respecter la terre : « Vive l'arbre » « L'arbre, c'est la joie de la terre » ... Les parents de Nadine arrachent les mauvaises herbes. Sans trop de peine, le travail est achevé. Le directeur était très ravi. Il est resté bouche bée en voyant le jardin très propre et magnifique à voir. Il dit : « Quel beau jardin ! Je suis fier de vous, vous avez fait un grand effort pour embellir notre école. Vous êtes adorables mes chers enfants. »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p122_i3",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "La poule et le moineau (2) - 1 à 6",
+      "instruction": "Corrigé des questions 1 à 6",
+      "body": "1) a- La poule a quitté son buisson avant le coucher du soleil. Non. b- «Bien que morte de faim, elle n'osait quitter son abri.» 2) a- Oui, la poule décide d'écouter les conseils du moineau. b- « Évidemment que je veux, dit la poule. Maintenant, j'ai bien compris que les moineaux donnent d'excellents conseils. » 3) Le deuxième conseil du moineau est le suivant : « Lorsque le fermier décide de te tuer, arrange-toi pour pondre un œuf. » 4) La poule pond un œuf chaque jour pour vivre très longtemps. 5) - La poule est restée toute la journée dans son abri. - La poule est terrorisée. - Les moineaux donnent d'excellents conseils. 6) Le moineau est un excellent conseiller.",
+      "figureDesc": "",
+      "answer": "1a) Non. 2a) Oui. 6) Le moineau est un excellent conseiller.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p122_i4",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "La poule et le moineau (2) - 7",
+      "instruction": "Que peut-on faire ?",
+      "body": "Ne jetez rien dans la mer, sur les plages, dans les espaces verts ; ni boîtes de conserves, ni bouteilles, ni sacs en plastique, ni pots de yaourt, mais ramassez-les dans un sac et jetez-les dans la poubelle parce que cela représente un danger pour nous et détruit la beauté de notre environnement. Puisque les plantes et les arbres purifient l'air, organisez alors des projets de plantations dans votre jardin ou dans votre quartier. Évitez d'arracher les arbres, de casser leurs branches et de couper les fleurs.",
+      "figureDesc": "Encadré de texte « Que peut-on faire ? »",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p122_i5",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "answer",
+      "number": "Sauvé par sa mère",
+      "instruction": "Corrigé des questions 1 à 7",
+      "body": "1) Léonard prend les chiots qui viennent de naître pour les noyer dans la rivière. 2) Non, l'ouvrier ne veut pas noyer les chiots. « Je voudrais bien les garder mais M. Julien m'a ordonné de les noyer. » 3) a- Le matin, Léonard fait noyer les chiots. Non. b- « Quand Léonard arrive, il vide son panier dans l'eau. Dans le noir, il ne voit pas qu'un des chiots s'est accroché à une branche... » 4) Non, Blanchette n'a pas sauvé tous ses chiots. « Elle aperçoit, de ses yeux brillants, un de ses petits qui vit encore ; elle plonge dans l'eau et le ramène sur la rive. » 5) La chienne n'est pas retournée à la grange parce qu'elle a peur du fermier. 6) Le fermier et l'ouvrier sont étonnés car ils découvrent que l'un des petits chiots est encore vivant. 7) - L'ouvrier fait noyer les chiots dans un bassin. Faux - Blanchette est restée emprisonnée dans la grange. Faux - La chienne ne peut pas nager. Faux - Le fermier est furieux. Faux",
+      "figureDesc": "",
+      "answer": "3a) Non. 7) Faux, Faux, Faux, Faux.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p122_i6",
+      "topicId": "fr-6-m5",
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "8",
+      "instruction": "Nettoyons le jardin public (texte à produire)",
+      "body": "Les enfants sont en train de nettoyer le jardin public. Ils commencent le travail avec beaucoup d'enthousiasme. D'abord, ils ramassent les cailloux et les ordures et les mettent dans une brouette. Ensuite, les petits garçons arrachent les mauvaises herbes qui envahissent le jardin. Enfin, ils se plaisent à arroser le jardin avec le tuyau.",
+      "figureDesc": "Encadré avec titre « Nettoyons le jardin public »",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p122_i7",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "answer",
+      "number": "Nettoyons le jardin public - 1 à 4",
+      "instruction": "Corrigé des questions 1 à 4",
+      "body": "1) Les amis font une promenade dans le jardin public. 2) a/ Les amis trouvent le jardin public sale. Il est en mauvais état. b/ « Ils se regardent tristement : « Quel malheur ! », les boîtes de conserves, les bouteilles vides, les sacs en plastique et les déchets sont jetés n'importe où, sur le gazon. Les arbres aussi font pitié : on a cassé leurs branches et on a arraché leurs fleurs et leurs fruits. Même le petit lac qui a été fait pour les canards est très sale. Les canards s'y baignent péniblement. » 3) a/ Les enfants décident de nettoyer le jardin public pour le rendre plus agréable. b/ « Tout d'abord, nous allons commencer à ramasser ces déchets. Ensuite, nous allons les entasser dans un coin. », propose Antoinette. « Enfin, nous mettrons ces ordures dans de gros sachets et nous les déposerons dans les poubelles », ajoute Paul. 4) a/ Les gamins ne parviennent pas à terminer leur travail. Oui. b/ « Le soir, ils se sentent essoufflés. Ils ne peuvent plus poursuivre le ménage. » c/ Ils poursuivront le ménage le lendemain. « Nous reviendrons demain avec tous nos camarades pour rendre ce jardin admirable et un bel endroit pour tout le monde », affirment les amis.",
+      "figureDesc": "",
+      "answer": "1) Les amis font une promenade dans le jardin public. 4a) Oui.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p122_i8",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Nettoyons le jardin public - 5 à 7",
+      "instruction": "Corrigé : synonymes, contraires, protection de la nature",
+      "body": "5) Les oiseaux gazouillent = Ils chantent. Ils sont essoufflés = Ils respirent difficilement. Les canards se baignent = Ils nagent. 6) Heureusement ≠ Tristement ; Plein ≠ Vide ; Polluer ≠ Nettoyer. 7) a- Pour protéger la nature, il faut : organiser des projets de plantation ; éviter d'arracher les fleurs et les arbres ; recycler les déchets... b- Nettoyons le jardin public.",
+      "figureDesc": "",
+      "answer": "6) Heureusement ≠ Tristement ; Plein ≠ Vide ; Polluer ≠ Nettoyer",
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p122_i9",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Le dentiste du village - 1 à 4",
+      "instruction": "Corrigé des questions 1 à 4",
+      "body": "1) - L'auteur ne veut pas aller chez le dentiste. - Un ami m'a dit que M. Sabre fait très mal aux malades. - La mère décide d'emmener l'enfant chez M. Sabre. 2) - L'enfant tend l'oreille pour écouter le bruit de la machine. Dans la salle d'attente. - M. Sabre me fait peur lorsque je le vois. L'école. - « Je vais t'emmener chez M. Sabre me dit ma mère ». La maison. 3) - Demain nous irons chez M. Sabre, dit la mère. - Mais laisse-moi regarder, dit le dentiste. - M. Sabre a une grande pince pour arracher les dents, dit un ami. 4) Je tends l'oreille : * Je ferme les oreilles pour ne pas entendre (barré) * J'ouvre bien les oreilles pour bien entendre. Son ventre est énorme : * son ventre est très grand. * son ventre est très petit (barré). Un fauteuil bizarre : * un fauteuil normal (barré) * un fauteuil anormal.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "francais_lire_et_sexprimer_p122_i10",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Le dentiste du village - 5 à 9",
+      "instruction": "Corrigé des questions 5 à 9",
+      "body": "5) « Il me fait très peur avec son énorme ventre, sa grosse tête sans cheveux et sa large moustache qui lui cache la moitié de la bouche et du nez. » 6) M. Sabre a arraché la dent de l'enfant sans lui faire de mal. Oui. « Et il me montre une dent au bout de la pince qu'il a cachée entre ses doigts. Et c'est fini, oui déjà fini ! Je n'ai rien senti. » 7) « À partir de ce jour M. Sabre ne me fait plus peur. » 8) Oui, M. Sabre est un bon dentiste. « -Comment tu ne veux pas ? Mais laisse-moi seulement regarder. Est-ce que j'ai quelque chose à la main ? Dès que j'ouvre la bouche, M. Sabre s'écrie : « La voilà ! » 9) Pour avoir des dents saines, il faut : se brosser les dents après chaque repas et surtout avant de dormir.",
+      "figureDesc": "",
+      "answer": "6) Oui. 8) Oui, M. Sabre est un bon dentiste.",
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p122_i11",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u5",
+    "confidence": 0.2
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page contient des corrigés de compréhension de l'écrit et de production écrite sur l'environnement (nettoyer le jardin public, ne pas jeter de déchets, protéger plantes et arbres), ce qui correspond au Module 5 « Sauver la nature ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : textes narratifs",
+    "skill": "Comprendre un texte narratif en répondant à des questions, en relevant des passages justificatifs et en rédigeant une courte production écrite.",
+    "pageType": "correction",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "corrigés",
+      "protection de la nature",
+      "synonymes et contraires",
+      "production écrite"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les corrigés montrent une structure type de questions (relever une phrase justificative, répondre par oui/non puis justifier, trouver synonymes et contraires) et des situations de production écrite autour de la protection de l'environnement (nettoyage du jardin, gestes écologiques), réutilisables pour créer des exercices originaux.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Q.7 'La poule et le moineau (2)': la transcription omet la mention 'Que peut-on faire ?' placée comme titre du cadre, ce qui est correct, mais l'image place ce cadre après Q.7 vide, donc le numéro '7)' est rattaché au cadre sans indication claire."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre 'Sauvé par sa mère' est utilisé comme étiquette, mais l'élément '7)' suivi du cadre n'est pas reproduit comme tel; de même le titre 'Nettoyons le jardin public :' en italique est absent du texte."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Q.4 'Le dentiste': les mots de localisation 'Dans la salle d'attente.', 'L'école.' et 'La maison.' sont présents, mais l'ordre/position (colonne de droite) est approximatif."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Q.5 Nettoyons: la transcription écrit 'Ils sont essoufflés = Ils respirent difficilement' sans les puces '•' et regroupe tout en une ligne; sans conséquence sur le contenu."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'M. Sabre' est écrit avec 'M.' alors que l'image montre 'M' ou 'M.' sans point à plusieurs endroits (ex. 'M Sabre')."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Q.5 Nettoyons: 'Les oiseaux gazouillent = Ils chantent' correct; en revanche 'Q.6' contient une erreur absente: ‘Heureusement ≠ Tristement’ correct d'après l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Q.9 Le dentiste: la dernière ligne est correcte, mais la liste peut continuer au-delà de la page (non visible)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

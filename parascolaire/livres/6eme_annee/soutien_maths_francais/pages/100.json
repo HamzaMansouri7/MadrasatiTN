@@ -1,0 +1,215 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 100,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Activités réflexives sur la langue (Lexique et Grammaire) – thème du numérique : synonymes, antonymes par suffixe, lexique thématique, CCL/CCT, pronominalisation COD/COI, phrase interrogative, comparatif, voix passive, discours indirect. Note : la page est un sujet d'examen de français et ne relève pas du manuel de mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "II",
+      "instruction": "Activités réflexives sur la langue (18 points)",
+      "body": "A. Lexique : (3 points)\nB. Grammaire : (6 points)",
+      "figureDesc": "En haut de la page, un cadre grisé en diagonale avec le texte arabe « لا يكتب أي شيء في هذا الإطار » (zone où il ne faut rien écrire).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p100_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "J'entoure le synonyme du mot proposé (1pt)",
+      "body": "Considérable : - heureux - important - rapide\nDétracteur : - dépréciateur - ingénieur - facilitateur",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p100_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "J'ajoute un suffixe pour former l'antonyme (0,5×2=1pt) :",
+      "body": "Considérable ≠ ................ // Attention ≠ ................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p100_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "Je barre les mots ne se rapportant au lexique thématique du numérique (0,25×4=1pt) :",
+      "body": "Brosse - Ordinateur - Internet - carrefour – réseaux sociaux – bureau - portable - livre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p100_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "Je souligne le CCL et j'entoure le CCT (1pt) :",
+      "body": "Aujourd'hui, les informations sont sauvegardées sur des disques durs.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p100_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "Je pronominalise le COD et le COI dans cette phrase (1pt) :",
+      "body": "Quand on retire le portable à l'enfant, il réagit en colère.\n(« le portable » et « à l'enfant » sont soulignés ; ligne de réponse en pointillés)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p100_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "Je transforme la phrase suivante en une phrase interrogative (1pt) :",
+      "body": "Il faut cadrer le temps d'écran à tout âge.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p100_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "Je complète la phrase avec le comparatif approprié (moins …que ; plus…que) (1pt)",
+      "body": "Les smartphones sont ................ les téléphones ordinaires. (utile)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p100_i8",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "Je transforme la phrase suivante de la voix active à la voix passive. (1pt)",
+      "body": "Les tableaux interactifs remplacent les tableaux noirs.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p100_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "17",
+      "instruction": "Je transforme la phrase suivante du discours direct au discours indirect. (1pt)",
+      "body": "Le père dit : « je tolère l'utilisation du portable. »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p100_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.15
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un sujet d'examen de français (lexique et grammaire) qui couvre plusieurs notions (synonymes, suffixes, CCL/CCT, COD/COI, interrogation, comparatif, voix passive, discours indirect) sur le thème du numérique, donc elle ne correspond pas clairement à un seul module (le COD/COI du module 4 n'en est qu'une partie).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Lexique et grammaire du numérique",
+    "skill": "Mobiliser le lexique thématique du numérique et appliquer des transformations grammaticales (pronominalisation, interrogation, comparatif, voix passive, discours indirect).",
+    "pageType": "exam",
+    "formats": [
+      "appariement",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "synonymes",
+      "antonymes",
+      "suffixe",
+      "lexique du numérique",
+      "pronominalisation",
+      "voix passive",
+      "discours indirect"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série d'exercices courts et barémés, tous centrés sur le thème du numérique et des écrans (portable, disque dur, tableau interactif), qui permet d'évaluer lexique et grammaire dans un même contexte cohérent.",
+    "themeGroup": "Internet et technologies"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte arabe de l'encadré en haut (« لا يكتب أي شيء في هذا الإطار ») n'est pas transcrit."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "« B. Grammaire : (6 points) » est placé juste après « A. Lexique » alors que dans l'image il apparaît après la question 11, avant la question 12."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 11 : « Je barre les mots ne se rapportant au… » ; l'image dit « ne se rapportent au »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page « 2 » en bas de page est absent."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

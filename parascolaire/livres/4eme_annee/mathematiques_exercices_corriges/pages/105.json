@@ -1,0 +1,367 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 105,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 28 – امتحان النقلة (4): قاعدة الانتظام، العمليات، قيس الكتلة، المساحة، وضعيات مشكل (شراء وبيع العليق)",
+  "items": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 28",
+      "body": "امتحان النقلة (4)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p105_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "تأمّل قاعدة الانتظام واكتب الأعداد النّاقصة :",
+      "body": "150 000 ، 300 000 ، 450 000 ، ... ، ... ، ...",
+      "figureDesc": "جدول من ست خانات؛ الخانات الثلاث الأولى من اليمين تحتوي على 150 000 و300 000 و450 000 والثلاث الأخرى فارغة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p105_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "عمّر الفراغات بما يناسب :",
+      "body": "(25 600 + .........) - 8 400 = 50 000\n590 x 185 = .........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p105_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ابحث عن كتلة العسل:",
+      "body": "",
+      "figureDesc": "ميزان ذو كفتين في حالة توازن؛ الكفة اليمنى: وعاء عليه كلمة «عسل» + 2 هغ؛ الكفة اليسرى: 1 هغ + 5 هغ + 1 كغ.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p105_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "قيس محيط قطعة من الخشب مستطيلة الشّكل بالصم 260 وقيس عرضها بالصم 50. ما هو قيس مساحتها بالدسم2؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p105_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "شرى بائع غلال 150 كغ من العليق بحساب 800 مي الكغ الواحد.",
+      "body": "أ) ما هو ثمن شراء العليق؟\nباع التّاجر نصف كتلة العليق بـ 1050 مي الكغ الواحد.\nفسد من العليق الباقي 3 كغ، فاضطرّ البائع أن يضع العليق الصالح في صناديق ذات 9 كغ.\nب) كم عدد الصّناديق اللازمة؟\nباع ما في الصّندوق الواحد بـ 9 دنانير.\nج) ما هو ثمن بيع العليق بأكمله؟ هل ربح هذا التّاجر أم خسر؟ علّل جوابك.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_corriges_p105_i6"
+    },
+    {
+      "kind": "page_number",
+      "number": null,
+      "instruction": "",
+      "body": "101",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_corriges_p105_i7"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.16
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'examen de passage (امتحان النقلة) qui mélange suites régulières, opérations, mesure de masse, aire/périmètre et problèmes d'achat-vente, donc plusieurs chapitres de mathématiques sans correspondance unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    134
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision de fin d'année : nombres, mesures et problème",
+    "skill": "Mobiliser opérations, suites régulières, mesures de masse et d'aire pour résoudre des situations-problèmes d'achat-vente.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "examen de passage",
+      "suite régulière",
+      "mesure de masse",
+      "aire du rectangle",
+      "achat et vente",
+      "problème à étapes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Modèle d'examen de fin d'année combinant suite numérique, opération à trou, pesée sur balance à deux plateaux, aire déduite du périmètre et problème commercial à plusieurs questions (achat, partage, emballage en caisses, prix de vente total).",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 2 : l'image indique '590 x 185' ; la transcription la reprend dans le même ordre mais le texte visible place '= 185 x 590' (ordre RTL). Ordre à vérifier ; sinon correct."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 1 : la suite est transcrite '150 000 ، 300 000 ، 450 000 ، ...' dans l'ordre LTR, alors que dans l'image 150 000 est à droite. Le sens de lecture est correct mais la description 'ثلاث خانات فارغة' est une interprétation ajoutée."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3 : description de la balance fausse. Plateau droit : un bidon de miel (عسل) et un poids de 2 هغ ; plateau gauche : 1 هغ, 5 هغ et 1 كغ. Transcription 'وعاء عسل وكتلة 2 هغ' acceptable, mais 'ميزان ذو كفتين' n'est qu'une description, pas du texte imprimé."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 4 : le texte de l'énoncé est dupliqué dans le champ de réponse/contenu (répétition inventée)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : 'الناقصة' porte une shadda/tanwin visible dans l'image (النّاقصة) mais est écrit 'الأعداد الناقصة' sans la shadda. Dans l'énoncé 4 'مستطيلة الشّكل' est correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de page omis : 'الأسبوع 28', 'امتحان النقلة (4)' et numéro de page 101."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 5 : 'باع التّاجر' et 'الصّناديق' ont des shadda, correct ; mais 'الكغ' est écrit 'الكغ' et 'فاضطرّ' correct. Pas d'autre faute notable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête de page est omis : « الأسبوع 28 », « امتحان النقلة (4) » et le numéro de page 101."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 1 : « (ثلاث خانات فارغة) » est ajouté dans le body. Ce n'est pas du texte imprimé. Le tableau a six cases : 150 000, 300 000 et 450 000 (de droite à gauche), puis trois cases vides."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 3 : le body est une description de la balance (« ميزان ذو كفتين… »), pas du texte imprimé. Les seules étiquettes imprimées sont : عسل, 2 هغ, 1 هغ, 5 هغ, 1 كغ. La description doit rester dans figureDesc."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 4 : l'énoncé est dupliqué dans instruction et dans body. Il n'apparaît qu'une fois dans l'image."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 2, ligne 1 : en lecture RTL, l'image donne « (25 600 + ......) - 8 400 = 50 000 ». La transcription a inversé l'ordre des termes de l'addition. La ligne « 590 x 185 = ..... » est correcte : 590 est à droite dans l'image, donc lu en premier."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 28",
+      "body": "امتحان النقلة (4)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p105_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "تأمّل قاعدة الانتظام واكتب الأعداد النّاقصة :",
+      "body": "150 000 ، 300 000 ، 450 000 ، ... ، ... ، ...",
+      "figureDesc": "جدول من ست خانات؛ الخانات الثلاث الأولى من اليمين تحتوي على 150 000 و300 000 و450 000 والثلاث الأخرى فارغة.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p105_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "عمّر الفراغات بما يناسب :",
+      "body": "(25 600 + .........) - 8 400 = 50 000\n590 x 185 = .........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p105_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ابحث عن كتلة العسل:",
+      "body": "",
+      "figureDesc": "ميزان ذو كفتين في حالة توازن؛ الكفة اليمنى: وعاء عليه كلمة «عسل» + 2 هغ؛ الكفة اليسرى: 1 هغ + 5 هغ + 1 كغ.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p105_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "قيس محيط قطعة من الخشب مستطيلة الشّكل بالصم 260 وقيس عرضها بالصم 50. ما هو قيس مساحتها بالدسم2؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p105_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "شرى بائع غلال 150 كغ من العليق بحساب 800 مي الكغ الواحد.",
+      "body": "أ) ما هو ثمن شراء العليق؟\nباع التّاجر نصف كتلة العليق بـ 1050 مي الكغ الواحد.\nفسد من العليق الباقي 3 كغ، فاضطرّ البائع أن يضع العليق الصالح في صناديق ذات 9 كغ.\nب) كم عدد الصّناديق اللازمة؟\nباع ما في الصّندوق الواحد بـ 9 دنانير.\nج) ما هو ثمن بيع العليق بأكمله؟ هل ربح هذا التّاجر أم خسر؟ علّل جوابك.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "math_solutions_4eme_sellami_p105_i6"
+    },
+    {
+      "kind": "page_number",
+      "number": null,
+      "instruction": "",
+      "body": "101",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "math_solutions_4eme_sellami_p105_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "تأمّل قاعدة الانتظام واكتب الأعداد الناقصة :",
+      "body": "150 000 ، 300 000 ، 450 000 ، ... ، ... ، ... (ثلاث خانات فارغة)",
+      "figureDesc": "جدول من ست خانات؛ الخانات الثلاث الأولى من اليمين تحتوي على 150 000 و300 000 و450 000 والثلاث الأخرى فارغة.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "math_solutions_4eme_sellami_p105_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "عمّر الفراغات بما يناسب :",
+      "body": "(......... + 25 600) - 8 400 = 50 000\n590 x 185 = .........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "math_solutions_4eme_sellami_p105_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ابحث عن كتلة العسل:",
+      "body": "ميزان ذو كفتين: في الكفة اليمنى وعاء عسل وكتلة 2 هغ، وفي الكفة اليسرى كتل 1 هغ و5 هغ و1 كغ.",
+      "figureDesc": "ميزان ذو كفتين في حالة توازن؛ الكفة اليمنى: وعاء عسل + 2 هغ؛ الكفة اليسرى: 1 هغ + 5 هغ + 1 كغ.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p105_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "قيس محيط قطعة من الخشب مستطيلة الشّكل بالصم 260 وقيس عرضها بالصم 50. ما هو قيس مساحتها بالدسم2؟",
+      "body": "قيس محيط قطعة من الخشب مستطيلة الشّكل بالصم 260 وقيس عرضها بالصم 50. ما هو قيس مساحتها بالدسم2؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "math_solutions_4eme_sellami_p105_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "شرى بائع غلال 150 كغ من العليق بحساب 800 مي الكغ الواحد.",
+      "body": "أ) ما هو ثمن شراء العليق؟\nباع التّاجر نصف كتلة العليق بـ 1050 مي الكغ الواحد.\nفسد من العليق الباقي 3 كغ، فاضطرّ البائع أن يضع العليق الصالح في صناديق ذات 9 كغ.\nب) كم عدد الصّناديق اللازمة؟\nباع ما في الصّندوق الواحد بـ 9 دنانير.\nج) ما هو ثمن بيع العليق بأكمله؟ هل ربح هذا التّاجر أم خسر؟ علّل جوابك.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "math_solutions_4eme_sellami_p105_i5",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "linked",
+  "examScope": "full_year",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

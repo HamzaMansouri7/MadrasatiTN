@@ -1,0 +1,271 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 14,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "خطّ وإملاء – اختبار نهاية الثلاثي الثاني (عدد 2) – امتحانات جسر النجاح",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسخُ عَلَى مِنْوالِ الْمِثالِ :",
+      "body": "ligne 1 (RTL) : سُو . صُو . إِي . الزِّ ; ligne 2 : حَلٌّ . ظَنٌّ . وَصَّى . مَشْـ . Barème : 0,25 لكلّ حرف ; 0,25 لكلّ حرف ; 0,5 لكلّ مقطع ; 0,25 لكلّ مقطع. Critères : الوضوح، الجمالية، الوضوح، الجمالية.",
+      "figureDesc": "Deux lignes de modèles à copier sur papier quadrillé (écriture cursive), séparés par des points. Colonne de critères (الوضوح، الجمالية، الوضوح، الجمالية) avec cases à cocher et colonne des points attribués.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p014_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتابَةَ الجُمْلَةِ وَأُكَمِّلُ بِمَا يُنَاسِبُ «الْعَمَلِ» «الْكَسَلِ» «الْكَدِّ».",
+      "body": "حَثَّتْ نُهَى النَّاسَ عَلَى...  Barème : 0,25 لكلّ كلمة ; 0,5 لكلّ كلمة ; 0,25 لكلّ كلمة. Critères : الاسترسال، التناسق، الجمالية. Note : /10",
+      "figureDesc": "Espace d'écriture sur papier quadrillé pour recopier et compléter la phrase ; cases de critères et case de note /10.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p014_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "إملاء",
+      "instruction": "أُكْمِلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "أَطَالَتْ وِجْدَانُ ................ أَمَامَ حَاسُوبِهَا وَ ................ بِأَلْعَابِهِ ................ . نَادَتْهَا أُمُّهَا : «لَقَدْ حَانَ وَقْتُ ................ . قَالَتْ وِجْدَانُ : «غَدًا ذِكْرَى عِيدِ ................ .»  Barème : 2 لكلّ كلمة صحيحة. Critère : السلامة من الأخطاء. Note : /10",
+      "figureDesc": "Paragraphe à trous avec lignes pointillées sur papier quadrillé ; case de critère « السلامة من الأخطاء » et case de note /10. En-tête « إِمْلَاءٌ : ».",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p014_i3"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de fin de trimestre 2 (écriture et dictée) couvrant plusieurs unités (U4 à U6), donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Écriture et dictée : graphie des lettres",
+    "skill": "Copier des syllabes et mots avec soin (chadda, tanwin), compléter une phrase et une dictée à trous.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "dictee",
+      "autre"
+    ],
+    "keywords": [
+      "calligraphie",
+      "copie",
+      "dictée à trous",
+      "chadda",
+      "tanwin",
+      "fin de trimestre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'examen à trois volets (copie calligraphiée notée selon des critères de clarté et d'esthétique, phrase à compléter par choix de mots, paragraphe à trous sur un thème du quotidien comme le temps passé devant l'ordinateur) transposable à d'autres évaluations d'écriture.",
+    "themeGroup": "Calligraphie et graphie des lettres"
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Ligne 1 : « يِي » dans la liste puis « أِي » : l'image porte « يِي » (ي avec kasra), et la transcription est incohérente avec elle-même (« يِي » / « أِي »). De plus, l'ordre des mots n'est pas respecté : l'image a سُو، صُو، يِي، الزِّ, dans cet ordre de lecture RTL."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَنْسخُ » : l'image porte « أُنْسُخُ » (damma sur le أ et sur le س). La transcription donne fatha sur le أ et omet la damma sur le س."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« المِثالِ » : l'image porte « الْمِثالِ » (sukun sur le ل), absent. « مِنْوالِ » correct."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Phrase de l'exercice 2 : « حَثَّتْ نُهَى » est faux. L'image porte « حَثَّتْ نَهَى » ? En réalité : « حَثَّتْ نُهَى النَّاسَ عَلَى... » est lisible, mais « نُهَى » est écrit « نُهَى » avec une voyelle ambiguë ; à revérifier."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« حَلٌّ » : l'image porte « حَلٌّ » avec dammatan, correct. « وَصَّى » correct. « مَشْـ » correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dictée : « أُكَمِّلُ الفِقْرَةَ » : l'image porte « أَكْمِلُ الْفِقْرَةَ » (fatha, sukun sur le ك, kasra sur le م). La transcription donne « أُكَمِّلُ », ce qui est faux. De même pour l'exercice 2 : « أُعِيدُ كِتابَةَ ... وَأُكَمِّلُ » doit être « أُعِيدُ ... وَأُكَمِّلُ » (à vérifier avec l'image)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Dictée : « أَطَالَتْ » est faux, l'image porte « أَطَالَتْ » sans la voyelle longue écrite, soit « أَطَلَتْ » / « أَطَالَتْ » : à corriger d'après l'image. Le texte image est « أَطالَتْ وِجْدانُ »."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le barème de l'exercice 1 est incomplet et mal structuré : 0,25 لكلّ حرف (deux fois), 0,5 لكلّ مقطع, 0,25 لكلّ مقطع. Les critères sont aussi incomplets : الوضوح، الجمالية apparaissent deux fois dans la colonne des critères."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "En-tête absent : « امتحانات جسر النجاح », « اختبار نهاية الثلاثي الثاني », « عدد : 2 », « المادة : خط وإملاء », « المستوى : السنة الثانية », champs الاسم/اللقب/القسم, numéro de page 13."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre de section « إملاء » et le titre de colonne « الأنشطة / المعايير / النقاط المسندة » absents de la transcription."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.75,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1, ligne 1 : le troisième modèle est transcrit de deux façons (« يِي » dans la liste, « أِي » entre parenthèses). Dans l'image, c'est une syllabe commençant par une hamza/alif avec kasra, suivie de ي (« إِي »). « يِي » est faux. L'ordre RTL du reste de la ligne (سُو، صُو، …، الزِّ) est en revanche correct dans la transcription, contrairement à ce que signalait le contrôle. Le glyphe exact de l'alif reste légèrement ambigu dans le scan."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Consigne de l'exercice 1 : « المِثالِ » doit porter un sukun sur le ل (« الْمِثالِ »), absent dans la transcription. « أَنْسخُ » et « مِنْوالِ » correspondent à l'image. Le signalement « أُنْسُخُ » (damma sur le أ et le س) n'est pas visible dans l'image, donc non confirmé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Barème de l'exercice 1 : l'image a 0,25 لكلّ حرف (deux fois), puis 0,5 لكلّ مقطع et 0,25 لكلّ مقطع. La transcription ne donne qu'un seul « 0,25 لكلّ حرف »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Critères de l'exercice 1 : l'image montre الوضوح، الجمالية، الوضوح، الجمالية (deux paires, une par ligne de modèles). La transcription n'en donne qu'une."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Consigne de la dictée : « أُكَمِّلُ » (avec shadda sur le م) n'est pas ce qu'on lit dans l'image, où le ك porte un sukun et le م une kasra (« أُكْمِلُ »). La voyelle exacte du أ initial est peu nette dans le scan. La consigne de l'exercice 2 (« أُعِيدُ … وَأُكَمِّلُ ») est correcte."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Placement des lignes pointillées et des guillemets dans la dictée. Ligne 2 de l'image : pointillé, puis « بِأَلْعَابِهِ », puis pointillé, puis « . نَادَتْهَا أُمُّهَا : ». Il y a donc un blanc après « بِأَلْعَابِهِ » et aucun blanc après « أُمُّهَا : ». La transcription met le blanc au mauvais endroit. De plus, « «لَقَدْ حَانَ وَقْتُ … » commence la ligne suivante, juste après « أُمُّهَا : ». « قَالَتْ وِجْدَانُ : » introduit ensuite « «غَدًا ذِكْرَى عِيدِ … . » ». La transcription place « «لَقَدْ… » après « قَالَتْ وِجْدَانُ : », ce qui est faux."
+      },
+      {
+        "type": "note",
+        "severity": "minor",
+        "detail": "Non confirmés : « حَثَّتْ نُهَى » (lisible, correct), « حَلٌّ / ظَنٌّ / وَصَّى / مَشْـ » (corrects), « أَطَالَتْ وِجْدَانُ » (correct, le signalement se contredit lui-même)."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسخُ عَلَى مِنْوالِ الْمِثالِ :",
+      "body": "ligne 1 (RTL) : سُو . صُو . إِي . الزِّ ; ligne 2 : حَلٌّ . ظَنٌّ . وَصَّى . مَشْـ . Barème : 0,25 لكلّ حرف ; 0,25 لكلّ حرف ; 0,5 لكلّ مقطع ; 0,25 لكلّ مقطع. Critères : الوضوح، الجمالية، الوضوح، الجمالية.",
+      "figureDesc": "Deux lignes de modèles à copier sur papier quadrillé (écriture cursive), séparés par des points. Colonne de critères (الوضوح، الجمالية، الوضوح، الجمالية) avec cases à cocher et colonne des points attribués.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتابَةَ الجُمْلَةِ وَأُكَمِّلُ بِمَا يُنَاسِبُ «الْعَمَلِ» «الْكَسَلِ» «الْكَدِّ».",
+      "body": "حَثَّتْ نُهَى النَّاسَ عَلَى...  Barème : 0,25 لكلّ كلمة ; 0,5 لكلّ كلمة ; 0,25 لكلّ كلمة. Critères : الاسترسال، التناسق، الجمالية. Note : /10",
+      "figureDesc": "Espace d'écriture sur papier quadrillé pour recopier et compléter la phrase ; cases de critères et case de note /10.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "إملاء",
+      "instruction": "أُكْمِلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "أَطَالَتْ وِجْدَانُ ................ أَمَامَ حَاسُوبِهَا وَ ................ بِأَلْعَابِهِ ................ . نَادَتْهَا أُمُّهَا : «لَقَدْ حَانَ وَقْتُ ................ . قَالَتْ وِجْدَانُ : «غَدًا ذِكْرَى عِيدِ ................ .»  Barème : 2 لكلّ كلمة صحيحة. Critère : السلامة من الأخطاء. Note : /10",
+      "figureDesc": "Paragraphe à trous avec lignes pointillées sur papier quadrillé ; case de critère « السلامة من الأخطاء » et case de note /10. En-tête « إِمْلَاءٌ : ».",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَنْسخُ عَلَى مِنْوالِ المِثالِ :",
+      "body": "سُو . صُو . يِي . الزِّ . (ligne 1 : سُو – صُو – أِي – الزِّ) ; ligne 2 : حَلٌّ . ظَنٌّ . وَصَّى . مَشْـ . Barème : 0,25 لكلّ حرف ; 0,5 لكلّ مقطع ; 0,25 لكلّ مقطع. Critères : الوضوح، الجمالية.",
+      "figureDesc": "Deux lignes de modèles à copier sur papier quadrillé (écriture cursive), séparés par des points. Colonne de critères (الوضوح، الجمالية) avec cases à cocher et colonne des points attribués.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُعِيدُ كِتابَةَ الجُمْلَةِ وَأُكَمِّلُ بِمَا يُنَاسِبُ «الْعَمَلِ» «الْكَسَلِ» «الْكَدِّ».",
+      "body": "حَثَّتْ نُهَى النَّاسَ عَلَى...  Barème : 0,25 / 0,5 / 0,25 لكلّ كلمة. Critères : الاسترسال، التناسق، الجمالية. Note : /10",
+      "figureDesc": "Espace d'écriture sur papier quadrillé pour recopier et compléter la phrase ; cases de critères et case de note /10.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "إملاء",
+      "instruction": "أُكَمِّلُ الفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "أَطَالَتْ وِجْدَانُ ................ أَمَامَ حَاسُوبِهَا وَ ................ بِأَلْعَابِهِ. نَادَتْهَا أُمُّهَا : ................ . قَالَتْ وِجْدَانُ : «لَقَدْ حَانَ وَقْتُ ................ . غَدًا ذِكْرَى عِيدِ ................ ».  Barème : 2 لكلّ كلمة صحيحة. Critère : السلامة من الأخطاء. Note : /10",
+      "figureDesc": "Paragraphe à trous avec lignes pointillées sur papier quadrillé ; case de critère « السلامة من الأخطاء » et case de note /10. En-tête « إِمْلَاءٌ : ».",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p014_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.75
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

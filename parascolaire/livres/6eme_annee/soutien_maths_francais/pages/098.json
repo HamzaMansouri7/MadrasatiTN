@@ -1,0 +1,175 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 98,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Mesures (القياس) : conversions d'unités, périmètre du cercle, aire du rectangle, volume du cube ; Organisation et traitement de données (diagramme à barres) ; agrandissement/réduction de figures",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "أنشئ تصغيرا للشكل بمقدار 1/4 : (الاجابة على ورقة الأسئلة) (2 نقط)",
+      "body": "",
+      "figureDesc": "Quadrillage contenant une figure en forme de L (polygone à angles droits) dessinée en trait épais dans la partie droite de la grille, à réduire au quart.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p098_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "أحول إلى الوحدة المطلوبة: (1 نقطة)",
+      "body": "12,4 km 247 m = ... dam",
+      "figureDesc": "",
+      "answer": "1264,7 (réponse manuscrite de l'élève, à vérifier)",
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p098_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "أحول إلى الوحدة المطلوبة: (1 نقطة)",
+      "body": "82,9 kg 5462 cg = ... g",
+      "figureDesc": "",
+      "answer": "82954,62 (réponse manuscrite de l'élève)",
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p098_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "أحول إلى الوحدة المطلوبة: (1 نقطة)",
+      "body": "30 dm² 76,4 m² 0,65 a = ... dm²",
+      "figureDesc": "",
+      "answer": "14 170 (réponse manuscrite de l'élève, peu lisible)",
+      "confidence": 0.75,
+      "id": "soutien_maths_francais_p098_i4",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "17",
+      "instruction": "أحول إلى الوحدة المطلوبة: (1 نقطة)",
+      "body": "5,6 m³ 0,103 hl = ... ℓ",
+      "figureDesc": "",
+      "answer": "5610,3 (réponse manuscrite de l'élève)",
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p098_i5",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "18",
+      "instruction": "أحسب بـ cm محيط دائرة قياس شعاعها r = 1,5 cm (نأخذ π = 3,14) (1 نقطة)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p098_i6",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "19",
+      "instruction": "تساءل كريم عن مساحة حديقة المنزل فأخبره أبوه أنها على شكل مستطيل عرضه 4 m وطوله يساوي ثلاثة أضعاف عرضه.",
+      "body": "أ) أحسب طول حديقة المنزل بـ m (0,5 نقطة)\nب) أحسب مساحة حديقة المنزل بـ m² ؟ (1 نقطة)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p098_i7",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "20",
+      "instruction": "يملك فلاح خزانا على شكل مكعب، قياس حرفه 30 dm. تم ملء 2/3 من سعته بالماء.",
+      "body": "أ) أحسب حجم الخزان بـ dm³ ؟ (0,5 نقطة)\nب) أحسب كمية الماء التي يحتوي عليها هذا الخزان بـ ℓ ؟ (1 نقطة)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p098_i8",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "21",
+      "instruction": "يمثل المبيان التالي عدد زوار المتحف خلال 5 أشهر من السنة.",
+      "body": "أ) ما هو الشهر الذي سجل أكبر عدد من الزائرين؟ (1 نقطة)\nب) ما هو الشهر الذي سجل أقل عدد من الزائرين؟ (1 نقطة)\nج) أحسب عدد زوار المتحف خلال شهري غشت وشتنبر. (2 نقط)",
+      "figureDesc": "Diagramme à barres horizontales : axe des mois (الشهر) : يونيو، يوليوز، غشت، شتنبر، أكتوبر ; axe horizontal : عدد الزائرين (بالآلاف), graduations 0, 16, 32, 48, 64, 80. Barres approximatives : juin ≈ 32, juillet ≈ 72, août ≈ 44, septembre ≈ 40, octobre ≈ 68.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p098_i9",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation générale de mathématiques (réduction de figure, conversions de longueurs, masses, aires et volumes, périmètre du cercle, aire du rectangle, volume du cube) qui couvre plusieurs chapitres ; la synthèse générale (math-6-p6) est le choix le plus proche, mais ce n'est pas certain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures, conversions et grandeurs géométriques",
+    "skill": "Convertir des unités de mesure, calculer périmètre, aire et volume, lire un diagramme à barres et réduire une figure.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "conversion d'unités",
+      "périmètre du cercle",
+      "aire du rectangle",
+      "volume du cube",
+      "diagramme à barres",
+      "réduction de figure"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Sujet d'examen barémé qui enchaîne conversions d'unités composées (longueur, masse, aire, volume/capacité) et problèmes en contexte (jardin rectangulaire, citerne cubique remplie aux 2/3, visiteurs d'un musée sur un diagramme) ; réutilisable comme modèle de structure d'évaluation.",
+    "themeGroup": "Mesures et conversions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "self_contained",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "examTrimester": 3,
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

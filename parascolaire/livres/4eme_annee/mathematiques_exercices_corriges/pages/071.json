@@ -1,0 +1,175 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 71,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 19 – الامتحان الثلاثي الثاني (2) : opérations (soustraction/addition) sur les grands nombres, nombres entre 6000 et 7000, calcul d'une expression numérique de deux façons, mesures de capacité, angles aigus, problème de coût de fabrication et de bénéfice",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1 أ",
+      "instruction": "أكمل العمليّات بالأرقام :",
+      "body": "Trois opérations posées : (1) 40 000 − 8 625 = . . . . . ; (2) . . . . . − 18 973 = 60 354 ; (3) 23 812 − 1.25. = .85.5 (chiffres manquants représentés par des points).",
+      "figureDesc": "Trois opérations posées en colonnes, avec des chiffres manquants indiqués par des points.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p071_i1",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 ب",
+      "instruction": "اكتب جميع الأعداد المحصورة بين 6 000 و 7 000 والتي يكون فيها رقم الآحاد ورقم العشرات صفرا.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p071_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1 ج",
+      "instruction": "أحسب بطريقتيْن مختلفتيْن العبارة العدديّة :",
+      "body": "= 9 x (50 + 72)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p071_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "كم بقي في البرميل بحساب اللتر؟",
+      "body": "لتاجر برميل به 9 هل ونصف من الزّيت. باع منه 15 دكل في اليوم الأوّل و 5 هل و 8 ل في اليوم الثّاني. كم بقي في البرميل بحساب اللتر؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p071_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لوّن بالأخضر الزّوايا الحادّة الموجودة بالرّسم.",
+      "body": "",
+      "figureDesc": "Dessin géométrique avec un point أ : une demi-droite verticale vers ج, une droite horizontale vers هـ, une droite oblique allant de و à ب passant par أ.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p071_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هو ثمن كلفة الصّابون المصنوع؟ ... فما هو مقدار الرّبح من هذه العمليّة؟",
+      "body": "لصنع 20 كغ من الصّابون استُعْمِلت كمّيّة من الزّيت تقدّر قيمتها بـ 4 600 مي و 3 كغ من الصّودة بـ 850 مي الكغ ولتريْن من الجفال ثمن اللتر الواحد 175 مي وكمّيّة من العطر بـ 2 500 مي. ما هو ثمن كلفة الصّابون المصنوع؟ يباع هذا النّوع من الصّابون في السّوق بـ 700 مي الكغ الواحد. فما هو مقدار الرّبح من هذه العمليّة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p071_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.27
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de révision/examen du deuxième trimestre (Semaine 19, examen trimestriel) mêlant soustraction, nombres entre 6000 et 7000, distributivité, mesures de capacité, angles et problème de coût/bénéfice, donc couvrant plusieurs chapitres sans correspondance unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125,
+    126
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision trimestrielle : nombres, mesures, problèmes",
+    "skill": "Résoudre des opérations sur les grands nombres, convertir des mesures de capacité et résoudre un problème de coût et de bénéfice.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "soustraction",
+      "grands nombres",
+      "capacité",
+      "angles aigus",
+      "coût de fabrication",
+      "bénéfice"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le devoir regroupe des opérations à chiffres manquants, un calcul d'expression de deux façons, un problème de capacité avec conversions hl/dal/l et un problème de coût de fabrication du savon avec bénéfice, ancré dans la vie quotidienne tunisienne.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 1 أ, opération (3) : l'image montre '1 . 25 .' (soustrait) et résultat '. 85 . 5'. La transcription '1.25.' et '.85.5' est proche mais l'espacement/position des points n'est pas exactement respecté ('.85.5' devrait être '. 85 . 5')."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : 'الأوّل' transcrit avec shadda ; l'image montre 'الأَوّل' avec voyelles légèrement différentes (tashkeel partiel). 'الثّاني' est écrit 'الثّاني' dans l'image avec une shadda sur le ث, ce qui est acceptable."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 2 : le champ de la question répète 'كم بقي في البرميل بحساب اللتر؟' comme titre, ce qui duplique le texte ; pas d'erreur de contenu mais structure redondante."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 4 : le titre résumé '[4] ما هو ثمن كلفة الصّابون المصنوع؟ ... فما هو مقدار الرّبح' est une reconstruction ; 'ثمن كلفة' est correct dans l'image ('ثمن كلفة الصّابون')."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3 : le dessin (points أ، ب، ج، د، و, droites) n'est pas décrit ; le titre de la semaine 'الأسبوع 19 / الامتحان الثلاثي الثاني (2)' et le numéro de page 67 ne sont pas transcrits."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : 'الجفال' et 'الصّودة' conformes ; mais 'الرّبح' dans l'image est 'الرّبْح' avec sukun visible, et 'استُعْمِلت' correct. Quelques voyelles visibles (ex. 'العمليّات', 'المحصورة') sont absentes ou incohérentes."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

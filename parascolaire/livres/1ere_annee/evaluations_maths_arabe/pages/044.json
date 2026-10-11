@@ -1,0 +1,148 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 44,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أَسْتَعْمِلُ > ، < ، = بَيْنَ الْأَعْدَادِ مِنْ 0 إِلَى 9",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الْحِسَابُ الذِّهْنِيُّ :",
+      "body": "• أَكْتُبُ 3 أَعْدَادٍ مُرَتَّبَةً تَنَازُلِيًّا تَأْتِي مُبَاشَرَةً بَعْدَ 4 :\n[ ] [ ] [ ]\n\n• أَكْتُبُ 4 أَعْدَادٍ مُرَتَّبَةً تَصَاعُدِيًّا تَأْتِي مُبَاشَرَةً قَبْلَ 9 :\n[ ] [ ] [ ] [ ]\n\n• أَكْتُبُ 4 أَعْدَادٍ مُرَتَّبَةً تَنَازُلِيًّا تَأْتِي مُبَاشَرَةً قَبْلَ 4 :\n[ ] [ ] [ ] [ ]",
+      "figureDesc": "دوائر فارغة لكتابة الأعداد المطلوبة",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p044_i1",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَكْتُبُ فِي كُلِّ لَافِتَةٍ كَمَّ الْمَجْمُوعَةِ ثُمَّ أَضَعُ فِي الْفَرَاغِ الرَّمْزَ الْمُنَاسِبَ : > أَوْ < أَوْ =",
+      "body": "مجموعة الفراشات مقارنة بمجموعة الحلزونات:\n[لَافِتَة] .... [لَافِتَة]\n\nمجموعة الموز مقارنة بمجموعة التفاح:\n[لَافِتَة] .... [لَافِتَة]",
+      "figureDesc": "أربع مجموعات من الأشياء مع لافتة دائرية أسفل كل منها:\n1. مجموعة تحتوي على 6 فراشات.\n2. مجموعة تحتوي على 3 حلزونات.\n3. مجموعة تحتوي على 5 موزات.\n4. مجموعة تحتوي على 7 تفاحات.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p044_i2",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُوَاصِلُ رَسْمَ عَنَاصِرِ الْمَجْمُوعَتَيْنِ النَّاقِصَتَيْنِ وَأَكْتُبُ كَمَّ الْمَجْمُوعَاتِ.",
+      "body": "[مجموعة الأسماك] = [مجموعة النجوم] = [مجموعة الأزهار]\n[لَافِتَة] = [لَافِتَة] = [لَافِتَة]",
+      "figureDesc": "ثلاث مجموعات متساوية يُطلب إكمال رسم عناصرها لتتساوى، وأسفل كل منها لافتة دائرية لكتابة العدد:\n1. مجموعة بها 3 أسماك.\n2. مجموعة بها 4 نجوم.\n3. مجموعة بها زهرتان اثنتان.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p044_i3",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "math-1-p2",
+  "topicTitle": "Période 2 : Nombres de 6 à 9, comparaison, ordre et lignes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p1",
+    "confidence": 0.99
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la comparaison des nombres de 0 à 9 avec les symboles >, <, =, sur l'ordre croissant et décroissant et sur les nombres qui précèdent ou suivent un nombre donné, ce qui correspond à la Période 2 (nombres de 6 à 9, comparaison, ordre).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Comparaison des nombres de 0 à 9",
+    "skill": "Comparer des quantités et des nombres de 0 à 9 avec les symboles >, < et =, et ordonner des nombres.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "comparaison de nombres",
+      "symboles >, <, =",
+      "ordre croissant et décroissant",
+      "collections d'objets",
+      "nombres de 0 à 9",
+      "calcul mental"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : comparer des collections illustrées (papillons/escargots, bananes/pommes) en inscrivant le cardinal dans une étiquette puis le symbole, compléter des collections en dessin pour obtenir l'égalité, et calcul mental sur les nombres qui précèdent ou suivent un nombre donné.",
+    "themeGroup": "Comparaison et rangement des nombres"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre du bandeau vert est absent : «أَسْتَعْمِلُ >، <، = بَيْنَ الْأَعْدَادِ مِنْ 0 إِلَى 9» ainsi que l'étiquette «الرِّيَاضِيَّاتُ»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le bandeau rouge «أَتَدَرَّبُ وَأُوَظِّفُ :» est absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : numéro de page 68, «جسر النجاح - الثلاثي الثاني (السنة 1)», «الرِّيَاضِيَّاتُ»."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "«كَمَّ» est faux dans l'exercice 1 : la bonne forme est «كَمِ الْمَجْمُوعَةِ» (écrit «كَمَّ» dans la transcription)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«أَضَعُ» : l'image montre «أَضَعْ» (impératif, avec «ثُمَّ أَضَعْ»)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«أُوَاصِلُ» : l'image montre «أُوَاصِلْ»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الذِّهْنِيُّ» est correct, mais «الْمَجْمُوعَاتِ» devrait être «الْمَجْمُوعَاتِ» sans erreur ; en revanche «الْمُنَاسِبَ» et «الرَّمْزَ» sont corrects."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Les descriptions «مجموعة الفراشات مقارنة بمجموعة الحلزونات», «مجموعة الموز مقارنة بمجموعة التفاح», «مجموعة الأسماك», «مجموعة النجوم», «مجموعة الأزهار» ainsi que les «[لَافِتَة]» sont des ajouts qui ne figurent pas dans le texte de la page."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le nombre de cercles et leur disposition ne sont pas fidèles à l'image : l'exercice 1 comporte 4 groupes (papillons 6, escargots 3, bananes 5, pommes 7) avec 4 cercles rouges et 2 espaces «....» ; ce n'est pas rendu."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les signes «=» de l'exercice 2 sont placés entre les cercles, mais la transcription les place dans un ordre inexact."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

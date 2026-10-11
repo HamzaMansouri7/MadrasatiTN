@@ -1,0 +1,95 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 63,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : L'histoire du petit Indien (1)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "L'histoire du petit Indien (I)\n\nVoici l'histoire de toute une famille d'Indiens : le père, la mère, le grand frère, la grande sœur et le tout petit qu'on appelait le petit Indien. Le père s'appelait « Chef Soleil Levant », la mère « Branche de Saule », le frère « Feuille de Chêne » et la sœur « Tige d'Or ».\nIls avaient chacun un cheval. Le petit Indien, lui, n'avait pas de nom et il n'avait pas de cheval non plus. Un jour, à l'heure du petit déjeuner, Chef Levant déclara :\n-Ce matin, en traversant la prairie, j'ai cru voir un cheval blanc couché dans l'herbe. Mais c'était une illusion, le soleil du matin trompe souvent les yeux, et personne ne laisserait son cheval, seul, dans la prairie, pendant toute la nuit.\nAprès le repas, le petit Indien partit voir s'il aurait la même illusion que son père. Il vit un cheval blanc couché dans l'herbe. Il s'approche. Ses yeux ne le trompaient pas. Il y avait bien un cheval blanc couché dans les marguerites. Le petit Indien se mit à caresser doucement le museau du cheval.\nPuis, il passa son bras autour de sa tête et il serra le cheval contre lui.\n-Ce cheval ne peut, sans doute, pas marcher, pensa le petit Indien, il doit avoir soif. Et il apporta à boire au cheval.\n-Il doit aussi avoir faim, se dit le petit Indien.\nEt il apporta à manger au cheval. Mais le temps passait et le petit Indien devait rentrer.\nLa nuit venue, quand tous furent endormis, le petit Indien resta éveillé dans l'obscurité.\n(à suivre...)",
+      "figureDesc": "Texte encadré avec titre en italique ; en-tête « Sagesse – Lecture - Compréhension – 6ème année de base » ; pied de page « Lire et s'exprimer – 62 – 6ème année de base ». Au verso, des consignes d'exercices apparaissent en transparence, illisibles.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p063_i1",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m8",
+  "topicTitle": "Module 8 : Découvrir d'autres modes de vie",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.37
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture en français sur une famille d'Indiens (culture et mode de vie d'un autre peuple), ce qui se rattache le mieux au Module 8 « Découvrir d'autres modes de vie », mais le texte est trop court pour exclure d'autres modules.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Lecture : l'histoire du petit Indien",
+    "skill": "Lire un texte narratif et en comprendre les personnages et les éléments clés",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "texte narratif",
+      "famille indienne",
+      "personnages",
+      "noms symboliques"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Texte narratif découpé en épisodes autour d'une famille aux noms symboliques tirés de la nature, utilisable pour créer des questions de compréhension, un portrait de personnages ou une activité d'invention de noms.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est omis : « Sagesse », « Lecture - Compréhension », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est omis : « Lire et s'exprimer », « 62 », « 6ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Il s'approche » : le texte de l'image dit bien « Il s'approche », donc correct. La transcription est fidèle sur ce point."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« réponse: None » et « [A] » ne figurent pas tels quels dans l'image, qui indique « A) Lis le texte : »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte fantôme (transparence du verso, questions de l'exercice) n'est pas transcrit. C'est acceptable, car il s'agit d'un effet de transparence."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

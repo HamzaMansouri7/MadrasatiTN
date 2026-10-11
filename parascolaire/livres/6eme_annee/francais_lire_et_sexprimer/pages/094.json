@@ -1,0 +1,140 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 94,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Grammaire (accord du nom et de l'adjectif, féminin/masculin) et Conjugaison (impératif présent)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "C-1",
+      "instruction": "Réécris ce passage en remplaçant « berger » par « bergères » :",
+      "body": "« Ce berger a perdu sa brebis, son agneau et ses chèvres. »",
+      "figureDesc": "Deux lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p094_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-2-a",
+      "instruction": "Réécris cette phrase en remplaçant « garçon » par « fille » et « brebis » par « agneau » :",
+      "body": "« Le jeune garçon imprudent va chercher la petite brebis perdue. »",
+      "figureDesc": "Une ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p094_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-2-b",
+      "instruction": "Complète avec les adjectifs entre parenthèses et accorde :",
+      "body": "La (petit)……… brebis s'est trompée de troupeau. Les deux (jeune)……… bergères sont (inquiet)………. Accompagnées de leur (grand)………chienne (blanc)………, elles ont cherché partout ; toujours rien. Elles sont (malheureux)………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p094_i3",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C-3",
+      "instruction": "Remplace « sœur » par « frère » et réécris ce passage en commençant par : - Nous ……… : «",
+      "body": "Bruno dit : « Cette belle fille est ma sœur. Elle est jolie, sérieuse et intelligente. »",
+      "figureDesc": "Lignes pointillées pour la réponse, terminées par un guillemet fermant.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p094_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D-1",
+      "instruction": "Transforme à l'impératif :",
+      "body": "- Tu essaies de trouver la brebis avant le coucher du soleil.\n- Vous rassemblez le troupeau.\n- Nous allons réveiller le berger.\n- Le temps est mauvais, tu fais attention.",
+      "figureDesc": "Une ligne pointillée sous chaque phrase pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p094_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.35
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de grammaire (accord du nom et de l'adjectif, genre) et de conjugaison (impératif présent) qui ne correspond clairement à aucun module précis : le présent du module 1 n'inclut pas explicitement l'impératif ni les accords, et les modules 5 (accords complexes) et 6 (conseil) ne conviennent pas non plus.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    126
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Accord en genre et nombre, impératif présent",
+    "skill": "Accorder noms et adjectifs en genre et en nombre, et conjuguer les verbes à l'impératif présent.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "accord de l'adjectif",
+      "féminin et masculin",
+      "pluriel",
+      "impératif présent",
+      "transformation de phrases"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un même contexte pastoral (berger, brebis, troupeau) sert de fil conducteur à des exercices de transformation (changement de genre et de nombre), de texte à trous avec adjectifs à accorder et de passage à l'impératif, ce qui est facile à transposer vers d'autres univers.",
+    "themeGroup": "Orthographe et accords"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres et sections (« C) Grammaire : », « D) Conjugaison : ») ainsi que l'en-tête « Les évaluations » (Sagesse, 6ème année de base) et le pied de page (page 93) ne sont pas transcrits ; ils sont peut-être traités comme métadonnées."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Dans C-3, la structure de réponse est incomplète : après « - Nous ……… : « », l'image montre une deuxième ligne de réponse qui se termine par « » ». La fermeture des guillemets est absente."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans C-2-b, « sont (inquiet)………. Accompagnées » : l'image montre bien le point final suivi d'« Accompagnées ». La transcription raccourcit les pointillés, ce qui est acceptable. Aucune erreur de mot réelle détectée."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

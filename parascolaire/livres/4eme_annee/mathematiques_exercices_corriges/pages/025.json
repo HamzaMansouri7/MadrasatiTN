@@ -1,0 +1,134 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 25,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 6 : الأعداد من 1 000 إلى 9 999 (1) : قراءة، كتابة، منازل الجمع والطرح",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمّ الجدول :",
+      "body": "الأعداد المعطاة في العمود «العدد» : 5 374 ، 1 000 ، 631 ، 9 430. الأعمدة المطلوب تعميرها : عدد عشراته، عدد مئاته، عدد آلافه.",
+      "figureDesc": "جدول من 4 أعمدة (العدد، عدد عشراته، عدد مئاته، عدد آلافه) و4 أسطر؛ عمود العدد معمّر والبقية فارغة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p025_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ ثمّ أتمم :",
+      "body": "السطر 1 : ...، ...، 1 500، 1 400، ...، ... ؛ السطر 2 : ...، ...، 1 250، 1 000، 750، ... ؛ السطر 3 : ...، ...، 7 500، 6 000، ...، ...",
+      "figureDesc": "ثلاثة جداول أسطر، كل سطر من 6 خانات، بعضها معمّر وبعضها منقّط فارغ؛ تُقرأ الخانات من اليمين إلى اليسار.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p025_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "استعمل الأرقام : 3 ، 4 ، 8 . لتكوّن عددا من أربعة أرقام يكون رقم آحاده ضعف رقم مئاته ورقم عشراته مساويا لرقم آلافه .",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p025_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لاحظ هذه الأعداد :",
+      "body": "7 100 ، 9 280 ، 8 750 ، 7 265 . * ما هو أقرب هذه الأعداد للعدد : 9 000 ؟",
+      "figureDesc": "الأعداد داخل مستطيلات.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p025_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اختر عددين من بين الأعداد :",
+      "body": "3 810 ، 4 517 ، 4 217 ، 3 710 . ليكون : - مجموعهما : 8 027 - الفرق بينهما : 707",
+      "figureDesc": "الأعداد داخل مستطيلات.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p025_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "ما هو المبلغ الذي تسلّمته من جدّتي؟",
+      "body": "تسلّمت من جدّتي وأمّي مقدارِيْن متساوِيَيْن من المال وأضاف لي والدي 3 قطع من فئة النّصف دينار. فأصبح لديّ في الجملة تسعة دنانير و 700 مليم.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p025_i6",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.52
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les nombres de 1 000 à 9 999 (lecture, écriture, addition/soustraction, monnaie), soit des nombres à 4 chiffres. Aucun chapitre officiel ne les couvre explicitement ; le plus proche est la Période 1 (nombres, décomposition, monnaie), le reste du programme traitant d'autres notions.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    115
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres de 1 000 à 9 999",
+    "skill": "Lire, écrire, décomposer et comparer des nombres jusqu'à 9 999, et résoudre des additions et soustractions avec ces nombres.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "probleme",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "nombres à quatre chiffres",
+      "valeur de position",
+      "suites numériques",
+      "addition et soustraction",
+      "nombre le plus proche",
+      "monnaie en dinars"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Variété de situations réutilisables : tableau de décomposition (dizaines, centaines, milliers), suites à compléter avec des pas différents, construction d'un nombre à partir de contraintes sur les chiffres, recherche du nombre le plus proche d'un repère, choix de deux nombres selon leur somme et leur différence, et problème de monnaie en dinars et millimes avec pièces de 500 millimes.",
+    "themeGroup": "Numération jusqu'à 9 999"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

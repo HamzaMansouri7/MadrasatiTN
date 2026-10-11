@@ -1,0 +1,146 @@
+{
+  "book": "exercices_mathematiques_corriges",
+  "page": 7,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الوضعية الادماجية : مسائل حول الشراء والبيع والفائدة (العمليات الأربع على الأعداد الصحيحة الكبيرة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الوضعية الادماجية = اشترى مربي مواشي 40 خروفا ب 500000 دينار ودفع 8500 دينار لنقلها و 75500 دينار للعلف . بعد مدة باع الخرفان بـ 1500000 دينار .",
+      "body": "ماهو ثمن شراء الخروف الواحد ؟\nماهي كلفة جمبع الخرفان ؟\nماهو ثمن بيع الخروف الواحد ؟\nماهي الفائدة التي تحصل عليها مربي المواشي ؟",
+      "figureDesc": "جدول من عمودين وسطرين: خانة العنوان فارغة، وخانة الحل تحتوي على العمليات المكتوبة بالأحمر. أسفل الصفحة صورة يد تكتب بقلم مع قلب مكتوب عليه Facebook واسم الأستاذ هاشمي زروال.",
+      "answer": "1 - 500000 ÷ 40 = 12500 ; 2 - 500000 + 8500 + 75500 = 584000 ; 3 - 1500000 ÷ 40 = 37500 ; 4 - 1500000 - 584000 = 916000",
+      "topicId": "math-5-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "exercices_mathematiques_corriges_p007_i1"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p5",
+    "confidence": 0.6
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Situation intégrative de mathématiques sur l'achat, la vente et le bénéfice, avec les quatre opérations sur de grands nombres (500000, 1500000), qui correspond le mieux à la Période 1 (grands nombres et opérations), même si elle pourrait aussi relever d'une synthèse en fin de période.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes d'achat, vente et bénéfice",
+    "skill": "Résoudre une situation intégrée en enchaînant les quatre opérations sur de grands nombres pour calculer prix unitaire, coût total et bénéfice.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "situation intégrative",
+      "achat et vente",
+      "bénéfice",
+      "prix unitaire",
+      "grands nombres",
+      "quatre opérations"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation réaliste d'élevage avec questions progressives (prix unitaire d'achat, coût total avec frais annexes, prix unitaire de vente, bénéfice), transposable à d'autres contextes commerciaux comme l'artisanat, l'agriculture ou une boutique.",
+    "themeGroup": "Problèmes d'achat, vente et bénéfice"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le paragraphe de la situation d'intégration est transcrit deux fois (« [] ... || الوضعية ... »). Le doublon est à supprimer."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les numéros « 1) 2) 3) 4) » devant les questions n'apparaissent pas sur l'image, où les questions ne sont pas numérotées."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte de l'en-tête et du pied de page n'est pas transcrit : date 22/12/2024 14:23, « WWW.EDUSET.TN - تمارين في الرياضيات السنة الخامسة مع الإصلاح », URL du bas, 13/15."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte « Facebook » et « الأستاذ هاشمي زروال » (signature, dans l'image du bas) est absent."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« جمبع » est écrit ainsi sur l'image (faute probable pour « جميع »). La transcription le reproduit fidèlement, ce n'est donc pas une erreur de transcription."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Les calculs sont bien transcrits. L'image écrit « 500000 ÷ 40 = 12500 » (correct). Le total 584000 est correct (500000+8500+75500). Le résultat 916000 est correct. Aucune erreur numérique."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.9,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "doublon",
+        "severity": "minor",
+        "detail": "Le paragraphe de la situation d'intégration (« الوضعية الادماجية = اشترى مربي مواشي ... 1500000 دينار . ») figure deux fois : dans « instruction » et au début de « body ». Il faut le garder dans « instruction » et ne laisser que les questions dans « body »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les numéros « 1) 2) 3) 4) » devant les quatre questions ne sont pas sur l'image. Les questions y sont écrites sans numérotation, chacune sur sa ligne."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الوضعية الادماجية = اشترى مربي مواشي 40 خروفا ب 500000 دينار ودفع 8500 دينار لنقلها و 75500 دينار للعلف . بعد مدة باع الخرفان بـ 1500000 دينار .",
+      "body": "ماهو ثمن شراء الخروف الواحد ؟\nماهي كلفة جمبع الخرفان ؟\nماهو ثمن بيع الخروف الواحد ؟\nماهي الفائدة التي تحصل عليها مربي المواشي ؟",
+      "figureDesc": "جدول من عمودين وسطرين: خانة العنوان فارغة، وخانة الحل تحتوي على العمليات المكتوبة بالأحمر. أسفل الصفحة صورة يد تكتب بقلم مع قلب مكتوب عليه Facebook واسم الأستاذ هاشمي زروال.",
+      "answer": "1 - 500000 ÷ 40 = 12500 ; 2 - 500000 + 8500 + 75500 = 584000 ; 3 - 1500000 ÷ 40 = 37500 ; 4 - 1500000 - 584000 = 916000",
+      "topicId": "math-5-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "exercices_math_5eme_corriges_p007_i1"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "الوضعية الادماجية = اشترى مربي مواشي 40 خروفا ب 500000 دينار ودفع 8500 دينار لنقلها و 75500 دينار للعلف . بعد مدة باع الخرفان بـ 1500000 دينار .",
+      "body": "الوضعية الادماجية = اشترى مربي مواشي 40 خروفا ب 500000 دينار ودفع 8500 دينار لنقلها و 75500 دينار للعلف . بعد مدة باع الخرفان بـ 1500000 دينار . 1) ماهو ثمن شراء الخروف الواحد ؟ 2) ماهي كلفة جمبع الخرفان ؟ 3) ماهو ثمن بيع الخروف الواحد ؟ 4) ماهي الفائدة التي تحصل عليها مربي المواشي ؟",
+      "figureDesc": "جدول من عمودين وسطرين: خانة العنوان فارغة، وخانة الحل تحتوي على العمليات المكتوبة بالأحمر. أسفل الصفحة صورة يد تكتب بقلم مع قلب مكتوب عليه Facebook واسم الأستاذ هاشمي زروال.",
+      "answer": "1 - 500000 ÷ 40 = 12500 ; 2 - 500000 + 8500 + 75500 = 584000 ; 3 - 1500000 ÷ 40 = 37500 ; 4 - 1500000 - 584000 = 916000",
+      "confidence": 0.93,
+      "id": "exercices_math_5eme_corriges_p007_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices corrigés"
+}

@@ -1,0 +1,144 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 100,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Lecture (compréhension, lexique) et Grammaire : compléments essentiels et non essentiels, compléments circonstanciels de lieu, de temps et de manière (texte de la tourterelle)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "b",
+      "instruction": "Relève, dans le texte, deux détails qui justifient ta réponse :",
+      "body": "- ........\n- ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p100_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "c",
+      "instruction": "Remplace le mot souligné par un mot de même sens :",
+      "body": "- Elle est lasse (mot souligné : lasse) → - Elle est ......................",
+      "figureDesc": "Une flèche relie la phrase d'origine à la phrase à compléter.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p100_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Le père enferme la tourterelle dans une cage pour une nuit seulement. Dis pourquoi.",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p100_i3",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "D'après toi, qui vient visiter les filles ?",
+      "body": "Une ligne pointillée pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p100_i4",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C1",
+      "instruction": "Relève dans cette phrase deux compléments essentiels :",
+      "body": "« Son père lui offre un joli oiseau. »\n- Le premier complément essentiel : ........\n- Le deuxième complément essentiel : ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p100_i5",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C2",
+      "instruction": "Relève dans cette phrase :",
+      "body": "« Toute la journée, la tourterelle est là, tournant doucement la tête. »\n- Un complément de lieu : ........\n- Un complément de temps : ........\n- Un complément de manière : ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p100_i6",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "C3",
+      "instruction": "Déplace les compléments non essentiels dans les phrases suivantes :",
+      "body": "- Quand la nuit est tout à fait venue, notre père réussit à l'attraper.\n........\n- La tourterelle construit un nid sur un des arbres de notre jardin.\n........\n- Avec prudence, la tourterelle picore les grains.\n........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p100_i7",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "fr-6-m4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.27
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page d'évaluation de français (lecture et grammaire sur les compléments essentiels et circonstanciels) à partir d'un texte sur la tourterelle, un oiseau, ce qui se rattache au thème de la nature du module 5; le lien reste incertain car la grammaire (compléments) ne correspond pas clairement à un seul module.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    126
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compléments de phrase et compréhension de texte",
+    "skill": "Comprendre un texte narratif et identifier les compléments essentiels et circonstanciels (lieu, temps, manière) dans une phrase.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "compléments essentiels",
+      "compléments circonstanciels",
+      "compréhension de lecture",
+      "synonymes",
+      "déplacement des compléments"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Séquence d'évaluation qui associe questions de compréhension (justifier par des indices du texte, inférer, trouver un synonyme) et exercices de grammaire à partir de phrases du texte : relever des compléments par catégorie et déplacer des compléments non essentiels.",
+    "themeGroup": "Grammaire: la phrase"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

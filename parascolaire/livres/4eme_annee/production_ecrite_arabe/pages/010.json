@@ -1,0 +1,114 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 10,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وصف الطقس في فصل الشتاء (المطر والرعد والبرق والعاصفة) – نص داعم للإنتاج الكتابي",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "أغادر هذا البيت الدافئ لأواجه ذاك الزمهرير الهائج\nسرت في الشارع المقفر مواجها ريحا عاتية تصفع وجهي وتلسع ساقي وتتسرب تحت معطفي فيقشعر جلدي ويرتعش جسمي وتصطك أسناني فأنطلق مهرولا حانيا ظهري دافنا رأسي بين كتفي ومن حين لآخر أخرج منديلا أمسح به أنفي وقد استحال نبعا لا ينضب ماؤه\nانعقدت في السماء ظلة سوداء فاحتجب قرص الشمس وتلفعت الجبال والهضاب والربي والآكام  بأردية بيضاء من الضباب فما تكاد تقع عين الناظر على منظر مستبين ثم ما لبث الرعد أن قصف قصفا شديدا دوت به أرجاء الجبال وأخذ البرق يرسل شرارته الحمراء من خلال السحب الكثيفة المتراكمة فأثار بعضا منها وعجز عن بعض ثم انفجرت السماء عن أمطار غزار سالت بها الأودية والقيعان وسبحت فيها الربي والهضاب\nانتابني الذعر لمنظر الأشجار الساقطة والجذوع المتهافتة والأغصان المتناثرة والأزهار المبعثرة كأنها تشهد أطلالا بالية قد عصفت بها وبساكنيها أيدي الحدثان وعوادي الزمان فحتى العصافير كانت تغرد تغريدا شجيا هو بالأنين والبكاء أشبه منه بالرجيع والغناء",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p010_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "في فصل الشتاء",
+      "body": "تكاثفت السحب وقصف الرعد ولمع البرق وثارت عاصفة هوجاء\nوإذا دفق من المطر تبلل الحشائش فيصبح ندى رطبا\nكنت أسمع صفير الريح وأرى لمعان البرق يتبعه هدير الرعد\nفي فصل الشتاء برد الطقس وهبت ريح وهاجة فغامت السماء وتراكمت فيها سحب سوداء حتى أظلمت الدنيا\nحتى إذا حل فصل الشتاء فتألفت منه البروق التي تلمع في السحب والغيوم\nارتحل الشتاء برياحه الهوجاء وبرده القارس\nنزل المطر بغزارة فعقبه لميع البرق وقصف الرعد\nتنزل قطرات المطر غليظة سريعة ثم تتحول إلى سيل جارف ينزل من السماء ومن حين لآخر يومض البرق فتصحبه هزات عنيفة\nكان اليوم شديدا كأن السماء صبت لعنتها على الأرض فالظلام أطبق على الكون والشمس احتجبت ولعلها انطفأت وبقيت وحدها في السهول تولول\nكانت السماء يمزقها البرق بصورة متلاحقة والرعد يصم الآذان والمطر ينزل بغزارة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p010_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.27
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un texte d'appui à la production écrite sur la description de la météo hivernale (pluie, tonnerre, tempête), matière arabe, mais aucune unité officielle (centrées sur le récit, les personnages, le schéma narratif et la cohérence) ne correspond clairement à une description de la nature.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description du temps en hiver",
+    "skill": "Rédiger une description du temps hivernal (pluie, tonnerre, éclair, tempête) en réemployant le lexique et les structures d'un texte modèle.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "description",
+      "météo hivernale",
+      "tempête",
+      "champ lexical",
+      "production écrite",
+      "verbes de perception"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Textes modèles de description météorologique (ciel qui s'assombrit, vent, tonnerre, éclairs) avec une narration à la première personne qui exprime les sensations du froid. Ils peuvent servir de support à une production écrite guidée, à un exercice de repérage du lexique ou à une banque de mots sur les phénomènes naturels.",
+    "themeGroup": "Description des saisons et du temps"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "L'image montre « أأغادر » (hamza d'interrogation + أغادر) au début ; la transcription donne « أغادر »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« والربي » : l'image donne « والربى » (alif maqsura) ; la transcription écrit « والربي » (deux occurrences : « الربي والهضاب » en fin de paragraphe 2 et « والربي » plus haut). Il s'agit probablement d'une graphie de l'image, mais la ponctuation du texte source reste à vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« وتتسرب » : l'image indique « وتتسرب » ; la transcription est correcte, rien à corriger."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « في فصل الشتاء » est en gras dans l'image, au milieu de la page ; la transcription le place correctement mais le sépare par « || », ce qui est acceptable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ligne « وقد استحال نبعا لا ينضب ماؤه » : correcte, aucun écart relevé."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Après « وإذا دفق من المطر تبلل الحشائش فيصبح ندى رطبا », la ligne de l'image correspond bien ; aucune ligne manquante détectée. Cependant « في فصل الشتاء برد الطقس وهبت ريح وهاجة » : l'image donne « وهبت ريح وهاجة », conforme."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

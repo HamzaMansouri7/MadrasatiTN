@@ -1,0 +1,190 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 21,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي: تقييم – كتابة نص يلائم المشاهد (الصيادون والدلافين) وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أَسْتَعِينُ بِالْإِنْتَاجِ السَّابِقِ، وَأُنْتِجُ نَصًّا يُلَائِمُ الْمَشَاهِدَ وَأُضَمِّنُهُ أَوْصَافًا وَأَقْوَالًا.",
+      "body": "ثلاثة مشاهد مرسومة يُكتب تحت كل مشهد نص على أسطر منقوطة. المشهد 1: صيادان في قاربين وتحتهما دلافين وأسماك تسبح في البحر. المشهد 2: صياد في قارب ودلفين يقفز تحته وبالونة حوار فارغة. المشهد 3: شبكة صيد تحتوي دلافين، وبعض الدلافين خارجها، ومستطيلان/بالونتا حوار فارغتان. النقاط على يسار الأسطر: المشهد 1: 0.25 / 0.25 / 0.25 / 0.5 / 1.5 / 1.5؛ المشهد 2: 0.25 / 0.25 / 0.25 / 0.5 / 1.5 / 1.5؛ المشهد 3: 0.25 / 0.25 / 0.25 / 0.5 / 1.5 / 2. المعايير في الهامش (مع خانة أمام كل معيار): مع1أ، مع1ب، مع2أ، مع2ب، مع4 (للمشهد 1)؛ مع1أ، مع1ب، مع2أ، مع2ب، مع3ب (للمشهد 2)؛ مع4 بخانتين (للمشهد 3). رقم الصفحة: 20.",
+      "figureDesc": "ثلاثة رسوم لصيادين في قوارب ودلافين تحت الماء؛ الثاني فيه دلفين وبالونة حوار فارغة؛ الثالث فيه شبكة صيد ودلافين وبالونتا حوار فارغتان.",
+      "answer": null,
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "evaluations_toutes_matieres_p021_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الأعمدة: الْمَعَايِيرُ / مُسْتَوَيَاتُ التَّمَلُّكِ: مع1أ، مع1ب، مع2أ، مع2ب، مع3أ، مع3ب (مَعَايِيرُ الْحَدِّ الْأَدْنَى)، مع4 (مِعْيَارُ التَّمَيُّزِ). إِنْعِدَامُ التَّمَلُّكِ - - -: 0 في كل الأعمدة. التَّمَلُّكُ دُونَ الْأَدْنَى + - -: مع1أ 0.25-0.5؛ مع1ب 0.25-0.5؛ مع2أ 0.25-0.5؛ مع2ب 0.5-1؛ مع3أ 1؛ مع3ب 1.5؛ مع4 1.5. التَّمَلُّكُ الْأَدْنَى + + -: مع1أ 0.75-1؛ مع1ب 0.75-1؛ مع2أ 0.75-1؛ مع2ب 1.5-2؛ مع3أ 2؛ مع3ب 3؛ مع4 3-4. التَّمَلُّكُ الْأَقْصَى + + +: مع1أ 1.25-1.5؛ مع1ب 1.25-1.5؛ مع2أ 1.25-1.5؛ مع2ب 2.5-3؛ مع3أ 3؛ مع3ب 4.5؛ مع4 5.",
+      "figureDesc": "جدول إسناد الأعداد حسب مستويات التملك والمعايير",
+      "answer": null,
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_toutes_matieres_p021_i2"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-2-u8",
+  "topicTitle": "Unité 8 : Fêtes nationales, religieuses et célébrations",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u5",
+    "confidence": 0.47
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de production écrite (écrire un texte avec descriptions et dialogues, grille de notation) ; le chapitre 'bilan de production d'écrit' (unité 8) est le plus proche, mais le thème des pêcheurs et dauphins ne correspond pas aux fêtes et il n'est pas certain qu'il s'agisse de cette unité.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : texte illustré avec dialogues",
+    "skill": "Rédiger un texte cohérent à partir de trois images en y intégrant des descriptions et des paroles rapportées.",
+    "pageType": "mixed",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "production écrite",
+      "images séquentielles",
+      "description",
+      "dialogue",
+      "évaluation",
+      "grille de notation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une histoire en trois vignettes (pêcheurs et dauphins) avec bulles de dialogue vides à compléter, accompagnée d'une grille d'attribution des notes par critères de maîtrise.",
+    "themeGroup": "Production écrite: phrases et dialogue"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Scène 1 : la transcription donne 6 notes (0.25/0.25/0.25/0.5/1.5/1.5), mais l'image en montre 7 (0.25, 0.25, 0.25, 0.5, 1.5, 1.5 et une ligne sans note) ; le nombre de lignes pointillées ne correspond pas non plus."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Scène 2 : l'image montre 7 lignes pour 6 notes (0.25, 0.25, 0.25, 0.5, 1.5, 1.5). Le nombre de lignes pointillées n'est pas indiqué précisément."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Critères dans la marge : ceux de la scène 1 sont mal placés. L'image montre 5 cases (مع1أ، مع1ب، مع2أ، مع2ب، مع4) en haut ; ensuite مع1أ، مع1ب، مع2أ، مع2ب، مع3ب pour la scène 2. Pour la scène 3, seul مع4 est présent avec deux cases. Le contenu est globalement correct mais l'attribution 'مع4 للمشهد 3' omet la double case."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les deux bulles de dialogue vides de la scène 3 sont mentionnées, mais la bulle de la scène 2 et la numérotation de la page (20) sont absentes de la transcription."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Tableau, ligne 'التملك دون الأدنى' : مع2ب est 0.5-1 (image : 1 - 0,5), correct ; mais مع2أ est 0.25-0.5, OK. En revanche la ligne 'التملك الأدنى' : مع2ب est 1.5-2 (OK), مع3أ 2 (OK)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les en-têtes de ligne du tableau sont donnés sans voyelles alors qu'elles sont visibles (إِنْعِدَامُ التَّمَلُّكِ، التَّمَلُّكُ دُونَ الأَدْنَى، التَّمَلُّكُ الأَدْنَى، التَّمَلُّكُ الأَقْصَى) ; 'انعدام' est écrit sans tashkeel."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les codes de critères sont écrits 'مع1أ' dans la transcription, alors que l'image les présente sous la forme 'مع.1أ' avec un tiret allongé ; l'ordre des colonnes dans l'image est inversé (RTL)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Tableau : les en-têtes sont transcrits sans voyelles alors qu'elles sont visibles dans l'image (إِنْعِدَامُ التَّمَلُّكِ، التَّمَلُّكُ دُونَ الْأَدْنَى، التَّمَلُّكُ الْأَدْنَى، التَّمَلُّكُ الْأَقْصَى ; مَعَايِيرُ الْحَدِّ الْأَدْنَى ; مِعْيَارُ التَّمَيُّزِ ; الْمَعَايِيرُ / مُسْتَوَيَاتُ التَّمَلُّكِ)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Scène 3 : la marge montre deux cases en face de مع4, ce que la transcription omet. Le numéro de page (20) est aussi absent."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أَسْتَعِينُ بِالْإِنْتَاجِ السَّابِقِ، وَأُنْتِجُ نَصًّا يُلَائِمُ الْمَشَاهِدَ وَأُضَمِّنُهُ أَوْصَافًا وَأَقْوَالًا.",
+      "body": "ثلاثة مشاهد مرسومة يُكتب تحت كل مشهد نص على أسطر منقوطة. المشهد 1: صيادان في قاربين وتحتهما دلافين وأسماك تسبح في البحر. المشهد 2: صياد في قارب ودلفين يقفز تحته وبالونة حوار فارغة. المشهد 3: شبكة صيد تحتوي دلافين، وبعض الدلافين خارجها، ومستطيلان/بالونتا حوار فارغتان. النقاط على يسار الأسطر: المشهد 1: 0.25 / 0.25 / 0.25 / 0.5 / 1.5 / 1.5؛ المشهد 2: 0.25 / 0.25 / 0.25 / 0.5 / 1.5 / 1.5؛ المشهد 3: 0.25 / 0.25 / 0.25 / 0.5 / 1.5 / 2. المعايير في الهامش (مع خانة أمام كل معيار): مع1أ، مع1ب، مع2أ، مع2ب، مع4 (للمشهد 1)؛ مع1أ، مع1ب، مع2أ، مع2ب، مع3ب (للمشهد 2)؛ مع4 بخانتين (للمشهد 3). رقم الصفحة: 20.",
+      "figureDesc": "ثلاثة رسوم لصيادين في قوارب ودلافين تحت الماء؛ الثاني فيه دلفين وبالونة حوار فارغة؛ الثالث فيه شبكة صيد ودلافين وبالونتا حوار فارغتان.",
+      "answer": null,
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p021_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الأعمدة: الْمَعَايِيرُ / مُسْتَوَيَاتُ التَّمَلُّكِ: مع1أ، مع1ب، مع2أ، مع2ب، مع3أ، مع3ب (مَعَايِيرُ الْحَدِّ الْأَدْنَى)، مع4 (مِعْيَارُ التَّمَيُّزِ). إِنْعِدَامُ التَّمَلُّكِ - - -: 0 في كل الأعمدة. التَّمَلُّكُ دُونَ الْأَدْنَى + - -: مع1أ 0.25-0.5؛ مع1ب 0.25-0.5؛ مع2أ 0.25-0.5؛ مع2ب 0.5-1؛ مع3أ 1؛ مع3ب 1.5؛ مع4 1.5. التَّمَلُّكُ الْأَدْنَى + + -: مع1أ 0.75-1؛ مع1ب 0.75-1؛ مع2أ 0.75-1؛ مع2ب 1.5-2؛ مع3أ 2؛ مع3ب 3؛ مع4 3-4. التَّمَلُّكُ الْأَقْصَى + + +: مع1أ 1.25-1.5؛ مع1ب 1.25-1.5؛ مع2أ 1.25-1.5؛ مع2ب 2.5-3؛ مع3أ 3؛ مع3ب 4.5؛ مع4 5.",
+      "figureDesc": "جدول إسناد الأعداد حسب مستويات التملك والمعايير",
+      "answer": null,
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p021_i2"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أَسْتَعِينُ بِالْإِنْتَاجِ السَّابِقِ، وَأُنْتِجُ نَصًّا يُلَائِمُ الْمَشَاهِدَ وَأُضَمِّنُهُ أَوْصَافًا وَأَقْوَالًا.",
+      "body": "ثلاثة مشاهد مرسومة يُكتب تحت كل مشهد نص على أسطر منقوطة. المشهد 1: صيادان في قاربين وتحتهما دلافين وأسماك تسبح في البحر. المشهد 2: صياد في قارب ودلفين يقفز تحته وبالونة حوار فارغة. المشهد 3: شبكة صيد تحتوي دلافين، وبعض الدلافين خارجها، وبالونتا حوار فارغتان. الأسطر مرفقة بنقاط: المشهد 1: 0.25 / 0.25 / 0.25 / 0.5 / 1.5 / 1.5؛ المشهد 2: 0.25 / 0.25 / 0.25 / 0.5 / 1.5 / 1.5؛ المشهد 3: 0.25 / 0.25 / 0.25 / 0.5 / 1.5 / 2. المعايير في الهامش: مع1أ، مع1ب، مع2أ، مع2ب، مع4 (للمشهد 1)؛ مع1أ، مع1ب، مع2أ، مع2ب، مع3ب (للمشهد 2)؛ مع4 (للمشهد 3).",
+      "figureDesc": "ثلاثة رسوم لصيادين في قوارب ودلافين تحت الماء؛ الثاني فيه دلفين وبالونة حوار فارغة؛ الثالث فيه شبكة صيد ودلافين وبالونتا حوار فارغتان.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p021_i1",
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الأعمدة: مستويات التملك / المعايير: مع1أ، مع1ب، مع2أ، مع2ب، مع3أ، مع3ب (معايير الحد الأدنى)، مع4 (معيار التميز). انعدام التملك - - -: 0 في كل الأعمدة. التملك دون الأدنى + - -: مع1أ 0.25-0.5؛ مع1ب 0.25-0.5؛ مع2أ 0.25-0.5؛ مع2ب 0.5-1؛ مع3أ 1؛ مع3ب 1.5؛ مع4 1.5. التملك الأدنى + + -: مع1أ 0.75-1؛ مع1ب 0.75-1؛ مع2أ 0.75-1؛ مع2ب 1.5-2؛ مع3أ 2؛ مع3ب 3؛ مع4 3-4. التملك الأقصى + + +: مع1أ 1.25-1.5؛ مع1ب 1.25-1.5؛ مع2أ 1.25-1.5؛ مع2ب 2.5-3؛ مع3أ 3؛ مع3ب 4.5؛ مع4 5.",
+      "figureDesc": "جدول إسناد الأعداد حسب مستويات التملك والمعايير",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p021_i2",
+      "topicId": "ar-2-u8",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

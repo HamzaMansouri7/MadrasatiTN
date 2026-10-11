@@ -1,0 +1,122 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 121,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Attention : la page n'est pas une page de mathématiques ni du manuel Mouayen. C'est la page 4/4 d'un examen de français (Orthographe et Production écrite) sur le thème de la musique et des artistes, avec des consignes de type marocain (artiste marocain).",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "24",
+      "instruction": "J'écris les mots entre parenthèses correctement :",
+      "body": "J'aime la musique (doux) ................... et relaxante. Tu (devoir au conditionnel présent)........................... l'essayer. (c- Orthographe : 3pts ; 1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p121_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "25",
+      "instruction": "Je mets au pluriel les mots entre parenthèses :",
+      "body": "J'ai visité des théâtres, ce sont des (lieu)...................... où on présente des spectacles (musical)......................... ou autre. J'ai vu des actrices avec leurs (éventail)..........................., elles se préparaient pour leurs rôles. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p121_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "26",
+      "instruction": "Je complète avec :",
+      "body": "(tout / tous / toute / toutes)...................... les grands artistes ont eu (peu / peut / peux)................. de reconnaissance durant leur vie, (quel / quelle / qu'elle) .......................... serait leur surprise s'ils savaient qu'ils étaient devenus célèbres après leur mort. (1pt)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p121_i3",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "27",
+      "instruction": "Je complète le texte suivant avec les expressions données : (III. Production écrite : 7pts ; 2pts)",
+      "body": "Expressions : commencer la saison de la chasse – est un art – des instruments primitifs – le début d'une saison ou un mariage.\nTexte : La musique ............................ très ancien, les humains ont commencé à la jouer avec ........................................ comme les tambours. Ils l'utilisaient pour déclarer la guerre, ..................................................... ou célébrer ..............................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p121_i4",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "28",
+      "instruction": "Je rédige un texte informatif en 7 lignes au moins, dans lequel je parle d'un artiste marocain ou une artiste marocaine que je connais. (5pts)",
+      "body": "",
+      "figureDesc": "Environ 14 lignes pointillées pour écrire la production. Pied de page : Page 4 sur 4.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p121_i5",
+      "topicId": null,
+      "formatGuess": "text_production",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.26
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est la dernière page d'un examen de français (orthographe, accords, production écrite) sur la musique et les artistes, avec des consignes de type marocain ; elle couvre plusieurs notions (accords, pluriel, conditionnel, texte informatif) sans correspondre clairement à un seul module officiel.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Orthographe et production écrite : la musique",
+    "skill": "Accorder et orthographier correctement des mots (pluriel, accord, homophones) puis rédiger un texte informatif sur un artiste.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "orthographe",
+      "pluriel des noms",
+      "homophones",
+      "accord de l'adjectif",
+      "conditionnel présent",
+      "texte informatif",
+      "artiste marocain"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un examen de français centré sur un thème culturel unique (musique, artistes) : exercices d'orthographe à trous (accord, pluriel, homophones tout/peu/quel), texte à compléter avec des expressions imposées, et production d'un texte informatif sur un artiste local, ce qui permet de contextualiser la grammaire.",
+    "themeGroup": "Production écrite et lettres"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

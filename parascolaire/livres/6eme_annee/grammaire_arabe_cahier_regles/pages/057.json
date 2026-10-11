@@ -1,0 +1,116 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 57,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الأسماء الموصولة (تمارين) ثم اسم الفاعل من المضاعف المزيد (المراجعة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الثاني",
+      "instruction": "أعين وظيفة كل مركب موصولي مسطر في النص التالي",
+      "body": "كنا نستمتع بالرحلة حين حدث ما كنا نخشاه ، فقد ضاع التلميذ الذي يجلس بجانبي في الحافلة وبحثنا عنه طويلا لكن دون جدوى  نظر السائق إلى المعلمة التي كانت ترافقنا وخاطبها قائلا التلاميذ الذين كانوا في المتحف عادوا كلهم ، ربما ذهب إلى دورة المياه",
+      "figureDesc": "نص داخل إطار مستطيل؛ المركبات الموصولية مسطرة في الأصل (حين حدث ما كنا نخشاه، الذي يجلس بجانبي في الحافلة، التي كانت ترافقنا، الذين كانوا في المتحف) ولا يظهر التسطير بوضوح في الصورة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p057_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الثالث",
+      "instruction": "أعمر الفراغ باسم الموصول المناسب",
+      "body": "لا تصدق ........ عاهدوا فأخلفوا\nلم استسغ ........ سمعته عنك\nأنا ........ تحصلت على أحسن معدل في القسم\nهؤلاء النسوة هن ........ شاركن في اجتماع الأولياء\n........ يعمل مثقال ذرة خيرا يره",
+      "figureDesc": "إطار مستطيل فيه خمس جمل بها فراغات (نقاط) لتعمر بأسماء الموصول",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "grammaire_arabe_cahier_regles_p057_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الرابع",
+      "instruction": "أبحث عن آيات قرآنية أو أحاديث نبوية تحتوي على أسماء موصولة",
+      "body": "",
+      "figureDesc": "إطار فارغ كبير مخصص لكتابة الإجابة",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p057_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "اسم الفاعل من المضاعف المزيد — المراجعة",
+      "body": "يصاغ اسم الفاعل من المضاعف المجرد على وزن فاعل وذلك بإدغام العين واللام فلا نقول مادد بل مادّ\nالأفعال: شد، عدت، مدا، ردتا، كفوا، مررن",
+      "figureDesc": "جدول من ستة أعمدة، الصف الأول فيه: شد، عدت، مدا، ردتا، كفوا، مررن، والصف الثاني فارغ ليكتب فيه اسم الفاعل",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p057_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "",
+      "figureDesc": "عنوان «الدرس» في أسفل الصفحة دون محتوى ظاهر",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p057_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.21
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur les noms relatifs (الأسماء الموصولة) et le participe actif des verbes géminés augmentés, des points de grammaire qui ne correspondent clairement à aucune des six unités arabes, centrées sur la narration ; seule l'unité 1 mentionne la conjugaison, mais pour les verbes défectifs.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Pronoms relatifs et participe actif",
+    "skill": "Identifier la fonction des groupes relatifs, compléter par le pronom relatif adéquat et former le participe actif des verbes sourds augmentés.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "pronoms relatifs",
+      "grammaire arabe",
+      "fonction grammaticale",
+      "participe actif",
+      "verbes sourds",
+      "révision"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : un court récit de sortie scolaire où l'on repère la fonction des groupes relatifs, des phrases à compléter avec le relatif selon le genre et le nombre, et une recherche de relatifs dans des versets ou hadiths.",
+    "themeGroup": "Les pronoms relatifs"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

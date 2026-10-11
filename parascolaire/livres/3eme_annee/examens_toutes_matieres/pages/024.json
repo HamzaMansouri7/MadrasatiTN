@@ -1,0 +1,82 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 24,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إنتاج كتابي – اختبار نهاية الثلاثي الأول (عدد 3) – السنة الثالثة: إتمام حوار بين المعلم وتلاميذه وإنتاج نص سردي يتضمن أقوالاً مع حسن استعمال علامات الترقيم",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكْمِلِ الحِوَارَ بَيْنَ الْمُعَلِّمِ وَتَلَامِيذِهِ بِمَا تَرَاهُ مُنَاسِبًا حَسَبَ السِّيَاقِ.",
+      "body": "قَالَ الْمُعَلِّمُ لِتَلَامِيذِهِ:\n- هَلْ تَعْلَمُونَ مَا هُوَ دَرْسُنَا فِي الْأُسْبُوعِ الْمُقْبِلِ ؟\nفَقَالَ الْأَطْفَالُ بِصَوْتٍ وَاحِدٍ:\n- كَلَّا يَا سَيِّدِي، قُلْ لَنَا مَا هُوَ ؟\nفَقَالَ الْمُعَلِّمُ:\n- ........................................\nفَقَالَ أَحْمَدُ مُسْتَفْسِرًا:\n- ........................................\nفَأَجَابَ الْمُعَلِّمُ مُوَضِّحًا:\n- ........................................\nعِنْدَهَا قَالَتْ زَيْنَبُ:\n- إِنَّهُ مَوْضُوعٌ شَيِّقٌ ! سَوْفَ أُحْضِرُ لِإِثْرَاءِ الْحِصَّةِ سُمَيْكَةً تَسْبَحُ فِي حَوْضٍ بِلَّوْرِيٍّ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p024_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَتَأَمَّلُ الْمَشَاهِدَ ثُمَّ أُنْتِجُ نَصًّا سَرْدِيًّا يَتَضَمَّنُ أَقْوَالًا مَعَ حُسْنِ اسْتِعْمَالِ عَلَامَاتِ التَّنْقِيطِ.",
+      "body": "أسطر منقّطة للكتابة (خمسة أسطر ظاهرة وتتواصل في الصفحة الموالية).",
+      "figureDesc": "رسم بالأبيض والأسود لمشهد في مطبخ: امرأة (أم) تغسل الأواني عند المغسلة، بجانبها رفّ للصحون، وفتاة صغيرة تقف إلى يمينها وتتحدث إليها، وفي أعلى الرسم فقاعة فكرية فيها أطباق أو ثمار. الصورة مقتطعة من أسفل الصفحة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p024_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-3-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u3",
+    "confidence": 0.38
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Il s'agit d'une évaluation de fin de premier trimestre (production écrite : compléter un dialogue et produire un récit avec paroles rapportées et ponctuation), qui ne correspond clairement à aucune unité précise (u1 à u3) mais couvre l'ensemble du trimestre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Dialogue et texte narratif",
+    "skill": "Compléter un dialogue entre maître et élèves, puis rédiger un récit comportant des paroles rapportées avec une ponctuation correcte.",
+    "pageType": "exam",
+    "formats": [
+      "production_ecrite",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "production écrite",
+      "dialogue",
+      "discours direct",
+      "ponctuation",
+      "texte narratif",
+      "évaluation trimestrielle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de classe où l'élève prolonge un échange maître-élèves à partir d'une amorce, puis passe à un récit guidé par des images en y insérant des paroles rapportées; la consigne vise explicitement la ponctuation du dialogue.",
+    "themeGroup": "Production écrite : dialogue et récit"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

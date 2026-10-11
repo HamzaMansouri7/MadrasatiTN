@@ -1,0 +1,174 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 20,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension (suite) : texte sur la fourmi et le pinson, la sagesse du travail",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2b",
+      "instruction": "Justifie ta réponse :",
+      "body": "Deux lignes de pointillés pour écrire la réponse (suite de la question 2, dont la partie a n'est pas visible sur cette page).",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p020_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3a",
+      "instruction": "Devant qui les enfants ne s'arrêtent-ils pas ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p020_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3b",
+      "instruction": "Pourquoi ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p020_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Quels animaux les enfants invitent-ils ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p020_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Le pinson a deux tâches à remplir. Lesquelles ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p020_i5",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6a",
+      "instruction": "Remplace l'adjectif en gras par son contraire :",
+      "body": "- Les enfants sont paresseux.\n(une ligne de pointillés pour la réponse)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p020_i6",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6b",
+      "instruction": "Remplace ce qui est souligné par une expression de même sens :",
+      "body": "- Les enfants n'osent pas s'arrêter devant l'active fourmi. (« osent » est souligné)\n- Les enfants ........................ s'arrêter devant l'active fourmi.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p020_i7",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Entoure la bonne réponse :",
+      "body": "* Quelle est la leçon qu'on peut tirer de ce texte ?\n- Il faut passer la plupart du temps à jouer et à déranger les autres.\n- Il faut passer la plupart du temps à travailler.\n- On doit jouer avec les animaux de la forêt.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p020_i8",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.69
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une compréhension de lecture sur la fourmi et le pinson, qui montre la sagesse du travail. Elle correspond au Module 1 « Travailler pour s'épanouir » (récits sur le travail), avec des exercices de grammaire et de vocabulaire (contraire, expression de même sens).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    120
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : le travail",
+    "skill": "Comprendre un texte narratif en répondant à des questions, puis remplacer un adjectif par son contraire et une expression par une expression de même sens.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "qcm"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "fourmi",
+      "pinson",
+      "contraire",
+      "synonyme",
+      "leçon morale"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une fable animalière sur la valeur du travail, suivie d'une série de questions allant du repérage à la justification, d'un travail sur le lexique (contraire, expression équivalente) et d'un QCM final sur la morale du texte.",
+    "themeGroup": "Métiers, citoyenneté et vie sociale"
+  },
+  "audit": {
+    "accuracy": 0.96,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de la page ne sont pas transcrits : « Sagesse », « 6ème année de base », « Lecture - Compréhension », ainsi que le pied de page « Lire et s'exprimer », « 19 », « 6ème année de base »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les annotations « (suite de la question 2, dont la partie a n'est pas visible sur cette page) » et « (« osent » est souligné) » sont des commentaires du transcripteur, pas du texte de la page. Elles sont cependant plausibles et correspondent à l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.96
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

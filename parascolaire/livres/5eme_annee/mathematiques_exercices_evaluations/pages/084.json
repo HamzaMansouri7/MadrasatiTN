@@ -1,0 +1,101 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 84,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مراجعة ودعم: أرسم ارتفاعات المثلث (ملاحظة : la page est en réalité une page de géométrie/mathématiques, pas de langue arabe)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ارْسُمْ قِطْعَةَ الْمُسْتَقِيمِ [اب] تَقِيسُ 4 صم ثُمَّ ارْسُمِ الْمُوَسِّطَ الْعَمُودِيَّ لِـ [اب] فَيَقْطَعُهَا فِي \" م \"",
+      "body": "- عَيِّنْ نُقْطَةَ \" ج \" عَلَى الْمُوَسِّطِ الْعَمُودِيِّ.\n- اجْمَعْ بَيْنَ \" أ \" و \" ج \" ثُمَّ بَيِّنْ \" ب \" و \" ج \".\n- مَاهُوَ نَوْعُ الْمُثَلَّثِ أ ب ج؟ مَاذَا يُمَثِّلُ [م ج] بِالنِّسْبَةِ لِلْمُثَلَّثِ أ ب ج؟\n- ارْسُمْ بَقِيَّةَ ارْتِفَاعَاتِ هَذَا الْمُثَلَّثِ. مَاذَا نُلَاحِظُ؟",
+      "figureDesc": "Deux lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p084_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ارْسُمْ ارْتِفَاعَاتِ هَذِهِ الْمُثَلَّثَاتِ:",
+      "body": "المثلثات: ط ص س، هـ ع و، ع ق و",
+      "figureDesc": "Trois triangles : ط ص س (obtusangle à gauche), هـ ع و (obtusangle au centre, base هـ ع en haut), ع ق و (triangle isocèle à droite, sommet ع).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p084_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارْسُمْ مُثَلَّثًا س م ص بِحَيْثُ س م = م ص، س م̂ ص = 60°",
+      "body": "- ارْسُمِ ارْتِفَاعَاتِ هَذَا الْمُثَلَّثِ وَمِنْ نُقْطَةِ تَقَاطُعِ الارْتِفَاعَاتِ ارْسُمْ دَائِرَةً تَمُرُّ مِنْ \" م \".\nمَاذَا نُلَاحِظُ؟",
+      "figureDesc": "Lignes pointillées pour la réponse ; deux triangles dessinés en bas : أ ص س avec le point ب sur [ص س] et le segment [أ ب], et un triangle ع ى avec un point ب sur un côté.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p084_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَاذَا يُمَثِّلُ [أ ب] بِالنِّسْبَةِ لِكُلِّ مُثَلَّثٍ؟",
+      "body": "",
+      "figureDesc": "Une ligne pointillée pour la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p084_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une page de géométrie (révision et soutien) sur le tracé des hauteurs d'un triangle, médiatrice et point d'intersection des hauteurs, ce qui correspond à la Période 3 qui traite des polygones et des hauteurs.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Hauteurs d'un triangle",
+    "skill": "Construire les hauteurs d'un triangle (quelconque, isocèle, équilatéral) et identifier le rôle d'un segment dans un triangle.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "hauteurs",
+      "triangle",
+      "médiatrice",
+      "orthocentre",
+      "construction géométrique",
+      "cercle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement de constructions guidées (segment, médiatrice, point, triangle isocèle, hauteurs) menant à une observation, avec des triangles dans des positions variées (aigu, obtus, rectangle) pour tracer les hauteurs et reconnaître un segment comme hauteur ou non.",
+    "themeGroup": "Angles, cercle et triangles"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

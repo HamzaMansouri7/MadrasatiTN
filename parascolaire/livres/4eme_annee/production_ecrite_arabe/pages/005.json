@@ -1,0 +1,117 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 5,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "وصف الطبيعة: السهول والغابات والأودية (نصوص داعمة للإنتاج الكتابي)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "وكان مرأى تلك السهول الخضراء يثير في الصدر انشراحا أشجار صنوبر وعبير أزهار وتغريد أطيار وشمس ترسل خيوطا ذهبية\nكانت السهول محاطة بإطار من الأشجار الخضراء ومن حقول القمح الذهبية",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p005_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الغابات",
+      "body": "دخلنا الغابة فإذا نحن في جنان مترامية الأطراف\nغابة خضراء آمنة وجميلة مترامية فوق التلال\nكنت ترى الأشجار النضرة والأغصان والأزهار المفتحة وأنواع النباتات المختلفة وقد زادها الندى روعة وجمالا حتى أن الناظر يخالها فراديس الجنان\nغابة موحشة كثيفة الأشجار التي تحجب عنها أشعة الشمس فهي تموج بالسباع\nغابة داكنة الخضرة عابقة الشذا ذات أدواح ضخمة\nوصلنا غابة ذات تلال وطيئة تخالها أودية تنبت فيها أعشاب وشجيرات\nهذه أشجار لا تحصى مثقلة بثمارها مترامية أطرافها وارفة ظلالها\nوهذه قطعان من الغنم والبقر ترعى العشب الأخضر في اطمئنان\nوكنت تسمع زقزقة العصافير وغناء الحسون وترى الغزلان والسناجب والأرانب ترتع وتمرح راقصة في كل مكان\nهذه الغابة الجميلة بها الماء العذب والحشائش الخضراء الطرية والمناظر الخلابة والجبال العالية الكثيرة الأشجار المتشابكة أغصانها\nمررنا بغابة كثيفة كأنها روضة م رياض الجنة ماء وأنهار وظلال وأشجار أزهار وأنوار حمام وطيور\nكانت الغابة أشد سحرا وبهاء فكانت خضراء على اختلاف الفصول وتعاقبها وكانت الأشجار تحتمل عاتي الريح وغزير المطر\nوجدت نفسي في غابة كثيرة الأشجار فأينما أرسلت بصري لا أرى إلا الخضرة فالأغصان مزدانة بأوراقها وأزهارها والأعشاب تكسو الأرض فكأنها الزرابي بديعة الصنع متعددة الألوان\nهاهي الغابات تمتد خضراء فتستهوي النفس وتبهج القلب",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p005_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الأودية",
+      "body": "واد نضير خصيب تحيط به جبال صخرية يتدفق منها ماء غزير عذب صاف\nتوجد فيها عين ماء يتدفق منها ماء غزير فإذا هي شلالات تنهمر على المنحدرات",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p005_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u7",
+    "confidence": 0.34
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page propose des textes de description de la nature (plaines, forêts, vallées) comme support à la production écrite en arabe, mais aucune unité officielle ne traite de la description de paysages : les unités 4 à 6 portent sur la description et la caractérisation des personnages, donc aucune ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description de la nature",
+    "skill": "Décrire un paysage (plaines, forêts, vallées) en mobilisant un lexique et des images adaptés pour produire un texte descriptif.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "description",
+      "paysage",
+      "plaines",
+      "forêts",
+      "vallées",
+      "lexique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banque de phrases modèles classées par type de paysage (plaine, forêt, vallée), réutilisable pour des exercices de production écrite guidée, de repérage du lexique descriptif ou de réécriture avec enrichissement.",
+    "themeGroup": "Description de la nature et des paysages"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.96
+  },
+  "audit": {
+    "accuracy": 0.96,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« هذه أشجار لا تحصى » : l'image porte « هذه أشجار » avec un hamza sur « أشجار » ; la transcription est correcte, mais la ligne est bien « هذه أشجار لا تحصى مثقلة »"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« روضة م رياض الجنة » : la transcription reproduit « م » isolé, qui est aussi dans l'image (« م رياض »), à signaler comme une coquille de la source (probablement « من »)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« ماء وأنهار وظلال وأشجار أزهار وأنوار » : correspond à l'image, sans erreur"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La première ligne « وكان مرأى ... » et la suite sont séparées en deux cellules dans l'image ; la transcription les fusionne en une seule cellule, ce qui est acceptable"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

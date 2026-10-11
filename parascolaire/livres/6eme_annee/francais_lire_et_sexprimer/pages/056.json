@@ -1,0 +1,137 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 56,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : l'hygiène et la santé (propreté, vérification du corps) ; Une petite fille imprudente",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Que doit-on faire pour être propre ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p056_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Que regarde un mécanicien quand il vérifie la voiture ?",
+      "body": "Une ligne de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p056_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Qui peut vérifier le bon état de notre corps ?",
+      "body": "Une ligne de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p056_i3",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Relève, dans le texte, le contraire des mots écrits en gras :",
+      "body": "- Des vêtements propres ≠ Des vêtements ..........................\n- Un corps en mauvais état ≠ Un corps en ..........................état.\n- Une fille charmante ≠ Une fille ..................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p056_i4",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Remets ces paragraphes en ordre :",
+      "body": "Une petite fille imprudente\n* La semaine dernière, Lise a voulu faire plaisir à ses petites camarades. Pour cela, la jeune fille a pris chez elle un tube de médicaments contre les maux de tête. Les cachets ressemblent en effet à des bonbons.\n* À l'école, Lise a avalé quatre cachets et a donné la même quantité à Martine, sa meilleure amie. Puis, elle a distribué le reste des cachets à quelques camarades, donnant à chacune un seul comprimé.\n* Les deux petites filles, Lise et Martine ont été rapidement prises de malaises. On les a conduites d'urgence à l'hôpital.\n(Suivent cinq lignes de pointillés pour écrire le texte remis en ordre.)",
+      "figureDesc": "Texte encadré avec titre en italique ; trois paragraphes marqués d'un astérisque ; lignes de pointillés en dessous.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p056_i5",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m6",
+    "confidence": 0.4
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de lecture-compréhension en français sur l'hygiène, la propreté et la vérification du corps (santé), ce qui correspond au Module 6 « Être en forme et mieux se porter ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Hygiène et santé : compréhension de texte",
+    "skill": "Comprendre un texte documentaire et narratif en repérant des informations, des contraires et l'ordre logique des paragraphes.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "hygiène",
+      "santé",
+      "propreté",
+      "compréhension écrite",
+      "contraires",
+      "paragraphes à remettre en ordre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "On peut réutiliser l'enchaînement de questions de repérage, la recherche de contraires de mots en gras dans le texte, et la remise en ordre de paragraphes d'une histoire sur un danger du quotidien (médicaments confondus avec des bonbons), avec une visée de prévention.",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« Une ligne de pointillés » dans les questions 3 et 4 est une description de mise en page, pas du texte imprimé. Même remarque pour « Deux lignes de pointillés » à la question 2 et pour « (Suivent cinq lignes de pointillés...) » : le scan montre environ six lignes de pointillés après l'encadré, pas cinq."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes et pieds de page ne sont pas transcrits : « Lecture - Compréhension », « Sagesse », « 6ème année de base », « Lire et s'exprimer » et le numéro de page 55. La question 1 n'apparaît pas sur cette page, ce qui est normal."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les mots en gras (propres, mauvais, charmante) sont bien transcrits, mais la mise en gras est perdue. Le texte est par ailleurs fidèle à l'image."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

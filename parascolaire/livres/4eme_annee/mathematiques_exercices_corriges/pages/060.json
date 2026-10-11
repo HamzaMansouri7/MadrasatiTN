@@ -1,0 +1,142 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 60,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 15 - الأعداد من 10 000 إلى 99 999 (4) - العدد 10 000 - الضرب",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "استعمل جميع الكلمات التّالية لِكتابة أصغر عدد من 6 أرقام.",
+      "body": "مائة - تسعة - ألف - سبعون",
+      "figureDesc": "Quatre cases rectangulaires contenant les mots : مائة، تسعة، ألف، سبعون.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p060_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب عدد التّلاميذ الذين يمكن للحافلات نقلهم.",
+      "body": "نظّمت مدرسة زيارة لمكان أثريّ فاكترت لهذا الغرض 3 حافلات. بكلّ حافلة 45 مقعدا للجلوس و 18 مكانا مخصّصا للوقوف.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p060_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اِقرأ المسائل ثم أكتب رقم الجواب الصّحيح لكلّ مسألة :",
+      "body": "① اشترت امرأة 6 لفائف من الخيط الصّوفيّ. كتلة الواحدة 75 غ. ما هي كتلة الصوف المشتراة؟\n② صرف مهدي 75د لشراء مذياع وبقي معه 6 دنانير. ما هو المبلغ الذي كان معه؟\n③ لو أضافت فاطمة 6 دنانير لما معهالاشترت غطاء صوفيا بـ 75 د. ما هو المبلغ الذي كان معها؟\nالأجوبة: أ) 6 + 75   ب) 6 - 75   ج) 6 x 75   د) 6 : 75",
+      "figureDesc": "Trois cadres de problèmes numérotés ①②③ et quatre cases de réponses étiquetées أ، ب، ج، د : 6 + 75، 6 - 75، 6 x 75، 6 : 75.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p060_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اختر عددا محصورا بين 60 و80",
+      "body": "- اضربه في 5.\n- أضف إلى النّتيجة المتحصّل عليها 3.\n- أضرب العدد المتحصّل عليه في 10.\n- أضف إلى النّتيجة المتحصّل عليها 3\n- أضرب العدد المتحصّل عليه في 2\n- اطرح 66 من العدد المتحصّل عليه\n- قارن النّتيجة النّهائية بالعدد الذي اخترته.\n- حاول أن تفسّر.",
+      "figureDesc": "Cadre divisé en deux colonnes ; la colonne de droite contient les premières étapes, celle de gauche les suivantes.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p060_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p5",
+    "confidence": 0.57
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les nombres à 5-6 chiffres (10 000) et surtout sur des problèmes de multiplication (6x75, 3 bus x 45 places, chaîne d'opérations), ce qui correspond le mieux à la Période 2 (multiplication), bien que la numération relève aussi de la Période 1.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 99 999 et multiplication",
+    "skill": "Écrire et composer de grands nombres, et résoudre des problèmes multiplicatifs et additifs à plusieurs étapes.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "qcm",
+      "autre"
+    ],
+    "keywords": [
+      "grands nombres",
+      "10 000",
+      "multiplication",
+      "problèmes à étapes",
+      "nombre à composer",
+      "programme de calcul"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Réutilisable : composer le plus petit nombre à partir de mots-nombres imposés, problème de sortie scolaire en bus (places assises et debout), trois problèmes aux mêmes nombres mais aux opérations différentes à associer à la bonne réponse, et programme de calcul avec nombre choisi dont on compare le résultat final pour découvrir une régularité.",
+    "themeGroup": "Grands nombres"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: « فاكترت » est correct dans l'image, mais « أحسب » est placé avant l'énoncé alors que dans l'image il vient après (ordre des phrases inversé)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1: « لِكتابة » transcrit avec kasra; l'image porte « لِكتابة » avec « لَكتابة » (fatha visible sur le lam) — voyelle fausse."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« التّالية » et « التّلاميذ » : tashdid affiché correctement, mais « اِقرأ » et « أكتب » : l'image a « أُكتب » avec damma, absente dans la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 ②: « صرف مهدي 75د » transcrit « 75د » (correct), mais la question ③ « معهالاشترت » est reproduite telle quelle (collée dans l'image), acceptable."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 4: l'ordre des colonnes est inversé. Dans l'image, la colonne de droite (choisir un nombre, ×5, +3, ×10, +3) précède la colonne de gauche (×2, -66, comparer, expliquer); la transcription respecte cet ordre, mais « أضرب العدد المتحصّل عليه في 2 » est transcrit sans le tiret/espace conforme."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre de l'en-tête manquant: « الأسبوع 15 », « الأعداد من 10 000 إلى 99 999 (4) », « العدد 10 000 - الضرب », et numéro de page 56."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,79 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 59,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "Exercice de liaison par une flèche (nombres et dénombrement : quatre fleurs, cinq fleurs, une maison) et tableau d'attribution des notes. Attention : la page est en français, pas en arabe, et relève d'une épreuve de français.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "je relie par une flèche :",
+      "body": "quatre fleurs ; cinq fleurs ; une maison",
+      "figureDesc": "Trois images dans des cadres arrondis, à droite : (1) une maison avec deux arbres et un mur de clôture ; (2) un groupe de quatre fleurs ; (3) un groupe de cinq fleurs. Des points servent à relier chaque expression à l'image correspondante. Un filigrane « MOURAJAA.COM » traverse la page.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "examens_toutes_matieres_p059_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Tableau d'attribution des notes",
+      "body": "Niveau de maîtrise / Critères minimaux (C1, C2, C3) / Critère de perfectionnement (C5). Aucune maîtrise : 0, 0, 0. Maîtrise minimale insuffisante : de 0,5 à 2,5 (C1) ; de 0,5 à 2,5 (C2) ; de 0,5 à 3,5 (C3) ; C5 : 0 à 5. Maîtrise minimale : 3 (C1) ; 3 (C2) ; 4 (C3). Maîtrise maximale : de 3,5 à 4,5 (C1) ; de 3,5 à 4,5 (C2) ; de 4,5 à 6 (C3) ; C5 : —. note : ..... / 20",
+      "figureDesc": "Tableau de barème avec colonnes Niveau de maîtrise, C1, C2, C3 (critères minimaux) et C5 (critère de perfectionnement), suivi de la mention « note : ..... / 20 ». Le bas de la page montre une image partiellement coupée.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p059_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p1",
+    "confidence": 0.26
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page relève d'une épreuve de français (relier des groupes nominaux comme « quatre fleurs » à leur dénombrement, avec grille de notation C1/C2/C3/C5), et la liste officielle ne contient aucun chapitre de français, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Association nombre-quantité et grille de notation",
+    "skill": "Associer une quantité écrite en lettres (quatre, cinq, une) au groupe nominal correspondant, dans le cadre d'une évaluation de français.",
+    "pageType": "mixed",
+    "formats": [
+      "appariement",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres en lettres",
+      "dénombrement",
+      "relier par une flèche",
+      "grille de notation",
+      "critères d'évaluation",
+      "épreuve de français"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "On peut reprendre l'exercice d'appariement très simple qui relie un déterminant numéral à un groupe nominal, ainsi que le principe d'une grille d'attribution des notes par critères (C1, C2, C3 et critère de perfectionnement C5) avec des niveaux de maîtrise.",
+    "themeGroup": "Numération et notation"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

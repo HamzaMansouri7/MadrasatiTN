@@ -1,0 +1,304 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 82,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "القسمة (3) – الأسبوع 21 – جدول مضاعفات 12، القسمة الإقليدية (الخارج والباقي)، مسائل على القسمة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمم جدول مضاعفات 12.",
+      "body": "استعن بالجدول أعلاه للبحث عن الخارج والباقي في كلّ ممّا يلي :\n103 على 12 الخارج : ........ الباقي: ........\n96 على 12 الخارج: ........ الباقي: ........\n87 على 12 الخارج : ........ الباقي: ........",
+      "figureDesc": "جدول من سطرين وتسع خانات: السطر الأول 1 2 3 4 5 6 7 8 9 (من اليمين إلى اليسار)، والسطر الثاني تحته 12 و24 و36 مملوءة، والخانات من 4 إلى 9 فارغة. بجانبه دائرة كُتب فيها «12 x».",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p082_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "إذا كان القاسم 5 والخارج 48 فابحث عن المقسوم ذاكرا جميع الحلول الممكنة.",
+      "body": "إذا كان القاسم 5 والخارج 48 فابحث عن المقسوم ذاكرا جميع الحلول الممكنة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p082_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هو ثمن السّفيفة؟ / ما ثمن الزّرّ الواحد؟",
+      "body": "شرت خيّاطة 3 أزرار من نفس النّوع كما شرت بكرة خيط بـ 1800 مي ومترا من السّفيفة ثمنه يساوي نصف ثمن بكرة الخيط.\nما هو ثمن السّفيفة؟\nدفعت للبائع ورقة مالية ذات 5 د فلم يجد البائع ما يكفي من المال لذلك أرجع لها 6 قطع ذات 50 مي وزادها زرّا آخر من نفس النّوع الأوّل. ما ثمن الزّرّ الواحد؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p082_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) كم عدد الأوعية المملوءة؟ ب) كم يتبقّى من لتر بالدنّ؟",
+      "body": "أرادت أمّ تفريغ محتوى دنّ به 59 لترا من الزّيت في أوعية يسع كلّ واحد منها 8 لترات.\nأ) كم عدد الأوعية المملوءة؟\nب) كم يتبقّى من لتر بالدنّ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p082_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أ) ما هو ثمن الصّحن الواحد؟ ب) ما ثمن الملعقة الواحدة؟",
+      "body": "اشترت ربّة منزل 7 صحون و 3 ملاعق بثمن 4 400 مي واشترت من نفس البائع 5 صحون و3 ملاعق بثمن 3 400 مي\nأ) ما هو ثمن الصّحن الواحد؟\nب) ما ثمن الملعقة الواحدة؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p082_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch3",
+  "topicTitle": "Période 3 : Division euclidienne, fractions et périmètres",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.63
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la division euclidienne (table des multiples de 12, quotient et reste, recherche du dividende, problèmes de division), ce qui correspond à la Période 3 : Division euclidienne, fractions et périmètres.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    128
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division euclidienne et problèmes",
+    "skill": "Déterminer le quotient et le reste d'une division euclidienne à l'aide d'une table de multiples, puis résoudre des problèmes de division et de prix.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "division euclidienne",
+      "quotient et reste",
+      "table de multiples de 12",
+      "problèmes à étapes",
+      "monnaie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : table de multiples à compléter pour trouver quotient et reste, recherche de toutes les valeurs possibles du dividende, problèmes de contexte quotidien (mercerie, remplissage de bidons, achats groupés avec système d'équations simples).",
+    "themeGroup": "Division euclidienne"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 1 : le tableau du jeu de multiplication par 12 (cases 9 à 1, valeurs 12, 24, 36 renseignées) et le libellé « 12 x » sont absents de la transcription."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « الخارج » est écrit « الخــارج » avec kashida dans l'image ; « ممّا » et « كلّ » sont corrects. Pas d'erreur de fond, seulement une différence de graphie."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : « إذا كان القاسم » — l'image porte « إذا كان ااالقاسم » (coquille de l'original) ; la transcription corrige, ce qui est acceptable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « شرت خيّاطة » est transcrit correctement, mais « السّفيفة » est transcrit « السفيفة » dans le champ de résumé, sans la shadda visible dans l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : « الزّرّ الواحد » et « أوّل » : le résumé place la shadda de façon incohérente avec le corps du texte ; l'image porte « زرّا آخر من نفس النّوع الأوّل »."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 5 : « 4 400 » et « 3 400 » sont conformes à l'image (4 400 et 3 400), pas d'erreur."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les champs résumés des exercices 2, 3, 4 et 5 dupliquent ou condensent le texte, et le résumé de l'exercice 3 inverse l'ordre des deux questions par rapport à la page, sans reprendre l'énoncé."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de page (« الأسبوع 21 », « القسمة (3) ») et le numéro de page 78 ne sont pas transcrits."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.95,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3, champ instruction : « السفيفة » et « الزرّ » sont notés sans les shaddas de l'image, alors que le corps du texte porte « السّفيفة » et « الزّرّ ». C'est une incohérence interne, corrigée dans les items ci-dessous."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de page « الأسبوع 21 » et « القسمة (3) » ainsi que le numéro de page 78 sont bien visibles sur l'image mais absents de la transcription."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمم جدول مضاعفات 12.",
+      "body": "استعن بالجدول أعلاه للبحث عن الخارج والباقي في كلّ ممّا يلي :\n103 على 12 الخارج : ........ الباقي: ........\n96 على 12 الخارج: ........ الباقي: ........\n87 على 12 الخارج : ........ الباقي: ........",
+      "figureDesc": "جدول من سطرين وتسع خانات: السطر الأول 1 2 3 4 5 6 7 8 9 (من اليمين إلى اليسار)، والسطر الثاني تحته 12 و24 و36 مملوءة، والخانات من 4 إلى 9 فارغة. بجانبه دائرة كُتب فيها «12 x».",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p082_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "إذا كان القاسم 5 والخارج 48 فابحث عن المقسوم ذاكرا جميع الحلول الممكنة.",
+      "body": "إذا كان القاسم 5 والخارج 48 فابحث عن المقسوم ذاكرا جميع الحلول الممكنة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p082_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هو ثمن السّفيفة؟ / ما ثمن الزّرّ الواحد؟",
+      "body": "شرت خيّاطة 3 أزرار من نفس النّوع كما شرت بكرة خيط بـ 1800 مي ومترا من السّفيفة ثمنه يساوي نصف ثمن بكرة الخيط.\nما هو ثمن السّفيفة؟\nدفعت للبائع ورقة مالية ذات 5 د فلم يجد البائع ما يكفي من المال لذلك أرجع لها 6 قطع ذات 50 مي وزادها زرّا آخر من نفس النّوع الأوّل. ما ثمن الزّرّ الواحد؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p082_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) كم عدد الأوعية المملوءة؟ ب) كم يتبقّى من لتر بالدنّ؟",
+      "body": "أرادت أمّ تفريغ محتوى دنّ به 59 لترا من الزّيت في أوعية يسع كلّ واحد منها 8 لترات.\nأ) كم عدد الأوعية المملوءة؟\nب) كم يتبقّى من لتر بالدنّ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p082_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أ) ما هو ثمن الصّحن الواحد؟ ب) ما ثمن الملعقة الواحدة؟",
+      "body": "اشترت ربّة منزل 7 صحون و 3 ملاعق بثمن 4 400 مي واشترت من نفس البائع 5 صحون و3 ملاعق بثمن 3 400 مي\nأ) ما هو ثمن الصّحن الواحد؟\nب) ما ثمن الملعقة الواحدة؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p082_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمم جدول مضاعفات 12.",
+      "body": "استعن بالجدول أعلاه للبحث عن الخارج والباقي في كلّ ممّا يلي :\n103 على 12 الخارج : ........ الباقي: ........\n96 على 12 الخارج: ........ الباقي: ........\n87 على 12 الخارج : ........ الباقي: ........",
+      "figureDesc": "جدول من سطرين وتسع خانات: السطر الأول 1 2 3 4 5 6 7 8 9 (من اليمين إلى اليسار)، والسطر الثاني تحته 12 و24 و36 مملوءة، والخانات من 4 إلى 9 فارغة. بجانبه دائرة كُتب فيها «12 x».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "math_solutions_4eme_sellami_p082_i1",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "إذا كان القاسم 5 والخارج 48 فابحث عن المقسوم ذاكرا جميع الحلول الممكنة.",
+      "body": "إذا كان القاسم 5 والخارج 48 فابحث عن المقسوم ذاكرا جميع الحلول الممكنة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "math_solutions_4eme_sellami_p082_i2",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ما هو ثمن السفيفة؟ / ما ثمن الزرّ الواحد؟",
+      "body": "شرت خيّاطة 3 أزرار من نفس النّوع كما شرت بكرة خيط بـ 1800 مي ومترا من السّفيفة ثمنه يساوي نصف ثمن بكرة الخيط.\nما هو ثمن السّفيفة؟\nدفعت للبائع ورقة مالية ذات 5 د فلم يجد البائع ما يكفي من المال لذلك أرجع لها 6 قطع ذات 50 مي وزادها زرّا آخر من نفس النّوع الأوّل. ما ثمن الزّرّ الواحد؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p082_i3",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) كم عدد الأوعية المملوءة؟ ب) كم يتبقّى من لتر بالدنّ؟",
+      "body": "أرادت أمّ تفريغ محتوى دنّ به 59 لترا من الزّيت في أوعية يسع كلّ واحد منها 8 لترات.\nأ) كم عدد الأوعية المملوءة؟\nب) كم يتبقّى من لتر بالدنّ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "math_solutions_4eme_sellami_p082_i4",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أ) ما هو ثمن الصّحن الواحد؟ ب) ما ثمن الملعقة الواحدة؟",
+      "body": "اشترت ربّة منزل 7 صحون و 3 ملاعق بثمن 4 400 مي واشترت من نفس البائع 5 صحون و3 ملاعق بثمن 3 400 مي\nأ) ما هو ثمن الصّحن الواحد؟\nب) ما ثمن الملعقة الواحدة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "math_solutions_4eme_sellami_p082_i5",
+      "topicId": "math-4-ch3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,116 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 48,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "جمع المذكر السالم (le pluriel masculin sain) – قواعد اللغة العربية",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ضمائر الجمع (tableau de rappel)",
+      "body": "أنتم: جمع المذكر المخاطب\nهم: جمع المذكر الغائب",
+      "figureDesc": "Tableau à deux colonnes et deux lignes : pronom à droite, sa nature à gauche",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p048_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: يصاغ جمع المذكر السالم من الاسم المفرد بزيادة ألف ونون أو ياء ونون في آخره",
+      "body": "مرفوعا: زيادة ألف — اجتمع المدرسون\nمنصوبا: زيادة ياء ساكنة — رأيت اللاعبين\nمجرورا: زيادة ياء ساكنة — مررت بالصيادين",
+      "figureDesc": "Tableau de 3 colonnes (مرفوعا، منصوبا، مجرورا) avec la règle de formation et un exemple pour chaque cas",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p048_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وتحذف النون في الجمع إذا ورد الاسم مضافا",
+      "body": "مرفوعا: اجتمع مدرسو اللغة العربية\nمنصوبا: رأيت لاعبي الفريق الوطني\nمجرورا: مررت بصيادي القرية",
+      "figureDesc": "Tableau de 3 colonnes (مرفوعا، منصوبا، مجرورا) avec un exemple d'annexion pour chaque cas",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p048_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أضف إلى معلوماتك: أنواع الجمع",
+      "body": "سالم: هو ما سلم بناء مفرده — جمع المذكر السالم: فلاح ← فلاحون — جمع المؤنث السالم: ممرضة ← ممرضات\nمكسر: هو ما تغير بناء مفرده — جمع قلة: حرف ← أحرف — جمع كثرة: حرف ← حروف",
+      "figureDesc": "Tableau des types de pluriel : سالم (مذكر سالم، مؤنث سالم) et مكسر (قلة، كثرة), avec définitions et exemples",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p048_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اجمع كلمة طفل في الأمثلة التالية وغير ما ينبغي تغييره",
+      "body": "أنا طفل صغير عابث ← نحن\nكنت طفلا صغيرا عابثا ← كنا\nلست بطفل صغير عابث ← لسنا بـ",
+      "figureDesc": "Exercice encadré (Le premier exercice : التمرين الأول), sous le titre التمارين",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p048_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.45,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u6",
+    "confidence": 0.17
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite du pluriel masculin sain (grammaire arabe), mais aucun chapitre officiel d'arabe ne le mentionne explicitement ; les unités portent sur la narration (seul ar-6-ch1 évoque la conjugaison des verbes défectifs, ce qui n'est pas équivalent), donc aucune correspondance claire.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Pluriel masculin sain",
+    "skill": "Former le pluriel masculin sain selon la fonction (nominatif, accusatif, génitif) et supprimer le noun à l'état construit.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "pluriel masculin sain",
+      "grammaire arabe",
+      "cas grammaticaux",
+      "annexion (idafa)",
+      "pronoms de pluriel",
+      "pluriel brisé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : transformer une phrase du singulier au pluriel (en changeant verbe, pronom et préposition) avec un même mot-pivot à trois formes (affirmative, passée, négative), et un encadré comparant pluriel sain et pluriel brisé.",
+    "themeGroup": "Le pluriel masculin sain"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

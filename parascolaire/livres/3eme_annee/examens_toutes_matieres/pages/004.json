@@ -1,0 +1,130 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 4,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "فهم المنطوق/المقروء: أكرم وحقيبته (الأم وابنها، محطة القطار ومحطة الحافلات) – أسئلة فهم النص",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَضَعُ الْعَلَامَةَ (x) فِي خَانَةِ كُلِّ مَا لَهُ عَلَاقَةٌ بِالنَّصِّ.",
+      "body": "الْأَبُ ○ ، الْأُمُّ ○ ، الْأُخْتُ ○ ، أَكْرَمُ ○ ، أَمْجَدُ ○ ، كَرِيمٌ ○ ، الْمَطَارُ ○ ، مَحَطَّةُ الْقِطَارِ ○ ، مَحَطَّةُ الْحَافِلَاتِ ○",
+      "figureDesc": "Tableau de neuf cases rondes à cocher, sur trois lignes de trois, chacune accompagnée d'un mot : الأب، الأم، الأخت / أكرم، أمجد، كريم / المطار، محطة القطار، محطة الحافلات. Filigrane MOURAJAA.COM.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "examens_toutes_matieres_p004_i1",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-أ",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ : قَرِينَةً تُعَبِّرُ عَنْ خَوْفِ الْأُمِّ عَلَى ابْنِهَا :",
+      "body": "الْقَرِينَةُ : « ................................................ »",
+      "figureDesc": "Ligne pointillée à compléter",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p004_i2",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-ب",
+      "instruction": "قَرِينَةً تَدْعُو فِيهَا الْأُمُّ ابْنَهَا لِلْمُحَافَظَةِ عَلَى أَمْتِعَتِهِ.",
+      "body": "الْقَرِينَةُ : « ................................................ »",
+      "figureDesc": "Ligne pointillée à compléter",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p004_i3",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2-ج",
+      "instruction": "قَرِينَةً تَدْعُو فِيهَا الْأُمُّ وَلَدَهَا لِاحْتِرَامِ الْجَمِيعِ.",
+      "body": "الْقَرِينَةُ : « ................................................ »",
+      "figureDesc": "Ligne pointillée à compléter",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p004_i4",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-أ",
+      "instruction": "مَنْ سَيَضَعُ حَقِيبَةَ أَكْرَمَ حَسَبَ قَوْلِ الْأُمِّ ؟",
+      "body": "الْجَوَابُ : ................................................",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "examens_toutes_matieres_p004_i5",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-ب",
+      "instruction": "هَلْ قَبِلَ أَكْرَمُ بِاقْتِرَاحِ أُمِّهِ ؟",
+      "body": "الْجَوَابُ : ................................................",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p004_i6",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-3-u4",
+  "topicTitle": "Unité 4 : Collecte d'indices et justification",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-3-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u4",
+    "confidence": 0.58
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de compréhension de texte arabe où l'élève doit relever des indices (قرينة) dans le texte pour justifier ses réponses, ce qui correspond à l'unité 4 « Collecte d'indices et justification ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de l'oral : la mère et son fils",
+    "skill": "Comprendre un texte entendu ou lu en repérant les personnages, les lieux et des indices précis (conseils, peur, politesse) et en répondant à des questions simples.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension orale",
+      "dialogue mère-fils",
+      "gare",
+      "station de bus",
+      "relevé d'indices",
+      "conseils de politesse"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation du quotidien (un enfant qui voyage avec son sac, accompagné de sa mère inquiète) sert à structurer les questions: cocher les éléments liés au texte (avec des distracteurs), relever des phrases-indices selon leur fonction (peur, conseil, respect) puis répondre à des questions courtes sur qui fait quoi et sur l'acceptation d'une proposition.",
+    "ideaNote_extra": null,
+    "themeGroup": "Compréhension de l'oral"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

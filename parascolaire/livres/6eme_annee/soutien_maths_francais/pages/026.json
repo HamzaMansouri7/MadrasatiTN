@@ -1,0 +1,171 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 26,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Exercices de soutien unité 3 – 6ème année (Français : grammaire, conjugaison, orthographe, lexique). Remarque : la page est en français et non en mathématiques, et elle ne contient aucun texte arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "Grammaire 1",
+      "instruction": "Complète les phrases avec les mots de négation qui conviennent :",
+      "body": "a) J'aime l'école. - ....\nb) Elle travaille à Marrakech. - ....\nc) Je vois quelqu'un. - ....\nd) Je comprends tout. - ....\ne) Il a visité Taroudant. - ....\nf) J'ai d'argent. - ....",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p026_i1",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Grammaire 2",
+      "instruction": "Place le mot ou l'expression de la cause convenablement : « Car – parce que – puisque – comme – grâce à – à cause de »",
+      "body": "a) Ali est fatigué ........ il a beaucoup travaillé.\nb) Sara ouvre son parapluie ........ il pleut.\nc) ferme la porte ........ il fait froid.\nd) ........ il fait chaud, les gens vont à la plage.\ne) Elle a appris à écrire en français ........ ses efforts.\nf) Il n'a pas fait ses devoirs ........ de la télévision.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p026_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 1",
+      "instruction": "Conjugue les verbes entre parenthèses au conditionnel présent :",
+      "body": "a) Si j'étais à ta place, je (remplir) ........ toute la citerne.\nb) S'il voulait, il (finir) ........ son travail avant midi.\nc) S'il avait le choix, il (préférer) ........ partir en vacances.\nd) Si tu partais avant moi, tu (arriver) ........ le premier.\ne) Quel jour (désirer) ........-vous voyager ?",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p026_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 2",
+      "instruction": "Conjugue les verbes entre parenthèses à l'impératif présent :",
+      "body": "a) (fermer/ 2ème pers. sing) ........ la fenêtre avant de quitter le locale.\nb) (écouter/ 1ère pers. plur) ........ le discours de la candidate.\nc) (vider/ 2ème pers. plur) ........ vos cœurs.\nd) (donner/ 2ème pers. sing) ........ à ton petit garçon.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p026_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 1",
+      "instruction": "Mets la terminaison convenable aux mots suivants : « ail/aille – eil/eille – euil/euille »",
+      "body": "- une bout........ - le trav........ – accu........\n- une ab........ - le se........ – une bat........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p026_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 2",
+      "instruction": "Complète avec un nom de cette liste : « un conseil - feuille – les abeilles »",
+      "body": "a) Nous écrivons les leçons sur une ........\nb) Le miel est fabriqué par ........\nc) Donne-moi ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p026_i6",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 3",
+      "instruction": "Complète par : « tout – toute – tous – toutes »",
+      "body": "a) ........ le travail est terminé.\nb) Il va nager ........ les jours.\nc) ........ les filles participeront au spectacle.\nd) Il a fermé la porte à ........ force.\ne) Il me téléphone ........ les matins pour prendre de mes nouvelle.\nf) Le professeur a répondu à ........ les questions.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p026_i7",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 1",
+      "instruction": "complète par l'antonyme qui convient à chaque mot :",
+      "body": "Mots : début, petit, vivant, casser, fort ; ouvrir, Peu, faible, Acheter, perdre",
+      "figureDesc": "Deux tableaux à deux colonnes « Le mot » / « Son antonyme », la colonne des antonymes étant vide.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p026_i8",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 2",
+      "instruction": "Classe les mots suivants selon le tableau :",
+      "body": "Un écran – Le GPS – La souris – une page web – L'IPTV - le smart phone – Scanner – photocopier – un émail -",
+      "figureDesc": "Tableau à deux colonnes avec les catégories : L'informatique, L'internet, Le téléphone portable, Action, La télévision ; colonne de droite vide.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "soutien_maths_francais_p026_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-ch1",
+    "confidence": 0.25
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une série d'exercices de soutien de français couvrant plusieurs notions (négation, cause, conditionnel présent, impératif, orthographe, lexique) qui relèvent de plusieurs modules; seul le conditionnel correspond clairement au module 6, donc aucun chapitre ne correspond exactement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Soutien : grammaire, conjugaison, orthographe, lexique",
+    "skill": "Réviser la négation, l'expression de la cause, le conditionnel présent, l'impératif, les terminaisons en -ail/-eil/-euil, l'accord de « tout » et l'antonymie.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "appariement",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "négation",
+      "cause",
+      "conditionnel présent",
+      "impératif",
+      "accord de tout",
+      "antonymes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices de soutien courts et variés (phrases à compléter avec une liste de mots donnée, conjugaison guidée, classement de vocabulaire numérique dans un tableau) qui peut inspirer des fiches de révision multi-compétences par unité.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

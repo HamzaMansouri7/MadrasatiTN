@@ -1,0 +1,104 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 132,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Production de l'écrit : l'eau, sa conservation et son économie (fin d'un sujet d'examen, page 4 sur 4). La page n'est pas du manuel de mathématiques indiqué dans la consigne, c'est une épreuve de français.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "III-1",
+      "instruction": "Complète le texte à l'aide des mots suivants : « pratiques – indispensable – quotidiens – traitement » (2pts)",
+      "body": "L'eau est ........... pour la vie. Cependant, les ressources en eau douce sont limitées ; alors que le ........... des eaux usées et des eaux salées coûte cher. Des ........... permettant la conservation et l'économie de l'eau s'imposent. À la maison, dans les exploitations agricoles ou partout ailleurs, tout citoyen peut contribuer, par des gestes ........... , à relever les défis de l'eau.",
+      "figureDesc": "Texte à trous avec quatre espaces pointillés à remplir.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p132_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "III-2",
+      "instruction": "Tu fais partie du club de l'environnement dans ton école. Produis un texte de six à sept lignes pour conseiller à tes camarades d'économiser l'eau. (5pts)",
+      "body": "(Pour produire ton texte, tu peux rappeler à tes camarades ce que constitue l'eau pour la vie et comment sont les ressources en eau douce ; leur donner des conseils pour économiser l'eau et inciter tout le monde à protéger l'eau.) Bon courage !",
+      "figureDesc": "Page lignée en pointillés pour la rédaction, encadrée. Pied de page : « Page 4 sur 4 ».",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p132_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m8",
+    "confidence": 0.25
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est la fin d'une épreuve de français (complétion de texte et production écrite) sur la conservation et l'économie de l'eau, thème proche du module 5 « Sauver la nature » ; comme il s'agit d'un sujet d'examen, la correspondance avec un seul chapitre reste incertaine.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "L'eau : conservation et économie",
+    "skill": "Compléter un texte lexical puis rédiger un court texte de conseils pour inciter à économiser l'eau.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "eau",
+      "économie de l'eau",
+      "production écrite",
+      "conseils",
+      "environnement",
+      "vocabulaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation d'un club de l'environnement scolaire où l'élève conseille ses camarades, avec une consigne guidée (rappeler l'importance de l'eau, décrire les ressources limitées, donner des conseils, inciter à agir) et un texte à trous à partir d'une liste de mots fournie.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de la section « III- Production de l'écrit (7 pts) » n'est pas transcrit ; seuls les numéros d'exercices sont indiqués."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page « Page 4 sur 4 » est omis (contenu non essentiel)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "« Bon courage ! » figure à la fin de la page, après les lignes de réponse, et non à la suite de la consigne entre parenthèses, comme dans la transcription."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

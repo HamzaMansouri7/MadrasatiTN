@@ -1,0 +1,311 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 41,
+  "grade": "3ème Année",
+  "subject": "رياضيات",
+  "topicGuess": "اختبار نهاية الثلاثي الأول (عدد 4) – الأعداد إلى 9999، العمليات (الجمع والطرح) وحل مسائل بالمليم، القطع النقدية التونسية",
+  "items": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "",
+      "body": "امتحانات مدرستي تونس — اختبار نهاية الثلاثي الأول — عدد : 4 — المادة : رياضيات — المستوى : السنة الثالثة — الاسم : ........ اللقب : ........ القسم : ........ (أعمدة: الأنشطة، المعايير، النقاط المسندة)",
+      "figureDesc": "علامة مائية MOURAJAA.COM",
+      "answer": null,
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p041_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : أَحْسُبُ قِيمَةَ الْمَبْلَغِ الَّذِي صَرَفَهُ خَلِيلٌ فِي مَدِينَةِ الْمَلَاهِي.",
+      "body": "السَّنَدُ 1 : اِتَّفَقَ ثَـلَاثَةُ إِخْـوَةٍ عَـلَى تَجْمِيعِ مَبَالِغَ مَالِيَّـةٍ وَاسْتِغْلَالِهَا فِي الذَّهَـابِ فِي آخِـرِ الْأُسْبُوعِ إِلَى مَدِينَـةِ الْمَلَاهِي لِلتَّرْفِيهِ عَنِ النَّفْسِ. شَـارَكَ خَلِيلٌ فِي لُعْبَةِ السَّيَّارَاتِ فَدَفَعَ 3750 مي وَشَارَكَ فِي لُعْبَةِ الطَّائِرَاتِ فَدَفَعَ 1450 مي، وَشَارَكَ عَلَاءٌ فِي لُعْبَةِ الطَّائِرَاتِ وَلُعْبَةِ السَّيَّارَاتِ فَدَفَعَ أَكْثَرَ مِمَّا دَفَعَ فَادِي بِـ 200 مي، أَمَّا فَادِي فَكَانَ مَجْمُوعُ مَا صَرَفَهُ فِي مَدِينَـةِ الْمَلَاهِي 3950 مي.",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الإجابة. المعيار: مع1 (نقطة 1) ومع2أ (نقطة 1).",
+      "answer": null,
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p041_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أَحْسُبُ قِيمَةَ الْمَبْلَغِ الَّذِي صَرَفَهُ عَلَاءٌ فِي مَدِينَةِ الْمَلَاهِي.",
+      "body": "",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الإجابة. المعيار: مع1 (نقطة 1) ومع2أ (نقطة 1).",
+      "answer": null,
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p041_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : مَا هُوَ مِقْدَارُ الْمَبْلَغِ الَّذِي كَانَ بِحَوْزَةِ خَلِيلٍ ؟",
+      "body": "السَّنَدُ 2 : قَبْلَ الذَّهَابِ إِلَى مَدِينَـةِ الْمَلَاهِي كَانَ بِحَوْزَةِ خَلِيـلٍ الْمَبْلَغُ الْمُمَثَّـلُ بِالْقِطَعِ النَّقْدِيَّـةِ التَّالِيَـةِ.",
+      "figureDesc": "تسع قطع نقدية داخل إطار: قطعة بنقش مركبة (القيمة غير مقروءة)، ثلاث قطع صغيرة (20، 20، 10)، قطعة 100، قطعتان كبيرتان داكنتان (القيمة غير مقروءة)، وقطعتان من فئة 2. تحت القطع إطار للإجابة: ........ مي. المعيار: مع3 (النقطة مقطوعة في الصورة: « ,5 »).",
+      "answer": null,
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p041_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : مَا هُوَ مِقْدَارُ الْمَبْلَغِ الْمُتَبَقِّي عِنْدَ خَلِيلٍ ؟",
+      "body": "",
+      "figureDesc": "أسطر منقطة لكتابة الإجابة. المعيار: مع2ب. [النقطة المسندة غير مقروءة]",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "examens_toutes_matieres_p041_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-3-p2",
+  "topicTitle": "Période 2 : Addition et soustraction jusqu'à 9999 et perpendicularité",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p1",
+    "confidence": 0.22
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un test de fin de trimestre en mathématiques, centré sur des problèmes d'addition et de soustraction avec des nombres jusqu'à 9999 (montants en millimes, pièces tunisiennes), ce qui correspond le mieux à la Période 2, même si c'est une évaluation générale du trimestre 1.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes additifs et soustractifs en millimes",
+    "skill": "Résoudre des problèmes d'addition et de soustraction avec des sommes d'argent en millimes, en s'appuyant sur des nombres jusqu'à 9999 et des pièces tunisiennes.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "monnaie tunisienne",
+      "millimes",
+      "addition",
+      "soustraction",
+      "problème à étapes",
+      "nombres jusqu'à 9999"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation contextualisée d'une sortie à la fête foraine où plusieurs enfants dépensent des sommes différentes, avec comparaison entre dépenses, calcul d'un montant initial à partir de pièces et de billets, puis du reste, selon une chaîne de consignes liées.",
+    "themeGroup": "Problèmes additifs et soustractifs"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "التعليمة 1 : « أَحْسُبُ » est transcrit alors que l'image montre « أَحْسُبْ » (même mot, voyelle finale différente) ; vérifier la voyelle finale."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le bloc التعليمة 1 est placé avant السند 1 dans la transcription, alors que dans l'image السند 1 vient d'abord, puis التعليمة 1."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le bloc التعليمة 3 est placé avant السند 2 ; dans l'image السند 2 précède التعليمة 3."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« وَلُعْبَةِ السَّيَّارَاتِ » : l'image montre « وَلُعْبَةِ » avec « وَ » (le filigrane gêne la lecture) ; le texte est correct, mais « لُعْبَةِ » apparaît sans la shadda sur « السَّيَّارَاتِ » dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "La ligne « (يعتمد على السند 1 : ... وفادي صرف 3950 مي) » dans le bloc [2] est un texte ajouté, absent de l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les pièces de monnaie de l'image (2 pièces de 2 dinars, 2 pièces de 1 dinar, 1 pièce de 100 millimes, 2 pièces de 20 millimes, 1 pièce de 10 millimes, 1 pièce de 5 millimes) et la case de réponse ne sont pas décrites ; l'en-tête (امتحانات جسر النجاح، اختبار نهاية الثلاثي الأول، المادة : رياضيات، المستوى : السنة الثالثة، عدد : 4، الاسم/اللقب/القسم) est absent, ainsi que les colonnes المعايير (مع1، مع2أ، مع3، مع2ب) et النقاط المسندة."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« مَدِينَةِ » apparaît parfois avec tatweel (« مَدِينَـةِ ») ; l'image montre des tatweel à d'autres endroits, la transcription n'est pas exacte."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le corps de la consigne 2 contient « (يعتمد على السند 1 : ... وفادي صرف 3950 مي) », qui est absent de l'image. La consigne 2 n'a que sa phrase et les lignes de réponse."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Dans la consigne 3, « الإجابة: » a été ajouté. L'image montre seulement une case de réponse avec « ........ مي »."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête est absent : امتحانات جسر النجاح، اختبار نهاية الثلاثي الأول، عدد : 4، المادة : رياضيات، المستوى : السنة الثالثة، الاسم / اللقب / القسم."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Les colonnes المعايير et النقاط المسندة sont fausses ou incomplètes. La consigne 1 porte مع1 (1 pt) et مع2أ (1 pt). La consigne 2 porte aussi مع1 (1 pt) et مع2أ (1 pt). La consigne 3 porte مع3 (la note est coupée, on lit « ,5 »). La consigne 4 porte مع2ب. La transcription indique seulement « مع 1 أ » pour la consigne 1 et « مع 2 أ » pour la consigne 2."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "Les supports (السند 1 et السند 2) sont mélangés avec les consignes dans les champs instruction/body, et les numéros « السند 1 / التعليمة 1 » sont mal formés. Dans l'image, le support précède la consigne. Cela correspond au signalement d'ordre, mais ce n'est pas un vrai déplacement de blocs."
+      },
+      {
+        "type": "figure",
+        "severity": "minor",
+        "detail": "La description des pièces est imprécise. L'image montre 9 pièces : une pièce avec un motif de véhicule (valeur illisible), trois petites pièces (20, 20, 10), une pièce de 100, deux grandes pièces sombres, et deux pièces de « 2 » dinars. La valeur des deux pièces sombres n'est pas lisible dans le scan ; « 1 دينار » est une déduction."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "",
+      "body": "امتحانات جسر النجاح — اختبار نهاية الثلاثي الأول — عدد : 4 — المادة : رياضيات — المستوى : السنة الثالثة — الاسم : ........ اللقب : ........ القسم : ........ (أعمدة: الأنشطة، المعايير، النقاط المسندة)",
+      "figureDesc": "علامة مائية MOURAJAA.COM",
+      "answer": null,
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p041_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التَّعْلِيمَةُ 1 : أَحْسُبُ قِيمَةَ الْمَبْلَغِ الَّذِي صَرَفَهُ خَلِيلٌ فِي مَدِينَةِ الْمَلَاهِي.",
+      "body": "السَّنَدُ 1 : اِتَّفَقَ ثَـلَاثَةُ إِخْـوَةٍ عَـلَى تَجْمِيعِ مَبَالِغَ مَالِيَّـةٍ وَاسْتِغْلَالِهَا فِي الذَّهَـابِ فِي آخِـرِ الْأُسْبُوعِ إِلَى مَدِينَـةِ الْمَلَاهِي لِلتَّرْفِيهِ عَنِ النَّفْسِ. شَـارَكَ خَلِيلٌ فِي لُعْبَةِ السَّيَّارَاتِ فَدَفَعَ 3750 مي وَشَارَكَ فِي لُعْبَةِ الطَّائِرَاتِ فَدَفَعَ 1450 مي، وَشَارَكَ عَلَاءٌ فِي لُعْبَةِ الطَّائِرَاتِ وَلُعْبَةِ السَّيَّارَاتِ فَدَفَعَ أَكْثَرَ مِمَّا دَفَعَ فَادِي بِـ 200 مي، أَمَّا فَادِي فَكَانَ مَجْمُوعُ مَا صَرَفَهُ فِي مَدِينَـةِ الْمَلَاهِي 3950 مي.",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الإجابة. المعيار: مع1 (نقطة 1) ومع2أ (نقطة 1).",
+      "answer": null,
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p041_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أَحْسُبُ قِيمَةَ الْمَبْلَغِ الَّذِي صَرَفَهُ عَلَاءٌ فِي مَدِينَةِ الْمَلَاهِي.",
+      "body": "",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الإجابة. المعيار: مع1 (نقطة 1) ومع2أ (نقطة 1).",
+      "answer": null,
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p041_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التَّعْلِيمَةُ 3 : مَا هُوَ مِقْدَارُ الْمَبْلَغِ الَّذِي كَانَ بِحَوْزَةِ خَلِيلٍ ؟",
+      "body": "السَّنَدُ 2 : قَبْلَ الذَّهَابِ إِلَى مَدِينَـةِ الْمَلَاهِي كَانَ بِحَوْزَةِ خَلِيـلٍ الْمَبْلَغُ الْمُمَثَّـلُ بِالْقِطَعِ النَّقْدِيَّـةِ التَّالِيَـةِ.",
+      "figureDesc": "تسع قطع نقدية داخل إطار: قطعة بنقش مركبة (القيمة غير مقروءة)، ثلاث قطع صغيرة (20، 20، 10)، قطعة 100، قطعتان كبيرتان داكنتان (القيمة غير مقروءة)، وقطعتان من فئة 2. تحت القطع إطار للإجابة: ........ مي. المعيار: مع3 (النقطة مقطوعة في الصورة: « ,5 »).",
+      "answer": null,
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p041_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : مَا هُوَ مِقْدَارُ الْمَبْلَغِ الْمُتَبَقِّي عِنْدَ خَلِيلٍ ؟",
+      "body": "",
+      "figureDesc": "أسطر منقطة لكتابة الإجابة. المعيار: مع2ب. [النقطة المسندة غير مقروءة]",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "jisr_ennajah_3eme_examens_p041_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "السند 1 / التعليمة 1",
+      "instruction": "التَّعْلِيمَةُ 1 : أَحْسُبُ قِيمَةَ الْمَبْلَغِ الَّذِي صَرَفَهُ خَلِيلٌ فِي مَدِينَةِ الْمَلَاهِي.",
+      "body": "السَّنَدُ 1 : اِتَّفَقَ ثَـلَاثَةُ إِخْـوَةٍ عَـلَى تَجْمِيعِ مَبَالِغَ مَالِيَّـةٍ وَاسْتِغْلَالِهَا فِي الذَّهَـابِ فِي آخِـرِ الْأُسْبُوعِ إِلَى مَدِينَـةِ الْمَلَاهِي لِلتَّرْفِيهِ عَنِ النَّفْسِ. شَـارَكَ خَلِيلٌ فِي لُعْبَةِ السَّيَّارَاتِ فَدَفَعَ 3750 مي وَشَارَكَ فِي لُعْبَةِ الطَّائِرَاتِ فَدَفَعَ 1450 مي، وَشَارَكَ عَلَاءٌ فِي لُعْبَةِ الطَّائِرَاتِ وَلُعْبَةِ السَّيَّارَاتِ فَدَفَعَ أَكْثَرَ مِمَّا دَفَعَ فَادِي بِـ 200 مي، أَمَّا فَادِي فَكَانَ مَجْمُوعُ مَا صَرَفَهُ فِي مَدِينَـةِ الْمَلَاهِي 3950 مي.",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الإجابة. المعيار: مع 1 أ (نقطة 1). علامة مائية MOURAJAA.COM",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_3eme_examens_p041_i1",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التَّعْلِيمَةُ 2 : أَحْسُبُ قِيمَةَ الْمَبْلَغِ الَّذِي صَرَفَهُ عَلَاءٌ فِي مَدِينَةِ الْمَلَاهِي.",
+      "body": "(يعتمد على السند 1: عَلَاءٌ دَفَعَ أَكْثَرَ مِمَّا دَفَعَ فَادِي بِـ 200 مي، وفادي صرف 3950 مي)",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الإجابة. المعيار: مع 2 أ (نقطة 1)",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_3eme_examens_p041_i2",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "السند 2 / التعليمة 3",
+      "instruction": "التَّعْلِيمَةُ 3 : مَا هُوَ مِقْدَارُ الْمَبْلَغِ الَّذِي كَانَ بِحَوْزَةِ خَلِيلٍ ؟",
+      "body": "السَّنَدُ 2 : قَبْلَ الذَّهَابِ إِلَى مَدِينَـةِ الْمَلَاهِي كَانَ بِحَوْزَةِ خَلِيـلٍ الْمَبْلَغُ الْمُمَثَّـلُ بِالْقِطَعِ النَّقْدِيَّـةِ التَّالِيَـةِ. الإجابة: ........ مي",
+      "figureDesc": "تسع قطع نقدية تونسية: قطعة بطائرة/سيارة، ثلاث قطع صغيرة (20، 20، 10 ملّيم)، قطعة 100 مي، قطعتان كبيرتان داكنتان (1 دينار)، وقطعتان من فئة 2 دينار. إطار للإجابة مع نقاط. المعيار: مع 3 (نقاط 1,5)",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "jisr_ennajah_3eme_examens_p041_i3",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "التَّعْلِيمَةُ 4 : مَا هُوَ مِقْدَارُ الْمَبْلَغِ الْمُتَبَقِّي عِنْدَ خَلِيلٍ ؟",
+      "body": "",
+      "figureDesc": "أسطر منقطة لكتابة الإجابة. المعيار: مع 2 ب",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_3eme_examens_p041_i4",
+      "topicId": "math-3-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

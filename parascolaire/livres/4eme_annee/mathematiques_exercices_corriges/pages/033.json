@@ -1,0 +1,115 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 33,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 8 – الأعداد من 1000 إلى 9999 (3): تفكيك وتركيب",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اُكْتُبْ كُلَّ عَدَدٍ مِمَّا يَلِي فِي صورته الطَّبيعِيَّةِ :",
+      "body": "9 + (10 x 5) + (100 x 3) + (1 000 x 4) = ........\n6 + (10 x 7) + (1 000 x 9) = ........\n5 + 20 + 400 + 3 000 = ........\n(100 x 8) + 8 + (1 000 x 8) = ........",
+      "figureDesc": "أربع معادلات، في نهاية كل منها خط منقط لكتابة الجواب.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p033_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكتب هذه الأعداد باستعمال الجمع والضَّرب كما في المثال :",
+      "body": "مثال: 5 + (10 x 2) + (100 x 4) + (1 000 x 3) = 3 425\nالأعداد: 8 531 ، 9 061 ، 2 047 ، 7 849 ، 9 635",
+      "figureDesc": "خمسة أعداد، كل منها داخل مستطيل.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p033_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكتب هذه الأعداد باستعمال الضَّرب كما في المثال :",
+      "body": "مثال: 10 x 10 x 65 = 6 500\nالأعداد: 7 800 ، 5 240 ، 5 000 ، 9 900 ، 3 000",
+      "figureDesc": "خمسة أعداد، كل منها داخل مستطيل.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p033_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "إذا كان المبلغ الذي أحصاه هذا الموظف هو 9 280 مي فأوجد عدد القطع النَّقدية التي يتكوَّن منها هذا المبلغ.",
+      "body": "كانت القطع النَّقدِيَّة التي عدَّها موظف البنك هي من فئة 10 مي و100 مي.\nإذا كان المبلغ الذي أحصاه هذا الموظف هو 9 280 مي فأوجد عدد القطع النَّقدية التي يتكوَّن منها هذا المبلغ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p033_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "علِّل جوابك بالأرقام.",
+      "body": "لديك قطع نقدِيَّة من فئة 50 مي و 100 مي و 20 مي. ابتعت قصَّة بـ 400 مي. هل بإمكانك أن تدفع للكتبي 6 قطع نقدِيَّة فقط ؟ خمس قطع من نفس الفئة والسّادسة من فئة أخرى؟ علِّل جوابك بالأرقام.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p033_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-4-m6",
+    "confidence": 0.41
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la décomposition et la recomposition de nombres de 1000 à 9999 (écriture additive et multiplicative, monnaie en millimes), ce qui se rapproche le plus de la Période 1 (décomposition, monnaie) même si ce chapitre mentionne les nombres à 5 et 6 chiffres.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Décomposition et recomposition des nombres jusqu'à 9999",
+    "skill": "Décomposer et recomposer un nombre de 4 chiffres en utilisant l'addition et la multiplication par 10, 100 et 1000.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "décomposition",
+      "nombres à quatre chiffres",
+      "valeur positionnelle",
+      "multiplication par 10 et 100",
+      "monnaie",
+      "millimes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les exercices sur la valeur positionnelle sont suivis de problèmes de monnaie tunisienne (pièces de 10, 20, 50 et 100 millimes). On peut réutiliser les situations de caissier ou de bibliothécaire, qui demandent de justifier par des calculs un paiement avec un nombre limité de pièces.",
+    "themeGroup": "Numération jusqu'à 9 999"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

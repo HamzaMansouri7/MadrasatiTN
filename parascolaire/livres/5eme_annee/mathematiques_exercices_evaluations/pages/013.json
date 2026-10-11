@@ -1,0 +1,140 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 13,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مسائل حسابية: العم طاهر وغلال الضيعة (الصناديق، الشاحنة، ثمن البيع، المسافة)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4 (suite)",
+      "instruction": "احْسُبْ عَدَدَ الصَّنَادِيقِ الْمُسْتَعْمَلَةِ لِكُلِّ صِنْفٍ مِنَ الْغِلَالِ.",
+      "body": "وَضَعَ العَمُّ طَاهِرٌ غِلَالَهُ فِي صَنَادِيقَ تَتَّسِعُ لِـ 9 كَغ مِنَ التُّفَّاحِ وَالإِجَّاصِ بَيْنَمَا ثِمَارُ الْخَوْخِ وَالعِنَبِ وُضِعَتْ فِي صَنَادِيقَ تَحْوِي 6 كَغ.",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p013_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "كَمْ صُنْدُوقًا تَحْمِلُ الشَّاحِنَةُ فِي كُلِّ رِحْلَةٍ؟",
+      "body": "نَقَلَ العَمُّ طَاهِرٌ صَنَادِيقَ الغِلَالِ عَلَى الشَّاحِنَةِ فِي ثَلَاثِ رِحْلَاتٍ.",
+      "figureDesc": "ثلاثة أسطر منقطة لكتابة الحل",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p013_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "احْسُبْ ثَمَنَ بَيْعِ الكِيلُوغْرَامِ الوَاحِدِ مِنْ كُلِّ صِنْفٍ.",
+      "body": "بَاعَ العَمُّ طَاهِرٌ صُنْدُوقَ العِنَبِ بِـ 11220 مي وَبَاعَ صُنْدُوقَ التُّفَّاحِ بِـ 12150 مي.",
+      "figureDesc": "سطران منقطان لكتابة الحل",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p013_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "كَمْ تَبْعُدُ الضَّيْعَةُ عَنِ السُّوقِ؟",
+      "body": "قَطَعَتِ الشَّاحِنَةُ 90 كم فِي رِحْلَاتِهَا الثَّلَاثِ (الرِّحْلَةُ ذَهَابًا وَإِيَابًا).",
+      "figureDesc": "سطران منقطان لكتابة الحل",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p013_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.17
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de problèmes de mathématiques (caisses de 9 ou 6 kg, prix au kilo, distance parcourue) qui relève de la division et des masses, ce qui correspond à la Période 4 (division à 2 chiffres, masses), mais la page est une série de problèmes de synthèse sans notion unique clairement identifiable.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes de la ferme: capacité, trajets, prix",
+    "skill": "Résoudre des problèmes à plusieurs étapes avec les quatre opérations, en utilisant des données de masse, de prix et de distance.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "problèmes",
+      "division",
+      "masse",
+      "prix unitaire",
+      "distance",
+      "proportionnalité"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un fil conducteur à partir d'une récolte (un agriculteur, ses caisses, son camion, sa vente au marché) enchaîne plusieurs questions: nombre de caisses selon la capacité, chargement par trajet, prix au kilo, distance aller-retour. Ce schéma est réutilisable pour une série de problèmes contextualisés.",
+    "themeGroup": "Problèmes de synthèse et vie courante"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Pour les exercices 5, 6 et 7, la transcription place la question (• كَمْ صُنْدُوقًا..., • احْسُبْ ثَمَنَ..., • كَمْ تَبْعُدُ...) avant l'énoncé. Dans l'image, l'énoncé vient d'abord, puis la question. Pour l'exercice 4, la question est avant la phrase « وَضَعَ العَمُّ طَاهِرٌ... » alors qu'elle devrait la suivre, ce qui est cohérent avec « (suite) »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الإِجَّاصِ » : l'image montre « وَالإِجَاصِ » sans shadda sur le جيم. Valeur correcte : الإِجَاصِ."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« صَنَادِيقَ » dans l'exercice 5 : l'image montre « صَنَادِيقَ » sans nunation, ce qui est correct, mais « الغِلَالِ » apparaît avec fatha/kasra légèrement différentes. Les voyelles de cette ligne sont globalement correctes, sans erreur certaine."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 6 : « صُنْدُوقَ العِنَبِ » et « صُنْدُوقَ التُّفَّاحِ » sont conformes à l'image. Mais « التُّفَّاحِ » dans l'exercice 4 est écrit « التُّفَاحِ » dans l'image, avec une seule shadda sur le ت. La transcription ajoute une shadda sur le فاء."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 5 : « نَقَلَ » correspond à l'image, mais « ثَلَاثِ رِحْلَاتٍ » est correct, sans autre erreur de mot."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tiret initial et les puces « • » ne sont pas reproduits ; les numéros ⑤⑥⑦ sont transcrits sans cercle. Les lignes de réponse en pointillés ne sont pas signalées."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

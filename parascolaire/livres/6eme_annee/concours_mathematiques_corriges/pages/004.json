@@ -1,0 +1,273 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 4,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Résolution de problèmes : pourcentages, achat/vente, emprunt et excédent, échelle, aire et périmètre (triangle et demi-disque), coût de construction",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "ماهو ثمن بيع الغرام الواحد من الحليّ؟",
+      "body": "ثمّ باع حليّ زوجته المقدّر كتلته بنصف رطل وبذلك بقي في حاجة إلى 45% من ثمن الشقة اقترضه من البنك وسدّده أقساطا شهرية عددها 135 قيمة الواحد 532.770 د",
+      "figureDesc": "Tampon circulaire de l'éditeur en haut à gauche (et en bas à gauche) et filigrane orange en arabe sur la page.",
+      "answer": "المبلغ المجمع بعد بيع الحليّ: (55 × 135450) / 100 = 74497.5 د ؛ ثمن بيع الحليّ: 60200-74497.5 = 14297.5 د ؛ ثمن بيع الغرام الواحد من الحليّ: 14297.5 / 250 = 57.190 د",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy",
+      "id": "concours_mathematiques_corriges_p004_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "ماهي النسبة المائوية للفائض من المبلغ المقترض؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": "المبلغ المقترض: 135450 – (60200 + 14297.5) = 60952.5 د ؛ المبلغ المسدّد: 532.770 × 135 = 71923.950 د ؛ قيمة الفائض: 71923.950 - 60952.5 = 10971.450 د ؛ النسبة المائوية للفائض من المبلغ المقترض: (100 × 10971.450) / 60952.5 = 18 %",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "concours_mathematiques_corriges_p004_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة عدد 3 (8 نقاط)",
+      "instruction": "1 / أحسب النسبة المائوية للمصاريف بالنسبة لثمن الشراء.",
+      "body": "يملك محمد قطعة أرض على شكل مثلث أبعاده مبيّنة على الرسم حسب السلّم 1/2000. بعد مدّة شرى قطعة مجاورة لأرضه محدودة بنصف دائرة بحساب 63 د المتر المربّع فكانت كلفتها 269529.750 د. أحاط كامل الأرض بجدار تاركا مدخلا عرضه 2.5 م بحساب 48 المتر الواحد.",
+      "figureDesc": "Triangle أ ب ج : أب = 1.5 سم، أج = 4 سم، والارتفاع أهـ = 1.2 سم (هـ على ب ج) ; ب ج هو الوتر وقطر نصف الدائرة المرسوم على الضلع ب ج، مركزه معلّم بنجمة.",
+      "answer": "الأبعاد الحقيقية: 1.5 × 2000 = 30 م ؛ 1.2 × 2000 = 24 م ؛ 4 × 2000 = 80 م ؛ قيس مساحة (أ ب ج) = (80 × 30)/2 = 1200 م² ؛ طول (ب ج): (2 × 1200)/24 = 100 م ؛ قيس الشعاع: 100 : 2 = 50 م ؛ قيس مساحة نصف القرص = (3.14 × 50 × 50)/2 = 3925 م² ؛ ثمن الشراء: 3925 × 63 = 247275 د ؛ قيمة المصاريف: 269529.750 – 247275 = 22254.750 د ؛ النسبة المائوية للمصاريف: (100 × 22254.750)/247275 = 9 أي 9 %",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "concours_mathematiques_corriges_p004_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب الكلفة الجمليّة للسياج علما وأن ثمن الباب يبلغ 15 % من كلفة البناء.",
+      "body": "",
+      "figureDesc": "Tableau de proportionnalité : 100% ↔ 12696 ; 15% ↔ (vide) ; 115% ↔ ؟",
+      "answer": "طول القوس = (3.14 × 100)/2 = 157 م ؛ قيس المحيط: 157 + 80 + 30 = 267 م ؛ طول السياج: 267 – 2.5 = 264.5 م ؛ كلفة البناء: 264.5 × 48 = 12696 د",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "concours_mathematiques_corriges_p004_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "math-6-p3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p3",
+    "confidence": 0.45
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page présente des problèmes de synthèse à plusieurs étapes (pourcentages, achat/vente, emprunt, échelle, aire et périmètre, coût de construction), typiques de la préparation au concours d'entrée aux collèges pilotes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    1,
+    2
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes de pourcentages et géométrie",
+    "skill": "Résoudre des problèmes complexes combinant pourcentages, achat-vente, emprunt, échelle, aire, périmètre et coût de construction.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "pourcentage",
+      "échelle",
+      "aire et périmètre",
+      "demi-disque",
+      "emprunt",
+      "coût de clôture"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation de la vie réelle en plusieurs étapes (achat d'un appartement financé par un emprunt et la vente de bijoux, terrain triangulaire plus demi-disque à l'échelle, clôture avec porte à prix différent) réutilisable pour des problèmes de synthèse de fin d'année.",
+    "themeGroup": "Pourcentages et proportionnalité"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Image: ثمن بيع الحلي: 74497.5 - 60200 = 14297.5 د. La transcription inverse les termes (60200-74497.5)."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le texte de l'énoncé de la المسألة عدد 3 (يملك محمد... الواحد) est placé après la question 1/ ; l'ordre correct est l'énoncé puis la question 1/. De même, la question 2/ (أحسب الكلفة الجملية للسياج) est correctement placée mais l'ordre des segments est confus."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le tableau de proportionnalité (% 115 | % 15 | % 100 ; ؟ | | 12696) est omis, ainsi que le schéma (triangle أ ب ج, demi-cercle, cotes 4 سم, 1.2 سم, 1.5 سم)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le titre 'suite de l'énoncé du problème précédent' et le libellé 'réponse:' sont ajoutés (non présents dans l'image)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le premier mot du texte est 'ثمّ باع حلي' : l'image porte 'ثمّ باع حليّ زوجته' (shadda sur ي), et 'المبلغ المجمع' est 'المبلغ المـجمع' ; 'قيمة الفائض' correct. 'أي 9 %' redondant: l'image a '9 أي 9 %' avec = 9 devant, la transcription écrit '= 9 % أي 9 %' (erreur)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Image: 3.14×50×50/2 = 3925 correct ; mais 'قيس الشعاع: 100 : 2 = 50 م' correct. Le numéro de page '4' est omis."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel visible (ex. المقدّر, وسدّده, الحليّ, مبيّنة, السلّم, الجمليّة) est partiellement perdu ou modifié: 'الحلي' sans shadda, 'الكلفة الجملية' sans shadda."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.88,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le préfixe '(suite de l'énoncé du problème précédent)' dans le body de l'item 2 n'existe pas dans l'image. Le texte de l'image commence directement par 'ثمّ باع حليّ زوجته…'. Il est supprimé."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Dans la dernière ligne de la المسألة عدد 3, l'image porte '= 9 أي 9 %' (le premier 9 sans %). La transcription écrit '= 9 % أي 9 %', avec un '%' en trop."
+      },
+      {
+        "type": "figure",
+        "severity": "major",
+        "detail": "La description du schéma est fausse. Dans l'image, 4 سم est le côté أ ج (à gauche, de ج vers أ) et 1.5 سم est le côté أ ب. Le segment 1.2 سم est la hauteur أ هـ, abaissée de أ sur ب ج (hypoténuse). ب ج est le diamètre du demi-cercle, avec une étoile en son centre. La transcription donne à tort 'أج = 1.2' et 'بج = 4'. Les calculs de la solution confirment la lecture de l'image : 4×2000 = 80 et 1.5×2000 = 30 donnent l'aire 1200, puis ب ج = 2×1200/24 = 100."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans la question 2/, le tashkeel visible 'الجمليّة' (shadda sur ي) est perdu : la transcription écrit 'الجملية'."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "ماهو ثمن بيع الغرام الواحد من الحليّ؟",
+      "body": "ثمّ باع حليّ زوجته المقدّر كتلته بنصف رطل وبذلك بقي في حاجة إلى 45% من ثمن الشقة اقترضه من البنك وسدّده أقساطا شهرية عددها 135 قيمة الواحد 532.770 د",
+      "figureDesc": "Tampon circulaire de l'éditeur en haut à gauche (et en bas à gauche) et filigrane orange en arabe sur la page.",
+      "answer": "المبلغ المجمع بعد بيع الحليّ: (55 × 135450) / 100 = 74497.5 د ؛ ثمن بيع الحليّ: 60200-74497.5 = 14297.5 د ؛ ثمن بيع الغرام الواحد من الحليّ: 14297.5 / 250 = 57.190 د",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy",
+      "id": "concours_math_6eme_corriges_p004_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "ماهي النسبة المائوية للفائض من المبلغ المقترض؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": "المبلغ المقترض: 135450 – (60200 + 14297.5) = 60952.5 د ؛ المبلغ المسدّد: 532.770 × 135 = 71923.950 د ؛ قيمة الفائض: 71923.950 - 60952.5 = 10971.450 د ؛ النسبة المائوية للفائض من المبلغ المقترض: (100 × 10971.450) / 60952.5 = 18 %",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "concours_math_6eme_corriges_p004_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة عدد 3 (8 نقاط)",
+      "instruction": "1 / أحسب النسبة المائوية للمصاريف بالنسبة لثمن الشراء.",
+      "body": "يملك محمد قطعة أرض على شكل مثلث أبعاده مبيّنة على الرسم حسب السلّم 1/2000. بعد مدّة شرى قطعة مجاورة لأرضه محدودة بنصف دائرة بحساب 63 د المتر المربّع فكانت كلفتها 269529.750 د. أحاط كامل الأرض بجدار تاركا مدخلا عرضه 2.5 م بحساب 48 المتر الواحد.",
+      "figureDesc": "Triangle أ ب ج : أب = 1.5 سم، أج = 4 سم، والارتفاع أهـ = 1.2 سم (هـ على ب ج) ; ب ج هو الوتر وقطر نصف الدائرة المرسوم على الضلع ب ج، مركزه معلّم بنجمة.",
+      "answer": "الأبعاد الحقيقية: 1.5 × 2000 = 30 م ؛ 1.2 × 2000 = 24 م ؛ 4 × 2000 = 80 م ؛ قيس مساحة (أ ب ج) = (80 × 30)/2 = 1200 م² ؛ طول (ب ج): (2 × 1200)/24 = 100 م ؛ قيس الشعاع: 100 : 2 = 50 م ؛ قيس مساحة نصف القرص = (3.14 × 50 × 50)/2 = 3925 م² ؛ ثمن الشراء: 3925 × 63 = 247275 د ؛ قيمة المصاريف: 269529.750 – 247275 = 22254.750 د ؛ النسبة المائوية للمصاريف: (100 × 22254.750)/247275 = 9 أي 9 %",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "concours_math_6eme_corriges_p004_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب الكلفة الجمليّة للسياج علما وأن ثمن الباب يبلغ 15 % من كلفة البناء.",
+      "body": "",
+      "figureDesc": "Tableau de proportionnalité : 100% ↔ 12696 ; 15% ↔ (vide) ; 115% ↔ ؟",
+      "answer": "طول القوس = (3.14 × 100)/2 = 157 م ؛ قيس المحيط: 157 + 80 + 30 = 267 م ؛ طول السياج: 267 – 2.5 = 264.5 م ؛ كلفة البناء: 264.5 × 48 = 12696 د",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "concours_math_6eme_corriges_p004_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "ماهو ثمن بيع الغرام الواحد من الحلي؟",
+      "body": "(suite de l'énoncé du problème précédent) ثمّ باع حليّ زوجته المقدّر كتلته بنصف رطل وبذلك بقي في حاجة إلى 45% من ثمن الشقة اقترضه من البنك وسدّده أقساطا شهرية عددها 135 قيمة الواحد 532.770 د",
+      "figureDesc": "Tampon circulaire de l'éditeur en haut à gauche et filigrane orange en arabe sur la page.",
+      "answer": "المبلغ المجمع بعد بيع الحلي: (55 × 135450) / 100 = 74497.5 د ؛ ثمن بيع الحلي: 60200 - 74497.5 = 14297.5 د ؛ ثمن بيع الغرام الواحد من الحلي: 14297.5 / 250 = 57.190 د",
+      "confidence": 0.8,
+      "id": "concours_math_6eme_corriges_p004_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "ماهي النسبة المائوية للفائض من المبلغ المقترض؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": "المبلغ المقترض: 135450 – (60200 + 14297.5) = 60952.5 د ؛ المبلغ المسدّد: 532.770 × 135 = 71923.950 د ؛ قيمة الفائض: 71923.950 - 60952.5 = 10971.450 د ؛ النسبة المائوية للفائض من المبلغ المقترض: (100 × 10971.450) / 60952.5 = 18 %",
+      "confidence": 0.8,
+      "id": "concours_math_6eme_corriges_p004_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "المسألة عدد 3 (8 نقاط)",
+      "instruction": "1 / أحسب النسبة المائوية للمصاريف بالنسبة لثمن الشراء.",
+      "body": "يملك محمد قطعة أرض على شكل مثلث أبعاده مبيّنة على الرسم حسب السلّم 1/2000. بعد مدّة شرى قطعة مجاورة لأرضه محدودة بنصف دائرة بحساب 63 د المتر المربّع فكانت كلفتها 269529.750 د. أحاط كامل الأرض بجدار تاركا مدخلا عرضه 2.5 م بحساب 48 المتر الواحد.",
+      "figureDesc": "Triangle أ ب ج avec أب = 1.5 سم، أج = 1.2 سم (نقطة هـ)، ب ج = 4 سم ; نصف دائرة قطرها ب ج مرسوم على الضلع ب ج، مركزه معلّم بنجمة.",
+      "answer": "الأبعاد الحقيقية: 1.5 × 2000 = 30 م ؛ 1.2 × 2000 = 24 م ؛ 4 × 2000 = 80 م ؛ قيس مساحة (أ ب ج) = (80 × 30)/2 = 1200 م² ؛ طول (ب ج): (2 × 1200)/24 = 100 م ؛ قيس الشعاع: 100 : 2 = 50 م ؛ قيس مساحة نصف القرص = (3.14 × 50 × 50)/2 = 3925 م² ؛ ثمن الشراء: 3925 × 63 = 247275 د ؛ قيمة المصاريف: 269529.750 – 247275 = 22254.750 د ؛ النسبة المائوية للمصاريف: (100 × 22254.750)/247275 = 9 % أي 9 %",
+      "confidence": 0.8,
+      "id": "concours_math_6eme_corriges_p004_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب الكلفة الجملية للسياج علما وأن ثمن الباب يبلغ 15 % من كلفة البناء.",
+      "body": "",
+      "figureDesc": "Tableau de proportionnalité : 100% ↔ 12696 ; 15% ↔ (vide) ; 115% ↔ ؟",
+      "answer": "طول القوس = (3.14 × 100)/2 = 157 م ؛ قيس المحيط: 157 + 80 + 30 = 267 م ؛ طول السياج: 267 – 2.5 = 264.5 م ؛ كلفة البناء: 264.5 × 48 = 12696 د",
+      "confidence": 0.8,
+      "id": "concours_math_6eme_corriges_p004_i4",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

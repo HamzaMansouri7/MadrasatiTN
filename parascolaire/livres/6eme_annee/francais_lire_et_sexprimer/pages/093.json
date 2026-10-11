@@ -1,0 +1,161 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 93,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – B) Compréhension (texte sur le jeune berger et la brebis perdue)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Ce jour-là, le jeune berger a-t-il fait son travail comme il faut ? Pourquoi ?",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p093_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "La nuit, le jeune berger ne peut pas dormir. Pourquoi ?",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p093_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Pourquoi les deux enfants sont-ils partis la nuit dans la campagne ?",
+      "body": "Deux lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p093_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Entoure la bonne réponse :",
+      "body": "* « Le chien flairait partout. » veut dire :\n- Par l'odeur, il essayait de retrouver la trace de la brebis.\n- Il joue dans la campagne.\n- Il chasse les lapins dans la forêt.\n* « J'étais gelé. » veut dire :\n- J'avais très froid.\n- J'étais fatigué.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p093_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "a- Réponds par « oui » ou « non » :\nb- Justifie ta réponse :",
+      "body": "a- Le berger voisin a volé la brebis. (réponse à écrire dans un cadre arrondi pointillé)\nb- Deux lignes pointillées pour justifier.",
+      "figureDesc": "Un cadre arrondi à droite de la phrase pour écrire oui/non.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p093_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "À ton avis, pourquoi le berger a-t-il peur, au début ?",
+      "body": "Trois lignes pointillées pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p093_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.48
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de compréhension de lecture en français (texte sur un jeune berger et une brebis perdue), mais ce texte narratif ne correspond clairement à aucun module précis (le thème du travail du module 1 est possible mais incertain), donc aucun chapitre n'est retenu.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    126
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension d'un récit",
+    "skill": "Comprendre un texte narratif en répondant à des questions, en justifiant et en expliquant des expressions.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "vrai_faux",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "récit",
+      "berger",
+      "justification",
+      "vocabulaire en contexte",
+      "inférence"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une série de questions de compréhension qui progresse du repérage littéral à l'inférence (« à ton avis »), avec des QCM de vocabulaire en contexte et un vrai/faux à justifier, à partir d'un récit mettant en scène des enfants et un animal perdu.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 6 : l'image dit « pourquoi le berger a-t-il peur, au début ? » avec « le berger », ce que la transcription reprend en écrivant « le berger » ; aucune faute ici. Seul écart : « Le berger voisin a volé la brebis. » est transcrit correctement."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « Les évaluations », « Sagesse », « 6ème année de base », ainsi que « B) Compréhension : »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », numéro de page 92, « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte en filigrane (transparence du verso) est illisible et n'est pas transcrit, ce qui est acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

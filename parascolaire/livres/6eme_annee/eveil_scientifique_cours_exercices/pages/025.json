@@ -1,0 +1,126 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 25,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "التَّغْذِيَةُ : بَعْضُ الأَمْرَاضِ النَّاتِجَةِ عَنْ سُوءِ التَّغْذِيَةِ",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حَدِّدْ مَا يَنْقُصُ فِي هَذِهِ الوَجَبَاتِ فِي كُلِّ مَرَّةٍ.",
+      "body": "- سَمِّ عَوَارِضَ سُوءِ التَّغْذِيَةِ.\n- مَا فَائِدَةُ اللَّحْمِ وَالْبَيْضِ وَالسَّمَكِ ؟\n- يَنْصَحُ الطَّبِيبُ بِشُرْبِ ثَلاثَةِ أَكْوَابٍ مِنَ الحَلِيبِ يَوْمِيًّا. لِمَاذَا ؟\n- لَخِّصِ المَشَاكِلَ الصِّحِّيَّةَ النَّاتِجَةَ عَنْ قِلَّةِ التَّغْذِيَةِ.",
+      "figureDesc": "Tableau à deux colonnes (المشاكل الصحية / النقص في التغذية) avec 4 lignes. Chaque ligne associe un problème de santé à une pyramide alimentaire colorée où certains niveaux sont marqués d'un point d'interrogation (à identifier). Lignes : شحوب الوجه، الوهن وهو مريض غالبا ؛ شحوب الوجه، سوء النمو ؛ هشاشة الهيكل العظمي، تسوس الأسنان ؛ هزال وعدم قدرة على اللعب وممارسة الرياضة. En haut à droite : pyramide alimentaire illustrée.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p025_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْتُبْ مَا يُنَاسِبُ مَكَانَ النُّقَطِ لِتُبَيِّنَ مَا يَنْجُمُ عَنْ سُوءِ التَّغْذِيَةِ :",
+      "body": "الْمَوْتُ - نَقْصٌ - تَشَوُّهٌ - إِفْرَاطٌ\nيَنْتُجُ سُوءُ التَّغْذِيَةِ عَنْ ........ فِي التَّغْذِيَةِ أَوْ ........ فِي اسْتِهْلاكِ الأَغْذِيَةِ وَيَتَسَبَّبُ فِي أَمْرَاضٍ خَطِيرَةٍ ........ الجِسْمَ وَتُؤَدِّي أَحْيَانًا إِلَى ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p025_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَرْبُطِ الآفَةَ بِالَّتِي تُنَاسِبُهَا :",
+      "body": "العمود الأيمن: نقص في فيتامين (د) - نقص في فيتامين (ج) - نقص في فيتامين (أ) - كثرة الأكل وقلة النشاط\nالعمود الأيسر: مرض السمنة - ضعف الرؤية ليلا - مرض الكساح - نزف اللثة وتسوس الأسنان",
+      "figureDesc": "Deux colonnes de cases à relier par des flèches : causes (à droite) et maladies (à gauche).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_cours_exercices_p025_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.56
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite de la nutrition et des maladies dues à la malnutrition (carences en vitamines A, C, D, obésité, rôle du lait, de la viande et du poisson), ce qui correspond à l'unité sur la nutrition équilibrée, même si le texte est en arabe.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Maladies liées à la malnutrition",
+    "skill": "Relier les carences et excès alimentaires aux maladies correspondantes et à leurs conséquences sur la santé.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "appariement"
+    ],
+    "keywords": [
+      "malnutrition",
+      "carences vitaminiques",
+      "obésité",
+      "rachitisme",
+      "alimentation équilibrée",
+      "santé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement de trois activités : analyse de repas déséquilibrés à partir d'images, texte à trous avec mots fournis sur les causes et conséquences de la malnutrition, et appariement vitamine manquante / maladie (ex. vitamine D et rachitisme). Le tout est facilement adaptable à d'autres carences ou à des menus à corriger.",
+    "themeGroup": "Énergie, besoins et troubles alimentaires"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 2: « يَنْجُمُ » transcrit alors que l'image montre « يَنْجُمُ/يَنْجُرُ » ; la lecture correcte est « يَنْجُمُ » ou « يَنْجُرُ » (image: « يَنْجُرُّ ») – à vérifier."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« يَنْتُجُ » : l'image montre « يَنْتُجُ » avec vocalisation proche, mais la forme correcte serait « يَنْتُجُ/يَنْتُجُ » ; vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3: « أَرْبُطِ » devrait être « أُرْبُطِ » (image: أُرْبُطِ الآفَةَ) ; « الآفَةَ » est en fait « الآفَةَ/اللآفِتَة » : l'image indique « اللَّافِتَةَ » – lecture « الأَفِتَةَ »."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 1: le tableau (المشاكل الصحية / النقص في التغذية) avec pyramides et ses légendes n'est pas transcrit : « شحوب الوجه، الوهن وهو مريض غالبا », « شحوب الوجه، سوء النمو », « هشاشة الهيكل العظمي، تسوس الأسنان », « هزال وعدم قدرة على اللعب وممارسة الرياضة »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre de la page « التَّغْذِيَةُ : بَعْضُ الأَمْرَاضِ النَّاتِجَةِ عَنْ سُوءِ التَّغْذِيَةِ » et numéro de page 57 absents."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 2: l'ordre des blancs dans la phrase (« الجسم » après le blanc, « إلى » après) est approximatif ; l'image place un blanc avant « الجِسْمَ » et un blanc après « إِلَى »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

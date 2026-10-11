@@ -1,0 +1,129 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 43,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "رسم الهمزة المتطرفة المسبوقة بضمة قصيرة / الهمزة المتطرفة (كتابة الهمزة المتطرفة حسب حركة الحرف الذي قبلها)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "القاعدة: كتابة الهمزة المتطرفة المسبوقة بفتحة أو ضمة أو كسرة",
+      "body": "تكتب الهمزة المتطرفة المسبوقة بفتحة على الألف إذا كانت ساكنة أو مفتوحة أو مضمومة وتكتب تحت الألف إذا كانت مكسورة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p043_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "صغ المضارع من الأفعال التالية",
+      "body": "نشأ – تجرأ – تبرأ – لجأ – تباطأ",
+      "figureDesc": "جدول من خمسة أعمدة، الصف الأول يحتوي على الأفعال (نشأ، تجرأ، تبرأ، لجأ، تباطأ) والصف الثاني فارغ لكتابة المضارع",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p043_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمل الفراغ بكلمة في آخرها همزة",
+      "body": "نسمي المكان الذي ترسي فيه البواخر ...\nنسمي المكان الذي نختبئ فيه ...\nنسمي ما يسبق الخبر ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p043_i3",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أشكل الجمل التالية شكلا تاما",
+      "body": "المرفأ مليء بالسفن التجارية\nإن المرفأ مجهز بوسائل الوقاية من الحرائق\nالتقيت بالعائدين إلى أرض الوطن في المرفإ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p043_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "نص للإملاء",
+      "body": "إنّ صديقي لا يتجرأ على رفع صوته أمام من هو أكبر منه سنا ، ويقضي جل أوقات فراغه يقرأ قصصا ذات مغزى ، فلا يهدأ له بال إلا إذا طالع قصتين في الأسبوع على القل ، فقد نشأ في عائلة تحب الكتب وتعيش على المبدأ القائل  خير جليس في الزمان كتاب  وكل من يتباطأ عن زيارة مكتبة العائلة فليبحث له عن مخبئ هروبا من عقاب والده",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p043_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "رسم الهمزة المتطرفة المسبوقة بضمة قصيرة",
+      "body": "تكتب الهمزة المسبوقة بضمة على الواو",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p043_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m7",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.36
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de l'orthographe de la hamza finale (règle, exercices, dictée), une leçon d'orthographe arabe qui ne correspond clairement à aucune des six unités officielles centrées sur la narration.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Orthographe de la hamza finale",
+    "skill": "Choisir le support correct de la hamza en fin de mot selon la voyelle de la lettre qui la précède.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "dictee",
+      "autre"
+    ],
+    "keywords": [
+      "hamza finale",
+      "orthographe arabe",
+      "voyelles brèves",
+      "vocalisation",
+      "dictée",
+      "conjugaison au présent"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable : règle brève, conjugaison de verbes à hamza finale au présent, définitions à compléter avec un mot à hamza finale, vocalisation complète de phrases, puis dictée thématique sur la lecture et les livres.",
+    "themeGroup": "Orthographe de la hamza"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

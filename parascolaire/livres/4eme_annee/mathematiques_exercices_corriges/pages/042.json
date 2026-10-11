@@ -1,0 +1,148 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 42,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 10 – الامتحان الثلاثي الأول (3): الأعداد إلى 9999، العمليات (جمع وطرح)، قيس الأطوال، التقاطع، مسائل نقود",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) أوجد عددا مكوّنًا من أربعة أرقام يحقّق ما يلي :",
+      "body": "- أرقامه متساوية .  - مجموع أرقامه 12.\nب) أنجز العمليّات التّالية واملإ الفراغات.\nالعملية 1: 6853 - .... = 4969\nالعملية 2: 95.2 - 3.67 = .74.\nالعملية 3: .... + 4207 = 4207",
+      "figureDesc": "ثلاث عمليات عمودية (طرح، طرح، جمع) فيها أرقام ناقصة تُعوَّض بنقاط.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p042_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "طول عود ثقاب 4 صم. املإ الجدول حسب الوحدة المطلوبة.",
+      "body": "جدول: المسلك: أ، ب، ج. قيس الطول: أ ......... صم، ب ......... دسم، ج ......... مم",
+      "figureDesc": "ثلاثة مسالك (أ، ب، ج) مرسومة بأعواد الثقاب: أ مسلك متعرّج بزوايا قائمة، ب مسلك على شكل خط منكسر متعرّج، ج مسلك بزوايا قائمة بأعواد مزدوجة. الجدول به خانات فارغة لقيس الطول.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p042_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم رموز النّقط حسب بيانات جدول التقاطع:",
+      "body": "جدول التقاطع بين (م) و(ص) و(ك): الخانات المعطاة: أ (تقاطع م مع ك)، ب (تقاطع ص مع م)، ج (تقاطع ك مع ص). باقي الخانات فارغة.",
+      "figureDesc": "رسم لمستقيمين متقاطعين في الأعلى يقطعهما مستقيم أفقي (ص)؛ المستقيم (ك) والمستقيم (م) مسمّيان؛ بجانبه جدول تقاطع 3×3 بخانات أ، ب، ج.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p042_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "دخلت سيّدة إلى المغازة ومعها ورقة مالية ذات خمسة دنانير و4 قطع نقديّة من فئة 1 د. أ) كم تملك؟",
+      "body": "اشترت 4 كـؤوس بـ 4000 مي وصحفة من البلّور ثمنها مُسَاوٍ لثمن كأسيْن وملعقة كبيرة.\nب) ماهو ثمن الصّحفة؟\nج) ما هو ثمن هذه الملعقة علما وأنّه بقي لها 1250 مي؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p042_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation du premier trimestre (examen trimestriel) mêlant nombres à 4 chiffres, opérations, décimaux, mesure de longueurs, tableau à double entrée et problèmes de monnaie, donc plusieurs chapitres sans correspondance unique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    118
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision du premier trimestre : nombres et opérations",
+    "skill": "Mobiliser les nombres jusqu'à 9999, les opérations (addition, soustraction), les mesures de longueur, le tableau à double entrée et la monnaie pour résoudre des problèmes.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "nombres jusqu'à 9999",
+      "addition et soustraction",
+      "mesure de longueurs",
+      "tableau de croisement",
+      "monnaie en millimes",
+      "problème d'achat"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : devinette numérique avec contraintes (chiffres identiques, somme des chiffres), opérations à trous avec élément neutre, conversion de longueurs à partir d'un objet du quotidien (allumette), placement de points selon un tableau de croisement et problème d'achats en dinars et millimes avec reste à trouver.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Opération 2: l'image montre 95.2 - 3.67 = .74. ; la transcription est correcte, mais les points de la ligne du haut de l'opération 3 (....) sont bien présents. En revanche l'ordre des opérations est inversé (l'image les affiche de droite à gauche : 6853 en premier à droite), ce qui est acceptable en RTL."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre de la page absent : « الامتحان الثلاثي الأول (3) » et « الأسبوع 10 » ne sont pas transcrits ; numéro de page 38 absent."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« املإ » dans l'exercice 2 : l'image indique « امْلأ/املإ الجدول » ; correct, mais dans [2] la ligne « طول عود ثقاب 4 صم » est bien présente. Aucun écart de mot détecté."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 2 : les trois figures de lignes brisées (أ، ب، ج) ne sont pas décrites. Exercice 3 : la figure (trois droites م، ص، ك) et l'en-tête « تقاطع » ne sont pas mentionnés."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 4 : la question « أ) كم تملك؟ » est suivie de la phrase « اشترت 4 كؤوس... » ; la transcription place un séparateur || mais la structure est correcte. Le tableau de l'exercice 3 : la case ب est à l'intersection (ص) ligne / (م) colonne, ج à (ك) ligne / (ص) colonne, أ à (م) ligne / (ك) colonne ; la description est correcte."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« كـؤوس » avec tatwil dans l'image (كـؤوس) ; « مُسَاوٍ » et « كأسيْن » sont conformes ; le tashkeel de « البلّور » est visible dans l'image (البلُور) et pas totalement fidèle."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,362 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 58,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "اسم الفاعل من المزيد (المضاعف المزيد، وأوزان المزيد بحرف وبحرفين وبثلاثة أحرف)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "يصاغ اسم الفاعل من المضاعف المزيد بإبدال حرف المضارعة ميما مضمومة وكسر ما قبل الآخر",
+      "body": "أعدّ  يعدّ  معدّ\nالجدول: المزيد بحرف: أفعل (أعدّ ← معدّ)، فعّل (مدّد ← ممدّد)، فاعل (شادّ ← مشادّ). المزيد بحرفين: انفعل (اندسّ ← مندسّ)، افتعل (اعتدّ ← معتدّ)، تفعل (تردّد ← متردّد)، تفاعل (تمارّ ← متمارّ)، افعل (خانة مظللة فارغة). بـ أحرف: استفعل (استمدّ ← مستمدّ).",
+      "figureDesc": "جدول من ثلاثة أسطر: الأوزان، الفعل الماضي المضاعف، اسم الفاعل؛ خانة وزن افعل مظللة فارغة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "grammaire_arabe_cahier_regles_p058_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "سطر كل اسم فاعل في النص التالي",
+      "body": "دخلنا منزل مضيفنا فأسرع إلينا مرحبا ، القينا نظرة فإذا الجميع متحلقين حول الكعكة مرددين أحلى الأغاني منئين المحتفى بهم",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "grammaire_arabe_cahier_regles_p058_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "صغ اسم الفاعل من الأفعال التالية",
+      "body": "استعد – حدد – تردد – تسلل – أعد",
+      "figureDesc": "جدول من خمس خانات للأفعال وسطر فارغ للإجابات تحتها",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "grammaire_arabe_cahier_regles_p058_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعمر الفراغات باسم الفاعل المناسب مسترشدا بالفعل المؤطر",
+      "body": "جدي استقر ... بالريف لذلك تراه تارة تسلق ... شجرة ، يجني ثمارها ، وتارة ردد ... أجمل الألحان مستقبلا القادمين ودع ... المغادرين",
+      "figureDesc": "الأفعال المؤطرة: استقر، تسلق، ردد، ودع؛ مع فراغات في النص",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "grammaire_arabe_cahier_regles_p058_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "صغ اسم الفاعل في المفرد والمثنى والجمع من الفعل اعتزّ",
+      "body": "المفرد: المذكر، المؤنث. المثنى: المذكر، المؤنث. الجمع: المذكر، المؤنث.",
+      "figureDesc": "جدول بست خانات فارغة: المفرد والمثنى والجمع، لكل منها مذكر ومؤنث",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "grammaire_arabe_cahier_regles_p058_i5"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "اسم الفاعل من المزيد – المراجعة: المزيد ثلاثة أنواع",
+      "body": "المزيد بحرف: أفعل (أخرج)، فعّل (علم)، فاعل (سامح). المزيد بحرفين: انفعل (انتصر)، افتعل (اقترب)، تفعل (تسلم)، تفاعل (تظاهر)، افعل (احمر). بـ أحرف: استفعل (استقبل).\nالدرس",
+      "figureDesc": "جدول مراجعة لأوزان المزيد مع مثال لكل وزن",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "grammaire_arabe_cahier_regles_p058_i6"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la grammaire/conjugaison arabe (ism al-fā'il des verbes augmentés), une leçon de langue qui ne correspond clairement à aucune des six unités arabes centrées sur la narration (seule l'unité 1 mentionne la conjugaison, mais pour les verbes défectifs).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Nom d'agent des verbes augmentés",
+    "skill": "Former et reconnaître le nom d'agent (اسم الفاعل) à partir des verbes augmentés d'une, deux ou trois lettres, y compris les verbes géminés.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "nom d'agent",
+      "verbes augmentés",
+      "verbe géminé",
+      "conjugaison arabe",
+      "morphologie",
+      "singulier dual pluriel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure réutilisable : une règle, un tableau de schèmes avec une case à compléter, puis quatre exercices progressifs (repérer dans un texte de fête familiale, transformer une liste de verbes, compléter des phrases avec le verbe entre cadres, décliner au singulier, duel et pluriel), et une fiche de révision finale.",
+    "themeGroup": "Les participes"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Tableau : la colonne « افعلّ » est transcrite à la place de « افعل » (image : افعل, sans shadda), et la cellule grisée est vide, ce qui est correct."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« المزيد بثلاثة أحرف » est inventé : l'image porte seulement « بـ أحرف » (le mot « ثلاثة » est coupé en deux lignes), ce qui est à peu près équivalent mais mal rendu."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« مترددّ » : l'image montre « متردّد » (une seule shadda, sur le second د)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« منئين » : l'image montre « منئين » à l'identique ; en revanche « ألقينا » correspond à « القينا » (sans hamza visible), à corriger en « القينا »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« ممدّد » et « مدّد » : l'image montre « مدّد » et « ممدّد », conforme ; mais « فعّل » du premier tableau doit porter sa shadda, ce qui est bien le cas."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « جدي استقر ... » — l'ordre de lecture est mélangé ; les verbes encadrés sont استقر، تسلق، ردد، ودع, et « ودع » est transcrit correctement, mais « جدي » est suivi de « استقر » dans l'image, ce qui est conforme."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'ordre est inversé (l'image donne استعد، حدد، تردد، تسلل، أعد de droite à gauche) ; « حدد » est présent. Le tableau de réponse vide n'est pas mentionné."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les mots « التمارين » et « التمرين الأول/الثاني/... » (titres) ne sont pas transcrits tels quels ; seuls des numéros [1]–[4] sont donnés."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « الدرس » est en fin de page, mais « اسم الفاعل من المزيد » et « المراجعة » sont fusionnés en une seule ligne ; le tableau final est transcrit sans les mentions d'en-tête."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Tableau 1 : l'en-tête « افعلّ » est transcrit avec une shadda ; l'image porte « افعل » sans shadda (la cellule grisée sous cette colonne est bien vide)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Tableau 1 : l'en-tête est « تفعل » sans shadda dans l'image, alors que la transcription écrit « تفعّل »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Tableau 1 : « مترددّ » est erroné ; l'image porte « متردّد » (une seule shadda, sur le second د)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« المزيد بثلاثة أحرف » apparaît dans les deux tableaux, mais l'image porte seulement « بـ أحرف » (le mot « ثلاثة » n'est pas visible)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « ألقينا » est erroné ; l'image porte « القينا » (sans hamza)."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "يصاغ اسم الفاعل من المضاعف المزيد بإبدال حرف المضارعة ميما مضمومة وكسر ما قبل الآخر",
+      "body": "أعدّ  يعدّ  معدّ\nالجدول: المزيد بحرف: أفعل (أعدّ ← معدّ)، فعّل (مدّد ← ممدّد)، فاعل (شادّ ← مشادّ). المزيد بحرفين: انفعل (اندسّ ← مندسّ)، افتعل (اعتدّ ← معتدّ)، تفعل (تردّد ← متردّد)، تفاعل (تمارّ ← متمارّ)، افعل (خانة مظللة فارغة). بـ أحرف: استفعل (استمدّ ← مستمدّ).",
+      "figureDesc": "جدول من ثلاثة أسطر: الأوزان، الفعل الماضي المضاعف، اسم الفاعل؛ خانة وزن افعل مظللة فارغة",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "cahier_grammaire_6eme_p058_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "سطر كل اسم فاعل في النص التالي",
+      "body": "دخلنا منزل مضيفنا فأسرع إلينا مرحبا ، القينا نظرة فإذا الجميع متحلقين حول الكعكة مرددين أحلى الأغاني منئين المحتفى بهم",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "cahier_grammaire_6eme_p058_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "صغ اسم الفاعل من الأفعال التالية",
+      "body": "استعد – حدد – تردد – تسلل – أعد",
+      "figureDesc": "جدول من خمس خانات للأفعال وسطر فارغ للإجابات تحتها",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "cahier_grammaire_6eme_p058_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعمر الفراغات باسم الفاعل المناسب مسترشدا بالفعل المؤطر",
+      "body": "جدي استقر ... بالريف لذلك تراه تارة تسلق ... شجرة ، يجني ثمارها ، وتارة ردد ... أجمل الألحان مستقبلا القادمين ودع ... المغادرين",
+      "figureDesc": "الأفعال المؤطرة: استقر، تسلق، ردد، ودع؛ مع فراغات في النص",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "cahier_grammaire_6eme_p058_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "صغ اسم الفاعل في المفرد والمثنى والجمع من الفعل اعتزّ",
+      "body": "المفرد: المذكر، المؤنث. المثنى: المذكر، المؤنث. الجمع: المذكر، المؤنث.",
+      "figureDesc": "جدول بست خانات فارغة: المفرد والمثنى والجمع، لكل منها مذكر ومؤنث",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "cahier_grammaire_6eme_p058_i5"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "اسم الفاعل من المزيد – المراجعة: المزيد ثلاثة أنواع",
+      "body": "المزيد بحرف: أفعل (أخرج)، فعّل (علم)، فاعل (سامح). المزيد بحرفين: انفعل (انتصر)، افتعل (اقترب)، تفعل (تسلم)، تفاعل (تظاهر)، افعل (احمر). بـ أحرف: استفعل (استقبل).\nالدرس",
+      "figureDesc": "جدول مراجعة لأوزان المزيد مع مثال لكل وزن",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "cahier_grammaire_6eme_p058_i6"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "يصاغ اسم الفاعل من المضاعف المزيد بإبدال حرف المضارعة ميما مضمومة وكسر ما قبل الآخر",
+      "body": "أعدّ  يعدّ  معدّ\nالجدول: المزيد بحرف: أفعل (أعدّ ← معدّ)، فعّل (مدّد ← ممدّد)، فاعل (شادّ ← مشادّ). المزيد بحرفين: انفعل (اندسّ ← مندسّ)، افتعل (اعتدّ ← معتدّ)، تفعّل (تردّد ← مترددّ)، تفاعل (تمارّ ← متمارّ)، افعلّ (خانة مظللة فارغة). المزيد بثلاثة أحرف: استفعل (استمدّ ← مستمدّ).",
+      "figureDesc": "جدول من ثلاثة أسطر: الأوزان، الفعل الماضي المضاعف، اسم الفاعل؛ خانة وزن افعلّ مظللة فارغة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "cahier_grammaire_6eme_p058_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "سطر كل اسم فاعل في النص التالي",
+      "body": "دخلنا منزل مضيفنا فأسرع إلينا مرحبا ، ألقينا نظرة فإذا الجميع متحلقين حول الكعكة مرددين أحلى الأغاني منئين المحتفى بهم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "cahier_grammaire_6eme_p058_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "صغ اسم الفاعل من الأفعال التالية",
+      "body": "استعد – حدد – تردد – تسلل – أعد",
+      "figureDesc": "جدول من خمس خانات للأفعال وسطر فارغ للإجابات تحتها",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "cahier_grammaire_6eme_p058_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعمر الفراغات باسم الفاعل المناسب مسترشدا بالفعل المؤطر",
+      "body": "جدي استقر ... بالريف لذلك تراه تارة تسلق ... شجرة ، يجني ثمارها ، وتارة ردد ... أجمل الألحان مستقبلا القادمين ودع ... المغادرين",
+      "figureDesc": "الأفعال المؤطرة: استقر، تسلق، ردد، ودع؛ مع فراغات في النص",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "cahier_grammaire_6eme_p058_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "صغ اسم الفاعل في المفرد والمثنى والجمع من الفعل اعتزّ",
+      "body": "المفرد: المذكر، المؤنث. المثنى: المذكر، المؤنث. الجمع: المذكر، المؤنث.",
+      "figureDesc": "جدول بست خانات فارغة: المفرد والمثنى والجمع، لكل منها مذكر ومؤنث",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "cahier_grammaire_6eme_p058_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "اسم الفاعل من المزيد – المراجعة: المزيد ثلاثة أنواع",
+      "body": "المزيد بحرف: أفعل (أخرج)، فعّل (علم)، فاعل (سامح). المزيد بحرفين: انفعل (انتصر)، افتعل (اقترب)، تفعل (تسلم)، تفاعل (تظاهر)، افعل (احمر). المزيد بثلاثة أحرف: استفعل (استقبل).\nالدرس",
+      "figureDesc": "جدول مراجعة لأوزان المزيد مع مثال لكل وزن",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "cahier_grammaire_6eme_p058_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

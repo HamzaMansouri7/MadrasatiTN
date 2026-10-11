@@ -1,0 +1,165 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 31,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "السند 4: الدائرة والقرص الدائري (مسألة هندسية: حوض دائري داخل أرض فلاحية). Remarque : la page contient en réalité des exercices de mathématiques (géométrie), pas de langue arabe.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "[En-tête partiellement illisible] ... يَسْتَعْمِلُ أَحَدُ الفَلَّاحِينَ حَوْضًا دَائِرِيًّا ... خُضْرَوَاتٍ ... (texte du support en bandeau, illisible sur le scan)",
+      "figureDesc": "Bandeau décoratif dégradé violet/vert contenant le texte du support (السند 4), difficilement lisible.",
+      "answer": null,
+      "confidence": 0.3,
+      "id": "mathematiques_exercices_evaluations_p031_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-1",
+      "instruction": "اِرْسُمْ هَذَا الحَوْضَ إِذَا عَلِمْتَ أَنَّ مَرْكَزَهُ النُّقْطَةُ \"م\" وَ شُعَاعَهُ 1 صم ونصف.",
+      "body": "اِرْسُمْ هَذَا الحَوْضَ إِذَا عَلِمْتَ أَنَّ مَرْكَزَهُ النُّقْطَةُ \"م\" وَ شُعَاعَهُ 1 صم ونصف.",
+      "figureDesc": "Au centre, quatre points marqués par des croix : ش، ب، م، أ. De part et d'autre, deux grands rectangles vides représentant les deux terrains (les deux terres de chaque côté du bassin).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p031_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-2",
+      "instruction": "أَكْمِلْ بِـ\" تَنْتَمِي \" أَوْ \" لاَ تَنْتَمِي \" :",
+      "body": "- النُّقْطَةُ \" ش \" ............................ لِلدَّائِـــــرَةِ وَ ............................ لِلقُرْصِ الدَّائِرِيِّ.\n- النُّقْطَةُ \" أ \" ............................ لِلدَّائِـــــرَةِ وَ ............................ لِلقُرْصِ الدَّائِرِيِّ.\n- النُّقْطَةُ \" ب \" ............................ لِلدَّائِـــــرَةِ وَ ............................ لِلقُرْصِ الدَّائِرِيِّ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p031_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-3",
+      "instruction": "قَسِّمِ الحَوْضَ إِلَى أَرْبَعَةِ أَجْزَاءٍ بِخَطَّيْنِ مُسْتَقِيمَيْنِ مُتَعَامِدَيْنِ يَمُرَّانِ مِنَ النُّقْطَةِ \"م\".",
+      "body": "مَاذَا تُلاَحِظُ؟ ..............................................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p031_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4-4",
+      "instruction": "قَسِّمْ كُلَّ أَرْضٍ مِنَ الأَرْضَيْنِ اللَّتَيْنِ عَلَى جَانِبَيِ الحَوْضِ إِلَى ثَلاَثَةِ أَجْزَاءٍ مُتَقَايِسَةٍ.",
+      "body": "مَاذَا تُلاَحِظُ؟ ..............................................................................................\n..............................................................................................",
+      "figureDesc": "Deux lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p031_i5",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-5-u6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u8",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite du cercle et du disque (tracer un cercle de centre et rayon donnés, appartenance de points au cercle ou au disque, diamètres perpendiculaires), ce qui correspond à la Période 4 (cercle/disque) de mathématiques de 5ème année.",
+  "linkFlags": [
+    "low_ocr_confidence"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Cercle et disque",
+    "skill": "Construire un cercle de centre et rayon donnés, distinguer cercle et disque, et partager une figure en parties égales.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "cercle",
+      "disque",
+      "rayon",
+      "appartenance",
+      "droites perpendiculaires",
+      "partage en parties égales"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une situation concrète, un bassin circulaire entre deux parcelles agricoles, sert de support unique à plusieurs tâches: tracer le cercle, dire si un point appartient au cercle ou au disque, diviser en quatre parts avec deux droites perpendiculaires, partager des terrains en trois parties superposables, puis formuler une observation.",
+    "themeGroup": "Angles, cercle et triangles"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "4-1: l'image affiche « مَرْكَزُهُ النُّقْطَةُ » et « شُعَاعُهُ » (nominatif, sujet de أَنَّ ... en structure nominale), alors que la transcription met « مَرْكَزَهُ » et « شُعَاعَهُ » (accusatif). Note: après أنّ, l'accusatif serait grammatical, mais l'image montre un autre tashkeel visible (مَرْكَزُهُ / شُعَاعُهُ)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "4-2: « النُّقْطَةُ » est écrit « النُّقْطَةَ » dans l'image (après le tiret, accusatif visible), la transcription met la damma."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "4-3: « قَسِّمِ » dans la transcription ; l'image montre « قَسِّمْ » (sukun). De plus « يَمُرَّانِ » correct, « النُّقْطَةِ » correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "4-3: « تُلاَحِظُ » dans la transcription ; l'image montre « تُلاحِظُ » avec vocalisation proche, mais sans alif sukun net."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les points de repère (×) et lettres ش، ب، م، أ ainsi que les deux cadres (terrains) du dessin ne sont pas signalés ; les barèmes « معه 4 / 4 / 4 / 5 » en marge sont omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "4-1: « 1 صم ونصف » : l'image montre « 1 صم ونصف », identique, mais le doublon de la consigne dans la 2e partie est répété inutilement."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "En-tête: « خُضْرَوَاتٍ » et « دَائِرِيًّا » partiellement devinés alors que le bandeau est illisible ; l'image semble montrer « ... بِنَبَاتَاتٍ خَضْرَاءَ » ou similaire, texte non fiable."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "4-4: « عَلَى جَانِبَيِ » correct ; « الأَرْضَيْنِ » dans l'image est « الأَرْضَيْنِ », OK."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

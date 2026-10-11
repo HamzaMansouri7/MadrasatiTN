@@ -1,0 +1,118 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 26,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "قيس الأطوال (3): المليمتر — الأسبوع 6",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ما هو بالمليمتر طول كلّ قطعة ؟",
+      "body": "أ) ما هو بالمليمتر طول كلّ قطعة ؟\nب) رتِّب هذه القطع ترتيبا تزايديًا.\nج) إذا كوّنت بهذه القطع قطعة جديدة، فما هو طولها بالصّنتمتر؟",
+      "figureDesc": "ثلاث قطع مستقيمة مرسومة بأطوال مختلفة: القطعة [أ ب] قصيرة في الأعلى، والقطعة [د ج] طويلة في الوسط، والقطعة [و هـ] في الأسفل مائلة. أطراف القطع مسمّاة بحروف (أ، ب، د، ج، و، هـ).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p026_i1",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب بالمليمتر طول القطعة [ج م] وطول القطعة [ج ب].",
+      "body": "طول قطعة [أ ب] هو 8 صم. النّقطة \"م\" هي منتصف القطعة [أ ب] والنّقطة \"ج\" تنتمي إلى القطعة [أ ب] وتبعد عن النّقطة \"أ\" بـ 15 مم.\nأحسب بالمليمتر طول القطعة [ج م] وطول القطعة [ج ب].\nثمّ : [أ ب] - [أ ج]،\n[أ ج] + [ب ج] + [م ب]",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p026_i2",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أحسب كلّ مجموع معبّرا عنه بالصّنتيمتر :",
+      "body": "36 صم و40 مم + 14 دسم = ..........\nنصف متر + 3 دسم ونصف = ..........",
+      "figureDesc": "سطران بهما نقاط للإجابة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p026_i3",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هي الأبعاد الحقيقيّة لهذا المكتب بالمليمتر؟",
+      "body": "قاس فِراس أبعاد مكتبه بمتر شريطيٍّ فوجد أنّ قيس طول المكتب بالصم 125 وأنّ عرضه يساوي 75 صم. تأكّد بعد ذلك من طول المتر الشّريطي فوجده يزيد بـ 8 مليمترات. ما هي الأبعاد الحقيقيّة لهذا المكتب بالمليمتر؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p026_i4",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "علّل جوابك بالأرقام.",
+      "body": "إذا علمت أنّ الارتفاع الموجود بين رفّي خزانة هو 39 صم. فهل يمكنك أن تضع فيها 5 كتب سُمْكُ الواحد 18 مم وحِزْمَة من الدفاتر سُمْكُها 87 مم وقامُوسًا سُمْكُه 21 صم؟\nعلّل جوابك بالأرقام.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p026_i5",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-p6",
+  "topicTitle": "Période 6 : Mesure du temps, capacités, masses et synthèse",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la mesure des longueurs (millimètre, conversions entre mm, cm, dm et m), qui relève des conversions d'unités de mesure de la Période 6, même si ce chapitre cite surtout le temps, les masses et les capacités.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    115
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesure des longueurs : le millimètre",
+    "skill": "Mesurer, convertir et calculer des longueurs en millimètres, centimètres et décimètres, puis résoudre des problèmes de mesure.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "millimètre",
+      "conversion d'unités",
+      "longueurs",
+      "segment",
+      "milieu d'un segment",
+      "mètre ruban"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes réutilisables : erreur d'un mètre ruban à corriger pour trouver les dimensions réelles d'un bureau, vérification de l'épaisseur d'objets (livres, cahiers, dictionnaire) dans une étagère avec justification chiffrée, calcul de longueurs sur un segment avec milieu et point repéré.",
+    "themeGroup": "Longueurs"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

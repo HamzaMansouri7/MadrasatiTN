@@ -1,0 +1,130 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 36,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الأعداد من 0 إلى 9 : قراءة، كتابة، ترتيب ومقارنة",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "تَعَرُّفُ الأَعْدَادِ 7، 8، 9 وَكِتَابَتُهَا رَقْمًا وَلَفْظًا.",
+      "body": "• 7 : سَبْعَةٌ\n• 8 : ثَمَانِيَةٌ\n• 9 : تِسْعَةٌ",
+      "figureDesc": "مجموعات تحتوي على مثلثات زرقاء: مجموعة بها 7 مثلثات تشير إلى العدد 7 والكلمة سَبْعَةٌ، ومجموعة بها 8 مثلثات تشير إلى العدد 8 والكلمة ثَمَانِيَةٌ، ومجموعة بها 9 مثلثات تشير إلى العدد 9 والكلمة تِسْعَةٌ.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p036_i1",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "2",
+      "instruction": "تَرْتِيبُ الأَعْدَادِ مِنْ 0 إِلَى 9 : أَسْتَعِينُ بِاتِّجَاهِ السَّهْمِ وَأَقْرَأُ الأَعْدَادَ مُرَتَّبَةً.",
+      "body": "• تَصَاعُدِيًّا: 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9\n• تَنَازُلِيًّا: 9 - 8 - 7 - 6 - 5 - 4 - 3 - 2 - 1 - 0",
+      "figureDesc": "مخطّط لسُلَّمين مرقّمين من 0 إلى 9: الأول يوضّح العدّ التصاعدي بسهم متجه للأعلى، والثاني يوضّح العدّ التنازلي بسهم متجه للأسفل.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p036_i2",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "3",
+      "instruction": "الْمُقَارَنَةُ بَيْنَ الأَعْدَادِ مِنْ 0 إِلَى 9 بِاسْتِعْمَالِ > ، < ، = :",
+      "body": "• 3 < 4 : أَرْبَعَةٌ أَكْبَرُ مِنْ ثَلَاثَةٍ.\n• 9 > 5 : خَمْسَةٌ أَصْغَرُ مِنْ تِسْعَةٍ.\n• 6 = 6 : سِتَّةٌ تُسَاوِي سِتَّةً.",
+      "figureDesc": "مجموعات للمقارنة باستخدام العلامات > و < و = : مجموعة من 3 علامات (X) ومجموعة من 4 علامات (3 < 4)، مجموعة من 9 علامات ومجموعة من 5 علامات (9 > 5)، ومجموعتان كل منهما تحتوي على 6 عناصر (6 = 6).",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p036_i3",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": "math-1-p2",
+  "topicTitle": "Période 2 : Nombres de 6 à 9, comparaison, ordre et lignes",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p1",
+    "confidence": 0.6
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite des nombres 7, 8, 9, de leur écriture en chiffres et en lettres, de l'ordre croissant et décroissant de 0 à 9 et de la comparaison avec >, <, =, ce qui correspond à la Période 2 (nombres de 6 à 9, comparaison, ordre).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres de 0 à 9",
+    "skill": "Lire, écrire en chiffres et en lettres, ordonner et comparer les nombres de 0 à 9 avec les signes >, < et =.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres de 0 à 9",
+      "ordre croissant et décroissant",
+      "comparaison",
+      "signes > < =",
+      "écriture en lettres"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Page de leçon qui présente simplement les notions (nombres 7, 8, 9, rangement avec flèche, comparaison par signes) ; réutilisable comme modèle de progression et de présentation visuelle, mais sans situations ni exercices originaux.",
+    "themeGroup": "Les nombres de 0 à 9"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Section [1] : le titre « تَعَرُّفُ الأَعْدَادِ 7، 8، 9 وَكِتَابَتُهَا رَقْمًا وَلَفْظًا. » n'apparaît pas sur la page. Il est inventé, car la page commence directement par les images de triangles."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« مُرَتَّبَةً » : l'image porte « مُرتَّبَةً », avec un damma sur le م et un sukun/fatha sur le ر. La transcription ajoute une fatha sur le ر qui n'est pas visible."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الأَعْدَادِ » : l'image affiche « الْأَعْدَادِ » avec un sukun sur le ل. Il manque dans la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Section [2] : les étiquettes « تَصَاعُدِيًّا » et « تَنَازُلِيًّا » sont bien présentes, mais la transcription ne mentionne pas les deux escaliers avec les flèches de direction."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Section [1] : les représentations de triangles (7, 8, 9) reliées aux nombres ne sont pas décrites. Section [3] : les ensembles de croix et de points (5, 9, 3, 4, 6, 6) sont absents."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Section [3] : l'image présente 4 > 3, avec 4 à gauche du symbole dans la colonne de droite. La transcription écrit « 3 < 4 », ce qui est mathématiquement équivalent mais l'ordre visuel diffère."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le numéro « 3 » de la section n'est pas transcrit comme un marqueur d'exercice. De plus, « ثَلَاثَةٍ » et « تِسْعَةٍ » sont corrects ; « سَبْعَةٌ » est correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

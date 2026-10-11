@@ -1,0 +1,146 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 8,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Conjugaison au passé composé (verbes du 1er et du 2e groupe, aller, mettre, prendre) ; fin de l'exercice sur le complément de manière",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "C (suite)",
+      "instruction": "Complément de manière (suite de l'exercice précédent, consigne non visible sur cette page)",
+      "body": "- Un complément de manière : ...............................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p008_i1",
+      "topicId": "fr-6-m2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "D1",
+      "instruction": "Réécris ce passage au passé composé en commençant par :",
+      "body": "« Julien prépare ses affaires. Il taille ses crayons et il range ses cahiers neufs dans le cartable brun. »\n- Tu ...............\n- Nous ...............\n- Les deux élèves ...............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p008_i2",
+      "topicId": "fr-6-m2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "D2",
+      "instruction": "Réécris cette phrase avec les sujets indiqués :",
+      "body": "« Julien remplit le stylo d'encre violette. »\n- Je ...............\n- Nous ...............\n- Vous ...............\n- Les enfants ...............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p008_i3",
+      "topicId": "fr-6-m2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "D3",
+      "instruction": "Réécris cette phrase avec les sujets indiqués :",
+      "body": "« Julien met ses jolis vêtements et il va à l'école. »\n- Je ...............\n- Tu ...............\n- Ma petite sœur et moi ...............\n- Vous ...............\n- Elles ...............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p008_i4",
+      "topicId": "fr-6-m2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "D4",
+      "instruction": "Réécris ce passage en commençant par :",
+      "body": "« Thomas ne fait pas attention. Il prend le cartable de Julien au lieu de son cartable. »\n- Je ...............\n- Tu ...............\n- Nous ...............\n- Vous ...............\n- Ils ...............",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p008_i5",
+      "topicId": "fr-6-m2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m2",
+  "topicTitle": "Module 2 : Communiquer avec les autres",
+  "topicConfidence": 0.62,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.55
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de conjugaison au passé composé (verbes du 1er et du 2e groupe, aller, mettre, prendre), ce qui correspond le mieux au module 2 (emploi du passé composé), mais le module 1 (conjugaison du présent) et le contexte scolaire (école, cartable) laissent une ambiguïté.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    119
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Le passé composé (1er et 2e groupe, aller, mettre, prendre)",
+    "skill": "Réécrire des phrases et un passage au passé composé en changeant le sujet, avec les bons auxiliaires et participes passés.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "passé composé",
+      "conjugaison",
+      "auxiliaire",
+      "participe passé",
+      "complément de manière",
+      "changement de sujet"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Le fil narratif de la rentrée scolaire (préparer son cartable, s'habiller, une confusion de cartable) sert de contexte pour des exercices de transposition de sujets, mais le format de réécriture à compléter est très classique.",
+    "themeGroup": "Conjugaison"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le titre « [C (suite)] Complément de manière (suite de l'exercice précédent, consigne non visible sur cette page) » est une annotation ajoutée, pas du texte de la page."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête (« Sagesse », « 6ème année de base », « Lecture - Compréhension ») et le pied de page (« Lire et s'exprimer », page 7) ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de section « D) Conjugaison : » n'est pas transcrit."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "D2 et D3 : la consigne est « Réécris cette phrase avec les sujets indiqués », ce qui est correct. En D1 et D4, « Réécris ce passage au passé composé » est correct pour D1, mais D4 dit seulement « en commençant par », ce qui est aussi correct. Aucune erreur ici."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

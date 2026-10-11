@@ -1,0 +1,197 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 49,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقويم الأحداث الدورية وغير الدورية وترتيب الأحداث (شبكة التقييم ومعايير التصحيح)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5 (suite)",
+      "instruction": "السُّلُوكُ : أُوَافِقُ / لَا أُوَافِقُ",
+      "body": "التَّثَبُّتُ مِنَ التَّارِيخِ الْأَقْصَى لِاسْتِهْلَاكِ الْحَلِيبِ.\nالْإِكْثَارُ مِنْ أَكْلِ الْحَلْوَى.\nلَا أَغْسِلُ يَدَيَّ قَبْلَ الْأَكْلِ وَلَا بَعْدَهُ.",
+      "figureDesc": "جدول من ثلاثة أعمدة (السُّلُوكُ، أُوَافِقُ، لَا أُوَافِقُ) وثلاثة أسطر؛ سلّم التنقيط 1 لكل سطر؛ المعيار معـ ب ومعـ 3",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p049_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : أُصْلِحُ الْمُخَطَّطَ.",
+      "body": "العمود الأول: فِي الصَّبَاحِ - فِي اللَّيْلِ - عِنْدَ الزَّوَالِ.\nالعمود الثاني: طَعَامُ الْعَشَاءِ - طَعَامُ الْغَدَاءِ - فُطُورُ الصَّبَاحِ.\nالعمود الثالث (المطلوب): فِي الصَّبَاحِ - فِي اللَّيْلِ - عِنْدَ الزَّوَالِ.",
+      "figureDesc": "مخطط توصيل بأسهم: فِي الصَّبَاحِ ← طَعَامُ الْغَدَاءِ، فِي اللَّيْلِ ← فُطُورُ الصَّبَاحِ، عِنْدَ الزَّوَالِ ← طَعَامُ الْعَشَاءِ (الوصلات المرسومة خاطئة ويجب إصلاحها)",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "evaluations_toutes_matieres_p049_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "",
+      "body": "عِنْدَمَا رَنَّ الْجَرَسُ اصْطَفَّ الْأَطْفَالُ فَكَانَ مُحَمَّدٌ الْأَوَّلَ بَيْنَهَا كَانَتْ مَرْيَمُ قَبْلَ عَلِيٍّ وَبَعْدَ سَامِي.\nوَكَانَ سَامِي بَعْدَ سُفْيَانَ الَّذِي كَانَ بِدَوْرِهِ بَعْدَ مُحَمَّدٍ، أَمَّا الْأَخِيرُ فَكَانَ وَجْدِي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p049_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "التَّعْلِيمَةُ 7 : أَكْتُبُ التَّرْتِيبَ الصَّحِيحَ لِلْأَطْفَالِ.",
+      "body": "مُحَمَّدٌ ○ مَرْيَمُ ○ سَامِي ○ سُفْيَانُ ○ وَجْدِي ○ عَلِيٌّ ○",
+      "figureDesc": "ستة دوائر بجانب أسماء الأطفال لكتابة الترتيب؛ سلّم التنقيط: 0.5 - 1 / 1.5 - 2 / 2.5 - 3؛ المعيار معـ 1 ج",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p049_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 5",
+      "instruction": "",
+      "body": "فِي الْحِصَّةِ الثَّانِيَةِ شَرَعَ الْأَطْفَالُ فِي دِرَاسَةِ الْأَحْدَاثِ الدَّوْرِيَّةِ وَغَيْرِ الدَّوْرِيَّةِ. فَقَالَ سَامِي : «شَهْرُ رَمَضَانَ حَدَثٌ دَوْرِيٌّ».",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p049_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "التَّعْلِيمَةُ 8 : أُعَلِّلُ قَوْلَ سَامِي.",
+      "body": "شَهْرُ رَمَضَانَ حَدَثٌ دَوْرِيٌّ لِأَنَّهُ ...........................................",
+      "figureDesc": "سطر منقّط للإجابة؛ التنقيط 1؛ المعيار معـ 2 أ",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p049_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "التَّعْلِيمَةُ 9 : أُصْلِحُ الْأَخْطَاءَ فِي الْإِفَادَتَيْنِ التَّالِيَتَيْنِ.",
+      "body": "1) تَفْصِلُ بَيْنَ الْأَحْدَاثِ غَيْرِ الدَّوْرِيَّةِ نَفْسُ الْمُدَّةِ الزَّمَنِيَّةِ.\nتَفْصِلُ بَيْنَ ...........................................\n2) الْأَحْدَاثُ الدَّوْرِيَّةُ لَا تَتَكَرَّرُ بِانْتِظَامٍ.\n...........................................",
+      "figureDesc": "أسطر منقّطة للإجابة؛ التنقيط 1 لكل إفادة؛ المعيار معـ 3",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p049_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مستويات التملك / المعايير: معايير الحد الأدنى (معـ 1 أ، معـ 1 ب، معـ 1 ج، معـ 2 أ، معـ 2 ب) ومعيار التمَيُّز (معـ 3).\nانْعِدَامُ التَّمَلُّكِ: 0 في كل المعايير؛ معـ 3: 0.\nالتَّمَلُّكُ دُونَ الْأَدْنَى: 1، 1، (0.5 - 1 - 1.5)، 1، 1؛ معـ 3: 0.5 - 1 / 1.5 - 2.\nالتَّمَلُّكُ الْأَدْنَى: 2 في كل المعايير؛ معـ 3: 2.5 - 3 / 3.5 - 4.\nالتَّمَلُّكُ الْأَقْصَى: 3، 3، (2.5 - 3)، 3، 3؛ معـ 3: 4.5 / 5.",
+      "figureDesc": "جدول إسناد الأعداد حسب مستويات التملك والمعايير؛ رقم الصفحة 48",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "evaluations_toutes_matieres_p049_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Éveil scientifique / Temps (évaluation)",
+  "topicReason": "La page est une évaluation avec grille de notation portant sur les événements périodiques et non périodiques, l'ordre des événements et des comportements d'hygiène alimentaire, ce qui ne correspond à aucun chapitre officiel d'arabe ou de mathématiques de 2ème année.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Événements périodiques et ordre chronologique",
+    "skill": "Distinguer les événements périodiques des non périodiques, justifier la périodicité et ordonner des événements ou des personnes.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "production_ecrite",
+      "vrai_faux",
+      "autre"
+    ],
+    "keywords": [
+      "événements périodiques",
+      "ordre chronologique",
+      "repas de la journée",
+      "Ramadan",
+      "grille d'évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : remettre en ordre des enfants d'une file à partir d'indices (avant/après), faire correspondre les repas aux moments de la journée, justifier la périodicité d'un événement (Ramadan) et corriger des affirmations fausses ; la grille de notation par critères sert de modèle d'évaluation.",
+    "themeGroup": "Le temps et l'ordre chronologique"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Dans la 3e ligne du tableau, la transcription donne « لَا أَغْسِلُ يَدَيَّ » alors que l'image montre « يَدَيَّ » avec le sens attendu ; vérifier la forme. Le texte visible est « يَدَيَّ », donc probablement correct (point mineur)."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 6 (mise en correspondance) : la transcription présente des colonnes mal comprises. Colonne de droite (départ) : في الصباح, في الليل, عند الزوال. Colonne centrale : طعام العشاء, طعام الغداء, فطور الصباح. Colonne de gauche : في الصباح, في الليل, عند الزوال (à relier). Les flèches ne sont pas transcrites et la colonne de gauche est décrite comme « المطلوب » alors qu'il s'agit de la réponse vide."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les codes de critères en marge (معـ ب، معـ 3، معـ ج1، معـ 2أ…) et les barèmes (1, 1, 1 ; 0.5-1, 1.5-2, 2.5-3) ne sont pas transcrits ; les cases à cocher et les cases de notation sont absentes."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Tableau d'attribution des notes : la colonne معـ 3 est mal découpée. L'image donne : 0 ; 0.5-1 ; 1.5-2 ; 2.5-3 ; 3.5-4 ; 4.5-5, répartis sur les lignes. Dans la transcription, « التملك دون الأدنى : معـ 3 : 0.5-1 / 1.5-2 » et « التملك الأدنى : 2.5-3 / 3.5-4 » sont une répartition inventée. De plus, « معـ 3 : 2.5 - 3 » est donné par erreur à la ligne « الأدنى » avec « 2 » dans les autres colonnes."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ordre des colonnes du tableau d'attribution : l'image présente معـ1أ, معـ1ب, معـ1ج, معـ2أ, معـ2ب de droite à gauche ; la transcription les liste dans le même sens que l'image, mais « معـ 1 ج » vaut 0.5-1-1.5 et non « (0.5 - 1 - 1.5) » dans un ordre différent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 48 n'est pas transcrit."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

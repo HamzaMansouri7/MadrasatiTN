@@ -1,0 +1,169 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 18,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Claude Monet (la vie du peintre et la maison de Giverny)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2-b",
+      "instruction": "Relève, dans le texte, la phrase qui le montre :",
+      "body": "Deux lignes de pointillés pour écrire la réponse. (La question 2-a figure sur la page précédente.)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "francais_lire_et_sexprimer_p018_i1",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-a",
+      "instruction": "Pourquoi Monet devient-il désespéré ?",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p018_i2",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-b",
+      "instruction": "Relève, dans le texte, les phrases qui le montrent :",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p018_i3",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Numérote les phrases suivantes dans l'ordre chronologique :",
+      "body": "[...] Monet rencontre Camille qui deviendra sa femme.\n[...] Monet découvre la maison de ses rêves à Giverny.\n[...] Monet étudie l'art à Paris.\n[...] Monet meurt dans « La maison rose » à l'âge de 86 ans.\n[...] Camille décède très jeune et laisse Monet désespéré.\n[...] Monet vit désormais avec Alice et retrouve le goût de peindre.",
+      "figureDesc": "Petites cases à numéroter devant chaque phrase.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p018_i4",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Cherche dans le texte le synonyme des mots suivants :",
+      "body": "-Veut = ...........\n- La maison = ...........\n-La mort = ...........\n-Se marier = ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p018_i5",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Écris « vrai » ou « faux » :",
+      "body": "-Monet n'a jamais peint Camille. (...............)\n-« La maison rose » est l'habitation de ses rêves. (...............)\n- L'oncle de Monet lui donne de l'argent pour étudier l'art. (...............)\n-Camille donne naissance à deux fils. (...............)\n-Monet étudie l'art à Paris. (...............)",
+      "figureDesc": "Cases arrondies en pointillés à droite de chaque énoncé pour écrire vrai ou faux.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p018_i6",
+      "topicId": "fr-6-m7",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Aimez-vous être peintre dans l'avenir ? Dites pourquoi.",
+      "body": "Trois lignes de pointillés pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p018_i7",
+      "topicId": "fr-6-m7",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m7",
+  "topicTitle": "Module 7 : Profiter de son temps libre",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.28
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une compréhension de lecture sur le peintre Claude Monet et sa maison de Giverny (art, loisirs créatifs, culture), ce qui correspond au mieux au Module 7 « Profiter de son temps libre », mais le rattachement n'est pas certain, car le texte biographique pourrait aussi relever du Module 1 sur le travail.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    120
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte biographique",
+    "skill": "Comprendre un texte biographique en relevant des informations, en ordonnant des événements chronologiquement et en trouvant des synonymes.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "Claude Monet",
+      "compréhension de texte",
+      "ordre chronologique",
+      "synonymes",
+      "biographie",
+      "vrai ou faux"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série d'exercices de compréhension autour d'une biographie d'artiste (relever des phrases justificatives, remettre des événements dans l'ordre, chercher des synonymes, vrai/faux, puis question d'opinion personnelle) qui peut servir de modèle pour d'autres textes biographiques.",
+    "themeGroup": "Textes descriptifs et biographiques"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le libellé de la question 2-b a été ajouté avec la mention '(La question 2-a figure sur la page précédente.)'. Cette précision n'est pas dans l'image. L'image affiche seulement 'b- Relève, dans le texte, la phrase qui le montre :' sans le numéro 2."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête et pied de page non transcrits : 'Lecture - Compréhension', 'Sagesse', '6ème année de base', 'Lire et s'exprimer', numéro de page 17."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Question 5 : les deux colonnes sont fusionnées en une liste. L'image les place côte à côte (Veut / La maison, La mort / Se marier). Le contenu est correct mais la disposition est perdue."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

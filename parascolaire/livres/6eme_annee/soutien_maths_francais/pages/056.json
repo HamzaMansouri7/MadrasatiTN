@@ -1,0 +1,104 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 56,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المجال الرئيسي الثاني: الهندسة — إنشاء زاوية ومنصفها، زوايا الأشكال الهندسية، الدائرة، التماثل المحوري",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أنشئ زاوية قياسها ... ، ثم أنشئ منصفا لهذه الزاوية باستعمال الأدوات الهندسية المناسبة.",
+      "body": "(الأعداد المطلوبة غير ظاهرة في الصورة الممسوحة، مثل قياس الزاوية ونقطة الاستحقاق) إطار فارغ للإنشاء.",
+      "figureDesc": "Grand cadre rectangulaire vide destiné à la construction de l'angle et de sa bissectrice.",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "soutien_maths_francais_p056_i1",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "لاحظ المضلع جانبه ثم أحسب قياس الزاوية ... باستعمال قواعد العلاقات بين زوايا الأشكال الهندسية.",
+      "body": "المضلع EFGH: الزاويتان عند E وH قائمتان، والزاوية عند G تساوي 49°. المطلوب حساب قياس الزاوية عند F.",
+      "figureDesc": "Trapèze rectangle EFGH : angles droits en E et H (carrés noirs), EF en haut, HG en bas, angle de 49° en G, angle marqué en F (à calculer).",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "soutien_maths_francais_p056_i2",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أنشئ دائرة شعاعها ...",
+      "body": "(قيمة الشعاع غير ظاهرة) إطار فارغ للإنشاء.",
+      "figureDesc": "Grand cadre rectangulaire vide pour tracer le cercle.",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "soutien_maths_francais_p056_i3",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لاحظ الشكل أسفله ثم أنشئ مماثلا له بالنسبة لمحور التماثل.",
+      "body": "",
+      "figureDesc": "Quadrillage avec un trapèze rectangle noir à gauche et un axe de symétrie vertical rouge ; il faut construire le symétrique du trapèze à droite de l'axe.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "soutien_maths_francais_p056_i4",
+      "topicId": "math-6-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p4",
+  "topicTitle": "Période 4 : Solides, aires latérales/totales et angles",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch1",
+    "confidence": 0.25
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de géométrie : construction d'un angle et de sa bissectrice, calcul d'angles dans un polygone, construction d'un cercle et symétrie axiale, ce qui correspond à la Période 4 (mesure des angles et symétrie), même si le cercle relève aussi d'autres périodes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Constructions géométriques : angle, cercle, symétrie",
+    "skill": "Construire une bissectrice et un cercle aux instruments, calculer un angle d'un polygone et tracer le symétrique d'une figure par rapport à un axe.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "bissectrice",
+      "angle",
+      "polygone",
+      "cercle",
+      "symétrie axiale",
+      "construction"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série courte d'exercices de géométrie à cadres vides pour construire aux instruments, avec un calcul d'angle dans un quadrilatère à deux angles droits et un tracé de symétrique par rapport à un axe, réutilisable comme fiche de travaux pratiques variés.",
+    "themeGroup": "Constructions géométriques"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

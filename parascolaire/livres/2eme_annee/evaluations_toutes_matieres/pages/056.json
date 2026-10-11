@@ -1,0 +1,272 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 56,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "التربية الإسلامية – اختبار نهاية الثلاثي الثاني عدد 3 (آداب الاستئذان، سورة العاديات، قواعد الإسلام الخمس)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "أُبَرِّرُ كُلَّ تَصَرُّفٍ بِمَا يُنَاسِبُ.",
+      "body": "السَّنَد 1 : فِي الصَّبَاحِ اسْتَيْقَظَ عَلَاءٌ مُتَأَخِّرًا، فَتَهَيَّأَ بِسُرْعَةٍ، وَأَخَذَ مِحْفَظَتَهُ، ثُمَّ قَصَدَ الْمَدْرَسَةَ. عِنْدَ الْوُصُولِ وَجَدَ التَّلَامِيذَ قَدْ الْتَحَقُوا بِالْقَاعَاتِ.\n- لَا أَفْتَحُ بَابَ الْقَاعَةِ وَلَا أَدْخُلُ مُبَاشَرَةً لِأَنَّهُ يَجِبُ ..........\n- أَطْرُقُ بَابَ الْقَاعَةِ وَأَبْقَى وَاقِفًا لِأَنَّهُ يَجِبُ ..........\n- أَطْرُقُ ثَلَاثَ طَرَقَاتٍ وَإِنْ لَمْ يُفْتَحْ لِي أَذْهَبُ إِلَى مَكْتَبِ الْمُدِيرِ لِأَنَّهُ لَا يَجِبُ ..........\n..........",
+      "figureDesc": "ثلاثة أسطر منقّطة للإجابة؛ عمود النقاط: 1 / 1 / 1؛ خانات تقييم المعيار معـ2ب (ثلاث خانات).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p056_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "أُكَمِّلُ الْحَدِيثَ بِمَا يُنَاسِبُ : (فَادْخُلْ / ثَلَاثٌ / فَارْجِعْ / أَرْبَعٌ).",
+      "body": "السَّنَد 2 : أَسْرَعَ عَلَاءٌ، وَطَرَقَ بَابَ الْقَاعَةِ، ثُمَّ دَفَعَهُ وَدَخَلَ. اِسْتَوْقَفَهُ الْمُعَلِّمُ، وَطَلَبَ مِنْهُ تَذْكِيرَ أَصْدِقَائِهِ بِحَدِيثِ رَسُولِ اللَّهِ حَوْلَ آدَابِ الِاسْتِئْذَانِ.\n- قَالَ الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ : «الِاسْتِئْذَانُ .......... فَإِنْ أُذِنَ لَكَ .......... وَإِلَّا .......... » (رواه البخاري)",
+      "figureDesc": "خانة تقييم واحدة للمعيار معـ2أ؛ النقطة: 1.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p056_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "ثَلَاثُ آيَاتٍ مِنْ بَيْنِ هَذِهِ الْآيَاتِ وَرَدَتْ بِسُورَةِ الْعَادِيَاتِ أُحَدِّدُهَا بِالْعَلَامَةِ (x) :",
+      "body": "السَّنَد 3 : وَاصَلَ الْمُعَلِّمُ الدَّرْسَ، فَرَاقَبَ مَدَى حِفْظِ التَّلَامِيذِ لِلسُّوَرِ الْقُرْآنِيَّةِ.\n- فَالْمُورِيَاتِ قَدْحًا\n- فَأَثَرْنَ بِهِ نَقْعًا\n- سَلَامٌ هِيَ حَتَّى مَطْلَعِ الْفَجْرِ\n- إِنَّ رَبَّهُمْ بِهِمْ يَوْمَئِذٍ لَخَبِيرٌ",
+      "figureDesc": "أربع خانات للتعليم بالعلامة (x) أمام كل آية؛ النقاط: 0,5 / 0,5 / 0,5؛ خانات المعيار معـ2ج (ثلاث خانات).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p056_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 4",
+      "instruction": "ثُمَّ ذَكَّرَهُمُ الْمُعَلِّمُ بِقَوَاعِدِ الْإِسْلَامِ الْخَمْسِ. أُكَمِّلُ بِكِتَابَةِ قَوَاعِدِ الْإِسْلَامِ :",
+      "body": "- الشَّهَادَتَانِ - .......... - .......... - الْحَجُّ",
+      "figureDesc": "ثلاث خانات تقييم للمعيار معـ1؛ النقاط: 1 / 1 / 1. ترويسة الصفحة: امتحانات جسر النجاح، اختبار نهاية الثلاثي الثاني عدد 3، المادة: التربية الإسلامية، المستوى: السنة الثانية؛ رقم الصفحة 55.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_toutes_matieres_p056_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "التربية الإسلامية",
+  "topicReason": "La page est une évaluation de fin de trimestre en éducation islamique (règles de l'autorisation d'entrer, sourate Al-Adiyat, cinq piliers de l'islam), matière absente de la liste des chapitres officiels qui ne contient que l'arabe et les mathématiques.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Politesse d'entrée, sourate Al-Adiyat, piliers de l'islam",
+    "skill": "Justifier un comportement selon les règles de politesse de l'autorisation d'entrer, compléter un hadith, reconnaître les versets de la sourate Al-Adiyat et citer les cinq piliers de l'islam.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "qcm",
+      "autre"
+    ],
+    "keywords": [
+      "adab al-isti'dhan",
+      "hadith",
+      "sourate Al-Adiyat",
+      "piliers de l'islam",
+      "évaluation trimestrielle"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un fil conducteur narratif (un élève en retard devant sa classe) relie plusieurs supports : justifier un comportement, compléter un hadith avec des mots proposés, repérer les versets authentiques parmi des intrus, puis lister les piliers manquants.",
+    "themeGroup": "Politesse d'entrée et autorisation"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "التعليمة 1 : l'image porte «أُبَرِّرُ» (avec damma) et non «أَبَرِّرُ»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«قَدِ الْتَحَقُوا» : l'image porte «التَحَقُّوا» ; la transcription omet la shadda de «الْتَحَقُّوا» (voyellation de l'image : قَدْ التَحَقُوا)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "السند 2 : «الِاسْتِئْذَانِ» transcrit avec hamza sous ya ; l'image montre «الاسْتِئْذَان» sans différence notable, mais «حَوْلَ» et «عَلَاءٌ» sont corrects. Pas d'erreur majeure."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les colonnes «المعايير» (معـ2ب، معـ2أ، معـ2ج، معـ1) et les barèmes (1, 1, 1, 1, 0,5, 0,5, 0,5, 1, 1, 1) ainsi que l'en-tête (امتحانات جسر النجاح, المادة : التربية الإسلامية, المستوى : السنة الثانية, اختبار نهاية الثلاثي الثاني, عدد : 3, الاسم/اللقب/القسم) et le numéro de page 55 sont omis."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les consignes (التعليمة) sont placées avant leur السند alors que dans l'image le السند vient d'abord, puis la التعليمة."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "التعليمة 4 : la transcription affiche trois lignes de points entre «الشَّهَادَتَانِ» et «الْحَجُّ», alors que l'image en montre seulement deux : «- الشهادتان - ...... - ...... - الحج»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases à cocher de la التعليمة 3 ne sont pas indiquées."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Consigne 1 : l'image porte «أُبَرِّرُ» avec une damma sur l'alif. La transcription avait «أَبَرِّرُ»."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Consigne 4 : la transcription avait trois séries de points entre «الشَّهَادَتَانِ» et «الْحَجُّ». L'image n'en montre que deux : «- الشهادتان - ..... - ..... - الحج»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Support 1 : l'image porte un sukun sur le dal de «قَدْ». La transcription avait «قَدِ» avec une kasra. Le mot «الْتَحَقُوا» n'a pas de shadda ; je ne la vois pas clairement dans l'image, donc je ne la confirme pas."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "أُبَرِّرُ كُلَّ تَصَرُّفٍ بِمَا يُنَاسِبُ.",
+      "body": "السَّنَد 1 : فِي الصَّبَاحِ اسْتَيْقَظَ عَلَاءٌ مُتَأَخِّرًا، فَتَهَيَّأَ بِسُرْعَةٍ، وَأَخَذَ مِحْفَظَتَهُ، ثُمَّ قَصَدَ الْمَدْرَسَةَ. عِنْدَ الْوُصُولِ وَجَدَ التَّلَامِيذَ قَدْ الْتَحَقُوا بِالْقَاعَاتِ.\n- لَا أَفْتَحُ بَابَ الْقَاعَةِ وَلَا أَدْخُلُ مُبَاشَرَةً لِأَنَّهُ يَجِبُ ..........\n- أَطْرُقُ بَابَ الْقَاعَةِ وَأَبْقَى وَاقِفًا لِأَنَّهُ يَجِبُ ..........\n- أَطْرُقُ ثَلَاثَ طَرَقَاتٍ وَإِنْ لَمْ يُفْتَحْ لِي أَذْهَبُ إِلَى مَكْتَبِ الْمُدِيرِ لِأَنَّهُ لَا يَجِبُ ..........\n..........",
+      "figureDesc": "ثلاثة أسطر منقّطة للإجابة؛ عمود النقاط: 1 / 1 / 1؛ خانات تقييم المعيار معـ2ب (ثلاث خانات).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p056_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "أُكَمِّلُ الْحَدِيثَ بِمَا يُنَاسِبُ : (فَادْخُلْ / ثَلَاثٌ / فَارْجِعْ / أَرْبَعٌ).",
+      "body": "السَّنَد 2 : أَسْرَعَ عَلَاءٌ، وَطَرَقَ بَابَ الْقَاعَةِ، ثُمَّ دَفَعَهُ وَدَخَلَ. اِسْتَوْقَفَهُ الْمُعَلِّمُ، وَطَلَبَ مِنْهُ تَذْكِيرَ أَصْدِقَائِهِ بِحَدِيثِ رَسُولِ اللَّهِ حَوْلَ آدَابِ الِاسْتِئْذَانِ.\n- قَالَ الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ : «الِاسْتِئْذَانُ .......... فَإِنْ أُذِنَ لَكَ .......... وَإِلَّا .......... » (رواه البخاري)",
+      "figureDesc": "خانة تقييم واحدة للمعيار معـ2أ؛ النقطة: 1.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p056_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "ثَلَاثُ آيَاتٍ مِنْ بَيْنِ هَذِهِ الْآيَاتِ وَرَدَتْ بِسُورَةِ الْعَادِيَاتِ أُحَدِّدُهَا بِالْعَلَامَةِ (x) :",
+      "body": "السَّنَد 3 : وَاصَلَ الْمُعَلِّمُ الدَّرْسَ، فَرَاقَبَ مَدَى حِفْظِ التَّلَامِيذِ لِلسُّوَرِ الْقُرْآنِيَّةِ.\n- فَالْمُورِيَاتِ قَدْحًا\n- فَأَثَرْنَ بِهِ نَقْعًا\n- سَلَامٌ هِيَ حَتَّى مَطْلَعِ الْفَجْرِ\n- إِنَّ رَبَّهُمْ بِهِمْ يَوْمَئِذٍ لَخَبِيرٌ",
+      "figureDesc": "أربع خانات للتعليم بالعلامة (x) أمام كل آية؛ النقاط: 0,5 / 0,5 / 0,5؛ خانات المعيار معـ2ج (ثلاث خانات).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p056_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 4",
+      "instruction": "ثُمَّ ذَكَّرَهُمُ الْمُعَلِّمُ بِقَوَاعِدِ الْإِسْلَامِ الْخَمْسِ. أُكَمِّلُ بِكِتَابَةِ قَوَاعِدِ الْإِسْلَامِ :",
+      "body": "- الشَّهَادَتَانِ - .......... - .......... - الْحَجُّ",
+      "figureDesc": "ثلاث خانات تقييم للمعيار معـ1؛ النقاط: 1 / 1 / 1. ترويسة الصفحة: امتحانات جسر النجاح، اختبار نهاية الثلاثي الثاني عدد 3، المادة: التربية الإسلامية، المستوى: السنة الثانية؛ رقم الصفحة 55.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_2eme_toutes_matieres_p056_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "أَبَرِّرُ كُلَّ تَصَرُّفٍ بِمَا يُنَاسِبُ.",
+      "body": "السَّنَد 1 : فِي الصَّبَاحِ اسْتَيْقَظَ عَلَاءٌ مُتَأَخِّرًا، فَتَهَيَّأَ بِسُرْعَةٍ، وَأَخَذَ مِحْفَظَتَهُ، ثُمَّ قَصَدَ الْمَدْرَسَةَ. عِنْدَ الْوُصُولِ وَجَدَ التَّلَامِيذَ قَدِ الْتَحَقُوا بِالْقَاعَاتِ.\n- لَا أَفْتَحُ بَابَ الْقَاعَةِ وَلَا أَدْخُلُ مُبَاشَرَةً لِأَنَّهُ يَجِبُ ..........\n- أَطْرُقُ بَابَ الْقَاعَةِ وَأَبْقَى وَاقِفًا لِأَنَّهُ يَجِبُ ..........\n- أَطْرُقُ ثَلَاثَ طَرَقَاتٍ وَإِنْ لَمْ يُفْتَحْ لِي أَذْهَبُ إِلَى مَكْتَبِ الْمُدِيرِ لِأَنَّهُ لَا يَجِبُ ..........\n..........",
+      "figureDesc": "ثلاثة أسطر منقّطة للإجابة؛ عمود النقاط: 1 / 1 / 1؛ خانات تقييم المعيار معـ2ب (ثلاث خانات).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p056_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "أُكَمِّلُ الْحَدِيثَ بِمَا يُنَاسِبُ : (فَادْخُلْ / ثَلَاثٌ / فَارْجِعْ / أَرْبَعٌ).",
+      "body": "السَّنَد 2 : أَسْرَعَ عَلَاءٌ، وَطَرَقَ بَابَ الْقَاعَةِ، ثُمَّ دَفَعَهُ وَدَخَلَ. اِسْتَوْقَفَهُ الْمُعَلِّمُ، وَطَلَبَ مِنْهُ تَذْكِيرَ أَصْدِقَائِهِ بِحَدِيثِ رَسُولِ اللَّهِ حَوْلَ آدَابِ الِاسْتِئْذَانِ.\n- قَالَ الرَّسُولُ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ : «الِاسْتِئْذَانُ .......... فَإِنْ أُذِنَ لَكَ .......... وَإِلَّا .......... » (رواه البخاري)",
+      "figureDesc": "خانة تقييم واحدة للمعيار معـ2أ؛ النقطة: 1.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p056_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "ثَلَاثُ آيَاتٍ مِنْ بَيْنِ هَذِهِ الْآيَاتِ وَرَدَتْ بِسُورَةِ الْعَادِيَاتِ أُحَدِّدُهَا بِالْعَلَامَةِ (x) :",
+      "body": "السَّنَد 3 : وَاصَلَ الْمُعَلِّمُ الدَّرْسَ، فَرَاقَبَ مَدَى حِفْظِ التَّلَامِيذِ لِلسُّوَرِ الْقُرْآنِيَّةِ.\n- فَالْمُورِيَاتِ قَدْحًا\n- فَأَثَرْنَ بِهِ نَقْعًا\n- سَلَامٌ هِيَ حَتَّى مَطْلَعِ الْفَجْرِ\n- إِنَّ رَبَّهُمْ بِهِمْ يَوْمَئِذٍ لَخَبِيرٌ",
+      "figureDesc": "أربع خانات للتعليم بالعلامة (x)؛ النقاط: 0,5 / 0,5 / 0,5؛ خانات المعيار معـ2ج.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p056_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 4",
+      "instruction": "ثُمَّ ذَكَّرَهُمُ الْمُعَلِّمُ بِقَوَاعِدِ الْإِسْلَامِ الْخَمْسِ. أُكَمِّلُ بِكِتَابَةِ قَوَاعِدِ الْإِسْلَامِ :",
+      "body": "- الشَّهَادَتَانِ - .......... - .......... - .......... - الْحَجُّ",
+      "figureDesc": "ثلاث خانات تقييم للمعيار معـ1؛ النقاط: 1 / 1 / 1. ترويسة الصفحة: امتحانات جسر النجاح، اختبار نهاية الثلاثي الثاني عدد 3، المادة: التربية الإسلامية، المستوى: السنة الثانية؛ رقم الصفحة 55.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "jisr_ennajah_2eme_toutes_matieres_p056_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

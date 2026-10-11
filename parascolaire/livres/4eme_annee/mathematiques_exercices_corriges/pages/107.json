@@ -1,0 +1,75 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 107,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الفهرس (Table des matières du manuel de mathématiques 4ème année)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الفهرس",
+      "body": "Colonne de droite (الصفحة ← الموضوع): 1 الأعداد من 0 إلى 999 (1) | 2 القطع النقدية من 1 مي إلى 1 د | 3 المستقيم وأجزاؤه (1) | 4 اختبار تقويمي للتثبيت والدعم | 5 الأعداد من 0 إلى 999 (2) | 6 قيس الزمن : السنة - الشهر - الأسبوع - اليوم | 7 المستقيم وأجزاؤه (2) | 8 اختبار تقويمي للتثبيت والدعم | 9 الأعداد من 0 إلى 999 (3) | 10 قيس الزمن : اليوم ، الساعة | 11 المستقيم وأجزاؤه | 12 اختبار تقويمي للتثبيت والدعم | 13 الأعداد من 0 إلى 999 (4) | 14 المتر ومضاعفاته | 15 المستقيم وأجزاؤه (4) | 16 اختبار تقويمي للتثبيت والدعم | 17 الجمع - متمم مجموعة أخرى | 18 الديسمتر والصنتيمتر | 19 المستقيم وأجزاؤه (5) | 20 اختبار تقويمي للتثبيت والدعم | 21 الأعداد من 1 000 إلى 9 999 (1) | 22 المليمتر | 23 اختبار تقويمي للتثبيت والدعم | 24 الأعداد من 1 000 إلى 9 999 (2) | 25 قيس الأطوال (4) تطبيقات | 26 الشبكة (1) | 27 اختبار تقويمي للتثبيت والدعم | 28 المسائل (1) | 29 الأعداد من 1 000 إلى 9 999 (3) | 30 الغرام ومضاعفاته | 31 اختبار تقويمي للتثبيت والدعم | 32 الأعداد من 1 000 إلى 9 999 (4) | 33 اللتر ومضاعفاته (1) | 34 رسم مستقيمين متعامدين | 35 اختبار تقويمي للتثبيت والدعم | 40 الامتحان الثلاثي الأول (1) (2) (3) (4) (5) | 41 العد 1 000 - الطرح | 42 الديسلتر والصنتيلتر (2) | 43 التوازي - تعرف | 44 اختبار تقويمي للتثبيت والدعم | 45 الأعداد من 10 000 إلى 99 999 (1) | 46 الشبكة (2) المقارنة بين المسالك | 47 اختبار تقويمي للتثبيت والدعم",
+      "figureDesc": "Tableau à deux colonnes (الصفحة / الموضوع), moitié droite de la page.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p107_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الفهرس (تابع)",
+      "body": "Colonne de gauche (الصفحة ← الموضوع): 48 الأعداد من 10 000 إلى 99 999 (2) | 49 الأوراق المالية 5 د 10 د 20 د | 50 الزاوية | 51 اختبار تقويمي للتثبيت والدعم | 52 الأعداد من 10 000 إلى 99 999 (3) | 53 أنواع الزوايا | 54 اختبار تقويمي للتثبيت والدعم | 55 المسائل (2) | 56 الأعداد من 10 000 إلى 99 999 (4) | 57 اختبار تقويمي للتثبيت والدعم | 58 الأعداد من 10 000 إلى 99 999 (5) | 59 الشبكة (3) | 60 اختبار تقويمي للتثبيت والدعم | 61 حساب جداء عددين أحدهما | 62 المستطيل | 63 اختبار تقويمي للتثبيت والدعم | 64 مضاعفات عدد صحيح طبيعي | 65 اختبار تقويمي للتثبيت والدعم | 66 الامتحان الثلاثي الثاني (1) (2) (3) (4) (5) | 71 القسمة (1) | 73 الساعة والدقيقة | 74 المربع | 75 اختبار تقويمي للتثبيت والدعم | 76 المسائل (3) | 77 القسمة (2) (3) | 79 وحدات قيس الأطوال والكتل والسعة | 80 اختبار تقويمي للتثبيت والدعم | 81 آليات القسمة (4) | 82 محيط المستطيل والمربع | 83 اختبار تقويمي للتثبيت والدعم | 84 آليات القسمة (6) | 85 فكرة المساحة (1) | 86 اختبار تقويمي للتثبيت والدعم | 87 المساحة (2) | 88 اختبار تقويمي للتثبيت والدعم | 89 آليات القسمة (5) | 90 حساب ضلع مربع | 91 اختبار تقويمي للتثبيت والدعم | 92 المسائل (4) | 93 الأعداد من 10 000 إلى 99 999 | 94 اختبار تقويمي للتثبيت والدعم | 95 الأعداد من 10 000 إلى 99 999 | 96 مساحة المستطيل والمربع (3) | 97 اختبار تقويمي للتثبيت والدعم | 98 امتحان النقلة (1) (2) (3) (4) (5)",
+      "figureDesc": "Tableau à deux colonnes (الصفحة / الموضوع), moitié gauche de la page. Les numéros de page de cette colonne sont mal alignés avec les titres dans le scan : l'appariement exact est approximatif.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p107_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p6",
+    "confidence": 0.57
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Il s'agit de la table des matières complète du manuel de mathématiques, qui couvre toutes les périodes de l'année (nombres jusqu'à 99 999, monnaie, droites, angles, temps, etc.) ; aucun chapitre unique ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Table des matières de mathématiques",
+    "skill": "Se repérer dans la progression annuelle : nombres jusqu'à 99 999, monnaie, géométrie (droites, angles) et mesure du temps.",
+    "pageType": "lesson",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "table des matières",
+      "nombres",
+      "monnaie",
+      "angles",
+      "droites",
+      "mesure du temps"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Sert de repère pour organiser les séquences (numération, monnaie tunisienne, droites et angles, tests d'évaluation intercalés) ; il n'y a aucun exercice à réutiliser directement.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

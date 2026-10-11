@@ -1,0 +1,174 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 93,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Page non conforme à la description : il s'agit d'un sujet d'examen de français (compréhension de l'écrit) de l'Académie Tanger Tétouan Al Hoceima (Maroc), sur les énergies renouvelables et la centrale solaire Noor Ouarzazate. Ce n'est pas une page de mathématiques tunisienne.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte :",
+      "body": "Sur notre planète, il existe des ressources d'énergie qui ne s'épuisent jamais. On les appelle les ressources renouvelables. Parmi ces énergies produites on peut citer l'énergie solaire, éolienne, hydraulique et géothermie qui se renouvellent sans cesse.\nLe Maroc a adopté une ambitieuse politique énergétique basée sur l'exploitation des nouvelles technologies dans le domaine de l'énergie solaire pour réaliser son autonomie énergétique. Dans ce cadre, il a lancé un projet phare appelé la centrale solaire Noor Ouarzazate inauguré par le Roi Mohammed VI en 2016 qui figure parmi les plus grands parcs solaires au monde. pour atteindre son objectif de porter à 52% la part du renouvelable dans son mix énergétique à l'horizon 2030, et qui permet de réduire de 3,7 millions de tonnes par an d'émissions de CO2.\nSource : www.fr.m.wikipédia.org.",
+      "figureDesc": "En-tête de copie d'examen (Académie Tanger Tétouan Alhoceima, case N° d'examen) et texte encadré.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p093_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Compréhension de l'écrit (15 points) : Donne un titre à ce texte ?",
+      "body": "Donne un titre à ce texte ? ...........",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p093_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Ce texte est-il descriptif, narratif ou informatif ?",
+      "body": "Ce texte est-il descriptif, narratif ou informatif ?",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p093_i3",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "De combien de paragraphes se compose le texte ?",
+      "body": "De combien de paragraphes se compose le texte ?",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p093_i4",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Pourquoi le Maroc a construit le parc solaire Noor ?",
+      "body": "Pourquoi le Maroc a construit le parc solaire Noor ?",
+      "figureDesc": "Deux lignes pointillées pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p093_i5",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Quand le Roi Mohammed VI a inauguré la centrale Noor ?",
+      "body": "Quand le Roi Mohammed VI a inauguré la centrale Noor ?",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p093_i6",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Donne trois exemples d'énergies renouvelables citées dans le texte :",
+      "body": "Donne trois exemples d'énergies renouvelables citées dans le texte :",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p093_i7",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.18
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un sujet d'examen de compréhension de l'écrit en français, d'origine marocaine, sur les énergies renouvelables et la centrale Noor, un thème proche de l'écologie du Module 5 (Sauver la nature), mais elle ne relève pas clairement d'un chapitre précis du programme tunisien.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : énergies renouvelables",
+    "skill": "Comprendre un texte informatif en identifiant sa nature, son organisation et ses informations clés, puis en y répondant par écrit.",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "texte informatif",
+      "énergies renouvelables",
+      "énergie solaire",
+      "Noor Ouarzazate",
+      "sujet d'examen"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un court texte documentaire d'actualité locale (une centrale solaire) suivi de questions graduées : titre, type de texte, nombre de paragraphes, cause, date, relevé d'exemples. Ce schéma se réutilise avec d'autres sujets de société ou de sciences.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« Source : www.fr.m.wikipédia.org. » : l'image affiche seulement « www.fr.m.wikipédia.org. » sans le mot « Source : », qui a été ajouté."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« du Préscolaire et des Sports », « Académie Tanger Tétouan Alhoceima », « N d'examen : ») n'est pas transcrit ; la transcription ne contient qu'un « [] » vide."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "« I. Compréhension de l'écrit (15 points) : » est un titre de section, mais il est collé à la question 1 ; le numéral « I. » est omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "La ligne en pointillés de la question 1 est notée « ........... » dans un champ mais absente des autres questions ; les lignes de réponse ne sont pas rendues de façon cohérente."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "examTrimester": 2,
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

@@ -1,0 +1,160 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 87,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Compréhension de l'écrit : « Le tablier de Marie » (Lire et s'exprimer)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "B1a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- Marie met un beau tablier. ................",
+      "figureDesc": "Un cadre ovale en pointillés pour écrire la réponse à côté de la phrase.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p087_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1b",
+      "instruction": "Relève, dans le texte, la phrase qui le montre :",
+      "body": "................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p087_i2",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2",
+      "instruction": "Marie est malheureuse. Que décident les enfants ?",
+      "body": "................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p087_i3",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B3",
+      "instruction": "Barre ce qui est faux :",
+      "body": "* Aline et ses camarades s'arrangent pour que Marie gagne le tablier pour :\n- se moquer d'elle.   - ne pas la vexer.   - créer une ambiance joyeuse à l'école.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p087_i4",
+      "topicId": "fr-6-m3",
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B4",
+      "instruction": "Relie par une flèche ce qui va ensemble :",
+      "body": "Colonne gauche : * Marie s'est clouée dans son coin ; * Après avoir contemplé le tablier ; * Elle s'efforçait de retenir son sourire.\nColonne droite : • elle demeure immobile. • elle quitte son coin. • elle a longuement regardé le tablier. • Marie a admiré le tablier. • elle essayait de ne pas sourire. • elle ne souriait pas.",
+      "figureDesc": "Deux colonnes de phrases à relier par des flèches, avec des points de repère.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p087_i5",
+      "topicId": "fr-6-m3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B5",
+      "instruction": "Marie est très satisfaite de son tablier. Relève, dans le texte, la phrase qui le montre :",
+      "body": "................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p087_i6",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B6",
+      "instruction": "Marie découvre la vraie intention de ses camarades. Relève, dans le texte, la réplique qui le montre :",
+      "body": "................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p087_i7",
+      "topicId": "fr-6-m3",
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B7",
+      "instruction": "Que penses-tu d'Aline et ses camarades ?",
+      "body": "................................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p087_i8",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.61
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page d'évaluation de compréhension de l'écrit en français sur « Le tablier de Marie », où les camarades agissent avec délicatesse pour ne pas vexer Marie, ce qui relève plutôt du thème de la tolérance et de la solidarité du Module 3, sans certitude car le texte source n'est pas identifié.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit narratif",
+    "skill": "Comprendre un texte narratif en relevant des informations, en justifiant ses réponses par le texte et en donnant son avis sur les personnages.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "appariement",
+      "qcm",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "texte narratif",
+      "relevé de phrases",
+      "personnages",
+      "intentions",
+      "avis personnel"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement d'activités de compréhension en progression (réponse oui/non puis justification par relevé dans le texte, repérage de l'intention des personnages, élimination de l'intrus, appariement de reformulations, jugement personnel final), réutilisable avec n'importe quel récit court sur la bienveillance ou l'amitié.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

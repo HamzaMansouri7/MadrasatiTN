@@ -1,0 +1,105 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 27,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المركب العطفي (le groupe coordonné : définition et lettres de coordination). Attention : la page traite de grammaire arabe, pas de mathématiques.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "إعراب الجمل (analyse grammaticale : la fonction de chaque groupe coloré est indiquée à droite)",
+      "body": "الْوَرْدَةُ الْحَمْرَاءُ فَوَّاحَةٌ  ← مبتدأ\nالْعَسَلُ غِذَاءٌ نَافِعٌ  ← خبر\nكَوَّنْتُ بَاقَةً جَمِيلَةً  ← مفعول به\nخَرَجَ النَّمْلُ النَّشِيطُ مِنَ الْخَلِيَّةِ  ← فاعل",
+      "figureDesc": "Quatre phrases arabes vocalisées. Les groupes sont colorés et soulignés (bleu : الْوَرْدَةُ الْحَمْرَاءُ et بَاقَةً جَمِيلَةً ; rouge foncé : غِذَاءٌ نَافِعٌ ; violet : النَّمْلُ النَّشِيطُ). La fonction grammaticale est écrite à droite sur une ligne.",
+      "answer": "مبتدأ : الْوَرْدَةُ الْحَمْرَاءُ ; خبر : غِذَاءٌ نَافِعٌ ; مفعول به : بَاقَةً جَمِيلَةً ; فاعل : النَّمْلُ النَّشِيطُ",
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p027_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المركب العطفي – تعريفه",
+      "body": "المركّب العطفي تركيب جزئي اسمي يتكوّن مباشرة من معطوف عليه و أداة عطف و معطوف\nمثال: محمّد و صالح جالسان\nو قد يكون الرّبط بين المعطوف عليه و المعطوف بدون حرف عطف: هذا لبن شهي لذيذ",
+      "figureDesc": "Titre « المركب العطفي » en rouge ; le mot « لذيذ » est souligné.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p027_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "حروف العطف و معانيها – الحروف التي تفيد الجمع بين أشياء متنوّعة هي: الواو، الفاء، ثمّ",
+      "body": "الواو: تفيد الرّبط بدون ترتيب\nاشترك أحمد و علي في لعبة\nالفاء: تفيد التّرتيب الزّمني بلا مهلة و تفيد النّتيجة\nمثال: دخل الجدّ فالأب\nأكلت الخبز فالتفّاحة\nأخي ثابر فنجح\nثمّ: تفيد التّرتيب الزّمني بمهلة\nتزرع حبّة القمح ثمّ تصير سنبلة",
+      "figureDesc": "Les mots « الواو » et « الفاء » sont surlignés en bleu clair, « ثمّ » en vert clair.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p027_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "للتّوسيع – الحروف التي تفيد اختيار شيء من أشياء متنوّعة هي: أو، أم",
+      "body": "أو: تفيد الاختيار بين شيئين أو التّسوية أو الشكّ\nأمثلة\nسمح لي الطّبيب بأن أقيم في الرّيف",
+      "figureDesc": "Le mot « أو » est surligné en rose. Le texte s'arrête à ce premier exemple (la suite n'est pas sur cette page).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p027_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u3",
+    "confidence": 0.26
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de grammaire arabe (analyse des fonctions et groupe coordonné avec lettres de coordination), mais aucun des huit chapitres officiels d'arabe, centrés sur les types de textes (narratif, descriptif, explicatif, injonctif), ne correspond clairement à ce contenu.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Le groupe coordonné en arabe",
+    "skill": "Identifier le groupe coordonné et choisir la lettre de coordination (و، ف، ثم، أو، أم) selon le sens exprimé.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "autre"
+    ],
+    "keywords": [
+      "groupe coordonné",
+      "lettres de coordination",
+      "analyse grammaticale",
+      "waw fa thumma",
+      "grammaire arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Sert de modèle pour une leçon de grammaire qui oppose les lettres de coordination selon le sens (simple liaison, succession immédiate, succession différée, choix), avec un échauffement d'analyse de la fonction des groupes colorés ; on peut en tirer des exercices de choix de la lettre adaptée ou de complétion de phrases.",
+    "themeGroup": "Le groupe coordonné"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

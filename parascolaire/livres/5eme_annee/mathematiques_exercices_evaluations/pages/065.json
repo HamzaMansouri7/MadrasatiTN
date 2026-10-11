@@ -1,0 +1,162 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 65,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 35: أقسم عددا عشريا على عدد صحيح طبيعي (cette page est en réalité une page de mathématiques, pas de langue arabe)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُتمِّمُ الجَدْوَلَ التَّالِيَ:",
+      "body": "المستطيل أ، ب، ج، د. الطول بالمتر: أ = 25,7؛ ب = ............؛ ج = 61,04؛ د = 32. العرض بالمتر: أ = 19,06؛ ب = 23؛ ج = 18,8؛ د = ............ . قيس المساحة بالمتر المربع: أ = ............؛ ب = 1070,42؛ ج = ............؛ د = 1627,2",
+      "figureDesc": "جدول من 4 أعمدة (أ، ب، ج، د) و3 أسطر (الطول، العرض، قيس المساحة)، بعض الخانات فارغة لتتميمها.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p065_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَجْرِ العَمَلِيَّاتِ التَّالِيَةَ عَمُودِيًّا :",
+      "body": "983,92 : 28 = ............ ؛ 1128,4 : 14 = ............ ؛ 2548 : 392 = ............ ؛ 9075 : 125 = ............",
+      "figureDesc": "عنوان «العمليات العمودية» داخل إطار مثمن؛ مساحة مقسومة بخط عمودي لإجراء القسمات.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_evaluations_p065_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "احْسُبْ عَدَدَ الكُتُبِ الَّتِي وَقَعَ وَسْقُها.",
+      "body": "وَسَقَتْ شَرِكَةٌ كُتُبًا فِي 5 عُلَبٍ وَزْنُ كُلِّ عُلْبَةٍ 32 كغ فِي كُلِّ عُلْبَةٍ 50 كِتَابًا.",
+      "figureDesc": "أسطر منقطة للإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p065_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3 (تابع)",
+      "instruction": "احْسُبْ كُتْلَةَ كُلِّ كِتَابٍ بِطَرِيقَتَيْنِ مُخْتَلِفَتَيْنِ.",
+      "body": "",
+      "figureDesc": "أسطر منقطة للإجابة.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p065_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "احْسُبِ المَبْلَغَ الجُمْلِيَّ لِلأَقْسَاطِ.",
+      "body": "شَرَى أَشْرَفُ ثَلَّاجَةً بِـ 720 د وَتِلْفَازًا بِـ 540 د وَجِهَازَ طَبْخٍ بِـ 254,750 د وَدَفَعَ 400 د عِنْدَ تَسَلُّمِ هَذِهِ الأَجْهِزَةِ وَسَدَّدَ البَاقِيَ عَلَى 13 قِسْطٍ.",
+      "figureDesc": "أسطر منقطة للإجابة.",
+      "answer": null,
+      "confidence": 0.82,
+      "id": "mathematiques_exercices_evaluations_p065_i5",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.36
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la division d'un nombre décimal par un entier naturel (leçon 35) avec des divisions posées et des problèmes, ce qui correspond à la Période 3 (multiplication/division des décimaux), malgré des divisions à 2 ou 3 chiffres qui touchent aussi la Période 4.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division d'un décimal par un entier",
+    "skill": "Diviser un nombre décimal par un entier naturel en posant l'opération, puis l'appliquer dans des problèmes de aire, de masse et de paiement échelonné.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "division décimale",
+      "division posée",
+      "aire du rectangle",
+      "masse",
+      "paiement par tranches",
+      "problème"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : tableau de rectangles à compléter avec dimensions et aire (opération inverse), problème de masse résolu de deux façons différentes, et achat à crédit avec acompte puis mensualités égales dans un contexte tunisien (dinars).",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de la leçon est absent : « الدرس 35 : أقسم عددا عشريا على عدد صحيح طبيعي »"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le bandeau « العمليّاتُ العمودِيّةُ » est absent"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes de lignes du tableau sont absentes ou simplifiées : « الطول بالمتر », « العرض بالمتر », « قيس المساحة بالمتر المربع »"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les consignes de l'exercice 3 sont inversées. La question « احسب عدد الكتب التي وقع وسقها » est placée comme titre avant l'énoncé « وسقت شركة كتبا… ». L'énoncé doit venir en premier, puis les deux questions."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« وَسَقَتْ شَرِكَةٌ » : l'image montre « وسقت شركة » ; les voyelles ajoutées (شَرِكَةٌ) ne sont pas toutes visibles. Dans la même phrase, « فِي كُلِّ عُلْبَةٍ 50 كِتَابًا » est correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Plusieurs voyelles sont ajoutées alors qu'elles ne sont pas visibles, par exemple dans « أَجْرِ العَمَلِيَّاتِ », « شَرَى » et « تَسَلُّمِ ». « أَشْرَفُ » correspond à « أشرف » avec une voyelle partielle."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les puces « * » devant les questions de l'exercice 3 et de l'exercice 4 ne sont pas indiquées."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'exercice 4, la question « احسب المبلغ الجملي للأقساط » est placée avant l'énoncé, alors qu'elle vient après."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

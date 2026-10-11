@@ -1,0 +1,530 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 121,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "corrigés : نظام قيس (ص 49)، هندسة (ص 50)، الاختبار التقويمي (ص 51)، حساب (ص 52)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "أصغر عدد ممكن من الأوراق المالية :",
+      "body": "نظام قيس — السنة الرابعة — الصفحة 49",
+      "figureDesc": "",
+      "answer": "(2 × 20 د) + 10 د + 5 د + (2 × 1 د) + 500 مي",
+      "id": "mathematiques_exercices_corriges_p121_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "نوع الأوراق التي يكون بها مبلغ 75 د :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "(2 × 20 د) + (3 × 10 د) + 5 د  أو  20 د + (3 × 10 د) + (5 × 5 د)",
+      "id": "mathematiques_exercices_corriges_p121_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "مناب كلّ طفل :",
+      "body": "نأخذ من كلّ واحد :",
+      "figureDesc": "",
+      "answer": "(17 + 20 + 20) : 3 = 19 د ; (19 د - 17 د) : 2 = 1 د",
+      "id": "mathematiques_exercices_corriges_p121_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "ثمن المذياع بالمي :",
+      "body": "قيمة التّخفيض بالمي :",
+      "figureDesc": "",
+      "answer": "(30 000 + 40 000) - 1 500 = 68 500 د ; قيمة التّخفيض : 74 000 - 68 500 = 5 500",
+      "id": "mathematiques_exercices_corriges_p121_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "هندسة — السنة الرابعة — الصفحة 50. جدول أعمدته : الزاوية / الرأس / الضلعان / الرمز",
+      "body": "الزاوية ① : الرأس ن ، الضلعان [ن ل) ، [ن ط) ، الرمز [ن ل ، ن ط] ; الزاوية ② : الرأس أ ، الضلعان [أ ب) ، [أ ج) ، الرمز [أ ب ، أ ج] ; الزاوية ③ : الرأس م ، الضلعان [م ص) ، [م س) ، الرمز [م ص ، م س]",
+      "figureDesc": "جدول من 3 أسطر و4 أعمدة ; الزوايا مرقّمة 1 و2 و3 داخل دوائر.",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p121_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "رأس الزاوية أ",
+      "body": "ضلعاها : [أ ب) أو [أ ج) ، [أ س)",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p121_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "رأس جميع الزّوايا \"أ\"",
+      "body": "أضلاع الزّوايا : [أ ب) ، [أ ج) ، [أ د)",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p121_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الزّوايا هي :",
+      "body": "[ن د ، ن ج] ، [ن د ، ن ب] ، [ن د ، ن أ] ، [ن ج ، ن ب] ، [ن ج ، ن أ] ، [ن ب ، ن أ]",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p121_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "الزّوايا هي :",
+      "body": "[أ ب ، أ ج] ، [أ ب ، أ هـ] ، [أ هـ ، أ ج] ، [أ هـ ، أ د] ، [أ ج ، أ د] ، [أ ب ، أ د]",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p121_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الاختبار التقويمي — السنة الرابعة — الصفحة 51",
+      "body": "الأعداد في المخطط : 16 ، 8 ، 6 ، 30 ، 24 ، 65 ، 40 ، 3 ، 70 ، 5 ، 15 ، 9 ، 71",
+      "figureDesc": "مخطط فن من ثلاث دوائر متقاطعة، اثنتان في الأعلى والثالثة في الأسفل، عليها الحروف أ و ب و ج. الأعداد : 16 و30 و70 في الجزء الأيسر ; 8 في تقاطع الدائرتين العلويتين ; 6 في الدائرة العلوية اليمنى ; 24 و65 في التقاطع الثلاثي ; 5 في تقاطع الدائرة اليسرى والسفلية ; 40 و15 في تقاطع الدائرة اليمنى والسفلية ; 3 في الدائرة اليمنى ; 9 و71 في الدائرة السفلية. توجد ثلاث دوائر صغيرة للتسمية : أ و ج و ج (الحرف الأخير مقروء بصعوبة).",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p121_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "الزّوايا :",
+      "body": "[أ ب ، أ ج] ، [أ ب ، أ د] ، [أ ج ، أ د]",
+      "figureDesc": "",
+      "answer": null,
+      "id": "mathematiques_exercices_corriges_p121_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن القماش بالمي : / ثمن الأزرار بالمي : / ثمن الخيط بالمي : / صرفت في الجملة بالمي : / اقتصدت هذه الأم بالمي :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "ثمن القماش : 2 000 + 4 000 = 6 000 ; ثمن الأزرار : 3 × 400 = 1 200 ; ثمن الخيط : 1 200 - 500 = 700 ; صرفت في الجملة : 6 000 + 1 200 + 700 + 600 + 800 = 9 300 ; اقتصدت : (3 000 + 9 300) - 15 000 = 2 700",
+      "id": "mathematiques_exercices_corriges_p121_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "حساب — السنة الرابعة — الصفحة 52",
+      "body": "",
+      "figureDesc": "",
+      "answer": "1 + (10 × 70) + (1000 × 45) = 45 701 ; 6 + (100 × 8) + (1000 × 13) = 13 806 ; 2 + (100 × 9) + (1000 × 4) + (10 000 × 6) = 64 902",
+      "id": "mathematiques_exercices_corriges_p121_i13",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "",
+      "answer": "2808 = 1638 + 1170 = 12 × 234 ; 2106 = 1170 + 936 = 9 × 234 ; 2340 = 1170 + 1170 = 10 × 234 ; 3744 = 1638 + 1170 + 936 = 16 × 234",
+      "id": "mathematiques_exercices_corriges_p121_i14",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "",
+      "answer": "6 × (1 - 400) = 6 × 399 ; = (6 × 1) - (6 × 400) = 6 - 2400 = 2394",
+      "id": "mathematiques_exercices_corriges_p121_i15",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "",
+      "answer": "10 × 10 × 10 × 8 = 8 000 ; 100 × 100 × 7 = 70 000 ; 10 × 10 × 15 = 1 500 ; 10 × 10 × 125 = 12 500",
+      "id": "mathematiques_exercices_corriges_p121_i16",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.9
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.17
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un corrigé qui mélange plusieurs sections (système monétaire, angles en géométrie, évaluation, calcul avec pourcentages/réductions) couvrant plusieurs périodes, donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Monnaie, angles et diagramme de Venn",
+    "skill": "Décomposer des sommes en billets, identifier sommet et côtés d'un angle, et classer des nombres dans un diagramme de Venn.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "système de mesure",
+      "billets et monnaie",
+      "angles",
+      "sommet et côtés",
+      "diagramme de Venn",
+      "corrigé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : situations de monnaie (nombre minimal de billets, partage équitable, réduction en pourcentage), repérage des angles formés par des demi-droites de même origine, et classement de nombres par propriétés dans un diagramme de Venn à trois ensembles.",
+    "themeGroup": "Monnaie"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.9,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.1 p.49 : '(1 × 2) + (1 × 2)' est faux ; l'image montre '(1د × 2)' une seule fois : 500 مي + (1د × 2) + 5د + 10د + (2 × 20د). Le doublon est inventé."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Ex.1 p.49 : le second terme '(1 × 2)' est ajouté alors qu'il n'existe pas dans l'image."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.3 p.49 : la seconde solution est '(5 × 5د) + (3 × 10د) + 20د' ; la transcription donne '20د + (3×10د) + (5×5د)', ordre différent et unités mal placées."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ex.4 p.49 : '(17د - 19د) : 2 = 1د' dans l'image ; la transcription écrit '(19 د - 17 د)', ordre inversé. Le premier calcul est '(17+20+20) : 3 = 19د'."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Ex.1 p.50 : les symboles du tableau sont mal lus : '[ن ل)،[ن ط)' et le symbole '[ل ن ، ن ط]' ; l'image montre [ن ك ، ن ط] (lettres ل/ك douteuses)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Ex.5 p.50 : l'ordre des angles diffère de l'image, qui commence par [أب، أج] et [أه، أب], puis [أه، أج], [أه، أج], [أه، أد], [أج، أد], [أب، أد]."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Ex.2 p.51 : les étiquettes du diagramme (أ، ب، ج) et la répartition des nombres sont absentes ; réponse: None."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Ex.4 p.51 : la somme dans l'image est 6000 + 1200 + 700 + 600 + 800 ; l'ordre est inversé dans la transcription (800+600+700+1200+6000)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel visible (الزّوايا, التّخفيض, مناب كلّ) est incohérent : 'الزوايا' sans shadda dans certains cas, et 'قيمة التخفيض' sans shadda alors qu'elle est visible."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ex.4 p.50 et ex.5 p.50 : les ouvertures de crochets '[ ... ]' sont rendues par ')' dans certains cas ; les crochets de fermeture ne sont pas fidèles."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "أصغر عدد ممكن من الأوراق المالية :",
+      "body": "نظام قيس - الصفحة 49 - السنة الرابعة",
+      "figureDesc": "",
+      "answer": "500 مي + (1 × 2) + (1 × 2) + 5 د + 10 د + (2 × 20) د",
+      "confidence": 0.5,
+      "id": "math_solutions_4eme_sellami_p121_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "نوع الأوراق التي يكون بها مبلغ 75 د :",
+      "body": "نظام قيس - الصفحة 49",
+      "figureDesc": "",
+      "answer": "(2 × 20د) + (3 × 10د) + 5د  أو  20د + (3 × 10د) + (5 × 5د)",
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p121_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "مناب كلّ طفل :",
+      "body": "نأخذ من كلّ واحد :",
+      "figureDesc": "",
+      "answer": "(17 + 20 + 20) : 3 = 19 د ؛ (19 د - 17 د) : 2 = 1 د",
+      "confidence": 0.55,
+      "id": "math_solutions_4eme_sellami_p121_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "ثمن المذياع بالمي :",
+      "body": "قيمة التّخفيض بالمي :",
+      "figureDesc": "",
+      "answer": "(30 000 + 40 000) - 1 500 = 68 500 د ؛ قيمة التخفيض : 74 000 - 68 500 = 5 500",
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p121_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "جدول : الزاوية / الرأس / الضلعان / الرمز (هندسة - الصفحة 50)",
+      "body": "الزوايا ①②③ ؛ رؤوسها ن، أ، م ؛ أضلاعها وأرمازها بالصيغ [ن ل)،[ن ط) ، [أ ب)،[أ ج) ، [م ص)،[م س)",
+      "figureDesc": "جدول من أربعة أعمدة وثلاثة أسطر",
+      "answer": "الرمز: [ل ن ، ن ط] ، [أب ، أج] ، [م ص ، م س]",
+      "confidence": 0.4,
+      "id": "math_solutions_4eme_sellami_p121_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "رأس الزاوية أ",
+      "body": "ضلعاها : [أ ب) أو [أ ج) ، [أ س)",
+      "figureDesc": "",
+      "answer": "ضلعاها : [أ ب) أو [أ ج) ، [أ س)",
+      "confidence": 0.5,
+      "id": "math_solutions_4eme_sellami_p121_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "رأس جميع الزّوايا \"أ\"",
+      "body": "أضلاع الزوايا : [أ ب) ، [أ ج) ، [أ د)",
+      "figureDesc": "",
+      "answer": "[أ ب) ، [أ ج) ، [أ د)",
+      "confidence": 0.5,
+      "id": "math_solutions_4eme_sellami_p121_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "الزّوايا هي :",
+      "body": "[ن د ، ن ج] ، [ن د ، ن ب] ، [ن د ، ن أ] ، [ن ج ، ن ب] ، [ن ج ، ن أ] ، [ن ب ، ن أ]",
+      "figureDesc": "",
+      "answer": "[ن د ، ن ج] ، [ن د ، ن ب] ، [ن د ، ن أ] ، [ن ج ، ن ب] ، [ن ج ، ن أ] ، [ن ب ، ن أ]",
+      "confidence": 0.5,
+      "id": "math_solutions_4eme_sellami_p121_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "الزّوايا هي :",
+      "body": "[أب ، أه] ، [أب ، أج] ، [أه ، أج] ، [أه ، أد] ، [أج ، أد] ، [أب ، أد]",
+      "figureDesc": "",
+      "answer": "[أب ، أه] ، [أب ، أج] ، [أه ، أج] ، [أه ، أد] ، [أج ، أد] ، [أب ، أد]",
+      "confidence": 0.45,
+      "id": "math_solutions_4eme_sellami_p121_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "الاختبار التقويمي - الصفحة 51 : مخطط فن (أ، ب، ج)",
+      "body": "الأعداد: 16، 8، 6، 30، 24، 65، 40، 3، 70، 5، 15، 9، 71",
+      "figureDesc": "ثلاث دوائر متقاطعة أ، ب، ج تحتوي على أعداد",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p121_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "الزّوايا :",
+      "body": "[أ ب ، أ ج] ، [أ ب ، أ د] ، [أ ج ، أ د]",
+      "figureDesc": "",
+      "answer": "[أب ، أج] ، [أب ، أد] ، [أج ، أد]",
+      "confidence": 0.5,
+      "id": "math_solutions_4eme_sellami_p121_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "ثمن القماش بالمي / ثمن الأزرار بالمي / ثمن الخيط بالمي / صرفت في الجملة بالمي / اقتصدت هذه الأم بالمي",
+      "body": "",
+      "figureDesc": "",
+      "answer": "القماش: 2000 + 4000 = 6000 ؛ الأزرار: 3 × 400 = 1200 ؛ الخيط: 1200 - 500 = 700 ؛ الجملة: 6000 + 1200 + 700 + 600 + 800 = 9300 ؛ الادخار: 15000 - (3000 + 9300) = 2700",
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p121_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "حساب - الصفحة 52 : كتابة الأعداد",
+      "body": "",
+      "figureDesc": "",
+      "answer": "1 + (10×70) + (1000×45) = 45701 ؛ 6 + (100×8) + (1000×13) = 13806 ؛ 2 + (100×9) + (1000×4) + (10000×6) = 64902",
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p121_i13",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "مضاعفات 234",
+      "body": "",
+      "figureDesc": "",
+      "answer": "2808 = 1638 + 1170 = 12×234 ؛ 2106 = 1170 + 936 = 9×234 ؛ 2340 = 1170 + 1170 = 10×234 ؛ 3744 = 1638 + 1170 + 936 = 16×234",
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p121_i14",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "حساب 6 × (1 - 400)",
+      "body": "",
+      "figureDesc": "",
+      "answer": "6 × (1 - 400) = 6 × 399 = (6×1) - (6×400) = 6 - 2400 = 2394",
+      "confidence": 0.45,
+      "id": "math_solutions_4eme_sellami_p121_i15",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "6",
+      "instruction": "حساب",
+      "body": "",
+      "figureDesc": "",
+      "answer": "10×10×10×8 = 8000 ؛ 100×100×7 = 70000 ؛ 10×10×15 = 1500 ؛ 10×10×125 = 12500",
+      "confidence": 0.6,
+      "id": "math_solutions_4eme_sellami_p121_i16",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

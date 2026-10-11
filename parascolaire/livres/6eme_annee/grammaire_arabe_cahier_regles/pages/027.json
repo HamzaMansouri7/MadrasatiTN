@@ -1,0 +1,130 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 27,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "قواعد اللغة العربية : الإسناد إلى الضمائر (المخاطب والمخاطبة والمخاطبين) وتعويض الاسم بالضمير – تمارين في الصرف والتحويل (المثنى والجمع، المذكر والمؤنث)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أسند الجملة التالية إلى المخاطبين ثم الخاطبين",
+      "body": "لا تلْه مع أصدقائك ولا تسه عن مراقبة الطريق قبل قطعه",
+      "figureDesc": "Encadré rectangulaire avec espace vide pour la réponse",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p027_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أعوض ابنها بـ ابنتها ثم بناتها",
+      "body": "خاطبت الأم ابنها قائلة لماذا لم تحن على أخيك الصغير ولم تحذ حذو والديك",
+      "figureDesc": "Encadré rectangulaire avec espace vide pour la réponse",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p027_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعيد كتابة الجملة وفق الطلب",
+      "body": "لم يشك من الفقر ولم يعد وراء المال لأنه مقتنع أن الأرزاق يوزعها الله\nلأنهما\nلأنهم",
+      "figureDesc": "Encadré rectangulaire ; les mots « لأنهما » et « لأنهم » sont les amorces de réécriture (duel puis pluriel)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p027_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أسترشد بالضمير وأعيد كتابة الجملة التالية",
+      "body": "لماذا لم تتل آيات بينات من القرآن الكريم ولم ترج الله أن يغفر لك ذنوبك ؟\nلكم ذنوبكم\nلكن ذنوبكن",
+      "figureDesc": "Encadré rectangulaire ; « لكم ذنوبكم » et « لكن ذنوبكن » sont les amorces guides (masculin pluriel, féminin pluriel)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p027_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch1",
+    "confidence": 0.19
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la conjugaison et l'attribution aux pronoms de verbes défectifs (لا تلهُ، لا تسهُ، لم تحنِ، لم تحذُ، لم يشكُ، لم تتلُ، لم ترجُ) ; l'unité 1 mentionne explicitement la conjugaison des verbes défectifs, mais l'exercice n'est pas lié à la narration.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison: impératif et pronoms",
+    "skill": "Conjuguer des verbes à l'apophonie et au jussif en changeant la personne (2e personne du duel, du pluriel, féminin) et remplacer un nom par le pronom adéquat.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "conjugaison arabe",
+      "pronoms de la 2e personne",
+      "verbes défectueux",
+      "jussif",
+      "accord genre et nombre",
+      "transformation de phrases"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série de phrases à transformer par changement de personne, de genre ou de nombre, avec verbes défectueux au jussif, et une consigne de substitution nom/pronom guidée par des modèles à compléter. Réutilisable pour créer des exercices de transformation progressive.",
+    "themeGroup": "L'impératif"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « ثم الخاطبين » est bien ce qui figure dans l'image (le ‘م’ de « المخاطبين » est absent, faute d'origine). La transcription est fidèle, aucune erreur."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres « التمارين », « التمرين الأول », « التمرين الثاني », « التمرين الثالث » et « التمرين الرابع » ne sont pas transcrits."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « تلْه » est transcrit avec un sukun, mais aucune voyelle n'est visible dans l'image ; la bonne valeur est « تله »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 4 : les réponses « لكم ذنوبكم » et « لكن ذنوبكن » sont des lignes de réponse déjà présentes dans l'image. Elles sont bien transcrites, mais placées dans la consigne."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

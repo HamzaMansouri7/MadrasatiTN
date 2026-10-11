@@ -1,0 +1,301 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 14,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 3 : قيس الزمن : اليوم ، الساعة (mesure du temps : le jour, l'heure)",
+  "items": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "قيس الزمن : اليوم ، الساعة",
+      "body": "الأسبوع 3 — (numéro de page : 10)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p014_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "تأمّل كُلَّ سَاعَةٍ وَاكْتُبْ الوَقْتَ المُشَارَ إِلَيْهِ فِي الإِطَارِ :",
+      "body": "أربع ساعات (أ، ب، ج، د) مرتبة من اليمين إلى اليسار (أ في أقصى اليمين، د في أقصى اليسار). تحت كل ساعة إطار فيه خانتان: «صباحا» و«مساء». في الإطار (أ) كُتب في خانة «صباحا» الرقم 2.",
+      "figureDesc": "Quatre horloges à aiguilles, de droite à gauche : أ (environ 2 h, déjà indiqué par le 2 écrit), ب (environ 12 h 20), ج (environ 7 h 25), د (environ 6 h 40). Sous chacune, un tableau à deux lignes : صباحا / مساء. Dans le tableau (أ), le chiffre 2 est déjà écrit dans la case de « صباحا ». Les lectures des aiguilles de ب, ج et د sont approximatives.",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p014_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمل الجدول التّالي :",
+      "body": "Colonnes d'horaires (de droite à gauche) : 8س و 15 دق | 14س و 30 دق | 17س و 30 دق | 11س و 50 دق. Lignes : «العقرب القصيرة توجد على التّدرّج» ; «العقرب الطويلة توجد على التّدرّج». Pour la première colonne (8 س و 15 دق), les valeurs données sont 8 (aiguille courte) et 3 (aiguille longue). Les autres cases sont vides.",
+      "figureDesc": "Tableau à 4 colonnes d'horaires et 2 lignes. Seule la première colonne est remplie (8 et 3).",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p014_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكمل :",
+      "body": "* تمرّ حافلة أمام محطة القطار كلّ 25 دقيقة.\n– تمرّ الحافلة الأولى على السّاعة السّادسة صباحا.\n– تمرّ الحافلة الثّانية على السّاعة ........ و ........ دقيقة صباحا.\n– تمرّ الحافلة الثّالثة على السّاعة ........................ .\n– تمرّ الحافلة الرّابعة على السّاعة ........................ .",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p014_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "كَانَ مَوْعِدُ لِقَاءِ مهدي وأمين و فراس على السّاعة الخامسة والنّصف.\n* لاحظ ساعات الأطفال وأكمل بكتابة أسمائهم مكان النّقط :",
+      "body": "– وصل ........ في الموعد المحدّد.\n– وصل ........ قبل الموعد المحدّد\n– وصل ........ متأخّرا عن الموعد المحدّد.",
+      "figureDesc": "Trois horloges avec légendes : « لحظة وصول فراس » (environ 5 h 30), « لحظة وصول أمين » (grande aiguille sur 6, petite aiguille vers 8, environ 8 h 30), « لحظة وصول مهدي » (environ 4 h 25). Lectures approximatives.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_corriges_p014_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-p6",
+  "topicTitle": "Période 6 : Mesure du temps, capacités, masses et synthèse",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p6",
+    "confidence": 0.53
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la mesure du temps (lecture d'horloges, heures et minutes, durées et intervalles), ce qui correspond à la Période 6 : Mesure du temps, capacités, masses et synthèse.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    112
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesure du temps : heures et minutes",
+    "skill": "Lire l'heure sur une horloge à aiguilles, la situer dans la journée (matin/après-midi) et calculer des durées ou des intervalles réguliers.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "lecture de l'heure",
+      "horloge à aiguilles",
+      "matin et après-midi",
+      "intervalles de temps",
+      "durée"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations réutilisables : écrire l'heure indiquée par une horloge avec la mention matin/soir, faire correspondre une heure à la position des aiguilles dans un tableau, calculer les passages successifs d'un bus à intervalle fixe, et comparer les heures d'arrivée d'enfants à un rendez-vous (à l'heure, en avance, en retard).",
+    "themeGroup": "Temps et calendrier"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est omis : «الأسبوع 3» et le titre «قيس الزمن : اليوم ، الساعة», ainsi que le numéro de page 10."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 2 : «العقرب القصيرة توجد على التّدرّج» ; l'image porte «العقرب القصيرة» sans la shadda et sans le tanwin, mais la transcription ajoute des voyelles absentes, tandis que le tashkeel visible est «التّدرّج»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : le texte de l'image est «تمرّ حافلة أمام محطة القطار كلّ 25 دقيقة» ; la transcription met «كلَّ» avec une fatha, alors que c'est une shadda visible."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel visible de la consigne de l'exercice 3 (« الأولى », « الثّانية », « الثّالثة », « الرّابعة ») est partiellement ajouté ou modifié ; l'image montre « الثّانية » et « الثّالثة » avec shadda et alif, mais pas toutes les voyelles transcrites."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 1 : les horloges ne sont pas décrites (aiguilles), et les cadres «د، ج، ب، أ» sont mal étiquetés. Les lettres sont présentes sur l'image mais absentes de la transcription pour chaque cadre, et l'ordre de droite à gauche (أ à droite, د à gauche) n'est pas indiqué."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 4 : les trois horloges (فراس, أمين, مهدي) avec leurs légendes «لحظة وصول فراس / أمين / مهدي» sont omises de la transcription."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 2 : la transcription note «11س و 50 دق» ; l'image montre « 1 1 س و 50 دق » (11), ce qui est correct, mais la ligne d'en-tête est dans le même ordre inversé que l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : «كَانَ مَوْعِدُ لِقَاءِ» — l'image montre «كَانَ مَوْعِدُ لِقَاءِ» avec tashkeel seulement sur les premiers mots ; la suite («مهدي وأمين و فراس») n'a pas de voyelles, ce qui est cohérent avec la transcription."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.82,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : le badge «الأسبوع 3», le titre «قيس الزمن : اليوم ، الساعة» et le numéro de page «10» en bas."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : l'image porte «كلّ» avec une shadda seule. La transcription écrit «كلَّ» avec une fatha ajoutée qui n'est pas visible."
+      },
+      {
+        "type": "figureDesc",
+        "severity": "major",
+        "detail": "Exercice 1 : les heures estimées des horloges sont inventées et probablement fausses. D'après les aiguilles, ب ressemble à environ 12 h 20 (et non 4 h 20), ج à environ 7 h 25 (et non 5 h 40), et د à environ 6 h 40. L'ordre de droite à gauche (أ à droite, د à gauche) n'est pas indiqué non plus."
+      },
+      {
+        "type": "figureDesc",
+        "severity": "major",
+        "detail": "Exercice 4 : la description des horloges est confuse. Fares est environ 5 h 30 (pile à l'heure). Amine a la grande aiguille sur 6 et la petite aiguille vers 8, donc environ 8 h 30, et non 5 h 30. Mahdi est environ 4 h 25."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "قيس الزمن : اليوم ، الساعة",
+      "body": "الأسبوع 3 — (numéro de page : 10)",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p014_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "تأمّل كُلَّ سَاعَةٍ وَاكْتُبْ الوَقْتَ المُشَارَ إِلَيْهِ فِي الإِطَارِ :",
+      "body": "أربع ساعات (أ، ب، ج، د) مرتبة من اليمين إلى اليسار (أ في أقصى اليمين، د في أقصى اليسار). تحت كل ساعة إطار فيه خانتان: «صباحا» و«مساء». في الإطار (أ) كُتب في خانة «صباحا» الرقم 2.",
+      "figureDesc": "Quatre horloges à aiguilles, de droite à gauche : أ (environ 2 h, déjà indiqué par le 2 écrit), ب (environ 12 h 20), ج (environ 7 h 25), د (environ 6 h 40). Sous chacune, un tableau à deux lignes : صباحا / مساء. Dans le tableau (أ), le chiffre 2 est déjà écrit dans la case de « صباحا ». Les lectures des aiguilles de ب, ج et د sont approximatives.",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p014_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمل الجدول التّالي :",
+      "body": "Colonnes d'horaires (de droite à gauche) : 8س و 15 دق | 14س و 30 دق | 17س و 30 دق | 11س و 50 دق. Lignes : «العقرب القصيرة توجد على التّدرّج» ; «العقرب الطويلة توجد على التّدرّج». Pour la première colonne (8 س و 15 دق), les valeurs données sont 8 (aiguille courte) et 3 (aiguille longue). Les autres cases sont vides.",
+      "figureDesc": "Tableau à 4 colonnes d'horaires et 2 lignes. Seule la première colonne est remplie (8 et 3).",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p014_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكمل :",
+      "body": "* تمرّ حافلة أمام محطة القطار كلّ 25 دقيقة.\n– تمرّ الحافلة الأولى على السّاعة السّادسة صباحا.\n– تمرّ الحافلة الثّانية على السّاعة ........ و ........ دقيقة صباحا.\n– تمرّ الحافلة الثّالثة على السّاعة ........................ .\n– تمرّ الحافلة الرّابعة على السّاعة ........................ .",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p014_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "كَانَ مَوْعِدُ لِقَاءِ مهدي وأمين و فراس على السّاعة الخامسة والنّصف.\n* لاحظ ساعات الأطفال وأكمل بكتابة أسمائهم مكان النّقط :",
+      "body": "– وصل ........ في الموعد المحدّد.\n– وصل ........ قبل الموعد المحدّد\n– وصل ........ متأخّرا عن الموعد المحدّد.",
+      "figureDesc": "Trois horloges avec légendes : « لحظة وصول فراس » (environ 5 h 30), « لحظة وصول أمين » (grande aiguille sur 6, petite aiguille vers 8, environ 8 h 30), « لحظة وصول مهدي » (environ 4 h 25). Lectures approximatives.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "math_solutions_4eme_sellami_p014_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "تأمّل كُلَّ سَاعَةٍ وَاكْتُبْ الوَقْتَ المُشَارَ إِلَيْهِ فِي الإِطَارِ :",
+      "body": "أربع ساعات (أ، ب، ج، د). لكل ساعة إطار للكتابة فيه خانتان: «صباحا» و«مساء». في الإطار (أ) كُتب في خانة «صباحا» الرقم 2.",
+      "figureDesc": "Quatre horloges à aiguilles étiquetées أ (environ 2 h), ب (environ 4 h 20), ج (environ 5 h 40), د (environ 6 h 40). Sous chacune, un tableau à deux lignes : صباحا / مساء. Dans le tableau (أ), la valeur 2 est déjà écrite dans la case de « صباحا ».",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p014_i1",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكمل الجدول التّالي :",
+      "body": "Colonnes d'horaires : 8س و 15 دق | 14س و 30 دق | 17س و 30 دق | 11س و 50 دق. Lignes : «العقرب القصيرة توجد على التّدرّج» ; «العقرب الطويلة توجد على التّدرّج». Pour la première colonne (8 h 15), les valeurs données sont 8 (aiguille courte) et 3 (aiguille longue). Les autres cases sont vides.",
+      "figureDesc": "Tableau à 4 colonnes d'horaires et 2 lignes. Seule la première colonne est remplie (8 et 3).",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p014_i2",
+      "topicId": "math-4-p6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أكمل :",
+      "body": "* تمرّ حافلة أمام محطة القطار كلَّ 25 دقيقة.\n– تمرّ الحافلة الأولى على السّاعة السّادسة صباحا.\n– تمرّ الحافلة الثّانية على السّاعة ........ و ........ دقيقة صباحا.\n– تمرّ الحافلة الثّالثة على السّاعة ........................ .\n– تمرّ الحافلة الرّابعة على السّاعة ........................ .",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p014_i3",
+      "topicId": "math-4-p6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "* لاحظ ساعات الأطفال وأكمل بكتابة أسمائهم مكان النّقط :",
+      "body": "كَانَ مَوْعِدُ لِقَاءِ مهدي وأمين و فراس على السّاعة الخامسة والنّصف.\n– وصل ........ في الموعد المحدّد.\n– وصل ........ قبل الموعد المحدّد\n– وصل ........ متأخّرا عن الموعد المحدّد.",
+      "figureDesc": "Trois horloges : « لحظة وصول فراس » (environ 5 h 30 passé/proche de 5 h), « لحظة وصول أمين » (environ 5 h 30, aiguille longue sur 6 et courte vers 5), « لحظة وصول مهدي » (environ 4 h 20).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p014_i4",
+      "topicId": "math-4-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.82
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

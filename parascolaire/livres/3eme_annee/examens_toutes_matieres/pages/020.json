@@ -1,0 +1,147 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 20,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار نهاية الثلاثي الأول عدد 1 – إنتاج كتابي (السنة الثالثة): تكوين جمل مفيدة وترتيبها وتكوين فقرة باستعمال أدوات الربط",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَكُوِّنُ بِاسْتِعْمَالِ كُلِّ مَجْمُوعَةٍ جُمْلَةً مُفِيدَةً.",
+      "body": "المجموعة الأولى: حَبَّةَ فُولٍ – الصَّبِيُّ – أَخَذَ. الْجُمْلَةُ: ........ المجموعة الثانية: الصَّبِيُّ – الْحَبَّةَ – دَفَنَ – فِي التُّرَابِ. الْجُمْلَةُ: ........ المجموعة الثالثة: الْأَصِيصَ – الصَّبِيُّ – تُرَابًا – مَلَأَ. الْجُمْلَةُ: ........",
+      "figureDesc": "ثلاثة إطارات مستديرة الحواف تحتوي كل منها على كلمات المجموعة مرتبة عموديا، يقابل كل واحد سهم نحو سطر الجملة. على الهامش خانات تصحيح (الملاءمة مع 1 أ) ونقاط 0,25.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p020_i1",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُرَتِّبُ الْجُمَلَ مِنْ 1 إِلَى 3 حَسَبَ تَعَاقُبِهَا الزَّمَنِيِّ.",
+      "body": "ثلاثة أسطر فارغة مرقمة 1 و2 و3 لكتابة الجمل مرتبة.",
+      "figureDesc": "ثلاثة مربعات مرقمة 1 و2 و3 بجانب أسطر منقطة؛ معيار: سلامة بناء النص (مع 2).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p020_i2",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكَوِّنُ بِاسْتِعْمَالِ الْجُمَلِ السَّابِقَةِ فِقْرَةً مُسْتَعْمِلًا أَدَوَاتِ الرَّبْطِ (وَ - فَ - ثُمَّ).",
+      "body": "الْفِقْرَةُ: ........ (أسطر منقطة للكتابة)",
+      "figureDesc": "إطار رمادي مستدير يحتوي أدوات الربط: وَ - فَ - ثُمَّ؛ خانات تصحيح على الهامش (مع 2).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p020_i3",
+      "topicId": "ar-3-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-3-u2",
+  "topicTitle": "Unité 2 : Actions et repères temporels",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-3-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-3-u3",
+    "confidence": 0.35
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Page d'évaluation de fin de trimestre 1 en production écrite : former des phrases, les ordonner chronologiquement et rédiger un paragraphe avec les connecteurs (و، ف، ثم). Cela relève surtout de l'Unité 2 (ordonner les événements, repères temporels), mais l'Unité 1 (personnages et actions) reste possible et la page est un test général, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : phrases et paragraphe",
+    "skill": "Former des phrases correctes à partir de mots donnés, les ordonner chronologiquement puis rédiger un paragraphe avec des connecteurs (و، ف، ثم).",
+    "pageType": "exam",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "construction de phrases",
+      "ordre chronologique",
+      "connecteurs",
+      "paragraphe",
+      "plantation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Progression en trois étapes à partir d'une séquence d'actions de la vie quotidienne (planter une graine) : remettre des mots dans l'ordre pour former une phrase, ordonner les phrases dans le temps, puis les relier en paragraphe avec des connecteurs ; transposable à d'autres scénarios séquentiels (recette, bricolage, soins d'une plante).",
+    "themeGroup": "Production écrite : phrases et paragraphe"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1 : « أَكُوِّنُ » transcrit, mais l'image porte « أَكُونُ » (sans shadda sur le waw)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : « أُكَوِّنُ » transcrit, mais l'image porte « أَكُوِّنُ » (fatha sur le alif, pas damma ni fatha sur le kaf)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « أَدَوَاتِ » transcrit, mais l'image porte « أَدَوَاتِ » ; la vocalisation correcte est « أَدَوَاتِ » ou « أَدَوَاتِ الرَّبْطِ » selon l'image, à vérifier."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : « فِقْرَةً » transcrit, mais l'image porte « فِقْرَةً » ; vocalisation à vérifier (image : فِقْرَةً)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : « الزَّمَنِيِّ » transcrit, mais l'image porte « الزَّمَنِيِّ » ; vocalisation à vérifier (image : الزَّمَنِيِّ)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les intitulés « المجموعة الأولى / الثانية / الثالثة » sont inventés : l'image montre trois encadrés sans titre."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête est absent : « اختبار نهاية الثلاثي الأول », « عدد 1 », « المادة : إنتاج كتابي », « المستوى : السنة الثالثة », ainsi que les champs الاسم / اللقب / القسم."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les colonnes des critères sont absentes : « الملاءمة », « سلامة بناء النص », « المعايير », ainsi que les barèmes (0,25, « معـ 1 », « معـ 2 »)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans le groupe 1, l'ordre des mots dans l'image est « حَبَّةَ فُولٍ – الصَّبِيُّ – أَخَذَ » (correct). Le groupe 3 est lu de haut en bas : « الْأَصِيصَ – الصَّبِيُّ – تُرَابًا – مَلَأَ » (correct)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

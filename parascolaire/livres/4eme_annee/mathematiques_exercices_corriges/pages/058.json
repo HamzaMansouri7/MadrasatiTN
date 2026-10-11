@@ -1,0 +1,148 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 58,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 14 – اختبار تقويمي للتثبيت والدعم (الضرب، وحدات الكتلة والسعة، الزاويتان القائمة والمنفرجة، مسألة حول الأجر والإنفاق والادخار)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أحسب الجذاءات دون اللجوء إلى إنجاز عمليات الضّرب المطلوبة معتمدا على خاصيات الضرب.",
+      "body": "6 x 86 =\n7 x 49 =\n9 x 58 =",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p058_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أ) ضع الوحدة المناسبة :",
+      "body": "60 000 صم = 600 ...... = 6 ...... = 6000 ...... = 60 ......\nب) ما هو ثمن 4 دكل من الزّيت إذا كان ثمن اللّتر الواحد بـ 1800 مي؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p058_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لوّن الزّاوية المنفرجة في الرّسم بالأزرق والزّاوية القائمة بالأحمر.",
+      "body": "",
+      "figureDesc": "رسم هندسي: مثلث ج أ ... تتقاطع فيه القطع المستقيمة؛ النقاط أ، ب، ج، د، هـ؛ شبه منحرف/رباعي أ ب د هـ مع نصف دائرة أسفل د هـ، والقطعة ج هـ تصل ج بالنقطة هـ، والقطعة ج أ تمر بالنقطة ب.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p058_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "علّل جوابك بالأرقام.",
+      "body": "يشتغل فنّي مختص 8 ساعات في اليوم بـ 1500 مي في السّاعة الواحدة. تُنفِقُ زوجتُه يوميّا 6000 مي وتدّخر الباقي.\nأ) كم يتقاضى هذا الفنّي في الأسبوع الواحد علما وأنّه يتعطّل عن العمل كلّ يوم أحد؟\nب) كم تُنفِق زوجته في الأسبوع؟\nج) تريد هذه الزّوجة شراء دراجة لابنها بـ 120 د. هل يمكنها بالمال المدّخر لمدّة 4 أسابيع تحقيق ذلك؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p058_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p6",
+    "confidence": 0.13
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de consolidation (semaine 14) qui mélange multiplication, conversions de capacité et de masse, angles droit et obtus, et un problème de salaire, d'épargne et de dépenses : elle couvre plusieurs chapitres, donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Multiplication, mesures et problème budgétaire",
+    "skill": "Appliquer les propriétés de la multiplication, convertir les unités de masse et de capacité, reconnaître angles droits et obtus, résoudre un problème de salaire, dépenses et épargne.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "propriétés de la multiplication",
+      "unités de masse et de capacité",
+      "angle droit",
+      "angle obtus",
+      "salaire et épargne",
+      "problème à étapes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation de consolidation combinant calcul réfléchi sans poser l'opération, tableau de conversion d'unités, coloriage d'angles et problème contextualisé (salaire hebdomadaire hors dimanche, dépenses quotidiennes, épargne, achat d'un vélo) avec justification chiffrée.",
+    "themeGroup": "Multiplication et multiples"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « الجذاءات » transcrit sans la hamza correcte ; l'image montre « الجذاءات » avec un alif-hamza (الجذاءات/الجُذاءات) ; « الضرب » à la fin sans shadda alors que l'image porte « الضّرب » (incohérence interne avec la première occurrence)."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Exercice 2 أ) : la série est fausse. L'image donne : 60 000 صم = 600 ...... ; 6 ...... = 6000 ...... ; 60 ...... (les unités sont des pointillés à remplir, et la chaîne est « 60000 صم - 600 ..... - 6 ..... = 6000 ..... = 60 ..... »). La transcription ajoute des « = » erronés et « = 6 ...... » au lieu de « - 6 »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : « 60 000 صم » correspond à l'image (سم probablement lu « صم »), mais « دكل » et « مي » sont conservés tels quels ; à vérifier : « دكل » (décalitre)."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Exercice 4 : la phrase « علّل جوابك بالأرقام. » est placée au début de l'exercice alors qu'elle figure à la fin, après la question ج)."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 3 : le dessin (angles, points أ ب ج د هـ, demi-cercle) n'est pas décrit ; la figure est absente de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête absent : « الأسبوع 14 », « اختبار تقويمي للتثبيت والدعم » et numéro de page 54."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : « الزاوية » avec hamza/voyelles variables ; l'image montre « الزّاوية » avec shadda, à harmoniser."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "short_test",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

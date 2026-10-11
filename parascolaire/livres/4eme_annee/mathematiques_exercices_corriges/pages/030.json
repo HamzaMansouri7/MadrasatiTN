@@ -1,0 +1,257 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 30,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 7 – الشبكة (1): رسم مسلك بين عقدتين والتعبير عنه",
+  "items": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 7",
+      "body": "الشبكة (1) : رسم مسلك بين عقدتين والتعبير عن [illisible : titre coupé en bord de page]\n26",
+      "figureDesc": null,
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p030_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) أرسم باللون الأحمر من النَّقطة \"أ\" مسلكا معبّرا عنه بالسِّهام التّالية :",
+      "body": "[↑ 3 | → 2 | ↑ | → | ↑]\nب) أرسم باللون الأزرق من النَّقطة \"ب\" مسلكا معبّرا عنه بالسِّهام التّالية : [← 3 | ↑ 2 | → | ↑]\nج) أكمل الجملة بكتابة: أطول أو أقصر:\nالمسلك الأحمر ........ من المسلك الأزرق.",
+      "figureDesc": "شبكة مربعات (8 أعمدة × 8 صفوف) عليها نقطتان على الخط الأفقي الثاني من الأسفل: النقطة \"أ\" على اليسار (عند الخط العمودي الثاني) والنقطة \"ب\" على اليمين (عند الخط العمودي السادس).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p030_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حدِّد العقدة \"ل\" ( ، )",
+      "body": "- حدِّد العقدة \"ص\" ( ، )\n- أرسم بالأحمر أقصر مسلك يربط بين العقدتيْن \"ل\" و \"ص\".\n- أرسم مسلكيْن آخريْن بالأزرق والأخضر يكون لهما نفس عدد خطوات المسلك الأحمر.",
+      "figureDesc": "شبكة مرقّمة: المحور الأفقي أسفل الشبكة من 9 إلى 0 (من اليسار إلى اليمين) والمحور العمودي على اليمين من 1 إلى 7. النقطة \"ص\" عند (5، 6) والنقطة \"ل\" عند (2، 1).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "mathematiques_exercices_corriges_p030_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ ثمّ أكمل بكتابة : أطول أو أقصر :",
+      "body": "- المسلك السَّميك ........ من المسلك الرَّقيق.\n- أرسم أقصر مسلك يصل المربّع بالمثلّث.\n- عبّر عنه بالكتابات السَّهميّة.",
+      "figureDesc": "شبكة مربعات عليها مثلّث (△) في الأعلى ومربّع (□) في الأسفل على اليسار. المسلك السميك يبدأ من عقدة المثلّث ويتجه إلى اليمين ثم إلى الأسفل ثم إلى اليسار حتى عقدة قرب المربّع. المسلك الرقيق على شكل درج يربط العقدتين نفسيهما من الجهة اليسرى.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mathematiques_exercices_corriges_p030_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u6",
+    "confidence": 0.39
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les réseaux (tracer un chemin entre deux nœuds, écriture fléchée, comparaison de longueurs de chemins), une notion de repérage/algorithmique qui ne correspond à aucun des chapitres de mathématiques listés (nombres, multiplication, division, décimaux, triangles/symétrie, mesures).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    116
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Quadrillage : chemins entre deux nœuds",
+    "skill": "Tracer et décrire un chemin sur un réseau quadrillé à l'aide de flèches, et comparer des longueurs de chemins.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "réseau",
+      "nœud",
+      "chemin",
+      "codage fléché",
+      "plus court chemin",
+      "repérage"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de déplacement sur quadrillage : coder un trajet par des flèches numérotées, chercher le plus court chemin entre deux points et en tracer d'autres de même longueur, ce qui est adaptable à des jeux de programmation débranchée ou à des plans de ville.",
+    "themeGroup": "Quadrillage et parcours"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Dans l'exercice 1, la phrase de l'énoncé 'أ) أرسم باللون الأحمر من النَّقطة \"أ\" مسلكا معبّرا عنه بالسِّهام التّالية :' est dupliquée (séparée par '||') ; la répétition n'existe pas dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre de la page et en-tête absents : 'الأسبوع 7' et 'الشبكة (1): رسم مسلك بين عقدتين والتعبير عنه'. Numéro de page 26 également absent."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Des voyelles ont été ajoutées ou modifiées par rapport à l'image, par ex. 'النَّقطة', 'السِّهام', 'حدِّد', 'السَّميك', 'الرَّقيق', 'السَّهميّة'. L'image présente des voyelles différentes : 'النَّقطة', 'السَّهام', 'حدَّد', 'السَّميك', 'الرَّقيق'. Les variantes ('السِّهام', 'حدِّد') sont incorrectes."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'exercice 2, 'حدِّد العقدة \"ل\"' : le texte de l'image est 'حدَّد العقدة \"ل\"' ; la mise en page des deux premières lignes est inversée par rapport à l'image, et le tiret initial manque pour la première."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les éléments graphiques (grilles, points أ، ب، ل، ص, axes numérotés 0 à 9 et 1 à 7, figures avec carré et triangle) ne sont pas décrits."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'exercice 1-ج, 'المسلك الأحمر ........ من المسلك الأزرق' : l'ordre des segments est correct, mais le point final et la position du blanc sont approximatifs."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : « الأسبوع 7 », le titre « الشبكة (1) : رسم مسلك بين عقدتين والتعبير عن… » (coupé au bord dans le scan) et le numéro de page 26."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 1 : la phrase de la consigne 1-أ apparaît à la fois dans « instruction » et dans « body ». Dans l'image elle n'est écrite qu'une fois, donc c'est une duplication de la transcription. La séparation « || » signalée n'existe pas dans le JSON fourni."
+      },
+      {
+        "type": "figure",
+        "severity": "major",
+        "detail": "Exercice 1 : la grille compte 8 colonnes × 8 rangées, pas 9. Les points « أ » (à gauche) et « ب » (à droite) sont sur la 2e ligne horizontale en partant du bas, pas sur la dernière rangée."
+      },
+      {
+        "type": "figure",
+        "severity": "major",
+        "detail": "Exercice 3 : la description est inversée. Le trait épais forme un « U » carré : du triangle vers la droite, puis vers le bas, puis vers la gauche jusqu'au nœud voisin du carré. Le trait fin est celui qui forme l'escalier."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": null,
+      "instruction": "الأسبوع 7",
+      "body": "الشبكة (1) : رسم مسلك بين عقدتين والتعبير عن [illisible : titre coupé en bord de page]\n26",
+      "figureDesc": null,
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p030_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) أرسم باللون الأحمر من النَّقطة \"أ\" مسلكا معبّرا عنه بالسِّهام التّالية :",
+      "body": "[↑ 3 | → 2 | ↑ | → | ↑]\nب) أرسم باللون الأزرق من النَّقطة \"ب\" مسلكا معبّرا عنه بالسِّهام التّالية : [← 3 | ↑ 2 | → | ↑]\nج) أكمل الجملة بكتابة: أطول أو أقصر:\nالمسلك الأحمر ........ من المسلك الأزرق.",
+      "figureDesc": "شبكة مربعات (8 أعمدة × 8 صفوف) عليها نقطتان على الخط الأفقي الثاني من الأسفل: النقطة \"أ\" على اليسار (عند الخط العمودي الثاني) والنقطة \"ب\" على اليمين (عند الخط العمودي السادس).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p030_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حدِّد العقدة \"ل\" ( ، )",
+      "body": "- حدِّد العقدة \"ص\" ( ، )\n- أرسم بالأحمر أقصر مسلك يربط بين العقدتيْن \"ل\" و \"ص\".\n- أرسم مسلكيْن آخريْن بالأزرق والأخضر يكون لهما نفس عدد خطوات المسلك الأحمر.",
+      "figureDesc": "شبكة مرقّمة: المحور الأفقي أسفل الشبكة من 9 إلى 0 (من اليسار إلى اليمين) والمحور العمودي على اليمين من 1 إلى 7. النقطة \"ص\" عند (5، 6) والنقطة \"ل\" عند (2، 1).",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy",
+      "id": "math_solutions_4eme_sellami_p030_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ ثمّ أكمل بكتابة : أطول أو أقصر :",
+      "body": "- المسلك السَّميك ........ من المسلك الرَّقيق.\n- أرسم أقصر مسلك يصل المربّع بالمثلّث.\n- عبّر عنه بالكتابات السَّهميّة.",
+      "figureDesc": "شبكة مربعات عليها مثلّث (△) في الأعلى ومربّع (□) في الأسفل على اليسار. المسلك السميك يبدأ من عقدة المثلّث ويتجه إلى اليمين ثم إلى الأسفل ثم إلى اليسار حتى عقدة قرب المربّع. المسلك الرقيق على شكل درج يربط العقدتين نفسيهما من الجهة اليسرى.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "math_solutions_4eme_sellami_p030_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) أرسم باللون الأحمر من النَّقطة \"أ\" مسلكا معبّرا عنه بالسِّهام التّالية :",
+      "body": "أ) أرسم باللون الأحمر من النَّقطة \"أ\" مسلكا معبّرا عنه بالسِّهام التّالية : [↑ 3 | → 2 | ↑ | → | ↑]\nب) أرسم باللون الأزرق من النَّقطة \"ب\" مسلكا معبّرا عنه بالسِّهام التّالية : [← 3 | ↑ 2 | → | ↑]\nج) أكمل الجملة بكتابة: أطول أو أقصر: المسلك الأحمر ........ من المسلك الأزرق.",
+      "figureDesc": "شبكة مربعات (8 أعمدة تقريبا × 9 صفوف) عليها نقطتان في الصف الأخير: النقطة \"أ\" على اليسار والنقطة \"ب\" على اليمين.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p030_i1",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "حدِّد العقدة \"ل\" ( ، )",
+      "body": "- حدِّد العقدة \"ص\" ( ، )\n- أرسم بالأحمر أقصر مسلك يربط بين العقدتيْن \"ل\" و \"ص\".\n- أرسم مسلكيْن آخريْن بالأزرق والأخضر يكون لهما نفس عدد خطوات المسلك الأحمر.",
+      "figureDesc": "شبكة مرقّمة: المحور الأفقي من 9 إلى 0 (من اليسار إلى اليمين) والمحور العمودي من 1 إلى 7. النقطة \"ص\" عند (5، 6) والنقطة \"ل\" عند (2، 1).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p030_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ ثمّ أكمل بكتابة : أطول أو أقصر :",
+      "body": "- المسلك السَّميك ........ من المسلك الرَّقيق.\n- أرسم أقصر مسلك يصل المربّع بالمثلّث.\n- عبّر عنه بالكتابات السَّهميّة.",
+      "figureDesc": "شبكة مربعات عليها مربّع (□) في الأسفل ومثلّث (△) في الأعلى، ومسلك سميك على شكل درج يربط بينهما، ومسلك رقيق آخر.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p030_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

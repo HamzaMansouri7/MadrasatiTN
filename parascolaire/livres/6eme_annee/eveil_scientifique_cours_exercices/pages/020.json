@@ -1,0 +1,258 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 20,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "التَّغذِيةُ : أَغْذِيَةُ البِنَاءِ - الطَّاقَةِ - الوِقَايَةِ (Nutrition : aliments de construction, d'énergie et de protection)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "التَّغذِيةُ : أَغْذِيَةُ البِنَاءِ - الطَّاقَةِ - الوِقَايَةِ",
+      "body": "1- أغذية غنية بالمواد الزلالية، ضرورية لنمو الجسم ولتجديد خلاياه ولبناء أنسجته.\n2- أغذية غنية بالكلسيوم تساعد على نمو وتقوية العظام.\n3- أغذية تمد الجسم بطاقة حرارية كبيرة وتتوفر بكثرة في شحوم الحيوانات والزيوت والزبدة.\n4- أغذية تمد الجسم بالطاقة وتوجد خاصة في الخبز والكسكسي ومشتقات الحبوب كما توجد أيضا في البطاطا والأرز.\n5- أغذية واقية مثال :\nالفيتامينات وهي مركبات غذائية واقية لا يستطيع الجسم الاستغناء عنها.",
+      "figureDesc": "Schéma en fleur de 6 groupes d'aliments, avec les étiquettes : مجموعة 1 (poisson, viande, volaille, œufs), مجموعة 2 (lait, fromage, produits laitiers), مجموعة 3 (beurre, huile, matières grasses, dattes), مجموعة 4 (pain, céréales, pommes de terre, farine), مجموعة 5 (fruits et légumes), مجموعة 6 au centre (eau et boissons). Les cases colorées numérotées 1 à 5 correspondent aux descriptions. Étoile avec le chiffre 1 en haut à droite. Numéro de page : 52.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "eveil_scientifique_cours_exercices_p020_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "أ",
+      "instruction": "بَعْضُ الأَغْذِيَةِ تُسَمَّى بِالأَغْذِيَةِ البَنَّاءَةِ . فِيمَا يَتَمَثَّلُ دَوْرُ البِنَاءِ ؟",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p020_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "ب",
+      "instruction": "بَعْضُ الأَغْذِيَةِ تُسَمَّى بِالأَغْذِيَةِ الطَّاقِيَّةِ . مَا هِيَ وَظِيفَتُهَا ؟",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p020_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "ج",
+      "instruction": "صَنِّفِ الأَغْذِيَةَ التَّالِيَةَ حَسَبَ وَظِيفَتِهَا فِي الجِسْمِ :",
+      "body": "بقول جافة - زبدة - بطاطا - برتقال - خس - دقيق - قنارية - فلفل - البان - زيت - بسباس - خبز - بيض - مندرين - طماطم - عدس - لحوم - فستق.",
+      "figureDesc": "Tableau vide à 3 colonnes à remplir (de droite à gauche) : أغذية بنّاءة | أغذية طاقية | أغذية واقية",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p020_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.32
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des aliments de construction, d'énergie et de protection (nutrition équilibrée) et de leur classement selon leur fonction dans le corps, ce qui correspond à l'unité 3 (système circulatoire, nutrition, immunité et microbes) d'Éveil Scientifique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Les groupes d'aliments et leurs fonctions",
+    "skill": "Identifier le rôle des aliments de construction, d'énergie et de protection et classer des aliments selon leur fonction dans le corps.",
+    "pageType": "mixed",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "nutrition",
+      "aliments constructeurs",
+      "aliments énergétiques",
+      "aliments protecteurs",
+      "classification des aliments"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une courte leçon associée à des questions de définition et à un exercice de classement d'une liste variée d'aliments locaux (légumineuses, fruits, produits laitiers, corps gras) dans un tableau selon leur fonction, facilement transposable en tableau à compléter, jeu de cartes ou affiche sur l'assiette équilibrée.",
+    "themeGroup": "Les groupes d'aliments et l'alimentation équilibrée"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le tableau de classement de l'exercice ج (colonnes : أغذية بنّاءة / أغذية طاقية / أغذية واقية) n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les étiquettes du schéma (مجموعة 1 à مجموعة 6) ne sont pas transcrites. Le numéro de page 52 et le chiffre 1 dans l'étoile sont aussi absents."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans l'exercice أ, « البَنَّاءَةِ » a une shadda sur le نون ; l'image montre « البَنَاءَةِ » (ou « البَنَّاءَةِ ») sans certitude sur la shadda. Dans la question, « دَوْرُ البِنَاءِ » est correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« ألبان » est transcrit avec hamza ; l'image montre « البان » sans hamza. De même « زيت » est correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« بِالكلسيوم » : l'image montre « بالكلسيوم », transcription correcte. En revanche « لنمو » : l'image a « لنموّ » avec shadda ; shadda absente dans la transcription."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le titre et la consigne ج sont vocalisés, mais « قِنَّارِيَّة / قنارية », « أغذية » dans les items 1 à 5 et plusieurs mots du bloc 1 ont des voyelles visibles partiellement non reproduites (ex. « ضرورية »)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les 5 items numérotés sont présentés avec « 1- » etc. alors qu'ils sont dans des cases colorées ; l'ordre est correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.95,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice ج : l'image montre « البان » sans hamza, alors que la transcription porte « ألبان »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 52 (bandeau bleu en bas) n'est pas transcrit. Les étiquettes « مجموعة 1 » à « مجموعة 6 » ne figurent que dans figureDesc, pas sous forme de texte exact."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "التَّغذِيةُ : أَغْذِيَةُ البِنَاءِ - الطَّاقَةِ - الوِقَايَةِ",
+      "body": "1- أغذية غنية بالمواد الزلالية، ضرورية لنمو الجسم ولتجديد خلاياه ولبناء أنسجته.\n2- أغذية غنية بالكلسيوم تساعد على نمو وتقوية العظام.\n3- أغذية تمد الجسم بطاقة حرارية كبيرة وتتوفر بكثرة في شحوم الحيوانات والزيوت والزبدة.\n4- أغذية تمد الجسم بالطاقة وتوجد خاصة في الخبز والكسكسي ومشتقات الحبوب كما توجد أيضا في البطاطا والأرز.\n5- أغذية واقية مثال :\nالفيتامينات وهي مركبات غذائية واقية لا يستطيع الجسم الاستغناء عنها.",
+      "figureDesc": "Schéma en fleur de 6 groupes d'aliments, avec les étiquettes : مجموعة 1 (poisson, viande, volaille, œufs), مجموعة 2 (lait, fromage, produits laitiers), مجموعة 3 (beurre, huile, matières grasses, dattes), مجموعة 4 (pain, céréales, pommes de terre, farine), مجموعة 5 (fruits et légumes), مجموعة 6 au centre (eau et boissons). Les cases colorées numérotées 1 à 5 correspondent aux descriptions. Étoile avec le chiffre 1 en haut à droite. Numéro de page : 52.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "al_mounir_eveil_scientifique_6eme_p020_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "أ",
+      "instruction": "بَعْضُ الأَغْذِيَةِ تُسَمَّى بِالأَغْذِيَةِ البَنَّاءَةِ . فِيمَا يَتَمَثَّلُ دَوْرُ البِنَاءِ ؟",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p020_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "ب",
+      "instruction": "بَعْضُ الأَغْذِيَةِ تُسَمَّى بِالأَغْذِيَةِ الطَّاقِيَّةِ . مَا هِيَ وَظِيفَتُهَا ؟",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p020_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "ج",
+      "instruction": "صَنِّفِ الأَغْذِيَةَ التَّالِيَةَ حَسَبَ وَظِيفَتِهَا فِي الجِسْمِ :",
+      "body": "بقول جافة - زبدة - بطاطا - برتقال - خس - دقيق - قنارية - فلفل - البان - زيت - بسباس - خبز - بيض - مندرين - طماطم - عدس - لحوم - فستق.",
+      "figureDesc": "Tableau vide à 3 colonnes à remplir (de droite à gauche) : أغذية بنّاءة | أغذية طاقية | أغذية واقية",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p020_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "التَّغذِيةُ : أَغْذِيَةُ البِنَاءِ - الطَّاقَةِ - الوِقَايَةِ",
+      "body": "1- أغذية غنية بالمواد الزلالية، ضرورية لنمو الجسم ولتجديد خلاياه ولبناء أنسجته.\n2- أغذية غنية بالكلسيوم تساعد على نمو وتقوية العظام.\n3- أغذية تمد الجسم بطاقة حرارية كبيرة وتتوفر بكثرة في شحوم الحيوانات والزيوت والزبدة.\n4- أغذية تمد الجسم بالطاقة وتوجد خاصة في الخبز والكسكسي ومشتقات الحبوب كما توجد أيضا في البطاطا والأرز.\n5- أغذية واقية مثال : الفيتامينات وهي مركبات غذائية واقية لا يستطيع الجسم الاستغناء عنها.",
+      "figureDesc": "Schéma en fleur de 6 groupes d'aliments : مجموعة 1 (poisson, viande, volaille, œufs), مجموعة 2 (lait, fromage, produits laitiers), مجموعة 3 (beurre, huile, matières grasses, dattes), مجموعة 4 (pain, céréales, pommes de terre, farine), مجموعة 5 (fruits et légumes), مجموعة 6 au centre (eau et boissons). Les numéros 1 à 5 en couleur correspondent aux descriptions.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p020_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "أ",
+      "instruction": "بَعْضُ الأَغْذِيَةِ تُسَمَّى بِالأَغْذِيَةِ البَنَّاءَةِ . فِيمَا يَتَمَثَّلُ دَوْرُ البِنَاءِ ؟",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p020_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "ب",
+      "instruction": "بَعْضُ الأَغْذِيَةِ تُسَمَّى بِالأَغْذِيَةِ الطَّاقِيَّةِ . مَا هِيَ وَظِيفَتُهَا ؟",
+      "body": "",
+      "figureDesc": "Ligne pointillée pour la réponse",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p020_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "ج",
+      "instruction": "صَنِّفِ الأَغْذِيَةَ التَّالِيَةَ حَسَبَ وَظِيفَتِهَا فِي الجِسْمِ :",
+      "body": "بقول جافة - زبدة - بطاطا - برتقال - خس - دقيق - قنارية - فلفل - ألبان - زيت - بسباس - خبز - بيض - مندرين - طماطم - عدس - لحوم - فستق.",
+      "figureDesc": "Tableau à 3 colonnes à remplir : أغذية بنّاءة | أغذية طاقية | أغذية واقية",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "al_mounir_eveil_scientifique_6eme_p020_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

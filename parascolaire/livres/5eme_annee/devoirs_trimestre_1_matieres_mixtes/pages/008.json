@@ -1,0 +1,242 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 8,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المساحة وجدول العدّ (Mesures d'aires, unités agraires et tableau de numération)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المساحة",
+      "body": "جدول وحدات قيس المساحة (من اليمين إلى اليسار). الصف الأول: الأجزاء | الوحدة الأساسيّة | المضاعفات. الصف الثاني: تحت «الأجزاء»: مم، صم، دسم. تحت «الوحدة الأساسيّة»: م. تحت «المضاعفات»: دكم، هم، كم. الصف الثالث: خانتان فارغتان تحت كل وحدة (مم، صم، دسم، م، دكم، هم، كم) لكتابة الأرقام.",
+      "figureDesc": "جدول بإطار مزخرف: صف للعناوين (الأجزاء، الوحدة الأساسيّة، المضاعفات)، صف للرموز، وصف أخير فيه خانتان فارغتان تحت كل وحدة.",
+      "answer": null,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p008_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.95
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "لقيس مساحات الأراضي الفلاحيّة",
+      "body": "جدول (من اليمين إلى اليسار). الصف الأول: الصنتيار | الآر | الهكتار. الصف الثاني: صآ | آر | هآ. الصف الثالث: خانات فارغة.",
+      "figureDesc": "جدول من ثلاثة أعمدة وثلاثة صفوف، الصف الأخير فارغ.",
+      "answer": null,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p008_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.95
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول العدّ",
+      "body": "جدول (من اليمين إلى اليسار). الصف الأول: الوحدات البسيطة | الآلاف | الملايين | المليارات. الصف الثاني: تحت كل مجموعة ثلاث خانات: آ | ع | م (للوحدات البسيطة، ثم للآلاف، ثم للملايين، ثم للمليارات). الصف الثالث: خانات فارغة.",
+      "figureDesc": "جدول من اثني عشر عموداً مجمّعة في أربع مجموعات من ثلاثة أعمدة (آ، ع، م)، والصف الأخير فارغ.",
+      "answer": null,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p008_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.95
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch1",
+  "topicTitle": "Période 1 : Grands nombres, opérations et mesures agraires",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4444444444444444,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch1",
+    "confidence": 0.95
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page présente le tableau des unités de mesure d'aire, le tableau des unités agraires (centiare, are, hectare) et le tableau de numération (unités simples, milliers, millions, milliards), ce qui correspond à la Période 1 : grands nombres et mesures agraires.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesures d'aires et numération",
+    "skill": "Utiliser le tableau des unités de mesure d'aire (dont unités agraires) et le tableau de numération pour écrire et convertir des nombres.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "aires",
+      "unités agraires",
+      "hectare",
+      "tableau de numération",
+      "conversions",
+      "multiples et sous-multiples"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les tableaux vierges (deux cases par unité d'aire, colonnes de classes en numération) se réutilisent pour des exercices de conversion, de placement de chiffres ou des fiches de référence visuelles.",
+    "themeGroup": "Mesures d'aires et unités agraires"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mots 'جدول وحدات قيس المساحة' ne figurent pas dans l'image ; ils sont ajoutés comme titre. L'image n'a que 'المساحة'."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "La phrase 'كل وحدة في الجدول تخصّص لها خانتان فارغتان لكتابة الأرقام' est inventée. C'est une description des cases vides, pas du texte de la page."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Les expansions '(آ: آحاد، ع: عشرات، م: مئات)' ne figurent pas dans l'image. Elle ne contient que les lettres آ ع م."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les en-têtes du tableau de mesure sont lus de droite à gauche (الأجزاء، الوحدة الأساسية، المضاعفات). Ce sens est correct, mais les sous-colonnes ne sont pas listées dans l'ordre exact (مم، صم، دسم، م، دكم، هم، كم). Elles sont cohérentes."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans le deuxième tableau, l'ordre de lecture de l'image va de droite à gauche : الصنتيار (صآ)، الآر (آر)، الهكتار (هآ). La transcription l'inverse et omet les en-têtes en plein texte des colonnes."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes vides sous les tableaux ne sont pas mentionnées, et les cases vides de 'جدول العد' non plus. Le décor de la bordure est omis, ce qui est acceptable."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel est conservé pour 'الأساسيّة' et 'الفلاحيّة' ; 'العدّ' a sa shadda, ce qui est correct."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.6,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le corps du premier item commence par « جدول وحدات قيس المساحة: », qui ne figure pas dans l'image. Le seul titre de ce bloc est « المساحة »."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "La phrase « كل وحدة في الجدول تخصّص لها خانتان فارغتان لكتابة الأرقام » est absente de l'image. Elle décrit les cases vides et n'est pas du texte de la page."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Les expansions « (آ: آحاد، ع: عشرات، م: مئات) » sont absentes de l'image, qui ne contient que les lettres آ ع م. La phrase « الأعمدة من اليمين إلى اليسار ... » est elle aussi un ajout descriptif."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans le deuxième tableau, l'ordre de lecture de droite à gauche est الصنتيار (صآ)، الآر (آر)، الهكتار (هآ). La transcription le donne à l'envers (الهكتار en premier)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les sous-colonnes du premier tableau (مم، صم، دسم، م، دكم، هم، كم) sont dans le bon ordre de droite à gauche. Ce point du contrôle rapide n'est pas une erreur."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases vides existent bien dans l'image : deux cases par unité dans le premier tableau, une case par colonne dans le deuxième, et une ligne vide sous chaque colonne du tableau de numération. Les figureDesc les mentionnent. La figureDesc du premier tableau est à reformuler, car 'Le Mètre (م)' a deux cases plus larges."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel (la shadda) de « الأساسيّة », « الفلاحيّة » et « العدّ » est correct et visible dans l'image. Ce point du contrôle rapide n'est pas une erreur."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المساحة",
+      "body": "الأجزاء: مم، صم، دسم. الوحدة الأساسيّة: م. المضاعفات: دكم، هم، كم.",
+      "figureDesc": "جدول: الصف الأول فيه العناوين (الأجزاء، الوحدة الأساسيّة، المضاعفات). الصف الثاني فيه الوحدات من اليمين إلى اليسار: مم، صم، دسم، م، دكم، هم، كم. الصف الثالث فارغ وفيه خانتان تحت كل وحدة.",
+      "answer": null
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "لقيس مساحات الأراضي الفلاحيّة",
+      "body": "الصنتيار: صآ. الآر: آر. الهكتار: هآ.",
+      "figureDesc": "جدول من ثلاثة أعمدة، من اليمين إلى اليسار: الصنتيار، الآر، الهكتار. الصف الثاني فيه الرموز: صآ، آر، هآ. الصف الثالث فارغ.",
+      "answer": null
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول العدّ",
+      "body": "الوحدات البسيطة: آ ع م. الآلاف: آ ع م. الملايين: آ ع م. المليارات: آ ع م.",
+      "figureDesc": "جدول عدّ بأربع مجموعات من اليمين إلى اليسار: الوحدات البسيطة، الآلاف، الملايين، المليارات. تحت كل مجموعة ثلاثة أعمدة (آ، ع، م). الصف السفلي فارغ.",
+      "answer": null
+    }
+  ],
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.95,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المساحة",
+      "body": "جدول وحدات قيس المساحة: الأجزاء: مم، صم، دسم. الوحدة الأساسيّة: م. المضاعفات: دكم، هم، كم. كل وحدة في الجدول تخصّص لها خانتان فارغتان لكتابة الأرقام.",
+      "figureDesc": "جدول بثلاثة أعمدة رئيسية (الأجزاء، الوحدة الأساسيّة، المضاعفات). الصف الثاني يحتوي على الوحدات: مم، صم، دسم، م، دكم، هم، كم. الصف الثالث فارغ، وفيه خانتان لكل وحدة.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "livre_mowazi_5eme_math_sciences_p008_i1",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "لقيس مساحات الأراضي الفلاحيّة",
+      "body": "الهكتار: هآ. الآر: آر. الصنتيار: صآ.",
+      "figureDesc": "جدول من ثلاثة أعمدة (الهكتار، الآر، الصنتيار). الصف الثاني يحمل الرموز: هآ، آر، صآ. الصف الثالث فارغ.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "livre_mowazi_5eme_math_sciences_p008_i2",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جدول العدّ",
+      "body": "الوحدات البسيطة (آ: آحاد، ع: عشرات، م: مئات)، الآلاف (آ، ع، م)، الملايين (آ، ع، م)، المليارات (آ، ع، م). الأعمدة من اليمين إلى اليسار: آ ع م للوحدات البسيطة، ثم آ ع م للآلاف، ثم آ ع م للملايين، ثم آ ع م للمليارات.",
+      "figureDesc": "جدول عدّ بأربع مجموعات (الوحدات البسيطة، الآلاف، الملايين، المليارات). كل مجموعة تحتوي على ثلاثة أعمدة (آ، ع، م). الصف السفلي فارغ لكتابة الأرقام.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "livre_mowazi_5eme_math_sciences_p008_i3",
+      "topicId": "math-5-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "linkStatus": "clean",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

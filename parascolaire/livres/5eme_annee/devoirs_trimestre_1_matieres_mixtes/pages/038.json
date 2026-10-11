@@ -1,0 +1,138 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 38,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "القارات و المحيطات و الوحدات التضارسية الكبرى (Géographie : continents, océans et grandes unités de relief). La page relève de la géographie, non des mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "القارات و المحيطات و الوحدات التضارسية الكبرى",
+      "body": "تنقسم الكرة الأرضية إلى قسمين قسم يابس يمثل حولي وقسم مائي يمثل حولي",
+      "figureDesc": "Titre en rouge encadré d'une bordure décorative à petits cercles dorés. Phrase d'introduction sur la division du globe en une partie terrestre et une partie aquatique. Les pourcentages après « حولي » sont absents du texte.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p038_i1",
+      "topicId": "hg-5-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "القسم اليابس",
+      "body": "القسم اليابس يتكون من قارات ويوجد أغلبه في شمال خط الإستواء وفي القسم الشمالي للكرة الأرضية",
+      "figureDesc": "Cadre rectangulaire. « القسم اليابس » est écrit en rouge. Un connecteur relie ce cadre au cadre « إسم القارات ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p038_i2",
+      "topicId": "hg-5-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "إسم القارات",
+      "body": "القارة الآسيوية القارة الأمريكية القارة الإفريقية القارة الأنتركتيكية القارة الأوروبية وأخيرا قارة أقيانوسيا",
+      "figureDesc": "Schéma en arbre : un cadre intitulé « إسم القارات » en rouge, relié au cadre qui liste les six continents.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p038_i3",
+      "topicId": "hg-5-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "القسم المائي",
+      "body": "القسم المائي يتكون من مياه بحرية و مياه قارية.\nمياه بحرية: محيطات: المحيط الهادي، المحيط الأطلسي، المحيط الهندي، المحيط المتجمد. بحار: البحر الأحمر، البحر الأبيض المتوسط، البحر الأسود.\nمياه قارية: مياه باطنية: المائدة المائية. مياه سطحية: أنهار، أودية، بحيرات. مياه راكدة: السباخ والغدران. مياه متجمدة: الثلوج والجليد.",
+      "figureDesc": "Tableau à deux branches. Les eaux marines se divisent en océans et mers. Les eaux continentales se divisent en eaux souterraines, eaux de surface, eaux stagnantes et eaux gelées. Chaque colonne énumère ses exemples.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p038_i4",
+      "topicId": "hg-5-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "hg-5-u2",
+  "topicTitle": "Unité 2 : Géographie - Repères géographiques et carte de Tunisie",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-5-u2",
+    "confidence": 0.4
+  },
+  "topicSubject": "Histoire & Géographie",
+  "topicReason": "La page traite des continents, des océans, des mers et des eaux continentales, ce qui correspond à l'unité de géographie « Repères géographiques et carte de Tunisie » (continents et grands reliefs).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Histoire-Géographie",
+    "theme": "Continents, océans et grands reliefs",
+    "skill": "Identifier la répartition des terres et des eaux sur le globe et nommer les continents, océans et mers.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "appariement",
+      "texte_a_trous",
+      "qcm"
+    ],
+    "keywords": [
+      "continents",
+      "océans",
+      "mers",
+      "eaux continentales",
+      "hémisphère nord",
+      "globe terrestre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La classification des eaux (marines et continentales) et la liste des continents se prêtent à des exercices de légende de planisphère, de tableau à compléter, d'appariement ou de QCM de localisation.",
+    "themeGroup": "Continents et océans"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre est transcrit « الوحدات التضارسية الكبرى », ce qui correspond à l'image. Rien à corriger."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« حولي » apparaît deux fois dans l'image et dans la transcription (probablement « حوالي » dans le document d'origine), donc la transcription est fidèle."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La transcription du tableau est reformulée en phrases (« مياه بحرية: محيطات: ... ») avec des deux-points et des virgules absents de l'image. L'ordre des colonnes est inversé par rapport à la lecture visuelle, mais le contenu reste correct."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ponctuation ajoutée (virgules, points, « . ») qui n'existe pas dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le bloc « القسم اليابس » est transcrit en double (titre séparé, puis phrase) ; la phrase est correcte mais « يتكون من » et la mise en évidence en rouge ne sont pas signalées. Rien d'important n'est omis."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "labels": {
+    "pageSubject": "Histoire-Géographie"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

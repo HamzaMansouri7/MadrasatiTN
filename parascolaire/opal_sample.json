@@ -1,0 +1,18 @@
+{
+  "source": {
+    "bookTitle": "Mathématiques 4ème année — Exercices et corrigés",
+    "publisher": "مدرستي تونس — Madrasati TN"
+  },
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "theme": "Multiplication et multiples",
+  "topicId": "math-4-ch3",
+  "format": "fill_blank",
+  "difficulty": "hard",
+  "exercise": {
+    "number": "*",
+    "instruction": "في مخيّم تمّ توزيع 32 طفلا على 4 فرق بالتّساوي. ما هو عدد الأطفال بكل فرقة ؟",
+    "body": "للبحث عن عدد الأطفال بكل فرقة قدم أحد التّلاميذ حلاّ لهذه المسألة فكان كالآتي: 4 x ... = ... x 4 = 32 ؛ 4 x 8 = 8 x 4 = 32 ؛ وكتب أيضا: 32 على 4 = 8",
+    "answer": "8 أطفال بكل فرقة"
+  }
+}

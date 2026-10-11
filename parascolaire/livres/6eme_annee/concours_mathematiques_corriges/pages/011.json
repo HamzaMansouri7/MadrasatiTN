@@ -1,0 +1,149 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 11,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مناظرة عدد 3 – أفريل 2023/2024 – الضارب 1: مسائل الكسور والتخفيضات والسعة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 1 (6 نقاط) – السؤال 1",
+      "instruction": "ما هو المبلغ الذي قدّمه الأب لابنته؟",
+      "body": "بمناسبة عيد ميلادها تلقت خديجة مبلغا مالِيّا من والدها فاشترت حاسوبا وآلة طباعة فمنحها البائع تخفيضا قدره 1/5 الثمن الأصلي فلاحظت أنها أنفقت 3/5 المبلغ الذي بحوزتها. واشترت بما تبقى هاتفا جوّالا بمبلغ من مضاعفات 17 ويأتي مباشرة بعد 2110 د.",
+      "figureDesc": "ورقة امتحان تونسية مع علم تونس وإطار عنوان (مناظرة عدد 3، السنة الدراسية 2023/2024، رياضيات، أفريل، الضارب 1)، وختم دائري وعلامة مائية زرقاء",
+      "answer": "ثمن الهاتف: 125 × 17 = 2125 د. المبلغ الذي قدّمه الأب لابنته: (2125 × 5) : 2 = 5312.5 د",
+      "confidence": 0.85,
+      "id": "concours_mathematiques_corriges_p011_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 1 – السؤال 2",
+      "instruction": "ما هو ثمن الحاسوب وآلة الطباعة بعد التخفيض؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": "ثمن الحاسوب وآلة الطباعة بعد التخفيض: 5312.5 − 2125 = 3187.5 د",
+      "confidence": 0.88,
+      "id": "concours_mathematiques_corriges_p011_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 1 – السؤال 3",
+      "instruction": "ما هو ثمن كلّ منهما قبل التخفيض علما وأنّ آلة الطباعة تمثّل 2/3 ثمن الحاسوب.",
+      "body": "",
+      "figureDesc": "",
+      "answer": "ثمن الحاسوب وآلة الطباعة قبل التخفيض: (3187.5 × 5) : 4 = 3984.375 د. ثمن الحاسوب قبل التخفيض: (3984.375 × 3) : 5 = 2390.625 د. ثمن الآلة الطابعة قبل التخفيض: 3984.375 − 2390.625 = 1593.75 د",
+      "confidence": 0.85,
+      "id": "concours_mathematiques_corriges_p011_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 2 (6 نقاط) – السؤال 1",
+      "instruction": "ما هي سعة الحوض بالهكل؟",
+      "body": "لفلاح حوض ممتلئ إلى 2/9 سعته ماء. فتح العامل حنفية تضخ 90 ل كلّ 3 دق ابتداً من السّاعة التاسعة ليلا، فامتلأ 1/2 الحوض على الساعة الواحدة صباحا.",
+      "figureDesc": "",
+      "answer": "90 ل ---> 3 دق ؟ ---> 240 دق. كمية الماء المضافة: (90 × 240) : 3 = 7200 : 3 = 72 هل. نصف سعة الحوض: 4.5 جزء. الكمية المضافة: 4.5 − 2 = 2.5 جزء. سعة الحوض: (72 × 9) : 2.5 = 259.2 هل",
+      "confidence": 0.8,
+      "id": "concours_mathematiques_corriges_p011_i4",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "math-6-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p5",
+    "confidence": 0.32
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une épreuve de type concours (مناظرة) composée de situations-problèmes à plusieurs étapes (fractions, réductions, capacité), ce qui correspond à la période de synthèse et de résolution de problèmes préparant au concours d'entrée aux collèges pilotes.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionOf": [
+    9,
+    10
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problèmes de fractions et de capacité",
+    "skill": "Résoudre des problèmes à étapes impliquant fractions d'une somme, réductions de prix, multiples et capacité d'un bassin avec débit et durée.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "fractions",
+      "réduction de prix",
+      "multiples",
+      "capacité",
+      "débit",
+      "problème à étapes"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations de la vie courante réutilisables : un cadeau d'argent dépensé en achats avec réduction fractionnaire, un prix retrouvé par contrainte de multiple, deux articles liés par un rapport de fractions, et un bassin rempli par un robinet à débit constant sur une durée donnée.",
+    "themeGroup": "Fractions"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«تخفيضا» : l'image montre «تخفيضا» avec vocalisation/forme «لخفيضا» ; la transcription est correcte sur le mot mais le texte de l'image comporte des marques non reprises (tashkeel visibles ex. «مالِيّا», «بحوزتها») – transcription partielle des voyelles"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Tashkeel incohérent : seul «مالِيّا» et «قدّمه»/«تمثّل»/«السّاعة» sont vocalisés ; d'autres mots vocalisés dans l'image (ex. «الوضعيّة», «الثمن الأصلي», «بمبلغ») sont sans voyelles"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الوضعية عدد 1» : l'image indique «الوضعيّة ع ـــدد 1» (ع د د avec allongement) – formulation normalisée, acceptable"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«ابتداً» : devrait être «ابتداءً» (image : «ابتدأ»/«ابتداءً») ; «بالهكل» devrait probablement être «بالهكل» tel qu'écrit, mais «حنفية» et «الحوض» corrects"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page omis : «مناظرة عدد 3», «السنة الدراسية 2023/2024», «رياضيات», «أفريل», «الضارب 1» et le numéro de page 3 ne sont pas transcrits"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les questions 2 et 3 de la situation 1 sont placées sans énoncé d'intro ; l'ordre énoncé/réponse est reconstitué (question 1 après l'énoncé dans l'image, ici inversé) : ordre légèrement modifié"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Fractions «1/5» et «3/5» : l'image montre «1/5 الثمن الأصلي» et «3/5 المبلغ» – correct ; mais «2125 د.» ponctuation ajoutée (points) absente de l'image"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "correctionStatus": "self_contained",
+  "examScope": "full_year",
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

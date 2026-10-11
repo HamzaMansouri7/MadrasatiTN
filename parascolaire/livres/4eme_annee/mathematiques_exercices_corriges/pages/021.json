@@ -1,0 +1,119 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 21,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 5 – الجمع – متمّم مجموعة أخرى (Addition – complément)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "بواسطة الأعداد الآتية : 50 ، 28 ، 3 ، 7 ، 5 ، 10 ، 25 ، 100 ، 80 — أكتب الأعداد 238 ، 213 ، 165 باستعمال الجمع فقط.",
+      "body": "مثال: 7 + 25 + 80 + 100 = 212",
+      "figureDesc": "Une rangée de neuf cases numérotées : 50, 28, 3, 7, 5, 10, 25, 100, 80. Trois nombres cibles sont encadrés : 238, 213, 165.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mathematiques_exercices_corriges_p021_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "بواسطة الأعداد الآتية : 6 ، 3 ، 20 ، 90 ، 50 ، 84 ، 2 ، 36 ، 1 — أكتب الأعداد 133 ، 185 ، 200 بِاستعمال الجمع والطرح معا.",
+      "body": "",
+      "figureDesc": "Une rangée de neuf cases numérotées : 6, 3, 20, 90, 50, 84, 2, 36, 1. Trois nombres cibles sont encadrés : 133, 185, 200.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p021_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "كَمْ أَصْبَحَ عَدَدُ سُكّانِ القَرْيَةِ؟",
+      "body": "عَدَدُ سُكّانِ قَرْيَةٍ مِنْ قُرَى مَنَاطِقِ الظِّلِّ 796 نَسَمَةً. تُوُفِّيَ منهم 18 شَخْصًا خِلالَ سنة 1996 ووُلِدَ 59 طِفْلاً. كَمْ أَصْبَحَ عَدَدُ سُكّانِ القَرْيَةِ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p021_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هو ثمن القلم؟ ما هو ثمن القصّة؟",
+      "body": "أشتريت قلما وقصّة ودفعت 840 مي ثمّ عدت فاشتريت قلميْن آخريْن مماثليْن للقلم الأوّل فكان ما صرفت في شراء الأقلام الثّلاثة والقصّة 1 080 مي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p021_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "فابحث مستعينا بالمخطّط التالي عن عدد الأشخاص الذين حضروا لمشاهدة : أ) الفلم الأول والثاني معا. ب) الفلم الأول فقط. ج) الفلم الثاني فقط.",
+      "body": "قدّم صاحب قاعة سينما فلميْن مختلفيْن في نفس اليوم. باع في المجموع 870 تذكرة منها ما هو صالح للدّخول للفلميْن معًا. استعمل جميع الأشخاص تذاكرهم فإذا علمت أن عدد الذّين حضروا الفلم الأول هو 460 شخصا وأنّ عدد الذين حضروا الفلم الثّاني هو 510 شخصا",
+      "figureDesc": "Diagramme de Venn : une grande ellipse (870) contenant deux ellipses qui se chevauchent, étiquetées « فلم 1 » et « فلم 2 ».",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p021_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.51
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page, en Semaine 5 de mathématiques, porte sur l'addition et la soustraction d'entiers (décompositions, problèmes de complément, monnaie en millimes) avec des nombres inférieurs à 1000, ce qui correspond le mieux à la Période 1 (nombres, monnaie), mais le lien n'est pas certain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    114
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition, soustraction et problèmes de complément",
+    "skill": "Composer des nombres par addition et soustraction, et résoudre des problèmes additifs et soustractifs à plusieurs étapes, dont un problème d'intersection de deux ensembles.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "addition",
+      "soustraction",
+      "complément",
+      "décomposition de nombres",
+      "problème à étapes",
+      "diagramme ensembliste"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Réutilisable : atteindre un nombre cible à partir d'une liste imposée, avec addition seule puis avec soustraction. Situations concrètes variées : évolution de la population d'un village, prix inconnus d'un stylo et d'un livre, billets vendus pour deux films avec spectateurs communs, résolus à l'aide d'un diagramme.",
+    "themeGroup": "Addition et soustraction"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

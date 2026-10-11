@@ -1,0 +1,482 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 61,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Pas de contenu mathématique : la page est un examen normalisé blanc de français (certificat des études primaires, session de juillet 2022, Maroc) sur la citoyenneté. Elle ne correspond ni au manuel tunisien ni à la matière indiquée.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Lisez attentivement le texte :",
+      "body": "Le rôle du citoyen dans la société, sa place, ses droits et ses devoirs nous renvoient au concept d'appartenance à une collectivité, qu'elle soit locale ou nationale. La citoyenneté fait également appel à la notion de patrimoine commun, de bien commun et enfin de démocratie car sans celle-ci, le citoyen est réduit au rang de sujet.\nDans ses expressions, la citoyenneté interroge la liberté d'opinion, la liberté de culte, le respect de la vie privée, le droit à l'éducation, au travail, à la culture, à la protection sociale… Mais aussi à la liberté de circuler, la liberté de résistance à l'injustice. La citoyenneté doit être le premier contre-pouvoir à tous les niveaux des instances publiques ou privés.\nhttps://www.lesgerminales.com › citoyennete-solidarite",
+      "figureDesc": "En-tête d'examen : emblème du Royaume du Maroc avec textes arabes (المملكة المغربية / وزارة التربية الوطنية) et amazighes (tifinagh). Champs à remplir : Académie, Direction, Établissement, Nom, Prénom, N° de l'examen. Mentions : « Epreuve de francais. Durée : 01 :30 », « Examen normalisé blanc pour l'obtention du certificat des études primaires. session de JUILLET 2022 », « Réaliser par : Prof Ahmed MARZOUGUE », « La note : ........ ».",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "soutien_maths_francais_p061_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "I",
+      "instruction": "I - COMPREHENSION DE L'ECRIT : (15PTS)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p061_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-1",
+      "instruction": "Quel est le type de ce texte ? (recopiez la bonne réponse)",
+      "body": "a- Narratif    b- Descriptif    c- Informatif\nLe type de texte : ........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p061_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-2",
+      "instruction": "Proposer un titre à ce texte :",
+      "body": "........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p061_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-3",
+      "instruction": "Quelle est la source de texte ?",
+      "body": "La source : ........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p061_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-4",
+      "instruction": "Réponds par vrai ou faux :",
+      "body": "a/ La citoyenneté ne fait pas l'appel à  la notion de patrimoin. ........\nb/ La citoyenneté nous rend au concept d'appartenance à une collectivité. ........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p061_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-5",
+      "instruction": "Que fait-elle également la citoyennité ?",
+      "body": "........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p061_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-6",
+      "instruction": "Qu'interroge t-elle la citoyenneté ?",
+      "body": "........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p061_i8"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-7",
+      "instruction": "Pourquoi la démocratie fait partie à la lnotion de citotyenneté ?",
+      "body": "........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "soutien_maths_francais_p061_i9"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-8",
+      "instruction": "Pour être un bon citoyen, que dois-tu faire ?",
+      "body": "........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "soutien_maths_francais_p061_i10"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "hg-6-u5",
+    "confidence": 0.18
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un examen blanc de français (certificat d'études primaires, Maroc) portant sur un texte informatif sur la citoyenneté, évaluation générale qui ne correspond clairement à aucun module du programme tunisien de 6ème.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte sur la citoyenneté",
+    "skill": "Lire un texte informatif sur la citoyenneté et répondre à des questions de compréhension (type, titre, source, vrai/faux, questions ouvertes).",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "vrai_faux",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "citoyenneté",
+      "compréhension de texte",
+      "texte informatif",
+      "examen blanc",
+      "certificat d'études primaires",
+      "droits et devoirs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une séquence type d'examen de lecture (identifier le type de texte, proposer un titre, trouver la source, vrai/faux, questions de prélèvement, puis question d'opinion personnelle sur le comportement du bon citoyen), applicable à d'autres thèmes civiques.",
+    "themeGroup": "Métiers, citoyenneté et vie sociale"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Source : l'image indique « lesgerminales.com » (« lesgerminales » avec un g), et non « lesgerminales » tel que transcrit ; la transcription écrit « lesgerminales » pour « lesgerminales ». L'URL est donc à revérifier. En outre, « (Source : ... ) » est ajouté alors que l'image n'affiche que l'URL, sans « Source : » ni parenthèses."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête complet est omis : « Epreuve de français. Durée : 01:30 », « Examen normalisé blanc pour l'obtention du certificat des études primaires, session de JUILLET 2022 », « Réaliser par : Prof Ahmed MARZOUGUE », « Académie / Direction / Établissement / Nom / Prénom / N° de l'examen », « La note », ainsi que les textes arabes et amazighes du logo."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de section « I - COMPREHENSION DE L'ECRIT : (15PTS) » est absent."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de réponse « Le type de texte : … » et « La source : … » ne sont qu'en partie reproduites ; les emplacements de réponse vrai/faux a et b sont réduits à « ... »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« (Source : » et la parenthèse fermante sont ajoutés autour de l'URL, absents de l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« (Source : » et la parenthèse fermante sont ajoutés autour de l'URL. L'image affiche seulement « https://www.lesgerminales.com › citoyennete-solidarite », sans « Source : » ni parenthèses."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de section « I - COMPREHENSION DE L'ECRIT : (15PTS) » est absent de la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "L'en-tête indique « Réaliser par : Prof Ahmed MARZOUGUE ». La description écrit « Réalisé par »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête est seulement résumé dans figureDesc. Les textes arabes (« المملكة المغربية », « وزارة التربية الوطنية ») et amazighes (tifinagh) du logo sont omis, ainsi que la mention « La note : ... »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de réponse sont abrégées en « ... », y compris l'emplacement vrai/faux de a et b et les lignes « Le type de texte : » et « La source : »."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Lisez attentivement le texte :",
+      "body": "Le rôle du citoyen dans la société, sa place, ses droits et ses devoirs nous renvoient au concept d'appartenance à une collectivité, qu'elle soit locale ou nationale. La citoyenneté fait également appel à la notion de patrimoine commun, de bien commun et enfin de démocratie car sans celle-ci, le citoyen est réduit au rang de sujet.\nDans ses expressions, la citoyenneté interroge la liberté d'opinion, la liberté de culte, le respect de la vie privée, le droit à l'éducation, au travail, à la culture, à la protection sociale… Mais aussi à la liberté de circuler, la liberté de résistance à l'injustice. La citoyenneté doit être le premier contre-pouvoir à tous les niveaux des instances publiques ou privés.\nhttps://www.lesgerminales.com › citoyennete-solidarite",
+      "figureDesc": "En-tête d'examen : emblème du Royaume du Maroc avec textes arabes (المملكة المغربية / وزارة التربية الوطنية) et amazighes (tifinagh). Champs à remplir : Académie, Direction, Établissement, Nom, Prénom, N° de l'examen. Mentions : « Epreuve de francais. Durée : 01 :30 », « Examen normalisé blanc pour l'obtention du certificat des études primaires. session de JUILLET 2022 », « Réaliser par : Prof Ahmed MARZOUGUE », « La note : ........ ».",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "mouayen_6eme_math_francais_p061_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "I",
+      "instruction": "I - COMPREHENSION DE L'ECRIT : (15PTS)",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p061_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-1",
+      "instruction": "Quel est le type de ce texte ? (recopiez la bonne réponse)",
+      "body": "a- Narratif    b- Descriptif    c- Informatif\nLe type de texte : ........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p061_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-2",
+      "instruction": "Proposer un titre à ce texte :",
+      "body": "........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p061_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-3",
+      "instruction": "Quelle est la source de texte ?",
+      "body": "La source : ........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p061_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-4",
+      "instruction": "Réponds par vrai ou faux :",
+      "body": "a/ La citoyenneté ne fait pas l'appel à  la notion de patrimoin. ........\nb/ La citoyenneté nous rend au concept d'appartenance à une collectivité. ........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p061_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-5",
+      "instruction": "Que fait-elle également la citoyennité ?",
+      "body": "........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p061_i7"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-6",
+      "instruction": "Qu'interroge t-elle la citoyenneté ?",
+      "body": "........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p061_i8"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-7",
+      "instruction": "Pourquoi la démocratie fait partie à la lnotion de citotyenneté ?",
+      "body": "........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mouayen_6eme_math_francais_p061_i9"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-8",
+      "instruction": "Pour être un bon citoyen, que dois-tu faire ?",
+      "body": "........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "mouayen_6eme_math_francais_p061_i10"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Lisez attentivement le texte :",
+      "body": "Le rôle du citoyen dans la société, sa place, ses droits et ses devoirs nous renvoient au concept d'appartenance à une collectivité, qu'elle soit locale ou nationale. La citoyenneté fait également appel à la notion de patrimoine commun, de bien commun et enfin de démocratie car sans celle-ci, le citoyen est réduit au rang de sujet. Dans ses expressions, la citoyenneté interroge la liberté d'opinion, la liberté de culte, le respect de la vie privée, le droit à l'éducation, au travail, à la culture, à la protection sociale… Mais aussi à la liberté de circuler, la liberté de résistance à l'injustice. La citoyenneté doit être le premier contre-pouvoir à tous les niveaux des instances publiques ou privés. (Source : https://www.lesgerminales.com › citoyennete-solidarite)",
+      "figureDesc": "En-tête d'examen : emblème du Royaume du Maroc, ministère de l'Éducation nationale, avec des champs à remplir (Académie, Direction, Établissement, Nom, Prénom, N° de l'examen, La note). Mentions : Epreuve de français, Durée 01:30, Examen normalisé blanc pour l'obtention du certificat des études primaires, session de JUILLET 2022, Réalisé par Prof Ahmed MARZOUGUE.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p061_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-1",
+      "instruction": "Quel est le type de ce texte ? (recopiez la bonne réponse)",
+      "body": "a- Narratif  b- Descriptif  c- Informatif. Le type de texte : ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mouayen_6eme_math_francais_p061_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-2",
+      "instruction": "Proposer un titre à ce texte :",
+      "body": "...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mouayen_6eme_math_francais_p061_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-3",
+      "instruction": "Quelle est la source de texte ?",
+      "body": "La source : ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mouayen_6eme_math_francais_p061_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-4",
+      "instruction": "Réponds par vrai ou faux :",
+      "body": "a/ La citoyenneté ne fait pas l'appel à la notion de patrimoin. ...\nb/ La citoyenneté nous rend au concept d'appartenance à une collectivité. ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p061_i5",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-5",
+      "instruction": "Que fait-elle également la citoyennité ?",
+      "body": "...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mouayen_6eme_math_francais_p061_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-6",
+      "instruction": "Qu'interroge t-elle la citoyenneté ?",
+      "body": "...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "mouayen_6eme_math_francais_p061_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-7",
+      "instruction": "Pourquoi la démocratie fait partie à la lnotion de citotyenneté ?",
+      "body": "...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mouayen_6eme_math_francais_p061_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "I-8",
+      "instruction": "Pour être un bon citoyen, que dois-tu faire ?",
+      "body": "...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mouayen_6eme_math_francais_p061_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

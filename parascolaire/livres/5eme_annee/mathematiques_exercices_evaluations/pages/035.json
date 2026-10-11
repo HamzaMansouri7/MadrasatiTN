@@ -1,0 +1,87 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 35,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الأعداد الكسرية (رياضيات): كتابة الكسور بالأرقام وبالحروف، تمثيل عدد كسري، وتمثيل بياني لتوزيع الأغنام. Note : la page est en réalité une page de mathématiques, pas de langue arabe.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اكْتُبِ الأَعْدَادَ الكَسْرِيَّةَ الَّتِي بُسُوطُهَا وَاحِدٌ وَمَقَامَاتُهَا مِنْ 2 إِلَى 9 ثُمَّ اكْتُبْهَا بِالحُرُوفِ.",
+      "body": "Deux rangées de quatre cadres à remplir : au-dessus de chaque cadre une ligne pointillée pour l'écriture en chiffres (fraction), dans le cadre une ligne pointillée pour l'écriture en lettres. Total de 8 fractions (1/2 à 1/9).",
+      "figureDesc": "Deux rangées de 4 rectangles vides avec lignes pointillées, séparés par des virgules, à compléter.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p035_i1",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "مَثِّلِ العَدَدَ الكَسْرِيَّ عَلَى الرَّسْمِ المُقَابِلِ.",
+      "body": "1/3 (sur le triangle) ؛ 9/18 (sur le rectangle) ؛ 5/7 (sur la droite graduée)",
+      "figureDesc": "Un triangle isocèle, un rectangle et une droite graduée en 7 intervalles, chacun placé au-dessus d'une fraction : 1/3, 9/18, 5/7.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_evaluations_p035_i2",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "لِفَلَّاحٍ 150 مِنْ رُؤُوسِ الأَغْنَامِ مُفَصَّلَةً كَمَا يَلِي: كِبَاشٌ 2/10 ، نِعَاجٌ 5/10 ، خِرْفَانٌ 3/10.",
+      "body": "• حَدِّدْ عَدَدَ الرُّؤُوسِ مِنْ كُلِّ نَوْعٍ.\n• مَثِّلْ عَلَى الرَّسْمِ البَيَانِيِّ جَانِبًا كُلَّ نَوْعٍ مِنْ هَذِهِ الأَغْنَامِ.",
+      "figureDesc": "Repère avec axe vertical gradué de 0 à 75 de 5 en 5 intitulé « عدد الأغنام », axe horizontal « الأنواع » avec trois catégories : كِبَاش، نِعَاج، خِرْفَان ; diagramme en bâtons vide à compléter.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p035_i3",
+      "topicId": "math-5-p5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p5",
+  "topicTitle": "Période 5 : Fractions, pourcentages, proportionnalité et solides",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.26
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur l'écriture en chiffres et en lettres de fractions, leur représentation sur des figures et une droite graduée, et le calcul de fractions d'une quantité (150 têtes de moutons), ce qui correspond à la Période 5 consacrée aux fractions.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Fractions : écriture et représentation",
+    "skill": "Écrire des fractions en chiffres et en lettres, les représenter sur des figures et un graphique, et calculer la fraction d'une quantité.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "fractions",
+      "numérateur et dénominateur",
+      "représentation graphique",
+      "droite graduée",
+      "fraction d'une quantité"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : faire représenter une même fraction sur des supports variés (triangle, rectangle, droite graduée), et, dans un contexte rural (troupeau d'un fermier), répartir un effectif total en fractions puis le visualiser sur un graphique.",
+    "themeGroup": "Fractions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

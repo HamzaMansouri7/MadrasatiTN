@@ -1,0 +1,105 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 46,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Page non mathématique : texte de éducation islamique/morale sur la bonne parole (الكلمة الطيبة) et le devoir d'obéissance envers les parents (بر الوالدين)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "من واجبي طاعة والدي والمسارعة إلى تلبية أوامرهما ومعاملتهما بلطف ولين والترفق بهما والتواضع لهما وإظهار الخضوع أمامهما والبر والإحسان إليهما وإحترامهما",
+      "figureDesc": "Texte encadré dans un cadre rectangulaire à bordure pointillée, au sein d'une page bordée de motifs décoratifs ronds jaunes",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p046_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الكلمة الطيبة",
+      "body": "الكلمة الطيبة تقرب القلوب وتذهب حزنها وتمسح غضبها وتشعرنا عندما نسمعها أننا في سعادة",
+      "figureDesc": "Titre en rouge",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p046_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدعوة إلى الكلمة الطيبة في القرآن الكريم",
+      "body": "قال الله تعالى: وقولوا للناس حسناً\nوقال سبحانه: وقل لعبادي يقولوا التي هي أحسن\nوقال سبحانه: إليه يصعد الكلم الطيب والعمل الصالح يرفعه",
+      "figureDesc": "Titre en rouge ; versets coraniques",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p046_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدعوة إلى الكلمة الطيبة في السنة النبوية",
+      "body": "قال صلى الله عليه وسلم: اتقوا النار ولو بشق تمرة، فإن لم تجدوا فبكلمة طيبة\nقال صلى الله عليه وسلم: إن العبد ليتكلم بالكلمة من رضوان الله لا يلقي لها بالاً يرفعه بها درجات\nوقال: والكلمة الطيبة صدقة\nوقال: من كان يؤمن بالله واليوم الآخر فليقل خيراً أو ليصمت",
+      "figureDesc": "Titre en rouge ; hadiths",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p046_i4",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p6",
+    "confidence": 0.12
+  },
+  "topicSubject": "Éducation islamique",
+  "topicReason": "La page traite de la bonne parole et de l'obéissance envers les parents (éducation islamique/morale), une matière absente de la liste des chapitres officiels, qui ne contient aucune unité correspondante.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "La bonne parole et le respect des parents",
+    "skill": "Comprendre la valeur de la bonne parole et du devoir de bienveillance envers les parents, en s'appuyant sur des versets coraniques et des hadiths.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "appariement"
+    ],
+    "keywords": [
+      "bonne parole",
+      "bienfaisance envers les parents",
+      "Coran",
+      "hadith",
+      "valeurs morales"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les versets et hadiths courts sur la bonne parole se prêtent à des exercices d'appariement entre citation et idée, à des textes à trous, à des mises en situation (réagir poliment à un conflit) ou à une affiche illustrée sur les gestes de respect envers les parents.",
+    "themeGroup": "Le bon comportement et la bonne parole"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

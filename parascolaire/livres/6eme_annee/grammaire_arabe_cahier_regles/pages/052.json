@@ -1,0 +1,134 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 52,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الأسماء الخمسة (أبو، أخو، ذو...) وعلامات إعرابها بالحروف – Les cinq noms (قواعد اللغة العربية)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "معرف بـ ال / معرف بالإضافة",
+      "body": "معرف بـ ال: عاد الأب إلى البيت | شكر المدير الأب المثالي | سألت عن الأب المتغيب. معرف بالإضافة: عاد أبوك إلى البيت | شكر المدير أباك | سألت عن أبيك",
+      "figureDesc": "جدول من عمودين وأربعة أسطر: معرف بـ ال (يمين) ومعرف بالإضافة (يسار) مع ثلاثة أمثلة لكل منهما",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p052_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "علامات إعرابها بالحروف",
+      "body": "الواو رفعا: عاد أخوك | الياء نصبا: رأيت أباك | الياء جرا: التقيت بذي القامة الطويلة",
+      "figureDesc": "جدول من ثلاثة أعمدة: علامة الإعراب (الواو، الياء، الياء) في الأعلى ومثال لكل واحدة في الأسفل",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p052_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أضف إلى معلوماتك",
+      "body": "أبو – أخو – ذو: أسماء مضافة مرفوعة | أبا – أخا – ذا: أسماء مضافة منصوبة | أبي – أخي – ذي: أسماء مضافة مجرورة",
+      "figureDesc": "جدول من عمودين وثلاثة أسطر يبين الأسماء الخمسة حسب حالتها الإعرابية",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p052_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "ضع سطرا تحت كل اسم من الأسماء الخمسة واذكر بين قوسين هل هو مرفوع أو منصوب أو مجرور مع ذكر علامة اعرابه",
+      "body": "أبو حامد يحب أخاه\nقدم اخوك من سفره\nاللاعب أحمد ذو شهرة واسعة",
+      "figureDesc": "الجمل داخل إطار مستطيل",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p052_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "fr-6-m8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.26
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite d'une règle de grammaire arabe (les cinq noms et leurs marques d'I'rab par les lettres), qui ne correspond clairement à aucune des six unités officielles, centrées sur la narration et ses types de passages.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Les cinq noms et leurs marques",
+    "skill": "Identifier les cinq noms (أبو، أخو، ذو) dans une phrase et donner leur fonction et la marque d'i'rab par les lettres (waw, alif, ya).",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "les cinq noms",
+      "i'rab",
+      "marques par les lettres",
+      "grammaire arabe",
+      "nom annexé"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La structure en trois temps (nom défini par ال, puis nom annexé, puis marque selon le cas nominatif, accusatif ou génitif) et l'exercice de soulignement avec indication du cas se réutilisent facilement. On peut aussi transposer le tableau comparatif à d'autres catégories de noms.",
+    "themeGroup": "Les cinq noms et l'annexion"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Première table : la transcription met « الواو رفعا: عاد أخوك | الياء نصبا: رأيت أباك | الياء جرا: ... », ce qui correspond à l'image. Dans l'image, le tableau « أضف إلى معلوماتك » a un ordre de lecture droite-gauche : « أبو أخو ذو » est bien transcrit, pas d'erreur."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« التقيت بذي القامة الطويلة » : conforme à l'image, pas d'erreur."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « التمارين / التمرين الأول » n'est pas transcrit (seul l'énoncé est repris)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La transcription sépare le contenu de l'exercice en énoncé et exemples ; la phrase « أبو حامد يحب أخاه » est bien présente, mais « قدم اخوك من سفره » est correct sans hamza, conforme à l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de colonnes de la première table (« معرف بـ ال » à droite, « معرف بالإضافة » à gauche) sont présents ; l'ordre colonne droite/gauche est respecté. Aucune faute majeure détectée."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.88
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

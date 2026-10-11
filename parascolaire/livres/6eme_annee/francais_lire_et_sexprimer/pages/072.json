@@ -1,0 +1,146 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 72,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Les jeux du cirque (gladiateurs dans l'arène)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2a",
+      "instruction": "Est-ce que le public qui se trouve dans l'arène connaît bien le nom des champions ?",
+      "body": "Ligne de réponse en pointillés à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p072_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2b",
+      "instruction": "Justifie ta réponse :",
+      "body": "Deux lignes de réponse en pointillés à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p072_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Entoure la bonne explication :",
+      "body": "* le vainqueur : – la personne qui perd la bataille. – la personne qui gagne la bataille.\n* Impitoyablement : – avec pitié. – sans pitié.\n* le vaincu sera épargné : – Le vaincu sera tué. – Le vaincu ne sera pas tué.",
+      "figureDesc": "Chaque proposition est précédée d'un tiret ; l'élève entoure la bonne explication.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p072_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "-Si les spectateurs tournent leur pouce vers le sol, le vaincu sera épargné. (……………)",
+      "figureDesc": "Case arrondie en pointillés pour la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p072_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4b",
+      "instruction": "Relève, dans le texte, la phrase qui le montre :",
+      "body": "Deux lignes de réponse en pointillés à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p072_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Réponds par « Vrai » ou « Faux » :",
+      "body": "- Tous les gladiateurs combattent à pied.\n- À la fin du combat, le vainqueur doit tuer son adversaire.\n- Les animaux se battent entre eux seulement.\n- À la fin du spectacle, le public est content.",
+      "figureDesc": "Quatre cases arrondies en pointillés à droite pour les réponses.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p072_i6",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "À ton avis, ce type de jeux est-il admirable ?",
+      "body": "Ligne de réponse en pointillés à compléter.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p072_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-6-u5",
+    "confidence": 0.26
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une compréhension de lecture en français sur les jeux du cirque et les gladiateurs, mais ce thème ne correspond clairement à aucun des modules officiels (travail, communication, tolérance, entraide, nature, santé, loisirs, autres modes de vie).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    125
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : les jeux du cirque",
+    "skill": "Comprendre un texte documentaire en relevant des informations, en expliquant du vocabulaire et en donnant son opinion justifiée.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "vrai_faux",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "gladiateurs",
+      "arène",
+      "compréhension de texte",
+      "vocabulaire",
+      "justification",
+      "opinion"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement progressif de questions sur un texte historique : justification, choix de définitions de mots clés, relevé d'une phrase preuve, vrai/faux, puis avis personnel sur une pratique du passé.",
+    "themeGroup": "Textes documentaires"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,63 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 9,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإِنْتَاجُ الكِتَابِيُّ - إثراء الجمل بظرف المكان",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمَلِ وَأُثْرِيهَا بِالْمَكَانِ الْمُنَاسِبِ.",
+      "body": "1) فِي الصَّبَاحِ، خَلِيلٌ يَتَمَطَّى.\n...........................................................\n\n2) فِي الصَّبَاحِ، فِرَاسٌ يُسَاعِدُ أُمَّهُ عَلَى تَرْتِيبِ الأَثَاثِ.\n...........................................................\n\n3) رَتَّبَ عَلَاءٌ أَدَوَاتِهِ.\n...........................................................",
+      "figureDesc": "ثلاث صور توضيحية: الأولى لطفل يستيقظ في سريره ويمطط ذراعيه، الثانية لطفل يساعد أمه في ترتيب السرير في غرفة النوم، والثالثة لفتى يرتب أدواته المدرسية في حقيبته على المكتب.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p009_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.68
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de production écrite en arabe (enrichir des phrases avec un complément de lieu), mais les chapitres officiels de 1ère année portent sur la reconnaissance des lettres et le vocabulaire, sans lien clair avec l'enrichissement de phrases par un complément de lieu ; aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Enrichir les phrases par le complément de lieu",
+    "skill": "Réécrire des phrases simples en les enrichissant par un complément (adverbe) de lieu approprié.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "complément de lieu",
+      "enrichissement de phrases",
+      "réécriture",
+      "vie quotidienne"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Consigne de réécriture où l'élève ajoute à des phrases courtes de la vie quotidienne (activités du matin, aide à la maison, rangement) une précision de lieu, avec lignes pointillées pour répondre ; transposable à d'autres compléments (temps, manière).",
+    "themeGroup": "Enrichissement de phrases"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

@@ -1,0 +1,114 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 36,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "الطّاقَةُ : أنواع المغنط، أشكاله، قدرته على جذب المواد الحديدية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة 1 : ماهي أشكالُ المغناطيسِ التي تراها في الشكلِ ؟",
+      "body": "السّندُ : عُرِفَ المغناطيسُ مُنْذُ القديمِ ، عِنْدَمَا اُكْتُشِفَ الإنْسَانُ أنَّ بَعْضَ الصُّخُورِ الطّبيعيّةِ لَهَا خَصَائِصُ جَذْبِ الحَدِيدِ . بَعْدَ ذَلِكَ صَنَعَ الإنْسَانُ المَغْنَاطِيسَ بِأَشْكَالٍ وقِيَاسَاتٍ عَدِيدَةٍ.",
+      "figureDesc": "صورة لمغناطيس على شكل حرف U (أحمر وأزرق)، ومغناطيس مستقيم عليه الحرفان N (أزرق) وS (أحمر)، ومغناطيس صغير ومسمار/دبوس على خلفية داكنة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p036_i1",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة 2 : مِنْ أيَّةِ مَوَادَّ تَتَكَوَّنُ الأشْيَاءُ الَّتِي يَجْذِبُهَا المَغْنَاطِيسُ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p036_i2",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة 3 : هَلْ يَجْذِبُ المِغْنَاطِيسُ عَبْرَ الحَوَاجِزِ المُخْتَلِفَةِ ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p036_i3",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحْضِرْ قِطْعَةً أوْ قَضِيبًا مَغْنَاطِيسِيًّا وعَلِّقْهُ كَمَا هُوَ مُبَيَّنٌ فِي الرَّسْمِ.",
+      "body": "- خُذْ قِطْعَةً مِنْ حَدِيدٍ وقَرِّبْهَا مِنَ المَغْنَاطِيسِ بِالتَّدْرِيجِ ولَاحِظْ مَا يَحْدُثُ عِنْدَ بُعْدٍ مُعَيَّنٍ مِنَ المَغْنَاطِيسِ ، ثُمَّ عَبِّرْ عَنْ ذَلِكَ.\n- أعِدْ نَفْسَ التَّجْرِبَةِ بَعْدَ وَضْعِ قِطْعَةِ الحَدِيدِ مَكَانَ المَغْنَاطِيسِ.\nمَاذَا تَسْتَنْتِجُ ؟",
+      "figureDesc": "رسم تجريبي: قائم خشبي على لوح خشبي، وقضيب مغناطيسي معلق بخيط حريري في ذراع أفقي؛ التسميات: قائم خشب، خيط حريري، ثوب، مغناطيس، خشب.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p036_i4",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "قَضِيبَانِ مِنْ فُولَاذٍ مُتَشَابِهَانِ بِالشَّكْلِ. كَيْفَ نَكْتَشِفُ أنَّ أحَدَهُمَا أوْ كِلَيْهِمَا مغناطيسٌ دونَ استعمالِ أيِّ شيءٍ آخر ؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p036_i5",
+      "topicId": "sci-6-u5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u5",
+  "topicTitle": "Unité 5 : Énergie, magnétisme, poids et chute libre",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "sci-6-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u5",
+    "confidence": 0.2
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite des aimants (formes, matériaux attirés, attraction à distance et à travers des obstacles, identification d'un barreau aimanté), ce qui relève du magnétisme de l'Unité 5 Énergie, magnétisme, poids et chute libre.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Les aimants et leurs propriétés",
+    "skill": "Découvrir par l'expérimentation les formes des aimants, les matériaux qu'ils attirent et leur action à distance ou à travers des obstacles.",
+    "pageType": "exercise",
+    "formats": [
+      "autre",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "aimant",
+      "magnétisme",
+      "attraction du fer",
+      "expérience",
+      "barreau d'acier",
+      "obstacles"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Suite de consignes expérimentales progressives : observer des aimants de formes variées, trier les objets attirés selon leur matériau, tester l'attraction à travers des obstacles, approcher un morceau de fer à distance croissante, puis résoudre un défi de raisonnement (identifier lequel de deux barreaux d'acier identiques est un aimant sans autre matériel).",
+    "themeGroup": "Les aimants et la boussole"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

@@ -1,0 +1,146 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 48,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "وظائف العائلة (Les fonctions de la famille) - texte de type éducation civique/sociale, sans contenu mathématique. La page ne correspond pas au sujet annoncé (Mathématiques).",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "تقوم العائلة بعدة وظائف أهمها",
+      "body": "تقوم العائلة بعدة وظائف أهمها",
+      "figureDesc": "Page encadrée d'une bordure décorative de cercles jaunes avec une coche. Les mots العائلة et وظائف sont en rouge et soulignés.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p048_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوظيفة البيولوجية",
+      "body": "وتتمثل في توفير الرعاية الصحية والجسدية للأطفال في الأسرة وتوفير الغذاء الصحي والمسكن الصحي للأفراد في العائلة لينعم الأبناء والآباء بجسم سليم وعقل سليم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p048_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوظيفة الاقتصادية",
+      "body": "عرف عن الأسرة قديماً بالاكتفاء الذاتي وإنتاج ما تحتاجه، وما تزال الأسرة حالياً تشارك في عمليات الإنتاج من خلال أفراد الأسرة، فتمد الأسرة مجالات العمل والمصانع بالأيدى العاملة وبالتعاون",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p048_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوظيفة النفسية",
+      "body": "هي أن توفر الأسرة للأبناء الراحة النفسية بتوفير الحب والحنان والأمن والسلام بحيث يعيش الأبناء في جو من الهدوء دون توتر أو قلق من أي خطر قد يحيط بهم",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p048_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوظيفة الدينية والأخلاقية",
+      "body": "هي أن يقدم الآباء لأبنائهم الخبرات الكافية عن دينهم وعن تعاليمه وعن كل ما يؤدي بهم إلى ان يكونوا أبناء صالحين يتحلون بالأخلاق الدينية دون إغفال حقهم بعيشة كريمة في هذه الحياة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p048_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الوظيفة التعليمية",
+      "body": "تعليمه ومساعدته على النجاح والإرتقاء إلى أعلى المراتب حتى يكون عنصر فاعل في المجتمع",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p048_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "من واجبات الأبناء في العائلة إطاعة الوالدين ومعاملتهما معاملة حسنة ،",
+      "figureDesc": "Les mots واجبات et العائلة sont en rouge et soulignés.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p048_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u6",
+    "confidence": 0.16
+  },
+  "topicSubject": "Éducation civique / sociale (texte en arabe sur les fonctions de la famille)",
+  "topicReason": "La page traite des fonctions de la famille (biologique, économique, psychologique, religieuse, éducative), un contenu d'éducation civique qui ne correspond à aucun chapitre officiel de la liste (langue arabe par type de texte, maths, sciences, histoire-géographie).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation civique",
+    "theme": "Les fonctions de la famille",
+    "skill": "Identifier et décrire les différentes fonctions de la famille (biologique, économique, psychologique, religieuse, éducative) et les devoirs des enfants.",
+    "pageType": "lesson",
+    "formats": [
+      "appariement",
+      "qcm",
+      "vrai_faux",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "famille",
+      "fonctions de la famille",
+      "rôles",
+      "devoirs des enfants",
+      "société"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "La liste de fonctions bien délimitées se prête à des exercices d'appariement fonction/exemple, à un tableau récapitulatif, à une infographie en cinq piliers ou à des mises en situation à classer par fonction familiale.",
+    "themeGroup": "La famille: fonctions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éducation civique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

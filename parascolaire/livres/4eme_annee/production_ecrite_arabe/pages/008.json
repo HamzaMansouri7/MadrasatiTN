@@ -1,0 +1,89 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 8,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الوصف: وصف القرية والبنايات والمقهى (نصوص داعمة للإنتاج الكتابي)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "القرية",
+      "body": "بهرتني القرية بشمسها الوهاجة وظلالها الوارفة بهوائها اللافح ونسيمها الوديع بغدرانها الهادئة وسواقيها النواحة بجوار مواشيها وأغاني فلاحيها\nما أروع مشهد القرية بصومعتها الشامخة وحقولها المترامية ورقرقة مياه العيون وزقزقة العصافير وخضرة الأشجار ونضج الثمار\nكانت القرية هادئة مغرقة في النوم كبارها وصغارها وحيواناتها الفلاح في حقله متكئ على مسحاته والتاجر في الأسواق واقف أمام دكانه\nكانت القرية وطيئة الأطراف وخصبة المراعي غنية بالبساتين والغابات والمناظر الفلاحية",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "production_ecrite_arabe_p008_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "البنايات",
+      "body": "البنايات شاهقة سامية في الفضاء تكاد تنطح السحاب\nدار واسعة كقصور الملوك أرضيتها وحيطانها من الرخام عليها نقوش بديعة وفي الأركان ارتمت الموائد المصنوعة من البلور\nبنايات عصرية عالية في الفضاء لا تكاد ترى وأخرى عتيقة تحدثنا عن ماضي الأجداد\nفإذا نحن أقزام بجوار هذه البناية الشاهقة ذات الطوابق العديدة\nوقفت أتفرج على المدينة العتيقة فإذا هي ديار بيضاء متراصة تشقها أزقة ملتوية وأنهج يفضي بعضها إلى بعض\nبهرتني المساجد ذات المنارات الرفيعة والمدارس العديدة والمستشفيات بنظامها والبنايات بتناسقها\nقصر شامخ يتحدى عوادي الزمان يتكون من طابقين أحاطت به حديقة فسيحة تخالها منتزها بظلال أشجارها وعطر أزهارها وغناء أطيارها\nها هو قصر تحيط به حديقة فسيحة غرست أشجارا وأزهارا وإذا الأشجار تتراقص أغصانها على السور تكسوه خضرة تزيده بهاء\nوأمام القصر فناء فسيح مذهب",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "production_ecrite_arabe_p008_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المقهى",
+      "body": "ذلك المقهى الذي ملأ رجالا جلسوا على مقاعد يحتسون الشاي",
+      "figureDesc": "النص مقطوع في نهاية الصفحة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "production_ecrite_arabe_p008_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "ar-4-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.49
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page contient des textes de description (village, bâtiments, café) en arabe pour la production écrite, mais aucune unité officielle ne porte sur la description de lieux : les unités 4 à 6 traitent des personnages et les unités 1 à 3 et 7 à 8 d'autres compétences narratives.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description : village, bâtiments, café",
+    "skill": "Utiliser un vocabulaire descriptif riche et des images littéraires pour décrire un lieu à l'écrit.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "description",
+      "village",
+      "bâtiments",
+      "café",
+      "production écrite",
+      "champ lexical"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des textes modèles courts, répartis par lieu (village, bâtiments, café), peuvent servir de support à des exercices de repérage du champ lexical, d'enrichissement de descriptions ou de production écrite guidée à partir de sensations (vue, ouïe, odorat).",
+    "themeGroup": "Description de lieux (village, bâtiments)"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

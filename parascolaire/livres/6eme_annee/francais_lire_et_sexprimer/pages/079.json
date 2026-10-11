@@ -1,0 +1,83 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 79,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite – Production : raconter un événement avec dialogue (la protection de l'environnement / la propreté de la plage)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Production :",
+      "body": "Par une belle matinée estivale, ma famille et moi, nous décidons d'aller à la plage pour nous rafraîchir et oublier le stress et la fatigue.\nEn arrivant, je suis ému par cette belle plage propre. L'eau est limpide. Le sable est fin et doré. Je suis ébloui par le chatouillement du sable sous les rayons du soleil. La mer est cristalline. Tout à coup, au cours de ma baignade, je suis sidéré par un spectacle honteux. Oh ! Mon Dieu ! Qu'est-ce que je vois ? De vilains garçons, des baigneurs vident la poubelle sur le sable de la plage et l'enterrent ! Quelle horreur !\nJe n'ai pas pu voir cela sans intervenir :\n- Vous êtes conscients de ce que vous venez de faire ? ai-je demandé.\n- De quoi tu te mêles, ça ne te regarde pas, a dit un méchant garçon.\n- Comment ? Vous salissez notre plage avec vos ordures et vous voulez que je me taise ?! ai-je rétorqué.\n- Tu ne vas pas nous donner des leçons à notre âge, a répliqué un autre jeune homme.\n- Écoutez, notre environnement est menacé par la pollution et nous devons le préserver car c'est un trésor que Dieu nous a offert pour y vivre sainement. La nature est notre mère à tous, elle nous procure l'air pur, l'eau, la nourriture et le logement, ai-je dit avec enthousiasme.\n- Oh ! Tu as raison bon garçon, si tous les gens font comme nous, la plage va devenir une décharge. Et, ce sera désagréable. Nous regrettons ce que nous venons de faire, ont-ils dit d'une seule voix.\n- Préserver la nature, c'est se préserver soi-même, ai-je fini par leur dire.\nDepuis ce jour-là, ces garçons sont devenus des amis avec la nature et la défendent.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p079_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.51
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une production écrite en français qui raconte une sortie à la plage propre, avec un passage descriptif (eau limpide, sable doré) et un thème de protection de l'environnement, ce qui correspond au Module 5 « Sauver la nature » (écologie, passages descriptifs).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Récit d'un événement avec dialogue",
+    "skill": "Rédiger un récit à la première personne avec dialogue, en décrivant un lieu et en défendant la protection de l'environnement.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "expression écrite",
+      "récit",
+      "dialogue",
+      "plage",
+      "propreté",
+      "environnement"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Modèle de production écrite qui part d'une sortie familiale à la plage et introduit un dialogue autour de la propreté du lieu. Le même schéma (situation initiale, description, événement, dialogue, morale) se réutilise avec d'autres contextes : forêt, parc, école, quartier.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.96,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« La nature est notre mère à tous » : l'image indique « notre à mère tous » (faute de l'original, avec « à » mal placé). La transcription l'a corrigée au lieu de reproduire fidèlement le texte."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est omis : « Sagesse », « Expression écrite », « 6ème année de base ». Le pied de page l'est aussi : « Lire et s'exprimer », « 78 », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Du texte en filigrane (transparence du verso) est visible mais illisible. Son omission est acceptable."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.96
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

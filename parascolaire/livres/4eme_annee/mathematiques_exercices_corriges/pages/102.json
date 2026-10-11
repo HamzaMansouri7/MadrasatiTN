@@ -1,0 +1,277 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 102,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 28 – امتحان النقلة (1): الأعداد إلى 1 000 000، الوحدات الزمنية، العمليات الأربع، المحيط، حل المسائل",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ابحث عن أصغر عدد فرديّ محصور بين 700 000 و 800 000 ومجموع أرقامه 9.",
+      "body": "أ) ابحث عن أصغر عدد فرديّ محصور بين 700 000 و 800 000 ومجموع أرقامه 9.\nب) ساعتان وربع السّاعة = ........ دق\nيومان و ........ ساعة = 60 ساعة",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p102_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أنجز العمليات التالية :",
+      "body": "قسمة: 7460 ÷ 8\nطرح: 3 . 4 . − 7 . 5 = 3206\nضرب: 586 × 207 =",
+      "figureDesc": "ثلاث عمليات عمودية : قسمة 7460 على 8، وعملية طرح بعض أرقامها ممثّلة بنقاط ونتيجتها 3206، وعملية ضرب 586 × 207.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p102_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعدّ مربّي غنم مريضا لنعاجه قيس طوله بالم 58. وقيس عرضه نصف قيس طوله. ما هو قيس محيطه؟",
+      "body": "أعدّ مربّي غنم مريضا لنعاجه قيس طوله بالم 58. وقيس عرضه نصف قيس طوله. ما هو قيس محيطه؟\nأحاطه بسياج بعدما ترك بابا عرضه 3 م. ما هو ثمنه إذا كان سعر المتر الواحد نصف دينار ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p102_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هي جرايتها الشّهريّة علما بأنها تعمل 26 يوما في الشّهر؟ / ما هي المدّة اللازمة بحساب الشّهر لتوفير ثمن آلة الخياطة؟",
+      "body": "تعمل زينب بمعمل خياطة 8 ساعات يوميًا بحساب 800 مي السّاعة الواحدة. ما هي جرايتها الشّهريّة علما بأنها تعمل 26 يوما في الشّهر؟\nفي كلّ شهر تُساعد هذه الفتاة أباها بـ 50 دينارا وتنفق 76 400 مي لمصروفها وتدّخر الباقي لشراء آلة خياطة ثمنها 400 د.\nما هي المدّة اللازمة بحساب الشّهر لتوفير ثمن آلة الخياطة؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "mathematiques_exercices_corriges_p102_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p6",
+    "confidence": 0.27
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un examen de passage (امتحان النقلة, semaine 28) qui mélange plusieurs chapitres (nombres à 6 chiffres, unités de temps, quatre opérations, périmètre, résolution de problèmes), donc aucun chapitre unique ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    133
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision de fin de trimestre en mathématiques",
+    "skill": "Mobiliser nombres jusqu'à 1 000 000, conversions de durées, quatre opérations, périmètre et résolution de problèmes en situation.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "nombres jusqu'à 1 000 000",
+      "unités de temps",
+      "quatre opérations",
+      "périmètre",
+      "problème à étapes",
+      "monnaie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : devinette sur un nombre impair avec contrainte de somme des chiffres, soustraction à chiffres manquants, et problèmes contextualisés (enclos avec porte, salaire horaire et épargne pour acheter une machine) enchaînant plusieurs étapes.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de la page « امتحان النقلة (1) », « الأسبوع 28 » et le numéro de page 98 ne sont pas transcrits."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3 : « أعدّ مربّي غنم مريضا » est faux. L'image porte « أعدّ مربّي غنم مأوى/مربضا لنعاجه » (mot lu « مريضا »). La transcription garde la forme « مريضا » telle qu'elle est écrite, donc rien à corriger si elle est fidèle, mais « أحاطه » doit être « أحاطه » avec la voyelle visible, à vérifier."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le bloc [1] est dupliqué : la phrase de l'exercice 1 apparaît deux fois, avant et après « || »."
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Soustraction : l'image montre 3.4. − 7.5 = 3206 (le premier terme est 3.4. et le second est .7.5 avec des points). Il faut écrire « 3 . 4 . − 7 . 5 = 3206 » sans autre interprétation. Cela est acceptable, mais la note « bonne valeur : 3206 » doit être vérifiée."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 4 : « 76 400 مي » est bien lu dans l'image, mais le nombre est écrit « 400 76 » (ordre visuel inversé). Vérifier que la valeur est bien 76 400."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Le bloc [4] place les questions avant le texte complet dans la colonne de gauche, ce qui désordonne le contenu."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le premier énoncé de l'exercice 3 est coupé dans la première colonne, et la seconde partie (أحاطه بسياج...) n'est pas présente dans la première colonne."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel visible est partiellement absent : « الشهريّة », « تُساعد », « تدّخر » sont notés, mais « أنجز » et « فرديّ » ne portent pas leurs marques visibles."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Plusieurs chadda visibles dans l'image sont absentes de la transcription : « فرديّ », « الشّاعة » (1-ب), « السّاعة », « الشّهريّة » et « الشّهر » (exercice 4). Pour « الشهريّة », la chadda sur le chin est visible dans le scan. La question finale de l'exercice 4 porte aussi « الشّهر »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« الأسبوع 28 », « امتحان النقلة (1) ») et le numéro de page 98 ne sont pas transcrits. Ce sont des éléments de mise en page, pas des exercices."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Dans le corps de l'exercice 2, la parenthèse « (بعض الأرقام ناقصة ومعوضة بنقاط) » est un commentaire ajouté qui ne figure pas dans l'image. Il a sa place dans figureDesc, pas dans le corps."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ابحث عن أصغر عدد فرديّ محصور بين 700 000 و 800 000 ومجموع أرقامه 9.",
+      "body": "أ) ابحث عن أصغر عدد فرديّ محصور بين 700 000 و 800 000 ومجموع أرقامه 9.\nب) ساعتان وربع السّاعة = ........ دق\nيومان و ........ ساعة = 60 ساعة",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p102_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أنجز العمليات التالية :",
+      "body": "قسمة: 7460 ÷ 8\nطرح: 3 . 4 . − 7 . 5 = 3206\nضرب: 586 × 207 =",
+      "figureDesc": "ثلاث عمليات عمودية : قسمة 7460 على 8، وعملية طرح بعض أرقامها ممثّلة بنقاط ونتيجتها 3206، وعملية ضرب 586 × 207.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p102_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعدّ مربّي غنم مريضا لنعاجه قيس طوله بالم 58. وقيس عرضه نصف قيس طوله. ما هو قيس محيطه؟",
+      "body": "أعدّ مربّي غنم مريضا لنعاجه قيس طوله بالم 58. وقيس عرضه نصف قيس طوله. ما هو قيس محيطه؟\nأحاطه بسياج بعدما ترك بابا عرضه 3 م. ما هو ثمنه إذا كان سعر المتر الواحد نصف دينار ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p102_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هي جرايتها الشّهريّة علما بأنها تعمل 26 يوما في الشّهر؟ / ما هي المدّة اللازمة بحساب الشّهر لتوفير ثمن آلة الخياطة؟",
+      "body": "تعمل زينب بمعمل خياطة 8 ساعات يوميًا بحساب 800 مي السّاعة الواحدة. ما هي جرايتها الشّهريّة علما بأنها تعمل 26 يوما في الشّهر؟\nفي كلّ شهر تُساعد هذه الفتاة أباها بـ 50 دينارا وتنفق 76 400 مي لمصروفها وتدّخر الباقي لشراء آلة خياطة ثمنها 400 د.\nما هي المدّة اللازمة بحساب الشّهر لتوفير ثمن آلة الخياطة؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "math_solutions_4eme_sellami_p102_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ابحث عن أصغر عدد فردي محصور بين 700 000 و 800 000 ومجموع أرقامه 9.",
+      "body": "أ) ابحث عن أصغر عدد فردي محصور بين 700 000 و 800 000 ومجموع أرقامه 9.\nب) ساعتان وربع الساعة = ........ دق\nيومان و ........ ساعة = 60 ساعة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "math_solutions_4eme_sellami_p102_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أنجز العمليات التالية :",
+      "body": "قسمة: 7460 ÷ 8\nطرح: 3 . 4 . − 7 . 5 = 3206 (بعض الأرقام ناقصة ومعوضة بنقاط)\nضرب: 586 × 207 =",
+      "figureDesc": "ثلاث عمليات عمودية: قسمة 7460 على 8، عملية طرح ناقصة الأرقام نتيجتها 3206، وعملية ضرب 586 × 207.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p102_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعدّ مربّي غنم مريضا لنعاجه قيس طوله بالم 58. وقيس عرضه نصف قيس طوله. ما هو قيس محيطه؟",
+      "body": "أعدّ مربّي غنم مريضا لنعاجه قيس طوله بالم 58. وقيس عرضه نصف قيس طوله. ما هو قيس محيطه؟\nأحاطه بسياج بعدما ترك بابا عرضه 3 م. ما هو ثمنه إذا كان سعر المتر الواحد نصف دينار ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p102_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هي جرايتها الشهريّة علما بأنها تعمل 26 يوما في الشهر؟ / ما هي المدّة اللازمة بحساب الشهر لتوفير ثمن آلة الخياطة؟",
+      "body": "تعمل زينب بمعمل خياطة 8 ساعات يوميًا بحساب 800 مي الساعة الواحدة. ما هي جرايتها الشهريّة علما بأنها تعمل 26 يوما في الشهر؟\nفي كلّ شهر تُساعد هذه الفتاة أباها بـ 50 دينارا وتنفق 76 400 مي لمصروفها وتدّخر الباقي لشراء آلة خياطة ثمنها 400 د.\nما هي المدّة اللازمة بحساب الشهر لتوفير ثمن آلة الخياطة؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "math_solutions_4eme_sellami_p102_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,191 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 55,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "تقييم: آداب الأكل ونعم الله (سورتا التكاثر والقارعة) – التعليمات 5 إلى 9 وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التَّعْلِيمَةُ 5 : أَرْبُطُ بِمَا يُنَاسِبُ :",
+      "body": "مِنْ آدَابِ الْأَكْلِ ● ؛ العبارات: لَا أَتَنَاوَلُ الطَّعَامَ مِنْ أَمَامِ الْمُشَارِكِينَ فِي الْأَكْلِ. / طَرْقُ أَبْوَابِ الْبُيُوتِ وَالْمَحَلَّاتِ قَبْلَ الدُّخُولِ. / الْأَكْلُ بِتَأَنٍّ وَتَجَنُّبُ الْأَحَادِيثِ وَالضَّحِكِ. / اِلْتِقَاطُ مَا يُزَيِّنُ الطَّعَامَ مِنْ فَوَاكِهَ وَغَيْرِهَا. / دُخُولُ الْمَحَلِّ قَبْلَ الْحُصُولِ عَلَى إِذْنٍ. / الْبَسْمَلَةُ وَشُكْرُ اللهِ عَلَى نِعَمِهِ.",
+      "figureDesc": "عبارة «مِنْ آدَابِ الْأَكْلِ» على اليمين تُربط بالعبارات الستّ على اليسار بخطوط؛ العلامة 1 لكل ربط صحيح؛ مربعات التقييم (معـ1ب).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p055_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "التَّعْلِيمَةُ 6 : أَكْتُبُ حَدِيثًا نَبَوِيًّا يُرْشِدُ إِلَى آدَابِ الْأَكْلِ :",
+      "body": "قَالَ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ : « ....................... » (رَوَاهُ الشَّيْخَانِ)",
+      "figureDesc": "سطر منقّط للكتابة؛ العلامة 1؛ مربع تقييم (معـ2ب).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p055_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 4",
+      "instruction": "السَّنَدُ 4 :",
+      "body": "بَعْدَ أَدَاءِ صَلَاتَيْ الْعِشَاءِ وَالتَّرَاوِيحِ بِجَامِعِ الْحَيِّ دَخَلْتُ إِلَى غُرْفَتِي وَشَرَعْتُ فِي مُرَاجَعَةِ سُورَتَيْ التَّكَاثُرِ وَالْقَارِعَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_toutes_matieres_p055_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "التَّعْلِيمَةُ 7 : أَرْبُطُ كُلَّ آيَةٍ قُرْآنِيَّةٍ بِالسُّورَةِ الْمُنَاسِبَةِ.",
+      "body": "سُورَةُ التَّكَاثُرِ ● / سُورَةُ الْقَارِعَةِ ● ؛ الآيات: كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَقِينِ / فَأَمَّا مَنْ ثَقُلَتْ مَوَازِينُهُ / ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِينِ",
+      "figureDesc": "ربط بخطوط بين اسمي السورتين والآيات الثلاث؛ 0,5 لكل ربط؛ مربعات تقييم (معـ2أ).",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p055_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "التَّعْلِيمَةُ 8 : أَرْبُطُ كُلَّ نِعْمَةٍ مِنْ نِعَمِ اللهِ بِفَوَائِدِهَا.",
+      "body": "النعم: خَلْقُ الشَّمْسِ / تَنَوُّعُ النَّبَاتَاتِ / إِنْزَالُ الْمَطَرِ ؛ الفوائد: ارْتِوَاءُ الزَّرْعِ وَالْحَيَوَانِ وَالْبَشَرِ. / انْتِشَارُ النُّورِ وَالدِّفْءِ. / تَوْفِيرُ الْغِذَاءِ لِلْإِنْسَانِ وَالْحَيَوَانِ.",
+      "figureDesc": "ربط بخطوط بين ثلاث نعم وثلاث فوائد؛ 0,5 لكل ربط؛ مربعات تقييم (معـ‍ج).",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p055_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "التَّعْلِيمَةُ 9 : أَكْتُبُ آيَةً قُرْآنِيَّةً تَدُلُّ عَلَى نِعَمِ اللهِ.",
+      "body": "قَالَ اللهُ تَعَالَى : « هُوَ الَّذِي ....................... » (سُورَةُ الْبَقَرَةِ الْآيَة 29)",
+      "figureDesc": "سطر منقّط للإكمال؛ العلامة 1؛ مربع تقييم (معـ2ب).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p055_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "مستويات التملك: انْعِدَامُ التَّمَلُّكِ: 0 في كل المعايير. التَّمَلُّكُ دُونَ الْأَدْنَى: معـ1أ 0,5 ؛ معـ1ب 1 ؛ معـ‍ج 0,5 ؛ معـ2أ 0,5 ؛ معـ2ب 1 ؛ معـ3 0,5. التَّمَلُّكُ الْأَدْنَى: 1 ؛ 2 ؛ 1 ؛ 1 ؛ 2 ؛ معـ3: 1,5 / 2,5. التَّمَلُّكُ الْأَقْصَى: 1,5 ؛ 3 ؛ 1,5 ؛ 1,5 ؛ 3 ؛ 3,5. الشفوي: سَلَامَةُ النُّطْقِ 1,5 ؛ الاِسْتِرْسَالُ 1,5 ؛ الاِسْتِظْهَارُ الْكَامِلُ 1,5 ؛ التِّلَاوَةُ 1,5. المجموع: 20.",
+      "figureDesc": "جدول إسناد الأعداد بحسب معايير الحد الأدنى (معـ1أ، معـ1ب، معـ‍ج، معـ2أ، معـ2ب) ومعيار التميز (معـ3) ومستويات التملك، وإلى جانبه خانة الشفوي والمجموع على 20؛ رقم الصفحة 54.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p055_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p1",
+    "confidence": 0.24
+  },
+  "topicSubject": "اللغة العربية (Éducation islamique intégrée)",
+  "topicReason": "La page est une évaluation (instructions 5 à 9 et grille de notation) portant sur les bonnes manières à table et les sourates At-Takathur et Al-Qari'a, un contenu d'éducation islamique qui ne correspond à aucune des unités officielles d'arabe ni de mathématiques.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Bonnes manières à table et bienfaits divins",
+    "skill": "Relier les convenances du repas, les sourates At-Takathur et Al-Qari'a et les bienfaits d'Allah à leurs exemples, versets ou hadiths.",
+    "pageType": "exam",
+    "formats": [
+      "appariement",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "étiquette du repas",
+      "hadith",
+      "sourate At-Takathur",
+      "sourate Al-Qari'a",
+      "bienfaits d'Allah",
+      "évaluation"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation par consignes courtes : relier un comportement à son principe, un verset à sa sourate, un bienfait à son utilité, compléter un hadith ou un verset, avec un barème par niveaux de maîtrise (aucune, sous le minimum, minimum, maximum) selon les critères.",
+    "themeGroup": "Bonnes manières à table"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "التعليمة 5: « اِلْتِقَاطُ مَا يُزَيِّنُ الطَّعَامَ » — l'image porte « الطَّعَامِ » (génitif/مجرور), pas « الطَّعَامَ »"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« اللهِ » transcrit sans la forme exacte de l'image « اللَّهِ » (shadda sur le lam) ; même remarque pour « اللهُ » et « نِعَمِ اللَّهِ »"
+      },
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Tableau: معـ1ب en 'dessous du minimum' vaut 1 (ok), mais معـ‍ج est 0,5 et la colonne معـ1أ vaut 0,5 ; la ligne transcrite met معـ3 à 0,5 alors que l'image indique 0,5 pour معـ3 — l'ordre des colonnes de la transcription est incohérent avec l'image (ordre réel de droite à gauche : 1أ, 1ب, ج, 2أ, 2ب, 3)"
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Ligne التَّمَلُّكُ الْأَدْنَى : image = 1 (1أ), 2 (1ب), 1 (ج), 1 (2أ), 2 (2ب), 1,5 / 2,5 (3) ; transcription cohérente mais ordre non précisé"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Barèmes de points marginaux (1, 1, 1, 1 ; 0,5 ×3 ; 0,5 ×3 ; 1) et cases de critères (معـ1ب, معـ2ب, معـ2أ, معـ‍ج, معـ2ب) non transcrits"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الْآيَة 29 » : l'image porte « الْآيَةُ 29 » (avec damma)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "En-tête du tableau (المعايير / مستويات التملك / معايير الحد الأدنى / معيار التميز) absent de la transcription"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "examTrimester": 2,
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

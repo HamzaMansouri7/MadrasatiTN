@@ -1,0 +1,141 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 21,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي - أُنْتِجُ وَأَتَمَيَّزُ",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "أُنْتِجُ وَأَتَمَيَّزُ :",
+      "figureDesc": "",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p021_i1",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْتُبُ كُلَّ جُمْلَةٍ أَمَامَ الْمَشْهَدِ الْمُنَاسِبِ لَهَا.",
+      "body": "• خَرَجَتْ سَلْمَى، وَفَتَحَتْ مَطَرِيَّتَهَا.\n• التَّلَامِيذُ يُتَابِعُونَ الدَّرْسَ بِانْتِبَاهٍ وَتَرْكِيزٍ.\n• فِي الْخَارِجِ، الْمَطَرُ يَهْطِلُ بِغَزَارَةٍ.",
+      "figureDesc": "Trois scènes illustrées, chacune avec un cadre de lignes d'écriture (réglure Seyès) à gauche, précédé d'une puce verte et numéroté 1, 2, 3 sur la marge. Scène 1 : dans une salle de classe, un enseignant en blouse blanche tient un objet et des papiers devant des élèves en rose et en bleu assis à leurs pupitres, qui l'écoutent attentivement. Scène 2 : devant une école (panneau « مدرسة »), sous une forte pluie, une fillette en rose tient un parapluie rose, un garçon se protège avec son cartable, et deux enfants marchent sous un parapluie bleu. Scène 3 : une fillette en rose avec un sac à dos vert tient un parapluie orange sous une pluie battante et du vent, devant un bâtiment.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p021_i2",
+      "topicId": "ar-1-u4",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.93
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "22 — مدرستي تونس - الثلاثي الثاني (السنة 1) — اللغة العربية - الإنتاج الكتابي",
+      "figureDesc": "",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p021_i3",
+      "topicId": "ar-1-u4",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.93
+    }
+  ],
+  "topicId": "ar-1-u4",
+  "topicTitle": "Unité 4 : Mon compagnon en hiver",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.99
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Page d'arabe (production écrite) dont les phrases décrivent la pluie et le parapluie, ce qui évoque le vocabulaire de l'hiver de l'Unité 4, mais aucun indice explicite (lettres J/H/Kh, titre d'unité) ne permet de l'affirmer.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Production écrite : associer phrases et scènes",
+    "skill": "Associer chaque phrase écrite à l'image qui lui correspond, puis la recopier correctement sous le bon visuel.",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "phrases",
+      "images",
+      "scène de classe",
+      "pluie",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le principe de légender des scènes illustrées par des phrases simples (météo, classe, personnage avec parapluie) se réutilise facilement pour d'autres situations du quotidien et pour un travail d'écriture guidée en début d'apprentissage.",
+    "themeGroup": "Production écrite: images et scènes"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.93,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de la section « أَنْتِجُ وَأَتَمَيَّزُ : » (bandeau violet en haut) est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le pied de page est absent : « 22 », « جسر النجاح - الثلاثي الثاني (السنة 1) », « اللغة العربية - الإنتاج الكتابي »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les éléments visuels ne sont pas mentionnés : les trois images (classe, enfants sous la pluie, fille au parapluie), les lignes d'écriture et le mot « مدرسة » sur l'enseigne de la deuxième image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« مَطَرِيَّتَهَا » : l'image montre « مِطْرِيَّتَها » (avec kasra sur le م et sukun sur le ط). La transcription donne une vocalisation différente."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« خَرَجَتْ سَلْمَى » : l'image montre « سَلْمَى » avec les mêmes voyelles, ce qui est correct. « الْمَشْهَدِ » est également correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْتُبُ كُلَّ جُمْلَةٍ أَمَامَ الْمَشْهَدِ الْمُنَاسِبِ لَهَا.",
+      "body": "• خَرَجَتْ سَلْمَى، وَفَتَحَتْ مَطَرِيَّتَهَا.\n• التَّلَامِيذُ يُتَابِعُونَ الدَّرْسَ بِانْتِبَاهٍ وَتَرْكِيزٍ.\n• فِي الْخَارِجِ، الْمَطَرُ يَهْطِلُ بِغَزَارَةٍ.",
+      "figureDesc": "ثلاثة مشاهد توضيحية أمام أسطر للكتابة: 1. معلم وتلاميذ في الفصل يتابعون الدرس بانتباه. 2. تلاميذ يغادرون المدرسة تحت المطر وبعضهم يحمل مظلات. 3. بنت (سلمى) تحمل محفظة وتفتح مطريتها تحت هطول المطر.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p021_i1",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

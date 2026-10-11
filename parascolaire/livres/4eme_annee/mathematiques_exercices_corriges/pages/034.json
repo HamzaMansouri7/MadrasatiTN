@@ -1,0 +1,127 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 34,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 8 : الغرام ومضاعفاته (Le gramme et ses multiples)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "احسب كتلة قطعة اللّحم بحساب الغرام :",
+      "body": "احسب كتلة قطعة اللّحم بحساب الغرام :",
+      "figureDesc": "Balance à deux plateaux. Plateau gauche : un morceau de viande (gigot) avec deux masses marquées 100 غ et 50 غ. Plateau droit : des masses de 500 غ, 1 كغ et 2 كغ. La balance est équilibrée.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p034_i1",
+      "topicId": "math-4-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هما العيارانِ اللذان وضعهما البائع مع السّمكة لتعديل كفّتي الميزان؟",
+      "body": "ما هما العيارانِ اللذان وضعهما البائع مع السّمكة لتعديل كفّتي الميزان؟",
+      "figureDesc": "Balance à deux plateaux. Plateau gauche : un poisson marqué 750 غ avec une masse marquée de chaque côté (deux masses inconnues). Plateau droit : une masse de 1 كغ. La balance est équilibrée.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p034_i2",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "إذا كانت العلبة (ج) لها نفس الكتلة فأبحث :",
+      "body": "إذا كانت العلبة (ج) لها نفس الكتلة فأبحث :\nأ) عن كتلة العلبة (ج)\nب) عن كتلة كلّ من العلبة (أ) و (ب).",
+      "figureDesc": "Trois balances équilibrées. 1) Plateau gauche : boîte ب ; plateau droit : trois boîtes ج. 2) Plateau gauche : boîte أ (haute) et boîte ب ; plateau droit : masses de 500 غ et 2 كغ. 3) Plateau gauche : une boîte ج, 50 غ et 10 غ ; plateau droit : 500 غ et 200 غ.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p034_i3",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "جَسِّمِ الوضعيّةَ على الميزان باستعمال عيارَيْنِ فقط.",
+      "body": "جَسِّمِ الوضعيّةَ على الميزان باستعمال عيارَيْنِ فقط.",
+      "figureDesc": "Balance dont le plateau gauche porte une boîte marquée 480 غ ; le plateau droit est vide.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p034_i4",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "إذا علمت أنّ ثمن 250 غراما من الزّبدة هو 800 مي، فما هو ثمن الكيلوغرام من الزّبدة ؟",
+      "body": "إذا علمت أنّ ثمن 250 غراما من الزّبدة هو 800 مي، فما هو ثمن الكيلوغرام من الزّبدة ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p034_i5",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "إذا كانت كتلة 100 كغ من القمح تعطي 78 كغ من الدّقيق فأحسب كتلة الدّقيق التي تعطيها 300 كغ من القمح.",
+      "body": "إذا كانت كتلة 100 كغ من القمح تعطي 78 كغ من الدّقيق فأحسب كتلة الدّقيق التي تعطيها 300 كغ من القمح.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p034_i6",
+      "topicId": "math-4-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-p6",
+  "topicTitle": "Période 6 : Mesure du temps, capacités, masses et synthèse",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-4-u4",
+    "confidence": 0.12
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite du gramme et de ses multiples (masses, balance, calculs en grammes et kilogrammes, proportionnalité), ce qui relève de la Période 6 sur la mesure des masses.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Le gramme et ses multiples",
+    "skill": "Calculer et comparer des masses en grammes et kilogrammes, avec la balance et les poids marqués, et résoudre des problèmes de proportionnalité.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "masse",
+      "gramme",
+      "kilogramme",
+      "balance",
+      "poids marqués",
+      "proportionnalité"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes de pesée (viande, poisson, boîtes) avec balance à deux plateaux, recherche de masses inconnues par équilibrage, schématisation avec un nombre limité de poids marqués, et problèmes de prix ou de rendement (beurre, blé et farine) à résoudre par proportionnalité.",
+    "themeGroup": "Masses et capacités"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

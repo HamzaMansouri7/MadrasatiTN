@@ -1,0 +1,110 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 46,
+  "grade": "2ème Année",
+  "subject": "إيقاظ علمي",
+  "topicGuess": "إيقاظ علمي – اختبار نهاية الثلاثي الثاني عدد 2 (التغذية: مصدر الأغذية، التنوع الغذائي، وترتيب النتائج)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُصَنِّفُ الْأَغْذِيَةَ التَّالِيَةَ فِي الْجَدْوَلِ :",
+      "body": "السَّنَدُ 1 : نَهَضَ مُحَمَّدٌ مِنْ نَوْمِهِ ثُمَّ اسْتَعَدَّ لِلذَّهَابِ إِلَى الْمَدْرَسَةِ وَقَبْلَ الْخُرُوجِ مِنَ الْمَنْزِلِ قَدَّمَتْ لَهُ أُمُّهُ فَطُورَ الصَّبَاحِ.\nالأغذية : خُبْزٌ - بَيْض - جُبْن - زُبْدَة - حَلِيب - عَصِير",
+      "figureDesc": "جدول من عمودين: «مَصْدَرٌ نَبَاتِيٌّ» و«مَصْدَرٌ حَيَوَانِيٌّ»، في كل عمود سطران منقطان للكتابة. النقاط: 0,5 لكل غذاء (6 أغذية). المعيار: مع 1أ.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p046_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْتُبُ «خَطَأٌ» أَوْ «صَوَابٌ» ثُمَّ أُعَلِّلُ.",
+      "body": "السَّنَدُ 2 : دَعَتِ الْأُمُّ أُخْتَ مُحَمَّدٍ لِتَنَاوُلِ فُطُورِ الصَّبَاحِ، لَكِنَّ الْبُنْيَةَ رَفَضَتْ ذَلِكَ.\nأَحْسَنَتِ الْأُخْتُ التَّصَرُّفَ. ...........\nلِأَنَّ ....................................",
+      "figureDesc": "نقاط منقطة للإجابة وللتعليل. النقاط: 1 و1 و1. المعيار: مع 2أ.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p046_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُصْلِحُ الْخَطَأَ.",
+      "body": "يَتَنَاوَلُ الْإِنْسَانُ وَجْبَتَيْنِ غِذَائِيَّتَيْنِ ضَرُورِيَّتَيْنِ فِي الْيَوْمِ.\n←.........................\nيَكْتَفِي الْإِنْسَانُ بِتَنَاوُلِ أَغْذِيَةٍ حَيَوَانِيَّةٍ لِيَكُونَ غِذَاؤُهُ مُتَنَوِّعًا.\n←.........................",
+      "figureDesc": "سطران منقطان بسهم للتصحيح، ومربعان للمعيار (مع 3). النقطة: 1 لكل جملة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p046_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُكْمِلُ لَوْحَةَ النَّتَائِجِ (أُرَتِّبُ الْمُشَارِكِينَ حَسَبَ السَّنَدِ).",
+      "body": "السَّنَدُ 3 : فِي حِصَّةِ التَّرْبِيَةِ الْبَدَنِيَّةِ شَارَكَ مُحَمَّدٌ فِي سِبَاقٍ فَكَانَتِ النَّتَائِجُ كَالْآتِي :\n• وَلِيدٌ بَعْدَ مُحَمَّدٍ\n• أَنْوَرُ قَبْلَ مُحَمَّدٍ\n• سَلِيمٌ بَعْدَ كَرِيمٍ\n• أَنْوَرُ بَعْدَ سَلِيمٍ\n• مَرْيَمُ فِي الْأَخِيرِ\n• سَوَارُ قَبْلَ مَرْيَمَ\nلَوْحَةُ النَّتَائِجِ : • كَرِيمٌ فِي الْمَرْتَبَةِ الْأُولَى ثم خمسة أسطر منقطة فارغة",
+      "figureDesc": "لوحة النتائج: الأولى معطاة (كريم) وتحتها ستة أسطر منقطة بنقاط للتعبئة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p046_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Éveil scientifique (إيقاظ علمي)",
+  "topicReason": "La page est un test de fin de trimestre en éveil scientifique (alimentation, repas, ordre des résultats) qui n'a pas de chapitre correspondant dans la liste, laquelle ne contient que l'arabe et les mathématiques.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Alimentation et petit-déjeuner équilibré",
+    "skill": "Classer les aliments selon leur origine, justifier l'importance du petit-déjeuner et d'une alimentation variée, puis ordonner des participants d'après des indices.",
+    "pageType": "exam",
+    "formats": [
+      "schema_tableau",
+      "vrai_faux",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "alimentation",
+      "origine des aliments",
+      "petit-déjeuner",
+      "repas quotidiens",
+      "diversité alimentaire",
+      "classement"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une courte histoire du quotidien (le matin avant l'école) sert de support à trois tâches : classer des aliments dans un tableau, juger une attitude en justifiant (vrai/faux), corriger des affirmations erronées. Un exercice de logique ordonne les coureurs d'une course à partir d'indices « avant/après », ce qui relie l'éveil scientifique à l'éducation physique.",
+    "themeGroup": "Alimentation équilibrée"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

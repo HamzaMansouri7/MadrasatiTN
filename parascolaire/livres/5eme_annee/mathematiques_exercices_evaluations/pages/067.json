@@ -1,0 +1,162 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 67,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 36: أرسم كلاً من المستطيل والمربع استناداً إلى القطرين ومحاور التناظر (ملاحظة: الصفحة تتناول الرياضيات رغم تصنيفها كلغة عربية)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "36",
+      "instruction": "الدَّرس 36: أرسم كلاً من المستطيل والمربع استنادًا إلى القطرين ومحاور التناظر",
+      "body": "",
+      "figureDesc": "عنوان الدرس في إطار زخرفي، مع الرقم 5 (السنة) في أعلى اليسار",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p067_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أجب بــ \" نعم \" أو \" لا \"",
+      "body": "- المستقيم (ص) محور تناظر في أ ب ج د.\n- المستقيم (س) محور تناظر في أ ب ج د.\n- المستقيم (أ ج) محور تناظر في أ ب ج د.\n- المستقيم (ب د) محور تناظر في أ ب ج د.",
+      "figureDesc": "مستطيل أ ب ج د (أ أعلى اليمين، ب أعلى اليسار، ج أسفل اليسار، د أسفل اليمين) مع قطريه ومستقيمين: (ص) عمودي و(س) أفقي يمران بمركزه. أمام كل جملة خانة للإجابة.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p067_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "اِرْسُمْ دَائِرَةً مَرْكَزُهَا \" م \" وَقِيسُ قُطْرِهَا 4 صم.",
+      "body": "* اِرْسُمْ قُطْرَيْنِ مُتَعَامِدَيْنِ لِهَذِهِ الدَّائِرَةِ يَتَقَاطَعَانِ فِي \" م \".\n- يَقْطَعُ القُطْرَانِ الدَّائِرَةَ فِي النِّقَاطِ أ، ب، ج، د عَلَى التَّوَالِي. اِرْبِطْ بَيْنَهَا.\n* مَا نَوْعُ الرُّبَاعِيِّ الَّذِي تَحَصَّلْتَ عَلَيْهِ؟ ...........\n* مَاذَا يُمَثِّلُ القُطْرَانِ بِالنِّسْبَةِ لِهَذَا الرُّبَاعِيِّ؟ ...........",
+      "figureDesc": "مساحة فارغة للرسم وأسطر منقطة للإجابة",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p067_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اِعْتَمِدِ الرَّسْمَ الجَانِبِيَّ لِرَسْمِ رُبَاعِيَيْنِ مُخْتَلِفَيْنِ. مَاذَا تُلَاحِظُ؟",
+      "body": "أسطر منقطة للإجابة",
+      "figureDesc": "مستقيمان متعامدان: (ص س) أفقي و(د ع) عمودي، مع علامة الزاوية القائمة عند التقاطع",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p067_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَتِمَّ كُلَّ رَسْمٍ لِتَحْصُلَ عَلَى مُرَبَّعٍ أَوْ مُسْتَطِيلٍ.",
+      "body": "",
+      "figureDesc": "رسمان: الأول قطعة أ ب أفقية مع عمودي عليها بزاوية قائمة؛ الثاني ضلعان مائل وعمودي يلتقيان في الأعلى مع علامة زاوية",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p067_i5",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ملاحظة: اعتمد البركار في الرسم.",
+      "body": "ملاحظة: اعتمد البركار في الرسم.",
+      "figureDesc": "رقم الصفحة 68 في أسفل الصفحة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p067_i6",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "ar-5-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur le tracé du rectangle et du carré à partir des diagonales et des axes de symétrie (polygones, quadrilatères), ce qui correspond le mieux à la Période 3 (polygones, parallélogramme), même si le cercle est utilisé pour la construction.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Rectangle et carré : diagonales et axes de symétrie",
+    "skill": "Construire un rectangle ou un carré à partir de ses diagonales et de ses axes de symétrie, en utilisant le compas.",
+    "pageType": "exercise",
+    "formats": [
+      "vrai_faux",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "rectangle",
+      "carré",
+      "diagonales",
+      "axes de symétrie",
+      "cercle",
+      "compas"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : tracer deux diamètres perpendiculaires dans un cercle pour obtenir un carré, identifier les axes de symétrie d'un quadrilatère par oui/non, et compléter des figures partielles pour obtenir un carré ou un rectangle.",
+    "themeGroup": "Quadrilatères, symétrie et repérage"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2: « وَقِيسُ قُطْرِهَا » — l'image montre bien « وَقِيسُ » (graphie du manuel), mais la forme correcte serait « وَقِيسُ » ; transcription conforme à l'image, aucune erreur réelle."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Titre de la leçon 36, exercice 1 et note finale sans tashkeel : le titre est partiellement voyellé dans l'image (« الدَّرس », « أرسم »), le reste du texte non voyellé est correct."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Ligne pointillée de réponse après « مَا نَوْعُ الرُّبَاعِيِّ » et cases de réponse « نعم/لا » de l'exercice 1 : transcrits seulement partiellement (pas de mention des cases)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les figures (rectangle avec axes (س) (ص) et diagonales, axes perpendiculaires, segment [أب], angle) ne sont pas décrites ; numéro de page 68 et niveau « 5 » omis."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 3 : « أسطر منقطة للإجابة » est une description ajoutée, pas du texte de l'image."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

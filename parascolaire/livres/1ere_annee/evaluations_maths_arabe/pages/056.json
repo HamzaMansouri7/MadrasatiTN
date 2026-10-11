@@ -1,0 +1,358 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 56,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "تفكيك الأعداد وتركيبها ومقارنتها وحل مسائل جمعية في نطاق الأعداد إلى 9 واستعمال النقود",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "مخطط لتفكيك العدد 9: دائرة بها العدد 9 مرتبطة بحيز بيضاوي كبير يضم مجموعتين؛ المجموعة اليسرى بها 2 بطاقات صفراء والمجموعة اليمنى بها 5 بطاقات صفراء، مع دائرتين فارغتين لكتابة العددين.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p056_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أُقَارِنُ بِاسْتِعْمَالِ > ، < ، =",
+      "body": "• 4 + 4 ..... 5 + 3\n• 4 + 5 ..... 1 + 6\n• 2 + 3 ..... 0 + 9\n• 2 + 5 ..... 4 + 3\n• 4 + 2 ..... 1 + 8\n• 7 + 1 ..... 3 + 5",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p056_i2"
+    },
+    {
+      "kind": "section_header",
+      "number": "",
+      "instruction": "أُنْجِزُ وَأَتَمَيَّزُ :",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p056_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "• أَرَادَ مُنِيرٌ أَنْ يُكَوِّنَ مَبْلَغَ 9 مي فَقَطْ بِاسْتِعْمَالِ النُّقُودِ الْمُصَوَّرَةِ. أُسَاعِدُهُ عَلَى ذَلِكَ .",
+      "body": "",
+      "figureDesc": "حيز كبير بزوايا مستديرة يمثل تفكيك المبلغ 9 مي (دائرة « 9 مي » على اليسار) إلى مجموعتين: المجموعة اليسرى بها دائرتان لقطعتين نقديتين (.... مي، .... مي) والمجموعة اليمنى بها دائرة لقطعة نقدية واحدة (.... مي)، مع دائرتين خضراوين فارغتين لكتابة العددين.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p056_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "• تَمْلِكُ رَبَابُ 5 د أَعْطَاهَا أَبُوهَا 2 د وَأُمُّهَا 3 د .\n• أَطْرَحُ السُّؤَالَ وَأُجِيبُ.",
+      "body": "السُّؤَالُ : ........................................................\nالْعَمَلِيَّةُ : ........................................................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p056_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "• اِشْتَرَتْ رَبَابُ لُعْبَةً فَأَرْجَعَ لَهَا التَّاجِرُ 4 د .\n• أَطْرَحُ السُّؤَالَ وَأُجِيبُ.",
+      "body": "السُّؤَالُ : ........................................................\nالْعَمَلِيَّةُ : ........................................................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "evaluations_maths_arabe_p056_i6"
+    },
+    {
+      "kind": "footer",
+      "number": "80",
+      "instruction": "",
+      "body": "الرياضيات\nمدرستي تونس - الثلاثي الثاني (السنة 1)\n80",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "evaluations_maths_arabe_p056_i7"
+    }
+  ],
+  "topicId": "math-1-p2",
+  "topicTitle": "Période 2 : Nombres de 6 à 9, comparaison, ordre et lignes",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p3",
+    "confidence": 0.53
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de comparaison de sommes dans le domaine des nombres jusqu'à 9, de composition de montants avec la monnaie (millimes, dinars) et de problèmes additifs; cela relève surtout de la Période 2 (nombres 6 à 9, comparaison), mais la monnaie et les problèmes évoquent aussi la Période 6 ou la Période 3 (addition), d'où une certaine ambiguïté.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Comparaison de sommes et monnaie",
+    "skill": "Comparer des sommes de deux nombres jusqu'à 9, former un montant avec des pièces et formuler une question pour un problème additif ou soustractif.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "comparaison",
+      "addition",
+      "monnaie",
+      "dinar et millime",
+      "problème à compléter"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : comparer des sommes avec >, < ou = sans les calculer en entier, composer un montant avec des pièces illustrées, et inventer la question d'une situation d'argent de poche (gain puis achat avec rendu de monnaie).",
+    "themeGroup": "Calculs avec la monnaie"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre du bandeau rouge « أَنْجِزُ وَأَتَمَيَّزُ : » est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le premier bloc est vide alors que l'image montre un schéma de 9 avec des cartes jaunes (2 dans une bulle, 5 dans l'autre). Les nombres de cartes ne sont pas décrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le schéma des pièces (mي) sous l'exercice de Mounir n'est pas transcrit : 9 مي, 1 pièce dans une bulle, 2 dans l'autre."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page (« 80 », « الرياضيات », « جسر النجاح - الثلاثي الثاني (السنة 1) ») est omis."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Dans l'énoncé de Mounir, « أُسَاعِدُهُ » est transcrit sans le tashkeel de l'image. Plusieurs mots de l'image portent un tashkeel que la transcription modifie légèrement, par exemple « وَأُمُّهَا »."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les colonnes de l'exercice 7 sont lues dans un ordre discutable. La colonne de droite (4+4, 4+5, 2+3) est donnée d'abord, ce qui est correct en lecture arabe, mais les deux colonnes sont fusionnées sans séparation."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أَعْطَاهَا أَبُوهَا 2 د » est correct. En revanche, les puces (•) des exercices de comparaison ne sont pas reproduites."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre du bandeau rouge « أُنْجِزُ وَأَتَمَيَّزُ : » est bien absent de la transcription. Il sépare la partie comparaison de la partie problèmes."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est omis : « 80 », « الرياضيات » et « جسر النجاح - الثلاثي الثاني (السنة 1) »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les puces (•) des lignes de comparaison de l'exercice 7, ainsi que celles des énoncés de Rabab et des consignes « أَطْرَحُ السُّؤَالَ وَأُجِيبُ », ne sont pas reproduites."
+      },
+      {
+        "type": "figure",
+        "severity": "minor",
+        "detail": "Les descriptions des deux schémas sont présentes, contrairement à ce que dit le contrôle rapide, mais elles sont incomplètes. Le premier schéma ne mentionne pas le cercle « 9 » ni les cartes jaunes. Le second ne précise pas la place des groupes (1 pièce à droite, 2 pièces à gauche) ni le cercle « 9 مي »."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "مخطط لتفكيك العدد 9: دائرة بها العدد 9 مرتبطة بحيز بيضاوي كبير يضم مجموعتين؛ المجموعة اليسرى بها 2 بطاقات صفراء والمجموعة اليمنى بها 5 بطاقات صفراء، مع دائرتين فارغتين لكتابة العددين.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p056_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أُقَارِنُ بِاسْتِعْمَالِ > ، < ، =",
+      "body": "• 4 + 4 ..... 5 + 3\n• 4 + 5 ..... 1 + 6\n• 2 + 3 ..... 0 + 9\n• 2 + 5 ..... 4 + 3\n• 4 + 2 ..... 1 + 8\n• 7 + 1 ..... 3 + 5",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p056_i2"
+    },
+    {
+      "kind": "section_header",
+      "number": "",
+      "instruction": "أُنْجِزُ وَأَتَمَيَّزُ :",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p056_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "• أَرَادَ مُنِيرٌ أَنْ يُكَوِّنَ مَبْلَغَ 9 مي فَقَطْ بِاسْتِعْمَالِ النُّقُودِ الْمُصَوَّرَةِ. أُسَاعِدُهُ عَلَى ذَلِكَ .",
+      "body": "",
+      "figureDesc": "حيز كبير بزوايا مستديرة يمثل تفكيك المبلغ 9 مي (دائرة « 9 مي » على اليسار) إلى مجموعتين: المجموعة اليسرى بها دائرتان لقطعتين نقديتين (.... مي، .... مي) والمجموعة اليمنى بها دائرة لقطعة نقدية واحدة (.... مي)، مع دائرتين خضراوين فارغتين لكتابة العددين.",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p056_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "• تَمْلِكُ رَبَابُ 5 د أَعْطَاهَا أَبُوهَا 2 د وَأُمُّهَا 3 د .\n• أَطْرَحُ السُّؤَالَ وَأُجِيبُ.",
+      "body": "السُّؤَالُ : ........................................................\nالْعَمَلِيَّةُ : ........................................................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p056_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "• اِشْتَرَتْ رَبَابُ لُعْبَةً فَأَرْجَعَ لَهَا التَّاجِرُ 4 د .\n• أَطْرَحُ السُّؤَالَ وَأُجِيبُ.",
+      "body": "السُّؤَالُ : ........................................................\nالْعَمَلِيَّةُ : ........................................................",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "jisr_ennajah_1ere_evaluations_p056_i6"
+    },
+    {
+      "kind": "footer",
+      "number": "80",
+      "instruction": "",
+      "body": "الرياضيات\nجسر النجاح - الثلاثي الثاني (السنة 1)\n80",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "jisr_ennajah_1ere_evaluations_p056_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "",
+      "body": "",
+      "figureDesc": "مخطط لتفكيك العدد 9: حيز بيضاوي كبير يحتوي مجموعتين؛ الأولى بها رسم لقطعتين والثانية بها رسم لخمس قطع، مع دوائر لكتابة الأعداد وتفكيك العدد 9.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_1ere_evaluations_p056_i1",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أُقَارِنُ بِاسْتِعْمَالِ > ، < ، =",
+      "body": "4 + 4 ..... 5 + 3\n4 + 5 ..... 1 + 6\n2 + 3 ..... 0 + 9\n2 + 5 ..... 4 + 3\n4 + 2 ..... 1 + 8\n7 + 1 ..... 3 + 5",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p056_i2",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَرَادَ مُنِيرٌ أَنْ يُكَوِّنَ مَبْلَغَ 9 مي فَقَطْ بِاسْتِعْمَالِ النُّقُودِ الْمُصَوَّرَةِ. أُسَاعِدُهُ عَلَى ذَلِكَ .",
+      "body": "",
+      "figureDesc": "حيز كبير يمثل تفكيك 9 مي إلى مجموعتين فرعيتين: الأولى بها دائرتان لقطعتين نقديتين (... مي، ... مي) والثانية بها دائرة لقطعة نقدية واحدة (... مي) ودوائر فارغة لكتابة الأعداد.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "jisr_ennajah_1ere_evaluations_p056_i3",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "تَمْلِكُ رَبَابُ 5 د أَعْطَاهَا أَبُوهَا 2 د وَأُمُّهَا 3 د .\n• أَطْرَحُ السُّؤَالَ وَأُجِيبُ.",
+      "body": "السُّؤَالُ : ........................................................\nالْعَمَلِيَّةُ : ........................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p056_i4",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "اِشْتَرَتْ رَبَابُ لُعْبَةً فَأَرْجَعَ لَهَا التَّاجِرُ 4 د .\n• أَطْرَحُ السُّؤَالَ وَأُجِيبُ.",
+      "body": "السُّؤَالُ : ........................................................\nالْعَمَلِيَّةُ : ........................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p056_i5",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

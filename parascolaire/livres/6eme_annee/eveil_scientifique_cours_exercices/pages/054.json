@@ -1,0 +1,407 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 54,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "Corrigé des « Éveils scientifiques » (إيقاظ علمي) : la reproduction des plantes à fleurs (pollinisation, fécondation, fleur, graine, fruit) et l'alimentation équilibrée",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "61",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "يحتاج الطفل إلى وجبة غذائية تتوفر فيها خاصة الزلاليات. أو يحتاج الشيخ إلى وجبة غذائية تتوفر فيها خاصة الخضروات. الزلاليات (البروتينات) ضرورية لنمو الجسم. يحتاج الجسم في فصل الصيف إلى الماء والأملاح.",
+      "figureDesc": "",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p054_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "62",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "تـ1: تصبح الزهرة في النهاية ثمرة. تـ2: تتحول المدقة عند نموها إلى ثمرة. تـ3: تتحول البويضات إلى بذور. تـ4: الأعضاء التي تبقى بعد الإخصاب: المبيض والبذور.",
+      "figureDesc": "Schéma d'une fleur en coupe avec légendes : ميسم، قلم، سداة، بتلة، مبيض، سبلة",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p054_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "63",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "عندما تتم عملية لقاح الزهرة، تتحول البويضات إلى بذور ويتحول المبيض إلى ثمرة في حين تذبل البتلات والأسدية وتجف وتسقط. تتكون السداة من خيط ومتبر. تتكون المدقة من مبيض وقلم وميسم. يحتوي المبيض على بويضات. يكون مجموع السبلات الكأس. يكون مجموع البتلات التويج. الأعضاء الواقية: التويج، الكأس.",
+      "figureDesc": "",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p054_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "64",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "أ) أستنتج أن المدقة لا تتحول إلى ثمرة بها بذور إلا إذا تم نقل حبات الطلع من المتبر إلى الميسم في نفس النوع من الأزهار. ب) في عملية الإخصاب تتحول البويضة إلى بذرة والمبيض إلى ثمرة. تتم عملية التأبير عندما تنتقل حبوب الطلع من المتبر إلى الميسم. تتم عملية الإخصاب عندما تتحد حبوب الطلع بالبويضات. لا: الأمطار، التراب، الحرارة، الضوء. نعم: الرياح، الإنسان، الحشرات.",
+      "figureDesc": "",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p054_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "65",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "أ) نوع التأبير في التجربة الأولى خلطي. ب) لا تتم عملية الإخصاب لفقدان مجموعة الأسدية (الأعضاء الذكرية في الزهرة). ج) الكأس والتويج من الأعضاء الواقية للزهرة فلا تؤثر في تأبير الزهرة وإخصابها لتوفر المدقة (الأعضاء الأنثوية) والأسدية (الأعضاء الذكرية). انتقال حبوب الطلع من متبر زهرة إلى ميسم زهرة أخرى من نفس النوع. انتقال حبوب الطلع من متبر زهرة إلى ميسم نفس الزهرة. اتحاد حبوب الطلع بالبويضة. الإخصاب. التأبير الذاتي. التأبير الخلطي.",
+      "figureDesc": "Exercice d'appariement : trois phrases à gauche reliées par des traits croisés aux termes الإخصاب / التأبير الذاتي / التأبير الخلطي",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p054_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "66",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "ب) تكون كل بويضة مخصبة داخل البذرة جنينا داخل البذرة. ج) البذرة عنصر تكاثر. تكون كل بويضة مخصبة الجنين داخل البذرة. إثر تأبير زهرة الجلبان وإخصابها يتحول المبيض إلى قرن والبويضات إلى بذور.",
+      "figureDesc": "Schéma du cycle de vie du pois avec les légendes : مرحلة الإخصاب (أ)، مرحلة الإزهار (ب)، مرحلة الإنبات (ج)، تحول الزهرات إلى قرون، قرن = ثمرة، بذور جديدة، بذرة",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p054_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "67",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "1 = الإنبات، 2 = نمو النبتة، 3 = نبتة مورقة، 4 = زهرة، 5 = قرن، 6 = بذور.",
+      "figureDesc": "Schéma circulaire à compléter avec des cases : زهرة، ثمرة، شجرة = نبتة، بذرة",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p054_i7"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u4",
+  "topicTitle": "Unité 4 : Reproduction florale et protection des milieux aquatiques",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "sci-6-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u4",
+    "confidence": 0.45
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est un corrigé d'Éveil scientifique sur la reproduction des plantes à fleurs (pollinisation, fécondation, transformation de la fleur en fruit et des ovules en graines, cycle de vie), ce qui correspond à l'Unité 4 « Reproduction florale et protection des milieux aquatiques », malgré une courte mention de l'alimentation équilibrée à la page 61.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Reproduction des plantes à fleurs",
+    "skill": "Expliquer le passage de la fleur au fruit et à la graine par la pollinisation et la fécondation, et relier alimentation et besoins du corps.",
+    "pageType": "correction",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "vrai_faux",
+      "autre"
+    ],
+    "keywords": [
+      "pollinisation",
+      "fécondation",
+      "fleur",
+      "graine",
+      "fruit",
+      "alimentation équilibrée"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : schéma de fleur à légender, cycle de vie du pois à ordonner (germination, floraison, fécondation), expériences de pollinisation avec organes retirés, et associations entre besoins alimentaires et profils (enfant, personne âgée, été).",
+    "themeGroup": "Chaînes alimentaires et reproduction des plantes"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Bloc 63: «تلقاح» au lieu de «لقاح» (عندما تتم عملية لقاح الزهرة)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 63: «مئبر» au lieu de «متبر/مِتْبَر» selon l'image (le mot lu est «متبر»); incohérence répétée aux blocs 63, 64, 65"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Bloc 63: la phrase «ويتحول المبيض إلى ثمرة» est transcrite, mais les puces «تتكون المدقة...» sont fusionnées sans la mention de la question numérotée (ب/ج); marqueurs d'exercices (أ، ب، ج) partiellement omis"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Bloc 64: «أستنتج أن المدقة لا تتحول إلى ثمرة بها بذور» — l'image porte «أستنتج أنّ المدقة لا تتحول إلى ثمرة بها بذور إلا إذا تم نقل حبات الطلع» ; «بها» ok mais «حبات» vs «حبوب» incohérent; OK mineur"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 61: «الشيخ» et «الخضروات» corrects, mais «المماء» non; «إيقاظ علمي» : l'image affiche «إيقاظ علمي السنة السادسة الصفحة» sans le numéro répété dans le texte (le numéro est dans un badge) — numéro ajouté dans le texte"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Toute la page: tashkeel visible (شدة، فتحة، ضمة) absent de la transcription, ex. «الزلاليات»، «التأبير»، «خلطيّ»"
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Les champs «réponse:» (ex. bloc 61, 62, 65, 67) sont des reformulations/ajouts non présents dans l'image; en 65 les liens du tracé de correspondance sont inventés/interprétés (le croisement des traits n'est pas clairement ce qui est indiqué)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 66: «قرن = ثمرة» et «بذور جديدة» ok, mais «تحول الزهرات إلى قرون» et la phrase «تكون كل بويضة مخصبة داخل البذرة جنينا» dupliquée/mal restituée; «أ) البذرة عنصر تكاثر» est marqué «ج)»"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 65: «المصطلحات: الإخصاب، التأبير الذاتي، التأبير الخلطي» listés dans un ordre différent de celui de l'image (الإخصاب، التأبير الذاتي، التأبير الخلطي — correct) mais présentés comme ajout; le bloc 67 exercice 2 n'indique pas la disposition du cycle"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Bloc 63: «تلقاح الزهرة» est faux. L'image porte «لقاح الزهرة» (عندما تتم عملية لقاح الزهرة)."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Blocs 63, 64 et 65: «مئبر» est faux. L'image porte «متبر» (تتكون السداة من خيط ومتبر ؛ من المتبر إلى الميسم ؛ من متبر زهرة إلى ميسم ...)."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Les mentions «(تمرين 5: ...)» dans les blocs 62, 65 et 66 sont inventées. Les numéros d'exercices ne sont visibles que dans de petits badges, illisibles pour la plupart. Le «تمرين 2» du bloc 67 est lui aussi une interprétation du badge."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les champs answer sont des reformulations absentes de l'image (blocs 61, 62, 65, 67) ou le texte de remplissage «كما في النص» (blocs 63, 64, 66). La page est elle-même un corrigé, donc answer doit rester vide."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "Le numéro de page (61 à 67) est lu dans le badge et non dans le texte de l'en-tête. L'instruction devrait être «إيقاظ علمي السنة السادسة الصفحة :», avec le numéro dans le champ number."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel partiellement visible (ex. خلطيّ، تتمّ، حبّات، تكوّن، خاصةً) est absent de la transcription. Le scan est trop flou pour le restituer de façon fiable partout."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Bloc 65: la ligne «المصطلحات: ...» est ajoutée. L'image montre seulement deux colonnes de puces reliées par des traits. Les phrases et les termes sont corrects, et l'appariement donné est cohérent avec le croisement des traits."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "61",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "يحتاج الطفل إلى وجبة غذائية تتوفر فيها خاصة الزلاليات. أو يحتاج الشيخ إلى وجبة غذائية تتوفر فيها خاصة الخضروات. الزلاليات (البروتينات) ضرورية لنمو الجسم. يحتاج الجسم في فصل الصيف إلى الماء والأملاح.",
+      "figureDesc": "",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "62",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "تـ1: تصبح الزهرة في النهاية ثمرة. تـ2: تتحول المدقة عند نموها إلى ثمرة. تـ3: تتحول البويضات إلى بذور. تـ4: الأعضاء التي تبقى بعد الإخصاب: المبيض والبذور.",
+      "figureDesc": "Schéma d'une fleur en coupe avec légendes : ميسم، قلم، سداة، بتلة، مبيض، سبلة",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "63",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "عندما تتم عملية لقاح الزهرة، تتحول البويضات إلى بذور ويتحول المبيض إلى ثمرة في حين تذبل البتلات والأسدية وتجف وتسقط. تتكون السداة من خيط ومتبر. تتكون المدقة من مبيض وقلم وميسم. يحتوي المبيض على بويضات. يكون مجموع السبلات الكأس. يكون مجموع البتلات التويج. الأعضاء الواقية: التويج، الكأس.",
+      "figureDesc": "",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "64",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "أ) أستنتج أن المدقة لا تتحول إلى ثمرة بها بذور إلا إذا تم نقل حبات الطلع من المتبر إلى الميسم في نفس النوع من الأزهار. ب) في عملية الإخصاب تتحول البويضة إلى بذرة والمبيض إلى ثمرة. تتم عملية التأبير عندما تنتقل حبوب الطلع من المتبر إلى الميسم. تتم عملية الإخصاب عندما تتحد حبوب الطلع بالبويضات. لا: الأمطار، التراب، الحرارة، الضوء. نعم: الرياح، الإنسان، الحشرات.",
+      "figureDesc": "",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "65",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "أ) نوع التأبير في التجربة الأولى خلطي. ب) لا تتم عملية الإخصاب لفقدان مجموعة الأسدية (الأعضاء الذكرية في الزهرة). ج) الكأس والتويج من الأعضاء الواقية للزهرة فلا تؤثر في تأبير الزهرة وإخصابها لتوفر المدقة (الأعضاء الأنثوية) والأسدية (الأعضاء الذكرية). انتقال حبوب الطلع من متبر زهرة إلى ميسم زهرة أخرى من نفس النوع. انتقال حبوب الطلع من متبر زهرة إلى ميسم نفس الزهرة. اتحاد حبوب الطلع بالبويضة. الإخصاب. التأبير الذاتي. التأبير الخلطي.",
+      "figureDesc": "Exercice d'appariement : trois phrases à gauche reliées par des traits croisés aux termes الإخصاب / التأبير الذاتي / التأبير الخلطي",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "66",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "ب) تكون كل بويضة مخصبة داخل البذرة جنينا داخل البذرة. ج) البذرة عنصر تكاثر. تكون كل بويضة مخصبة الجنين داخل البذرة. إثر تأبير زهرة الجلبان وإخصابها يتحول المبيض إلى قرن والبويضات إلى بذور.",
+      "figureDesc": "Schéma du cycle de vie du pois avec les légendes : مرحلة الإخصاب (أ)، مرحلة الإزهار (ب)، مرحلة الإنبات (ج)، تحول الزهرات إلى قرون، قرن = ثمرة، بذور جديدة، بذرة",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "67",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "1 = الإنبات، 2 = نمو النبتة، 3 = نبتة مورقة، 4 = زهرة، 5 = قرن، 6 = بذور.",
+      "figureDesc": "Schéma circulaire à compléter avec des cases : زهرة، ثمرة، شجرة = نبتة، بذرة",
+      "answer": "",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "61",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 61",
+      "body": "يحتاج الطفل إلى وجبة غذائية تتوفر فيها خاصة الزلاليات. أو يحتاج الشيخ إلى وجبة غذائية تتوفر فيها خاصة الخضروات. الزلاليات (البروتينات) ضرورية لنمو الجسم. يحتاج الجسم في فصل الصيف إلى الماء والأملاح.",
+      "figureDesc": "",
+      "answer": "يحتاج الطفل إلى وجبة غذائية تتوفر فيها خاصة الزلاليات؛ يحتاج الشيخ إلى وجبة تتوفر فيها خاصة الخضروات؛ الزلاليات (البروتينات) ضرورية لنمو الجسم؛ يحتاج الجسم في فصل الصيف إلى الماء والأملاح.",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i1",
+      "topicId": "sci-6-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "62",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 62",
+      "body": "تـ1: تصبح الزهرة في النهاية ثمرة. تـ2: تتحول المدقة عند نموها إلى ثمرة. تـ3: تتحول البويضات إلى بذور. تـ4: الأعضاء التي تبقى بعد الإخصاب: المبيض والبذور. (تمرين 5: شكل زهرة بأسماء الأجزاء)",
+      "figureDesc": "Schéma d'une fleur en coupe avec légendes : ميسم، قلم، سداة، بتلة، مبيض، سبلة",
+      "answer": "1: تصبح الزهرة في النهاية ثمرة. 2: تتحول المدقة عند نموها إلى ثمرة. 3: تتحول البويضات إلى بذور. 4: المبيض والبذور.",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i2",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "63",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 63",
+      "body": "عندما تتم عملية تلقاح الزهرة، تتحول البويضات إلى بذور ويتحول المبيض إلى ثمرة في حين تذبل البتلات والأسدية وتجف وتسقط. تتكون السداة من خيط ومئبر. تتكون المدقة من مبيض وقلم وميسم. يحتوي المبيض على بويضات. يكون مجموع السبلات الكأس. يكون مجموع البتلات التويج. الأعضاء الواقية: التويج، الكأس.",
+      "figureDesc": "",
+      "answer": "كما في النص.",
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i3",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "64",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 64",
+      "body": "أ) أستنتج أن المدقة لا تتحول إلى ثمرة بها بذور إلا إذا تم نقل حبات الطلع من المئبر إلى الميسم في نفس النوع من الأزهار. ب) في عملية الإخصاب تتحول البويضة إلى بذرة والمبيض إلى ثمرة. تتم عملية التأبير عندما تنتقل حبوب الطلع من المئبر إلى الميسم. تتم عملية الإخصاب عندما تتحد حبوب الطلع بالبويضات. لا: الأمطار، التراب، الحرارة، الضوء. نعم: الرياح، الإنسان، الحشرات.",
+      "figureDesc": "",
+      "answer": "كما في النص.",
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i4",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "65",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 65",
+      "body": "أ) نوع التأبير في التجربة الأولى خلطي. ب) لا تتم عملية الإخصاب لفقدان مجموعة الأسدية (الأعضاء الذكرية في الزهرة). ج) الكأس والتويج من الأعضاء الواقية للزهرة فلا تؤثر في تأبير الزهرة وإخصابها لتوفر المدقة (الأعضاء الأنثوية) والأسدية (الأعضاء الذكرية). (تمرين 5: وصل) انتقال حبوب الطلع من مئبر زهرة إلى ميسم زهرة أخرى من نفس النوع؛ انتقال حبوب الطلع من مئبر زهرة إلى ميسم نفس الزهرة؛ اتحاد حبوب الطلع بالبويضة. المصطلحات: الإخصاب، التأبير الذاتي، التأبير الخلطي.",
+      "figureDesc": "Exercice d'appariement par flèches croisées entre trois descriptions et les termes الإخصاب / التأبير الذاتي / التأبير الخلطي",
+      "answer": "انتقال حبوب الطلع من مئبر زهرة إلى ميسم زهرة أخرى من نفس النوع = التأبير الخلطي؛ انتقال حبوب الطلع إلى ميسم نفس الزهرة = التأبير الذاتي؛ اتحاد حبوب الطلع بالبويضة = الإخصاب.",
+      "confidence": 0.65,
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i5",
+      "topicId": "sci-6-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "66",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 66",
+      "body": "(تمرين 5: دورة حياة نبات الجلبان) مرحلة الإخصاب (أ)، مرحلة الإزهار (ب)، مرحلة الإنبات (ج). تتحول الزهرات إلى قرون؛ قرن = ثمرة؛ بذور جديدة؛ بذرة. ب) تكون كل بويضة مخصبة داخل البذرة جنينا داخل البذرة. ج) البذرة عنصر تكاثر. تكون كل بويضة مخصبة الجنين داخل البذرة. إثر تأبير زهرة الجلبان وإخصابها يتحول المبيض إلى قرن والبويضات إلى بذور.",
+      "figureDesc": "Schéma du cycle de vie du pois : fécondation, floraison, germination, gousse (قرن), graines, jeune plante",
+      "answer": "كما في النص.",
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i6",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "67",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 67",
+      "body": "1 = الإنبات، 2 = نمو النبتة، 3 = نبتة مورقة، 4 = زهرة، 5 = قرن، 6 = بذور. (تمرين 2: دورة حياة نبات: زهرة، ثمرة، شجرة = نبتة، بذرة)",
+      "figureDesc": "Schéma circulaire à compléter avec quatre cases : زهرة، ثمرة، شجرة = نبتة، بذرة",
+      "answer": "1 الإنبات، 2 نمو النبتة، 3 نبتة مورقة، 4 زهرة، 5 قرن، 6 بذور",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p054_i7",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

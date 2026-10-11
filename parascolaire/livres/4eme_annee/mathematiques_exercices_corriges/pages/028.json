@@ -1,0 +1,120 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 28,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 7 – الأعداد من 1000 إلى 9999 (2): مقارنة وترتيب – الطرح",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اُكْتُبْ كُلَّ عَدَدٍ مِمَّا يَلِي عَلَى الْمُسْتَقِيمِ الْمُنَاسِبِ وَأَمَامَ التَّدْرِيجَةِ الْمُنَاسِبَةِ :",
+      "body": "5 590 ، 5 650 ، 5 006 ، 5 800",
+      "figureDesc": "أربع مستقيمات مدرّجة. الأول: 5000 و5002 في الأعلى و5012 في الأسفل. الثاني: 5600 في الأعلى و6100 و6200 في الأسفل. الثالث: 5588 في الأعلى و5598 و5600 في الأسفل. الرابع: 5400 و5500 في الأعلى و5700 في الأسفل.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p028_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أ) ضَعِ الرَّقْمَ 8 بَيْنَ رَقْمَيْنِ مِنْ أَرْقَامِ العَدَد 342 لتحصل على أكبر عدد ممكن.",
+      "body": "ب) ضعِ الرَّقْمَ 0 بين رَقْمَيْنِ من أرقام العدد 342 لتحصل على أكبر عدد ممكن.\nج) ضعِ الرَّقْمَ 3 بين رَقْمَيْنِ من أرقام العدد 342 لتحصل على أصغر عدد ممكن.\nد) رتّب هذه الأعداد التي تحصّلت عليها تنازليًا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p028_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "وَزَّعَ جَدٌّ عَلَى أَحْفَادِهِ الثَّلَاثَةِ مَبْلَغًا مِنَ المَالِ فَأَعْطَى الأَوَّلَ ضِعْفَ مَا أَعْطَاهُ الثَّانِي وَأَعْطَى الثَّالِثَ أَقَلَّ مِمَّا أَعْطَى الأَوَّلَ بِنِصْفِ دِينَار.",
+      "body": "إذا كان أعطى الحفيدَ الثّاني 2 500 مي فما هو المبلغ الموزَّع ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p028_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ما هو ثمن علبة الحليب التي كانت تعتزم شراءها ؟",
+      "body": "توجّهت سيّدة إلى السّوق ومعها ورقة ماليّة من فئة الخمسة دنانير. فصرفت ما يلي : 1 570 مي عند الخضّار و 3 080 مي عند بائع السّمك، ولشراء علبة حليب لاحظت أنّه ينقصها 200 مليم.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p028_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "اكتب سؤالين لهذه المسألة وأجب عنهما.",
+      "body": "أَرَادَتْ آمنة شراء قارورة عطر لأُمِّهَا بِمُنَاسَبَةِ عِيدِ مِيلَادِهَا. أَخَذَتْ كُلَّ مَا وَفَّرَتْهُ فِي حَصَّالَتِهَا مِنْ مَالٍ وَأَعْطَاهَا أَبُوهَا 2 500 د وَزَادَتْهَا جَدَّتُهَا ضِعْفَ مَا أَعْطَاهَا أَبُوهَا وَبِذَلِكَ تَمَكَّنَتْ مِنْ جَمْعِ 9 800 مي. بَقِيَ لَهَا بَعْدَ شِرَاءِ قَارُورَةِ العِطْرِ نِصْفُ دِينَار.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p028_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.42857142857142855,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.54
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les nombres de 1000 à 9999 (comparaison, rangement, soustraction) et sur des problèmes de monnaie (dinars, millimes) ; aucun chapitre ne couvre exactement les nombres à 4 chiffres, et le plus proche est la Période 1 (nombres, monnaie), mais la correspondance reste incertaine.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    115
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres jusqu'à 9999 : comparaison, soustraction",
+    "skill": "Comparer, ranger et placer des nombres de 1000 à 9999 sur une droite graduée, puis résoudre des problèmes de soustraction et de multiplication par 2.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombres à quatre chiffres",
+      "comparaison",
+      "rangement",
+      "droite graduée",
+      "soustraction",
+      "problèmes d'argent"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : placer des nombres sur des droites graduées, insérer un chiffre dans un nombre pour obtenir le plus grand ou le plus petit, problèmes de partage et de budget en monnaie tunisienne (dinars et millimes), et exercice où l'élève invente lui-même les questions d'un énoncé.",
+    "themeGroup": "Numération jusqu'à 9 999"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

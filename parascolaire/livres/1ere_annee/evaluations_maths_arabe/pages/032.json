@@ -1,0 +1,144 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 32,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "قراءة وفهم - حرف الواو والمقاطع الصوتية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُكَمِّلُ بِالْكَلِمَةِ الْمُنَاسِبَةِ مِنَ النَّصِّ.",
+      "body": "فِي الْمَسَاءِ، بَدَأَ الْبَرْدُ يَشْتَدُّ، وَأَخَذَتِ الرِّيَاحُ ........................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p032_i1",
+      "topicId": "ar-1-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "بِمَاذَا يَتَّصِفُ أَفْرَادُ الْعَائِلَةِ ؟ التَّشَاجُرِ - الْمَحَبَّةِ",
+      "body": "يَتَّصِفُ أَفْرَادُ الْعَائِلَةِ بِـ ........................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p032_i2",
+      "topicId": "ar-1-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أَكْتُبُ « أُوَافِقُ » / « لَا أُوَافِقُ » / « فَرْدٌ مِنَ الْعَائِلَةِ » / « لَا تُحِبُّ أَفْرَادَ أُسْرَتِهَا ».",
+      "body": "شَارَكَتْ وَهِيبَةُ فَرْحَةَ أَفْرَادِ أُسْرَتِهَا بِوَفْرَةِ الْمَحْصُولِ. ........................................................\nلِأَنَّهَا ........................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p032_i3",
+      "topicId": "ar-1-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أَقْرَأُ الْجُمْلَةَ وَأَضَعُ الْحَرْفَ الَّذِي يَتَكَرَّرُ فِي خَطٍّ مُغْلَقٍ.",
+      "body": "وَضَعَ وَلِيدٌ اللَّوْحَةَ فَوْقَ الطَّاوِلَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p032_i4",
+      "topicId": "ar-1-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أَسْتَخْرِجُ مِنَ النَّصِّ الْكَلِمَاتِ الْمُحْتَوِيَةَ عَلَى الْحَرْفِ «و» حَسَبَ الْجَدْوَلِ.",
+      "body": "| وَ | وُ | وِ | وْ | و |\n|---|---|---|---|---|\n| ... | ... | ... | ... | ... |\n| ... | ... | ... | ... | ... |",
+      "figureDesc": "جدول بخمسة أعمدة لتصنيف الكلمات حسب حركة حرف الواو: وَ، وُ، وِ، وْ، و.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_maths_arabe_p032_i5",
+      "topicId": "ar-1-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أُكَمِّلُ بِالْمَقْطَعِ الْمُنَاسِبِ.",
+      "body": "الكلمات الناقصة:\n- ..... مَةٌ\n- مُـ.....ـرَةٌ\n- .....صٌ\n- إِ.....ـةٌ\n- سِـ.....ـرٌ\n- .....رَةٌ\n\nالمقاطع المقترحة:\n[دَ] [وَا] [وَاصَـ] [دُ] [وُ] [غُ] [وَا] [قُو] [وَ] [قُ] [وُ] [زَ] [نُ] [وُ] [زِ] [ـنُـ] [ـو] [سَـ] [ـبُو] [ـبُو]",
+      "figureDesc": "جدول مصور يحتوي على صور لـ (بلبل/دوامة، آلة تصوير، غواص، إوزة، سنور/وشق، سبورة) وتحتها كلمات ينقصها مقطع، وأسفلها شريط مقاطع صوتية للاختيار منها.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_maths_arabe_p032_i6",
+      "topicId": "ar-1-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أُكَمِّلُ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "• حَرَثَ ........................................ أَرْضَهُ بِـ ........................................\n• أَكَلَتِ ........................................ بِسُرْعَةٍ.",
+      "figureDesc": "صورتان: الأولى لفلاح يحرث أرضه بالجرار، والثانية لإوزة/بطة تلتقط حبوباً من الأرض.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p032_i7",
+      "topicId": "ar-1-u7",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "ar-1-u7",
+  "topicTitle": "Unité 7 : Mon compagnon dans le monde des animaux",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-1-u8",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u2",
+    "confidence": 0.3
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page porte sur la lecture et la lettre « و » (Waw) avec des syllabes et des mots de texte, ce qui correspond à l'Unité 7 (lettres Chin, Ha, Waw, Ya), même si le thème de la famille évoque l'Unité 2.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Lecture et lettre «و» (syllabes)",
+    "skill": "Comprendre un court texte et repérer, lire et écrire la lettre «و» dans ses différentes voyelles et syllabes.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "lecture_comprehension",
+      "schema_tableau",
+      "appariement",
+      "autre"
+    ],
+    "keywords": [
+      "lettre waw",
+      "syllabes",
+      "compréhension de texte",
+      "famille",
+      "voyelles brèves",
+      "vocabulaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série variée d'activités de lecture pour débutants : compléter avec un mot du texte, choisir entre deux qualités, accord/désaccord justifié, repérer une lettre répétée, trier les mots selon la voyelle de la lettre dans un tableau, reconstituer des mots avec des syllabes proposées.",
+    "themeGroup": "Lettres et sons: ز و ح"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

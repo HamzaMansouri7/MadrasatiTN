@@ -1,0 +1,240 @@
+{
+  "book": "eveil_scientifique_evaluations",
+  "page": 8,
+  "grade": "5ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "السلسلة الغذائية والتوازن البيئي – أجزاء البذرة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التعليمة عدد أملأ الفراغات بما يناسب",
+      "body": "يمثّل النبات أوّل حلقات السلسلة الغذائيّة ويسمّى\nالحيوانات        هي حيوانات مستهلكة من الدرجة الأولى\nالمستهلك من الدرجة الثانية حيوانات تتغذّى على",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_evaluations_p008_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التعليمة عدد أكتب صواب أو خطأ وأعلّل إجابتي",
+      "body": "الحيوانات اللاحمة في السلسلة الغذائية هي مستهلك من الدرجة الأولى\nانحباس الأمطار يسبب اختلالا في التوازن البيئي\nالمفككات تساهم في توفير الغذاء الضروري للنباتات",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_evaluations_p008_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التعليمة عدد أكتب أسماء أجزاء البذرة المشار إليها",
+      "body": "",
+      "figureDesc": "رسم لبذرة على شكل كلية في مقطع طولي، داخلها جزء أصفر كبير. في الأعلى ورقتان صغيرتان خضراوان يشير إليهما السهم 2، تحتهما جزء أحمر يشير إليه السهم 3، ثم جزء برتقالي/أصفر رفيع ينحني نحو الأسفل يشير إليه السهم 4. قوس على اليمين يحمل الرقم 1 يجمع الأرقام 2 و3 و4. السهم 5 يشير إلى الجزء الأصفر الكبير، والسهم 6 يشير إلى الغلاف الخارجي للبذرة. الأرقام دون أسماء.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_evaluations_p008_i3"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "sci-5-u5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-5-u6",
+    "confidence": 0.58
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page est une évaluation mêlant la chaîne alimentaire et l'équilibre écologique (unité 5) et les parties de la graine (unité 6), donc elle couvre plusieurs chapitres.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Chaîne alimentaire et équilibre écologique",
+    "skill": "Identifier les maillons d'une chaîne alimentaire, expliquer l'équilibre du milieu et légender les parties d'une graine.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "vrai_faux",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "chaîne alimentaire",
+      "producteur",
+      "consommateurs",
+      "décomposeurs",
+      "équilibre écologique",
+      "parties de la graine"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Trois exercices gradués, réutilisables : compléter les rôles des maillons (producteur, consommateurs de 1er et 2e ordre), juger des affirmations vrai/faux avec justification sur les perturbations de l'équilibre (sécheresse, rôle des décomposeurs) et légender un schéma de graine numéroté.",
+    "themeGroup": "Les chaînes alimentaires"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "« التعليمة عدد 1 / 2 / 3 » : l'image affiche « التعليمة عدد » sans numéro visible ; les chiffres 1, 2, 3 ont été ajoutés par la transcription."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les points de suspension « ........ » (après « ويسمّى », « الحيوانات » et « تتغذّى على ») n'apparaissent pas dans l'image : ce sont des espaces vides, non des points."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« انحباس الأمطار يسبب اختلالا في التوازن البيئي. » et les autres phrases : le point final ajouté n'existe pas dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "« الأجزاء المرقمة من 1 إلى 6. » est un texte inventé : il n'est pas dans l'image, qui montre seulement un schéma de graine avec les numéros 1 à 6."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le schéma de la graine (numéros 1 à 6, accolade pour 1 regroupant 2, 3, 4) n'est pas décrit dans la transcription."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans l'exercice 1, « الحيوانات ........ هي حيوانات مستهلكة » : le blanc se situe entre « الحيوانات » et « هي », ce qui est correct, mais « المستهلك من الدرجة الثانية » est sur une ligne distincte, la ponctuation « : » après le numéro d'exercice est ajoutée."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Dans les trois consignes, l'image affiche « التعليمة عدد » sans aucun numéro. Les chiffres 1, 2 et 3 ont été ajoutés dans le champ instruction."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 1 : les points de suspension « ........ » n'existent pas dans l'image. Ce sont des espaces vides, après « ويسمّى », entre « الحيوانات » et « هي », et après « تتغذّى على »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les points finaux ajoutés après « الأولى », « البيئي » et « للنباتات » n'existent pas dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les deux-points « : » après le numéro de l'exercice ont été ajoutés, ils ne figurent pas dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 3 : « الأجزاء المرقمة من 1 إلى 6. » est un texte inventé. L'image ne contient sous la consigne que le schéma, donc le corps doit être vide."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "figureDesc attribue des noms (جنين، برعم، سويقة، جذير، فلقة، غلاف) et parle d'une « حبّة فاصوليا ». Ces noms ne sont pas dans l'image. Les identifications sont déduites, et la description doit rester neutre. À noter : le schéma est bien décrit dans la transcription, donc le signalement « manquant » est infondé."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التعليمة عدد أملأ الفراغات بما يناسب",
+      "body": "يمثّل النبات أوّل حلقات السلسلة الغذائيّة ويسمّى\nالحيوانات        هي حيوانات مستهلكة من الدرجة الأولى\nالمستهلك من الدرجة الثانية حيوانات تتغذّى على",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_5eme_evaluations_p008_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التعليمة عدد أكتب صواب أو خطأ وأعلّل إجابتي",
+      "body": "الحيوانات اللاحمة في السلسلة الغذائية هي مستهلك من الدرجة الأولى\nانحباس الأمطار يسبب اختلالا في التوازن البيئي\nالمفككات تساهم في توفير الغذاء الضروري للنباتات",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_5eme_evaluations_p008_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التعليمة عدد أكتب أسماء أجزاء البذرة المشار إليها",
+      "body": "",
+      "figureDesc": "رسم لبذرة على شكل كلية في مقطع طولي، داخلها جزء أصفر كبير. في الأعلى ورقتان صغيرتان خضراوان يشير إليهما السهم 2، تحتهما جزء أحمر يشير إليه السهم 3، ثم جزء برتقالي/أصفر رفيع ينحني نحو الأسفل يشير إليه السهم 4. قوس على اليمين يحمل الرقم 1 يجمع الأرقام 2 و3 و4. السهم 5 يشير إلى الجزء الأصفر الكبير، والسهم 6 يشير إلى الغلاف الخارجي للبذرة. الأرقام دون أسماء.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_5eme_evaluations_p008_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة عدد 1: أملأ الفراغات بما يناسب",
+      "body": "يمثّل النبات أوّل حلقات السلسلة الغذائيّة ويسمّى ........\nالحيوانات ........ هي حيوانات مستهلكة من الدرجة الأولى.\nالمستهلك من الدرجة الثانية حيوانات تتغذّى على ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_5eme_evaluations_p008_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة عدد 2: أكتب صواب أو خطأ وأعلّل إجابتي",
+      "body": "الحيوانات اللاحمة في السلسلة الغذائية هي مستهلك من الدرجة الأولى.\nانحباس الأمطار يسبب اختلالا في التوازن البيئي.\nالمفككات تساهم في توفير الغذاء الضروري للنباتات.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "eveil_scientifique_5eme_evaluations_p008_i2",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة عدد 3: أكتب أسماء أجزاء البذرة المشار إليها",
+      "body": "الأجزاء المرقمة من 1 إلى 6.",
+      "figureDesc": "رسم لبذرة (حبّة فاصوليا) في مقطع طولي: الرقم 1 يشير بقوس إلى الجنين (يضم 2 و3 و4)، الرقم 2 البرعم (الورقات الصغيرة الخضراء)، الرقم 3 السويقة (باللون الأحمر)، الرقم 4 الجذير (باللون البرتقالي)، الرقم 5 الفلقة (الجزء الأصفر الكبير)، الرقم 6 غلاف البذرة. الرسم مرقّم بأسهم دون كتابة الأسماء.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_5eme_evaluations_p008_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Éveil scientifique 5ème année — Évaluations"
+}

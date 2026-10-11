@@ -1,0 +1,145 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 24,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنْتَاجُ الْكِتَابِيُّ - الْوَحْدَةُ الرَّابِعَةُ : فَصْلُ الشِّتَاءِ - إِنْتَاجُ نَصٍّ يَتَأَلَّفُ مِنْ جُمَلٍ بَسِيطَةٍ مُتَمَاسِكَةِ الْبِنَاءِ: تَرْتِيبُ جُمَلٍ وَالرَّبْطُ بَيْنَهَا",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "اللُّغَةُ الْعَرَبِيَّةُ: إِنْتَاجٌ كِتَابِيٌّ\nالْوَحْدَةُ الرَّابِعَةُ : فَصْلُ الشِّتَاءِ\nإِنْتَاجُ نَصٍّ يَتَأَلَّفُ مِنْ جُمَلٍ بَسِيطَةٍ مُتَمَاسِكَةِ الْبِنَاءِ.\nتَرْتِيبُ جُمَلٍ وَالرَّبْطُ بَيْنَهَا.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p024_i1",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبِطُ بَيْنَ الْجُمَلِ بِـ « وَ » أَوْ « فَـ » أَوْ « ثُمَّ ».",
+      "body": "فِي الصَّبَاحِ الْبَاكِرِ، اِسْتَيْقَظَتْ فِرْدَوْسُ مِنْ نَوْمِهَا، ...... غَسَلَتْ وَجْهَهَا وَأَطْرَافَهَا، ...... أَفْطَرَتْ، ...... رَتَّبَتْ فِرَاشَهَا، ...... نَظَّفَتْ غُرْفَتَهَا.",
+      "figureDesc": "رسم لبنت ترتب سريرها في غرفتها بعد الاستيقاظ.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p024_i2",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُرَتِّبُ الْجُمَلَ، وَأَرْبِطُ بَيْنَهَا.",
+      "body": "○ جَلَسَتْ إِلَى مَكْتَبِهَا.\n○ نَظَّمَتْ أَدَوَاتِهَا،\n○ فِي الْمَسَاءِ،\n○ أَنْجَزَتْ فُرُوضَهَا.\n○ دَخَلَتْ لَطِيفَةُ غُرْفَتَهَا،",
+      "figureDesc": "رسم لبنت تجلس إلى مكتبها في المساء وتكتب فروضها.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p024_i3",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُرَتِّبُ الْجُمَلَ، وَأُكَوِّنُ بِهَا نَصًّا.",
+      "body": "○ وَقَفَ خَلِيلٌ أَمَامَ الْمَدْرَسَةِ.\n○ تَرَقَّبَ قُدُومَ أُمِّهِ.\n○ تَسَاقَطَ الْمَطَرُ بِغَزَارَةٍ.\n.......................................................................................\n.......................................................................................",
+      "figureDesc": "رسم لطفل يضع محفظته فوق رأسه ليتقي المطر أمام المدرسة، وفي الخلفية طفلان تحت مظلة.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p024_i4",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "ar-1-u4",
+  "topicTitle": "Unité 4 : Mon compagnon en hiver",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.89
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de production écrite en arabe de la 4e unité, « فصل الشتاء » (l'hiver), qui correspond à l'Unité 4 : Mon compagnon en hiver, avec des phrases à ordonner et relier, dont une sur la pluie.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Cohérence textuelle et connecteurs",
+    "skill": "Ordonner des phrases simples et les relier par des connecteurs (و، فـ، ثم) pour produire un court texte cohérent.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "connecteurs",
+      "ordre des phrases",
+      "texte cohérent",
+      "hiver",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : scènes de la vie quotidienne (routine du matin, devoirs du soir, attente sous la pluie) servant à relier des phrases par des connecteurs, à remettre des phrases dans l'ordre, puis à composer un mini-texte.",
+    "themeGroup": "Ordonner des phrases et cohérence textuelle"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«أَرْبِطُ» transcrit, l'image montre «أُرْبُطُ» (أَرْبُطُ) : la voyelle de la lettre ب est une damma et non une kasra ; dans l'exercice 2 «أَرْبِطُ» a la même erreur."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«جَلَسَتْ» : l'image montre «جَلَسْتُ» avec le sukun sur le س et la damma sur le ت, à vérifier ; de même «نَظَّمَتْ» et «أَنْجَزَتْ»."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«دَخَلَتْ لَطِيفَةُ غُرْفَتَهَا» : l'image montre «غُرْفَتَهَا» avec une fatha ; la transcription est correcte, mais la virgule finale est à vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«الْمَدْرَسَةِ» : l'image montre «الْمَدْرَسَةِ» ; la transcription «الْمَدْرَسَةِ» est correcte, mais «الْمَدْرَسَةِ» dans l'illustration est écrit «مدرسة»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Éléments omis : numéro de page 25, «السنة 1», «الثلاثي الثاني», bandeau «أَتَدَرَّبُ وَأُوَظِّفُ»."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le mot «الْمَطَرُ» est bien présent ; les fragments du bord droit de la page («ابنتها», «طَرِ») appartiennent à la page voisine et ne sont pas transcrits."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«بَسِيطَةٍ» : l'image montre «بَسِيطَةٍ» ; c'est correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

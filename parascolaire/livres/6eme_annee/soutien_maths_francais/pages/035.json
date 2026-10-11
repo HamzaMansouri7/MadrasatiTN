@@ -1,0 +1,171 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 35,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Évaluation : Géométrie (droites perpendiculaires, parallélogramme, volume du parallélépipède rectangle), Mesure (conversions, aire) et Organisation et traitement de données (diagramme en bâtons)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أنشئ مستقيما (d3) يمر من النقطة B وعمودي على المستقيم (d4) مستعينا بالأدوات الهندسية المناسبة. (2.5ن)",
+      "body": "",
+      "figureDesc": "Cadre rectangulaire contenant un point B et une droite (d4) légèrement inclinée en bas du cadre.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p035_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أرسم متوازي الأضلاع ABCD حيث AB = 5cm و BC = 4cm مستعينا بالأدوات الهندسية المناسبة. (3ن)",
+      "body": "",
+      "figureDesc": "Grand cadre rectangulaire vide destiné à la construction.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p035_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "مسألة :",
+      "body": "- أراد هشام معرفة حجم خزان ماء على شكل متوازي المستطيلات (الشكل أسفله)، فملأه بواسطة براميل حيث سعة كل برميل هو 2000 L .\nأ) - أحسب حجم هذا الخزان علما أن a=4m و b=2m و c=3m. (2 ن)\nب) كم من برميل احتاج هشام لملء هذا الخزان ؟ (1ن)",
+      "figureDesc": "Parallélépipède rectangle (pavé droit) avec les dimensions a (longueur), b (largeur) et c (hauteur) indiquées.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p035_i3",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "III.1",
+      "instruction": "المجال الثالث : القياس (13 نقطة) — حول الوحدات التالية إلى ما هو مطلوب : (10ن)",
+      "body": "86,5 m = ............. dam ; 5t 7q 64kg = ..................... Kg ; 45,91 cm² = ................... dm²\n512 Mo = ................. Go ; 0,35 m³ = .....................dm³",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p035_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "III.2",
+      "instruction": "مسألة :",
+      "body": "- تملك مروى حديقة صغيرة طولها L=7m وعرضها l=5m، وقد غرست بها مجموعة من النباتات المختلفة، وتقوم بسقيها بمعدل 50L يوميا.\nأ) احسب مساحة هذه الحديقة الصغيرة. (2ن)\nب) أحسب كمية الماء اللازمة لسقي هذه النباتات أسبوعيا بـ L. (1ن)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p035_i5",
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "IV",
+      "instruction": "المجال الرابع : تنظيم ومعالجة البيانات (3 نقط) — مسألة : قام 4 شباب برفع أثقال بقاعة الرياضة كما هو مبين في المخطط بأعمدة جانبه.\nأ) نظم معطيات المخطط بأعمدة إلى الجدول أسفله : (2ن)\nب) ما اسم الشاب الذي حمل أكبر عدد من الكيلوغرامات ؟ (1ن)",
+      "body": "Tableau à compléter : اسم الشاب : فريد، عمر، خالد، علي ; عدد الكيلوغرامات : (cases vides).",
+      "figureDesc": "Diagramme en bâtons : axe vertical « عدد الكيلوغرامات » gradué 60, 120, 180, 240 ; axe horizontal « أسماء الشباب » : علي (≈240), خالد (≈180), عمر (≈210), فريد (≈270). Tableau vide de 2 lignes et 5 colonnes.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p035_i6",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation générale de mathématiques couvrant plusieurs chapitres (construction géométrique, parallélogramme, volume et capacité, conversions, aire, diagramme en bâtons), donc aucun chapitre unique ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    36
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Évaluation de géométrie, mesures et données",
+    "skill": "Construire des figures géométriques, calculer volume et aire, convertir des unités et organiser des données d'un diagramme en bâtons.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "droites perpendiculaires",
+      "parallélogramme",
+      "volume du parallélépipède",
+      "conversions d'unités",
+      "diagramme en bâtons",
+      "aire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des situations de la vie courante réutilisables : remplir un réservoir avec des barils de capacité donnée, arroser un jardin à un débit quotidien fixe, et transcrire un diagramme en bâtons (haltérophilie) dans un tableau.",
+    "themeGroup": "Problèmes de synthèse et révisions"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de la section « المجال الرابع » est transcrit mais le numéro « IV. » et « III. » sont mis entre crochets ; les en-têtes sont corrects. Le texte du graphique (axe « عدد الكيلوغرامات », « أسماء الشباب », valeurs 60/120/180/240) n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les noms des barres du diagramme (علي، خالد، عمر، فريد) et la ligne de l'en-tête « عدد الكيلوغرامات » du tableau ne sont pas détaillés. Le tableau est signalé uniquement par une description."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Tableau : l'ordre des colonnes dans l'image est (de droite à gauche) فريد، عمر، خالد، علي ; la transcription le respecte, mais « اسم الشاب » est l'en-tête de ligne, ce qui est correct."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« سعة كل برميل هو 2000 L » : dans l'image, le texte est « فملأه بواسطة براميل حيث سعة كل برميل هو 2000 L » ; transcrit correctement. La phrase « l=5m » : l'image indique « عرضها l=5m » correctement."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le schéma du parallélépipède avec les lettres a, b, c n'est pas mentionné."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "correctionStatus": "linked",
+  "examScope": "short_test",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

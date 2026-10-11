@@ -1,0 +1,95 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 25,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Activité 3 : support documentaire sur des inventions marocaines (triporteur électrique, kayak immobile, drone, respirateur). Le titre de l'activité, la consigne et les quatre cases à remplir sont vides ou illisibles. La page semble provenir d'un document marocain (Prof : Said El Mice, escuila.info) et non d'un manuel tunisien.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "",
+      "body": "Document composé de quatre images légendées : 1) Le premier triporteur électrique 100% marocain. 2) Le kayak immobile, une invention marocaine en plein confinement. 3) Le premier traitement des céréales par drone au Maroc, lancé à Sidi Kacem. 4) Un respirateur intelligent artificiel 100% marocain inventé durant le confinement.",
+      "figureDesc": "Quatre photos encadrées en vert : un triporteur électrique avec parasol ; un homme assis sur un kayak immobile avec une pagaie, près d'un port ; un grand drone posé sur l'herbe, avec un emblème marocain ; un respirateur avec écran tactile et tuyaux. En dessous, un cadre en pointillés bleus contient quatre cases vides à remplir, avec un titre souligné vide.",
+      "answer": null,
+      "confidence": 0.5,
+      "id": "soutien_maths_francais_p025_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Indéterminée (document sur des inventions marocaines, probablement Éveil Scientifique ou Français)",
+  "topicReason": "La page présente quatre inventions marocaines (triporteur, kayak, drone, respirateur) issues d'un document marocain, avec consigne et cases illisibles, donc aucun chapitre tunisien officiel ne correspond clairement.",
+  "linkFlags": [
+    "low_ocr_confidence",
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Inventions technologiques marocaines",
+    "skill": "Observer un document d'images légendées pour identifier des inventions et expliquer leur utilité.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "inventions",
+      "technologie",
+      "Maroc",
+      "drone",
+      "confinement",
+      "respirateur"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un support documentaire d'images légendées d'inventions locales liées à l'actualité (confinement, agriculture, santé) peut servir à faire compléter un tableau (invention, domaine, utilité) et à relier science et vie quotidienne; l'énoncé étant illisible, la consigne exacte reste à imaginer.",
+    "themeGroup": "Divers"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le texte de l'en-tête « 6ème année primaire » (logo en haut de page) n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La signature « Prof : Said El Mice » n'est pas transcrite."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page « www.escuila.info » est absent de la transcription."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« réponse: None » ne figure pas sur la page. Les quatre cadres vides (zone de réponse) sont mal représentés par cette mention."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

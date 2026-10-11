@@ -1,0 +1,288 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 43,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "امتحان في الرياضيات: حل وضعية مشكلة (ثمن قطعة المثلجات، ما تبقى للإخوة، المبلغ المتجمع) والمضلعات (عدد الرؤوس والأضلاع، التلوين) وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "التَّعْلِيمَةُ 10 : أَخْتَارُ السُّؤَالَ الْمُنَاسِبَ وَأُوَاصِلُ حَلَّ الْوَضْعِيَّةِ بِوَضْعِ الْعَلَامَةِ (x) .",
+      "body": "• مَا هُوَ ثَـمَنُ الْقِطْعَةِ الْوَاحِدَةِ مِنَ الْمُثَلَّجَاتِ ؟\n• كَمْ تَبَقَّى لِلْإِخْوَةِ ؟\n• مَا هُوَ مِقْدَارُ الْمَبْلَغِ الْمُتَجَمِّعِ لَدَيْهِمْ ؟",
+      "figureDesc": "ثلاث دوائر فارغة أمام الأسئلة الثلاثة لوضع العلامة (x)، تليها أسطر منقطة لكتابة الحل. في الهامش: علامة «معـ5» مع مربع، ثم «معـ5» مع مربعين.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p043_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 6",
+      "instruction": "السَّنَدُ 6 : رَأَى الْإِخْوَةُ أَشْكَالًا مُخْتَلِفَةً مِنْ قِطَعِ الْمُثَلَّجَاتِ.",
+      "body": "ثلاثة مضلعات: أ، ب، ج.",
+      "figureDesc": "من اليمين إلى اليسار: المضلع ج: شكل على هيئة ساعة رملية (ستة أضلاع، منحنٍ إلى الداخل من الجانبين). المضلع ب: شكل ذو خمسة أضلاع (مستطيل مقطوع زاويته العليا اليمنى). المضلع أ: مستطيل.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p043_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "التَّعْلِيمَةُ 11 : أُجِيبُ حَسَبَ الْمَطْلُوبِ.",
+      "body": "الْمُضَلَّعُ أ : عَدَدُ رُؤُوسِهِ ..............\nالْمُضَلَّعُ ب : عَدَدُ أَضْلَاعِهِ ..............\nالْمُضَلَّعُ ج : أُلَوِّنُ مُحِيطَهُ بِالْأَحْمَرِ.",
+      "figureDesc": "جدول من ثلاثة أسطر: في السطرين الأولين ثلاث خانات (المضلع | المطلوب | نقاط للإجابة)، وفي السطر الثالث تُدمج الخانتان الأخيرتان. في الهامش «معـ4» مع ثلاثة مربعات.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "examens_toutes_matieres_p043_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الْمَعَايِيرُ / مُسْتَوَيَاتُ التَّمَلُّكِ: مَعَايِيرُ الْحَدِّ الْأَدْنَى (مع1، مع2 أ، مع2 ب، مع3، مع4)، التَّمَيُّزُ (مع5). السطر: انْعِدَامُ التَّمَلُّكِ: 0 0 0 0 0 0. عمود الرِّيَاضِيَّات: .../16 ، وعمود الْحِسَاب [مقطوع].",
+      "figureDesc": "جدول إسناد الأعداد في أسفل الصفحة، مقطوع جزئيا.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "examens_toutes_matieres_p043_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p1",
+    "confidence": 0.16
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une évaluation de mathématiques (tableau d'attribution des notes avec critères mع1 à مع5) qui mêle résolution de problème et polygones (sommets, côtés), donc elle ne correspond pas clairement à un seul chapitre, même si les polygones renvoient à la Période 5.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Résolution de problème et polygones",
+    "skill": "Choisir la question adaptée pour résoudre une situation-problème, puis identifier sommets et côtés de polygones et colorier un contour.",
+    "pageType": "exam",
+    "formats": [
+      "probleme",
+      "qcm",
+      "schema_tableau",
+      "calcul"
+    ],
+    "keywords": [
+      "situation-problème",
+      "polygones",
+      "sommets et côtés",
+      "glaces",
+      "barème par critères",
+      "évaluation 3ème année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une situation de vie (frères achetant des glaces) où l'élève doit choisir la bonne question intermédiaire avant de résoudre, associée à des polygones inspirés des formes de glaces ; la grille d'évaluation par critères (minimum et excellence) est aussi un modèle intéressant.",
+    "themeGroup": "Polygones"
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Instruction 10 : « أُوَاصِلُ » est écrit « وَأُوَاصِلُ » dans l'image (la lettre و est présente et la voyelle de « وَأَوَاصِلُ » doit être respectée). Le début « أَخْتَارُ » est correct."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "« يَلِي ذَلِكَ خَمْسَةُ أَسْطُرٍ مُنَقَّطَةٍ لِكِتَابَةِ الْحَلِّ » est un texte inventé : c'est une description, absente de la page. Il y a en réalité 6 lignes pointillées, pas 5."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« (مَعَ5 : مَعَايِيرُ التَّمَيُّزِ / مَعَ5) » est inexact : l'image montre des cases « مع5 » (deux fois) et « مع4 » en marge, pas « معايير التمييز » dans cette partie. Les marges n'indiquent pas la même chose."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les cases de notation en marge (مع5, مع5, مع4 avec cases à cocher) sont mal ou pas transcrites ; trois cercles à cocher devant les questions de l'instruction 10 non mentionnés."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Instruction 11 : « أُلَوِّنُ مُحِيطَهُ » est faux. L'image donne « أُلَوِّنُ مُحِيطَهُ » avec la forme « أَلْوَنُ »? En réalité le texte est « أُلَوِّنُ » ou « أُلَوِّنُ », mais la transcription OCR du tableau reprend « أُلَوِّنُ » avec la vocalisation d'un autre mot : à vérifier."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les formes a, b, c (rectangle, polygone avec un coin coupé, forme en sablier) sont décrites seulement comme « ثلاثة مضلعات » ; l'ordre visuel est ج، ب، أ de droite à gauche."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Tableau : « الْمُضَلَّعُ » est écrit « الْمُضَلَّعُ » dans l'image sans la voyelle sur le ض pour « الْمُضْلَعُ » ; la transcription ajoute des voyelles non vues."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Tableau de notation : la ligne « 0 » est mal reproduite ; l'image montre 0 sous مع5, مع4, مع3, مع2 ب, مع2 أ, مع1 (6 zéros), correct, mais le titre « جَدْوَلُ إِسْنَادِ الْأَعْدَادِ » est placé avant les colonnes Riyadiyat/Hissab dans un ordre différent."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.8,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "La phrase « يَلِي ذَلِكَ خَمْسَةُ أَسْطُرٍ مُنَقَّطَةٍ لِكِتَابَةِ الْحَلِّ. » est une description ajoutée dans le body de l'exercice 10. Elle n'existe pas sur la page. Elle annonce aussi un nombre de lignes (5) qui ne correspond pas à l'image : il y a plus de 5 lignes pointillées, environ 6 ou 7."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "« (مَعَ5 : مَعَايِيرُ التَّمَيُّزِ / مَعَ5) » est inventé. La marge ne porte que des étiquettes « معـ5 » (deux fois) et « معـ4 » avec des cases à cocher. Les mots « معايير التمييز » n'apparaissent pas dans cette partie de la page."
+      },
+      {
+        "type": "manquant/imprecis",
+        "severity": "minor",
+        "detail": "La figureDesc de l'exercice 10 est inexacte. Elle parle de « خمسة أسطر ». Elle décrit mal les marges : une étiquette معـ5 avec une case, puis une seconde étiquette معـ5 avec deux cases, soit 3 cases au total. Les trois cercles devant les questions sont bien mentionnés."
+      },
+      {
+        "type": "ordre/imprecis",
+        "severity": "minor",
+        "detail": "La figureDesc de l'exercice 11 est inexacte. Le tableau a 3 lignes et 3 colonnes (المضلع | المطلوب | الإجابة) pour les deux premières lignes. La troisième ligne fusionne les deux dernières cellules (« ألوّن محيطه بالأحمر »). La marge معـ4 porte 3 cases à cocher, ce qui n'est pas précisé."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Pour le support 6, la figureDesc ne précise pas la disposition visuelle. De droite à gauche, on voit ج (sablier), ب (rectangle au coin supérieur droit coupé), puis أ (rectangle)."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "التَّعْلِيمَةُ 10 : أَخْتَارُ السُّؤَالَ الْمُنَاسِبَ وَأُوَاصِلُ حَلَّ الْوَضْعِيَّةِ بِوَضْعِ الْعَلَامَةِ (x) .",
+      "body": "• مَا هُوَ ثَـمَنُ الْقِطْعَةِ الْوَاحِدَةِ مِنَ الْمُثَلَّجَاتِ ؟\n• كَمْ تَبَقَّى لِلْإِخْوَةِ ؟\n• مَا هُوَ مِقْدَارُ الْمَبْلَغِ الْمُتَجَمِّعِ لَدَيْهِمْ ؟",
+      "figureDesc": "ثلاث دوائر فارغة أمام الأسئلة الثلاثة لوضع العلامة (x)، تليها أسطر منقطة لكتابة الحل. في الهامش: علامة «معـ5» مع مربع، ثم «معـ5» مع مربعين.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p043_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 6",
+      "instruction": "السَّنَدُ 6 : رَأَى الْإِخْوَةُ أَشْكَالًا مُخْتَلِفَةً مِنْ قِطَعِ الْمُثَلَّجَاتِ.",
+      "body": "ثلاثة مضلعات: أ، ب، ج.",
+      "figureDesc": "من اليمين إلى اليسار: المضلع ج: شكل على هيئة ساعة رملية (ستة أضلاع، منحنٍ إلى الداخل من الجانبين). المضلع ب: شكل ذو خمسة أضلاع (مستطيل مقطوع زاويته العليا اليمنى). المضلع أ: مستطيل.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p043_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "التَّعْلِيمَةُ 11 : أُجِيبُ حَسَبَ الْمَطْلُوبِ.",
+      "body": "الْمُضَلَّعُ أ : عَدَدُ رُؤُوسِهِ ..............\nالْمُضَلَّعُ ب : عَدَدُ أَضْلَاعِهِ ..............\nالْمُضَلَّعُ ج : أُلَوِّنُ مُحِيطَهُ بِالْأَحْمَرِ.",
+      "figureDesc": "جدول من ثلاثة أسطر: في السطرين الأولين ثلاث خانات (المضلع | المطلوب | نقاط للإجابة)، وفي السطر الثالث تُدمج الخانتان الأخيرتان. في الهامش «معـ4» مع ثلاثة مربعات.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "jisr_ennajah_3eme_examens_p043_i3"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الْمَعَايِيرُ / مُسْتَوَيَاتُ التَّمَلُّكِ: مَعَايِيرُ الْحَدِّ الْأَدْنَى (مع1، مع2 أ، مع2 ب، مع3، مع4)، التَّمَيُّزُ (مع5). السطر: انْعِدَامُ التَّمَلُّكِ: 0 0 0 0 0 0. عمود الرِّيَاضِيَّات: .../16 ، وعمود الْحِسَاب [مقطوع].",
+      "figureDesc": "جدول إسناد الأعداد في أسفل الصفحة، مقطوع جزئيا.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_3eme_examens_p043_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "التَّعْلِيمَةُ 10 : أَخْتَارُ السُّؤَالَ الْمُنَاسِبَ وَأُوَاصِلُ حَلَّ الْوَضْعِيَّةِ بِوَضْعِ الْعَلَامَةِ (x) .",
+      "body": "• مَا هُوَ ثَـمَنُ الْقِطْعَةِ الْوَاحِدَةِ مِنَ الْمُثَلَّجَاتِ ؟\n• كَمْ تَبَقَّى لِلْإِخْوَةِ ؟\n• مَا هُوَ مِقْدَارُ الْمَبْلَغِ الْمُتَجَمِّعِ لَدَيْهِمْ ؟\nيَلِي ذَلِكَ خَمْسَةُ أَسْطُرٍ مُنَقَّطَةٍ لِكِتَابَةِ الْحَلِّ. (مَعَ5 : مَعَايِيرُ التَّمَيُّزِ / مَعَ5)",
+      "figureDesc": "ثلاث دوائر فارغة أمام الأسئلة الثلاثة لوضع العلامة (x)، وخمسة أسطر منقطة للحل، ومربعات تقييم على الهامش (مع5).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "jisr_ennajah_3eme_examens_p043_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 6",
+      "instruction": "السَّنَدُ 6 : رَأَى الْإِخْوَةُ أَشْكَالًا مُخْتَلِفَةً مِنْ قِطَعِ الْمُثَلَّجَاتِ.",
+      "body": "ثلاثة مضلعات: أ، ب، ج.",
+      "figureDesc": "المضلع أ: مستطيل. المضلع ب: شكل ذو خمسة أضلاع (مستطيل مقطوع إحدى زواياه العليا). المضلع ج: شكل على هيئة ساعة رملية (ستة أضلاع، منحنٍ إلى الداخل من الجانبين).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_3eme_examens_p043_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "التَّعْلِيمَةُ 11 : أُجِيبُ حَسَبَ الْمَطْلُوبِ.",
+      "body": "الْمُضَلَّعُ أ : عَدَدُ رُؤُوسِهِ ..............\nالْمُضَلَّعُ ب : عَدَدُ أَضْلَاعِهِ ..............\nالْمُضَلَّعُ ج : أُلَوِّنُ مُحِيطَهُ بِالْأَحْمَرِ.",
+      "figureDesc": "جدول من ثلاثة أسطر وثلاثة أعمدة (المضلع، المطلوب، الإجابة) مع نقاط للإجابة في السطرين الأولين؛ مربعات تقييم على الهامش (مع4).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "jisr_ennajah_3eme_examens_p043_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "الْمَعَايِيرُ / مُسْتَوَيَاتُ التَّمَلُّكِ: مَعَايِيرُ الْحَدِّ الْأَدْنَى (مع1، مع2 أ، مع2 ب، مع3، مع4)، التَّمَيُّزُ (مع5). السطر: انْعِدَامُ التَّمَلُّكِ: 0 0 0 0 0 0. عمود الرِّيَاضِيَّات: .../16 ، وعمود الْحِسَاب (مقطوع).",
+      "figureDesc": "جدول إسناد الأعداد في أسفل الصفحة، مقطوع جزئيا.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "jisr_ennajah_3eme_examens_p043_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.8
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "unknown",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

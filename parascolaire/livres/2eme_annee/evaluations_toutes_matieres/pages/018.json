@@ -1,0 +1,131 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 18,
+  "grade": "2ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "إنتاج كتابي – اختبار نهاية الثلاثي الثاني (عدد 1) – وصف مشاهد بجمل اعتمادا على الزاد اللغوي",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَصِفُ كُلَّ مَشْهَدٍ بِجُمْلَةٍ عَلَى الْأَقَلِّ مُسْتَعِينًا بِالزَّادِ اللُّغَوِيِّ الْمُقَدَّمِ.",
+      "body": "المشهد 1 – الزاد اللغوي: تلَبَّدَتْ - دكْنَاءُ - هطَلَ - عصَفَتْ - الْبَرْدُ - الشِّتَاءُ\nالمشهد 2 – الزاد اللغوي: هَذَا - يَئِنُّ - يُعَالِجُهُ - بِجَانِبِهِ - يَجُسُّ - يُنْصِتُ - يَتَوَجَّعُ…\nالمشهد 3 – الزاد اللغوي: نَسِيَتْ - مِطْرَيَتَهَا - اِبْتَلَّتْ - اِرْتَعَشَتْ…\nلكل مشهد خمسة أسطر منقّطة للكتابة. الأعداد المسندة لكل مشهد: 0,5 - 0,5 - 1 - 0,5. المعايير: مع1، مع ب، مع2، مع3.\nمعلومات الورقة: امتحانات مدرستي تونس – المادة: إنتاج كتابي – المستوى: السنة الثانية – اختبار نهاية الثلاثي الثاني – عدد: 1 – الاسم، اللقب، القسم.",
+      "figureDesc": "ثلاثة رسوم: (1) مدينة بعمارات تحت مطر غزير وريح قوية تحني شجرة. (2) طبيب يفحص بسمّاعة بطن طفل مستلقٍ على السرير وهو يتألم. (3) بنت في الشارع تحت المطر والريح تحمي رأسها وبجانبها شجرة تميل بفعل العاصفة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "evaluations_toutes_matieres_p018_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "ar-2-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-2-u5",
+    "confidence": 0.44
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une épreuve de production écrite de fin de deuxième trimestre (examen n°1) qui couvre plusieurs unités (T2 : u4, u5, u6) ; aucun chapitre unique ne correspond clairement, d'où topicId null.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description de scènes par phrases",
+    "skill": "Rédiger des phrases décrivant une image en réutilisant un lexique imposé (production écrite guidée).",
+    "pageType": "exam",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "description de scènes",
+      "lexique imposé",
+      "météo et pluie",
+      "évaluation trimestrielle",
+      "phrases"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le format « une scène en image + une liste de mots à réutiliser » est transposable à d'autres thèmes du quotidien (météo, maladie, oubli d'objet) pour une production écrite guidée au cycle primaire.",
+    "themeGroup": "Description de scènes et d'images"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "مِطْرَيَتَهَا est faux : l'image porte « مَطْرِيَتَهَا » (مَطْرِيَتَها), avec fatha sur le م et kasra sur le ر"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "تلَبَّدَتْ : l'image montre « تَلَبَّدَتْ » avec fatha sur le ت ; la transcription n'a pas de voyelle complète"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "دكْنَاءُ : l'image montre « دَكْنَاءُ » avec fatha sur le د"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "هطَلَ : l'image montre « هَطَلَ » avec fatha sur le ه"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "عصَفَتْ : l'image montre « عَصَفَتْ » avec fatha sur le ع"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "البَرْدُ / الشِّتَاءُ : l'image montre « الْبَرْدُ - الشِّتَاءُ », sans tanwin ni ḍamma sur le dernier mot de la liste. Le « ءُ » de الشتاءُ est présent. Pas de faute réelle"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "بِجَانِبِهِ : l'image montre « بِجَانِبِهِ », ce qui est correct. يَئِنُّ aussi"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions « المشهد 1/2/3 – الزاد اللغوي » sont ajoutées : elles ne figurent pas dans l'image"
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "« لكل مشهد خمسة أسطر » : description ajoutée, pas du texte imprimé. Les notes 0,5 / 0,5 / 1 / 0,5 sont correctes. Les critères sont « مع أ، مع ب، مع2، مع3 » (مع1 en haut) : « مع ب » est ok, mais « مع أ » est écrit « مع1 » dans l'image"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les en-têtes de colonnes (المعايير، الأنشطة، النقاط المسندة) et le numéro de page 17 ne sont pas transcrits"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les mots « هَذَا » et « يَتَوَجَّعُ » sont présents. Le titre du bandeau « امتحانات جسر النجاح » est présent. Pas d'autre exercice manquant"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

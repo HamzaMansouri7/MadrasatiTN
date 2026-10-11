@@ -1,0 +1,135 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 8,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الوحدة الثالثة: صحتي وسلامتي - إنتاج كتابي: التّصرّف في عناصر الجملة بالتعويض (المكان)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "اللُّغَةُ الْعَرَبِيَّةُ — إِنْتَاجٌ كِتَابِيٌّ\nالْوِحْدَةُ الثَّالِثَةُ : صِحَّتِي وَسَلَامَتِي\nالتَّصَرُّفُ فِي عَنَاصِرِ الْجُمْلَةِ بِالتَّعْوِيضِ (الزَّمَانُ)\n\nأَتَدَرَّبُ وَأُوَظِّفُ :\n\n[Marge : السَّنَةُ 1 — الثُّلَاثِيُّ الثَّانِي — اللُّغَةُ الْعَرَبِيَّةُ - الْإِنْتَاجُ الْكِتَابِيُّ — numéro de page imprimé : 9]",
+      "figureDesc": "En-tête rose arrondi avec le titre de l'unité. Un bandeau violet contient « أَتَدَرَّبُ وَأُوَظِّفُ : ». Marge rose à gauche avec un cercle vert indiquant l'année 1.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p008_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمَلِ وَأُغَيِّرُ الْمَكَانَ بِالْمَكَانِ الْمُنَاسِبِ لِلْمَشْهَدِ.",
+      "body": "فِي الصَّبَاحِ، رَتَّبَ حَاتِمٌ بَيْتَ الْجُلُوسِ.\n[lignes pour écrire]\n\nبَعْدَ الْأَكْلِ، رَتَّبَ حَاتِمٌ وَفِرْدَوْسُ بَيْتَ الْجُلُوسِ.\n[lignes pour écrire]\n\nقَبْلَ الْخُرُوجِ مِنَ الْقِسْمِ، رَتَّبَ مَالِكٌ أَدَوَاتِهِ فِي الْمِحْفَظَةِ.\n[lignes pour écrire]",
+      "figureDesc": "Trois illustrations, chacune accompagnée de lignes d'écriture. 1) Un garçon fait un lit à couverture verte dans une chambre, avec une table de nuit, une lampe et un rideau. 2) Une fille balaie et un garçon porte une chaise verte dans une salle, avec une fenêtre aux rideaux jaunes, une horloge, une table et une porte. 3) Un garçon en veste bleue range ses affaires dans un cartable posé sur un bureau, avec un cahier violet, une ardoise, des ciseaux et une feuille.",
+      "answer": null,
+      "id": "evaluations_maths_arabe_p008_i2",
+      "topicId": "ar-1-u3",
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "confidence": 0.93
+    }
+  ],
+  "topicId": "ar-1-u3",
+  "topicTitle": "Unité 3 : Mon compagnon pour ma santé et ma sécurité",
+  "topicConfidence": 0.9,
+  "topicIdPrev": "ar-1-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u3",
+    "confidence": 0.93
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice de production écrite en arabe (substitution des compléments de lieu/temps dans la phrase) de l'Unité 3 « صحتي وسلامتي », qui correspond à l'unité 3 (santé et sécurité) du Trimestre 1.",
+  "linkFlags": [],
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Substitution du complément de lieu",
+    "skill": "Réécrire une phrase en remplaçant le complément de lieu par un autre lieu adapté à l'image de la scène.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "complément de lieu",
+      "substitution",
+      "manipulation de phrases",
+      "hygiène et santé",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le principe de manipulation de phrase par substitution d'un élément (ici le lieu) guidée par une scène illustrée est réutilisable pour d'autres compléments (temps, sujet, objet) dans des contextes de vie quotidienne comme le rangement de la maison.",
+    "themeGroup": "Substitution et transformation de phrases"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.93,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête de la page est absent : « اللُّغَةُ الْعَرَبِيَّةُ - إِنْتَاجٌ كِتَابِيٌّ », « الْوِحْدَةُ الثَّالِثَةُ : صِحَّتِي وَسَلَامَتِي » et « التَّصَرُّفُ فِي عَنَاصِرِ الْجُمْلَةِ بِالتَّعْوِيضِ (الزَّمَانُ) »"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le titre de section « أَتَدَرَّبُ وَأُوَظِّفُ : » est absent"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Consigne : « وَأُغَيِّرُ الْمَكَانَ بِالْمَكَانِ » est faux. L'image indique « وَأُغَيِّرُ الزَّمَانَ بِالزَّمَانِ الْمُنَاسِبِ لِلْمَشْهَدِ » (cohérent avec le thème « الزَّمَان »). Le texte lu est « الْمَكَانَ بِالْمَكَانِ ». À vérifier : l'image montre « الْمَكَانَ بِالْمَكَانِ » ; la transcription semble donc fidèle sur ce point"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَدَوَاتِهِ » : l'image porte « أَدَوَاتِهِ » avec shadda/vocalisation « أَدَوَاتِهِ » ; la graphie imprimée est « أَدَوَاتِهِ », ce qui est correct"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« الْقِسْمِ » : l'image montre « الْقِسْمِ » (correct). « الْخُرُوجِ » correct"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les trois illustrations (chambre, enfants dans le salon, élève avec cartable) ne sont pas mentionnées, ni les lignes d'écriture ni le numéro de page 9, ni « السنة 1 » et « الثلاثي الثاني »"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La consigne est placée avant les phrases, ce qui est correct ; la numérotation 1) 2) 3) est inventée, absente de l'image"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمَلِ وَأُغَيِّرُ الْمَكَانَ بِالْمَكَانِ الْمُنَاسِبِ لِلْمَشْهَدِ.",
+      "body": "1) فِي الصَّبَاحِ، رَتَّبَ حَاتِمٌ بَيْتَ الْجُلُوسِ.\n.......................................................................................\n\n2) بَعْدَ الْأَكْلِ، رَتَّبَ حَاتِمٌ وَفِرْدَوْسُ بَيْتَ الْجُلُوسِ.\n.......................................................................................\n\n3) قَبْلَ الْخُرُوجِ مِنَ الْقِسْمِ، رَتَّبَ مَالِكٌ أَدَوَاتِهِ فِي الْمَحْفَظَةِ.\n.......................................................................................",
+      "figureDesc": "ثلاثة مشاهد مصورة: المشهد الأول يُظهر طفلاً يرتب سريره في غرفة النوم، المشهد الثاني يُظهر طفلة تكنس وطفلاً يحمل كرسياً لترتيب الغرفة، والمشهد الثالث يُظهر طفلاً يرتب أدواته المدرسية على المكتب.",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "jisr_ennajah_1ere_evaluations_p008_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "linkStatus": "clean",
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

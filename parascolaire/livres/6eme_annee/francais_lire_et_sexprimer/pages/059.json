@@ -1,0 +1,103 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 59,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Nadlouk, le petit Esquimau",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Nadlouk, le petit Esquimau\n\nMon nom est Thomas Menadelook, mais tout le monde m'appelle Nadlouk, et je préfère cela car je suis fier d'être Esquimau et j'aime mon beau pays sauvage et glacé.\nJe ne vois la belle eau bleue que trois ou quatre mois par an, de juin à septembre. C'est pour cela que je ne sais pas nager, comme tous les Esquimaux : Où aurais-je pu apprendre ?\nQuand la glace se décide à fondre, l'eau reste si froide que, si l'on y tombe, on ne peut guère survivre plus de trois ou quatre minutes.\nLa maison de mes parents est bâtie juste au bord de la plage.\nJe dis la maison, car mon ami l'explorateur m'a raconté que la plupart des gens de son pays sont persuadés que nous vivons dans des igloos.\nÇa me fait bien rire, car moi, enfant esquimau, je n'ai jamais vu un igloo de ma vie.\nBien sûr, lorsque nos chasseurs sont surpris par la tempête, il leur arrive de construire un petit mur de neige pour se protéger du vent en attendant que l'orage se calme.\nMais, en temps normal, nous habitons de jolies maisons en bois, peintes en marron ou en rouge, avec de vraies fenêtres et des carreaux !\nPapa a construit la maison lui-même, avec notre aide et celle de maman.\nOh ! C'est tout petit : un nid douillet où nous nous entassons tous les sept : Grand-mère, papa, maman, mes frères et ma sœur.\nIl y a juste trois pièces : deux chambres et la grande cuisine où tous les enfants se couchent par terre sur des peaux de caribous que l'on replie pendant la journée...\nPendant l'hiver, il fait nuit presque tout le temps.\n\nD'après J-C Berrier, Ed.G.P. « Rouge et Or »",
+      "figureDesc": "Texte encadré avec bandeau en-tête « Lecture - Compréhension », « Sagesse », « 6ème année de base »",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p059_i1",
+      "topicId": "fr-6-m8",
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Pourquoi Nadlouk ne sait-il pas nager ?",
+      "body": "B) Compréhension :\n1) Pourquoi Nadlouk ne sait-il pas nager ? ……………………………………………",
+      "figureDesc": "Ligne de pointillés pour la réponse",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p059_i2",
+      "topicId": "fr-6-m8",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m8",
+  "topicTitle": "Module 8 : Découvrir d'autres modes de vie",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.38
+  },
+  "topicSubject": "Français",
+  "topicReason": "Le texte sur Nadlouk, un petit Esquimau qui présente son pays glacé et son mode de vie, correspond au module 'Découvrir d'autres modes de vie' (découverte des cultures du monde), avec des questions de compréhension en lecture.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    124
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Lecture d'un texte documentaire",
+    "skill": "Lire un texte à la première personne et répondre à des questions de compréhension en justifiant par des éléments du texte.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "Nadlouk",
+      "Esquimau",
+      "compréhension écrite",
+      "texte à la première personne",
+      "mode de vie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un texte où un enfant d'une autre culture présente son environnement (climat, saisons, activités) peut servir de support à des questions de compréhension fondées sur le lien cause-conséquence, par exemple pourquoi il ne sait pas nager.",
+    "themeGroup": "Textes documentaires"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de page omis : « Sagesse », « Lecture - Compréhension », « 6ème année de base »; pied de page omis (« Lire et s'exprimer », « 58 », « 6ème année de base »)."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "La section « B) Compréhension : » est placée après la question 1 dans le bloc [1] au lieu de la précéder, et la question 1 est dupliquée (bloc séparé « [1] » puis répétée dans le bloc B)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La question « Pourquoi Nadlouk ne sait-il pas nager ? » apparaît deux fois alors qu'elle n'existe qu'une seule fois dans l'image."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les points de suite (ligne de réponse) sont réduits à « …………… » ; il s'agit d'une ligne pleine largeur. Le texte en filigrane en transparence (verso) est ignoré, ce qui est correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

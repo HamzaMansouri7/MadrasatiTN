@@ -1,0 +1,88 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 76,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "مراجعة ودعم: رسم المستقيمات المتعامدة والمتوازية (en réalité une page de mathématiques, pas d'arabe)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُرْسُمْ (ع) الْمُوَسِّطَ الْعَمُودِيَّ لِقِطْعَةِ الْمُسْتَقِيمِ [س ص]",
+      "body": "أُرْسُمْ (ع) الْمُوَسِّطَ الْعَمُودِيَّ لِقِطْعَةِ الْمُسْتَقِيمِ [س ص]\n* اعْتَمِدْ (ع) لِتَرْسُمَ (م) الْمُوَازِيَ لِـ (س ص) وَيَبْعُدُ عَنْهُ بِـ 3 صم.",
+      "figureDesc": "Segment horizontal [س ص] avec l'extrémité س à droite et ص à gauche.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p076_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُرْسُمْ مُسْتَقِيمَيْنِ مُتَوَازِيَيْنِ مِنْ \" أ \" و\" ع \":",
+      "body": "أُرْسُمْ مُسْتَقِيمَيْنِ مُتَوَازِيَيْنِ مِنْ \" أ \" و\" ع \":",
+      "figureDesc": "Un point « أ » marqué d'une croix en haut. En dessous, une droite [ق و] avec un point ع marqué d'un petit trait perpendiculaire sur la droite.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p076_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ- أُرْسُمْ مِنْ \" أ \" و\" ب \" و\" ج \" أَعْمِدَة عَلَى [ق د] تَقْطَعُ [ق م) عَلَى التَّوَالِي فِي \" أ' \" و\" ب' \" و\" ج' \" :",
+      "body": "أ- أُرْسُمْ مِنْ \" أ \" و\" ب \" و\" ج \" أَعْمِدَة عَلَى [ق د] تَقْطَعُ [ق م) عَلَى التَّوَالِي فِي \" أ' \" و\" ب' \" و\" ج' \" :\nب- أَتِمَّ بِالْعَلَامَةِ > أو < أو =\nأ'ب' . ب'ج' . ج'ق",
+      "figureDesc": "Angle de sommet ق : demi-droite (ق م) oblique vers le haut à droite et demi-droite [ق د] horizontale. Sur [ق د] sont marqués les points ج، ب، أ dans l'ordre à partir de ق.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "mathematiques_exercices_evaluations_p076_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u4",
+    "confidence": 0.28
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une révision de géométrie (médiatrice, parallèles et perpendiculaires, distances) qui se rattache le plus près à la Période 3 (polygones, parallélogramme et hauteurs), mais aucun chapitre ne traite explicitement ce contenu, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Droites perpendiculaires et parallèles",
+    "skill": "Tracer la médiatrice d'un segment, des droites parallèles et des perpendiculaires avec les instruments de géométrie, puis comparer des longueurs.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "médiatrice",
+      "droites parallèles",
+      "perpendiculaires",
+      "tracé géométrique",
+      "comparaison de longueurs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices de tracé à l'équerre et à la règle: parallèle à distance donnée, perpendiculaires issues de points à une droite, puis comparaison de segments obtenus avec les signes >, < ou =; réutilisable comme fiche de révision et de soutien en géométrie.",
+    "themeGroup": "Droites, médiatrice et bissectrice"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

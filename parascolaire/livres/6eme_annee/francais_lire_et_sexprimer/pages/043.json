@@ -1,0 +1,90 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 43,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Le dentiste du village",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Le dentiste du village\nJ'ai une dent qui me fait très mal. Ma joue est rouge et enflée.\n« Je vais t'emmener chez M. Sabre, me dit ma mère. »\nM. Sabre, c'est le dentiste du village. Parfois, en sortant de l'école, je le vois devant sa porte. Il me fait très peur avec son énorme ventre, sa grosse tête sans cheveux et sa large moustache qui lui cache la moitié de la bouche et du nez.\nDes camarades m'ont dit que, pour arracher les dents, il plonge une grande pince dans la bouche des clients et que, plus ils crient plus il tire. Et puis, il s'appelle Sabre. Mon Dieu quel nom effrayant. Je dis à ma mère que ma douleur ira toute seule. Mais elle me répond : « Demain nous irons chez M. Sabre. »\nNous voilà dans la salle d'attente. Une dame vient d'entrer dans le cabinet du dentiste. « Mon Dieu, que va-t-il lui arriver ? » Je tends l'oreille. J'entends un bruit de machine qui tourne, tourne... Pauvre femme ! Comme elle doit souffrir ! Enfin, la machine s'arrête. La porte s'ouvre et la dame sort du cabinet.\nMaintenant c'est mon tour. M. Sabre me regarde et me dit : « À nous deux, mon garçon ! »\nMon cœur bat très fort. M. Sabre me fait asseoir dans un fauteuil bizarre.\n-Allons, ouvre la bouche !\n-Je ne veux pas ! Je ne veux pas ! dis-je en tremblant.\n-Comment tu ne veux pas ? Mais laisse-moi seulement regarder. Est-ce que j'ai quelque chose à la main ?\nDès que j'ouvre la bouche M. Sabre s'écrie : « La voilà ! »\nEt il me montre une dent au bout de la pince qu'il a cachée entre ses doigts. Et c'est fini, oui déjà fini ! Je n'ai rien senti.\nÀ partir de ce jour, M. Sabre ne me fait plus peur.",
+      "figureDesc": "Texte encadré avec un titre en italique gras ; en-tête « Lecture - Compréhension » sur un nuage, bandeaux « Sagesse » et « 6ème année de base » ; pied de page « Lire et s'exprimer », page 42. Au verso, on distingue en transparence d'autres exercices.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p043_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.41
+  },
+  "topicSubject": "Français",
+  "topicReason": "Le texte « Le dentiste du village » (mal de dent, peur du dentiste) relève du français et touche à la santé, ce qui le rapproche du Module 6 (Être en forme et mieux se porter), mais le thème reste indirect et le module exact n'est pas confirmé.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Le texte narratif : chez le dentiste",
+    "skill": "Lire un texte narratif court et en comprendre les informations essentielles (personnages, lieu, situation).",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "dentiste",
+      "texte narratif",
+      "village",
+      "mal de dents"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation du quotidien (une visite chez le dentiste racontée à la première personne) qui peut servir de support à des questions de compréhension, à un travail sur les émotions ou à une production écrite sur une peur ou une expérience personnelle.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est omis : « Lecture - Compréhension », « Sagesse », « 6 ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est omis : « Lire et s'exprimer », « 42 », « 6 ème année de base »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« M. Sabre, c'est » : l'image montre « M. Sabre,c'est » sans espace après la virgule. Écart typographique sans importance."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« Je ne veux pas ! Je ne veux pas ! dis-je » : l'image donne « Je ne veux pas ! Je ne veux pas ! dis-je en tremblant ». Le texte est présent, donc c'est correct."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

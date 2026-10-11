@@ -1,0 +1,198 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 28,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Exercices de soutien unité 4 – 6ème année (page de français : grammaire, conjugaison, orthographe, lexique). La page ne contient pas de mathématiques, malgré la matière indiquée.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "Grammaire 1",
+      "instruction": "Souligne le complément et indique devant chaque phrase s'il s'agit d'un C.C.L/C.C.T/COD/COI :",
+      "body": "a) Le fils aide son père. ……………………………\nb) Aicha parle à sa maman. ……………………………\nc) Nous mangeons une soupe. ……………………………\nd) Je pars au cinéma. ……………………………\ne) Ils ont réalisé un bon projet en 2022. ……………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p028_i1",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Grammaire 2",
+      "instruction": "Complète le tableau suivant :",
+      "body": "Phrases : 1) Je me suis perdu dans le désert. 2) Tu vis à Rabat. 3) Hier, j'ai choisi la bonne décision. 4) La semaine dernière, Doha est partie à la forêt. 5) Le mois prochain, nous partagerons notre stratégie du travail. 6) Vous avez acheté du pain à la boulangerie. 7) Jad est né en 2020. 8) Sur le lit, dormait le petit chat. 9) Lundi, nous avons une nouvelle leçon.",
+      "figureDesc": "Tableau à 3 colonnes : « La phrase », « Le complément circonstanciel », « C.C.L ou C.C.T », avec 9 lignes dont les 2 dernières colonnes sont vides.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p028_i2",
+      "topicId": "fr-6-m4",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Grammaire 3",
+      "instruction": "Complète le tableau suivant :",
+      "body": "Phrases : 1) À la maison, Mina prépare un gâteau. 2) Ali aime beaucoup son père. 3) Demain, Le petit garçon jouera avec Hatim.",
+      "figureDesc": "Tableau à 3 colonnes : « Les phrases », « Les éléments ajoutés », « Nature », les 2 dernières colonnes à compléter.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p028_i3",
+      "topicId": "fr-6-m4",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 1",
+      "instruction": "Conjugue au présent du conditionnel :",
+      "body": "a) S'il faisait beau, je (partir) ………………… à la plage.\nb) Si tu m'avais laissé essayer, je (vernir) ………………… ce tableau.\nc) Ils (comprendre) ………………… mieux, s'il s'expliquait tout.\nd) Si nous avions du temps, Nous (prendre) ………………… bien un autre verre de thé.\ne) Si je vous invite, (venir) ………………… -vous avec moi ?",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p028_i4",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Conjugaison 2",
+      "instruction": "Conjugue les verbes entre parenthèses à l'impératif présent :",
+      "body": "a) (Réfléchir/ 2ème pers. plur) ………………… encore un peu.\nb) (choisir/ 1ère pers. plur) ………………… Le bon chemin.\nc) (remplir/ 2ème Pers. sing) ………………… ce bassin.\nd) (finir/ 2ème Pers. plur) …………………vos travaux.\ne) (obéir/ 2ème Pers. sing) ………………… tes parents.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p028_i5",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 1",
+      "instruction": "Complète avec la forme correcte « quel – quels - quelle – quelles » :",
+      "body": "a) ………………… est le titre de ce texte ?\nb) ………………… étage habite-tu ?\nc) ………………… sont les matières que tu préfères ?\nd) À ………………… date aura lieu l'examen ?\ne) ………………… Exercices !",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p028_i6",
+      "topicId": "fr-6-m4",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 2",
+      "instruction": "Complète avec la forme correcte « qu'il - qu'ils - qu'elle - qu'elles » :",
+      "body": "a) Ma sœur m'a dit ………………… va rester chez nous pour toujours.\nb) Je sais ………………… préfère les repas sucrés.\nc) Je trouve ………………… est intelligente.\nd) J'espère ………………… sont belles !",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p028_i7",
+      "topicId": "fr-6-m4",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Orthographe 3",
+      "instruction": "Donne le pluriel des mots suivants :",
+      "body": "- Journal : ………………… ; hôpital : …………………\n- gouvernail : ………………… ; animal : …………………\n- détail : ………………… ; portail : …………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p028_i8",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 1",
+      "instruction": "Forme les mots dérivés en ajoutant un préfixe :",
+      "body": "- connu : ………………… ; normal : …………………\n- conter : ………………… ; utile : …………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p028_i9",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 2",
+      "instruction": "Forme les mots dérivés en ajoutant un suffixe :",
+      "body": "- haut : ………………… ; rapide : …………………\n- facile : ………………… ; correct : …………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "soutien_maths_francais_p028_i10",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "Lexique 3",
+      "instruction": "classe les mots suivants selon le tableau :",
+      "body": "Gaz – pétrole – vent – charbon – la chaleur du soleil – eau - biomasse",
+      "figureDesc": "Tableau à 2 colonnes : « Les sources d'énergie renouvelables » et « Les sources d'énergie non renouvelables », cases vides à remplir.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p028_i11",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m4",
+  "topicTitle": "Module 4 : S'entraider pour mieux réussir",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.19
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est en français (grammaire, conjugaison, orthographe, lexique) ; les compléments COD/COI/CCL/CCT correspondent au Module 4, mais le conditionnel présent (Module 6), l'impératif et l'orthographe sont aussi travaillés, ce qui laisse un doute.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Grammaire, conjugaison, orthographe et lexique",
+    "skill": "Identifier les compléments de phrase, conjuguer au conditionnel et à l'impératif, accorder quel et qu'il(s)/qu'elle(s), former des pluriels et des mots dérivés.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "compléments COD COI CCL CCT",
+      "conditionnel présent",
+      "impératif présent",
+      "quel/quelle",
+      "pluriel en -ail/-al",
+      "préfixes et suffixes"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Série classique d'exercices de soutien courts et variés (identification de fonctions, phrases à compléter, tableaux, dérivation) avec des contextes tunisiens simples, utile comme modèle de structure de fiche de révision multi-rubriques mais peu original dans son contenu.",
+    "ideaValue_comment": null,
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

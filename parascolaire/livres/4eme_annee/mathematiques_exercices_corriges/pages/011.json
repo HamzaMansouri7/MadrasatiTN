@@ -1,0 +1,158 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 11,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المستقيم وأجزاؤه (2): حصر نقط بين نقطتين متباينتين (Droite et ses parties 2 : encadrer des points entre deux points distincts) - Semaine 2",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أرسم النَّقطتيْن \"أ\" و \"ج\" وأرسم النَّقطة \"ب\" المحصورة بينهما ثم أرسم النَّقطة \"د\" بحيث تكون النَّقطة \"أ\" محصورة بين \"ب\" و \"د\".",
+      "body": "ما رأيك في هذه النّقط؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p011_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أرسم النَّقطة \"ب\" بحيث تكون النَّقطة \"ج\" هي منتصف النَّقطتيْن \"أ\" و \"ب\" والنَّقط الثَّلاثة على استقامة واحدة.",
+      "body": "",
+      "figureDesc": "Deux points marqués : « أ » à droite et « ج » un peu plus bas à gauche, sur l'espace de travail.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p011_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم باللّون الأحمر النَّقطتيْن \"م\" و \"د\" والمحصورة بين النَّقطتيْن \"أ\" و \"ب\" والتي لهما نفس البعد عن النَّقطة \"ج\".",
+      "body": "- هل يمكنك أن ترسم نقطا أخرى؟",
+      "figureDesc": "Trois points donnés : « أ » en haut à droite, « ج » au milieu, « ب » en bas à gauche.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p011_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "اِطوِ الورقةَ ثم أنشرها على سطح الطَّاولة.",
+      "body": "- أرسم باللّون الأزرق على خطّ الطّي 10 نقط.\n- أرسم باللّون الأخضر على خط الطّي 10 نقط أخرى.\nماذا تستنتج ؟",
+      "figureDesc": "Dessin d'une feuille pliée posée sur une table, avec la ligne de pliage en pointillés.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "mathematiques_exercices_corriges_p011_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أرسم النّقط \"أ\" \"ب\" \"ج\" \"د\" على المستقيم (ص) بحيث \"أ\" تنتمي إلى [ج د] و \"د\" تنتمي إلى [أ ب] .",
+      "body": "",
+      "figureDesc": "Une droite oblique notée (ص) tracée en bas de la page.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p011_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u6",
+    "confidence": 0.25
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la droite, du segment et de la position de points (point compris entre deux points, milieu, alignement), ce qui relève de la géométrie des droites en Période 1 (droites perpendiculaires et monnaie), seul chapitre de géométrie des droites parmi les chapitres de mathématiques proposés.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Droite, segments et points alignés",
+    "skill": "Placer et construire des points sur une droite selon des relations d'ordre (entre deux points, milieu, équidistance) et en tirer des conclusions.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "droite",
+      "segment",
+      "point compris entre deux points",
+      "milieu",
+      "alignement",
+      "équidistance"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Série d'exercices de construction progressive, du placement guidé à la consigne abstraite, avec une activité de pliage de feuille qui montre qu'une droite contient une infinité de points. Ces situations sont réutilisables en classe.",
+    "themeGroup": "Droites, points et segments"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 1: 'أرسم' dans l'image est 'أرسم' avec hamza, correct; mais 'وأرسم' ok. Aucune erreur majeure ici."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 3: la transcription écrit 'يمكنك' alors que l'image affiche 'يمكنك' avec kasra sous le يـ: 'هل يمكنك' (ok); par contre la phrase 'والمحصورة بين' est correcte, mais 'م' et 'د' sont des points à tracer, ok."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 1: 'النَّقطتيْن' dans l'image est 'النَّقطتيـْن' avec sukun; 'النّقط' (sans fatha) en 'ما رأيك في هذه النّقط' est correct."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4: 'أنشرها' dans l'image est 'أنشرها' sans voyelle; 'الطَّاولة' dans l'image est 'الطّاولة' avec shadda et fatha sur ا (légère différence)."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de page absent: 'الأسبوع 2', titre 'المستقيم وأجزاؤه (2) : حصر نقط بين نقطتين متباينتين', numéro de page 7 et étiquette '(ص)' ne sont pas transcrits."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 2: les lettres 'أ' et 'ج' (points dessinés) ne sont pas indiquées; exercice 3 de même (points أ، ج، ب)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3: 'أرسم باللّون الأحمر النَّقطتيْن' - l'image dit 'النَّقطتيْن \"م\" و \"د\"', conforme."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

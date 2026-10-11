@@ -1,0 +1,372 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 6,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الوحدة الثالثة: صحتي وسلامتي - قراءة وفهم",
+  "items": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "الْوَحْدَةُ الثَّالِثَةُ : صِحَّتِي وَسَلَامَتِي",
+      "body": "يُحَدِّدُ أَحْدَاثَ النَّصِّ وَشَخْصِيَّاتِهِ، وَالْأَزْمِنَةَ، وَالْأَمْكِنَةَ\nالْمَقْطَعُ الْمُنْغَلِقُ : تـ / ـتـ / ـت / ت / تا / تو / تي\nاللُّغَةُ الْعَرَبِيَّةُ - قِرَاءَةٌ وَفَهْمٌ\n(هامش جانبي : السَّنَةُ 1 - اللُّغَةُ الْعَرَبِيَّةُ - قِرَاءَةٌ وَفَهْمٌ - الثُّلَاثِيُّ الثَّانِي - [illisible]) - صفحة 7",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p006_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "نَظَّفَتِ الْأُمُّ طَاوِلَةَ الْفُطُورِ، ثُمَّ نَظَرَتْ لِابْنَتِهَا، وَقَالَتْ :\n- هَلْ نَظَّمْتِ أَدَوَاتِكِ وَهَيَّأْتِ مِحْفَظَتَكِ ؟\n- نَعَمْ يَا أُمِّي، رَصَّفْتُ كُرَّاسَاتِي، وَكُتُبِي فِي مِحْفَظَتِي الْجَدِيدَةِ...\n- وَغُرْفَتُكِ ؟\n- وَضَّبْتُ فِرَاشِي، وَرَتَّبْتُ مَكْتَبِي...\nأَمْسَكَتْ فَتِيحَةُ بِيَدِ أَبِيهَا، وَسَارَتْ فِي طَرِيقِهَا إِلَى الْمَدْرَسَةِ فِي فَرَحٍ وَابْتِهَاجٍ...",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p006_i2"
+    },
+    {
+      "kind": "section",
+      "number": "",
+      "instruction": "أَسْتَثْمِرُ النَّصَّ :",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p006_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبُطُ بِسَهْمٍ :",
+      "body": "فَتِيحَةُ •\nالْأُمُّ •\n\n• - هَلْ نَظَّمْتِ أَدَوَاتِكِ، وَهَيَّأْتِ مِحْفَظَتَكِ ؟\n• - وَضَّبْتُ فِرَاشِي، وَرَتَّبْتُ مَكْتَبِي..\n• - وَغُرْفَتُكِ ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p006_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْتُبُ الْجُمْلَةَ الْمُنَاسِبَةَ لِلصُّورَةِ.",
+      "body": "",
+      "figureDesc": "رسم لبنت ترتب فراش سريرها داخل غرفتها.",
+      "answer": null,
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "evaluations_maths_arabe_p006_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَشْطُبُ الْجُمْلَةَ الَّتِي لَا تُنَاسِبُ النَّصَّ.",
+      "body": "• رَتَّبَتِ الْأُمُّ غُرْفَةَ فَتِيحَةَ.\n• نَظَّمَتِ الْأُمُّ مِحْفَظَةَ فَتِيحَةَ.\n• ذَهَبَتْ فَتِيحَةُ مَعَ أَبِيهَا إِلَى الْمَدْرَسَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "evaluations_maths_arabe_p006_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَرْبُطُ كُلَّ شَخْصِيَّةٍ بِمَا قَامَتْ بِهِ.",
+      "body": "الْأَبُ •\nفَتِيحَةُ •\nالْأُمُّ •\n\n• رَتَّبَتْ غُرْفَتَهَا.\n• نَظَّفَتْ طَاوِلَةَ الْفُطُورِ.\n• صَاحَبَ ابْنَتَهُ إِلَى الْمَدْرَسَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "evaluations_maths_arabe_p006_i7"
+    }
+  ],
+  "topicId": "ar-1-u3",
+  "topicTitle": "Unité 3 : Mon compagnon pour ma santé et ma sécurité",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u3",
+  "topicConfidencePrev": 0.6666666666666666,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u3",
+    "confidence": 0.94
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une séance de lecture-compréhension en arabe intitulée « الوحدة الثالثة : صحتي وسلامتي » (Unité 3, santé et sécurité) et son texte porte sur l'ordre et l'hygiène (nettoyer, ranger), ce qui correspond à l'Unité 3 d'arabe.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Lecture : ranger et préparer ses affaires",
+    "skill": "Comprendre un court texte dialogué et identifier qui a fait quelle action (personnages, actions, cohérence avec le texte).",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "production_ecrite",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "dialogue mère-fille",
+      "routine matinale",
+      "hygiène et ordre",
+      "verbes à forme intensive"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un court dialogue du quotidien (mère et fille préparent la journée d'école) sert de support à des exercices variés : relier répliques et personnages, légender une image, barrer la phrase fausse, associer personnages et actions. Ce modèle est facile à transposer à d'autres routines.",
+    "themeGroup": "Lecture: vie quotidienne"
+  },
+  "audit": {
+    "accuracy": 0.7,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête de la page est absent : « الوحدة الثالثة : صحتي وسلامتي », « يحدد أحداث النص وشخصياته، والأزمنة، والأمكنة », « المقطع المنغلق : تـ / ـتـ / ـت / ت / تا / تو / تي », « اللغة العربية قراءة وفهم »"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les titres « أَسْتَثْمِرُ النَّصَّ : », le numéro de page 7 et le texte latéral (السنة 1, اللغة العربية - قراءة وفهم) sont absents"
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« وَكُتُبِي » : l'image porte « وَكُتُبِي » mais la phrase est « رَصَّفْتُ كُرَّاسَاتِي، وَكُتُبِي » (ok). En revanche « وَغُرْفَتُكِ » est lu « وَغُرْفَتُكِ » alors que l'image montre « وَغُرْفَتُكِ ؟ » : à vérifier"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« مَكْتَبِي » : l'image montre « مَكْتَبِي » (ok). « أَدَوَاتِكِ » : l'image montre « أَدَوَاتِكِ » (ok)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« نَظَّمْتِ », « رَصَّفْتُ », « وَضَّبْتُ » : l'image porte « نَظَمْتِ », « رَصَفْتُ », « وَضَبْتُ » sans chadda (les chaddas sont ajoutées à tort). De même « نَظَّمَتِ » et « رَتَّبَتْ » dans les exercices : « نَظَمَتِ », « رَتَبَتْ » dans l'image"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« نَظَّفَتِ » : l'image porte « نَظَفَتِ » sans chadda ; « كُرَّاسَاتِي » : l'image porte « كُرَاسَاتِي »"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الْمَدْرَسَةِ » : l'image porte « الْمَدْرَسَةِ » (ok) ; « صَاحَبَ » : l'image porte « صَاحَبَ » (ok)"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Les colonnes des exercices 1 et 4 sont mélangées (ordre des éléments de droite et de gauche), ce qui est acceptable mais non exact"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête de la page est absent : « الوحدة الثالثة : صحتي وسلامتي », « يحدد أحداث النص وشخصياته، والأزمنة، والأمكنة », « المقطع المنغلق : تـ / ـتـ / ـت / ت / تا / تو / تي » et l'étiquette « اللغة العربية – قراءة وفهم »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre de section « أَسْتَثْمِرُ النَّصَّ : » (avant l'exercice 1) est absent. Le numéro de page 7 et le texte latéral (السنة 1, اللغة العربية - قراءة وفهم, الثلاثي الثاني) sont aussi absents."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« مِحْفَظَتَكِ » dans le texte et l'exercice 1 : l'image porte « مِحْفَظَتَكِ » (kasra sur le mīm, fatha sur le tā'), la transcription a « مَحْفَظَتِكِ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« مِحْفَظَتِي » dans le texte et « مِحْفَظَةَ » dans l'exercice 3 : l'image porte un mīm avec kasra, la transcription a « مَحْفَظَتِي » et « مَحْفَظَةَ »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أَرْبِطُ » dans les consignes des exercices 1 et 4 : l'image porte « أَرْبُطُ » (damma sur le bā')."
+      },
+      {
+        "type": "faux positif du contrôle",
+        "severity": "minor",
+        "detail": "Les chaddas de « نَظَّفَتِ », « نَظَّمْتِ », « رَصَّفْتُ », « وَضَّبْتُ », « رَتَّبْتُ », « كُرَّاسَاتِي » sont visibles dans l'image. L'affirmation du contrôle selon laquelle elles seraient ajoutées à tort n'est pas confirmée. « وَغُرْفَتُكِ ؟ » est correct. L'ordre des colonnes des exercices 1 et 4 est acceptable."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "header",
+      "number": "",
+      "instruction": "الْوَحْدَةُ الثَّالِثَةُ : صِحَّتِي وَسَلَامَتِي",
+      "body": "يُحَدِّدُ أَحْدَاثَ النَّصِّ وَشَخْصِيَّاتِهِ، وَالْأَزْمِنَةَ، وَالْأَمْكِنَةَ\nالْمَقْطَعُ الْمُنْغَلِقُ : تـ / ـتـ / ـت / ت / تا / تو / تي\nاللُّغَةُ الْعَرَبِيَّةُ - قِرَاءَةٌ وَفَهْمٌ\n(هامش جانبي : السَّنَةُ 1 - اللُّغَةُ الْعَرَبِيَّةُ - قِرَاءَةٌ وَفَهْمٌ - الثُّلَاثِيُّ الثَّانِي - [illisible]) - صفحة 7",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p006_i1"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "نَظَّفَتِ الْأُمُّ طَاوِلَةَ الْفُطُورِ، ثُمَّ نَظَرَتْ لِابْنَتِهَا، وَقَالَتْ :\n- هَلْ نَظَّمْتِ أَدَوَاتِكِ وَهَيَّأْتِ مِحْفَظَتَكِ ؟\n- نَعَمْ يَا أُمِّي، رَصَّفْتُ كُرَّاسَاتِي، وَكُتُبِي فِي مِحْفَظَتِي الْجَدِيدَةِ...\n- وَغُرْفَتُكِ ؟\n- وَضَّبْتُ فِرَاشِي، وَرَتَّبْتُ مَكْتَبِي...\nأَمْسَكَتْ فَتِيحَةُ بِيَدِ أَبِيهَا، وَسَارَتْ فِي طَرِيقِهَا إِلَى الْمَدْرَسَةِ فِي فَرَحٍ وَابْتِهَاجٍ...",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p006_i2"
+    },
+    {
+      "kind": "section",
+      "number": "",
+      "instruction": "أَسْتَثْمِرُ النَّصَّ :",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p006_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبُطُ بِسَهْمٍ :",
+      "body": "فَتِيحَةُ •\nالْأُمُّ •\n\n• - هَلْ نَظَّمْتِ أَدَوَاتِكِ، وَهَيَّأْتِ مِحْفَظَتَكِ ؟\n• - وَضَّبْتُ فِرَاشِي، وَرَتَّبْتُ مَكْتَبِي..\n• - وَغُرْفَتُكِ ؟",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p006_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْتُبُ الْجُمْلَةَ الْمُنَاسِبَةَ لِلصُّورَةِ.",
+      "body": "",
+      "figureDesc": "رسم لبنت ترتب فراش سريرها داخل غرفتها.",
+      "answer": null,
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "id": "jisr_ennajah_1ere_evaluations_p006_i5"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَشْطُبُ الْجُمْلَةَ الَّتِي لَا تُنَاسِبُ النَّصَّ.",
+      "body": "• رَتَّبَتِ الْأُمُّ غُرْفَةَ فَتِيحَةَ.\n• نَظَّمَتِ الْأُمُّ مِحْفَظَةَ فَتِيحَةَ.\n• ذَهَبَتْ فَتِيحَةُ مَعَ أَبِيهَا إِلَى الْمَدْرَسَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "jisr_ennajah_1ere_evaluations_p006_i6"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَرْبُطُ كُلَّ شَخْصِيَّةٍ بِمَا قَامَتْ بِهِ.",
+      "body": "الْأَبُ •\nفَتِيحَةُ •\nالْأُمُّ •\n\n• رَتَّبَتْ غُرْفَتَهَا.\n• نَظَّفَتْ طَاوِلَةَ الْفُطُورِ.\n• صَاحَبَ ابْنَتَهُ إِلَى الْمَدْرَسَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": null,
+      "difficultyGuess": null,
+      "id": "jisr_ennajah_1ere_evaluations_p006_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "النَّصُّ :",
+      "body": "نَظَّفَتِ الْأُمُّ طَاوِلَةَ الْفُطُورِ، ثُمَّ نَظَرَتْ لِابْنَتِهَا، وَقَالَتْ :\n- هَلْ نَظَّمْتِ أَدَوَاتِكِ وَهَيَّأْتِ مَحْفَظَتِكِ ؟\n- نَعَمْ يَا أُمِّي، رَصَّفْتُ كُرَّاسَاتِي، وَكُتُبِي فِي مَحْفَظَتِي الْجَدِيدَةِ...\n- وَغُرْفَتُكِ ؟\n- وَضَّبْتُ فِرَاشِي، وَرَتَّبْتُ مَكْتَبِي...\nأَمْسَكَتْ فَتِيحَةُ بِيَدِ أَبِيهَا، وَسَارَتْ فِي طَرِيقِهَا إِلَى الْمَدْرَسَةِ فِي فَرَحٍ وَابْتِهَاجٍ...",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p006_i1",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبِطُ بِسَهْمٍ :",
+      "body": "فَتِيحَةُ •\nالْأُمُّ •\n\n• - هَلْ نَظَّمْتِ أَدَوَاتِكِ، وَهَيَّأْتِ مَحْفَظَتِكِ ؟\n• - وَضَّبْتُ فِرَاشِي، وَرَتَّبْتُ مَكْتَبِي..\n• - وَغُرْفَتُكِ ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "jisr_ennajah_1ere_evaluations_p006_i2",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَكْتُبُ الْجُمْلَةَ الْمُنَاسِبَةَ لِلصُّورَةِ.",
+      "body": "",
+      "figureDesc": "رسم لبنت ترتب فراش سريرها داخل غرفتها.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "jisr_ennajah_1ere_evaluations_p006_i3",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَشْطُبُ الْجُمْلَةَ الَّتِي لَا تُنَاسِبُ النَّصَّ.",
+      "body": "• رَتَّبَتِ الْأُمُّ غُرْفَةَ فَتِيحَةَ.\n• نَظَّمَتِ الْأُمُّ مَحْفَظَةَ فَتِيحَةَ.\n• ذَهَبَتْ فَتِيحَةُ مَعَ أَبِيهَا إِلَى الْمَدْرَسَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p006_i4",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أَرْبِطُ كُلَّ شَخْصِيَّةٍ بِمَا قَامَتْ بِهِ.",
+      "body": "الْأَبُ •\nفَتِيحَةُ •\nالْأُمُّ •\n\n• رَتَّبَتْ غُرْفَتَهَا.\n• نَظَّفَتْ طَاوِلَةَ الْفُطُورِ.\n• صَاحَبَ ابْنَتَهُ إِلَى الْمَدْرَسَةِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p006_i5",
+      "topicId": "ar-1-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

@@ -2,7 +2,7 @@
 import json, re, sys, collections
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8')
-A = Path('parascolaire/_original_frozen/_archive')
+A = Path('parascolaire_frozen/_archive')
 ch = json.loads(re.search(r'TUNISIAN_CURRICULUM_CHAPTERS:\s*CurriculumChapter\[\]\s*=\s*(\[[\s\S]*?\]);', Path('src/app/core/data/curriculum-chapters.data.ts').read_text(encoding='utf-8')).group(1))
 byid = {c['id']: c for c in ch}; cov = collections.defaultdict(lambda: collections.defaultdict(set)); pages = collections.Counter(); multi = collections.Counter(); nochap = collections.Counter(); book_rows = {}
 for pf in sorted(A.glob('*/pages/*.json')):

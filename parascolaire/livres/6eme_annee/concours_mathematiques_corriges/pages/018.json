@@ -1,0 +1,185 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 18,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Concours : corrigé fin du problème (vitesse et distance) et Situation 3 : aires d'un disque, d'un secteur circulaire, d'un losange et d'un trapèze rectangle ; pourcentage, fractions et coût des travaux de dallage",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "",
+      "instruction": "تتمة تصحيح الوضعية السابقة (حساب المسافة بين المحطة والضيعة)",
+      "body": "75 كم -----> 60 دق\n؟ كم -----> 49 دق\nالمسافة المقطوعة بالحافلة : ( 49 × 75 ) : 60 = 61.25 كم\nالمسافة الفاصلة بين المحطة و الضيعة : 61.25 + 1.5 = 62.75 كم",
+      "figureDesc": "",
+      "answer": "المسافة المقطوعة بالحافلة = 61.25 كم ؛ المسافة الفاصلة بين المحطة و الضيعة = 62.75 كم",
+      "id": "concours_mathematiques_corriges_p018_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "الوضعية عدد 3 : 8 نقاط\nتملك البلدية 3 قطع متصلة .",
+      "body": "- القطعة الأولى على شكل جزء دائري مركزها \"م\".\n- القطعة الثانية على شكل معيّن أ م ج د قيس مساحتها 1.8 هـآ.\n- القطعة الثالثة على شكل شبه منحرف قائم ( أ د ب هـ )\n- ق ج = 120 م // دم = 150 م // الزاوية أ م ج = 110 °\n- قيس مساحة القرص الدائري تمثّل 5/3 قيس مساحة شبه المنحرف\n1 / أحسب قيس مساحة الأرض.",
+      "figureDesc": "Figure : un disque (centre م) dont un secteur est enlevé ; le losange أ م ج د est accolé au secteur (points أ en haut, ج en bas, م à gauche, د à droite) avec les diagonales en pointillés. À droite, le trapèze rectangle أ د ب هـ (أ et هـ en haut, د et ب en bas, angles droits marqués en ب et هـ). Le point ق est le pied de la perpendiculaire issue de ج sur (م د) / (د ق) en pointillés avec angle droit marqué ; l'angle en م est marqué.",
+      "answer": "قيس ضلع المعين = شعاع الدائرة = 18000 : 120 = 150 م\nقيس مساحة القرص الدائري : 150 × 150 × 3.14 = 70650 م²\nقيس مساحة شبه المنحرف : ( 70650 × 3 ) : 5 = 42390 م²\nقيس مساحة الجزء الدائري : ( 70650 × 250 ) : 360 = 49062.5 م²\nقيس المساحة الجملية : 49062.5 + 18000 + 42390 = 109452.5 م²",
+      "id": "concours_mathematiques_corriges_p018_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "confidence": 0.93
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "2/ أحسب ثمن مواد البناء.",
+      "body": "كلفت البلدية مقاولا لتبليط 20% المساحة الجملية بحساب 25 د المتر المربع الواحد.\nإذا علمت أن مصاريف اليد العاملة تمثل 3/4 ثمن مواد البناء وأن مصاريف التجهيز تمثل 13/3 مصاريف اليد العاملة .",
+      "figureDesc": "",
+      "answer": "المساحة المبلطة : 109452.5 : 5 = 21890.5 د\nكلفة التبليط : 21890.5 × 25 = 547262.5 د\nثمن مواد البناء : ( 547262.5 × 4 ) : 20 = 109452.5 د",
+      "id": "concours_mathematiques_corriges_p018_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.93
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p3",
+    "confidence": 0.39
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est un corrigé de concours avec une situation-problème à plusieurs étapes (aires du disque, du secteur, du losange et du trapèze, pourcentage, fractions, coûts) et un problème de vitesse, ce qui correspond à la synthèse générale préparant au concours d'entrée aux collèges pilotes.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    15,
+    16
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Aires, pourcentages et coût des travaux",
+    "skill": "Calculer l'aire de figures composées (disque, secteur, losange, trapèze rectangle) puis résoudre un problème de pourcentage, de fractions et de coût de dallage.",
+    "pageType": "mixed",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "aire du disque",
+      "secteur circulaire",
+      "losange",
+      "trapèze rectangle",
+      "pourcentage",
+      "coût de dallage",
+      "proportionnalité"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Une situation d'intégration réaliste : une commune possède un terrain composé de plusieurs parcelles de formes différentes. Il faut en calculer l'aire totale, puis chiffrer des travaux de dallage sur un pourcentage de cette surface, avec main-d'œuvre et équipement exprimés en fractions du coût des matériaux. La page contient aussi la fin du corrigé d'un problème de vitesse et de distance résolu par la règle de trois.",
+    "themeGroup": "Pourcentages et proportionnalité"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "claude-high",
+    "accuracy": 0.93,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.6,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Le titre « تتمة تصحيح الوضعية السابقة (المسافة المقطوعة بالحافلة) » n'existe pas dans l'image ; la page commence directement par « 75 كم -----> 60 دق »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les mentions « réponse: » ajoutées plusieurs fois, ainsi que « [] », « [1] » et « [2] », sont inventées. La ligne « réponse: المسافة المقطوعة بالحافلة = 61.25 كم ؛ ... » est une répétition ajoutée."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "L'ordre est faux : la question 1 « أحسب قيس مساحة الأرض » vient après les données, et la question 2 « أحسب ثمن مواد البناء » après la phrase sur la dépense (20%, 25 د) et la phrase « إذا علمت... ». La transcription mélange ces éléments. La phrase sur le carrelage de 20% se trouve après le calcul de l'aire totale."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« هـآ » doit être « هـ » (1.8 هـ ; en fait « هـ » suivi de « آ » = هكتار) ; le texte de l'image est « 1.8 هـآ »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre « الوضعية عدد 3 » est écrit en style décoré dans l'image (« الوضعية عــدد: 3 ») ; les deux-points sont à vérifier."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Le texte de l'énoncé « إذا علمت أن مصاريف اليد العاملة تمثل 3/4 ثمن مواد البناء وأن مصاريف التجهيز تمثل 13/3 مصاريف اليد العاملة . » est placé dans le mauvais ordre, mais il est présent. La figure et ses lettres (أ، ب، ج، د، هـ، م، ق) ne sont pas décrites."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "« ق ج = 120 م » : correct. L'angle « 110° » est correct. « 21890.5 د (م²) » : l'image indique « 21890.5 د » pour l'aire carrelée, avec « (م²) » ajouté."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« الزاوية أ م ج » : l'image écrit « أ م^ ج » (angle avec chapeau), pas le mot « الزاوية »."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "",
+      "instruction": "تتمة تصحيح الوضعية السابقة (المسافة المقطوعة بالحافلة)",
+      "body": "75 كم ----> 60 دق\n؟ كم ----> 49 دق\nالمسافة المقطوعة بالحافلة : ( 49 × 75 ) : 60 = 61.25 كم\nالمسافة الفاصلة بين المحطة و الضيعة : 61.25 + 1.5 = 62.75 كم",
+      "figureDesc": "",
+      "answer": "المسافة المقطوعة بالحافلة = 61.25 كم ؛ المسافة الفاصلة بين المحطة و الضيعة = 62.75 كم",
+      "confidence": 0.9,
+      "id": "concours_math_6eme_corriges_p018_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "الوضعية عدد 3 : 8 نقاط — تملك البلدية 3 قطع متصلة. 1 / أحسب قيس مساحة الأرض.",
+      "body": "- القطعة الأولى على شكل جزء دائري مركزها \" م \".\n- القطعة الثانية على شكل معيّن أ م ج د قيس مساحتها 1.8 هـآ.\n- القطعة الثالثة على شكل شبه منحرف قائم ( أ د ب هـ ).\n- ق ج = 120 م // دم = 150 م // الزاوية أ م ج = 110 °\n- قيس مساحة القرص الدائري تمثّل 5/3 قيس مساحة شبه المنحرف",
+      "figureDesc": "رسم: جزء دائري مركزه م، معيّن أ م ج د داخله (قطراه متقاطعان بخطين متقطعين)، وشبه منحرف قائم أ د ب هـ على اليمين؛ ق نقطة على امتداد الارتفاع من ج نحو الضلع د ق (زاوية قائمة)؛ الزاوية أ م ج = 110°.",
+      "answer": "قيس ضلع المعين = شعاع الدائرة = 18000 : 120 = 150 م\nقيس مساحة القرص الدائري : 150 × 150 × 3.14 = 70650 م²\nقيس مساحة شبه المنحرف : ( 70650 × 3 ) : 5 = 42390 م²\nقيس مساحة الجزء الدائري : ( 70650 × 250 ) : 360 = 49062.5 م²\nقيس المساحة الجملية : 49062.5 + 18000 + 42390 = 109452.5 م²",
+      "confidence": 0.88,
+      "id": "concours_math_6eme_corriges_p018_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أحسب ثمن مواد البناء.",
+      "body": "كلفت البلدية مقاولا لتبليط 20% المساحة الجملية بحساب 25 د المتر المربع الواحد.\nإذا علمت أن مصاريف اليد العاملة تمثل 3/4 ثمن مواد البناء وأن مصاريف التجهيز تمثل 13/3 مصاريف اليد العاملة.",
+      "figureDesc": "",
+      "answer": "المساحة المبلطة : 109452.5 : 5 = 21890.5 د (م²)\nكلفة التبليط : 21890.5 × 25 = 547262.5 د\nثمن مواد البناء : ( 547262.5 × 4 ) : 20 = 109452.5 د",
+      "confidence": 0.85,
+      "id": "concours_math_6eme_corriges_p018_i3",
+      "topicId": "math-6-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

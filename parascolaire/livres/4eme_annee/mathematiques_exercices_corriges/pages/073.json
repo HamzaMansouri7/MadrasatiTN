@@ -1,0 +1,110 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 73,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 19 – الامتحان الثلاثي الثاني (4) : عمليات على الأعداد، الأطوال والسعات، الزمن، التعامد والزوايا، مسائل",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) احسب بطريقتيْن مختلفتيْن :",
+      "body": "........ = 6 x (78 - 135)\n........ = 7 x (63 + 277)\nب) قارورة بها 40 صل من العطر. لمئلها صبَّ فيها بائع العطورات 6 دسل. احسب سعة القارورة باللتر.",
+      "figureDesc": "Deux lignes de calcul avec pointillés à compléter ; espace libre pour la réponse de la question ب.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p073_i1",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "تدوم حصّة مادّة الرّياضيّات ثُلثي ساعة. أرسم عَقْرَبَيْ ساعة الانتهاء.",
+      "body": "زمن بداية الحصّة / زمن الانتهاء",
+      "figureDesc": "Deux horloges à aiguilles : celle de droite (début de la séance) montre environ 10h05 (petite aiguille vers 10, grande vers 1) ; celle de gauche (fin) est vide, avec seulement le centre, à compléter en dessinant les aiguilles.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p073_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارسم مستقيما (د) عموديًا على (س) ويمرّ من \"م\" ثمّ عيّن عليه نقطة \"ك\".",
+      "body": "لوّن بالأزرق الزّاوية الحادّة التي تمرّ أحد ضلعيها من \"ك\" وباللون الأحمر لوّن زاوية قائمة تشترك معها في أحد الضلعين.",
+      "figureDesc": "Une droite (س) passant par le point م et une demi-droite (ع) partant de م formant un angle aigu avec (س).",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p073_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَزَجَتْ أمّ 3 ل من عصير اللّيمون بـ 9 ل من الماء لتصنع خليطا من عصير اللّيمون.",
+      "body": "أحضرت كؤوسا سعة الواحدة 2 دسل لتوزيعها على الحاضرين في عيد ميلاد ابنها. كم لترا بقي لها إذا علمت أنّ عدد الحاضرين 50 وأنّ 5 منهم امتنعوا عن الشّرب ؟ كم كُلفة هذا الخليط إذا اشترت 10كغ ليمون بـ 430مي الكغ الواحد و 4كغ سكر بـ 480مي الكغ الواحد وأصباغا بـ 680 مي؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p073_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-4-p6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-p6",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Cette page est un devoir de synthèse du deuxième trimestre (examen trimestriel) qui mêle opérations, longueurs et capacités, temps, perpendicularité et angles, et problèmes. Elle couvre donc plusieurs chapitres et aucun chapitre officiel ne lui correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    126
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révisions de fin de trimestre en mathématiques",
+    "skill": "Mobiliser calcul, mesures de capacité et de durée, perpendicularité, angles et résolution de problèmes dans des situations variées.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "distributivité",
+      "capacités",
+      "durée",
+      "droites perpendiculaires",
+      "angles",
+      "problème de coût"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les situations concrètes sont réutilisables : calculer de deux façons une même expression, remplir une bouteille de parfum, dessiner les aiguilles à l'heure de fin d'une séance, colorier des angles, préparer un mélange de jus avec distribution en gobelets puis calcul du coût.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

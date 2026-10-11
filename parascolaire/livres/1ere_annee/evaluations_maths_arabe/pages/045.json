@@ -1,0 +1,103 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 45,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "مقارنة وترتيب الأعداد إلى 9",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أ- أُلَوِّنُ خَانَةَ أَصْغَرِ عَدَدٍ.\nب- أَكْتُبُ الْأَعْدَادَ الَّتِي لَوَّنْتُ خَانَاتِهَا فِي الْفَرَاغَاتِ :",
+      "body": "تَصَاعُدِيًّا : .......... > .......... > ..........\nتَنَازُلِيًّا : .......... < .......... < ..........",
+      "figureDesc": "ثلاث مجموعات من الخانات تحتوي على أعداد: الأولى (7، 6، 5، 8)، الثانية (4، 9، 7، 6)، الثالثة (6، 8، 9، 7)",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "evaluations_maths_arabe_p045_i1",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُكْمِلُ الْفَرَاغَاتِ بِكِتَابَةِ اسْمِ الْحَيْوَانِ وَالرَّقْمِ الْمُنَاسِبِ.",
+      "body": "قَفَزَ الضِّفْدَعُ 5 قَفَزَاتٍ، أَمَّا الْأَرْنَبُ فَقَفَزَ 8 قَفَزَاتٍ.\n• عَدَدُ قَفَزَاتِ .......... أَصْغَرُ مِنْ عَدَدِ قَفَزَاتِ .......... لِأَنَّ : .......... > ..........\n• عَدَدُ قَفَزَاتِ .......... أَكْبَرُ مِنْ عَدَدِ قَفَزَاتِ .......... لِأَنَّ : .......... < ..........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p045_i2",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أ- أَكْتُبُ عَدَدَ أَشْجَارِ الْبُرْتُقَالِ :\nب- أَرْسُمُ عَلَامَةَ (X) أَمَامَ الْإِفَادَةِ الصَّحِيحَةِ.\nج- أُعِيدُ كِتَابَةَ كُلِّ إِفَادَةٍ صَحِيحَةٍ تُنَاسِبُ التَّعْلِيلَ.",
+      "body": "يَمْلِكُ جَدِّي فِي ضَيْعَتِهِ 8 أَشْجَارِ زَيْتُونٍ وَيَمْلِكُ أَيْضًا أَشْجَارَ بُرْتُقَالٍ عَدَدُهَا يَأْتِي مُبَاشَرَةً بَعْدَ عَدَدِ أَشْجَارِ الزَّيْتُونِ.\nأ- أَكْتُبُ عَدَدَ أَشْجَارِ الْبُرْتُقَالِ : ..........\nب- أَرْسُمُ عَلَامَةَ (X) أَمَامَ الْإِفَادَةِ الصَّحِيحَةِ :\n• عَدَدُ أَشْجَارِ الزَّيْتُونِ أَصْغَرُ مِنْ عَدَدِ أَشْجَارِ الْبُرْتُقَالِ. [ ]\n• عَدَدُ أَشْجَارِ الْبُرْتُقَالِ أَكْبَرُ مِنْ عَدَدِ أَشْجَارِ الزَّيْتُونِ. [ ]\n• عَدَدُ أَشْجَارِ الْبُرْتُقَالِ أَصْغَرُ مِنْ عَدَدِ أَشْجَارِ الزَّيْتُونِ. [ ]\nج- أُعِيدُ كِتَابَةَ كُلِّ إِفَادَةٍ صَحِيحَةٍ تُنَاسِبُ التَّعْلِيلَ :\n• ........................................ لِأَنَّ .......... > ..........\n• ........................................ لِأَنَّ .......... < ..........",
+      "figureDesc": "ثلاث خانات بيضاوية لوضع علامة (X) أمام العبارات الصحيحة",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p045_i3",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أُنْجِزُ وَأَتَمَيَّزُ : أُكْمِلُ الْفَرَاغَاتِ بِمَا يُنَاسِبُ مِنَ الْأَرْقَامِ.",
+      "body": "فِي مُبَارَاةٍ لِكُرَةِ الْيَدِ سَجَّلَ اللَّاعِبُ رَقْمُ 7 خَمْسَةَ أَهْدَافٍ وَسَجَّلَ اللَّاعِبُ رَقْمُ 2 تِسْعَةَ أَهْدَافٍ.\n• اللَّاعِبُ رَقْمُ .......... سَجَّلَ .......... أَهْدَافٍ.\n• اللَّاعِبُ رَقْمُ .......... سَجَّلَ .......... أَهْدَافٍ.\n• اللَّاعِبُ رَقْمُ .......... سَجَّلَ أَقَلَّ مِنَ اللَّاعِبِ رَقْمِ .......... لِأَنَّ .......... > ..........\n• اللَّاعِبُ رَقْمُ .......... سَجَّلَ أَكْثَرَ مِنَ اللَّاعِبِ رَقْمِ .......... لِأَنَّ .......... < ..........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p045_i4",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "math-1-p2",
+  "topicTitle": "Période 2 : Nombres de 6 à 9, comparaison, ordre et lignes",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p1",
+    "confidence": 0.93
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la comparaison et le rangement des nombres jusqu'à 9 (ordre croissant et décroissant, plus petit et plus grand, nombre qui suit), ce qui correspond à la Période 2 : nombres de 6 à 9, comparaison et ordre.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Comparaison et rangement des nombres jusqu'à 9",
+    "skill": "Comparer et ranger des nombres de 0 à 9 avec les symboles < et >, et trouver le nombre qui suit un nombre donné.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "comparaison de nombres",
+      "ordre croissant",
+      "ordre décroissant",
+      "symboles < et >",
+      "nombre suivant",
+      "nombres jusqu'à 9"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des mises en situation du quotidien (sauts d'animaux, arbres d'une ferme, buts d'un match de handball) servent à justifier une comparaison par les signes < et >, avec un coloriage du plus petit nombre, un rangement croissant ou décroissant, et des affirmations à cocher avec justification.",
+    "themeGroup": "Comparaison et rangement des nombres"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

@@ -1,0 +1,60 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 76,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite – S'entraider pour mieux réussir (phrases modèles sur l'entraide)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "B",
+      "instruction": "S'entraider pour mieux réussir :",
+      "body": "• Bruno réussit à faire des relations d'amitié avec de petits garçons de son âge.\n• Il faut respecter les autres et venir en aide aux personnes en difficulté.\n• Les hommes ont besoin les uns des autres.\n• Il ne faut pas taquiner les autres.\n• Tous les enfants viennent en aide au vieil homme.\n• La jeune femme vient en aide au vieillard parce qu'il ne peut pas traverser la rue tout seul.\n• La demoiselle vient en aide à la dame handicapée car elle ne peut pas pousser sa chaise roulante toute seule.\n• L'handicapé est tombé car il ne peut pas passer l'escalier avec sa chaise roulante.\n• Julien accourt, il vient en aide au non-voyant parce qu'un camion va le renverser.\n• Sami vient en aide à un enfant petit de taille car ses amis se moquent de lui.\n• Julien vient en aide à Paul parce qu'un chien féroce l'attaque.\n• Le pigeon vient en aide à la fourmi. La fourmi a besoin d'aide car elle ne sait pas nager.\n• Les habitants paniquent car un éléphant est en liberté dans la ville.\n• Les employés du cirque s'unissent pour rendre l'éléphant au cirque.\n• Le pigeon offre un service à la fourmi, il la sauve de la mort.\n• Julien offre un service à l'aveugle, il le sauve d'une mort certaine.\n• Les voisins s'entraident pour faire une campagne de propreté dans leur cité.\n• Mes amis et moi, nous nous entraidons pour mieux faire notre projet de classe.\n• Notre maîtresse vient toujours à notre aide pour faire un bon travail.\n• Julien intervient pour aider le petit Japonais parce que les méchants garçons l'agressent.",
+      "figureDesc": "Encadré aux coins arrondis sur fond gris ; en-tête « Expression écrite », « Sagesse », « 6ème année de base » ; pied de page « Lire et s'exprimer », page 75. Texte en transparence (verso de la page) visible en arrière-plan, non transcrit.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p076_i1",
+      "topicId": "fr-6-m4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m4",
+  "topicTitle": "Module 4 : S'entraider pour mieux réussir",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "fr-6-m4",
+  "topicConfidencePrev": 0.5,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m4",
+    "confidence": 0.99
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est intitulée « S'entraider pour mieux réussir » et propose des phrases modèles sur l'entraide, ce qui correspond au Module 4 de français (entraide, compléments).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "L'entraide et le respect d'autrui",
+    "skill": "Produire des phrases et un court texte sur l'entraide en réutilisant des phrases modèles et un vocabulaire adapté.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "entraide",
+      "solidarité",
+      "respect",
+      "amitié",
+      "expression écrite",
+      "phrases modèles"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Banque de phrases modèles sur les valeurs de solidarité et de respect, réutilisable comme point de départ pour une production écrite guidée (rédiger un court paragraphe ou imaginer une situation où un enfant aide un camarade), mais sans situation ni format original.",
+    "themeGroup": "Métiers, citoyenneté et vie sociale"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

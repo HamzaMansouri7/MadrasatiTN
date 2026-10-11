@@ -1,0 +1,133 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 22,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 5 – قيس الطول (2): الديسمتر والصنتمتر",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الأسبوع 5",
+      "body": "قيس الطول (2) : الديسمتر والصنتمتر",
+      "figureDesc": "عنوان الصفحة داخل إطار مستطيل، والأسبوع 5 داخل شكل بيضوي. رقم الصفحة 18 في أسفل الصفحة.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mathematiques_exercices_corriges_p022_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اكتب الوحدة المناسبة :",
+      "body": "- عمق بئر هو : 18 ..........\n- عَرْضُ قِطْعَةِ قُمَاشٍ هُو : 8 ..........\n- سمك قطعة لوح من الخشب هو : 5 ..........\n- عَرْضُ قَاعَةِ القِسْمِ هُو : 6 ..........",
+      "figureDesc": "四 فراغات منقطة لكتابة الوحدة بعد كل عدد، موزعة على عمودين يفصل بينهما خط عمودي.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p022_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "مَا هُوَ بِالصّنْتِيمتر طُولُ القِطْعَةِ [أ ب] :",
+      "body": "",
+      "figureDesc": "مسطرة مدرجة من 14 إلى 1 (من اليسار إلى اليمين). القطعة [أ ب] تبدأ من النقطة أ عند التدريجة 5 وتنتهي عند النقطة ب عند التدريجة 12.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p022_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لَدَيْكَ مُرَبَّعٌ طُولُ ضلعه 2 صم و 4 مستطيلات طول كلّ واحد منها 3 صم وعرضه 1 صم. كَوِّنْ بهذا المربّع والمستطيلات الأربع مربّعا جديدا.",
+      "body": "ما هو طول ضلع هذا المربّع بالصم؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p022_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أثناء حصّة التّربية البدنيّة قـاس المعلّم قـامات تلاميذه وسجّل النّتائج التّالية: ... اكتب أسماء التّلاميذ في الجدول مرتّبة حسب قاماتهم من الأطول إلى الأقصر",
+      "body": "أمين : 13 دسم\nأنور : 1 م و 34 صم\nمراد : 1 م ونصف\nسلمى : 1 م و 12 صم",
+      "figureDesc": "جدول فارغ بعمودين: «الاسم» و«القامة» وأربعة أسطر لتعمرها.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p022_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "بعمارة خمس طوابق (بما في ذلك الطابق السّفلي). ارتفاع كلّ طابق 3م، يَفْصِلُ الطّابق عن الآخر سقف سُمْكه 20 صم ويُحِيطُ بِسَطْحِ الطّابق الخامس حائط ارتفاعه 1م. ما هو ارتفاع هذه العمارة بالمتر؟",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p022_i6",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la mesure des longueurs (dm, cm, m), matière mathématiques; aucun chapitre officiel ne porte explicitement sur les longueurs, et la Période 1 (droites, monnaie) est le rattachement le plus plausible mais incertain.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    114
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Mesure de longueurs : dm et cm",
+    "skill": "Choisir l'unité adaptée, convertir et comparer des longueurs en m, dm et cm pour résoudre des problèmes.",
+    "pageType": "mixed",
+    "formats": [
+      "texte_a_trous",
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "longueur",
+      "décimètre",
+      "centimètre",
+      "conversion d'unités",
+      "comparaison",
+      "périmètre"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situations concrètes variées : choix de l'unité selon l'objet (puits, tissu, planche), puzzle de reconstitution d'un carré avec un carré et des rectangles, classement de tailles d'élèves exprimées en unités mixtes, et problème de hauteur d'un immeuble avec étages, planchers et muret.",
+    "themeGroup": "Longueurs"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

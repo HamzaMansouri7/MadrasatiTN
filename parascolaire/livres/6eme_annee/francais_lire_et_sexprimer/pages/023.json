@@ -1,0 +1,103 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 23,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : « Honnêteté » (d'après Ernest Perochon, « Les yeux clairs »)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Honnêteté\nLe père tenait le portefeuille dans sa main. Il l'avait ouvert, il comptait l'argent. Mille dinars ! C'était la guérison pour Lucie qui avait besoin de médicaments très chers. C'étaient des jours de bonheur pour ses trois enfants.\nSes mains tremblaient en touchant l'argent. Il ne savait plus ce qu'il faisait et, dans son trouble, il n'avait pas entendu sa fille Lucie ouvrir la porte.\n« Que fais-tu là, papa ? demande-t-elle. D'où vient tout cet argent ?\nIl répondit sans la regarder :\n- Françoise vient de trouver ce portefeuille dans la rue. J'allais le porter au commissariat de police, mais j'ai trouvé cette carte dans le portefeuille. Regarde !\n- Monsieur Julien ? dit Lucie. Ce vilain homme !\n- Justement ! Il me doit toujours six cents dinars et même plus. Et voilà que son portefeuille est entre mes mains : c'est une justice....\n- Une fois de plus, dit Lucie, tu lui rendras le bien par le mal. »\nElle avait mis le portefeuille dans la main de son père :\n« Porte-le tout de suite au commissariat de police. »\nIl se passa la main sur le front, comme pour chasser une mauvaise idée.\n« Merci dit-il. Tu as raison, ma fille ! ». Il était sorti de la maison.\nÀ son retour, un quart d'heure plus tard, il dit en entrant :\n« J'ai rendu le portefeuille !\n- Ah, dit Lucie, je suis contente ! »\nLe père s'approcha d'elle et l'embrassa silencieusement. Il avait les yeux d'un homme qui venait d'être sauvé d'un grand danger.\nD'après Ernest Perochon « Les yeux clairs »",
+      "figureDesc": "Texte encadré avec un titre « Honnêteté ». En-tête « Lecture - Compréhension », « Sagesse », « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p023_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Au début, le père veut garder le portefeuille. Pourquoi ?",
+      "body": "B) Compréhension :\n1) Au début, le père veut garder le portefeuille. Pourquoi ?\n(deux lignes pointillées pour répondre)",
+      "figureDesc": "Lignes pointillées pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p023_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.23
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension en français sur l'honnêteté (texte de Perochon), mais ce thème ne correspond clairement à aucun des modules proposés (le plus proche serait le module 3 ou le module 8, sans certitude), donc aucun chapitre n'est retenu.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : l'honnêteté",
+    "skill": "Lire un texte narratif et répondre à des questions de compréhension en justifiant les motivations d'un personnage.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "compréhension",
+      "honnêteté",
+      "dilemme moral",
+      "texte narratif",
+      "Perochon"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation de dilemme moral (un père dans le besoin trouve un portefeuille rempli d'argent), réutilisable pour des questions sur les motivations d'un personnage, des valeurs comme l'honnêteté et des débats de classe ou de production écrite.",
+    "themeGroup": "Métiers, citoyenneté et vie sociale"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page n'est pas transcrit : « Sagesse », « Lecture - Compréhension », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page n'est pas transcrit : « Lire et s'exprimer », numéro de page 22, « 6ème année de base »."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La question 1 est transcrite deux fois : une fois comme « [1] » seule, puis à nouveau sous « B) Compréhension : 1) ». Le doublon est inutile."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Le titre « B) Compréhension : » est placé après la question [1] alors qu'il la précède."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

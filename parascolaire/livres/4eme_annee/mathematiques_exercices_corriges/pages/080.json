@@ -1,0 +1,246 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 80,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 20 – المسائل (3)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) هذه أربعة أعداد، ضع كلّ واحد مكان النّقط واكتب الوحدة المناسبة له.",
+      "body": "تملك دُرّة ورقة مالية من فئة ........ ، ابتاعت علبة ألــوان مــائيّــة بـ ........ وكتابا ثمنه ضعف ثمن علبة الألوان المائيّة ، وبقي ........ لها قطعة نقديّة ذات ........ \nالأعداد: 1 500 ، 5 ، 500 ، 3\nب) لتتأكّد أنّك لم تخطئ أنجز العمليّات الضّروريّة.",
+      "figureDesc": "أربعة مستطيلات تحتوي على الأعداد 1 500 و5 و500 و3.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p080_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "استعن بالرّسم وأتمم كتابة المسألة التّالية :",
+      "body": "- انطلق مهدي راكبا دراجته من بلدة ........ على السّاعة ........ وتوقّف بمنطقة ........ ليتعرّف على المعالم الأثريّة بها بعد أن قطع مسافة ........ ثمّ استأنف سيره على السّاعة ........ بعد أن قطع في الرّحلة الثانية مسافة ........ \nأ) ما هي المدّة التي استغرقتها رحلة مهدي بدراجته من بلدة ........ إلى بلدة ........ ؟\nب) ما هي المسافة المقطوعة ذهابا وإيّابا ؟",
+      "figureDesc": "رسم بياني: المحور العمودي المسافة بالكيلومتر (0 الشّيحيّة، 5، 10، 15 طبنة، 20، 25، 30 الشقار)، المحور الأفقي الزّمن بالسّاعات والدّقائق (9 س، 9 س 15 د، 9 س 30 د، 9 س 45 د، 10 س، 10 س 15 د، 10 س 30 د). المنحنى يصعد من 0 إلى 15 كلم عند 9 س 30 د، يبقى ثابتا عند 15 إلى 10 س، ثم يصعد إلى 30 كلم عند 10 س 30 د.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p080_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اقرإ المسألة غير التّامّة واستعن بالحلّ لإتمامها :",
+      "body": "وزّع والدَ بالتّســاوي على ........ من أبنائه مبلغ ........ دينارا، اشترى أصغرهم بنصيبه ........ لعب ثمن الواحدة ........ دنانير ووفّر الباقي.\nاحسب بالدّينار ما وفّره أصغر الأبناء.",
+      "figureDesc": "",
+      "answer": "الحلّ: المبلغ الذي وفّره أصغر الأبناء : (78 على 3) - (4 × 5) = 6 دنانير",
+      "topicId": "math-4-ch1",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium",
+      "id": "mathematiques_exercices_corriges_p080_i3"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.67
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de problèmes de mathématiques (semaine 20) portant sur la monnaie (billets, pièces en dinars), les durées et distances, et un partage égal, ce qui correspond le mieux à la Période 1 (monnaie), même si la semaine 20 pourrait relever d'une autre période.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Résolution de problèmes à compléter",
+    "skill": "Compléter et résoudre des problèmes à étapes en choisissant les données adaptées (monnaie, durées, partage) et en vérifiant par des calculs.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "texte_a_trous",
+      "calcul"
+    ],
+    "keywords": [
+      "problèmes",
+      "monnaie",
+      "durée",
+      "partage équitable",
+      "énoncé à compléter",
+      "vérification"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Le format « énoncé lacunaire à compléter » à partir de données, d'un dessin ou d'une solution donnée est réutilisable pour créer des problèmes sur la monnaie, les trajets à vélo (horaires et distances) et le partage d'une somme entre enfants avec économie.",
+    "themeGroup": "Problèmes"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête omis : « الأسبوع 20 » et le titre « المسائل (3) », ainsi que le numéro de page 76"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 1 : la consigne أ) et la liste des nombres sont placées avant l'énoncé ; sur l'image, l'énoncé (دُرّة...) vient en premier, puis أ), les nombres, puis ب)"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 1 : la fin de l'énoncé « وبقي ... لها قطعة نقدية ذات ... » est transcrite ; mais le blanc après « وبقي » est omis (il y a un blanc supplémentaire pour le reste)"
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 2 : le graphique est omis (axes « المسافة بالكيلومتر » et « الزمن بالساعات والدقائق », graduations 0–30, les lieux الشبيّة، طبنة، الشقار, les horaires 9 h à 10 h 30)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : « انطلق مهدي ... من بلدة » puis « على الساعة » ; le blanc entre « من بلدة » et « على الساعة » est placé de façon ambiguë, et « بعد أن قطع في الرحلة الثانية مسافة » suit « ثم استأنف سيره على الساعة » (correct), mais « درّاجته » porte une shadda ajoutée alors que l'image n'a qu'un fatha (« دراجته »)"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Plusieurs tashkeel ajoutés absents de l'image : « وزّع والدٌ », « وفّر », « التّامّة », « الحلّ » ; l'image a des signes partiels (« وزّع والدَ »)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « اقرأ » transcrit avec hamza, l'image porte « اقرإ » (hamza sous alif)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « ثمن الواحدة » suit « لعب » mais « اشترى أصغرهم بنصيبه ... لعب » est correct ; la transcription affirme « 4 × 5 » correctement"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 1 : le blanc juste après « وبقي » est omis. L'image porte « وبقي ........ لها قطعة نقديّة ذات ........ », soit deux blancs, alors que la transcription n'en a qu'un, à la fin."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 2, figureDesc : le lieu est « طبنة » sur l'image, et non « طبرنة » (lettre « ر » ajoutée)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : « درّاجته » (deux occurrences) porte une shadda ajoutée. L'image ne montre qu'une fatha : « دراجته »."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : « والدٌ » est transcrit avec un tanwin damma. L'image montre « والدَ » avec une fatha."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « اقرأ » est transcrit avec hamza sur l'alif. L'image porte « اقرإ » avec la hamza sous l'alif."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) هذه أربعة أعداد، ضع كلّ واحد مكان النّقط واكتب الوحدة المناسبة له.",
+      "body": "تملك دُرّة ورقة مالية من فئة ........ ، ابتاعت علبة ألــوان مــائيّــة بـ ........ وكتابا ثمنه ضعف ثمن علبة الألوان المائيّة ، وبقي ........ لها قطعة نقديّة ذات ........ \nالأعداد: 1 500 ، 5 ، 500 ، 3\nب) لتتأكّد أنّك لم تخطئ أنجز العمليّات الضّروريّة.",
+      "figureDesc": "أربعة مستطيلات تحتوي على الأعداد 1 500 و5 و500 و3.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p080_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "استعن بالرّسم وأتمم كتابة المسألة التّالية :",
+      "body": "- انطلق مهدي راكبا دراجته من بلدة ........ على السّاعة ........ وتوقّف بمنطقة ........ ليتعرّف على المعالم الأثريّة بها بعد أن قطع مسافة ........ ثمّ استأنف سيره على السّاعة ........ بعد أن قطع في الرّحلة الثانية مسافة ........ \nأ) ما هي المدّة التي استغرقتها رحلة مهدي بدراجته من بلدة ........ إلى بلدة ........ ؟\nب) ما هي المسافة المقطوعة ذهابا وإيّابا ؟",
+      "figureDesc": "رسم بياني: المحور العمودي المسافة بالكيلومتر (0 الشّيحيّة، 5، 10، 15 طبنة، 20، 25، 30 الشقار)، المحور الأفقي الزّمن بالسّاعات والدّقائق (9 س، 9 س 15 د، 9 س 30 د، 9 س 45 د، 10 س، 10 س 15 د، 10 س 30 د). المنحنى يصعد من 0 إلى 15 كلم عند 9 س 30 د، يبقى ثابتا عند 15 إلى 10 س، ثم يصعد إلى 30 كلم عند 10 س 30 د.",
+      "answer": null,
+      "topicId": "math-4-ch1",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p080_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اقرإ المسألة غير التّامّة واستعن بالحلّ لإتمامها :",
+      "body": "وزّع والدَ بالتّســاوي على ........ من أبنائه مبلغ ........ دينارا، اشترى أصغرهم بنصيبه ........ لعب ثمن الواحدة ........ دنانير ووفّر الباقي.\nاحسب بالدّينار ما وفّره أصغر الأبناء.",
+      "figureDesc": "",
+      "answer": "الحلّ: المبلغ الذي وفّره أصغر الأبناء : (78 على 3) - (4 × 5) = 6 دنانير",
+      "topicId": "math-4-ch1",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium",
+      "id": "math_solutions_4eme_sellami_p080_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) هذه أربعة أعداد، ضع كلّ واحد مكان النّقط واكتب الوحدة المناسبة له.",
+      "body": "تملك دُرّة ورقة مالية من فئة ........ ، ابتاعت علبة ألــوان مــائيّــة بـ ........ وكتابا ثمنه ضعف ثمن علبة الألوان المائيّة ، وبقي لها قطعة نقديّة ذات ........ \nالأعداد: 1 500 ، 5 ، 500 ، 3\nب) لتتأكّد أنّك لم تخطئ أنجز العمليّات الضّروريّة.",
+      "figureDesc": "أربعة مستطيلات تحتوي على الأعداد 1 500 و5 و500 و3.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p080_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "استعن بالرّسم وأتمم كتابة المسألة التّالية :",
+      "body": "- انطلق مهدي راكبا درّاجته من بلدة ........ على السّاعة ........ وتوقّف بمنطقة ........ ليتعرّف على المعالم الأثريّة بها بعد أن قطع مسافة ........ ثمّ استأنف سيره على السّاعة ........ بعد أن قطع في الرّحلة الثانية مسافة ........ \nأ) ما هي المدّة التي استغرقتها رحلة مهدي بدرّاجته من بلدة ........ إلى بلدة ........ ؟\nب) ما هي المسافة المقطوعة ذهابا وإيّابا ؟",
+      "figureDesc": "رسم بياني: المحور العمودي المسافة بالكيلومتر (0 الشّيحيّة، 5، 10، 15 طبرنة، 20، 25، 30 الشقار)، المحور الأفقي الزّمن بالسّاعات والدّقائق (9 س، 9 س 15 د، 9 س 30 د، 9 س 45 د، 10 س، 10 س 15 د، 10 س 30 د). المنحنى يصعد من 0 إلى 15 كلم عند 9 س 30 د، يبقى ثابتا عند 15 إلى 10 س، ثم يصعد إلى 30 كلم عند 10 س 30 د.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "math_solutions_4eme_sellami_p080_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "اقرأ المسألة غير التّامّة واستعن بالحلّ لإتمامها :",
+      "body": "وزّع والدٌ بالتّســاوي على ........ من أبنائه مبلغ ........ دينارا، اشترى أصغرهم بنصيبه ........ لعب ثمن الواحدة ........ دنانير ووفّر الباقي.\nاحسب بالدّينار ما وفّره أصغر الأبناء.",
+      "figureDesc": "",
+      "answer": "الحلّ: المبلغ الذي وفّره أصغر الأبناء : (78 على 3) - (4 × 5) = 6 دنانير",
+      "confidence": 0.85,
+      "id": "math_solutions_4eme_sellami_p080_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

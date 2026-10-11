@@ -1,0 +1,304 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 28,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "L'alimentation équilibrée : groupes d'aliments, équivalences alimentaires, vitamines et besoins du corps",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أ) اكتب اسم المجموعة المناسبة التي تنتمي إليها المعادلة الغذائيّة أعلاه.",
+      "body": "ب) اذكر فائدتيْن لهذه المجموعة ؟ ........ ج) ماهي كميّة الحليب التي تشربها لتعويض 150 غ من اللّحم ؟",
+      "figureDesc": "Équation alimentaire illustrée : 100 غ من السّمك = 100 غ من اللّحم = بيضتان = 60 غ من الجبن = نصف لتر من الحليب (dessins d'un poisson, d'une côte de viande, de deux œufs, d'un morceau de fromage et d'une brique de lait portant le mot « حليب »).",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p028_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "اربط اللافتة بما يناسبها :",
+      "body": "اللافتات (à droite) : توفّر الطّاقة للجسم / تمكّن الجسم من النموّ / تقي الجسم من الأمراض. المجموعات (à gauche) : بيض ـ جبن ـ لحم / حمص جافّ ـ عدس / عسل ـ خبز ـ بطاطا / لوز ـ زبدة ـ زيت / برتقال ـ فلفل ـ خسّ",
+      "figureDesc": "Deux colonnes de cases à relier : 3 bandeaux à droite, 5 cases d'aliments à gauche.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p028_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "اكتب ما يناسب مكان النّقط :",
+      "body": "الاكلة المتوازنة هي الّتي تتكوّن من أغذية ........ وأغذية ........ وأغذية ........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p028_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "اربط الفيتامين بالغذاء الّذي يوفّره وما ينجرّ عن فقدانه :",
+      "body": "الفيتامين: أ ، ج ، د. الغذاء: البرتقال ، زيت كبد الحوت ، الجزر. نتائج النقص: ضعف الرّؤية ليلا ، الكساح ، مرض الإسقريوط",
+      "figureDesc": "Tableau à trois colonnes (الفيتامين / الغذاء / نتائج النقص) avec vitamines dans des cercles et éléments à relier.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p028_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "أصلح الجملة الخاطئة :",
+      "body": "- يحتاجُ الشيخ إلى وجبة غذائية تتوفّر فيها خاصّة الزلاليات.\n- السكريات ضرورية لنموّ الجسم ولتجديد خلاياه ولبناء أنسجته.\n- يحتاج الجسم في فصل الشتاء إلى الماء والأملاح.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "eveil_scientifique_cours_exercices_p028_i5"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u3",
+  "topicTitle": "Unité 3 : Système circulatoire, nutrition, immunité et microbes",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "sci-6-u3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u3",
+    "confidence": 0.21
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page porte sur l'alimentation équilibrée (groupes d'aliments, équivalences alimentaires, vitamines et carences), qui relève de la nutrition équilibrée de l'unité 3 d'Éveil Scientifique.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "L'alimentation équilibrée",
+    "skill": "Identifier les groupes d'aliments, leurs rôles, les équivalences alimentaires et les vitamines, puis relier chaque besoin du corps à l'aliment adapté.",
+    "pageType": "exercise",
+    "formats": [
+      "appariement",
+      "texte_a_trous",
+      "calcul",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "groupes d'aliments",
+      "équivalences alimentaires",
+      "vitamines",
+      "carences",
+      "besoins du corps",
+      "repas équilibré"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Exercices variés et réutilisables : relier groupes d'aliments et rôles, associer vitamine, source alimentaire et maladie de carence, corriger des affirmations fausses sur les besoins selon l'âge ou la saison, calculer une équivalence entre aliments.",
+    "themeGroup": "Les groupes d'aliments et l'alimentation équilibrée"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 8 : l'en-tête de l'équation alimentaire (lait = fromage = 2 œufs = viande = poisson) n'est pas transcrit. Légendes manquantes : « 100 غ من السمك », « 100 غ من اللحم », « بيضتان », « 60 غ من الجبن », « نصف لتر من الحليب »."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Exercice 10 : la transcription donne trois fois « وأغذية ........ » alors que l'image montre « أغذية .... وأغذية .... وأغذية ____ », soit une première occurrence sans « و ». Il faut « تتكون من أغذية ... وأغذية ... وأغذية ... » ; la forme est à vérifier."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 10 : « الأكلة » est écrit « الاكلة » sur l'image (sans hamza)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 8 : « المعادلة الغذائيّة » correspond à l'image, mais « اكتب » et « اذكر » sont correctement transcrits ; pas d'erreur ici."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 11 : les lettres des vitamines affichées dans l'image sont أ ، ج ، د. Ils sont présents, mais la disposition en 3 colonnes avec des puces n'est pas rendue. La transcription le signale à peine."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 11 : « الإسقربوط » est écrit « الإسقريوط » sur l'image (graphie imprimée avec ي). La transcription a mis ب, ce qui est à vérifier."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 12 : « يحتاجُ الشيخ » : la transcription ajoute le tashkeel sur « يحتاجُ » mais omet celui de « خاصّة » ou « السكريات »/« الزلاليات » ; les marques visibles de l'image ne sont pas toutes reprises. La phrase « يحتاج الجسم في فصل الشتاء » est correcte."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le numéro de page 61 n'est pas transcrit."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.95,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 10 : l'image imprime « الاكلة » (sans hamza) et la transcription a « الأكلة ». Il faut recopier la graphie de l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 11 : l'image imprime « الإسقريوط » (avec ي) et la transcription a « الإسقربوط » (avec ب). Il faut recopier la graphie de l'image."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أ) اكتب اسم المجموعة المناسبة التي تنتمي إليها المعادلة الغذائيّة أعلاه.",
+      "body": "ب) اذكر فائدتيْن لهذه المجموعة ؟ ........ ج) ماهي كميّة الحليب التي تشربها لتعويض 150 غ من اللّحم ؟",
+      "figureDesc": "Équation alimentaire illustrée : 100 غ من السّمك = 100 غ من اللّحم = بيضتان = 60 غ من الجبن = نصف لتر من الحليب (dessins d'un poisson, d'une côte de viande, de deux œufs, d'un morceau de fromage et d'une brique de lait portant le mot « حليب »).",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p028_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "اربط اللافتة بما يناسبها :",
+      "body": "اللافتات (à droite) : توفّر الطّاقة للجسم / تمكّن الجسم من النموّ / تقي الجسم من الأمراض. المجموعات (à gauche) : بيض ـ جبن ـ لحم / حمص جافّ ـ عدس / عسل ـ خبز ـ بطاطا / لوز ـ زبدة ـ زيت / برتقال ـ فلفل ـ خسّ",
+      "figureDesc": "Deux colonnes de cases à relier : 3 bandeaux à droite, 5 cases d'aliments à gauche.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p028_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "اكتب ما يناسب مكان النّقط :",
+      "body": "الاكلة المتوازنة هي الّتي تتكوّن من أغذية ........ وأغذية ........ وأغذية ........",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p028_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "اربط الفيتامين بالغذاء الّذي يوفّره وما ينجرّ عن فقدانه :",
+      "body": "الفيتامين: أ ، ج ، د. الغذاء: البرتقال ، زيت كبد الحوت ، الجزر. نتائج النقص: ضعف الرّؤية ليلا ، الكساح ، مرض الإسقريوط",
+      "figureDesc": "Tableau à trois colonnes (الفيتامين / الغذاء / نتائج النقص) avec vitamines dans des cercles et éléments à relier.",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p028_i4"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "أصلح الجملة الخاطئة :",
+      "body": "- يحتاجُ الشيخ إلى وجبة غذائية تتوفّر فيها خاصّة الزلاليات.\n- السكريات ضرورية لنموّ الجسم ولتجديد خلاياه ولبناء أنسجته.\n- يحتاج الجسم في فصل الشتاء إلى الماء والأملاح.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium",
+      "id": "al_mounir_eveil_scientifique_6eme_p028_i5"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "أ) اكتب اسم المجموعة المناسبة التي تنتمي إليها المعادلة الغذائيّة أعلاه.",
+      "body": "ب) اذكر فائدتيْن لهذه المجموعة ؟ ........ ج) ماهي كميّة الحليب التي تشربها لتعويض 150 غ من اللّحم ؟",
+      "figureDesc": "Équation alimentaire illustrée : 100 غ من السّمك = 100 غ من اللّحم = بيضتان = 60 غ من الجبن = نصف لتر من الحليب (dessins d'un poisson, d'une côte de viande, de deux œufs, d'un morceau de fromage et d'une brique de lait).",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p028_i1",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "اربط اللافتة بما يناسبها :",
+      "body": "اللافتات (à droite) : توفّر الطّاقة للجسم / تمكّن الجسم من النموّ / تقي الجسم من الأمراض. المجموعات (à gauche) : بيض ـ جبن ـ لحم / حمص جافّ ـ عدس / عسل ـ خبز ـ بطاطا / لوز ـ زبدة ـ زيت / برتقال ـ فلفل ـ خسّ",
+      "figureDesc": "Deux colonnes de cases à relier : 3 bandeaux à droite, 5 cases d'aliments à gauche.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "al_mounir_eveil_scientifique_6eme_p028_i2",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "اكتب ما يناسب مكان النّقط :",
+      "body": "الأكلة المتوازنة هي الّتي تتكوّن من أغذية ........ وأغذية ........ وأغذية ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "al_mounir_eveil_scientifique_6eme_p028_i3",
+      "topicId": "sci-6-u3",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "اربط الفيتامين بالغذاء الّذي يوفّره وما ينجرّ عن فقدانه :",
+      "body": "الفيتامين: أ ، ج ، د. الغذاء: البرتقال ، زيت كبد الحوت ، الجزر. نتائج النقص: ضعف الرّؤية ليلا ، الكساح ، مرض الإسقربوط",
+      "figureDesc": "Tableau à trois colonnes (الفيتامين / الغذاء / نتائج النقص) avec vitamines dans des cercles et éléments à relier.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "al_mounir_eveil_scientifique_6eme_p028_i4",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "أصلح الجملة الخاطئة :",
+      "body": "- يحتاجُ الشيخ إلى وجبة غذائية تتوفّر فيها خاصّة الزلاليات.\n- السكريات ضرورية لنموّ الجسم ولتجديد خلاياه ولبناء أنسجته.\n- يحتاج الجسم في فصل الشتاء إلى الماء والأملاح.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "al_mounir_eveil_scientifique_6eme_p028_i5",
+      "topicId": "sci-6-u3",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

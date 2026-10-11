@@ -1,0 +1,84 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 106,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Lecture : texte « Le paysan et ses échanges » (suite), Lire et s'exprimer",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "un mouton nous arrangera mieux qu'une vache. Il reste volontiers à la maison durant les jours de grand froid.\n- Voulez-vous faire l'échange ?dit-il au maître du mouton. L'autre n'attend pas pour répondre. Il part avec la vache et laisse le mouton.\nUn peu plus loin, il voit arriver une vieille bonne femme qui porte une oie comme on n'en voit pas souvent«Quelle jolie bête ! dit-il, quelle graisse ! Et quel plumage ! » Il se dit : « Si nous l'avons chez nous, ma vieille la fera grossir encore plus. Ah ! Si je peux avoir cette oie, elle fera agréablement bien au milieu de nos canards ! »\n-Dis donc, ma bonne dame, dit-il à haute voix ; veux-tu changer avec moi ? Tu prends mon mouton et tu me donnes ton oie.L'autre n'attend pas pour répondre ; le vieux paysan repart, emportant l'oie sous le bras. Tout le monde se presse pour arriver à la ville.\nUn marchand ambulant pousse une voiture à bras. Sur sa voiture, il a attaché une poule au pied d'une chaise cassée. « C'est une belle poule bien grasse, se dit le paysan. Elle a l'air si agréable que j'aimerai bien l'avoir à la place de cette oie. Une poule, on n'a pas à s'en occuper. Elle se nourrit elle-même des grains qu'elle ramasse. Si nous faisons l'échange » dit-il au marchand qui donne vite son accord. Et il emporte la poule.\nArrivé devant une auberge, il veut se reposer un instant. Au même moment, le garçon en sort, emportant un sac de marrons.\n- « Ah, si je peux ramener ce sac à ma femme, elle sera bien contente.\n-Que me donnerez-vous pour ce sac ? dit le garçon.\n-Mais cette poule donc ? N'est-ce pas assez ? »\nLe paysan prend le sac de marrons, entre dans la salle de l'auberge et met son sac devant la cheminée. Il y a là beaucoup de monde, des commerçants, des bergers et aussi des voyageurs venus pour passer la nuit. Placés près du feu, les marrons commencent à cuire en faisant un petit bruit.\n-Qu'est-ce que c'est ? demande l'un des voyageurs.",
+      "figureDesc": "",
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p106_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.39
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de lecture (texte « Le paysan et ses échanges », Lire et s'exprimer) en français, mais ce récit d'échanges ne correspond clairement à aucun des modules officiels (m1 sur le travail est le plus proche sans être certain).",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127,
+    128
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Le texte narratif : récit d'échanges",
+    "skill": "Lire un récit et en comprendre la suite logique des événements, en suivant les échanges successifs entre personnages.",
+    "pageType": "lesson",
+    "formats": [
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "lecture",
+      "récit",
+      "paysan",
+      "échange",
+      "dialogue",
+      "texte d'appui"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le récit en chaîne de troc entre un paysan et d'autres personnages, avec dialogues, peut servir de base à des questions de compréhension, au repérage de la structure narrative, à la reformulation orale ou à une production écrite sur la suite ou la fin de l'histoire.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "itemsOcr1": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Texte d'appui (suite du récit, page 105)",
+      "body": "un mouton nous arrangera mieux qu'une vache. Il reste volontiers à la maison durant les jours de grand froid.\n- Voulez-vous faire l'échange ? dit-il au maître du mouton. L'autre n'attend pas pour répondre. Il part avec la vache et laisse le mouton.\nUn peu plus loin, il voit arriver une vieille bonne femme qui porte une oie comme on n'en voit pas souvent « Quelle jolie bête ! dit-il, quelle graisse ! Et quel plumage ! » Il se dit : « Si nous l'avons chez nous, ma vieille la fera grossir encore plus. Ah ! Si je peux avoir cette oie, elle fera agréablement bien au milieu de nos canards ! »\n- Dis donc, ma bonne dame, dit-il à haute voix ; veux-tu changer avec moi ? Tu prends mon mouton et tu me donnes ton oie. L'autre n'attend pas pour répondre ; le vieux paysan repart, emportant l'oie sous le bras. Tout le monde se presse pour arriver à la ville.\nUn marchand ambulant pousse une voiture à bras. Sur sa voiture, il a attaché une poule au pied d'une chaise cassée. « C'est une belle poule bien grasse, se dit le paysan. Elle a l'air si agréable que j'aimerai bien l'avoir à la place de cette oie. Une poule, on n'a pas à s'en occuper. Elle se nourrit elle-même des grains qu'elle ramasse. Si nous faisons l'échange » dit-il au marchand qui donne vite son accord. Et il emporte la poule.\nArrivé devant une auberge, il veut se reposer un instant. Au même moment, le garçon en sort, emportant un sac de marrons.\n- « Ah, si je peux ramener ce sac à ma femme, elle sera bien contente.\n-Que me donnerez-vous pour ce sac ? dit le garçon.\n-Mais cette poule donc ? N'est-ce pas assez ? »\nLe paysan prend le sac de marrons, entre dans la salle de l'auberge et met son sac devant la cheminée. Il y a là beaucoup de monde, des commerçants, des bergers et aussi des voyageurs venus pour passer la nuit. Placés près du feu, les marrons commencent à cuire en faisant un petit bruit.\n-Qu'est-ce que c'est ? demande l'un des voyageurs.",
+      "figureDesc": "Page encadrée avec bandeaux gris : « Sagesse », « Les évaluations », « 6ème année de base » ; pied de page « Lire et s'exprimer 105 ». Aucune illustration. Le texte en arrière-plan (transparence du verso) est illisible et ignoré.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p106_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

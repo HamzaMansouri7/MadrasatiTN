@@ -1,0 +1,278 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 51,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "العمليات الحسابية والقطع النقدية والمقارنة",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُلَوِّنُ النَّتِيجَةَ الصَّحِيحَةَ.",
+      "body": "خِلَالَ الْفَتْرَةِ الْأُولَى مِنْ مُبَارَاةِ كُرَةِ السَّلَّةِ سَجَّلَ الْفَرِيقُ أ 4 سَلَّاتٍ مِنْ فِئَةِ 3 نِقَاطٍ وَ4 سَلَّاتٍ مِنْ فِئَةِ نُقْطَتَيْنِ وَسَجَّلَ الْفَرِيقُ ب سَلَّتَيْنِ مِنْ فِئَةِ 3 نِقَاطٍ وَ3 سَلَّاتٍ مِنْ فِئَةِ نُقْطَتَيْنِ.\n\nالخيارات:\n[أ : 25 | ب : 14]\n[أ : 10 | ب : 18]\n[أ : 20 | ب : 12]",
+      "figureDesc": "ثلاثة إطارات زرقاء، في كل منها العمودان (أ) و(ب) مع عددين داخل مربعين زرقاوين: (أ: 25، ب: 14)، (أ: 10، ب: 18)، (أ: 20، ب: 12). يُلوَّن الإطار الصحيح.",
+      "answer": null,
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p051_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُتِمُّ بِمَا يُنَاسِبُ :",
+      "body": "",
+      "figureDesc": "شكل بيضوي أحمر كبير يحتوي على دائرتين زرقاوين. الدائرة اليمنى تحتوي على 9 مثلثات زرقاء (3 صفوف × 3) ويتصل بها دائرة برتقالية صغيرة فارغة لكتابة عددها. الدائرة اليسرى فارغة ويتصل بها دائرة برتقالية صغيرة مكتوب فيها 10. يتصل بالبيضوي مربع فارغ في أعلى اليسار لكتابة العدد الكلي، ودائرة حمراء في أسفل اليسار بداخلها مثلث أزرق واحد.",
+      "answer": null,
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p051_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُقَارِنُ بِاسْتِعْمَالِ > ، < ، =",
+      "body": "الْمَبْلَغُ الَّذِي يَمْلِكُهُ أَحْمَدُ ......... الْمَبْلَغُ الَّذِي يَمْلِكُهُ مُنِيرٌ\n..... مي          ..... مي",
+      "figureDesc": "مجموعتان من القطع النقدية داخل دائرتين زرقاوين. مجموعة أحمد: 2، 10، 10، 1، 5، 10 مي. مجموعة منير: 10، 10، 10، 2، 2، 5، 5، 1 مي. تحت كل مجموعة بيضوي أحمر فيه ..... مي لكتابة المبلغ، وبينهما فراغ منقط لكتابة علامة المقارنة.",
+      "answer": null,
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p051_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "أُنْجِزُ وَأَتَمَيَّزُ",
+      "instruction": "",
+      "body": "يَمْلِكُ رَامِي الْمَبْلَغَ الْمُمَثَّلَ. أَرَادَ شِرَاءَ قِطْعَةِ حَلْوَى بِـ : 25 مي، أُحِيطُ الْمَبْلَغَ الْمُسْتَعْمَلَ عِلْمًا وَأَنَّهُ يَتَكَوَّنُ مِنْ 3 قِطَعٍ نَقْدِيَّةٍ.",
+      "figureDesc": "إطار يحتوي على قطع نقدية متفرقة: 20 مي (قطعة واحدة)، 10 مي (3 قطع)، 5 مي (3 قطع)، 2 مي (قطعة واحدة)، 1 مي (3 قطع).",
+      "answer": null,
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "evaluations_maths_arabe_p051_i4"
+    }
+  ],
+  "topicId": "math-1-p6",
+  "topicTitle": "Période 6 : Longueurs, masses, monnaie et résolution de problèmes",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p6",
+    "confidence": 0.62
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la monnaie tunisienne (pièces, montants en millimes, comparaison de sommes avec >, <, =) et sur la résolution de problèmes, ce qui correspond à la Période 6.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Calculs et monnaie (millimes)",
+    "skill": "Calculer des totaux de points et de sommes d'argent, composer un montant avec des pièces et comparer des montants avec >, < ou =.",
+    "pageType": "exercise",
+    "formats": [
+      "qcm",
+      "calcul",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "addition",
+      "pièces de monnaie",
+      "millimes",
+      "comparaison",
+      "match de basket",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes : calculer les points de deux équipes de basket selon la valeur des paniers, composer un prix avec un nombre imposé de pièces, comparer les montants de deux enfants. Le format coloriser/entourer convient à de jeunes élèves.",
+    "themeGroup": "Calculs avec la monnaie"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "L'instruction « أُلَوِّنُ النَّتِيجَةَ الصَّحِيحَةَ » est placée avant l'énoncé. Sur l'image, l'énoncé vient d'abord, puis « التَّعْلِيمَةُ : أُلَوِّنُ النَّتِيجَةَ الصَّحِيحَةَ »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le mot « التَّعْلِيمَةُ : » (étiquette verte) est absent de la transcription."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« النَّتِيجَةَ » : la transcription écrit « النَّتِيجَةَ » avec une vocalisation un peu différente de l'image « النَّتِيجَةَ » ; sinon identique, sans erreur réelle."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 4 : le schéma n'est pas décrit (9 triangles, cercle vide, nombre 10, case vide, triangle isolé). Il est vide dans la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 5 : les pièces de monnaie ne sont pas décrites. Ahmed : 2, 10, 10, 1, 5, 10. Munir : 10, 10, 10, 2, 2, 5, 5, 1."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice « أُنْجِزُ وَأَتَمَيَّزُ » : les pièces de monnaie ne sont pas décrites (10, 10, 10, 2, 5, 5, 5, 1, 1, 1, 20)."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Dans l'en-tête « أُنْجِزُ وَأَتَمَيَّزُ », la transcription ajoute « أُحِيطُ الْمَبْلَغَ الْمُسْتَعْمَلَ عِلْمًا… » qui n'y figure pas. L'en-tête est seulement « أَنْجِزُ وَأَتَمَيَّزُ » (avec « أَتَمَيَّزُ » écrit « وَأَتَـمَيَّزُ » sur l'image), ce qui crée un doublon avec la phrase suivante."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« أُنْجِزُ » : l'image porte « أَنْجِزُ » (voyelle de la première lettre à vérifier) et « أَتَمَيَّزُ » devrait être « أَتَمَيَّزُ » ; l'orthographe correcte est « وَأَتَمَيَّزُ »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« أَرَادَ شِرَاءَ قِطْعَةِ حَلْوَى » : l'image donne « قِطْعَةِ ». Ce passage est correct. « الْمُمَثَّلَ » est correct."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Les choix de l'exercice 3 sont listés dans l'ordre inverse de la lecture droite-gauche : (25,14), (10,18), (20,12) est cohérent. Aucune valeur fausse."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "figure",
+        "severity": "major",
+        "detail": "Exercice 4 : la description du schéma est inexacte. L'image montre 9 triangles bleus (3×3) dans un cercle bleu à droite, relié à un petit cercle orange vide. Elle montre aussi un grand cercle bleu vide à gauche, relié à une bulle contenant 10. Le tout est dans une grande ellipse rouge reliée à une case rectangulaire vide et à un cercle rouge contenant un triangle isolé. La transcription indique 8 triangles et une structure confuse (carré, cercle, triangle vides)."
+      },
+      {
+        "type": "doublon",
+        "severity": "minor",
+        "detail": "Exercice « أُنْجِزُ وَأَتَمَيَّزُ » : la phrase « أُحِيطُ الْمَبْلَغَ الْمُسْتَعْمَلَ عِلْمًا… » est recopiée à la fois dans « instruction » et dans « body ». Sur l'image elle ne figure qu'une fois, à la fin du paragraphe de l'énoncé, et l'en-tête rouge ne contient que le titre."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُلَوِّنُ النَّتِيجَةَ الصَّحِيحَةَ.",
+      "body": "خِلَالَ الْفَتْرَةِ الْأُولَى مِنْ مُبَارَاةِ كُرَةِ السَّلَّةِ سَجَّلَ الْفَرِيقُ أ 4 سَلَّاتٍ مِنْ فِئَةِ 3 نِقَاطٍ وَ4 سَلَّاتٍ مِنْ فِئَةِ نُقْطَتَيْنِ وَسَجَّلَ الْفَرِيقُ ب سَلَّتَيْنِ مِنْ فِئَةِ 3 نِقَاطٍ وَ3 سَلَّاتٍ مِنْ فِئَةِ نُقْطَتَيْنِ.\n\nالخيارات:\n[أ : 25 | ب : 14]\n[أ : 10 | ب : 18]\n[أ : 20 | ب : 12]",
+      "figureDesc": "ثلاثة إطارات زرقاء، في كل منها العمودان (أ) و(ب) مع عددين داخل مربعين زرقاوين: (أ: 25، ب: 14)، (أ: 10، ب: 18)، (أ: 20، ب: 12). يُلوَّن الإطار الصحيح.",
+      "answer": null,
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p051_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُتِمُّ بِمَا يُنَاسِبُ :",
+      "body": "",
+      "figureDesc": "شكل بيضوي أحمر كبير يحتوي على دائرتين زرقاوين. الدائرة اليمنى تحتوي على 9 مثلثات زرقاء (3 صفوف × 3) ويتصل بها دائرة برتقالية صغيرة فارغة لكتابة عددها. الدائرة اليسرى فارغة ويتصل بها دائرة برتقالية صغيرة مكتوب فيها 10. يتصل بالبيضوي مربع فارغ في أعلى اليسار لكتابة العدد الكلي، ودائرة حمراء في أسفل اليسار بداخلها مثلث أزرق واحد.",
+      "answer": null,
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p051_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُقَارِنُ بِاسْتِعْمَالِ > ، < ، =",
+      "body": "الْمَبْلَغُ الَّذِي يَمْلِكُهُ أَحْمَدُ ......... الْمَبْلَغُ الَّذِي يَمْلِكُهُ مُنِيرٌ\n..... مي          ..... مي",
+      "figureDesc": "مجموعتان من القطع النقدية داخل دائرتين زرقاوين. مجموعة أحمد: 2، 10، 10، 1، 5، 10 مي. مجموعة منير: 10، 10، 10، 2، 2، 5، 5، 1 مي. تحت كل مجموعة بيضوي أحمر فيه ..... مي لكتابة المبلغ، وبينهما فراغ منقط لكتابة علامة المقارنة.",
+      "answer": null,
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p051_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "أُنْجِزُ وَأَتَمَيَّزُ",
+      "instruction": "",
+      "body": "يَمْلِكُ رَامِي الْمَبْلَغَ الْمُمَثَّلَ. أَرَادَ شِرَاءَ قِطْعَةِ حَلْوَى بِـ : 25 مي، أُحِيطُ الْمَبْلَغَ الْمُسْتَعْمَلَ عِلْمًا وَأَنَّهُ يَتَكَوَّنُ مِنْ 3 قِطَعٍ نَقْدِيَّةٍ.",
+      "figureDesc": "إطار يحتوي على قطع نقدية متفرقة: 20 مي (قطعة واحدة)، 10 مي (3 قطع)، 5 مي (3 قطع)، 2 مي (قطعة واحدة)، 1 مي (3 قطع).",
+      "answer": null,
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "jisr_ennajah_1ere_evaluations_p051_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُلَوِّنُ النَّتِيجَةَ الصَّحِيحَةَ.",
+      "body": "خِلَالَ الْفَتْرَةِ الْأُولَى مِنْ مُبَارَاةِ كُرَةِ السَّلَّةِ سَجَّلَ الْفَرِيقُ أ 4 سَلَّاتٍ مِنْ فِئَةِ 3 نِقَاطٍ وَ4 سَلَّاتٍ مِنْ فِئَةِ نُقْطَتَيْنِ وَسَجَّلَ الْفَرِيقُ ب سَلَّتَيْنِ مِنْ فِئَةِ 3 نِقَاطٍ وَ3 سَلَّاتٍ مِنْ فِئَةِ نُقْطَتَيْنِ.\n\nالخيارات:\n[أ : 25 | ب : 14]\n[أ : 10 | ب : 18]\n[أ : 20 | ب : 12]",
+      "figureDesc": "ثلاثة جداول مقسمة إلى عمودين (أ) و(ب) تحتوي على نتائج مقترحة لتلوين الصحيح منها.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p051_i1",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أُتِمُّ بِمَا يُنَاسِبُ :",
+      "body": "",
+      "figureDesc": "مخطط فين يتكون من مجموعة كبرى تحتوي على دائرة فارغة مع علامة 10 بجانبها، ومجموعة فرعية تحتوي على 8 مثلثات زرقاء، وتتصل بالمجموعات أشكال هندسية فارغة (مربع، دائرة، مثلث) لإكمال الأعداد المناسبة.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "jisr_ennajah_1ere_evaluations_p051_i2",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُقَارِنُ بِاسْتِعْمَالِ > ، < ، =",
+      "body": "الْمَبْلَغُ الَّذِي يَمْلِكُهُ أَحْمَدُ ......... الْمَبْلَغُ الَّذِي يَمْلِكُهُ مُنِيرٌ\nمبلغ أحمد: ..... مي\nمبلغ منير: ..... مي",
+      "figureDesc": "مجموعتان من القطع النقدية التونسية: الأولى لأحمد تحتوي على قطع (10، 10، 10، 5، 2، 1) مي والثانية لمنير تحتوي على قطع (10، 10، 10، 5، 5، 2، 2، 1) مي، وأسفل كل مجموعة فراغ لكتابة المبلغ بالمليم ثم المقارنة بينهما.",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "jisr_ennajah_1ere_evaluations_p051_i3",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "أُنْجِزُ وَأَتَمَيَّزُ",
+      "instruction": "أُحِيطُ الْمَبْلَغَ الْمُسْتَعْمَلَ عِلْمًا وَأَنَّهُ يَتَكَوَّنُ مِنْ 3 قِطَعٍ نَقْدِيَّةٍ.",
+      "body": "يَمْلِكُ رَامِي الْمَبْلَغَ الْمُمَثَّلَ. أَرَادَ شِرَاءَ قِطْعَةِ حَلْوَى بِـ : 25 مي، أُحِيطُ الْمَبْلَغَ الْمُسْتَعْمَلَ عِلْمًا وَأَنَّهُ يَتَكَوَّنُ مِنْ 3 قِطَعٍ نَقْدِيَّةٍ.",
+      "figureDesc": "إطار يحتوي على قطع نقدية متفرقة: 20 مي، 10 مي (3 قطع)، 5 مي (3 قطع)، 2 مي (قطعة واحدة)، 1 مي (3 قطع).",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "jisr_ennajah_1ere_evaluations_p051_i4",
+      "topicId": "math-1-p6",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

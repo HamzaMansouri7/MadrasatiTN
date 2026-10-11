@@ -1,0 +1,167 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 70,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 39: أتعرّف المثلثات بأنواعها وأرسمها (remarque : la page traite de géométrie/mathématiques malgré la matière indiquée)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "39",
+      "instruction": "الدرس 39: أتعرّف المثلّثات بأنواعها وأرسمها",
+      "body": "",
+      "figureDesc": "Bandeau de titre décoratif avec le chiffre 5 (السنة 5) à gauche",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p070_i1",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "قِسْ زَوَايَا كُلِّ مُثَلَّثٍ وَاجْمَعْهَا ثُمَّ بَيِّنْ نَوْعَ ذَلِكَ الْمُثَلَّثِ.",
+      "body": "* مَجْمُوعُ أَقْيِسَةِ الزَّوَايَا: ……………\n* نَوْعُ الْمُثَلَّثِ ①: …………… ② …………… ③ ……………",
+      "figureDesc": "Trois triangles numérotés. ① triangle isocèle pointe vers le bas, sommets ه، ك، ي. ② triangle rectangle avec l'angle droit en bas à gauche, sommets ص، و، ع. ③ triangle acutangle, sommets ب، ج، أ.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p070_i2",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ارْسُمْ قِطْعَةَ مُسْتَقِيمٍ [أ ب] قِيسُ طُولِهَا 4 صم ثُمَّ ارْسُمْ مُوَسِّطَهَا العَمُودِيَّ. عَيِّنْ نُقْطَةَ \"ج\" عَلَى الْمُوَسِّطِ الْعَمُودِيِّ الَّذِي رَسَمْتَهُ. ارْبِطْ \"ج\" بِـ \"أ\" وَ\"ب\".",
+      "body": "* مَا نَوْعُ الْمُثَلَّثِ أ ب ج ؟ ……………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p070_i3",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ارْسُمْ مُثَلَّثًا ع ن ق مُتَقَايِسَ الضِّلْعَيْنِ بِحَيْثُ قِيسُ إِحْدَى زَوَايَاهُ 120°. مَا هُوَ قِيسُ كُلِّ زَاوِيَةٍ مِنْ بَقِيَّةِ زَوَايَاهُ؟",
+      "body": "……………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p070_i4",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ارْسُمْ زَاوِيَةً س أ ص = 60°. عَيِّنْ نُقْطَتَيْنِ \"ب\" وَ\"ج\" تَبْعُدَانِ عَنْ \"أ\" نَفْسَ الْبُعْدِ.",
+      "body": "مَا نَوْعُ الْمُثَلَّثِ أ ب ج ؟ عَلِّلْ إِجَابَتَكَ.\n……………",
+      "figureDesc": "Trois lignes pointillées pour répondre",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p070_i5",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أ – ارْسُمْ دَائِرَةً قِيسُ قُطْرِهَا 5 صم مَرْكَزُهَا \"و\". عَيِّنْ [أ ب] قُطْرًا لَهَا. عَيِّنْ نُقْطَةَ \"ج\" تَنْتَمِي إِلَى تِلْكَ الدَّائِرَةِ.",
+      "body": "* ارْبِطْ بَيْنَ \"ج\" وَ\"أ\" وَ\"ب\". مَا نَوْعُ الْمُثَلَّثِ أ ب ج؟\n……………\nب – قَارِنْ بَيْنَ رَسْمِكَ وَرَسْمِ عَدَدٍ مِنْ رِفَاقِكَ. مَاذَا تُلَاحِظُ؟\n……………",
+      "figureDesc": "Lignes pointillées pour les réponses ; numéro de page 70 en bas",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p070_i6",
+      "topicId": "math-5-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p3",
+  "topicTitle": "Période 3 : Multiplication/division des décimaux et polygones",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p3",
+    "confidence": 0.14
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les types de triangles (somme des angles, isocèle, équilatéral, rectangle inscrit dans un demi-cercle), donc de la géométrie des polygones; la Période 3 (polygones, parallélogramme, hauteurs) est la plus proche, mais aucun chapitre ne mentionne explicitement les triangles.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Types de triangles et construction",
+    "skill": "Identifier les triangles (isocèle, équilatéral, rectangle) à partir des mesures d'angles et de la construction, puis les tracer avec les instruments.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "triangle isocèle",
+      "triangle équilatéral",
+      "triangle rectangle",
+      "médiatrice",
+      "somme des angles",
+      "cercle et diamètre"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les exercices partent d'une construction (médiatrice, angle de 60°, point sur un cercle de diamètre donné) pour faire déduire la nature du triangle, puis comparent les tracés entre élèves afin de dégager une propriété générale.",
+    "themeGroup": "Angles, cercle et triangles"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 2 : « مُوَسِّطَهَا » transcrit alors que l'image montre « مُوَسِّطَهَا/مِوْسَطَهَا » avec une graphie différente (مُوَسَّطَهَا) ; la vocalisation est douteuse, et idem pour « الْمُوَسِّطِ »."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre : « أتعرّف » transcrit sans tashkeel alors que l'image montre des voyelles ; « المثلّثات » également. Le mot « أرسمها » est lu correctement."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête (« السنة 5 », « المرح... ») et le numéro de page (72) ne sont pas transcrits. Les lettres des sommets du dessin de l'exercice 1 (ب، ج، أ، ص، و، ع، هـ، ك، ي) sont aussi absentes."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 4 : l'image montre « زَاوِيَةً س أ ص » avec un accent circonflexe sur le « أ » (angle notée س أ̂ ص) ; la transcription omet ce symbole."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 3 : « قِيسُ » est vocalisé ainsi dans l'image ; « مُتَقَايِسَ الضِّلْعَيْنِ » correct. L'exercice 5 : « قِيسُ قُطْرِهَا » correct. Seule la structure est approximative : les puces « * » ont été déplacées entre les champs."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Exercice 5 : la question « ارْبِطْ بَيْنَ ج وَ أ وَ ب » est correctement placée, mais le point 5-أ s'étend sur deux lignes que la transcription sépare artificiellement."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

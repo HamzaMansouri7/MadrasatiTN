@@ -1,0 +1,107 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 48,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : L'alimentation équilibrée (Bien manger pour bien grandir)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "Entoure la bonne réponse en t'aidant du texte :",
+      "body": "- À chaque repas, il faut : * manger équilibré. * manger rapidement. * grignoter.\n- Chaque journée doit comporter : * 4 ou 5 repas. * 3 ou 4 repas. * 2 ou 3 repas.\n- Les laitages nous apportent : * des vitamines. * des sucres lents. * du calcium.\n- Il faut surtout prendre un bon : * dîner. * petit déjeuner. * déjeuner.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p048_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "En t'aidant du texte, trouve deux exemples dans chaque famille :",
+      "body": "Familles : - Produits laitiers - Fruits - Céréales. Colonnes : Exemple 1, Exemple 2 (à compléter).",
+      "figureDesc": "Tableau à 3 lignes (Produits laitiers, Fruits, Céréales) et 2 colonnes (Exemple 1, Exemple 2) avec des pointillés à remplir.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p048_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Complète les phrases suivantes avec le texte si tu en as besoin :",
+      "body": "* Il faut manger en quantité ................ et ................ Dans chaque menu, tu dois prendre du ................, un produit ................, un fruit ou un ................ cru, et de l'eau à volonté.\n* Tu dois également manger une ................ ou un ................ une fois par jour.\n* Les fruits et les légumes t'apporteront les ................ et le ................ indispensables à ta croissance.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p048_i3",
+      "topicId": "fr-6-m6",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Recherche dans l'article les aliments qui t'apportent :",
+      "body": "- Du calcium : ................\n- Des protéines : ................\n- Des sucres lents : ................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.94,
+      "id": "francais_lire_et_sexprimer_p048_i4",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.23
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de compréhension de lecture en français sur l'alimentation équilibrée, thème de santé qui correspond au Module 6 « Être en forme et mieux se porter », même si elle pourrait aussi se rattacher à la nutrition en éveil scientifique.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    123
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "L'alimentation équilibrée",
+    "skill": "Comprendre un texte documentaire sur l'alimentation et y retrouver des informations pour répondre à des questions, classer et compléter.",
+    "pageType": "exercise",
+    "formats": [
+      "qcm",
+      "schema_tableau",
+      "texte_a_trous",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "alimentation équilibrée",
+      "compréhension de texte",
+      "repas",
+      "familles d'aliments",
+      "calcium",
+      "protéines"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série d'activités variées autour d'un seul texte documentaire (choix multiples, classement par familles dans un tableau, phrases à compléter, recherche d'informations ciblées), réutilisable pour d'autres thèmes de santé ou de vie quotidienne.",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

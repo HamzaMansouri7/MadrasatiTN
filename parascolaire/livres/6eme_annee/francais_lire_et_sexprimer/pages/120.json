@@ -1,0 +1,137 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 120,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Corrigés des activités de compréhension et de vocabulaire : Ma mère, L'histoire de Monet, Une bonne leçon, Pas d'accord sur le programme, Honnêteté",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "4-7 (suite)",
+      "instruction": "Corrigé : fin de la séquence sur la construction / chez le tailleur",
+      "body": "4) « Monté sur une échelle, le père construit les murs. Il aligne les briques et les assemble avec le mortier. C'est avec beaucoup d'habileté qu'il manie la truelle. »\n5) Mohamed travaille avec beaucoup de courage car il sait que cette pièce neuve sera sa chambre.\n6) - Mustapha construit des murs solides. - Les deux frères partageront la nouvelle pièce.\n7) « Voici bientôt l'Aïd, dit le père de Ali à son fils. Tu auras une veste et un pantalon neufs pour la fête. Viens avec moi chez le tailleur ! » - Oh ! Que tu es gentil, papa ! » Les voici chez le tailleur qui apporte des pièces de tissu. Ali regarde autour de lui. Avec ses grands ciseaux, un ouvrier taille un pantalon. Un autre, assis devant une machine à coudre, pique une veste. « Comme cela va vite ! » dit Ali. Son père l'appelle : « Viens choisir ton tissu, Ali ! Cette étoffe bleue n'est-elle pas jolie ? Aimes-tu mieux celle-ci ? »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p120_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Ma mère",
+      "instruction": "Corrigé des questions 1 à 7",
+      "body": "1) a- La mère est : couturière. b- « Maman était revenue de la ville avec un énorme ballot. C'était des pantalons d'hommes, tout coupés ; il ne restait qu'à assembler les morceaux et à les coudre. »\n2) La mère travaille jour et nuit pour gagner plus d'argent.\n3) a- Le bruit de la machine à coudre dérange les voisins : Oui. b- « Certains voisins se plaignaient à cause de la machine à coudre qui les empêchait de dormir. » c- Le petit enfant est étonné et peiné. - L'enfant entre dans la cuisine sans faire de bruit. - L'enfant entre dans la cuisine sur la pointe des pieds.\n4) La mère est trop fatiguée car elle travaille jour et nuit. Puis elle ajoutait en soupirant : « Si seulement j'avais une fille en âge de m'aider, on travaillerait ensemble et ce serait plus gai ! » « Je fus à la fois étonné et peiné de voir ma mère qui dormait assise devant la table, la tête appuyée à son bras. »\n5) - La mère regrette de ne pas avoir de fille : Vrai - L'enfant réveille son père et sa sœur : Faux - Trop fatiguée, la mère dort assise : Vrai\n6) a- « Ce n'est pas très bien payé mais un peu d'argent nous aidera beaucoup. » « Si seulement j'avais une fille en âge de m'aider, on travaillerait ensemble et ce serait plus gai ! » b- Elle me répondait avec un sourire forcé : - Ça me fait plaisir de travailler. Je veux que rien ne manque à la maison.\n7) Cette mère est travailleuse et dévouée.",
+      "figureDesc": "",
+      "answer": "1a couturière ; 3a Oui ; 5 Vrai/Faux/Vrai",
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p120_i2",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "L'histoire de Monet",
+      "instruction": "Corrigé des questions 1 à 7",
+      "body": "1) Le père de Claude Monet est épicier.\n2) a- Monet veut travailler dans l'épicerie familiale. Faux b- « Très tôt, Monet décide de devenir peintre mais son père désire qu'il travaille dans l'épicerie familiale. »\n3) Monet est devenu désespéré à cause de la mort de ses deux épouses (Camille et Alice). Justification : * Camille est malade et meurt peu de temps après la naissance de Michel. Monet est désespéré et arrête de peindre. * Toute la famille vit très heureuse dans « La maison rose » jusqu'au jour où Alice meurt à son tour et laisse à nouveau l'artiste désespéré.\n4) [2] Monet rencontre Camille qui deviendra sa femme. [4] Monet découvre la maison de ses rêves à Giverny. [1] Monet étudie l'art à Paris. [6] Monet meurt dans « La maison rose » à l'âge de 86 ans. [3] Camille décède très jeune et laisse Monet désespéré. [5] Monet vit désormais avec Alice et retrouve le goût de peindre.\n5) Veut = désire. La mort = le décès. La maison = la demeure. Se marier = épouser.\n6) Monet n'a jamais peint Camille : Faux. « La maison rose » est l'habitation de ses rêves : Vrai. L'oncle de Monet lui donne de l'argent pour étudier l'art : Faux. Camille donne naissance à deux fils : Vrai. Monet étudie l'art à Paris : Vrai.\n7) J'aimerais être peintre dans l'avenir. D'abord la peinture me permettra de bien m'exprimer librement, puis grâce à cet art je pourrais gagner de l'argent, en fin à travers mes magnifiques tableaux je deviendrais célèbre.",
+      "figureDesc": "",
+      "answer": "Ordre : 1 études à Paris, 2 rencontre Camille, 3 Camille décède, 4 Giverny, 5 vit avec Alice, 6 meurt",
+      "confidence": 0.87,
+      "id": "francais_lire_et_sexprimer_p120_i3",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Une bonne leçon",
+      "instruction": "B) Compréhension : corrigé des questions 1 à 7",
+      "body": "1) a- Les trois enfants aiment l'école. Non b- « Trois enfants, se rendant à l'école, pensent que c'est bien ennuyeux d'étudier. »\n2) a- Les enfants vont au bois pour jouer avec les animaux de la forêt. b- « Allons au bois, nous y trouverons toutes sortes de jolies créatures qui n'ont rien à faire ; nous jouerons avec elles. »\n3) a- Les enfants ne s'arrêtent pas devant la fourmi et l'abeille. b- Les enfants ne s'arrêtent pas devant la fourmi et l'abeille parce qu'ils savent bien qu'elles ont beaucoup de travail à faire et elles n'ont pas le temps de jouer.\n4) Les enfants invitent une petite souris, le lièvre, la colombe et un pinson.\n5) - Il chasse les mouches pour sa nourriture. - Il réjouit, par ses chants, les hommes dans leur travail.\n6) a- Les enfants sont paresseux. Les enfants sont travailleurs. b- Les enfants n'osent pas s'arrêter devant l'active fourmi. Les enfants n'ont pas le courage de s'arrêter devant l'active fourmi.\n7) Il faut passer la plupart du temps à travailler.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p120_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Pas d'accord sur le programme",
+      "instruction": "Corrigé des questions 1 à 7",
+      "body": "1) a- L'histoire se déroule : en hiver. b- « Ce samedi après-midi, il fait froid, le vent souffle très fort. Heureusement, nous avons la télé. » « Il va falloir monter sur la terrasse. Mais, pour l'instant, il y a trop de vent. »\n2) Si le frère regarde le match de rugby, - Sa sœur va rater un film. - Le grand-père va rater un dessin animé.\n3) a- Non, la fille n'aime pas les émissions sportives. b- « On ne va pas le rater pour voir quinze fous se disputer un ballon pendant deux heures. »\n4) a- d'une publicité. b- « Sur le petit écran, une jolie jeune fille joue dans un énorme nuage de bulles. Elle nous conseille d'essayer sa nouvelle savonnette. »\n5) L'image est coupée car l'antenne a lâché à cause du vent.\n6) a- Le père adore regarder la télé. Non b- « Parfait, murmure papa, qui n'aime pas trop la télévision. »\n7) C'est le soir, les enfants rentrent à la maison, ils allument la télévision. Nabil aime les films documentaires sur les animaux. Nadia regarde les dessins animés car ils sont amusants. Kamel préfère les émissions sportives.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.87,
+      "id": "francais_lire_et_sexprimer_p120_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "Honnêteté",
+      "instruction": "Corrigé des questions 1 à 4",
+      "body": "1) Au début, le père veut garder le portefeuille car il a besoin d'argent. Il doit acheter le médicament pour Lucie.\n2) a- Le père ne sait pas à qui le portefeuille appartient. b- « J'allais le porter au commissariat de police, mais j'ai trouvé cette carte dans le portefeuille. Regarde ! »\n3) Le père de Lucie doit rendre le portefeuille à son propriétaire. (Ou l'apporter au commissariat de police.)\n4) Le père a chassé de son esprit l'idée de garder le portefeuille.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "francais_lire_et_sexprimer_p120_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.12
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un corrigé de lecture-compréhension en français qui couvre plusieurs textes (Ma mère, Monet, Une bonne leçon, Pas d'accord sur le programme, Honnêteté) répartis sur plusieurs modules (travail, acceptation des autres, entraide...), donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de textes narratifs",
+    "skill": "Répondre à des questions de compréhension en justifiant par des citations du texte et enrichir son vocabulaire",
+    "pageType": "correction",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous"
+    ],
+    "keywords": [
+      "corrigé",
+      "compréhension de texte",
+      "justification par citation",
+      "vocabulaire",
+      "récit",
+      "valeurs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le schéma récurrent « réponse + justification par une phrase du texte » (vrai/faux, choix multiple) est réutilisable, ainsi que des situations du quotidien (métier d'un parent, vocation d'un peintre, honnêteté face à un portefeuille trouvé, désaccord familial sur un programme télé) pour créer des textes et questions originaux.",
+    "themeGroup": "Le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

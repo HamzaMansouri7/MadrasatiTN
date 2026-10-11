@@ -1,0 +1,75 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 43,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "العدد الترتيبي / تحديد الموقع والترتيب",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أَرْسُمُ الْعَلَامَةَ (X) تَحْتَ الْعَدَّاءِ الثَّالِثِ بِدَايَةً مِنْ خَطِّ الْوُصُولِ، وَأُلَوِّنُ الْعَدَّاءَ الْخَامِسَ.",
+      "body": "",
+      "figureDesc": "رسم لخمسة عدائين يتسابقون نحو خط وصول تعلوه لافتة 'الوُصُولُ'، وتحت كل عدّاء مربع مخصص لوضع العلامة.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p043_i1",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أُنْجِزُ وَأَتَمَيَّزُ :\nأَكْتُبُ الْعَدَدَ الَّذِي يُنَاسِبُ رُتَبَ عَنَاصِرِ الْمَشْهَدِ.",
+      "body": "• الشَّمْسُ بِدَايَةً مِنَ الصَّيَّادِ ← ⬭\n• الطَّائِرُ بِدَايَةً مِنَ الْأَرْنَبِ ← ⬭\n• الصَّيَّادُ بِدَايَةً مِنَ السَّحَابِ ← ⬭\n• الْأَرْنَبُ بِدَايَةً مِنَ الطَّائِرَةِ ← ⬭\n• الثُّعْبَانُ بِدَايَةً مِنَ الشَّمْسِ ← ⬭",
+      "figureDesc": "مشهد طبيعي يضم عناصر مع تسمياتها: شَمْسٌ، طَائِرَةٌ، سَحَابٌ، طَائِرٌ، شَجَرَةٌ، صَيَّادٌ، أَرْنَبٌ، ثُعْبَانٌ، وبجانبها خانات لتسجيل الترتيب المناسب.",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "evaluations_maths_arabe_p043_i2",
+      "topicId": "math-1-p2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "math-1-p2",
+  "topicTitle": "Période 2 : Nombres de 6 à 9, comparaison, ordre et lignes",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p2",
+    "confidence": 0.27
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les nombres ordinaux et le repérage de rang (3e, 5e à partir d'une origine) avec des nombres jusqu'à 9, ce qui correspond à la Période 2 (nombres de 6 à 9, ordre).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres ordinaux et repérage du rang",
+    "skill": "Déterminer et exprimer le rang d'un élément dans une file ou une scène à partir d'un point de départ donné.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "nombre ordinal",
+      "rang",
+      "position",
+      "point de départ",
+      "observation d'une scène"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation réutilisable : une course d'athlètes (marquer ou colorier un rang depuis la ligne d'arrivée) et une scène illustrée où l'on donne le rang d'éléments en changeant le point de départ, ce qui oblige à distinguer le sens du comptage.",
+    "themeGroup": "Nombres ordinaux"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

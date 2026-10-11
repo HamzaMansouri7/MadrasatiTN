@@ -1,0 +1,229 @@
+{
+  "book": "eveil_scientifique_evaluations",
+  "page": 7,
+  "grade": "5ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "شروط الإنبات (ظروف الزراعة: الماء والحرارة والهواء) وتنوع الأوساط البيئية والسلاسل الغذائية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة عدد اتمّ تعمير الجدول التالي",
+      "body": "ظروف الزراعة | النتائج | التعليل\nبذور ناضجة وسليمة مع سقي منتظم ودرجة حرارة وهواء\nبذور ناضجة وسليمة مع ماء قليل ودرجة حرارة وهواء\nبذور ناضجة وسليمة مع مياه كثيرة غمرت التربة ودرجة حرارة معتدلة وهواء\nبذور ناضجة وسليمة مع سقي منتظم وهواء ودرجة حرارة",
+      "figureDesc": "جدول من ثلاثة أعمدة (ظروف الزراعة، النتائج، التعليل) وأربعة أسطر؛ عمودا النتائج والتعليل فارغان ليعمرهما التلميذ. علامة مائية خضراء بالخط العربي.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_evaluations_p007_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة عدد أصلح الخطأ",
+      "body": "عملية الإنبات تبدأ ببروز الجذير لأن دوره تثبيت النبتة في التّربة\nتنمو النبتة في تربة جافّة\nيتغذّى الجنين أثناء الإنبات على الماء والأملاح المعدني الموجودة بالتّربة",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_evaluations_p007_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة عدد أصلح الخطأ إن وجد",
+      "body": "تؤثّر العوامل المناخيّة والتّساقطات في تنوّع الأوساط البيئيّة\nالمستهلك درجة أولى هو حيوان لاحم\n[illisible]",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_evaluations_p007_i3"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.55,
+  "topicIdPrev": "sci-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-5-u6",
+    "confidence": 0.4
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page mélange la germination (conditions de culture, rôle de la radicule, nutrition minérale du sol, relevant de sci-5-u6) et la diversité des milieux écologiques et chaînes alimentaires (relevant de sci-5-u5), donc c'est une page de révision couvrant deux chapitres et aucun chapitre ne correspond exactement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Conditions de germination et milieux",
+    "skill": "Relier les conditions de culture (eau, chaleur, air) aux résultats de la germination, et repérer et corriger des affirmations erronées sur la germination, les milieux et les chaînes alimentaires.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "germination",
+      "conditions de culture",
+      "eau, chaleur, air",
+      "milieux naturels",
+      "chaînes alimentaires",
+      "correction d'erreurs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : tableau à compléter (conditions de culture, résultat, justification) avec une seule variable modifiée par ligne, et exercices « corrige l'erreur » sur des affirmations fausses ou parfois justes, utiles pour une démarche d'investigation et le raisonnement scientifique.",
+    "themeGroup": "La germination"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Instruction 1 : l'image porte « اتمّ » avec hamza sous alif non visible ; la transcription « اتمّ » est correcte, mais « التعليمة عدد 1: » ajoute un chiffre « 1 » absent de l'image (« التعليمة عدد » seulement). Idem pour les numéros 2 et 3."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Numérotation « 1) 2) 3) 4) » des lignes du tableau absente de l'image."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Ligne 4 : l'image donne « مع سقي منتظم وهواء ودرجة حرارة » ; ordre correct dans la transcription (وهواء ودرجة حرارة), OK. Mais ligne 1 : « ودرجة حرارة وهواء » correct."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "« الأملاح المعدني » : l'image porte « المعدني » (faute volontaire à corriger), transcription fidèle ; mais « عملية الإنبات » est correct. Aucune erreur ici."
+      },
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Dernière ligne de l'image (texte chevauché) transcrite de façon inventée « تكون بعض الأوساط البيئية مستقلة بعضها » ; l'image montre « ... عنت امكونا بعض البيئي لوسط مستقلة بعضها » : texte brouillé, probablement une phrase du type « تكون بعض الأوساط البيئية مستقلة بعضها عن بعض » ; la transcription est une conjecture."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-têtes du tableau (ظروف الزراعة | النتائج | التعليل) présents, mais colonnes vides des résultats/justifications non signalées comme vides (acceptable)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« المستهلك درجة أولى » : le texte de l'image est sans voyelles ; OK."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.82,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les instructions portent « التعليمة عدد » sans aucun chiffre dans l'image. La transcription ajoute « 1: », « 2: » et « 3: » aux trois instructions. Ces chiffres sont inventés (le champ number peut rester)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "La numérotation « 1) 2) 3) 4) » des lignes du tableau n'existe pas dans l'image. Les quatre lignes de la colonne « ظروف الزراعة » ne sont pas numérotées."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "La dernière ligne de l'exercice 3 est brouillée par le chevauchement du texte. L'image ne montre que des fragments (« عنت امكونا بعض البيئي لوسط مستقلة بعضها »). La reconstitution « تكون بعض الأوساط البيئية مستقلة بعضها » est une conjecture. Elle doit être remplacée par [illisible]."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة عدد اتمّ تعمير الجدول التالي",
+      "body": "ظروف الزراعة | النتائج | التعليل\nبذور ناضجة وسليمة مع سقي منتظم ودرجة حرارة وهواء\nبذور ناضجة وسليمة مع ماء قليل ودرجة حرارة وهواء\nبذور ناضجة وسليمة مع مياه كثيرة غمرت التربة ودرجة حرارة معتدلة وهواء\nبذور ناضجة وسليمة مع سقي منتظم وهواء ودرجة حرارة",
+      "figureDesc": "جدول من ثلاثة أعمدة (ظروف الزراعة، النتائج، التعليل) وأربعة أسطر؛ عمودا النتائج والتعليل فارغان ليعمرهما التلميذ. علامة مائية خضراء بالخط العربي.",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_5eme_evaluations_p007_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة عدد أصلح الخطأ",
+      "body": "عملية الإنبات تبدأ ببروز الجذير لأن دوره تثبيت النبتة في التّربة\nتنمو النبتة في تربة جافّة\nيتغذّى الجنين أثناء الإنبات على الماء والأملاح المعدني الموجودة بالتّربة",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_5eme_evaluations_p007_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة عدد أصلح الخطأ إن وجد",
+      "body": "تؤثّر العوامل المناخيّة والتّساقطات في تنوّع الأوساط البيئيّة\nالمستهلك درجة أولى هو حيوان لاحم\n[illisible]",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_5eme_evaluations_p007_i3"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "التعليمة عدد 1: اتمّ تعمير الجدول التالي",
+      "body": "ظروف الزراعة | النتائج | التعليل\n1) بذور ناضجة وسليمة مع سقي منتظم ودرجة حرارة وهواء\n2) بذور ناضجة وسليمة مع ماء قليل ودرجة حرارة وهواء\n3) بذور ناضجة وسليمة مع مياه كثيرة غمرت التربة ودرجة حرارة معتدلة وهواء\n4) بذور ناضجة وسليمة مع سقي منتظم وهواء ودرجة حرارة",
+      "figureDesc": "جدول من ثلاثة أعمدة (ظروف الزراعة، النتائج، التعليل) وأربعة أسطر؛ عمودا النتائج والتعليل فارغان ليعمرهما التلميذ. علامة مائية خضراء بالخط العربي.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_5eme_evaluations_p007_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "التعليمة عدد 2: أصلح الخطأ",
+      "body": "عملية الإنبات تبدأ ببروز الجذير لأن دوره تثبيت النبتة في التّربة\nتنمو النبتة في تربة جافّة\nيتغذّى الجنين أثناء الإنبات على الماء والأملاح المعدني الموجودة بالتّربة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "eveil_scientifique_5eme_evaluations_p007_i2",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "التعليمة عدد 3: أصلح الخطأ إن وجد",
+      "body": "تؤثّر العوامل المناخيّة والتّساقطات في تنوّع الأوساط البيئيّة\nالمستهلك درجة أولى هو حيوان لاحم\n[السطر الأخير مشوّش في الصورة، يبدو أنه: «...تكون بعض الأوساط البيئية مستقلة بعضها ...» ولا يمكن قراءته بدقة]",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "eveil_scientifique_5eme_evaluations_p007_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.82
+  },
+  "bookTitle": "Éveil scientifique 5ème année — Évaluations"
+}

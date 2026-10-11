@@ -1,0 +1,126 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 18,
+  "grade": "5ème Année",
+  "subject": "الرياضيات",
+  "topicGuess": "الدرس 9: أُنجِزُ عمليّة قسمة على عدد ذي رقمين (Note: la page est un exercice de mathématiques, pas de langue arabe)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُتمِّمُ الجَدْوَلَ التَّالِيَ:",
+      "body": "المَدارِس | العَدَدُ الجُمْليُّ لِلتَّلامِيذِ | عَدَدُ التَّلامِيذِ بِكُلِّ قِسْمٍ | عَدَدُ الأَقْسامِ بِكُلِّ مَدْرَسَةٍ. المَدْرَسَةُ الأُولَى: 768 | 32 | ........ . المَدْرَسَةُ الثَّانِيَةُ: 1015 | ........ | 29. المَدْرَسَةُ الثَّالِثَةُ: ........ | 33 | 31.",
+      "figureDesc": "جدول من أربعة أعمدة وثلاثة أسطر، بعض الخانات فارغة (منقّطة) لتعميرها.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p018_i1",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هُوَ المِقْدارُ المالِيُّ الَّذِي دَفَعَهُ كُلُّ واحِدٍ؟",
+      "body": "ذَبَحَ أَبٌ وَأَرْبَعَةُ أَوْلادٍ لَهُ مُتَزَوِّجُونَ خَرُوفًا شَرَوْهُ بِـ 375 د وَاقْتَسَمُوا دَفْعَ ثَمَنِهِ بِالتَّساوِي بَيْنَهُمْ.",
+      "figureDesc": "أسطر منقّطة لكتابة الإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p018_i2",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "هَلْ يُمْكِنُ لِأُمِّ طاهِرٍ أَنْ تَشْتَرِيَ طاقَمًا كامِلًا؟ أُعَلِّلُ إِجابَتِي.",
+      "body": "قَصَدَتْ أُمُّ طاهِرٍ السُّوقَ وَمَعَها 20 د لِتَشْتَرِيَ مَجْمُوعَةً مِنَ الصُّحُونِ. وَجَدَتْ عِنْدَ أَحَدِ التُّجّارِ طاقَمًا مِنْ 12 صَحْنًا بِـ 21000 مي.",
+      "figureDesc": "أسطر منقّطة لكتابة الإجابة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p018_i3",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-أ",
+      "instruction": "احْسُبْ ثَمَنَ الصَّحْنِ الواحِدِ.",
+      "body": "",
+      "figureDesc": "سطر منقّط لكتابة الإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p018_i4",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-ب",
+      "instruction": "يَسْمَحُ البائِعُ بِبَيْعِ 9 صُحُونٍ أَوْ 6 مِنْ نَفْسِ النَّوْعِ، ما هُوَ عَدَدُ الصُّحُونِ الَّتِي تَشْتَرِيها الأُمُّ؟ عَلِّلْ إِجابَتَكَ.",
+      "body": "",
+      "figureDesc": "ثلاثة أسطر منقّطة لكتابة الإجابة.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p018_i5",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3-ج",
+      "instruction": "كَمْ بَقِيَ لَها بَعْدَ شِراءِ الصُّحُونِ؟",
+      "body": "",
+      "figureDesc": "سطر منقّط لكتابة الإجابة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p018_i6",
+      "topicId": "math-5-p4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-p4",
+  "topicTitle": "Période 4 : Division à 2 chiffres, masses et cercle/disque",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-p4",
+    "confidence": 0.65
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page propose des exercices de division par un diviseur à deux chiffres (768÷32, 1015÷29, 375÷5, 21000÷12), ce qui correspond à la Période 4 : Division à 2 chiffres.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Division par un nombre à deux chiffres",
+    "skill": "Effectuer une division euclidienne par un nombre à deux chiffres et l'utiliser pour résoudre des problèmes de partage et de groupement.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "division",
+      "diviseur à deux chiffres",
+      "partage équitable",
+      "problème à étapes",
+      "monnaie (dinars/millimes)"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situations concrètes tunisiennes (élèves répartis par classe dans des écoles, partage du prix d'un mouton de l'Aïd, achat d'un service d'assiettes avec budget limité) combinant tableau à compléter, division, conversion dinars/millimes et justification de la faisabilité d'un achat.",
+    "themeGroup": "Division euclidienne"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

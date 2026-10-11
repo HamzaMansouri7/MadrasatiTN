@@ -1,0 +1,186 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 116,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Géométrie (construction d'un parallélogramme, symétrie axiale, agrandissement) et Mesure (conversions, périmètre du cercle, aire d'un trapèze)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "أنشئ متوازي الأضلاع ABCD بحيث AB=5 cm و AD=2,5 cm و DÂB=70°.",
+      "body": "أنشئ متوازي الأضلاع ABCD بحيث AB=5 cm و AD=2,5 cm و DÂB=70° (2 ن)",
+      "figureDesc": "Espace vide pour la construction.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p116_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "10",
+      "instruction": "أنشئ مماثل الشكل ABCD على الشبكة التربيعية بالنسبة للمستقيم (E).",
+      "body": "أنشئ مماثل الشكل ABCD على الشبكة التربيعية بالنسبة للمستقيم (E). (2 ن)",
+      "figureDesc": "Grille quadrillée avec une droite verticale (E) ; le quadrilatère ABCD (A en haut, B à gauche, D à droite, C en bas) est à droite de l'axe. Il faut construire son symétrique à gauche.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p116_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "11",
+      "instruction": "أنشئ تكبيرا للشكل التالي بمعدل 2.",
+      "body": "أنشئ تكبيرا للشكل التالي بمعدل 2 (2 ن)",
+      "figureDesc": "Grille quadrillée avec une figure grisée en haut à gauche (trapèze rectangle prolongé par un rectangle, en forme de L) à agrandir de rapport 2.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p116_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المجال الثالث: القياس (8 نقط)",
+      "body": "أحول إلى الوحدة المطلوبة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p116_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "12",
+      "instruction": "أحول إلى الوحدة المطلوبة (4 ن)",
+      "body": "42,3 km 27,8 m = ........ hm",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p116_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "13",
+      "instruction": "أحول إلى الوحدة المطلوبة",
+      "body": "9,78 Kg 820 g = ........ dg",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p116_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "14",
+      "instruction": "أحول إلى الوحدة المطلوبة",
+      "body": "4,75 ha 82,9 m² = ........ a",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p116_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "15",
+      "instruction": "أحول إلى الوحدة المطلوبة",
+      "body": "6,4 m³ 2528,7 dl = ........ dm³",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p116_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "16",
+      "instruction": "أوجد قياس محيط الدائرة بالمتر. (نأخذ π=3,14)",
+      "body": "دائرة قياس قطرها هو 25 dm. أوجد قياس محيط الدائرة بالمتر. (نأخذ π=3,14) (1 ن)",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p116_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "17",
+      "instruction": "مسألة: 1. أحسب بالهكتار مساحة الضيعة.",
+      "body": "يملك مزارع ضيعة فلاحية على شكل شبه منحرف طول قاعدته الكبرى 125 مترا وطول قاعدته الصغرى 75 مترا وطول ارتفاعه 20 مترا. تنتج الضيعة محصولا زراعيا قدره 35 قنطارا في الهكتار الواحد. 1. أحسب بالهكتار مساحة الضيعة. (1 ن)",
+      "figureDesc": "Deux lignes pointillées pour la réponse.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p116_i10",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch2",
+    "confidence": 0.66
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page ressemble à un devoir de synthèse couvrant plusieurs chapitres (construction d'un parallélogramme, symétrie axiale, agrandissement, conversions de mesures de longueur, masse, aire et volume), sans qu'aucun chapitre unique ne corresponde.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Géométrie et mesures : révision",
+    "skill": "Construire des figures géométriques (parallélogramme, symétrique, agrandissement) et effectuer des conversions et calculs de mesures (périmètre du cercle, aire du trapèze).",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "parallélogramme",
+      "symétrie axiale",
+      "agrandissement",
+      "conversions",
+      "périmètre du cercle",
+      "aire du trapèze"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'évaluation en deux domaines (géométrie, mesure) avec barème, conversions d'unités composées et problème contextualisé d'un terrain agricole en trapèze avec calcul d'aire en hectares puis de rendement de récolte.",
+    "themeGroup": "Problèmes de synthèse et révisions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "unknown",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

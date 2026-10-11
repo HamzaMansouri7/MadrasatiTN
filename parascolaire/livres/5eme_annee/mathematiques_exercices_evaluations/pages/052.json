@@ -1,0 +1,114 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 52,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 28 : أجمع الأعداد العشرية وأطرحها (الرياضيات)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "28",
+      "instruction": "الدَّرسُ 28 : أَجمَعُ الأَعدَادَ العُشرِيَّةَ وَأَطرَحُهَا",
+      "body": "",
+      "figureDesc": "Bandeau-titre décoratif avec le numéro 5 (année) à gauche",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "mathematiques_exercices_evaluations_p052_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَجْرِ العَمَلِيَّاتِ التَّالِيَةَ :",
+      "body": "18,64 + 42,95 = ...... ؛ 239,834 + 685,496 = ...... ؛ 805,705 - 239,428 = ...... ؛ 913,256 - 348,479 = ......",
+      "figureDesc": "Quatre opérations posées en colonnes (deux additions, deux soustractions) séparées par des traits verticaux, avec lignes de résultat en pointillés",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p052_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أَنجِزِ العَمَلِيَّاتِ التَّالِيَةَ وَفْقًا لِلوَضْعِ العَمُودِيِّ :",
+      "body": "2,426 + 27,98 = ...... ؛ 895,079 + 189,85 = ...... ؛ 1073,426 - 785,599 = ...... ؛ 1,348 - 0,789 = ......",
+      "figureDesc": "Encadré « الوَضعُ العَمُودِيُّ لِلعَمَلِيَّاتِ » avec zone de lignes pointillées à gauche pour poser les opérations en colonnes",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p052_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُكمِلُ بِالعَدَدِ النَّاقِصِ :",
+      "body": "6 كم - ...... كم = 45 هم. ؛ 14 دكل + ...... هل = 0,6 هل. ؛ 78 ل + ...... دكل = 5,3 دكل. ؛ 9 ط - ...... ق = 8,5 ط. ؛ ...... ق + 0,7 ط = 1 ط. ؛ ...... م + 85 صم = 1,3 م. ؛ ...... كغ - 1,75 كغ = 6,25 كغ. ؛ ...... ل - 86,75 ل = 107,75 ل.",
+      "figureDesc": "Deux colonnes de quatre égalités à compléter, séparées par un double trait vertical",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p052_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "لِتَصنَعَ أُمُّ طَاهِر المُرَبَّى، شَرَتْ 10 كغ مِنَ التُّفَّاحِ وَ 2,8 كغ مِنَ السُّكَّرِ. بَعدَ غَسْلِ التُّفَّاحِ وَإِزَالَةِ النَّوَى وَالقِشْرَةِ وَضَعَتِ التُّفَّاحَ وَالسُّكَّرَ فِي 3 ل مِنَ المَاءِ (3 كغ).",
+      "body": "• كَمْ صَارَتْ كُتلَةُ المُرَبَّى قَبلَ إِنضَاجِهِ إِذَا فَقَدَ التُّفَّاحُ 2,750 كغ؟ ...... ؛ - عِندَ إِنضَاجِ المُرَبَّى نَقَصَ مِن كُتلَتِهِ 4,65 كغ؟ • كَمْ كُتلَةُ المُرَبَّى نَاضِجًا؟ ......",
+      "figureDesc": "Lignes pointillées pour la rédaction de la solution",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_evaluations_p052_i5",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.51
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur l'addition et la soustraction de nombres décimaux (opérations posées en colonnes, compléments, problème de masses), ce qui correspond à la Période 2 : Nombres décimaux, addition/soustraction et temps.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition et soustraction de décimaux",
+    "skill": "Additionner et soustraire des nombres décimaux (en colonnes) et résoudre un problème à étapes avec des mesures de masse.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "addition",
+      "soustraction",
+      "opération posée",
+      "conversion d'unités",
+      "masse"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : compléter des égalités avec conversions d'unités (longueur, capacité, masse, temps) et un problème contextualisé de fabrication de confiture avec pertes de masse successives.",
+    "themeGroup": "Opérations sur les décimaux"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

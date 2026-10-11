@@ -1,0 +1,153 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 28,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "معجم الصداقة وشروق الشمس والطبيعة الريفية، ومقدمة الرسالة",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "العقل السليم في الجسم السليم\nعلموا الشبان الرياضة البدنية والفنون الجميلة تنشط أبدانهم الهوا والعبوا فإني أكره أن يكون في دينكم غلظة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p028_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الصداقة",
+      "body": "وصف صديق: حلو الكلام، لطيف المعشر، طلق المحيا، طنب القلب، نقي السريرة، مخلص، وفي، لا يؤذي أحدا، محب للخير، دائم الابتسام.\nالعلاقة مع صديق: ربط الود بيني وبينه، لا نفترق إلا عند النوم، كانت بيني وبينه علاقة متينة، علاقة حب، كانت تجمعنا محبة كبيرة.\nحلو الكلام لطيف العشرة طيب القلب نقي السريرة مخلص وفي محبوب من الجميع لا يؤذي أحدا لا تفارق الابتسامة ثغره اينما حل زرع الابتسامة.\nقيل: فما أكثر الأصدقاء حين تعدهم ولكنهم في النائبات قليل.\nإن الأصدقاء كما قال الشاعر كثيرون حين تقبل عليك الدنيا ولكنهم قليلون إذا أدبرت عنك فلا يواسيك عندئذ إلا الصديق",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p028_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "شروق الشمس",
+      "body": "اطلالة الشمس من وراء الجبل: أشعتها تعانق الأشجار، أشعتها تعانق الأشجار.\nأشعتها تنعكس فوق حبات الندى المتناثرة على الحشائش.\nشروق الشمس يعلن دبيب الحياة في القرية، لوحت الشمس وجهه مع موعد الشروق.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p028_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الطبيعة الريفية",
+      "body": "الطبيعة الروابي النسيم العصافير الأشجار المروج\nالفلاحون رعاة الغنم\nالتضاريس: جبال شماء، منعرجات صخرية حادة، منحدرات أخاذة، سفوح خضراء\nهواء نقي، جو معتدل الحرارة، نسيم عليل، عيون ثرة عذبة\nجداول رقراقة، خرير المياه، هدير المياه، زهور برية متفتحة، الزنابق، الأقاحي\nطيور تشدو على الأغصان: البلابل، الشحارير",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "production_ecrite_arabe_p028_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الرسالة - المقدمة",
+      "body": "أبي العزيز، أبي الحبيب، أبي الحنون\nمعلمي الجليل، معلمي القدير\nصديقي الوفي، صديقي المخلص",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p028_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-4-m3",
+    "confidence": 0.14
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un lexique arabe (amitié, lever du soleil, nature rurale, formules d'introduction de lettre) qui ne correspond clairement à aucune unité narrative précise ; le vocabulaire descriptif et d'amitié touche vaguement à l'unité 4 (description) ou 6 (relations), mais sans certitude.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Lexique : amitié, nature rurale, lettre",
+    "skill": "Enrichir son vocabulaire thématique pour décrire un ami, le lever du soleil, la campagne et rédiger l'introduction d'une lettre.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "vocabulaire",
+      "amitié",
+      "lever du soleil",
+      "campagne",
+      "lettre",
+      "expression écrite"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Banques de mots et d'expressions par champ lexical (portrait d'un ami, paysage rural, formules d'ouverture de lettre) réutilisables pour des exercices de description, de production écrite guidée ou des fiches lexicales illustrées.",
+    "themeGroup": "Lexique et vocabulaire de la production écrite"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Titre de section 'الطبيعة الريفية' dans la transcription, alors que l'image indique seulement 'الطبيعة' (la ligne 'الطبيعة الروابي النسيم...' est une liste de mots)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "'الريفية' ajouté comme titre, absent de l'image ; le titre réel est 'الطبيعة' au début de la ligne."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'طنب القلب' : l'image porte 'طنب' et la transcription le reprend, mais il s'agit probablement de 'طيب القلب' (erreur du texte source, correctement transcrit)."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Ponctuation (deux-points, virgules) ajoutée alors que l'image sépare par des espaces."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "'الهوا والعبوا' : l'image porte 'الهوا والعبوا', correct ; mais la 'réponse: None' et la structure en blocs sont ajoutées."
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "Dans 'شروق الشمس', la ligne 'أشعتها تعانق الأشجار' est répétée deux fois, comme dans l'image (fidèle)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

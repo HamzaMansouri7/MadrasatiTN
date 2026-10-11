@@ -1,0 +1,210 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 7,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الوحدة 1 : الأعداد الأكبر من مليار، المقارنة والترتيب، تفكيك الأعداد، وحدات القياس، العمليات الأربع على الأعداد العشرية، والمستقيمان المتوازيان والمتعامدان",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أتمم الجدول التالي بما هو مطلوب :",
+      "body": "جدول من عمودين: كتابة العدد بالأرقام | كتابة العدد بالحروف. السطر الأول: 1 500 030 (كتابته بالحروف فارغة). السطر الثاني: كتابته بالحروف: ملياران وسبع مئة مليونا ومئتان عشرة (كتابته بالأرقام فارغة).",
+      "figureDesc": "جدول من عمودين وسطرين للإتمام",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p007_i1",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "رتب الأعداد التالية ترتيبا تزايديا :",
+      "body": "45 928 029 ; 6 000 000 ; 248 928 000 ; 9 720 181 292",
+      "figureDesc": "سطر منقط لكتابة الجواب",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p007_i2",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "فكك الأعداد التالية كما في المثال :",
+      "body": "مثال: 56 489 432 = 56 000 000 + 489 000 + 432\n50 680 432 298 = ...........\n143 726 920 278 = ...........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p007_i3",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "écris les nombres ci-dessous en chiffre dans le tableau :",
+      "body": "- six milliards sept cent millions.\n- trois millions huit cent mille",
+      "figureDesc": "Tableau de numération avec colonnes Milliards, Millions, Milliers, Unités (3 cases chacune) et deux lignes vides",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p007_i4",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "المستقيمان (d1) و(d2) متوازيان.",
+      "body": "أ- أرسم المستقيم (E) المار من النقطة A والعمودي على المستقيم (d₁).\nب- أرسم المستقيم (F) المار من النقطة B والعمودي على المستقيم (d₂).\nج- ماذا تستنتج بالنسبة للمستقيمين (E) و (d₂) ؟\nد- ماذا تستنتج بالنسبة للمستقيمين (F) و (d₁) ؟\nهـ - ماذا تستنتج بالنسبة للمستقيمين (E) و (F) ؟",
+      "figureDesc": "مستقيمان متوازيان مائلان (d1) و(d2) مع النقطة A على (d1) والنقطة B على (d2) داخل إطار؛ أسطر منقطة للأجوبة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p007_i5",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "حول وحدات القياس إلى ما هو مطلوب :",
+      "body": "- 12 hm = ........ m\n- 3,5 dm = ........ dam\n- 541 mg = ........ cg\n- 0,9 t = ........ kg\n- 50 km² = ........ hm²\n- 95,4 m² = ........ dam²",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p007_i6",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "تنتج أرض زراعية مساحتها 8ha 35 a حوالي 5t من الشعير للهكتار الواحد.",
+      "body": "أ- أحسب كمية الشعير التي تنتجها هذه الأرض بـ t ثم بـ q.",
+      "figureDesc": "سطران منقطان للجواب",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p007_i7",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "calcule la taille totale des quatre fichiers contenus dans le dossier « Mes fiches » :",
+      "body": "la taille totale en « Mo » est :",
+      "figureDesc": "Capture d'écran du dossier « mes fiches » : FRANÇAIS (Document Microsoft Word, 16,0 Ko), La route (00:03:39, 317 Mo), Moto (Fichier JPG, 1,81 Mo), poème (Son au format MP3, 1,48 Mo)",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "soutien_maths_francais_p007_i8",
+      "topicId": "math-6-ch1",
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "9",
+      "instruction": "ضع وأنجز العمليات التالية :",
+      "body": "1523,5 + 716,2 ; 8 390 – 392,15 ; 262 × 7,5",
+      "figureDesc": "ثلاثة أعمدة فارغة لإنجاز العمليات",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p007_i9",
+      "topicId": "math-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-ch1",
+  "topicTitle": "Période 1 : Nombres décimaux, surfaces et critères de divisibilité",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-ch1",
+    "confidence": 0.42
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les grands nombres, leur comparaison et décomposition, les conversions d'unités de mesure (longueurs, masses, aires), les nombres décimaux et les droites parallèles/perpendiculaires, ce qui correspond le mieux à la Période 1 (nombres décimaux et surfaces), même si le contenu est de révision diagnostique et déborde un peu du chapitre.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Grands nombres, mesures et opérations décimales",
+    "skill": "Lire, écrire, comparer et décomposer les grands nombres, convertir des unités, effectuer les quatre opérations sur les décimaux et tracer des droites parallèles et perpendiculaires.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "grands nombres",
+      "décomposition",
+      "conversion d'unités",
+      "nombres décimaux",
+      "droites parallèles",
+      "perpendiculaires"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Une série variée d'exercices de révision de début d'année, combinant tableau de correspondance chiffres/lettres, tri de nombres, conversions d'unités, problème agricole (aire et rendement en tonnes et quintaux), taille de fichiers informatiques et construction géométrique avec déduction sur des droites parallèles et perpendiculaires. Ces contextes sont réutilisables, et le mélange arabe/français rappelle le cadre bilingue de l'enseignement tunisien.",
+    "themeGroup": "Nombres décimaux et opérations"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1 : « ملياران وسبع مئة مليونا ومئتان عشرة » — l'image indique « مليونا » avec « وسبع مئة مليونا ومئتان عشرة », transcription conforme ; mais le titre de l'en-tête (« سلسلة تمارين الدعم في الرياضيات – الوحدة 1 – المستوى 6 », « اسم المتعلم(ة) ») est absent de la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête de la page omis : « سلسلة تمارين الدعم في الرياضيات الوحدة 1 - المستوى 6 » et « اسم المتعلم (ة) : ...... »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 4 : le tableau (Milliards | Millions | Milliers | Unités) n'est pas transcrit."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 8 : la capture d'écran du dossier « mes fiches » (fichiers FRANÇAIS 16,0 Ko, La route 317 Mo, Moto 1,81 Mo, poème 1,48 Mo) n'est pas décrite, alors que les données sont nécessaires."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 5 : la figure (droites d1, d2, points A et B) n'est pas mentionnée ; exercice 9 : le tableau à 3 colonnes pour poser les opérations non mentionné."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Exercice 7 : « 8ha 35 a » correct ; ordre OK. Dans l'exercice 4, « trois millions huit cent mille » : le point final manque dans l'image, correct. Aucune erreur chiffrée détectée."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

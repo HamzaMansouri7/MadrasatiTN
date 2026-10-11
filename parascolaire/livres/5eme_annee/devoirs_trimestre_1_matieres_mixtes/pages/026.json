@@ -1,0 +1,155 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 26,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "المركبات الجزئية : المركب بالإضافة والمركب بالجر، المركب النعتي والمركب العطفي (مركب الجر والمركب النعتي) – Note : la page traite de la grammaire arabe, pas des mathématiques",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المركبات الجزئية – المركب بالإضافة و المركب بالجر – المركب النعتي و المركب العطفي",
+      "body": "مركب الجرّ: مركب الجر تركيب جزئي حرفي يتكون مباشرة من جار و مجرور. حروف الجر أكثر حروف الجر استعمالا هي: من، إلى، عن، على، في، الباء، الكاف، اللام، واو القسم.",
+      "figureDesc": "Page encadrée d'une bordure décorative de cercles jaunes ; titres en rouge et orange, mots clés colorés (جار، مجرور، حروف الجر، حروف الجر الأكثر استعمالا) et soulignés.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p026_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وظائف مركب الجر: يحتل مركب الجر المحلات الوظيفية التالية في الجملة",
+      "body": "خبر المبتدإ: العُصْفُورُ فِي القَفَصِ\nمفعولا به: رَكِبْتُ عَلَى الدَّرَّاجَةِ\nمفعولا لأجله: خَرَجْتُ لِلتَّنَزُّهِ\nمفعولا فيه للزمان: رَجَعتُ فِي المَسَاءِ\nمفعولا فيه للمكان: وَقَفْتُ فِي السَّاحَةِ\nحالا: أَقْبَلَ أَحْمَدُ بِسُرْعَةٍ\nتمييزا: اِشْتَرَيْتُ لِتْرًا مِنَ الحَلِيبِ",
+      "figureDesc": "Les prépositions (في، على، لِ، بِ، من) sont colorées et les syntagmes prépositionnels soulignés.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p026_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المركَّبُ النَّعْتِي",
+      "body": "المركب النعتي هو تركيب جزئي اسمي يتكون مباشرة من منعوت و نعت. النَّعْتُ هو كلمة أو مركب يدل على صفة في اسم قبله يدعى المَنْعُوت.",
+      "figureDesc": "Mots منعوت et نعت colorés en turquoise/vert.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p026_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أنواع النعت: يرد النعت",
+      "body": "مفردة: وَاسَتِ المُمَرِّضَةُ اللَّطِيفَةُ المريض\nمركبا إضافيا: قَطَفْتُ وَرْدَةً فَوَّاحَةَ الرَّائِحَةِ\nمركب جر: صَدَمَتْ سَيَّارَةٌ طِفْلاً عَلَى دَرَّاجَةٍ",
+      "figureDesc": "Les nعوت sont colorés en violet et soulignés.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p026_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وظائف المركب النعتي: يحتل المركب النعتي المحلات الوظيفية التالية في الجملة",
+      "body": "(la liste des fonctions continue sur la page suivante)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p026_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u3",
+    "confidence": 0.23
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de grammaire arabe (syntagmes prépositionnel, adjectival et coordonné), qui ne correspond à aucune des 8 unités officielles d'arabe, centrées sur les types de textes (narratif, descriptif, explicatif, injonctif), donc aucun chapitre ne convient clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Syntagmes prépositionnel et adjectival",
+    "skill": "Identifier le syntagme prépositionnel et le syntagme adjectival (épithète) et reconnaître leurs fonctions dans la phrase.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "grammaire arabe",
+      "syntagme prépositionnel",
+      "syntagme adjectival",
+      "fonctions grammaticales",
+      "prépositions"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les phrases d'exemple courtes et quotidiennes (oiseau, vélo, promenade, école) servent à créer des exercices d'identification de fonction, de classement en tableau ou de transformation d'un adjectif simple en syntagme.",
+    "themeGroup": "Les syntagmes prépositionnel et adjectival"
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«حروف الجر أكثر حروف الجر استعمالا هي» : l'image montre bien cette répétition, la transcription est donc conforme. Le point de ponctuation «:» ajouté après «هي» est une simple convention."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«لِتْرًا» : l'image montre لِتْرًا, conforme. En revanche «وَاسَتِ» : l'image montre وَاسَتِ, conforme."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«المُمَرِّضَةُ» : l'image montre المُمَرِّضَةُ avec un kasra sous le ر, la transcription est correcte. «المريض» sans voyelles, conforme à l'image."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«رَجَعتُ» : conforme à l'image (sans sukun sur le ع). «التَّنَزُّهِ» : l'image montre لِلتَّنَزُّهِ, conforme."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«فَوَّاحَةَ الرَّائِحَةِ» : l'image montre فَوَّاحَةَ, conforme."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "La transcription ajoute «(la liste des fonctions continue sur la page suivante)», qui n'est pas dans l'image : texte inventé (annotation)."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

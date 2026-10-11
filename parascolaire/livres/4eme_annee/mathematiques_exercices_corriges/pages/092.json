@@ -1,0 +1,108 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 92,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 24 – اختبار تقويمي للتثبيت والدعم (الضرب، المعادلات الناقصة، المساحة، قائمة المشتريات)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أكتب عددا مناسبا مكان النّقط:",
+      "body": "372 = 6 x ( ........... + 34)\n208 = 8 x (23 - ...........)\n378 = 9 x ........... x 6",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "mathematiques_exercices_corriges_p092_i1",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أكتب عددَيْنِ مناسبَيْنِ مَكَانَ ٱلنُّقَطِ :",
+      "body": "مخطط بسهمين: من المستطيل الأيمن (فارغ) بالعملية «+50» إلى المستطيل الأيسر (فارغ)، ومن المستطيل الأيمن نفسه بالعملية «2 ×» إلى المستطيل الأيسر نفسه.",
+      "figureDesc": "مستطيلان فارغان للنقط، يربط بينهما سهمان: أحدهما عليه الدائرة «+50» والآخر عليه الدائرة «2 ×».",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p092_i2",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "لاحظ سطوح الأشكال أ ، ب ، ج ، د ثمّ امـلإ الجدول :",
+      "body": "جدول: المستطيل | قيس المساحة بالوحدة (م)\n(أ) | ........\n(ب) | ........\n(ج) | ........",
+      "figureDesc": "شبكة مربعات فيها أشكال مرسومة بخط غليظ ومرمّزة بالحروف (أ) و(ب) و(ج) و(م)، حيث (م) هي وحدة المساحة (مربع واحد). بجانبها جدول من عمودين وثلاثة صفوف فارغة.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p092_i3",
+      "topicId": "math-4-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أكمل تعمير قائمة المشتريات :",
+      "body": "نوع البضاعة | الكمية | السعر الفردي بالمِلّيم | الثمن الجملي بالمِلّيم\nكؤوس | 12 | 870 | ........\nصحون | 24 | 1300 | ........\nملاعق | 6 | ........ | 5700\n– قيمة المشتريات بالمِلّيم : ........\n– التّخفيض بالمِلّيم : 2340\n– المبلغ المدفوع بالمِلّيم : ........",
+      "figureDesc": "جدول بأربعة أعمدة وثلاثة صفوف (كؤوس، صحون، ملاعق) مع خانات فارغة، يليه ثلاثة أسطر للقيمة والتخفيض والمبلغ المدفوع.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "mathematiques_exercices_corriges_p092_i4",
+      "topicId": "math-4-ch2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch2",
+  "topicTitle": "Période 2 : Multiplication à 2 chiffres, distributivité, rectangle et carré",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": null,
+    "confidence": 0.0
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page d'évaluation de mathématiques (semaine 24) portant sur la multiplication, la distributivité, les égalités à compléter, l'aire de rectangles et une liste d'achats avec prix en millimes. Ces notions correspondent surtout à la Période 2 (multiplication, distributivité, surfaces), mais le calcul monétaire et l'aspect de révision peuvent aussi relever d'autres chapitres.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    130
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Multiplication, équations à trous, aires",
+    "skill": "Résoudre des égalités à trous avec multiplication, calculer des aires de rectangles et compléter une facture avec réduction.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "texte_a_trous",
+      "schema_tableau",
+      "probleme"
+    ],
+    "keywords": [
+      "multiplication",
+      "égalités à trous",
+      "diagramme fléché",
+      "aire",
+      "liste d'achats",
+      "réduction"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Évaluation hebdomadaire variée : égalités à trous avec parenthèses, diagramme à flèches d'opérations (+50 et ×2) à compléter, aires mesurées sur quadrillage, et facture de vaisselle avec prix unitaire inconnu et réduction à déduire.",
+    "themeGroup": "Multiplication et multiples"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "linked",
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

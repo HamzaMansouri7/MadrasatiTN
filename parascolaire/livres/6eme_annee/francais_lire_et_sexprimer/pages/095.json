@@ -1,0 +1,117 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 95,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Grammaire/Conjugaison : réécriture de phrases au futur et au passé composé (le berger et les brebis)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1 (fin)",
+      "instruction": "",
+      "body": "- Nous bondissons de plaisir. ……………………………………………………………………………",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "francais_lire_et_sexprimer_p095_i1",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2a",
+      "instruction": "Réécris la phrase au futur en commençant par :",
+      "body": "« Je manque de courage, je suis gelé. »\n- Tu ……………………………………………………………………………\n- Nous ……………………………………………………………………………",
+      "figureDesc": "Lignes pointillées à compléter",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p095_i2",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2b",
+      "instruction": "Réécris la phrase au passé composé avec les sujets indiqués :",
+      "body": "- Hier, le berger ……………………………………………………………………………\n- Hier, le berger et moi ……………………………………………………………………………\n- Hier, les bergers ……………………………………………………………………………",
+      "figureDesc": "Lignes pointillées à compléter",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p095_i3",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3a",
+      "instruction": "Réécris la phrase au futur avec les sujets suivants :",
+      "body": "« Le berger est mécontent car il a une brebis en trop. »\n- La bergère ……………………………………………………………………………\n- Nous ……………………………………………………………………………\n- Les deux sœurs ……………………………………………………………………………",
+      "figureDesc": "Lignes pointillées à compléter",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p095_i4",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3b",
+      "instruction": "Réécris la phrase au passé composé en commençant par :",
+      "body": "- Ma sœur ……………………………………………………………………………\n- Le berger et toi ……………………………………………………………………………\n- Les deux bergères ……………………………………………………………………………",
+      "figureDesc": "Lignes pointillées à compléter",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p095_i5",
+      "topicId": "fr-6-m3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m3",
+  "topicTitle": "Module 3 : Accepter les autres",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "fr-6-m2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m2",
+    "confidence": 0.37
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de conjugaison de français (futur simple et passé composé) ; le futur simple correspond au Module 3, mais le passé composé relève aussi du Module 2, et la page est une évaluation sans module précisé, d'où une confiance limitée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    126
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Conjugaison : futur et passé composé",
+    "skill": "Réécrire des phrases au futur simple et au passé composé en changeant le sujet et en faisant les accords nécessaires.",
+    "pageType": "exercise",
+    "formats": [
+      "autre"
+    ],
+    "keywords": [
+      "futur simple",
+      "passé composé",
+      "réécriture de phrases",
+      "changement de sujet",
+      "accord du participe passé",
+      "le berger et les brebis"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Réutilisable : le principe de réécrire une même phrase modèle avec plusieurs sujets (singulier, pluriel, 1re et 2e personne) et deux temps, dans le contexte d'un récit pastoral, mais l'exercice reste très mécanique et peu original.",
+    "themeGroup": "Conjugaison"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

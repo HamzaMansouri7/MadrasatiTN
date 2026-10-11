@@ -1,0 +1,80 @@
+{
+  "book": "concours_mathematiques_corriges",
+  "page": 6,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "مسألة: المقياس (سلم الخريطة)، السرعة والمدة الزمنية، الكسور وسعة الخزان",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "حدد ساعة الوصول الى المدينة \" ب \" علما وأن السائق توقف مدة ربع ساعة للتزود بالوقود؟",
+      "body": "المسألة عدد 3 (8 نقاط). المسافة الفاصلة بين المدينة \" أ \" والمدينة \" ب \" قدّرت بـ 32.5 صم على خريطة سلمها: 1/400000. انطلقت سيارة من المدينة \" أ \" على الساعة الثامنة صباحا و25 دق بمعدل سرعة 100 كم / س.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "concours_mathematiques_corriges_p006_i1",
+      "topicId": "math-6-p6",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسب سعة الخزان؟",
+      "body": "عند الانطلاق كان بالخزان 6/11 سعته بنزينا وعند الوقوف لاحظ السائق ان السيارة قد استهلكت 5/6 كمية البنزين بالخزان فأعاد ملء الخزان إلى 1/2 سعة الخزان فدفع 78.75 د مقابل 2.5 د اللتر الواحد.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "concours_mathematiques_corriges_p006_i2",
+      "topicId": "math-6-p6",
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-6-p6",
+  "topicTitle": "Période 6 : Synthèse générale et résolution de situations-problèmes",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "math-6-p3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p3",
+    "confidence": 0.31
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Problème à étapes multiples (échelle de carte, vitesse et durée, fractions, capacité du réservoir et prix) de type concours, qui mélange des notions des périodes 2, 3 et 5 et correspond donc à la synthèse et résolution de situations-problèmes de la période 6.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    7,
+    8
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Problème multi-étapes: échelle, vitesse, fractions",
+    "skill": "Résoudre un problème en plusieurs étapes combinant échelle de carte, vitesse et durée, et fractions de capacité.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul"
+    ],
+    "keywords": [
+      "échelle de carte",
+      "vitesse",
+      "durée",
+      "heure d'arrivée",
+      "fractions",
+      "capacité du réservoir"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "Situation de voyage en voiture réutilisable : conversion de distance sur carte à l'échelle réelle, calcul de l'heure d'arrivée avec un arrêt, puis déduction de la capacité du réservoir à partir de fractions de carburant et du prix payé.",
+    "themeGroup": "Durées, vitesse et échelle"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Concours 6ème année — Mathématiques (corrigés)"
+}

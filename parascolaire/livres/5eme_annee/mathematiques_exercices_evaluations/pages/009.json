@@ -1,0 +1,123 @@
+{
+  "book": "mathematiques_exercices_evaluations",
+  "page": 9,
+  "grade": "5ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الدرس 5 : أرسم صورة شكل على الشبكة باستعمال التناظر المحوري (page de géométrie/mathématiques : symétrie axiale, numérotée 10 sur la page). Note : la matière réelle semble être les mathématiques, pas la langue arabe.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "5",
+      "instruction": "الدرس 5 : أرسم صورة شكل على الشبكة باستعمال التناظر المحوري",
+      "body": "",
+      "figureDesc": "Bandeau-titre décoratif de la leçon, avec le chiffre 5 en haut à gauche.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_evaluations_p009_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "رَسَمَ طَاهِرٌ عَلَى الشَّبَكَةِ مُثَلَّثًا (و س ع) انْطِلَاقًا مِنَ العُقَدِ و(4ي، 1أ)، س(2ي، 4أ)، ع(1ي، 1أ). ثُمَّ رَسَمَ صُورَةَ ذَلِكَ الْمُثَلَّثِ حَسَبَ الْمِحْوَرِ (أ و).",
+      "body": "* ارْسُمْ صُورَةَ الْمُثَلَّثِ (و س ع) وَسَمِّهَا و¹، س¹، ع¹.\n* اِبْحَثْ عَنْ إِحْدَاثِيَّاتِ و¹، س¹، ع¹ :\nو¹ (......،......) س¹ (......،......) ع¹ (......،......)\n* ارْسُمْ (و² س² ع²) الْمُنَاظِرَ لِـ (و س ع) حَسَبَ الْمِحْوَرِ (ي ش).\n* مَا هِيَ إِحْدَاثِيَّاتُ رُؤُوسِ الْمُثَلَّثِ (و² س² ع²).\nو² (......،......) س² (......،......) ع² (......،......)",
+      "figureDesc": "شبكة مرجعية مربعة بمحورين: أفقي (ش ي) وعمودي (أ و) مُدرّجين من -4 إلى 4. المثلث (و س ع) مرسوم بالرؤوس و(4,1) وس(2,4) وع(1,1).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p009_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "طَلَبَ الْمُعَلِّمُ مِنْ طَاهِرٍ أَنْ يُكْمِلَ الرُّسُومَ التَّالِيَةَ.",
+      "body": "* سَاعِدْهُ عَلَى ذَلِكَ مُرَاعِيًا التَّنَاظُرَ حَسَبَ الْمِحْوَرِ.",
+      "figureDesc": "Trois cadres avec un axe de symétrie à compléter : (1) à gauche, axe vertical et moitié d'une figure en escalier avec un petit carré et un rectangle en bas ; (2) en bas, axe vertical et moitié d'une figure en escalier/silhouette ; (3) à droite, axe horizontal et un voilier (voile triangulaire, coque trapézoïdale) à compléter par symétrie.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_evaluations_p009_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "ar-5-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u1",
+    "confidence": 0.21
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page traite de la symétrie axiale sur quadrillage (coordonnées, image d'un triangle), donc de mathématiques, mais aucun chapitre officiel de math 5ème (grands nombres, décimaux, polygones/parallélogramme, division/cercle, fractions, aires) ne couvre clairement la symétrie axiale.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Symétrie axiale sur quadrillage",
+    "skill": "Construire l'image d'une figure par symétrie axiale sur une grille et déterminer les coordonnées des points symétriques.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "calcul",
+      "autre"
+    ],
+    "keywords": [
+      "symétrie axiale",
+      "axe de symétrie",
+      "quadrillage",
+      "coordonnées",
+      "triangle",
+      "figure symétrique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Situation d'un élève qui trace un triangle sur une grille à partir de coordonnées, puis construit ses symétriques par rapport à différents axes (horizontal, vertical) et relève les coordonnées des images ; complétion de dessins par symétrie.",
+    "themeGroup": "Quadrilatères, symétrie et repérage"
+  },
+  "audit": {
+    "accuracy": 0.9,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«انْطِلَاقًا» : l'image montre «الطِّلاقًا» (lecture OCR de l'image, probablement «انطلاقا»), ce qui est acceptable ; mais le titre est incomplet : «الدرس 5» est suivi de «المحوري» correct"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "«إِحْدَاثِيَّات» : l'image montre «إِحْدَاثِيَّاتِ» avec kasra final dans «إِحْدَاثِيَّاتِ و¹، س¹، ع¹» (après عَنْ), la transcription met «إِحْدَاثِيَّاتِ» sans l'écrire correctement ; la voyelle finale est à vérifier"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "«ع(1ي، 1أ)» : sur l'image on lit «ع( 1ي، 1أ)», correct ; mais «و(4ي، 1أ)» correct aussi. Aucune erreur de chiffre détectée"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les éléments des figures (grille avec axes أ، ي، ش، و et graduations -4..4, trois dessins : escalier/maison, bateau, personnage) ne sont pas décrits dans la transcription ; ils sont purement graphiques"
+      },
+      {
+        "type": "ordre",
+        "severity": "minor",
+        "detail": "L'en-tête (numéro 5, «السنة») et le numéro de page 10 ne sont pas transcrits"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.9
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
+}

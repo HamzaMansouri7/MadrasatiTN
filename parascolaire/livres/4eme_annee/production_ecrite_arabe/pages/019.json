@@ -1,0 +1,100 @@
+{
+  "book": "production_ecrite_arabe",
+  "page": 19,
+  "grade": "4ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الوصف: وصف الشخصيات (ملامح شخصية، وصف مريض، وصف فقير)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "منسدل ملتمع حتى كأنه مغسول بماء سحري ومشط بمشط بفعل الأعاجيب\n    كان يبدو عجوزا جدا كأن عمره ألف عام له لحية بيضاء طويلة وشعر رأسه ينسدل على كتفيه كأنه هالة من النور كما كانت ملابسه ملتمعة وعيناه تبين فيهما التقوى والزهد والحكمة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p019_i1",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "ملامح شخصية",
+      "body": "الجسم: قوي ذو بناء متين هزيل ذو هيكل شامخ\nالقامة: سامقة مديدة طويلة فارع الطول\nالعضلات: مفتونة بارزة معروقة واهنة هزيلة\nالوجه: نحيف صلب هزيل ناضر شاحب بشوش\nالحاجبان: كثيفان ثقيلان خفيفان رقيقان\nالعينان: حوراوان واسعتان جاحظتان غائرتان ضيقتان\nالشفتان: مزمومتان غليظتان رقيقتان\nالشعر: جعد مرسل مضفور ضفائر أشعث أشيب\nالفم: صغير واسع باسم ضحوك\nالأنف: دقيق أشم أفطس بارز ضخم معقوف",
+      "figureDesc": "قائمة مفردات مرتبة حسب أعضاء الجسم",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p019_i2",
+      "topicId": "ar-4-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وصف مريض",
+      "body": "شاحب الوجه غائر العينين مستلق في تراخ وذبول وإعياء كان عليلا قد انهكه المرض وكاد يسل جسمه سلا كان يفيق قليلا ثم يقسو عليه المرض أحيانا\n    كان الحر قد لفح وجهه فأحاله متوردا فكأنه قد عاد من سباق أو مرتع الصواحب\n    أخيرا تضاءل داؤه وتدرج نحو العافية والبرء فأشرق وجهه وعادت إليه الابتسامة العذبة",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "production_ecrite_arabe_p019_i3",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "وصف فقير",
+      "body": "من الناس من حرمهم الدهر المتعة بالحياة فهم يهيمون على وجه الأرض والبؤس حليفهم والتعاسة ظلهم\n    لقيتها المسكينة لقد كانت في حالة يرثى لها مات والدها ولم يورثها غير اسمه وماتت أمها ولم تترك لها سوى دموع الأسى وذل اليتم\n    كانت عارية القدمين رثة الثوب ما تحصي العين تلك الرقع المنتشرة فيه فكأنها أرتام تعد بها ليالي عذابها",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "production_ecrite_arabe_p019_i4",
+      "topicId": "ar-4-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-4-u4",
+  "topicTitle": "Unité 4 : Description et caractérisation des personnages",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-4-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-4-u4",
+    "confidence": 0.22
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la description physique et morale des personnages (traits de caractère, description d'un malade, d'un pauvre), ce qui correspond à l'Unité 4 : Description et caractérisation des personnages.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Description de personnages",
+    "skill": "Décrire un personnage (traits physiques, malade, pauvre) en employant un vocabulaire riche et des images adaptées.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "description",
+      "portrait physique",
+      "personnage malade",
+      "personnage pauvre",
+      "vocabulaire arabe"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau de vocabulaire (corps, visage, sourcils, yeux, lèvres) et les trois modèles de portraits (vieillard sage, malade, orpheline pauvre) peuvent inspirer des exercices d'appariement, de complétion de portrait ou de rédaction d'une description guidée.",
+    "themeGroup": "Description d'un personnage"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Production écrite 4ème année — Arabe"
+}

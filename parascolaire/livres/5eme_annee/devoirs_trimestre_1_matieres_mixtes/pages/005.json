@@ -1,0 +1,130 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 5,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "La lumière et la vision : milieux transparents, translucides et opaques (الضوء والرؤية – الأوساط الشفافة والشافة والعاتمة)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "",
+      "body": "الاعتقاد السائد بأن العين قد تجرح إذا نظرنا إلى ضوء شديد السطوع، ووضع بدلاً من ذلك نظرية ناجحة للغاية تفسر عملية الرؤية بأنها تحدث نتيجة خروج أشعة الضوء إلى العين من كل نقطة في الكائن، وهو ما أثبته عن طريق التجارب",
+      "figureDesc": "Texte introductif encadré par une bordure décorative de cercles ornementaux.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p005_i1",
+      "topicId": "sci-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أستفيد",
+      "body": "العين السليمة و الضوء ضروريان لعملية الرؤية\nنشاهد الأجسام المضاءة والمنيرة متى وصل ضوءها إلى العين",
+      "figureDesc": "Encadré bordé avec le titre « أستفيد » en rouge (Je retiens).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p005_i2",
+      "topicId": "sci-5-u1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الأوساط الشفافة    الأوساط الشافة    الأوساط العاتمة",
+      "body": "الأوساط الشفافة تسمح بمرور كلي للضوء\nالأوساط الشافة تسمح بمرور جزئي للضوء\nالأوساط العاتمة لا تسمح بمرور الضوء",
+      "figureDesc": "Trois titres rouges (milieux transparents, translucides, opaques) suivis d'un encadré avec trois définitions.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p005_i3",
+      "topicId": "sci-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الأوساط الشفافة | الأوساط الشافة | الأوساط العاتمة",
+      "body": "الأوساط الشفافة: هواء ماء نقي كحول بلور عادي\nالأوساط الشافة: بلور مطروق، ورق مقوى، مسطرة من اللدائن، ضباب\nالأوساط العاتمة: سبورة مسطرة خشبية، الذهب الفضة النحاس، مرآة",
+      "figureDesc": "Tableau à trois colonnes avec en-têtes rouges, listant des exemples de milieux transparents, translucides et opaques.",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p005_i4",
+      "topicId": "sci-5-u1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-5-u1",
+  "topicTitle": "Unité 1 : La lumière, vision et propagation rectiligne",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-5-u1",
+    "confidence": 0.99
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page traite de la vision, de la théorie d'Ibn Al-Haytham et de la classification des milieux transparents, translucides et opaques, ce qui correspond à l'Unité 1 d'Éveil Scientifique sur la lumière et la vision.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Lumière, vision et milieux transparents",
+    "skill": "Distinguer les milieux transparents, translucides et opaques selon le passage de la lumière et comprendre les conditions de la vision.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "lumière",
+      "vision",
+      "milieu transparent",
+      "milieu translucide",
+      "milieu opaque",
+      "passage de la lumière"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau de classement d'objets du quotidien en trois catégories (passage total, partiel ou nul de la lumière) peut devenir un exercice de tri, un appariement ou une expérience avec une lampe et divers écrans; le rappel historique sur la théorie de la vision offre un contexte de lecture documentaire.",
+    "themeGroup": "Vision et milieux transparents"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le texte de l'image dit « وضع » précédé de « ووضع » — OK ; mais « الأوساط الشافة » est transcrit tel quel, ce qui correspond à l'image (pas d'erreur de transcription, mais voir ci-dessous)"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Dans la 4e section, le tableau place « سبورة مسطرة خشبية » dans la colonne des milieux opaques, mais l'image montre « سبورة مسطرة خشبية » sur une seule ligne, suivie de « الذهب الفضة النحاس » puis « مرآة » sur des lignes séparées. La transcription ajoute une virgule après « خشبية » qui n'existe pas dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les préfixes « الأوساط الشفافة: », « الأوساط الشافة: », « الأوساط العاتمة: » dans la 4e section sont des étiquettes de colonnes, mais ils sont écrits comme des lignes de texte avec deux-points, ce qui est une reformulation."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Virgules ajoutées dans « بلور مطروق، ورق مقوى، مسطرة من اللدائن، ضباب » et « الذهب الفضة النحاس، مرآة » : l'image n'a pas de virgules, ce sont des éléments de liste séparés par des retours à la ligne."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.8
+  },
+  "labels": {
+    "pageSubject": "Éveil scientifique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

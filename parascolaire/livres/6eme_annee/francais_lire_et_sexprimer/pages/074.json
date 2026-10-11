@@ -1,0 +1,118 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 74,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Expression écrite : Les métiers (l'infirmière, le menuisier, le pédiatre)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Expression écrite – L'infirmière",
+      "body": "Claudine est infirmière dans un hôpital. Elle travaille dans le service de pédiatrie. Le matin, en arrivant au service, la jeune fille donne aux petits malades leurs médicaments. Ensuite, cette infirmière leur change les draps. Quand le médecin arrive, Claudine l'aide à examiner les enfants. D'abord, l'infirmière déshabille le bébé pour le laver. Ensuite, elle le rhabille doucement sans lui faire mal. Avant de le mettre dans son lit elle le change. Enfin, l'infirmière ferme doucement la porte pour ne pas réveiller le bébé. Elle les veille à chaque moment. Elle est trop sensible. Elle pleure en entendant les cris d'un bébé dans la salle d'examen. Les mamans des petits malades aiment bien cette jeune infirmière. Elles la respectent beaucoup. Elle rentre le soir très fatiguée mais contente et heureuse parce qu'elle accomplit une mission noble. Pour cette infirmière, le travail est sacré.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p074_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Expression écrite – Le menuisier",
+      "body": "Tous les métiers et les professions sont utiles et importants dans la vie. Pour choisir un métier ou une profession il faut bien connaître les défauts et les qualités qu'on a. Voilà pourquoi je vais à la menuiserie de mon oncle pour collecter des informations sur son métier parce qu'il me plaît beaucoup. Il raconte : « Je suis menuisier. Je fabrique de beaux meubles. Je me sers d'un rabot, d'une scie, d'un marteau et des clous pour travailler. Je circule entre les planches et les machines. Je contemple un meuble fini avec un large sourire. Je suis fier de mon métier. Il est difficile et dangereux mais il est rentable. »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p074_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Expression écrite – Le pédiatre",
+      "body": "Quand je serai grand et que je terminerai mes études, je serai pédiatre car j'admire les enfants et les bébés. Je travaillerai dans mon cabinet du matin au soir. Je porterai une blouse blanche comme la neige. Je me servirai d'un stéthoscope et d'autres instruments. D'abord, je consolerai les mamans inquiètes et je soulagerai la souffrance des enfants. Ensuite, je les auscultMerai. Enfin, je rédigerai une ordonnance et je la donnerai à la mère. Ce métier est fatigant et épuisant mais passionnant. Alors, il faut travailler sérieusement et soigneusement pour être célèbre et respecté.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p074_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "text_production",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Expressions utiles",
+      "body": "« Le travail, c'est la santé » ; « À chacun son métier. » ; « Petit à petit l'oiseau fait son nid. »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.96,
+      "id": "francais_lire_et_sexprimer_p074_i4",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m6",
+    "confidence": 0.29
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page propose des textes d'expression écrite sur les métiers (infirmière, menuisier, pédiatre), avec présent, futur et proverbes sur le travail, ce qui correspond au Module 1 « Travailler pour s'épanouir ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Expression écrite : les métiers",
+    "skill": "Rédiger un court texte descriptif ou narratif sur un métier en utilisant le vocabulaire professionnel et le futur ou le présent.",
+    "pageType": "lesson",
+    "formats": [
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "métiers",
+      "infirmière",
+      "menuisier",
+      "pédiatre",
+      "expression écrite",
+      "proverbes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Textes modèles courts présentant trois métiers sous des angles variés (journée type, enquête auprès d'un proche, projet d'avenir au futur), plus des proverbes utiles, réutilisables comme situations de production écrite sur les professions.",
+    "themeGroup": "Production écrite et lettres"
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« auscultMerai » dans la section Le pédiatre : la bonne valeur est « ausculterai »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent : « Sagesse », « 6ème année de base ». Le pied de page l'est aussi : « Lire et s'exprimer », « 73 »."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

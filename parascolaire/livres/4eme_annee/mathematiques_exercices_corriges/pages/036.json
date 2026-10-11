@@ -1,0 +1,118 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 36,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 9 : الأعداد من 1000 إلى 9999 (4) – أنشطة عددية، الفروق المتساوية",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "اِبحث عن أصغر عدد يحقّق ما يلي :",
+      "body": "28 + ...... > 60 ؛ 100 < 90 + ...... ؛ 400 > ...... - 500 ؛ 200 < 300 - ......",
+      "figureDesc": "Quatre inégalités à compléter, disposées en deux colonnes séparées par un trait vertical ; les blancs sont indiqués par des pointillés.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p036_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "احسب بنفس الطّريقة الفرق في كلّ ممّا يلي :",
+      "body": "لحساب فرق العددين 752 - 186 يمكن إضافة العدد 4 أو العدد 14 إلى كلّ من العددين ليصبحا عددين صحيحين من العشرات أو المئات . مثال : 752 - 186 = (752 + 14) - (186 + 14) = 766 - 200 = 566. الفروق المطلوبة : 483 - 267 ، 1 992 - 897 ، 1 382 - 675",
+      "figureDesc": "Trois soustractions encadrées : 483 - 267, 1 992 - 897, 1 382 - 675. L'exemple 752 - 186 est lui aussi encadré dans l'énoncé.",
+      "answer": "752 - 186 = 566 (exemple donné dans l'énoncé)",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p036_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "ابحث عن مجموعة الأعداد ذات رقمين والتي مجموع رقميها يساوي 8. اختر من بينها عددين الفرق بينهما يساوي 36.",
+      "body": "",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p036_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "كلّ بطاقة تمثّل عددا : املأ خانات كلّ بطاقة بالأرقام 4 ، 2 ، 1 لتحصل على عددين الفرق بينهما يساوي 198.",
+      "body": "كلّ بطاقة تمثّل عددا : [5][.][.][.] و [5][.][.][.] . املأ خانات كلّ بطاقة بالأرقام 4 ، 2 ، 1 لتحصل على عددين الفرق بينهما يساوي 198.",
+      "figureDesc": "Deux cartes de quatre cases chacune : la première case contient 5, les trois autres sont vides (points) à remplir avec 4, 2, 1.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p036_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "احسب بالمليم المبلغ المدّخر.",
+      "body": "وزّع أب بالتّساوي على ابنيه 5 دنانير. اشترى أصغرهما بنصيبه 3 لعب ثمن الواحدة 750 مي وادّخر الباقي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p036_i5",
+      "topicId": "math-4-ch1",
+      "formatGuess": "calculation",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch1",
+    "confidence": 0.4
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "Page de mathématiques (nombres de 1000 à 9999, différences par compensation, monnaie en millimes) qui se rattache au mieux à la Période 1 (nombres et monnaie) du trimestre 1, sans correspondance exacte.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Calcul de différences et activités numériques",
+    "skill": "Calculer des différences par la méthode de compensation, comparer des nombres et résoudre des problèmes jusqu'à 9999",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "différence",
+      "compensation",
+      "nombres jusqu'à 9999",
+      "comparaison",
+      "monnaie en millimes",
+      "cartes à chiffres"
+    ],
+    "ideaValue": "high",
+    "ideaNote": "On peut réutiliser la technique de compensation, qui consiste à ajouter le même nombre aux deux termes pour obtenir un nombre rond. On peut aussi reprendre le jeu des cartes à compléter avec des chiffres imposés pour obtenir une différence donnée, la recherche de nombres à deux chiffres de somme fixée, et le problème de partage d'argent avec achat de jouets en millimes.",
+    "themeGroup": "Addition et soustraction"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

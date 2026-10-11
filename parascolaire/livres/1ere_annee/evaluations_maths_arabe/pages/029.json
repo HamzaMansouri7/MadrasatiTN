@@ -1,0 +1,119 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 29,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الْوَحْدَةُ الرَّابِعَةُ: فَصْلُ الشِّتَاءِ - إِنْتَاجٌ كِتَابِيٌّ: إِنْتَاجُ نَصٍّ يَتَأَلَّفُ مِنْ جُمَلٍ بَسِيطَةٍ مُتَمَاسِكَةِ الْبِنَاءِ - تَرْتِيبُ جُمَلٍ وَالرَّبْطُ بَيْنَهَا",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "أُرَتِّبُ الْجُمَلَ.",
+      "body": "وَغَطَّتْ فِي نَوْمٍ عَمِيقٍ. [ ]\nفَأَوَتْ إِلَى فِرَاشِهَا، [ ]\nشَعَرَتْ زَيْنَبُ بِالنُّعَاسِ، [ ]",
+      "figureDesc": "رسم توضيحي لفتاة نائمة في سريرها ومستندة على وسادة خضراء ومتغطية بلحاف أصفر.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p029_i1",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2",
+      "instruction": "أُرَتِّبُ الْجُمَلَ، وَأُكَوِّنُ بِهَا نَصًّا.",
+      "body": "ثُمَّ دَخَلَ إِلَى غُرْفَتِهِ، [ ]\nعَادَ زِيَادٌ مِنَ الْمَدْرَسَةِ، [ ]\nفَتَنَاوَلَ وَجْبَةَ الْعَشَاءِ، [ ]\nوَرَاجَعَ دُرُوسَهُ. [ ]\n\nالنَّصُّ : ........................................................................................\n..........................................................................................\n..........................................................................................",
+      "figureDesc": "رسم لطفل جالس على كرسي أمام مكتبه يكتب ويراجع دروسه ليلاً مع ظهور نافذة وهلال في الخارج ورفوف كتب.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p029_i2",
+      "topicId": "ar-1-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "topicId": "ar-1-u4",
+  "topicTitle": "Unité 4 : Mon compagnon en hiver",
+  "topicConfidence": 0.93,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.99
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page, intitulée « الوحدة الرابعة : فصل الشتاء » (production écrite : ordonner des phrases simples), correspond à l'Unité 4 d'arabe « Mon compagnon en hiver ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Ordonner des phrases en texte",
+    "skill": "Remettre des phrases simples dans l'ordre logique et les relier avec des connecteurs pour former un court texte cohérent.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "production écrite",
+      "ordre des phrases",
+      "cohérence textuelle",
+      "connecteurs",
+      "phrases simples",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Des phrases mélangées décrivant une routine quotidienne (le soir, le coucher, le retour de l'école) sont numérotées pour reconstituer la chronologie, puis recopiées en un texte; on peut transposer à d'autres routines ou saisons avec des connecteurs variés.",
+    "themeGroup": "Ordonner des phrases et cohérence textuelle"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "L'en-tête de la page est absent : « اللُّغَةُ الْعَرَبِيَّةُ - إِنْتَاجٌ كِتَابِيٌّ », « الْوِحْدَةُ الرَّابِعَةُ: فَصْلُ الشِّتَاءِ », « إِنْتَاجُ نَصٍّ يَتَأَلَّفُ مِنْ جُمَلٍ بَسِيطَةٍ مُتَمَاسِكَةِ الْبِنَاءِ. تَرْتِيبُ جُمَلٍ وَالرَّبْطُ بَيْنَهَا. »"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le titre « أَتَدَرَّبُ وَأُوَظِّفُ : » est absent"
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « 30 », « جسر النجاح - الثلاثي الثاني (السنة 1) », « اللُّغَةُ الْعَرَبِيَّةُ - الإنتاج »"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "أُرَتِّبُ : l'image montre « أُرَتِّبُ » ; la transcription est identique, mais « التعليمة » est écrit « التَّعْلِيمَةُ 1 » dans l'image, avec numéro, alors que la transcription met le numéro entre crochets sans tashkeel"
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "« فَأَوَتْ » : l'image donne « فَأَوَتْ » (écrit avec hamza sur alif « فَأَوَتْ »), la transcription est conforme ; « وَغَطَّتْ » conforme. Pas d'erreur de mot majeure dans le corps des exercices"
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "« دُرُوسَهُ » : dans l'image la forme est « دُرُوسَهُ » (conforme) ; « رَاجَعَ » conforme"
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.95,
+    "verdict": "ok",
+    "confirmedErrors": []
+  },
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.95
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

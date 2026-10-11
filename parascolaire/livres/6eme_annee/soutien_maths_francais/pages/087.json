@@ -1,0 +1,146 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 87,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Géométrie (angles du triangle isocèle, symétrie axiale, réduction de figure) et Mesure (conversions de longueurs, masses, aires, volumes/capacités)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أحسب قياس الزاوية CÔD علما أن المثلث DOC متساوي الساقين في O وقياس الزاوية OĈD هو 40°.",
+      "body": "(2 ن) Le triangle DOC est isocèle en O ; l'angle OĈD mesure 40°. Calculer la mesure de l'angle CÔD. Des lignes pointillées sont prévues pour rédiger la réponse.",
+      "figureDesc": "Triangle DOC très aplati, sommet O en haut, C à droite et D à gauche. Un petit arc de codage d'angle est marqué en O. Des lignes pointillées à droite pour la réponse.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "soutien_maths_francais_p087_i1",
+      "topicId": null,
+      "formatGuess": "calculation",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أنشئ مماثل الشكل التالي بالنسبة للمستقيم (D):",
+      "body": "(2 ن) Construire le symétrique de la figure suivante par rapport à la droite (D).",
+      "figureDesc": "Quadrillage avec un losange à gauche d'une droite verticale épaisse (D). La partie droite du quadrillage est vide pour construire le symétrique.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p087_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أبحث عن تصغير للشكل الموجود على الشبكة التربيعية بمقدار النصف (½)",
+      "body": "(2 ن) Réduire la figure du quadrillage de moitié (échelle ½).",
+      "figureDesc": "Quadrillage contenant un polygone irrégulier à gauche (pentagone/hexagone à trait épais). La partie droite du quadrillage est vide pour la réduction.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p087_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "III-1",
+      "instruction": "ثالثا: القياس (8 ن): 1- أحول إلى الوحدة المطلوبة:",
+      "body": "(4 ن)\n39,74 dam 7025 m = ........ m\n361,6 kg 4,2 q 8530 hg = ........ kg\n9,1 hm² 27 a 567 m² = ........ a\n9,6 m³ 4402 dm³ 0,76 dal = ........ dal",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p087_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-p4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p4",
+    "confidence": 0.44
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page ressemble à une évaluation de synthèse (barème en points, géométrie : angles du triangle isocèle, symétrie axiale, réduction ; mesure : conversions de longueurs, masses, aires, capacités) qui couvre plusieurs chapitres (p4 et p5 notamment), donc aucun chapitre unique ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Géométrie et conversions de mesures",
+    "skill": "Calculer un angle d'un triangle isocèle, construire un symétrique et une réduction de figure, convertir des unités de mesure.",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "schema_tableau",
+      "probleme"
+    ],
+    "keywords": [
+      "triangle isocèle",
+      "symétrie axiale",
+      "réduction de figure",
+      "conversions",
+      "unités de mesure",
+      "aires et volumes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Structure d'évaluation bilingue en deux parties (géométrie puis mesure), avec conversions composées sommant plusieurs unités (longueur, masse, aire, capacité) et constructions sur quadrillage (symétrique, réduction de moitié) réutilisables comme modèles d'exercices.",
+    "themeGroup": "Mesures et conversions"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le point 3 est transcrit « أحسب قياس الزاوية CÔD علما أن المثلث DOC ». Le texte visible est « احسب » sans hamza, ce qui est quasi identique. Dans l'image, la mention de l'angle (OĈD) apparaît avant « هو 40° », ce qui correspond à la transcription."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lettres O, C, D de la figure du triangle et la note « 40° » ne sont pas décrites comme étiquettes de figure. Les points de suspension à droite de C ne sont pas non plus signalés."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les traductions françaises (« Le triangle DOC est isocèle en O... », « Réduire la figure du quadrillage... ») sont ajoutées et ne figurent pas dans l'image, qui est uniquement en arabe. De même, « Des lignes pointillées sont prévues » est un commentaire ajouté."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Pour le 5, « أبحث عن تصغير » correspond à l'image. En revanche, la transcription omet le numéro « 4 » souligné et le tiret (« -4 », « -5 »), ce qui est une simple différence de format."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les barèmes (2 ن) des questions 3, 4 et 5 sont présents dans la transcription, mais celui de la question 3 figure à gauche de l'image. La mention « ثالثا: القياس (8 ن) » est correcte."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Les nombres des conversions (39,74 dam 7025 m ; 361,6 kg 4,2 q 8530 hg ; 9,1 hm² 27 a 567 m² ; 9,6 m³ 4402 dm³ 0,76 dal) correspondent à l'image. Aucune erreur chiffrée n'a été relevée."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "unknown",
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

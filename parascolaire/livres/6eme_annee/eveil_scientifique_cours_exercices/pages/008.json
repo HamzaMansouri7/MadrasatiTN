@@ -1,0 +1,74 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 8,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "L'air : composition de l'air (oxygène, azote) et expérience de la bougie sous un verre renversé",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "ثَبِّتْ شَمْعَةً فِي قَاعِدَةِ حَوْضٍ زُجَاجِيٍّ ثُمَّ اُسْكُبْ فِيهِ مَاءً كَمَا فِي الشَّكْلِ.",
+      "body": "ثَبِّتْ شَمْعَةً فِي قَاعِدَةِ حَوْضٍ زُجَاجِيٍّ ثُمَّ اُسْكُبْ فِيهِ مَاءً كَمَا فِي الشَّكْلِ.\nنَكِّسْ فَوْقَ الشَّمْعَةِ كَأْسًا مُدَرَّجَةً فَارِغَةً.\nهَلْ يَدْخُلُ الْمَاءُ فِي الْكَأْسِ ؟ لِمَاذَا ؟\n.......................................................\nاِرْفَعِ الْكَأْسَ وَأَشْعِلِ الشَّمْعَةَ ثُمَّ أَعِدِ الْكَأْسَ إِلَى مَكَانِهَا.\nمَاذَا تُلَاحِظُ ؟ مَا تَعْلِيلُ ذَلِكَ ؟\n.......................................................",
+      "figureDesc": "Trois schémas de droite à gauche reliés par des flèches roses : une bougie allumée dans un bac contenant de l'eau, avec un verre renversé placé au-dessus ; la flamme diminue ; la bougie est éteinte et l'eau est montée à l'intérieur du verre.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p008_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "التعليمة 1 : اُكْتُبْ أَسْمَاءَ هَذِهِ الْغَازَاتِ عَلَى الرَّسْمِ :\nالتعليمة 2 : رَتِّبِ الْغَازَاتِ التَّالِيَةَ حَسَبَ تَوَفُّرِهَا بِالْهَوَاءِ.",
+      "body": "السَّنَدُ : اِعْتَبَرَ الْعُلَمَاءُ الْهَوَاءَ حَتَّى أَوَاسِطِ الْقَرْنِ الثَّامِنَ عَشَرَ مَادَّةً وَاحِدَةً. إِلَّا أَنَّ مُؤَسِّسَ عِلْمِ الْكِيمْيَاءِ الْحَدِيثِ الْعَالِمَ الْفَرَنْسِيَّ «لَافُوازِيهِ» بَرْهَنَ أَنَّ الْهَوَاءَ يَحْتَوِي عَلَى خُمْسِ حَجْمِهِ مِنْ غَازٍ أَسْمَاهُ الْأُكْسِجِينَ وَهُوَ الْمَادَّةُ الْأَسَاسِيَّةُ فِي عَمَلِيَّتَيِ الِاحْتِرَاقِ وَالتَّنَفُّسِ، أَمَّا الْأَرْبَعَةُ أَخْمَاسٍ الْبَاقِيَةُ فَاعْتَبَرَهَا مَادَّةً وَاحِدَةً وَأَسْمَاهَا الْآزُوت (النِّتْرُوجِين). إِلَّا أَنَّ تَقَدُّمَ الْعِلْمِ أَكَّدَ وُجُودَ غَازَاتٍ أُخْرَى فِي الْهَوَاءِ بِنِسَبٍ صَغِيرَةٍ.\nالغازات المراد ترتيبها: أُكْسِجِين ☐ ، أَرْغُون ☐ ، نِتْرُوجِين ☐",
+      "figureDesc": "Diagramme circulaire (camembert) : grand secteur beige (environ 4/5), secteur bleu clair (environ 1/5), et une très fine tranche en bas indiquée par une flèche bleue (autres gaz, ex. argon). Trois cases vides à remplir pour classer les gaz.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "eveil_scientifique_cours_exercices_p008_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u2",
+    "confidence": 0.94
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page présente l'expérience de la bougie sous un verre renversé et la composition de l'air (oxygène, azote, Lavoisier), ce qui correspond à l'unité 2 sur l'air, la respiration et la combustion.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Composition de l'air",
+    "skill": "Identifier les gaz de l'air (azote, oxygène) et leurs proportions, et interpréter l'expérience de la bougie sous un verre renversé.",
+    "pageType": "exercise",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "air",
+      "oxygène",
+      "azote",
+      "bougie",
+      "verre renversé",
+      "Lavoisier"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Expérience simple à réaliser (bougie dans un bac d'eau recouverte d'un verre gradué) pour faire prédire et expliquer l'entrée de l'eau, associée à un schéma à légender et à un classement des gaz à partir d'un document historique sur Lavoisier.",
+    "themeGroup": "Composition de l'air"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

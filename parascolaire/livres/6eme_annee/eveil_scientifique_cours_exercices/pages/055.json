@@ -1,0 +1,436 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 55,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "Corrigés d'« إيقاظ علمي السنة السادسة » pages 68 à 75 : chaînes et réseaux alimentaires, pollution de l'eau, traitement des eaux usées, maladies liées à l'eau, reproduction des plantes à fleurs",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "68",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 68",
+      "body": "تـ1 + تـ3: الأحياء المنتجة = العشب. الأحياء المستهلكة بالدرجة الأولى: الجرادة. الأحياء المستهلكة بالدرجة الثانية: ضفدعة. الأحياء المستهلكة بالدرجة الثالثة: أفعى. الأحياء المستهلكة بالدرجة الرابعة: نسر. تـ2: تبدأ كل سلسلة غذائية بكائن ذاتي التغذية يسمى المنتج للغذاء كالنباتات الخضراء، أما الأحياء التي تتغذى بالأحياء المنتجة فتدعى بالمستهلكات الأولية والحيوانات التي تتغذى بها بالمستهلكات الثانية والحيوانات التي تتغذى بالأخيرة بالمستهلكات الثالثة وهناك المستهلكات الرابعة وهكذا... ب) مجموعة عناصر الحلقة الأولى الثمار والأوراق والجذور. ج) مجموعة الحيوانات التي تصطاد الصقر. السمور، العقاب، العصفور، الثعلب، القنفذ.",
+      "figureDesc": "",
+      "answer": "المنتج: العشب؛ مستهلك أول: الجرادة؛ ثانٍ: ضفدعة؛ ثالث: أفعى؛ رابع: نسر",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p055_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "69",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 69",
+      "body": "تـ1: تترافق السلسلة الغذائية بالأحياء المفككة والتي تضم الجراثيم والفطريات في التربة حيث تقوم بتفكيك بقايا النباتات وتحليل جثث الحيوانات وبقاياه العضوية إلى أملاح معدنية تستفيد منها الأحياء المنتجة. تـ2: الأحياء المحللة مستهلكة. تـ1: النباتات الخضراء ← الجراد ← ضفادع ← ثعابين ← الطيور الكاسرة. تـ2: يحدث بين جميع هذه الكائنات الحية توازن طبيعي، فهناك من جهة عدد كاف من الكائنات المأكولة لحساب الآكلة (يوجد عدد كاف من الثعابين لصالح الطيور الكاسرة) ومن جهة أخرى فالآكلة منها تحدّ من كثرة توالد المأكولة، الضفادع مثلا بتغذيتها بالجراد تقلل من تكاثره (علاقة بين الأعداد والأوزان). تـ3: الشبكة الغذائية هي تداخل وتشابك السلاسل الغذائية مع بعضها.",
+      "figureDesc": "",
+      "answer": "انظر النص",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p055_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "70",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 70",
+      "body": "أ) التصرف غير سليم. تلوّث هذه المياه بمخلفات المصنع والغازات المتصاعدة منه كما تتلوث المياه أيضا بمواد التنظيف الكيميائية والمبيدات الحشرية والأسمدة الصناعية. ب) الملوّث هو كل شيء ليست البيئة بحاجة إليه ووجوده يلحق الضرر بها. ليست هذه المياه صالحة للشرب لأنها عكرة وملوثة وقد تغير لونها ورائحتها. نعم، الناس الذين يسبحون في البحر معرضون للمرض، فالنفايات الكيميائية والمياه المبتذلة والنفايات الصلبة وتسرب المواد البترولية هي ملوثات تؤذي النباتات البحرية والحيوانات وتؤذينا نحن البشر. أ) المصدر: النفط. ب) الإنسان هو المسؤول عن إلقاء هذه الملوثات. يلوث النفط البحر عندما يطفو فوق سطحه معرقلا بذلك التبادل الغازي بين المحيط والبحر لتختنق مخلوقات البحر وهذا ما يفسر انقراض فصائل بعض الأسماك.",
+      "figureDesc": "",
+      "answer": "انظر النص",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p055_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "71",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 71",
+      "body": "معالجة مياه الصرف الصحي في محطة التطهير لتصبح صالحة لدى المزروعات وللاستعمال في مجالات الصناعة والسياحة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p055_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "72",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 72",
+      "body": "الملاريا، التراخوما، البلهارسيا. تـ1: الإسهال الشديد، تجفاف سريع. تـ2: جرثومة. تـ3: عن طريق الطعام والماء الملوثين.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p055_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "74",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 74",
+      "body": "الترتيب: زهرة ← ثمرة ← بذرة ← نبتة كاملة. ب) الزهرة (ب) يمكن أن تعطي ثمرة إذ تم نقل حبات الطلع من المتبر إلى الميسم. الزهرة (أ) يمكن أيضا أن تعطي ثمرة إذ تم نقل حبات الطلع من متبر نفس النوع من زهرة أخرى بواسطة الرياح أو الحشرات إلى ميسم الزهرة (أ). الزهرتان لهما حبوب الطلع. يمكن للزهرة (ب) أن تعطي ثمرة لأن لها مدقة ويشترط أن تنتقل حبوب الطلع من المتبر إلى الميسم.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p055_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "75",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 75",
+      "body": "الأعضاء الواقية: الكأس والتويج. أعضاء التكاثر: الأسدية والمدقة. أ) للزهرة الكاملة أعضاء تكاثر مذكرة تتمثل في الأسدية وأخرى مؤنثة تتمثل في المدقة. ب) يتحول البيض إلى ثمرة وتتحول البويضات إلى بذور. ب) لا يمكن للطائر الكاسر أن يكون في الحلقة الثانية لأنه لاحم. ج) تتكاثر الفئران والعصافير.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "eveil_scientifique_cours_exercices_p055_i7"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u4",
+  "topicTitle": "Unité 4 : Reproduction florale et protection des milieux aquatiques",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "sci-6-u4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u6",
+    "confidence": 0.39
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "La page corrige des exercices d'éveil scientifique sur la pollution de l'eau, le traitement des eaux usées, les maladies hydriques et la reproduction des plantes à fleurs, ce qui correspond à l'unité 4 (reproduction florale et protection des milieux aquatiques). Les chaînes alimentaires des pages 68-69 n'apparaissent pas dans l'intitulé de cette unité, d'où une confiance modérée.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "Chaînes alimentaires, eau et reproduction des plantes",
+    "skill": "Identifier les maillons d'une chaîne alimentaire, reconnaître les causes de la pollution de l'eau et les maladies hydriques, et décrire la reproduction des plantes à fleurs.",
+    "pageType": "correction",
+    "formats": [
+      "schema_tableau",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "chaîne alimentaire",
+      "pollution de l'eau",
+      "traitement des eaux usées",
+      "maladies hydriques",
+      "pollinisation",
+      "fleur"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les corrigés montrent des situations réutilisables : classer les êtres vivants par rang trophique, juger un comportement polluant, ordonner les étapes fleur-fruit-graine et repérer l'intrus dans une chaîne alimentaire. Ils ne donnent pas les énoncés complets, donc la valeur reste moyenne.",
+    "themeGroup": "Chaînes alimentaires et reproduction des plantes"
+  },
+  "audit": {
+    "accuracy": 0.8,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Bloc 68, partie ج : «مجموعة الحيوانات التي تصطاد الصقر:» est faux ; l'image dit «مجموعة الحيوانات التي تصطاد الصقر» suivie de la liste (السمور، العقاب…). Le mot «الصقر» est mal placé, probablement «الصقر» ou «الصقر» dans une autre structure."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 68, partie ب : «الثمار والأوراق والجذور» ; l'image donne «الثمار والأوراق والجذور» mais lit «الثمار» comme «الثمار» (probablement «الثمار» = «الثمار» ou «الثمار»). Vérifier la lecture : l'image semble indiquer «الثمار»."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Bloc 69 : «بالأحياء المفككة» et «في التربية» ; l'image donne «في التربة». «التربية» est faux."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 69 : «وبقاياه العضوية» ; l'image donne «وبقايا العضوية»/«وبقاياه». Mot douteux."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 69 : «تترافق» ; l'image donne «تُرافق»."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Bloc 69 : «تـ2: الأحياء المحللة مستهلكة» précédé de «1:» ; la numérotation de l'image est «تـ1» et «1:» pour la 2e question, ce qui est ambigu."
+      },
+      {
+        "type": "mot",
+        "severity": "major",
+        "detail": "Bloc 70 (مكرر) : numéro de page mal attribué. Le bloc en haut à gauche est la page 70, et le bloc en haut à droite est la page 68. Le bloc «70 (مكرر)» est inventé comme étiquette."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 70 : «في ملوثات» ; l'image donne «هي ملوثات». «في» est faux."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 71 : «لدى المزروعات» ; correct d'après l'image, mais «تصبح صالحة» vérifié ; RAS."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 74 : «من المتبر إلى الميسم» ; l'image donne «من المئبر». «المتبر» est faux."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 74 : «الترتيب» ; l'image donne «الترتيب» comme «الترتيب»/«الترتيب» ; bloc 74 absent de l'image si le numéro est 73."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 75 : «تتكاثر الفئران والعصافير» ; l'image donne «تتكاثر الفئران والعصافير» précédée de «ج)», le «ج)» est omis."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Le tashkeel visible est absent dans plusieurs mots (par ex. «المُنتِج», «مُؤنّثة», «الكاسِر»)."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.93,
+    "verdict": "minor_issues",
+    "confirmedErrors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 69 : «في التربية» est faux, l'image donne «في التربة»."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Bloc 70 (partie du haut à gauche) : «في ملوثات» est faux. Le sens et le tracé de l'image donnent «هي ملوثات تؤذي النباتات البحرية…»."
+      },
+      {
+        "type": "structure",
+        "severity": "minor",
+        "detail": "«70 (مكرر)» est une étiquette inventée. Le bloc de gauche porte lui aussi l'en-tête «إيقاظ علمي السنة السادسة الصفحة 70». Il continue la page 70 du bloc de droite et doit être fusionné avec lui, sans mention «(مكرر)» ni remarque sur la lisibilité du numéro."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Bloc 69 : la numérotation est incohérente. L'image porte «تـ1» (تترافق…), «تـ2» (الأحياء المحللة…), puis pour le 2e exercice «تـ1» (النباتات الخضراء…), «تـ2» (يحدث بين…) et «تـ3» (الشبكة الغذائية…). La transcription écrit «1:» et «2:» sans «تـ» pour certains items."
+      },
+      {
+        "type": "lettre de sous-question",
+        "severity": "minor",
+        "detail": "Bloc 75 : l'image donne «ب) لا يمكن للطائر الكاسر… لأنه لاحم.» puis «ج) تتكاثر الفئران والعصافير.». La transcription met «ج)» devant «لا يمكن» et omet la lettre devant «تتكاثر»."
+      },
+      {
+        "type": "ponctuation",
+        "severity": "minor",
+        "detail": "Bloc 68 partie ج : le deux-points après «الصقر» n'est pas visible dans l'image. Le mot «الصقر» lui-même est bien lu, la liste (السمور، العقاب…) suit sur la ligne suivante."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "answer",
+      "number": "68",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 68",
+      "body": "تـ1 + تـ3: الأحياء المنتجة = العشب. الأحياء المستهلكة بالدرجة الأولى: الجرادة. الأحياء المستهلكة بالدرجة الثانية: ضفدعة. الأحياء المستهلكة بالدرجة الثالثة: أفعى. الأحياء المستهلكة بالدرجة الرابعة: نسر. تـ2: تبدأ كل سلسلة غذائية بكائن ذاتي التغذية يسمى المنتج للغذاء كالنباتات الخضراء، أما الأحياء التي تتغذى بالأحياء المنتجة فتدعى بالمستهلكات الأولية والحيوانات التي تتغذى بها بالمستهلكات الثانية والحيوانات التي تتغذى بالأخيرة بالمستهلكات الثالثة وهناك المستهلكات الرابعة وهكذا... ب) مجموعة عناصر الحلقة الأولى الثمار والأوراق والجذور. ج) مجموعة الحيوانات التي تصطاد الصقر. السمور، العقاب، العصفور، الثعلب، القنفذ.",
+      "figureDesc": "",
+      "answer": "المنتج: العشب؛ مستهلك أول: الجرادة؛ ثانٍ: ضفدعة؛ ثالث: أفعى؛ رابع: نسر",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i1"
+    },
+    {
+      "kind": "answer",
+      "number": "69",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 69",
+      "body": "تـ1: تترافق السلسلة الغذائية بالأحياء المفككة والتي تضم الجراثيم والفطريات في التربة حيث تقوم بتفكيك بقايا النباتات وتحليل جثث الحيوانات وبقاياه العضوية إلى أملاح معدنية تستفيد منها الأحياء المنتجة. تـ2: الأحياء المحللة مستهلكة. تـ1: النباتات الخضراء ← الجراد ← ضفادع ← ثعابين ← الطيور الكاسرة. تـ2: يحدث بين جميع هذه الكائنات الحية توازن طبيعي، فهناك من جهة عدد كاف من الكائنات المأكولة لحساب الآكلة (يوجد عدد كاف من الثعابين لصالح الطيور الكاسرة) ومن جهة أخرى فالآكلة منها تحدّ من كثرة توالد المأكولة، الضفادع مثلا بتغذيتها بالجراد تقلل من تكاثره (علاقة بين الأعداد والأوزان). تـ3: الشبكة الغذائية هي تداخل وتشابك السلاسل الغذائية مع بعضها.",
+      "figureDesc": "",
+      "answer": "انظر النص",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i2"
+    },
+    {
+      "kind": "answer",
+      "number": "70",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 70",
+      "body": "أ) التصرف غير سليم. تلوّث هذه المياه بمخلفات المصنع والغازات المتصاعدة منه كما تتلوث المياه أيضا بمواد التنظيف الكيميائية والمبيدات الحشرية والأسمدة الصناعية. ب) الملوّث هو كل شيء ليست البيئة بحاجة إليه ووجوده يلحق الضرر بها. ليست هذه المياه صالحة للشرب لأنها عكرة وملوثة وقد تغير لونها ورائحتها. نعم، الناس الذين يسبحون في البحر معرضون للمرض، فالنفايات الكيميائية والمياه المبتذلة والنفايات الصلبة وتسرب المواد البترولية هي ملوثات تؤذي النباتات البحرية والحيوانات وتؤذينا نحن البشر. أ) المصدر: النفط. ب) الإنسان هو المسؤول عن إلقاء هذه الملوثات. يلوث النفط البحر عندما يطفو فوق سطحه معرقلا بذلك التبادل الغازي بين المحيط والبحر لتختنق مخلوقات البحر وهذا ما يفسر انقراض فصائل بعض الأسماك.",
+      "figureDesc": "",
+      "answer": "انظر النص",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i3"
+    },
+    {
+      "kind": "answer",
+      "number": "71",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 71",
+      "body": "معالجة مياه الصرف الصحي في محطة التطهير لتصبح صالحة لدى المزروعات وللاستعمال في مجالات الصناعة والسياحة.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i4"
+    },
+    {
+      "kind": "answer",
+      "number": "72",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 72",
+      "body": "الملاريا، التراخوما، البلهارسيا. تـ1: الإسهال الشديد، تجفاف سريع. تـ2: جرثومة. تـ3: عن طريق الطعام والماء الملوثين.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i5"
+    },
+    {
+      "kind": "answer",
+      "number": "74",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 74",
+      "body": "الترتيب: زهرة ← ثمرة ← بذرة ← نبتة كاملة. ب) الزهرة (ب) يمكن أن تعطي ثمرة إذ تم نقل حبات الطلع من المتبر إلى الميسم. الزهرة (أ) يمكن أيضا أن تعطي ثمرة إذ تم نقل حبات الطلع من متبر نفس النوع من زهرة أخرى بواسطة الرياح أو الحشرات إلى ميسم الزهرة (أ). الزهرتان لهما حبوب الطلع. يمكن للزهرة (ب) أن تعطي ثمرة لأن لها مدقة ويشترط أن تنتقل حبوب الطلع من المتبر إلى الميسم.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i6"
+    },
+    {
+      "kind": "answer",
+      "number": "75",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 75",
+      "body": "الأعضاء الواقية: الكأس والتويج. أعضاء التكاثر: الأسدية والمدقة. أ) للزهرة الكاملة أعضاء تكاثر مذكرة تتمثل في الأسدية وأخرى مؤنثة تتمثل في المدقة. ب) يتحول البيض إلى ثمرة وتتحول البويضات إلى بذور. ب) لا يمكن للطائر الكاسر أن يكون في الحلقة الثانية لأنه لاحم. ج) تتكاثر الفئران والعصافير.",
+      "figureDesc": "",
+      "answer": null,
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i7"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "answer",
+      "number": "68",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 68",
+      "body": "تـ1 + تـ3: الأحياء المنتجة = العشب. الأحياء المستهلكة بالدرجة الأولى: الجرادة. الأحياء المستهلكة بالدرجة الثانية: ضفدعة. الأحياء المستهلكة بالدرجة الثالثة: أفعى. الأحياء المستهلكة بالدرجة الرابعة: نسر. تـ2: تبدأ كل سلسلة غذائية بكائن ذاتي التغذية يسمى المنتج للغذاء كالنباتات الخضراء، أما الأحياء التي تتغذى بالأحياء المنتجة فتدعى بالمستهلكات الأولية والحيوانات التي تتغذى بها بالمستهلكات الثانية والحيوانات التي تتغذى بالأخيرة بالمستهلكات الثالثة وهناك المستهلكات الرابعة وهكذا... ب) مجموعة عناصر الحلقة الأولى الثمار والأوراق والجذور. ج) مجموعة الحيوانات التي تصطاد الصقر: السمور، العقاب، العصفور، الثعلب، القنفذ.",
+      "figureDesc": "",
+      "answer": "المنتج: العشب؛ مستهلك أول: الجرادة؛ ثانٍ: ضفدعة؛ ثالث: أفعى؛ رابع: نسر",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i1",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "69",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 69",
+      "body": "1: تترافق السلسلة الغذائية بالأحياء المفككة والتي تضم الجراثيم والفطريات في التربية حيث تقوم بتفكيك بقايا النباتات وتحليل جثث الحيوانات وبقاياه العضوية إلى أملاح معدنية تستفيد منها الأحياء المنتجة. تـ2: الأحياء المحللة مستهلكة. 1: النباتات الخضراء ← الجراد ← ضفادع ← ثعابين ← الطيور الكاسرة. 2: يحدث بين جميع هذه الكائنات الحية توازن طبيعي، فهناك من جهة عدد كاف من الكائنات المأكولة لحساب الآكلة (يوجد عدد كاف من الثعابين لصالح الطيور الكاسرة) ومن جهة أخرى فالآكلة منها تحدّ من كثرة توالد المأكولة، الضفادع مثلا بتغذيتها بالجراد تقلل من تكاثره (علاقة بين الأعداد والأوزان). تـ3: الشبكة الغذائية هي تداخل وتشابك السلاسل الغذائية مع بعضها.",
+      "figureDesc": "",
+      "answer": "انظر النص",
+      "confidence": 0.75,
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i2",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "70",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 70",
+      "body": "أ) التصرف غير سليم. تلوّث هذه المياه بمخلفات المصنع والغازات المتصاعدة منه كما تتلوث المياه أيضا بمواد التنظيف الكيميائية والمبيدات الحشرية والأسمدة الصناعية. ب) الملوّث هو كل شيء ليست البيئة بحاجة إليه ووجوده يلحق الضرر بها.",
+      "figureDesc": "",
+      "answer": "انظر النص",
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i3",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "70 (مكرر)",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 70 (رقم الصفحة مقروء بصعوبة)",
+      "body": "ليست هذه المياه صالحة للشرب لأنها عكرة وملوثة وقد تغير لونها ورائحتها. نعم، الناس الذين يسبحون في البحر معرضون للمرض، فالنفايات الكيميائية والمياه المبتذلة والنفايات الصلبة وتسرب المواد البترولية في ملوثات تؤذي النباتات البحرية والحيوانات وتؤذينا نحن البشر. أ) المصدر: النفط. ب) الإنسان هو المسؤول عن إلقاء هذه الملوثات. يلوث النفط البحر عندما يطفو فوق سطحه معرقلا بذلك التبادل الغازي بين المحيط والبحر لتختنق مخلوقات البحر وهذا ما يفسر انقراض فصائل بعض الأسماك.",
+      "figureDesc": "",
+      "answer": "انظر النص",
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i4",
+      "topicId": "sci-6-u4",
+      "formatGuess": "matching",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "71",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 71",
+      "body": "معالجة مياه الصرف الصحي في محطة التطهير لتصبح صالحة لدى المزروعات وللاستعمال في مجالات الصناعة والسياحة.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i5",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "72",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 72",
+      "body": "الملاريا، التراخوما، البلهارسيا. تـ1: الإسهال الشديد، تجفاف سريع. تـ2: جرثومة. تـ3: عن طريق الطعام والماء الملوثين.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i6",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "74",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 74",
+      "body": "الترتيب: زهرة ← ثمرة ← بذرة ← نبتة كاملة. ب) الزهرة (ب) يمكن أن تعطي ثمرة إذ تم نقل حبات الطلع من المتبر إلى الميسم. الزهرة (أ) يمكن أيضا أن تعطي ثمرة إذ تم نقل حبات الطلع من متبر نفس النوع من زهرة أخرى بواسطة الرياح أو الحشرات إلى ميسم الزهرة (أ). الزهرتان لهما حبوب الطلع. يمكن للزهرة (ب) أن تعطي ثمرة لأن لها مدقة ويشترط أن تنتقل حبوب الطلع من المتبر إلى الميسم.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i7",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "75",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة 75",
+      "body": "الأعضاء الواقية: الكأس والتويج. أعضاء التكاثر: الأسدية والمدقة. أ) للزهرة الكاملة أعضاء تكاثر مذكرة تتمثل في الأسدية وأخرى مؤنثة تتمثل في المدقة. ب) يتحول البيض إلى ثمرة وتتحول البويضات إلى بذور. ج) لا يمكن للطائر الكاسر أن يكون في الحلقة الثانية لأنه لاحم. تتكاثر الفئران والعصافير.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "al_mounir_eveil_scientifique_6eme_p055_i8",
+      "topicId": "sci-6-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.93
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

@@ -1,0 +1,131 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 42,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : le jardin public et la protection de la nature",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "a- Comment les amis trouvent-ils le jardin public ?",
+      "body": "a- Comment les amis trouvent-ils le jardin public ?\n...............................................................\nb- Justifie ta réponse :\n...............................................................\n...............................................................\n...............................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p042_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "a- Que font les enfants pour rendre le jardin plus agréable ? b- Recopie la phrase qui le montre :",
+      "body": "a- Que font les enfants pour rendre le jardin plus agréable ?\n...............................................................\nb- Recopie la phrase qui le montre :\n...............................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p042_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "a- Réponds par « oui » ou « non » : b- Justifie ta réponse : c- Relève, dans le texte, l'expression qui le montre :",
+      "body": "a- Réponds par « oui » ou « non » :\n- Les gamins ne parviennent pas à terminer leur travail. (............)\nb- Justifie ta réponse :\n...............................................................\nc- Ils poursuivront le ménage le lendemain.\nRelève, dans le texte, l'expression qui le montre :\n...............................................................",
+      "figureDesc": "Cadre arrondi pour écrire « oui » ou « non » à droite de la phrase.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p042_i3",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Relie chaque mot avec son synonyme :",
+      "body": "- Les oiseaux gazouillent. •\n- Ils sont essoufflés. •\n- Les canards se baignent •\nColonne de droite : • Ils respirent difficilement. • Ils nagent. • Ils chantent.",
+      "figureDesc": "Deux colonnes de points à relier : phrases à gauche, synonymes à droite (Ils respirent difficilement / Ils nagent / Ils chantent).",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p042_i4",
+      "topicId": "fr-6-m5",
+      "formatGuess": "matching",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Cherche le contraire des mots suivants dans le texte :",
+      "body": "- Heureusement ≠ ..............................\n- Plein ≠ ..............................\n- Polluer ≠ ..............................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p042_i5",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "a- Que faut-il faire pour ne pas détruire la nature ? b- Donne un titre à ce texte :",
+      "body": "a- Que faut-il faire pour ne pas détruire la nature ?\n...............................................................\n...............................................................\nb- Donne un titre à ce texte :\n...............................................................",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p042_i6",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m5",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.38
+  },
+  "topicSubject": "Français",
+  "topicReason": "Page de compréhension de lecture en français sur un jardin public et la protection de la nature, qui correspond au Module 5 « Sauver la nature » (écologie, préservation de la nature).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    122
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte : jardin public",
+    "skill": "Comprendre un texte narratif en répondant à des questions, en justifiant par le texte, en trouvant synonymes et contraires, puis en proposant un titre.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "appariement",
+      "vrai_faux",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de lecture",
+      "jardin public",
+      "protection de la nature",
+      "synonymes",
+      "contraires",
+      "justification"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable de questions de compréhension (réponse puis justification par une phrase recopiée), vrai/faux justifié, appariement verbe-synonyme, recherche de contraires et création de titre, autour d'une situation de sensibilisation écologique.",
+    "themeGroup": "Textes descriptifs et biographiques"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

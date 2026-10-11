@@ -1,0 +1,223 @@
+{
+  "book": "devoirs_trimestre_1_matieres_mixtes",
+  "page": 43,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "كيفية الوضوء (Comment faire les ablutions) — page illustrée en 12 étapes. Le contenu relève de l'éducation islamique, pas des mathématiques.",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "كيفية الوضوء",
+      "body": "Titre de la page : كيفية الوضوء. Les 12 étapes suivantes sont illustrées par des dessins coloriés à la main.",
+      "figureDesc": "Deux planches de dessins au feutre : un garçon en chemise jaune devant un lavabo violet avec un robinet vert. Cadre décoratif de cercles jaunes autour de la page.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "1",
+      "instruction": "أبدأ بالتسمية:",
+      "body": "بسم الله الرحمن الرحيم.",
+      "figureDesc": "Le garçon devant le lavabo, mains vers le robinet.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "2",
+      "instruction": "أغسل يدي إلى الرسغين 3 مرات",
+      "body": "وأخلل بين أصابعي.",
+      "figureDesc": "Le garçon se lave les mains sous le robinet.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "3",
+      "instruction": "أتمضمض 3 مرات.",
+      "body": "أتمضمض 3 مرات.",
+      "figureDesc": "Le garçon porte la main à la bouche.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "4",
+      "instruction": "أستنشق 3 مرات.",
+      "body": "الاستنشاق باليمين والاستنثار باليسرى.",
+      "figureDesc": "Le garçon porte la main au nez.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "5",
+      "instruction": "أغسل وجهي 3 مرات",
+      "body": "من أعلى مسطح الجبهة إلى أسفل الذقن طولا ومن شحمة الأذن عرضا.",
+      "figureDesc": "Le garçon se lave le visage.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "6",
+      "instruction": "أغسل يدي اليمنى إلى المرفق 3 مرات مع الدلك.",
+      "body": "أغسل يدي اليمنى إلى المرفق 3 مرات مع الدلك.",
+      "figureDesc": "Le garçon lève le bras droit.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "7",
+      "instruction": "أغسل يدي اليسرى 3 مرات.",
+      "body": "أغسل يدي اليسرى 3 مرات.",
+      "figureDesc": "Le garçon se lave le bras gauche.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "8",
+      "instruction": "أمسح رأسي من مقدمه إلى الخلف ثم أرد المسح.",
+      "body": "أمسح رأسي من مقدمه إلى الخلف ثم أرد المسح.",
+      "figureDesc": "Le garçon passe les mains sur la tête.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "9",
+      "instruction": "أمسح أذني،",
+      "body": "والسنة مسح الأذن بالسبابتين وظاهرهما بالإبهامين بماء الرأس لأنهما منه.",
+      "figureDesc": "Le garçon se touche l'oreille.",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "10",
+      "instruction": "أغسل رجلي اليمنى إلى الكعبين،",
+      "body": "وغسل العقبين كذلك.",
+      "figureDesc": "Le garçon lave son pied droit dans le lavabo.",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i11",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "11",
+      "instruction": "أغسل رجلي اليسرى",
+      "body": "أغسل رجلي اليسرى.",
+      "figureDesc": "Le garçon lave son pied gauche dans le lavabo.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i12",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "12",
+      "instruction": "بعد الانتهاء من الوضوء أقول:",
+      "body": "«أشهد أن لا إله إلا الله وأشهد أن محمدا عبده ورسوله، اللهم اجعلني من التوابين واجعلني من المتطهرين».",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.75,
+      "id": "devoirs_trimestre_1_matieres_mixtes_p043_i13",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "math-5-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-5-u6",
+    "confidence": 0.19
+  },
+  "topicSubject": "Éducation islamique",
+  "topicReason": "La page décrit les étapes des ablutions (éducation islamique), matière absente de la liste des chapitres officiels; le texte injonctif d'arabe (ar-5-u8) n'est qu'une correspondance lointaine, car l'objectif de la page est religieux et non linguistique.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Les étapes des ablutions",
+    "skill": "Connaître et ordonner les gestes de l'ablution (al-wudû') dans l'ordre correct, avec le nombre de répétitions.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "appariement",
+      "autre"
+    ],
+    "keywords": [
+      "ablutions",
+      "wudû'",
+      "purification",
+      "prière",
+      "étapes illustrées",
+      "sunna"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Séquence de 12 gestes illustrés, réutilisable pour des exercices de remise en ordre des étapes, d'appariement image-geste, de vrai/faux sur les répétitions ou de frise chronologique à compléter.",
+    "themeGroup": "La purification: les ablutions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Devoirs 5ème année — Trimestre 1, matières mixtes"
+}

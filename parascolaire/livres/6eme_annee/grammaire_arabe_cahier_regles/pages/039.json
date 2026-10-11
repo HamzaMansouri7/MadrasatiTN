@@ -1,0 +1,88 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 39,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "المصادر (أوزان المصادر السماعية ومصادر الأفعال المزيدة) – المراجعة والدرس (la page est en arabe, bien que le manuel soit étiqueté Français)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة – أهم أوزان المصادر السماعية",
+      "body": "ثلاثة أحرف: شرب ← شُرب ; كذب ← كذب ; هدى ← هدى. أربعة أحرف: رحم ← رحمة ; دعا ← دعوى ; صهل ← صهيل. خمسة أحرف: غفر ← غفران ; شهد ← شهادة ; صعب ← صعوبة",
+      "figureDesc": "Tableau à 3 colonnes (ثلاثة أحرف، أربعة أحرف، خمسة أحرف) et 3 lignes. Chaque cellule contient un verbe suivi de son مصدر سماعي.",
+      "answer": null,
+      "confidence": 0.8,
+      "id": "grammaire_arabe_cahier_regles_p039_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "Tableau à 4 colonnes : وزن الفعل | وزن المصدر | الفعل | مصدره. Lignes : انفعل ← انفعال ← اندفع ← اندفاع ; افتعل ← افتعال ← اقترب ← اقتراب ; تفعل ← تفعل ← تسلم ← تسلم ; تفاعل ← تفاعل ← تمارض ← تمارض ; افعل ← افعلال ← اصفر ← اصفرار ; استفعل ← استفعال ← استرجع ← استرجاع",
+      "figureDesc": "Tableau de 4 colonnes et 6 lignes reliant le وزن الفعل, le وزن المصدر, un verbe exemple et son مصدر.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p039_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "التمارين",
+      "body": "Seul le titre de la section « التمارين » apparaît en bas de page. Aucun énoncé d'exercice n'est visible.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "grammaire_arabe_cahier_regles_p039_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.23
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite des masdars (verbes augmentés et formes de masdar samāʿī), un point de grammaire/morphologie arabe qui ne correspond à aucun des chapitres officiels d'arabe (centrés sur la narration, la description, le dialogue, etc.) ni à un autre, donc aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Les masdars des verbes dérivés",
+    "skill": "Former le masdar d'un verbe dérivé à partir de son schème (dérivé ou sample) et reconnaître les principaux schèmes de masdars sémaï.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "masdar",
+      "schèmes verbaux",
+      "verbes dérivés",
+      "morphologie arabe",
+      "conjugaison",
+      "révision"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau à quatre colonnes (schème du verbe, schème du masdar, verbe, masdar) est réutilisable comme support d'exercices d'appariement ou de complétion de masdars à partir de verbes dérivés, mais la page ne contient aucun énoncé d'exercice.",
+    "themeGroup": "Le masdar"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

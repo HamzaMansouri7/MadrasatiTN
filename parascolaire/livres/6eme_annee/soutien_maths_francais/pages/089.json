@@ -1,0 +1,121 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 89,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Note : la page n'est pas une page de mathématiques du manuel Mouayen. C'est la page 1/4 de l'examen régional unifié marocain de français pour le certificat d'études primaires (session de juillet 2022) : compréhension de l'écrit sur le texte « l'économie de l'eau ».",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "Lis attentivement le texte ci-dessous, puis réponds aux questions.",
+      "body": "On nous répète toujours qu'il ne faut pas gaspiller l'eau. Mais on entend aussi souvent que la Terre est majoritairement recouverte d'eau. Alors, faut-il vraiment économiser l'eau ?\nLa Terre est recouverte d'eau à 70 %. Pourtant, une très grande majorité de l'eau présente sur terre est salée. L'eau douce ne représente que 2,5 % de la quantité totale d'eau. Pratiquement, seul 0,3 % de l'eau présente sur Terre est exploitable par l'Homme. Il s'agit donc d'une denrée rare.\nL'eau constitue un besoin vital pour notre survie. Nous en avons besoin pour boire, pour nous laver, pour produire non seulement ce que nous mangeons mais aussi la plupart des objets manufacturés de notre quotidien. Préservons l'eau...\nSource : https://oopla.fr/pourquoi-et-comment-economiser-l-eau/ (texte adapté)",
+      "figureDesc": "Texte encadré de trois paragraphes. En-tête officiel marocain en arabe (Royaume du Maroc, Ministère de l'Éducation nationale, examen régional unifié pour le certificat d'études primaires, session de juillet 2022, épreuve de français, durée : une heure et demie), avec cadres pour le numéro d'examen, le nom, le prénom, l'établissement et la note (40).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "soutien_maths_francais_p089_i1",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "De combien de paragraphes se compose le texte ? (Entoure la bonne réponse) (1,5pt)",
+      "body": "deux paragraphes / trois paragraphes / quatre paragraphes",
+      "figureDesc": "Trois choix alignés à entourer.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p089_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Qu'est-ce qu'on nous répète toujours à propos de l'eau ? (2pts)",
+      "body": "",
+      "figureDesc": "Deux lignes pointillées pour répondre.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p089_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Qu'est-ce qu'on entend souvent de la terre ? (2pts)",
+      "body": "",
+      "figureDesc": "Deux lignes pointillées pour répondre.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p089_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Réponds par « vrai » ou « faux ». (Coche la bonne réponse) (2pts)",
+      "body": "- La Terre est recouverte d'eau à 30 %.\n- Une très grande majorité de l'eau présente sur terre est salée.\n- L'eau douce représente 70 % de la quantité totale d'eau.\n- 0,3 % de l'eau présente sur Terre est exploitable par l'Homme.",
+      "figureDesc": "Tableau à 3 colonnes (affirmation, Vrai, Faux) et 4 lignes, cases vides à cocher. Pied de page : Page 1 sur 4.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "soutien_maths_francais_p089_i5",
+      "topicId": null,
+      "formatGuess": "true_false",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "math-6-ch1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p6",
+    "confidence": 0.19
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est la première page d'un examen régional marocain de français (compréhension de l'écrit sur l'économie de l'eau), donc une évaluation et non une leçon du manuel tunisien ; le thème de l'eau rappelle le module 5 « Sauver la nature », mais aucun chapitre ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de l'écrit : l'économie de l'eau",
+    "skill": "Lire un texte documentaire et répondre à des questions de compréhension (repérage d'informations, structure du texte, vrai/faux).",
+    "pageType": "exam",
+    "formats": [
+      "lecture_comprehension",
+      "qcm",
+      "vrai_faux"
+    ],
+    "keywords": [
+      "économie de l'eau",
+      "compréhension de l'écrit",
+      "texte documentaire",
+      "paragraphes",
+      "vrai ou faux",
+      "examen régional"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Un texte documentaire sur un enjeu environnemental, introduit par un paradoxe (beaucoup d'eau sur Terre mais peu exploitable), suivi de questions progressives : structure du texte, repérage d'informations explicites, puis vrai/faux avec chiffres à vérifier.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "exam_part",
+  "labels": {
+    "pageSubject": "Français"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

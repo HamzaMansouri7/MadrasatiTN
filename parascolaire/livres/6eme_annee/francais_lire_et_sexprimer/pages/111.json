@@ -1,0 +1,170 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 111,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Les évaluations – Grammaire (compléments de phrase : lieu, manière, déplacement du complément non essentiel) et Conjugaison (impératif présent)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": null,
+      "instruction": null,
+      "body": "- Un complément de lieu : ........................................................................................\n- Un complément de manière : ...................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p111_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "b",
+      "instruction": "Réécris les phrases suivantes en déplaçant le complément non essentiel :",
+      "body": "-Le mouton reste volontiers à la maison durant les jours de grand froid.\n........................................................................................................................\n- Aujourd'hui, les gens vont à la ville.\n........................................................................................................................\n- Le paysan se repose un instant dans une auberge.\n........................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p111_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    },
+    {
+      "kind": "exercise",
+      "number": "D) 1)",
+      "instruction": "D) Conjugaison :\n1) Transforme les phrases en utilisant l'impératif présent :",
+      "body": "- La vieille demande à son mari de faire une bonne affaire.\n........................................................................................................................\n- La maîtresse demande aux élèves de réécrire le conte.\n........................................................................................................................\n- Le garçon demande au paysan de prendre le sac de marrons.\n........................................................................................................................\n- Le voyageur demande au paysan de réfléchir avant de faire l'échange.\n........................................................................................................................\n- La paysanne demande au paysan d'aller au marché.\n........................................................................................................................\n- Le commerçant demande au marchand ambulant de passer la nuit à l'auberge.\n........................................................................................................................\n-Le directeur demande aux enfants de dire la vérité.\n........................................................................................................................",
+      "figureDesc": null,
+      "answer": null,
+      "id": "francais_lire_et_sexprimer_p111_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "confidence": 0.98
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m1",
+  "topicTitle": "Module 1 : Travailler pour s'épanouir",
+  "topicConfidence": 0.5,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.37
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une évaluation de français (compléments de phrase, déplacement du complément non essentiel, impératif présent) ; le contenu évoque un conte (paysan, échange, marrons), mais aucun module ne couvre clairement les compléments circonstanciels ni l'impératif, et m1 (structure de la phrase, conjugaison du présent) est seulement le plus proche.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    127,
+    128
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compléments de phrase et impératif présent",
+    "skill": "Identifier et déplacer les compléments de phrase (lieu, manière, non essentiel) et transformer une phrase en ordre à l'impératif présent.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "complément de lieu",
+      "complément de manière",
+      "complément non essentiel",
+      "impératif présent",
+      "conjugaison",
+      "conte"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Exercices de réécriture ancrés dans un conte (paysan, échange de marrons) : déplacer un complément mobile et transformer un discours rapporté de demande en ordre direct à l'impératif, une situation réutilisable pour d'autres contes ou dialogues.",
+    "themeGroup": "Grammaire: la phrase"
+  },
+  "quality": {
+    "status": "hand_fixed",
+    "source": "antigravity",
+    "accuracy": 0.98,
+    "reviewed": true
+  },
+  "audit": {
+    "accuracy": 0.88,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le préambule « [a (fin)] Compléter (suite de la consigne précédente, non visible en entier) : donner un exemple de chaque complément » est une consigne inventée. Elle n'est pas lisible sur l'image, qui commence directement par « - Un complément de lieu : ... »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page est absent de la transcription : « Sagesse », « Les évaluations », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Le pied de page est absent : « Lire et s'exprimer », « 110 », « 6ème année de base »."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Les lignes de réponse en pointillés de l'exercice D-1 (impératif) ne sont pas indiquées, alors qu'elles sont indiquées pour les exercices précédents."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Les marqueurs « [D-1] » et « 1) » sont mal rendus. L'image porte « D) Conjugaison : » puis « 1) Transforme… », et la transcription fusionne les deux titres."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "minor_issues"
+  },
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "a (fin)",
+      "instruction": "Compléter (suite de la consigne précédente, non visible en entier) : donner un exemple de chaque complément.",
+      "body": "- Un complément de lieu : ........\n- Un complément de manière : ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "sagesse_6eme_complet_p111_i1",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "b",
+      "instruction": "Réécris les phrases suivantes en déplaçant le complément non essentiel :",
+      "body": "- Le mouton reste volontiers à la maison durant les jours de grand froid.\n........\n- Aujourd'hui, les gens vont à la ville.\n........\n- Le paysan se repose un instant dans une auberge.\n........",
+      "figureDesc": "Lignes pointillées pour écrire les réponses",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p111_i2",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "D-1",
+      "instruction": "Conjugaison : Transforme les phrases en utilisant l'impératif présent :",
+      "body": "- La vieille demande à son mari de faire une bonne affaire.\n- La maîtresse demande aux élèves de réécrire le conte.\n- Le garçon demande au paysan de prendre le sac de marrons.\n- Le voyageur demande au paysan de réfléchir avant de faire l'échange.\n- La paysanne demande au paysan d'aller au marché.\n- Le commerçant demande au marchand ambulant de passer la nuit à l'auberge.\n- Le directeur demande aux enfants de dire la vérité.",
+      "figureDesc": "Lignes pointillées sous chaque phrase pour les réponses ; en-tête « Les évaluations », pied de page « Lire et s'exprimer – 110 – 6ème année de base »",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "sagesse_6eme_complet_p111_i3",
+      "topicId": "fr-6-m1",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,185 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 134,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigés des examens de passage (امتحان النقلة) n°4 et n°5 – السنة الرابعة (pages 101 et 102)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "امتحان النقلة (4) – الصفحة 101 – السنة الرابعة : تمرين 1",
+      "body": "150 000 - 300 000 - 450 000 - 600 000 - 750 000 - 900 000",
+      "figureDesc": "",
+      "answer": "150 000 - 300 000 - 450 000 - 600 000 - 750 000 - 900 000",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p134_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "امتحان النقلة (4) – الصفحة 101 : تمرين 2",
+      "body": "50 000 = 8 400 - (32 800 + 25 600)\n109 150 = 185 × 590",
+      "figureDesc": "",
+      "answer": "50 000 = 8 400 - (32 800 + 25 600) ؛ 109 150 = 185 × 590",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p134_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "كتلة العسل بالغ :",
+      "body": "1 400 = 200 - 1 600",
+      "figureDesc": "",
+      "answer": "1 400 = 200 - 1 600",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p134_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "قيس طول قطعة الخشب بالصم",
+      "body": "80 = 50 - (2 : 260)\nقيس المساحة بالدسم2 : 40 = 5 × 8",
+      "figureDesc": "",
+      "answer": "الطول: 80 ؛ المساحة: 40 دسم2",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p134_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "امتحان النقلة (4) : تمرين 5 (مسألة العليق)",
+      "body": "ثمن شراء العليق بالمي : 120 000 = 150 × 800\nكتلة العليق المبيعة في المرّة الأولى : 150 على 2 = 75 كغ\nثمن بيعها بالمي : 78 750 = 75 × 1 050\nعدد الصناديق اللازمة : (75 - 3) : 9 = 8\nثمن بيع الصناديق بالمي : 72 = 8 × 9 (كما في الصفحة؛ 72 000 في الحساب اللاحق)\nثمن بيع جملي للعليق بالمي : 150 750 = 72 000 + 78 750\nربح التاجر بالمي : 30 750 = 120 000 - 150 750",
+      "figureDesc": "",
+      "answer": "ربح التاجر: 30 750 مي",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p134_i5",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "1",
+      "instruction": "امتحان النقلة (5) – الصفحة 102 – السنة الرابعة : تمرين 1",
+      "body": "425 080 = 50 000 + 375 080",
+      "figureDesc": "",
+      "answer": "425 080 = 50 000 + 375 080",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p134_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "2",
+      "instruction": "سعة الأوعية باللتر ؛ كمية الزيت المتبقية بالخزّان باللتر",
+      "body": "سعة الأوعية باللتر : 600 = 40 × 15\nكمية الزيت المتبقية بالخزّان باللتر : 50 = 600 - 650",
+      "figureDesc": "",
+      "answer": "600 لتر ؛ 50 لتر",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p134_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "3",
+      "instruction": "عدد الحبّات المستهلكة ؛ عدد العلب",
+      "body": "عدد الحبّات المستهلكة : 60 = 10 × (3 × 2)\nعدد العلب 60 على 20 = 3",
+      "figureDesc": "",
+      "answer": "60 حبّة ؛ 3 علب",
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p134_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "4",
+      "instruction": "قيس ضلع القطعة بالصم ؛ قيس مساحتها ؛ قيس مساحة القطعة المتبقية بالدسم2",
+      "body": "قيس ضلع القطعة بالصم : 200 على 4 = 50\nقيس مساحتها بالصم2 : 50 × 50 = 2 500\nقيس مساحة القطعة المتبقية بالدسم2 : 25 - 6 = 19",
+      "figureDesc": "",
+      "answer": "50 صم ؛ 2 500 صم2 ؛ 19 دسم2",
+      "confidence": 0.85,
+      "id": "mathematiques_exercices_corriges_p134_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "5",
+      "instruction": "ثمن بيع الأرانب بالمي وبقية الحسابات",
+      "body": "ثمن بيع الأرانب بالمي : 28 000 = 8 × 3 500\nثمن بيع العسل بالمي : 27 000 = 3 × 9 000\nقبض بالمي : 55 000 = 27 000 + 28 000\nثمن النقالة بالمي : 18 500 = 4 500 - 23 000\nثمن الصحون بالمي : 13 500 = (18 500 - 23 000) - 55 000\nثمن الصحن الواحد بالمي : 13 500 على 9 = 1 500",
+      "figureDesc": "",
+      "answer": "ثمن الصحن الواحد: 1 500 مي",
+      "confidence": 0.8,
+      "id": "mathematiques_exercices_corriges_p134_i10",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch4",
+    "confidence": 0.18
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page contient les corrigés d'examens de passage (n°4 et n°5) de mathématiques qui couvrent plusieurs chapitres (nombres à 6 chiffres, opérations, périmètres et aires, problèmes, capacités, masses), donc aucun chapitre unique ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionOf": [
+    105,
+    106
+  ],
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Corrigés d'examens de passage 4e année",
+    "skill": "Résoudre des problèmes à plusieurs étapes avec grands nombres, mesures (masse, capacité, longueur, aire) et monnaie en millimes.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "examen de passage",
+      "corrigé",
+      "problèmes à étapes",
+      "mesures et aires",
+      "monnaie en millimes",
+      "multiplication et division"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Contextes de la vie rurale et commerciale (vente de miel, de lapins, d'aliments pour bétail, de plateaux) qui servent à enchaîner des calculs de prix, de masse, de capacité et d'aire (m² vers dm²), avec une structure d'examen en cinq exercices facile à reprendre.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

@@ -1,0 +1,127 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 53,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : Pour garder une bonne santé (I)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "A",
+      "instruction": "Lis le texte :",
+      "body": "Pour garder une bonne santé (I)\nComme nous sommes tristes quand nous sommes malades ! Comme c'est pénible ! C'est pourquoi nous voulons tous rester en bonne santé.\nPour maintenir notre corps en bon état de marche, il nous faut beaucoup d'air pur à respirer. Les enfants de la campagne ou des bords de mer le trouvent chez eux. Pour les enfants des villes, il a fallu créer des colonies de vacances, des classes de mer, des classes de campagne ou classes vertes, des classes de neige. Ils peuvent donc aller respirer l'air pur.\nPour garder une bonne santé, il nous faut encore beaucoup d'eau pure à boire et des aliments bien choisis. Depuis quelques années, les hommes luttent contre la pollution des eaux. La pollution est un mot que vous connaissez bien aujourd'hui.\nMais tout cela n'est pas encore suffisant. Quand nous travaillons, quand nous jouons, nous fatiguons notre corps et nous l'usons. Si une personne est lasse, elle se fâche pour des riens ; elle ne peut pas rassembler vite ses idées ; elle risque de prendre froid. Il faut donc se reposer. C'est ainsi que le corps se répare lui-même.\n(à suivre...)",
+      "figureDesc": "Texte encadré avec en-tête « Lecture - Compréhension », mention « Sagesse » et « 6ème année de base ».",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p053_i1",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1a",
+      "instruction": "Réponds par « oui » ou « non » :",
+      "body": "- Les enfants de la ville ont besoin de passer des journées loin de l'air pollué. ........",
+      "figureDesc": "Case ovale à droite de la phrase pour écrire la réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p053_i2",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B1b",
+      "instruction": "Relève, dans le texte, le détail qui le montre :",
+      "body": "Deux lignes pointillées pour répondre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p053_i3",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B2",
+      "instruction": "Que doit-on boire pour conserver une bonne santé ?",
+      "body": "Deux lignes pointillées pour répondre.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p053_i4",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "B3",
+      "instruction": "Cherche dans le texte le synonyme des mots soulignés :",
+      "body": "- La fermière a beaucoup travaillé. Elle est fatiguée. (mot souligné : fatiguée) ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "francais_lire_et_sexprimer_p053_i5",
+      "topicId": "fr-6-m6",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m6",
+  "topicTitle": "Module 6 : Être en forme et mieux se porter",
+  "topicConfidence": 0.88,
+  "topicIdPrev": "fr-6-m6",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.31
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est une lecture-compréhension en français sur « Pour garder une bonne santé » (air pur, boisson, hygiène), qui correspond au Module 6 « Être en forme et mieux se porter » (santé et activité physique).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Français",
+    "theme": "Texte documentaire sur l'hygiène de vie",
+    "skill": "Comprendre un texte documentaire sur la santé en relevant des informations explicites et en trouvant des synonymes.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "autre"
+    ],
+    "keywords": [
+      "santé",
+      "air pur",
+      "hygiène",
+      "compréhension de texte",
+      "synonymes",
+      "boisson"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le schéma réutilisable associe un court texte documentaire à des questions variées : vrai/faux justifié par un relevé dans le texte, question de retrait d'information et recherche de synonymes en contexte, avec des thèmes d'hygiène de vie adaptables à d'autres habitudes saines.",
+    "themeGroup": "Santé et hygiène de vie"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "En-tête (Sagesse, Lecture - Compréhension, 6ème année de base), titre de section « B) Compréhensions : » et pied de page (Lire et s'exprimer, 52) non transcrits"
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

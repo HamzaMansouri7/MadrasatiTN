@@ -1,0 +1,172 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 69,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "وَضْعِيَّاتٌ إِدْمَاجِيَّةٌ (الثلاثي الثاني) - الرياضيات، السنة 1. Note : la page est en réalité de mathématiques et non d'اللغة العربية.",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 1",
+      "instruction": "جَمَعَتْ وِدَادُ أَصْدَافًا وَنُجُومَ الْبَحْرِ.",
+      "body": "جَمَعَتْ وِدَادُ أَصْدَافًا وَنُجُومَ الْبَحْرِ.",
+      "figureDesc": "Deux grandes ellipses vides. L'ellipse de gauche est reliée à un cercle contenant le nombre 8 et à un cercle contenant une étoile de mer rose. L'ellipse de droite est reliée à un cercle contenant le nombre 6 et à un cercle contenant un coquillage rose.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p069_i1",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أُتِمُّ الْمَجْمُوعَاتِ بِمَا يُنَاسِبُ وَأَكْتُبُ كَمَّ الْأَصْدَافِ.",
+      "body": "",
+      "figureDesc": "Se rapporte aux deux ellipses de la situation 1.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p069_i2",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُوَحِّدُ بَيْنَ الْمَجْمُوعَتَيْنِ وَأُعَبِّرُ عَنْ ذَلِكَ بِكِتَابَةٍ جَمْعِيَّةٍ.",
+      "body": "الْكِتَابَةُ الْجَمْعِيَّةُ : ................",
+      "figureDesc": "Ligne pointillée pour écrire l'écriture additive.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p069_i3",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أُرَتِّبُ أَعْدَادَ الْعَمَلِيَّةِ تَصَاعُدِيًّا.",
+      "body": "................",
+      "figureDesc": "Ligne pointillée de réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p069_i4",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الوضعية عدد 2",
+      "instruction": "كَانَ كَرِيمٌ يَمْلِكُ مَبْلَغَ 10 مي أَضَافَ لَهُ أَبُوهُ مَبْلَغَ 9 مي.",
+      "body": "كَانَ كَرِيمٌ يَمْلِكُ مَبْلَغَ 10 مي أَضَافَ لَهُ أَبُوهُ مَبْلَغَ 9 مي.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p069_i5",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "مَا هُوَ الْمَبْلَغُ الْجُمْلِيُّ الَّذِي أَصْبَحَ عِنْدَهُ ؟",
+      "body": "الْإِجَابَةُ اللَّفْظِيَّةُ : ................\nالْعَمَلِيَّةُ الْأُفُقِيَّةُ: ................",
+      "figureDesc": "Deux lignes pointillées avec flèches (bleue pour la réponse verbale, rouge pour l'opération horizontale).",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_maths_arabe_p069_i6",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أُرَتِّبُ الْأَعْدَادَ الْمُكَوِّنَةَ لِلْعَمَلِيَّةِ تَنَازُلِيًّا.",
+      "body": "................",
+      "figureDesc": "Ligne pointillée de réponse.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p069_i7",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أُمَثِّلُ الْمَبْلَغَ بِأَقَلِّ عَدَدٍ مُمْكِنٍ مِنَ الْقِطَعِ النَّقْدِيَّةِ.",
+      "body": "",
+      "figureDesc": "Grand cadre vide aux bords bleus arrondis pour représenter le montant avec des pièces.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_maths_arabe_p069_i8",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "أُوَاصِلُ تَمْثِيلَ الْمَبْلَغِ.",
+      "body": "اِشْتَرَى كَرِيمٌ قِطْعَةَ حَلْوَى بِـ 15 مي",
+      "figureDesc": "Cadre contenant trois pièces : une pièce de 1 et deux pièces de 2 (millimes), à compléter pour représenter 15 مي.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_maths_arabe_p069_i9",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-1-p3",
+  "topicTitle": "Période 3 : Le nombre 10, notion d'addition et formes géométriques",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p6",
+    "confidence": 0.3
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est une situation d'intégration de maths du trimestre 2 sur l'addition de petites quantités (union de deux ensembles, 10 + 9, écriture additive, ordre croissant/décroissant, monnaie); elle relève surtout de la Période 3 (sens de l'addition, nombre 10), mais le 10 + 9 = 19 et la monnaie touchent aussi la Période 4, d'où une confiance moyenne.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Addition et monnaie (millimes)",
+    "skill": "Résoudre des situations d'addition jusqu'à 20 en écrivant l'opération, en ordonnant les nombres et en représentant une somme avec des pièces.",
+    "pageType": "exercise",
+    "formats": [
+      "probleme",
+      "calcul",
+      "schema_tableau",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "addition",
+      "situation d'intégration",
+      "monnaie",
+      "millimes",
+      "ordre croissant",
+      "ordre décroissant"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Deux situations d'intégration contextualisées (collection de coquillages et d'étoiles de mer, argent de poche augmenté par le père) enchaînent réunion de collections, écriture additive, rangement des nombres et représentation d'un montant avec le moins de pièces possible.",
+    "themeGroup": "Calculs avec la monnaie"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

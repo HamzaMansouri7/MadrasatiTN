@@ -1,0 +1,159 @@
+{
+  "book": "soutien_maths_francais",
+  "page": 70,
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "Corrigé d'un devoir de synthèse : Géométrie (agrandissement, symétrie axiale), Mesure (conversions, périmètre et aire du cercle, volume) et Organisation et traitement de données",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "II.4",
+      "instruction": "يرسم تكبيرا للمثلث بضرب قياس أضلاعه في 2 مع الحفاظ على نوعه وبدون خطأ.",
+      "body": "(2ن) Barème : 2 points",
+      "figureDesc": "",
+      "answer": "Tracé d'un triangle agrandi, dont les côtés mesurent le double de ceux du triangle initial, de même nature (corrigé non détaillé, seul le barème est indiqué).",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p070_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "II.5",
+      "instruction": "يرسم مماثل الشكل بالنسبة للمحور العمودي محترما التقنيات الصحيحة لرسم الأشكال المماثلة.",
+      "body": "(2ن) Barème : 2 points",
+      "figureDesc": "",
+      "answer": "Tracé du symétrique de la figure par rapport à l'axe vertical, avec les bonnes techniques (corrigé non détaillé, seul le barème est indiqué).",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p070_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "III.1",
+      "instruction": "III. القياس (8ن) — 1. التحويلات:",
+      "body": "(1ن) 12 m 3,45 hm = 357 m\n(1ن) 76,5 q 100 kg = 7,75 t\n(1ن) 321 a 7,8 ha = 1101 dam²\n(1ن) 315 dl 5420 ml = 36,92 dm³",
+      "figureDesc": "",
+      "answer": "357 m ; 7,75 t ; 1101 dam² ; 36,92 dm³",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p070_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "III.2",
+      "instruction": "محيط الدائرة:",
+      "body": "(1ن) (3+3) x 3,14 = 18,84 cm",
+      "figureDesc": "",
+      "answer": "18,84 cm",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p070_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "III.3",
+      "instruction": "مسألة: مساحة قاعدة النافورة هي:",
+      "body": "(1.5ن) 15 x 15 x 3.14 = 706.5 m²",
+      "figureDesc": "",
+      "answer": "706,5 m²",
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p070_i5",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "III.4",
+      "instruction": "مسألة: كمية الماء الضرورية لملء الصهريج باللتر هي:",
+      "body": "(1.5ن) (4 x 4) x 3,14 x 10 = 502,4 m³ = 502400 L",
+      "figureDesc": "",
+      "answer": "502400 L",
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p070_i6",
+      "topicId": null,
+      "formatGuess": "problem_solving",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "IV.1",
+      "instruction": "IV. تنظيم ومعالجة البيانات (4ن) — 1- الشهور التي لم تسجل أي نسبة من التساقطات هي: يونيو، يوليوز، غشت",
+      "body": "(1ن) Mois sans précipitations : يونيو، يوليوز، غشت",
+      "figureDesc": "",
+      "answer": "يونيو، يوليوز، غشت",
+      "confidence": 0.9,
+      "id": "soutien_maths_francais_p070_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "answer",
+      "number": "IV.2",
+      "instruction": "الكمية الاجمالية للتساقطات خلال السنة:",
+      "body": "(3ن) 40+30+20+10+10+00+00+00+10+50+30+60 = 260 mm",
+      "figureDesc": "",
+      "answer": "260 mm",
+      "confidence": 0.88,
+      "id": "soutien_maths_francais_p070_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "math-6-p4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-6-p4",
+    "confidence": 0.23
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page est le corrigé d'un devoir de synthèse qui couvre plusieurs chapitres (agrandissement et symétrie, conversions, aire et périmètre du cercle, volume, statistiques), donc aucun chapitre unique ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Corrigé devoir de synthèse géométrie mesure",
+    "skill": "Appliquer agrandissement, symétrie axiale, conversions, périmètre et aire du cercle, volume du cylindre et lecture de données.",
+    "pageType": "correction",
+    "formats": [
+      "calcul",
+      "probleme",
+      "schema_tableau"
+    ],
+    "keywords": [
+      "agrandissement",
+      "symétrie axiale",
+      "conversions",
+      "cercle",
+      "volume",
+      "précipitations"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : situations de problèmes concrets (base d'une fontaine circulaire, remplissage d'un réservoir cylindrique en litres), conversions à unités composées et exploitation d'un tableau de précipitations mensuelles.",
+    "themeGroup": "Problèmes de synthèse et révisions"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Soutien 6ème année — Maths et Français"
+}

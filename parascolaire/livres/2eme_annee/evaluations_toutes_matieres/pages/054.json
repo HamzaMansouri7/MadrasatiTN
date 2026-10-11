@@ -1,0 +1,173 @@
+{
+  "book": "evaluations_toutes_matieres",
+  "page": 54,
+  "grade": "2ème Année",
+  "subject": "التربية الإسلامية",
+  "topicGuess": "اختبار نهاية الثلاثي الثاني عدد 2 - التربية الإسلامية (السنة الثانية): قواعد الإسلام الخمس، الإسراف في الأكل، آداب الأكل",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "السند 1",
+      "instruction": "",
+      "body": "في أَحَدِ أَيَّامِ شَهْرِ رَمَضَانَ، قَدِمَ أَقَارِبُنَا لِتَنَاوُلِ طَعَامِ الْإِفْطَارِ عِنْدَنَا، فَأَعَدَّتْ أُمِّي أَصْنَافًا شَتَّى مِنَ الْمَأْكُولَاتِ الَّتِي تَنَاوَلْنَا مِنْهَا حَاجَتَنَا وَأُلْقِيَ بِالْكَثِيرِ مِنْهَا فِي سَلَّةِ الْمُهْمَلَاتِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p054_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 1",
+      "instruction": "مِنْ قَوَاعِدِ الْإِسْلَامِ الْخَمْسِ الصَّلَاةُ وَصَوْمُ رَمَضَانَ. أَذْكُرُ بَقِيَّةَ الْقَوَاعِدِ.",
+      "body": "أ ........................ ب ........................ ج ........................ (0,5 لكل قاعدة؛ المعيار: مع 1، مربعات التقييم ثلاثة)",
+      "figureDesc": "ثلاثة مربعات صغيرة للتقييم في خانة المعايير (مع 1)",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p054_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2 أ",
+      "instruction": "أُلْقِيَتْ بَقِيَّةُ الْمَأْكُولَاتِ فِي سَلَّةِ الْمُهْمَلَاتِ. مَا رَأْيُكَ فِي هَذَا التَّصَرُّفِ ؟",
+      "body": "سطران منقطان للإجابة (0,5) (المعيار: مع 3، مربعان للتقييم)",
+      "figureDesc": "مربعان للتقييم (مع 3)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p054_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 2 ب",
+      "instruction": "بِمَ تَنْصَحُ هَذِهِ الْعَائِلَةَ؟",
+      "body": "سطر منقط للإجابة (1)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p054_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 3",
+      "instruction": "أَكْتُبُ آيَةً قُرْآنِيَّةً تَحُثُّ عَلَى اجْتِنَابِ الْإِسْرَافِ فِي الْأَكْلِ وَالنَّفَقَةِ.",
+      "body": "قَالَ اللهُ تَعَالَى: « وَكُلُوا وَاشْرَبُوا وَ ........................ » (سُورَةُ الْأَعْرَافِ الْآيَةُ 31) (1)",
+      "figureDesc": "مربع واحد للتقييم (مع 2ب)",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p054_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 2",
+      "instruction": "",
+      "body": "قَدَّمَتْ أُمِّي الْمَشْرُوبَاتِ لِلضُّيُوفِ وَكَانَ أَخِي الصَّغِيرُ يَمُدُّ يَدَهُ إِلَى كُؤُوسِهِمْ فَيَتَرَشَّفُ مِنْهَا غَيْرَ مُهْتَمٍّ بِنَظَرَاتِ اللَّوْمِ الَّتِي كُنَّا نُرْسِلُهَا إِلَيْهِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p054_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 4 أ",
+      "instruction": "مَا رَأْيُكَ فِي سُلُوكِ الْأَخِ الصَّغِيرِ ؟",
+      "body": "سطر منقط للإجابة (1)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "evaluations_toutes_matieres_p054_i7",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "التعليمة 4 ب",
+      "instruction": "كَيْفَ كَانَ عَلَيْهِ أَنْ يَتَصَرَّفَ ؟",
+      "body": "سطران منقطان للإجابة (1) (المعيار: مع 3، مربعان للتقييم)",
+      "figureDesc": "مربعان للتقييم (مع 3)",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "evaluations_toutes_matieres_p054_i8",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "lesson",
+      "number": "السند 3",
+      "instruction": "",
+      "body": "بَعْدَ انْصِرَافِ ضُيُوفِنَا أَجْلَسَتْ أُمِّي أَخِي الصَّغِيرَ عَلَى رُكْبَتِهَا وَبَدَأَتْ تُحَدِّثُهُ عَنْ آدَابِ الْأَكْلِ.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "evaluations_toutes_matieres_p054_i9",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-2-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-2-p6",
+    "confidence": 0.2
+  },
+  "topicSubject": "التربية الإسلامية",
+  "topicReason": "La page est un examen de fin de deuxième trimestre en éducation islamique (piliers de l'islam, gaspillage alimentaire, bonnes manières à table), une matière absente de la liste officielle qui ne contient que l'arabe et les mathématiques, donc aucun chapitre ne correspond.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Éducation islamique",
+    "theme": "Piliers de l'islam et bonnes manières à table",
+    "skill": "Citer les cinq piliers de l'islam, juger des comportements alimentaires (gaspillage, hygiène) et compléter un verset contre le gaspillage.",
+    "pageType": "exam",
+    "formats": [
+      "texte_a_trous",
+      "production_ecrite",
+      "lecture_comprehension"
+    ],
+    "keywords": [
+      "piliers de l'islam",
+      "gaspillage alimentaire",
+      "manières de table",
+      "Ramadan",
+      "verset coranique"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : partir d'une mise en situation familiale (repas de ramadan avec invités, enfant qui boit dans les verres des autres) pour faire donner un avis, un conseil et réciter un verset à compléter, avec un barème par critère.",
+    "themeGroup": "Les piliers de l'islam"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "correctionStatus": "no_correction_yet",
+  "examScope": "trimester",
+  "examTrimester": 2,
+  "labels": {
+    "pageSubject": "Éducation islamique"
+  },
+  "bookTitle": "Évaluations 2ème année — Toutes matières"
+}

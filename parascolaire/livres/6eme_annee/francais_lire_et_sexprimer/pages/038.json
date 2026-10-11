@@ -1,0 +1,130 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 38,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension : le moineau et la poule (conseils) ; vocabulaire et protection de l'environnement",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2-b",
+      "instruction": "Relève, dans le texte, le détail qui le montre :",
+      "body": "Deux lignes de pointillés pour écrire la réponse. (Le début de la question 2, avec la partie a, est partiellement visible en filigrane et illisible.)",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.6,
+      "id": "francais_lire_et_sexprimer_p038_i1",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Quel est le deuxième conseil du moineau ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p038_i2",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Que fait encore la poule pour vivre très longtemps aujourd'hui ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p038_i3",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "Cherche dans le texte le synonyme des mots soulignés :",
+      "body": "- La poule est restée toute la journée dans son refuge. (mot souligné : refuge)\n- La poule est effrayée. (mot souligné : effrayée)\n- Les moineaux donnent de bons conseils. (mot souligné : bons)\nChaque phrase est suivie d'une ligne de pointillés.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p038_i4",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Que penses-tu du moineau ?",
+      "body": "Deux lignes de pointillés pour la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p038_i5",
+      "topicId": "fr-6-m5",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Complète ce passage avec les mots de la liste :",
+      "body": "Liste : projets – bouteilles – poubelle – quartier – plantes – environnement\n\nQue peut-on faire ?\nNe jetez rien dans la mer, sur les plages, dans les espaces verts ; ni boîtes de conserves, ni ........................, ni sacs en plastique, ni pots de yaourt, mais ramassez-les dans un sac et jetez-les dans la ........................ parce que cela représente un danger pour nous et détruit la beauté de notre ............................ .\nPuisque les ..................... et les arbres purifient l'air, organisez alors des ...................... de plantations dans votre jardin ou dans votre............................Évitez d'arracher les arbres, de casser leurs branches et de couper les fleurs.",
+      "figureDesc": "Liste de mots dans un cadre ovale ; passage à compléter dans un encadré rectangulaire intitulé « Que peut-on faire ? ».",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "francais_lire_et_sexprimer_p038_i6",
+      "topicId": "fr-6-m5",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "fr-6-m5",
+  "topicTitle": "Module 5 : Sauver la nature",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.28
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page propose une compréhension de lecture (le moineau et la poule) suivie d'un exercice de vocabulaire sur la protection de l'environnement (ne pas jeter de déchets), ce qui correspond au Module 5 « Sauver la nature ».",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "correctionPages": [
+    122
+  ],
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de texte et protection de l'environnement",
+    "skill": "Comprendre un texte narratif en relevant des informations, trouver des synonymes et réinvestir le vocabulaire de l'environnement dans un texte à compléter.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "texte_a_trous",
+      "production_ecrite"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "synonymes",
+      "conseils",
+      "moineau et poule",
+      "environnement",
+      "vocabulaire"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une fable animalière à conseils suivie de questions de relevé d'indices, de synonymes et d'un avis personnel, puis un texte à trous sur les gestes écologiques (ne rien jeter, protéger la nature) pour relier lecture et éducation à l'environnement.",
+    "themeGroup": "Eau, énergie et environnement"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

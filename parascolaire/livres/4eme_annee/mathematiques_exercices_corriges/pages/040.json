@@ -1,0 +1,152 @@
+{
+  "book": "mathematiques_exercices_corriges",
+  "page": 40,
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأسبوع 10 – الامتحان الثلاثي الأول (1) : الأعداد إلى 9999، الأطوال (هم، دكم)، التعامد، مسائل على الجمع والضعف",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أ) ابحث عن مجموعة الأعداد المحصورة بين 6 000 و 7 000 والتي يكون رقم آحادها صفرا ورقم عشراتها نصف رقم آحاد آلافها.",
+      "body": "أ) ابحث عن مجموعة الأعداد المحصورة بين 6 000 و 7 000 والتي يكون رقم آحادها صفرا ورقم عشراتها نصف رقم آحاد آلافها.\nب) استعمل الأرقام (3 ، 4 ، 8) لتكوّن عددا من أربعة أرقام يكون رقم آحاده ضعف رقم مئاته ورقم عشراته مساويا لرقم آلافه.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p040_i1",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "ما هي المسافة الفاصلة بين المنزل والمدرسة؟ ما هي المسافة التي يقطعها مهدي علما وأنّه يتوجّه مرّتين في اليوم إلى المدرسة؟",
+      "body": "– ما هي المسافة الفاصلة بين المنزل والمدرسة؟\n– ما هي المسافة التي يقطعها مهدي علما وأنّه يتوجّه مرّتين في اليوم إلى المدرسة ؟",
+      "figureDesc": "رسم لثلاثة مبانٍ على خط واحد: المنزل (يمين)، البلدية (وسط)، المدرسة (يسار). المسافة بين المنزل والبلدية 4 هم و 2 دكم، والمسافة بين البلدية والمدرسة 6 هم ونصف.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p040_i2",
+      "topicId": "math-4-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أرسم المستقيم (ك) العمودي على (س) والمارّ من النقطة \"أ\". أرسم المستقيم (م) العمودي على (ك) والمارّ من النقطة \"أ\".",
+      "body": "أرسم المستقيم (ك) العمودي على (س) والمارّ من النقطة \"أ\"\nأرسم المستقيم (م) العمودي على (ك) والمارّ من النقطة \"أ\"",
+      "figureDesc": "مستقيم مائل (س) ونقطة \"أ\" فوقه على اليسار خارج المستقيم.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "mathematiques_exercices_corriges_p040_i3",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ) ما هو ثمن المشتريات؟ ب) ما هو ثمن بيع الأرنب؟",
+      "body": "باع طفل ريفيّ يوم السّوق الأسبوعيّة بيضا بـ 2700 مي وفرّوجا بـ 3 250 مي وأرنبا.\nاشترى بالمال الذي قبضه أدوات هندسيّة بـ 1350 مي ومجموعة من الكتب ثمنها ضِعف ثمن الأدوات الهندسيّة ومحفظة بـ 5750 مي.\nأ) ما هو ثمن المشتريات؟\nب) ما هو ثمن بيع الأرنب؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.88,
+      "id": "mathematiques_exercices_corriges_p040_i4",
+      "topicId": "math-4-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-4-ch1",
+  "topicTitle": "Période 1 : Nombres à 5 et 6 chiffres, droites et monnaie",
+  "topicConfidence": 0.6,
+  "topicIdPrev": "math-4-ch4",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-4-ch3",
+    "confidence": 0.23
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page, de type évaluation du premier trimestre, porte sur les nombres jusqu'à 9999, les longueurs, les droites perpendiculaires et des problèmes d'addition et de double. Elle couvre donc plusieurs notions et ne correspond que partiellement à la Période 1 (nombres, droites perpendiculaires, monnaie), dont les nombres à 5 et 6 chiffres dépassent ce niveau.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "correctionPages": [
+    118
+  ],
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Révision trimestrielle : nombres jusqu'à 9999, longueurs, perpendiculaires",
+    "skill": "Mobiliser nombres jusqu'à 9999, mesures de longueur, droites perpendiculaires et problèmes additifs ou de double lors d'une évaluation du premier trimestre",
+    "pageType": "exam",
+    "formats": [
+      "calcul",
+      "probleme",
+      "autre"
+    ],
+    "keywords": [
+      "numération 9999",
+      "chiffres des unités et dizaines",
+      "longueurs",
+      "droites perpendiculaires",
+      "problème du double",
+      "monnaie en millimes"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : énigmes de numération avec contraintes sur les chiffres (unités nulles, dizaines moitié des milliers), problème de marché hebdomadaire avec vente, achats et prix double, et tracé de perpendiculaires successives à partir d'un point.",
+    "themeGroup": "Révisions et évaluations"
+  },
+  "quality": {
+    "status": "recheck_pending",
+    "accuracy": 0.85
+  },
+  "correctionStatus": "linked",
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "major",
+        "detail": "Exercice 2 : les données du schéma sont absentes de la transcription (légendes 'المدرسة', 'البلدية', 'المنزل', distances '4 هم و 2 دكم' et '6 هم و نصف')."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Exercice 3 : les éléments du schéma (point « أ », droite « (س) ») ne sont pas mentionnés."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Titre et en-tête de la page non transcrits : « الأسبوع 10 », « الامتحان الثلاثي الأول (1) », numéro de page 36."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 1-ب : « لتكوّن » correspond à l'image (avec shadda), donc correct ; en revanche « 6 000 » et « 7 000 » sont corrects. Aucune faute notable ici."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 3 : « والمارّ » (avec shadda) est ajouté alors que dans l'image le tashkeel n'est pas visible sur ce mot ; « مرّتين » et « يتوجّه » de même, la shadda n'est pas clairement visible dans l'image (« مرّتين » l'est en partie)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "Exercice 4 : « فرّوجا » transcrit avec shadda, visible dans l'image (« فرّوجا »), correct ; « ضِعف » avec kasra visible dans l'image, correct. Transcription globalement fidèle."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 4 : le champ « [4] » initial ne contient que les questions, mais la version complète est correcte ; l'énoncé final de l'exercice 4 est complet, sans texte inventé. Les doublons dans le champ avant « || » sont une redondance de format, pas une erreur de contenu."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "examScope": "trimester",
+  "examTrimester": 1,
+  "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
+}

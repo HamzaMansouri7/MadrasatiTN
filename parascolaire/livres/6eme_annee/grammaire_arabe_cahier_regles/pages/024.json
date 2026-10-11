@@ -1,0 +1,129 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 24,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "تصريف الناقص اليائي في المضارع المنصوب (Conjugaison du verbe défectueux à finale yā' au présent de l'accusatif – cours d'arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة: علامات إعراب المضارع المرفوع المعتل الآخر",
+      "body": "الضمة المقدرة على الواو للثقل: نحن ندعو | الضمة المقدرة على الياء للثقل: هو يمشي | ثبوت النون: أنتم ترضون",
+      "figureDesc": "جدول من ثلاثة أعمدة: علامات إعراب المضارع المرفوع المعتل الآخر مع مثال لكل علامة.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p024_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: تصريف الناقص اليائي في المضارع المنصوب (الأفعال: رمى، لقي، نهى)",
+      "body": "الضمائر / رمى / لقي / نهى\nالمتكلم:\nأنا: لن أرمي / لن ألقى / لن أنهى\nنحن: لن نرمي / لن نلقى / لن ننهى\nالمخاطب:\nأنتَ: لن ترمي / لن تلقى / لن تلهى\nأنتِ: لن ترمي / لن تلقي / لن تنهي\nأنتما: لن ترميا / لن تلقيا / لن تنهيا\nأنتم: لن ترموا / لن تلقوا / لن تنهوا\nأنتن: لن ترمين / لن تلقين / لن تنهين\nالغائب:\nهو: لن يرمي / لن يلقى / لن ينهى\nهي: لن ترمي / لن تلقى / لن تنهى\nهما: لن يرميا / لن يلقيا / لن ينهيا\nهما: لن ترميا / لن تلقيا / لن تنهيا\nهم: لن يرموا / لن يلقوا / لن ينهوا\nهن: لن يرمين / لن يلقين / لن ينهين",
+      "figureDesc": "جدول تصريف: الأعمدة هي الأفعال (رمى، لقي، نهى) والصفوف هي الضمائر مجمعة في المتكلم والمخاطب والغائب.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p024_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الاستنتاجات",
+      "body": "ينصب الفعل الناقص اليائي بالفتحة مع الضمائر: أنا، نحن، أنت، هو، هي.\nوينصب بحذف النون مع الضمائر: أنت، أنتما، أنتم، هما، هم.\nلا يتغير إذا اتصلت به نون النسوة.",
+      "figureDesc": "إطار مستطيل يحتوي على الاستنتاجات.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p024_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.85,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.42
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page traite de la conjugaison du verbe défectueux à finale yā' (رمى، لقي، نهى) au présent de l'accusatif, ce qui correspond à l'Unité 1 d'arabe qui inclut la conjugaison des verbes défectifs.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Verbe défectueux yā'ī au subjonctif",
+    "skill": "Conjuguer les verbes défectueux à finale yā' au présent de l'accusatif (après 'لن') et identifier les marques de l'accusatif.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "verbe défectueux",
+      "finale yā'",
+      "présent accusatif",
+      "conjugaison",
+      "marques d'i'rab",
+      "pronoms personnels"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau de conjugaison par pronom avec trois verbes modèles et la règle de synthèse peuvent inspirer des exercices à trous, des tableaux à compléter ou des classements des marques d'accusatif (fatha ou chute du nūn).",
+    "themeGroup": "Le verbe défectueux"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.93
+  },
+  "audit": {
+    "accuracy": 0.93,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ligne 'أنتَ' (première ligne du مخاطب), colonne نهى : l'image affiche « لن تلهى » ; la transcription la reproduit correctement, donc pas d'erreur. À noter toutefois que l'original contient peut-être une faute (تلهى au lieu de تنهى)."
+      },
+      {
+        "type": "voyelle",
+        "severity": "minor",
+        "detail": "La transcription ajoute des tashkeel (أنتَ، أنتِ) absents de l'image, qui affiche « أنت » sans voyelle pour les deux lignes."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Ligne أنتِ (2e ligne du مخاطب), colonne رمى : l'image donne « لن ترمي », conforme. Colonne لقي : « لن تلقي », conforme."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "En-tête du tableau : l'image indique « الأفعال / الضمائر » avec une cellule diagonale ; la transcription l'aplatit en « الضمائر / رمى / لقي / نهى » et ajoute entre parenthèses « الأفعال: رمى، لقي، نهى », ce qui est une reformulation."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Colonne هما (1re) : l'image montre « لن يرميا / لن يلقيا / لن ينهيا », conforme. Ligne هي : conforme."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Colonne الاستنتاجات : l'image écrit « أنت،أنتما،أنتم،هما،هم » pour la 2e règle ; la transcription est conforme, mais ajoute des deux-points inexistants (« الضمائر: »)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Colonne أنتم / هم : l'image écrit « لن ترموا », « لن تلقوا », « لن تنهوا », « لن يرموا », conforme."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

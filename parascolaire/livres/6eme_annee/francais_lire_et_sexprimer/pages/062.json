@@ -1,0 +1,165 @@
+{
+  "book": "francais_lire_et_sexprimer",
+  "page": 62,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "Lecture - Compréhension (questions sur un texte avec Didier, Alexis et un sanglier ; vocabulaire ; texte à compléter sur le clown Bubu)",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "Pourquoi Didier a-t-il peur ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p062_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "Didier escalade un arbre pour deux raisons. Lesquelles ?",
+      "body": "- La première raison : ........\n- La deuxième raison : ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p062_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "Que demande Didier à Alexis ?",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p062_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "a- Réponds par « oui » ou « non » :\nb- Relève, dans le texte, la phrase qui le montre :",
+      "body": "a- Didier a tué le fameux sanglier. (........)\nb- Deux lignes pointillées pour relever la phrase du texte.",
+      "figureDesc": "Un ovale entoure l'espace de réponse oui/non.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p062_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "Didier attend-il une réponse ? Relève, dans le texte, la phrase qui le montre :",
+      "body": "Deux lignes pointillées pour écrire la réponse.",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p062_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "Cherche, dans le texte, le synonyme des mots suivants :",
+      "body": "- L'inquiétude = ........\n- Dangereux et effrayant = ........\n- Célèbre = ........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.97,
+      "id": "francais_lire_et_sexprimer_p062_i6",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "8",
+      "instruction": "Complète ce passage avec les mots de la liste :",
+      "body": "Liste : bleus – applaudir – nez – large – oreille droite\nBubu a la bouche ........ comme un tiroir. Il a deux carrés ........ autour des yeux et une tomate à la place du ........ .\nBubu tape sur une boîte de conserves avec une cuillère. Pour le faire taire, Zanzi lui donne une gifle, et un jet d'eau sort de son ........ Une autre gifle et l'eau jaillit de son oreille gauche.\nLes spectateurs rient très fort. Ils ........ le clown.",
+      "figureDesc": "Les mots de la liste sont encadrés dans un ovale.",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "francais_lire_et_sexprimer_p062_i7",
+      "topicId": null,
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m1",
+    "confidence": 0.41
+  },
+  "topicSubject": "Français",
+  "topicReason": "La page est un exercice de compréhension de lecture en français (questions sur un texte, synonymes, texte à compléter sur le clown Bubu), mais aucun module ne correspond clairement : les thèmes du texte (peur, sanglier, clown) ne figurent pas dans les modules officiels, et un dialogue pourrait vaguement évoquer fr-6-m3 sans certitude.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Français",
+    "theme": "Compréhension de lecture d'un récit",
+    "skill": "Comprendre un texte narratif en répondant à des questions, relever des phrases, trouver des synonymes et compléter un passage avec le vocabulaire adapté.",
+    "pageType": "exercise",
+    "formats": [
+      "lecture_comprehension",
+      "vrai_faux",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de texte",
+      "synonymes",
+      "relevé de phrases",
+      "vocabulaire",
+      "texte à compléter"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable de questions graduées (cause, justification, oui/non avec preuve tirée du texte, synonymes) suivi d'un texte à trous à partir d'une liste de mots dans un contexte comique (le clown), adaptable à d'autres récits humoristiques.",
+    "themeGroup": "Le texte narratif"
+  },
+  "audit": {
+    "accuracy": 0.95,
+    "errors": [
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "L'en-tête de la page (« Lecture - Compréhension », « Sagesse », « 6ème année de base ») et le pied de page (« Lire et s'exprimer », « 61 ») ne sont pas transcrits ; ce sont des éléments décoratifs ou de navigation, d'où une gravité mineure."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Les descriptions « Deux lignes pointillées pour écrire la réponse » sont des ajouts de description et non du texte imprimé ; elles sont acceptables mais ne figurent pas dans l'image."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Question 5 : la mention « (........) » après « sanglier. » est correcte, mais l'ordre des sous-questions a/b est regroupé dans une même entrée ; le contenu reste fidèle."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.95
+  },
+  "bookTitle": "Français 6ème année — Lire et s'exprimer"
+}

@@ -1,0 +1,130 @@
+{
+  "book": "examens_toutes_matieres",
+  "page": 5,
+  "grade": "3ème Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "اختبار في القراءة والفهم: أسئلة حول نص «السفرة» (أكرم والأم) وجدول إسناد الأعداد",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "3-ج",
+      "instruction": "دَعِّمِ الْجَوَابَ «ب» بِقَرِينَةٍ مِنَ النَّصِّ.",
+      "body": "الْقَرِينَةُ : « .......................................................... »",
+      "figureDesc": "Lignes pointillées pour écrire la qualification tirée du texte",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "examens_toutes_matieres_p005_i1",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أ / مَا هُوَ الْأَمْرُ الَّذِي تَخْشَاهُ الْأُمُّ وَنَبَّهَتْ إِلَيْهِ وَلَدَهَا ؟",
+      "body": "الْجَوَابُ : ..........................................................\nالْقَرِينَةُ : « .......................................................... »\nب / مَاذَا تَفْهَمُ مِنْ ذَلِكَ ؟\nالْجَوَابُ : ..........................................................",
+      "figureDesc": "Lignes pointillées pour les réponses et les indices",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p005_i2",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "5",
+      "instruction": "أَبْحَثُ فِي النَّصِّ عَنْ :",
+      "body": "• مُفْرَدَةٍ مُرَادِفُهَا : الطَّوَارُ = ..........\n• مُفْرَدَةٍ مَعْنَاهَا : حَسَنُ الطَّبْعِ = ..........\n• مُفْرَدَةٍ مَعْنَاهَا : اِبْتَسَمَ = ..........",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p005_i3",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "6",
+      "instruction": "أ / لِمَاذَا أَدْخَلَ أَكْرَمُ يَدَهُ إِلَى جَيْبِهِ؟",
+      "body": "الْجَوَابُ : ..........................................................\nب / مَتَى تَذَكَّرَ أَكْرَمُ ذَلِكَ ؟\nالْجَوَابُ : ..........................................................\nالْقَرِينَةُ : « .......................................................... »",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p005_i4",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "exercise",
+      "number": "7",
+      "instruction": "حَسَبَ رَأْيِكَ ، هَلْ هَذِهِ السَّفْرَةُ سَتَدُومُ مُدَّةً قَصِيرَةً أَمْ مُدَّةً طَوِيلَةً ؟ وَكَيْفَ عَرَفْتَ ذَلِكَ ؟",
+      "body": "ثمانية أسطر منقّطة للإجابة",
+      "figureDesc": "Environ huit lignes pointillées pour la réponse rédigée",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "examens_toutes_matieres_p005_i5",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
+      "body": "المعايير: مَعَايِيرُ الْحَدِّ الْأَدْنَى: مع 1 أ، مع 2 ب، مع 2 ج، مع 2 د، مع 2 م، مع 2 هـ ؛ التَّمَيُّزُ: مع 3.\nمع 1 : الْقِرَاءَةُ الْجَهْرِيَّةُ\n- النُّطْقُ السَّلِيمُ : 2 نُقْطَتَانِ\n- الْاِسْتِرْسَالُ : 2 نُقْطَتَانِ (مقطوع جزئيا)",
+      "figureDesc": "Tableau de notation avec colonnes des critères (مع 1 أ، مع 2 ب، ج، د، م، هـ، مع 3) ; marges avec cases de notation et barème (0,5 ; 1 ...) partiellement coupées ; filigrane MOURAJAA.COM",
+      "answer": null,
+      "confidence": 0.7,
+      "id": "examens_toutes_matieres_p005_i6",
+      "topicId": "ar-3-u4",
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-3-u4",
+  "topicTitle": "Unité 4 : Collecte d'indices et justification",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "ar-3-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-3-p1",
+    "confidence": 0.45
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une évaluation de compréhension écrite dont les questions demandent de justifier les réponses par un indice du texte (القرينة), ce qui correspond à l'unité 4 « Collecte d'indices et justification »; elle comporte aussi une grille de notation, d'où une confiance un peu réduite.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Compréhension de lecture d'un récit",
+    "skill": "Comprendre un texte narratif en justifiant ses réponses par des indices du texte, en trouvant synonymes et définitions, et en donnant son opinion argumentée.",
+    "pageType": "mixed",
+    "formats": [
+      "lecture_comprehension",
+      "production_ecrite",
+      "autre"
+    ],
+    "keywords": [
+      "compréhension de l'écrit",
+      "indice textuel",
+      "synonyme",
+      "récit de sortie",
+      "grille de notation",
+      "lecture à haute voix"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Enchaînement réutilisable de questions de compréhension (réponse puis indice cité, recherche de synonymes et de définitions, déduction implicite, opinion argumentée sur la suite d'une sortie mère-enfant) accompagné d'une grille d'attribution des points par critères minimaux et de distinction.",
+    "themeGroup": "Compréhension de l'écrit : le texte narratif"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Examens 3ème année — Toutes matières"
+}

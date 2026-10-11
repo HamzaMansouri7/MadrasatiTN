@@ -1,0 +1,190 @@
+{
+  "book": "eveil_scientifique_cours_exercices",
+  "page": 48,
+  "grade": "6ème Année",
+  "subject": "Éveil Scientifique",
+  "topicGuess": "La respiration chez l'homme et la combustion : corrigés des exercices « Éveil scientifique » (28 à 34)",
+  "items": [
+    {
+      "kind": "answer",
+      "number": "28",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "- صالح على حقّ لأنّه أزال عاملا من العوامل الموجودة في الرّسم وهو الهواء (منع وصول الأكسجين).\n- لا ينزل الرّجل داخل الخزّان لانعدام الأكسجين داخله.\n- تنطفئ الشمعة في النّاقوس الأوّل لانتهاء الأكسجين الموجود فيه.\nنلاحظ في النّاقوس الثّاني أنّ النبتة الخضراء، وحدها قادرة على القيام بعمليّة معاكسة للتنفّس أي تأخذ غاز ثاني أكسيد الكربون وتطرح الأكسجين وذلك في الضّوء الطّبيعيّ ولا تنطفئ إلّا إذا كانت كمّيّة الأكسجين الذي تطرحه النبتة لا تتناسب مع كمّيّة الأكسجين الذي تمتصّه الشّمعة.",
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p048_i1",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "29",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "- يرتفع سائل المحرار.\n- يصدر عن النّفَخ بخار الماء على المرآة.\n- يعكّر هواء الزّفير ماء الجير.\n- يحتوي هواء الزّفير على ثاني أكسيد الكربون، الحرارة وبخار الماء.\n- أثناء عمليّة التنفّس يدخل الهواء إلى الرّئتين ثمّ يخرج ويمرّ جزء من الأكسجين الموجود في هواء الشّهيق إلى الدّم الذي يقوم بتوزيعه على جميع أعضاء الجسم.",
+      "confidence": 0.8,
+      "id": "eveil_scientifique_cours_exercices_p048_i2",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "30",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "أ) في مستوى الرّئتين تتمّ عمليّة التّبادل الغازي. في مستوى الخليّة تتمّ عمليّة الاحتراق.\nب) الجهاز الدّوري هو الذي يقوم بنقل وتوزيع هذه الغازات ويشكّل الدّم أحد مكوّنات هذا الجهاز.\nج) يكون الدّم عندما يتّحد بالأكسجين أحمر فاتحا (فاتح).\nد) يكون الدّم قاتم اللّون عند اتّحاده بثاني أكسيد الكربون.\nـ1: هواء المحيط يدخل إلى الرّئتين غنيّا بالأكسجين ويخرج منهما محمّلا بغاز ثاني أكسيد الكربون وهكذا يتمّ في الرّئتين تبادل الغازات بين الدّم وهواء المحيط.\nـ2: عند التأمّل في الجدول نلاحظ الحاجة إلى تزويد الجسم بالأكسجين وتقليصه من ثاني أكسيد الكربون. كما يبيّن تغيّر تركيبة الهواء عند دخوله في الرّئتين ثمّ خروجه منهما.",
+      "confidence": 0.78,
+      "id": "eveil_scientifique_cours_exercices_p048_i3",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "31",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "ب- ينقل الدّم إلى الحويصلة الرّئويّة ثاني أكسيد الكربون ليخلّص منها الجسم عند الزّفير ثمّ ينقل الأكسجين من الحويصلة الرّئويّة إلى الجسم عند الشّهيق.\nأ) الأكسجين غاز الحياة والأكسجين ضروريّ لعمليّة الاحتراق والأكسجين ضروريّ لعمليّة حرق المواد الغذائيّة التي تمّ هضمها، يقوم الدّم بامتصاصها وذلك لإنتاج الحرارة (الطاقة) اللّازمة للجسم ومساعدته على القيام بالعمل والحركة.\nب) ينتج عن حرق المواد الغذائيّة داخل الجسم غاز ثاني أكسيد الكربون وبخار الماء بالإضافة إلى الحرارة اللّازمة للجسم. ويخرج ثاني أكسيد الكربون وبخار الماء مع هواء الزّفير، ويمتصّ الدّم غاز الأكسجين من هواء الشّهيق.",
+      "confidence": 0.78,
+      "id": "eveil_scientifique_cours_exercices_p048_i4",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "32",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "أ) عدد الحركات التنفّسيّة في ساعة واحدة: 20 x 60 = 1 200\nعدد الحركات التنفّسيّة في يوم كامل: 24 x 1 200 = 28 800\nحجم الهواء بالّلتر: 0,5 x 28 800 = 14 400\nب) عدد الحركات التنفّسيّة في السّاعة الواحدة: 16 x 60 = 960\nعدد الحركات التنفّسيّة في يوم كامل: 24 x 960 = 23 040\nحجم الهواء بالّلتر: 0,5 x 23 040 = 11 520\nحجم الأكسجين بالّلتر: 11 520 على 5 = 2 304\nأ) الأكسجين ضروريّ لعمليّة الاحتراق: صواب\nخلايا أعضاء الجسم تمتصّ ثاني أكسيد الكربون: خطأ\nالأكسجين ضروريّ لعمليّة حرق المواد: صواب\nيحترق الوقود في السيّارة لتعطي الحرارة: صواب\nب) مصدر الطّاقة بالنّسبة للإنسان هو الغذاء.\n- مصدر الطّاقة بالنّسبة للسيّارة هو البنزين.\nفي كلا الحالتين الأكسجين ضروريّ لعمليّة الاحتراق.",
+      "confidence": 0.75,
+      "id": "eveil_scientifique_cours_exercices_p048_i5",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "33",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "- الشّوائب: النيتروجين، أكسيد الفحم، الغاز الفحمي.\n- اسوداد الصّحن النّاتج عن هباب الفحم لأنّ الاحتراق غير تامّ.\n- ظهر على جدار الكأس تقطيرات ماء، وهو دلالة على وجود بخار الماء.",
+      "confidence": 0.75,
+      "id": "eveil_scientifique_cours_exercices_p048_i6",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "answer",
+      "number": "34",
+      "instruction": "إيقاظ علمي السنة السادسة الصفحة :",
+      "body": "",
+      "figureDesc": "",
+      "answer": "- الغاز الذي يحدثه احتراق الفتيلة هو ثاني أكسيد الكربون النّاتج عن الاحتراق.\n- تتمثّل أهميّة الفتحات الموجودة أسفل تاج المصباح النّفطيّ في تمكينه من التّزوّد بالهواء الضّروريّ للاحتراق.",
+      "confidence": 0.78,
+      "id": "eveil_scientifique_cours_exercices_p048_i7",
+      "topicId": "sci-6-u2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "sci-6-u2",
+  "topicTitle": "Unité 2 : L'air, la respiration et la combustion",
+  "topicConfidence": 0.82,
+  "topicIdPrev": "sci-6-u2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "sci-6-u6",
+    "confidence": 0.99
+  },
+  "topicSubject": "Éveil Scientifique",
+  "topicReason": "Les pages portent sur les corrigés d'exercices d'Éveil scientifique de 6ème, et le sujet deviné (respiration chez l'homme et combustion) correspond à l'unité 2 sur l'air, la respiration et la combustion. Le contenu OCR ne contient que les en-têtes de page, donc la certitude reste limitée.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Éveil scientifique",
+    "theme": "La respiration et la combustion",
+    "skill": "Relier la respiration chez l'homme à la combustion en s'appuyant sur des expériences, des schémas et des explications.",
+    "pageType": "correction",
+    "formats": [
+      "qcm",
+      "vrai_faux",
+      "schema_tableau",
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "respiration",
+      "combustion",
+      "oxygène",
+      "dioxyde de carbone",
+      "appareil respiratoire",
+      "expérience"
+    ],
+    "ideaValue": "low",
+    "ideaNote": "Le contenu n'est qu'une série d'en-têtes de corrigés (pages 28 à 34), sans énoncés ni réponses. On peut seulement en retenir le découpage en exercices d'éveil scientifique sur la respiration et la combustion, par exemple comparer une bougie qui brûle à la respiration.",
+    "themeGroup": "La combustion"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.85
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "chiffre",
+        "severity": "major",
+        "detail": "Section 32 : « 0,5 x 23 040 = 11 520 » ; l'image affiche « 1 1520 » (probable erreur de scan). La transcription a corrigé la valeur au lieu de la reproduire telle quelle."
+      },
+      {
+        "type": "chiffre",
+        "severity": "minor",
+        "detail": "Section 32 : « 0,5 x 28 800 = 14 400 » est correct. « 1 200 » est conforme."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Le marqueur « réponse: » est ajouté dans chaque section, alors qu'il n'apparaît pas sur la page. Les « || || » sont aussi ajoutés."
+      },
+      {
+        "type": "ordre",
+        "severity": "major",
+        "detail": "Section 31 : l'image présente d'abord « ب- ينقل الدم... » puis « ا) الأكسجين غاز الحياة... », puis « ب) ينتج... ». L'ordre est conservé, mais la lettre « أ) » est écrite sans la précision que l'image donne (« ا) »). L'ordre des colonnes de la page (28-30 à droite, 31-34 à gauche) n'est pas respecté strictement."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 31 : « الأكسجين ضروريّ لعمليّة الاحتراق والأكسجين ضروريّ لعمليّة حرق » ; l'image donne « الاحتراق » suivi de « والأكسجين ضروري لعمليّة حرق المواد الغذائية التي تمّ هضمها » : correct. Mais « يقوم الدّم » : l'image donne « وقام الدم بامتصاصها » ; le mot est modifié."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 29 : « يصدر عن النّفَخ » ; l'image donne « يصدر عن النفخ ». Le tashkeel « النّفَخ » est ajouté."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 30 : les marqueurs « ـ1 » et « ـ2 » sont rendus dans l'image par « تـ1 » / « تـ2 » (ou similaire) ; la transcription les modifie."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Section 33 : « اسوداد » ; l'image donne « اسوداد » avec les puces. « الشّوائب » : l'image donne « الشوائب »."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "minor_issues"
+  },
+  "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
+}

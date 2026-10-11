@@ -1,0 +1,104 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 57,
+  "grade": "1ère Année",
+  "subject": "الرياضيات",
+  "topicGuess": "أَكْتَشِفُ الْعَدَدَ 10",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أَكْتُبُ مَجْمُوعَ الْأَعْدَادِ التَّالِيَةِ :",
+      "body": "1 + 8 = ........\n3 + 6 = ........\n4 + 5 = ........\n4 + 4 = ........\n0 + 2 = ........\n1 + 3 = ........\n2 + 7 = ........\n3 + 3 = ........\nقَطَفَتْ زَيْنَبُ 5 تُفَّاحَاتٍ وَقَطَفَتْ رَبَابُ 3 تُفَّاحَاتٍ. كَمْ قَطَفَتْ الْبِنْتَانِ فِي الْجُمْلَةِ ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p057_i1",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أَرْبِطُ بِمَا يُنَاسِبُ.",
+      "body": "الرَّبْطُ بِالْعَدَدِ 10 :\n- مَجْمُوعَةٌ تَحْتَوِي عَلَى قِطَعٍ نَقْدِيَّةٍ : (5، 2، 2، 2)\n- مَجْمُوعَةٌ تَحْتَوِي عَلَى قِطَعٍ نَقْدِيَّةٍ : (1، 5، 2، 2)\n- مَجْمُوعَةٌ تَحْتَوِي عَلَى قِطَعٍ نَقْدِيَّةٍ : (10، 1، 1، 1، 2، 2)",
+      "figureDesc": "ثلاث مجموعات من القطع النقدية برسم دائري للربط بالعدد 10 داخل دائرة حمراء أسفلها",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "evaluations_maths_arabe_p057_i2",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أُتِمُّ بِمَا يُنَاسِبُ لِأَحْصُلَ عَلَى الْعَدَدِ 10 :",
+      "body": ".... + 4\n.... + 10\n.... + 1\n7 + ....\n.... + 3 + 2\n6 + 2 + ....\n.... + 8\n.... + 5",
+      "figureDesc": "مخطط شعاعي في وسطه العدد 10 ومحاط بثمانية أطر لعمليات جمع ينقصها حدّ للحصول على المجموع 10",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p057_i3",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "تَجَاوَزَ عَدَّاءٌ 3 مَرَاحِلَ ثُمَّ 4 مَرَاحِلَ. مَا هُوَ عَدَدُ الْمَرَاحِلِ الْمُتَبَقِّيَةِ لِيَتَجَاوَزَ الْعَدَّاءُ 10 مَرَاحِلَ فِي الْجُمْلَةِ ؟",
+      "body": "تَجَاوَزَ عَدَّاءٌ 3 مَرَاحِلَ ثُمَّ 4 مَرَاحِلَ.\n• مَا هُوَ عَدَدُ الْمَرَاحِلِ الْمُتَبَقِّيَةِ لِيَتَجَاوَزَ الْعَدَّاءُ 10 مَرَاحِلَ فِي الْجُمْلَةِ ؟",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p057_i4",
+      "topicId": "math-1-p3",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "topicId": "math-1-p3",
+  "topicTitle": "Période 3 : Le nombre 10, notion d'addition et formes géométriques",
+  "topicConfidence": 0.95,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-1-p3",
+    "confidence": 0.56
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur la découverte du nombre 10 : compléments à 10, sommes d'addition et problèmes additifs, ce qui correspond à la Période 3 (Le nombre 10, notion d'addition).",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Décomposition et addition du nombre 10",
+    "skill": "Calculer des sommes simples et composer le nombre 10 par addition de plusieurs termes, y compris en situation de problème.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "appariement",
+      "texte_a_trous",
+      "probleme"
+    ],
+    "keywords": [
+      "nombre 10",
+      "addition",
+      "compléments à 10",
+      "décomposition",
+      "problème additif",
+      "pièces de monnaie"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : relier des collections de pièces de monnaie au total 10, compléter des additions à trous pour atteindre 10, et problèmes additifs en contexte (cueillette de pommes, étapes d'une course) avec recherche du complément.",
+    "themeGroup": "Décomposition des nombres jusqu'à 10"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Mathématiques"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}

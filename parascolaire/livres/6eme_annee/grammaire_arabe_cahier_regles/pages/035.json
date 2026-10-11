@@ -1,0 +1,101 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 35,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الدرس السادس: الجملة الاسمية – تقديم الخبر على اسم الناسخ – النواسخ الحرفية (إنّ وأخواتها)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "النواسخ الحرفية هي: إن أن كأن لكن لأن ليت لعل\nتدخل الواحدة منها على الجملة الاسمية فيصير المبتدأ اسما لها منصوبا و الخبر خبرا لها مرفوعا\nالبحر هادئ     إن البحر هادئ",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p035_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس",
+      "body": "يتقدم خبر الناسخ على اسم الناسخ إذا كان اسم الناسخ نكرة و الخبر جار و مجرور\nكما يتقدم خبر الناسخ على اسم الناسخ إذا كان اسم الناسخ نكرة و الخبر ظرفا مضافا و مضاف اليه\nإذا تقدم الخبر على اسم الناسخ الفعلي يرد مرفوعا",
+      "figureDesc": "جدول من 4 أعمدة وسطرين: السطر الأول أمثلة جمل اسمية (في التلقيح وقاية / أمامي حاجز / في البيت صاحبه / لا اله إلا الله)، والسطر الثاني نفس الأمثلة بعد دخول الناسخ (الناسخ بخط غليظ).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p035_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أمثلة (جدول)",
+      "body": "في التلقيح وقاية ← إنّ في التلقيح وقاية\nأمامي حاجز ← لعلّ أمامي حاجزا\nفي البيت صاحبه ← كأنّ في البيت صاحبه\nلا اله إلا الله ← أشهد أنْ لا اله إلا الله",
+      "figureDesc": "جدول أمثلة",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p035_i3",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أضف إلى معلوماتك: معاني النواسخ الحرفية",
+      "body": "إن: التوكيد\nأن: التوكيد و ربط ما قبلها بما بعدها\nكأن: التشبيه\nلأن: التعليل\nلكن: الاستدراك و التوكيد\nلعل: الترجي أو توقع الأمر المحبوب أو المكروه\nليت: التمني",
+      "figureDesc": "جدول من 7 أعمدة: الناسخ في السطر الأول ومعناه في السطر الثاني.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p035_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m6",
+    "confidence": 0.3
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une leçon de grammaire arabe (inna et ses sœurs, antéposition du khabar), matière arabe, mais aucun des chapitres officiels, centrés sur la narration, ne couvre clairement ce point de grammaire, ce qui impose de ne choisir aucun chapitre.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Les particules de négation et d'affirmation (إنّ et ses sœurs)",
+    "skill": "Identifier les particules nominales (إنّ et ses sœurs), accorder le nom et le prédicat, et reconnaître quand le prédicat est antéposé au nom.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau",
+      "autre"
+    ],
+    "keywords": [
+      "إنّ وأخواتها",
+      "phrase nominale",
+      "inversion du prédicat",
+      "cas grammatical",
+      "sens des particules"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Le tableau de transformation phrase nominale vers phrase avec particule, avec cas d'antéposition du prédicat (groupe prépositionnel ou complément de lieu), peut inspirer des exercices de transformation, d'appariement particule-sens et de complétion de phrases.",
+    "themeGroup": "Inna et ses sœurs"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

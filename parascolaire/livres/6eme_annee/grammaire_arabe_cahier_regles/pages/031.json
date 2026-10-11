@@ -1,0 +1,127 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 31,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "الجملة الاسمية: تقديم الخبر على المبتدأ (Arabe, et non Français : la page est une leçon de grammaire arabe)",
+  "items": [
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "المراجعة",
+      "body": "الخبر هو المكون الأساسي الثاني في الجملة الاسمية و حكمه الرفع\nيرد الخبر مفردة أو مركبا",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.95,
+      "id": "grammaire_arabe_cahier_regles_p031_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أنواع الخبر مفردة",
+      "body": "اسم فاعل: هو ناشط | اسم مفعول: أنت معروف | صفة مشبهة: أنا فرح | اسم جامد: هذا قلم | اسم علم: هذه ليلى | الأسماء الخمسة: هو ذو علم | اسم إشارة: هي هذه | ضمير: المنتصر أنا | فعل: التلميذ مرض",
+      "figureDesc": "جدول من تسعة أعمدة وسطرين: السطر الأول أنواع الخبر المفرد والسطر الثاني أمثلة (الكلمة الخبر مكتوبة بخط غليظ).",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p031_i2",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أنواع الخبر مركبا",
+      "body": "نعت و منعوت: هذه فتاة ذكية | مضاف و مضاف اليه: هذا ابن عمي | معطوف و معطوف عليه: هذان هما سامي و قيس | جار و مجرور: المدير في الساحة | موصول و صلته: الأفضل من يفوز | جملة فعلية: الملاكم سدد بدقة | جملة اسمية: الصداقة حب و وفاء",
+      "figureDesc": "جدول من سبعة أعمدة وسطرين: أنواع الخبر المركب وأمثلة عليها.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p031_i3",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "الدرس: تقديم الخبر على المبتدأ",
+      "body": "إذا ورد المبتدأ معرفا جاء قبل الخبر و إذا ورد المبتدأ نكرة يكون بعد الخبر\nالعصفور في القفص      في القفص عصفور",
+      "figureDesc": "",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p031_i4",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "من أهم حالات تقديم الخبر على المبتدأ",
+      "body": "إذا كان جارا و مجرورا و كان المبتدأ نكرة: في الإعادة إفادة | إذا كان ظرفا مضافا و مضافا اليه و كان المبتدأ نكرة: فوق الطاولة كتاب",
+      "figureDesc": "جدول من عمودين وسطرين: الحالة ثم المثال.",
+      "answer": null,
+      "confidence": 0.9,
+      "id": "grammaire_arabe_cahier_regles_p031_i5",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    },
+    {
+      "kind": "lesson",
+      "number": "",
+      "instruction": "أضف إلى معلوماتك: كما يتقدم الخبر على المبتدأ إذا كان",
+      "body": "يعود عليه ضمير متصل بمبتدأ: في المغازة صاحبها | المبتدأ محصورا: لا اله إلا الله | المبتدأ جملة: عندي أنت فائز | اسم اشارة للمكان: هنا تونس | اسم استفهام: أين أنت ؟",
+      "figureDesc": "جدول من خمسة أعمدة وسطرين: الحالة والمثال.",
+      "answer": null,
+      "confidence": 0.85,
+      "id": "grammaire_arabe_cahier_regles_p031_i6",
+      "topicId": null,
+      "formatGuess": "matching",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.4,
+  "topicIdPrev": "fr-6-m1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m6",
+    "confidence": 0.27
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est une leçon de grammaire arabe (phrase nominale, antéposition du prédicat), mais les chapitres officiels d'arabe de 6ème portent sur la narration, la description, le dialogue, l'explication et la prescription, donc aucun ne correspond clairement.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Phrase nominale : antéposition du prédicat",
+    "skill": "Identifier les types de prédicat (simple ou composé) et reconnaître les cas où le prédicat précède le sujet dans la phrase nominale.",
+    "pageType": "lesson",
+    "formats": [
+      "schema_tableau"
+    ],
+    "keywords": [
+      "phrase nominale",
+      "prédicat",
+      "sujet",
+      "antéposition",
+      "grammaire arabe",
+      "sujet indéfini"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Les tableaux de types de prédicat avec exemples courts et la paire de phrases (sujet défini ou indéfini) se prêtent à des exercices de classement, de transformation de phrases et de repérage de l'ordre sujet/prédicat.",
+    "themeGroup": "La phrase nominale: le prédicat"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

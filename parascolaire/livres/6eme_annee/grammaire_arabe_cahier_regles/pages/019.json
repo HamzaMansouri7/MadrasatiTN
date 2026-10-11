@@ -1,0 +1,114 @@
+{
+  "book": "grammaire_arabe_cahier_regles",
+  "page": 19,
+  "grade": "6ème Année",
+  "subject": "Français",
+  "topicGuess": "قواعد اللغة العربية: الإسناد وتصريف الفعل الناسخ (كان) وتحويل الضمائر (المفرد/الجمع، المتكلم/الغائب) — التمارين",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "1",
+      "instruction": "أسند الجملة التالية إلى ما هو مسطر",
+      "body": "دخلت البيت فإذا جدي يتلو القرآن وقلبه يهفو إلى بيت الله الحرام\nفإذا جدتي\nفإذا جدي وجدتي",
+      "figureDesc": "Encadré rectangulaire contenant la consigne, la phrase d'appui et deux amorces à compléter (فإذا جدتي / فإذا جدي وجدتي). Le texte « جدي » est souligné/en évidence dans l'original.",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p019_i1",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "2",
+      "instruction": "أستعين بصيغة تصريف الناسخ وأكمل",
+      "body": "كانت تعدو بالعصفور إلى حيث أخيها وتدعوه إلى رؤيته\nكنت\nكنتما",
+      "figureDesc": "Encadré rectangulaire avec la phrase d'appui et deux amorces à compléter (كنت / كنتما).",
+      "answer": null,
+      "confidence": 0.93,
+      "id": "grammaire_arabe_cahier_regles_p019_i2",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "3",
+      "instruction": "أعوض أختي بـ إخواتي وأعيد كتابة الجملة",
+      "body": "أحب أختي التي تطهو الطعام بفن وتحنو علينا وكأنها أم",
+      "figureDesc": "Encadré rectangulaire avec un espace vide pour la réécriture.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p019_i3",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    },
+    {
+      "kind": "exercise",
+      "number": "4",
+      "instruction": "أعوض المتكلم بجمع الغائبين ثم بجمع المتكلمين",
+      "body": "قسوت على صديقي عندما أضاع قصتي ثم عفوت عنه حبّا فيه",
+      "figureDesc": "Encadré rectangulaire avec un espace vide pour la réponse.",
+      "answer": null,
+      "confidence": 0.92,
+      "id": "grammaire_arabe_cahier_regles_p019_i4",
+      "topicId": "ar-6-ch1",
+      "formatGuess": "free",
+      "difficultyGuess": "medium"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "ar-6-ch1",
+  "topicTitle": "Unité 1 : Structure et composantes de la narration",
+  "topicConfidence": 0.72,
+  "topicIdPrev": "fr-6-m3",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "fr-6-m3",
+    "confidence": 0.41
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "Les exercices portent sur l'attribution (الإسناد), la conjugaison du verbe défectif « كان » et le changement de pronoms, ce qui correspond à la conjugaison des verbes défectifs de l'Unité 1 (Trimestre 1) ; le lien avec les autres unités narratives reste indirect.",
+  "linkFlags": [
+    "uncertain_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Conjugaison et transformation des pronoms",
+    "skill": "Adapter une phrase en changeant le sujet ou le pronom (singulier/pluriel, locuteur/absent) et conjuguer le verbe «كان» en conséquence.",
+    "pageType": "exercise",
+    "formats": [
+      "texte_a_trous",
+      "autre"
+    ],
+    "keywords": [
+      "accord sujet-verbe",
+      "verbe كان",
+      "pronoms personnels",
+      "singulier et pluriel",
+      "transformation de phrases"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : consignes de transformation de phrases (changer le sujet, passer au pluriel, passer de la 1re à la 3e personne) à partir de petites phrases au contexte familial, et complétion avec la forme conjuguée adaptée du verbe «كان».",
+    "themeGroup": "Conjugaison: pronoms et suffixes"
+  },
+  "audit": {
+    "accuracy": 0.97,
+    "errors": [
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 2 : l'image montre \"كانت تعدو بالعصفور إلى حيث أخيها\" ; la transcription est identique, donc pas d'erreur. Seule différence possible : \"أستعين\" (همزة وصل) transcrit correctement. Aucune faute de mot réelle détectée."
+      }
+    ],
+    "missingContent": false,
+    "verdict": "ok"
+  },
+  "quality": {
+    "status": "sampled_ok",
+    "accuracy": 0.97
+  },
+  "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
+}

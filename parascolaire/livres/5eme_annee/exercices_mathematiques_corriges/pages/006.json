@@ -1,0 +1,250 @@
+{
+  "book": "exercices_mathematiques_corriges",
+  "page": 6,
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "topicGuess": "الأعداد العشرية: المقارنة والترتيب والحصر بين عددين طبيعيين متتاليين",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "التاسع",
+      "instruction": "رتب الأعداد التالية ترتيبا تصاعديا :",
+      "body": "0.78 - 0.30 - 0.89 - 0.115 - 0.9",
+      "figureDesc": "",
+      "answer": "0.115 < 0.30 < 0.78 < 0.89 < 0.9",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "exercices_mathematiques_corriges_p006_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "العاشر",
+      "instruction": "أكمل بالرمز المناسب ( > ، < ، = ) :",
+      "body": "17.06 ... 17.6 / 25.135 ... 25.2 / 7.99 ... 7.899 / 0.9 ... 0.900",
+      "figureDesc": "",
+      "answer": "17.06 < 17.6 / 25.135 < 25.2 / 7.99 > 7.899 / 0.9 = 0.900",
+      "topicId": "math-5-ch2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "id": "exercices_mathematiques_corriges_p006_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "الحادي عشر",
+      "instruction": "1) رتب الأطوال ترتيبا تنازليا 2) من الأطول من بين هؤلاء الأطفال ؟",
+      "body": "طول أميرة 1.35 m وطول أحمد 1.60 m وطول سليم 1.498 m",
+      "figureDesc": "",
+      "answer": "1.35 m > 1.498 m > 1.60 m ؛ أحمد هو الأطول",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "exercices_mathematiques_corriges_p006_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "الثاني عشر",
+      "instruction": "أحصر كل عدد عشري بين عددين طبيعيين متتاليين",
+      "body": "",
+      "figureDesc": "",
+      "answer": "0 < 0.38 < 1 ، 13 < 13.95 < 14 ، 105 < 105.6 < 106 ، 3545 < 3545.86 < 3546",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "exercices_mathematiques_corriges_p006_i4"
+    }
+  ],
+  "ocrModel": "claude-sonnet-5-5",
+  "topicId": "math-5-ch2",
+  "topicTitle": "Période 2 : Nombres décimaux, addition/soustraction et temps",
+  "topicConfidence": 0.8,
+  "topicIdPrev": "math-5-ch2",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "math-5-ch2",
+    "confidence": 0.57
+  },
+  "topicSubject": "Mathématiques",
+  "topicReason": "La page porte sur les nombres décimaux (comparaison, rangement, encadrement entre deux entiers consécutifs), ce qui relève de la Période 2 « Nombres décimaux » du Trimestre 1, même si ce chapitre est surtout décrit par les opérations et le temps.",
+  "linkFlags": [],
+  "linkStatus": "clean",
+  "selfContained": true,
+  "tags": {
+    "subject": "Mathématiques",
+    "theme": "Nombres décimaux : comparaison, rangement, encadrement",
+    "skill": "Comparer et ranger des nombres décimaux, puis les encadrer entre deux entiers consécutifs.",
+    "pageType": "exercise",
+    "formats": [
+      "calcul",
+      "probleme"
+    ],
+    "keywords": [
+      "nombres décimaux",
+      "comparaison",
+      "rangement",
+      "ordre croissant et décroissant",
+      "encadrement",
+      "entiers consécutifs"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Séries d'exercices graduées : ranger des décimaux, compléter avec >, < ou =, comparer des tailles d'enfants (contexte concret) et encadrer entre deux entiers. Les pièges visés (0.9 = 0.900, 7.99 contre 7.899) sont réutilisables.",
+    "themeGroup": "Nombres décimaux : notions et comparaison"
+  },
+  "audit": {
+    "accuracy": 0.85,
+    "errors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 11, réponse: la transcription donne '1.60 m > 1.498 m > 1.35 m' puis ajoute une note disant que la page est écrite à l'envers. L'image montre '1.35 m › 1.498 m › 1.60 m' (signe écrit tel quel). La version corrigée est inventée et la remarque de l'annotateur n'est pas dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "minor",
+        "detail": "Exercice 12: la ligne 'الأعداد: 0.38 ، 13.95 ، 105.6 ، 3545.86' n'existe pas comme énoncé dans l'image. Ces nombres apparaissent seulement dans la réponse."
+      },
+      {
+        "type": "manquant",
+        "severity": "minor",
+        "detail": "Signature 'الأستاذ هاشمي زروال' en bas de page absente. L'en-tête et le pied de page (EDUSET.TN, date 22/12/2024) sont aussi omis."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Exercice 11: 'طول أحمد 1.60 m' et 'طول سليم 1.498 m' sont corrects, mais l'ordre de lecture des phrases est modifié (la ligne de Salim est séparée dans l'image)."
+      },
+      {
+        "type": "mot",
+        "severity": "minor",
+        "detail": "Le titre de l'exercice 10 contient '( › ، ‹ ، = )', ce que la transcription reproduit ('> ، < ، =') sans l'indiquer. Les symboles ‹ › de l'image sont rendus correctement en < >, ce qui est acceptable."
+      }
+    ],
+    "missingContent": true,
+    "verdict": "needs_fix"
+  },
+  "audit2": {
+    "accuracy": 0.85,
+    "verdict": "needs_fix",
+    "confirmedErrors": [
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 11, réponse : la transcription met '1.60 m > 1.498 m > 1.35 m' et ajoute une note disant que le signe est écrit à l'envers. L'image montre seulement '1.35 m › 1.498 m › 1.60 m' puis 'أحمد هو الأطول'. La version corrigée et la remarque ne figurent pas dans l'image."
+      },
+      {
+        "type": "invente",
+        "severity": "major",
+        "detail": "Exercice 12 : le corps 'الأعداد: 0.38 ، 13.95 ، 105.6 ، 3545.86' est inventé. L'énoncé de l'image ne contient que la consigne ; ces nombres n'apparaissent que dans la réponse (en rouge)."
+      }
+    ]
+  },
+  "itemsCorrected": [
+    {
+      "kind": "exercise",
+      "number": "التاسع",
+      "instruction": "رتب الأعداد التالية ترتيبا تصاعديا :",
+      "body": "0.78 - 0.30 - 0.89 - 0.115 - 0.9",
+      "figureDesc": "",
+      "answer": "0.115 < 0.30 < 0.78 < 0.89 < 0.9",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "exercices_math_5eme_corriges_p006_i1"
+    },
+    {
+      "kind": "exercise",
+      "number": "العاشر",
+      "instruction": "أكمل بالرمز المناسب ( > ، < ، = ) :",
+      "body": "17.06 ... 17.6 / 25.135 ... 25.2 / 7.99 ... 7.899 / 0.9 ... 0.900",
+      "figureDesc": "",
+      "answer": "17.06 < 17.6 / 25.135 < 25.2 / 7.99 > 7.899 / 0.9 = 0.900",
+      "topicId": "math-5-ch2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard",
+      "id": "exercices_math_5eme_corriges_p006_i2"
+    },
+    {
+      "kind": "exercise",
+      "number": "الحادي عشر",
+      "instruction": "1) رتب الأطوال ترتيبا تنازليا 2) من الأطول من بين هؤلاء الأطفال ؟",
+      "body": "طول أميرة 1.35 m وطول أحمد 1.60 m وطول سليم 1.498 m",
+      "figureDesc": "",
+      "answer": "1.35 m > 1.498 m > 1.60 m ؛ أحمد هو الأطول",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "exercices_math_5eme_corriges_p006_i3"
+    },
+    {
+      "kind": "exercise",
+      "number": "الثاني عشر",
+      "instruction": "أحصر كل عدد عشري بين عددين طبيعيين متتاليين",
+      "body": "",
+      "figureDesc": "",
+      "answer": "0 < 0.38 < 1 ، 13 < 13.95 < 14 ، 105 < 105.6 < 106 ، 3545 < 3545.86 < 3546",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard",
+      "id": "exercices_math_5eme_corriges_p006_i4"
+    }
+  ],
+  "itemsOcr1": [
+    {
+      "kind": "exercise",
+      "number": "التاسع",
+      "instruction": "رتب الأعداد التالية ترتيبا تصاعديا :",
+      "body": "0.78 - 0.30 - 0.89 - 0.115 - 0.9",
+      "figureDesc": "",
+      "answer": "0.115 < 0.30 < 0.78 < 0.89 < 0.9",
+      "confidence": 0.95,
+      "id": "exercices_math_5eme_corriges_p006_i1",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "العاشر",
+      "instruction": "أكمل بالرمز المناسب ( > ، < ، = ) :",
+      "body": "17.06 ... 17.6 / 25.135 ... 25.2 / 7.99 ... 7.899 / 0.9 ... 0.900",
+      "figureDesc": "",
+      "answer": "17.06 < 17.6 / 25.135 < 25.2 / 7.99 > 7.899 / 0.9 = 0.900",
+      "confidence": 0.9,
+      "id": "exercices_math_5eme_corriges_p006_i2",
+      "topicId": "math-5-ch2",
+      "formatGuess": "fill_blank",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الحادي عشر",
+      "instruction": "1) رتب الأطوال ترتيبا تنازليا 2) من الأطول من بين هؤلاء الأطفال ؟",
+      "body": "طول أميرة 1.35 m وطول أحمد 1.60 m وطول سليم 1.498 m",
+      "figureDesc": "",
+      "answer": "1) 1.60 m > 1.498 m > 1.35 m (الجواب كما كُتب في الصفحة: 1.35 m > 1.498 m > 1.60 m، ويبدو أن علامة الترتيب مكتوبة بشكل معكوس) 2) أحمد هو الأطول",
+      "confidence": 0.85,
+      "id": "exercices_math_5eme_corriges_p006_i3",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    },
+    {
+      "kind": "exercise",
+      "number": "الثاني عشر",
+      "instruction": "أحصر كل عدد عشري بين عددين طبيعيين متتاليين",
+      "body": "الأعداد: 0.38 ، 13.95 ، 105.6 ، 3545.86",
+      "figureDesc": "",
+      "answer": "0 < 0.38 < 1 ، 13 < 13.95 < 14 ، 105 < 105.6 < 106 ، 3545 < 3545.86 < 3546",
+      "confidence": 0.9,
+      "id": "exercices_math_5eme_corriges_p006_i4",
+      "topicId": "math-5-ch2",
+      "formatGuess": "free",
+      "difficultyGuess": "hard"
+    }
+  ],
+  "quality": {
+    "status": "verified",
+    "accuracy": 0.85
+  },
+  "bookTitle": "Mathématiques 5ème année — Exercices corrigés"
+}

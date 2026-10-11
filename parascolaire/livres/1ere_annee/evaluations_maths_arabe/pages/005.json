@@ -1,0 +1,64 @@
+{
+  "book": "evaluations_maths_arabe",
+  "page": 5,
+  "grade": "1ère Année",
+  "subject": "اللغة العربية",
+  "topicGuess": "الإنتاج الكتابي - إثراء الجمل بالزمان المناسب",
+  "items": [
+    {
+      "kind": "exercise",
+      "number": "",
+      "instruction": "أُعِيدُ كِتَابَةَ الْجُمَلِ وَأُثْرِيهَا بِالزَّمَانِ الْمُنَاسِبِ : ثُمَّ - فِي الصَّبَاحِ - بَعْدَ الْفُطُورِ",
+      "body": "1) اِسْتَيْقَظَ فَادِي مِنْ نَوْمِهِ.\n.......................................................................\n\n2) غَسَلَ وَجْهَهُ وَأَطْرَافَهُ، وَنَظَّفَ أَسْنَانَهُ.\n.......................................................................\n\n3) ذَهَبَ إِلَى الْمَدْرَسَةِ.\n.......................................................................",
+      "figureDesc": "ثلاث صور توضيحية تمثل أحداث اليوم: الصورة الأولى لطفل يستيقظ من نومه في سريره، الصورة الثانية لنفس الطفل ينظف أسنانه بالفرشاة، والصورة الثالثة للطفل وهو يحمل محفظته متجهاً إلى المدرسة.",
+      "answer": null,
+      "confidence": 0.98,
+      "id": "evaluations_maths_arabe_p005_i1",
+      "topicId": null,
+      "formatGuess": "free",
+      "difficultyGuess": "easy"
+    }
+  ],
+  "topicId": null,
+  "topicTitle": "",
+  "topicConfidence": 0.3,
+  "topicIdPrev": "ar-1-u1",
+  "topicConfidencePrev": 0.4,
+  "topicPrevAuto": {
+    "topicId": "ar-1-u4",
+    "confidence": 0.58
+  },
+  "topicSubject": "اللغة العربية",
+  "topicReason": "La page est un exercice d'expression écrite en arabe (enrichir des phrases avec un complément de temps) sur la routine matinale de Fadi, mais aucun chapitre officiel (centrés sur la reconnaissance des lettres et le vocabulaire thématique) ne correspond clairement ; le thème de la routine d'hygiène pourrait évoquer l'unité 3 sans certitude.",
+  "linkFlags": [
+    "no_topic"
+  ],
+  "linkStatus": "parked",
+  "tags": {
+    "subject": "Arabe",
+    "theme": "Enrichir des phrases par le temps",
+    "skill": "Réécrire des phrases en les enrichissant avec un complément de temps adapté (ثم، في الصباح، بعد الفطور) pour organiser une suite d'actions.",
+    "pageType": "exercise",
+    "formats": [
+      "production_ecrite"
+    ],
+    "keywords": [
+      "production écrite",
+      "complément de temps",
+      "enrichissement de phrases",
+      "connecteurs temporels",
+      "routine quotidienne",
+      "1ère année"
+    ],
+    "ideaValue": "medium",
+    "ideaNote": "Réutilisable : une suite de phrases sur la routine d'un personnage (le matin), à réécrire en insérant des indicateurs de temps pris dans une banque de mots, pour travailler la chronologie du récit.",
+    "themeGroup": "Enrichissement de phrases"
+  },
+  "quality": {
+    "status": "audit_pending"
+  },
+  "labels": {
+    "pageSubject": "Arabe"
+  },
+  "bookTitle": "Évaluations 1ère année — Maths & Arabe"
+}
