@@ -422,7 +422,6 @@ export class NavbarComponent {
   readonly navItems: NavItem[] = [
     { path: '/discovery', match: ['/discovery'], icon: 'explore', fr: 'Bibliothèque CNP', ar: 'المكتبة والدليل' },
     { path: '/programme', match: ['/programme'], icon: 'account_tree', fr: 'Programme officiel', ar: 'البرنامج البيداغوجي' },
-    { path: '/solve', match: ['/solve'], icon: 'photo_camera', fr: 'Photo-solution', ar: 'حلّ تمرين بالصورة', compact: true },
     { path: '/teachers', match: ['/teachers'], icon: 'groups', fr: 'Enseignants', ar: 'المعلمون', compact: true },
   ];
 
@@ -431,7 +430,6 @@ export class NavbarComponent {
     const items: NavItem[] = [
       { path: '/', match: ['/'], icon: 'home', fr: 'Accueil', ar: 'الرئيسية' },
       { path: '/discovery', match: ['/discovery'], icon: 'explore', fr: 'Bibliothèque', ar: 'المكتبة' },
-      { path: '/solve', match: ['/solve'], icon: 'photo_camera', fr: 'Solution', ar: 'حلّ تمرين' },
     ];
     if (role === 'teacher') {
       items.push({ path: '/create', match: this.studioPaths, icon: 'auto_fix_high', fr: 'Créer', ar: 'إنشاء' });

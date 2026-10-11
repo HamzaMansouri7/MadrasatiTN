@@ -55,3 +55,82 @@ export function checkExercise(ex: Record<string, unknown> | null | undefined): E
     errors,
   };
 }
+
+/**
+ * Copy guard: compares generated exercise text against reference source text
+ * to prevent verbatim plagiarism.
+ */
+export interface CopyGuardResult {
+  tooClose: boolean;
+  similarity: number;
+  matchedSourceRef?: string;
+}
+
+/**
+ * Extracts normalized word n-grams (shingles) from text.
+ */
+function toShingles(text: string, n = 3): Set<string> {
+  const words = text
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+    .split(/\s+/)
+    .filter((w) => w.length > 1);
+
+  const shingles = new Set<string>();
+  if (words.length < n) {
+    if (words.length > 0) shingles.add(words.join(' '));
+    return shingles;
+  }
+
+  for (let i = 0; i <= words.length - n; i++) {
+    shingles.add(words.slice(i, i + n).join(' '));
+  }
+  return shingles;
+}
+
+/**
+ * Evaluates whether generated content is too close to any source exercise reference.
+ * Returns tooClose: true if n-gram Jaccard similarity exceeds threshold (default 0.40).
+ */
+export function checkCopyGuard(
+  generatedText: string,
+  sourceTexts: { ref?: string; text: string }[],
+  threshold = 0.40,
+): CopyGuardResult {
+  if (!generatedText || !sourceTexts || sourceTexts.length === 0) {
+    return { tooClose: false, similarity: 0 };
+  }
+
+  const genShingles = toShingles(generatedText);
+  if (genShingles.size === 0) {
+    return { tooClose: false, similarity: 0 };
+  }
+
+  let maxSim = 0;
+  let matchedRef: string | undefined;
+
+  for (const src of sourceTexts) {
+    if (!src.text) continue;
+    const srcShingles = toShingles(src.text);
+    if (srcShingles.size === 0) continue;
+
+    let overlap = 0;
+    for (const sh of genShingles) {
+      if (srcShingles.has(sh)) overlap++;
+    }
+
+    const unionSize = genShingles.size + srcShingles.size - overlap;
+    const similarity = unionSize > 0 ? overlap / unionSize : 0;
+
+    if (similarity > maxSim) {
+      maxSim = similarity;
+      matchedRef = src.ref;
+    }
+  }
+
+  return {
+    tooClose: maxSim >= threshold,
+    similarity: Math.round(maxSim * 100) / 100,
+    matchedSourceRef: matchedRef,
+  };
+}

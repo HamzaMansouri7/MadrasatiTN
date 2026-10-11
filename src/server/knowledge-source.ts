@@ -7,6 +7,8 @@
  * Extending later = add a new adapter (new `origin`) that maps raw data into
  * `KnowledgeSource` rows. No endpoint change required.
  */
+import * as fs from 'node:fs';
+import * as path from 'node:path';
 import { TUNISIAN_CURRICULUM_CHAPTERS } from '../app/core/data/curriculum-chapters.data';
 import { chapterById, chapterTitle } from '../app/core/utils/curriculum.util';
 import { CNP_PRIMARY_COURSES } from '../app/core/data/cnp-books.data';
@@ -97,8 +99,125 @@ function fromCnpBooks(): KnowledgeSource[] {
   }));
 }
 
+interface ParascolaireRecord {
+  id: string;
+  topicId: string;
+  topicGuess?: string;
+  book: string;
+  page: number;
+  grade: string;
+  subject: string;
+  kind: 'exercise' | 'lesson' | 'answer';
+  number?: string;
+  instruction: string;
+  body: string;
+  figureDesc?: string;
+  answer?: string | null;
+  confidence: number;
+  formatGuess?: string;
+  difficultyGuess?: string;
+  ref?: string;
+}
+
+/**
+ * Resolves the private parascolaire index path.
+ * 1. Checks Contabo VPS private directory: /var/madrasati/private/parascolaire/index.jsonl (outside web root).
+ * 2. Honors process.env['PARASCOLAIRE_INDEX_PATH'].
+ * 3. Falls back to local workspace archive: parascolaire/_archive/index.jsonl.
+ */
+function resolveParascolaireIndexPath(): string | null {
+  const vpsPrivate = '/var/madrasati/private/parascolaire/index.jsonl';
+  if (fs.existsSync(vpsPrivate)) return vpsPrivate;
+
+  const custom = process.env['PARASCOLAIRE_INDEX_PATH'];
+  if (custom && fs.existsSync(custom)) return custom;
+
+  const local = path.resolve(process.cwd(), 'parascolaire/_archive/index.jsonl');
+  if (fs.existsSync(local)) return local;
+
+  return null;
+}
+
+/**
+ * Parascolaire Patterns adapter — returns exercise patterns (type, format, difficulty)
+ * and at most 1–2 examples marked "inspiration only, do not copy".
+ * Strictly read server-side only; never served as a file.
+ */
+export function fromParascolairePatterns(): KnowledgeSource[] {
+  const filePath = resolveParascolaireIndexPath();
+  if (!filePath) return [];
+
+  try {
+    const raw = fs.readFileSync(filePath, 'utf-8');
+    const lines = raw.split('\n').filter((l) => l.trim().length > 0);
+
+    const byTopic = new Map<string, ParascolaireRecord[]>();
+    for (const line of lines) {
+      try {
+        const rec = JSON.parse(line) as ParascolaireRecord;
+        if (!rec.topicId) continue;
+        const list = byTopic.get(rec.topicId) || [];
+        list.push(rec);
+        byTopic.set(rec.topicId, list);
+      } catch {
+        // Skip malformed line
+      }
+    }
+
+    const sources: KnowledgeSource[] = [];
+
+    for (const [topicId, items] of byTopic.entries()) {
+      if (items.length === 0) continue;
+      const first = items[0];
+      const isArabic = ARABIC_RE.test(first.subject || '') || ARABIC_RE.test(first.instruction || '');
+
+      const exercises = items.filter((it) => it.kind === 'exercise');
+      const candidateItems = exercises.length > 0 ? exercises : items;
+
+      const formats = [...new Set(candidateItems.map((it) => it.formatGuess).filter(Boolean))];
+      const difficulties = [...new Set(candidateItems.map((it) => it.difficultyGuess).filter(Boolean))];
+
+      // At most 1-2 inspiration examples
+      const inspirations = candidateItems.slice(0, 2).map((it, idx) => {
+        const instr = it.instruction ? `Consigne : ${it.instruction}` : '';
+        const bodySnippet = (it.body || '').trim().slice(0, 250);
+        const fmt = it.formatGuess ? `[${it.formatGuess}] ` : '';
+        return `Exemple ${idx + 1} (${it.book} p.${it.page}) :\n${fmt}${instr}\n${bodySnippet}`;
+      });
+
+      const header = isArabic
+        ? `أنماط تمارين مستخلصة من المراجع الموازية (${formats.join('، ') || 'متنوعة'} - صعوبة: ${difficulties.join('، ') || 'متوسطة'}).`
+        : `Modèles et typologies d'exercices parascolaires (${formats.join(', ') || 'variés'} - niveau : ${difficulties.join(', ') || 'moyen'}).`;
+
+      const warning = isArabic
+        ? `[INSPIRATION ONLY - DO NOT COPY] تنبيه حماية الملكية: للإلهام البيداغوجي فقط — يمنع النسخ الحرفي. قم بتوليد تمرين جديد كلياً بسياق وقيم وأسماء مختلفة.`
+        : `[INSPIRATION ONLY - DO NOT COPY] INSPIRATION PÉDAGOGIQUE SEULEMENT — NE PAS COPIER TEXTUELLEMENT (générer un exercice entièrement original avec de nouvelles données, noms et valeurs).`;
+
+      const text = `${header}\n${warning}\n\n${inspirations.join('\n\n')}`;
+
+      sources.push({
+        id: `parascolaire-${topicId}`,
+        origin: 'parascolaire-pattern',
+        grade: first.grade,
+        subject: first.subject,
+        lang: isArabic ? 'ar' : 'fr',
+        title: isArabic
+          ? `أنماط تمارين موازية: ${first.topicGuess || topicId}`
+          : `Modèles parascolaires : ${first.topicGuess || topicId}`,
+        text,
+        ref: `parascolaire:${topicId}`,
+      });
+    }
+
+    return sources;
+  } catch (err) {
+    console.warn('[fromParascolairePatterns] Error loading patterns index:', err);
+    return [];
+  }
+}
+
 /** Full corpus, built once at startup. Future adapters: push their rows here. */
-const CORPUS: KnowledgeSource[] = [...fromCurriculumChapters(), ...fromCnpBooks()];
+const CORPUS: KnowledgeSource[] = [...fromCurriculumChapters(), ...fromCnpBooks(), ...fromParascolairePatterns()];
 
 /** Register extra sources at runtime (e.g. loaded from scraped-site JSON files). */
 export function registerSources(sources: KnowledgeSource[]): void {

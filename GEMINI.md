@@ -96,3 +96,12 @@ src/
   ```bash
   cd /root/MadrasatiTN && git pull origin main && pnpm run build && pm2 reload MadrasatiTN
   ```
+
+---
+
+## 8. Commercial Parascolaire Pipeline & Copy Guard Standards
+- **Strict Private Isolation:** Commercial workbooks (PDFs and archive JSONs) are strictly untracked (`parascolaire/` in `.gitignore`) and NEVER exposed via public HTTP endpoints (`public/` or `/uploads`).
+- **Contabo VPS Location:** Private system path `/var/madrasati/private/parascolaire/index.jsonl`.
+- **Knowledge Adapter:** `fromParascolairePatterns()` in `src/server/knowledge-source.ts` reads the index server-side only and injects exercise patterns + max 1–2 inspiration examples flagged `[INSPIRATION ONLY - DO NOT COPY]`.
+- **Anti-Plagiarism Copy Guard:** `checkCopyGuard()` in `src/server/post-checks.ts` measures n-gram Jaccard similarity between generated exercises and source inspirations. If similarity >= 40%, `/api/ai/generate-exercise` automatically re-prompts the AI with perturbation constraints to ensure 100% original output.
+- **Model Standard:** `gemini-3.7-flash` (with `gemini-3.8-flash` fallback) across all OCR extraction scripts and server routes.

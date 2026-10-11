@@ -45,12 +45,16 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+__pycache__/
+*.pyc
 
 # Runtime-persisted shared worksheets
 docs/
 
 # Source PDFs for resource extraction (re-downloadable from CNP)
 /_sources/
+/parascolaire/
+parascolaire/
 
 # User-uploaded & generated files (kept on the VPS only; legacy flat files in uploads/ stay tracked)
 /uploads/avatars/

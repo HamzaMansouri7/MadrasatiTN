@@ -5,7 +5,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { retrieveContext } from "../knowledge-source";
 import { BLOCK_SCHEMAS } from "../memo-schema";
 import { resolveLang, langRule } from "../lang";
-import { checkExercise } from "../post-checks";
+import { checkExercise, checkCopyGuard } from "../post-checks";
 import { runChain } from "../ai/chain";
 import { ChainName } from "../ai/types";
 import { toPublicError } from "../ai/public-error";
@@ -89,7 +89,7 @@ export const aiReady = () =>
 async function aiGenerateText(prompt: string): Promise<string> {
   if (aiClients.length === 0) throw new Error("Aucune clé Gemini disponible");
   const response = await aiClients[0].models.generateContent({
-    model: "gemini-2.5-flash",
+    model: "gemini-3.7-flash",
     contents: prompt,
   });
   if (!response.text) throw new Error("Réponse vide");
@@ -366,6 +366,15 @@ aiRouter.post(
         return;
       }
 
+      const retrieved = retrieveContext({
+        topicId: safeTopicId(topicId),
+        grade,
+        subject,
+        trimester,
+        topic,
+        lang,
+      });
+
       const prompt = compose(exerciseSkill, {
         grade,
         subject,
@@ -376,22 +385,38 @@ aiRouter.post(
         trimester,
         points,
         lang,
-        contextBlockStr: contextBlock({
-          topicId: safeTopicId(topicId),
-          grade,
-          subject,
-          trimester,
-          topic,
-          lang,
-        }),
+        contextBlockStr: retrieved.block ? `\n${retrieved.block}\n${langRule(lang)}` : langRule(lang),
       });
 
-      const data = await aiGenerateJSON(
+      let data = await aiGenerateJSON(
         exerciseSkill.chain,
         prompt,
         exerciseSkill.schema,
         exerciseSkill.temperature,
       );
+
+      // Copy guard: check similarity against inspiration patterns
+      const inspirationSources = retrieved.sources.filter((s) => s.origin === 'parascolaire-pattern');
+      if (inspirationSources.length > 0) {
+        const textToCheck = `${data['promptText'] || ''} ${data['solutionText'] || ''} ${JSON.stringify(data['qcmOptions'] || '')} ${JSON.stringify(data['matchingPairs'] || '')}`;
+        const guard = checkCopyGuard(textToCheck, inspirationSources, 0.40);
+        if (guard.tooClose) {
+          console.warn(`[generate-exercise] Copy guard triggered (similarity: ${guard.similarity}, ref: ${guard.matchedSourceRef}). Regenerating...`);
+          const retryPrompt = `${prompt}\n\nIMPORTANT: La proposition précédente était trop similaire au modèle d'inspiration (${Math.round(guard.similarity * 100)}%). Tu DOIS inventer un exercice 100% original: change tous les personnages, les objets, l'histoire et les valeurs numériques.`;
+          try {
+            const regenerated = await aiGenerateJSON(
+              exerciseSkill.chain,
+              retryPrompt,
+              exerciseSkill.schema,
+              Math.min(exerciseSkill.temperature + 0.2, 0.8),
+            );
+            data = regenerated;
+          } catch (retryErr) {
+            console.warn('[generate-exercise] Regeneration failed, keeping initial result:', retryErr);
+          }
+        }
+      }
+
       const sanitized = sanitizeExercise(data);
       exerciseCache.set(cacheKey, sanitized);
 

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { retrieveContext } from './knowledge-source';
+import { retrieveContext, fromParascolairePatterns } from './knowledge-source';
 
 describe('retrieveContext with topicId', () => {
   it('puts the pinned chapter first and derives grade/subject from it', () => {
@@ -39,5 +39,17 @@ describe('retrieveContext with topicId', () => {
     const { sources } = retrieveContext({ topicId: 'ar-5-u3', lang: 'ar', limit: 3 });
     expect(sources.length).toBeLessThanOrEqual(3);
     expect(new Set(sources).size).toBe(sources.length);
+  });
+});
+
+describe('fromParascolairePatterns', () => {
+  it('loads patterns and inspiration models when index exists', () => {
+    const patterns = fromParascolairePatterns();
+    expect(Array.isArray(patterns)).toBe(true);
+    if (patterns.length > 0) {
+      const first = patterns[0];
+      expect(first.origin).toBe('parascolaire-pattern');
+      expect(first.text).toContain('INSPIRATION');
+    }
   });
 });
