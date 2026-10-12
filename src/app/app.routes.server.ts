@@ -18,6 +18,15 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Server,
   },
   {
+    // Parascolaire pages load their catalog in the browser: no prerender for the parameterised routes.
+    path: 'parascolaire/:classe/:livre',
+    renderMode: RenderMode.Client,
+  },
+  {
+    path: 'parascolaire/:classe/:livre/:theme',
+    renderMode: RenderMode.Client,
+  },
+  {
     path: '**',
     renderMode: RenderMode.Prerender,
   },

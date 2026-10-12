@@ -36,6 +36,24 @@ export const routes: Routes = [
     title: 'البرنامج البيداغوجي الرسمي | Programme Officiel - Madrasati TN',
   },
   {
+    path: 'parascolaire',
+    loadComponent: () =>
+      import('./features/parascolaire/parascolaire-home').then((m) => m.ParascolaireHomeComponent),
+    title: 'الدعم المدرسي | Parascolaire - Madrasati TN',
+  },
+  {
+    path: 'parascolaire/:classe/:livre',
+    loadComponent: () =>
+      import('./features/parascolaire/parascolaire-book').then((m) => m.ParascolaireBookComponent),
+    title: 'الدعم المدرسي | Parascolaire - Madrasati TN',
+  },
+  {
+    path: 'parascolaire/:classe/:livre/:theme',
+    loadComponent: () =>
+      import('./features/parascolaire/parascolaire-theme').then((m) => m.ParascolaireThemeComponent),
+    title: 'الدعم المدرسي | Parascolaire - Madrasati TN',
+  },
+  {
     path: 'solve',
     loadComponent: () =>
       import('./features/solve/solve-home').then((m) => m.SolveHomeComponent),

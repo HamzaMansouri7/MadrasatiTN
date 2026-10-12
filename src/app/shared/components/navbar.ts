@@ -39,7 +39,7 @@ import { TeacherAvatarComponent } from './teacher-avatar';
             <button
               type="button"
               (click)="selectRole('public')"
-              [class]="store.currentRole() === 'public' && !isTeachersRoute() && router.url !== '/programme'
+              [class]="store.currentRole() === 'public' && !isTeachersRoute() && router.url !== '/programme' && !isParascolaireRoute()
                 ? 'text-[#1B4332] font-semibold border-b-[3px] border-[#2D6A4F] bg-[#2D6A4F]/10'
                 : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
@@ -57,6 +57,18 @@ import { TeacherAvatarComponent } from './teacher-avatar';
               class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
               <span class="material-icons text-base xl:text-lg" aria-hidden="true">account_tree</span>
               <span>{{ lang.tr('Programme Officiel', 'البرنامج البيداغوجي') }}</span>
+            </button>
+
+            <!-- 2b. Parascolaire: infographics and course decks by class, book and theme -->
+            <button
+              type="button"
+              (click)="router.navigate(['/parascolaire'])"
+              [class]="isParascolaireRoute()
+                ? 'text-[#2447B8] font-semibold border-b-[3px] border-[#2447B8] bg-[#2447B8]/10'
+                : 'text-[#5B6B60] hover:text-[#14251D] hover:bg-[#F2ECDE] font-medium border-b-[3px] border-transparent'"
+              class="flex items-center gap-1.5 px-2.5 xl:px-3 h-[44px] rounded-lg text-xs tracking-wide transition-all cursor-pointer">
+              <span class="material-icons text-base xl:text-lg" aria-hidden="true">collections_bookmark</span>
+              <span>{{ lang.tr('Parascolaire', 'الدعم المدرسي') }}</span>
             </button>
 
             <!-- 3. Create Hub / مركز الإنشاء (teachers only) -->
@@ -374,10 +386,20 @@ import { TeacherAvatarComponent } from './teacher-avatar';
           <button
             type="button"
             (click)="selectRole('public')"
-            [class]="store.currentRole() === 'public' ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
+            [class]="store.currentRole() === 'public' && !isParascolaireRoute() ? 'text-[#1B4332] font-semibold bg-[#2D6A4F]/10' : 'text-[#5B6B60]'"
             class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
             <span class="material-icons text-base" aria-hidden="true">explore</span>
             <span class="text-[11px] leading-tight">{{ lang.tr('Bibliothèque', 'المكتبة') }}</span>
+          </button>
+
+          <!-- 3. Parascolaire -->
+          <button
+            type="button"
+            (click)="router.navigate(['/parascolaire'])"
+            [class]="isParascolaireRoute() ? 'text-[#2447B8] font-semibold bg-[#2447B8]/10' : 'text-[#5B6B60]'"
+            class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-lg px-2 transition-colors cursor-pointer">
+            <span class="material-icons text-base" aria-hidden="true">collections_bookmark</span>
+            <span class="text-[11px] leading-tight">{{ lang.tr('Parascolaire', 'الدعم المدرسي') }}</span>
           </button>
 
           <!-- 4. Create Hub (teachers only) -->
@@ -469,6 +491,10 @@ export class NavbarComponent {
 
   navigateToGenerator() {
     this.router.navigateByUrl('/generate');
+  }
+
+  isParascolaireRoute(): boolean {
+    return this.router.url.startsWith('/parascolaire');
   }
 
   isTeachersRoute(): boolean {

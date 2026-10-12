@@ -59,6 +59,7 @@ docs/
 /uploads/documents/
 /uploads/notebooks/
 /uploads/generated/
+/uploads/parascolaire/
 /uploads/illustration_*.svg
 /uploads/*.pdf
 
@@ -72,5 +73,11 @@ docs/
 parascolaire_frozen/
 parascolaire/notebooklm/
 parascolaire/outputs/
+parascolaire/publish/
 data/parascolaire/
 __pycache__/
+
+# Local tool state
+.playwright-mcp/
+.impeccable/config.local.json
+.impeccable/questions/

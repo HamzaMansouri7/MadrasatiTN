@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import { join } from 'node:path';
 import { existsSync, readFileSync } from 'node:fs';
 import { docsFolder } from './storage';
+import { parascolaireOg } from './routes/parascolaire.routes';
 import { chapterById } from '../app/core/utils/curriculum.util';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../app/core/data/first-grade-exercises.data';
 import { LIBRARY_EXERCISES } from '../app/core/data/library-exercises.data';
@@ -179,6 +180,12 @@ export function resolveOgPayload(
   const pathParts = req.path.split('/').filter(Boolean);
   const directType = pathParts[0];
   const directId = pathParts[1] || '';
+
+  // Parascolaire theme pages: the infographic is the share image.
+  if (directType === 'parascolaire' && pathParts.length === 4) {
+    const og = parascolaireOg(origin, pathParts[1], pathParts[2], pathParts[3]);
+    if (og) return { ...og, type: 'article' };
+  }
 
   const docId = queryDoc || (['lesson-plan', 'infographic', 'series'].includes(directType) ? directId : '');
 

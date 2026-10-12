@@ -12,6 +12,7 @@ import { uploadsFolder } from './server/storage';
 import { uploadRouter } from './server/routes/upload.routes';
 import { docsRouter, memoRouter } from './server/routes/docs.routes';
 import { aiRouter } from './server/routes/ai.routes';
+import { parascolaireApi, parascolaireMedia } from './server/routes/parascolaire.routes';
 import { createOgPreviewMiddleware, loadBdItems } from './server/og-preview';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from './app/core/data/first-grade-exercises.data';
 import { LIBRARY_EXERCISES } from './app/core/data/library-exercises.data';
@@ -112,6 +113,10 @@ app.use(
     redirect: false,
   }),
 );
+
+// 2b. Parascolaire published resources: hashed WebP/PDF files (read-only) and the catalog API
+app.use('/media/parascolaire', ...parascolaireMedia);
+app.use('/api/parascolaire', parascolaireApi);
 
 // 3. Mount Modular API Routers
 app.use('/api/upload', uploadRouter);
