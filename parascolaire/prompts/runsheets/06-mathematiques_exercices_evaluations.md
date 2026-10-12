@@ -39,13 +39,14 @@ Tick only: `01-operations-sur-les-decimaux.md` · 39 exercises · 0 with a corre
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Opérations sur les décimaux (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Opérations sur les décimaux (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 01 · Présentation — slides
@@ -81,13 +82,14 @@ Tick only: `02-mesures-d-aires-et-unites-agraires.md` · 36 exercises · 0 with 
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Mesures d'aires et unités agraires (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Mesures d'aires et unités agraires (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 02 · Présentation — slides
@@ -123,13 +125,14 @@ Tick only: `03-angles-cercle-et-triangles.md` · 34 exercises · 0 with a correc
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Angles, cercle et triangles (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Angles, cercle et triangles (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 03 · Présentation — slides
@@ -165,13 +168,14 @@ Tick only: `04-problemes-de-synthese-et-vie-courante.md` · 28 exercises · 0 wi
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Problèmes de synthèse et vie courante (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Problèmes de synthèse et vie courante (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 04 · Présentation — slides
@@ -207,13 +211,14 @@ Tick only: `05-problemes-d-achat-vente-et-benefice.md` · 24 exercises · 0 with
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Problèmes d'achat, vente et bénéfice (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Problèmes d'achat, vente et bénéfice (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 05 · Présentation — slides
@@ -249,13 +254,14 @@ Tick only: `06-nombres-decimaux-notions-et-comparaison.md` · 22 exercises · 0 
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Nombres décimaux : notions et comparaison (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Nombres décimaux : notions et comparaison (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 06 · Présentation — slides
@@ -291,13 +297,14 @@ Tick only: `07-mesures-de-durees.md` · 19 exercises · 0 with a correction · s
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Mesures de durées (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Mesures de durées (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 07 · Présentation — slides
@@ -333,13 +340,14 @@ Tick only: `08-grands-nombres-entiers.md` · 15 exercises · 0 with a correction
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Grands nombres entiers (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Grands nombres entiers (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 08 · Présentation — slides
@@ -375,13 +383,14 @@ Tick only: `09-mesures-de-masses-et-de-capacites.md` · 14 exercises · 0 with a
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Mesures de masses et de capacités (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Mesures de masses et de capacités (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 09 · Présentation — slides
@@ -417,13 +426,14 @@ Tick only: `10-quadrilateres-symetrie-et-reperage.md` · 12 exercises · 0 with 
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Quadrilatères, symétrie et repérage (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Quadrilatères, symétrie et repérage (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 10 · Présentation — slides
@@ -459,13 +469,14 @@ Tick only: `11-division-euclidienne.md` · 11 exercises · 0 with a correction �
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Division euclidienne (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Division euclidienne (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 11 · Présentation — slides
@@ -501,13 +512,14 @@ Tick only: `12-fractions.md` · 9 exercises · 0 with a correction · subject Ma
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Fractions (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Fractions (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 12 · Présentation — slides
@@ -543,13 +555,14 @@ Tick only: `13-operations-sur-les-entiers.md` · 8 exercises · 0 with a correct
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Opérations sur les entiers (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Opérations sur les entiers (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 13 · Présentation — slides
@@ -585,13 +598,14 @@ Tick only: `14-proportionnalite-et-problemes-de-mesures.md` · 8 exercises · 0 
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Proportionnalité et problèmes de mesures (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 5th grade (age 10-11). Subject: Mathématiques. Theme: Proportionnalité et problèmes de mesures (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة الخامسة" and "الرياضيات".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". Numbers must stay under 100000.
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 14 · Présentation — slides

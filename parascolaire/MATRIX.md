@@ -44,11 +44,11 @@ Chiffres globaux. Contrôlés = exercices sur une page auditée. Avec corrigé =
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1ère Année | 1 | 71 | 44 | 24 | 40 | 240 | 116 | 0 | 1 | 0 |
 | 2ème Année | 1 | 57 | 3 | 31 | 56 | 224 | 122 | 0 | 34 | 0 |
-| 3ème Année | 1 | 66 | 7 | 40 | 44 | 251 | 112 | 1 | 40 | 0 |
-| 4ème Année | 2 | 174 | 49 | 31 | 134 | 575 | 268 | 376 | 37 | 28 |
-| 5ème Année | 4 | 149 | 67 | 49 | 173 | 401 | 213 | 13 | 1 | 0 |
-| 6ème Année | 8 | 382 | 121 | 65 | 248 | 1467 | 843 | 439 | 99 | 25 |
-| **Total** | **17** | **899** | **291** | **232** | **695** | **3158** | **1674** | **829** | **212** | **53** |
+| 3ème Année | 1 | 66 | 7 | 40 | 44 | 251 | 112 | 0 | 40 | 0 |
+| 4ème Année | 2 | 174 | 49 | 31 | 134 | 575 | 268 | 182 | 37 | 28 |
+| 5ème Année | 4 | 149 | 67 | 49 | 173 | 401 | 213 | 8 | 1 | 0 |
+| 6ème Année | 8 | 382 | 121 | 65 | 248 | 1467 | 843 | 91 | 99 | 25 |
+| **Total** | **17** | **899** | **291** | **232** | **695** | **3158** | **1674** | **281** | **212** | **53** |
 
 ## 2. Matrice classe par matière
 
@@ -101,29 +101,29 @@ Thèmes normalisés par classe, avec pages, exercices et exercices avec corrigé
 | 3ème Année | Problèmes additifs et soustractifs | 2 | 9 | 0 |
 | 3ème Année | Repérage sur quadrillage | 1 | 5 | 0 |
 | 3ème Année | Situations-problèmes et budget | 1 | 2 | 0 |
-| 4ème Année | Addition et soustraction | 4 | 19 | 19 |
-| 4ème Année | Angles | 3 | 11 | 1 |
-| 4ème Année | Division euclidienne | 11 | 37 | 26 |
-| 4ème Année | Droites, points et segments | 8 | 36 | 22 |
-| 4ème Année | Grands nombres | 10 | 41 | 26 |
-| 4ème Année | Longueurs | 7 | 22 | 22 |
-| 4ème Année | Masses et capacités | 6 | 24 | 18 |
-| 4ème Année | Monnaie | 8 | 24 | 8 |
-| 4ème Année | Multiplication et multiples | 9 | 34 | 20 |
-| 4ème Année | Numération jusqu'à 9 999 | 10 | 30 | 25 |
-| 4ème Année | Numération jusqu'à 999 | 7 | 24 | 11 |
-| 4ème Année | Problèmes | 5 | 16 | 12 |
-| 4ème Année | Périmètre et aire | 7 | 26 | 26 |
-| 4ème Année | Quadrillage et parcours | 4 | 23 | 20 |
+| 4ème Année | Addition et soustraction | 4 | 19 | 10 |
+| 4ème Année | Angles | 3 | 11 | 0 |
+| 4ème Année | Division euclidienne | 11 | 37 | 20 |
+| 4ème Année | Droites, points et segments | 8 | 36 | 12 |
+| 4ème Année | Grands nombres | 10 | 41 | 23 |
+| 4ème Année | Longueurs | 7 | 22 | 8 |
+| 4ème Année | Masses et capacités | 6 | 24 | 1 |
+| 4ème Année | Monnaie | 8 | 24 | 2 |
+| 4ème Année | Multiplication et multiples | 9 | 34 | 15 |
+| 4ème Année | Numération jusqu'à 9 999 | 10 | 30 | 3 |
+| 4ème Année | Numération jusqu'à 999 | 7 | 24 | 9 |
+| 4ème Année | Problèmes | 5 | 16 | 7 |
+| 4ème Année | Périmètre et aire | 7 | 26 | 24 |
+| 4ème Année | Quadrillage et parcours | 4 | 23 | 9 |
 | 4ème Année | Rectangle et carré | 2 | 8 | 0 |
-| 4ème Année | Révisions et évaluations | 29 | 106 | 83 |
-| 4ème Année | Temps et calendrier | 6 | 47 | 37 |
+| 4ème Année | Révisions et évaluations | 29 | 106 | 33 |
+| 4ème Année | Temps et calendrier | 6 | 47 | 6 |
 | 5ème Année | Angles, cercle et triangles | 9 | 35 | 0 |
 | 5ème Année | Divers | 2 | 0 | 0 |
 | 5ème Année | Division euclidienne | 6 | 22 | 0 |
 | 5ème Année | Droites, médiatrice et bissectrice | 7 | 17 | 0 |
 | 5ème Année | Fractions | 3 | 12 | 0 |
-| 5ème Année | Grands nombres entiers | 9 | 29 | 2 |
+| 5ème Année | Grands nombres entiers | 9 | 29 | 0 |
 | 5ème Année | Mesures d'aires et unités agraires | 13 | 48 | 0 |
 | 5ème Année | Mesures de durées | 6 | 21 | 0 |
 | 5ème Année | Mesures de masses et de capacités | 4 | 14 | 0 |
@@ -133,26 +133,26 @@ Thèmes normalisés par classe, avec pages, exercices et exercices avec corrigé
 | 5ème Année | Problèmes d'achat, vente et bénéfice | 8 | 32 | 1 |
 | 5ème Année | Problèmes de synthèse et vie courante | 8 | 32 | 0 |
 | 5ème Année | Proportionnalité et problèmes de mesures | 3 | 8 | 0 |
-| 5ème Année | Quadrilatères, symétrie et repérage | 6 | 17 | 3 |
-| 6ème Année | Angles et symétrie axiale | 5 | 19 | 8 |
-| 6ème Année | Cercle et disque | 2 | 4 | 1 |
+| 5ème Année | Quadrilatères, symétrie et repérage | 6 | 17 | 0 |
+| 6ème Année | Angles et symétrie axiale | 5 | 19 | 4 |
+| 6ème Année | Cercle et disque | 2 | 4 | 0 |
 | 6ème Année | Constructions géométriques | 3 | 11 | 0 |
-| 6ème Année | Durées, vitesse et échelle | 9 | 26 | 10 |
-| 6ème Année | Fractions | 5 | 15 | 11 |
+| 6ème Année | Durées, vitesse et échelle | 9 | 26 | 6 |
+| 6ème Année | Fractions | 5 | 15 | 4 |
 | 6ème Année | Listes d'épreuves | 1 | 0 | 0 |
-| 6ème Année | Mesures et conversions | 4 | 22 | 14 |
+| 6ème Année | Mesures et conversions | 4 | 22 | 9 |
 | 6ème Année | Modèles d'examens régionaux | 1 | 0 | 0 |
 | 6ème Année | Multiples et diviseurs | 4 | 25 | 5 |
 | 6ème Année | Nombres décimaux et opérations | 2 | 15 | 6 |
 | 6ème Année | Pages de titre | 1 | 0 | 0 |
-| 6ème Année | Pourcentages et proportionnalité | 8 | 26 | 14 |
-| 6ème Année | Problèmes de synthèse et révisions | 12 | 54 | 18 |
+| 6ème Année | Pourcentages et proportionnalité | 8 | 26 | 11 |
+| 6ème Année | Problèmes de synthèse et révisions | 12 | 54 | 6 |
 | 6ème Année | Présentation du manuel | 1 | 0 | 0 |
 | 6ème Année | Puissances | 4 | 24 | 0 |
-| 6ème Année | Périmètres et aires | 6 | 20 | 7 |
+| 6ème Année | Périmètres et aires | 6 | 20 | 3 |
 | 6ème Année | Sommaires | 1 | 0 | 0 |
 | 6ème Année | Statistiques et graphiques | 6 | 31 | 6 |
-| 6ème Année | Volumes et capacités | 3 | 20 | 5 |
+| 6ème Année | Volumes et capacités | 3 | 20 | 0 |
 
 ### Arabe
 
@@ -194,7 +194,7 @@ Thèmes normalisés par classe, avec pages, exercices et exercices avec corrigé
 | 3ème Année | Production écrite : dialogue et récit | 2 | 4 | 0 |
 | 3ème Année | Production écrite : phrases et paragraphe | 1 | 3 | 0 |
 | 3ème Année | Production écrite : récit illustré | 1 | 2 | 0 |
-| 3ème Année | Évaluation de la production écrite | 1 | 1 | 1 |
+| 3ème Année | Évaluation de la production écrite | 1 | 1 | 0 |
 | 4ème Année | Cadres spatio-temporels et temps du récit | 1 | 0 | 0 |
 | 4ème Année | Description d'un personnage | 4 | 0 | 0 |
 | 4ème Année | Description de la nature et des paysages | 3 | 0 | 0 |
@@ -216,7 +216,7 @@ Thèmes normalisés par classe, avec pages, exercices et exercices avec corrigé
 | 5ème Année | Types et nature du verbe | 1 | 0 | 0 |
 | 5ème Année | Verbe sain et verbe défectueux | 1 | 0 | 0 |
 | 5ème Année | Verbe simple et verbe augmenté | 2 | 0 | 0 |
-| 6ème Année | Compréhension de l'écrit | 6 | 21 | 11 |
+| 6ème Année | Compréhension de l'écrit | 6 | 21 | 9 |
 | 6ème Année | Conjugaison: pronoms et suffixes | 8 | 34 | 0 |
 | 6ème Année | Inna et ses sœurs | 2 | 4 | 0 |
 | 6ème Année | Kâna et ses sœurs | 2 | 4 | 0 |
@@ -246,21 +246,21 @@ Thèmes normalisés par classe, avec pages, exercices et exercices avec corrigé
 | 3ème Année | Numération et notation | 1 | 1 | 0 |
 | 3ème Année | Vocabulaire de la maison | 2 | 4 | 0 |
 | 3ème Année | Écriture et dictée | 3 | 6 | 0 |
-| 6ème Année | Conjugaison | 9 | 44 | 35 |
-| 6ème Année | Contes et récits légendaires | 7 | 16 | 2 |
+| 6ème Année | Conjugaison | 9 | 44 | 2 |
+| 6ème Année | Contes et récits légendaires | 7 | 16 | 0 |
 | 6ème Année | Divers | 2 | 0 | 0 |
-| 6ème Année | Eau, énergie et environnement | 18 | 112 | 6 |
-| 6ème Année | Grammaire: la phrase | 7 | 43 | 34 |
+| 6ème Année | Eau, énergie et environnement | 18 | 112 | 0 |
+| 6ème Année | Grammaire: la phrase | 7 | 43 | 0 |
 | 6ème Année | Internet et technologies | 12 | 76 | 0 |
-| 6ème Année | Le texte narratif | 48 | 177 | 103 |
-| 6ème Année | Lexique et vocabulaire | 4 | 25 | 6 |
-| 6ème Année | Métiers, citoyenneté et vie sociale | 8 | 41 | 13 |
-| 6ème Année | Orthographe et accords | 3 | 18 | 18 |
-| 6ème Année | Production écrite et lettres | 10 | 9 | 1 |
-| 6ème Année | Révisions et évaluations | 20 | 133 | 10 |
-| 6ème Année | Santé et hygiène de vie | 13 | 49 | 10 |
-| 6ème Année | Textes descriptifs et biographiques | 6 | 24 | 19 |
-| 6ème Année | Textes documentaires | 8 | 32 | 32 |
+| 6ème Année | Le texte narratif | 48 | 177 | 0 |
+| 6ème Année | Lexique et vocabulaire | 4 | 25 | 0 |
+| 6ème Année | Métiers, citoyenneté et vie sociale | 8 | 41 | 0 |
+| 6ème Année | Orthographe et accords | 3 | 18 | 0 |
+| 6ème Année | Production écrite et lettres | 10 | 9 | 0 |
+| 6ème Année | Révisions et évaluations | 20 | 133 | 0 |
+| 6ème Année | Santé et hygiène de vie | 13 | 49 | 0 |
+| 6ème Année | Textes descriptifs et biographiques | 6 | 24 | 0 |
+| 6ème Année | Textes documentaires | 8 | 32 | 0 |
 
 ### Éveil scientifique
 
@@ -291,16 +291,16 @@ Thèmes normalisés par classe, avec pages, exercices et exercices avec corrigé
 | 6ème Année | Chaînes alimentaires et reproduction des plantes | 3 | 4 | 0 |
 | 6ème Année | Composition de l'air | 3 | 6 | 0 |
 | 6ème Année | Divers | 2 | 1 | 0 |
-| 6ème Année | L'air et ses propriétés | 7 | 34 | 22 |
+| 6ème Année | L'air et ses propriétés | 7 | 34 | 10 |
 | 6ème Année | L'eau et sa pollution | 4 | 17 | 0 |
-| 6ème Année | L'électricité | 2 | 1 | 1 |
+| 6ème Année | L'électricité | 2 | 1 | 0 |
 | 6ème Année | La circulation sanguine et le sang | 9 | 31 | 6 |
 | 6ème Année | La combustion | 2 | 0 | 0 |
 | 6ème Année | La lumière et la vision | 3 | 0 | 0 |
 | 6ème Année | La respiration | 6 | 23 | 0 |
 | 6ème Année | Les aimants et la boussole | 7 | 23 | 0 |
 | 6ème Année | Les groupes d'aliments et l'alimentation équilibrée | 7 | 22 | 0 |
-| 6ème Année | Santé, défense de l'organisme et maladies | 3 | 10 | 5 |
+| 6ème Année | Santé, défense de l'organisme et maladies | 3 | 10 | 4 |
 | 6ème Année | Énergie, besoins et troubles alimentaires | 5 | 16 | 0 |
 
 ### Éducation islamique
@@ -354,31 +354,31 @@ Thèmes normalisés par classe, avec pages, exercices et exercices avec corrigé
 
 ## 4. Matrice des corrigés
 
-Par classe et matière. Page liée = corrigé sur une autre page du même livre (lien fait par l’IA, non vérifié à la main).
+Par classe et matière. Comptage exact, identique à l’export NotebookLM: un exercice a un corrigé seulement si son texte est retrouvé pour CE numéro d’exercice.
 
-| Classe | Matière | Exercices | Réponse dans l’exercice | Réponse sur la page | Corrigé sur page liée | Total avec corrigé | Pas encore de corrigé | Sans corrigé | % avec corrigé |
+| Classe | Matière | Exercices | Réponse dans l’exercice | Réponse sur la page | Corrigé exact sur page liée | Total avec corrigé | Page liée, sans correspondance exacte | Sans corrigé | % avec corrigé |
 |---|---|---|---|---|---|---|---|---|---|
-| 1ère Année | Mathématiques | 129 | 0 | 0 | 0 | 0 | 4 | 125 | 0% |
+| 1ère Année | Mathématiques | 129 | 0 | 0 | 0 | 0 | 0 | 129 | 0% |
 | 1ère Année | Arabe | 111 | 0 | 0 | 0 | 0 | 0 | 111 | 0% |
-| 2ème Année | Arabe | 86 | 0 | 0 | 0 | 0 | 44 | 42 | 0% |
-| 2ème Année | Mathématiques | 77 | 0 | 0 | 0 | 0 | 53 | 24 | 0% |
-| 2ème Année | Éveil scientifique | 34 | 0 | 0 | 0 | 0 | 20 | 14 | 0% |
-| 2ème Année | Éducation islamique | 27 | 0 | 0 | 0 | 0 | 20 | 7 | 0% |
-| 3ème Année | Arabe | 96 | 0 | 0 | 0 | 0 | 44 | 52 | 0% |
-| 3ème Année | Mathématiques | 65 | 0 | 0 | 0 | 0 | 55 | 10 | 0% |
-| 3ème Année | Éveil scientifique | 37 | 0 | 0 | 0 | 0 | 29 | 8 | 0% |
-| 3ème Année | Français | 34 | 0 | 0 | 0 | 0 | 18 | 16 | 0% |
-| 3ème Année | Éducation islamique | 19 | 0 | 0 | 0 | 0 | 15 | 4 | 0% |
-| 4ème Année | Mathématiques | 528 | 22 | 0 | 300 | 322 | 39 | 167 | 60% |
+| 2ème Année | Arabe | 86 | 0 | 0 | 0 | 0 | 0 | 86 | 0% |
+| 2ème Année | Mathématiques | 77 | 0 | 0 | 0 | 0 | 0 | 77 | 0% |
+| 2ème Année | Éveil scientifique | 34 | 0 | 0 | 0 | 0 | 0 | 34 | 0% |
+| 2ème Année | Éducation islamique | 27 | 0 | 0 | 0 | 0 | 0 | 27 | 0% |
+| 3ème Année | Arabe | 96 | 0 | 0 | 0 | 0 | 0 | 96 | 0% |
+| 3ème Année | Mathématiques | 65 | 0 | 0 | 0 | 0 | 0 | 65 | 0% |
+| 3ème Année | Éveil scientifique | 37 | 0 | 0 | 0 | 0 | 0 | 37 | 0% |
+| 3ème Année | Français | 34 | 0 | 0 | 0 | 0 | 0 | 34 | 0% |
+| 3ème Année | Éducation islamique | 19 | 0 | 0 | 0 | 0 | 0 | 19 | 0% |
+| 4ème Année | Mathématiques | 528 | 22 | 0 | 160 | 182 | 140 | 206 | 34% |
 | 4ème Année | Arabe | 47 | 0 | 0 | 0 | 0 | 0 | 47 | 0% |
-| 5ème Année | Mathématiques | 379 | 7 | 0 | 0 | 7 | 7 | 365 | 1% |
+| 5ème Année | Mathématiques | 379 | 7 | 0 | 0 | 7 | 0 | 372 | 1% |
 | 5ème Année | Éveil scientifique | 21 | 0 | 0 | 0 | 0 | 0 | 21 | 0% |
 | 5ème Année | Arabe | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 100% |
-| 6ème Année | Français | 799 | 2 | 0 | 285 | 287 | 297 | 215 | 35% |
-| 6ème Année | Mathématiques | 312 | 17 | 48 | 39 | 104 | 131 | 77 | 33% |
-| 6ème Année | Éveil scientifique | 188 | 20 | 0 | 9 | 29 | 0 | 159 | 15% |
-| 6ème Année | Arabe | 168 | 6 | 4 | 1 | 11 | 10 | 147 | 6% |
-| **Total** |  | **3158** | **75** | **52** | **634** | **761** | **786** | **1611** | **24%** |
+| 6ème Année | Français | 799 | 2 | 0 | 0 | 2 | 285 | 512 | 0% |
+| 6ème Année | Mathématiques | 312 | 17 | 43 | 0 | 60 | 39 | 213 | 19% |
+| 6ème Année | Éveil scientifique | 188 | 20 | 0 | 0 | 20 | 9 | 159 | 10% |
+| 6ème Année | Arabe | 168 | 6 | 3 | 0 | 9 | 1 | 158 | 5% |
+| **Total** |  | **3158** | **75** | **46** | **160** | **281** | **474** | **2403** | **8%** |
 
 ## 5. Matrice livre par classe et matière
 
@@ -576,11 +576,11 @@ Cellule = exercices prêts avec corrigé / exercices prêts, par format et mati�
 
 | Format | Mathématiques | Français | Arabe | Éveil scientifique | Éducation islamique |
 |---|---|---|---|---|---|
-| free | 98 / 332 | 130 / 365 | 9 / 154 | 9 / 89 | 0 / 6 |
-| fill_blank | 90 / 327 | 124 / 344 | 0 / 159 | 9 / 56 | 0 / 24 |
-| calculation | 134 / 442 | 0 / 0 | 1 / 24 | 1 / 10 | 0 / 1 |
-| matching | 32 / 100 | 3 / 17 | 0 / 53 | 4 / 44 | 0 / 10 |
-| qcm | 10 / 57 | 19 / 77 | 0 / 37 | 1 / 18 | 0 / 3 |
-| problem_solving | 39 / 101 | 10 / 14 | 2 / 6 | 0 / 45 | 0 / 2 |
+| free | 55 / 332 | 0 / 365 | 8 / 154 | 6 / 89 | 0 / 6 |
+| fill_blank | 57 / 327 | 1 / 344 | 0 / 159 | 5 / 56 | 0 / 24 |
+| calculation | 76 / 442 | 0 / 0 | 1 / 24 | 1 / 10 | 0 / 1 |
+| matching | 19 / 100 | 0 / 17 | 0 / 53 | 3 / 44 | 0 / 10 |
+| qcm | 6 / 57 | 0 / 77 | 0 / 37 | 1 / 18 | 0 / 3 |
+| problem_solving | 19 / 101 | 1 / 14 | 1 / 6 | 0 / 45 | 0 / 2 |
 | text_production | 0 / 0 | 0 / 2 | 0 / 52 | 0 / 0 | 0 / 0 |
-| true_false | 0 / 0 | 0 / 5 | 0 / 0 | 4 / 5 | 0 / 0 |
+| true_false | 0 / 0 | 0 / 5 | 0 / 0 | 3 / 5 | 0 / 0 |

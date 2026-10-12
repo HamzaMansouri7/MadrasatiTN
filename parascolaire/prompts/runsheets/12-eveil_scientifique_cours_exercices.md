@@ -34,13 +34,14 @@ Tick only: `01-la-circulation-sanguine-et-le-sang.md` · 25 exercises · 0 with 
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: La circulation sanguine et le sang (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: La circulation sanguine et le sang (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "الإيقاظ العلمي".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 01 · Présentation — slides
@@ -76,13 +77,14 @@ Tick only: `02-la-respiration.md` · 23 exercises · 0 with a correction · subj
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: La respiration (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: La respiration (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "الإيقاظ العلمي".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 02 · Présentation — slides
@@ -118,13 +120,14 @@ Tick only: `03-les-groupes-d-aliments-et-l-alimentation-equilibree.md` · 22 exe
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: Les groupes d'aliments et l'alimentation équilibrée (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: Les groupes d'aliments et l'alimentation équilibrée (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "الإيقاظ العلمي".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 03 · Présentation — slides
@@ -160,13 +163,14 @@ Tick only: `04-l-eau-et-sa-pollution.md` · 17 exercises · 0 with a correction 
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: L'eau et sa pollution (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: L'eau et sa pollution (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "الإيقاظ العلمي".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 04 · Présentation — slides
@@ -202,13 +206,14 @@ Tick only: `05-les-aimants-et-la-boussole.md` · 16 exercises · 0 with a correc
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: Les aimants et la boussole (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: Les aimants et la boussole (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "الإيقاظ العلمي".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 05 · Présentation — slides
@@ -244,13 +249,14 @@ Tick only: `06-energie-besoins-et-troubles-alimentaires.md` · 16 exercises · 0
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: Énergie, besoins et troubles alimentaires (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: Énergie, besoins et troubles alimentaires (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "الإيقاظ العلمي".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 06 · Présentation — slides
@@ -286,13 +292,14 @@ Tick only: `07-l-air-et-ses-proprietes.md` · 12 exercises · 0 with a correctio
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: L'air et ses propriétés (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: L'air et ses propriétés (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "الإيقاظ العلمي".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 07 · Présentation — slides
@@ -328,13 +335,14 @@ Tick only: `08-sante-defense-de-l-organisme-et-maladies.md` · 10 exercises · 4
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: Santé, défense de l'organisme et maladies (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Éveil scientifique. Theme: Santé, défense de l'organisme et maladies (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "الإيقاظ العلمي".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 08 · Présentation — slides

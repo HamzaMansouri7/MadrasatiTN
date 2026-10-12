@@ -40,13 +40,14 @@ Tick only: `01-conjugaison-pronoms-et-suffixes.md` · 33 exercises · 0 with a c
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Conjugaison: pronoms et suffixes (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Conjugaison: pronoms et suffixes (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "اللغة العربية".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 01 · Présentation — slides
@@ -82,13 +83,14 @@ Tick only: `02-les-participes.md` · 16 exercises · 0 with a correction · subj
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Les participes (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Les participes (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "اللغة العربية".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 02 · Présentation — slides
@@ -124,13 +126,14 @@ Tick only: `03-les-complements.md` · 13 exercises · 0 with a correction · sub
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Les compléments (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Les compléments (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "اللغة العربية".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 03 · Présentation — slides
@@ -166,13 +169,14 @@ Tick only: `04-orthographe-de-la-hamza.md` · 12 exercises · 0 with a correctio
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Orthographe de la hamza (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Orthographe de la hamza (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "اللغة العربية".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 04 · Présentation — slides
@@ -208,13 +212,14 @@ Tick only: `05-l-imperatif.md` · 9 exercises · 0 with a correction · subject 
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: L'impératif (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: L'impératif (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "اللغة العربية".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 05 · Présentation — slides
@@ -250,13 +255,14 @@ Tick only: `06-les-cinq-noms-et-l-annexion.md` · 9 exercises · 0 with a correc
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Les cinq noms et l'annexion (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Les cinq noms et l'annexion (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "اللغة العربية".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 06 · Présentation — slides
@@ -292,13 +298,14 @@ Tick only: `07-le-masdar.md` · 8 exercises · 0 with a correction · subject Ar
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Le masdar (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Le masdar (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "اللغة العربية".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 07 · Présentation — slides
@@ -334,13 +341,14 @@ Tick only: `08-les-pronoms.md` · 8 exercises · 0 with a correction · subject 
 Language **Arabic** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Les pronoms (write the theme title in Arabic, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Arabe. Theme: Les pronoms (write the theme title in Arabic, translated accurately).
 Header: the brand "مدرستي تونس" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "السنة السادسة" and "اللغة العربية".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN". 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 Footer: "مدرستي تونس".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 08 · Présentation — slides

@@ -173,14 +173,17 @@ Rule: finish and approve one book before opening the next notebook.
 ## 9. Output naming and storage
 
 ```
-<outputs-root>/<class>/<book-slug>/<theme-slug>/
-    infographic-portrait.png
-    slides-10.pdf   slides-10.pptx   slides/01.png … 10.png
-    video-short.mp4
+<outputs-root>/<class>/<book-slug>/
+    <strict filename, see below>      (one flat folder per book, no theme subfolder:
+    manifest.json                      the name carries the theme; keeps Windows paths under 260 chars)
 ```
 
-- `<outputs-root>` lives **outside the repo** (or in a gitignored folder): PDFs, images and video are large.
-- Keep one `manifest.json` per theme: book, theme, topicId, prompt used, settings used, date, reviewer status. This is what makes a result reproducible.
+**Strict filename (owner rule, 2026-10-12):** every file must be readable on its own, never generic:
+`<classe>__<livre>__<NN-theme>__<type-format>__v<N>.<ext>`
+e.g. `1ere-annee__evaluations-maths-arabe__02-comparaison-et-rangement-des-nombres__infographie-portrait__v4.png`. Hyphens inside a part, double underscore between parts. The run sheets print the exact name for each theme (`prompts/runsheets/chat/`).
+
+- `<outputs-root>` is `parascolaire/outputs/` (gitignored) and lives **outside the repo** (or in a gitignored folder): PDFs, images and video are large.
+- Keep one `manifest.json` per book (one entry per generated file): book, theme, topicId, prompt used, settings used, date, reviewer status. This is what makes a result reproducible.
 
 ## 10. Quality gate (every output)
 
@@ -449,6 +452,9 @@ Run section 17's table for every new book before generating anything: if it cann
 | Date | Output | Setting changed | Prompt version | Result (good / bad, why) | Keep? |
 |---|---|---|---|---|---|
 | 2026-10-11 | Infographic, notebook 01, theme *Comparaison et rangement des nombres* | Arabic, Portrait, Kawaii, Standard | infographic v1 (section 16.2 prompt) | **Good:** Arabic sharp and vowelled, Kawaii look fits age 6-7, clear 3-rule layout, 2 practice questions without answers. **Bad:** (1) English labels appeared although the language was Arabic; (2) rule examples reused the source exercise's own pictures and numbers (apples 7 vs bananas 5, snails 3 vs butterflies 6), which answers source exercise 1. | v2 needed: ban English text; ban reusing source objects or numbers in examples |
+| 2026-10-12 | Infographic, notebook 01, same theme | Arabic only, Portrait, Kawaii, brand + flag, no equations | infographic v3 (simplified) | **Good:** English gone, no source objects reused (balloons, balls, cars, ducks), flag + brand header and footer, vowelled Arabic sharp, clean 3-block layout, no answers shown. **Bad:** (1) duck example miscounted: left pond has 10 ducks, caption says 8; right has 5, caption says 4 (counted on a crop, `outputs/.../infographic-portrait-v3.png`); (2) number captions such as `(5 > 2)` and `(4 > 8)` read in the wrong visual order inside RTL text, so `4 > 8` looks false; (3) the big symbol reads left-to-right while the Arabic sentence reads right-to-left (rule 2 "<" vs caption), confusing for age 6-7; (4) exercise 2 starts with the `4` box on the left, but Arabic reads right-to-left, and the ladder shows 4 steps for 6 numbers; (5) a "Gemini Notebook" watermark at bottom right (accepted). | **No, v4 needed:** counted objects must be 2-9 and drawn exactly as many as the caption (or drop the counts from captions); no numeral-comparison captions in brackets; sentences only, no bare digits in RTL runs; put exercise number slots in RTL order |
+| 2026-10-12 | Infographic, notebook 01, same theme, **generated from the chat** (not the Studio button) | Notebook output language Arabic (global); chat custom instructions held the fixed rules; chat message = theme + Portrait + Kawaii only. Studio used all 25 sources (source filter not applied) | infographic v2 template rules moved into chat settings | **Good:** no digits, no miscounts, exactly 3 cards, vowelled Arabic, flag + brand ribbon, right-to-left order correct in cards 1 and 2 (smallest on the right, then growing). **Bad (minor):** card 3 is ambiguous: two pairs (pumpkin/mushroom, watermelon/strawberry) with `>` and `<` placed between groups, the "أصغر من" bubble sits on the larger fruit; Gemini Notebook watermark (accepted). Screenshot only, file not yet saved to `outputs/`. | **Yes, best so far.** Chat generation works and removes the per-output settings. Ask for card 3 with ONE pair only |
+| 2026-10-12 | **Deck test:** 3 slides, one infographic per slide (themes 02, 03, 06), one chat message, PDF export split by `tools/split_deck.py` into 3 PNG 2752x1536 | Landscape (slide shape), Kawaii, 3 files ticked/named | chat-deck v1 | **Good:** pipeline works end to end, no mixing between themes, vowelled Arabic sharp, no digits, resolution high, strict names produced by the tool. Slide 02 and 03 (money) approved. **Bad:** slide 06 (Addition jusqu'à 20) is pretty but vague: metaphors (merging drops, clouds into a pot, growing snowball) do not teach addition up to 20; the no-digits rule removes what a calculation theme needs. Flag is only a tiny emoji in the header text. | **Yes for concept themes** (comparison, money, reading, letters). **Open:** calculation themes need a different rule (allow ONE simple written operation, for example in a single LTR box). Test before bulk |
 | | | | | | |
 
 ## 19b. Google Vids: last step for narrated video (added 2026-10-11)
@@ -481,10 +487,21 @@ Rules:
 
 NotebookLM's own **Résumé vidéo** (section 16.4) stays the main video path. Vids is the option when the owner wants a narrated deck or an avatar presenter. Compare both on the same theme and log the result.
 
-## 20. Decisions needed from the owner
+## 20. Decisions and state (updated 2026-10-12)
 
-1. Pilot book: 4ème Maths — agree?
-2. Pilot theme: **Périmètre et aire** (proposed) or another from the table?
-3. `parascolaire/notebooklm/`: gitignored (regenerable) or pushed?
-4. Outputs root folder: where on disk?
-5. Google Vids (section 19b): confirm the plan you have there and whether to use the AI avatar.
+**Decided**
+1. Generation happens in the **notebook chat**, not on the Studio tiles. One global chat-settings file (`prompts/runsheets/chat/00-GLOBAL-CHAT-SETTINGS.md`) is pasted once per notebook.
+2. Infographics are made in **decks of up to 10 slides** (one infographic per slide), exported as PDF and split by `tools/split_deck.py`. Course slides are one 8-slide deck per theme. PDF, not PowerPoint.
+3. Outputs live in `parascolaire/outputs/<classe>/<livre>/` (gitignored), flat folder, strict filenames (section 9), one manifest per book, `outputs/PROGRESS.md` for the status of every theme. Exact duplicates are deleted (`tools/dedupe_outputs.py`, run first).
+4. Digits: sources use 0-9 only; the global settings forbid Arabic-Indic digits.
+5. Prompt templates are versioned (`*.v1.md`, `*.v2.md`); the generator takes the newest.
+
+**State of notebook 01 (24 themes, Maths + Arabe):** infographics approved 16, to redo 8 (7 Maths themes with Arabic-Indic digits, theme 21 off-theme); course slides 4 of 24 (themes 02, 03, 04, 06); videos 0 (chat video start is untested).
+
+**Still open**
+- Redo the Maths 1 deck after re-pasting the updated global settings; redo theme 21 with "one picture per numeral".
+- Course slides for the 20 remaining themes (one message each, in the chat sheet).
+- Videos: test one chat message first. Google Vids plan (19b) unchanged, not started.
+- Notebook 06 (Antigravity) CHECK.md not seen. Notebook 04 pilot (Périmètre et aire) not started.
+- Whether decks of course slides can be batched: untested.
+

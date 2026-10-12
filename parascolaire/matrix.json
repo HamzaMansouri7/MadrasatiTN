@@ -78,7 +78,7 @@
     "4ème Année | Mathématiques": {
       "exercises": 528,
       "ready": 489,
-      "withCorrection": 322,
+      "withCorrection": 182,
       "linkedToCurriculum": 344
     },
     "5ème Année | Arabe": {
@@ -102,25 +102,25 @@
     "6ème Année | Arabe": {
       "exercises": 168,
       "ready": 162,
-      "withCorrection": 11,
+      "withCorrection": 9,
       "linkedToCurriculum": 59
     },
     "6ème Année | Français": {
       "exercises": 799,
       "ready": 790,
-      "withCorrection": 287,
+      "withCorrection": 2,
       "linkedToCurriculum": 361
     },
     "6ème Année | Mathématiques": {
       "exercises": 312,
       "ready": 285,
-      "withCorrection": 104,
+      "withCorrection": 60,
       "linkedToCurriculum": 145
     },
     "6ème Année | Éveil scientifique": {
       "exercises": 188,
       "ready": 176,
-      "withCorrection": 29,
+      "withCorrection": 20,
       "linkedToCurriculum": 165
     }
   }

@@ -9,6 +9,9 @@ Add a table = write one function returning a list of markdown lines, then regist
 import json, sys, collections
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import export_notebooklm as exp          # same exact-match correction logic as the NotebookLM export
+
 sys.stdout.reconfigure(encoding='utf-8')
 ROOT = Path(__file__).resolve().parent.parent          # .../parascolaire
 LIVRES = ROOT / 'livres'
@@ -28,15 +31,26 @@ for bj in sorted(LIVRES.glob('*/*/book.json')):
         pages.append(load_json(pf))
     ex = bj.parent / 'exercices.json'
     if ex.exists():
-        rows += [r for r in load_json(ex)['exercises'] if r.get('kind') == 'exercise']
+        brows = [r for r in load_json(ex)['exercises'] if r.get('kind') == 'exercise']
+        bpages = {int(pf.stem): load_json(pf) for pf in (bj.parent / 'pages').glob('*.json')}
+        bitems = {it['id']: it for pg in bpages.values() for it in pg['items'] if it.get('id')}
+        cidx = {}
+        for r in brows:
+            if r['page'] not in cidx:
+                cidx[r['page']] = exp.build_correction_index([x for x in brows if x['page'] == r['page']], r['page'], bpages)
+            it = bitems.get(r['id'])
+            txt, st = exp.correction_for(r, it, cidx[r['page']]) if it else (None, 'none')
+            # exact correction: text really found for THIS exercise. 'unmatched' = linked page exists, no exact match.
+            r['_corr'] = r['correction'] if txt else ('unmatched' if st == 'unmatched' else 'none')
+        rows += brows
 
 gkey = lambda g: int(g[0])
 bk = lambda slug: books[slug]['title'] if slug in books else slug
 ptype = lambda d: d.get('pageType') or d.get('tags', {}).get('pageType')
 SUBJ = lambda d: d.get('labels', {}).get('pageSubject') or d.get('tags', {}).get('subject')
 audited = lambda d: d.get('quality', {}).get('status', 'audit_pending') not in ('audit_pending', 'recheck_pending')
-has_corr = lambda d, i: bool(i.get('answer') or any(x['kind'] == 'answer' for x in d['items'])
-                             or d.get('selfContained') or d.get('correctionPages'))
+EXACT = {r['id'] for r in rows if r['_corr'] in ('inline', 'linked', 'self_contained')}   # exact match only
+has_corr = lambda d, i: i.get('id') in EXACT
 WITH_CORR = ('inline', 'linked', 'self_contained')       # exercise-level correction values
 pct = lambda a, b: f'{100 * a // b}%' if b else '-'
 
@@ -117,14 +131,14 @@ def t_subject_themes():
 def t_corrections():
     C = collections.defaultdict(collections.Counter)
     for r in rows:
-        c = C[(r['grade'], r['subject'])]; c['ex'] += 1; c[r['correction']] += 1
+        c = C[(r['grade'], r['subject'])]; c['ex'] += 1; c[r['_corr']] += 1
     body = []; T = collections.Counter()
     for (g, s), c in sorted(C.items(), key=lambda kv: (gkey(kv[0][0]), -kv[1]['ex'])):
         T.update(c); w = sum(c[k] for k in WITH_CORR)
-        body.append([g, s, c['ex'], c['inline'], c['self_contained'], c['linked'], w, c['no_correction_yet'], c['none'], pct(w, c['ex'])])
+        body.append([g, s, c['ex'], c['inline'], c['self_contained'], c['linked'], w, c['unmatched'], c['no_correction_yet'] + c['none'], pct(w, c['ex'])])
     w = sum(T[k] for k in WITH_CORR)
-    return table(['Classe', 'Matière', 'Exercices', 'Réponse dans l’exercice', 'Réponse sur la page', 'Corrigé sur page liée', 'Total avec corrigé', 'Pas encore de corrigé', 'Sans corrigé', '% avec corrigé'],
-                 body, ['Total', '', T['ex'], T['inline'], T['self_contained'], T['linked'], w, T['no_correction_yet'], T['none'], pct(w, T['ex'])])
+    return table(['Classe', 'Matière', 'Exercices', 'Réponse dans l’exercice', 'Réponse sur la page', 'Corrigé exact sur page liée', 'Total avec corrigé', 'Page liée, sans correspondance exacte', 'Sans corrigé', '% avec corrigé'],
+                 body, ['Total', '', T['ex'], T['inline'], T['self_contained'], T['linked'], w, T['unmatched'], T['no_correction_yet'] + T['none'], pct(w, T['ex'])])
 
 
 def t_book_class_subject():
@@ -211,7 +225,7 @@ def t_presets():
     for r in rows:
         if r['tier'] != 'ready': continue
         f = r.get('format') or 'free'; s = r['subject']; subs[s] += 1
-        C[f][s] += 1; C[f][s + '|c'] += r['correction'] in WITH_CORR
+        C[f][s] += 1; C[f][s + '|c'] += r['_corr'] in WITH_CORR
     cols = [s for s, _ in subs.most_common(5)]
     body = [[f] + [f"{c[s + '|c']} / {c[s]}" for s in cols] for f, c in sorted(C.items(), key=lambda kv: -sum(v for k, v in kv[1].items() if '|' not in k))]
     return table(['Format'] + cols, body)
@@ -222,7 +236,7 @@ TABLES = [
     ('1. Matrice par classe', 'Chiffres globaux. Contrôlés = exercices sur une page auditée. Avec corrigé = réponse dans l’exercice, sur la page ou sur une page de corrigé liée.', t_by_class),
     ('2. Matrice classe par matière', 'Cellule = pages / exercices. La matière est une étiquette par page (un livre peut mêler plusieurs matières).', t_class_subject),
     ('3. Matrice matière par thème', 'Thèmes normalisés par classe, avec pages, exercices et exercices avec corrigé.', t_subject_themes),
-    ('4. Matrice des corrigés', 'Par classe et matière. Page liée = corrigé sur une autre page du même livre (lien fait par l’IA, non vérifié à la main).', t_corrections),
+    ('4. Matrice des corrigés', 'Par classe et matière. Comptage exact, identique à l’export NotebookLM: un exercice a un corrigé seulement si son texte est retrouvé pour CE numéro d’exercice.', t_corrections),
     ('5. Matrice livre par classe et matière', 'Quels livres couvrent quelle matière.', t_book_class_subject),
     ('6. Matrice formats de page par matière', 'Nombre de pages contenant chaque format (étiquette de page). Une page peut avoir plusieurs formats.', t_formats_subject),
     ('6b. Matrice classe par format d’exercice', 'Formats détectés par règles sur la consigne et l’énoncé.', t_class_format),
@@ -250,7 +264,7 @@ summary = collections.defaultdict(collections.Counter)
 for r in rows:
     k = f"{r['grade']} | {r['subject']}"
     summary[k]['exercises'] += 1; summary[k]['ready'] += r['tier'] == 'ready'
-    summary[k]['withCorrection'] += r['correction'] in WITH_CORR; summary[k]['linkedToCurriculum'] += bool(r.get('topicId'))
+    summary[k]['withCorrection'] += r['_corr'] in WITH_CORR; summary[k]['linkedToCurriculum'] += bool(r.get('topicId'))
 (ROOT / 'matrix.json').write_text(json.dumps({'books': len(books), 'pages': len(pages), 'exercises': len(rows),
                                               'byClassSubject': {k: dict(v) for k, v in sorted(summary.items())}}, ensure_ascii=False, indent=2), encoding='utf-8')
 print(f'MATRIX.md written, {len(out)} lines · books {len(books)} · pages {len(pages)} · exercises {len(rows)}')

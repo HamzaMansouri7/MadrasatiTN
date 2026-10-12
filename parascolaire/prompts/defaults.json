@@ -138,5 +138,8 @@
   "brand": {
     "name_ar": "مدرستي تونس",
     "name_latin": "Madrasati TN"
+  },
+  "chat": {
+    "deck_size": 10
   }
 }

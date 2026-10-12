@@ -38,13 +38,14 @@ Tick only: `01-le-texte-narratif.md` · 161 exercises · 0 with a correction · 
 Language **French** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Le texte narratif (write the theme title in French, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Le texte narratif (write the theme title in French, translated accurately).
 Header: the brand "Madrasati TN" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "6ème année" and "Français".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in French only. No other language. 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in French only. No other language.
 Footer: "Madrasati TN".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 01 · Présentation — slides
@@ -80,13 +81,14 @@ Tick only: `02-sante-et-hygiene-de-vie.md` · 48 exercises · 0 with a correctio
 Language **French** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Santé et hygiène de vie (write the theme title in French, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Santé et hygiène de vie (write the theme title in French, translated accurately).
 Header: the brand "Madrasati TN" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "6ème année" and "Français".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in French only. No other language. 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in French only. No other language.
 Footer: "Madrasati TN".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 02 · Présentation — slides
@@ -122,13 +124,14 @@ Tick only: `03-conjugaison.md` · 35 exercises · 2 with a correction · subject
 Language **French** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Conjugaison (write the theme title in French, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Conjugaison (write the theme title in French, translated accurately).
 Header: the brand "Madrasati TN" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "6ème année" and "Français".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in French only. No other language. 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in French only. No other language.
 Footer: "Madrasati TN".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 03 · Présentation — slides
@@ -164,13 +167,14 @@ Tick only: `04-grammaire-la-phrase.md` · 34 exercises · 0 with a correction ·
 Language **French** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Grammaire: la phrase (write the theme title in French, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Grammaire: la phrase (write the theme title in French, translated accurately).
 Header: the brand "Madrasati TN" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "6ème année" and "Français".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in French only. No other language. 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in French only. No other language.
 Footer: "Madrasati TN".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 04 · Présentation — slides
@@ -206,13 +210,14 @@ Tick only: `05-textes-documentaires.md` · 32 exercises · 0 with a correction �
 Language **French** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Textes documentaires (write the theme title in French, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Textes documentaires (write the theme title in French, translated accurately).
 Header: the brand "Madrasati TN" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "6ème année" and "Français".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in French only. No other language. 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in French only. No other language.
 Footer: "Madrasati TN".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 05 · Présentation — slides
@@ -248,13 +253,14 @@ Tick only: `06-metiers-citoyennete-et-vie-sociale.md` · 20 exercises · 0 with 
 Language **French** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Métiers, citoyenneté et vie sociale (write the theme title in French, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Métiers, citoyenneté et vie sociale (write the theme title in French, translated accurately).
 Header: the brand "Madrasati TN" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "6ème année" and "Français".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in French only. No other language. 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in French only. No other language.
 Footer: "Madrasati TN".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 06 · Présentation — slides
@@ -290,13 +296,14 @@ Tick only: `07-textes-descriptifs-et-biographiques.md` · 19 exercises · 0 with
 Language **French** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Textes descriptifs et biographiques (write the theme title in French, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Textes descriptifs et biographiques (write the theme title in French, translated accurately).
 Header: the brand "Madrasati TN" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "6ème année" and "Français".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in French only. No other language. 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in French only. No other language.
 Footer: "Madrasati TN".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 07 · Présentation — slides
@@ -332,13 +339,14 @@ Tick only: `08-orthographe-et-accords.md` · 18 exercises · 0 with a correction
 Language **French** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Orthographe et accords (write the theme title in French, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Orthographe et accords (write the theme title in French, translated accurately).
 Header: the brand "Madrasati TN" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "6ème année" and "Français".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in French only. No other language. 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in French only. No other language.
 Footer: "Madrasati TN".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 08 · Présentation — slides
@@ -374,13 +382,14 @@ Tick only: `09-contes-et-recits-legendaires.md` · 16 exercises · 0 with a corr
 Language **French** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Contes et récits légendaires (write the theme title in French, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Contes et récits légendaires (write the theme title in French, translated accurately).
 Header: the brand "Madrasati TN" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "6ème année" and "Français".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in French only. No other language. 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in French only. No other language.
 Footer: "Madrasati TN".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 09 · Présentation — slides
@@ -416,13 +425,14 @@ Tick only: `10-lexique-et-vocabulaire.md` · 10 exercises · 0 with a correction
 Language **French** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Lexique et vocabulaire (write the theme title in French, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Lexique et vocabulaire (write the theme title in French, translated accurately).
 Header: the brand "Madrasati TN" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "6ème année" and "Français".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in French only. No other language. 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in French only. No other language.
 Footer: "Madrasati TN".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 10 · Présentation — slides
@@ -458,13 +468,14 @@ Tick only: `11-revisions-et-evaluations.md` · 10 exercises · 0 with a correcti
 Language **French** · orientation **Portrait** · style **Croquis** · detail **Standard**
 
 ```text
-Madrasati TN. Educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Révisions et évaluations (write the theme title in French, translated accurately).
+Madrasati TN. Simple educational infographic for Tunisian primary pupils, 6th grade (age 11-12). Subject: Français. Theme: Révisions et évaluations (write the theme title in French, translated accurately).
 Header: the brand "Madrasati TN" with a small accurate Tunisian flag (red field, white circle, red crescent and star), and two tags: "6ème année" and "Français".
-Body: three or four big cards, one per key idea of the theme, each with one clear picture and at most a short caption.
-Keep the text minimal. No equations and no long sentences inside the picture.
-All text in French only. No other language. 
+Body: exactly three big cards, one per key idea of the theme, each with one clear picture and one short caption of at most five words.
+Use no digits, no numbers and no equations anywhere. Explain with words and simple shapes only. Do not show counted groups of objects.
+Text reads right to left. Put the cards in reading order, top to bottom.
+All text in French only. No other language.
 Footer: "Madrasati TN".
-Use only the selected sources. Do not answer the source exercises. Do not reuse objects or numbers from the source exercises in your examples; use different objects.
+Use only the selected sources. Do not answer the source exercises. Do not reuse objects from the source exercises; use different ones.
 ```
 
 ### 11 · Présentation — slides
