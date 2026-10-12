@@ -496,7 +496,7 @@ NotebookLM's own **Résumé vidéo** (section 16.4) stays the main video path. V
 4. Digits: sources use 0-9 only; the global settings forbid Arabic-Indic digits.
 5. Prompt templates are versioned (`*.v1.md`, `*.v2.md`); the generator takes the newest.
 
-**State of notebook 01 (24 themes, Maths + Arabe):** infographics approved 16, to redo 8 (7 Maths themes with Arabic-Indic digits, theme 21 off-theme); course slides 4 of 24 (themes 02, 03, 04, 06); videos 0 (chat video start is untested).
+**State of notebook 01 (24 themes, Maths + Arabe):** infographics approved 16, to redo 8 (7 Maths themes with Arabic-Indic digits, theme 21 off-theme); course slides 5 of 24 (themes 02, 03, 04, 06, 08; next 10); videos 0 (chat video start is untested).
 
 **Still open**
 - Redo the Maths 1 deck after re-pasting the updated global settings; redo theme 21 with "one picture per numeral".
