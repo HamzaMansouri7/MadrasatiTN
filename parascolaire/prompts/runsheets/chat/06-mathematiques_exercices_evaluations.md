@@ -20,14 +20,14 @@ Tick only the file named in the message in the Sources panel, paste the message 
 | 5 | Problèmes d'achat, vente et bénéfice | `05-problemes-d-achat-vente-et-benefice.md` | [ ] |
 | 6 | Nombres décimaux : notions et comparaison | `06-nombres-decimaux-notions-et-comparaison.md` | [ ] |
 | 7 | Mesures de durées | `07-mesures-de-durees.md` | [ ] |
-| 8 | Grands nombres entiers | `08-grands-nombres-entiers.md` | [ ] |
-| 9 | Mesures de masses et de capacités | `09-mesures-de-masses-et-de-capacites.md` | [ ] |
-| 10 | Quadrilatères, symétrie et repérage | `10-quadrilateres-symetrie-et-reperage.md` | [ ] |
-| 11 | Division euclidienne | `11-division-euclidienne.md` | [ ] |
+| 8 | Division euclidienne | `08-division-euclidienne.md` | [ ] |
+| 9 | Grands nombres entiers | `09-grands-nombres-entiers.md` | [ ] |
+| 10 | Droites, médiatrice et bissectrice | `10-droites-mediatrice-et-bissectrice.md` | [ ] |
+| 11 | Mesures de masses et de capacités | `11-mesures-de-masses-et-de-capacites.md` | [ ] |
 | 12 | Fractions | `12-fractions.md` | [ ] |
-| 13 | Opérations sur les entiers | `13-operations-sur-les-entiers.md` | [ ] |
-| 14 | Proportionnalité et problèmes de mesures | `14-proportionnalite-et-problemes-de-mesures.md` | [ ] |
-| 15 | Droites, médiatrice et bissectrice | `15-droites-mediatrice-et-bissectrice.md` | [ ] |
+| 13 | Quadrilatères, symétrie et repérage | `13-quadrilateres-symetrie-et-reperage.md` | [ ] |
+| 14 | Opérations sur les entiers | `14-operations-sur-les-entiers.md` | [ ] |
+| 15 | Proportionnalité et problèmes de mesures | `15-proportionnalite-et-problemes-de-mesures.md` | [ ] |
 
 ### 01 · Opérations sur les décimaux (Mathématiques)
 
@@ -120,56 +120,56 @@ All text in Arabic only, fully vowelled Modern Standard Arabic. No other languag
 Save as: `5eme-annee__mathematiques-exercices-evaluations__07-mesures-de-durees__infographie-portrait__v1.png`
 Folder: `outputs/5eme_annee/mathematiques_exercices_evaluations/`
 
-### 08 · Grands nombres entiers (Mathématiques)
+### 08 · Division euclidienne (Mathématiques)
 
 ```text
-Create an infographic in Studio, Portrait, Croquis style, for the theme "Grands nombres entiers", 5th grade (age 10-11), Mathématiques. Use only the source file 08-grands-nombres-entiers.md.
+Create an infographic in Studio, Portrait, Croquis style, for the theme "Division euclidienne", 5th grade (age 10-11), Mathématiques. Use only the source file 08-division-euclidienne.md.
 Header: the brand "مدرستي تونس", a clearly visible Tunisian flag drawn as its own small picture (not an emoji in the text), the theme title, and two tags: "السنة الخامسة" and "الرياضيات". Footer: the brand.
 Body: exactly three big cards, one idea each, one picture and a caption of at most five words. One simple comparison per card, with ONE pair only.
 No equations and no counted groups of objects. If the theme is about calculating, show ONE simple written operation (digits under 20, different numbers from the source exercises) inside a single box read left to right; otherwise use no digits at all. Reading order follows the language direction.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__08-grands-nombres-entiers__infographie-portrait__v1.png`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__08-division-euclidienne__infographie-portrait__v1.png`
 Folder: `outputs/5eme_annee/mathematiques_exercices_evaluations/`
 
-### 09 · Mesures de masses et de capacités (Mathématiques)
+### 09 · Grands nombres entiers (Mathématiques)
 
 ```text
-Create an infographic in Studio, Portrait, Croquis style, for the theme "Mesures de masses et de capacités", 5th grade (age 10-11), Mathématiques. Use only the source file 09-mesures-de-masses-et-de-capacites.md.
+Create an infographic in Studio, Portrait, Croquis style, for the theme "Grands nombres entiers", 5th grade (age 10-11), Mathématiques. Use only the source file 09-grands-nombres-entiers.md.
 Header: the brand "مدرستي تونس", a clearly visible Tunisian flag drawn as its own small picture (not an emoji in the text), the theme title, and two tags: "السنة الخامسة" and "الرياضيات". Footer: the brand.
 Body: exactly three big cards, one idea each, one picture and a caption of at most five words. One simple comparison per card, with ONE pair only.
 No equations and no counted groups of objects. If the theme is about calculating, show ONE simple written operation (digits under 20, different numbers from the source exercises) inside a single box read left to right; otherwise use no digits at all. Reading order follows the language direction.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__09-mesures-de-masses-et-de-capacites__infographie-portrait__v1.png`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__09-grands-nombres-entiers__infographie-portrait__v1.png`
 Folder: `outputs/5eme_annee/mathematiques_exercices_evaluations/`
 
-### 10 · Quadrilatères, symétrie et repérage (Mathématiques)
+### 10 · Droites, médiatrice et bissectrice (Mathématiques)
 
 ```text
-Create an infographic in Studio, Portrait, Croquis style, for the theme "Quadrilatères, symétrie et repérage", 5th grade (age 10-11), Mathématiques. Use only the source file 10-quadrilateres-symetrie-et-reperage.md.
+Create an infographic in Studio, Portrait, Croquis style, for the theme "Droites, médiatrice et bissectrice", 5th grade (age 10-11), Mathématiques. Use only the source file 10-droites-mediatrice-et-bissectrice.md.
 Header: the brand "مدرستي تونس", a clearly visible Tunisian flag drawn as its own small picture (not an emoji in the text), the theme title, and two tags: "السنة الخامسة" and "الرياضيات". Footer: the brand.
 Body: exactly three big cards, one idea each, one picture and a caption of at most five words. One simple comparison per card, with ONE pair only.
 No equations and no counted groups of objects. If the theme is about calculating, show ONE simple written operation (digits under 20, different numbers from the source exercises) inside a single box read left to right; otherwise use no digits at all. Reading order follows the language direction.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__10-quadrilateres-symetrie-et-reperage__infographie-portrait__v1.png`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__10-droites-mediatrice-et-bissectrice__infographie-portrait__v1.png`
 Folder: `outputs/5eme_annee/mathematiques_exercices_evaluations/`
 
-### 11 · Division euclidienne (Mathématiques)
+### 11 · Mesures de masses et de capacités (Mathématiques)
 
 ```text
-Create an infographic in Studio, Portrait, Croquis style, for the theme "Division euclidienne", 5th grade (age 10-11), Mathématiques. Use only the source file 11-division-euclidienne.md.
+Create an infographic in Studio, Portrait, Croquis style, for the theme "Mesures de masses et de capacités", 5th grade (age 10-11), Mathématiques. Use only the source file 11-mesures-de-masses-et-de-capacites.md.
 Header: the brand "مدرستي تونس", a clearly visible Tunisian flag drawn as its own small picture (not an emoji in the text), the theme title, and two tags: "السنة الخامسة" and "الرياضيات". Footer: the brand.
 Body: exactly three big cards, one idea each, one picture and a caption of at most five words. One simple comparison per card, with ONE pair only.
 No equations and no counted groups of objects. If the theme is about calculating, show ONE simple written operation (digits under 20, different numbers from the source exercises) inside a single box read left to right; otherwise use no digits at all. Reading order follows the language direction.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__11-division-euclidienne__infographie-portrait__v1.png`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__11-mesures-de-masses-et-de-capacites__infographie-portrait__v1.png`
 Folder: `outputs/5eme_annee/mathematiques_exercices_evaluations/`
 
 ### 12 · Fractions (Mathématiques)
@@ -185,43 +185,43 @@ All text in Arabic only, fully vowelled Modern Standard Arabic. No other languag
 Save as: `5eme-annee__mathematiques-exercices-evaluations__12-fractions__infographie-portrait__v1.png`
 Folder: `outputs/5eme_annee/mathematiques_exercices_evaluations/`
 
-### 13 · Opérations sur les entiers (Mathématiques)
+### 13 · Quadrilatères, symétrie et repérage (Mathématiques)
 
 ```text
-Create an infographic in Studio, Portrait, Croquis style, for the theme "Opérations sur les entiers", 5th grade (age 10-11), Mathématiques. Use only the source file 13-operations-sur-les-entiers.md.
+Create an infographic in Studio, Portrait, Croquis style, for the theme "Quadrilatères, symétrie et repérage", 5th grade (age 10-11), Mathématiques. Use only the source file 13-quadrilateres-symetrie-et-reperage.md.
 Header: the brand "مدرستي تونس", a clearly visible Tunisian flag drawn as its own small picture (not an emoji in the text), the theme title, and two tags: "السنة الخامسة" and "الرياضيات". Footer: the brand.
 Body: exactly three big cards, one idea each, one picture and a caption of at most five words. One simple comparison per card, with ONE pair only.
 No equations and no counted groups of objects. If the theme is about calculating, show ONE simple written operation (digits under 20, different numbers from the source exercises) inside a single box read left to right; otherwise use no digits at all. Reading order follows the language direction.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__13-operations-sur-les-entiers__infographie-portrait__v1.png`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__13-quadrilateres-symetrie-et-reperage__infographie-portrait__v1.png`
 Folder: `outputs/5eme_annee/mathematiques_exercices_evaluations/`
 
-### 14 · Proportionnalité et problèmes de mesures (Mathématiques)
+### 14 · Opérations sur les entiers (Mathématiques)
 
 ```text
-Create an infographic in Studio, Portrait, Croquis style, for the theme "Proportionnalité et problèmes de mesures", 5th grade (age 10-11), Mathématiques. Use only the source file 14-proportionnalite-et-problemes-de-mesures.md.
+Create an infographic in Studio, Portrait, Croquis style, for the theme "Opérations sur les entiers", 5th grade (age 10-11), Mathématiques. Use only the source file 14-operations-sur-les-entiers.md.
 Header: the brand "مدرستي تونس", a clearly visible Tunisian flag drawn as its own small picture (not an emoji in the text), the theme title, and two tags: "السنة الخامسة" and "الرياضيات". Footer: the brand.
 Body: exactly three big cards, one idea each, one picture and a caption of at most five words. One simple comparison per card, with ONE pair only.
 No equations and no counted groups of objects. If the theme is about calculating, show ONE simple written operation (digits under 20, different numbers from the source exercises) inside a single box read left to right; otherwise use no digits at all. Reading order follows the language direction.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__14-proportionnalite-et-problemes-de-mesures__infographie-portrait__v1.png`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__14-operations-sur-les-entiers__infographie-portrait__v1.png`
 Folder: `outputs/5eme_annee/mathematiques_exercices_evaluations/`
 
-### 15 · Droites, médiatrice et bissectrice (Mathématiques)
+### 15 · Proportionnalité et problèmes de mesures (Mathématiques)
 
 ```text
-Create an infographic in Studio, Portrait, Croquis style, for the theme "Droites, médiatrice et bissectrice", 5th grade (age 10-11), Mathématiques. Use only the source file 15-droites-mediatrice-et-bissectrice.md.
+Create an infographic in Studio, Portrait, Croquis style, for the theme "Proportionnalité et problèmes de mesures", 5th grade (age 10-11), Mathématiques. Use only the source file 15-proportionnalite-et-problemes-de-mesures.md.
 Header: the brand "مدرستي تونس", a clearly visible Tunisian flag drawn as its own small picture (not an emoji in the text), the theme title, and two tags: "السنة الخامسة" and "الرياضيات". Footer: the brand.
 Body: exactly three big cards, one idea each, one picture and a caption of at most five words. One simple comparison per card, with ONE pair only.
 No equations and no counted groups of objects. If the theme is about calculating, show ONE simple written operation (digits under 20, different numbers from the source exercises) inside a single box read left to right; otherwise use no digits at all. Reading order follows the language direction.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__15-droites-mediatrice-et-bissectrice__infographie-portrait__v1.png`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__15-proportionnalite-et-problemes-de-mesures__infographie-portrait__v1.png`
 Folder: `outputs/5eme_annee/mathematiques_exercices_evaluations/`
 
 ## Decks of 10 infographics (UNTESTED until the 3-slide test passes, see chat-deck.v1.md)
@@ -239,9 +239,9 @@ Create a Studio slide deck of exactly 10 slides, Portrait if possible. Each slid
 5. "Problèmes d'achat, vente et bénéfice" (source file 05-problemes-d-achat-vente-et-benefice.md)
 6. "Nombres décimaux : notions et comparaison" (source file 06-nombres-decimaux-notions-et-comparaison.md)
 7. "Mesures de durées" (source file 07-mesures-de-durees.md)
-8. "Grands nombres entiers" (source file 08-grands-nombres-entiers.md)
-9. "Mesures de masses et de capacités" (source file 09-mesures-de-masses-et-de-capacites.md)
-10. "Quadrilatères, symétrie et repérage" (source file 10-quadrilateres-symetrie-et-reperage.md)
+8. "Division euclidienne" (source file 08-division-euclidienne.md)
+9. "Grands nombres entiers" (source file 09-grands-nombres-entiers.md)
+10. "Droites, médiatrice et bissectrice" (source file 10-droites-mediatrice-et-bissectrice.md)
 Same layout on every slide: header with the brand "مدرستي تونس", a clearly visible Tunisian flag drawn as its own small picture (not an emoji in the text) and the theme title; exactly three big cards, one picture and a caption of at most five words each, ONE pair only per card; footer with the brand.
 No equations and no counted groups of objects. If the theme is about calculating, show ONE simple written operation (digits under 20, different numbers from the source exercises) inside a single box read left to right; otherwise use no digits at all. Use different objects on each slide. Each slide uses only the source file named for it.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
@@ -253,11 +253,11 @@ Save as: `5eme-annee__mathematiques-exercices-evaluations__themes-01-02-03-04-05
 
 ```text
 Create a Studio slide deck of exactly 5 slides, Portrait if possible. Each slide is ONE complete infographic for 5th grade pupils (age 10-11), Croquis style, one theme per slide, in this order:
-1. "Division euclidienne" (source file 11-division-euclidienne.md)
+1. "Mesures de masses et de capacités" (source file 11-mesures-de-masses-et-de-capacites.md)
 2. "Fractions" (source file 12-fractions.md)
-3. "Opérations sur les entiers" (source file 13-operations-sur-les-entiers.md)
-4. "Proportionnalité et problèmes de mesures" (source file 14-proportionnalite-et-problemes-de-mesures.md)
-5. "Droites, médiatrice et bissectrice" (source file 15-droites-mediatrice-et-bissectrice.md)
+3. "Quadrilatères, symétrie et repérage" (source file 13-quadrilateres-symetrie-et-reperage.md)
+4. "Opérations sur les entiers" (source file 14-operations-sur-les-entiers.md)
+5. "Proportionnalité et problèmes de mesures" (source file 15-proportionnalite-et-problemes-de-mesures.md)
 Same layout on every slide: header with the brand "مدرستي تونس", a clearly visible Tunisian flag drawn as its own small picture (not an emoji in the text) and the theme title; exactly three big cards, one picture and a caption of at most five words each, ONE pair only per card; footer with the brand.
 No equations and no counted groups of objects. If the theme is about calculating, show ONE simple written operation (digits under 20, different numbers from the source exercises) inside a single box read left to right; otherwise use no digits at all. Use different objects on each slide. Each slide uses only the source file named for it.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
@@ -367,10 +367,10 @@ All text in Arabic only, fully vowelled Modern Standard Arabic. No other languag
 
 Save as: `5eme-annee__mathematiques-exercices-evaluations__07-mesures-de-durees__diaporama-cours__v1.pdf`
 
-### 08 · Grands nombres entiers (Mathématiques)
+### 08 · Division euclidienne (Mathématiques)
 
 ```text
-Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Grands nombres entiers" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 08-grands-nombres-entiers.md.
+Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Division euclidienne" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 08-division-euclidienne.md.
 Slide 1: title with the theme, the brand "مدرستي تونس" and a clearly visible Tunisian flag drawn as a small picture.
 Slides 2-4: one key idea each, one simple worked example of your own and one picture. The sources hold few or no corrections for this theme: never write or invent an answer to a source exercise.
 Slides 5-7: one practice exercise each, copied exactly from the source file, question only, no answer.
@@ -379,12 +379,12 @@ Large readable text, one idea per slide. Numbers must stay under 100000.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__08-grands-nombres-entiers__diaporama-cours__v1.pdf`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__08-division-euclidienne__diaporama-cours__v1.pdf`
 
-### 09 · Mesures de masses et de capacités (Mathématiques)
+### 09 · Grands nombres entiers (Mathématiques)
 
 ```text
-Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Mesures de masses et de capacités" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 09-mesures-de-masses-et-de-capacites.md.
+Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Grands nombres entiers" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 09-grands-nombres-entiers.md.
 Slide 1: title with the theme, the brand "مدرستي تونس" and a clearly visible Tunisian flag drawn as a small picture.
 Slides 2-4: one key idea each, one simple worked example of your own and one picture. The sources hold few or no corrections for this theme: never write or invent an answer to a source exercise.
 Slides 5-7: one practice exercise each, copied exactly from the source file, question only, no answer.
@@ -393,12 +393,12 @@ Large readable text, one idea per slide. Numbers must stay under 100000.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__09-mesures-de-masses-et-de-capacites__diaporama-cours__v1.pdf`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__09-grands-nombres-entiers__diaporama-cours__v1.pdf`
 
-### 10 · Quadrilatères, symétrie et repérage (Mathématiques)
+### 10 · Droites, médiatrice et bissectrice (Mathématiques)
 
 ```text
-Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Quadrilatères, symétrie et repérage" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 10-quadrilateres-symetrie-et-reperage.md.
+Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Droites, médiatrice et bissectrice" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 10-droites-mediatrice-et-bissectrice.md.
 Slide 1: title with the theme, the brand "مدرستي تونس" and a clearly visible Tunisian flag drawn as a small picture.
 Slides 2-4: one key idea each, one simple worked example of your own and one picture. The sources hold few or no corrections for this theme: never write or invent an answer to a source exercise.
 Slides 5-7: one practice exercise each, copied exactly from the source file, question only, no answer.
@@ -407,12 +407,12 @@ Large readable text, one idea per slide. Numbers must stay under 100000.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__10-quadrilateres-symetrie-et-reperage__diaporama-cours__v1.pdf`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__10-droites-mediatrice-et-bissectrice__diaporama-cours__v1.pdf`
 
-### 11 · Division euclidienne (Mathématiques)
+### 11 · Mesures de masses et de capacités (Mathématiques)
 
 ```text
-Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Division euclidienne" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 11-division-euclidienne.md.
+Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Mesures de masses et de capacités" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 11-mesures-de-masses-et-de-capacites.md.
 Slide 1: title with the theme, the brand "مدرستي تونس" and a clearly visible Tunisian flag drawn as a small picture.
 Slides 2-4: one key idea each, one simple worked example of your own and one picture. The sources hold few or no corrections for this theme: never write or invent an answer to a source exercise.
 Slides 5-7: one practice exercise each, copied exactly from the source file, question only, no answer.
@@ -421,7 +421,7 @@ Large readable text, one idea per slide. Numbers must stay under 100000.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__11-division-euclidienne__diaporama-cours__v1.pdf`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__11-mesures-de-masses-et-de-capacites__diaporama-cours__v1.pdf`
 
 ### 12 · Fractions (Mathématiques)
 
@@ -437,10 +437,10 @@ All text in Arabic only, fully vowelled Modern Standard Arabic. No other languag
 
 Save as: `5eme-annee__mathematiques-exercices-evaluations__12-fractions__diaporama-cours__v1.pdf`
 
-### 13 · Opérations sur les entiers (Mathématiques)
+### 13 · Quadrilatères, symétrie et repérage (Mathématiques)
 
 ```text
-Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Opérations sur les entiers" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 13-operations-sur-les-entiers.md.
+Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Quadrilatères, symétrie et repérage" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 13-quadrilateres-symetrie-et-reperage.md.
 Slide 1: title with the theme, the brand "مدرستي تونس" and a clearly visible Tunisian flag drawn as a small picture.
 Slides 2-4: one key idea each, one simple worked example of your own and one picture. The sources hold few or no corrections for this theme: never write or invent an answer to a source exercise.
 Slides 5-7: one practice exercise each, copied exactly from the source file, question only, no answer.
@@ -449,12 +449,12 @@ Large readable text, one idea per slide. Numbers must stay under 100000.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__13-operations-sur-les-entiers__diaporama-cours__v1.pdf`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__13-quadrilateres-symetrie-et-reperage__diaporama-cours__v1.pdf`
 
-### 14 · Proportionnalité et problèmes de mesures (Mathématiques)
+### 14 · Opérations sur les entiers (Mathématiques)
 
 ```text
-Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Proportionnalité et problèmes de mesures" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 14-proportionnalite-et-problemes-de-mesures.md.
+Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Opérations sur les entiers" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 14-operations-sur-les-entiers.md.
 Slide 1: title with the theme, the brand "مدرستي تونس" and a clearly visible Tunisian flag drawn as a small picture.
 Slides 2-4: one key idea each, one simple worked example of your own and one picture. The sources hold few or no corrections for this theme: never write or invent an answer to a source exercise.
 Slides 5-7: one practice exercise each, copied exactly from the source file, question only, no answer.
@@ -463,12 +463,12 @@ Large readable text, one idea per slide. Numbers must stay under 100000.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__14-proportionnalite-et-problemes-de-mesures__diaporama-cours__v1.pdf`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__14-operations-sur-les-entiers__diaporama-cours__v1.pdf`
 
-### 15 · Droites, médiatrice et bissectrice (Mathématiques)
+### 15 · Proportionnalité et problèmes de mesures (Mathématiques)
 
 ```text
-Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Droites, médiatrice et bissectrice" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 15-droites-mediatrice-et-bissectrice.md.
+Create a Studio slide deck of exactly 8 slides, detailed, for the theme "Proportionnalité et problèmes de mesures" (Mathématiques), 5th grade pupils (age 10-11). Use only the source file 15-proportionnalite-et-problemes-de-mesures.md.
 Slide 1: title with the theme, the brand "مدرستي تونس" and a clearly visible Tunisian flag drawn as a small picture.
 Slides 2-4: one key idea each, one simple worked example of your own and one picture. The sources hold few or no corrections for this theme: never write or invent an answer to a source exercise.
 Slides 5-7: one practice exercise each, copied exactly from the source file, question only, no answer.
@@ -477,7 +477,7 @@ Large readable text, one idea per slide. Numbers must stay under 100000.
 All text in Arabic only, fully vowelled Modern Standard Arabic. No other language, except the small Latin "Madrasati TN".
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__15-droites-mediatrice-et-bissectrice__diaporama-cours__v1.pdf`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__15-proportionnalite-et-problemes-de-mesures__diaporama-cours__v1.pdf`
 
 ## Child video (one per theme)
 
@@ -560,49 +560,49 @@ Narration in Arabic, fully vowelled Modern Standard Arabic, simple school langua
 
 Save as: `5eme-annee__mathematiques-exercices-evaluations__07-mesures-de-durees__video-enfant__v1.mp4`
 
-### 08 · Grands nombres entiers (Mathématiques)
+### 08 · Division euclidienne (Mathématiques)
 
 ```text
-Create a short video summary in Studio, Tableau blanc style, for the theme "Grands nombres entiers" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 08-grands-nombres-entiers.md.
+Create a short video summary in Studio, Tableau blanc style, for the theme "Division euclidienne" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 08-division-euclidienne.md.
 Tell it as a short friendly story with simple characters. One example of your own, solved slowly step by step. End with one question for the viewer, taken from the source file, with no answer given.
 Show the brand "مدرستي تونس" and a clearly visible Tunisian flag in the first and last scene.
 Narration in Arabic, fully vowelled Modern Standard Arabic, simple school language. Numbers must stay under 100000.
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__08-grands-nombres-entiers__video-enfant__v1.mp4`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__08-division-euclidienne__video-enfant__v1.mp4`
 
-### 09 · Mesures de masses et de capacités (Mathématiques)
+### 09 · Grands nombres entiers (Mathématiques)
 
 ```text
-Create a short video summary in Studio, Tableau blanc style, for the theme "Mesures de masses et de capacités" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 09-mesures-de-masses-et-de-capacites.md.
+Create a short video summary in Studio, Tableau blanc style, for the theme "Grands nombres entiers" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 09-grands-nombres-entiers.md.
 Tell it as a short friendly story with simple characters. One example of your own, solved slowly step by step. End with one question for the viewer, taken from the source file, with no answer given.
 Show the brand "مدرستي تونس" and a clearly visible Tunisian flag in the first and last scene.
 Narration in Arabic, fully vowelled Modern Standard Arabic, simple school language. Numbers must stay under 100000.
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__09-mesures-de-masses-et-de-capacites__video-enfant__v1.mp4`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__09-grands-nombres-entiers__video-enfant__v1.mp4`
 
-### 10 · Quadrilatères, symétrie et repérage (Mathématiques)
+### 10 · Droites, médiatrice et bissectrice (Mathématiques)
 
 ```text
-Create a short video summary in Studio, Tableau blanc style, for the theme "Quadrilatères, symétrie et repérage" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 10-quadrilateres-symetrie-et-reperage.md.
+Create a short video summary in Studio, Tableau blanc style, for the theme "Droites, médiatrice et bissectrice" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 10-droites-mediatrice-et-bissectrice.md.
 Tell it as a short friendly story with simple characters. One example of your own, solved slowly step by step. End with one question for the viewer, taken from the source file, with no answer given.
 Show the brand "مدرستي تونس" and a clearly visible Tunisian flag in the first and last scene.
 Narration in Arabic, fully vowelled Modern Standard Arabic, simple school language. Numbers must stay under 100000.
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__10-quadrilateres-symetrie-et-reperage__video-enfant__v1.mp4`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__10-droites-mediatrice-et-bissectrice__video-enfant__v1.mp4`
 
-### 11 · Division euclidienne (Mathématiques)
+### 11 · Mesures de masses et de capacités (Mathématiques)
 
 ```text
-Create a short video summary in Studio, Tableau blanc style, for the theme "Division euclidienne" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 11-division-euclidienne.md.
+Create a short video summary in Studio, Tableau blanc style, for the theme "Mesures de masses et de capacités" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 11-mesures-de-masses-et-de-capacites.md.
 Tell it as a short friendly story with simple characters. One example of your own, solved slowly step by step. End with one question for the viewer, taken from the source file, with no answer given.
 Show the brand "مدرستي تونس" and a clearly visible Tunisian flag in the first and last scene.
 Narration in Arabic, fully vowelled Modern Standard Arabic, simple school language. Numbers must stay under 100000.
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__11-division-euclidienne__video-enfant__v1.mp4`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__11-mesures-de-masses-et-de-capacites__video-enfant__v1.mp4`
 
 ### 12 · Fractions (Mathématiques)
 
@@ -615,35 +615,35 @@ Narration in Arabic, fully vowelled Modern Standard Arabic, simple school langua
 
 Save as: `5eme-annee__mathematiques-exercices-evaluations__12-fractions__video-enfant__v1.mp4`
 
-### 13 · Opérations sur les entiers (Mathématiques)
+### 13 · Quadrilatères, symétrie et repérage (Mathématiques)
 
 ```text
-Create a short video summary in Studio, Tableau blanc style, for the theme "Opérations sur les entiers" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 13-operations-sur-les-entiers.md.
+Create a short video summary in Studio, Tableau blanc style, for the theme "Quadrilatères, symétrie et repérage" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 13-quadrilateres-symetrie-et-reperage.md.
 Tell it as a short friendly story with simple characters. One example of your own, solved slowly step by step. End with one question for the viewer, taken from the source file, with no answer given.
 Show the brand "مدرستي تونس" and a clearly visible Tunisian flag in the first and last scene.
 Narration in Arabic, fully vowelled Modern Standard Arabic, simple school language. Numbers must stay under 100000.
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__13-operations-sur-les-entiers__video-enfant__v1.mp4`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__13-quadrilateres-symetrie-et-reperage__video-enfant__v1.mp4`
 
-### 14 · Proportionnalité et problèmes de mesures (Mathématiques)
+### 14 · Opérations sur les entiers (Mathématiques)
 
 ```text
-Create a short video summary in Studio, Tableau blanc style, for the theme "Proportionnalité et problèmes de mesures" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 14-proportionnalite-et-problemes-de-mesures.md.
+Create a short video summary in Studio, Tableau blanc style, for the theme "Opérations sur les entiers" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 14-operations-sur-les-entiers.md.
 Tell it as a short friendly story with simple characters. One example of your own, solved slowly step by step. End with one question for the viewer, taken from the source file, with no answer given.
 Show the brand "مدرستي تونس" and a clearly visible Tunisian flag in the first and last scene.
 Narration in Arabic, fully vowelled Modern Standard Arabic, simple school language. Numbers must stay under 100000.
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__14-proportionnalite-et-problemes-de-mesures__video-enfant__v1.mp4`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__14-operations-sur-les-entiers__video-enfant__v1.mp4`
 
-### 15 · Droites, médiatrice et bissectrice (Mathématiques)
+### 15 · Proportionnalité et problèmes de mesures (Mathématiques)
 
 ```text
-Create a short video summary in Studio, Tableau blanc style, for the theme "Droites, médiatrice et bissectrice" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 15-droites-mediatrice-et-bissectrice.md.
+Create a short video summary in Studio, Tableau blanc style, for the theme "Proportionnalité et problèmes de mesures" (Mathématiques), for Tunisian 5th grade pupils (age 10-11). Use only the source file 15-proportionnalite-et-problemes-de-mesures.md.
 Tell it as a short friendly story with simple characters. One example of your own, solved slowly step by step. End with one question for the viewer, taken from the source file, with no answer given.
 Show the brand "مدرستي تونس" and a clearly visible Tunisian flag in the first and last scene.
 Narration in Arabic, fully vowelled Modern Standard Arabic, simple school language. Numbers must stay under 100000.
 ```
 
-Save as: `5eme-annee__mathematiques-exercices-evaluations__15-droites-mediatrice-et-bissectrice__video-enfant__v1.mp4`
+Save as: `5eme-annee__mathematiques-exercices-evaluations__15-proportionnalite-et-problemes-de-mesures__video-enfant__v1.mp4`
