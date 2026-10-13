@@ -15,7 +15,7 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
   template: `
     <div class="parascolaire bg-[var(--p-page)] -mx-3 sm:-mx-6 lg:-mx-8 xl:-mx-10 -mt-6 -mb-[4.5rem] px-3 sm:px-6 lg:px-8 xl:px-10 pt-6 pb-[4.5rem] min-h-[72vh]">
       <div class="max-w-[1280px] mx-auto space-y-8">
-        <header class="animate-in fade-in duration-500 bg-[var(--p-ink)] text-white rounded-[8px] p-6 sm:p-8 flex items-start justify-between gap-6">
+        <header class="animate-in fade-in duration-500 bg-[var(--p-ink)] text-white rounded-2xl p-6 sm:p-8 flex items-start justify-between gap-6">
           <div class="space-y-3 max-w-[56ch]">
             <h1 class="p-display text-[2rem] sm:text-[2.5rem] leading-[1.15]">{{ lang.tr('Madrasati Parascolaire', 'مدرستي للدعم المدرسي') }}</h1>
             <p class="p-body text-[1rem] text-[#D5DEF3]">
@@ -27,7 +27,7 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
 
         @switch (svc.state()) {
           @case ('error') {
-            <div class="p-lined border border-[var(--p-rule)] rounded-[8px] p-8 space-y-4" role="alert">
+            <div class="p-lined border border-[var(--p-rule)] rounded-2xl p-8 space-y-4" role="alert">
               <p class="p-display text-[1.25rem] text-[var(--p-err)]">{{ lang.tr('Le catalogue est indisponible.', 'الفهرس غير متاح حاليًا.') }}</p>
               <button type="button" class="p-btn p-btn-primary" (click)="svc.load(true)">{{ lang.tr('Réessayer', 'إعادة المحاولة') }}</button>
             </div>
@@ -54,7 +54,7 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
 
             <div id="pbooks" role="tabpanel" [attr.aria-labelledby]="'ptab-' + selected()" class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
               @for (b of books(); track b.id) {
-                <article class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-[8px] p-5 flex flex-col gap-4">
+                <article class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl p-5 flex flex-col gap-4">
                   <div class="space-y-2">
                     <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.8125rem] text-[var(--p-pencil)]">
                       @for (s of b.subjects; track s) {

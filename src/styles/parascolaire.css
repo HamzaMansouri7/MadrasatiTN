@@ -1,22 +1,22 @@
 /* Parascolaire module, scoped by the .parascolaire class on its page roots.
    Direction: the school notebook (docs/PARASCOLAIRE-MODULE-SPEC.md section 8, PRODUCT.md, .impeccable/surfaces). */
 .parascolaire {
-  --p-ink: #17275e;
-  --p-blue: #2447b8;
-  --p-blue-deep: #1a3590;
-  --p-page: #eef2fb;
+  --p-ink: #14251d;
+  --p-blue: #2d6a4f;
+  --p-blue-deep: #1b4332;
+  --p-page: #fbf8f1;
   --p-surface: #ffffff;
-  --p-sunk: #e3e9f7;
-  --p-rule: #d5def3;
-  --p-hl: #ffe066;
-  --p-pencil: #5f6b8a;
+  --p-sunk: #f2ecde;
+  --p-rule: #e7dfcf;
+  --p-hl: #f2c14e;
+  --p-pencil: #5b6b60;
   --p-seal: #c1121f;
   --p-err: #b3261e;
-  --p-maths: #2447b8;
-  --p-arabe: #1f6b4a;
-  --p-eveil: #9a5b00;
-  --p-francais: #8a3a7a;
-  --p-islam: #0f6b6b;
+  --p-maths: #bf5b34;
+  --p-arabe: #2d6a4f;
+  --p-eveil: #8a5a00;
+  --p-francais: #1b4332;
+  --p-islam: #5b6b60;
   color: var(--p-ink);
 }
 
@@ -50,27 +50,29 @@
   justify-content: center;
   gap: 0.5rem;
   min-height: 44px;
-  padding: 0 1.25rem;
-  border-radius: 8px;
-  font-size: 0.9375rem;
+  padding: 0 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 .parascolaire .p-btn-primary {
   background: var(--p-blue);
-  color: #fff;
+  color: #fbf8f1;
+  box-shadow: 0 1px 2px rgba(20, 37, 29, 0.08);
 }
 .parascolaire .p-btn-primary:hover {
   background: var(--p-blue-deep);
 }
 .parascolaire .p-btn-secondary {
-  background: var(--p-surface);
-  color: var(--p-ink);
+  background: #fbf8f1;
+  color: #4a5a50;
+  font-weight: 500;
   border: 1px solid var(--p-rule);
 }
 .parascolaire .p-btn-secondary:hover {
-  border-color: var(--p-blue);
+  background: #f2ecde;
 }
 
 /* Empty-state ruled paper (Seyès): only behind empty states, never behind images or controls */
@@ -93,7 +95,7 @@
 }
 .parascolaire .p-seg-done {
   background: var(--p-hl);
-  box-shadow: inset 0 0 0 1px rgba(23, 39, 94, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(20, 37, 29, 0.18);
 }
 .parascolaire .p-seg-partial {
   background: repeating-linear-gradient(135deg, var(--p-pencil) 0 1.5px, var(--p-sunk) 1.5px 3.5px);

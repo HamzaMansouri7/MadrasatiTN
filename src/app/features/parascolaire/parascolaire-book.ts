@@ -26,7 +26,7 @@ import { ThemeCardComponent } from './ui/theme-card';
 
         @switch (svc.state()) {
           @case ('error') {
-            <div class="p-lined border border-[var(--p-rule)] rounded-[8px] p-8 space-y-4" role="alert">
+            <div class="p-lined border border-[var(--p-rule)] rounded-2xl p-8 space-y-4" role="alert">
               <p class="p-display text-[1.25rem] text-[var(--p-err)]">{{ lang.tr('Le catalogue est indisponible.', 'الفهرس غير متاح حاليًا.') }}</p>
               <button type="button" class="p-btn p-btn-primary" (click)="svc.load(true)">{{ lang.tr('Réessayer', 'إعادة المحاولة') }}</button>
             </div>
@@ -46,7 +46,7 @@ import { ThemeCardComponent } from './ui/theme-card';
                   <label class="space-y-1 text-[0.8125rem] text-[var(--p-pencil)]">
                     <span>{{ lang.tr('Matière', 'المادة') }}</span>
                     <select
-                      class="block min-h-[44px] min-w-[170px] rounded-[8px] border border-[var(--p-rule)] bg-[var(--p-surface)] px-3 text-[0.9375rem] text-[var(--p-ink)]"
+                      class="block min-h-[44px] min-w-[170px] rounded-xl border border-[var(--p-rule)] bg-[var(--p-surface)] px-3 text-[0.9375rem] text-[var(--p-ink)]"
                       [value]="subject()"
                       (change)="setFilter('subject', $any($event.target).value)">
                       <option value="all">{{ lang.tr('Toutes les matières', 'كل المواد') }}</option>
@@ -59,7 +59,7 @@ import { ThemeCardComponent } from './ui/theme-card';
                 <label class="space-y-1 text-[0.8125rem] text-[var(--p-pencil)]">
                   <span>{{ lang.tr('Statut', 'الحالة') }}</span>
                   <select
-                    class="block min-h-[44px] min-w-[170px] rounded-[8px] border border-[var(--p-rule)] bg-[var(--p-surface)] px-3 text-[0.9375rem] text-[var(--p-ink)]"
+                    class="block min-h-[44px] min-w-[170px] rounded-xl border border-[var(--p-rule)] bg-[var(--p-surface)] px-3 text-[0.9375rem] text-[var(--p-ink)]"
                     [value]="status()"
                     (change)="setFilter('status', $any($event.target).value)">
                     <option value="all" [selected]="status() === 'all'">{{ lang.tr('Tous les statuts', 'كل الحالات') }}</option>
@@ -81,13 +81,13 @@ import { ThemeCardComponent } from './ui/theme-card';
                   }
                 </div>
               } @else {
-                <div class="p-lined border border-[var(--p-rule)] rounded-[8px] p-8 space-y-4">
+                <div class="p-lined border border-[var(--p-rule)] rounded-2xl p-8 space-y-4">
                   <p class="p-display text-[1.25rem]">{{ lang.tr('Aucun thème pour ce filtre.', 'لا توجد مواضيع لهذه التصفية.') }}</p>
                   <button type="button" class="p-btn p-btn-secondary" (click)="reset()">{{ lang.tr('Réinitialiser', 'إعادة التعيين') }}</button>
                 </div>
               }
             } @else {
-              <div class="p-lined border border-[var(--p-rule)] rounded-[8px] p-8 space-y-4">
+              <div class="p-lined border border-[var(--p-rule)] rounded-2xl p-8 space-y-4">
                 <p class="p-display text-[1.25rem]">{{ lang.tr('Ressource introuvable', 'المورد غير موجود') }}</p>
                 <a class="p-btn p-btn-primary" [routerLink]="['/parascolaire']">{{ lang.tr('Voir toutes les classes', 'عرض كل الأقسام') }}</a>
               </div>

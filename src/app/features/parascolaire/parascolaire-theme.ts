@@ -25,7 +25,7 @@ import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
 
         @switch (svc.state()) {
           @case ('error') {
-            <div class="p-lined border border-[var(--p-rule)] rounded-[8px] p-8 space-y-4" role="alert">
+            <div class="p-lined border border-[var(--p-rule)] rounded-2xl p-8 space-y-4" role="alert">
               <p class="p-display text-[1.25rem] text-[var(--p-err)]">{{ lang.tr('Le catalogue est indisponible.', 'الفهرس غير متاح حاليًا.') }}</p>
               <button type="button" class="p-btn p-btn-primary" (click)="svc.load(true)">{{ lang.tr('Réessayer', 'إعادة المحاولة') }}</button>
             </div>
@@ -46,7 +46,7 @@ import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
                     [text]="themeName()"
                     [details]="shareDetails()"
                     variant="button"
-                    accent="blue"
+                    accent="green"
                     placement="down"
                     [customLabel]="lang.tr('Partager ce thème', 'مشاركة هذا الموضوع')" />
                 </div>
@@ -54,7 +54,7 @@ import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
 
               <div class="grid gap-4 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] items-start">
                 <!-- Infographic -->
-                <section class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-[8px] p-5 space-y-4" aria-labelledby="p-ig">
+                <section class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl p-5 space-y-4" aria-labelledby="p-ig">
                   <h2 id="p-ig" class="p-display text-[1.25rem]">{{ lang.tr('Infographie', 'إنفوغرافيك') }}</h2>
                   @if (t.slots.infographic.status === 'ready') {
                     <button type="button" class="block w-full bg-[var(--p-sunk)] rounded-[4px] p-2 cursor-zoom-in" (click)="openInfographic()" [attr.aria-label]="lang.tr('Ouvrir en grand', 'فتح بحجم كبير')">
@@ -69,7 +69,7 @@ import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
                       <a class="p-btn p-btn-secondary" [href]="igFull()" [attr.download]="t.id + '.webp'">{{ lang.tr("Télécharger l'image", 'تنزيل الصورة') }}</a>
                     </div>
                   } @else {
-                    <div class="border border-[var(--p-rule)] rounded-[8px] overflow-hidden">
+                    <div class="border border-[var(--p-rule)] rounded-2xl overflow-hidden">
                       <div class="bg-[var(--p-surface)] p-4"><app-p-slot-row kind="infographic" [status]="t.slots.infographic.status" /></div>
                       <div class="p-lined h-12 border-t border-[var(--p-rule)]" aria-hidden="true"></div>
                     </div>
@@ -78,7 +78,7 @@ import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
 
                 <div class="space-y-4">
                   <!-- Course -->
-                  <section class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-[8px] p-5 space-y-4" aria-labelledby="p-cs">
+                  <section class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl p-5 space-y-4" aria-labelledby="p-cs">
                     <h2 id="p-cs" class="p-display text-[1.25rem]">{{ lang.tr('Cours en diaporama', 'الدرس في شرائح') }}</h2>
                     @if (t.slots.course.status === 'ready') {
                       <button type="button" class="block w-full bg-[var(--p-sunk)] rounded-[4px] p-2 cursor-pointer" (click)="openCourse()" [attr.aria-label]="lang.tr('Lire le cours', 'قراءة الدرس')">
@@ -90,17 +90,17 @@ import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
                         <a class="p-btn p-btn-secondary" [href]="pdfUrl()" [attr.download]="t.id + '.pdf'">{{ lang.tr('Télécharger le PDF', 'تنزيل PDF') }}</a>
                       </div>
                     } @else {
-                      <div class="border border-[var(--p-rule)] rounded-[8px] overflow-hidden"><div class="bg-[var(--p-surface)] p-4"><app-p-slot-row kind="course" [status]="t.slots.course.status" /></div><div class="p-lined h-12 border-t border-[var(--p-rule)]" aria-hidden="true"></div></div>
+                      <div class="border border-[var(--p-rule)] rounded-2xl overflow-hidden"><div class="bg-[var(--p-surface)] p-4"><app-p-slot-row kind="course" [status]="t.slots.course.status" /></div><div class="p-lined h-12 border-t border-[var(--p-rule)]" aria-hidden="true"></div></div>
                     }
                   </section>
 
                   <!-- Video -->
-                  <section class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-[8px] p-5 space-y-4" aria-labelledby="p-vd">
+                  <section class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl p-5 space-y-4" aria-labelledby="p-vd">
                     <h2 id="p-vd" class="p-display text-[1.25rem]">{{ lang.tr('Vidéo', 'فيديو') }}</h2>
                     @if (t.slots.video.status === 'ready') {
                       <video class="w-full rounded-[4px] bg-black" controls preload="metadata" [src]="videoUrl()"></video>
                     } @else {
-                      <div class="border border-[var(--p-rule)] rounded-[8px] overflow-hidden"><div class="bg-[var(--p-surface)] p-4"><app-p-slot-row kind="video" [status]="t.slots.video.status" /></div><div class="p-lined h-12 border-t border-[var(--p-rule)]" aria-hidden="true"></div></div>
+                      <div class="border border-[var(--p-rule)] rounded-2xl overflow-hidden"><div class="bg-[var(--p-surface)] p-4"><app-p-slot-row kind="video" [status]="t.slots.video.status" /></div><div class="p-lined h-12 border-t border-[var(--p-rule)]" aria-hidden="true"></div></div>
                     }
                   </section>
                 </div>
@@ -117,7 +117,7 @@ import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
                 }
               </nav>
             } @else {
-              <div class="p-lined border border-[var(--p-rule)] rounded-[8px] p-8 space-y-4">
+              <div class="p-lined border border-[var(--p-rule)] rounded-2xl p-8 space-y-4">
                 <p class="p-display text-[1.25rem]">{{ lang.tr('Ressource introuvable', 'المورد غير موجود') }}</p>
                 <a class="p-btn p-btn-primary" [routerLink]="bookLink()">{{ lang.tr('Retour au livre', 'العودة إلى الكتاب') }}</a>
               </div>

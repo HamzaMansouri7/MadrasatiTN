@@ -14,7 +14,7 @@ import { SlotRowComponent } from './slot-row';
   template: `
     <a
       [routerLink]="link()"
-      class="group block h-full bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-[8px] overflow-hidden transition-colors hover:border-[var(--p-blue)]">
+      class="group block h-full bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl overflow-hidden transition-colors hover:border-[var(--p-blue)]">
       <div class="aspect-video bg-[var(--p-sunk)] flex items-center justify-center overflow-hidden">
         @if (thumb(); as t) {
           <img
