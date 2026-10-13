@@ -15,7 +15,7 @@ import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="parascolaire bg-[var(--p-page)] -mx-3 sm:-mx-6 lg:-mx-8 xl:-mx-10 -mt-6 -mb-[4.5rem] px-3 sm:px-6 lg:px-8 xl:px-10 pt-6 pb-[4.5rem] min-h-[72vh]">
-      <div class="max-w-[1280px] mx-auto space-y-6">
+      <div class="w-full space-y-5">
         <a
           [routerLink]="bookLink()"
           class="inline-flex items-center gap-1 min-h-[44px] text-[0.9375rem] text-[var(--p-blue)] hover:underline underline-offset-4">
@@ -37,7 +37,7 @@ import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
                   <span class="w-2.5 h-2.5 rounded-full shrink-0" [style.background]="color()" aria-hidden="true"></span>
                   <span>{{ subjectName() }}</span>
                 </p>
-                <h1 class="p-display text-[1.75rem] sm:text-[2.5rem] leading-[1.15] max-w-[32ch]">{{ themeName() }}</h1>
+                <h1 class="p-display text-2xl sm:text-3xl leading-tight">{{ themeName() }}</h1>
                 <p class="text-[0.9375rem] text-[var(--p-pencil)]">{{ lang.tr(t.exerciseCount + ' exercices dans le livre', t.exerciseCount + ' تمرينًا في الكتاب') }}</p>
                 <div class="pt-2">
                   <app-share-button

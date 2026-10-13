@@ -20,15 +20,14 @@
   color: var(--p-ink);
 }
 
-/* Titles: Lexend (Latin), Noto Kufi Arabic (Arabic). Semibold only. */
+/* Titles: same display family as the rest of the app (.font-display). Semibold only. */
 .parascolaire .p-display {
-  font-family: 'Lexend', 'Noto Kufi Arabic', system-ui, sans-serif;
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
   font-weight: 600;
-  letter-spacing: -0.01em;
 }
 [dir='rtl'] .parascolaire .p-display {
-  font-family: 'Noto Kufi Arabic', 'Lexend', system-ui, sans-serif;
-  letter-spacing: 0;
+  font-family: 'Noto Kufi Arabic', var(--font-display);
 }
 [dir='rtl'] .parascolaire .p-body {
   line-height: 1.75;

@@ -15,7 +15,7 @@ import { ThemeCardComponent } from './ui/theme-card';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="parascolaire bg-[var(--p-page)] -mx-3 sm:-mx-6 lg:-mx-8 xl:-mx-10 -mt-6 -mb-[4.5rem] px-3 sm:px-6 lg:px-8 xl:px-10 pt-6 pb-[4.5rem] min-h-[72vh]">
-      <div class="max-w-[1280px] mx-auto space-y-6">
+      <div class="w-full space-y-5">
         <a
           [routerLink]="['/parascolaire']"
           [queryParams]="{ classe: classe() }"
@@ -33,11 +33,11 @@ import { ThemeCardComponent } from './ui/theme-card';
           }
           @case ('ready') {
             @if (book(); as b) {
-              <header class="space-y-3">
-                <h1 class="p-display text-[1.75rem] sm:text-[2.5rem] leading-[1.15] max-w-[32ch]">{{ bookName() }}</h1>
-                <div class="max-w-[560px] space-y-2">
+              <header class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl p-5 sm:p-6 grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,24rem)] lg:items-end">
+                <h1 class="p-display text-2xl sm:text-3xl leading-tight">{{ bookName() }}</h1>
+                <div class="space-y-2">
                   <app-p-ruler [segments]="segments()" [label]="progress()" />
-                  <p class="text-[0.9375rem]">{{ progress() }}</p>
+                  <p class="text-sm text-[var(--p-pencil)]">{{ progress() }}</p>
                 </div>
               </header>
 
@@ -65,17 +65,17 @@ import { ThemeCardComponent } from './ui/theme-card';
               </div>
 
               @if (themes().length > 0) {
-                <div class="space-y-10">
+                <div class="space-y-8">
                   @for (g of groups(); track g.subject) {
                     <section class="space-y-4" [attr.aria-label]="g.heading ? subjectName(g.subject) : null">
                       @if (g.heading) {
-                        <h2 class="p-display text-[1.25rem] flex items-center gap-2 pb-2 border-b border-[var(--p-rule)]">
+                        <h2 class="p-display text-xl flex items-center gap-2 pb-2 border-b border-[var(--p-rule)]">
                           <span class="w-2.5 h-2.5 rounded-full shrink-0" [style.background]="color(g.subject)" aria-hidden="true"></span>
                           {{ subjectName(g.subject) }}
-                          <span class="text-[0.9375rem] font-normal text-[var(--p-pencil)]">{{ g.items.length }}</span>
+                          <span class="text-sm font-normal text-[var(--p-pencil)]">{{ g.items.length }}</span>
                         </h2>
                       }
-                      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
                         @for (t of g.items; track t.id) {
                           <app-p-theme-card [theme]="t" [bookId]="b.id" />
                         }
@@ -99,9 +99,9 @@ import { ThemeCardComponent } from './ui/theme-card';
           @default {
             <div class="space-y-4" aria-busy="true">
               <div class="p-skeleton h-[44px] max-w-[420px]"></div>
-              <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
                 @for (n of skeleton; track n) {
-                  <div class="p-skeleton h-[300px]"></div>
+                  <div class="p-skeleton h-[380px]"></div>
                 }
               </div>
             </div>
@@ -170,7 +170,7 @@ export class ParascolaireBookComponent {
   }
 
   chipClass(active: boolean): string {
-    const base = 'inline-flex items-center gap-2 min-h-[44px] px-4 rounded-xl border text-sm cursor-pointer transition-colors';
+    const base = 'inline-flex items-center gap-2 min-h-[40px] px-4 rounded-xl border text-sm cursor-pointer transition-colors';
     return active
       ? base + ' bg-[var(--p-blue)] border-[var(--p-blue)] text-[#FBF8F1] font-semibold'
       : base + ' bg-[#FBF8F1] border-[var(--p-rule)] text-[#4A5A50] font-medium hover:bg-[#F2ECDE]';

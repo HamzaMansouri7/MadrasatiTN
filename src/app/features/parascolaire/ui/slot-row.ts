@@ -8,12 +8,12 @@ import { SlotKind, SlotStatus } from '../parascolaire.models';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="flex items-center justify-between gap-3 text-[0.9375rem] leading-6">
+    <div class="flex items-center justify-between gap-3 text-sm leading-6">
       <span class="flex items-center gap-2.5 min-w-0">
         <span [class]="markClass()" aria-hidden="true"></span>
         <span [class]="status() === 'ready' ? 'text-[var(--p-ink)] font-medium' : 'text-[var(--p-pencil)]'">{{ kindLabel() }}</span>
       </span>
-      <span [class]="status() === 'ready' ? 'text-[var(--p-ink)]' : 'text-[var(--p-pencil)]'" class="text-[0.8125rem] shrink-0">{{ statusLabel() }}</span>
+      <span [class]="status() === 'ready' ? 'text-[var(--p-ink)]' : 'text-[var(--p-pencil)]'" class="text-xs shrink-0">{{ statusLabel() }}</span>
     </div>
   `,
 })

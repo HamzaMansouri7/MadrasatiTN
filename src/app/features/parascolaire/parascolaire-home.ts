@@ -14,11 +14,11 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="parascolaire bg-[var(--p-page)] -mx-3 sm:-mx-6 lg:-mx-8 xl:-mx-10 -mt-6 -mb-[4.5rem] px-3 sm:px-6 lg:px-8 xl:px-10 pt-6 pb-[4.5rem] min-h-[72vh]">
-      <div class="max-w-[1280px] mx-auto space-y-8">
+      <div class="w-full space-y-6">
         <header class="animate-in fade-in duration-500 bg-[var(--p-ink)] text-white rounded-2xl p-6 sm:p-8 flex items-start justify-between gap-6">
           <div class="space-y-3 max-w-[56ch]">
-            <h1 class="p-display text-[2rem] sm:text-[2.5rem] leading-[1.15]">{{ lang.tr('Madrasati Parascolaire', 'مدرستي للدعم المدرسي') }}</h1>
-            <p class="p-body text-[1rem] text-[#D5DEF3]">
+            <h1 class="p-display text-2xl sm:text-3xl leading-tight">{{ lang.tr('Madrasati Parascolaire', 'مدرستي للدعم المدرسي') }}</h1>
+            <p class="p-body text-sm sm:text-base text-[#B7C7BC]">
               {{ lang.tr('Infographies et cours en diaporama, classés par classe et par thème.', 'إنفوغرافيك ودروس مصوّرة، مرتّبة حسب القسم والموضوع.') }}
             </p>
           </div>
@@ -55,13 +55,13 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
              @for (g of groups(); track g.subject) {
               <section class="space-y-4" [attr.aria-label]="groups().length > 1 ? subjectName(g.subject) : null">
                 @if (groups().length > 1) {
-                  <h2 class="p-display text-[1.25rem] flex items-center gap-2 pb-2 border-b border-[var(--p-rule)]">
+                  <h2 class="p-display text-xl flex items-center gap-2 pb-2 border-b border-[var(--p-rule)]">
                     <span class="w-2.5 h-2.5 rounded-full shrink-0" [style.background]="color(g.subject)" aria-hidden="true"></span>
                     {{ subjectName(g.subject) }}
                     <span class="text-[0.9375rem] font-normal text-[var(--p-pencil)]">{{ g.items.length }}</span>
                   </h2>
                 }
-                <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
               @for (b of g.items; track b.id) {
                 <article class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl p-5 flex flex-col gap-4">
                   <div class="space-y-2">
@@ -73,7 +73,7 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
                         </span>
                       }
                     </p>
-                    <h3 class="p-display text-[1.25rem] leading-[1.25]">{{ bookTitle(b, lang.isArabic()) }}</h3>
+                    <h3 class="p-display text-base leading-snug">{{ bookTitle(b, lang.isArabic()) }}</h3>
                   </div>
                   <div class="space-y-2">
                     <app-p-ruler [segments]="segments(b)" [label]="rulerLabel(b)" />
