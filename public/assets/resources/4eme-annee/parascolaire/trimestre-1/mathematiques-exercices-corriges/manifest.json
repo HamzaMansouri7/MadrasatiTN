@@ -1,0 +1,2483 @@
+{
+  "source": "MadrasatiTN Parascolaire",
+  "bookId": "4eme-annee/mathematiques-exercices-corriges",
+  "title": "Mathématiques 4ème année — Exercices et corrigés",
+  "grade": "4ème Année",
+  "subject": "Mathématiques",
+  "cover": "assets/resources/4eme-annee/parascolaire/trimestre-1/mathematiques-exercices-corriges/cover.webp",
+  "backCover": "assets/resources/4eme-annee/parascolaire/trimestre-1/mathematiques-exercices-corriges/back-cover.webp",
+  "intro": "assets/resources/4eme-annee/parascolaire/trimestre-1/mathematiques-exercices-corriges/intro.webp",
+  "outro": "assets/resources/4eme-annee/parascolaire/trimestre-1/mathematiques-exercices-corriges/outro.webp",
+  "count": 137,
+  "items": [
+    {
+      "id": "mathematiques-exercices-corriges-p002",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 2",
+      "file": "002.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/002.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.2",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p004",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 4",
+      "file": "004.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/004.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.4",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p005",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 5",
+      "file": "005.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/005.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.5",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p006",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 6",
+      "file": "006.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/006.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.6",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p007",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 7",
+      "file": "007.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/007.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.7",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p008",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 8",
+      "file": "008.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/008.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.8",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p009",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 9",
+      "file": "009.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/009.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.9",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p010",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 10",
+      "file": "010.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/010.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.10",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p011",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 11",
+      "file": "011.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/011.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.11",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p012",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 12",
+      "file": "012.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/012.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.12",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p013",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 13",
+      "file": "013.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/013.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.13",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p014",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 14",
+      "file": "014.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/014.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.14",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p015",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 15",
+      "file": "015.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/015.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.15",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p016",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 16",
+      "file": "016.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/016.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.16",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p017",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 17",
+      "file": "017.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/017.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.17",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p018",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 18",
+      "file": "018.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/018.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.18",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p019",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 19",
+      "file": "019.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/019.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.19",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p020",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 20",
+      "file": "020.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/020.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.20",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p021",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 21",
+      "file": "021.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/021.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.21",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p022",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 22",
+      "file": "022.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/022.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.22",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p023",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 23",
+      "file": "023.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/023.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.23",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p024",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 24",
+      "file": "024.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/024.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.24",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p025",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 25",
+      "file": "025.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/025.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.25",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p026",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 26",
+      "file": "026.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/026.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.26",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p027",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 27",
+      "file": "027.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/027.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.27",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p028",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 28",
+      "file": "028.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/028.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.28",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p029",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 29",
+      "file": "029.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/029.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.29",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p030",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 30",
+      "file": "030.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/030.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.30",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p031",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 31",
+      "file": "031.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/031.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.31",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p032",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 32",
+      "file": "032.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/032.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.32",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p033",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 33",
+      "file": "033.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/033.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.33",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p034",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 34",
+      "file": "034.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/034.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.34",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p035",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 35",
+      "file": "035.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/035.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.35",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p036",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 36",
+      "file": "036.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/036.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.36",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p037",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 37",
+      "file": "037.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/037.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.37",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p038",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 38",
+      "file": "038.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/038.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.38",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p039",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 39",
+      "file": "039.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/039.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.39",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p040",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 40",
+      "file": "040.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/040.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.40",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p041",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 41",
+      "file": "041.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/041.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.41",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p042",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 42",
+      "file": "042.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/042.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.42",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p043",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 43",
+      "file": "043.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/043.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.43",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p044",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 44",
+      "file": "044.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/044.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.44",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p045",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 45",
+      "file": "045.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/045.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.45",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p046",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 46",
+      "file": "046.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/046.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.46",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p047",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 47",
+      "file": "047.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/047.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.47",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p048",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 48",
+      "file": "048.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/048.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.48",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p049",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 49",
+      "file": "049.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/049.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.49",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p050",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 50",
+      "file": "050.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/050.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.50",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p051",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 51",
+      "file": "051.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/051.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.51",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p052",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 52",
+      "file": "052.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/052.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.52",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p053",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 53",
+      "file": "053.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/053.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.53",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p054",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 54",
+      "file": "054.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/054.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.54",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p055",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 55",
+      "file": "055.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/055.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.55",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p056",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 56",
+      "file": "056.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/056.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.56",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p057",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 57",
+      "file": "057.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/057.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.57",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p058",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 58",
+      "file": "058.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/058.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.58",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p059",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 59",
+      "file": "059.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/059.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.59",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p060",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 60",
+      "file": "060.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/060.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.60",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p061",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 61",
+      "file": "061.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/061.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.61",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p062",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 62",
+      "file": "062.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/062.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.62",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p063",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 63",
+      "file": "063.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/063.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.63",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p064",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 64",
+      "file": "064.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/064.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.64",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p065",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 65",
+      "file": "065.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/065.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.65",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p066",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 66",
+      "file": "066.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/066.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.66",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p067",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 67",
+      "file": "067.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/067.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.67",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p068",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 68",
+      "file": "068.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/068.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.68",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p069",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 69",
+      "file": "069.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/069.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.69",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p070",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 70",
+      "file": "070.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/070.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.70",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p071",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 71",
+      "file": "071.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/071.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.71",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p072",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 72",
+      "file": "072.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/072.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.72",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p073",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 73",
+      "file": "073.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/073.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.73",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p074",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 74",
+      "file": "074.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/074.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.74",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p075",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 75",
+      "file": "075.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/075.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.75",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p076",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 76",
+      "file": "076.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/076.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.76",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p077",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 77",
+      "file": "077.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/077.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.77",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p078",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 78",
+      "file": "078.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/078.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.78",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p079",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 79",
+      "file": "079.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/079.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.79",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p080",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 80",
+      "file": "080.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/080.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.80",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p081",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 81",
+      "file": "081.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/081.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.81",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p082",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 82",
+      "file": "082.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/082.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.82",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p083",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 83",
+      "file": "083.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/083.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.83",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p084",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 84",
+      "file": "084.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/084.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.84",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p085",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 85",
+      "file": "085.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/085.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.85",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p086",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 86",
+      "file": "086.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/086.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.86",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p087",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 87",
+      "file": "087.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/087.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.87",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p088",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 88",
+      "file": "088.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/088.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.88",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p089",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 89",
+      "file": "089.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/089.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.89",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p090",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 90",
+      "file": "090.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/090.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.90",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p091",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 91",
+      "file": "091.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/091.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.91",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p092",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 92",
+      "file": "092.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/092.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.92",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p093",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 93",
+      "file": "093.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/093.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.93",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p094",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 94",
+      "file": "094.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/094.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.94",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p095",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 95",
+      "file": "095.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/095.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.95",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p096",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 96",
+      "file": "096.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/096.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.96",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p097",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 97",
+      "file": "097.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/097.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.97",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p098",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 98",
+      "file": "098.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/098.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.98",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p099",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 99",
+      "file": "099.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/099.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.99",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p100",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 100",
+      "file": "100.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/100.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.100",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p101",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 101",
+      "file": "101.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/101.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.101",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p102",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 102",
+      "file": "102.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/102.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.102",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p103",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 103",
+      "file": "103.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/103.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.103",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p104",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 104",
+      "file": "104.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/104.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.104",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p105",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 105",
+      "file": "105.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/105.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.105",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p106",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 106",
+      "file": "106.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/106.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.106",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p107",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 107",
+      "file": "107.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/107.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.107",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p109",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 109",
+      "file": "109.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/109.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.109",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p110",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 110",
+      "file": "110.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/110.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.110",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p111",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 111",
+      "file": "111.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/111.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.111",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p112",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 112",
+      "file": "112.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/112.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.112",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p113",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 113",
+      "file": "113.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/113.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.113",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p114",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 114",
+      "file": "114.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/114.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.114",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p115",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 115",
+      "file": "115.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/115.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.115",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p116",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 116",
+      "file": "116.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/116.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.116",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p117",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 117",
+      "file": "117.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/117.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.117",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p118",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 118",
+      "file": "118.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/118.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.118",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p119",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 119",
+      "file": "119.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/119.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.119",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p120",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 120",
+      "file": "120.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/120.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.120",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p121",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 121",
+      "file": "121.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/121.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.121",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p122",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 122",
+      "file": "122.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/122.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.122",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p123",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 123",
+      "file": "123.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/123.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.123",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p124",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 124",
+      "file": "124.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/124.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.124",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p125",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 125",
+      "file": "125.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/125.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.125",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p126",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 126",
+      "file": "126.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/126.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.126",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p127",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 127",
+      "file": "127.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/127.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.127",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p128",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 128",
+      "file": "128.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/128.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.128",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p129",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 129",
+      "file": "129.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/129.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.129",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p130",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 130",
+      "file": "130.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/130.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.130",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p131",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 131",
+      "file": "131.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/131.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.131",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p132",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 132",
+      "file": "132.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/132.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.132",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p133",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 133",
+      "file": "133.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/133.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.133",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p134",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 134",
+      "file": "134.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/134.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.134",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p135",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 135",
+      "file": "135.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/135.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.135",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p136",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 136",
+      "file": "136.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/136.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.136",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p137",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 137",
+      "file": "137.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/137.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.137",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p138",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 138",
+      "file": "138.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/138.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.138",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p139",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 139",
+      "file": "139.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/139.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.139",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "mathematiques-exercices-corriges-p140",
+      "grade": "4eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-corriges",
+      "title": "صفحة 140",
+      "file": "140.json",
+      "relPath": "parascolaire/livres/4eme_annee/mathematiques_exercices_corriges/pages/140.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.140",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "mathématiques"
+      ]
+    }
+  ],
+  "exerciseCount": 528,
+  "solvedCount": 399,
+  "notes": "140 pages in the book, 137 digitized."
+}

@@ -1,0 +1,1205 @@
+{
+  "source": "MadrasatiTN Parascolaire",
+  "bookId": "3eme-annee/examens-toutes-matieres",
+  "title": "Examens 3ème année — Toutes matières",
+  "grade": "3ème Année",
+  "subject": "Arabe",
+  "cover": "assets/resources/3eme-annee/parascolaire/trimestre-1/examens-toutes-matieres/cover.webp",
+  "backCover": "assets/resources/3eme-annee/parascolaire/trimestre-1/examens-toutes-matieres/back-cover.webp",
+  "intro": "assets/resources/3eme-annee/parascolaire/trimestre-1/examens-toutes-matieres/intro.webp",
+  "outro": "assets/resources/3eme-annee/parascolaire/trimestre-1/examens-toutes-matieres/outro.webp",
+  "count": 66,
+  "items": [
+    {
+      "id": "examens-toutes-matieres-p002",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 2",
+      "file": "002.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/002.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.2",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p003",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 3",
+      "file": "003.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/003.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.3",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p004",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 4",
+      "file": "004.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/004.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.4",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p005",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 5",
+      "file": "005.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/005.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.5",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p006",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 6",
+      "file": "006.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/006.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.6",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p007",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 7",
+      "file": "007.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/007.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.7",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p008",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 8",
+      "file": "008.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/008.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.8",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p009",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 9",
+      "file": "009.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/009.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.9",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p010",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 10",
+      "file": "010.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/010.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.10",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p011",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 11",
+      "file": "011.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/011.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.11",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p012",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 12",
+      "file": "012.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/012.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.12",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p013",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 13",
+      "file": "013.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/013.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.13",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p014",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 14",
+      "file": "014.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/014.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.14",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p015",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 15",
+      "file": "015.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/015.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.15",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p016",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 16",
+      "file": "016.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/016.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.16",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p017",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 17",
+      "file": "017.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/017.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.17",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p018",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 18",
+      "file": "018.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/018.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.18",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p019",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 19",
+      "file": "019.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/019.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.19",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p020",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 20",
+      "file": "020.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/020.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.20",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p021",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 21",
+      "file": "021.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/021.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.21",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p022",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 22",
+      "file": "022.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/022.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.22",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p024",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 24",
+      "file": "024.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/024.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.24",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p026",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 26",
+      "file": "026.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/026.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.26",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p027",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 27",
+      "file": "027.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/027.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.27",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p028",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 28",
+      "file": "028.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/028.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.28",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p029",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 29",
+      "file": "029.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/029.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.29",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p030",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 30",
+      "file": "030.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/030.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.30",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p032",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 32",
+      "file": "032.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/032.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.32",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p033",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 33",
+      "file": "033.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/033.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.33",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p034",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 34",
+      "file": "034.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/034.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.34",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p035",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 35",
+      "file": "035.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/035.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.35",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p036",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 36",
+      "file": "036.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/036.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.36",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p037",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 37",
+      "file": "037.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/037.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.37",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p038",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 38",
+      "file": "038.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/038.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.38",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p040",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 40",
+      "file": "040.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/040.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.40",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p041",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 41",
+      "file": "041.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/041.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.41",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p042",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 42",
+      "file": "042.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/042.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.42",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p043",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 43",
+      "file": "043.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/043.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.43",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p044",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 44",
+      "file": "044.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/044.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.44",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p045",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 45",
+      "file": "045.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/045.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.45",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p046",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 46",
+      "file": "046.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/046.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.46",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p047",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 47",
+      "file": "047.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/047.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.47",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p048",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 48",
+      "file": "048.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/048.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.48",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p049",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 49",
+      "file": "049.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/049.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.49",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p050",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 50",
+      "file": "050.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/050.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.50",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p051",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 51",
+      "file": "051.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/051.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.51",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p052",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 52",
+      "file": "052.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/052.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.52",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p053",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 53",
+      "file": "053.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/053.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.53",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p054",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 54",
+      "file": "054.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/054.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.54",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p055",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 55",
+      "file": "055.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/055.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.55",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p056",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 56",
+      "file": "056.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/056.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.56",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p057",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 57",
+      "file": "057.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/057.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.57",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p058",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 58",
+      "file": "058.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/058.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.58",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p059",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 59",
+      "file": "059.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/059.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.59",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p060",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 60",
+      "file": "060.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/060.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.60",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p061",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 61",
+      "file": "061.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/061.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.61",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p062",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 62",
+      "file": "062.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/062.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.62",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p063",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 63",
+      "file": "063.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/063.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.63",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p064",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 64",
+      "file": "064.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/064.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.64",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p065",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 65",
+      "file": "065.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/065.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.65",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p066",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 66",
+      "file": "066.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/066.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.66",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p067",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 67",
+      "file": "067.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/067.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.67",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p068",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 68",
+      "file": "068.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/068.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.68",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p069",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 69",
+      "file": "069.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/069.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.69",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p070",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 70",
+      "file": "070.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/070.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.70",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examens-toutes-matieres-p071",
+      "grade": "3eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examens-toutes-matieres",
+      "title": "صفحة 71",
+      "file": "071.json",
+      "relPath": "parascolaire/livres/3eme_annee/examens_toutes_matieres/pages/071.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.71",
+      "labels": [
+        "parascolaire",
+        "3eme-annee",
+        "arabe"
+      ]
+    }
+  ],
+  "exerciseCount": 251,
+  "solvedCount": 1,
+  "notes": "71 pages in the book, 66 digitized."
+}

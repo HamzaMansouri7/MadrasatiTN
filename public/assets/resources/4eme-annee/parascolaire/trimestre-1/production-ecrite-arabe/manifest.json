@@ -1,0 +1,683 @@
+{
+  "source": "MadrasatiTN Parascolaire",
+  "bookId": "4eme-annee/production-ecrite-arabe",
+  "title": "Production écrite 4ème année — Arabe",
+  "grade": "4ème Année",
+  "subject": "Arabe",
+  "cover": "assets/resources/4eme-annee/parascolaire/trimestre-1/production-ecrite-arabe/cover.webp",
+  "backCover": "assets/resources/4eme-annee/parascolaire/trimestre-1/production-ecrite-arabe/back-cover.webp",
+  "intro": "assets/resources/4eme-annee/parascolaire/trimestre-1/production-ecrite-arabe/intro.webp",
+  "outro": "assets/resources/4eme-annee/parascolaire/trimestre-1/production-ecrite-arabe/outro.webp",
+  "count": 37,
+  "items": [
+    {
+      "id": "production-ecrite-arabe-p002",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 2",
+      "file": "002.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/002.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.2",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p003",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 3",
+      "file": "003.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/003.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.3",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p004",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 4",
+      "file": "004.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/004.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.4",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p005",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 5",
+      "file": "005.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/005.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.5",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p006",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 6",
+      "file": "006.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/006.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.6",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p007",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 7",
+      "file": "007.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/007.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.7",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p008",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 8",
+      "file": "008.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/008.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.8",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p009",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 9",
+      "file": "009.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/009.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.9",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p010",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 10",
+      "file": "010.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/010.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.10",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p011",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 11",
+      "file": "011.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/011.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.11",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p012",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 12",
+      "file": "012.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/012.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.12",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p013",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 13",
+      "file": "013.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/013.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.13",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p014",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 14",
+      "file": "014.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/014.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.14",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p015",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 15",
+      "file": "015.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/015.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.15",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p016",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 16",
+      "file": "016.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/016.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.16",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p017",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 17",
+      "file": "017.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/017.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.17",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p018",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 18",
+      "file": "018.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/018.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.18",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p019",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 19",
+      "file": "019.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/019.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.19",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p020",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 20",
+      "file": "020.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/020.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.20",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p021",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 21",
+      "file": "021.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/021.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.21",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p022",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 22",
+      "file": "022.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/022.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.22",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p023",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 23",
+      "file": "023.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/023.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.23",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p024",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 24",
+      "file": "024.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/024.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.24",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p025",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 25",
+      "file": "025.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/025.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.25",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p026",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 26",
+      "file": "026.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/026.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.26",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p027",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 27",
+      "file": "027.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/027.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.27",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p028",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 28",
+      "file": "028.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/028.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.28",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p029",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 29",
+      "file": "029.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/029.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.29",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p030",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 30",
+      "file": "030.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/030.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.30",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p031",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 31",
+      "file": "031.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/031.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.31",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p032",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 32",
+      "file": "032.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/032.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.32",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p033",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 33",
+      "file": "033.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/033.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.33",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p034",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 34",
+      "file": "034.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/034.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.34",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p035",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 35",
+      "file": "035.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/035.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.35",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p036",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 36",
+      "file": "036.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/036.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.36",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p038",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 38",
+      "file": "038.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/038.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.38",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "production-ecrite-arabe-p039",
+      "grade": "4eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "production-ecrite-arabe",
+      "title": "صفحة 39",
+      "file": "039.json",
+      "relPath": "parascolaire/livres/4eme_annee/production_ecrite_arabe/pages/039.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.39",
+      "labels": [
+        "parascolaire",
+        "4eme-annee",
+        "arabe"
+      ]
+    }
+  ],
+  "exerciseCount": 47,
+  "solvedCount": 0,
+  "notes": "39 pages in the book, 37 digitized."
+}
