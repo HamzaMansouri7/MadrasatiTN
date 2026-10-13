@@ -33,8 +33,14 @@ import { ThemeCardComponent } from './ui/theme-card';
           }
           @case ('ready') {
             @if (book(); as b) {
-              <header class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl p-5 sm:p-6 grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,24rem)] lg:items-end">
-                <h1 class="p-display text-2xl sm:text-3xl leading-tight">{{ bookName() }}</h1>
+              <header class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl p-5 sm:p-6 grid gap-4 lg:grid-cols-[auto_minmax(0,1fr)_minmax(0,20rem)] items-center">
+                @if (b.cover) {
+                  <img [src]="'/' + b.cover" [alt]="bookName()" class="w-24 h-32 object-cover rounded-xl shadow-md border border-[var(--p-rule)] hidden sm:block shrink-0" />
+                }
+                <div>
+                  <h1 class="p-display text-2xl sm:text-3xl leading-tight">{{ bookName() }}</h1>
+                  <p class="text-sm text-[var(--p-pencil)] mt-1">{{ b.themes.length }} {{ lang.tr('thèmes d’apprentissage & évaluations', 'مواضيع تعليمية وتقييمات') }}</p>
+                </div>
                 <div class="space-y-2">
                   <app-p-ruler [segments]="segments()" [label]="progress()" />
                   <p class="text-sm text-[var(--p-pencil)]">{{ progress() }}</p>

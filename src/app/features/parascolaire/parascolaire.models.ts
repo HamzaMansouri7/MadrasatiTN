@@ -47,6 +47,7 @@ export interface ParascolaireBook {
   themeCount: number;
   readyCount: number;
   resources: { parentGuide: { status: SlotStatus } };
+  cover?: string;
   themes: ParascolaireTheme[];
 }
 

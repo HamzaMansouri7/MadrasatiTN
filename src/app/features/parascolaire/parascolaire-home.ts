@@ -61,26 +61,34 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
                     <span class="text-[0.9375rem] font-normal text-[var(--p-pencil)]">{{ g.items.length }}</span>
                   </h2>
                 }
-                <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+                <div class="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
               @for (b of g.items; track b.id) {
-                <article class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl p-5 flex flex-col gap-4">
-                  <div class="space-y-2">
-                    <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.8125rem] text-[var(--p-pencil)]">
+                <a [routerLink]="bookLink(b)" class="group flex flex-col bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl overflow-hidden transition-colors hover:border-[var(--p-blue)]">
+                  <div class="aspect-[3/4] bg-[var(--p-sunk)] border-b border-[var(--p-rule)] overflow-hidden">
+                    @if (b.cover) {
+                      <img [src]="'/' + b.cover" [alt]="bookTitle(b, lang.isArabic())" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+                    } @else {
+                      <div class="p-lined w-full h-full flex items-end p-4" aria-hidden="true">
+                        <span class="p-display text-base leading-snug text-[var(--p-ink)] line-clamp-4">{{ bookTitle(b, lang.isArabic()) }}</span>
+                      </div>
+                    }
+                  </div>
+                  <div class="p-4 flex flex-col gap-3 flex-1">
+                    <p class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[var(--p-pencil)]">
                       @for (s of b.subjects; track s) {
-                        <span class="flex items-center gap-2">
-                          <span class="w-2.5 h-2.5 rounded-full shrink-0" [style.background]="color(s)" aria-hidden="true"></span>
+                        <span class="flex items-center gap-1.5">
+                          <span class="w-2 h-2 rounded-full shrink-0" [style.background]="color(s)" aria-hidden="true"></span>
                           <span>{{ subjectName(s) }}</span>
                         </span>
                       }
                     </p>
-                    <h3 class="p-display text-base leading-snug">{{ bookTitle(b, lang.isArabic()) }}</h3>
+                    <h3 class="p-display text-base leading-snug min-h-[2.75rem] line-clamp-2">{{ bookTitle(b, lang.isArabic()) }}</h3>
+                    <div class="space-y-2 mt-auto pt-3 border-t border-[var(--p-rule)]">
+                      <app-p-ruler [segments]="segments(b)" [label]="rulerLabel(b)" />
+                      <p class="text-sm text-[var(--p-pencil)]">{{ progress(b) }}</p>
+                    </div>
                   </div>
-                  <div class="space-y-2">
-                    <app-p-ruler [segments]="segments(b)" [label]="rulerLabel(b)" />
-                    <p class="text-[0.9375rem]">{{ progress(b) }}</p>
-                  </div>
-                  <a class="p-btn p-btn-primary self-start" [routerLink]="bookLink(b)">{{ lang.tr('Ouvrir', 'فتح') }}</a>
-                </article>
+                </a>
               }
                 </div>
               </section>
@@ -88,9 +96,9 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
             </div>
           }
           @default {
-            <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3" aria-busy="true" [attr.aria-label]="lang.tr('Chargement', 'جارٍ التحميل')">
+            <div class="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6" aria-busy="true" [attr.aria-label]="lang.tr('Chargement', 'جارٍ التحميل')">
               @for (n of skeleton; track n) {
-                <div class="p-skeleton h-[210px]"></div>
+                <div class="p-skeleton aspect-[3/5]"></div>
               }
             </div>
           }

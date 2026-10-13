@@ -1,0 +1,1749 @@
+{
+  "source": "MadrasatiTN Parascolaire",
+  "bookId": "5eme-annee/mathematiques-exercices-evaluations",
+  "title": "كتاب الرياضيات — تمارين وتقييمات (السنة الخامسة)",
+  "cover": "assets/resources/5eme-annee/parascolaire/trimestre-1/mathematiques-exercices-evaluations/cover.webp",
+  "count": 87,
+  "items": [
+    {
+      "id": "eval-5eme-math-p002",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 2",
+      "file": "002.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/002.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.2",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p003",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 3",
+      "file": "003.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/003.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.3",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p004",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 4",
+      "file": "004.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/004.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.4",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p005",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 5",
+      "file": "005.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/005.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.5",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p006",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 6",
+      "file": "006.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/006.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.6",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p007",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 7",
+      "file": "007.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/007.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.7",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p008",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 8",
+      "file": "008.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/008.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.8",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p009",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 9",
+      "file": "009.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/009.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.9",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p010",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 10",
+      "file": "010.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/010.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.10",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p011",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 11",
+      "file": "011.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/011.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.11",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p012",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 12",
+      "file": "012.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/012.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.12",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p013",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 13",
+      "file": "013.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/013.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.13",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p014",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 14",
+      "file": "014.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/014.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.14",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p015",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 15",
+      "file": "015.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/015.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.15",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p016",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 16",
+      "file": "016.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/016.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.16",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p017",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 17",
+      "file": "017.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/017.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.17",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p018",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 18",
+      "file": "018.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/018.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.18",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p019",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 19",
+      "file": "019.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/019.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.19",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p020",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 20",
+      "file": "020.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/020.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.20",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p021",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 21",
+      "file": "021.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/021.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.21",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p022",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 22",
+      "file": "022.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/022.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.22",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p023",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 23",
+      "file": "023.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/023.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.23",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p024",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 24",
+      "file": "024.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/024.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.24",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p025",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 25",
+      "file": "025.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/025.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.25",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p026",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 26",
+      "file": "026.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/026.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.26",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p027",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 27",
+      "file": "027.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/027.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.27",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p028",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 28",
+      "file": "028.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/028.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.28",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p029",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 29",
+      "file": "029.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/029.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.29",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p030",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 30",
+      "file": "030.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/030.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.30",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p031",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 31",
+      "file": "031.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/031.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.31",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p032",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 32",
+      "file": "032.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/032.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.32",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p033",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 33",
+      "file": "033.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/033.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.33",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p034",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 34",
+      "file": "034.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/034.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.34",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p035",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 35",
+      "file": "035.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/035.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.35",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p036",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 36",
+      "file": "036.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/036.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.36",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p037",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 37",
+      "file": "037.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/037.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.37",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p038",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 38",
+      "file": "038.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/038.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.38",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p039",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 39",
+      "file": "039.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/039.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.39",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p040",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 40",
+      "file": "040.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/040.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.40",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p041",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 41",
+      "file": "041.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/041.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.41",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p042",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 42",
+      "file": "042.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/042.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.42",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p043",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 43",
+      "file": "043.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/043.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.43",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p044",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 44",
+      "file": "044.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/044.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.44",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p045",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 45",
+      "file": "045.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/045.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.45",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p046",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 46",
+      "file": "046.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/046.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.46",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p047",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 47",
+      "file": "047.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/047.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.47",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p048",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 48",
+      "file": "048.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/048.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.48",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p049",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 49",
+      "file": "049.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/049.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.49",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p050",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 50",
+      "file": "050.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/050.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.50",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p051",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 51",
+      "file": "051.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/051.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.51",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p052",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 52",
+      "file": "052.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/052.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.52",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p053",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 53",
+      "file": "053.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/053.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.53",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p054",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 54",
+      "file": "054.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/054.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.54",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p055",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 55",
+      "file": "055.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/055.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.55",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p056",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 56",
+      "file": "056.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/056.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.56",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p057",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 57",
+      "file": "057.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/057.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.57",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p058",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 58",
+      "file": "058.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/058.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.58",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p059",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 59",
+      "file": "059.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/059.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.59",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p060",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 60",
+      "file": "060.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/060.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.60",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p061",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 61",
+      "file": "061.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/061.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.61",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p062",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 62",
+      "file": "062.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/062.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.62",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p063",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 63",
+      "file": "063.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/063.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.63",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p064",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 64",
+      "file": "064.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/064.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.64",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p065",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 65",
+      "file": "065.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/065.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.65",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p066",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 66",
+      "file": "066.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/066.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.66",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p067",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 67",
+      "file": "067.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/067.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.67",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p068",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 68",
+      "file": "068.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/068.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.68",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p069",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 69",
+      "file": "069.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/069.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.69",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p070",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 70",
+      "file": "070.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/070.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.70",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p071",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 71",
+      "file": "071.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/071.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.71",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p072",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 72",
+      "file": "072.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/072.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.72",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p073",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 73",
+      "file": "073.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/073.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.73",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p074",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 74",
+      "file": "074.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/074.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.74",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p075",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 75",
+      "file": "075.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/075.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.75",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p076",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 76",
+      "file": "076.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/076.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.76",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p077",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 77",
+      "file": "077.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/077.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.77",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p078",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 78",
+      "file": "078.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/078.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.78",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p079",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 79",
+      "file": "079.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/079.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.79",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p080",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 80",
+      "file": "080.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/080.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.80",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p081",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 81",
+      "file": "081.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/081.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.81",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p082",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 82",
+      "file": "082.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/082.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.82",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p083",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 83",
+      "file": "083.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/083.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.83",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p084",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 84",
+      "file": "084.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/084.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.84",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p085",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 85",
+      "file": "085.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/085.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.85",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p086",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 86",
+      "file": "086.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/086.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.86",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p087",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 87",
+      "file": "087.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/087.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.87",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    },
+    {
+      "id": "eval-5eme-math-p088",
+      "grade": "5eme-annee",
+      "subject": "maths",
+      "subSubject": "mathematiques",
+      "trimester": 1,
+      "topic": "mathematiques-exercices-evaluations",
+      "title": "صفحة 88",
+      "file": "088.json",
+      "relPath": "parascolaire/livres/5eme_annee/mathematiques_exercices_evaluations/pages/088.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire Book 5eme-annee Math p.88",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "maths",
+        "evaluations",
+        "exercices"
+      ]
+    }
+  ]
+}
