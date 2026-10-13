@@ -15,7 +15,7 @@
       "grade": "6eme-annee",
       "subject": "Mathématiques",
       "subSubject": "parascolaire",
-      "trimester": 1,
+      "trimester": 3,
       "topic": "epreuve-modele-mathematiques-corrigee",
       "title": "صفحة 2",
       "file": "002.json",
@@ -33,7 +33,7 @@
       "grade": "6eme-annee",
       "subject": "Mathématiques",
       "subSubject": "parascolaire",
-      "trimester": 1,
+      "trimester": 3,
       "topic": "epreuve-modele-mathematiques-corrigee",
       "title": "صفحة 3",
       "file": "003.json",
@@ -51,7 +51,7 @@
       "grade": "6eme-annee",
       "subject": "Mathématiques",
       "subSubject": "parascolaire",
-      "trimester": 1,
+      "trimester": 3,
       "topic": "epreuve-modele-mathematiques-corrigee",
       "title": "صفحة 4",
       "file": "004.json",
@@ -69,7 +69,7 @@
       "grade": "6eme-annee",
       "subject": "Mathématiques",
       "subSubject": "parascolaire",
-      "trimester": 1,
+      "trimester": 3,
       "topic": "epreuve-modele-mathematiques-corrigee",
       "title": "صفحة 5",
       "file": "005.json",
@@ -87,7 +87,7 @@
       "grade": "6eme-annee",
       "subject": "Mathématiques",
       "subSubject": "parascolaire",
-      "trimester": 1,
+      "trimester": 3,
       "topic": "epreuve-modele-mathematiques-corrigee",
       "title": "صفحة 6",
       "file": "006.json",
@@ -100,5 +100,8 @@
         "mathématiques"
       ]
     }
-  ]
+  ],
+  "exerciseCount": 13,
+  "solvedCount": 6,
+  "notes": "6 pages in the book, 5 digitized."
 }
