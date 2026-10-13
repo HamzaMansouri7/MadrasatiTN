@@ -1080,9 +1080,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -1480,9 +1480,9 @@
       "correctionPages": [
         112
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -1630,9 +1630,9 @@
       "correctionPages": [
         113
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -2505,9 +2505,9 @@
       "correctionPages": [
         115
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -2855,9 +2855,9 @@
       "correctionPages": [
         115
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -3723,9 +3723,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -4515,9 +4515,9 @@
       "correctionPages": [
         118
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -5240,9 +5240,9 @@
       "correctionPages": [
         120
       ],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.85,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -5265,9 +5265,9 @@
       "correctionPages": [
         120
       ],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.85,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -5772,9 +5772,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -6048,9 +6048,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.85,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -6140,9 +6140,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.85,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -6186,9 +6186,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.8,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -7391,9 +7391,9 @@
         125,
         126
       ],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.72,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -7443,9 +7443,9 @@
         125,
         126
       ],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.72,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -7830,9 +7830,9 @@
       "correctionPages": [
         126
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -7880,9 +7880,9 @@
       "correctionPages": [
         126
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -8001,9 +8001,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -8070,9 +8070,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -9199,9 +9199,9 @@
       "correctionPages": [
         129
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -9949,9 +9949,9 @@
       "correctionPages": [
         130
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -9999,9 +9999,9 @@
       "correctionPages": [
         130
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -10024,9 +10024,9 @@
       "correctionPages": [
         130
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -10649,9 +10649,9 @@
       "correctionPages": [
         132
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -10899,9 +10899,9 @@
       "correctionPages": [
         132
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -11795,9 +11795,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -11818,9 +11818,9 @@
       "correction": "inline",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.8,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -11841,9 +11841,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.8,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -11864,9 +11864,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.8,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -11887,9 +11887,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.8,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -12853,9 +12853,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -12876,9 +12876,9 @@
       "correction": "inline",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -12899,9 +12899,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -12991,9 +12991,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -13014,9 +13014,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -13037,9 +13037,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -13060,9 +13060,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -13083,9 +13083,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -13106,9 +13106,9 @@
       "correction": "inline",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -13129,9 +13129,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -13152,9 +13152,9 @@
       "correction": "inline",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.85,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -13221,9 +13221,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {
@@ -13267,9 +13267,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
     },
     {

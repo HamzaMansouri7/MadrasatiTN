@@ -42,7 +42,8 @@
       "id": "devoirs_trimestre_1_matieres_mixtes_p013_i3",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -94,7 +95,7 @@
     "themeGroup": "Grands nombres entiers"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "labels": {
     "pageSubject": "Mathématiques"

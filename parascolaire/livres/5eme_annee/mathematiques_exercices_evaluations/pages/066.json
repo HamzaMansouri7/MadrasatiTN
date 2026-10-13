@@ -9,14 +9,15 @@
       "kind": "exercise",
       "number": "",
       "instruction": "احْسُبِ الْمَبْلَغَ الْمُقَرَّرَ لِكُلِّ قِسْطٍ؟",
-      "body": "اِحْسُبِ الْمَبْلَغَ الْمُقَرَّرَ لِكُلِّ قِسْطٍ؟ (تتمة سؤال من الصفحة السابقة، مع أسطر منقطة للإجابة)",
+      "body": "⑤ يَمْلِكُ طَاهِرٌ 1000 د فَقَرَّرَ تَبْلِيطَ إِحْدَى الغُرَفِ فَاسْتَعْمَلَ 840 جَلِيزَةً مُرَبَّعَةً قِيسُ ضِلْعِ كُلِّ وَاحِدَةٍ 25 صم.\n* احْسُبْ بِالْمِتْرِ عَرْضَ الْغُرْفَةِ إِذَا كَانَ طُولُهَا 8 م؟\n– ثَمَنُ الْجَلِيزِ 625,800 د. احْسُبْ ثَمَنَ جَلِيزَةٍ وَاحِدَةٍ.\n* أُجْرَةُ الْيَدِ الْعَامِلَةِ 6,500 د لِلْمِتْرِ الْمُرَبَّعِ الْوَاحِدِ. احْسُبْ ثَمَنَ أُجْرَةِ الْيَدِ الْعَامِلَةِ.\n* اطْرَحْ سُؤَالاً مِنِ اقْتِرَاحِكَ وَأَجِبْ عَنْهُ.",
       "figureDesc": "أسطر منقطة للإجابة",
       "answer": null,
       "confidence": 0.8,
       "id": "mathematiques_exercices_evaluations_p066_i1",
       "topicId": "math-5-p6",
       "formatGuess": "free",
-      "difficultyGuess": "hard"
+      "difficultyGuess": "hard",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -110,7 +111,7 @@
     "themeGroup": "Mesures d'aires et unités agraires"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
 }

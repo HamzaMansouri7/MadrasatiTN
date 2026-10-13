@@ -83,7 +83,7 @@
     "themeGroup": "Numération jusqu'à 9999"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "correctionStatus": "no_correction_yet",
   "examScope": "trimester",

@@ -890,9 +890,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Français 6ème année — Lire et s'exprimer"
     },
     {
@@ -4109,9 +4109,9 @@
       "correctionPages": [
         122
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Français 6ème année — Lire et s'exprimer"
     },
     {
@@ -5839,9 +5839,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Français 6ème année — Lire et s'exprimer"
     },
     {

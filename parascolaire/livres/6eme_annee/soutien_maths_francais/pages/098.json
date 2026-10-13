@@ -47,7 +47,7 @@
     {
       "kind": "exercise",
       "number": "16",
-      "instruction": "أحول إلى الوحدة المطلوبة: (1 نقطة)",
+      "instruction": "أحول إلى الوحدة المطلوبة:",
       "body": "30 dm² 76,4 m² 0,65 a = ... dm²",
       "figureDesc": "",
       "answer": "14 170 (réponse manuscrite de l'élève, peu lisible)",
@@ -55,7 +55,8 @@
       "id": "soutien_maths_francais_p098_i4",
       "topicId": "math-6-p6",
       "formatGuess": "free",
-      "difficultyGuess": "hard"
+      "difficultyGuess": "hard",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -163,7 +164,7 @@
     "themeGroup": "Mesures et conversions"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "correctionStatus": "self_contained",
   "examScope": "trimester",

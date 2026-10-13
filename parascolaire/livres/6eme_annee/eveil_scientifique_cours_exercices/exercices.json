@@ -2759,9 +2759,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
     },
     {
@@ -3426,9 +3426,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
     },
     {
@@ -3449,9 +3449,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
     },
     {
@@ -3472,9 +3472,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
     },
     {
@@ -3495,9 +3495,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
     },
     {
@@ -3518,9 +3518,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
     },
     {
@@ -3794,9 +3794,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
     },
     {
@@ -3817,9 +3817,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
     },
     {
@@ -3840,9 +3840,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
     },
     {
@@ -3863,9 +3863,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
     },
     {
@@ -4254,9 +4254,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Éveil scientifique 6ème année — Cours et exercices"
     }
   ]

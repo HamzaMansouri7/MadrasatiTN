@@ -9,14 +9,15 @@
       "kind": "exercise",
       "number": "3",
       "instruction": "أُرَتِّبُ أَحْدَاثَ النَّصِّ بِوَضْعِ الْأَرْقَامِ مِنْ 1 إِلَى 3.",
-      "body": "- تَفْقِدُ أَحْصَالَهَا.\n- ادِّخَارُ الْمَالِ فِي الْحَصَّالَةِ.\n- فَرِحَ زَيْنَبُ بِمَا جَمَعَتْهُ مِنْ مَالٍ.",
+      "body": "- تَفَقُّدُ أَحْصَالَة.\n- ادِّخَارُ الْمَالِ فِي الْحَصَّالَةِ.\n- فَرَحُ زَيْنَبَ بِمَا جَمَعَتْهُ مِنْ مَالٍ.",
       "figureDesc": "Trois cercles vides alignés verticalement à gauche des phrases, pour écrire les numéros. Barème 0,5 par ligne. Critère مع2ج (3 cases).",
       "answer": null,
       "confidence": 0.8,
       "id": "evaluations_toutes_matieres_p006_i1",
       "topicId": "ar-2-u2",
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -87,14 +88,15 @@
       "kind": "lesson",
       "number": "",
       "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
-      "body": "مع1 : الْقِرَاءَةُ الْجَهْرِيَّةُ — الْقِرَاءَةُ السَّلِيمَةُ مِنَ الْأَخْطَاءِ: مِنْ 0 إِلَى 2,5 ؛ الْقِرَاءَةُ الْمُسْتَرْسِلَةُ : مِنْ 0 إِلَى 2,5 ؛ الْقِرَاءَةُ الْمُنَغَّمَةُ : مِنْ 0 إِلَى 3. المجموع: 20 = 12 + 8.\nمعايير الحد الأدنى: مع1أ، مع2ب، مع2ج، مع2د، مع2هـ ؛ معيار التميز: مع3.\nانْعِدَامُ التَّمَلُّكِ (--): 0 في كل المعايير.\nالتَّمَلُّكُ دُونَ الْأَدْنَى (-+): 0,5 - 1 لـ مع1؛ 0,5 لكل من مع2؛ 1 لـ مع3.\nالتَّمَلُّكُ الْأَدْنَى (+-): 1,5 - 2 ؛ 1 ؛ 2 لـ مع3.\nالتَّمَلُّكُ الْأَقْصَى (++): 2,5 - 3 ؛ 1,5 ؛ 3 لـ مع3.",
+      "body": "مع1 : الْقِرَاءَةُ الْجَهْرِيَّةُ — الْقِرَاءَةُ السَّلِيمَةُ مِنَ الْأَخْطَاءِ: مِنْ 0 إِلَى 2,5 ؛ الْقِرَاءَةُ الْمُسْتَرْسِلَةُ : مِنْ 0 إِلَى 2,5 ؛ الْقِرَاءَةُ الْمُنَغَّمَةُ : مِنْ 0 إِلَى 3. المجموع: 20 = 12 + 8.\nمعايير الحد الأدنى: مع2أ، مع2ب، مع2ج، مع2د، مع2هـ ؛ معيار التميز: مع3.\nانْعِدَامُ التَّمَلُّكِ (---): 0 في كل المعايير.\nالتَّمَلُّكُ دُونَ الْأَدْنَى (--+): 0,5 - 1 لـ مع2أ؛ 0,5 لكل من مع2ب، مع2ج، مع2د، مع2هـ؛ 1 لـ مع3.\nالتَّمَلُّكُ الْأَدْنَى (-++): 1,5 - 2 لـ مع2أ ؛ 1 لكل من البقية ؛ 2 لـ مع3.\nالتَّمَلُّكُ الْأَقْصَى (+++): 2,5 - 3 لـ مع2أ ؛ 1,5 لكل من البقية ؛ 3 لـ مع3.",
       "figureDesc": "Tableau de notation par niveaux de maîtrise et critères, avec encadré de lecture à voix haute (مع1) et total sur 20. Numéro de page 5.",
       "answer": null,
       "confidence": 0.7,
       "id": "evaluations_toutes_matieres_p006_i7",
       "topicId": "ar-2-u2",
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     }
   ],
   "ocrModel": "claude-sonnet-5-5",
@@ -138,7 +140,7 @@
     "themeGroup": "Compréhension: l'argent et l'épargne"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "labels": {
     "pageSubject": "Arabe"

@@ -48,14 +48,15 @@
       "kind": "lesson",
       "number": "",
       "instruction": "أضف إلى معلوماتك",
-      "body": "تحذف النون وتعوض بالإدغام في: من من، ممن، عن ما، عما، عما لا يكون ما من أسماء الموصول حين تفيد النفي والاستفهام والتعجب والاستغراب. لا يكون من، من أسماء الموصول حين تفيد الاستفهام لأنها تكون في العادة مبتدأ.",
+      "body": "تحذف النون وتعوض بالإدغام في: من من، ممن، عن ما، عما لا يكون ما من أسماء الموصول حين تفيد النفي والاستفهام والتعجب والاستغراب. لا يكون من، من أسماء الموصول حين تفيد الاستفهام لأنها تكون في العادة مبتدأ.",
       "figureDesc": "",
       "answer": null,
       "confidence": 0.75,
       "id": "grammaire_arabe_cahier_regles_p056_i4",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -109,7 +110,7 @@
     "themeGroup": "Les pronoms relatifs"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
 }

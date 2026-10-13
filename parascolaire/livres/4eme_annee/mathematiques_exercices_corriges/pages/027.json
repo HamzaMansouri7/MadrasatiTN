@@ -113,7 +113,7 @@
     "themeGroup": "Numération jusqu'à 9 999"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "correctionStatus": "linked",
   "examScope": "short_test",

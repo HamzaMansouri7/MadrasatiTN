@@ -107,7 +107,8 @@
       "id": "examens_toutes_matieres_p009_i8",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     }
   ],
   "ocrModel": "claude-sonnet-5-5",
@@ -150,7 +151,7 @@
     "themeGroup": "Compréhension de l'écrit : le texte narratif"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "labels": {
     "pageSubject": "Arabe"

@@ -9,14 +9,15 @@
       "kind": "lesson",
       "number": "",
       "instruction": "جدول أوزان الفعل المزيد واسم المفعول منها (أحرف)",
-      "body": "الأوزان: أفعل، فعّل، فاعل، انفعل، افتعل، تفعّل، تفاعل، افعلّ، استفعل. الفعل: أمدّ، عدّد، مار، انفكّ، ارتدّ، تمدّد، تشاد، استعدّ، استعدّ. اسم المفعول: ممدّ، معدّد، ممار، منفكّ، مرتدّ، متمدّد، متشاد، (خانة مظللة فارغة)، مستعدّ.",
+      "body": "الأوزان: أفعل، فعّل، فاعل، انفعل، افتعل، تفعّل، تفاعل، افعل، استفعل. الفعل: أمدّ، عدّد، مار، انفكّ، ارتدّ، تمدّد، تشاد، استعدّ، استعدّ. اسم المفعول: ممدّ، معدّد، ممار، منفكّ، مرتدّ، متمدّد، متشاد، (خانة مظللة فارغة)، مستعدّ.",
       "figureDesc": "جدول من ثلاثة أسطر: الأوزان، الأفعال، أسماء المفعول؛ إحدى الخانات مظللة بالرمادي",
       "answer": null,
       "confidence": 0.8,
       "id": "grammaire_arabe_cahier_regles_p060_i1",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -137,7 +138,7 @@
     "themeGroup": "Les participes"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
 }

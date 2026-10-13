@@ -258,7 +258,7 @@
     "themeGroup": "Division euclidienne"
   },
   "quality": {
-    "status": "recheck_pending",
+    "status": "ai_verified",
     "accuracy": 0.85
   },
   "audit": {

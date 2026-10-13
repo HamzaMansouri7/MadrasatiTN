@@ -35,14 +35,15 @@
       "kind": "lesson",
       "number": "",
       "instruction": "التّمثيل السّهمي للعلاقة ... أكبر من ... من \"أ\" نحو \"ب\"",
-      "body": "المجموعة أ: 15 ، 46 ، 51. المجموعة ب: 12 ، 18 ، 31 ، 46. الأسهم تربط كل عنصر من أ بالعناصر من ب التي هي أصغر منه.",
+      "body": "المجموعة أ: 15 ، 46 ، 51. المجموعة ب: 12 ، 18 ، 31 ، 46. الأسهم تربط كل عنصر من أ بالعناصر من ب التي هي أصغر منه. مخطط سهمي بإهليلجين: ب (أخضر) يضم 12 و18 و31 و46، وأ (أحمر) يضم 15 و46 و51. من 15 سهم نحو 12؛ من 46 أسهم نحو 12 و18 و31؛ من 51 أسهم نحو 12 و18 و31 و46.",
       "figureDesc": "مخطط سهمي بإهليلجين: ب (أخضر) يضم 12 و18 و31 و46، وأ (أحمر) يضم 15 و46 و51. من 15 سهم نحو 12؛ من 46 أسهم نحو 12 و18 و31؛ من 51 أسهم نحو 12 و31 و46.",
       "answer": null,
       "confidence": 0.8,
       "id": "mathematiques_exercices_corriges_p135_i3",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "lesson",
@@ -109,7 +110,7 @@
     "themeGroup": "Numération jusqu'à 999"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
 }

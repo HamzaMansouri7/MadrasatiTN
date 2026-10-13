@@ -8,15 +8,16 @@
     {
       "kind": "exercise",
       "number": "2-b",
-      "instruction": "Relève, dans le texte, le détail qui le montre :",
-      "body": "Deux lignes de pointillés pour écrire la réponse. (Le début de la question 2, avec la partie a, est partiellement visible en filigrane et illisible.)",
+      "instruction": "b- Relève, dans le texte, le détail qui le montre :",
+      "body": "Deux lignes de pointillés pour écrire la réponse.",
       "figureDesc": "",
       "answer": null,
       "confidence": 0.6,
       "id": "francais_lire_et_sexprimer_p038_i1",
       "topicId": "fr-6-m5",
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -124,7 +125,7 @@
     "themeGroup": "Eau, énergie et environnement"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Français 6ème année — Lire et s'exprimer"
 }

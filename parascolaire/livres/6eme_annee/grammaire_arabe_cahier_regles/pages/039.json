@@ -9,14 +9,15 @@
       "kind": "lesson",
       "number": "",
       "instruction": "المراجعة – أهم أوزان المصادر السماعية",
-      "body": "ثلاثة أحرف: شرب ← شُرب ; كذب ← كذب ; هدى ← هدى. أربعة أحرف: رحم ← رحمة ; دعا ← دعوى ; صهل ← صهيل. خمسة أحرف: غفر ← غفران ; شهد ← شهادة ; صعب ← صعوبة",
+      "body": "ثلاثة أحرف: شرب ← شرب ; كذب ← كذب ; هدى ← هدى. أربعة أحرف: رحم ← رحمة ; دعا ← دعوى ; صهل ← صهيل. خمسة أحرف: غفر ← غفران ; شهد ← شهادة ; صعب ← صعوبة",
       "figureDesc": "Tableau à 3 colonnes (ثلاثة أحرف، أربعة أحرف، خمسة أحرف) et 3 lignes. Chaque cellule contient un verbe suivi de son مصدر سماعي.",
       "answer": null,
       "confidence": 0.8,
       "id": "grammaire_arabe_cahier_regles_p039_i1",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "lesson",
@@ -82,7 +83,7 @@
     "themeGroup": "Le masdar"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Grammaire arabe 6ème année — Cahier de règles"
 }

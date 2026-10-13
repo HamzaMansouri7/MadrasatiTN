@@ -9,14 +9,15 @@
       "kind": "exercise",
       "number": "1",
       "instruction": "أنجز العمليّات التّالية :",
-      "body": "أ) 20000 + 3750 = ..... (الناتج المطبوع في الصفحة: 40000 غير مكتمل/غير واضح) ؛ ب) ..... − 17873 = 70251 ؛ ج) 2381. − 1.253 = .85.2 (كما هو مطبوع) ؛ د) 2075 × 8 = ...",
+      "body": "20000 + 3750 + ..... = 40000 ؛ ..... − 17873 = 70251 ؛ 2381. − 1.253 = .85.2 ؛ 2075 × 8 = ...",
       "figureDesc": "أربع عمليات مكتوبة عموديا: جمع (20000 و3750)، طرح (..... ناقص 17873 والناتج 70251)، طرح (2381. ناقص 1.253 والناتج .85.2)، ضرب (2075 × 8) مع خط الناتج فارغ.",
       "answer": null,
       "confidence": 0.7,
       "id": "mathematiques_exercices_corriges_p074_i1",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -100,7 +101,7 @@
     "themeGroup": "Révisions et évaluations"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "correctionStatus": "linked",
   "examScope": "trimester",

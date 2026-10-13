@@ -61,14 +61,15 @@
       "kind": "exercise",
       "number": "3-ب",
       "instruction": "يَسْمَحُ البائِعُ بِبَيْعِ 9 صُحُونٍ أَوْ 6 مِنْ نَفْسِ النَّوْعِ، ما هُوَ عَدَدُ الصُّحُونِ الَّتِي تَشْتَرِيها الأُمُّ؟ عَلِّلْ إِجابَتَكَ.",
-      "body": "",
+      "body": "كَمْ بَقِيَ لَهَا بَعْدَ شِراءِ الصُّحُونِ؟ (A separate bullet, «احْسُبْ ثَمَنَ الصَّحْنِ الواحِدِ»، also appears earlier in exercise 3.)",
       "figureDesc": "ثلاثة أسطر منقّطة لكتابة الإجابة.",
       "answer": null,
       "confidence": 0.8,
       "id": "mathematiques_exercices_evaluations_p018_i5",
       "topicId": "math-5-p4",
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -120,7 +121,7 @@
     "themeGroup": "Division euclidienne"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
 }

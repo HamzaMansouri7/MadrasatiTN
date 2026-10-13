@@ -150,7 +150,7 @@
     "themeGroup": "Le temps et l'ordre chronologique"
   },
   "quality": {
-    "status": "recheck_pending",
+    "status": "ai_verified",
     "accuracy": 0.85
   },
   "audit": {

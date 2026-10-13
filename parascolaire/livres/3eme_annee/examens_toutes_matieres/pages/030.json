@@ -61,14 +61,15 @@
       "kind": "exercise",
       "number": "5",
       "instruction": "التَّعْلِيمَةُ 5 : أُحَوِّلُ أَطْوَالَ الْخُيُوطِ إِلَى الْوَحَدَاتِ الْمَطْلُوبَةِ.",
-      "body": "- 1م و5 صم = ............... صم\n- 125 صم = ............... م و ............... دسم و ............... صم.\n- 14 دسم = ............... صم (السطر الأخير مقطوع جزئيا)\nالمعيار: مع3. العلامات: 0,5 / 0,5 / 0,5",
+      "body": "- 1م و5 صم = ............... صم\n- 125 صم = ............... م و ............... دسم و ............... صم.\n- ............... صم (السطر مقطوع من أسفل الصفحة)\nالمعيار: مع3. العلامات: 0,5 / 0,5 / 0,5",
       "figureDesc": "مربعات التقييم على اليمين، الصفحة مقطوعة من الأسفل",
       "answer": null,
       "confidence": 0.8,
       "id": "examens_toutes_matieres_p030_i5",
       "topicId": "math-3-p1",
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     }
   ],
   "ocrModel": "claude-sonnet-5-5",
@@ -108,7 +109,7 @@
     "themeGroup": "Mesures de longueur"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "labels": {
     "pageSubject": "Mathématiques"

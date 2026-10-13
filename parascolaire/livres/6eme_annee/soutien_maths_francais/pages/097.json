@@ -201,7 +201,7 @@
     "themeGroup": "Problèmes de synthèse et révisions"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "correctionStatus": "no_correction_yet",
   "examScope": "full_year",

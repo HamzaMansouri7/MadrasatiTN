@@ -61,14 +61,15 @@
       "kind": "exercise",
       "number": "5",
       "instruction": "* اقرأ المسألة وابحث عن الأعداد المناسبة ثمّ اكتبها في البطاقات الثّلاث.",
-      "body": "يملك مهدي قِطْعَتَيْنِ نَقْدِيَّتَيْنِ من فئة 1 دينار و زادته أمّه 3 قطع من فئة نصف دينار فصار يملك [      ] ابتاع 4 كرّاسات بـ 250 مي الاثْنَتَيْنِ و ومجلّة الرّياض بـ 600 مي وكتابا ثمنه [      ] ويبقي له 3 قِطَعٍ مِنْ فِئَةِ 100 مي [      ]",
+      "body": "يملك مهدي قِطْعَتَيْنِ نَقْدِيَّتَيْنِ من فئة 1 دينار و زادته أمّه 3 قطع من فئة نصف دينار فصار يملك [      ] ابتاع 4 كرّاسات بـ 250 مي الاثْنَتَيْنِ و ومجلّة الرّياض بـ 600 مي وكتابا ثمنه [      ] وبقي له 3 قِطَعٍ مِنْ فِئَةِ 100 مي [      ]",
       "figureDesc": "Trois petites cartes (cases en pointillés) insérées dans le texte du problème, à remplir avec les nombres appropriés",
       "answer": null,
       "confidence": 0.8,
       "id": "mathematiques_exercices_corriges_p012_i5",
       "topicId": "math-4-ch1",
       "formatGuess": "problem_solving",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     }
   ],
   "ocrModel": "claude-sonnet-5-5",
@@ -110,7 +111,7 @@
     "themeGroup": "Temps et calendrier"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
 }

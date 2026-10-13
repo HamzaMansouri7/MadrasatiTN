@@ -122,7 +122,7 @@
     "themeGroup": "Numération jusqu'à 9999"
   },
   "quality": {
-    "status": "recheck_pending",
+    "status": "ai_verified",
     "accuracy": 0.85
   },
   "correctionStatus": "no_correction_yet",

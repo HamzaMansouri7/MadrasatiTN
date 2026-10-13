@@ -35,14 +35,15 @@
       "kind": "exercise",
       "number": "المسألة عدد 1 - ب",
       "instruction": "اِطْرَحْ سُؤَالاً وَأَجِبْ عَنْهُ.",
-      "body": "ب- تُعْتَبَرُ هَذِهِ الشَّاحِنَةُ جِسْرًا فِي حُدُودِ الْمَدِينَةِ عَلَيْهِ اللاَّفِتَةُ الْمُحَدِّدَةُ لِلْحُمُولَةِ الْقُصْوَى.\nالسُّؤَالُ: ........\nالإِجَابَةُ: ........",
+      "body": "ب- سَتَعْبُرُ هَذِهِ الشَّاحِنَةُ جِسْرًا فِي حُدُودِ الْمَدِينَةِ عَلَيْهِ اللاَّفِتَةُ الْمُحَدِّدَةُ لِلْحُمُولَةِ الْقُصْوَى.\nالسُّؤَالُ: ........\nالإِجَابَةُ: ........",
       "figureDesc": "صورة جسر معلّق بأسلاك مع لافتة تحديد الحمولة",
       "answer": null,
       "confidence": 0.8,
       "id": "mathematiques_exercices_evaluations_p044_i3",
       "topicId": "math-5-p4",
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -96,7 +97,7 @@
     "themeGroup": "Problèmes de synthèse et vie courante"
   },
   "quality": {
-    "status": "recheck_pending",
+    "status": "ai_verified",
     "accuracy": 0.78
   },
   "audit": {

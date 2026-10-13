@@ -8,15 +8,16 @@
     {
       "kind": "exercise",
       "number": "",
-      "instruction": "",
-      "body": "Deux zones d'exercice, chacune composée d'un tableau de 7 cases vides (probablement pour les classes d'un grand nombre, à remplir) suivi d'une ligne « الإجابة » à compléter. Aucun nombre n'est écrit : le contenu est vide.",
+      "instruction": "أكتب الأعداد التالية بالأحرف (Écris les nombres suivants en lettres)",
+      "body": "Page contenant : en haut, deux tableaux vides de 7 cases (tableau de numération), chacun suivi d'un cadre « الإجابة » vide ; puis le titre « تمرين » et la consigne « أكتب الأعداد التالية بالأحرف » ; puis deux cases vides destinées à recevoir un nombre, chacune suivie d'un cadre « الإجابة » vide. Aucun nombre n'est imprimé.",
       "figureDesc": "Deux tableaux vides de 7 cases chacun (en haut de la page), chacun suivi d'un cadre « الإجابة » avec un espace de réponse vide.",
       "answer": null,
       "confidence": 0.6,
       "id": "devoirs_trimestre_1_matieres_mixtes_p010_i1",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -67,7 +68,7 @@
     "themeGroup": "Grands nombres entiers"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "labels": {
     "pageSubject": "Mathématiques"

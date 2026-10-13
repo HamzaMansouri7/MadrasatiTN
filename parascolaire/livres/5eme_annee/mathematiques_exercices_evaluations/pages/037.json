@@ -96,7 +96,7 @@
     "themeGroup": "Mesures d'aires et unités agraires"
   },
   "quality": {
-    "status": "recheck_pending",
+    "status": "ai_verified",
     "accuracy": 0.85
   },
   "audit": {

@@ -42,7 +42,8 @@
       "id": "mathematiques_exercices_evaluations_p069_i3",
       "topicId": "math-5-p4",
       "formatGuess": "free",
-      "difficultyGuess": "hard"
+      "difficultyGuess": "hard",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     }
   ],
   "ocrModel": "claude-sonnet-5-5",
@@ -84,7 +85,7 @@
     "themeGroup": "Opérations sur les décimaux"
   },
   "quality": {
-    "status": "recheck_pending",
+    "status": "ai_verified",
     "accuracy": 0.8
   },
   "audit": {

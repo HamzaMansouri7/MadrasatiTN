@@ -9,14 +9,15 @@
       "kind": "exercise",
       "number": "1",
       "instruction": "اِبحث عن أصغر عدد يحقّق ما يلي :",
-      "body": "28 + ...... > 60 ؛ 100 < 90 + ...... ؛ 400 > ...... - 500 ؛ 200 < 300 - ......",
+      "body": "60 < ...... + 28 ؛ 100 < 90 + ...... ؛ 400 > ...... - 500 ؛ 200 < 300 - ......",
       "figureDesc": "Quatre inégalités à compléter, disposées en deux colonnes séparées par un trait vertical ; les blancs sont indiqués par des pointillés.",
       "answer": null,
       "confidence": 0.8,
       "id": "mathematiques_exercices_corriges_p036_i1",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -112,7 +113,7 @@
     "themeGroup": "Addition et soustraction"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
 }

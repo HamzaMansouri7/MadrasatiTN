@@ -390,9 +390,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -413,9 +413,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -436,9 +436,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -459,9 +459,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -482,9 +482,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -505,9 +505,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -528,9 +528,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -1655,9 +1655,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -1701,9 +1701,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -2115,9 +2115,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.8,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -2828,9 +2828,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -5082,9 +5082,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.85,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -5220,9 +5220,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.85,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -5473,9 +5473,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {
@@ -6416,9 +6416,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Évaluations 2ème année — Toutes matières"
     },
     {

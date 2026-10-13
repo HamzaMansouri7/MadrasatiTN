@@ -73,7 +73,7 @@
     "themeGroup": "Fractions"
   },
   "quality": {
-    "status": "recheck_pending",
+    "status": "ai_verified",
     "accuracy": 0.8
   },
   "correctionStatus": "linked",

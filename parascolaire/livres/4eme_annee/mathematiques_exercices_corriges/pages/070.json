@@ -42,7 +42,8 @@
       "id": "mathematiques_exercices_corriges_p070_i3",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -115,7 +116,7 @@
     "themeGroup": "Révisions et évaluations"
   },
   "quality": {
-    "status": "recheck_pending",
+    "status": "ai_verified",
     "accuracy": 0.72
   },
   "correctionStatus": "linked",

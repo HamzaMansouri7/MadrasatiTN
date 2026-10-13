@@ -29,7 +29,8 @@
       "id": "soutien_maths_francais_p047_i2",
       "topicId": "math-6-p4",
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -55,7 +56,8 @@
       "id": "soutien_maths_francais_p047_i4",
       "topicId": "math-6-p4",
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     }
   ],
   "ocrModel": "claude-sonnet-5-5",
@@ -98,7 +100,7 @@
     "themeGroup": "Angles et symétrie axiale"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "labels": {
     "pageSubject": "Mathématiques"

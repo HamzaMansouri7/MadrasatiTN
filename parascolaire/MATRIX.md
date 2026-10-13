@@ -18,23 +18,23 @@ Un livre = un dossier dans `livres/<classe>/<livre>/` avec `book.json`, `exercic
 | # | Classe | Nom du livre | Matière | Dossier | Pages | Exercices | Prêts |
 |---|---|---|---|---|---|---|---|
 | 1 | 1ère Année | Évaluations 1ère année — Maths & Arabe | Mathématiques | `livres/1ere_annee/evaluations_maths_arabe` | 72 | 240 | 240 |
-| 2 | 2ème Année | Évaluations 2ème année — Toutes matières | Arabe | `livres/2eme_annee/evaluations_toutes_matieres` | 58 | 224 | 215 |
-| 3 | 3ème Année | Examens 3ème année — Toutes matières | Arabe | `livres/3eme_annee/examens_toutes_matieres` | 71 | 251 | 237 |
-| 4 | 4ème Année | Mathématiques 4ème année — Exercices et corrigés | Mathématiques | `livres/4eme_annee/mathematiques_exercices_corriges` | 140 | 528 | 489 |
-| 5 | 4ème Année | Production écrite 4ème année — Arabe | Arabe | `livres/4eme_annee/production_ecrite_arabe` | 39 | 47 | 46 |
-| 6 | 5ème Année | Devoirs 5ème année — Trimestre 1, matières mixtes | Mathématiques | `livres/5eme_annee/devoirs_trimestre_1_matieres_mixtes` | 51 | 23 | 20 |
+| 2 | 2ème Année | Évaluations 2ème année — Toutes matières | Arabe | `livres/2eme_annee/evaluations_toutes_matieres` | 58 | 224 | 224 |
+| 3 | 3ème Année | Examens 3ème année — Toutes matières | Arabe | `livres/3eme_annee/examens_toutes_matieres` | 71 | 251 | 251 |
+| 4 | 4ème Année | Mathématiques 4ème année — Exercices et corrigés | Mathématiques | `livres/4eme_annee/mathematiques_exercices_corriges` | 140 | 528 | 528 |
+| 5 | 4ème Année | Production écrite 4ème année — Arabe | Arabe | `livres/4eme_annee/production_ecrite_arabe` | 39 | 47 | 47 |
+| 6 | 5ème Année | Devoirs 5ème année — Trimestre 1, matières mixtes | Mathématiques | `livres/5eme_annee/devoirs_trimestre_1_matieres_mixtes` | 51 | 23 | 23 |
 | 7 | 5ème Année | Mathématiques 5ème année — Exercices corrigés | Mathématiques | `livres/5eme_annee/exercices_mathematiques_corriges` | 8 | 14 | 14 |
-| 8 | 5ème Année | Mathématiques 5ème année — Exercices et évaluations | Mathématiques | `livres/5eme_annee/mathematiques_exercices_evaluations` | 88 | 343 | 286 |
+| 8 | 5ème Année | Mathématiques 5ème année — Exercices et évaluations | Mathématiques | `livres/5eme_annee/mathematiques_exercices_evaluations` | 88 | 343 | 339 |
 | 9 | 5ème Année | Éveil scientifique 5ème année — Évaluations | Éveil scientifique | `livres/5eme_annee/eveil_scientifique_evaluations` | 8 | 21 | 21 |
-| 10 | 6ème Année | Concours 6ème année — Mathématiques (corrigés) | Mathématiques | `livres/6eme_annee/concours_mathematiques_corriges` | 18 | 45 | 41 |
+| 10 | 6ème Année | Concours 6ème année — Mathématiques (corrigés) | Mathématiques | `livres/6eme_annee/concours_mathematiques_corriges` | 18 | 45 | 45 |
 | 11 | 6ème Année | Concours blanc 6ème année — Éveil scientifique (corrigé) | Éveil scientifique | `livres/6eme_annee/concours_blanc_eveil_scientifique_corrige` | 3 | 10 | 10 |
 | 12 | 6ème Année | Examen de lecture 6ème année — Arabe (corrigé) | Arabe | `livres/6eme_annee/examen_lecture_arabe_corrige` | 6 | 21 | 21 |
-| 13 | 6ème Année | Français 6ème année — Lire et s'exprimer | Français | `livres/6eme_annee/francais_lire_et_sexprimer` | 129 | 426 | 418 |
-| 14 | 6ème Année | Grammaire arabe 6ème année — Cahier de règles | Arabe | `livres/6eme_annee/grammaire_arabe_cahier_regles` | 61 | 147 | 141 |
-| 15 | 6ème Année | Soutien 6ème année — Maths et Français | Mathématiques | `livres/6eme_annee/soutien_maths_francais` | 132 | 646 | 619 |
+| 13 | 6ème Année | Français 6ème année — Lire et s'exprimer | Français | `livres/6eme_annee/francais_lire_et_sexprimer` | 129 | 426 | 421 |
+| 14 | 6ème Année | Grammaire arabe 6ème année — Cahier de règles | Arabe | `livres/6eme_annee/grammaire_arabe_cahier_regles` | 61 | 147 | 147 |
+| 15 | 6ème Année | Soutien 6ème année — Maths et Français | Mathématiques | `livres/6eme_annee/soutien_maths_francais` | 132 | 646 | 646 |
 | 16 | 6ème Année | Épreuve modèle 6ème année — Mathématiques (corrigée) | Mathématiques | `livres/6eme_annee/epreuve_modele_mathematiques_corrigee` | 6 | 13 | 13 |
-| 17 | 6ème Année | Éveil scientifique 6ème année — Cours et exercices | Éveil scientifique | `livres/6eme_annee/eveil_scientifique_cours_exercices` | 57 | 159 | 150 |
-| **Total** |  |  |  |  | **947** | **3158** | **2981** |
+| 17 | 6ème Année | Éveil scientifique 6ème année — Cours et exercices | Éveil scientifique | `livres/6eme_annee/eveil_scientifique_cours_exercices` | 57 | 159 | 159 |
+| **Total** |  |  |  |  | **947** | **3158** | **3149** |
 
 ## 1. Matrice par classe
 
@@ -43,12 +43,12 @@ Chiffres globaux. Contrôlés = exercices sur une page auditée. Avec corrigé =
 | Classe | Livres | Pages | Pages propres | Thèmes | Items de cours | Exercices | Contrôlés | Avec corrigé | Examens | Examens avec corrigé |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1ère Année | 1 | 71 | 44 | 24 | 40 | 240 | 116 | 0 | 1 | 0 |
-| 2ème Année | 1 | 57 | 3 | 31 | 56 | 224 | 122 | 0 | 34 | 0 |
-| 3ème Année | 1 | 66 | 7 | 40 | 44 | 251 | 112 | 0 | 40 | 0 |
-| 4ème Année | 2 | 174 | 49 | 31 | 134 | 575 | 268 | 182 | 37 | 28 |
-| 5ème Année | 4 | 149 | 67 | 49 | 173 | 401 | 213 | 8 | 1 | 0 |
-| 6ème Année | 8 | 382 | 121 | 65 | 248 | 1467 | 843 | 91 | 99 | 25 |
-| **Total** | **17** | **899** | **291** | **232** | **695** | **3158** | **1674** | **281** | **212** | **53** |
+| 2ème Année | 1 | 57 | 3 | 31 | 56 | 224 | 146 | 0 | 34 | 0 |
+| 3ème Année | 1 | 66 | 7 | 40 | 44 | 251 | 185 | 0 | 40 | 0 |
+| 4ème Année | 2 | 174 | 49 | 31 | 134 | 575 | 380 | 182 | 37 | 28 |
+| 5ème Année | 4 | 149 | 67 | 49 | 173 | 401 | 338 | 8 | 1 | 0 |
+| 6ème Année | 8 | 382 | 121 | 65 | 248 | 1467 | 969 | 91 | 99 | 25 |
+| **Total** | **17** | **899** | **291** | **232** | **695** | **3158** | **2134** | **281** | **212** | **53** |
 
 ## 2. Matrice classe par matière
 
@@ -497,22 +497,22 @@ Propres = liées à un chapitre. Contrôlées = audit OK. Corrigées = texte ref
 | Livre | Classe | Pages | Propres | Contrôlées (ok) | Corrigées | À auditer |
 |---|---|---|---|---|---|---|
 | Évaluations 1ère année — Maths & Arabe | 1ère Année | 71 | 44 | 28 | 6 | 37 |
-| Évaluations 2ème année — Toutes matières | 2ème Année | 57 | 3 | 29 | 1 | 27 |
-| Examens 3ème année — Toutes matières | 3ème Année | 66 | 7 | 33 | 0 | 33 |
-| Mathématiques 4ème année — Exercices et corrigés | 4ème Année | 137 | 43 | 54 | 10 | 73 |
-| Production écrite 4ème année — Arabe | 4ème Année | 37 | 6 | 25 | 0 | 12 |
-| Devoirs 5ème année — Trimestre 1, matières mixtes | 5ème Année | 49 | 20 | 20 | 1 | 28 |
+| Évaluations 2ème année — Toutes matières | 2ème Année | 57 | 3 | 29 | 1 | 20 |
+| Examens 3ème année — Toutes matières | 3ème Année | 66 | 7 | 33 | 0 | 16 |
+| Mathématiques 4ème année — Exercices et corrigés | 4ème Année | 137 | 43 | 54 | 10 | 49 |
+| Production écrite 4ème année — Arabe | 4ème Année | 37 | 6 | 25 | 0 | 11 |
+| Devoirs 5ème année — Trimestre 1, matières mixtes | 5ème Année | 49 | 20 | 20 | 1 | 23 |
 | Mathématiques 5ème année — Exercices corrigés | 5ème Année | 6 | 3 | 5 | 0 | 1 |
-| Mathématiques 5ème année — Exercices et évaluations | 5ème Année | 87 | 43 | 36 | 8 | 43 |
+| Mathématiques 5ème année — Exercices et évaluations | 5ème Année | 87 | 43 | 36 | 8 | 13 |
 | Éveil scientifique 5ème année — Évaluations | 5ème Année | 7 | 1 | 6 | 0 | 1 |
-| Concours 6ème année — Mathématiques (corrigés) | 6ème Année | 18 | 16 | 9 | 3 | 6 |
+| Concours 6ème année — Mathématiques (corrigés) | 6ème Année | 18 | 16 | 9 | 3 | 4 |
 | Concours blanc 6ème année — Éveil scientifique (corrigé) | 6ème Année | 3 | 2 | 1 | 2 | 0 |
 | Examen de lecture 6ème année — Arabe (corrigé) | 6ème Année | 6 | 0 | 6 | 0 | 0 |
-| Français 6ème année — Lire et s'exprimer | 6ème Année | 126 | 33 | 65 | 17 | 43 |
-| Grammaire arabe 6ème année — Cahier de règles | 6ème Année | 60 | 10 | 28 | 3 | 29 |
-| Soutien 6ème année — Maths et Français | 6ème Année | 108 | 6 | 53 | 0 | 55 |
+| Français 6ème année — Lire et s'exprimer | 6ème Année | 126 | 33 | 65 | 17 | 40 |
+| Grammaire arabe 6ème année — Cahier de règles | 6ème Année | 60 | 10 | 28 | 3 | 19 |
+| Soutien 6ème année — Maths et Français | 6ème Année | 108 | 6 | 53 | 0 | 45 |
 | Épreuve modèle 6ème année — Mathématiques (corrigée) | 6ème Année | 5 | 4 | 4 | 1 | 0 |
-| Éveil scientifique 6ème année — Cours et exercices | 6ème Année | 56 | 50 | 28 | 3 | 25 |
+| Éveil scientifique 6ème année — Cours et exercices | 6ème Année | 56 | 50 | 28 | 3 | 20 |
 
 ## 10. Matrice de disponibilité
 
@@ -522,25 +522,25 @@ Prêts = utilisables pour générer. À auditer = pas encore contrôlés. Écart
 |---|---|---|---|---|---|---|
 | 1ère Année | Mathématiques | 129 | 129 | 0 | 0 | 100% |
 | 1ère Année | Arabe | 111 | 111 | 0 | 0 | 100% |
-| 2ème Année | Arabe | 86 | 78 | 8 | 0 | 90% |
+| 2ème Année | Arabe | 86 | 86 | 0 | 0 | 100% |
 | 2ème Année | Mathématiques | 77 | 77 | 0 | 0 | 100% |
-| 2ème Année | Éveil scientifique | 34 | 33 | 1 | 0 | 97% |
+| 2ème Année | Éveil scientifique | 34 | 34 | 0 | 0 | 100% |
 | 2ème Année | Éducation islamique | 27 | 27 | 0 | 0 | 100% |
-| 3ème Année | Arabe | 96 | 87 | 9 | 0 | 90% |
-| 3ème Année | Mathématiques | 65 | 60 | 5 | 0 | 92% |
+| 3ème Année | Arabe | 96 | 96 | 0 | 0 | 100% |
+| 3ème Année | Mathématiques | 65 | 65 | 0 | 0 | 100% |
 | 3ème Année | Éveil scientifique | 37 | 37 | 0 | 0 | 100% |
 | 3ème Année | Français | 34 | 34 | 0 | 0 | 100% |
 | 3ème Année | Éducation islamique | 19 | 19 | 0 | 0 | 100% |
-| 4ème Année | Mathématiques | 528 | 489 | 39 | 0 | 92% |
-| 4ème Année | Arabe | 47 | 46 | 1 | 0 | 97% |
-| 5ème Année | Mathématiques | 379 | 319 | 60 | 0 | 84% |
+| 4ème Année | Mathématiques | 528 | 528 | 0 | 0 | 100% |
+| 4ème Année | Arabe | 47 | 47 | 0 | 0 | 100% |
+| 5ème Année | Mathématiques | 379 | 375 | 4 | 0 | 98% |
 | 5ème Année | Éveil scientifique | 21 | 21 | 0 | 0 | 100% |
 | 5ème Année | Arabe | 1 | 1 | 0 | 0 | 100% |
-| 6ème Année | Français | 799 | 790 | 9 | 0 | 98% |
-| 6ème Année | Mathématiques | 312 | 285 | 27 | 0 | 91% |
-| 6ème Année | Éveil scientifique | 188 | 176 | 12 | 0 | 93% |
-| 6ème Année | Arabe | 168 | 162 | 6 | 0 | 96% |
-| **Total** |  | **3158** | **2981** | **177** | **0** | **94%** |
+| 6ème Année | Français | 799 | 794 | 5 | 0 | 99% |
+| 6ème Année | Mathématiques | 312 | 312 | 0 | 0 | 100% |
+| 6ème Année | Éveil scientifique | 188 | 188 | 0 | 0 | 100% |
+| 6ème Année | Arabe | 168 | 168 | 0 | 0 | 100% |
+| **Total** |  | **3158** | **3149** | **9** | **0** | **99%** |
 
 ## 11. Matrice du lien au programme officiel
 
@@ -576,11 +576,11 @@ Cellule = exercices prêts avec corrigé / exercices prêts, par format et mati�
 
 | Format | Mathématiques | Français | Arabe | Éveil scientifique | Éducation islamique |
 |---|---|---|---|---|---|
-| free | 55 / 332 | 0 / 365 | 8 / 154 | 6 / 89 | 0 / 6 |
-| fill_blank | 57 / 327 | 1 / 344 | 0 / 159 | 5 / 56 | 0 / 24 |
-| calculation | 76 / 442 | 0 / 0 | 1 / 24 | 1 / 10 | 0 / 1 |
-| matching | 19 / 100 | 0 / 17 | 0 / 53 | 3 / 44 | 0 / 10 |
-| qcm | 6 / 57 | 0 / 77 | 0 / 37 | 1 / 18 | 0 / 3 |
-| problem_solving | 19 / 101 | 1 / 14 | 1 / 6 | 0 / 45 | 0 / 2 |
-| text_production | 0 / 0 | 0 / 2 | 0 / 52 | 0 / 0 | 0 / 0 |
+| free | 59 / 361 | 0 / 368 | 8 / 162 | 6 / 94 | 0 / 6 |
+| fill_blank | 62 / 361 | 1 / 344 | 0 / 169 | 6 / 59 | 0 / 24 |
+| calculation | 81 / 479 | 0 / 0 | 1 / 25 | 1 / 10 | 0 / 1 |
+| matching | 20 / 109 | 0 / 17 | 0 / 55 | 3 / 44 | 0 / 10 |
+| qcm | 6 / 63 | 0 / 78 | 0 / 38 | 1 / 19 | 0 / 3 |
+| problem_solving | 21 / 113 | 1 / 14 | 1 / 7 | 0 / 49 | 0 / 2 |
+| text_production | 0 / 0 | 0 / 2 | 0 / 53 | 0 / 0 | 0 / 0 |
 | true_false | 0 / 0 | 0 / 5 | 0 / 0 | 3 / 5 | 0 / 0 |

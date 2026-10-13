@@ -3035,9 +3035,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Production écrite 4ème année — Arabe"
     },
     {

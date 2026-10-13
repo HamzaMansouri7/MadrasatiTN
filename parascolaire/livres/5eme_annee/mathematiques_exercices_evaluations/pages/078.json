@@ -34,15 +34,16 @@
     {
       "kind": "exercise",
       "number": "3",
-      "instruction": "أ- ارْسُمْ لِكُلِّ زَاوِيَةٍ زَاوِيَةً مُجَاوِرَةً لَهَا بِحَيْثُ [وأ ) ، [ع س) ، [م ق ) مُنَصِّفَات لِزَوَايَا جَدِيدَة",
-      "body": "ثلاث زوايا عليها الرموز: (أ، د، ر)، (س، ع، ق)، (ق، م، هـ).",
+      "instruction": "أ- ارْسُمْ لِكُلِّ زَاوِيَةٍ زَاوِيَةً مُجَاوِرَةً لَهَا بِحَيْثُ [وا ) ، [ع س) ، [م ق ) مُنَصِّفَات لِزَوَايَا جَدِيدَة",
+      "body": "ثلاث زوايا عليها الرموز: (أ، د، و)، (س، ع، ق)، (ق، م، هـ).",
       "figureDesc": "ثلاث زوايا: على اليمين زاوية على شكل V رأسها ر وضلعاها نحو د وأ؛ في الوسط زاوية حادة رأسها ع وضلعاها ع س وع ق؛ على اليسار زاوية قائمة رأسها م وضلعاها م ق (عمودي) وم هـ (أفقي).",
       "answer": null,
       "confidence": 0.8,
       "id": "mathematiques_exercices_evaluations_p078_i3",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "hard"
+      "difficultyGuess": "hard",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     }
   ],
   "ocrModel": "claude-sonnet-5-5",
@@ -83,7 +84,7 @@
     "themeGroup": "Droites, médiatrice et bissectrice"
   },
   "quality": {
-    "status": "recheck_pending",
+    "status": "ai_verified",
     "accuracy": 0.75
   },
   "audit": {

@@ -9,14 +9,15 @@
       "kind": "exercise",
       "number": "1",
       "instruction": "استعمل الورق الشفاف.",
-      "body": "أذكر الزّوايا التي فتحتها أصغر من الزّاوية ❶ .\n- أذكر الزّوايا التي فتحتها أكبر من الزّاوية ❶ .",
+      "body": "أذكر الزّوايا التي فتحتها أصغر من الزّاوية ❹ .\n- أذكر الزّوايا التي فتحتها أكبر من الزّاوية ❹ .",
       "figureDesc": "Cinq angles numérotés de 1 à 5. L'angle 1 est un angle droit (marqué d'un petit carré). Les angles 2, 3, 4 et 5 sont dessinés à côté, certains aigus et d'autres obtus.",
       "answer": null,
       "confidence": 0.8,
       "id": "mathematiques_exercices_corriges_p057_i1",
       "topicId": "math-4-ch1",
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -110,7 +111,7 @@
     "themeGroup": "Angles"
   },
   "quality": {
-    "status": "recheck_pending",
+    "status": "ai_verified",
     "accuracy": 0.85
   },
   "audit": {

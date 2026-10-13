@@ -60,15 +60,16 @@
     {
       "kind": "exercise",
       "number": "4",
-      "instruction": "أ- احْسُبْ طُولَ الْمَسَافَةِ الْمَقْطُوعَةِ بالمِ وَالكم.",
-      "body": "تَنَارَبَ ثَلَاثَةُ عَدَّائِينَ عَلَى قَطْعِ مَسَافَةِ السِّبَاقِ فَقَطَعَ الأَوَّلُ 1,750 كم وَحَرَى الثَّانِي 1700 م وَلَكِنَّ الثَّالِثَ سَقَطَ بَعْدَ أَنْ قَطَعَ 15 هم.",
+      "instruction": "أ- احْسُبْ طُولَ الْمَسَافَةِ الْمَقْطُوعَةِ بالم وَالكم.",
+      "body": "تَنَاوَبَ ثَلَاثَةُ عَدَّائِينَ عَلَى قَطْعِ مَسَافَةِ السِّبَاقِ فَقَطَعَ الأَوَّلُ 1,750 كم وَجَرَى الثَّانِي 1700 م وَلَكِنَّ الثَّالِثَ سَقَطَ بَعْدَ أَنْ قَطَعَ 15 هم.",
       "figureDesc": "سطران منقطان لكتابة الإجابة.",
       "answer": null,
       "confidence": 0.7,
       "id": "mathematiques_exercices_evaluations_p047_i5",
       "topicId": "math-5-ch2",
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     }
   ],
   "ocrModel": "claude-sonnet-5-5",
@@ -111,7 +112,7 @@
     "themeGroup": "Nombres décimaux : notions et comparaison"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
 }

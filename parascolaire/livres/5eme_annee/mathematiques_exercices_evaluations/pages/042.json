@@ -22,14 +22,15 @@
       "kind": "exercise",
       "number": "2",
       "instruction": "اِرْبِطْ بَيْنَ الأَقْيِسَةِ الْمُتَسَاوِيَةِ :",
-      "body": "الصف العلوي: 3450 صـآ — 21908 دكم² — 670000 م² — 18 هـ و 99 آ\nالصف السفلي: 67 هـ — 34 آ و 50 م² — 189900 صـآ — 2 كم² و 19 هـ و 8 آ",
+      "body": "الصف العلوي: 3450 صـآ — 21908 دكم² — 670000 م² — 18 ها و 99 آ\nالصف السفلي: 67 ها — 34 آ و 50 م² — 189900 صـآ — 2 كم² و 19 ها و 8 آ",
       "figureDesc": "ثمانية مستطيلات مدورة في صفين، تحت كل منها نقطة للربط بالخط بين الأقيسة المتساوية.",
       "answer": null,
       "confidence": 0.8,
       "id": "mathematiques_exercices_evaluations_p042_i2",
       "topicId": "math-5-ch1",
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -96,7 +97,7 @@
     "themeGroup": "Mesures d'aires et unités agraires"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
 }

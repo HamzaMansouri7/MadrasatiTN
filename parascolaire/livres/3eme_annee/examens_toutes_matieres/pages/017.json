@@ -16,7 +16,8 @@
       "id": "examens_toutes_matieres_p017_i1",
       "topicId": "ar-3-u2",
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -124,7 +125,7 @@
     "themeGroup": "Conjugaison : le passé et les pronoms"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "labels": {
     "pageSubject": "Arabe"

@@ -3909,9 +3909,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -3978,9 +3978,9 @@
       "correction": "inline",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -4070,9 +4070,9 @@
       "correction": "none",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -4142,9 +4142,9 @@
         50,
         51
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -4168,9 +4168,9 @@
         50,
         51
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -4194,9 +4194,9 @@
         50,
         51
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -4220,9 +4220,9 @@
         50,
         51
       ],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -4937,9 +4937,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.8,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -4960,9 +4960,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.8,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -4983,9 +4983,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.8,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -5006,9 +5006,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.8,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -5167,9 +5167,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -5190,9 +5190,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -5213,9 +5213,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -5236,9 +5236,9 @@
       "correction": "none",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -10457,9 +10457,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -10503,9 +10503,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -10687,9 +10687,9 @@
       "correction": "self_contained",
       "hasAnswer": true,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -11446,9 +11446,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "recheck_pending",
+      "quality": "ai_verified",
       "accuracy": 0.8,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -12274,9 +12274,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -12412,9 +12412,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -12435,9 +12435,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -12458,9 +12458,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -12481,9 +12481,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -12504,9 +12504,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -12527,9 +12527,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {
@@ -15632,9 +15632,9 @@
       "correction": "no_correction_yet",
       "hasAnswer": false,
       "correctionPages": [],
-      "quality": "audit_pending",
+      "quality": "ai_verified",
       "accuracy": null,
-      "tier": "pending_audit",
+      "tier": "ready",
       "bookTitle": "Soutien 6ème année — Maths et Français"
     },
     {

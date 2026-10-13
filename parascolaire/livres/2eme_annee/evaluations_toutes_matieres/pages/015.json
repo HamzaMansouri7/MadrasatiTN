@@ -8,15 +8,16 @@
     {
       "kind": "exercise",
       "number": "1",
-      "instruction": "أَنْسخُ عَلَى مِنْوَالِ الْمِثَالِ :",
-      "body": "السطر الأول (حروف): عٍ . عُ . وُْ . ئِي ؛ السطر الثاني (مقاطع): مَعْ . غُو . وُّو . مِئْـ . Barème : 0,25 لكل حرف ؛ 0,5 لكل مقطع (0,25 لكل مقطع في الجزء الثاني).",
+      "instruction": "أَنْسُخُ عَلَى مِنْوَالِ الْمِثَالِ :",
+      "body": "السطر الأول (حروف): عٍ . عُ . ؤُ . ئـي ؛ السطر الثاني (مقاطع): مَعْ . غُو . ؤُو . مِئْـ . Barème : 0,25 لكل حرف ؛ 0,5 ثم 0,25 لكل مقطع.",
       "figureDesc": "Deux lignes d'écriture sur papier quadrillé avec modèles en arabe à copier (lettres puis syllabes), séparés par des points. Colonne de critères à droite (الوضوح، الجمالية) avec cases à cocher ; total sur 10.",
       "answer": null,
       "confidence": 0.6,
       "id": "evaluations_toutes_matieres_p015_i1",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -34,15 +35,16 @@
     {
       "kind": "exercise",
       "number": "2",
-      "instruction": "إِمْلَاءٌ : أُكَمِّلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
-      "body": "أَسْرَعَ غَيْلَانُ الْخُطَى يُرِيدُ أَنْ يَعْبُرَ ........ فَقَالَتْ لَهُ أُخْتُهُ : «تَمَهَّلْ وَلَا ........ احْتَرِمِ ........ السَّيْرِ وَرَاقِبِ ........ الضَّوْئِيَّةَ حَتَّى تَعُودَ إِلَى الْبَيْتِ سَالِمًا.»",
+      "instruction": "أُكَمِّلُ الْفِقْرَةَ بِالْكَلِمَاتِ النَّاقِصَةِ.",
+      "body": "أَسْرَعَ غَيْلَانُ الْخُطَى يُرِيدُ أَنْ يَعْبُرَ ........ فَقَالَتْ لَهُ أُخْتُهُ : «تَمَهَّلْ وَلَا ........ احْتَرِمْ ........ السَّيْرَ وَرَاقِبْ ........ الضَّوْئِيَّةَ حَتَّى تَعُودَ إِلَى الْبَيْتِ سَالِمًا.»",
       "figureDesc": "Texte à trous sur lignes quadrillées, les mots manquants étant dictés par l'enseignant. Barème : 2 points pour chaque mot correct ; critère : السلامة من الأخطاء ; total sur 10. En-tête : اختبار نهاية الثلاثي الثاني عدد 3، المادة : خط و إملاء، المستوى : السنة الثانية.",
       "answer": null,
       "confidence": 0.8,
       "id": "evaluations_toutes_matieres_p015_i3",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     }
   ],
   "ocrModel": "claude-sonnet-5-5",
@@ -83,7 +85,7 @@
     "themeGroup": "Calligraphie et graphie des lettres"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "correctionStatus": "no_correction_yet",
   "examScope": "trimester",

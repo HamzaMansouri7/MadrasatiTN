@@ -55,7 +55,8 @@
       "id": "mathematiques_exercices_corriges_p054_i4",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -109,7 +110,7 @@
     "themeGroup": "Angles"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Mathématiques 4ème année — Exercices et corrigés"
 }

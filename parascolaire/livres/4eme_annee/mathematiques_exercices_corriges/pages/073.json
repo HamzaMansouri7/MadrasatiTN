@@ -101,7 +101,7 @@
     "themeGroup": "Révisions et évaluations"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "correctionStatus": "linked",
   "examScope": "trimester",

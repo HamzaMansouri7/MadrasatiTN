@@ -35,27 +35,29 @@
       "kind": "exercise",
       "number": "السند 3 - التعليمة 1-3",
       "instruction": "اِحْسُبْ بِالدِّينَارِ مَدْخُولَ التَّاجِرِ مِمَّا بَاعَهُ.",
-      "body": "السند 3: بَاعَ التَّاجِرُ 2/5 التُّفَّاحِ بِـ 2400 مي الكِلْغ الوَاحِدِ. (texte partiellement illisible)",
+      "body": "السند 3: بَاعَ التَّاجِرُ 2/5 التُّفَّاحِ بِـ 2400 مي الكغ الوَاحِدِ. (texte partiellement illisible)",
       "figureDesc": "Trois lignes pointillées pour la réponse. Barème : معيار 2 et معيار 1.",
       "answer": null,
       "confidence": 0.7,
       "id": "mathematiques_exercices_evaluations_p045_i3",
       "topicId": "math-5-p6",
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
       "number": "السند 4 - التعليمة 1-4",
-      "instruction": "كَمْ صَارَ عِنْدَ التَّاجِرِ بَعْدَ هَذِهِ العَمَلِيَّةِ ؟",
-      "body": "السند 4: ثُمَّ بَاعَ ثَلَاثَةَ قَنْطَارَاتٍ مِنَ التُّفَّاحِ الثَّانِي بِـ 220 د لِلْقِنْطَارِ الوَاحِدِ. (texte partiellement illisible)",
+      "instruction": "4-1 كَمْ صَارَ عِنْدَ التَّاجِرِ بَعْدَ هَذِهِ العَمَلِيَّةِ ؟ 4-2 عَبِّرْ بِعَدَدٍ كَسْرِيٍّ عَنْ كَمِّيَّةِ التُّفَّاحِ الَّتِي لَمْ يَقَعْ بَيْعُهَا بِالنِّسْبَةِ لِكَامِلِ الكَمِّيَّةِ.",
+      "body": "السند 4: ثُمَّ بَاعَ ثَلَاثَةَ قَنْطَارَاتٍ مِنَ التُّفَّاحِ الباقي بِـ 220 د لِلْقِنْطَارِ الوَاحِدِ. (texte partiellement illisible)",
       "figureDesc": "Deux lignes pointillées pour la réponse. Barème : معيار 2 et معيار 5.",
       "answer": null,
       "confidence": 0.65,
       "id": "mathematiques_exercices_evaluations_p045_i4",
       "topicId": "math-5-p6",
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -110,7 +112,7 @@
     "themeGroup": "Problèmes d'achat, vente et bénéfice"
   },
   "quality": {
-    "status": "recheck_pending",
+    "status": "ai_verified",
     "accuracy": 0.7
   },
   "audit": {

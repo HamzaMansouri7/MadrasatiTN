@@ -16,7 +16,8 @@
       "id": "soutien_maths_francais_p056_i1",
       "topicId": "math-6-p4",
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -42,7 +43,8 @@
       "id": "soutien_maths_francais_p056_i3",
       "topicId": "math-6-p4",
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "exercise",
@@ -95,7 +97,7 @@
     "themeGroup": "Constructions géométriques"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "labels": {
     "pageSubject": "Mathématiques"

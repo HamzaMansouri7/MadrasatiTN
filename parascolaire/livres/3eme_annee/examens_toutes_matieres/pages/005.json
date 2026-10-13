@@ -74,14 +74,15 @@
       "kind": "lesson",
       "number": "",
       "instruction": "جَدْوَلُ إِسْنَادِ الْأَعْدَادِ",
-      "body": "المعايير: مَعَايِيرُ الْحَدِّ الْأَدْنَى: مع 1 أ، مع 2 ب، مع 2 ج، مع 2 د، مع 2 م، مع 2 هـ ؛ التَّمَيُّزُ: مع 3.\nمع 1 : الْقِرَاءَةُ الْجَهْرِيَّةُ\n- النُّطْقُ السَّلِيمُ : 2 نُقْطَتَانِ\n- الْاِسْتِرْسَالُ : 2 نُقْطَتَانِ (مقطوع جزئيا)",
+      "body": "المعايير: مَعَايِيرُ الْحَدِّ الْأَدْنَى: مع 2 أ، مع 2 ب، مع 2 ج، مع 2 د، مع 2 م، مع 2 هـ ؛ التَّمَيُّزُ: مع 3.\nمع 1 : الْقِرَاءَةُ الْجَهْرِيَّةُ\n- النُّطْقُ السَّلِيمُ : 2 نُقْطَتَانِ\n- الْاِسْتِرْسَالُ : 2 نُقْطَتَانِ",
       "figureDesc": "Tableau de notation avec colonnes des critères (مع 1 أ، مع 2 ب، ج، د، م، هـ، مع 3) ; marges avec cases de notation et barème (0,5 ; 1 ...) partiellement coupées ; filigrane MOURAJAA.COM",
       "answer": null,
       "confidence": 0.7,
       "id": "examens_toutes_matieres_p005_i6",
       "topicId": "ar-3-u4",
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     }
   ],
   "ocrModel": "claude-sonnet-5-5",
@@ -121,7 +122,7 @@
     "themeGroup": "Compréhension de l'écrit : le texte narratif"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "labels": {
     "pageSubject": "Arabe"

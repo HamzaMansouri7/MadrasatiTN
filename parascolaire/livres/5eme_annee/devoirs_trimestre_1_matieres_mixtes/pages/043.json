@@ -74,14 +74,15 @@
       "kind": "lesson",
       "number": "5",
       "instruction": "أغسل وجهي 3 مرات",
-      "body": "من أعلى مسطح الجبهة إلى أسفل الذقن طولا ومن شحمة الأذن عرضا.",
+      "body": "من أعلى تسطيح الجبهة إلى أسفل اللحيين طولا ومن شحمة الأذن عرضا.",
       "figureDesc": "Le garçon se lave le visage.",
       "answer": null,
       "confidence": 0.7,
       "id": "devoirs_trimestre_1_matieres_mixtes_p043_i6",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "easy"
+      "difficultyGuess": "easy",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     },
     {
       "kind": "lesson",
@@ -214,7 +215,7 @@
     "themeGroup": "La purification: les ablutions"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "labels": {
     "pageSubject": "Éducation islamique"

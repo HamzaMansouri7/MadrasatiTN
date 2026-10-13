@@ -61,14 +61,15 @@
       "kind": "exercise",
       "number": "4",
       "instruction": "أَكْمِلْ بِمَا يَنْقُصُ المَجاميعَ:",
-      "body": "★ 64800 مم² = 800 مم² + .............. دسم² + .............. مم².\n★ 375611 صم² = 370 000 .......... + .......... + 611 ..........\n★ 8080 دسم² = .............. دسم² + .............. م²\n★ 9 م² = 20000 صم² + .............. دسم²",
+      "body": "★ 64800 مم² = 800 مم² + .............. دسم² + .............. مم².\n★ 375611 صم² = 611 .......... + .......... + 370 000 ..........\n★ 8080 دسم² = .............. دسم² + .............. م²\n★ 9 م² = 20000 صم² + .............. دسم²",
       "figureDesc": "",
       "answer": null,
       "confidence": 0.8,
       "id": "mathematiques_exercices_evaluations_p036_i5",
       "topicId": null,
       "formatGuess": "free",
-      "difficultyGuess": "medium"
+      "difficultyGuess": "medium",
+      "auditFix": "claude-vision-2pass-2026-10-13"
     }
   ],
   "ocrModel": "claude-sonnet-5-5",
@@ -109,7 +110,7 @@
     "themeGroup": "Mesures d'aires et unités agraires"
   },
   "quality": {
-    "status": "audit_pending"
+    "status": "ai_verified"
   },
   "bookTitle": "Mathématiques 5ème année — Exercices et évaluations"
 }
