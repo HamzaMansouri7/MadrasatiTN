@@ -1,0 +1,140 @@
+{
+  "source": "MadrasatiTN Parascolaire",
+  "bookId": "5eme-annee/eveil-scientifique-evaluations",
+  "title": "Éveil scientifique 5ème année — Évaluations",
+  "grade": "5ème Année",
+  "subject": "Éveil scientifique",
+  "cover": "assets/resources/5eme-annee/parascolaire/trimestre-1/eveil-scientifique-evaluations/cover.webp",
+  "backCover": "assets/resources/5eme-annee/parascolaire/trimestre-1/eveil-scientifique-evaluations/back-cover.webp",
+  "intro": "assets/resources/5eme-annee/parascolaire/trimestre-1/eveil-scientifique-evaluations/intro.webp",
+  "outro": "assets/resources/5eme-annee/parascolaire/trimestre-1/eveil-scientifique-evaluations/outro.webp",
+  "count": 7,
+  "items": [
+    {
+      "id": "eveil-scientifique-evaluations-p001",
+      "grade": "5eme-annee",
+      "subject": "Éveil scientifique",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "eveil-scientifique-evaluations",
+      "title": "صفحة 1",
+      "file": "001.json",
+      "relPath": "parascolaire/livres/5eme_annee/eveil_scientifique_evaluations/pages/001.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.1",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "éveil scientifique"
+      ]
+    },
+    {
+      "id": "eveil-scientifique-evaluations-p003",
+      "grade": "5eme-annee",
+      "subject": "Éveil scientifique",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "eveil-scientifique-evaluations",
+      "title": "صفحة 3",
+      "file": "003.json",
+      "relPath": "parascolaire/livres/5eme_annee/eveil_scientifique_evaluations/pages/003.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.3",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "éveil scientifique"
+      ]
+    },
+    {
+      "id": "eveil-scientifique-evaluations-p004",
+      "grade": "5eme-annee",
+      "subject": "Éveil scientifique",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "eveil-scientifique-evaluations",
+      "title": "صفحة 4",
+      "file": "004.json",
+      "relPath": "parascolaire/livres/5eme_annee/eveil_scientifique_evaluations/pages/004.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.4",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "éveil scientifique"
+      ]
+    },
+    {
+      "id": "eveil-scientifique-evaluations-p005",
+      "grade": "5eme-annee",
+      "subject": "Éveil scientifique",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "eveil-scientifique-evaluations",
+      "title": "صفحة 5",
+      "file": "005.json",
+      "relPath": "parascolaire/livres/5eme_annee/eveil_scientifique_evaluations/pages/005.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.5",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "éveil scientifique"
+      ]
+    },
+    {
+      "id": "eveil-scientifique-evaluations-p006",
+      "grade": "5eme-annee",
+      "subject": "Éveil scientifique",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "eveil-scientifique-evaluations",
+      "title": "صفحة 6",
+      "file": "006.json",
+      "relPath": "parascolaire/livres/5eme_annee/eveil_scientifique_evaluations/pages/006.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.6",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "éveil scientifique"
+      ]
+    },
+    {
+      "id": "eveil-scientifique-evaluations-p007",
+      "grade": "5eme-annee",
+      "subject": "Éveil scientifique",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "eveil-scientifique-evaluations",
+      "title": "صفحة 7",
+      "file": "007.json",
+      "relPath": "parascolaire/livres/5eme_annee/eveil_scientifique_evaluations/pages/007.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.7",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "éveil scientifique"
+      ]
+    },
+    {
+      "id": "eveil-scientifique-evaluations-p008",
+      "grade": "5eme-annee",
+      "subject": "Éveil scientifique",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "eveil-scientifique-evaluations",
+      "title": "صفحة 8",
+      "file": "008.json",
+      "relPath": "parascolaire/livres/5eme_annee/eveil_scientifique_evaluations/pages/008.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.8",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "éveil scientifique"
+      ]
+    }
+  ]
+}

@@ -1425,5 +1425,8 @@
         "evaluations"
       ]
     }
-  ]
+  ],
+  "backCover": "assets/resources/1ere-annee/parascolaire/trimestre-1/evaluations-maths-arabe/back-cover.webp",
+  "intro": "assets/resources/1ere-annee/parascolaire/trimestre-1/evaluations-maths-arabe/intro.webp",
+  "outro": "assets/resources/1ere-annee/parascolaire/trimestre-1/evaluations-maths-arabe/outro.webp"
 }

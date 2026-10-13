@@ -1,0 +1,104 @@
+{
+  "source": "MadrasatiTN Parascolaire",
+  "bookId": "6eme-annee/epreuve-modele-mathematiques-corrigee",
+  "title": "Épreuve modèle 6ème année — Mathématiques (corrigée)",
+  "grade": "6ème Année",
+  "subject": "Mathématiques",
+  "cover": "assets/resources/6eme-annee/parascolaire/trimestre-1/epreuve-modele-mathematiques-corrigee/cover.webp",
+  "backCover": "assets/resources/6eme-annee/parascolaire/trimestre-1/epreuve-modele-mathematiques-corrigee/back-cover.webp",
+  "intro": "assets/resources/6eme-annee/parascolaire/trimestre-1/epreuve-modele-mathematiques-corrigee/intro.webp",
+  "outro": "assets/resources/6eme-annee/parascolaire/trimestre-1/epreuve-modele-mathematiques-corrigee/outro.webp",
+  "count": 5,
+  "items": [
+    {
+      "id": "epreuve-modele-mathematiques-corrigee-p002",
+      "grade": "6eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "epreuve-modele-mathematiques-corrigee",
+      "title": "صفحة 2",
+      "file": "002.json",
+      "relPath": "parascolaire/livres/6eme_annee/epreuve_modele_mathematiques_corrigee/pages/002.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.2",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "epreuve-modele-mathematiques-corrigee-p003",
+      "grade": "6eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "epreuve-modele-mathematiques-corrigee",
+      "title": "صفحة 3",
+      "file": "003.json",
+      "relPath": "parascolaire/livres/6eme_annee/epreuve_modele_mathematiques_corrigee/pages/003.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.3",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "epreuve-modele-mathematiques-corrigee-p004",
+      "grade": "6eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "epreuve-modele-mathematiques-corrigee",
+      "title": "صفحة 4",
+      "file": "004.json",
+      "relPath": "parascolaire/livres/6eme_annee/epreuve_modele_mathematiques_corrigee/pages/004.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.4",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "epreuve-modele-mathematiques-corrigee-p005",
+      "grade": "6eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "epreuve-modele-mathematiques-corrigee",
+      "title": "صفحة 5",
+      "file": "005.json",
+      "relPath": "parascolaire/livres/6eme_annee/epreuve_modele_mathematiques_corrigee/pages/005.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.5",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "epreuve-modele-mathematiques-corrigee-p006",
+      "grade": "6eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "epreuve-modele-mathematiques-corrigee",
+      "title": "صفحة 6",
+      "file": "006.json",
+      "relPath": "parascolaire/livres/6eme_annee/epreuve_modele_mathematiques_corrigee/pages/006.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.6",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "mathématiques"
+      ]
+    }
+  ]
+}

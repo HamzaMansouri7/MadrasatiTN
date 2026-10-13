@@ -1,0 +1,122 @@
+{
+  "source": "MadrasatiTN Parascolaire",
+  "bookId": "5eme-annee/exercices-mathematiques-corriges",
+  "title": "Mathématiques 5ème année — Exercices corrigés",
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "cover": "assets/resources/5eme-annee/parascolaire/trimestre-1/exercices-mathematiques-corriges/cover.webp",
+  "backCover": "assets/resources/5eme-annee/parascolaire/trimestre-1/exercices-mathematiques-corriges/back-cover.webp",
+  "intro": "assets/resources/5eme-annee/parascolaire/trimestre-1/exercices-mathematiques-corriges/intro.webp",
+  "outro": "assets/resources/5eme-annee/parascolaire/trimestre-1/exercices-mathematiques-corriges/outro.webp",
+  "count": 6,
+  "items": [
+    {
+      "id": "exercices-mathematiques-corriges-p002",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "exercices-mathematiques-corriges",
+      "title": "صفحة 2",
+      "file": "002.json",
+      "relPath": "parascolaire/livres/5eme_annee/exercices_mathematiques_corriges/pages/002.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.2",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "exercices-mathematiques-corriges-p003",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "exercices-mathematiques-corriges",
+      "title": "صفحة 3",
+      "file": "003.json",
+      "relPath": "parascolaire/livres/5eme_annee/exercices_mathematiques_corriges/pages/003.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.3",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "exercices-mathematiques-corriges-p004",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "exercices-mathematiques-corriges",
+      "title": "صفحة 4",
+      "file": "004.json",
+      "relPath": "parascolaire/livres/5eme_annee/exercices_mathematiques_corriges/pages/004.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.4",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "exercices-mathematiques-corriges-p005",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "exercices-mathematiques-corriges",
+      "title": "صفحة 5",
+      "file": "005.json",
+      "relPath": "parascolaire/livres/5eme_annee/exercices_mathematiques_corriges/pages/005.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.5",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "exercices-mathematiques-corriges-p006",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "exercices-mathematiques-corriges",
+      "title": "صفحة 6",
+      "file": "006.json",
+      "relPath": "parascolaire/livres/5eme_annee/exercices_mathematiques_corriges/pages/006.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.6",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques"
+      ]
+    },
+    {
+      "id": "exercices-mathematiques-corriges-p007",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "exercices-mathematiques-corriges",
+      "title": "صفحة 7",
+      "file": "007.json",
+      "relPath": "parascolaire/livres/5eme_annee/exercices_mathematiques_corriges/pages/007.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.7",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques"
+      ]
+    }
+  ]
+}

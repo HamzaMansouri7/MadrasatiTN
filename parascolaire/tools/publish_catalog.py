@@ -148,12 +148,17 @@ def build_book(bdir: Path, num: int, errors: list, warns: list, do_images: bool)
                 s['status'] = 'in-progress' if has_ready else 'soon'
     ready_themes = sum(any(s['status'] == 'ready' for s in th['slots'].values()) for th in out_themes)
     subjects = sorted({th['subject'] for th in out_themes})
-    return {
+    book_entry = {
         'id': f'{classe}/{livre}', 'classe': classe, 'title': book['title'], 'number': num, 'subject': book['subject'], 'subjects': subjects,
         'themeCount': len(out_themes), 'readyCount': ready_themes,
         'resources': {'parentGuide': {'status': 'in-progress' if has_ready else 'soon'}},
         'themes': out_themes,
     }
+    # Check for official cover in public/assets/resources
+    cover_candidate = Path(ROOT.parent / f'public/assets/resources/{classe}/parascolaire/trimestre-1/{livre}/cover.webp')
+    if cover_candidate.exists():
+        book_entry['cover'] = f'assets/resources/{classe}/parascolaire/trimestre-1/{livre}/cover.webp'
+    return book_entry
 
 
 def validate(catalog: dict, errors: list):

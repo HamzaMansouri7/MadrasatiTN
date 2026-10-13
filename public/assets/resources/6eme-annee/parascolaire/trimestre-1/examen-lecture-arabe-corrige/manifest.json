@@ -1,0 +1,122 @@
+{
+  "source": "MadrasatiTN Parascolaire",
+  "bookId": "6eme-annee/examen-lecture-arabe-corrige",
+  "title": "Examen de lecture 6ème année — Arabe (corrigé)",
+  "grade": "6ème Année",
+  "subject": "Arabe",
+  "cover": "assets/resources/6eme-annee/parascolaire/trimestre-1/examen-lecture-arabe-corrige/cover.webp",
+  "backCover": "assets/resources/6eme-annee/parascolaire/trimestre-1/examen-lecture-arabe-corrige/back-cover.webp",
+  "intro": "assets/resources/6eme-annee/parascolaire/trimestre-1/examen-lecture-arabe-corrige/intro.webp",
+  "outro": "assets/resources/6eme-annee/parascolaire/trimestre-1/examen-lecture-arabe-corrige/outro.webp",
+  "count": 6,
+  "items": [
+    {
+      "id": "examen-lecture-arabe-corrige-p001",
+      "grade": "6eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examen-lecture-arabe-corrige",
+      "title": "صفحة 1",
+      "file": "001.json",
+      "relPath": "parascolaire/livres/6eme_annee/examen_lecture_arabe_corrige/pages/001.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.1",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examen-lecture-arabe-corrige-p002",
+      "grade": "6eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examen-lecture-arabe-corrige",
+      "title": "صفحة 2",
+      "file": "002.json",
+      "relPath": "parascolaire/livres/6eme_annee/examen_lecture_arabe_corrige/pages/002.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.2",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examen-lecture-arabe-corrige-p003",
+      "grade": "6eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examen-lecture-arabe-corrige",
+      "title": "صفحة 3",
+      "file": "003.json",
+      "relPath": "parascolaire/livres/6eme_annee/examen_lecture_arabe_corrige/pages/003.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.3",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examen-lecture-arabe-corrige-p004",
+      "grade": "6eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examen-lecture-arabe-corrige",
+      "title": "صفحة 4",
+      "file": "004.json",
+      "relPath": "parascolaire/livres/6eme_annee/examen_lecture_arabe_corrige/pages/004.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.4",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examen-lecture-arabe-corrige-p005",
+      "grade": "6eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examen-lecture-arabe-corrige",
+      "title": "صفحة 5",
+      "file": "005.json",
+      "relPath": "parascolaire/livres/6eme_annee/examen_lecture_arabe_corrige/pages/005.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.5",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "arabe"
+      ]
+    },
+    {
+      "id": "examen-lecture-arabe-corrige-p006",
+      "grade": "6eme-annee",
+      "subject": "Arabe",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "examen-lecture-arabe-corrige",
+      "title": "صفحة 6",
+      "file": "006.json",
+      "relPath": "parascolaire/livres/6eme_annee/examen_lecture_arabe_corrige/pages/006.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.6",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "arabe"
+      ]
+    }
+  ]
+}

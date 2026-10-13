@@ -1,5 +1,10 @@
 {
   "manifests": [
+    "assets/resources/6eme-annee/parascolaire/trimestre-1/epreuve-modele-mathematiques-corrigee/manifest.json",
+    "assets/resources/6eme-annee/parascolaire/trimestre-1/examen-lecture-arabe-corrige/manifest.json",
+    "assets/resources/6eme-annee/parascolaire/trimestre-1/concours-blanc-eveil-scientifique-corrige/manifest.json",
+    "assets/resources/5eme-annee/parascolaire/trimestre-1/eveil-scientifique-evaluations/manifest.json",
+    "assets/resources/5eme-annee/parascolaire/trimestre-1/exercices-mathematiques-corriges/manifest.json",
     "assets/resources/1ere-annee/parascolaire/trimestre-1/evaluations-maths-arabe/manifest.json",
     "assets/resources/5eme-annee/parascolaire/trimestre-1/mathematiques-exercices-evaluations/manifest.json",
     "assets/resources/1ere-annee/arabe/trimestre-1/bandes-dessinees/manifest.json",

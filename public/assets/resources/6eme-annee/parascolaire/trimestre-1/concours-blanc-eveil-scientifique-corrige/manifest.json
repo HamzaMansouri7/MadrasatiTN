@@ -1,0 +1,68 @@
+{
+  "source": "MadrasatiTN Parascolaire",
+  "bookId": "6eme-annee/concours-blanc-eveil-scientifique-corrige",
+  "title": "Concours blanc 6ème année — Éveil scientifique (corrigé)",
+  "grade": "6ème Année",
+  "subject": "Éveil scientifique",
+  "cover": "assets/resources/6eme-annee/parascolaire/trimestre-1/concours-blanc-eveil-scientifique-corrige/cover.webp",
+  "backCover": "assets/resources/6eme-annee/parascolaire/trimestre-1/concours-blanc-eveil-scientifique-corrige/back-cover.webp",
+  "intro": "assets/resources/6eme-annee/parascolaire/trimestre-1/concours-blanc-eveil-scientifique-corrige/intro.webp",
+  "outro": "assets/resources/6eme-annee/parascolaire/trimestre-1/concours-blanc-eveil-scientifique-corrige/outro.webp",
+  "count": 3,
+  "items": [
+    {
+      "id": "concours-blanc-eveil-scientifique-corrige-p001",
+      "grade": "6eme-annee",
+      "subject": "Éveil scientifique",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "concours-blanc-eveil-scientifique-corrige",
+      "title": "صفحة 1",
+      "file": "001.json",
+      "relPath": "parascolaire/livres/6eme_annee/concours_blanc_eveil_scientifique_corrige/pages/001.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.1",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "éveil scientifique"
+      ]
+    },
+    {
+      "id": "concours-blanc-eveil-scientifique-corrige-p002",
+      "grade": "6eme-annee",
+      "subject": "Éveil scientifique",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "concours-blanc-eveil-scientifique-corrige",
+      "title": "صفحة 2",
+      "file": "002.json",
+      "relPath": "parascolaire/livres/6eme_annee/concours_blanc_eveil_scientifique_corrige/pages/002.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.2",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "éveil scientifique"
+      ]
+    },
+    {
+      "id": "concours-blanc-eveil-scientifique-corrige-p003",
+      "grade": "6eme-annee",
+      "subject": "Éveil scientifique",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "concours-blanc-eveil-scientifique-corrige",
+      "title": "صفحة 3",
+      "file": "003.json",
+      "relPath": "parascolaire/livres/6eme_annee/concours_blanc_eveil_scientifique_corrige/pages/003.json",
+      "lang": "ar",
+      "ref": "MadrasatiTN Parascolaire p.3",
+      "labels": [
+        "parascolaire",
+        "6eme-annee",
+        "éveil scientifique"
+      ]
+    }
+  ]
+}
