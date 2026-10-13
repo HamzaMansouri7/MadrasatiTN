@@ -59,10 +59,10 @@ def get_fonts():
 def get_subject_icon(subject: str) -> str:
     s = subject.lower()
     if 'math' in s:
-        return 'calculate'
+        return '\uea5f' # calculate
     if 'éveil' in s or 'eveil' in s or 'science' in s:
-        return 'science'
-    return 'menu_book'
+        return '\uea4b' # science
+    return '\uea19'    # menu_book
 
 def apply_subtle_watermark(img: Image.Image, cy_offset: int = 0):
     watermark_layer = Image.new('RGBA', (W, H), (0, 0, 0, 0))
