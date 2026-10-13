@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   booksOfClass,
   filterThemes,
+  groupBySubject,
   findBook,
   findTheme,
   mediaUrl,
@@ -91,5 +92,19 @@ describe('parascolaire logic', () => {
     expect(subjectLabel('Arabe', true)).toBe('اللغة العربية');
     expect(subjectLabel('Arabe', false)).toBe('Arabe');
     expect(subjectLabel('Inconnue', true)).toBe('Inconnue');
+  });
+});
+
+describe('groupBySubject', () => {
+  it('groups by subject, known subjects first, order kept inside a group', () => {
+    const items = [
+      { id: 'a', s: 'Français' },
+      { id: 'b', s: 'Mathématiques' },
+      { id: 'c', s: 'Français' },
+      { id: 'd', s: 'Autre' },
+    ];
+    const groups = groupBySubject(items, (x) => x.s);
+    expect(groups.map((g) => g.subject)).toEqual(['Mathématiques', 'Français', 'Autre']);
+    expect(groups[1].items.map((x) => x.id)).toEqual(['a', 'c']);
   });
 });

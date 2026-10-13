@@ -4,7 +4,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { LanguageService } from '@core';
 import { ParascolaireService } from './parascolaire.service';
 import { ParascolaireBook, ParascolaireClass } from './parascolaire.models';
-import { booksOfClass, bookTitle, classLabel, rulerSegments, subjectColor, subjectLabel } from './parascolaire.logic';
+import { booksOfClass, bookTitle, classLabel, groupBySubject, rulerSegments, subjectColor, subjectLabel } from './parascolaire.logic';
 import { CoverageRulerComponent } from './ui/coverage-ruler';
 
 @Component({
@@ -47,13 +47,22 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
                   (click)="select(c.id)"
                   (keydown)="onTabKey($event, i)">
                   {{ label(c) }}
-                  <span class="ms-1.5 text-[0.8125rem] text-[var(--p-pencil)]">{{ countFor(c.id) }}</span>
                 </button>
               }
             </div>
 
-            <div id="pbooks" role="tabpanel" [attr.aria-labelledby]="'ptab-' + selected()" class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-              @for (b of books(); track b.id) {
+            <div id="pbooks" role="tabpanel" [attr.aria-labelledby]="'ptab-' + selected()" class="space-y-10">
+             @for (g of groups(); track g.subject) {
+              <section class="space-y-4" [attr.aria-label]="groups().length > 1 ? subjectName(g.subject) : null">
+                @if (groups().length > 1) {
+                  <h2 class="p-display text-[1.25rem] flex items-center gap-2 pb-2 border-b border-[var(--p-rule)]">
+                    <span class="w-2.5 h-2.5 rounded-full shrink-0" [style.background]="color(g.subject)" aria-hidden="true"></span>
+                    {{ subjectName(g.subject) }}
+                    <span class="text-[0.9375rem] font-normal text-[var(--p-pencil)]">{{ g.items.length }}</span>
+                  </h2>
+                }
+                <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              @for (b of g.items; track b.id) {
                 <article class="bg-[var(--p-surface)] border border-[var(--p-rule)] rounded-2xl p-5 flex flex-col gap-4">
                   <div class="space-y-2">
                     <p class="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.8125rem] text-[var(--p-pencil)]">
@@ -73,6 +82,9 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
                   <a class="p-btn p-btn-primary self-start" [routerLink]="bookLink(b)">{{ lang.tr('Ouvrir', 'فتح') }}</a>
                 </article>
               }
+                </div>
+              </section>
+             }
             </div>
           }
           @default {
@@ -103,6 +115,7 @@ export class ParascolaireHomeComponent {
     return all.find((c) => c.id === wanted)?.id ?? all[0]?.id ?? '';
   });
   readonly books = computed(() => booksOfClass(this.svc.catalog(), this.selected()));
+  readonly groups = computed(() => groupBySubject(this.books(), (b) => b.subject));
 
   constructor() {
     void this.svc.load();
@@ -110,10 +123,6 @@ export class ParascolaireHomeComponent {
 
   label(c: ParascolaireClass): string {
     return classLabel(c.order, c.label, this.lang.isArabic());
-  }
-
-  countFor(classe: string): number {
-    return booksOfClass(this.svc.catalog(), classe).length;
   }
 
   select(id: string): void {

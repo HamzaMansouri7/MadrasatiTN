@@ -4,7 +4,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { LanguageService } from '@core';
 import { ParascolaireService } from './parascolaire.service';
 import { ThemeStatusFilter } from './parascolaire.models';
-import { bookTitle, classLabel, filterThemes, findBook, rulerSegments, subjectLabel } from './parascolaire.logic';
+import { bookTitle, classLabel, filterThemes, findBook, groupBySubject, rulerSegments, subjectColor, subjectLabel, themeHasResource } from './parascolaire.logic';
 import { CoverageRulerComponent } from './ui/coverage-ruler';
 import { ThemeCardComponent } from './ui/theme-card';
 
@@ -41,43 +41,46 @@ import { ThemeCardComponent } from './ui/theme-card';
                 </div>
               </header>
 
-              <div class="flex flex-wrap items-end gap-3" role="group" [attr.aria-label]="lang.tr('Filtres', 'عوامل التصفية')">
+              <div class="space-y-4" role="group" [attr.aria-label]="lang.tr('Filtres', 'عوامل التصفية')">
+                <div class="flex flex-wrap items-center gap-2" role="group" [attr.aria-label]="lang.tr('Statut', 'الحالة')">
+                  @for (o of statusOptions(); track o.value) {
+                    <button type="button" [class]="chipClass(status() === o.value)" [attr.aria-pressed]="status() === o.value" (click)="setFilter('status', o.value)">
+                      {{ o.label }} <span class="opacity-70">{{ o.count }}</span>
+                    </button>
+                  }
+                </div>
                 @if (b.subjects.length > 1) {
-                  <label class="space-y-1 text-[0.8125rem] text-[var(--p-pencil)]">
-                    <span>{{ lang.tr('Matière', 'المادة') }}</span>
-                    <select
-                      class="block min-h-[44px] min-w-[170px] rounded-xl border border-[var(--p-rule)] bg-[var(--p-surface)] px-3 text-[0.9375rem] text-[var(--p-ink)]"
-                      [value]="subject()"
-                      (change)="setFilter('subject', $any($event.target).value)">
-                      <option value="all">{{ lang.tr('Toutes les matières', 'كل المواد') }}</option>
-                      @for (s of b.subjects; track s) {
-                        <option [value]="s" [selected]="s === subject()">{{ subjectName(s) }}</option>
-                      }
-                    </select>
-                  </label>
-                }
-                <label class="space-y-1 text-[0.8125rem] text-[var(--p-pencil)]">
-                  <span>{{ lang.tr('Statut', 'الحالة') }}</span>
-                  <select
-                    class="block min-h-[44px] min-w-[170px] rounded-xl border border-[var(--p-rule)] bg-[var(--p-surface)] px-3 text-[0.9375rem] text-[var(--p-ink)]"
-                    [value]="status()"
-                    (change)="setFilter('status', $any($event.target).value)">
-                    <option value="all" [selected]="status() === 'all'">{{ lang.tr('Tous les statuts', 'كل الحالات') }}</option>
-                    <option value="ready" [selected]="status() === 'ready'">{{ lang.tr('Avec ressources', 'بموارد متوفرة') }}</option>
-                    <option value="pending" [selected]="status() === 'pending'">{{ lang.tr('Pas encore disponibles', 'غير متوفرة بعد') }}</option>
-                  </select>
-                </label>
-                @if (subject() !== 'all' || status() !== 'all') {
-                  <button type="button" class="min-h-[44px] px-2 text-[0.9375rem] text-[var(--p-blue)] hover:underline underline-offset-4 cursor-pointer" (click)="reset()">
-                    {{ lang.tr('Réinitialiser', 'إعادة التعيين') }}
-                  </button>
+                  <div class="flex flex-wrap items-center gap-2" role="group" [attr.aria-label]="lang.tr('Matière', 'المادة')">
+                    <button type="button" [class]="chipClass(subject() === 'all')" [attr.aria-pressed]="subject() === 'all'" (click)="setFilter('subject', 'all')">
+                      {{ lang.tr('Toutes les matières', 'كل المواد') }}
+                    </button>
+                    @for (s of b.subjects; track s) {
+                      <button type="button" [class]="chipClass(subject() === s)" [attr.aria-pressed]="subject() === s" (click)="setFilter('subject', s)">
+                        <span class="w-2.5 h-2.5 rounded-full shrink-0" [style.background]="color(s)" aria-hidden="true"></span>
+                        {{ subjectName(s) }}
+                      </button>
+                    }
+                  </div>
                 }
               </div>
 
               @if (themes().length > 0) {
-                <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                  @for (t of themes(); track t.id) {
-                    <app-p-theme-card [theme]="t" [bookId]="b.id" />
+                <div class="space-y-10">
+                  @for (g of groups(); track g.subject) {
+                    <section class="space-y-4" [attr.aria-label]="g.heading ? subjectName(g.subject) : null">
+                      @if (g.heading) {
+                        <h2 class="p-display text-[1.25rem] flex items-center gap-2 pb-2 border-b border-[var(--p-rule)]">
+                          <span class="w-2.5 h-2.5 rounded-full shrink-0" [style.background]="color(g.subject)" aria-hidden="true"></span>
+                          {{ subjectName(g.subject) }}
+                          <span class="text-[0.9375rem] font-normal text-[var(--p-pencil)]">{{ g.items.length }}</span>
+                        </h2>
+                      }
+                      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                        @for (t of g.items; track t.id) {
+                          <app-p-theme-card [theme]="t" [bookId]="b.id" />
+                        }
+                      </div>
+                    </section>
                   }
                 </div>
               } @else {
@@ -127,6 +130,22 @@ export class ParascolaireBookComponent {
     return s === 'ready' || s === 'pending' ? s : 'all';
   });
   readonly themes = computed(() => filterThemes(this.book()?.themes ?? [], this.subject(), this.status()));
+  readonly groups = computed(() => {
+    const list = this.themes();
+    const multi = (this.book()?.subjects.length ?? 0) > 1 && this.subject() === 'all';
+    return multi
+      ? groupBySubject(list, (t) => t.subject).map((g) => ({ ...g, heading: true }))
+      : [{ subject: this.subject(), items: list, heading: false }];
+  });
+  readonly statusOptions = computed(() => {
+    const all = this.book()?.themes ?? [];
+    const ready = all.filter(themeHasResource).length;
+    return [
+      { value: 'all' as const, label: this.lang.tr('Tous', 'الكل'), count: all.length },
+      { value: 'ready' as const, label: this.lang.tr('Avec ressources', 'بموارد متوفرة'), count: ready },
+      { value: 'pending' as const, label: this.lang.tr('Bientôt', 'قريبًا'), count: all.length - ready },
+    ];
+  });
   readonly segments = computed(() => {
     const b = this.book();
     return b ? rulerSegments(b) : [];
@@ -144,6 +163,17 @@ export class ParascolaireBookComponent {
 
   constructor() {
     void this.svc.load();
+  }
+
+  color(s: string): string {
+    return subjectColor(s);
+  }
+
+  chipClass(active: boolean): string {
+    const base = 'inline-flex items-center gap-2 min-h-[44px] px-4 rounded-xl border text-sm cursor-pointer transition-colors';
+    return active
+      ? base + ' bg-[var(--p-blue)] border-[var(--p-blue)] text-[#FBF8F1] font-semibold'
+      : base + ' bg-[#FBF8F1] border-[var(--p-rule)] text-[#4A5A50] font-medium hover:bg-[#F2ECDE]';
   }
 
   subjectName(s: string): string {

@@ -145,3 +145,28 @@ export const rulerSegments = (b: ParascolaireBook): ('done' | 'partial' | 'empty
     if (t.slots.infographic.status === 'ready' && t.slots.course.status === 'ready') return 'done';
     return themeHasResource(t) ? 'partial' : 'empty';
   });
+
+const SUBJECT_ORDER = ['mathématiques', 'arabe', 'français', 'éveil scientifique', 'éducation islamique'];
+const subjectRank = (s: string): number => {
+  const i = SUBJECT_ORDER.indexOf(s.trim().toLowerCase());
+  return i < 0 ? SUBJECT_ORDER.length : i;
+};
+
+export interface SubjectGroup<T> {
+  subject: string;
+  items: T[];
+}
+
+/** Groups items by subject, keeping the original order inside each group. Known subjects come first, in a fixed order. */
+export const groupBySubject = <T>(items: T[], subjectOf: (x: T) => string): SubjectGroup<T>[] => {
+  const groups = new Map<string, T[]>();
+  for (const it of items) {
+    const key = subjectOf(it);
+    const list = groups.get(key);
+    if (list) list.push(it);
+    else groups.set(key, [it]);
+  }
+  return [...groups.entries()]
+    .map(([subject, list]) => ({ subject, items: list }))
+    .sort((a, b) => subjectRank(a.subject) - subjectRank(b.subject));
+};
