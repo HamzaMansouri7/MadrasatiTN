@@ -44,5 +44,15 @@ Save the final texts in `parascolaire/FB-POSTS-FINAL.md`, one block per post: im
 ## Step 5 - Cadence
 1 post per day, Post 0 first, then alternate Maths / Arabic, best-scoring themes first. Owner can run `--only <n>` by hand any day. No cron until the owner asks.
 
+## Step 5b - Scheduling (decided 2026-10-13, replaces "1 post per day")
+- Cadence: max 3 posts/day at **12:30, 18:30, 20:45 Africa/Tunis**. Never every 30 min.
+- Mechanism: Graph API native scheduling (`published=false` + `scheduled_publish_time` UNIX ts), reuse the code in `src/server/facebook.ts`. No cron, no PM2 job, no `scripts/fb-drip-sync.ts` (known bugs).
+- Check Meta limits before coding (scheduled time must be within Meta's allowed window; verify in docs, do not assume). Schedule at most 7 days ahead per run.
+- Queue file `parascolaire/FB-SCHEDULE.md` (or json): one row per post = order | class | book | theme id | subject | image | text | slot datetime | status (planned / scheduled / published) | Meta post id.
+- Order: class, then book, then theme number, alternating Maths / Arabic; skip anything already in `parascolaire/outputs/fb-parascolaire-posted.json`.
+- Dedupe: write the Meta id into the log at schedule time; a rerun never schedules the same theme twice. `--dry-run` prints the full calendar first; owner says "go" before any real call.
+- Token: read from `.env`, never print. If Meta rejects the token, stop the whole run.
+- New items (course decks, videos) join the queue only after the owner approves their text.
+
 ## Step 6 - Report back
 Short summary to the owner: audit table (keep/skip), final texts, dry-run output, anything unverified. Commit docs only (`docs(parascolaire): ...`), never secrets.

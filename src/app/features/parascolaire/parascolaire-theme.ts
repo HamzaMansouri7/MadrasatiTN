@@ -4,7 +4,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { LanguageService } from '@core';
 import { ShareButtonComponent } from '@shared';
 import { ParascolaireService } from './parascolaire.service';
-import { findBook, findTheme, mediaUrl, neighbours, subjectColor, subjectLabel } from './parascolaire.logic';
+import { bookTitle, findBook, findTheme, mediaUrl, neighbours, subjectColor, subjectLabel, themeTitle } from './parascolaire.logic';
 import { SlotRowComponent } from './ui/slot-row';
 import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
 
@@ -20,7 +20,7 @@ import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
           [routerLink]="bookLink()"
           class="inline-flex items-center gap-1 min-h-[44px] text-[0.9375rem] text-[var(--p-blue)] hover:underline underline-offset-4">
           <span class="material-icons text-[1.125rem] rtl:rotate-180" aria-hidden="true">arrow_back</span>
-          {{ book()?.title ?? lang.tr('Parascolaire', 'الدعم المدرسي') }}
+          {{ bookName() || lang.tr('Parascolaire', 'الدعم المدرسي') }}
         </a>
 
         @switch (svc.state()) {
@@ -37,13 +37,13 @@ import { ViewerDialogComponent, ViewerImage } from './ui/viewer-dialog';
                   <span class="w-2.5 h-2.5 rounded-full shrink-0" [style.background]="color()" aria-hidden="true"></span>
                   <span>{{ subjectName() }}</span>
                 </p>
-                <h1 class="p-display text-[1.75rem] sm:text-[2.5rem] leading-[1.15] max-w-[32ch]">{{ t.title }}</h1>
+                <h1 class="p-display text-[1.75rem] sm:text-[2.5rem] leading-[1.15] max-w-[32ch]">{{ themeName() }}</h1>
                 <p class="text-[0.9375rem] text-[var(--p-pencil)]">{{ lang.tr(t.exerciseCount + ' exercices dans le livre', t.exerciseCount + ' تمرينًا في الكتاب') }}</p>
                 <div class="pt-2">
                   <app-share-button
                     [url]="shareUrl()"
-                    [title]="t.title"
-                    [text]="t.title"
+                    [title]="themeName()"
+                    [text]="themeName()"
                     [details]="shareDetails()"
                     variant="button"
                     accent="blue"
@@ -154,15 +154,17 @@ export class ParascolaireThemeComponent {
   readonly theme = computed(() => findTheme(this.book(), this.themeId()));
   readonly near = computed(() => neighbours(this.book(), this.themeId()));
   readonly bookLink = computed(() => ['/parascolaire', this.classe(), this.livre()]);
+  readonly themeName = computed(() => themeTitle(this.theme(), this.lang.isArabic()));
+  readonly bookName = computed(() => bookTitle(this.book(), this.lang.isArabic()));
   readonly shareUrl = computed(() => `/parascolaire/${this.classe()}/${this.livre()}/${this.themeId()}`);
-  readonly shareDetails = computed(() => [this.book()?.title, this.subjectName()]);
+  readonly shareDetails = computed(() => [this.bookName(), this.subjectName()]);
 
   readonly color = computed(() => subjectColor(this.theme()?.subject ?? ''));
   readonly subjectName = computed(() => subjectLabel(this.theme()?.subject ?? '', this.lang.isArabic()));
   readonly igFull = computed(() => mediaUrl(this.theme()?.slots.infographic.full));
-  readonly igAlt = computed(() => this.lang.tr('Infographie : ', 'إنفوغرافيك: ') + (this.theme()?.title ?? ''));
+  readonly igAlt = computed(() => this.lang.tr('Infographie : ', 'إنفوغرافيك: ') + this.themeName());
   readonly courseThumb = computed(() => mediaUrl(this.theme()?.slots.course.thumb));
-  readonly courseAlt = computed(() => this.lang.tr('Cours : ', 'الدرس: ') + (this.theme()?.title ?? ''));
+  readonly courseAlt = computed(() => this.lang.tr('Cours : ', 'الدرس: ') + this.themeName());
   readonly pdfUrl = computed(() => mediaUrl(this.theme()?.slots.course.pdf));
   readonly videoUrl = computed(() => mediaUrl(this.theme()?.slots.video.file));
   readonly pageCount = computed(() => this.theme()?.slots.course.pages?.length ?? 0);

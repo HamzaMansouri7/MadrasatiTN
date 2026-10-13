@@ -4,7 +4,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { LanguageService } from '@core';
 import { ParascolaireService } from './parascolaire.service';
 import { ThemeStatusFilter } from './parascolaire.models';
-import { classLabel, filterThemes, findBook, rulerSegments, subjectLabel } from './parascolaire.logic';
+import { bookTitle, classLabel, filterThemes, findBook, rulerSegments, subjectLabel } from './parascolaire.logic';
 import { CoverageRulerComponent } from './ui/coverage-ruler';
 import { ThemeCardComponent } from './ui/theme-card';
 
@@ -34,7 +34,7 @@ import { ThemeCardComponent } from './ui/theme-card';
           @case ('ready') {
             @if (book(); as b) {
               <header class="space-y-3">
-                <h1 class="p-display text-[1.75rem] sm:text-[2.5rem] leading-[1.15] max-w-[32ch]">{{ b.title }}</h1>
+                <h1 class="p-display text-[1.75rem] sm:text-[2.5rem] leading-[1.15] max-w-[32ch]">{{ bookName() }}</h1>
                 <div class="max-w-[560px] space-y-2">
                   <app-p-ruler [segments]="segments()" [label]="progress()" />
                   <p class="text-[0.9375rem]">{{ progress() }}</p>
@@ -120,6 +120,7 @@ export class ParascolaireBookComponent {
   readonly classe = computed(() => this.params().get('classe') ?? '');
   readonly livre = computed(() => this.params().get('livre') ?? '');
   readonly book = computed(() => findBook(this.svc.catalog(), this.classe(), this.livre()));
+  readonly bookName = computed(() => bookTitle(this.book(), this.lang.isArabic()));
   readonly subject = computed(() => this.query().get('subject') ?? 'all');
   readonly status = computed<ThemeStatusFilter>(() => {
     const s = this.query().get('status');

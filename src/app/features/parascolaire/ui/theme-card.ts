@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, inject, input } from '@an
 import { RouterLink } from '@angular/router';
 import { LanguageService } from '@core';
 import { ParascolaireTheme } from '../parascolaire.models';
-import { mediaUrl, SLOT_KINDS, subjectColor, subjectLabel } from '../parascolaire.logic';
+import { mediaUrl, SLOT_KINDS, subjectColor, subjectLabel, themeTitle } from '../parascolaire.logic';
 import { SlotRowComponent } from './slot-row';
 
 /** One theme: image box, subject mark, title, three slot rows. The whole card is one link. */
@@ -32,7 +32,7 @@ import { SlotRowComponent } from './slot-row';
           <span class="w-2.5 h-2.5 rounded-full shrink-0" [style.background]="color()" aria-hidden="true"></span>
           <span>{{ subject() }}</span>
         </p>
-        <h3 class="p-display text-[1.25rem] leading-[1.25] text-[var(--p-ink)]">{{ theme().title }}</h3>
+        <h3 class="p-display text-[1.25rem] leading-[1.25] text-[var(--p-ink)]">{{ title() }}</h3>
         <div class="space-y-1.5 pt-1">
           @for (k of kinds; track k) {
             <app-p-slot-row [kind]="k" [status]="theme().slots[k].status" />
@@ -52,7 +52,8 @@ export class ThemeCardComponent {
   readonly link = computed(() => ['/parascolaire', ...this.bookId().split('/'), this.theme().id]);
   readonly color = computed(() => subjectColor(this.theme().subject));
   readonly subject = computed(() => subjectLabel(this.theme().subject, this.lang.isArabic()));
-  readonly imageAlt = computed(() => this.lang.tr('Infographie : ', 'إنفوغرافيك: ') + this.theme().title);
+  readonly title = computed(() => themeTitle(this.theme(), this.lang.isArabic()));
+  readonly imageAlt = computed(() => this.lang.tr('Infographie : ', 'إنفوغرافيك: ') + this.title());
 
   readonly thumb = computed(() => {
     const s = this.theme().slots;

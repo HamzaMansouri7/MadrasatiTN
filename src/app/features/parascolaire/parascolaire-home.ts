@@ -4,7 +4,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { LanguageService } from '@core';
 import { ParascolaireService } from './parascolaire.service';
 import { ParascolaireBook, ParascolaireClass } from './parascolaire.models';
-import { booksOfClass, classLabel, rulerSegments, subjectColor, subjectLabel } from './parascolaire.logic';
+import { booksOfClass, bookTitle, classLabel, rulerSegments, subjectColor, subjectLabel } from './parascolaire.logic';
 import { CoverageRulerComponent } from './ui/coverage-ruler';
 
 @Component({
@@ -64,7 +64,7 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
                         </span>
                       }
                     </p>
-                    <h3 class="p-display text-[1.25rem] leading-[1.25]">{{ b.title }}</h3>
+                    <h3 class="p-display text-[1.25rem] leading-[1.25]">{{ bookTitle(b, lang.isArabic()) }}</h3>
                   </div>
                   <div class="space-y-2">
                     <app-p-ruler [segments]="segments(b)" [label]="rulerLabel(b)" />
@@ -90,6 +90,7 @@ import { CoverageRulerComponent } from './ui/coverage-ruler';
 export class ParascolaireHomeComponent {
   readonly lang = inject(LanguageService);
   readonly svc = inject(ParascolaireService);
+  readonly bookTitle = bookTitle;
   private readonly router = inject(Router);
   private readonly route = inject(ActivatedRoute);
   private readonly query = toSignal(this.route.queryParamMap, { initialValue: this.route.snapshot.queryParamMap });
