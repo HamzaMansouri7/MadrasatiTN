@@ -22,7 +22,7 @@ import { SlotRowComponent } from './slot-row';
             [alt]="imageAlt()"
             loading="lazy"
             decoding="async"
-            class="w-full h-full object-cover object-top" />
+            [class]="landscape() ? 'w-full h-full object-contain' : 'w-full h-full object-cover object-top'" />
         } @else {
           <div class="p-lined w-full h-full" aria-hidden="true"></div>
         }
@@ -54,6 +54,12 @@ export class ThemeCardComponent {
   readonly subject = computed(() => subjectLabel(this.theme().subject, this.lang.isArabic()));
   readonly title = computed(() => themeTitle(this.theme(), this.lang.isArabic()));
   readonly imageAlt = computed(() => this.lang.tr('Infographie : ', 'إنفوغرافيك: ') + this.title());
+
+  /** Landscape slides must be shown whole; portrait infographics are cropped from the top. */
+  readonly landscape = computed(() => {
+    const s = this.theme().slots;
+    return s.infographic.status === 'ready' ? s.infographic.orientation === 'landscape' : false;
+  });
 
   readonly thumb = computed(() => {
     const s = this.theme().slots;
