@@ -241,6 +241,8 @@ async function main() {
           link: post.link,
         };
         savePostedTracker(tracker);
+        // 2.5 second delay between live API calls
+        await new Promise((r) => setTimeout(r, 2500));
       }
     }
   }
