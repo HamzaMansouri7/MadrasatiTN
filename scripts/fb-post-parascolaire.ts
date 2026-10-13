@@ -4,8 +4,11 @@ import { join, resolve } from 'node:path';
 /**
  * Madrasati TN — Facebook Post Dispatcher for Parascolaire
  *
- * Reads: parascolaire/FB-POSTS-FINAL.md
- * Uploads: Image + caption via Facebook Graph API (/{page-id}/photos)
+ * SINGLE SOURCE OF TRUTH: parascolaire/FB-POSTS-FINAL.md (every Page post lives there, nowhere else).
+ * Per post, by number of images:
+ *   0 images -> text post (/{page-id}/feed)
+ *   1 image  -> photo post (/{page-id}/photos, caption)
+ *   2+ images -> one multi-photo post (unpublished photos, then /{page-id}/feed with attached_media)
  * Dedupe: Records posted items in parascolaire/outputs/fb-parascolaire-posted.json
  *
  * Usage:
@@ -22,8 +25,7 @@ export interface ParascolairePost {
   themeId: string;
   subject: string;
   plannedDate: string;
-  imageRelPath: string;
-  imageFullPath: string;
+  images: { rel: string; full: string }[];
   link: string;
   text: string;
 }
@@ -88,11 +90,16 @@ export function parseFinalPosts(mdPath: string = FINAL_MD_PATH): ParascolairePos
     const subjectMatch = sec.match(/- \*\*Subject:\*\*\s*([^\n]+)/);
     const dateMatch = sec.match(/- \*\*Planned Date:\*\*\s*([^\n]+)/);
     const imageMatch = sec.match(/- \*\*Image:\*\*\s*`([^`]+)`/);
+    const imagesBlock = sec.match(/- \*\*Images:\*\*\r?\n((?:\s+- `[^`]+`\r?\n?)+)/);
     const linkMatch = sec.match(/- \*\*Link:\*\*\s*`([^`]+)`/);
     const textMatch = sec.match(/- \*\*Text:\*\*\r?\n([\s\S]+?)(?=\r?\n---\r?\n|$)/);
 
-    const imageRel = imageMatch ? imageMatch[1].trim() : '';
-    const fullImg = resolve(ROOT_DIR, imageRel);
+    const rels = imagesBlock
+      ? [...imagesBlock[1].matchAll(/`([^`]+)`/g)].map((m) => m[1].trim())
+      : imageMatch
+        ? [imageMatch[1].trim()]
+        : [];
+    const images = rels.map((rel) => ({ rel, full: resolve(ROOT_DIR, rel) }));
 
     posts.push({
       index,
@@ -101,8 +108,7 @@ export function parseFinalPosts(mdPath: string = FINAL_MD_PATH): ParascolairePos
       themeId: themeMatch ? themeMatch[1].trim() : '',
       subject: subjectMatch ? subjectMatch[1].trim() : '',
       plannedDate: dateMatch ? dateMatch[1].trim() : '',
-      imageRelPath: imageRel,
-      imageFullPath: fullImg,
+      images,
       link: linkMatch ? linkMatch[1].trim() : '',
       text: textMatch ? textMatch[1].trim() : '',
     });
@@ -136,7 +142,7 @@ async function postToFacebookPhotos(p: ParascolairePost, dryRun: boolean): Promi
     console.log(`Title: ${p.header}`);
     console.log(`Planned: ${p.plannedDate}`);
     console.log(`Subject: ${p.subject}`);
-    console.log(`Image exists locally: ${existsSync(p.imageFullPath)} (${p.imageRelPath})`);
+    console.log(`Images: ${p.images.length} (all exist locally: ${p.images.every((i) => existsSync(i.full))})`);
     console.log(`Link: ${p.link}`);
     console.log(`--------------------- Message ------------------------`);
     console.log(p.text);
@@ -155,36 +161,69 @@ async function postToFacebookPhotos(p: ParascolairePost, dryRun: boolean): Promi
     return null;
   }
 
-  if (!existsSync(p.imageFullPath)) {
-    console.error(`Error: image file missing at ${p.imageFullPath}`);
+  const missing = p.images.filter((i) => !existsSync(i.full));
+  if (missing.length > 0) {
+    console.error(`Error: image file missing: ${missing.map((m) => m.rel).join(', ')}`);
     return null;
   }
 
-  const fileBytes = readFileSync(p.imageFullPath);
-  const blob = new Blob([fileBytes], { type: 'image/webp' });
-
-  const form = new FormData();
-  form.append('access_token', token);
-  form.append('caption', p.text);
-  form.append('source', blob, 'infographic.webp');
-
-  const endpoint = `https://graph.facebook.com/${version}/${pageId}/photos`;
-  const res = await fetch(endpoint, {
-    method: 'POST',
-    body: form,
-  });
-
-  if (!res.ok) {
+  const api = (path: string, form: FormData) =>
+    fetch(`https://graph.facebook.com/${version}/${pageId}/${path}`, { method: 'POST', body: form });
+  const fail = async (res: Response, step: string): Promise<null> => {
     const errorText = await res.text();
-    console.error(`Facebook API error: HTTP ${res.status}`);
-    console.error(`Response length: ${errorText.length} bytes`);
+    console.error(`Facebook API error on ${step}: HTTP ${res.status} (${errorText.length} bytes)`);
     return null;
+  };
+
+  // 0 images: plain text post.
+  if (p.images.length === 0) {
+    const form = new FormData();
+    form.append('access_token', token);
+    form.append('message', p.text);
+    const res = await api('feed', form);
+    if (!res.ok) return fail(res, 'feed');
+    const json = (await res.json()) as { id?: string };
+    console.log(`Successfully posted! FB Post ID: ${json.id ?? ''}`);
+    return json.id ?? '';
   }
 
-  const json = (await res.json()) as { id?: string; post_id?: string };
-  const fbPostId = json.post_id || json.id || '';
-  console.log(`Successfully posted! FB Post/Photo ID: ${fbPostId}`);
-  return fbPostId;
+  // 1 image: photo post with caption.
+  if (p.images.length === 1) {
+    const form = new FormData();
+    form.append('access_token', token);
+    form.append('caption', p.text);
+    form.append('source', new Blob([readFileSync(p.images[0].full)], { type: 'image/webp' }), 'infographic.webp');
+    const res = await api('photos', form);
+    if (!res.ok) return fail(res, 'photos');
+    const json = (await res.json()) as { id?: string; post_id?: string };
+    const fbPostId = json.post_id || json.id || '';
+    console.log(`Successfully posted! FB Post/Photo ID: ${fbPostId}`);
+    return fbPostId;
+  }
+
+  // 2+ images: upload unpublished, then one feed post with attached_media.
+  const mediaIds: string[] = [];
+  for (const img of p.images) {
+    const form = new FormData();
+    form.append('access_token', token);
+    form.append('published', 'false');
+    form.append('source', new Blob([readFileSync(img.full)], { type: 'image/webp' }), 'image.webp');
+    const res = await api('photos', form);
+    if (!res.ok) return fail(res, 'photo upload');
+    const json = (await res.json()) as { id?: string };
+    if (!json.id) return null;
+    mediaIds.push(json.id);
+    await new Promise((r) => setTimeout(r, 1000));
+  }
+  const feed = new FormData();
+  feed.append('access_token', token);
+  feed.append('message', p.text);
+  mediaIds.forEach((id, i) => feed.append(`attached_media[${i}]`, JSON.stringify({ media_fbid: id })));
+  const res = await api('feed', feed);
+  if (!res.ok) return fail(res, 'feed');
+  const json = (await res.json()) as { id?: string };
+  console.log(`Successfully posted! FB Post ID: ${json.id ?? ''}`);
+  return json.id ?? '';
 }
 
 async function main() {

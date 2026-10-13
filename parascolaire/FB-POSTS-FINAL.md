@@ -1,9 +1,23 @@
-# Facebook Posts — Parascolaire (Final Copy & Schedule)
+# Facebook Posts — Single source of truth (Page: Madrasati TN)
 
-Audit status: 15 approved themes + 1 launch post (Post 0).  
-Watermark: Kept "Gemini Notebook" on all infographics.  
-All links verified with Open Graph dynamic previews.  
-Cadence: 1 post/day, Post 0 first, alternating Maths and Arabic.
+This file is the ONLY place Page posts live. Posts for the owner's personal account or groups are never stored here (chat only, when asked).
+Voice: the Page ("we"). Arabic only (Tunisian dialect allowed for community posts). Keep the "Gemini Notebook" watermark on infographics.
+
+## How a post is defined
+`### Post <n> — <title>` then fields: ID, Theme ID, Subject, Planned Date, Image (one) or Images (list, 2+), Link, Text.
+Images decide the format: 0 = text post, 1 = photo post, 2+ = one multi-photo post. Facebook only builds a link card from the first link and not when photos are attached.
+
+## How to publish (the only mechanism)
+```
+npx tsx scripts/fb-post-parascolaire.ts --list                 # status of every post
+npx tsx scripts/fb-post-parascolaire.ts --dry-run --only <n>   # preview, no network
+npx tsx scripts/fb-post-parascolaire.ts --only <n>             # live, one post, needs the owner's "go"
+```
+Dedupe: `parascolaire/outputs/fb-parascolaire-posted.json` (a posted id is never posted twice). Token and page id come from `.env`, never printed.
+To add a post: append a block here, dry-run, get the owner's go, post. Do not create another script or file for posts.
+
+Audit status: posts 0-15 live (infographics, 1ere annee). Posts 16-20 are Page promo posts, pending.
+Cadence: 1 post/day. Scheduling (3/day via `scheduled_publish_time`) is specified in `FB-POSTS-PLAN.md` step 5b and not built.
 
 ---
 
@@ -292,3 +306,142 @@ https://madrastihub.com/parascolaire/1ere-annee/evaluations-maths-arabe/07-lectu
 https://madrastihub.com/parascolaire/1ere-annee/evaluations-maths-arabe/11-lecture-vie-quotidienne
 
 #مدرستي_تونس #السنة_الأولى_ابتدائي #لغة_عربية
+
+---
+
+### Post 16 — Présentation pour les parents (Page)
+- **ID:** `page-parents-intro`
+- **Theme ID:** `general-parents`
+- **Subject:** عام
+- **Planned Date:** Day 17
+- **Link:** `https://madrastihub.com/parascolaire/1ere-annee/evaluations-maths-arabe/23-problemes-additifs`
+- **Text:**
+أولياء الأمور، كم مرة شفتو في المجموعات: «من عنده تمارين مع الإصلاح؟» ولا صورة مسألة وصاحبها ينتظر من يحلها؟
+
+في مدرستي تونس جمعنا الدعم المدرسي في بلاصة وحدة:
+
+📚 كتب دعم مرتبة حسب السنة والمادة
+🖼️ لكل موضوع ملخص مصوّر تكبروه وتنزلوه
+🎞️ ولكل موضوع درس في شرائح تقراوه مع ولدكم، مع نسخة PDF
+📱 يخدم على الهاتف، بالعربية والفرنسية
+
+كل شي مجاني وبلا تسجيل. نحبو كل تلميذ يلقى دعم مدرسي مليح، حتى كان عيلته ما تقدرش تشري كتب الدعم 💚
+
+شوفو مثال من درس السنة الأولى:
+https://madrastihub.com/parascolaire/1ere-annee/evaluations-maths-arabe/23-problemes-additifs
+
+والموقع الكامل: madrastihub.com
+
+#مدرستي_تونس #الدعم_المدرسي #التعليم_الابتدائي #تونس
+
+---
+
+### Post 17 — السنة الخامسة: الأعداد العشرية (Page)
+- **ID:** `page-5eme-intro`
+- **Theme ID:** `5eme-exercices-mathematiques-corriges`
+- **Subject:** Mathématiques
+- **Planned Date:** Day 18
+- **Images:**
+  - `parascolaire/publish/img/5eme-annee/exercices-mathematiques-corriges/01-nombres-decimaux-notions-et-comparaison/infographic.386861bc.webp`
+  - `parascolaire/publish/img/5eme-annee/exercices-mathematiques-corriges/02-operations-sur-les-decimaux/infographic.c86fdde6.webp`
+  - `parascolaire/publish/img/5eme-annee/exercices-mathematiques-corriges/03-problemes-d-achat-vente-et-benefice/infographic.bab89851.webp`
+- **Link:** `https://madrastihub.com/parascolaire/5eme-annee/exercices-mathematiques-corriges/01-nombres-decimaux-notions-et-comparaison`
+- **Text:**
+أولياء وتلاميذ السنة الخامسة 👋
+
+موارد رياضيات مجانية: ملخصات مصورة ودروس في شرائح، بلاش وبلا تسجيل.
+
+الموجود توا من كتاب «تمارين رياضيات مع الإصلاح»:
+
+🔢 الأعداد العشرية: المفهوم والمقارنة
+https://madrastihub.com/parascolaire/5eme-annee/exercices-mathematiques-corriges/01-nombres-decimaux-notions-et-comparaison
+
+➕ العمليات على الأعداد العشرية
+https://madrastihub.com/parascolaire/5eme-annee/exercices-mathematiques-corriges/02-operations-sur-les-decimaux
+
+🛒 مسائل الشراء والبيع والربح
+https://madrastihub.com/parascolaire/5eme-annee/exercices-mathematiques-corriges/03-problemes-d-achat-vente-et-benefice
+
+كل موضوع فيه ملخص مصوّر ودرس في شرائح مع نسخة PDF. ونزيدو مواضيع جديدة للخامسة باستمرار.
+
+شاركوها مع أولياء آخرين، وقولولنا شنوّة تحبو نزيدو 💚
+
+#مدرستي_تونس #السنة_الخامسة #الرياضيات #الدعم_المدرسي
+
+---
+
+### Post 18 — السنة الأولى: أمثلة (Page)
+- **ID:** `page-1ere-examples`
+- **Theme ID:** `1ere-examples`
+- **Subject:** Mathématiques + Arabe
+- **Planned Date:** Day 19
+- **Images:**
+  - `parascolaire/publish/img/1ere-annee/evaluations-maths-arabe/23-problemes-additifs/infographic.a1578346.webp`
+  - `parascolaire/publish/img/1ere-annee/evaluations-maths-arabe/12-enrichissement-de-phrases/infographic.8e875862.webp`
+- **Link:** `https://madrastihub.com/parascolaire/1ere-annee/evaluations-maths-arabe/23-problemes-additifs`
+- **Text:**
+السنة الأولى: رياضيات وعربية بطريقة مبسطة وممتعة 📐✏️
+
+📐 مسائل الجمع
+https://madrastihub.com/parascolaire/1ere-annee/evaluations-maths-arabe/23-problemes-additifs
+
+✏️ إثراء الجمل
+https://madrastihub.com/parascolaire/1ere-annee/evaluations-maths-arabe/12-enrichissement-de-phrases
+
+ملخص مصوّر ودرس في شرائح لكل موضوع، مجانًا وبلا تسجيل. وفي الموقع 24 موضوعًا للسنة الأولى.
+
+#مدرستي_تونس #السنة_الأولى_ابتدائي #الدعم_المدرسي
+
+---
+
+### Post 19 — الذكاء الاصطناعي المجاني (Page)
+- **ID:** `page-free-ai`
+- **Theme ID:** `general-ai`
+- **Subject:** عام
+- **Planned Date:** Day 20
+- **Link:** `https://madrastihub.com/solve`
+- **Text:**
+تصوّروا مساعد ذكاء اصطناعي قوي، مجاني، يخدم بالعربية والفرنسية وفي خدمة التلميذ والولي والمعلم 🤖
+
+في مدرستي تونس تلقاو:
+
+📸 صوّروا التمرين ولا الفرض واتحصلو على الحل مفسّر خطوة خطوة
+📝 تلخيص الدروس وشرح الدرس بطريقة مبسطة
+🧩 توليد تمارين مشابهة للتدرب، وتمرين جديد على الموضوع اللي تحبو
+👩‍🏫 للمعلم: إنشاء تمارين وامتحانات جاهزة للطباعة، وتصحيحها، وتحضير المذكرات
+
+بلاش اشتراك وبلا بطاقة بنكية. جربوه من هنا:
+https://madrastihub.com/solve
+
+وكان عندكم فكرة على أداة تحبو نزيدوها، قولولنا في التعليقات 💚
+
+#مدرستي_تونس #الذكاء_الاصطناعي #الدعم_المدرسي #مجاني
+
+---
+
+### Post 20 — نداء للمتطوعين (Page)
+- **ID:** `page-volunteers`
+- **Theme ID:** `general-volunteers`
+- **Subject:** عام
+- **Planned Date:** Day 21
+- **Link:** `https://madrastihub.com`
+- **Text:**
+نبحثو على متطوعين معانا 🙏
+
+مدرستي تونس مشروع مجاني وغير ربحي للتلاميذ والأولياء والمعلمين. والمشروع يكبر، ويلزمنا ناس تعاونا في:
+
+✅ مراجعة المحتوى وتصحيح الأخطاء في الدروس والتمارين والإصلاح
+✅ إدارة صفحات فيسبوك ونشر المحتوى في المجموعات والصفحات، أي مجموعة وأي صفحة. الهدف باش المعلومة توصل لأكبر عدد من العائلات
+✅ تجربة المنصة وإعطاءنا رأيكم في اللي ينقص
+
+وفي المقابل، كل متطوع ياخذ دخول كامل ومجاني:
+📚 لكل التمارين والكتب
+🤖 لأدوات الذكاء الاصطناعي
+📝 للمذكرات وفضاء الإنشاء: تصميم تمرين، استنساخ تمرين، ابتكار تمرين، وتصحيح تمرين
+📖 ولكتب الدعم المدرسي اللي عادة تتباع بالفلوس
+
+ما فماش مقابل مادي، كل شي للمجتمع. اللي يحب يعاون يبعثلنا رسالة خاصة على الصفحة ولا يعلق "حاضر".
+
+madrastihub.com
+
+#مدرستي_تونس #تطوع #التعليم_الابتدائي
