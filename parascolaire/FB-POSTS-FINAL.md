@@ -16,7 +16,7 @@ npx tsx scripts/fb-post-parascolaire.ts --only <n>             # live, one post,
 Dedupe: `parascolaire/outputs/fb-parascolaire-posted.json` (a posted id is never posted twice). Token and page id come from `.env`, never printed.
 To add a post: append a block here, dry-run, get the owner's go, post. Do not create another script or file for posts.
 
-Audit status: posts 0-17 live. Posts 18-20 are Page promo posts, pending.
+Audit status: posts 0-18 live. Posts 19-20 are Page promo posts, pending.
 Cadence: 1 post/day. Scheduling (3/day via `scheduled_publish_time`) is specified in `FB-POSTS-PLAN.md` step 5b and not built.
 
 ---
@@ -400,6 +400,7 @@ https://madrastihub.com/parascolaire/1ere-annee/evaluations-maths-arabe/12-enric
 - **Theme ID:** `general-ai`
 - **Subject:** عام
 - **Planned Date:** Day 20
+- **Image:** `public/assets/branding/facebook_cover.webp`
 - **Link:** `https://madrastihub.com/solve`
 - **Text:**
 تصوّروا مساعد ذكاء اصطناعي قوي، مجاني، يخدم بالعربية والفرنسية وفي خدمة التلميذ والولي والمعلم 🤖
@@ -425,6 +426,7 @@ https://madrastihub.com/solve
 - **Theme ID:** `general-volunteers`
 - **Subject:** عام
 - **Planned Date:** Day 21
+- **Image:** `public/assets/branding/facebook_cover.jpg`
 - **Link:** `https://madrastihub.com`
 - **Text:**
 نبحثو على متطوعين معانا 🙏
