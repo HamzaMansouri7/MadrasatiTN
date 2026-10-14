@@ -16,7 +16,7 @@ npx tsx scripts/fb-post-parascolaire.ts --only <n>             # live, one post,
 Dedupe: `parascolaire/outputs/fb-parascolaire-posted.json` (a posted id is never posted twice). Token and page id come from `.env`, never printed.
 To add a post: append a block here, dry-run, get the owner's go, post. Do not create another script or file for posts.
 
-Audit status: posts 0-16 live. Posts 17-20 are Page promo posts, pending.
+Audit status: posts 0-17 live. Posts 18-20 are Page promo posts, pending.
 Cadence: 1 post/day. Scheduling (3/day via `scheduled_publish_time`) is specified in `FB-POSTS-PLAN.md` step 5b and not built.
 
 ---
