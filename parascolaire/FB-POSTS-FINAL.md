@@ -16,7 +16,7 @@ npx tsx scripts/fb-post-parascolaire.ts --only <n>             # live, one post,
 Dedupe: `parascolaire/outputs/fb-parascolaire-posted.json` (a posted id is never posted twice). Token and page id come from `.env`, never printed.
 To add a post: append a block here, dry-run, get the owner's go, post. Do not create another script or file for posts.
 
-Audit status: posts 0-15 live (infographics, 1ere annee). Posts 16-20 are Page promo posts, pending.
+Audit status: posts 0-16 live. Posts 17-20 are Page promo posts, pending.
 Cadence: 1 post/day. Scheduling (3/day via `scheduled_publish_time`) is specified in `FB-POSTS-PLAN.md` step 5b and not built.
 
 ---
@@ -314,6 +314,7 @@ https://madrastihub.com/parascolaire/1ere-annee/evaluations-maths-arabe/11-lectu
 - **Theme ID:** `general-parents`
 - **Subject:** عام
 - **Planned Date:** Day 17
+- **Image:** `parascolaire/publish/img/1ere-annee/evaluations-maths-arabe/23-problemes-additifs/infographic.a1578346.webp`
 - **Link:** `https://madrastihub.com/parascolaire/1ere-annee/evaluations-maths-arabe/23-problemes-additifs`
 - **Text:**
 أولياء الأمور، كم مرة شفتو في المجموعات: «من عنده تمارين مع الإصلاح؟» ولا صورة مسألة وصاحبها ينتظر من يحلها؟
