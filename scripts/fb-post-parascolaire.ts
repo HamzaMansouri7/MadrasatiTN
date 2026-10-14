@@ -135,7 +135,7 @@ export function savePostedTracker(records: Record<string, PostedRecord>): void {
   }
 }
 
-async function postToFacebookPhotos(p: ParascolairePost, dryRun: boolean): Promise<string | null> {
+async function postToFacebookPhotos(p: ParascolairePost, dryRun: boolean, scheduledTime?: number): Promise<string | null> {
   if (dryRun) {
     console.log(`\n======================================================`);
     console.log(`[DRY RUN] Post #${p.index} | ID: ${p.id}`);
@@ -180,19 +180,24 @@ async function postToFacebookPhotos(p: ParascolairePost, dryRun: boolean): Promi
     const form = new FormData();
     form.append('access_token', token);
     form.append('message', p.text);
+    if (scheduledTime) {
+      form.append('published', 'false');
+      form.append('scheduled_publish_time', String(scheduledTime));
+    }
     const res = await api('feed', form);
     if (!res.ok) return fail(res, 'feed');
     const json = (await res.json()) as { id?: string };
-    console.log(`Successfully posted! FB Post ID: ${json.id ?? ''}`);
+    console.log(`Successfully ${scheduledTime ? 'scheduled' : 'posted'}! FB Post ID: ${json.id ?? ''}`);
     return json.id ?? '';
   }
 
-  // 1 image: photo post with caption.
-  if (p.images.length === 1) {
+  // 1 image: if immediate, direct photo post with caption.
+  if (p.images.length === 1 && !scheduledTime) {
     const form = new FormData();
     form.append('access_token', token);
     form.append('caption', p.text);
-    form.append('source', new Blob([readFileSync(p.images[0].full)], { type: 'image/webp' }), 'infographic.webp');
+    const mime = p.images[0].full.endsWith('.jpg') || p.images[0].full.endsWith('.jpeg') ? 'image/jpeg' : 'image/webp';
+    form.append('source', new Blob([readFileSync(p.images[0].full)], { type: mime }), 'image');
     const res = await api('photos', form);
     if (!res.ok) return fail(res, 'photos');
     const json = (await res.json()) as { id?: string; post_id?: string };
@@ -201,13 +206,14 @@ async function postToFacebookPhotos(p: ParascolairePost, dryRun: boolean): Promi
     return fbPostId;
   }
 
-  // 2+ images: upload unpublished, then one feed post with attached_media.
+  // 1 image scheduled OR 2+ images: upload unpublished, then feed post with attached_media.
   const mediaIds: string[] = [];
   for (const img of p.images) {
     const form = new FormData();
     form.append('access_token', token);
     form.append('published', 'false');
-    form.append('source', new Blob([readFileSync(img.full)], { type: 'image/webp' }), 'image.webp');
+    const mime = img.full.endsWith('.jpg') || img.full.endsWith('.jpeg') ? 'image/jpeg' : 'image/webp';
+    form.append('source', new Blob([readFileSync(img.full)], { type: mime }), 'image');
     const res = await api('photos', form);
     if (!res.ok) return fail(res, 'photo upload');
     const json = (await res.json()) as { id?: string };
@@ -218,12 +224,46 @@ async function postToFacebookPhotos(p: ParascolairePost, dryRun: boolean): Promi
   const feed = new FormData();
   feed.append('access_token', token);
   feed.append('message', p.text);
+  if (scheduledTime) {
+    feed.append('published', 'false');
+    feed.append('scheduled_publish_time', String(scheduledTime));
+  }
   mediaIds.forEach((id, i) => feed.append(`attached_media[${i}]`, JSON.stringify({ media_fbid: id })));
   const res = await api('feed', feed);
   if (!res.ok) return fail(res, 'feed');
   const json = (await res.json()) as { id?: string };
-  console.log(`Successfully posted! FB Post ID: ${json.id ?? ''}`);
+  console.log(`Successfully ${scheduledTime ? 'scheduled' : 'posted'}! FB Post ID: ${json.id ?? ''}`);
   return json.id ?? '';
+}
+
+function getNextSlots(count: number): Date[] {
+  const slots = [
+    { h: 12, m: 30 },
+    { h: 18, m: 30 },
+    { h: 20, m: 45 },
+  ];
+  const results: Date[] = [];
+  const now = new Date();
+  let dayOffset = 0;
+  while (results.length < count) {
+    for (const s of slots) {
+      // Tunis is UTC+1 year-round. Hour in UTC = s.h - 1
+      const d = new Date(Date.UTC(
+        now.getUTCFullYear(),
+        now.getUTCMonth(),
+        now.getUTCDate() + dayOffset,
+        s.h - 1,
+        s.m,
+        0
+      ));
+      if (d.getTime() > now.getTime() + 15 * 60 * 1000) {
+        results.push(d);
+        if (results.length === count) break;
+      }
+    }
+    dayOffset++;
+  }
+  return results;
 }
 
 async function main() {
@@ -231,6 +271,7 @@ async function main() {
   const args = process.argv.slice(2);
   const isDryRun = args.includes('--dry-run');
   const isList = args.includes('--list');
+  const isSchedule = args.includes('--schedule');
   const force = args.includes('--force');
 
   const onlyIdxArg = args.indexOf('--only');
@@ -258,18 +299,29 @@ async function main() {
     }
   }
 
+  // Filter to pending posts unless --force
+  const toProcess = candidates.filter((p) => !tracker[p.id] || force);
+
   console.log(`\nParascolaire Facebook Dispatcher`);
-  console.log(`Mode: ${isDryRun ? 'DRY-RUN (Simulated)' : 'LIVE (Graph API)'}`);
-  console.log(`Total Posts: ${posts.length} | Selected: ${candidates.length}`);
+  console.log(`Mode: ${isDryRun ? 'DRY-RUN (Simulated)' : isSchedule ? 'SCHEDULE (Native Graph API)' : 'LIVE (Immediate)'}`);
+  console.log(`Total Posts: ${posts.length} | Selected: ${candidates.length} | Pending: ${toProcess.length}`);
+
+  const slots = isSchedule ? getNextSlots(toProcess.length) : [];
 
   let successCount = 0;
-  for (const post of candidates) {
+  for (let idx = 0; idx < toProcess.length; idx++) {
+    const post = toProcess[idx];
     if (tracker[post.id] && !force && !isDryRun) {
       console.log(`[SKIP] Post #${post.index} (${post.id}) already posted at ${tracker[post.id].postedAt}`);
       continue;
     }
 
-    const postId = await postToFacebookPhotos(post, isDryRun);
+    const scheduledTime = isSchedule ? Math.floor(slots[idx].getTime() / 1000) : undefined;
+    if (isSchedule) {
+      console.log(`\nScheduling Post #${post.index} (${post.id}) for ${slots[idx].toLocaleString('fr-FR', { timeZone: 'Africa/Tunis' })} Tunis time...`);
+    }
+
+    const postId = await postToFacebookPhotos(post, isDryRun, scheduledTime);
     if (postId) {
       successCount++;
       if (!isDryRun) {
@@ -278,6 +330,7 @@ async function main() {
           fbPostId: postId,
           postedAt: new Date().toISOString(),
           link: post.link,
+          ...(scheduledTime ? { scheduledPublishTime: scheduledTime, scheduledFor: slots[idx].toISOString() } : {}),
         };
         savePostedTracker(tracker);
         // 2.5 second delay between live API calls
@@ -286,7 +339,7 @@ async function main() {
     }
   }
 
-  console.log(`\nFinished: ${successCount} / ${candidates.length} processed successfully.`);
+  console.log(`\nFinished: ${successCount} / ${toProcess.length} processed successfully.`);
 }
 
 main().catch((err) => {
