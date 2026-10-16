@@ -470,6 +470,12 @@ export class InfographicStudioComponent implements OnInit {
     { id: 'steps-interface', icon: 'web', fr: 'Étapes et écran', ar: 'خطوات وشاشة' },
     { id: 'mindmap', icon: 'hub', fr: 'Carte mentale', ar: 'خريطة ذهنية' },
     { id: 'flashcards', icon: 'style', fr: 'Flashcards', ar: 'بطاقات مراجعة' },
+    { id: 'quizcard', icon: 'quiz', fr: 'QCM & Quiz', ar: 'اختبار وسؤال' },
+    { id: 'certificate', icon: 'workspace_premium', fr: 'Certificat', ar: 'شهادة تقدير' },
+    { id: 'venn', icon: 'join_inner', fr: 'Venn', ar: 'مجموعات فين' },
+    { id: 'idcard', icon: 'badge', fr: "Fiche d'identité", ar: 'بطاقة هوية' },
+    { id: 'analogy', icon: 'sync_alt', fr: 'Analogie', ar: 'مقاربة تمثيلية' },
+    { id: 'flyer', icon: 'campaign', fr: 'Flyer & Annonce', ar: 'إعلان ومطوية' },
   ];
 
   readonly themes: { id: InfographicTheme; icon: string; fr: string; ar: string; hintFr: string; hintAr: string }[] = [
@@ -500,6 +506,17 @@ export class InfographicStudioComponent implements OnInit {
     { cmd: '/comic', icon: 'forum', fr: 'BD', ar: 'قصة مصورة' },
     { cmd: '/timeline', icon: 'timeline', fr: 'Frise', ar: 'خط زمني' },
     { cmd: '/flashcards', icon: 'style', fr: 'Flashcards', ar: 'بطاقات' },
+    { cmd: '/cheatsheet', icon: 'fact_check', fr: 'Aide-mémoire', ar: 'ملخص مركز' },
+    { cmd: '/didyouknow', icon: 'lightbulb', fr: 'Le saviez-vous', ar: 'هل تعلم' },
+    { cmd: '/roadmap', icon: 'alt_route', fr: 'Feuille de route', ar: 'خارطة طريق' },
+    { cmd: '/tree', icon: 'account_tree', fr: 'Arbre', ar: 'شجرة تصنيف' },
+    { cmd: '/compare', icon: 'compare', fr: 'Comparatif', ar: 'مقارنة' },
+    { cmd: '/quizcard', icon: 'quiz', fr: 'Quiz QCM', ar: 'سؤال واختبار' },
+    { cmd: '/certificate', icon: 'workspace_premium', fr: 'Certificat', ar: 'شهادة تقدير' },
+    { cmd: '/venn', icon: 'join_inner', fr: 'Venn', ar: 'مجموعات فين' },
+    { cmd: '/idcard', icon: 'badge', fr: 'Fiche ID', ar: 'بطاقة هوية' },
+    { cmd: '/analogy', icon: 'sync_alt', fr: 'Analogie', ar: 'تمثيل' },
+    { cmd: '/flyer', icon: 'campaign', fr: 'Flyer', ar: 'إعلان' },
   ];
   readonly activeCommand = signal<VisualCommand | null>(null);
 
@@ -785,7 +802,19 @@ export class InfographicStudioComponent implements OnInit {
   /** Draws every block that asked for a picture, one at a time (free image providers rate-limit). */
   private async illustrateAll(doc: InfographicDoc) {
     const keyOf = (target: SpecImageTarget) =>
-      target.kind === 'hero' ? 'hero' : target.kind === 'problem' ? 'problem' : `${target.kind}-${target.index}`;
+      target.kind === 'hero'
+        ? 'hero'
+        : target.kind === 'problem'
+          ? 'problem'
+          : target.kind === 'quiz'
+            ? 'quiz'
+            : target.kind === 'idCard'
+              ? 'idCard'
+              : target.kind === 'analogy'
+                ? `analogy-${target.side}`
+                : target.kind === 'flyer'
+                  ? 'flyer'
+                  : `${target.kind}-${target.index}`;
     await this.store.illustrateInfographicAll(
       doc,
       (target) => this.illustrating.set(keyOf(target)),
@@ -814,7 +843,15 @@ export class InfographicStudioComponent implements OnInit {
         ? 'hero'
         : target.kind === 'problem'
           ? 'problem'
-          : `${target.kind}-${target.index}`;
+          : target.kind === 'quiz'
+            ? 'quiz'
+            : target.kind === 'idCard'
+              ? 'idCard'
+              : target.kind === 'analogy'
+                ? `analogy-${target.side}`
+                : target.kind === 'flyer'
+                  ? 'flyer'
+                  : `${target.kind}-${target.index}`;
     this.illustrating.set(targetKey);
     this.error.set(null);
 
@@ -826,7 +863,19 @@ export class InfographicStudioComponent implements OnInit {
           ? spec.items?.[target.index]
           : target.kind === 'column'
             ? spec.columns?.[target.index]
-            : spec.problem;
+            : target.kind === 'stage'
+              ? spec.stages?.[target.index]
+              : target.kind === 'problem'
+                ? spec.problem
+                : target.kind === 'quiz'
+                  ? spec.quiz
+                  : target.kind === 'idCard'
+                    ? spec.idCard
+                    : target.kind === 'analogy'
+                      ? spec.analogy?.[target.side]
+                      : target.kind === 'flyer'
+                        ? spec.flyer
+                        : undefined;
     const isVariation = Boolean(currentBlock?.imageUrl);
 
     const res = await this.store.illustrateInfographicBlock(d, target, isVariation);

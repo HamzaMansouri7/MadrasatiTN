@@ -10,7 +10,13 @@ export type InfographicPreset =
   | 'picture-rows'
   | 'steps-interface'
   | 'mindmap'
-  | 'flashcards';
+  | 'flashcards'
+  | 'quizcard'
+  | 'certificate'
+  | 'venn'
+  | 'idcard'
+  | 'analogy'
+  | 'flyer';
 
 /** Look of the sheet (design tokens only). Scoped to AI Studio sheets, never the app UI. */
 export type InfographicTheme =
@@ -39,6 +45,12 @@ export const INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'steps-interface',
   'mindmap',
   'flashcards',
+  'quizcard',
+  'certificate',
+  'venn',
+  'idcard',
+  'analogy',
+  'flyer',
 ];
 /**
  * Presets that have a renderer today. The model may only pick from these (schema enum + Auto list);
@@ -56,6 +68,12 @@ export const ENABLED_INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'steps-interface',
   'mindmap',
   'flashcards',
+  'quizcard',
+  'certificate',
+  'venn',
+  'idcard',
+  'analogy',
+  'flyer',
 ];
 export const INFOGRAPHIC_THEMES: readonly InfographicTheme[] = [
   'kids',
@@ -168,6 +186,93 @@ export interface SpecInterface {
   fields: SpecInterfaceField[];
 }
 
+export interface SpecQuizChoice {
+  id: string;
+  text: string;
+  isCorrect?: boolean;
+}
+
+export interface SpecQuiz {
+  question: string;
+  explanation: string;
+  choices: SpecQuizChoice[];
+  hint?: string;
+  wantsImage?: boolean;
+  imagePrompt?: string;
+  imageUrl?: string;
+}
+
+export interface SpecCertificate {
+  recipientTitle?: string;
+  grade?: string;
+  reason: string;
+  schoolYear?: string;
+  sealText?: string;
+}
+
+export interface SpecVennZone {
+  title: string;
+  items: string[];
+}
+
+export interface SpecVenn {
+  setA: SpecVennZone;
+  setB: SpecVennZone;
+  overlap: SpecVennZone;
+  setC?: SpecVennZone;
+}
+
+export interface SpecIdStat {
+  label: string;
+  value: string;
+  icon?: string;
+}
+
+export interface SpecIdCard {
+  entityName: string;
+  category: string;
+  scientificName?: string;
+  stats: SpecIdStat[];
+  facts: string[];
+  wantsImage?: boolean;
+  imagePrompt?: string;
+  imageUrl?: string;
+}
+
+export interface SpecAnalogySide {
+  concept: string;
+  description: string;
+  keyPoints: string[];
+  wantsImage?: boolean;
+  imagePrompt?: string;
+  imageUrl?: string;
+}
+
+export interface SpecAnalogy {
+  familiar: SpecAnalogySide;
+  abstract: SpecAnalogySide;
+  bridgeNote: string;
+}
+
+export interface SpecFlyerSection {
+  icon: string;
+  title: string;
+  details: string[];
+}
+
+export interface SpecFlyer {
+  badge: string;
+  eventTitle: string;
+  date: string;
+  time?: string;
+  location: string;
+  sections: SpecFlyerSection[];
+  notice?: string;
+  wantsImage?: boolean;
+  imagePrompt?: string;
+  imageUrl?: string;
+}
+
 export interface InfographicSpec {
   preset: InfographicPreset;
   title: string;
@@ -190,6 +295,18 @@ export interface InfographicSpec {
   problem?: SpecProblem;
   /** Simplified screen mockup for the steps-interface preset */
   interface?: SpecInterface;
+  /** Quiz MCQ review layout */
+  quiz?: SpecQuiz;
+  /** Certificate of achievement layout */
+  certificate?: SpecCertificate;
+  /** Venn comparison layout */
+  venn?: SpecVenn;
+  /** Identification and stats card layout */
+  idCard?: SpecIdCard;
+  /** Visual analogy bridge layout */
+  analogy?: SpecAnalogy;
+  /** School announcement flyer layout */
+  flyer?: SpecFlyer;
   /** One English sentence of lesson context (topic + key objects), prepended to every image prompt. */
   imageStory?: string;
   /** Per-doc image library carrying illustrations across layout switches */
@@ -214,4 +331,10 @@ export const PRESET_ITEM_LIMITS: Record<InfographicPreset, { min: number; max: n
   'steps-interface': { min: 3, max: 6 },
   mindmap: { min: 3, max: 8 },
   flashcards: { min: 4, max: 8 },
+  quizcard: { min: 0, max: 4 },
+  certificate: { min: 0, max: 3 },
+  venn: { min: 0, max: 4 },
+  idcard: { min: 0, max: 4 },
+  analogy: { min: 0, max: 4 },
+  flyer: { min: 0, max: 4 },
 };

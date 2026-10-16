@@ -13,6 +13,14 @@ import {
   SpecProblemTable,
   SpecQuote,
   SpecStage,
+  SpecQuiz,
+  SpecCertificate,
+  SpecVenn,
+  SpecVennZone,
+  SpecIdCard,
+  SpecAnalogy,
+  SpecAnalogySide,
+  SpecFlyer,
 } from '../models/infographic-spec.model';
 
 const SVG_TAGS = new Set([
@@ -296,11 +304,144 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
     }
   }
 
+  // Block presets (quizcard, certificate, venn, idcard, analogy, flyer): plain text only, drawn by our code.
+  const obj = (v: unknown): Record<string, unknown> | null => (v && typeof v === 'object' ? (v as Record<string, unknown>) : null);
+  const strList = (v: unknown, maxLen: number, maxCount: number): string[] =>
+    (Array.isArray(v) ? (v as unknown[]) : []).map((x) => clip(x, maxLen)).filter(Boolean).slice(0, maxCount);
+  const picture = (o: Record<string, unknown>) => ({
+    wantsImage: Boolean(o['wantsImage']) || undefined,
+    imagePrompt: o['wantsImage'] === false ? undefined : sanitizeImagePrompt(o['imagePrompt']),
+    imageUrl: sanitizeImageUrl(o['imageUrl']),
+  });
+
+  let quiz: SpecQuiz | undefined;
+  const quizRaw = obj(r['quiz']);
+  if (quizRaw) {
+    const choices = (Array.isArray(quizRaw['choices']) ? (quizRaw['choices'] as unknown[]) : [])
+      .map((c) => {
+        const co = obj(c);
+        const text = co ? clip(co['text'], 120) : '';
+        return co && text ? { text, isCorrect: co['isCorrect'] === true || undefined } : null;
+      })
+      .filter((c): c is NonNullable<typeof c> => c !== null)
+      .slice(0, 6)
+      .map((c, i) => ({ id: String.fromCharCode(65 + i), ...c }));
+    const question = clip(quizRaw['question'], 240);
+    if (question && choices.length >= 2) {
+      quiz = {
+        question,
+        explanation: clip(quizRaw['explanation'], 300),
+        hint: clip(quizRaw['hint'], 160) || undefined,
+        choices,
+        ...picture(quizRaw),
+      };
+    }
+  }
+
+  // Pupil name, teacher, school, date and signature stay blank lines or come from the author profile: never model text.
+  let certificate: SpecCertificate | undefined;
+  const certRaw = obj(r['certificate']);
+  const certReason = certRaw ? clip(certRaw['reason'], 240) : '';
+  if (certRaw && certReason) {
+    certificate = {
+      reason: certReason,
+      recipientTitle: clip(certRaw['recipientTitle'], 60) || undefined,
+      grade: clip(certRaw['grade'], 40) || undefined,
+      schoolYear: clip(certRaw['schoolYear'], 20) || undefined,
+      sealText: clip(certRaw['sealText'], 20) || undefined,
+    };
+  }
+
+  let venn: SpecVenn | undefined;
+  const vennRaw = obj(r['venn']);
+  if (vennRaw) {
+    const zone = (v: unknown): SpecVennZone | undefined => {
+      const z = obj(v);
+      const zTitle = z ? clip(z['title'], 40) : '';
+      return z && zTitle ? { title: zTitle, items: strList(z['items'], 60, 6) } : undefined;
+    };
+    const setA = zone(vennRaw['setA']);
+    const setB = zone(vennRaw['setB']);
+    if (setA && setB) {
+      venn = { setA, setB, overlap: zone(vennRaw['overlap']) ?? { title: '', items: [] }, setC: zone(vennRaw['setC']) };
+    }
+  }
+
+  let idCard: SpecIdCard | undefined;
+  const idRaw = obj(r['idCard']);
+  const entityName = idRaw ? clip(idRaw['entityName'], 60) : '';
+  if (idRaw && entityName) {
+    idCard = {
+      entityName,
+      category: clip(idRaw['category'], 60),
+      scientificName: clip(idRaw['scientificName'], 60) || undefined,
+      stats: (Array.isArray(idRaw['stats']) ? (idRaw['stats'] as unknown[]) : [])
+        .map((st) => {
+          const so = obj(st);
+          const label = so ? clip(so['label'], 40) : '';
+          const value = so ? clip(so['value'], 60) : '';
+          if (!so || !label || !value) return null;
+          const icon = typeof so['icon'] === 'string' && SPEC_ICONS.includes(so['icon']) ? so['icon'] : undefined;
+          return { label, value, icon };
+        })
+        .filter((st): st is NonNullable<typeof st> => st !== null)
+        .slice(0, 8),
+      facts: strList(idRaw['facts'], 140, 5),
+      ...picture(idRaw),
+    };
+  }
+
+  let analogy: SpecAnalogy | undefined;
+  const anRaw = obj(r['analogy']);
+  if (anRaw) {
+    const side = (v: unknown): SpecAnalogySide | undefined => {
+      const so = obj(v);
+      const concept = so ? clip(so['concept'], 60) : '';
+      return so && concept
+        ? { concept, description: clip(so['description'], 240), keyPoints: strList(so['keyPoints'], 100, 4), ...picture(so) }
+        : undefined;
+    };
+    const familiar = side(anRaw['familiar']);
+    const abstract = side(anRaw['abstract']);
+    if (familiar && abstract) analogy = { familiar, abstract, bridgeNote: clip(anRaw['bridgeNote'], 200) };
+  }
+
+  let flyer: SpecFlyer | undefined;
+  const flyRaw = obj(r['flyer']);
+  const eventTitle = flyRaw ? clip(flyRaw['eventTitle'], 80) : '';
+  if (flyRaw && eventTitle) {
+    flyer = {
+      badge: clip(flyRaw['badge'], 30),
+      eventTitle,
+      date: clip(flyRaw['date'], 40),
+      time: clip(flyRaw['time'], 30) || undefined,
+      location: clip(flyRaw['location'], 80),
+      sections: (Array.isArray(flyRaw['sections']) ? (flyRaw['sections'] as unknown[]) : [])
+        .map((sec) => {
+          const so = obj(sec);
+          const secTitle = so ? clip(so['title'], 50) : '';
+          if (!so || !secTitle) return null;
+          const icon = typeof so['icon'] === 'string' && SPEC_ICONS.includes(so['icon']) ? so['icon'] : 'star';
+          return { icon, title: secTitle, details: strList(so['details'], 120, 5) };
+        })
+        .filter((sec): sec is NonNullable<typeof sec> => sec !== null)
+        .slice(0, 4),
+      notice: clip(flyRaw['notice'], 200) || undefined,
+      ...picture(flyRaw),
+    };
+  }
+
   // Validate minimum requirements per preset
   if (preset === 'steps-interface' && !uiMock) return null;
   if (preset === 'comparison' && (columns?.length ?? 0) < 2) return null;
   if (preset === 'lesson-stages' && (stages?.length ?? 0) < 2) return null;
   if (preset === 'problem' && !problem?.situation && (problem?.questions?.length ?? 0) < 1) return null;
+  if (preset === 'quizcard' && !quiz) return null;
+  if (preset === 'certificate' && !certificate) return null;
+  if (preset === 'venn' && !venn) return null;
+  if (preset === 'idcard' && !idCard) return null;
+  if (preset === 'analogy' && !analogy) return null;
+  if (preset === 'flyer' && !flyer) return null;
   if (preset !== 'problem' && preset !== 'lesson-stages' && preset !== 'comparison' && items.length < min) return null;
 
   const imageStory = clip(r['imageStory'], 160);
@@ -339,6 +480,12 @@ export function normalizeInfographicSpec(raw: unknown, fallbackPreset: Infograph
     quote,
     problem,
     interface: uiMock,
+    quiz,
+    certificate,
+    venn,
+    idCard,
+    analogy,
+    flyer,
     imageStory: imageStory && !/[؀-ۿ]/.test(imageStory) ? imageStory : undefined,
     imageLibrary: Object.keys(imageLibrary).length ? imageLibrary : undefined,
   };

@@ -152,6 +152,140 @@ export const INFOGRAPHIC_SCHEMA = {
       },
       required: ['situation', 'questions', 'imagePrompt'],
     },
+    quiz: {
+      type: Type.OBJECT,
+      properties: {
+        question: STR,
+        explanation: STR,
+        hint: STR,
+        choices: {
+          type: Type.ARRAY,
+          items: {
+            type: Type.OBJECT,
+            properties: {
+              id: STR,
+              text: STR,
+              isCorrect: BOOL,
+            },
+            required: ['id', 'text', 'isCorrect'],
+          },
+        },
+        wantsImage: BOOL,
+        imagePrompt: STR,
+      },
+      required: ['question', 'explanation', 'choices'],
+    },
+    certificate: {
+      type: Type.OBJECT,
+      properties: {
+        recipientTitle: STR,
+        grade: STR,
+        reason: STR,
+        schoolYear: STR,
+        sealText: STR,
+      },
+      required: ['reason'],
+    },
+    venn: {
+      type: Type.OBJECT,
+      properties: {
+        setA: {
+          type: Type.OBJECT,
+          properties: { title: STR, items: { type: Type.ARRAY, items: STR } },
+          required: ['title', 'items'],
+        },
+        setB: {
+          type: Type.OBJECT,
+          properties: { title: STR, items: { type: Type.ARRAY, items: STR } },
+          required: ['title', 'items'],
+        },
+        overlap: {
+          type: Type.OBJECT,
+          properties: { title: STR, items: { type: Type.ARRAY, items: STR } },
+          required: ['title', 'items'],
+        },
+        setC: {
+          type: Type.OBJECT,
+          properties: { title: STR, items: { type: Type.ARRAY, items: STR } },
+        },
+      },
+      required: ['setA', 'setB', 'overlap'],
+    },
+    idCard: {
+      type: Type.OBJECT,
+      properties: {
+        entityName: STR,
+        category: STR,
+        scientificName: STR,
+        stats: {
+          type: Type.ARRAY,
+          items: {
+            type: Type.OBJECT,
+            properties: { label: STR, value: STR, icon: STR },
+            required: ['label', 'value'],
+          },
+        },
+        facts: { type: Type.ARRAY, items: STR },
+        wantsImage: BOOL,
+        imagePrompt: STR,
+      },
+      required: ['entityName', 'category', 'stats', 'facts'],
+    },
+    analogy: {
+      type: Type.OBJECT,
+      properties: {
+        familiar: {
+          type: Type.OBJECT,
+          properties: {
+            concept: STR,
+            description: STR,
+            keyPoints: { type: Type.ARRAY, items: STR },
+            wantsImage: BOOL,
+            imagePrompt: STR,
+          },
+          required: ['concept', 'description', 'keyPoints'],
+        },
+        abstract: {
+          type: Type.OBJECT,
+          properties: {
+            concept: STR,
+            description: STR,
+            keyPoints: { type: Type.ARRAY, items: STR },
+            wantsImage: BOOL,
+            imagePrompt: STR,
+          },
+          required: ['concept', 'description', 'keyPoints'],
+        },
+        bridgeNote: STR,
+      },
+      required: ['familiar', 'abstract', 'bridgeNote'],
+    },
+    flyer: {
+      type: Type.OBJECT,
+      properties: {
+        badge: STR,
+        eventTitle: STR,
+        date: STR,
+        time: STR,
+        location: STR,
+        sections: {
+          type: Type.ARRAY,
+          items: {
+            type: Type.OBJECT,
+            properties: {
+              icon: STR,
+              title: STR,
+              details: { type: Type.ARRAY, items: STR },
+            },
+            required: ['icon', 'title', 'details'],
+          },
+        },
+        notice: STR,
+        wantsImage: BOOL,
+        imagePrompt: STR,
+      },
+      required: ['badge', 'eventTitle', 'date', 'location', 'sections'],
+    },
   },
   required: ['preset', 'title', 'items', 'remember'],
 };
@@ -178,6 +312,18 @@ const PRESET_BRIEF: Record<InfographicPreset, string> = {
     'steps-interface : tutoriel pas à pas ou guide d’un outil numérique / démarche concrète ; chaque item = une étape numérotée (title court, text = consigne) ; remplis "interface" avec l’écran simplifié de l’outil ou formulaire (appName, 1 à 4 tabs, 2 à 4 fields).',
   problem:
     'problem : وضعية مشكل / situation problème avec données textuelles, tableau de données numériques si pertinent, et questions de calcul/réflexion avec lignes d’écriture pour les élèves.',
+  quizcard:
+    'quizcard : fiche question à choix multiples (QCM) ; remplis "quiz" avec la question, 4 choix précis (A, B, C, D dont un seul isCorrect=true), explication détaillée et indice pédagogique.',
+  certificate:
+    'certificate : certificat d’encouragement imprimable A4, entièrement dans la langue demandée ; remplis "certificate" avec le motif d’attribution (reason, une phrase), recipientTitle (titre court), sealText (1 ou 2 mots) ; grade et schoolYear seulement si l’enseignant les donne (schoolYear au format 2025-2026), sinon vides ; ne mets jamais de nom d’élève, d’enseignant ou d’école (lignes laissées vides).',
+  venn:
+    'venn : diagramme de Venn avec ensembles sécants ; remplis "venn" avec setA (titre + items), setB (titre + items) et overlap (caractéristiques communes / intersections).',
+  idcard:
+    'idcard : fiche d’identité ou carte signalétique (animal, végétal, personnage historique ou élément scientifique) ; remplis "idCard" avec entityName, category, stats et faits marquants.',
+  analogy:
+    'analogy : comparaison par analogie visuelle reliant un fait familier du quotidien à une notion abstraite complexe ; remplis "analogy" avec familiar, abstract et bridgeNote.',
+  flyer:
+    'flyer : affiche ou annonce scolaire pour un événement, une sortie ou un projet ; remplis "flyer" avec badge, eventTitle, date, lieu, sections de programme et consigne aux parents. N’invente jamais une date, une heure, un horaire ou une échéance : si l’enseignant ne les donne pas, écris « ........ » à leur place.',
 };
 
 export const infographicSkill: Skill<InfographicSkillInput> = {
@@ -201,6 +347,12 @@ Règles de choix (seulement parmi les presets listés ci-dessus) :
 - Déroulement d'apprentissage maître / élève -> lesson-stages
 - Scène centrale illustrée, planche anatomique ou vue écorchée / comment ça marche -> central-picture
 - Tutoriel pratique pas à pas ou utilisation d'un outil numérique -> steps-interface
+- QCM, évaluation formative ou question à choix multiples -> quizcard
+- Certificat d'encouragement, diplôme ou شهادة تقدير -> certificate
+- Comparaison d'ensembles avec zone d'intersection ou similitudes -> venn
+- Fiche d'identité d'un animal, plante, personnage ou objet scientifique -> idcard
+- Explication par analogie ou métaphore concrète -> analogy
+- Affiche d'événement, sortie scolaire ou annonce -> flyer
 - Notion clé avec 3 à 6 exemples fondamentaux -> hero-cards
 - Si le contenu dépasse le maximum de cartes d'un preset, choisis un autre preset : ne fusionne jamais.`;
 

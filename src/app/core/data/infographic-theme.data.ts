@@ -478,5 +478,10 @@ export type SpecImageTarget =
   | { kind: 'item'; index: number }
   | { kind: 'column'; index: number }
   | { kind: 'stage'; index: number }
-  | { kind: 'problem' };
+  | { kind: 'problem' }
+  | { kind: 'quiz' }
+  | { kind: 'idCard' }
+  | { kind: 'analogy'; side: 'familiar' | 'abstract' }
+  | { kind: 'flyer' };
+
 

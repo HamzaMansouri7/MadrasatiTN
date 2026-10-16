@@ -12,7 +12,18 @@ export type VisualCommand =
   | '/timeline'
   | '/flashcards'
   | '/cycle'
-  | '/steps';
+  | '/steps'
+  | '/cheatsheet'
+  | '/didyouknow'
+  | '/roadmap'
+  | '/tree'
+  | '/compare'
+  | '/quizcard'
+  | '/certificate'
+  | '/venn'
+  | '/idcard'
+  | '/analogy'
+  | '/flyer';
 
 export interface VisualImageSlot {
   name: string;

@@ -12,6 +12,12 @@ import { PresetPictureRowsComponent } from './presets/preset-picture-rows';
 import { PresetStepsInterfaceComponent } from './presets/preset-steps-interface';
 import { PresetMindmapComponent } from './presets/preset-mindmap';
 import { PresetFlashcardsComponent } from './presets/preset-flashcards';
+import { PresetQuizcardComponent } from './presets/preset-quizcard';
+import { PresetCertificateComponent } from './presets/preset-certificate';
+import { PresetVennComponent } from './presets/preset-venn';
+import { PresetIdcardComponent } from './presets/preset-idcard';
+import { PresetAnalogyComponent } from './presets/preset-analogy';
+import { PresetFlyerComponent } from './presets/preset-flyer';
 
 /**
  * Draws an AI Studio spec on an A4 sheet. The model only picks a preset and fills text;
@@ -34,6 +40,12 @@ import { PresetFlashcardsComponent } from './presets/preset-flashcards';
     PresetStepsInterfaceComponent,
     PresetMindmapComponent,
     PresetFlashcardsComponent,
+    PresetQuizcardComponent,
+    PresetCertificateComponent,
+    PresetVennComponent,
+    PresetIdcardComponent,
+    PresetAnalogyComponent,
+    PresetFlyerComponent,
   ],
   host: {
     '[attr.data-theme]': 'theme()',
@@ -436,6 +448,60 @@ import { PresetFlashcardsComponent } from './presets/preset-flashcards';
               [illustrating]="illustrating()"
               (illustrate)="illustrate.emit($event)">
             </app-preset-flashcards>
+          }
+          @case ('quizcard') {
+            <app-preset-quizcard
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-quizcard>
+          }
+          @case ('certificate') {
+            <app-preset-certificate
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-certificate>
+          }
+          @case ('venn') {
+            <app-preset-venn
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-venn>
+          }
+          @case ('idcard') {
+            <app-preset-idcard
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-idcard>
+          }
+          @case ('analogy') {
+            <app-preset-analogy
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-analogy>
+          }
+          @case ('flyer') {
+            <app-preset-flyer
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-flyer>
           }
           @default {
             <app-preset-hero-cards

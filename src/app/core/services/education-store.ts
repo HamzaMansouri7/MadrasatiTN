@@ -1529,6 +1529,11 @@ export class EducationStore {
     spec.columns?.forEach((c, i) => needs(c) && out.push({ kind: 'column', index: i }));
     spec.stages?.forEach((st, i) => needs(st) && out.push({ kind: 'stage', index: i }));
     if (needs(spec.problem)) out.push({ kind: 'problem' });
+    if (needs(spec.quiz)) out.push({ kind: 'quiz' });
+    if (needs(spec.idCard)) out.push({ kind: 'idCard' });
+    if (needs(spec.analogy?.familiar)) out.push({ kind: 'analogy', side: 'familiar' });
+    if (needs(spec.analogy?.abstract)) out.push({ kind: 'analogy', side: 'abstract' });
+    if (needs(spec.flyer)) out.push({ kind: 'flyer' });
     return out;
   }
 
@@ -1570,7 +1575,17 @@ export class EducationStore {
             ? spec.columns?.[target.index]
             : target.kind === 'stage'
               ? spec.stages?.[target.index]
-              : spec.problem;
+              : target.kind === 'problem'
+                ? spec.problem
+                : target.kind === 'quiz'
+                  ? spec.quiz
+                  : target.kind === 'idCard'
+                    ? spec.idCard
+                    : target.kind === 'analogy'
+                      ? spec.analogy?.[target.side]
+                      : target.kind === 'flyer'
+                        ? spec.flyer
+                        : undefined;
     const prompt = block?.imagePrompt?.trim();
     if (!block || !prompt) return { ok: false, error: 'Aucune description d’image pour ce bloc.' };
 
@@ -1628,10 +1643,38 @@ export class EducationStore {
         stages: (spec.stages ?? []).map((st, i) => (i === target.index ? (withImage as typeof st) : st)),
         imageLibrary: updatedLib,
       };
-    } else {
+    } else if (target.kind === 'problem') {
       updatedValues = {
         ...spec,
         problem: withImage as InfographicSpec['problem'],
+        imageLibrary: updatedLib,
+      };
+    } else if (target.kind === 'quiz') {
+      updatedValues = {
+        ...spec,
+        quiz: withImage as InfographicSpec['quiz'],
+        imageLibrary: updatedLib,
+      };
+    } else if (target.kind === 'idCard') {
+      updatedValues = {
+        ...spec,
+        idCard: withImage as InfographicSpec['idCard'],
+        imageLibrary: updatedLib,
+      };
+    } else if (target.kind === 'analogy') {
+      const currentAnalogy = spec.analogy!;
+      updatedValues = {
+        ...spec,
+        analogy: {
+          ...currentAnalogy,
+          [target.side]: withImage,
+        },
+        imageLibrary: updatedLib,
+      };
+    } else {
+      updatedValues = {
+        ...spec,
+        flyer: withImage as InfographicSpec['flyer'],
         imageLibrary: updatedLib,
       };
     }

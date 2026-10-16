@@ -350,3 +350,42 @@ describe('picture-rows, keyword and instruction', () => {
     expect(rows('balaie')?.items[0].keyword).toBeUndefined();
   });
 });
+
+describe('normalizeInfographicSpec block presets', () => {
+  const base = (preset: string, extra: Record<string, unknown>) =>
+    normalizeInfographicSpec({ preset, title: 'Titre', items: [], remember: [], ...extra });
+
+  it('keeps a quiz and relabels choices A, B, C', () => {
+    const spec = base('quizcard', {
+      quiz: { question: 'Combien ?', explanation: 'Parce que.', choices: [{ id: 'x', text: '3', isCorrect: true }, { text: '4' }, { text: '' }] },
+    });
+    expect(spec?.quiz?.choices.map((c) => c.id)).toEqual(['A', 'B']);
+    expect(spec?.quiz?.choices[0].isCorrect).toBe(true);
+  });
+
+  it('rejects a quiz preset without a usable quiz', () => {
+    expect(base('quizcard', { quiz: { question: 'Q', choices: [{ text: 'seul' }] } })).toBeNull();
+  });
+
+  it('never keeps model-written names on a certificate', () => {
+    const spec = base('certificate', { certificate: { reason: 'Bon travail', teacherName: 'Inventé', studentNamePlaceholder: 'Ali' } });
+    expect(spec?.certificate).toEqual({ reason: 'Bon travail', recipientTitle: undefined, grade: undefined, schoolYear: undefined, sealText: undefined });
+  });
+
+  it('keeps venn sets and fills a missing overlap', () => {
+    const spec = base('venn', { venn: { setA: { title: 'A', items: ['a'] }, setB: { title: 'B', items: ['b'] } } });
+    expect(spec?.venn?.overlap).toEqual({ title: '', items: [] });
+  });
+
+  it('keeps id card, analogy and flyer blocks', () => {
+    expect(base('idcard', { idCard: { entityName: 'Chameau', category: 'Mammifère', stats: [{ label: 'Poids', value: '500 kg' }], facts: ['f'] } })?.idCard?.stats).toHaveLength(1);
+    const side = (c: string) => ({ concept: c, description: 'd', keyPoints: ['k'] });
+    expect(base('analogy', { analogy: { familiar: side('Pompe'), abstract: side('Cœur'), bridgeNote: 'b' } })?.analogy?.abstract.concept).toBe('Cœur');
+    expect(base('flyer', { flyer: { badge: 'Sortie', eventTitle: 'Visite', date: 'Lundi', location: 'Musée', sections: [{ icon: 'nope', title: 'Prévoir', details: ['eau'] }] } })?.flyer?.sections[0].icon).toBe('star');
+  });
+
+  it('sanitizes block image urls', () => {
+    const spec = base('idcard', { idCard: { entityName: 'X', category: 'Y', stats: [], facts: [], imageUrl: 'javascript:alert(1)' } });
+    expect(spec?.idCard?.imageUrl).toBeUndefined();
+  });
+});

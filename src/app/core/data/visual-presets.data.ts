@@ -424,6 +424,387 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
         'Automatically choose the most appropriate number of steps, interface fields, icons, and supporting visual elements according to the topic.'
       ),
   },
+
+  '/cheatsheet': {
+    command: '/cheatsheet',
+    name: 'Cheat Sheet / Fiche Mémo',
+    nameFr: 'Fiche Mémo / Aide-mémoire',
+    nameAr: 'بطاقة تلخيص ومراجعة مركزة',
+    summary: 'Condensed summary card packed with essential definitions, formulas, rules and practical examples for fast exam revision.',
+    basePrompt: 'Create a dense, high-yield educational revision cheat sheet with essential rules, formulas, key definitions, and quick examples.',
+    styleBlock:
+      'Cheat Sheet — high-density educational study fiche with structured cards, bold mnemonic keywords, clear rules, highlighted formulas, and compact examples designed for rapid review.',
+    themeId: 'fiche',
+    presetId: 'hero-cards',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'concept-diagram',
+        description: 'Text-free summary schematic or memory anchor icon',
+        count: 1,
+        textFree: true,
+      },
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Subject or chapter title', required: true },
+      { name: 'subtitle', type: 'string', description: 'Cheat sheet focus or exam level', required: true },
+      { name: 'cards', type: 'Array<{title: string, text: string, icon?: string}>', description: 'Dense rule and definition cards', required: true },
+      { name: 'remember', type: 'string[]', description: 'Essential points to memorize', required: true },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Cheat Sheet — high-density educational study fiche with structured cards, bold mnemonic keywords, clear rules, highlighted formulas, and compact examples designed for rapid review.',
+        'Automatically choose the most appropriate number of cards, rules, icons, and supporting visual elements according to the topic.'
+      ),
+  },
+
+  '/didyouknow': {
+    command: '/didyouknow',
+    name: 'Did You Know?',
+    nameFr: 'Le Saviez-Vous ?',
+    nameAr: 'هل تعلم ؟ حقائق مدهشة',
+    summary: 'Captivating central discovery image surrounded by fascinating, surprising scientific and cultural facts with explanatory cards.',
+    basePrompt: 'Create an engaging educational fact-sheet centered around a striking discovery visual with surprising and verified scientific facts.',
+    styleBlock:
+      'Did You Know — captivating central illustration surrounded by curious, unexpected, and educational facts that ignite curiosity and scientific exploration.',
+    themeId: 'kids',
+    presetId: 'central-picture',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'central-discovery',
+        description: 'Vibrant text-free visual depicting the scientific wonder or historical curiosity',
+        count: 1,
+        textFree: true,
+      },
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Curiosity theme title', required: true },
+      { name: 'subtitle', type: 'string', description: 'Surprising question or inquiry hook' },
+      { name: 'facts', type: 'Array<{title: string, text: string, icon: string}>', description: 'Curious facts explained simply', required: true },
+      { name: 'takeaway', type: 'string', description: 'Inspiring summary message' },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Did You Know — captivating central illustration surrounded by curious, unexpected, and educational facts that ignite curiosity and scientific exploration.',
+        'Automatically choose the most appropriate number of facts, cards, icons, and supporting visual elements according to the topic.'
+      ),
+  },
+
+  '/roadmap': {
+    command: '/roadmap',
+    name: 'Learning Roadmap',
+    nameFr: 'Feuille de Route & Progression',
+    nameAr: 'خارطة طريق تعليمية',
+    summary: 'Milestone-driven pedagogical roadmap mapping progressive competencies, skill checkpoints, and term objectives.',
+    basePrompt: 'Create a progressive learning roadmap with ordered chronological stages, milestones, prerequisites, and competency checkpoints.',
+    styleBlock:
+      'Roadmap — structured sequential progression timeline with ordered competency milestones, skill badges, and clear progressive steps toward learning mastery.',
+    themeId: 'official',
+    presetId: 'timeline',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'milestone-icons',
+        description: 'Text-free milestone icons for key checkpoints',
+        count: 3,
+        textFree: true,
+      },
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Competency path or project roadmap title', required: true },
+      { name: 'subtitle', type: 'string', description: 'Learning goal or curriculum period' },
+      { name: 'milestones', type: 'Array<{stepNumber: number, title: string, text: string, icon?: string}>', description: 'Ordered milestone progression', required: true },
+      { name: 'finalGoal', type: 'string', description: 'Ultimate mastery milestone' },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Roadmap — structured sequential progression timeline with ordered competency milestones, skill badges, and clear progressive steps toward learning mastery.',
+        'Automatically choose the most appropriate number of milestones, badges, and supporting visual elements according to the topic.'
+      ),
+  },
+
+  '/tree': {
+    command: '/tree',
+    name: 'Tree Diagram',
+    nameFr: 'Arbre des Concepts & Taxonomie',
+    nameAr: 'شجرة المفاهيم والتصنيف',
+    summary: 'Hierarchical tree classification branching from a root concept into thematic categories, sub-families, and concrete examples.',
+    basePrompt: 'Create a hierarchical tree classification structure branching from a core concept into sub-categories and concrete examples.',
+    styleBlock:
+      'Tree Diagram — hierarchical branching concept tree radiating from a root node into thematic branches, sub-categories, and concrete pedagogical instances.',
+    themeId: 'kids',
+    presetId: 'mindmap',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'root-icon',
+        description: 'Text-free central root emblem or classification subject icon',
+        count: 1,
+        textFree: true,
+      },
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Root taxonomy or classification subject', required: true },
+      { name: 'rootConcept', type: 'string', description: 'Central core node', required: true },
+      { name: 'branches', type: 'Array<{title: string, items: string[], icon?: string}>', description: 'Branching sub-families and examples', required: true },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Tree Diagram — hierarchical branching concept tree radiating from a root node into thematic branches, sub-categories, and concrete pedagogical instances.',
+        'Automatically choose the most appropriate number of branches, nodes, icons, and supporting visual elements according to the topic.'
+      ),
+  },
+
+  '/compare': {
+    command: '/compare',
+    name: 'Comparison Matrix',
+    nameFr: 'Tableau Comparatif A vs B',
+    nameAr: 'جدول مقارنة بين مفهومين',
+    summary: 'Side-by-side comparison matrix highlighting differences, distinct properties, and common features between two entities.',
+    basePrompt: 'Create a structured side-by-side comparison between two entities, highlighting distinctive differences and shared commonalities.',
+    styleBlock:
+      'Comparison Matrix — balanced two-column comparison layout with color-coded side-by-side attributes, distinct characteristics, and shared commonalities.',
+    themeId: 'kids',
+    presetId: 'comparison',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'side-a-image',
+        description: 'Text-free visual depiction of entity A',
+        count: 1,
+        textFree: true,
+      },
+      {
+        name: 'side-b-image',
+        description: 'Text-free visual depiction of entity B',
+        count: 1,
+        textFree: true,
+      },
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Comparison topic (e.g. Vertébrés vs Invertébrés)', required: true },
+      { name: 'sideA', type: '{title: string, points: string[]}', description: 'Entity A properties', required: true },
+      { name: 'sideB', type: '{title: string, points: string[]}', description: 'Entity B properties', required: true },
+      { name: 'common', type: 'string[]', description: 'Shared common traits' },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Comparison Matrix — balanced two-column comparison layout with color-coded side-by-side attributes, distinct characteristics, and shared commonalities.',
+        'Automatically choose the most appropriate number of comparison points, icons, and supporting visual elements according to the topic.'
+      ),
+  },
+
+  '/quizcard': {
+    command: '/quizcard',
+    name: 'Quiz & MCQ Card',
+    nameFr: 'Fiche QCM & Quiz',
+    nameAr: 'بطاقة سؤال واختبار متعدد الخيارات',
+    summary: 'Formative multiple choice evaluation card with question prompt, 4 clear choice options, pedagogical hint, and step-by-step explanation.',
+    basePrompt: 'Create a formative multiple-choice question card with a clear question, 4 distinct choices, an answer key, and an explanatory note.',
+    styleBlock:
+      'Quiz Card — formative multiple-choice question layout with high-contrast choices, letter bubbles, helpful hint, and detailed solution explanation.',
+    themeId: 'lilac',
+    presetId: 'quizcard',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'question-illustration',
+        description: 'Text-free illustration setting the problem context or scenario',
+        count: 1,
+        textFree: true,
+      },
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Quiz topic or concept tested', required: true },
+      { name: 'question', type: 'string', description: 'Clear question statement', required: true },
+      { name: 'choices', type: 'Array<{id: string, text: string, isCorrect: boolean}>', description: '4 answer choices', required: true },
+      { name: 'explanation', type: 'string', description: 'Correction and pedagogical reason', required: true },
+      { name: 'hint', type: 'string', description: 'Helpful hint for reflection' },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Quiz Card — formative multiple-choice question layout with high-contrast choices, letter bubbles, helpful hint, and detailed solution explanation.',
+        'Automatically choose the most appropriate question, choices, hint, and supporting visual elements according to the topic.'
+      ),
+  },
+
+  '/certificate': {
+    command: '/certificate',
+    name: 'Certificate of Achievement',
+    nameFr: "Certificat de Réussite & d'Excellence",
+    nameAr: 'شهادة تقدير وتشجيع وتفوق',
+    summary: 'Commemorative A4 certificate and diploma with ornate official borders, student recipient line, commendation reason, and teacher signature seal.',
+    basePrompt: 'Create a formal commemorative certificate of achievement with ornate official borders, student recipient line, pedagogical citation, and seal.',
+    styleBlock:
+      'Certificate — formal commemorative diploma layout with ornate decorative borders, official header, student name line, commendation text, signature zone, and official seal.',
+    themeId: 'official',
+    presetId: 'certificate',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Certificate title', required: true },
+      { name: 'reason', type: 'string', description: 'Commendation reason or pedagogical merit', required: true },
+      { name: 'grade', type: 'string', description: 'Class level' },
+      { name: 'schoolYear', type: 'string', description: 'School year' },
+      { name: 'teacherName', type: 'string', description: 'Teacher name' },
+      { name: 'schoolName', type: 'string', description: 'School name' },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Certificate — formal commemorative diploma layout with ornate decorative borders, official header, student name line, commendation text, signature zone, and official seal.',
+        'Automatically choose the most appropriate title, commendation citation, honorific wording, and supporting elements according to the topic.'
+      ),
+  },
+
+  '/venn': {
+    command: '/venn',
+    name: 'Venn Diagram',
+    nameFr: 'Diagramme de Venn',
+    nameAr: 'مخطط مجموعات فين المتداخلة',
+    summary: 'Intersecting conceptual sets diagram comparing two or three categories with distinct attributes and a central shared intersection zone.',
+    basePrompt: 'Create a Venn diagram comparing concepts through overlapping sets with distinct traits and shared intersection points.',
+    styleBlock:
+      'Venn Diagram — intersecting mathematical or conceptual set diagram with distinct attribute chips for each set and an overlapping common zone.',
+    themeId: 'kids',
+    presetId: 'venn',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Venn comparison title', required: true },
+      { name: 'setA', type: '{title: string, items: string[]}', description: 'Set A unique traits', required: true },
+      { name: 'setB', type: '{title: string, items: string[]}', description: 'Set B unique traits', required: true },
+      { name: 'overlap', type: '{title: string, items: string[]}', description: 'Intersection shared traits', required: true },
+      { name: 'setC', type: '{title: string, items: string[]}', description: 'Optional third set traits' },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Venn Diagram — intersecting mathematical or conceptual set diagram with distinct attribute chips for each set and an overlapping common zone.',
+        'Automatically choose the most appropriate sets, intersection traits, chips, and supporting visual elements according to the topic.'
+      ),
+  },
+
+  '/idcard': {
+    command: '/idcard',
+    name: 'ID & Classification Card',
+    nameFr: "Fiche Signalétique & Carte d'Identité",
+    nameAr: 'بطاقة هوية وتعريف علمية',
+    summary: 'Identity card for animals, plants, historical personalities, or scientific entities with portrait slot, key stats grid, and curious facts.',
+    basePrompt: 'Create an identity sheet and classification profile for an animal, plant, historic figure, or scientific subject with key statistics and facts.',
+    styleBlock:
+      'ID Card — structured identification card layout featuring a subject photo or emblem, classification category, key statistic badges with icons, and did-you-know facts.',
+    themeId: 'encyclopedia',
+    presetId: 'idcard',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'entity-portrait',
+        description: 'Text-free portrait or natural habitat photo of the subject',
+        count: 1,
+        textFree: true,
+      },
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Sheet title', required: true },
+      { name: 'entityName', type: 'string', description: 'Name of the animal, plant or figure', required: true },
+      { name: 'category', type: 'string', description: 'Classification group or domain', required: true },
+      { name: 'scientificName', type: 'string', description: 'Scientific Latin name or title' },
+      { name: 'stats', type: 'Array<{label: string, value: string, icon?: string}>', description: 'Key quantitative attributes', required: true },
+      { name: 'facts', type: 'string[]', description: 'Curious facts or behavioral observations', required: true },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'ID Card — structured identification card layout featuring a subject photo or emblem, classification category, key statistic badges with icons, and did-you-know facts.',
+        'Automatically choose the most appropriate statistics, facts, icons, and supporting visual elements according to the topic.'
+      ),
+  },
+
+  '/analogy': {
+    command: '/analogy',
+    name: 'Visual Analogy Bridge',
+    nameFr: "Pont d'Analogie Visuelle",
+    nameAr: 'المقاربة التمثيلية وجسر التشبيه',
+    summary: 'Two-panel analogy bridge linking an everyday familiar situation to an abstract or complex scientific concept with a connective bridge note.',
+    basePrompt: 'Create a pedagogical analogy bridging an everyday familiar concept to an abstract scientific or mathematical concept with a connecting explanation.',
+    styleBlock:
+      'Analogy — visual bridge layout connecting a familiar everyday metaphor on one side to an abstract curriculum concept on the other, unified by a central analogy banner.',
+    themeId: 'comic',
+    presetId: 'analogy',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'familiar-image',
+        description: 'Text-free illustration of the familiar everyday metaphor',
+        count: 1,
+        textFree: true,
+      },
+      {
+        name: 'abstract-image',
+        description: 'Text-free illustration of the scientific or abstract concept',
+        count: 1,
+        textFree: true,
+      },
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Lesson topic', required: true },
+      { name: 'familiar', type: '{concept: string, description: string, keyPoints: string[]}', description: 'Everyday intuitive model', required: true },
+      { name: 'abstract', type: '{concept: string, description: string, keyPoints: string[]}', description: 'Scientific concept being taught', required: true },
+      { name: 'bridgeNote', type: 'string', description: 'Core analogy rule connecting both concepts', required: true },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Analogy — visual bridge layout connecting a familiar everyday metaphor on one side to an abstract curriculum concept on the other, unified by a central analogy banner.',
+        'Automatically choose the most appropriate analogy sides, key points, icons, and supporting visual elements according to the topic.'
+      ),
+  },
+
+  '/flyer': {
+    command: '/flyer',
+    name: 'School Flyer & Event Poster',
+    nameFr: 'Affiche & Annonce Scolaire',
+    nameAr: 'إعلان ومطوية مدرسية',
+    summary: 'School announcement flyer and event poster featuring event title, logistics bar (date, time, place), program sections, and parent reminder notice.',
+    basePrompt: 'Create a vibrant school announcement flyer with event title, logistics badges, program sections, and instructions for parents.',
+    styleBlock:
+      'Flyer — school announcement and event poster layout with eye-catching header badge, logistics pills (date, time, location), structured detail cards, and parent notice banner.',
+    themeId: 'poster',
+    presetId: 'flyer',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'event-banner',
+        description: 'Text-free celebration or event thematic illustration',
+        count: 1,
+        textFree: true,
+      },
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Sheet title', required: true },
+      { name: 'badge', type: 'string', description: 'Event category badge', required: true },
+      { name: 'eventTitle', type: 'string', description: 'Main event title', required: true },
+      { name: 'date', type: 'string', description: 'Event date', required: true },
+      { name: 'time', type: 'string', description: 'Event time' },
+      { name: 'location', type: 'string', description: 'Event place or classroom', required: true },
+      { name: 'sections', type: 'Array<{icon: string, title: string, details: string[]}>', description: 'Program details and requirements', required: true },
+      { name: 'notice', type: 'string', description: 'Parent signature notice or important reminder' },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Flyer — school announcement and event poster layout with eye-catching header badge, logistics pills (date, time, location), structured detail cards, and parent notice banner.',
+        'Automatically choose the most appropriate event sections, logistics details, icons, and supporting visual elements according to the topic.'
+      ),
+  },
 };
 
 export const parseVisualCommand = (input: string): { command: VisualCommand; topic: string } | null => {
