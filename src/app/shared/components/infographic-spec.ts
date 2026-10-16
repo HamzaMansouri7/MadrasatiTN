@@ -35,7 +35,11 @@ import { PresetFlashcardsComponent } from './presets/preset-flashcards';
     PresetMindmapComponent,
     PresetFlashcardsComponent,
   ],
-  host: { '[attr.data-theme]': 'theme()', '[style]': 'themeVars()' },
+  host: {
+    '[attr.data-theme]': 'theme()',
+    '[attr.data-season]': 'season()',
+    '[style]': 'themeVars()',
+  },
   styles: `
     :host { display: block; }
     .ig-sheet {
@@ -133,6 +137,63 @@ import { PresetFlashcardsComponent } from './presets/preset-flashcards';
     .ig-sheet[data-frame='boxed'] { border: 2px solid var(--ig-border); border-radius: 18px; }
     .ig-sheet[data-frame='boxed'] .ig-accent-bar { display: none; }
     .ig-sheet[data-frame='boxed'] .ig-strip { background: var(--ig-hero); }
+
+    /* Blackboard frame: dark slate chalkboard with wooden trim */
+    .ig-sheet[data-frame='blackboard'] {
+      background-color: var(--ig-bg);
+      background-image:
+        radial-gradient(circle at 50% 25%, rgba(255, 255, 255, 0.04) 0%, transparent 60%),
+        repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.01) 0, rgba(255, 255, 255, 0.01) 1px, transparent 0, transparent 8px);
+      border: 5px solid #453224;
+      border-radius: 12px;
+      box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.18);
+    }
+    .ig-sheet[data-frame='blackboard'] .ig-accent-bar {
+      height: 5px;
+      background: linear-gradient(90deg, #FFE066 0%, #8CE99A 33%, #74C0FC 66%, #FFA8A8 100%);
+    }
+
+    /* Herbarium frame: vintage pressed botanical specimen plate */
+    .ig-sheet[data-frame='herbarium'] {
+      background-color: var(--ig-bg);
+      background-image:
+        radial-gradient(#C6D6BF 0.8px, transparent 0.8px),
+        linear-gradient(to right, rgba(143, 175, 137, 0.04) 1px, transparent 1px);
+      background-size: 20px 20px, 40px 40px;
+      border: 2.5px solid var(--ig-border);
+      outline: 1px dashed var(--ig-border);
+      outline-offset: -7px;
+    }
+    .ig-sheet[data-frame='herbarium'] .ig-accent-bar {
+      height: 5px;
+      background: linear-gradient(90deg, #4F772D 0%, #E9C46A 35%, #C86D51 70%, #8C2D40 100%);
+    }
+
+    /* Encyclopedia frame: classic vintage book plate with double rule */
+    .ig-sheet[data-frame='encyclopedia'] {
+      background-color: var(--ig-bg);
+      background-image:
+        linear-gradient(to bottom, rgba(203, 191, 168, 0.09) 1px, transparent 1px);
+      background-size: 100% 26px;
+      border: 3.5px double var(--ig-border);
+      border-radius: 6px;
+      box-shadow: inset 0 0 30px rgba(180, 160, 130, 0.08), 0 4px 16px rgba(0, 0, 0, 0.04);
+    }
+    .ig-sheet[data-frame='encyclopedia'] .ig-accent-bar {
+      height: 4px;
+      background: linear-gradient(90deg, #871F28 0%, #C27827 50%, #1D3557 100%);
+    }
+
+    /* Seasons frame: seasonal nature card */
+    .ig-sheet[data-frame='seasons'] {
+      background-color: var(--ig-bg);
+      border: 2px solid var(--ig-border);
+      border-radius: var(--ig-radius);
+    }
+    .ig-sheet[data-frame='seasons'] .ig-accent-bar {
+      height: 6px;
+      background: linear-gradient(90deg, var(--ig-a) 0%, var(--ig-b) 33%, var(--ig-c) 66%, var(--ig-d) 100%);
+    }
 
     /* Fiche header: date | title | grade, three cells in one bordered strip. */
     .ig-strip {
@@ -434,7 +495,8 @@ export class InfographicSpecComponent {
   readonly illustrate = output<SpecImageTarget>();
 
   readonly spec = computed(() => this.doc().values as unknown as InfographicSpec);
-  private readonly themeDef = computed(() => resolveTheme(this.doc().theme));
+  readonly season = computed(() => this.doc().season || 'spring');
+  private readonly themeDef = computed(() => resolveTheme(this.doc().theme, this.doc().season));
   readonly theme = computed(() => this.themeDef().id);
   readonly frame = computed(() => this.themeDef().frame);
 

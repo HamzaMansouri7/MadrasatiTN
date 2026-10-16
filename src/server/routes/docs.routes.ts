@@ -1,5 +1,6 @@
 import { normalizeInfographicSpec } from '../../app/core/utils/infographic-spec.util';
 import { isInfographicTheme } from '../../app/core/models/infographic-spec.model';
+import { isSeasonName } from '../../app/core/models/infographic.model';
 import { Router, Request, Response } from 'express';
 import { randomUUID } from 'node:crypto';
 import { join } from 'node:path';
@@ -229,6 +230,7 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
               ...common,
               templateId: 'ai-studio-spec',
               theme: isInfographicTheme(body['theme']) ? body['theme'] : 'kids',
+              season: isSeasonName(body['season']) ? body['season'] : undefined,
               values: infoSpec,
               // Draft until the owner publishes it to the library (needs a signed-in owner).
               published: Boolean(ownerUid) && body['published'] === true,

@@ -13,7 +13,19 @@ export type InfographicPreset =
   | 'flashcards';
 
 /** Look of the sheet (design tokens only). Scoped to AI Studio sheets, never the app UI. */
-export type InfographicTheme = 'kids' | 'official' | 'fiche' | 'handwritten' | 'graph-paper' | 'poster' | 'comic' | 'lilac';
+export type InfographicTheme =
+  | 'kids'
+  | 'official'
+  | 'fiche'
+  | 'handwritten'
+  | 'graph-paper'
+  | 'poster'
+  | 'comic'
+  | 'lilac'
+  | 'blackboard'
+  | 'herbarium'
+  | 'encyclopedia'
+  | 'seasons';
 
 export const INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'hero-cards',
@@ -54,6 +66,10 @@ export const INFOGRAPHIC_THEMES: readonly InfographicTheme[] = [
   'poster',
   'comic',
   'lilac',
+  'blackboard',
+  'herbarium',
+  'encyclopedia',
+  'seasons',
 ];
 
 /** Narrows untrusted input (request body, saved doc) to a known theme id. */

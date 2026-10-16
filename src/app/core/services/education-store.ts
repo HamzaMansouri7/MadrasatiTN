@@ -38,6 +38,7 @@ import { chapterById } from '../utils/curriculum.util';
 import { SeriesDoc, Scene } from '../models/series.model';
 import { InfographicDoc } from '../models/infographic.model';
 import { InfographicPreset, InfographicSpec, InfographicTheme } from '../models/infographic-spec.model';
+import { VisualCommand } from '../models/visual-preset.model';
 import { themeImageStyle, SpecImageTarget } from '../data/infographic-image-style.data';
 import { CNP_PRIMARY_COURSES } from '../data/cnp-books.data';
 import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
@@ -1439,9 +1440,11 @@ export class EducationStore {
     theme: InfographicTheme,
     /** The sheet being regenerated: keeps its id and its library filing (published, section, filters). */
     previous?: InfographicDoc | null,
+    /** Visual command whose style block the server adds to the prompt. */
+    command?: VisualCommand,
   ): Promise<{ ok: boolean; doc?: InfographicDoc; error?: string }> {
     if (typeof window === 'undefined') return { ok: false, error: 'Environnement non supporté.' };
-    const res = await this.ai.post('generate-infographic', { ...this.sourceRequest(source), preset, theme }, {
+    const res = await this.ai.post('generate-infographic', { ...this.sourceRequest(source), preset, theme, command }, {
       fallbackError: "Erreur lors de la génération de l'infographie.",
     });
     if (!res.ok) return { ok: false, error: res.error };
@@ -1579,7 +1582,7 @@ export class EducationStore {
       {
         promptText: story ? `${story}. ${prompt}` : prompt,
         raw: true,
-        style: themeImageStyle(doc.theme),
+        style: themeImageStyle(doc.theme, doc.season),
         seedKey: doc.id,
         // New seed + cache bypass for "صورة أخرى"; same doc look otherwise.
         variation: variation ? (Date.now() % 1_000_000) + 1 : undefined,

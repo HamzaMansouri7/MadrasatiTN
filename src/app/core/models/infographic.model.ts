@@ -108,6 +108,14 @@ export interface InfographicAuthor {
   schoolYear?: string;
 }
 
+export type SeasonName = 'spring' | 'summer' | 'autumn' | 'winter';
+
+export const SEASON_NAMES: readonly SeasonName[] = ['spring', 'summer', 'autumn', 'winter'];
+
+/** Narrows untrusted input (request body, saved doc) to a known season. */
+export const isSeasonName = (v: unknown): v is SeasonName =>
+  typeof v === 'string' && (SEASON_NAMES as readonly string[]).includes(v);
+
 export interface InfographicDoc {
   id: string;
   templateId: string;
@@ -117,6 +125,8 @@ export interface InfographicDoc {
   language: 'ar' | 'fr';
   /** AI Studio spec docs only: look of the sheet. */
   theme?: InfographicTheme;
+  /** Active season when theme is 'seasons' ('spring' | 'summer' | 'autumn' | 'winter'). */
+  season?: SeasonName;
   /** AI Studio: listed in the library (false = private draft, reachable by link). */
   published?: boolean;
   /** AI Studio: library section the sheet is filed under. */

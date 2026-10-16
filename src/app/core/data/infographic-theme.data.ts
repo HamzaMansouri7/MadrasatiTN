@@ -1,4 +1,5 @@
 import { InfographicTheme, isInfographicTheme } from '../models/infographic-spec.model';
+import { SeasonName } from '../models/infographic.model';
 
 export interface ThemeColors {
   bg: string;
@@ -20,7 +21,18 @@ export interface ThemeColors {
  * Sheet frame. `plain` = rounded card with the accent bar on top;
  * `fiche` = Tunisian worksheet look: dashed navy frame, stars, flag badge.
  */
-export type ThemeFrame = 'plain' | 'fiche' | 'notebook' | 'graph' | 'poster' | 'comic' | 'boxed';
+export type ThemeFrame =
+  | 'plain'
+  | 'fiche'
+  | 'notebook'
+  | 'graph'
+  | 'poster'
+  | 'comic'
+  | 'boxed'
+  | 'blackboard'
+  | 'herbarium'
+  | 'encyclopedia'
+  | 'seasons';
 
 export interface InfographicThemeDef {
   id: InfographicTheme;
@@ -232,16 +244,217 @@ export const INFOGRAPHIC_THEMES_CONFIG: Record<InfographicTheme, InfographicThem
     imageStyle:
       'Friendly flat educational icon illustration with soft rounded shapes and clean outlines, purple and pink accents, white background',
   },
+  blackboard: {
+    id: 'blackboard',
+    nameFr: 'Tableau noir',
+    nameAr: 'سبورة القسم',
+    colors: {
+      bg: '#1A2721',
+      ink: '#F5F7F2',
+      muted: '#9BB1A5',
+      card: '#22342C',
+      border: '#3A5246',
+      hero: '#2A3F35',
+      accents: ['#FFE066', '#8CE99A', '#74C0FC', '#FFA8A8'],
+      title: '#FFE066',
+      heading: '#F5F7F2',
+      tip: '#2A3F35',
+    },
+    radius: '10px',
+    borderWidth: '1.5px',
+    titleSize: '2.2rem',
+    fontDisplay: "'Changa', 'Noto Kufi Arabic', system-ui, sans-serif",
+    frame: 'blackboard',
+    imageStyle:
+      'Chalk drawing on a dark school blackboard, crisp white and pastel chalk outlines, soft smudged chalk shading, clean textbook diagrams, text-free, dark chalkboard background',
+  },
+  herbarium: {
+    id: 'herbarium',
+    nameFr: 'Planche herbier',
+    nameAr: 'لوحة الأعشاب والنبات',
+    colors: {
+      bg: '#FAF6EE',
+      ink: '#1B3B2B',
+      muted: '#5C7967',
+      card: '#FFFFFF',
+      border: '#C2D4BB',
+      hero: '#EAF3E7',
+      accents: ['#4F772D', '#DDA15E', '#BC6C25', '#8C2D40'],
+      title: '#2D5A3E',
+      heading: '#1B3B2B',
+      tip: '#EAF3E7',
+    },
+    radius: '10px',
+    borderWidth: '1.5px',
+    titleSize: '2.1rem',
+    fontDisplay: APP_DISPLAY_FONT,
+    frame: 'herbarium',
+    imageStyle:
+      'Vintage botanical herbarium plate illustration, fine watercolor wash, detailed ink botanical line art, pressed plant study, text-free, off-white parchment background',
+  },
+  encyclopedia: {
+    id: 'encyclopedia',
+    nameFr: 'Encyclopédie',
+    nameAr: 'موسوعة علمية كلاسيكية',
+    colors: {
+      bg: '#F8F3E5',
+      ink: '#272019',
+      muted: '#6B5E50',
+      card: '#FFFCF5',
+      border: '#D0C3AC',
+      hero: '#EFE6D4',
+      accents: ['#871F28', '#1D3557', '#C27827', '#2D5D46'],
+      title: '#871F28',
+      heading: '#272019',
+      tip: '#EFE6D4',
+    },
+    radius: '8px',
+    borderWidth: '1.5px',
+    titleSize: '2.1rem',
+    fontDisplay: APP_DISPLAY_FONT,
+    frame: 'encyclopedia',
+    imageStyle:
+      'Classic vintage encyclopedia engraving illustration, fine etching line work, delicate antique watercolor wash, historical scientific dictionary plate, text-free, warm antique paper background',
+  },
+  seasons: {
+    id: 'seasons',
+    nameFr: '4 Saisons',
+    nameAr: 'الفصول الأربعة',
+    colors: {
+      bg: '#F4FBF4',
+      ink: '#153621',
+      muted: '#4B7356',
+      card: '#FFFFFF',
+      border: '#B6DFBC',
+      hero: '#E1F6E4',
+      accents: ['#2D6A4F', '#E85D75', '#F4A261', '#4EA8DE'],
+      title: '#1B4332',
+      heading: '#153621',
+      tip: '#E1F6E4',
+    },
+    radius: '14px',
+    borderWidth: '2px',
+    titleSize: '2.2rem',
+    fontDisplay: APP_DISPLAY_FONT,
+    frame: 'seasons',
+    imageStyle:
+      'Vibrant seasonal nature educational illustration with fresh flora and seasonal atmosphere, clean outlines, rich watercolor shading, text-free, white background',
+  },
+};
+
+export const SEASON_THEMES_CONFIG: Record<SeasonName, InfographicThemeDef> = {
+  spring: {
+    id: 'seasons',
+    nameFr: 'Printemps',
+    nameAr: 'فصل الربيع',
+    colors: {
+      bg: '#F4FBF4',
+      ink: '#153621',
+      muted: '#4B7356',
+      card: '#FFFFFF',
+      border: '#B6DFBC',
+      hero: '#E1F6E4',
+      accents: ['#2D6A4F', '#E85D75', '#F4A261', '#4EA8DE'],
+      title: '#1B4332',
+      heading: '#153621',
+      tip: '#E1F6E4',
+    },
+    radius: '14px',
+    borderWidth: '2px',
+    titleSize: '2.2rem',
+    fontDisplay: APP_DISPLAY_FONT,
+    frame: 'seasons',
+    imageStyle:
+      'Fresh spring season illustration, vibrant budding flowers and young green leaves, bright cheerful morning sunlight, watercolor and clean outlines, text-free, white background',
+  },
+  summer: {
+    id: 'seasons',
+    nameFr: 'Été',
+    nameAr: 'فصل الصيف',
+    colors: {
+      bg: '#FFFDF0',
+      ink: '#14233C',
+      muted: '#52657E',
+      card: '#FFFFFF',
+      border: '#FDE047',
+      hero: '#FEF9C3',
+      accents: ['#EAB308', '#0284C7', '#F43F5E', '#10B981'],
+      title: '#B45309',
+      heading: '#14233C',
+      tip: '#FEF9C3',
+    },
+    radius: '14px',
+    borderWidth: '2px',
+    titleSize: '2.2rem',
+    fontDisplay: APP_DISPLAY_FONT,
+    frame: 'seasons',
+    imageStyle:
+      'Bright summer season educational illustration, radiant warm sunlight, golden sunshine and azure sea tones, lush vibrant colors, text-free, white background',
+  },
+  autumn: {
+    id: 'seasons',
+    nameFr: 'Automne',
+    nameAr: 'فصل الخريف',
+    colors: {
+      bg: '#FFF9F2',
+      ink: '#2E1C14',
+      muted: '#765647',
+      card: '#FFFFFF',
+      border: '#FED7AA',
+      hero: '#FFEDD5',
+      accents: ['#EA580C', '#D97706', '#991B1B', '#854D0E'],
+      title: '#9A3412',
+      heading: '#2E1C14',
+      tip: '#FFEDD5',
+    },
+    radius: '14px',
+    borderWidth: '2px',
+    titleSize: '2.2rem',
+    fontDisplay: APP_DISPLAY_FONT,
+    frame: 'seasons',
+    imageStyle:
+      'Cozy autumn season illustration, golden amber and copper falling leaves, warm harvest atmosphere, rich watercolor textures, text-free, white background',
+  },
+  winter: {
+    id: 'seasons',
+    nameFr: 'Hiver',
+    nameAr: 'فصل الشتاء',
+    colors: {
+      bg: '#F0F9FF',
+      ink: '#0F172A',
+      muted: '#475569',
+      card: '#FFFFFF',
+      border: '#BAE6FD',
+      hero: '#E0F2FE',
+      accents: ['#0284C7', '#1D4ED8', '#0F766E', '#DC2626'],
+      title: '#0369A1',
+      heading: '#0F172A',
+      tip: '#E0F2FE',
+    },
+    radius: '14px',
+    borderWidth: '2px',
+    titleSize: '2.2rem',
+    fontDisplay: APP_DISPLAY_FONT,
+    frame: 'seasons',
+    imageStyle:
+      'Crisp winter season educational illustration, clean snowy frost tones, cool crystalline blue and evergreen accents, cozy atmosphere, text-free, white background',
+  },
 };
 
 /** Theme for a saved or requested id; unknown or missing ids fall back to `kids`. */
-export function resolveTheme(id: unknown): InfographicThemeDef {
+export function resolveTheme(id: unknown, season?: SeasonName): InfographicThemeDef {
+  if (id === 'seasons') {
+    if (season && SEASON_THEMES_CONFIG[season]) {
+      return SEASON_THEMES_CONFIG[season];
+    }
+    return INFOGRAPHIC_THEMES_CONFIG.seasons;
+  }
   return isInfographicTheme(id) ? INFOGRAPHIC_THEMES_CONFIG[id] : INFOGRAPHIC_THEMES_CONFIG.kids;
 }
 
 /** Picture style plus the theme's own colours, so pictures match the page palette. */
-export function themeImageStyle(id: unknown): string {
-  const t = resolveTheme(id);
+export function themeImageStyle(id: unknown, season?: SeasonName): string {
+  const t = resolveTheme(id, season);
   return `${t.imageStyle}. Limited colour palette: ${t.colors.accents.join(', ')}. Recurring characters keep identical faces, hair and clothes in every picture`;
 }
 
@@ -254,6 +467,10 @@ export const THEME_IMAGE_STYLE: Record<InfographicTheme, string> = {
   poster: INFOGRAPHIC_THEMES_CONFIG.poster.imageStyle,
   comic: INFOGRAPHIC_THEMES_CONFIG.comic.imageStyle,
   lilac: INFOGRAPHIC_THEMES_CONFIG.lilac.imageStyle,
+  blackboard: INFOGRAPHIC_THEMES_CONFIG.blackboard.imageStyle,
+  herbarium: INFOGRAPHIC_THEMES_CONFIG.herbarium.imageStyle,
+  encyclopedia: INFOGRAPHIC_THEMES_CONFIG.encyclopedia.imageStyle,
+  seasons: INFOGRAPHIC_THEMES_CONFIG.seasons.imageStyle,
 };
 
 export type SpecImageTarget =

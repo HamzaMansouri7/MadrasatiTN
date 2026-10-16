@@ -17,6 +17,8 @@ import { capText, capHistory, wrapData, CAPS } from "../input-caps";
 import { originGuard, aiRateLimiter } from "../guards";
 import { saveGenerated } from "../storage";
 import { normalizeInfographicSpec, specQualityIssues } from "../../app/core/utils/infographic-spec.util";
+import { VISUAL_PRESETS } from "../../app/core/data/visual-presets.data";
+import type { VisualCommand } from "../../app/core/models/visual-preset.model";
 import { DIAGRAM_TEMPLATES, DiagramTemplate, generateSchoolDiagram } from "../../app/core/utils/diagram-generator.util";
 import {
   ENABLED_INFOGRAPHIC_PRESETS,
@@ -1110,6 +1112,7 @@ aiRouter.post(
         language,
         preset,
         theme,
+        command,
       } = req.body;
       if (!aiReady()) {
         res.status(500).json({ error: "Service IA non disponible." });
@@ -1148,6 +1151,10 @@ aiRouter.post(
         subject: resolvedSubject,
         topic: safeTopic,
         preset: wanted,
+        commandStyle:
+          typeof command === "string" && Object.hasOwn(VISUAL_PRESETS, command)
+            ? VISUAL_PRESETS[command as VisualCommand].styleBlock
+            : undefined,
         instructions: instructions ? capText(instructions, 1000) : undefined,
         lessonText: lessonText ? capText(lessonText, 8000) : undefined,
         lang,

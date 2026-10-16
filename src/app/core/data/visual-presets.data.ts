@@ -49,13 +49,13 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
 
   '/handwritten': {
     command: '/handwritten',
-    name: 'Handwritten Notes',
-    nameFr: 'Notes Manuscrites de Révision',
-    nameAr: 'ملاحظات دفتر التلميذ',
-    summary: 'Lined cream notebook paper, red margin, pen headings, yellow highlighter, dashed callouts.',
-    basePrompt: 'Create realistic student study notes on lined school paper with pen headings and sketches.',
+    name: 'Handwritten Notes & Lettering',
+    nameFr: 'Notes Manuscrites & Calligraphie',
+    nameAr: 'ملاحظات دفتر التلميذ والخط البارز',
+    summary: 'Lined cream notebook paper, expressive hand-lettered titles, red margin, pen headings, yellow highlighter, dashed callouts.',
+    basePrompt: 'Create realistic student study notes on lined school paper with expressive hand-lettered titles, pen headings, sketches, and highlights.',
     styleBlock:
-      'Handwritten Notes — realistic handwritten study notes on paper, with headings, underlines, highlights, arrows, small sketches, formulas, and concise explanations. Use a natural study-note structure with clear sections and readable handwritten elements.',
+      'Handwritten Notes & Hand Lettering — realistic handwritten study notes on lined notebook paper, with expressive hand-lettered titles, headings, underlines, highlights, arrows, small sketches, formulas, and concise explanations. Natural study-note structure with readable handwritten and lettering elements.',
     themeId: 'handwritten',
     presetId: 'hero-cards',
     defaultModel: 'nvidia-flux-1-dev',
@@ -74,7 +74,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       },
     ],
     schemaFields: [
-      { name: 'title', type: 'string', description: 'Lesson title in handwriting style', required: true },
+      { name: 'title', type: 'string', description: 'Lesson title in decorative hand-lettered style', required: true },
       { name: 'date', type: 'string', description: 'Session date' },
       { name: 'topic', type: 'string', description: 'Subject or chapter code', required: true },
       { name: 'sections', type: 'Array<{heading: string, bullets: string[], highlight?: string}>', description: 'Note sections', required: true },
@@ -85,27 +85,27 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     compilePrompt: (topic: string) =>
       buildBasePrompt(
         topic,
-        'Handwritten Notes — realistic handwritten study notes on paper, with headings, underlines, highlights, arrows, small sketches, formulas, and concise explanations. Use a natural study-note structure with clear sections and readable handwritten elements.',
+        'Handwritten Notes & Hand Lettering — realistic handwritten study notes on lined notebook paper, with expressive hand-lettered titles, headings, underlines, highlights, arrows, small sketches, formulas, and concise explanations. Natural study-note structure with readable handwritten and lettering elements.',
         'Automatically choose the most appropriate number of sections, annotations, sketches, formulas, and supporting visual elements according to the topic.'
       ),
   },
 
   '/xray': {
     command: '/xray',
-    name: 'X-Ray / Cutaway Diagram',
-    nameFr: 'Écorché Anatomique / Vue Éclatée',
-    nameAr: 'مخطط تشريحي ومقطع تقني',
-    summary: 'Technical millimeter graph paper, 3-column layout, cutaway anatomical diagram, round close-up insets.',
-    basePrompt: 'Create an anatomical cross-section on engineering grid paper with circular closeups.',
+    name: 'X-Ray / How It Works',
+    nameFr: 'Écorché & Comment ça marche',
+    nameAr: 'مخطط تشريحي وكيف يعمل',
+    summary: 'Technical millimeter graph paper, cutaway anatomical or mechanical inside-view, sequential how-it-works mechanism steps, labeled parts, and round close-up insets.',
+    basePrompt: 'Create an anatomical or mechanical cross-section on engineering grid paper revealing internal layers and explaining how the mechanism works step by step.',
     styleBlock:
-      'Xray / Cutaway — detailed cutaway anatomical or mechanical cross-section on technical graph paper, revealing internal layers, labeled parts, circular close-up insets, and technical data callouts.',
+      'X-Ray / How It Works — detailed cutaway anatomical or mechanical cross-section on technical graph paper, revealing internal layers, sequential mechanism steps demonstrating how it works, labeled parts, circular close-up insets, and technical data callouts.',
     themeId: 'graph-paper',
     presetId: 'central-picture',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [
       {
         name: 'cutaway',
-        description: 'Detailed cutaway illustration showing internal anatomy without text or labels',
+        description: 'Detailed cutaway illustration showing internal anatomy or mechanism without text or labels',
         count: 1,
         textFree: true,
       },
@@ -117,9 +117,10 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       },
     ],
     schemaFields: [
-      { name: 'title', type: 'string', description: 'Organ or machine name', required: true },
+      { name: 'title', type: 'string', description: 'Organ, machine, or mechanism name', required: true },
       { name: 'profile', type: 'Array<{label: string, value: string}>', description: 'Vital specs table' },
       { name: 'parts', type: 'Array<{name: string, note: string}>', description: 'Labeled parts list with HTML leader indicators', required: true },
+      { name: 'steps', type: 'Array<{stepNumber: number, title: string, description: string}>', description: 'Step-by-step how it works explanation' },
       { name: 'closeups', type: 'Array<{name: string, text: string}>', description: 'Circular inset explanations' },
       { name: 'facts', type: 'string[]', description: 'Key biological or technical facts' },
       { name: 'careTips', type: 'string[]', description: 'Health or maintenance guidelines' },
@@ -127,8 +128,8 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     compilePrompt: (topic: string) =>
       buildBasePrompt(
         topic,
-        'Xray / Cutaway — detailed cutaway anatomical or mechanical cross-section on technical graph paper, revealing internal layers, labeled parts, circular close-up insets, and technical data callouts.',
-        'Automatically choose the most appropriate number of cutaway layers, close-up insets, callout labels, and supporting visual elements according to the topic.'
+        'X-Ray / How It Works — detailed cutaway anatomical or mechanical cross-section on technical graph paper, revealing internal layers, sequential mechanism steps demonstrating how it works, labeled parts, circular close-up insets, and technical data callouts.',
+        'Automatically choose the most appropriate number of cutaway layers, close-up insets, callout labels, mechanism steps, and supporting visual elements according to the topic.'
       ),
   },
 
@@ -169,33 +170,33 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
 
   '/diagram': {
     command: '/diagram',
-    name: 'Scientific Diagram',
-    nameFr: 'Schéma Scientifique',
-    nameAr: 'رسم بياني علمي',
-    summary: 'Process flows, system loops, labeled parts, cycle rings, and causal connecting arrows.',
-    basePrompt: 'Create a clean scientific diagram with structured nodes, arrows, and step descriptions.',
+    name: 'Scientific Diagram & Anatomy Chart',
+    nameFr: 'Schéma Scientifique & Planche Anatomique',
+    nameAr: 'رسم بياني علمي ولوحة تشريحية',
+    summary: 'Scientific diagram, labeled anatomy chart, process flows, system loops, labeled parts/organs, cycle rings, and connecting arrows.',
+    basePrompt: 'Create a clean scientific diagram or labeled anatomy chart with structured nodes, labeled organs or components, arrows, and step descriptions.',
     styleBlock:
-      'Diagram — clean scientific diagram with structured sections, arrows, connectors, labels, symbols, and simplified explanations.',
+      'Diagram & Anatomy Chart — clean scientific diagram or labeled anatomy chart with structured sections, labeled parts/organs, leader callouts, directional arrows, connectors, symbols, and simplified explanations.',
     themeId: 'official',
-    presetId: 'circular-flow',
+    presetId: 'auto',
     defaultModel: 'nvidia-flux-1-dev',
     imageSlots: [
       {
         name: 'diagram-backdrop',
-        description: 'Text-free background or illustrative scene behind HTML connectors',
+        description: 'Text-free background or illustrative anatomical scene behind HTML connectors',
         count: 1,
         textFree: true,
       },
     ],
     schemaFields: [
-      { name: 'title', type: 'string', description: 'System or process title', required: true },
-      { name: 'nodes', type: 'Array<{id: string, label: string, text: string}>', description: 'Diagram nodes', required: true },
-      { name: 'links', type: 'Array<{from: string, to: string, label?: string}>', description: 'Causal flow connectors' },
+      { name: 'title', type: 'string', description: 'System, organism, or process title', required: true },
+      { name: 'nodes', type: 'Array<{id: string, label: string, text: string}>', description: 'Diagram nodes or labeled anatomical parts', required: true },
+      { name: 'links', type: 'Array<{from: string, to: string, label?: string}>', description: 'Causal flow connectors or relationship links' },
     ],
     compilePrompt: (topic: string) =>
       buildBasePrompt(
         topic,
-        'Diagram — clean scientific diagram with structured sections, arrows, connectors, labels, symbols, and simplified explanations.',
+        'Diagram & Anatomy Chart — clean scientific diagram or labeled anatomy chart with structured sections, labeled parts/organs, leader callouts, directional arrows, connectors, symbols, and simplified explanations.',
         'Automatically choose the most appropriate number of sections, labels, connectors, arrows, annotations, and supporting visual elements according to the topic.'
       ),
   },
@@ -330,8 +331,8 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
     name: 'Printable Flashcards',
     nameFr: 'Cartes Mémoire (Flashcards)',
     nameAr: 'بطاقات المراجعة والذاكرة',
-    summary: 'Modular grid of printable cards with terms, definitions, pronunciation hints, and icons.',
-    basePrompt: 'Create a set of printable revision flashcards for key lesson vocabulary.',
+    summary: 'Modular grid of printable double-sided revision cards with terms, definitions, examples, pronunciation hints, and visual cues.',
+    basePrompt: 'Create a set of printable revision flashcards for key lesson vocabulary and definitions.',
     styleBlock:
       'Flashcards — modular printable double-sided study cards with vocabulary word, phonetics, definition, example sentence, and visual hint illustration.',
     themeId: 'fiche',
@@ -353,6 +354,74 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
         topic,
         'Flashcards — modular printable double-sided study cards with vocabulary word, phonetics, definition, example sentence, and visual hint illustration.',
         'Automatically choose the most appropriate number of flashcards and supporting visual elements according to the topic.'
+      ),
+  },
+
+  '/cycle': {
+    command: '/cycle',
+    name: 'Circular Cycle / Flow',
+    nameFr: 'Cycle Circulaire / Boucle',
+    nameAr: 'مخطط دوري متكرر',
+    summary: 'Repeating loop of cyclical stages (life cycles, seasons, water cycle, biological cycles) where the final stage reconnects to the beginning.',
+    basePrompt: 'Create an educational repeating cycle diagram showing sequential circular stages returning to the start.',
+    styleBlock:
+      'Cycle — clean circular flow diagram with 3 to 6 ordered stages in a continuous loop, curved directional connecting arrows, step badges, and concise explanatory text for each stage.',
+    themeId: 'kids',
+    presetId: 'circular-flow',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'cycle-stages',
+        description: 'Text-free illustration for each stage in the circular cycle',
+        count: 4,
+        textFree: true,
+      },
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Cycle or system title', required: true },
+      { name: 'subtitle', type: 'string', description: 'Learning objective or cycle scope' },
+      { name: 'stages', type: 'Array<{stepNumber: number, title: string, description: string, icon?: string}>', description: 'Cyclical stages leading back to stage 1', required: true },
+      { name: 'takeaway', type: 'string', description: 'Core takeaway or biological rule' },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Cycle — clean circular flow diagram with 3 to 6 ordered stages in a continuous loop, curved directional connecting arrows, step badges, and concise explanatory text for each stage.',
+        'Automatically choose the most appropriate number of stages, arrows, badges, and supporting visual elements according to the topic.'
+      ),
+  },
+
+  '/steps': {
+    command: '/steps',
+    name: 'Step-by-Step & Interface',
+    nameFr: 'Tutoriel & Interface',
+    nameAr: 'خطوات العمل وشاشة التطبيق',
+    summary: 'Numbered step-by-step practical tutorial or digital tool guide beside a clean simplified simulated screen interface.',
+    basePrompt: 'Create a step-by-step tutorial guide with numbered instructions and a simplified interactive interface or procedure screen.',
+    styleBlock:
+      'Steps & Interface — clear step-by-step procedure guide with numbered action steps, concrete instructions, and a simplified simulated screen or form interface mockup.',
+    themeId: 'lilac',
+    presetId: 'steps-interface',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'step-icons',
+        description: 'Small text-free action icon per step',
+        count: 4,
+        textFree: true,
+      },
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Tutorial or task title', required: true },
+      { name: 'appName', type: 'string', description: 'Name of the tool or procedure', required: true },
+      { name: 'steps', type: 'Array<{stepNumber: number, title: string, instruction: string}>', description: 'Ordered step instructions', required: true },
+      { name: 'interfaceFields', type: 'Array<{label: string, kind: string, options?: string[]}>', description: 'Simulated interface fields' },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Steps & Interface — clear step-by-step procedure guide with numbered action steps, concrete instructions, and a simplified simulated screen or form interface mockup.',
+        'Automatically choose the most appropriate number of steps, interface fields, icons, and supporting visual elements according to the topic.'
       ),
   },
 };

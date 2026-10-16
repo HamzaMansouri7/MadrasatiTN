@@ -10,7 +10,9 @@ export type VisualCommand =
   | '/poster'
   | '/comic'
   | '/timeline'
-  | '/flashcards';
+  | '/flashcards'
+  | '/cycle'
+  | '/steps';
 
 export interface VisualImageSlot {
   name: string;

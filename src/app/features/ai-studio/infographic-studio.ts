@@ -10,6 +10,7 @@ import {
   LanguageService,
   PRIMARY_GRADES,
   PRIMARY_SUBJECTS,
+  SeasonName,
   SourceInput,
   SpecImageTarget,
   TRIMESTERS,
@@ -290,6 +291,31 @@ interface PresetOption {
                     </button>
                   }
                 </div>
+
+                @if (theme() === 'seasons') {
+                  <div class="mt-3 pt-3 border-t border-[#E7DFCF]">
+                    <div class="text-[11px] font-semibold text-[#6B7A70] mb-1.5 flex items-center gap-1">
+                      <span class="material-icons text-xs" aria-hidden="true">date_range</span>
+                      <span>{{ lang.tr('Saison active', 'الفصل النشط') }}</span>
+                    </div>
+                    <div class="grid grid-cols-4 gap-1">
+                      @for (s of seasons; track s.id) {
+                        <button
+                          type="button"
+                          (click)="setSeason(s.id)"
+                          [attr.aria-pressed]="season() === s.id"
+                          [title]="lang.tr(s.fr, s.ar)"
+                          [class]="season() === s.id
+                            ? 'bg-[#2D6A4F] text-[#FBF8F1] border-[#2D6A4F] font-bold shadow-xs'
+                            : 'bg-[#FBF8F1] hover:bg-[#F2ECE1] text-[#14251D] border-[#E7DFCF]'"
+                          class="px-1 py-1.5 border rounded-lg text-[11px] flex flex-col items-center gap-0.5 cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                          <span class="material-icons text-sm" aria-hidden="true">{{ s.icon }}</span>
+                          <span class="text-[10px] leading-tight truncate max-w-full">{{ lang.tr(s.fr, s.ar) }}</span>
+                        </button>
+                      }
+                    </div>
+                  </div>
+                }
               </fieldset>
             </aside>
           }
@@ -455,13 +481,20 @@ export class InfographicStudioComponent implements OnInit {
     { id: 'graph-paper', icon: 'grid_4x4', fr: 'Papier millimétré', ar: 'ورق تقني ومخطط', hintFr: 'Grille technique, écorché', hintAr: 'شبكة هندسية ومقطع تشريحي' },
     { id: 'poster', icon: 'campaign', fr: 'Affiche', ar: 'ملصق حائطي', hintFr: 'Grand format, contraste fort', hintAr: 'خط عريض وألوان واضحة' },
     { id: 'comic', icon: 'forum', fr: 'BD éducative', ar: 'قصة مصورة', hintFr: 'Cases illustrées et bulles', hintAr: 'إطارات متسلسلة وحوارات' },
+    { id: 'blackboard', icon: 'school', fr: 'Tableau noir', ar: 'سبورة القسم', hintFr: 'Fond ardoise, craies pastel', hintAr: 'خلفية سوداء وطبشور ملون' },
+    { id: 'herbarium', icon: 'local_florist', fr: 'Planche herbier', ar: 'لوحة الأعشاب', hintFr: 'Planche botanique, papier lin', hintAr: 'لوحة نباتية وورق طبيعي' },
+    { id: 'encyclopedia', icon: 'auto_stories', fr: 'Encyclopédie', ar: 'موسوعة كلاسيكية', hintFr: 'Gravure ancienne, livre classique', hintAr: 'نقش قديم وكتاب كلاسيكي' },
+    { id: 'seasons', icon: 'wb_sunny', fr: '4 Saisons', ar: 'الفصول الأربعة', hintFr: 'Printemps, été, automne, hiver', hintAr: 'ربيع، صيف، خريف، شتاء' },
   ];
 
   readonly commands: { cmd: VisualCommand; icon: string; fr: string; ar: string }[] = [
     { cmd: '/infographic', icon: 'auto_awesome', fr: 'Infographie', ar: 'إنفوغرافيك' },
     { cmd: '/handwritten', icon: 'edit_note', fr: 'Cahier', ar: 'دفتر' },
     { cmd: '/xray', icon: 'biotech', fr: 'Écorché', ar: 'تشريحي' },
+    { cmd: '/visualize', icon: 'visibility', fr: 'Visualiser', ar: 'تجسيد' },
     { cmd: '/diagram', icon: 'schema', fr: 'Schéma', ar: 'رسم بياني' },
+    { cmd: '/cycle', icon: 'autorenew', fr: 'Cycle', ar: 'دورة' },
+    { cmd: '/steps', icon: 'format_list_numbered', fr: 'Étapes', ar: 'خطوات' },
     { cmd: '/mindmap', icon: 'hub', fr: 'Carte mentale', ar: 'خريطة ذهنية' },
     { cmd: '/poster', icon: 'campaign', fr: 'Affiche', ar: 'ملصق' },
     { cmd: '/comic', icon: 'forum', fr: 'BD', ar: 'قصة مصورة' },
@@ -482,9 +515,25 @@ export class InfographicStudioComponent implements OnInit {
     }
   }
 
+  /** The picked command, only while its layout and theme are still the selected ones. */
+  private commandInEffect(): VisualCommand | undefined {
+    const cmd = this.activeCommand();
+    if (!cmd) return undefined;
+    const def = VISUAL_PRESETS[cmd];
+    const presetMatches = !def.presetId || def.presetId === this.preset();
+    return presetMatches && def.themeId === this.theme() ? cmd : undefined;
+  }
+
   readonly source = signal<SourceInput | null>(null);
   readonly preset = signal<InfographicPreset | 'auto'>('auto');
   readonly theme = signal<InfographicTheme>('kids');
+  readonly season = signal<SeasonName>('spring');
+  readonly seasons: { id: SeasonName; icon: string; fr: string; ar: string }[] = [
+    { id: 'spring', icon: 'filter_vintage', fr: 'Printemps', ar: 'الربيع' },
+    { id: 'summer', icon: 'wb_sunny', fr: 'Été', ar: 'الصيف' },
+    { id: 'autumn', icon: 'eco', fr: 'Automne', ar: 'الخريف' },
+    { id: 'winter', icon: 'ac_unit', fr: 'Hiver', ar: 'الشتاء' },
+  ];
   readonly notes = signal('');
   readonly session = createStudioSession<SourceInput>('infographic', {
     restore: (draft) => this.prefill.set(draft),
@@ -524,6 +573,7 @@ export class InfographicStudioComponent implements OnInit {
       if (cached.source) this.source.set(cached.source);
       if (cached.preset) this.preset.set(cached.preset);
       if (cached.theme) this.theme.set(cached.theme);
+      if (cached.doc.season) this.season.set(cached.doc.season);
       if (cached.notes) this.notes.set(cached.notes);
       this.initDone.set(true);
       return;
@@ -610,7 +660,19 @@ export class InfographicStudioComponent implements OnInit {
     this.theme.set(theme);
     const d = this.doc();
     if (!d) return;
-    const next = { ...d, theme };
+    const next: InfographicDoc = { ...d, theme };
+    if (theme === 'seasons' && !next.season) {
+      next.season = this.season();
+    }
+    this.doc.set(next);
+    if (d.isOwner) void this.store.saveInfographic(next);
+  }
+
+  setSeason(season: SeasonName) {
+    this.season.set(season);
+    const d = this.doc();
+    if (!d) return;
+    const next: InfographicDoc = { ...d, season };
     this.doc.set(next);
     if (d.isOwner) void this.store.saveInfographic(next);
   }
@@ -690,22 +752,27 @@ export class InfographicStudioComponent implements OnInit {
         this.preset(),
         this.theme(),
         previous,
+        this.commandInEffect(),
       ),
     );
     if (!res) return;
     if (res.ok && res.doc) {
       this.session.keepUndo(previous);
-      this.applyDoc(res.doc);
+      const generated = res.doc.theme === 'seasons' && !res.doc.season ? { ...res.doc, season: this.season() } : res.doc;
+      this.applyDoc(generated);
+      if (generated !== res.doc && generated.isOwner) void this.store.saveInfographic(generated);
       // The source draft is no longer needed once a sheet exists; a guest's sheet is still unsaved work.
       void this.session.clearDraft();
       if (!res.doc.isOwner) this.session.markDirty();
       this.session.succeed({ scrollTo: 'infographic-sheet' });
-      void this.illustrateAll(res.doc);
+      void this.illustrateAll(generated);
     } else this.session.fail(res.error ?? this.lang.tr('Erreur de génération.', 'خطأ في التوليد.'));
   }
 
   private applyDoc(doc: InfographicDoc) {
     this.doc.set(doc);
+    if (doc.theme) this.theme.set(doc.theme);
+    if (doc.season) this.season.set(doc.season);
     void this.vault.saveAsset('madrasati_active_infographic', {
       doc,
       source: this.source(),
