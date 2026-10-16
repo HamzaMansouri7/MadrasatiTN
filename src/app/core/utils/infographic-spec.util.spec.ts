@@ -389,3 +389,28 @@ describe('normalizeInfographicSpec block presets', () => {
     expect(spec?.idCard?.imageUrl).toBeUndefined();
   });
 });
+
+describe('normalizeInfographicSpec wave 2 presets', () => {
+  const items = (n: number) => Array.from({ length: n }, (_, i) => ({ title: `Case ${i + 1}`, text: `Question ${i + 1} ?`, icon: 'star' }));
+  const spec = (preset: string, n: number) => normalizeInfographicSpec({ preset, title: 'Titre', items: items(n), remember: ['Lance le dé'] });
+
+  it('keeps a pathmap with 3 to 8 stations', () => {
+    expect(spec('pathmap', 5)?.items).toHaveLength(5);
+    expect(spec('pathmap', 2)).toBeNull();
+    expect(spec('pathmap', 12)?.items).toHaveLength(8);
+  });
+
+  it('needs at least 6 squares on a boardgame and keeps its rules', () => {
+    expect(spec('boardgame', 5)).toBeNull();
+    const board = spec('boardgame', 10);
+    expect(board?.items).toHaveLength(10);
+    expect(board?.remember).toEqual(['Lance le dé']);
+  });
+});
+
+describe('specQualityIssues block presets', () => {
+  it('flags a thin id card so the route retries once', () => {
+    const spec = normalizeInfographicSpec({ preset: 'idcard', title: 'Olivier', items: [], remember: [], idCard: { entityName: 'Olivier', category: '', stats: [], facts: [] } });
+    expect(spec && specQualityIssues(spec).some((i) => i.includes('idCard'))).toBe(true);
+  });
+});

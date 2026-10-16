@@ -91,7 +91,7 @@ export async function runChain(
 
   // 2.5s: Gemini 503s fail in ~1.5s (chain advances immediately on those), but a model that STALLS holds a slot,
   // so launching the next candidate after 2.5s lets a healthy model win without waiting out the stalled one.
-  const hedgeMs = Math.max(1000, parseInt(process.env['HEDGE_MS'] || '2500', 10));
+  const hedgeMs = Math.max(1000, parseInt(process.env['HEDGE_MS'] || '6000', 10));
 
   // Filter tasks not on cooldown first; if all are on cooldown, try all
   const availableTasks = tasks.filter(t => !isCoolingDown(t.step.provider, t.step.model, t.key));

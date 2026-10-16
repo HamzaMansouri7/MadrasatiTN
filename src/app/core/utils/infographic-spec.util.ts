@@ -511,5 +511,17 @@ export function specQualityIssues(spec: InfographicSpec): string[] {
     seen.add(key);
     if (DESCRIBES_PICTURE.test(it.text.trim())) issues.push(`carte ${n} : le texte décrit l'image au lieu d'enseigner`);
   });
+  // Block presets: the schema no longer forces their fields, so thin blocks get one corrective retry.
+  if (spec.preset === 'idcard' && ((spec.idCard?.stats.length ?? 0) < 3 || (spec.idCard?.facts.length ?? 0) < 2 || !spec.idCard?.category)) {
+    issues.push('"idCard" incomplet : remplis category, 3 à 6 stats (label + value) et 2 à 4 facts');
+  }
+  if (spec.preset === 'quizcard' && (spec.quiz?.choices.length ?? 0) < 3) issues.push('"quiz" incomplet : 4 choix, un seul correct');
+  if (spec.preset === 'venn' && (!spec.venn?.setA.items.length || !spec.venn?.setB.items.length || !spec.venn?.overlap.items.length)) {
+    issues.push('"venn" incomplet : 2 à 4 items dans setA, setB et overlap');
+  }
+  if (spec.preset === 'analogy' && (!spec.analogy?.familiar.keyPoints.length || !spec.analogy?.abstract.keyPoints.length)) {
+    issues.push('"analogy" incomplet : 2 à 3 keyPoints de chaque côté et un bridgeNote');
+  }
+  if (spec.preset === 'flyer' && !spec.flyer?.sections.length) issues.push('"flyer" incomplet : 1 à 3 sections avec des détails');
   return issues;
 }

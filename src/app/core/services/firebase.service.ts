@@ -16,6 +16,9 @@ import {
   updateProfile,
   updatePassword,
   sendPasswordResetEmail,
+  EmailAuthProvider,
+  linkWithCredential,
+  reauthenticateWithPopup,
 } from 'firebase/auth';
 import {
   Firestore,
@@ -237,6 +240,14 @@ export class FirebaseService {
         return 'Identifiants incorrects ou mot de passe erroné (البريد الإلكتروني أو كلمة المرور غير صحيحة).';
       case 'auth/too-many-requests':
         return 'Trop de tentatives infructueuses. Veuillez réessayer plus tard (محاولات كثيرة خاطئة، يرجى المحاولة لاحقاً).';
+      case 'auth/requires-recent-login':
+        return 'Pour votre sécurité, reconnectez-vous puis réessayez (لأمان حسابك، أعد تسجيل الدخول ثم حاول مجدداً).';
+      case 'auth/provider-already-linked':
+        return 'Un mot de passe est déjà défini pour ce compte (كلمة مرور معرّفة مسبقاً لهذا الحساب).';
+      case 'auth/operation-not-allowed':
+        return 'La connexion par e-mail et mot de passe n’est pas activée (تسجيل الدخول بالبريد وكلمة المرور غير مفعّل).';
+      case 'auth/popup-closed-by-user':
+        return 'Fenêtre Google fermée avant la fin (أُغلقت نافذة جوجل قبل الانتهاء).';
       case 'auth/network-request-failed':
         return 'Erreur de connexion au serveur Firebase (خطأ في الاتصال بالخادم).';
       default:
@@ -620,8 +631,22 @@ export class FirebaseService {
     if (!user) {
       throw new Error(this.lang.tr('Veuillez vous reconnecter pour définir un mot de passe.', 'يرجى تسجيل الدخول مجدداً لتعيين كلمة مرور.'));
     }
+    // A Google-only account has no password yet: link an email/password login to it instead of updating one.
+    const hasPassword = user.providerData.some((p) => p.providerId === 'password');
+    const apply = () =>
+      hasPassword || !user.email
+        ? updatePassword(user, newPassword)
+        : linkWithCredential(user, EmailAuthProvider.credential(user.email, newPassword));
     try {
-      await updatePassword(user, newPassword);
+      try {
+        await apply();
+      } catch (err: unknown) {
+        if ((err as { code?: string })?.code !== 'auth/requires-recent-login') throw err;
+        const usesGoogle = user.providerData.some((p) => p.providerId === 'google.com');
+        if (!usesGoogle) throw err;
+        await reauthenticateWithPopup(user, new GoogleAuthProvider());
+        await apply();
+      }
     } catch (err: unknown) {
       console.error('updateUserPassword error:', err);
       throw new Error(this.formatAuthError(err));

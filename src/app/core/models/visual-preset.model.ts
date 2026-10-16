@@ -23,7 +23,11 @@ export type VisualCommand =
   | '/venn'
   | '/idcard'
   | '/analogy'
-  | '/flyer';
+  | '/flyer'
+  | '/herbarium'
+  | '/illustratedmap'
+  | '/treasuremap'
+  | '/boardgame';
 
 export interface VisualImageSlot {
   name: string;

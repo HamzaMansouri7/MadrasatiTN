@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, output } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { InfographicDoc, InfographicSpec, resolveTheme, sanitizeSvg, SpecImageTarget } from '@core';
+import { InfographicDoc, InfographicSpec, LanguageService, resolveTheme, sanitizeSvg, SpecImageTarget } from '@core';
 import { PresetCycleComponent } from './presets/preset-cycle';
 import { PresetHeroCardsComponent } from './presets/preset-hero-cards';
 import { PresetTimelineComponent } from './presets/preset-timeline';
@@ -18,6 +18,8 @@ import { PresetVennComponent } from './presets/preset-venn';
 import { PresetIdcardComponent } from './presets/preset-idcard';
 import { PresetAnalogyComponent } from './presets/preset-analogy';
 import { PresetFlyerComponent } from './presets/preset-flyer';
+import { PresetPathmapComponent } from './presets/preset-pathmap';
+import { PresetBoardgameComponent } from './presets/preset-boardgame';
 
 /**
  * Draws an AI Studio spec on an A4 sheet. The model only picks a preset and fills text;
@@ -46,6 +48,8 @@ import { PresetFlyerComponent } from './presets/preset-flyer';
     PresetIdcardComponent,
     PresetAnalogyComponent,
     PresetFlyerComponent,
+    PresetPathmapComponent,
+    PresetBoardgameComponent,
   ],
   host: {
     '[attr.data-theme]': 'theme()',
@@ -301,8 +305,8 @@ import { PresetFlyerComponent } from './presets/preset-flyer';
             </div>
             <h2 class="ig-title ig-strip-title">{{ s.title }}</h2>
             <div class="ig-strip-side">
-              <span class="ig-strip-grade">{{ doc().grade }}</span>
-              <span>{{ doc().subject }}</span>
+              <span class="ig-strip-grade">{{ lang.translateGrade(doc().grade, doc().language) }}</span>
+              <span>{{ lang.translateSubject(doc().subject, doc().language) }}</span>
               @if (doc().trimester) {
                 <span class="opacity-75">{{ doc().trimester }}</span>
               }
@@ -311,8 +315,8 @@ import { PresetFlyerComponent } from './presets/preset-flyer';
         }
         <div class="flex flex-wrap items-center justify-between gap-2" [class.hidden]="(frame() === 'fiche' || frame() === 'boxed') && !doc().author?.name">
           <div class="flex flex-wrap items-center gap-2" [class.hidden]="frame() === 'fiche' || frame() === 'boxed'">
-            <span class="ig-chip" style="color: var(--ig-heading)">{{ doc().grade }}</span>
-            <span class="ig-chip" [style.color]="accent(0)">{{ doc().subject }}</span>
+            <span class="ig-chip" style="color: var(--ig-heading)">{{ lang.translateGrade(doc().grade, doc().language) }}</span>
+            <span class="ig-chip" [style.color]="accent(0)">{{ lang.translateSubject(doc().subject, doc().language) }}</span>
             @if (doc().trimester) {
               <span class="ig-chip" style="color: var(--ig-muted)">{{ doc().trimester }}</span>
             }
@@ -503,6 +507,24 @@ import { PresetFlyerComponent } from './presets/preset-flyer';
               (illustrate)="illustrate.emit($event)">
             </app-preset-flyer>
           }
+          @case ('pathmap') {
+            <app-preset-pathmap
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-pathmap>
+          }
+          @case ('boardgame') {
+            <app-preset-boardgame
+              [spec]="s"
+              [doc]="doc()"
+              [accent]="accentFn"
+              [illustrating]="illustrating()"
+              (illustrate)="illustrate.emit($event)">
+            </app-preset-boardgame>
+          }
           @default {
             <app-preset-hero-cards
               [spec]="s"
@@ -555,6 +577,7 @@ import { PresetFlyerComponent } from './presets/preset-flyer';
 })
 export class InfographicSpecComponent {
   private readonly sanitizer = inject(DomSanitizer);
+  readonly lang = inject(LanguageService);
 
   readonly doc = input.required<InfographicDoc>();
   readonly illustrating = input<string | null>(null);

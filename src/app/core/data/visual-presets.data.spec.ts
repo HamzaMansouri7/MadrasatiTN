@@ -208,3 +208,13 @@ describe('VISUAL_PRESETS', () => {
     });
   });
 });
+
+describe('wave 2 commands', () => {
+  it('map the new commands to their layout and theme', () => {
+    expect(VISUAL_PRESETS['/herbarium']).toMatchObject({ presetId: 'idcard', themeId: 'herbarium' });
+    expect(VISUAL_PRESETS['/illustratedmap']).toMatchObject({ presetId: 'pathmap', themeId: 'kids' });
+    expect(VISUAL_PRESETS['/treasuremap']).toMatchObject({ presetId: 'pathmap', themeId: 'encyclopedia' });
+    expect(VISUAL_PRESETS['/boardgame']).toMatchObject({ presetId: 'boardgame', themeId: 'kids' });
+    expect(parseVisualCommand('/treasuremap Les régions de la Tunisie')?.command).toBe('/treasuremap');
+  });
+});

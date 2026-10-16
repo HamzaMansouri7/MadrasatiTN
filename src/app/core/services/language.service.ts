@@ -403,7 +403,8 @@ export class LanguageService {
     timeAgoDay: { fr: 'Il y a {count} j', ar: 'منذ {count} يوم' },
   };
 
-  translateGrade(grade?: string | null): string {
+  /** `lang` forces the output language (e.g. a sheet's own language) instead of the UI language. */
+  translateGrade(grade?: string | null, lang?: 'ar' | 'fr'): string {
     if (!grade) return '';
     const map: Record<string, { fr: string; ar: string }> = {
       '1ère Année': { fr: '1ère Année', ar: 'السنة الأولى ابتدائي' },
@@ -419,22 +420,23 @@ export class LanguageService {
     };
     const found = map[grade];
     if (!found) return grade;
-    return this.lang() === 'ar' ? found.ar : found.fr;
+    return (lang ?? this.lang()) === 'ar' ? found.ar : found.fr;
   }
 
-  translateSubject(subject?: string | null): string {
+  translateSubject(subject?: string | null, lang?: 'ar' | 'fr'): string {
     if (!subject) return '';
+    const ar = (lang ?? this.lang()) === 'ar';
     const norm = subject.toLowerCase().trim();
-    if (norm.includes('math')) return this.lang() === 'ar' ? 'الرياضيات' : 'Mathématiques';
-    if (norm.includes('fran')) return this.lang() === 'ar' ? 'اللغة الفرنسية' : 'Français';
-    if (norm.includes('arab') || norm.includes('عرب')) return this.lang() === 'ar' ? 'اللغة العربية' : 'Arabe';
+    if (norm.includes('math')) return ar ? 'الرياضيات' : 'Mathématiques';
+    if (norm.includes('fran')) return ar ? 'اللغة الفرنسية' : 'Français';
+    if (norm.includes('arab') || norm.includes('عرب')) return ar ? 'اللغة العربية' : 'Arabe';
     if (norm.includes('scien') || norm.includes('éveil') || norm.includes('ايقاظ') || norm.includes('إيقاظ')) {
-      return this.lang() === 'ar' ? 'الإيقاظ العلمي' : 'Éveil Scientifique';
+      return ar ? 'الإيقاظ العلمي' : 'Éveil Scientifique';
     }
-    if (norm.includes('islam') || norm.includes('إسلام')) return this.lang() === 'ar' ? 'التربية الإسلامية' : 'Éducation Islamique';
-    if (norm.includes('hist') || norm.includes('géo') || norm.includes('تاريخ')) return this.lang() === 'ar' ? 'التاريخ والجغرافيا' : 'Histoire & Géo';
-    if (norm.includes('angl') || norm.includes('إنكليز') || norm.includes('إنجليز')) return this.lang() === 'ar' ? 'اللغة الإنجليزية' : 'Anglais';
-    if (norm.includes('info') || norm.includes('إعلام')) return this.lang() === 'ar' ? 'الإعلامية' : 'Informatique';
+    if (norm.includes('islam') || norm.includes('إسلام')) return ar ? 'التربية الإسلامية' : 'Éducation Islamique';
+    if (norm.includes('hist') || norm.includes('géo') || norm.includes('تاريخ')) return ar ? 'التاريخ والجغرافيا' : 'Histoire & Géo';
+    if (norm.includes('angl') || norm.includes('إنكليز') || norm.includes('إنجليز')) return ar ? 'اللغة الإنجليزية' : 'Anglais';
+    if (norm.includes('info') || norm.includes('إعلام')) return ar ? 'الإعلامية' : 'Informatique';
     return subject;
   }
 

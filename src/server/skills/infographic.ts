@@ -290,6 +290,37 @@ export const INFOGRAPHIC_SCHEMA = {
   required: ['preset', 'title', 'items', 'remember'],
 };
 
+/** Spec blocks that belong to a single preset. */
+const PRESET_BLOCKS: Record<string, InfographicPreset> = {
+  quiz: 'quizcard',
+  certificate: 'certificate',
+  venn: 'venn',
+  idCard: 'idcard',
+  analogy: 'analogy',
+  flyer: 'flyer',
+};
+
+const stripRequired = (node: unknown): void => {
+  if (!node || typeof node !== 'object') return;
+  delete (node as Record<string, unknown>)['required'];
+  Object.values(node as Record<string, unknown>).forEach(stripRequired);
+};
+
+/**
+ * Response schema for one request. A chosen preset keeps only its own block, with its required
+ * fields, so the model fills it fully and can't fail on another preset's half-filled block.
+ * Auto keeps every block but optional; thin blocks then get the quality retry.
+ */
+export function infographicSchemaFor(preset: InfographicPreset | 'auto'): typeof INFOGRAPHIC_SCHEMA {
+  const schema = structuredClone(INFOGRAPHIC_SCHEMA);
+  const props = schema.properties as Record<string, unknown>;
+  for (const [key, owner] of Object.entries(PRESET_BLOCKS)) {
+    if (preset === 'auto') stripRequired(props[key]);
+    else if (owner !== preset) delete props[key];
+  }
+  return schema;
+}
+
 const PRESET_BRIEF: Record<InfographicPreset, string> = {
   'hero-cards':
     'hero-cards : un élément héros (hero.label = lettre, nombre, mot ou formule très court) et 3 à 6 cartes, une par notion ou exemple (5 nombres = 5 cartes).',
@@ -322,6 +353,10 @@ const PRESET_BRIEF: Record<InfographicPreset, string> = {
     'idcard : fiche d’identité ou carte signalétique (animal, végétal, personnage historique ou élément scientifique) ; remplis "idCard" avec entityName, category, stats et faits marquants.',
   analogy:
     'analogy : comparaison par analogie visuelle reliant un fait familier du quotidien à une notion abstraite complexe ; remplis "analogy" avec familiar, abstract et bridgeNote.',
+  pathmap:
+    'pathmap : parcours illustré sur une carte (stations dans l’ordre, du départ à l’arrivée) ; chaque item = une station : title court (lieu ou étape), text = ce qu’on y découvre ou ce qu’on y fait.',
+  boardgame:
+    'boardgame : jeu de plateau de révision imprimable ; chaque item = une case : title = 1 à 3 mots (la notion), text = une question courte et précise à laquelle l’élève répond oralement ; "remember" = 2 ou 3 règles du jeu très courtes.',
   flyer:
     'flyer : affiche ou annonce scolaire pour un événement, une sortie ou un projet ; remplis "flyer" avec badge, eventTitle, date, lieu, sections de programme et consigne aux parents. N’invente jamais une date, une heure, un horaire ou une échéance : si l’enseignant ne les donne pas, écris « ........ » à leur place.',
 };
@@ -353,6 +388,8 @@ Règles de choix (seulement parmi les presets listés ci-dessus) :
 - Fiche d'identité d'un animal, plante, personnage ou objet scientifique -> idcard
 - Explication par analogie ou métaphore concrète -> analogy
 - Affiche d'événement, sortie scolaire ou annonce -> flyer
+- Parcours, voyage, chasse au trésor ou étapes sur une carte -> pathmap
+- Jeu de révision, jeu de plateau ou jeu de l'oie -> boardgame
 - Notion clé avec 3 à 6 exemples fondamentaux -> hero-cards
 - Si le contenu dépasse le maximum de cartes d'un preset, choisis un autre preset : ne fusionne jamais.`;
 
@@ -375,6 +412,13 @@ Règles de choix (seulement parmi les presets listés ci-dessus) :
 - picture-rows : 2 à 5 items ; item.text = phrase complète de 140 caractères maximum ; chaque item a un imagePrompt qui montre l'action de la phrase.
 - steps-interface : 3 à 6 items = étapes dans l'ordre ; "interface" = écran simplifié : appName (nom de l'outil), tabs (onglets), fields (2 à 4) avec kind = choice (avec 2 à 5 options), short, long ou button, label et hint courts. L'écran est dessiné par le code (texte seulement). Illustrations : chaque item a un imagePrompt = UNE petite icône d'objet concret (ex. "a pencil and a checklist"), et hero = { label: nom court de l'outil, imagePrompt: une icône d'objet pour l'en-tête } ; jamais de capture d'écran ni de logo de marque.
 - remember : 1 à 3 points à retenir, très courts.
+- quizcard : "quiz" = question, 4 choices (un seul isCorrect = true), explanation, hint.
+- venn : "venn" = setA et setB (title + 2 à 4 items chacun) et overlap (2 à 4 items communs).
+- idcard : "idCard" = entityName, category, 3 à 6 stats (label + value courte) et 2 à 4 facts ; pour une plante, les stats décrivent ses parties (racine, tige, feuille, fleur, fruit) et son milieu.
+- analogy : "analogy" = familiar et abstract (concept, description, 2 à 3 keyPoints chacun) et bridgeNote.
+- flyer : "flyer" = badge, eventTitle, date, location et 1 à 3 sections (title + 2 à 4 détails).
+- pathmap : 3 à 8 items = stations dans l'ordre du parcours ; item.title = 40 caractères maximum ; chaque item peut avoir un imagePrompt = un petit repère concret du lieu (ex. "an old stone well").
+- boardgame : 8 à 12 items = cases du plateau dans l'ordre ; item.text = une question de 100 caractères maximum, réponse courte attendue ; pas d'imagePrompt ; "remember" = les règles du jeu.
 - comparison : remplis "columns" avec EXACTEMENT 2 colonnes (title, 2 à 5 points courts, imagePrompt) ; "items" = points communs (0 à 4).
 - lesson-stages : remplis "stages" avec 2 à 5 étapes (stageNumber, title, teacherActivity, learnerActivity, duration ex. "10 min", et imagePrompt = une petite scène concrète en anglais) ; "items" = notions clés (0 à 5).
 - central-picture : hero.label = le thème en 1 à 3 mots, hero.caption = une phrase complète de 120 caractères maximum, hero.wantsImage = true et hero.imagePrompt = la scène centrale ; "items" = 2 à 6 cartes (rôles, exemples) ; "quote" facultatif = une phrase d'encouragement.

@@ -52,6 +52,7 @@ import {
   enforceExactExerciseCount,
   lessonPlanSkill,
   infographicSkill,
+  infographicSchemaFor,
   seriesSkill,
   SERIES_PLAN_SCHEMA,
   SERIES_PANEL_SCHEMA,
@@ -1173,13 +1174,24 @@ aiRouter.post(
         return aiGenerateJSON(
           infographicSkill.chain,
           parts.length ? [{ text: `${text}\n\n${FILE_SOURCE_RULE}` }, ...parts] : text,
-          infographicSkill.schema,
+          infographicSchemaFor(wanted),
           infographicSkill.temperature,
         );
       };
 
       let raw = await generateOnce();
       let spec = normalizeInfographicSpec(normalizeDigits(raw), fallbackPreset);
+      // One retry when the answer is unusable (empty block, missing title), instead of failing outright.
+      if (!spec) {
+        try {
+          raw = await generateOnce(
+            `\n\nCORRECTION OBLIGATOIRE : ta réponse précédente était inutilisable. Remplis "title" et le bloc du preset "${fallbackPreset}" en entier.`,
+          );
+          spec = normalizeInfographicSpec(normalizeDigits(raw), fallbackPreset);
+        } catch (e) {
+          console.warn("[infographic] empty-spec retry failed", e);
+        }
+      }
       // One corrective retry when the content breaks a rule the normalizer can't fix.
       const issues = spec ? specQualityIssues(spec) : [];
       if (issues.length) {

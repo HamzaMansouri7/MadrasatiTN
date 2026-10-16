@@ -805,6 +805,127 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
         'Automatically choose the most appropriate event sections, logistics details, icons, and supporting visual elements according to the topic.'
       ),
   },
+
+  '/herbarium': {
+    command: '/herbarium',
+    name: 'Herbarium Specimen Sheet',
+    nameFr: "Planche d’herbier",
+    nameAr: 'لوحة نبات (هرباريوم)',
+    summary: 'Pressed-plant specimen sheet with the plant portrait, its parts as labelled stats, and observation notes.',
+    basePrompt: 'Create a botanical specimen sheet for a plant with its parts and observation notes.',
+    styleBlock:
+      'Herbarium — vintage botanical specimen plate with a pressed-plant portrait, plant parts listed as labelled notes (root, stem, leaf, flower, fruit), habitat, and short observation notes.',
+    themeId: 'herbarium',
+    presetId: 'idcard',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'specimen',
+        description: 'Text-free botanical illustration of the whole plant',
+        count: 1,
+        textFree: true,
+      }
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Sheet title', required: true },
+      { name: 'entityName', type: 'string', description: 'Plant name', required: true },
+      { name: 'stats', type: 'Array<{label: string, value: string}>', description: 'Plant parts and habitat notes', required: true },
+      { name: 'facts', type: 'string[]', description: 'Observation notes', required: true },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Herbarium — vintage botanical specimen plate with a pressed-plant portrait, plant parts listed as labelled notes (root, stem, leaf, flower, fruit), habitat, and short observation notes.',
+        'Automatically choose the most appropriate plant parts, observation notes, and supporting visual elements according to the topic.'
+      ),
+  },
+  '/illustratedmap': {
+    command: '/illustratedmap',
+    name: 'Illustrated Map Path',
+    nameFr: "Carte illustrée",
+    nameAr: 'خريطة مصورة',
+    summary: 'Numbered stations along a dashed trail from start to finish, each with a short explanation and a small landmark picture.',
+    basePrompt: 'Create an illustrated map with ordered stations along a path.',
+    styleBlock:
+      'Illustrated Map — friendly illustrated map with a dashed trail linking numbered stations from start to finish, each station with a landmark and a short explanation.',
+    themeId: 'kids',
+    presetId: 'pathmap',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'landmarks',
+        description: 'Small text-free landmark illustration per station',
+        count: 5,
+        textFree: true,
+      }
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Sheet title', required: true },
+      { name: 'items', type: 'Array<{title: string, text: string}>', description: 'Ordered stations along the path', required: true },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Illustrated Map — friendly illustrated map with a dashed trail linking numbered stations from start to finish, each station with a landmark and a short explanation.',
+        'Automatically choose the most appropriate number of stations, landmarks, and supporting visual elements according to the topic.'
+      ),
+  },
+  '/treasuremap': {
+    command: '/treasuremap',
+    name: 'Treasure Map Quest',
+    nameFr: "Carte au trésor",
+    nameAr: 'خريطة الكنز',
+    summary: 'Old parchment treasure map where each numbered station is a learning step on the way to the treasure.',
+    basePrompt: 'Create a treasure map learning quest with ordered stations.',
+    styleBlock:
+      'Treasure Map — antique parchment treasure map with a dashed trail, numbered stations as learning challenges, and the treasure at the finish.',
+    themeId: 'encyclopedia',
+    presetId: 'pathmap',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [
+      {
+        name: 'landmarks',
+        description: 'Small text-free antique map landmark per station',
+        count: 5,
+        textFree: true,
+      }
+    ],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Sheet title', required: true },
+      { name: 'items', type: 'Array<{title: string, text: string}>', description: 'Ordered quest stations', required: true },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Treasure Map — antique parchment treasure map with a dashed trail, numbered stations as learning challenges, and the treasure at the finish.',
+        'Automatically choose the most appropriate number of quest stations, landmarks, and supporting visual elements according to the topic.'
+      ),
+  },
+  '/boardgame': {
+    command: '/boardgame',
+    name: 'Revision Board Game',
+    nameFr: "Jeu de plateau de révision",
+    nameAr: 'لعبة لوحية للمراجعة',
+    summary: 'Printable snake board of question squares between start and finish, with short game rules.',
+    basePrompt: 'Create a printable revision board game with one question per square.',
+    styleBlock:
+      'Board Game — printable snake board with numbered question squares between a start and a finish square, plus short game rules.',
+    themeId: 'kids',
+    presetId: 'boardgame',
+    defaultModel: 'nvidia-flux-1-dev',
+    imageSlots: [],
+    schemaFields: [
+      { name: 'title', type: 'string', description: 'Sheet title', required: true },
+      { name: 'items', type: 'Array<{title: string, text: string}>', description: 'Board squares, one short question each', required: true },
+      { name: 'remember', type: 'string[]', description: 'Game rules' },
+    ],
+    compilePrompt: (topic: string) =>
+      buildBasePrompt(
+        topic,
+        'Board Game — printable snake board with numbered question squares between a start and a finish square, plus short game rules.',
+        'Automatically choose the most appropriate number of squares and questions according to the topic.'
+      ),
+  },
 };
 
 export const parseVisualCommand = (input: string): { command: VisualCommand; topic: string } | null => {

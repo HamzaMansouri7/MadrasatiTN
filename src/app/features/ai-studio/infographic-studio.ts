@@ -27,6 +27,8 @@ interface PresetOption {
   ar: string;
 }
 
+type StudioPanel = 'composition' | 'commands' | 'style';
+
 /**
  * AI Studio result screen. The only form is the Create hub: this page reads the source from
  * the store and generates at once; a studio bar (same structure as the editor) holds the
@@ -69,16 +71,20 @@ interface PresetOption {
             </div>
 
             <div class="flex flex-wrap items-center gap-2">
-              <button
-                type="button"
-                (click)="settingsOpen.set(!settingsOpen())"
-                [attr.aria-expanded]="settingsOpen()"
-                aria-controls="ai-settings"
-                [class]="settingsOpen() ? 'bg-[#FBF8F1] text-[#14251D]' : 'bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 text-[#FBF8F1]'"
-                class="border border-[#FBF8F1]/20 px-4 min-h-11 rounded-xl text-sm font-semibold flex items-center gap-2 cursor-pointer transition-colors">
-                <span class="material-icons text-base" aria-hidden="true">tune</span>
-                {{ lang.tr('Réglages', 'الإعدادات') }}
-              </button>
+              <div role="group" [attr.aria-label]="lang.tr('Panneau en haut', 'اللوحة في الأعلى')" class="flex items-center gap-1 p-1 rounded-xl border border-[#FBF8F1]/20 bg-[#FBF8F1]/10">
+                @for (panel of panels; track panel.id) {
+                  <button
+                    type="button"
+                    (click)="topPanel.set(panel.id)"
+                    [attr.aria-pressed]="topPanel() === panel.id"
+                    [attr.aria-label]="lang.tr(panel.fr, panel.ar)"
+                    [class]="topPanel() === panel.id ? 'bg-[#FBF8F1] text-[#14251D]' : 'text-[#FBF8F1] hover:bg-[#FBF8F1]/15'"
+                    class="px-3 min-h-9 rounded-lg text-sm font-semibold flex items-center gap-1.5 cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#F2C14E]">
+                    <span class="material-icons text-base" aria-hidden="true">{{ panel.icon }}</span>
+                    <span class="hidden md:inline">{{ lang.tr(panel.fr, panel.ar) }}</span>
+                  </button>
+                }
+              </div>
               <button
                 type="button"
                 (click)="regenerate()"
@@ -137,9 +143,8 @@ interface PresetOption {
         <app-studio-session-banner [session]="session" />
 
         <!-- Editor workspace: content panel | A4 sheet | design panel. Side panels scroll on their own. -->
-        <div [class]="settingsOpen() || needsSource() ? 'grid grid-cols-1 xl:grid-cols-[340px_minmax(0,1fr)_300px] gap-5 items-start' : ''">
+        <div class="grid grid-cols-1 xl:grid-cols-[340px_minmax(0,1fr)_300px] gap-5 items-start">
 
-          @if (settingsOpen() || needsSource()) {
             <!-- Content panel -->
             <aside id="ai-settings" class="no-print xl:sticky xl:top-4 xl:max-h-[calc(100vh-2rem)] xl:overflow-y-auto space-y-4 min-w-0" [attr.aria-label]="lang.tr('Contenu', 'المحتوى')">
               @if (needsSource()) {
@@ -199,7 +204,6 @@ interface PresetOption {
                 </div>
               }
             </aside>
-          }
 
           <!-- The A4 sheet -->
           <section id="infographic-sheet" class="min-w-0 space-y-4 scroll-mt-4">
@@ -223,10 +227,9 @@ interface PresetOption {
             </div>
           </section>
 
-          @if (settingsOpen() || needsSource()) {
             <!-- Design panel -->
-            <aside class="no-print xl:sticky xl:top-4 xl:max-h-[calc(100vh-2rem)] xl:overflow-y-auto space-y-4 min-w-0" [attr.aria-label]="lang.tr('Mise en page', 'التصميم')">
-              <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4">
+            <aside class="no-print xl:sticky xl:top-4 xl:max-h-[calc(100vh-2rem)] xl:overflow-y-auto flex flex-col gap-4 min-w-0" [attr.aria-label]="lang.tr('Mise en page', 'التصميم')">
+              <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4" [style.order]="panelOrder('composition')">
                 <div class="flex items-baseline justify-between gap-2 mb-2">
                   <legend class="font-display font-semibold text-sm text-[#14251D]">{{ lang.tr('Composition', 'التركيب') }}</legend>
                   @if (autoPicked(); as picked) {
@@ -256,8 +259,8 @@ interface PresetOption {
                 </div>
               </fieldset>
 
-              <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4">
-                <legend class="font-display font-semibold text-sm text-[#14251D] mb-2">{{ lang.tr('Préréglage rapide', 'النمط السريع') }}</legend>
+              <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4" [style.order]="panelOrder('commands')">
+                <div class="mb-2"><legend class="font-display font-semibold text-sm text-[#14251D]">{{ lang.tr('Préréglage rapide', 'النمط السريع') }}</legend></div>
                 <div class="flex flex-wrap gap-1.5">
                   @for (c of commands; track c.cmd) {
                     <button
@@ -275,8 +278,8 @@ interface PresetOption {
                 </div>
               </fieldset>
 
-              <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4">
-                <legend class="font-display font-semibold text-sm text-[#14251D] mb-2">{{ lang.tr('Style', 'الأسلوب') }}</legend>
+              <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4" [style.order]="panelOrder('style')">
+                <div class="mb-2"><legend class="font-display font-semibold text-sm text-[#14251D]">{{ lang.tr('Style', 'الأسلوب') }}</legend></div>
                 <div class="grid grid-cols-2 gap-1.5">
                   @for (th of themes; track th.id) {
                     <button
@@ -318,7 +321,6 @@ interface PresetOption {
                 }
               </fieldset>
             </aside>
-          }
         </div>
       </main>
 
@@ -476,6 +478,8 @@ export class InfographicStudioComponent implements OnInit {
     { id: 'idcard', icon: 'badge', fr: "Fiche d'identité", ar: 'بطاقة هوية' },
     { id: 'analogy', icon: 'sync_alt', fr: 'Analogie', ar: 'مقاربة تمثيلية' },
     { id: 'flyer', icon: 'campaign', fr: 'Flyer & Annonce', ar: 'إعلان ومطوية' },
+    { id: 'pathmap', icon: 'map', fr: 'Carte parcours', ar: 'خريطة مسار' },
+    { id: 'boardgame', icon: 'casino', fr: 'Jeu de plateau', ar: 'لعبة لوحية' },
   ];
 
   readonly themes: { id: InfographicTheme; icon: string; fr: string; ar: string; hintFr: string; hintAr: string }[] = [
@@ -517,6 +521,10 @@ export class InfographicStudioComponent implements OnInit {
     { cmd: '/idcard', icon: 'badge', fr: 'Fiche ID', ar: 'بطاقة هوية' },
     { cmd: '/analogy', icon: 'sync_alt', fr: 'Analogie', ar: 'تمثيل' },
     { cmd: '/flyer', icon: 'campaign', fr: 'Flyer', ar: 'إعلان' },
+    { cmd: '/herbarium', icon: 'local_florist', fr: 'Herbier', ar: 'لوحة نبات' },
+    { cmd: '/illustratedmap', icon: 'map', fr: 'Carte illustrée', ar: 'خريطة مصورة' },
+    { cmd: '/treasuremap', icon: 'explore', fr: 'Carte au trésor', ar: 'خريطة الكنز' },
+    { cmd: '/boardgame', icon: 'casino', fr: 'Jeu de plateau', ar: 'لعبة لوحية' },
   ];
   readonly activeCommand = signal<VisualCommand | null>(null);
 
@@ -629,7 +637,17 @@ export class InfographicStudioComponent implements OnInit {
   }
 
   readonly contentOpen = signal(false);
-  readonly settingsOpen = signal(true);
+  readonly panels: { id: StudioPanel; icon: string; fr: string; ar: string }[] = [
+    { id: 'composition', icon: 'dashboard', fr: 'Composition', ar: 'التركيب' },
+    { id: 'commands', icon: 'bolt', fr: 'Préréglage rapide', ar: 'النمط السريع' },
+    { id: 'style', icon: 'palette', fr: 'Style', ar: 'الأسلوب' },
+  ];
+  /** Side panel shown first; the others keep their usual order below it. */
+  readonly topPanel = signal<StudioPanel>('composition');
+
+  panelOrder(id: StudioPanel): number {
+    return id === this.topPanel() ? 0 : this.panels.findIndex((p) => p.id === id) + 1;
+  }
 
   readonly grades = PRIMARY_GRADES;
   readonly subjects = PRIMARY_SUBJECTS;

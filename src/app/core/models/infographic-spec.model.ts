@@ -16,7 +16,9 @@ export type InfographicPreset =
   | 'venn'
   | 'idcard'
   | 'analogy'
-  | 'flyer';
+  | 'flyer'
+  | 'pathmap'
+  | 'boardgame';
 
 /** Look of the sheet (design tokens only). Scoped to AI Studio sheets, never the app UI. */
 export type InfographicTheme =
@@ -51,6 +53,8 @@ export const INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'idcard',
   'analogy',
   'flyer',
+  'pathmap',
+  'boardgame',
 ];
 /**
  * Presets that have a renderer today. The model may only pick from these (schema enum + Auto list);
@@ -74,6 +78,8 @@ export const ENABLED_INFOGRAPHIC_PRESETS: readonly InfographicPreset[] = [
   'idcard',
   'analogy',
   'flyer',
+  'pathmap',
+  'boardgame',
 ];
 export const INFOGRAPHIC_THEMES: readonly InfographicTheme[] = [
   'kids',
@@ -337,4 +343,6 @@ export const PRESET_ITEM_LIMITS: Record<InfographicPreset, { min: number; max: n
   idcard: { min: 0, max: 4 },
   analogy: { min: 0, max: 4 },
   flyer: { min: 0, max: 4 },
+  pathmap: { min: 3, max: 8 },
+  boardgame: { min: 6, max: 14 },
 };
