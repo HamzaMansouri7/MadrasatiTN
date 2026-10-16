@@ -10,8 +10,8 @@ import { LanguageService } from '@core';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="no-print bg-[#14251D] text-[#FBF8F1] rounded-[28px] p-5">
-      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+    <div class="no-print bg-[#14251D] text-[#FBF8F1] rounded-2xl px-5 py-3">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
         <div class="flex items-center gap-3 min-w-0">
           <div class="min-w-0">
             <div class="flex flex-wrap items-center gap-2">
@@ -31,7 +31,7 @@ import { LanguageService } from '@core';
                 </span>
               }
             </div>
-            <h1 dir="auto" class="font-display text-xl sm:text-2xl font-semibold mt-1 truncate max-w-[70vw] lg:max-w-xl">
+            <h1 dir="auto" class="font-display text-lg sm:text-xl font-semibold mt-0.5 truncate max-w-[70vw] lg:max-w-xl">
               {{ heading() }}
             </h1>
           </div>
