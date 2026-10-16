@@ -1,288 +1,262 @@
-<div class="space-y-5 pb-28 relative">
+<div class="space-y-5 pb-16 relative">
 
-  <!-- Studio Top Navigation & Publishing Bar -->
-  <div class="bg-[#0B2947] text-white rounded-[24px] p-5 shadow-sm">
-    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-      <div class="flex items-center gap-3">
+  <!-- Studio bar: shared with every creation tool (badge, title, status, settings, actions) -->
+  <app-studio-bar
+    class="block print:hidden"
+    [badge]="studioBadge().label"
+    [icon]="studioBadge().icon"
+    [heading]="docTitle() || lang.tr('Document sans titre', 'وثيقة جديدة بدون عنوان')"
+    [details]="[lang.translateGrade(docGrade()), lang.translateSubject(docSubject())]"
+    [status]="session.busy() ? lang.tr('Génération…', 'جارٍ التوليد…') : isAutoSaved() ? lang.tr('Enregistré', 'تم الحفظ') : lang.tr('Modifications…', 'تعديلات جارية…')"
+    [busy]="session.busy() || !isAutoSaved()"
+    [settingsOpen]="showMetadataPanel()"
+    settingsId="editor-settings"
+    (settingsToggle)="showMetadataPanel.set(!showMetadataPanel())">
+
+    <!-- Mobile: switch between inspector, page and structure -->
+    <div class="flex lg:hidden w-full bg-[#FBF8F1]/10 p-1 rounded-xl items-center gap-1 border border-[#FBF8F1]/20" role="group" [attr.aria-label]="lang.tr('Panneaux', 'اللوحات')">
+      @for (p of mobilePanes; track p.id) {
         <button
-          (click)="exitStudio()"
-          class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors cursor-pointer text-white"
-          [title]="lang.tr('Retour', 'رجوع')">
-          <span class="material-icons text-xl rtl:rotate-180">arrow_back</span>
+          type="button"
+          (click)="mobilePane.set(p.id)"
+          [attr.aria-pressed]="mobilePane() === p.id"
+          [class]="mobilePane() === p.id ? 'bg-[#FBF8F1] text-[#14251D]' : 'text-[#B7C7BC] hover:text-[#FBF8F1]'"
+          class="flex-1 min-h-11 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer">
+          <span class="material-icons text-sm" aria-hidden="true">{{ p.icon }}</span>
+          {{ lang.tr(p.fr, p.ar) }}
         </button>
-
-        <div class="min-w-0">
-          <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
-            <!-- Studio Mode Tag: Teacher Exam vs Parent Home Practice vs Article -->
-            @if (isParentMode()) {
-              <span class="bg-[#FFF4D8] text-[#9E6A00] text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap border border-[#E0AA32]/40 flex items-center gap-1">
-                <span class="material-icons text-xs">home</span>
-                {{ lang.tr('Atelier Maison — Révision', 'ورشة التمارين المنزلية') }}
-              </span>
-            } @else if (studioShell() === 'A') {
-              <span class="bg-[#E0AA32] text-[#0B2947] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
-                Studio A4 — {{ lang.tr('Exam / Exercice', 'امتحان / تمرين') }}
-              </span>
-            } @else {
-              <span class="bg-[#7C3AED] text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider whitespace-nowrap">
-                Studio B — {{ lang.tr('Article Medium', 'مقال تربوي') }}
-              </span>
-            }
-            <span class="text-[11px] text-[#8CA9C4] inline-flex items-center gap-1 whitespace-nowrap">
-              <span class="w-1.5 h-1.5 rounded-full" [class]="isAutoSaved() ? 'bg-[#4ADE80]' : 'bg-[#E0AA32] animate-pulse'"></span>
-              {{ isAutoSaved() ? lang.tr('Enregistré', 'تم الحفظ') : lang.tr('Modifications...', 'تعديلات جارية...') }}
-            </span>
-          </div>
-          <h1 dir="auto" class="font-display text-xl sm:text-2xl font-semibold text-white mt-1 truncate max-w-[60vw] lg:max-w-md">
-            {{ docTitle() || lang.tr('Document sans titre', 'وثيقة جديدة بدون عنوان') }}
-          </h1>
-        </div>
-      </div>
-
-      <!-- Studio Actions -->
-      <div class="flex flex-wrap items-center gap-2">
-        <!-- Mobile pane toggles (Inspector / Outline) -->
-        <div class="flex lg:hidden bg-white/10 p-1 rounded-xl items-center gap-1 border border-white/15">
-          <button
-            (click)="mobilePane.set(mobilePane() === 'inspector' ? 'canvas' : 'inspector')"
-            [class]="mobilePane() === 'inspector' ? 'bg-[#007CC2] text-white font-semibold' : 'text-[#8CA9C4] hover:text-white'"
-            class="px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1.5 transition-all cursor-pointer">
-            <span class="material-icons text-sm">tune</span>
-            <span>{{ lang.tr('Inspecteur', 'المفتّش') }}</span>
-          </button>
-          <button
-            (click)="mobilePane.set(mobilePane() === 'canvas' ? 'canvas' : 'canvas')"
-            [class]="mobilePane() === 'canvas' ? 'bg-[#007CC2] text-white font-semibold' : 'text-[#8CA9C4] hover:text-white'"
-            class="px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1.5 transition-all cursor-pointer">
-            <span class="material-icons text-sm">description</span>
-            <span>{{ lang.tr('Page', 'الصفحة') }}</span>
-          </button>
-          <button
-            (click)="mobilePane.set(mobilePane() === 'outline' ? 'canvas' : 'outline')"
-            [class]="mobilePane() === 'outline' ? 'bg-[#007CC2] text-white font-semibold' : 'text-[#8CA9C4] hover:text-white'"
-            class="px-3 py-1.5 rounded-[8px] text-xs flex items-center gap-1.5 transition-all cursor-pointer">
-            <span class="material-icons text-sm">account_tree</span>
-            <span>{{ lang.tr('Structure', 'الهيكل') }}</span>
-          </button>
-        </div>
-
-        <!-- Settings / Metadata Drawer Toggle -->
-        <button
-          (click)="showMetadataPanel.set(!showMetadataPanel())"
-          [class]="showMetadataPanel() ? 'bg-white text-[#0B2947]' : 'bg-white/10 hover:bg-white/20 text-white'"
-          class="border border-white/20 px-3 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
-          <span class="material-icons text-sm">tune</span>
-          <span class="hidden sm:inline">{{ lang.tr('Configuration', 'الإعدادات') }}</span>
-          <span class="material-icons text-xs">{{ showMetadataPanel() ? 'expand_less' : 'expand_more' }}</span>
-        </button>
-
-        <!-- Print Trigger -->
-        <button
-          (click)="triggerPrintDialog()"
-          class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
-          <span class="material-icons text-sm">print</span>
-          <span class="hidden sm:inline">{{ lang.t('printBtn') }}</span>
-        </button>
-
-        <!-- Publish Button -->
-        <button
-          (click)="openPublishModal()"
-          class="bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 cursor-pointer shadow-sm">
-          <span class="material-icons text-sm">publish</span>
-          <span>{{ lang.tr('Publier & Partager', 'نشر ومشاركة') }}</span>
-        </button>
-      </div>
+      }
     </div>
-  </div>
+
+    <label [class]="barBtn" class="!cursor-default !pe-2">
+      <span class="material-icons text-base" aria-hidden="true">translate</span>
+      <span class="sr-only">{{ lang.tr('Langue de la fiche', 'لغة الورقة') }}</span>
+      <select [value]="docLanguage()" (change)="setDocLanguage($any($event.target).value)"
+        class="bg-transparent text-[#FBF8F1] text-sm font-semibold outline-none cursor-pointer">
+        <option value="ar" class="text-[#14251D]" [selected]="docLanguage() === 'ar'">العربية</option>
+        <option value="fr" class="text-[#14251D]" [selected]="docLanguage() === 'fr'">Français</option>
+      </select>
+    </label>
+
+    <button type="button" (click)="manualSave()" [class]="barBtn" [title]="lang.tr('Sauvegarder', 'حفظ المسودة')" [attr.aria-label]="lang.tr('Sauvegarder', 'حفظ المسودة')">
+      <span class="material-icons text-base" aria-hidden="true">save</span>
+    </button>
+
+    <button type="button" (click)="triggerPrintDialog()" [class]="barBtn" [title]="lang.t('printBtn')" [attr.aria-label]="lang.t('printBtn')">
+      <span class="material-icons text-base" aria-hidden="true">print</span>
+    </button>
+
+    <button type="button" (click)="openAiPromptModal()"
+      class="bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-4 min-h-11 rounded-xl text-sm flex items-center gap-2 cursor-pointer transition-opacity">
+      <span class="material-icons text-base" aria-hidden="true">auto_awesome</span>
+      {{ lang.tr('Assistant IA', 'مساعد الذكاء الاصطناعي') }}
+    </button>
+
+    <button type="button" (click)="openPublishModal()"
+      class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 min-h-11 rounded-xl text-sm flex items-center gap-2 cursor-pointer transition-colors shadow-sm">
+      <span class="material-icons text-base" aria-hidden="true">publish</span>
+      {{ lang.tr('Publier', 'نشر') }}
+    </button>
+  </app-studio-bar>
 
   <app-studio-session-banner [session]="session" />
 
   <!-- Document Metadata Header (Collapsible to preserve vertical space) -->
   @if (showMetadataPanel()) {
-    <div class="bg-white rounded-[20px] p-5 border border-[#E3ECF2] shadow-xs space-y-4 animate-fade-in">
-      <!-- Constrained width selector cards to avoid horizontal stretching on large viewports -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs max-w-4xl xl:max-w-5xl">
-        <div class="max-w-sm">
-          <span class="block font-semibold text-[#102A43] mb-1">
-            {{ lang.tr('Type de document', 'نوع الوثيقة') }}
-          </span>
-          <div class="grid grid-cols-2 gap-2" role="radiogroup" [attr.aria-label]="lang.tr('Type de document', 'نوع الوثيقة')">
-            @for (opt of docTypeOptions; track opt.value) {
-              <button
-                type="button"
-                role="radio"
-                [attr.aria-checked]="docType() === opt.value"
-                (click)="setDocType(opt.value)"
-                [class]="docType() === opt.value
-                  ? 'border-[#007CC2] bg-[#007CC2]/8 text-[#102A43] ring-1 ring-[#007CC2]'
-                  : 'border-[#E3ECF2] bg-[#F7F9FB] text-[#486581] hover:border-[#007CC2]/50'"
-                class="flex items-center gap-2 rounded-[10px] border px-2.5 py-1.5 text-right transition-all cursor-pointer min-h-[38px]">
-                <span
-                  [class]="docType() === opt.value ? 'bg-[#007CC2] text-white' : 'bg-white text-[#007CC2]'"
-                  class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
-                <span class="min-w-0">
-                  <span class="block text-xs font-semibold leading-tight">{{ lang.tr(opt.fr, opt.ar) }}</span>
-                  <span class="block text-[10px] opacity-70 leading-tight">{{ opt.sub }}</span>
-                </span>
-              </button>
-            }
+    <div id="editor-settings" class="bg-white rounded-2xl p-5 border border-[#E7DFCF] shadow-sm animate-fade-in print:hidden">
+      <div class="grid grid-cols-1 xl:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-6 items-start">
+        <!-- Document type, subject and level -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+          <div>
+            <span class="block font-semibold text-[#14251D] mb-1">
+              {{ lang.tr('Type de document', 'نوع الوثيقة') }}
+            </span>
+            <div class="grid grid-cols-2 gap-2" role="radiogroup" [attr.aria-label]="lang.tr('Type de document', 'نوع الوثيقة')">
+              @for (opt of docTypeOptions; track opt.value) {
+                <button
+                  type="button"
+                  role="radio"
+                  [attr.aria-checked]="docType() === opt.value"
+                  (click)="setDocType(opt.value)"
+                  [class]="docType() === opt.value
+                    ? 'border-[#2D6A4F] bg-[#2D6A4F]/8 text-[#14251D] ring-1 ring-[#2D6A4F]'
+                    : 'border-[#E7DFCF] bg-[#FBF8F1] text-[#5B6B60] hover:border-[#2D6A4F]/50'"
+                  class="flex items-center gap-2 rounded-xl border px-2.5 py-1.5 text-right transition-all cursor-pointer min-h-[38px]">
+                  <span
+                    [class]="docType() === opt.value ? 'bg-[#2D6A4F] text-white' : 'bg-white text-[#2D6A4F]'"
+                    class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
+                  <span class="min-w-0">
+                    <span class="block text-xs font-semibold leading-tight">{{ lang.tr(opt.fr, opt.ar) }}</span>
+                    <span class="block text-[10px] opacity-70 leading-tight">{{ opt.sub }}</span>
+                  </span>
+                </button>
+              }
+            </div>
+          </div>
+
+          <div>
+            <span class="block font-semibold text-[#14251D] mb-1">
+              {{ lang.tr('Matière', 'المادة') }}
+            </span>
+            <div class="grid grid-cols-2 gap-2" role="radiogroup" [attr.aria-label]="lang.tr('Matière', 'المادة')">
+              @for (opt of docSubjectOptions; track opt.value) {
+                <button
+                  type="button"
+                  role="radio"
+                  [attr.aria-checked]="docSubject() === opt.value"
+                  (click)="setDocSubject(opt.value)"
+                  [class]="docSubject() === opt.value
+                    ? 'border-[#2D6A4F] bg-[#2D6A4F]/8 text-[#14251D] ring-1 ring-[#2D6A4F]'
+                    : 'border-[#E7DFCF] bg-[#FBF8F1] text-[#5B6B60] hover:border-[#2D6A4F]/50'"
+                  class="flex items-center gap-2 rounded-xl border px-2 py-1.5 text-right transition-all cursor-pointer min-h-[38px]">
+                  <span
+                    [class]="docSubject() === opt.value ? 'bg-[#2D6A4F] text-white' : 'bg-white text-[#2D6A4F]'"
+                    class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
+                  <span class="text-xs font-semibold leading-tight min-w-0 truncate">{{ lang.tr(opt.fr, opt.ar) }}</span>
+                </button>
+              }
+            </div>
+          </div>
+
+          <div>
+            <span class="block font-semibold text-[#14251D] mb-1">
+              {{ lang.tr('Niveau Scolaire', 'المستوى الدراسي') }}
+            </span>
+            <div class="grid grid-cols-2 gap-2" role="radiogroup" [attr.aria-label]="lang.tr('Niveau Scolaire', 'المستوى الدراسي')">
+              @for (opt of docGradeOptions; track opt.value) {
+                <button
+                  type="button"
+                  role="radio"
+                  [attr.aria-checked]="docGrade() === opt.value"
+                  (click)="setDocGrade(opt.value)"
+                  [class]="docGrade() === opt.value
+                    ? 'border-[#2D6A4F] bg-[#2D6A4F]/8 text-[#14251D] ring-1 ring-[#2D6A4F]'
+                    : 'border-[#E7DFCF] bg-[#FBF8F1] text-[#5B6B60] hover:border-[#2D6A4F]/50'"
+                  class="flex items-center gap-2 rounded-xl border px-2 py-1.5 text-right transition-all cursor-pointer min-h-[38px]">
+                  <span
+                    [class]="docGrade() === opt.value ? 'bg-[#2D6A4F] text-white' : 'bg-white text-[#2D6A4F]'"
+                    class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
+                  <span class="text-xs font-semibold leading-tight min-w-0 truncate">{{ lang.tr(opt.fr, opt.ar) }}</span>
+                </button>
+              }
+            </div>
           </div>
         </div>
 
-        <div class="max-w-sm">
-          <span class="block font-semibold text-[#102A43] mb-1">
-            {{ lang.tr('Matière', 'المادة') }}
-          </span>
-          <div class="grid grid-cols-2 gap-2" role="radiogroup" [attr.aria-label]="lang.tr('Matière', 'المادة')">
-            @for (opt of docSubjectOptions; track opt.value) {
-              <button
-                type="button"
-                role="radio"
-                [attr.aria-checked]="docSubject() === opt.value"
-                (click)="setDocSubject(opt.value)"
-                [class]="docSubject() === opt.value
-                  ? 'border-[#007CC2] bg-[#007CC2]/8 text-[#102A43] ring-1 ring-[#007CC2]'
-                  : 'border-[#E3ECF2] bg-[#F7F9FB] text-[#486581] hover:border-[#007CC2]/50'"
-                class="flex items-center gap-2 rounded-[10px] border px-2 py-1.5 text-right transition-all cursor-pointer min-h-[38px]">
-                <span
-                  [class]="docSubject() === opt.value ? 'bg-[#007CC2] text-white' : 'bg-white text-[#007CC2]'"
-                  class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
-                <span class="text-xs font-semibold leading-tight min-w-0 truncate">{{ lang.tr(opt.fr, opt.ar) }}</span>
-              </button>
-            }
-          </div>
-        </div>
-
-        <div class="max-w-sm">
-          <span class="block font-semibold text-[#102A43] mb-1">
-            {{ lang.tr('Niveau Scolaire', 'المستوى الدراسي') }}
-          </span>
-          <div class="grid grid-cols-2 gap-2" role="radiogroup" [attr.aria-label]="lang.tr('Niveau Scolaire', 'المستوى الدراسي')">
-            @for (opt of docGradeOptions; track opt.value) {
-              <button
-                type="button"
-                role="radio"
-                [attr.aria-checked]="docGrade() === opt.value"
-                (click)="setDocGrade(opt.value)"
-                [class]="docGrade() === opt.value
-                  ? 'border-[#007CC2] bg-[#007CC2]/8 text-[#102A43] ring-1 ring-[#007CC2]'
-                  : 'border-[#E3ECF2] bg-[#F7F9FB] text-[#486581] hover:border-[#007CC2]/50'"
-                class="flex items-center gap-2 rounded-[10px] border px-2 py-1.5 text-right transition-all cursor-pointer min-h-[38px]">
-                <span
-                  [class]="docGrade() === opt.value ? 'bg-[#007CC2] text-white' : 'bg-white text-[#007CC2]'"
-                  class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
-                <span class="text-xs font-semibold leading-tight min-w-0 truncate">{{ lang.tr(opt.fr, opt.ar) }}</span>
-              </button>
-            }
-          </div>
-        </div>
-      </div>
-
-      <div class="text-xs">
-        <label for="doc-title-input" class="block font-semibold text-[#102A43] mb-1">
-          {{ lang.tr('Titre du Document / Article', 'عنوان الوثيقة أو المقال') }} *
-        </label>
-        <input
-          id="doc-title-input"
-          type="text"
-          [value]="docTitle()"
-          (input)="onDocTitleInput($event)"
-          placeholder="Ex: Évaluation Trimestrielle N°1 : Mathématiques et Problèmes"
-          class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-[#102A43] font-semibold outline-none" />
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs pt-1 border-t border-[#E3ECF2]">
-        <div>
-          <label for="doc-trimester-select" class="block font-semibold text-[#627D98] mb-1">
-            {{ lang.tr('Période / Trimestre', 'الثلاثي') }}
-          </label>
-          <select
-            id="doc-trimester-select"
-            [value]="docTrimester()"
-            (change)="onDocTrimesterChange($event)"
-            class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2 text-[#102A43] outline-none">
-            <option value="Trimestre 1">Trimestre 1 / الثلاثي الأول</option>
-            <option value="Trimestre 2">Trimestre 2 / الثلاثي الثاني</option>
-            <option value="Trimestre 3">Trimestre 3 / الثلاثي الثالث</option>
-          </select>
-        </div>
-
-        <div>
-          @if (isParentMode()) {
-            <label for="doc-child-input" class="block font-semibold text-[#627D98] mb-1">
-              {{ lang.tr('Prénom de l’enfant', 'اسم التلميذ') }}
+        <!-- Title, trimester, school, watermark and templates fill the free side -->
+        <div class="space-y-4 xl:border-s xl:border-[#E7DFCF] xl:ps-6">
+          <div class="text-xs">
+            <label for="doc-title-input" class="block font-semibold text-[#14251D] mb-1">
+              {{ lang.tr('Titre du Document / Article', 'عنوان الوثيقة أو المقال') }} *
             </label>
             <input
-              id="doc-child-input"
+              id="doc-title-input"
               type="text"
-              [value]="activeChildName()"
-              (input)="onChildNameInput($event)"
-              placeholder="Ex: Élève / أمل"
-              class="w-full bg-[#FFF4D8] border border-[#E0AA32]/40 rounded-[10px] p-2 text-[#9E6A00] font-bold outline-none focus:ring-2 focus:ring-[#E0AA32]" />
-          } @else {
-            <label for="doc-school-input" class="block font-semibold text-[#627D98] mb-1">
-              {{ lang.tr('Établissement / École', 'المدرسة الابتدائية') }}
-            </label>
-            <input
-              id="doc-school-input"
-              type="text"
-              [value]="docSchool()"
-              (input)="onDocSchoolInput($event)"
-              placeholder="Ex: École Primaire Habib Bourguiba"
-              class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2 text-[#102A43] outline-none" />
-          }
-        </div>
+              [value]="docTitle()"
+              (input)="onDocTitleInput($event)"
+              placeholder="Ex: Évaluation Trimestrielle N°1 : Mathématiques et Problèmes"
+              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 text-[#14251D] font-semibold outline-none" />
+          </div>
 
-        <div>
-          <label for="doc-watermark-input" class="block font-semibold text-[#627D98] mb-1">
-            {{ isParentMode() ? lang.tr('Mention en filigrane', 'العلامة المائية') : lang.tr('Filigrane officiel & Attribution', 'العلامة المائية والإسناد') }}
-          </label>
-          <input
-            id="doc-watermark-input"
-            type="text"
-            [value]="docWatermark()"
-            (input)="onDocWatermarkInput($event)"
-            [placeholder]="isParentMode() ? 'Entraînement Maison — Madrasati TN' : 'Madrasati TN — Document Certifié'"
-            class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2 text-[#007CC2] font-semibold outline-none" />
-        </div>
-      </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-2 gap-3 text-xs">
+            <div>
+              <label for="doc-trimester-select" class="block font-semibold text-[#5B6B60] mb-1">
+                {{ lang.tr('Période / Trimestre', 'الثلاثي') }}
+              </label>
+              <select
+                id="doc-trimester-select"
+                [value]="docTrimester()"
+                (change)="onDocTrimesterChange($event)"
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 text-[#14251D] outline-none">
+                <option value="Trimestre 1">Trimestre 1 / الثلاثي الأول</option>
+                <option value="Trimestre 2">Trimestre 2 / الثلاثي الثاني</option>
+                <option value="Trimestre 3">Trimestre 3 / الثلاثي الثالث</option>
+              </select>
+            </div>
 
-      <!-- Quick Templates -->
-      <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-[#E3ECF2]">
-        <span class="text-[11px] font-semibold text-[#627D98]">
-          {{ lang.tr('Modèles rapides :', 'قوالب جاهزة :') }}
-        </span>
-        <button
-          (click)="loadTemplatePreset('exam_full')"
-          class="bg-[#E8F5FC] hover:bg-[#D7E7F2] text-[#007CC2] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
-          {{ lang.tr('Examen complet', 'امتحان كامل') }}
-        </button>
-        <button
-          (click)="loadTemplatePreset('course_summary')"
-          class="bg-[#E8F6EF] hover:bg-[#D0EFE2] text-[#23845B] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
-          {{ lang.tr('Fiche de cours', 'ملخص درس') }}
-        </button>
-        <button
-          (click)="loadTemplatePreset('exercise_sheet')"
-          class="bg-[#FFF4D8] hover:bg-[#FFE8B2] text-[#9E6A00] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
-          {{ lang.tr("Série d'exercices", 'سلسلة تمارين') }}
-        </button>
+            <div>
+              @if (isParentMode()) {
+                <label for="doc-child-input" class="block font-semibold text-[#5B6B60] mb-1">
+                  {{ lang.tr('Prénom de l’enfant', 'اسم التلميذ') }}
+                </label>
+                <input
+                  id="doc-child-input"
+                  type="text"
+                  [value]="activeChildName()"
+                  (input)="onChildNameInput($event)"
+                  placeholder="Ex: Élève / أمل"
+                  class="w-full bg-[#F2ECDE] border border-[#F2C14E]/40 rounded-xl p-2 text-[#8A5A00] font-bold outline-none focus:ring-2 focus:ring-[#F2C14E]" />
+              } @else {
+                <label for="doc-school-input" class="block font-semibold text-[#5B6B60] mb-1">
+                  {{ lang.tr('Établissement / École', 'المدرسة الابتدائية') }}
+                </label>
+                <input
+                  id="doc-school-input"
+                  type="text"
+                  [value]="docSchool()"
+                  (input)="onDocSchoolInput($event)"
+                  placeholder="Ex: École Primaire Habib Bourguiba"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 text-[#14251D] outline-none" />
+              }
+            </div>
+
+            <div class="xl:col-span-2">
+              <label for="doc-watermark-input" class="block font-semibold text-[#5B6B60] mb-1">
+                {{ isParentMode() ? lang.tr('Mention en filigrane', 'العلامة المائية') : lang.tr('Filigrane officiel & Attribution', 'العلامة المائية والإسناد') }}
+              </label>
+              <input
+                id="doc-watermark-input"
+                type="text"
+                [value]="docWatermark()"
+                (input)="onDocWatermarkInput($event)"
+                [placeholder]="isParentMode() ? 'Entraînement Maison — Madrasati TN' : 'Madrasati TN — Document Certifié'"
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 text-[#2D6A4F] font-semibold outline-none" />
+            </div>
+          </div>
+
+          <!-- Quick Templates -->
+          <div class="flex flex-wrap items-center gap-2 pt-3 border-t border-[#E7DFCF]">
+            <span class="text-[11px] font-semibold text-[#5B6B60]">
+              {{ lang.tr('Modèles rapides :', 'قوالب جاهزة :') }}
+            </span>
+            <button
+              (click)="loadTemplatePreset('exam_full')"
+              class="bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#2D6A4F] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
+              {{ lang.tr('Examen complet', 'امتحان كامل') }}
+            </button>
+            <button
+              (click)="loadTemplatePreset('course_summary')"
+              class="bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#2D6A4F] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
+              {{ lang.tr('Fiche de cours', 'ملخص درس') }}
+            </button>
+            <button
+              (click)="loadTemplatePreset('exercise_sheet')"
+              class="bg-[#F2ECDE] hover:bg-[#F2ECDE] text-[#8A5A00] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
+              {{ lang.tr("Série d'exercices", 'سلسلة تمارين') }}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   }
 
   <!-- PRO 3-PANE STUDIO: Inspector | A4 Canvas | Outline Tree -->
-  <div class="studio-grid lg:grid lg:grid-cols-[300px_minmax(0,1fr)_300px] lg:gap-4 lg:items-start">
+  <div class="studio-grid lg:grid lg:grid-cols-[300px_minmax(0,1fr)_300px] lg:gap-4 lg:items-start" [class.studio-grid--no-inspector]="!selectedBlock()">
 
     <!-- ============ LEFT PANE: INSPECTOR ============ -->
     <aside
       [class.hidden]="mobilePane() !== 'inspector'"
-      class="studio-pane lg:block lg:sticky lg:top-4 bg-white rounded-2xl border border-[#E3ECF2] shadow-sm overflow-hidden print:hidden">
-      <div class="px-4 py-3 border-b border-[#E3ECF2] bg-[#F7F9FB] flex items-center gap-2">
-        <span class="material-icons text-base text-[#007CC2]">tune</span>
-        <h2 class="text-xs font-semibold text-[#102A43]">{{ lang.tr('Inspecteur du bloc', 'مفتّش الكتلة') }}</h2>
+      [class.inspector-idle]="!selectedBlock()"
+      class="studio-pane lg:block lg:sticky lg:top-4 bg-white rounded-2xl border border-[#E7DFCF] shadow-sm overflow-hidden print:hidden">
+      <div class="px-4 py-3 border-b border-[#E7DFCF] bg-[#FBF8F1] flex items-center gap-2">
+        <span class="material-icons text-base text-[#2D6A4F]">tune</span>
+        <h2 class="text-xs font-semibold text-[#14251D]">{{ lang.tr('Inspecteur du bloc', 'مفتّش الكتلة') }}</h2>
         @if (selectedBlock()) {
-          <span class="ms-auto text-[10px] font-semibold text-[#627D98] uppercase tracking-wider">{{ getBlockTypeLabel(selectedBlock()!.type) }}</span>
+          <span class="ms-auto text-[11px] font-semibold text-[#5B6B60]">{{ getBlockTypeLabel(selectedBlock()!.type) }}</span>
+          <button type="button" (click)="selectedBlockId.set(null)" [attr.aria-label]="lang.tr('Fermer l’inspecteur', 'إغلاق المفتّش')"
+            class="w-8 h-8 -me-2 flex items-center justify-center rounded-lg text-[#5B6B60] hover:bg-[#F2ECDE] cursor-pointer">
+            <span class="material-icons text-base" aria-hidden="true">close</span>
+          </button>
         }
       </div>
 
@@ -290,9 +264,9 @@
         @if (!selectedBlock()) {
           <!-- Empty state -->
           <div class="text-center py-8 px-2 space-y-2">
-            <span class="material-icons text-3xl text-[#CBD2D9]">ads_click</span>
-            <p class="font-semibold text-[#486581]">{{ lang.tr('Aucun bloc sélectionné', 'لم يتم اختيار أي كتلة') }}</p>
-            <p class="text-[11px] text-[#627D98] leading-relaxed">
+            <span class="material-icons text-3xl text-[#E7DFCF]">ads_click</span>
+            <p class="font-semibold text-[#5B6B60]">{{ lang.tr('Aucun bloc sélectionné', 'لم يتم اختيار أي كتلة') }}</p>
+            <p class="text-[11px] text-[#5B6B60] leading-relaxed">
               {{ lang.tr('Cliquez sur un élément de la page ou de la structure pour modifier ses propriétés et son barème.', 'انقر على عنصر في الصفحة أو في الهيكل لتعديل خصائصه وسلّمه.') }}
             </p>
           </div>
@@ -303,23 +277,23 @@
             @case ('exercise') {
               <!-- Rubrique / title -->
               <div>
-                <span class="block font-semibold text-[#102A43] mb-1">{{ lang.tr('Titre (Rubrique)', 'عنوان الكتلة') }}</span>
+                <span class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Titre (Rubrique)', 'عنوان الكتلة') }}</span>
                 <input dir="auto" type="text"
                   [value]="sb.exerciseTitle || ''"
                   (input)="updateBlockField(sb.id, 'exerciseTitle', $any($event.target).value)"
                   [placeholder]="lang.t('editorExerciseTitlePlaceholder')"
-                  class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 font-semibold text-[#102A43] outline-none" />
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 font-semibold text-[#14251D] outline-none" />
               </div>
 
               <!-- Difficulty + total points -->
               <div class="grid grid-cols-2 gap-2">
                 <div>
-                  <span class="block font-semibold text-[#627D98] mb-1">{{ lang.tr('Difficulté', 'مستوى الصعوبة') }}</span>
+                  <span class="block font-semibold text-[#5B6B60] mb-1">{{ lang.tr('Difficulté', 'مستوى الصعوبة') }}</span>
                   <div class="flex flex-col gap-1">
                     @for (d of difficultyOptions; track d.value) {
                       <button type="button"
                         (click)="setDifficulty(sb.id, d.value)"
-                        [class]="(sb.exerciseDifficulty || 'Moyen') === d.value ? 'bg-[#007CC2] text-white font-semibold border-[#007CC2]' : 'bg-white text-[#486581] border-[#E3ECF2] hover:border-[#007CC2]/50'"
+                        [class]="(sb.exerciseDifficulty || 'Moyen') === d.value ? 'bg-[#2D6A4F] text-white font-semibold border-[#2D6A4F]' : 'bg-white text-[#5B6B60] border-[#E7DFCF] hover:border-[#2D6A4F]/50'"
                         class="border rounded-lg px-2 py-1.5 text-[11px] transition-colors cursor-pointer text-start">
                         {{ lang.tr(d.fr, d.ar) }}
                       </button>
@@ -327,43 +301,43 @@
                   </div>
                 </div>
                 <div>
-                  <span class="block font-semibold text-[#627D98] mb-1">{{ lang.tr('Barème total', 'العدد الإجمالي') }}</span>
-                  <div class="flex items-center gap-1.5 bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2">
+                  <span class="block font-semibold text-[#5B6B60] mb-1">{{ lang.tr('Barème total', 'العدد الإجمالي') }}</span>
+                  <div class="flex items-center gap-1.5 bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2">
                     <input type="number" min="1" max="20"
                       [value]="sb.exercisePoints || 5"
                       (input)="updateBlockField(sb.id, 'exercisePoints', +$any($event.target).value)"
-                      class="w-full bg-transparent text-xl font-bold text-center text-[#23845B] outline-none" />
-                    <span class="text-[11px] font-bold text-[#627D98]">pts</span>
+                      class="w-full bg-transparent text-xl font-bold text-center text-[#2D6A4F] outline-none" />
+                    <span class="text-[11px] font-bold text-[#5B6B60]">pts</span>
                   </div>
-                  <p class="text-[10px] text-[#627D98] mt-1 text-center">{{ lang.tr('sur', 'من') }} 20</p>
+                  <p class="text-[10px] text-[#5B6B60] mt-1 text-center">{{ lang.tr('sur', 'من') }} 20</p>
                 </div>
               </div>
 
               <!-- Barème criteria -->
-              <div class="pt-3 border-t border-[#E3ECF2] space-y-2">
+              <div class="pt-3 border-t border-[#E7DFCF] space-y-2">
                 <div class="flex items-center justify-between">
-                  <span class="font-semibold text-[#102A43]">{{ lang.tr('Critères de barème', 'توزيع معايير التقييم') }}</span>
+                  <span class="font-semibold text-[#14251D]">{{ lang.tr('Critères de barème', 'توزيع معايير التقييم') }}</span>
                   @if (sb.exerciseCriteria?.length) {
                     <span class="text-[10px] font-bold px-1.5 py-0.5 rounded-full"
-                      [class]="criteriaTotal(sb) === (sb.exercisePoints || 0) ? 'bg-[#E8F6EF] text-[#23845B]' : 'bg-[#FFF4D8] text-[#9E6A00]'">
+                      [class]="criteriaTotal(sb) === (sb.exercisePoints || 0) ? 'bg-[#F2ECDE] text-[#2D6A4F]' : 'bg-[#F2ECDE] text-[#8A5A00]'">
                       {{ lang.tr('somme', 'مجموع') }} {{ criteriaTotal(sb) }} pts
                     </span>
                   }
                 </div>
                 @for (c of sb.exerciseCriteria || []; track $index; let cIdx = $index) {
-                  <div class="bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2 space-y-1.5">
+                  <div class="bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 space-y-1.5">
                     <div class="flex items-center gap-1.5">
                       <input dir="auto" type="text"
                         [value]="c.label"
                         (input)="updateCriterion(sb.id, cIdx, 'label', $any($event.target).value)"
                         [placeholder]="lang.tr('Critère ' + (cIdx + 1), 'المعيار ' + (cIdx + 1))"
-                        class="grow bg-white border border-[#E3ECF2] rounded-md p-1.5 font-semibold text-[#102A43] outline-none" />
+                        class="grow bg-white border border-[#E7DFCF] rounded-md p-1.5 font-semibold text-[#14251D] outline-none" />
                       <input type="number" min="0" max="20"
                         [value]="c.points"
                         (input)="updateCriterion(sb.id, cIdx, 'points', +$any($event.target).value)"
-                        class="w-12 bg-white border border-[#E3ECF2] rounded-md p-1.5 font-bold text-center text-[#23845B] outline-none" />
+                        class="w-12 bg-white border border-[#E7DFCF] rounded-md p-1.5 font-bold text-center text-[#2D6A4F] outline-none" />
                       <button type="button" (click)="removeCriterion(sb.id, cIdx)"
-                        class="w-7 h-7 flex items-center justify-center rounded-md text-[#627D98] hover:text-[#C1121F] hover:bg-white cursor-pointer shrink-0"
+                        class="w-7 h-7 flex items-center justify-center rounded-md text-[#5B6B60] hover:text-[#C1121F] hover:bg-white cursor-pointer shrink-0"
                         [title]="lang.tr('Supprimer', 'حذف')">
                         <span class="material-icons text-sm">close</span>
                       </button>
@@ -372,34 +346,34 @@
                       [value]="c.detail || ''"
                       (input)="updateCriterion(sb.id, cIdx, 'detail', $any($event.target).value)"
                       [placeholder]="lang.tr('Description du critère…', 'وصف المعيار…')"
-                      class="w-full bg-white border border-[#E3ECF2] rounded-md p-1.5 text-[11px] text-[#486581] outline-none" />
+                      class="w-full bg-white border border-[#E7DFCF] rounded-md p-1.5 text-[11px] text-[#5B6B60] outline-none" />
                   </div>
                 }
                 <button type="button" (click)="addCriterion(sb.id)"
-                  class="w-full border border-dashed border-[#007CC2]/40 hover:border-[#007CC2] hover:bg-[#E8F5FC] text-[#007CC2] rounded-[10px] py-2 font-semibold flex items-center justify-center gap-1.5 cursor-pointer transition-colors">
+                  class="w-full border border-dashed border-[#2D6A4F]/40 hover:border-[#2D6A4F] hover:bg-[#FBF8F1] text-[#2D6A4F] rounded-xl py-2 font-semibold flex items-center justify-center gap-1.5 cursor-pointer transition-colors">
                   <span class="material-icons text-sm">add</span>{{ lang.tr('Ajouter un critère', 'إضافة معيار تقييم') }}
                 </button>
               </div>
 
               <!-- Gemini AI suggestions -->
-              <div class="pt-3 border-t border-[#E3ECF2] space-y-2">
-                <span class="font-semibold text-[#9E6A00] flex items-center gap-1.5">
-                  <span class="material-icons text-sm text-[#E0AA32]">auto_awesome</span>
+              <div class="pt-3 border-t border-[#E7DFCF] space-y-2">
+                <span class="font-semibold text-[#8A5A00] flex items-center gap-1.5">
+                  <span class="material-icons text-sm text-[#F2C14E]">auto_awesome</span>
                   {{ lang.tr('Suggestions IA (Gemini)', 'اقتراحات الذكاء الاصطناعي') }}
                 </span>
                 <div class="space-y-1.5">
                   <button type="button" (click)="transformExercise(sb, 'tunisian_context')" [disabled]="isTransformingId() === sb.id"
-                    class="w-full flex items-center justify-between bg-[#FFFDF6] hover:bg-[#FFF4D8] border border-[#E0AA32]/30 text-[#9E6A00] rounded-lg px-2.5 py-2 cursor-pointer transition-colors disabled:opacity-50">
+                    class="w-full flex items-center justify-between bg-[#FBF8F1] hover:bg-[#F2ECDE] border border-[#F2C14E]/30 text-[#8A5A00] rounded-lg px-2.5 py-2 cursor-pointer transition-colors disabled:opacity-50">
                     <span class="flex items-center gap-1.5"><span class="material-icons text-sm">public</span>{{ lang.tr('Contexte tunisien', 'سياق تونسي واقعي') }}</span>
                     <span class="material-icons text-sm">chevron_left</span>
                   </button>
                   <button type="button" (click)="transformExercise(sb, 'simplify_vocab')" [disabled]="isTransformingId() === sb.id"
-                    class="w-full flex items-center justify-between bg-[#FBFEFC] hover:bg-[#E8F6EF] border border-[#23845B]/30 text-[#23845B] rounded-lg px-2.5 py-2 cursor-pointer transition-colors disabled:opacity-50">
+                    class="w-full flex items-center justify-between bg-[#FBF8F1] hover:bg-[#F2ECDE] border border-[#2D6A4F]/30 text-[#2D6A4F] rounded-lg px-2.5 py-2 cursor-pointer transition-colors disabled:opacity-50">
                     <span class="flex items-center gap-1.5"><span class="material-icons text-sm">eco</span>{{ lang.tr('Simplifier le vocabulaire', 'تبسيط الصياغة') }}</span>
                     <span class="material-icons text-sm">chevron_left</span>
                   </button>
                   <button type="button" (click)="generateVariant(sb)" [disabled]="isVariantLoading()"
-                    class="w-full flex items-center justify-between bg-[#FCFBFF] hover:bg-[#F3E8FF] border border-[#7C3AED]/30 text-[#7C3AED] rounded-lg px-2.5 py-2 cursor-pointer transition-colors disabled:opacity-50">
+                    class="w-full flex items-center justify-between bg-[#FBF8F1] hover:bg-[#F2ECDE] border border-[#2D6A4F]/30 text-[#2D6A4F] rounded-lg px-2.5 py-2 cursor-pointer transition-colors disabled:opacity-50">
                     <span class="flex items-center gap-1.5">
                       @if (isVariantLoading()) { <span class="material-icons text-sm animate-spin">sync</span> } @else { <span class="material-icons text-sm">bolt</span> }
                       {{ lang.tr('Générer une variante', 'توليد نسخة بديلة') }}
@@ -408,7 +382,7 @@
                   </button>
                 </div>
                 @if (isTransformingId() === sb.id) {
-                  <div class="flex items-center gap-1.5 text-[10px] text-[#007CC2] italic">
+                  <div class="flex items-center gap-1.5 text-[10px] text-[#2D6A4F] italic">
                     <span class="material-icons animate-spin text-[12px]">sync</span>
                     <span>{{ lang.tr('Transformation IA en cours...', 'جارٍ التحويل بالذكاء الاصطناعي...') }}</span>
                   </div>
@@ -416,48 +390,48 @@
               </div>
 
               <!-- Display / print options -->
-              <div class="pt-3 border-t border-[#E3ECF2] space-y-2">
-                <span class="font-semibold text-[#102A43]">{{ lang.tr('Options d’affichage & impression', 'خيارات العرض والطباعة') }}</span>
+              <div class="pt-3 border-t border-[#E7DFCF] space-y-2">
+                <span class="font-semibold text-[#14251D]">{{ lang.tr('Options d’affichage & impression', 'خيارات العرض والطباعة') }}</span>
                 <label class="flex items-center gap-2 cursor-pointer">
                   <input type="checkbox" [checked]="sb.showSolution"
                     (change)="toggleSolution(sb.id)"
-                    class="w-4 h-4 accent-[#23845B] cursor-pointer" />
-                  <span class="text-[#486581]">{{ lang.tr('Afficher le corrigé / solution', 'عرض الحل النموذجي') }}</span>
+                    class="w-4 h-4 accent-[#2D6A4F] cursor-pointer" />
+                  <span class="text-[#5B6B60]">{{ lang.tr('Afficher le corrigé / solution', 'عرض الحل النموذجي') }}</span>
                 </label>
                 <label class="flex items-center gap-2 cursor-pointer">
                   <input type="checkbox" [checked]="sb.showBaremeFrame !== false"
                     (change)="updateBlockField(sb.id, 'showBaremeFrame', $any($event.target).checked)"
-                    class="w-4 h-4 accent-[#007CC2] cursor-pointer" />
-                  <span class="text-[#486581]">{{ lang.tr('Encadrer le barème (points)', 'إظهار إطار النقاط') }}</span>
+                    class="w-4 h-4 accent-[#2D6A4F] cursor-pointer" />
+                  <span class="text-[#5B6B60]">{{ lang.tr('Encadrer le barème (points)', 'إظهار إطار النقاط') }}</span>
                 </label>
                 <label class="flex items-center gap-2 cursor-pointer">
                   <input type="checkbox" [checked]="sb.showPedagogicalGrid"
                     (change)="updateBlockField(sb.id, 'showPedagogicalGrid', $any($event.target).checked)"
-                    class="w-4 h-4 accent-[#007CC2] cursor-pointer" />
-                  <span class="text-[#486581]">{{ lang.tr('Inclure la grille pédagogique', 'تضمين الشبكة البيداغوجية') }}</span>
+                    class="w-4 h-4 accent-[#2D6A4F] cursor-pointer" />
+                  <span class="text-[#5B6B60]">{{ lang.tr('Inclure la grille pédagogique', 'تضمين الشبكة البيداغوجية') }}</span>
                 </label>
               </div>
             }
             @case ('callout') {
               <div>
-                <span class="block font-semibold text-[#102A43] mb-1">{{ lang.tr('Titre de l’encadré', 'عنوان الملاحظة') }}</span>
+                <span class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Titre de l’encadré', 'عنوان الملاحظة') }}</span>
                 <input dir="auto" type="text"
                   [value]="sb.calloutTitle || ''"
                   (input)="updateBlockField(sb.id, 'calloutTitle', $any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 font-semibold text-[#23845B] outline-none" />
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 font-semibold text-[#2D6A4F] outline-none" />
               </div>
               <div>
-                <span class="block font-semibold text-[#627D98] mb-1">{{ lang.tr('Contenu', 'المحتوى') }}</span>
+                <span class="block font-semibold text-[#5B6B60] mb-1">{{ lang.tr('Contenu', 'المحتوى') }}</span>
                 <textarea dir="auto" rows="4"
                   [value]="sb.content"
                   (input)="updateBlockContent(sb.id, $any($event.target).value)"
-                  class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-[#102A43] outline-none"></textarea>
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 text-[#14251D] outline-none"></textarea>
               </div>
             }
             @case ('image') {
               <div class="space-y-3">
                 @if (sb.imageUrl) {
-                  <div class="relative rounded-lg overflow-hidden border border-[#E3ECF2]">
+                  <div class="relative rounded-lg overflow-hidden border border-[#E7DFCF]">
                     <img [src]="sb.imageUrl" alt="Illustration" class="w-full h-32 object-cover" />
                     <button (click)="updateBlockField(sb.id, 'imageUrl', '')"
                       class="absolute top-2 right-2 bg-black/60 hover:bg-black text-white p-1 rounded-full cursor-pointer">
@@ -465,54 +439,54 @@
                     </button>
                   </div>
                 } @else {
-                  <div class="border-2 border-dashed border-[#E3ECF2] rounded-lg p-4 text-center bg-[#F7F9FB]">
+                  <div class="border-2 border-dashed border-[#E7DFCF] rounded-lg p-4 text-center bg-[#FBF8F1]">
                     <label class="cursor-pointer block">
-                      <span class="material-icons text-2xl text-[#007CC2]">add_photo_alternate</span>
-                      <p class="text-[11px] font-semibold text-[#102A43] mt-1">{{ lang.tr('Uploader une image (VPS)', 'رفع صورة من الجهاز') }}</p>
+                      <span class="material-icons text-2xl text-[#2D6A4F]">add_photo_alternate</span>
+                      <p class="text-[11px] font-semibold text-[#14251D] mt-1">{{ lang.tr('Uploader une image (VPS)', 'رفع صورة من الجهاز') }}</p>
                       <input type="file" (change)="handleBlockImageUpload(sb.id, $event)" accept="image/png,image/jpeg,image/webp" class="hidden" />
                     </label>
                   </div>
                 }
                 <div>
-                  <span class="block font-semibold text-[#627D98] mb-1">{{ lang.tr('Légende', 'التسمية التوضيحية') }}</span>
+                  <span class="block font-semibold text-[#5B6B60] mb-1">{{ lang.tr('Légende', 'التسمية التوضيحية') }}</span>
                   <input dir="auto" type="text"
                     [value]="sb.imageCaption || ''"
                     (input)="updateBlockField(sb.id, 'imageCaption', $any($event.target).value)"
-                    class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2 text-[#102A43] outline-none" />
+                    class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2 text-[#14251D] outline-none" />
                 </div>
                 @if (imageUploadError()) { <p class="text-[11px] text-[#C1121F]">{{ imageUploadError() }}</p> }
               </div>
             }
             @case ('divider') {
-              <p class="text-[11px] text-[#627D98] leading-relaxed">{{ lang.tr('Séparateur visuel — aucune propriété à configurer.', 'فاصل بصري — لا توجد خصائص للتعديل.') }}</p>
+              <p class="text-[11px] text-[#5B6B60] leading-relaxed">{{ lang.tr('Séparateur visuel — aucune propriété à configurer.', 'فاصل بصري — لا توجد خصائص للتعديل.') }}</p>
             }
             @case ('cartouche') {
-              <p class="text-[11px] text-[#627D98] leading-relaxed">{{ lang.tr('En-tête officiel républicain — modifiez les informations dans Configuration.', 'الترويسة الرسمية — عدّل المعلومات من الإعدادات.') }}</p>
+              <p class="text-[11px] text-[#5B6B60] leading-relaxed">{{ lang.tr('En-tête officiel républicain — modifiez les informations dans Configuration.', 'الترويسة الرسمية — عدّل المعلومات من الإعدادات.') }}</p>
               <button (click)="showMetadataPanel.set(true)"
-                class="w-full bg-[#E8F5FC] hover:bg-[#D7E7F2] text-[#007CC2] rounded-[10px] py-2 font-semibold cursor-pointer flex items-center justify-center gap-1.5">
+                class="w-full bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#2D6A4F] rounded-xl py-2 font-semibold cursor-pointer flex items-center justify-center gap-1.5">
                 <span class="material-icons text-sm">tune</span>{{ lang.tr('Ouvrir la configuration', 'فتح الإعدادات') }}
               </button>
             }
             @default {
               <div>
-                <span class="block font-semibold text-[#102A43] mb-1">{{ lang.tr('Texte du bloc', 'نص الكتلة') }}</span>
+                <span class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Texte du bloc', 'نص الكتلة') }}</span>
                 <textarea dir="auto" rows="6"
                   [value]="sb.content"
                   (input)="updateBlockContent(sb.id, $any($event.target).value)"
                   [placeholder]="lang.tr('Saisissez le contenu…', 'اكتب المحتوى…')"
-                  class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-[#102A43] outline-none leading-relaxed"></textarea>
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 text-[#14251D] outline-none leading-relaxed"></textarea>
               </div>
             }
           }
 
           <!-- Delete selected block -->
-          <div class="pt-3 border-t border-[#E3ECF2] flex items-center justify-between">
+          <div class="pt-3 border-t border-[#E7DFCF] flex items-center justify-between">
             <button (click)="deleteBlockById(sb.id)"
-              class="text-[#C1121F] hover:text-[#9E0E18] font-semibold flex items-center gap-1.5 cursor-pointer">
+              class="text-[#C1121F] hover:text-[#C1121F] font-semibold flex items-center gap-1.5 cursor-pointer">
               <span class="material-icons text-sm">delete</span>{{ lang.tr('Supprimer le bloc', 'حذف الكتلة') }}
             </button>
-            <span class="inline-flex items-center gap-1 text-[10px] text-[#23845B] font-semibold">
-              <span class="w-1.5 h-1.5 rounded-full bg-[#4ADE80]"></span>{{ lang.tr('Auto-enregistré', 'حفظ تلقائي') }}
+            <span class="inline-flex items-center gap-1 text-[10px] text-[#2D6A4F] font-semibold">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#9DBBA8]"></span>{{ lang.tr('Auto-enregistré', 'حفظ تلقائي') }}
             </span>
           </div>
         }
@@ -524,67 +498,90 @@
       [class.hidden]="mobilePane() !== 'canvas'"
       class="studio-pane lg:block space-y-4 w-full">
       <!-- A4 toolbar strip -->
-      <div class="hidden lg:flex items-center justify-between bg-white rounded-xl border border-[#E3ECF2] px-4 py-2 text-xs text-[#627D98] shadow-xs print:hidden">
-        <span class="flex items-center gap-1.5 font-semibold text-[#102A43]">
-          <span class="material-icons text-sm text-[#007CC2]">description</span>A4 · 210 × 297 mm
+      <div class="hidden lg:flex items-center justify-between bg-white rounded-2xl border border-[#E7DFCF] px-4 min-h-11 text-xs text-[#5B6B60] shadow-sm print:hidden">
+        <span class="flex items-center gap-1.5 font-semibold text-[#14251D]">
+          <span class="material-icons text-sm text-[#2D6A4F]">description</span>A4 · 210 × 297 mm
         </span>
         <span class="flex items-center gap-3">
-          <label class="flex items-center gap-1.5 cursor-pointer">
-            <input type="checkbox" [checked]="showPrintMargins()" (change)="showPrintMargins.set($any($event.target).checked)" class="w-3.5 h-3.5 accent-[#007CC2] cursor-pointer" />
-            {{ lang.tr('Marges d’impression (15mm)', 'هوامش الطباعة (15mm)') }}
-          </label>
+          <span class="flex items-center gap-2" role="group" [attr.aria-label]="lang.tr('Marges d’impression', 'هوامش الطباعة')">
+            <span>{{ lang.tr('Marges', 'الهوامش') }}</span>
+            <span class="flex items-center bg-[#FBF8F1] border border-[#E7DFCF] rounded-lg p-0.5">
+              @for (m of marginPresets; track m.mm) {
+                <button
+                  type="button"
+                  (click)="setSheetMargin(m.mm)"
+                  [attr.aria-pressed]="sheetMargin() === m.mm"
+                  [class]="sheetMargin() === m.mm ? 'bg-white text-[#14251D] shadow-sm' : 'text-[#5B6B60] hover:text-[#14251D]'"
+                  class="px-2.5 min-h-8 rounded-md text-xs font-semibold cursor-pointer transition-colors">
+                  {{ lang.tr(m.fr, m.ar) }}
+                </button>
+              }
+            </span>
+            <label class="flex items-center gap-1 bg-[#FBF8F1] border border-[#E7DFCF] rounded-lg ps-2 pe-1">
+              <span class="sr-only">{{ lang.tr('Marge en millimètres', 'الهامش بالمليمتر') }}</span>
+              <input
+                type="number"
+                min="5"
+                max="30"
+                step="1"
+                [value]="sheetMargin()"
+                (change)="setSheetMargin(+$any($event.target).value)"
+                class="w-10 bg-transparent py-1 text-xs font-semibold text-[#14251D] text-center outline-none" />
+              <span class="text-[11px]">mm</span>
+            </label>
+          </span>
           @if (totalExamPoints() > 0) {
-            <span class="font-bold text-[#23845B]">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</span>
+            <span class="font-bold text-[#2D6A4F]">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</span>
           }
         </span>
       </div>
 
       <!-- LIVE A4 PAPER CONTAINER -->
-      <div id="printable-document" class="print-document bg-white rounded-xl p-8 sm:p-12 border border-[#CBD2D9] text-[#102A43] relative overflow-hidden min-h-[840px] space-y-6" [class.a4-margins]="showPrintMargins()">
+      <div id="printable-document" class="print-document bg-white rounded-2xl border border-[#E7DFCF] shadow-sm text-[#14251D] relative overflow-hidden min-h-[840px] space-y-6" [class.a4-margins]="showPrintMargins()" [style.--sheet-margin]="sheetMargin() + 'mm'">
 
         <!-- 45 DEGREE WATERMARK -->
-        <div class="print-watermark absolute inset-0 flex items-center justify-center pointer-events-none opacity-5 select-none rotate-[-25deg]">
-          <span class="text-5xl font-black uppercase text-[#007CC2] tracking-widest text-center leading-tight">
-            MADRASATI TN <br /> {{ docWatermark() }}
+        <div class="sheet-watermark absolute inset-0 flex items-center justify-center pointer-events-none select-none" aria-hidden="true">
+          <span class="max-w-[70%] -rotate-[25deg] font-display text-2xl sm:text-3xl font-semibold text-[#14251D] text-center leading-snug">
+            {{ docWatermark() }}
           </span>
         </div>
 
         <!-- DUAL-MODE A4 HEADER -->
         @if (isParentMode()) {
           <!-- Parent Home Practice Header -->
-          <div class="border-b-2 border-[#E0AA32] pb-4">
+          <div class="border-b-2 border-[#F2C14E] pb-4">
             <div class="flex items-center justify-between text-xs">
               <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-[#FFF4D8] border border-[#E0AA32]/50 text-[#9E6A00] flex items-center justify-center font-bold">
+                <div class="w-8 h-8 rounded-lg bg-[#F2ECDE] border border-[#F2C14E]/50 text-[#8A5A00] flex items-center justify-center font-bold">
                   <span class="material-icons text-base">home</span>
                 </div>
                 <div>
-                  <p class="font-bold text-[#102A43] text-sm">
+                  <p class="font-bold text-[#14251D] text-sm">
                     {{ lang.tr('Cahier d’Entraînement Maison', 'دفتر التمارين المنزلية') }}
                   </p>
-                  <p class="text-[11px] text-[#627D98]">Madrasati TN • {{ docSubject() }}</p>
+                  <p class="text-[11px] text-[#5B6B60]">Madrasati TN • {{ docSubject() }}</p>
                 </div>
               </div>
 
               <div class="text-center font-bold">
-                <p class="font-display text-base text-[#007CC2]">{{ docTitle() || 'Fiche de Révision' }}</p>
-                <span class="inline-block bg-[#E8F5FC] text-[#007CC2] text-[10px] px-2 py-0.5 rounded-full font-semibold">
+                <p class="font-display text-base text-[#2D6A4F]">{{ docTitle() || 'Fiche de Révision' }}</p>
+                <span class="inline-block bg-[#FBF8F1] text-[#2D6A4F] text-[10px] px-2 py-0.5 rounded-full font-semibold">
                   {{ docGrade() }}
                 </span>
               </div>
 
-              <div class="text-right text-xs text-[#627D98] leading-tight">
+              <div class="text-right text-xs text-[#5B6B60] leading-tight">
                 <p>{{ docTrimester() }}</p>
                 <p class="text-[10px]">Année {{ docSchoolYear() }}</p>
               </div>
             </div>
 
             <!-- Child Personalized Dedication Box -->
-            <div class="mt-3 pt-2 border-t border-dashed border-[#CBD2D9] flex items-center justify-between text-xs">
-              <p class="font-semibold text-[#102A43]">
-                {{ lang.tr('Dédié à :', 'مخصص لـ :') }} <span class="font-bold text-[#007CC2]">{{ activeChildName() || 'Mon Enfant' }}</span>
+            <div class="mt-3 pt-2 border-t border-dashed border-[#E7DFCF] flex items-center justify-between text-xs">
+              <p class="font-semibold text-[#14251D]">
+                {{ lang.tr('Dédié à :', 'مخصص لـ :') }} <span class="font-bold text-[#2D6A4F]">{{ activeChildName() || 'Mon Enfant' }}</span>
               </p>
-              <p class="text-[11px] text-[#627D98] italic">
+              <p class="text-[11px] text-[#5B6B60] italic">
                 {{ lang.tr('🌟 Travaille à ton rythme et avec confiance !', '🌟 ثابر وتقدم بثقة واجتهاد !') }}
               </p>
             </div>
@@ -593,28 +590,28 @@
           <!-- Official Republican Cartouche for Teachers -->
           <app-cartouche tone="blue" [grade]="docGrade()" [sub]="docSchool()" class="pb-4">
             <div cartoucheCenter>
-              <p class="font-display text-lg text-[#007CC2] font-semibold">{{ docTitle() || 'Évaluation & Devoir' }}</p>
-              <p class="text-xs text-[#486581]">{{ docGrade() }} • {{ docSubject() }}</p>
+              <p class="font-display text-lg text-[#2D6A4F] font-semibold">{{ docTitle() || 'Évaluation & Devoir' }}</p>
+              <p class="text-xs text-[#5B6B60]">{{ docGrade() }} • {{ docSubject() }}</p>
               @if (totalExamPoints() > 0) {
-                <p class="text-[11px] font-bold text-[#23845B] mt-0.5">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</p>
+                <p class="text-[11px] font-bold text-[#2D6A4F] mt-0.5">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</p>
               }
             </div>
-            <div cartoucheEnd class="text-xs text-[#334E68]">
+            <div cartoucheEnd class="text-xs text-[#14251D]">
               <p>{{ docTrimester() }}</p>
               <p>السنة الدراسية: {{ docSchoolYear() }}</p>
             </div>
           </app-cartouche>
         } @else {
           <!-- Standard Header if no Cartouche -->
-          <div class="border-b border-[#E3ECF2] pb-3 flex items-center justify-between text-xs">
+          <div class="border-b border-[#E7DFCF] pb-3 flex items-center justify-between text-xs">
             <div>
-              <h2 class="font-display font-bold text-lg text-[#102A43]">{{ docTitle() || 'Document Pédagogique' }}</h2>
-              <p class="text-[#627D98]">{{ docSubject() }} — {{ docGrade() }}</p>
+              <h2 class="font-display font-bold text-lg text-[#14251D]">{{ docTitle() || 'Document Pédagogique' }}</h2>
+              <p class="text-[#5B6B60]">{{ docSubject() }} — {{ docGrade() }}</p>
             </div>
             <div class="text-right">
-              <span class="text-[11px] text-[#627D98] block">{{ docTrimester() }}</span>
+              <span class="text-[11px] text-[#5B6B60] block">{{ docTrimester() }}</span>
               @if (totalExamPoints() > 0) {
-                <span class="text-[11px] font-bold text-[#23845B]">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</span>
+                <span class="text-[11px] font-bold text-[#2D6A4F]">{{ lang.tr('Total', 'المجموع') }} : {{ totalExamPoints() }} / 20</span>
               }
             </div>
           </div>
@@ -629,35 +626,35 @@
               <button
                 type="button"
                 (click)="activeInsertIndex.set(activeInsertIndex() === (idx - 1) ? null : (idx - 1))"
-                class="opacity-0 group-hover/divider:opacity-100 focus:opacity-100 transition-opacity bg-white hover:bg-[#E8F5FC] text-[#007CC2] border border-[#007CC2]/40 rounded-full w-6 h-6 flex items-center justify-center shadow-xs cursor-pointer z-30"
+                class="opacity-0 group-hover/divider:opacity-100 focus:opacity-100 transition-opacity bg-white hover:bg-[#FBF8F1] text-[#2D6A4F] border border-[#2D6A4F]/40 rounded-full w-6 h-6 flex items-center justify-center shadow-xs cursor-pointer z-30"
                 [title]="lang.tr('Insérer un élément ici', 'إدراج عنصر هنا')">
                 <span class="material-icons text-sm">add</span>
               </button>
 
               <!-- Insertion Popover Menu -->
               @if (activeInsertIndex() === (idx - 1)) {
-                <div class="absolute top-7 bg-white rounded-xl border border-[#CBD2D9] shadow-xl p-1.5 flex items-center gap-1 z-40 animate-fade-in">
+                <div class="absolute top-7 bg-white rounded-xl border border-[#E7DFCF] shadow-sm p-1.5 flex items-center gap-1 z-40 animate-fade-in">
                   <button
                     (click)="insertBlockAt(idx - 1, 'exercise')"
-                    class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#E8F5FC] text-[#007CC2] hover:bg-[#D7E7F2] flex items-center gap-1 cursor-pointer">
+                    class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#FBF8F1] text-[#2D6A4F] hover:bg-[#E7DFCF] flex items-center gap-1 cursor-pointer">
                     <span class="material-icons text-xs">assignment</span>
                     <span>+ {{ lang.tr('Exercice', 'تمرين') }}</span>
                   </button>
                   <button
                     (click)="insertBlockAt(idx - 1, 'paragraph')"
-                    class="px-2.5 py-1 rounded-lg text-xs font-medium text-[#102A43] hover:bg-gray-100 flex items-center gap-1 cursor-pointer">
+                    class="px-2.5 py-1 rounded-lg text-xs font-medium text-[#14251D] hover:bg-gray-100 flex items-center gap-1 cursor-pointer">
                     <span class="material-icons text-xs">notes</span>
                     <span>+ {{ lang.tr('Texte', 'نص') }}</span>
                   </button>
                   <button
                     (click)="insertBlockAt(idx - 1, 'callout')"
-                    class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#E8F6EF] text-[#23845B] hover:bg-[#D0EFE2] flex items-center gap-1 cursor-pointer">
+                    class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-[#F2ECDE] text-[#2D6A4F] hover:bg-[#E7DFCF] flex items-center gap-1 cursor-pointer">
                     <span class="material-icons text-xs">lightbulb</span>
                     <span>+ {{ lang.tr('Conseil', 'نصيحة') }}</span>
                   </button>
                   <button
                     (click)="activeInsertIndex.set(null); openAiPromptModal()"
-                    class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#E0AA32] text-[#0B2947] hover:bg-[#D19A24] flex items-center gap-1 cursor-pointer">
+                    class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#F2C14E] text-[#14251D] hover:bg-[#F2C14E] flex items-center gap-1 cursor-pointer">
                     <span class="material-icons text-xs">auto_awesome</span>
                     <span>{{ lang.tr('IA', 'ذكاء اصطناعي') }}</span>
                   </button>
@@ -672,31 +669,31 @@
               [tabindex]="editingBlockId() === b.id ? -1 : 0"
               role="button"
               [class.cursor-text]="isInlineEditable(b)"
-              class="group/pv relative rounded-md outline-none transition-shadow print:shadow-none p-1 -m-1"
+              class="group/pv relative rounded-md outline-none transition-shadow print:shadow-none print:ring-0 p-1 -m-1"
               [class.hover:ring-1]="editingBlockId() !== b.id && selectedBlockId() !== b.id"
-              [class.hover:ring-[#007CC2]]="editingBlockId() !== b.id && selectedBlockId() !== b.id"
+              [class.hover:ring-[#2D6A4F]]="editingBlockId() !== b.id && selectedBlockId() !== b.id"
               [class.ring-2]="editingBlockId() === b.id || selectedBlockId() === b.id"
-              [class.ring-[#007CC2]]="editingBlockId() === b.id || selectedBlockId() === b.id"
+              [class.ring-[#2D6A4F]]="editingBlockId() === b.id || selectedBlockId() === b.id"
               [attr.data-editing]="editingBlockId() === b.id ? 'true' : null">
 
               <!-- Selected block badge -->
               @if (selectedBlockId() === b.id) {
-                <span class="absolute -top-2.5 -start-1.5 z-20 bg-[#007CC2] text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow-sm print:hidden flex items-center gap-1">
+                <span class="absolute -top-2.5 -start-1.5 z-20 bg-[#2D6A4F] text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow-sm print:hidden flex items-center gap-1">
                   <span class="material-icons text-[10px]">radio_button_checked</span>{{ lang.tr('Sélectionné', 'محدَّد') }}
                 </span>
               }
 
               <!-- Block Floating Quick Actions (Trash / Duplicate) -->
-              <div class="absolute -top-3.5 right-2 z-20 hidden group-hover/pv:flex items-center gap-1 bg-white border border-[#CBD2D9] rounded-lg shadow-sm px-1.5 py-0.5 print:hidden">
+              <div class="absolute -top-3.5 right-2 z-20 hidden group-hover/pv:flex items-center gap-1 bg-white border border-[#E7DFCF] rounded-lg shadow-sm px-1.5 py-0.5 print:hidden">
                 <button
                   (click)="$event.stopPropagation(); duplicateBlock(idx)"
-                  class="p-0.5 text-[#627D98] hover:text-[#007CC2] cursor-pointer"
+                  class="p-0.5 text-[#5B6B60] hover:text-[#2D6A4F] cursor-pointer"
                   [title]="lang.tr('Dupliquer', 'مضاعفة')">
                   <span class="material-icons text-[14px]">content_copy</span>
                 </button>
                 <button
                   (click)="$event.stopPropagation(); deleteBlockById(b.id)"
-                  class="p-0.5 text-[#D64545] hover:opacity-80 cursor-pointer"
+                  class="p-0.5 text-[#BF5B34] hover:opacity-80 cursor-pointer"
                   [title]="lang.tr('Supprimer', 'حذف')">
                   <span class="material-icons text-[14px]">delete</span>
                 </button>
@@ -712,9 +709,9 @@
                       (keydown.escape)="stopInlineEdit()"
                       (click)="$event.stopPropagation()"
                       rows="3"
-                      class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-2 text-xs text-[#102A43] outline-none leading-relaxed"></textarea>
+                      class="w-full bg-[#FBF8F1] border border-[#2D6A4F]/40 rounded p-2 text-xs text-[#14251D] outline-none leading-relaxed"></textarea>
                   } @else {
-                    <p dir="auto" class="text-[#102A43] whitespace-pre-line min-h-[1em]">{{ b.content || '…' }}</p>
+                    <p dir="auto" class="text-[#14251D] whitespace-pre-line min-h-[1em]">{{ b.content || '…' }}</p>
                   }
                 }
                 @case ('heading1') {
@@ -727,9 +724,9 @@
                       (keydown.escape)="stopInlineEdit()"
                       (keydown.enter)="stopInlineEdit()"
                       (click)="$event.stopPropagation()"
-                      class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 font-display font-bold text-base text-[#102A43] outline-none" />
+                      class="w-full bg-[#FBF8F1] border border-[#2D6A4F]/40 rounded p-1.5 font-display font-bold text-base text-[#14251D] outline-none" />
                   } @else {
-                    <h2 dir="auto" class="font-display font-bold text-base text-[#102A43] pt-2 border-b border-[#102A43]/20 pb-1">{{ b.content || '…' }}</h2>
+                    <h2 dir="auto" class="font-display font-bold text-base text-[#14251D] pt-2 border-b border-[#14251D]/20 pb-1">{{ b.content || '…' }}</h2>
                   }
                 }
                 @case ('heading2') {
@@ -742,9 +739,9 @@
                       (keydown.escape)="stopInlineEdit()"
                       (keydown.enter)="stopInlineEdit()"
                       (click)="$event.stopPropagation()"
-                      class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 font-display font-semibold text-sm text-[#007CC2] outline-none" />
+                      class="w-full bg-[#FBF8F1] border border-[#2D6A4F]/40 rounded p-1.5 font-display font-semibold text-sm text-[#2D6A4F] outline-none" />
                   } @else {
-                    <h3 dir="auto" class="font-display font-semibold text-sm text-[#007CC2] pt-1">{{ b.content || '…' }}</h3>
+                    <h3 dir="auto" class="font-display font-semibold text-sm text-[#2D6A4F] pt-1">{{ b.content || '…' }}</h3>
                   }
                 }
                 @case ('heading3') {
@@ -757,13 +754,13 @@
                       (keydown.escape)="stopInlineEdit()"
                       (keydown.enter)="stopInlineEdit()"
                       (click)="$event.stopPropagation()"
-                      class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 font-semibold text-xs text-[#102A43] outline-none" />
+                      class="w-full bg-[#FBF8F1] border border-[#2D6A4F]/40 rounded p-1.5 font-semibold text-xs text-[#14251D] outline-none" />
                   } @else {
-                    <h4 dir="auto" class="font-semibold text-xs text-[#102A43]">{{ b.content || '…' }}</h4>
+                    <h4 dir="auto" class="font-semibold text-xs text-[#14251D]">{{ b.content || '…' }}</h4>
                   }
                 }
                 @case ('exercise') {
-                  <div class="bg-[#F7F9FB] rounded-lg p-3.5 space-y-2" [class.border]="b.showBaremeFrame !== false" [class.border-[#CBD2D9]]="b.showBaremeFrame !== false">
+                  <div class="bg-[#FBF8F1] rounded-lg p-3.5 space-y-2" [class.border]="b.showBaremeFrame !== false" [class.border-[#E7DFCF]]="b.showBaremeFrame !== false">
                     @if (editingBlockId() === b.id) {
                       <div class="flex items-center justify-between gap-2">
                         <input dir="auto"
@@ -772,7 +769,7 @@
                           (input)="updateBlockField(b.id, 'exerciseTitle', $any($event.target).value)"
                           (keydown.escape)="stopInlineEdit()"
                           (click)="$event.stopPropagation()"
-                          class="grow bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 text-xs font-semibold text-[#102A43] outline-none" />
+                          class="grow bg-[#FBF8F1] border border-[#2D6A4F]/40 rounded p-1.5 text-xs font-semibold text-[#14251D] outline-none" />
                         <input
                           type="number"
                           [value]="b.exercisePoints || 5"
@@ -780,7 +777,7 @@
                           (click)="$event.stopPropagation()"
                           min="1"
                           max="20"
-                          class="w-14 bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-1.5 text-xs font-bold text-center text-[#23845B] outline-none" />
+                          class="w-14 bg-[#FBF8F1] border border-[#2D6A4F]/40 rounded p-1.5 text-xs font-bold text-center text-[#2D6A4F] outline-none" />
                       </div>
                       <textarea dir="auto"
                         [value]="(b.exerciseFormat === 'fill_blanks' ? b.gapText : b.content) || ''"
@@ -789,65 +786,65 @@
                         (keydown.escape)="stopInlineEdit()"
                         (click)="$event.stopPropagation()"
                         rows="3"
-                        class="w-full bg-[#F3FAFD] border border-[#007CC2]/40 rounded p-2 text-xs text-[#334E68] outline-none"></textarea>
+                        class="w-full bg-[#FBF8F1] border border-[#2D6A4F]/40 rounded p-2 text-xs text-[#14251D] outline-none"></textarea>
                     } @else {
                       <div class="flex items-center justify-between font-semibold">
-                        <span class="text-[#102A43]">{{ b.exerciseTitle || 'Exercice' }}</span>
-                        <span class="text-[#23845B] font-bold">({{ b.exercisePoints || 5 }} points)</span>
+                        <span class="text-[#14251D]">{{ b.exerciseTitle || 'Exercice' }}</span>
+                        <span class="text-[#2D6A4F] font-bold">({{ b.exercisePoints || 5 }} points)</span>
                       </div>
 
                       <!-- Format specific preview rendering -->
                       @switch (b.exerciseFormat || 'free') {
                         @case ('free') {
-                          <p dir="auto" class="text-[#334E68] whitespace-pre-line">{{ b.content || '…' }}</p>
+                          <p dir="auto" class="text-[#14251D] whitespace-pre-line">{{ b.content || '…' }}</p>
                         }
                         @case ('qcm') {
                           @if (b.content) {
-                            <p dir="auto" class="text-[#334E68] whitespace-pre-line font-medium mb-1">{{ b.content }}</p>
+                            <p dir="auto" class="text-[#14251D] whitespace-pre-line font-medium mb-1">{{ b.content }}</p>
                           }
                           <div class="grid grid-cols-2 gap-2 text-xs pt-1">
                             @for (opt of b.qcmOptions || []; track $index) {
                               <div class="flex items-start gap-1.5">
-                                <span class="text-sm text-[#486581]">☐</span>
-                                <span class="font-semibold text-[#102A43]">{{ getOptionLetter($index) }})</span>
-                                <span class="text-[#334E68]">{{ opt }}</span>
+                                <span class="text-sm text-[#5B6B60]">☐</span>
+                                <span class="font-semibold text-[#14251D]">{{ getOptionLetter($index) }})</span>
+                                <span class="text-[#14251D]">{{ opt }}</span>
                               </div>
                             }
                           </div>
                         }
                         @case ('true_false') {
                           @if (b.content) {
-                            <p dir="auto" class="text-[#334E68] whitespace-pre-line font-medium mb-1.5">{{ b.content }}</p>
+                            <p dir="auto" class="text-[#14251D] whitespace-pre-line font-medium mb-1.5">{{ b.content }}</p>
                           }
                           <div class="space-y-1.5 text-xs">
                             @for (st of b.tfStatements || []; track $index) {
-                              <div class="flex items-center justify-between py-1 border-b border-dashed border-[#CBD2D9]/60">
-                                <span class="text-[#102A43]">{{ $index + 1 }}. {{ st.text }}</span>
-                                <span class="font-semibold text-[#627D98] shrink-0 ms-2">( صواب / خطأ )</span>
+                              <div class="flex items-center justify-between py-1 border-b border-dashed border-[#E7DFCF]/60">
+                                <span class="text-[#14251D]">{{ $index + 1 }}. {{ st.text }}</span>
+                                <span class="font-semibold text-[#5B6B60] shrink-0 ms-2">( صواب / خطأ )</span>
                               </div>
                             }
                           </div>
                         }
                         @case ('fill_blanks') {
-                          <p dir="auto" class="text-[#334E68] whitespace-pre-line leading-relaxed font-mono">
+                          <p dir="auto" class="text-[#14251D] whitespace-pre-line leading-relaxed font-mono">
                             {{ renderGapTextPreview(b.gapText || b.content) }}
                           </p>
                         }
                         @case ('matching') {
                           @if (b.content) {
-                            <p dir="auto" class="text-[#334E68] whitespace-pre-line font-medium mb-2">{{ b.content }}</p>
+                            <p dir="auto" class="text-[#14251D] whitespace-pre-line font-medium mb-2">{{ b.content }}</p>
                           }
                           <div class="grid grid-cols-2 gap-6 text-xs pt-1">
                             <div class="space-y-3">
                               @for (pair of b.matchingPairs || []; track $index) {
-                                <div class="p-2 bg-white rounded border border-[#E3ECF2] font-semibold text-[#102A43]">
+                                <div class="p-2 bg-white rounded border border-[#E7DFCF] font-semibold text-[#14251D]">
                                   {{ $index + 1 }}. {{ pair.left }}
                                 </div>
                               }
                             </div>
                             <div class="space-y-3">
                               @for (rightText of getShuffledMatchingRights(b.id, b.matchingPairs); track $index) {
-                                <div class="p-2 bg-white rounded border border-[#E3ECF2] text-[#334E68]">
+                                <div class="p-2 bg-white rounded border border-[#E7DFCF] text-[#14251D]">
                                   • {{ rightText }}
                                 </div>
                               }
@@ -858,12 +855,12 @@
 
                       <!-- Barème criteria grid (pedagogical) -->
                       @if (b.showPedagogicalGrid && b.exerciseCriteria?.length) {
-                        <div class="mt-2 pt-2 border-t border-dashed border-[#CBD2D9] space-y-1">
-                          <p class="text-[10px] font-bold uppercase tracking-wider text-[#627D98]">{{ lang.tr('Barème', 'سلّم التقييم') }}</p>
+                        <div class="mt-2 pt-2 border-t border-dashed border-[#E7DFCF] space-y-1">
+                          <p class="text-[10px] font-bold uppercase tracking-wider text-[#5B6B60]">{{ lang.tr('Barème', 'سلّم التقييم') }}</p>
                           @for (c of b.exerciseCriteria || []; track $index) {
                             <div class="flex items-center justify-between text-[11px]">
-                              <span class="text-[#334E68]">{{ c.label }}@if (c.detail) { <span class="text-[#627D98]"> — {{ c.detail }}</span> }</span>
-                              <span class="font-bold text-[#23845B] shrink-0 ms-2">{{ c.points }} pts</span>
+                              <span class="text-[#14251D]">{{ c.label }}@if (c.detail) { <span class="text-[#5B6B60]"> — {{ c.detail }}</span> }</span>
+                              <span class="font-bold text-[#2D6A4F] shrink-0 ms-2">{{ c.points }} pts</span>
                             </div>
                           }
                         </div>
@@ -871,18 +868,45 @@
 
                       <!-- Corrigé / Teacher Solution Rendering -->
                       @if (b.showSolution || b.exerciseSolution) {
-                        <div class="mt-2 pt-2 border-t border-dashed border-[#23845B]/30 bg-[#E8F6EF]/50 p-2 rounded text-[11px] text-[#23845B] space-y-1 font-mono">
-                          <p class="font-bold uppercase tracking-wider">Solution / Corrigé :</p>
+                        <div class="mt-2 pt-2 border-t border-dashed border-[#2D6A4F]/30 bg-[#F2ECDE]/50 p-2 rounded text-[11px] text-[#2D6A4F] space-y-1">
+                          <p class="font-semibold">{{ lang.tr('Corrigé', 'الإصلاح') }}</p>
                           @if (b.exerciseSolution) {
-                            <p class="whitespace-pre-line">{{ b.exerciseSolution }}</p>
+                            <p dir="auto" class="whitespace-pre-line">{{ b.exerciseSolution }}</p>
                           }
                         </div>
                       }
+
+                      <!-- Per-exercise AI actions (screen only) -->
+                      <div class="print:hidden pt-2 mt-1 border-t border-[#E7DFCF] flex flex-wrap items-center gap-1.5" (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()">
+                        @if (isPlaceholderExercise(b)) {
+                          <button type="button" (click)="generateExerciseBlock(b)" [disabled]="isAiLoading()"
+                            class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 min-h-9 rounded-lg text-xs flex items-center gap-1.5 cursor-pointer transition-colors disabled:opacity-60 disabled:cursor-default">
+                            <span class="material-icons text-sm" aria-hidden="true">auto_awesome</span>
+                            {{ lang.tr('Générer cet exercice', 'توليد هذا التمرين') }}
+                          </button>
+                        } @else {
+                          <button type="button" (click)="transformExercise(b, 'simplify_vocab')" [disabled]="isAiLoading()" [class]="exerciseChip">
+                            <span class="material-icons text-sm" aria-hidden="true">spellcheck</span>{{ lang.tr('Simplifier', 'تبسيط') }}
+                          </button>
+                          <button type="button" (click)="transformExercise(b, 'to_qcm')" [disabled]="isAiLoading()" [class]="exerciseChip">
+                            <span class="material-icons text-sm" aria-hidden="true">checklist</span>{{ lang.tr('En QCM', 'اختيار من متعدد') }}
+                          </button>
+                          <button type="button" (click)="transformExercise(b, 'tunisian_context')" [disabled]="isAiLoading()" [class]="exerciseChip">
+                            <span class="material-icons text-sm" aria-hidden="true">place</span>{{ lang.tr('Contexte tunisien', 'سياق تونسي') }}
+                          </button>
+                          <button type="button" (click)="toggleSolution(b.id)" [attr.aria-pressed]="!!b.showSolution" [class]="exerciseChip">
+                            <span class="material-icons text-sm" aria-hidden="true">fact_check</span>{{ b.showSolution ? lang.tr('Masquer le corrigé', 'إخفاء الإصلاح') : lang.tr('Corrigé', 'الإصلاح') }}
+                          </button>
+                        }
+                        @if (isTransformingId() === b.id) {
+                          <span class="material-icons text-sm text-[#2D6A4F] animate-spin motion-reduce:animate-none" aria-hidden="true">sync</span>
+                        }
+                      </div>
                     }
                   </div>
                 }
                 @case ('callout') {
-                  <div class="bg-[#E8F6EF] rounded-lg p-3 border-s-4 border-[#23845B] space-y-1">
+                  <div class="bg-[#F2ECDE] rounded-lg p-3 border-s-4 border-[#2D6A4F] space-y-1">
                     @if (editingBlockId() === b.id) {
                       <input dir="auto"
                         type="text"
@@ -890,7 +914,7 @@
                         (input)="updateBlockField(b.id, 'calloutTitle', $any($event.target).value)"
                         (keydown.escape)="stopInlineEdit()"
                         (click)="$event.stopPropagation()"
-                        class="w-full bg-white border border-[#23845B]/40 rounded p-1.5 text-xs font-semibold text-[#23845B] outline-none" />
+                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-1.5 text-xs font-semibold text-[#2D6A4F] outline-none" />
                       <textarea dir="auto"
                         [value]="b.content"
                         (input)="updateBlockContent(b.id, $any($event.target).value)"
@@ -898,27 +922,27 @@
                         (keydown.escape)="stopInlineEdit()"
                         (click)="$event.stopPropagation()"
                         rows="2"
-                        class="w-full bg-white border border-[#23845B]/40 rounded p-2 text-xs text-[#102A43] outline-none"></textarea>
+                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-2 text-xs text-[#14251D] outline-none"></textarea>
                     } @else {
-                      <p class="font-semibold text-[#23845B]">{{ b.calloutTitle || 'Remarque Pédagogique' }}</p>
-                      <p dir="auto" class="text-[#102A43]">{{ b.content || '…' }}</p>
+                      <p class="font-semibold text-[#2D6A4F]">{{ b.calloutTitle || 'Remarque Pédagogique' }}</p>
+                      <p dir="auto" class="text-[#14251D]">{{ b.content || '…' }}</p>
                     }
                   </div>
                 }
                 @case ('image') {
                   @if (b.imageUrl) {
                     <div class="text-center py-2">
-                      <img [src]="b.imageUrl" alt="Illustration" class="max-h-48 rounded mx-auto border border-[#E3ECF2]" />
+                      <img [src]="b.imageUrl" alt="Illustration" class="max-h-48 rounded mx-auto border border-[#E7DFCF]" />
                       @if (b.imageCaption) {
-                        <p class="text-[10px] text-[#627D98] mt-1 italic">{{ b.imageCaption }}</p>
+                        <p class="text-[10px] text-[#5B6B60] mt-1 italic">{{ b.imageCaption }}</p>
                       }
                     </div>
                   } @else {
-                    <p class="text-[11px] text-[#627D98] italic text-center py-3">{{ lang.tr('Image vide — ajoutez-en une depuis l’Inspecteur.', 'صورة فارغة — أضفها من المفتّش.') }}</p>
+                    <p class="text-[11px] text-[#5B6B60] italic text-center py-3">{{ lang.tr('Image vide — ajoutez-en une depuis l’Inspecteur.', 'صورة فارغة — أضفها من المفتّش.') }}</p>
                   }
                 }
                 @case ('divider') {
-                  <hr class="border-t border-[#E3ECF2]" />
+                  <hr class="border-t border-[#E7DFCF]" />
                 }
               }
             </div>
@@ -928,7 +952,7 @@
           <div class="pt-2 print:hidden flex items-center justify-center">
             <button
               (click)="insertBlockAt(blocks().length - 1, 'exercise')"
-              class="px-4 py-2.5 rounded-xl border border-dashed border-[#007CC2]/40 hover:border-[#007CC2] bg-[#E8F5FC]/60 hover:bg-[#E8F5FC] text-[#007CC2] font-semibold text-xs flex items-center gap-1.5 transition-colors cursor-pointer">
+              class="px-4 py-2.5 rounded-xl border border-dashed border-[#2D6A4F]/40 hover:border-[#2D6A4F] bg-[#FBF8F1]/60 hover:bg-[#FBF8F1] text-[#2D6A4F] font-semibold text-xs flex items-center gap-1.5 transition-colors cursor-pointer">
               <span class="material-icons text-sm">add</span>
               <span>{{ lang.tr('Ajouter un exercice suivant', 'إضافة تمرين جديد') }}</span>
             </button>
@@ -936,7 +960,7 @@
         </div>
 
         <!-- FOOTER WATERMARK & ATTRIBUTION -->
-        <div class="border-t border-[#E3ECF2] pt-3 text-[10px] text-[#627D98] flex items-center justify-between">
+        <div class="border-t border-[#E7DFCF] pt-3 text-[10px] text-[#5B6B60] flex items-center justify-between">
           <span>Attribution : {{ docWatermark() }}</span>
           <span>Plateforme Nationale Madrasati TN</span>
         </div>
@@ -946,11 +970,11 @@
     <!-- ============ RIGHT PANE: OUTLINE TREE + PALETTE ============ -->
     <aside
       [class.hidden]="mobilePane() !== 'outline'"
-      class="studio-pane lg:block lg:sticky lg:top-4 bg-white rounded-2xl border border-[#E3ECF2] shadow-sm overflow-hidden print:hidden">
-      <div class="px-4 py-3 border-b border-[#E3ECF2] bg-[#F7F9FB] flex items-center gap-2">
-        <span class="material-icons text-base text-[#007CC2]">account_tree</span>
-        <h2 class="text-xs font-semibold text-[#102A43]">{{ lang.tr('Structure du document', 'هيكل الوثيقة') }}</h2>
-        <span class="ms-auto text-[10px] font-semibold text-[#627D98]">{{ blocks().length }} {{ lang.tr('blocs', 'كتلة') }}</span>
+      class="studio-pane lg:block lg:sticky lg:top-4 bg-white rounded-2xl border border-[#E7DFCF] shadow-sm overflow-hidden print:hidden">
+      <div class="px-4 py-3 border-b border-[#E7DFCF] bg-[#FBF8F1] flex items-center gap-2">
+        <span class="material-icons text-base text-[#2D6A4F]">account_tree</span>
+        <h2 class="text-xs font-semibold text-[#14251D]">{{ lang.tr('Structure du document', 'هيكل الوثيقة') }}</h2>
+        <span class="ms-auto text-[10px] font-semibold text-[#5B6B60]">{{ blocks().length }} {{ lang.tr('blocs', 'كتلة') }}</span>
       </div>
 
       <div class="max-h-[calc(100vh-260px)] overflow-y-auto">
@@ -964,25 +988,25 @@
               tabindex="0"
               role="button"
               [attr.aria-pressed]="selectedBlockId() === block.id"
-              [class]="selectedBlockId() === block.id ? 'bg-[#E8F5FC] border-[#007CC2]' : 'bg-white border-transparent hover:bg-[#F7F9FB]'"
-              class="group/row flex items-center gap-2 rounded-lg border px-2 py-1.5 cursor-pointer transition-colors outline-none focus-visible:ring-2 focus-visible:ring-[#007CC2]">
+              [class]="selectedBlockId() === block.id ? 'bg-[#FBF8F1] border-[#2D6A4F]' : 'bg-white border-transparent hover:bg-[#FBF8F1]'"
+              class="group/row flex items-center gap-2 rounded-lg border px-2 py-1.5 cursor-pointer transition-colors outline-none focus-visible:ring-2 focus-visible:ring-[#2D6A4F]">
               <div class="editor-block-placeholder" *cdkDragPlaceholder></div>
               <button cdkDragHandle type="button"
                 (click)="$event.stopPropagation()"
-                class="cursor-grab active:cursor-grabbing text-[#CBD2D9] hover:text-[#007CC2] shrink-0"
+                class="cursor-grab active:cursor-grabbing text-[#E7DFCF] hover:text-[#2D6A4F] shrink-0"
                 [title]="lang.tr('Glisser pour réordonner', 'اسحب لإعادة الترتيب')"
                 aria-label="Réordonner">
                 <span class="material-icons text-sm">drag_indicator</span>
               </button>
-              <span class="material-icons text-sm shrink-0" [class]="selectedBlockId() === block.id ? 'text-[#007CC2]' : 'text-[#627D98]'">{{ getBlockIcon(block.type) }}</span>
+              <span class="material-icons text-sm shrink-0" [class]="selectedBlockId() === block.id ? 'text-[#2D6A4F]' : 'text-[#5B6B60]'">{{ getBlockIcon(block.type) }}</span>
               <span class="min-w-0 grow">
-                <span dir="auto" class="block text-[11px] font-semibold text-[#102A43] truncate">
+                <span dir="auto" class="block text-[11px] font-semibold text-[#14251D] truncate">
                   {{ block.type === 'exercise' ? (block.exerciseTitle || getBlockTypeLabel(block.type)) : (block.content || getBlockTypeLabel(block.type)) }}
                 </span>
-                <span class="block text-[9px] text-[#627D98] uppercase tracking-wide">{{ getBlockTypeLabel(block.type) }}</span>
+                <span class="block text-[9px] text-[#5B6B60] uppercase tracking-wide">{{ getBlockTypeLabel(block.type) }}</span>
               </span>
               @if (block.type === 'exercise') {
-                <span class="shrink-0 text-[10px] font-bold text-[#23845B] bg-[#E8F6EF] px-1.5 py-0.5 rounded-full">{{ block.exercisePoints || 5 }} pts</span>
+                <span class="shrink-0 text-[10px] font-bold text-[#2D6A4F] bg-[#F2ECDE] px-1.5 py-0.5 rounded-full">{{ block.exercisePoints || 5 }} pts</span>
               }
             </li>
           }
@@ -990,47 +1014,40 @@
       </div>
 
       <!-- Add element palette -->
-      <div class="p-3 border-t border-[#E3ECF2] space-y-2 bg-[#FBFCFD]">
+      <div class="p-3 border-t border-[#E7DFCF] space-y-2 bg-[#FBF8F1]">
         <div class="flex items-center justify-between">
-          <span class="text-[11px] font-semibold text-[#102A43] flex items-center gap-1.5">
+          <span class="text-[11px] font-semibold text-[#14251D] flex items-center gap-1.5">
             <span class="material-icons text-sm text-[#2D6A4F]">add_box</span>{{ lang.tr('Ajouter un élément', 'إضافة عنصر') }}
           </span>
           <button (click)="openAiPromptModal()"
-            class="bg-[#E0AA32] hover:bg-[#D19A24] text-[#0B2947] px-2.5 py-1 rounded-lg text-[11px] flex items-center gap-1 font-semibold shadow-sm cursor-pointer">
+            class="bg-[#F2C14E] hover:bg-[#F2C14E] text-[#14251D] px-2.5 py-1 rounded-lg text-[11px] flex items-center gap-1 font-semibold shadow-sm cursor-pointer">
             <span class="material-icons text-xs">auto_awesome</span>IA
           </button>
         </div>
         <div class="grid grid-cols-2 gap-1.5">
-          <button (click)="addBlock('heading1')" class="bg-white hover:bg-[#F7F9FB] text-[#102A43] border border-[#E3ECF2] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
+          <button (click)="addBlock('heading1')" class="bg-white hover:bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
             <span class="material-icons text-sm">title</span>{{ lang.tr('Titre', 'عنوان') }}
           </button>
-          <button (click)="addBlock('paragraph')" class="bg-white hover:bg-[#F7F9FB] text-[#102A43] border border-[#E3ECF2] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
+          <button (click)="addBlock('paragraph')" class="bg-white hover:bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
             <span class="material-icons text-sm">notes</span>{{ lang.tr('Texte', 'نص') }}
           </button>
           @if (studioShell() === 'A') {
-            <button (click)="addBlock('exercise')" class="bg-[#E8F5FC] hover:bg-[#D7E7F2] text-[#007CC2] border border-[#007CC2]/20 px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-semibold cursor-pointer">
+            <button (click)="addBlock('exercise')" class="bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#2D6A4F] border border-[#2D6A4F]/20 px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-semibold cursor-pointer">
               <span class="material-icons text-sm">assignment</span>{{ lang.tr('Exercice', 'تمرين') }}
             </button>
-            <button (click)="addBlock('callout')" class="bg-[#E8F6EF] hover:bg-[#D0EFE2] text-[#23845B] border border-[#23845B]/20 px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-semibold cursor-pointer">
+            <button (click)="addBlock('callout')" class="bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#2D6A4F] border border-[#2D6A4F]/20 px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-semibold cursor-pointer">
               <span class="material-icons text-sm">lightbulb</span>{{ lang.tr('Conseil', 'ملاحظة') }}
             </button>
           }
-          <button (click)="addBlock('image')" class="bg-white hover:bg-[#F7F9FB] text-[#102A43] border border-[#E3ECF2] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
+          <button (click)="addBlock('image')" class="bg-white hover:bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
             <span class="material-icons text-sm">image</span>{{ lang.tr('Image', 'صورة') }}
           </button>
-          <button (click)="addBlock('divider')" class="bg-white hover:bg-[#F7F9FB] text-[#102A43] border border-[#E3ECF2] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
+          <button (click)="addBlock('divider')" class="bg-white hover:bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
             <span class="material-icons text-sm">horizontal_rule</span>{{ lang.tr('Séparateur', 'فاصل') }}
           </button>
         </div>
       </div>
 
-      <!-- Total points footer -->
-      @if (totalExamPoints() > 0) {
-        <div class="px-4 py-3 border-t border-[#E3ECF2] bg-[#0B2947] text-white flex items-center justify-between">
-          <span class="text-[11px] font-semibold text-[#8CA9C4]">{{ lang.tr('Total du barème', 'المجموع العام') }}</span>
-          <span class="font-display font-bold text-lg" [class]="totalExamPoints() === 20 ? 'text-[#4ADE80]' : 'text-[#E0AA32]'">{{ totalExamPoints() }} / 20</span>
-        </div>
-      }
     </aside>
 
   </div>
@@ -1039,114 +1056,77 @@
   @if (toastMsg()) {
     <div role="status" aria-live="polite"
          class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 print:hidden
-                bg-[#0B2947] text-white text-xs font-semibold px-4 py-2.5 rounded-xl
-                shadow-2xl flex items-center gap-2 border border-[#23845B]/40">
-      <span class="material-icons text-base text-[#4ADE80]">check_circle</span>
+                bg-[#14251D] text-white text-xs font-semibold px-4 py-2.5 rounded-xl
+                shadow-sm flex items-center gap-2 border border-[#2D6A4F]/40">
+      <span class="material-icons text-base text-[#9DBBA8]">check_circle</span>
       <span>{{ toastMsg() }}</span>
     </div>
   }
 
-  <!-- FLOATING BOTTOM DOCK (Gamma/Figma Style) -->
-  <aside aria-label="Floating Studio Controls" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 print:hidden">
-    <div class="floating-studio-dock rounded-2xl p-2 flex items-center gap-2 shadow-2xl">
-      <button
-        (click)="openAiPromptModal()"
-        class="bg-[#E0AA32] hover:bg-[#D19A24] text-[#0B2947] font-bold text-xs px-3.5 py-2 rounded-xl flex items-center gap-1.5 transition-colors cursor-pointer shadow-sm">
-        <span class="material-icons text-base">auto_awesome</span>
-        <span>{{ lang.tr('Générateur IA', 'مساعد الذكاء الاصطناعي') }}</span>
-      </button>
-
-      <div class="h-5 w-[1px] bg-white/20"></div>
-
-      <button
-        (click)="triggerPrintDialog()"
-        class="text-white hover:bg-white/10 text-xs font-semibold px-3 py-2 rounded-xl flex items-center gap-1.5 transition-colors cursor-pointer">
-        <span class="material-icons text-base">print</span>
-        <span class="hidden sm:inline">{{ lang.t('printBtn') }}</span>
-      </button>
-
-      <button
-        (click)="manualSave()"
-        class="text-white hover:bg-white/10 text-xs font-semibold px-3 py-2 rounded-xl flex items-center gap-1.5 transition-colors cursor-pointer">
-        <span class="material-icons text-base">save</span>
-        <span class="hidden sm:inline">{{ lang.tr('Sauvegarder', 'حفظ المسودة') }}</span>
-      </button>
-
-      <div class="h-5 w-[1px] bg-white/20"></div>
-
-      <button
-        (click)="openPublishModal()"
-        class="bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold text-xs px-4 py-2 rounded-xl flex items-center gap-1.5 transition-colors cursor-pointer shadow-sm">
-        <span class="material-icons text-base">publish</span>
-        <span>{{ lang.tr('Publier', 'نشر') }}</span>
-      </button>
-    </div>
-  </aside>
-
   <!-- PUBLISH MODAL -->
   @if (publishModalOpen()) {
-    <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
-      <div class="bg-white rounded-[24px] max-w-md w-full p-6 space-y-4 border border-[#E3ECF2] shadow-xl">
-        <div class="flex items-center justify-between border-b border-[#E3ECF2] pb-3">
-          <h3 class="font-display font-semibold text-[#102A43] text-base">
+    <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
+      <div class="bg-white rounded-2xl max-w-md w-full p-6 space-y-4 border border-[#E7DFCF] shadow-sm">
+        <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
+          <h3 class="font-display font-semibold text-[#14251D] text-base">
             {{ lang.tr('Publier le Document', 'تأكيد نشر الوثيقة') }}
           </h3>
-          <button (click)="publishModalOpen.set(false)" class="text-[#627D98] hover:text-[#102A43] cursor-pointer">
+          <button (click)="publishModalOpen.set(false)" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
             <span class="material-icons">close</span>
           </button>
         </div>
 
         <div class="space-y-3 text-xs">
-          <p class="text-[#486581]">
+          <p class="text-[#5B6B60]">
             {{ lang.tr("Choisissez l'emplacement de publication dans l'écosystème Madrasati TN :", 'اختر مكان النشر على منصة مدرستي تونس:') }}
           </p>
 
           @if (isParentMode()) {
             <button
               (click)="triggerPrintDialog(); publishModalOpen.set(false)"
-              class="w-full p-3.5 rounded-[12px] bg-[#FFF4D8] hover:bg-[#FDE8B5] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#E0AA32]/40 transition-colors">
-              <div class="w-9 h-9 rounded-full bg-[#E0AA32] text-[#0B2947] flex items-center justify-center shrink-0">
+              class="w-full p-3.5 rounded-[12px] bg-[#F2ECDE] hover:bg-[#F2ECDE] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#F2C14E]/40 transition-colors">
+              <div class="w-9 h-9 rounded-full bg-[#F2C14E] text-[#14251D] flex items-center justify-center shrink-0">
                 <span class="material-icons text-base">print</span>
               </div>
               <div>
-                <p class="font-semibold text-[#0B2947]">{{ lang.tr('Imprimer immédiatement en A4', 'طباعة فورية بصيغة A4') }}</p>
-                <p class="text-[11px] text-[#486581]">{{ lang.tr('Document personnalisé prêt pour le travail à la maison', 'ورقة تمارين جاهزة للمراجعة المنزلية') }}</p>
+                <p class="font-semibold text-[#14251D]">{{ lang.tr('Imprimer immédiatement en A4', 'طباعة فورية بصيغة A4') }}</p>
+                <p class="text-[11px] text-[#5B6B60]">{{ lang.tr('Document personnalisé prêt pour le travail à la maison', 'ورقة تمارين جاهزة للمراجعة المنزلية') }}</p>
               </div>
             </button>
 
             <button
               (click)="manualSave(); publishModalOpen.set(false)"
-              class="w-full p-3.5 rounded-[12px] bg-[#E8F6EF] hover:bg-[#D0EFE2] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#23845B]/30 transition-colors">
-              <div class="w-9 h-9 rounded-full bg-[#23845B] text-white flex items-center justify-center shrink-0">
+              class="w-full p-3.5 rounded-[12px] bg-[#F2ECDE] hover:bg-[#E7DFCF] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#2D6A4F]/30 transition-colors">
+              <div class="w-9 h-9 rounded-full bg-[#2D6A4F] text-white flex items-center justify-center shrink-0">
                 <span class="material-icons text-base">bookmark</span>
               </div>
               <div>
-                <p class="font-semibold text-[#23845B]">{{ lang.tr('Conserver dans le cahier de l’enfant', 'حفظ في سجل تمارين الطفل') }}</p>
-                <p class="text-[11px] text-[#486581]">{{ lang.tr('Sauvegardé en privé pour révision ultérieure', 'حفظ خاص وغير معلن على المنصة') }}</p>
+                <p class="font-semibold text-[#2D6A4F]">{{ lang.tr('Conserver dans le cahier de l’enfant', 'حفظ في سجل تمارين الطفل') }}</p>
+                <p class="text-[11px] text-[#5B6B60]">{{ lang.tr('Sauvegardé en privé pour révision ultérieure', 'حفظ خاص وغير معلن على المنصة') }}</p>
               </div>
             </button>
           } @else {
             <button
               (click)="publishAsDocumentBank()"
-              class="w-full p-3.5 rounded-[12px] bg-[#E8F5FC] hover:bg-[#D7E7F2] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#007CC2]/30 transition-colors">
-              <div class="w-9 h-9 rounded-full bg-[#007CC2] text-white flex items-center justify-center shrink-0">
+              class="w-full p-3.5 rounded-[12px] bg-[#FBF8F1] hover:bg-[#E7DFCF] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#2D6A4F]/30 transition-colors">
+              <div class="w-9 h-9 rounded-full bg-[#2D6A4F] text-white flex items-center justify-center shrink-0">
                 <span class="material-icons text-base">print</span>
               </div>
               <div>
-                <p class="font-semibold text-[#007CC2]">{{ lang.tr('Banque de Documents & Impression A4', 'بنك الوثائق والامتحانات A4') }}</p>
-                <p class="text-[11px] text-[#486581]">{{ lang.tr('Accessible pour les parents avec impression 1-clic', 'متاح للأولياء للتحميل والطباعة الفورية') }}</p>
+                <p class="font-semibold text-[#2D6A4F]">{{ lang.tr('Banque de Documents & Impression A4', 'بنك الوثائق والامتحانات A4') }}</p>
+                <p class="text-[11px] text-[#5B6B60]">{{ lang.tr('Accessible pour les parents avec impression 1-clic', 'متاح للأولياء للتحميل والطباعة الفورية') }}</p>
               </div>
             </button>
 
             <button
               (click)="publishAsBlogArticle()"
-              class="w-full p-3.5 rounded-[12px] bg-[#E8F6EF] hover:bg-[#D0EFE2] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#23845B]/30 transition-colors">
-              <div class="w-9 h-9 rounded-full bg-[#23845B] text-white flex items-center justify-center shrink-0">
+              class="w-full p-3.5 rounded-[12px] bg-[#F2ECDE] hover:bg-[#E7DFCF] text-left rtl:text-right flex items-center gap-3 cursor-pointer border border-[#2D6A4F]/30 transition-colors">
+              <div class="w-9 h-9 rounded-full bg-[#2D6A4F] text-white flex items-center justify-center shrink-0">
                 <span class="material-icons text-base">article</span>
               </div>
               <div>
-                <p class="font-semibold text-[#23845B]">{{ lang.tr('Blog & Conseils Pédagogiques', 'المدونة والمقالات البيداغوجية') }}</p>
-                <p class="text-[11px] text-[#486581]">{{ lang.tr('Publié pour lecture et commentaires des parents', 'متاح للقراءة وتفاعل الأولياء بالتعليقات') }}</p>
+                <p class="font-semibold text-[#2D6A4F]">{{ lang.tr('Blog & Conseils Pédagogiques', 'المدونة والمقالات البيداغوجية') }}</p>
+                <p class="text-[11px] text-[#5B6B60]">{{ lang.tr('Publié pour lecture et commentaires des parents', 'متاح للقراءة وتفاعل الأولياء بالتعليقات') }}</p>
               </div>
             </button>
           }
@@ -1157,23 +1137,23 @@
 
   <!-- AI GENERATION MODAL -->
   @if (aiModalOpen()) {
-    <div class="fixed inset-0 z-50 bg-[#0B2947]/70 backdrop-blur-xs flex items-center justify-center p-4">
-      <div class="bg-white rounded-[24px] max-w-lg w-full p-6 space-y-4 border border-[#E3ECF2] shadow-xl">
-        <div class="flex items-center justify-between border-b border-[#E3ECF2] pb-3">
+    <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
+      <div class="bg-white rounded-2xl max-w-lg w-full p-6 space-y-4 border border-[#E7DFCF] shadow-sm">
+        <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
           <div class="flex items-center gap-2">
-            <span class="material-icons text-[#E0AA32]">auto_awesome</span>
-            <h3 class="font-display font-semibold text-[#102A43] text-base">
+            <span class="material-icons text-[#F2C14E]">auto_awesome</span>
+            <h3 class="font-display font-semibold text-[#14251D] text-base">
               {{ lang.tr('Assistant de Rédaction IA Gemini', 'المساعد الذكي لكتابة التمارين والمقالات') }}
             </h3>
           </div>
-          <button (click)="aiModalOpen.set(false)" class="text-[#627D98] hover:text-[#102A43] cursor-pointer">
+          <button (click)="aiModalOpen.set(false)" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
             <span class="material-icons">close</span>
           </button>
         </div>
 
         <div class="space-y-3 text-xs">
           <div>
-            <label for="ai-prompt-input" class="block font-semibold text-[#102A43] mb-1">
+            <label for="ai-prompt-input" class="block font-semibold text-[#14251D] mb-1">
               {{ lang.tr('Que souhaitez-vous générer ou reformuler ?', 'ما الذي تريد توليده أو تحسين صياغته ؟') }}
             </label>
             <textarea dir="auto"
@@ -1184,7 +1164,7 @@
               [attr.aria-invalid]="!!session.fieldError('ai-prompt-input')"
               rows="3"
               placeholder="Ex: Génère un problème de calcul mental avec solution pour 4ème année primaire..."
-              class="w-full bg-[#F7F9FB] border border-[#E3ECF2] aria-invalid:border-[#BF5B34] rounded-[10px] p-2.5 text-[#102A43] outline-none"></textarea>
+              class="w-full bg-[#FBF8F1] border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-xl p-2.5 text-[#14251D] outline-none"></textarea>
             @if (session.fieldError('ai-prompt-input'); as msg) {
               <p class="mt-1 text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
             }
@@ -1194,24 +1174,24 @@
             @if (isParentMode()) {
               <button
                 (click)="aiPromptQuery.set('Génère 3 exercices ludiques et clairs sur les fractions avec exemples de la vie quotidienne')"
-                class="bg-[#FFF4D8] text-[#9E6A00] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer border border-[#E0AA32]/30">
-                💡 3 Exercices révision maison
+                class="bg-[#F2ECDE] text-[#8A5A00] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer border border-[#F2C14E]/30">
+                3 Exercices révision maison
               </button>
               <button
                 (click)="aiPromptQuery.set('Génère une petite évaluation douce de 10 minutes avec corrigé et astuces pour expliquer à mon enfant')"
-                class="bg-[#E8F6EF] text-[#23845B] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer border border-[#23845B]/30">
-                💡 Évaluation 10 min + guide
+                class="bg-[#F2ECDE] text-[#2D6A4F] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer border border-[#2D6A4F]/30">
+                Évaluation 10 min + guide
               </button>
             } @else {
               <button
                 (click)="aiPromptQuery.set('Génère une série de 3 exercices gradués sur la multiplication et la division avec corrigé')"
-                class="bg-[#E8F5FC] text-[#007CC2] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer">
-                💡 3 Exercices gradués
+                class="bg-[#FBF8F1] text-[#2D6A4F] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer">
+                3 Exercices gradués
               </button>
               <button
                 (click)="aiPromptQuery.set('Rédige 4 conseils concrets pour aider un parent à faire réviser la dictée arabe à la maison')"
-                class="bg-[#E8F6EF] text-[#23845B] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer">
-                💡 Conseils parents dictée
+                class="bg-[#F2ECDE] text-[#2D6A4F] px-2.5 py-1 rounded-full text-[11px] font-medium cursor-pointer">
+                Conseils parents dictée
               </button>
             }
           </div>
@@ -1219,7 +1199,7 @@
           <button
             [disabled]="isAiLoading()"
             (click)="generateWithGemini()"
-            class="w-full bg-[#E0AA32] hover:bg-[#D19A24] text-[#0B2947] font-semibold py-2.5 rounded-[10px] flex items-center justify-center gap-1.5 cursor-pointer disabled:opacity-50 shadow-sm">
+            class="w-full bg-[#F2C14E] hover:bg-[#F2C14E] text-[#14251D] font-semibold py-2.5 rounded-xl flex items-center justify-center gap-1.5 cursor-pointer disabled:opacity-50 shadow-sm">
             @if (isAiLoading()) {
               <span class="material-icons animate-spin text-sm">sync</span>
               <span>{{ lang.tr('Génération en cours...', 'جاري التوليد...') }}</span>

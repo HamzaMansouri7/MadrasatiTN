@@ -3,13 +3,13 @@ import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK, SourceInput, chapterById, createStudioSession } from '@core';
-import { CartoucheComponent, StudioSessionBannerComponent } from '@shared';
+import { CartoucheComponent, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
 
 @Component({
   selector: 'app-editor-studio',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent, StudioSessionBannerComponent],
+  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent, StudioBarComponent, StudioSessionBannerComponent],
   templateUrl: './editor-studio.html',
   styleUrl: './editor-studio.css',
 })
@@ -30,6 +30,17 @@ export class EditorStudioComponent implements OnInit {
   readonly mobilePane = signal<'inspector' | 'canvas' | 'outline'>('canvas');
   // A4 print-margin guides toggle in the canvas toolbar.
   readonly showPrintMargins = signal<boolean>(true);
+  /** Sheet margin in mm (5–30): sets the on-screen guide and the printed margin. */
+  readonly sheetMargin = signal(15);
+  readonly marginPresets = [
+    { mm: 10, fr: 'Étroites', ar: 'ضيّقة' },
+    { mm: 15, fr: 'Normales', ar: 'عادية' },
+    { mm: 20, fr: 'Larges', ar: 'واسعة' },
+  ];
+
+  setSheetMargin(mm: number) {
+    this.sheetMargin.set(Number.isFinite(mm) ? Math.min(30, Math.max(5, Math.round(mm))) : 15);
+  }
 
   // Phase 3: Studio shell derived from docType
   // Shell A = exam / exercise_sheet / course / summary → 3-col A4 layout
@@ -181,13 +192,16 @@ export class EditorStudioComponent implements OnInit {
 
   manualSave() {
     this.saveDraft();
-    this.showToast(this.lang.tr('Brouillon enregistré ✓', 'تم حفظ المسودة ✓'));
+    this.showToast(this.lang.tr('Brouillon enregistré', 'تم حفظ المسودة'));
   }
 
   readonly publishModalOpen = signal<boolean>(false);
   readonly aiModalOpen = signal<boolean>(false);
   /** The document itself autosaves locally; the session covers generation state and the leave warning. */
-  readonly session = createStudioSession('exercises', { retry: () => this.retryLastGeneration() });
+  readonly session = createStudioSession('exercises', {
+    retry: () => this.retryLastGeneration(),
+    undo: (previous) => this.restoreBlock(previous as EditorBlock),
+  });
   readonly isAiLoading = computed(() => this.session.busy());
   private lastGeneration: (() => Promise<void>) | null = null;
   readonly aiPromptQuery = signal<string>('');
@@ -204,6 +218,16 @@ export class EditorStudioComponent implements OnInit {
   readonly docTrimester = signal<'Trimestre 1' | 'Trimestre 2' | 'Trimestre 3'>('Trimestre 1');
   /** Programme topic picked upstream (create hub). Kept only while it still matches grade/subject/trimester. */
   private readonly sourceTopicId = signal<string | undefined>(undefined);
+  /** Language the AI writes the sheet in: follows the subject unless the teacher picks one. */
+  private readonly languageOverride = signal<'ar' | 'fr' | null>(null);
+  readonly docLanguage = computed<'ar' | 'fr'>(
+    () => this.languageOverride() ?? (this.docSubject() === 'Français' || this.docSubject() === 'Anglais' ? 'fr' : 'ar'),
+  );
+
+  setDocLanguage(value: string) {
+    this.languageOverride.set(value === 'fr' ? 'fr' : 'ar');
+  }
+
   readonly docTopicId = computed(() => {
     const ch = chapterById(this.sourceTopicId());
     return ch && ch.grade === this.docGrade() && ch.subject === this.docSubject() && ch.trimester === this.docTrimester()
@@ -219,6 +243,21 @@ export class EditorStudioComponent implements OnInit {
   readonly customChildName = signal<string>('');
   readonly activeChildName = computed(() => this.customChildName() || 'Élève');
   readonly isTransformingId = signal<string | null>(null);
+  readonly barBtn = STUDIO_BAR_BTN;
+  readonly mobilePanes = [
+    { id: 'inspector', icon: 'tune', fr: 'Inspecteur', ar: 'المفتّش' },
+    { id: 'canvas', icon: 'description', fr: 'Page', ar: 'الصفحة' },
+    { id: 'outline', icon: 'account_tree', fr: 'Structure', ar: 'الهيكل' },
+  ] as const;
+
+  /** Studio bar badge: home practice, exam/exercise sheet or article. */
+  readonly studioBadge = computed(() => {
+    if (this.isParentMode()) return { icon: 'home', label: this.lang.tr('Atelier maison', 'ورشة التمارين المنزلية') };
+    if (this.studioShell() === 'A') return { icon: 'quiz', label: this.lang.tr('Examen / exercices', 'امتحان / تمارين') };
+    return { icon: 'article', label: this.lang.tr('Article', 'مقال تربوي') };
+  });
+  readonly exerciseChip =
+    'bg-white hover:bg-[#F2ECDE] border border-[#E7DFCF] text-[#14251D] px-2.5 min-h-9 rounded-lg text-xs font-semibold flex items-center gap-1 cursor-pointer transition-colors disabled:opacity-60 disabled:cursor-default';
 
   // Computed live exam points sum
   readonly totalExamPoints = computed(() => {
@@ -634,6 +673,47 @@ export class EditorStudioComponent implements OnInit {
     );
   }
 
+  /** Template exercise still holding its sample text ("Exercices d'assimilation rapide..."). */
+  isPlaceholderExercise(b: EditorBlock): boolean {
+    if (b.type !== 'exercise') return false;
+    if (b.qcmOptions?.length || b.tfStatements?.length || b.gapText || b.matchingPairs?.length) return false;
+    const text = (b.content || '').trim();
+    return !text || (text.length < 90 && /(\.\.\.|…)$/.test(text));
+  }
+
+  /** Writes one exercise in place from the sheet title, its own title and points. */
+  async generateExerciseBlock(block: EditorBlock) {
+    this.lastGeneration = () => this.generateExerciseBlock(block);
+    const res = await this.session.run(() =>
+      this.ai.post('generate-exercise', {
+        grade: this.docGrade(),
+        subject: this.docSubject(),
+        topic: [this.docTitle(), block.exerciseTitle].filter(Boolean).join(' - '),
+        topicId: this.docTopicId(),
+        difficulty: 'Moyen',
+        format: block.exerciseFormat || 'free',
+        trimester: this.docTrimester(),
+        points: block.exercisePoints || 5,
+        language: this.docLanguage(),
+        role: this.isParentMode() ? 'parent' : 'teacher',
+        childName: this.activeChildName(),
+      }),
+    );
+    if (!res) return;
+    const ex = res.ok ? (res.data['exercise'] as AiJson | undefined) : undefined;
+    if (!ex) {
+      this.session.fail(res.ok ? '' : res.error);
+      return;
+    }
+    this.session.keepUndo(block);
+    this.applyExercise(block.id, ex, { title: block.exerciseTitle, points: block.exercisePoints });
+    this.session.succeed();
+  }
+
+  private restoreBlock(previous: EditorBlock) {
+    this.blocks.update((list) => list.map((b) => (b.id === previous.id ? previous : b)));
+  }
+
   toggleSolution(id: string) {
     this.blocks.update((list) =>
       list.map((b) => (b.id === id ? { ...b, showSolution: !b.showSolution } : b))
@@ -813,8 +893,10 @@ export class EditorStudioComponent implements OnInit {
 
   triggerPrintDialog() {
     if (typeof window !== 'undefined') {
-      this.showToast(this.lang.tr('Ouverture de l’impression A4…', 'جارٍ فتح الطباعة A4…'));
-      window.print();
+      // Leave edit mode first: a block being edited prints as an empty input box.
+      this.stopInlineEdit();
+      this.selectedBlockId.set(null);
+      setTimeout(() => window.print(), 60);
     }
   }
 
@@ -864,6 +946,7 @@ export class EditorStudioComponent implements OnInit {
           targetAudience: `${this.docGrade()} — parents et élèves`,
           grade: this.docGrade(),
           subject: this.docSubject(),
+          language: this.docLanguage(),
         });
         const ann = (res.ok ? res.data['announcement'] : undefined) as AiJson | undefined;
         if (ann) {
@@ -888,6 +971,7 @@ export class EditorStudioComponent implements OnInit {
           format: 'free',
           trimester: this.docTrimester(),
           points: 5,
+          language: this.docLanguage(),
           role: this.isParentMode() ? 'parent' : 'teacher',
           childName: this.activeChildName(),
         });
@@ -911,9 +995,10 @@ export class EditorStudioComponent implements OnInit {
   async transformExercise(block: EditorBlock, transformType: 'tunisian_context' | 'simplify_vocab' | 'add_trap' | 'to_qcm') {
     if (this.isTransformingId()) return;
     this.isTransformingId.set(block.id);
+    this.lastGeneration = () => this.transformExercise(block, transformType);
 
     try {
-      const res = await this.ai.post('transform-exercise', {
+      const res = await this.session.run(() => this.ai.post('transform-exercise', {
         exercise: {
           title: block.exerciseTitle || 'Exercice',
           promptText: block.content || '',
@@ -923,9 +1008,17 @@ export class EditorStudioComponent implements OnInit {
         transformType,
         grade: this.docGrade(),
         subject: this.docSubject(),
-      });
+        language: this.docLanguage(),
+      }));
+      if (!res) return;
       const t = (res.ok ? res.data['exercise'] : undefined) as AiJson | undefined;
-      if (t) this.applyExercise(block.id, t);
+      if (!t) {
+        this.session.fail(res.ok ? '' : res.error);
+        return;
+      }
+      this.session.keepUndo(block);
+      this.applyExercise(block.id, t);
+      this.session.succeed();
     } finally {
       this.isTransformingId.set(null);
     }
