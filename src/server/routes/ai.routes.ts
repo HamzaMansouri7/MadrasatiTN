@@ -1169,6 +1169,9 @@ aiRouter.post(
       });
 
       const fallbackPreset = wanted === "auto" ? "hero-cards" : wanted;
+      // A preset picked by the teacher wins over the one the model wrote back.
+      const pinPreset = (r: unknown) =>
+        wanted !== "auto" && r && typeof r === "object" ? { ...(r as Record<string, unknown>), preset: wanted } : r;
       const generateOnce = (extra = "") => {
         const text = `${prompt}${extra}`;
         return aiGenerateJSON(
@@ -1180,14 +1183,15 @@ aiRouter.post(
       };
 
       let raw = await generateOnce();
-      let spec = normalizeInfographicSpec(normalizeDigits(raw), fallbackPreset);
+      let spec = normalizeInfographicSpec(pinPreset(normalizeDigits(raw)), fallbackPreset);
       // One retry when the answer is unusable (empty block, missing title), instead of failing outright.
       if (!spec) {
+        console.warn("[infographic] unusable answer", JSON.stringify(raw).slice(0, 600));
         try {
           raw = await generateOnce(
             `\n\nCORRECTION OBLIGATOIRE : ta réponse précédente était inutilisable. Remplis "title" et le bloc du preset "${fallbackPreset}" en entier.`,
           );
-          spec = normalizeInfographicSpec(normalizeDigits(raw), fallbackPreset);
+          spec = normalizeInfographicSpec(pinPreset(normalizeDigits(raw)), fallbackPreset);
         } catch (e) {
           console.warn("[infographic] empty-spec retry failed", e);
         }
@@ -1199,7 +1203,7 @@ aiRouter.post(
           const retryRaw = await generateOnce(
             `\n\nCORRECTION OBLIGATOIRE de ta réponse précédente :\n- ${issues.join("\n- ")}`,
           );
-          const retrySpec = normalizeInfographicSpec(normalizeDigits(retryRaw), fallbackPreset);
+          const retrySpec = normalizeInfographicSpec(pinPreset(normalizeDigits(retryRaw)), fallbackPreset);
           if (retrySpec && specQualityIssues(retrySpec).length < issues.length) {
             raw = retryRaw;
             spec = retrySpec;

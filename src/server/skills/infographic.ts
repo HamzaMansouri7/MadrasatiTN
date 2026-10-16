@@ -418,7 +418,7 @@ Règles de choix (seulement parmi les presets listés ci-dessus) :
 - analogy : "analogy" = familiar et abstract (concept, description, 2 à 3 keyPoints chacun) et bridgeNote.
 - flyer : "flyer" = badge, eventTitle, date, location et 1 à 3 sections (title + 2 à 4 détails).
 - pathmap : 3 à 8 items = stations dans l'ordre du parcours ; item.title = 40 caractères maximum ; chaque item peut avoir un imagePrompt = un petit repère concret du lieu (ex. "an old stone well").
-- boardgame : 8 à 12 items = cases du plateau dans l'ordre ; item.text = une question de 100 caractères maximum, réponse courte attendue ; pas d'imagePrompt ; "remember" = les règles du jeu.
+- boardgame : 8 à 12 items = cases du plateau dans l'ordre ; item.title = la notion en 1 à 3 mots (ex. "6 × 2"), JAMAIS le numéro ou le nom de la case ("الخانة الأولى", "Case 1") ni "الوصول"/"Arrivée" : le code dessine déjà numéros, départ et arrivée ; item.text = une question de 100 caractères maximum, réponse courte attendue ; pas d'imagePrompt ; "remember" = les règles du jeu.
 - comparison : remplis "columns" avec EXACTEMENT 2 colonnes (title, 2 à 5 points courts, imagePrompt) ; "items" = points communs (0 à 4).
 - lesson-stages : remplis "stages" avec 2 à 5 étapes (stageNumber, title, teacherActivity, learnerActivity, duration ex. "10 min", et imagePrompt = une petite scène concrète en anglais) ; "items" = notions clés (0 à 5).
 - central-picture : hero.label = le thème en 1 à 3 mots, hero.caption = une phrase complète de 120 caractères maximum, hero.wantsImage = true et hero.imagePrompt = la scène centrale ; "items" = 2 à 6 cartes (rôles, exemples) ; "quote" facultatif = une phrase d'encouragement.
