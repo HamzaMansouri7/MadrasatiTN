@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { EducationStore } from '@core/services/education-store';
 import { LanguageService } from '@core/services/language.service';
 import { FirebaseService } from '@core/services/firebase.service';
@@ -42,7 +42,6 @@ interface LibraryResourceItem {
   imports: [
     CommonModule,
     FormsModule,
-    RouterLink,
     TopicPickerComponent,
     MemoTreeLayoutComponent,
     MemoStepsLayoutComponent,
@@ -53,47 +52,34 @@ interface LibraryResourceItem {
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="min-h-screen bg-[#FBF8F1] text-[#14251D] pb-16">
+    <div class="text-[#14251D] pb-16">
 
-      <header class="no-print max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-6 flex flex-wrap items-end justify-between gap-4">
-        <div class="max-w-2xl">
-          <h1 class="font-display text-2xl sm:text-3xl font-semibold text-[#14251D]">
-            {{ lang.t('memoStudioTitle') }}
-          </h1>
-          <p class="text-sm text-[#5B6B60] mt-1.5">
-            {{ lang.t('memoStudioSub') }}
-          </p>
-          @if (savedAuthorName()) {
-            <p class="text-sm text-[#5B6B60] mt-1">
+      @if (savedAuthorName() || (state() === 'done' && store.memo())) {
+        <div class="no-print w-full pb-5 flex flex-wrap items-center justify-between gap-4">
+          <p class="text-sm text-[#5B6B60]">
+            @if (savedAuthorName()) {
               <span class="font-semibold text-[#14251D]">{{ savedAuthorName() }}</span>
               @if (savedSchool()) {
                 <span class="ms-2">{{ savedSchool() }}</span>
               }
-            </p>
+            }
+          </p>
+
+          @if (state() === 'done' && store.memo()) {
+            <button
+              type="button"
+              (click)="resetToNew()"
+              class="bg-white hover:bg-[#F2ECDE] text-[#14251D] font-semibold px-5 min-h-11 rounded-xl text-sm border border-[#E7DFCF] transition-colors cursor-pointer flex items-center gap-2"
+            >
+              <span class="material-icons text-base" aria-hidden="true">add</span>
+              {{ lang.t('memoBtnNew') }}
+            </button>
           }
         </div>
-
-        <a
-          routerLink="/ai-studio"
-          class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 min-h-11 rounded-md text-sm transition-colors cursor-pointer flex items-center gap-2">
-          <span class="material-icons text-base" aria-hidden="true">auto_awesome</span>
-          {{ lang.tr('Nouveau : infographies IA', 'جديد: إنفوغرافيك بالذكاء الاصطناعي') }}
-        </a>
-
-        @if (state() === 'done' && store.memo()) {
-          <button
-            type="button"
-            (click)="resetToNew()"
-            class="bg-white hover:bg-[#F2ECDE] text-[#14251D] font-semibold px-5 min-h-11 rounded-md text-sm border border-[#E7DFCF] transition-colors cursor-pointer flex items-center gap-2"
-          >
-            <span class="material-icons text-base" aria-hidden="true">add</span>
-            {{ lang.t('memoBtnNew') }}
-          </button>
-        }
-      </header>
+      }
 
       <!-- Main Container -->
-      <main class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
+      <main class="w-full">
 
         <!-- INPUT FORM VIEW (When idle / analyzing / error) -->
         @if (state() !== 'done') {
@@ -829,7 +815,12 @@ export class MemoStudioComponent implements OnInit {
     }
   }
 
-  async saveMemo() {
+  /** Saving stores the memo in the library, so it needs an account (signup resumes the save). */
+  saveMemo() {
+    this.store.requireAccount(() => this.persistMemo());
+  }
+
+  private async persistMemo() {
     const memo = this.store.memo();
     if (!memo) return;
     this.isSaving.set(true);
@@ -857,19 +848,14 @@ export class MemoStudioComponent implements OnInit {
     }
   }
 
-  async copyShareLink() {
+  copyShareLink() {
+    this.store.requireAccount(() => this.copySavedMemoLink());
+  }
+
+  private async copySavedMemoLink() {
+    if (!this.savedMemoId()) await this.persistMemo();
     const memoId = this.savedMemoId();
-    let url = '';
-    if (memoId) {
-      url = `${window.location.origin}/memo-studio?memo=${memoId}`;
-    } else {
-      // Save first
-      await this.saveMemo();
-      const newId = this.savedMemoId();
-      if (newId) {
-        url = `${window.location.origin}/memo-studio?memo=${newId}`;
-      }
-    }
+    const url = memoId ? `${window.location.origin}/ai-studio?tab=memo&memo=${memoId}` : '';
 
     if (url && navigator.clipboard) {
       await navigator.clipboard.writeText(url);

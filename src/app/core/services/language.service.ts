@@ -146,16 +146,9 @@ export class LanguageService {
     summarizeAnother: { fr: 'Résumer un autre cours', ar: 'تلخيص درس آخر' },
     summarizeErrorTitle: { fr: 'Impossible de synthétiser la photo', ar: 'تعذّر تلخيص هذه الصور' },
     summarizeErrorHint: { fr: 'Assurez-vous que l’écriture est lisible avec un bon éclairage.', ar: 'تأكد من وضوح الخط والإضاءة ثم حاول مجددًا.' },
-    summarizeTeacherBtn: { fr: 'لخّص وثائقي', ar: 'لخّص وثائقي' },
     solveToSummarizeBanner: { fr: 'Vous avez des cours entiers à résumer ?', ar: 'عندك ملخصات دروس؟ لخّصها في ثوانٍ' },
 
     // Memo Studio ("Fiche Mémo Visuelle / مذكرة الدرس البصرية")
-    memoStudioNav: { fr: 'AI Studio', ar: 'استوديو الذكاء' },
-    memoStudioTitle: { fr: 'AI Studio', ar: 'استوديو الذكاء الاصطناعي' },
-    memoStudioSub: {
-      fr: 'Transformez un cours en infographie visuelle A4, imprimable et personnalisable, en 1 clic.',
-      ar: 'حوّل درسك إلى إنفوغرافيا بصرية A4 جاهزة للطباعة والتخصيص في نقرة واحدة.',
-    },
     memoBtnNew: { fr: 'Nouvelle fiche', ar: 'مذكرة جديدة' },
     memoBtnPrint: { fr: 'Imprimer A4', ar: 'طباعة A4' },
     memoBtnSave: { fr: 'Enregistrer', ar: 'حفظ في المكتبة' },
@@ -197,7 +190,6 @@ export class LanguageService {
     activeClassLabel: { fr: 'Classe active :', ar: 'الفصل الحالي:' },
     addAnnouncementBtn: { fr: '+ Annonce', ar: '+ إعلان جديد' },
     addCourseBtn: { fr: '+ Cours', ar: '+ درس جديد' },
-    aiAssistantBtn: { fr: 'Assistant IA', ar: 'المساعد الذكي Gemini' },
 
     // Stats Cards
     statStudents: { fr: 'Élèves de la classe', ar: 'تلاميذ الفصل' },
@@ -394,8 +386,8 @@ export class LanguageService {
     notifBadgeNew: { fr: 'NOUVEAU', ar: 'جديد' },
     notifViewAction: { fr: 'Afficher', ar: 'عرض' },
     notifWelcomeTeacherTitle: { fr: 'Bienvenue sur Madrasati TN !', ar: 'مرحباً بك في مدرستي تونس !' },
-    notifWelcomeTeacherMsg: { fr: 'Votre espace enseignant est prêt. Explorez le Memo Studio et créez vos premières fiches pédagogiques.', ar: 'فضاؤك التعليمي جاهز. اكتشف ستوديو المذكرات وأنشئ أولى أوراقك البيداغوجية.' },
-    notifAnnounceMemoTitle: { fr: 'Nouveau : Memo Studio IA disponible', ar: 'جديد : ستوديو المذكرات البيداغوجية بالذكاء الاصطناعي' },
+    notifWelcomeTeacherMsg: { fr: 'Votre espace enseignant est prêt. Explorez l’AI Studio et créez vos premières fiches pédagogiques.', ar: 'فضاؤك التعليمي جاهز. اكتشف استوديو الذكاء الاصطناعي وأنشئ أولى أوراقك البيداغوجية.' },
+    notifAnnounceMemoTitle: { fr: 'Nouveau : synthèses IA dans l’AI Studio', ar: 'جديد : ملخّصات بالذكاء الاصطناعي في استوديو الذكاء الاصطناعي' },
     notifAnnounceMemoMsg: { fr: 'Générez des fiches et mémos A4 conformes aux programmes tunisiens avec 6 mises en page et export Word.', ar: 'ولّد مذكرات وخلاصات A4 رسمية مطابقة للبرامج التونسية مع 6 تصاميم وتصدير Word.' },
     notifAnnounceOcrTitle: { fr: 'Nouveau : Résolveur d\'exercices par photo', ar: 'جديد : مصحح التمارين بالصور والذكاء الاصطناعي' },
     notifAnnounceOcrMsg: { fr: 'Photographiez les cahiers ou manuels pour obtenir une correction pas-à-pas instantanée.', ar: 'التقط صوراً للتمارين في الكراس أو الكتاب المدرسي للحصول على إصلاح فوري ومفصل.' },

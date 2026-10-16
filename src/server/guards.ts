@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
+import { verifyFirebaseUser } from './storage';
 
 const ALLOWED_HOSTS = new Set([
   'localhost',
@@ -97,6 +98,19 @@ export const uploadRateLimiter = createRateLimiter(10, 15 * 60 * 1000, 'Uploads 
 // Per visitor IP. Sized for schools and mobile carriers where many teachers share one address.
 const aiPerIpMinuteLimiter = createRateLimiter(20, 60 * 1000, 'Requêtes IA limitées à 20 par minute');
 const aiPerIpDailyLimiter = createRateLimiter(300, 24 * 60 * 60 * 1000, 'Quota IA du jour atteint pour cette connexion');
+
+// Guests try the studios without an account: a smaller per-IP budget keeps scripts off the shared
+// free quota. A signed-in teacher (valid Firebase token) skips it and keeps the tier above.
+const aiGuestMinuteLimiter = createRateLimiter(6, 60 * 1000, 'Mode découverte : 6 requêtes IA par minute. Créez un compte gratuit pour continuer');
+const aiGuestDailyLimiter = createRateLimiter(40, 24 * 60 * 60 * 1000, 'Mode découverte : quota du jour atteint. Créez un compte gratuit pour continuer');
+
 export const aiRateLimiter = (req: Request, res: Response, next: NextFunction): void => {
-  aiPerIpMinuteLimiter(req, res, () => aiPerIpDailyLimiter(req, res, next));
+  const withIpTier = () => aiPerIpMinuteLimiter(req, res, () => aiPerIpDailyLimiter(req, res, next));
+  void verifyFirebaseUser(req).then((uid) => {
+    if (uid) {
+      withIpTier();
+      return;
+    }
+    aiGuestMinuteLimiter(req, res, () => aiGuestDailyLimiter(req, res, withIpTier));
+  });
 };

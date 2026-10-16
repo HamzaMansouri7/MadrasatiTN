@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MemoDoc, EducationStore, LanguageService } from '../../../core';
+import { MemoDoc, EducationStore, LanguageService } from '../../../../core';
 
 @Component({
   selector: 'app-memo-timeline-layout',

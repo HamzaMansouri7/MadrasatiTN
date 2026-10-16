@@ -86,7 +86,7 @@
 
         <!-- Publish Button -->
         <button
-          (click)="publishModalOpen.set(true)"
+          (click)="openPublishModal()"
           class="bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 cursor-pointer shadow-sm">
           <span class="material-icons text-sm">publish</span>
           <span>{{ lang.tr('Publier & Partager', 'نشر ومشاركة') }}</span>
@@ -1072,7 +1072,7 @@
       <div class="h-5 w-[1px] bg-white/20"></div>
 
       <button
-        (click)="publishModalOpen.set(true)"
+        (click)="openPublishModal()"
         class="bg-[#23845B] hover:bg-[#1C6949] text-white font-semibold text-xs px-4 py-2 rounded-xl flex items-center gap-1.5 transition-colors cursor-pointer shadow-sm">
         <span class="material-icons text-base">publish</span>
         <span>{{ lang.tr('Publier', 'نشر') }}</span>

@@ -44,6 +44,9 @@ import { LIBRARY_EXERCISES } from '../data/library-exercises.data';
 import { FIRST_GRADE_EXERCISES, FIRST_GRADE_COURSES } from '../data/first-grade-exercises.data';
 import { SEED_COURSES, SEED_BANK_EXERCISES } from '../data/seed-docs.data';
 
+/** Route id for a guest's unsaved lesson plan or series (/lesson-plan/draft, /series/draft). */
+export const DRAFT_DOC_ID = 'draft';
+
 @Injectable({
   providedIn: 'root',
 })
@@ -104,6 +107,18 @@ export class EducationStore {
 
   setLastSourceInput(source: SourceInput) {
     this.lastSourceInput.set(source);
+  }
+
+  /**
+   * Fields to pre-fill in a tool's form (e.g. a chapter picked in the programme). Unlike
+   * lastSourceInput it never triggers a generation: the teacher still presses "Generate".
+   */
+  readonly prefillSource = signal<SourceInput | null>(null);
+
+  consumePrefill(): SourceInput | null {
+    const src = this.prefillSource();
+    this.prefillSource.set(null);
+    return src;
   }
 
   /** Returns the pending hub input once and clears it (prevents stale regeneration on later visits). */
@@ -221,6 +236,42 @@ export class EducationStore {
 
   closeAuthModal() {
     this.isAuthModalOpen.set(false);
+    this.pendingAccountAction = null;
+  }
+
+  /** Action a guest asked for (save, publish, share) that resumes once they have an account. */
+  private pendingAccountAction: (() => void | Promise<void>) | null = null;
+
+  isSignedIn(): boolean {
+    return Boolean(this.firebase.userProfile() || this.firebase.currentUser());
+  }
+
+  /**
+   * Try-first gate: guests create freely, the account is asked for only when work leaves the
+   * session. Signed in → runs now; guest → opens signup and runs right after it succeeds.
+   */
+  requireAccount(action: () => void | Promise<void>): void {
+    if (this.isSignedIn()) {
+      void action();
+      return;
+    }
+    this.openSignupModal('teacher');
+    this.pendingAccountAction = action;
+  }
+
+  /**
+   * Called by the auth modal after login/signup. A pending guest action keeps the user on the
+   * page they were working on and finishes it; otherwise the usual role landing applies.
+   */
+  completeAuth(role: UserRole): void {
+    const pending = this.pendingAccountAction;
+    this.pendingAccountAction = null;
+    this.isAuthModalOpen.set(false);
+    if (pending) {
+      void pending();
+      return;
+    }
+    this.switchRole(role);
   }
 
   // Teacher Profile & Settings Modal State
@@ -1352,14 +1403,27 @@ export class EducationStore {
     const generated = res.data['doc'] as InfographicDoc | undefined;
     if (!generated) return { ok: false, error: 'Structure de document invalide.' };
 
-    const doc: InfographicDoc = { ...generated, author: this.profileAuthor() };
-    const saved = await this.saveLessonPlan({ doc });
-    if (saved) {
-      doc.id = saved.id;
-      doc.isOwner = Boolean(this.firebase.currentUser());
+    // Guests keep an unsaved draft (id '') shown at /lesson-plan/draft until they save it.
+    const doc: InfographicDoc = { ...generated, id: '', author: this.profileAuthor() };
+    if (this.isSignedIn()) {
+      const saved = await this.saveLessonPlan({ doc });
+      if (saved) {
+        doc.id = saved.id;
+        doc.isOwner = true;
+      }
     }
     this.currentLessonPlan.set(doc);
-    return { ok: true, doc, docId: doc.id };
+    return { ok: true, doc, docId: doc.id || DRAFT_DOC_ID };
+  }
+
+  /** Saves the open lesson plan under the signed-in teacher; returns its new id. */
+  async saveCurrentLessonPlan(): Promise<string | null> {
+    const current = this.currentLessonPlan();
+    if (!current) return null;
+    const saved = await this.saveLessonPlan({ doc: current });
+    if (!saved) return null;
+    this.currentLessonPlan.set({ ...current, id: saved.id, isOwner: true });
+    return saved.id;
   }
 
   /** AI Studio: the model fills a JSON spec; the doc is saved right away so it can be shared by link. */
@@ -1418,12 +1482,22 @@ export class EducationStore {
       values: values as unknown as InfographicDoc['values'],
       author: this.profileAuthor(),
     };
-    const saved = await this.saveStructuredDoc('infographic', doc);
-    if (saved) {
-      doc.id = saved.id;
-      doc.isOwner = Boolean(this.firebase.currentUser());
+    // Guests keep a local draft; it is saved when they create an account (claimInfographic).
+    if (this.isSignedIn()) {
+      const saved = await this.saveStructuredDoc('infographic', doc);
+      if (saved) {
+        doc.id = saved.id;
+        doc.isOwner = true;
+      }
     }
     return { ok: true, doc };
+  }
+
+  /** Stores a sheet the user does not own yet (a guest draft) as a new doc in their account. */
+  async claimInfographic(doc: InfographicDoc): Promise<InfographicDoc | null> {
+    const fresh: InfographicDoc = { ...doc, id: '', published: false, author: this.profileAuthor() };
+    const saved = await this.saveStructuredDoc('infographic', fresh);
+    return saved ? { ...fresh, id: saved.id, isOwner: true } : null;
   }
 
   /** Re-save after a client-side change (style switch); same id, owner only on the server. */
@@ -1635,11 +1709,23 @@ export class EducationStore {
     const generated = res.data['doc'] as SeriesDoc | undefined;
     if (!generated) return { ok: false, error: 'Structure de série invalide.' };
 
-    const doc: SeriesDoc = { ...generated, author: this.profileAuthor() };
-    const saved = await this.saveSeries({ doc });
-    if (saved) doc.id = saved.id;
+    const doc: SeriesDoc = { ...generated, id: '', author: this.profileAuthor() };
+    if (this.isSignedIn()) {
+      const saved = await this.saveSeries({ doc });
+      if (saved) doc.id = saved.id;
+    }
     this.currentSeries.set(doc);
-    return { ok: true, doc, docId: doc.id };
+    return { ok: true, doc, docId: doc.id || DRAFT_DOC_ID };
+  }
+
+  /** Saves the open series under the signed-in teacher; returns its new id. */
+  async saveCurrentSeries(): Promise<string | null> {
+    const current = this.currentSeries();
+    if (!current) return null;
+    const saved = await this.saveSeries({ doc: current });
+    if (!saved) return null;
+    this.currentSeries.set({ ...current, id: saved.id });
+    return saved.id;
   }
 
   /** Text for one panel, written from the plan scene and the teacher's source text only. */

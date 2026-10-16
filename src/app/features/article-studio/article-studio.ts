@@ -239,6 +239,20 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     if (typeof window === 'undefined') return;
+    const pre = this.store.consumePrefill();
+    if (pre) {
+      if (pre.grade) {
+        const g = pre.grade;
+        this.selectedGrade.set(g);
+        this.article.update((a) => ({ ...a, grade: g }));
+      }
+      if (pre.subject) {
+        const s = pre.subject;
+        this.selectedSubject.set(s);
+        this.article.update((a) => ({ ...a, subject: s }));
+      }
+      this.syncChapterSelection(pre.topic);
+    }
     const src = this.store.consumeLastSourceInput();
     if (!src) return;
 
@@ -723,6 +737,11 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
 
   toggleDirectEdit() {
     this.isDirectEditing.update((v) => !v);
+  }
+
+  /** Publishing to the blog needs an account; signup resumes the publish. */
+  requestPublish() {
+    this.store.requireAccount(() => this.publishArticle());
   }
 
   async publishArticle() {

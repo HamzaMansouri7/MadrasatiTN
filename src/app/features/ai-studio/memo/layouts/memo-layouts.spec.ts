@@ -3,9 +3,9 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { TestBed, getTestBed } from '@angular/core/testing';
 import { BrowserTestingModule, platformBrowserTesting } from '@angular/platform-browser/testing';
 import { signal } from '@angular/core';
-import { MemoDoc, MemoLayout } from '../../../core/models/memo.model';
-import { EducationStore } from '../../../core/services/education-store';
-import { LanguageService } from '../../../core/services/language.service';
+import { MemoDoc, MemoLayout } from '../../../../core/models/memo.model';
+import { EducationStore } from '../../../../core/services/education-store';
+import { LanguageService } from '../../../../core/services/language.service';
 
 try {
   getTestBed().initTestEnvironment(BrowserTestingModule, platformBrowserTesting());

@@ -363,7 +363,20 @@ export class EditorStudioComponent implements OnInit {
       }
       const targetType = qType || (this.docType() as DocumentType);
       void this.applySourceAndGenerate(src, targetType);
-    } else if (qType) {
+    } else {
+      // Chapter picked in the programme: pre-fill the settings only; the teacher generates from here.
+      const pre = this.store.consumePrefill();
+      if (pre) {
+        this.sourceTopicId.set(pre.topicId);
+        if (pre.grade) this.docGrade.set(pre.grade as GradeLevel);
+        if (pre.subject) this.docSubject.set(pre.subject as SubjectName);
+        if (pre.trimester) {
+          const tri = pre.trimester.includes('2') ? 'Trimestre 2' : pre.trimester.includes('3') ? 'Trimestre 3' : 'Trimestre 1';
+          this.docTrimester.set(tri);
+        }
+      }
+    }
+    if (!src && qType) {
       if (qType === 'exam') this.loadTemplatePreset('exam_full');
       else if (qType === 'exercise_sheet') this.loadTemplatePreset('exercise_sheet');
       else if (qType === 'course') this.loadTemplatePreset('course_summary');
@@ -1149,6 +1162,11 @@ export class EditorStudioComponent implements OnInit {
         return b.content;
       })
       .join('\n\n');
+  }
+
+  /** Publishing puts the sheet in the library, so it needs an account (signup reopens the dialog). */
+  openPublishModal() {
+    this.store.requireAccount(() => this.publishModalOpen.set(true));
   }
 
   publishAsDocumentBank() {

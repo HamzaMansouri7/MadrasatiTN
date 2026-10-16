@@ -11,6 +11,7 @@ import { ShareButtonComponent } from './share-button';
   template: `
     <div class="infographic-container w-full max-w-[850px] mx-auto space-y-4">
       
+      @if (toolbar()) {
       <!-- Toolbar (Screen Only) -->
       <div class="flex items-center justify-between gap-3 p-3 bg-white rounded-2xl border border-[#E7DFCF] print:hidden ">
         <div class="flex items-center gap-2">
@@ -22,6 +23,7 @@ import { ShareButtonComponent } from './share-button';
         </div>
 
         <div class="flex items-center gap-2">
+          @if (doc().id) {
           <app-share-button
             [url]="doc().templateId === 'lesson-plan-official' ? '/lesson-plan/' + doc().id : '/infographic/' + doc().id"
             [title]="doc().title"
@@ -29,6 +31,7 @@ import { ShareButtonComponent } from './share-button';
             [details]="[doc().grade, doc().subject, doc().trimester]"
             variant="button"
             accent="neutral" />
+          }
           @if (doc().isOwner) {
             <button
               type="button"
@@ -48,6 +51,7 @@ import { ShareButtonComponent } from './share-button';
           </button>
         </div>
       </div>
+      }
 
       <!-- ================= A4 PORTRAIT SHEET ================= -->
       <div
@@ -109,6 +113,8 @@ export class InfographicPageComponent {
   private readonly firebase = inject(FirebaseService);
 
   readonly doc = input.required<InfographicDoc>();
+  /** Share / print bar above the sheet; off for the blank sheet shown before a generation. */
+  readonly toolbar = input(true);
   readonly shareCopied = signal(false);
   readonly blogPublishing = signal(false);
   readonly blogPublished = signal(false);

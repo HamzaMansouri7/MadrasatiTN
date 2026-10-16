@@ -196,7 +196,7 @@ Allow: /
 Allow: /discovery
 Allow: /generate
 Allow: /solve
-Allow: /memo-studio
+Allow: /ai-studio
 Allow: /article-studio
 Disallow: /api/
 Disallow: /uploads/
@@ -215,7 +215,7 @@ app.get('/sitemap.xml', (req: Request, res: Response) => {
     { loc: '/', changefreq: 'daily', priority: '1.0' },
     { loc: '/discovery', changefreq: 'daily', priority: '0.9' },
     { loc: '/generate', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/memo-studio', changefreq: 'weekly', priority: '0.8' },
+    { loc: '/ai-studio', changefreq: 'weekly', priority: '0.8' },
     { loc: '/article-studio', changefreq: 'weekly', priority: '0.8' },
     { loc: '/solve', changefreq: 'monthly', priority: '0.7' },
   ];

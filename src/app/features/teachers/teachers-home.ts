@@ -14,7 +14,7 @@ import { TeacherCardComponent } from '@shared';
   imports: [RouterLink, TeacherCardComponent],
   template: `
     <div class="min-h-screen bg-[#F4F6F5] py-6 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-6xl mx-auto space-y-6">
+      <div class="w-full space-y-6">
 
         <!-- Header band -->
         <header class="bg-[#14251D] text-[#FBF8F1] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">

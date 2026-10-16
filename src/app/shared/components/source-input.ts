@@ -9,9 +9,9 @@ import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_G
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [FormsModule, TopicPickerComponent],
   template: `
-    <div class="bg-white rounded-[28px] border border-[#E7DFCF] p-5 sm:p-7 space-y-6 shadow-sm">
+    <div class="@container bg-white rounded-[28px] border border-[#E7DFCF] p-5 sm:p-7 space-y-6 shadow-sm">
       <!-- Tabs (Topic, Text, Photo, File) -->
-      <div role="tablist" [attr.aria-label]="lang.tr('Source du contenu', 'مصدر المحتوى')" class="flex items-center gap-1.5 p-1 bg-[#FBF8F1] rounded-xl border border-[#E7DFCF] overflow-x-auto">
+      <div role="tablist" [attr.aria-label]="lang.tr('Source du contenu', 'مصدر المحتوى')" class="grid grid-cols-2 @xl:flex items-center gap-1.5 p-1 bg-[#FBF8F1] rounded-xl border border-[#E7DFCF]">
         <button
           type="button"
           role="tab"
@@ -107,7 +107,7 @@ import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_G
           </label>
 
           @if (images().length > 0) {
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
+            <div class="grid grid-cols-2 @xl:grid-cols-4 gap-2.5 pt-1">
               @for (img of images(); track $index) {
                 <div class="relative group rounded-xl overflow-hidden border border-[#E7DFCF] aspect-4/3 bg-black/5">
                   <img [src]="img.base64Data" [alt]="lang.tr('Photo importée', 'صورة مستوردة') + ' ' + ($index + 1)" class="w-full h-full object-cover" />
@@ -152,7 +152,7 @@ import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_G
       }
 
       <!-- Metadata Selector Strip -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-2 border-t border-[#E7DFCF]">
+      <div class="grid grid-cols-1 @md:grid-cols-2 @4xl:grid-cols-4 gap-3 pt-2 border-t border-[#E7DFCF]">
         <!-- Grade -->
         <div>
           <label for="src-grade" class="block text-xs font-medium text-[#5B6B60] mb-1">{{ lang.t('filterGrade') }}</label>

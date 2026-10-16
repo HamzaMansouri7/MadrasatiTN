@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component, effect, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
+import { filter, map } from 'rxjs/operators';
 import { EducationStore, LanguageService, FirebaseService, UserRole } from '@core';
-import { NavbarComponent, AuthModalComponent, ToastComponent } from '@shared';
+import { NavbarComponent, AuthModalComponent, ToastComponent, CreateTabsComponent, isCreatePath } from '@shared';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { NavbarComponent, AuthModalComponent, ToastComponent } from '@shared';
     RouterOutlet,
     AuthModalComponent,
     ToastComponent,
+    CreateTabsComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
@@ -21,6 +23,19 @@ export class App {
   readonly lang = inject(LanguageService);
   readonly firebase = inject(FirebaseService);
   private readonly router = inject(Router);
+
+  private readonly url = toSignal(
+    this.router.events.pipe(
+      filter((e): e is NavigationEnd => e instanceof NavigationEnd),
+      map((e) => e.urlAfterRedirects),
+    ),
+    { initialValue: '' },
+  );
+
+  /** The creation tools share one tab bar (no hub page); parents never see it. */
+  readonly showCreateTabs = computed(
+    () => isCreatePath(this.url()) && this.firebase.userProfile()?.role !== 'parent',
+  );
 
   constructor() {
     // When Google redirect authentication finishes, route to user's assigned role
@@ -42,12 +57,10 @@ export class App {
           '/parent': 'parent',
           '/discovery': 'public',
           '/solve': 'public',
-          '/summarize': 'public',
           '/teachers': 'public',
           '/editor': 'editor',
           '/create': 'editor',
           '/generate': 'editor',
-          '/memo-studio': 'editor',
           '/ai-studio': 'editor',
           '/article-studio': 'article-editor',
           '/studio': 'editor',

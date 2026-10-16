@@ -40,7 +40,7 @@ const LOCAL_SEEDS: AppNotification[] = [
     icon: 'auto_stories',
     priority: 'high',
     targetRole: 'all',
-    routeUrl: '/teacher/memo-studio',
+    routeUrl: '/ai-studio?tab=memo',
   },
   {
     id: 'announce:ocr:v1',
@@ -100,7 +100,7 @@ export class NotificationService {
         icon: 'school',
         priority: 'high',
         targetRole: 'teacher',
-        routeUrl: '/teacher/memo-studio',
+        routeUrl: '/ai-studio?tab=memo',
       });
     }
 

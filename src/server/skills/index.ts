@@ -13,7 +13,6 @@ export * from './announcement';
 export * from './tag';
 export * from './exam';
 export * from './solve';
-export * from './summarize';
 export * from './article';
 export * from './worksheet';
 export * from './lesson-plan';

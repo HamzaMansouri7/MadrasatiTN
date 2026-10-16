@@ -17,7 +17,7 @@ import { TeacherAvatarComponent, ShareButtonComponent } from '@shared';
   imports: [RouterLink, TeacherAvatarComponent, ShareButtonComponent],
   template: `
     <div class="min-h-screen bg-[#F4F6F5] py-8 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-5xl mx-auto space-y-6">
+      <div class="w-full space-y-6">
 
         <!-- Back Link & Top Bar -->
         <div class="flex items-center justify-between gap-4">

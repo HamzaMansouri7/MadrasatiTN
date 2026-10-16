@@ -88,8 +88,12 @@ memoRouter.post('/export-docx', originGuard, uploadRateLimiter, async (req: Requ
 // Save a published sheet or memo
 docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<void> => {
   try {
-    // Optional login: when a valid token is sent the creator is recorded; anonymous publishing still works.
-    const ownerUid = (await verifyFirebaseUser(req)) ?? undefined;
+    // Saving is the account gate: guests create and preview freely, but only signed-in users store docs.
+    const ownerUid = await verifyFirebaseUser(req);
+    if (!ownerUid) {
+      res.status(401).json({ error: 'Connectez-vous pour enregistrer ou partager ce document.' });
+      return;
+    }
     const {
       docType,
       memoDoc,
@@ -156,7 +160,7 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
       });
       writeFileSync(docsIndexPath, JSON.stringify(index.slice(0, 500)), 'utf8');
 
-      res.json({ success: true, id, shareUrl: `/memo-studio?memo=${id}` });
+      res.json({ success: true, id, shareUrl: `/ai-studio?tab=memo&memo=${id}` });
       return;
     }
 

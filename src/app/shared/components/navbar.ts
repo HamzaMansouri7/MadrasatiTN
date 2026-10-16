@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, NotificationItem, UserRole } from '@core';
 import { TimeAgoPipe } from '../pipes/time-ago.pipe';
 import { TeacherAvatarComponent } from './teacher-avatar';
+import { isCreatePath } from './create-tabs';
 
 @Component({
   selector: 'app-navbar',
@@ -71,12 +72,12 @@ import { TeacherAvatarComponent } from './teacher-avatar';
               <span>{{ lang.tr('Parascolaire', 'الدعم المدرسي') }}</span>
             </button>
 
-            <!-- 3. Create Hub / مركز الإنشاء (teachers only) -->
-            @if (firebase.userProfile()?.role === 'teacher') {
+            <!-- 3. Create Hub / مركز الإنشاء (teachers and guests trying it out) -->
+            @if (firebase.userProfile()?.role !== 'parent') {
               <button
                 type="button"
                 (click)="router.navigate(['/create'])"
-                [class]="router.url.startsWith('/create') || router.url.startsWith('/editor') || router.url.startsWith('/ai-studio') || router.url.startsWith('/memo-studio') || router.url.startsWith('/article-studio')
+                [class]="isCreateRoute()
                   ? 'bg-[#1B4332] text-[#FBF8F1] shadow-xs' 
                   : 'bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] shadow-xs'"
                 class="flex items-center gap-1.5 px-3.5 h-[40px] rounded-xl text-xs font-semibold tracking-wide transition-all cursor-pointer mx-1">
@@ -402,12 +403,12 @@ import { TeacherAvatarComponent } from './teacher-avatar';
             <span class="text-[11px] leading-tight">{{ lang.tr('Parascolaire', 'الدعم المدرسي') }}</span>
           </button>
 
-          <!-- 4. Create Hub (teachers only) -->
-          @if (firebase.userProfile()?.role === 'teacher') {
+          <!-- 4. Create Hub (teachers and guests trying it out) -->
+          @if (firebase.userProfile()?.role !== 'parent') {
             <button
               type="button"
               (click)="router.navigate(['/create'])"
-              [class]="router.url.startsWith('/create') ? 'bg-[#1B4332] text-[#FBF8F1]' : 'bg-[#2D6A4F] text-[#FBF8F1]'"
+              [class]="isCreateRoute() ? 'bg-[#1B4332] text-[#FBF8F1]' : 'bg-[#2D6A4F] text-[#FBF8F1]'"
               class="flex flex-col items-center justify-center min-h-[44px] min-w-[54px] rounded-xl px-2.5 transition-colors cursor-pointer shadow-xs">
               <span class="material-icons text-base">auto_fix_high</span>
               <span class="text-[10px] font-bold leading-tight">{{ lang.tr('Créer', 'إنشاء') }}</span>
@@ -477,12 +478,8 @@ export class NavbarComponent {
     });
   }
 
-  isMemoStudioRoute(): boolean {
-    return this.router.url.includes('/memo-studio');
-  }
-
-  navigateToMemoStudio() {
-    this.router.navigateByUrl('/memo-studio');
+  isCreateRoute(): boolean {
+    return isCreatePath(this.router.url);
   }
 
   isGeneratorRoute(): boolean {

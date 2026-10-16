@@ -221,8 +221,13 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
     this.dna.set({ ...d, [field]: (value || undefined) as never });
   }
 
+  /** Sharing publishes the sheet, so it needs an account (signup resumes on the share prompt). */
   share() {
     if (this.exercises().length === 0 || this.saving()) return;
+    this.store.requireAccount(() => this.openSharePrompt());
+  }
+
+  private openSharePrompt() {
     const d = this.dna();
     if (!this.shareGrade() && d?.grade && this.GRADES.includes(d.grade)) this.shareGrade.set(d.grade);
     if (!this.shareSubject() && d?.subject && this.SUBJECTS.includes(d.subject)) this.shareSubject.set(d.subject);

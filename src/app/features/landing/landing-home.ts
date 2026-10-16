@@ -13,9 +13,11 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
 
       <!-- ============ HERO — "Cartouche officielle" ============ -->
       <section class="relative overflow-hidden rounded-[24px] bg-white border border-[#E3ECF2] shadow-xs animate-in fade-in duration-500">
-        <!-- Background Subtle Radial Glow & Arabesque Ornament -->
-        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#007CC2]/5 blur-3xl pointer-events-none"></div>
-        <div class="absolute top-0 right-0 w-64 h-64 opacity-5 pointer-events-none" style="background-image: radial-gradient(#007CC2 1px, transparent 1px); background-size: 16px 16px;"></div>
+        <img
+          src="hero-illustration.jpg"
+          alt=""
+          aria-hidden="true"
+          class="hidden lg:block absolute inset-y-0 end-0 w-[58%] h-full object-cover select-none pointer-events-none rtl:[mask-image:linear-gradient(to_right,black_45%,transparent)] ltr:[mask-image:linear-gradient(to_left,black_45%,transparent)]" />
 
         <div class="grid lg:grid-cols-[1.35fr_1fr] items-center gap-8 p-8 sm:p-12 lg:p-12 relative z-10">
 
@@ -65,12 +67,6 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                 <span>{{ lang.tr('مولّد الأوراق المشابهة', 'مولّد الأوراق المشابهة') }}</span>
               </button>
 
-              <button
-                (click)="goMemoStudio()"
-                class="bg-[#007CC2] hover:bg-[#005F96] text-white font-semibold px-5 py-3.5 rounded-xl text-sm transition-all duration-200 cursor-pointer flex items-center gap-2 shadow-sm hover:shadow-md hover:-translate-y-0.5">
-                <span class="material-icons text-base" aria-hidden="true">note_alt</span>
-                <span>{{ lang.tr('المذكرة البصرية', 'المذكرة البصرية') }}</span>
-              </button>
             </div>
 
             <!-- 4 Feature Badges in Horizontal Row -->
@@ -103,14 +99,6 @@ import { EducationStore, LanguageService, FirebaseService, UserRole } from '@cor
                 <span>{{ lang.tr('Simple et efficace', 'سهل وفعال') }}</span>
               </div>
             </div>
-          </div>
-
-          <!-- RIGHT: 3D Official Evaluation Sheet & Books Illustration -->
-          <div class="hidden lg:flex items-center justify-end relative">
-            <img
-              src="hero-illustration.jpg"
-              alt="Madrasati TN — Évaluation officielle et manuels scolaires"
-              class="w-full max-w-[500px] h-auto object-contain rounded-2xl drop-shadow-sm select-none" />
           </div>
 
         </div>
@@ -316,15 +304,11 @@ export class LandingHomeComponent {
   }
 
   goSummarize() {
-    this.router.navigateByUrl('/summarize');
+    this.router.navigate(['/create'], { queryParams: { output: 'memo' } });
   }
 
   goGenerate() {
     this.router.navigateByUrl('/generate');
-  }
-
-  goMemoStudio() {
-    this.router.navigateByUrl('/memo-studio');
   }
 
   enterWorkspace(role: UserRole) {

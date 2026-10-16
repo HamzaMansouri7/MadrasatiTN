@@ -85,42 +85,36 @@ export const routes: Routes = [
   },
   {
     path: 'editor',
-    canActivate: [authGuard],
     loadComponent: () =>
       import('./features/editor/editor-studio').then((m) => m.EditorStudioComponent),
     title: 'استوديو الوثائق | Studio Imprimable A4 - Madrasati TN',
   },
   {
     path: 'article-studio',
-    canActivate: [authGuard],
     loadComponent: () =>
       import('./features/article-studio/article-studio').then((m) => m.ArticleStudioComponent),
     title: 'استوديو المقالات | Rédaction Pédagogique - Madrasati TN',
   },
   {
     path: 'generate',
-    canActivate: [authGuard],
     loadComponent: () =>
       import('./features/generate/worksheet-generator').then((m) => m.WorksheetGeneratorComponent),
     title: 'مولّد الأوراق | Générateur de fiches - Madrasati TN',
   },
   {
     path: 'memo-studio',
-    canActivate: [authGuard],
-    loadComponent: () =>
-      import('./features/memo-studio/memo-studio').then((m) => m.MemoStudioComponent),
-    title: 'استوديو الذكاء الاصطناعي | AI Studio - Madrasati TN',
+    // Old share links (/memo-studio?memo=ID) keep working: their query params are carried over.
+    redirectTo: ({ queryParams }) => `/ai-studio?${new URLSearchParams({ ...queryParams, tab: 'memo' })}`,
+    pathMatch: 'full',
   },
   {
     path: 'ai-studio',
-    canActivate: [authGuard],
     loadComponent: () =>
       import('./features/ai-studio/ai-studio').then((m) => m.AiStudioComponent),
-    title: 'إنفوغرافيك الذكاء الاصطناعي | Infographies AI Studio - Madrasati TN',
+    title: 'استوديو الذكاء الاصطناعي | AI Studio - Madrasati TN',
   },
   {
     path: 'create',
-    canActivate: [authGuard],
     loadComponent: () =>
       import('./features/create/create-hub').then((m) => m.CreateHubComponent),
     title: 'مركز الإنشاء والتأليف | Studio Création - Madrasati TN',

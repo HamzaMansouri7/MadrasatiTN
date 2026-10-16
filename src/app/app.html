@@ -3,6 +3,9 @@
 
   <main
     class="flex-1 w-full mx-auto px-3 sm:px-6 lg:px-8 xl:px-10 py-6 max-w-full">
+    @if (showCreateTabs()) {
+      <app-create-tabs />
+    }
     <router-outlet />
   </main>
 

@@ -19,7 +19,7 @@ export type ProfileTab = 'profile' | 'saved' | 'settings' | 'published';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CommonModule, FormsModule, RouterLink, TeacherAvatarComponent],
   template: `
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+    <div class="w-full py-8 space-y-6">
       
       <!-- Top Profile Header / Cartouche Officielle -->
       <div class="bg-[#14251D] text-[#FBF8F1] rounded-2xl p-6 shadow-md relative overflow-hidden border border-[#233D30]">
@@ -478,6 +478,75 @@ export type ProfileTab = 'profile' | 'saved' | 'settings' | 'published';
             </div>
           </div>
 
+          <!-- Security & Password -->
+          <div class="space-y-3 pt-3 border-t border-[#E7DFCF]">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="text-xs font-bold text-[#14251D] uppercase tracking-wider flex items-center gap-1.5">
+                  <span class="material-icons text-sm text-[#2D6A4F]">lock</span>
+                  {{ lang.tr('Sécurité & Mot de passe', 'الأمان وكلمة المرور') }}
+                </h3>
+                <p class="text-[11px] text-[#6B7A70] mt-0.5">
+                  {{ lang.tr('Définissez ou modifiez un mot de passe pour pouvoir vous connecter avec votre adresse e-mail en plus de Google.', 'عيّن أو عدّل كلمة المرور للتمكن من الدخول بالبريد الإلكتروني بالإضافة إلى جوجل.') }}
+                </p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#FBF8F1] border border-[#E7DFCF] space-y-3">
+              @if (passwordSuccessMessage()) {
+                <div class="p-2.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs flex items-center gap-2">
+                  <span class="material-icons text-sm text-emerald-600">check_circle</span>
+                  <span>{{ passwordSuccessMessage() }}</span>
+                </div>
+              }
+              @if (passwordErrorMessage()) {
+                <div class="p-2.5 rounded-lg bg-rose-50 border border-rose-200 text-rose-800 text-xs flex items-center gap-2">
+                  <span class="material-icons text-sm text-rose-600">error_outline</span>
+                  <span>{{ passwordErrorMessage() }}</span>
+                </div>
+              }
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label for="new-pw" class="block text-[11px] font-semibold text-[#14251D] mb-1">
+                    {{ lang.tr('Nouveau mot de passe', 'كلمة المرور الجديدة') }}
+                  </label>
+                  <input
+                    id="new-pw"
+                    type="password"
+                    [(ngModel)]="newPassword"
+                    placeholder="••••••••"
+                    class="w-full bg-white border border-[#D5CDBC] rounded-xl px-3 py-2 text-xs text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
+                </div>
+                <div>
+                  <label for="confirm-pw" class="block text-[11px] font-semibold text-[#14251D] mb-1">
+                    {{ lang.tr('Confirmer le mot de passe', 'تأكيد كلمة المرور') }}
+                  </label>
+                  <input
+                    id="confirm-pw"
+                    type="password"
+                    [(ngModel)]="confirmPassword"
+                    placeholder="••••••••"
+                    class="w-full bg-white border border-[#D5CDBC] rounded-xl px-3 py-2 text-xs text-[#14251D] focus:outline-none focus:border-[#2D6A4F]" />
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between pt-1">
+                <span class="text-[10px] text-[#6B7A70]">
+                  {{ lang.tr('Au moins 6 caractères recommandés.', '6 أحرف أو أرقام على الأقل.') }}
+                </span>
+                <button
+                  type="button"
+                  (click)="handleUpdatePassword()"
+                  [disabled]="isUpdatingPassword()"
+                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] px-4 py-2 rounded-xl text-xs font-semibold cursor-pointer transition-colors shadow-2xs disabled:opacity-50 flex items-center gap-1.5">
+                  <span class="material-icons text-xs">key</span>
+                  <span>{{ isUpdatingPassword() ? lang.tr('Enregistrement...', 'جاري الحفظ...') : lang.tr('Enregistrer le mot de passe', 'تعيين كلمة المرور') }}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
           <!-- Privacy & Data Management (GDPR) -->
           <div class="space-y-3 pt-3 border-t border-[#E7DFCF]">
             <h3 class="text-xs font-bold text-[#14251D] uppercase tracking-wider">
@@ -533,6 +602,13 @@ export class ProfileShellComponent implements OnInit {
   // Preferences state
   prefActivity = true;
   prefAnnouncements = true;
+
+  // Password state
+  newPassword = '';
+  confirmPassword = '';
+  readonly isUpdatingPassword = signal<boolean>(false);
+  readonly passwordSuccessMessage = signal<string | null>(null);
+  readonly passwordErrorMessage = signal<string | null>(null);
 
   // New child modal state
 
@@ -676,5 +752,44 @@ export class ProfileShellComponent implements OnInit {
 
     await this.profileService.deleteAccount();
     this.router.navigate(['/']);
+  }
+
+  async handleUpdatePassword() {
+    this.passwordErrorMessage.set(null);
+    this.passwordSuccessMessage.set(null);
+
+    const pw = this.newPassword.trim();
+    const confirmPw = this.confirmPassword.trim();
+
+    if (!pw || pw.length < 6) {
+      this.passwordErrorMessage.set(this.lang.tr(
+        'Le mot de passe doit comporter au moins 6 caractères.',
+        'كلمة المرور يجب أن تتكون من 6 أحرف/أرقام على الأقل.'
+      ));
+      return;
+    }
+
+    if (pw !== confirmPw) {
+      this.passwordErrorMessage.set(this.lang.tr(
+        'Les deux mots de passe ne correspondent pas.',
+        'كلمتا المرور غير متطابقتين.'
+      ));
+      return;
+    }
+
+    this.isUpdatingPassword.set(true);
+    try {
+      await this.firebase.updateUserPassword(pw);
+      this.newPassword = '';
+      this.confirmPassword = '';
+      this.passwordSuccessMessage.set(this.lang.tr(
+        'Mot de passe enregistré ! Vous pouvez désormais vous connecter avec votre adresse e-mail ou avec Google.',
+        'تم حفظ كلمة المرور بنجاح! يمكنك الآن تسجيل الدخول إما بالبريد الإلكتروني أو بجوجل.'
+      ));
+    } catch (err: unknown) {
+      this.passwordErrorMessage.set(err instanceof Error ? err.message : 'Erreur lors de la modification du mot de passe');
+    } finally {
+      this.isUpdatingPassword.set(false);
+    }
   }
 }

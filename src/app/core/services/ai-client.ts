@@ -1,5 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { LanguageService } from './language.service';
+import { FirebaseService } from './firebase.service';
 
 /** Loosely typed model output: callers pick the fields they need and guard them. */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -23,7 +24,6 @@ export type AiRoute =
   | 'photo-solve'
   | 'plan-series'
   | 'solve-exercise'
-  | 'summarize-docs'
   | 'transform-exercise'
   | 'variant';
 
@@ -49,16 +49,19 @@ export interface AiPostOptions {
 @Injectable({ providedIn: 'root' })
 export class AiClient {
   private readonly lang = inject(LanguageService);
+  private readonly firebase = inject(FirebaseService);
 
   async post<T = AiEnvelope>(route: AiRoute, body: Record<string, unknown>, opts: AiPostOptions = {}): Promise<AiResult<T>> {
     const fallbackError = opts.fallbackError ?? 'Erreur réseau';
     if (typeof fetch === 'undefined') return { ok: false, status: 0, error: fallbackError };
 
     const payload = body['language'] === undefined ? { ...body, language: this.lang.lang() } : body;
+    // Signed-in teachers get the full AI quota; guests fall back to the lower per-IP tier.
+    const headers = await this.firebase.getAuthHeaders();
     const send = () =>
       fetch(`/api/ai/${route}`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify(payload),
         signal: opts.signal,
       });

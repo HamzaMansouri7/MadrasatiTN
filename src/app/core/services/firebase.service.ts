@@ -14,6 +14,8 @@ import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   updateProfile,
+  updatePassword,
+  sendPasswordResetEmail,
 } from 'firebase/auth';
 import {
   Firestore,
@@ -602,6 +604,28 @@ export class FirebaseService {
       headers['Authorization'] = `Bearer ${token}`;
     }
     return headers;
+  }
+
+  async sendPasswordReset(email: string): Promise<void> {
+    try {
+      await sendPasswordResetEmail(this.auth, email);
+    } catch (err: unknown) {
+      console.error('sendPasswordResetEmail error:', err);
+      throw new Error(this.formatAuthError(err));
+    }
+  }
+
+  async updateUserPassword(newPassword: string): Promise<void> {
+    const user = this.auth.currentUser;
+    if (!user) {
+      throw new Error(this.lang.tr('Veuillez vous reconnecter pour définir un mot de passe.', 'يرجى تسجيل الدخول مجدداً لتعيين كلمة مرور.'));
+    }
+    try {
+      await updatePassword(user, newPassword);
+    } catch (err: unknown) {
+      console.error('updateUserPassword error:', err);
+      throw new Error(this.formatAuthError(err));
+    }
   }
 }
 

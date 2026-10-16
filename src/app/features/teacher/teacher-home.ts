@@ -1,15 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, signal, effect, computed, HostListener } from '@angular/core';
 import { Router, RouterLink, ActivatedRoute } from '@angular/router';
-import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, downscaleImage, PrintService, AiClient, AiJson, PRIMARY_GRADES, buildWatermark, paginate, StorageVaultService } from '@core';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, TeacherProfileService, Course, SubjectName, GradeLevel, DocType, Trimester, BlogPost, QuestionThread, PrintService, AiClient, AiJson, PRIMARY_GRADES, buildWatermark, paginate, StorageVaultService } from '@core';
 import { TeacherAvatarComponent, BlogCardComponent, CartoucheComponent, DocCardComponent, PaginationComponent, QaThreadComponent, TabBarComponent, TabItem, copySharePost, joinDetails } from '@shared';
-
-export interface GeneratedExerciseResult {
-  title: string;
-  promptText: string;
-  solutionText: string;
-  hints?: string[];
-  points?: number;
-}
 
 @Component({
   selector: 'app-teacher-home',
@@ -88,13 +80,6 @@ export interface GeneratedExerciseResult {
           <!-- Primary actions -->
           <div class="flex flex-wrap items-center gap-2.5 lg:shrink-0">
             <button
-              (click)="openStudio()"
-              class="flex items-center gap-2 bg-[#F2C14E] hover:bg-[#D9A93C] text-[#14251D] font-bold px-5 py-3 rounded-[10px] text-sm transition-colors cursor-pointer shadow-sm">
-              <span class="material-icons text-lg">auto_fix_high</span>
-              {{ lang.tr('Studio Examens A4', 'استوديو التحرير والطباعة A4') }}
-            </button>
-
-            <button
               (click)="openModal('course')"
               class="flex items-center gap-2 bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-bold px-5 py-3 rounded-[10px] text-sm transition-colors cursor-pointer shadow-sm">
               <span class="material-icons text-lg">cloud_upload</span>
@@ -103,29 +88,6 @@ export interface GeneratedExerciseResult {
           </div>
         </div>
 
-        <!-- Tools -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mt-6 pt-6 border-t border-white/10">
-        <button (click)="openArticleStudio()" class="group flex flex-col items-center justify-center gap-2.5 bg-white/5 hover:bg-white/10 rounded-[14px] border border-white/15 hover:border-[#F2C14E]/60 px-3 py-4 text-center transition-all cursor-pointer">
-          <span class="w-10 h-10 rounded-xl bg-[#F2C14E]/15 group-hover:bg-[#F2C14E] text-[#F2C14E] group-hover:text-[#14251D] flex items-center justify-center transition-colors"><span class="material-icons text-xl">article</span></span>
-          <span class="text-xs font-semibold text-[#FBF8F1] leading-snug">{{ lang.tr('Rédiger un Article', 'كتابة مقال بيداغوجي') }}</span>
-        </button>
-        <button (click)="openMemoStudio()" class="group flex flex-col items-center justify-center gap-2.5 bg-white/5 hover:bg-white/10 rounded-[14px] border border-white/15 hover:border-[#F2C14E]/60 px-3 py-4 text-center transition-all cursor-pointer">
-          <span class="w-10 h-10 rounded-xl bg-[#F2C14E]/15 group-hover:bg-[#F2C14E] text-[#F2C14E] group-hover:text-[#14251D] flex items-center justify-center transition-colors"><span class="material-icons text-xl">note_alt</span></span>
-          <span class="text-xs font-semibold text-[#FBF8F1] leading-snug">{{ lang.t('memoStudioNav') }}</span>
-        </button>
-        <button (click)="openGenerator()" class="group flex flex-col items-center justify-center gap-2.5 bg-white/5 hover:bg-white/10 rounded-[14px] border border-white/15 hover:border-[#F2C14E]/60 px-3 py-4 text-center transition-all cursor-pointer">
-          <span class="w-10 h-10 rounded-xl bg-[#F2C14E]/15 group-hover:bg-[#F2C14E] text-[#F2C14E] group-hover:text-[#14251D] flex items-center justify-center transition-colors"><span class="material-icons text-xl">auto_awesome</span></span>
-          <span class="text-xs font-semibold text-[#FBF8F1] leading-snug">{{ lang.tr('Fiches similaires IA', 'أوراق مشابهة بالذكاء') }}</span>
-        </button>
-        <button (click)="openSummarizer()" class="group flex flex-col items-center justify-center gap-2.5 bg-white/5 hover:bg-white/10 rounded-[14px] border border-white/15 hover:border-[#F2C14E]/60 px-3 py-4 text-center transition-all cursor-pointer">
-          <span class="w-10 h-10 rounded-xl bg-[#F2C14E]/15 group-hover:bg-[#F2C14E] text-[#F2C14E] group-hover:text-[#14251D] flex items-center justify-center transition-colors"><span class="material-icons text-xl">summarize</span></span>
-          <span class="text-xs font-semibold text-[#FBF8F1] leading-snug">{{ lang.t('summarizeTeacherBtn') }}</span>
-        </button>
-        <button (click)="openModal('ai')" class="group flex flex-col items-center justify-center gap-2.5 bg-white/5 hover:bg-white/10 rounded-[14px] border border-white/15 hover:border-[#F2C14E]/60 px-3 py-4 text-center transition-all cursor-pointer">
-          <span class="w-10 h-10 rounded-xl bg-[#F2C14E]/15 group-hover:bg-[#F2C14E] text-[#F2C14E] group-hover:text-[#14251D] flex items-center justify-center transition-colors"><span class="material-icons text-xl">auto_awesome</span></span>
-          <span class="text-xs font-semibold text-[#FBF8F1] leading-snug">{{ lang.t('aiAssistantBtn') }}</span>
-        </button>
-        </div>
       </div>
 
       <!-- Metric Cards & Quick Stats -->
@@ -339,110 +301,6 @@ export interface GeneratedExerciseResult {
       </div>
 
     </div>
-
-    <!-- MODAL 1: AI ASSISTANT -->
-    @if (modalType() === 'ai') {
-      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-[24px] max-w-2xl w-full p-6 space-y-5 border border-[#E7DFCF] shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
-            <div class="flex items-center gap-2">
-              <span class="material-icons text-[#F2C14E] text-2xl">auto_awesome</span>
-              <div>
-                <h3 class="font-display font-semibold text-[#14251D] text-lg">
-                  {{ lang.tr('Assistant Pédagogique IA Tunisie', 'المساعد البيداغوجي الذكي في تونس') }}
-                </h3>
-                <p class="text-xs text-[#5B6B60]">
-                  {{ lang.tr("Générez un exercice ou une évaluation alignée au programme officiel tunisien.", 'توليد تمارين واختبارات متطابقة مع البرنامج الرسمي التونسي.') }}
-                </p>
-              </div>
-            </div>
-            <button (click)="closeModal()" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
-              <span class="material-icons">close</span>
-            </button>
-          </div>
-
-          <div class="space-y-4 text-xs">
-            <div class="grid grid-cols-2 gap-3">
-              <div>
-                <label for="ai-subject" class="block font-semibold text-[#14251D] mb-1">
-                  {{ lang.tr('Matière', 'المادة') }}
-                </label>
-                <select
-                  id="ai-subject"
-                  [value]="aiFormSubject()"
-                  (change)="onAiSubjectChange($event)"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none">
-                  <option value="Mathématiques">Mathématiques / الرياضيات</option>
-                  <option value="Français">Français / الفرنسية</option>
-                  <option value="اللغة العربية">اللغة العربية</option>
-                  <option value="Éveil Scientifique">Éveil Scientifique / الإيقاظ العلمي</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="ai-diff" class="block font-semibold text-[#14251D] mb-1">
-                  {{ lang.tr('Difficulté', 'درجة الصعوبة') }}
-                </label>
-                <select
-                  id="ai-diff"
-                  [value]="aiFormDifficulty()"
-                  (change)="onAiDifficultyChange($event)"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none">
-                  <option value="Facile">Facile / سهل</option>
-                  <option value="Moyen">Moyen / متوسط</option>
-                  <option value="Avancé">Avancé (Concours 6ème) / متقدم (مناظرة السادسة)</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label for="ai-topic" class="block font-semibold text-[#14251D] mb-1">
-                {{ lang.tr('Thème / Chapitre précis', 'المحور أو الدرس') }}
-              </label>
-              <input
-                id="ai-topic"
-                type="text"
-                [value]="aiFormTopic()"
-                (input)="onAiTopicInput($event)"
-                placeholder="Ex: La multiplication, الجملة الاسمية..."
-                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-[10px] p-2.5 text-[#14251D] outline-none" />
-            </div>
-
-            <button
-              [disabled]="isAiLoading()"
-              (click)="generateAiExercise()"
-              class="w-full bg-[#F2C14E] hover:bg-[#D9A93C] text-[#14251D] font-semibold py-3 rounded-[10px] flex items-center justify-center gap-2 cursor-pointer shadow-sm disabled:opacity-50">
-              @if (isAiLoading()) {
-                <span class="material-icons animate-spin text-sm">sync</span>
-                <span>{{ lang.tr("Génération par l'IA Gemini en cours...", 'جاري التوليد باستخدام الذكاء الاصطناعي...') }}</span>
-              } @else {
-                <span class="material-icons text-sm">auto_awesome</span>
-                <span>{{ lang.tr("Générer l'exercice et la solution", 'توليد التمرين والإصلاح') }}</span>
-              }
-            </button>
-
-            @if (generatedAiResult(); as result) {
-              <div class="bg-[#FBF8F1] rounded-[18px] p-4 border border-[#E7DFCF] space-y-3 mt-4">
-                <div class="flex items-center justify-between">
-                  <h4 class="font-display font-semibold text-[#14251D] text-sm">{{ result.title }}</h4>
-                  <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] font-semibold px-2 py-0.5 rounded-md text-[10px]">
-                    {{ lang.tr('Généré avec succès', 'تم التوليد بنجاح') }}
-                  </span>
-                </div>
-
-                <p class="text-[#14251D] bg-white p-3 rounded-[10px] border border-[#E7DFCF] leading-relaxed font-mono text-[11px]">
-                  {{ result.promptText }}
-                </p>
-
-                <div class="bg-[#2D6A4F]/10 p-3 rounded-[10px] text-[#2D6A4F]">
-                  <span class="font-semibold">{{ lang.tr('Solution :', 'الإصلاح:') }}</span> {{ result.solutionText }}
-                </div>
-              </div>
-            }
-          </div>
-        </div>
-      </div>
-    }
 
     <!-- FULL PAGE WORKSPACE: CREATE & PUBLISH COURSE / A4 DOCUMENT -->
     @if (modalType() === 'course') {
@@ -910,91 +768,6 @@ export interface GeneratedExerciseResult {
               {{ lang.t('publishArticleBtn') }}
             </button>
           </div>
-        </div>
-      </div>
-    }
-
-    <!-- MODAL 4: TEACHER DOCUMENT SUMMARIZER ("لخّص وثائقي") -->
-    @if (modalType() === 'summarize') {
-      <div class="fixed inset-0 z-50 bg-[#14251D]/70 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-[24px] max-w-2xl w-full p-6 space-y-5 border border-[#E7DFCF] shadow-xl max-h-[90vh] overflow-y-auto">
-          <div class="flex items-center justify-between border-b border-[#E7DFCF] pb-3">
-            <div class="flex items-center gap-2">
-              <span class="material-icons text-[#007CC2] text-2xl">auto_awesome</span>
-              <div>
-                <h3 class="font-display font-semibold text-[#14251D] text-lg">
-                  {{ lang.t('summarizeTeacherBtn') }}
-                </h3>
-                <p class="text-xs text-[#5B6B60]">
-                  حوّل وثائقك ودروسك اليدوية إلى ملخص موثّق معتمد ومطابق للبرنامج الرسمي
-                </p>
-              </div>
-            </div>
-            <button (click)="closeModal()" class="text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
-              <span class="material-icons">close</span>
-            </button>
-          </div>
-
-          @if (!isTeacherSummarizing()) {
-            <div class="space-y-4">
-              <div
-                role="button"
-                tabindex="0"
-                (click)="teacherFileInput.click()"
-                (keydown.enter)="teacherFileInput.click()"
-                class="border-2 border-dashed border-[#CBD9E2] hover:border-[#007CC2] transition-colors rounded-xl p-6 text-center bg-[#F7F9FB] cursor-pointer"
-              >
-                <input
-                  #teacherFileInput
-                  type="file"
-                  accept="image/*"
-                  multiple
-                  class="hidden"
-                  (change)="onTeacherSummarizeFilesSelected($event)"
-                />
-                <span class="material-icons text-3xl text-[#007CC2] mb-1">add_a_photo</span>
-                <p class="text-xs font-semibold text-[#102A43]">اختر صور الدرس أو المذكرة (1 إلى 8 صور)</p>
-                <p class="text-[11px] text-[#829AB1] mt-0.5">JPG / PNG — صور واضحة للكراس أو الكتاب</p>
-              </div>
-
-              @if (teacherSummarizeImages().length > 0) {
-                <div class="grid grid-cols-4 gap-2">
-                  @for (img of teacherSummarizeImages(); track $index; let idx = $index) {
-                    <div class="relative aspect-3/4 rounded-lg overflow-hidden border border-[#E6EEF3]">
-                      <img [src]="img.previewUrl" [alt]="'Page ' + (idx + 1)" class="w-full h-full object-cover" />
-                      <button
-                        type="button"
-                        (click)="removeTeacherSummarizeImage(idx)"
-                        class="absolute top-1 left-1 bg-red-600 text-white w-5 h-5 rounded-full flex items-center justify-center text-[10px]"
-                      >
-                        ✕
-                      </button>
-                    </div>
-                  }
-                </div>
-
-                <button
-                  type="button"
-                  (click)="runTeacherSummarizer()"
-                  class="w-full py-3 bg-[#007CC2] text-white font-semibold text-xs rounded-xl hover:bg-[#005F96] transition-colors shadow-sm flex items-center justify-center gap-2 cursor-pointer"
-                >
-                  <span class="material-icons text-base">auto_awesome</span>
-                  <span>توليد الملخص ونشره كمستند موثّق</span>
-                </button>
-              }
-
-              @if (teacherSummarizeError()) {
-                <div class="p-3 bg-red-50 text-red-700 text-xs rounded-lg border border-red-200">
-                  {{ teacherSummarizeError() }}
-                </div>
-              }
-            </div>
-          } @else {
-            <div class="p-8 text-center space-y-3">
-              <div class="w-10 h-10 border-4 border-[#007CC2] border-t-transparent rounded-full animate-spin mx-auto"></div>
-              <p class="text-xs font-semibold text-[#102A43]">جارٍ قراءة الوثائق وتوليد الملخص الموثّق…</p>
-            </div>
-          }
         </div>
       </div>
     }
@@ -1649,12 +1422,8 @@ export class TeacherHomeComponent {
   }
 
   readonly activeTab = signal<'courses' | 'blog' | 'qa'>('courses');
-  readonly modalType = signal<'none' | 'course' | 'blogArticle' | 'ai' | 'summarize'>('none');
-  
-  readonly teacherSummarizeImages = signal<{ base64Data: string; contentType: string; previewUrl: string }[]>([]);
-  readonly isTeacherSummarizing = signal(false);
-  readonly teacherSummarizeError = signal('');
-  
+  readonly modalType = signal<'none' | 'course' | 'blogArticle'>('none');
+
   readonly selectedArticleDetail = signal<BlogPost | null>(null);
   readonly printModalCourse = signal<Course | null>(null);
   readonly teacherProfileModal = signal<boolean>(false);
@@ -1967,13 +1736,6 @@ export class TeacherHomeComponent {
   readonly replyContent = signal('');
   readonly selectedAttachCourseId = signal<string>('');
 
-  // AI Assistant Form
-  readonly aiFormSubject = signal('Mathématiques');
-  readonly aiFormDifficulty = signal('Moyen');
-  readonly aiFormTopic = signal('La résolution de problèmes à deux étapes');
-  readonly isAiLoading = signal<boolean>(false);
-  readonly generatedAiResult = signal<GeneratedExerciseResult | null>(null);
-
   teacherHeaderSub(): string {
     return this.lang.tr(
       'Votre espace enseignant professionnel',
@@ -1987,7 +1749,7 @@ export class TeacherHomeComponent {
     return [p?.school, p?.delegation || p?.governorate].filter(Boolean).join(', ');
   }
 
-  openModal(type: 'course' | 'blogArticle' | 'ai') {
+  openModal(type: 'course' | 'blogArticle') {
     if (!this.requireAuth()) return;
     this.modalType.set(type);
     if (type === 'course') {
@@ -1995,107 +1757,9 @@ export class TeacherHomeComponent {
     }
   }
 
-  openStudio() {
-    if (!this.requireAuth()) return;
-    this.store.setRole('editor');
-  }
-
-  openMemoStudio() {
-    if (!this.requireAuth()) return;
-    this.router.navigateByUrl('/memo-studio');
-  }
-
   openArticleStudio() {
     if (!this.requireAuth()) return;
     this.store.setRole('article-editor');
-  }
-
-  openGenerator() {
-    if (!this.requireAuth()) return;
-    this.store.openGenerator();
-  }
-
-  openSummarizer() {
-    if (!this.requireAuth()) return;
-    this.modalType.set('summarize');
-    this.teacherSummarizeImages.set([]);
-    this.teacherSummarizeError.set('');
-  }
-
-  async onTeacherSummarizeFilesSelected(e: Event) {
-    const input = e.target as HTMLInputElement;
-    if (!input.files || input.files.length === 0) return;
-    const files = Array.from(input.files).slice(0, 8);
-    const list: { base64Data: string; contentType: string; previewUrl: string }[] = [];
-
-    for (const file of files) {
-      try {
-        const { base64Data, contentType } = await downscaleImage(file);
-        list.push({ base64Data, contentType, previewUrl: base64Data });
-      } catch (err) {
-        console.error(err);
-      }
-    }
-
-    this.teacherSummarizeImages.set(list);
-    input.value = '';
-  }
-
-  removeTeacherSummarizeImage(index: number) {
-    const list = [...this.teacherSummarizeImages()];
-    list.splice(index, 1);
-    this.teacherSummarizeImages.set(list);
-  }
-
-  async runTeacherSummarizer() {
-    const imgs = this.teacherSummarizeImages();
-    if (imgs.length === 0) return;
-
-    this.isTeacherSummarizing.set(true);
-    this.teacherSummarizeError.set('');
-
-    try {
-      const res = await this.ai.post('summarize-docs', {
-        files: imgs.map((i, idx) => ({
-          name: `image-${idx + 1}`,
-          data: i.base64Data,
-          mimeType: i.contentType,
-        })),
-      }, { fallbackError: 'Erreur lors de la génération' });
-      const data = res.ok ? res.data : { error: res.error };
-      const r = (res.ok ? data['summary'] : undefined) as AiJson | undefined;
-
-      if (res.ok && r) {
-        let fullContent = `${r.summaryMarkdown}\n\n`;
-        if (r.keyPoints?.length) {
-          fullContent += `### أهم النقاط للمراجعة:\n` + r.keyPoints.map((k: string) => `- ${k}`).join('\n') + '\n\n';
-        }
-        if (r.glossary?.length) {
-          fullContent += `### المفردات والمفاهيم:\n` + r.glossary.map((g: { term: string; def: string }) => `- **${g.term}**: ${g.def}`).join('\n');
-        }
-
-        this.store.addCourse({
-          title: r.title,
-          grade: r.grade,
-          subject: r.subject,
-          summary: r.summaryMarkdown,
-          content: fullContent,
-          teacherName: this.editDisplayName(),
-          authorId: this.firebase.currentUser()?.uid,
-        });
-
-        this.isTeacherSummarizing.set(false);
-        this.closeModal();
-        this.activeTab.set('courses');
-      } else {
-        this.teacherSummarizeError.set((data['error'] as string) || 'Erreur lors de la génération');
-        this.isTeacherSummarizing.set(false);
-      }
-    } catch (err) {
-      console.error(err);
-      this.teacherSummarizeError.set('Erreur réseau lors de la génération du résumé');
-      this.isTeacherSummarizing.set(false);
-    }
   }
 
   closeModal() {
@@ -2110,18 +1774,6 @@ export class TeacherHomeComponent {
   copyDocLink(c: Course) {
     if (typeof window === 'undefined') return;
     void copySharePost(c.title, joinDetails([c.grade, c.subject, c.trimester]), `${window.location.origin}/discovery?doc=${c.id}`);
-  }
-
-  onAiSubjectChange(e: Event) {
-    this.aiFormSubject.set((e.target as HTMLSelectElement).value);
-  }
-
-  onAiDifficultyChange(e: Event) {
-    this.aiFormDifficulty.set((e.target as HTMLSelectElement).value);
-  }
-
-  onAiTopicInput(e: Event) {
-    this.aiFormTopic.set((e.target as HTMLInputElement).value);
   }
 
   async handleCourseFileUpload(event: Event) {
@@ -2321,24 +1973,6 @@ export class TeacherHomeComponent {
 
   triggerPrintDialog() {
     this.print.printCourse(this.printModalCourse());
-  }
-
-  async generateAiExercise() {
-    this.isAiLoading.set(true);
-    try {
-      const res = await this.ai.post('generate-exercise', {
-        grade: this.newCourseGrade(),
-        subject: this.aiFormSubject(),
-        topic: this.aiFormTopic(),
-        difficulty: this.aiFormDifficulty(),
-        format: 'free',
-        trimester: 'Trimestre 1',
-        points: 5,
-      });
-      if (res.ok) this.generatedAiResult.set(res.data['exercise'] as never);
-    } finally {
-      this.isAiLoading.set(false);
-    }
   }
 
   cleanExcerpt(text?: string): string {

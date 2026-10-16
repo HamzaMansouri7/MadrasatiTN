@@ -22,4 +22,6 @@ export * from './components/series-panel';
 export * from './components/infographic-spec';
 export * from './components/spec-card';
 export * from './components/share-button';
+export * from './components/studio-bar';
+export * from './components/create-tabs';
 export * from './utils/share-post';
