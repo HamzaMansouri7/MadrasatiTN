@@ -14,7 +14,7 @@ export type EditorBlockType =
 
 export type CalloutVariant = 'info' | 'tip' | 'warning' | 'ministry';
 
-export type ExerciseFormat = 'free' | 'qcm' | 'true_false' | 'fill_blanks' | 'matching';
+export type ExerciseFormat = 'free' | 'qcm' | 'true_false' | 'fill_blanks' | 'matching' | 'ordering' | 'table' | 'column_calc';
 
 export type ExerciseDifficulty = 'Facile' | 'Moyen' | 'Difficile';
 
@@ -51,6 +51,15 @@ export interface EditorBlock {
   tfStatements?: { text: string; answer: boolean }[];
   gapText?: string;
   matchingPairs?: { left: string; right: string }[];
+  /** Ordering: items in the correct order (the sheet shows them mixed). */
+  orderItems?: string[];
+  /** Table to complete: a cell written [[answer]] is left empty on the sheet. */
+  tableHeaders?: string[];
+  tableRows?: string[][];
+  /** Worked calculation set out in columns. */
+  calcOperands?: string[];
+  calcOperator?: '+' | '-' | '×';
+  calcResult?: string;
   // Image specific
   imageUrl?: string;
   imageCaption?: string;

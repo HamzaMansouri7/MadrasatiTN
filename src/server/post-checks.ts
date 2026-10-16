@@ -50,6 +50,28 @@ export function checkExercise(ex: Record<string, unknown> | null | undefined): E
     }
   }
 
+  if (format === 'ordering') {
+    const items = ex['orderItems'];
+    if (!Array.isArray(items) || items.length < 3) {
+      errors.push('ordering format requires at least three orderItems');
+    }
+  }
+
+  if (format === 'table') {
+    const headers = ex['tableHeaders'];
+    const rows = ex['tableRows'];
+    if (!Array.isArray(headers) || headers.length < 2 || !Array.isArray(rows) || rows.length < 1) {
+      errors.push('table format requires tableHeaders (2+) and tableRows (1+)');
+    }
+  }
+
+  if (format === 'column_calc') {
+    const operands = ex['calcOperands'];
+    if (!Array.isArray(operands) || operands.length < 2 || typeof ex['calcResult'] !== 'string') {
+      errors.push('column_calc format requires two calcOperands and a calcResult');
+    }
+  }
+
   return {
     valid: errors.length === 0,
     errors,

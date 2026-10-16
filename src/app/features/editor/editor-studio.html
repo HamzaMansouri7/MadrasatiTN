@@ -46,12 +46,6 @@
       <span class="material-icons text-base" aria-hidden="true">print</span>
     </button>
 
-    <button type="button" (click)="openAiPromptModal()"
-      class="bg-[#F2C14E] hover:opacity-90 text-[#14251D] font-semibold px-4 min-h-11 rounded-xl text-sm flex items-center gap-2 cursor-pointer transition-opacity">
-      <span class="material-icons text-base" aria-hidden="true">auto_awesome</span>
-      {{ lang.tr('Assistant IA', 'مساعد الذكاء الاصطناعي') }}
-    </button>
-
     <button type="button" (click)="openPublishModal()"
       class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 min-h-11 rounded-xl text-sm flex items-center gap-2 cursor-pointer transition-colors shadow-sm">
       <span class="material-icons text-base" aria-hidden="true">publish</span>
@@ -247,7 +241,7 @@
     <aside
       [class.hidden]="mobilePane() !== 'inspector'"
       [class.inspector-idle]="!selectedBlock()"
-      class="studio-pane lg:block lg:sticky lg:top-4 bg-white rounded-2xl border border-[#E7DFCF] shadow-sm overflow-hidden print:hidden">
+      class="studio-pane lg:block bg-white rounded-2xl border border-[#E7DFCF] shadow-sm overflow-hidden print:hidden">
       <div class="px-4 py-3 border-b border-[#E7DFCF] bg-[#FBF8F1] flex items-center gap-2">
         <span class="material-icons text-base text-[#2D6A4F]">tune</span>
         <h2 class="text-xs font-semibold text-[#14251D]">{{ lang.tr('Inspecteur du bloc', 'مفتّش الكتلة') }}</h2>
@@ -260,7 +254,7 @@
         }
       </div>
 
-      <div class="p-4 space-y-4 text-xs max-h-[calc(100vh-140px)] overflow-y-auto">
+      <div class="p-4 space-y-4 text-xs">
         @if (!selectedBlock()) {
           <!-- Empty state -->
           <div class="text-center py-8 px-2 space-y-2">
@@ -283,6 +277,19 @@
                   (input)="updateBlockField(sb.id, 'exerciseTitle', $any($event.target).value)"
                   [placeholder]="lang.t('editorExerciseTitlePlaceholder')"
                   class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 font-semibold text-[#14251D] outline-none" />
+              </div>
+
+              <!-- Exercise type -->
+              <div>
+                <label for="exercise-format-select" class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Type d’exercice', 'نوع التمرين') }}</label>
+                <select id="exercise-format-select"
+                  [value]="sb.exerciseFormat || 'free'"
+                  (change)="setExerciseFormat(sb.id, $any($event.target).value)"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 text-[#14251D] outline-none cursor-pointer">
+                  @for (f of exerciseFormats; track f.id) {
+                    <option [value]="f.id" [selected]="(sb.exerciseFormat || 'free') === f.id">{{ lang.tr(f.fr, f.ar) }}</option>
+                  }
+                </select>
               </div>
 
               <!-- Difficulty + total points -->
@@ -834,19 +841,81 @@
                           @if (b.content) {
                             <p dir="auto" class="text-[#14251D] whitespace-pre-line font-medium mb-2">{{ b.content }}</p>
                           }
-                          <div class="grid grid-cols-2 gap-6 text-xs pt-1">
+                          <!-- Two columns with a dot on the inner side of each item: the pupil draws the line -->
+                          <div class="grid grid-cols-[minmax(0,1fr)_4rem_minmax(0,1fr)] text-xs pt-1">
                             <div class="space-y-3">
                               @for (pair of b.matchingPairs || []; track $index) {
-                                <div class="p-2 bg-white rounded border border-[#E7DFCF] font-semibold text-[#14251D]">
-                                  {{ $index + 1 }}. {{ pair.left }}
+                                <div class="flex items-center justify-between gap-2 p-2 bg-white rounded border border-[#E7DFCF] font-semibold text-[#14251D]">
+                                  <span dir="auto">{{ pair.left }}</span>
+                                  <span class="w-2.5 h-2.5 rounded-full bg-[#14251D] shrink-0" aria-hidden="true"></span>
                                 </div>
                               }
                             </div>
+                            <span aria-hidden="true"></span>
                             <div class="space-y-3">
                               @for (rightText of getShuffledMatchingRights(b.id, b.matchingPairs); track $index) {
-                                <div class="p-2 bg-white rounded border border-[#E7DFCF] text-[#14251D]">
-                                  • {{ rightText }}
+                                <div class="flex items-center gap-2 p-2 bg-white rounded border border-[#E7DFCF] text-[#14251D]">
+                                  <span class="w-2.5 h-2.5 rounded-full bg-[#14251D] shrink-0" aria-hidden="true"></span>
+                                  <span dir="auto">{{ rightText }}</span>
                                 </div>
+                              }
+                            </div>
+                          </div>
+                        }
+                        @case ('ordering') {
+                          @if (b.content) {
+                            <p dir="auto" class="text-[#14251D] whitespace-pre-line font-medium mb-2">{{ b.content }}</p>
+                          }
+                          <ul class="space-y-2 text-xs pt-1">
+                            @for (item of mixedOrder(b.orderItems); track $index) {
+                              <li class="flex items-center gap-2.5">
+                                <span class="w-7 h-7 shrink-0 rounded border border-[#14251D]/60 bg-white" aria-hidden="true"></span>
+                                <span dir="auto" class="text-[#14251D]">{{ item }}</span>
+                              </li>
+                            }
+                          </ul>
+                        }
+                        @case ('table') {
+                          @if (b.content) {
+                            <p dir="auto" class="text-[#14251D] whitespace-pre-line font-medium mb-2">{{ b.content }}</p>
+                          }
+                          <table class="w-full text-xs border-collapse bg-white">
+                            <thead>
+                              <tr>
+                                @for (h of b.tableHeaders || []; track $index) {
+                                  <th dir="auto" class="border border-[#14251D]/40 bg-[#F2ECDE] px-2 py-1.5 font-semibold text-[#14251D]">{{ h }}</th>
+                                }
+                              </tr>
+                            </thead>
+                            <tbody>
+                              @for (row of b.tableRows || []; track $index) {
+                                <tr>
+                                  @for (cell of row; track $index) {
+                                    <td dir="auto" class="border border-[#14251D]/40 px-2 h-8 text-center text-[#14251D]">{{ isBlankCell(cell) ? '' : cell }}</td>
+                                  }
+                                </tr>
+                              }
+                            </tbody>
+                          </table>
+                        }
+                        @case ('column_calc') {
+                          @if (b.content) {
+                            <p dir="auto" class="text-[#14251D] whitespace-pre-line font-medium mb-2">{{ b.content }}</p>
+                          }
+                          @let calc = calcLayout(b);
+                          <div dir="ltr" class="inline-block font-mono text-base text-[#14251D] pt-1">
+                            @for (row of calc.rows; track $index; let first = $first) {
+                              <div class="flex items-center">
+                                <span class="w-6 text-center font-semibold">{{ first ? '' : (b.calcOperator || '+') }}</span>
+                                @for (d of row; track $index) {
+                                  <span class="w-7 h-8 flex items-center justify-center">{{ d }}</span>
+                                }
+                              </div>
+                            }
+                            <div class="flex border-t-2 border-[#14251D] mt-1 pt-1">
+                              <span class="w-6"></span>
+                              @for (cell of calc.resultCells; track cell) {
+                                <span class="w-7 h-8 border border-dashed border-[#14251D]/40" aria-hidden="true"></span>
                               }
                             </div>
                           </div>
@@ -932,13 +1001,49 @@
                 @case ('image') {
                   @if (b.imageUrl) {
                     <div class="text-center py-2">
-                      <img [src]="b.imageUrl" alt="Illustration" class="max-h-48 rounded mx-auto border border-[#E7DFCF]" />
+                      <img [src]="b.imageUrl" [alt]="b.imageCaption || lang.tr('Illustration', 'صورة توضيحية')" class="max-h-48 rounded mx-auto border border-[#E7DFCF]" />
                       @if (b.imageCaption) {
-                        <p class="text-[10px] text-[#5B6B60] mt-1 italic">{{ b.imageCaption }}</p>
+                        <p dir="auto" class="text-[10px] text-[#5B6B60] mt-1">{{ b.imageCaption }}</p>
                       }
+                      <!-- Replace: draw another version or upload (screen only) -->
+                      <div class="print:hidden mt-2 flex flex-wrap items-center justify-center gap-1.5" (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()">
+                        <button type="button" (click)="generateBlockImage(b)" [disabled]="isAiLoading()" [class]="exerciseChip">
+                          <span class="material-icons text-sm" aria-hidden="true">refresh</span>{{ lang.tr('Autre version', 'صورة أخرى') }}
+                        </button>
+                        <label [class]="exerciseChip">
+                          <span class="material-icons text-sm" aria-hidden="true">upload</span>{{ lang.tr('Remplacer', 'استبدال') }}
+                          <input type="file" (change)="handleBlockImageUpload(b.id, $event)" accept="image/png,image/jpeg,image/webp" class="sr-only" />
+                        </label>
+                      </div>
                     </div>
                   } @else {
-                    <p class="text-[11px] text-[#5B6B60] italic text-center py-3">{{ lang.tr('Image vide — ajoutez-en une depuis l’Inspecteur.', 'صورة فارغة — أضفها من المفتّش.') }}</p>
+                    <!-- Empty image: describe it and let the image models draw it, or upload one -->
+                    <div class="print:hidden rounded-lg border border-dashed border-[#E7DFCF] bg-[#FBF8F1] p-3 space-y-2" (click)="$event.stopPropagation()" (keydown)="$event.stopPropagation()">
+                      <label [for]="'img-prompt-' + b.id" class="block text-xs font-semibold text-[#14251D]">{{ lang.tr('Décrivez l’image', 'صف الصورة') }}</label>
+                      <div class="flex flex-wrap items-center gap-1.5">
+                        <input
+                          [id]="'img-prompt-' + b.id"
+                          type="text"
+                          dir="auto"
+                          [value]="b.imageCaption || ''"
+                          (input)="updateBlockField(b.id, 'imageCaption', $any($event.target).value); session.clearFieldError('img-prompt-' + b.id)"
+                          (keydown.enter)="generateBlockImage(b)"
+                          [attr.aria-invalid]="!!session.fieldError('img-prompt-' + b.id)"
+                          [placeholder]="lang.tr('Ex. : un marché tunisien avec des fruits', 'مثال: سوق تونسي فيه غلال')"
+                          class="flex-1 min-w-48 bg-white border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-lg px-2.5 min-h-9 text-xs text-[#14251D] outline-none focus:border-[#2D6A4F]" />
+                        <button type="button" (click)="generateBlockImage(b)" [disabled]="isAiLoading()"
+                          class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-3 min-h-9 rounded-lg text-xs flex items-center gap-1.5 cursor-pointer transition-colors disabled:opacity-60 disabled:cursor-default">
+                          <span class="material-icons text-sm" aria-hidden="true">brush</span>{{ lang.tr('Générer l’image', 'توليد الصورة') }}
+                        </button>
+                        <label [class]="exerciseChip">
+                          <span class="material-icons text-sm" aria-hidden="true">upload</span>{{ lang.tr('Importer', 'رفع صورة') }}
+                          <input type="file" (change)="handleBlockImageUpload(b.id, $event)" accept="image/png,image/jpeg,image/webp" class="sr-only" />
+                        </label>
+                      </div>
+                      @if (session.fieldError('img-prompt-' + b.id); as msg) {
+                        <p class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
+                      }
+                    </div>
                   }
                 }
                 @case ('divider') {
@@ -1015,15 +1120,9 @@
 
       <!-- Add element palette -->
       <div class="p-3 border-t border-[#E7DFCF] space-y-2 bg-[#FBF8F1]">
-        <div class="flex items-center justify-between">
-          <span class="text-[11px] font-semibold text-[#14251D] flex items-center gap-1.5">
-            <span class="material-icons text-sm text-[#2D6A4F]">add_box</span>{{ lang.tr('Ajouter un élément', 'إضافة عنصر') }}
-          </span>
-          <button (click)="openAiPromptModal()"
-            class="bg-[#F2C14E] hover:bg-[#F2C14E] text-[#14251D] px-2.5 py-1 rounded-lg text-[11px] flex items-center gap-1 font-semibold shadow-sm cursor-pointer">
-            <span class="material-icons text-xs">auto_awesome</span>IA
-          </button>
-        </div>
+        <span class="text-[11px] font-semibold text-[#14251D] flex items-center gap-1.5">
+          <span class="material-icons text-sm text-[#2D6A4F]">add_box</span>{{ lang.tr('Ajouter un élément', 'إضافة عنصر') }}
+        </span>
         <div class="grid grid-cols-2 gap-1.5">
           <button (click)="addBlock('heading1')" class="bg-white hover:bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
             <span class="material-icons text-sm">title</span>{{ lang.tr('Titre', 'عنوان') }}

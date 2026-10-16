@@ -281,9 +281,10 @@ async function generateIllustrationFile(
   scene: string,
   seed: number,
   seedKey?: string,
+  excludeGroups?: string[],
 ): Promise<string> {
   try {
-    const res = await generateImage({ prompt, seed, preferModel: seedKey ? pinnedModels.get(seedKey) : undefined });
+    const res = await generateImage({ prompt, seed, preferModel: seedKey ? pinnedModels.get(seedKey) : undefined, excludeGroups });
     if (seedKey && !pinnedModels.has(seedKey)) {
       // Pin the first model that answered so the rest of this document keeps one look.
       if (pinnedModels.size >= 500) pinnedModels.delete(pinnedModels.keys().next().value as string);
@@ -1793,12 +1794,15 @@ aiRouter.post(
 
       const style = body.style ? String(body.style).slice(0, 450) : undefined;
       const hasVariation = variation !== undefined && variation > 0;
+      // `noGemini`: free image models only (NVIDIA, Pollinations), never the paid Gemini one.
+      const excludeGroups = body.noGemini === true ? ["gemini"] : undefined;
       const cacheKey = hashKey({
         prompt: promptText,
         style,
         variation: body.variation,
         seedKey,
         raw,
+        noGemini: !!excludeGroups,
       });
 
       if (!hasVariation) {
@@ -1824,7 +1828,7 @@ aiRouter.post(
             kind: String(body.kind ?? "").slice(0, 30),
             style,
           });
-      const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed, seedKey);
+      const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed, seedKey, excludeGroups);
       if (!hasVariation) {
         exerciseCache.set(cacheKey, { imageUrl, category });
       }

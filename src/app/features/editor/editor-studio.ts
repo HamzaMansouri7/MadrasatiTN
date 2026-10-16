@@ -586,33 +586,87 @@ export class EditorStudioComponent implements OnInit {
     }
   }
 
+  /**
+   * Ready-made sheets in the sheet language. Exercise texts are placeholders ending in "…",
+   * so each one shows "Generate this exercise"; points add up to 20.
+   */
   loadTemplatePreset(type: 'exam_full' | 'course_summary' | 'exercise_sheet') {
-    if (type === 'exam_full') {
-      this.docType.set('exam');
-      this.docTitle.set(`Évaluation Trimestrielle : ${this.docSubject()} (${this.docGrade()})`);
-      this.blocks.set([
-        { id: 'b-' + Date.now() + '-1', type: 'cartouche', content: '' },
-        { id: 'b-' + Date.now() + '-2', type: 'heading1', content: 'I. Connaissances & Application' },
-        { id: 'b-' + Date.now() + '-3', type: 'exercise', exerciseTitle: 'Exercice 1', exercisePoints: 8, content: 'Consigne et énoncé du premier exercice...', exerciseSolution: 'Corrigé type de l\'exercice 1...', showSolution: false },
-        { id: 'b-' + Date.now() + '-4', type: 'heading1', content: 'II. Raisonnement & Résolution de Problème' },
-        { id: 'b-' + Date.now() + '-5', type: 'exercise', exerciseTitle: 'Exercice 2 (Situation Problème)', exercisePoints: 12, content: 'Texte du problème avec mise en situation...', exerciseSolution: 'Solution détaillée et étapes de calcul...', showSolution: false },
-      ]);
-    } else if (type === 'course_summary') {
-      this.docType.set('course');
-      this.docTitle.set(`Fiche de Synthèse : ${this.docSubject()} (${this.docGrade()})`);
-      this.blocks.set([
-        { id: 'b-' + Date.now() + '-1', type: 'heading1', content: 'Objectifs d\'apprentissage' },
-        { id: 'b-' + Date.now() + '-2', type: 'paragraph', content: 'Ce résumé regroupe les notions clés et les règles essentielles du programme officiel.' },
-        { id: 'b-' + Date.now() + '-3', type: 'callout', calloutTitle: 'Règle Fondamentale', content: 'Définition ou formule à retenir par cœur.' },
-        { id: 'b-' + Date.now() + '-4', type: 'exercise', exerciseTitle: 'Exemple d\'Application', exercisePoints: 5, content: 'Application directe de la règle...', exerciseSolution: 'Corrigé explicatif...', showSolution: true },
-      ]);
-    } else if (type === 'exercise_sheet') {
+    const ar = this.docLanguage() === 'ar';
+    const t = (fr: string, arText: string) => (ar ? arText : fr);
+    const subject = this.lang.translateSubject(this.docSubject());
+    const grade = this.lang.translateGrade(this.docGrade());
+    let n = 0;
+    const id = () => `b-${Date.now()}-${++n}`;
+    const heading = (content: string, level: 'heading1' | 'heading2' = 'heading1'): EditorBlock => ({ id: id(), type: level, content });
+    const note = (title: string, content: string): EditorBlock => ({ id: id(), type: 'callout', calloutTitle: title, content });
+    const exercise = (
+      no: number,
+      title: string,
+      points: number,
+      format: ExerciseFormat,
+      content: string,
+      difficulty: ExerciseDifficulty,
+      criteria?: { label: string; detail: string }[],
+    ): EditorBlock => ({
+      id: id(),
+      type: 'exercise',
+      exerciseTitle: `${t('Exercice', 'التمرين')} ${no} : ${title}`,
+      exercisePoints: points,
+      exerciseFormat: format,
+      exerciseDifficulty: difficulty,
+      content,
+      showSolution: false,
+      exerciseCriteria: criteria?.map((c) => ({ label: c.label, detail: c.detail, points })),
+    });
+
+    if (type === 'exercise_sheet') {
       this.docType.set('exercise_sheet');
-      this.docTitle.set(`Série d'Entraînement : ${this.docSubject()} (${this.docGrade()})`);
+      this.docTitle.set(t(`Série d'entraînement : ${subject} (${grade})`, `سلسلة تمارين : ${subject} (${grade})`));
       this.blocks.set([
-        { id: 'b-' + Date.now() + '-1', type: 'heading1', content: 'Série d\'Exercices Pratiques' },
-        { id: 'b-' + Date.now() + '-2', type: 'exercise', exerciseTitle: 'Exercice 1 : Entraînement de base', exercisePoints: 10, content: 'Exercices d\'assimilation rapide...', showSolution: false },
-        { id: 'b-' + Date.now() + '-3', type: 'exercise', exerciseTitle: 'Exercice 2 : Approfondissement', exercisePoints: 10, content: 'Questions d\'analyse et de réflexion...', showSolution: false },
+        heading(t('Série d’exercices', 'سلسلة تمارين')),
+        note(t('Objectif de la série', 'هدف السلسلة'), t('À la fin de cette série, je saurai…', 'في نهاية هذه السلسلة، أكون قادرًا على…')),
+        heading(t('Je m’entraîne', 'أتدرّب'), 'heading2'),
+        exercise(1, t('Je choisis la bonne réponse', 'أختار الإجابة الصحيحة'), 4, 'qcm', t('Coche la bonne réponse…', 'أشطب الإجابة الصحيحة…'), 'Facile'),
+        exercise(2, t('Vrai ou faux', 'صواب أم خطأ'), 4, 'true_false', t('Réponds par vrai ou faux…', 'أجيب بصواب أو خطأ…'), 'Facile'),
+        exercise(3, t('Je complète', 'أكمل'), 4, 'fill_blanks', t('Complète avec le mot ou le nombre qui convient…', 'أكمل بالكلمة أو العدد المناسب…'), 'Moyen'),
+        heading(t('Je réfléchis', 'أفكّر'), 'heading2'),
+        exercise(4, t('Situation-problème', 'وضعية مشكل'), 8, 'free', t('Je lis la situation, je cherche puis je rédige ma réponse…', 'أقرأ الوضعية، أبحث ثم أحرّر إجابتي…'), 'Difficile'),
+        note(t('Conseil', 'نصيحة'), t('Relis chaque consigne et vérifie ta réponse avant de passer à la suivante.', 'أقرأ كل تعليمة جيدًا وأتثبّت من إجابتي قبل المرور إلى الموالية.')),
+      ]);
+    } else if (type === 'exam_full') {
+      this.docType.set('exam');
+      this.docTitle.set(t(`Évaluation : ${subject} (${grade})`, `تقييم : ${subject} (${grade})`));
+      const c1 = { label: 'C1', detail: t('Interprétation adéquate', 'التأويل الملائم') };
+      const c2 = { label: 'C2', detail: t('Utilisation correcte des outils', 'الاستعمال السليم للأدوات') };
+      const c3 = { label: 'C3', detail: t('Cohérence de la réponse', 'انسجام الإجابة') };
+      const c4 = { label: 'C4', detail: t('Perfectionnement', 'التميّز') };
+      this.blocks.set([
+        { id: id(), type: 'cartouche', content: '' },
+        note(t('Consignes générales', 'تعليمات عامة'), t('Lis attentivement chaque consigne. Écris lisiblement. Durée : 60 minutes.', 'أقرأ كل تعليمة بانتباه. أكتب بخط واضح. المدة : 60 دقيقة.')),
+        heading(t('Partie I : Je mobilise mes acquis', 'الجزء الأول : أوظّف مكتسباتي')),
+        exercise(1, t('Je choisis la bonne réponse', 'أختار الإجابة الصحيحة'), 3, 'qcm', t('Coche la bonne réponse…', 'أشطب الإجابة الصحيحة…'), 'Facile', [c1]),
+        exercise(2, t('Je complète', 'أكمل'), 3, 'fill_blanks', t('Complète avec ce qui convient…', 'أكمل بما يناسب…'), 'Facile', [c2]),
+        exercise(3, t('Je relie', 'أربط'), 3, 'matching', t('Relie chaque élément à ce qui lui correspond…', 'أربط كل عنصر بما يناسبه…'), 'Moyen', [c2]),
+        heading(t('Partie II : Je résous des situations', 'الجزء الثاني : أحلّ وضعيات')),
+        exercise(4, t('Situation-problème', 'وضعية مشكل'), 5, 'free', t('Je lis la situation et je réponds aux questions…', 'أقرأ الوضعية وأجيب عن الأسئلة…'), 'Moyen', [c3]),
+        exercise(5, t('Je justifie ma réponse', 'أعلّل إجابتي'), 4, 'free', t('J’explique ma démarche étape par étape…', 'أشرح طريقتي خطوة بخطوة…'), 'Difficile', [c3]),
+        heading(t('Partie III : Je vais plus loin', 'الجزء الثالث : أتعمّق')),
+        exercise(6, t('Défi', 'تحدٍّ'), 2, 'free', t('Une question pour aller plus loin…', 'سؤال للتعمّق…'), 'Difficile', [c4]),
+      ]);
+    } else {
+      this.docType.set('course');
+      this.docTitle.set(t(`Fiche de synthèse : ${subject} (${grade})`, `ملخّص درس : ${subject} (${grade})`));
+      this.blocks.set([
+        heading(t('Je retiens', 'أتذكّر')),
+        note(t('Objectifs', 'الأهداف'), t('Je découvre…\nJe comprends…\nJ’applique…', 'أكتشف…\nأفهم…\nأطبّق…')),
+        heading(t('La règle', 'القاعدة'), 'heading2'),
+        note(t('À retenir', 'أحفظ'), t('Énoncé de la règle ou de la définition…', 'نصّ القاعدة أو التعريف…')),
+        heading(t('Exemples', 'أمثلة'), 'heading2'),
+        { id: id(), type: 'paragraph', content: t('Exemple 1 : …\nExemple 2 : …', 'مثال 1 : …\nمثال 2 : …') },
+        note(t('Attention !', 'انتبه !'), t('L’erreur fréquente à éviter…', 'الخطأ الشائع الذي أتجنّبه…')),
+        heading(t('Je vérifie', 'أتثبّت'), 'heading2'),
+        exercise(1, t('Je complète', 'أكمل'), 10, 'fill_blanks', t('Complète en appliquant la règle…', 'أكمل بتطبيق القاعدة…'), 'Facile'),
+        exercise(2, t('Je choisis la bonne réponse', 'أختار الإجابة الصحيحة'), 10, 'qcm', t('Coche la bonne réponse…', 'أشطب الإجابة الصحيحة…'), 'Moyen'),
       ]);
     }
     this.saveDraft();
@@ -677,6 +731,7 @@ export class EditorStudioComponent implements OnInit {
   isPlaceholderExercise(b: EditorBlock): boolean {
     if (b.type !== 'exercise') return false;
     if (b.qcmOptions?.length || b.tfStatements?.length || b.gapText || b.matchingPairs?.length) return false;
+    if (b.orderItems?.length || b.tableHeaders?.length || b.calcOperands?.length) return false;
     const text = (b.content || '').trim();
     return !text || (text.length < 90 && /(\.\.\.|…)$/.test(text));
   }
@@ -708,6 +763,67 @@ export class EditorStudioComponent implements OnInit {
     this.session.keepUndo(block);
     this.applyExercise(block.id, ex, { title: block.exerciseTitle, points: block.exercisePoints });
     this.session.succeed();
+  }
+
+  /** One picture key per sheet keeps a consistent look; each redraw asks for a new variation. */
+  private readonly imageSheetKey = 'sheet-' + Math.random().toString(36).slice(2, 10);
+  private readonly imageVariations = new Map<string, number>();
+
+  /** Draws the image block from its description with the free image models (not Gemini). */
+  async generateBlockImage(block: EditorBlock) {
+    const prompt = (block.imageCaption || '').trim();
+    const fieldId = 'img-prompt-' + block.id;
+    const ok = this.session.validate([
+      { id: fieldId, ok: !!prompt, message: this.lang.tr('Décrivez l’image à dessiner.', 'صف الصورة المطلوبة.') },
+    ]);
+    if (!ok) return;
+    this.lastGeneration = () => this.generateBlockImage(block);
+    const variation = (this.imageVariations.get(block.id) ?? 0) + (block.imageUrl ? 1 : 0);
+    this.imageVariations.set(block.id, variation);
+    const url = await this.session.run(() =>
+      this.store.generateIllustration(prompt, 'educational', variation || undefined, this.imageSheetKey, { noGemini: true }),
+    );
+    if (url === undefined) return;
+    if (!url) {
+      this.session.fail();
+      return;
+    }
+    if (block.imageUrl) this.session.keepUndo(block);
+    this.updateBlockField(block.id, 'imageUrl', url);
+    this.session.succeed();
+  }
+
+  readonly exerciseFormats: { id: ExerciseFormat; fr: string; ar: string }[] = [
+    { id: 'free', fr: 'Question libre', ar: 'سؤال مفتوح' },
+    { id: 'qcm', fr: 'QCM', ar: 'اختيار من متعدد' },
+    { id: 'true_false', fr: 'Vrai / faux', ar: 'صواب / خطأ' },
+    { id: 'fill_blanks', fr: 'Texte à trous', ar: 'أكمل الفراغات' },
+    { id: 'matching', fr: 'Relier', ar: 'أربط' },
+    { id: 'ordering', fr: 'Remettre en ordre', ar: 'رتّب' },
+    { id: 'table', fr: 'Tableau à compléter', ar: 'أكمل الجدول' },
+    { id: 'column_calc', fr: 'Opération posée', ar: 'عملية عمودية' },
+  ];
+
+  /** Fixed mix (odd places, then even places reversed) so the order to find never shows as given. */
+  mixedOrder(items: string[] | undefined): string[] {
+    const list = items ?? [];
+    if (list.length < 2) return list;
+    const odd = list.filter((_, i) => i % 2 === 1);
+    const even = list.filter((_, i) => i % 2 === 0).reverse();
+    return [...odd, ...even];
+  }
+
+  /** "[[answer]]" cells are left blank for the pupil. */
+  isBlankCell(cell: string): boolean {
+    return /^\s*\[\[[^\]]*\]\]\s*$/.test(cell);
+  }
+
+  /** Digit columns for a worked calculation: every row right-aligned to the widest number. */
+  calcLayout(b: EditorBlock): { rows: string[][]; resultCells: number[] } {
+    const operands = (b.calcOperands ?? []).map((o) => o.replace(/\s+/g, ''));
+    const width = Math.max(...operands.map((o) => o.length), (b.calcResult ?? '').length, 1);
+    const pad = (s: string) => Array.from(s.padStart(width, ' '));
+    return { rows: operands.map(pad), resultCells: Array.from({ length: width }, (_, i) => i) };
   }
 
   private restoreBlock(previous: EditorBlock) {
@@ -920,6 +1036,12 @@ export class EditorStudioComponent implements OnInit {
     if (ex['tfStatements']?.length) this.updateBlockField(blockId, 'tfStatements', ex['tfStatements']);
     if (ex['gapText']) this.updateBlockField(blockId, 'gapText', ex['gapText']);
     if (ex['matchingPairs']?.length) this.updateBlockField(blockId, 'matchingPairs', ex['matchingPairs']);
+    if (ex['orderItems']?.length) this.updateBlockField(blockId, 'orderItems', ex['orderItems']);
+    if (ex['tableHeaders']?.length) this.updateBlockField(blockId, 'tableHeaders', ex['tableHeaders']);
+    if (ex['tableRows']?.length) this.updateBlockField(blockId, 'tableRows', ex['tableRows']);
+    if (ex['calcOperands']?.length) this.updateBlockField(blockId, 'calcOperands', ex['calcOperands']);
+    if (ex['calcOperator']) this.updateBlockField(blockId, 'calcOperator', ex['calcOperator']);
+    if (ex['calcResult']) this.updateBlockField(blockId, 'calcResult', String(ex['calcResult']));
   }
 
   async generateWithGemini() {
@@ -1077,6 +1199,15 @@ export class EditorStudioComponent implements OnInit {
             { left: 'Élément A', right: 'Correspondance 1' },
             { left: 'Élément B', right: 'Correspondance 2' },
           ];
+        } else if (format === 'ordering' && !updated.orderItems?.length) {
+          updated.orderItems = ['1', '2', '3', '4'];
+        } else if (format === 'table' && !updated.tableHeaders?.length) {
+          updated.tableHeaders = ['A', 'B'];
+          updated.tableRows = [['…', '[[…]]'], ['…', '[[…]]']];
+        } else if (format === 'column_calc' && !updated.calcOperands?.length) {
+          updated.calcOperands = ['345', '278'];
+          updated.calcOperator = '+';
+          updated.calcResult = '623';
         }
         return updated;
       })

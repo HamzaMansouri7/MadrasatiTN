@@ -1168,8 +1168,14 @@ export class EducationStore {
   }
 
   // Phase 2 — generate one illustration for an exercise (returns a /uploads URL).
-  async generateIllustration(promptText: string, style = 'educational', variation?: number, seedKey?: string): Promise<string | null> {
-    const res = await this.ai.post('generate-illustration', { promptText, style, variation, seedKey }, { retry429: true });
+  async generateIllustration(
+    promptText: string,
+    style = 'educational',
+    variation?: number,
+    seedKey?: string,
+    opts: { noGemini?: boolean } = {},
+  ): Promise<string | null> {
+    const res = await this.ai.post('generate-illustration', { promptText, style, variation, seedKey, noGemini: opts.noGemini }, { retry429: true });
     return res.ok && res.data['imageUrl'] ? (res.data['imageUrl'] as string) : null;
   }
 

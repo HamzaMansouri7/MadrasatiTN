@@ -31,6 +31,8 @@ export interface ImageRequest {
   height?: number;
   /** Model id to try first (keeps one look per document). Other models only run if it fails or is very slow. */
   preferModel?: string;
+  /** Model groups to leave out for this picture (e.g. 'gemini' when the caller wants the free models only). */
+  excludeGroups?: string[];
 }
 
 type Env = Record<string, string | undefined>;
@@ -43,7 +45,7 @@ interface ImageModel {
   group: 'nvidia' | 'gemini' | 'pollinations' | 'siliconflow';
   quality: number;
   enabled: (env: Env) => boolean;
-  generate: (env: Env, req: Required<Omit<ImageRequest, 'preferModel'>>, fetchImpl: FetchLike, signal: AbortSignal) => Promise<Buffer>;
+  generate: (env: Env, req: Required<Omit<ImageRequest, 'preferModel' | 'excludeGroups'>>, fetchImpl: FetchLike, signal: AbortSignal) => Promise<Buffer>;
 }
 
 const ARABIC_RE = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/g;
@@ -255,8 +257,9 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
     height: req.height ?? 768,
   };
 
-  let list = candidates(env, now(), false);
-  if (list.length === 0) list = candidates(env, now(), true); // everything cooling: try anyway
+  const allowed = (m: ImageModel) => !req.excludeGroups?.includes(m.group);
+  let list = candidates(env, now(), false).filter(allowed);
+  if (list.length === 0) list = candidates(env, now(), true).filter(allowed); // everything cooling: try anyway
 
   // Text-free rule: non-arabicSafe models get an English, text-free prompt; with no usable English left they are skipped.
   const safePrompt = textFreePrompt(full.prompt);
