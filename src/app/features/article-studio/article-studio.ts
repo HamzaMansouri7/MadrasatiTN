@@ -28,7 +28,9 @@ import {
   BlogPost,
   AiClient,
   AiJson,
+  createStudioSession,
 } from '@core';
+import { StudioSessionBannerComponent } from '@shared';
 
 export interface ChatMessage {
   role: 'user' | 'assistant';
@@ -48,7 +50,7 @@ export interface ArticleDraft {
 @Component({
   selector: 'app-article-studio',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [],
+  imports: [StudioSessionBannerComponent],
   templateUrl: './article-studio.html',
   styleUrl: './article-studio.css',
 })
@@ -67,7 +69,14 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
   tiptapEditor: Editor | null = null;
 
   readonly isSaved = signal<boolean>(true);
-  readonly isLoading = signal<boolean>(false);
+  readonly isLoading = computed(() => this.session.busy());
+  private lastPrompt = '';
+
+  /** The article itself is restored from its local draft on load; the session tracks AI runs and unsaved edits. */
+  readonly session = createStudioSession('article', {
+    retry: () => this.resend(),
+    undo: (previous) => this.applyArticle(previous as ArticleDraft),
+  });
   readonly isGeneratingImg = signal<boolean>(false);
   readonly isUploadingImg = signal<boolean>(false);
   readonly isDirectEditing = signal<boolean>(false);
@@ -559,15 +568,18 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
 
   async sendMessage() {
     const text = this.userInput().trim();
-    if (!text || this.isLoading()) return;
+    const ok = this.session.validate([
+      { id: 'article-chat-input', ok: !!text, message: this.lang.tr('Écrivez votre demande à l’IA.', 'اكتب طلبك للمساعد الذكي.') },
+    ]);
+    if (!ok || this.isLoading()) return;
 
+    this.lastPrompt = text;
     this.userInput.set('');
     this.messages.update((msgs) => [...msgs, { role: 'user', content: text }]);
-    this.isLoading.set(true);
-    this.isSaved.set(false);
+    const previous = this.article();
 
-    try {
-      const res = await this.ai.post('chat-article', {
+    const res = await this.session.run((signal) =>
+      this.ai.post('chat-article', {
         messages: this.messages(),
         currentArticle: this.article(),
         userPrompt: text,
@@ -576,49 +588,67 @@ export class ArticleStudioComponent implements OnInit, OnDestroy {
         chapter: this.activeChapterObj()
           ? (this.lang.isArabic() ? this.activeChapterObj()!.titleAr : this.activeChapterObj()!.titleFr)
           : (this.article().chapter || ''),
-      });
+      }, { signal }),
+    );
 
-      if (res.ok) {
-        const data = res.data as AiJson;
-        const reply = data['assistantMessage'];
-        if (reply) {
-          this.messages.update((msgs) => [...msgs, { role: 'assistant', content: reply }]);
-        }
-        if (data['updatedArticle']) {
-          this.article.update((art) => ({
-            ...art,
-            ...data['updatedArticle'],
-          }));
-          if (this.tiptapEditor && data['updatedArticle'].contentMarkdown) {
-            const html = this.parseSimpleMarkdown(data['updatedArticle'].contentMarkdown);
-            this.tiptapEditor.commands.setContent(html);
-          }
-        }
-        if (Array.isArray(data['suggestedChips'])) {
-          this.suggestedChips.set(data['suggestedChips']);
-        }
-      } else {
-        const unreachable = res.status === 0;
-        this.messages.update((msgs) => [
-          ...msgs,
-          {
-            role: 'assistant',
-            content: unreachable
-              ? this.lang.tr(
-                  'Impossible de joindre le serveur IA actuellement.',
-                  'تعذر الاتصال بخادم الذكاء الاصطناعي حالياً.'
-                )
-              : this.lang.tr(
-                  'Désolé, une erreur est survenue lors de la rédaction. Veuillez réessayer.',
-                  'عذراً، حدث خطأ أثناء صياغة المقال. يرجى إعادة المحاولة.'
-                ),
-          },
-        ]);
-      }
-    } finally {
-      this.isLoading.set(false);
-      this.isSaved.set(true);
+    if (!res) {
+      // Cancelled or timed out: the request goes back into the input, nothing is lost.
+      this.messages.update((msgs) => msgs.slice(0, -1));
+      this.userInput.set(text);
+      return;
     }
+
+    if (res.ok) {
+      const data = res.data as AiJson;
+      const reply = data['assistantMessage'];
+      if (reply) {
+        this.messages.update((msgs) => [...msgs, { role: 'assistant', content: reply }]);
+      }
+      if (data['updatedArticle']) {
+        this.session.keepUndo(previous);
+        this.applyArticle({ ...previous, ...data['updatedArticle'] });
+        this.session.succeed();
+      }
+      if (Array.isArray(data['suggestedChips'])) {
+        this.suggestedChips.set(data['suggestedChips']);
+      }
+    } else {
+      this.session.fail(res.error);
+      const unreachable = res.status === 0;
+      this.messages.update((msgs) => [
+        ...msgs,
+        {
+          role: 'assistant',
+          content: unreachable
+            ? this.lang.tr(
+                'Impossible de joindre le serveur IA actuellement.',
+                'تعذر الاتصال بخادم الذكاء الاصطناعي حالياً.'
+              )
+            : this.lang.tr(
+                'Désolé, une erreur est survenue lors de la rédaction. Veuillez réessayer.',
+                'عذراً، حدث خطأ أثناء صياغة المقال. يرجى إعادة المحاولة.'
+              ),
+        },
+      ]);
+    }
+  }
+
+  private resend() {
+    if (!this.lastPrompt || this.isLoading()) return;
+    this.userInput.set(this.lastPrompt);
+    void this.sendMessage();
+  }
+
+  /** Puts an article version on the page and keeps it as the local draft. */
+  private applyArticle(next: ArticleDraft) {
+    this.article.set(next);
+    if (this.tiptapEditor && next.contentMarkdown) {
+      this.tiptapEditor.commands.setContent(this.parseSimpleMarkdown(next.contentMarkdown));
+    }
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem(this.getArticleDraftStorageKey(), JSON.stringify(next));
+    }
+    this.isSaved.set(true);
   }
 
   sendQuickPrompt(chip: string) {

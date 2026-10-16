@@ -95,11 +95,14 @@
     </div>
   </div>
 
+  <app-studio-session-banner [session]="session" />
+
   <!-- Document Metadata Header (Collapsible to preserve vertical space) -->
   @if (showMetadataPanel()) {
     <div class="bg-white rounded-[20px] p-5 border border-[#E3ECF2] shadow-xs space-y-4 animate-fade-in">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
-        <div>
+      <!-- Constrained width selector cards to avoid horizontal stretching on large viewports -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs max-w-4xl xl:max-w-5xl">
+        <div class="max-w-sm">
           <span class="block font-semibold text-[#102A43] mb-1">
             {{ lang.tr('Type de document', 'نوع الوثيقة') }}
           </span>
@@ -113,7 +116,7 @@
                 [class]="docType() === opt.value
                   ? 'border-[#007CC2] bg-[#007CC2]/8 text-[#102A43] ring-1 ring-[#007CC2]'
                   : 'border-[#E3ECF2] bg-[#F7F9FB] text-[#486581] hover:border-[#007CC2]/50'"
-                class="flex items-center gap-2 rounded-[10px] border p-2.5 text-right transition-all cursor-pointer min-h-11">
+                class="flex items-center gap-2 rounded-[10px] border px-2.5 py-1.5 text-right transition-all cursor-pointer min-h-[38px]">
                 <span
                   [class]="docType() === opt.value ? 'bg-[#007CC2] text-white' : 'bg-white text-[#007CC2]'"
                   class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
@@ -126,7 +129,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="max-w-sm">
           <span class="block font-semibold text-[#102A43] mb-1">
             {{ lang.tr('Matière', 'المادة') }}
           </span>
@@ -140,7 +143,7 @@
                 [class]="docSubject() === opt.value
                   ? 'border-[#007CC2] bg-[#007CC2]/8 text-[#102A43] ring-1 ring-[#007CC2]'
                   : 'border-[#E3ECF2] bg-[#F7F9FB] text-[#486581] hover:border-[#007CC2]/50'"
-                class="flex items-center gap-2 rounded-[10px] border p-2 text-right transition-all cursor-pointer min-h-11">
+                class="flex items-center gap-2 rounded-[10px] border px-2 py-1.5 text-right transition-all cursor-pointer min-h-[38px]">
                 <span
                   [class]="docSubject() === opt.value ? 'bg-[#007CC2] text-white' : 'bg-white text-[#007CC2]'"
                   class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
@@ -150,7 +153,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="max-w-sm">
           <span class="block font-semibold text-[#102A43] mb-1">
             {{ lang.tr('Niveau Scolaire', 'المستوى الدراسي') }}
           </span>
@@ -164,7 +167,7 @@
                 [class]="docGrade() === opt.value
                   ? 'border-[#007CC2] bg-[#007CC2]/8 text-[#102A43] ring-1 ring-[#007CC2]'
                   : 'border-[#E3ECF2] bg-[#F7F9FB] text-[#486581] hover:border-[#007CC2]/50'"
-                class="flex items-center gap-2 rounded-[10px] border p-2 text-right transition-all cursor-pointer min-h-11">
+                class="flex items-center gap-2 rounded-[10px] border px-2 py-1.5 text-right transition-all cursor-pointer min-h-[38px]">
                 <span
                   [class]="docGrade() === opt.value ? 'bg-[#007CC2] text-white' : 'bg-white text-[#007CC2]'"
                   class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
@@ -1176,10 +1179,15 @@
             <textarea dir="auto"
               id="ai-prompt-input"
               [value]="aiPromptQuery()"
-              (input)="aiPromptQuery.set($any($event.target).value)"
+              (input)="aiPromptQuery.set($any($event.target).value); session.clearFieldError('ai-prompt-input')"
+              [disabled]="isAiLoading()"
+              [attr.aria-invalid]="!!session.fieldError('ai-prompt-input')"
               rows="3"
               placeholder="Ex: Génère un problème de calcul mental avec solution pour 4ème année primaire..."
-              class="w-full bg-[#F7F9FB] border border-[#E3ECF2] rounded-[10px] p-2.5 text-[#102A43] outline-none"></textarea>
+              class="w-full bg-[#F7F9FB] border border-[#E3ECF2] aria-invalid:border-[#BF5B34] rounded-[10px] p-2.5 text-[#102A43] outline-none"></textarea>
+            @if (session.fieldError('ai-prompt-input'); as msg) {
+              <p class="mt-1 text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
+            }
           </div>
 
           <div class="flex flex-wrap gap-2 pt-1">
@@ -1209,7 +1217,7 @@
           </div>
 
           <button
-            [disabled]="isAiLoading() || !aiPromptQuery()"
+            [disabled]="isAiLoading()"
             (click)="generateWithGemini()"
             class="w-full bg-[#E0AA32] hover:bg-[#D19A24] text-[#0B2947] font-semibold py-2.5 rounded-[10px] flex items-center justify-center gap-1.5 cursor-pointer disabled:opacity-50 shadow-sm">
             @if (isAiLoading()) {

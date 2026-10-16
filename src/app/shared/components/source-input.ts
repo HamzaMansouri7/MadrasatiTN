@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, effect, inject, input, output, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, effect, inject, input, output, signal, untracked } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TopicPickerComponent } from './topic-picker';
 import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceInput, SubjectName, Trimester, TRIMESTERS, downscaleImage } from '@core';
@@ -9,7 +9,7 @@ import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_G
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [FormsModule, TopicPickerComponent],
   template: `
-    <div class="@container bg-white rounded-[28px] border border-[#E7DFCF] p-5 sm:p-7 space-y-6 shadow-sm">
+    <fieldset [disabled]="busy()" [attr.aria-busy]="busy()" class="@container bg-white rounded-[28px] border border-[#E7DFCF] p-5 sm:p-7 space-y-6 shadow-sm min-w-0">
       <!-- Tabs (Topic, Text, Photo, File) -->
       <div role="tablist" [attr.aria-label]="lang.tr('Source du contenu', 'مصدر المحتوى')" class="grid grid-cols-2 @xl:flex items-center gap-1.5 p-1 bg-[#FBF8F1] rounded-xl border border-[#E7DFCF]">
         <button
@@ -69,8 +69,13 @@ import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_G
             dir="auto"
             [value]="topic()"
             (input)="onTopicTyped($any($event.target).value)"
+            [attr.aria-invalid]="!!fieldError('src-topic')"
+            [attr.aria-describedby]="fieldError('src-topic') ? 'src-topic-error' : null"
             [placeholder]="lang.tr('Ex: La multiplication posée, التوسع في الجملة الفعلية...', 'مثال: التوسع في الجملة الفعلية، الدوران والتناظر، دورة الماء...')"
-            class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3.5 py-3 text-sm text-[#14251D] placeholder-[#6B7A70] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]" />
+            class="w-full bg-[#FBF8F1] border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-xl px-3.5 py-3 text-sm text-[#14251D] placeholder-[#6B7A70] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]" />
+          @if (fieldError('src-topic'); as msg) {
+            <p id="src-topic-error" class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
+          }
         </div>
       }
 
@@ -85,9 +90,14 @@ import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_G
             rows="5"
             dir="auto"
             [value]="text()"
-            (input)="text.set($any($event.target).value)"
+            (input)="text.set($any($event.target).value); clearError('src-text')"
+            [attr.aria-invalid]="!!fieldError('src-text')"
+            [attr.aria-describedby]="fieldError('src-text') ? 'src-text-error' : null"
             [placeholder]="lang.tr('Collez ici le texte du cours, le paragraphe d’histoire ou les données de l’exercice...', 'انسخ والصق هنا نص الدرس كاملاً، الأحداث التاريخية، أو وضعية العمل...')"
-            class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-3.5 text-sm text-[#14251D] placeholder-[#6B7A70] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] leading-relaxed"></textarea>
+            class="w-full bg-[#FBF8F1] border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-xl p-3.5 text-sm text-[#14251D] placeholder-[#6B7A70] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F] leading-relaxed"></textarea>
+          @if (fieldError('src-text'); as msg) {
+            <p id="src-text-error" class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
+          }
         </div>
       }
 
@@ -98,13 +108,16 @@ import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_G
             (dragover)="onDragOver($event)"
             (drop)="onPhotoDrop($event)"
             class="block bg-[#FBF8F1] rounded-2xl border-2 border-dashed border-[#E7DFCF] hover:border-[#2D6A4F] has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-[#2D6A4F] p-6 text-center cursor-pointer transition-colors">
-            <input type="file" accept="image/*" multiple class="sr-only peer" [attr.aria-label]="lang.tr('Ajouter des photos', 'إضافة صور')" (change)="onPhotoSelect($event)" />
+            <input id="src-photo" type="file" accept="image/*" multiple class="sr-only peer" [attr.aria-invalid]="!!fieldError('src-photo')"[attr.aria-label]="lang.tr('Ajouter des photos', 'إضافة صور')" (change)="onPhotoSelect($event)" />
             <span class="material-icons text-4xl text-[#2D6A4F]" aria-hidden="true">add_a_photo</span>
             <p class="font-display font-semibold text-sm text-[#14251D] mt-2">
               {{ lang.tr('Prendre ou glisser une photo du manuel', 'التقط أو اسحب صورة من الكتاب أو كراس التلميذ') }}
             </p>
             <p class="text-[11px] text-[#6B7A70] mt-1">{{ lang.tr('Jusqu’à 3 photos utilisées (PNG, JPG, WebP)', 'حتى 3 صور واضحة') }}</p>
           </label>
+          @if (fieldError('src-photo'); as msg) {
+            <p class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
+          }
 
           @if (images().length > 0) {
             <div class="grid grid-cols-2 @xl:grid-cols-4 gap-2.5 pt-1">
@@ -129,13 +142,16 @@ import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_G
       @if (mode() === 'file') {
         <div class="space-y-3">
           <label class="block bg-[#FBF8F1] rounded-2xl border-2 border-dashed border-[#E7DFCF] hover:border-[#2D6A4F] has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-[#2D6A4F] p-6 text-center cursor-pointer transition-colors">
-            <input type="file" accept=".pdf,application/pdf" class="sr-only peer" [attr.aria-label]="lang.tr('Choisir un fichier PDF', 'اختر ملف PDF')" (change)="onFileSelect($event)" />
+            <input id="src-file" type="file" accept=".pdf,application/pdf" class="sr-only peer" [attr.aria-invalid]="!!fieldError('src-file')"[attr.aria-label]="lang.tr('Choisir un fichier PDF', 'اختر ملف PDF')" (change)="onFileSelect($event)" />
             <span class="material-icons text-4xl text-[#2D6A4F]" aria-hidden="true">upload_file</span>
             <p class="font-display font-semibold text-sm text-[#14251D] mt-2">
               {{ lang.tr('Sélectionner un fichier PDF', 'اختر ملف PDF') }}
             </p>
             <p class="text-[11px] text-[#5B6B60] mt-1">{{ file()?.filename || lang.tr('Taille max 15 Mo', 'الحد الأقصى 15 ميغابايت') }}</p>
           </label>
+          @if (fieldError('src-file'); as msg) {
+            <p class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
+          }
 
           @if (file(); as f) {
             <div class="flex items-center justify-between p-3 bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl text-xs">
@@ -228,13 +244,17 @@ import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_G
         <button
           type="button"
           (click)="submitForm()"
-          [disabled]="!isValid() || busy()"
-          class="bg-[#2D6A4F] hover:bg-[#1B4332] disabled:opacity-50 text-[#FBF8F1] font-semibold px-6 py-3 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-2 shadow-sm">
-          <span class="material-icons text-sm" aria-hidden="true">auto_awesome</span>
-          <span>{{ submitLabel() || lang.tr('Continuer la génération', 'متابعة المعالجة والإنشاء') }}</span>
+          class="bg-[#2D6A4F] hover:bg-[#1B4332] disabled:opacity-70 disabled:cursor-default text-[#FBF8F1] font-semibold px-6 min-h-11 rounded-xl text-xs transition-colors cursor-pointer flex items-center gap-2 shadow-sm">
+          @if (busy()) {
+            <span class="material-icons text-sm animate-spin motion-reduce:animate-none" aria-hidden="true">sync</span>
+            <span>{{ lang.tr('Génération…', 'جارٍ التوليد…') }}</span>
+          } @else {
+            <span class="material-icons text-sm" aria-hidden="true">auto_awesome</span>
+            <span>{{ submitLabel() || lang.tr('Continuer la génération', 'متابعة المعالجة والإنشاء') }}</span>
+          }
         </button>
       </div>
-    </div>
+    </fieldset>
   `,
 })
 export class SourceInputComponent {
@@ -244,7 +264,12 @@ export class SourceInputComponent {
   readonly submitLabel = input<string>('');
 
   readonly submitSource = output<SourceInput>();
+  /** Every edit, so the host can keep a local draft. Not emitted while the form is empty. */
+  readonly draftChange = output<SourceInput>();
   readonly busy = input<boolean>(false);
+
+  /** Missing required field per input id, shown under the field after a submit attempt. */
+  private readonly errors = signal<Record<string, string>>({});
 
   readonly grades = PRIMARY_GRADES;
   readonly subjects = PRIMARY_SUBJECTS;
@@ -261,6 +286,7 @@ export class SourceInputComponent {
   readonly language = signal<'ar' | 'fr'>('ar');
   readonly topicId = signal<string | null>(null);
   private pickedTitle = '';
+  private baseline = '';
 
   constructor() {
     effect(() => {
@@ -280,18 +306,44 @@ export class SourceInputComponent {
         if (init.trimester) this.trimester.set(init.trimester);
         if (init.language) this.language.set(init.language);
       }
+      this.baseline = untracked(() => fingerprint(this.snapshot()));
+    });
+
+    effect(() => {
+      const snapshot = this.snapshot();
+      // A prefill (open sheet, restored draft) is not an edit; only changes after it count.
+      if (hasContent(snapshot) && fingerprint(snapshot) !== this.baseline) {
+        untracked(() => this.draftChange.emit(snapshot));
+      }
+    });
+  }
+
+  fieldError(id: string): string {
+    return this.errors()[id] ?? '';
+  }
+
+  clearError(id: string) {
+    if (!this.errors()[id]) return;
+    this.errors.update((e) => {
+      const next = { ...e };
+      delete next[id];
+      return next;
     });
   }
 
   onTopicPicked(ch: CurriculumChapter | null) {
     this.topicId.set(ch?.id ?? null);
     this.pickedTitle = ch ? chapterTitle(ch, this.lang.isArabic() ? 'ar' : 'fr') : '';
-    if (ch) this.topic.set(this.pickedTitle);
+    if (ch) {
+      this.topic.set(this.pickedTitle);
+      this.clearError('src-topic');
+    }
   }
 
   /** Typing over a picked chapter turns it back into a free topic. */
   onTopicTyped(value: string) {
     this.topic.set(value);
+    this.clearError('src-topic');
     if (this.topicId() && value !== this.pickedTitle) this.topicId.set(null);
   }
 
@@ -311,6 +363,7 @@ export class SourceInputComponent {
       if (f.type.startsWith('image/')) {
         const processed = await downscaleImage(f);
         this.images.update((list) => [...list.slice(0, 7), processed]);
+        this.clearError('src-photo');
       }
     }
   }
@@ -321,6 +374,7 @@ export class SourceInputComponent {
     for (const f of Array.from(input.files)) {
       const processed = await downscaleImage(f);
       this.images.update((list) => [...list.slice(0, 7), processed]);
+      this.clearError('src-photo');
     }
     input.value = '';
   }
@@ -340,6 +394,7 @@ export class SourceInputComponent {
         contentType: f.type || 'application/pdf',
         filename: f.name,
       });
+      this.clearError('src-file');
     };
     reader.readAsDataURL(f);
     input.value = '';
@@ -353,10 +408,28 @@ export class SourceInputComponent {
     return false;
   }
 
+  /** Clickable even when incomplete: marks the missing field, says why and focuses it. */
   submitForm() {
-    if (!this.isValid()) return;
+    if (this.busy()) return;
+    if (!this.isValid()) {
+      const id = `src-${this.mode()}`;
+      const messages: Record<string, string> = {
+        'src-topic': this.lang.tr('Indiquez le sujet ou la notion.', 'اكتب موضوع الدرس أو المفهوم.'),
+        'src-text': this.lang.tr('Collez le texte du cours.', 'الصق نص الدرس.'),
+        'src-photo': this.lang.tr('Ajoutez au moins une photo.', 'أضف صورة واحدة على الأقل.'),
+        'src-file': this.lang.tr('Choisissez un fichier PDF.', 'اختر ملف PDF.'),
+      };
+      this.errors.set({ [id]: messages[id] });
+      if (typeof document !== 'undefined') setTimeout(() => document.getElementById(id)?.focus(), 0);
+      return;
+    }
+    this.errors.set({});
+    this.submitSource.emit(this.snapshot());
+  }
+
+  private snapshot(): SourceInput {
     const m = this.mode();
-    const source: SourceInput = {
+    return {
       mode: m,
       topic: m === 'topic' ? this.topic().trim() : undefined,
       topicId: m === 'topic' ? (this.topicId() ?? undefined) : undefined,
@@ -368,6 +441,18 @@ export class SourceInputComponent {
       trimester: this.trimester(),
       language: this.language(),
     };
-    this.submitSource.emit(source);
   }
+}
+
+function hasContent(s: SourceInput): boolean {
+  return !!(s.topic || s.text || s.images?.length || s.file);
+}
+
+/** Cheap identity of a source: image and file data stand in by size, not content. */
+function fingerprint(s: SourceInput): string {
+  return JSON.stringify({
+    ...s,
+    images: s.images?.map((i) => i.base64Data.length),
+    file: s.file ? [s.file.filename, s.file.base64Data.length] : undefined,
+  });
 }

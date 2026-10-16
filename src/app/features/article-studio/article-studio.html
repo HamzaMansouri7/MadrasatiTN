@@ -51,6 +51,8 @@
     </div>
   </div>
 
+  <app-studio-session-banner [session]="session" />
+
   <!-- Curriculum Grounding & Pedagogical Mode Bar (Cartouche Paper Panel) -->
   <div class="bg-[#FBF8F1] rounded-2xl p-4 sm:p-5 border border-[#E7DFCF] space-y-4">
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#E7DFCF] pb-3">
@@ -363,24 +365,31 @@
 
           <!-- Input Textarea -->
           <textarea dir="auto"
+            id="article-chat-input"
             [value]="userInput()"
-            (input)="userInput.set($any($event.target).value)"
+            (input)="userInput.set($any($event.target).value); session.clearFieldError('article-chat-input')"
+            [disabled]="isLoading()"
+            [attr.aria-invalid]="!!session.fieldError('article-chat-input')"
+            [attr.aria-label]="lang.tr('Demande à l’IA', 'طلبك للمساعد الذكي')"
             (keydown.enter)="onEnterPress($event)"
             rows="2"
             [placeholder]="lang.tr('Demandez à l’IA (ex: Rédige une introduction captivante)...', 'اطلب من المساعد الذكي (مثال: صغ مقدمة مشوقة للمقال)...')"
-            class="flex-1 bg-white border border-[#E7DFCF] rounded-xl p-2.5 text-xs text-[#14251D] outline-none resize-none focus:border-[#2D6A4F] leading-relaxed"></textarea>
+            class="flex-1 bg-white border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-xl p-2.5 text-xs text-[#14251D] outline-none resize-none focus:border-[#2D6A4F] leading-relaxed"></textarea>
 
           <!-- Send Button -->
           <button
             type="button"
             (click)="sendMessage()"
-            [disabled]="isLoading() || !userInput().trim()"
+            [disabled]="isLoading()"
             class="w-11 h-11 rounded-xl bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] flex items-center justify-center cursor-pointer disabled:opacity-40 transition-colors shrink-0 shadow-sm"
             [title]="lang.tr('Envoyer', 'إرسال')"
             aria-label="Envoyer">
             <span class="material-icons text-base rtl:rotate-180">send</span>
           </button>
         </div>
+        @if (session.fieldError('article-chat-input'); as msg) {
+          <p class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
+        }
       </div>
     </div>
 

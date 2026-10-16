@@ -22,6 +22,7 @@ export * from './services/seo.service';
 export * from './services/print.service';
 export * from './services/storage-vault.service';
 export * from './services/ai-client';
+export * from './services/studio-session';
 export * from './guards/auth.guard';
 export * from './utils/image.util';
 export * from './utils/curriculum.util';

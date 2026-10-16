@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, computed, inject, signal, HostListener } from '@angular/core';
-import { EducationStore, LanguageService, FirebaseService, WorksheetDoc, WorksheetDna, GeneratedExercise, PRIMARY_GRADES, PRIMARY_SUBJECTS, buildWatermark, chapterById, chapterTitle, StorageVaultService } from '@core';
-import { CartoucheComponent, ShareButtonComponent, copySharePost, joinDetails } from '@shared';
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, computed, inject, signal } from '@angular/core';
+import { EducationStore, LanguageService, FirebaseService, WorksheetDoc, WorksheetDna, GeneratedExercise, PRIMARY_GRADES, PRIMARY_SUBJECTS, buildWatermark, chapterById, chapterTitle, StorageVaultService, createStudioSession } from '@core';
+import { CartoucheComponent, ShareButtonComponent, StudioSessionBannerComponent, copySharePost, joinDetails } from '@shared';
 
 /**
  * Phase 2 — Worksheet style-clone studio.
@@ -8,7 +8,7 @@ import { CartoucheComponent, ShareButtonComponent, copySharePost, joinDetails } 
  * reusing the detected palette/topic → preview, print (A4), share.
  */
 @Component({
-  imports: [CartoucheComponent, ShareButtonComponent],
+  imports: [CartoucheComponent, ShareButtonComponent, StudioSessionBannerComponent],
   selector: 'app-worksheet-generator',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './worksheet-generator.html',
@@ -20,13 +20,11 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
   readonly firebase = inject(FirebaseService);
   private readonly vault = inject(StorageVaultService);
 
-  @HostListener('window:beforeunload', ['$event'])
-  onBeforeUnload(event: BeforeUnloadEvent) {
-    if (this.busy()) {
-      event.preventDefault();
-      event.returnValue = '';
-    }
-  }
+  /** The sheet itself is restored from IndexedDB on load; the session covers runs, errors and the leave warning. */
+  readonly session = createStudioSession('similar', {
+    retry: () => void (this.dna() ? this.generate() : this.analyze()),
+    undo: (previous) => this.applyExercises(previous as GeneratedExercise[]),
+  });
 
   readonly sourceImage = signal<string | null>(null);
   readonly dna = signal<WorksheetDna | null>(null);
@@ -154,6 +152,7 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
       if (cached && cached.dna && cached.exercises?.length) {
         this.dna.set(cached.dna);
         this.exercises.set(cached.exercises);
+        this.session.markDirty();
         if (cached.count) this.count.set(cached.count);
       }
       return;
@@ -253,6 +252,7 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
         school: this.school(),
       });
       if (result && typeof window !== 'undefined') {
+        this.session.markClean();
         const full = window.location.origin + result.shareUrl;
         this.shareUrl.set(full);
         this.sharePromptOpen.set(false);
@@ -288,8 +288,9 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
       this.lang.tr('Analyse de la mise en page…', 'تحليل التنسيق والهيكلة…'),
     ]);
     try {
-      const dna = await this.store.analyzeWorksheet(img, this.contentType);
-      this.dna.set(dna);
+      const dna = await this.session.run(() => this.store.analyzeWorksheet(img, this.contentType));
+      if (dna) this.dna.set(dna);
+      else if (dna === null) this.session.fail();
     } finally {
       this.analyzing.set(false);
       this.stopThinking();
@@ -306,18 +307,32 @@ export class WorksheetGeneratorComponent implements OnInit, OnDestroy {
       this.lang.tr('Rédaction des consignes…', 'صياغة التعليمات والأسئلة…'),
       this.lang.tr('Préparation des corrigés…', 'إعداد شبكة الإصلاح…'),
     ]);
+    const previous = this.exercises();
     try {
-      const list = await this.store.generateSimilarExercises(dna, this.count());
-      this.exercises.set(list);
-      void this.vault.saveAsset('madrasati_draft_worksheet', {
-        dna,
-        exercises: list,
-        count: this.count(),
-      });
+      const list = await this.session.run(() => this.store.generateSimilarExercises(dna, this.count()));
+      if (!list) return;
+      if (list.length === 0) {
+        this.session.fail();
+        return;
+      }
+      this.session.keepUndo(previous.length ? previous : null);
+      this.applyExercises(list);
+      this.session.succeed({ scrollTo: 'worksheet-sheet' });
     } finally {
       this.generating.set(false);
       this.stopThinking();
     }
+  }
+
+  /** Shows a set of exercises and keeps it as the local draft (unsaved until shared). */
+  private applyExercises(list: GeneratedExercise[]) {
+    this.exercises.set(list);
+    this.session.markDirty();
+    void this.vault.saveAsset('madrasati_draft_worksheet', {
+      dna: this.dna(),
+      exercises: list,
+      count: this.count(),
+    });
   }
 
   readonly regeneratingIndex = signal<number | null>(null);

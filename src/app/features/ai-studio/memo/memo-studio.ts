@@ -3,6 +3,7 @@ import {
   ChangeDetectionStrategy,
   signal,
   computed,
+  effect,
   inject,
   HostListener,
   OnInit,
@@ -14,11 +15,13 @@ import { EducationStore } from '@core/services/education-store';
 import { LanguageService } from '@core/services/language.service';
 import { FirebaseService } from '@core/services/firebase.service';
 import { StorageVaultService } from '@core/services/storage-vault.service';
+import { createStudioSession } from '@core/services/studio-session';
 import { downscaleImage } from '@core/utils/image.util';
 import { MemoDoc, MemoInput, MemoLayout } from '@core/models/memo.model';
 import { CurriculumChapter } from '@core/data/curriculum-chapters.data';
 import { chapterTitle } from '@core/utils/curriculum.util';
 import { TopicPickerComponent } from '@shared/components/topic-picker';
+import { StudioSessionBannerComponent } from '@shared/components/studio-session-banner';
 import {
   MemoTreeLayoutComponent,
   MemoStepsLayoutComponent,
@@ -43,6 +46,7 @@ interface LibraryResourceItem {
     CommonModule,
     FormsModule,
     TopicPickerComponent,
+    StudioSessionBannerComponent,
     MemoTreeLayoutComponent,
     MemoStepsLayoutComponent,
     MemoCardsLayoutComponent,
@@ -79,12 +83,13 @@ interface LibraryResourceItem {
       }
 
       <!-- Main Container -->
-      <main class="w-full">
+      <main id="memo-main" class="w-full space-y-5 scroll-mt-4">
+        <app-studio-session-banner [session]="session" />
 
         <!-- INPUT FORM VIEW (When idle / analyzing / error) -->
         @if (state() !== 'done') {
           <div class="no-print grid lg:grid-cols-[minmax(0,1fr)_minmax(24rem,34rem)] gap-8 items-start">
-          <div class="bg-white rounded-lg border border-[#E7DFCF] p-5 sm:p-6 space-y-6">
+          <div class="bg-white rounded-lg border border-[#E7DFCF] p-5 sm:p-6 space-y-6" [attr.inert]="session.busy() ? '' : null" [attr.aria-busy]="session.busy()">
             
             <!-- Mode Switcher Tabs -->
             <div role="tablist" class="border-b border-[#E7DFCF] flex flex-wrap gap-x-1">
@@ -228,9 +233,14 @@ interface LibraryResourceItem {
                   id="memo-topic-input"
                   type="text"
                   [(ngModel)]="topic"
+                  (ngModelChange)="session.clearFieldError('memo-topic-input')"
+                  [attr.aria-invalid]="!!session.fieldError('memo-topic-input')"
                   [placeholder]="lang.t('memoInputTopicPlaceholder')"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-4 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-md px-4 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
                 />
+                @if (session.fieldError('memo-topic-input'); as msg) {
+                  <p class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
+                }
                 <app-topic-picker
                   selectId="memo-topic-picker"
                   [grade]="grade()"
@@ -249,9 +259,14 @@ interface LibraryResourceItem {
                   id="memo-text-input"
                   rows="6"
                   [(ngModel)]="text"
+                  (ngModelChange)="session.clearFieldError('memo-text-input')"
+                  [attr.aria-invalid]="!!session.fieldError('memo-text-input')"
                   [placeholder]="lang.t('memoInputTextPlaceholder')"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md p-4 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-md p-4 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
                 ></textarea>
+                @if (session.fieldError('memo-text-input'); as msg) {
+                  <p class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
+                }
               </div>
             }
 
@@ -280,6 +295,7 @@ interface LibraryResourceItem {
                     </p>
                     <button
                       type="button"
+                      id="photo-browse"
                       (click)="photoFileInput.click()"
                       class="px-5 min-h-11 bg-[#FBF8F1] border border-[#E7DFCF] rounded-md text-sm font-medium text-[#4A5A50] hover:bg-[#F2ECDE] transition-colors cursor-pointer"
                     >
@@ -327,6 +343,7 @@ interface LibraryResourceItem {
                     </p>
                     <button
                       type="button"
+                      id="doc-browse"
                       (click)="docFileInput.click()"
                       class="px-5 min-h-11 bg-[#FBF8F1] border border-[#E7DFCF] rounded-md text-sm font-medium text-[#4A5A50] hover:bg-[#F2ECDE] transition-colors cursor-pointer"
                     >
@@ -351,6 +368,8 @@ interface LibraryResourceItem {
                   <select
                     id="library-resource-select"
                     [(ngModel)]="resourceUrl"
+                    (ngModelChange)="session.clearFieldError('library-resource-select')"
+                    [attr.aria-invalid]="!!session.fieldError('library-resource-select')"
                     class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
                   >
                     <option value="">-- {{ lang.tr('Sélectionner un document officiel', 'اختر وثيقة رسمية') }} --</option>
@@ -376,19 +395,14 @@ interface LibraryResourceItem {
               />
             </div>
 
-            <!-- Error Banner -->
-            @if (state() === 'error' && errorMessage()) {
-              <div role="alert" class="p-3 bg-[#FDF0ED] border border-[#BF5B34]/30 rounded-md text-sm text-[#8F3F1F] font-medium flex items-start gap-2">
-                <span class="material-icons text-base mt-0.5" aria-hidden="true">error_outline</span>
-                <span>{{ errorMessage() }}</span>
-              </div>
+            @if (missingSourceMessage(); as msg) {
+              <p role="alert" class="text-sm font-medium text-[#BF5B34]">{{ msg }}</p>
             }
 
             <!-- Action Button -->
             <div class="pt-2">
               <button
                 (click)="generateMemo()"
-                [disabled]="state() === 'analyzing'"
                 class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] disabled:opacity-50 disabled:cursor-not-allowed text-[#FBF8F1] font-semibold min-h-12 px-6 rounded-md text-sm transition-colors cursor-pointer flex items-center justify-center gap-2 shadow-sm"
               >
                 @if (state() === 'analyzing') {
@@ -668,13 +682,11 @@ export class MemoStudioComponent implements OnInit {
   readonly errorMessage = signal<string>('');
   private readonly vault = inject(StorageVaultService);
 
-  @HostListener('window:beforeunload', ['$event'])
-  onBeforeUnload(event: BeforeUnloadEvent) {
-    if (this.state() === 'analyzing') {
-      event.preventDefault();
-      event.returnValue = '';
-    }
-  }
+  readonly session = createStudioSession<MemoDraft>('memo', {
+    restore: (draft) => this.applyDraft(draft),
+    retry: () => void this.generateMemo(),
+    undo: (previous) => this.applyResult(previous as { memo: MemoDoc; layout: MemoLayout }),
+  });
 
   readonly topic = signal<string>('');
   readonly topicId = signal<string | null>(null);
@@ -715,6 +727,61 @@ export class MemoStudioComponent implements OnInit {
   readonly savedMemoId = signal<string | null>(null);
   readonly savedAuthorName = signal<string | null>(null);
   readonly savedSchool = signal<string | null>(null);
+
+  /** Form fields kept as a local draft while the memo is not saved in the library. */
+  private readonly formDraft = computed<MemoDraft>(() => ({
+    tab: this.activeTab(),
+    topic: this.topic(),
+    topicId: this.topicId(),
+    text: this.text(),
+    grade: this.grade(),
+    subject: this.subject(),
+    trimester: this.trimester(),
+    language: this.language(),
+    instructions: this.instructions(),
+    images: this.images(),
+    file: this.file(),
+    resourceUrl: this.resourceUrl(),
+  }));
+
+  /** Required-field message for the photo, file and library tabs; it clears once the source is given. */
+  readonly missingSourceMessage = computed(() => {
+    const tab = this.activeTab();
+    if (tab === 'photo' && !this.images().length) return this.session.fieldError('photo-browse');
+    if (tab === 'file' && !this.file()) return this.session.fieldError('doc-browse');
+    if (tab === 'library' && !this.resourceUrl()) return this.session.fieldError('library-resource-select');
+    return '';
+  });
+
+  constructor() {
+    effect(() => {
+      const d = this.formDraft();
+      const hasContent = !!(d.topic.trim() || d.text.trim() || d.images.length || d.file || d.resourceUrl);
+      if (hasContent && !this.isSaved()) this.session.saveDraft(d);
+    });
+  }
+
+  private applyDraft(d: MemoDraft) {
+    this.activeTab.set(d.tab);
+    this.topic.set(d.topic);
+    this.topicId.set(d.topicId);
+    this.pickedTitle = d.topicId ? d.topic : '';
+    this.text.set(d.text);
+    this.grade.set(d.grade);
+    this.subject.set(d.subject);
+    this.trimester.set(d.trimester);
+    this.language.set(d.language);
+    this.instructions.set(d.instructions);
+    this.images.set(d.images);
+    this.file.set(d.file);
+    this.resourceUrl.set(d.resourceUrl);
+  }
+
+  private applyResult(r: { memo: MemoDoc; layout: MemoLayout }) {
+    this.store.memo.set(r.memo);
+    this.store.memoLayout.set(r.layout);
+    this.state.set('done');
+  }
 
   ngOnInit() {
     this.loadLibraryIndex();
@@ -766,6 +833,7 @@ export class MemoStudioComponent implements OnInit {
 
   async resetMemoStudio() {
     await this.vault.deleteAsset('madrasati_draft_memo');
+    void this.session.clearDraft();
     this.store.memo.set(null);
     this.state.set('idle');
     this.topic.set('');
@@ -840,6 +908,7 @@ export class MemoStudioComponent implements OnInit {
     if (saved && saved.id) {
       this.savedMemoId.set(saved.id);
       this.isSaved.set(true);
+      void this.session.clearDraft();
       this.savedAuthorName.set(payload.authorName);
       this.savedSchool.set(payload.school);
       this.store.showToast(this.lang.tr('Fiche mémo enregistrée dans la bibliothèque !', 'تم حفظ المذكرة بنجاح!'), 'success');
@@ -963,6 +1032,20 @@ export class MemoStudioComponent implements OnInit {
   }
 
   async generateMemo() {
+    if (this.session.busy()) return;
+    const tab = this.activeTab();
+    const t = (fr: string, ar: string) => this.lang.tr(fr, ar);
+    const valid = this.session.validate([
+      { id: 'memo-topic-input', ok: tab !== 'topic' || !!this.topic().trim(), message: t('Indiquez le sujet de la leçon.', 'اكتب موضوع الدرس.') },
+      { id: 'memo-text-input', ok: tab !== 'text' || !!this.text().trim(), message: t('Collez le texte du cours.', 'الصق نص الدرس.') },
+      { id: 'photo-browse', ok: tab !== 'photo' || this.images().length > 0, message: t('Ajoutez au moins une photo.', 'أضف صورة واحدة على الأقل.') },
+      { id: 'doc-browse', ok: tab !== 'file' || !!this.file(), message: t('Choisissez un fichier PDF ou Word.', 'اختر ملف PDF أو Word.') },
+      { id: 'library-resource-select', ok: tab !== 'library' || !!this.resourceUrl(), message: t('Choisissez un document officiel.', 'اختر وثيقة رسمية.') },
+    ]);
+    if (!valid) return;
+
+    const previous = this.store.memo();
+    const previousLayout = this.store.memoLayout();
     this.state.set('analyzing');
     this.errorMessage.set('');
 
@@ -990,9 +1073,15 @@ export class MemoStudioComponent implements OnInit {
       resourceUrl: this.resourceUrl() || undefined,
     };
 
-    const res = await this.store.generateMemo(inputData);
+    const res = await this.session.run(() => this.store.generateMemo(inputData));
+    if (!res) {
+      this.state.set(previous ? 'done' : 'idle');
+      return;
+    }
 
     if (res.ok) {
+      this.session.keepUndo(previous ? { memo: previous, layout: previousLayout } : null);
+      this.session.succeed({ scrollTo: 'memo-main' });
       this.state.set('done');
       this.isSaved.set(false);
       this.savedMemoId.set(null);
@@ -1007,6 +1096,7 @@ export class MemoStudioComponent implements OnInit {
       });
     } else {
       this.errorMessage.set(res.error || 'Erreur lors de la génération.');
+      this.session.fail(res.error);
       this.state.set('error');
     }
   }
@@ -1016,4 +1106,19 @@ export class MemoStudioComponent implements OnInit {
     this.activeTab.set('text');
     await this.generateMemo();
   }
+}
+
+interface MemoDraft {
+  tab: 'topic' | 'text' | 'photo' | 'file' | 'library';
+  topic: string;
+  topicId: string | null;
+  text: string;
+  grade: string;
+  subject: string;
+  trimester: string;
+  language: 'ar' | 'fr';
+  instructions: string;
+  images: { base64Data: string; contentType: string }[];
+  file: { base64Data: string; contentType: string; filename: string } | null;
+  resourceUrl: string;
 }

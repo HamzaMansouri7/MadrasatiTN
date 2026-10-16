@@ -6,6 +6,8 @@
     <p class="text-sm text-[#5B6B60] max-w-[56ch] mx-auto">{{ lang.t('solveSub') }}</p>
   </div>
 
+  <app-studio-session-banner [session]="session" />
+
   <!-- The drop zone IS the hero -->
   @if (state() === 'idle' || state() === 'error') {
     <label
@@ -22,12 +24,6 @@
       </span>
     </label>
 
-    @if (state() === 'error') {
-      <div class="bg-white rounded-2xl border border-[#C1121F]/30 p-4 text-center space-y-1">
-        <p class="text-sm font-semibold text-[#C1121F]">{{ lang.t('solveErrorTitle') }}</p>
-        <p class="text-xs text-[#5B6B60]">{{ errorMessage() || lang.t('solveErrorHint') }}</p>
-      </div>
-    }
   }
 
   <!-- Analyzing -->
@@ -46,7 +42,7 @@
 
   <!-- Solution -->
   @if (state() === 'done' && result(); as r) {
-    <div class="space-y-4">
+    <div id="solve-result" class="space-y-4 scroll-mt-4">
 
       <!-- Detected exercise -->
       <div class="bg-white rounded-2xl border border-[#E7DFCF] p-5 space-y-3">

@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { authGuard } from '@core';
+import { studioLeaveGuard } from '@shared';
 
 export const routes: Routes = [
   {
@@ -55,6 +56,7 @@ export const routes: Routes = [
   },
   {
     path: 'solve',
+    canDeactivate: [studioLeaveGuard],
     loadComponent: () =>
       import('./features/solve/solve-home').then((m) => m.SolveHomeComponent),
     title: 'صوّر التمرين واحصل على الحل | Photo-Solution - Madrasati TN',
@@ -85,18 +87,21 @@ export const routes: Routes = [
   },
   {
     path: 'editor',
+    canDeactivate: [studioLeaveGuard],
     loadComponent: () =>
       import('./features/editor/editor-studio').then((m) => m.EditorStudioComponent),
     title: 'استوديو الوثائق | Studio Imprimable A4 - Madrasati TN',
   },
   {
     path: 'article-studio',
+    canDeactivate: [studioLeaveGuard],
     loadComponent: () =>
       import('./features/article-studio/article-studio').then((m) => m.ArticleStudioComponent),
     title: 'استوديو المقالات | Rédaction Pédagogique - Madrasati TN',
   },
   {
     path: 'generate',
+    canDeactivate: [studioLeaveGuard],
     loadComponent: () =>
       import('./features/generate/worksheet-generator').then((m) => m.WorksheetGeneratorComponent),
     title: 'مولّد الأوراق | Générateur de fiches - Madrasati TN',
@@ -109,6 +114,9 @@ export const routes: Routes = [
   },
   {
     path: 'ai-studio',
+    canDeactivate: [studioLeaveGuard],
+    // Infographic ↔ memo is a query change on this route: run the leave guard for it too.
+    runGuardsAndResolvers: 'paramsOrQueryParamsChange',
     loadComponent: () =>
       import('./features/ai-studio/ai-studio').then((m) => m.AiStudioComponent),
     title: 'استوديو الذكاء الاصطناعي | AI Studio - Madrasati TN',
@@ -121,6 +129,7 @@ export const routes: Routes = [
   },
   {
     path: 'lesson-plan/:id',
+    canDeactivate: [studioLeaveGuard],
     loadComponent: () =>
       import('./features/lesson-plan/lesson-plan-viewer').then((m) => m.LessonPlanViewerComponent),
     title: 'الجذاذة البيداغوجية | Fiche Pédagogique - Madrasati TN',
@@ -133,6 +142,7 @@ export const routes: Routes = [
   },
   {
     path: 'series/:id',
+    canDeactivate: [studioLeaveGuard],
     loadComponent: () =>
       import('./features/series/series-viewer').then((m) => m.SeriesViewerComponent),
     title: 'السلسلة التاريخية المصورة | Série Visuelle - Madrasati TN',

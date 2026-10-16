@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, HostListener, inject, OnInit, signal } from '@angular/core';
 import {
+  createStudioSession,
   EducationStore,
   InfographicDoc,
   InfographicPreset,
@@ -16,7 +17,7 @@ import {
   VisualCommand,
   StorageVaultService,
 } from '@core';
-import { AiStatusComponent, InfographicSpecComponent, ShareButtonComponent, SourceInputComponent } from '@shared';
+import { AiStatusComponent, InfographicSpecComponent, ShareButtonComponent, SourceInputComponent, StudioSessionBannerComponent } from '@shared';
 
 interface PresetOption {
   id: InfographicPreset | 'auto';
@@ -35,7 +36,7 @@ interface PresetOption {
   selector: 'app-infographic-studio',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [AiStatusComponent, InfographicSpecComponent, ShareButtonComponent, SourceInputComponent],
+  imports: [AiStatusComponent, InfographicSpecComponent, ShareButtonComponent, SourceInputComponent, StudioSessionBannerComponent],
   template: `
     <div class="text-[#14251D] pb-16">
       <main class="w-full space-y-5">
@@ -132,6 +133,8 @@ interface PresetOption {
           </div>
         </div>
 
+        <app-studio-session-banner [session]="session" />
+
         <!-- Editor workspace: content panel | A4 sheet | design panel. Side panels scroll on their own. -->
         <div [class]="settingsOpen() || needsSource() ? 'grid grid-cols-1 xl:grid-cols-[340px_minmax(0,1fr)_300px] gap-5 items-start' : ''">
 
@@ -147,6 +150,7 @@ interface PresetOption {
                   [initialInput]="prefill()"
                   [busy]="busy()"
                   [submitLabel]="lang.tr('Générer', 'توليد')"
+                  (draftChange)="session.saveDraft($event)"
                   (submitSource)="startFromSource($event)"></app-source-input>
               } @else if (source()) {
                 <div class="bg-white rounded-2xl border border-[#E7DFCF] p-4">
@@ -180,6 +184,7 @@ interface PresetOption {
                     rows="3"
                     [value]="notes()"
                     (input)="notes.set($any($event.target).value)"
+                    [disabled]="busy()"
                     [placeholder]="lang.tr('Ex. : insister sur les exemples du quotidien', 'مثال: التركيز على أمثلة من الحياة اليومية')"
                     class="w-full resize-y bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 py-2.5 text-sm placeholder:text-[#6B7A70] focus:border-[#2D6A4F] focus:bg-white focus-visible:outline-2 focus-visible:outline-[#2D6A4F] transition-colors"></textarea>
                   <button
@@ -196,7 +201,7 @@ interface PresetOption {
           }
 
           <!-- The A4 sheet -->
-          <section class="min-w-0 space-y-4">
+          <section id="infographic-sheet" class="min-w-0 space-y-4 scroll-mt-4">
             @if (doc(); as current) {
               <div [class.opacity-50]="busy()" class="transition-opacity">
                 <app-infographic-spec [doc]="current" [illustrating]="illustrating()" (illustrate)="illustrate($event)"></app-infographic-spec>
@@ -481,7 +486,12 @@ export class InfographicStudioComponent implements OnInit {
   readonly preset = signal<InfographicPreset | 'auto'>('auto');
   readonly theme = signal<InfographicTheme>('kids');
   readonly notes = signal('');
-  readonly busy = signal(false);
+  readonly session = createStudioSession<SourceInput>('infographic', {
+    restore: (draft) => this.prefill.set(draft),
+    retry: () => this.retry(),
+    undo: (previous) => this.applyDoc(previous as InfographicDoc),
+  });
+  readonly busy = computed(() => this.session.busy());
   /** Key of the block whose picture is being drawn ('hero', 'item-2', 'column-0', 'problem'), or null. */
   readonly illustrating = signal<string | null>(null);
   readonly error = signal<string | null>(null);
@@ -510,6 +520,7 @@ export class InfographicStudioComponent implements OnInit {
 
     if (cached && cached.doc) {
       this.doc.set(cached.doc);
+      if (!cached.doc.isOwner) this.session.markDirty();
       if (cached.source) this.source.set(cached.source);
       if (cached.preset) this.preset.set(cached.preset);
       if (cached.theme) this.theme.set(cached.theme);
@@ -542,6 +553,8 @@ export class InfographicStudioComponent implements OnInit {
 
   async resetStudio() {
     await this.vault.deleteAsset('madrasati_active_infographic');
+    void this.session.clearDraft();
+    this.session.dismissUndo();
     this.doc.set(null);
     this.error.set(null);
     this.prefill.set(null);
@@ -654,30 +667,52 @@ export class InfographicStudioComponent implements OnInit {
     void this.generate();
   }
 
+  /** Error/interrupted banner: rerun with the current source, or with the stored draft after a reload. */
+  private retry() {
+    if (this.source()) {
+      void this.generate();
+      return;
+    }
+    const draft = this.session.draft();
+    if (!draft) return;
+    this.session.dismissDraft();
+    this.startFromSource(draft);
+  }
+
   private async generate() {
     const src = this.source();
     if (!src || this.busy()) return;
-    this.busy.set(true);
     this.error.set(null);
     const previous = this.doc();
-    const res = await this.store.generateInfographic(
-      { ...src, instructions: this.notes().trim() || undefined },
-      this.preset(),
-      this.theme(),
-      previous
+    const res = await this.session.run(() =>
+      this.store.generateInfographic(
+        { ...src, instructions: this.notes().trim() || undefined },
+        this.preset(),
+        this.theme(),
+        previous,
+      ),
     );
-    this.busy.set(false);
+    if (!res) return;
     if (res.ok && res.doc) {
-      this.doc.set(res.doc);
-      void this.vault.saveAsset('madrasati_active_infographic', {
-        doc: res.doc,
-        source: this.source(),
-        preset: this.preset(),
-        theme: this.theme(),
-        notes: this.notes(),
-      });
+      this.session.keepUndo(previous);
+      this.applyDoc(res.doc);
+      // The source draft is no longer needed once a sheet exists; a guest's sheet is still unsaved work.
+      void this.session.clearDraft();
+      if (!res.doc.isOwner) this.session.markDirty();
+      this.session.succeed({ scrollTo: 'infographic-sheet' });
       void this.illustrateAll(res.doc);
-    } else this.error.set(res.error ?? this.lang.tr('Erreur de génération.', 'خطأ في التوليد.'));
+    } else this.session.fail(res.error ?? this.lang.tr('Erreur de génération.', 'خطأ في التوليد.'));
+  }
+
+  private applyDoc(doc: InfographicDoc) {
+    this.doc.set(doc);
+    void this.vault.saveAsset('madrasati_active_infographic', {
+      doc,
+      source: this.source(),
+      preset: this.preset(),
+      theme: this.theme(),
+      notes: this.notes(),
+    });
   }
 
   /** Draws every block that asked for a picture, one at a time (free image providers rate-limit). */
@@ -796,6 +831,7 @@ export class InfographicStudioComponent implements OnInit {
       const saved = await this.store.claimInfographic(d);
       if (saved) {
         this.doc.set(saved);
+        this.session.markClean();
         this.store.showToast(this.lang.tr('Infographie enregistrée', 'تم حفظ الإنفوغرافيك'), 'success');
       } else {
         this.store.showToast(this.lang.tr('Échec de l’enregistrement', 'تعذّر الحفظ'), 'error');
@@ -810,6 +846,7 @@ export class InfographicStudioComponent implements OnInit {
       d = await this.store.claimInfographic(d);
       if (!d) return;
       this.doc.set(d);
+      this.session.markClean();
     }
     const url = `${window.location.origin}/infographic/${d.id}`;
     try {

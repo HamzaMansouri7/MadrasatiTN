@@ -9,6 +9,8 @@
     </p>
   </header>
 
+  <div class="mb-5"><app-studio-session-banner [session]="session" /></div>
+
   @if (busy()) {
     <div class="ai-thinking no-print flex items-center gap-4 bg-white border border-[#E7DFCF] rounded-[14px] p-5 mb-5" [style.border-color]="accent()">
       <span class="ai-spinner" [style.border-top-color]="accent()"></span>
@@ -111,7 +113,7 @@
 
   <!-- Step 3: results (printable A4) -->
   @if (exercises().length > 0) {
-    <div class="flex flex-wrap justify-end gap-2 mb-3 no-print">
+    <div id="worksheet-sheet" class="flex flex-wrap justify-end gap-2 mb-3 no-print scroll-mt-4">
       @if (!shared()) {
         <button type="button" (click)="illustrate()" [disabled]="illustrating()" class="inline-flex items-center gap-2 px-4 py-2 rounded-[10px] bg-[#F2ECDE] border border-[#E7DFCF] text-[#1B4332] font-semibold text-sm disabled:opacity-60 cursor-pointer">
           <span class="material-icons text-base">palette</span>

@@ -51,6 +51,9 @@ export class AiClient {
   private readonly lang = inject(LanguageService);
   private readonly firebase = inject(FirebaseService);
 
+  /** Last failed call, for callers that only get an empty result back (studio error messages). */
+  lastFailure: { route: AiRoute; status: number; error: string } | null = null;
+
   async post<T = AiEnvelope>(route: AiRoute, body: Record<string, unknown>, opts: AiPostOptions = {}): Promise<AiResult<T>> {
     const fallbackError = opts.fallbackError ?? 'Erreur réseau';
     if (typeof fetch === 'undefined') return { ok: false, status: 0, error: fallbackError };
@@ -76,13 +79,18 @@ export class AiClient {
       }
       const data = (await res.json().catch(() => null)) as (AiEnvelope & T) | null;
       if (!res.ok || !data || data.success === false) {
-        return { ok: false, status: res.status, error: (data?.error as string | undefined) || fallbackError, data: data ?? undefined };
+        const error = (data?.error as string | undefined) || fallbackError;
+        this.lastFailure = { route, status: res.status, error };
+        return { ok: false, status: res.status, error, data: data ?? undefined };
       }
+      this.lastFailure = null;
       return { ok: true, status: res.status, data };
     } catch (err) {
       if (err instanceof DOMException && err.name === 'AbortError') throw err;
       console.error(`[ai] ${route} failed:`, err);
-      return { ok: false, status: 0, error: err instanceof Error && err.message ? err.message : fallbackError };
+      const error = err instanceof Error && err.message ? err.message : fallbackError;
+      this.lastFailure = { route, status: 0, error };
+      return { ok: false, status: 0, error };
     }
   }
 }

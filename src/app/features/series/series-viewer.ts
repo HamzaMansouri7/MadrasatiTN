@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { DRAFT_DOC_ID, EducationStore, LanguageService, Scene, SourceInput } from '@core';
-import { AiStatusComponent, SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarComponent } from '@shared';
+import { createStudioSession, DRAFT_DOC_ID, EducationStore, LanguageService, Scene, SeriesDoc, SourceInput } from '@core';
+import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
 
 @Component({
   selector: 'app-series-viewer',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, SeriesPanelComponent, SourceInputComponent, AiStatusComponent, StudioBarComponent],
+  imports: [RouterLink, SeriesPanelComponent, SourceInputComponent, StudioBarComponent, StudioSessionBannerComponent],
   template: `
     <div class="w-full pb-16 space-y-5">
       <app-studio-bar
@@ -15,8 +15,8 @@ import { AiStatusComponent, SeriesPanelComponent, SourceInputComponent, STUDIO_B
         icon="auto_stories"
         [heading]="(!isNew() && series()?.title) || lang.tr('Nouvelle série illustrée', 'سلسلة مصورة جديدة')"
         [details]="isNew() ? [] : [series()?.grade ? lang.translateGrade(series()?.grade ?? '') : '', series()?.subject ? lang.translateSubject(series()?.subject ?? '') : '']"
-        [status]="generating() || busy() ? lang.tr('Génération en cours', 'جارٍ التوليد') : ''"
-        [busy]="generating() || busy()"
+        [status]="session.status()"
+        [busy]="session.busy()"
         [showSettings]="!isNew()"
         [settingsOpen]="panelOpen()"
         (settingsToggle)="settingsOpen.set(!settingsOpen())">
@@ -40,6 +40,8 @@ import { AiStatusComponent, SeriesPanelComponent, SourceInputComponent, STUDIO_B
         }
       </app-studio-bar>
 
+      <app-studio-session-banner [session]="session" />
+
       <div [class]="panelOpen() ? 'grid grid-cols-1 lg:grid-cols-[400px_minmax(0,1fr)] gap-6 items-start' : ''">
         @if (panelOpen()) {
           <aside id="studio-settings" class="no-print space-y-4 lg:sticky lg:top-4">
@@ -49,13 +51,13 @@ import { AiStatusComponent, SeriesPanelComponent, SourceInputComponent, STUDIO_B
             </div>
             <app-source-input
               [initialInput]="prefill()"
-              [busy]="generating()"
+              [busy]="session.busy()"
               [submitLabel]="lang.tr('Générer', 'توليد')"
+              (draftChange)="session.saveDraft($event)"
               (submitSource)="generate($event)"></app-source-input>
-            <app-ai-status [loading]="generating()" [error]="genError()" (retry)="retry()"></app-ai-status>
           </aside>
         }
-        <div class="min-w-0 space-y-6">
+        <div id="series-sheet" class="min-w-0 space-y-6 scroll-mt-4">
           @if (isNew()) {
             <!-- Empty storyboard: six numbered A4 panels, filled once the scenario is approved -->
             <div class="no-print grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -230,7 +232,7 @@ export class SeriesViewerComponent implements OnInit {
   readonly series = this.store.currentSeries;
   readonly activeSceneIndex = signal<number>(0);
   readonly loading = signal<boolean>(true);
-  readonly busy = signal<boolean>(false);
+  readonly busy = computed(() => this.session.busy());
   readonly progressLabel = signal<string>('');
   readonly error = signal<string | null>(null);
 
@@ -242,9 +244,13 @@ export class SeriesViewerComponent implements OnInit {
   /** /series/new: the form lives on this page; nothing is generated until the teacher submits. */
   readonly isNew = signal(false);
   readonly prefill = signal<SourceInput | null>(null);
-  readonly generating = signal(false);
-  readonly genError = signal<string | null>(null);
   private lastSource: SourceInput | null = null;
+
+  readonly session = createStudioSession<SourceInput>('series', {
+    restore: (draft) => this.prefill.set(draft),
+    retry: () => this.retry(),
+    undo: (previous) => this.showSeries(previous as SeriesDoc),
+  });
 
   readonly barBtn = STUDIO_BAR_BTN;
   /** Settings panel: always open for a new series, toggled from the studio bar otherwise. */
@@ -275,24 +281,31 @@ export class SeriesViewerComponent implements OnInit {
   }
 
   async generate(source: SourceInput) {
-    if (this.generating()) return;
     this.lastSource = source;
-    this.generating.set(true);
-    this.genError.set(null);
-    try {
-      const res = await this.store.createSeriesFromSource(source);
-      if (res.ok && res.docId) {
-        void this.router.navigate(['/series', res.docId]);
-      } else {
-        this.genError.set(res.error || this.lang.tr('Erreur lors de la génération de la série', 'تعذّر توليد السلسلة'));
-      }
-    } finally {
-      this.generating.set(false);
+    const previous = this.isNew() ? null : this.series();
+    const res = await this.session.run(() => this.store.createSeriesFromSource(source));
+    if (!res) return;
+    if (!res.ok || !res.docId) {
+      this.session.fail(res.error || this.lang.tr('Erreur lors de la génération de la série', 'تعذّر توليد السلسلة'));
+      return;
     }
+    this.session.keepUndo(previous);
+    if (res.docId !== DRAFT_DOC_ID) void this.session.clearDraft();
+    this.session.succeed({ scrollTo: 'series-sheet' });
+    void this.router.navigate(['/series', res.docId]);
   }
 
   retry() {
-    if (this.lastSource) void this.generate(this.lastSource);
+    const source = this.lastSource ?? this.session.draft();
+    if (!source) return;
+    this.session.dismissDraft();
+    this.prefill.set(source);
+    void this.generate(source);
+  }
+
+  private showSeries(d: SeriesDoc) {
+    this.store.currentSeries.set(d);
+    void this.router.navigate(['/series', d.id || DRAFT_DOC_ID]);
   }
 
   /** A guest's series is a local draft until saved; signup resumes the save. */
@@ -300,6 +313,7 @@ export class SeriesViewerComponent implements OnInit {
     this.store.requireAccount(async () => {
       const id = await this.store.saveCurrentSeries();
       if (id) {
+        void this.session.clearDraft();
         void this.router.navigate(['/series', id], { replaceUrl: true });
         this.store.showToast(this.lang.tr('Série enregistrée', 'تم حفظ السلسلة'), 'success');
       } else {
@@ -312,27 +326,25 @@ export class SeriesViewerComponent implements OnInit {
   async generateAll() {
     const s = this.series();
     if (!s || this.busy()) return;
-    this.busy.set(true);
     this.error.set(null);
-    try {
+    // Panels are saved one by one, so a cancel keeps every panel already written.
+    await this.session.run(async (signal) => {
       for (const sc of s.scenes) {
+        if (signal.aborted) break;
         if (sc.status === 'ready') continue;
         this.progressLabel.set(this.lang.tr(`Planche ${sc.n} / ${s.scenes.length}…`, `اللوحة ${sc.n} / ${s.scenes.length}…`));
         const ok = await this.writePanel(s.id, sc.n, true);
         if (!ok) break;
       }
-    } finally {
-      this.busy.set(false);
-    }
+    }, { timeoutMs: 0 });
   }
 
   async regenerate(sceneNumber: number, part: 'text' | 'image') {
     const s = this.series();
     if (!s || this.busy()) return;
-    this.busy.set(true);
     this.error.set(null);
     this.progressLabel.set(this.lang.tr('Génération en cours…', 'جارٍ الإنشاء…'));
-    try {
+    await this.session.run(async () => {
       if (part === 'text') {
         await this.writePanel(s.id, sceneNumber, false);
       } else {
@@ -340,9 +352,7 @@ export class SeriesViewerComponent implements OnInit {
         if (!img.ok) this.error.set(img.error ?? null);
         await this.persist(s.id);
       }
-    } finally {
-      this.busy.set(false);
-    }
+    });
   }
 
   private async writePanel(seriesId: string, sceneNumber: number, withImage: boolean): Promise<boolean> {

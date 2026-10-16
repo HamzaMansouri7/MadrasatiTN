@@ -72,15 +72,15 @@ export function isCreatePath(url: string): boolean {
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterLink],
   template: `
-    <nav class="no-print -mt-2 mb-5 border-b border-[#E7DFCF] overflow-x-auto" [attr.aria-label]="lang.tr('Outils de création', 'أدوات الإنشاء')">
-      <div class="flex gap-x-1 min-w-max">
+    <nav class="no-print -mt-2 mb-3 bg-[#14251D] rounded-2xl p-1.5 overflow-x-auto" [attr.aria-label]="lang.tr('Outils de création', 'أدوات الإنشاء')">
+      <div class="flex gap-1 min-w-max">
         @for (t of tabs; track t.key) {
           <a
             [routerLink]="t.path"
             [queryParams]="t.query ?? null"
             [attr.aria-current]="activeKey() === t.key ? 'page' : null"
-            [class]="activeKey() === t.key ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-            class="px-4 min-h-11 text-sm font-semibold whitespace-nowrap transition-colors border-b-2 -mb-px flex items-center gap-2 focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+            [class]="activeKey() === t.key ? 'bg-[#FBF8F1] text-[#14251D] shadow-sm' : 'text-[#B7C7BC] hover:text-[#FBF8F1] hover:bg-[#FBF8F1]/10'"
+            class="px-4 min-h-11 rounded-xl text-sm font-semibold whitespace-nowrap transition-colors flex items-center gap-2 focus-visible:outline-2 focus-visible:outline-[#F2C14E]">
             <span class="material-icons text-base" aria-hidden="true">{{ t.icon }}</span>
             {{ lang.tr(t.fr, t.ar) }}
           </a>

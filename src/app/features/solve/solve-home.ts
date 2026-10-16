@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { EducationStore, FirebaseService, LanguageService, AiClient } from '@core';
+import { EducationStore, FirebaseService, LanguageService, AiClient, createStudioSession } from '@core';
+import { StudioSessionBannerComponent } from '@shared';
 
 interface PhotoSolveResult {
   extractedText: string;
@@ -13,10 +14,17 @@ interface PhotoSolveResult {
 
 const SOLVE_COUNT_KEY = 'madrasati_solve_count';
 
+/** Last photo and its solution, kept on this device so a reload or a return brings them back. */
+interface SolveDraft {
+  photo: string;
+  mimeType: string;
+  result: PhotoSolveResult | null;
+}
+
 @Component({
   selector: 'app-solve-home',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink],
+  imports: [RouterLink, StudioSessionBannerComponent],
   templateUrl: './solve-home.html',
 })
 export class SolveHomeComponent {
@@ -32,6 +40,13 @@ export class SolveHomeComponent {
   readonly solutionCopied = signal(false);
   /** Soft signup nudge after a couple of free solves — never a blocker. */
   readonly showSignupNudge = signal(false);
+
+  private lastPhoto: { photo: string; mimeType: string } | null = null;
+
+  readonly session = createStudioSession<SolveDraft>('solve', {
+    restore: (d) => this.restore(d),
+    retry: () => this.retry(),
+  });
 
   onFileSelected(event: Event) {
     const input = event.target as HTMLInputElement;
@@ -51,37 +66,64 @@ export class SolveHomeComponent {
   }
 
   async solvePhoto(file: File) {
-    this.state.set('analyzing');
-    this.result.set(null);
-    this.errorMessage.set('');
-
+    if (this.session.busy()) return;
+    let base64Data: string;
     try {
-      const base64Data = await new Promise<string>((resolve, reject) => {
+      base64Data = await new Promise<string>((resolve, reject) => {
         const reader = new FileReader();
         reader.onload = () => resolve(reader.result as string);
         reader.onerror = () => reject(new Error('read error'));
         reader.readAsDataURL(file);
       });
-      this.previewUrl.set(base64Data);
-
-      const res = await this.ai.post('photo-solve', {
-        photoBase64: base64Data,
-        mimeType: file.type,
-      }, { fallbackError: '' });
-      const sol = res.ok ? res.data['solution'] : undefined;
-
-      if (sol) {
-        this.result.set(sol as PhotoSolveResult);
-        this.state.set('done');
-        this.bumpSolveCount();
-      } else {
-        this.errorMessage.set(res.ok ? '' : res.error);
-        this.state.set('error');
-      }
     } catch (err) {
-      console.error('photo-solve error:', err);
+      console.error('photo-solve read error:', err);
+      this.state.set('error');
+      return;
+    }
+    await this.solve(base64Data, file.type);
+  }
+
+  private async solve(photo: string, mimeType: string) {
+    this.lastPhoto = { photo, mimeType };
+    this.previewUrl.set(photo);
+    this.result.set(null);
+    this.errorMessage.set('');
+    this.state.set('analyzing');
+    this.session.saveDraft({ photo, mimeType, result: null }, { dirty: false });
+
+    const res = await this.session.run((signal) =>
+      this.ai.post('photo-solve', { photoBase64: photo, mimeType }, { fallbackError: '', signal }),
+    );
+    if (!res) {
+      this.state.set('idle');
+      return;
+    }
+    const sol = res.ok ? (res.data['solution'] as PhotoSolveResult | undefined) : undefined;
+    if (sol) {
+      this.result.set(sol);
+      this.state.set('done');
+      this.session.saveDraft({ photo, mimeType, result: sol }, { dirty: false });
+      this.session.succeed({ scrollTo: 'solve-result' });
+      this.bumpSolveCount();
+    } else {
+      this.errorMessage.set(res.ok ? '' : res.error);
+      this.session.fail(res.ok ? this.lang.t('solveErrorHint') : res.error || this.lang.t('solveErrorHint'));
       this.state.set('error');
     }
+  }
+
+  private retry() {
+    const last = this.lastPhoto ?? this.session.draft();
+    if (!last) return;
+    this.session.dismissDraft();
+    void this.solve(last.photo, last.mimeType);
+  }
+
+  private restore(d: SolveDraft) {
+    this.lastPhoto = { photo: d.photo, mimeType: d.mimeType };
+    this.previewUrl.set(d.photo);
+    this.result.set(d.result);
+    this.state.set(d.result ? 'done' : 'error');
   }
 
   private bumpSolveCount() {
@@ -98,6 +140,8 @@ export class SolveHomeComponent {
   }
 
   reset() {
+    void this.session.clearDraft();
+    this.session.clearError();
     this.state.set('idle');
     this.previewUrl.set(null);
     this.result.set(null);

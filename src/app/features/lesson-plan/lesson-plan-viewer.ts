@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { DRAFT_DOC_ID, EducationStore, InfographicDoc, LanguageService, SourceInput } from '@core';
-import { AiStatusComponent, InfographicPageComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarComponent } from '@shared';
+import { createStudioSession, DRAFT_DOC_ID, EducationStore, InfographicDoc, LanguageService, SourceInput } from '@core';
+import { InfographicPageComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
 
 @Component({
   selector: 'app-lesson-plan-viewer',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink, InfographicPageComponent, SourceInputComponent, AiStatusComponent, StudioBarComponent],
+  imports: [RouterLink, InfographicPageComponent, SourceInputComponent, StudioBarComponent, StudioSessionBannerComponent],
   template: `
     <div class="w-full pb-16 space-y-5">
       <app-studio-bar
@@ -15,8 +15,8 @@ import { AiStatusComponent, InfographicPageComponent, SourceInputComponent, STUD
         icon="view_timeline"
         [heading]="doc()?.title || lang.tr('Nouvelle fiche pédagogique', 'جذاذة بيداغوجية جديدة')"
         [details]="[doc()?.grade ? lang.translateGrade(doc()?.grade ?? '') : '', doc()?.subject ? lang.translateSubject(doc()?.subject ?? '') : '']"
-        [status]="generating() ? lang.tr('Génération en cours', 'جارٍ التوليد') : ''"
-        [busy]="generating()"
+        [status]="session.status()"
+        [busy]="session.busy()"
         [showSettings]="!isNew()"
         [settingsOpen]="panelOpen()"
         (settingsToggle)="settingsOpen.set(!settingsOpen())">
@@ -34,6 +34,8 @@ import { AiStatusComponent, InfographicPageComponent, SourceInputComponent, STUD
         }
       </app-studio-bar>
 
+      <app-studio-session-banner [session]="session" />
+
       <div [class]="panelOpen() ? 'grid grid-cols-1 lg:grid-cols-[400px_minmax(0,1fr)] gap-6 items-start' : ''">
         @if (panelOpen()) {
           <aside id="studio-settings" class="no-print space-y-4 lg:sticky lg:top-4">
@@ -43,13 +45,13 @@ import { AiStatusComponent, InfographicPageComponent, SourceInputComponent, STUD
             </div>
             <app-source-input
               [initialInput]="prefill()"
-              [busy]="generating()"
+              [busy]="session.busy()"
               [submitLabel]="lang.tr('Générer', 'توليد')"
+              (draftChange)="session.saveDraft($event)"
               (submitSource)="generate($event)"></app-source-input>
-            <app-ai-status [loading]="generating()" [error]="genError()" (retry)="retry()"></app-ai-status>
           </aside>
         }
-        <div class="min-w-0 space-y-6">
+        <div id="lesson-plan-sheet" class="min-w-0 space-y-6 scroll-mt-4">
           @if (isNew()) {
             <!-- Blank official sheet: the page is the editor from the first second -->
             <app-infographic-page [doc]="blankDoc()" [toolbar]="false"></app-infographic-page>
@@ -88,9 +90,13 @@ export class LessonPlanViewerComponent implements OnInit {
   /** /lesson-plan/new: the form lives on this page; nothing is generated until the teacher submits. */
   readonly isNew = signal(false);
   readonly prefill = signal<SourceInput | null>(null);
-  readonly generating = signal(false);
-  readonly genError = signal<string | null>(null);
   private lastSource: SourceInput | null = null;
+
+  readonly session = createStudioSession<SourceInput>('lesson-plan', {
+    restore: (draft) => this.prefill.set(draft),
+    retry: () => this.retry(),
+    undo: (previous) => this.showPlan(previous as InfographicDoc),
+  });
 
   readonly barBtn = STUDIO_BAR_BTN;
   /** Settings panel: always open for a new sheet, toggled from the studio bar otherwise. */
@@ -150,24 +156,33 @@ export class LessonPlanViewerComponent implements OnInit {
   }
 
   async generate(source: SourceInput) {
-    if (this.generating()) return;
     this.lastSource = source;
-    this.generating.set(true);
-    this.genError.set(null);
-    try {
-      const res = await this.store.generateLessonPlan(source);
-      if (res.ok && res.docId) {
-        void this.router.navigate(['/lesson-plan', res.docId]);
-      } else {
-        this.genError.set(res.error || this.lang.tr('Erreur lors de la génération de la fiche', 'تعذّر توليد الجذاذة'));
-      }
-    } finally {
-      this.generating.set(false);
+    const previous = this.doc();
+    const res = await this.session.run(() => this.store.generateLessonPlan(source));
+    if (!res) return;
+    if (!res.ok || !res.docId) {
+      this.session.fail(res.error || this.lang.tr('Erreur lors de la génération de la fiche', 'تعذّر توليد الجذاذة'));
+      return;
     }
+    this.session.keepUndo(previous);
+    // Signed-in teachers get the sheet saved to their account; a guest's stays a local draft.
+    if (res.docId !== DRAFT_DOC_ID) void this.session.clearDraft();
+    this.session.succeed({ scrollTo: 'lesson-plan-sheet' });
+    void this.router.navigate(['/lesson-plan', res.docId]);
   }
 
   retry() {
-    if (this.lastSource) void this.generate(this.lastSource);
+    const source = this.lastSource ?? this.session.draft();
+    if (!source) return;
+    this.session.dismissDraft();
+    this.prefill.set(source);
+    void this.generate(source);
+  }
+
+  private showPlan(d: InfographicDoc) {
+    this.store.currentLessonPlan.set(d);
+    this.doc.set(d);
+    void this.router.navigate(['/lesson-plan', d.id || DRAFT_DOC_ID]);
   }
 
   /** A guest's lesson plan is a local draft until saved; signup resumes the save. */
@@ -176,6 +191,7 @@ export class LessonPlanViewerComponent implements OnInit {
       const id = await this.store.saveCurrentLessonPlan();
       if (id) {
         this.doc.set(this.store.currentLessonPlan());
+        void this.session.clearDraft();
         void this.router.navigate(['/lesson-plan', id], { replaceUrl: true });
         this.store.showToast(this.lang.tr('Fiche enregistrée', 'تم حفظ الجذاذة'), 'success');
       } else {

@@ -2,14 +2,14 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, OnInit, s
 import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
-import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK, SourceInput, chapterById } from '@core';
-import { CartoucheComponent } from '@shared';
+import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK, SourceInput, chapterById, createStudioSession } from '@core';
+import { CartoucheComponent, StudioSessionBannerComponent } from '@shared';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
 
 @Component({
   selector: 'app-editor-studio',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent],
+  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent, StudioSessionBannerComponent],
   templateUrl: './editor-studio.html',
   styleUrl: './editor-studio.css',
 })
@@ -186,7 +186,10 @@ export class EditorStudioComponent implements OnInit {
 
   readonly publishModalOpen = signal<boolean>(false);
   readonly aiModalOpen = signal<boolean>(false);
-  readonly isAiLoading = signal<boolean>(false);
+  /** The document itself autosaves locally; the session covers generation state and the leave warning. */
+  readonly session = createStudioSession('exercises', { retry: () => this.retryLastGeneration() });
+  readonly isAiLoading = computed(() => this.session.busy());
+  private lastGeneration: (() => Promise<void>) | null = null;
   readonly aiPromptQuery = signal<string>('');
   readonly imageUploadError = signal<string>('');
 
@@ -383,7 +386,12 @@ export class EditorStudioComponent implements OnInit {
     }
   }
 
+  private retryLastGeneration() {
+    void this.lastGeneration?.();
+  }
+
   async applySourceAndGenerate(src: SourceInput, type: DocumentType) {
+    this.lastGeneration = () => this.applySourceAndGenerate(src, type);
     const lang = (src.language as 'fr' | 'ar') || (this.docSubject() === 'Français' || this.docSubject() === 'Anglais' ? 'fr' : 'ar');
     const extraInstructions = src.instructions ? ` - Note: ${src.instructions}` : (src.text && src.topic ? ` - Contexte: ${src.text.slice(0, 100)}` : '');
     const effectiveTopic =
@@ -422,9 +430,8 @@ export class EditorStudioComponent implements OnInit {
         },
       ]);
 
-      this.isAiLoading.set(true);
       try {
-        const [res1, res2] = await Promise.all([
+        const pair = await this.session.run(() => Promise.all([
           this.ai.post('generate-exercise', {
             grade: this.docGrade(),
             subject: this.docSubject(),
@@ -451,7 +458,11 @@ export class EditorStudioComponent implements OnInit {
             role: this.isParentMode() ? 'parent' : 'teacher',
             childName: this.activeChildName(),
           }),
-        ]);
+        ]));
+        if (!pair) return;
+        const [res1, res2] = pair;
+        if (!res1.ok && !res2.ok) this.session.fail(res1.error);
+        else this.session.succeed();
 
         if (res1.ok && res1.data['exercise']) {
           this.applyExercise(ex1Id, res1.data['exercise'] as AiJson, { title: 'Exercice N°1', points: 8 });
@@ -460,7 +471,6 @@ export class EditorStudioComponent implements OnInit {
           this.applyExercise(ex2Id, res2.data['exercise'] as AiJson, { title: 'Exercice N°2 (Situation Problème)', points: 12 });
         }
       } finally {
-        this.isAiLoading.set(false);
         this.saveDraft();
       }
     } else if (type === 'exercise_sheet') {
@@ -489,9 +499,8 @@ export class EditorStudioComponent implements OnInit {
         },
       ]);
 
-      this.isAiLoading.set(true);
       try {
-        const [res1, res2] = await Promise.all([
+        const pair = await this.session.run(() => Promise.all([
           this.ai.post('generate-exercise', {
             grade: this.docGrade(),
             subject: this.docSubject(),
@@ -518,7 +527,11 @@ export class EditorStudioComponent implements OnInit {
             role: this.isParentMode() ? 'parent' : 'teacher',
             childName: this.activeChildName(),
           }),
-        ]);
+        ]));
+        if (!pair) return;
+        const [res1, res2] = pair;
+        if (!res1.ok && !res2.ok) this.session.fail(res1.error);
+        else this.session.succeed();
 
         if (res1.ok && res1.data['exercise']) {
           this.applyExercise(ex1Id, res1.data['exercise'] as AiJson, { title: 'Exercice N°1 : Entraînement de base', points: 10 });
@@ -527,7 +540,6 @@ export class EditorStudioComponent implements OnInit {
           this.applyExercise(ex2Id, res2.data['exercise'] as AiJson, { title: 'Exercice N°2 : Approfondissement', points: 10 });
         }
       } finally {
-        this.isAiLoading.set(false);
         this.saveDraft();
       }
     } else {
@@ -829,9 +841,16 @@ export class EditorStudioComponent implements OnInit {
   }
 
   async generateWithGemini() {
-    const prompt = this.aiPromptQuery();
-    if (!prompt) return;
-    this.isAiLoading.set(true);
+    const prompt = this.aiPromptQuery().trim();
+    const ok = this.session.validate([
+      { id: 'ai-prompt-input', ok: !!prompt, message: this.lang.tr('Décrivez ce que vous voulez générer.', 'اكتب ما تريد توليده.') },
+    ]);
+    if (!ok || this.session.busy()) return;
+    this.lastGeneration = () => this.generateWithGemini();
+    await this.session.run(() => this.draftWithAi(prompt));
+  }
+
+  private async draftWithAi(prompt: string) {
 
     // Prose documents (blog / course / summary) draft a heading + paragraph;
     // exams and exercise sheets generate a graded exercise block.
@@ -856,6 +875,9 @@ export class EditorStudioComponent implements OnInit {
           this.updateBlockContent(para.id, ann['content'] || '');
           this.aiModalOpen.set(false);
           this.aiPromptQuery.set('');
+          this.session.succeed();
+        } else {
+          this.session.fail(res.ok ? '' : res.error);
         }
       } else {
         const res = await this.ai.post('generate-exercise', {
@@ -876,10 +898,13 @@ export class EditorStudioComponent implements OnInit {
           this.applyExercise(lastBlock.id, generated, { points: generated['points'] || 5 });
           this.aiModalOpen.set(false);
           this.aiPromptQuery.set('');
+          this.session.succeed();
+        } else {
+          this.session.fail(res.ok ? '' : res.error);
         }
       }
-    } finally {
-      this.isAiLoading.set(false);
+    } catch (err) {
+      this.session.fail(err instanceof Error ? err.message : '');
     }
   }
 

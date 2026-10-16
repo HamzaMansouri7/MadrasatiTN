@@ -14,18 +14,40 @@ import { isCreatePath } from './create-tabs';
       <div class="w-full max-w-full mx-auto px-3 sm:px-6 lg:px-8 xl:px-10">
         <div class="flex items-center justify-between h-[76px] gap-2 lg:gap-4">
           
-          <!-- Logo & Platform Identity -->
+          <!-- Logo & Platform Identity with Official Tunisian Flag Badge -->
           <div (click)="selectRole('home')" (keydown.enter)="selectRole('home')" role="button" tabindex="0" class="flex items-center gap-2.5 sm:gap-3 shrink-0 cursor-pointer group">
-            <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-[12px] overflow-hidden flex items-center justify-center shadow-sm shrink-0 group-hover:scale-102 transition-transform border border-[#E6EEF3]">
-              <img src="/logo.jpg" alt="Madrasati Logo" class="w-full h-full object-cover" />
+            <div class="relative w-10 h-10 sm:w-11 sm:h-11 rounded-[12px] flex items-center justify-center shadow-sm shrink-0 group-hover:scale-105 transition-all border border-[#E6EEF3]">
+              <img src="/logo.jpg" alt="Madrasati Logo" class="w-full h-full object-cover rounded-[11px]" />
+              
+              <!-- Creative Floating Tunisian Flag Medallion -->
+              <span
+                class="absolute -bottom-1 -right-1 rtl:-right-auto rtl:-left-1 w-4.5 h-4.5 sm:w-5 sm:h-5 rounded-full ring-2 ring-white shadow-md overflow-hidden shrink-0 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110 flex items-center justify-center bg-[#E70013]"
+                [title]="lang.tr('République Tunisienne', 'الجمهورية التونسية')">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" class="w-full h-full object-cover" aria-label="Drapeau de la Tunisie">
+                  <rect width="1200" height="800" fill="#E70013"/>
+                  <circle cx="600" cy="400" r="200" fill="#FFFFFF"/>
+                  <path fill="#E70013" d="M 635,400 A 120,120 0 1,1 483.5,293.4 A 95,95 0 1,0 601.5,335 Z"/>
+                  <polygon fill="#E70013" points="625,357.2 641.5,389.8 677.3,395 651.1,420.5 657.4,456.2 625,439.2 592.6,456.2 598.9,420.5 572.7,395 608.5,389.8"/>
+                </svg>
+              </span>
             </div>
             <div>
               <div class="flex items-center gap-1.5 sm:gap-2">
                 <span class="font-display font-bold text-[#102A43] text-sm sm:text-base xl:text-lg tracking-tight whitespace-nowrap">
                   {{ lang.t('brandName') }}
                 </span>
-                <span class="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#E8F5FC] text-[#007CC2] border border-[#007CC2]/20 shrink-0">
-                  <span class="font-black">TN</span>
+                
+                <!-- Creative Tunisian Flag & TN Badge -->
+                <span class="inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full bg-red-50/90 text-[#C8102E] border border-red-200/90 shadow-2xs group-hover:bg-red-100 group-hover:border-red-300 transition-all shrink-0">
+                  <span class="w-3.5 h-2.5 rounded-[2px] overflow-hidden shadow-2xs inline-flex shrink-0 border border-black/10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" class="w-full h-full object-cover" aria-hidden="true">
+                      <rect width="1200" height="800" fill="#E70013"/>
+                      <circle cx="600" cy="400" r="200" fill="#FFFFFF"/>
+                      <path fill="#E70013" d="M 635,400 A 120,120 0 1,1 483.5,293.4 A 95,95 0 1,0 601.5,335 Z"/>
+                      <polygon fill="#E70013" points="625,357.2 641.5,389.8 677.3,395 651.1,420.5 657.4,456.2 625,439.2 592.6,456.2 598.9,420.5 572.7,395 608.5,389.8"/>
+                    </svg>
+                  </span>
+                  <span class="font-black tracking-wider">TN</span>
                 </span>
               </div>
               <p class="text-[10px] sm:text-[11px] text-[#486581] font-medium leading-none hidden 2xl:block mt-0.5">
