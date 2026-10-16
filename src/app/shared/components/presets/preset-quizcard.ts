@@ -104,6 +104,9 @@ import { IllustrateButtonComponent } from './illustrate-button';
       padding: 1.1rem 1.25rem;
       border-inline-start: 5px solid var(--ig-a);
     }
+    @media print {
+      .qc-explanation { display: none !important; }
+    }
   `,
   template: `
     @let s = spec();

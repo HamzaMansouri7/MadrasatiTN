@@ -315,7 +315,7 @@ const PRESET_BRIEF: Record<InfographicPreset, string> = {
   quizcard:
     'quizcard : fiche question à choix multiples (QCM) ; remplis "quiz" avec la question, 4 choix précis (A, B, C, D dont un seul isCorrect=true), explication détaillée et indice pédagogique.',
   certificate:
-    'certificate : certificat d’encouragement imprimable A4, entièrement dans la langue demandée ; remplis "certificate" avec le motif d’attribution (reason, une phrase), recipientTitle (titre court), sealText (1 ou 2 mots) ; grade et schoolYear seulement si l’enseignant les donne (schoolYear au format 2025-2026), sinon vides ; ne mets jamais de nom d’élève, d’enseignant ou d’école (lignes laissées vides).',
+    'certificate : certificat d’encouragement imprimable A4, entièrement dans la langue demandée ; remplis "certificate" avec le motif d’attribution (reason, une phrase ; en arabe, veille à l’orthographe exacte: "النجيب" et jamais "النجب"), recipientTitle (titre court), sealText (1 ou 2 mots) ; grade et schoolYear seulement si l’enseignant les donne (schoolYear au format 2025-2026), sinon vides ; ne mets jamais de nom d’élève, d’enseignant ou d’école (lignes laissées vides).',
   venn:
     'venn : diagramme de Venn avec ensembles sécants ; remplis "venn" avec setA (titre + items), setB (titre + items) et overlap (caractéristiques communes / intersections).',
   idcard:
