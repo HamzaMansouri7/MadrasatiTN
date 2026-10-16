@@ -1,0 +1,131 @@
+{
+  "source": "MadrasatiTN Parascolaire",
+  "bookId": "5eme-annee/resoudre-problemes-par-graphiques",
+  "title": "توظيف الرسوم والمخططات البيانية في حل المسائل الرياضية — السنة 5",
+  "grade": "5ème Année",
+  "subject": "Mathématiques",
+  "cover": "assets/resources/5eme-annee/parascolaire/trimestre-1/resoudre-problemes-par-graphiques/cover.webp",
+  "backCover": "assets/resources/5eme-annee/parascolaire/trimestre-1/resoudre-problemes-par-graphiques/back-cover.webp",
+  "count": 6,
+  "items": [
+    {
+      "id": "graphical-math-p001",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "resoudre-problemes-par-graphiques",
+      "title": "بطاقة منهجية : القواعد الذهبية لتوظيف الرسوم البيانية",
+      "file": "001.webp",
+      "relPath": "assets/resources/5eme-annee/parascolaire/trimestre-1/resoudre-problemes-par-graphiques/001.webp",
+      "lang": "ar",
+      "ref": "المربي محمد علي - مدرستي تونس p.1",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques",
+        "رسوم بيانية",
+        "منهجية"
+      ]
+    },
+    {
+      "id": "graphical-math-p002",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "resoudre-problemes-par-graphiques",
+      "title": "تمارين تطبيقية : مسائل المجموع والأجزاء المتناسبة",
+      "file": "002.webp",
+      "relPath": "assets/resources/5eme-annee/parascolaire/trimestre-1/resoudre-problemes-par-graphiques/002.webp",
+      "lang": "ar",
+      "ref": "المربي محمد علي - مدرستي تونس p.2",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques",
+        "أجزاء متناسبة"
+      ]
+    },
+    {
+      "id": "graphical-math-p003",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "resoudre-problemes-par-graphiques",
+      "title": "تمارين تطبيقية : مسائل المجموع والفارق والتمثيل الشريطي",
+      "file": "003.webp",
+      "relPath": "assets/resources/5eme-annee/parascolaire/trimestre-1/resoudre-problemes-par-graphiques/003.webp",
+      "lang": "ar",
+      "ref": "المربي محمد علي - مدرستي تونس p.3",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques",
+        "المجموع والفارق"
+      ]
+    },
+    {
+      "id": "graphical-math-p004",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "resoudre-problemes-par-graphiques",
+      "title": "تمارين تطبيقية : كفتا الميزان والاختزال والمسائل الهندسية",
+      "file": "004.webp",
+      "relPath": "assets/resources/5eme-annee/parascolaire/trimestre-1/resoudre-problemes-par-graphiques/004.webp",
+      "lang": "ar",
+      "ref": "المربي محمد علي - مدرستي تونس p.4",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques",
+        "كفتا الميزان",
+        "هندسة"
+      ]
+    },
+    {
+      "id": "graphical-math-p005",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "resoudre-problemes-par-graphiques",
+      "title": "دليل الإصلاح النموذجي والرسوم التوضيحية (الجزء 1)",
+      "file": "005.webp",
+      "relPath": "assets/resources/5eme-annee/parascolaire/trimestre-1/resoudre-problemes-par-graphiques/005.webp",
+      "lang": "ar",
+      "ref": "المربي محمد علي - مدرستي تونس p.5",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques",
+        "إصلاح مفصل"
+      ]
+    },
+    {
+      "id": "graphical-math-p006",
+      "grade": "5eme-annee",
+      "subject": "Mathématiques",
+      "subSubject": "parascolaire",
+      "trimester": 1,
+      "topic": "resoudre-problemes-par-graphiques",
+      "title": "دليل الإصلاح النموذجي والرسوم التوضيحية (الجزء 2)",
+      "file": "006.webp",
+      "relPath": "assets/resources/5eme-annee/parascolaire/trimestre-1/resoudre-problemes-par-graphiques/006.webp",
+      "lang": "ar",
+      "ref": "المربي محمد علي - مدرستي تونس p.6",
+      "labels": [
+        "parascolaire",
+        "5eme-annee",
+        "mathématiques",
+        "إصلاح مفصل"
+      ]
+    }
+  ],
+  "exerciseCount": 9,
+  "solvedCount": 9,
+  "notes": "سلسلة بيداغوجية كاملة: بطاقة منهجية، 9 وضعيات متدرجة مع مخططات شريطية، وإصلاح نموذجي مفصل مدعم بالرسوم."
+}
