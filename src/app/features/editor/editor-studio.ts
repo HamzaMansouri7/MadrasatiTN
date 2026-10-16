@@ -3,13 +3,13 @@ import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK, SourceInput, chapterById, createStudioSession } from '@core';
-import { CartoucheComponent, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
+import { CartoucheComponent, SheetChartComponent, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
 
 @Component({
   selector: 'app-editor-studio',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent, StudioBarComponent, StudioSessionBannerComponent],
+  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent, SheetChartComponent, StudioBarComponent, StudioSessionBannerComponent],
   templateUrl: './editor-studio.html',
   styleUrl: './editor-studio.css',
 })
@@ -731,7 +731,7 @@ export class EditorStudioComponent implements OnInit {
   isPlaceholderExercise(b: EditorBlock): boolean {
     if (b.type !== 'exercise') return false;
     if (b.qcmOptions?.length || b.tfStatements?.length || b.gapText || b.matchingPairs?.length) return false;
-    if (b.orderItems?.length || b.tableHeaders?.length || b.calcOperands?.length) return false;
+    if (b.orderItems?.length || b.tableHeaders?.length || b.calcOperands?.length || b.chartLabels?.length) return false;
     const text = (b.content || '').trim();
     return !text || (text.length < 90 && /(\.\.\.|…)$/.test(text));
   }
@@ -802,6 +802,7 @@ export class EditorStudioComponent implements OnInit {
     { id: 'ordering', fr: 'Remettre en ordre', ar: 'رتّب' },
     { id: 'table', fr: 'Tableau à compléter', ar: 'أكمل الجدول' },
     { id: 'column_calc', fr: 'Opération posée', ar: 'عملية عمودية' },
+    { id: 'chart', fr: 'Graphique', ar: 'رسم بياني' },
   ];
 
   /** Fixed mix (odd places, then even places reversed) so the order to find never shows as given. */
@@ -1042,6 +1043,11 @@ export class EditorStudioComponent implements OnInit {
     if (ex['calcOperands']?.length) this.updateBlockField(blockId, 'calcOperands', ex['calcOperands']);
     if (ex['calcOperator']) this.updateBlockField(blockId, 'calcOperator', ex['calcOperator']);
     if (ex['calcResult']) this.updateBlockField(blockId, 'calcResult', String(ex['calcResult']));
+    if (ex['chartKind']) this.updateBlockField(blockId, 'chartKind', ex['chartKind']);
+    if (ex['chartLabels']?.length) this.updateBlockField(blockId, 'chartLabels', ex['chartLabels']);
+    if (ex['chartValues']?.length) this.updateBlockField(blockId, 'chartValues', ex['chartValues']);
+    if (Array.isArray(ex['chartBlanks'])) this.updateBlockField(blockId, 'chartBlanks', ex['chartBlanks'] as AiJson);
+    if (ex['chartUnit']) this.updateBlockField(blockId, 'chartUnit', ex['chartUnit']);
   }
 
   async generateWithGemini() {
@@ -1204,6 +1210,11 @@ export class EditorStudioComponent implements OnInit {
         } else if (format === 'table' && !updated.tableHeaders?.length) {
           updated.tableHeaders = ['A', 'B'];
           updated.tableRows = [['…', '[[…]]'], ['…', '[[…]]']];
+        } else if (format === 'chart' && !updated.chartLabels?.length) {
+          updated.chartKind = 'bar';
+          updated.chartLabels = ['A', 'B', 'C', 'D'];
+          updated.chartValues = [4, 7, 3, 6];
+          updated.chartBlanks = [];
         } else if (format === 'column_calc' && !updated.calcOperands?.length) {
           updated.calcOperands = ['345', '278'];
           updated.calcOperator = '+';

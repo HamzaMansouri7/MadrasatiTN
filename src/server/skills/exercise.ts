@@ -25,7 +25,7 @@ export const EXERCISE_SCHEMA_V1 = {
     teacherNotes: STR,
     hints: STR_ARR,
     points: NUM,
-    format: { type: Type.STRING, enum: ['free', 'qcm', 'true_false', 'fill_blanks', 'matching', 'ordering', 'table', 'column_calc'] },
+    format: { type: Type.STRING, enum: ['free', 'qcm', 'true_false', 'fill_blanks', 'matching', 'ordering', 'table', 'column_calc', 'chart'] },
     qcmOptions: STR_ARR,
     qcmCorrectIndex: INT,
     tfStatements: {
@@ -43,6 +43,11 @@ export const EXERCISE_SCHEMA_V1 = {
     calcOperands: STR_ARR,
     calcOperator: { type: Type.STRING, enum: ['+', '-', '×'] },
     calcResult: STR,
+    chartKind: { type: Type.STRING, enum: ['bar', 'line'] },
+    chartLabels: STR_ARR,
+    chartValues: { type: Type.ARRAY, items: NUM },
+    chartBlanks: { type: Type.ARRAY, items: INT },
+    chartUnit: STR,
   },
   required: ['title', 'promptText', 'solutionText', 'format', 'teacherNotes', 'parentGuide'],
 };

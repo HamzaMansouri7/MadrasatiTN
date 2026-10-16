@@ -1,6 +1,6 @@
 /**
  * Shared format-specific prompt instructions for exercise skills
- * (free, qcm, true_false, fill_blanks, matching, ordering, table, column_calc).
+ * (free, qcm, true_false, fill_blanks, matching, ordering, table, column_calc, chart).
  */
 
 export const FORMAT_RULES: Record<string, string> = {
@@ -11,6 +11,7 @@ export const FORMAT_RULES: Record<string, string> = {
   matching: `- Format Appariement / Relier : matchingPairs contenant 3 à 5 couples { left, right } à relier de manière univoque.`,
   ordering: `- Format Remettre en ordre : orderItems contenant 4 à 6 éléments DANS LE BON ORDRE (étapes, événements, nombres, phrase). La fiche les mélange elle-même.`,
   table: `- Format Tableau à compléter : tableHeaders (2 à 4 en-têtes) et tableRows (3 à 5 lignes, même nombre de cellules que d'en-têtes). Chaque cellule que l'élève doit remplir s'écrit [[réponse]] ; au moins une cellule par ligne reste donnée.`,
+  chart: `- Format Graphique (diagramme) : chartKind ('bar' = diagramme en bâtons, 'line' = courbe), chartLabels (3 à 6 catégories courtes), chartValues (nombres positifs réalistes, autant que de catégories), chartUnit (unité courte de l'axe). Pour "lire le graphique" : chartBlanks vide et promptText pose 2 à 3 questions sur les valeurs. Pour "compléter le graphique" : chartBlanks = indices (0..N-1) des barres ou points que l'élève trace, et promptText donne leurs valeurs.`,
   column_calc: `- Format Opération posée : calcOperands (2 nombres, en chiffres, sans espaces), calcOperator ('+', '-' ou '×') et calcResult (le résultat exact, en chiffres). promptText = la consigne courte ("Pose et effectue…").`,
 };
 

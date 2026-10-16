@@ -65,6 +65,14 @@ export function checkExercise(ex: Record<string, unknown> | null | undefined): E
     }
   }
 
+  if (format === 'chart') {
+    const labels = ex['chartLabels'];
+    const values = ex['chartValues'];
+    if (!Array.isArray(labels) || !Array.isArray(values) || labels.length < 2 || labels.length !== values.length) {
+      errors.push('chart format requires chartLabels and chartValues of the same length (2+)');
+    }
+  }
+
   if (format === 'column_calc') {
     const operands = ex['calcOperands'];
     if (!Array.isArray(operands) || operands.length < 2 || typeof ex['calcResult'] !== 'string') {

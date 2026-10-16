@@ -14,7 +14,7 @@ export type EditorBlockType =
 
 export type CalloutVariant = 'info' | 'tip' | 'warning' | 'ministry';
 
-export type ExerciseFormat = 'free' | 'qcm' | 'true_false' | 'fill_blanks' | 'matching' | 'ordering' | 'table' | 'column_calc';
+export type ExerciseFormat = 'free' | 'qcm' | 'true_false' | 'fill_blanks' | 'matching' | 'ordering' | 'table' | 'column_calc' | 'chart';
 
 export type ExerciseDifficulty = 'Facile' | 'Moyen' | 'Difficile';
 
@@ -60,6 +60,12 @@ export interface EditorBlock {
   calcOperands?: string[];
   calcOperator?: '+' | '-' | '×';
   calcResult?: string;
+  /** Chart to read or complete (chartBlanks = entries the pupil draws). */
+  chartKind?: 'bar' | 'line';
+  chartLabels?: string[];
+  chartValues?: number[];
+  chartBlanks?: number[];
+  chartUnit?: string;
   // Image specific
   imageUrl?: string;
   imageCaption?: string;

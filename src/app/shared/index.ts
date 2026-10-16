@@ -25,5 +25,6 @@ export * from './components/share-button';
 export * from './components/studio-bar';
 export * from './components/create-tabs';
 export * from './components/studio-session-banner';
+export * from './components/sheet-chart';
 export * from './studio-leave.guard';
 export * from './utils/share-post';

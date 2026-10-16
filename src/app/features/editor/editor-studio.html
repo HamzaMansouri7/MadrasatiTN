@@ -898,6 +898,18 @@
                             </tbody>
                           </table>
                         }
+                        @case ('chart') {
+                          @if (b.content) {
+                            <p dir="auto" class="text-[#14251D] whitespace-pre-line font-medium mb-2">{{ b.content }}</p>
+                          }
+                          <app-sheet-chart
+                            [kind]="b.chartKind || 'bar'"
+                            [labels]="b.chartLabels || []"
+                            [values]="b.chartValues || []"
+                            [blanks]="b.chartBlanks || []"
+                            [unit]="b.chartUnit || ''"
+                            [title]="b.exerciseTitle || ''" />
+                        }
                         @case ('column_calc') {
                           @if (b.content) {
                             <p dir="auto" class="text-[#14251D] whitespace-pre-line font-medium mb-2">{{ b.content }}</p>

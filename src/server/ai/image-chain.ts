@@ -264,7 +264,7 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
   // Text-free rule: non-arabicSafe models get an English, text-free prompt; with no usable English left they are skipped.
   const safePrompt = textFreePrompt(full.prompt);
   if (safePrompt === null) list = list.filter((m) => m.arabicSafe);
-  const requestFor = (m: ImageModel): Required<Omit<ImageRequest, 'preferModel'>> =>
+  const requestFor = (m: ImageModel): Required<Omit<ImageRequest, 'preferModel' | 'excludeGroups'>> =>
     m.arabicSafe || safePrompt === null ? full : { ...full, prompt: safePrompt };
 
   // Pinned model: tried first, and hedging is relaxed so a merely slow answer is not raced by another look.
