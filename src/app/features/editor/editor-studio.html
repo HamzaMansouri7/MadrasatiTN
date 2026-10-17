@@ -564,6 +564,40 @@
     <div
       [class.hidden]="mobilePane() !== 'canvas'"
       class="studio-pane lg:block space-y-4 w-full">
+      <!-- Prominent Lesson Plan Switcher (Always Visible) -->
+      <div class="bg-white rounded-2xl border border-[#2D6A4F]/30 p-2.5 px-4 flex flex-wrap items-center justify-between gap-2 shadow-xs print:hidden">
+        <div class="flex items-center gap-1.5 text-xs font-semibold text-[#14251D]">
+          <span class="material-icons text-sm text-[#2D6A4F]">school</span>
+          <span>{{ lang.tr('Modèles de الجذاذات الرسمية :', 'نماذج الجذاذات الرسمية :') }}</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-1.5">
+          <button
+            type="button"
+            (click)="loadTemplatePreset('lesson_plan_reading_ar')"
+            class="bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#1B4332] border border-[#2D6A4F]/40 px-3 py-1.5 rounded-xl text-xs font-semibold cursor-pointer transition-all shadow-2xs hover:scale-102">
+            📖 {{ lang.tr('Arabe — Lecture (قراءة وفهم)', 'عربية — قراءة وفهم') }}
+          </button>
+          <button
+            type="button"
+            (click)="loadTemplatePreset('lesson_plan_math_problem')"
+            class="bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#1B4332] border border-[#2D6A4F]/40 px-3 py-1.5 rounded-xl text-xs font-semibold cursor-pointer transition-all shadow-2xs hover:scale-102">
+            📐 {{ lang.tr('Maths — Situation-problème (وضعية مشكل)', 'رياضيات — وضعية مشكل') }}
+          </button>
+          <button
+            type="button"
+            (click)="loadTemplatePreset('lesson_plan_science_inquiry')"
+            class="bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#1B4332] border border-[#2D6A4F]/40 px-3 py-1.5 rounded-xl text-xs font-semibold cursor-pointer transition-all shadow-2xs hover:scale-102">
+            🔬 {{ lang.tr('Éveil — Démarche scientifique (تقصٍّ علمي)', 'إيقاظ — تقصٍّ علمي') }}
+          </button>
+          <button
+            type="button"
+            (click)="loadTemplatePreset('lesson_plan_fr_langue')"
+            class="bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#1B4332] border border-[#2D6A4F]/40 px-3 py-1.5 rounded-xl text-xs font-semibold cursor-pointer transition-all shadow-2xs hover:scale-102">
+            🇫🇷 {{ lang.tr('Français — Langue (FLE)', 'فرنسية — لغة (FLE)') }}
+          </button>
+        </div>
+      </div>
+
       <!-- A4 toolbar strip -->
       <div class="hidden lg:flex items-center justify-between bg-white rounded-2xl border border-[#E7DFCF] px-4 min-h-11 text-xs text-[#5B6B60] shadow-sm print:hidden">
         <span class="flex items-center gap-1.5 font-semibold text-[#14251D]">
