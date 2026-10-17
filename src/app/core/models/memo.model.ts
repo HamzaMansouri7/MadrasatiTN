@@ -1,5 +1,3 @@
-export type MemoLayout = 'tree' | 'steps' | 'cards' | 'timeline' | 'table' | 'conjugation';
-
 export interface MemoStep {
   n: number;
   heading: string;
@@ -53,17 +51,64 @@ export interface MemoConjugationGrid {
   rows: MemoConjugationRow[];
 }
 
+export type SummarySectionType =
+  | 'intro'
+  | 'rule'
+  | 'method'
+  | 'example'
+  | 'table'
+  | 'conjugation'
+  | 'timeline'
+  | 'remember'
+  | 'practice';
+
+export interface SummaryExercise {
+  question: string;
+  answer: string;
+}
+
+/** One block of the revision document, rendered top to bottom. Only the fields of its type are filled. */
+export interface SummarySection {
+  type: SummarySectionType;
+  heading: string;
+  /** intro / rule / example: a short paragraph (the example's statement). */
+  text?: string;
+  /** rule / remember: bullet lines. */
+  items?: string[];
+  /** method: ordered steps. */
+  steps?: MemoStep[];
+  /** example: the worked solution. */
+  solution?: string;
+  table?: MemoComparisonTable;
+  conjugation?: MemoConjugationGrid;
+  timeline?: MemoTimelineEvent[];
+  /** practice: answers are printed only on the teacher copy. */
+  exercises?: SummaryExercise[];
+  /** Optional picture added by the teacher (max 2 per document). */
+  imageUrl?: string;
+}
+
+export type SummaryLength = 'short' | 'full';
+
+/**
+ * Revision document (ملف مراجعة). New documents carry `sections`; documents saved before
+ * 2026-10-16 only have the old blocks (steps, cards...) and are adapted on open.
+ */
 export interface MemoDoc {
   title: string;
   subtitle?: string;
   grade: string;
   subject: string;
   topic: string;
+  trimester?: string;
   language: 'ar' | 'fr';
-  steps: MemoStep[];
-  cards: MemoCard[];
+  objective?: string;
+  length?: SummaryLength;
+  sections?: SummarySection[];
+  steps?: MemoStep[];
+  cards?: MemoCard[];
   example?: MemoExample;
-  remember: string[];
+  remember?: string[];
   formula?: MemoFormula;
   quote?: string;
   timeline?: MemoTimelineEvent[];
@@ -85,7 +130,10 @@ export interface MemoInput {
   trimester?: string;
   language?: 'ar' | 'fr';
   instructions?: string;
-  blockToRegenerate?: 'steps' | 'cards' | 'example' | 'remember' | 'formula' | 'quote';
+  length?: SummaryLength;
+  withPractice?: boolean;
+  /** Regenerate one section of `currentMemo` only. */
+  sectionIndex?: number;
   currentMemo?: MemoDoc;
 }
 

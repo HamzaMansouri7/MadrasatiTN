@@ -27,10 +27,8 @@ import {
 } from '../models/education.model';
 import {
   MemoDoc,
-  MemoLayout,
-  MemoCard,
-  MemoStep,
   MemoInput,
+  SummarySection,
   MemoGenerateResponse,
 } from '../models/memo.model';
 import { SourceInput } from '../models/source-input.model';
@@ -99,7 +97,6 @@ export class EducationStore {
 
   // Memo Studio signals
   readonly memo = signal<MemoDoc | null>(null);
-  readonly memoLayout = signal<MemoLayout>('tree');
 
   // Lesson Plan and Series signals
   readonly currentLessonPlan = signal<InfographicDoc | null>(null);
@@ -1182,17 +1179,14 @@ export class EducationStore {
 
   /** Maps the UI-facing MemoInput onto the fields POST /api/ai/generate-memo reads. */
   private memoRequest(input: MemoInput): Record<string, unknown> {
-    const sourceFiles: { data: string; mimeType: string }[] = [];
+    const sourceFiles: ({ data: string; mimeType: string } | { url: string })[] = [];
     for (const i of input.images ?? []) {
       if (i.base64Data) sourceFiles.push({ data: i.base64Data, mimeType: i.contentType || 'image/jpeg' });
     }
     if (input.file?.base64Data) {
       sourceFiles.push({ data: input.file.base64Data, mimeType: input.file.contentType || 'application/pdf' });
     }
-    const block = input.blockToRegenerate
-      ? `Régénère uniquement le bloc "${input.blockToRegenerate}" de la fiche mémo existante.`
-      : '';
-    const userInstruction = [input.instructions, block].filter(Boolean).join(' ');
+    if (input.resourceUrl) sourceFiles.push({ url: input.resourceUrl });
     return {
       topic: input.topic,
       topicId: input.topicId,
@@ -1202,7 +1196,10 @@ export class EducationStore {
       language: input.language,
       teacherNotes: input.text,
       existingMemo: input.currentMemo,
-      userInstruction: userInstruction || undefined,
+      userInstruction: input.instructions || undefined,
+      length: input.length,
+      withPractice: input.withPractice,
+      sectionIndex: input.sectionIndex,
       sourceFiles: sourceFiles.length ? sourceFiles : undefined,
     };
   }
@@ -1221,88 +1218,42 @@ export class EducationStore {
     return { ok: true, result, extractedText: res.data['extractedText'] as string | undefined };
   }
 
-  async regenerateMemoBlock(
-    block: 'steps' | 'cards' | 'example' | 'remember' | 'formula' | 'quote',
-    instructions?: string,
-  ): Promise<MemoGenerateResponse> {
+  /** Rewrites one section of the current revision document in place. */
+  async regenerateMemoSection(index: number, instructions?: string): Promise<MemoGenerateResponse> {
     const current = this.memo();
-    if (!current) {
-      return { ok: false, error: 'Aucune fiche mémo active à régénérer.' };
-    }
-    const input: MemoInput = {
-      mode: 'topic',
-      topic: current.topic,
-      grade: current.grade,
-      subject: current.subject,
-      language: current.language,
-      instructions,
-      blockToRegenerate: block,
-      currentMemo: current,
-    };
-    if (typeof window === 'undefined') {
-      return { ok: false, error: 'Environnement non supporté.' };
-    }
-    const res = await this.ai.post('generate-memo', this.memoRequest(input), {
-      fallbackError: 'Erreur lors de la régénération du bloc.',
-    });
+    if (!current?.sections?.[index]) return { ok: false, error: 'Section introuvable.' };
+    if (typeof window === 'undefined') return { ok: false, error: 'Environnement non supporté.' };
+    const res = await this.ai.post(
+      'generate-memo',
+      this.memoRequest({
+        mode: 'topic',
+        topic: current.topic,
+        grade: current.grade,
+        subject: current.subject,
+        trimester: current.trimester,
+        language: current.language,
+        instructions,
+        sectionIndex: index,
+        currentMemo: current,
+      }),
+      { fallbackError: 'Erreur lors de la régénération de la section.' },
+    );
     if (!res.ok) return { ok: false, error: res.error };
-    const patch = res.data['memoDoc'] as Partial<MemoDoc> | undefined;
-    if (patch) this.memo.update((doc) => (doc ? { ...doc, ...patch } : doc));
+    const section = res.data['section'] as SummarySection | undefined;
+    if (!section) return { ok: false, error: 'Section invalide.' };
+    this.memo.update((doc) =>
+      doc?.sections ? { ...doc, sections: doc.sections.map((s, i) => (i === index ? { ...section, imageUrl: s.imageUrl } : s)) } : doc,
+    );
     return { ok: true, result: this.memo() ?? undefined };
   }
 
-  updateMemoField<K extends keyof MemoDoc>(field: K, value: MemoDoc[K]) {
-    this.memo.update((doc) => (doc ? { ...doc, [field]: value } : doc));
-  }
-
-  addMemoCard(card?: Partial<MemoCard>) {
-    this.memo.update((doc) => {
-      if (!doc) return doc;
-      const newCard: MemoCard = {
-        id: 'card-' + Date.now(),
-        label: card?.label || 'Nouveau concept',
-        definition: card?.definition || 'Définition du concept...',
-        examples: card?.examples?.length ? card.examples : ['Exemple 1'],
-        icon: card?.icon || 'star',
-        color: card?.color || 'emerald',
-      };
-      return { ...doc, cards: [...doc.cards, newCard] };
-    });
-  }
-
-  removeMemoCard(cardId: string) {
-    this.memo.update((doc) => {
-      if (!doc) return doc;
-      return { ...doc, cards: doc.cards.filter((c) => c.id !== cardId) };
-    });
-  }
-
-  addMemoStep(step?: Partial<MemoStep>) {
-    this.memo.update((doc) => {
-      if (!doc) return doc;
-      const nextN = doc.steps.length + 1;
-      const newStep: MemoStep = {
-        n: step?.n ?? nextN,
-        heading: step?.heading || `Étape ${nextN}`,
-        body: step?.body || 'Description de la démarche...',
-      };
-      return { ...doc, steps: [...doc.steps, newStep] };
-    });
-  }
-
-  removeMemoStep(index: number) {
-    this.memo.update((doc) => {
-      if (!doc) return doc;
-      const updatedSteps = doc.steps
-        .filter((_, i) => i !== index)
-        .map((s, idx) => ({ ...s, n: idx + 1 }));
-      return { ...doc, steps: updatedSteps };
-    });
+  /** Replaces the whole section list (edit, picture add/remove). */
+  setMemoSections(sections: SummarySection[]) {
+    this.memo.update((doc) => (doc ? { ...doc, sections } : doc));
   }
 
   async saveMemo(payload: {
     memoDoc: MemoDoc;
-    memoLayout: MemoLayout;
     authorName?: string;
     authorRole?: 'teacher' | 'parent' | 'ai' | 'community';
     school?: string;
@@ -1313,6 +1264,7 @@ export class EducationStore {
         headers: await this.firebase.getAuthHeaders(),
         body: JSON.stringify({
           docType: 'memo',
+          memoLayout: 'document',
           ...payload,
         }),
       });
@@ -1332,7 +1284,6 @@ export class EducationStore {
     id: string;
     docType: 'memo';
     memoDoc: MemoDoc;
-    memoLayout: MemoLayout;
     authorName?: string;
     authorRole?: string;
     school?: string;
@@ -1351,12 +1302,12 @@ export class EducationStore {
     return null;
   }
 
-  async exportMemoDocx(memo: MemoDoc, authorName?: string, school?: string): Promise<Blob | null> {
+  async exportMemoDocx(memo: MemoDoc, authorName?: string, school?: string, teacherCopy = false): Promise<Blob | null> {
     try {
       const res = await fetch('/api/memo/export-docx', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ memo, authorName, school }),
+        body: JSON.stringify({ memo, authorName, school, teacherCopy }),
       });
       if (!res.ok) return null;
       return await res.blob();

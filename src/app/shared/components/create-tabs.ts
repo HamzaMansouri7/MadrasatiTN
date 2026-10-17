@@ -23,7 +23,7 @@ export const CREATE_TABS: CreateTab[] = [
     match: (p, q) => p === '/ai-studio' && q.get('tab') !== 'memo',
   },
   {
-    key: 'memo', icon: 'note_alt', fr: 'Synthèse', ar: 'ملخّص',
+    key: 'memo', icon: 'note_alt', fr: 'Fiche de révision', ar: 'ملف مراجعة',
     path: '/ai-studio', query: { tab: 'memo' },
     match: (p, q) => p === '/ai-studio' && q.get('tab') === 'memo',
   },

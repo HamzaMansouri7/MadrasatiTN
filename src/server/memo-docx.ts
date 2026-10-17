@@ -12,453 +12,136 @@ import {
   BorderStyle,
   ShadingType,
 } from 'docx';
-import { MemoDoc } from '../app/core/models/memo.model.js';
+import { MemoDoc, SummarySection } from '../app/core/models/memo.model.js';
+import { normalizeSummary, summarySections } from '../app/core/utils/summary.util.js';
 
-export async function generateMemoDocx(memo: MemoDoc, authorName?: string, school?: string): Promise<Buffer> {
-  const isAr = memo.language === 'ar';
+const INK = '14251D';
+const GREEN = '1B4332';
+const BODY = '2D3748';
+
+/** Word copy of the revision document: same sections, top to bottom. Answers only on the teacher copy. */
+export async function generateMemoDocx(
+  memo: MemoDoc,
+  authorName?: string,
+  school?: string,
+  teacherCopy = false,
+): Promise<Buffer> {
+  const doc = normalizeSummary(memo) ?? memo;
+  const isAr = doc.language !== 'fr';
   const alignment = isAr ? AlignmentType.RIGHT : AlignmentType.LEFT;
   const dirBidi = isAr ? { bidirectional: true } : {};
+  const font = isAr ? 'Noto Kufi Arabic' : 'Outfit';
+  const t = (fr: string, ar: string) => (isAr ? ar : fr);
 
-  const emeraldBorder = {
-    top: { style: BorderStyle.SINGLE, size: 6, color: '1B4332' },
-    bottom: { style: BorderStyle.SINGLE, size: 6, color: '1B4332' },
-    left: { style: BorderStyle.SINGLE, size: 6, color: '1B4332' },
-    right: { style: BorderStyle.SINGLE, size: 6, color: '1B4332' },
-  };
+  const border = { style: BorderStyle.SINGLE, size: 6, color: GREEN };
+  const cellBorders = { top: border, bottom: border, left: border, right: border };
 
-  const children: (Paragraph | Table)[] = [];
-
-  // 1. Header Block
-  children.push(
+  const para = (text: string, opts: { bold?: boolean; size?: number; color?: string; italics?: boolean; after?: number; before?: number } = {}) =>
     new Paragraph({
       alignment,
       ...dirBidi,
-      spacing: { after: 120 },
+      spacing: { before: opts.before ?? 0, after: opts.after ?? 80 },
       children: [
-        new TextRun({
-          text: `${memo.grade} · ${memo.subject}`,
-          size: 20,
-          bold: true,
-          color: '2D6A4F',
-          font: isAr ? 'Noto Kufi Arabic' : 'Outfit',
-        }),
+        new TextRun({ text, bold: opts.bold, italics: opts.italics, size: opts.size ?? 22, color: opts.color ?? BODY, font }),
       ],
-    }),
+    });
+
+  const labelled = (label: string, text: string) =>
+    new Paragraph({
+      alignment,
+      ...dirBidi,
+      spacing: { after: 80 },
+      children: [
+        new TextRun({ text: `${label} `, bold: true, size: 22, color: INK, font }),
+        new TextRun({ text, size: 22, color: BODY, font }),
+      ],
+    });
+
+  const cell = (text: string, header = false) =>
+    new TableCell({
+      borders: cellBorders,
+      shading: header ? { fill: GREEN, type: ShadingType.CLEAR } : undefined,
+      children: [para(text, { bold: header, color: header ? 'FFFFFF' : BODY, size: 20, after: 40 })],
+    });
+
+  const table = (rows: string[][]) =>
+    new Table({
+      width: { size: 100, type: WidthType.PERCENTAGE },
+      visuallyRightToLeft: isAr,
+      rows: rows.map((r, i) => new TableRow({ children: r.map((c) => cell(c, i === 0)) })),
+    });
+
+  const children: (Paragraph | Table)[] = [];
+
+  children.push(
+    para(`${doc.grade} · ${doc.subject}${doc.trimester ? ` · ${doc.trimester}` : ''}`, { bold: true, size: 20, color: '2D6A4F', after: 120 }),
     new Paragraph({
       alignment,
       heading: HeadingLevel.HEADING_1,
       ...dirBidi,
       spacing: { after: 100 },
-      children: [
-        new TextRun({
-          text: memo.title || memo.topic,
-          size: 36,
-          bold: true,
-          color: '14251D',
-          font: isAr ? 'Noto Kufi Arabic' : 'Fraunces',
-        }),
-      ],
+      children: [new TextRun({ text: doc.title || doc.topic, size: 36, bold: true, color: INK, font: isAr ? font : 'Fraunces' })],
     }),
   );
+  if (doc.subtitle) children.push(para(doc.subtitle, { italics: true, color: '406343', after: 160 }));
+  if (doc.objective) children.push(labelled(t('Objectif :', 'الهدف :'), doc.objective));
 
-  if (memo.subtitle) {
-    children.push(
-      new Paragraph({
-        alignment,
-        ...dirBidi,
-        spacing: { after: 240 },
-        children: [
-          new TextRun({
-            text: memo.subtitle,
-            size: 22,
-            italics: true,
-            color: '406343',
-            font: isAr ? 'Noto Kufi Arabic' : 'Outfit',
-          }),
-        ],
-      }),
-    );
-  }
-
-  // 2. Steps Section
-  if (Array.isArray(memo.steps) && memo.steps.length > 0) {
-    children.push(
-      new Paragraph({
-        alignment,
-        heading: HeadingLevel.HEADING_2,
-        ...dirBidi,
-        spacing: { before: 200, after: 120 },
-        children: [
-          new TextRun({
-            text: isAr ? '📌 خطواتي خطوة بخطوة' : '📌 Ma méthode pas à pas',
-            size: 26,
-            bold: true,
-            color: '1B4332',
-          }),
-        ],
-      }),
-    );
-
-    for (const step of memo.steps) {
-      children.push(
-        new Paragraph({
-          alignment,
-          ...dirBidi,
-          spacing: { after: 80 },
-          children: [
-            new TextRun({
-              text: `${step.n}. ${step.heading} : `,
-              bold: true,
-              size: 22,
-              color: '14251D',
-            }),
-            new TextRun({
-              text: step.body,
-              size: 22,
-              color: '2D3748',
-            }),
-          ],
-        }),
-      );
-    }
-  }
-
-  // 3. Concepts Cards Section
-  if (Array.isArray(memo.cards) && memo.cards.length > 0) {
-    children.push(
-      new Paragraph({
-        alignment,
-        heading: HeadingLevel.HEADING_2,
-        ...dirBidi,
-        spacing: { before: 240, after: 140 },
-        children: [
-          new TextRun({
-            text: isAr ? '💡 المفاهيم الأساسية' : '💡 Concepts clés',
-            size: 26,
-            bold: true,
-            color: '1B4332',
-          }),
-        ],
-      }),
-    );
-
-    const tableRows: TableRow[] = [
-      new TableRow({
-        children: [
-          new TableCell({
-            width: { size: 30, type: WidthType.PERCENTAGE },
-            shading: { fill: '1B4332', type: ShadingType.CLEAR },
-            children: [
-              new Paragraph({
-                alignment: AlignmentType.CENTER,
-                children: [
-                  new TextRun({
-                    text: isAr ? 'المفهوم' : 'Concept',
-                    bold: true,
-                    color: 'FFFFFF',
-                    size: 20,
-                  }),
-                ],
-              }),
-            ],
-          }),
-          new TableCell({
-            width: { size: 70, type: WidthType.PERCENTAGE },
-            shading: { fill: '1B4332', type: ShadingType.CLEAR },
-            children: [
-              new Paragraph({
-                alignment: AlignmentType.CENTER,
-                children: [
-                  new TextRun({
-                    text: isAr ? 'الشرح والأمثلة' : 'Définition & Exemples',
-                    bold: true,
-                    color: 'FFFFFF',
-                    size: 20,
-                  }),
-                ],
-              }),
-            ],
-          }),
-        ],
-      }),
-    ];
-
-    for (const card of memo.cards) {
-      const examplesText = Array.isArray(card.examples) ? card.examples.join(' · ') : '';
-      tableRows.push(
-        new TableRow({
-          children: [
-            new TableCell({
-              borders: emeraldBorder,
-              shading: { fill: 'FBF8F1', type: ShadingType.CLEAR },
-              children: [
-                new Paragraph({
-                  alignment,
-                  ...dirBidi,
-                  children: [new TextRun({ text: card.label, bold: true, size: 22, color: '14251D' })],
-                }),
-              ],
-            }),
-            new TableCell({
-              borders: emeraldBorder,
-              children: [
-                new Paragraph({
-                  alignment,
-                  ...dirBidi,
-                  spacing: { after: 40 },
-                  children: [new TextRun({ text: card.definition, size: 20, color: '2D3748' })],
-                }),
-                ...(examplesText
-                  ? [
-                      new Paragraph({
-                        alignment,
-                        ...dirBidi,
-                        children: [
-                          new TextRun({
-                            text: `${isAr ? 'أمثلة : ' : 'Exemples : '}${examplesText}`,
-                            size: 18,
-                            italics: true,
-                            color: '2D6A4F',
-                          }),
-                        ],
-                      }),
-                    ]
-                  : []),
-              ],
-            }),
-          ],
-        }),
-      );
-    }
-
-    children.push(
-      new Table({
-        width: { size: 100, type: WidthType.PERCENTAGE },
-        rows: tableRows,
-      }),
-    );
-  }
-
-  // 4. Example and Analysis
-  if (memo.example && memo.example.sentence) {
+  summarySections(doc).forEach((s: SummarySection, i) => {
     children.push(
       new Paragraph({
         alignment,
         heading: HeadingLevel.HEADING_2,
         ...dirBidi,
         spacing: { before: 240, after: 120 },
-        children: [
-          new TextRun({
-            text: isAr ? '🔍 مثال تطبيقي وتحليل' : '🔍 Exemple type analysé',
-            size: 26,
-            bold: true,
-            color: '1B4332',
-          }),
-        ],
-      }),
-      new Paragraph({
-        alignment,
-        ...dirBidi,
-        spacing: { after: 120 },
-        children: [
-          new TextRun({
-            text: `« ${memo.example.sentence} »`,
-            size: 24,
-            bold: true,
-            color: '14251D',
-          }),
-        ],
+        children: [new TextRun({ text: `${i + 1}. ${s.heading}`, size: 26, bold: true, color: GREEN, font })],
       }),
     );
 
-    if (Array.isArray(memo.example.analysis) && memo.example.analysis.length > 0) {
-      const analysisRows: TableRow[] = [
-        new TableRow({
-          children: [
-            new TableCell({
-              width: { size: 40, type: WidthType.PERCENTAGE },
-              shading: { fill: 'E7DFCF', type: ShadingType.CLEAR },
-              children: [
-                new Paragraph({
-                  alignment: AlignmentType.CENTER,
-                  children: [new TextRun({ text: isAr ? 'الكلمة / الجزء' : 'Élément', bold: true, size: 20 })],
-                }),
-              ],
-            }),
-            new TableCell({
-              width: { size: 60, type: WidthType.PERCENTAGE },
-              shading: { fill: 'E7DFCF', type: ShadingType.CLEAR },
-              children: [
-                new Paragraph({
-                  alignment: AlignmentType.CENTER,
-                  children: [new TextRun({ text: isAr ? 'الوظيفة الإعرابية' : 'Fonction / Rôle', bold: true, size: 20 })],
-                }),
-              ],
-            }),
-          ],
-        }),
-      ];
+    if (s.text) {
+      children.push(s.type === 'example' ? labelled(t('Énoncé :', 'المعطى :'), s.text) : para(s.text));
+    }
+    for (const item of s.items ?? []) children.push(para(`• ${item}`));
+    for (const step of s.steps ?? []) labelledPush(`${step.n}. ${step.heading}${step.body ? ' :' : ''}`, step.body);
+    if (s.solution) children.push(labelled(t('Solution :', 'الحلّ :'), s.solution));
 
-      for (const item of memo.example.analysis) {
-        analysisRows.push(
-          new TableRow({
-            children: [
-              new TableCell({
-                borders: emeraldBorder,
-                children: [
-                  new Paragraph({
-                    alignment,
-                    ...dirBidi,
-                    children: [new TextRun({ text: item.word, bold: true, size: 20, color: '14251D' })],
-                  }),
-                ],
-              }),
-              new TableCell({
-                borders: emeraldBorder,
-                children: [
-                  new Paragraph({
-                    alignment,
-                    ...dirBidi,
-                    children: [new TextRun({ text: item.role, size: 20, color: '2D6A4F' })],
-                  }),
-                ],
-              }),
-            ],
-          }),
-        );
-      }
-
+    if (s.table?.rows?.length) {
+      const headers = s.table.headers?.length ? s.table.headers : ['', ...s.table.rows[0].cells.map(() => '')];
+      children.push(table([headers, ...s.table.rows.map((r) => [r.label, ...r.cells])]));
+    }
+    if (s.conjugation?.rows?.length) {
+      const c = s.conjugation;
+      if (c.verb || c.tense) children.push(para([c.verb, c.tense].filter(Boolean).join(' — '), { bold: true, color: INK }));
+      const withExample = c.rows.some((r) => r.example);
       children.push(
-        new Table({
-          width: { size: 100, type: WidthType.PERCENTAGE },
-          rows: analysisRows,
-        }),
+        table([
+          [t('Pronom', 'الضمير'), t('Forme', 'الصيغة'), ...(withExample ? [t('Exemple', 'مثال')] : [])],
+          ...c.rows.map((r) => [r.pronoun, r.form, ...(withExample ? [r.example ?? ''] : [])]),
+        ]),
       );
     }
+    for (const ev of s.timeline ?? []) labelledPush(`${ev.stepOrDate} — ${ev.title}${ev.description ? ' :' : ''}`, ev.description);
+
+    (s.exercises ?? []).forEach((ex, n) => {
+      children.push(labelled(`${n + 1}.`, ex.question));
+      if (teacherCopy && ex.answer) children.push(para(`${t('Réponse :', 'الإجابة :')} ${ex.answer}`, { italics: true, color: '2D6A4F' }));
+      else children.push(para('……………………………………………………………………', { color: '999999' }));
+    });
+  });
+
+  function labelledPush(label: string, text: string) {
+    children.push(text ? labelled(label, text) : para(label, { bold: true, color: INK }));
   }
 
-  // 5. Formula Section
-  if (memo.formula && Array.isArray(memo.formula.parts) && memo.formula.parts.length > 0) {
-    children.push(
-      new Paragraph({
-        alignment,
-        ...dirBidi,
-        spacing: { before: 200, after: 80 },
-        children: [
-          new TextRun({
-            text: isAr ? '📐 القاعدة المختصرة : ' : '📐 Règle synthétique : ',
-            bold: true,
-            size: 22,
-            color: '8A5A00',
-          }),
-          new TextRun({
-            text: memo.formula.parts.join(' '),
-            bold: true,
-            size: 22,
-            color: '14251D',
-          }),
-        ],
-      }),
-    );
-    if (memo.formula.note) {
-      children.push(
-        new Paragraph({
-          alignment,
-          ...dirBidi,
-          spacing: { after: 120 },
-          children: [
-            new TextRun({
-              text: `ℹ️ ${memo.formula.note}`,
-              italics: true,
-              size: 20,
-              color: '555555',
-            }),
-          ],
-        }),
-      );
-    }
-  }
-
-  // 6. Remember / Incontournables
-  if (Array.isArray(memo.remember) && memo.remember.length > 0) {
-    children.push(
-      new Paragraph({
-        alignment,
-        heading: HeadingLevel.HEADING_2,
-        ...dirBidi,
-        spacing: { before: 200, after: 100 },
-        children: [
-          new TextRun({
-            text: isAr ? '⭐ قواعد لا أنساها' : '⭐ À ne pas oublier !',
-            size: 24,
-            bold: true,
-            color: '8A5A00',
-          }),
-        ],
-      }),
-    );
-
-    for (const rule of memo.remember) {
-      children.push(
-        new Paragraph({
-          alignment,
-          ...dirBidi,
-          spacing: { after: 60 },
-          children: [
-            new TextRun({
-              text: `✔ ${rule}`,
-              size: 20,
-              color: '14251D',
-            }),
-          ],
-        }),
-      );
-    }
-  }
-
-  // 7. Quote
-  if (memo.quote) {
-    children.push(
-      new Paragraph({
-        alignment: AlignmentType.CENTER,
-        spacing: { before: 200, after: 120 },
-        children: [
-          new TextRun({
-            text: `💬 « ${memo.quote} »`,
-            size: 20,
-            italics: true,
-            color: '406343',
-          }),
-        ],
-      }),
-    );
-  }
-
-  // 8. Teacher Attribution & Footer
   const author = authorName || 'Enseignant Madrasati TN';
   const schoolName = school || 'المدرسة الابتدائية التونسية';
   children.push(
     new Paragraph({
       alignment: AlignmentType.CENTER,
-      spacing: { before: 240, after: 60 },
-      children: [
-        new TextRun({
-          text: `──────────────────────────────────────────────\nMadrasati TN · ${author} · ${schoolName}`,
-          size: 16,
-          color: '888888',
-        }),
-      ],
+      spacing: { before: 320, after: 60 },
+      children: [new TextRun({ text: `Madrasati TN · ${author} · ${schoolName}`, size: 16, color: '888888', font })],
     }),
   );
 
-  const doc = new Document({
-    sections: [
-      {
-        properties: {},
-        children,
-      },
-    ],
-  });
-
-  return await Packer.toBuffer(doc);
+  const out = new Document({ sections: [{ properties: {}, children }] });
+  return await Packer.toBuffer(out);
 }

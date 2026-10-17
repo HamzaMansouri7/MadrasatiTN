@@ -67,12 +67,12 @@ export const memoRouter = Router();
 // Word (.docx) export for visual memo
 memoRouter.post('/export-docx', originGuard, uploadRateLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
-    const { memo, authorName, school } = req.body;
+    const { memo, authorName, school, teacherCopy } = req.body;
     if (!memo || typeof memo !== 'object' || !memo.title) {
       res.status(400).json({ error: 'Contenu de la fiche mémo requis.' });
       return;
     }
-    const buffer = await generateMemoDocx(memo, authorName, school);
+    const buffer = await generateMemoDocx(memo, authorName, school, teacherCopy === true);
     const filename = `memo-${encodeURIComponent((memo.topic || memo.title || 'cours').replace(/\s+/g, '_'))}.docx`;
     res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
     res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);

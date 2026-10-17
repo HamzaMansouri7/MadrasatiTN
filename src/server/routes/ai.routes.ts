@@ -1,9 +1,11 @@
 import { Router, Request, Response } from "express";
 import { randomUUID } from "node:crypto";
+import { existsSync } from "node:fs";
 import mammoth from "mammoth";
 import { GoogleGenAI, Type } from "@google/genai";
 import { retrieveContext } from "../knowledge-source";
-import { BLOCK_SCHEMAS } from "../memo-schema";
+import { SUMMARY_ONE_SECTION_SCHEMA } from "../memo-schema";
+import { normalizeSummary, normalizeSummarySection } from "../../app/core/utils/summary.util";
 import { resolveLang, langRule } from "../lang";
 import { checkExercise } from "../post-checks";
 import { runChain } from "../ai/chain";
@@ -809,12 +811,14 @@ aiRouter.post(
         grade,
         subject,
         trimester,
-        targetBlocks = 5,
         language,
         sourceFiles,
         teacherNotes,
         existingMemo,
         userInstruction,
+        length,
+        withPractice,
+        sectionIndex,
       } = req.body;
 
       if (!aiReady()) {
@@ -850,16 +854,27 @@ aiRouter.post(
         }
       }
 
+      // Regenerating one section: the current document must come with it.
+      const current = typeof sectionIndex === "number" ? normalizeSummary(existingMemo) : null;
+      const target = current?.sections?.[sectionIndex as number];
+      if (typeof sectionIndex === "number" && !target) {
+        res.status(400).json({ error: "Section introuvable." });
+        return;
+      }
+
       const prompt = compose(memoSkill, {
         topic,
         grade: resolvedGrade,
         subject: resolvedSubject,
         trimester: resolvedTrimester,
         lang,
-        targetBlocks,
-        teacherNotes,
-        existingMemo,
-        userInstruction,
+        length: length === "full" ? ("full" as const) : ("short" as const),
+        withPractice: withPractice !== false,
+        teacherNotes: typeof teacherNotes === "string" ? capText(teacherNotes, 8000) : undefined,
+        userInstruction: typeof userInstruction === "string" ? capText(userInstruction, 1000) : undefined,
+        sectionToRegenerate: target
+          ? { index: sectionIndex as number, type: target.type, heading: target.heading, document: current }
+          : undefined,
         contextBlockStr: contextBlock({
           topicId: safeTopicId(topicId),
           grade: resolvedGrade,
@@ -874,12 +889,14 @@ aiRouter.post(
       if (Array.isArray(sourceFiles)) {
         for (const f of sourceFiles.slice(0, 6)) {
           if (!f) continue;
-          if (typeof f.url === "string" && f.url.startsWith("/uploads/")) {
+          if (typeof f.url === "string" && (f.url.startsWith("/uploads/") || f.url.startsWith("/assets/resources/"))) {
             try {
-              const fsPath = resolveInside(
-                process.env["UPLOAD_DIR"] || "uploads",
-                f.url.slice("/uploads/".length),
-              );
+              const fromAssets = f.url.startsWith("/assets/resources/");
+              const fsPath = fromAssets
+                ? [resolveInside("public", f.url.slice(1)), resolveInside("dist/app/browser", f.url.slice(1))].find(
+                    (candidate) => candidate && existsSync(candidate),
+                  )
+                : resolveInside(process.env["UPLOAD_DIR"] || "uploads", f.url.slice("/uploads/".length));
               if (!fsPath) continue;
               const buffer = await (
                 await import("node:fs/promises")
@@ -888,7 +905,9 @@ aiRouter.post(
                 ? "image/png"
                 : f.url.endsWith(".pdf")
                   ? "application/pdf"
-                  : "image/jpeg";
+                  : f.url.endsWith(".webp")
+                    ? "image/webp"
+                    : "image/jpeg";
               parts.push({
                 inlineData: {
                   mimeType: mime,
@@ -915,36 +934,50 @@ aiRouter.post(
       }
       parts.push({ text: prompt });
 
-      const data = await aiGenerateJSON(
-        memoSkill.chain,
-        parts,
-        memoSkill.schema,
-        memoSkill.temperature,
-      );
-
-      const doc = (data["memoDoc"] || data) as Record<string, unknown>;
-      if (!doc["grade"] && resolvedGrade) doc["grade"] = resolvedGrade;
-      if (!doc["subject"] && resolvedSubject) doc["subject"] = resolvedSubject;
-      if (!doc["trimester"] && resolvedTrimester)
-        doc["trimester"] = resolvedTrimester;
-
-      if (Array.isArray(doc["blocks"])) {
-        for (const block of doc["blocks"] as Record<string, unknown>[]) {
-          const type = String(block["type"] || "");
-          if (
-            type &&
-            type in BLOCK_SCHEMAS &&
-            typeof block["data"] !== "object"
-          ) {
-            block["data"] = {};
-          }
+      if (target) {
+        const data = await aiGenerateJSON(memoSkill.chain, parts, SUMMARY_ONE_SECTION_SCHEMA, memoSkill.temperature);
+        const section = normalizeSummarySection({ ...(data["section"] as Record<string, unknown>), type: target.type });
+        if (!section) {
+          res.status(502).json({ error: "Section invalide, veuillez réessayer." });
+          return;
         }
+        res.json({ success: true, section, sectionIndex });
+        return;
+      }
+
+      const generateOnce = (extra = "") =>
+        aiGenerateJSON(
+          memoSkill.chain,
+          extra ? [...parts.slice(0, -1), { text: `${prompt}${extra}` }] : parts,
+          memoSkill.schema,
+          memoSkill.temperature,
+        );
+      const withMeta = (raw: Record<string, unknown>) => ({
+        ...raw,
+        grade: resolvedGrade || raw["grade"],
+        subject: resolvedSubject || raw["subject"],
+        trimester: resolvedTrimester || raw["trimester"],
+        topic: topic || raw["topic"],
+        length: length === "full" ? ("full" as const) : ("short" as const),
+      });
+      let raw = await generateOnce();
+      let doc = normalizeSummary(withMeta(raw));
+      if (!doc) {
+        console.warn("[generate-memo] unusable answer", JSON.stringify(raw).slice(0, 600));
+        raw = await generateOnce(
+          `\n\nCORRECTION OBLIGATOIRE : ta réponse précédente était inutilisable. Donne un "title" et au moins 4 sections complètes.`,
+        );
+        doc = normalizeSummary(withMeta(raw));
+      }
+      if (!doc) {
+        res.status(502).json({ error: "Fiche de révision invalide, veuillez réessayer." });
+        return;
       }
 
       res.json({
         success: true,
         memoDoc: doc,
-        appliedLayout: data["suggestedLayout"] || "tree",
+        extractedText: typeof raw["extractedText"] === "string" ? raw["extractedText"] : undefined,
       });
       return;
     } catch (err: unknown) {

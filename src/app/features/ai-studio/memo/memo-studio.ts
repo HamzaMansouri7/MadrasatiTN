@@ -7,6 +7,8 @@ import {
   inject,
   HostListener,
   OnInit,
+  ElementRef,
+  viewChild,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -17,19 +19,16 @@ import { FirebaseService } from '@core/services/firebase.service';
 import { StorageVaultService } from '@core/services/storage-vault.service';
 import { createStudioSession } from '@core/services/studio-session';
 import { downscaleImage } from '@core/utils/image.util';
-import { MemoDoc, MemoInput, MemoLayout } from '@core/models/memo.model';
+import { MemoDoc, MemoInput, SummaryLength } from '@core/models/memo.model';
+import { SUMMARY_MAX_IMAGES, summarySections } from '@core/utils/summary.util';
 import { CurriculumChapter } from '@core/data/curriculum-chapters.data';
 import { chapterTitle } from '@core/utils/curriculum.util';
 import { TopicPickerComponent } from '@shared/components/topic-picker';
 import { StudioSessionBannerComponent } from '@shared/components/studio-session-banner';
-import {
-  MemoTreeLayoutComponent,
-  MemoStepsLayoutComponent,
-  MemoCardsLayoutComponent,
-  MemoTimelineLayoutComponent,
-  MemoTableLayoutComponent,
-  MemoConjugationLayoutComponent,
-} from './layouts';
+import { SummaryDocumentComponent } from './summary-document';
+
+type SourceTab = 'topic' | 'text' | 'photo' | 'file' | 'library';
+type MemoPanel = 'source' | 'settings' | 'options';
 
 interface LibraryResourceItem {
   id: string;
@@ -47,183 +46,110 @@ interface LibraryResourceItem {
     FormsModule,
     TopicPickerComponent,
     StudioSessionBannerComponent,
-    MemoTreeLayoutComponent,
-    MemoStepsLayoutComponent,
-    MemoCardsLayoutComponent,
-    MemoTimelineLayoutComponent,
-    MemoTableLayoutComponent,
-    MemoConjugationLayoutComponent,
+    SummaryDocumentComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="text-[#14251D] pb-16">
 
-      @if (savedAuthorName() || (state() === 'done' && store.memo())) {
-        <div class="no-print w-full pb-5 flex flex-wrap items-center justify-between gap-4">
-          <p class="text-sm text-[#5B6B60]">
-            @if (savedAuthorName()) {
-              <span class="font-semibold text-[#14251D]">{{ savedAuthorName() }}</span>
-              @if (savedSchool()) {
-                <span class="ms-2">{{ savedSchool() }}</span>
-              }
-            }
-          </p>
-
-          @if (state() === 'done' && store.memo()) {
-            <button
-              type="button"
-              (click)="resetToNew()"
-              class="bg-white hover:bg-[#F2ECDE] text-[#14251D] font-semibold px-5 min-h-11 rounded-xl text-sm border border-[#E7DFCF] transition-colors cursor-pointer flex items-center gap-2"
-            >
-              <span class="material-icons text-base" aria-hidden="true">add</span>
-              {{ lang.t('memoBtnNew') }}
-            </button>
-          }
-        </div>
-      }
-
       <!-- Main Container -->
       <main id="memo-main" class="w-full space-y-5 scroll-mt-4">
+        <!-- Studio bar: same as the infographic studio, Cartouche tokens -->
+        <div class="no-print bg-[#14251D] text-[#FBF8F1] rounded-2xl px-5 py-3">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="inline-flex items-center gap-1 bg-[#F2C14E] text-[#14251D] text-[11px] font-semibold px-2.5 py-0.5 rounded-full whitespace-nowrap">
+                  <span class="material-icons text-xs" aria-hidden="true">note_alt</span>
+                  {{ lang.tr('Fiche de révision', 'ملف مراجعة') }}
+                </span>
+                <span class="text-xs text-[#B7C7BC] whitespace-nowrap">{{ lang.translateGrade(store.memo()?.grade || grade()) }}</span>
+                <span class="text-xs text-[#B7C7BC] whitespace-nowrap">{{ lang.translateSubject(store.memo()?.subject || subject()) }}</span>
+                <span class="text-xs text-[#9DBBA8] inline-flex items-center gap-1.5 whitespace-nowrap" aria-live="polite">
+                  <span class="w-1.5 h-1.5 rounded-full" [class]="busy() ? 'bg-[#F2C14E] animate-pulse' : 'bg-[#9DBBA8]'"></span>
+                  {{ busy() ? lang.tr('Génération en cours', 'جارٍ التوليد') : isSaved() ? lang.tr('Enregistré', 'تم الحفظ') : lang.tr('Prêt', 'جاهز') }}
+                </span>
+              </div>
+              <h1 dir="auto" class="font-display text-lg sm:text-xl font-semibold mt-0.5 truncate max-w-[70vw] lg:max-w-xl">
+                {{ store.memo()?.title || topic() || lang.tr('Nouvelle fiche de révision', 'ملف مراجعة جديد') }}
+              </h1>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2">
+              @if (state() === 'done' && store.memo()) {
+                <label class="flex items-center gap-2 px-3 min-h-11 rounded-xl border border-[#FBF8F1]/20 bg-[#FBF8F1]/10 text-sm font-semibold cursor-pointer">
+                  <input type="checkbox" [checked]="teacherCopy()" (change)="teacherCopy.set($any($event.target).checked)" class="w-4 h-4 accent-[#F2C14E]" />
+                  {{ lang.tr('Copie enseignant', 'نسخة المعلّم') }}
+                </label>
+                <button type="button" (click)="saveMemo()" [disabled]="isSaving()" [attr.aria-label]="lang.t('memoBtnSave')" class="bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 border border-[#FBF8F1]/20 min-h-11 rounded-xl text-sm font-semibold flex items-center gap-1.5 cursor-pointer transition-colors text-[#FBF8F1] disabled:opacity-50 disabled:cursor-default px-3.5">
+                  <span class="material-icons text-base" aria-hidden="true">{{ isSaved() ? 'bookmark_added' : 'bookmark_add' }}</span>
+                  <span class="hidden sm:inline">{{ isSaved() ? lang.t('memoBtnSaved') : lang.t('memoBtnSave') }}</span>
+                </button>
+                <button type="button" (click)="copyShareLink()" [attr.aria-label]="lang.t('memoBtnShare')" class="bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 border border-[#FBF8F1]/20 min-h-11 rounded-xl text-sm font-semibold flex items-center gap-1.5 cursor-pointer transition-colors text-[#FBF8F1] disabled:opacity-50 disabled:cursor-default px-3.5">
+                  <span class="material-icons text-base" aria-hidden="true">link</span>
+                  <span class="hidden sm:inline">{{ shareCopied() ? lang.tr('Lien copié', 'تم نسخ الرابط') : lang.t('memoBtnShare') }}</span>
+                </button>
+                <button type="button" (click)="downloadDocx()" [disabled]="isExportingWord()" [attr.aria-label]="lang.t('memoBtnDocx')" class="bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 border border-[#FBF8F1]/20 min-h-11 rounded-xl text-sm font-semibold flex items-center gap-1.5 cursor-pointer transition-colors text-[#FBF8F1] disabled:opacity-50 disabled:cursor-default px-3.5">
+                  <span class="material-icons text-base" aria-hidden="true">description</span>
+                  <span class="hidden sm:inline">{{ isExportingWord() ? lang.tr('Export…', 'جارٍ التصدير…') : lang.t('memoBtnDocx') }}</span>
+                </button>
+              } @else {
+                <div role="group" [attr.aria-label]="lang.tr('Panneau en haut', 'اللوحة في الأعلى')" class="flex items-center gap-1 p-1 rounded-xl border border-[#FBF8F1]/20 bg-[#FBF8F1]/10">
+                  @for (panel of panels; track panel.id) {
+                    <button
+                      type="button"
+                      (click)="topPanel.set(panel.id)"
+                      [attr.aria-pressed]="topPanel() === panel.id"
+                      [attr.aria-label]="lang.tr(panel.fr, panel.ar)"
+                      [class]="topPanel() === panel.id ? 'bg-[#FBF8F1] text-[#14251D]' : 'text-[#FBF8F1] hover:bg-[#FBF8F1]/15'"
+                      class="px-3 min-h-9 rounded-lg text-sm font-semibold flex items-center gap-1.5 cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#F2C14E]">
+                      <span class="material-icons text-base" aria-hidden="true">{{ panel.icon }}</span>
+                      <span class="hidden md:inline">{{ lang.tr(panel.fr, panel.ar) }}</span>
+                    </button>
+                  }
+                </div>
+              }
+              <button type="button" (click)="generateMemo()" [disabled]="busy() || !store.memo()" class="bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 border border-[#FBF8F1]/20 min-h-11 rounded-xl text-sm font-semibold flex items-center gap-1.5 cursor-pointer transition-colors text-[#FBF8F1] disabled:opacity-50 disabled:cursor-default px-4">
+                <span class="material-icons text-base" [class.animate-spin]="busy()" aria-hidden="true">refresh</span>
+                {{ lang.tr('Régénérer', 'إعادة التوليد') }}
+              </button>
+              <button type="button" (click)="startNew()" [attr.aria-label]="lang.tr('Créer un nouveau', 'مشروع جديد')" class="bg-[#FBF8F1]/10 hover:bg-[#FBF8F1]/20 border border-[#FBF8F1]/20 min-h-11 rounded-xl text-sm font-semibold flex items-center gap-1.5 cursor-pointer transition-colors text-[#FBF8F1] disabled:opacity-50 disabled:cursor-default px-3.5">
+                <span class="material-icons text-base" aria-hidden="true">add_circle_outline</span>
+                <span class="hidden sm:inline">{{ lang.tr('Nouveau', 'جديد') }}</span>
+              </button>
+              @if (state() === 'done' && store.memo()) {
+                <button type="button" (click)="printMemo()" class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#14251D] px-4 min-h-11 rounded-xl text-sm font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
+                  <span class="material-icons text-base" aria-hidden="true">print</span>
+                  {{ lang.t('memoBtnPrint') }}
+                </button>
+              }
+            </div>
+          </div>
+        </div>
+
         <app-studio-session-banner [session]="session" />
 
         <!-- INPUT FORM VIEW (When idle / analyzing / error) -->
         @if (state() !== 'done') {
-          <div class="no-print grid lg:grid-cols-[minmax(0,1fr)_minmax(24rem,34rem)] gap-8 items-start">
-          <div class="bg-white rounded-lg border border-[#E7DFCF] p-5 sm:p-6 space-y-6" [attr.inert]="session.busy() ? '' : null" [attr.aria-busy]="session.busy()">
+          <div class="no-print grid lg:grid-cols-2 gap-8 items-start">
+          <div class="flex flex-col gap-5" [attr.inert]="session.busy() ? '' : null" [attr.aria-busy]="session.busy()">
             
-            <!-- Mode Switcher Tabs -->
-            <div role="tablist" class="border-b border-[#E7DFCF] flex flex-wrap gap-x-1">
-              <button
-                type="button"
-                role="tab"
-                [attr.aria-selected]="activeTab() === 'topic'"
-                (click)="activeTab.set('topic')"
-                [class]="activeTab() === 'topic' ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                class="px-4 min-h-11 text-sm font-semibold cursor-pointer transition-colors border-b-2 -mb-px"
-              >
-                {{ lang.t('memoTabTopic') }}
-              </button>
-              <button
-                type="button"
-                role="tab"
-                [attr.aria-selected]="activeTab() === 'text'"
-                (click)="activeTab.set('text')"
-                [class]="activeTab() === 'text' ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                class="px-4 min-h-11 text-sm font-semibold cursor-pointer transition-colors border-b-2 -mb-px"
-              >
-                {{ lang.t('memoTabText') }}
-              </button>
-              <button
-                type="button"
-                role="tab"
-                [attr.aria-selected]="activeTab() === 'photo'"
-                (click)="activeTab.set('photo')"
-                [class]="activeTab() === 'photo' ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                class="px-4 min-h-11 text-sm font-semibold cursor-pointer transition-colors border-b-2 -mb-px"
-              >
-                {{ lang.t('memoTabPhoto') }}
-              </button>
-              <button
-                type="button"
-                role="tab"
-                [attr.aria-selected]="activeTab() === 'file'"
-                (click)="activeTab.set('file')"
-                [class]="activeTab() === 'file' ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                class="px-4 min-h-11 text-sm font-semibold cursor-pointer transition-colors border-b-2 -mb-px"
-              >
-                {{ lang.t('memoTabFile') }}
-              </button>
-              <button
-                type="button"
-                role="tab"
-                [attr.aria-selected]="activeTab() === 'library'"
-                (click)="activeTab.set('library')"
-                [class]="activeTab() === 'library' ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                class="px-4 min-h-11 text-sm font-semibold cursor-pointer transition-colors border-b-2 -mb-px"
-              >
-                {{ lang.t('memoTabLibrary') }}
-              </button>
+            <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4 sm:p-5 space-y-5" [style.order]="panelOrder('source')">
+            <legend class="font-display font-semibold text-sm text-[#14251D] mb-3">{{ lang.tr('Source', 'المصدر') }}</legend>
+            <div role="tablist" [attr.aria-label]="lang.tr('Source du cours', 'مصدر الدرس')" class="flex flex-wrap gap-1 p-1 rounded-xl border border-[#E7DFCF] bg-[#FBF8F1]">
+              @for (tab of sourceTabs; track tab.id) {
+                <button
+                  type="button"
+                  role="tab"
+                  [attr.aria-selected]="activeTab() === tab.id"
+                  (click)="activeTab.set(tab.id)"
+                  [class]="activeTab() === tab.id ? 'bg-[#14251D] text-[#FBF8F1]' : 'text-[#5B6B60] hover:bg-[#F2ECDE] hover:text-[#14251D]'"
+                  class="px-3 min-h-10 rounded-lg text-sm font-semibold flex items-center gap-1.5 cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                  <span class="material-icons text-base" aria-hidden="true">{{ tab.icon }}</span>
+                  {{ lang.t(tab.key) }}
+                </button>
+              }
             </div>
-
-            <!-- Metadata Pickers (Grade / Subject / Trimester / Language) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="memo-grade-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoGradeLabel') }}</label>
-                <select
-                  id="memo-grade-select"
-                  [(ngModel)]="grade"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
-                >
-                  <option value="1ère Année">1ère Année (السنة الأولى)</option>
-                  <option value="2ème Année">2ème Année (السنة الثانية)</option>
-                  <option value="3ème Année">3ème Année (السنة الثالثة)</option>
-                  <option value="4ème Année">4ème Année (السنة الرابعة)</option>
-                  <option value="5ème Année">5ème Année (السنة الخامسة)</option>
-                  <option value="6ème Année">6ème Année (السنة السادسة)</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="memo-subject-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoSubjectLabel') }}</label>
-                <select
-                  id="memo-subject-select"
-                  [(ngModel)]="subject"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
-                >
-                  <option value="Français">Français (اللغة الفرنسية)</option>
-                  <option value="اللغة العربية">اللغة العربية (Arabe)</option>
-                  <option value="Mathématiques">Mathématiques (الرياضيات)</option>
-                  <option value="الإيقاظ العلمي">الإيقاظ العلمي (Éveil Scientifique)</option>
-                  <option value="Histoire & Géo">التاريخ والجغرافيا (Histoire & Géo)</option>
-                  <option value="Éducation Islamique">التربية الإسلامية</option>
-                  <option value="Anglais">Anglais (الإنجليزية)</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="memo-trimester-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoTrimesterLabel') }}</label>
-                <select
-                  id="memo-trimester-select"
-                  [(ngModel)]="trimester"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
-                >
-                  <option value="Trimestre 1">Trimestre 1 (الثلاثي الأول)</option>
-                  <option value="Trimestre 2">Trimestre 2 (الثلاثي الثاني)</option>
-                  <option value="Trimestre 3">Trimestre 3 (الثلاثي الثالث)</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="memo-lang-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoLanguageLabel') }}</label>
-                <select
-                  id="memo-lang-select"
-                  [(ngModel)]="language"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
-                >
-                  <option value="ar">العربية (Arabe standard)</option>
-                  <option value="fr">Français (Langue française)</option>
-                </select>
-              </div>
-            </div>
-
-            <!-- Visual model chooser: picked before generating, shown live in the preview -->
-            <fieldset class="space-y-2">
-              <legend class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.tr('Modèle visuel', 'النموذج البصري') }}</legend>
-              <div class="grid grid-cols-3 sm:grid-cols-6 gap-2">
-                @for (opt of layoutOptions; track opt.key) {
-                  <button
-                    type="button"
-                    (click)="setLayout(opt.key)"
-                    [attr.aria-pressed]="store.memoLayout() === opt.key"
-                    [class]="store.memoLayout() === opt.key ? 'border-[#2D6A4F] bg-[#F3FAFD] text-[#14251D]' : 'border-[#E7DFCF] bg-white text-[#5B6B60] hover:border-[#CBD9E2]'"
-                    class="border rounded-md px-1.5 py-2 min-h-11 text-xs font-medium flex flex-col items-center justify-center gap-1 text-center cursor-pointer transition-colors"
-                  >
-                    <span class="material-icons text-lg" aria-hidden="true">{{ opt.icon }}</span>
-                    <span class="leading-tight">{{ lang.t(opt.label) }}</span>
-                  </button>
-                }
-              </div>
-            </fieldset>
 
             <!-- TAB 1: Topic Input -->
             @if (activeTab() === 'topic') {
@@ -395,6 +321,101 @@ interface LibraryResourceItem {
               />
             </div>
 
+            </fieldset>
+
+            <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4 sm:p-5 space-y-5" [style.order]="panelOrder('settings')">
+            <legend class="font-display font-semibold text-sm text-[#14251D] mb-3">{{ lang.tr('Paramètres', 'الإعدادات') }}</legend>
+            <!-- Metadata Pickers (Grade / Subject / Trimester / Language) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="memo-grade-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoGradeLabel') }}</label>
+                <select
+                  id="memo-grade-select"
+                  [(ngModel)]="grade"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                >
+                  <option value="1ère Année">1ère Année (السنة الأولى)</option>
+                  <option value="2ème Année">2ème Année (السنة الثانية)</option>
+                  <option value="3ème Année">3ème Année (السنة الثالثة)</option>
+                  <option value="4ème Année">4ème Année (السنة الرابعة)</option>
+                  <option value="5ème Année">5ème Année (السنة الخامسة)</option>
+                  <option value="6ème Année">6ème Année (السنة السادسة)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="memo-subject-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoSubjectLabel') }}</label>
+                <select
+                  id="memo-subject-select"
+                  [(ngModel)]="subject"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                >
+                  <option value="Français">Français (اللغة الفرنسية)</option>
+                  <option value="اللغة العربية">اللغة العربية (Arabe)</option>
+                  <option value="Mathématiques">Mathématiques (الرياضيات)</option>
+                  <option value="الإيقاظ العلمي">الإيقاظ العلمي (Éveil Scientifique)</option>
+                  <option value="Histoire & Géo">التاريخ والجغرافيا (Histoire & Géo)</option>
+                  <option value="Éducation Islamique">التربية الإسلامية</option>
+                  <option value="Anglais">Anglais (الإنجليزية)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="memo-trimester-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoTrimesterLabel') }}</label>
+                <select
+                  id="memo-trimester-select"
+                  [(ngModel)]="trimester"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                >
+                  <option value="Trimestre 1">Trimestre 1 (الثلاثي الأول)</option>
+                  <option value="Trimestre 2">Trimestre 2 (الثلاثي الثاني)</option>
+                  <option value="Trimestre 3">Trimestre 3 (الثلاثي الثالث)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="memo-lang-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoLanguageLabel') }}</label>
+                <select
+                  id="memo-lang-select"
+                  [(ngModel)]="language"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                >
+                  <option value="ar">العربية (Arabe standard)</option>
+                  <option value="fr">Français (Langue française)</option>
+                </select>
+              </div>
+            </div>
+
+            </fieldset>
+
+            <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4 sm:p-5 space-y-5" [style.order]="panelOrder('options')">
+            <legend class="font-display font-semibold text-sm text-[#14251D] mb-3">{{ lang.tr('Longueur et exercices', 'الطول والتمارين') }}</legend>
+            <!-- Document length and practice exercises -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <fieldset>
+                <legend class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.tr('Longueur', 'الطول') }}</legend>
+                <div class="grid grid-cols-2 gap-2">
+                  @for (opt of lengthOptions; track opt.key) {
+                    <button
+                      type="button"
+                      (click)="length.set(opt.key)"
+                      [attr.aria-pressed]="length() === opt.key"
+                      [class]="length() === opt.key ? 'border-[#2D6A4F] bg-[#F3FAFD] text-[#14251D]' : 'border-[#E7DFCF] bg-white text-[#5B6B60] hover:border-[#CBD9E2]'"
+                      class="border rounded-md px-2 min-h-11 text-sm font-medium cursor-pointer transition-colors">
+                      {{ lang.tr(opt.fr, opt.ar) }}
+                    </button>
+                  }
+                </div>
+              </fieldset>
+              <label class="flex items-center gap-3 self-end min-h-11 px-3 rounded-md border border-[#E7DFCF] bg-[#FBF8F1] cursor-pointer">
+                <input type="checkbox" [checked]="withPractice()" (change)="withPractice.set($any($event.target).checked)" class="w-4 h-4 accent-[#2D6A4F]" />
+                <span class="text-sm font-medium">{{ lang.tr('Avec exercices et corrigé', 'مع تمارين وإصلاحها') }}</span>
+              </label>
+            </div>
+
+            </fieldset>
+
+            <div class="space-y-3" style="order: 10">
             @if (missingSourceMessage(); as msg) {
               <p role="alert" class="text-sm font-medium text-[#BF5B34]">{{ msg }}</p>
             }
@@ -414,12 +435,13 @@ interface LibraryResourceItem {
                 }
               </button>
             </div>
+            </div>
 
           </div>
 
-          <aside class="lg:sticky lg:top-6" [attr.aria-label]="lang.tr('Aperçu de la fiche', 'معاينة البطاقة')">
-            <p class="text-sm font-semibold text-[#5B6B60] mb-2">{{ lang.tr('Aperçu de la fiche', 'معاينة البطاقة') }}</p>
-            <div class="relative bg-white border border-[#E7DFCF] rounded-md shadow-sm aspect-[210/297] lg:max-h-[calc(100vh-7rem)] w-full mx-auto overflow-hidden p-5 sm:p-6 flex flex-col">
+          <aside class="lg:sticky lg:top-6" [attr.aria-label]="lang.tr('Aperçu du document', 'معاينة الملف')">
+            <p class="text-sm font-semibold text-[#5B6B60] mb-2">{{ lang.tr('Aperçu du document', 'معاينة الملف') }}</p>
+            <div class="relative bg-white border border-[#E7DFCF] rounded-md shadow-sm aspect-[210/297] lg:max-h-[calc(100vh-7rem)] lg:max-w-[calc((100vh-7rem)*0.707)] w-full mx-auto overflow-hidden p-5 sm:p-6 flex flex-col">
               <div aria-hidden="true" class="absolute inset-0 flex items-center justify-center pointer-events-none select-none -rotate-45 font-display text-3xl font-semibold text-[#0B2947]/[0.07] text-center px-6">
                 {{ watermarkName() }}
               </div>
@@ -434,53 +456,14 @@ interface LibraryResourceItem {
                 </p>
               </div>
 
-              <div aria-hidden="true" class="relative flex-1">
-                @switch (store.memoLayout()) {
-                  @case ('tree') {
-                    <div class="h-full flex flex-col gap-3">
-                      <div class="rounded-sm bg-[#E8F5FC] border border-[#CBD9E2] h-12"></div>
-                      <div class="grid grid-cols-2 gap-3 flex-1">
-                        @for (i of [1, 2, 3, 4]; track i) {
-                          <div class="rounded-sm border border-[#E7DFCF] p-2 space-y-1.5"><div class="h-1.5 rounded-sm bg-[#E7DFCF] w-2/3"></div><div class="h-1.5 rounded-sm bg-[#E7DFCF]"></div><div class="h-1.5 rounded-sm bg-[#E7DFCF] w-1/2"></div></div>
-                        }
-                      </div>
-                    </div>
-                  }
-                  @case ('steps') {
-                    <div class="space-y-3">
-                      @for (i of [1, 2, 3, 4]; track i) {
-                        <div class="flex items-center gap-2"><div class="w-5 h-5 rounded-full bg-[#007CC2]/20 shrink-0"></div><div class="flex-1 space-y-1.5"><div class="h-1.5 rounded-sm bg-[#E7DFCF] w-1/2"></div><div class="h-1.5 rounded-sm bg-[#E7DFCF]"></div></div></div>
-                      }
-                    </div>
-                  }
-                  @case ('cards') {
-                    <div class="grid grid-cols-2 gap-3">
-                      @for (i of [1, 2, 3, 4]; track i) {
-                        <div class="rounded-sm border border-[#E7DFCF] border-t-2 border-t-[#007CC2] p-2 space-y-1.5 h-20"><div class="h-1.5 rounded-sm bg-[#E7DFCF] w-2/3"></div><div class="h-1.5 rounded-sm bg-[#E7DFCF]"></div><div class="h-1.5 rounded-sm bg-[#E7DFCF] w-1/2"></div></div>
-                      }
-                    </div>
-                  }
-                  @case ('timeline') {
-                    <div class="border-s-2 border-[#E7DFCF] ps-4 space-y-4 ms-2">
-                      @for (i of [1, 2, 3, 4]; track i) {
-                        <div class="relative"><div class="absolute -start-[1.4rem] top-0 w-2.5 h-2.5 rounded-full bg-[#007CC2]"></div><div class="space-y-1.5"><div class="h-1.5 rounded-sm bg-[#E7DFCF] w-1/3"></div><div class="h-1.5 rounded-sm bg-[#E7DFCF]"></div></div></div>
-                      }
-                    </div>
-                  }
-                  @case ('table') {
-                    <div class="grid grid-cols-3 border border-[#E7DFCF] rounded-sm">
-                      @for (i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; track i) {
-                        <div class="p-2 border-[#E7DFCF] border-b border-e" [class.bg-[#F3FAFD]]="i <= 3"><div class="h-1.5 rounded-sm bg-[#E7DFCF]"></div></div>
-                      }
-                    </div>
-                  }
-                  @case ('conjugation') {
-                    <div class="grid grid-cols-2 gap-x-3 gap-y-2">
-                      @for (i of [1, 2, 3, 4, 5, 6, 7, 8]; track i) {
-                        <div class="flex items-center gap-2"><div class="w-6 h-1.5 rounded-sm bg-[#E7DFCF]"></div><div class="h-1.5 rounded-sm bg-[#E7DFCF] flex-1"></div></div>
-                      }
-                    </div>
-                  }
+              <div aria-hidden="true" class="relative flex-1 space-y-4 overflow-hidden">
+                @for (i of previewSections(); track i) {
+                  <div class="space-y-1.5">
+                    <div class="flex items-center gap-2"><div class="w-4 h-4 rounded-full bg-[#2D6A4F]/25"></div><div class="h-2 rounded-sm bg-[#CBD9E2] w-1/3"></div></div>
+                    <div class="h-1.5 rounded-sm bg-[#E7DFCF]"></div>
+                    <div class="h-1.5 rounded-sm bg-[#E7DFCF] w-5/6"></div>
+                    <div class="h-1.5 rounded-sm bg-[#E7DFCF] w-2/3"></div>
+                  </div>
                 }
               </div>
 
@@ -497,127 +480,6 @@ interface LibraryResourceItem {
         @if (state() === 'done' && store.memo()) {
           <div class="space-y-6">
             
-            <!-- Toolbar: layout switcher + actions (hidden in print) -->
-            <div class="no-print bg-white p-4 rounded-lg border border-[#E7DFCF] flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
-              <div role="tablist" [attr.aria-label]="lang.tr('Modèle visuel', 'النموذج البصري')" class="flex flex-wrap items-center gap-x-1 border-b border-[#E7DFCF]">
-                <button
-                  type="button"
-                  role="tab"
-                  [attr.aria-selected]="store.memoLayout() === 'tree'"
-                  (click)="setLayout('tree')"
-                  [class]="store.memoLayout() === 'tree' ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                  class="px-3 min-h-11 text-sm font-semibold cursor-pointer transition-colors border-b-2 flex items-center gap-1.5"
-                >
-                  <span class="material-icons text-base" aria-hidden="true">account_tree</span>
-                  {{ lang.t('memoLayoutTree') }}
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  [attr.aria-selected]="store.memoLayout() === 'steps'"
-                  (click)="setLayout('steps')"
-                  [class]="store.memoLayout() === 'steps' ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                  class="px-3 min-h-11 text-sm font-semibold cursor-pointer transition-colors border-b-2 flex items-center gap-1.5"
-                >
-                  <span class="material-icons text-base" aria-hidden="true">format_list_numbered</span>
-                  {{ lang.t('memoLayoutSteps') }}
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  [attr.aria-selected]="store.memoLayout() === 'cards'"
-                  (click)="setLayout('cards')"
-                  [class]="store.memoLayout() === 'cards' ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                  class="px-3 min-h-11 text-sm font-semibold cursor-pointer transition-colors border-b-2 flex items-center gap-1.5"
-                >
-                  <span class="material-icons text-base" aria-hidden="true">view_agenda</span>
-                  {{ lang.t('memoLayoutCards') }}
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  [attr.aria-selected]="store.memoLayout() === 'timeline'"
-                  (click)="setLayout('timeline')"
-                  [class]="store.memoLayout() === 'timeline' ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                  class="px-3 min-h-11 text-sm font-semibold cursor-pointer transition-colors border-b-2 flex items-center gap-1.5"
-                >
-                  <span class="material-icons text-base" aria-hidden="true">timeline</span>
-                  {{ lang.t('memoLayoutTimeline') }}
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  [attr.aria-selected]="store.memoLayout() === 'table'"
-                  (click)="setLayout('table')"
-                  [class]="store.memoLayout() === 'table' ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                  class="px-3 min-h-11 text-sm font-semibold cursor-pointer transition-colors border-b-2 flex items-center gap-1.5"
-                >
-                  <span class="material-icons text-base" aria-hidden="true">table_chart</span>
-                  {{ lang.t('memoLayoutTable') }}
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  [attr.aria-selected]="store.memoLayout() === 'conjugation'"
-                  (click)="setLayout('conjugation')"
-                  [class]="store.memoLayout() === 'conjugation' ? 'text-[#1B4332] border-[#2D6A4F]' : 'text-[#5B6B60] hover:text-[#14251D] border-transparent'"
-                  class="px-3 min-h-11 text-sm font-semibold cursor-pointer transition-colors border-b-2 flex items-center gap-1.5"
-                >
-                  <span class="material-icons text-base" aria-hidden="true">edit_note</span>
-                  {{ lang.t('memoLayoutConjugation') }}
-                </button>
-              </div>
-
-              <div class="flex flex-wrap items-center gap-2">
-                <button
-                  type="button"
-                  (click)="saveMemo()"
-                  [disabled]="isSaving()"
-                  class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium px-4 min-h-11 rounded-md text-sm border border-[#E7DFCF] transition-colors cursor-pointer flex items-center gap-2 disabled:opacity-50"
-                >
-                  <span class="material-icons text-base" aria-hidden="true">{{ isSaved() ? 'bookmark_added' : 'bookmark_add' }}</span>
-                  {{ isSaved() ? lang.t('memoBtnSaved') : lang.t('memoBtnSave') }}
-                </button>
-
-                <button
-                  type="button"
-                  (click)="copyShareLink()"
-                  class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium px-4 min-h-11 rounded-md text-sm border border-[#E7DFCF] transition-colors cursor-pointer flex items-center gap-2 disabled:opacity-50"
-                >
-                  <span class="material-icons text-base" aria-hidden="true">link</span>
-                  {{ shareCopied() ? lang.tr('Lien copié', 'تم نسخ الرابط') : lang.t('memoBtnShare') }}
-                </button>
-
-                <button
-                  type="button"
-                  (click)="downloadDocx()"
-                  [disabled]="isExportingWord()"
-                  class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium px-4 min-h-11 rounded-md text-sm border border-[#E7DFCF] transition-colors cursor-pointer flex items-center gap-2 disabled:opacity-50"
-                >
-                  <span class="material-icons text-base" aria-hidden="true">description</span>
-                  {{ isExportingWord() ? lang.tr('Export…', 'جارٍ التصدير…') : lang.t('memoBtnDocx') }}
-                </button>
-
-                <button
-                  type="button"
-                  (click)="resetMemoStudio()"
-                  class="bg-[#FBF8F1] hover:bg-[#F2ECDE] text-[#4A5A50] font-medium px-4 min-h-11 rounded-md text-sm border border-[#E7DFCF] transition-colors cursor-pointer flex items-center gap-1.5"
-                >
-                  <span class="material-icons text-base" aria-hidden="true">add_circle_outline</span>
-                  {{ lang.tr('Nouveau', 'جديد') }}
-                </button>
-
-                <button
-                  type="button"
-                  (click)="printMemo()"
-                  class="bg-[#2D6A4F] hover:bg-[#1B4332] text-[#FBF8F1] font-semibold px-5 min-h-11 rounded-md text-sm transition-colors cursor-pointer flex items-center gap-2 shadow-sm"
-                >
-                  <span class="material-icons text-base" aria-hidden="true">print</span>
-                  {{ lang.t('memoBtnPrint') }}
-                </button>
-              </div>
-            </div>
-
             <!-- Optional Extracted Text Inspection Step (for photo/file modes) -->
             @if (extractedText()) {
               <div class="no-print bg-[#FBF8F1] p-4 rounded-lg border border-[#E7DFCF] space-y-2">
@@ -640,28 +502,18 @@ interface LibraryResourceItem {
               </div>
             }
 
-            <!-- Render Selected Layout -->
+            <!-- Revision document -->
             <div class="print-document">
-              @switch (store.memoLayout()) {
-                @case ('tree') {
-                  <app-memo-tree-layout [memo]="store.memo()!" />
-                }
-                @case ('steps') {
-                  <app-memo-steps-layout [memo]="store.memo()!" />
-                }
-                @case ('cards') {
-                  <app-memo-cards-layout [memo]="store.memo()!" />
-                }
-                @case ('timeline') {
-                  <app-memo-timeline-layout [memo]="store.memo()!" />
-                }
-                @case ('table') {
-                  <app-memo-table-layout [memo]="store.memo()!" />
-                }
-                @case ('conjugation') {
-                  <app-memo-conjugation-layout [memo]="store.memo()!" />
-                }
-              }
+              <app-summary-document
+                [memo]="store.memo()!"
+                [author]="savedAuthorName() || watermarkName()"
+                [editable]="true"
+                [busyIndex]="busySection()"
+                [teacherCopy]="teacherCopy()"
+                (regenerate)="regenerateSection($event)"
+                (addPicture)="pickPicture($event)"
+                (removePicture)="removePicture($event)" />
+              <input #pictureInput type="file" accept="image/*" class="hidden" (change)="onPictureSelected($event)" />
             </div>
 
           </div>
@@ -677,7 +529,21 @@ export class MemoStudioComponent implements OnInit {
   readonly firebase = inject(FirebaseService);
   private readonly route = inject(ActivatedRoute);
 
-  readonly activeTab = signal<'topic' | 'text' | 'photo' | 'file' | 'library'>('topic');
+  readonly activeTab = signal<SourceTab>('topic');
+  readonly sourceTabs: { id: SourceTab; icon: string; key: string }[] = [
+    { id: 'topic', icon: 'menu_book', key: 'memoTabTopic' },
+    { id: 'text', icon: 'notes', key: 'memoTabText' },
+    { id: 'photo', icon: 'photo_camera', key: 'memoTabPhoto' },
+    { id: 'file', icon: 'upload_file', key: 'memoTabFile' },
+    { id: 'library', icon: 'auto_stories', key: 'memoTabLibrary' },
+  ];
+  readonly panels: { id: MemoPanel; icon: string; fr: string; ar: string }[] = [
+    { id: 'source', icon: 'source', fr: 'Source', ar: 'المصدر' },
+    { id: 'settings', icon: 'tune', fr: 'Paramètres', ar: 'الإعدادات' },
+    { id: 'options', icon: 'checklist', fr: 'Longueur et exercices', ar: 'الطول والتمارين' },
+  ];
+  /** Form card shown first; the others keep their usual order below it. */
+  readonly topPanel = signal<MemoPanel>('source');
   readonly state = signal<'idle' | 'analyzing' | 'done' | 'error'>('idle');
   readonly errorMessage = signal<string>('');
   private readonly vault = inject(StorageVaultService);
@@ -685,7 +551,7 @@ export class MemoStudioComponent implements OnInit {
   readonly session = createStudioSession<MemoDraft>('memo', {
     restore: (draft) => this.applyDraft(draft),
     retry: () => void this.generateMemo(),
-    undo: (previous) => this.applyResult(previous as { memo: MemoDoc; layout: MemoLayout }),
+    undo: (previous) => this.applyResult(previous as { memo: MemoDoc }),
   });
 
   readonly topic = signal<string>('');
@@ -703,14 +569,20 @@ export class MemoStudioComponent implements OnInit {
   readonly resourceUrl = signal<string>('');
   readonly extractedText = signal<string>('');
 
-  readonly layoutOptions: { key: MemoLayout; label: string; icon: string }[] = [
-    { key: 'tree', label: 'memoLayoutTree', icon: 'account_tree' },
-    { key: 'steps', label: 'memoLayoutSteps', icon: 'format_list_numbered' },
-    { key: 'cards', label: 'memoLayoutCards', icon: 'view_agenda' },
-    { key: 'timeline', label: 'memoLayoutTimeline', icon: 'timeline' },
-    { key: 'table', label: 'memoLayoutTable', icon: 'table_chart' },
-    { key: 'conjugation', label: 'memoLayoutConjugation', icon: 'edit_note' },
+  readonly length = signal<SummaryLength>('short');
+  readonly withPractice = signal<boolean>(true);
+  readonly teacherCopy = signal<boolean>(false);
+  /** 1-based index of the section being rewritten, 0 = none. */
+  readonly busySection = signal<number>(0);
+  readonly busy = computed(() => this.state() === 'analyzing' || this.busySection() > 0);
+  private pictureTarget = -1;
+  private readonly pictureInput = viewChild<ElementRef<HTMLInputElement>>('pictureInput');
+
+  readonly lengthOptions: { key: SummaryLength; fr: string; ar: string }[] = [
+    { key: 'short', fr: 'Courte (1–2 pages)', ar: 'قصير (1–2 صفحة)' },
+    { key: 'full', fr: 'Complète (3–4 pages)', ar: 'كامل (3–4 صفحات)' },
   ];
+  readonly previewSections = computed(() => (this.length() === 'full' ? [1, 2, 3, 4, 5, 6] : [1, 2, 3, 4]));
 
   readonly watermarkName = computed(
     () => this.firebase.userProfile()?.displayName || this.lang.tr('Votre nom', 'اسمك'),
@@ -739,6 +611,8 @@ export class MemoStudioComponent implements OnInit {
     trimester: this.trimester(),
     language: this.language(),
     instructions: this.instructions(),
+    length: this.length(),
+    withPractice: this.withPractice(),
     images: this.images(),
     file: this.file(),
     resourceUrl: this.resourceUrl(),
@@ -772,14 +646,15 @@ export class MemoStudioComponent implements OnInit {
     this.trimester.set(d.trimester);
     this.language.set(d.language);
     this.instructions.set(d.instructions);
+    this.length.set(d.length ?? 'short');
+    this.withPractice.set(d.withPractice ?? true);
     this.images.set(d.images);
     this.file.set(d.file);
     this.resourceUrl.set(d.resourceUrl);
   }
 
-  private applyResult(r: { memo: MemoDoc; layout: MemoLayout }) {
+  private applyResult(r: { memo: MemoDoc }) {
     this.store.memo.set(r.memo);
-    this.store.memoLayout.set(r.layout);
     this.state.set('done');
   }
 
@@ -795,9 +670,6 @@ export class MemoStudioComponent implements OnInit {
         const loaded = await this.store.getMemo(memoId);
         if (loaded && loaded.memoDoc) {
           this.store.memo.set(loaded.memoDoc);
-          if (loaded.memoLayout) {
-            this.store.memoLayout.set(loaded.memoLayout);
-          }
           this.savedMemoId.set(loaded.id);
           this.savedAuthorName.set(loaded.authorName || null);
           this.savedSchool.set(loaded.school || null);
@@ -810,7 +682,6 @@ export class MemoStudioComponent implements OnInit {
       // Restore unsaved draft from IndexedDB on page reload
       const cached = await this.vault.getAsset<{
         memo: MemoDoc;
-        layout: MemoLayout;
         topic: string;
         grade: string;
         subject: string;
@@ -820,7 +691,6 @@ export class MemoStudioComponent implements OnInit {
 
       if (cached && cached.memo) {
         this.store.memo.set(cached.memo);
-        if (cached.layout) this.store.memoLayout.set(cached.layout);
         if (cached.topic) this.topic.set(cached.topic);
         if (cached.grade) this.grade.set(cached.grade);
         if (cached.subject) this.subject.set(cached.subject);
@@ -865,8 +735,13 @@ export class MemoStudioComponent implements OnInit {
     }
   }
 
-  setLayout(layout: MemoLayout) {
-    this.store.memoLayout.set(layout);
+  panelOrder(id: MemoPanel): number {
+    return id === this.topPanel() ? 0 : this.panels.findIndex((p) => p.id === id) + 1;
+  }
+
+  async startNew() {
+    await this.resetMemoStudio();
+    this.resetToNew();
   }
 
   resetToNew() {
@@ -896,7 +771,6 @@ export class MemoStudioComponent implements OnInit {
     const userProfile = this.firebase.userProfile();
     const payload = {
       memoDoc: memo,
-      memoLayout: this.store.memoLayout(),
       authorName: userProfile?.displayName || 'Enseignant Madrasati',
       authorRole: 'teacher' as const,
       school: userProfile?.school || 'المدرسة الابتدائية التونسية',
@@ -911,9 +785,9 @@ export class MemoStudioComponent implements OnInit {
       void this.session.clearDraft();
       this.savedAuthorName.set(payload.authorName);
       this.savedSchool.set(payload.school);
-      this.store.showToast(this.lang.tr('Fiche mémo enregistrée dans la bibliothèque !', 'تم حفظ المذكرة بنجاح!'), 'success');
+      this.store.showToast(this.lang.tr('Fiche de révision enregistrée !', 'تم حفظ ملف المراجعة!'), 'success');
     } else {
-      this.store.showToast(this.lang.tr('Erreur lors de l\'enregistrement', 'تعذر حفظ المذكرة'), 'error');
+      this.store.showToast(this.lang.tr('Erreur lors de l\'enregistrement', 'تعذر حفظ ملف المراجعة'), 'error');
     }
   }
 
@@ -929,7 +803,7 @@ export class MemoStudioComponent implements OnInit {
     if (url && navigator.clipboard) {
       await navigator.clipboard.writeText(url);
       this.shareCopied.set(true);
-      this.store.showToast(this.lang.tr('Lien de partage copié !', 'تم نسخ رابط المذكرة!'), 'success');
+      this.store.showToast(this.lang.tr('Lien de partage copié !', 'تم نسخ رابط ملف المراجعة!'), 'success');
       setTimeout(() => this.shareCopied.set(false), 3000);
     }
   }
@@ -943,14 +817,14 @@ export class MemoStudioComponent implements OnInit {
     const author = this.savedAuthorName() || userProfile?.displayName || 'Enseignant Madrasati';
     const school = this.savedSchool() || userProfile?.school || 'المدرسة الابتدائية التونسية';
 
-    const blob = await this.store.exportMemoDocx(memo, author, school);
+    const blob = await this.store.exportMemoDocx(memo, author, school, this.teacherCopy());
     this.isExportingWord.set(false);
 
     if (blob) {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `memo-${(memo.topic || memo.title || 'cours').replace(/\s+/g, '_')}.docx`;
+      a.download = `revision-${(memo.topic || memo.title || 'cours').replace(/\s+/g, '_')}.docx`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -1045,7 +919,6 @@ export class MemoStudioComponent implements OnInit {
     if (!valid) return;
 
     const previous = this.store.memo();
-    const previousLayout = this.store.memoLayout();
     this.state.set('analyzing');
     this.errorMessage.set('');
 
@@ -1071,6 +944,8 @@ export class MemoStudioComponent implements OnInit {
       images: this.images().length > 0 ? this.images() : undefined,
       file: this.file() ?? undefined,
       resourceUrl: this.resourceUrl() || undefined,
+      length: this.length(),
+      withPractice: this.withPractice(),
     };
 
     const res = await this.session.run(() => this.store.generateMemo(inputData));
@@ -1080,24 +955,102 @@ export class MemoStudioComponent implements OnInit {
     }
 
     if (res.ok) {
-      this.session.keepUndo(previous ? { memo: previous, layout: previousLayout } : null);
+      this.session.keepUndo(previous ? { memo: previous } : null);
       this.session.succeed({ scrollTo: 'memo-main' });
       this.state.set('done');
       this.isSaved.set(false);
       this.savedMemoId.set(null);
-      void this.vault.saveAsset('madrasati_draft_memo', {
-        memo: this.store.memo(),
-        layout: this.store.memoLayout(),
-        topic: this.topic(),
-        grade: this.grade(),
-        subject: this.subject(),
-        trimester: this.trimester(),
-        extractedText: this.extractedText(),
-      });
+      if (res.extractedText) this.extractedText.set(res.extractedText);
+      this.cacheDraft();
     } else {
       this.errorMessage.set(res.error || 'Erreur lors de la génération.');
       this.session.fail(res.error);
       this.state.set('error');
+    }
+  }
+
+  private cacheDraft() {
+    void this.vault.saveAsset('madrasati_draft_memo', {
+      memo: this.store.memo(),
+      topic: this.topic(),
+      grade: this.grade(),
+      subject: this.subject(),
+      trimester: this.trimester(),
+      extractedText: this.extractedText(),
+    });
+  }
+
+  async regenerateSection(index: number) {
+    if (this.busySection()) return;
+    this.busySection.set(index + 1);
+    const res = await this.store.regenerateMemoSection(index, this.instructions() || undefined);
+    this.busySection.set(0);
+    if (res.ok) {
+      this.isSaved.set(false);
+      this.cacheDraft();
+    } else {
+      this.store.showToast(res.error || this.lang.tr('Échec de la réécriture', 'تعذّرت إعادة الكتابة'), 'error');
+    }
+  }
+
+  /** Pictures are uploaded to the teacher's storage, so adding one needs an account. */
+  pickPicture(index: number) {
+    this.store.requireAccount(() => {
+      this.pictureTarget = index;
+      this.pictureInput()?.nativeElement.click();
+    });
+  }
+
+  async onPictureSelected(event: Event) {
+    const input = event.target as HTMLInputElement;
+    const f = input.files?.[0];
+    input.value = '';
+    const doc = this.store.memo();
+    if (!f || !doc || this.pictureTarget < 0) return;
+    const sections = summarySections(doc);
+    if (sections.filter((s) => s.imageUrl).length >= SUMMARY_MAX_IMAGES) return;
+    const url = await this.uploadWebp(f);
+    if (!url) {
+      this.store.showToast(this.lang.tr('Échec de l’envoi de l’image', 'تعذّر رفع الصورة'), 'error');
+      return;
+    }
+    this.store.setMemoSections(sections.map((s, i) => (i === this.pictureTarget ? { ...s, imageUrl: url } : s)));
+    this.isSaved.set(false);
+    this.cacheDraft();
+  }
+
+  removePicture(index: number) {
+    const doc = this.store.memo();
+    if (!doc) return;
+    this.store.setMemoSections(summarySections(doc).map((s, i) => (i === index ? { ...s, imageUrl: undefined } : s)));
+    this.isSaved.set(false);
+    this.cacheDraft();
+  }
+
+  /** Re-encodes to WebP (max 1600 px) and stores it under the teacher's uploads. */
+  private async uploadWebp(file: File): Promise<string | null> {
+    try {
+      const bitmap = await createImageBitmap(file);
+      const scale = Math.min(1, 1600 / Math.max(bitmap.width, bitmap.height));
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.round(bitmap.width * scale);
+      canvas.height = Math.round(bitmap.height * scale);
+      canvas.getContext('2d')?.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+      const res = await fetch('/api/upload', {
+        method: 'POST',
+        headers: await this.firebase.getAuthHeaders(),
+        body: JSON.stringify({
+          kind: 'courses',
+          fileName: `revision_${Date.now()}.webp`,
+          fileBase64: canvas.toDataURL('image/webp', 0.85),
+          mimeType: 'image/webp',
+        }),
+      });
+      if (!res.ok) return null;
+      const data = await res.json();
+      return (data.url as string) || null;
+    } catch {
+      return null;
     }
   }
 
@@ -1118,6 +1071,8 @@ interface MemoDraft {
   trimester: string;
   language: 'ar' | 'fr';
   instructions: string;
+  length?: SummaryLength;
+  withPractice?: boolean;
   images: { base64Data: string; contentType: string }[];
   file: { base64Data: string; contentType: string; filename: string } | null;
   resourceUrl: string;
