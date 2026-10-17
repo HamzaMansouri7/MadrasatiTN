@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, HostListener, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { createStudioSession, DRAFT_DOC_ID, EducationStore, LanguageService, Scene, SeriesDoc, SourceInput } from '@core';
+import { createStudioSession, DRAFT_DOC_ID, EducationStore, LanguageService, PRIMARY_GRADES, Scene, SeriesDoc, SourceInput, SubjectName } from '@core';
 import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
 
 @Component({
@@ -11,9 +11,9 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
   template: `
     <div class="w-full pb-16 space-y-5">
       <app-studio-bar
-        [badge]="lang.tr('Série illustrée', 'سلسلة مصورة')"
+        [badge]="lang.tr('قصة الدرس المصورة', 'قصة الدرس المصورة')"
         icon="auto_stories"
-        [heading]="(!isNew() && series()?.title) || lang.tr('Nouvelle série illustrée', 'سلسلة مصورة جديدة')"
+        [heading]="(!isNew() && series()?.title) || lang.tr('Nouvelle histoire de leçon', 'قصة درس مصورة جديدة')"
         [details]="isNew() ? [] : [series()?.grade ? lang.translateGrade(series()?.grade ?? '') : '', series()?.subject ? lang.translateSubject(series()?.subject ?? '') : '']"
         [status]="session.status()"
         [busy]="session.busy()"
@@ -27,9 +27,20 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
           </button>
         }
         @if (!isNew() && series() && approved()) {
+          <button
+            type="button"
+            (click)="showTeacherKey.set(!showTeacherKey())"
+            [class]="showTeacherKey() ? 'bg-[#2D6A4F] text-[#FBF8F1] px-3 py-1.5 rounded-xl border border-[#2D6A4F] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer' : barBtn">
+            <span class="material-icons text-base" aria-hidden="true">{{ showTeacherKey() ? 'visibility' : 'visibility_off' }}</span>
+            {{ showTeacherKey() ? lang.tr('Masquer le corrigé', 'إخفاء ورقة الإصلاح') : lang.tr('Afficher le corrigé', 'ورقة الإصلاح (للمعلم)') }}
+          </button>
+          <button type="button" (click)="openProjector()" [class]="barBtn">
+            <span class="material-icons text-base" aria-hidden="true">slideshow</span>
+            {{ lang.tr('Mode Projecteur', 'عرض العاكس الضوئي') }}
+          </button>
           <button type="button" (click)="printAll()" [class]="barBtn">
-            <span class="material-icons text-base" aria-hidden="true">print</span>
-            {{ lang.tr('Imprimer la série (A4)', 'طباعة السلسلة (A4)') }}
+            <span class="material-icons text-base" aria-hidden="true">picture_as_pdf</span>
+            {{ lang.tr('تحميل PDF (A4)', 'تحميل PDF (A4)') }}
           </button>
         }
         @if (!isNew()) {
@@ -46,36 +57,89 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
         @if (panelOpen()) {
           <aside id="studio-settings" class="no-print space-y-4 lg:sticky lg:top-4">
             <div class="px-1">
-              <h2 class="font-display font-semibold text-lg text-[#14251D]">{{ lang.tr('Contenu de la série', 'محتوى السلسلة') }}</h2>
-              <p class="text-sm text-[#5B6B60] mt-1">{{ lang.tr('Collez le texte de la leçon ou choisissez le sujet : le scénario vous sera proposé avant toute planche.', 'ألصق نص الدرس أو اختر الموضوع: يُقترح عليك السيناريو قبل كتابة أي لوحة.') }}</p>
+              <h2 class="font-display font-semibold text-lg text-[#14251D]">{{ lang.tr('قصة الدرس والأنشطة', 'قصة الدرس والأنشطة') }}</h2>
+              <p class="text-sm text-[#5B6B60] mt-1">{{ lang.tr('Collez le texte du cours ou de lecture (arabe, français, histoire) : le scénario vous sera proposé avant génération.', 'ألصق نص الدرس أو قراءة الكتاب المدرسي: يُقترح عليك السيناريو والأنشطة للموافقة أولاً.') }}</p>
             </div>
             <app-source-input
               [initialInput]="prefill()"
+              [allowedSubjects]="allowedSubjects"
               [busy]="session.busy()"
-              [submitLabel]="lang.tr('Générer', 'توليد')"
+              [submitLabel]="lang.tr('Générer la قصة الدرس', 'توليد قصة الدرس')"
               (draftChange)="session.saveDraft($event)"
               (submitSource)="generate($event)"></app-source-input>
           </aside>
         }
         <div id="series-sheet" class="min-w-0 space-y-6 scroll-mt-4">
           @if (isNew()) {
-            <!-- Empty storyboard: six numbered A4 panels, filled once the scenario is approved -->
-            <div class="no-print grid grid-cols-2 sm:grid-cols-3 gap-4">
-              @for (n of blankPanels; track n) {
-                <div class="aspect-[210/297] bg-white rounded-2xl border border-dashed border-[#E7DFCF] flex flex-col items-center justify-center gap-2 text-[#B7C7BC]">
-                  <span class="font-display font-semibold text-2xl">{{ n }}</span>
-                  <span class="text-xs text-[#6B7A70]">{{ lang.tr('Planche A4', 'لوحة A4') }}</span>
+            <!-- 3-step pedagogical onboarding hint: lesson -> scenes -> panels & activities -->
+            <div class="no-print bg-white rounded-[28px] border border-[#E7DFCF] p-6 sm:p-10 space-y-8" [attr.dir]="lang.isArabic() ? 'rtl' : 'ltr'">
+              <div class="max-w-xl space-y-2">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#2D6A4F]/10 text-[#2D6A4F]">
+                  <span class="material-icons text-sm">auto_stories</span>
+                  {{ lang.tr('قصة الدرس البيداغوجية', 'قصة الدرس البيداغوجية') }}
+                </span>
+                <h2 class="font-display font-bold text-2xl text-[#14251D]">
+                  {{ lang.tr('قصة الدرس في 3 خطوات', 'قصة الدرس في 3 خطوات : قصة + ورقة تمارين جاهزة') }}
+                </h2>
+                <p class="text-sm text-[#5B6B60] leading-relaxed">
+                  {{ lang.tr('حوّل نص القراءة أو درس التاريخ إلى قصة مصورة تفاعلية تنتهي بأنشطة وتمارين مطبوعة جاهزة للفصل.', 'حوّل نص القراءة أو درس التاريخ إلى قصة مصورة تفاعلية تنتهي بأنشطة وتمارين مطبوعة جاهزة للفصل.') }}
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <!-- Step 1 -->
+                <div class="bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF] p-5 space-y-3 relative overflow-hidden">
+                  <div class="w-10 h-10 rounded-xl bg-[#2D6A4F] text-white flex items-center justify-center font-display font-bold text-sm">
+                    1
+                  </div>
+                  <h3 class="font-display font-semibold text-base text-[#14251D]">
+                    {{ lang.tr('1. الدرس أو النص', '1. الدرس أو نص القراءة') }}
+                  </h3>
+                  <p class="text-xs text-[#5B6B60] leading-relaxed">
+                    {{ lang.tr('اختر الموضوع أو الصق نص القراءة الرسمي من الكتاب المدرسي CNP (عربية، فرنسية، تاريخ).', 'اختر الموضوع أو الصق نص القراءة الرسمي من الكتاب المدرسي CNP (عربية، فرنسية، تاريخ).') }}
+                  </p>
                 </div>
-              }
+
+                <!-- Step 2 -->
+                <div class="bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF] p-5 space-y-3 relative overflow-hidden">
+                  <div class="w-10 h-10 rounded-xl bg-[#14251D] text-white flex items-center justify-center font-display font-bold text-sm">
+                    2
+                  </div>
+                  <h3 class="font-display font-semibold text-base text-[#14251D]">
+                    {{ lang.tr('2. المشاهد والأحداث', '2. المشاهد والشخصيات') }}
+                  </h3>
+                  <p class="text-xs text-[#5B6B60] leading-relaxed">
+                    {{ lang.tr('يقترح الذكاء الاصطناعي تسلسلاً درامياً للمشاهد والشخصيات للمراجعة قبل إنشاء اللوحات.', 'يقترح الذكاء الاصطناعي تسلسلاً درامياً للمشاهد والشخصيات للمراجعة قبل إنشاء اللوحات.') }}
+                  </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF] p-5 space-y-3 relative overflow-hidden">
+                  <div class="w-10 h-10 rounded-xl bg-[#8A5A00] text-white flex items-center justify-center font-display font-bold text-sm">
+                    3
+                  </div>
+                  <h3 class="font-display font-semibold text-base text-[#14251D]">
+                    {{ lang.tr('3. اللوحات والأنشطة', '3. اللوحات والأنشطة الفصلية') }}
+                  </h3>
+                  <p class="text-xs text-[#5B6B60] leading-relaxed">
+                    {{ lang.tr('قصة مصورة كاملة + فقاعات حوارية + سؤال استيعاب تحت كل لوحة + تمرين ترتيب الأحداث + ورقة إصلاح.', 'قصة مصورة كاملة + فقاعات حوارية + سؤال استيعاب تحت كل لوحة + تمرين ترتيب الأحداث + ورقة إصلاح.') }}
+                  </p>
+                </div>
+              </div>
             </div>
           } @else if (series(); as s) {
             @if (!approved()) {
               <!-- Scene table: the teacher approves the plan before any panel is written -->
               <section class="bg-white rounded-[28px] border border-[#E7DFCF] p-5 sm:p-8 space-y-5 print:hidden" [attr.dir]="s.language === 'ar' ? 'rtl' : 'ltr'">
                 <div class="space-y-1">
-                  <h1 class="font-display font-semibold text-xl text-[#14251D]">{{ s.title }}</h1>
+                  <div class="flex items-center gap-2">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#2D6A4F]/10 text-[#2D6A4F]">
+                      {{ s.mode === 'history' ? lang.tr('Histoire', 'تاريخ') : lang.tr('Lecture / قصة الدرس', 'قراءة / قصة الدرس') }}
+                    </span>
+                    <h1 class="font-display font-semibold text-xl text-[#14251D]">{{ s.title }}</h1>
+                  </div>
                   <p class="text-sm text-[#5B6B60]">
-                    {{ lang.tr('Vérifiez le scénario : une planche A4 par ligne. Rien n’est écrit tant que vous n’approuvez pas.', 'راجع السيناريو: لوحة A4 لكل سطر. لن يُكتب شيء قبل موافقتك.') }}
+                    {{ lang.tr('Vérifiez le scénario : chaque ligne donne une planche A4 illustrée + une question de compréhension. Rien n’est écrit tant que vous n’approuvez pas.', 'راجع السيناريو: كل سطر يُنشئ لوحة A4 مصورة + سؤال استيعاب. لن يُكتب شيء قبل موافقتك.') }}
                   </p>
                 </div>
 
@@ -86,7 +150,7 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
                         <th scope="col" class="p-3 text-start font-semibold w-12">#</th>
                         <th scope="col" class="p-3 text-start font-semibold">{{ lang.tr('Titre', 'العنوان') }}</th>
                         <th scope="col" class="p-3 text-start font-semibold">{{ lang.tr('Événement', 'الحدث') }}</th>
-                        <th scope="col" class="p-3 text-start font-semibold w-24">{{ lang.tr('Date', 'التاريخ') }}</th>
+                        <th scope="col" class="p-3 text-start font-semibold">{{ lang.tr('Question d’activité', 'سؤال النشاط') }}</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -95,7 +159,7 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
                           <td class="p-3 font-mono text-xs text-[#5B6B60]">{{ sc.n }}</td>
                           <td class="p-3 font-semibold text-[#14251D]">{{ sc.title }}</td>
                           <td class="p-3 text-[#14251D]">{{ sc.event }}</td>
-                          <td class="p-3 font-mono text-xs text-[#8A5A00]">{{ sc.year || '—' }}</td>
+                          <td class="p-3 text-xs text-[#2D6A4F]">{{ sc.question || '—' }}</td>
                         </tr>
                       }
                     </tbody>
@@ -109,7 +173,7 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
                     (click)="generateAll()"
                     class="bg-[#2D6A4F] hover:bg-[#1B4332] disabled:opacity-60 text-[#FBF8F1] font-semibold px-5 min-h-11 rounded-xl text-sm flex items-center gap-2 transition-colors cursor-pointer">
                     <span class="material-icons text-base" [class.animate-spin]="busy()" aria-hidden="true">{{ busy() ? 'sync' : 'check' }}</span>
-                    <span>{{ busy() ? progressLabel() : lang.tr('Approuver et générer les planches', 'الموافقة وإنشاء اللوحات') }}</span>
+                    <span>{{ busy() ? progressLabel() : lang.tr('Approuver et générer les planches & activités', 'الموافقة وإنشاء اللوحات والتمارين') }}</span>
                   </button>
                   @if (error()) {
                     <p role="alert" class="text-sm text-[#BF5B34]">{{ error() }}</p>
@@ -121,7 +185,9 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
               <nav class="bg-white rounded-[28px] border border-[#E7DFCF] p-4 space-y-3 print:hidden" [attr.dir]="s.language === 'ar' ? 'rtl' : 'ltr'" [attr.aria-label]="lang.tr('Planches', 'اللوحات')">
                 <div class="flex items-center justify-between gap-3">
                   <h1 class="font-display font-semibold text-sm text-[#14251D]">{{ s.title }}</h1>
-                  <span class="text-xs text-[#5B6B60] font-mono">{{ activeSceneIndex() + 1 }} / {{ s.scenes.length }}</span>
+                  <span class="text-xs text-[#5B6B60] font-mono">
+                    {{ activeSceneIndex() < s.scenes.length ? (activeSceneIndex() + 1 + ' / ' + s.scenes.length) : lang.tr('Fiche d’activités', 'ورقة الأنشطة') }}
+                  </span>
                 </div>
                 <div class="flex items-center gap-2 overflow-x-auto pb-1">
                   @for (sc of s.scenes; track sc.n; let idx = $index) {
@@ -140,6 +206,18 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
                       }
                     </button>
                   }
+                  <!-- Activity Worksheet Tab Button -->
+                  <button
+                    type="button"
+                    (click)="activeSceneIndex.set(s.scenes.length)"
+                    [attr.aria-current]="activeSceneIndex() === s.scenes.length ? 'true' : null"
+                    [class]="activeSceneIndex() === s.scenes.length
+                      ? 'bg-[#2D6A4F] text-[#FBF8F1] border-[#2D6A4F]'
+                      : 'bg-[#FBF8F1] text-[#2D6A4F] border-[#2D6A4F]/30 hover:bg-[#F2ECDE]'"
+                    class="flex items-center gap-2 px-3.5 min-h-11 rounded-xl border text-xs font-bold whitespace-nowrap cursor-pointer transition-colors shrink-0">
+                    <span class="material-icons text-sm">format_list_numbered</span>
+                    <span>{{ lang.tr('تمرين: رتّب الأحداث', 'تمرين: رتّب الأحداث') }}</span>
+                  </button>
                 </div>
               </nav>
 
@@ -170,12 +248,14 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
                 </div>
               }
 
-              <!-- All panels stay in the DOM so the whole series prints; only the active one shows on screen -->
+              <!-- Panels: stay in DOM for print, active scene shown on screen -->
               @for (sc of s.scenes; track sc.n; let idx = $index) {
                 <div [class.hidden]="idx !== activeSceneIndex()" class="print:block">
                   <app-series-panel
                     [scene]="sc"
                     [seriesTitle]="s.title"
+                    [seriesMode]="s.mode ?? 'story'"
+                    [showAnswer]="showTeacherKey()"
                     [bible]="s.bible"
                     [author]="s.author ?? null"
                     [docLang]="s.language"
@@ -183,21 +263,168 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
                 </div>
               }
 
+              <!-- Phase 2 Activity Sheet: "رتّب الأحداث" -->
+              <div [class.hidden]="activeSceneIndex() !== s.scenes.length" class="print:block">
+                <article
+                  [attr.dir]="s.language === 'ar' ? 'rtl' : 'ltr'"
+                  [attr.lang]="s.language"
+                  class="print-sheet w-full max-w-[800px] mx-auto bg-white rounded-[28px] border border-[#E7DFCF] p-6 sm:p-10 space-y-6 shadow-sm min-h-[1050px] flex flex-col justify-between relative text-[#14251D]">
+
+                  <div class="space-y-6">
+                    <header class="border-b-2 border-[#14251D] pb-3.5 flex items-center justify-between gap-4">
+                      <div class="flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-xl bg-[#2D6A4F] text-[#FBF8F1] flex items-center justify-center font-display font-bold text-base">
+                          <span class="material-icons text-xl">format_list_numbered</span>
+                        </span>
+                        <div>
+                          <p class="text-xs text-[#5B6B60] font-semibold">{{ lang.tr('ورقة التمارين والأنشطة', 'ورقة التمارين والأنشطة') }} · {{ s.title }}</p>
+                          <h2 class="font-display font-semibold text-lg sm:text-xl text-[#14251D] tracking-tight">
+                            {{ lang.tr('Activité : Remets les événements dans l’ordre', 'نشاط القصة: رتّب أحداث النص') }}
+                          </h2>
+                        </div>
+                      </div>
+                      <span class="bg-[#2D6A4F]/10 text-[#2D6A4F] text-xs font-semibold px-3 py-1 rounded-full border border-[#2D6A4F]/20">
+                        {{ lang.tr('تمرين استيعاب', 'تمرين استيعاب') }}
+                      </span>
+                    </header>
+
+                    <!-- Instruction Card -->
+                    <div class="bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF] p-4 flex items-center gap-3 text-sm font-semibold text-[#14251D]">
+                      <span class="material-icons text-[#2D6A4F] text-xl">help_outline</span>
+                      <p>{{ lang.tr('رقّم المشاهد التالية من 1 إلى ' + s.scenes.length + ' حسب التسلسل الزمني لأحداث القصة:', 'رقّم المشاهد التالية من 1 إلى ' + s.scenes.length + ' حسب التسلسل الزمني لأحداث القصة:') }}</p>
+                    </div>
+
+                    <!-- Shuffled Panels Grid -->
+                    <div class="grid grid-cols-2 gap-4">
+                      @for (sc of shuffledScenes(); track sc.n; let i = $index) {
+                        <div class="bg-white rounded-2xl border border-[#E7DFCF] p-3.5 flex flex-col justify-between gap-3 shadow-xs">
+                          <div class="space-y-2">
+                            @if (sc.imageUrl) {
+                              <div class="aspect-16/10 rounded-xl overflow-hidden border border-[#E7DFCF] bg-[#FBF8F1]">
+                                <img [src]="sc.imageUrl" [alt]="sc.title" class="w-full h-full object-cover" />
+                              </div>
+                            } @else {
+                              <div class="aspect-16/10 rounded-xl border border-dashed border-[#E7DFCF] bg-[#FBF8F1] flex items-center justify-center text-xs text-[#5B6B60]">
+                                <span>{{ sc.title }}</span>
+                              </div>
+                            }
+                            <p class="text-xs font-medium text-[#14251D] line-clamp-2 leading-relaxed">{{ sc.event }}</p>
+                          </div>
+
+                          <!-- Answer Box -->
+                          <div class="pt-2 border-t border-[#E7DFCF] flex items-center justify-between">
+                            <span class="text-xs font-bold text-[#5B6B60]">{{ lang.tr('الترتيب:', 'الترتيب:') }}</span>
+                            <div class="w-10 h-10 rounded-xl border-2 border-dashed border-[#14251D] flex items-center justify-center font-bold text-base text-[#14251D]">
+                              @if (showTeacherKey()) {
+                                <span class="text-[#2D6A4F] font-mono">{{ sc.n }}</span>
+                              }
+                            </div>
+                          </div>
+                        </div>
+                      }
+                    </div>
+                  </div>
+
+                  <footer class="border-t border-[#14251D] pt-3 flex items-center justify-between gap-3 text-xs text-[#5B6B60]">
+                    <div>
+                      <span>{{ lang.tr('Plateforme Madrasati TN', 'منصة مدرستي تونس') }}</span>
+                    </div>
+                    <span class="font-mono">{{ s.scenes.length + 1 }} / {{ s.scenes.length + (showTeacherKey() ? 2 : 1) }} · Madrasati TN</span>
+                  </footer>
+                </article>
+              </div>
+
+              <!-- Phase 2: Teacher-only Answer Page (ورقة الإصلاح - دليل المعلم) -->
+              @if (showTeacherKey()) {
+                <div class="print:block">
+                  <article
+                    [attr.dir]="s.language === 'ar' ? 'rtl' : 'ltr'"
+                    [attr.lang]="s.language"
+                    class="print-sheet w-full max-w-[800px] mx-auto bg-white rounded-[28px] border-2 border-[#2D6A4F] p-6 sm:p-10 space-y-6 shadow-sm min-h-[1050px] flex flex-col justify-between relative text-[#14251D]">
+
+                    <div class="space-y-6">
+                      <header class="border-b-2 border-[#2D6A4F] pb-3.5 flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-3">
+                          <span class="w-10 h-10 rounded-xl bg-[#2D6A4F] text-white flex items-center justify-center font-display font-bold text-base">
+                            <span class="material-icons text-xl">fact_check</span>
+                          </span>
+                          <div>
+                            <p class="text-xs text-[#2D6A4F] font-bold">{{ lang.tr('وثيقة المعلم (خاص بالإطار التربوي)', 'وثيقة المعلم (خاص بالإطار التربوي)') }}</p>
+                            <h2 class="font-display font-semibold text-lg sm:text-xl text-[#14251D] tracking-tight">
+                              {{ lang.tr('Corrigé type : قصة الدرس والأنشطة', 'ورقة الإصلاح النموذجية : قصة الدرس والأنشطة') }}
+                            </h2>
+                          </div>
+                        </div>
+                        <span class="bg-[#2D6A4F] text-white text-xs font-bold px-3 py-1 rounded-full">
+                          {{ lang.tr('دليل المعلم', 'دليل المعلم') }}
+                        </span>
+                      </header>
+
+                      <!-- Key 1: Chronological Order -->
+                      <section class="space-y-3">
+                        <h3 class="font-display font-bold text-sm text-[#14251D] flex items-center gap-2">
+                          <span class="material-icons text-base text-[#2D6A4F]">format_list_numbered</span>
+                          <span>{{ lang.tr('1. الحل النموذجي لتمرين ترتيب الأحداث :', '1. الحل النموذجي لتمرين ترتيب الأحداث :') }}</span>
+                        </h3>
+                        <div class="bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF] p-4">
+                          <ol class="space-y-2 text-xs">
+                            @for (sc of s.scenes; track sc.n) {
+                              <li class="flex items-start gap-2">
+                                <span class="w-6 h-6 rounded-lg bg-[#2D6A4F] text-white font-mono font-bold flex items-center justify-center shrink-0 text-xs">{{ sc.n }}</span>
+                                <span class="font-semibold text-[#14251D]">{{ sc.title }}:</span>
+                                <span class="text-[#5B6B60]">{{ sc.event }}</span>
+                              </li>
+                            }
+                          </ol>
+                        </div>
+                      </section>
+
+                      <!-- Key 2: Questions and Answers -->
+                      <section class="space-y-3">
+                        <h3 class="font-display font-bold text-sm text-[#14251D] flex items-center gap-2">
+                          <span class="material-icons text-base text-[#2D6A4F]">quiz</span>
+                          <span>{{ lang.tr('2. إجابات أسئلة الفهم والاستيعاب :', '2. إجابات أسئلة الفهم والاستيعاب :') }}</span>
+                        </h3>
+                        <div class="space-y-2.5">
+                          @for (sc of s.scenes; track sc.n) {
+                            <div class="bg-[#FBF8F1] rounded-2xl border border-[#E7DFCF] p-3.5 space-y-1.5 text-xs">
+                              <div class="flex items-center gap-2 font-bold text-[#14251D]">
+                                <span class="text-[#2D6A4F]">#{{ sc.n }} - {{ sc.title }}</span>
+                              </div>
+                              <p class="font-semibold text-[#14251D]">س: {{ sc.question || '—' }}</p>
+                              <p class="text-[#2D6A4F] font-bold">ج: {{ sc.answer || '—' }}</p>
+                            </div>
+                          }
+                        </div>
+                      </section>
+                    </div>
+
+                    <footer class="border-t border-[#14251D] pt-3 flex items-center justify-between gap-3 text-xs text-[#5B6B60]">
+                      <div>
+                        <span>{{ lang.tr('دليل المعلم المصاحب · منصة مدرستي تونس', 'دليل المعلم المصاحب · منصة مدرستي تونس') }}</span>
+                      </div>
+                      <span class="font-mono">Corrigé · Madrasati TN</span>
+                    </footer>
+                  </article>
+                </div>
+              }
+
+              <!-- Pagination buttons -->
               <div class="flex items-center justify-between gap-3 print:hidden" [attr.dir]="s.language === 'ar' ? 'rtl' : 'ltr'">
                 <button
                   type="button"
                   [disabled]="activeSceneIndex() === 0"
-                  (click)="activeSceneIndex.set(activeSceneIndex() - 1)"
+                  (click)="prevScene()"
                   class="px-4 min-h-11 rounded-xl border border-[#E7DFCF] bg-white hover:bg-[#FBF8F1] disabled:opacity-40 text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
                   <span class="material-icons text-sm rtl:rotate-180" aria-hidden="true">arrow_back</span>
                   <span>{{ lang.tr('Planche précédente', 'اللوحة السابقة') }}</span>
                 </button>
                 <button
                   type="button"
-                  [disabled]="activeSceneIndex() >= s.scenes.length - 1"
-                  (click)="activeSceneIndex.set(activeSceneIndex() + 1)"
+                  [disabled]="activeSceneIndex() >= s.scenes.length"
+                  (click)="nextScene()"
                   class="px-4 min-h-11 rounded-xl bg-[#2D6A4F] hover:bg-[#1B4332] disabled:opacity-40 text-[#FBF8F1] text-xs font-semibold flex items-center gap-1.5 cursor-pointer transition-colors">
-                  <span>{{ lang.tr('Planche suivante', 'اللوحة التالية') }}</span>
+                  <span>{{ activeSceneIndex() === s.scenes.length - 1 ? lang.tr('ورقة التمارين', 'ورقة التمارين والأنشطة') : lang.tr('Planche suivante', 'اللوحة التالية') }}</span>
                   <span class="material-icons text-sm rtl:rotate-180" aria-hidden="true">arrow_forward</span>
                 </button>
               </div>
@@ -220,6 +447,70 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
         </div>
       </div>
 
+      <!-- Phase 4: Fullscreen Projector Modal -->
+      @if (projectorOpen() && currentScene(); as active) {
+        <div class="fixed inset-0 z-50 bg-[#14251D] text-[#FBF8F1] flex flex-col justify-between p-6 sm:p-10 select-none no-print" [attr.dir]="series()?.language === 'ar' ? 'rtl' : 'ltr'">
+          <!-- Header -->
+          <div class="flex items-center justify-between gap-4 border-b border-white/10 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="px-3 py-1 rounded-full bg-[#2D6A4F] text-xs font-mono font-bold">{{ active.n }} / {{ series()?.scenes?.length }}</span>
+              <h2 class="font-display font-semibold text-lg text-white truncate">{{ active.title }}</h2>
+            </div>
+            <button type="button" (click)="projectorOpen.set(false)" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center cursor-pointer transition-colors">
+              <span class="material-icons text-white">close</span>
+            </button>
+          </div>
+
+          <!-- Main scene presentation -->
+          <div class="flex-1 flex flex-col lg:flex-row items-center justify-center gap-8 py-6 max-w-6xl mx-auto w-full min-h-0 overflow-y-auto">
+            @if (active.imageUrl) {
+              <div class="max-w-2xl w-full aspect-16/10 rounded-2xl overflow-hidden border border-white/20 shadow-2xl relative shrink-0">
+                <img [src]="active.imageUrl" [alt]="active.title" class="w-full h-full object-cover" />
+                @if (active.speechBubble?.text) {
+                  <div class="absolute bottom-4 start-4 max-w-[80%] bg-white/95 text-[#14251D] backdrop-blur-md rounded-2xl p-4 shadow-xl border border-black/10 text-sm">
+                    @if (active.speechBubble?.speaker) {
+                      <div class="text-xs font-bold text-[#8A5A00] mb-1">{{ active.speechBubble?.speaker }}</div>
+                    }
+                    <p class="font-semibold italic leading-relaxed">« {{ active.speechBubble?.text }} »</p>
+                  </div>
+                }
+              </div>
+            }
+            <div class="space-y-4 max-w-xl text-start">
+              <h3 class="font-display font-bold text-2xl text-white">{{ active.title }}</h3>
+              <p class="text-lg leading-loose text-[#E7DFCF] font-medium">{{ active.text }}</p>
+              @if (active.question) {
+                <div class="mt-4 p-4 rounded-xl bg-white/5 border border-white/10 text-sm text-[#FBF8F1]">
+                  <span class="text-xs font-bold text-[#A7C4B5] block mb-1">❓ {{ lang.tr('Question', 'سؤال الاستيعاب') }}:</span>
+                  <p>{{ active.question }}</p>
+                </div>
+              }
+            </div>
+          </div>
+
+          <!-- Footer navigation -->
+          <div class="flex items-center justify-between border-t border-white/10 pt-4">
+            <button
+              type="button"
+              [disabled]="activeSceneIndex() === 0"
+              (click)="prevScene()"
+              class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 disabled:opacity-30 cursor-pointer flex items-center gap-2 text-sm font-semibold">
+              <span class="material-icons text-sm rtl:rotate-180">arrow_back</span>
+              <span>{{ lang.tr('Précédente', 'السابقة') }}</span>
+            </button>
+            <span class="text-xs text-[#E7DFCF]/60 font-mono">استخدم مفاتيح الأسهم للتبديل (← / →) أو Esc للإغلاق</span>
+            <button
+              type="button"
+              [disabled]="activeSceneIndex() >= (series()?.scenes?.length ?? 1) - 1"
+              (click)="nextScene()"
+              class="px-5 py-2.5 rounded-xl bg-[#2D6A4F] hover:bg-[#1B4332] disabled:opacity-30 cursor-pointer flex items-center gap-2 text-sm font-semibold">
+              <span>{{ lang.tr('Suivante', 'التالية') }}</span>
+              <span class="material-icons text-sm rtl:rotate-180">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      }
+
     </div>
   `,
 })
@@ -229,6 +520,9 @@ export class SeriesViewerComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
 
+  /** Phase 1: Limit subjects to History, Arabic reading, and French reading */
+  readonly allowedSubjects = ['Histoire & Géographie', 'اللغة العربية', 'Français'] as const;
+
   readonly series = this.store.currentSeries;
   readonly activeSceneIndex = signal<number>(0);
   readonly loading = signal<boolean>(true);
@@ -236,10 +530,36 @@ export class SeriesViewerComponent implements OnInit {
   readonly progressLabel = signal<string>('');
   readonly error = signal<string | null>(null);
 
+  /** Phase 2: Teacher key visibility toggle */
+  readonly showTeacherKey = signal<boolean>(false);
+
+  /** Phase 4: Fullscreen projector mode */
+  readonly projectorOpen = signal<boolean>(false);
+
   /** The plan is approved once at least one panel has been written. */
   readonly approved = computed(() => !!this.series()?.scenes.some((s) => s.status === 'ready'));
 
   readonly currentScene = computed<Scene | null>(() => this.series()?.scenes[this.activeSceneIndex()] ?? null);
+
+  /** Phase 2: Deterministic shuffled scenes for "رتّب الأحداث" worksheet */
+  readonly shuffledScenes = computed<Scene[]>(() => {
+    const sc = this.series()?.scenes ?? [];
+    if (sc.length <= 1) return sc;
+    const n = sc.length;
+    // Permutation with step 3
+    const step = n % 2 === 0 ? 3 : 2;
+    const result: Scene[] = [];
+    const seen = new Set<number>();
+    let ptr = 1;
+    for (let i = 0; i < n; i++) {
+      while (seen.has(ptr % n)) ptr++;
+      const idx = ptr % n;
+      seen.add(idx);
+      result.push(sc[idx]);
+      ptr = (ptr + step) % n;
+    }
+    return result;
+  });
 
   /** /series/new: the form lives on this page; nothing is generated until the teacher submits. */
   readonly isNew = signal(false);
@@ -256,18 +576,52 @@ export class SeriesViewerComponent implements OnInit {
   /** Settings panel: always open for a new series, toggled from the studio bar otherwise. */
   readonly settingsOpen = signal(false);
   readonly panelOpen = computed(() => this.isNew() || this.settingsOpen());
-  readonly blankPanels = ['01', '02', '03', '04', '05', '06'];
 
   ngOnInit() {
-    // Same component for /series/new → /series/:id, so follow the param, not the snapshot.
     this.route.paramMap.subscribe((params) => void this.load(params.get('id')));
+  }
+
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboard(event: KeyboardEvent) {
+    if (!this.projectorOpen()) return;
+    if (event.key === 'Escape') {
+      this.projectorOpen.set(false);
+    } else if (event.key === 'ArrowRight') {
+      if (this.series()?.language === 'ar') this.prevScene();
+      else this.nextScene();
+    } else if (event.key === 'ArrowLeft') {
+      if (this.series()?.language === 'ar') this.nextScene();
+      else this.prevScene();
+    }
+  }
+
+  openProjector() {
+    this.projectorOpen.set(true);
+  }
+
+  prevScene() {
+    if (this.activeSceneIndex() > 0) {
+      this.activeSceneIndex.set(this.activeSceneIndex() - 1);
+    }
+  }
+
+  nextScene() {
+    const total = (this.series()?.scenes?.length ?? 1) - 1;
+    if (this.activeSceneIndex() < total) {
+      this.activeSceneIndex.set(this.activeSceneIndex() + 1);
+    }
   }
 
   private async load(id: string | null) {
     this.isNew.set(id === 'new');
     this.settingsOpen.set(false);
     if (id === 'new') {
-      this.prefill.set(this.store.consumePrefill());
+      this.prefill.set(this.store.consumePrefill() ?? {
+        mode: 'topic',
+        grade: PRIMARY_GRADES[3],
+        subject: 'اللغة العربية' as SubjectName,
+        language: 'ar',
+      });
       this.loading.set(false);
       return;
     }
@@ -276,7 +630,14 @@ export class SeriesViewerComponent implements OnInit {
       await this.store.getSeries(id);
     }
     const s = this.store.currentSeries();
-    this.prefill.set(s ? { mode: s.sourceText ? 'text' : 'topic', topic: s.title, text: s.sourceText, grade: s.grade, subject: s.subject, language: s.language === 'fr' ? 'fr' : 'ar' } : null);
+    this.prefill.set(s ? {
+      mode: s.sourceText ? 'text' : 'topic',
+      topic: s.title,
+      text: s.sourceText,
+      grade: s.grade,
+      subject: s.subject,
+      language: s.language === 'fr' ? 'fr' : 'ar',
+    } : null);
     this.loading.set(false);
   }
 
@@ -308,7 +669,6 @@ export class SeriesViewerComponent implements OnInit {
     void this.router.navigate(['/series', d.id || DRAFT_DOC_ID]);
   }
 
-  /** A guest's series is a local draft until saved; signup resumes the save. */
   saveDraft() {
     this.store.requireAccount(async () => {
       const id = await this.store.saveCurrentSeries();
@@ -322,12 +682,10 @@ export class SeriesViewerComponent implements OnInit {
     });
   }
 
-  /** Write every pending panel (text then illustration), one at a time, saving after each panel. */
   async generateAll() {
     const s = this.series();
     if (!s || this.busy()) return;
     this.error.set(null);
-    // Panels are saved one by one, so a cancel keeps every panel already written.
     await this.session.run(async (signal) => {
       for (const sc of s.scenes) {
         if (signal.aborted) break;
@@ -363,7 +721,6 @@ export class SeriesViewerComponent implements OnInit {
     }
     if (withImage) {
       const img = await this.store.generateSeriesImage(seriesId, sceneNumber);
-      // A missing illustration is not fatal: the panel keeps its text and can be retried alone.
       if (!img.ok) this.error.set(img.error ?? null);
     }
     await this.persist(seriesId);
@@ -372,7 +729,6 @@ export class SeriesViewerComponent implements OnInit {
 
   private async persist(seriesId: string) {
     const doc = this.store.currentSeries();
-    // Unsaved guest drafts (no id) stay local until the save button stores them.
     if (doc && doc.id && doc.id === seriesId) await this.store.saveSeries({ doc });
   }
 

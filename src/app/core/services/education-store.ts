@@ -1783,6 +1783,9 @@ export class EducationStore {
       text: panel.text,
       caption: panel.caption,
       imagePrompt: panel.imagePrompt || scene.imagePrompt,
+      question: panel.question || scene.question,
+      answer: panel.answer || scene.answer,
+      speechBubble: panel.speechBubble || scene.speechBubble,
       status: 'ready',
     });
     return { ok: true, scene: merged };

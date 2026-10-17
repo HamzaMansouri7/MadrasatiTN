@@ -14,6 +14,12 @@ export interface SeriesBible {
   era: string;
 }
 
+export interface SceneSpeechBubble {
+  speaker?: string;
+  text: string;
+  position?: 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left';
+}
+
 export interface Scene {
   n: number;
   title: string;
@@ -25,6 +31,12 @@ export interface Scene {
   imageUrl?: string;
   kind: SceneKind;
   teachingGoal?: string;
+  /** Comprehension question on this panel for students */
+  question?: string;
+  /** Expected model answer for the teacher's key */
+  answer?: string;
+  /** Speech bubble dialogue typed as real Arabic/French text on top of the image */
+  speechBubble?: SceneSpeechBubble;
   /** planned = outline only; ready = pupil text written. */
   status?: 'planned' | 'ready';
 }
@@ -45,6 +57,8 @@ export interface SeriesDoc {
   scenes: Scene[];
   author?: SeriesAuthor;
   sourceText?: string;
+  /** 'history' keeps realistic educational illustration; 'story' uses children's storybook style */
+  mode?: 'history' | 'story';
   createdAt?: string | number;
   updatedAt?: string | number;
 }

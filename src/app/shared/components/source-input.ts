@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, effect, inject, input, output, signal, untracked } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, input, output, signal, untracked } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TopicPickerComponent } from './topic-picker';
 import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_GRADES, PRIMARY_SUBJECTS, SourceInput, SubjectName, Trimester, TRIMESTERS, downscaleImage } from '@core';
@@ -191,7 +191,7 @@ import { CurriculumChapter, GradeLevel, LanguageService, chapterTitle, PRIMARY_G
             [value]="subject()"
             (change)="subject.set($any($event.target).value); topicId.set(null)"
             class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 py-2.5 text-xs text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
-            @for (s of subjects; track s) {
+            @for (s of availableSubjects(); track s) {
               <option [value]="s" [selected]="s === subject()">{{ lang.translateSubject(s) }}</option>
             }
           </select>
@@ -262,6 +262,7 @@ export class SourceInputComponent {
 
   readonly initialInput = input<SourceInput | null>(null);
   readonly submitLabel = input<string>('');
+  readonly allowedSubjects = input<readonly (SubjectName | string)[] | null>(null);
 
   readonly submitSource = output<SourceInput>();
   /** Every edit, so the host can keep a local draft. Not emitted while the form is empty. */
@@ -273,6 +274,7 @@ export class SourceInputComponent {
 
   readonly grades = PRIMARY_GRADES;
   readonly subjects = PRIMARY_SUBJECTS;
+  readonly availableSubjects = computed(() => this.allowedSubjects()?.length ? this.allowedSubjects()! : this.subjects);
   readonly trimesters = TRIMESTERS;
 
   readonly mode = signal<'topic' | 'text' | 'photo' | 'file'>('topic');
@@ -305,6 +307,10 @@ export class SourceInputComponent {
         if (init.subject) this.subject.set(init.subject);
         if (init.trimester) this.trimester.set(init.trimester);
         if (init.language) this.language.set(init.language);
+      }
+      const allowed = this.allowedSubjects();
+      if (allowed && allowed.length > 0 && !allowed.includes(this.subject())) {
+        this.subject.set(allowed[0]);
       }
       this.baseline = untracked(() => fingerprint(this.snapshot()));
     });

@@ -53,6 +53,8 @@ export interface PlannedScene {
   visualIdea: string;
   kind: string;
   teachingGoal?: string;
+  question?: string;
+  answer?: string;
 }
 
 /** 4–8 scenes, renumbered 1..n, kind forced into the enum. */

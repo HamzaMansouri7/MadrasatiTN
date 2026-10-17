@@ -1353,6 +1353,7 @@ ${FILE_SOURCE_RULE}`,
           .json({ error: "Le scénario généré est incomplet. Réessayez." });
         return;
       }
+      const isHist = String(subject || "").toLowerCase().includes("hist") || String(subject || "").toLowerCase().includes("تاريخ");
       const now = new Date().toISOString();
       const seriesDoc = {
         id: randomUUID(),
@@ -1360,11 +1361,16 @@ ${FILE_SOURCE_RULE}`,
         grade: grade,
         subject: subject,
         language: lang,
+        mode: (data as Record<string, unknown>)["mode"] === "history" || isHist ? "history" : "story",
         sourceText: safeText,
         bible: {
           characters: plan.characters || [],
-          style: plan.style || "educational comic",
-          era: plan.era || "",
+          style:
+            plan.style ||
+            (isHist
+              ? "Historical educational illustration, realistic pedagogical documentary style, detailed Tunisian Mediterranean setting"
+              : "Children's storybook illustration, warm expressive watercolor style, clear composition, Tunisian children book art, vibrant, pedagogical"),
+          era: plan.era || (isHist ? "Histoire de la Tunisie" : "Récit contemporain"),
         },
         scenes: scenes.map((s) => ({
           n: s.n,
@@ -1375,6 +1381,8 @@ ${FILE_SOURCE_RULE}`,
           imagePrompt: cleanImagePrompt(s.visualIdea),
           kind: s.kind,
           teachingGoal: s.teachingGoal,
+          question: s.question || "",
+          answer: s.answer || "",
           status: "planned",
         })),
         createdAt: now,
@@ -1445,9 +1453,17 @@ aiRouter.post(
           seriesSkill.temperature,
         ),
       );
+      const speechText = data["speechBubbleText"] ? String(data["speechBubbleText"]).trim() : "";
       const panel = {
         ...data,
         imagePrompt: cleanImagePrompt(String(data["imagePrompt"] ?? "")),
+        speechBubble: speechText
+          ? {
+              text: speechText,
+              speaker: data["speechBubbleSpeaker"] ? String(data["speechBubbleSpeaker"]).trim() : undefined,
+              position: "top-right" as const,
+            }
+          : undefined,
       };
       res.json({ success: true, panel });
       return;
@@ -1492,9 +1508,9 @@ aiRouter.post(
         .filter(Boolean)
         .join("; ");
       const style =
-        cleanImagePrompt(b.style) || "historical educational comic panel";
+        cleanImagePrompt(b.style) || "Children's storybook illustration, warm expressive watercolor style, clear composition, vibrant, pedagogical";
       const cleanPrompt = capText(
-        `${style}. ${cast ? `Characters: ${cast}. ` : ""}${scene}. high resolution, detailed, no text, no words, no letters, no numbers`,
+        `${style}. ${cast ? `Characters: ${cast}. ` : ""}${scene}. high resolution, detailed, strictly text-free, no text, no words, no letters, no numbers, no subtitles, no speech bubbles`,
         1200,
       );
       const finalSeed =
