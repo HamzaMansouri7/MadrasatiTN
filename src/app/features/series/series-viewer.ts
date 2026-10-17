@@ -800,11 +800,25 @@ export class SeriesViewerComponent implements OnInit {
     if (typeof window !== 'undefined') window.print();
   }
 
-  /** Share the series: saves it first if it has no id yet, then opens the native share sheet. */
+  /**
+   * Share the series. Classification-before-share rule: a shared series becomes public
+   * (library + Facebook auto-post), so it must be correctly classified (grade + subject)
+   * and labelled (title) before the public URL is exposed. Block and prompt otherwise.
+   */
   async shareSeries() {
     if (typeof window === 'undefined') return;
     const s = this.series();
     if (!s) return;
+    if (!s.title?.trim() || !s.grade || !s.subject) {
+      this.store.showToast(
+        this.lang.tr(
+          'Classez la série (titre, niveau, matière) avant de la partager',
+          'صنّف السلسلة (عنوان، مستوى، مادة) قبل مشاركتها',
+        ),
+        'info',
+      );
+      return;
+    }
     let id = s.id;
     if (!id) {
       id = (await this.store.saveCurrentSeries()) ?? '';
