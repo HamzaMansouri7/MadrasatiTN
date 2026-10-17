@@ -71,7 +71,7 @@ export interface EditorBlock {
   imageCaption?: string;
 }
 
-export type DocumentType = 'course' | 'exam' | 'article' | 'exercise_sheet' | 'summary';
+export type DocumentType = 'course' | 'exam' | 'article' | 'exercise_sheet' | 'summary' | 'lesson_plan';
 
 export interface StudioDocument {
   id: string;
