@@ -1621,9 +1621,21 @@ aiRouter.post(
         return;
       }
 
-      // 3. Ask one clarifying question when a required field is missing.
-      if (clarify && !grade && !subject) {
-        res.json({ success: true, intent, reply: clarify, needsClarification: true, sources: [] });
+      // 3. Ask one clarifying question — but only for a document to CREATE, where the level and
+      // subject actually matter. An "ask/solve/find" is answered directly with whatever context
+      // exists. The question is phrased in the user's language, not the model's.
+      const needsLevel = intent === "exercises" || intent === "memo" || intent === "plan" || intent === "infographic";
+      if (clarify && needsLevel && !grade && !subject) {
+        res.json({
+          success: true,
+          intent,
+          reply:
+            lang === "ar"
+              ? "بكل سرور. ما هو المستوى الدراسي والمادة؟"
+              : "Avec plaisir. Quel est le niveau et la matière ?",
+          needsClarification: true,
+          sources: [],
+        });
         return;
       }
 
