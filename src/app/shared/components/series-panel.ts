@@ -25,7 +25,7 @@ import { LanguageService, Scene, SeriesAuthor, SeriesBible } from '@core';
             </div>
           </div>
 
-          @if (scene().year) {
+          @if (seriesMode() === 'history' && scene().year) {
             <span class="bg-[#8A5A00]/10 text-[#8A5A00] font-mono font-semibold text-xs px-3 py-1 rounded-full border border-[#8A5A00]/20 shrink-0">
               {{ scene().year }}
             </span>

@@ -72,6 +72,8 @@ export class StudioSession<D = unknown> {
   readonly error = signal<StudioError | null>(null);
   readonly dirty = signal(false);
   readonly online = signal(true);
+  /** Optional sub-progress shown under the spinner, e.g. "اللوحة 3 / 5". Cleared on each run. */
+  readonly progress = signal<string>('');
   /** Draft found from an earlier visit, offered by the banner until restored or dismissed. */
   readonly draft = signal<D | null>(null);
   /** The previous visit was closed while a generation ran. */
@@ -173,6 +175,7 @@ export class StudioSession<D = unknown> {
     this.timedOut = false;
     this.busy.set(true);
     this.startedAt.set(Date.now());
+    this.progress.set('');
     this.error.set(null);
     this.interrupted.set(false);
     this.ai.lastFailure = null;
@@ -208,6 +211,7 @@ export class StudioSession<D = unknown> {
       if (this.controller === controller) this.controller = null;
       this.busy.set(false);
       this.startedAt.set(null);
+      this.progress.set('');
       void this.writeStored({ pending: false });
     }
   }

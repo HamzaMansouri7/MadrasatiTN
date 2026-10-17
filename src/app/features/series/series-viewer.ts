@@ -686,13 +686,40 @@ export class SeriesViewerComponent implements OnInit {
     const s = this.series();
     if (!s || this.busy()) return;
     this.error.set(null);
+    const pending = s.scenes.filter((sc) => sc.status !== 'ready');
+    if (pending.length === 0) return;
+    const total = pending.length;
+    let done = 0;
+    const failed: number[] = [];
+    const setProgress = () => {
+      const label = this.lang.tr(`${done} / ${total} planches prêtes`, `${done} / ${total} لوحات جاهزة`);
+      this.session.progress.set(label);
+      this.progressLabel.set(label);
+    };
+
     await this.session.run(async (signal) => {
-      for (const sc of s.scenes) {
-        if (signal.aborted) break;
-        if (sc.status === 'ready') continue;
-        this.progressLabel.set(this.lang.tr(`Planche ${sc.n} / ${s.scenes.length}…`, `اللوحة ${sc.n} / ${s.scenes.length}…`));
-        const ok = await this.writePanel(s.id, sc.n, true);
-        if (!ok) break;
+      setProgress();
+      // Panels are independent, so write them all at once instead of one after another:
+      // the whole series finishes in about the time of a single panel. Each panel reveals
+      // itself the moment it is ready (patchScene updates the signal), and one failure
+      // never stops the others.
+      await Promise.allSettled(
+        pending.map(async (sc) => {
+          const ok = await this.writePanel(s.id, sc.n, true);
+          if (!ok && !signal.aborted) failed.push(sc.n);
+          done++;
+          setProgress();
+        }),
+      );
+      await this.persist(s.id);
+      if (failed.length && !signal.aborted) {
+        failed.sort((a, b) => a - b);
+        this.error.set(
+          this.lang.tr(
+            `Échec des planches ${failed.join(', ')}. Réessayez-les individuellement.`,
+            `تعذّر توليد اللوحات ${failed.join('، ')}. أعد المحاولة لكل لوحة على حدة.`,
+          ),
+        );
       }
     }, { timeoutMs: 0 });
   }
@@ -708,11 +735,12 @@ export class SeriesViewerComponent implements OnInit {
       } else {
         const img = await this.store.generateSeriesImage(s.id, sceneNumber);
         if (!img.ok) this.error.set(img.error ?? null);
-        await this.persist(s.id);
       }
+      await this.persist(s.id);
     });
   }
 
+  /** Writes one panel's text (and image). Does NOT persist — the caller saves once. */
   private async writePanel(seriesId: string, sceneNumber: number, withImage: boolean): Promise<boolean> {
     const text = await this.store.generateSeriesPanel(seriesId, sceneNumber);
     if (!text.ok) {
@@ -723,7 +751,6 @@ export class SeriesViewerComponent implements OnInit {
       const img = await this.store.generateSeriesImage(seriesId, sceneNumber);
       if (!img.ok) this.error.set(img.error ?? null);
     }
-    await this.persist(seriesId);
     return true;
   }
 

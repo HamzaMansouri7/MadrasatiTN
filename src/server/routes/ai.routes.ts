@@ -1510,7 +1510,7 @@ aiRouter.post(
       const style =
         cleanImagePrompt(b.style) || "Children's storybook illustration, warm expressive watercolor style, clear composition, vibrant, pedagogical";
       const cleanPrompt = capText(
-        `${style}. ${cast ? `Characters: ${cast}. ` : ""}${scene}. high resolution, detailed, strictly text-free, no text, no words, no letters, no numbers, no subtitles, no speech bubbles`,
+        `${style}. ${cast ? `Characters: ${cast}. ` : ""}${scene}. Simple uncluttered background, plain walls, no posters, no charts, no signs, no books with writing. high resolution, detailed, strictly text-free, no text, no words, no letters, no numbers, no subtitles, no speech bubbles`,
         1200,
       );
       const finalSeed =

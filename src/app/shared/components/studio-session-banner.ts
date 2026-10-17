@@ -25,7 +25,10 @@ import { EducationStore, LanguageService, StudioSession } from '@core';
           <div role="status" class="w-full max-w-sm rounded-2xl border border-[#E7DFCF] bg-white px-6 py-6 shadow-lg text-center space-y-4">
             <span class="material-icons text-4xl text-[#2D6A4F] animate-spin motion-reduce:animate-none" aria-hidden="true">sync</span>
             <p class="font-display text-lg font-semibold text-[#14251D]">{{ lang.tr('Génération…', 'جارٍ التوليد…') }}</p>
-            <p class="text-sm text-[#5B6B60] tabular-nums">{{ elapsed() }} {{ lang.tr('s', 'ث') }}</p>
+            @if (s.progress(); as p) {
+              <p class="text-sm font-semibold text-[#2D6A4F]">{{ p }}</p>
+            }
+            <p class="text-xs text-[#5B6B60] tabular-nums">{{ lang.tr('Temps écoulé', 'الوقت المنقضي') }} : {{ elapsed() }} {{ lang.tr('s', 'ث') }}</p>
             <button type="button" (click)="s.cancel()" class="min-h-11 px-6 rounded-xl border border-[#E7DFCF] bg-white hover:bg-[#F2ECDE] text-sm font-semibold text-[#14251D] cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
               {{ lang.tr('Annuler', 'إلغاء') }}
             </button>
