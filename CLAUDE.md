@@ -54,3 +54,19 @@ Any UI work must follow [DESIGN.md](DESIGN.md) — the "Cartouche officielle" de
 ## Facebook auto-post
 
 Published worksheets and published infographics (course/exercise) are auto-posted to the Facebook Page from `POST /api/docs` via [src/server/facebook.ts](src/server/facebook.ts) (Graph API, fire-and-forget, deduped by doc id in `docs/fb-posted.json`). Env: `FB_PAGE_ID`, `FB_PAGE_TOKEN` (Page token with `pages_manage_posts` + `pages_read_engagement`), `PUBLIC_BASE_URL`; disabled if any is unset. Never commit or print the token.
+
+## Agent team (quota routing)
+
+Main session plans and decides. Every agent starts with an empty context and re-reads CLAUDE.md plus the files it needs, which costs roughly 60–75k tokens and 1–2 minutes before any useful work (measured 2026-10-17). Spawn one only when the job itself is bigger than that overhead:
+- `scout` (Haiku): searches across many folders, reading or summarising 10+ files, bulk renames across files.
+- `builder` (Sonnet): executing an agreed plan that touches several files.
+- `architect` (Opus): hard design questions, unclear bugs, review of a multi-file feature before commit.
+Everything smaller stays in the main session: single commands, 1–3 file reads, a diff of two files, a folder comparison, one-file edits, lint/build/commit. Keep max 2 background agents at once.
+
+Delegation rules:
+- No double work: act on an agent's report; never re-run its checks on the main model. If the result would need re-checking anyway, do not delegate it.
+- Never give scout a task needing judgment: a wrong Haiku pass re-run on Opus costs double.
+- Upgrade builder → architect when builder fails twice on the same subtask, the work is security-critical (auth, secrets, Firestore rules), or it is a new design rather than a known pattern.
+- Need deeper thinking on the same model? Raise `effort` before jumping a model tier.
+- Use plan mode for new features and tough bugs; skip it for known patterns and small tweaks.
+- Pre-commit review by `architect` only for multi-file features. A small tweak (1–2 files) that the owner already checked gets a self-review in the main session.

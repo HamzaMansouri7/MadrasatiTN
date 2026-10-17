@@ -59,13 +59,14 @@
   @if (showMetadataPanel()) {
     <div id="editor-settings" class="bg-white rounded-2xl p-5 border border-[#E7DFCF] shadow-sm animate-fade-in print:hidden">
       <div class="grid grid-cols-1 xl:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-6 items-start">
+        <div class="space-y-4">
         <!-- Document type, subject and level -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
           <div>
             <span class="block font-semibold text-[#14251D] mb-1">
               {{ lang.tr('Type de document', 'نوع الوثيقة') }}
             </span>
-            <div class="grid grid-cols-2 gap-2" role="radiogroup" [attr.aria-label]="lang.tr('Type de document', 'نوع الوثيقة')">
+            <div class="grid grid-cols-2 gap-2 [&>*:last-child:nth-child(odd)]:col-span-2" role="radiogroup" [attr.aria-label]="lang.tr('Type de document', 'نوع الوثيقة')">
               @for (opt of docTypeOptions; track opt.value) {
                 <button
                   type="button"
@@ -75,13 +76,13 @@
                   [class]="docType() === opt.value
                     ? 'border-[#2D6A4F] bg-[#2D6A4F]/8 text-[#14251D] ring-1 ring-[#2D6A4F]'
                     : 'border-[#E7DFCF] bg-[#FBF8F1] text-[#5B6B60] hover:border-[#2D6A4F]/50'"
-                  class="flex items-center gap-2 rounded-xl border px-2.5 py-1.5 text-right transition-all cursor-pointer min-h-[38px]">
+                  class="flex items-center gap-2 rounded-xl border px-2 py-1.5 text-start transition-all cursor-pointer min-h-[38px] min-w-0">
                   <span
                     [class]="docType() === opt.value ? 'bg-[#2D6A4F] text-white' : 'bg-white text-[#2D6A4F]'"
                     class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
-                  <span class="min-w-0">
-                    <span class="block text-xs font-semibold leading-tight">{{ lang.tr(opt.fr, opt.ar) }}</span>
-                    <span class="block text-[10px] opacity-70 leading-tight">{{ opt.sub }}</span>
+                  <span class="min-w-0 flex-1">
+                    <span class="block text-xs font-semibold leading-tight break-words">{{ lang.tr(opt.fr, opt.ar) }}</span>
+                    <span class="block text-[10px] opacity-70 leading-tight truncate">{{ opt.sub }}</span>
                   </span>
                 </button>
               }
@@ -135,6 +136,7 @@
               }
             </div>
           </div>
+        </div>
         </div>
 
         <!-- Title, trimester, school, watermark and templates fill the free side -->
@@ -214,37 +216,41 @@
               {{ lang.tr('Modèles rapides :', 'قوالب جاهزة :') }}
             </span>
             <button
+              type="button"
               (click)="loadTemplatePreset('exam_full')"
               class="bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#2D6A4F] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
               {{ lang.tr('Examen complet', 'امتحان كامل') }}
             </button>
             <button
+              type="button"
               (click)="loadTemplatePreset('course_summary')"
               class="bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#2D6A4F] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
               {{ lang.tr('Fiche de cours', 'ملخص درس') }}
             </button>
             <button
+              type="button"
               (click)="loadTemplatePreset('exercise_sheet')"
               class="bg-[#F2ECDE] hover:bg-[#F2ECDE] text-[#8A5A00] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
               {{ lang.tr("Série d'exercices", 'سلسلة تمارين') }}
             </button>
           </div>
+
         </div>
       </div>
     </div>
   }
 
   <!-- PRO 3-PANE STUDIO: Inspector | A4 Canvas | Outline Tree -->
-  <div class="studio-grid lg:grid lg:grid-cols-[300px_minmax(0,1fr)_300px] lg:gap-4 lg:items-start" [class.studio-grid--no-inspector]="!selectedBlock()">
+  <div class="studio-grid lg:grid lg:gap-4 lg:items-start" [class]="isLessonPlan() ? 'lg:grid-cols-[minmax(22rem,24rem)_minmax(0,1fr)_300px]' : 'lg:grid-cols-[300px_minmax(0,1fr)_300px]'" [class.studio-grid--no-inspector]="!selectedBlock() && !isLessonPlan()">
 
     <!-- ============ LEFT PANE: INSPECTOR ============ -->
     <aside
       [class.hidden]="mobilePane() !== 'inspector'"
-      [class.inspector-idle]="!selectedBlock()"
+      [class.inspector-idle]="!selectedBlock() && !isLessonPlan()"
       class="studio-pane lg:block bg-white rounded-2xl border border-[#E7DFCF] shadow-sm overflow-hidden print:hidden">
       <div class="px-4 py-3 border-b border-[#E7DFCF] bg-[#FBF8F1] flex items-center gap-2">
         <span class="material-icons text-base text-[#2D6A4F]">tune</span>
-        <h2 class="text-xs font-semibold text-[#14251D]">{{ lang.tr('Inspecteur du bloc', 'مفتّش الكتلة') }}</h2>
+        <h2 class="text-xs font-semibold text-[#14251D]">{{ selectedBlock() ? lang.tr('Inspecteur du bloc', 'مفتّش الكتلة') : isLessonPlan() ? lang.tr('Fiche pédagogique', 'الجذاذة') : lang.tr('Inspecteur du bloc', 'مفتّش الكتلة') }}</h2>
         @if (selectedBlock()) {
           <span class="ms-auto text-[11px] font-semibold text-[#5B6B60]">{{ getBlockTypeLabel(selectedBlock()!.type) }}</span>
           <button type="button" (click)="selectedBlockId.set(null)" [attr.aria-label]="lang.tr('Fermer l’inspecteur', 'إغلاق المفتّش')"
@@ -255,6 +261,77 @@
       </div>
 
       <div class="p-4 space-y-4 text-xs">
+        @if (isLessonPlan()) {
+          @if (visibleLessonTemplates().length > 1) {
+            <div>
+              <p id="lesson-template-label" class="text-xs font-semibold text-[#5B6B60] mb-1.5">{{ lang.tr('Modèle de fiche', 'نموذج الجذاذة') }}</p>
+              <div class="grid grid-cols-2 gap-2" role="radiogroup" aria-labelledby="lesson-template-label">
+                @for (tpl of visibleLessonTemplates(); track tpl.id) {
+                  <button
+                    type="button"
+                    role="radio"
+                    [attr.aria-checked]="lessonTemplate() === tpl.id"
+                    (click)="chooseLessonTemplate(tpl.id)"
+                    [class]="lessonTemplate() === tpl.id
+                      ? 'border-[#2D6A4F] ring-1 ring-[#2D6A4F] bg-[#2D6A4F]/8'
+                      : 'border-[#E7DFCF] bg-[#FBF8F1] hover:border-[#2D6A4F]/50'"
+                    class="relative rounded-xl border p-2 flex flex-col items-center gap-2 cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                    @if (lessonTemplate() === tpl.id) {
+                      <span class="material-icons absolute top-1.5 end-1.5 text-base text-[#2D6A4F]" aria-hidden="true">check_circle</span>
+                    }
+                    <span class="h-32 aspect-[210/297] bg-white border border-[#E7DFCF] rounded-sm shadow-xs p-1.5 flex flex-col gap-1 overflow-hidden" aria-hidden="true">
+                      <span class="h-3 shrink-0 rounded-[2px] border border-[#14251D]/40"></span>
+                      @for (row of tpl.sketch; track $index) {
+                        @switch (row.k) {
+                          @case ('box') {
+                            <span class="h-3.5 shrink-0 rounded-[2px] border-s-2 bg-[#F2ECDE]" [style.border-color]="row.c"></span>
+                          }
+                          @case ('quote') {
+                            <span class="h-3 shrink-0 ms-1.5 rounded-[2px] border-s-2 border-[#2D6A4F] bg-[#FBF8F1]"></span>
+                          }
+                          @case ('table') {
+                            <span class="flex-1 min-h-6 rounded-[2px] border border-[#14251D]/30" style="background-image: linear-gradient(#14251D33 1px, transparent 1px), linear-gradient(90deg, #14251D33 1px, transparent 1px); background-size: 100% 25%, 25% 100%"></span>
+                          }
+                          @default {
+                            <span class="h-1 shrink-0 w-3/4 rounded-full bg-[#E7DFCF]"></span>
+                          }
+                        }
+                      }
+                    </span>
+                    <span class="text-xs font-semibold text-[#14251D] leading-tight text-center">{{ lang.tr(tpl.fr, tpl.ar) }}</span>
+                  </button>
+                }
+              </div>
+            </div>
+          }
+          <fieldset class="space-y-4">
+            <legend class="font-display font-semibold text-sm text-[#14251D] flex items-center gap-2 mb-1">
+              <span class="w-6 h-6 rounded-md bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center">
+                <span class="material-icons text-sm" aria-hidden="true">source</span>
+              </span>
+              <span>{{ lang.tr('Source de la fiche', 'مصدر الجذاذة') }}</span>
+            </legend>
+            <app-source-card [state]="lessonSource" [grade]="docGrade()" [subject]="docSubject()" [trimester]="docTrimester()" [errors]="session" />
+            <div>
+              <p class="text-xs font-semibold text-[#5B6B60] mb-1.5">{{ lang.tr('Durée de la séance', 'مدة الحصة') }}</p>
+              <div class="flex items-center bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-0.5" role="group" [attr.aria-label]="lang.tr('Durée de la séance', 'مدة الحصة')">
+                @for (m of lessonDurations; track m) {
+                  <button type="button" (click)="setLessonMinutes(m)" [attr.aria-pressed]="lessonMinutes() === m"
+                    [class]="lessonMinutes() === m ? 'bg-white text-[#14251D] shadow-xs font-semibold' : 'text-[#5B6B60] hover:text-[#14251D]'"
+                    class="flex-1 min-h-10 rounded-lg text-xs cursor-pointer">{{ m }} {{ lang.tr('min', 'د') }}</button>
+                }
+              </div>
+            </div>
+            <button type="button" (click)="generateLessonPlan()" [disabled]="isAiLoading()"
+              class="w-full bg-[#1B4332] hover:bg-[#14251D] text-[#FBF8F1] font-semibold min-h-11 px-5 rounded-xl text-sm cursor-pointer flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-default">
+              <span class="material-icons text-base" [class.animate-spin]="isAiLoading()" aria-hidden="true">{{ isAiLoading() ? 'sync' : 'auto_awesome' }}</span>
+              {{ isAiLoading() ? lang.tr('Génération…', 'جارٍ التوليد…') : lang.tr('Remplir la fiche avec l’IA', 'ملء الجذاذة بالذكاء الاصطناعي') }}
+            </button>
+          </fieldset>
+          @if (selectedBlock()) {
+            <hr class="border-[#E7DFCF]" />
+          }
+        }
         @if (!selectedBlock()) {
           <!-- Empty state -->
           <div class="text-center py-8 px-2 space-y-2">
@@ -421,6 +498,31 @@
             }
             @case ('callout') {
               <div>
+                <span class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Type d’encadré', 'نوع الملاحظة') }}</span>
+                <div class="grid grid-cols-2 gap-1.5">
+                  <button type="button" (click)="updateBlockField(sb.id, 'calloutVariant', 'info')"
+                    [class]="(sb.calloutVariant || 'info') === 'info' ? 'bg-[#2D6A4F] text-white' : 'bg-[#FBF8F1] text-[#2D6A4F] border border-[#E7DFCF]'"
+                    class="rounded-lg py-1 px-2 text-[11px] font-semibold transition-colors cursor-pointer text-center">
+                    {{ lang.tr('Info (vert)', 'معلومة') }}
+                  </button>
+                  <button type="button" (click)="updateBlockField(sb.id, 'calloutVariant', 'tip')"
+                    [class]="sb.calloutVariant === 'tip' ? 'bg-[#8A5A00] text-white' : 'bg-[#FBF8F1] text-[#8A5A00] border border-[#E7DFCF]'"
+                    class="rounded-lg py-1 px-2 text-[11px] font-semibold transition-colors cursor-pointer text-center">
+                    {{ lang.tr('Conseil (doré)', 'إرشاد') }}
+                  </button>
+                  <button type="button" (click)="updateBlockField(sb.id, 'calloutVariant', 'warning')"
+                    [class]="sb.calloutVariant === 'warning' ? 'bg-[#BF5B34] text-white' : 'bg-[#FBF8F1] text-[#BF5B34] border border-[#E7DFCF]'"
+                    class="rounded-lg py-1 px-2 text-[11px] font-semibold transition-colors cursor-pointer text-center">
+                    {{ lang.tr('Alerte (terracotta)', 'تنبيه') }}
+                  </button>
+                  <button type="button" (click)="updateBlockField(sb.id, 'calloutVariant', 'ministry')"
+                    [class]="sb.calloutVariant === 'ministry' ? 'bg-[#1B4332] text-white' : 'bg-[#FBF8F1] text-[#1B4332] border border-[#E7DFCF]'"
+                    class="rounded-lg py-1 px-2 text-[11px] font-semibold transition-colors cursor-pointer text-center">
+                    {{ lang.tr('Officiel (ministère)', 'رسمي') }}
+                  </button>
+                </div>
+              </div>
+              <div>
                 <span class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Titre de l’encadré', 'عنوان الملاحظة') }}</span>
                 <input dir="auto" type="text"
                   [value]="sb.calloutTitle || ''"
@@ -484,6 +586,13 @@
                   class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 text-[#14251D] outline-none leading-relaxed"></textarea>
               </div>
             }
+          }
+
+          @if (isLessonPlan() && sb.sectionKey && sb.sectionKey !== 'info') {
+            <button type="button" (click)="rewriteLessonSection(sb)" [disabled]="isAiLoading()"
+              class="w-full bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] rounded-xl min-h-11 font-semibold cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-50 disabled:cursor-default">
+              <span class="material-icons text-sm" [class.animate-spin]="isAiLoading()" aria-hidden="true">autorenew</span>{{ lang.tr('Réécrire cette partie avec l’IA', 'إعادة كتابة هذا الجزء بالذكاء الاصطناعي') }}
+            </button>
           }
 
           <!-- Delete selected block -->
@@ -987,7 +1096,15 @@
                   </div>
                 }
                 @case ('callout') {
-                  <div class="bg-[#F2ECDE] rounded-lg p-3 border-s-4 border-[#2D6A4F] space-y-1">
+                  <div
+                    [class]="b.calloutVariant === 'tip'
+                      ? 'bg-[#FBF8F1] border-[#8A5A00]'
+                      : b.calloutVariant === 'warning'
+                      ? 'bg-[#FBF8F1] border-[#BF5B34]'
+                      : b.calloutVariant === 'ministry'
+                      ? 'bg-[#FBF8F1] border-[#1B4332]'
+                      : 'bg-[#F2ECDE] border-[#2D6A4F]'"
+                    class="rounded-lg p-3 border-s-4 space-y-1">
                     @if (editingBlockId() === b.id) {
                       <input dir="auto"
                         type="text"
@@ -995,18 +1112,33 @@
                         (input)="updateBlockField(b.id, 'calloutTitle', $any($event.target).value)"
                         (keydown.escape)="stopInlineEdit()"
                         (click)="$event.stopPropagation()"
-                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-1.5 text-xs font-semibold text-[#2D6A4F] outline-none" />
+                        [class]="b.calloutVariant === 'tip'
+                          ? 'text-[#8A5A00]'
+                          : b.calloutVariant === 'warning'
+                          ? 'text-[#BF5B34]'
+                          : b.calloutVariant === 'ministry'
+                          ? 'text-[#1B4332]'
+                          : 'text-[#2D6A4F]'"
+                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-1.5 text-xs font-semibold outline-none" />
                       <textarea dir="auto"
                         [value]="b.content"
                         (input)="updateBlockContent(b.id, $any($event.target).value)"
                         (blur)="stopInlineEdit()"
                         (keydown.escape)="stopInlineEdit()"
                         (click)="$event.stopPropagation()"
-                        rows="2"
-                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-2 text-xs text-[#14251D] outline-none"></textarea>
+                        rows="3"
+                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-2 text-xs text-[#14251D] outline-none leading-relaxed"></textarea>
                     } @else {
-                      <p class="font-semibold text-[#2D6A4F]">{{ b.calloutTitle || 'Remarque Pédagogique' }}</p>
-                      <p dir="auto" class="text-[#14251D]">{{ b.content || '…' }}</p>
+                      <p
+                        [class]="b.calloutVariant === 'tip'
+                          ? 'text-[#8A5A00]'
+                          : b.calloutVariant === 'warning'
+                          ? 'text-[#BF5B34]'
+                          : b.calloutVariant === 'ministry'
+                          ? 'text-[#1B4332]'
+                          : 'text-[#2D6A4F]'"
+                        class="font-semibold">{{ b.calloutTitle || 'Remarque Pédagogique' }}</p>
+                      <p dir="auto" class="text-[#14251D] whitespace-pre-line leading-relaxed">{{ b.content || '…' }}</p>
                     }
                   </div>
                 }
@@ -1060,6 +1192,25 @@
                 }
                 @case ('divider') {
                   <hr class="border-t border-[#E7DFCF]" />
+                }
+                @case ('stages') {
+                  <app-stages-block [stages]="b.stages || []" [editing]="editingBlockId() === b.id" [duration]="lessonMinutes()" (stagesChange)="updateStages(b.id, $event)" />
+                }
+                @case ('quote') {
+                  <div class="border-s-4 border-[#2D6A4F] bg-[#FBF8F1] p-3 text-[#14251D] rounded-r-lg font-serif">
+                    @if (editingBlockId() === b.id) {
+                      <textarea dir="auto"
+                        [value]="b.content"
+                        (input)="updateBlockContent(b.id, $any($event.target).value)"
+                        (blur)="stopInlineEdit()"
+                        (keydown.escape)="stopInlineEdit()"
+                        (click)="$event.stopPropagation()"
+                        rows="4"
+                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-2 text-xs text-[#14251D] outline-none leading-relaxed"></textarea>
+                    } @else {
+                      <p dir="auto" class="italic text-xs whitespace-pre-line leading-relaxed">{{ b.content || '…' }}</p>
+                    }
+                  </div>
                 }
               }
             </div>
@@ -1155,6 +1306,9 @@
           </button>
           <button (click)="addBlock('divider')" class="bg-white hover:bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
             <span class="material-icons text-sm">horizontal_rule</span>{{ lang.tr('Séparateur', 'فاصل') }}
+          </button>
+          <button (click)="addBlock('quote')" class="bg-white hover:bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer col-span-2">
+            <span class="material-icons text-sm">format_quote</span>{{ lang.tr('Texte / Citation', 'سند / اقتباس') }}
           </button>
         </div>
       </div>

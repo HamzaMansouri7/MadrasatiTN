@@ -128,6 +128,11 @@ export const routes: Routes = [
     title: 'مركز الإنشاء والتأليف | Studio Création - Madrasati TN',
   },
   {
+    // New lesson plans are written in the document editor; saved ones keep their viewer.
+    path: 'lesson-plan/new',
+    redirectTo: '/editor?type=lesson_plan',
+  },
+  {
     path: 'lesson-plan/:id',
     canDeactivate: [studioLeaveGuard],
     loadComponent: () =>

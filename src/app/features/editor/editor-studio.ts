@@ -3,13 +3,19 @@ import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK, SourceInput, chapterById, createStudioSession } from '@core';
-import { CartoucheComponent, SheetChartComponent, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
-import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
+import { CartoucheComponent, createSourceFormState, SheetChartComponent, SourceCardComponent, sourceChecks, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
+import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty, CalloutVariant } from './editor.model';
+import { lessonPlanBlocks, lessonPlanRequest, LessonPlanValues, refillSection, stagesText } from './lesson-plan/lesson-plan-blocks';
+import { StagesBlockComponent } from './lesson-plan/stages-block';
+
+type LessonTemplateId = 'general' | 'lesson_plan_reading_ar' | 'lesson_plan_math_problem' | 'lesson_plan_science_inquiry' | 'lesson_plan_fr_langue';
+/** One row of a template thumbnail: callout box (border colour), quoted text, stages table or text line. */
+interface SketchRow { k: 'box' | 'quote' | 'table' | 'line'; c?: string }
 
 @Component({
   selector: 'app-editor-studio',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent, SheetChartComponent, StudioBarComponent, StudioSessionBannerComponent],
+  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent, SheetChartComponent, SourceCardComponent, StagesBlockComponent, StudioBarComponent, StudioSessionBannerComponent],
   templateUrl: './editor-studio.html',
   styleUrl: './editor-studio.css',
 })
@@ -127,8 +133,135 @@ export class EditorStudioComponent implements OnInit {
       case 'cartouche': return 'verified';
       case 'image': return 'image';
       case 'divider': return 'horizontal_rule';
+      case 'quote': return 'format_quote';
       default: return 'crop_square';
     }
+  }
+
+  // ---- Lesson plan (جذاذة): blocks built in ./lesson-plan, the editor only calls them ----
+  readonly lessonMinutes = signal<number>(45);
+  readonly lessonDurations = [30, 45, 60];
+  readonly isLessonPlan = computed(() => this.docType() === 'lesson_plan');
+  /** General official sheet, or one of the subject templates (drafts: structures not yet checked against real sheets). */
+  readonly lessonTemplates: { id: LessonTemplateId; subject?: SubjectName; fr: string; ar: string; sketch: SketchRow[] }[] = [
+    { id: 'general', fr: 'Générale', ar: 'عامة', sketch: [{ k: 'line' }, { k: 'box', c: '#2D6A4F' }, { k: 'box', c: '#8A5A00' }, { k: 'table' }, { k: 'line' }] },
+    { id: 'lesson_plan_reading_ar', subject: 'اللغة العربية', fr: 'Lecture et compréhension', ar: 'قراءة وفهم', sketch: [{ k: 'box', c: '#1B4332' }, { k: 'quote' }, { k: 'box', c: '#2D6A4F' }, { k: 'box', c: '#8A5A00' }, { k: 'table' }, { k: 'line' }] },
+    { id: 'lesson_plan_math_problem', subject: 'Mathématiques', fr: 'Situation-problème', ar: 'وضعية مشكل', sketch: [{ k: 'box', c: '#1B4332' }, { k: 'box', c: '#8A5A00' }, { k: 'box', c: '#BF5B34' }, { k: 'table' }, { k: 'box', c: '#2D6A4F' }, { k: 'line' }] },
+    { id: 'lesson_plan_science_inquiry', subject: 'Éveil Scientifique', fr: 'Démarche d’investigation', ar: 'تقصٍّ علمي', sketch: [{ k: 'box', c: '#1B4332' }, { k: 'box', c: '#BF5B34' }, { k: 'box', c: '#8A5A00' }, { k: 'table' }, { k: 'box', c: '#2D6A4F' }, { k: 'line' }] },
+    { id: 'lesson_plan_fr_langue', subject: 'Français', fr: 'Séance de langue', ar: 'حصة لغة', sketch: [{ k: 'box', c: '#1B4332' }, { k: 'box', c: '#2D6A4F' }, { k: 'table' }, { k: 'box', c: '#8A5A00' }, { k: 'box', c: '#BF5B34' }, { k: 'line' }] },
+  ];
+  readonly lessonTemplate = signal<LessonTemplateId>('general');
+  /** General sheet plus the template of the chosen subject, if it has one. */
+  readonly visibleLessonTemplates = computed(() => this.lessonTemplates.filter((t) => !t.subject || t.subject === this.docSubject()));
+
+  chooseLessonTemplate(id: LessonTemplateId) {
+    this.lessonTemplate.set(id);
+    if (id === 'general') this.loadLessonPlanPreset();
+    else this.loadTemplatePreset(id);
+  }
+  /** Same source card as the revision file: topic, text, photos, PDF / Word, textbook page. */
+  readonly lessonSource = createSourceFormState();
+
+  private lessonIds() {
+    let n = 0;
+    const stamp = Date.now();
+    return () => `b-${stamp}-${++n}`;
+  }
+
+  /** Empty official sheet: every section ready to fill by hand or by the AI. */
+  loadLessonPlanPreset() {
+    const ar = this.docLanguage() === 'ar';
+    this.docType.set('lesson_plan');
+    this.docTitle.set(ar ? 'عنوان الدرس' : 'Titre de la leçon');
+    this.blocks.set(lessonPlanBlocks({ durationMinutes: this.lessonMinutes() }, this.docLanguage(), this.lessonIds()));
+  }
+
+  setLessonMinutes(minutes: number) {
+    this.lessonMinutes.set(minutes);
+  }
+
+  private lessonRequest(src: SourceInput, sectionToRegenerate?: string) {
+    return lessonPlanRequest(src, {
+      grade: this.docGrade(),
+      subject: this.docSubject(),
+      trimester: this.docTrimester(),
+      topicId: this.docTopicId(),
+      language: this.docLanguage(),
+      durationMinutes: src.durationMinutes ?? this.lessonMinutes(),
+      sectionToRegenerate,
+    });
+  }
+
+  /** The source card's content as a generation source (the textbook page travels as a url). */
+  private lessonSourceInput(): SourceInput {
+    const s = this.lessonSource;
+    const tab = s.tab();
+    return {
+      mode: tab === 'library' ? 'file' : tab,
+      topic: tab === 'topic' ? s.topic().trim() : undefined,
+      topicId: tab === 'topic' ? (s.topicId() ?? undefined) : undefined,
+      text: tab === 'text' ? s.text().trim() : undefined,
+      images: tab === 'photo' ? s.images() : undefined,
+      file: tab === 'file' ? s.file() : undefined,
+      resourceUrl: tab === 'library' ? s.resourceUrl() : undefined,
+      instructions: s.instructions().trim() || undefined,
+    };
+  }
+
+  /** Whole sheet from a Create-hub source, or from the source card in the editor. */
+  async generateLessonPlan(src?: SourceInput) {
+    if (!src && !this.session.validate(sourceChecks(this.lessonSource, (fr, ar) => this.lang.tr(fr, ar)))) return;
+    const source: SourceInput = src ?? this.lessonSourceInput();
+    this.lastGeneration = () => this.generateLessonPlan(src);
+    if (source.durationMinutes) this.lessonMinutes.set(source.durationMinutes);
+    try {
+      const res = await this.session.run(() => this.ai.post('generate-lesson-plan', this.lessonRequest(source), {
+        fallbackError: this.lang.tr('La fiche n’a pas pu être générée.', 'تعذّر توليد الجذاذة.'),
+      }));
+      if (!res) return;
+      if (!res.ok) {
+        this.session.fail(res.error);
+        return;
+      }
+      const values = (res.data['doc'] as { values?: LessonPlanValues } | undefined)?.values;
+      if (!values) {
+        this.session.fail(this.lang.tr('La fiche n’a pas pu être générée.', 'تعذّر توليد الجذاذة.'));
+        return;
+      }
+      this.docType.set('lesson_plan');
+      if (values.topic) this.docTitle.set(values.topic);
+      if (values.durationMinutes) this.lessonMinutes.set(values.durationMinutes);
+      this.blocks.set(lessonPlanBlocks(values, this.docLanguage(), this.lessonIds()));
+      this.session.succeed();
+    } finally {
+      this.saveDraft();
+    }
+  }
+
+  /** Rewrites one part of the sheet; the rest of the teacher's edits stay as they are. */
+  async rewriteLessonSection(block: EditorBlock) {
+    if (!block.sectionKey) return;
+    const previous = { ...block };
+    const res = await this.session.run(() => this.ai.post('generate-lesson-plan', this.lessonRequest({ ...this.lessonSourceInput(), topic: this.docTitle() }, block.sectionKey), {
+      fallbackError: this.lang.tr('Cette partie n’a pas pu être réécrite.', 'تعذّرت إعادة كتابة هذا الجزء.'),
+    }));
+    if (!res) return;
+    if (!res.ok) {
+      this.session.fail(res.error);
+      return;
+    }
+    const values = (res.data['doc'] as { values?: LessonPlanValues } | undefined)?.values;
+    if (!values) {
+      this.session.fail(this.lang.tr('Cette partie n’a pas pu être réécrite.', 'تعذّرت إعادة كتابة هذا الجزء.'));
+      return;
+    }
+    this.blocks.update((list) => list.map((b) => (b.id === block.id ? refillSection(b, values, this.docLanguage()) : b)));
+    this.session.keepUndo(previous);
+    this.session.succeed();
+  }
+
+  updateStages(id: string, stages: EditorBlock['stages']) {
+    this.blocks.update((list) => list.map((b) => (b.id === id ? { ...b, stages } : b)));
   }
 
   isInlineEditable(b: EditorBlock): boolean {
@@ -253,6 +386,7 @@ export class EditorStudioComponent implements OnInit {
   /** Studio bar badge: home practice, exam/exercise sheet or article. */
   readonly studioBadge = computed(() => {
     if (this.isParentMode()) return { icon: 'home', label: this.lang.tr('Atelier maison', 'ورشة التمارين المنزلية') };
+    if (this.isLessonPlan()) return { icon: 'school', label: this.lang.tr('Fiche pédagogique', 'جذاذة') };
     if (this.studioShell() === 'A') return { icon: 'quiz', label: this.lang.tr('Examen / exercices', 'امتحان / تمارين') };
     return { icon: 'article', label: this.lang.tr('Article', 'مقال تربوي') };
   });
@@ -391,7 +525,7 @@ export class EditorStudioComponent implements OnInit {
     const qType = this.route.snapshot.queryParamMap.get('type') as DocumentType | null;
     const src = this.store.consumeLastSourceInput();
 
-    if (qType && ['exam', 'exercise_sheet', 'course', 'article'].includes(qType)) {
+    if (qType && ['exam', 'exercise_sheet', 'course', 'article', 'lesson_plan'].includes(qType)) {
       this.docType.set(qType);
     }
 
@@ -422,6 +556,7 @@ export class EditorStudioComponent implements OnInit {
       if (qType === 'exam') this.loadTemplatePreset('exam_full');
       else if (qType === 'exercise_sheet') this.loadTemplatePreset('exercise_sheet');
       else if (qType === 'course') this.loadTemplatePreset('course_summary');
+      else if (qType === 'lesson_plan') this.loadLessonPlanPreset();
     }
   }
 
@@ -431,6 +566,7 @@ export class EditorStudioComponent implements OnInit {
 
   async applySourceAndGenerate(src: SourceInput, type: DocumentType) {
     this.lastGeneration = () => this.applySourceAndGenerate(src, type);
+    if (type === 'lesson_plan') return this.generateLessonPlan(src);
     const lang = (src.language as 'fr' | 'ar') || (this.docSubject() === 'Français' || this.docSubject() === 'Anglais' ? 'fr' : 'ar');
     const extraInstructions = src.instructions ? ` - Note: ${src.instructions}` : (src.text && src.topic ? ` - Contexte: ${src.text.slice(0, 100)}` : '');
     const effectiveTopic =
@@ -590,7 +726,16 @@ export class EditorStudioComponent implements OnInit {
    * Ready-made sheets in the sheet language. Exercise texts are placeholders ending in "…",
    * so each one shows "Generate this exercise"; points add up to 20.
    */
-  loadTemplatePreset(type: 'exam_full' | 'course_summary' | 'exercise_sheet') {
+  loadTemplatePreset(
+    type:
+      | 'exam_full'
+      | 'course_summary'
+      | 'exercise_sheet'
+      | 'lesson_plan_reading_ar'
+      | 'lesson_plan_math_problem'
+      | 'lesson_plan_science_inquiry'
+      | 'lesson_plan_fr_langue',
+  ) {
     const ar = this.docLanguage() === 'ar';
     const t = (fr: string, arText: string) => (ar ? arText : fr);
     const subject = this.lang.translateSubject(this.docSubject());
@@ -598,7 +743,33 @@ export class EditorStudioComponent implements OnInit {
     let n = 0;
     const id = () => `b-${Date.now()}-${++n}`;
     const heading = (content: string, level: 'heading1' | 'heading2' = 'heading1'): EditorBlock => ({ id: id(), type: level, content });
-    const note = (title: string, content: string): EditorBlock => ({ id: id(), type: 'callout', calloutTitle: title, content });
+    const note = (title: string, content: string, variant: CalloutVariant = 'info'): EditorBlock => ({
+      id: id(),
+      type: 'callout',
+      calloutTitle: title,
+      calloutVariant: variant,
+      content,
+    });
+    const quote = (content: string): EditorBlock => ({ id: id(), type: 'quote', content });
+    const divider = (): EditorBlock => ({ id: id(), type: 'divider', content: '' });
+    const paragraph = (content: string): EditorBlock => ({ id: id(), type: 'paragraph', content });
+    const cartouche = (): EditorBlock => ({ id: id(), type: 'cartouche', content: '' });
+    const tableExercise = (
+      title: string,
+      headers: string[],
+      rows: string[][],
+    ): EditorBlock => ({
+      id: id(),
+      type: 'exercise',
+      exerciseTitle: title,
+      exerciseFormat: 'table',
+      exercisePoints: 5,
+      showBaremeFrame: false,
+      tableHeaders: headers,
+      tableRows: rows,
+      content: '',
+      showSolution: false,
+    });
     const exercise = (
       no: number,
       title: string,
@@ -641,7 +812,7 @@ export class EditorStudioComponent implements OnInit {
       const c3 = { label: 'C3', detail: t('Cohérence de la réponse', 'انسجام الإجابة') };
       const c4 = { label: 'C4', detail: t('Perfectionnement', 'التميّز') };
       this.blocks.set([
-        { id: id(), type: 'cartouche', content: '' },
+        cartouche(),
         note(t('Consignes générales', 'تعليمات عامة'), t('Lis attentivement chaque consigne. Écris lisiblement. Durée : 60 minutes.', 'أقرأ كل تعليمة بانتباه. أكتب بخط واضح. المدة : 60 دقيقة.')),
         heading(t('Partie I : Je mobilise mes acquis', 'الجزء الأول : أوظّف مكتسباتي')),
         exercise(1, t('Je choisis la bonne réponse', 'أختار الإجابة الصحيحة'), 3, 'qcm', t('Coche la bonne réponse…', 'أشطب الإجابة الصحيحة…'), 'Facile', [c1]),
@@ -653,6 +824,150 @@ export class EditorStudioComponent implements OnInit {
         heading(t('Partie III : Je vais plus loin', 'الجزء الثالث : أتعمّق')),
         exercise(6, t('Défi', 'تحدٍّ'), 2, 'free', t('Une question pour aller plus loin…', 'سؤال للتعمّق…'), 'Difficile', [c4]),
       ]);
+    } else if (type === 'lesson_plan_reading_ar') {
+      this.docType.set('lesson_plan');
+      this.docSubject.set('اللغة العربية');
+      this.docTitle.set('جذاذة قراءة وفهم المقروء — اللغة العربية');
+      this.blocks.set([
+        cartouche(),
+        note(
+          'بيانات التخطيط البيداغوجي والكفايات المستهدفة',
+          '• كفاية المادة: يتمثل المعنى الصريح والضمني لنص مكتوب ويتفاعل معه.\n• الهدف المميز: يحدد مكونات النص (شخصيات، أحداث، زمان، مكان) ويتبين العلاقات القائمة بينها.\n• هدف الحصة: أن يقرأ المتعلم المقطع قراءة جهرية معبرة مسترسلة ويجيب عن أسئلة الفهم بدقة.\n• الوسائل والمعينات: كتاب القراءة، السبورة، المشهد المصاحب، الألواح، بطاقات المعجم.',
+          'ministry',
+        ),
+        quote('نص السند القرائي المعتمد: [اكتب هنا نص المقطع القرائي المستهدف من كتاب القراءة، الصفحة، مع ترقيم الأسطر والفقرات...]'),
+        heading('سُلّم الفهم القرائي (عتبات التدرج المعرفي)', 'heading2'),
+        note('1. المعنى الصريح المباشر (أسئلة الاستخراج والاسترجاع)', 'من هي شخصيات النص؟ أين ومتى دارت الأحداث؟ ما هو الحدث المفصلي الذي غيّر مجرى القصة؟ استخرج قرينة نصية تدل على...', 'info'),
+        note('2. المعنى الضمني والاستدلالي (التحليل وتفسير الدوافع)', 'لماذا تصرف البطل بهذا الأسلوب؟ ما الذي تشعر به الشخصية في الفقرة الثانية؟ ما الدلالة الخفية لتصرف الأم؟ علل إجابتك بقرائن من النص.', 'tip'),
+        note('3. إثراء الرصيد اللغوي وأغني لغتي (المعجم والدلالة)', 'شرح المفردات الجديدة: مرادف كلمة (...)، ضد كلمة (...). شبكة مفردات المحور، عائلة الكلمة، وتوظيف الصيغة المستهدفة في جمل جديدة.', 'warning'),
+        note('4. التفاعل والنقد وإبداء الرأي (الموقف الشخصي والإنتاج)', 'ما رأيك في تصرف الشخصية الرئيسية؟ لو كنت في مكانها كيف كنت ستتصرف؟ هل توافق الكاتب في خاتمة القصة؟ اقترح نهاية بديلة لأحداث النص.', 'ministry'),
+        divider(),
+        heading('سيرورة الحصة والأنشطة التعليمية التعلمية (الجدول الديداكتيكي)', 'heading2'),
+        tableExercise(
+          'مراحل سير الدرس وأدوار المعلم والمتعلم',
+          ['المرحلة والمدة', 'دور المعلم (التعليمات والمواكبة)', 'نشاط المتعلم (الأداء والإنجاز)', 'صيغ العمل والتقويم'],
+          [
+            ['1. التهيئة والتحفيز (5 د)', 'طرح أسئلة تمهيدية وربط الدرس بموضوع المحور واستدعاء الرصيد', 'التفاعل الشفوي واستحضار التجارب السابقة', 'حوار جماعي'],
+            ['2. الاستكشاف وبناء الفرضيات (10 د)', 'دعوة لملاحظة المشهد وقراءة العنوان، طرح سؤال التوقع', 'تأمل عتبات النص وصياغة فرضيات المعنى وتدوينها على السبورة', 'فردي ثم جماعي'],
+            ['3. القراءة الصامتة ثم الجهرية (10 د)', 'قراءة نموذجية معبرة، توجيه القراءات الفردية وتصويب النطق وعلامات الوقف', 'قراءة صامتة واعية، تليها قراءات جهرية مراعية لسلامة المخارج والتنغيم', 'فردي متناوب'],
+            ['4. الفهم المعمق وبناء المعنى (15 د)', 'طرح أسئلة الفهم وتنشيط الرصيد المعجمي وفحص الفرضيات الأولية', 'استخراج القرائن، تفكيك بنية النص، شرح المفردات وتوظيف التراكيب', 'مجموعات / ألواح'],
+            ['5. الاستثمار وإعادة الإنتاج (10 د)', 'اقتراح نشاط تلخيص أو مسرحة أو إنتاج فقرة قصيرة تعبر عن الرأي', 'إعادة صياغة الفكرة، كتابة فقرة تعبيرية موجزة على الكراس', 'فردي على الكراس'],
+            ['6. التقييم والدعم (5 د)', 'رصد تحقق الهدف الإجرائي، تشخيص الصعوبات القرائية الفردية', 'قراءة ختامية متقنة، تدوين الواجب المنزلي', 'فردي / بطاقات'],
+          ],
+        ),
+        note('الفارق البيداغوجي ومعالجة التعثرات', '• لدعم المتعثرين: تجزئة الكلمات الصعبة مقطعياً، تدريب إضافي على الربط والتنغيم.\n• للتميز والإثراء: تلخيص النص بأسلوب شخصي، استخراج حكم ومشاعر النص.', 'tip'),
+        paragraph('ملاحظات التقييم الذاتي للمعلم: مدى انخراط التلاميذ، الصعوبات المرصودة، التعديلات المقترحة للحصة القادمة: ____________________________________________________'),
+      ]);
+    } else if (type === 'lesson_plan_math_problem') {
+      this.docType.set('lesson_plan');
+      this.docSubject.set('Mathématiques');
+      this.docTitle.set('جذاذة رياضيات — وضعية مشكل وبناء مفهوم');
+      this.blocks.set([
+        cartouche(),
+        note(
+          'بطاقة التخطيط والكفايات الرياضية',
+          '• الكفاية المستهدفة: حل وضعيات مشكل دالة بتوظيف المفاهيم الرياضية والعمليات الحسابية.\n• الهدف المميز: يتعرف على المفهوم الرياضي ويوظف العلاقات والخصائص المناسبة لحل المسألة.\n• هدف الحصة: أن يبني المتعلم مفهوم (...) ويتوصل إلى القاعدة عبر التقصي والمقارعة والمأسسة.\n• الوسائل والأدوات: الألواح، مساطر وشبكات تربيعية، مجسمات، بطاقات أعداد، كراس التمارين.',
+          'ministry',
+        ),
+        note('الحساب الذهني والمكتسبات القبلية (5 - 8 دقائق)', 'تدريب الحساب السريع اليومي: جداول الضرب، مضاعفات الأعداد، التفكيك والتركيب، التحويل بين الوحدات على الألواح.', 'tip'),
+        note(
+          'حجرة الوضعية المشكل وسند الانطلاق (Situation-Problème)',
+          'نص الوضعية المشكل والبيانات الحياتية:\n[اكتب هنا نص المسألة الدالة بسياق شيق، معطيات عددية دقيقة، وعائق معرفي يدعو التلميذ لبناء المفهوم الجديد لحله]\n\nالتعليمة للتلميذ: ساعد (...) في إيجاد الحل مع تبرير إجابتك برسم توضيحي أو عملية رياضية سليمة.',
+          'warning',
+        ),
+        heading('سيرورة بناء المفهوم الرياضي (مسار البحث والمقارعة)', 'heading2'),
+        tableExercise(
+          'المحطات الديداكتيكية لمعالجة الوضعية وبناء المفهوم',
+          ['المحطة والزمن', 'إجراءات المعلم والتعاقد الديداكتيكي', 'نشاط المتعلم واستراتيجيات الحل', 'نمط العمل'],
+          [
+            ['1. استكشاف المشكل والتعاقد (5 د)', 'قراءة الوضعية، ضمان فهم المصطلحات، تحديد شروط الإنجاز والزمن', 'قراءة فردية واعية، استخراج المعطيات الصريحة وتحديد المطلوب', 'جماعي'],
+            ['2. البحث الحر والتجريب (15 د)', 'مواكبة المحاولات ورصد العوائق دون تقديم الحل الجاهز', 'محاولات فردية، صياغة فرضيات حل، ثم تشارك ومقارنة داخل المجموعة', 'فردي ثم مجموعات'],
+            ['3. المقارعة والحوار الأفقي (12 د)', 'تسيير النقاش بين المجموعات، تشجيع الحوار الأفقي وتفنيد الأخطاء بالحجة', 'عرض الاستراتيجيات المختلفة على السبورة، إثبات الصواب ودحض الخطأ', 'حوار أفقي (مجموعات ↔ قسم)'],
+            ['4. الحوصلة والمأسسة (8 د)', 'تجريد المفهوم وصياغة القاعدة الرياضية الرسمية والترميز الصحيح', 'استخلاص القاعدة الرسمية وتدوينها في دفاتر القواعد', 'جماعي مؤطر'],
+            ['5. التطبيق الفردي والتقييم (10 د)', 'طرح تمارين تطبيقية مدرجة للتثبيت، رصد التعثرات الفردية الفورية', 'إنجاز فردي مستقل على الكراس والتصحيح الذاتي والجماعي', 'فردي مستقل'],
+          ],
+        ),
+        note('الحوصلة وصياغة القاعدة الرياضية (أتذكّر وأطبّق)', '• نص القاعدة المستخلصة: [صياغة قانون الحساب أو الخاصية الهندسية أو قاعدة نظام القيس]\n• مثال عددي تطبيقي: [مثال نموذجي محلول يوضح خطوات التطبيق وتجنب الأخطاء]', 'info'),
+        note('الأخطاء الشائعة والفارق البيداغوجي', '• الأخطاء المتوقعة: الخلط بين الوحدات، إغفال الترتيب المنطقي للعمليات.\n• خطة المعالجة: العودة إلى التمثيل المحسوس، التدرج من البسيط إلى المركب.', 'tip'),
+        paragraph('ملاحظات التقييم الذاتي للمعلم: مدى استيعاب المفهوم، نسب النجاح في التطبيق الفردي: ____________________________________________________'),
+      ]);
+    } else if (type === 'lesson_plan_science_inquiry') {
+      this.docType.set('lesson_plan');
+      this.docSubject.set('Éveil Scientifique');
+      this.docTitle.set('جذاذة إيقاظ علمي — نهج التقصي العلمي');
+      this.blocks.set([
+        cartouche(),
+        note(
+          'بطاقة التخطيط والكفايات العلمية',
+          '• كفاية المادة: حل وضعيات مشكل دالة بإجراء مناولات واستكشاف ظواهر الطبيعة والمادة.\n• الهدف المميز: يفسر الظاهرة العلمية / يتبين وظيفة العضو / يثبت بالتجربة خاصية المادة.\n• هدف الحصة: أن يثبت المتعلم عبر التجريب صحة الفرضية ويصوغ الاستنتاج العلمي السليم.\n• أدوات المناولة والتجريب: أنابيب، موازين، أحواض ماء، مصابيح وأسلاك، مجسمات بيئية، عدسات.',
+          'ministry',
+        ),
+        note(
+          'وضعية الانطلاق وسؤال التقصي العلمي (المشكل المركزي)',
+          '• واقعة الانطلاق المشاهدة: [وصف الظاهرة الطبيعية أو التجربة المفاجئة التي تثير دهشة التلاميذ وتسائلهم]\n• سؤال التقصي العلمي المركزي: [صياغة سؤال المشكل بدقة: كيف؟ لماذا؟ ما أثر (...) على (...)؟]',
+          'warning',
+        ),
+        note(
+          'الفرضيات والتصورات الأولية للمتعلمين',
+          'تدوين الفرضيات المؤقتة المصوغة من التلاميذ قبل الاختبار:\n1. نفترض أن: ___________________________________\n2. ربما يعود السبب إلى: ___________________________________\n3. نعتقد أن الظاهرة تحدث بسبب: ___________________________________',
+          'tip',
+        ),
+        heading('جدول التجريب والتقصي العلمي وتسجيل الملاحظات (Grille d’Expérimentation)', 'heading2'),
+        tableExercise(
+          'بروتوكول التجريب والمشاهدات المخبرية',
+          ['المرحلة / المجموعة', 'المناولة والتجربة المنجزة', 'الملاحظة والنتيجة المسجلة', 'الاستنتاج العلمي الجزئي'],
+          [
+            ['المجموعة 1 (الشاهد)', 'نبتة في تربة خصبة + ماء + ضوء + هواء', 'نمو طبيعي وسليم للأوراق والساق', 'الظروف الملائمة للنمو متوفرة'],
+            ['المجموعة 2 (حرمان من الماء)', 'نبتة في ضوء وهواء وتربة دون ري', 'ذبول الأوراق وجفاف الساق بعد 4 أيام', 'الماء عنصر ضروري لحياة النبات'],
+            ['المجموعة 3 (حجب الضوء)', 'نبتة مروية في غرفة مظلمة تمامًا', 'اصفرار الأوراق واستطالة شاحبة للساق', 'الضوء ضروري لعملية التركيب الضوئي'],
+            ['المجموعة 4 (عزل الهواء)', 'تغطية النبتة بكيس بلاستيكي مفرغ من الهواء', 'تعفن الأوراق وتوقف التنفس', 'الهواء ضروري لتنفس النباتات'],
+          ],
+        ),
+        note(
+          'الاستنتاج العلمي والقاعدة المستخلصة (البنينة والمأسسة)',
+          '• التحقق من الفرضيات: إثبات صحة الفرضية (1) ودحض الفرضيات الخاطئة.\n• الاستنتاج العلمي النهائي (أحفظ وأفهم): [صياغة الخلاصة العلمية الدقيقة والرسمية التي يدونها التلميذ على كراسه].',
+          'info',
+        ),
+        note(
+          'التقييم التكويني والامتداد الحياتي والبيئي',
+          '• نشاط تقييمي تطبيقي: تفسير سلوك بيئي أو ظاهرة فيزيائية جديدة بالاعتماد على المفهوم المكتسب.\n• توجيه عملي: سلوك وقائي أو بيئي موصى به في الحياة اليومية.',
+          'ministry',
+        ),
+        paragraph('ملاحظات التقييم الذاتي للمعلم: مدى التزام التلاميذ بشروط السلامة والملاحظة العلمية الدقيقة: ____________________________________________________'),
+      ]);
+    } else if (type === 'lesson_plan_fr_langue') {
+      this.docType.set('lesson_plan');
+      this.docSubject.set('Français');
+      this.docTitle.set('Fiche pédagogique Français — Séance de Langue (FLE)');
+      this.blocks.set([
+        cartouche(),
+        note(
+          'Fiche de préparation & Objectifs spécifiques (OS / OPA)',
+          '• Compétence terminale : Intégrer les mécanismes linguistiques dans des situations de communication significatives.\n• Objectif Spécifique (OS) : L\'élève sera capable d\'identifier la notion (...), de la manipuler et de l\'employer correctement dans un énoncé court.\n• Prérequis : Notions grammaticales et lexicales antérieures requises.\n• Matériel didactique : Manuel de l\'élève, tableau, étiquettes-mots, ardoises individuelles, cahier de classe.',
+          'ministry',
+        ),
+        note(
+          'Corpus textuel d\'ancrage (Support d\'observation)',
+          'Phrases supports extraites du texte de lecture :\n1. Ali prépare son cartable le soir.\n2. Les enfants jouent dans la cour de l\'école.\n3. Nous écrivons la date sur nos ardoises.\n\nConsigne d\'observation : Lisez les phrases. Que remarquez-vous sur les mots en gras ?',
+          'info',
+        ),
+        heading('Déroulement de la séance (Démarche inductive et active)', 'heading2'),
+        tableExercise(
+          'Étapes didactiques de la séance de langue',
+          ['Étape & Durée', 'Rôle du maître (Consignes & Guidage)', 'Activité de l\'élève (Manipulation & Réflexion)', 'Modalité de travail'],
+          [
+            ['1. Rappel & Éveil (5 min)', 'Faire lire le corpus, poser des questions de réactivation des acquis', 'Lecture expressive, rappel des règles antérieures', 'Collectif'],
+            ['2. Observation & Découverte (10 min)', 'Poser des questions de focalisation, souligner les éléments cibles', 'Repérer les indices formels, émettre des remarques spontanées', 'Collectif / Tableau'],
+            ['3. Manipulation & Analyse (15 min)', 'Proposer des manipulations actives : substitution, suppression, permutation', 'Déplacer les étiquettes, tester les régularités, formuler la règle', 'Binômes / Ardoise'],
+            ['4. Structuration : Je retiens (5 min)', 'Guider la synthèse écrite claire, formaliser la règle grammaticale', 'Recopier et encadrer la trace écrite de référence', 'Individuel / Cahier'],
+            ['5. Entraînement & Systématisation (7 min)', 'Donner des exercices d\'application directe gradués (oraux puis écrits)', 'Compléter des phrases à trous, transformer des énoncés', 'Individuel sur ardoise'],
+            ['6. Évaluation & Remédiation (5 min)', 'Proposer un item de contrôle formatif pour mesurer la maîtrise', 'Produire une phrase correcte intégrant la règle', 'Individuel / Évaluation'],
+          ],
+        ),
+        note('Trace écrite institutionnalisée : « Je retiens »', '• La règle en bref : [Formulation courte et accessible de la règle de fonctionnement]\n• Exemple type : [Exemple de référence souligné et analysé]\n• Attention à l\'exception : [Cas particulier ou piège fréquent à éviter]', 'tip'),
+        note('Différenciation et remédiation des difficultés', '• Soutien (élèves en difficulté) : Fournir des étiquettes de couleurs distinctes, limiter la tâche à l\'identification.\n• Dépassement (élèves autonomes) : Rédiger un court paragraphe de 3 phrases employant la structure.', 'warning'),
+        paragraph('Bilan réflexif de l\'enseignant(e) : Degré de réussite de la séance, élèves nécessitant une remédiation au prochain cours : ____________________________________________________'),
+      ]);
     } else {
       this.docType.set('course');
       this.docTitle.set(t(`Fiche de synthèse : ${subject} (${grade})`, `ملخّص درس : ${subject} (${grade})`));
@@ -662,7 +977,7 @@ export class EditorStudioComponent implements OnInit {
         heading(t('La règle', 'القاعدة'), 'heading2'),
         note(t('À retenir', 'أحفظ'), t('Énoncé de la règle ou de la définition…', 'نصّ القاعدة أو التعريف…')),
         heading(t('Exemples', 'أمثلة'), 'heading2'),
-        { id: id(), type: 'paragraph', content: t('Exemple 1 : …\nExemple 2 : …', 'مثال 1 : …\nمثال 2 : …') },
+        paragraph(t('Exemple 1 : …\nExemple 2 : …', 'مثال 1 : …\nمثال 2 : …')),
         note(t('Attention !', 'انتبه !'), t('L’erreur fréquente à éviter…', 'الخطأ الشائع الذي أتجنّبه…')),
         heading(t('Je vérifie', 'أتثبّت'), 'heading2'),
         exercise(1, t('Je complète', 'أكمل'), 10, 'fill_blanks', t('Complète en appliquant la règle…', 'أكمل بتطبيق القاعدة…'), 'Facile'),
@@ -696,6 +1011,10 @@ export class EditorStudioComponent implements OnInit {
         return 'Image VPS';
       case 'divider':
         return 'Séparateur';
+      case 'stages':
+        return 'Déroulement';
+      case 'quote':
+        return 'Texte / Citation';
       default:
         return 'Bloc';
     }
@@ -895,6 +1214,7 @@ export class EditorStudioComponent implements OnInit {
     { value: 'exam', icon: 'assignment', fr: 'Examen A4', ar: 'امتحان رسمي', sub: 'Évaluation / Examen' },
     { value: 'course', icon: 'menu_book', fr: 'Cours & Résumé', ar: 'درس وتلخيص', sub: 'Cours A4' },
     { value: 'exercise_sheet', icon: 'fact_check', fr: "Fiche d'Exercices", ar: 'تمارين تطبيقية', sub: 'Exercices' },
+    { value: 'lesson_plan', icon: 'school', fr: 'Fiche Pédagogique', ar: 'جذاذة بيداغوجية', sub: 'Plan de leçon' },
     { value: 'article', icon: 'article', fr: 'Article de Blog', ar: 'مقال توجيهي', sub: 'Blog pédagogique' },
   ];
 
@@ -916,16 +1236,22 @@ export class EditorStudioComponent implements OnInit {
   ];
 
   readonly docGradeOptions: { value: GradeLevel; icon: string; fr: string; ar: string }[] = [
-    { value: '1ère Année', icon: 'looks_one', fr: '1ère Année', ar: 'الأولى ابتدائي' },
-    { value: '2ème Année', icon: 'looks_two', fr: '2ème Année', ar: 'الثانية ابتدائي' },
-    { value: '3ème Année', icon: 'looks_3', fr: '3ème Année', ar: 'الثالثة ابتدائي' },
-    { value: '4ème Année', icon: 'looks_4', fr: '4ème Année', ar: 'الرابعة ابتدائي' },
-    { value: '5ème Année', icon: 'looks_5', fr: '5ème Année', ar: 'الخامسة ابتدائي' },
-    { value: '6ème Année', icon: 'looks_6', fr: '6ème Année', ar: 'السادسة (مناظرة)' },
+    { value: '1ère Année', icon: 'looks_one', fr: '1ère Année', ar: 'الأولى' },
+    { value: '2ème Année', icon: 'looks_two', fr: '2ème Année', ar: 'الثانية' },
+    { value: '3ème Année', icon: 'looks_3', fr: '3ème Année', ar: 'الثالثة' },
+    { value: '4ème Année', icon: 'looks_4', fr: '4ème Année', ar: 'الرابعة' },
+    { value: '5ème Année', icon: 'looks_5', fr: '5ème Année', ar: 'الخامسة' },
+    { value: '6ème Année', icon: 'looks_6', fr: '6ème Année', ar: 'السادسة' },
   ];
 
   setDocSubject(s: SubjectName) {
     this.docSubject.set(s);
+    this.resetForeignLessonTemplate(s);
+  }
+
+  private resetForeignLessonTemplate(s: SubjectName) {
+    const t = this.lessonTemplates.find(x => x.id === this.lessonTemplate());
+    if (t?.subject && t.subject !== s) this.lessonTemplate.set('general');
   }
 
   setDocGrade(g: GradeLevel) {
@@ -933,7 +1259,7 @@ export class EditorStudioComponent implements OnInit {
   }
 
   onDocSubjectChange(e: Event) {
-    this.docSubject.set((e.target as HTMLSelectElement).value as SubjectName);
+    this.setDocSubject((e.target as HTMLSelectElement).value as SubjectName);
   }
 
   onDocGradeChange(e: Event) {
@@ -1417,6 +1743,7 @@ export class EditorStudioComponent implements OnInit {
         if (b.type === 'callout') {
           return `> [!NOTE]\n> **${b.calloutTitle || 'Conseil'}**\n> ${b.content}`;
         }
+        if (b.type === 'stages') return stagesText(b.stages, this.docLanguage());
         if (b.type === 'heading1') return `# ${b.content}`;
         if (b.type === 'heading2') return `## ${b.content}`;
         return b.content;
