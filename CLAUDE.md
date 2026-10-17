@@ -54,3 +54,18 @@ Any UI work must follow [DESIGN.md](DESIGN.md) — the "Cartouche officielle" de
 ## Facebook auto-post
 
 Published worksheets and published infographics (course/exercise) are auto-posted to the Facebook Page from `POST /api/docs` via [src/server/facebook.ts](src/server/facebook.ts) (Graph API, fire-and-forget, deduped by doc id in `docs/fb-posted.json`). Env: `FB_PAGE_ID`, `FB_PAGE_TOKEN` (Page token with `pages_manage_posts` + `pages_read_engagement`), `PUBLIC_BASE_URL`; disabled if any is unset. Never commit or print the token.
+
+## Agent team (quota routing)
+
+Main session (Opus) plans and decides. Delegate by size via the Agent tool:
+- `scout` (Haiku): searches, file reads/summaries, usages, renames, single-command runs, trivial one-file edits.
+- `builder` (Sonnet): executing an agreed plan, multi-file implementation.
+- `architect` (Opus): hard design questions, unclear bugs, plan/diff review — only when the main session needs a second deep pass.
+Keep max 2 background agents at once. Do quick one-liners directly instead of spawning an agent.
+
+Escalation rules:
+- Upgrade builder → architect when builder fails twice on the same subtask, the work is security-critical (auth, secrets, Firestore rules), or it is a new design rather than a known pattern.
+- Never give scout a task needing judgment: a wrong Haiku pass re-run on Opus costs double.
+- Need deeper thinking on the same model? Raise `effort` before jumping a model tier.
+- Use plan mode for new features and tough bugs; skip it for known patterns and small tweaks.
+- Final review of a finished feature (before commit) goes to `architect`.
