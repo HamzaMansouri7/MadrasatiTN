@@ -4,7 +4,8 @@
  * attempt starts only when the current one fails or passes 60 s. The SVG fallback is NOT here (it needs the text
  * chain): callers use it when this throws.
  *
- *  1. flux-2-klein-4b   NVIDIA (1.9-2.9 s, no neurons, ~30 in flight then 429) -> Cloudflare (~104 neurons, 8 s) -> Pollinations (key, 0.005 pollen)
+ *  1. flux-2-klein-4b   NVIDIA, every key in turn (1.9-6 s, no neurons, ~30 in flight then 429, 20 s cutoff)
+ *                       -> Cloudflare (~104 neurons, 8 s) -> Pollinations (key, 0.005 pollen)
  *  2. flux-1-schnell    Cloudflare (~326 neurons, square) -> Pollinations (key, 0.002 pollen)
  *  3. flux-2-klein-9b   Cloudflare (~1,364 neurons), only while today's Cloudflare usage is under 70%
  *  4. SDXL lightning    Cloudflare
@@ -54,7 +55,13 @@ interface ImageAttempt {
   model: string;
   group: Provider;
   enabled: (env: Env, ctx: ChainContext) => boolean;
-  generate: (env: Env, req: ImageCall, fetchImpl: FetchLike, signal: AbortSignal) => Promise<Buffer>;
+  /** One attempt per key (NVIDIA: one key per account, each with its own rate limit). */
+  keys?: (env: Env) => string[];
+  /** Key used by this attempt, set when the chain expands `keys`. */
+  key?: string;
+  /** Per-attempt cutoff overriding the chain default (NVIDIA hangs instead of failing when overloaded). */
+  timeoutMs?: number;
+  generate: (env: Env, req: ImageCall, fetchImpl: FetchLike, signal: AbortSignal, key: string) => Promise<Buffer>;
 }
 
 interface ChainContext {
@@ -87,7 +94,17 @@ export const imageExt = (b: Buffer): ImageExt => (b[0] === 0x89 ? 'png' : b[0] =
 const clean = (v: string | undefined): string => (v || '').trim().replace(/^["']|["']$/g, '');
 const cfAccount = (env: Env): string => clean(env['CLOUDFLARE_ACCOUNT_ID']);
 const cfToken = (env: Env): string => clean(env['CLOUDFLARE_API_TOKEN'] || env['CLOUDFLARE_TOKEN']);
-const nvKey = (env: Env): string => clean(env['NVIDIA_API_KEY']);
+/** Every NVIDIA_API_KEY* env var (comma lists ok), deduped: NVIDIA_API_KEY, NVIDIA_API_KEY_2, ... */
+export const nvidiaKeys = (env: Env): string[] => [
+  ...new Set(
+    Object.entries(env)
+      .filter(([k, v]) => k.startsWith('NVIDIA_API_KEY') && typeof v === 'string')
+      .sort(([a], [b]) => a.localeCompare(b))
+      .flatMap(([, v]) => (v as string).split(/[,\n]/))
+      .map(clean)
+      .filter((k) => k.length > 0),
+  ),
+];
 const pollKey = (env: Env): string => clean(env['POLLINATIONS_API_KEY']);
 const paidKey = (env: Env): string => clean(env['GEMINI_PAID_API_KEY']);
 const hasCf = (env: Env): boolean => !!cfAccount(env) && !!cfToken(env);
@@ -175,15 +192,19 @@ const expensiveMaxShare = (env: Env): number => {
 
 // --- NVIDIA build (hosted FLUX.2 klein 4B): JSON in, base64 out ---
 
+const NVIDIA_TIMEOUT_MS = 20_000;
+
 const nvidia = (model: string, slug: string): ImageAttempt => ({
   id: `nvidia/${model}`,
   model,
   group: 'nvidia',
-  enabled: (env) => !!nvKey(env),
-  async generate(env, req, fetchImpl, signal) {
+  enabled: (env) => nvidiaKeys(env).length > 0,
+  keys: nvidiaKeys,
+  timeoutMs: NVIDIA_TIMEOUT_MS,
+  async generate(_env, req, fetchImpl, signal, key) {
     const res = await fetchImpl(`https://ai.api.nvidia.com/v1/genai/${slug}`, {
       method: 'POST',
-      headers: { Authorization: `Bearer ${nvKey(env)}`, Accept: 'application/json', 'Content-Type': 'application/json' },
+      headers: { Authorization: `Bearer ${key}`, Accept: 'application/json', 'Content-Type': 'application/json' },
       body: JSON.stringify({ prompt: req.prompt, width: req.width, height: req.height, seed: req.seed, steps: 4 }),
       signal,
     });
@@ -289,7 +310,13 @@ export const resetImageCooldowns = (): void => cooldowns.clear();
 const cooling = (a: ImageAttempt, now: number): boolean =>
   (cooldowns.get(a.id) ?? 0) > now || (cooldowns.get(`group:${a.group}`) ?? 0) > now;
 
-function applyCooldown(a: ImageAttempt, err: unknown, now: number): string {
+const TIMEOUT_COOLDOWN_MS = 2 * 60_000;
+
+function applyCooldown(a: ImageAttempt, err: unknown, now: number, timedOut: boolean): string {
+  if (timedOut) {
+    cooldowns.set(a.id, now + TIMEOUT_COOLDOWN_MS); // a hang usually lasts: skip this attempt (this key only) for a while
+    return 'timeout';
+  }
   const c = classifyProviderError(err instanceof Error ? err.message : String(err));
   if (c.cooldownMs <= 0) {
     cooldowns.set(a.id, now + 15_000); // unknown failure: short pause so we do not hammer it
@@ -305,7 +332,7 @@ export interface ImageChainOptions {
   env?: Env;
   fetchImpl?: FetchLike;
   now?: () => number;
-  /** Per-attempt cutoff; default 60 s. */
+  /** Per-attempt cutoff for every attempt (tests); default 60 s, NVIDIA 20 s. */
   timeoutMs?: number;
 }
 
@@ -328,7 +355,9 @@ function attemptsFor(env: Env, ctx: ChainContext, preferModel: string | undefine
       list = list.filter((a) => wanted.includes(a.group as Provider));
       list.sort((a, b) => wanted.indexOf(a.group as Provider) - wanted.indexOf(b.group as Provider));
     }
-    return list;
+    return list.flatMap((a) =>
+      a.keys ? a.keys(env).map((key, i) => ({ ...a, id: i === 0 ? a.id : `${a.id}#${i + 1}`, key })) : [a],
+    );
   });
 }
 
@@ -336,7 +365,6 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
   const env = options.env ?? (process.env as Env);
   const fetchImpl = options.fetchImpl ?? fetch;
   const now = options.now ?? Date.now;
-  const timeoutMs = options.timeoutMs ?? ATTEMPT_TIMEOUT_MS;
   const full: ImageCall = {
     prompt: req.prompt,
     seed: req.seed ?? 0,
@@ -363,10 +391,11 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
   let lastErr: unknown;
   for (const attempt of list) {
     const ctl = new AbortController();
-    const timer = setTimeout(() => ctl.abort(), timeoutMs);
+    const limitMs = options.timeoutMs ?? attempt.timeoutMs ?? ATTEMPT_TIMEOUT_MS;
+    const timer = setTimeout(() => ctl.abort(), limitMs);
     const started = now();
     try {
-      const buf = await attempt.generate(env, request(attempt), fetchImpl, ctl.signal);
+      const buf = await attempt.generate(env, request(attempt), fetchImpl, ctl.signal, attempt.key ?? '');
       if (!isImageBuffer(buf)) throw new Error(`${attempt.id} returned no image`);
       console.info(`[image] ${attempt.id} OK in ${now() - started} ms`);
       return {
@@ -377,8 +406,9 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
         fallback: attempt.model !== FIRST_MODEL && attempt.model !== req.preferModel,
       };
     } catch (err) {
-      lastErr = ctl.signal.aborted ? new Error(`${attempt.id} timed out after ${timeoutMs} ms`) : err;
-      const kind = applyCooldown(attempt, lastErr, now());
+      const timedOut = ctl.signal.aborted;
+      lastErr = timedOut ? new Error(`${attempt.id} timed out after ${limitMs} ms`) : err;
+      const kind = applyCooldown(attempt, lastErr, now(), timedOut);
       const msg = lastErr instanceof Error ? lastErr.message : String(lastErr);
       console.warn(`[image] ${attempt.id} failed (${kind}) in ${now() - started} ms: ${msg}`.slice(0, 300));
     } finally {

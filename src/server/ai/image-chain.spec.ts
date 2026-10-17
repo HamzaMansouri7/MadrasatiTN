@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import {
   generateImage,
+  nvidiaKeys,
   resetImageCooldowns,
   resetCloudflareUsage,
   isImageBuffer,
@@ -152,6 +153,36 @@ describe('generateImage: by-model chain', () => {
     expect(r.provider).toBe('cloudflare/flux-2-klein-4b');
   });
 
+  it('every NVIDIA key is its own attempt: key 2 answers when key 1 is rate-limited', async () => {
+    const auths: string[] = [];
+    const f = fakeFetch((u, init) => {
+      if (u.includes('nvidia.com')) {
+        const auth = (init?.headers as Record<string, string>)['Authorization'];
+        auths.push(auth);
+        return auth === 'Bearer nv-test' ? fail(429)() : nvidiaRes();
+      }
+      return byHost()(u);
+    });
+    const r = await generateImage({ prompt: PROMPT }, { env: { ...KEYS, NVIDIA_API_KEY_2: 'nv-two' }, fetchImpl: f });
+    expect(r.provider).toBe('nvidia/flux-2-klein-4b#2');
+    expect(auths).toEqual(['Bearer nv-test', 'Bearer nv-two']);
+  });
+
+  it('a hanging NVIDIA key is cut and skipped on the next picture', async () => {
+    const hits: string[] = [];
+    const f = fakeFetch((u, init) => {
+      if (u.includes('/graphql')) return usageRes(0)();
+      hits.push(u);
+      if (u.includes('nvidia.com'))
+        return new Promise<Response>((_, reject) => init?.signal?.addEventListener('abort', () => reject(new Error('aborted'))));
+      return byHost()(u);
+    });
+    expect((await generateImage({ prompt: PROMPT }, { env: KEYS, fetchImpl: f, timeoutMs: 20 })).provider).toBe('cloudflare/flux-2-klein-4b');
+    hits.length = 0;
+    expect((await generateImage({ prompt: PROMPT }, { env: KEYS, fetchImpl: f, timeoutMs: 20 })).provider).toBe('cloudflare/flux-2-klein-4b');
+    expect(hits.some((u) => u.includes('nvidia.com'))).toBe(false);
+  });
+
   it('IMAGE_PROVIDERS reorders providers inside a model (Cloudflare first)', async () => {
     const { urls, fetchImpl } = recorder();
     const r = await generateImage({ prompt: PROMPT }, { env: { ...KEYS, IMAGE_PROVIDERS: 'cloudflare,nvidia,pollinations' }, fetchImpl });
@@ -218,5 +249,11 @@ describe('generateImage: Arabic rule', () => {
     expect(textFreePrompt('sun مرحبا')).toBeNull();
     expect(textFreePrompt('a cartoon sun and a river مرحبا')).toMatch(/^a cartoon sun and a river\. no text/);
     expect(textFreePrompt('مرحبا بالعالم')).toBeNull();
+  });
+});
+
+describe('nvidiaKeys', () => {
+  it('reads every NVIDIA_API_KEY* var in name order, comma lists ok, deduped', () => {
+    expect(nvidiaKeys({ NVIDIA_API_KEY_2: 'b', NVIDIA_API_KEY: 'a, c', NVIDIA_API_KEY_3: '"a"', OTHER: 'x' })).toEqual(['a', 'c', 'b']);
   });
 });

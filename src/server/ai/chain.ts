@@ -3,7 +3,7 @@
  */
 
 import { ChainName, ProviderStep } from './types';
-import { getChain, getGeminiApiKeys } from './registry';
+import { getChain, getGeminiApiKeys, getNvidiaApiKeys } from './registry';
 import { isCoolingDown, markCooldown, isProviderExhausted } from './cooldowns';
 import { callGemini, callOpenAICompat, getProviderEndpoint, GeminiPart } from '../providers';
 import { validateAgainstSchema } from '../validate';
@@ -35,7 +35,7 @@ async function executeTask(
     }
     parsed = await callOpenAICompat({
       baseUrl: endpoint.baseUrl,
-      apiKey: endpoint.apiKey,
+      apiKey: key || endpoint.apiKey,
       model: step.model,
       contents,
       schema,
@@ -71,10 +71,15 @@ export async function runChain(
 
   const tasks: ExecutionTask[] = [];
   const geminiKeys = getGeminiApiKeys();
+  const nvidiaKeys = getNvidiaApiKeys();
 
   for (const step of steps) {
     if (step.provider === 'gemini') {
       for (const key of geminiKeys) {
+        tasks.push({ step, key });
+      }
+    } else if (step.provider === 'nvidia') {
+      for (const key of nvidiaKeys) {
         tasks.push({ step, key });
       }
     } else {
