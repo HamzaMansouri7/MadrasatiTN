@@ -490,7 +490,7 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
           <!-- Header -->
           <div class="flex items-center justify-between gap-4 border-b border-white/10 pb-4">
             <div class="flex items-center gap-3">
-              <span class="px-3 py-1 rounded-full bg-[#2D6A4F] text-xs font-mono font-bold">{{ active.n }} / {{ series()?.scenes?.length }}</span>
+              <span class="px-3 py-1 rounded-full bg-[#2D6A4F] text-xs font-mono font-bold">{{ activeSceneIndex() + 1 }} / {{ series()?.scenes?.length }}</span>
               <h2 class="font-display font-semibold text-lg text-white truncate">{{ active.title }}</h2>
             </div>
             <button type="button" (click)="projectorOpen.set(false)" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center cursor-pointer transition-colors">
