@@ -56,7 +56,7 @@ Banned: lucid-origin (~1,400/picture), dreamshaper-8-lcm (unusable), SDXL base (
 
 ```
 Picture request (English scene, no text)
- ├─ 1. flux-2-klein-4b   → Cloudflare → NVIDIA → Pollinations(key)
+ ├─ 1. flux-2-klein-4b   → NVIDIA → Cloudflare → Pollinations(key)   (NVIDIA first since §8)
  ├─ 2. flux-1-schnell    → Cloudflare → SiliconFlow → Pollinations(key)   (NVIDIA when its outage ends)
  ├─ 3. flux-2-klein-9b   → Cloudflare, only while today's Cloudflare usage < 70%
  ├─ 4. SDXL lightning    → Cloudflare
@@ -87,3 +87,33 @@ Picture request (English scene, no text)
 Out: flux-2-dev (~5,625 neurons), lucid-origin, dreamshaper/SANA, SDXL base (64 s), NVIDIA qwen-image (download only), Gemini images (paid only: free keys get 0 images).
 Cloudflare rows share one pool of ~10,000 neurons/day; they do not add up.
 Open idea (owner to decide): put NVIDIA before Cloudflare for klein-4b (faster, saves CF neurons).
+
+## 8. Live tests of 2026-10-17 (after the chain was written)
+
+Measured with our `.env` keys, same day. Pictures kept in `tmp/` (gitignored).
+
+| Provider / model | Test | Result |
+|---|---|---|
+| NVIDIA flux-3-image-klein | 1 picture | works, 2.5 s, soft painterly style, no text |
+| NVIDIA flux.2-klein-9b | 1 call | 404: not hosted |
+| NVIDIA flux.2-klein-4b, single call | through the new chain | OK in 2.9 s |
+| NVIDIA flux.2-klein-4b, **burst of 45 at once** | all sent in the same second | **30 OK, 15 × 429 "Too Many Requests"**, all done in 15.9 s; OK latency min 1.2 s, median 9.8 s, max 15.9 s |
+| Cloudflare flux-2-klein-4b | through the new chain | OK in 8.4 s |
+| Pollinations flux.2-klein-4b | 1 picture | works, 6.8 s, clean cartoon, price signs garbled; **spent the last 0.005 pollen**, next call 402 "available balance is 0.0000" |
+| SiliconFlow FLUX.1-schnell | 1 call | 30001 "account balance is insufficient": no free tier left |
+
+Cloudflare usage that day: 7,419 / 10,000 neurons after the audit tests (analytics). SDXL lightning's call showed 0 neurons (beta, *unverified* whether it stays free).
+
+### Conclusions
+
+1. **NVIDIA's free limit is a rate limit, not a daily cap.** About 30 requests in flight succeed, the rest get 429. Under load it slows to ~10 s a picture (1.9–2.9 s alone). No daily cap was hit; NVIDIA's forum describes free access as unlimited at 40 RPM.
+2. **Cloudflare is the only provider with a measured daily amount** (~96 klein-4b pictures a day, one pool for the whole account).
+3. **Pollinations and SiliconFlow bring nothing today.** Pollinations: 0 balance, refill *unverified*. SiliconFlow: paid balance required. Both stay in the code as last resorts only; they cost nothing when they fail (one 402 and a 30-min cooldown).
+4. **A busy NVIDIA does not break the chain.** 429 → 2-min cooldown → Cloudflare → Pollinations → next model. A hang is cut after 60 s (test "a hanging provider is cut").
+
+### Changes decided
+
+- **NVIDIA goes before Cloudflare for klein-4b** (done, code default in `src/server/ai/image-chain.ts`). Faster (2.9 s vs 8.4 s) and it spends no Cloudflare neurons, which keeps the ~96-a-day pool for the moments NVIDIA is busy. `IMAGE_PROVIDERS` env can still reorder providers without a rebuild.
+- **Keep the per-attempt cutoff at 60 s** for now; NVIDIA's worst case under a 45-burst was 15.9 s.
+- **Do not add flux-3-image-klein** to the chain: different look (soft, painterly) would break the one-look-per-document rule. Candidate for a separate style preset later.
+- **Remove nothing else**: SiliconFlow stays out of the chain (already not in the code), Pollinations stays last.

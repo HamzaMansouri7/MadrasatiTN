@@ -22,7 +22,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Infographic — visually organized sections/cards, icons, short explanations, key facts, color-coded information, and strong visual hierarchy. Keep text concise and prioritize short headings, labels, and information fragments that remain easy to read.',
     themeId: 'kids',
     presetId: 'auto',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'central-scene',
@@ -58,7 +58,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Handwritten Notes & Hand Lettering — realistic handwritten study notes on lined notebook paper, with expressive hand-lettered titles, headings, underlines, highlights, arrows, small sketches, formulas, and concise explanations. Natural study-note structure with readable handwritten and lettering elements.',
     themeId: 'handwritten',
     presetId: 'hero-cards',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'diagram',
@@ -101,7 +101,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'X-Ray / How It Works — detailed cutaway anatomical or mechanical cross-section on technical graph paper, revealing internal layers, sequential mechanism steps demonstrating how it works, labeled parts, circular close-up insets, and technical data callouts.',
     themeId: 'graph-paper',
     presetId: 'central-picture',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'cutaway',
@@ -144,7 +144,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Visualize — intuitive conceptual visual breakdown using real-world analogies, step-by-step physical models, visual metaphors, and clear comparisons to make abstract concepts instantly concrete.',
     themeId: 'kids',
     presetId: 'comparison',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'focal-model',
@@ -179,7 +179,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Diagram & Anatomy Chart — clean scientific diagram or labeled anatomy chart with structured sections, labeled parts/organs, leader callouts, directional arrows, connectors, symbols, and simplified explanations.',
     themeId: 'official',
     presetId: 'auto',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'diagram-backdrop',
@@ -212,7 +212,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Mind Map — place the topic as the central concept, with logical main branches and sub-branches containing related concepts, keywords, examples, and connections. Organize the information hierarchically and maintain clear relationships between the central concept, main branches, and supporting ideas.',
     themeId: 'kids',
     presetId: 'mindmap',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [],
     schemaFields: [
       { name: 'centre', type: 'string', description: 'Central theme label', required: true },
@@ -237,7 +237,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Poster — high-impact classroom poster layout with strong bold typography, clear hierarchy, high-contrast palette, central focal illustration, and concise summary points readable from a distance.',
     themeId: 'poster',
     presetId: 'central-picture',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'focal-illustration',
@@ -269,7 +269,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Comic — clean sequential multi-panel comic strip with dynamic character interactions, clear dialogue and narration boxes, expressive illustrations, and step-by-step concept progression.',
     themeId: 'comic',
     presetId: 'picture-rows',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'panels',
@@ -305,7 +305,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Timeline — chronological curriculum progression with verified dates, epoch badges, sequential connector, and event cards.',
     themeId: 'official',
     presetId: 'timeline',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'epoch-scenes',
@@ -337,7 +337,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Flashcards — modular printable double-sided study cards with vocabulary word, phonetics, definition, example sentence, and visual hint illustration.',
     themeId: 'fiche',
     presetId: 'flashcards',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'card-icons',
@@ -368,7 +368,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Cycle — clean circular flow diagram with 3 to 6 ordered stages in a continuous loop, curved directional connecting arrows, step badges, and concise explanatory text for each stage.',
     themeId: 'kids',
     presetId: 'circular-flow',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'cycle-stages',
@@ -402,7 +402,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Steps & Interface — clear step-by-step procedure guide with numbered action steps, concrete instructions, and a simplified simulated screen or form interface mockup.',
     themeId: 'lilac',
     presetId: 'steps-interface',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'step-icons',
@@ -436,7 +436,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Cheat Sheet — high-density educational study fiche with structured cards, bold mnemonic keywords, clear rules, highlighted formulas, and compact examples designed for rapid review.',
     themeId: 'fiche',
     presetId: 'hero-cards',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'concept-diagram',
@@ -470,7 +470,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Did You Know — captivating central illustration surrounded by curious, unexpected, and educational facts that ignite curiosity and scientific exploration.',
     themeId: 'kids',
     presetId: 'central-picture',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'central-discovery',
@@ -504,7 +504,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Roadmap — structured sequential progression timeline with ordered competency milestones, skill badges, and clear progressive steps toward learning mastery.',
     themeId: 'official',
     presetId: 'timeline',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'milestone-icons',
@@ -538,7 +538,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Tree Diagram — hierarchical branching concept tree radiating from a root node into thematic branches, sub-categories, and concrete pedagogical instances.',
     themeId: 'kids',
     presetId: 'mindmap',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'root-icon',
@@ -571,7 +571,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Comparison Matrix — balanced two-column comparison layout with color-coded side-by-side attributes, distinct characteristics, and shared commonalities.',
     themeId: 'kids',
     presetId: 'comparison',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'side-a-image',
@@ -611,7 +611,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Quiz Card — formative multiple-choice question layout with high-contrast choices, letter bubbles, helpful hint, and detailed solution explanation.',
     themeId: 'lilac',
     presetId: 'quizcard',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'question-illustration',
@@ -646,7 +646,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Certificate — formal commemorative diploma layout with ornate decorative borders, official header, student name line, commendation text, signature zone, and official seal.',
     themeId: 'official',
     presetId: 'certificate',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [],
     schemaFields: [
       { name: 'title', type: 'string', description: 'Certificate title', required: true },
@@ -675,7 +675,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Venn Diagram — intersecting mathematical or conceptual set diagram with distinct attribute chips for each set and an overlapping common zone.',
     themeId: 'kids',
     presetId: 'venn',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [],
     schemaFields: [
       { name: 'title', type: 'string', description: 'Venn comparison title', required: true },
@@ -703,7 +703,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'ID Card — structured identification card layout featuring a subject photo or emblem, classification category, key statistic badges with icons, and did-you-know facts.',
     themeId: 'encyclopedia',
     presetId: 'idcard',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'entity-portrait',
@@ -739,7 +739,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Analogy — visual bridge layout connecting a familiar everyday metaphor on one side to an abstract curriculum concept on the other, unified by a central analogy banner.',
     themeId: 'comic',
     presetId: 'analogy',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'familiar-image',
@@ -779,7 +779,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Flyer — school announcement and event poster layout with eye-catching header badge, logistics pills (date, time, location), structured detail cards, and parent notice banner.',
     themeId: 'poster',
     presetId: 'flyer',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'event-banner',
@@ -817,7 +817,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Herbarium — vintage botanical specimen plate with a pressed-plant portrait, plant parts listed as labelled notes (root, stem, leaf, flower, fruit), habitat, and short observation notes.',
     themeId: 'herbarium',
     presetId: 'idcard',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'specimen',
@@ -850,7 +850,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Illustrated Map — friendly illustrated map with a dashed trail linking numbered stations from start to finish, each station with a landmark and a short explanation.',
     themeId: 'kids',
     presetId: 'pathmap',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'landmarks',
@@ -881,7 +881,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Treasure Map — antique parchment treasure map with a dashed trail, numbered stations as learning challenges, and the treasure at the finish.',
     themeId: 'encyclopedia',
     presetId: 'pathmap',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [
       {
         name: 'landmarks',
@@ -912,7 +912,7 @@ export const VISUAL_PRESETS: Record<VisualCommand, VisualPresetDefinition> = {
       'Board Game — printable snake board with numbered question squares between a start and a finish square, plus short game rules.',
     themeId: 'kids',
     presetId: 'boardgame',
-    defaultModel: 'nvidia-flux-1-dev',
+    defaultModel: 'flux-2-klein-4b',
     imageSlots: [],
     schemaFields: [
       { name: 'title', type: 'string', description: 'Sheet title', required: true },
