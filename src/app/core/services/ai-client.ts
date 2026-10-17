@@ -9,6 +9,7 @@ export type AiJson = any;
 export type AiRoute =
   | 'analyze-worksheet'
   | 'auto-tag-document'
+  | 'chat'
   | 'chat-article'
   | 'draft-announcement'
   | 'explain-concept'

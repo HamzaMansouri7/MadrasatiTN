@@ -3,7 +3,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { filter, map } from 'rxjs/operators';
 import { EducationStore, LanguageService, FirebaseService, UserRole } from '@core';
-import { NavbarComponent, AuthModalComponent, ToastComponent, CreateTabsComponent, isCreatePath } from '@shared';
+import { NavbarComponent, AuthModalComponent, ToastComponent, CreateTabsComponent, ChatDrawerComponent, isCreatePath } from '@shared';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +14,7 @@ import { NavbarComponent, AuthModalComponent, ToastComponent, CreateTabsComponen
     AuthModalComponent,
     ToastComponent,
     CreateTabsComponent,
+    ChatDrawerComponent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
