@@ -1,16 +1,20 @@
 /**
- * Free image generation chain (registry pattern: one entry per model, it declares its own request).
- * Order = quality, best first. Quality ranking comes from a visual check of one picture per model.
- * The SVG fallback is NOT here (it needs the text chain): callers use it when this throws.
+ * Free image generation chain, grouped BY MODEL with each model's providers nested (docs/AUDIT-IMAGE-PROVIDERS.md §6).
+ * Every provider of a model is tried before the next model, so a picture keeps the same look. Sequential: the next
+ * attempt starts only when the current one fails or passes 60 s. The SVG fallback is NOT here (it needs the text
+ * chain): callers use it when this throws.
  *
- *  1. Gemini 3.1 flash-lite image  (PAID prepaid key) richest scenes, ~3s; used while under a soft daily budget
- *  2. NVIDIA flux.1-dev            (json, key)   clean children's-book scenes, ~5s in a manual test
- *  3. Pollinations flux.1.1-pro    (API key)     clean, no watermark; small free tier credit, fallback only
- *  4. Pollinations flux            (no key)      blurry + visible watermark: last resort
+ *  1. flux-2-klein-4b   NVIDIA (1.9-2.9 s, no neurons, ~30 in flight then 429) -> Cloudflare (~104 neurons, 8 s) -> Pollinations (key, 0.005 pollen)
+ *  2. flux-1-schnell    Cloudflare (~326 neurons, square) -> Pollinations (key, 0.002 pollen)
+ *  3. flux-2-klein-9b   Cloudflare (~1,364 neurons), only while today's Cloudflare usage is under 70%
+ *  4. SDXL lightning    Cloudflare
  *
- * The paid model spends prepaid credit, so it is gated by a SOFT daily count (GEMINI_PAID_IMAGE_DAILY, default 40,
- * 0 disables it). Past the budget the chain simply starts at the free models: nothing fails, nothing is blocked.
+ * Cloudflare's 10,000 neurons/day are shared by the whole account (text models too), so they do not add up per model.
+ * Out (measured 2026-10-17): keyless Pollinations (serves SANA), SiliconFlow (no free balance), NVIDIA flux.1-dev and
+ * schnell (outage), flux-2-dev (~5,625 neurons), lucid-origin, dreamshaper, SDXL base.
  *
+ * The paid Gemini image model (prepaid key) is outside the free chain: it only answers prompts with no usable English
+ * (Arabic text in the picture), within a SOFT daily count (GEMINI_PAID_IMAGE_DAILY, default 40, 0 disables it).
  */
 import { classifyProviderError } from './error-class';
 
@@ -19,9 +23,12 @@ export type ImageExt = 'png' | 'jpg' | 'webp';
 export interface ImageResult {
   data: Buffer;
   ext: ImageExt;
+  /** Attempt id that answered, e.g. 'cloudflare/flux-2-klein-4b'. */
   provider: string;
-  /** true when the provider stamps its own watermark on the picture (Pollinations). */
-  watermarked: boolean;
+  /** Model family that answered, e.g. 'flux-2-klein-4b'. */
+  model: string;
+  /** true when the first model of the chain was skipped or failed: callers must not pin this look on a document. */
+  fallback: boolean;
 }
 
 export interface ImageRequest {
@@ -29,28 +36,30 @@ export interface ImageRequest {
   seed?: number;
   width?: number;
   height?: number;
-  /** Model id to try first (keeps one look per document). Other models only run if it fails or is very slow. */
+  /** Model family to try first (keeps one look per document). Other models only run if all its providers fail. */
   preferModel?: string;
-  /** Model groups to leave out for this picture (e.g. 'gemini' when the caller wants the free models only). */
+  /** Providers to leave out for this picture (e.g. 'gemini' when the caller wants the free models only). */
   excludeGroups?: string[];
-  /** Model ids to leave out (e.g. the keyless Pollinations, which may swap FLUX for another model). */
-  excludeModels?: string[];
-  /** true: no racing. The next model starts only when the current one fails or passes 60 s. */
-  sequential?: boolean;
 }
 
 type Env = Record<string, string | undefined>;
 type ImageCall = Required<Pick<ImageRequest, 'prompt' | 'seed' | 'width' | 'height'>>;
 type FetchLike = typeof fetch;
+type Provider = 'cloudflare' | 'nvidia' | 'pollinations' | 'gemini';
 
-interface ImageModel {
-  /** Only models flagged true may receive Arabic in the prompt. FLUX-family models draw garbled Arabic, so they never do. */
+interface ImageAttempt {
+  /** Only attempts flagged true may receive Arabic in the prompt. FLUX-family models draw garbled Arabic, so they never do. */
   arabicSafe?: boolean;
   id: string;
-  group: 'nvidia' | 'gemini' | 'pollinations' | 'siliconflow';
-  quality: number;
-  enabled: (env: Env) => boolean;
+  model: string;
+  group: Provider;
+  enabled: (env: Env, ctx: ChainContext) => boolean;
   generate: (env: Env, req: ImageCall, fetchImpl: FetchLike, signal: AbortSignal) => Promise<Buffer>;
+}
+
+interface ChainContext {
+  /** Share of today's Cloudflare neurons already used (0-1), or null when it could not be read. */
+  cfUsage: number | null;
 }
 
 const ARABIC_RE = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/g;
@@ -75,19 +84,107 @@ export const isImageBuffer = (b: Buffer): boolean =>
 
 export const imageExt = (b: Buffer): ImageExt => (b[0] === 0x89 ? 'png' : b[0] === 0xff ? 'jpg' : 'webp');
 
-const nvKey = (env: Env): string => (env['NVIDIA_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
+const clean = (v: string | undefined): string => (v || '').trim().replace(/^["']|["']$/g, '');
+const cfAccount = (env: Env): string => clean(env['CLOUDFLARE_ACCOUNT_ID']);
+const cfToken = (env: Env): string => clean(env['CLOUDFLARE_API_TOKEN'] || env['CLOUDFLARE_TOKEN']);
+const nvKey = (env: Env): string => clean(env['NVIDIA_API_KEY']);
+const pollKey = (env: Env): string => clean(env['POLLINATIONS_API_KEY']);
+const paidKey = (env: Env): string => clean(env['GEMINI_PAID_API_KEY']);
+const hasCf = (env: Env): boolean => !!cfAccount(env) && !!cfToken(env);
 
-/** NVIDIA hosted FLUX.1-dev (build.nvidia.com): JSON in, base64 image out. */
-const nvidiaFluxDev = (quality: number): ImageModel => ({
-  id: 'nvidia-flux-1-dev',
+// --- Cloudflare Workers AI ---
+
+/** FLUX.2 models only accept multipart; schnell and SDXL take JSON. Answers are raw image bytes or { result: { image } }. */
+const cloudflare = (model: string, cfModel: string, format: 'multipart' | 'json', extraGate?: (ctx: ChainContext) => boolean): ImageAttempt => ({
+  id: `cloudflare/${model}`,
+  model,
+  group: 'cloudflare',
+  enabled: (env, ctx) => hasCf(env) && (!extraGate || extraGate(ctx)),
+  async generate(env, req, fetchImpl, signal) {
+    let body: BodyInit;
+    const headers: Record<string, string> = { Authorization: `Bearer ${cfToken(env)}` };
+    if (format === 'multipart') {
+      const fd = new FormData();
+      fd.append('prompt', req.prompt);
+      fd.append('width', String(req.width));
+      fd.append('height', String(req.height));
+      fd.append('seed', String(req.seed));
+      body = fd;
+    } else {
+      headers['Content-Type'] = 'application/json';
+      body = JSON.stringify(
+        model === 'flux-1-schnell'
+          ? { prompt: req.prompt, steps: 8, seed: req.seed }
+          : { prompt: req.prompt, width: req.width, height: req.height, seed: req.seed },
+      );
+    }
+    const res = await fetchImpl(`https://api.cloudflare.com/client/v4/accounts/${cfAccount(env)}/ai/run/${cfModel}`, {
+      method: 'POST',
+      headers,
+      body,
+      signal,
+    });
+    if (!res.ok) throw new Error(`Cloudflare HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
+    if ((res.headers.get('content-type') || '').startsWith('image/')) return Buffer.from(await res.arrayBuffer());
+    const j = (await res.json()) as { result?: { image?: string }; image?: string };
+    const b64 = j.result?.image || j.image;
+    if (!b64) throw new Error('Cloudflare returned no image');
+    return Buffer.from(b64, 'base64');
+  },
+});
+
+const CF_DAILY_NEURONS = 10_000;
+const CF_USAGE_TTL_MS = 2 * 60_000;
+let cfUsageCache: { at: number; day: string; value: number | null } | null = null;
+export const resetCloudflareUsage = (): void => {
+  cfUsageCache = null;
+};
+
+/** Today's Cloudflare neurons (whole account) from the analytics API, cached 2 min. null = unknown. */
+async function cloudflareUsage(env: Env, fetchImpl: FetchLike, now: number): Promise<number | null> {
+  if (!hasCf(env)) return null;
+  const day = new Date(now).toISOString().slice(0, 10);
+  if (cfUsageCache && cfUsageCache.day === day && now - cfUsageCache.at < CF_USAGE_TTL_MS) return cfUsageCache.value;
+  let value: number | null = null;
+  try {
+    const query = 'query($a:String!,$d:Date!){viewer{accounts(filter:{accountTag:$a}){aiInferenceAdaptiveGroups(limit:200,filter:{date_geq:$d}){sum{totalNeurons}}}}}';
+    const res = await fetchImpl('https://api.cloudflare.com/client/v4/graphql', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${cfToken(env)}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query, variables: { a: cfAccount(env), d: day } }),
+      signal: AbortSignal.timeout(8000),
+    });
+    if (res.ok) {
+      const j = (await res.json()) as {
+        data?: { viewer?: { accounts?: { aiInferenceAdaptiveGroups?: { sum?: { totalNeurons?: number } }[] }[] } };
+      };
+      const rows = j.data?.viewer?.accounts?.[0]?.aiInferenceAdaptiveGroups;
+      if (Array.isArray(rows)) value = rows.reduce((s, r) => s + (r.sum?.totalNeurons ?? 0), 0) / CF_DAILY_NEURONS;
+    }
+  } catch {
+    value = null;
+  }
+  cfUsageCache = { at: now, day, value };
+  return value;
+}
+
+const expensiveMaxShare = (env: Env): number => {
+  const n = parseInt(env['CF_EXPENSIVE_IMAGE_MAX_PCT'] ?? '70', 10);
+  return (Number.isFinite(n) ? Math.min(100, Math.max(0, n)) : 70) / 100;
+};
+
+// --- NVIDIA build (hosted FLUX.2 klein 4B): JSON in, base64 out ---
+
+const nvidia = (model: string, slug: string): ImageAttempt => ({
+  id: `nvidia/${model}`,
+  model,
   group: 'nvidia',
-  quality,
   enabled: (env) => !!nvKey(env),
   async generate(env, req, fetchImpl, signal) {
-    const res = await fetchImpl('https://ai.api.nvidia.com/v1/genai/black-forest-labs/flux.1-dev', {
+    const res = await fetchImpl(`https://ai.api.nvidia.com/v1/genai/${slug}`, {
       method: 'POST',
       headers: { Authorization: `Bearer ${nvKey(env)}`, Accept: 'application/json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ prompt: req.prompt, width: req.width, height: req.height, seed: req.seed, steps: 30, cfg_scale: 3.5, mode: 'base' }),
+      body: JSON.stringify({ prompt: req.prompt, width: req.width, height: req.height, seed: req.seed, steps: 4 }),
       signal,
     });
     if (!res.ok) throw new Error(`NVIDIA HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
@@ -95,6 +192,21 @@ const nvidiaFluxDev = (quality: number): ImageModel => ({
     const b64 = j.artifacts?.[0]?.base64 || j.image;
     if (!b64) throw new Error('NVIDIA returned no image');
     return Buffer.from(b64, 'base64');
+  },
+});
+
+// --- Pollinations with our key (the keyless route is out: it may serve SANA/dreamshaper) ---
+
+const pollinations = (model: string, pollModel: string): ImageAttempt => ({
+  id: `pollinations/${model}`,
+  model,
+  group: 'pollinations',
+  enabled: (env) => !!pollKey(env),
+  async generate(env, req, fetchImpl, signal) {
+    const url = `https://gen.pollinations.ai/image/${encodeURIComponent(req.prompt.slice(0, 1000))}?model=${encodeURIComponent(pollModel)}&width=${req.width}&height=${req.height}&seed=${req.seed}&nologo=true`;
+    const res = await fetchImpl(url, { headers: { Authorization: `Bearer ${pollKey(env)}` }, signal });
+    if (!res.ok) throw new Error(`Pollinations HTTP ${res.status} ${(await res.text()).slice(0, 160)}`);
+    return Buffer.from(await res.arrayBuffer());
   },
 });
 
@@ -107,7 +219,6 @@ const paidBudget = (env: Env): number => {
   const n = parseInt(env['GEMINI_PAID_IMAGE_DAILY'] ?? '40', 10);
   return Number.isFinite(n) ? Math.max(0, n) : 40;
 };
-const paidKey = (env: Env): string => (env['GEMINI_PAID_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
 export const paidImagesToday = (): number => (paidDay === today() ? paidCount : 0);
 export const resetPaidImageCount = (): void => {
   paidDay = '';
@@ -121,11 +232,11 @@ function countPaidImage(): void {
   paidCount++;
 }
 
-const geminiPaidImage = (quality: number): ImageModel => ({
-  id: 'gemini-paid-flash-lite-image',
+const geminiPaidImage: ImageAttempt = {
+  id: 'gemini/flash-lite-image',
+  model: 'gemini-flash-lite-image',
   group: 'gemini',
   arabicSafe: true,
-  quality,
   enabled: (env) => !!paidKey(env) && paidImagesToday() < paidBudget(env),
   async generate(env, req, fetchImpl, signal) {
     const res = await fetchImpl(`https://generativelanguage.googleapis.com/v1beta/models/${PAID_IMAGE_MODEL}:generateContent`, {
@@ -141,193 +252,138 @@ const geminiPaidImage = (quality: number): ImageModel => ({
     countPaidImage();
     return Buffer.from(data, 'base64');
   },
-});
+};
 
-const pollKey = (env: Env): string => (env['POLLINATIONS_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
-
-const sfKey = (env: Env): string => (env['SILICONFLOW_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
-
-/** SiliconFlow hosted Qwen/Qwen-Image: free tier, text-free educational illustrations. */
-const siliconflowQwenImage = (quality: number): ImageModel => ({
-  id: 'siliconflow-qwen-image',
-  group: 'siliconflow',
-  quality,
-  enabled: (env) => !!sfKey(env),
-  async generate(env, req, fetchImpl, signal) {
-    const res = await fetchImpl('https://api.siliconflow.com/v1/images/generations', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${sfKey(env)}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'Qwen/Qwen-Image',
-        prompt: req.prompt,
-        image_size: '1024x1024',
-        seed: req.seed,
-      }),
-      signal,
-    });
-    if (!res.ok) throw new Error(`SiliconFlow HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
-    const j = (await res.json()) as { images?: { url?: string }[] };
-    const imgUrl = j.images?.[0]?.url;
-    if (!imgUrl) throw new Error('SiliconFlow returned no image url');
-    const imgRes = await fetchImpl(imgUrl, { signal });
-    if (!imgRes.ok) throw new Error(`SiliconFlow image download HTTP ${imgRes.status}`);
-    return Buffer.from(await imgRes.arrayBuffer());
-  },
-});
-
-/** Pollinations newer API (needs a key): real FLUX.1.1-pro, no watermark. Same group as the anonymous one: they share the cooldown. */
-const pollinationsKeyed = (quality: number): ImageModel => ({
-  id: 'pollinations-flux-1.1-pro',
-  group: 'pollinations',
-  quality,
-  enabled: (env) => !!pollKey(env),
-  async generate(env, req, fetchImpl, signal) {
-    const url = `https://gen.pollinations.ai/image/${encodeURIComponent(req.prompt.slice(0, 1000))}?model=${encodeURIComponent('black-forest-labs/flux.1.1-pro')}&width=${req.width}&height=${req.height}&seed=${req.seed}&nologo=true`;
-    const res = await fetchImpl(url, { headers: { Authorization: `Bearer ${pollKey(env)}` }, signal });
-    if (!res.ok) throw new Error(`Pollinations HTTP ${res.status} ${(await res.text()).slice(0, 160)}`);
-    return Buffer.from(await res.arrayBuffer());
-  },
-});
-
-export const IMAGE_MODELS: ImageModel[] = [
-  geminiPaidImage(99),
-  nvidiaFluxDev(97),
-  siliconflowQwenImage(70),
-  pollinationsKeyed(50),
+/** The free chain: models in order, each with its providers in order. */
+export const IMAGE_CHAIN: { model: string; attempts: ImageAttempt[] }[] = [
   {
-    id: 'pollinations-flux',
-    group: 'pollinations',
-    quality: 10,
-    enabled: () => true,
-    async generate(_env, req, fetchImpl, signal) {
-      const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(req.prompt.slice(0, 1000))}?width=${req.width}&height=${req.height}&nologo=true&safe=true&private=true&seed=${req.seed}&model=flux`;
-      const res = await fetchImpl(url, { signal });
-      if (!res.ok) throw new Error(`Pollinations HTTP ${res.status}`);
-      return Buffer.from(await res.arrayBuffer());
-    },
+    model: 'flux-2-klein-4b',
+    attempts: [
+      nvidia('flux-2-klein-4b', 'black-forest-labs/flux.2-klein-4b'),
+      cloudflare('flux-2-klein-4b', '@cf/black-forest-labs/flux-2-klein-4b', 'multipart'),
+      pollinations('flux-2-klein-4b', 'black-forest-labs/flux.2-klein-4b'),
+    ],
+  },
+  {
+    model: 'flux-1-schnell',
+    attempts: [
+      cloudflare('flux-1-schnell', '@cf/black-forest-labs/flux-1-schnell', 'json'),
+      pollinations('flux-1-schnell', 'black-forest-labs/flux.1-schnell'),
+    ],
+  },
+  {
+    model: 'flux-2-klein-9b',
+    attempts: [cloudflare('flux-2-klein-9b', '@cf/black-forest-labs/flux-2-klein-9b', 'multipart', (ctx) => ctx.cfUsage !== null && ctx.cfUsage < 1)],
+  },
+  {
+    model: 'sdxl-lightning',
+    attempts: [cloudflare('sdxl-lightning', '@cf/bytedance/stable-diffusion-xl-lightning', 'json')],
   },
 ];
 
-// --- cooldowns (per model id, or per group when the whole provider is out) ---
+const FIRST_MODEL = IMAGE_CHAIN[0].model;
+
+// --- cooldowns (per attempt id, or per provider when the whole provider is out) ---
 const cooldowns = new Map<string, number>();
 export const resetImageCooldowns = (): void => cooldowns.clear();
-const cooling = (m: ImageModel, now: number): boolean =>
-  (cooldowns.get(m.id) ?? 0) > now || (cooldowns.get(`group:${m.group}`) ?? 0) > now;
+const cooling = (a: ImageAttempt, now: number): boolean =>
+  (cooldowns.get(a.id) ?? 0) > now || (cooldowns.get(`group:${a.group}`) ?? 0) > now;
 
-function applyCooldown(m: ImageModel, err: unknown, now: number): void {
+function applyCooldown(a: ImageAttempt, err: unknown, now: number): string {
   const c = classifyProviderError(err instanceof Error ? err.message : String(err));
   if (c.cooldownMs <= 0) {
-    cooldowns.set(m.id, now + 15_000); // unknown failure: short pause so we do not hammer it
-    return;
+    cooldowns.set(a.id, now + 15_000); // unknown failure: short pause so we do not hammer it
+    return c.kind;
   }
-  cooldowns.set(c.providerWide ? `group:${m.group}` : m.id, now + c.cooldownMs);
+  cooldowns.set(c.providerWide ? `group:${a.group}` : a.id, now + c.cooldownMs);
+  return c.kind;
 }
 
-const SEQUENTIAL_TIMEOUT_MS = 60_000;
+const ATTEMPT_TIMEOUT_MS = 60_000;
 
 export interface ImageChainOptions {
   env?: Env;
   fetchImpl?: FetchLike;
-  /** Start the next model if the current one has not answered after this long (no cutoff of the first). */
-  hedgeMs?: number;
   now?: () => number;
+  /** Per-attempt cutoff; default 60 s. */
+  timeoutMs?: number;
 }
 
-/** Model order: IMAGE_CHAIN env ("gemini,nvidia,siliconflow,pollinations") picks and orders groups; default = by quality. */
-function candidates(env: Env, now: number, ignoreCooldown: boolean): ImageModel[] {
-  const wanted = (env['IMAGE_CHAIN'] || '')
+/**
+ * Attempt order. IMAGE_PROVIDERS env ("nvidia,cloudflare,pollinations") picks and orders providers INSIDE each model;
+ * the model order itself is fixed. The klein-9b gate compares usage to CF_EXPENSIVE_IMAGE_MAX_PCT (default 70).
+ */
+function attemptsFor(env: Env, ctx: ChainContext, preferModel: string | undefined): ImageAttempt[] {
+  const wanted = (env['IMAGE_PROVIDERS'] || '')
     .split(',')
     .map((s) => s.trim().toLowerCase())
-    .filter((s) => s === 'nvidia' || s === 'gemini' || s === 'pollinations' || s === 'siliconflow');
-  let list = IMAGE_MODELS.filter((m) => m.enabled(env));
-  if (wanted.length) {
-    list = list.filter((m) => wanted.includes(m.group));
-    list.sort((a, b) => wanted.indexOf(a.group) - wanted.indexOf(b.group) || b.quality - a.quality);
-  } else {
-    list.sort((a, b) => b.quality - a.quality);
-  }
-  return ignoreCooldown ? list : list.filter((m) => !cooling(m, now));
+    .filter((s): s is Provider => s === 'cloudflare' || s === 'nvidia' || s === 'pollinations');
+  const gateCtx: ChainContext = { cfUsage: ctx.cfUsage === null ? null : ctx.cfUsage / expensiveMaxShare(env) };
+  const models = [...IMAGE_CHAIN];
+  const pinned = models.findIndex((m) => m.model === preferModel);
+  if (pinned > 0) models.unshift(...models.splice(pinned, 1));
+  return models.flatMap((m) => {
+    let list = m.attempts.filter((a) => a.enabled(env, gateCtx));
+    if (wanted.length) {
+      list = list.filter((a) => wanted.includes(a.group as Provider));
+      list.sort((a, b) => wanted.indexOf(a.group as Provider) - wanted.indexOf(b.group as Provider));
+    }
+    return list;
+  });
 }
 
 export async function generateImage(req: ImageRequest, options: ImageChainOptions = {}): Promise<ImageResult> {
   const env = options.env ?? (process.env as Env);
   const fetchImpl = options.fetchImpl ?? fetch;
   const now = options.now ?? Date.now;
-  const baseHedgeMs = options.hedgeMs ?? Math.max(1000, parseInt(env['IMAGE_HEDGE_MS'] || '8000', 10));
-  const full = {
+  const timeoutMs = options.timeoutMs ?? ATTEMPT_TIMEOUT_MS;
+  const full: ImageCall = {
     prompt: req.prompt,
     seed: req.seed ?? 0,
     width: req.width ?? 1024,
     height: req.height ?? 768,
   };
+  const allowed = (a: ImageAttempt) => !req.excludeGroups?.includes(a.group);
 
-  const allowed = (m: ImageModel) => !req.excludeGroups?.includes(m.group) && !req.excludeModels?.includes(m.id);
-  let list = candidates(env, now(), false).filter(allowed);
-  if (list.length === 0) list = candidates(env, now(), true).filter(allowed); // everything cooling: try anyway
-
-  // Text-free rule: non-arabicSafe models get an English, text-free prompt; with no usable English left they are skipped.
+  // Text-free rule: FLUX gets an English, text-free prompt. With no usable English left only the paid Gemini model may answer.
   const safePrompt = textFreePrompt(full.prompt);
-  if (safePrompt === null) list = list.filter((m) => m.arabicSafe);
-  const requestFor = (m: ImageModel): ImageCall =>
-    m.arabicSafe || safePrompt === null ? full : { ...full, prompt: safePrompt };
-
-  // Pinned model: tried first, and hedging is relaxed so a merely slow answer is not raced by another look.
-  let hedgeMs = baseHedgeMs;
-  const pinned = req.preferModel ? list.find((m) => m.id === req.preferModel) : undefined;
-  if (pinned) {
-    list = [pinned, ...list.filter((m) => m !== pinned)];
-    hedgeMs = Math.max(baseHedgeMs, 45_000);
+  let list: ImageAttempt[];
+  if (safePrompt === null) {
+    list = [geminiPaidImage].filter((a) => a.enabled(env, { cfUsage: null }) && allowed(a));
+  } else {
+    const ctx: ChainContext = { cfUsage: await cloudflareUsage(env, fetchImpl, now()) };
+    list = attemptsFor(env, ctx, req.preferModel).filter(allowed);
   }
+  const ready = list.filter((a) => !cooling(a, now()));
+  if (ready.length) list = ready; // everything cooling: try anyway
 
   if (list.length === 0) throw new Error("Aucun service d'image disponible.");
+  const request = (a: ImageAttempt): ImageCall => (a.arabicSafe || safePrompt === null ? full : { ...full, prompt: safePrompt });
 
-  return new Promise<ImageResult>((resolve, reject) => {
-    const controllers: AbortController[] = [];
-    let next = 0;
-    let pending = 0;
-    let done = false;
-    let timer: ReturnType<typeof setTimeout> | null = null;
-    let lastErr: unknown;
-
-    const launch = (): boolean => {
-      if (done || next >= list.length) return false;
-      const model = list[next++];
-      const ctl = new AbortController();
-      controllers.push(ctl);
-      pending++;
-      if (timer) clearTimeout(timer);
-      // Sequential: abort a model that hangs, so its failure starts the next one. Otherwise: hedge (race) after hedgeMs.
-      timer = req.sequential ? setTimeout(() => ctl.abort(), SEQUENTIAL_TIMEOUT_MS) : setTimeout(launch, hedgeMs);
-
-      model
-        .generate(env, requestFor(model), fetchImpl, ctl.signal)
-        .then((buf) => {
-          if (!isImageBuffer(buf)) throw new Error(`${model.id} returned no image`);
-          if (done) return;
-          done = true;
-          if (timer) clearTimeout(timer);
-          controllers.forEach((c) => c !== ctl && c.abort());
-          console.info(`[image] ${model.id} OK`);
-          resolve({ data: buf, ext: imageExt(buf), provider: model.id, watermarked: model.id === 'pollinations-flux' });
-        })
-        .catch((err) => {
-          pending--;
-          if (done) return;
-          lastErr = err;
-          console.warn(`[image] ${model.id} failed: ${err instanceof Error ? err.message : String(err)}`.slice(0, 300));
-          applyCooldown(model, err, now());
-          if (!launch() && pending === 0) {
-            done = true;
-            if (timer) clearTimeout(timer);
-            reject(lastErr instanceof Error ? lastErr : new Error(String(lastErr)));
-          }
-        });
-      return true;
-    };
-
-    launch();
-  });
+  let lastErr: unknown;
+  for (const attempt of list) {
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), timeoutMs);
+    const started = now();
+    try {
+      const buf = await attempt.generate(env, request(attempt), fetchImpl, ctl.signal);
+      if (!isImageBuffer(buf)) throw new Error(`${attempt.id} returned no image`);
+      console.info(`[image] ${attempt.id} OK in ${now() - started} ms`);
+      return {
+        data: buf,
+        ext: imageExt(buf),
+        provider: attempt.id,
+        model: attempt.model,
+        fallback: attempt.model !== FIRST_MODEL && attempt.model !== req.preferModel,
+      };
+    } catch (err) {
+      lastErr = ctl.signal.aborted ? new Error(`${attempt.id} timed out after ${timeoutMs} ms`) : err;
+      const kind = applyCooldown(attempt, lastErr, now());
+      const msg = lastErr instanceof Error ? lastErr.message : String(lastErr);
+      console.warn(`[image] ${attempt.id} failed (${kind}) in ${now() - started} ms: ${msg}`.slice(0, 300));
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+  throw lastErr instanceof Error ? lastErr : new Error(String(lastErr));
 }

@@ -290,7 +290,6 @@ async function generateIllustrationFile(
   seedKey?: string,
   excludeGroups?: string[],
   svgFallback = true,
-  fluxOnly = false,
 ): Promise<string> {
   try {
     const res = await generateImage({
@@ -298,15 +297,11 @@ async function generateIllustrationFile(
       seed,
       preferModel: seedKey ? pinnedModels.get(seedKey) : undefined,
       excludeGroups,
-      // FLUX-only: real FLUX providers one after another; the keyless Pollinations may serve another model (seen: SANA).
-      excludeModels: fluxOnly ? ["pollinations-flux"] : undefined,
-      sequential: fluxOnly,
     });
-    // Never pin the keyless last-resort model as a document's look.
-    if (seedKey && !pinnedModels.has(seedKey) && !res.watermarked) {
-      // Pin the first model that answered so the rest of this document keeps one look.
+    // Pin the model so the rest of this document keeps one look; a fallback model is never pinned.
+    if (seedKey && !pinnedModels.has(seedKey) && !res.fallback) {
       if (pinnedModels.size >= 500) pinnedModels.delete(pinnedModels.keys().next().value as string);
-      pinnedModels.set(seedKey, res.provider);
+      pinnedModels.set(seedKey, res.model);
     }
     return saveGenerated(`illustration_${randomUUID()}.${res.ext}`, res.data);
   } catch (err) {
@@ -1866,10 +1861,10 @@ aiRouter.post(
 
       const style = body.style ? String(body.style).slice(0, 450) : undefined;
       const hasVariation = variation !== undefined && variation > 0;
-      // `noGemini`: free image models only (NVIDIA, Pollinations), never the paid Gemini one.
-      // `fluxOnly`: FLUX models only (NVIDIA, Pollinations); no Gemini image, no Gemini-written SVG fallback.
+      // `noGemini`: free image models only, never the paid Gemini one.
+      // `fluxOnly`: free FLUX chain only; no Gemini image, no Gemini-written SVG fallback.
       const fluxOnly = body.fluxOnly === true;
-      const excludeGroups = fluxOnly ? ["gemini", "siliconflow"] : body.noGemini === true ? ["gemini"] : undefined;
+      const excludeGroups = fluxOnly || body.noGemini === true ? ["gemini"] : undefined;
       const cacheKey = hashKey({
         prompt: promptText,
         style,
@@ -1909,7 +1904,7 @@ aiRouter.post(
         return;
       }
       const { prompt, scene, category } = built;
-      const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed, seedKey, excludeGroups, !fluxOnly, fluxOnly);
+      const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed, seedKey, excludeGroups, !fluxOnly);
       if (!hasVariation) {
         exerciseCache.set(cacheKey, { imageUrl, category });
       }
