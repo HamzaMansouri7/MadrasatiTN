@@ -139,32 +139,57 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
                     <h1 class="font-display font-semibold text-xl text-[#14251D]">{{ s.title }}</h1>
                   </div>
                   <p class="text-sm text-[#5B6B60]">
-                    {{ lang.tr('Vérifiez le scénario : chaque ligne donne une planche A4 illustrée + une question de compréhension. Rien n’est écrit tant que vous n’approuvez pas.', 'راجع السيناريو: كل سطر يُنشئ لوحة A4 مصورة + سؤال استيعاب. لن يُكتب شيء قبل موافقتك.') }}
+                    {{ lang.tr('Voici le plan (outline) : chaque carte deviendra une planche A4 illustrée + une question. Modifiez le texte avant de générer — rien n’est écrit tant que vous n’approuvez pas.', 'هذا مخطّط القصة: كل بطاقة ستصبح لوحة A4 مصورة + سؤال. يمكنك تعديل النصوص قبل الإنشاء — لن يُكتب شيء قبل موافقتك.') }}
                   </p>
                 </div>
 
-                <div class="overflow-x-auto rounded-2xl border border-[#E7DFCF]">
-                  <table class="w-full text-sm">
-                    <thead class="bg-[#FBF8F1] text-xs text-[#5B6B60]">
-                      <tr>
-                        <th scope="col" class="p-3 text-start font-semibold w-12">#</th>
-                        <th scope="col" class="p-3 text-start font-semibold">{{ lang.tr('Titre', 'العنوان') }}</th>
-                        <th scope="col" class="p-3 text-start font-semibold">{{ lang.tr('Événement', 'الحدث') }}</th>
-                        <th scope="col" class="p-3 text-start font-semibold">{{ lang.tr('Question d’activité', 'سؤال النشاط') }}</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      @for (sc of s.scenes; track sc.n) {
-                        <tr class="border-t border-[#E7DFCF] align-top">
-                          <td class="p-3 font-mono text-xs text-[#5B6B60]">{{ sc.n }}</td>
-                          <td class="p-3 font-semibold text-[#14251D]">{{ sc.title }}</td>
-                          <td class="p-3 text-[#14251D]">{{ sc.event }}</td>
-                          <td class="p-3 text-xs text-[#2D6A4F]">{{ sc.question || '—' }}</td>
-                        </tr>
-                      }
-                    </tbody>
-                  </table>
-                </div>
+                <!-- Editable outline: one card per planned scene -->
+                <ol class="space-y-3">
+                  @for (sc of s.scenes; track sc.n) {
+                    <li class="rounded-2xl border border-[#E7DFCF] bg-[#FBF8F1] p-4 space-y-3">
+                      <div class="flex items-center justify-between gap-3">
+                        <span class="inline-flex items-center gap-2 text-xs font-semibold text-[#5B6B60]">
+                          <span class="w-7 h-7 rounded-lg bg-[#14251D] text-[#FBF8F1] font-mono flex items-center justify-center">{{ sc.n }}</span>
+                          {{ lang.tr('Planche', 'اللوحة') }} {{ sc.n }}
+                        </span>
+                        @if (s.scenes.length > 2) {
+                          <button type="button" (click)="store.removeOutlineScene(sc.n)" [attr.aria-label]="lang.tr('Supprimer cette planche', 'حذف هذه اللوحة')"
+                            class="w-9 h-9 rounded-lg text-[#8F3F1F] hover:bg-[#BF5B34]/10 flex items-center justify-center cursor-pointer">
+                            <span class="material-icons text-base">delete_outline</span>
+                          </button>
+                        }
+                      </div>
+
+                      <label class="block">
+                        <span class="block text-[11px] font-semibold text-[#5B6B60] mb-1">{{ lang.tr('Titre', 'العنوان') }}</span>
+                        <input type="text" [value]="sc.title"
+                          (input)="store.updateOutlineScene(sc.n, { title: $any($event.target).value })"
+                          class="w-full bg-white border border-[#E7DFCF] rounded-xl px-3 py-2 text-sm font-semibold text-[#14251D] outline-none focus:border-[#2D6A4F]" />
+                      </label>
+
+                      <label class="block">
+                        <span class="block text-[11px] font-semibold text-[#5B6B60] mb-1">{{ lang.tr('Événement', 'الحدث') }}</span>
+                        <textarea rows="2" [value]="sc.event"
+                          (input)="store.updateOutlineScene(sc.n, { event: $any($event.target).value })"
+                          class="w-full resize-y bg-white border border-[#E7DFCF] rounded-xl px-3 py-2 text-sm text-[#14251D] outline-none focus:border-[#2D6A4F]"></textarea>
+                      </label>
+
+                      <label class="block">
+                        <span class="block text-[11px] font-semibold text-[#2D6A4F] mb-1">{{ lang.tr('Question d’activité', 'سؤال النشاط') }}</span>
+                        <input type="text" [value]="sc.question || ''"
+                          (input)="store.updateOutlineScene(sc.n, { question: $any($event.target).value })"
+                          [placeholder]="lang.tr('Optionnel', 'اختياري')"
+                          class="w-full bg-white border border-[#E7DFCF] rounded-xl px-3 py-2 text-sm text-[#14251D] outline-none focus:border-[#2D6A4F]" />
+                      </label>
+                    </li>
+                  }
+                </ol>
+
+                <button type="button" (click)="store.addOutlineScene()"
+                  class="w-full border-2 border-dashed border-[#E7DFCF] rounded-2xl py-3 text-sm font-semibold text-[#2D6A4F] hover:bg-[#F2ECDE] flex items-center justify-center gap-2 cursor-pointer">
+                  <span class="material-icons text-base">add</span>
+                  {{ lang.tr('Ajouter une planche', 'إضافة لوحة') }}
+                </button>
 
                 <div class="flex flex-wrap items-center gap-3">
                   <button

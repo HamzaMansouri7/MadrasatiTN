@@ -1816,6 +1816,32 @@ export class EducationStore {
     return { ok: true, imageUrl };
   }
 
+  /** Outline editing (before generation): edit one planned scene's text fields in place. */
+  updateOutlineScene(sceneNumber: number, patch: Pick<Partial<Scene>, 'title' | 'event' | 'question'>): void {
+    this.currentSeries.update((s) =>
+      !s ? s : { ...s, scenes: s.scenes.map((sc) => (sc.n === sceneNumber ? { ...sc, ...patch } : sc)) },
+    );
+  }
+
+  /** Append a blank planned scene to the outline. */
+  addOutlineScene(): void {
+    this.currentSeries.update((s) => {
+      if (!s) return s;
+      const n = s.scenes.reduce((max, sc) => Math.max(max, sc.n), 0) + 1;
+      const scene: Scene = { n, title: '', event: '', text: '', imagePrompt: '', kind: 'scene', status: 'planned' };
+      return { ...s, scenes: [...s.scenes, scene] };
+    });
+  }
+
+  /** Remove a planned scene from the outline and renumber the rest (min two scenes kept). */
+  removeOutlineScene(sceneNumber: number): void {
+    this.currentSeries.update((s) => {
+      if (!s || s.scenes.length <= 2) return s;
+      const scenes = s.scenes.filter((sc) => sc.n !== sceneNumber).map((sc, i) => ({ ...sc, n: i + 1 }));
+      return { ...s, scenes };
+    });
+  }
+
   /** Merge fields into one scene of the active series (no-op when another series became active). */
   private patchScene(seriesId: string, sceneNumber: number, patch: Partial<Scene>): Scene | undefined {
     let result: Scene | undefined;
