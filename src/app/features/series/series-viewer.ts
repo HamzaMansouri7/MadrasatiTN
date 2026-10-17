@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, HostListener, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { createStudioSession, DRAFT_DOC_ID, EducationStore, LanguageService, PRIMARY_GRADES, Scene, SeriesDoc, SourceInput, SubjectName } from '@core';
-import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
+import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent, nativeSharePost, joinDetails } from '@shared';
 
 @Component({
   selector: 'app-series-viewer',
@@ -41,6 +41,10 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
           <button type="button" (click)="printAll()" [class]="barBtn">
             <span class="material-icons text-base" aria-hidden="true">picture_as_pdf</span>
             {{ lang.tr('تحميل PDF (A4)', 'تحميل PDF (A4)') }}
+          </button>
+          <button type="button" (click)="shareSeries()" [class]="barBtn">
+            <span class="material-icons text-base" aria-hidden="true">share</span>
+            {{ lang.tr('Partager', 'مشاركة') }}
           </button>
         }
         @if (!isNew()) {
@@ -206,15 +210,18 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
                 </div>
               </section>
             } @else {
-              <!-- Panel navigation -->
-              <nav class="bg-white rounded-[28px] border border-[#E7DFCF] p-4 space-y-3 print:hidden" [attr.dir]="s.language === 'ar' ? 'rtl' : 'ltr'" [attr.aria-label]="lang.tr('Planches', 'اللوحات')">
+              <!-- Two-pane studio once generated: a sticky navigation rail on the side fills the
+                   space next to the centred A4 sheet instead of leaving empty gutters. -->
+              <div class="lg:grid lg:grid-cols-[280px_minmax(0,1fr)] lg:gap-6 lg:items-start">
+              <!-- Panel navigation (left rail) -->
+              <nav class="bg-white rounded-[28px] border border-[#E7DFCF] p-4 space-y-3 print:hidden mb-4 lg:mb-0 lg:sticky lg:top-4" [attr.dir]="s.language === 'ar' ? 'rtl' : 'ltr'" [attr.aria-label]="lang.tr('Planches', 'اللوحات')">
                 <div class="flex items-center justify-between gap-3">
-                  <h1 class="font-display font-semibold text-sm text-[#14251D]">{{ s.title }}</h1>
-                  <span class="text-xs text-[#5B6B60] font-mono">
+                  <h1 class="font-display font-semibold text-sm text-[#14251D] truncate">{{ s.title }}</h1>
+                  <span class="text-xs text-[#5B6B60] font-mono shrink-0">
                     {{ activeSceneIndex() < s.scenes.length ? (activeSceneIndex() + 1 + ' / ' + s.scenes.length) : lang.tr('Fiche d’activités', 'ورقة الأنشطة') }}
                   </span>
                 </div>
-                <div class="flex items-center gap-2 overflow-x-auto pb-1">
+                <div class="flex lg:flex-col items-stretch gap-2 overflow-x-auto lg:overflow-visible pb-1 lg:pb-0">
                   @for (sc of s.scenes; track sc.n; let idx = $index) {
                     <button
                       type="button"
@@ -223,11 +230,11 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
                       [class]="activeSceneIndex() === idx
                         ? 'bg-[#14251D] text-[#FBF8F1] border-[#14251D]'
                         : 'bg-[#FBF8F1] text-[#5B6B60] border-[#E7DFCF] hover:bg-[#F2ECDE]'"
-                      class="flex items-center gap-2 px-3 min-h-11 rounded-xl border text-xs font-semibold whitespace-nowrap cursor-pointer transition-colors shrink-0">
+                      class="flex items-center gap-2 px-3 min-h-11 rounded-xl border text-xs font-semibold whitespace-nowrap cursor-pointer transition-colors shrink-0 lg:w-full lg:justify-start">
                       <span class="font-mono">{{ sc.n }}</span>
-                      <span>{{ sc.title }}</span>
+                      <span class="truncate">{{ sc.title }}</span>
                       @if (sc.status !== 'ready') {
-                        <span class="w-1.5 h-1.5 rounded-full bg-[#BF5B34]" [attr.title]="lang.tr('À générer', 'لم تُنشأ بعد')"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#BF5B34] shrink-0" [attr.title]="lang.tr('À générer', 'لم تُنشأ بعد')"></span>
                       }
                     </button>
                   }
@@ -239,15 +246,18 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
                     [class]="activeSceneIndex() === s.scenes.length
                       ? 'bg-[#2D6A4F] text-[#FBF8F1] border-[#2D6A4F]'
                       : 'bg-[#FBF8F1] text-[#2D6A4F] border-[#2D6A4F]/30 hover:bg-[#F2ECDE]'"
-                    class="flex items-center gap-2 px-3.5 min-h-11 rounded-xl border text-xs font-bold whitespace-nowrap cursor-pointer transition-colors shrink-0">
+                    class="flex items-center gap-2 px-3.5 min-h-11 rounded-xl border text-xs font-bold whitespace-nowrap cursor-pointer transition-colors shrink-0 lg:w-full lg:justify-start">
                     <span class="material-icons text-sm">format_list_numbered</span>
                     <span>{{ lang.tr('تمرين: رتّب الأحداث', 'تمرين: رتّب الأحداث') }}</span>
                   </button>
                 </div>
               </nav>
 
+              <!-- Right pane: actions + the A4 sheets -->
+              <div class="min-w-0 space-y-4">
+
               @if (currentScene(); as active) {
-                <div class="flex flex-wrap items-center gap-2 print:hidden">
+                <div class="flex flex-wrap items-center gap-2 print:hidden w-full max-w-[800px] mx-auto">
                   <button
                     type="button"
                     [disabled]="busy()"
@@ -453,6 +463,8 @@ import { SeriesPanelComponent, SourceInputComponent, STUDIO_BAR_BTN, StudioBarCo
                   <span class="material-icons text-sm rtl:rotate-180" aria-hidden="true">arrow_forward</span>
                 </button>
               </div>
+              </div><!-- /right pane -->
+              </div><!-- /two-pane grid -->
             }
           } @else if (loading()) {
             <div class="bg-white rounded-[28px] border border-[#E7DFCF] p-16 text-center space-y-3" role="status">
@@ -786,5 +798,24 @@ export class SeriesViewerComponent implements OnInit {
 
   printAll() {
     if (typeof window !== 'undefined') window.print();
+  }
+
+  /** Share the series: saves it first if it has no id yet, then opens the native share sheet. */
+  async shareSeries() {
+    if (typeof window === 'undefined') return;
+    const s = this.series();
+    if (!s) return;
+    let id = s.id;
+    if (!id) {
+      id = (await this.store.saveCurrentSeries()) ?? '';
+      if (!id) {
+        this.store.showToast(this.lang.tr('Enregistrez d’abord la série', 'احفظ السلسلة أولاً'), 'info');
+        return;
+      }
+    }
+    const url = `${window.location.origin}/series/${id}`;
+    const details = joinDetails([this.lang.translateGrade(s.grade ?? ''), this.lang.translateSubject(s.subject ?? '')]);
+    const result = await nativeSharePost(s.title, details, url);
+    if (result === 'copied') this.store.showToast(this.lang.tr('Lien copié', 'تم نسخ الرابط'), 'success');
   }
 }
