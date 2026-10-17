@@ -25,6 +25,7 @@ interface PresetOption {
   icon: string;
   fr: string;
   ar: string;
+  color: string;
 }
 
 type StudioPanel = 'composition' | 'commands' | 'style';
@@ -251,8 +252,8 @@ type StudioPanel = 'composition' | 'commands' | 'style';
                         : autoPicked() === p.id
                           ? 'border-dashed border-[#2D6A4F] bg-[#FBF8F1]'
                           : 'border-[#E7DFCF] hover:bg-[#FBF8F1] bg-white'"
-                      class="border rounded-lg px-2 min-h-11 flex items-center gap-2 text-start cursor-pointer transition-colors disabled:opacity-60 disabled:cursor-default focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
-                      <span class="material-icons text-base shrink-0" [class]="preset() === p.id || autoPicked() === p.id ? 'text-[#2D6A4F]' : 'text-[#6B7A70]'" aria-hidden="true">{{ p.icon }}</span>
+                      class="group border rounded-lg px-2 min-h-11 flex items-center gap-2 text-start cursor-pointer transition-all disabled:opacity-60 disabled:cursor-default focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                      <span class="material-icons text-base shrink-0 transition-transform group-hover:scale-110" [class]="p.color" aria-hidden="true">{{ p.icon }}</span>
                       <span class="text-xs font-semibold text-[#14251D] leading-tight truncate">{{ lang.tr(p.fr, p.ar) }}</span>
                     </button>
                   }
@@ -460,26 +461,26 @@ export class InfographicStudioComponent implements OnInit {
   }
 
   readonly presets: PresetOption[] = [
-    { id: 'auto', icon: 'auto_awesome', fr: 'Auto', ar: 'تلقائي' },
-    { id: 'hero-cards', icon: 'dashboard', fr: 'Cartes', ar: 'بطاقات' },
-    { id: 'circular-flow', icon: 'autorenew', fr: 'Cycle', ar: 'دورة' },
-    { id: 'timeline', icon: 'timeline', fr: 'Frise', ar: 'شريط زمني' },
-    { id: 'central-picture', icon: 'center_focus_strong', fr: 'Image centrale', ar: 'صورة مركزية' },
-    { id: 'lesson-stages', icon: 'format_list_numbered', fr: 'Étapes', ar: 'مراحل الدرس' },
-    { id: 'comparison', icon: 'compare_arrows', fr: 'Comparaison', ar: 'مقارنة' },
-    { id: 'problem', icon: 'quiz', fr: 'Problème', ar: 'وضعية مشكل' },
-    { id: 'picture-rows', icon: 'view_list', fr: 'Image et phrase', ar: 'صورة وجملة' },
-    { id: 'steps-interface', icon: 'web', fr: 'Étapes et écran', ar: 'خطوات وشاشة' },
-    { id: 'mindmap', icon: 'hub', fr: 'Carte mentale', ar: 'خريطة ذهنية' },
-    { id: 'flashcards', icon: 'style', fr: 'Flashcards', ar: 'بطاقات مراجعة' },
-    { id: 'quizcard', icon: 'quiz', fr: 'QCM & Quiz', ar: 'اختبار وسؤال' },
-    { id: 'certificate', icon: 'workspace_premium', fr: 'Certificat', ar: 'شهادة تقدير' },
-    { id: 'venn', icon: 'join_inner', fr: 'Venn', ar: 'مجموعات فين' },
-    { id: 'idcard', icon: 'badge', fr: "Fiche d'identité", ar: 'بطاقة هوية' },
-    { id: 'analogy', icon: 'sync_alt', fr: 'Analogie', ar: 'مقاربة تمثيلية' },
-    { id: 'flyer', icon: 'campaign', fr: 'Flyer & Annonce', ar: 'إعلان ومطوية' },
-    { id: 'pathmap', icon: 'map', fr: 'Carte parcours', ar: 'خريطة مسار' },
-    { id: 'boardgame', icon: 'casino', fr: 'Jeu de plateau', ar: 'لعبة لوحية' },
+    { id: 'auto', icon: 'auto_awesome', fr: 'Auto', ar: 'تلقائي', color: 'text-amber-500' },
+    { id: 'hero-cards', icon: 'dashboard', fr: 'Cartes', ar: 'بطاقات', color: 'text-blue-600' },
+    { id: 'circular-flow', icon: 'autorenew', fr: 'Cycle', ar: 'دورة', color: 'text-teal-600' },
+    { id: 'timeline', icon: 'timeline', fr: 'Frise', ar: 'شريط زمني', color: 'text-indigo-600' },
+    { id: 'central-picture', icon: 'center_focus_strong', fr: 'Image centrale', ar: 'صورة مركزية', color: 'text-cyan-600' },
+    { id: 'lesson-stages', icon: 'format_list_numbered', fr: 'Étapes', ar: 'مراحل الدرس', color: 'text-emerald-600' },
+    { id: 'comparison', icon: 'compare_arrows', fr: 'Comparaison', ar: 'مقارنة', color: 'text-violet-600' },
+    { id: 'problem', icon: 'quiz', fr: 'Problème', ar: 'وضعية مشكل', color: 'text-rose-500' },
+    { id: 'picture-rows', icon: 'view_list', fr: 'Image et phrase', ar: 'صورة وجملة', color: 'text-sky-600' },
+    { id: 'steps-interface', icon: 'web', fr: 'Étapes et écran', ar: 'خطوات وشاشة', color: 'text-blue-500' },
+    { id: 'mindmap', icon: 'hub', fr: 'Carte mentale', ar: 'خريطة ذهنية', color: 'text-purple-600' },
+    { id: 'flashcards', icon: 'style', fr: 'Flashcards', ar: 'بطاقات مراجعة', color: 'text-orange-500' },
+    { id: 'quizcard', icon: 'quiz', fr: 'QCM & Quiz', ar: 'اختبار وسؤال', color: 'text-red-500' },
+    { id: 'certificate', icon: 'workspace_premium', fr: 'Certificat', ar: 'شهادة تقدير', color: 'text-amber-600' },
+    { id: 'venn', icon: 'join_inner', fr: 'Venn', ar: 'مجموعات فين', color: 'text-fuchsia-600' },
+    { id: 'idcard', icon: 'badge', fr: "Fiche d'identité", ar: 'بطاقة هوية', color: 'text-emerald-700' },
+    { id: 'analogy', icon: 'sync_alt', fr: 'Analogie', ar: 'مقاربة تمثيلية', color: 'text-teal-700' },
+    { id: 'flyer', icon: 'campaign', fr: 'Flyer & Annonce', ar: 'إعلان ومطوية', color: 'text-pink-600' },
+    { id: 'pathmap', icon: 'map', fr: 'Carte parcours', ar: 'خريطة مسار', color: 'text-lime-600' },
+    { id: 'boardgame', icon: 'casino', fr: 'Jeu de plateau', ar: 'لعبة لوحية', color: 'text-indigo-500' },
   ];
 
   readonly themes: { id: InfographicTheme; icon: string; fr: string; ar: string; hintFr: string; hintAr: string }[] = [
