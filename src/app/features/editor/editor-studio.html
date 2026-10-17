@@ -66,7 +66,7 @@
             <span class="block font-semibold text-[#14251D] mb-1">
               {{ lang.tr('Type de document', 'نوع الوثيقة') }}
             </span>
-            <div class="grid grid-cols-2 gap-2" role="radiogroup" [attr.aria-label]="lang.tr('Type de document', 'نوع الوثيقة')">
+            <div class="grid grid-cols-2 gap-2 [&>*:last-child:nth-child(odd)]:col-span-2" role="radiogroup" [attr.aria-label]="lang.tr('Type de document', 'نوع الوثيقة')">
               @for (opt of docTypeOptions; track opt.value) {
                 <button
                   type="button"
@@ -76,13 +76,13 @@
                   [class]="docType() === opt.value
                     ? 'border-[#2D6A4F] bg-[#2D6A4F]/8 text-[#14251D] ring-1 ring-[#2D6A4F]'
                     : 'border-[#E7DFCF] bg-[#FBF8F1] text-[#5B6B60] hover:border-[#2D6A4F]/50'"
-                  class="flex items-center gap-2 rounded-xl border px-2.5 py-1.5 text-right transition-all cursor-pointer min-h-[38px]">
+                  class="flex items-center gap-2 rounded-xl border px-2 py-1.5 text-start transition-all cursor-pointer min-h-[38px] min-w-0">
                   <span
                     [class]="docType() === opt.value ? 'bg-[#2D6A4F] text-white' : 'bg-white text-[#2D6A4F]'"
                     class="material-icons text-base rounded-lg p-1 shrink-0 transition-colors">{{ opt.icon }}</span>
-                  <span class="min-w-0">
-                    <span class="block text-xs font-semibold leading-tight">{{ lang.tr(opt.fr, opt.ar) }}</span>
-                    <span class="block text-[10px] opacity-70 leading-tight">{{ opt.sub }}</span>
+                  <span class="min-w-0 flex-1">
+                    <span class="block text-xs font-semibold leading-tight break-words">{{ lang.tr(opt.fr, opt.ar) }}</span>
+                    <span class="block text-[10px] opacity-70 leading-tight truncate">{{ opt.sub }}</span>
                   </span>
                 </button>
               }
@@ -137,24 +137,6 @@
             </div>
           </div>
         </div>
-        @if (isLessonPlan()) {
-        <div class="pt-3 border-t border-dashed border-[#E7DFCF] flex flex-wrap items-center gap-2 text-xs">
-          <span class="text-xs font-semibold text-[#14251D] me-1">{{ lang.tr('Modèle de fiche', 'نموذج الجذاذة') }}</span>
-          <div class="flex flex-wrap items-center gap-1.5" role="group" [attr.aria-label]="lang.tr('Modèle de fiche', 'نموذج الجذاذة')">
-            @for (tpl of lessonTemplates; track tpl.id) {
-              <button
-                type="button"
-                (click)="chooseLessonTemplate(tpl.id)"
-                [attr.aria-pressed]="lessonTemplate() === tpl.id"
-                [class]="lessonTemplate() === tpl.id ? 'bg-[#14251D] text-[#FBF8F1] border-[#14251D]' : 'bg-[#FBF8F1] text-[#14251D] border-[#E7DFCF] hover:bg-[#F2ECDE]'"
-                class="border px-3 min-h-10 rounded-xl text-xs font-semibold cursor-pointer transition-colors flex items-center gap-1.5 focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
-                <span class="material-icons text-sm" aria-hidden="true">{{ tpl.icon }}</span>
-                {{ lang.tr(tpl.fr, tpl.ar) }}
-              </button>
-            }
-          </div>
-        </div>
-        }
         </div>
 
         <!-- Title, trimester, school, watermark and templates fill the free side -->
@@ -280,6 +262,48 @@
 
       <div class="p-4 space-y-4 text-xs">
         @if (isLessonPlan()) {
+          @if (visibleLessonTemplates().length > 1) {
+            <div>
+              <p id="lesson-template-label" class="text-xs font-semibold text-[#5B6B60] mb-1.5">{{ lang.tr('Modèle de fiche', 'نموذج الجذاذة') }}</p>
+              <div class="grid grid-cols-2 gap-2" role="radiogroup" aria-labelledby="lesson-template-label">
+                @for (tpl of visibleLessonTemplates(); track tpl.id) {
+                  <button
+                    type="button"
+                    role="radio"
+                    [attr.aria-checked]="lessonTemplate() === tpl.id"
+                    (click)="chooseLessonTemplate(tpl.id)"
+                    [class]="lessonTemplate() === tpl.id
+                      ? 'border-[#2D6A4F] ring-1 ring-[#2D6A4F] bg-[#2D6A4F]/8'
+                      : 'border-[#E7DFCF] bg-[#FBF8F1] hover:border-[#2D6A4F]/50'"
+                    class="relative rounded-xl border p-2 flex flex-col items-center gap-2 cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                    @if (lessonTemplate() === tpl.id) {
+                      <span class="material-icons absolute top-1.5 end-1.5 text-base text-[#2D6A4F]" aria-hidden="true">check_circle</span>
+                    }
+                    <span class="h-32 aspect-[210/297] bg-white border border-[#E7DFCF] rounded-sm shadow-xs p-1.5 flex flex-col gap-1 overflow-hidden" aria-hidden="true">
+                      <span class="h-3 shrink-0 rounded-[2px] border border-[#14251D]/40"></span>
+                      @for (row of tpl.sketch; track $index) {
+                        @switch (row.k) {
+                          @case ('box') {
+                            <span class="h-3.5 shrink-0 rounded-[2px] border-s-2 bg-[#F2ECDE]" [style.border-color]="row.c"></span>
+                          }
+                          @case ('quote') {
+                            <span class="h-3 shrink-0 ms-1.5 rounded-[2px] border-s-2 border-[#2D6A4F] bg-[#FBF8F1]"></span>
+                          }
+                          @case ('table') {
+                            <span class="flex-1 min-h-6 rounded-[2px] border border-[#14251D]/30" style="background-image: linear-gradient(#14251D33 1px, transparent 1px), linear-gradient(90deg, #14251D33 1px, transparent 1px); background-size: 100% 25%, 25% 100%"></span>
+                          }
+                          @default {
+                            <span class="h-1 shrink-0 w-3/4 rounded-full bg-[#E7DFCF]"></span>
+                          }
+                        }
+                      }
+                    </span>
+                    <span class="text-xs font-semibold text-[#14251D] leading-tight text-center">{{ lang.tr(tpl.fr, tpl.ar) }}</span>
+                  </button>
+                }
+              </div>
+            </div>
+          }
           <fieldset class="space-y-4">
             <legend class="font-display font-semibold text-sm text-[#14251D] flex items-center gap-2 mb-1">
               <span class="w-6 h-6 rounded-md bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center">

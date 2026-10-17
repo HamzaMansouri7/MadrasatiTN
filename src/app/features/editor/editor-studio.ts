@@ -9,6 +9,8 @@ import { lessonPlanBlocks, lessonPlanRequest, LessonPlanValues, refillSection, s
 import { StagesBlockComponent } from './lesson-plan/stages-block';
 
 type LessonTemplateId = 'general' | 'lesson_plan_reading_ar' | 'lesson_plan_math_problem' | 'lesson_plan_science_inquiry' | 'lesson_plan_fr_langue';
+/** One row of a template thumbnail: callout box (border colour), quoted text, stages table or text line. */
+interface SketchRow { k: 'box' | 'quote' | 'table' | 'line'; c?: string }
 
 @Component({
   selector: 'app-editor-studio',
@@ -141,14 +143,16 @@ export class EditorStudioComponent implements OnInit {
   readonly lessonDurations = [30, 45, 60];
   readonly isLessonPlan = computed(() => this.docType() === 'lesson_plan');
   /** General official sheet, or one of the subject templates (drafts: structures not yet checked against real sheets). */
-  readonly lessonTemplates: { id: LessonTemplateId; icon: string; fr: string; ar: string }[] = [
-    { id: 'general', icon: 'view_timeline', fr: 'Générale', ar: 'عامة' },
-    { id: 'lesson_plan_reading_ar', icon: 'menu_book', fr: 'Arabe : lecture', ar: 'عربية : قراءة وفهم' },
-    { id: 'lesson_plan_math_problem', icon: 'calculate', fr: 'Maths : situation-problème', ar: 'رياضيات : وضعية مشكل' },
-    { id: 'lesson_plan_science_inquiry', icon: 'science', fr: 'Éveil : démarche d’investigation', ar: 'إيقاظ : تقصٍّ علمي' },
-    { id: 'lesson_plan_fr_langue', icon: 'translate', fr: 'Français : langue', ar: 'فرنسية : لغة' },
+  readonly lessonTemplates: { id: LessonTemplateId; subject?: SubjectName; fr: string; ar: string; sketch: SketchRow[] }[] = [
+    { id: 'general', fr: 'Générale', ar: 'عامة', sketch: [{ k: 'line' }, { k: 'box', c: '#2D6A4F' }, { k: 'box', c: '#8A5A00' }, { k: 'table' }, { k: 'line' }] },
+    { id: 'lesson_plan_reading_ar', subject: 'اللغة العربية', fr: 'Lecture et compréhension', ar: 'قراءة وفهم', sketch: [{ k: 'box', c: '#1B4332' }, { k: 'quote' }, { k: 'box', c: '#2D6A4F' }, { k: 'box', c: '#8A5A00' }, { k: 'table' }, { k: 'line' }] },
+    { id: 'lesson_plan_math_problem', subject: 'Mathématiques', fr: 'Situation-problème', ar: 'وضعية مشكل', sketch: [{ k: 'box', c: '#1B4332' }, { k: 'box', c: '#8A5A00' }, { k: 'box', c: '#BF5B34' }, { k: 'table' }, { k: 'box', c: '#2D6A4F' }, { k: 'line' }] },
+    { id: 'lesson_plan_science_inquiry', subject: 'Éveil Scientifique', fr: 'Démarche d’investigation', ar: 'تقصٍّ علمي', sketch: [{ k: 'box', c: '#1B4332' }, { k: 'box', c: '#BF5B34' }, { k: 'box', c: '#8A5A00' }, { k: 'table' }, { k: 'box', c: '#2D6A4F' }, { k: 'line' }] },
+    { id: 'lesson_plan_fr_langue', subject: 'Français', fr: 'Séance de langue', ar: 'حصة لغة', sketch: [{ k: 'box', c: '#1B4332' }, { k: 'box', c: '#2D6A4F' }, { k: 'table' }, { k: 'box', c: '#8A5A00' }, { k: 'box', c: '#BF5B34' }, { k: 'line' }] },
   ];
   readonly lessonTemplate = signal<LessonTemplateId>('general');
+  /** General sheet plus the template of the chosen subject, if it has one. */
+  readonly visibleLessonTemplates = computed(() => this.lessonTemplates.filter((t) => !t.subject || t.subject === this.docSubject()));
 
   chooseLessonTemplate(id: LessonTemplateId) {
     this.lessonTemplate.set(id);
@@ -382,6 +386,7 @@ export class EditorStudioComponent implements OnInit {
   /** Studio bar badge: home practice, exam/exercise sheet or article. */
   readonly studioBadge = computed(() => {
     if (this.isParentMode()) return { icon: 'home', label: this.lang.tr('Atelier maison', 'ورشة التمارين المنزلية') };
+    if (this.isLessonPlan()) return { icon: 'school', label: this.lang.tr('Fiche pédagogique', 'جذاذة') };
     if (this.studioShell() === 'A') return { icon: 'quiz', label: this.lang.tr('Examen / exercices', 'امتحان / تمارين') };
     return { icon: 'article', label: this.lang.tr('Article', 'مقال تربوي') };
   });
@@ -1231,16 +1236,22 @@ export class EditorStudioComponent implements OnInit {
   ];
 
   readonly docGradeOptions: { value: GradeLevel; icon: string; fr: string; ar: string }[] = [
-    { value: '1ère Année', icon: 'looks_one', fr: '1ère Année', ar: 'الأولى ابتدائي' },
-    { value: '2ème Année', icon: 'looks_two', fr: '2ème Année', ar: 'الثانية ابتدائي' },
-    { value: '3ème Année', icon: 'looks_3', fr: '3ème Année', ar: 'الثالثة ابتدائي' },
-    { value: '4ème Année', icon: 'looks_4', fr: '4ème Année', ar: 'الرابعة ابتدائي' },
-    { value: '5ème Année', icon: 'looks_5', fr: '5ème Année', ar: 'الخامسة ابتدائي' },
-    { value: '6ème Année', icon: 'looks_6', fr: '6ème Année', ar: 'السادسة (مناظرة)' },
+    { value: '1ère Année', icon: 'looks_one', fr: '1ère Année', ar: 'الأولى' },
+    { value: '2ème Année', icon: 'looks_two', fr: '2ème Année', ar: 'الثانية' },
+    { value: '3ème Année', icon: 'looks_3', fr: '3ème Année', ar: 'الثالثة' },
+    { value: '4ème Année', icon: 'looks_4', fr: '4ème Année', ar: 'الرابعة' },
+    { value: '5ème Année', icon: 'looks_5', fr: '5ème Année', ar: 'الخامسة' },
+    { value: '6ème Année', icon: 'looks_6', fr: '6ème Année', ar: 'السادسة' },
   ];
 
   setDocSubject(s: SubjectName) {
     this.docSubject.set(s);
+    this.resetForeignLessonTemplate(s);
+  }
+
+  private resetForeignLessonTemplate(s: SubjectName) {
+    const t = this.lessonTemplates.find(x => x.id === this.lessonTemplate());
+    if (t?.subject && t.subject !== s) this.lessonTemplate.set('general');
   }
 
   setDocGrade(g: GradeLevel) {
@@ -1248,7 +1259,7 @@ export class EditorStudioComponent implements OnInit {
   }
 
   onDocSubjectChange(e: Event) {
-    this.docSubject.set((e.target as HTMLSelectElement).value as SubjectName);
+    this.setDocSubject((e.target as HTMLSelectElement).value as SubjectName);
   }
 
   onDocGradeChange(e: Event) {
