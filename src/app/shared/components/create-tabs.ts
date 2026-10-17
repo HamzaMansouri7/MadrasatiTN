@@ -29,13 +29,13 @@ export const CREATE_TABS: CreateTab[] = [
   },
   {
     key: 'lesson-plan', icon: 'view_timeline', fr: 'Fiche pédagogique', ar: 'جذاذة',
-    path: '/lesson-plan/new',
-    match: (p) => p.startsWith('/lesson-plan'),
+    path: '/editor', query: { type: 'lesson_plan' },
+    match: (p, q) => p.startsWith('/lesson-plan') || (p === '/editor' && q.get('type') === 'lesson_plan'),
   },
   {
     key: 'exercises', icon: 'quiz', fr: 'Devoirs & exercices', ar: 'امتحانات وتمارين',
     path: '/editor', query: { type: 'exercise_sheet' },
-    match: (p) => p === '/editor',
+    match: (p, q) => p === '/editor' && q.get('type') !== 'lesson_plan',
   },
   {
     key: 'series', icon: 'auto_stories', fr: 'Série illustrée', ar: 'سلسلة مصورة',

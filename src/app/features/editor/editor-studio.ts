@@ -3,13 +3,17 @@ import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK, SourceInput, chapterById, createStudioSession } from '@core';
-import { CartoucheComponent, SheetChartComponent, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
+import { CartoucheComponent, createSourceFormState, SheetChartComponent, SourceCardComponent, sourceChecks, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty, CalloutVariant } from './editor.model';
+import { lessonPlanBlocks, lessonPlanRequest, LessonPlanValues, refillSection, stagesText } from './lesson-plan/lesson-plan-blocks';
+import { StagesBlockComponent } from './lesson-plan/stages-block';
+
+type LessonTemplateId = 'general' | 'lesson_plan_reading_ar' | 'lesson_plan_math_problem' | 'lesson_plan_science_inquiry' | 'lesson_plan_fr_langue';
 
 @Component({
   selector: 'app-editor-studio',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent, SheetChartComponent, StudioBarComponent, StudioSessionBannerComponent],
+  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent, SheetChartComponent, SourceCardComponent, StagesBlockComponent, StudioBarComponent, StudioSessionBannerComponent],
   templateUrl: './editor-studio.html',
   styleUrl: './editor-studio.css',
 })
@@ -130,6 +134,130 @@ export class EditorStudioComponent implements OnInit {
       case 'quote': return 'format_quote';
       default: return 'crop_square';
     }
+  }
+
+  // ---- Lesson plan (جذاذة): blocks built in ./lesson-plan, the editor only calls them ----
+  readonly lessonMinutes = signal<number>(45);
+  readonly lessonDurations = [30, 45, 60];
+  readonly isLessonPlan = computed(() => this.docType() === 'lesson_plan');
+  /** General official sheet, or one of the subject templates (drafts: structures not yet checked against real sheets). */
+  readonly lessonTemplates: { id: LessonTemplateId; icon: string; fr: string; ar: string }[] = [
+    { id: 'general', icon: 'view_timeline', fr: 'Générale', ar: 'عامة' },
+    { id: 'lesson_plan_reading_ar', icon: 'menu_book', fr: 'Arabe : lecture', ar: 'عربية : قراءة وفهم' },
+    { id: 'lesson_plan_math_problem', icon: 'calculate', fr: 'Maths : situation-problème', ar: 'رياضيات : وضعية مشكل' },
+    { id: 'lesson_plan_science_inquiry', icon: 'science', fr: 'Éveil : démarche d’investigation', ar: 'إيقاظ : تقصٍّ علمي' },
+    { id: 'lesson_plan_fr_langue', icon: 'translate', fr: 'Français : langue', ar: 'فرنسية : لغة' },
+  ];
+  readonly lessonTemplate = signal<LessonTemplateId>('general');
+
+  chooseLessonTemplate(id: LessonTemplateId) {
+    this.lessonTemplate.set(id);
+    if (id === 'general') this.loadLessonPlanPreset();
+    else this.loadTemplatePreset(id);
+  }
+  /** Same source card as the revision file: topic, text, photos, PDF / Word, textbook page. */
+  readonly lessonSource = createSourceFormState();
+
+  private lessonIds() {
+    let n = 0;
+    const stamp = Date.now();
+    return () => `b-${stamp}-${++n}`;
+  }
+
+  /** Empty official sheet: every section ready to fill by hand or by the AI. */
+  loadLessonPlanPreset() {
+    const ar = this.docLanguage() === 'ar';
+    this.docType.set('lesson_plan');
+    this.docTitle.set(ar ? 'عنوان الدرس' : 'Titre de la leçon');
+    this.blocks.set(lessonPlanBlocks({ durationMinutes: this.lessonMinutes() }, this.docLanguage(), this.lessonIds()));
+  }
+
+  setLessonMinutes(minutes: number) {
+    this.lessonMinutes.set(minutes);
+  }
+
+  private lessonRequest(src: SourceInput, sectionToRegenerate?: string) {
+    return lessonPlanRequest(src, {
+      grade: this.docGrade(),
+      subject: this.docSubject(),
+      trimester: this.docTrimester(),
+      topicId: this.docTopicId(),
+      language: this.docLanguage(),
+      durationMinutes: src.durationMinutes ?? this.lessonMinutes(),
+      sectionToRegenerate,
+    });
+  }
+
+  /** The source card's content as a generation source (the textbook page travels as a url). */
+  private lessonSourceInput(): SourceInput {
+    const s = this.lessonSource;
+    const tab = s.tab();
+    return {
+      mode: tab === 'library' ? 'file' : tab,
+      topic: tab === 'topic' ? s.topic().trim() : undefined,
+      topicId: tab === 'topic' ? (s.topicId() ?? undefined) : undefined,
+      text: tab === 'text' ? s.text().trim() : undefined,
+      images: tab === 'photo' ? s.images() : undefined,
+      file: tab === 'file' ? s.file() : undefined,
+      resourceUrl: tab === 'library' ? s.resourceUrl() : undefined,
+      instructions: s.instructions().trim() || undefined,
+    };
+  }
+
+  /** Whole sheet from a Create-hub source, or from the source card in the editor. */
+  async generateLessonPlan(src?: SourceInput) {
+    if (!src && !this.session.validate(sourceChecks(this.lessonSource, (fr, ar) => this.lang.tr(fr, ar)))) return;
+    const source: SourceInput = src ?? this.lessonSourceInput();
+    this.lastGeneration = () => this.generateLessonPlan(src);
+    if (source.durationMinutes) this.lessonMinutes.set(source.durationMinutes);
+    try {
+      const res = await this.session.run(() => this.ai.post('generate-lesson-plan', this.lessonRequest(source), {
+        fallbackError: this.lang.tr('La fiche n’a pas pu être générée.', 'تعذّر توليد الجذاذة.'),
+      }));
+      if (!res) return;
+      if (!res.ok) {
+        this.session.fail(res.error);
+        return;
+      }
+      const values = (res.data['doc'] as { values?: LessonPlanValues } | undefined)?.values;
+      if (!values) {
+        this.session.fail(this.lang.tr('La fiche n’a pas pu être générée.', 'تعذّر توليد الجذاذة.'));
+        return;
+      }
+      this.docType.set('lesson_plan');
+      if (values.topic) this.docTitle.set(values.topic);
+      if (values.durationMinutes) this.lessonMinutes.set(values.durationMinutes);
+      this.blocks.set(lessonPlanBlocks(values, this.docLanguage(), this.lessonIds()));
+      this.session.succeed();
+    } finally {
+      this.saveDraft();
+    }
+  }
+
+  /** Rewrites one part of the sheet; the rest of the teacher's edits stay as they are. */
+  async rewriteLessonSection(block: EditorBlock) {
+    if (!block.sectionKey) return;
+    const previous = { ...block };
+    const res = await this.session.run(() => this.ai.post('generate-lesson-plan', this.lessonRequest({ ...this.lessonSourceInput(), topic: this.docTitle() }, block.sectionKey), {
+      fallbackError: this.lang.tr('Cette partie n’a pas pu être réécrite.', 'تعذّرت إعادة كتابة هذا الجزء.'),
+    }));
+    if (!res) return;
+    if (!res.ok) {
+      this.session.fail(res.error);
+      return;
+    }
+    const values = (res.data['doc'] as { values?: LessonPlanValues } | undefined)?.values;
+    if (!values) {
+      this.session.fail(this.lang.tr('Cette partie n’a pas pu être réécrite.', 'تعذّرت إعادة كتابة هذا الجزء.'));
+      return;
+    }
+    this.blocks.update((list) => list.map((b) => (b.id === block.id ? refillSection(b, values, this.docLanguage()) : b)));
+    this.session.keepUndo(previous);
+    this.session.succeed();
+  }
+
+  updateStages(id: string, stages: EditorBlock['stages']) {
+    this.blocks.update((list) => list.map((b) => (b.id === id ? { ...b, stages } : b)));
   }
 
   isInlineEditable(b: EditorBlock): boolean {
@@ -423,7 +551,7 @@ export class EditorStudioComponent implements OnInit {
       if (qType === 'exam') this.loadTemplatePreset('exam_full');
       else if (qType === 'exercise_sheet') this.loadTemplatePreset('exercise_sheet');
       else if (qType === 'course') this.loadTemplatePreset('course_summary');
-      else if (qType === 'lesson_plan') this.loadTemplatePreset('lesson_plan_reading_ar');
+      else if (qType === 'lesson_plan') this.loadLessonPlanPreset();
     }
   }
 
@@ -433,6 +561,7 @@ export class EditorStudioComponent implements OnInit {
 
   async applySourceAndGenerate(src: SourceInput, type: DocumentType) {
     this.lastGeneration = () => this.applySourceAndGenerate(src, type);
+    if (type === 'lesson_plan') return this.generateLessonPlan(src);
     const lang = (src.language as 'fr' | 'ar') || (this.docSubject() === 'Français' || this.docSubject() === 'Anglais' ? 'fr' : 'ar');
     const extraInstructions = src.instructions ? ` - Note: ${src.instructions}` : (src.text && src.topic ? ` - Contexte: ${src.text.slice(0, 100)}` : '');
     const effectiveTopic =
@@ -877,6 +1006,8 @@ export class EditorStudioComponent implements OnInit {
         return 'Image VPS';
       case 'divider':
         return 'Séparateur';
+      case 'stages':
+        return 'Déroulement';
       case 'quote':
         return 'Texte / Citation';
       default:
@@ -1601,6 +1732,7 @@ export class EditorStudioComponent implements OnInit {
         if (b.type === 'callout') {
           return `> [!NOTE]\n> **${b.calloutTitle || 'Conseil'}**\n> ${b.content}`;
         }
+        if (b.type === 'stages') return stagesText(b.stages, this.docLanguage());
         if (b.type === 'heading1') return `# ${b.content}`;
         if (b.type === 'heading2') return `## ${b.content}`;
         return b.content;

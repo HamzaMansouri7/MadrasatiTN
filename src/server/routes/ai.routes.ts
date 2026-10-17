@@ -1,6 +1,5 @@
 import { Router, Request, Response } from "express";
 import { randomUUID } from "node:crypto";
-import { existsSync } from "node:fs";
 import mammoth from "mammoth";
 import { GoogleGenAI, Type } from "@google/genai";
 import { retrieveContext } from "../knowledge-source";
@@ -14,7 +13,7 @@ import { toPublicError } from "../ai/public-error";
 import { createCache, hashKey } from "../ai/cache";
 import { sanitizeSvg } from "../ai/svg-sanitize";
 import { generateImage } from "../ai/image-chain";
-import { resolveInside } from "../safe-path";
+import { resolveSourceFiles } from "../ai/source-files";
 import { capText, capHistory, wrapData, CAPS } from "../input-caps";
 import { originGuard, aiRateLimiter } from "../guards";
 import { saveGenerated } from "../storage";
@@ -896,53 +895,7 @@ aiRouter.post(
         }),
       });
 
-      const parts: GeminiPart[] = [];
-      if (Array.isArray(sourceFiles)) {
-        for (const f of sourceFiles.slice(0, 6)) {
-          if (!f) continue;
-          if (typeof f.url === "string" && (f.url.startsWith("/uploads/") || f.url.startsWith("/assets/resources/"))) {
-            try {
-              const fromAssets = f.url.startsWith("/assets/resources/");
-              const fsPath = fromAssets
-                ? [resolveInside("public", f.url.slice(1)), resolveInside("dist/app/browser", f.url.slice(1))].find(
-                    (candidate) => candidate && existsSync(candidate),
-                  )
-                : resolveInside(process.env["UPLOAD_DIR"] || "uploads", f.url.slice("/uploads/".length));
-              if (!fsPath) continue;
-              const buffer = await (
-                await import("node:fs/promises")
-              ).readFile(fsPath);
-              const mime = f.url.endsWith(".png")
-                ? "image/png"
-                : f.url.endsWith(".pdf")
-                  ? "application/pdf"
-                  : f.url.endsWith(".webp")
-                    ? "image/webp"
-                    : "image/jpeg";
-              parts.push({
-                inlineData: {
-                  mimeType: mime,
-                  data: buffer.toString("base64"),
-                },
-              });
-            } catch (e) {
-              console.warn(
-                "[generate-memo] Could not attach file from url:",
-                f.url,
-                e,
-              );
-            }
-          } else if (f.data && f.mimeType) {
-            const clean = f.data.replace(/^data:[^;]+;base64,/, "");
-            parts.push({
-              inlineData: {
-                mimeType: f.mimeType,
-                data: clean,
-              },
-            });
-          }
-        }
-      }
+      const parts = await resolveSourceFiles(sourceFiles, 6, "generate-memo");
       parts.push({ text: prompt });
 
       if (target) {
@@ -1045,7 +998,7 @@ aiRouter.post(
         res.status(500).json({ error: "Service IA non disponible." });
         return;
       }
-      const parts = sourceParts(sourceFiles);
+      const parts = await resolveSourceFiles(sourceFiles, 3, "generate-lesson-plan");
       if (!topic && !instructions && !lessonText && parts.length === 0) {
         res
           .status(400)

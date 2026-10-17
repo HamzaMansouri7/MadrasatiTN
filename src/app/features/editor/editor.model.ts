@@ -1,4 +1,4 @@
-import { GradeLevel, SubjectName } from '@core';
+import { GradeLevel, LessonPlanStage, SubjectName } from '@core';
 
 export type EditorBlockType =
   | 'paragraph'
@@ -10,7 +10,8 @@ export type EditorBlockType =
   | 'image'
   | 'cartouche'
   | 'divider'
-  | 'quote';
+  | 'quote'
+  | 'stages';
 
 export type CalloutVariant = 'info' | 'tip' | 'warning' | 'ministry';
 
@@ -66,6 +67,10 @@ export interface EditorBlock {
   chartValues?: number[];
   chartBlanks?: number[];
   chartUnit?: string;
+  /** Lesson plan: stages table (stage, minutes, teacher / pupils activity). */
+  stages?: LessonPlanStage[];
+  /** Lesson plan: which part of the sheet this block holds, so the AI can rewrite only it. */
+  sectionKey?: string;
   // Image specific
   imageUrl?: string;
   imageCaption?: string;

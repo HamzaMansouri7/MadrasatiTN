@@ -14,4 +14,8 @@ export interface SourceInput {
   subject?: SubjectName | string;
   trimester?: Trimester | string;
   language?: 'ar' | 'fr';
+  /** Page of the official textbooks (/assets/resources/...), read by the server. */
+  resourceUrl?: string;
+  /** Lesson plan: length of the session in minutes. */
+  durationMinutes?: number;
 }
