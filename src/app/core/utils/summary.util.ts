@@ -112,7 +112,13 @@ export function normalizeSummarySection(raw: unknown): SummarySection | null {
   const text = clip(o['text'], 900);
   if (text) s.text = text;
   const imageUrl = safeImageUrl(o['imageUrl']);
-  if (imageUrl) s.imageUrl = imageUrl;
+  if (imageUrl) {
+    s.imageUrl = imageUrl;
+    const w = Number(o['imageWidth']);
+    if (Number.isFinite(w) && w > 0) s.imageWidth = Math.round(Math.min(100, Math.max(20, w)));
+  }
+  const imagePrompt = clip(o['imagePrompt'], 300);
+  if (imagePrompt && !/[\u0600-\u06FF]/.test(imagePrompt)) s.imagePrompt = imagePrompt;
 
   switch (type) {
     case 'intro':

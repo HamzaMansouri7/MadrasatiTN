@@ -1257,6 +1257,10 @@ export class EducationStore {
     authorName?: string;
     authorRole?: 'teacher' | 'parent' | 'ai' | 'community';
     school?: string;
+    /** Same id = update in place (owner only). */
+    id?: string;
+    /** true publishes to the library; autosaves send false and stay private. */
+    published?: boolean;
   }): Promise<{ id: string; shareUrl: string } | null> {
     try {
       const res = await fetch('/api/docs', {
@@ -1270,14 +1274,33 @@ export class EducationStore {
       });
       const data = await res.json();
       if (data.success && data.id) {
-        this.publishedLoaded = false;
-        void this.loadPublishedWorksheets();
+        if (payload.published) {
+          this.publishedLoaded = false;
+          void this.loadPublishedWorksheets();
+        }
         return { id: data.id, shareUrl: data.shareUrl };
       }
     } catch (err) {
       console.error('Error in saveMemo:', err);
     }
     return null;
+  }
+
+  /** AI picture for a revision document section: FLUX models only, returns the image file or null. */
+  async generateFluxPicture(prompt: string, doc: MemoDoc, raw = true): Promise<Blob | null> {
+    const res = await this.ai.post(
+      'generate-illustration',
+      { promptText: prompt, raw, fluxOnly: true, seedKey: `memo:${doc.title}`, grade: doc.grade, subject: doc.subject },
+      { retry429: true, fallbackError: "Erreur lors de la création de l'illustration." },
+    );
+    const url = res.ok ? (res.data['imageUrl'] as string | undefined) : undefined;
+    if (!url) return null;
+    try {
+      const img = await fetch(url);
+      return img.ok ? await img.blob() : null;
+    } catch {
+      return null;
+    }
   }
 
   async getMemo(id: string): Promise<{

@@ -14,15 +14,7 @@ function toolKeyOf(url: string): string | null {
  * Asks before leaving a creation tool that holds unsaved input or a running generation.
  * Moves that stay inside the same tool (e.g. /lesson-plan/new → /lesson-plan/:id) pass.
  */
-export const studioLeaveGuard: CanDeactivateFn<unknown> = (_component, _route, _current, next) => {
-  if (typeof window === 'undefined') return true;
-  const target = toolKeyOf(next.url);
-  const pending = inject(StudioSessionRegistry).unsaved().filter((s) => s.key !== target);
-  if (pending.length === 0) return true;
-
-  const lang = inject(LanguageService);
-  const message = pending.some((s) => s.busy())
-    ? lang.tr('Une génération est en cours. Quitter la page l’arrêtera. Quitter quand même ?', 'التوليد جارٍ. مغادرة الصفحة ستوقفه. هل تريد المغادرة؟')
-    : lang.tr('Votre travail n’est pas enregistré dans votre compte. Quitter quand même ?', 'عملك غير محفوظ في حسابك. هل تريد المغادرة؟');
-  return window.confirm(message);
+export const studioLeaveGuard: CanDeactivateFn<unknown> = () => {
+  // Deactivated: all studio sessions auto-save drafts to StorageVaultService
+  return true;
 };

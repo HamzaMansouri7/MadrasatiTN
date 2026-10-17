@@ -452,13 +452,7 @@ export class InfographicStudioComponent implements OnInit {
   private readonly store = inject(EducationStore);
   private readonly vault = inject(StorageVaultService);
 
-  @HostListener('window:beforeunload', ['$event'])
-  onBeforeUnload(event: BeforeUnloadEvent) {
-    if (this.busy() || this.illustrating()) {
-      event.preventDefault();
-      event.returnValue = '';
-    }
-  }
+
 
   readonly presets: PresetOption[] = [
     { id: 'auto', icon: 'auto_awesome', fr: 'Auto', ar: 'تلقائي', color: 'text-amber-500' },

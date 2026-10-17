@@ -21,6 +21,7 @@ export const SUMMARY_SECTION_SCHEMA = {
       },
     },
     solution: STR,
+    imagePrompt: STR,
     table: {
       type: Type.OBJECT,
       properties: {

@@ -21,15 +21,15 @@ import { EducationStore, LanguageService, StudioSession } from '@core';
       }
 
       @if (s.busy()) {
-        <div role="status" class="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[#E7DFCF] bg-[#FBF8F1] px-4 py-2.5">
-          <p class="flex items-center gap-2.5 text-sm font-semibold text-[#14251D]">
-            <span class="material-icons text-base text-[#2D6A4F] animate-spin motion-reduce:animate-none" aria-hidden="true">sync</span>
-            {{ lang.tr('Génération…', 'جارٍ التوليد…') }}
-            <span class="text-xs font-normal text-[#5B6B60] tabular-nums">{{ elapsed() }} {{ lang.tr('s', 'ث') }}</span>
-          </p>
-          <button type="button" (click)="s.cancel()" class="min-h-11 px-4 rounded-xl border border-[#E7DFCF] bg-white hover:bg-[#F2ECDE] text-sm font-semibold text-[#14251D] cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
-            {{ lang.tr('Annuler', 'إلغاء') }}
-          </button>
+        <div class="fixed inset-0 z-50 flex items-center justify-center bg-[#14251D]/30 px-4">
+          <div role="status" class="w-full max-w-sm rounded-2xl border border-[#E7DFCF] bg-white px-6 py-6 shadow-lg text-center space-y-4">
+            <span class="material-icons text-4xl text-[#2D6A4F] animate-spin motion-reduce:animate-none" aria-hidden="true">sync</span>
+            <p class="font-display text-lg font-semibold text-[#14251D]">{{ lang.tr('Génération…', 'جارٍ التوليد…') }}</p>
+            <p class="text-sm text-[#5B6B60] tabular-nums">{{ elapsed() }} {{ lang.tr('s', 'ث') }}</p>
+            <button type="button" (click)="s.cancel()" class="min-h-11 px-6 rounded-xl border border-[#E7DFCF] bg-white hover:bg-[#F2ECDE] text-sm font-semibold text-[#14251D] cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+              {{ lang.tr('Annuler', 'إلغاء') }}
+            </button>
+          </div>
         </div>
       }
 

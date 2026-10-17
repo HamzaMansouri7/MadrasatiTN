@@ -86,6 +86,10 @@ export interface SummarySection {
   exercises?: SummaryExercise[];
   /** Optional picture added by the teacher (max 2 per document). */
   imageUrl?: string;
+  /** Picture width in % of the text column (20-100), set by the teacher; 40 when absent. */
+  imageWidth?: number;
+  /** English scene for an AI picture (FLUX), written with the section; never shown. */
+  imagePrompt?: string;
 }
 
 export type SummaryLength = 'short' | 'full';

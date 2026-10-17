@@ -269,6 +269,23 @@
     break-inside: avoid;
   }
 
+  /* Revision document (ملف مراجعة): several pages, so it flows and breaks between sections.
+     Taken out of the page flow so hidden studio parts above it cannot push it to page 2. */
+  .print-document.sd-print-flow {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+  .print-document.sd-print-flow .sd-section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
   /* 6. Scanned Worksheets & Multi-Page Print Layout */
   #image-doc-printable {
     padding: 0 !important;

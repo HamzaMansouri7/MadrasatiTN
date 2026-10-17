@@ -287,6 +287,7 @@ async function generateIllustrationFile(
   seed: number,
   seedKey?: string,
   excludeGroups?: string[],
+  svgFallback = true,
 ): Promise<string> {
   try {
     const res = await generateImage({ prompt, seed, preferModel: seedKey ? pinnedModels.get(seedKey) : undefined, excludeGroups });
@@ -297,6 +298,7 @@ async function generateIllustrationFile(
     }
     return saveGenerated(`illustration_${randomUUID()}.${res.ext}`, res.data);
   } catch (err) {
+    if (!svgFallback) throw new Error("Aucun service d'illustration disponible pour le moment.");
     console.warn(
       "[image] generateImage chain exhausted, attempting SVG fallback:",
       err instanceof Error ? err.message : err,
@@ -1851,7 +1853,9 @@ aiRouter.post(
       const style = body.style ? String(body.style).slice(0, 450) : undefined;
       const hasVariation = variation !== undefined && variation > 0;
       // `noGemini`: free image models only (NVIDIA, Pollinations), never the paid Gemini one.
-      const excludeGroups = body.noGemini === true ? ["gemini"] : undefined;
+      // `fluxOnly`: FLUX models only (NVIDIA, Pollinations); no Gemini image, no Gemini-written SVG fallback.
+      const fluxOnly = body.fluxOnly === true;
+      const excludeGroups = fluxOnly ? ["gemini", "siliconflow"] : body.noGemini === true ? ["gemini"] : undefined;
       const cacheKey = hashKey({
         prompt: promptText,
         style,
@@ -1859,6 +1863,7 @@ aiRouter.post(
         seedKey,
         raw,
         noGemini: !!excludeGroups,
+        fluxOnly,
       });
 
       if (!hasVariation) {
@@ -1884,7 +1889,7 @@ aiRouter.post(
             kind: String(body.kind ?? "").slice(0, 30),
             style,
           });
-      const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed, seedKey, excludeGroups);
+      const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed, seedKey, excludeGroups, !fluxOnly);
       if (!hasVariation) {
         exerciseCache.set(cacheKey, { imageUrl, category });
       }

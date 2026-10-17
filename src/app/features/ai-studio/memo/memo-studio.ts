@@ -67,7 +67,7 @@ interface LibraryResourceItem {
                 <span class="text-xs text-[#B7C7BC] whitespace-nowrap">{{ lang.translateSubject(store.memo()?.subject || subject()) }}</span>
                 <span class="text-xs text-[#9DBBA8] inline-flex items-center gap-1.5 whitespace-nowrap" aria-live="polite">
                   <span class="w-1.5 h-1.5 rounded-full" [class]="busy() ? 'bg-[#F2C14E] animate-pulse' : 'bg-[#9DBBA8]'"></span>
-                  {{ busy() ? lang.tr('Génération en cours', 'جارٍ التوليد') : isSaved() ? lang.tr('Enregistré', 'تم الحفظ') : lang.tr('Prêt', 'جاهز') }}
+                  {{ busy() ? lang.tr('Génération en cours', 'جارٍ التوليد') : autoSaving() ? lang.tr('Enregistrement…', 'جارٍ الحفظ…') : isSaved() || autoSaved() ? lang.tr('Enregistré', 'تم الحفظ') : lang.tr('Prêt', 'جاهز') }}
                 </span>
               </div>
               <h1 dir="auto" class="font-display text-lg sm:text-xl font-semibold mt-0.5 truncate max-w-[70vw] lg:max-w-xl">
@@ -129,24 +129,28 @@ interface LibraryResourceItem {
 
         <app-studio-session-banner [session]="session" />
 
-        <!-- INPUT FORM VIEW (When idle / analyzing / error) -->
-        @if (state() !== 'done') {
-          <div class="no-print grid lg:grid-cols-2 gap-8 items-start">
-          <div class="flex flex-col gap-5" [attr.inert]="session.busy() ? '' : null" [attr.aria-busy]="session.busy()">
+        <!-- Workspace: form panels on the start side (right in Arabic), preview or document beside them -->
+        <div [class]="workspaceGrid()">
+          <div [class]="formColumn()" [attr.inert]="session.busy() ? '' : null" [attr.aria-busy]="session.busy()">
             
-            <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4 sm:p-5 space-y-5" [style.order]="panelOrder('source')">
-            <legend class="font-display font-semibold text-sm text-[#14251D] mb-3">{{ lang.tr('Source', 'المصدر') }}</legend>
-            <div role="tablist" [attr.aria-label]="lang.tr('Source du cours', 'مصدر الدرس')" class="flex flex-wrap gap-1 p-1 rounded-xl border border-[#E7DFCF] bg-[#FBF8F1]">
+            <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4 sm:p-5 space-y-4 [&>*:not(legend)]:clear-both" [style.order]="panelOrder('source')">
+            <legend class="float-start w-full font-display font-semibold text-sm text-[#14251D] flex items-center gap-2">
+              <span class="w-6 h-6 rounded-md bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center">
+                <span class="material-icons text-sm" aria-hidden="true">source</span>
+              </span>
+              <span>{{ lang.tr('Source', 'المصدر') }}</span>
+            </legend>
+            <div role="tablist" [attr.aria-label]="lang.tr('Source du cours', 'مصدر الدرس')" class="flex flex-wrap gap-1.5 p-1.5 rounded-2xl border border-[#E7DFCF] bg-[#FBF8F1]">
               @for (tab of sourceTabs; track tab.id) {
                 <button
                   type="button"
                   role="tab"
                   [attr.aria-selected]="activeTab() === tab.id"
                   (click)="activeTab.set(tab.id)"
-                  [class]="activeTab() === tab.id ? 'bg-[#14251D] text-[#FBF8F1]' : 'text-[#5B6B60] hover:bg-[#F2ECDE] hover:text-[#14251D]'"
-                  class="px-3 min-h-10 rounded-lg text-sm font-semibold flex items-center gap-1.5 cursor-pointer transition-colors focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                  [class]="activeTab() === tab.id ? 'bg-[#14251D] text-[#FBF8F1] shadow-xs font-semibold' : 'text-[#5B6B60] hover:bg-[#F2ECDE] hover:text-[#14251D] font-medium'"
+                  class="px-3 min-h-10 rounded-xl text-xs sm:text-sm flex items-center gap-1.5 cursor-pointer transition-all focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
                   <span class="material-icons text-base" aria-hidden="true">{{ tab.icon }}</span>
-                  {{ lang.t(tab.key) }}
+                  <span>{{ lang.t(tab.key) }}</span>
                 </button>
               }
             </div>
@@ -155,15 +159,15 @@ interface LibraryResourceItem {
             @if (activeTab() === 'topic') {
               <div class="space-y-2">
                 <label for="memo-topic-input" class="block text-sm font-semibold text-[#14251D]">{{ lang.t('memoInputTopicLabel') }}</label>
-                <input
+                <textarea
                   id="memo-topic-input"
-                  type="text"
+                  rows="2"
                   [(ngModel)]="topic"
                   (ngModelChange)="session.clearFieldError('memo-topic-input')"
                   [attr.aria-invalid]="!!session.fieldError('memo-topic-input')"
                   [placeholder]="lang.t('memoInputTopicPlaceholder')"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-md px-4 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
-                />
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-xl p-3 text-sm text-[#14251D] leading-relaxed resize-y focus:bg-white focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] transition-all shadow-2xs"
+                ></textarea>
                 @if (session.fieldError('memo-topic-input'); as msg) {
                   <p class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
                 }
@@ -188,7 +192,7 @@ interface LibraryResourceItem {
                   (ngModelChange)="session.clearFieldError('memo-text-input')"
                   [attr.aria-invalid]="!!session.fieldError('memo-text-input')"
                   [placeholder]="lang.t('memoInputTextPlaceholder')"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-md p-4 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-xl p-3.5 text-sm text-[#14251D] leading-relaxed resize-y focus:bg-white focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] transition-all shadow-2xs"
                 ></textarea>
                 @if (session.fieldError('memo-text-input'); as msg) {
                   <p class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
@@ -311,28 +315,36 @@ interface LibraryResourceItem {
 
             <!-- Optional Instructions Field -->
             <div class="space-y-1.5">
-              <label for="memo-instructions-input" class="block text-sm font-semibold text-[#5B6B60]">{{ lang.t('memoInstructionsLabel') }}</label>
-              <input
+              <label for="memo-instructions-input" class="block text-sm font-semibold text-[#14251D] flex items-center justify-between">
+                <span>{{ lang.t('memoInstructionsLabel') }}</span>
+                <span class="text-xs font-normal text-[#5B6B60]">{{ lang.tr('Optionnel', 'اختياري') }}</span>
+              </label>
+              <textarea
                 id="memo-instructions-input"
-                type="text"
+                rows="3"
                 [(ngModel)]="instructions"
                 [placeholder]="lang.t('memoInstructionsPlaceholder')"
-                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-4 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
-              />
+                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-3 text-sm text-[#14251D] leading-relaxed resize-y focus:bg-white focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] transition-all shadow-2xs"
+              ></textarea>
             </div>
 
             </fieldset>
 
-            <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4 sm:p-5 space-y-5" [style.order]="panelOrder('settings')">
-            <legend class="font-display font-semibold text-sm text-[#14251D] mb-3">{{ lang.tr('Paramètres', 'الإعدادات') }}</legend>
+            <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4 sm:p-5 space-y-4 [&>*:not(legend)]:clear-both" [style.order]="panelOrder('settings')">
+            <legend class="float-start w-full font-display font-semibold text-sm text-[#14251D] flex items-center gap-2">
+              <span class="w-6 h-6 rounded-md bg-[#8A5A00]/10 text-[#8A5A00] flex items-center justify-center">
+                <span class="material-icons text-sm" aria-hidden="true">tune</span>
+              </span>
+              <span>{{ lang.tr('Paramètres pédagogiques', 'الإعدادات البيداغوجية') }}</span>
+            </legend>
             <!-- Metadata Pickers (Grade / Subject / Trimester / Language) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
               <div>
-                <label for="memo-grade-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoGradeLabel') }}</label>
+                <label for="memo-grade-select" class="block text-xs font-semibold text-[#5B6B60] mb-1.5">{{ lang.t('memoGradeLabel') }}</label>
                 <select
                   id="memo-grade-select"
                   [(ngModel)]="grade"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3.5 min-h-11 text-sm text-[#14251D] focus:bg-white focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] transition-colors"
                 >
                   <option value="1ère Année">1ère Année (السنة الأولى)</option>
                   <option value="2ème Année">2ème Année (السنة الثانية)</option>
@@ -344,11 +356,11 @@ interface LibraryResourceItem {
               </div>
 
               <div>
-                <label for="memo-subject-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoSubjectLabel') }}</label>
+                <label for="memo-subject-select" class="block text-xs font-semibold text-[#5B6B60] mb-1.5">{{ lang.t('memoSubjectLabel') }}</label>
                 <select
                   id="memo-subject-select"
                   [(ngModel)]="subject"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3.5 min-h-11 text-sm text-[#14251D] focus:bg-white focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] transition-colors"
                 >
                   <option value="Français">Français (اللغة الفرنسية)</option>
                   <option value="اللغة العربية">اللغة العربية (Arabe)</option>
@@ -361,11 +373,11 @@ interface LibraryResourceItem {
               </div>
 
               <div>
-                <label for="memo-trimester-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoTrimesterLabel') }}</label>
+                <label for="memo-trimester-select" class="block text-xs font-semibold text-[#5B6B60] mb-1.5">{{ lang.t('memoTrimesterLabel') }}</label>
                 <select
                   id="memo-trimester-select"
                   [(ngModel)]="trimester"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3.5 min-h-11 text-sm text-[#14251D] focus:bg-white focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] transition-colors"
                 >
                   <option value="Trimestre 1">Trimestre 1 (الثلاثي الأول)</option>
                   <option value="Trimestre 2">Trimestre 2 (الثلاثي الثاني)</option>
@@ -374,11 +386,11 @@ interface LibraryResourceItem {
               </div>
 
               <div>
-                <label for="memo-lang-select" class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.t('memoLanguageLabel') }}</label>
+                <label for="memo-lang-select" class="block text-xs font-semibold text-[#5B6B60] mb-1.5">{{ lang.t('memoLanguageLabel') }}</label>
                 <select
                   id="memo-lang-select"
                   [(ngModel)]="language"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3.5 min-h-11 text-sm text-[#14251D] focus:bg-white focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] transition-colors"
                 >
                   <option value="ar">العربية (Arabe standard)</option>
                   <option value="fr">Français (Langue française)</option>
@@ -388,28 +400,36 @@ interface LibraryResourceItem {
 
             </fieldset>
 
-            <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4 sm:p-5 space-y-5" [style.order]="panelOrder('options')">
-            <legend class="font-display font-semibold text-sm text-[#14251D] mb-3">{{ lang.tr('Longueur et exercices', 'الطول والتمارين') }}</legend>
+            <fieldset class="bg-white rounded-2xl border border-[#E7DFCF] p-4 sm:p-5 space-y-4 [&>*:not(legend)]:clear-both" [style.order]="panelOrder('options')">
+            <legend class="float-start w-full font-display font-semibold text-sm text-[#14251D] flex items-center gap-2">
+              <span class="w-6 h-6 rounded-md bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center">
+                <span class="material-icons text-sm" aria-hidden="true">checklist</span>
+              </span>
+              <span>{{ lang.tr('Longueur et exercices', 'الطول والتمارين') }}</span>
+            </legend>
             <!-- Document length and practice exercises -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <fieldset>
-                <legend class="block text-sm font-semibold text-[#14251D] mb-1.5">{{ lang.tr('Longueur', 'الطول') }}</legend>
+            <div class="space-y-3">
+              <div>
+                <p class="block text-xs font-semibold text-[#5B6B60] mb-1.5">{{ lang.tr('Longueur du document', 'طول الملف') }}</p>
                 <div class="grid grid-cols-2 gap-2">
                   @for (opt of lengthOptions; track opt.key) {
                     <button
                       type="button"
                       (click)="length.set(opt.key)"
                       [attr.aria-pressed]="length() === opt.key"
-                      [class]="length() === opt.key ? 'border-[#2D6A4F] bg-[#F3FAFD] text-[#14251D]' : 'border-[#E7DFCF] bg-white text-[#5B6B60] hover:border-[#CBD9E2]'"
-                      class="border rounded-md px-2 min-h-11 text-sm font-medium cursor-pointer transition-colors">
+                      [class]="length() === opt.key ? 'border-[#2D6A4F] bg-[#1B4332]/5 text-[#1B4332] font-semibold ring-2 ring-[#2D6A4F]/20' : 'border-[#E7DFCF] bg-[#FBF8F1] text-[#5B6B60] hover:bg-[#F2ECDE] font-medium'"
+                      class="border rounded-xl px-3 min-h-11 text-xs sm:text-sm cursor-pointer transition-all text-center">
                       {{ lang.tr(opt.fr, opt.ar) }}
                     </button>
                   }
                 </div>
-              </fieldset>
-              <label class="flex items-center gap-3 self-end min-h-11 px-3 rounded-md border border-[#E7DFCF] bg-[#FBF8F1] cursor-pointer">
-                <input type="checkbox" [checked]="withPractice()" (change)="withPractice.set($any($event.target).checked)" class="w-4 h-4 accent-[#2D6A4F]" />
-                <span class="text-sm font-medium">{{ lang.tr('Avec exercices et corrigé', 'مع تمارين وإصلاحها') }}</span>
+              </div>
+              <label class="flex items-center gap-3 min-h-12 px-3.5 rounded-xl border border-[#E7DFCF] bg-[#FBF8F1] hover:bg-[#F2ECDE] transition-colors cursor-pointer">
+                <input type="checkbox" [checked]="withPractice()" (change)="withPractice.set($any($event.target).checked)" class="w-4 h-4 accent-[#2D6A4F] rounded cursor-pointer" />
+                <div class="flex flex-col">
+                  <span class="text-sm font-semibold text-[#14251D]">{{ lang.tr('Avec exercices et corrigé', 'مع تمارين وإصلاحها') }}</span>
+                  <span class="text-[11px] text-[#5B6B60]">{{ lang.tr('Génère une série d’exercices avec solutions', 'توليد أنشطة تدريبية مصحوبة بحلولها') }}</span>
+                </div>
               </label>
             </div>
 
@@ -424,7 +444,7 @@ interface LibraryResourceItem {
             <div class="pt-2">
               <button
                 (click)="generateMemo()"
-                class="w-full bg-[#2D6A4F] hover:bg-[#1B4332] disabled:opacity-50 disabled:cursor-not-allowed text-[#FBF8F1] font-semibold min-h-12 px-6 rounded-md text-sm transition-colors cursor-pointer flex items-center justify-center gap-2 shadow-sm"
+                class="w-full bg-[#1B4332] hover:bg-[#14251D] disabled:opacity-50 disabled:cursor-not-allowed text-[#FBF8F1] font-semibold min-h-12 px-6 rounded-xl text-sm transition-all cursor-pointer flex items-center justify-center gap-2 shadow-sm hover:shadow-md"
               >
                 @if (state() === 'analyzing') {
                   <span class="material-icons text-base animate-spin" aria-hidden="true">sync</span>
@@ -439,9 +459,53 @@ interface LibraryResourceItem {
 
           </div>
 
-          <aside class="lg:sticky lg:top-6" [attr.aria-label]="lang.tr('Aperçu du document', 'معاينة الملف')">
+          @if (state() === 'done' && store.memo()) {
+          <div class="min-w-0 space-y-6">
+            
+            <!-- Optional Extracted Text Inspection Step (for photo/file modes) -->
+            @if (extractedText()) {
+              <div class="no-print bg-[#FBF8F1] p-4 rounded-lg border border-[#E7DFCF] space-y-2">
+                <div class="flex items-center justify-between">
+                  <label for="memo-extracted-text-area" class="font-semibold text-sm text-[#14251D]">{{ lang.t('memoExtractedTextLabel') }}</label>
+                  <button
+                    (click)="regenerateWithExtractedText()"
+                    class="text-sm font-semibold text-[#8A5A00] hover:text-[#C1121F] underline underline-offset-4 decoration-[#E7DFCF] cursor-pointer flex items-center gap-1 min-h-11"
+                  >
+                    <span class="material-icons text-base" aria-hidden="true">refresh</span>
+                    {{ lang.t('memoBtnRegenWithText') }}
+                  </button>
+                </div>
+                <textarea
+                  id="memo-extracted-text-area"
+                  rows="3"
+                  [(ngModel)]="extractedText"
+                  class="w-full bg-white border border-[#E7DFCF] rounded-md p-3 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
+                ></textarea>
+              </div>
+            }
+
+            <!-- Revision document -->
+            <div class="print-document sd-print-flow">
+              <app-summary-document
+                [memo]="store.memo()!"
+                [author]="savedAuthorName() || watermarkName()"
+                [editable]="true"
+                [busyIndex]="busySection()"
+                [pictureBusyIndex]="busyPicture()"
+                [teacherCopy]="teacherCopy()"
+                (regenerate)="regenerateSection($event)"
+                (addPicture)="pickPicture($event)"
+                (generatePicture)="generatePicture($event)"
+                (resizePicture)="resizePicture($event.index, $event.width)"
+                (removePicture)="removePicture($event)" />
+              <input #pictureInput type="file" accept="image/*" class="hidden" (change)="onPictureSelected($event)" />
+            </div>
+
+          </div>
+          } @else {
+          <aside class="no-print lg:sticky lg:top-6" [attr.aria-label]="lang.tr('Aperçu du document', 'معاينة الملف')">
             <p class="text-sm font-semibold text-[#5B6B60] mb-2">{{ lang.tr('Aperçu du document', 'معاينة الملف') }}</p>
-            <div class="relative bg-white border border-[#E7DFCF] rounded-md shadow-sm aspect-[210/297] lg:max-h-[calc(100vh-7rem)] lg:max-w-[calc((100vh-7rem)*0.707)] w-full mx-auto overflow-hidden p-5 sm:p-6 flex flex-col">
+            <div class="relative bg-white border border-[#E7DFCF] rounded-md shadow-sm aspect-[210/297] w-full overflow-hidden p-5 sm:p-6 flex flex-col">
               <div aria-hidden="true" class="absolute inset-0 flex items-center justify-center pointer-events-none select-none -rotate-45 font-display text-3xl font-semibold text-[#0B2947]/[0.07] text-center px-6">
                 {{ watermarkName() }}
               </div>
@@ -473,51 +537,8 @@ interface LibraryResourceItem {
             </div>
             <p class="text-sm text-[#5B6B60] mt-2">{{ lang.tr('Votre nom est imprimé sur chaque fiche.', 'اسمك يُطبع على كل بطاقة.') }}</p>
           </aside>
-          </div>
-        }
-
-        <!-- RESULT & WORKSPACE VIEW (When done) -->
-        @if (state() === 'done' && store.memo()) {
-          <div class="space-y-6">
-            
-            <!-- Optional Extracted Text Inspection Step (for photo/file modes) -->
-            @if (extractedText()) {
-              <div class="no-print bg-[#FBF8F1] p-4 rounded-lg border border-[#E7DFCF] space-y-2">
-                <div class="flex items-center justify-between">
-                  <label for="memo-extracted-text-area" class="font-semibold text-sm text-[#14251D]">{{ lang.t('memoExtractedTextLabel') }}</label>
-                  <button
-                    (click)="regenerateWithExtractedText()"
-                    class="text-sm font-semibold text-[#8A5A00] hover:text-[#C1121F] underline underline-offset-4 decoration-[#E7DFCF] cursor-pointer flex items-center gap-1 min-h-11"
-                  >
-                    <span class="material-icons text-base" aria-hidden="true">refresh</span>
-                    {{ lang.t('memoBtnRegenWithText') }}
-                  </button>
-                </div>
-                <textarea
-                  id="memo-extracted-text-area"
-                  rows="3"
-                  [(ngModel)]="extractedText"
-                  class="w-full bg-white border border-[#E7DFCF] rounded-md p-3 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
-                ></textarea>
-              </div>
-            }
-
-            <!-- Revision document -->
-            <div class="print-document">
-              <app-summary-document
-                [memo]="store.memo()!"
-                [author]="savedAuthorName() || watermarkName()"
-                [editable]="true"
-                [busyIndex]="busySection()"
-                [teacherCopy]="teacherCopy()"
-                (regenerate)="regenerateSection($event)"
-                (addPicture)="pickPicture($event)"
-                (removePicture)="removePicture($event)" />
-              <input #pictureInput type="file" accept="image/*" class="hidden" (change)="onPictureSelected($event)" />
-            </div>
-
-          </div>
-        }
+          }
+        </div>
 
       </main>
     </div>
@@ -542,6 +563,17 @@ export class MemoStudioComponent implements OnInit {
     { id: 'settings', icon: 'tune', fr: 'Paramètres', ar: 'الإعدادات' },
     { id: 'options', icon: 'checklist', fr: 'Longueur et exercices', ar: 'الطول والتمارين' },
   ];
+  /** Once the document exists it takes most of the width; the panels stay beside it. */
+  readonly workspaceGrid = computed(() =>
+    this.state() === 'done' && this.store.memo()
+      ? 'grid gap-4 items-start lg:grid-cols-[minmax(26rem,31rem)_minmax(0,1fr)] xl:grid-cols-[minmax(28rem,34rem)_minmax(0,1fr)]'
+      : 'grid gap-8 items-start lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]',
+  );
+  readonly formColumn = computed(() =>
+    this.state() === 'done' && this.store.memo()
+      ? 'no-print flex flex-col gap-3'
+      : 'no-print flex flex-col gap-3',
+  );
   /** Form card shown first; the others keep their usual order below it. */
   readonly topPanel = signal<MemoPanel>('source');
   readonly state = signal<'idle' | 'analyzing' | 'done' | 'error'>('idle');
@@ -574,6 +606,8 @@ export class MemoStudioComponent implements OnInit {
   readonly teacherCopy = signal<boolean>(false);
   /** 1-based index of the section being rewritten, 0 = none. */
   readonly busySection = signal<number>(0);
+  /** 1-based index of the section whose AI picture is being drawn, 0 = none. */
+  readonly busyPicture = signal<number>(0);
   readonly busy = computed(() => this.state() === 'analyzing' || this.busySection() > 0);
   private pictureTarget = -1;
   private readonly pictureInput = viewChild<ElementRef<HTMLInputElement>>('pictureInput');
@@ -593,6 +627,9 @@ export class MemoStudioComponent implements OnInit {
 
   readonly isSaving = signal<boolean>(false);
   readonly isSaved = signal<boolean>(false);
+  readonly autoSaving = signal<boolean>(false);
+  readonly autoSaved = signal<boolean>(false);
+  private autoSaveTimer: ReturnType<typeof setTimeout> | null = null;
   readonly shareCopied = signal<boolean>(false);
   readonly isExportingWord = signal<boolean>(false);
 
@@ -750,6 +787,8 @@ export class MemoStudioComponent implements OnInit {
     this.savedMemoId.set(null);
     this.savedAuthorName.set(null);
     this.isSaved.set(false);
+    if (this.autoSaveTimer) clearTimeout(this.autoSaveTimer);
+    this.autoSaved.set(false);
   }
 
   printMemo() {
@@ -768,15 +807,9 @@ export class MemoStudioComponent implements OnInit {
     if (!memo) return;
     this.isSaving.set(true);
 
-    const userProfile = this.firebase.userProfile();
-    const payload = {
-      memoDoc: memo,
-      authorName: userProfile?.displayName || 'Enseignant Madrasati',
-      authorRole: 'teacher' as const,
-      school: userProfile?.school || 'المدرسة الابتدائية التونسية',
-    };
-
-    const saved = await this.store.saveMemo(payload);
+    if (this.autoSaveTimer) clearTimeout(this.autoSaveTimer);
+    const payload = this.savePayload(memo);
+    const saved = await this.store.saveMemo({ ...payload, id: this.savedMemoId() ?? undefined, published: true });
     this.isSaving.set(false);
 
     if (saved && saved.id) {
@@ -978,6 +1011,37 @@ export class MemoStudioComponent implements OnInit {
       trimester: this.trimester(),
       extractedText: this.extractedText(),
     });
+    this.scheduleAutoSave();
+  }
+
+  /** Every change is kept: on this device always, and in the account (private) when signed in. */
+  private scheduleAutoSave() {
+    if (this.autoSaveTimer) clearTimeout(this.autoSaveTimer);
+    this.autoSaved.set(false);
+    if (!this.store.isSignedIn()) return;
+    this.autoSaveTimer = setTimeout(() => void this.autoSave(), 1500);
+  }
+
+  private async autoSave() {
+    const memo = this.store.memo();
+    if (!memo) return;
+    this.autoSaving.set(true);
+    const saved = await this.store.saveMemo({ ...this.savePayload(memo), id: this.savedMemoId() ?? undefined, published: false });
+    this.autoSaving.set(false);
+    if (saved?.id && this.store.memo() === memo) {
+      this.savedMemoId.set(saved.id);
+      this.autoSaved.set(true);
+    }
+  }
+
+  private savePayload(memo: MemoDoc) {
+    const userProfile = this.firebase.userProfile();
+    return {
+      memoDoc: memo,
+      authorName: userProfile?.displayName || 'Enseignant Madrasati',
+      authorRole: 'teacher' as const,
+      school: userProfile?.school || 'المدرسة الابتدائية التونسية',
+    };
   }
 
   async regenerateSection(index: number) {
@@ -986,7 +1050,6 @@ export class MemoStudioComponent implements OnInit {
     const res = await this.store.regenerateMemoSection(index, this.instructions() || undefined);
     this.busySection.set(0);
     if (res.ok) {
-      this.isSaved.set(false);
       this.cacheDraft();
     } else {
       this.store.showToast(res.error || this.lang.tr('Échec de la réécriture', 'تعذّرت إعادة الكتابة'), 'error');
@@ -999,6 +1062,32 @@ export class MemoStudioComponent implements OnInit {
       this.pictureTarget = index;
       this.pictureInput()?.nativeElement.click();
     });
+  }
+
+  /** FLUX only (no Gemini): draws the section's picture idea, then keeps it as WebP in the teacher's uploads. */
+  generatePicture(index: number) {
+    this.store.requireAccount(() => void this.drawPicture(index));
+  }
+
+  private async drawPicture(index: number) {
+    const doc = this.store.memo();
+    if (!doc || this.busyPicture()) return;
+    const sections = summarySections(doc);
+    const section = sections[index];
+    if (!section || sections.filter((s) => s.imageUrl).length >= SUMMARY_MAX_IMAGES) return;
+    // Written picture idea when the model gave one; otherwise the section itself (the server turns it into an English scene).
+    const raw = !!section.imagePrompt;
+    const prompt = section.imagePrompt || [doc.topic, section.heading, section.text, ...(section.items ?? [])].filter(Boolean).join('. ').slice(0, 600);
+    this.busyPicture.set(index + 1);
+    const res = await this.store.generateFluxPicture(prompt, doc, raw);
+    const url = res ? await this.uploadWebp(res) : null;
+    this.busyPicture.set(0);
+    if (!url || this.store.memo() !== doc) {
+      if (!url) this.store.showToast(this.lang.tr('Image indisponible pour le moment', 'تعذّر توليد الصورة حاليًا'), 'error');
+      return;
+    }
+    this.store.setMemoSections(sections.map((s, i) => (i === index ? { ...s, imageUrl: url } : s)));
+    this.cacheDraft();
   }
 
   async onPictureSelected(event: Event) {
@@ -1015,7 +1104,13 @@ export class MemoStudioComponent implements OnInit {
       return;
     }
     this.store.setMemoSections(sections.map((s, i) => (i === this.pictureTarget ? { ...s, imageUrl: url } : s)));
-    this.isSaved.set(false);
+    this.cacheDraft();
+  }
+
+  resizePicture(index: number, width: number) {
+    const doc = this.store.memo();
+    if (!doc) return;
+    this.store.setMemoSections(summarySections(doc).map((s, i) => (i === index ? { ...s, imageWidth: width } : s)));
     this.cacheDraft();
   }
 
@@ -1023,12 +1118,11 @@ export class MemoStudioComponent implements OnInit {
     const doc = this.store.memo();
     if (!doc) return;
     this.store.setMemoSections(summarySections(doc).map((s, i) => (i === index ? { ...s, imageUrl: undefined } : s)));
-    this.isSaved.set(false);
     this.cacheDraft();
   }
 
   /** Re-encodes to WebP (max 1600 px) and stores it under the teacher's uploads. */
-  private async uploadWebp(file: File): Promise<string | null> {
+  private async uploadWebp(file: Blob): Promise<string | null> {
     try {
       const bitmap = await createImageBitmap(file);
       const scale = Math.min(1, 1600 / Math.max(bitmap.width, bitmap.height));

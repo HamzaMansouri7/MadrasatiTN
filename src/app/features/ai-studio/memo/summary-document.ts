@@ -18,7 +18,7 @@ import { SUMMARY_MAX_IMAGES, summarySections } from '@core/utils/summary.util';
       border: 1px solid #E7DFCF;
       border-radius: 8px;
       padding: 2.5rem 2.75rem;
-      max-width: 210mm;
+      max-width: none;
       margin-inline: auto;
       color: #14251D;
       line-height: 1.75;
@@ -43,7 +43,12 @@ import { SUMMARY_MAX_IMAGES, summarySections } from '@core/utils/summary.util';
     .sd-table th { background: #F2ECDE; font-weight: 700; }
     .sd-table th, .sd-table td { border: 1px solid #E7DFCF; padding: 0.45rem 0.6rem; text-align: start; vertical-align: top; }
     .sd-lines { border-bottom: 1px dotted #B9AE97; block-size: 1.75rem; }
-    .sd-figure img { max-block-size: 260px; inline-size: auto; max-inline-size: 100%; margin-inline: auto; border-radius: 6px; border: 1px solid #E7DFCF; }
+    .sd-section { display: flow-root; }
+    .sd-figure { float: inline-end; margin-inline-start: 1.25rem; margin-block: 0.25rem 0.75rem; max-inline-size: 100%; }
+    .sd-figure.sd-full { float: none; margin-inline: auto; }
+    .sd-figure img { display: block; inline-size: 100%; block-size: auto; border-radius: 6px; border: 1px solid #E7DFCF; }
+    .sd-handle { position: absolute; inset-block-end: -10px; inset-inline-start: -10px; inline-size: 34px; block-size: 34px; border-radius: 999px; background: #14251D; color: #FBF8F1; border: 2px solid #FBF8F1; box-shadow: 0 1px 4px rgb(20 37 29 / 0.35); display: flex; align-items: center; justify-content: center; cursor: ew-resize; touch-action: none; }
+    .sd-handle:focus-visible { outline: 2px solid #F2C14E; outline-offset: 2px; }
     @media print {
       .sd-page { border: 0; border-radius: 0; padding: 0; max-width: none; }
       .sd-answers-pupil { display: none !important; }
@@ -98,6 +103,15 @@ import { SUMMARY_MAX_IMAGES, summarySections } from '@core/utils/summary.util';
                 } @else if (imageCount() < maxImages) {
                   <button
                     type="button"
+                    (click)="generatePicture.emit(i)"
+                    [disabled]="pictureBusyIndex() > 0"
+                    [attr.aria-label]="fr ? 'Dessiner une image avec l’IA' : 'توليد صورة بالذكاء الاصطناعي'"
+                    [attr.title]="fr ? 'Dessiner une image avec l’IA' : 'توليد صورة بالذكاء الاصطناعي'"
+                    class="min-h-11 min-w-11 rounded-md text-[#4A5A50] hover:bg-[#F2ECDE] inline-flex items-center justify-center cursor-pointer disabled:opacity-40 disabled:cursor-default">
+                    <span class="material-icons text-lg" [class.animate-spin]="pictureBusyIndex() === i + 1" aria-hidden="true">{{ pictureBusyIndex() === i + 1 ? 'autorenew' : 'auto_awesome' }}</span>
+                  </button>
+                  <button
+                    type="button"
                     (click)="addPicture.emit(i)"
                     [attr.aria-label]="fr ? 'Ajouter une image' : 'إضافة صورة'"
                     class="min-h-11 min-w-11 rounded-md text-[#4A5A50] hover:bg-[#F2ECDE] inline-flex items-center justify-center cursor-pointer">
@@ -107,6 +121,30 @@ import { SUMMARY_MAX_IMAGES, summarySections } from '@core/utils/summary.util';
               </div>
             }
           </div>
+
+          @if (s.imageUrl) {
+            <!-- Floats on the inline end (left in Arabic, right in French); drag the corner to resize -->
+            <figure
+              #fig
+              class="sd-figure"
+              [class.sd-full]="(s.imageWidth ?? 40) >= 90"
+              [style.width.%]="s.imageWidth ?? 40">
+              <div class="relative">
+                <img [src]="s.imageUrl" [alt]="s.heading" />
+                @if (editable()) {
+                  <button
+                    type="button"
+                    class="no-print sd-handle"
+                    (pointerdown)="startResize($event, i, fig, s.imageWidth ?? 40, !fr)"
+                    (keydown)="nudgeResize($event, i, s.imageWidth ?? 40, !fr)"
+                    [attr.aria-label]="(fr ? 'Redimensionner l’image : ' : 'تغيير حجم الصورة : ') + (s.imageWidth ?? 40) + '%'"
+                    [attr.title]="fr ? 'Glisser pour redimensionner' : 'اسحب لتغيير الحجم'">
+                    <span class="material-icons text-base" aria-hidden="true">open_in_full</span>
+                  </button>
+                }
+              </div>
+            </figure>
+          }
 
           @if (s.text && s.type !== 'example') {
             <p class="whitespace-pre-line">{{ s.text }}</p>
@@ -222,11 +260,6 @@ import { SUMMARY_MAX_IMAGES, summarySections } from '@core/utils/summary.util';
             }
           }
 
-          @if (s.imageUrl) {
-            <figure class="sd-figure mt-3">
-              <img [src]="s.imageUrl" [alt]="s.heading" />
-            </figure>
-          }
         </section>
       }
 
@@ -246,11 +279,54 @@ export class SummaryDocumentComponent {
   readonly editable = input<boolean>(false);
   /** 1-based index of the section being rewritten, 0 = none. */
   readonly busyIndex = input<number>(0);
+  /** 1-based index of the section whose AI picture is being drawn, 0 = none. */
+  readonly pictureBusyIndex = input<number>(0);
   /** Teacher copy: practice answers also print. */
   readonly teacherCopy = input<boolean>(false);
 
   readonly regenerate = output<number>();
   readonly addPicture = output<number>();
+  readonly generatePicture = output<number>();
+  readonly resizePicture = output<{ index: number; width: number }>();
+
+  /**
+   * Drag the handle on the picture corner that faces the text: the picture grows toward the text
+   * (rightward in Arabic, leftward in French). The width is kept as a % of the text column.
+   */
+  startResize(e: PointerEvent, index: number, fig: HTMLElement, current: number, rtl: boolean) {
+    const column = fig.parentElement?.clientWidth;
+    if (!column) return;
+    e.preventDefault();
+    const handle = e.currentTarget as HTMLElement;
+    handle.setPointerCapture(e.pointerId);
+    const startX = e.clientX;
+    const startWidth = fig.offsetWidth;
+    let width = current;
+    const move = (ev: PointerEvent) => {
+      const dx = ev.clientX - startX;
+      width = Math.round(Math.min(100, Math.max(20, ((startWidth + (rtl ? dx : -dx)) / column) * 100)));
+      fig.style.width = `${width}%`;
+    };
+    const end = () => {
+      handle.removeEventListener('pointermove', move);
+      handle.removeEventListener('pointerup', end);
+      handle.removeEventListener('pointercancel', end);
+      if (width !== current) this.resizePicture.emit({ index, width });
+    };
+    handle.addEventListener('pointermove', move);
+    handle.addEventListener('pointerup', end);
+    handle.addEventListener('pointercancel', end);
+  }
+
+  /** Keyboard: arrow keys change the width by 5%, toward the text = bigger. */
+  nudgeResize(e: KeyboardEvent, index: number, current: number, rtl: boolean) {
+    const grow = rtl ? 'ArrowRight' : 'ArrowLeft';
+    const shrink = rtl ? 'ArrowLeft' : 'ArrowRight';
+    if (e.key !== grow && e.key !== shrink) return;
+    e.preventDefault();
+    const width = Math.min(100, Math.max(20, current + (e.key === grow ? 5 : -5)));
+    if (width !== current) this.resizePicture.emit({ index, width });
+  }
   readonly removePicture = output<number>();
 
   readonly maxImages = SUMMARY_MAX_IMAGES;

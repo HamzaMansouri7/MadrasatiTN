@@ -142,11 +142,8 @@ export class StudioSession<D = unknown> {
 
   private readonly onOnline = () => this.online.set(true);
   private readonly onOffline = () => this.online.set(false);
-  private readonly onBeforeUnload = (e: BeforeUnloadEvent) => {
-    if (!this.unsaved()) return;
+  private readonly onBeforeUnload = () => {
     this.flushDraft(this.busy());
-    e.preventDefault();
-    e.returnValue = '';
   };
 
   private async load() {

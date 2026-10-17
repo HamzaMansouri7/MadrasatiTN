@@ -124,10 +124,30 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
       const docTitle = (memoDoc.title || memoDoc.topic || title || 'Fiche Mémo').toString().slice(0, 200);
       const docTopic = (memoDoc.topic || topic || '').toString().slice(0, 200);
 
-      const id = randomUUID();
+      // Upsert: autosave keeps one id per document; only its owner may overwrite it.
+      let id: string = randomUUID();
+      let createdAt = new Date().toISOString();
+      let wasPublished = false;
+      const givenId = typeof req.body.id === 'string' ? req.body.id : '';
+      if (SHEET_ID_RE.test(givenId) && existsSync(join(docsFolder, `${givenId}.json`))) {
+        try {
+          const prev = JSON.parse(readFileSync(join(docsFolder, `${givenId}.json`), 'utf8'));
+          if (prev.ownerUid === ownerUid && prev.docType === 'memo') {
+            id = givenId;
+            createdAt = prev.createdAt || createdAt;
+            wasPublished = prev.published !== false;
+          }
+        } catch {
+          /* unreadable previous file: save as a new doc */
+        }
+      }
+      // Autosaves stay private; the save button publishes, and a published memo stays published.
+      const published = req.body.published === true || wasPublished;
+
       const doc = {
         ownerUid,
         id,
+        published,
         docType: 'memo',
         title: docTitle,
         grade: docGrade,
@@ -139,12 +159,13 @@ docsRouter.post('/', originGuard, async (req: Request, res: Response): Promise<v
         authorRole: role,
         school: (school || 'المدرسة الابتدائية التونسية').toString().slice(0, 150),
         customWatermark: (customWatermark || 'Madrasati TN — Fiche Mémo').toString().slice(0, 150),
-        createdAt: new Date().toISOString(),
+        createdAt,
+        updatedAt: new Date().toISOString(),
       };
       writeFileSync(join(docsFolder, `${id}.json`), JSON.stringify(doc), 'utf8');
 
-      const index = readDocsIndex();
-      index.unshift({
+      const index = readDocsIndex().filter((e) => e['id'] !== id);
+      if (published) index.unshift({
         id,
         docType: 'memo',
         title: doc.title,
