@@ -57,15 +57,16 @@ Published worksheets and published infographics (course/exercise) are auto-poste
 
 ## Agent team (quota routing)
 
-Main session (Opus) plans and decides. Delegate by size via the Agent tool:
-- `scout` (Haiku): searches, file reads/summaries, usages, renames, single-command runs, trivial one-file edits.
-- `builder` (Sonnet): executing an agreed plan, multi-file implementation.
-- `architect` (Opus): hard design questions, unclear bugs, plan/diff review — only when the main session needs a second deep pass.
-Keep max 2 background agents at once. Do quick one-liners directly instead of spawning an agent.
+Main session plans and decides. Every agent starts with an empty context and re-reads CLAUDE.md plus the files it needs, which costs roughly 60–75k tokens and 1–2 minutes before any useful work (measured 2026-10-17). Spawn one only when the job itself is bigger than that overhead:
+- `scout` (Haiku): searches across many folders, reading or summarising 10+ files, bulk renames across files.
+- `builder` (Sonnet): executing an agreed plan that touches several files.
+- `architect` (Opus): hard design questions, unclear bugs, review of a multi-file feature before commit.
+Everything smaller stays in the main session: single commands, 1–3 file reads, a diff of two files, a folder comparison, one-file edits, lint/build/commit. Keep max 2 background agents at once.
 
-Escalation rules:
-- Upgrade builder → architect when builder fails twice on the same subtask, the work is security-critical (auth, secrets, Firestore rules), or it is a new design rather than a known pattern.
+Delegation rules:
+- No double work: act on an agent's report; never re-run its checks on the main model. If the result would need re-checking anyway, do not delegate it.
 - Never give scout a task needing judgment: a wrong Haiku pass re-run on Opus costs double.
+- Upgrade builder → architect when builder fails twice on the same subtask, the work is security-critical (auth, secrets, Firestore rules), or it is a new design rather than a known pattern.
 - Need deeper thinking on the same model? Raise `effort` before jumping a model tier.
 - Use plan mode for new features and tough bugs; skip it for known patterns and small tweaks.
-- Final review of a finished feature (before commit) goes to `architect`.
+- Pre-commit review by `architect` only for multi-file features. A small tweak (1–2 files) that the owner already checked gets a self-review in the main session.
