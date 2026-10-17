@@ -228,7 +228,7 @@ async function buildImagePrompt(input: {
   grade?: string;
   kind?: string;
   style?: string;
-}): Promise<{ prompt: string; scene: string; category: ImageCategory }> {
+}): Promise<{ prompt: string; scene: string; category: ImageCategory; rewritten: boolean }> {
   const text = input.promptText.replace(/\s+/g, " ").trim().slice(0, 600);
   let category: ImageCategory =
     input.kind === "article-cover" ? "article" : "generic";
@@ -258,6 +258,7 @@ Règles : dessine le contexte ou la situation, jamais la question ni la réponse
       );
     }
   }
+  const rewritten = !!scene;
   if (!scene)
     scene = text.slice(0, 200) || "a friendly school scene for children";
   const customStyle = input.style ? `${input.style}. ` : "";
@@ -265,6 +266,7 @@ Règles : dessine le contexte ou la situation, jamais la question ni la réponse
     prompt: `${scene}. ${customStyle}${IMAGE_STYLES[category]}. ${IMAGE_COMMON}`,
     scene,
     category,
+    rewritten,
   };
 }
 
@@ -288,10 +290,20 @@ async function generateIllustrationFile(
   seedKey?: string,
   excludeGroups?: string[],
   svgFallback = true,
+  fluxOnly = false,
 ): Promise<string> {
   try {
-    const res = await generateImage({ prompt, seed, preferModel: seedKey ? pinnedModels.get(seedKey) : undefined, excludeGroups });
-    if (seedKey && !pinnedModels.has(seedKey)) {
+    const res = await generateImage({
+      prompt,
+      seed,
+      preferModel: seedKey ? pinnedModels.get(seedKey) : undefined,
+      excludeGroups,
+      // FLUX-only: real FLUX providers one after another; the keyless Pollinations may serve another model (seen: SANA).
+      excludeModels: fluxOnly ? ["pollinations-flux"] : undefined,
+      sequential: fluxOnly,
+    });
+    // Never pin the keyless last-resort model as a document's look.
+    if (seedKey && !pinnedModels.has(seedKey) && !res.watermarked) {
       // Pin the first model that answered so the rest of this document keeps one look.
       if (pinnedModels.size >= 500) pinnedModels.delete(pinnedModels.keys().next().value as string);
       pinnedModels.set(seedKey, res.provider);
@@ -841,7 +853,7 @@ aiRouter.post(
         return;
       }
 
-      const lang: "ar" | "fr" = resolveLang(language);
+      let lang: "ar" | "fr" = resolveLang(language);
       let resolvedGrade = (grade || "").trim();
       let resolvedSubject = (subject || "").trim();
       let resolvedTrimester = (trimester || "").trim();
@@ -855,6 +867,8 @@ aiRouter.post(
           if (!resolvedTrimester) resolvedTrimester = top.trimester;
         }
       }
+      // A French lesson is revised in French: never an Arabic document about a French lesson.
+      if (/^fran[cç]ais/i.test(resolvedSubject)) lang = "fr";
 
       // Regenerating one section: the current document must come with it.
       const current = typeof sectionIndex === "number" ? normalizeSummary(existingMemo) : null;
@@ -1880,8 +1894,8 @@ aiRouter.post(
         }
       }
 
-      const { prompt, scene, category } = raw
-        ? rawImagePrompt(promptText, style)
+      const built = raw
+        ? { ...rawImagePrompt(promptText, style), rewritten: true }
         : await buildImagePrompt({
             promptText,
             subject: String(body.subject ?? "").slice(0, 60),
@@ -1889,7 +1903,13 @@ aiRouter.post(
             kind: String(body.kind ?? "").slice(0, 30),
             style,
           });
-      const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed, seedKey, excludeGroups, !fluxOnly);
+      // FLUX cannot read Arabic: without a real English scene it would draw something unrelated, so stop here.
+      if (fluxOnly && !built.rewritten) {
+        res.status(502).json({ error: "Impossible de préparer la description de l'image. Réessayez." });
+        return;
+      }
+      const { prompt, scene, category } = built;
+      const imageUrl = await generateIllustrationFile(prompt, scene, finalSeed, seedKey, excludeGroups, !fluxOnly, fluxOnly);
       if (!hasVariation) {
         exerciseCache.set(cacheKey, { imageUrl, category });
       }

@@ -1287,19 +1287,19 @@ export class EducationStore {
   }
 
   /** AI picture for a revision document section: FLUX models only, returns the image file or null. */
-  async generateFluxPicture(prompt: string, doc: MemoDoc, raw = true): Promise<Blob | null> {
+  async generateFluxPicture(prompt: string, doc: MemoDoc, raw = true): Promise<{ blob: Blob } | { error: string }> {
     const res = await this.ai.post(
       'generate-illustration',
       { promptText: prompt, raw, fluxOnly: true, seedKey: `memo:${doc.title}`, grade: doc.grade, subject: doc.subject },
       { retry429: true, fallbackError: "Erreur lors de la création de l'illustration." },
     );
     const url = res.ok ? (res.data['imageUrl'] as string | undefined) : undefined;
-    if (!url) return null;
+    if (!url) return { error: res.ok ? 'Image indisponible.' : res.error };
     try {
       const img = await fetch(url);
-      return img.ok ? await img.blob() : null;
+      return img.ok ? { blob: await img.blob() } : { error: 'Image indisponible.' };
     } catch {
-      return null;
+      return { error: 'Image indisponible.' };
     }
   }
 

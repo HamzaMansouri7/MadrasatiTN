@@ -33,9 +33,14 @@ export interface ImageRequest {
   preferModel?: string;
   /** Model groups to leave out for this picture (e.g. 'gemini' when the caller wants the free models only). */
   excludeGroups?: string[];
+  /** Model ids to leave out (e.g. the keyless Pollinations, which may swap FLUX for another model). */
+  excludeModels?: string[];
+  /** true: no racing. The next model starts only when the current one fails or passes 60 s. */
+  sequential?: boolean;
 }
 
 type Env = Record<string, string | undefined>;
+type ImageCall = Required<Pick<ImageRequest, 'prompt' | 'seed' | 'width' | 'height'>>;
 type FetchLike = typeof fetch;
 
 interface ImageModel {
@@ -45,7 +50,7 @@ interface ImageModel {
   group: 'nvidia' | 'gemini' | 'pollinations' | 'siliconflow';
   quality: number;
   enabled: (env: Env) => boolean;
-  generate: (env: Env, req: Required<Omit<ImageRequest, 'preferModel' | 'excludeGroups'>>, fetchImpl: FetchLike, signal: AbortSignal) => Promise<Buffer>;
+  generate: (env: Env, req: ImageCall, fetchImpl: FetchLike, signal: AbortSignal) => Promise<Buffer>;
 }
 
 const ARABIC_RE = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/g;
@@ -221,6 +226,8 @@ function applyCooldown(m: ImageModel, err: unknown, now: number): void {
   cooldowns.set(c.providerWide ? `group:${m.group}` : m.id, now + c.cooldownMs);
 }
 
+const SEQUENTIAL_TIMEOUT_MS = 60_000;
+
 export interface ImageChainOptions {
   env?: Env;
   fetchImpl?: FetchLike;
@@ -257,14 +264,14 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
     height: req.height ?? 768,
   };
 
-  const allowed = (m: ImageModel) => !req.excludeGroups?.includes(m.group);
+  const allowed = (m: ImageModel) => !req.excludeGroups?.includes(m.group) && !req.excludeModels?.includes(m.id);
   let list = candidates(env, now(), false).filter(allowed);
   if (list.length === 0) list = candidates(env, now(), true).filter(allowed); // everything cooling: try anyway
 
   // Text-free rule: non-arabicSafe models get an English, text-free prompt; with no usable English left they are skipped.
   const safePrompt = textFreePrompt(full.prompt);
   if (safePrompt === null) list = list.filter((m) => m.arabicSafe);
-  const requestFor = (m: ImageModel): Required<Omit<ImageRequest, 'preferModel' | 'excludeGroups'>> =>
+  const requestFor = (m: ImageModel): ImageCall =>
     m.arabicSafe || safePrompt === null ? full : { ...full, prompt: safePrompt };
 
   // Pinned model: tried first, and hedging is relaxed so a merely slow answer is not raced by another look.
@@ -292,7 +299,8 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
       controllers.push(ctl);
       pending++;
       if (timer) clearTimeout(timer);
-      timer = setTimeout(launch, hedgeMs);
+      // Sequential: abort a model that hangs, so its failure starts the next one. Otherwise: hedge (race) after hedgeMs.
+      timer = req.sequential ? setTimeout(() => ctl.abort(), SEQUENTIAL_TIMEOUT_MS) : setTimeout(launch, hedgeMs);
 
       model
         .generate(env, requestFor(model), fetchImpl, ctl.signal)
@@ -302,12 +310,14 @@ export async function generateImage(req: ImageRequest, options: ImageChainOption
           done = true;
           if (timer) clearTimeout(timer);
           controllers.forEach((c) => c !== ctl && c.abort());
+          console.info(`[image] ${model.id} OK`);
           resolve({ data: buf, ext: imageExt(buf), provider: model.id, watermarked: model.id === 'pollinations-flux' });
         })
         .catch((err) => {
           pending--;
           if (done) return;
           lastErr = err;
+          console.warn(`[image] ${model.id} failed: ${err instanceof Error ? err.message : String(err)}`.slice(0, 300));
           applyCooldown(model, err, now());
           if (!launch() && pending === 0) {
             done = true;

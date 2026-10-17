@@ -144,6 +144,14 @@ import { SUMMARY_MAX_IMAGES, summarySections } from '@core/utils/summary.util';
                 }
               </div>
             </figure>
+          } @else if (pictureBusyIndex() === i + 1) {
+            <!-- Placeholder where the picture will appear while FLUX draws it -->
+            <figure class="sd-figure no-print" style="width: 40%" role="status" aria-live="polite">
+              <div class="aspect-[4/3] rounded-md border border-[#E7DFCF] bg-[#F2ECDE] animate-pulse motion-reduce:animate-none flex flex-col items-center justify-center gap-2 text-[#5B6B60]">
+                <span class="material-icons text-3xl" aria-hidden="true">auto_awesome</span>
+                <span class="text-sm font-semibold">{{ fr ? 'Dessin de l’image…' : 'جارٍ رسم الصورة…' }}</span>
+              </div>
+            </figure>
           }
 
           @if (s.text && s.type !== 'example') {

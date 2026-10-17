@@ -7,6 +7,7 @@ import {
   inject,
   HostListener,
   OnInit,
+  untracked,
   ElementRef,
   viewChild,
 } from '@angular/core';
@@ -19,13 +20,31 @@ import { FirebaseService } from '@core/services/firebase.service';
 import { StorageVaultService } from '@core/services/storage-vault.service';
 import { createStudioSession } from '@core/services/studio-session';
 import { downscaleImage } from '@core/utils/image.util';
-import { MemoDoc, MemoInput, SummaryLength } from '@core/models/memo.model';
+import { MemoDoc, MemoInput, SummaryLength, SummarySection } from '@core/models/memo.model';
 import { SUMMARY_MAX_IMAGES, summarySections } from '@core/utils/summary.util';
 import { CurriculumChapter } from '@core/data/curriculum-chapters.data';
 import { chapterTitle } from '@core/utils/curriculum.util';
 import { TopicPickerComponent } from '@shared/components/topic-picker';
 import { StudioSessionBannerComponent } from '@shared/components/studio-session-banner';
 import { SummaryDocumentComponent } from './summary-document';
+
+/** Everything the section says, flattened for the server's English scene rewrite. */
+function sectionPictureText(topic: string, s: SummarySection): string {
+  return [
+    topic,
+    s.heading,
+    s.text,
+    ...(s.items ?? []),
+    ...(s.steps ?? []).map((st) => `${st.heading}: ${st.body}`),
+    s.solution,
+    ...(s.table?.rows ?? []).map((r) => [r.label, ...r.cells].join(' ')),
+    ...(s.timeline ?? []).map((t) => `${t.title}: ${t.description}`),
+    ...(s.exercises ?? []).map((e) => e.question),
+  ]
+    .filter(Boolean)
+    .join('. ')
+    .slice(0, 600);
+}
 
 type SourceTab = 'topic' | 'text' | 'photo' | 'file' | 'library';
 type MemoPanel = 'source' | 'settings' | 'options';
@@ -593,7 +612,7 @@ export class MemoStudioComponent implements OnInit {
   readonly grade = signal<string>('6ème Année');
   readonly subject = signal<string>('Français');
   readonly trimester = signal<string>('Trimestre 1');
-  readonly language = signal<'ar' | 'fr'>('ar');
+  readonly language = signal<'ar' | 'fr'>('fr');
   readonly instructions = signal<string>('');
 
   readonly images = signal<{ base64Data: string; contentType: string }[]>([]);
@@ -665,6 +684,15 @@ export class MemoStudioComponent implements OnInit {
   });
 
   constructor() {
+    // The document language follows the subject: French lesson -> French document, other subjects -> Arabic.
+    // Still changeable by hand afterwards (only a subject change resets it).
+    effect(() => {
+      const subject = this.subject();
+      untracked(() => {
+        if (subject === 'Français') this.language.set('fr');
+        else if (subject !== 'Anglais') this.language.set('ar');
+      });
+    });
     effect(() => {
       const d = this.formDraft();
       const hasContent = !!(d.topic.trim() || d.text.trim() || d.images.length || d.file || d.resourceUrl);
@@ -1077,15 +1105,16 @@ export class MemoStudioComponent implements OnInit {
     if (!section || sections.filter((s) => s.imageUrl).length >= SUMMARY_MAX_IMAGES) return;
     // Written picture idea when the model gave one; otherwise the section itself (the server turns it into an English scene).
     const raw = !!section.imagePrompt;
-    const prompt = section.imagePrompt || [doc.topic, section.heading, section.text, ...(section.items ?? [])].filter(Boolean).join('. ').slice(0, 600);
+    const prompt = section.imagePrompt || sectionPictureText(doc.topic, section);
     this.busyPicture.set(index + 1);
     const res = await this.store.generateFluxPicture(prompt, doc, raw);
-    const url = res ? await this.uploadWebp(res) : null;
+    const url = 'blob' in res ? await this.uploadWebp(res.blob) : null;
     this.busyPicture.set(0);
-    if (!url || this.store.memo() !== doc) {
-      if (!url) this.store.showToast(this.lang.tr('Image indisponible pour le moment', 'تعذّر توليد الصورة حاليًا'), 'error');
+    if (!url) {
+      this.store.showToast('error' in res ? res.error : this.uploadError, 'error');
       return;
     }
+    if (this.store.memo() !== doc) return;
     this.store.setMemoSections(sections.map((s, i) => (i === index ? { ...s, imageUrl: url } : s)));
     this.cacheDraft();
   }
@@ -1100,7 +1129,7 @@ export class MemoStudioComponent implements OnInit {
     if (sections.filter((s) => s.imageUrl).length >= SUMMARY_MAX_IMAGES) return;
     const url = await this.uploadWebp(f);
     if (!url) {
-      this.store.showToast(this.lang.tr('Échec de l’envoi de l’image', 'تعذّر رفع الصورة'), 'error');
+      this.store.showToast(this.uploadError, 'error');
       return;
     }
     this.store.setMemoSections(sections.map((s, i) => (i === this.pictureTarget ? { ...s, imageUrl: url } : s)));
@@ -1140,12 +1169,28 @@ export class MemoStudioComponent implements OnInit {
           mimeType: 'image/webp',
         }),
       });
-      if (!res.ok) return null;
-      const data = await res.json();
-      return (data.url as string) || null;
+      const data = await res.json().catch(() => null);
+      if (res.ok && data?.url) return data.url as string;
+      this.uploadError = this.uploadErrorMessage(res.status, data?.error);
+      return null;
     } catch {
+      this.uploadError = this.uploadErrorMessage(0);
       return null;
     }
+  }
+
+  /** Last upload failure, in words the teacher can act on. */
+  private uploadError = '';
+
+  private uploadErrorMessage(status: number, serverMessage?: string): string {
+    const t = (fr: string, ar: string) => this.lang.tr(fr, ar);
+    if (status === 0 || status === 502 || status === 503 || status === 504 || (status === 500 && !serverMessage)) {
+      return t('Serveur indisponible pour le moment. Réessayez dans un instant.', 'الخادم غير متاح حاليًا. أعد المحاولة بعد قليل.');
+    }
+    if (status === 401) return t('Connectez-vous pour ajouter une image.', 'سجّل الدخول لإضافة صورة.');
+    if (status === 413) return t('Image trop lourde. Choisissez une image plus petite.', 'الصورة كبيرة جدًا. اختر صورة أصغر.');
+    if (status === 429) return t('Trop d’envois. Réessayez dans une minute.', 'محاولات كثيرة. أعد المحاولة بعد دقيقة.');
+    return serverMessage || t('Échec de l’envoi de l’image.', 'تعذّر رفع الصورة.');
   }
 
   async regenerateWithExtractedText() {
