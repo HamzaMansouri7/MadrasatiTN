@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <!-- Open Book Base -->
+  <path d="M 32 196 C 70 186, 110 188, 128 200 C 146 188, 186 186, 224 196 L 224 64 C 186 54, 146 56, 128 68 C 110 56, 70 54, 32 64 Z" fill="#FBF8F1" stroke="#14251D" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="128" y1="68" x2="128" y2="200" stroke="#14251D" stroke-width="4" stroke-linecap="round"/>
+  <!-- Comprehension Ladder ascending from pages -->
+  <line x1="100" y1="170" x2="100" y2="40" stroke="#2D6A4F" stroke-width="4" stroke-linecap="round"/>
+  <line x1="156" y1="170" x2="156" y2="40" stroke="#2D6A4F" stroke-width="4" stroke-linecap="round"/>
+  <!-- Rungs with hierarchy colors -->
+  <line x1="100" y1="150" x2="156" y2="150" stroke="#8A5A00" stroke-width="4" stroke-linecap="round"/>
+  <line x1="100" y1="120" x2="156" y2="120" stroke="#2D6A4F" stroke-width="4" stroke-linecap="round"/>
+  <line x1="100" y1="90" x2="156" y2="90" stroke="#1B4332" stroke-width="4" stroke-linecap="round"/>
+  <line x1="100" y1="60" x2="156" y2="60" stroke="#BF5B34" stroke-width="4" stroke-linecap="round"/>
+  <!-- Top Goal Star/Light -->
+  <circle cx="128" cy="36" r="10" fill="#F2C14E" stroke="#14251D" stroke-width="3"/>
+</svg>

@@ -12,7 +12,7 @@ type StageField = 'name' | 'teacherActivity' | 'studentActivity';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <table class="w-full text-xs border-collapse bg-white" (click)="editing() && $event.stopPropagation()">
+    <table class="w-full text-xs border-collapse bg-white">
       <thead>
         <tr>
           <th scope="col" class="border border-[#14251D]/40 bg-[#F2ECDE] px-2 py-1.5 font-semibold text-[#14251D] w-[22%]">{{ lang.tr('Étape', 'المرحلة') }}</th>

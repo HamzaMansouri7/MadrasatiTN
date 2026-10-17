@@ -214,21 +214,25 @@
               {{ lang.tr('Modèles rapides :', 'قوالب جاهزة :') }}
             </span>
             <button
+              type="button"
               (click)="loadTemplatePreset('exam_full')"
               class="bg-[#FBF8F1] hover:bg-[#E7DFCF] text-[#2D6A4F] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
               {{ lang.tr('Examen complet', 'امتحان كامل') }}
             </button>
             <button
+              type="button"
               (click)="loadTemplatePreset('course_summary')"
               class="bg-[#F2ECDE] hover:bg-[#E7DFCF] text-[#2D6A4F] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
               {{ lang.tr('Fiche de cours', 'ملخص درس') }}
             </button>
             <button
+              type="button"
               (click)="loadTemplatePreset('exercise_sheet')"
               class="bg-[#F2ECDE] hover:bg-[#F2ECDE] text-[#8A5A00] px-2.5 py-1 rounded-full text-[11px] font-semibold cursor-pointer">
               {{ lang.tr("Série d'exercices", 'سلسلة تمارين') }}
             </button>
           </div>
+
         </div>
       </div>
     </div>
@@ -450,6 +454,31 @@
             }
             @case ('callout') {
               <div>
+                <span class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Type d’encadré', 'نوع الملاحظة') }}</span>
+                <div class="grid grid-cols-2 gap-1.5">
+                  <button type="button" (click)="updateBlockField(sb.id, 'calloutVariant', 'info')"
+                    [class]="(sb.calloutVariant || 'info') === 'info' ? 'bg-[#2D6A4F] text-white' : 'bg-[#FBF8F1] text-[#2D6A4F] border border-[#E7DFCF]'"
+                    class="rounded-lg py-1 px-2 text-[11px] font-semibold transition-colors cursor-pointer text-center">
+                    {{ lang.tr('Info (vert)', 'معلومة') }}
+                  </button>
+                  <button type="button" (click)="updateBlockField(sb.id, 'calloutVariant', 'tip')"
+                    [class]="sb.calloutVariant === 'tip' ? 'bg-[#8A5A00] text-white' : 'bg-[#FBF8F1] text-[#8A5A00] border border-[#E7DFCF]'"
+                    class="rounded-lg py-1 px-2 text-[11px] font-semibold transition-colors cursor-pointer text-center">
+                    {{ lang.tr('Conseil (doré)', 'إرشاد') }}
+                  </button>
+                  <button type="button" (click)="updateBlockField(sb.id, 'calloutVariant', 'warning')"
+                    [class]="sb.calloutVariant === 'warning' ? 'bg-[#BF5B34] text-white' : 'bg-[#FBF8F1] text-[#BF5B34] border border-[#E7DFCF]'"
+                    class="rounded-lg py-1 px-2 text-[11px] font-semibold transition-colors cursor-pointer text-center">
+                    {{ lang.tr('Alerte (terracotta)', 'تنبيه') }}
+                  </button>
+                  <button type="button" (click)="updateBlockField(sb.id, 'calloutVariant', 'ministry')"
+                    [class]="sb.calloutVariant === 'ministry' ? 'bg-[#1B4332] text-white' : 'bg-[#FBF8F1] text-[#1B4332] border border-[#E7DFCF]'"
+                    class="rounded-lg py-1 px-2 text-[11px] font-semibold transition-colors cursor-pointer text-center">
+                    {{ lang.tr('Officiel (ministère)', 'رسمي') }}
+                  </button>
+                </div>
+              </div>
+              <div>
                 <span class="block font-semibold text-[#14251D] mb-1">{{ lang.tr('Titre de l’encadré', 'عنوان الملاحظة') }}</span>
                 <input dir="auto" type="text"
                   [value]="sb.calloutTitle || ''"
@@ -540,6 +569,26 @@
     <div
       [class.hidden]="mobilePane() !== 'canvas'"
       class="studio-pane lg:block space-y-4 w-full">
+      @if (isLessonPlan()) {
+        <!-- Lesson plan template picker -->
+        <div class="bg-white rounded-2xl border border-[#E7DFCF] p-2.5 px-4 flex flex-wrap items-center gap-2 shadow-sm print:hidden">
+          <span class="text-xs font-semibold text-[#14251D] me-1">{{ lang.tr('Modèle de fiche', 'نموذج الجذاذة') }}</span>
+          <div class="flex flex-wrap items-center gap-1.5" role="group" [attr.aria-label]="lang.tr('Modèle de fiche', 'نموذج الجذاذة')">
+            @for (tpl of lessonTemplates; track tpl.id) {
+              <button
+                type="button"
+                (click)="chooseLessonTemplate(tpl.id)"
+                [attr.aria-pressed]="lessonTemplate() === tpl.id"
+                [class]="lessonTemplate() === tpl.id ? 'bg-[#14251D] text-[#FBF8F1] border-[#14251D]' : 'bg-[#FBF8F1] text-[#14251D] border-[#E7DFCF] hover:bg-[#F2ECDE]'"
+                class="border px-3 min-h-10 rounded-xl text-xs font-semibold cursor-pointer transition-colors flex items-center gap-1.5 focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
+                <span class="material-icons text-sm" aria-hidden="true">{{ tpl.icon }}</span>
+                {{ lang.tr(tpl.fr, tpl.ar) }}
+              </button>
+            }
+          </div>
+        </div>
+      }
+
       <!-- A4 toolbar strip -->
       <div class="hidden lg:flex items-center justify-between bg-white rounded-2xl border border-[#E7DFCF] px-4 min-h-11 text-xs text-[#5B6B60] shadow-sm print:hidden">
         <span class="flex items-center gap-1.5 font-semibold text-[#14251D]">
@@ -1023,7 +1072,15 @@
                   </div>
                 }
                 @case ('callout') {
-                  <div class="bg-[#F2ECDE] rounded-lg p-3 border-s-4 border-[#2D6A4F] space-y-1">
+                  <div
+                    [class]="b.calloutVariant === 'tip'
+                      ? 'bg-[#FBF8F1] border-[#8A5A00]'
+                      : b.calloutVariant === 'warning'
+                      ? 'bg-[#FBF8F1] border-[#BF5B34]'
+                      : b.calloutVariant === 'ministry'
+                      ? 'bg-[#FBF8F1] border-[#1B4332]'
+                      : 'bg-[#F2ECDE] border-[#2D6A4F]'"
+                    class="rounded-lg p-3 border-s-4 space-y-1">
                     @if (editingBlockId() === b.id) {
                       <input dir="auto"
                         type="text"
@@ -1031,18 +1088,33 @@
                         (input)="updateBlockField(b.id, 'calloutTitle', $any($event.target).value)"
                         (keydown.escape)="stopInlineEdit()"
                         (click)="$event.stopPropagation()"
-                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-1.5 text-xs font-semibold text-[#2D6A4F] outline-none" />
+                        [class]="b.calloutVariant === 'tip'
+                          ? 'text-[#8A5A00]'
+                          : b.calloutVariant === 'warning'
+                          ? 'text-[#BF5B34]'
+                          : b.calloutVariant === 'ministry'
+                          ? 'text-[#1B4332]'
+                          : 'text-[#2D6A4F]'"
+                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-1.5 text-xs font-semibold outline-none" />
                       <textarea dir="auto"
                         [value]="b.content"
                         (input)="updateBlockContent(b.id, $any($event.target).value)"
                         (blur)="stopInlineEdit()"
                         (keydown.escape)="stopInlineEdit()"
                         (click)="$event.stopPropagation()"
-                        rows="2"
-                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-2 text-xs text-[#14251D] outline-none"></textarea>
+                        rows="3"
+                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-2 text-xs text-[#14251D] outline-none leading-relaxed"></textarea>
                     } @else {
-                      <p class="font-semibold text-[#2D6A4F]">{{ b.calloutTitle || 'Remarque Pédagogique' }}</p>
-                      <p dir="auto" class="text-[#14251D] whitespace-pre-line">{{ b.content || '…' }}</p>
+                      <p
+                        [class]="b.calloutVariant === 'tip'
+                          ? 'text-[#8A5A00]'
+                          : b.calloutVariant === 'warning'
+                          ? 'text-[#BF5B34]'
+                          : b.calloutVariant === 'ministry'
+                          ? 'text-[#1B4332]'
+                          : 'text-[#2D6A4F]'"
+                        class="font-semibold">{{ b.calloutTitle || 'Remarque Pédagogique' }}</p>
+                      <p dir="auto" class="text-[#14251D] whitespace-pre-line leading-relaxed">{{ b.content || '…' }}</p>
                     }
                   </div>
                 }
@@ -1099,6 +1171,22 @@
                 }
                 @case ('stages') {
                   <app-stages-block [stages]="b.stages || []" [editing]="editingBlockId() === b.id" [duration]="lessonMinutes()" (stagesChange)="updateStages(b.id, $event)" />
+                }
+                @case ('quote') {
+                  <div class="border-s-4 border-[#2D6A4F] bg-[#FBF8F1] p-3 text-[#14251D] rounded-r-lg font-serif">
+                    @if (editingBlockId() === b.id) {
+                      <textarea dir="auto"
+                        [value]="b.content"
+                        (input)="updateBlockContent(b.id, $any($event.target).value)"
+                        (blur)="stopInlineEdit()"
+                        (keydown.escape)="stopInlineEdit()"
+                        (click)="$event.stopPropagation()"
+                        rows="4"
+                        class="w-full bg-white border border-[#2D6A4F]/40 rounded p-2 text-xs text-[#14251D] outline-none leading-relaxed"></textarea>
+                    } @else {
+                      <p dir="auto" class="italic text-xs whitespace-pre-line leading-relaxed">{{ b.content || '…' }}</p>
+                    }
+                  </div>
                 }
               }
             </div>
@@ -1194,6 +1282,9 @@
           </button>
           <button (click)="addBlock('divider')" class="bg-white hover:bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer">
             <span class="material-icons text-sm">horizontal_rule</span>{{ lang.tr('Séparateur', 'فاصل') }}
+          </button>
+          <button (click)="addBlock('quote')" class="bg-white hover:bg-[#FBF8F1] text-[#14251D] border border-[#E7DFCF] px-2 py-1.5 rounded-lg text-[11px] flex items-center gap-1.5 font-medium cursor-pointer col-span-2">
+            <span class="material-icons text-sm">format_quote</span>{{ lang.tr('Texte / Citation', 'سند / اقتباس') }}
           </button>
         </div>
       </div>

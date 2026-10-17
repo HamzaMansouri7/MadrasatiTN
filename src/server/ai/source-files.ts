@@ -8,7 +8,7 @@ const DOCX = 'application/vnd.openxmlformats-officedocument.wordprocessingml.doc
 const MAX_INLINE_CHARS = 8_000_000;
 const DOCX_TEXT_CHARS = 12_000;
 
-type SourceFile = { data?: unknown; mimeType?: unknown; url?: unknown };
+interface SourceFile { data?: unknown; mimeType?: unknown; url?: unknown }
 
 const mimeFromPath = (url: string): string =>
   url.endsWith('.png') ? 'image/png' : url.endsWith('.pdf') ? 'application/pdf' : url.endsWith('.webp') ? 'image/webp' : 'image/jpeg';
