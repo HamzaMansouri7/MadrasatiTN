@@ -29,3 +29,4 @@ export * from './components/studio-session-banner';
 export * from './components/sheet-chart';
 export * from './studio-leave.guard';
 export * from './utils/share-post';
+export * from './components/chat-drawer';

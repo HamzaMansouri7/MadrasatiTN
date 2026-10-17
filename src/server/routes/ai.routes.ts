@@ -57,7 +57,14 @@ import {
   seriesSkill,
   SERIES_PLAN_SCHEMA,
   SERIES_PANEL_SCHEMA,
+  chatClassifySkill,
+  chatAnswerSkill,
+  allowIntentForRole,
+  refineIntent,
+  CHAT_CLASSIFY_SCHEMA,
+  CHAT_ANSWER_SCHEMA,
 } from "../skills";
+import type { ChatIntent, ChatRole, ChatTurn } from "../skills";
 
 // Initialize Gemini Client(s) with multi-key pooling & dynamic rotation
 const rawApiKeys = [
@@ -1515,6 +1522,163 @@ aiRouter.post(
         err,
         "Erreur lors de la génération de l’illustration",
       );
+      res.status(pub.status).json({ error: pub.message });
+      return;
+    }
+  },
+);
+
+// 4f. Conversational assistant — single drawer entry point.
+// Per turn: classify (cheap) -> ground (official curriculum) -> answer or route to a Create tool.
+// Abuse protection comes from the shared aiRateLimiter (per-IP + guest caps). Stateless: the
+// client sends recent history. Degrades to retrieval-only when every provider is in cooldown.
+aiRouter.post(
+  "/chat",
+  originGuard,
+  aiRateLimiter,
+  async (req: Request, res: Response): Promise<void> => {
+    try {
+      if (!aiReady()) {
+        res.status(500).json({ error: "Service IA non disponible." });
+        return;
+      }
+      const body = req.body ?? {};
+      const message = capText(body.message, 2000);
+      if (!message) {
+        res.status(400).json({ error: "Message requis." });
+        return;
+      }
+      const role: ChatRole = body.role === "teacher" ? "teacher" : "parent";
+      const history: ChatTurn[] = Array.isArray(body.history)
+        ? body.history
+            .filter(
+              (t: unknown): t is ChatTurn =>
+                !!t &&
+                typeof (t as ChatTurn).text === "string" &&
+                ((t as ChatTurn).role === "user" || (t as ChatTurn).role === "bot"),
+            )
+            .slice(-6)
+            .map((t: ChatTurn) => ({ role: t.role, text: capText(t.text, 1000) }))
+        : [];
+      const ctx = (body.context && typeof body.context === "object" ? body.context : {}) as {
+        grade?: string;
+        subject?: string;
+        topicId?: string;
+      };
+      const pageContext = {
+        grade: typeof ctx.grade === "string" ? ctx.grade : undefined,
+        subject: typeof ctx.subject === "string" ? ctx.subject : undefined,
+        topicId: safeTopicId(ctx.topicId),
+      };
+      const reqLang = resolveLang(body.language);
+
+      // 1. Classify (cheap). A failure must not break the chat: default to "ask".
+      let intent: ChatIntent = "ask";
+      let grade = pageContext.grade;
+      let subject = pageContext.subject;
+      let topicId = pageContext.topicId;
+      // Language is decided deterministically from the message script, not the classifier
+      // (the cheap model guesses it unreliably): any Arabic letters → Arabic, else the UI language.
+      const lang: "ar" | "fr" = /[؀-ۿ]/.test(message) ? "ar" : reqLang;
+      let clarify = "";
+      try {
+        // Lean prompt on purpose: no BASE_RULES (its safety framing biases a cheap model toward
+        // off_topic). The classifier only routes; the answer step carries the real guardrails.
+        const c = await aiGenerateJSON(
+          chatClassifySkill.chain,
+          chatClassifySkill.build({
+            message,
+            history,
+            role,
+            context: pageContext,
+            lang: reqLang,
+          }),
+          CHAT_CLASSIFY_SCHEMA,
+          chatClassifySkill.temperature,
+        );
+        if (typeof c["intent"] === "string") intent = c["intent"] as ChatIntent;
+        if (typeof c["grade"] === "string" && c["grade"]) grade = c["grade"];
+        if (typeof c["subject"] === "string" && c["subject"]) subject = c["subject"];
+        if (typeof c["topicId"] === "string" && c["topicId"]) topicId = safeTopicId(c["topicId"]);
+        if (typeof c["clarify"] === "string") clarify = c["clarify"].trim();
+      } catch (e) {
+        console.warn("[chat] classify failed, defaulting to ask:", e);
+      }
+
+      intent = allowIntentForRole(refineIntent(message, intent), role);
+
+      // 2. Scope guard: anything outside school gets a polite refusal, no generation.
+      if (intent === "off_topic") {
+        res.json({
+          success: true,
+          intent,
+          reply:
+            lang === "ar"
+              ? "أنا مساعد مدرسي خاص بالبرنامج التونسي للمرحلة الابتدائية. لا يمكنني مساعدتك في هذا الموضوع، لكن اسألني عن أي درس أو تمرين أو مراجعة."
+              : "Je suis l'assistant scolaire du programme tunisien du primaire. Je ne peux pas t'aider sur ce sujet, mais pose-moi une question sur une leçon, un exercice ou une révision.",
+          sources: [],
+        });
+        return;
+      }
+
+      // 3. Ask one clarifying question when a required field is missing.
+      if (clarify && !grade && !subject) {
+        res.json({ success: true, intent, reply: clarify, needsClarification: true, sources: [] });
+        return;
+      }
+
+      // 4. Ground on the official curriculum.
+      const retrieved = retrieveContext({ grade, subject, topicId, topic: message, lang, limit: 4 });
+      const sources = retrieved.sources.map((s) => ({
+        title: s.title,
+        origin: s.origin,
+        ref: s.ref,
+        grade: s.grade,
+        subject: s.subject,
+      }));
+      const routed = { intent, grade, subject, topicId, lang };
+
+      // 5. Answer. If every provider is down, degrade to retrieval-only instead of erroring.
+      try {
+        const a = await aiGenerateJSON(
+          chatAnswerSkill.chain,
+          compose(chatAnswerSkill, {
+            message,
+            history,
+            role,
+            intent,
+            lang,
+            contextBlockStr: contextBlock({ grade, subject, topicId, topic: message, lang }),
+          }),
+          CHAT_ANSWER_SCHEMA,
+          chatAnswerSkill.temperature,
+        );
+        const out = normalizeDigits(a) as { reply?: string; followUp?: string };
+        res.json({
+          success: true,
+          intent,
+          routed,
+          reply: out.reply || "",
+          followUp: out.followUp || "",
+          sources,
+        });
+        return;
+      } catch (e) {
+        console.warn("[chat] answer step degraded to retrieval-only:", e);
+        const reply =
+          sources.length > 0
+            ? lang === "ar"
+              ? "تعذّر توليد إجابة الآن، لكن هذه مراجع رسمية مرتبطة بسؤالك :"
+              : "Je ne peux pas répondre à l'instant, mais voici des références officielles liées à ta question :"
+            : lang === "ar"
+              ? "الخدمة مشغولة حاليًا. أعد المحاولة بعد قليل."
+              : "Le service est occupé. Réessaie dans un instant.";
+        res.json({ success: true, intent, routed, reply, degraded: true, sources });
+        return;
+      }
+    } catch (err: unknown) {
+      console.error("Error in /api/ai/chat:", err);
+      const pub = toPublicError(err, "Erreur de l'assistant");
       res.status(pub.status).json({ error: pub.message });
       return;
     }
