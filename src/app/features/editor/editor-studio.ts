@@ -3,13 +3,15 @@ import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { CdkDragDrop, CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, moveItemInArray } from '@angular/cdk/drag-drop';
 import { EducationStore, LanguageService, FirebaseService, NotificationService, GradeLevel, SubjectName, InteractionService, AiClient, AiJson, buildWatermark, DEFAULT_WATERMARK, SourceInput, chapterById, createStudioSession } from '@core';
-import { CartoucheComponent, SheetChartComponent, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
+import { CartoucheComponent, createSourceFormState, SheetChartComponent, SourceCardComponent, sourceChecks, STUDIO_BAR_BTN, StudioBarComponent, StudioSessionBannerComponent } from '@shared';
 import { EditorBlock, EditorBlockType, DocumentType, ExerciseFormat, ExerciseDifficulty } from './editor.model';
+import { lessonPlanBlocks, lessonPlanRequest, LessonPlanValues, refillSection, stagesText } from './lesson-plan/lesson-plan-blocks';
+import { StagesBlockComponent } from './lesson-plan/stages-block';
 
 @Component({
   selector: 'app-editor-studio',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent, SheetChartComponent, StudioBarComponent, StudioSessionBannerComponent],
+  imports: [CdkDropList, CdkDrag, CdkDragHandle, CdkDragPlaceholder, CartoucheComponent, SheetChartComponent, SourceCardComponent, StagesBlockComponent, StudioBarComponent, StudioSessionBannerComponent],
   templateUrl: './editor-studio.html',
   styleUrl: './editor-studio.css',
 })
@@ -129,6 +131,115 @@ export class EditorStudioComponent implements OnInit {
       case 'divider': return 'horizontal_rule';
       default: return 'crop_square';
     }
+  }
+
+  // ---- Lesson plan (جذاذة): blocks built in ./lesson-plan, the editor only calls them ----
+  readonly lessonMinutes = signal<number>(45);
+  readonly lessonDurations = [30, 45, 60];
+  readonly isLessonPlan = computed(() => this.docType() === 'lesson_plan');
+  /** Same source card as the revision file: topic, text, photos, PDF / Word, textbook page. */
+  readonly lessonSource = createSourceFormState();
+
+  private lessonIds() {
+    let n = 0;
+    const stamp = Date.now();
+    return () => `b-${stamp}-${++n}`;
+  }
+
+  /** Empty official sheet: every section ready to fill by hand or by the AI. */
+  loadLessonPlanPreset() {
+    const ar = this.docLanguage() === 'ar';
+    this.docType.set('lesson_plan');
+    this.docTitle.set(ar ? 'عنوان الدرس' : 'Titre de la leçon');
+    this.blocks.set(lessonPlanBlocks({ durationMinutes: this.lessonMinutes() }, this.docLanguage(), this.lessonIds()));
+  }
+
+  setLessonMinutes(minutes: number) {
+    this.lessonMinutes.set(minutes);
+  }
+
+  private lessonRequest(src: SourceInput, sectionToRegenerate?: string) {
+    return lessonPlanRequest(src, {
+      grade: this.docGrade(),
+      subject: this.docSubject(),
+      trimester: this.docTrimester(),
+      topicId: this.docTopicId(),
+      language: this.docLanguage(),
+      durationMinutes: src.durationMinutes ?? this.lessonMinutes(),
+      sectionToRegenerate,
+    });
+  }
+
+  /** The source card's content as a generation source (the textbook page travels as a url). */
+  private lessonSourceInput(): SourceInput {
+    const s = this.lessonSource;
+    const tab = s.tab();
+    return {
+      mode: tab === 'library' ? 'file' : tab,
+      topic: tab === 'topic' ? s.topic().trim() : undefined,
+      topicId: tab === 'topic' ? (s.topicId() ?? undefined) : undefined,
+      text: tab === 'text' ? s.text().trim() : undefined,
+      images: tab === 'photo' ? s.images() : undefined,
+      file: tab === 'file' ? s.file() : undefined,
+      resourceUrl: tab === 'library' ? s.resourceUrl() : undefined,
+      instructions: s.instructions().trim() || undefined,
+    };
+  }
+
+  /** Whole sheet from a Create-hub source, or from the source card in the editor. */
+  async generateLessonPlan(src?: SourceInput) {
+    if (!src && !this.session.validate(sourceChecks(this.lessonSource, (fr, ar) => this.lang.tr(fr, ar)))) return;
+    const source: SourceInput = src ?? this.lessonSourceInput();
+    this.lastGeneration = () => this.generateLessonPlan(src);
+    if (source.durationMinutes) this.lessonMinutes.set(source.durationMinutes);
+    try {
+      const res = await this.session.run(() => this.ai.post('generate-lesson-plan', this.lessonRequest(source), {
+        fallbackError: this.lang.tr('La fiche n’a pas pu être générée.', 'تعذّر توليد الجذاذة.'),
+      }));
+      if (!res) return;
+      if (!res.ok) {
+        this.session.fail(res.error);
+        return;
+      }
+      const values = (res.data['doc'] as { values?: LessonPlanValues } | undefined)?.values;
+      if (!values) {
+        this.session.fail(this.lang.tr('La fiche n’a pas pu être générée.', 'تعذّر توليد الجذاذة.'));
+        return;
+      }
+      this.docType.set('lesson_plan');
+      if (values.topic) this.docTitle.set(values.topic);
+      if (values.durationMinutes) this.lessonMinutes.set(values.durationMinutes);
+      this.blocks.set(lessonPlanBlocks(values, this.docLanguage(), this.lessonIds()));
+      this.session.succeed();
+    } finally {
+      this.saveDraft();
+    }
+  }
+
+  /** Rewrites one part of the sheet; the rest of the teacher's edits stay as they are. */
+  async rewriteLessonSection(block: EditorBlock) {
+    if (!block.sectionKey) return;
+    const previous = { ...block };
+    const res = await this.session.run(() => this.ai.post('generate-lesson-plan', this.lessonRequest({ ...this.lessonSourceInput(), topic: this.docTitle() }, block.sectionKey), {
+      fallbackError: this.lang.tr('Cette partie n’a pas pu être réécrite.', 'تعذّرت إعادة كتابة هذا الجزء.'),
+    }));
+    if (!res) return;
+    if (!res.ok) {
+      this.session.fail(res.error);
+      return;
+    }
+    const values = (res.data['doc'] as { values?: LessonPlanValues } | undefined)?.values;
+    if (!values) {
+      this.session.fail(this.lang.tr('Cette partie n’a pas pu être réécrite.', 'تعذّرت إعادة كتابة هذا الجزء.'));
+      return;
+    }
+    this.blocks.update((list) => list.map((b) => (b.id === block.id ? refillSection(b, values, this.docLanguage()) : b)));
+    this.session.keepUndo(previous);
+    this.session.succeed();
+  }
+
+  updateStages(id: string, stages: EditorBlock['stages']) {
+    this.blocks.update((list) => list.map((b) => (b.id === id ? { ...b, stages } : b)));
   }
 
   isInlineEditable(b: EditorBlock): boolean {
@@ -391,7 +502,7 @@ export class EditorStudioComponent implements OnInit {
     const qType = this.route.snapshot.queryParamMap.get('type') as DocumentType | null;
     const src = this.store.consumeLastSourceInput();
 
-    if (qType && ['exam', 'exercise_sheet', 'course', 'article'].includes(qType)) {
+    if (qType && ['exam', 'exercise_sheet', 'course', 'article', 'lesson_plan'].includes(qType)) {
       this.docType.set(qType);
     }
 
@@ -422,6 +533,7 @@ export class EditorStudioComponent implements OnInit {
       if (qType === 'exam') this.loadTemplatePreset('exam_full');
       else if (qType === 'exercise_sheet') this.loadTemplatePreset('exercise_sheet');
       else if (qType === 'course') this.loadTemplatePreset('course_summary');
+      else if (qType === 'lesson_plan') this.loadLessonPlanPreset();
     }
   }
 
@@ -431,6 +543,7 @@ export class EditorStudioComponent implements OnInit {
 
   async applySourceAndGenerate(src: SourceInput, type: DocumentType) {
     this.lastGeneration = () => this.applySourceAndGenerate(src, type);
+    if (type === 'lesson_plan') return this.generateLessonPlan(src);
     const lang = (src.language as 'fr' | 'ar') || (this.docSubject() === 'Français' || this.docSubject() === 'Anglais' ? 'fr' : 'ar');
     const extraInstructions = src.instructions ? ` - Note: ${src.instructions}` : (src.text && src.topic ? ` - Contexte: ${src.text.slice(0, 100)}` : '');
     const effectiveTopic =
@@ -696,6 +809,8 @@ export class EditorStudioComponent implements OnInit {
         return 'Image VPS';
       case 'divider':
         return 'Séparateur';
+      case 'stages':
+        return 'Déroulement';
       default:
         return 'Bloc';
     }
@@ -896,6 +1011,7 @@ export class EditorStudioComponent implements OnInit {
     { value: 'course', icon: 'menu_book', fr: 'Cours & Résumé', ar: 'درس وتلخيص', sub: 'Cours A4' },
     { value: 'exercise_sheet', icon: 'fact_check', fr: "Fiche d'Exercices", ar: 'تمارين تطبيقية', sub: 'Exercices' },
     { value: 'article', icon: 'article', fr: 'Article de Blog', ar: 'مقال توجيهي', sub: 'Blog pédagogique' },
+    { value: 'lesson_plan', icon: 'view_timeline', fr: 'Fiche pédagogique', ar: 'جذاذة', sub: 'Jodhadha' },
   ];
 
   setDocType(t: DocumentType) {
@@ -1417,6 +1533,7 @@ export class EditorStudioComponent implements OnInit {
         if (b.type === 'callout') {
           return `> [!NOTE]\n> **${b.calloutTitle || 'Conseil'}**\n> ${b.content}`;
         }
+        if (b.type === 'stages') return stagesText(b.stages, this.docLanguage());
         if (b.type === 'heading1') return `# ${b.content}`;
         if (b.type === 'heading2') return `## ${b.content}`;
         return b.content;

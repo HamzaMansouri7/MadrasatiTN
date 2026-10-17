@@ -235,16 +235,16 @@
   }
 
   <!-- PRO 3-PANE STUDIO: Inspector | A4 Canvas | Outline Tree -->
-  <div class="studio-grid lg:grid lg:grid-cols-[300px_minmax(0,1fr)_300px] lg:gap-4 lg:items-start" [class.studio-grid--no-inspector]="!selectedBlock()">
+  <div class="studio-grid lg:grid lg:gap-4 lg:items-start" [class]="isLessonPlan() ? 'lg:grid-cols-[minmax(22rem,24rem)_minmax(0,1fr)_300px]' : 'lg:grid-cols-[300px_minmax(0,1fr)_300px]'" [class.studio-grid--no-inspector]="!selectedBlock() && !isLessonPlan()">
 
     <!-- ============ LEFT PANE: INSPECTOR ============ -->
     <aside
       [class.hidden]="mobilePane() !== 'inspector'"
-      [class.inspector-idle]="!selectedBlock()"
+      [class.inspector-idle]="!selectedBlock() && !isLessonPlan()"
       class="studio-pane lg:block bg-white rounded-2xl border border-[#E7DFCF] shadow-sm overflow-hidden print:hidden">
       <div class="px-4 py-3 border-b border-[#E7DFCF] bg-[#FBF8F1] flex items-center gap-2">
         <span class="material-icons text-base text-[#2D6A4F]">tune</span>
-        <h2 class="text-xs font-semibold text-[#14251D]">{{ lang.tr('Inspecteur du bloc', 'مفتّش الكتلة') }}</h2>
+        <h2 class="text-xs font-semibold text-[#14251D]">{{ selectedBlock() ? lang.tr('Inspecteur du bloc', 'مفتّش الكتلة') : isLessonPlan() ? lang.tr('Fiche pédagogique', 'الجذاذة') : lang.tr('Inspecteur du bloc', 'مفتّش الكتلة') }}</h2>
         @if (selectedBlock()) {
           <span class="ms-auto text-[11px] font-semibold text-[#5B6B60]">{{ getBlockTypeLabel(selectedBlock()!.type) }}</span>
           <button type="button" (click)="selectedBlockId.set(null)" [attr.aria-label]="lang.tr('Fermer l’inspecteur', 'إغلاق المفتّش')"
@@ -255,6 +255,35 @@
       </div>
 
       <div class="p-4 space-y-4 text-xs">
+        @if (isLessonPlan()) {
+          <fieldset class="space-y-4">
+            <legend class="font-display font-semibold text-sm text-[#14251D] flex items-center gap-2 mb-1">
+              <span class="w-6 h-6 rounded-md bg-[#2D6A4F]/10 text-[#2D6A4F] flex items-center justify-center">
+                <span class="material-icons text-sm" aria-hidden="true">source</span>
+              </span>
+              <span>{{ lang.tr('Source de la fiche', 'مصدر الجذاذة') }}</span>
+            </legend>
+            <app-source-card [state]="lessonSource" [grade]="docGrade()" [subject]="docSubject()" [trimester]="docTrimester()" [errors]="session" />
+            <div>
+              <p class="text-xs font-semibold text-[#5B6B60] mb-1.5">{{ lang.tr('Durée de la séance', 'مدة الحصة') }}</p>
+              <div class="flex items-center bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-0.5" role="group" [attr.aria-label]="lang.tr('Durée de la séance', 'مدة الحصة')">
+                @for (m of lessonDurations; track m) {
+                  <button type="button" (click)="setLessonMinutes(m)" [attr.aria-pressed]="lessonMinutes() === m"
+                    [class]="lessonMinutes() === m ? 'bg-white text-[#14251D] shadow-xs font-semibold' : 'text-[#5B6B60] hover:text-[#14251D]'"
+                    class="flex-1 min-h-10 rounded-lg text-xs cursor-pointer">{{ m }} {{ lang.tr('min', 'د') }}</button>
+                }
+              </div>
+            </div>
+            <button type="button" (click)="generateLessonPlan()" [disabled]="isAiLoading()"
+              class="w-full bg-[#1B4332] hover:bg-[#14251D] text-[#FBF8F1] font-semibold min-h-11 px-5 rounded-xl text-sm cursor-pointer flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-default">
+              <span class="material-icons text-base" [class.animate-spin]="isAiLoading()" aria-hidden="true">{{ isAiLoading() ? 'sync' : 'auto_awesome' }}</span>
+              {{ isAiLoading() ? lang.tr('Génération…', 'جارٍ التوليد…') : lang.tr('Remplir la fiche avec l’IA', 'ملء الجذاذة بالذكاء الاصطناعي') }}
+            </button>
+          </fieldset>
+          @if (selectedBlock()) {
+            <hr class="border-[#E7DFCF]" />
+          }
+        }
         @if (!selectedBlock()) {
           <!-- Empty state -->
           <div class="text-center py-8 px-2 space-y-2">
@@ -484,6 +513,13 @@
                   class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-2.5 text-[#14251D] outline-none leading-relaxed"></textarea>
               </div>
             }
+          }
+
+          @if (isLessonPlan() && sb.sectionKey && sb.sectionKey !== 'info') {
+            <button type="button" (click)="rewriteLessonSection(sb)" [disabled]="isAiLoading()"
+              class="w-full bg-[#14251D] hover:bg-[#1B4332] text-[#FBF8F1] rounded-xl min-h-11 font-semibold cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-50 disabled:cursor-default">
+              <span class="material-icons text-sm" [class.animate-spin]="isAiLoading()" aria-hidden="true">autorenew</span>{{ lang.tr('Réécrire cette partie avec l’IA', 'إعادة كتابة هذا الجزء بالذكاء الاصطناعي') }}
+            </button>
           }
 
           <!-- Delete selected block -->
@@ -1006,7 +1042,7 @@
                         class="w-full bg-white border border-[#2D6A4F]/40 rounded p-2 text-xs text-[#14251D] outline-none"></textarea>
                     } @else {
                       <p class="font-semibold text-[#2D6A4F]">{{ b.calloutTitle || 'Remarque Pédagogique' }}</p>
-                      <p dir="auto" class="text-[#14251D]">{{ b.content || '…' }}</p>
+                      <p dir="auto" class="text-[#14251D] whitespace-pre-line">{{ b.content || '…' }}</p>
                     }
                   </div>
                 }
@@ -1060,6 +1096,9 @@
                 }
                 @case ('divider') {
                   <hr class="border-t border-[#E7DFCF]" />
+                }
+                @case ('stages') {
+                  <app-stages-block [stages]="b.stages || []" [editing]="editingBlockId() === b.id" [duration]="lessonMinutes()" (stagesChange)="updateStages(b.id, $event)" />
                 }
               }
             </div>

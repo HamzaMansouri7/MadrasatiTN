@@ -5,7 +5,6 @@ import {
   computed,
   effect,
   inject,
-  HostListener,
   OnInit,
   untracked,
   ElementRef,
@@ -19,12 +18,9 @@ import { LanguageService } from '@core/services/language.service';
 import { FirebaseService } from '@core/services/firebase.service';
 import { StorageVaultService } from '@core/services/storage-vault.service';
 import { createStudioSession } from '@core/services/studio-session';
-import { downscaleImage } from '@core/utils/image.util';
 import { MemoDoc, MemoInput, SummaryLength, SummarySection } from '@core/models/memo.model';
 import { SUMMARY_MAX_IMAGES, summarySections } from '@core/utils/summary.util';
-import { CurriculumChapter } from '@core/data/curriculum-chapters.data';
-import { chapterTitle } from '@core/utils/curriculum.util';
-import { TopicPickerComponent } from '@shared/components/topic-picker';
+import { SourceCardComponent, SourceFormState, sourceChecks } from '@shared/components/source-card';
 import { StudioSessionBannerComponent } from '@shared/components/studio-session-banner';
 import { SummaryDocumentComponent } from './summary-document';
 
@@ -49,21 +45,13 @@ function sectionPictureText(topic: string, s: SummarySection): string {
 type SourceTab = 'topic' | 'text' | 'photo' | 'file' | 'library';
 type MemoPanel = 'source' | 'settings' | 'options';
 
-interface LibraryResourceItem {
-  id: string;
-  title: string;
-  grade: string;
-  subject: string;
-  relPath: string;
-}
-
 @Component({
   selector: 'app-memo-studio',
   standalone: true,
   imports: [
     CommonModule,
     FormsModule,
-    TopicPickerComponent,
+    SourceCardComponent,
     StudioSessionBannerComponent,
     SummaryDocumentComponent,
   ],
@@ -159,193 +147,7 @@ interface LibraryResourceItem {
               </span>
               <span>{{ lang.tr('Source', 'المصدر') }}</span>
             </legend>
-            <div role="tablist" [attr.aria-label]="lang.tr('Source du cours', 'مصدر الدرس')" class="flex flex-wrap gap-1.5 p-1.5 rounded-2xl border border-[#E7DFCF] bg-[#FBF8F1]">
-              @for (tab of sourceTabs; track tab.id) {
-                <button
-                  type="button"
-                  role="tab"
-                  [attr.aria-selected]="activeTab() === tab.id"
-                  (click)="activeTab.set(tab.id)"
-                  [class]="activeTab() === tab.id ? 'bg-[#14251D] text-[#FBF8F1] shadow-xs font-semibold' : 'text-[#5B6B60] hover:bg-[#F2ECDE] hover:text-[#14251D] font-medium'"
-                  class="px-3 min-h-10 rounded-xl text-xs sm:text-sm flex items-center gap-1.5 cursor-pointer transition-all focus-visible:outline-2 focus-visible:outline-[#2D6A4F]">
-                  <span class="material-icons text-base" aria-hidden="true">{{ tab.icon }}</span>
-                  <span>{{ lang.t(tab.key) }}</span>
-                </button>
-              }
-            </div>
-
-            <!-- TAB 1: Topic Input -->
-            @if (activeTab() === 'topic') {
-              <div class="space-y-2">
-                <label for="memo-topic-input" class="block text-sm font-semibold text-[#14251D]">{{ lang.t('memoInputTopicLabel') }}</label>
-                <textarea
-                  id="memo-topic-input"
-                  rows="2"
-                  [(ngModel)]="topic"
-                  (ngModelChange)="session.clearFieldError('memo-topic-input')"
-                  [attr.aria-invalid]="!!session.fieldError('memo-topic-input')"
-                  [placeholder]="lang.t('memoInputTopicPlaceholder')"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-xl p-3 text-sm text-[#14251D] leading-relaxed resize-y focus:bg-white focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] transition-all shadow-2xs"
-                ></textarea>
-                @if (session.fieldError('memo-topic-input'); as msg) {
-                  <p class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
-                }
-                <app-topic-picker
-                  selectId="memo-topic-picker"
-                  [grade]="grade()"
-                  [subject]="subject()"
-                  [trimester]="trimester()"
-                  [value]="topicId()"
-                  (topicChange)="onTopicPicked($event)" />
-              </div>
-            }
-
-            <!-- TAB 2: Text Input -->
-            @if (activeTab() === 'text') {
-              <div class="space-y-2">
-                <label for="memo-text-input" class="block text-sm font-semibold text-[#14251D]">{{ lang.t('memoInputTextLabel') }}</label>
-                <textarea
-                  id="memo-text-input"
-                  rows="6"
-                  [(ngModel)]="text"
-                  (ngModelChange)="session.clearFieldError('memo-text-input')"
-                  [attr.aria-invalid]="!!session.fieldError('memo-text-input')"
-                  [placeholder]="lang.t('memoInputTextPlaceholder')"
-                  class="w-full bg-[#FBF8F1] border border-[#E7DFCF] aria-invalid:border-[#BF5B34] rounded-xl p-3.5 text-sm text-[#14251D] leading-relaxed resize-y focus:bg-white focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] transition-all shadow-2xs"
-                ></textarea>
-                @if (session.fieldError('memo-text-input'); as msg) {
-                  <p class="text-xs font-medium text-[#BF5B34]">{{ msg }}</p>
-                }
-              </div>
-            }
-
-            <!-- TAB 3: Photo / Screenshot Upload & Paste -->
-            @if (activeTab() === 'photo') {
-              <div class="space-y-3">
-                <label for="photo-file-input" class="block text-sm font-semibold text-[#14251D]">{{ lang.tr('Ajouter ou coller des captures (Ctrl+V)', 'إضافة أو لصق لقطات الشاشة') }}</label>
-                <div
-                  (dragover)="onDragOver($event)"
-                  (drop)="onDrop($event)"
-                  class="border-2 border-dashed border-[#E7DFCF] rounded-lg p-6 text-center bg-[#FBF8F1] hover:bg-[#F2ECDE] transition-colors"
-                >
-                  <input
-                    type="file"
-                    multiple
-                    accept="image/*"
-                    (change)="onImageSelect($event)"
-                    class="hidden"
-                    #photoFileInput
-                    id="photo-file-input"
-                  />
-                  <div class="space-y-2">
-                    <img src="/assets/memo/magnifier.svg" alt="" aria-hidden="true" class="w-8 h-8 mx-auto" />
-                    <p class="text-sm text-[#5B6B60]">
-                      {{ lang.tr('Glissez vos photos ici, collez avec Ctrl+V ou', 'اسحب الصور هنا، الصق بـ Ctrl+V أو') }}
-                    </p>
-                    <button
-                      type="button"
-                      id="photo-browse"
-                      (click)="photoFileInput.click()"
-                      class="px-5 min-h-11 bg-[#FBF8F1] border border-[#E7DFCF] rounded-md text-sm font-medium text-[#4A5A50] hover:bg-[#F2ECDE] transition-colors cursor-pointer"
-                    >
-                      {{ lang.tr('Parcourir les fichiers', 'استعراض الصور') }}
-                    </button>
-                  </div>
-                </div>
-
-                @if (images().length > 0) {
-                  <div class="flex flex-wrap gap-2 pt-2">
-                    @for (img of images(); track $index) {
-                      <div class="relative w-20 h-20 rounded-md overflow-hidden border border-[#E7DFCF] group">
-                        <img [src]="img.base64Data" alt="" class="w-full h-full object-cover" />
-                        <button
-                          type="button"
-                          (click)="removeImage($index)"
-                          class="absolute top-1 end-1 w-7 h-7 bg-[#14251D] hover:bg-[#C1121F] text-[#FBF8F1] rounded-full flex items-center justify-center cursor-pointer transition-colors" [attr.aria-label]="lang.tr('Retirer la photo', 'إزالة الصورة')"
-                        >
-                          <span class="material-icons text-base" aria-hidden="true">close</span>
-                        </button>
-                      </div>
-                    }
-                  </div>
-                }
-              </div>
-            }
-
-            <!-- TAB 4: File Upload (PDF/DOCX) -->
-            @if (activeTab() === 'file') {
-              <div class="space-y-3">
-                <label for="doc-file-input" class="block text-sm font-semibold text-[#14251D]">{{ lang.tr('Fichier PDF ou DOCX', 'ملف PDF أو DOCX') }}</label>
-                <div class="border-2 border-dashed border-[#E7DFCF] rounded-lg p-6 text-center bg-[#FBF8F1]">
-                  <input
-                    type="file"
-                    accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                    (change)="onFileSelect($event)"
-                    class="hidden"
-                    #docFileInput
-                    id="doc-file-input"
-                  />
-                  <div class="space-y-2">
-                    <img src="/assets/memo/books.svg" alt="" aria-hidden="true" class="w-8 h-8 mx-auto" />
-                    <p class="text-sm text-[#5B6B60]">
-                      {{ file() ? file()?.filename : lang.tr('Sélectionnez un document PDF ou Word (.docx)', 'اختر وثيقة بصيغة PDF أو Word') }}
-                    </p>
-                    <button
-                      type="button"
-                      id="doc-browse"
-                      (click)="docFileInput.click()"
-                      class="px-5 min-h-11 bg-[#FBF8F1] border border-[#E7DFCF] rounded-md text-sm font-medium text-[#4A5A50] hover:bg-[#F2ECDE] transition-colors cursor-pointer"
-                    >
-                      {{ file() ? lang.tr('Changer de fichier', 'تغيير الملف') : lang.tr('Parcourir', 'اختيار ملف') }}
-                    </button>
-                  </div>
-                </div>
-              </div>
-            }
-
-            <!-- TAB 5: Library Resource Picker -->
-            @if (activeTab() === 'library') {
-              <div class="space-y-3">
-                <label for="library-resource-select" class="block text-sm font-semibold text-[#14251D]">{{ lang.tr('Choisir une ressource du catalogue CNP', 'اختر من معينات ودليل الكتب المدرسية') }}</label>
-                @if (libraryItems().length === 0) {
-                  <p class="text-sm text-[#5B6B60]">
-                    {{ libraryLoaded()
-                      ? lang.tr('Aucune ressource disponible pour le moment.', 'لا توجد معينات متاحة حاليًا.')
-                      : lang.tr('Chargement des ressources du catalogue...', 'جاري تحميل المعينات...') }}
-                  </p>
-                } @else {
-                  <select
-                    id="library-resource-select"
-                    [(ngModel)]="resourceUrl"
-                    (ngModelChange)="session.clearFieldError('library-resource-select')"
-                    [attr.aria-invalid]="!!session.fieldError('library-resource-select')"
-                    class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-md px-3 min-h-11 text-sm text-[#14251D] focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F]"
-                  >
-                    <option value="">-- {{ lang.tr('Sélectionner un document officiel', 'اختر وثيقة رسمية') }} --</option>
-                    @for (item of libraryItems(); track item.id) {
-                      <option [value]="item.relPath">
-                        [{{ item.grade }}] {{ item.subject }} - {{ item.title }}
-                      </option>
-                    }
-                  </select>
-                }
-              </div>
-            }
-
-            <!-- Optional Instructions Field -->
-            <div class="space-y-1.5">
-              <label for="memo-instructions-input" class="block text-sm font-semibold text-[#14251D] flex items-center justify-between">
-                <span>{{ lang.t('memoInstructionsLabel') }}</span>
-                <span class="text-xs font-normal text-[#5B6B60]">{{ lang.tr('Optionnel', 'اختياري') }}</span>
-              </label>
-              <textarea
-                id="memo-instructions-input"
-                rows="3"
-                [(ngModel)]="instructions"
-                [placeholder]="lang.t('memoInstructionsPlaceholder')"
-                class="w-full bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl p-3 text-sm text-[#14251D] leading-relaxed resize-y focus:bg-white focus:border-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D6A4F] transition-all shadow-2xs"
-              ></textarea>
-            </div>
+            <app-source-card [state]="sourceState" [grade]="grade()" [subject]="subject()" [trimester]="trimester()" [errors]="session" />
 
             </fieldset>
 
@@ -455,10 +257,6 @@ interface LibraryResourceItem {
             </fieldset>
 
             <div class="space-y-3" style="order: 10">
-            @if (missingSourceMessage(); as msg) {
-              <p role="alert" class="text-sm font-medium text-[#BF5B34]">{{ msg }}</p>
-            }
-
             <!-- Action Button -->
             <div class="pt-2">
               <button
@@ -570,13 +368,6 @@ export class MemoStudioComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
 
   readonly activeTab = signal<SourceTab>('topic');
-  readonly sourceTabs: { id: SourceTab; icon: string; key: string }[] = [
-    { id: 'topic', icon: 'menu_book', key: 'memoTabTopic' },
-    { id: 'text', icon: 'notes', key: 'memoTabText' },
-    { id: 'photo', icon: 'photo_camera', key: 'memoTabPhoto' },
-    { id: 'file', icon: 'upload_file', key: 'memoTabFile' },
-    { id: 'library', icon: 'auto_stories', key: 'memoTabLibrary' },
-  ];
   readonly panels: { id: MemoPanel; icon: string; fr: string; ar: string }[] = [
     { id: 'source', icon: 'source', fr: 'Source', ar: 'المصدر' },
     { id: 'settings', icon: 'tune', fr: 'Paramètres', ar: 'الإعدادات' },
@@ -607,7 +398,6 @@ export class MemoStudioComponent implements OnInit {
 
   readonly topic = signal<string>('');
   readonly topicId = signal<string | null>(null);
-  private pickedTitle = '';
   readonly text = signal<string>('');
   readonly grade = signal<string>('6ème Année');
   readonly subject = signal<string>('Français');
@@ -619,6 +409,17 @@ export class MemoStudioComponent implements OnInit {
   readonly file = signal<{ base64Data: string; contentType: string; filename: string } | null>(null);
   readonly resourceUrl = signal<string>('');
   readonly extractedText = signal<string>('');
+  /** The source card edits these same signals. */
+  readonly sourceState: SourceFormState = {
+    tab: this.activeTab,
+    topic: this.topic,
+    topicId: this.topicId,
+    text: this.text,
+    images: this.images,
+    file: this.file,
+    resourceUrl: this.resourceUrl,
+    instructions: this.instructions,
+  };
 
   readonly length = signal<SummaryLength>('short');
   readonly withPractice = signal<boolean>(true);
@@ -640,9 +441,6 @@ export class MemoStudioComponent implements OnInit {
   readonly watermarkName = computed(
     () => this.firebase.userProfile()?.displayName || this.lang.tr('Votre nom', 'اسمك'),
   );
-
-  readonly libraryItems = signal<LibraryResourceItem[]>([]);
-  readonly libraryLoaded = signal(false);
 
   readonly isSaving = signal<boolean>(false);
   readonly isSaved = signal<boolean>(false);
@@ -674,15 +472,6 @@ export class MemoStudioComponent implements OnInit {
     resourceUrl: this.resourceUrl(),
   }));
 
-  /** Required-field message for the photo, file and library tabs; it clears once the source is given. */
-  readonly missingSourceMessage = computed(() => {
-    const tab = this.activeTab();
-    if (tab === 'photo' && !this.images().length) return this.session.fieldError('photo-browse');
-    if (tab === 'file' && !this.file()) return this.session.fieldError('doc-browse');
-    if (tab === 'library' && !this.resourceUrl()) return this.session.fieldError('library-resource-select');
-    return '';
-  });
-
   constructor() {
     // The document language follows the subject: French lesson -> French document, other subjects -> Arabic.
     // Still changeable by hand afterwards (only a subject change resets it).
@@ -704,7 +493,6 @@ export class MemoStudioComponent implements OnInit {
     this.activeTab.set(d.tab);
     this.topic.set(d.topic);
     this.topicId.set(d.topicId);
-    this.pickedTitle = d.topicId ? d.topic : '';
     this.text.set(d.text);
     this.grade.set(d.grade);
     this.subject.set(d.subject);
@@ -724,7 +512,6 @@ export class MemoStudioComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.loadLibraryIndex();
     this.checkRouteMemoParam();
   }
 
@@ -776,29 +563,6 @@ export class MemoStudioComponent implements OnInit {
     this.extractedText.set('');
   }
 
-  private async loadLibraryIndex() {
-    try {
-      // index.json lists manifest paths ({ manifests: [...] }); each manifest holds the items.
-      const res = await fetch('/assets/resources/index.json');
-      if (!res.ok) return;
-      const idx = await res.json();
-      const paths: string[] = Array.isArray(idx?.manifests) ? idx.manifests : [];
-      const manifests = await Promise.all(
-        paths.map(async (p) => {
-          try {
-            const r = await fetch('/' + p.replace(/^\//, ''));
-            return r.ok ? ((await r.json()) as { items?: LibraryResourceItem[] }) : null;
-          } catch {
-            return null;
-          }
-        }),
-      );
-      this.libraryItems.set(manifests.flatMap((m) => m?.items ?? []));
-      this.libraryLoaded.set(true);
-    } catch {
-      this.libraryLoaded.set(true);
-    }
-  }
 
   panelOrder(id: MemoPanel): number {
     return id === this.topPanel() ? 0 : this.panels.findIndex((p) => p.id === id) + 1;
@@ -896,87 +660,10 @@ export class MemoStudioComponent implements OnInit {
     }
   }
 
-  // Handle Ctrl+V paste of images
-  @HostListener('window:paste', ['$event'])
-  async onPaste(event: ClipboardEvent) {
-    if (this.activeTab() !== 'photo') return;
-    const items = event.clipboardData?.items;
-    if (!items) return;
-    for (const item of Array.from(items)) {
-      if (item.type.startsWith('image/')) {
-        const file = item.getAsFile();
-        if (file) {
-          const processed = await downscaleImage(file);
-          this.images.update((imgs) => [...imgs.slice(0, 7), processed]);
-        }
-      }
-    }
-  }
-
-  onDragOver(event: DragEvent) {
-    event.preventDefault();
-    event.stopPropagation();
-  }
-
-  async onDrop(event: DragEvent) {
-    event.preventDefault();
-    event.stopPropagation();
-    const files = event.dataTransfer?.files;
-    if (!files) return;
-    for (const f of Array.from(files)) {
-      if (f.type.startsWith('image/')) {
-        const processed = await downscaleImage(f);
-        this.images.update((imgs) => [...imgs.slice(0, 7), processed]);
-      }
-    }
-  }
-
-  async onImageSelect(event: Event) {
-    const input = event.target as HTMLInputElement;
-    if (!input.files) return;
-    for (const f of Array.from(input.files)) {
-      const processed = await downscaleImage(f);
-      this.images.update((imgs) => [...imgs.slice(0, 7), processed]);
-    }
-  }
-
-  removeImage(index: number) {
-    this.images.update((imgs) => imgs.filter((_, i) => i !== index));
-  }
-
-  async onFileSelect(event: Event) {
-    const input = event.target as HTMLInputElement;
-    const f = input.files?.[0];
-    if (!f) return;
-    const reader = new FileReader();
-    reader.onload = () => {
-      const dataUrl = reader.result as string;
-      this.file.set({
-        base64Data: dataUrl,
-        contentType: f.type || 'application/pdf',
-        filename: f.name,
-      });
-    };
-    reader.readAsDataURL(f);
-  }
-
-  onTopicPicked(ch: CurriculumChapter | null) {
-    this.topicId.set(ch?.id ?? null);
-    this.pickedTitle = ch ? chapterTitle(ch, this.lang.isArabic() ? 'ar' : 'fr') : '';
-    if (ch) this.topic.set(this.pickedTitle);
-  }
-
   async generateMemo() {
     if (this.session.busy()) return;
-    const tab = this.activeTab();
     const t = (fr: string, ar: string) => this.lang.tr(fr, ar);
-    const valid = this.session.validate([
-      { id: 'memo-topic-input', ok: tab !== 'topic' || !!this.topic().trim(), message: t('Indiquez le sujet de la leçon.', 'اكتب موضوع الدرس.') },
-      { id: 'memo-text-input', ok: tab !== 'text' || !!this.text().trim(), message: t('Collez le texte du cours.', 'الصق نص الدرس.') },
-      { id: 'photo-browse', ok: tab !== 'photo' || this.images().length > 0, message: t('Ajoutez au moins une photo.', 'أضف صورة واحدة على الأقل.') },
-      { id: 'doc-browse', ok: tab !== 'file' || !!this.file(), message: t('Choisissez un fichier PDF ou Word.', 'اختر ملف PDF أو Word.') },
-      { id: 'library-resource-select', ok: tab !== 'library' || !!this.resourceUrl(), message: t('Choisissez un document officiel.', 'اختر وثيقة رسمية.') },
-    ]);
+    const valid = this.session.validate(sourceChecks(this.sourceState, t));
     if (!valid) return;
 
     const previous = this.store.memo();
@@ -995,7 +682,7 @@ export class MemoStudioComponent implements OnInit {
       mode: modeMap[this.activeTab()] || 'topic',
       topic: this.topic(),
       // Only keep the programme topic while the text still is the picked title.
-      topicId: this.topicId() && this.topic() === this.pickedTitle ? this.topicId()! : undefined,
+      topicId: this.topicId() ?? undefined,
       text: this.text(),
       grade: this.grade(),
       subject: this.subject(),

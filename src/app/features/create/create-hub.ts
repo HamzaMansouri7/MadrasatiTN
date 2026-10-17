@@ -6,7 +6,7 @@ import { EducationStore, SourceInput, chapterById, chapterTitle } from '@core';
 const OUTPUT_ROUTES: Record<string, string> = {
   memo: '/ai-studio?tab=infographic',
   summary: '/ai-studio?tab=memo',
-  'lesson-plan': '/lesson-plan/new',
+  'lesson-plan': '/editor?type=lesson_plan',
   exercises: '/editor?type=exercise_sheet',
   exam: '/editor?type=exam',
   worksheet: '/editor?type=exercise_sheet',
