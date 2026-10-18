@@ -1,3 +1,5 @@
+import type { SourceInput } from './source-input.model';
+
 /** The conversational assistant lives in one global drawer; these are its shared types. */
 
 export type ChatSender = 'user' | 'bot';
@@ -12,10 +14,12 @@ export interface ChatSource {
 
 export interface ChatAction {
   /** Which Create tool to open for a "generate" intent. */
-  intent: 'exercises' | 'memo' | 'plan' | 'infographic';
+  intent: 'exercises' | 'memo' | 'plan' | 'infographic' | 'series';
   label: string;
   route: string;
   queryParams?: Record<string, string>;
+  /** Pre-fills the studio form (message, grade, subject, topic) so it opens ready, not empty. */
+  prefill?: SourceInput;
 }
 
 export interface ChatMessage {

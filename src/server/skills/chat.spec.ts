@@ -29,6 +29,13 @@ describe('chat skill', () => {
       expect(refineIntent('génère une infographie', 'ask')).toBe('infographic');
     });
 
+    it('routes illustrated-story requests to the series studio, not to exercises', () => {
+      expect(refineIntent("fais-moi une histoire illustrée sur le cycle de l'eau", 'ask')).toBe('series');
+      expect(refineIntent('أريد قصة مصورة عن درس الماء', 'ask')).toBe('series');
+      expect(refineIntent('سلسلة مصورة حول الكسور', 'exercises')).toBe('series');
+      expect(refineIntent('أنشئ سلسلة تمارين حول الجمع', 'ask')).toBe('exercises');
+    });
+
     it('routes Arabic generate keywords (override a wrong model intent)', () => {
       expect(refineIntent('أنشئ سلسلة تمارين حول الجمع', 'plan')).toBe('exercises');
       expect(refineIntent('اعمل لي ملخص لدرس الكسور', 'off_topic')).toBe('memo');

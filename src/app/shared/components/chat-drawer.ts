@@ -1,5 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, effect, inject, signal, viewChild } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { ChangeDetectionStrategy, Component, ElementRef, HostListener, effect, inject, signal, viewChild } from '@angular/core';
 import { ChatService, LanguageService } from '@core';
 
 /**
@@ -11,7 +10,6 @@ import { ChatService, LanguageService } from '@core';
   selector: 'app-chat-drawer',
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterLink],
   template: `
     <!-- Launcher -->
     @if (!chat.open()) {
@@ -39,9 +37,10 @@ import { ChatService, LanguageService } from '@core';
               </span>
               <div class="min-w-0">
                 <p class="font-display font-semibold text-sm text-[#14251D] truncate">{{ lang.tr('Assistant Madrasati', 'مساعد مدرستي') }}</p>
-                <p class="text-xs text-[#5B6B60]">
+                <button type="button" (click)="chat.toggleMode()" [attr.aria-label]="lang.tr('Changer de mode', 'تغيير الوضع')" class="inline-flex items-center gap-1 text-xs text-[#5B6B60] hover:text-[#14251D] cursor-pointer">
                   {{ chat.mode() === 'teacher' ? lang.tr('Mode enseignant', 'وضع المعلّم') : lang.tr('Mode parent', 'وضع الولي') }}
-                </p>
+                  <span class="material-icons text-sm">swap_horiz</span>
+                </button>
               </div>
             </div>
             <div class="flex items-center gap-1 shrink-0">
@@ -73,11 +72,11 @@ import { ChatService, LanguageService } from '@core';
             @for (m of thread(); track m.id) {
               @if (m.sender === 'user') {
                 <div class="flex justify-end">
-                  <p class="max-w-[85%] rounded-2xl rounded-ee-sm bg-[#2D6A4F] text-[#FBF8F1] px-3.5 py-2.5 text-sm leading-relaxed whitespace-pre-line">{{ m.text }}</p>
+                  <p dir="auto" class="max-w-[85%] rounded-2xl rounded-ee-sm bg-[#2D6A4F] text-[#FBF8F1] px-3.5 py-2.5 text-sm leading-relaxed whitespace-pre-line">{{ m.text }}</p>
                 </div>
               } @else {
                 <div class="flex flex-col items-start gap-2 max-w-[90%]">
-                  <div class="rounded-2xl rounded-es-sm bg-white border border-[#E7DFCF] px-3.5 py-2.5 text-sm leading-relaxed whitespace-pre-line"
+                  <div dir="auto" class="rounded-2xl rounded-es-sm bg-white border border-[#E7DFCF] px-3.5 py-2.5 text-sm leading-relaxed whitespace-pre-line"
                        [style.color]="m.error ? '#8F3F1F' : '#14251D'">
                     @if (m.pending) {
                       <span class="inline-flex items-center gap-2 text-[#5B6B60]">
@@ -90,11 +89,11 @@ import { ChatService, LanguageService } from '@core';
                   </div>
 
                   @if (m.action; as a) {
-                    <a [routerLink]="a.route" [queryParams]="a.queryParams" (click)="chat.closeChat()"
+                    <button type="button" (click)="chat.openTool(a)"
                        class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#2D6A4F] text-[#FBF8F1] text-xs font-semibold hover:bg-[#1B4332] cursor-pointer">
                       <span class="material-icons text-sm">auto_awesome</span>
                       {{ a.label }}
-                    </a>
+                    </button>
                   }
 
                   @if (m.sources?.length) {
@@ -102,15 +101,16 @@ import { ChatService, LanguageService } from '@core';
                       @for (src of m.sources; track src.title) {
                         <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#F2ECDE] border border-[#E7DFCF] text-[11px] text-[#5B6B60]">
                           <span class="material-icons text-xs text-[#2D6A4F]">menu_book</span>
-                          {{ src.title }}
+                          <bdi>{{ src.title }}</bdi>
                         </span>
                       }
                     </div>
                   }
 
                   @if (m.followUp) {
-                    <button type="button" (click)="chat.send(m.followUp!)" class="text-start text-xs text-[#2D6A4F] font-semibold hover:underline cursor-pointer">
-                      ↳ {{ m.followUp }}
+                    <button type="button" (click)="chat.send(m.followUp!)" dir="auto" class="inline-flex items-start gap-1 text-start text-xs text-[#2D6A4F] font-semibold hover:underline cursor-pointer">
+                      <span class="material-icons text-sm rtl:-scale-x-100">subdirectory_arrow_right</span>
+                      <span>{{ m.followUp }}</span>
                     </button>
                   }
                 </div>
@@ -125,6 +125,7 @@ import { ChatService, LanguageService } from '@core';
               (input)="draft.set($any($event.target).value)"
               (keydown)="onKey($event)"
               rows="1"
+              dir="auto"
               [attr.placeholder]="lang.tr('Écris ton message…', 'اكتب رسالتك…')"
               class="flex-1 resize-none max-h-28 bg-[#FBF8F1] border border-[#E7DFCF] rounded-xl px-3 py-2.5 text-sm text-[#14251D] outline-none focus:border-[#2D6A4F]"></textarea>
             <button
@@ -143,7 +144,6 @@ import { ChatService, LanguageService } from '@core';
 export class ChatDrawerComponent {
   readonly chat = inject(ChatService);
   readonly lang = inject(LanguageService);
-  private readonly router = inject(Router);
 
   readonly thread = this.chat.thread;
   readonly draft = signal('');
@@ -160,6 +160,11 @@ export class ChatDrawerComponent {
           this.lang.tr('Aide mon enfant en maths', 'ساعد ابني في الرياضيات'),
           this.lang.tr('Explique simplement', 'اشرح ببساطة'),
         ];
+
+  @HostListener('document:keydown.escape')
+  onEscape(): void {
+    if (this.chat.open()) this.chat.closeChat();
+  }
 
   constructor() {
     // Keep the view pinned to the newest message as the thread grows or the drawer opens.

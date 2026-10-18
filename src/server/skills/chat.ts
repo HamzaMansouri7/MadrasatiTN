@@ -17,6 +17,7 @@ export type ChatIntent =
   | 'memo'
   | 'plan'
   | 'infographic'
+  | 'series'
   | 'find'
   | 'off_topic';
 
@@ -49,6 +50,7 @@ export function allowIntentForRole(intent: ChatIntent, role: ChatRole): ChatInte
 const AR = {
   jadhadha: 'جذاذة', // جذاذة
   infographic: 'إ?ا?نفوغراف', // (إ/ا)نفوغراف
+  seriesStory: 'قصة مصورة|سلسلة مصورة|حكاية مصورة|قصة الدرس', // قصة/سلسلة/حكاية مصورة، قصة الدرس
   resume: 'ملخّ?ص', // ملخّص / ملخص
   revision: 'مراجعة', // مراجعة
   serie: 'سلسلة', // سلسلة
@@ -64,6 +66,7 @@ const AR = {
 const INTENT_KEYWORDS: { intent: ChatIntent; re: RegExp }[] = [
   { intent: 'plan', re: new RegExp(`${AR.jadhadha}|fiche\\s+p[ée]dagogique|pr[ée]paration\\s+(de\\s+)?le[çc]on`, 'i') },
   { intent: 'infographic', re: new RegExp(`infographie|infographic|${AR.infographic}|visuel`, 'i') },
+  { intent: 'series', re: new RegExp(`${AR.seriesStory}|histoire\\s+illustr[ée]e|bande\\s+dessin[ée]e|s[ée]rie\\s+illustr[ée]e`, 'i') },
   { intent: 'memo', re: new RegExp(`r[ée]sum[ée]|fiche\\s+de\\s+r[ée]vision|r[ée]vision|${AR.resume}|${AR.revision}`, 'i') },
   { intent: 'exercises', re: new RegExp(`exercices?|s[ée]rie\\s+d|${AR.tamarin}|${AR.serie}|devoirs?`, 'i') },
   { intent: 'solve', re: new RegExp(`r[ée]sou[ds]|corrige|${AR.solve}`, 'i') },
@@ -92,7 +95,7 @@ export const CHAT_CLASSIFY_SCHEMA = {
   properties: {
     intent: {
       type: Type.STRING,
-      enum: ['ask', 'solve', 'exercises', 'memo', 'plan', 'infographic', 'find', 'off_topic'],
+      enum: ['ask', 'solve', 'exercises', 'memo', 'plan', 'infographic', 'series', 'find', 'off_topic'],
     },
     grade: STR,
     subject: STR,
@@ -146,6 +149,7 @@ export const chatClassifySkill: Skill<ChatClassifyInput> = {
       `- "memo" : demande d'un résumé / fiche de révision.`,
       `- "plan" : demande d'une fiche pédagogique (جذاذة) — réservé à l'enseignant.`,
       `- "infographic" : demande d'une infographie / visuel.`,
+      `- "series" : demande d'une histoire / série illustrée (قصة مصورة، سلسلة مصورة) qui raconte une leçon.`,
       `- "find" : chercher une ressource existante (livre, exercice, chapitre).`,
       `- "off_topic" : hors sujet scolaire (politique, médical, contenu adulte, violence, vie privée d'un enfant, bavardage sans lien avec l'école).`,
       `CONSIGNES :`,
@@ -176,7 +180,7 @@ export const chatAnswerSkill: Skill<ChatAnswerInput> = {
   schema: CHAT_ANSWER_SCHEMA,
   build: (input) => {
     const parentTone = input.role === 'parent';
-    const generate = input.intent === 'exercises' || input.intent === 'memo' || input.intent === 'plan' || input.intent === 'infographic';
+    const generate = input.intent === 'exercises' || input.intent === 'memo' || input.intent === 'plan' || input.intent === 'infographic' || input.intent === 'series';
     return [
       `MISSION RÉPONSE ASSISTANT (S20b) : tu es l'assistant scolaire "Madrasati TN" pour le primaire tunisien.`,
       `REGISTRE : ${parentTone

@@ -1640,7 +1640,7 @@ aiRouter.post(
       // 3. Ask one clarifying question — but only for a document to CREATE, where the level and
       // subject actually matter. An "ask/solve/find" is answered directly with whatever context
       // exists. The question is phrased in the user's language, not the model's.
-      const needsLevel = intent === "exercises" || intent === "memo" || intent === "plan" || intent === "infographic";
+      const needsLevel = intent === "exercises" || intent === "memo" || intent === "plan" || intent === "infographic" || intent === "series";
       if (clarify && needsLevel && !grade && !subject) {
         res.json({
           success: true,

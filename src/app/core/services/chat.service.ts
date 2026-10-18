@@ -1,26 +1,17 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
+import { Router } from '@angular/router';
 import { AiClient } from './ai-client';
 import { EducationStore } from './education-store';
+import { FirebaseService } from './firebase.service';
 import { LanguageService } from './language.service';
 import { ChatContextService } from './chat-context.service';
+import { CHAT_TOOLS, buildChatPrefill, isChatToolIntent } from './chat-tools';
 import { ChatAction, ChatMessage, ChatSource } from '../models/chat.model';
 
 const STORAGE_KEY = 'madrasati_chat';
 const MAX_STORED = 40;
 
-/** Where each "generate" intent sends the user, mirroring create-hub's OUTPUT_ROUTES. */
-const INTENT_ROUTE: Record<string, string> = {
-  exercises: '/editor',
-  memo: '/ai-studio',
-  infographic: '/ai-studio',
-  plan: '/editor',
-};
-const INTENT_QUERY: Record<string, Record<string, string>> = {
-  exercises: { type: 'exercise_sheet' },
-  memo: { tab: 'memo' },
-  infographic: { tab: 'infographic' },
-  plan: { type: 'lesson_plan' },
-};
+export type ChatMode = 'teacher' | 'parent';
 
 /**
  * The single source of truth for the one global chat drawer: open state, the one thread, and the
@@ -31,18 +22,34 @@ const INTENT_QUERY: Record<string, Record<string, string>> = {
 export class ChatService {
   private readonly ai = inject(AiClient);
   private readonly store = inject(EducationStore);
+  private readonly firebase = inject(FirebaseService);
   private readonly lang = inject(LanguageService);
   private readonly ctx = inject(ChatContextService);
+  private readonly router = inject(Router);
 
   readonly open = signal(false);
   readonly pending = signal(false);
   readonly thread = signal<ChatMessage[]>(this.load());
 
-  /** Role mode shown in the header and sent to the server. Teacher tools require teacher mode. */
-  readonly mode = computed<'teacher' | 'parent'>(() => {
+  /** The user's manual choice in the drawer header; wins over everything else. */
+  readonly modeOverride = signal<ChatMode | null>(null);
+
+  /**
+   * Role mode shown in the header and sent to the server. Priority: manual choice, then the
+   * signed-in profile (a teacher stays a teacher on library pages), then the current page.
+   */
+  readonly mode = computed<ChatMode>(() => {
+    const manual = this.modeOverride();
+    if (manual) return manual;
+    const p = this.firebase.userProfile();
+    if (p) return p.role === 'teacher' || p.roles?.includes('teacher') ? 'teacher' : 'parent';
     const r = this.store.currentRole();
     return r === 'teacher' || r === 'editor' || r === 'article-editor' ? 'teacher' : 'parent';
   });
+
+  toggleMode(): void {
+    this.modeOverride.set(this.mode() === 'teacher' ? 'parent' : 'teacher');
+  }
 
   openChat(prefill?: string): void {
     this.open.set(true);
@@ -94,7 +101,7 @@ export class ChatService {
       patch.text = (d['reply'] as string) || '';
       patch.followUp = (d['followUp'] as string) || undefined;
       patch.sources = Array.isArray(d['sources']) ? (d['sources'] as ChatSource[]).slice(0, 4) : undefined;
-      patch.action = this.buildAction(d);
+      patch.action = this.buildAction(d, message);
     }
 
     this.thread.update((t) => t.map((m) => (m.id === botMsg.id ? { ...m, ...patch } : m)));
@@ -102,22 +109,26 @@ export class ChatService {
     this.persist();
   }
 
-  /** A "generate" intent becomes a card linking to the real Create tool, carrying any topicId. */
-  private buildAction(data: Record<string, unknown>): ChatAction | undefined {
-    const routed = (data['routed'] as { intent?: string; topicId?: string } | undefined) ?? undefined;
+  /** Open the studio an action card points to, with its form already filled from the chat request. */
+  openTool(action: ChatAction): void {
+    if (action.prefill) this.store.prefillSource.set(action.prefill);
+    this.closeChat();
+    void this.router.navigate([action.route], { queryParams: action.queryParams });
+  }
+
+  /** A "generate" intent becomes a card for the matching studio (see CHAT_TOOLS), carrying the prefill. */
+  private buildAction(data: Record<string, unknown>, message: string): ChatAction | undefined {
+    const routed = (data['routed'] as { intent?: string; grade?: string; subject?: string; topicId?: string; lang?: string } | undefined) ?? undefined;
     const intent = routed?.intent;
-    if (intent !== 'exercises' && intent !== 'memo' && intent !== 'plan' && intent !== 'infographic') return undefined;
-    const label =
-      intent === 'exercises'
-        ? this.lang.tr('Créer les exercices', 'إنشاء التمارين')
-        : intent === 'memo'
-          ? this.lang.tr('Créer la fiche de révision', 'إنشاء ملف المراجعة')
-          : intent === 'plan'
-            ? this.lang.tr('Créer la fiche pédagogique', 'إنشاء الجذاذة')
-            : this.lang.tr('Créer l’infographie', 'إنشاء الإنفوغرافيا');
-    const queryParams = { ...(INTENT_QUERY[intent] ?? {}) };
-    if (routed?.topicId) queryParams['topicId'] = routed.topicId;
-    return { intent, label, route: INTENT_ROUTE[intent], queryParams };
+    if (!isChatToolIntent(intent)) return undefined;
+    const tool = CHAT_TOOLS[intent];
+    return {
+      intent,
+      label: this.lang.tr(tool.label.fr, tool.label.ar),
+      route: tool.route,
+      queryParams: tool.query ? { ...tool.query } : undefined,
+      prefill: buildChatPrefill(message, routed),
+    };
   }
 
   private load(): ChatMessage[] {
