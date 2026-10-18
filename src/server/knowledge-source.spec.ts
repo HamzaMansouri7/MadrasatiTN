@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { retrieveContext } from './knowledge-source';
+import { corpusCoverage, retrieveContext } from './knowledge-source';
 
 describe('retrieveContext with topicId', () => {
   it('puts the pinned chapter first and derives grade/subject from it', () => {
@@ -47,5 +47,36 @@ describe('retrieveContext with topicId', () => {
     const parascolaireRows = sources.filter((s) => s.origin === 'parascolaire');
     expect(parascolaireRows.length).toBeGreaterThan(0);
     expect(parascolaireRows[0].ref).toBe('math-5-ch1');
+  });
+});
+
+describe('retrieveContext relevance floor (unscoped queries)', () => {
+  it('returns no source for a filler-only question instead of unrelated rows', () => {
+    expect(retrieveContext({ topic: 'هل في هذا من ما؟', lang: 'ar' }).sources).toHaveLength(0);
+    expect(retrieveContext({ topic: 'what is this?', lang: 'ar' }).sources).toHaveLength(0);
+  });
+
+  it('scopes to the subject named in the question', () => {
+    for (const topic of ['do you support english?', 'هل تدعمون اللغة الإنجليزية؟']) {
+      const { sources } = retrieveContext({ topic, lang: 'ar', limit: 8 });
+      expect(sources.length).toBeGreaterThan(0);
+      expect(sources.every((s) => s.subject === 'Anglais')).toBe(true);
+    }
+  });
+
+  it('keeps grade+subject scoped queries unfiltered by the floor', () => {
+    const { sources } = retrieveContext({ grade: '4ème Année', subject: 'Mathématiques', topic: 'الكسور', lang: 'ar' });
+    expect(sources.length).toBeGreaterThan(0);
+  });
+});
+
+describe('corpusCoverage', () => {
+  it('lists real subjects once each with the grades that exist', () => {
+    const { grades, subjects } = corpusCoverage();
+    expect(grades).toContain('1ère Année');
+    const names = subjects.map((s) => s.name);
+    expect(new Set(names).size).toBe(names.length);
+    const english = subjects.find((s) => s.name === 'Anglais');
+    expect(english?.grades).toEqual(['4ème Année', '5ème Année', '6ème Année']);
   });
 });

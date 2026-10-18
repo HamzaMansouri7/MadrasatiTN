@@ -31,6 +31,8 @@ export interface ChatClassifyInput {
 export interface ChatAnswerInput extends ChatClassifyInput {
   intent: ChatIntent;
   contextBlockStr?: string;
+  /** What the library really covers (grades + subjects), so the bot never claims more. */
+  coverage?: { grades: string[]; subjects: { name: string; grades: string[]; rows: number }[] };
 }
 
 const STR = { type: Type.STRING } as const;
@@ -127,7 +129,7 @@ const recentHistory = (history?: ChatTurn[]): string => {
 export const chatClassifySkill: Skill<ChatClassifyInput> = {
   id: 'chat-classify-s20a',
   version: '1.0.0',
-  chain: 'A',
+  chain: 'E',
   temperature: 0.1,
   schema: CHAT_CLASSIFY_SCHEMA,
   build: (input) => {
@@ -169,7 +171,7 @@ export const chatClassifySkill: Skill<ChatClassifyInput> = {
 export const chatAnswerSkill: Skill<ChatAnswerInput> = {
   id: 'chat-answer-s20b',
   version: '1.0.0',
-  chain: 'A',
+  chain: 'E',
   temperature: 0.4,
   schema: CHAT_ANSWER_SCHEMA,
   build: (input) => {
@@ -182,6 +184,12 @@ export const chatAnswerSkill: Skill<ChatAnswerInput> = {
         : 'tu parles à un ENSEIGNANT — registre pédagogique, tu peux employer le vocabulaire du métier (compétence, objectif, trace écrite).'}`,
       `RÈGLES :`,
       `- Fonde ta réponse EXCLUSIVEMENT sur les références officielles ci-dessus quand elles existent ; ne les contredis jamais et n'invente pas de faits hors programme.`,
+      `- Si aucune référence officielle n'est fournie ci-dessus, ou si elles ne traitent pas la question : dis-le clairement ("ce contenu n'est pas encore dans la bibliothèque") et renvoie au manuel officiel du CNP. N'affirme JAMAIS que la plateforme ou le programme couvre une matière, un niveau ou une leçon sans référence qui le prouve.`,
+      input.coverage
+        ? `- COUVERTURE RÉELLE DE LA BIBLIOTHÈQUE (seule source pour répondre à "que proposez-vous / quelles matières / quels niveaux") : niveaux : ${input.coverage.grades.join(', ')} ; matières (niveaux couverts, nombre de références) : ${input.coverage.subjects.map((x) => `${x.name} (${x.grades.join('/')}, ${x.rows})`).join(' ; ')}. Une matière avec très peu de références (1 à 3) n'a que le manuel, pas de leçons ni d'exercices : précise-le. Tout ce qui n'est pas dans cette liste (ex. le collège, le lycée) n'est PAS disponible : dis-le simplement.`
+        : '',
+      `- "CNP" = Centre National Pédagogique (المركز الوطني البيداغوجي) : n'invente jamais une autre signification ni un autre organisme. Écris tout en une seule langue, sans mélanger de mots d'une autre écriture.`,
+      `- DONNÉES PERSONNELLES : si le message contient le prénom, l'adresse ou toute donnée personnelle d'un enfant, ne les répète JAMAIS ; dis "votre enfant" et réponds uniquement à la question scolaire.`,
       `- Réponds dans la langue demandée (${input.lang === 'fr' ? 'français' : 'arabe'}), de façon concise et directe.`,
       generate
         ? `- L'utilisateur veut créer un document ("${input.intent}"). Donne une phrase d'introduction courte ; NE génère PAS le document complet ici (l'application ouvrira l'outil dédié). Propose éventuellement en "followUp" ce qu'il faut préciser.`

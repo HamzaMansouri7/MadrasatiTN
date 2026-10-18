@@ -12,8 +12,8 @@ describe('chat skill', () => {
   it('has the expected skill metadata', () => {
     expect(chatClassifySkill.id).toBe('chat-classify-s20a');
     expect(chatAnswerSkill.id).toBe('chat-answer-s20b');
-    expect(chatClassifySkill.chain).toBe('A');
-    expect(chatAnswerSkill.chain).toBe('A');
+    expect(chatClassifySkill.chain).toBe('E');
+    expect(chatAnswerSkill.chain).toBe('E');
   });
 
   it('exposes valid schemas', () => {

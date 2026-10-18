@@ -4,10 +4,10 @@
 
 export interface ProviderStep {
   id: string;
-  provider: 'gemini' | 'openai-compat' | 'cloudflare' | 'nvidia' | 'codecraft';
+  provider: 'gemini' | 'openai-compat' | 'cloudflare' | 'nvidia' | 'codecraft' | 'groq';
   model: string;
   quality: number;
   tasks: ('text' | 'vision')[];
 }
 
-export type ChainName = 'A' | 'B' | 'C' | 'D';
+export type ChainName = 'A' | 'B' | 'C' | 'D' | 'E';

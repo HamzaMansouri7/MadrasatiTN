@@ -2,7 +2,7 @@ import { Router, Request, Response } from "express";
 import { randomUUID } from "node:crypto";
 import mammoth from "mammoth";
 import { GoogleGenAI, Type } from "@google/genai";
-import { retrieveContext } from "../knowledge-source";
+import { retrieveContext, corpusCoverage } from "../knowledge-source";
 import { SUMMARY_ONE_SECTION_SCHEMA } from "../memo-schema";
 import { normalizeSummary, normalizeSummarySection } from "../../app/core/utils/summary.util";
 import { resolveLang, langRule } from "../lang";
@@ -1677,6 +1677,7 @@ aiRouter.post(
             intent,
             lang,
             contextBlockStr: contextBlock({ grade, subject, topicId, topic: message, lang }),
+            coverage: corpusCoverage(),
           }),
           CHAT_ANSWER_SCHEMA,
           chatAnswerSkill.temperature,

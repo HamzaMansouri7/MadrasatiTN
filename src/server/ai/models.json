@@ -22,7 +22,7 @@
       "id": "gemini-3.6-flash",
       "provider": "gemini",
       "model": "gemini-3.6-flash",
-      "quality": 9.0,
+      "quality": 9,
       "tasks": [
         "text",
         "vision"
@@ -52,7 +52,7 @@
       "id": "gemini-3.1-flash-lite",
       "provider": "gemini",
       "model": "gemini-3.1-flash-lite",
-      "quality": 7.0,
+      "quality": 7,
       "tasks": [
         "text",
         "vision"
@@ -108,7 +108,7 @@
       "id": "openrouter-nemotron-super",
       "provider": "openai-compat",
       "model": "nvidia/nemotron-3-super-120b-a12b:free",
-      "quality": 8.0,
+      "quality": 8,
       "tasks": [
         "text"
       ]
@@ -126,10 +126,28 @@
       "id": "nvidia-llama-vision",
       "provider": "nvidia",
       "model": "meta/llama-3.2-11b-vision-instruct",
-      "quality": 8.0,
+      "quality": 8,
       "tasks": [
         "text",
         "vision"
+      ]
+    },
+    {
+      "id": "nvidia-gpt-oss-20b",
+      "provider": "nvidia",
+      "model": "openai/gpt-oss-20b",
+      "quality": 7.5,
+      "tasks": [
+        "text"
+      ]
+    },
+    {
+      "id": "groq-gpt-oss-120b",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "quality": 8.6,
+      "tasks": [
+        "text"
       ]
     }
   ],
@@ -172,6 +190,15 @@
       "cf-gpt-oss-120b",
       "cc-gemini-3.7-flash",
       "cc-deepseek-v4-flash"
+    ],
+    "E": [
+      "gemini-flash-lite-latest",
+      "gemini-3.1-flash-lite",
+      "gemini-3.5-flash-lite",
+      "groq-gpt-oss-120b",
+      "nvidia-gpt-oss-20b",
+      "cf-llama-3.3-70b",
+      "cf-mistral-small-3.1"
     ]
   }
 }

@@ -53,8 +53,23 @@ export function getProviderEndpoint(providerOrStep: string | ProviderStep): Prov
     };
   }
 
+  // Groq free tier: per-model limits (gpt-oss-120b: 1000 req/day, 8000 tokens/min), so it is a fallback, not a primary.
+  if (provider === 'groq' || id.startsWith('groq-')) {
+    const key = (process.env['GROQ_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
+    if (!key) return null;
+    return {
+      baseUrl: 'https://api.groq.com/openai/v1',
+      apiKey: key,
+    };
+  }
+
   if (provider === 'nvidia' || id.startsWith('nvidia-')) {
-    const key = (process.env['NVIDIA_API_KEY'] || '').trim().replace(/^["']|["']$/g, '');
+    const key = Object.entries(process.env)
+      .filter(([k, v]) => k.startsWith('NVIDIA_API_KEY') && typeof v === 'string')
+      .sort(([a], [b]) => a.localeCompare(b))
+      .flatMap(([, v]) => (v as string).split(/[,\n]/))
+      .map((k) => k.trim().replace(/^["']|["']$/g, ''))
+      .find((k) => k.length > 0);
     if (!key) return null;
     return {
       baseUrl: 'https://integrate.api.nvidia.com/v1',

@@ -81,3 +81,9 @@ __pycache__/
 .playwright-mcp/
 .impeccable/config.local.json
 .impeccable/questions/
+
+# chat study scratch
+scripts/chat-study/.bundle.mjs
+scripts/chat-study/*.raw.json
+new keys.md
+scripts/chat-study/*.log

@@ -156,11 +156,22 @@ function normalizeSubject(subject?: string): string | undefined {
   return SUBJECT_ALIASES[key] || subject.trim();
 }
 
+const STOPWORDS = new Set([
+  'هل', 'في', 'من', 'على', 'عن', 'إلى', 'الى', 'ما', 'ماذا', 'كيف', 'هذا', 'هذه', 'ذلك', 'التي', 'الذي', 'لي', 'لا', 'أن', 'ان',
+  'مع', 'أو', 'او', 'ثم', 'كل', 'بعض', 'يمكن', 'أريد', 'اريد', 'عندكم', 'عندي', 'تدعمون', 'ابني', 'ابنتي', 'طفلي',
+  'le', 'la', 'les', 'de', 'des', 'du', 'un', 'une', 'et', 'en', 'est', 'que', 'qui', 'pour', 'pas', 'ce', 'ces', 'sur', 'dans',
+  'avec', 'mon', 'ma', 'mes', 'son', 'sa', 'ses', 'vous', 'nous', 'je', 'tu', 'il', 'elle', 'comment', 'quoi', 'aide', 'aider',
+  'the', 'and', 'you', 'your', 'for', 'are', 'does', 'do', 'can', 'how', 'what', 'with', 'this', 'that', 'is', 'in', 'of', 'to', 'me', 'my',
+  // request verbs: they say what the user wants done, not what the topic is
+  'اشرح', 'اشرحي', 'شرح', 'ساعد', 'ساعدني', 'ساعديني', 'أعطني', 'اعطني', 'أنشئ', 'انشئ', 'ابحث', 'هو', 'هي', 'لماذا', 'متى', 'أين', 'اين',
+  'explique', 'donne', 'trouve', 'cherche', 'fais', 'crée', 'cree', 'peux', 'veux', 'montre', 'explain', 'help', 'show', 'give', 'find',
+]);
+
 function tokenize(s: string): string[] {
   return s
     .toLowerCase()
     .split(/[\s.,;:!?()[\]{}«»"'،؛؟\-–—/\\]+/)
-    .filter((w) => w.length >= 2);
+    .filter((w) => w.length >= 2 && !STOPWORDS.has(w));
 }
 
 function scoreAgainstTopic(source: KnowledgeSource, topicTokens: string[]): number {
@@ -181,7 +192,9 @@ export function retrieveContext(q: RetrieveQuery): RetrievedContext {
   const limit = Math.min(Math.max(q.limit || 4, 1), 8);
   const lang: 'ar' | 'fr' = q.lang === 'fr' ? 'fr' : 'ar';
   const pinned = chapterById(q.topicId);
-  const subject = normalizeSubject(q.subject) ?? pinned?.subject;
+  // A subject named in the question ("english", "الإنجليزية") scopes it when the caller gave none.
+  const mentioned = q.topic ? tokenize(q.topic).map((t) => SUBJECT_ALIASES[t]).find(Boolean) : undefined;
+  const subject = normalizeSubject(q.subject) ?? pinned?.subject ?? mentioned;
   const grade = q.grade ?? pinned?.grade;
 
   let pool = CORPUS.filter((s) => {
@@ -197,14 +210,29 @@ export function retrieveContext(q: RetrieveQuery): RetrievedContext {
   // Prefer the requested trimester; keep the rest as fallback.
   const trimester = q.trimester ?? pinned?.trimester;
   const topicTokens = tokenize(q.topic || (pinned ? chapterTitle(pinned, lang) : ''));
+  // Nothing scopes the query (no grade, subject or pinned chapter): a row that shares no word with
+  // the topic is noise, not grounding, so it must not be returned as a "source".
+  const unscoped = !grade && !subject && !pinned;
+  // Unscoped: only words that discriminate count (present in some rows, not in a huge share of them).
+  // Filler like "فهم" (in no row) or "اللغة" (in a fifth of all rows) must neither match nor block a match.
+  const rankTokens = unscoped
+    ? topicTokens.filter((t) => {
+        const df = CORPUS.reduce((n, s) => (`${s.title} ${s.text}`.toLowerCase().includes(t) ? n + 1 : n), 0);
+        return df > 0 && df <= CORPUS.length * 0.08;
+      })
+    : topicTokens;
+  if (unscoped && rankTokens.length === 0) return { sources: [], block: '' };
+  const minHits = Math.max(1, Math.ceil(rankTokens.length * 0.6));
   const rankedAll = pool
     .map((s) => ({
       s,
+      topicScore: scoreAgainstTopic(s, rankTokens),
       score:
-        scoreAgainstTopic(s, topicTokens) * 10 +
+        scoreAgainstTopic(s, rankTokens) * 10 +
         (trimester && s.trimester === trimester ? 5 : 0) +
         (s.origin === 'cnp-chapter' ? 1 : 0), // chapters carry competencies → slightly preferred
     }))
+    .filter((r) => !unscoped || r.topicScore >= minHits)
     .sort((a, b) => b.score - a.score)
     .map((r) => r.s);
 
@@ -229,4 +257,37 @@ export function retrieveContext(q: RetrieveQuery): RetrievedContext {
   });
 
   return { sources: ranked, block: `${header}\n${lines.join('\n')}\n${instruction}` };
+}
+
+/** Fold FR/AR spelling variants of one subject into a single display name. */
+function canonicalSubject(subject: string): string {
+  const k = subject.trim().toLowerCase();
+  if (k.startsWith('histoire')) return 'Histoire & Géographie';
+  if (k === 'arabe') return 'اللغة العربية';
+  if (k.startsWith('éducation islamique') || k === 'education islamique') return 'Éducation Islamique';
+  if (k.startsWith('éveil')) return 'Éveil Scientifique';
+  return SUBJECT_ALIASES[k] || subject.trim();
+}
+
+export interface CorpusCoverage {
+  grades: string[];
+  subjects: { name: string; grades: string[]; rows: number }[];
+}
+
+/** What the library really covers, computed from the corpus so the chat never claims more than exists. */
+export function corpusCoverage(): CorpusCoverage {
+  const bySubject = new Map<string, { grades: Set<string>; rows: number }>();
+  for (const s of CORPUS) {
+    const name = canonicalSubject(s.subject);
+    const e = bySubject.get(name) ?? { grades: new Set<string>(), rows: 0 };
+    e.grades.add(s.grade);
+    e.rows += 1;
+    bySubject.set(name, e);
+  }
+  return {
+    grades: [...new Set(CORPUS.map((s) => s.grade))].sort(),
+    subjects: [...bySubject.entries()]
+      .map(([name, e]) => ({ name, grades: [...e.grades].sort(), rows: e.rows }))
+      .sort((a, b) => b.rows - a.rows),
+  };
 }
